@@ -1,0 +1,10 @@
+internal enum ControllerCommand // TypeDefIndex: 1598
+{	// Fields
+	public int value__; // 0x0
+	public const ControllerCommand Update = 0;
+	public const ControllerCommand SendManifest = -1;
+	public const ControllerCommand Enable = -2;
+	public const ControllerCommand Disable = -3;
+
+}
+
