@@ -1,6 +1,5 @@
 public enum HideFlags // TypeDefIndex: 3534
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const HideFlags None = 0;
 	public const HideFlags HideInHierarchy = 1;
 	public const HideFlags HideInInspector = 2;

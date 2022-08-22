@@ -1,6 +1,5 @@
 public class TriggerHurtNotChild : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 10026
-{	// Fields
-	public float DamagePerSecond; // 0x30
+{	public float DamagePerSecond; // 0x30
 	public float DamageTickRate; // 0x34
 	public float DamageDelay; // 0x38
 	public DamageType damageType; // 0x3C
@@ -14,9 +13,7 @@ public class TriggerHurtNotChild : TriggerBase, IServerComponent, IHurtTrigger /
 	public bool ignoreAllVehicleMounted; // 0x59
 	public float activationDelay; // 0x5C
 
-	// Methods
 
-	// RVA: 0xA00170 Offset: 0x9FF570 VA: 0x180A00170
 	public void .ctor() { }
 
 }

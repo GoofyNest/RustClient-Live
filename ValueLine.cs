@@ -1,10 +1,7 @@
 private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7506
-{	// Fields
-	public long maxTime; // 0x0
+{	public long maxTime; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +9,6 @@ private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 75
 	|-ValueLine.<>c__DisplayClass16_0<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool <Reverse>b__0(ValueChange<TValue> c) { }
 	/* GenericInstMethod :
 	|
@@ -20,7 +16,6 @@ private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 75
 	|-ValueLine.<>c__DisplayClass16_0<object>.<Reverse>b__0
 	*/
 
-	// RVA: -1 Offset: -1
 	internal long <Reverse>b__2(ValueChange<TValue> c) { }
 	/* GenericInstMethod :
 	|
@@ -31,14 +26,11 @@ private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 75
 }
 
 private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7507
-{	// Fields
-	public static readonly ValueLine.<>c<TValue> <>9; // 0x0
+{	public static readonly ValueLine.<>c<TValue> <>9; // 0x0
 	public static Func<ValueChange<TValue>, TValue> <>9__16_1; // 0x0
 	public static Func<TValue, long, ValueChange<TValue>> <>9__16_3; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -46,7 +38,6 @@ private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7507
 	|-ValueLine.<>c<object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -54,7 +45,6 @@ private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7507
 	|-ValueLine.<>c<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal TValue <Reverse>b__16_1(ValueChange<TValue> c) { }
 	/* GenericInstMethod :
 	|
@@ -62,7 +52,6 @@ private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7507
 	|-ValueLine.<>c<object>.<Reverse>b__16_1
 	*/
 
-	// RVA: -1 Offset: -1
 	internal ValueChange<TValue> <Reverse>b__16_3(TValue v, long t) { }
 	/* GenericInstMethod :
 	|

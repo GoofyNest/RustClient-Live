@@ -1,6 +1,5 @@
 public enum HostValidationResult // TypeDefIndex: 7142
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const HostValidationResult ServerHostValidationSuccess = 0;
 	public const HostValidationResult ServerHostValidationFailed = 1;
 	public const HostValidationResult ServerHostValidationTimedOut = 2;

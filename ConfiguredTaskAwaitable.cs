@@ -1,55 +1,39 @@
 public struct ConfiguredTaskAwaitable // TypeDefIndex: 1292
-{	// Fields
-	private readonly ConfiguredTaskAwaitable.ConfiguredTaskAwaiter m_configuredTaskAwaiter; // 0x0
+{	private readonly ConfiguredTaskAwaitable.ConfiguredTaskAwaiter m_configuredTaskAwaiter; // 0x0
 
-	// Methods
 
-	// RVA: 0x14BE70 Offset: 0x14B270 VA: 0x18014BE70
 	internal void .ctor(Task task, bool continueOnCapturedContext) { }
 
-	// RVA: 0x14B600 Offset: 0x14AA00 VA: 0x18014B600
 	public ConfiguredTaskAwaitable.ConfiguredTaskAwaiter GetAwaiter() { }
 
 }
 
 public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 1293
-{	// Fields
-	private readonly Task m_task; // 0x0
+{	private readonly Task m_task; // 0x0
 	private readonly bool m_continueOnCapturedContext; // 0x8
 
-	// Properties
 	public bool IsCompleted { get; }
 
-	// Methods
 
-	// RVA: 0xF9F90 Offset: 0xF9390 VA: 0x1800F9F90
 	internal void .ctor(Task task, bool continueOnCapturedContext) { }
 
-	// RVA: 0x14BF50 Offset: 0x14B350 VA: 0x18014BF50
 	public bool get_IsCompleted() { }
 
-	// RVA: 0x14BEF0 Offset: 0x14B2F0 VA: 0x18014BEF0 Slot: 5
 	public void OnCompleted(Action continuation) { }
 
-	// RVA: 0x14BF20 Offset: 0x14B320 VA: 0x18014BF20 Slot: 4
 	public void UnsafeOnCompleted(Action continuation) { }
 
-	// RVA: 0x14BEE0 Offset: 0x14B2E0 VA: 0x18014BEE0
 	public void GetResult() { }
 
 }
 
 public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICriticalNotifyCompletion, INotifyCompletion // TypeDefIndex: 1295
-{	// Fields
-	private readonly Task<TResult> m_task; // 0x0
+{	private readonly Task<TResult> m_task; // 0x0
 	private readonly bool m_continueOnCapturedContext; // 0x0
 
-	// Properties
 	public bool IsCompleted { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(Task<TResult> task, bool continueOnCapturedContext) { }
 	/* GenericInstMethod :
 	|
@@ -70,7 +54,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<VoidTaskResult>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool get_IsCompleted() { }
 	/* GenericInstMethod :
 	|
@@ -97,7 +80,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<VoidTaskResult>.get_IsCompleted
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void OnCompleted(Action continuation) { }
 	/* GenericInstMethod :
 	|
@@ -118,7 +100,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<VoidTaskResult>.OnCompleted
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public void UnsafeOnCompleted(Action continuation) { }
 	/* GenericInstMethod :
 	|
@@ -139,7 +120,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<VoidTaskResult>.UnsafeOnCompleted
 	*/
 
-	// RVA: -1 Offset: -1
 	public TResult GetResult() { }
 	/* GenericInstMethod :
 	|

@@ -1,6 +1,5 @@
 public enum Base64FormattingOptions // TypeDefIndex: 195
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Base64FormattingOptions None = 0;
 	public const Base64FormattingOptions InsertLineBreaks = 1;
 

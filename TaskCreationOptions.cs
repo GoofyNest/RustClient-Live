@@ -1,10 +1,8 @@
 public enum TaskCreationOptions // TypeDefIndex: 862
 {
-// Namespace: System.Threading.Tasks
 [FlagsAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 [Serializable]
 public enum TaskCreationOptions // TypeDefIndex: 862
-	// Fields
 	public int value__; // 0x0
 	public const TaskCreationOptions None = 0;
 	public const TaskCreationOptions PreferFairness = 1;

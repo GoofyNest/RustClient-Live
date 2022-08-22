@@ -1,6 +1,5 @@
 public class ERLaneConnector // TypeDefIndex: 7243
-{	// Fields
-	public Vector3 connectorStart; // 0x10
+{	public Vector3 connectorStart; // 0x10
 	public Vector3 connectorEnd; // 0x1C
 	public Vector3 connectorStartLocal; // 0x28
 	public Vector3 connectorEndLocal; // 0x34
@@ -19,15 +18,11 @@ public class ERLaneConnector // TypeDefIndex: 7243
 	public float minSpeed; // 0x7C
 	public float maxSpeed; // 0x80
 
-	// Methods
 
-	// RVA: 0x99A330 Offset: 0x999730 VA: 0x18099A330
 	public static ERLaneConnector CreateInstance() { }
 
-	// RVA: 0x99A3A0 Offset: 0x9997A0 VA: 0x18099A3A0
 	public static List<ERLaneConnector> GetLaneConnectors(ERLaneData laneData, int index) { }
 
-	// RVA: 0x99A490 Offset: 0x999890 VA: 0x18099A490
 	public void .ctor() { }
 
 }

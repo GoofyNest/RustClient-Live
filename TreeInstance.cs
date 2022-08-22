@@ -1,6 +1,5 @@
 public struct TreeInstance // TypeDefIndex: 4092
-{	// Fields
-	public Vector3 position; // 0x0
+{	public Vector3 position; // 0x0
 	public float widthScale; // 0xC
 	public float heightScale; // 0x10
 	public float rotation; // 0x14

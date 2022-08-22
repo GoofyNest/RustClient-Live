@@ -1,6 +1,5 @@
 public enum LightProbeUsage // TypeDefIndex: 3831
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const LightProbeUsage Off = 0;
 	public const LightProbeUsage BlendProbes = 1;
 	public const LightProbeUsage UseProxyVolume = 2;

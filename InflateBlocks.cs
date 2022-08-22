@@ -1,6 +1,5 @@
 internal sealed class InflateBlocks // TypeDefIndex: 6946
-{	// Fields
-	internal static readonly int[] border; // 0x0
+{	internal static readonly int[] border; // 0x0
 	private InflateBlocks.InflateBlockMode mode; // 0x10
 	internal int left; // 0x14
 	internal int table; // 0x18
@@ -22,31 +21,23 @@ internal sealed class InflateBlocks // TypeDefIndex: 6946
 	internal uint check; // 0x80
 	internal InfTree inftree; // 0x88
 
-	// Methods
 
-	// RVA: 0x21CD030 Offset: 0x21CC430 VA: 0x1821CD030
 	internal void .ctor(ZlibCodec codec, object checkfn, int w) { }
 
-	// RVA: 0x21CCF00 Offset: 0x21CC300 VA: 0x1821CCF00
 	internal uint Reset() { }
 
-	// RVA: 0x21CB760 Offset: 0x21CAB60 VA: 0x1821CB760
 	internal int Process(int r) { }
 
-	// RVA: 0x21CB720 Offset: 0x21CAB20 VA: 0x1821CB720
 	internal void Free() { }
 
-	// RVA: 0x21CB590 Offset: 0x21CA990 VA: 0x1821CB590
 	internal int Flush(int r) { }
 
-	// RVA: 0x21CCFC0 Offset: 0x21CC3C0 VA: 0x1821CCFC0
 	private static void .cctor() { }
 
 }
 
 private enum InflateBlocks.InflateBlockMode // TypeDefIndex: 6947
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const InflateBlocks.InflateBlockMode TYPE = 0;
 	public const InflateBlocks.InflateBlockMode LENS = 1;
 	public const InflateBlocks.InflateBlockMode STORED = 2;

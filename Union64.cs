@@ -1,6 +1,5 @@
 public struct Union64 // TypeDefIndex: 4827
-{	// Fields
-	public long i; // 0x0
+{	public long i; // 0x0
 	public ulong u; // 0x0
 	public double f; // 0x0
 	public byte b1; // 0x0

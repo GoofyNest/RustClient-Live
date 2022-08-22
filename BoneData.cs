@@ -1,6 +1,5 @@
 internal struct BoneData // TypeDefIndex: 7314
-{	// Fields
-	public int Depth; // 0x0
+{	public int Depth; // 0x0
 	public int Parent; // 0x4
 	public int Child; // 0x8
 	public float Length; // 0xC

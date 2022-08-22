@@ -1,6 +1,5 @@
 public sealed class ColorGrading : PostProcessEffectSettings // TypeDefIndex: 11773
-{	// Fields
-	[DisplayNameAttribute] // RVA: 0xECCF0 Offset: 0xEC0F0 VA: 0x1800ECCF0
+{	[DisplayNameAttribute] // RVA: 0xECCF0 Offset: 0xEC0F0 VA: 0x1800ECCF0
 	[TooltipAttribute] // RVA: 0xECCF0 Offset: 0xEC0F0 VA: 0x1800ECCF0
 	public GradingModeParameter gradingMode; // 0x30
 	[DisplayNameAttribute] // RVA: 0xECFB0 Offset: 0xEC3B0 VA: 0x1800ECFB0
@@ -128,12 +127,9 @@ public sealed class ColorGrading : PostProcessEffectSettings // TypeDefIndex: 11
 	public SplineParameter satVsSatCurve; // 0x158
 	public SplineParameter lumVsSatCurve; // 0x160
 
-	// Methods
 
-	// RVA: 0x9D4E30 Offset: 0x9D4230 VA: 0x1809D4E30 Slot: 4
 	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-	// RVA: 0x9D4E80 Offset: 0x9D4280 VA: 0x1809D4E80
 	public void .ctor() { }
 
 }

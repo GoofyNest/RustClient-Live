@@ -1,6 +1,5 @@
 internal enum FacetType // TypeDefIndex: 2335
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const FacetType None = 0;
 	public const FacetType Length = 1;
 	public const FacetType MinLength = 2;

@@ -1,6 +1,5 @@
 internal static class InternalConstants // TypeDefIndex: 6960
-{	// Fields
-	internal static readonly int MAX_BITS; // 0x0
+{	internal static readonly int MAX_BITS; // 0x0
 	internal static readonly int BL_CODES; // 0x4
 	internal static readonly int D_CODES; // 0x8
 	internal static readonly int LITERALS; // 0xC
@@ -11,9 +10,7 @@ internal static class InternalConstants // TypeDefIndex: 6960
 	internal static readonly int REPZ_3_10; // 0x20
 	internal static readonly int REPZ_11_138; // 0x24
 
-	// Methods
 
-	// RVA: 0x21CF820 Offset: 0x21CEC20 VA: 0x1821CF820
 	private static void .cctor() { }
 
 }

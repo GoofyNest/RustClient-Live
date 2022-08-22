@@ -1,6 +1,5 @@
 public struct DSAParameters // TypeDefIndex: 955
-{	// Fields
-	public byte[] P; // 0x0
+{	public byte[] P; // 0x0
 	public byte[] Q; // 0x8
 	public byte[] G; // 0x10
 	public byte[] Y; // 0x18

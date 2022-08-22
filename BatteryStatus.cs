@@ -1,6 +1,5 @@
 public enum BatteryStatus // TypeDefIndex: 3553
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const BatteryStatus Unknown = 0;
 	public const BatteryStatus Charging = 1;
 	public const BatteryStatus Discharging = 2;

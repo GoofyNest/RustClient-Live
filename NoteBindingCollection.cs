@@ -1,6 +1,5 @@
 public class NoteBindingCollection : ScriptableObject // TypeDefIndex: 9560
-{	// Fields
-	public NoteBindingCollection.NoteData[] BaseBindings; // 0x18
+{	public NoteBindingCollection.NoteData[] BaseBindings; // 0x18
 	public float MinimumNoteTime; // 0x20
 	public float MaximumNoteLength; // 0x24
 	public bool AllowAutoplay; // 0x28
@@ -29,22 +28,17 @@ public class NoteBindingCollection : ScriptableObject // TypeDefIndex: 9560
 	public int DefaultOctave; // 0x98
 	public int ShiftedOctave; // 0x9C
 
-	// Methods
 
-	// RVA: 0xA36480 Offset: 0xA35880 VA: 0x180A36480
 	public bool FindNoteData(Notes note, int octave, InstrumentKeyController.NoteType type, out NoteBindingCollection.NoteData data, out int noteIndex) { }
 
-	// RVA: 0xA363D0 Offset: 0xA357D0 VA: 0x180A363D0
 	public bool FindNoteDataIndex(Notes note, int octave, InstrumentKeyController.NoteType type, out int noteIndex) { }
 
-	// RVA: 0xA36570 Offset: 0xA35970 VA: 0x180A36570
 	public void .ctor() { }
 
 }
 
 public struct NoteBindingCollection.NoteData // TypeDefIndex: 9561
-{	// Fields
-	public SoundDefinition NoteSound; // 0x0
+{	public SoundDefinition NoteSound; // 0x0
 	public SoundDefinition NoteStartSound; // 0x8
 	public Notes Note; // 0x10
 	public InstrumentKeyController.NoteType Type; // 0x14
@@ -55,9 +49,7 @@ public struct NoteBindingCollection.NoteData // TypeDefIndex: 9561
 	public InstrumentKeyController.AnimationSlot AnimationSlot; // 0x28
 	public int NoteSoundPositionTarget; // 0x2C
 
-	// Methods
 
-	// RVA: 0xFB8F0 Offset: 0xFACF0 VA: 0x1800FB8F0
 	public string ToNoteString() { }
 
 }

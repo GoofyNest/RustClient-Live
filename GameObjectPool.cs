@@ -1,12 +1,9 @@
 private sealed class GameObjectPool.<>c<T> // TypeDefIndex: 6602
-{	// Fields
-	public static readonly GameObjectPool.<>c<T> <>9; // 0x0
+{	public static readonly GameObjectPool.<>c<T> <>9; // 0x0
 	public static Func<Transform, T> <>9__2_0; // 0x0
 	public static Func<T, bool> <>9__2_1; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -14,7 +11,6 @@ private sealed class GameObjectPool.<>c<T> // TypeDefIndex: 6602
 	|-GameObjectPool.<>c<object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -22,7 +18,6 @@ private sealed class GameObjectPool.<>c<T> // TypeDefIndex: 6602
 	|-GameObjectPool.<>c<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal T <AddChildrenToPool>b__2_0(Transform x) { }
 	/* GenericInstMethod :
 	|
@@ -30,7 +25,6 @@ private sealed class GameObjectPool.<>c<T> // TypeDefIndex: 6602
 	|-GameObjectPool.<>c<object>.<AddChildrenToPool>b__2_0
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool <AddChildrenToPool>b__2_1(T x) { }
 	/* GenericInstMethod :
 	|

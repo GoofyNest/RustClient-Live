@@ -1,6 +1,5 @@
 public enum FullScreenMode // TypeDefIndex: 3385
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const FullScreenMode ExclusiveFullScreen = 0;
 	public const FullScreenMode FullScreenWindow = 1;
 	public const FullScreenMode MaximizedWindow = 2;

@@ -1,7 +1,5 @@
 public sealed class ConditionalWeakTable.CreateValueCallback<TKey, TValue> : MulticastDelegate // TypeDefIndex: 1316
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
@@ -11,7 +9,6 @@ public sealed class ConditionalWeakTable.CreateValueCallback<TKey, TValue> : Mul
 	|-ConditionalWeakTable.CreateValueCallback<object, OSSpecificSynchronizationContext>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual TValue Invoke(TKey key) { }
 	/* GenericInstMethod :
 	|
@@ -19,7 +16,6 @@ public sealed class ConditionalWeakTable.CreateValueCallback<TKey, TValue> : Mul
 	|-ConditionalWeakTable.CreateValueCallback<object, object>.Invoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public virtual IAsyncResult BeginInvoke(TKey key, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
@@ -27,7 +23,6 @@ public sealed class ConditionalWeakTable.CreateValueCallback<TKey, TValue> : Mul
 	|-ConditionalWeakTable.CreateValueCallback<object, object>.BeginInvoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public virtual TValue EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|

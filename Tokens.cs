@@ -1,6 +1,5 @@
 internal enum Tokens // TypeDefIndex: 4253
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Tokens None = 0;
 	public const Tokens Name = 1;
 	public const Tokens Numeric = 2;

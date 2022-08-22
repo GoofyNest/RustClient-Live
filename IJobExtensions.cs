@@ -1,8 +1,6 @@
 public static class IJobExtensions // TypeDefIndex: 3299
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static JobHandle Schedule<T>(T jobData, JobHandle dependsOn) { }
 	/* GenericInstMethod :
 	|
@@ -13,12 +11,9 @@ public static class IJobExtensions // TypeDefIndex: 3299
 }
 
 internal struct IJobExtensions.JobStruct<T> // TypeDefIndex: 3300
-{	// Fields
-	public static IntPtr jobReflectionData; // 0x0
+{	public static IntPtr jobReflectionData; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public static IntPtr Initialize() { }
 	/* GenericInstMethod :
 	|
@@ -26,7 +21,6 @@ internal struct IJobExtensions.JobStruct<T> // TypeDefIndex: 3300
 	|-IJobExtensions.JobStruct<SimulatePositionsJob>.Initialize
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Execute(ref T data, IntPtr additionalPtr, IntPtr bufferRangePatchData, ref JobRanges ranges, int jobIndex) { }
 	/* GenericInstMethod :
 	|
@@ -37,9 +31,7 @@ internal struct IJobExtensions.JobStruct<T> // TypeDefIndex: 3300
 }
 
 public sealed class IJobExtensions.JobStruct.ExecuteJobFunction<T> : MulticastDelegate // TypeDefIndex: 3301
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
@@ -47,7 +39,6 @@ public sealed class IJobExtensions.JobStruct.ExecuteJobFunction<T> : MulticastDe
 	|-IJobExtensions.JobStruct.ExecuteJobFunction<SimulatePositionsJob>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual void Invoke(ref T data, IntPtr additionalPtr, IntPtr bufferRangePatchData, ref JobRanges ranges, int jobIndex) { }
 	/* GenericInstMethod :
 	|
@@ -55,7 +46,6 @@ public sealed class IJobExtensions.JobStruct.ExecuteJobFunction<T> : MulticastDe
 	|-IJobExtensions.JobStruct.ExecuteJobFunction<SimulatePositionsJob>.Invoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public virtual IAsyncResult BeginInvoke(ref T data, IntPtr additionalPtr, IntPtr bufferRangePatchData, ref JobRanges ranges, int jobIndex, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
@@ -63,7 +53,6 @@ public sealed class IJobExtensions.JobStruct.ExecuteJobFunction<T> : MulticastDe
 	|-IJobExtensions.JobStruct.ExecuteJobFunction<SimulatePositionsJob>.BeginInvoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public virtual void EndInvoke(ref T data, ref JobRanges ranges, IAsyncResult result) { }
 	/* GenericInstMethod :
 	|

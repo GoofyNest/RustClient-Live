@@ -1,6 +1,5 @@
 public class SharpenAndVignette : PostProcessEffectSettings // TypeDefIndex: 10272
-{	// Fields
-	[HeaderAttribute] // RVA: 0xC3900 Offset: 0xC2D00 VA: 0x1800C3900
+{	[HeaderAttribute] // RVA: 0xC3900 Offset: 0xC2D00 VA: 0x1800C3900
 	public BoolParameter applySharpen; // 0x30
 	[RangeAttribute] // RVA: 0x75910 Offset: 0x74D10 VA: 0x180075910
 	public FloatParameter strength; // 0x38
@@ -13,9 +12,7 @@ public class SharpenAndVignette : PostProcessEffectSettings // TypeDefIndex: 102
 	[RangeAttribute] // RVA: 0x77CA0 Offset: 0x770A0 VA: 0x180077CA0
 	public FloatParameter darkness; // 0x58
 
-	// Methods
 
-	// RVA: 0x5AE8C0 Offset: 0x5ADCC0 VA: 0x1805AE8C0
 	public void .ctor() { }
 
 }

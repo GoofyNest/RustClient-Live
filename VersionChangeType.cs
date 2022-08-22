@@ -1,6 +1,5 @@
 internal enum VersionChangeType // TypeDefIndex: 4597
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const VersionChangeType Bindings = 1;
 	public const VersionChangeType ViewData = 2;
 	public const VersionChangeType Hierarchy = 4;

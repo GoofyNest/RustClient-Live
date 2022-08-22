@@ -1,6 +1,5 @@
 public class WorkshopSkinBase : WorkshopBase // TypeDefIndex: 7720
-{	// Fields
-	public static string[] itemName; // 0x0
+{	public static string[] itemName; // 0x0
 	[HeaderAttribute] // RVA: 0xC8B30 Offset: 0xC7F30 VA: 0x1800C8B30
 	public WorkshopSkinBase.SkinType skinType; // 0x38
 	[FormerlySerializedAsAttribute] // RVA: 0xC8C30 Offset: 0xC8030 VA: 0x1800C8C30
@@ -9,19 +8,15 @@ public class WorkshopSkinBase : WorkshopBase // TypeDefIndex: 7720
 	public Material skinMaterial2; // 0x50
 	public Material skinMaterial3; // 0x58
 
-	// Methods
 
-	// RVA: 0x4C0870 Offset: 0x4BFC70 VA: 0x1804C0870
 	public void .ctor() { }
 
-	// RVA: 0xE98760 Offset: 0xE97B60 VA: 0x180E98760
 	private static void .cctor() { }
 
 }
 
 public enum WorkshopSkinBase.SkinType // TypeDefIndex: 7721
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const WorkshopSkinBase.SkinType TShirt = 0;
 	public const WorkshopSkinBase.SkinType Pants = 1;
 	public const WorkshopSkinBase.SkinType SleepingBag = 2;

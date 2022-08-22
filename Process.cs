@@ -1,6 +1,5 @@
 public class Process : Component // TypeDefIndex: 2648
-{	// Fields
-	private bool haveProcessId; // 0x28
+{	private bool haveProcessId; // 0x28
 	private int processId; // 0x2C
 	private bool haveProcessHandle; // 0x30
 	private SafeProcessHandle m_processHandle; // 0x38
@@ -33,7 +32,6 @@ public class Process : Component // TypeDefIndex: 2648
 	internal AsyncStreamReader error; // 0xD0
 	private string process_name; // 0xD8
 
-	// Properties
 	[BrowsableAttribute] // RVA: 0xA7920 Offset: 0xA6D20 VA: 0x1800A7920
 	[MonitoringDescriptionAttribute] // RVA: 0xA7920 Offset: 0xA6D20 VA: 0x1800A7920
 	[DesignerSerializationVisibilityAttribute] // RVA: 0xA7920 Offset: 0xA6D20 VA: 0x1800A7920
@@ -53,73 +51,51 @@ public class Process : Component // TypeDefIndex: 2648
 	[DesignerSerializationVisibilityAttribute] // RVA: 0xA7D20 Offset: 0xA7120 VA: 0x1800A7D20
 	public string ProcessName { get; }
 
-	// Methods
 
-	// RVA: 0x17283D0 Offset: 0x17277D0 VA: 0x1817283D0
 	private void .ctor(string machineName, bool isRemoteMachine, int processId, ProcessInfo processInfo) { }
 
-	// RVA: 0x1728480 Offset: 0x1727880 VA: 0x181728480
 	private bool get_Associated() { }
 
-	// RVA: 0x1728490 Offset: 0x1727890 VA: 0x181728490
 	public bool get_HasExited() { }
 
-	// RVA: 0x1728770 Offset: 0x1727B70 VA: 0x181728770
 	public int get_Id() { }
 
-	// RVA: 0x1728970 Offset: 0x1727D70 VA: 0x181728970
 	public ISynchronizeInvoke get_SynchronizingObject() { }
 
-	// RVA: 0x1728180 Offset: 0x1727580 VA: 0x181728180
 	private void ReleaseProcessHandle(SafeProcessHandle handle) { }
 
-	// RVA: 0x1727550 Offset: 0x1726950 VA: 0x181727550 Slot: 10
 	protected override void Dispose(bool disposing) { }
 
-	// RVA: 0x1727360 Offset: 0x1726760 VA: 0x181727360
 	public void Close() { }
 
-	// RVA: 0x17275A0 Offset: 0x17269A0 VA: 0x1817275A0
 	private void EnsureState(Process.State state) { }
 
-	// RVA: 0x17277C0 Offset: 0x1726BC0 VA: 0x1817277C0
 	public static Process GetCurrentProcess() { }
 
-	// RVA: 0x1727D00 Offset: 0x1727100 VA: 0x181727D00
 	protected void OnExited() { }
 
-	// RVA: 0x17278A0 Offset: 0x1726CA0 VA: 0x1817278A0
 	private SafeProcessHandle GetProcessHandle(int access, bool throwIfExited) { }
 
-	// RVA: 0x1727890 Offset: 0x1726C90 VA: 0x181727890
 	private SafeProcessHandle GetProcessHandle(int access) { }
 
-	// RVA: 0x1728130 Offset: 0x1727530 VA: 0x181728130
 	public void Refresh() { }
 
-	// RVA: 0x17281A0 Offset: 0x17275A0 VA: 0x1817281A0
 	private void StopWatchingForExit() { }
 
-	// RVA: 0x17282D0 Offset: 0x17276D0 VA: 0x1817282D0 Slot: 3
 	public override string ToString() { }
 
-	// RVA: 0x1728050 Offset: 0x1727450 VA: 0x181728050
 	private static string ProcessName_internal(IntPtr handle) { }
 
-	// RVA: 0x1727F70 Offset: 0x1727370 VA: 0x181727F70
 	private static string ProcessName_internal(SafeProcessHandle handle) { }
 
-	// RVA: 0x1728790 Offset: 0x1727B90 VA: 0x181728790
 	public string get_ProcessName() { }
 
-	// RVA: 0x1728060 Offset: 0x1727460 VA: 0x181728060
 	private void RaiseOnExited() { }
 
 }
 
 private enum Process.StreamReadMode // TypeDefIndex: 2649
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Process.StreamReadMode undefined = 0;
 	public const Process.StreamReadMode syncMode = 1;
 	public const Process.StreamReadMode asyncMode = 2;
@@ -127,8 +103,7 @@ private enum Process.StreamReadMode // TypeDefIndex: 2649
 }
 
 private enum Process.State // TypeDefIndex: 2650
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Process.State HaveId = 1;
 	public const Process.State IsLocal = 2;
 	public const Process.State IsNt = 4;

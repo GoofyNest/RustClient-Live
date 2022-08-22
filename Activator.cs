@@ -1,22 +1,15 @@
 public sealed class Activator // TypeDefIndex: 163
-{	// Methods
-
-	// RVA: 0x157D8C0 Offset: 0x157CCC0 VA: 0x18157D8C0
+{
 	public static object CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture) { }
 
-	// RVA: 0x157D550 Offset: 0x157C950 VA: 0x18157D550
 	public static object CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, object[] args, CultureInfo culture, object[] activationAttributes) { }
 
-	// RVA: 0x157D900 Offset: 0x157CD00 VA: 0x18157D900
 	public static object CreateInstance(Type type, object[] args) { }
 
-	// RVA: 0x157D8F0 Offset: 0x157CCF0 VA: 0x18157D8F0
 	public static object CreateInstance(Type type) { }
 
-	// RVA: 0x157D750 Offset: 0x157CB50 VA: 0x18157D750
 	public static object CreateInstance(Type type, bool nonPublic) { }
 
-	// RVA: -1 Offset: -1
 	public static T CreateInstance<T>() { }
 	/* GenericInstMethod :
 	|

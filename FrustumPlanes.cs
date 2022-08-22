@@ -1,6 +1,5 @@
 public struct FrustumPlanes // TypeDefIndex: 3465
-{	// Fields
-	public float left; // 0x0
+{	public float left; // 0x0
 	public float right; // 0x4
 	public float bottom; // 0x8
 	public float top; // 0xC

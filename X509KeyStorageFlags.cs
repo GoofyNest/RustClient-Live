@@ -1,6 +1,5 @@
 public enum X509KeyStorageFlags // TypeDefIndex: 1014
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const X509KeyStorageFlags DefaultKeySet = 0;
 	public const X509KeyStorageFlags UserKeySet = 1;
 	public const X509KeyStorageFlags MachineKeySet = 2;

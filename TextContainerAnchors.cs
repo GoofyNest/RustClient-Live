@@ -1,6 +1,5 @@
 public enum TextContainerAnchors // TypeDefIndex: 6868
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TextContainerAnchors TopLeft = 0;
 	public const TextContainerAnchors Top = 1;
 	public const TextContainerAnchors TopRight = 2;

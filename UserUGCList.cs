@@ -1,6 +1,5 @@
 internal enum UserUGCList // TypeDefIndex: 5160
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const UserUGCList Published = 0;
 	public const UserUGCList VotedOn = 1;
 	public const UserUGCList VotedUp = 2;

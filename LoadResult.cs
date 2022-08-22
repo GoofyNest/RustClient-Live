@@ -1,6 +1,5 @@
 public enum LoadResult // TypeDefIndex: 7144
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const LoadResult InitSuccess = 0;
 	public const LoadResult LauncherInvalidParameter = 1;
 	public const LoadResult LauncherDNSError = 2;

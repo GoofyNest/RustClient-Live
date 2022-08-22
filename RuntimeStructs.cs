@@ -1,8 +1,6 @@
 internal struct RuntimeStructs.RemoteClass // TypeDefIndex: 13
 {
-// Namespace: 
 internal struct RuntimeStructs.RemoteClass // TypeDefIndex: 13
-	// Fields
 	internal IntPtr default_vtable; // 0x0
 	internal IntPtr xdomain_vtable; // 0x8
 	internal RuntimeStructs.MonoClass* proxy_class; // 0x10
@@ -13,9 +11,7 @@ internal struct RuntimeStructs.RemoteClass // TypeDefIndex: 13
 
 internal struct RuntimeStructs.GenericParamInfo // TypeDefIndex: 15
 {
-// Namespace: 
 internal struct RuntimeStructs.GenericParamInfo // TypeDefIndex: 15
-	// Fields
 	internal RuntimeStructs.MonoClass* pklass; // 0x0
 	internal IntPtr name; // 0x8
 	internal ushort flags; // 0x10
@@ -25,23 +21,20 @@ internal struct RuntimeStructs.GenericParamInfo // TypeDefIndex: 15
 }
 
 internal struct RuntimeStructs.GPtrArray // TypeDefIndex: 16
-{	// Fields
-	internal IntPtr* data; // 0x0
+{	internal IntPtr* data; // 0x0
 	internal int len; // 0x8
 
 }
 
 private struct RuntimeStructs.HandleStackMark // TypeDefIndex: 17
-{	// Fields
-	private int size; // 0x0
+{	private int size; // 0x0
 	private int interior_size; // 0x4
 	private IntPtr chunk; // 0x8
 
 }
 
 private struct RuntimeStructs.MonoError // TypeDefIndex: 18
-{	// Fields
-	private ushort error_code; // 0x0
+{	private ushort error_code; // 0x0
 	private ushort hidden_0; // 0x2
 	private IntPtr hidden_1; // 0x8
 	private IntPtr hidden_2; // 0x10

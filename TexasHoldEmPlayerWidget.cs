@@ -1,6 +1,5 @@
 public class TexasHoldEmPlayerWidget : MonoBehaviour // TypeDefIndex: 10882
-{	// Fields
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private RawImage avatar; // 0x18
 	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private RustText playerName; // 0x20
@@ -54,25 +53,19 @@ public class TexasHoldEmPlayerWidget : MonoBehaviour // TypeDefIndex: 10882
 	private Color fadedCardColour; // 0x110
 	private TimeSince lastHandResultShow; // 0x120
 
-	// Methods
 
-	// RVA: 0x849FB0 Offset: 0x8493B0 VA: 0x180849FB0
 	public void PopulateWidget(CardPlayerData pData, CardTableUI ui, TexasHoldEmPlayerWidget.PlayerUIState uiState, TexasHoldEmPlayerWidget.PlayerChipState chipState, bool isLocalPlayer, bool roundInProgress) { }
 
-	// RVA: 0x849E00 Offset: 0x849200 VA: 0x180849E00
 	public void DisplayInputAction(TexasHoldEmController.PokerInputOption input, int value) { }
 
-	// RVA: 0x849D40 Offset: 0x849140 VA: 0x180849D40
 	public void DisplayHandResult(PokerLib.PokerResult result, TexasHoldEmUI ui) { }
 
-	// RVA: 0x84A710 Offset: 0x849B10 VA: 0x18084A710
 	public void .ctor() { }
 
 }
 
 public enum TexasHoldEmPlayerWidget.PlayerUIState // TypeDefIndex: 10883
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TexasHoldEmPlayerWidget.PlayerUIState Default = 0;
 	public const TexasHoldEmPlayerWidget.PlayerUIState TheirTurn = 1;
 	public const TexasHoldEmPlayerWidget.PlayerUIState Winner = 2;
@@ -83,8 +76,7 @@ public enum TexasHoldEmPlayerWidget.PlayerUIState // TypeDefIndex: 10883
 }
 
 public enum TexasHoldEmPlayerWidget.PlayerChipState // TypeDefIndex: 10884
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TexasHoldEmPlayerWidget.PlayerChipState None = 0;
 	public const TexasHoldEmPlayerWidget.PlayerChipState Dealer = 1;
 	public const TexasHoldEmPlayerWidget.PlayerChipState SmallBlind = 2;

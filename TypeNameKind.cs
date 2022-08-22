@@ -1,6 +1,5 @@
 internal enum TypeNameKind // TypeDefIndex: 291
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TypeNameKind Name = 0;
 	public const TypeNameKind ToString = 1;
 	public const TypeNameKind SerializationName = 2;

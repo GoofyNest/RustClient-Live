@@ -1,6 +1,5 @@
 public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 8958
-{	// Fields
-	public int NavMeshAgentTypeIndex; // 0x18
+{	public int NavMeshAgentTypeIndex; // 0x18
 	[TooltipAttribute] // RVA: 0xC6D40 Offset: 0xC6140 VA: 0x1800C6D40
 	public string DefaultAreaName; // 0x20
 	[TooltipAttribute] // RVA: 0xC86C0 Offset: 0xC7AC0 VA: 0x1800C86C0
@@ -20,9 +19,7 @@ public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIn
 	public bool forceCollectTerrain; // 0x6C
 	public Transform CustomNavMeshRoot; // 0x70
 
-	// Methods
 
-	// RVA: 0x7B3900 Offset: 0x7B2D00 VA: 0x1807B3900
 	public void .ctor() { }
 
 }

@@ -1,6 +1,5 @@
 internal enum EComparison // TypeDefIndex: 4354
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const EComparison LT = 0;
 	public const EComparison LE = 1;
 	public const EComparison EQ = 2;

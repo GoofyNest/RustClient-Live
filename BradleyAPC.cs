@@ -1,6 +1,5 @@
 public class BradleyAPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
-{	// Fields
-	public bool ShouldPool; // 0x10
+{	public bool ShouldPool; // 0x10
 	private bool _disposed; // 0x11
 	public float engineThrottle; // 0x14
 	public float throttleLeft; // 0x18
@@ -13,91 +12,63 @@ public class BradleyAPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 	public Vector3 rightSideGun1; // 0x5C
 	public Vector3 rightSideGun2; // 0x68
 
-	// Methods
 
-	// RVA: 0x1F69850 Offset: 0x1F68C50 VA: 0x181F69850
 	public static void ResetToPool(BradleyAPC instance) { }
 
-	// RVA: 0x1F69970 Offset: 0x1F68D70 VA: 0x181F69970
 	public void ResetToPool() { }
 
-	// RVA: 0x1F69320 Offset: 0x1F68720 VA: 0x181F69320 Slot: 9
 	public virtual void Dispose() { }
 
-	// RVA: 0x10A09B0 Offset: 0x109FDB0 VA: 0x1810A09B0 Slot: 10
 	public virtual void EnterPool() { }
 
-	// RVA: 0x10A09E0 Offset: 0x109FDE0 VA: 0x1810A09E0 Slot: 11
 	public virtual void LeavePool() { }
 
-	// RVA: 0x1F678C0 Offset: 0x1F66CC0 VA: 0x181F678C0
 	public void CopyTo(BradleyAPC instance) { }
 
-	// RVA: 0x1F67960 Offset: 0x1F66D60 VA: 0x181F67960
 	public BradleyAPC Copy() { }
 
-	// RVA: 0x1F68C30 Offset: 0x1F68030 VA: 0x181F68C30
 	public static BradleyAPC Deserialize(Stream stream) { }
 
-	// RVA: 0x1F67A50 Offset: 0x1F66E50 VA: 0x181F67A50
 	public static BradleyAPC DeserializeLengthDelimited(Stream stream) { }
 
-	// RVA: 0x1F68310 Offset: 0x1F67710 VA: 0x181F68310
 	public static BradleyAPC DeserializeLength(Stream stream, int length) { }
 
-	// RVA: 0x1F687D0 Offset: 0x1F67BD0 VA: 0x181F687D0
 	public static BradleyAPC Deserialize(byte[] buffer) { }
 
-	// RVA: 0x1F694D0 Offset: 0x1F688D0 VA: 0x181F694D0
 	public void FromProto(Stream stream, bool isDelta = False) { }
 
-	// RVA: 0x1F6AE40 Offset: 0x1F6A240 VA: 0x181F6AE40 Slot: 12
 	public virtual void WriteToStream(Stream stream) { }
 
-	// RVA: 0x1F6AE60 Offset: 0x1F6A260 VA: 0x181F6AE60 Slot: 13
 	public virtual void WriteToStreamDelta(Stream stream, BradleyAPC previous) { }
 
-	// RVA: 0x1F69830 Offset: 0x1F68C30 VA: 0x181F69830 Slot: 14
 	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-	// RVA: 0x1F683A0 Offset: 0x1F677A0 VA: 0x181F683A0
 	public static BradleyAPC Deserialize(byte[] buffer, BradleyAPC instance, bool isDelta = False) { }
 
-	// RVA: 0x1F68FC0 Offset: 0x1F683C0 VA: 0x181F68FC0
 	public static BradleyAPC Deserialize(Stream stream, BradleyAPC instance, bool isDelta) { }
 
-	// RVA: 0x1F67AD0 Offset: 0x1F66ED0 VA: 0x181F67AD0
 	public static BradleyAPC DeserializeLengthDelimited(Stream stream, BradleyAPC instance, bool isDelta) { }
 
-	// RVA: 0x1F67F00 Offset: 0x1F67300 VA: 0x181F67F00
 	public static BradleyAPC DeserializeLength(Stream stream, int length, BradleyAPC instance, bool isDelta) { }
 
-	// RVA: 0x1F69A90 Offset: 0x1F68E90 VA: 0x181F69A90
 	public static void SerializeDelta(Stream stream, BradleyAPC instance, BradleyAPC previous) { }
 
-	// RVA: 0x1F6A7B0 Offset: 0x1F69BB0 VA: 0x181F6A7B0
 	public static void Serialize(Stream stream, BradleyAPC instance) { }
 
-	// RVA: 0x1F6AE30 Offset: 0x1F6A230 VA: 0x181F6AE30
 	public byte[] ToProtoBytes() { }
 
-	// RVA: 0x1F6AE40 Offset: 0x1F6A240 VA: 0x181F6AE40
 	public void ToProto(Stream stream) { }
 
-	// RVA: 0x1F6A6A0 Offset: 0x1F69AA0 VA: 0x181F6A6A0
 	public static byte[] SerializeToBytes(BradleyAPC instance) { }
 
-	// RVA: 0x1F6A5F0 Offset: 0x1F699F0 VA: 0x181F6A5F0
 	public static void SerializeLengthDelimited(Stream stream, BradleyAPC instance) { }
 
-	// RVA: 0x101B930 Offset: 0x101AD30 VA: 0x18101B930
 	public void .ctor() { }
 
 }
 
 public class BradleyAPC : BaseCombatEntity // TypeDefIndex: 8536
-{	// Fields
-	[HeaderAttribute] // RVA: 0x8CB00 Offset: 0x8BF00 VA: 0x18008CB00
+{	[HeaderAttribute] // RVA: 0x8CB00 Offset: 0x8BF00 VA: 0x18008CB00
 	public BlendedLoopEngineSound engineSound; // 0x240
 	public SoundDefinition treadLoopDef; // 0x248
 	public AnimationCurve treadGainCurve; // 0x250
@@ -203,75 +174,53 @@ public class BradleyAPC : BaseCombatEntity // TypeDefIndex: 8536
 	public NavMeshPath navMeshPath; // 0x4A0
 	public int navMeshPathIndex; // 0x4A8
 
-	// Methods
 
-	// RVA: 0x539010 Offset: 0x538410 VA: 0x180539010 Slot: 35
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	// RVA: 0x538B10 Offset: 0x537F10 VA: 0x180538B10
 	public void InitializeClientsideEffects() { }
 
-	// RVA: 0x539460 Offset: 0x538860 VA: 0x180539460
 	public void ShutdownClientsideEffects() { }
 
-	// RVA: 0x539600 Offset: 0x538A00 VA: 0x180539600
 	public void UpdateSounds() { }
 
 	[BaseEntity.RPC_Client] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x5383B0 Offset: 0x5377B0 VA: 0x1805383B0
 	public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
 
-	// RVA: 0x538030 Offset: 0x537430 VA: 0x180538030
 	public void AimWeaponAt(Transform weaponYaw, Transform weaponPitch, Vector3 direction, float minPitch = -360, float maxPitch = 360, float maxYaw = 360, Transform parentOverride) { }
 
-	// RVA: 0x538C00 Offset: 0x538000 VA: 0x180538C00
 	public void LateUpdate() { }
 
-	// RVA: 0x538F30 Offset: 0x538330 VA: 0x180538F30 Slot: 34
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	// RVA: 0x538870 Offset: 0x537C70 VA: 0x180538870 Slot: 14
 	protected override void ClientInit(Entity info) { }
 
-	// RVA: 0x538970 Offset: 0x537D70 VA: 0x180538970 Slot: 19
 	protected override void DoClientDestroy() { }
 
-	// RVA: 0x53A270 Offset: 0x539670 VA: 0x18053A270
 	public void .ctor() { }
 
-	// RVA: 0x53A230 Offset: 0x539630 VA: 0x18053A230
 	private static void .cctor() { }
 
 }
 
 public class BradleyAPC.TargetInfo : Pool.IPooled // TypeDefIndex: 8537
-{	// Fields
-	public float damageReceivedFrom; // 0x10
+{	public float damageReceivedFrom; // 0x10
 	public BaseEntity entity; // 0x18
 	public float lastSeenTime; // 0x20
 	public Vector3 lastSeenPosition; // 0x24
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
-	// RVA: 0x53C650 Offset: 0x53BA50 VA: 0x18053C650 Slot: 4
 	public void EnterPool() { }
 
-	// RVA: 0x53CAF0 Offset: 0x53BEF0 VA: 0x18053CAF0
 	public void Setup(BaseEntity ent, float time) { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0 Slot: 5
 	public void LeavePool() { }
 
-	// RVA: 0x53C6D0 Offset: 0x53BAD0 VA: 0x18053C6D0
 	public float GetPriorityScore(BradleyAPC apc) { }
 
-	// RVA: 0x53CA40 Offset: 0x53BE40 VA: 0x18053CA40
 	public bool IsVisible() { }
 
-	// RVA: 0x53C9E0 Offset: 0x53BDE0 VA: 0x18053C9E0
 	public bool IsValid() { }
 
 }

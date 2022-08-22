@@ -1,6 +1,5 @@
 public class ERRoundaboutElement // TypeDefIndex: 7174
-{	// Fields
-	public float roadWidth; // 0x10
+{	public float roadWidth; // 0x10
 	public float prevRoadWidth; // 0x14
 	public int roundingSegments; // 0x18
 	public bool lockLeftRightRoundingRadius; // 0x1C
@@ -67,9 +66,7 @@ public class ERRoundaboutElement // TypeDefIndex: 7174
 	public double roadTypeTimestamp; // 0x1D8
 	public double prevTimestamp; // 0x1E0
 
-	// Methods
 
-	// RVA: 0xB47340 Offset: 0xB46740 VA: 0x180B47340
 	public void .ctor() { }
 
 }

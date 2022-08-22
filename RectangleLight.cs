@@ -1,6 +1,5 @@
 public struct RectangleLight // TypeDefIndex: 3884
-{	// Fields
-	public int instanceID; // 0x0
+{	public int instanceID; // 0x0
 	public bool shadow; // 0x4
 	public LightMode mode; // 0x5
 	public Vector3 position; // 0x8

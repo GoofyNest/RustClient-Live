@@ -1,6 +1,5 @@
 public enum ProtocolType // TypeDefIndex: 3045
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ProtocolType IP = 0;
 	public const ProtocolType IPv6HopByHopOptions = 0;
 	public const ProtocolType Icmp = 1;

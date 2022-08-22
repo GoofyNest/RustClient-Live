@@ -1,6 +1,5 @@
 internal sealed class ParseRecord // TypeDefIndex: 1117
-{	// Fields
-	internal static int parseRecordIdCount; // 0x0
+{	internal static int parseRecordIdCount; // 0x0
 	internal InternalParseTypeE PRparseTypeEnum; // 0x10
 	internal InternalObjectTypeE PRobjectTypeEnum; // 0x14
 	internal InternalArrayTypeE PRarrayTypeEnum; // 0x18
@@ -42,15 +41,11 @@ internal sealed class ParseRecord // TypeDefIndex: 1117
 	internal SerializationInfo PRsi; // 0x110
 	internal int PRnullCount; // 0x118
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	internal void .ctor() { }
 
-	// RVA: 0x11FA860 Offset: 0x11F9C60 VA: 0x1811FA860
 	internal void Init() { }
 
-	// RVA: 0x11FA9F0 Offset: 0x11F9DF0 VA: 0x1811FA9F0
 	private static void .cctor() { }
 
 }

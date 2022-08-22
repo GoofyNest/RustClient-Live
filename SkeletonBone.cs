@@ -1,11 +1,9 @@
 public struct SkeletonBone // TypeDefIndex: 4491
 {
-// Namespace: UnityEngine
 [RequiredByNativeCodeAttribute] // RVA: 0xCD3B0 Offset: 0xCC7B0 VA: 0x1800CD3B0
 [NativeTypeAttribute] // RVA: 0xCD3B0 Offset: 0xCC7B0 VA: 0x1800CD3B0
 [NativeHeaderAttribute] // RVA: 0xCD3B0 Offset: 0xCC7B0 VA: 0x1800CD3B0
 public struct SkeletonBone // TypeDefIndex: 4491
-	// Fields
 	[NativeNameAttribute] // RVA: 0xCD560 Offset: 0xCC960 VA: 0x1800CD560
 	public string name; // 0x0
 	[NativeNameAttribute] // RVA: 0xCD670 Offset: 0xCCA70 VA: 0x1800CD670

@@ -1,6 +1,5 @@
 public static class SchemaTableColumn // TypeDefIndex: 4427
-{	// Fields
-	public static readonly string ColumnName; // 0x0
+{	public static readonly string ColumnName; // 0x0
 	public static readonly string ColumnOrdinal; // 0x8
 	public static readonly string ColumnSize; // 0x10
 	public static readonly string NumericPrecision; // 0x18
@@ -18,9 +17,7 @@ public static class SchemaTableColumn // TypeDefIndex: 4427
 	public static readonly string BaseTableName; // 0x78
 	public static readonly string BaseColumnName; // 0x80
 
-	// Methods
 
-	// RVA: 0x17D28B0 Offset: 0x17D1CB0 VA: 0x1817D28B0
 	private static void .cctor() { }
 
 }

@@ -1,7 +1,5 @@
 public static class GenericsUtil // TypeDefIndex: 4817
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public static TDst Cast<TSrc, TDst>(TSrc obj) { }
 	/* GenericInstMethod :
 	|
@@ -302,7 +300,6 @@ public static class GenericsUtil // TypeDefIndex: 4817
 	|-GenericsUtil.Cast<Vector3, Vector3>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Swap<T>(ref T a, ref T b) { }
 	/* GenericInstMethod :
 	|
@@ -318,13 +315,10 @@ public static class GenericsUtil // TypeDefIndex: 4817
 }
 
 private static class GenericsUtil.CastImpl<TSrc, TDst> // TypeDefIndex: 4818
-{	// Fields
-	[ThreadStaticAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[ThreadStaticAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	public static TSrc Value; // 0xFFFFFFFF
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|

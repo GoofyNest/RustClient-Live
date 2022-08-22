@@ -1,6 +1,5 @@
 public class SkinSet : ScriptableObject // TypeDefIndex: 10758
-{	// Fields
-	public string Label; // 0x18
+{	public string Label; // 0x18
 	public Gradient SkinColour; // 0x20
 	public HairSetCollection HairCollection; // 0x28
 	[HeaderAttribute] // RVA: 0x7A240 Offset: 0x79640 VA: 0x18007A240
@@ -17,12 +16,9 @@ public class SkinSet : ScriptableObject // TypeDefIndex: 10758
 	public Material BodyMaterial; // 0x70
 	public Material EyeMaterial; // 0x78
 
-	// Methods
 
-	// RVA: 0x5B7F50 Offset: 0x5B7350 VA: 0x1805B7F50
 	internal Color GetSkinColor(float skinNumber) { }
 
-	// RVA: 0x4C0870 Offset: 0x4BFC70 VA: 0x1804C0870
 	public void .ctor() { }
 
 }

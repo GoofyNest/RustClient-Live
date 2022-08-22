@@ -1,38 +1,26 @@
 public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible // TypeDefIndex: 211
-{	// Fields
-	private static readonly char[] enumSeperatorCharArray; // 0x12F2F
+{	private static readonly char[] enumSeperatorCharArray; // 0x12F2F
 	private const string enumSeperator = ", ";
 
-	// Methods
 
-	// RVA: 0x10D0A50 Offset: 0x10CFE50 VA: 0x1810D0A50
 	private static Enum.ValuesAndNames GetCachedValuesAndNames(RuntimeType enumType, bool getNames) { }
 
-	// RVA: 0x10D1A00 Offset: 0x10D0E00 VA: 0x1810D1A00
 	private static string InternalFormattedHexString(object value) { }
 
-	// RVA: 0x10D1850 Offset: 0x10D0C50 VA: 0x1810D1850
 	private static string InternalFormat(RuntimeType eT, object value) { }
 
-	// RVA: 0x10D1450 Offset: 0x10D0850 VA: 0x1810D1450
 	private static string InternalFlagsFormat(RuntimeType eT, object value) { }
 
-	// RVA: 0x10D46E0 Offset: 0x10D3AE0 VA: 0x1810D46E0
 	internal static ulong ToUInt64(object value) { }
 
-	// RVA: 0x10D1440 Offset: 0x10D0840 VA: 0x1810D1440
 	private static int InternalCompareTo(object o1, object o2) { }
 
-	// RVA: 0x10D1EC0 Offset: 0x10D12C0 VA: 0x1810D1EC0
 	internal static RuntimeType InternalGetUnderlyingType(RuntimeType enumType) { }
 
-	// RVA: 0x10D0BC0 Offset: 0x10CFFC0 VA: 0x1810D0BC0
 	private static bool GetEnumValuesAndNames(RuntimeType enumType, out ulong[] values, out string[] names) { }
 
-	// RVA: 0x10D1430 Offset: 0x10D0830 VA: 0x1810D1430
 	private static object InternalBoxEnum(RuntimeType enumType, long value) { }
 
-	// RVA: -1 Offset: -1
 	public static bool TryParse<TEnum>(string value, out TEnum result) { }
 	/* GenericInstMethod :
 	|
@@ -41,7 +29,6 @@ public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible 
 	|-Enum.TryParse<KeyCode>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool TryParse<TEnum>(string value, bool ignoreCase, out TEnum result) { }
 	/* GenericInstMethod :
 	|
@@ -51,189 +38,136 @@ public abstract class Enum : ValueType, IComparable, IFormattable, IConvertible 
 	*/
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D2010 Offset: 0x10D1410 VA: 0x1810D2010
 	public static object Parse(Type enumType, string value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D2150 Offset: 0x10D1550 VA: 0x1810D2150
 	public static object Parse(Type enumType, string value, bool ignoreCase) { }
 
-	// RVA: 0x10D4880 Offset: 0x10D3C80 VA: 0x1810D4880
 	private static bool TryParseEnum(Type enumType, string value, bool ignoreCase, ref Enum.EnumResult parseResult) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D1140 Offset: 0x10D0540 VA: 0x1810D1140
 	public static Type GetUnderlyingType(Type enumType) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D1200 Offset: 0x10D0600 VA: 0x1810D1200
 	public static Array GetValues(Type enumType) { }
 
-	// RVA: 0x10D1ED0 Offset: 0x10D12D0 VA: 0x1810D1ED0
 	internal static ulong[] InternalGetValues(RuntimeType enumType) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D0BE0 Offset: 0x10CFFE0 VA: 0x1810D0BE0
 	public static string GetName(Type enumType, object value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D0CA0 Offset: 0x10D00A0 VA: 0x1810D0CA0
 	public static string[] GetNames(Type enumType) { }
 
-	// RVA: 0x10D1E50 Offset: 0x10D1250 VA: 0x1810D1E50
 	internal static string[] InternalGetNames(RuntimeType enumType) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D3CD0 Offset: 0x10D30D0 VA: 0x1810D3CD0
 	public static object ToObject(Type enumType, object value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D1F50 Offset: 0x10D1350 VA: 0x1810D1F50
 	public static bool IsDefined(Type enumType, object value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D0270 Offset: 0x10CF670 VA: 0x1810D0270
 	public static string Format(Type enumType, object value, string format) { }
 
-	// RVA: 0x10D11F0 Offset: 0x10D05F0 VA: 0x1810D11F0
 	private object get_value() { }
 
-	// RVA: 0x10D11F0 Offset: 0x10D05F0 VA: 0x1810D11F0
 	internal object GetValue() { }
 
-	// RVA: 0x10D1F40 Offset: 0x10D1340 VA: 0x1810D1F40
 	private bool InternalHasFlag(Enum flags) { }
 
-	// RVA: 0x10D0BD0 Offset: 0x10CFFD0 VA: 0x1810D0BD0
 	private int get_hashcode() { }
 
-	// RVA: 0x10D0260 Offset: 0x10CF660 VA: 0x1810D0260 Slot: 0
 	public override bool Equals(object obj) { }
 
-	// RVA: 0x10D0BD0 Offset: 0x10CFFD0 VA: 0x1810D0BD0 Slot: 2
 	public override int GetHashCode() { }
 
-	// RVA: 0x10D4620 Offset: 0x10D3A20 VA: 0x1810D4620 Slot: 3
 	public override string ToString() { }
 
 	[ObsoleteAttribute] // RVA: 0x79F30 Offset: 0x79330 VA: 0x180079F30
-	// RVA: 0x10D4610 Offset: 0x10D3A10 VA: 0x1810D4610 Slot: 5
 	public string ToString(string format, IFormatProvider provider) { }
 
-	// RVA: 0x10D0090 Offset: 0x10CF490 VA: 0x1810D0090 Slot: 4
 	public int CompareTo(object target) { }
 
-	// RVA: 0x10D43E0 Offset: 0x10D37E0 VA: 0x1810D43E0
 	public string ToString(string format) { }
 
 	[ObsoleteAttribute] // RVA: 0x7A0E0 Offset: 0x794E0 VA: 0x18007A0E0
-	// RVA: 0xD81B90 Offset: 0xD80F90 VA: 0x180D81B90 Slot: 21
 	public string ToString(IFormatProvider provider) { }
 
-	// RVA: 0x10D12B0 Offset: 0x10D06B0 VA: 0x1810D12B0
 	public bool HasFlag(Enum flag) { }
 
-	// RVA: 0x10D0D50 Offset: 0x10D0150 VA: 0x1810D0D50 Slot: 6
 	public TypeCode GetTypeCode() { }
 
-	// RVA: 0x10D2260 Offset: 0x10D1660 VA: 0x1810D2260 Slot: 7
 	private bool System.IConvertible.ToBoolean(IFormatProvider provider) { }
 
-	// RVA: 0x10D23A0 Offset: 0x10D17A0 VA: 0x1810D23A0 Slot: 8
 	private char System.IConvertible.ToChar(IFormatProvider provider) { }
 
-	// RVA: 0x10D2840 Offset: 0x10D1C40 VA: 0x1810D2840 Slot: 9
 	private sbyte System.IConvertible.ToSByte(IFormatProvider provider) { }
 
-	// RVA: 0x10D2300 Offset: 0x10D1700 VA: 0x1810D2300 Slot: 10
 	private byte System.IConvertible.ToByte(IFormatProvider provider) { }
 
-	// RVA: 0x10D2660 Offset: 0x10D1A60 VA: 0x1810D2660 Slot: 11
 	private short System.IConvertible.ToInt16(IFormatProvider provider) { }
 
-	// RVA: 0x10D2A00 Offset: 0x10D1E00 VA: 0x1810D2A00 Slot: 12
 	private ushort System.IConvertible.ToUInt16(IFormatProvider provider) { }
 
-	// RVA: 0x10D2700 Offset: 0x10D1B00 VA: 0x1810D2700 Slot: 13
 	private int System.IConvertible.ToInt32(IFormatProvider provider) { }
 
-	// RVA: 0x10D2AA0 Offset: 0x10D1EA0 VA: 0x1810D2AA0 Slot: 14
 	private uint System.IConvertible.ToUInt32(IFormatProvider provider) { }
 
-	// RVA: 0x10D27A0 Offset: 0x10D1BA0 VA: 0x1810D27A0 Slot: 15
 	private long System.IConvertible.ToInt64(IFormatProvider provider) { }
 
-	// RVA: 0x10D2B40 Offset: 0x10D1F40 VA: 0x1810D2B40 Slot: 16
 	private ulong System.IConvertible.ToUInt64(IFormatProvider provider) { }
 
-	// RVA: 0x10D28E0 Offset: 0x10D1CE0 VA: 0x1810D28E0 Slot: 17
 	private float System.IConvertible.ToSingle(IFormatProvider provider) { }
 
-	// RVA: 0x10D25C0 Offset: 0x10D19C0 VA: 0x1810D25C0 Slot: 18
 	private double System.IConvertible.ToDouble(IFormatProvider provider) { }
 
-	// RVA: 0x10D2510 Offset: 0x10D1910 VA: 0x1810D2510 Slot: 19
 	private Decimal System.IConvertible.ToDecimal(IFormatProvider provider) { }
 
-	// RVA: 0x10D2440 Offset: 0x10D1840 VA: 0x1810D2440 Slot: 20
 	private DateTime System.IConvertible.ToDateTime(IFormatProvider provider) { }
 
-	// RVA: 0x10D2980 Offset: 0x10D1D80 VA: 0x1810D2980 Slot: 22
 	private object System.IConvertible.ToType(Type type, IFormatProvider provider) { }
 
 	[ComVisibleAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
 	[CLSCompliantAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
-	// RVA: 0x10D41F0 Offset: 0x10D35F0 VA: 0x1810D41F0
 	public static object ToObject(Type enumType, sbyte value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D3540 Offset: 0x10D2940 VA: 0x1810D3540
 	public static object ToObject(Type enumType, short value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D3910 Offset: 0x10D2D10 VA: 0x1810D3910
 	public static object ToObject(Type enumType, int value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D2FA0 Offset: 0x10D23A0 VA: 0x1810D2FA0
 	public static object ToObject(Type enumType, byte value) { }
 
 	[ComVisibleAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
 	[CLSCompliantAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
-	// RVA: 0x10D3360 Offset: 0x10D2760 VA: 0x1810D3360
 	public static object ToObject(Type enumType, ushort value) { }
 
 	[ComVisibleAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
 	[CLSCompliantAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
-	// RVA: 0x10D2DC0 Offset: 0x10D21C0 VA: 0x1810D2DC0
 	public static object ToObject(Type enumType, uint value) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x10D3AF0 Offset: 0x10D2EF0 VA: 0x1810D3AF0
 	public static object ToObject(Type enumType, long value) { }
 
 	[ComVisibleAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
 	[CLSCompliantAttribute] // RVA: 0x7A200 Offset: 0x79600 VA: 0x18007A200
-	// RVA: 0x10D3180 Offset: 0x10D2580 VA: 0x1810D3180
 	public static object ToObject(Type enumType, ulong value) { }
 
-	// RVA: 0x10D3730 Offset: 0x10D2B30 VA: 0x1810D3730
 	private static object ToObject(Type enumType, char value) { }
 
-	// RVA: 0x10D2BE0 Offset: 0x10D1FE0 VA: 0x1810D2BE0
 	private static object ToObject(Type enumType, bool value) { }
 
-	// RVA: 0x7992B0 Offset: 0x7986B0 VA: 0x1807992B0
 	protected void .ctor() { }
 
-	// RVA: 0x10D5040 Offset: 0x10D4440 VA: 0x1810D5040
 	private static void .cctor() { }
 
 }
 
 private enum Enum.ParseFailureKind // TypeDefIndex: 212
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Enum.ParseFailureKind None = 0;
 	public const Enum.ParseFailureKind Argument = 1;
 	public const Enum.ParseFailureKind ArgumentNull = 2;
@@ -243,8 +177,7 @@ private enum Enum.ParseFailureKind // TypeDefIndex: 212
 }
 
 private struct Enum.EnumResult // TypeDefIndex: 213
-{	// Fields
-	internal object parsedEnum; // 0x0
+{	internal object parsedEnum; // 0x0
 	internal bool canThrow; // 0x8
 	internal Enum.ParseFailureKind m_failure; // 0xC
 	internal string m_failureMessageID; // 0x10
@@ -252,42 +185,31 @@ private struct Enum.EnumResult // TypeDefIndex: 213
 	internal object m_failureMessageFormatArgument; // 0x20
 	internal Exception m_innerException; // 0x28
 
-	// Methods
 
-	// RVA: 0x19F260 Offset: 0x19E660 VA: 0x18019F260
 	internal void Init(bool canMethodThrow) { }
 
-	// RVA: 0x19F2E0 Offset: 0x19E6E0 VA: 0x18019F2E0
 	internal void SetFailure(Exception unhandledException) { }
 
-	// RVA: 0x19F300 Offset: 0x19E700 VA: 0x18019F300
 	internal void SetFailure(Enum.ParseFailureKind failure, string failureParameter) { }
 
-	// RVA: 0x19F2D0 Offset: 0x19E6D0 VA: 0x18019F2D0
 	internal void SetFailure(Enum.ParseFailureKind failure, string failureMessageID, object failureMessageFormatArgument) { }
 
-	// RVA: 0x19F250 Offset: 0x19E650 VA: 0x18019F250
 	internal Exception GetEnumParseException() { }
 
 }
 
 private class Enum.ValuesAndNames // TypeDefIndex: 214
-{	// Fields
-	public ulong[] Values; // 0x10
+{	public ulong[] Values; // 0x10
 	public string[] Names; // 0x18
 
-	// Methods
 
-	// RVA: 0x53C500 Offset: 0x53B900 VA: 0x18053C500
 	public void .ctor(ulong[] values, string[] names) { }
 
 }
 
 public abstract class EnumBuilder : TypeInfo // TypeDefIndex: 602
 {
-// Namespace: System.Reflection.Emit
 public abstract class EnumBuilder : TypeInfo // TypeDefIndex: 602
-	// Properties
 	public override Assembly Assembly { get; }
 	public override string AssemblyQualifiedName { get; }
 	public override Type BaseType { get; }
@@ -297,114 +219,78 @@ public abstract class EnumBuilder : TypeInfo // TypeDefIndex: 602
 	public override string Namespace { get; }
 	public override Type UnderlyingSystemType { get; }
 
-	// Methods
 
-	// RVA: 0x18C3790 Offset: 0x18C2B90 VA: 0x1818C3790 Slot: 24
 	public override Assembly get_Assembly() { }
 
-	// RVA: 0x18C3740 Offset: 0x18C2B40 VA: 0x1818C3740 Slot: 28
 	public override string get_AssemblyQualifiedName() { }
 
-	// RVA: 0x18C37E0 Offset: 0x18C2BE0 VA: 0x1818C37E0 Slot: 30
 	public override Type get_BaseType() { }
 
-	// RVA: 0x18C3830 Offset: 0x18C2C30 VA: 0x1818C3830 Slot: 26
 	public override string get_FullName() { }
 
-	// RVA: 0x18C3880 Offset: 0x18C2C80 VA: 0x1818C3880 Slot: 16
 	public override Module get_Module() { }
 
-	// RVA: 0x18C38D0 Offset: 0x18C2CD0 VA: 0x1818C38D0 Slot: 8
 	public override string get_Name() { }
 
-	// RVA: 0x18C3920 Offset: 0x18C2D20 VA: 0x1818C3920 Slot: 27
 	public override string get_Namespace() { }
 
-	// RVA: 0x18C33C0 Offset: 0x18C27C0 VA: 0x1818C33C0 Slot: 103
 	public override Type GetElementType() { }
 
-	// RVA: 0x18C3970 Offset: 0x18C2D70 VA: 0x1818C3970 Slot: 112
 	public override Type get_UnderlyingSystemType() { }
 
-	// RVA: 0x18C32D0 Offset: 0x18C26D0 VA: 0x1818C32D0 Slot: 94
 	protected override TypeAttributes GetAttributeFlagsImpl() { }
 
-	// RVA: 0x18C3300 Offset: 0x18C2700 VA: 0x1818C3300 Slot: 34
 	protected override ConstructorInfo GetConstructorImpl(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers) { }
 
 	[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
-	// RVA: 0x18C3330 Offset: 0x18C2730 VA: 0x1818C3330 Slot: 36
 	public override ConstructorInfo[] GetConstructors(BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C3390 Offset: 0x18C2790 VA: 0x1818C3390 Slot: 11
 	public override object[] GetCustomAttributes(bool inherit) { }
 
-	// RVA: 0x18C3360 Offset: 0x18C2760 VA: 0x1818C3360 Slot: 12
 	public override object[] GetCustomAttributes(Type attributeType, bool inherit) { }
 
-	// RVA: 0x18C3410 Offset: 0x18C2810 VA: 0x1818C3410 Slot: 50
 	public override EventInfo GetEvent(string name, BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C3440 Offset: 0x18C2840 VA: 0x1818C3440 Slot: 44
 	public override FieldInfo GetField(string name, BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C3470 Offset: 0x18C2870 VA: 0x1818C3470 Slot: 47
 	public override FieldInfo[] GetFields(BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C34A0 Offset: 0x18C28A0 VA: 0x1818C34A0 Slot: 48
 	public override Type[] GetInterfaces() { }
 
-	// RVA: 0x18C34D0 Offset: 0x18C28D0 VA: 0x1818C34D0 Slot: 41
 	protected override MethodInfo GetMethodImpl(string name, BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers) { }
 
-	// RVA: 0x18C3500 Offset: 0x18C2900 VA: 0x1818C3500 Slot: 43
 	public override MethodInfo[] GetMethods(BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C3530 Offset: 0x18C2930 VA: 0x1818C3530 Slot: 60
 	public override Type GetNestedType(string name, BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C3560 Offset: 0x18C2960 VA: 0x1818C3560 Slot: 57
 	public override PropertyInfo[] GetProperties(BindingFlags bindingAttr) { }
 
-	// RVA: 0x18C3590 Offset: 0x18C2990 VA: 0x1818C3590 Slot: 56
 	protected override PropertyInfo GetPropertyImpl(string name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers) { }
 
-	// RVA: 0x18C35C0 Offset: 0x18C29C0 VA: 0x1818C35C0 Slot: 106
 	protected override bool HasElementTypeImpl() { }
 
-	// RVA: 0x18C35F0 Offset: 0x18C29F0 VA: 0x1818C35F0 Slot: 23
 	public override object InvokeMember(string name, BindingFlags invokeAttr, Binder binder, object target, object[] args, ParameterModifier[] modifiers, CultureInfo culture, string[] namedParameters) { }
 
-	// RVA: 0x18C3620 Offset: 0x18C2A20 VA: 0x1818C3620 Slot: 95
 	protected override bool IsArrayImpl() { }
 
-	// RVA: 0x18C3650 Offset: 0x18C2A50 VA: 0x1818C3650 Slot: 96
 	protected override bool IsByRefImpl() { }
 
-	// RVA: 0x18C3680 Offset: 0x18C2A80 VA: 0x1818C3680 Slot: 99
 	protected override bool IsCOMObjectImpl() { }
 
-	// RVA: 0x18C36B0 Offset: 0x18C2AB0 VA: 0x1818C36B0 Slot: 13
 	public override bool IsDefined(Type attributeType, bool inherit) { }
 
-	// RVA: 0x18C36E0 Offset: 0x18C2AE0 VA: 0x1818C36E0 Slot: 97
 	protected override bool IsPointerImpl() { }
 
-	// RVA: 0x18C3710 Offset: 0x18C2B10 VA: 0x1818C3710 Slot: 98
 	protected override bool IsPrimitiveImpl() { }
 
 }
 
 internal static class EnumHelper<UnderlyingType> // TypeDefIndex: 1511
 {
-// Namespace: System.Diagnostics.Tracing
 internal static class EnumHelper<UnderlyingType> // TypeDefIndex: 1511
-	// Fields
 	private static readonly MethodInfo IdentityInfo; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public static UnderlyingType Cast<ValueType>(ValueType value) { }
 	/* GenericInstMethod :
 	|
@@ -602,7 +488,6 @@ internal static class EnumHelper<UnderlyingType> // TypeDefIndex: 1511
 	|-EnumHelper<ulong>.Cast<UIntPtr>
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -637,9 +522,7 @@ internal static class EnumHelper<UnderlyingType> // TypeDefIndex: 1511
 }
 
 private sealed class EnumHelper.Transformer<UnderlyingType, ValueType> : MulticastDelegate // TypeDefIndex: 1512
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
@@ -823,7 +706,6 @@ private sealed class EnumHelper.Transformer<UnderlyingType, ValueType> : Multica
 	|-EnumHelper.Transformer<ulong, UIntPtr>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual UnderlyingType Invoke(ValueType value) { }
 	/* GenericInstMethod :
 	|
@@ -1085,7 +967,6 @@ private sealed class EnumHelper.Transformer<UnderlyingType, ValueType> : Multica
 	|-EnumHelper.Transformer<ulong, float>.Invoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public virtual IAsyncResult BeginInvoke(ValueType value, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
@@ -1605,7 +1486,6 @@ private sealed class EnumHelper.Transformer<UnderlyingType, ValueType> : Multica
 	|-EnumHelper.Transformer<ulong, UIntPtr>.BeginInvoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public virtual UnderlyingType EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
@@ -1800,12 +1680,9 @@ private sealed class EnumHelper.Transformer<UnderlyingType, ValueType> : Multica
 }
 
 private static class EnumHelper.Caster<UnderlyingType, ValueType> // TypeDefIndex: 1513
-{	// Fields
-	public static readonly EnumHelper.Transformer<UnderlyingType, ValueType> Instance; // 0x0
+{	public static readonly EnumHelper.Transformer<UnderlyingType, ValueType> Instance; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -2344,12 +2221,9 @@ private static class EnumHelper.Caster<UnderlyingType, ValueType> // TypeDefInde
 }
 
 internal sealed class EnumerableTypeInfo<IterableType, ElementType> : TraceLoggingTypeInfo<IterableType> // TypeDefIndex: 1514
-{	// Fields
-	private readonly TraceLoggingTypeInfo<ElementType> elementInfo; // 0x0
+{	private readonly TraceLoggingTypeInfo<ElementType> elementInfo; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -2357,7 +2231,6 @@ internal sealed class EnumerableTypeInfo<IterableType, ElementType> : TraceLoggi
 	|-EnumerableTypeInfo<object, object>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref IterableType value) { }
 	/* GenericInstMethod :
 	|
@@ -2368,9 +2241,7 @@ internal sealed class EnumerableTypeInfo<IterableType, ElementType> : TraceLoggi
 }
 
 internal sealed class EnumByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1560
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -2441,7 +2312,6 @@ internal sealed class EnumByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType
 	|-EnumByteTypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -2512,7 +2382,6 @@ internal sealed class EnumByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType
 	|-EnumByteTypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -2541,7 +2410,6 @@ internal sealed class EnumByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType
 	|-EnumByteTypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -2573,9 +2441,7 @@ internal sealed class EnumByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType
 }
 
 internal sealed class EnumSByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1561
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -2646,7 +2512,6 @@ internal sealed class EnumSByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumSByteTypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -2717,7 +2582,6 @@ internal sealed class EnumSByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumSByteTypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -2746,7 +2610,6 @@ internal sealed class EnumSByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumSByteTypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -2778,9 +2641,7 @@ internal sealed class EnumSByteTypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 }
 
 internal sealed class EnumInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1562
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -2851,7 +2712,6 @@ internal sealed class EnumInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt16TypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -2922,7 +2782,6 @@ internal sealed class EnumInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt16TypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -2951,7 +2810,6 @@ internal sealed class EnumInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt16TypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -2983,9 +2841,7 @@ internal sealed class EnumInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 }
 
 internal sealed class EnumUInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1563
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -3056,7 +2912,6 @@ internal sealed class EnumUInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt16TypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -3127,7 +2982,6 @@ internal sealed class EnumUInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt16TypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -3156,7 +3010,6 @@ internal sealed class EnumUInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt16TypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -3188,9 +3041,7 @@ internal sealed class EnumUInt16TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 }
 
 internal sealed class EnumInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1564
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -3261,7 +3112,6 @@ internal sealed class EnumInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt32TypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -3332,7 +3182,6 @@ internal sealed class EnumInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt32TypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -3361,7 +3210,6 @@ internal sealed class EnumInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt32TypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -3393,9 +3241,7 @@ internal sealed class EnumInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 }
 
 internal sealed class EnumUInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1565
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -3466,7 +3312,6 @@ internal sealed class EnumUInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt32TypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -3537,7 +3382,6 @@ internal sealed class EnumUInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt32TypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -3566,7 +3410,6 @@ internal sealed class EnumUInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt32TypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -3598,9 +3441,7 @@ internal sealed class EnumUInt32TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 }
 
 internal sealed class EnumInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1566
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -3671,7 +3512,6 @@ internal sealed class EnumInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt64TypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -3742,7 +3582,6 @@ internal sealed class EnumInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt64TypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -3771,7 +3610,6 @@ internal sealed class EnumInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 	|-EnumInt64TypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -3803,9 +3641,7 @@ internal sealed class EnumInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTyp
 }
 
 internal sealed class EnumUInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumType> // TypeDefIndex: 1567
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -3876,7 +3712,6 @@ internal sealed class EnumUInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt64TypeInfo<UIntPtr>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref EnumType value) { }
 	/* GenericInstMethod :
 	|
@@ -3947,7 +3782,6 @@ internal sealed class EnumUInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt64TypeInfo<UIntPtr>.WriteData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public override object GetData(object value) { }
 	/* GenericInstMethod :
 	|
@@ -3976,7 +3810,6 @@ internal sealed class EnumUInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 	|-EnumUInt64TypeInfo<UIntPtr>.GetData
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -4008,118 +3841,86 @@ internal sealed class EnumUInt64TypeInfo<EnumType> : TraceLoggingTypeInfo<EnumTy
 }
 
 internal class EnumMap : ObjectMap // TypeDefIndex: 2130
-{	// Fields
-	private readonly EnumMap.EnumMapMember[] _members; // 0x10
+{	private readonly EnumMap.EnumMapMember[] _members; // 0x10
 	private readonly bool _isFlags; // 0x18
 	private readonly string[] _enumNames; // 0x20
 	private readonly string[] _xmlNames; // 0x28
 	private readonly long[] _values; // 0x30
 
-	// Properties
 	public bool IsFlags { get; }
 	public string[] EnumNames { get; }
 	public string[] XmlNames { get; }
 	public long[] Values { get; }
 
-	// Methods
 
-	// RVA: 0x10FB2A0 Offset: 0x10FA6A0 VA: 0x1810FB2A0
 	public void .ctor(EnumMap.EnumMapMember[] members, bool isFlags) { }
 
-	// RVA: 0x95B2D0 Offset: 0x95A6D0 VA: 0x18095B2D0
 	public bool get_IsFlags() { }
 
-	// RVA: 0x497E00 Offset: 0x497200 VA: 0x180497E00
 	public string[] get_EnumNames() { }
 
-	// RVA: 0x7CE230 Offset: 0x7CD630 VA: 0x1807CE230
 	public string[] get_XmlNames() { }
 
-	// RVA: 0x4A2EE0 Offset: 0x4A22E0 VA: 0x1804A2EE0
 	public long[] get_Values() { }
 
-	// RVA: 0x10FAF40 Offset: 0x10FA340 VA: 0x1810FAF40
 	public string GetXmlName(string typeName, object enumValue) { }
 
-	// RVA: 0x10FAC50 Offset: 0x10FA050 VA: 0x1810FAC50
 	public string GetEnumName(string typeName, string xmlName) { }
 
 }
 
 public class EnumMap.EnumMapMember // TypeDefIndex: 2131
-{	// Fields
-	private readonly string _xmlName; // 0x10
+{	private readonly string _xmlName; // 0x10
 	private readonly string _enumName; // 0x18
 	private readonly long _value; // 0x20
 
-	// Properties
 	public string XmlName { get; }
 	public string EnumName { get; }
 	public long Value { get; }
 
-	// Methods
 
-	// RVA: 0x10FABF0 Offset: 0x10F9FF0 VA: 0x1810FABF0
 	public void .ctor(string xmlName, string enumName, long value) { }
 
-	// RVA: 0x4B9460 Offset: 0x4B8860 VA: 0x1804B9460
 	public string get_XmlName() { }
 
-	// RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710
 	public string get_EnumName() { }
 
-	// RVA: 0x497E00 Offset: 0x497200 VA: 0x180497E00
 	public long get_Value() { }
 
 }
 
 public class EnumConverter : TypeConverter // TypeDefIndex: 2701
-{	// Fields
-	private TypeConverter.StandardValuesCollection values; // 0x10
+{	private TypeConverter.StandardValuesCollection values; // 0x10
 	private Type type; // 0x18
 
-	// Properties
 	protected virtual IComparer Comparer { get; }
 
-	// Methods
 
-	// RVA: 0x159E400 Offset: 0x159D800 VA: 0x18159E400
 	public void .ctor(Type type) { }
 
-	// RVA: 0x159CB90 Offset: 0x159BF90 VA: 0x18159CB90 Slot: 4
 	public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType) { }
 
-	// RVA: 0x159CC80 Offset: 0x159C080 VA: 0x18159CC80 Slot: 5
 	public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType) { }
 
-	// RVA: 0x159E470 Offset: 0x159D870 VA: 0x18159E470 Slot: 16
 	protected virtual IComparer get_Comparer() { }
 
-	// RVA: 0x159CD70 Offset: 0x159C170 VA: 0x18159CD70 Slot: 6
 	public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value) { }
 
-	// RVA: 0x159D1D0 Offset: 0x159C5D0 VA: 0x18159D1D0 Slot: 7
 	public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType) { }
 
-	// RVA: 0x159DFE0 Offset: 0x159D3E0 VA: 0x18159DFE0 Slot: 12
 	public override TypeConverter.StandardValuesCollection GetStandardValues(ITypeDescriptorContext context) { }
 
-	// RVA: 0x159DF50 Offset: 0x159D350 VA: 0x18159DF50 Slot: 13
 	public override bool GetStandardValuesExclusive(ITypeDescriptorContext context) { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0 Slot: 14
 	public override bool GetStandardValuesSupported(ITypeDescriptorContext context) { }
 
-	// RVA: 0x159E390 Offset: 0x159D790 VA: 0x18159E390 Slot: 15
 	public override bool IsValid(ITypeDescriptorContext context, object value) { }
 
 }
 
 public static class Enumerable // TypeDefIndex: 3198
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Where<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4221,7 +4022,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TResult> Select<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4422,7 +4222,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.Select<object, float>
 	*/
 
-	// RVA: -1 Offset: -1
 	private static Func<TSource, bool> CombinePredicates<TSource>(Func<TSource, bool> predicate1, Func<TSource, bool> predicate2) { }
 	/* GenericInstMethod :
 	|
@@ -4459,7 +4258,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.CombinePredicates<Resolution>
 	*/
 
-	// RVA: -1 Offset: -1
 	private static Func<TSource, TResult> CombineSelectors<TSource, TMiddle, TResult>(Func<TSource, TMiddle> selector1, Func<TMiddle, TResult> selector2) { }
 	/* GenericInstMethod :
 	|
@@ -4851,7 +4649,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TResult> SelectMany<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, IEnumerable<TResult>> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4874,7 +4671,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC2060 Offset: 0xC1460 VA: 0x1800C2060
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TResult> SelectManyIterator<TSource, TResult>(IEnumerable<TSource> source, Func<TSource, IEnumerable<TResult>> selector) { }
 	/* GenericInstMethod :
 	|
@@ -4892,7 +4688,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Take<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -4918,7 +4713,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC35A0 Offset: 0xC29A0 VA: 0x1800C35A0
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> TakeIterator<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -4935,7 +4729,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> TakeWhile<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4945,7 +4738,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC3810 Offset: 0xC2C10 VA: 0x1800C3810
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> TakeWhileIterator<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -4954,7 +4746,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Skip<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -4970,7 +4761,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC4D20 Offset: 0xC4120 VA: 0x1800C4D20
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> SkipIterator<TSource>(IEnumerable<TSource> source, int count) { }
 	/* GenericInstMethod :
 	|
@@ -4983,7 +4773,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IOrderedEnumerable<TSource> OrderBy<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -5029,7 +4818,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IOrderedEnumerable<TSource> OrderBy<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5039,7 +4827,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IOrderedEnumerable<TSource> OrderByDescending<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -5082,7 +4869,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IOrderedEnumerable<TSource> ThenBy<TSource, TKey>(IOrderedEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -5101,7 +4887,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IOrderedEnumerable<TSource> ThenByDescending<TSource, TKey>(IOrderedEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -5121,7 +4906,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<IGrouping<TKey, TSource>> GroupBy<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -5148,7 +4932,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Concat<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -5163,7 +4946,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC5420 Offset: 0xC4820 VA: 0x1800C5420
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> ConcatIterator<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -5176,7 +4958,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TResult> Zip<TFirst, TSecond, TResult>(IEnumerable<TFirst> first, IEnumerable<TSecond> second, Func<TFirst, TSecond, TResult> resultSelector) { }
 	/* GenericInstMethod :
 	|
@@ -5188,7 +4969,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC5620 Offset: 0xC4A20 VA: 0x1800C5620
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TResult> ZipIterator<TFirst, TSecond, TResult>(IEnumerable<TFirst> first, IEnumerable<TSecond> second, Func<TFirst, TSecond, TResult> resultSelector) { }
 	/* GenericInstMethod :
 	|
@@ -5198,7 +4978,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Distinct<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5211,7 +4990,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Distinct<TSource>(IEnumerable<TSource> source, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5221,7 +4999,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC5980 Offset: 0xC4D80 VA: 0x1800C5980
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> DistinctIterator<TSource>(IEnumerable<TSource> source, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5233,7 +5010,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Union<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -5246,7 +5022,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC5A80 Offset: 0xC4E80 VA: 0x1800C5A80
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> UnionIterator<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5258,7 +5033,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Except<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -5273,7 +5047,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC5CC0 Offset: 0xC50C0 VA: 0x1800C5CC0
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> ExceptIterator<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5286,7 +5059,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> Reverse<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5303,7 +5075,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC5F90 Offset: 0xC5390 VA: 0x1800C5F90
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TSource> ReverseIterator<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5316,7 +5087,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool SequenceEqual<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second) { }
 	/* GenericInstMethod :
 	|
@@ -5329,7 +5099,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool SequenceEqual<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5347,7 +5116,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TSource> AsEnumerable<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5359,7 +5127,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource[] ToArray<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5450,7 +5217,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static List<TSource> ToList<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5511,7 +5277,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static Dictionary<TKey, TSource> ToDictionary<TSource, TKey>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector) { }
 	/* GenericInstMethod :
 	|
@@ -5521,7 +5286,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector) { }
 	/* GenericInstMethod :
 	|
@@ -5540,7 +5304,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector, IEqualityComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -5565,7 +5328,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TResult> OfType<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -5576,7 +5338,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC6450 Offset: 0xC5850 VA: 0x1800C6450
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TResult> OfTypeIterator<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -5585,7 +5346,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TResult> Cast<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -5619,7 +5379,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xC6570 Offset: 0xC5970 VA: 0x1800C6570
-	// RVA: -1 Offset: -1
 	private static IEnumerable<TResult> CastIterator<TResult>(IEnumerable source) { }
 	/* GenericInstMethod :
 	|
@@ -5637,7 +5396,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource First<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5673,7 +5431,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5683,7 +5440,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource FirstOrDefault<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5707,7 +5463,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource FirstOrDefault<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5728,7 +5483,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource Last<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5739,7 +5493,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource LastOrDefault<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5750,7 +5503,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource LastOrDefault<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5760,7 +5512,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource Single<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5770,7 +5521,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource SingleOrDefault<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5781,7 +5531,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource SingleOrDefault<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5792,7 +5541,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static TSource ElementAt<TSource>(IEnumerable<TSource> source, int index) { }
 	/* GenericInstMethod :
 	|
@@ -5805,14 +5553,11 @@ public static class Enumerable // TypeDefIndex: 3198
 	|-Enumerable.ElementAt<object>
 	*/
 
-	// RVA: 0x2224BA0 Offset: 0x2223FA0 VA: 0x182224BA0
 	public static IEnumerable<int> Range(int start, int count) { }
 
 	[IteratorStateMachineAttribute] // RVA: 0xC72A0 Offset: 0xC66A0 VA: 0x1800C72A0
-	// RVA: 0x2224B20 Offset: 0x2223F20 VA: 0x182224B20
 	private static IEnumerable<int> RangeIterator(int start, int count) { }
 
-	// RVA: -1 Offset: -1
 	public static IEnumerable<TResult> Empty<TResult>() { }
 	/* GenericInstMethod :
 	|
@@ -5823,7 +5568,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool Any<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5850,7 +5594,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool Any<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5883,7 +5626,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool All<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5897,7 +5639,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static int Count<TSource>(IEnumerable<TSource> source) { }
 	/* GenericInstMethod :
 	|
@@ -5937,7 +5678,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static int Count<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -5955,7 +5695,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool Contains<TSource>(IEnumerable<TSource> source, TSource value) { }
 	/* GenericInstMethod :
 	|
@@ -5979,7 +5718,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool Contains<TSource>(IEnumerable<TSource> source, TSource value, IEqualityComparer<TSource> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -6000,19 +5738,15 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2225010 Offset: 0x2224410 VA: 0x182225010
 	public static int Sum(IEnumerable<int> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2224E10 Offset: 0x2224210 VA: 0x182224E10
 	public static long Sum(IEnumerable<long> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2224C60 Offset: 0x2224060 VA: 0x182224C60
 	public static float Sum(IEnumerable<float> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static int Sum<TSource>(IEnumerable<TSource> source, Func<TSource, int> selector) { }
 	/* GenericInstMethod :
 	|
@@ -6032,7 +5766,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static long Sum<TSource>(IEnumerable<TSource> source, Func<TSource, long> selector) { }
 	/* GenericInstMethod :
 	|
@@ -6042,7 +5775,6 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static float Sum<TSource>(IEnumerable<TSource> source, Func<TSource, float> selector) { }
 	/* GenericInstMethod :
 	|
@@ -6052,19 +5784,15 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x22248F0 Offset: 0x2223CF0 VA: 0x1822248F0
 	public static float Min(IEnumerable<float> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2224520 Offset: 0x2223920 VA: 0x182224520
 	public static int Max(IEnumerable<int> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2224710 Offset: 0x2223B10 VA: 0x182224710
 	public static float Max(IEnumerable<float> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static int Max<TSource>(IEnumerable<TSource> source, Func<TSource, int> selector) { }
 	/* GenericInstMethod :
 	|
@@ -6077,28 +5805,22 @@ public static class Enumerable // TypeDefIndex: 3198
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x22240E0 Offset: 0x22234E0 VA: 0x1822240E0
 	public static float Average(IEnumerable<float> source) { }
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x22242D0 Offset: 0x22236D0 VA: 0x1822242D0
 	public static double Average(IEnumerable<double> source) { }
 
 }
 
 private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3199
-{	// Fields
-	private int threadId; // 0x0
+{	private int threadId; // 0x0
 	internal int state; // 0x0
 	internal TSource current; // 0x0
 
-	// Properties
 	public TSource Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -6143,7 +5865,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<Resolution>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public TSource get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -6208,7 +5929,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<float>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public abstract Enumerable.Iterator<TSource> Clone();
 	/* GenericInstMethod :
 	|
@@ -6216,7 +5936,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<object>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -6279,7 +5998,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<char>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public IEnumerator<TSource> GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -6324,7 +6042,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<Resolution>.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public abstract bool MoveNext();
 	/* GenericInstMethod :
 	|
@@ -6332,7 +6049,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public abstract IEnumerable<TResult> Select<TResult>(Func<TSource, TResult> selector);
 	/* GenericInstMethod :
 	|
@@ -6340,7 +6056,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<object>.Select<object>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public abstract IEnumerable<TSource> Where(Func<TSource, bool> predicate);
 	/* GenericInstMethod :
 	|
@@ -6348,7 +6063,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<object>.Where
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -6415,7 +6129,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<float>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -6460,7 +6173,6 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 	|-Enumerable.Iterator<Resolution>.System.Collections.IEnumerable.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -6582,14 +6294,11 @@ private abstract class Enumerable.Iterator<TSource> : IEnumerable<TSource>, IEnu
 }
 
 private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<TSource> // TypeDefIndex: 3200
-{	// Fields
-	private IEnumerable<TSource> source; // 0x0
+{	private IEnumerable<TSource> source; // 0x0
 	private Func<TSource, bool> predicate; // 0x0
 	private IEnumerator<TSource> enumerator; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(IEnumerable<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -6636,7 +6345,6 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 	|-Enumerable.WhereEnumerableIterator<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public override Enumerable.Iterator<TSource> Clone() { }
 	/* GenericInstMethod :
 	|
@@ -6683,7 +6391,6 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 	|-Enumerable.WhereEnumerableIterator<KeyValuePair<ulong, Dispatch.ResultCallback>>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public override void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -6778,7 +6485,6 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 	|-Enumerable.WhereEnumerableIterator<Resolution>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public override bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -6873,7 +6579,6 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 	|-Enumerable.WhereEnumerableIterator<Resolution>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public override IEnumerable<TResult> Select<TResult>(Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -6927,7 +6632,6 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 	|-Enumerable.WhereEnumerableIterator<InventoryRecipe>.Select<PlayerItemRecipe>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public override IEnumerable<TSource> Where(Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -6977,14 +6681,11 @@ private class Enumerable.WhereEnumerableIterator<TSource> : Enumerable.Iterator<
 }
 
 private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSource> // TypeDefIndex: 3201
-{	// Fields
-	private TSource[] source; // 0x0
+{	private TSource[] source; // 0x0
 	private Func<TSource, bool> predicate; // 0x0
 	private int index; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(TSource[] source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -7018,7 +6719,6 @@ private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSour
 	|-Enumerable.WhereArrayIterator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public override Enumerable.Iterator<TSource> Clone() { }
 	/* GenericInstMethod :
 	|
@@ -7052,7 +6752,6 @@ private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSour
 	|-Enumerable.WhereArrayIterator<object>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public override bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -7100,7 +6799,6 @@ private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSour
 	|-Enumerable.WhereArrayIterator<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public override IEnumerable<TResult> Select<TResult>(Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -7152,7 +6850,6 @@ private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSour
 	|-Enumerable.WhereArrayIterator<object>.Select<Resolution>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public override IEnumerable<TSource> Where(Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -7189,14 +6886,11 @@ private class Enumerable.WhereArrayIterator<TSource> : Enumerable.Iterator<TSour
 }
 
 private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSource> // TypeDefIndex: 3202
-{	// Fields
-	private List<TSource> source; // 0x0
+{	private List<TSource> source; // 0x0
 	private Func<TSource, bool> predicate; // 0x0
 	private List.Enumerator<TSource> enumerator; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(List<TSource> source, Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -7230,7 +6924,6 @@ private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSourc
 	|-Enumerable.WhereListIterator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public override Enumerable.Iterator<TSource> Clone() { }
 	/* GenericInstMethod :
 	|
@@ -7264,7 +6957,6 @@ private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSourc
 	|-Enumerable.WhereListIterator<object>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public override bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -7312,7 +7004,6 @@ private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSourc
 	|-Enumerable.WhereListIterator<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public override IEnumerable<TResult> Select<TResult>(Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -7364,7 +7055,6 @@ private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSourc
 	|-Enumerable.WhereListIterator<object>.Select<Resolution>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public override IEnumerable<TSource> Where(Func<TSource, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -7401,15 +7091,12 @@ private class Enumerable.WhereListIterator<TSource> : Enumerable.Iterator<TSourc
 }
 
 private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enumerable.Iterator<TResult> // TypeDefIndex: 3203
-{	// Fields
-	private IEnumerable<TSource> source; // 0x0
+{	private IEnumerable<TSource> source; // 0x0
 	private Func<TSource, bool> predicate; // 0x0
 	private Func<TSource, TResult> selector; // 0x0
 	private IEnumerator<TSource> enumerator; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(IEnumerable<TSource> source, Func<TSource, bool> predicate, Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -7640,7 +7327,6 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 	|-Enumerable.WhereSelectEnumerableIterator<ServerInfo, ServerInfo>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public override Enumerable.Iterator<TResult> Clone() { }
 	/* GenericInstMethod :
 	|
@@ -7871,7 +7557,6 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 	|-Enumerable.WhereSelectEnumerableIterator<ServerInfo, ServerInfo>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public override void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -8524,7 +8209,6 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 	|-Enumerable.WhereSelectEnumerableIterator<object, Resolution>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public override bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -9177,7 +8861,6 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 	|-Enumerable.WhereSelectEnumerableIterator<object, Resolution>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public override IEnumerable<TResult2> Select<TResult2>(Func<TResult, TResult2> selector) { }
 	/* GenericInstMethod :
 	|
@@ -9406,7 +9089,6 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 	|-Enumerable.WhereSelectEnumerableIterator<object, InventoryRecipe>.Select<PlayerItemRecipe>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public override IEnumerable<TResult> Where(Func<TResult, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -9632,15 +9314,12 @@ private class Enumerable.WhereSelectEnumerableIterator<TSource, TResult> : Enume
 }
 
 private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable.Iterator<TResult> // TypeDefIndex: 3204
-{	// Fields
-	private TSource[] source; // 0x0
+{	private TSource[] source; // 0x0
 	private Func<TSource, bool> predicate; // 0x0
 	private Func<TSource, TResult> selector; // 0x0
 	private int index; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(TSource[] source, Func<TSource, bool> predicate, Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -9871,7 +9550,6 @@ private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable
 	|-Enumerable.WhereSelectArrayIterator<ServerInfo, ServerInfo>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public override Enumerable.Iterator<TResult> Clone() { }
 	/* GenericInstMethod :
 	|
@@ -10102,7 +9780,6 @@ private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable
 	|-Enumerable.WhereSelectArrayIterator<ServerInfo, ServerInfo>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public override bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -10525,7 +10202,6 @@ private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable
 	|-Enumerable.WhereSelectArrayIterator<object, float>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public override IEnumerable<TResult2> Select<TResult2>(Func<TResult, TResult2> selector) { }
 	/* GenericInstMethod :
 	|
@@ -10754,7 +10430,6 @@ private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable
 	|-Enumerable.WhereSelectArrayIterator<object, InventoryRecipe>.Select<PlayerItemRecipe>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public override IEnumerable<TResult> Where(Func<TResult, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -10980,15 +10655,12 @@ private class Enumerable.WhereSelectArrayIterator<TSource, TResult> : Enumerable
 }
 
 private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.Iterator<TResult> // TypeDefIndex: 3205
-{	// Fields
-	private List<TSource> source; // 0x0
+{	private List<TSource> source; // 0x0
 	private Func<TSource, bool> predicate; // 0x0
 	private Func<TSource, TResult> selector; // 0x0
 	private List.Enumerator<TSource> enumerator; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(List<TSource> source, Func<TSource, bool> predicate, Func<TSource, TResult> selector) { }
 	/* GenericInstMethod :
 	|
@@ -11219,7 +10891,6 @@ private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.
 	|-Enumerable.WhereSelectListIterator<ServerInfo, ServerInfo>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	public override Enumerable.Iterator<TResult> Clone() { }
 	/* GenericInstMethod :
 	|
@@ -11450,7 +11121,6 @@ private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.
 	|-Enumerable.WhereSelectListIterator<ServerInfo, ServerInfo>.Clone
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public override bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -11933,7 +11603,6 @@ private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.
 	|-Enumerable.WhereSelectListIterator<object, float>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public override IEnumerable<TResult2> Select<TResult2>(Func<TResult, TResult2> selector) { }
 	/* GenericInstMethod :
 	|
@@ -12162,7 +11831,6 @@ private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.
 	|-Enumerable.WhereSelectListIterator<object, InventoryRecipe>.Select<PlayerItemRecipe>
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	public override IEnumerable<TResult> Where(Func<TResult, bool> predicate) { }
 	/* GenericInstMethod :
 	|
@@ -12388,13 +12056,10 @@ private class Enumerable.WhereSelectListIterator<TSource, TResult> : Enumerable.
 }
 
 private sealed class Enumerable.<>c__DisplayClass6_0<TSource> // TypeDefIndex: 3206
-{	// Fields
-	public Func<TSource, bool> predicate1; // 0x0
+{	public Func<TSource, bool> predicate1; // 0x0
 	public Func<TSource, bool> predicate2; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -12431,7 +12096,6 @@ private sealed class Enumerable.<>c__DisplayClass6_0<TSource> // TypeDefIndex: 3
 	|-Enumerable.<>c__DisplayClass6_0<Resolution>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool <CombinePredicates>b__0(TSource x) { }
 	/* GenericInstMethod :
 	|
@@ -12495,13 +12159,10 @@ private sealed class Enumerable.<>c__DisplayClass6_0<TSource> // TypeDefIndex: 3
 }
 
 private sealed class Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult> // TypeDefIndex: 3207
-{	// Fields
-	public Func<TMiddle, TResult> selector2; // 0x0
+{	public Func<TMiddle, TResult> selector2; // 0x0
 	public Func<TSource, TMiddle> selector1; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -12892,7 +12553,6 @@ private sealed class Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult> 
 	|-Enumerable.<>c__DisplayClass7_0<object, uint, uint>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal TResult <CombineSelectors>b__0(TSource x) { }
 	/* GenericInstMethod :
 	|
@@ -13466,8 +13126,7 @@ private sealed class Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult> 
 }
 
 private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3208
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TResult <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable<TSource> source; // 0x0
@@ -13477,14 +13136,11 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 	private IEnumerator<TResult> <>7__wrap2; // 0x0
 
-	// Properties
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -13502,7 +13158,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -13513,7 +13168,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -13530,7 +13184,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -13547,7 +13200,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	|-Enumerable.<SelectManyIterator>d__17<object, object>.<>m__Finally1
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally2() { }
 	/* GenericInstMethod :
 	|
@@ -13565,7 +13217,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -13583,7 +13234,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -13601,7 +13251,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -13619,7 +13268,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -13637,7 +13285,6 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -13651,8 +13298,7 @@ private sealed class Enumerable.<SelectManyIterator>d__17<TSource, TResult> : IE
 }
 
 private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3209
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private int count; // 0x0
@@ -13661,14 +13307,11 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	public IEnumerable<TSource> <>3__source; // 0x0
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -13685,7 +13328,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -13697,7 +13339,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -13717,7 +13358,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	|-Enumerable.<TakeIterator>d__25<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -13738,7 +13378,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -13757,7 +13396,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -13778,7 +13416,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -13797,7 +13434,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -13814,7 +13450,6 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -13829,8 +13464,7 @@ private sealed class Enumerable.<TakeIterator>d__25<TSource> : IEnumerable<TSour
 }
 
 private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3210
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable<TSource> source; // 0x0
@@ -13839,14 +13473,11 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	public Func<TSource, bool> <>3__predicate; // 0x0
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -13855,7 +13486,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -13863,7 +13493,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	|-Enumerable.<TakeWhileIterator>d__27<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -13871,7 +13500,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	|-Enumerable.<TakeWhileIterator>d__27<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -13880,7 +13508,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -13889,7 +13516,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -13898,7 +13524,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -13907,7 +13532,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -13916,7 +13540,6 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -13927,8 +13550,7 @@ private sealed class Enumerable.<TakeWhileIterator>d__27<TSource> : IEnumerable<
 }
 
 private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3211
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable<TSource> source; // 0x0
@@ -13937,14 +13559,11 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	public int <>3__count; // 0x0
 	private IEnumerator<TSource> <e>5__1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -13957,7 +13576,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -13967,7 +13585,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -13981,7 +13598,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	|-Enumerable.<SkipIterator>d__31<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -13996,7 +13612,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14011,7 +13626,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14026,7 +13640,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14041,7 +13654,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14054,7 +13666,6 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14067,8 +13678,7 @@ private sealed class Enumerable.<SkipIterator>d__31<TSource> : IEnumerable<TSour
 }
 
 private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3212
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable<TSource> first; // 0x0
@@ -14077,14 +13687,11 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	public IEnumerable<TSource> <>3__second; // 0x0
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14097,7 +13704,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14107,7 +13713,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14121,7 +13726,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -14135,7 +13739,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	|-Enumerable.<ConcatIterator>d__59<object>.<>m__Finally1
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally2() { }
 	/* GenericInstMethod :
 	|
@@ -14150,7 +13753,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14163,7 +13765,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14178,7 +13779,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14193,7 +13793,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14206,7 +13805,6 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14219,8 +13817,7 @@ private sealed class Enumerable.<ConcatIterator>d__59<TSource> : IEnumerable<TSo
 }
 
 private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3213
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TResult <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable<TFirst> first; // 0x0
@@ -14232,14 +13829,11 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	private IEnumerator<TFirst> <e1>5__1; // 0x0
 	private IEnumerator<TSecond> <e2>5__2; // 0x0
 
-	// Properties
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14249,7 +13843,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14258,7 +13851,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14269,7 +13861,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -14280,7 +13871,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	|-Enumerable.<ZipIterator>d__65<object, object, object>.<>m__Finally1
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally2() { }
 	/* GenericInstMethod :
 	|
@@ -14292,7 +13882,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14302,7 +13891,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14314,7 +13902,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14324,7 +13911,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14334,7 +13920,6 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14346,8 +13931,7 @@ private sealed class Enumerable.<ZipIterator>d__65<TFirst, TSecond, TResult> : I
 }
 
 private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3214
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEqualityComparer<TSource> comparer; // 0x0
@@ -14357,14 +13941,11 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	private Set<TSource> <set>5__1; // 0x0
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14376,7 +13957,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14385,7 +13965,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14396,7 +13975,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	|-Enumerable.<DistinctIterator>d__68<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -14408,7 +13986,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14420,7 +13997,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14432,7 +14008,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14444,7 +14019,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14456,7 +14030,6 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14468,8 +14041,7 @@ private sealed class Enumerable.<DistinctIterator>d__68<TSource> : IEnumerable<T
 }
 
 private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3215
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEqualityComparer<TSource> comparer; // 0x0
@@ -14481,14 +14053,11 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	public IEnumerable<TSource> <>3__second; // 0x0
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14500,7 +14069,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14509,7 +14077,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14520,7 +14087,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -14531,7 +14097,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	|-Enumerable.<UnionIterator>d__71<object>.<>m__Finally1
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally2() { }
 	/* GenericInstMethod :
 	|
@@ -14543,7 +14108,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14555,7 +14119,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14567,7 +14130,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14579,7 +14141,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14591,7 +14152,6 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14603,8 +14163,7 @@ private sealed class Enumerable.<UnionIterator>d__71<TSource> : IEnumerable<TSou
 }
 
 private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3216
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEqualityComparer<TSource> comparer; // 0x0
@@ -14616,14 +14175,11 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	private Set<TSource> <set>5__1; // 0x0
 	private IEnumerator<TSource> <>7__wrap1; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14638,7 +14194,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14648,7 +14203,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14662,7 +14216,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	|-Enumerable.<ExceptIterator>d__77<Vector2>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -14677,7 +14230,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14692,7 +14244,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14707,7 +14258,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14722,7 +14272,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14737,7 +14286,6 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14750,8 +14298,7 @@ private sealed class Enumerable.<ExceptIterator>d__77<TSource> : IEnumerable<TSo
 }
 
 private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TSource>, IEnumerable, IEnumerator<TSource>, IDisposable, IEnumerator // TypeDefIndex: 3217
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TSource <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable<TSource> source; // 0x0
@@ -14759,14 +14306,11 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	private Buffer<TSource> <buffer>5__1; // 0x0
 	private int <i>5__2; // 0x0
 
-	// Properties
 	private TSource System.Collections.Generic.IEnumerator<TSource>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14779,7 +14323,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14789,7 +14332,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	|-Enumerable.<ReverseIterator>d__79<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14804,7 +14346,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TSource System.Collections.Generic.IEnumerator<TSource>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14817,7 +14358,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14832,7 +14372,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14847,7 +14386,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TSource> System.Collections.Generic.IEnumerable<TSource>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14860,7 +14398,6 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14873,22 +14410,18 @@ private sealed class Enumerable.<ReverseIterator>d__79<TSource> : IEnumerable<TS
 }
 
 private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3218
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TResult <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable source; // 0x0
 	public IEnumerable <>3__source; // 0x0
 	private IEnumerator <>7__wrap1; // 0x0
 
-	// Properties
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -14897,7 +14430,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -14905,7 +14437,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	|-Enumerable.<OfTypeIterator>d__97<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -14913,7 +14444,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	|-Enumerable.<OfTypeIterator>d__97<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -14922,7 +14452,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14931,7 +14460,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -14940,7 +14468,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -14949,7 +14476,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14958,7 +14484,6 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -14969,22 +14494,18 @@ private sealed class Enumerable.<OfTypeIterator>d__97<TResult> : IEnumerable<TRe
 }
 
 private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResult>, IEnumerable, IEnumerator<TResult>, IDisposable, IEnumerator // TypeDefIndex: 3219
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TResult <>2__current; // 0x0
 	private int <>l__initialThreadId; // 0x0
 	private IEnumerable source; // 0x0
 	public IEnumerable <>3__source; // 0x0
 	private IEnumerator <>7__wrap1; // 0x0
 
-	// Properties
 	private TResult System.Collections.Generic.IEnumerator<TResult>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -15002,7 +14523,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -15015,7 +14535,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -15038,7 +14557,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	|-Enumerable.<CastIterator>d__99<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
@@ -15062,7 +14580,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 6
 	private TResult System.Collections.Generic.IEnumerator<TResult>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -15084,7 +14601,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -15108,7 +14624,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -15130,7 +14645,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IEnumerator<TResult> System.Collections.Generic.IEnumerable<TResult>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -15148,7 +14662,6 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -15164,8 +14677,7 @@ private sealed class Enumerable.<CastIterator>d__99<TResult> : IEnumerable<TResu
 }
 
 private sealed class Enumerable.<RangeIterator>d__115 : IEnumerable<int>, IEnumerable, IEnumerator<int>, IDisposable, IEnumerator // TypeDefIndex: 3220
-{	// Fields
-	private int <>1__state; // 0x10
+{	private int <>1__state; // 0x10
 	private int <>2__current; // 0x14
 	private int <>l__initialThreadId; // 0x18
 	private int start; // 0x1C
@@ -15174,49 +14686,37 @@ private sealed class Enumerable.<RangeIterator>d__115 : IEnumerable<int>, IEnume
 	private int count; // 0x28
 	public int <>3__count; // 0x2C
 
-	// Properties
 	private int System.Collections.Generic.IEnumerator<System.Int32>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2227B70 Offset: 0x2226F70 VA: 0x182227B70
 	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0 Slot: 7
 	private void System.IDisposable.Dispose() { }
 
-	// RVA: 0x22279F0 Offset: 0x2226DF0 VA: 0x1822279F0 Slot: 8
 	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x596230 Offset: 0x595630 VA: 0x180596230 Slot: 6
 	private int System.Collections.Generic.IEnumerator<System.Int32>.get_Current() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2227AD0 Offset: 0x2226ED0 VA: 0x182227AD0 Slot: 10
 	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2227B20 Offset: 0x2226F20 VA: 0x182227B20 Slot: 9
 	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2227A30 Offset: 0x2226E30 VA: 0x182227A30 Slot: 4
 	private IEnumerator<int> System.Collections.Generic.IEnumerable<System.Int32>.GetEnumerator() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x2227A30 Offset: 0x2226E30 VA: 0x182227A30 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
 internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
-{	// Methods
-
-	// RVA: -1 Offset: -1 Slot: 4
+{
 	internal abstract void ComputeKeys(TElement[] elements, int count);
 	/* GenericInstMethod :
 	|
@@ -15224,7 +14724,6 @@ internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
 	|-EnumerableSorter<object>.ComputeKeys
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	internal abstract int CompareKeys(int index1, int index2);
 	/* GenericInstMethod :
 	|
@@ -15232,7 +14731,6 @@ internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
 	|-EnumerableSorter<object>.CompareKeys
 	*/
 
-	// RVA: -1 Offset: -1
 	internal int[] Sort(TElement[] elements, int count) { }
 	/* GenericInstMethod :
 	|
@@ -15264,7 +14762,6 @@ internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
 	|-EnumerableSorter<Resolution>.Sort
 	*/
 
-	// RVA: -1 Offset: -1
 	private void QuickSort(int[] map, int left, int right) { }
 	/* GenericInstMethod :
 	|
@@ -15280,7 +14777,6 @@ internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
 	|-EnumerableSorter<Resolution>.QuickSort
 	*/
 
-	// RVA: -1 Offset: -1
 	protected void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -15299,16 +14795,13 @@ internal abstract class EnumerableSorter<TElement> // TypeDefIndex: 3236
 }
 
 internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // TypeDefIndex: 3237
-{	// Fields
-	internal Func<TElement, TKey> keySelector; // 0x0
+{	internal Func<TElement, TKey> keySelector; // 0x0
 	internal IComparer<TKey> comparer; // 0x0
 	internal bool descending; // 0x0
 	internal EnumerableSorter<TElement> next; // 0x0
 	internal TKey[] keys; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(Func<TElement, TKey> keySelector, IComparer<TKey> comparer, bool descending, EnumerableSorter<TElement> next) { }
 	/* GenericInstMethod :
 	|
@@ -15336,7 +14829,6 @@ internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // 
 	|-EnumerableSorter<Resolution, int>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	internal override void ComputeKeys(TElement[] elements, int count) { }
 	/* GenericInstMethod :
 	|
@@ -15392,7 +14884,6 @@ internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // 
 	|-EnumerableSorter<Resolution, int>.ComputeKeys
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	internal override int CompareKeys(int index1, int index2) { }
 	/* GenericInstMethod :
 	|
@@ -15441,122 +14932,88 @@ internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // 
 }
 
 public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5707
-{	// Fields
-	private string value; // 0x10
+{	private string value; // 0x10
 
-	// Properties
 	public string Value { get; }
 
-	// Methods
 
-	// RVA: 0x4B9460 Offset: 0x4B8860 VA: 0x1804B9460
 	public string get_Value() { }
 
 }
 
 internal static class EnumUtils // TypeDefIndex: 5954
-{	// Fields
-	private static readonly ThreadSafeStore<Type, BidirectionalDictionary<string, string>> EnumMemberNamesPerType; // 0x2B0AAC4
+{	private static readonly ThreadSafeStore<Type, BidirectionalDictionary<string, string>> EnumMemberNamesPerType; // 0x2B0AAC4
 
-	// Methods
 
-	// RVA: 0x1801610 Offset: 0x1800A10 VA: 0x181801610
 	private static BidirectionalDictionary<string, string> InitializeEnumType(Type type) { }
 
-	// RVA: 0x18012D0 Offset: 0x18006D0 VA: 0x1818012D0
 	public static IList<object> GetValues(Type enumType) { }
 
-	// RVA: 0x18019E0 Offset: 0x1800DE0 VA: 0x1818019E0
 	public static object ParseEnumName(string enumText, bool isNullable, Type t) { }
 
-	// RVA: 0x1801D70 Offset: 0x1801170 VA: 0x181801D70
 	public static string ToEnumName(Type enumType, string enumText, bool camelCaseText) { }
 
-	// RVA: 0x1801D00 Offset: 0x1801100 VA: 0x181801D00
 	private static string ResolvedEnumName(BidirectionalDictionary<string, string> map, string enumText) { }
 
-	// RVA: 0x1801F60 Offset: 0x1801360 VA: 0x181801F60
 	private static void .cctor() { }
 
 }
 
 private sealed class EnumUtils.<>c // TypeDefIndex: 5955
-{	// Fields
-	public static readonly EnumUtils.<>c <>9; // 0x0
+{	public static readonly EnumUtils.<>c <>9; // 0x0
 	public static Func<EnumMemberAttribute, string> <>9__1_0; // 0x8
 	public static Func<FieldInfo, bool> <>9__5_0; // 0x10
 
-	// Methods
 
-	// RVA: 0x1810320 Offset: 0x180F720 VA: 0x181810320
 	private static void .cctor() { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
-	// RVA: 0x6C6330 Offset: 0x6C5730 VA: 0x1806C6330
 	internal string <InitializeEnumType>b__1_0(EnumMemberAttribute a) { }
 
-	// RVA: 0x180F9B0 Offset: 0x180EDB0 VA: 0x18180F9B0
 	internal bool <GetValues>b__5_0(FieldInfo f) { }
 
 }
 
 private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5956
-{	// Fields
-	public static readonly EnumUtils.<>c__2<T> <>9; // 0x0
+{	public static readonly EnumUtils.<>c__2<T> <>9; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 
 }
 
 public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 10794
-{	// Fields
-	public object Value; // 0x18
+{	public object Value; // 0x18
 	public RustText TextValue; // 0x20
 	private EnumListUI list; // 0x28
 
-	// Methods
 
-	// RVA: 0x8B5CF0 Offset: 0x8B50F0 VA: 0x1808B5CF0
 	public void Init(object value, string valueText, EnumListUI list) { }
 
-	// RVA: 0x8B5C70 Offset: 0x8B5070 VA: 0x1808B5C70
 	public void Clicked() { }
 
-	// RVA: 0x2F91F0 Offset: 0x2F85F0 VA: 0x1802F91F0
 	public void .ctor() { }
 
 }
 
 public class EnumListUI : MonoBehaviour // TypeDefIndex: 10795
-{	// Fields
-	public Transform PrefabItem; // 0x18
+{	public Transform PrefabItem; // 0x18
 	public Transform Container; // 0x20
 	private Action<object> clickedAction; // 0x28
 	private CanvasScaler canvasScaler; // 0x30
 
-	// Methods
 
-	// RVA: 0x4E2D90 Offset: 0x4E2190 VA: 0x1804E2D90
 	private void Awake() { }
 
-	// RVA: 0x8B5DC0 Offset: 0x8B51C0 VA: 0x1808B5DC0
 	public void Show(List<object> values, Action<object> clicked) { }
 
-	// RVA: 0x8B5D50 Offset: 0x8B5150 VA: 0x1808B5D50
 	public void ItemClicked(object value) { }
 
-	// RVA: 0x4E2D90 Offset: 0x4E2190 VA: 0x1804E2D90
 	public void Hide() { }
 
-	// RVA: 0x2F91F0 Offset: 0x2F85F0 VA: 0x1802F91F0
 	public void .ctor() { }
 
 }

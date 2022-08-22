@@ -1,6 +1,5 @@
 public struct FontAssetCreationSettings // TypeDefIndex: 6764
-{	// Fields
-	public string sourceFontFileName; // 0x0
+{	public string sourceFontFileName; // 0x0
 	public string sourceFontFileGUID; // 0x8
 	public int pointSizeSamplingMode; // 0x10
 	public int pointSize; // 0x14
@@ -17,9 +16,7 @@ public struct FontAssetCreationSettings // TypeDefIndex: 6764
 	public int renderMode; // 0x50
 	public bool includeFontFeatures; // 0x54
 
-	// Methods
 
-	// RVA: 0x116FC0 Offset: 0x1163C0 VA: 0x180116FC0
 	internal void .ctor(string sourceFontFileGUID, int pointSize, int pointSizeSamplingMode, int padding, int packingMode, int atlasWidth, int atlasHeight, int characterSelectionMode, string characterSet, int renderMode) { }
 
 }

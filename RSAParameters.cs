@@ -1,6 +1,5 @@
 public struct RSAParameters // TypeDefIndex: 981
-{	// Fields
-	public byte[] Exponent; // 0x0
+{	public byte[] Exponent; // 0x0
 	public byte[] Modulus; // 0x8
 	public byte[] P; // 0x10
 	public byte[] Q; // 0x18

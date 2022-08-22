@@ -1,6 +1,5 @@
 public enum SecurityProtocolType // TypeDefIndex: 2869
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SecurityProtocolType SystemDefault = 0;
 	public const SecurityProtocolType Ssl3 = 48;
 	public const SecurityProtocolType Tls = 192;

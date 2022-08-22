@@ -1,16 +1,12 @@
 public static class NativeArrayUnsafeUtility // TypeDefIndex: 3339
 {
-// Namespace: Unity.Collections.LowLevel.Unsafe
 [RequiredByNativeCodeAttribute] // RVA: 0xE0D10 Offset: 0xE0110 VA: 0x1800E0D10
 [AttributeUsageAttribute] // RVA: 0xE0D10 Offset: 0xE0110 VA: 0x1800E0D10
 public sealed class NativeSetClassTypeToNullOnScheduleAttribute : Attribute // TypeDefIndex: 3338
 
-// Namespace: Unity.Collections.LowLevel.Unsafe
 [ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 public static class NativeArrayUnsafeUtility // TypeDefIndex: 3339
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public static NativeArray<T> ConvertExistingDataToNativeArray<T>(void* dataPointer, int length, Allocator allocator) { }
 	/* GenericInstMethod :
 	|
@@ -36,7 +32,6 @@ public static class NativeArrayUnsafeUtility // TypeDefIndex: 3339
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void* GetUnsafePtr<T>(NativeArray<T> nativeArray) { }
 	/* GenericInstMethod :
 	|
@@ -47,7 +42,6 @@ public static class NativeArrayUnsafeUtility // TypeDefIndex: 3339
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void* GetUnsafeReadOnlyPtr<T>(NativeArray<T> nativeArray) { }
 	/* GenericInstMethod :
 	|
@@ -61,7 +55,6 @@ public static class NativeArrayUnsafeUtility // TypeDefIndex: 3339
 	|-NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<Vector4>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void* GetUnsafeBufferPointerWithoutChecks<T>(NativeArray<T> nativeArray) { }
 	/* GenericInstMethod :
 	|

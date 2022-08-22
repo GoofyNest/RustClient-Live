@@ -1,6 +1,5 @@
 internal enum OidGroup // TypeDefIndex: 1015
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const OidGroup AllGroups = 0;
 	public const OidGroup HashAlgorithm = 1;
 	public const OidGroup EncryptionAlgorithm = 2;
@@ -17,8 +16,7 @@ internal enum OidGroup // TypeDefIndex: 1015
 }
 
 public enum OidGroup // TypeDefIndex: 2791
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const OidGroup All = 0;
 	public const OidGroup HashAlgorithm = 1;
 	public const OidGroup EncryptionAlgorithm = 2;

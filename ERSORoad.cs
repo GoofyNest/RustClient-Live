@@ -1,6 +1,5 @@
 public class ERSORoad // TypeDefIndex: 7228
-{	// Fields
-	public SideObject sideObject; // 0x10
+{	public SideObject sideObject; // 0x10
 	public double id; // 0x18
 	public bool active; // 0x20
 	public List<Vector3> vecPositions; // 0x28
@@ -32,9 +31,7 @@ public class ERSORoad // TypeDefIndex: 7228
 	public float minRandomYPositionDistance; // 0x84
 	public float maxRandomYPositionDistance; // 0x88
 
-	// Methods
 
-	// RVA: 0xA55A80 Offset: 0xA54E80 VA: 0x180A55A80
 	public void .ctor(SideObject so) { }
 
 }

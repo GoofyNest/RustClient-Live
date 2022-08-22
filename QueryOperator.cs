@@ -1,6 +1,5 @@
 internal enum QueryOperator // TypeDefIndex: 6091
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const QueryOperator None = 0;
 	public const QueryOperator Equals = 1;
 	public const QueryOperator NotEquals = 2;

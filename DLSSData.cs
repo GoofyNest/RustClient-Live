@@ -1,6 +1,5 @@
 public struct DLSSData // TypeDefIndex: 8221
-{	// Fields
-	public IntPtr color; // 0x0
+{	public IntPtr color; // 0x0
 	public IntPtr depth; // 0x8
 	public IntPtr motion; // 0x10
 	public IntPtr exposure; // 0x18

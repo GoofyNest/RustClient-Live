@@ -1,8 +1,6 @@
 internal enum Aggregate // TypeDefIndex: 4241
 {
-// Namespace: System.Data
 internal enum Aggregate // TypeDefIndex: 4241
-	// Fields
 	public int value__; // 0x0
 	public const Aggregate None = -1;
 	public const Aggregate Sum = 30;

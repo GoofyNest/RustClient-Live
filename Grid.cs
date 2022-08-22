@@ -1,10 +1,7 @@
 internal class Grid.Node<T> // TypeDefIndex: 4830
-{	// Fields
-	public HashSet<T> Contents; // 0x0
+{	public HashSet<T> Contents; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void Add(T obj) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +9,6 @@ internal class Grid.Node<T> // TypeDefIndex: 4830
 	|-Grid.Node<object>.Add
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool Remove(T obj) { }
 	/* GenericInstMethod :
 	|
@@ -20,7 +16,6 @@ internal class Grid.Node<T> // TypeDefIndex: 4830
 	|-Grid.Node<object>.Remove
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|

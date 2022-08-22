@@ -1,6 +1,5 @@
 public enum NoteName // TypeDefIndex: 7434
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const NoteName C = 0;
 	public const NoteName CSharp = 1;
 	public const NoteName D = 2;

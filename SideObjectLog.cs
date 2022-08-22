@@ -1,6 +1,5 @@
 public class SideObjectLog // TypeDefIndex: 7248
-{	// Fields
-	public string version; // 0x10
+{	public string version; // 0x10
 	public string name; // 0x18
 	public double id; // 0x20
 	public double timestamp; // 0x28
@@ -213,12 +212,9 @@ public class SideObjectLog // TypeDefIndex: 7248
 	public bool randomUVx; // 0x3D9
 	public bool isUsedAsChild; // 0x3DA
 
-	// Methods
 
-	// RVA: 0x22BE690 Offset: 0x22BDA90 VA: 0x1822BE690
 	public void OODOOOQQCO(SideObject so) { }
 
-	// RVA: 0x22BF4C0 Offset: 0x22BE8C0 VA: 0x1822BF4C0
 	public void .ctor() { }
 
 }

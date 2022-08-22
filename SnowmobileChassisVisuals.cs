@@ -1,6 +1,5 @@
 public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClientComponent // TypeDefIndex: 9757
-{	// Fields
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private Animator animator; // 0x30
 	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private SnowmobileAudio audioScript; // 0x38
@@ -47,45 +46,32 @@ public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClie
 	private int animEngineOnIndex; // 0xCC
 	private float steerPercent; // 0xD0
 
-	// Methods
 
-	// RVA: 0x5CBE90 Offset: 0x5CB290 VA: 0x1805CBE90 Slot: 4
 	public override void Init(Snowmobile owner, VehicleChassisVisuals.ClientWheelData<Snowmobile>[] clientWheelData) { }
 
-	// RVA: 0x5CCD70 Offset: 0x5CC170 VA: 0x1805CCD70 Slot: 5
 	protected override void PreWheelUpdateTick() { }
 
-	// RVA: 0x5CBFE0 Offset: 0x5CB3E0 VA: 0x1805CBFE0 Slot: 7
 	protected override void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt) { }
 
-	// RVA: 0x5CCED0 Offset: 0x5CC2D0 VA: 0x1805CCED0 Slot: 8
 	protected override void StopAll() { }
 
-	// RVA: 0x5CD060 Offset: 0x5CC460 VA: 0x1805CD060 Slot: 6
 	protected override void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData, bool isOn, float steer, float dt) { }
 
-	// RVA: 0x5CCD80 Offset: 0x5CC180 VA: 0x1805CCD80
 	private void SetSuspensionExtension(Transform visualWheel, Vector3 restingLocalPos, float extension, float prevExtension, float maxVisualExtension, float updateSpeed, float dt, bool reverse) { }
 
-	// RVA: 0x5CBE20 Offset: 0x5CB220 VA: 0x1805CBE20
 	private void InitAnim() { }
 
-	// RVA: 0x5CD700 Offset: 0x5CCB00 VA: 0x1805CD700
 	public void .ctor() { }
 
-	// RVA: 0x5CD640 Offset: 0x5CCA40 VA: 0x1805CD640
 	private static void .cctor() { }
 
 }
 
 private class SnowmobileChassisVisuals.TreadRenderer // TypeDefIndex: 9758
-{	// Fields
-	public Renderer renderer; // 0x10
+{	public Renderer renderer; // 0x10
 	public int materialIndex; // 0x18
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }

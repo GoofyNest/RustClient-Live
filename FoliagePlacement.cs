@@ -1,6 +1,5 @@
 public class FoliagePlacement : ScriptableObject // TypeDefIndex: 9876
-{	// Fields
-	[HeaderAttribute] // RVA: 0xA39F0 Offset: 0xA2DF0 VA: 0x1800A39F0
+{	[HeaderAttribute] // RVA: 0xA39F0 Offset: 0xA2DF0 VA: 0x1800A39F0
 	public float Density; // 0x18
 	[HeaderAttribute] // RVA: 0xA3A80 Offset: 0xA2E80 VA: 0x1800A3A80
 	public SpawnFilter Filter; // 0x20
@@ -34,18 +33,13 @@ public class FoliagePlacement : ScriptableObject // TypeDefIndex: 9876
 	public const float amplitude = 0,5;
 	public const float offset = 0,5;
 
-	// Methods
 
-	// RVA: 0x6EC9D0 Offset: 0x6EBDD0 VA: 0x1806EC9D0
 	public void Init() { }
 
-	// RVA: 0x6EC860 Offset: 0x6EBC60 VA: 0x1806EC860
 	public bool CheckBatch(Vector3 pivot, float size) { }
 
-	// RVA: 0x6EC180 Offset: 0x6EB580 VA: 0x1806EC180
 	public void AddBatch(FoliageGroup batchGroup, float lod, uint seed) { }
 
-	// RVA: 0x6ECA50 Offset: 0x6EBE50 VA: 0x1806ECA50
 	public void .ctor() { }
 
 }

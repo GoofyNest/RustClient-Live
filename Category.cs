@@ -1,6 +1,5 @@
 public enum Category // TypeDefIndex: 7737
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Category Shirt = 0;
 	public const Category Pants = 5;
 	public const Category Jacket = 1;

@@ -1,6 +1,5 @@
 internal enum InputFeatureType // TypeDefIndex: 4142
-{	// Fields
-	public uint value__; // 0x0
+{	public uint value__; // 0x0
 	public const InputFeatureType Custom = 0;
 	public const InputFeatureType Binary = 1;
 	public const InputFeatureType DiscreteStates = 2;

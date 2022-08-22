@@ -1,6 +1,5 @@
 public class ERCrossingPrefabs : MonoBehaviour // TypeDefIndex: 7179
-{	// Fields
-	public List<QDOODOQQDQODD> crossingElements; // 0x18
+{	public List<QDOODOQQDQODD> crossingElements; // 0x18
 	public List<QDOQDSQOOQDDD> sidewalkControlElements; // 0x20
 	public List<ERConnectionSibling> siblings; // 0x28
 	public Vector3[] meshVecs; // 0x30
@@ -109,81 +108,55 @@ public class ERCrossingPrefabs : MonoBehaviour // TypeDefIndex: 7179
 	public float indent; // 0x2DC
 	public float surrounding; // 0x2E0
 
-	// Methods
 
-	// RVA: 0xB818A0 Offset: 0xB80CA0 VA: 0x180B818A0
 	public void OCOODQQDQO() { }
 
-	// RVA: 0xB81F30 Offset: 0xB81330 VA: 0x180B81F30
 	public void OOCQCCQDOQ(Vector3 v1, Vector3 v2, int connectionElement, ERModularRoad road) { }
 
-	// RVA: 0xB81970 Offset: 0xB80D70 VA: 0x180B81970
 	public void OCQDDQODCC(int el) { }
 
-	// RVA: 0x488BC0 Offset: 0x487FC0 VA: 0x180488BC0
 	public void OCDOCCODOC(int elInt, float distance) { }
 
-	// RVA: 0xB7F9D0 Offset: 0xB7EDD0 VA: 0x180B7F9D0
 	public void DeformTCossingConnection(int elInt, float distance, float defaultDistance, List<Vector3> controlPoints, float multiplyFactor, float angle, Vector3 cpCenterPoint, float curveStrength) { }
 
-	// RVA: 0xB82950 Offset: 0xB81D50 VA: 0x180B82950
 	public void OOODCOOOCQ(List<int> affectedVecs, List<Vector2> tmpVecs) { }
 
-	// RVA: 0xB83200 Offset: 0xB82600 VA: 0x180B83200
 	public void OQOQDDOCDC(bool ignorePriority, ERModularRoad road) { }
 
-	// RVA: 0xB849B0 Offset: 0xB83DB0 VA: 0x180B849B0
 	public void OQQODODQCQ() { }
 
-	// RVA: 0xB845F0 Offset: 0xB839F0 VA: 0x180B845F0
 	public void OQQCDODDQQ(bool forceFlag) { }
 
-	// RVA: 0xB7F6D0 Offset: 0xB7EAD0 VA: 0x180B7F6D0
 	public void CheckPlanarUVs() { }
 
-	// RVA: 0xB81E60 Offset: 0xB81260 VA: 0x180B81E60
 	public static bool OOCCOODCOO(List<ERModularRoad> affectedObjects, ERModularRoad roadScr) { }
 
-	// RVA: 0xB81390 Offset: 0xB80790 VA: 0x180B81390
 	public void OCCDCDDOOQ(bool flag) { }
 
-	// RVA: 0xB828B0 Offset: 0xB81CB0 VA: 0x180B828B0
 	public void OODODQQCOD(int el) { }
 
-	// RVA: 0xB80A60 Offset: 0xB7FE60 VA: 0x180B80A60
 	public bool HasConnections() { }
 
-	// RVA: 0xB807A0 Offset: 0xB7FBA0 VA: 0x180B807A0
 	public bool HasConnectionsFull() { }
 
-	// RVA: 0xB82AD0 Offset: 0xB81ED0 VA: 0x180B82AD0
 	public void OOQOQQODCD() { }
 
-	// RVA: 0xB81560 Offset: 0xB80960 VA: 0x180B81560
 	public void OCODDQDQCC(int el, int startend) { }
 
-	// RVA: 0xB85100 Offset: 0xB84500 VA: 0x180B85100
 	public void PopulateSiblingsList() { }
 
-	// RVA: 0xB80B50 Offset: 0xB7FF50 VA: 0x180B80B50
 	public void InitFlexConnector() { }
 
-	// RVA: 0xB7F400 Offset: 0xB7E800 VA: 0x180B7F400
 	public void AttachRoadToFlexConnector(ERModularBase scr, float OCCDOQCODC, Vector3 OCCQOCQOQD) { }
 
-	// RVA: 0xB84A00 Offset: 0xB83E00 VA: 0x180B84A00
 	public void OQQQQOOCDO(int index) { }
 
-	// RVA: 0xB85490 Offset: 0xB84890 VA: 0x180B85490
 	public void SetElementInfo(int index, int sourceIndex) { }
 
-	// RVA: 0xB81B40 Offset: 0xB80F40 VA: 0x180B81B40
 	public static void ODDQDDQOOD() { }
 
-	// RVA: 0xB830A0 Offset: 0xB824A0 VA: 0x180B830A0
 	public static bool OQCDCDOOCD(Vector3 pTarget, Vector3 pSource, Vector3 pCheck) { }
 
-	// RVA: 0xB856A0 Offset: 0xB84AA0 VA: 0x180B856A0
 	public void .ctor() { }
 
 }

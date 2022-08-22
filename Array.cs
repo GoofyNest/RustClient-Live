@@ -1,6 +1,5 @@
 public abstract class Array : ICollection, IEnumerable, IList, IStructuralComparable, IStructuralEquatable, ICloneable // TypeDefIndex: 128
-{	// Properties
-	private int System.Collections.ICollection.Count { get; }
+{	private int System.Collections.ICollection.Count { get; }
 	private bool System.Collections.IList.IsReadOnly { get; }
 	private object System.Collections.IList.Item { get; set; }
 	public long LongLength { get; }
@@ -11,12 +10,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	public int Length { get; }
 	public int Rank { get; }
 
-	// Methods
 
-	// RVA: 0x1584C10 Offset: 0x1584010 VA: 0x181584C10
 	public static Array CreateInstance(Type elementType, long[] lengths) { }
 
-	// RVA: -1 Offset: -1
 	public static ReadOnlyCollection<T> AsReadOnly<T>(T[] array) { }
 	/* GenericInstMethod :
 	|
@@ -31,7 +27,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.AsReadOnly<CustomAttributeTypedArgument>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Resize<T>(ref T[] array, int newSize) { }
 	/* GenericInstMethod :
 	|
@@ -151,61 +146,42 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Resize<ViewModelDrawEvent>
 	*/
 
-	// RVA: 0x1586510 Offset: 0x1585910 VA: 0x181586510 Slot: 5
 	private int System.Collections.ICollection.get_Count() { }
 
-	// RVA: 0x498AD0 Offset: 0x497ED0 VA: 0x180498AD0 Slot: 13
 	private bool System.Collections.IList.get_IsReadOnly() { }
 
-	// RVA: 0x1588350 Offset: 0x1587750 VA: 0x181588350 Slot: 8
 	private object System.Collections.IList.get_Item(int index) { }
 
-	// RVA: 0x1588360 Offset: 0x1587760 VA: 0x181588360 Slot: 9
 	private void System.Collections.IList.set_Item(int index, object value) { }
 
-	// RVA: 0x1588120 Offset: 0x1587520 VA: 0x181588120 Slot: 10
 	private int System.Collections.IList.Add(object value) { }
 
-	// RVA: 0x1588200 Offset: 0x1587600 VA: 0x181588200 Slot: 11
 	private bool System.Collections.IList.Contains(object value) { }
 
-	// RVA: 0x1588180 Offset: 0x1587580 VA: 0x181588180 Slot: 12
 	private void System.Collections.IList.Clear() { }
 
-	// RVA: 0x1588220 Offset: 0x1587620 VA: 0x181588220 Slot: 15
 	private int System.Collections.IList.IndexOf(object value) { }
 
-	// RVA: 0x1588230 Offset: 0x1587630 VA: 0x181588230 Slot: 16
 	private void System.Collections.IList.Insert(int index, object value) { }
 
-	// RVA: 0x15882F0 Offset: 0x15876F0 VA: 0x1815882F0 Slot: 17
 	private void System.Collections.IList.Remove(object value) { }
 
-	// RVA: 0x1588290 Offset: 0x1587690 VA: 0x181588290 Slot: 18
 	private void System.Collections.IList.RemoveAt(int index) { }
 
-	// RVA: 0x1584230 Offset: 0x1583630 VA: 0x181584230 Slot: 4
 	public void CopyTo(Array array, int index) { }
 
-	// RVA: 0xD6C080 Offset: 0xD6B480 VA: 0x180D6C080 Slot: 22
 	public object Clone() { }
 
-	// RVA: 0x1588380 Offset: 0x1587780 VA: 0x181588380 Slot: 19
 	private int System.Collections.IStructuralComparable.CompareTo(object other, IComparer comparer) { }
 
-	// RVA: 0x15885A0 Offset: 0x15879A0 VA: 0x1815885A0 Slot: 20
 	private bool System.Collections.IStructuralEquatable.Equals(object other, IEqualityComparer comparer) { }
 
-	// RVA: 0x1584170 Offset: 0x1583570 VA: 0x181584170
 	internal static int CombineHashCodes(int h1, int h2) { }
 
-	// RVA: 0x1588780 Offset: 0x1587B80 VA: 0x181588780 Slot: 21
 	private int System.Collections.IStructuralEquatable.GetHashCode(IEqualityComparer comparer) { }
 
-	// RVA: 0x1583A20 Offset: 0x1582E20 VA: 0x181583A20
 	public static int BinarySearch(Array array, object value) { }
 
-	// RVA: -1 Offset: -1
 	public static TOutput[] ConvertAll<TInput, TOutput>(TInput[] array, Converter<TInput, TOutput> converter) { }
 	/* GenericInstMethod :
 	|
@@ -213,16 +189,12 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.ConvertAll<object, object>
 	*/
 
-	// RVA: 0x1584340 Offset: 0x1583740 VA: 0x181584340
 	public static void Copy(Array sourceArray, Array destinationArray, long length) { }
 
-	// RVA: 0x1584A30 Offset: 0x1583E30 VA: 0x181584A30
 	public static void Copy(Array sourceArray, long sourceIndex, Array destinationArray, long destinationIndex, long length) { }
 
-	// RVA: 0x1584190 Offset: 0x1583590 VA: 0x181584190
 	public void CopyTo(Array array, long index) { }
 
-	// RVA: -1 Offset: -1
 	public static void ForEach<T>(T[] array, Action<T> action) { }
 	/* GenericInstMethod :
 	|
@@ -230,49 +202,34 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.ForEach<object>
 	*/
 
-	// RVA: 0x1588970 Offset: 0x1587D70 VA: 0x181588970
 	public long get_LongLength() { }
 
-	// RVA: 0x15857B0 Offset: 0x1584BB0 VA: 0x1815857B0
 	public long GetLongLength(int dimension) { }
 
-	// RVA: 0x1585DC0 Offset: 0x15851C0 VA: 0x181585DC0
 	public object GetValue(long index) { }
 
-	// RVA: 0x1585EF0 Offset: 0x15852F0 VA: 0x181585EF0
 	public object GetValue(long index1, long index2) { }
 
-	// RVA: 0x15859C0 Offset: 0x1584DC0 VA: 0x1815859C0
 	public object GetValue(long index1, long index2, long index3) { }
 
-	// RVA: 0x1585850 Offset: 0x1584C50 VA: 0x181585850
 	public object GetValue(long[] indices) { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0 Slot: 14
 	public bool get_IsFixedSize() { }
 
-	// RVA: 0x498AD0 Offset: 0x497ED0 VA: 0x180498AD0 Slot: 23
 	public bool get_IsReadOnly() { }
 
-	// RVA: 0x498AD0 Offset: 0x497ED0 VA: 0x180498AD0 Slot: 24
 	public bool get_IsSynchronized() { }
 
-	// RVA: 0x4B0E80 Offset: 0x4B0280 VA: 0x1804B0E80 Slot: 6
 	public object get_SyncRoot() { }
 
-	// RVA: 0x1583C20 Offset: 0x1583020 VA: 0x181583C20
 	public static int BinarySearch(Array array, int index, int length, object value) { }
 
-	// RVA: 0x1583B20 Offset: 0x1582F20 VA: 0x181583B20
 	public static int BinarySearch(Array array, object value, IComparer comparer) { }
 
-	// RVA: 0x1583C40 Offset: 0x1583040 VA: 0x181583C40
 	public static int BinarySearch(Array array, int index, int length, object value, IComparer comparer) { }
 
-	// RVA: 0x15857D0 Offset: 0x1584BD0 VA: 0x1815857D0
 	private static int GetMedian(int low, int hi) { }
 
-	// RVA: -1 Offset: -1
 	public static int BinarySearch<T>(T[] array, T value) { }
 	/* GenericInstMethod :
 	|
@@ -284,7 +241,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.BinarySearch<ulong>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int BinarySearch<T>(T[] array, T value, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -292,7 +248,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.BinarySearch<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int BinarySearch<T>(T[] array, int index, int length, T value) { }
 	/* GenericInstMethod :
 	|
@@ -300,7 +255,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.BinarySearch<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int BinarySearch<T>(T[] array, int index, int length, T value, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -314,16 +268,12 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.BinarySearch<ulong>
 	*/
 
-	// RVA: 0x15862C0 Offset: 0x15856C0 VA: 0x1815862C0
 	public static int IndexOf(Array array, object value) { }
 
-	// RVA: 0x15863B0 Offset: 0x15857B0 VA: 0x1815863B0
 	public static int IndexOf(Array array, object value, int startIndex) { }
 
-	// RVA: 0x1586040 Offset: 0x1585440 VA: 0x181586040
 	public static int IndexOf(Array array, object value, int startIndex, int count) { }
 
-	// RVA: -1 Offset: -1
 	public static int IndexOf<T>(T[] array, T value) { }
 	/* GenericInstMethod :
 	|
@@ -370,7 +320,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOf<ViewModelDrawEvent>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int IndexOf<T>(T[] array, T value, int startIndex) { }
 	/* GenericInstMethod :
 	|
@@ -378,7 +327,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOf<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int IndexOf<T>(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
@@ -871,16 +819,12 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOf<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: 0x15865D0 Offset: 0x15859D0 VA: 0x1815865D0
 	public static int LastIndexOf(Array array, object value) { }
 
-	// RVA: 0x15869E0 Offset: 0x1585DE0 VA: 0x1815869E0
 	public static int LastIndexOf(Array array, object value, int startIndex) { }
 
-	// RVA: 0x15866F0 Offset: 0x1585AF0 VA: 0x1815866F0
 	public static int LastIndexOf(Array array, object value, int startIndex, int count) { }
 
-	// RVA: -1 Offset: -1
 	public static int LastIndexOf<T>(T[] array, T value) { }
 	/* GenericInstMethod :
 	|
@@ -919,7 +863,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.LastIndexOf<ViewModelDrawEvent>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int LastIndexOf<T>(T[] array, T value, int startIndex) { }
 	/* GenericInstMethod :
 	|
@@ -927,7 +870,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.LastIndexOf<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int LastIndexOf<T>(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
@@ -965,13 +907,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.LastIndexOf<ViewModelDrawEvent>
 	*/
 
-	// RVA: 0x1586D90 Offset: 0x1586190 VA: 0x181586D90
 	public static void Reverse(Array array) { }
 
-	// RVA: 0x1586A80 Offset: 0x1585E80 VA: 0x181586A80
 	public static void Reverse(Array array, int index, int length) { }
 
-	// RVA: -1 Offset: -1
 	public static void Reverse<T>(T[] array) { }
 	/* GenericInstMethod :
 	|
@@ -982,7 +921,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Reverse<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Reverse<T>(T[] array, int index, int length) { }
 	/* GenericInstMethod :
 	|
@@ -1473,43 +1411,30 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Reverse<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: 0x1587450 Offset: 0x1586850 VA: 0x181587450
 	public void SetValue(object value, long index) { }
 
-	// RVA: 0x15874F0 Offset: 0x15868F0 VA: 0x1815874F0
 	public void SetValue(object value, long index1, long index2) { }
 
-	// RVA: 0x1587280 Offset: 0x1586680 VA: 0x181587280
 	public void SetValue(object value, long index1, long index2, long index3) { }
 
-	// RVA: 0x1586E90 Offset: 0x1586290 VA: 0x181586E90
 	public void SetValue(object value, long[] indices) { }
 
-	// RVA: 0x1587A30 Offset: 0x1586E30 VA: 0x181587A30
 	public static void Sort(Array array) { }
 
-	// RVA: 0x1587900 Offset: 0x1586D00 VA: 0x181587900
 	public static void Sort(Array array, int index, int length) { }
 
-	// RVA: 0x1587FF0 Offset: 0x15873F0 VA: 0x181587FF0
 	public static void Sort(Array array, IComparer comparer) { }
 
-	// RVA: 0x15880F0 Offset: 0x15874F0 VA: 0x1815880F0
 	public static void Sort(Array array, int index, int length, IComparer comparer) { }
 
-	// RVA: 0x1587ED0 Offset: 0x15872D0 VA: 0x181587ED0
 	public static void Sort(Array keys, Array items) { }
 
-	// RVA: 0x1587930 Offset: 0x1586D30 VA: 0x181587930
 	public static void Sort(Array keys, Array items, IComparer comparer) { }
 
-	// RVA: 0x1587FD0 Offset: 0x15873D0 VA: 0x181587FD0
 	public static void Sort(Array keys, Array items, int index, int length) { }
 
-	// RVA: 0x1587B10 Offset: 0x1586F10 VA: 0x181587B10
 	public static void Sort(Array keys, Array items, int index, int length, IComparer comparer) { }
 
-	// RVA: -1 Offset: -1
 	public static void Sort<T>(T[] array) { }
 	/* GenericInstMethod :
 	|
@@ -1548,7 +1473,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<ViewModelDrawEvent>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<T>(T[] array, int index, int length) { }
 	/* GenericInstMethod :
 	|
@@ -1557,7 +1481,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<XmlTextReaderImpl.NodeData>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<T>(T[] array, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -1568,7 +1491,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<T>(T[] array, int index, int length, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -2071,7 +1993,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<T>(T[] array, Comparison<T> comparison) { }
 	/* GenericInstMethod :
 	|
@@ -2085,7 +2006,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<RaycastHit>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<TKey, TValue>(TKey[] keys, TValue[] items) { }
 	/* GenericInstMethod :
 	|
@@ -2093,7 +2013,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<object, object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<TKey, TValue>(TKey[] keys, TValue[] items, int index, int length) { }
 	/* GenericInstMethod :
 	|
@@ -2101,7 +2020,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<object, object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<TKey, TValue>(TKey[] keys, TValue[] items, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -2113,7 +2031,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<ulong, string>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Sort<TKey, TValue>(TKey[] keys, TValue[] items, int index, int length, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -2124,7 +2041,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<ulong, object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool Exists<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2132,7 +2048,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Exists<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Fill<T>(T[] array, T value) { }
 	/* GenericInstMethod :
 	|
@@ -2140,7 +2055,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Fill<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static void Fill<T>(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
@@ -2148,7 +2062,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Fill<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static T Find<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2157,7 +2070,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Find<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static T[] FindAll<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2165,7 +2077,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindAll<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int FindIndex<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2173,7 +2084,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindIndex<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int FindIndex<T>(T[] array, int startIndex, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2181,7 +2091,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindIndex<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int FindIndex<T>(T[] array, int startIndex, int count, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2189,7 +2098,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindIndex<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static T FindLast<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2197,7 +2105,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindLast<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int FindLastIndex<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2205,7 +2112,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindLastIndex<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int FindLastIndex<T>(T[] array, int startIndex, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2213,7 +2119,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindLastIndex<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int FindLastIndex<T>(T[] array, int startIndex, int count, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2221,7 +2126,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.FindLastIndex<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool TrueForAll<T>(T[] array, Predicate<T> match) { }
 	/* GenericInstMethod :
 	|
@@ -2229,19 +2133,14 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.TrueForAll<object>
 	*/
 
-	// RVA: 0x15856E0 Offset: 0x1584AE0 VA: 0x1815856E0 Slot: 7
 	public IEnumerator GetEnumerator() { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	private void .ctor() { }
 
-	// RVA: 0x1586510 Offset: 0x1585910 VA: 0x181586510
 	internal int InternalArray__ICollection_get_Count() { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0
 	internal bool InternalArray__ICollection_get_IsReadOnly() { }
 
-	// RVA: -1 Offset: -1
 	internal IEnumerator<T> InternalArray__IEnumerable_GetEnumerator<T>() { }
 	/* GenericInstMethod :
 	|
@@ -2956,10 +2855,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: 0x15864B0 Offset: 0x15858B0 VA: 0x1815864B0
 	internal void InternalArray__ICollection_Clear() { }
 
-	// RVA: -1 Offset: -1
 	internal void InternalArray__ICollection_Add<T>(T item) { }
 	/* GenericInstMethod :
 	|
@@ -5088,7 +4985,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool InternalArray__ICollection_Remove<T>(T item) { }
 	/* GenericInstMethod :
 	|
@@ -7217,7 +7113,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Remove<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool InternalArray__ICollection_Contains<T>(T item) { }
 	/* GenericInstMethod :
 	|
@@ -9346,7 +9241,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Contains<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void InternalArray__ICollection_CopyTo<T>(T[] array, int arrayIndex) { }
 	/* GenericInstMethod :
 	|
@@ -10061,7 +9955,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal T InternalArray__IReadOnlyList_get_Item<T>(int index) { }
 	/* GenericInstMethod :
 	|
@@ -12190,10 +12083,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: 0x1586510 Offset: 0x1585910 VA: 0x181586510
 	internal int InternalArray__IReadOnlyCollection_get_Count() { }
 
-	// RVA: -1 Offset: -1
 	internal void InternalArray__Insert<T>(int index, T item) { }
 	/* GenericInstMethod :
 	|
@@ -14322,10 +14213,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__Insert<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: 0x1586570 Offset: 0x1585970 VA: 0x181586570
 	internal void InternalArray__RemoveAt(int index) { }
 
-	// RVA: -1 Offset: -1
 	internal int InternalArray__IndexOf<T>(T item) { }
 	/* GenericInstMethod :
 	|
@@ -16454,7 +16343,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IndexOf<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal T InternalArray__get_Item<T>(int index) { }
 	/* GenericInstMethod :
 	|
@@ -18583,7 +18471,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__get_Item<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void InternalArray__set_Item<T>(int index, T item) { }
 	/* GenericInstMethod :
 	|
@@ -20712,7 +20599,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__set_Item<WorldSplineData.LUTEntry.LUTPoint>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void GetGenericValueImpl<T>(int pos, out T value) { }
 	/* GenericInstMethod :
 	|
@@ -20720,7 +20606,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.GetGenericValueImpl<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void SetGenericValueImpl<T>(int pos, ref T value) { }
 	/* GenericInstMethod :
 	|
@@ -20729,113 +20614,79 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	*/
 
 	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	// RVA: 0x1586510 Offset: 0x1585910 VA: 0x181586510
 	public int get_Length() { }
 
 	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	// RVA: 0x15857E0 Offset: 0x1584BE0 VA: 0x1815857E0
 	public int get_Rank() { }
 
-	// RVA: 0x15857E0 Offset: 0x1584BE0 VA: 0x1815857E0
 	private int GetRank() { }
 
-	// RVA: 0x15857A0 Offset: 0x1584BA0 VA: 0x1815857A0
 	public int GetLength(int dimension) { }
 
 	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	// RVA: 0x15857C0 Offset: 0x1584BC0 VA: 0x1815857C0
 	public int GetLowerBound(int dimension) { }
 
-	// RVA: 0x1585840 Offset: 0x1584C40 VA: 0x181585840
 	public object GetValue(int[] indices) { }
 
-	// RVA: 0x1586E80 Offset: 0x1586280 VA: 0x181586E80
 	public void SetValue(object value, int[] indices) { }
 
-	// RVA: 0x1585830 Offset: 0x1584C30 VA: 0x181585830
 	internal object GetValueImpl(int pos) { }
 
-	// RVA: 0x1586E70 Offset: 0x1586270 VA: 0x181586E70
 	internal void SetValueImpl(object value, int pos) { }
 
-	// RVA: 0x15856D0 Offset: 0x1584AD0 VA: 0x1815856D0
 	internal static bool FastCopy(Array source, int source_idx, Array dest, int dest_idx, int length) { }
 
-	// RVA: 0x1584C00 Offset: 0x1584000 VA: 0x181584C00
 	internal static Array CreateInstanceImpl(Type elementType, int[] lengths, int[] bounds) { }
 
 	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	// RVA: 0x15857F0 Offset: 0x1584BF0 VA: 0x1815857F0
 	public int GetUpperBound(int dimension) { }
 
-	// RVA: 0x1585B80 Offset: 0x1584F80 VA: 0x181585B80
 	public object GetValue(int index) { }
 
-	// RVA: 0x1585E50 Offset: 0x1585250 VA: 0x181585E50
 	public object GetValue(int index1, int index2) { }
 
-	// RVA: 0x1585D00 Offset: 0x1585100 VA: 0x181585D00
 	public object GetValue(int index1, int index2, int index3) { }
 
-	// RVA: 0x15870E0 Offset: 0x15864E0 VA: 0x1815870E0
 	public void SetValue(object value, int index) { }
 
-	// RVA: 0x1587650 Offset: 0x1586A50 VA: 0x181587650
 	public void SetValue(object value, int index1, int index2) { }
 
-	// RVA: 0x1587010 Offset: 0x1586410 VA: 0x181587010
 	public void SetValue(object value, int index1, int index2, int index3) { }
 
-	// RVA: 0x1588950 Offset: 0x1587D50 VA: 0x181588950
 	internal static Array UnsafeCreateInstance(Type elementType, int[] lengths, int[] lowerBounds) { }
 
-	// RVA: 0x1584D80 Offset: 0x1584180 VA: 0x181584D80
 	internal static Array UnsafeCreateInstance(Type elementType, int length1, int length2) { }
 
-	// RVA: 0x1588960 Offset: 0x1587D60 VA: 0x181588960
 	internal static Array UnsafeCreateInstance(Type elementType, int[] lengths) { }
 
-	// RVA: 0x1585650 Offset: 0x1584A50 VA: 0x181585650
 	public static Array CreateInstance(Type elementType, int length) { }
 
-	// RVA: 0x1584D80 Offset: 0x1584180 VA: 0x181584D80
 	public static Array CreateInstance(Type elementType, int length1, int length2) { }
 
-	// RVA: 0x15852C0 Offset: 0x15846C0 VA: 0x1815852C0
 	public static Array CreateInstance(Type elementType, int length1, int length2, int length3) { }
 
-	// RVA: 0x1585390 Offset: 0x1584790 VA: 0x181585390
 	public static Array CreateInstance(Type elementType, int[] lengths) { }
 
-	// RVA: 0x1584E20 Offset: 0x1584220 VA: 0x181584E20
 	public static Array CreateInstance(Type elementType, int[] lengths, int[] lowerBounds) { }
 
 	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	// RVA: 0x1584020 Offset: 0x1583420 VA: 0x181584020
 	public static void Clear(Array array, int index, int length) { }
 
-	// RVA: 0x1584010 Offset: 0x1583410 VA: 0x181584010
 	private static void ClearInternal(Array a, int index, int count) { }
 
 	[ReliabilityContractAttribute] // RVA: 0x8D550 Offset: 0x8C950 VA: 0x18008D550
-	// RVA: 0x15844A0 Offset: 0x15838A0 VA: 0x1815844A0
 	public static void Copy(Array sourceArray, Array destinationArray, int length) { }
 
 	[ReliabilityContractAttribute] // RVA: 0x8D550 Offset: 0x8C950 VA: 0x18008D550
-	// RVA: 0x1584590 Offset: 0x1583990 VA: 0x181584590
 	public static void Copy(Array sourceArray, int sourceIndex, Array destinationArray, int destinationIndex, int length) { }
 
-	// RVA: 0x1584B80 Offset: 0x1583F80 VA: 0x181584B80
 	private static Exception CreateArrayTypeMismatchException() { }
 
-	// RVA: 0x1583F40 Offset: 0x1583340 VA: 0x181583F40
 	private static bool CanAssignArrayElement(Type source, Type target) { }
 
 	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	// RVA: 0x1584180 Offset: 0x1583580 VA: 0x181584180
 	public static void ConstrainedCopy(Array sourceArray, int sourceIndex, Array destinationArray, int destinationIndex, int length) { }
 
-	// RVA: -1 Offset: -1
 	public static T[] Empty<T>() { }
 	/* GenericInstMethod :
 	|
@@ -20878,10 +20729,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Empty<Vector2>
 	*/
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	public void Initialize() { }
 
-	// RVA: -1 Offset: -1
 	private static int IndexOfImpl<T>(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
@@ -21116,7 +20965,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<UIVertex>
 	*/
 
-	// RVA: -1 Offset: -1
 	private static int LastIndexOfImpl<T>(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
@@ -21148,10 +20996,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.LastIndexOfImpl<ViewModelDrawEvent>
 	*/
 
-	// RVA: 0x1587700 Offset: 0x1586B00 VA: 0x181587700
 	private static void SortImpl(Array keys, Array items, int index, int length, IComparer comparer) { }
 
-	// RVA: -1 Offset: -1
 	internal static T UnsafeLoad<T>(T[] array, int index) { }
 	/* GenericInstMethod :
 	|
@@ -21378,7 +21224,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<UIVertex>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static void UnsafeStore<T>(T[] array, int index, T value) { }
 	/* GenericInstMethod :
 	|
@@ -21386,7 +21231,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeStore<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static R UnsafeMov<S, R>(S instance) { }
 	/* GenericInstMethod :
 	|
@@ -21403,45 +21247,33 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 }
 
 private sealed class Array.ArrayEnumerator : IEnumerator, ICloneable // TypeDefIndex: 129
-{	// Fields
-	private Array _array; // 0x10
+{	private Array _array; // 0x10
 	private int _index; // 0x18
 	private int _endIndex; // 0x1C
 
-	// Properties
 	public object Current { get; }
 
-	// Methods
 
-	// RVA: 0x15817C0 Offset: 0x1580BC0 VA: 0x1815817C0
 	internal void .ctor(Array array) { }
 
-	// RVA: 0x15817A0 Offset: 0x1580BA0 VA: 0x1815817A0 Slot: 4
 	public bool MoveNext() { }
 
-	// RVA: 0x1176E50 Offset: 0x1176250 VA: 0x181176E50 Slot: 6
 	public void Reset() { }
 
-	// RVA: 0xD6C080 Offset: 0xD6B480 VA: 0x180D6C080 Slot: 7
 	public object Clone() { }
 
-	// RVA: 0x1581860 Offset: 0x1580C60 VA: 0x181581860 Slot: 5
 	public object get_Current() { }
 
 }
 
 internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 130
-{	// Fields
-	private readonly Array array; // 0x0
+{	private readonly Array array; // 0x0
 	private int idx; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(Array array) { }
 	/* GenericInstMethod :
 	|
@@ -22156,7 +21988,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -22871,7 +22702,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -23586,7 +23416,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -25715,7 +25544,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -26430,7 +26258,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.Reset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -28562,16 +28389,12 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 }
 
 internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 131
-{	// Fields
-	public static readonly Array.EmptyInternalEnumerator<T> Value; // 0x0
+{	public static readonly Array.EmptyInternalEnumerator<T> Value; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -29286,7 +29109,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -30001,7 +29823,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -32130,7 +31951,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -32915,7 +32735,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<UIVertex>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -33630,7 +33449,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.Reset
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -34345,7 +34163,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -35063,92 +34880,66 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 }
 
 private struct Array.SorterObjectArray // TypeDefIndex: 132
-{	// Fields
-	private object[] keys; // 0x0
+{	private object[] keys; // 0x0
 	private object[] items; // 0x8
 	private IComparer comparer; // 0x10
 
-	// Methods
 
-	// RVA: 0x1F3B90 Offset: 0x1F2F90 VA: 0x1801F3B90
 	internal void .ctor(object[] keys, object[] items, IComparer comparer) { }
 
-	// RVA: 0x1F3B70 Offset: 0x1F2F70 VA: 0x1801F3B70
 	internal void SwapIfGreaterWithItems(int a, int b) { }
 
-	// RVA: 0x1F3B80 Offset: 0x1F2F80 VA: 0x1801F3B80
 	private void Swap(int i, int j) { }
 
-	// RVA: 0x1F3B60 Offset: 0x1F2F60 VA: 0x1801F3B60
 	internal void Sort(int left, int length) { }
 
-	// RVA: 0x1F3B40 Offset: 0x1F2F40 VA: 0x1801F3B40
 	private void IntrospectiveSort(int left, int length) { }
 
-	// RVA: 0x1F3B30 Offset: 0x1F2F30 VA: 0x1801F3B30
 	private void IntroSort(int lo, int hi, int depthLimit) { }
 
-	// RVA: 0x1F3B50 Offset: 0x1F2F50 VA: 0x1801F3B50
 	private int PickPivotAndPartition(int lo, int hi) { }
 
-	// RVA: 0x1F3B10 Offset: 0x1F2F10 VA: 0x1801F3B10
 	private void Heapsort(int lo, int hi) { }
 
-	// RVA: 0x1F3B00 Offset: 0x1F2F00 VA: 0x1801F3B00
 	private void DownHeap(int i, int n, int lo) { }
 
-	// RVA: 0x1F3B20 Offset: 0x1F2F20 VA: 0x1801F3B20
 	private void InsertionSort(int lo, int hi) { }
 
 }
 
 private struct Array.SorterGenericArray // TypeDefIndex: 133
-{	// Fields
-	private Array keys; // 0x0
+{	private Array keys; // 0x0
 	private Array items; // 0x8
 	private IComparer comparer; // 0x10
 
-	// Methods
 
-	// RVA: 0x1F3A20 Offset: 0x1F2E20 VA: 0x1801F3A20
 	internal void .ctor(Array keys, Array items, IComparer comparer) { }
 
-	// RVA: 0x1F3A00 Offset: 0x1F2E00 VA: 0x1801F3A00
 	internal void SwapIfGreaterWithItems(int a, int b) { }
 
-	// RVA: 0x1F3A10 Offset: 0x1F2E10 VA: 0x1801F3A10
 	private void Swap(int i, int j) { }
 
-	// RVA: 0x1F39F0 Offset: 0x1F2DF0 VA: 0x1801F39F0
 	internal void Sort(int left, int length) { }
 
-	// RVA: 0x1F39D0 Offset: 0x1F2DD0 VA: 0x1801F39D0
 	private void IntrospectiveSort(int left, int length) { }
 
-	// RVA: 0x1F39C0 Offset: 0x1F2DC0 VA: 0x1801F39C0
 	private void IntroSort(int lo, int hi, int depthLimit) { }
 
-	// RVA: 0x1F39E0 Offset: 0x1F2DE0 VA: 0x1801F39E0
 	private int PickPivotAndPartition(int lo, int hi) { }
 
-	// RVA: 0x1F39A0 Offset: 0x1F2DA0 VA: 0x1801F39A0
 	private void Heapsort(int lo, int hi) { }
 
-	// RVA: 0x1F3990 Offset: 0x1F2D90 VA: 0x1801F3990
 	private void DownHeap(int i, int n, int lo) { }
 
-	// RVA: 0x1F39B0 Offset: 0x1F2DB0 VA: 0x1801F39B0
 	private void InsertionSort(int lo, int hi) { }
 
 }
 
 public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnlyList<T>, IReadOnlyCollection<T> // TypeDefIndex: 170
-{	// Fields
-	private T[] _array; // 0x0
+{	private T[] _array; // 0x0
 	private int _offset; // 0x0
 	private int _count; // 0x0
 
-	// Properties
 	public T[] Array { get; }
 	public int Offset { get; }
 	public int Count { get; }
@@ -35156,9 +34947,7 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	private T System.Collections.Generic.IReadOnlyList<T>.Item { get; }
 	private bool System.Collections.Generic.ICollection<T>.IsReadOnly { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(T[] array) { }
 	/* GenericInstMethod :
 	|
@@ -35172,7 +34961,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor(T[] array, int offset, int count) { }
 	/* GenericInstMethod :
 	|
@@ -35186,7 +34974,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public T[] get_Array() { }
 	/* GenericInstMethod :
 	|
@@ -35196,7 +34983,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.get_Array
 	*/
 
-	// RVA: -1 Offset: -1
 	public int get_Offset() { }
 	/* GenericInstMethod :
 	|
@@ -35206,7 +34992,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.get_Offset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 19
 	public int get_Count() { }
 	/* GenericInstMethod :
 	|
@@ -35216,7 +35001,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.get_Count
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 2
 	public override int GetHashCode() { }
 	/* GenericInstMethod :
 	|
@@ -35226,7 +35010,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.GetHashCode
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 0
 	public override bool Equals(object obj) { }
 	/* GenericInstMethod :
 	|
@@ -35236,7 +35019,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.Equals
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool Equals(ArraySegment<T> obj) { }
 	/* GenericInstMethod :
 	|
@@ -35246,7 +35028,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.Equals
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	private T System.Collections.Generic.IList<T>.get_Item(int index) { }
 	/* GenericInstMethod :
 	|
@@ -35260,7 +35041,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IList<T>.get_Item
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.Collections.Generic.IList<T>.set_Item(int index, T value) { }
 	/* GenericInstMethod :
 	|
@@ -35274,7 +35054,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IList<T>.set_Item
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private int System.Collections.Generic.IList<T>.IndexOf(T item) { }
 	/* GenericInstMethod :
 	|
@@ -35288,7 +35067,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IList<T>.IndexOf
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private void System.Collections.Generic.IList<T>.Insert(int index, T item) { }
 	/* GenericInstMethod :
 	|
@@ -35302,7 +35080,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IList<T>.Insert
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.Generic.IList<T>.RemoveAt(int index) { }
 	/* GenericInstMethod :
 	|
@@ -35316,7 +35093,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IList<T>.RemoveAt
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 18
 	private T System.Collections.Generic.IReadOnlyList<T>.get_Item(int index) { }
 	/* GenericInstMethod :
 	|
@@ -35330,7 +35106,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IReadOnlyList<T>.get_Item
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 10
 	private bool System.Collections.Generic.ICollection<T>.get_IsReadOnly() { }
 	/* GenericInstMethod :
 	|
@@ -35340,7 +35115,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	private void System.Collections.Generic.ICollection<T>.Add(T item) { }
 	/* GenericInstMethod :
 	|
@@ -35354,7 +35128,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.ICollection<T>.Add
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	private void System.Collections.Generic.ICollection<T>.Clear() { }
 	/* GenericInstMethod :
 	|
@@ -35368,7 +35141,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.ICollection<T>.Clear
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	private bool System.Collections.Generic.ICollection<T>.Contains(T item) { }
 	/* GenericInstMethod :
 	|
@@ -35382,7 +35154,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.ICollection<T>.Contains
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	private void System.Collections.Generic.ICollection<T>.CopyTo(T[] array, int arrayIndex) { }
 	/* GenericInstMethod :
 	|
@@ -35396,7 +35167,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.ICollection<T>.CopyTo
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	private bool System.Collections.Generic.ICollection<T>.Remove(T item) { }
 	/* GenericInstMethod :
 	|
@@ -35410,7 +35180,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.ICollection<T>.Remove
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 16
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -35424,7 +35193,6 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 	|-ArraySegment<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 17
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -35441,19 +35209,15 @@ public struct ArraySegment<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnume
 }
 
 private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 171
-{	// Fields
-	private T[] _array; // 0x0
+{	private T[] _array; // 0x0
 	private int _start; // 0x0
 	private int _end; // 0x0
 	private int _current; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(ArraySegment<T> arraySegment) { }
 	/* GenericInstMethod :
 	|
@@ -35463,7 +35227,6 @@ private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, ID
 	|-ArraySegment.ArraySegmentEnumerator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -35473,7 +35236,6 @@ private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, ID
 	|-ArraySegment.ArraySegmentEnumerator<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -35487,7 +35249,6 @@ private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, ID
 	|-ArraySegment.ArraySegmentEnumerator<object>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -35501,7 +35262,6 @@ private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, ID
 	|-ArraySegment.ArraySegmentEnumerator<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -35511,7 +35271,6 @@ private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, ID
 	|-ArraySegment.ArraySegmentEnumerator<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -35524,49 +35283,37 @@ private sealed class ArraySegment.ArraySegmentEnumerator<T> : IEnumerator<T>, ID
 }
 
 public class ArrayTypeMismatchException : SystemException // TypeDefIndex: 172
-{	// Methods
-
-	// RVA: 0x1583990 Offset: 0x1582D90 VA: 0x181583990
+{
 	public void .ctor() { }
 
-	// RVA: 0x15839F0 Offset: 0x1582DF0 VA: 0x1815839F0
 	public void .ctor(string message) { }
 
-	// RVA: 0xFD8000 Offset: 0xFD7400 VA: 0x180FD8000
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
 }
 
 internal class ArraySpec : ModifierSpec // TypeDefIndex: 412
-{	// Fields
-	private int dimensions; // 0x10
+{	private int dimensions; // 0x10
 	private bool bound; // 0x14
 
-	// Methods
 
-	// RVA: 0x1583950 Offset: 0x1582D50 VA: 0x181583950
 	internal void .ctor(int dimensions, bool bound) { }
 
-	// RVA: 0x1583800 Offset: 0x1582C00 VA: 0x181583800 Slot: 4
 	public Type Resolve(Type type) { }
 
-	// RVA: 0x1583760 Offset: 0x1582B60 VA: 0x181583760 Slot: 5
 	public StringBuilder Append(StringBuilder sb) { }
 
-	// RVA: 0x1583870 Offset: 0x1582C70 VA: 0x181583870 Slot: 3
 	public override string ToString() { }
 
 }
 
 public class ArrayList : IList, ICollection, IEnumerable, ICloneable // TypeDefIndex: 1375
-{	// Fields
-	private object[] _items; // 0x10
+{	private object[] _items; // 0x10
 	private int _size; // 0x18
 	private int _version; // 0x1C
 	private object _syncRoot; // 0x20
 	private static readonly object[] emptyArray; // 0x0
 
-	// Properties
 	public virtual int Capacity { set; }
 	public virtual int Count { get; }
 	public virtual bool IsFixedSize { get; }
@@ -35574,114 +35321,78 @@ public class ArrayList : IList, ICollection, IEnumerable, ICloneable // TypeDefI
 	public virtual object SyncRoot { get; }
 	public virtual object Item { get; set; }
 
-	// Methods
 
-	// RVA: 0x1583280 Offset: 0x1582680 VA: 0x181583280
 	public void .ctor() { }
 
-	// RVA: 0x1583150 Offset: 0x1582550 VA: 0x181583150
 	public void .ctor(int capacity) { }
 
-	// RVA: 0x1583300 Offset: 0x1582700 VA: 0x181583300
 	public void .ctor(ICollection c) { }
 
-	// RVA: 0x1583550 Offset: 0x1582950 VA: 0x181583550 Slot: 20
 	public virtual void set_Capacity(int value) { }
 
-	// RVA: 0x4BE200 Offset: 0x4BD600 VA: 0x1804BE200 Slot: 21
 	public virtual int get_Count() { }
 
-	// RVA: 0x498AD0 Offset: 0x497ED0 VA: 0x180498AD0 Slot: 22
 	public virtual bool get_IsFixedSize() { }
 
-	// RVA: 0x498AD0 Offset: 0x497ED0 VA: 0x180498AD0 Slot: 23
 	public virtual bool get_IsReadOnly() { }
 
-	// RVA: 0x15834E0 Offset: 0x15828E0 VA: 0x1815834E0 Slot: 24
 	public virtual object get_SyncRoot() { }
 
-	// RVA: 0x1583430 Offset: 0x1582830 VA: 0x181583430 Slot: 25
 	public virtual object get_Item(int index) { }
 
-	// RVA: 0x1583650 Offset: 0x1582A50 VA: 0x181583650 Slot: 26
 	public virtual void set_Item(int index, object value) { }
 
-	// RVA: 0x1581EB0 Offset: 0x15812B0 VA: 0x181581EB0
 	public static ArrayList Adapter(IList list) { }
 
-	// RVA: 0x1581F60 Offset: 0x1581360 VA: 0x181581F60 Slot: 27
 	public virtual int Add(object value) { }
 
-	// RVA: 0x1581F40 Offset: 0x1581340 VA: 0x181581F40 Slot: 28
 	public virtual void AddRange(ICollection c) { }
 
-	// RVA: 0x1582060 Offset: 0x1581460 VA: 0x181582060 Slot: 29
 	public virtual void Clear() { }
 
-	// RVA: 0x15820A0 Offset: 0x15814A0 VA: 0x1815820A0 Slot: 30
 	public virtual object Clone() { }
 
-	// RVA: 0x1582240 Offset: 0x1581640 VA: 0x181582240 Slot: 31
 	public virtual bool Contains(object item) { }
 
-	// RVA: 0x1582520 Offset: 0x1581920 VA: 0x181582520 Slot: 32
 	public virtual void CopyTo(Array array) { }
 
-	// RVA: 0x1582340 Offset: 0x1581740 VA: 0x181582340 Slot: 33
 	public virtual void CopyTo(Array array, int arrayIndex) { }
 
-	// RVA: 0x1582400 Offset: 0x1581800 VA: 0x181582400 Slot: 34
 	public virtual void CopyTo(int index, Array array, int arrayIndex, int count) { }
 
-	// RVA: 0x1582540 Offset: 0x1581940 VA: 0x181582540
 	private void EnsureCapacity(int min) { }
 
-	// RVA: 0x15825A0 Offset: 0x15819A0 VA: 0x1815825A0 Slot: 35
 	public virtual IEnumerator GetEnumerator() { }
 
-	// RVA: 0x15826D0 Offset: 0x1581AD0 VA: 0x1815826D0 Slot: 36
 	public virtual int IndexOf(object value) { }
 
-	// RVA: 0x1582900 Offset: 0x1581D00 VA: 0x181582900 Slot: 37
 	public virtual void Insert(int index, object value) { }
 
-	// RVA: 0x1582700 Offset: 0x1581B00 VA: 0x181582700 Slot: 38
 	public virtual void InsertRange(int index, ICollection c) { }
 
-	// RVA: 0x1582A60 Offset: 0x1581E60 VA: 0x181582A60
 	public static ArrayList ReadOnly(ArrayList list) { }
 
-	// RVA: 0x145E780 Offset: 0x145DB80 VA: 0x18145E780 Slot: 39
 	public virtual void Remove(object obj) { }
 
-	// RVA: 0x1582AF0 Offset: 0x1581EF0 VA: 0x181582AF0 Slot: 40
 	public virtual void RemoveAt(int index) { }
 
-	// RVA: 0x1582BF0 Offset: 0x1581FF0 VA: 0x181582BF0 Slot: 41
 	public virtual void RemoveRange(int index, int count) { }
 
-	// RVA: 0x1582DC0 Offset: 0x15821C0 VA: 0x181582DC0 Slot: 42
 	public virtual void Sort(IComparer comparer) { }
 
-	// RVA: 0x1582E10 Offset: 0x1582210 VA: 0x181582E10 Slot: 43
 	public virtual void Sort(int index, int count, IComparer comparer) { }
 
-	// RVA: 0x1582F60 Offset: 0x1582360 VA: 0x181582F60 Slot: 44
 	public virtual object[] ToArray() { }
 
-	// RVA: 0x1582FD0 Offset: 0x15823D0 VA: 0x181582FD0 Slot: 45
 	public virtual Array ToArray(Type type) { }
 
-	// RVA: 0x15830E0 Offset: 0x15824E0 VA: 0x1815830E0
 	private static void .cctor() { }
 
 }
 
 private class ArrayList.IListWrapper : ArrayList // TypeDefIndex: 1376
-{	// Fields
-	private IList _list; // 0x28
+{	private IList _list; // 0x28
 
-	// Properties
 	public override int Capacity { set; }
 	public override int Count { get; }
 	public override bool IsReadOnly { get; }
@@ -35689,90 +35400,62 @@ private class ArrayList.IListWrapper : ArrayList // TypeDefIndex: 1376
 	public override object Item { get; set; }
 	public override object SyncRoot { get; }
 
-	// Methods
 
-	// RVA: 0x145EBF0 Offset: 0x145DFF0 VA: 0x18145EBF0
 	internal void .ctor(IList list) { }
 
-	// RVA: 0x145EE10 Offset: 0x145E210 VA: 0x18145EE10 Slot: 20
 	public override void set_Capacity(int value) { }
 
-	// RVA: 0x145EC70 Offset: 0x145E070 VA: 0x18145EC70 Slot: 21
 	public override int get_Count() { }
 
-	// RVA: 0x145ED10 Offset: 0x145E110 VA: 0x18145ED10 Slot: 23
 	public override bool get_IsReadOnly() { }
 
-	// RVA: 0x145ECC0 Offset: 0x145E0C0 VA: 0x18145ECC0 Slot: 22
 	public override bool get_IsFixedSize() { }
 
-	// RVA: 0x145ED60 Offset: 0x145E160 VA: 0x18145ED60 Slot: 25
 	public override object get_Item(int index) { }
 
-	// RVA: 0x145EEB0 Offset: 0x145E2B0 VA: 0x18145EEB0 Slot: 26
 	public override void set_Item(int index, object value) { }
 
-	// RVA: 0x145EDC0 Offset: 0x145E1C0 VA: 0x18145EDC0 Slot: 24
 	public override object get_SyncRoot() { }
 
-	// RVA: 0x145DC30 Offset: 0x145D030 VA: 0x18145DC30 Slot: 27
 	public override int Add(object obj) { }
 
-	// RVA: 0x145DBE0 Offset: 0x145CFE0 VA: 0x18145DBE0 Slot: 28
 	public override void AddRange(ICollection c) { }
 
-	// RVA: 0x145DC90 Offset: 0x145D090 VA: 0x18145DC90 Slot: 29
 	public override void Clear() { }
 
-	// RVA: 0x145DD50 Offset: 0x145D150 VA: 0x18145DD50 Slot: 30
 	public override object Clone() { }
 
-	// RVA: 0x145DE00 Offset: 0x145D200 VA: 0x18145DE00 Slot: 31
 	public override bool Contains(object obj) { }
 
-	// RVA: 0x145DE60 Offset: 0x145D260 VA: 0x18145DE60 Slot: 33
 	public override void CopyTo(Array array, int index) { }
 
-	// RVA: 0x145DED0 Offset: 0x145D2D0 VA: 0x18145DED0 Slot: 34
 	public override void CopyTo(int index, Array array, int arrayIndex, int count) { }
 
-	// RVA: 0x145E170 Offset: 0x145D570 VA: 0x18145E170 Slot: 35
 	public override IEnumerator GetEnumerator() { }
 
-	// RVA: 0x145E1C0 Offset: 0x145D5C0 VA: 0x18145E1C0 Slot: 36
 	public override int IndexOf(object value) { }
 
-	// RVA: 0x145E500 Offset: 0x145D900 VA: 0x18145E500 Slot: 37
 	public override void Insert(int index, object obj) { }
 
-	// RVA: 0x145E220 Offset: 0x145D620 VA: 0x18145E220 Slot: 38
 	public override void InsertRange(int index, ICollection c) { }
 
-	// RVA: 0x145E780 Offset: 0x145DB80 VA: 0x18145E780 Slot: 39
 	public override void Remove(object value) { }
 
-	// RVA: 0x145E570 Offset: 0x145D970 VA: 0x18145E570 Slot: 40
 	public override void RemoveAt(int index) { }
 
-	// RVA: 0x145E5D0 Offset: 0x145D9D0 VA: 0x18145E5D0 Slot: 41
 	public override void RemoveRange(int index, int count) { }
 
-	// RVA: 0x145E7C0 Offset: 0x145DBC0 VA: 0x18145E7C0 Slot: 43
 	public override void Sort(int index, int count, IComparer comparer) { }
 
-	// RVA: 0x145EA20 Offset: 0x145DE20 VA: 0x18145EA20 Slot: 44
 	public override object[] ToArray() { }
 
-	// RVA: 0x145EAB0 Offset: 0x145DEB0 VA: 0x18145EAB0 Slot: 45
 	public override Array ToArray(Type type) { }
 
 }
 
 private class ArrayList.ReadOnlyArrayList : ArrayList // TypeDefIndex: 1377
-{	// Fields
-	private ArrayList _list; // 0x28
+{	private ArrayList _list; // 0x28
 
-	// Properties
 	public override int Count { get; }
 	public override bool IsReadOnly { get; }
 	public override bool IsFixedSize { get; }
@@ -35780,223 +35463,158 @@ private class ArrayList.ReadOnlyArrayList : ArrayList // TypeDefIndex: 1377
 	public override object SyncRoot { get; }
 	public override int Capacity { set; }
 
-	// Methods
 
-	// RVA: 0x1462E70 Offset: 0x1462270 VA: 0x181462E70
 	internal void .ctor(ArrayList l) { }
 
-	// RVA: 0x1462EE0 Offset: 0x14622E0 VA: 0x181462EE0 Slot: 21
 	public override int get_Count() { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0 Slot: 23
 	public override bool get_IsReadOnly() { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0 Slot: 22
 	public override bool get_IsFixedSize() { }
 
-	// RVA: 0x1462F10 Offset: 0x1462310 VA: 0x181462F10 Slot: 25
 	public override object get_Item(int index) { }
 
-	// RVA: 0x1462FE0 Offset: 0x14623E0 VA: 0x181462FE0 Slot: 26
 	public override void set_Item(int index, object value) { }
 
-	// RVA: 0x1462F40 Offset: 0x1462340 VA: 0x181462F40 Slot: 24
 	public override object get_SyncRoot() { }
 
-	// RVA: 0x14628A0 Offset: 0x1461CA0 VA: 0x1814628A0 Slot: 27
 	public override int Add(object obj) { }
 
-	// RVA: 0x1462830 Offset: 0x1461C30 VA: 0x181462830 Slot: 28
 	public override void AddRange(ICollection c) { }
 
-	// RVA: 0x1462F70 Offset: 0x1462370 VA: 0x181462F70 Slot: 20
 	public override void set_Capacity(int value) { }
 
-	// RVA: 0x1462910 Offset: 0x1461D10 VA: 0x181462910 Slot: 29
 	public override void Clear() { }
 
-	// RVA: 0x1462980 Offset: 0x1461D80 VA: 0x181462980 Slot: 30
 	public override object Clone() { }
 
-	// RVA: 0x1462AB0 Offset: 0x1461EB0 VA: 0x181462AB0 Slot: 31
 	public override bool Contains(object obj) { }
 
-	// RVA: 0x1462B10 Offset: 0x1461F10 VA: 0x181462B10 Slot: 33
 	public override void CopyTo(Array array, int index) { }
 
-	// RVA: 0x1462AE0 Offset: 0x1461EE0 VA: 0x181462AE0 Slot: 34
 	public override void CopyTo(int index, Array array, int arrayIndex, int count) { }
 
-	// RVA: 0x1462B40 Offset: 0x1461F40 VA: 0x181462B40 Slot: 35
 	public override IEnumerator GetEnumerator() { }
 
-	// RVA: 0xF5B4C0 Offset: 0xF5A8C0 VA: 0x180F5B4C0 Slot: 36
 	public override int IndexOf(object value) { }
 
-	// RVA: 0x1462BE0 Offset: 0x1461FE0 VA: 0x181462BE0 Slot: 37
 	public override void Insert(int index, object obj) { }
 
-	// RVA: 0x1462B70 Offset: 0x1461F70 VA: 0x181462B70 Slot: 38
 	public override void InsertRange(int index, ICollection c) { }
 
-	// RVA: 0x1462D30 Offset: 0x1462130 VA: 0x181462D30 Slot: 39
 	public override void Remove(object value) { }
 
-	// RVA: 0x1462C50 Offset: 0x1462050 VA: 0x181462C50 Slot: 40
 	public override void RemoveAt(int index) { }
 
-	// RVA: 0x1462CC0 Offset: 0x14620C0 VA: 0x181462CC0 Slot: 41
 	public override void RemoveRange(int index, int count) { }
 
-	// RVA: 0x1462DA0 Offset: 0x14621A0 VA: 0x181462DA0 Slot: 43
 	public override void Sort(int index, int count, IComparer comparer) { }
 
-	// RVA: 0x1462E40 Offset: 0x1462240 VA: 0x181462E40 Slot: 44
 	public override object[] ToArray() { }
 
-	// RVA: 0x1462E10 Offset: 0x1462210 VA: 0x181462E10 Slot: 45
 	public override Array ToArray(Type type) { }
 
 }
 
 private sealed class ArrayList.ArrayListEnumeratorSimple : IEnumerator, ICloneable // TypeDefIndex: 1378
-{	// Fields
-	private ArrayList list; // 0x10
+{	private ArrayList list; // 0x10
 	private int index; // 0x18
 	private int version; // 0x1C
 	private object currentElement; // 0x20
 	private bool isArrayList; // 0x28
 	private static object dummyObject; // 0x0
 
-	// Properties
 	public object Current { get; }
 
-	// Methods
 
-	// RVA: 0x1581CC0 Offset: 0x15810C0 VA: 0x181581CC0
 	internal void .ctor(ArrayList list) { }
 
-	// RVA: 0xD6C080 Offset: 0xD6B480 VA: 0x180D6C080 Slot: 7
 	public object Clone() { }
 
-	// RVA: 0x1581990 Offset: 0x1580D90 VA: 0x181581990 Slot: 4
 	public bool MoveNext() { }
 
-	// RVA: 0x1581DC0 Offset: 0x15811C0 VA: 0x181581DC0 Slot: 5
 	public object get_Current() { }
 
-	// RVA: 0x1581B90 Offset: 0x1580F90 VA: 0x181581B90 Slot: 6
 	public void Reset() { }
 
-	// RVA: 0x1581C60 Offset: 0x1581060 VA: 0x181581C60
 	private static void .cctor() { }
 
 }
 
 public sealed class BitArray : ICollection, IEnumerable, ICloneable // TypeDefIndex: 1380
 {
-// Namespace: System.Collections
 [DefaultMemberAttribute] // RVA: 0xA9640 Offset: 0xA8A40 VA: 0x1800A9640
 [ComVisibleAttribute] // RVA: 0xA9640 Offset: 0xA8A40 VA: 0x1800A9640
 [Serializable]
 public sealed class BitArray : ICollection, IEnumerable, ICloneable // TypeDefIndex: 1380
-	// Fields
 	private int[] m_array; // 0x10
 	private int m_length; // 0x18
 	private int _version; // 0x1C
 	private object _syncRoot; // 0x20
 
-	// Properties
 	public bool Item { get; set; }
 	public int Length { get; set; }
 	public int Count { get; }
 	public object SyncRoot { get; }
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	private void .ctor() { }
 
-	// RVA: 0x144AFD0 Offset: 0x144A3D0 VA: 0x18144AFD0
 	public void .ctor(int length) { }
 
-	// RVA: 0x144AE80 Offset: 0x144A280 VA: 0x18144AE80
 	public void .ctor(int length, bool defaultValue) { }
 
-	// RVA: 0x144AD10 Offset: 0x144A110 VA: 0x18144AD10
 	public void .ctor(int[] values) { }
 
-	// RVA: 0x144B110 Offset: 0x144A510 VA: 0x18144B110
 	public bool get_Item(int index) { }
 
-	// RVA: 0x144AC00 Offset: 0x144A000 VA: 0x18144AC00
 	public void set_Item(int index, bool value) { }
 
-	// RVA: 0x144AB30 Offset: 0x1449F30 VA: 0x18144AB30
 	public bool Get(int index) { }
 
-	// RVA: 0x144AC00 Offset: 0x144A000 VA: 0x18144AC00
 	public void Set(int index, bool value) { }
 
-	// RVA: 0x4BE200 Offset: 0x4BD600 VA: 0x1804BE200
 	public int get_Length() { }
 
-	// RVA: 0x144B190 Offset: 0x144A590 VA: 0x18144B190
 	public void set_Length(int value) { }
 
-	// RVA: 0x144A690 Offset: 0x1449A90 VA: 0x18144A690 Slot: 4
 	public void CopyTo(Array array, int index) { }
 
-	// RVA: 0x4BE200 Offset: 0x4BD600 VA: 0x1804BE200 Slot: 5
 	public int get_Count() { }
 
-	// RVA: 0x144A4E0 Offset: 0x14498E0 VA: 0x18144A4E0 Slot: 8
 	public object Clone() { }
 
-	// RVA: 0x144B120 Offset: 0x144A520 VA: 0x18144B120 Slot: 6
 	public object get_SyncRoot() { }
 
-	// RVA: 0x144AAB0 Offset: 0x1449EB0 VA: 0x18144AAB0 Slot: 7
 	public IEnumerator GetEnumerator() { }
 
-	// RVA: 0x144AA90 Offset: 0x1449E90 VA: 0x18144AA90
 	private static int GetArrayLength(int n, int div) { }
 
 }
 
 private class BitArray.BitArrayEnumeratorSimple : IEnumerator, ICloneable // TypeDefIndex: 1381
-{	// Fields
-	private BitArray bitarray; // 0x10
+{	private BitArray bitarray; // 0x10
 	private int index; // 0x18
 	private int version; // 0x1C
 	private bool currentElement; // 0x20
 
-	// Properties
 	public virtual object Current { get; }
 
-	// Methods
 
-	// RVA: 0x144A3A0 Offset: 0x14497A0 VA: 0x18144A3A0
 	internal void .ctor(BitArray bitarray) { }
 
-	// RVA: 0xD6C080 Offset: 0xD6B480 VA: 0x180D6C080 Slot: 7
 	public object Clone() { }
 
-	// RVA: 0x144A250 Offset: 0x1449650 VA: 0x18144A250 Slot: 8
 	public virtual bool MoveNext() { }
 
-	// RVA: 0x144A3F0 Offset: 0x14497F0 VA: 0x18144A3F0 Slot: 9
 	public virtual object get_Current() { }
 
-	// RVA: 0x144A310 Offset: 0x1449710 VA: 0x18144A310 Slot: 6
 	public void Reset() { }
 
 }
 
 internal class ArraySortHelper<T> // TypeDefIndex: 1446
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public static void Sort(T[] keys, int index, int length, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -36502,7 +36120,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.Sort
 	*/
 
-	// RVA: -1 Offset: -1
 	public static int BinarySearch(T[] array, int index, int length, T value, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -37008,7 +36625,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.BinarySearch
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static void Sort(T[] keys, int index, int length, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -37514,7 +37130,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.Sort
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static int InternalBinarySearch(T[] array, int index, int length, T value, IComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -37754,7 +37369,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<UIVertex>.InternalBinarySearch
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void SwapIfGreater(T[] keys, Comparison<T> comparer, int a, int b) { }
 	/* GenericInstMethod :
 	|
@@ -38038,7 +37652,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<UIVertex>.SwapIfGreater
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void Swap(T[] a, int i, int j) { }
 	/* GenericInstMethod :
 	|
@@ -38322,7 +37935,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<UIVertex>.Swap
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static void IntrospectiveSort(T[] keys, int left, int length, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -38497,7 +38109,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.IntrospectiveSort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void IntroSort(T[] keys, int lo, int hi, int depthLimit, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -38671,7 +38282,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.IntroSort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static int PickPivotAndPartition(T[] keys, int lo, int hi, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -38909,7 +38519,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<UIVertex>.PickPivotAndPartition
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void Heapsort(T[] keys, int lo, int hi, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39083,7 +38692,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.Heapsort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void DownHeap(T[] keys, int i, int n, int lo, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39367,7 +38975,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<UIVertex>.DownHeap
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void InsertionSort(T[] keys, int lo, int hi, Comparison<T> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39654,15 +39261,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 }
 
 internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
-{	// Fields
-	private static ArraySortHelper<TKey, TValue> s_defaultArraySortHelper; // 0x0
+{	private static ArraySortHelper<TKey, TValue> s_defaultArraySortHelper; // 0x0
 
-	// Properties
 	public static ArraySortHelper<TKey, TValue> Default { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public static ArraySortHelper<TKey, TValue> get_Default() { }
 	/* GenericInstMethod :
 	|
@@ -39671,7 +39274,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.get_Default
 	*/
 
-	// RVA: -1 Offset: -1
 	private static ArraySortHelper<TKey, TValue> CreateArraySortHelper() { }
 	/* GenericInstMethod :
 	|
@@ -39680,7 +39282,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.CreateArraySortHelper
 	*/
 
-	// RVA: -1 Offset: -1
 	public void Sort(TKey[] keys, TValue[] values, int index, int length, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39691,7 +39292,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.Sort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void SwapIfGreaterWithItems(TKey[] keys, TValue[] values, IComparer<TKey> comparer, int a, int b) { }
 	/* GenericInstMethod :
 	|
@@ -39702,7 +39302,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.SwapIfGreaterWithItems
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void Swap(TKey[] keys, TValue[] values, int i, int j) { }
 	/* GenericInstMethod :
 	|
@@ -39713,7 +39312,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.Swap
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static void IntrospectiveSort(TKey[] keys, TValue[] values, int left, int length, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39722,7 +39320,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.IntrospectiveSort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void IntroSort(TKey[] keys, TValue[] values, int lo, int hi, int depthLimit, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39731,7 +39328,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.IntroSort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static int PickPivotAndPartition(TKey[] keys, TValue[] values, int lo, int hi, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39740,7 +39336,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.PickPivotAndPartition
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void Heapsort(TKey[] keys, TValue[] values, int lo, int hi, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39749,7 +39344,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.Heapsort
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void DownHeap(TKey[] keys, TValue[] values, int i, int n, int lo, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39760,7 +39354,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.DownHeap
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void InsertionSort(TKey[] keys, TValue[] values, int lo, int hi, IComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
@@ -39771,7 +39364,6 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 	|-ArraySortHelper<ulong, object>.InsertionSort
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -39783,12 +39375,9 @@ internal class ArraySortHelper<TKey, TValue> // TypeDefIndex: 1447
 }
 
 internal sealed class ArrayTypeInfo<ElementType> : TraceLoggingTypeInfo<ElementType[]> // TypeDefIndex: 1506
-{	// Fields
-	private readonly TraceLoggingTypeInfo<ElementType> elementInfo; // 0x0
+{	private readonly TraceLoggingTypeInfo<ElementType> elementInfo; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public override void WriteMetadata(TraceLoggingMetadataCollector collector, string name, EventFieldFormat format) { }
 	/* GenericInstMethod :
 	|
@@ -39796,7 +39385,6 @@ internal sealed class ArrayTypeInfo<ElementType> : TraceLoggingTypeInfo<ElementT
 	|-ArrayTypeInfo<object>.WriteMetadata
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public override void WriteData(TraceLoggingDataCollector collector, ref ElementType[] value) { }
 	/* GenericInstMethod :
 	|
@@ -39807,106 +39395,77 @@ internal sealed class ArrayTypeInfo<ElementType> : TraceLoggingTypeInfo<ElementT
 }
 
 public class ArrayConverter : CollectionConverter // TypeDefIndex: 2659
-{	// Methods
-
-	// RVA: 0x15964B0 Offset: 0x15958B0 VA: 0x1815964B0 Slot: 7
+{
 	public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType) { }
 
-	// RVA: 0x15967C0 Offset: 0x1595BC0 VA: 0x1815967C0 Slot: 10
 	public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, object value, Attribute[] attributes) { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0 Slot: 11
 	public override bool GetPropertiesSupported(ITypeDescriptorContext context) { }
 
-	// RVA: 0x1596AA0 Offset: 0x1595EA0 VA: 0x181596AA0
 	public void .ctor() { }
 
 }
 
 private class ArrayConverter.ArrayPropertyDescriptor : TypeConverter.SimplePropertyDescriptor // TypeDefIndex: 2660
-{	// Fields
-	private int index; // 0x98
+{	private int index; // 0x98
 
-	// Methods
 
-	// RVA: 0x1596D50 Offset: 0x1596150 VA: 0x181596D50
 	public void .ctor(Type arrayType, Type elementType, int index) { }
 
-	// RVA: 0x1596B00 Offset: 0x1595F00 VA: 0x181596B00 Slot: 17
 	public override object GetValue(object instance) { }
 
-	// RVA: 0x1596C00 Offset: 0x1596000 VA: 0x181596C00 Slot: 19
 	public override void SetValue(object instance, object value) { }
 
 }
 
 internal class ArraySubsetEnumerator : IEnumerator // TypeDefIndex: 2661
-{	// Fields
-	private Array array; // 0x10
+{	private Array array; // 0x10
 	private int total; // 0x18
 	private int current; // 0x1C
 
-	// Properties
 	public object Current { get; }
 
-	// Methods
 
-	// RVA: 0x1596E20 Offset: 0x1596220 VA: 0x181596E20
 	public void .ctor(Array array, int count) { }
 
-	// RVA: 0x1596E00 Offset: 0x1596200 VA: 0x181596E00 Slot: 4
 	public bool MoveNext() { }
 
-	// RVA: 0x154D9B0 Offset: 0x154CDB0 VA: 0x18154D9B0 Slot: 6
 	public void Reset() { }
 
-	// RVA: 0x1596E70 Offset: 0x1596270 VA: 0x181596E70 Slot: 5
 	public object get_Current() { }
 
 }
 
 internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6078
-{	// Methods
-
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
+{
 	public void .ctor() { }
 
 }
 
 internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6080
 {
-// Namespace: Newtonsoft.Json.Linq.JsonPath
 [PreserveAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6080
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }
 
 internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6082
 {
-// Namespace: Newtonsoft.Json.Linq.JsonPath
 [PreserveAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6082
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }
 
 public abstract class ArrayPool<T> // TypeDefIndex: 6267
-{	// Fields
-	private static ArrayPool<T> s_sharedInstance; // 0x0
+{	private static ArrayPool<T> s_sharedInstance; // 0x0
 
-	// Properties
 	public static ArrayPool<T> Shared { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public static ArrayPool<T> get_Shared() { }
 	/* GenericInstMethod :
 	|
@@ -39915,7 +39474,6 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 	|-ArrayPool<object>.get_Shared
 	*/
 
-	// RVA: -1 Offset: -1
 	private static ArrayPool<T> EnsureSharedCreated() { }
 	/* GenericInstMethod :
 	|
@@ -39924,7 +39482,6 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 	|-ArrayPool<object>.EnsureSharedCreated
 	*/
 
-	// RVA: -1 Offset: -1
 	public static ArrayPool<T> Create() { }
 	/* GenericInstMethod :
 	|
@@ -39933,7 +39490,6 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 	|-ArrayPool<object>.Create
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public abstract T[] Rent(int minimumLength);
 	/* GenericInstMethod :
 	|
@@ -39941,7 +39497,6 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 	|-ArrayPool<object>.Rent
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public abstract void Return(T[] array, bool clearArray = False);
 	/* GenericInstMethod :
 	|
@@ -39949,7 +39504,6 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 	|-ArrayPool<object>.Return
 	*/
 
-	// RVA: -1 Offset: -1
 	protected void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -39961,34 +39515,26 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 }
 
 internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6268
-{	// Fields
-	internal static readonly ArrayPoolEventSource Log; // 0x2A60
+{	internal static readonly ArrayPoolEventSource Log; // 0x2A60
 
-	// Methods
 
 	[EventAttribute] // RVA: 0xB02A0 Offset: 0xAF6A0 VA: 0x1800B02A0
-	// RVA: 0x2314550 Offset: 0x2313950 VA: 0x182314550
 	internal void BufferRented(int bufferId, int bufferSize, int poolId, int bucketId) { }
 
 	[EventAttribute] // RVA: 0xB0410 Offset: 0xAF810 VA: 0x1800B0410
-	// RVA: 0x23143E0 Offset: 0x23137E0 VA: 0x1823143E0
 	internal void BufferAllocated(int bufferId, int bufferSize, int poolId, int bucketId, ArrayPoolEventSource.BufferAllocatedReason reason) { }
 
 	[EventAttribute] // RVA: 0x9B3E0 Offset: 0x9A7E0 VA: 0x18009B3E0
-	// RVA: 0x2314690 Offset: 0x2313A90 VA: 0x182314690
 	internal void BufferReturned(int bufferId, int bufferSize, int poolId) { }
 
-	// RVA: 0x2314760 Offset: 0x2313B60 VA: 0x182314760
 	public void .ctor() { }
 
-	// RVA: 0x23146C0 Offset: 0x2313AC0 VA: 0x1823146C0
 	private static void .cctor() { }
 
 }
 
 internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6269
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ArrayPoolEventSource.BufferAllocatedReason Pooled = 0;
 	public const ArrayPoolEventSource.BufferAllocatedReason OverMaximumSize = 1;
 	public const ArrayPoolEventSource.BufferAllocatedReason PoolExhausted = 2;
@@ -39997,101 +39543,73 @@ internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6269
 
 public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6560
 {
-// Namespace: 
 public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6560
-	// Fields
 	public Type enumType; // 0x10
 
-	// Methods
 
-	// RVA: 0x531100 Offset: 0x530500 VA: 0x180531100
 	public void .ctor() { }
 
 }
 
 public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6561
-{	// Fields
-	public float min; // 0x18
+{	public float min; // 0x18
 	public float max; // 0x1C
 
-	// Methods
 
-	// RVA: 0x531100 Offset: 0x530500 VA: 0x180531100
 	public void .ctor() { }
 
 }
 
 public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8140
-{	// Fields
-	private readonly List<Value> values; // 0x10
+{	private readonly List<Value> values; // 0x10
 
-	// Properties
 	public Value Item { get; set; }
 	public int Length { get; }
 
-	// Methods
 
-	// RVA: 0x1062920 Offset: 0x1061D20 VA: 0x181062920
 	public void .ctor() { }
 
-	// RVA: 0x1062990 Offset: 0x1061D90 VA: 0x181062990
 	public void .ctor(Array array) { }
 
-	// RVA: 0x10624A0 Offset: 0x10618A0 VA: 0x1810624A0
 	public void Add(Value value) { }
 
-	// RVA: 0x1062B60 Offset: 0x1061F60 VA: 0x181062B60
 	public Value get_Item(int index) { }
 
-	// RVA: 0x1062D80 Offset: 0x1062180 VA: 0x181062D80
 	public void set_Item(int index, Value value) { }
 
-	// RVA: 0x1062BC0 Offset: 0x1061FC0 VA: 0x181062BC0
 	public int get_Length() { }
 
-	// RVA: 0x1062730 Offset: 0x1061B30 VA: 0x181062730 Slot: 3
 	public override string ToString() { }
 
-	// RVA: 0x1062550 Offset: 0x1061950 VA: 0x181062550 Slot: 4
 	public IEnumerator<Value> GetEnumerator() { }
 
-	// RVA: 0x10626B0 Offset: 0x1061AB0 VA: 0x1810626B0 Slot: 5
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
-	// RVA: 0x10625D0 Offset: 0x10619D0 VA: 0x1810625D0
 	public static Array Parse(string jsonString) { }
 
-	// RVA: 0x1062500 Offset: 0x1061900 VA: 0x181062500
 	public void Clear() { }
 
-	// RVA: 0x1062650 Offset: 0x1061A50 VA: 0x181062650
 	public void Remove(int index) { }
 
-	// RVA: 0x1062C00 Offset: 0x1062000 VA: 0x181062C00
 	public static Array op_Addition(Array lhs, Array rhs) { }
 
 }
 
 public static class Arrays // TypeDefIndex: 8225
-{	// Fields
-	public static ushort[] flushes; // 0x0
+{	public static ushort[] flushes; // 0x0
 	public static readonly ushort[] unique5; // 0x8
 	public static readonly int[] products; // 0x10
 	public static readonly ushort[] values; // 0x18
 	public static readonly int[] primes; // 0x20
 	public static readonly int[,] perm7; // 0x28
 
-	// Methods
 
-	// RVA: 0x1062DF0 Offset: 0x10621F0 VA: 0x181062DF0
 	private static void .cctor() { }
 
 }
 
 public static class ArrayEx // TypeDefIndex: 11338
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public static T[] New<T>(int length) { }
 	/* GenericInstMethod :
 	|
@@ -40101,7 +39619,6 @@ public static class ArrayEx // TypeDefIndex: 11338
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T GetRandom<T>(T[] array) { }
 	/* GenericInstMethod :
 	|
@@ -40110,7 +39627,6 @@ public static class ArrayEx // TypeDefIndex: 11338
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T GetRandom<T>(T[] array, uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -40119,7 +39635,6 @@ public static class ArrayEx // TypeDefIndex: 11338
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T GetRandom<T>(T[] array, ref uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -40132,7 +39647,6 @@ public static class ArrayEx // TypeDefIndex: 11338
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void Shuffle<T>(T[] array, uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -40141,7 +39655,6 @@ public static class ArrayEx // TypeDefIndex: 11338
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void Shuffle<T>(T[] array, ref uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -40159,7 +39672,6 @@ public static class ArrayEx // TypeDefIndex: 11338
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void BubbleSort<T>(T[] array) { }
 	/* GenericInstMethod :
 	|

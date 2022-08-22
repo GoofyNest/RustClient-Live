@@ -1,6 +1,5 @@
 internal enum ParseFlags // TypeDefIndex: 237
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ParseFlags HaveYear = 1;
 	public const ParseFlags HaveMonth = 2;
 	public const ParseFlags HaveDay = 4;

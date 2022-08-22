@@ -1,6 +1,5 @@
 public enum HairCapMask // TypeDefIndex: 9215
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const HairCapMask Head = 1;
 	public const HairCapMask Eyebrow = 2;
 	public const HairCapMask Facial = 4;

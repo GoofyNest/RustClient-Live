@@ -1,28 +1,21 @@
 internal class HebrewNumber // TypeDefIndex: 708
-{	// Fields
-	private static HebrewNumber.HebrewValue[] HebrewValues; // 0x0
+{	private static HebrewNumber.HebrewValue[] HebrewValues; // 0x0
 	private static char maxHebrewNumberCh; // 0x8
 	private static readonly HebrewNumber.HS[][] NumberPasingState; // 0x10
 
-	// Methods
 
-	// RVA: 0x16EF700 Offset: 0x16EEB00 VA: 0x1816EF700
 	internal static string ToString(int Number) { }
 
-	// RVA: 0x16EF4E0 Offset: 0x16EE8E0 VA: 0x1816EF4E0
 	internal static HebrewNumberParsingState ParseByChar(char ch, ref HebrewNumberParsingContext context) { }
 
-	// RVA: 0x16EF3E0 Offset: 0x16EE7E0 VA: 0x1816EF3E0
 	internal static bool IsDigit(char ch) { }
 
-	// RVA: 0x16EF970 Offset: 0x16EED70 VA: 0x1816EF970
 	private static void .cctor() { }
 
 }
 
 private enum HebrewNumber.HebrewToken // TypeDefIndex: 709
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const HebrewNumber.HebrewToken Invalid = -1;
 	public const HebrewNumber.HebrewToken Digit400 = 0;
 	public const HebrewNumber.HebrewToken Digit200_300 = 1;
@@ -38,20 +31,16 @@ private enum HebrewNumber.HebrewToken // TypeDefIndex: 709
 }
 
 private class HebrewNumber.HebrewValue // TypeDefIndex: 710
-{	// Fields
-	internal HebrewNumber.HebrewToken token; // 0x10
+{	internal HebrewNumber.HebrewToken token; // 0x10
 	internal int value; // 0x14
 
-	// Methods
 
-	// RVA: 0x45B750 Offset: 0x45AB50 VA: 0x18045B750
 	internal void .ctor(HebrewNumber.HebrewToken token, int value) { }
 
 }
 
 internal enum HebrewNumber.HS // TypeDefIndex: 711
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const HebrewNumber.HS _err = -1;
 	public const HebrewNumber.HS Start = 0;
 	public const HebrewNumber.HS S400 = 1;

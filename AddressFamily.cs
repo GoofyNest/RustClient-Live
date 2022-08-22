@@ -1,6 +1,5 @@
 public enum AddressFamily // TypeDefIndex: 3039
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const AddressFamily Unknown = -1;
 	public const AddressFamily Unspecified = 0;
 	public const AddressFamily Unix = 1;

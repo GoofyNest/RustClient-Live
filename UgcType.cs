@@ -1,6 +1,5 @@
 public enum UgcType // TypeDefIndex: 5159
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const UgcType Items = 0;
 	public const UgcType Items_Mtx = 1;
 	public const UgcType Items_ReadyToUse = 2;
@@ -20,9 +19,7 @@ public enum UgcType // TypeDefIndex: 5159
 
 public enum UGCType // TypeDefIndex: 9519
 {
-// Namespace: 
 public enum UGCType // TypeDefIndex: 9519
-	// Fields
 	public int value__; // 0x0
 	public const UGCType ImageJpg = 0;
 	public const UGCType ImagePng = 1;

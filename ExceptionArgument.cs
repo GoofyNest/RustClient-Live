@@ -1,6 +1,5 @@
 internal enum ExceptionArgument // TypeDefIndex: 309
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ExceptionArgument obj = 0;
 	public const ExceptionArgument dictionary = 1;
 	public const ExceptionArgument dictionaryCreationThreshold = 2;
@@ -33,8 +32,7 @@ internal enum ExceptionArgument // TypeDefIndex: 309
 }
 
 internal enum ExceptionArgument // TypeDefIndex: 6727
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ExceptionArgument length = 0;
 	public const ExceptionArgument start = 1;
 	public const ExceptionArgument minimumBufferSize = 2;
@@ -54,8 +52,7 @@ internal enum ExceptionArgument // TypeDefIndex: 6727
 }
 
 internal enum ExceptionArgument // TypeDefIndex: 7084
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ExceptionArgument task = 0;
 	public const ExceptionArgument source = 1;
 	public const ExceptionArgument state = 2;

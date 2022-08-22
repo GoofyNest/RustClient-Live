@@ -1,6 +1,5 @@
 public class GranuleInfo // TypeDefIndex: 7410
-{	// Fields
-	internal int BigValues; // 0x10
+{	internal int BigValues; // 0x10
 	internal int BlockType; // 0x14
 	internal int Count1TableSelect; // 0x18
 	internal int GlobalGain; // 0x1C
@@ -15,9 +14,7 @@ public class GranuleInfo // TypeDefIndex: 7410
 	internal int[] TableSelect; // 0x48
 	internal int WindowSwitchingFlag; // 0x50
 
-	// Methods
 
-	// RVA: 0x5F7600 Offset: 0x5F6A00 VA: 0x1805F7600
 	internal void .ctor() { }
 
 }

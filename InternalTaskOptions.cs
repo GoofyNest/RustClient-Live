@@ -1,6 +1,5 @@
 internal enum InternalTaskOptions // TypeDefIndex: 863
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const InternalTaskOptions None = 0;
 	public const InternalTaskOptions InternalOptionsMask = 65280;
 	public const InternalTaskOptions ChildReplica = 256;

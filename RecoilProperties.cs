@@ -1,6 +1,5 @@
 public class RecoilProperties : ScriptableObject // TypeDefIndex: 10755
-{	// Fields
-	public float recoilYawMin; // 0x18
+{	public float recoilYawMin; // 0x18
 	public float recoilYawMax; // 0x1C
 	public float recoilPitchMin; // 0x20
 	public float recoilPitchMax; // 0x24
@@ -24,12 +23,9 @@ public class RecoilProperties : ScriptableObject // TypeDefIndex: 10755
 	public AnimationCurve aimconeProbabilityCurve; // 0x70
 	public RecoilProperties newRecoilOverride; // 0x78
 
-	// Methods
 
-	// RVA: 0x6ABE00 Offset: 0x6AB200 VA: 0x1806ABE00
 	public RecoilProperties GetRecoil() { }
 
-	// RVA: 0x6ABE80 Offset: 0x6AB280 VA: 0x1806ABE80
 	public void .ctor() { }
 
 }

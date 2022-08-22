@@ -1,6 +1,5 @@
 public class QDOODOQQDQODD // TypeDefIndex: 7181
-{	// Fields
-	public Vector3 centerPoint; // 0x10
+{	public Vector3 centerPoint; // 0x10
 	public Vector3 tmpCenterPoint; // 0x1C
 	public Vector3 stageCenterPoint; // 0x28
 	public Vector3 tmpStageCenterPoint; // 0x34
@@ -72,9 +71,7 @@ public class QDOODOQQDQODD // TypeDefIndex: 7181
 	public double roadType; // 0x210
 	public double roadTypeTimestamp; // 0x218
 
-	// Methods
 
-	// RVA: 0xB57AB0 Offset: 0xB56EB0 VA: 0x180B57AB0
 	public void .ctor() { }
 
 }

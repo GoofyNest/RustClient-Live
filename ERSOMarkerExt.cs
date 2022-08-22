@@ -1,6 +1,5 @@
 public class ERSOMarkerExt : ScriptableObject // TypeDefIndex: 7237
-{	// Fields
-	public SideObject sideObject; // 0x18
+{	public SideObject sideObject; // 0x18
 	public double id; // 0x20
 	public bool active; // 0x28
 	public float startOffset; // 0x2C
@@ -28,24 +27,17 @@ public class ERSOMarkerExt : ScriptableObject // TypeDefIndex: 7237
 	public ERRoadSide side; // 0xC4
 	public ERSOMarkerExt otherSide; // 0xC8
 
-	// Methods
 
-	// RVA: 0xA54DF0 Offset: 0xA541F0 VA: 0x180A54DF0
 	public void Init(SideObject so, bool flag) { }
 
-	// RVA: 0xA54F20 Offset: 0xA54320 VA: 0x180A54F20
 	public void OODOOOQQCO(ERSOMarkerExt source) { }
 
-	// RVA: 0xA54CB0 Offset: 0xA540B0 VA: 0x180A54CB0
 	public void Copy(ERSOMarkerExt source) { }
 
-	// RVA: 0xA54CE0 Offset: 0xA540E0 VA: 0x180A54CE0
 	public static ERSOMarkerExt CreateInstance(SideObject so, bool flag) { }
 
-	// RVA: 0xA54ED0 Offset: 0xA542D0 VA: 0x180A54ED0
 	public void ODCOCDOOCQ(SideObject so) { }
 
-	// RVA: 0xA551D0 Offset: 0xA545D0 VA: 0x180A551D0
 	public void .ctor() { }
 
 }

@@ -1,6 +1,5 @@
 public enum Layer // TypeDefIndex: 6620
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Layer Default = 0;
 	public const Layer TransparentFX = 1;
 	public const Layer Ignore_Raycast = 2;
@@ -37,25 +36,19 @@ public enum Layer // TypeDefIndex: 6620
 }
 
 public class Layer : ConsoleSystem // TypeDefIndex: 11936
-{	// Methods
-
+{
 	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	// RVA: 0x363AB0 Offset: 0x362EB0 VA: 0x180363AB0
 	public static void show(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	// RVA: 0x363890 Offset: 0x362C90 VA: 0x180363890
 	public static void hide(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	// RVA: 0x363CD0 Offset: 0x3630D0 VA: 0x180363CD0
 	public static void toggle(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	// RVA: 0x363690 Offset: 0x362A90 VA: 0x180363690
 	public static void culling(ConsoleSystem.Arg arg) { }
 
-	// RVA: 0x363630 Offset: 0x362A30 VA: 0x180363630
 	public void .ctor() { }
 
 }

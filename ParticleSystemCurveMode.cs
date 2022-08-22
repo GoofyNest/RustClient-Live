@@ -1,6 +1,5 @@
 public enum ParticleSystemCurveMode // TypeDefIndex: 4539
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ParticleSystemCurveMode Constant = 0;
 	public const ParticleSystemCurveMode Curve = 1;
 	public const ParticleSystemCurveMode TwoCurves = 2;

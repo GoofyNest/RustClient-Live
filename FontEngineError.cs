@@ -1,6 +1,5 @@
 public enum FontEngineError // TypeDefIndex: 4117
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const FontEngineError Success = 0;
 	public const FontEngineError Invalid_File_Path = 1;
 	public const FontEngineError Invalid_File_Format = 2;

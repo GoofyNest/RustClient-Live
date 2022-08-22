@@ -1,6 +1,5 @@
 internal enum PInvokeAttributes // TypeDefIndex: 533
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const PInvokeAttributes NoMangle = 1;
 	public const PInvokeAttributes CharSetMask = 6;
 	public const PInvokeAttributes CharSetNotSpec = 0;

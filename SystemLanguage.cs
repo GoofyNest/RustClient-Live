@@ -1,6 +1,5 @@
 public enum SystemLanguage // TypeDefIndex: 3346
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SystemLanguage Afrikaans = 0;
 	public const SystemLanguage Arabic = 1;
 	public const SystemLanguage Basque = 2;

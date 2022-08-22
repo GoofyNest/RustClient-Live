@@ -1,6 +1,5 @@
 public class ERConnectionSibling // TypeDefIndex: 7191
-{	// Fields
-	public string name; // 0x10
+{	public string name; // 0x10
 	public ERModularRoad road; // 0x18
 	public Transform transform; // 0x20
 	public Vector3 angleControlPoint; // 0x28
@@ -107,71 +106,50 @@ public class ERConnectionSibling // TypeDefIndex: 7191
 	public ERLaneData laneData; // 0x300
 	public bool hasChanged; // 0x308
 
-	// Methods
 
-	// RVA: 0xB77B50 Offset: 0xB76F50 VA: 0x180B77B50
 	public void Clear() { }
 
-	// RVA: 0xB787B0 Offset: 0xB77BB0 VA: 0x180B787B0
 	private void Init(ERModularRoad scr, float angle, Vector3 controlPoint, Transform transform) { }
 
-	// RVA: 0xB77E80 Offset: 0xB77280 VA: 0x180B77E80
 	public static ERConnectionSibling CreateInstance(ERModularRoad scr, float angle, Vector3 controlPoint, Transform transform, List<ERConnectionSibling> siblings) { }
 
-	// RVA: 0xB785E0 Offset: 0xB779E0 VA: 0x180B785E0
 	private void GetRoadTypeIndex(double id, List<QDQDOOQQDQODD> types) { }
 
-	// RVA: 0xB79300 Offset: 0xB78700 VA: 0x180B79300
 	public void ODDQDOCDCC(int index, List<QDQDOOQQDQODD> types) { }
 
-	// RVA: 0xB78A00 Offset: 0xB77E00 VA: 0x180B78A00
 	public void OCQQDCCOQO(List<QDQDOOQQDQODD> types) { }
 
-	// RVA: 0xB76E80 Offset: 0xB76280 VA: 0x180B76E80
 	private void BuildRoadShape() { }
 
-	// RVA: 0xB79380 Offset: 0xB78780 VA: 0x180B79380
 	public static void SetPriorityConnection(List<ERConnectionSibling> siblings, int index) { }
 
-	// RVA: 0xB786E0 Offset: 0xB77AE0 VA: 0x180B786E0
 	public Vector2 GetVector2(Vector2 v1, Vector2 v2, Vector2 v3) { }
 
-	// RVA: 0xB78950 Offset: 0xB77D50 VA: 0x180B78950
 	public void OCQODDOQQC(double type, List<QDQDOOQQDQODD> roadTypes) { }
 
-	// RVA: 0xB78330 Offset: 0xB77730 VA: 0x180B78330
 	public static Vector3 GetAngleControlPoint(Vector3 cp, Vector3 p0, Vector3 p1, Vector3 p2) { }
 
-	// RVA: 0xB79410 Offset: 0xB78810 VA: 0x180B79410
 	public void .ctor() { }
 
 }
 
 private class ERConnectionSibling.ᙃ : IComparer // TypeDefIndex: 7192
-{	// Methods
-
-	// RVA: 0xB95BA0 Offset: 0xB94FA0 VA: 0x180B95BA0 Slot: 4
+{
 	private int System.Collections.IComparer.Compare(object a, object b) { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }
 
 private sealed class ERConnectionSibling.ᙄ // TypeDefIndex: 7193
-{	// Fields
-	public static readonly ERConnectionSibling.ᙄ <>9; // 0x0
+{	public static readonly ERConnectionSibling.ᙄ <>9; // 0x0
 	public static Comparison<ERConnectionSibling> <>9__109_0; // 0x8
 
-	// Methods
 
-	// RVA: 0xB95CE0 Offset: 0xB950E0 VA: 0x180B95CE0
 	private static void .cctor() { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
-	// RVA: 0x9AF510 Offset: 0x9AE910 VA: 0x1809AF510
 	internal int <CreateInstance>b__109_0(ERConnectionSibling x, ERConnectionSibling y) { }
 
 }

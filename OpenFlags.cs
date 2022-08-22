@@ -1,6 +1,5 @@
 public enum OpenFlags // TypeDefIndex: 2798
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const OpenFlags ReadOnly = 0;
 	public const OpenFlags ReadWrite = 1;
 	public const OpenFlags MaxAllowed = 2;

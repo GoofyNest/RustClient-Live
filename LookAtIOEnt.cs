@@ -1,6 +1,5 @@
 public class LookAtIOEnt : MonoBehaviour // TypeDefIndex: 11077
-{	// Fields
-	public Text objectTitle; // 0x18
+{	public Text objectTitle; // 0x18
 	public RectTransform slotToolTip; // 0x20
 	public Text slotTitle; // 0x28
 	public Text slotConnection; // 0x30
@@ -41,58 +40,41 @@ public class LookAtIOEnt : MonoBehaviour // TypeDefIndex: 11077
 	private bool wireToolWasPendingRoot; // 0x132
 	private IOEntity.IOType wireToolWasType; // 0x134
 
-	// Methods
 
-	// RVA: 0x5006B0 Offset: 0x4FFAB0 VA: 0x1805006B0
 	private void Update() { }
 
-	// RVA: 0x4FCCA0 Offset: 0x4FC0A0 VA: 0x1804FCCA0
 	public void ClearHandles() { }
 
-	// RVA: 0x4FD160 Offset: 0x4FC560 VA: 0x1804FD160
 	public void SetupHandles(IOEntity ent, bool showInputs = True, bool showOutputs = True) { }
 
-	// RVA: 0x4FD040 Offset: 0x4FC440 VA: 0x1804FD040
 	public static int GetSelectedIndex() { }
 
-	// RVA: 0x4FD0A0 Offset: 0x4FC4A0 VA: 0x1804FD0A0
 	public static bool SelectedIsInput() { }
 
-	// RVA: 0x4FDE60 Offset: 0x4FD260 VA: 0x1804FDE60
 	public void UpdateClearing() { }
 
-	// RVA: 0x500360 Offset: 0x4FF760 VA: 0x180500360
 	public void UpdateWireInfo() { }
 
-	// RVA: 0x4FF210 Offset: 0x4FE610 VA: 0x1804FF210
 	public void UpdateLookingHandle(bool includeInputs, bool includeOutputs) { }
 
-	// RVA: 0x4FCE70 Offset: 0x4FC270 VA: 0x1804FCE70
 	public Vector3 GetSelectedHandleWorldPosition() { }
 
-	// RVA: 0x4FCD60 Offset: 0x4FC160 VA: 0x1804FCD60
 	public IOEntity.IOType GetSelectedHandleType() { }
 
-	// RVA: 0x4FF850 Offset: 0x4FEC50 VA: 0x1804FF850
 	public void UpdateLookingUI() { }
 
-	// RVA: 0x4FE100 Offset: 0x4FD500 VA: 0x1804FE100
 	public bool UpdateLookingAtIOEnt() { }
 
-	// RVA: 0x4FCCC0 Offset: 0x4FC0C0 VA: 0x1804FCCC0
 	private LookAtIOEnt.HandleSet GetHandles(IOEntity.IOType forType) { }
 
-	// RVA: 0x500970 Offset: 0x4FFD70 VA: 0x180500970
 	public void .ctor() { }
 
-	// RVA: 0x500920 Offset: 0x4FFD20 VA: 0x180500920
 	private static void .cctor() { }
 
 }
 
 public struct LookAtIOEnt.HandleSet // TypeDefIndex: 11078
-{	// Fields
-	public IOEntity.IOType ForIO; // 0x0
+{	public IOEntity.IOType ForIO; // 0x0
 	public GameObjectRef handlePrefab; // 0x8
 	public GameObjectRef handleOccupiedPrefab; // 0x10
 	public GameObjectRef selectedHandlePrefab; // 0x18

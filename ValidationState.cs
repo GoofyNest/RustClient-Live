@@ -1,6 +1,5 @@
 internal sealed class ValidationState // TypeDefIndex: 2290
-{	// Fields
-	public bool IsNill; // 0x10
+{	public bool IsNill; // 0x10
 	public bool IsDefault; // 0x11
 	public bool NeedValidateChildren; // 0x12
 	public bool CheckRequiredAttribute; // 0x13
@@ -19,9 +18,7 @@ internal sealed class ValidationState // TypeDefIndex: 2290
 	public List<RangePositionInfo> RunningPositions; // 0x60
 	public bool TooComplex; // 0x68
 
-	// Methods
 
-	// RVA: 0xEECDA0 Offset: 0xEEC1A0 VA: 0x180EECDA0
 	public void .ctor() { }
 
 }

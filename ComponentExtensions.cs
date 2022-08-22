@@ -1,8 +1,6 @@
 public static class ComponentExtensions // TypeDefIndex: 6223
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T Duplicate<T>(T obj) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +10,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T[] Duplicate<T>(T obj, int amount, bool includeOriginalInArray = False) { }
 	/* GenericInstMethod :
 	|
@@ -22,7 +19,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void SetActive<T>(T obj, bool active) { }
 	/* GenericInstMethod :
 	|
@@ -41,7 +37,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static Vector2 WorldToRectTransform<T>(T obj, Vector2 worldPos) { }
 	/* GenericInstMethod :
 	|
@@ -50,7 +45,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static Rect GetWorldRect<T>(T obj) { }
 	/* GenericInstMethod :
 	|
@@ -59,7 +53,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool GetComponent<T, U>(T obj, out U value) { }
 	/* GenericInstMethod :
 	|
@@ -68,7 +61,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool GetComponentInParent<T, U>(T obj, out U value) { }
 	/* GenericInstMethod :
 	|
@@ -77,7 +69,6 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool GetComponentInChildren<T, U>(T obj, out U value) { }
 	/* GenericInstMethod :
 	|

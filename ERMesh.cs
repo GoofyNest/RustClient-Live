@@ -1,6 +1,5 @@
 public class ERMesh // TypeDefIndex: 7247
-{	// Fields
-	public List<int> vecsInt; // 0x10
+{	public List<int> vecsInt; // 0x10
 	public List<Vector3> vecs; // 0x18
 	public List<Vector2> uv; // 0x20
 	public List<Vector2> uv2; // 0x28
@@ -142,78 +141,53 @@ public class ERMesh // TypeDefIndex: 7247
 	public string name; // 0x420
 	public bool terrainMesh; // 0x428
 
-	// Methods
 
-	// RVA: 0x9A0FA0 Offset: 0x9A03A0 VA: 0x1809A0FA0
 	public void OCQQQCQQDD() { }
 
-	// RVA: 0x9A5390 Offset: 0x9A4790 VA: 0x1809A5390
 	public void .ctor(GameObject m_go, SideObject soScript, float minZ, Transform sourceTransform, Vector3 scale, Mesh m, Material mat, float startMin = 0, bool rotate180 = False) { }
 
-	// RVA: 0x99EFA0 Offset: 0x99E3A0 VA: 0x18099EFA0
 	private void OCDCDCQQDQ(GameObject m_go, SideObject soScript, float minZ, Transform sourceTransform, Vector3 scale, Mesh m, Material mat, float startMin, bool namingConvention) { }
 
-	// RVA: 0x99FB20 Offset: 0x99EF20 VA: 0x18099FB20
 	private void OCDCQCQQOC(List<Vector3> vecs, ref List<ZIndexArray> zValueVecIndexes, ref List<float> zValues) { }
 
-	// RVA: 0x99DC80 Offset: 0x99D080 VA: 0x18099DC80
 	public void GetMiddleSementInfo(List<Vector3> vecs, ref float minMiddleZ, ref float maxMiddleZ, ref List<int> middleStartInts, ref List<int> middleEndInts) { }
 
-	// RVA: 0x99DB70 Offset: 0x99CF70 VA: 0x18099DB70
 	public void GetMiddleEdges(List<Vector3> vecs, float z, ref List<int> edgeInts) { }
 
-	// RVA: 0x9A2F20 Offset: 0x9A2320 VA: 0x1809A2F20
 	public bool OOCDOCOCQO(Vector3 v, int index, List<float> zV, ref List<ZIndexArray> zVIndexes) { }
 
-	// RVA: 0x9A08F0 Offset: 0x99FCF0 VA: 0x1809A08F0
 	public void OCDQOQOCCD(int index, Vector3 v, ref List<int> vecsInts, ref List<Vector3> vecs, ref List<Vector2> uv, ref List<Vector2> uv2, ref List<Vector3> normals, ref List<Color> colors, ref List<Vector4> tangents, Vector2 sourceUv, Vector2 sourceUv2, Vector3 sourceNormal, Color sourceColor, Vector4 sourceTangent, ref int tri) { }
 
-	// RVA: 0x9A14D0 Offset: 0x9A08D0 VA: 0x1809A14D0
 	public void ODDDDDQDOQ(int index, ref List<int> vecsInts) { }
 
-	// RVA: 0x99DF30 Offset: 0x99D330 VA: 0x18099DF30
 	public void InEdgePairArray(int index1, int index2, ref List<CRedge> vecsInts) { }
 
-	// RVA: 0x9A3D40 Offset: 0x9A3140 VA: 0x1809A3D40
 	public void OQCDQOQOCQ(float adjustZ) { }
 
-	// RVA: 0x99FD00 Offset: 0x99F100 VA: 0x18099FD00
 	public void OCDDCDODQQ(ref List<List<int>> groups, List<int> triInts, List<int> edgeInts) { }
 
-	// RVA: 0x9A3B40 Offset: 0x9A2F40 VA: 0x1809A3B40
 	public void OOQOCOQOOO(List<CRedge> edges, ref int curInt) { }
 
-	// RVA: 0x99EED0 Offset: 0x99E2D0 VA: 0x18099EED0
 	public bool OCCCOQOCQO(List<CRedge> edges, int index, int curInt) { }
 
-	// RVA: 0x9A1590 Offset: 0x9A0990 VA: 0x1809A1590
 	public bool ODDDDDQDOQ(int index, List<int> edgeInts) { }
 
-	// RVA: 0x9A07B0 Offset: 0x99FBB0 VA: 0x1809A07B0
 	public bool OCDOQODCCQ(List<CRedge> edges, int index1, int index2) { }
 
-	// RVA: 0x99E110 Offset: 0x99D510 VA: 0x18099E110
 	public void MatchEdgePairs(List<CRedge> startEdgePairs, List<CRedge> endEdgePairs, ref List<int> startInts, ref List<int> endInts, ref List<int> startIntsNC, ref List<int> endIntsNC, List<Vector3> startVecs, List<Vector3> endVecs, List<Vector3> startNormals, List<Vector3> normals, ref int OQOQODDQCCInt, ref int ODQCDQCCODInt) { }
 
-	// RVA: 0x9A44C0 Offset: 0x9A38C0 VA: 0x1809A44C0
 	public void OQOCDDCQDD(List<List<int>> startGroups, List<List<int>> endGroups, ref List<int> startInts, ref List<int> endInts, List<Vector3> startVecs, List<Vector3> endVecs) { }
 
-	// RVA: 0x9A1620 Offset: 0x9A0A20 VA: 0x1809A1620
 	public void ODDDOCDCQO(ERModularRoad roadScr, GameObject go, SideObject so, ERModularBase scr, bool mirrored, int sectionListIndex, List<int> sectionIndexes, int autoSectionStart) { }
 
-	// RVA: 0x9A3F80 Offset: 0x9A3380 VA: 0x1809A3F80
 	public static bool OQCQCDQDOO(ERModularRoad rd, int listIndex, int listItemIndex, SideObject so, bool mirrored) { }
 
-	// RVA: 0x9A3010 Offset: 0x9A2410 VA: 0x1809A3010
 	private void OODCCOCQOC(GameObject go, SideObject so, ERModularBase scr, List<Vector3> sVecs, List<Vector2> sUv, List<Vector2> sUv2, List<Color> sColors, List<Vector3> sNormals, List<Vector4> sTangents, List<int> sTriangles, List<int> normalArray1, List<int> normalArray2, List<Material> materials, List<Vector3> sTerrainNormals) { }
 
-	// RVA: 0x9A0B00 Offset: 0x99FF00 VA: 0x1809A0B00
 	private void OCOCOQQOOO(ref int vecCount, ref List<int> intList, List<Vector3> vecsList, float zValue) { }
 
-	// RVA: 0x9A0C90 Offset: 0x9A0090 VA: 0x1809A0C90
 	private void OCODQQOCDD(ref List<int> targetIntList, List<int> sourceIntList, List<Vector3> targetVecs, List<Vector3> sourceVecs) { }
 
-	// RVA: 0x99D6F0 Offset: 0x99CAF0 VA: 0x18099D6F0
 	public void Clear() { }
 
 }

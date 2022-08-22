@@ -1,6 +1,5 @@
 internal enum CalendarId // TypeDefIndex: 698
-{	// Fields
-	public ushort value__; // 0x0
+{	public ushort value__; // 0x0
 	public const CalendarId GREGORIAN = 1;
 	public const CalendarId GREGORIAN_US = 2;
 	public const CalendarId JAPAN = 3;

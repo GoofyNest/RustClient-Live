@@ -1,7 +1,5 @@
 internal static class HashCodeCalculator // TypeDefIndex: 5766
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public static int Calculate<T>(ICollection<T> list) { }
 	/* GenericInstMethod :
 	|

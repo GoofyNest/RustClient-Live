@@ -1,6 +1,5 @@
 public enum HitArea // TypeDefIndex: 9900
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const HitArea Head = 1;
 	public const HitArea Chest = 2;
 	public const HitArea Stomach = 4;

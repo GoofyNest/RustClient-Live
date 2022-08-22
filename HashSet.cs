@@ -1,25 +1,20 @@
 internal struct HashSet.Slot<T> // TypeDefIndex: 3255
-{	// Fields
-	internal int hashCode; // 0x0
+{	internal int hashCode; // 0x0
 	internal int next; // 0x0
 	internal T value; // 0x0
 
 }
 
 public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 3256
-{	// Fields
-	private HashSet<T> _set; // 0x0
+{	private HashSet<T> _set; // 0x0
 	private int _index; // 0x0
 	private int _version; // 0x0
 	private T _current; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(HashSet<T> set) { }
 	/* GenericInstMethod :
 	|
@@ -36,7 +31,6 @@ public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator /
 	|-HashSet.Enumerator<Vector3>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -69,7 +63,6 @@ public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator /
 	|-HashSet.Enumerator<WindZoneEx>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -114,7 +107,6 @@ public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator /
 	|-HashSet.Enumerator<Vector3>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -153,7 +145,6 @@ public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator /
 	|-HashSet.Enumerator<Vector3>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -176,7 +167,6 @@ public struct HashSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator /
 	|-HashSet.Enumerator<Vector3>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|

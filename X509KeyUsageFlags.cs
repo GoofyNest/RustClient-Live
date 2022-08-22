@@ -1,6 +1,5 @@
 public enum X509KeyUsageFlags // TypeDefIndex: 2804
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const X509KeyUsageFlags None = 0;
 	public const X509KeyUsageFlags EncipherOnly = 1;
 	public const X509KeyUsageFlags CrlSign = 2;

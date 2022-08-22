@@ -1,6 +1,5 @@
 internal enum DurationControlNotification // TypeDefIndex: 5144
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DurationControlNotification None = 0;
 	public const DurationControlNotification DurationControlNotification1Hour = 1;
 	public const DurationControlNotification DurationControlNotification3Hours = 2;

@@ -1,6 +1,5 @@
 public enum TouchScreenKeyboardType // TypeDefIndex: 3562
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TouchScreenKeyboardType Default = 0;
 	public const TouchScreenKeyboardType ASCIICapable = 1;
 	public const TouchScreenKeyboardType NumbersAndPunctuation = 2;

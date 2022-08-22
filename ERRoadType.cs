@@ -1,6 +1,5 @@
 public class ERRoadType // TypeDefIndex: 7227
-{	// Fields
-	public double id; // 0x10
+{	public double id; // 0x10
 	public string roadTypeName; // 0x18
 	public List<Vector2> roadShape; // 0x20
 	public List<Vector2> roadShapeExt; // 0x28
@@ -28,15 +27,11 @@ public class ERRoadType // TypeDefIndex: 7227
 	public bool terrainDeformation; // 0xB9
 	private ERRoadShape ᙃ; // 0xC0
 
-	// Methods
 
-	// RVA: 0xB3E090 Offset: 0xB3D490 VA: 0x180B3E090
 	public void .ctor() { }
 
-	// RVA: 0xB3DAD0 Offset: 0xB3CED0 VA: 0x180B3DAD0
 	public void Update() { }
 
-	// RVA: 0xB3D960 Offset: 0xB3CD60 VA: 0x180B3D960
 	public static QDQDOOQQDQODD GetRoadType(ERRoadType t, ERModularBase baseScript) { }
 
 }

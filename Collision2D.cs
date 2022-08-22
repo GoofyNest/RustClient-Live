@@ -1,6 +1,5 @@
 public class Collision2D // TypeDefIndex: 4082
-{	// Fields
-	internal int m_Collider; // 0x10
+{	internal int m_Collider; // 0x10
 	internal int m_OtherCollider; // 0x14
 	internal int m_Rigidbody; // 0x18
 	internal int m_OtherRigidbody; // 0x1C

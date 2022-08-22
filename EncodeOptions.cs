@@ -1,6 +1,5 @@
 public enum EncodeOptions // TypeDefIndex: 11566
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const EncodeOptions None = 0;
 	public const EncodeOptions PrettyPrint = 1;
 	public const EncodeOptions NoTypeHints = 2;

@@ -1,6 +1,5 @@
 public enum BlendMode // TypeDefIndex: 3810
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const BlendMode Zero = 0;
 	public const BlendMode One = 1;
 	public const BlendMode DstColor = 2;

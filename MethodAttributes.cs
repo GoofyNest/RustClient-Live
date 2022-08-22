@@ -1,6 +1,5 @@
 public enum MethodAttributes // TypeDefIndex: 538
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const MethodAttributes MemberAccessMask = 7;
 	public const MethodAttributes PrivateScope = 0;
 	public const MethodAttributes Private = 1;

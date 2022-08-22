@@ -1,6 +1,5 @@
 public enum RgbColor // TypeDefIndex: 10704
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const RgbColor Default = 0;
 	public const RgbColor BuildingPrivilege = 1;
 	public const RgbColor Cold = 2;

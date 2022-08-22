@@ -1,6 +1,5 @@
 public struct ERSOSection // TypeDefIndex: 7188
-{	// Fields
-	public Vector3 startPosition; // 0x0
+{	public Vector3 startPosition; // 0x0
 	public Vector3 endPosition; // 0xC
 	public Vector3 p2; // 0x18
 	public Vector3 p3; // 0x24
@@ -35,15 +34,11 @@ public struct ERSOSection // TypeDefIndex: 7188
 	public double linkedSoId1; // 0xF0
 	public double linkedSoId2; // 0xF8
 
-	// Methods
 
-	// RVA: 0xFBBB0 Offset: 0xFAFB0 VA: 0x1800FBBB0
 	public void .ctor(Vector3 _startPos, Vector3 _endPos, int _startIndex, int _endIndex, float _startFraction, float _endFraction, float _hsStart, float _hsEnd) { }
 
-	// RVA: 0xA55DE0 Offset: 0xA551E0 VA: 0x180A55DE0
 	public static ERSOSection GetERSOSection(ERModularRoad road, int listIndex, ref int index, int leftright, ref string soType, ref List<ERSOSection> sections) { }
 
-	// RVA: 0xA55B90 Offset: 0xA54F90 VA: 0x180A55B90
 	public static ERSOSection AdjustEndOffset(ERSOSection target, ERSOSection source) { }
 
 }

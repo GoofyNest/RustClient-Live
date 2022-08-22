@@ -1,8 +1,6 @@
 public enum MidiChannel // TypeDefIndex: 7640
 {
-// Namespace: MidiJack
 public enum MidiChannel // TypeDefIndex: 7640
-	// Fields
 	public int value__; // 0x0
 	public const MidiChannel Ch1 = 0;
 	public const MidiChannel Ch2 = 1;

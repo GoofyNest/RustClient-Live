@@ -1,6 +1,5 @@
 public struct WordWrapState // TypeDefIndex: 6863
-{	// Fields
-	public int previous_WordBreak; // 0x0
+{	public int previous_WordBreak; // 0x0
 	public int total_CharacterCount; // 0x4
 	public int visible_CharacterCount; // 0x8
 	public int visible_SpriteCount; // 0xC

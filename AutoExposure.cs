@@ -1,6 +1,5 @@
 public sealed class AutoExposure : PostProcessEffectSettings // TypeDefIndex: 11761
-{	// Fields
-	[MinMaxAttribute] // RVA: 0xE9EF0 Offset: 0xE92F0 VA: 0x1800E9EF0
+{	[MinMaxAttribute] // RVA: 0xE9EF0 Offset: 0xE92F0 VA: 0x1800E9EF0
 	[DisplayNameAttribute] // RVA: 0xE9EF0 Offset: 0xE92F0 VA: 0x1800E9EF0
 	[TooltipAttribute] // RVA: 0xE9EF0 Offset: 0xE92F0 VA: 0x1800E9EF0
 	public Vector2Parameter filtering; // 0x30
@@ -26,12 +25,9 @@ public sealed class AutoExposure : PostProcessEffectSettings // TypeDefIndex: 11
 	[TooltipAttribute] // RVA: 0xEA820 Offset: 0xE9C20 VA: 0x1800EA820
 	public FloatParameter speedDown; // 0x60
 
-	// Methods
 
-	// RVA: 0x9CC830 Offset: 0x9CBC30 VA: 0x1809CC830 Slot: 4
 	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-	// RVA: 0x9CC9A0 Offset: 0x9CBDA0 VA: 0x1809CC9A0
 	public void .ctor() { }
 
 }

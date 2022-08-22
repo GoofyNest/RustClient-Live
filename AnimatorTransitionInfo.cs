@@ -1,6 +1,5 @@
 public struct AnimatorTransitionInfo // TypeDefIndex: 4486
-{	// Fields
-	[NativeNameAttribute] // RVA: 0xC9960 Offset: 0xC8D60 VA: 0x1800C9960
+{	[NativeNameAttribute] // RVA: 0xC9960 Offset: 0xC8D60 VA: 0x1800C9960
 	private int m_FullPath; // 0x0
 	[NativeNameAttribute] // RVA: 0xC9B00 Offset: 0xC8F00 VA: 0x1800C9B00
 	private int m_UserName; // 0x4

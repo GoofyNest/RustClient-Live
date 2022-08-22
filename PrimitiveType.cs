@@ -1,6 +1,5 @@
 public enum PrimitiveType // TypeDefIndex: 3343
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const PrimitiveType Sphere = 0;
 	public const PrimitiveType Capsule = 1;
 	public const PrimitiveType Cylinder = 2;

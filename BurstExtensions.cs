@@ -1,8 +1,6 @@
 internal static class BurstExtensions // TypeDefIndex: 7313
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static ref T GetReadonly<T>(NativeArray<T> array, int index) { }
 	/* GenericInstMethod :
 	|
@@ -20,7 +18,6 @@ internal static class BurstExtensions // TypeDefIndex: 7313
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static ref T Get<T>(NativeArray<T> array, int index) { }
 	/* GenericInstMethod :
 	|

@@ -1,7 +1,5 @@
 internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegate // TypeDefIndex: 4305
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
@@ -13,7 +11,6 @@ internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegat
 	|-Listeners.Action<object, object, object, object, object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual void Invoke(T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
@@ -27,7 +24,6 @@ internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegat
 	|-Listeners.Action<object, object, object, object, object>.Invoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public virtual IAsyncResult BeginInvoke(T1 arg1, T2 arg2, T3 arg3, T4 arg4, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
@@ -41,7 +37,6 @@ internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegat
 	|-Listeners.Action<object, object, object, object, object>.BeginInvoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public virtual void EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
@@ -54,9 +49,7 @@ internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegat
 }
 
 internal sealed class Listeners.Func<TElem, T1, TResult> : MulticastDelegate // TypeDefIndex: 4306
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
@@ -66,7 +59,6 @@ internal sealed class Listeners.Func<TElem, T1, TResult> : MulticastDelegate // 
 	|-Listeners.Func<object, object, object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual TResult Invoke(T1 arg1) { }
 	/* GenericInstMethod :
 	|
@@ -77,7 +69,6 @@ internal sealed class Listeners.Func<TElem, T1, TResult> : MulticastDelegate // 
 	|-Listeners.Func<object, object, object>.Invoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public virtual IAsyncResult BeginInvoke(T1 arg1, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
@@ -86,7 +77,6 @@ internal sealed class Listeners.Func<TElem, T1, TResult> : MulticastDelegate // 
 	|-Listeners.Func<object, object, object>.BeginInvoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public virtual TResult EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|

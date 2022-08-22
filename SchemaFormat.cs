@@ -1,6 +1,5 @@
 internal enum SchemaFormat // TypeDefIndex: 4329
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SchemaFormat Public = 1;
 	public const SchemaFormat Remoting = 2;
 	public const SchemaFormat WebService = 3;

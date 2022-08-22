@@ -1,6 +1,5 @@
 public class MiniCopterSounds : MonoBehaviour, IClientComponent // TypeDefIndex: 8294
-{	// Fields
-	public MiniCopter miniCopter; // 0x18
+{	public MiniCopter miniCopter; // 0x18
 	public GameObject soundAttachPoint; // 0x20
 	public SoundDefinition engineStartDef; // 0x28
 	public SoundDefinition engineLoopDef; // 0x30
@@ -35,12 +34,9 @@ public class MiniCopterSounds : MonoBehaviour, IClientComponent // TypeDefIndex:
 	private bool wasOn; // 0xD9
 	private bool isStartingUp; // 0xDA
 
-	// Methods
 
-	// RVA: 0x762B80 Offset: 0x761F80 VA: 0x180762B80
 	private void Update() { }
 
-	// RVA: 0x763810 Offset: 0x762C10 VA: 0x180763810
 	public void .ctor() { }
 
 }

@@ -1,15 +1,11 @@
 public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 3325
-{	// Fields
-	private NativeArray<T> m_Array; // 0x0
+{	private NativeArray<T> m_Array; // 0x0
 	private int m_Index; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(ref NativeArray<T> array) { }
 	/* GenericInstMethod :
 	|
@@ -34,7 +30,6 @@ public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposab
 	|-NativeArray.Enumerator<Vector4>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -59,7 +54,6 @@ public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposab
 	|-NativeArray.Enumerator<Vector4>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -84,7 +78,6 @@ public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposab
 	|-NativeArray.Enumerator<Vector4>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	public void Reset() { }
 	/* GenericInstMethod :
 	|
@@ -109,7 +102,6 @@ public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposab
 	|-NativeArray.Enumerator<Vector4>.Reset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -156,7 +148,6 @@ public struct NativeArray.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposab
 	|-NativeArray.Enumerator<RaycastHit>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

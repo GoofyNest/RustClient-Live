@@ -1,6 +1,5 @@
 public enum MemberTypes // TypeDefIndex: 537
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const MemberTypes Constructor = 1;
 	public const MemberTypes Event = 2;
 	public const MemberTypes Field = 4;

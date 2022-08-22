@@ -1,21 +1,17 @@
 internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnumerable<TElement>, IEnumerable, IList<TElement>, ICollection<TElement> // TypeDefIndex: 3227
-{	// Fields
-	internal TKey key; // 0x0
+{	internal TKey key; // 0x0
 	internal int hashCode; // 0x0
 	internal TElement[] elements; // 0x0
 	internal int count; // 0x0
 	internal Lookup.Grouping<TKey, TElement> hashNext; // 0x0
 	internal Lookup.Grouping<TKey, TElement> next; // 0x0
 
-	// Properties
 	public TKey Key { get; }
 	private int System.Collections.Generic.ICollection<TElement>.Count { get; }
 	private bool System.Collections.Generic.ICollection<TElement>.IsReadOnly { get; }
 	private TElement System.Collections.Generic.IList<TElement>.Item { get; set; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void Add(TElement element) { }
 	/* GenericInstMethod :
 	|
@@ -39,7 +35,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xD0F10 Offset: 0xD0310 VA: 0x1800D0F10
-	// RVA: -1 Offset: -1 Slot: 5
 	public IEnumerator<TElement> GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -54,7 +49,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -67,7 +61,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.IEnumerable.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public TKey get_Key() { }
 	/* GenericInstMethod :
 	|
@@ -82,7 +75,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.get_Key
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	private int System.Collections.Generic.ICollection<TElement>.get_Count() { }
 	/* GenericInstMethod :
 	|
@@ -97,7 +89,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.get_Count
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	private bool System.Collections.Generic.ICollection<TElement>.get_IsReadOnly() { }
 	/* GenericInstMethod :
 	|
@@ -110,7 +101,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.get_IsReadOnly
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	private void System.Collections.Generic.ICollection<TElement>.Add(TElement item) { }
 	/* GenericInstMethod :
 	|
@@ -133,7 +123,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.Add
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 15
 	private void System.Collections.Generic.ICollection<TElement>.Clear() { }
 	/* GenericInstMethod :
 	|
@@ -156,7 +145,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.Clear
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 16
 	private bool System.Collections.Generic.ICollection<TElement>.Contains(TElement item) { }
 	/* GenericInstMethod :
 	|
@@ -175,7 +163,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.Contains
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 17
 	private void System.Collections.Generic.ICollection<TElement>.CopyTo(TElement[] array, int arrayIndex) { }
 	/* GenericInstMethod :
 	|
@@ -190,7 +177,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.CopyTo
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 18
 	private bool System.Collections.Generic.ICollection<TElement>.Remove(TElement item) { }
 	/* GenericInstMethod :
 	|
@@ -213,7 +199,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.ICollection<TElement>.Remove
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 9
 	private int System.Collections.Generic.IList<TElement>.IndexOf(TElement item) { }
 	/* GenericInstMethod :
 	|
@@ -232,7 +217,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.IList<TElement>.IndexOf
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Collections.Generic.IList<TElement>.Insert(int index, TElement item) { }
 	/* GenericInstMethod :
 	|
@@ -255,7 +239,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.IList<TElement>.Insert
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 11
 	private void System.Collections.Generic.IList<TElement>.RemoveAt(int index) { }
 	/* GenericInstMethod :
 	|
@@ -278,7 +261,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.IList<TElement>.RemoveAt
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private TElement System.Collections.Generic.IList<TElement>.get_Item(int index) { }
 	/* GenericInstMethod :
 	|
@@ -301,7 +283,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.IList<TElement>.get_Item
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.Generic.IList<TElement>.set_Item(int index, TElement value) { }
 	/* GenericInstMethod :
 	|
@@ -324,7 +305,6 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 	|-Lookup.Grouping<Vector2Int, Resolution>.System.Collections.Generic.IList<TElement>.set_Item
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -340,20 +320,16 @@ internal class Lookup.Grouping<TKey, TElement> : IGrouping<TKey, TElement>, IEnu
 }
 
 private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnumerator<TElement>, IDisposable, IEnumerator // TypeDefIndex: 3228
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TElement <>2__current; // 0x0
 	public Lookup.Grouping<TKey, TElement> <>4__this; // 0x0
 	private int <i>5__1; // 0x0
 
-	// Properties
 	private TElement System.Collections.Generic.IEnumerator<TElement>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -367,7 +343,6 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -380,7 +355,6 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	|-Lookup.Grouping.<GetEnumerator>d__7<Vector2Int, Resolution>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -400,7 +374,6 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private TElement System.Collections.Generic.IEnumerator<TElement>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -418,7 +391,6 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -442,7 +414,6 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -462,20 +433,16 @@ private sealed class Lookup.Grouping.<GetEnumerator>d__7<TKey, TElement> : IEnum
 }
 
 private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<IGrouping<TKey, TElement>>, IDisposable, IEnumerator // TypeDefIndex: 3229
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private IGrouping<TKey, TElement> <>2__current; // 0x0
 	public Lookup<TKey, TElement> <>4__this; // 0x0
 	private Lookup.Grouping<TKey, TElement> <g>5__1; // 0x0
 
-	// Properties
 	private IGrouping<TKey, TElement> System.Collections.Generic.IEnumerator<System.Linq.IGrouping<TKey,TElement>>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -489,7 +456,6 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -502,7 +468,6 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	|-Lookup.<GetEnumerator>d__12<Vector2Int, Resolution>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -518,7 +483,6 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private IGrouping<TKey, TElement> System.Collections.Generic.IEnumerator<System.Linq.IGrouping<TKey,TElement>>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -532,7 +496,6 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -556,7 +519,6 @@ private sealed class Lookup.<GetEnumerator>d__12<TKey, TElement> : IEnumerator<I
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

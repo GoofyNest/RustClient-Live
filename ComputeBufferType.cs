@@ -1,6 +1,5 @@
 public enum ComputeBufferType // TypeDefIndex: 3413
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ComputeBufferType Default = 0;
 	public const ComputeBufferType Raw = 1;
 	public const ComputeBufferType Append = 2;

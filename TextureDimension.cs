@@ -1,6 +1,5 @@
 public enum TextureDimension // TypeDefIndex: 3834
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TextureDimension Unknown = -1;
 	public const TextureDimension None = 0;
 	public const TextureDimension Any = 1;

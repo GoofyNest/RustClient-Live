@@ -1,6 +1,5 @@
 public class Antialiasing : PostEffectsBase // TypeDefIndex: 8150
-{	// Fields
-	public AAMode mode; // 0x28
+{	public AAMode mode; // 0x28
 	public bool showGeneratedNormals; // 0x2C
 	public float offsetScale; // 0x30
 	public float blurRadius; // 0x34
@@ -23,18 +22,13 @@ public class Antialiasing : PostEffectsBase // TypeDefIndex: 8150
 	public Shader shaderFXAAIII; // 0xA8
 	private Material materialFXAAIII; // 0xB0
 
-	// Methods
 
-	// RVA: 0x12BDC40 Offset: 0x12BD040 VA: 0x1812BDC40
 	public Material CurrentAAMaterial() { }
 
-	// RVA: 0x12BDAC0 Offset: 0x12BCEC0 VA: 0x1812BDAC0 Slot: 4
 	public override bool CheckResources() { }
 
-	// RVA: 0x12BDCB0 Offset: 0x12BD0B0 VA: 0x1812BDCB0
 	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-	// RVA: 0x12BE1A0 Offset: 0x12BD5A0 VA: 0x1812BE1A0
 	public void .ctor() { }
 
 }

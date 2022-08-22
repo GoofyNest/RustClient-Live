@@ -1,6 +1,5 @@
 public class ERTerrain : MonoBehaviour // TypeDefIndex: 7279
-{	// Fields
-	public List<Vector3> surfacevecs; // 0x18
+{	public List<Vector3> surfacevecs; // 0x18
 	public float[] tdataFloat; // 0x20
 	public TerrainData terrainData; // 0x28
 	public int xStart; // 0x30
@@ -35,9 +34,7 @@ public class ERTerrain : MonoBehaviour // TypeDefIndex: 7279
 	public GameObject backupObject; // 0xD8
 	public TerrainData terrain; // 0xE0
 
-	// Methods
 
-	// RVA: 0xA637E0 Offset: 0xA62BE0 VA: 0x180A637E0
 	public void .ctor() { }
 
 }

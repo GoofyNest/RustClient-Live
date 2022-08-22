@@ -1,6 +1,5 @@
 internal class RazerErrors // TypeDefIndex: 7676
-{	// Fields
-	public const int RZRESULT_INVALID = -1;
+{	public const int RZRESULT_INVALID = -1;
 	public const int RZRESULT_SUCCESS = 0;
 	public const int RZRESULT_ACCESS_DENIED = 5;
 	public const int RZRESULT_INVALID_HANDLE = 6;
@@ -20,12 +19,9 @@ internal class RazerErrors // TypeDefIndex: 7676
 	public const int RZRESULT_DLL_INVALID_SIGNATURE = 6033;
 	public const int RZRESULT_FAILED = -2147467259;
 
-	// Methods
 
-	// RVA: 0x21BAC90 Offset: 0x21BA090 VA: 0x1821BAC90
 	public static string GetResultString(int result) { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }

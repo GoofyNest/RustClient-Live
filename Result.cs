@@ -1,6 +1,5 @@
 public enum Result // TypeDefIndex: 5135
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Result None = 0;
 	public const Result OK = 1;
 	public const Result Fail = 2;
@@ -128,8 +127,7 @@ public enum Result // TypeDefIndex: 5135
 }
 
 public class Result.Entry<T> // TypeDefIndex: 6261
-{	// Fields
-	public T Content; // 0x0
+{	public T Content; // 0x0
 	public string Id; // 0x0
 	public DateTime Created; // 0x0
 	public DateTime Updated; // 0x0
@@ -137,9 +135,7 @@ public class Result.Entry<T> // TypeDefIndex: 6261
 	public string AuthorName; // 0x0
 	public string AuthType; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|

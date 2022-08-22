@@ -1,6 +1,5 @@
 public enum ThreadState // TypeDefIndex: 819
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ThreadState Running = 0;
 	public const ThreadState StopRequested = 1;
 	public const ThreadState SuspendRequested = 2;

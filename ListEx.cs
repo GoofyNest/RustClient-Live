@@ -1,8 +1,6 @@
 public static class ListEx // TypeDefIndex: 6569
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T GetRandom<T>(List<T> list) { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +10,6 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T GetRandom<T>(List<T> list, uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -21,7 +18,6 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T GetRandom<T>(List<T> list, ref uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -30,7 +26,6 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void Shuffle<T>(List<T> list, uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -40,7 +35,6 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void Shuffle<T>(List<T> list, ref uint seed) { }
 	/* GenericInstMethod :
 	|
@@ -56,7 +50,6 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void BubbleSort<T>(List<T> list) { }
 	/* GenericInstMethod :
 	|
@@ -65,7 +58,6 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void RemoveUnordered<T>(List<T> list, int index) { }
 	/* GenericInstMethod :
 	|
@@ -78,25 +70,19 @@ public static class ListEx // TypeDefIndex: 6569
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x1B9EF50 Offset: 0x1B9E350 VA: 0x181B9EF50
 	public static double TruncatedAverage(List<double> list, float pct) { }
 
 }
 
 private sealed class ListEx.<>c // TypeDefIndex: 6570
-{	// Fields
-	public static readonly ListEx.<>c <>9; // 0x0
+{	public static readonly ListEx.<>c <>9; // 0x0
 	public static Func<double, double> <>9__7_0; // 0x8
 
-	// Methods
 
-	// RVA: 0x1BAAC60 Offset: 0x1BAA060 VA: 0x181BAAC60
 	private static void .cctor() { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
-	// RVA: 0x1BAAC50 Offset: 0x1BAA050 VA: 0x181BAAC50
 	internal double <TruncatedAverage>b__7_0(double x) { }
 
 }

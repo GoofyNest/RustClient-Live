@@ -1,6 +1,5 @@
 internal enum FunctionId // TypeDefIndex: 4260
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const FunctionId none = -1;
 	public const FunctionId Ascii = 0;
 	public const FunctionId Char = 1;

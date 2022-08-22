@@ -1,6 +1,5 @@
 public struct ContactFilter2D // TypeDefIndex: 4081
-{	// Fields
-	[NativeNameAttribute] // RVA: 0x6FD60 Offset: 0x6F160 VA: 0x18006FD60
+{	[NativeNameAttribute] // RVA: 0x6FD60 Offset: 0x6F160 VA: 0x18006FD60
 	public bool useTriggers; // 0x0
 	[NativeNameAttribute] // RVA: 0x6FFF0 Offset: 0x6F3F0 VA: 0x18006FFF0
 	public bool useLayerMask; // 0x1
@@ -23,21 +22,15 @@ public struct ContactFilter2D // TypeDefIndex: 4081
 	[NativeNameAttribute] // RVA: 0x709F0 Offset: 0x6FDF0 VA: 0x1800709F0
 	public float maxNormalAngle; // 0x18
 
-	// Methods
 
-	// RVA: 0x23FE80 Offset: 0x23F280 VA: 0x18023FE80
 	private void CheckConsistency() { }
 
-	// RVA: 0x23FF10 Offset: 0x23F310 VA: 0x18023FF10
 	public void SetLayerMask(LayerMask layerMask) { }
 
-	// RVA: 0x23FEC0 Offset: 0x23F2C0 VA: 0x18023FEC0
 	public void SetDepth(float minDepth, float maxDepth) { }
 
-	// RVA: 0x230A460 Offset: 0x2309860 VA: 0x18230A460
 	internal static ContactFilter2D CreateLegacyFilter(int layerMask, float minDepth, float maxDepth) { }
 
-	// RVA: 0x230A420 Offset: 0x2309820 VA: 0x18230A420
 	private static void CheckConsistency_Injected(ref ContactFilter2D _unity_self) { }
 
 }

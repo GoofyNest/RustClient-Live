@@ -1,6 +1,5 @@
 public class SideObject : ScriptableObject // TypeDefIndex: 7189
-{	// Fields
-	public string version; // 0x18
+{	public string version; // 0x18
 	public string name; // 0x20
 	public double id; // 0x28
 	public double timestamp; // 0x30
@@ -222,54 +221,37 @@ public class SideObject : ScriptableObject // TypeDefIndex: 7189
 	public bool randomUVx; // 0x411
 	public bool isUsedAsChild; // 0x412
 
-	// Methods
 
-	// RVA: 0xB746E0 Offset: 0xB73AE0 VA: 0x180B746E0
 	public void SetSideObject(int count, int scategory) { }
 
-	// RVA: 0xB747D0 Offset: 0xB73BD0 VA: 0x180B747D0
 	public void UpdateTimeStamp() { }
 
-	// RVA: 0xB70710 Offset: 0xB6FB10 VA: 0x180B70710
 	public void OOCCDCDOQC() { }
 
-	// RVA: 0xB73DB0 Offset: 0xB731B0 VA: 0x180B73DB0
 	public void OQOQOQOODC() { }
 
-	// RVA: 0xB742E0 Offset: 0xB736E0 VA: 0x180B742E0
 	public void SetMaxVertices() { }
 
-	// RVA: 0xB6EC30 Offset: 0xB6E030 VA: 0x180B6EC30
 	public static bool CheckSOChildActive(List<ERSOSection> sections, SideObject so) { }
 
-	// RVA: 0xB718D0 Offset: 0xB70CD0 VA: 0x180B718D0
 	public void OOOCDOQOOC(bool updateTimeStamp) { }
 
-	// RVA: 0xB734D0 Offset: 0xB728D0 VA: 0x180B734D0
 	public void OQDODCOODC() { }
 
-	// RVA: 0xB71CE0 Offset: 0xB710E0 VA: 0x180B71CE0
 	public void OQDDDDOOQD(Vector3 m_testMeshPos, bool updateTimeStamp) { }
 
-	// RVA: 0xB73960 Offset: 0xB72D60 VA: 0x180B73960
 	private void OQOODQQQQC(List<Vector3> vecs, float startDistance, List<Vector3> vecs1, float endDistance, ref List<int> startArray, ref List<int> endArray, int section) { }
 
-	// RVA: 0xB73FF0 Offset: 0xB733F0 VA: 0x180B73FF0
 	private float OQQDDOCDDQ(List<GameObject> goObjects, bool rotate180) { }
 
-	// RVA: 0xB6F0E0 Offset: 0xB6E4E0 VA: 0x180B6F0E0
 	private bool HasMissingData(ERMesh meshData, ERMesh meshData2, int ignore) { }
 
-	// RVA: 0xB709D0 Offset: 0xB6FDD0 VA: 0x180B709D0
 	public void OODOOOQQCO(SideObject so) { }
 
-	// RVA: 0xB6F830 Offset: 0xB6EC30 VA: 0x180B6F830
 	public void OCDOCDQQQO(SideObjectLog so) { }
 
-	// RVA: 0xB6F030 Offset: 0xB6E430 VA: 0x180B6F030
 	public void Clear() { }
 
-	// RVA: 0xB74870 Offset: 0xB73C70 VA: 0x180B74870
 	public void .ctor() { }
 
 }

@@ -1,6 +1,5 @@
 public enum TextureWrapMode // TypeDefIndex: 3425
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TextureWrapMode Repeat = 0;
 	public const TextureWrapMode Clamp = 1;
 	public const TextureWrapMode Mirror = 2;

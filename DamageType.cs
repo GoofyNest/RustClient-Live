@@ -1,6 +1,5 @@
 public enum DamageType // TypeDefIndex: 12026
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DamageType Generic = 0;
 	public const DamageType Hunger = 1;
 	public const DamageType Thirst = 2;

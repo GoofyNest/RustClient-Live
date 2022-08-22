@@ -1,11 +1,8 @@
 private sealed class IdentityFunction.<>c<TElement> // TypeDefIndex: 3223
-{	// Fields
-	public static readonly IdentityFunction.<>c<TElement> <>9; // 0x0
+{	public static readonly IdentityFunction.<>c<TElement> <>9; // 0x0
 	public static Func<TElement, TElement> <>9__1_0; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -15,7 +12,6 @@ private sealed class IdentityFunction.<>c<TElement> // TypeDefIndex: 3223
 	|-IdentityFunction.<>c<Resolution>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -25,7 +21,6 @@ private sealed class IdentityFunction.<>c<TElement> // TypeDefIndex: 3223
 	|-IdentityFunction.<>c<Resolution>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal TElement <get_Instance>b__1_0(TElement x) { }
 	/* GenericInstMethod :
 	|

@@ -1,8 +1,6 @@
 public enum Mouse.RZLED // TypeDefIndex: 7656
 {
-// Namespace: 
 public enum Mouse.RZLED // TypeDefIndex: 7656
-	// Fields
 	public int value__; // 0x0
 	public const Mouse.RZLED RZLED_NONE = 0;
 	public const Mouse.RZLED RZLED_SCROLLWHEEL = 1;
@@ -27,8 +25,7 @@ public enum Mouse.RZLED // TypeDefIndex: 7656
 }
 
 public enum Mouse.EFFECT_TYPE // TypeDefIndex: 7657
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Mouse.EFFECT_TYPE CHROMA_NONE = 0;
 	public const Mouse.EFFECT_TYPE CHROMA_BLINKING = 1;
 	public const Mouse.EFFECT_TYPE CHROMA_BREATHING = 2;
@@ -43,8 +40,7 @@ public enum Mouse.EFFECT_TYPE // TypeDefIndex: 7657
 }
 
 public struct Mouse.STATIC_EFFECT_TYPE // TypeDefIndex: 7658
-{	// Fields
-	public Mouse.RZLED LEDId; // 0x0
+{	public Mouse.RZLED LEDId; // 0x0
 	public int Color; // 0x4
 
 }

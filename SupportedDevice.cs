@@ -1,6 +1,5 @@
 public enum SupportedDevice // TypeDefIndex: 7671
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SupportedDevice None = 0;
 	public const SupportedDevice Keyboard = 1;
 	public const SupportedDevice Mouse = 2;

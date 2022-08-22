@@ -1,6 +1,5 @@
 public enum DayOfWeek // TypeDefIndex: 200
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DayOfWeek Sunday = 0;
 	public const DayOfWeek Monday = 1;
 	public const DayOfWeek Tuesday = 2;

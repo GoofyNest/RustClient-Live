@@ -1,6 +1,5 @@
 internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
-{	// Fields
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private T <Item>k__BackingField; // 0x0
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private SortedSet.Node<T> <Left>k__BackingField; // 0x0
@@ -9,7 +8,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private NodeColor <Color>k__BackingField; // 0x0
 
-	// Properties
 	public T Item { get; set; }
 	public SortedSet.Node<T> Left { get; set; }
 	public SortedSet.Node<T> Right { get; set; }
@@ -19,9 +17,7 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	public bool Is2Node { get; }
 	public bool Is4Node { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(T item, NodeColor color) { }
 	/* GenericInstMethod :
 	|
@@ -33,7 +29,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool IsNonNullRed(SortedSet.Node<T> node) { }
 	/* GenericInstMethod :
 	|
@@ -43,7 +38,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.IsNonNullRed
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool IsNullOrBlack(SortedSet.Node<T> node) { }
 	/* GenericInstMethod :
 	|
@@ -54,7 +48,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public T get_Item() { }
 	/* GenericInstMethod :
 	|
@@ -67,7 +60,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void set_Item(T value) { }
 	/* GenericInstMethod :
 	|
@@ -82,7 +74,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> get_Left() { }
 	/* GenericInstMethod :
 	|
@@ -95,7 +86,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void set_Left(SortedSet.Node<T> value) { }
 	/* GenericInstMethod :
 	|
@@ -108,7 +98,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> get_Right() { }
 	/* GenericInstMethod :
 	|
@@ -121,7 +110,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void set_Right(SortedSet.Node<T> value) { }
 	/* GenericInstMethod :
 	|
@@ -134,7 +122,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public NodeColor get_Color() { }
 	/* GenericInstMethod :
 	|
@@ -147,7 +134,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	*/
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void set_Color(NodeColor value) { }
 	/* GenericInstMethod :
 	|
@@ -159,7 +145,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.set_Color
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool get_IsBlack() { }
 	/* GenericInstMethod :
 	|
@@ -169,7 +154,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_IsBlack
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool get_IsRed() { }
 	/* GenericInstMethod :
 	|
@@ -179,7 +163,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_IsRed
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool get_Is2Node() { }
 	/* GenericInstMethod :
 	|
@@ -189,7 +172,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_Is2Node
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool get_Is4Node() { }
 	/* GenericInstMethod :
 	|
@@ -199,7 +181,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.get_Is4Node
 	*/
 
-	// RVA: -1 Offset: -1
 	public void ColorBlack() { }
 	/* GenericInstMethod :
 	|
@@ -209,7 +190,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.ColorBlack
 	*/
 
-	// RVA: -1 Offset: -1
 	public void ColorRed() { }
 	/* GenericInstMethod :
 	|
@@ -219,7 +199,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.ColorRed
 	*/
 
-	// RVA: -1 Offset: -1
 	public TreeRotation GetRotation(SortedSet.Node<T> current, SortedSet.Node<T> sibling) { }
 	/* GenericInstMethod :
 	|
@@ -229,7 +208,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.GetRotation
 	*/
 
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> GetSibling(SortedSet.Node<T> node) { }
 	/* GenericInstMethod :
 	|
@@ -239,7 +217,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.GetSibling
 	*/
 
-	// RVA: -1 Offset: -1
 	public void Split4Node() { }
 	/* GenericInstMethod :
 	|
@@ -249,7 +226,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.Split4Node
 	*/
 
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> Rotate(TreeRotation rotation) { }
 	/* GenericInstMethod :
 	|
@@ -259,7 +235,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.Rotate
 	*/
 
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> RotateLeft() { }
 	/* GenericInstMethod :
 	|
@@ -269,7 +244,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.RotateLeft
 	*/
 
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> RotateLeftRight() { }
 	/* GenericInstMethod :
 	|
@@ -279,7 +253,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.RotateLeftRight
 	*/
 
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> RotateRight() { }
 	/* GenericInstMethod :
 	|
@@ -289,7 +262,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.RotateRight
 	*/
 
-	// RVA: -1 Offset: -1
 	public SortedSet.Node<T> RotateRightLeft() { }
 	/* GenericInstMethod :
 	|
@@ -299,7 +271,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.RotateRightLeft
 	*/
 
-	// RVA: -1 Offset: -1
 	public void Merge2Nodes() { }
 	/* GenericInstMethod :
 	|
@@ -309,7 +280,6 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 	|-SortedSet.Node<object>.Merge2Nodes
 	*/
 
-	// RVA: -1 Offset: -1
 	public void ReplaceChild(SortedSet.Node<T> child, SortedSet.Node<T> newChild) { }
 	/* GenericInstMethod :
 	|
@@ -322,22 +292,18 @@ internal sealed class SortedSet.Node<T> // TypeDefIndex: 3144
 }
 
 public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator, ISerializable, IDeserializationCallback // TypeDefIndex: 3145
-{	// Fields
-	private static readonly SortedSet.Node<T> s_dummyNode; // 0x0
+{	private static readonly SortedSet.Node<T> s_dummyNode; // 0x0
 	private SortedSet<T> _tree; // 0x0
 	private int _version; // 0x0
 	private Stack<SortedSet.Node<T>> _stack; // 0x0
 	private SortedSet.Node<T> _current; // 0x0
 	private bool _reverse; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 	internal bool NotStartedOrEnded { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(SortedSet<T> set) { }
 	/* GenericInstMethod :
 	|
@@ -349,7 +315,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(SortedSet<T> set, bool reverse) { }
 	/* GenericInstMethod :
 	|
@@ -361,7 +326,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 9
 	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 	/* GenericInstMethod :
 	|
@@ -375,7 +339,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.System.Runtime.Serialization.ISerializable.GetObjectData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
 	/* GenericInstMethod :
 	|
@@ -389,7 +352,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.System.Runtime.Serialization.IDeserializationCallback.OnDeserialization
 	*/
 
-	// RVA: -1 Offset: -1
 	private void Initialize() { }
 	/* GenericInstMethod :
 	|
@@ -401,7 +363,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.Initialize
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -415,7 +376,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -425,7 +385,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -437,7 +396,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -451,7 +409,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool get_NotStartedOrEnded() { }
 	/* GenericInstMethod :
 	|
@@ -461,7 +418,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.get_NotStartedOrEnded
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void Reset() { }
 	/* GenericInstMethod :
 	|
@@ -475,7 +431,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.Reset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -489,7 +444,6 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 	|-SortedSet.Enumerator<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -504,14 +458,11 @@ public struct SortedSet.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator
 }
 
 private sealed class SortedSet.<>c__DisplayClass52_0<T> // TypeDefIndex: 3146
-{	// Fields
-	public int index; // 0x0
+{	public int index; // 0x0
 	public int count; // 0x0
 	public T[] array; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -521,7 +472,6 @@ private sealed class SortedSet.<>c__DisplayClass52_0<T> // TypeDefIndex: 3146
 	|-SortedSet.<>c__DisplayClass52_0<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool <CopyTo>b__0(SortedSet.Node<T> node) { }
 	/* GenericInstMethod :
 	|
@@ -538,12 +488,9 @@ private sealed class SortedSet.<>c__DisplayClass52_0<T> // TypeDefIndex: 3146
 }
 
 private sealed class SortedSet.<>c__DisplayClass53_0<T> // TypeDefIndex: 3147
-{	// Fields
-	public int index; // 0x0
+{	public int index; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -556,13 +503,10 @@ private sealed class SortedSet.<>c__DisplayClass53_0<T> // TypeDefIndex: 3147
 }
 
 private sealed class SortedSet.<>c__DisplayClass53_1<T> // TypeDefIndex: 3148
-{	// Fields
-	public object[] objects; // 0x0
+{	public object[] objects; // 0x0
 	public SortedSet.<>c__DisplayClass53_0<T> CS$<>8__locals1; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -572,7 +516,6 @@ private sealed class SortedSet.<>c__DisplayClass53_1<T> // TypeDefIndex: 3148
 	|-SortedSet.<>c__DisplayClass53_1<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal bool <System.Collections.ICollection.CopyTo>b__0(SortedSet.Node<T> node) { }
 	/* GenericInstMethod :
 	|

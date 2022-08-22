@@ -1,6 +1,5 @@
 public enum ColorWriteMask // TypeDefIndex: 3812
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ColorWriteMask Alpha = 1;
 	public const ColorWriteMask Blue = 2;
 	public const ColorWriteMask Green = 4;

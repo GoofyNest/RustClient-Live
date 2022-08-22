@@ -1,6 +1,5 @@
 public enum RenderQueue // TypeDefIndex: 11542
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const RenderQueue Custom = 0;
 	public const RenderQueue Background = 1000;
 	public const RenderQueue Geometry = 2000;

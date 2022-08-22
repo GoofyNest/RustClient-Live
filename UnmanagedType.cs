@@ -1,6 +1,5 @@
 public enum UnmanagedType // TypeDefIndex: 1329
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const UnmanagedType Bool = 2;
 	public const UnmanagedType I1 = 3;
 	public const UnmanagedType U1 = 4;

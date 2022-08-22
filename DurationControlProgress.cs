@@ -1,6 +1,5 @@
 public enum DurationControlProgress // TypeDefIndex: 5143
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DurationControlProgress Progress_Full = 0;
 	public const DurationControlProgress Progress_Half = 1;
 	public const DurationControlProgress Progress_None = 2;

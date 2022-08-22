@@ -1,6 +1,5 @@
 internal enum ReadType // TypeDefIndex: 5893
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ReadType Read = 0;
 	public const ReadType ReadAsInt32 = 1;
 	public const ReadType ReadAsBytes = 2;

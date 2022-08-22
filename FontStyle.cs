@@ -1,8 +1,6 @@
 public enum FontStyle // TypeDefIndex: 3949
 {
-// Namespace: UnityEngine
 public enum FontStyle // TypeDefIndex: 3949
-	// Fields
 	public int value__; // 0x0
 	public const FontStyle Normal = 0;
 	public const FontStyle Bold = 1;

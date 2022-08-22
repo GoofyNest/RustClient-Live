@@ -1,6 +1,5 @@
 public enum NotifyFilters // TypeDefIndex: 2851
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const NotifyFilters Attributes = 4;
 	public const NotifyFilters CreationTime = 64;
 	public const NotifyFilters DirectoryName = 2;

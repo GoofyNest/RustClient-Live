@@ -1,15 +1,11 @@
 public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4795
-{	// Fields
-	private readonly BufferList<T> list; // 0x0
+{	private readonly BufferList<T> list; // 0x0
 	private int index; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(BufferList<T> list) { }
 	/* GenericInstMethod :
 	|
@@ -27,7 +23,6 @@ public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposabl
 	|-BufferList.Enumerator<ViewModelDrawEvent>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -47,7 +42,6 @@ public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposabl
 	|-BufferList.Enumerator<ViewModelDrawEvent>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	public void Reset() { }
 	/* GenericInstMethod :
 	|
@@ -65,7 +59,6 @@ public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposabl
 	|-BufferList.Enumerator<ViewModelDrawEvent>.Reset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -93,7 +86,6 @@ public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposabl
 	|-BufferList.Enumerator<ViewModelDrawEvent>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -125,7 +117,6 @@ public struct BufferList.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposabl
 	|-BufferList.Enumerator<ViewModelDrawEvent>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|

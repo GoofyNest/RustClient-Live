@@ -1,8 +1,6 @@
 public static class ComponentEx // TypeDefIndex: 11694
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T Instantiate<T>(T component) { }
 	/* GenericInstMethod :
 	|
@@ -11,7 +9,6 @@ public static class ComponentEx // TypeDefIndex: 11694
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool HasComponent<T>(Component component) { }
 	/* GenericInstMethod :
 	|

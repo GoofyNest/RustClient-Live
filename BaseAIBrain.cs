@@ -1,7 +1,5 @@
 public class BaseAIBrain.BasicAIState<T> // TypeDefIndex: 8491
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|

@@ -1,6 +1,5 @@
 internal enum DTSubStringType // TypeDefIndex: 232
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DTSubStringType Unknown = 0;
 	public const DTSubStringType Invalid = 1;
 	public const DTSubStringType Number = 2;

@@ -1,6 +1,5 @@
 public class CargoShip : BaseEntity // TypeDefIndex: 8287
-{	// Fields
-	public int targetNodeIndex; // 0x168
+{	public int targetNodeIndex; // 0x168
 	public GameObject wakeParent; // 0x170
 	public GameObjectRef scientistTurretPrefab; // 0x178
 	public Transform[] scientistSpawnPoints; // 0x180
@@ -29,34 +28,24 @@ public class CargoShip : BaseEntity // TypeDefIndex: 8287
 	private TimeSince timeSinceUpdatedSounds; // 0x234
 	private const float updateRateDistSq = 10000;
 
-	// Methods
 
-	// RVA: 0x545740 Offset: 0x544B40 VA: 0x180545740 Slot: 34
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	// RVA: 0x545C90 Offset: 0x545090 VA: 0x180545C90
 	public void RefreshActiveLayout() { }
 
-	// RVA: 0x545D20 Offset: 0x545120 VA: 0x180545D20
 	public void Update() { }
 
-	// RVA: 0x545590 Offset: 0x544990 VA: 0x180545590 Slot: 14
 	protected override void ClientInit(Entity info) { }
 
-	// RVA: 0x545C00 Offset: 0x545000 VA: 0x180545C00 Slot: 16
 	public override void PostNetworkUpdate() { }
 
 	[BaseEntity.RPC_Client] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x545700 Offset: 0x544B00 VA: 0x180545700
 	public void DoHornSound(BaseEntity.RPCMessage msg) { }
 
-	// RVA: 0x4D1BF0 Offset: 0x4D0FF0 VA: 0x1804D1BF0 Slot: 129
 	public override bool SupportsChildDeployables() { }
 
-	// RVA: 0x5457A0 Offset: 0x544BA0 VA: 0x1805457A0 Slot: 35
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	// RVA: 0x545EC0 Offset: 0x5452C0 VA: 0x180545EC0
 	public void .ctor() { }
 
 }

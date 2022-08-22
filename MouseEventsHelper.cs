@@ -1,7 +1,5 @@
 internal static class MouseEventsHelper // TypeDefIndex: 4682
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	internal static void SendEnterLeave<TLeaveEvent, TEnterEvent>(VisualElement previousTopElementUnderMouse, VisualElement currentTopElementUnderMouse, IMouseEvent triggerEvent, Vector2 mousePosition) { }
 	/* GenericInstMethod :
 	|
@@ -11,7 +9,6 @@ internal static class MouseEventsHelper // TypeDefIndex: 4682
 	|-MouseEventsHelper.SendEnterLeave<MouseLeaveEvent, MouseEnterEvent>
 	*/
 
-	// RVA: 0xEC7FF0 Offset: 0xEC73F0 VA: 0x180EC7FF0
 	internal static void SendMouseOverMouseOut(VisualElement previousTopElementUnderMouse, VisualElement currentTopElementUnderMouse, IMouseEvent triggerEvent, Vector2 mousePosition) { }
 
 }

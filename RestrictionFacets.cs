@@ -1,6 +1,5 @@
 internal class RestrictionFacets // TypeDefIndex: 2178
-{	// Fields
-	internal int Length; // 0x10
+{	internal int Length; // 0x10
 	internal int MinLength; // 0x14
 	internal int MaxLength; // 0x18
 	internal ArrayList Patterns; // 0x20
@@ -15,9 +14,7 @@ internal class RestrictionFacets // TypeDefIndex: 2178
 	internal RestrictionFlags Flags; // 0x60
 	internal RestrictionFlags FixedFlags; // 0x64
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }

@@ -1,6 +1,5 @@
 public class MLRSMainUI : MonoBehaviour // TypeDefIndex: 9723
-{	// Fields
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private bool isFullscreen; // 0x18
 	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private GameObject noAimingModuleModeGO; // 0x20
@@ -57,37 +56,26 @@ public class MLRSMainUI : MonoBehaviour // TypeDefIndex: 9723
 	private float lastReadyToFireSoundPlayed; // 0x100
 	private float readyToFireSoundInterval; // 0x104
 
-	// Methods
 
-	// RVA: 0x56CC10 Offset: 0x56C010 VA: 0x18056CC10
 	public void Init(MLRS mlrs) { }
 
-	// RVA: 0x56D510 Offset: 0x56C910 VA: 0x18056D510
 	protected void Start() { }
 
-	// RVA: 0x56D430 Offset: 0x56C830 VA: 0x18056D430
 	protected void OnDisable() { }
 
-	// RVA: 0x56D6A0 Offset: 0x56CAA0 VA: 0x18056D6A0
 	protected void Update() { }
 
-	// RVA: 0x56CBF0 Offset: 0x56BFF0 VA: 0x18056CBF0
 	public string GetTitleText() { }
 
-	// RVA: 0x56D4F0 Offset: 0x56C8F0 VA: 0x18056D4F0
 	public void SetTitleText(string text) { }
 
-	// RVA: 0x56CB80 Offset: 0x56BF80 VA: 0x18056CB80
 	public void CentreMap() { }
 
-	// RVA: 0x56C3A0 Offset: 0x56B7A0 VA: 0x18056C3A0
 	private void ActiveUIUpdateTick() { }
 
-	// RVA: 0x56D950 Offset: 0x56CD50 VA: 0x18056D950
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x56D5A0 Offset: 0x56C9A0 VA: 0x18056D5A0
 	private bool <ActiveUIUpdateTick>g__MouseIsOverTheMap|39_0() { }
 
 }

@@ -1,6 +1,5 @@
 public enum AAMode // TypeDefIndex: 8149
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const AAMode FXAA2 = 0;
 	public const AAMode FXAA3Console = 1;
 	public const AAMode FXAA1PresetA = 2;

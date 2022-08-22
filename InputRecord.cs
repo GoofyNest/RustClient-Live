@@ -1,6 +1,5 @@
 internal struct InputRecord // TypeDefIndex: 423
-{	// Fields
-	public short EventType; // 0x0
+{	public short EventType; // 0x0
 	public bool KeyDown; // 0x2
 	public short RepeatCount; // 0x4
 	public short VirtualKeyCode; // 0x6

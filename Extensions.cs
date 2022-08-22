@@ -1,8 +1,6 @@
 public static class Extensions // TypeDefIndex: 6047
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static U Value<U>(IEnumerable<JToken> value) { }
 	/* GenericInstMethod :
 	|
@@ -13,7 +11,6 @@ public static class Extensions // TypeDefIndex: 6047
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static U Value<T, U>(IEnumerable<T> value) { }
 	/* GenericInstMethod :
 	|
@@ -25,7 +22,6 @@ public static class Extensions // TypeDefIndex: 6047
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	internal static U Convert<T, U>(T token) { }
 	/* GenericInstMethod :
 	|
@@ -39,12 +35,9 @@ public static class Extensions // TypeDefIndex: 6047
 }
 
 private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6048
-{	// Fields
-	public static readonly Extensions.<>c__0<T> <>9; // 0x0
+{	public static readonly Extensions.<>c__0<T> <>9; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -52,7 +45,6 @@ private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6048
 	|-Extensions.<>c__0<object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -63,12 +55,9 @@ private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6048
 }
 
 private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6049
-{	// Fields
-	public static readonly Extensions.<>c__1<T> <>9; // 0x0
+{	public static readonly Extensions.<>c__1<T> <>9; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -76,7 +65,6 @@ private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6049
 	|-Extensions.<>c__1<object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -87,12 +75,9 @@ private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6049
 }
 
 private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6050
-{	// Fields
-	public static readonly Extensions.<>c__2<T> <>9; // 0x0
+{	public static readonly Extensions.<>c__2<T> <>9; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -100,7 +85,6 @@ private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6050
 	|-Extensions.<>c__2<object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -111,12 +95,9 @@ private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6050
 }
 
 private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6051
-{	// Fields
-	public static readonly Extensions.<>c__3<T> <>9; // 0x0
+{	public static readonly Extensions.<>c__3<T> <>9; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -124,7 +105,6 @@ private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6051
 	|-Extensions.<>c__3<object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -135,31 +115,23 @@ private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6051
 }
 
 private sealed class Extensions.<>c // TypeDefIndex: 6052
-{	// Fields
-	public static readonly Extensions.<>c <>9; // 0x27DD
+{	public static readonly Extensions.<>c <>9; // 0x27DD
 
-	// Methods
 
-	// RVA: 0xE47B20 Offset: 0xE46F20 VA: 0x180E47B20
 	private static void .cctor() { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }
 
 private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6054
 {
-// Namespace: 
 [CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 [Serializable]
 private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6054
-	// Fields
 	public static readonly Extensions.<>c__13<T, U> <>9; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -167,7 +139,6 @@ private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6054
 	|-Extensions.<>c__13<object, object>..cctor
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -178,10 +149,8 @@ private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6054
 }
 
 public static class Extensions // TypeDefIndex: 8137
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T Pop<T>(List<T> list) { }
 	/* GenericInstMethod :
 	|
@@ -196,10 +165,8 @@ public static class Extensions // TypeDefIndex: 8137
 }
 
 public static class Extensions // TypeDefIndex: 11568
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static bool AnyOfType<TSource>(IEnumerable<TSource> source, Type expectedType) { }
 	/* GenericInstMethod :
 	|

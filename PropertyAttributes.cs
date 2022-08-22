@@ -1,6 +1,5 @@
 public enum PropertyAttributes // TypeDefIndex: 547
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const PropertyAttributes None = 0;
 	public const PropertyAttributes SpecialName = 512;
 	public const PropertyAttributes ReservedMask = 62464;

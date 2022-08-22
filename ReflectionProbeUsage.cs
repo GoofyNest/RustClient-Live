@@ -1,6 +1,5 @@
 public enum ReflectionProbeUsage // TypeDefIndex: 3825
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ReflectionProbeUsage Off = 0;
 	public const ReflectionProbeUsage BlendProbes = 1;
 	public const ReflectionProbeUsage BlendProbesAndSkybox = 2;

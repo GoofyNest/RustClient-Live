@@ -1,6 +1,5 @@
 public enum MapLayer // TypeDefIndex: 10950
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const MapLayer Overworld = -1;
 	public const MapLayer TrainTunnels = 0;
 	public const MapLayer Underwater1 = 1;

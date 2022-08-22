@@ -1,6 +1,5 @@
 internal enum InternalParseTypeE // TypeDefIndex: 1095
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const InternalParseTypeE Empty = 0;
 	public const InternalParseTypeE SerializedStreamHeader = 1;
 	public const InternalParseTypeE Object = 2;

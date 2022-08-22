@@ -1,6 +1,5 @@
 public class SoundClass : ScriptableObject // TypeDefIndex: 9024
-{	// Fields
-	[HeaderAttribute] // RVA: 0xCD5F0 Offset: 0xCC9F0 VA: 0x1800CD5F0
+{	[HeaderAttribute] // RVA: 0xCD5F0 Offset: 0xCC9F0 VA: 0x1800CD5F0
 	public AudioMixerGroup output; // 0x18
 	public AudioMixerGroup firstPersonOutput; // 0x20
 	[HeaderAttribute] // RVA: 0xCD6A0 Offset: 0xCCAA0 VA: 0x1800CD6A0
@@ -14,9 +13,7 @@ public class SoundClass : ScriptableObject // TypeDefIndex: 9024
 	public int priority; // 0x3C
 	public List<SoundDefinition> definitions; // 0x40
 
-	// Methods
 
-	// RVA: 0xA70140 Offset: 0xA6F540 VA: 0x180A70140
 	public void .ctor() { }
 
 }

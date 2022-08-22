@@ -1,6 +1,5 @@
 public class ERModularRoad : MonoBehaviour // TypeDefIndex: 7178
-{	// Fields
-	public ERModularBase baseScript; // 0x18
+{	public ERModularBase baseScript; // 0x18
 	public string roadName; // 0x20
 	public bool locked; // 0x28
 	public double roadType; // 0x30
@@ -261,177 +260,119 @@ public class ERModularRoad : MonoBehaviour // TypeDefIndex: 7178
 	public bool oneWayRoad; // 0x6E8
 	public ERLaneDirection oneWayDirection; // 0x6EC
 
-	// Methods
 
-	// RVA: 0x486C60 Offset: 0x486060 VA: 0x180486C60
 	public bool ODDQCOCDQQ(ERCrossingPrefabs prefabScript) { }
 
-	// RVA: 0x4874A0 Offset: 0x4868A0 VA: 0x1804874A0
 	public void ODQCQCDCDQ(List<ERDecal> decalPresets) { }
 
-	// RVA: 0x4898F0 Offset: 0x488CF0 VA: 0x1804898F0
 	public void OOQOCCOOOD() { }
 
-	// RVA: 0x46CF10 Offset: 0x46C310 VA: 0x18046CF10
 	public float GetRoadWidth() { }
 
-	// RVA: 0x495290 Offset: 0x494690 VA: 0x180495290
 	public void OQQOCOQDCQ(Vector3 pos) { }
 
-	// RVA: 0x46FAF0 Offset: 0x46EEF0 VA: 0x18046FAF0
 	public int OCDQCCCDCC(Vector3 pos) { }
 
-	// RVA: 0x46BB00 Offset: 0x46AF00 VA: 0x18046BB00
 	public void GetInsertPointExt(Vector3 pos, ref int n1, int marker) { }
 
-	// RVA: 0x470060 Offset: 0x46F460 VA: 0x180470060
 	public void OCOOCCODDD(Vector3 pos, ref int n1) { }
 
-	// RVA: 0x4892F0 Offset: 0x4886F0 VA: 0x1804892F0
 	public void OOODDDDQQO(Vector3 pos, ref int n1, int selectedMarker, bool sameRoad) { }
 
-	// RVA: 0x489DB0 Offset: 0x4891B0 VA: 0x180489DB0
 	public int OQCCQDDOQD(Vector3 pos) { }
 
-	// RVA: 0x4887B0 Offset: 0x487BB0 VA: 0x1804887B0
 	public int OOCDODCOOD(Vector3 pos, int selectedMarker) { }
 
-	// RVA: 0x46DC20 Offset: 0x46D020 VA: 0x18046DC20
 	public int HandleAddMarkerAtStart(Vector3 pos, int selectedMarker) { }
 
-	// RVA: 0x486C40 Offset: 0x486040 VA: 0x180486C40
 	public void ODDDCDQCCO(ERCrossingPrefabs ODCQDOOOCC, int targetElement, bool reverse, bool uvReverse, bool UpdateResolutionFlag) { }
 
-	// RVA: 0x488BC0 Offset: 0x487FC0 VA: 0x180488BC0
 	public void OOOCDCQQCO(bool ignorePrefabAlignment, int selectedMarker) { }
 
-	// RVA: 0x495410 Offset: 0x494810 VA: 0x180495410
 	public void PrintRoadShape(List<Vector2> lst) { }
 
-	// RVA: 0x470A80 Offset: 0x46FE80 VA: 0x180470A80
 	public void OCQOQCDCQC(bool ignorePrefabAlignment, bool forceAutoRotate) { }
 
-	// RVA: 0x46FC40 Offset: 0x46F040 VA: 0x18046FC40
 	private void OCODCOOQOC(ref List<Vector3> vecs, ref List<Vector2> uvs, ref List<Vector2> uvs2, int cols, ref int addedRows, ref List<bool> isPlanar, ref List<Color> colors, ref float uv, ref float uv4) { }
 
-	// RVA: 0x46F350 Offset: 0x46E750 VA: 0x18046F350
 	public void OCDCOOQOQD(Mesh m) { }
 
-	// RVA: 0x494D50 Offset: 0x494150 VA: 0x180494D50
 	public void OQOOOOOOCQ(ERDecal decal, ref GameObject decalPrefab, string name) { }
 
-	// RVA: 0x486C30 Offset: 0x486030 VA: 0x180486C30
 	public float ODCDOQOOOO(ERDecal decal, float roadWidth) { }
 
-	// RVA: 0x488BD0 Offset: 0x487FD0 VA: 0x180488BD0
 	public void OOOCOODQCO(string type) { }
 
-	// RVA: 0x494020 Offset: 0x493420 VA: 0x180494020
 	public void OQOCCDCCDD(GameObject decal, int index) { }
 
-	// RVA: 0x46F5E0 Offset: 0x46E9E0 VA: 0x18046F5E0
 	public float OCDDDDQDQQ(int startEnd) { }
 
-	// RVA: 0x46B050 Offset: 0x46A450 VA: 0x18046B050
 	public Vector3[] AdjustNormals(Vector3[] normals) { }
 
-	// RVA: 0x46B200 Offset: 0x46A600 VA: 0x18046B200
 	public void AdjustPrefabNormals(List<int> roadInts, List<int> prefabInts, Vector3[] normals, GameObject prefab, Vector3[] verts) { }
 
-	// RVA: 0x48A390 Offset: 0x489790 VA: 0x18048A390
 	public bool OQCDCDOOCD(Vector3 pTarget, Vector3 pSource, Vector3 pCheck) { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	public void OODCOQOQOD(ref List<Vector3> surfaceVecs, ERCrossingPrefabs prefabScript, ref bool startSurfacesSafe, float distance, float minIndent) { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	public void ODOCCQDCQO(ref List<Vector3> surfaceVecs, ERCrossingPrefabs prefabScript, int el, ref bool surfacesSafe, float distance, float minIndent) { }
 
-	// RVA: 0x48A4F0 Offset: 0x4898F0 VA: 0x18048A4F0
 	public bool OQCODQODCO(Vector3 ODCQDOOOCCIndent, Vector3 otherPrefabIndent, Vector3 v) { }
 
-	// RVA: 0x4842C0 Offset: 0x4836C0 VA: 0x1804842C0
 	public void OCQOQQCDOD(List<Vector3> surfaceVecs, List<Vector2> uvs, int h, List<bool> doBridge, Vector3 firstDir, Vector3 lastDir, float indent, float surrounding, List<bool> tunnelSegments) { }
 
-	// RVA: 0x46DD00 Offset: 0x46D100 VA: 0x18046DD00
 	public void InterpolateSurfaces(ref List<Vector3> surfaceVecs, ref List<Vector2> uvs, ref List<int> tris, Vector3 dir, int vecCount, int startEnd, float indent, float surrounding) { }
 
-	// RVA: 0x487F40 Offset: 0x487340 VA: 0x180487F40
 	public void OOCCDCDCQD() { }
 
-	// RVA: 0x48A500 Offset: 0x489900 VA: 0x18048A500
 	public List<Vector3> OQDDOOOOQD(List<ERMarkerExt> markersExt, float faceDist, bool ignorePrefabAlignment, ref List<float> tValues, ref List<float> markerDistances, bool forceAutoRotate, ref List<float> rotationArray, ref List<float> bendAngles) { }
 
-	// RVA: 0x470270 Offset: 0x46F670 VA: 0x180470270
 	public void OCQOOCCQDD(List<ERMarkerExt> tmpMarkers, int j, Vector3[] tr, Vector3 circleDir, float totalDist, ref Vector3 startCP, int startMarker, List<Vector3> p) { }
 
-	// RVA: 0x493590 Offset: 0x492990 VA: 0x180493590
 	public void OQDOQOCDDQ(List<ERMarkerExt> tmpMarkersExt, int j, Vector3[] tr, ref Vector3 endCP, int startMarker) { }
 
-	// RVA: 0x488460 Offset: 0x487860 VA: 0x180488460
 	public void OOCCQCCDQC(ref Vector3 endCP, Vector3 curV3, Vector3 nextV3, Vector3 nextNextV3) { }
 
-	// RVA: 0x492820 Offset: 0x491C20 VA: 0x180492820
 	public List<float> OQDOOOQODD(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, ref List<float> OQQOODQCCC, List<float> randomRotations) { }
 
-	// RVA: 0x495720 Offset: 0x494B20 VA: 0x180495720
 	public void RoadSmoothness(float curDist, ERMarkerExt marker, float totalDistance, ref float randomYDistanceStart, ref float randomYDistanceEnd, ref float randomYDistanceMiddle, ref Vector3 randomYDistanceV3, ref Vector3 v, ref float currentRandomYDistance, ref float randomRotationStart, ref float randomRotationEnd, ref float randomRotationMiddle, ref Vector3 randomRotationV3, ref float currentRandomRotation, ref List<float> rotationArray) { }
 
-	// RVA: 0x46BB30 Offset: 0x46AF30 VA: 0x18046BB30
 	public List<List<Vector2>> GetRoadShapeValues(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, List<Vector2> roadShape) { }
 
-	// RVA: 0x46CF90 Offset: 0x46C390 VA: 0x18046CF90
 	public List<float> GetSurfaceValues(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, ref List<float> leftIndents, ref List<float> rightIndents, ref List<float> leftSurrounding, ref List<float> rightSurrounding, float minRequiredIndent) { }
 
-	// RVA: 0x46F0A0 Offset: 0x46E4A0 VA: 0x18046F0A0
 	public bool OCCQQDDDQC(SideObject obj, bool flag) { }
 
-	// RVA: 0x487150 Offset: 0x486550 VA: 0x180487150
 	public bool ODQCOQQDCD(SideObject obj, int marker, bool flag) { }
 
-	// RVA: 0x46B630 Offset: 0x46AA30 VA: 0x18046B630
 	public bool ERSetSideObjectOffset(SideObject obj, int marker, OffsetPosition position, float value) { }
 
-	// RVA: 0x486D70 Offset: 0x486170 VA: 0x180486D70
 	public bool ODQCOQQDCD(SideObject obj, int[] markers, bool flag) { }
 
-	// RVA: 0x494F20 Offset: 0x494320 VA: 0x180494F20
 	public List<Vector3> OQOQDCODCD(bool flag) { }
 
-	// RVA: 0x495220 Offset: 0x494620 VA: 0x180495220
 	public void OQOQDQCDCQ() { }
 
-	// RVA: 0x487B20 Offset: 0x486F20 VA: 0x180487B20
 	public List<float> ODQQOQQDOO(Vector3[] tr) { }
 
-	// RVA: 0x4895F0 Offset: 0x4889F0 VA: 0x1804895F0
 	public Vector3 OOOOQCODCQ(float offset) { }
 
-	// RVA: 0x4888A0 Offset: 0x487CA0 VA: 0x1804888A0
 	public static Vector3 OODODQQQCD(Vector3 P0, Vector3 P1, Vector3 P2, Vector3 P3, float t, float tension) { }
 
-	// RVA: 0x46ED80 Offset: 0x46E180 VA: 0x18046ED80
 	public Vector3 OCCDDOCCDQ(int startend, ERCrossingPrefabs prefab) { }
 
-	// RVA: 0x493E10 Offset: 0x493210 VA: 0x180493E10
 	public void OQDQOOQODD(bool lineMask, bool biomeMask) { }
 
-	// RVA: 0x495CC0 Offset: 0x4950C0 VA: 0x180495CC0
 	public void SetMarkerShape(List<Vector2> conVecs, Vector3 scale, ERCrossingPrefabs prefab, int connectionIndex) { }
 
-	// RVA: 0x487990 Offset: 0x486D90 VA: 0x180487990
 	public void ODQOCQCCDC(ERIndentAlignment value, int marker, ERRoadSide type) { }
 
-	// RVA: 0x46B470 Offset: 0x46A870 VA: 0x18046B470
 	public ERIndentAlignment ERGetIndentAlignment(int marker, ERRoadSide type) { }
 
-	// RVA: 0x46B890 Offset: 0x46AC90 VA: 0x18046B890
 	public void FlipRoadUVs(bool update) { }
 
-	// RVA: 0x46CEB0 Offset: 0x46C2B0 VA: 0x18046CEB0
 	public ERRoadType GetRoadType(ERRoadType[] roadTypes) { }
 
-	// RVA: 0x495EC0 Offset: 0x4952C0 VA: 0x180495EC0
 	public void .ctor() { }
 
 }

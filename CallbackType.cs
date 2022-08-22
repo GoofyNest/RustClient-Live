@@ -1,6 +1,5 @@
 public enum CallbackType // TypeDefIndex: 5113
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const CallbackType SteamServersConnected = 101;
 	public const CallbackType SteamServerConnectFailure = 102;
 	public const CallbackType SteamServersDisconnected = 103;

@@ -1,6 +1,5 @@
 public class Config : ScriptableObject // TypeDefIndex: 11534
-{	// Fields
-	public int geometryLayerID; // 0x18
+{	public int geometryLayerID; // 0x18
 	public string geometryTag; // 0x20
 	public int geometryRenderQueue; // 0x28
 	public bool forceSinglePass; // 0x2C
@@ -24,32 +23,23 @@ public class Config : ScriptableObject // TypeDefIndex: 11534
 	public ParticleSystem dustParticlesPrefab; // 0x68
 	private static Config m_Instance; // 0x0
 
-	// Properties
 	public Shader beamShader { get; }
 	public Vector4 globalNoiseParam { get; }
 	public static Config Instance { get; }
 
-	// Methods
 
-	// RVA: 0x1118650 Offset: 0x1117A50 VA: 0x181118650
 	public Shader get_beamShader() { }
 
-	// RVA: 0x1118660 Offset: 0x1117A60 VA: 0x181118660
 	public Vector4 get_globalNoiseParam() { }
 
-	// RVA: 0x1118220 Offset: 0x1117620 VA: 0x181118220
 	public void Reset() { }
 
-	// RVA: 0x1118050 Offset: 0x1117450 VA: 0x181118050
 	public ParticleSystem NewVolumetricDustParticles() { }
 
-	// RVA: 0x1118490 Offset: 0x1117890 VA: 0x181118490
 	public static Config get_Instance() { }
 
-	// RVA: 0x11183E0 Offset: 0x11177E0 VA: 0x1811183E0
 	public void .ctor() { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	private static void .cctor() { }
 
 }

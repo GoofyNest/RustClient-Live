@@ -1,6 +1,5 @@
 internal enum MarketNotAllowedReasonFlags // TypeDefIndex: 5142
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const MarketNotAllowedReasonFlags None = 0;
 	public const MarketNotAllowedReasonFlags TemporaryFailure = 1;
 	public const MarketNotAllowedReasonFlags AccountDisabled = 2;

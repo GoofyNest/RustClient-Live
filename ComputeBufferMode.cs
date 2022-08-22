@@ -1,6 +1,5 @@
 public enum ComputeBufferMode // TypeDefIndex: 3388
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ComputeBufferMode Immutable = 0;
 	public const ComputeBufferMode Dynamic = 1;
 	public const ComputeBufferMode Circular = 2;

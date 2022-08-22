@@ -1,27 +1,19 @@
 public static class RuntimeHelpers // TypeDefIndex: 1317
-{	// Properties
-	public static int OffsetToStringData { get; }
+{	public static int OffsetToStringData { get; }
 
-	// Methods
 
-	// RVA: 0xFEECD0 Offset: 0xFEE0D0 VA: 0x180FEECD0
 	private static void InitializeArray(Array array, IntPtr fldHandle) { }
 
-	// RVA: 0xFEEC50 Offset: 0xFEE050 VA: 0x180FEEC50
 	public static void InitializeArray(Array array, RuntimeFieldHandle fldHandle) { }
 
-	// RVA: 0xFEECE0 Offset: 0xFEE0E0 VA: 0x180FEECE0
 	public static int get_OffsetToStringData() { }
 
-	// RVA: 0xCC95C0 Offset: 0xCC89C0 VA: 0x180CC95C0
 	public static int GetHashCode(object o) { }
 
 	[ReliabilityContractAttribute] // RVA: 0xD9D90 Offset: 0xD9190 VA: 0x1800D9D90
 	[MonoTODOAttribute] // RVA: 0xD9D90 Offset: 0xD9190 VA: 0x1800D9D90
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	public static void PrepareConstrainedRegions() { }
 
-	// RVA: -1 Offset: -1
 	public static bool IsReferenceOrContainsReferences<T>() { }
 	/* GenericInstMethod :
 	|

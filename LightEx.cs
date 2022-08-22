@@ -1,6 +1,5 @@
 public class LightEx : UpdateBehaviour, IClientComponent // TypeDefIndex: 9195
-{	// Fields
-	public bool alterColor; // 0x20
+{	public bool alterColor; // 0x20
 	public float colorTimeScale; // 0x24
 	public Color colorA; // 0x28
 	public Color colorB; // 0x38
@@ -21,27 +20,19 @@ public class LightEx : UpdateBehaviour, IClientComponent // TypeDefIndex: 9195
 	private float time; // 0x94
 	private LightLOD lightLOD; // 0x98
 
-	// Methods
 
-	// RVA: 0x4EBE30 Offset: 0x4EB230 VA: 0x1804EBE30
 	protected void Awake() { }
 
-	// RVA: 0x4EC4C0 Offset: 0x4EB8C0 VA: 0x1804EC4C0 Slot: 5
 	protected override void OnEnable() { }
 
-	// RVA: 0x4EC430 Offset: 0x4EB830 VA: 0x1804EC430 Slot: 6
 	protected override void OnDisable() { }
 
-	// RVA: 0x4EC080 Offset: 0x4EB480 VA: 0x1804EC080 Slot: 4
 	public override void DeltaUpdate(float deltaTime) { }
 
-	// RVA: 0x4EC610 Offset: 0x4EBA10 VA: 0x1804EC610
 	protected void OnValidate() { }
 
-	// RVA: 0x498AD0 Offset: 0x497ED0 VA: 0x180498AD0
 	public static bool CheckConflict(GameObject go) { }
 
-	// RVA: 0x4EC620 Offset: 0x4EBA20 VA: 0x1804EC620
 	public void .ctor() { }
 
 }

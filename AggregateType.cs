@@ -1,6 +1,5 @@
 internal enum AggregateType // TypeDefIndex: 4166
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const AggregateType None = 0;
 	public const AggregateType Sum = 4;
 	public const AggregateType Mean = 5;

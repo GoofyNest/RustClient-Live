@@ -1,6 +1,5 @@
 public class PlantProperties : ScriptableObject // TypeDefIndex: 9639
-{	// Fields
-	public Translate.Phrase Description; // 0x18
+{	public Translate.Phrase Description; // 0x18
 	public GrowableGeneProperties Genes; // 0x20
 	[ArrayIndexIsEnum] // RVA: 0x7CDE0 Offset: 0x7C1E0 VA: 0x18007CDE0
 	public PlantProperties.Stage[] stages; // 0x28
@@ -34,16 +33,13 @@ public class PlantProperties : ScriptableObject // TypeDefIndex: 9639
 	[HeaderAttribute] // RVA: 0x7D460 Offset: 0x7C860 VA: 0x18007D460
 	public int BaseMarketValue; // 0x114
 
-	// Methods
 
-	// RVA: 0x8E1180 Offset: 0x8E0580 VA: 0x1808E1180
 	public void .ctor() { }
 
 }
 
 public enum PlantProperties.State // TypeDefIndex: 9640
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const PlantProperties.State Seed = 0;
 	public const PlantProperties.State Seedling = 1;
 	public const PlantProperties.State Sapling = 2;
@@ -56,8 +52,7 @@ public enum PlantProperties.State // TypeDefIndex: 9640
 }
 
 public struct PlantProperties.Stage // TypeDefIndex: 9641
-{	// Fields
-	public PlantProperties.State nextState; // 0x0
+{	public PlantProperties.State nextState; // 0x0
 	public float lifeLength; // 0x4
 	public float health; // 0x8
 	public float resources; // 0xC
@@ -65,12 +60,9 @@ public struct PlantProperties.Stage // TypeDefIndex: 9641
 	public GameObjectRef skinObject; // 0x18
 	public bool IgnoreConditions; // 0x20
 
-	// Properties
 	public float lifeLengthSeconds { get; }
 
-	// Methods
 
-	// RVA: 0xF9C40 Offset: 0xF9040 VA: 0x1800F9C40
 	public float get_lifeLengthSeconds() { }
 
 }

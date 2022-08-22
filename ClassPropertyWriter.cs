@@ -1,7 +1,5 @@
 private sealed class ClassPropertyWriter.Getter<ContainerType, ValueType> : MulticastDelegate // TypeDefIndex: 1529
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
@@ -74,7 +72,6 @@ private sealed class ClassPropertyWriter.Getter<ContainerType, ValueType> : Mult
 	|-ClassPropertyWriter.Getter<UIntPtr, object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 12
 	public virtual ValueType Invoke(ContainerType container) { }
 	/* GenericInstMethod :
 	|
@@ -185,7 +182,6 @@ private sealed class ClassPropertyWriter.Getter<ContainerType, ValueType> : Mult
 	|-ClassPropertyWriter.Getter<float, object>.Invoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 13
 	public virtual IAsyncResult BeginInvoke(ContainerType container, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
@@ -384,7 +380,6 @@ private sealed class ClassPropertyWriter.Getter<ContainerType, ValueType> : Mult
 	|-ClassPropertyWriter.Getter<UIntPtr, object>.BeginInvoke
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 14
 	public virtual ValueType EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|

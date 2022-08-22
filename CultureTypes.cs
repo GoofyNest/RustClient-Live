@@ -1,6 +1,5 @@
 public enum CultureTypes // TypeDefIndex: 692
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const CultureTypes NeutralCultures = 1;
 	public const CultureTypes SpecificCultures = 2;
 	public const CultureTypes InstalledWin32Cultures = 4;

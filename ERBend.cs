@@ -1,6 +1,5 @@
 public class ERBend : MonoBehaviour // TypeDefIndex: 7173
-{	// Fields
-	public float roundAboutRadius; // 0x18
+{	public float roundAboutRadius; // 0x18
 	public float roundAboutResolution; // 0x1C
 	public float rDist; // 0x20
 	public Vector3 raStartPos; // 0x24
@@ -58,18 +57,13 @@ public class ERBend : MonoBehaviour // TypeDefIndex: 7173
 	public bool leftFlag; // 0x1B4
 	public bool rightFlag; // 0x1B5
 
-	// Methods
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	private void Start() { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	private void Update() { }
 
-	// RVA: 0xB75860 Offset: 0xB74C60 VA: 0x180B75860
 	public void OOCCCDQDCQ() { }
 
-	// RVA: 0xB768C0 Offset: 0xB75CC0 VA: 0x180B768C0
 	public void .ctor() { }
 
 }

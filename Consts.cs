@@ -1,11 +1,8 @@
 internal static class Consts // TypeDefIndex: 7369
 {
-// Namespace: 
 internal class <Module> // TypeDefIndex: 7368
 
-// Namespace: 
 internal static class Consts // TypeDefIndex: 7369
-	// Fields
 	public const string MonoVersion = "2.6.5.0";
 	public const string MonoCompany = "MONO development team";
 	public const string MonoProduct = "MONO Common language infrastructure";
@@ -40,9 +37,7 @@ internal static class Consts // TypeDefIndex: 7369
 
 internal static class Consts // TypeDefIndex: 7796
 {
-// Namespace: 
 internal static class Consts // TypeDefIndex: 7796
-	// Fields
 	public const string MonoVersion = "2.6.5.0";
 	public const string MonoCompany = "MONO development team";
 	public const string MonoProduct = "MONO Common language infrastructure";
@@ -77,12 +72,9 @@ internal static class Consts // TypeDefIndex: 7796
 
 internal static class Consts // TypeDefIndex: 7839
 {
-// Namespace: 
 internal class <Module> // TypeDefIndex: 7838
 
-// Namespace: 
 internal static class Consts // TypeDefIndex: 7839
-	// Fields
 	public const string MonoVersion = "2.6.5.0";
 	public const string MonoCompany = "MONO development team";
 	public const string MonoProduct = "MONO Common language infrastructure";
@@ -117,12 +109,9 @@ internal static class Consts // TypeDefIndex: 7839
 
 internal static class Consts // TypeDefIndex: 7857
 {
-// Namespace: 
 internal class <Module> // TypeDefIndex: 7856
 
-// Namespace: 
 internal static class Consts // TypeDefIndex: 7857
-	// Fields
 	public const string MonoVersion = "2.6.5.0";
 	public const string MonoCompany = "MONO development team";
 	public const string MonoProduct = "MONO Common language infrastructure";
@@ -157,12 +146,9 @@ internal static class Consts // TypeDefIndex: 7857
 
 internal static class Consts // TypeDefIndex: 7898
 {
-// Namespace: 
 internal class <Module> // TypeDefIndex: 7897
 
-// Namespace: 
 internal static class Consts // TypeDefIndex: 7898
-	// Fields
 	public const string MonoVersion = "2.6.5.0";
 	public const string MonoCompany = "MONO development team";
 	public const string MonoProduct = "MONO Common language infrastructure";
@@ -197,12 +183,9 @@ internal static class Consts // TypeDefIndex: 7898
 
 internal static class Consts // TypeDefIndex: 7976
 {
-// Namespace: 
 internal class <Module> // TypeDefIndex: 7975
 
-// Namespace: 
 internal static class Consts // TypeDefIndex: 7976
-	// Fields
 	public const string MonoVersion = "2.6.5.0";
 	public const string MonoCompany = "MONO development team";
 	public const string MonoProduct = "MONO Common language infrastructure";
@@ -236,8 +219,7 @@ internal static class Consts // TypeDefIndex: 7976
 }
 
 public static class Consts // TypeDefIndex: 11535
-{	// Fields
-	private const string HelpUrlBase = "http://saladgamer.com/vlb-doc/";
+{	private const string HelpUrlBase = "http://saladgamer.com/vlb-doc/";
 	public const string HelpUrlBeam = "http://saladgamer.com/vlb-doc/comp-lightbeam/";
 	public const string HelpUrlDustParticles = "http://saladgamer.com/vlb-doc/comp-dustparticles/";
 	public const string HelpUrlDynamicOcclusion = "http://saladgamer.com/vlb-doc/comp-dynocclusion/";
@@ -295,15 +277,11 @@ public static class Consts // TypeDefIndex: 11535
 	public const int ConfigSharedMeshSides = 24;
 	public const int ConfigSharedMeshSegments = 5;
 
-	// Properties
 	public static HideFlags ProceduralObjectsHideFlags { get; }
 
-	// Methods
 
-	// RVA: 0x1118840 Offset: 0x1117C40 VA: 0x181118840
 	public static HideFlags get_ProceduralObjectsHideFlags() { }
 
-	// RVA: 0x11186A0 Offset: 0x1117AA0 VA: 0x1811186A0
 	private static void .cctor() { }
 
 }

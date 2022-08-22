@@ -1,6 +1,5 @@
 internal static class ShaderIDs // TypeDefIndex: 11866
-{	// Fields
-	internal static readonly int MainTex; // 0x0
+{	internal static readonly int MainTex; // 0x0
 	internal static readonly int Jitter; // 0x4
 	internal static readonly int Sharpness; // 0x8
 	internal static readonly int FinalBlendParameters; // 0xC
@@ -131,9 +130,7 @@ internal static class ShaderIDs // TypeDefIndex: 11866
 	internal static readonly int UVScaleOffset; // 0x200
 	internal static readonly int PosScaleOffset; // 0x204
 
-	// Methods
 
-	// RVA: 0x11D9740 Offset: 0x11D8B40 VA: 0x1811D9740
 	private static void .cctor() { }
 
 }

@@ -1,6 +1,5 @@
 internal enum AsnDecodeStatus // TypeDefIndex: 2796
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const AsnDecodeStatus NotDecoded = -1;
 	public const AsnDecodeStatus Ok = 0;
 	public const AsnDecodeStatus BadAsn = 1;

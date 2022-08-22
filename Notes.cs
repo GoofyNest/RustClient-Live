@@ -1,6 +1,5 @@
 public enum Notes // TypeDefIndex: 12114
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Notes A = 0;
 	public const Notes B = 1;
 	public const Notes C = 2;

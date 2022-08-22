@@ -1,17 +1,13 @@
 private sealed class DefaultArrayPool.Bucket<T> // TypeDefIndex: 6271
-{	// Fields
-	internal readonly int _bufferLength; // 0x0
+{	internal readonly int _bufferLength; // 0x0
 	private readonly T[][] _buffers; // 0x0
 	private readonly int _poolId; // 0x0
 	private SpinLock _lock; // 0x0
 	private int _index; // 0x0
 
-	// Properties
 	internal int Id { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(int bufferLength, int numberOfBuffers, int poolId) { }
 	/* GenericInstMethod :
 	|
@@ -22,7 +18,6 @@ private sealed class DefaultArrayPool.Bucket<T> // TypeDefIndex: 6271
 	|-DefaultArrayPool.Bucket<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal int get_Id() { }
 	/* GenericInstMethod :
 	|
@@ -31,7 +26,6 @@ private sealed class DefaultArrayPool.Bucket<T> // TypeDefIndex: 6271
 	|-DefaultArrayPool.Bucket<object>.get_Id
 	*/
 
-	// RVA: -1 Offset: -1
 	internal T[] Rent() { }
 	/* GenericInstMethod :
 	|
@@ -42,7 +36,6 @@ private sealed class DefaultArrayPool.Bucket<T> // TypeDefIndex: 6271
 	|-DefaultArrayPool.Bucket<object>.Rent
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void Return(T[] array) { }
 	/* GenericInstMethod :
 	|

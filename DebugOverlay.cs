@@ -1,6 +1,5 @@
 public enum DebugOverlay // TypeDefIndex: 11834
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DebugOverlay None = 0;
 	public const DebugOverlay Depth = 1;
 	public const DebugOverlay Normals = 2;

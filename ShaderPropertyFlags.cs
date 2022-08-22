@@ -1,6 +1,5 @@
 public enum ShaderPropertyFlags // TypeDefIndex: 3858
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ShaderPropertyFlags None = 0;
 	public const ShaderPropertyFlags HideInInspector = 1;
 	public const ShaderPropertyFlags PerRendererData = 2;

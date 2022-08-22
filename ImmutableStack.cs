@@ -1,10 +1,7 @@
 private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 4799
-{	// Properties
-	public int Count { get; }
+{	public int Count { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public int get_Count() { }
 	/* GenericInstMethod :
 	|
@@ -12,7 +9,6 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 	|-ImmutableStack.EmptyStack<object>.get_Count
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public IImmutableStack<T> Push(T value) { }
 	/* GenericInstMethod :
 	|
@@ -20,7 +16,6 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 	|-ImmutableStack.EmptyStack<object>.Push
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public IImmutableStack<T> Pop() { }
 	/* GenericInstMethod :
 	|
@@ -28,7 +23,6 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 	|-ImmutableStack.EmptyStack<object>.Pop
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	public T Peek() { }
 	/* GenericInstMethod :
 	|
@@ -37,7 +31,6 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 	*/
 
 	[IteratorStateMachineAttribute] // RVA: 0xD5330 Offset: 0xD4730 VA: 0x1800D5330
-	// RVA: -1 Offset: -1 Slot: 8
 	public IEnumerator<T> GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -45,7 +38,6 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 	|-ImmutableStack.EmptyStack<object>.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 9
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
@@ -53,7 +45,6 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 	|-ImmutableStack.EmptyStack<object>.System.Collections.IEnumerable.GetEnumerator
 	*/
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -64,18 +55,14 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 }
 
 private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4800
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private T <>2__current; // 0x0
 
-	// Properties
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -84,7 +71,6 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -92,7 +78,6 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 	|-ImmutableStack.EmptyStack.<GetEnumerator>d__5<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -101,7 +86,6 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -110,7 +94,6 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -119,7 +102,6 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -130,20 +112,16 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 }
 
 private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4801
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private T <>2__current; // 0x0
 	public ImmutableStack<T> <>4__this; // 0x0
 	private IImmutableStack<T> <stack>5__2; // 0x0
 
-	// Properties
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -152,7 +130,6 @@ private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -160,7 +137,6 @@ private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IE
 	|-ImmutableStack.<GetEnumerator>d__13<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -169,7 +145,6 @@ private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -178,7 +153,6 @@ private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -187,7 +161,6 @@ private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IE
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

@@ -1,6 +1,5 @@
 public enum GraphicsFormat // TypeDefIndex: 3902
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GraphicsFormat None = 0;
 	public const GraphicsFormat R8_SRGB = 1;
 	public const GraphicsFormat R8G8_SRGB = 2;

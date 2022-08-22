@@ -1,6 +1,5 @@
 internal enum UnescapeMode // TypeDefIndex: 2580
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const UnescapeMode CopyOnly = 0;
 	public const UnescapeMode Escape = 1;
 	public const UnescapeMode Unescape = 2;

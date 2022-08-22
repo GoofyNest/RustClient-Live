@@ -1,6 +1,5 @@
 internal sealed class SchemaNames // TypeDefIndex: 2281
-{	// Fields
-	private XmlNameTable nameTable; // 0x10
+{	private XmlNameTable nameTable; // 0x10
 	public string NsDataType; // 0x18
 	public string NsDataTypeAlias; // 0x20
 	public string NsDataTypeOld; // 0x28
@@ -142,28 +141,21 @@ internal sealed class SchemaNames // TypeDefIndex: 2281
 	public XmlQualifiedName QnXsdAnyType; // 0x468
 	internal XmlQualifiedName[] TokenToQName; // 0x470
 
-	// Methods
 
-	// RVA: 0xEE6CC0 Offset: 0xEE60C0 VA: 0x180EE6CC0
 	public void .ctor(XmlNameTable nameTable) { }
 
-	// RVA: 0xEE3540 Offset: 0xEE2940 VA: 0x180EE3540
 	public void CreateTokenToQNameTable() { }
 
-	// RVA: 0xEE6C00 Offset: 0xEE6000 VA: 0x180EE6C00
 	public SchemaType SchemaTypeFromRoot(string localName, string ns) { }
 
-	// RVA: 0xEE6BB0 Offset: 0xEE5FB0 VA: 0x180EE6BB0
 	public bool IsXSDRoot(string localName, string ns) { }
 
-	// RVA: 0xEE6B60 Offset: 0xEE5F60 VA: 0x180EE6B60
 	public bool IsXDRRoot(string localName, string ns) { }
 
 }
 
 public enum SchemaNames.Token // TypeDefIndex: 2282
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SchemaNames.Token Empty = 0;
 	public const SchemaNames.Token SchemaName = 1;
 	public const SchemaNames.Token SchemaType = 2;

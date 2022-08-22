@@ -1,6 +1,5 @@
 internal struct SpriteIntermediateRendererInfo // TypeDefIndex: 3874
-{	// Fields
-	public int SpriteID; // 0x0
+{	public int SpriteID; // 0x0
 	public int TextureID; // 0x4
 	public int MaterialID; // 0x8
 	public Color Color; // 0xC

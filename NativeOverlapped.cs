@@ -1,6 +1,5 @@
 public struct NativeOverlapped // TypeDefIndex: 828
-{	// Fields
-	public IntPtr InternalLow; // 0x0
+{	public IntPtr InternalLow; // 0x0
 	public IntPtr InternalHigh; // 0x8
 	public int OffsetLow; // 0x10
 	public int OffsetHigh; // 0x14

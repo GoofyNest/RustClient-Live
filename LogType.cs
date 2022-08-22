@@ -1,6 +1,5 @@
 public enum LogType // TypeDefIndex: 3347
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const LogType Error = 0;
 	public const LogType Assert = 1;
 	public const LogType Warning = 2;

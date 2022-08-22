@@ -1,6 +1,5 @@
 public class NaturalBloomAndDirtyLens : MonoBehaviour // TypeDefIndex: 10097
-{	// Fields
-	public Shader shader; // 0x18
+{	public Shader shader; // 0x18
 	public Texture2D lensDirtTexture; // 0x20
 	public float range; // 0x28
 	public float cutoff; // 0x2C
@@ -27,28 +26,21 @@ public class NaturalBloomAndDirtyLens : MonoBehaviour // TypeDefIndex: 10097
 	private static int[] paramID; // 0x0
 	private static int[] sourceID; // 0x8
 
-	// Methods
 
-	// RVA: 0x7C8280 Offset: 0x7C7680 VA: 0x1807C8280
 	private void OnDisable() { }
 
-	// RVA: 0x7C8E90 Offset: 0x7C8290 VA: 0x1807C8E90
 	private void UpdateMaterial(bool encoding) { }
 
-	// RVA: 0x7C83E0 Offset: 0x7C77E0 VA: 0x1807C83E0
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-	// RVA: 0x7C95A0 Offset: 0x7C89A0 VA: 0x1807C95A0
 	public void .ctor() { }
 
-	// RVA: 0x7C9270 Offset: 0x7C8670 VA: 0x1807C9270
 	private static void .cctor() { }
 
 }
 
 private static class NaturalBloomAndDirtyLens.Param // TypeDefIndex: 10098
-{	// Fields
-	public const int _BloomRange = 0;
+{	public const int _BloomRange = 0;
 	public const int _BloomCutoff = 1;
 	public const int _BloomIntensity = 2;
 	public const int _LensDirtIntensity = 3;

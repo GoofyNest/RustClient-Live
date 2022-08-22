@@ -1,6 +1,5 @@
 public enum WrapMode // TypeDefIndex: 3352
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const WrapMode Once = 1;
 	public const WrapMode Loop = 2;
 	public const WrapMode PingPong = 4;

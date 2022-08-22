@@ -1,8 +1,6 @@
 public static class ByteExtensions // TypeDefIndex: 4841
-{	// Methods
-
+{
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static T ReadUnsafe<T>(byte[] buffer, int iOffset = 0) { }
 	/* GenericInstMethod :
 	|
@@ -40,7 +38,6 @@ public static class ByteExtensions // TypeDefIndex: 4841
 	*/
 
 	[ExtensionAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public static void WriteUnsafe<T>(byte[] buffer, in T value, int iOffset = 0) { }
 	/* GenericInstMethod :
 	|

@@ -1,6 +1,5 @@
 internal enum MessageEnum // TypeDefIndex: 1102
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const MessageEnum NoArgs = 1;
 	public const MessageEnum ArgsInline = 2;
 	public const MessageEnum ArgsIsArray = 4;

@@ -1,6 +1,5 @@
 public enum FieldAttributes // TypeDefIndex: 525
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const FieldAttributes FieldAccessMask = 7;
 	public const FieldAttributes PrivateScope = 0;
 	public const FieldAttributes Private = 1;

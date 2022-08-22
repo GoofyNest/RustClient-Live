@@ -1,6 +1,5 @@
 internal enum WebHeaderCollectionType // TypeDefIndex: 2901
-{	// Fields
-	public ushort value__; // 0x0
+{	public ushort value__; // 0x0
 	public const WebHeaderCollectionType Unknown = 0;
 	public const WebHeaderCollectionType WebRequest = 1;
 	public const WebHeaderCollectionType WebResponse = 2;

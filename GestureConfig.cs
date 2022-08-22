@@ -1,6 +1,5 @@
 public class GestureConfig : ScriptableObject // TypeDefIndex: 10086
-{	// Fields
-	[ReadOnlyAttribute] // RVA: 0x70A20 Offset: 0x6FE20 VA: 0x180070A20
+{	[ReadOnlyAttribute] // RVA: 0x70A20 Offset: 0x6FE20 VA: 0x180070A20
 	public uint gestureId; // 0x18
 	public string gestureCommand; // 0x20
 	public string convarName; // 0x28
@@ -20,54 +19,45 @@ public class GestureConfig : ScriptableObject // TypeDefIndex: 10086
 	public SteamDLCItem dlcItem; // 0x68
 	public SteamInventoryItem inventoryItem; // 0x70
 
-	// Methods
 
-	// RVA: 0xC782F0 Offset: 0xC776F0 VA: 0x180C782F0
 	public bool IsOwnedBy(BasePlayer player) { }
 
-	// RVA: 0xC78250 Offset: 0xC77650 VA: 0x180C78250
 	public bool CanBeUsedBy(BasePlayer player) { }
 
-	// RVA: 0xC78410 Offset: 0xC77810 VA: 0x180C78410
 	public void .ctor() { }
 
 }
 
 public enum GestureConfig.PlayerModelLayer // TypeDefIndex: 10087
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GestureConfig.PlayerModelLayer UpperBody = 3;
 	public const GestureConfig.PlayerModelLayer FullBody = 4;
 
 }
 
 public enum GestureConfig.MovementCapabilities // TypeDefIndex: 10088
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GestureConfig.MovementCapabilities FullMovement = 0;
 	public const GestureConfig.MovementCapabilities NoMovement = 1;
 
 }
 
 public enum GestureConfig.AnimationType // TypeDefIndex: 10089
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GestureConfig.AnimationType OneShot = 0;
 	public const GestureConfig.AnimationType Loop = 1;
 
 }
 
 public enum GestureConfig.ViewMode // TypeDefIndex: 10090
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GestureConfig.ViewMode FirstPerson = 0;
 	public const GestureConfig.ViewMode ThirdPerson = 1;
 
 }
 
 public enum GestureConfig.GestureActionType // TypeDefIndex: 10091
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GestureConfig.GestureActionType None = 0;
 	public const GestureConfig.GestureActionType ShowNameTag = 1;
 	public const GestureConfig.GestureActionType DanceAchievement = 2;

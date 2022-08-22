@@ -1,6 +1,5 @@
 public enum DrivenTransformProperties // TypeDefIndex: 3563
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const DrivenTransformProperties None = 0;
 	public const DrivenTransformProperties All = -1;
 	public const DrivenTransformProperties AnchoredPositionX = 2;

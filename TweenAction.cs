@@ -1,6 +1,5 @@
 public enum TweenAction // TypeDefIndex: 5578
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TweenAction MOVE_X = 0;
 	public const TweenAction MOVE_Y = 1;
 	public const TweenAction MOVE_Z = 2;

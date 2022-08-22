@@ -1,6 +1,5 @@
 public class Rank // TypeDefIndex: 6252
-{	// Fields
-	public float Score; // 0x10
+{	public float Score; // 0x10
 	public int GlobalCount; // 0x14
 	public int GlobalRank; // 0x18
 	public string Country; // 0x20
@@ -12,16 +11,13 @@ public class Rank // TypeDefIndex: 6252
 	public int FriendRank; // 0x40
 	public DateTime Created; // 0x48
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }
 
 public enum Rank // TypeDefIndex: 12010
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const Rank Two = 0;
 	public const Rank Three = 1;
 	public const Rank Four = 2;

@@ -1,6 +1,5 @@
 public enum TaskContinuationOptions // TypeDefIndex: 864
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TaskContinuationOptions None = 0;
 	public const TaskContinuationOptions PreferFairness = 1;
 	public const TaskContinuationOptions LongRunning = 2;

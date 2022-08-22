@@ -1,6 +1,5 @@
 public enum WebExceptionStatus // TypeDefIndex: 2899
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const WebExceptionStatus Success = 0;
 	public const WebExceptionStatus NameResolutionFailure = 1;
 	public const WebExceptionStatus ConnectFailure = 2;

@@ -1,6 +1,5 @@
 public class TrainCarAudio : MonoBehaviour // TypeDefIndex: 9767
-{	// Fields
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private TrainCar trainCar; // 0x18
 	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	private SoundDefinition movementStartDef; // 0x20
@@ -28,21 +27,15 @@ public class TrainCarAudio : MonoBehaviour // TypeDefIndex: 9767
 	private SoundModulation.Modulator trackClatterPitch; // 0x90
 	private float lastMovementChangeOneshot; // 0x98
 
-	// Methods
 
-	// RVA: 0x9EA3A0 Offset: 0x9E97A0 VA: 0x1809EA3A0
 	public void UpdateTick() { }
 
-	// RVA: 0x9EA0F0 Offset: 0x9E94F0 VA: 0x1809EA0F0
 	public void StopAll() { }
 
-	// RVA: 0x9EA110 Offset: 0x9E9510 VA: 0x1809EA110
 	private void StopMovementLoops() { }
 
-	// RVA: 0x9EA300 Offset: 0x9E9700 VA: 0x1809EA300
 	private void StopTurnLoops() { }
 
-	// RVA: 0x9EA970 Offset: 0x9E9D70 VA: 0x1809EA970
 	public void .ctor() { }
 
 }

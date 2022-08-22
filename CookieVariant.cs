@@ -1,6 +1,5 @@
 internal enum CookieVariant // TypeDefIndex: 2933
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const CookieVariant Unknown = 0;
 	public const CookieVariant Plain = 1;
 	public const CookieVariant Rfc2109 = 2;

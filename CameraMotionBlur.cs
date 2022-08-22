@@ -1,6 +1,5 @@
 public class CameraMotionBlur : PostEffectsBase // TypeDefIndex: 8168
-{	// Fields
-	private static float MAX_RADIUS; // 0x0
+{	private static float MAX_RADIUS; // 0x0
 	public CameraMotionBlur.MotionBlurFilter filterType; // 0x28
 	public bool preview; // 0x2C
 	public Vector3 previewScale; // 0x30
@@ -31,49 +30,35 @@ public class CameraMotionBlur : PostEffectsBase // TypeDefIndex: 8168
 	private Vector3 prevFramePos; // 0x144
 	private Camera _camera; // 0x150
 
-	// Methods
 
-	// RVA: 0x12C27D0 Offset: 0x12C1BD0 VA: 0x1812C27D0
 	private void CalculateViewProjection() { }
 
-	// RVA: 0x12C4C60 Offset: 0x12C4060 VA: 0x1812C4C60
 	private void Start() { }
 
-	// RVA: 0x12C3020 Offset: 0x12C2420 VA: 0x1812C3020
 	private void OnEnable() { }
 
-	// RVA: 0x12C2E70 Offset: 0x12C2270 VA: 0x1812C2E70
 	private void OnDisable() { }
 
-	// RVA: 0x12C29B0 Offset: 0x12C1DB0 VA: 0x1812C29B0 Slot: 4
 	public override bool CheckResources() { }
 
-	// RVA: 0x12C30F0 Offset: 0x12C24F0 VA: 0x1812C30F0
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-	// RVA: 0x12C4A60 Offset: 0x12C3E60 VA: 0x1812C4A60
 	private void Remember() { }
 
-	// RVA: 0x12C2A60 Offset: 0x12C1E60 VA: 0x1812C2A60
 	private Camera GetTmpCam() { }
 
-	// RVA: 0x12C4B50 Offset: 0x12C3F50 VA: 0x1812C4B50
 	private void StartFrame() { }
 
-	// RVA: 0x12C4EB0 Offset: 0x12C42B0 VA: 0x1812C4EB0
 	private static int divRoundUp(int x, int d) { }
 
-	// RVA: 0x12C4D90 Offset: 0x12C4190 VA: 0x1812C4D90
 	public void .ctor() { }
 
-	// RVA: 0x12C4D50 Offset: 0x12C4150 VA: 0x1812C4D50
 	private static void .cctor() { }
 
 }
 
 public enum CameraMotionBlur.MotionBlurFilter // TypeDefIndex: 8169
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const CameraMotionBlur.MotionBlurFilter CameraMotion = 0;
 	public const CameraMotionBlur.MotionBlurFilter LocalBlur = 1;
 	public const CameraMotionBlur.MotionBlurFilter Reconstruction = 2;

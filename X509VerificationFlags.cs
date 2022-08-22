@@ -1,6 +1,5 @@
 public enum X509VerificationFlags // TypeDefIndex: 2809
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const X509VerificationFlags NoFlag = 0;
 	public const X509VerificationFlags IgnoreNotTimeValid = 1;
 	public const X509VerificationFlags IgnoreCtlNotTimeValid = 2;

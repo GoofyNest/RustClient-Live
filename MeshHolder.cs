@@ -1,6 +1,5 @@
 public class MeshHolder // TypeDefIndex: 11524
-{	// Fields
-	[HideInInspector] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
+{	[HideInInspector] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	public Vector3[] _vertices; // 0x10
 	[HideInInspector] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	public Vector3[] _normals; // 0x18
@@ -29,12 +28,9 @@ public class MeshHolder // TypeDefIndex: 11524
 	[HideInInspector] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
 	public Vector2[] _uv4; // 0x88
 
-	// Methods
 
-	// RVA: 0x95E360 Offset: 0x95D760 VA: 0x18095E360
 	public void setAnimationData(Mesh mesh) { }
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }

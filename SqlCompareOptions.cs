@@ -1,6 +1,5 @@
 public enum SqlCompareOptions // TypeDefIndex: 4352
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SqlCompareOptions None = 0;
 	public const SqlCompareOptions IgnoreCase = 1;
 	public const SqlCompareOptions IgnoreNonSpace = 2;

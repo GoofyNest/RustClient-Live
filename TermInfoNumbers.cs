@@ -1,6 +1,5 @@
 internal enum TermInfoNumbers // TypeDefIndex: 398
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TermInfoNumbers Columns = 0;
 	public const TermInfoNumbers InitTabs = 1;
 	public const TermInfoNumbers Lines = 2;

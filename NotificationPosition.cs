@@ -1,6 +1,5 @@
 public enum NotificationPosition // TypeDefIndex: 5141
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const NotificationPosition TopLeft = 0;
 	public const NotificationPosition TopRight = 1;
 	public const NotificationPosition BottomLeft = 2;

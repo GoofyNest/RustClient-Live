@@ -1,6 +1,5 @@
 public enum CanvasUpdate // TypeDefIndex: 4908
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const CanvasUpdate Prelayout = 0;
 	public const CanvasUpdate Layout = 1;
 	public const CanvasUpdate PostLayout = 2;

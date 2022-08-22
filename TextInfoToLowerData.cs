@@ -1,6 +1,5 @@
 internal static class TextInfoToLowerData // TypeDefIndex: 740
-{	// Fields
-	public static readonly char[] range_00c0_0556; // 0x0
+{	public static readonly char[] range_00c0_0556; // 0x0
 	public static readonly char[] range_10a0_10c5; // 0x8
 	public static readonly char[] range_1e00_1ffc; // 0x10
 	public static readonly char[] range_2160_216f; // 0x18
@@ -10,9 +9,7 @@ internal static class TextInfoToLowerData // TypeDefIndex: 740
 	public static readonly char[] range_a640_a696; // 0x38
 	public static readonly char[] range_a722_a78b; // 0x40
 
-	// Methods
 
-	// RVA: 0x1382500 Offset: 0x1381900 VA: 0x181382500
 	private static void .cctor() { }
 
 }

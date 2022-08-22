@@ -1,6 +1,5 @@
 internal enum ValueFixupEnum // TypeDefIndex: 1103
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ValueFixupEnum Empty = 0;
 	public const ValueFixupEnum Array = 1;
 	public const ValueFixupEnum Header = 2;

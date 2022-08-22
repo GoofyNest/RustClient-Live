@@ -1,6 +1,5 @@
 internal enum ResourceTypeCode // TypeDefIndex: 498
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ResourceTypeCode Null = 0;
 	public const ResourceTypeCode String = 1;
 	public const ResourceTypeCode Boolean = 2;

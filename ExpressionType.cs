@@ -1,6 +1,5 @@
 public enum ExpressionType // TypeDefIndex: 3244
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ExpressionType Add = 0;
 	public const ExpressionType AddChecked = 1;
 	public const ExpressionType And = 2;

@@ -1,6 +1,5 @@
 public enum TextAnchor // TypeDefIndex: 3953
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TextAnchor UpperLeft = 0;
 	public const TextAnchor UpperCenter = 1;
 	public const TextAnchor UpperRight = 2;

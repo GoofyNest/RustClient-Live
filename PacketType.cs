@@ -1,6 +1,5 @@
 public static class PacketType // TypeDefIndex: 7332
-{	// Fields
-	public const byte NEW_INCOMING_CONNECTION = 19;
+{	public const byte NEW_INCOMING_CONNECTION = 19;
 	public const byte CONNECTION_REQUEST_ACCEPTED = 16;
 	public const byte CONNECTION_ATTEMPT_FAILED = 17;
 	public const byte DISCONNECTION_NOTIFICATION = 21;

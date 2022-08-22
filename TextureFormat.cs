@@ -1,6 +1,5 @@
 public enum TextureFormat // TypeDefIndex: 3426
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TextureFormat Alpha8 = 1;
 	public const TextureFormat ARGB4444 = 2;
 	public const TextureFormat RGB24 = 3;

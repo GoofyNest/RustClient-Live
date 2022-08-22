@@ -1,6 +1,5 @@
 public enum MethodImplAttributes // TypeDefIndex: 541
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const MethodImplAttributes CodeTypeMask = 3;
 	public const MethodImplAttributes IL = 0;
 	public const MethodImplAttributes Native = 1;

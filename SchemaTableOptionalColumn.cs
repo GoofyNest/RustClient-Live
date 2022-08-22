@@ -1,6 +1,5 @@
 public static class SchemaTableOptionalColumn // TypeDefIndex: 4428
-{	// Fields
-	public static readonly string ProviderSpecificDataType; // 0x0
+{	public static readonly string ProviderSpecificDataType; // 0x0
 	public static readonly string IsAutoIncrement; // 0x8
 	public static readonly string IsHidden; // 0x10
 	public static readonly string IsReadOnly; // 0x18
@@ -15,9 +14,7 @@ public static class SchemaTableOptionalColumn // TypeDefIndex: 4428
 	public static readonly string BaseColumnNamespace; // 0x60
 	public static readonly string ColumnMapping; // 0x68
 
-	// Methods
 
-	// RVA: 0x17D2B00 Offset: 0x17D1F00 VA: 0x1817D2B00
 	private static void .cctor() { }
 
 }

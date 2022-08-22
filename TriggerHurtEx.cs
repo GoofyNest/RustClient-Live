@@ -1,6 +1,5 @@
 public class TriggerHurtEx : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 10713
-{	// Fields
-	public float repeatRate; // 0x30
+{	public float repeatRate; // 0x30
 	[HeaderAttribute] // RVA: 0x75360 Offset: 0x74760 VA: 0x180075360
 	public List<DamageTypeEntry> damageOnEnter; // 0x38
 	public GameObjectRef effectOnEnter; // 0x40
@@ -19,16 +18,13 @@ public class TriggerHurtEx : TriggerBase, IServerComponent, IHurtTrigger // Type
 	public TriggerHurtEx.HurtType hurtTypeOnLeave; // 0x90
 	public bool damageEnabled; // 0x94
 
-	// Methods
 
-	// RVA: 0xA00150 Offset: 0x9FF550 VA: 0x180A00150
 	public void .ctor() { }
 
 }
 
 public enum TriggerHurtEx.HurtType // TypeDefIndex: 10714
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TriggerHurtEx.HurtType Simple = 0;
 	public const TriggerHurtEx.HurtType IncludeBleedingAndScreenShake = 1;
 

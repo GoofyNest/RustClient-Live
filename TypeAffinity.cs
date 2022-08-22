@@ -1,6 +1,5 @@
 public enum TypeAffinity // TypeDefIndex: 4871
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TypeAffinity Uninitialized = 0;
 	public const TypeAffinity Int64 = 1;
 	public const TypeAffinity Double = 2;

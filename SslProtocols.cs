@@ -1,6 +1,5 @@
 public enum SslProtocols // TypeDefIndex: 2790
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const SslProtocols None = 0;
 	public const SslProtocols Ssl2 = 12;
 	public const SslProtocols Ssl3 = 48;

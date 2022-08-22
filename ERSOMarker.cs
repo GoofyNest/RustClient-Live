@@ -1,6 +1,5 @@
 public class ERSOMarker // TypeDefIndex: 7236
-{	// Fields
-	public SideObject sideObject; // 0x10
+{	public SideObject sideObject; // 0x10
 	public double id; // 0x18
 	public bool active; // 0x20
 	public float startOffset; // 0x24
@@ -24,12 +23,9 @@ public class ERSOMarker // TypeDefIndex: 7236
 	public float rotationDistance; // 0xA8
 	public float rotationCenter; // 0xAC
 
-	// Methods
 
-	// RVA: 0xA553D0 Offset: 0xA547D0 VA: 0x180A553D0
 	public void .ctor(SideObject so, bool flag) { }
 
-	// RVA: 0xA55390 Offset: 0xA54790 VA: 0x180A55390
 	public void OODOOOQQCO(ERSOMarkerExt source) { }
 
 }

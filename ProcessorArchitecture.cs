@@ -1,6 +1,5 @@
 public enum ProcessorArchitecture // TypeDefIndex: 519
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const ProcessorArchitecture None = 0;
 	public const ProcessorArchitecture MSIL = 1;
 	public const ProcessorArchitecture X86 = 2;

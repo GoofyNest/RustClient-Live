@@ -1,19 +1,15 @@
 private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
-{	// Fields
-	internal readonly ConcurrentQueue.Segment.Slot<T>[] _slots; // 0x0
+{	internal readonly ConcurrentQueue.Segment.Slot<T>[] _slots; // 0x0
 	internal readonly int _slotsMask; // 0x0
 	internal PaddedHeadAndTail _headAndTail; // 0x0
 	internal bool _preservedForObservation; // 0x0
 	internal bool _frozenForEnqueues; // 0x0
 	internal ConcurrentQueue.Segment<T> _nextSegment; // 0x0
 
-	// Properties
 	internal int Capacity { get; }
 	internal int FreezeOffset { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor(int boundedLength) { }
 	/* GenericInstMethod :
 	|
@@ -24,7 +20,6 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	|-ConcurrentQueue.Segment<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal int get_Capacity() { }
 	/* GenericInstMethod :
 	|
@@ -33,7 +28,6 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	|-ConcurrentQueue.Segment<object>.get_Capacity
 	*/
 
-	// RVA: -1 Offset: -1
 	internal int get_FreezeOffset() { }
 	/* GenericInstMethod :
 	|
@@ -42,7 +36,6 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	|-ConcurrentQueue.Segment<object>.get_FreezeOffset
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void EnsureFrozenForEnqueues() { }
 	/* GenericInstMethod :
 	|
@@ -51,7 +44,6 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	|-ConcurrentQueue.Segment<object>.EnsureFrozenForEnqueues
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool TryDequeue(out T item) { }
 	/* GenericInstMethod :
 	|
@@ -62,7 +54,6 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	|-ConcurrentQueue.Segment<object>.TryDequeue
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool TryPeek(out T result, bool resultUsed) { }
 	/* GenericInstMethod :
 	|
@@ -73,7 +64,6 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	|-ConcurrentQueue.Segment<object>.TryPeek
 	*/
 
-	// RVA: -1 Offset: -1
 	public bool TryEnqueue(T item) { }
 	/* GenericInstMethod :
 	|
@@ -87,15 +77,13 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 }
 
 internal struct ConcurrentQueue.Segment.Slot<T> // TypeDefIndex: 1438
-{	// Fields
-	public T Item; // 0x0
+{	public T Item; // 0x0
 	public int SequenceNumber; // 0x0
 
 }
 
 private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 1439
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private T <>2__current; // 0x0
 	public ConcurrentQueue.Segment<T> head; // 0x0
 	public ConcurrentQueue.Segment<T> tail; // 0x0
@@ -111,14 +99,11 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	private int <sTail>5__7; // 0x0
 	private int <i>5__8; // 0x0
 
-	// Properties
 	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -128,7 +113,6 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -137,7 +121,6 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	|-ConcurrentQueue.<Enumerate>d__27<object>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -149,7 +132,6 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -161,7 +143,6 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -173,7 +154,6 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

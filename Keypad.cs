@@ -1,8 +1,6 @@
 public enum Keypad.EFFECT_TYPE // TypeDefIndex: 7666
 {
-// Namespace: 
 public enum Keypad.EFFECT_TYPE // TypeDefIndex: 7666
-	// Fields
 	public int value__; // 0x0
 	public const Keypad.EFFECT_TYPE CHROMA_NONE = 0;
 	public const Keypad.EFFECT_TYPE CHROMA_BREATHING = 1;
@@ -16,8 +14,7 @@ public enum Keypad.EFFECT_TYPE // TypeDefIndex: 7666
 }
 
 public struct Keypad.STATIC_EFFECT_TYPE // TypeDefIndex: 7667
-{	// Fields
-	public int Color; // 0x0
+{	public int Color; // 0x0
 
 }
 

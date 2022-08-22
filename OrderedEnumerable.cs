@@ -1,20 +1,16 @@
 private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerator<TElement>, IDisposable, IEnumerator // TypeDefIndex: 3234
-{	// Fields
-	private int <>1__state; // 0x0
+{	private int <>1__state; // 0x0
 	private TElement <>2__current; // 0x0
 	public OrderedEnumerable<TElement> <>4__this; // 0x0
 	private Buffer<TElement> <buffer>5__1; // 0x0
 	private int[] <map>5__2; // 0x0
 	private int <i>5__3; // 0x0
 
-	// Properties
 	private TElement System.Collections.Generic.IEnumerator<TElement>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
@@ -31,7 +27,6 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 5
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -47,7 +42,6 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	|-OrderedEnumerable.<GetEnumerator>d__1<Resolution>.System.IDisposable.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -80,7 +74,6 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 4
 	private TElement System.Collections.Generic.IEnumerator<TElement>.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -109,7 +102,6 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -142,7 +134,6 @@ private sealed class OrderedEnumerable.<GetEnumerator>d__1<TElement> : IEnumerat
 	*/
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|

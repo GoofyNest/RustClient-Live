@@ -1,6 +1,5 @@
 public enum TypeAttributes // TypeDefIndex: 552
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TypeAttributes VisibilityMask = 7;
 	public const TypeAttributes NotPublic = 0;
 	public const TypeAttributes Public = 1;

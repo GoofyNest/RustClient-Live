@@ -1,6 +1,5 @@
 public class MagnetCraneAudio : MonoBehaviour // TypeDefIndex: 9731
-{	// Fields
-	public MagnetCrane crane; // 0x18
+{	public MagnetCrane crane; // 0x18
 	[HeaderAttribute] // RVA: 0x8D650 Offset: 0x8CA50 VA: 0x18008D650
 	public SoundDefinition engineStartSoundDef; // 0x20
 	public SoundDefinition engineStopSoundDef; // 0x28
@@ -36,24 +35,17 @@ public class MagnetCraneAudio : MonoBehaviour // TypeDefIndex: 9731
 	private TimeSince timeSinceLastCabinSound; // 0xF8
 	private TimeSince timeSinceLastArmSound; // 0xFC
 
-	// Methods
 
-	// RVA: 0x571AB0 Offset: 0x570EB0 VA: 0x180571AB0
 	protected void Awake() { }
 
-	// RVA: 0x571AE0 Offset: 0x570EE0 VA: 0x180571AE0
 	public void ClientTick() { }
 
-	// RVA: 0x572940 Offset: 0x571D40 VA: 0x180572940
 	public void OnClientTickStopped() { }
 
-	// RVA: 0x572BE0 Offset: 0x571FE0 VA: 0x180572BE0
 	private void TryPlayOneshot(SoundDefinition soundDef, GameObject targetParent, ref TimeSince timeSinceLast) { }
 
-	// RVA: 0x572950 Offset: 0x571D50 VA: 0x180572950
 	private void StopAll() { }
 
-	// RVA: 0x2F91F0 Offset: 0x2F85F0 VA: 0x1802F91F0
 	public void .ctor() { }
 
 }

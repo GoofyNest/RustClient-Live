@@ -1,12 +1,9 @@
 private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task<TResult> // TypeDefIndex: 846
-{	// Fields
-	internal static readonly AsyncCallback s_completeFromAsyncResult; // 0x0
+{	internal static readonly AsyncCallback s_completeFromAsyncResult; // 0x0
 	private TInstance m_thisRef; // 0x0
 	private Func<TInstance, IAsyncResult, TResult> m_endMethod; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(TInstance thisRef, Func<TInstance, IAsyncResult, TResult> endMethod) { }
 	/* GenericInstMethod :
 	|
@@ -16,7 +13,6 @@ private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task
 	|-TaskFactory.FromAsyncTrimPromise<VoidTaskResult, object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal static void CompleteFromAsyncResult(IAsyncResult asyncResult) { }
 	/* GenericInstMethod :
 	|
@@ -30,7 +26,6 @@ private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task
 	|-TaskFactory.FromAsyncTrimPromise<VoidTaskResult, object>.CompleteFromAsyncResult
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void Complete(TInstance thisRef, Func<TInstance, IAsyncResult, TResult> endMethod, IAsyncResult asyncResult, bool requiresSynchronization) { }
 	/* GenericInstMethod :
 	|
@@ -44,7 +39,6 @@ private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task
 	|-TaskFactory.FromAsyncTrimPromise<VoidTaskResult, object>.Complete
 	*/
 
-	// RVA: -1 Offset: -1
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
@@ -61,14 +55,11 @@ private sealed class TaskFactory.FromAsyncTrimPromise<TResult, TInstance> : Task
 }
 
 private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex: 847
-{	// Fields
-	public Func<IAsyncResult, TResult> endFunction; // 0x0
+{	public Func<IAsyncResult, TResult> endFunction; // 0x0
 	public Action<IAsyncResult> endAction; // 0x0
 	public Task<TResult> promise; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -89,7 +80,6 @@ private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex:
 	|-TaskFactory.<>c__DisplayClass35_0<VoidTaskResult>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void <FromAsyncImpl>b__0(IAsyncResult iar) { }
 	/* GenericInstMethod :
 	|
@@ -113,13 +103,10 @@ private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex:
 }
 
 private sealed class TaskFactory.<>c__DisplayClass35_1<TResult> // TypeDefIndex: 848
-{	// Fields
-	public AtomicBoolean invoked; // 0x0
+{	public AtomicBoolean invoked; // 0x0
 	public TaskFactory.<>c__DisplayClass35_0<TResult> CS$<>8__locals1; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -140,7 +127,6 @@ private sealed class TaskFactory.<>c__DisplayClass35_1<TResult> // TypeDefIndex:
 	|-TaskFactory.<>c__DisplayClass35_1<VoidTaskResult>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void <FromAsyncImpl>b__1(IAsyncResult iar) { }
 	/* GenericInstMethod :
 	|
@@ -164,14 +150,11 @@ private sealed class TaskFactory.<>c__DisplayClass35_1<TResult> // TypeDefIndex:
 }
 
 private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> // TypeDefIndex: 849
-{	// Fields
-	public Func<IAsyncResult, TResult> endFunction; // 0x0
+{	public Func<IAsyncResult, TResult> endFunction; // 0x0
 	public Action<IAsyncResult> endAction; // 0x0
 	public Task<TResult> promise; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -180,7 +163,6 @@ private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> //
 	|-TaskFactory.<>c__DisplayClass41_0<object, object, object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void <FromAsyncImpl>b__0(IAsyncResult iar) { }
 	/* GenericInstMethod :
 	|
@@ -192,13 +174,10 @@ private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> //
 }
 
 private sealed class TaskFactory.<>c__DisplayClass41_1<TResult, TArg1, TArg2> // TypeDefIndex: 850
-{	// Fields
-	public AtomicBoolean invoked; // 0x0
+{	public AtomicBoolean invoked; // 0x0
 	public TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> CS$<>8__locals1; // 0x0
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
@@ -207,7 +186,6 @@ private sealed class TaskFactory.<>c__DisplayClass41_1<TResult, TArg1, TArg2> //
 	|-TaskFactory.<>c__DisplayClass41_1<object, object, object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	internal void <FromAsyncImpl>b__1(IAsyncResult iar) { }
 	/* GenericInstMethod :
 	|
@@ -219,33 +197,24 @@ private sealed class TaskFactory.<>c__DisplayClass41_1<TResult, TArg1, TArg2> //
 }
 
 public class TaskFactory // TypeDefIndex: 884
-{	// Fields
-	private CancellationToken m_defaultCancellationToken; // 0x10
+{	private CancellationToken m_defaultCancellationToken; // 0x10
 	private TaskScheduler m_defaultScheduler; // 0x18
 	private TaskCreationOptions m_defaultCreationOptions; // 0x20
 	private TaskContinuationOptions m_defaultContinuationOptions; // 0x24
 
-	// Methods
 
-	// RVA: 0x1603F20 Offset: 0x1603320 VA: 0x181603F20
 	public void .ctor() { }
 
-	// RVA: 0x1603CE0 Offset: 0x16030E0 VA: 0x181603CE0
 	public void .ctor(CancellationToken cancellationToken) { }
 
-	// RVA: 0x1603D60 Offset: 0x1603160 VA: 0x181603D60
 	public void .ctor(CancellationToken cancellationToken, TaskCreationOptions creationOptions, TaskContinuationOptions continuationOptions, TaskScheduler scheduler) { }
 
-	// RVA: 0x1603740 Offset: 0x1602B40 VA: 0x181603740
 	internal static void CheckCreationOptions(TaskCreationOptions creationOptions) { }
 
-	// RVA: 0x1603C70 Offset: 0x1603070 VA: 0x181603C70
 	public Task FromAsync(Func<AsyncCallback, object, IAsyncResult> beginMethod, Action<IAsyncResult> endMethod, object state) { }
 
-	// RVA: 0x1603C10 Offset: 0x1603010 VA: 0x181603C10
 	public Task FromAsync(Func<AsyncCallback, object, IAsyncResult> beginMethod, Action<IAsyncResult> endMethod, object state, TaskCreationOptions creationOptions) { }
 
-	// RVA: -1 Offset: -1
 	public Task<TResult> FromAsync<TResult>(Func<AsyncCallback, object, IAsyncResult> beginMethod, Func<IAsyncResult, TResult> endMethod, object state) { }
 	/* GenericInstMethod :
 	|
@@ -254,28 +223,21 @@ public class TaskFactory // TypeDefIndex: 884
 	|-TaskFactory.FromAsync<object>
 	*/
 
-	// RVA: 0x16037B0 Offset: 0x1602BB0 VA: 0x1816037B0
 	internal static void CheckFromAsyncOptions(TaskCreationOptions creationOptions, bool hasBeginMethod) { }
 
-	// RVA: 0x16039D0 Offset: 0x1602DD0 VA: 0x1816039D0
 	internal static Task<Task> CommonCWAnyLogic(IList<Task> tasks) { }
 
-	// RVA: 0x16038C0 Offset: 0x1602CC0 VA: 0x1816038C0
 	internal static void CheckMultiTaskContinuationOptions(TaskContinuationOptions continuationOptions) { }
 
 }
 
 internal sealed class TaskFactory.CompleteOnInvokePromise : Task<Task>, ITaskCompletionAction // TypeDefIndex: 885
-{	// Fields
-	private IList<Task> _tasks; // 0x58
+{	private IList<Task> _tasks; // 0x58
 	private int m_firstTaskAlreadyCompleted; // 0x60
 
-	// Methods
 
-	// RVA: 0x1600A60 Offset: 0x15FFE60 VA: 0x181600A60
 	public void .ctor(IList<Task> tasks) { }
 
-	// RVA: 0x1600840 Offset: 0x15FFC40 VA: 0x181600840 Slot: 20
 	public void Invoke(Task completingTask) { }
 
 }

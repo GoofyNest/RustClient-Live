@@ -1,6 +1,5 @@
 public enum GlyphPackingMode // TypeDefIndex: 4119
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GlyphPackingMode BestShortSideFit = 0;
 	public const GlyphPackingMode BestLongSideFit = 1;
 	public const GlyphPackingMode BestAreaFit = 2;

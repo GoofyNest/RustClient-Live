@@ -1,6 +1,5 @@
 public class SubbandLayer2 : ASubband // TypeDefIndex: 7406
-{	// Fields
-	internal static readonly float[] Grouping5Bits; // 0x0
+{	internal static readonly float[] Grouping5Bits; // 0x0
 	internal static readonly float[] Grouping7Bits; // 0x8
 	internal static readonly float[] Grouping10Bits; // 0x10
 	internal static readonly int[] TableAb1Codelength; // 0x18
@@ -41,33 +40,23 @@ public class SubbandLayer2 : ASubband // TypeDefIndex: 7406
 	protected int Scfsi; // 0x5C
 	protected readonly int Subbandnumber; // 0x60
 
-	// Methods
 
-	// RVA: 0x690980 Offset: 0x68FD80 VA: 0x180690980
 	internal void .ctor(int subbandnumber) { }
 
-	// RVA: 0x68EA10 Offset: 0x68DE10 VA: 0x18068EA10 Slot: 8
 	protected virtual int GetAllocationLength(Header header) { }
 
-	// RVA: 0x68EA80 Offset: 0x68DE80 VA: 0x18068EA80 Slot: 9
 	protected virtual void PrepareForSampleRead(Header header, int allocation, int channel, float[] factor, int[] codelength, float[] c, float[] d) { }
 
-	// RVA: 0x68F700 Offset: 0x68EB00 VA: 0x18068F700 Slot: 4
 	internal override void ReadAllocation(Bitstream stream, Header header, Crc16 crc) { }
 
-	// RVA: 0x68FB50 Offset: 0x68EF50 VA: 0x18068FB50 Slot: 10
 	internal virtual void ReadScaleFactorSelection(Bitstream stream, Crc16 crc) { }
 
-	// RVA: 0x68FBB0 Offset: 0x68EFB0 VA: 0x18068FBB0 Slot: 5
 	internal override void ReadScaleFactor(Bitstream stream, Header header) { }
 
-	// RVA: 0x68F780 Offset: 0x68EB80 VA: 0x18068F780 Slot: 6
 	internal override bool ReadSampleData(Bitstream stream) { }
 
-	// RVA: 0x68F5D0 Offset: 0x68E9D0 VA: 0x18068F5D0 Slot: 7
 	internal override bool PutNextSample(int channels, SynthesisFilter filter1, SynthesisFilter filter2) { }
 
-	// RVA: 0x68FFA0 Offset: 0x68F3A0 VA: 0x18068FFA0
 	private static void .cctor() { }
 
 }

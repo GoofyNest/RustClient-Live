@@ -1,8 +1,6 @@
 public enum IsolationLevel // TypeDefIndex: 3981
 {
-// Namespace: System.Transactions
 public enum IsolationLevel // TypeDefIndex: 3981
-	// Fields
 	public int value__; // 0x0
 	public const IsolationLevel Serializable = 0;
 	public const IsolationLevel RepeatableRead = 1;
@@ -15,8 +13,7 @@ public enum IsolationLevel // TypeDefIndex: 3981
 }
 
 public enum IsolationLevel // TypeDefIndex: 4273
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const IsolationLevel Unspecified = -1;
 	public const IsolationLevel Chaos = 16;
 	public const IsolationLevel ReadUncommitted = 256;

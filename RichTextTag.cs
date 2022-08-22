@@ -1,6 +1,5 @@
 internal enum RichTextTag // TypeDefIndex: 6814
-{	// Fields
-	public uint value__; // 0x0
+{	public uint value__; // 0x0
 	public const RichTextTag BOLD = 66;
 	public const RichTextTag SLASH_BOLD = 1613;
 	public const RichTextTag ITALIC = 73;

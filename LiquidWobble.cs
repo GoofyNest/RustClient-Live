@@ -1,6 +1,5 @@
 public class LiquidWobble : MonoBehaviour // TypeDefIndex: 10684
-{	// Fields
-	private Renderer rend; // 0x18
+{	private Renderer rend; // 0x18
 	private Vector3 lastPos; // 0x20
 	private Vector3 velocity; // 0x2C
 	private Vector3 lastRot; // 0x38
@@ -25,21 +24,15 @@ public class LiquidWobble : MonoBehaviour // TypeDefIndex: 10684
 	private static int waterLevelID; // 0x10
 	private static int turbulenceID; // 0x14
 
-	// Methods
 
-	// RVA: 0x4F3DF0 Offset: 0x4F31F0 VA: 0x1804F3DF0
 	private void Awake() { }
 
-	// RVA: 0x4F3EF0 Offset: 0x4F32F0 VA: 0x1804F3EF0
 	private void Update() { }
 
-	// RVA: 0x4F3ED0 Offset: 0x4F32D0 VA: 0x1804F3ED0
 	private float CalculateWaterLevel() { }
 
-	// RVA: 0x4F4470 Offset: 0x4F3870 VA: 0x1804F4470
 	public void .ctor() { }
 
-	// RVA: 0x4F43D0 Offset: 0x4F37D0 VA: 0x1804F43D0
 	private static void .cctor() { }
 
 }

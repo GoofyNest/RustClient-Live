@@ -1,10 +1,7 @@
 internal static class SetPropertyUtility // TypeDefIndex: 5006
-{	// Methods
-
-	// RVA: 0xC46AC0 Offset: 0xC45EC0 VA: 0x180C46AC0
+{
 	public static bool SetColor(ref Color currentValue, Color newValue) { }
 
-	// RVA: -1 Offset: -1
 	public static bool SetStruct<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|
@@ -43,7 +40,6 @@ internal static class SetPropertyUtility // TypeDefIndex: 5006
 	|-SetPropertyUtility.SetStruct<SpriteState>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool SetClass<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|
@@ -62,12 +58,9 @@ internal static class SetPropertyUtility // TypeDefIndex: 5006
 }
 
 internal static class SetPropertyUtility // TypeDefIndex: 6797
-{	// Methods
-
-	// RVA: 0xC46AC0 Offset: 0xC45EC0 VA: 0x180C46AC0
+{
 	public static bool SetColor(ref Color currentValue, Color newValue) { }
 
-	// RVA: -1 Offset: -1
 	public static bool SetEquatableStruct<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|
@@ -75,7 +68,6 @@ internal static class SetPropertyUtility // TypeDefIndex: 6797
 	|-SetPropertyUtility.SetEquatableStruct<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool SetStruct<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|
@@ -100,7 +92,6 @@ internal static class SetPropertyUtility // TypeDefIndex: 6797
 	|-SetPropertyUtility.SetStruct<float>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool SetClass<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|
@@ -123,12 +114,9 @@ internal static class SetPropertyUtility // TypeDefIndex: 6797
 }
 
 internal static class SetPropertyUtility // TypeDefIndex: 11729
-{	// Methods
-
-	// RVA: 0xC46AC0 Offset: 0xC45EC0 VA: 0x180C46AC0
+{
 	public static bool SetColor(ref Color currentValue, Color newValue) { }
 
-	// RVA: -1 Offset: -1
 	public static bool SetEquatableStruct<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|
@@ -136,10 +124,8 @@ internal static class SetPropertyUtility // TypeDefIndex: 11729
 	|-SetPropertyUtility.SetEquatableStruct<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static bool SetStruct<T>(ref T currentValue, T newValue) { }
 
-	// RVA: -1 Offset: -1
 	public static bool SetClass<T>(ref T currentValue, T newValue) { }
 	/* GenericInstMethod :
 	|

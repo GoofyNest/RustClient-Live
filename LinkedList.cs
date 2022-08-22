@@ -1,18 +1,14 @@
 public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator, ISerializable, IDeserializationCallback // TypeDefIndex: 3116
-{	// Fields
-	private LinkedList<T> _list; // 0x0
+{	private LinkedList<T> _list; // 0x0
 	private LinkedListNode<T> _node; // 0x0
 	private int _version; // 0x0
 	private T _current; // 0x0
 	private int _index; // 0x0
 
-	// Properties
 	public T Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
-	// RVA: -1 Offset: -1
 	internal void .ctor(LinkedList<T> list) { }
 	/* GenericInstMethod :
 	|
@@ -24,7 +20,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1
 	private void .ctor(SerializationInfo info, StreamingContext context) { }
 	/* GenericInstMethod :
 	|
@@ -38,7 +33,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<object>..ctor
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 4
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -54,7 +48,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<KeyValuePair<uint, object>>.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
@@ -68,7 +61,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<object>.System.Collections.IEnumerator.get_Current
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 6
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
@@ -86,7 +78,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<KeyValuePair<uint, object>>.MoveNext
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
@@ -100,7 +91,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<object>.System.Collections.IEnumerator.Reset
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
@@ -114,7 +104,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<object>.Dispose
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 9
 	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 	/* GenericInstMethod :
 	|
@@ -128,7 +117,6 @@ public struct LinkedList.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerato
 	|-LinkedList.Enumerator<object>.System.Runtime.Serialization.ISerializable.GetObjectData
 	*/
 
-	// RVA: -1 Offset: -1 Slot: 10
 	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
 	/* GenericInstMethod :
 	|

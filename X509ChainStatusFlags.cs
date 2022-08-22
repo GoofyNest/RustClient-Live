@@ -1,6 +1,5 @@
 public enum X509ChainStatusFlags // TypeDefIndex: 2802
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const X509ChainStatusFlags NoError = 0;
 	public const X509ChainStatusFlags NotTimeValid = 1;
 	public const X509ChainStatusFlags NotTimeNested = 2;

@@ -1,6 +1,5 @@
 public class SoundDefinition : ScriptableObject // TypeDefIndex: 9026
-{	// Fields
-	public GameObjectRef template; // 0x18
+{	public GameObjectRef template; // 0x18
 	[HorizontalAttribute] // RVA: 0xC8DE0 Offset: 0xC81E0 VA: 0x1800C8DE0
 	public List<WeightedAudioClip> weightedAudioClips; // 0x20
 	public List<SoundDefinition.DistanceAudioClipList> distanceAudioClips; // 0x28
@@ -39,40 +38,29 @@ public class SoundDefinition : ScriptableObject // TypeDefIndex: 9026
 	public AnimationCurve spreadCurve; // 0x98
 	public bool useCustomSpreadCurve; // 0xA0
 
-	// Properties
 	public float maxDistance { get; }
 
-	// Methods
 
-	// RVA: 0xA70700 Offset: 0xA6FB00 VA: 0x180A70700
 	public float get_maxDistance() { }
 
-	// RVA: 0xA70310 Offset: 0xA6F710 VA: 0x180A70310
 	public float GetLength() { }
 
-	// RVA: 0xA705C0 Offset: 0xA6F9C0 VA: 0x180A705C0
 	public Sound Play() { }
 
-	// RVA: 0xA70580 Offset: 0xA6F980 VA: 0x180A70580
 	public Sound Play(GameObject forGameObject) { }
 
-	// RVA: 0xA701D0 Offset: 0xA6F5D0 VA: 0x180A701D0
 	public AudioClip GetClip() { }
 
-	// RVA: 0xA70600 Offset: 0xA6FA00 VA: 0x180A70600
 	public void .ctor() { }
 
 }
 
 public class SoundDefinition.DistanceAudioClipList // TypeDefIndex: 9027
-{	// Fields
-	public int distance; // 0x10
+{	public int distance; // 0x10
 	[HorizontalAttribute] // RVA: 0xC8DE0 Offset: 0xC81E0 VA: 0x1800C8DE0
 	public List<WeightedAudioClip> audioClips; // 0x18
 
-	// Methods
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	public void .ctor() { }
 
 }

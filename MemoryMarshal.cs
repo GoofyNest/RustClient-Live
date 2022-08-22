@@ -1,7 +1,5 @@
 public static class MemoryMarshal // TypeDefIndex: 6735
-{	// Methods
-
-	// RVA: -1 Offset: -1
+{
 	public static ref T GetReference<T>(Span<T> span) { }
 	/* GenericInstMethod :
 	|
@@ -10,7 +8,6 @@ public static class MemoryMarshal // TypeDefIndex: 6735
 	|-MemoryMarshal.GetReference<object>
 	*/
 
-	// RVA: -1 Offset: -1
 	public static Span<TTo> Cast<TFrom, TTo>(Span<TFrom> span) { }
 	/* GenericInstMethod :
 	|

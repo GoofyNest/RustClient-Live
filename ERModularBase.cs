@@ -1,6 +1,5 @@
 public class ERModularBase : MonoBehaviour // TypeDefIndex: 7199
-{	// Fields
-	public int updateInt; // 0x18
+{	public int updateInt; // 0x18
 	public bool newSplatMapRestoreCode; // 0x1C
 	public int toolbarInt; // 0x20
 	public int oldToolbarInt; // 0x24
@@ -358,252 +357,178 @@ public class ERModularBase : MonoBehaviour // TypeDefIndex: 7199
 	public Material soSectionMaterial; // 0x718
 	public bool v32b4Flag; // 0x720
 
-	// Methods
 
-	// RVA: 0x4693E0 Offset: 0x4687E0 VA: 0x1804693E0
 	public void OnBuildModeEnter() { }
 
-	// RVA: 0x469610 Offset: 0x468A10 VA: 0x180469610
 	public void OnRoadUpdate(ERRoad road) { }
 
-	// RVA: 0x4696C0 Offset: 0x468AC0 VA: 0x1804696C0
 	public void RoadNetworkInit() { }
 
-	// RVA: 0x469F40 Offset: 0x469340 VA: 0x180469F40
 	public void UpdateQueue() { }
 
-	// RVA: 0x4696E0 Offset: 0x468AE0 VA: 0x1804696E0
 	public void SetRoadTypeList() { }
 
-	// RVA: 0x469F70 Offset: 0x469370 VA: 0x180469F70
 	public void UpdateRoadTypeStatus() { }
 
-	// RVA: 0x461470 Offset: 0x460870 VA: 0x180461470
 	public void OCOCQOODCO() { }
 
-	// RVA: 0x461730 Offset: 0x460B30 VA: 0x180461730
 	public void OCQODDDCQQ() { }
 
-	// RVA: 0x462A50 Offset: 0x461E50 VA: 0x180462A50
 	public void ODODOQOODO() { }
 
-	// RVA: 0x462D20 Offset: 0x462120 VA: 0x180462D20
 	public void OOCQCCCQCD() { }
 
-	// RVA: 0x465E70 Offset: 0x465270 VA: 0x180465E70
 	public void OQDQQODDCD(GameObject go, Vector3 pos) { }
 
-	// RVA: 0x461BF0 Offset: 0x460FF0 VA: 0x180461BF0
 	public void ODCDQQCQOC() { }
 
-	// RVA: 0x460920 Offset: 0x45FD20 VA: 0x180460920
 	public ERCrossingPrefabs OCDQQCQCQQ(GameObject prefab, ERModularRoad OCCQOOOQQO, int OCODDDQOQC, int connectionSegment) { }
 
-	// RVA: 0x45E1C0 Offset: 0x45D5C0 VA: 0x18045E1C0
 	public ERCrossingPrefabs AttachConnector(ERModularRoad OCCQOOOQQO, int OCODDDQOQC) { }
 
-	// RVA: 0x4602D0 Offset: 0x45F6D0 VA: 0x1804602D0
 	public void OCCDCDQOOD(ERModularRoad OCCQOOOQQO, int selectedMarker) { }
 
-	// RVA: 0x463C60 Offset: 0x463060 VA: 0x180463C60
 	public int OOOCOQQDQO(ERModularRoad OCCQOOOQQO, ERCrossingPrefabs prefabScript, int OCODDDQOQC, int startConnection, bool swapFlag) { }
 
-	// RVA: 0x464C70 Offset: 0x464070 VA: 0x180464C70
 	public int OOQQQQCCOC(string roadShapeString, List<string> strings, List<QDOODOQQDQODD> crossingElements) { }
 
-	// RVA: 0x463F50 Offset: 0x463350 VA: 0x180463F50
 	public GameObject OOQDQOOQQQ(GameObject prefab, Vector3 hitPos, ref GameObject newPrefab, ref ERCrossingPrefabs prefabScript, ref ERCrossings crossingsScript) { }
 
-	// RVA: 0x465F40 Offset: 0x465340 VA: 0x180465F40
 	public void OQOCDOOQCQ(ERCrossingPrefabs prefabScript) { }
 
-	// RVA: 0x465500 Offset: 0x464900 VA: 0x180465500
 	public void OQCDDCDDQC(GameObject newPrefab, GameObject prefab) { }
 
-	// RVA: 0x462120 Offset: 0x461520 VA: 0x180462120
 	public void ODDQCOQCQC() { }
 
-	// RVA: 0x463060 Offset: 0x462460 VA: 0x180463060
 	public List<ERTerrain> OODQQODOOC(ref bool multTerrainResFlag) { }
 
-	// RVA: 0x462080 Offset: 0x461480 VA: 0x180462080
 	public void ODDCCODOOC() { }
 
-	// RVA: 0x466B60 Offset: 0x465F60 VA: 0x180466B60
 	public void OQQQDCQOOC(bool restoreTerrain) { }
 
-	// RVA: 0x4669E0 Offset: 0x465DE0 VA: 0x1804669E0
 	public void OQQOOCQQCD(Vector3 pos) { }
 
-	// RVA: 0x460610 Offset: 0x45FA10 VA: 0x180460610
 	public void OCDDQOCDCO(ref Vector3 pos) { }
 
-	// RVA: 0x4660F0 Offset: 0x4654F0 VA: 0x1804660F0
 	public Vector3 OQOODODDQO(Vector3 pos) { }
 
-	// RVA: 0x45FF90 Offset: 0x45F390 VA: 0x18045FF90
 	public Vector2 GetTerrainUV(Vector3 pos) { }
 
-	// RVA: 0x466380 Offset: 0x465780 VA: 0x180466380
 	public Terrain OQOQDDOQOD(ref Vector3 pos, bool setSelected) { }
 
-	// RVA: 0x465CF0 Offset: 0x4650F0 VA: 0x180465CF0
 	public void OQCQQQDQQD() { }
 
-	// RVA: 0x469E50 Offset: 0x469250 VA: 0x180469E50
 	public void UpdateLODLevels(int levels) { }
 
-	// RVA: 0x46A140 Offset: 0x469540 VA: 0x18046A140
 	public void UpdateSideObjectsInScene() { }
 
-	// RVA: 0x462BA0 Offset: 0x461FA0 VA: 0x180462BA0
 	public void OOCDOOCQQC() { }
 
-	// RVA: 0x4667A0 Offset: 0x465BA0 VA: 0x1804667A0
 	public void OQQDDOQQOO() { }
 
-	// RVA: 0x45FA60 Offset: 0x45EE60 VA: 0x18045FA60
 	public ERRoadType[] GetRoadTypes() { }
 
-	// RVA: 0x45EAA0 Offset: 0x45DEA0 VA: 0x18045EAA0
 	public ERRoadType GetRoadTypeByName(string name) { }
 
-	// RVA: 0x45E6C0 Offset: 0x45DAC0 VA: 0x18045E6C0
 	public string GetNewRoadName(double id) { }
 
-	// RVA: 0x45E920 Offset: 0x45DD20 VA: 0x18045E920
 	public string GetRoadNameByID(double id) { }
 
-	// RVA: 0x465390 Offset: 0x464790 VA: 0x180465390
 	public SideObject OQCDCQCDCQ(string name) { }
 
-	// RVA: 0x4601B0 Offset: 0x45F5B0 VA: 0x1804601B0
 	public void InitLoadImage(string url) { }
 
-	// RVA: 0x460240 Offset: 0x45F640 VA: 0x180460240
 	private IEnumerator LoadImage(string url) { }
 
-	// RVA: 0x45E630 Offset: 0x45DA30 VA: 0x18045E630
 	public IEnumerator BuildTerrainRoutine(ERRoadNetwork roadNetwork) { }
 
-	// RVA: 0x460510 Offset: 0x45F910 VA: 0x180460510
 	public float OCCQDCCCOD(Vector3 fwd, Vector3 targetDir, Vector3 up) { }
 
-	// RVA: 0x46A2E0 Offset: 0x4696E0 VA: 0x18046A2E0
 	public void .ctor() { }
 
-	// RVA: 0x46A290 Offset: 0x469690 VA: 0x18046A290
 	private static void .cctor() { }
 
 }
 
 public sealed class ERModularBase.RoadUpdate : MulticastDelegate // TypeDefIndex: 7200
-{	// Methods
-
-	// RVA: 0x4971F0 Offset: 0x4965F0 VA: 0x1804971F0
+{
 	public void .ctor(object object, IntPtr method) { }
 
-	// RVA: 0x497240 Offset: 0x496640 VA: 0x180497240 Slot: 12
 	public virtual void Invoke(ERRoad road) { }
 
-	// RVA: 0x497210 Offset: 0x496610 VA: 0x180497210 Slot: 13
 	public virtual IAsyncResult BeginInvoke(ERRoad road, AsyncCallback callback, object object) { }
 
-	// RVA: 0x497050 Offset: 0x496450 VA: 0x180497050 Slot: 14
 	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class ERModularBase.OnBuildMode : MulticastDelegate // TypeDefIndex: 7201
-{	// Methods
-
-	// RVA: 0x4971F0 Offset: 0x4965F0 VA: 0x1804971F0
+{
 	public void .ctor(object object, IntPtr method) { }
 
-	// RVA: 0x497060 Offset: 0x496460 VA: 0x180497060 Slot: 12
 	public virtual void Invoke() { }
 
-	// RVA: 0x497020 Offset: 0x496420 VA: 0x180497020 Slot: 13
 	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
 
-	// RVA: 0x497050 Offset: 0x496450 VA: 0x180497050 Slot: 14
 	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 private sealed class ERModularBase.ᙃ : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 7202
-{	// Fields
-	private int ᙅ; // 0x10
+{	private int ᙅ; // 0x10
 	private object 4AAAA; // 0x18
 	public string url; // 0x20
 	public ERModularBase <>4__this; // 0x28
 	private WWW 5AAA1; // 0x30
 
-	// Properties
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497770 Offset: 0x496B70 VA: 0x180497770
 	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0 Slot: 5
 	private void System.IDisposable.Dispose() { }
 
-	// RVA: 0x4975D0 Offset: 0x4969D0 VA: 0x1804975D0 Slot: 6
 	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710 Slot: 4
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497720 Offset: 0x496B20 VA: 0x180497720 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
 private sealed class ERModularBase.ᙄ : IEnumerator<object>, IDisposable, IEnumerator // TypeDefIndex: 7203
-{	// Fields
-	private int ᙅ; // 0x10
+{	private int ᙅ; // 0x10
 	private object 4AAAA; // 0x18
 	public ERRoadNetwork roadNetwork; // 0x20
 	public ERModularBase <>4__this; // 0x28
 
-	// Properties
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
 
-	// Methods
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497770 Offset: 0x496B70 VA: 0x180497770
 	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0 Slot: 5
 	private void System.IDisposable.Dispose() { }
 
-	// RVA: 0x4977A0 Offset: 0x496BA0 VA: 0x1804977A0 Slot: 6
 	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710 Slot: 4
 	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497850 Offset: 0x496C50 VA: 0x180497850 Slot: 8
 	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	// RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710 Slot: 7
 	private object System.Collections.IEnumerator.get_Current() { }
 
 }

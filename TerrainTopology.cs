@@ -1,6 +1,5 @@
 public static class TerrainTopology // TypeDefIndex: 7785
-{	// Fields
-	public const int COUNT = 31;
+{	public const int COUNT = 31;
 	public const int EVERYTHING = -1;
 	public const int NOTHING = 0;
 	public const int FIELD = 1;
@@ -41,8 +40,7 @@ public static class TerrainTopology // TypeDefIndex: 7785
 }
 
 public enum TerrainTopology.Enum // TypeDefIndex: 7786
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const TerrainTopology.Enum Field = 1;
 	public const TerrainTopology.Enum Cliff = 2;
 	public const TerrainTopology.Enum Summit = 4;

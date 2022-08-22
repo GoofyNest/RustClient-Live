@@ -1,16 +1,11 @@
 public abstract class ParameterOverride // TypeDefIndex: 11820
-{	// Fields
-	public bool overrideState; // 0x10
+{	public bool overrideState; // 0x10
 
-	// Methods
 
-	// RVA: -1 Offset: -1 Slot: 4
 	internal abstract void Interp(ParameterOverride from, ParameterOverride to, float t);
 
-	// RVA: -1 Offset: -1 Slot: 5
 	public abstract int GetHash();
 
-	// RVA: -1 Offset: -1
 	public T GetValue<T>() { }
 	/* GenericInstMethod :
 	|
@@ -38,16 +33,12 @@ public abstract class ParameterOverride // TypeDefIndex: 11820
 	|-ParameterOverride.GetValue<Vector3>
 	*/
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0 Slot: 6
 	protected internal virtual void OnEnable() { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0 Slot: 7
 	protected internal virtual void OnDisable() { }
 
-	// RVA: -1 Offset: -1 Slot: 8
 	internal abstract void SetValue(ParameterOverride parameter);
 
-	// RVA: 0x2FB0E0 Offset: 0x2FA4E0 VA: 0x1802FB0E0
 	protected void .ctor() { }
 
 }

@@ -1,6 +1,5 @@
 public enum GlyphLoadFlags // TypeDefIndex: 4116
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GlyphLoadFlags LOAD_DEFAULT = 0;
 	public const GlyphLoadFlags LOAD_NO_SCALE = 1;
 	public const GlyphLoadFlags LOAD_NO_HINTING = 2;

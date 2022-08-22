@@ -1,6 +1,5 @@
 public class ERRoundabouts : MonoBehaviour // TypeDefIndex: 7175
-{	// Fields
-	public float roundAboutRadius; // 0x18
+{	public float roundAboutRadius; // 0x18
 	public float prevRoundAboutRadius; // 0x1C
 	public float roundAboutResolution; // 0x20
 	public float prevRoundAboutResolution; // 0x24
@@ -110,93 +109,63 @@ public class ERRoundabouts : MonoBehaviour // TypeDefIndex: 7175
 	public Vector3 testIndentMiddlePoint; // 0x2BC
 	public List<QDQDOOQQDQODD> roadTypesDynamic; // 0x2C8
 
-	// Methods
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	private void Start() { }
 
-	// RVA: 0xB569F0 Offset: 0xB55DF0 VA: 0x180B569F0
 	public bool UpdateToRoadType(QDQDOOQQDQODD sourcePreset) { }
 
-	// RVA: 0xB564B0 Offset: 0xB558B0 VA: 0x180B564B0
 	public void ResetData() { }
 
-	// RVA: 0xB4EDE0 Offset: 0xB4E1E0 VA: 0x180B4EDE0
 	public void ODQDCCOQOD() { }
 
-	// RVA: 0xB51880 Offset: 0xB50C80 VA: 0x180B51880
 	public void OOQQDCCCCC() { }
 
-	// RVA: 0xB47C90 Offset: 0xB47090 VA: 0x180B47C90
 	public void GetConnectionData() { }
 
-	// RVA: 0xB56830 Offset: 0xB55C30 VA: 0x180B56830
 	public void UpdateMinMaxInts() { }
 
-	// RVA: 0xB47B30 Offset: 0xB46F30 VA: 0x180B47B30
 	public void ChecknewSegmentInt() { }
 
-	// RVA: 0xB483A0 Offset: 0xB477A0 VA: 0x180B483A0
 	public int GetRoadPresetInt(double id) { }
 
-	// RVA: 0xB48D70 Offset: 0xB48170 VA: 0x180B48D70
 	public void OCQCQODOQC(ERRoundabouts source, bool refreshFlag) { }
 
-	// RVA: 0xB48550 Offset: 0xB47950 VA: 0x180B48550
 	public void OCDCOQOOQO() { }
 
-	// RVA: 0xB4C8A0 Offset: 0xB4BCA0 VA: 0x180B4C8A0
 	public void ODCDCDDOCC(List<SidewalkPresetClass> sidewalkPresets, int el) { }
 
-	// RVA: 0xB507D0 Offset: 0xB4FBD0 VA: 0x180B507D0
 	public void OOCDDOQDDO() { }
 
-	// RVA: 0xB54620 Offset: 0xB53A20 VA: 0x180B54620
 	public void OQQCDOQOOQ() { }
 
-	// RVA: 0xB51CF0 Offset: 0xB510F0 VA: 0x180B51CF0
 	public void OQCQDQDCOD(int currentIndex) { }
 
-	// RVA: 0xB54CB0 Offset: 0xB540B0 VA: 0x180B54CB0
 	public void OQQOCQQDOQ(ref List<Vector3> OCCDQOCCDQ, ref List<Vector3> innerSegmentPoints, int leftRight, int startElement, Vector3 leftPoint, Vector3 rightPoint, Vector3 forward, int currentIndex) { }
 
-	// RVA: 0xB4F900 Offset: 0xB4ED00 VA: 0x180B4F900
 	public void OOCCDCDOQC(int currentIndex) { }
 
-	// RVA: 0xB4D020 Offset: 0xB4C420 VA: 0x180B4D020
 	public void ODDDOCDCQO() { }
 
-	// RVA: 0xB53F20 Offset: 0xB53320 VA: 0x180B53F20
 	public void OQCQQCQDCQ(int el, List<int> trIntArray, List<float> uvArray, List<List<int>> leftSidewalkIntArray, List<List<int>> rightSidewalkIntArray, int startend) { }
 
-	// RVA: 0xB48600 Offset: 0xB47A00 VA: 0x180B48600
 	public void OCDDOCDDOQ(List<Vector3> meshVecs, List<int> connectionVecInts, ref List<Vector2> roadShapeVecs, List<Vector2> vecArrays, List<List<Vector3>> leftSidewalkArray, List<List<Vector3>> rightSidewalkArray, int connectionElement, int startend) { }
 
-	// RVA: 0xB4E8E0 Offset: 0xB4DCE0 VA: 0x180B4E8E0
 	public void ODQCODQDDQ(int el, Material roadMaterial, int leftVecCount, int rightVecCount) { }
 
-	// RVA: 0x3628C0 Offset: 0x361CC0 VA: 0x1803628C0
 	public void ODCQOCOOQO() { }
 
-	// RVA: 0xB4AD50 Offset: 0xB4A150 VA: 0x180B4AD50
 	public void OCQOCDQQQD(int el) { }
 
-	// RVA: 0xB54A20 Offset: 0xB53E20 VA: 0x180B54A20
 	public static bool OQQCODDOOQ(int el, float roundaboutIndent, Vector3 prevVec, bool boolCheck, ref Vector3 vec, ref int indentBorderInt) { }
 
-	// RVA: 0xB4F5B0 Offset: 0xB4E9B0 VA: 0x180B4F5B0
 	public void ODQOOCQDDD(float minSurrounding, Vector3 middleVec, Vector3 origVec, bool boolCheck, ref Vector3 vec) { }
 
-	// RVA: 0xB47AA0 Offset: 0xB46EA0 VA: 0x180B47AA0
 	public void CheckAgainstFirstSurroundingVec(Vector3 firstIndent, Vector3 firstSurrounding, bool boolCheck, ref Vector3 vec) { }
 
-	// RVA: 0xB516B0 Offset: 0xB50AB0 VA: 0x180B516B0
 	public static Vector3 OODOQDOODO(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4) { }
 
-	// RVA: 0xB544C0 Offset: 0xB538C0 VA: 0x180B544C0
 	public static Vector3 OQDDDODCOC(Vector3 point, Vector3 pivot, Quaternion angle) { }
 
-	// RVA: 0xB57350 Offset: 0xB56750 VA: 0x180B57350
 	public void .ctor() { }
 
 }

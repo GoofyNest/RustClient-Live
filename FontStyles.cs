@@ -1,6 +1,5 @@
 public enum FontStyles // TypeDefIndex: 6835
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const FontStyles Normal = 0;
 	public const FontStyles Bold = 1;
 	public const FontStyles Italic = 2;

@@ -1,6 +1,5 @@
 public enum GregorianCalendarTypes // TypeDefIndex: 705
-{	// Fields
-	public int value__; // 0x0
+{	public int value__; // 0x0
 	public const GregorianCalendarTypes Localized = 1;
 	public const GregorianCalendarTypes USEnglish = 2;
 	public const GregorianCalendarTypes MiddleEastFrench = 9;

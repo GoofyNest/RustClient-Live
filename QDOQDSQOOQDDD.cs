@@ -1,6 +1,5 @@
 public class QDOQDSQOOQDDD // TypeDefIndex: 7171
-{	// Fields
-	public int crossingElementLeftIndex; // 0x10
+{	public int crossingElementLeftIndex; // 0x10
 	public int crossingElementRightIndex; // 0x14
 	public Vector3 centerHandleV3; // 0x18
 	public Vector3 centerHandleV3_2; // 0x24
@@ -28,15 +27,11 @@ public class QDOQDSQOOQDDD // TypeDefIndex: 7171
 	public float innerSegmentDistance; // 0x94
 	public float startAngle; // 0x98
 
-	// Methods
 
-	// RVA: 0xB58260 Offset: 0xB57660 VA: 0x180B58260
 	public void .ctor(ERModularBase scr) { }
 
-	// RVA: 0xB58110 Offset: 0xB57510 VA: 0x180B58110
 	public void CopyFromSidewalk(ERSideWalk sw) { }
 
-	// RVA: 0xB581F0 Offset: 0xB575F0 VA: 0x180B581F0
 	public static bool ERSidewalkMatch(QDOQDSQOOQDDD sw1, QDOQDSQOOQDDD sw2) { }
 
 }
