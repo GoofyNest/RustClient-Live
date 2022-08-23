@@ -1620,11 +1620,9 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal void Trace<T0>(string format, T0 arg0) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFCED0 Offset: 0xDFC2D0 VA: 0x180DFCED0
 	|-DataCommonEventSource.Trace<Exception>
 	|-DataCommonEventSource.Trace<object>
 	|
-	|-RVA: 0xDFC3F0 Offset: 0xDFB7F0 VA: 0x180DFC3F0
 	|-DataCommonEventSource.Trace<int>
 	*/
 
@@ -1632,25 +1630,19 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal void Trace<T0, T1>(string format, T0 arg0, T1 arg1) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFA9D0 Offset: 0xDF9DD0 VA: 0x180DFA9D0
 	|-DataCommonEventSource.Trace<int, bool>
 	|
-	|-RVA: 0xDFAB00 Offset: 0xDF9F00 VA: 0x180DFAB00
 	|-DataCommonEventSource.Trace<int, ListChangedType>
 	|-DataCommonEventSource.Trace<int, MappingType>
 	|-DataCommonEventSource.Trace<int, Int32Enum>
 	|
-	|-RVA: 0xDFB840 Offset: 0xDFAC40 VA: 0x180DFB840
 	|-DataCommonEventSource.Trace<int, int>
 	|
-	|-RVA: 0xDFB970 Offset: 0xDFAD70 VA: 0x180DFB970
 	|-DataCommonEventSource.Trace<int, long>
 	|
-	|-RVA: 0xDFC300 Offset: 0xDFB700 VA: 0x180DFC300
 	|-DataCommonEventSource.Trace<int, object>
 	|-DataCommonEventSource.Trace<int, string>
 	|
-	|-RVA: 0xDFCE10 Offset: 0xDFC210 VA: 0x180DFCE10
 	|-DataCommonEventSource.Trace<object, object>
 	*/
 
@@ -1658,25 +1650,19 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal void Trace<T0, T1, T2>(string format, T0 arg0, T1 arg1, T2 arg2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFAC30 Offset: 0xDFA030 VA: 0x180DFAC30
 	|-DataCommonEventSource.Trace<int, int, bool>
 	|
-	|-RVA: 0xDFB560 Offset: 0xDFA960 VA: 0x180DFB560
 	|-DataCommonEventSource.Trace<int, int, DataViewRowState>
 	|-DataCommonEventSource.Trace<int, int, Int32Enum>
 	|
-	|-RVA: 0xDFB6D0 Offset: 0xDFAAD0 VA: 0x180DFB6D0
 	|-DataCommonEventSource.Trace<int, int, int>
 	|
-	|-RVA: 0xDFBAA0 Offset: 0xDFAEA0 VA: 0x180DFBAA0
 	|-DataCommonEventSource.Trace<int, object, Int32Enum>
 	|-DataCommonEventSource.Trace<int, string, DataViewRowState>
 	|
-	|-RVA: 0xDFC200 Offset: 0xDFB600 VA: 0x180DFC200
 	|-DataCommonEventSource.Trace<int, object, object>
 	|-DataCommonEventSource.Trace<int, string, string>
 	|
-	|-RVA: 0xDFCD40 Offset: 0xDFC140 VA: 0x180DFCD40
 	|-DataCommonEventSource.Trace<object, object, object>
 	*/
 
@@ -1684,16 +1670,13 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal void Trace<T0, T1, T2, T3>(string format, T0 arg0, T1 arg1, T2 arg2, T3 arg3) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFB250 Offset: 0xDFA650 VA: 0x180DFB250
 	|-DataCommonEventSource.Trace<int, int, DataViewRowState, DataViewRowState>
 	|-DataCommonEventSource.Trace<int, int, Int32Enum, Int32Enum>
 	|
-	|-RVA: 0xDFBF50 Offset: 0xDFB350 VA: 0x180DFBF50
 	|-DataCommonEventSource.Trace<int, object, object, Int32Enum>
 	|-DataCommonEventSource.Trace<int, string, string, DataViewRowState>
 	|-DataCommonEventSource.Trace<int, string, string, MappingType>
 	|
-	|-RVA: 0xDFCAF0 Offset: 0xDFBEF0 VA: 0x180DFCAF0
 	|-DataCommonEventSource.Trace<object, object, object, object>
 	*/
 
@@ -1701,11 +1684,9 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal void Trace<T0, T1, T2, T3, T4>(string format, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFBBE0 Offset: 0xDFAFE0 VA: 0x180DFBBE0
 	|-DataCommonEventSource.Trace<int, object, int, int, bool>
 	|-DataCommonEventSource.Trace<int, string, int, int, bool>
 	|
-	|-RVA: 0xDFC840 Offset: 0xDFBC40 VA: 0x180DFC840
 	|-DataCommonEventSource.Trace<object, object, object, object, object>
 	*/
 
@@ -1713,11 +1694,9 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal void Trace<T0, T1, T2, T3, T4, T5, T6>(string format, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFADA0 Offset: 0xDFA1A0 VA: 0x180DFADA0
 	|-DataCommonEventSource.Trace<int, int, DataViewRowState, DataViewRowState, int, DataViewRowState, DataViewRowState>
 	|-DataCommonEventSource.Trace<int, int, Int32Enum, Int32Enum, int, Int32Enum, Int32Enum>
 	|
-	|-RVA: 0xDFC4E0 Offset: 0xDFB8E0 VA: 0x180DFC4E0
 	|-DataCommonEventSource.Trace<object, object, object, object, object, object, object>
 	*/
 
@@ -1728,10 +1707,8 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal long EnterScope<T1>(string format, T1 arg1) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE7DDA0 Offset: 0xE7D1A0 VA: 0x180E7DDA0
 	|-DataCommonEventSource.EnterScope<int>
 	|
-	|-RVA: 0xE7E270 Offset: 0xE7D670 VA: 0x180E7E270
 	|-DataCommonEventSource.EnterScope<object>
 	*/
 
@@ -1739,23 +1716,18 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal long EnterScope<T1, T2>(string format, T1 arg1, T2 arg2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE7D030 Offset: 0xE7C430 VA: 0x180E7D030
 	|-DataCommonEventSource.EnterScope<int, bool>
 	|
-	|-RVA: 0xE7D2F0 Offset: 0xE7C6F0 VA: 0x180E7D2F0
 	|-DataCommonEventSource.EnterScope<int, SchemaFormat>
 	|-DataCommonEventSource.EnterScope<int, XmlReadMode>
 	|-DataCommonEventSource.EnterScope<int, XmlWriteMode>
 	|-DataCommonEventSource.EnterScope<int, Int32Enum>
 	|
-	|-RVA: 0xE7DA20 Offset: 0xE7CE20 VA: 0x180E7DA20
 	|-DataCommonEventSource.EnterScope<int, int>
 	|
-	|-RVA: 0xE7DCB0 Offset: 0xE7D0B0 VA: 0x180E7DCB0
 	|-DataCommonEventSource.EnterScope<int, object>
 	|-DataCommonEventSource.EnterScope<int, string>
 	|
-	|-RVA: 0xE7E1B0 Offset: 0xE7D5B0 VA: 0x180E7E1B0
 	|-DataCommonEventSource.EnterScope<object, object>
 	*/
 
@@ -1763,22 +1735,17 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal long EnterScope<T1, T2, T3>(string format, T1 arg1, T2 arg2, T3 arg3) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE7D170 Offset: 0xE7C570 VA: 0x180E7D170
 	|-DataCommonEventSource.EnterScope<int, XmlReadMode, bool>
 	|-DataCommonEventSource.EnterScope<int, Int32Enum, bool>
 	|
-	|-RVA: 0xE7D750 Offset: 0xE7CB50 VA: 0x180E7D750
 	|-DataCommonEventSource.EnterScope<int, int, bool>
 	|
-	|-RVA: 0xE7D8D0 Offset: 0xE7CCD0 VA: 0x180E7D8D0
 	|-DataCommonEventSource.EnterScope<int, int, object>
 	|-DataCommonEventSource.EnterScope<int, int, string>
 	|
-	|-RVA: 0xE7DB60 Offset: 0xE7CF60 VA: 0x180E7DB60
 	|-DataCommonEventSource.EnterScope<int, object, bool>
 	|-DataCommonEventSource.EnterScope<int, string, bool>
 	|
-	|-RVA: 0xE7E0E0 Offset: 0xE7D4E0 VA: 0x180E7E0E0
 	|-DataCommonEventSource.EnterScope<object, object, object>
 	*/
 
@@ -1786,11 +1753,9 @@ internal class DataCommonEventSource : EventSource // TypeDefIndex: 4171
 	internal long EnterScope<T1, T2, T3, T4>(string format, T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE7D430 Offset: 0xE7C830 VA: 0x180E7D430
 	|-DataCommonEventSource.EnterScope<int, int, bool, MissingSchemaAction>
 	|-DataCommonEventSource.EnterScope<int, int, bool, Int32Enum>
 	|
-	|-RVA: 0xE7DE90 Offset: 0xE7D290 VA: 0x180E7DE90
 	|-DataCommonEventSource.EnterScope<object, object, object, object>
 	*/
 
@@ -5720,7 +5685,6 @@ public static class Database // TypeDefIndex: 6181
 	public static Result<T> Query<T>(string parent, int limit, Action<Result<T>> onFinished) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x12575D0 Offset: 0x12569D0 VA: 0x1812575D0
 	|-Database.Query<object>
 	*/
 
@@ -5767,21 +5731,18 @@ private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6185
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-Database.<>c__DisplayClass3_0<object>..ctor
 	*/
 
 	internal void <Query>b__0(object s, DownloadStringCompletedEventArgs e) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3E80 Offset: 0x15E3280 VA: 0x1815E3E80
 	|-Database.<>c__DisplayClass3_0<object>.<Query>b__0
 	*/
 
 	internal void <Query>b__1() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E4210 Offset: 0x15E3610 VA: 0x1815E4210
 	|-Database.<>c__DisplayClass3_0<object>.<Query>b__1
 	*/
 
@@ -5795,21 +5756,18 @@ private sealed class Database.<>c__3<T> // TypeDefIndex: 6186
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD602E0 Offset: 0xD5F6E0 VA: 0x180D602E0
 	|-Database.<>c__3<object>..cctor
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-Database.<>c__3<object>..ctor
 	*/
 
 	internal Result.Entry<T> <Query>b__3_2(QueryResponse x) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3CD0 Offset: 0x15E30D0 VA: 0x1815E3CD0
 	|-Database.<>c__3<object>.<Query>b__3_2
 	*/
 
@@ -5870,74 +5828,59 @@ public class Database // TypeDefIndex: 7356
 	public void Execute<T1>(string query, T1 arg1) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x153FEA0 Offset: 0x153F2A0 VA: 0x18153FEA0
 	|-Database.Execute<int>
 	|
-	|-RVA: 0x1540240 Offset: 0x153F640 VA: 0x181540240
 	|-Database.Execute<object>
 	*/
 
 	public void Execute<T1, T2>(string query, T1 arg1, T2 arg2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x153FD10 Offset: 0x153F110 VA: 0x18153FD10
 	|-Database.Execute<int, int>
 	|
-	|-RVA: 0x15401A0 Offset: 0x153F5A0 VA: 0x1815401A0
 	|-Database.Execute<object, object>
 	*/
 
 	public void Execute<T1, T2, T3>(string query, T1 arg1, T2 arg2, T3 arg3) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x153FC50 Offset: 0x153F050 VA: 0x18153FC50
 	|-Database.Execute<int, int, int>
 	|
-	|-RVA: 0x15400E0 Offset: 0x153F4E0 VA: 0x1815400E0
 	|-Database.Execute<object, object, object>
 	*/
 
 	public void Execute<T1, T2, T3, T4>(string query, T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x153FB70 Offset: 0x153EF70 VA: 0x18153FB70
 	|-Database.Execute<int, int, int, int>
 	|
-	|-RVA: 0x1540000 Offset: 0x153F400 VA: 0x181540000
 	|-Database.Execute<object, object, object, object>
 	*/
 
 	public void Execute<T1, T2, T3, T4, T5>(string query, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x153FDB0 Offset: 0x153F1B0 VA: 0x18153FDB0
 	|-Database.Execute<int, byte[], int, int, int>
 	|-Database.Execute<int, object, int, int, int>
 	|
-	|-RVA: 0x153FF10 Offset: 0x153F310 VA: 0x18153FF10
 	|-Database.Execute<object, object, object, object, object>
 	*/
 
 	protected static void Bind<T>(IntPtr stmHandle, int index, T value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x153EF60 Offset: 0x153E360 VA: 0x18153EF60
 	|-Database.Bind<int>
 	|
-	|-RVA: 0x153F560 Offset: 0x153E960 VA: 0x18153F560
 	|-Database.Bind<object>
 	*/
 
 	protected static T GetColumnValue<T>(IntPtr stmHandle, int i) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E55A0 Offset: 0x5E49A0 VA: 0x1805E55A0
 	|-Database.GetColumnValue<int>
 	|
-	|-RVA: 0x5E5D10 Offset: 0x5E5110 VA: 0x1805E5D10
 	|-Database.GetColumnValue<long>
 	|
-	|-RVA: 0x5E6480 Offset: 0x5E5880 VA: 0x1805E6480
 	|-Database.GetColumnValue<object>
 	*/
 
@@ -5946,7 +5889,6 @@ public class Database // TypeDefIndex: 7356
 	public int QueryInt<T1>(string query, T1 arg1) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x11738E0 Offset: 0x1172CE0 VA: 0x1811738E0
 	|-Database.QueryInt<object>
 	|-Database.QueryInt<string>
 	*/
@@ -5954,7 +5896,6 @@ public class Database // TypeDefIndex: 7356
 	public int QueryInt<T1, T2>(string query, T1 arg1, T2 arg2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1173810 Offset: 0x1172C10 VA: 0x181173810
 	|-Database.QueryInt<object, object>
 	|-Database.QueryInt<string, string>
 	*/
@@ -5964,24 +5905,20 @@ public class Database // TypeDefIndex: 7356
 	public string QueryString<T1>(string query, T1 arg1) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE7E330 Offset: 0xE7D730 VA: 0x180E7E330
 	|-Database.QueryString<object>
 	*/
 
 	public byte[] QueryBlob<T1>(string query, T1 arg1) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1564AD0 Offset: 0x1563ED0 VA: 0x181564AD0
 	|-Database.QueryBlob<object>
 	*/
 
 	public byte[] QueryBlob<T1, T2, T3, T4>(string query, T1 arg1, T2 arg2, T3 arg3, T4 arg4) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBEA270 Offset: 0xBE9670 VA: 0x180BEA270
 	|-Database.QueryBlob<int, int, int, int>
 	|
-	|-RVA: 0xBEA370 Offset: 0xBE9770 VA: 0x180BEA370
 	|-Database.QueryBlob<object, object, object, object>
 	*/
 
@@ -5996,15 +5933,12 @@ public class Database // TypeDefIndex: 7356
 	protected T ExecuteAndReadQueryResult<T>(IntPtr stmHandle, bool finalize = True) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E5440 Offset: 0x5E4840 VA: 0x1805E5440
 	|-Database.ExecuteAndReadQueryResult<byte[]>
 	|-Database.ExecuteAndReadQueryResult<object>
 	|-Database.ExecuteAndReadQueryResult<string>
 	|
-	|-RVA: 0x5E5190 Offset: 0x5E4590 VA: 0x1805E5190
 	|-Database.ExecuteAndReadQueryResult<int>
 	|
-	|-RVA: 0x5E52E0 Offset: 0x5E46E0 VA: 0x1805E52E0
 	|-Database.ExecuteAndReadQueryResult<long>
 	*/
 
@@ -6012,7 +5946,6 @@ public class Database // TypeDefIndex: 7356
 	protected IEnumerable<T> ExecuteAndReadQueryResults<T>(IntPtr stmHandle, Func<IntPtr, T> rowReader, bool finalize = True) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xCFA840 Offset: 0xCF9C40 VA: 0x180CFA840
 	|-Database.ExecuteAndReadQueryResults<object>
 	*/
 
@@ -6030,13 +5963,10 @@ public class Database // TypeDefIndex: 7356
 	internal static Exception <GetColumnValue>g__TypeError|19_0<T>(ref Database.<>c__DisplayClass19_0<T> ) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1B148D0 Offset: 0x1B13CD0 VA: 0x181B148D0
 	|-Database.<GetColumnValue>g__TypeError|19_0<int>
 	|
-	|-RVA: 0x1B149D0 Offset: 0x1B13DD0 VA: 0x181B149D0
 	|-Database.<GetColumnValue>g__TypeError|19_0<long>
 	|
-	|-RVA: 0x1B14AD0 Offset: 0x1B13ED0 VA: 0x181B14AD0
 	|-Database.<GetColumnValue>g__TypeError|19_0<object>
 	*/
 
@@ -6067,7 +5997,6 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1446280 Offset: 0x1445680 VA: 0x181446280
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>..ctor
 	*/
 
@@ -6075,21 +6004,18 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1445F40 Offset: 0x1445340 VA: 0x181445F40
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.IDisposable.Dispose
 	*/
 
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3610 Offset: 0x15E2A10 VA: 0x1815E3610
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.MoveNext
 	*/
 
 	private void <>m__Finally1() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3890 Offset: 0x15E2C90 VA: 0x1815E3890
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.<>m__Finally1
 	*/
 
@@ -6097,7 +6023,6 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.Generic.IEnumerator<T>.get_Current
 	*/
 
@@ -6105,7 +6030,6 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3840 Offset: 0x15E2C40 VA: 0x1815E3840
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.IEnumerator.Reset
 	*/
 
@@ -6113,7 +6037,6 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.IEnumerator.get_Current
 	*/
 
@@ -6121,7 +6044,6 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3740 Offset: 0x15E2B40 VA: 0x1815E3740
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
@@ -6129,7 +6051,6 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3810 Offset: 0x15E2C10 VA: 0x1815E3810
 	|-Database.<ExecuteAndReadQueryResults>d__32<object>.System.Collections.IEnumerable.GetEnumerator
 	*/
 

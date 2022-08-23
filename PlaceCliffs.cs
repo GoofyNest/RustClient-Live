@@ -27,7 +27,6 @@ public class PlaceCliffs : ProceduralComponent // TypeDefIndex: 10528
 	private PlaceCliffs.CliffPlacement Place<ParentSocketType, ChildSocketType>(Prefab[] prefabs, ref uint seed, Prefab parentPrefab, Vector3 parentPos, Quaternion parentRot, Vector3 parentScale, int parentAngle = 0, int parentCount = 0, int parentScore = 0) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x12580E0 Offset: 0x12574E0 VA: 0x1812580E0
 	|-PlaceCliffs.Place<DecorSocketFemale, DecorSocketMale>
 	|-PlaceCliffs.Place<DecorSocketMale, DecorSocketFemale>
 	|-PlaceCliffs.Place<object, object>

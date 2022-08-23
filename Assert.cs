@@ -21,11 +21,9 @@ public static class Assert // TypeDefIndex: 3904
 	public static void AreEqual<T>(T expected, T actual) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E2E60 Offset: 0x5E2260 VA: 0x1805E2E60
 	|-Assert.AreEqual<RendererGrid>
 	|-Assert.AreEqual<object>
 	|
-	|-RVA: 0x5E3190 Offset: 0x5E2590 VA: 0x1805E3190
 	|-Assert.AreEqual<uint>
 	*/
 
@@ -33,13 +31,10 @@ public static class Assert // TypeDefIndex: 3904
 	public static void AreEqual<T>(T expected, T actual, string message) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E2DB0 Offset: 0x5E21B0 VA: 0x1805E2DB0
 	|-Assert.AreEqual<int>
 	|
-	|-RVA: 0x5E2EE0 Offset: 0x5E22E0 VA: 0x1805E2EE0
 	|-Assert.AreEqual<object>
 	|
-	|-RVA: 0x5E3210 Offset: 0x5E2610 VA: 0x1805E3210
 	|-Assert.AreEqual<uint>
 	*/
 
@@ -47,13 +42,10 @@ public static class Assert // TypeDefIndex: 3904
 	public static void AreEqual<T>(T expected, T actual, string message, IEqualityComparer<T> comparer) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E2B00 Offset: 0x5E1F00 VA: 0x1805E2B00
 	|-Assert.AreEqual<int>
 	|
-	|-RVA: 0x5E2F90 Offset: 0x5E2390 VA: 0x1805E2F90
 	|-Assert.AreEqual<object>
 	|
-	|-RVA: 0x5E32C0 Offset: 0x5E26C0 VA: 0x1805E32C0
 	|-Assert.AreEqual<uint>
 	*/
 
@@ -64,7 +56,6 @@ public static class Assert // TypeDefIndex: 3904
 	public static void IsNotNull<T>(T value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E3570 Offset: 0x5E2970 VA: 0x1805E3570
 	|-Assert.IsNotNull<Manifest>
 	|-Assert.IsNotNull<Dictionary<IPEndPoint, int>>
 	|-Assert.IsNotNull<object>
@@ -79,7 +70,6 @@ public static class Assert // TypeDefIndex: 3904
 	public static void IsNotNull<T>(T value, string message) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E35E0 Offset: 0x5E29E0 VA: 0x1805E35E0
 	|-Assert.IsNotNull<InputState>
 	|-Assert.IsNotNull<Client>
 	|-Assert.IsNotNull<NetWrite>

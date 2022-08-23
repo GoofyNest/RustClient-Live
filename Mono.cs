@@ -561,14 +561,12 @@ internal class MonoProperty : RuntimePropertyInfo // TypeDefIndex: 592
 	private static object GetterAdapterFrame<T, R>(MonoProperty.Getter<T, R> getter, object obj) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE82120 Offset: 0xE81520 VA: 0x180E82120
 	|-MonoProperty.GetterAdapterFrame<object, object>
 	*/
 
 	private static object StaticGetterAdapterFrame<R>(MonoProperty.StaticGetter<R> getter, object obj) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE821B0 Offset: 0xE815B0 VA: 0x180E821B0
 	|-MonoProperty.StaticGetterAdapterFrame<object>
 	*/
 
@@ -607,28 +605,24 @@ private sealed class MonoProperty.Getter<T, R> : MulticastDelegate // TypeDefInd
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4971F0 Offset: 0x4965F0 VA: 0x1804971F0
 	|-MonoProperty.Getter<object, object>..ctor
 	*/
 
 	public virtual R Invoke(T _this) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x189A6F0 Offset: 0x1899AF0 VA: 0x18189A6F0
 	|-MonoProperty.Getter<object, object>.Invoke
 	*/
 
 	public virtual IAsyncResult BeginInvoke(T _this, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497210 Offset: 0x496610 VA: 0x180497210
 	|-MonoProperty.Getter<object, object>.BeginInvoke
 	*/
 
 	public virtual R EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497050 Offset: 0x496450 VA: 0x180497050
 	|-MonoProperty.Getter<object, object>.EndInvoke
 	*/
 
@@ -639,28 +633,24 @@ private sealed class MonoProperty.StaticGetter<R> : MulticastDelegate // TypeDef
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4971F0 Offset: 0x4965F0 VA: 0x1804971F0
 	|-MonoProperty.StaticGetter<object>..ctor
 	*/
 
 	public virtual R Invoke() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD4B9C0 Offset: 0xD4ADC0 VA: 0x180D4B9C0
 	|-MonoProperty.StaticGetter<object>.Invoke
 	*/
 
 	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497020 Offset: 0x496420 VA: 0x180497020
 	|-MonoProperty.StaticGetter<object>.BeginInvoke
 	*/
 
 	public virtual R EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497050 Offset: 0x496450 VA: 0x180497050
 	|-MonoProperty.StaticGetter<object>.EndInvoke
 	*/
 

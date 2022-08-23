@@ -24,7 +24,6 @@ public class TerrainPath : TerrainExtension // TypeDefIndex: 10427
 	public T FindClosest<T>(List<T> list, Vector3 pos) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBDBBF0 Offset: 0xBDAFF0 VA: 0x180BDBBF0
 	|-TerrainPath.FindClosest<DungeonBaseInfo>
 	|-TerrainPath.FindClosest<DungeonGridInfo>
 	|-TerrainPath.FindClosest<MonumentInfo>

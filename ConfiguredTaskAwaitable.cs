@@ -37,7 +37,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	internal void .ctor(Task<TResult> task, bool continueOnCapturedContext) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xF9F90 Offset: 0xF9390 VA: 0x1800F9F90
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<PublishResult>..ctor
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool>..ctor
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int>..ctor
@@ -57,7 +56,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	public bool get_IsCompleted() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF50 Offset: 0x14B350 VA: 0x18014BF50
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult>.get_IsCompleted
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<PublishResult>.get_IsCompleted
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool>.get_IsCompleted
@@ -83,7 +81,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	public void OnCompleted(Action continuation) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BEF0 Offset: 0x14B2F0 VA: 0x18014BEF0
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<PublishResult>.OnCompleted
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool>.OnCompleted
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int>.OnCompleted
@@ -103,7 +100,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	public void UnsafeOnCompleted(Action continuation) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF20 Offset: 0x14B320 VA: 0x18014BF20
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<PublishResult>.UnsafeOnCompleted
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool>.UnsafeOnCompleted
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int>.UnsafeOnCompleted
@@ -123,7 +119,6 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	public TResult GetResult() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1E2D10 Offset: 0x1E2110 VA: 0x1801E2D10
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult>.GetResult
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Stream>.GetResult
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<HttpResponseMessage>.GetResult
@@ -137,24 +132,18 @@ public struct ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<TResult> : ICritical
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Task>.GetResult
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<VoidTaskResult>.GetResult
 	|
-	|-RVA: 0x1E2DA0 Offset: 0x1E21A0 VA: 0x1801E2DA0
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<PublishResult>.GetResult
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Nullable<Image>>.GetResult
 	|
-	|-RVA: 0x1E2F20 Offset: 0x1E2320 VA: 0x1801E2F20
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<UdpReceiveResult>.GetResult
 	|
-	|-RVA: 0x1E2FD0 Offset: 0x1E23D0 VA: 0x1801E2FD0
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Nullable<ServerInfo>>.GetResult
 	|
-	|-RVA: 0x1E2E60 Offset: 0x1E2260 VA: 0x1801E2E60
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Nullable<InventoryPurchaseResult>>.GetResult
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Nullable<ResultPage>>.GetResult
 	|
-	|-RVA: 0x1E3210 Offset: 0x1E2610 VA: 0x1801E3210
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Nullable<InventoryResult>>.GetResult
 	|
-	|-RVA: 0x1E30D0 Offset: 0x1E24D0 VA: 0x1801E30D0
 	|-ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Nullable<Item>>.GetResult
 	*/
 

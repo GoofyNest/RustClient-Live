@@ -25,7 +25,6 @@ public sealed class EventHandler<TEventArgs> : MulticastDelegate // TypeDefIndex
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4971F0 Offset: 0x4965F0 VA: 0x1804971F0
 	|-EventHandler<LoadCompletedEventArgs>..ctor
 	|-EventHandler<LoadProgressEventArgs>..ctor
 	|-EventHandler<StateChangedEventArgs>..ctor
@@ -36,7 +35,6 @@ public sealed class EventHandler<TEventArgs> : MulticastDelegate // TypeDefIndex
 	public virtual void Invoke(object sender, TEventArgs e) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xADFD50 Offset: 0xADF150 VA: 0x180ADFD50
 	|-EventHandler<ErrorEventArgs>.Invoke
 	|-EventHandler<EventCommandEventArgs>.Invoke
 	|-EventHandler<EventSourceCreatedEventArgs>.Invoke
@@ -51,14 +49,12 @@ public sealed class EventHandler<TEventArgs> : MulticastDelegate // TypeDefIndex
 	public virtual IAsyncResult BeginInvoke(object sender, TEventArgs e, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xADFD10 Offset: 0xADF110 VA: 0x180ADFD10
 	|-EventHandler<object>.BeginInvoke
 	*/
 
 	public virtual void EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497050 Offset: 0x496450 VA: 0x180497050
 	|-EventHandler<object>.EndInvoke
 	*/
 
@@ -2077,7 +2073,6 @@ internal static class EventHandlerExtensions // TypeDefIndex: 7141
 	public static void Raise<T>(EventHandler<T> eventHandler, object sender, T eventArgs) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1540350 Offset: 0x153F750 VA: 0x181540350
 	|-EventHandlerExtensions.Raise<LoadCompletedEventArgs>
 	|-EventHandlerExtensions.Raise<LoadProgressEventArgs>
 	|-EventHandlerExtensions.Raise<StateChangedEventArgs>

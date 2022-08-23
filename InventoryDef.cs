@@ -48,11 +48,9 @@ public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5239
 	public T GetProperty<T>(string name) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E7F10 Offset: 0x5E7310 VA: 0x1805E7F10
 	|-InventoryDef.GetProperty<string>
 	|-InventoryDef.GetProperty<object>
 	|
-	|-RVA: 0x5E8040 Offset: 0x5E7440 VA: 0x1805E8040
 	|-InventoryDef.GetProperty<ulong>
 	*/
 

@@ -33,10 +33,8 @@ public sealed class ComputeBuffer : IDisposable // TypeDefIndex: 3549
 	public void SetData<T>(NativeArray<T> data, int nativeBufferStartIndex, int computeBufferStartIndex, int count) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E4E70 Offset: 0x5E4270 VA: 0x1805E4E70
 	|-ComputeBuffer.SetData<uint>
 	|
-	|-RVA: 0x5E5000 Offset: 0x5E4400 VA: 0x1805E5000
 	|-ComputeBuffer.SetData<Vector4>
 	*/
 

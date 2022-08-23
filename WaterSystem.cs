@@ -176,7 +176,6 @@ public class WaterSystem : MonoBehaviour // TypeDefIndex: 10626
 	private static void PinObject<T>(T value, ref T currentValue, ref GCHandle currentValueHandle) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F3D40 Offset: 0x5F3140 VA: 0x1805F3D40
 	|-WaterSystem.PinObject<short[]>
 	|-WaterSystem.PinObject<object>
 	|-WaterSystem.PinObject<Vector3[]>

@@ -20,7 +20,6 @@ internal static class TimeSpanConverter // TypeDefIndex: 7481
 	public static TTimeSpan ConvertTo<TTimeSpan>(long timeSpan, long time, TempoMap tempoMap) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0B80 Offset: 0x14BFF80 VA: 0x1814C0B80
 	|-TimeSpanConverter.ConvertTo<object>
 	*/
 
@@ -31,7 +30,6 @@ internal static class TimeSpanConverter // TypeDefIndex: 7481
 	private static ITimeSpanConverter GetConverter<TTimeSpan>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1259BA0 Offset: 0x1258FA0 VA: 0x181259BA0
 	|-TimeSpanConverter.GetConverter<object>
 	*/
 

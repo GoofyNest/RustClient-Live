@@ -9,7 +9,6 @@ public static class TimeSpanUtilities // TypeDefIndex: 7499
 	private static Parsing<ITimeSpan> GetParsing<TTimeSpan>(Parsing<TTimeSpan> parsing) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1259C30 Offset: 0x1259030 VA: 0x181259C30
 	|-TimeSpanUtilities.GetParsing<BarBeatFractionTimeSpan>
 	|-TimeSpanUtilities.GetParsing<BarBeatTicksTimeSpan>
 	|-TimeSpanUtilities.GetParsing<MetricTimeSpan>
@@ -29,14 +28,12 @@ private sealed class TimeSpanUtilities.<>c__DisplayClass12_0<TTimeSpan> // TypeD
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-TimeSpanUtilities.<>c__DisplayClass12_0<object>..ctor
 	*/
 
 	internal ParsingResult <GetParsing>b__0(string input, out ITimeSpan timeSpan) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17F7660 Offset: 0x17F6A60 VA: 0x1817F7660
 	|-TimeSpanUtilities.<>c__DisplayClass12_0<object>.<GetParsing>b__0
 	*/
 

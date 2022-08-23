@@ -5,14 +5,12 @@ public static class Parallel // TypeDefIndex: 5599
 	public static void ForEach<T>(IList<T> data, Action<T> action) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EC6F0 Offset: 0x5EBAF0 VA: 0x1805EC6F0
 	|-Parallel.ForEach<object>
 	*/
 
 	public static void ForEach<T>(IList<T> data, int threads, Action<T> action) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EC780 Offset: 0x5EBB80 VA: 0x1805EC780
 	|-Parallel.ForEach<object>
 	*/
 
@@ -39,14 +37,12 @@ private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5600
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-Parallel.<>c__DisplayClass2_0<object>..ctor
 	*/
 
 	internal void <ForEach>b__0(int i) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C2190 Offset: 0x19C1590 VA: 0x1819C2190
 	|-Parallel.<>c__DisplayClass2_0<object>.<ForEach>b__0
 	*/
 

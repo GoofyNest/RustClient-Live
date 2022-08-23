@@ -34,7 +34,6 @@ internal class ThreadPoolWorkQueue.SparseArray<T> // TypeDefIndex: 810
 	internal void .ctor(int initialSize) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1A451F0 Offset: 0x1A445F0 VA: 0x181A451F0
 	|-ThreadPoolWorkQueue.SparseArray<object>..ctor
 	|-ThreadPoolWorkQueue.SparseArray<ThreadPoolWorkQueue.WorkStealingQueue>..ctor
 	*/
@@ -42,7 +41,6 @@ internal class ThreadPoolWorkQueue.SparseArray<T> // TypeDefIndex: 810
 	internal T[] get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x13637B0 Offset: 0x1362BB0 VA: 0x1813637B0
 	|-ThreadPoolWorkQueue.SparseArray<object>.get_Current
 	|-ThreadPoolWorkQueue.SparseArray<ThreadPoolWorkQueue.WorkStealingQueue>.get_Current
 	*/
@@ -50,7 +48,6 @@ internal class ThreadPoolWorkQueue.SparseArray<T> // TypeDefIndex: 810
 	internal int Add(T e) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1A44E10 Offset: 0x1A44210 VA: 0x181A44E10
 	|-ThreadPoolWorkQueue.SparseArray<object>.Add
 	|-ThreadPoolWorkQueue.SparseArray<ThreadPoolWorkQueue.WorkStealingQueue>.Add
 	*/
@@ -58,7 +55,6 @@ internal class ThreadPoolWorkQueue.SparseArray<T> // TypeDefIndex: 810
 	internal void Remove(T e) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1A45070 Offset: 0x1A44470 VA: 0x181A45070
 	|-ThreadPoolWorkQueue.SparseArray<object>.Remove
 	|-ThreadPoolWorkQueue.SparseArray<ThreadPoolWorkQueue.WorkStealingQueue>.Remove
 	*/

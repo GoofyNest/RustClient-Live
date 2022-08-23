@@ -34,7 +34,6 @@ public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable
 	internal void AddOrRemove<T>(string name, T value, Func<object, string> converter) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFCF80 Offset: 0xDFC380 VA: 0x180DFCF80
 	|-HttpHeaders.AddOrRemove<MediaTypeHeaderValue>
 	|-HttpHeaders.AddOrRemove<object>
 	*/
@@ -46,19 +45,16 @@ public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable
 	internal T GetValue<T>(string name) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBD53E0 Offset: 0xBD47E0 VA: 0x180BD53E0
 	|-HttpHeaders.GetValue<MediaTypeHeaderValue>
 	|-HttpHeaders.GetValue<object>
 	|-HttpHeaders.GetValue<string>
 	|
-	|-RVA: 0xBD5140 Offset: 0xBD4540 VA: 0x180BD5140
 	|-HttpHeaders.GetValue<Nullable<long>>
 	*/
 
 	internal HttpHeaderValueCollection<T> GetValues<T>(string name) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE7FFB0 Offset: 0xE7F3B0 VA: 0x180E7FFB0
 	|-HttpHeaders.GetValues<TransferCodingHeaderValue>
 	|-HttpHeaders.GetValues<object>
 	|-HttpHeaders.GetValues<string>
@@ -67,10 +63,8 @@ public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable
 	internal void SetValue<T>(string name, T value, Func<object, string> toStringConverter) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFCFC0 Offset: 0xDFC3C0 VA: 0x180DFCFC0
 	|-HttpHeaders.SetValue<long>
 	|
-	|-RVA: 0xDFD090 Offset: 0xDFC490 VA: 0x180DFD090
 	|-HttpHeaders.SetValue<object>
 	*/
 

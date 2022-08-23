@@ -32,7 +32,6 @@ public class PrefabPreProcess : IPrefabProcessor // TypeDefIndex: 9974
 	private bool HasComponents<T>(Transform transform) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1258D30 Offset: 0x1258130 VA: 0x181258D30
 	|-PrefabPreProcess.HasComponents<IClientComponentEx>
 	|-PrefabPreProcess.HasComponents<IEditorComponent>
 	|-PrefabPreProcess.HasComponents<IPrefabPostProcess>
@@ -46,7 +45,6 @@ public class PrefabPreProcess : IPrefabProcessor // TypeDefIndex: 9974
 	public List<T> FindComponents<T>(Transform transform) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x12AA0B0 Offset: 0x12A94B0 VA: 0x1812AA0B0
 	|-PrefabPreProcess.FindComponents<IClientComponentEx>
 	|-PrefabPreProcess.FindComponents<IPrefabPostProcess>
 	|-PrefabPreProcess.FindComponents<IPrefabPreProcess>
@@ -59,7 +57,6 @@ public class PrefabPreProcess : IPrefabProcessor // TypeDefIndex: 9974
 	public void FindComponents<T>(Transform transform, List<T> list) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xCF9830 Offset: 0xCF8C30 VA: 0x180CF9830
 	|-PrefabPreProcess.FindComponents<object>
 	*/
 

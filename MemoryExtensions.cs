@@ -6,10 +6,8 @@ public static class MemoryExtensions // TypeDefIndex: 6728
 	public static void Reverse<T>(Span<T> span) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xDFD730 Offset: 0xDFCB30 VA: 0x180DFD730
 	|-MemoryExtensions.Reverse<byte>
 	|
-	|-RVA: 0xDFD800 Offset: 0xDFCC00 VA: 0x180DFD800
 	|-MemoryExtensions.Reverse<object>
 	*/
 

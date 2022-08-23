@@ -2677,7 +2677,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	public VehicleChassisVisuals.ClientWheelData<T>[] get_clientWheelData() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497E00 Offset: 0x497200 VA: 0x180497E00
 	|-VehicleChassisVisuals<object>.get_clientWheelData
 	*/
 
@@ -2685,14 +2684,12 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected void set_clientWheelData(VehicleChassisVisuals.ClientWheelData<T>[] value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497E30 Offset: 0x497230 VA: 0x180497E30
 	|-VehicleChassisVisuals<object>.set_clientWheelData
 	*/
 
 	public virtual void Init(T owner, VehicleChassisVisuals.ClientWheelData<T>[] clientWheelData) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C8DE0 Offset: 0x19C81E0 VA: 0x1819C8DE0
 	|-VehicleChassisVisuals<ModularCar>.Init
 	|-VehicleChassisVisuals<Snowmobile>.Init
 	|-VehicleChassisVisuals<object>.Init
@@ -2701,7 +2698,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	public void UpdateTick(float dt, bool instantForced = False) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9860 Offset: 0x19C8C60 VA: 0x1819C9860
 	|-VehicleChassisVisuals<ModularCar>.UpdateTick
 	|-VehicleChassisVisuals<Snowmobile>.UpdateTick
 	|-VehicleChassisVisuals<object>.UpdateTick
@@ -2710,7 +2706,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	public bool IsGrounded() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C8E50 Offset: 0x19C8250 VA: 0x1819C8E50
 	|-VehicleChassisVisuals<Snowmobile>.IsGrounded
 	|-VehicleChassisVisuals<object>.IsGrounded
 	*/
@@ -2718,28 +2713,24 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected abstract void PreWheelUpdateTick();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals<object>.PreWheelUpdateTick
 	*/
 
 	protected abstract void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOn, float steer, float dt);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals<object>.UpdateWheelVisuals
 	*/
 
 	protected abstract void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals<object>.PostWheelUpdateTick
 	*/
 
 	public float CalculateWheelSlip() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C8720 Offset: 0x19C7B20 VA: 0x1819C8720
 	|-VehicleChassisVisuals<ModularCar>.CalculateWheelSlip
 	|-VehicleChassisVisuals<Snowmobile>.CalculateWheelSlip
 	|-VehicleChassisVisuals<object>.CalculateWheelSlip
@@ -2748,7 +2739,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected void UpdateWheelSuspensionData(VehicleChassisVisuals.ClientWheelData<T> wheelData, Vector3 traceSource, Nullable<Vector3> traceSource2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9C70 Offset: 0x19C9070 VA: 0x1819C9C70
 	|-VehicleChassisVisuals<ModularCar>.UpdateWheelSuspensionData
 	|-VehicleChassisVisuals<Snowmobile>.UpdateWheelSuspensionData
 	|-VehicleChassisVisuals<object>.UpdateWheelSuspensionData
@@ -2757,7 +2747,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected float GetWheelRotation(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool receivingDriveWheelVels, float dt) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C8B60 Offset: 0x19C7F60 VA: 0x1819C8B60
 	|-VehicleChassisVisuals<ModularCar>.GetWheelRotation
 	|-VehicleChassisVisuals<Snowmobile>.GetWheelRotation
 	|-VehicleChassisVisuals<object>.GetWheelRotation
@@ -2766,7 +2755,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected static void UpdateSteerRotation(Transform t, float steer, int axis) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9770 Offset: 0x19C8B70 VA: 0x1819C9770
 	|-VehicleChassisVisuals<ModularCar>.UpdateSteerRotation
 	|-VehicleChassisVisuals<object>.UpdateSteerRotation
 	*/
@@ -2774,7 +2762,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, float throttleInput) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C8F20 Offset: 0x19C8320 VA: 0x1819C8F20
 	|-VehicleChassisVisuals<ModularCar>.ShowTerrainFX
 	|-VehicleChassisVisuals<object>.ShowTerrainFX
 	*/
@@ -2782,7 +2769,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, float throttleInput, float speed, float minSpeed) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9380 Offset: 0x19C8780 VA: 0x1819C9380
 	|-VehicleChassisVisuals<Snowmobile>.ShowTerrainFX
 	|-VehicleChassisVisuals<object>.ShowTerrainFX
 	*/
@@ -2790,14 +2776,12 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOnWater, float spinSlip, TerrainConfig.GroundType groundType, float throttleInput) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9010 Offset: 0x19C8410 VA: 0x1819C9010
 	|-VehicleChassisVisuals<object>.ShowTerrainFX
 	*/
 
 	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOnWater, float spinSlip, TerrainConfig.GroundType groundType, float throttleInput, float speed, float minSpeed) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C90E0 Offset: 0x19C84E0 VA: 0x1819C90E0
 	|-VehicleChassisVisuals<Snowmobile>.ShowTerrainFX
 	|-VehicleChassisVisuals<object>.ShowTerrainFX
 	*/
@@ -2805,7 +2789,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	public void UpdateTickStopped() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9810 Offset: 0x19C8C10 VA: 0x1819C9810
 	|-VehicleChassisVisuals<ModularCar>.UpdateTickStopped
 	|-VehicleChassisVisuals<Snowmobile>.UpdateTickStopped
 	|-VehicleChassisVisuals<object>.UpdateTickStopped
@@ -2814,7 +2797,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected virtual void StopAll() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C94A0 Offset: 0x19C88A0 VA: 0x1819C94A0
 	|-VehicleChassisVisuals<ModularCar>.StopAll
 	|-VehicleChassisVisuals<Snowmobile>.StopAll
 	|-VehicleChassisVisuals<object>.StopAll
@@ -2823,14 +2805,12 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	protected static void StopTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9550 Offset: 0x19C8950 VA: 0x1819C9550
 	|-VehicleChassisVisuals<object>.StopTerrainFX
 	*/
 
 	protected void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x8ED830 Offset: 0x8ECC30 VA: 0x1808ED830
 	|-VehicleChassisVisuals<ModularCar>..ctor
 	|-VehicleChassisVisuals<Snowmobile>..ctor
 	|-VehicleChassisVisuals<object>..ctor
@@ -2840,7 +2820,6 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	internal static bool <UpdateWheelSuspensionData>g__GetSuspensionHit|17_0(Vector3 ts, out RaycastHit hit, ref VehicleChassisVisuals.<>c__DisplayClass17_0<T> ) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C9650 Offset: 0x19C8A50 VA: 0x1819C9650
 	|-VehicleChassisVisuals<object>.<UpdateWheelSuspensionData>g__GetSuspensionHit|17_0
 	*/
 
@@ -2868,7 +2847,6 @@ public class VehicleChassisVisuals.ClientWheelData<T> // TypeDefIndex: 9782
 	public bool get_isOnHardGround() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19B66F0 Offset: 0x19B5AF0 VA: 0x1819B66F0
 	|-VehicleChassisVisuals.ClientWheelData<ModularCar>.get_isOnHardGround
 	|-VehicleChassisVisuals.ClientWheelData<object>.get_isOnHardGround
 	*/
@@ -2876,7 +2854,6 @@ public class VehicleChassisVisuals.ClientWheelData<T> // TypeDefIndex: 9782
 	public void .ctor(VisualCarWheel wheel, Transform vehicleTransform) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19B6620 Offset: 0x19B5A20 VA: 0x1819B6620
 	|-VehicleChassisVisuals.ClientWheelData<ModularCar>..ctor
 	|-VehicleChassisVisuals.ClientWheelData<Snowmobile>..ctor
 	|-VehicleChassisVisuals.ClientWheelData<object>..ctor
@@ -2911,7 +2888,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public VehicleEngineController.EngineState<TOwner> get_CurEngineState() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19CA340 Offset: 0x19C9740 VA: 0x1819CA340
 	|-VehicleEngineController<BaseSubmarine>.get_CurEngineState
 	|-VehicleEngineController<GroundVehicle>.get_CurEngineState
 	|-VehicleEngineController<MiniCopter>.get_CurEngineState
@@ -2922,7 +2898,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public bool get_IsOn() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19CA3A0 Offset: 0x19C97A0 VA: 0x1819CA3A0
 	|-VehicleEngineController<BaseSubmarine>.get_IsOn
 	|-VehicleEngineController<GroundVehicle>.get_IsOn
 	|-VehicleEngineController<object>.get_IsOn
@@ -2931,7 +2906,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public bool get_IsOff() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E14E0 Offset: 0x15E08E0 VA: 0x1815E14E0
 	|-VehicleEngineController<object>.get_IsOff
 	|-VehicleEngineController<TrainEngine>.get_IsOff
 	*/
@@ -2939,7 +2913,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public bool get_IsStarting() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19CA400 Offset: 0x19C9800 VA: 0x1819CA400
 	|-VehicleEngineController<MiniCopter>.get_IsStarting
 	|-VehicleEngineController<object>.get_IsStarting
 	*/
@@ -2947,7 +2920,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public bool get_IsStartingOrOn() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19CA3D0 Offset: 0x19C97D0 VA: 0x1819CA3D0
 	|-VehicleEngineController<GroundVehicle>.get_IsStartingOrOn
 	|-VehicleEngineController<object>.get_IsStartingOrOn
 	|-VehicleEngineController<TrainEngine>.get_IsStartingOrOn
@@ -2957,7 +2929,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public EntityFuelSystem get_FuelSystem() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4B9460 Offset: 0x4B8860 VA: 0x1804B9460
 	|-VehicleEngineController<BaseSubmarine>.get_FuelSystem
 	|-VehicleEngineController<GroundVehicle>.get_FuelSystem
 	|-VehicleEngineController<MiniCopter>.get_FuelSystem
@@ -2969,14 +2940,12 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	private void set_FuelSystem(EntityFuelSystem value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4B94C0 Offset: 0x4B88C0 VA: 0x1804B94C0
 	|-VehicleEngineController<object>.set_FuelSystem
 	*/
 
 	public void .ctor(TOwner owner, bool isServer, float engineStartupTime, GameObjectRef fuelStoragePrefab, Transform waterloggedPoint, BaseEntity.Flags engineStartingFlag = 128) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19CA220 Offset: 0x19C9620 VA: 0x1819CA220
 	|-VehicleEngineController<BaseSubmarine>..ctor
 	|-VehicleEngineController<GroundVehicle>..ctor
 	|-VehicleEngineController<MiniCopter>..ctor
@@ -2987,7 +2956,6 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	public VehicleEngineController.EngineState<TOwner> EngineStateFrom(BaseEntity.Flags flags) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19CA120 Offset: 0x19C9520 VA: 0x1819CA120
 	|-VehicleEngineController<object>.EngineStateFrom
 	|-VehicleEngineController<TrainEngine>.EngineStateFrom
 	*/

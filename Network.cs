@@ -246,7 +246,6 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1953800 Offset: 0x1952C00 VA: 0x181953800
 	|-Queue<BaseEntity>..ctor
 	|-Queue<DeferredAction>..ctor
 	|-Queue<RCon.Command>..ctor
@@ -268,34 +267,26 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public void .ctor(int capacity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1953940 Offset: 0x1952D40 VA: 0x181953940
 	|-Queue<RCon.Command>..ctor
 	|
-	|-RVA: 0x1953A30 Offset: 0x1952E30 VA: 0x181953A30
 	|-Queue<int>..ctor
 	|
-	|-RVA: 0x1953D00 Offset: 0x1953100 VA: 0x181953D00
 	|-Queue<IntPtr>..ctor
 	|
-	|-RVA: 0x1953DF0 Offset: 0x19531F0 VA: 0x181953DF0
 	|-Queue<object>..ctor
 	|-Queue<string>..ctor
 	|-Queue<Renderer>..ctor
 	|
-	|-RVA: 0x1953C10 Offset: 0x1953010 VA: 0x181953C10
 	|-Queue<ulong>..ctor
 	|
-	|-RVA: 0x1953850 Offset: 0x1952C50 VA: 0x181953850
 	|-Queue<AsyncGPUReadbackRequest>..ctor
 	|
-	|-RVA: 0x1953B20 Offset: 0x1952F20 VA: 0x181953B20
 	|-Queue<EventDispatcher.EventRecord>..ctor
 	*/
 
 	public int get_Count() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4D0170 Offset: 0x4CF570 VA: 0x1804D0170
 	|-Queue<BaseEntity>.get_Count
 	|-Queue<DeferredAction>.get_Count
 	|-Queue<RCon.Command>.get_Count
@@ -318,39 +309,30 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private object System.Collections.ICollection.get_SyncRoot() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1953410 Offset: 0x1952810 VA: 0x181953410
 	|-Queue<RCon.Command>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-RVA: 0x1953330 Offset: 0x1952730 VA: 0x181953330
 	|-Queue<int>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-RVA: 0x19533A0 Offset: 0x19527A0 VA: 0x1819533A0
 	|-Queue<IntPtr>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-RVA: 0x19534F0 Offset: 0x19528F0 VA: 0x1819534F0
 	|-Queue<object>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-RVA: 0x1953480 Offset: 0x1952880 VA: 0x181953480
 	|-Queue<ulong>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-RVA: 0x1953250 Offset: 0x1952650 VA: 0x181953250
 	|-Queue<AsyncGPUReadbackRequest>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-RVA: 0x19532C0 Offset: 0x19526C0 VA: 0x1819532C0
 	|-Queue<EventDispatcher.EventRecord>.System.Collections.ICollection.get_SyncRoot
 	*/
 
 	public void Clear() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1950FA0 Offset: 0x19503A0 VA: 0x181950FA0
 	|-Queue<BaseEntity>.Clear
 	|-Queue<RCon.Command>.Clear
 	|-Queue<object>.Clear
 	|-Queue<string>.Clear
 	|-Queue<EventDispatcher.EventRecord>.Clear
 	|
-	|-RVA: 0x1950F80 Offset: 0x1950380 VA: 0x181950F80
 	|-Queue<int>.Clear
 	|-Queue<IntPtr>.Clear
 	|-Queue<ulong>.Clear
@@ -360,32 +342,24 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private void System.Collections.ICollection.CopyTo(Array array, int index) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1952D30 Offset: 0x1952130 VA: 0x181952D30
 	|-Queue<RCon.Command>.System.Collections.ICollection.CopyTo
 	|
-	|-RVA: 0x1952AA0 Offset: 0x1951EA0 VA: 0x181952AA0
 	|-Queue<int>.System.Collections.ICollection.CopyTo
 	|
-	|-RVA: 0x19522F0 Offset: 0x19516F0 VA: 0x1819522F0
 	|-Queue<IntPtr>.System.Collections.ICollection.CopyTo
 	|
-	|-RVA: 0x1952060 Offset: 0x1951460 VA: 0x181952060
 	|-Queue<object>.System.Collections.ICollection.CopyTo
 	|
-	|-RVA: 0x1952810 Offset: 0x1951C10 VA: 0x181952810
 	|-Queue<ulong>.System.Collections.ICollection.CopyTo
 	|
-	|-RVA: 0x1952FC0 Offset: 0x19523C0 VA: 0x181952FC0
 	|-Queue<AsyncGPUReadbackRequest>.System.Collections.ICollection.CopyTo
 	|
-	|-RVA: 0x1952580 Offset: 0x1951980 VA: 0x181952580
 	|-Queue<EventDispatcher.EventRecord>.System.Collections.ICollection.CopyTo
 	*/
 
 	public void Enqueue(T item) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951570 Offset: 0x1950970 VA: 0x181951570
 	|-Queue<BaseEntity>.Enqueue
 	|-Queue<DeferredAction>.Enqueue
 	|-Queue<QueuedStream.WriteData>.Enqueue
@@ -398,39 +372,30 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Queue<Renderer>.Enqueue
 	|-Queue<Transform>.Enqueue
 	|
-	|-RVA: 0x19517C0 Offset: 0x1950BC0 VA: 0x1819517C0
 	|-Queue<RCon.Command>.Enqueue
 	|
-	|-RVA: 0x19518B0 Offset: 0x1950CB0 VA: 0x1819518B0
 	|-Queue<int>.Enqueue
 	|
-	|-RVA: 0x1951640 Offset: 0x1950A40 VA: 0x181951640
 	|-Queue<IntPtr>.Enqueue
 	|-Queue<ulong>.Enqueue
 	|
-	|-RVA: 0x19514B0 Offset: 0x19508B0 VA: 0x1819514B0
 	|-Queue<AsyncGPUReadbackRequest>.Enqueue
 	|
-	|-RVA: 0x19516F0 Offset: 0x1950AF0 VA: 0x1819516F0
 	|-Queue<EventDispatcher.EventRecord>.Enqueue
 	*/
 
 	public Queue.Enumerator<T> GetEnumerator() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951960 Offset: 0x1950D60 VA: 0x181951960
 	|-Queue<string>.GetEnumerator
 	|-Queue<IntPtr>.GetEnumerator
 	|-Queue<object>.GetEnumerator
 	|-Queue<ulong>.GetEnumerator
 	|
-	|-RVA: 0x1951A10 Offset: 0x1950E10 VA: 0x181951A10
 	|-Queue<RCon.Command>.GetEnumerator
 	|
-	|-RVA: 0x1951A80 Offset: 0x1950E80 VA: 0x181951A80
 	|-Queue<int>.GetEnumerator
 	|
-	|-RVA: 0x19519B0 Offset: 0x1950DB0 VA: 0x1819519B0
 	|-Queue<AsyncGPUReadbackRequest>.GetEnumerator
 	|-Queue<EventDispatcher.EventRecord>.GetEnumerator
 	*/
@@ -438,18 +403,14 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951F90 Offset: 0x1951390 VA: 0x181951F90
 	|-Queue<RCon.Command>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
-	|-RVA: 0x1951EF0 Offset: 0x19512F0 VA: 0x181951EF0
 	|-Queue<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
-	|-RVA: 0x1951E50 Offset: 0x1951250 VA: 0x181951E50
 	|-Queue<IntPtr>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Queue<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Queue<ulong>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
-	|-RVA: 0x1951DB0 Offset: 0x19511B0 VA: 0x181951DB0
 	|-Queue<AsyncGPUReadbackRequest>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Queue<EventDispatcher.EventRecord>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
@@ -457,18 +418,14 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951F90 Offset: 0x1951390 VA: 0x181951F90
 	|-Queue<RCon.Command>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-RVA: 0x1951EF0 Offset: 0x19512F0 VA: 0x181951EF0
 	|-Queue<int>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-RVA: 0x1951E50 Offset: 0x1951250 VA: 0x181951E50
 	|-Queue<IntPtr>.System.Collections.IEnumerable.GetEnumerator
 	|-Queue<object>.System.Collections.IEnumerable.GetEnumerator
 	|-Queue<ulong>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-RVA: 0x1951DB0 Offset: 0x19511B0 VA: 0x181951DB0
 	|-Queue<AsyncGPUReadbackRequest>.System.Collections.IEnumerable.GetEnumerator
 	|-Queue<EventDispatcher.EventRecord>.System.Collections.IEnumerable.GetEnumerator
 	*/
@@ -476,7 +433,6 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public T Dequeue() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19510E0 Offset: 0x19504E0 VA: 0x1819510E0
 	|-Queue<BaseEntity>.Dequeue
 	|-Queue<DeferredAction>.Dequeue
 	|-Queue<QueuedStream.WriteData>.Dequeue
@@ -489,46 +445,36 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Queue<CFNetwork.GetProxyData>.Dequeue
 	|-Queue<object>.Dequeue
 	|
-	|-RVA: 0x1951240 Offset: 0x1950640 VA: 0x181951240
 	|-Queue<RCon.Command>.Dequeue
 	|
-	|-RVA: 0x1951370 Offset: 0x1950770 VA: 0x181951370
 	|-Queue<int>.Dequeue
 	|
-	|-RVA: 0x19511A0 Offset: 0x19505A0 VA: 0x1819511A0
 	|-Queue<IntPtr>.Dequeue
 	|-Queue<ulong>.Dequeue
 	|
-	|-RVA: 0x1951400 Offset: 0x1950800 VA: 0x181951400
 	|-Queue<AsyncGPUReadbackRequest>.Dequeue
 	|
-	|-RVA: 0x1951010 Offset: 0x1950410 VA: 0x181951010
 	|-Queue<EventDispatcher.EventRecord>.Dequeue
 	*/
 
 	public T Peek() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951BE0 Offset: 0x1950FE0 VA: 0x181951BE0
 	|-Queue<ulong>.Peek
 	|-Queue<IntPtr>.Peek
 	|-Queue<object>.Peek
 	|
-	|-RVA: 0x1951B60 Offset: 0x1950F60 VA: 0x181951B60
 	|-Queue<AsyncGPUReadbackRequest>.Peek
 	|-Queue<EventDispatcher.EventRecord>.Peek
 	|
-	|-RVA: 0x1951C40 Offset: 0x1951040 VA: 0x181951C40
 	|-Queue<RCon.Command>.Peek
 	|
-	|-RVA: 0x1951B00 Offset: 0x1950F00 VA: 0x181951B00
 	|-Queue<int>.Peek
 	*/
 
 	private void SetCapacity(int capacity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951CD0 Offset: 0x19510D0 VA: 0x181951CD0
 	|-Queue<RCon.Command>.SetCapacity
 	|-Queue<int>.SetCapacity
 	|-Queue<IntPtr>.SetCapacity
@@ -541,7 +487,6 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private void MoveNext(ref int index) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1951AD0 Offset: 0x1950ED0 VA: 0x181951AD0
 	|-Queue<RCon.Command>.MoveNext
 	|-Queue<int>.MoveNext
 	|-Queue<IntPtr>.MoveNext
@@ -554,25 +499,18 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private void ThrowForEmptyQueue() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19535C0 Offset: 0x19529C0 VA: 0x1819535C0
 	|-Queue<RCon.Command>.ThrowForEmptyQueue
 	|
-	|-RVA: 0x1953620 Offset: 0x1952A20 VA: 0x181953620
 	|-Queue<int>.ThrowForEmptyQueue
 	|
-	|-RVA: 0x1953560 Offset: 0x1952960 VA: 0x181953560
 	|-Queue<IntPtr>.ThrowForEmptyQueue
 	|
-	|-RVA: 0x19536E0 Offset: 0x1952AE0 VA: 0x1819536E0
 	|-Queue<object>.ThrowForEmptyQueue
 	|
-	|-RVA: 0x1953740 Offset: 0x1952B40 VA: 0x181953740
 	|-Queue<ulong>.ThrowForEmptyQueue
 	|
-	|-RVA: 0x1953680 Offset: 0x1952A80 VA: 0x181953680
 	|-Queue<AsyncGPUReadbackRequest>.ThrowForEmptyQueue
 	|
-	|-RVA: 0x19537A0 Offset: 0x1952BA0 VA: 0x1819537A0
 	|-Queue<EventDispatcher.EventRecord>.ThrowForEmptyQueue
 	*/
 
@@ -591,18 +529,14 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 	internal void .ctor(Queue<T> q) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x220490 Offset: 0x21F890 VA: 0x180220490
 	|-Queue.Enumerator<RCon.Command>..ctor
 	|
-	|-RVA: 0x2205F0 Offset: 0x21F9F0 VA: 0x1802205F0
 	|-Queue.Enumerator<int>..ctor
 	|
-	|-RVA: 0x2205A0 Offset: 0x21F9A0 VA: 0x1802205A0
 	|-Queue.Enumerator<IntPtr>..ctor
 	|-Queue.Enumerator<object>..ctor
 	|-Queue.Enumerator<ulong>..ctor
 	|
-	|-RVA: 0x220440 Offset: 0x21F840 VA: 0x180220440
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>..ctor
 	|-Queue.Enumerator<EventDispatcher.EventRecord>..ctor
 	*/
@@ -610,19 +544,15 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 	public void Dispose() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x21EA10 Offset: 0x21DE10 VA: 0x18021EA10
 	|-Queue.Enumerator<RCon.Command>.Dispose
 	|
-	|-RVA: 0x21EA00 Offset: 0x21DE00 VA: 0x18021EA00
 	|-Queue.Enumerator<int>.Dispose
 	|
-	|-RVA: 0x21E990 Offset: 0x21DD90 VA: 0x18021E990
 	|-Queue.Enumerator<IntPtr>.Dispose
 	|-Queue.Enumerator<object>.Dispose
 	|-Queue.Enumerator<string>.Dispose
 	|-Queue.Enumerator<ulong>.Dispose
 	|
-	|-RVA: 0x21E940 Offset: 0x21DD40 VA: 0x18021E940
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>.Dispose
 	|-Queue.Enumerator<EventDispatcher.EventRecord>.Dispose
 	*/
@@ -630,127 +560,92 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 	public bool MoveNext() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x21ED30 Offset: 0x21E130 VA: 0x18021ED30
 	|-Queue.Enumerator<RCon.Command>.MoveNext
 	|
-	|-RVA: 0x21EC50 Offset: 0x21E050 VA: 0x18021EC50
 	|-Queue.Enumerator<int>.MoveNext
 	|
-	|-RVA: 0x21EEF0 Offset: 0x21E2F0 VA: 0x18021EEF0
 	|-Queue.Enumerator<IntPtr>.MoveNext
 	|
-	|-RVA: 0x21EA30 Offset: 0x21DE30 VA: 0x18021EA30
 	|-Queue.Enumerator<object>.MoveNext
 	|-Queue.Enumerator<string>.MoveNext
 	|
-	|-RVA: 0x21F030 Offset: 0x21E430 VA: 0x18021F030
 	|-Queue.Enumerator<ulong>.MoveNext
 	|
-	|-RVA: 0x21EB60 Offset: 0x21DF60 VA: 0x18021EB60
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>.MoveNext
 	|
-	|-RVA: 0x21F110 Offset: 0x21E510 VA: 0x18021F110
 	|-Queue.Enumerator<EventDispatcher.EventRecord>.MoveNext
 	*/
 
 	public T get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x220650 Offset: 0x21FA50 VA: 0x180220650
 	|-Queue.Enumerator<string>.get_Current
 	|-Queue.Enumerator<object>.get_Current
 	|
-	|-RVA: 0x220840 Offset: 0x21FC40 VA: 0x180220840
 	|-Queue.Enumerator<RCon.Command>.get_Current
 	|
-	|-RVA: 0x2207A0 Offset: 0x21FBA0 VA: 0x1802207A0
 	|-Queue.Enumerator<int>.get_Current
 	|
-	|-RVA: 0x2206E0 Offset: 0x21FAE0 VA: 0x1802206E0
 	|-Queue.Enumerator<IntPtr>.get_Current
 	|
-	|-RVA: 0x220690 Offset: 0x21FA90 VA: 0x180220690
 	|-Queue.Enumerator<ulong>.get_Current
 	|
-	|-RVA: 0x220720 Offset: 0x21FB20 VA: 0x180220720
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>.get_Current
 	|
-	|-RVA: 0x220760 Offset: 0x21FB60 VA: 0x180220760
 	|-Queue.Enumerator<EventDispatcher.EventRecord>.get_Current
 	*/
 
 	private void ThrowEnumerationNotStartedOrEnded() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x220330 Offset: 0x21F730 VA: 0x180220330
 	|-Queue.Enumerator<RCon.Command>.ThrowEnumerationNotStartedOrEnded
 	|
-	|-RVA: 0x220300 Offset: 0x21F700 VA: 0x180220300
 	|-Queue.Enumerator<int>.ThrowEnumerationNotStartedOrEnded
 	|
-	|-RVA: 0x220360 Offset: 0x21F760 VA: 0x180220360
 	|-Queue.Enumerator<IntPtr>.ThrowEnumerationNotStartedOrEnded
 	|
-	|-RVA: 0x220320 Offset: 0x21F720 VA: 0x180220320
 	|-Queue.Enumerator<object>.ThrowEnumerationNotStartedOrEnded
 	|
-	|-RVA: 0x220350 Offset: 0x21F750 VA: 0x180220350
 	|-Queue.Enumerator<ulong>.ThrowEnumerationNotStartedOrEnded
 	|
-	|-RVA: 0x220340 Offset: 0x21F740 VA: 0x180220340
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>.ThrowEnumerationNotStartedOrEnded
 	|
-	|-RVA: 0x220310 Offset: 0x21F710 VA: 0x180220310
 	|-Queue.Enumerator<EventDispatcher.EventRecord>.ThrowEnumerationNotStartedOrEnded
 	*/
 
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x220230 Offset: 0x21F630 VA: 0x180220230
 	|-Queue.Enumerator<RCon.Command>.System.Collections.IEnumerator.get_Current
 	|
-	|-RVA: 0x21FEF0 Offset: 0x21F2F0 VA: 0x18021FEF0
 	|-Queue.Enumerator<int>.System.Collections.IEnumerator.get_Current
 	|
-	|-RVA: 0x2200C0 Offset: 0x21F4C0 VA: 0x1802200C0
 	|-Queue.Enumerator<IntPtr>.System.Collections.IEnumerator.get_Current
 	|
-	|-RVA: 0x220050 Offset: 0x21F450 VA: 0x180220050
 	|-Queue.Enumerator<object>.System.Collections.IEnumerator.get_Current
 	|
-	|-RVA: 0x21FFA0 Offset: 0x21F3A0 VA: 0x18021FFA0
 	|-Queue.Enumerator<ulong>.System.Collections.IEnumerator.get_Current
 	|
-	|-RVA: 0x21FE40 Offset: 0x21F240 VA: 0x18021FE40
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>.System.Collections.IEnumerator.get_Current
 	|
-	|-RVA: 0x220180 Offset: 0x21F580 VA: 0x180220180
 	|-Queue.Enumerator<EventDispatcher.EventRecord>.System.Collections.IEnumerator.get_Current
 	*/
 
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x21F7D0 Offset: 0x21EBD0 VA: 0x18021F7D0
 	|-Queue.Enumerator<RCon.Command>.System.Collections.IEnumerator.Reset
 	|
-	|-RVA: 0x21F8E0 Offset: 0x21ECE0 VA: 0x18021F8E0
 	|-Queue.Enumerator<int>.System.Collections.IEnumerator.Reset
 	|
-	|-RVA: 0x21F860 Offset: 0x21EC60 VA: 0x18021F860
 	|-Queue.Enumerator<IntPtr>.System.Collections.IEnumerator.Reset
 	|
-	|-RVA: 0x21F9E0 Offset: 0x21EDE0 VA: 0x18021F9E0
 	|-Queue.Enumerator<object>.System.Collections.IEnumerator.Reset
 	|
-	|-RVA: 0x21FBA0 Offset: 0x21EFA0 VA: 0x18021FBA0
 	|-Queue.Enumerator<ulong>.System.Collections.IEnumerator.Reset
 	|
-	|-RVA: 0x21F960 Offset: 0x21ED60 VA: 0x18021F960
 	|-Queue.Enumerator<AsyncGPUReadbackRequest>.System.Collections.IEnumerator.Reset
 	|
-	|-RVA: 0x21FAC0 Offset: 0x21EEC0 VA: 0x18021FAC0
 	|-Queue.Enumerator<EventDispatcher.EventRecord>.System.Collections.IEnumerator.Reset
 	*/
 
@@ -1402,36 +1297,27 @@ public class NetRead : Stream // TypeDefIndex: 6695
 	public T Read<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EC140 Offset: 0x5EB540 VA: 0x1805EC140
 	|-NetRead.Read<byte>
 	|-NetRead.Read<sbyte>
 	|
-	|-RVA: 0x5EC210 Offset: 0x5EB610 VA: 0x1805EC210
 	|-NetRead.Read<double>
 	|
-	|-RVA: 0x5EC270 Offset: 0x5EB670 VA: 0x1805EC270
 	|-NetRead.Read<short>
 	|-NetRead.Read<ushort>
 	|
-	|-RVA: 0x5EC2D0 Offset: 0x5EB6D0 VA: 0x1805EC2D0
 	|-NetRead.Read<int>
 	|-NetRead.Read<uint>
 	|
-	|-RVA: 0x5EC330 Offset: 0x5EB730 VA: 0x1805EC330
 	|-NetRead.Read<long>
 	|-NetRead.Read<ulong>
 	|
-	|-RVA: 0x5EC420 Offset: 0x5EB820 VA: 0x1805EC420
 	|-NetRead.Read<float>
 	|
-	|-RVA: 0x5EC1A0 Offset: 0x5EB5A0 VA: 0x1805EC1A0
 	|-NetRead.Read<Color>
 	|-NetRead.Read<Quaternion>
 	|
-	|-RVA: 0x5EC390 Offset: 0x5EB790 VA: 0x1805EC390
 	|-NetRead.Read<Ray>
 	|
-	|-RVA: 0x5EC480 Offset: 0x5EB880 VA: 0x1805EC480
 	|-NetRead.Read<Vector3>
 	*/
 
@@ -1518,20 +1404,16 @@ public class NetWrite : MemoryStream // TypeDefIndex: 6696
 	private void Write<T>(in T val) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15428E0 Offset: 0x1541CE0 VA: 0x1815428E0
 	|-NetWrite.Write<byte>
 	|-NetWrite.Write<sbyte>
 	|
-	|-RVA: 0x1542950 Offset: 0x1541D50 VA: 0x181542950
 	|-NetWrite.Write<double>
 	|-NetWrite.Write<long>
 	|-NetWrite.Write<ulong>
 	|
-	|-RVA: 0x15429C0 Offset: 0x1541DC0 VA: 0x1815429C0
 	|-NetWrite.Write<short>
 	|-NetWrite.Write<ushort>
 	|
-	|-RVA: 0x1542A30 Offset: 0x1541E30 VA: 0x181542A30
 	|-NetWrite.Write<int>
 	|-NetWrite.Write<float>
 	|-NetWrite.Write<uint>
@@ -2018,37 +1900,26 @@ public static class NetworkWriteEx // TypeDefIndex: 11344
 	public static void WriteObject<T>(NetWrite write, T obj) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1542AA0 Offset: 0x1541EA0 VA: 0x181542AA0
 	|-NetworkWriteEx.WriteObject<bool>
 	|
-	|-RVA: 0x15435B0 Offset: 0x15429B0 VA: 0x1815435B0
 	|-NetworkWriteEx.WriteObject<byte>
 	|
-	|-RVA: 0x15440C0 Offset: 0x15434C0 VA: 0x1815440C0
 	|-NetworkWriteEx.WriteObject<int>
 	|
-	|-RVA: 0x1544BC0 Offset: 0x1543FC0 VA: 0x181544BC0
 	|-NetworkWriteEx.WriteObject<object>
 	|
-	|-RVA: 0x15455C0 Offset: 0x15449C0 VA: 0x1815455C0
 	|-NetworkWriteEx.WriteObject<sbyte>
 	|
-	|-RVA: 0xCF6880 Offset: 0xCF5C80 VA: 0x180CF6880
 	|-NetworkWriteEx.WriteObject<float>
 	|
-	|-RVA: 0xCF73B0 Offset: 0xCF67B0 VA: 0x180CF73B0
 	|-NetworkWriteEx.WriteObject<uint>
 	|
-	|-RVA: 0xCF7EB0 Offset: 0xCF72B0 VA: 0x180CF7EB0
 	|-NetworkWriteEx.WriteObject<ulong>
 	|
-	|-RVA: 0xCF5200 Offset: 0xCF4600 VA: 0x180CF5200
 	|-NetworkWriteEx.WriteObject<Color>
 	|
-	|-RVA: 0xCF5CE0 Offset: 0xCF50E0 VA: 0x180CF5CE0
 	|-NetworkWriteEx.WriteObject<Ray>
 	|
-	|-RVA: 0xCF89C0 Offset: 0xCF7DC0 VA: 0x180CF89C0
 	|-NetworkWriteEx.WriteObject<Vector3>
 	*/
 
@@ -2064,27 +1935,22 @@ public class NetworkedProperty<T> // TypeDefIndex: 11426
 	public T get_Value() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x36A480 Offset: 0x369880 VA: 0x18036A480
 	|-NetworkedProperty<int>.get_Value
 	|
-	|-RVA: 0x4B9460 Offset: 0x4B8860 VA: 0x1804B9460
 	|-NetworkedProperty<object>.get_Value
 	*/
 
 	public void set_Value(T value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD54730 Offset: 0xD53B30 VA: 0x180D54730
 	|-NetworkedProperty<int>.set_Value
 	|
-	|-RVA: 0xD546B0 Offset: 0xD53AB0 VA: 0x180D546B0
 	|-NetworkedProperty<object>.set_Value
 	*/
 
 	public void .ctor(BaseEntity entity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD545E0 Offset: 0xD539E0 VA: 0x180D545E0
 	|-NetworkedProperty<int>..ctor
 	|-NetworkedProperty<object>..ctor
 	*/
@@ -2092,7 +1958,6 @@ public class NetworkedProperty<T> // TypeDefIndex: 11426
 	public static T op_Implicit(NetworkedProperty<T> value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD54620 Offset: 0xD53A20 VA: 0x180D54620
 	|-NetworkedProperty<int>.op_Implicit
 	|-NetworkedProperty<object>.op_Implicit
 	*/

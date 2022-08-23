@@ -158,7 +158,6 @@ public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 10689
 	private void SafeDestroy<T>(ref T obj) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xCF9A80 Offset: 0xCF8E80 VA: 0x180CF9A80
 	|-ReflectionProbeEx.SafeDestroy<object>
 	|-ReflectionProbeEx.SafeDestroy<Material>
 	|-ReflectionProbeEx.SafeDestroy<RenderTexture>
@@ -167,7 +166,6 @@ public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 10689
 	private void SafeDispose<T>(ref T obj) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xCF9B20 Offset: 0xCF8F20 VA: 0x180CF9B20
 	|-ReflectionProbeEx.SafeDispose<object>
 	|-ReflectionProbeEx.SafeDispose<CommandBuffer>
 	*/

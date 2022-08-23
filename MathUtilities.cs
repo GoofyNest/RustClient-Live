@@ -3,7 +3,6 @@ internal static class MathUtilities // TypeDefIndex: 7627
 	public static T GetLastElementBelowThreshold<T>(T[] elements, long keyThreshold, Func<T, long> keySelector) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EB270 Offset: 0x5EA670 VA: 0x1805EB270
 	|-MathUtilities.GetLastElementBelowThreshold<MetricTempoMapValuesCache.AccumulatedMicroseconds>
 	|-MathUtilities.GetLastElementBelowThreshold<object>
 	*/

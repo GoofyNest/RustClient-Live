@@ -264,15 +264,12 @@ public class ServerAdminUI : SingletonComponent<ServerAdminUI> // TypeDefIndex: 
 	private void PopulateInfo<T, U>(List<T> contentArray, Func<T, GameObjectRef> getContent, RectTransform contentParent, Action<T, U> populateCallback) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xCF9B70 Offset: 0xCF8F70 VA: 0x180CF9B70
 	|-ServerAdminUI.PopulateInfo<Admin.PlayerInfo, ServerAdminPlayerEntry>
 	|-ServerAdminUI.PopulateInfo<Admin.PlayerInfo, object>
 	|
-	|-RVA: 0xCFA2A0 Offset: 0xCF96A0 VA: 0x180CFA2A0
 	|-ServerAdminUI.PopulateInfo<Admin.ServerConvarInfo, ServerAdminConvarInfo>
 	|-ServerAdminUI.PopulateInfo<Admin.ServerConvarInfo, object>
 	|
-	|-RVA: 0xCF9F70 Offset: 0xCF9370 VA: 0x180CF9F70
 	|-ServerAdminUI.PopulateInfo<object, object>
 	*/
 

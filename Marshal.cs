@@ -53,14 +53,11 @@ public static class Marshal // TypeDefIndex: 1355
 	public static T PtrToStructure<T>(IntPtr ptr) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBDB8C0 Offset: 0xBDACC0 VA: 0x180BDB8C0
 	|-Marshal.PtrToStructure<UnityTls.unitytls_interface_struct>
 	|-Marshal.PtrToStructure<object>
 	|
-	|-RVA: 0xBDB740 Offset: 0xBDAB40 VA: 0x180BDB740
 	|-Marshal.PtrToStructure<NetMsg>
 	|
-	|-RVA: 0xBDB9A0 Offset: 0xBDADA0 VA: 0x180BDB9A0
 	|-Marshal.PtrToStructure<Win32_FIXED_INFO>
 	*/
 
@@ -96,10 +93,8 @@ public static class Marshal // TypeDefIndex: 1355
 	public static int SizeOf<T>(T structure) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE81DB0 Offset: 0xE811B0 VA: 0x180E81DB0
 	|-Marshal.SizeOf<Os.SECURITY_ATTRIBUTES>
 	|
-	|-RVA: 0xE81D40 Offset: 0xE81140 VA: 0x180E81D40
 	|-Marshal.SizeOf<object>
 	*/
 
@@ -116,7 +111,6 @@ public static class Marshal // TypeDefIndex: 1355
 	public static void StructureToPtr<T>(T structure, IntPtr ptr, bool fDeleteOld) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xF037A0 Offset: 0xF02BA0 VA: 0x180F037A0
 	|-Marshal.StructureToPtr<object>
 	*/
 
@@ -125,10 +119,8 @@ public static class Marshal // TypeDefIndex: 1355
 	public static IntPtr UnsafeAddrOfPinnedArrayElement<T>(T[] arr, int index) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE81E70 Offset: 0xE81270 VA: 0x180E81E70
 	|-Marshal.UnsafeAddrOfPinnedArrayElement<byte>
 	|
-	|-RVA: 0xE81ED0 Offset: 0xE812D0 VA: 0x180E81ED0
 	|-Marshal.UnsafeAddrOfPinnedArrayElement<object>
 	*/
 
@@ -139,7 +131,6 @@ public static class Marshal // TypeDefIndex: 1355
 	public static IntPtr GetFunctionPointerForDelegate<TDelegate>(TDelegate d) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE81C80 Offset: 0xE81080 VA: 0x180E81C80
 	|-Marshal.GetFunctionPointerForDelegate<BufferManager.FreeFn>
 	|-Marshal.GetFunctionPointerForDelegate<object>
 	|-Marshal.GetFunctionPointerForDelegate<OSSpecificSynchronizationContext.InvocationEntryDelegate>

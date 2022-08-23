@@ -23,7 +23,6 @@ public class LootPanel : MonoBehaviour // TypeDefIndex: 11025
 	public T GetContainerEntity<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EB140 Offset: 0x5EA540 VA: 0x1805EB140
 	|-LootPanel.GetContainerEntity<Locker>
 	|-LootPanel.GetContainerEntity<ReclaimTerminal>
 	|-LootPanel.GetContainerEntity<RepairBench>

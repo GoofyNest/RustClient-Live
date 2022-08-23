@@ -345,7 +345,6 @@ private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 	public void .ctor(int capacity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1E33B0 Offset: 0x1E27B0 VA: 0x1801E33B0
 	|-RuntimeType.ListBuilder<object>..ctor
 	|-RuntimeType.ListBuilder<ConstructorInfo>..ctor
 	|-RuntimeType.ListBuilder<EventInfo>..ctor
@@ -358,7 +357,6 @@ private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 	public T get_Item(int index) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1E33F0 Offset: 0x1E27F0 VA: 0x1801E33F0
 	|-RuntimeType.ListBuilder<object>.get_Item
 	|-RuntimeType.ListBuilder<ConstructorInfo>.get_Item
 	|-RuntimeType.ListBuilder<MethodInfo>.get_Item
@@ -368,7 +366,6 @@ private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 	public T[] ToArray() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1E33A0 Offset: 0x1E27A0 VA: 0x1801E33A0
 	|-RuntimeType.ListBuilder<object>.ToArray
 	|-RuntimeType.ListBuilder<ConstructorInfo>.ToArray
 	|-RuntimeType.ListBuilder<EventInfo>.ToArray
@@ -381,7 +378,6 @@ private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 	public void CopyTo(object[] array, int index) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1E32E0 Offset: 0x1E26E0 VA: 0x1801E32E0
 	|-RuntimeType.ListBuilder<object>.CopyTo
 	|-RuntimeType.ListBuilder<ConstructorInfo>.CopyTo
 	|-RuntimeType.ListBuilder<EventInfo>.CopyTo
@@ -394,7 +390,6 @@ private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 	public int get_Count() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xF3DA0 Offset: 0xF31A0 VA: 0x1800F3DA0
 	|-RuntimeType.ListBuilder<object>.get_Count
 	|-RuntimeType.ListBuilder<ConstructorInfo>.get_Count
 	|-RuntimeType.ListBuilder<EventInfo>.get_Count
@@ -407,7 +402,6 @@ private struct RuntimeType.ListBuilder<T> // TypeDefIndex: 294
 	public void Add(T item) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1E32D0 Offset: 0x1E26D0 VA: 0x1801E32D0
 	|-RuntimeType.ListBuilder<object>.Add
 	|-RuntimeType.ListBuilder<ConstructorInfo>.Add
 	|-RuntimeType.ListBuilder<EventInfo>.Add

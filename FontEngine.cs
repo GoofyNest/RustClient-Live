@@ -68,10 +68,8 @@ public sealed class FontEngine // TypeDefIndex: 4120
 	private static void SetMarshallingArraySize<T>(ref T[] marshallingArray, int recordCount) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E7670 Offset: 0x5E6A70 VA: 0x1805E7670
 	|-FontEngine.SetMarshallingArraySize<object>
 	|
-	|-RVA: 0x5E75A0 Offset: 0x5E69A0 VA: 0x1805E75A0
 	|-FontEngine.SetMarshallingArraySize<GlyphPairAdjustmentRecord>
 	*/
 

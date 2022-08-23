@@ -76,7 +76,6 @@ public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // Ty
 	public void OnEngineStateChanged<T>(VehicleEngineController.EngineState<T> newState) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1540AC0 Offset: 0x153FEC0 VA: 0x181540AC0
 	|-GroundVehicleAudio.OnEngineStateChanged<GroundVehicle>
 	|-GroundVehicleAudio.OnEngineStateChanged<object>
 	*/

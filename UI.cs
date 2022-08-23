@@ -94,7 +94,6 @@ public interface IComparable<T> // TypeDefIndex: 249
 	public abstract int CompareTo(T other);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IComparable<object>.CompareTo
 	*/
 
@@ -155,7 +154,6 @@ public interface IEquatable<T> // TypeDefIndex: 253
 	public abstract bool Equals(T other);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IEquatable<object>.Equals
 	*/
 
@@ -178,7 +176,6 @@ public interface IProgress<T> // TypeDefIndex: 264
 	public abstract void Report(T value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IProgress<object>.Report
 	*/
 
@@ -1145,49 +1142,42 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 1
 	public abstract int get_Count();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.get_Count
 	*/
 
 	public abstract bool get_IsReadOnly();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.get_IsReadOnly
 	*/
 
 	public abstract void Add(T item);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.Add
 	*/
 
 	public abstract void Clear();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.Clear
 	*/
 
 	public abstract bool Contains(T item);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.Contains
 	*/
 
 	public abstract void CopyTo(T[] array, int arrayIndex);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.CopyTo
 	*/
 
 	public abstract bool Remove(T item);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ICollection<object>.Remove
 	*/
 
@@ -1198,7 +1188,6 @@ public interface IComparer<T> // TypeDefIndex: 1479
 	public abstract int Compare(T x, T y);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IComparer<object>.Compare
 	*/
 
@@ -1213,56 +1202,48 @@ public interface IDictionary<TKey, TValue> : ICollection<KeyValuePair<TKey, TVal
 	public abstract TValue get_Item(TKey key);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.get_Item
 	*/
 
 	public abstract void set_Item(TKey key, TValue value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.set_Item
 	*/
 
 	public abstract ICollection<TKey> get_Keys();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.get_Keys
 	*/
 
 	public abstract ICollection<TValue> get_Values();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.get_Values
 	*/
 
 	public abstract bool ContainsKey(TKey key);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.ContainsKey
 	*/
 
 	public abstract void Add(TKey key, TValue value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.Add
 	*/
 
 	public abstract bool Remove(TKey key);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.Remove
 	*/
 
 	public abstract bool TryGetValue(TKey key, out TValue value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IDictionary<object, object>.TryGetValue
 	*/
 
@@ -1273,7 +1254,6 @@ public interface IEnumerable<T> : IEnumerable // TypeDefIndex: 1481
 	public abstract IEnumerator<T> GetEnumerator();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IEnumerable<object>.GetEnumerator
 	*/
 
@@ -1286,7 +1266,6 @@ public interface IEnumerator<T> : IDisposable, IEnumerator // TypeDefIndex: 1482
 	public abstract T get_Current();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IEnumerator<object>.get_Current
 	*/
 
@@ -1297,14 +1276,12 @@ public interface IEqualityComparer<T> // TypeDefIndex: 1483
 	public abstract bool Equals(T x, T y);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IEqualityComparer<object>.Equals
 	*/
 
 	public abstract int GetHashCode(T obj);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IEqualityComparer<object>.GetHashCode
 	*/
 
@@ -1317,35 +1294,30 @@ public interface IList<T> : ICollection<T>, IEnumerable<T>, IEnumerable // TypeD
 	public abstract T get_Item(int index);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IList<object>.get_Item
 	*/
 
 	public abstract void set_Item(int index, T value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IList<object>.set_Item
 	*/
 
 	public abstract int IndexOf(T item);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IList<object>.IndexOf
 	*/
 
 	public abstract void Insert(int index, T item);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IList<object>.Insert
 	*/
 
 	public abstract void RemoveAt(int index);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IList<object>.RemoveAt
 	*/
 
@@ -1358,7 +1330,6 @@ public interface IReadOnlyCollection<T> : IEnumerable<T>, IEnumerable // TypeDef
 	public abstract int get_Count();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IReadOnlyCollection<object>.get_Count
 	*/
 
@@ -1369,7 +1340,6 @@ public interface IReadOnlyDictionary<TKey, TValue> : IReadOnlyCollection<KeyValu
 	public abstract bool TryGetValue(TKey key, out TValue value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IReadOnlyDictionary<object, object>.TryGetValue
 	*/
 
@@ -1382,7 +1352,6 @@ public interface IReadOnlyList<T> : IReadOnlyCollection<T>, IEnumerable<T>, IEnu
 	public abstract T get_Item(int index);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IReadOnlyList<object>.get_Item
 	*/
 
@@ -2081,7 +2050,6 @@ public interface IOrderedEnumerable<TElement> : IEnumerable<TElement>, IEnumerab
 	public abstract IOrderedEnumerable<TElement> CreateOrderedEnumerable<TKey>(Func<TElement, TKey> keySelector, IComparer<TKey> comparer, bool descending);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IOrderedEnumerable<object>.CreateOrderedEnumerable<object>
 	*/
 
@@ -2094,7 +2062,6 @@ public interface IGrouping<TKey, TElement> : IEnumerable<TElement>, IEnumerable 
 	public abstract TKey get_Key();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IGrouping<object, object>.get_Key
 	*/
 
@@ -2716,14 +2683,12 @@ internal interface IStyleValue<T> // TypeDefIndex: 4716
 	public abstract T get_value();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IStyleValue<object>.get_value
 	*/
 
 	public abstract StyleKeyword get_keyword();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IStyleValue<object>.get_keyword
 	*/
 
@@ -2761,28 +2726,24 @@ public interface IImmutableStack<T> : IEnumerable<T>, IEnumerable // TypeDefInde
 	public abstract int get_Count();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IImmutableStack<object>.get_Count
 	*/
 
 	public abstract IImmutableStack<T> Push(T value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IImmutableStack<object>.Push
 	*/
 
 	public abstract IImmutableStack<T> Pop();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IImmutableStack<object>.Pop
 	*/
 
 	public abstract T Peek();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IImmutableStack<object>.Peek
 	*/
 
@@ -2795,14 +2756,12 @@ public interface ILinkedListNode<T> // TypeDefIndex: 4803
 	public abstract T get_next();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ILinkedListNode<object>.get_next
 	*/
 
 	public abstract void set_next(T value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ILinkedListNode<object>.set_next
 	*/
 
@@ -2816,21 +2775,18 @@ public interface IMinHeapNode<T> // TypeDefIndex: 4805
 	public abstract T get_child();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IMinHeapNode<object>.get_child
 	*/
 
 	public abstract void set_child(T value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IMinHeapNode<object>.set_child
 	*/
 
 	public abstract int get_order();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IMinHeapNode<object>.get_order
 	*/
 
@@ -3558,14 +3514,12 @@ public interface IArrayPool<T> // TypeDefIndex: 5871
 	public abstract T[] Rent(int minimumLength);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IArrayPool<object>.Rent
 	*/
 
 	public abstract void Return(T[] array);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IArrayPool<object>.Return
 	*/
 
@@ -4086,21 +4040,18 @@ public interface IValueTaskSource<TResult> // TypeDefIndex: 7090
 	public abstract ValueTaskSourceStatus GetStatus(short token);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IValueTaskSource<object>.GetStatus
 	*/
 
 	public abstract void OnCompleted(Action<object> continuation, object state, short token, ValueTaskSourceOnCompletedFlags flags);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IValueTaskSource<object>.OnCompleted
 	*/
 
 	public abstract TResult GetResult(short token);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IValueTaskSource<object>.GetResult
 	*/
 
@@ -4656,35 +4607,30 @@ public interface VehicleChassisVisuals.IClientWheelUser<T> // TypeDefIndex: 9781
 	public abstract Vector3 get_Velocity();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals.IClientWheelUser<object>.get_Velocity
 	*/
 
 	public abstract float get_DriveWheelVelocity();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals.IClientWheelUser<object>.get_DriveWheelVelocity
 	*/
 
 	public abstract float get_SteerAngle();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals.IClientWheelUser<object>.get_SteerAngle
 	*/
 
 	public abstract float get_MaxSteerAngle();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals.IClientWheelUser<object>.get_MaxSteerAngle
 	*/
 
 	public abstract float GetThrottleInput();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-VehicleChassisVisuals.IClientWheelUser<object>.GetThrottleInput
 	*/
 
@@ -5179,7 +5125,6 @@ public class UIDialog : ListComponent<UIDialog> // TypeDefIndex: 10919
 	public static T Spawn<T>(string prefab) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0E80 Offset: 0x14C0280 VA: 0x1814C0E80
 	|-UIDialog.Spawn<ChangeSignText>
 	|-UIDialog.Spawn<MLRSUIDialog>
 	|-UIDialog.Spawn<MuteListController>
@@ -7167,21 +7112,18 @@ public interface IGenericLerpTarget<T> : ILerpInfo // TypeDefIndex: 12115
 	public abstract void SetFrom(T snapshot);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IGenericLerpTarget<object>.SetFrom
 	*/
 
 	public abstract T GetCurrentState();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IGenericLerpTarget<object>.GetCurrentState
 	*/
 
 	public abstract void DebugInterpolationState(Interpolator.Segment<T> segment, List<T> entries);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-IGenericLerpTarget<object>.DebugInterpolationState
 	*/
 
@@ -7194,35 +7136,30 @@ public interface ISnapshot<T> // TypeDefIndex: 12117
 	public abstract float get_Time();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ISnapshot<object>.get_Time
 	*/
 
 	public abstract void set_Time(float value);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ISnapshot<object>.set_Time
 	*/
 
 	public abstract void MatchValuesTo(T entry);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ISnapshot<object>.MatchValuesTo
 	*/
 
 	public abstract void Lerp(T prev, T next, float delta);
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ISnapshot<object>.Lerp
 	*/
 
 	public abstract T GetNew();
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-ISnapshot<object>.GetNew
 	*/
 

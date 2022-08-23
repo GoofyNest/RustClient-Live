@@ -27,34 +27,27 @@ public class MaterialConfig.ShaderParameters<T> // TypeDefIndex: 11311
 	public float FindBlendParameters(Vector3 pos, out T src, out T dst) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17F6020 Offset: 0x17F5420 VA: 0x1817F6020
 	|-MaterialConfig.ShaderParameters<object>.FindBlendParameters
 	|
-	|-RVA: 0x17F5CA0 Offset: 0x17F50A0 VA: 0x1817F5CA0
 	|-MaterialConfig.ShaderParameters<float>.FindBlendParameters
 	|
-	|-RVA: 0x17F56B0 Offset: 0x17F4AB0 VA: 0x1817F56B0
 	|-MaterialConfig.ShaderParameters<Color>.FindBlendParameters
 	*/
 
 	public T FindBlendParameters(Vector3 pos) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17F5430 Offset: 0x17F4830 VA: 0x1817F5430
 	|-MaterialConfig.ShaderParameters<object>.FindBlendParameters
 	|-MaterialConfig.ShaderParameters<Texture>.FindBlendParameters
 	|
-	|-RVA: 0x17F63E0 Offset: 0x17F57E0 VA: 0x1817F63E0
 	|-MaterialConfig.ShaderParameters<float>.FindBlendParameters
 	|
-	|-RVA: 0x17F5A30 Offset: 0x17F4E30 VA: 0x1817F5A30
 	|-MaterialConfig.ShaderParameters<Color>.FindBlendParameters
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-MaterialConfig.ShaderParameters<object>..ctor
 	|-MaterialConfig.ShaderParameters<float>..ctor
 	|-MaterialConfig.ShaderParameters<Color>..ctor

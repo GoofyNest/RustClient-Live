@@ -34,7 +34,6 @@ public static class Manager // TypeDefIndex: 7007
 	internal static T Create<T>(string prefabName) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EB1F0 Offset: 0x5EA5F0 VA: 0x1805EB1F0
 	|-Manager.Create<Blocker>
 	|-Manager.Create<Dropdown>
 	|-Manager.Create<Menu>

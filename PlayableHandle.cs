@@ -10,31 +10,22 @@ public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3870
 	internal bool IsPlayableOfType<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xFE3F0 Offset: 0xFD7F0 VA: 0x1800FE3F0
 	|-PlayableHandle.IsPlayableOfType<object>
 	|
-	|-RVA: 0xFDFF0 Offset: 0xFD3F0 VA: 0x1800FDFF0
 	|-PlayableHandle.IsPlayableOfType<AnimationLayerMixerPlayable>
 	|
-	|-RVA: 0xFE070 Offset: 0xFD470 VA: 0x1800FE070
 	|-PlayableHandle.IsPlayableOfType<AnimationMixerPlayable>
 	|
-	|-RVA: 0xFE0F0 Offset: 0xFD4F0 VA: 0x1800FE0F0
 	|-PlayableHandle.IsPlayableOfType<AnimationMotionXToDeltaPlayable>
 	|
-	|-RVA: 0xFE170 Offset: 0xFD570 VA: 0x1800FE170
 	|-PlayableHandle.IsPlayableOfType<AnimationOffsetPlayable>
 	|
-	|-RVA: 0xFE1F0 Offset: 0xFD5F0 VA: 0x1800FE1F0
 	|-PlayableHandle.IsPlayableOfType<AnimationPosePlayable>
 	|
-	|-RVA: 0xFE270 Offset: 0xFD670 VA: 0x1800FE270
 	|-PlayableHandle.IsPlayableOfType<AnimationRemoveScalePlayable>
 	|
-	|-RVA: 0xFE2F0 Offset: 0xFD6F0 VA: 0x1800FE2F0
 	|-PlayableHandle.IsPlayableOfType<AnimationScriptPlayable>
 	|
-	|-RVA: 0xFE370 Offset: 0xFD770 VA: 0x1800FE370
 	|-PlayableHandle.IsPlayableOfType<AnimatorControllerPlayable>
 	*/
 

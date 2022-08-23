@@ -40,7 +40,6 @@ public static class Interlocked // TypeDefIndex: 824
 	public static T CompareExchange<T>(ref T location1, T value, T comparand) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-Interlocked.CompareExchange<object>
 	*/
 
@@ -56,7 +55,6 @@ public static class Interlocked // TypeDefIndex: 824
 	public static T Exchange<T>(ref T location1, T value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: -1 Offset: -1
 	|-Interlocked.Exchange<object>
 	*/
 

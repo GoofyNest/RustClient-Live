@@ -41,7 +41,6 @@ public static class ExecuteEvents // TypeDefIndex: 5076
 	public static T ValidateEventData<T>(BaseEventData data) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14A9380 Offset: 0x14A8780 VA: 0x1814A9380
 	|-ExecuteEvents.ValidateEventData<object>
 	|-ExecuteEvents.ValidateEventData<AxisEventData>
 	|-ExecuteEvents.ValidateEventData<PointerEventData>
@@ -120,7 +119,6 @@ public static class ExecuteEvents // TypeDefIndex: 5076
 	public static bool Execute<T>(GameObject target, BaseEventData eventData, ExecuteEvents.EventFunction<T> functor) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBED680 Offset: 0xBECA80 VA: 0x180BED680
 	|-ExecuteEvents.Execute<object>
 	|-ExecuteEvents.Execute<IBeginDragHandler>
 	|-ExecuteEvents.Execute<ICancelHandler>
@@ -141,7 +139,6 @@ public static class ExecuteEvents // TypeDefIndex: 5076
 	public static GameObject ExecuteHierarchy<T>(GameObject root, BaseEventData eventData, ExecuteEvents.EventFunction<T> callbackFunction) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1A9F2B0 Offset: 0x1A9E6B0 VA: 0x181A9F2B0
 	|-ExecuteEvents.ExecuteHierarchy<object>
 	|-ExecuteEvents.ExecuteHierarchy<IDropHandler>
 	|-ExecuteEvents.ExecuteHierarchy<IPointerDownHandler>
@@ -152,28 +149,24 @@ public static class ExecuteEvents // TypeDefIndex: 5076
 	private static bool ShouldSendToComponent<T>(Component component) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBED9A0 Offset: 0xBECDA0 VA: 0x180BED9A0
 	|-ExecuteEvents.ShouldSendToComponent<object>
 	*/
 
 	private static void GetEventList<T>(GameObject go, IList<IEventSystemHandler> results) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E6BF0 Offset: 0x5E5FF0 VA: 0x1805E6BF0
 	|-ExecuteEvents.GetEventList<object>
 	*/
 
 	public static bool CanHandleEvent<T>(GameObject go) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBED5A0 Offset: 0xBEC9A0 VA: 0x180BED5A0
 	|-ExecuteEvents.CanHandleEvent<object>
 	*/
 
 	public static GameObject GetEventHandler<T>(GameObject root) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1A9F430 Offset: 0x1A9E830 VA: 0x181A9F430
 	|-ExecuteEvents.GetEventHandler<object>
 	|-ExecuteEvents.GetEventHandler<IDragHandler>
 	|-ExecuteEvents.GetEventHandler<IPointerClickHandler>
@@ -190,7 +183,6 @@ public sealed class ExecuteEvents.EventFunction<T1> : MulticastDelegate // TypeD
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4971F0 Offset: 0x4965F0 VA: 0x1804971F0
 	|-ExecuteEvents.EventFunction<object>..ctor
 	|-ExecuteEvents.EventFunction<IBeginDragHandler>..ctor
 	|-ExecuteEvents.EventFunction<ICancelHandler>..ctor
@@ -214,21 +206,18 @@ public sealed class ExecuteEvents.EventFunction<T1> : MulticastDelegate // TypeD
 	public virtual void Invoke(T1 handler, BaseEventData eventData) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xADFD50 Offset: 0xADF150 VA: 0x180ADFD50
 	|-ExecuteEvents.EventFunction<object>.Invoke
 	*/
 
 	public virtual IAsyncResult BeginInvoke(T1 handler, BaseEventData eventData, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xADFD10 Offset: 0xADF110 VA: 0x180ADFD10
 	|-ExecuteEvents.EventFunction<object>.BeginInvoke
 	*/
 
 	public virtual void EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497050 Offset: 0x496450 VA: 0x180497050
 	|-ExecuteEvents.EventFunction<object>.EndInvoke
 	*/
 

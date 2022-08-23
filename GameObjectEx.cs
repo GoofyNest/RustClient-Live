@@ -26,7 +26,6 @@ public static class GameObjectEx // TypeDefIndex: 11697
 	public static bool HasComponent<T>(GameObject obj) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBEDCB0 Offset: 0xBED0B0 VA: 0x180BEDCB0
 	|-GameObjectEx.HasComponent<object>
 	*/
 
@@ -34,7 +33,6 @@ public static class GameObjectEx // TypeDefIndex: 11697
 	public static void SetChildComponentsEnabled<T>(GameObject gameObject, bool enabled) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5E7740 Offset: 0x5E6B40 VA: 0x1805E7740
 	|-GameObjectEx.SetChildComponentsEnabled<object>
 	|-GameObjectEx.SetChildComponentsEnabled<TMP_Text>
 	*/

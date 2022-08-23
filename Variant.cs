@@ -35,14 +35,12 @@ public abstract class Variant : IConvertible // TypeDefIndex: 11584
 	public void Make<T>(out T item) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F25B0 Offset: 0x5F19B0 VA: 0x1805F25B0
 	|-Variant.Make<object>
 	*/
 
 	public T Make<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C1500 Offset: 0x14C0900 VA: 0x1814C1500
 	|-Variant.Make<object>
 	*/
 

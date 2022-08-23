@@ -19,7 +19,6 @@ public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 8650
 	public T GetStageComponent<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5ED560 Offset: 0x5EC960 VA: 0x1805ED560
 	|-StagedResourceEntity.GetStageComponent<object>
 	|-StagedResourceEntity.GetStageComponent<MeshRenderer>
 	*/

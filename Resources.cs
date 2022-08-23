@@ -3,7 +3,6 @@ public sealed class Resources // TypeDefIndex: 3490
 	internal static T[] ConvertObjects<T>(Object[] rawObjects) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1A9DE80 Offset: 0x1A9D280 VA: 0x181A9DE80
 	|-Resources.ConvertObjects<object>
 	*/
 
@@ -14,7 +13,6 @@ public sealed class Resources // TypeDefIndex: 3490
 	public static T[] FindObjectsOfTypeAll<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1AA2BB0 Offset: 0x1AA1FB0 VA: 0x181AA2BB0
 	|-Resources.FindObjectsOfTypeAll<LocalizeText>
 	|-Resources.FindObjectsOfTypeAll<RustText>
 	|-Resources.FindObjectsOfTypeAll<Cubemap>
@@ -28,7 +26,6 @@ public sealed class Resources // TypeDefIndex: 3490
 	public static T Load<T>(string path) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0350 Offset: 0x14BF750 VA: 0x1814C0350
 	|-Resources.Load<GameModeManifest>
 	|-Resources.Load<MissionManifest>
 	|-Resources.Load<TMP_ColorGradient>
@@ -57,7 +54,6 @@ public sealed class Resources // TypeDefIndex: 3490
 	public static T[] LoadAll<T>(string path) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1AA2C30 Offset: 0x1AA2030 VA: 0x181AA2C30
 	|-Resources.LoadAll<Config>
 	|-Resources.LoadAll<object>
 	*/
@@ -69,7 +65,6 @@ public sealed class Resources // TypeDefIndex: 3490
 	public static T GetBuiltinResource<T>(string path) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0290 Offset: 0x14BF690 VA: 0x1814C0290
 	|-Resources.GetBuiltinResource<Font>
 	|-Resources.GetBuiltinResource<object>
 	*/

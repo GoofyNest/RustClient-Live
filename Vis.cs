@@ -10,7 +10,6 @@ public static class Vis // TypeDefIndex: 10053
 	public static void Colliders<T>(Vector3 position, float radius, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F2910 Offset: 0x5F1D10 VA: 0x1805F2910
 	|-Vis.Colliders<object>
 	|-Vis.Colliders<Collider>
 	*/
@@ -18,7 +17,6 @@ public static class Vis // TypeDefIndex: 10053
 	public static void Components<T>(Vector3 position, float radius, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F2D50 Offset: 0x5F2150 VA: 0x1805F2D50
 	|-Vis.Components<object>
 	|-Vis.Components<Rigidbody>
 	|-Vis.Components<WaterVolume>
@@ -27,7 +25,6 @@ public static class Vis // TypeDefIndex: 10053
 	public static void Entities<T>(Vector3 position, float radius, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F3460 Offset: 0x5F2860 VA: 0x1805F3460
 	|-Vis.Entities<BaseEntity>
 	|-Vis.Entities<BasePlayer>
 	|-Vis.Entities<BaseVehicle>
@@ -43,7 +40,6 @@ public static class Vis // TypeDefIndex: 10053
 	public static void EntityComponents<T>(Vector3 position, float radius, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F3690 Offset: 0x5F2A90 VA: 0x1805F3690
 	|-Vis.EntityComponents<object>
 	*/
 
@@ -52,28 +48,24 @@ public static class Vis // TypeDefIndex: 10053
 	public static void Colliders<T>(OBB bounds, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F26E0 Offset: 0x5F1AE0 VA: 0x1805F26E0
 	|-Vis.Colliders<object>
 	*/
 
 	public static void Components<T>(OBB bounds, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F2B40 Offset: 0x5F1F40 VA: 0x1805F2B40
 	|-Vis.Components<object>
 	*/
 
 	public static void Entities<T>(OBB bounds, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F2F40 Offset: 0x5F2340 VA: 0x1805F2F40
 	|-Vis.Entities<object>
 	*/
 
 	public static void EntityComponents<T>(OBB bounds, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F38D0 Offset: 0x5F2CD0 VA: 0x1805F38D0
 	|-Vis.EntityComponents<object>
 	*/
 
@@ -82,7 +74,6 @@ public static class Vis // TypeDefIndex: 10053
 	public static void Entities<T>(Vector3 startPosition, Vector3 endPosition, float radius, List<T> list, int layerMask = -1, QueryTriggerInteraction triggerInteraction = 2) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5F31C0 Offset: 0x5F25C0 VA: 0x1805F31C0
 	|-Vis.Entities<object>
 	*/
 

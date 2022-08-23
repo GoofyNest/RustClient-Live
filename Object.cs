@@ -69,7 +69,6 @@ public class Object // TypeDefIndex: 3535
 	public static T Instantiate<T>(T original) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF560 Offset: 0x14BE960 VA: 0x1814BF560
 	|-Object.Instantiate<ERMarkerExt>
 	|-Object.Instantiate<ERSOMarkerExt>
 	|-Object.Instantiate<ERSORoadExt>
@@ -92,7 +91,6 @@ public class Object // TypeDefIndex: 3535
 	public static T Instantiate<T>(T original, Vector3 position, Quaternion rotation) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF8A0 Offset: 0x14BECA0 VA: 0x1814BF8A0
 	|-Object.Instantiate<ArcadeEntity>
 	|-Object.Instantiate<ArcadeEntityController>
 	|-Object.Instantiate<BaseArcadeGame>
@@ -103,7 +101,6 @@ public class Object // TypeDefIndex: 3535
 	public static T Instantiate<T>(T original, Vector3 position, Quaternion rotation, Transform parent) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF7B0 Offset: 0x14BEBB0 VA: 0x1814BF7B0
 	|-Object.Instantiate<GameObject>
 	|-Object.Instantiate<object>
 	*/
@@ -111,7 +108,6 @@ public class Object // TypeDefIndex: 3535
 	public static T Instantiate<T>(T original, Transform parent) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF670 Offset: 0x14BEA70 VA: 0x1814BF670
 	|-Object.Instantiate<ContactsEntry>
 	|-Object.Instantiate<HttpImage>
 	|-Object.Instantiate<RustText>
@@ -126,7 +122,6 @@ public class Object // TypeDefIndex: 3535
 	public static T Instantiate<T>(T original, Transform parent, bool worldPositionStays) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF6F0 Offset: 0x14BEAF0 VA: 0x1814BF6F0
 	|-Object.Instantiate<object>
 	*/
 
@@ -156,7 +151,6 @@ public class Object // TypeDefIndex: 3535
 	public static T[] FindObjectsOfType<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1AA2940 Offset: 0x1AA1D40 VA: 0x181AA2940
 	|-Object.FindObjectsOfType<BaseEntity>
 	|-Object.FindObjectsOfType<BenchmarkScene>
 	|-Object.FindObjectsOfType<BlendedLoopEngineSound>
@@ -186,7 +180,6 @@ public class Object // TypeDefIndex: 3535
 	public static T FindObjectOfType<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BF480 Offset: 0x14BE880 VA: 0x1814BF480
 	|-Object.FindObjectOfType<Client>
 	|-Object.FindObjectOfType<CursorManager>
 	|-Object.FindObjectOfType<MainCamera>

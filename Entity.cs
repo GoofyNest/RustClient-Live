@@ -451,7 +451,6 @@ public class EntityComponent<T> : EntityComponentBase // TypeDefIndex: 9487
 	protected T get_baseEntity() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E1840 Offset: 0x15E0C40 VA: 0x1815E1840
 	|-EntityComponent<BaseEntity>.get_baseEntity
 	|-EntityComponent<BasePlayer>.get_baseEntity
 	|-EntityComponent<object>.get_baseEntity
@@ -460,14 +459,12 @@ public class EntityComponent<T> : EntityComponentBase // TypeDefIndex: 9487
 	protected void UpdateBaseEntity() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E16C0 Offset: 0x15E0AC0 VA: 0x1815E16C0
 	|-EntityComponent<object>.UpdateBaseEntity
 	*/
 
 	protected override BaseEntity GetBaseEntity() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x13508E0 Offset: 0x134FCE0 VA: 0x1813508E0
 	|-EntityComponent<BaseAnimalNPC>.GetBaseEntity
 	|-EntityComponent<BaseEntity>.GetBaseEntity
 	|-EntityComponent<BaseFishNPC>.GetBaseEntity
@@ -482,7 +479,6 @@ public class EntityComponent<T> : EntityComponentBase // TypeDefIndex: 9487
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E1820 Offset: 0x15E0C20 VA: 0x1815E1820
 	|-EntityComponent<BaseEntity>..ctor
 	|-EntityComponent<BasePlayer>..ctor
 	|-EntityComponent<object>..ctor
@@ -776,7 +772,6 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public void .ctor(uint uid) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4D30 Offset: 0x1F4130 VA: 0x1801F4D30
 	|-EntityRef<LootContainer>..ctor
 	|-EntityRef<Marketplace>..ctor
 	|-EntityRef<object>..ctor
@@ -786,7 +781,6 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public bool get_IsSet() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4D70 Offset: 0x1F4170 VA: 0x1801F4D70
 	|-EntityRef<FishingBobber>.get_IsSet
 	|-EntityRef<IOEntity>.get_IsSet
 	|-EntityRef<object>.get_IsSet
@@ -795,7 +789,6 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public bool IsValid(bool serverside) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4C40 Offset: 0x1F4040 VA: 0x1801F4C40
 	|-EntityRef<BaseEntity>.IsValid
 	|-EntityRef<FishingBobber>.IsValid
 	|-EntityRef<StorageContainer>.IsValid
@@ -807,7 +800,6 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public void Set(T entity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4CA0 Offset: 0x1F40A0 VA: 0x1801F4CA0
 	|-EntityRef<BaseEntity>.Set
 	|-EntityRef<BasePlayer>.Set
 	|-EntityRef<FishingBobber>.Set
@@ -819,7 +811,6 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public T Get(bool serverside) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4C30 Offset: 0x1F4030 VA: 0x1801F4C30
 	|-EntityRef<BaseEntity>.Get
 	|-EntityRef<BasePlayer>.Get
 	|-EntityRef<BaseVehicleSeat>.Get
@@ -838,14 +829,12 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public bool TryGet(bool serverside, out T entity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4CB0 Offset: 0x1F40B0 VA: 0x1801F4CB0
 	|-EntityRef<object>.TryGet
 	*/
 
 	public uint get_uid() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4D80 Offset: 0x1F4180 VA: 0x1801F4D80
 	|-EntityRef<object>.get_uid
 	|-EntityRef<TrainCar>.get_uid
 	*/
@@ -853,7 +842,6 @@ public struct EntityRef<T> // TypeDefIndex: 9536
 	public void set_uid(uint value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1F4D90 Offset: 0x1F4190 VA: 0x1801F4D90
 	|-EntityRef<BaseEntity>.set_uid
 	|-EntityRef<BaseOven>.set_uid
 	|-EntityRef<BasePlayer>.set_uid

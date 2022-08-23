@@ -139,7 +139,6 @@ public class Result.Entry<T> // TypeDefIndex: 6261
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-Result.Entry<object>..ctor
 	*/
 

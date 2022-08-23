@@ -7,10 +7,8 @@ internal static class TaskToApm // TypeDefIndex: 890
 	public static TResult End<TResult>(IAsyncResult asyncResult) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0830 Offset: 0x14BFC30 VA: 0x1814C0830
 	|-TaskToApm.End<int>
 	|
-	|-RVA: 0x14C08F0 Offset: 0x14BFCF0 VA: 0x1814C08F0
 	|-TaskToApm.End<object>
 	*/
 

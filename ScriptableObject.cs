@@ -7,7 +7,6 @@ public class ScriptableObject : Object // TypeDefIndex: 3523
 	public static T CreateInstance<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0560 Offset: 0x14BF960 VA: 0x1814C0560
 	|-ScriptableObject.CreateInstance<EZSoftBoneMaterial>
 	|-ScriptableObject.CreateInstance<ERDecal>
 	|-ScriptableObject.CreateInstance<ERLocalGrid>

@@ -52,7 +52,6 @@ public class DeferredExtension : MonoBehaviour // TypeDefIndex: 10656
 	private void SafeCleanupTexture<T>(ref T tex) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15402B0 Offset: 0x153F6B0 VA: 0x1815402B0
 	|-DeferredExtension.SafeCleanupTexture<object>
 	|-DeferredExtension.SafeCleanupTexture<RenderTexture>
 	*/

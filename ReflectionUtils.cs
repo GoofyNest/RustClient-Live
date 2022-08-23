@@ -67,7 +67,6 @@ internal static class ReflectionUtils // TypeDefIndex: 5965
 	public static T GetAttribute<T>(object attributeProvider) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5ED380 Offset: 0x5EC780 VA: 0x1805ED380
 	|-ReflectionUtils.GetAttribute<JsonExtensionDataAttribute>
 	|-ReflectionUtils.GetAttribute<object>
 	*/
@@ -75,14 +74,12 @@ internal static class ReflectionUtils // TypeDefIndex: 5965
 	public static T GetAttribute<T>(object attributeProvider, bool inherit) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5ED2E0 Offset: 0x5EC6E0 VA: 0x1805ED2E0
 	|-ReflectionUtils.GetAttribute<object>
 	*/
 
 	public static T[] GetAttributes<T>(object attributeProvider, bool inherit) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1AA2AB0 Offset: 0x1AA1EB0 VA: 0x181AA2AB0
 	|-ReflectionUtils.GetAttributes<object>
 	*/
 

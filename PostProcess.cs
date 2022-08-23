@@ -189,7 +189,6 @@ public class PostProcessLayer : MonoBehaviour // TypeDefIndex: 11734
 	public PostProcessBundle GetBundle<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x1AA2A30 Offset: 0x1AA1E30 VA: 0x181AA2A30
 	|-PostProcessLayer.GetBundle<object>
 	|-PostProcessLayer.GetBundle<AmbientOcclusion>
 	|-PostProcessLayer.GetBundle<AutoExposure>
@@ -201,7 +200,6 @@ public class PostProcessLayer : MonoBehaviour // TypeDefIndex: 11734
 	public T GetSettings<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BFF00 Offset: 0x14BF300 VA: 0x1814BFF00
 	|-PostProcessLayer.GetSettings<object>
 	*/
 
@@ -240,7 +238,6 @@ public class PostProcessLayer : MonoBehaviour // TypeDefIndex: 11734
 	private int RenderEffect<T>(PostProcessRenderContext context, bool useTempTarget = False) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE82980 Offset: 0xE81D80 VA: 0x180E82980
 	|-PostProcessLayer.RenderEffect<DepthOfFieldEffect>
 	|-PostProcessLayer.RenderEffect<object>
 	|-PostProcessLayer.RenderEffect<AutoExposure>
@@ -639,7 +636,6 @@ public sealed class PostProcessBundle // TypeDefIndex: 11832
 	internal T CastSettings<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BFE90 Offset: 0x14BF290 VA: 0x1814BFE90
 	|-PostProcessBundle.CastSettings<object>
 	|-PostProcessBundle.CastSettings<AmbientOcclusion>
 	*/
@@ -647,7 +643,6 @@ public sealed class PostProcessBundle // TypeDefIndex: 11832
 	internal T CastRenderer<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BFE20 Offset: 0x14BF220 VA: 0x1814BFE20
 	|-PostProcessBundle.CastRenderer<object>
 	|-PostProcessBundle.CastRenderer<AmbientOcclusionRenderer>
 	*/
@@ -797,7 +792,6 @@ public abstract class PostProcessEffectRenderer<T> : PostProcessEffectRenderer /
 	public T get_settings() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x497710 Offset: 0x496B10 VA: 0x180497710
 	|-PostProcessEffectRenderer<BlurOptimized>.get_settings
 	|-PostProcessEffectRenderer<DepthOfFieldEffect>.get_settings
 	|-PostProcessEffectRenderer<DoubleVision>.get_settings
@@ -828,14 +822,12 @@ public abstract class PostProcessEffectRenderer<T> : PostProcessEffectRenderer /
 	internal void set_settings(T value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4D0180 Offset: 0x4CF580 VA: 0x1804D0180
 	|-PostProcessEffectRenderer<object>.set_settings
 	*/
 
 	internal override void SetSettings(PostProcessEffectSettings settings) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C0700 Offset: 0x19BFB00 VA: 0x1819C0700
 	|-PostProcessEffectRenderer<BlurOptimized>.SetSettings
 	|-PostProcessEffectRenderer<DepthOfFieldEffect>.SetSettings
 	|-PostProcessEffectRenderer<DoubleVision>.SetSettings
@@ -865,7 +857,6 @@ public abstract class PostProcessEffectRenderer<T> : PostProcessEffectRenderer /
 	protected void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x19C07A0 Offset: 0x19BFBA0 VA: 0x1819C07A0
 	|-PostProcessEffectRenderer<BlurOptimized>..ctor
 	|-PostProcessEffectRenderer<DepthOfFieldEffect>..ctor
 	|-PostProcessEffectRenderer<DoubleVision>..ctor
@@ -1025,7 +1016,6 @@ public sealed class PostProcessProfile : ScriptableObject // TypeDefIndex: 11846
 	public T AddSettings<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14BFF40 Offset: 0x14BF340 VA: 0x1814BFF40
 	|-PostProcessProfile.AddSettings<object>
 	*/
 
@@ -1036,7 +1026,6 @@ public sealed class PostProcessProfile : ScriptableObject // TypeDefIndex: 11846
 	public void RemoveSettings<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5ED260 Offset: 0x5EC660 VA: 0x1805ED260
 	|-PostProcessProfile.RemoveSettings<object>
 	*/
 
@@ -1045,7 +1034,6 @@ public sealed class PostProcessProfile : ScriptableObject // TypeDefIndex: 11846
 	public bool HasSettings<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBEE1F0 Offset: 0xBED5F0 VA: 0x180BEE1F0
 	|-PostProcessProfile.HasSettings<object>
 	*/
 
@@ -1054,7 +1042,6 @@ public sealed class PostProcessProfile : ScriptableObject // TypeDefIndex: 11846
 	public T GetSetting<T>() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x14C0010 Offset: 0x14BF410 VA: 0x1814C0010
 	|-PostProcessProfile.GetSetting<BlurOptimized>
 	|-PostProcessProfile.GetSetting<DepthOfFieldEffect>
 	|-PostProcessProfile.GetSetting<FlashbangEffect>
@@ -1070,7 +1057,6 @@ public sealed class PostProcessProfile : ScriptableObject // TypeDefIndex: 11846
 	public bool TryGetSettings<T>(out T outSetting) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xBEE270 Offset: 0xBED670 VA: 0x180BEE270
 	|-PostProcessProfile.TryGetSettings<object>
 	*/
 

@@ -98,53 +98,38 @@ public abstract class RestRgbService : IRgbService // TypeDefIndex: 7678
 	protected Task<HttpResponseMessage> SendPost<T>(string endpoint, T payload) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE833D0 Offset: 0xE827D0 VA: 0x180E833D0
 	|-RestRgbService.SendPost<GameEvent<ColorEventData>>
 	|
-	|-RVA: 0xE83280 Offset: 0xE82680 VA: 0x180E83280
 	|-RestRgbService.SendPost<GameEvent<EmptyEventData>>
 	|
-	|-RVA: 0xE83520 Offset: 0xE82920 VA: 0x180E83520
 	|-RestRgbService.SendPost<GameMetadata>
 	|
-	|-RVA: 0xE83670 Offset: 0xE82A70 VA: 0x180E83670
 	|-RestRgbService.SendPost<LoadGoLispHandlers>
 	|
-	|-RVA: 0xE837C0 Offset: 0xE82BC0 VA: 0x180E837C0
 	|-RestRgbService.SendPost<RegisterGameEvent>
 	|
-	|-RVA: 0xE83910 Offset: 0xE82D10 VA: 0x180E83910
 	|-RestRgbService.SendPost<RegisterTimelineEvents>
 	|
-	|-RVA: 0xE83A60 Offset: 0xE82E60 VA: 0x180E83A60
 	|-RestRgbService.SendPost<RemoveGame>
 	*/
 
 	protected static HttpContent BuildContent<T>(T parameters) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE82C60 Offset: 0xE82060 VA: 0x180E82C60
 	|-RestRgbService.BuildContent<GameEvent<ColorEventData>>
 	|
-	|-RVA: 0xE82B80 Offset: 0xE81F80 VA: 0x180E82B80
 	|-RestRgbService.BuildContent<GameEvent<EmptyEventData>>
 	|
-	|-RVA: 0xE82D40 Offset: 0xE82140 VA: 0x180E82D40
 	|-RestRgbService.BuildContent<GameMetadata>
 	|
-	|-RVA: 0xE82E20 Offset: 0xE82220 VA: 0x180E82E20
 	|-RestRgbService.BuildContent<Heartbeat>
 	|
-	|-RVA: 0xE82F00 Offset: 0xE82300 VA: 0x180E82F00
 	|-RestRgbService.BuildContent<LoadGoLispHandlers>
 	|
-	|-RVA: 0xE82FE0 Offset: 0xE823E0 VA: 0x180E82FE0
 	|-RestRgbService.BuildContent<RegisterGameEvent>
 	|
-	|-RVA: 0xE830C0 Offset: 0xE824C0 VA: 0x180E830C0
 	|-RestRgbService.BuildContent<RegisterTimelineEvents>
 	|
-	|-RVA: 0xE831A0 Offset: 0xE825A0 VA: 0x180E831A0
 	|-RestRgbService.BuildContent<RemoveGame>
 	*/
 
@@ -267,25 +252,18 @@ private struct RestRgbService.<SendPost>d__42<T> : IAsyncStateMachine // TypeDef
 	private void MoveNext() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x120530 Offset: 0x11F930 VA: 0x180120530
 	|-RestRgbService.<SendPost>d__42<GameEvent<ColorEventData>>.MoveNext
 	|
-	|-RVA: 0x120540 Offset: 0x11F940 VA: 0x180120540
 	|-RestRgbService.<SendPost>d__42<GameEvent<EmptyEventData>>.MoveNext
 	|
-	|-RVA: 0x120520 Offset: 0x11F920 VA: 0x180120520
 	|-RestRgbService.<SendPost>d__42<GameMetadata>.MoveNext
 	|
-	|-RVA: 0x120500 Offset: 0x11F900 VA: 0x180120500
 	|-RestRgbService.<SendPost>d__42<LoadGoLispHandlers>.MoveNext
 	|
-	|-RVA: 0x120510 Offset: 0x11F910 VA: 0x180120510
 	|-RestRgbService.<SendPost>d__42<RegisterGameEvent>.MoveNext
 	|
-	|-RVA: 0x1204F0 Offset: 0x11F8F0 VA: 0x1801204F0
 	|-RestRgbService.<SendPost>d__42<RegisterTimelineEvents>.MoveNext
 	|
-	|-RVA: 0x120550 Offset: 0x11F950 VA: 0x180120550
 	|-RestRgbService.<SendPost>d__42<RemoveGame>.MoveNext
 	*/
 
@@ -293,25 +271,18 @@ private struct RestRgbService.<SendPost>d__42<T> : IAsyncStateMachine // TypeDef
 	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x120740 Offset: 0x11FB40 VA: 0x180120740
 	|-RestRgbService.<SendPost>d__42<GameEvent<ColorEventData>>.SetStateMachine
 	|
-	|-RVA: 0x120650 Offset: 0x11FA50 VA: 0x180120650
 	|-RestRgbService.<SendPost>d__42<GameEvent<EmptyEventData>>.SetStateMachine
 	|
-	|-RVA: 0x1205B0 Offset: 0x11F9B0 VA: 0x1801205B0
 	|-RestRgbService.<SendPost>d__42<GameMetadata>.SetStateMachine
 	|
-	|-RVA: 0x120600 Offset: 0x11FA00 VA: 0x180120600
 	|-RestRgbService.<SendPost>d__42<LoadGoLispHandlers>.SetStateMachine
 	|
-	|-RVA: 0x120560 Offset: 0x11F960 VA: 0x180120560
 	|-RestRgbService.<SendPost>d__42<RegisterGameEvent>.SetStateMachine
 	|
-	|-RVA: 0x1206A0 Offset: 0x11FAA0 VA: 0x1801206A0
 	|-RestRgbService.<SendPost>d__42<RegisterTimelineEvents>.SetStateMachine
 	|
-	|-RVA: 0x1206F0 Offset: 0x11FAF0 VA: 0x1801206F0
 	|-RestRgbService.<SendPost>d__42<RemoveGame>.SetStateMachine
 	*/
 

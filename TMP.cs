@@ -1397,7 +1397,6 @@ internal static class TMP_ListPool<T> // TypeDefIndex: 6800
 	public static List<T> Get() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A8880 Offset: 0x17A7C80 VA: 0x1817A8880
 	|-TMP_ListPool<object>.Get
 	|-TMP_ListPool<Canvas>.Get
 	|-TMP_ListPool<IMaterialModifier>.Get
@@ -1407,7 +1406,6 @@ internal static class TMP_ListPool<T> // TypeDefIndex: 6800
 	public static void Release(List<T> toRelease) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A89F0 Offset: 0x17A7DF0 VA: 0x1817A89F0
 	|-TMP_ListPool<object>.Release
 	|-TMP_ListPool<Canvas>.Release
 	|-TMP_ListPool<IMaterialModifier>.Release
@@ -1417,7 +1415,6 @@ internal static class TMP_ListPool<T> // TypeDefIndex: 6800
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A8B70 Offset: 0x17A7F70 VA: 0x1817A8B70
 	|-TMP_ListPool<object>..cctor
 	*/
 
@@ -1430,21 +1427,18 @@ private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6801
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD602E0 Offset: 0xD5F6E0 VA: 0x180D602E0
 	|-TMP_ListPool.<>c<object>..cctor
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xD55DC0 Offset: 0xD551C0 VA: 0x180D55DC0
 	|-TMP_ListPool.<>c<object>..ctor
 	*/
 
 	internal void <.cctor>b__3_0(List<T> l) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x15E3C40 Offset: 0x15E3040 VA: 0x1815E3C40
 	|-TMP_ListPool.<>c<object>.<.cctor>b__3_0
 	*/
 
@@ -1623,7 +1617,6 @@ internal class TMP_ObjectPool<T> // TypeDefIndex: 6811
 	public int get_countAll() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x4BB390 Offset: 0x4BA790 VA: 0x1804BB390
 	|-TMP_ObjectPool<object>.get_countAll
 	*/
 
@@ -1631,42 +1624,36 @@ internal class TMP_ObjectPool<T> // TypeDefIndex: 6811
 	private void set_countAll(int value) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x7E8DF0 Offset: 0x7E81F0 VA: 0x1807E8DF0
 	|-TMP_ObjectPool<object>.set_countAll
 	*/
 
 	public int get_countActive() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A90C0 Offset: 0x17A84C0 VA: 0x1817A90C0
 	|-TMP_ObjectPool<object>.get_countActive
 	*/
 
 	public int get_countInactive() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0xE02AD0 Offset: 0xE01ED0 VA: 0x180E02AD0
 	|-TMP_ObjectPool<object>.get_countInactive
 	*/
 
 	public void .ctor(UnityAction<T> actionOnGet, UnityAction<T> actionOnRelease) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A9000 Offset: 0x17A8400 VA: 0x1817A9000
 	|-TMP_ObjectPool<object>..ctor
 	*/
 
 	public T Get() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A8E10 Offset: 0x17A8210 VA: 0x1817A8E10
 	|-TMP_ObjectPool<object>.Get
 	*/
 
 	public void Release(T element) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x17A8F00 Offset: 0x17A8300 VA: 0x1817A8F00
 	|-TMP_ObjectPool<object>.Release
 	*/
 
@@ -1704,42 +1691,35 @@ public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6813
 	public void .ctor(T[] tagStack) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x210310 Offset: 0x20F710 VA: 0x180210310
 	|-TMP_RichTextTagStack<int>..ctor
 	|-TMP_RichTextTagStack<Int32Enum>..ctor
 	|-TMP_RichTextTagStack<float>..ctor
 	|-TMP_RichTextTagStack<TextAlignmentOptions>..ctor
 	|-TMP_RichTextTagStack<Color32>..ctor
 	|
-	|-RVA: 0x210460 Offset: 0x20F860 VA: 0x180210460
 	|-TMP_RichTextTagStack<object>..ctor
 	|-TMP_RichTextTagStack<TMP_ColorGradient>..ctor
 	|
-	|-RVA: 0x210540 Offset: 0x20F940 VA: 0x180210540
 	|-TMP_RichTextTagStack<MaterialReference>..ctor
 	*/
 
 	public void .ctor(int capacity) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x210360 Offset: 0x20F760 VA: 0x180210360
 	|-TMP_RichTextTagStack<int>..ctor
 	|-TMP_RichTextTagStack<Int32Enum>..ctor
 	|-TMP_RichTextTagStack<float>..ctor
 	|-TMP_RichTextTagStack<FontWeight>..ctor
 	|-TMP_RichTextTagStack<Color32>..ctor
 	|
-	|-RVA: 0x2103E0 Offset: 0x20F7E0 VA: 0x1802103E0
 	|-TMP_RichTextTagStack<object>..ctor
 	|
-	|-RVA: 0x2104B0 Offset: 0x20F8B0 VA: 0x1802104B0
 	|-TMP_RichTextTagStack<MaterialReference>..ctor
 	*/
 
 	public void Clear() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20F3B0 Offset: 0x20E7B0 VA: 0x18020F3B0
 	|-TMP_RichTextTagStack<int>.Clear
 	|-TMP_RichTextTagStack<Int32Enum>.Clear
 	|-TMP_RichTextTagStack<object>.Clear
@@ -1751,156 +1731,123 @@ public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6813
 	public void SetDefault(T item) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x2101E0 Offset: 0x20F5E0 VA: 0x1802101E0
 	|-TMP_RichTextTagStack<int>.SetDefault
 	|-TMP_RichTextTagStack<Int32Enum>.SetDefault
 	|-TMP_RichTextTagStack<FontWeight>.SetDefault
 	|-TMP_RichTextTagStack<TextAlignmentOptions>.SetDefault
 	|-TMP_RichTextTagStack<Color32>.SetDefault
 	|
-	|-RVA: 0x210220 Offset: 0x20F620 VA: 0x180210220
 	|-TMP_RichTextTagStack<object>.SetDefault
 	|-TMP_RichTextTagStack<TMP_ColorGradient>.SetDefault
 	|
-	|-RVA: 0x2102D0 Offset: 0x20F6D0 VA: 0x1802102D0
 	|-TMP_RichTextTagStack<float>.SetDefault
 	|
-	|-RVA: 0x210270 Offset: 0x20F670 VA: 0x180210270
 	|-TMP_RichTextTagStack<MaterialReference>.SetDefault
 	*/
 
 	public void Add(T item) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20F270 Offset: 0x20E670 VA: 0x18020F270
 	|-TMP_RichTextTagStack<int>.Add
 	|-TMP_RichTextTagStack<Int32Enum>.Add
 	|-TMP_RichTextTagStack<FontWeight>.Add
 	|-TMP_RichTextTagStack<TextAlignmentOptions>.Add
 	|-TMP_RichTextTagStack<Color32>.Add
 	|
-	|-RVA: 0x20F2B0 Offset: 0x20E6B0 VA: 0x18020F2B0
 	|-TMP_RichTextTagStack<object>.Add
 	|-TMP_RichTextTagStack<TMP_ColorGradient>.Add
 	|
-	|-RVA: 0x20F300 Offset: 0x20E700 VA: 0x18020F300
 	|-TMP_RichTextTagStack<float>.Add
 	|
-	|-RVA: 0x20F340 Offset: 0x20E740 VA: 0x18020F340
 	|-TMP_RichTextTagStack<MaterialReference>.Add
 	*/
 
 	public T Remove() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x210100 Offset: 0x20F500 VA: 0x180210100
 	|-TMP_RichTextTagStack<int>.Remove
 	|-TMP_RichTextTagStack<Int32Enum>.Remove
 	|-TMP_RichTextTagStack<FontWeight>.Remove
 	|-TMP_RichTextTagStack<TextAlignmentOptions>.Remove
 	|-TMP_RichTextTagStack<Color32>.Remove
 	|
-	|-RVA: 0x210170 Offset: 0x20F570 VA: 0x180210170
 	|-TMP_RichTextTagStack<object>.Remove
 	|-TMP_RichTextTagStack<TMP_ColorGradient>.Remove
 	|
-	|-RVA: 0x20FFD0 Offset: 0x20F3D0 VA: 0x18020FFD0
 	|-TMP_RichTextTagStack<float>.Remove
 	|
-	|-RVA: 0x210050 Offset: 0x20F450 VA: 0x180210050
 	|-TMP_RichTextTagStack<MaterialReference>.Remove
 	*/
 
 	public void Push(T item) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20FB20 Offset: 0x20EF20 VA: 0x18020FB20
 	|-TMP_RichTextTagStack<int>.Push
 	|-TMP_RichTextTagStack<Int32Enum>.Push
 	|
-	|-RVA: 0x20FDF0 Offset: 0x20F1F0 VA: 0x18020FDF0
 	|-TMP_RichTextTagStack<object>.Push
 	|
-	|-RVA: 0x20FEE0 Offset: 0x20F2E0 VA: 0x18020FEE0
 	|-TMP_RichTextTagStack<float>.Push
 	|
-	|-RVA: 0x20FC00 Offset: 0x20F000 VA: 0x18020FC00
 	|-TMP_RichTextTagStack<MaterialReference>.Push
 	|
-	|-RVA: 0x20FD10 Offset: 0x20F110 VA: 0x18020FD10
 	|-TMP_RichTextTagStack<Color32>.Push
 	*/
 
 	public T Pop() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20F800 Offset: 0x20EC00 VA: 0x18020F800
 	|-TMP_RichTextTagStack<int>.Pop
 	|-TMP_RichTextTagStack<Int32Enum>.Pop
 	|-TMP_RichTextTagStack<Color32>.Pop
 	|
-	|-RVA: 0x20F860 Offset: 0x20EC60 VA: 0x18020F860
 	|-TMP_RichTextTagStack<object>.Pop
 	|
-	|-RVA: 0x20F8D0 Offset: 0x20ECD0 VA: 0x18020F8D0
 	|-TMP_RichTextTagStack<float>.Pop
 	|
-	|-RVA: 0x20F710 Offset: 0x20EB10 VA: 0x18020F710
 	|-TMP_RichTextTagStack<MaterialReference>.Pop
 	*/
 
 	public T Peek() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20F5A0 Offset: 0x20E9A0 VA: 0x18020F5A0
 	|-TMP_RichTextTagStack<int>.Peek
 	|-TMP_RichTextTagStack<Int32Enum>.Peek
 	|-TMP_RichTextTagStack<FontWeight>.Peek
 	|-TMP_RichTextTagStack<Color32>.Peek
 	|
-	|-RVA: 0x20F670 Offset: 0x20EA70 VA: 0x18020F670
 	|-TMP_RichTextTagStack<object>.Peek
 	|
-	|-RVA: 0x20F6C0 Offset: 0x20EAC0 VA: 0x18020F6C0
 	|-TMP_RichTextTagStack<float>.Peek
 	|
-	|-RVA: 0x20F5F0 Offset: 0x20E9F0 VA: 0x18020F5F0
 	|-TMP_RichTextTagStack<MaterialReference>.Peek
 	*/
 
 	public T CurrentItem() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20F3C0 Offset: 0x20E7C0 VA: 0x18020F3C0
 	|-TMP_RichTextTagStack<int>.CurrentItem
 	|-TMP_RichTextTagStack<Int32Enum>.CurrentItem
 	|-TMP_RichTextTagStack<Color32>.CurrentItem
 	|
-	|-RVA: 0x20F530 Offset: 0x20E930 VA: 0x18020F530
 	|-TMP_RichTextTagStack<object>.CurrentItem
 	|
-	|-RVA: 0x20F4C0 Offset: 0x20E8C0 VA: 0x18020F4C0
 	|-TMP_RichTextTagStack<float>.CurrentItem
 	|
-	|-RVA: 0x20F420 Offset: 0x20E820 VA: 0x18020F420
 	|-TMP_RichTextTagStack<MaterialReference>.CurrentItem
 	*/
 
 	public T PreviousItem() { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x20F930 Offset: 0x20ED30 VA: 0x18020F930
 	|-TMP_RichTextTagStack<int>.PreviousItem
 	|-TMP_RichTextTagStack<Int32Enum>.PreviousItem
 	|-TMP_RichTextTagStack<Color32>.PreviousItem
 	|
-	|-RVA: 0x20F9A0 Offset: 0x20EDA0 VA: 0x18020F9A0
 	|-TMP_RichTextTagStack<object>.PreviousItem
 	|
-	|-RVA: 0x20FAB0 Offset: 0x20EEB0 VA: 0x18020FAB0
 	|-TMP_RichTextTagStack<float>.PreviousItem
 	|
-	|-RVA: 0x20FA10 Offset: 0x20EE10 VA: 0x18020FA10
 	|-TMP_RichTextTagStack<MaterialReference>.PreviousItem
 	*/
 
@@ -3036,10 +2983,8 @@ public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6837
 	private void ResizeInternalArray<T>(ref T[] array) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5EDAA0 Offset: 0x5ECEA0 VA: 0x1805EDAA0
 	|-TMP_Text.ResizeInternalArray<object>
 	|
-	|-RVA: 0x5EDB30 Offset: 0x5ECF30 VA: 0x1805EDB30
 	|-TMP_Text.ResizeInternalArray<TMP_Text.UnicodeChar>
 	*/
 
@@ -3255,32 +3200,25 @@ public class TMP_TextInfo // TypeDefIndex: 6842
 	public static void Resize<T>(ref T[] array, int size) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5ED5F0 Offset: 0x5EC9F0 VA: 0x1805ED5F0
 	|-TMP_TextInfo.Resize<object>
 	|-TMP_TextInfo.Resize<TMP_SubMesh>
 	|-TMP_TextInfo.Resize<TMP_SubMeshUI>
 	|
-	|-RVA: 0x5ED800 Offset: 0x5ECC00 VA: 0x1805ED800
 	|-TMP_TextInfo.Resize<TMP_LinkInfo>
 	|
-	|-RVA: 0x5EDA10 Offset: 0x5ECE10 VA: 0x1805EDA10
 	|-TMP_TextInfo.Resize<TMP_WordInfo>
 	*/
 
 	public static void Resize<T>(ref T[] array, int size, bool isBlockAllocated) { }
 	/* GenericInstMethod :
 	|
-	|-RVA: 0x5ED680 Offset: 0x5ECA80 VA: 0x1805ED680
 	|-TMP_TextInfo.Resize<object>
 	|-TMP_TextInfo.Resize<Material>
 	|
-	|-RVA: 0x5ED740 Offset: 0x5ECB40 VA: 0x1805ED740
 	|-TMP_TextInfo.Resize<TMP_CharacterInfo>
 	|
-	|-RVA: 0x5ED890 Offset: 0x5ECC90 VA: 0x1805ED890
 	|-TMP_TextInfo.Resize<TMP_MeshInfo>
 	|
-	|-RVA: 0x5ED950 Offset: 0x5ECD50 VA: 0x1805ED950
 	|-TMP_TextInfo.Resize<TMP_PageInfo>
 	*/
 
