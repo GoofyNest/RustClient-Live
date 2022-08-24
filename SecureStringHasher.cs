@@ -1,29 +1,31 @@
 internal class SecureStringHasher : IEqualityComparer<string> // TypeDefIndex: 1866
-{	private static SecureStringHasher.HashCodeOfStringDelegate hashCodeDelegate; // 0x0
-	private int hashCodeRandomizer; // 0x10
+{
+	private static SecureStringHasher.HashCodeOfStringDelegate hashCodeDelegate; 
+	private int hashCodeRandomizer; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public bool Equals(string x, string y) { }
+public bool Equals(string x, string y) { }
 
-	public int GetHashCode(string key) { }
+public int GetHashCode(string key) { }
 
-	private static int GetHashCodeOfString(string key, int sLen, long additionalEntropy) { }
+private static int GetHashCodeOfString(string key, int sLen, long additionalEntropy) { }
 
-	private static SecureStringHasher.HashCodeOfStringDelegate GetHashCodeDelegate() { }
+private static SecureStringHasher.HashCodeOfStringDelegate GetHashCodeDelegate() { }
 
 }
 
 private sealed class SecureStringHasher.HashCodeOfStringDelegate : MulticastDelegate // TypeDefIndex: 1867
 {
-	public void .ctor(object object, IntPtr method) { }
 
-	public virtual int Invoke(string s, int sLen, long additionalEntropy) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(string s, int sLen, long additionalEntropy, AsyncCallback callback, object object) { }
+public virtual int Invoke(string s, int sLen, long additionalEntropy) { }
 
-	public virtual int EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(string s, int sLen, long additionalEntropy, AsyncCallback callback, object object) { }
+
+public virtual int EndInvoke(IAsyncResult result) { }
 
 }
 

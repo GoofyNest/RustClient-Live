@@ -1,47 +1,49 @@
 public class Scoreboard : MonoBehaviour, IClientComponent // TypeDefIndex: 11212
-{	public static Scoreboard instance; // 0x0
-	public RustText scoreboardTitle; // 0x18
-	public RectTransform scoreboardRootContents; // 0x20
-	public RustText scoreLimitText; // 0x28
-	public GameObject teamPrefab; // 0x30
-	public GameObject columnPrefab; // 0x38
-	public GameObject dividerPrefab; // 0x40
-	public Color localPlayerColor; // 0x48
-	public Color otherPlayerColor; // 0x58
-	public Scoreboard.TeamColumn[] teamColumns; // 0x68
-	public GameObject[] TeamPanels; // 0x70
-	private GameObject divider; // 0x78
-	private bool dirty; // 0x80
+{
+	public static Scoreboard instance; 
+	public RustText scoreboardTitle; 
+	public RectTransform scoreboardRootContents; 
+	public RustText scoreLimitText; 
+	public GameObject teamPrefab; 
+	public GameObject columnPrefab; 
+	public GameObject dividerPrefab; 
+	public Color localPlayerColor; 
+	public Color otherPlayerColor; 
+	public Scoreboard.TeamColumn[] teamColumns; 
+	public GameObject[] TeamPanels; 
+	private GameObject divider; 
+	private bool dirty; 
 
 
-	private void Awake() { }
+private void Awake() { }
 
-	public static void ForceScoreboardUpdate() { }
+public static void ForceScoreboardUpdate() { }
 
-	public static void UpdateScoreboard() { }
+public static void UpdateScoreboard() { }
 
-	public void OnToggle(bool isShowing) { }
+public void OnToggle(bool isShowing) { }
 
-	private static void OnDisconnected() { }
+private static void OnDisconnected() { }
 
-	public void ClearTeamContents() { }
+public void ClearTeamContents() { }
 
-	public void RebuildScoreboard() { }
+public void RebuildScoreboard() { }
 
-	public void UpdateScoreboard(bool rebuild = False) { }
+public void UpdateScoreboard(bool rebuild = False) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 
 public class Scoreboard.TeamColumn // TypeDefIndex: 11213
-{	public GameObject nameColumn; // 0x10
-	public GameObject[] activeColumns; // 0x18
+{
+	public GameObject nameColumn; 
+	public GameObject[] activeColumns; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

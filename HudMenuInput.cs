@@ -1,19 +1,20 @@
 public class HudMenuInput : ListComponent<HudMenuInput> // TypeDefIndex: 8010
 {
-internal class <Module> // TypeDefIndex: 8009
 
-public class HudMenuInput : ListComponent<HudMenuInput> // TypeDefIndex: 8010
-	private InputField inputField; // 0x18
-	private RustInput rustInput; // 0x20
+internal class <Module> 
+
+public class HudMenuInput : ListComponent<HudMenuInput> 
+	private InputField inputField; 
+	private RustInput rustInput; 
 
 
-	public static bool AnyActive() { }
+public static bool AnyActive() { }
 
-	private void Start() { }
+private void Start() { }
 
-	private bool IsCurrentlyActive() { }
+private bool IsCurrentlyActive() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

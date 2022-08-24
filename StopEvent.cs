@@ -1,10 +1,11 @@
 public sealed class StopEvent : SystemRealTimeEvent // TypeDefIndex: 7570
 {
-	public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor() { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

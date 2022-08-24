@@ -1,12 +1,13 @@
 public sealed class EndOfTrackEvent : MetaEvent // TypeDefIndex: 7536
 {
-	internal void .ctor() { }
 
-	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
+internal void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

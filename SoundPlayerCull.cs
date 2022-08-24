@@ -1,18 +1,19 @@
 public class SoundPlayerCull : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 9040
-{	public SoundPlayer soundPlayer; // 0x18
-	public float cullDistance; // 0x20
-	private LODCell cell; // 0x28
+{
+	public SoundPlayer soundPlayer; 
+	public float cullDistance; 
+	private LODCell cell; 
 
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	protected void OnDisable() { }
+protected void OnDisable() { }
 
-	public void RefreshLOD() { }
+public void RefreshLOD() { }
 
-	public void ChangeLOD() { }
+public void ChangeLOD() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

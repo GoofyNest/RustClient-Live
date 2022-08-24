@@ -1,6 +1,7 @@
 public class NullMonoBehaviour : MonoBehaviour // TypeDefIndex: 6630
 {
-	public void .ctor() { }
+
+public void .ctor() { }
 
 }
 

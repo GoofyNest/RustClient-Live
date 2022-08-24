@@ -1,22 +1,23 @@
 public sealed class SecurityPermission : CodeAccessPermission // TypeDefIndex: 916
 {
-[ComVisibleAttribute] // RVA: 0x75EC0 Offset: 0x752C0 VA: 0x180075EC0
+
+[ComVisibleAttribute] 
 [Serializable]
-public sealed class SecurityPermission : CodeAccessPermission // TypeDefIndex: 916
-	private SecurityPermissionFlag flags; // 0x10
+public sealed class SecurityPermission : CodeAccessPermission 
+	private SecurityPermissionFlag flags; 
 
 
-	public void .ctor(PermissionState state) { }
+public void .ctor(PermissionState state) { }
 
-	public bool IsUnrestricted() { }
+public bool IsUnrestricted() { }
 
-	public override bool IsSubsetOf(IPermission target) { }
+public override bool IsSubsetOf(IPermission target) { }
 
-	public override SecurityElement ToXml() { }
+public override SecurityElement ToXml() { }
 
-	private bool IsEmpty() { }
+private bool IsEmpty() { }
 
-	private SecurityPermission Cast(IPermission target) { }
+private SecurityPermission Cast(IPermission target) { }
 
 }
 

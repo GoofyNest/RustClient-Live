@@ -1,22 +1,23 @@
 public class CargoMoveTest : FacepunchBehaviour // TypeDefIndex: 8286
-{	public int targetNodeIndex; // 0x18
-	private float currentThrottle; // 0x1C
-	private float turnScale; // 0x20
+{
+	public int targetNodeIndex; 
+	private float currentThrottle; 
+	private float turnScale; 
 
 
-	private void Awake() { }
+private void Awake() { }
 
-	public void FindInitialNode() { }
+public void FindInitialNode() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void UpdateMovement() { }
+public void UpdateMovement() { }
 
-	public int GetClosestNodeToUs() { }
+public int GetClosestNodeToUs() { }
 
-	public void OnDrawGizmosSelected() { }
+public void OnDrawGizmosSelected() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

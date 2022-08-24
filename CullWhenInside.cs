@@ -1,18 +1,19 @@
 public class CullWhenInside : MonoBehaviour, ILOD // TypeDefIndex: 9170
-{	private LODComponent lod; // 0x18
+{
+	private LODComponent lod; 
 
 
-	protected void Awake() { }
+protected void Awake() { }
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	protected void OnDisable() { }
+protected void OnDisable() { }
 
-	public void ChangeLOD() { }
+public void ChangeLOD() { }
 
-	public void RefreshLOD() { }
+public void RefreshLOD() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,26 +1,27 @@
 public struct ValueTuple : IEquatable<ValueTuple>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple> // TypeDefIndex: 125
 {
-	public override bool Equals(object obj) { }
 
-	public bool Equals(ValueTuple other) { }
+public override bool Equals(object obj) { }
 
-	private bool System.Collections.IStructuralEquatable.Equals(object other, IEqualityComparer comparer) { }
+public bool Equals(ValueTuple other) { }
 
-	private int System.IComparable.CompareTo(object other) { }
+private bool System.Collections.IStructuralEquatable.Equals(object other, IEqualityComparer comparer) { }
 
-	public int CompareTo(ValueTuple other) { }
+private int System.IComparable.CompareTo(object other) { }
 
-	private int System.Collections.IStructuralComparable.CompareTo(object other, IComparer comparer) { }
+public int CompareTo(ValueTuple other) { }
 
-	public override int GetHashCode() { }
+private int System.Collections.IStructuralComparable.CompareTo(object other, IComparer comparer) { }
 
-	private int System.Collections.IStructuralEquatable.GetHashCode(IEqualityComparer comparer) { }
+public override int GetHashCode() { }
 
-	public override string ToString() { }
+private int System.Collections.IStructuralEquatable.GetHashCode(IEqualityComparer comparer) { }
 
-	internal static int CombineHashCodes(int h1, int h2) { }
+public override string ToString() { }
 
-	internal static int CombineHashCodes(int h1, int h2, int h3) { }
+internal static int CombineHashCodes(int h1, int h2) { }
+
+internal static int CombineHashCodes(int h1, int h2, int h3) { }
 
 }
 

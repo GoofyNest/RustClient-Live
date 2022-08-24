@@ -1,18 +1,19 @@
 public abstract class RSA : AsymmetricAlgorithm // TypeDefIndex: 982
 {
-	protected void .ctor() { }
 
-	public static RSA Create() { }
+protected void .ctor() { }
 
-	public virtual byte[] EncryptValue(byte[] rgb) { }
+public static RSA Create() { }
 
-	public override void FromXmlString(string xmlString) { }
+public virtual byte[] EncryptValue(byte[] rgb) { }
 
-	public override string ToXmlString(bool includePrivateParameters) { }
+public override void FromXmlString(string xmlString) { }
 
-	public abstract RSAParameters ExportParameters(bool includePrivateParameters);
+public override string ToXmlString(bool includePrivateParameters) { }
 
-	public abstract void ImportParameters(RSAParameters parameters);
+public abstract RSAParameters ExportParameters(bool includePrivateParameters);
+
+public abstract void ImportParameters(RSAParameters parameters);
 
 }
 

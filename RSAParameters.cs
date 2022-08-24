@@ -1,12 +1,13 @@
 public struct RSAParameters // TypeDefIndex: 981
-{	public byte[] Exponent; // 0x0
-	public byte[] Modulus; // 0x8
-	public byte[] P; // 0x10
-	public byte[] Q; // 0x18
-	public byte[] DP; // 0x20
-	public byte[] DQ; // 0x28
-	public byte[] InverseQ; // 0x30
-	public byte[] D; // 0x38
+{
+	public byte[] Exponent; 
+	public byte[] Modulus; 
+	public byte[] P; 
+	public byte[] Q; 
+	public byte[] DP; 
+	public byte[] DQ; 
+	public byte[] InverseQ; 
+	public byte[] D; 
 
 }
 

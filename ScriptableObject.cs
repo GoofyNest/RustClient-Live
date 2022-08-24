@@ -1,33 +1,34 @@
 public class ScriptableObject : Object // TypeDefIndex: 3523
 {
-	public void .ctor() { }
 
-	public static ScriptableObject CreateInstance(Type type) { }
+public void .ctor() { }
 
-	public static T CreateInstance<T>() { }
-	/* GenericInstMethod :
-	|
-	|-ScriptableObject.CreateInstance<EZSoftBoneMaterial>
-	|-ScriptableObject.CreateInstance<ERDecal>
-	|-ScriptableObject.CreateInstance<ERLocalGrid>
-	|-ScriptableObject.CreateInstance<ERMarkerExt>
-	|-ScriptableObject.CreateInstance<ERMaterial>
-	|-ScriptableObject.CreateInstance<ERSOMarkerExt>
-	|-ScriptableObject.CreateInstance<ERSORoadExt>
-	|-ScriptableObject.CreateInstance<SelectedObject>
-	|-ScriptableObject.CreateInstance<BurstClothMaterial>
-	|-ScriptableObject.CreateInstance<ProtectionProperties>
-	|-ScriptableObject.CreateInstance<TMP_FontAsset>
-	|-ScriptableObject.CreateInstance<PostProcessProfile>
-	|-ScriptableObject.CreateInstance<object>
-	|-ScriptableObject.CreateInstance<PlayerConnection>
-	*/
+public static ScriptableObject CreateInstance(Type type) { }
 
-	[NativeMethodAttribute] // RVA: 0x90400 Offset: 0x8F800 VA: 0x180090400
-	private static void CreateScriptableObject(ScriptableObject self) { }
+public static T CreateInstance<T>() { }
+/* GenericInstMethod :
+|
+|-ScriptableObject.CreateInstance<EZSoftBoneMaterial>
+|-ScriptableObject.CreateInstance<ERDecal>
+|-ScriptableObject.CreateInstance<ERLocalGrid>
+|-ScriptableObject.CreateInstance<ERMarkerExt>
+|-ScriptableObject.CreateInstance<ERMaterial>
+|-ScriptableObject.CreateInstance<ERSOMarkerExt>
+|-ScriptableObject.CreateInstance<ERSORoadExt>
+|-ScriptableObject.CreateInstance<SelectedObject>
+|-ScriptableObject.CreateInstance<BurstClothMaterial>
+|-ScriptableObject.CreateInstance<ProtectionProperties>
+|-ScriptableObject.CreateInstance<TMP_FontAsset>
+|-ScriptableObject.CreateInstance<PostProcessProfile>
+|-ScriptableObject.CreateInstance<object>
+|-ScriptableObject.CreateInstance<PlayerConnection>
+*/
 
-	[FreeFunctionAttribute] // RVA: 0xC39A0 Offset: 0xC2DA0 VA: 0x1800C39A0
-	internal static ScriptableObject CreateScriptableObjectInstanceFromType(Type type, bool applyDefaultsAndReset) { }
+	[NativeMethodAttribute] 
+private static void CreateScriptableObject(ScriptableObject self) { }
+
+	[FreeFunctionAttribute] 
+internal static ScriptableObject CreateScriptableObjectInstanceFromType(Type type, bool applyDefaultsAndReset) { }
 
 }
 

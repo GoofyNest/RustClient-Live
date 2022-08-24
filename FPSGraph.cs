@@ -1,14 +1,15 @@
 public class FPSGraph : Graph // TypeDefIndex: 10931
 {
-	public void Refresh() { }
 
-	protected void OnEnable() { }
+public void Refresh() { }
 
-	protected override float GetValue() { }
+protected void OnEnable() { }
 
-	protected override Color GetColor(float value) { }
+protected override float GetValue() { }
 
-	public void .ctor() { }
+protected override Color GetColor(float value) { }
+
+public void .ctor() { }
 
 }
 

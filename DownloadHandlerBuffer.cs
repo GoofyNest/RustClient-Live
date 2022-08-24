@@ -1,14 +1,15 @@
 public sealed class DownloadHandlerBuffer : DownloadHandler // TypeDefIndex: 4133
 {
-	private static IntPtr Create(DownloadHandlerBuffer obj) { }
 
-	private void InternalCreateBuffer() { }
+private static IntPtr Create(DownloadHandlerBuffer obj) { }
 
-	public void .ctor() { }
+private void InternalCreateBuffer() { }
 
-	protected override byte[] GetData() { }
+public void .ctor() { }
 
-	private byte[] InternalGetData() { }
+protected override byte[] GetData() { }
+
+private byte[] InternalGetData() { }
 
 }
 

@@ -1,213 +1,221 @@
 public class SprayCan : HeldEntity // TypeDefIndex: 8641
-{	public const float MaxFreeSprayDistanceFromStart = 10;
-	public const float MaxFreeSprayStartingDistance = 3;
-	private SprayCanSpray_Freehand paintingLine; // 0x1F8
-	public const BaseEntity.Flags IsFreeSpraying = 128;
-	private bool isSpraying; // 0x200
-	private bool spawnedLine; // 0x201
-	private Vector3 sprayStartPos; // 0x204
-	private Vector3 lastPos; // 0x210
-	private int colourIndex; // 0x21C
-	private int widthIndex; // 0x220
-	private BaseEntity sprayingEntity; // 0x228
-	private List<AlignedLineDrawer.LinePoint> points; // 0x230
-	private TimeSince sprayStarted; // 0x238
-	private TimeSince sprayEnded; // 0x23C
-	private static Translate.Phrase[] ColourNamePhrases; // 0x0
-	private static Translate.Phrase[] ColourDescriptionPhrases; // 0x8
-	private static Translate.Phrase[] SpraySizePhrases; // 0x10
-	public SoundDefinition SpraySound; // 0x240
-	public GameObjectRef SkinSelectPanel; // 0x248
-	public float SprayCooldown; // 0x250
-	public float ConditionLossPerSpray; // 0x254
-	public float ConditionLossPerReskin; // 0x258
-	public GameObjectRef LinePrefab; // 0x260
-	public Color[] SprayColours; // 0x268
-	public float[] SprayWidths; // 0x270
-	public ParticleSystem worldSpaceSprayFx; // 0x278
-	public GameObjectRef ReskinEffect; // 0x280
-	public ItemDefinition SprayDecalItem; // 0x288
-	public GameObjectRef SprayDecalEntityRef; // 0x290
-	public SteamInventoryItem FreeSprayUnlockItem; // 0x298
-	public ParticleSystem.MinMaxGradient DecalSprayGradient; // 0x2A0
-	public SoundDefinition SprayLoopDef; // 0x2D8
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private SprayCan.SprayMode <currentMode>k__BackingField; // 0x2E0
-	private int selectedDecalSkin; // 0x2E4
-	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	public static bool UseAccurateMeshSnapping; // 0x18
-	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	public static bool DebugMeshSnapping; // 0x19
-	private static int paramAttack; // 0x1C
-	private static int paramAttackHold; // 0x20
-	private TimeSince timeDeployed; // 0x2E8
-	private Sound sprayLoop; // 0x2F0
+{
+public const float MaxFreeSprayDistanceFromStart = 10;
+public const float MaxFreeSprayStartingDistance = 3;
+	private SprayCanSpray_Freehand paintingLine; 
+public const BaseEntity.Flags IsFreeSpraying = 128;
+	private bool isSpraying; 
+	private bool spawnedLine; 
+	private Vector3 sprayStartPos; 
+	private Vector3 lastPos; 
+	private int colourIndex; 
+	private int widthIndex; 
+	private BaseEntity sprayingEntity; 
+	private List<AlignedLineDrawer.LinePoint> points; 
+	private TimeSince sprayStarted; 
+	private TimeSince sprayEnded; 
+	private static Translate.Phrase[] ColourNamePhrases; 
+	private static Translate.Phrase[] ColourDescriptionPhrases; 
+	private static Translate.Phrase[] SpraySizePhrases; 
+	public SoundDefinition SpraySound; 
+	public GameObjectRef SkinSelectPanel; 
+	public float SprayCooldown; 
+	public float ConditionLossPerSpray; 
+	public float ConditionLossPerReskin; 
+	public GameObjectRef LinePrefab; 
+	public Color[] SprayColours; 
+	public float[] SprayWidths; 
+	public ParticleSystem worldSpaceSprayFx; 
+	public GameObjectRef ReskinEffect; 
+	public ItemDefinition SprayDecalItem; 
+	public GameObjectRef SprayDecalEntityRef; 
+	public SteamInventoryItem FreeSprayUnlockItem; 
+	public ParticleSystem.MinMaxGradient DecalSprayGradient; 
+	public SoundDefinition SprayLoopDef; 
+	[CompilerGeneratedAttribute] 
+	private SprayCan.SprayMode <currentMode>k__BackingField; 
+	private int selectedDecalSkin; 
+	[ClientVar] 
+	public static bool UseAccurateMeshSnapping; 
+	[ClientVar] 
+	public static bool DebugMeshSnapping; 
+	private static int paramAttack; 
+	private static int paramAttackHold; 
+	private TimeSince timeDeployed; 
+	private Sound sprayLoop; 
 
-	private Color SelectedSprayColour { get; }
-	public static bool HasOpenedColourWheel { get; set; }
-	public static bool HasOpenedSizeWheel { get; set; }
-	public SprayCan.SprayMode currentMode { get; set; }
+private Color SelectedSprayColour { get; }
+public static bool HasOpenedColourWheel { get; set; }
+public static bool HasOpenedSizeWheel { get; set; }
+public SprayCan.SprayMode currentMode { get; set; }
 
 
-	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	private Color get_SelectedSprayColour() { }
+private Color get_SelectedSprayColour() { }
 
-	private void FreePaintInput(BasePlayer player, bool sprayInput) { }
+private void FreePaintInput(BasePlayer player, bool sprayInput) { }
 
-	private bool HasSprayDecalAttachment(BasePlayer player) { }
+private bool HasSprayDecalAttachment(BasePlayer player) { }
 
-	private Ray SprayRay(BasePlayer player) { }
+private Ray SprayRay(BasePlayer player) { }
 
-	private bool GetSprayPosition(BasePlayer player, out Vector3 pos, out Vector3 normal, out Vector3 upPos, out BaseEntity hitEntity, out Collider hitCollider) { }
+private bool GetSprayPosition(BasePlayer player, out Vector3 pos, out Vector3 normal, out Vector3 upPos, out BaseEntity hitEntity, out Collider hitCollider) { }
 
-	public void RegisterInProcessSpray(SprayCanSpray_Freehand spray, List<AlignedLineDrawer.LinePoint> setPoints) { }
+public void RegisterInProcessSpray(SprayCanSpray_Freehand spray, List<AlignedLineDrawer.LinePoint> setPoints) { }
 
-	[BaseEntity.RPC_Client] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void Client_ChangeSprayColour(BaseEntity.RPCMessage msg) { }
+	[BaseEntity.RPC_Client] 
+private void Client_ChangeSprayColour(BaseEntity.RPCMessage msg) { }
 
-	public static bool get_HasOpenedColourWheel() { }
+public static bool get_HasOpenedColourWheel() { }
 
-	private static void set_HasOpenedColourWheel(bool value) { }
+private static void set_HasOpenedColourWheel(bool value) { }
 
-	public static bool get_HasOpenedSizeWheel() { }
+public static bool get_HasOpenedSizeWheel() { }
 
-	private static void set_HasOpenedSizeWheel(bool value) { }
+private static void set_HasOpenedSizeWheel(bool value) { }
 
-	private bool ShouldUseMeshSampling(Collider c) { }
+private bool ShouldUseMeshSampling(Collider c) { }
 
-	private Vector3 TrySnapPointToRenderMesh(Vector3 point, Collider c, BasePlayer player) { }
+private Vector3 TrySnapPointToRenderMesh(Vector3 point, Collider c, BasePlayer player) { }
 
-	public bool CanSprayFreehand(BasePlayer player) { }
+public bool CanSprayFreehand(BasePlayer player) { }
 
-	private bool IsSprayBlockedByTrigger(Vector3 pos) { }
+private bool IsSprayBlockedByTrigger(Vector3 pos) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public SprayCan.SprayMode get_currentMode() { }
+	[CompilerGeneratedAttribute] 
+public SprayCan.SprayMode get_currentMode() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void set_currentMode(SprayCan.SprayMode value) { }
+	[CompilerGeneratedAttribute] 
+private void set_currentMode(SprayCan.SprayMode value) { }
 
-	public override void OnInput() { }
+public override void OnInput() { }
 
-	private void OpenReskinOptions(BasePlayer player) { }
+private void OpenReskinOptions(BasePlayer player) { }
 
-	public bool CanOpenReskinMenu(BasePlayer player) { }
+public bool CanOpenReskinMenu(BasePlayer player) { }
 
-	private void ApplySkinToItem(BaseEntity targetEntity, int targetSkin) { }
+private void ApplySkinToItem(BaseEntity targetEntity, int targetSkin) { }
 
-	private void PlayVMAttack() { }
+private void PlayVMAttack() { }
 
-	private void ToggleVMHold(bool state) { }
+private void ToggleVMHold(bool state) { }
 
-	private void SetVmSprayColour(Color c) { }
+private void SetVmSprayColour(Color c) { }
 
-	public override void OnViewmodelEvent(string name) { }
+public override void OnViewmodelEvent(string name) { }
 
-	[BaseEntity.RPC_Client] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void Client_ReskinResult(BaseEntity.RPCMessage msg) { }
+	[BaseEntity.RPC_Client] 
+private void Client_ReskinResult(BaseEntity.RPCMessage msg) { }
 
-	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-	public override void OnDeployed() { }
+public override void OnDeployed() { }
 
-	public override bool NeedsCrosshair() { }
+public override bool NeedsCrosshair() { }
 
-	private bool CanEntityBeRespawned(BaseEntity targetEntity, out SprayCan.SprayFailReason reason) { }
+private bool CanEntityBeRespawned(BaseEntity targetEntity, out SprayCan.SprayFailReason reason) { }
 
-	public static bool GetItemDefinitionForEntity(BaseEntity be, out ItemDefinition def, bool useRedirect = True) { }
+public static bool GetItemDefinitionForEntity(BaseEntity be, out ItemDefinition def, bool useRedirect = True) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void <FreePaintInput>b__20_0(BasePlayer ply) { }
+	[CompilerGeneratedAttribute] 
+private void <FreePaintInput>b__20_0(BasePlayer ply) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void <FreePaintInput>b__20_2(BasePlayer ply) { }
+	[CompilerGeneratedAttribute] 
+private void <FreePaintInput>b__20_2(BasePlayer ply) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private bool <TrySnapPointToRenderMesh>g__HitPoint|33_0(Renderer forRenderer, out Vector3 trySnapPointToRenderMesh, ref SprayCan.<>c__DisplayClass33_0 ) { }
+	[CompilerGeneratedAttribute] 
+private bool <TrySnapPointToRenderMesh>g__HitPoint|33_0(Renderer forRenderer, out Vector3 trySnapPointToRenderMesh, ref SprayCan.<>c__DisplayClass33_0 ) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void <OnInput>b__63_0(BasePlayer ply) { }
+	[CompilerGeneratedAttribute] 
+private void <OnInput>b__63_0(BasePlayer ply) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void <OnInput>b__63_1(BasePlayer ply) { }
+	[CompilerGeneratedAttribute] 
+private void <OnInput>b__63_1(BasePlayer ply) { }
 
 }
 
 private enum SprayCan.SprayFailReason // TypeDefIndex: 8642
-{	public int value__; // 0x0
-	public const SprayCan.SprayFailReason None = 0;
-	public const SprayCan.SprayFailReason MountedBlocked = 1;
-	public const SprayCan.SprayFailReason IOConnection = 2;
-	public const SprayCan.SprayFailReason LineOfSight = 3;
-	public const SprayCan.SprayFailReason SkinNotOwned = 4;
-	public const SprayCan.SprayFailReason InvalidItem = 5;
+{
+	public int value__; 
+public const SprayCan.SprayFailReason None = 0;
+public const SprayCan.SprayFailReason MountedBlocked = 1;
+public const SprayCan.SprayFailReason IOConnection = 2;
+public const SprayCan.SprayFailReason LineOfSight = 3;
+public const SprayCan.SprayFailReason SkinNotOwned = 4;
+public const SprayCan.SprayFailReason InvalidItem = 5;
 
 }
 
 public enum SprayCan.SprayMode // TypeDefIndex: 8643
-{	public int value__; // 0x0
-	public const SprayCan.SprayMode FreeHand = 0;
-	public const SprayCan.SprayMode Decal = 1;
+{
+	public int value__; 
+public const SprayCan.SprayMode FreeHand = 0;
+public const SprayCan.SprayMode Decal = 1;
 
 }
 
 private sealed class SprayCan.<>c__DisplayClass20_0 // TypeDefIndex: 8644
-{	public int index; // 0x10
-	public SprayCan <>4__this; // 0x18
+{
+	public int index; 
+	public SprayCan <>4__this; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal void <FreePaintInput>b__1(BasePlayer ply) { }
+internal void <FreePaintInput>b__1(BasePlayer ply) { }
 
 }
 
 private sealed class SprayCan.<>c__DisplayClass20_1 // TypeDefIndex: 8645
-{	public int index; // 0x10
-	public SprayCan <>4__this; // 0x18
+{
+	public int index; 
+	public SprayCan <>4__this; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal void <FreePaintInput>b__3(BasePlayer ply) { }
+internal void <FreePaintInput>b__3(BasePlayer ply) { }
 
 }
 
 private struct SprayCan.<>c__DisplayClass33_0 // TypeDefIndex: 8646
-{	public SprayCan <>4__this; // 0x0
-	public BasePlayer player; // 0x8
-	public Vector3 point; // 0x10
+{
+	public SprayCan <>4__this; 
+	public BasePlayer player; 
+	public Vector3 point; 
 
 }
 
 private sealed class SprayCan.<>c__DisplayClass63_0 // TypeDefIndex: 8647
-{	public ItemSkinDirectory.Skin skin; // 0x10
-	public SprayCan <>4__this; // 0x30
+{
+	public ItemSkinDirectory.Skin skin; 
+	public SprayCan <>4__this; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal void <OnInput>b__2(BasePlayer ply) { }
+internal void <OnInput>b__2(BasePlayer ply) { }
 
 }
 
 private sealed class SprayCan.<>c__DisplayClass64_0 // TypeDefIndex: 8648
-{	public SprayCan <>4__this; // 0x10
-	public BaseEntity targetEntity; // 0x18
+{
+	public SprayCan <>4__this; 
+	public BaseEntity targetEntity; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal void <OpenReskinOptions>b__0(bool confirmed, int skinId) { }
+internal void <OpenReskinOptions>b__0(bool confirmed, int skinId) { }
 
 }
 

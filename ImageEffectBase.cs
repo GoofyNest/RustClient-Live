@@ -1,17 +1,18 @@
 public class ImageEffectBase : MonoBehaviour // TypeDefIndex: 8191
-{	public Shader shader; // 0x18
-	private Material m_Material; // 0x20
+{
+	public Shader shader; 
+	private Material m_Material; 
 
-	protected Material material { get; }
+protected Material material { get; }
 
 
-	protected virtual void Start() { }
+protected virtual void Start() { }
 
-	protected Material get_material() { }
+protected Material get_material() { }
 
-	protected virtual void OnDisable() { }
+protected virtual void OnDisable() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

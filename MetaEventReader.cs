@@ -1,10 +1,11 @@
 internal sealed class MetaEventReader : IEventReader // TypeDefIndex: 7555
 {
-	public MidiEvent Read(MidiReader reader, ReadingSettings settings, byte currentStatusByte) { }
 
-	private static bool IsMetaEventType(Type type) { }
+public MidiEvent Read(MidiReader reader, ReadingSettings settings, byte currentStatusByte) { }
 
-	public void .ctor() { }
+private static bool IsMetaEventType(Type type) { }
+
+public void .ctor() { }
 
 }
 

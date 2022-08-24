@@ -1,11 +1,12 @@
 public abstract class Aes : SymmetricAlgorithm // TypeDefIndex: 937
-{	private static KeySizes[] s_legalBlockSizes; // 0x0
-	private static KeySizes[] s_legalKeySizes; // 0x8
+{
+	private static KeySizes[] s_legalBlockSizes; 
+	private static KeySizes[] s_legalKeySizes; 
 
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

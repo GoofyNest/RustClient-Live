@@ -1,11 +1,12 @@
 public class DecorOffset : DecorComponent // TypeDefIndex: 10325
-{	public Vector3 MinOffset; // 0xA0
-	public Vector3 MaxOffset; // 0xAC
+{
+	public Vector3 MinOffset; 
+	public Vector3 MaxOffset; 
 
 
-	public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
+public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

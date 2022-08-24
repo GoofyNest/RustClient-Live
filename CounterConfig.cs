@@ -1,26 +1,27 @@
 public class CounterConfig : UIDialog // TypeDefIndex: 8730
-{	private PowerCounter powerCounter; // 0x30
-	public InputField input; // 0x38
-	public int target; // 0x40
+{
+	private PowerCounter powerCounter; 
+	public InputField input; 
+	public int target; 
 
 
-	public override void OpenDialog() { }
+public override void OpenDialog() { }
 
-	public void SetCounter(PowerCounter newSwitch) { }
+public void SetCounter(PowerCounter newSwitch) { }
 
-	public void Confirm() { }
+public void Confirm() { }
 
-	public void SelectTextField() { }
+public void SelectTextField() { }
 
-	public int GetIntValue() { }
+public int GetIntValue() { }
 
-	public void ValueChanged() { }
+public void ValueChanged() { }
 
-	public void Cancel() { }
+public void Cancel() { }
 
-	public void OnTextFieldEnd() { }
+public void OnTextFieldEnd() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

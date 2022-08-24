@@ -1,20 +1,21 @@
 public class TriggerHurtNotChild : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 10026
-{	public float DamagePerSecond; // 0x30
-	public float DamageTickRate; // 0x34
-	public float DamageDelay; // 0x38
-	public DamageType damageType; // 0x3C
-	public bool ignoreNPC; // 0x40
-	public float npcMultiplier; // 0x44
-	public float resourceMultiplier; // 0x48
-	public bool triggerHitImpacts; // 0x4C
-	public bool RequireUpAxis; // 0x4D
-	public BaseEntity SourceEntity; // 0x50
-	public bool UseSourceEntityDamageMultiplier; // 0x58
-	public bool ignoreAllVehicleMounted; // 0x59
-	public float activationDelay; // 0x5C
+{
+	public float DamagePerSecond; 
+	public float DamageTickRate; 
+	public float DamageDelay; 
+	public DamageType damageType; 
+	public bool ignoreNPC; 
+	public float npcMultiplier; 
+	public float resourceMultiplier; 
+	public bool triggerHitImpacts; 
+	public bool RequireUpAxis; 
+	public BaseEntity SourceEntity; 
+	public bool UseSourceEntityDamageMultiplier; 
+	public bool ignoreAllVehicleMounted; 
+	public float activationDelay; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

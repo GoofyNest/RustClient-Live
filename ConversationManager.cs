@@ -1,54 +1,56 @@
 public class ConversationManager : MonoBehaviour // TypeDefIndex: 8846
-{	private static ConversationManager.Conversation activeConversation; // 0x163C
+{
+	private static ConversationManager.Conversation activeConversation; 
 
 
-	public static bool InConversation() { }
+public static bool InConversation() { }
 
-	public static ConversationManager.Conversation GetActiveConversation() { }
+public static ConversationManager.Conversation GetActiveConversation() { }
 
-	public static void FastForward() { }
+public static void FastForward() { }
 
-	public static void ModifyCamera() { }
+public static void ModifyCamera() { }
 
-	public static void StartConversation(ConversationData conversationData, IConversationProvider provider, string startIndex = "intro") { }
+public static void StartConversation(ConversationData conversationData, IConversationProvider provider, string startIndex = "intro") { }
 
-	public static void CancelConversation(bool fromServer) { }
+public static void CancelConversation(bool fromServer) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public class ConversationManager.Conversation : MonoBehaviour // TypeDefIndex: 8847
-{	public ConversationData data; // 0x18
-	public int currentSpeechNodeIndex; // 0x20
-	public IConversationProvider provider; // 0x28
-	private float age; // 0x30
-	private float speechNodeAge; // 0x34
-	private int speechCharacterIndex; // 0x38
-	private float timeOnChar; // 0x3C
+{
+	public ConversationData data; 
+	public int currentSpeechNodeIndex; 
+	public IConversationProvider provider; 
+	private float age; 
+	private float speechNodeAge; 
+	private int speechCharacterIndex; 
+	private float timeOnChar; 
 
 
-	public int GetSpeechNodeIndex(string name) { }
+public int GetSpeechNodeIndex(string name) { }
 
-	public int GetSpeechCharacterIndex() { }
+public int GetSpeechCharacterIndex() { }
 
-	public bool IsTalking() { }
+public bool IsTalking() { }
 
-	public void SwitchToSpeechNode(int index) { }
+public void SwitchToSpeechNode(int index) { }
 
-	public void ResponsePressed(int index) { }
+public void ResponsePressed(int index) { }
 
-	public float GetConversationAge() { }
+public float GetConversationAge() { }
 
-	public bool HasConversationStarted() { }
+public bool HasConversationStarted() { }
 
-	public void Update() { }
+public void Update() { }
 
-	public void FastFowardSpeech() { }
+public void FastFowardSpeech() { }
 
-	public void UpdateSpeechCharacterIndex(float delta) { }
+public void UpdateSpeechCharacterIndex(float delta) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

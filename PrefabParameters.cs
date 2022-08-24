@@ -1,9 +1,10 @@
 public class PrefabParameters : MonoBehaviour // TypeDefIndex: 9973
-{	public PrefabPriority Priority; // 0x18
-	public int Count; // 0x1C
+{
+	public PrefabPriority Priority; 
+	public int Count; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

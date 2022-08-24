@@ -1,10 +1,11 @@
 internal static class MathUtils // TypeDefIndex: 5962
 {
-	public static int IntLength(ulong i) { }
 
-	public static char IntToHex(int n) { }
+public static int IntLength(ulong i) { }
 
-	public static bool ApproxEquals(double d1, double d2) { }
+public static char IntToHex(int n) { }
+
+public static bool ApproxEquals(double d1, double d2) { }
 
 }
 

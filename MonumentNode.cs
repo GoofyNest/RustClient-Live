@@ -1,12 +1,13 @@
 public class MonumentNode : MonoBehaviour // TypeDefIndex: 10443
-{	public string ResourceFolder; // 0x18
+{
+	public string ResourceFolder; 
 
 
-	protected void Awake() { }
+protected void Awake() { }
 
-	public void Process(ref uint seed) { }
+public void Process(ref uint seed) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

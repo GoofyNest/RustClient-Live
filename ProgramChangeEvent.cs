@@ -1,16 +1,17 @@
 public sealed class ProgramChangeEvent : ChannelEvent // TypeDefIndex: 7529
-{	public SevenBitNumber ProgramNumber { get; }
+{
+public SevenBitNumber ProgramNumber { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public SevenBitNumber get_ProgramNumber() { }
+public SevenBitNumber get_ProgramNumber() { }
 
-	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
+internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
 
-	protected override MidiEvent CloneEvent() { }
+protected override MidiEvent CloneEvent() { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
 }
 

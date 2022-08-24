@@ -1,11 +1,12 @@
 internal class Contraction // TypeDefIndex: 32
-{	public int Index; // 0x10
-	public readonly char[] Source; // 0x18
-	public readonly string Replacement; // 0x20
-	public readonly byte[] SortKey; // 0x28
+{
+	public int Index; 
+	public readonly char[] Source; 
+	public readonly string Replacement; 
+	public readonly byte[] SortKey; 
 
 
-	public void .ctor(int index, char[] source, string replacement, byte[] sortkey) { }
+public void .ctor(int index, char[] source, string replacement, byte[] sortkey) { }
 
 }
 

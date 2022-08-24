@@ -1,26 +1,27 @@
 public class BranchConfig : UIDialog // TypeDefIndex: 8729
-{	private ElectricalBranch branch; // 0x30
-	public InputField input; // 0x38
-	public int target; // 0x40
+{
+	private ElectricalBranch branch; 
+	public InputField input; 
+	public int target; 
 
 
-	public override void OpenDialog() { }
+public override void OpenDialog() { }
 
-	public void SetBranch(ElectricalBranch newSwitch) { }
+public void SetBranch(ElectricalBranch newSwitch) { }
 
-	public void Confirm() { }
+public void Confirm() { }
 
-	public void SelectTextField() { }
+public void SelectTextField() { }
 
-	public int GetIntValue() { }
+public int GetIntValue() { }
 
-	public void ValueChanged() { }
+public void ValueChanged() { }
 
-	public void Cancel() { }
+public void Cancel() { }
 
-	public void OnTextFieldEnd() { }
+public void OnTextFieldEnd() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

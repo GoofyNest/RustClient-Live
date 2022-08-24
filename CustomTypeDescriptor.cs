@@ -1,24 +1,25 @@
 public abstract class CustomTypeDescriptor : ICustomTypeDescriptor // TypeDefIndex: 2681
 {
-public class ComponentConverter : ReferenceConverter // TypeDefIndex: 2679
 
-public class CultureInfoConverter : TypeConverter // TypeDefIndex: 2680
+public class ComponentConverter : ReferenceConverter 
 
-public abstract class CustomTypeDescriptor : ICustomTypeDescriptor // TypeDefIndex: 2681
-	private ICustomTypeDescriptor _parent; // 0x10
+public class CultureInfoConverter : TypeConverter 
+
+public abstract class CustomTypeDescriptor : ICustomTypeDescriptor 
+	private ICustomTypeDescriptor _parent; 
 
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
-	public virtual AttributeCollection GetAttributes() { }
+public virtual AttributeCollection GetAttributes() { }
 
-	public virtual TypeConverter GetConverter() { }
+public virtual TypeConverter GetConverter() { }
 
-	public virtual PropertyDescriptorCollection GetProperties() { }
+public virtual PropertyDescriptorCollection GetProperties() { }
 
-	public virtual PropertyDescriptorCollection GetProperties(Attribute[] attributes) { }
+public virtual PropertyDescriptorCollection GetProperties(Attribute[] attributes) { }
 
-	public virtual object GetPropertyOwner(PropertyDescriptor pd) { }
+public virtual object GetPropertyOwner(PropertyDescriptor pd) { }
 
 }
 

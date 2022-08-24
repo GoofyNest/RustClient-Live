@@ -1,23 +1,24 @@
 internal sealed class RelatedView : DataView, IFilter // TypeDefIndex: 4293
-{	private readonly Nullable<DataKey> _parentKey; // 0xB0
-	private readonly DataKey _childKey; // 0xC0
-	private readonly DataRowView _parentRowView; // 0xC8
-	private readonly object[] _filterValues; // 0xD0
+{
+	private readonly Nullable<DataKey> _parentKey; 
+	private readonly DataKey _childKey; 
+	private readonly DataRowView _parentRowView; 
+	private readonly object[] _filterValues; 
 
 
-	public void .ctor(DataColumn[] columns, object[] values) { }
+public void .ctor(DataColumn[] columns, object[] values) { }
 
-	public void .ctor(DataRowView parentRowView, DataKey parentKey, DataColumn[] childKeyColumns) { }
+public void .ctor(DataRowView parentRowView, DataKey parentKey, DataColumn[] childKeyColumns) { }
 
-	private object[] GetParentValues() { }
+private object[] GetParentValues() { }
 
-	public bool Invoke(DataRow row, DataRowVersion version) { }
+public bool Invoke(DataRow row, DataRowVersion version) { }
 
-	internal override IFilter GetFilter() { }
+internal override IFilter GetFilter() { }
 
-	public override DataRowView AddNew() { }
+public override DataRowView AddNew() { }
 
-	internal override void SetIndex(string newSort, DataViewRowState newRowStates, IFilter newRowFilter) { }
+internal override void SetIndex(string newSort, DataViewRowState newRowStates, IFilter newRowFilter) { }
 
 }
 

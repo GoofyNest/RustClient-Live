@@ -1,62 +1,63 @@
 public class ERConnection // TypeDefIndex: 7257
-{	public string name; // 0x10
-	public ERCrossingPrefabs prefabScript; // 0x18
-	public GameObject gameObject; // 0x20
-	public ERConnectionData[] connectionData; // 0x28
-	public static string str; // 0x0
+{
+	public string name; 
+	public ERCrossingPrefabs prefabScript; 
+	public GameObject gameObject; 
+	public ERConnectionData[] connectionData; 
+	public static string str; 
 
 
-	public void .ctor(GameObject go, string g_name) { }
+public void .ctor(GameObject go, string g_name) { }
 
-	public static ERConnection Create(GameObject go) { }
+public static ERConnection Create(GameObject go) { }
 
-	public void SetPosition(Vector3 pos) { }
+public void SetPosition(Vector3 pos) { }
 
-	public string GetName() { }
+public string GetName() { }
 
-	public void SetName(string name) { }
+public void SetName(string name) { }
 
-	public void SetRotation(Vector3 euler) { }
+public void SetRotation(Vector3 euler) { }
 
-	public void Destroy() { }
+public void Destroy() { }
 
-	public void UnConnect(int connectionIndex) { }
+public void UnConnect(int connectionIndex) { }
 
-	public ERConnectionData[] GetConnectionData() { }
+public ERConnectionData[] GetConnectionData() { }
 
-	public Vector3 GetLocalConnectionPosition(int connectionIndex) { }
+public Vector3 GetLocalConnectionPosition(int connectionIndex) { }
 
-	public Vector3[] GetLocalConnectionPositions() { }
+public Vector3[] GetLocalConnectionPositions() { }
 
-	public Vector3[] GetConnectionWorldPositions() { }
+public Vector3[] GetConnectionWorldPositions() { }
 
-	public Vector3 GetConnectionWorldPosition(int connectionIndex) { }
+public Vector3 GetConnectionWorldPosition(int connectionIndex) { }
 
-	public int FindNearestConnectionIndex(Vector3 position) { }
+public int FindNearestConnectionIndex(Vector3 position) { }
 
-	public bool SwapTurn() { }
+public bool SwapTurn() { }
 
-	public bool RotateConnections() { }
+public bool RotateConnections() { }
 
-	public ERRoad GetConnectedRoad(int index, out ConnectedTo connectedTo) { }
+public ERRoad GetConnectedRoad(int index, out ConnectedTo connectedTo) { }
 
-	public ERLaneConnector[] GetLaneData(int connectionIndex) { }
+public ERLaneConnector[] GetLaneData(int connectionIndex) { }
 
-	public ERLaneConnector[] GetLaneData(int connectionIndex, int lane) { }
+public ERLaneConnector[] GetLaneData(int connectionIndex, int lane) { }
 
-	public int GetConnectionCount() { }
+public int GetConnectionCount() { }
 
-	public void AverageNormals(bool flag) { }
+public void AverageNormals(bool flag) { }
 
-	public bool RecalculateNormals() { }
+public bool RecalculateNormals() { }
 
-	public bool RecalculateTangents() { }
+public bool RecalculateTangents() { }
 
-	public void Refresh() { }
+public void Refresh() { }
 
-	public bool IsFlexConnector() { }
+public bool IsFlexConnector() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

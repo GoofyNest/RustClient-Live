@@ -1,55 +1,56 @@
 public class ImpostorRenderer : MonoBehaviour // TypeDefIndex: 10681
-{	public const string MainPassName = "DEFERRED";
-	private Camera camera; // 0x18
-	private static HashSet<ImpostorShadows> Shadows; // 0x0
-	private static HashSet<Impostor> Impostors; // 0x8
-	private static Dictionary<ImpostorInstanceData, ImpostorBatch> Batches; // 0x10
-	private static MaterialPropertyBlock block; // 0x18
-	private int treeLayer; // 0x20
-	private int treeLayerMask; // 0x24
-	private int impostorLayerMask; // 0x28
-	private static ImpostorRenderer instance; // 0x20
-	private static readonly int NaNProperty; // 0x28
-	private static readonly int PositionBufferProperty; // 0x2C
+{
+public const string MainPassName = "DEFERRED";
+	private Camera camera; 
+	private static HashSet<ImpostorShadows> Shadows; 
+	private static HashSet<Impostor> Impostors; 
+	private static Dictionary<ImpostorInstanceData, ImpostorBatch> Batches; 
+	private static MaterialPropertyBlock block; 
+	private int treeLayer; 
+	private int treeLayerMask; 
+	private int impostorLayerMask; 
+	private static ImpostorRenderer instance; 
+	private static readonly int NaNProperty; 
+	private static readonly int PositionBufferProperty; 
 
-	private Camera Camera { get; }
-	public static bool IsSupported { get; }
-	public static ImpostorRenderer Instance { get; }
+private Camera Camera { get; }
+public static bool IsSupported { get; }
+public static ImpostorRenderer Instance { get; }
 
 
-	private Camera get_Camera() { }
+private Camera get_Camera() { }
 
-	public static bool get_IsSupported() { }
+public static bool get_IsSupported() { }
 
-	public static ImpostorRenderer get_Instance() { }
+public static ImpostorRenderer get_Instance() { }
 
-	private void CheckInstance() { }
+private void CheckInstance() { }
 
-	public static void Clear() { }
+public static void Clear() { }
 
-	public static void Register(ImpostorShadows shadows) { }
+public static void Register(ImpostorShadows shadows) { }
 
-	public static void Unregister(ImpostorShadows shadows) { }
+public static void Unregister(ImpostorShadows shadows) { }
 
-	public static void Register(Impostor impostor) { }
+public static void Register(Impostor impostor) { }
 
-	public static void Unregister(Impostor impostor) { }
+public static void Unregister(Impostor impostor) { }
 
-	public static void RegisterBatching(ImpostorInstanceData data) { }
+public static void RegisterBatching(ImpostorInstanceData data) { }
 
-	public static void UnregisterBatching(ImpostorInstanceData data) { }
+public static void UnregisterBatching(ImpostorInstanceData data) { }
 
-	private void Awake() { }
+private void Awake() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnDisable() { }
+private void OnDisable() { }
 
-	public void OnPreCull() { }
+public void OnPreCull() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

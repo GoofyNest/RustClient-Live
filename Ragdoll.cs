@@ -1,47 +1,48 @@
 public class Ragdoll : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 9225
-{	public Transform eyeTransform; // 0x18
-	public Transform centerBone; // 0x20
-	public Rigidbody primaryBody; // 0x28
-	public PhysicMaterial physicMaterial; // 0x30
-	public SpringJoint corpseJoint; // 0x38
-	public Skeleton skeleton; // 0x40
-	public Model model; // 0x48
-	public List<Joint> joints; // 0x50
-	public List<CharacterJoint> characterJoints; // 0x58
-	public List<ConfigurableJoint> configurableJoints; // 0x60
-	public List<Rigidbody> rigidbodies; // 0x68
-	public GameObject GibEffect; // 0x70
-	public Rigidbody pinTo; // 0x78
-	private LODGroup _lodGroup; // 0x80
-	private ArticulatedOccludee occludee; // 0x88
-	protected bool IsSetup; // 0x90
+{
+	public Transform eyeTransform; 
+	public Transform centerBone; 
+	public Rigidbody primaryBody; 
+	public PhysicMaterial physicMaterial; 
+	public SpringJoint corpseJoint; 
+	public Skeleton skeleton; 
+	public Model model; 
+	public List<Joint> joints; 
+	public List<CharacterJoint> characterJoints; 
+	public List<ConfigurableJoint> configurableJoints; 
+	public List<Rigidbody> rigidbodies; 
+	public GameObject GibEffect; 
+	public Rigidbody pinTo; 
+	private LODGroup _lodGroup; 
+	private ArticulatedOccludee occludee; 
+	protected bool IsSetup; 
 
-	public LODGroup lodGroup { get; }
+public LODGroup lodGroup { get; }
 
 
-	public LODGroup get_lodGroup() { }
+public LODGroup get_lodGroup() { }
 
-	public void Awake() { }
+public void Awake() { }
 
-	private void RagdollSetup() { }
+private void RagdollSetup() { }
 
-	public void CopyBonesFrom(Model otherModel) { }
+public void CopyBonesFrom(Model otherModel) { }
 
-	public void MoveRigidbodiesToRoot() { }
+public void MoveRigidbodiesToRoot() { }
 
-	public void CreatePinJoint() { }
+public void CreatePinJoint() { }
 
-	private void UpdateLODBounds() { }
+private void UpdateLODBounds() { }
 
-	public void SetRagdollSkin(int iSkin) { }
+public void SetRagdollSkin(int iSkin) { }
 
-	public void OnGibbed() { }
+public void OnGibbed() { }
 
-	public virtual void Init() { }
+public virtual void Init() { }
 
-	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

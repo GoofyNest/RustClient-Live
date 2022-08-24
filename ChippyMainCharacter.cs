@@ -1,16 +1,17 @@
 public class ChippyMainCharacter : SpriteArcadeEntity // TypeDefIndex: 8769
-{	public float speed; // 0x98
-	public float maxSpeed; // 0x9C
-	public ChippyBulletEntity bulletPrefab; // 0xA0
-	public float fireRate; // 0xA8
-	public Vector3 aimDir; // 0xAC
+{
+	public float speed; 
+	public float maxSpeed; 
+	public ChippyBulletEntity bulletPrefab; 
+	public float fireRate; 
+	public Vector3 aimDir; 
 
 
-	public override void OnKilled() { }
+public override void OnKilled() { }
 
-	public override void AuthorativeThink(float delta) { }
+public override void AuthorativeThink(float delta) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

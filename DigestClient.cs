@@ -1,23 +1,24 @@
 internal class DigestClient : IAuthenticationModule // TypeDefIndex: 2994
-{	private static readonly Hashtable cache; // 0x13944
+{
+	private static readonly Hashtable cache; 
 
-	private static Hashtable Cache { get; }
-	public string AuthenticationType { get; }
+private static Hashtable Cache { get; }
+public string AuthenticationType { get; }
 
 
-	private static Hashtable get_Cache() { }
+private static Hashtable get_Cache() { }
 
-	private static void CheckExpired(int count) { }
+private static void CheckExpired(int count) { }
 
-	public Authorization Authenticate(string challenge, WebRequest webRequest, ICredentials credentials) { }
+public Authorization Authenticate(string challenge, WebRequest webRequest, ICredentials credentials) { }
 
-	public Authorization PreAuthenticate(WebRequest webRequest, ICredentials credentials) { }
+public Authorization PreAuthenticate(WebRequest webRequest, ICredentials credentials) { }
 
-	public string get_AuthenticationType() { }
+public string get_AuthenticationType() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

@@ -1,10 +1,11 @@
 public class PFXRepeatingFirework : RepeatingFirework // TypeDefIndex: 8274
-{	public ParticleSystemContainer pfx; // 0x260
+{
+	public ParticleSystemContainer pfx; 
 
 
-	public override void Fire() { }
+public override void Fire() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,32 +1,33 @@
 public class MissionUIPanel : MonoBehaviour // TypeDefIndex: 10217
-{	public GameObject activeMissionParent; // 0x18
-	public RustText missionTitleText; // 0x20
-	public RustText missionDescText; // 0x28
-	public VirtualItemIcon[] rewardIcons; // 0x30
-	public Translate.Phrase noMissionText; // 0x38
-	private static MissionUIPanel instance; // 0x0
-	private bool dirty; // 0x40
+{
+	public GameObject activeMissionParent; 
+	public RustText missionTitleText; 
+	public RustText missionDescText; 
+	public VirtualItemIcon[] rewardIcons; 
+	public Translate.Phrase noMissionText; 
+	private static MissionUIPanel instance; 
+	private bool dirty; 
 
 
-	public void Awake() { }
+public void Awake() { }
 
-	public void OnDestroy() { }
+public void OnDestroy() { }
 
-	public static void MissionsUpdated() { }
+public static void MissionsUpdated() { }
 
-	public bool IsOpen() { }
+public bool IsOpen() { }
 
-	public void Open() { }
+public void Open() { }
 
-	public void Close() { }
+public void Close() { }
 
-	public void Clear() { }
+public void Clear() { }
 
-	public void AbandonMission() { }
+public void AbandonMission() { }
 
-	public void DoUpdate() { }
+public void DoUpdate() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

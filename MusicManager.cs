@@ -1,133 +1,136 @@
 public class MusicManager : SingletonComponent<MusicManager>, IClientComponent // TypeDefIndex: 9004
-{	public AudioMixerGroup mixerGroup; // 0x18
-	public List<MusicTheme> themes; // 0x20
-	public MusicTheme currentTheme; // 0x28
-	public List<AudioSource> sources; // 0x30
-	public double nextMusic; // 0x38
-	public double nextMusicFromIntensityRaise; // 0x40
-	[RangeAttribute] // RVA: 0x71260 Offset: 0x70660 VA: 0x180071260
-	public float intensity; // 0x48
-	public Dictionary<MusicTheme.PositionedClip, MusicManager.ClipPlaybackData> clipPlaybackData; // 0x50
-	public int holdIntensityUntilBar; // 0x58
-	public bool musicPlaying; // 0x5C
-	public bool loadingFirstClips; // 0x5D
-	public MusicTheme nextTheme; // 0x60
-	public double lastClipUpdate; // 0x68
-	public float clipUpdateInterval; // 0x70
-	public double themeStartTime; // 0x78
-	public int lastActiveClipRefresh; // 0x80
-	public int activeClipRefreshInterval; // 0x84
-	public bool forceThemeChange; // 0x88
-	public float randomIntensityJumpChance; // 0x8C
-	public int clipScheduleBarsEarly; // 0x90
-	public List<MusicTheme.PositionedClip> activeClips; // 0x98
-	public List<MusicTheme.PositionedClip> activeMusicClips; // 0xA0
-	public List<MusicTheme.PositionedClip> activeControlClips; // 0xA8
-	public List<MusicZone> currentMusicZones; // 0xB0
-	public int currentBar; // 0xB8
-	public int barOffset; // 0xBC
-	private AudioSource syncSource; // 0xC0
-	private bool needsResync; // 0xC8
-	private int fadingClipCount; // 0xCC
-	private MusicClipLoader clipLoader; // 0xD0
-	private List<MusicTheme> validThemes; // 0xD8
+{
+	public AudioMixerGroup mixerGroup; 
+	public List<MusicTheme> themes; 
+	public MusicTheme currentTheme; 
+	public List<AudioSource> sources; 
+	public double nextMusic; 
+	public double nextMusicFromIntensityRaise; 
+	[RangeAttribute] 
+	public float intensity; 
+	public Dictionary<MusicTheme.PositionedClip, MusicManager.ClipPlaybackData> clipPlaybackData; 
+	public int holdIntensityUntilBar; 
+	public bool musicPlaying; 
+	public bool loadingFirstClips; 
+	public MusicTheme nextTheme; 
+	public double lastClipUpdate; 
+	public float clipUpdateInterval; 
+	public double themeStartTime; 
+	public int lastActiveClipRefresh; 
+	public int activeClipRefreshInterval; 
+	public bool forceThemeChange; 
+	public float randomIntensityJumpChance; 
+	public int clipScheduleBarsEarly; 
+	public List<MusicTheme.PositionedClip> activeClips; 
+	public List<MusicTheme.PositionedClip> activeMusicClips; 
+	public List<MusicTheme.PositionedClip> activeControlClips; 
+	public List<MusicZone> currentMusicZones; 
+	public int currentBar; 
+	public int barOffset; 
+	private AudioSource syncSource; 
+	private bool needsResync; 
+	private int fadingClipCount; 
+	private MusicClipLoader clipLoader; 
+	private List<MusicTheme> validThemes; 
 
-	public double currentThemeTime { get; }
-	public int themeBar { get; }
+public double currentThemeTime { get; }
+public int themeBar { get; }
 
 
-	public double get_currentThemeTime() { }
+public double get_currentThemeTime() { }
 
-	public int get_themeBar() { }
+public int get_themeBar() { }
 
-	protected override void Awake() { }
+protected override void Awake() { }
 
-	public void StartMusic() { }
+public void StartMusic() { }
 
-	public MusicTheme GetThemeToPlay(MusicZone currentMusicZone) { }
+public MusicTheme GetThemeToPlay(MusicZone currentMusicZone) { }
 
-	private void Update() { }
+private void Update() { }
 
-	private void UpdateCurrentBar() { }
+private void UpdateCurrentBar() { }
 
-	private void DoBarJump(int offset) { }
+private void DoBarJump(int offset) { }
 
-	private void HandleMusicPlayback() { }
+private void HandleMusicPlayback() { }
 
-	private void DoClipFades() { }
+private void DoClipFades() { }
 
-	private AudioSource GetFreeAudioSource() { }
+private AudioSource GetFreeAudioSource() { }
 
-	public void ForceThemeChange(MusicTheme theme) { }
+public void ForceThemeChange(MusicTheme theme) { }
 
-	private void DoForcedThemeChange() { }
+private void DoForcedThemeChange() { }
 
-	private void UpdateClips() { }
+private void UpdateClips() { }
 
-	private void UpdateActiveClips() { }
+private void UpdateActiveClips() { }
 
-	private void AddActiveClipsForBar(int bar) { }
+private void AddActiveClipsForBar(int bar) { }
 
-	private void UpdateControlClips() { }
+private void UpdateControlClips() { }
 
-	private void UpdateBarJumpClips() { }
+private void UpdateBarJumpClips() { }
 
-	private void UpdateMusicClips() { }
+private void UpdateMusicClips() { }
 
-	private void ScheduleClip(MusicTheme.PositionedClip clip) { }
+private void ScheduleClip(MusicTheme.PositionedClip clip) { }
 
-	private void FadeInClip(MusicTheme.PositionedClip clip) { }
+private void FadeInClip(MusicTheme.PositionedClip clip) { }
 
-	private void FadeOutClip(MusicTheme.PositionedClip clip) { }
+private void FadeOutClip(MusicTheme.PositionedClip clip) { }
 
-	private MusicManager.ClipPlaybackData GetPlaybackData(MusicTheme.PositionedClip clip) { }
+private MusicManager.ClipPlaybackData GetPlaybackData(MusicTheme.PositionedClip clip) { }
 
-	private MusicManager.ClipPlaybackData GetPlaybackData(AudioSource source) { }
+private MusicManager.ClipPlaybackData GetPlaybackData(AudioSource source) { }
 
-	private void ResyncClips() { }
+private void ResyncClips() { }
 
-	private void CheckSyncSource() { }
+private void CheckSyncSource() { }
 
-	public void ShuffleThemes() { }
+public void ShuffleThemes() { }
 
-	public void MusicZoneEntered(MusicZone zone) { }
+public void MusicZoneEntered(MusicZone zone) { }
 
-	public void MusicZoneExited(MusicZone zone) { }
+public void MusicZoneExited(MusicZone zone) { }
 
-	public MusicZone CurrentMusicZone() { }
+public MusicZone CurrentMusicZone() { }
 
-	public static void RaiseIntensityTo(float amount, int holdLengthBars = 0) { }
+public static void RaiseIntensityTo(float amount, int holdLengthBars = 0) { }
 
-	public void StopMusic() { }
+public void StopMusic() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public class MusicManager.ClipPlaybackData // TypeDefIndex: 9005
-{	public AudioSource source; // 0x10
-	public MusicTheme.PositionedClip positionedClip; // 0x18
-	public bool isActive; // 0x20
-	public bool fadingIn; // 0x21
-	public bool fadingOut; // 0x22
-	public double fadeStarted; // 0x28
-	public bool needsSync; // 0x30
+{
+	public AudioSource source; 
+	public MusicTheme.PositionedClip positionedClip; 
+	public bool isActive; 
+	public bool fadingIn; 
+	public bool fadingOut; 
+	public double fadeStarted; 
+	public bool needsSync; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 private sealed class MusicManager.<>c // TypeDefIndex: 9006
-{	public static readonly MusicManager.<>c <>9; // 0x0
-	public static Func<MusicTheme, float> <>9__60_0; // 0x8
+{
+	public static readonly MusicManager.<>c <>9; 
+	public static Func<MusicTheme, float> <>9__60_0; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal float <ShuffleThemes>b__60_0(MusicTheme x) { }
+internal float <ShuffleThemes>b__60_0(MusicTheme x) { }
 
 }
 

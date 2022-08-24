@@ -1,27 +1,28 @@
 public class ProcessedTexture // TypeDefIndex: 11360
-{	protected RenderTexture result; // 0x10
-	protected Material material; // 0x18
+{
+	protected RenderTexture result; 
+	protected Material material; 
 
 
-	public void Dispose() { }
+public void Dispose() { }
 
-	protected RenderTexture CreateRenderTexture(string name, int width, int height, bool linear) { }
+protected RenderTexture CreateRenderTexture(string name, int width, int height, bool linear) { }
 
-	protected void DestroyRenderTexture(ref RenderTexture rt) { }
+protected void DestroyRenderTexture(ref RenderTexture rt) { }
 
-	protected RenderTexture CreateTemporary() { }
+protected RenderTexture CreateTemporary() { }
 
-	protected void ReleaseTemporary(RenderTexture rt) { }
+protected void ReleaseTemporary(RenderTexture rt) { }
 
-	protected Material CreateMaterial(string shader) { }
+protected Material CreateMaterial(string shader) { }
 
-	protected Material CreateMaterial(Shader shader) { }
+protected Material CreateMaterial(Shader shader) { }
 
-	protected void DestroyMaterial(ref Material mat) { }
+protected void DestroyMaterial(ref Material mat) { }
 
-	public static Texture op_Implicit(ProcessedTexture t) { }
+public static Texture op_Implicit(ProcessedTexture t) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

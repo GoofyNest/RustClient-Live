@@ -1,18 +1,19 @@
 internal struct UGCFileWriteStreamHandle_t : IEquatable<UGCFileWriteStreamHandle_t>, IComparable<UGCFileWriteStreamHandle_t> // TypeDefIndex: 5529
-{	public ulong Value; // 0x0
+{
+	public ulong Value; 
 
 
-	public static UGCFileWriteStreamHandle_t op_Implicit(ulong value) { }
+public static UGCFileWriteStreamHandle_t op_Implicit(ulong value) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override bool Equals(object p) { }
+public override bool Equals(object p) { }
 
-	public bool Equals(UGCFileWriteStreamHandle_t p) { }
+public bool Equals(UGCFileWriteStreamHandle_t p) { }
 
-	public int CompareTo(UGCFileWriteStreamHandle_t other) { }
+public int CompareTo(UGCFileWriteStreamHandle_t other) { }
 
 }
 

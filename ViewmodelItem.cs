@@ -1,18 +1,19 @@
 public class ViewmodelItem : MonoBehaviour // TypeDefIndex: 9254
-{	private bool vOneRun; // 0x18
-	private bool bWasOn; // 0x19
-	private Animator viewmodelAnimator; // 0x20
+{
+	private bool vOneRun; 
+	private bool bWasOn; 
+	private Animator viewmodelAnimator; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void Update() { }
+private void Update() { }
 
-	private void OnOffStateChanged() { }
+private void OnOffStateChanged() { }
 
-	private Item FindItem() { }
+private Item FindItem() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

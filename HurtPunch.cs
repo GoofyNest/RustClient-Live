@@ -1,20 +1,21 @@
 public class HurtPunch : MonoBehaviour // TypeDefIndex: 9131
-{	public PostProcessVolume postProcessVolume; // 0x18
-	public static float punchHurtDuration; // 0x0
-	private static float punchHurtTime; // 0x4
+{
+	public PostProcessVolume postProcessVolume; 
+	public static float punchHurtDuration; 
+	private static float punchHurtTime; 
 
 
-	public static void Punch(float damageScale = 1) { }
+public static void Punch(float damageScale = 1) { }
 
-	private float GetPunchHurtScale() { }
+private float GetPunchHurtScale() { }
 
-	public void Awake() { }
+public void Awake() { }
 
-	protected void Update() { }
+protected void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

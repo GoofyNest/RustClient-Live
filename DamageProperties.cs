@@ -1,23 +1,25 @@
 public class DamageProperties : ScriptableObject // TypeDefIndex: 9978
-{	public DamageProperties fallback; // 0x18
-	[HorizontalAttribute] // RVA: 0xAA1B0 Offset: 0xA95B0 VA: 0x1800AA1B0
-	public DamageProperties.HitAreaProperty[] bones; // 0x20
+{
+	public DamageProperties fallback; 
+	[HorizontalAttribute] 
+	public DamageProperties.HitAreaProperty[] bones; 
 
 
-	public float GetMultiplier(HitArea area) { }
+public float GetMultiplier(HitArea area) { }
 
-	public void ScaleDamage(HitInfo info) { }
+public void ScaleDamage(HitInfo info) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public class DamageProperties.HitAreaProperty // TypeDefIndex: 9979
-{	public HitArea area; // 0x10
-	public float damage; // 0x14
+{
+	public HitArea area; 
+	public float damage; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

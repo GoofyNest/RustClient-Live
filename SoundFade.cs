@@ -1,57 +1,59 @@
 public class SoundFade : MonoBehaviour, IClientComponent // TypeDefIndex: 9028
-{	public SoundFadeHQAudioFilter hqFadeFilter; // 0x18
-	public float currentGain; // 0x20
-	public float startingGain; // 0x24
-	public float finalGain; // 0x28
-	public int sampleRate; // 0x2C
-	public bool highQualityFadeCompleted; // 0x30
-	public float length; // 0x34
-	public SoundFade.Direction currentDirection; // 0x38
-	private Sound _sound; // 0x40
-	public SoundModulation.Modulator fadeGainModulator; // 0x48
-	private float startTime; // 0x50
-	private float fadeOutTimeFinished; // 0x54
-	private float fadeOutTimeBuffer; // 0x58
+{
+	public SoundFadeHQAudioFilter hqFadeFilter; 
+	public float currentGain; 
+	public float startingGain; 
+	public float finalGain; 
+	public int sampleRate; 
+	public bool highQualityFadeCompleted; 
+	public float length; 
+	public SoundFade.Direction currentDirection; 
+	private Sound _sound; 
+	public SoundModulation.Modulator fadeGainModulator; 
+	private float startTime; 
+	private float fadeOutTimeFinished; 
+	private float fadeOutTimeBuffer; 
 
-	public Sound sound { get; }
-	public bool isFading { get; }
-	public bool isFadingOut { get; }
-	public bool isFadingIn { get; }
-	public float fadeTimeLeft { get; }
+public Sound sound { get; }
+public bool isFading { get; }
+public bool isFadingOut { get; }
+public bool isFadingIn { get; }
+public float fadeTimeLeft { get; }
 
 
-	public Sound get_sound() { }
+public Sound get_sound() { }
 
-	public bool get_isFading() { }
+public bool get_isFading() { }
 
-	public bool get_isFadingOut() { }
+public bool get_isFadingOut() { }
 
-	public bool get_isFadingIn() { }
+public bool get_isFadingIn() { }
 
-	public float get_fadeTimeLeft() { }
+public float get_fadeTimeLeft() { }
 
-	public void FadeIn(float time) { }
+public void FadeIn(float time) { }
 
-	public void FadeOut(float time) { }
+public void FadeOut(float time) { }
 
-	public void DoUpdate() { }
+public void DoUpdate() { }
 
-	private void HQFadeComplete() { }
+private void HQFadeComplete() { }
 
-	public void Init() { }
+public void Init() { }
 
-	private void DoFade(float time, SoundFade.Direction direction) { }
+private void DoFade(float time, SoundFade.Direction direction) { }
 
-	public bool isGainLevelAudible() { }
+public bool isGainLevelAudible() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public enum SoundFade.Direction // TypeDefIndex: 9029
-{	public int value__; // 0x0
-	public const SoundFade.Direction In = 0;
-	public const SoundFade.Direction Out = 1;
+{
+	public int value__; 
+public const SoundFade.Direction In = 0;
+public const SoundFade.Direction Out = 1;
 
 }
 

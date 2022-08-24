@@ -1,13 +1,14 @@
 public struct Timing // TypeDefIndex: 11404
-{	private Stopwatch sw; // 0x0
-	private string name; // 0x8
+{
+	private Stopwatch sw; 
+	private string name; 
 
 
-	public static Timing Start(string name) { }
+public static Timing Start(string name) { }
 
-	public void End() { }
+public void End() { }
 
-	public void .ctor(string name) { }
+public void .ctor(string name) { }
 
 }
 

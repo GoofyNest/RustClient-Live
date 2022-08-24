@@ -1,17 +1,18 @@
 public class DSASignatureDeformatter : AsymmetricSignatureDeformatter // TypeDefIndex: 957
-{	private DSA _dsaKey; // 0x10
-	private string _oid; // 0x18
+{
+	private DSA _dsaKey; 
+	private string _oid; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public void .ctor(AsymmetricAlgorithm key) { }
+public void .ctor(AsymmetricAlgorithm key) { }
 
-	public override void SetKey(AsymmetricAlgorithm key) { }
+public override void SetKey(AsymmetricAlgorithm key) { }
 
-	public override void SetHashAlgorithm(string strName) { }
+public override void SetHashAlgorithm(string strName) { }
 
-	public override bool VerifySignature(byte[] rgbHash, byte[] rgbSignature) { }
+public override bool VerifySignature(byte[] rgbHash, byte[] rgbSignature) { }
 
 }
 

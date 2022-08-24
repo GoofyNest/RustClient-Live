@@ -1,16 +1,17 @@
 public class ChippyBulletEntity : SpriteArcadeEntity // TypeDefIndex: 8768
-{	public float speed; // 0x98
-	public float maxSpeed; // 0x9C
-	public float radius; // 0xA0
-	public float damage; // 0xA4
-	public ArcadeEntity bulletImpact; // 0xA8
+{
+	public float speed; 
+	public float maxSpeed; 
+	public float radius; 
+	public float damage; 
+	public ArcadeEntity bulletImpact; 
 
 
-	public void FixedUpdate() { }
+public void FixedUpdate() { }
 
-	public override void AuthorativeThink(float delta) { }
+public override void AuthorativeThink(float delta) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

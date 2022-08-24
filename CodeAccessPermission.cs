@@ -1,29 +1,30 @@
 public abstract class CodeAccessPermission : IPermission, ISecurityEncodable // TypeDefIndex: 898
 {
-	protected void .ctor() { }
 
-	[ConditionalAttribute] // RVA: 0xC1040 Offset: 0xC0440 VA: 0x1800C1040
-	public void Demand() { }
+protected void .ctor() { }
 
-	[ComVisibleAttribute] // RVA: 0x75C30 Offset: 0x75030 VA: 0x180075C30
-	public override bool Equals(object obj) { }
+	[ConditionalAttribute] 
+public void Demand() { }
 
-	[ComVisibleAttribute] // RVA: 0x75C30 Offset: 0x75030 VA: 0x180075C30
-	public override int GetHashCode() { }
+	[ComVisibleAttribute] 
+public override bool Equals(object obj) { }
 
-	public abstract bool IsSubsetOf(IPermission target);
+	[ComVisibleAttribute] 
+public override int GetHashCode() { }
 
-	public override string ToString() { }
+public abstract bool IsSubsetOf(IPermission target);
 
-	public abstract SecurityElement ToXml();
+public override string ToString() { }
 
-	internal SecurityElement Element(int version) { }
+public abstract SecurityElement ToXml();
 
-	internal static PermissionState CheckPermissionState(PermissionState state, bool allowUnrestricted) { }
+internal SecurityElement Element(int version) { }
 
-	internal static void ThrowInvalidPermission(IPermission target, Type expected) { }
+internal static PermissionState CheckPermissionState(PermissionState state, bool allowUnrestricted) { }
 
-	private void System.Security.IPermission.Demand() { }
+internal static void ThrowInvalidPermission(IPermission target, Type expected) { }
+
+private void System.Security.IPermission.Demand() { }
 
 }
 

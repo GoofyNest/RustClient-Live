@@ -1,15 +1,16 @@
 public class TerrainFilter : PrefabAttribute // TypeDefIndex: 10440
-{	public SpawnFilter Filter; // 0x98
-	public bool CheckPlacementMap; // 0xA0
+{
+	public SpawnFilter Filter; 
+	public bool CheckPlacementMap; 
 
 
-	protected void OnDrawGizmosSelected() { }
+protected void OnDrawGizmosSelected() { }
 
-	public bool Check(Vector3 pos) { }
+public bool Check(Vector3 pos) { }
 
-	protected override Type GetIndexedType() { }
+protected override Type GetIndexedType() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,14 +1,15 @@
 internal sealed class LocalDataStoreHolder // TypeDefIndex: 144
-{	private LocalDataStore m_Store; // 0x10
+{
+	private LocalDataStore m_Store; 
 
-	public LocalDataStore Store { get; }
+public LocalDataStore Store { get; }
 
 
-	public void .ctor(LocalDataStore store) { }
+public void .ctor(LocalDataStore store) { }
 
-	protected override void Finalize() { }
+protected override void Finalize() { }
 
-	public LocalDataStore get_Store() { }
+public LocalDataStore get_Store() { }
 
 }
 

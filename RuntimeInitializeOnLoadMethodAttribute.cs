@@ -1,14 +1,15 @@
 public class RuntimeInitializeOnLoadMethodAttribute : PreserveAttribute // TypeDefIndex: 3522
-{	private RuntimeInitializeLoadType m_LoadType; // 0x10
+{
+	private RuntimeInitializeLoadType m_LoadType; 
 
-	private RuntimeInitializeLoadType loadType { set; }
+private RuntimeInitializeLoadType loadType { set; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public void .ctor(RuntimeInitializeLoadType loadType) { }
+public void .ctor(RuntimeInitializeLoadType loadType) { }
 
-	private void set_loadType(RuntimeInitializeLoadType value) { }
+private void set_loadType(RuntimeInitializeLoadType value) { }
 
 }
 

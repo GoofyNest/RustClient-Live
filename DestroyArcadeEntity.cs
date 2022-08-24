@@ -1,14 +1,15 @@
 public class DestroyArcadeEntity : BaseMonoBehaviour // TypeDefIndex: 8771
-{	public ArcadeEntity ent; // 0x18
-	public float TimeToDie; // 0x20
-	public float TimeToDieVariance; // 0x24
+{
+	public ArcadeEntity ent; 
+	public float TimeToDie; 
+	public float TimeToDieVariance; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	private void DestroyAction() { }
+private void DestroyAction() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

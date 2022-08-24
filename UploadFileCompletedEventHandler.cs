@@ -1,14 +1,15 @@
 public sealed class UploadFileCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2970
 {
-public sealed class UploadFileCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2970
 
-	public void .ctor(object object, IntPtr method) { }
+public sealed class UploadFileCompletedEventHandler : MulticastDelegate 
 
-	public virtual void Invoke(object sender, UploadFileCompletedEventArgs e) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(object sender, UploadFileCompletedEventArgs e, AsyncCallback callback, object object) { }
+public virtual void Invoke(object sender, UploadFileCompletedEventArgs e) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(object sender, UploadFileCompletedEventArgs e, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

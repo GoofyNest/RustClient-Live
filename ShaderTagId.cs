@@ -1,26 +1,27 @@
 public struct ShaderTagId : IEquatable<ShaderTagId> // TypeDefIndex: 3853
-{	public static readonly ShaderTagId none; // 0x0
-	private int m_Id; // 0x0
+{
+	public static readonly ShaderTagId none; 
+	private int m_Id; 
 
-	internal int id { get; set; }
-	public string name { get; }
+internal int id { get; set; }
+public string name { get; }
 
 
-	public void .ctor(string name) { }
+public void .ctor(string name) { }
 
-	internal int get_id() { }
+internal int get_id() { }
 
-	internal void set_id(int value) { }
+internal void set_id(int value) { }
 
-	public string get_name() { }
+public string get_name() { }
 
-	public override bool Equals(object obj) { }
+public override bool Equals(object obj) { }
 
-	public bool Equals(ShaderTagId other) { }
+public bool Equals(ShaderTagId other) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

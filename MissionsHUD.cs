@@ -1,80 +1,82 @@
 public class MissionsHUD : SingletonComponent<MissionsHUD> // TypeDefIndex: 11180
-{	public SoundDefinition listComplete; // 0x18
-	public SoundDefinition itemComplete; // 0x20
-	public SoundDefinition popup; // 0x28
-	public Canvas Canvas; // 0x30
-	public Text titleText; // 0x38
-	public GameObject timerObject; // 0x40
-	public RustText timerText; // 0x48
-	private MissionsHUDToDo[] items; // 0x50
-	private bool blockOpenSound; // 0x58
-	private float nextTextUpdateTime; // 0x5C
+{
+	public SoundDefinition listComplete; 
+	public SoundDefinition itemComplete; 
+	public SoundDefinition popup; 
+	public Canvas Canvas; 
+	public Text titleText; 
+	public GameObject timerObject; 
+	public RustText timerText; 
+	private MissionsHUDToDo[] items; 
+	private bool blockOpenSound; 
+	private float nextTextUpdateTime; 
 
-	public bool IsOpen { get; }
+public bool IsOpen { get; }
 
 
-	public bool get_IsOpen() { }
+public bool get_IsOpen() { }
 
-	public void OnEnable() { }
+public void OnEnable() { }
 
-	private void ClientConnected() { }
+private void ClientConnected() { }
 
-	public void Reset() { }
+public void Reset() { }
 
-	public static void ClientMissionUpdate() { }
+public static void ClientMissionUpdate() { }
 
-	public void ForceUpdate() { }
+public void ForceUpdate() { }
 
-	public void UpdateTimeText() { }
+public void UpdateTimeText() { }
 
-	public void Update() { }
+public void Update() { }
 
-	[IteratorStateMachineAttribute] // RVA: 0x9E950 Offset: 0x9DD50 VA: 0x18009E950
-	private IEnumerator Think() { }
+	[IteratorStateMachineAttribute] 
+private IEnumerator Think() { }
 
-	public bool ShouldShow() { }
+public bool ShouldShow() { }
 
-	public void Hide() { }
+public void Hide() { }
 
-	private void Show() { }
+private void Show() { }
 
-	public void Initialize() { }
+public void Initialize() { }
 
-	public void OnItemComplete() { }
+public void OnItemComplete() { }
 
-	public void CheckForListComplete() { }
+public void CheckForListComplete() { }
 
-	public void BlockNextOpenSound() { }
+public void BlockNextOpenSound() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 private sealed class MissionsHUD.<Think>d__19 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11181
-{	private int <>1__state; // 0x10
-	private object <>2__current; // 0x18
-	public MissionsHUD <>4__this; // 0x20
+{
+	private int <>1__state; 
+	private object <>2__current; 
+	public MissionsHUD <>4__this; 
 
-	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-	private object System.Collections.IEnumerator.Current { get; }
+private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+private object System.Collections.IEnumerator.Current { get; }
 
 
-	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public void .ctor(int <>1__state) { }
+	[DebuggerHiddenAttribute] 
+public void .ctor(int <>1__state) { }
 
-	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void System.IDisposable.Dispose() { }
+	[DebuggerHiddenAttribute] 
+private void System.IDisposable.Dispose() { }
 
-	private bool MoveNext() { }
+private bool MoveNext() { }
 
-	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	[DebuggerHiddenAttribute] 
+private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
-	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void System.Collections.IEnumerator.Reset() { }
+	[DebuggerHiddenAttribute] 
+private void System.Collections.IEnumerator.Reset() { }
 
-	[DebuggerHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private object System.Collections.IEnumerator.get_Current() { }
+	[DebuggerHiddenAttribute] 
+private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

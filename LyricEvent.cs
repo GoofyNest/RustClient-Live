@@ -1,12 +1,13 @@
 public sealed class LyricEvent : BaseTextEvent // TypeDefIndex: 7539
 {
-	public void .ctor() { }
 
-	public void .ctor(string text) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor(string text) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

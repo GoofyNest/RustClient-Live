@@ -1,37 +1,38 @@
 public class GlobalMessages // TypeDefIndex: 11373
-{	public static ListHashSet<IInventoryChanged> onInventoryChanged; // 0x0
-	public static Action OnInventoryChangedAction; // 0x8
-	public static ListHashSet<IViewModeChanged> onViewModeChanged; // 0x10
-	public static Action OnViewModeChangedAction; // 0x18
-	public static ListHashSet<IClothingChanged> onClothingChanged; // 0x20
-	public static Action OnClothingChangedAction; // 0x28
-	public static ListHashSet<IViewModelUpdated> onViewModelUpdated; // 0x30
-	public static Action OnViewModelUpdatedAction; // 0x38
-	public static ListHashSet<IBlueprintsChanged> onBlueprintsChanged; // 0x40
-	public static Action OnBlueprintsChangedAction; // 0x48
-	public static ListHashSet<IItemAmountChanged> onItemAmountChanged; // 0x50
-	public static Action OnItemAmountChangedAction; // 0x58
-	public static ListHashSet<IItemIconChanged> onItemIconChanged; // 0x60
-	public static Action OnItemIconChangedAction; // 0x68
+{
+	public static ListHashSet<IInventoryChanged> onInventoryChanged; 
+	public static Action OnInventoryChangedAction; 
+	public static ListHashSet<IViewModeChanged> onViewModeChanged; 
+	public static Action OnViewModeChangedAction; 
+	public static ListHashSet<IClothingChanged> onClothingChanged; 
+	public static Action OnClothingChangedAction; 
+	public static ListHashSet<IViewModelUpdated> onViewModelUpdated; 
+	public static Action OnViewModelUpdatedAction; 
+	public static ListHashSet<IBlueprintsChanged> onBlueprintsChanged; 
+	public static Action OnBlueprintsChangedAction; 
+	public static ListHashSet<IItemAmountChanged> onItemAmountChanged; 
+	public static Action OnItemAmountChangedAction; 
+	public static ListHashSet<IItemIconChanged> onItemIconChanged; 
+	public static Action OnItemIconChangedAction; 
 
 
-	public static void OnInventoryChanged() { }
+public static void OnInventoryChanged() { }
 
-	public static void OnViewModeChanged() { }
+public static void OnViewModeChanged() { }
 
-	public static void OnClothingChanged() { }
+public static void OnClothingChanged() { }
 
-	public static void OnViewModelUpdated() { }
+public static void OnViewModelUpdated() { }
 
-	public static void OnBlueprintsChanged() { }
+public static void OnBlueprintsChanged() { }
 
-	public static void OnItemAmountChanged() { }
+public static void OnItemAmountChanged() { }
 
-	public static void OnItemIconChanged() { }
+public static void OnItemIconChanged() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

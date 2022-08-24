@@ -1,12 +1,13 @@
 public sealed class HeaderHandler : MulticastDelegate // TypeDefIndex: 1238
 {
-	public void .ctor(object object, IntPtr method) { }
 
-	public virtual object Invoke(Header[] headers) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(Header[] headers, AsyncCallback callback, object object) { }
+public virtual object Invoke(Header[] headers) { }
 
-	public virtual object EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(Header[] headers, AsyncCallback callback, object object) { }
+
+public virtual object EndInvoke(IAsyncResult result) { }
 
 }
 

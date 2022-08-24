@@ -1,12 +1,13 @@
 public class SoundFadeHQAudioFilter : MonoBehaviour, IClientComponent // TypeDefIndex: 9030
-{	private SoundFade fade; // 0x18
+{
+	private SoundFade fade; 
 
 
-	public void Init(SoundFade fade) { }
+public void Init(SoundFade fade) { }
 
-	private void OnAudioFilterRead(float[] data, int channels) { }
+private void OnAudioFilterRead(float[] data, int channels) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,8 +1,9 @@
 public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 11290
-{	public string name; // 0x10
+{
+	public string name; 
 
 
-	public void .ctor(string name) { }
+public void .ctor(string name) { }
 
 }
 

@@ -1,8 +1,9 @@
 public class ButtonAttribute : BaseEditorExAttribute // TypeDefIndex: 8017
-{	public string Label; // 0x20
+{
+	public string Label; 
 
 
-	public void .ctor(string name) { }
+public void .ctor(string name) { }
 
 }
 

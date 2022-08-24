@@ -1,26 +1,27 @@
 public class BaseBulb : MonoBehaviour // TypeDefIndex: 8824
-{	public Renderer bulbRenderer; // 0x18
-	private static readonly int timeOffsetHash; // 0x0
-	private static readonly int bulbIndexHash; // 0x4
-	private static readonly int modeHash; // 0x8
-	private AdvancedChristmasLights.AnimationType currentAnimationType; // 0x20
-	private float timeOffset; // 0x24
-	private int bulbIndex; // 0x28
-	private bool isOn; // 0x2C
-	private MaterialPropertyBlock materialPropertyBlock; // 0x30
+{
+	public Renderer bulbRenderer; 
+	private static readonly int timeOffsetHash; 
+	private static readonly int bulbIndexHash; 
+	private static readonly int modeHash; 
+	private AdvancedChristmasLights.AnimationType currentAnimationType; 
+	private float timeOffset; 
+	private int bulbIndex; 
+	private bool isOn; 
+	private MaterialPropertyBlock materialPropertyBlock; 
 
 
-	public virtual void SetOn(bool wantsOn) { }
+public virtual void SetOn(bool wantsOn) { }
 
-	public virtual void SetSpacingIndex(float timeOffset, int bulbIndex) { }
+public virtual void SetSpacingIndex(float timeOffset, int bulbIndex) { }
 
-	public virtual void SetBulbAnimation(AdvancedChristmasLights.AnimationType type) { }
+public virtual void SetBulbAnimation(AdvancedChristmasLights.AnimationType type) { }
 
-	private void UpdateMaterialProperties() { }
+private void UpdateMaterialProperties() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

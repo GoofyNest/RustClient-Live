@@ -1,17 +1,18 @@
 public class LootPanelReclaim : LootPanel // TypeDefIndex: 11035
-{	public int oldOverflow; // 0x38
-	public Text overflowText; // 0x40
-	public GameObject overflowObject; // 0x48
-	public static readonly Translate.Phrase MorePhrase; // 0x0
+{
+	public int oldOverflow; 
+	public Text overflowText; 
+	public GameObject overflowObject; 
+	public static readonly Translate.Phrase MorePhrase; 
 
 
-	public override void Update() { }
+public override void Update() { }
 
-	public void RefreshReclaimContents() { }
+public void RefreshReclaimContents() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

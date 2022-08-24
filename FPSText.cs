@@ -1,11 +1,12 @@
 public class FPSText : MonoBehaviour // TypeDefIndex: 10928
-{	public Text text; // 0x18
-	private Stopwatch fpsTimer; // 0x20
+{
+	public Text text; 
+	private Stopwatch fpsTimer; 
 
 
-	protected void Update() { }
+protected void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,22 +1,23 @@
 public class BitstreamException : MP3SharpException // TypeDefIndex: 7385
-{	private int _ErrorCode; // 0x88
+{
+	private int _ErrorCode; 
 
-	internal virtual int ErrorCode { get; }
+internal virtual int ErrorCode { get; }
 
 
-	internal void .ctor(string message, Exception inner) { }
+internal void .ctor(string message, Exception inner) { }
 
-	internal void .ctor(int errorcode, Exception inner) { }
+internal void .ctor(int errorcode, Exception inner) { }
 
-	protected void .ctor(SerializationInfo info, StreamingContext context) { }
+protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-	internal virtual int get_ErrorCode() { }
+internal virtual int get_ErrorCode() { }
 
-	public override void GetObjectData(SerializationInfo info, StreamingContext context) { }
+public override void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-	private void InitBlock() { }
+private void InitBlock() { }
 
-	internal static string GetErrorString(int errorcode) { }
+internal static string GetErrorString(int errorcode) { }
 
 }
 

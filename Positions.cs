@@ -1,17 +1,18 @@
 internal class Positions // TypeDefIndex: 2155
-{	private ArrayList positions; // 0x10
+{
+	private ArrayList positions; 
 
-	public Position Item { get; }
-	public int Count { get; }
+public Position Item { get; }
+public int Count { get; }
 
 
-	public int Add(int symbol, object particle) { }
+public int Add(int symbol, object particle) { }
 
-	public Position get_Item(int pos) { }
+public Position get_Item(int pos) { }
 
-	public int get_Count() { }
+public int get_Count() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

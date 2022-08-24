@@ -1,18 +1,19 @@
 internal struct LobbyKicked_t : ICallbackData // TypeDefIndex: 5343
-{	internal ulong SteamIDLobby; // 0x0
-	internal ulong SteamIDAdmin; // 0x8
-	internal byte KickedDueToDisconnect; // 0x10
-	public static int _datasize; // 0x0
+{
+	internal ulong SteamIDLobby; 
+	internal ulong SteamIDAdmin; 
+	internal byte KickedDueToDisconnect; 
+	public static int _datasize; 
 
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
+public int DataSize { get; }
+public CallbackType CallbackType { get; }
 
 
-	public int get_DataSize() { }
+public int get_DataSize() { }
 
-	public CallbackType get_CallbackType() { }
+public CallbackType get_CallbackType() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

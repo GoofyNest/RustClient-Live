@@ -1,28 +1,29 @@
 internal class UnixRegistryApi : IRegistryApi // TypeDefIndex: 109
 {
-	private static string ToUnix(string keyname) { }
 
-	private static bool IsWellKnownKey(string parentKeyName, string keyname) { }
+private static string ToUnix(string keyname) { }
 
-	public RegistryKey OpenSubKey(RegistryKey rkey, string keyname, bool writable) { }
+private static bool IsWellKnownKey(string parentKeyName, string keyname) { }
 
-	public void Flush(RegistryKey rkey) { }
+public RegistryKey OpenSubKey(RegistryKey rkey, string keyname, bool writable) { }
 
-	public void Close(RegistryKey rkey) { }
+public void Flush(RegistryKey rkey) { }
 
-	public object GetValue(RegistryKey rkey, string name, object default_value, RegistryValueOptions options) { }
+public void Close(RegistryKey rkey) { }
 
-	public string[] GetSubKeyNames(RegistryKey rkey) { }
+public object GetValue(RegistryKey rkey, string name, object default_value, RegistryValueOptions options) { }
 
-	public string ToString(RegistryKey rkey) { }
+public string[] GetSubKeyNames(RegistryKey rkey) { }
 
-	private RegistryKey CreateSubKey(RegistryKey rkey, string keyname, bool writable) { }
+public string ToString(RegistryKey rkey) { }
 
-	private RegistryKey CreateSubKey(RegistryKey rkey, string keyname, bool writable, bool is_volatile) { }
+private RegistryKey CreateSubKey(RegistryKey rkey, string keyname, bool writable) { }
 
-	public IntPtr GetHandle(RegistryKey key) { }
+private RegistryKey CreateSubKey(RegistryKey rkey, string keyname, bool writable, bool is_volatile) { }
 
-	public void .ctor() { }
+public IntPtr GetHandle(RegistryKey key) { }
+
+public void .ctor() { }
 
 }
 

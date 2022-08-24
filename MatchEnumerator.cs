@@ -1,19 +1,20 @@
 internal class MatchEnumerator : IEnumerator // TypeDefIndex: 2623
-{	internal MatchCollection _matchcoll; // 0x10
-	internal Match _match; // 0x18
-	internal int _curindex; // 0x20
-	internal bool _done; // 0x24
+{
+	internal MatchCollection _matchcoll; 
+	internal Match _match; 
+	internal int _curindex; 
+	internal bool _done; 
 
-	public object Current { get; }
+public object Current { get; }
 
 
-	internal void .ctor(MatchCollection matchcoll) { }
+internal void .ctor(MatchCollection matchcoll) { }
 
-	public bool MoveNext() { }
+public bool MoveNext() { }
 
-	public object get_Current() { }
+public object get_Current() { }
 
-	public void Reset() { }
+public void Reset() { }
 
 }
 

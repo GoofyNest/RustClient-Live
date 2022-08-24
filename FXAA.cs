@@ -1,17 +1,18 @@
 public class FXAA : FXAAPostEffectsBase, IImageEffect // TypeDefIndex: 11484
-{	public Shader shader; // 0x20
-	private Material mat; // 0x28
+{
+	public Shader shader; 
+	private Material mat; 
 
 
-	private void CreateMaterials() { }
+private void CreateMaterials() { }
 
-	private void Start() { }
+private void Start() { }
 
-	public bool IsActive() { }
+public bool IsActive() { }
 
-	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,21 +1,22 @@
 internal sealed class IntSizedArray : ICloneable // TypeDefIndex: 1120
-{	internal int[] objects; // 0x10
-	internal int[] negObjects; // 0x18
+{
+	internal int[] objects; 
+	internal int[] negObjects; 
 
-	internal int Item { get; set; }
+internal int Item { get; set; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private void .ctor(IntSizedArray sizedArray) { }
+private void .ctor(IntSizedArray sizedArray) { }
 
-	public object Clone() { }
+public object Clone() { }
 
-	internal int get_Item(int index) { }
+internal int get_Item(int index) { }
 
-	internal void set_Item(int index, int value) { }
+internal void set_Item(int index, int value) { }
 
-	internal void IncreaseCapacity(int index) { }
+internal void IncreaseCapacity(int index) { }
 
 }
 

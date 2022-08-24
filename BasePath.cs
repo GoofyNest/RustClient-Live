@@ -1,24 +1,25 @@
 public class BasePath : MonoBehaviour // TypeDefIndex: 8858
-{	public List<BasePathNode> nodes; // 0x18
-	public List<PathInterestNode> interestZones; // 0x20
-	public List<PathSpeedZone> speedZones; // 0x28
+{
+	public List<BasePathNode> nodes; 
+	public List<PathInterestNode> interestZones; 
+	public List<PathSpeedZone> speedZones; 
 
 
-	public void Start() { }
+public void Start() { }
 
-	private void AddChildren() { }
+private void AddChildren() { }
 
-	private void ClearChildren() { }
+private void ClearChildren() { }
 
-	public static void AutoGenerateLinks(BasePath path) { }
+public static void AutoGenerateLinks(BasePath path) { }
 
-	public void GetNodesNear(Vector3 point, ref List<BasePathNode> nearNodes, float dist = 10) { }
+public void GetNodesNear(Vector3 point, ref List<BasePathNode> nearNodes, float dist = 10) { }
 
-	public BasePathNode GetClosestToPoint(Vector3 point) { }
+public BasePathNode GetClosestToPoint(Vector3 point) { }
 
-	public PathInterestNode GetRandomInterestNodeAwayFrom(Vector3 from, float dist = 10) { }
+public PathInterestNode GetRandomInterestNodeAwayFrom(Vector3 from, float dist = 10) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

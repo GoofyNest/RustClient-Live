@@ -1,21 +1,22 @@
 public class GlassPane : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 9735
-{	public Renderer glassRendereer; // 0x18
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private BaseVehicleModule module; // 0x20
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float showFullDamageAt; // 0x28
-	private static int detailAmountID; // 0x0
+{
+	public Renderer glassRendereer; 
+	[SerializeField] 
+	private BaseVehicleModule module; 
+	[SerializeField] 
+	private float showFullDamageAt; 
+	private static int detailAmountID; 
 
 
-	protected void Start() { }
+protected void Start() { }
 
-	protected void OnDisable() { }
+protected void OnDisable() { }
 
-	public void SetGlassDamage(float modulePercentHealth, MaterialPropertyBlock glassMaterialPB) { }
+public void SetGlassDamage(float modulePercentHealth, MaterialPropertyBlock glassMaterialPB) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

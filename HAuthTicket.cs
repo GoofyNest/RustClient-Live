@@ -1,20 +1,21 @@
 internal struct HAuthTicket : IEquatable<HAuthTicket>, IComparable<HAuthTicket> // TypeDefIndex: 5521
-{	public uint Value; // 0x0
+{
+	public uint Value; 
 
 
-	public static HAuthTicket op_Implicit(uint value) { }
+public static HAuthTicket op_Implicit(uint value) { }
 
-	public static uint op_Implicit(HAuthTicket value) { }
+public static uint op_Implicit(HAuthTicket value) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override bool Equals(object p) { }
+public override bool Equals(object p) { }
 
-	public bool Equals(HAuthTicket p) { }
+public bool Equals(HAuthTicket p) { }
 
-	public int CompareTo(HAuthTicket other) { }
+public int CompareTo(HAuthTicket other) { }
 
 }
 

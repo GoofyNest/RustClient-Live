@@ -1,21 +1,22 @@
 public class ViewmodelLower : MonoBehaviour // TypeDefIndex: 11458
-{	public bool lowerOnSprint; // 0x18
-	public bool lowerWhenCantAttack; // 0x19
-	public float lowerScale; // 0x1C
-	private bool shouldLower; // 0x20
-	internal float rotateAngle; // 0x24
-	private BasePlayer updatePlayer; // 0x28
+{
+	public bool lowerOnSprint; 
+	public bool lowerWhenCantAttack; 
+	public float lowerScale; 
+	private bool shouldLower; 
+	internal float rotateAngle; 
+	private BasePlayer updatePlayer; 
 
 
-	public void SetShouldLower(bool shouldLower) { }
+public void SetShouldLower(bool shouldLower) { }
 
-	private void Update() { }
+private void Update() { }
 
-	private bool ShouldLower(BasePlayer player) { }
+private bool ShouldLower(BasePlayer player) { }
 
-	public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }
+public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

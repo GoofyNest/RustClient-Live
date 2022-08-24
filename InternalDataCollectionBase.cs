@@ -1,28 +1,29 @@
 public class InternalDataCollectionBase : ICollection, IEnumerable // TypeDefIndex: 4167
-{	internal static readonly CollectionChangeEventArgs s_refreshEventArgs; // 0x12730
+{
+	internal static readonly CollectionChangeEventArgs s_refreshEventArgs; 
 
-	[BrowsableAttribute] // RVA: 0x9A790 Offset: 0x99B90 VA: 0x18009A790
-	public virtual int Count { get; }
-	[BrowsableAttribute] // RVA: 0x9A790 Offset: 0x99B90 VA: 0x18009A790
-	public object SyncRoot { get; }
-	protected virtual ArrayList List { get; }
+	[BrowsableAttribute] 
+public virtual int Count { get; }
+	[BrowsableAttribute] 
+public object SyncRoot { get; }
+protected virtual ArrayList List { get; }
 
 
-	public virtual int get_Count() { }
+public virtual int get_Count() { }
 
-	public virtual void CopyTo(Array ar, int index) { }
+public virtual void CopyTo(Array ar, int index) { }
 
-	public virtual IEnumerator GetEnumerator() { }
+public virtual IEnumerator GetEnumerator() { }
 
-	internal int NamesEqual(string s1, string s2, bool fCaseSensitive, CultureInfo locale) { }
+internal int NamesEqual(string s1, string s2, bool fCaseSensitive, CultureInfo locale) { }
 
-	public object get_SyncRoot() { }
+public object get_SyncRoot() { }
 
-	protected virtual ArrayList get_List() { }
+protected virtual ArrayList get_List() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

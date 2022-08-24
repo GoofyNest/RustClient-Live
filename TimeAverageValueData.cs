@@ -1,14 +1,15 @@
 public struct TimeAverageValueData // TypeDefIndex: 6688
-{	private double refreshTime; // 0x0
-	private ulong counterPrev; // 0x8
-	private ulong counterNext; // 0x10
+{
+	private double refreshTime; 
+	private ulong counterPrev; 
+	private ulong counterNext; 
 
 
-	public ulong Calculate() { }
+public ulong Calculate() { }
 
-	public void Increment() { }
+public void Increment() { }
 
-	public void Reset() { }
+public void Reset() { }
 
 }
 

@@ -1,51 +1,52 @@
 public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7491
-{	private static readonly Dictionary<TimeSpanMode, Tuple<string, string>> ModeStrings; // 0x0
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private readonly ITimeSpan <TimeSpan1>k__BackingField; // 0x10
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private readonly ITimeSpan <TimeSpan2>k__BackingField; // 0x18
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private readonly MathOperation <Operation>k__BackingField; // 0x20
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private readonly TimeSpanMode <Mode>k__BackingField; // 0x24
+{
+	private static readonly Dictionary<TimeSpanMode, Tuple<string, string>> ModeStrings; 
+	[CompilerGeneratedAttribute] 
+	private readonly ITimeSpan <TimeSpan1>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private readonly ITimeSpan <TimeSpan2>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private readonly MathOperation <Operation>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private readonly TimeSpanMode <Mode>k__BackingField; 
 
-	public ITimeSpan TimeSpan1 { get; }
-	public ITimeSpan TimeSpan2 { get; }
-	public MathOperation Operation { get; }
-	public TimeSpanMode Mode { get; }
+public ITimeSpan TimeSpan1 { get; }
+public ITimeSpan TimeSpan2 { get; }
+public MathOperation Operation { get; }
+public TimeSpanMode Mode { get; }
 
 
-	internal void .ctor(ITimeSpan timeSpan1, ITimeSpan timeSpan2, MathOperation operation, TimeSpanMode mode) { }
+internal void .ctor(ITimeSpan timeSpan1, ITimeSpan timeSpan2, MathOperation operation, TimeSpanMode mode) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public ITimeSpan get_TimeSpan1() { }
+	[CompilerGeneratedAttribute] 
+public ITimeSpan get_TimeSpan1() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public ITimeSpan get_TimeSpan2() { }
+	[CompilerGeneratedAttribute] 
+public ITimeSpan get_TimeSpan2() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public MathOperation get_Operation() { }
+	[CompilerGeneratedAttribute] 
+public MathOperation get_Operation() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public TimeSpanMode get_Mode() { }
+	[CompilerGeneratedAttribute] 
+public TimeSpanMode get_Mode() { }
 
-	public static bool op_Equality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
+public static bool op_Equality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
 
-	public static bool op_Inequality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
+public static bool op_Inequality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	public override bool Equals(object obj) { }
+public override bool Equals(object obj) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
+public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
 
-	public ITimeSpan Clone() { }
+public ITimeSpan Clone() { }
 
-	public int CompareTo(object other) { }
+public int CompareTo(object other) { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

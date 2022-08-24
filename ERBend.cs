@@ -1,70 +1,71 @@
 public class ERBend : MonoBehaviour // TypeDefIndex: 7173
-{	public float roundAboutRadius; // 0x18
-	public float roundAboutResolution; // 0x1C
-	public float rDist; // 0x20
-	public Vector3 raStartPos; // 0x24
-	public float roundaboutWidth; // 0x30
-	public float bendAngle; // 0x34
-	public bool meshInstance; // 0x38
-	public float roadWidth; // 0x3C
-	public bool lockLeftRightRoundingRadius; // 0x40
-	public float leftRoundingRadius; // 0x44
-	public float rightRoundingRadius; // 0x48
-	public int roundingSegments; // 0x4C
-	public float connectionLength; // 0x50
-	public float maxRoadWidth; // 0x54
-	public float maxRoundingRadius; // 0x58
-	public List<Vector3> meshVecs; // 0x60
-	public List<Vector3> mainRightPoints; // 0x68
-	public List<Vector3> mainCenterPoints; // 0x70
-	public List<Vector3> mainLeftPoints; // 0x78
-	public List<Vector3> OCCDQOCCDQ; // 0x80
-	public List<Vector3> splinePoints; // 0x88
-	public List<Vector2> mainRightPointsUVs; // 0x90
-	public List<Vector2> mainCenterPointsUVs; // 0x98
-	public List<Vector2> mainLeftPointsUVs; // 0xA0
-	public List<Vector2> OCCDQOCCDQUVs; // 0xA8
-	public Vector3 leftPoint; // 0xB0
-	public Vector3 leftPoint1; // 0xBC
-	public Vector3 rightPoint; // 0xC8
-	public Vector3 rightPoint1; // 0xD4
-	public Vector3 centerOnLine; // 0xE0
-	public Vector3 leftOuterPoint; // 0xEC
-	public Vector3 rightOuterPoint; // 0xF8
-	public Vector3 pl; // 0x104
-	public Vector3 pr; // 0x110
-	public List<Vector3> edgePoints; // 0x120
-	public int newSegmentInt; // 0x128
-	public List<ERRoundaboutElement> connections; // 0x130
-	public string[] QDOOOQOOQQQQD; // 0x138
-	public int selectedConnection; // 0x140
-	public int tmpSelectedConnection; // 0x144
-	public int centerInt; // 0x148
-	public int leftOuterInt; // 0x14C
-	public int rightOuterInt; // 0x150
-	public List<Vector3> leftOuterSegments; // 0x158
-	public List<Vector3> leftInnerSegments; // 0x160
-	public List<Vector3> rightOuterSegments; // 0x168
-	public List<Vector3> rightInnerSegments; // 0x170
-	public List<Vector2> leftOuterSegmentsUVs; // 0x178
-	public List<Vector2> leftInnerSegmentsUVs; // 0x180
-	public List<Vector2> rightOuterSegmentsUVs; // 0x188
-	public List<Vector2> rightInnerSegmentsUVs; // 0x190
-	public Material roadMaterial; // 0x198
-	public List<Vector3> innerRoundaboutPoints; // 0x1A0
-	public List<Vector2> innerRoundaboutUVs; // 0x1A8
-	public float innerSegmentDistance; // 0x1B0
-	public bool leftFlag; // 0x1B4
-	public bool rightFlag; // 0x1B5
+{
+	public float roundAboutRadius; 
+	public float roundAboutResolution; 
+	public float rDist; 
+	public Vector3 raStartPos; 
+	public float roundaboutWidth; 
+	public float bendAngle; 
+	public bool meshInstance; 
+	public float roadWidth; 
+	public bool lockLeftRightRoundingRadius; 
+	public float leftRoundingRadius; 
+	public float rightRoundingRadius; 
+	public int roundingSegments; 
+	public float connectionLength; 
+	public float maxRoadWidth; 
+	public float maxRoundingRadius; 
+	public List<Vector3> meshVecs; 
+	public List<Vector3> mainRightPoints; 
+	public List<Vector3> mainCenterPoints; 
+	public List<Vector3> mainLeftPoints; 
+	public List<Vector3> OCCDQOCCDQ; 
+	public List<Vector3> splinePoints; 
+	public List<Vector2> mainRightPointsUVs; 
+	public List<Vector2> mainCenterPointsUVs; 
+	public List<Vector2> mainLeftPointsUVs; 
+	public List<Vector2> OCCDQOCCDQUVs; 
+	public Vector3 leftPoint; 
+	public Vector3 leftPoint1; 
+	public Vector3 rightPoint; 
+	public Vector3 rightPoint1; 
+	public Vector3 centerOnLine; 
+	public Vector3 leftOuterPoint; 
+	public Vector3 rightOuterPoint; 
+	public Vector3 pl; 
+	public Vector3 pr; 
+	public List<Vector3> edgePoints; 
+	public int newSegmentInt; 
+	public List<ERRoundaboutElement> connections; 
+	public string[] QDOOOQOOQQQQD; 
+	public int selectedConnection; 
+	public int tmpSelectedConnection; 
+	public int centerInt; 
+	public int leftOuterInt; 
+	public int rightOuterInt; 
+	public List<Vector3> leftOuterSegments; 
+	public List<Vector3> leftInnerSegments; 
+	public List<Vector3> rightOuterSegments; 
+	public List<Vector3> rightInnerSegments; 
+	public List<Vector2> leftOuterSegmentsUVs; 
+	public List<Vector2> leftInnerSegmentsUVs; 
+	public List<Vector2> rightOuterSegmentsUVs; 
+	public List<Vector2> rightInnerSegmentsUVs; 
+	public Material roadMaterial; 
+	public List<Vector3> innerRoundaboutPoints; 
+	public List<Vector2> innerRoundaboutUVs; 
+	public float innerSegmentDistance; 
+	public bool leftFlag; 
+	public bool rightFlag; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void OOCCCDQDCQ() { }
+public void OOCCCDQDCQ() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

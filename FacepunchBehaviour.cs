@@ -1,26 +1,27 @@
 public abstract class FacepunchBehaviour : MonoBehaviour // TypeDefIndex: 5564
 {
-internal class <Module> // TypeDefIndex: 5563
 
-public abstract class FacepunchBehaviour : MonoBehaviour // TypeDefIndex: 5564
+internal class <Module> 
 
-	public void Invoke(Action action, float time) { }
+public abstract class FacepunchBehaviour : MonoBehaviour 
 
-	public void InvokeRepeating(Action action, float time, float repeat) { }
+public void Invoke(Action action, float time) { }
 
-	public void InvokeRandomized(Action action, float time, float repeat, float random) { }
+public void InvokeRepeating(Action action, float time, float repeat) { }
 
-	public void CancelInvoke(Action action) { }
+public void InvokeRandomized(Action action, float time, float repeat, float random) { }
 
-	public bool IsInvoking(Action action) { }
+public void CancelInvoke(Action action) { }
 
-	public void InvokeRepeatingFixedTime(Action action) { }
+public bool IsInvoking(Action action) { }
 
-	public void CancelInvokeFixedTime(Action action) { }
+public void InvokeRepeatingFixedTime(Action action) { }
 
-	public bool IsInvokingFixedTime(Action action) { }
+public void CancelInvokeFixedTime(Action action) { }
 
-	protected void .ctor() { }
+public bool IsInvokingFixedTime(Action action) { }
+
+protected void .ctor() { }
 
 }
 

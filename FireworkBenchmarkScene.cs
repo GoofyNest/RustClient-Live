@@ -1,11 +1,12 @@
 public class FireworkBenchmarkScene : BenchmarkScene // TypeDefIndex: 8253
-{	public GameObjectRef[] shellTypes; // 0x40
-	public int fireworkCount; // 0x48
+{
+	public GameObjectRef[] shellTypes; 
+	public int fireworkCount; 
 
 
-	public override void StartBenchmark() { }
+public override void StartBenchmark() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,68 +1,69 @@
 public class BaseTrain : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6437
-{	public bool ShouldPool; // 0x10
-	private bool _disposed; // 0x11
-	public float time; // 0x14
-	public float frontBogieYRot; // 0x18
-	public float rearBogieYRot; // 0x1C
-	public uint frontCouplingID; // 0x20
-	public bool frontCouplingToFront; // 0x24
-	public uint rearCouplingID; // 0x28
-	public bool rearCouplingToFront; // 0x2C
-	public int lootTypeIndex; // 0x30
-	public float lootPercent; // 0x34
+{
+	public bool ShouldPool; 
+	private bool _disposed; 
+	public float time; 
+	public float frontBogieYRot; 
+	public float rearBogieYRot; 
+	public uint frontCouplingID; 
+	public bool frontCouplingToFront; 
+	public uint rearCouplingID; 
+	public bool rearCouplingToFront; 
+	public int lootTypeIndex; 
+	public float lootPercent; 
 
 
-	public static void ResetToPool(BaseTrain instance) { }
+public static void ResetToPool(BaseTrain instance) { }
 
-	public void ResetToPool() { }
+public void ResetToPool() { }
 
-	public virtual void Dispose() { }
+public virtual void Dispose() { }
 
-	public virtual void EnterPool() { }
+public virtual void EnterPool() { }
 
-	public virtual void LeavePool() { }
+public virtual void LeavePool() { }
 
-	public void CopyTo(BaseTrain instance) { }
+public void CopyTo(BaseTrain instance) { }
 
-	public BaseTrain Copy() { }
+public BaseTrain Copy() { }
 
-	public static BaseTrain Deserialize(Stream stream) { }
+public static BaseTrain Deserialize(Stream stream) { }
 
-	public static BaseTrain DeserializeLengthDelimited(Stream stream) { }
+public static BaseTrain DeserializeLengthDelimited(Stream stream) { }
 
-	public static BaseTrain DeserializeLength(Stream stream, int length) { }
+public static BaseTrain DeserializeLength(Stream stream, int length) { }
 
-	public static BaseTrain Deserialize(byte[] buffer) { }
+public static BaseTrain Deserialize(byte[] buffer) { }
 
-	public void FromProto(Stream stream, bool isDelta = False) { }
+public void FromProto(Stream stream, bool isDelta = False) { }
 
-	public virtual void WriteToStream(Stream stream) { }
+public virtual void WriteToStream(Stream stream) { }
 
-	public virtual void WriteToStreamDelta(Stream stream, BaseTrain previous) { }
+public virtual void WriteToStreamDelta(Stream stream, BaseTrain previous) { }
 
-	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-	public static BaseTrain Deserialize(byte[] buffer, BaseTrain instance, bool isDelta = False) { }
+public static BaseTrain Deserialize(byte[] buffer, BaseTrain instance, bool isDelta = False) { }
 
-	public static BaseTrain Deserialize(Stream stream, BaseTrain instance, bool isDelta) { }
+public static BaseTrain Deserialize(Stream stream, BaseTrain instance, bool isDelta) { }
 
-	public static BaseTrain DeserializeLengthDelimited(Stream stream, BaseTrain instance, bool isDelta) { }
+public static BaseTrain DeserializeLengthDelimited(Stream stream, BaseTrain instance, bool isDelta) { }
 
-	public static BaseTrain DeserializeLength(Stream stream, int length, BaseTrain instance, bool isDelta) { }
+public static BaseTrain DeserializeLength(Stream stream, int length, BaseTrain instance, bool isDelta) { }
 
-	public static void SerializeDelta(Stream stream, BaseTrain instance, BaseTrain previous) { }
+public static void SerializeDelta(Stream stream, BaseTrain instance, BaseTrain previous) { }
 
-	public static void Serialize(Stream stream, BaseTrain instance) { }
+public static void Serialize(Stream stream, BaseTrain instance) { }
 
-	public byte[] ToProtoBytes() { }
+public byte[] ToProtoBytes() { }
 
-	public void ToProto(Stream stream) { }
+public void ToProto(Stream stream) { }
 
-	public static byte[] SerializeToBytes(BaseTrain instance) { }
+public static byte[] SerializeToBytes(BaseTrain instance) { }
 
-	public static void SerializeLengthDelimited(Stream stream, BaseTrain instance) { }
+public static void SerializeLengthDelimited(Stream stream, BaseTrain instance) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

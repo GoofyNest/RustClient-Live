@@ -1,52 +1,54 @@
 public class WaterOverlay : MonoBehaviour, IClientComponent // TypeDefIndex: 9137
-{	public PostProcessVolume postProcessVolume; // 0x18
-	public WaterOverlay.EffectParams adminParams; // 0x20
-	public WaterOverlay.EffectParams gogglesParams; // 0x40
-	public WaterOverlay.EffectParams submarineParams; // 0x60
-	public WaterOverlay.EffectParams underwaterLabParams; // 0x80
-	public Material[] UnderwaterFogMaterials; // 0xA0
-	private WaterOverlay.EffectParams startParams; // 0xA8
-	private BlurOptimized blur; // 0xC8
-	private Wiggle wiggle; // 0xD0
-	private ChromaticAberration chromaticAberration; // 0xD8
-	private GodRays godRays; // 0xE0
+{
+	public PostProcessVolume postProcessVolume; 
+	public WaterOverlay.EffectParams adminParams; 
+	public WaterOverlay.EffectParams gogglesParams; 
+	public WaterOverlay.EffectParams submarineParams; 
+	public WaterOverlay.EffectParams underwaterLabParams; 
+	public Material[] UnderwaterFogMaterials; 
+	private WaterOverlay.EffectParams startParams; 
+	private BlurOptimized blur; 
+	private Wiggle wiggle; 
+	private ChromaticAberration chromaticAberration; 
+	private GodRays godRays; 
 
 
-	protected void Awake() { }
+protected void Awake() { }
 
-	protected void OnDestroy() { }
+protected void OnDestroy() { }
 
-	private WaterOverlay.EffectParams GetEffectParams() { }
+private WaterOverlay.EffectParams GetEffectParams() { }
 
-	private void SetEffectParams(WaterOverlay.EffectParams param) { }
+private void SetEffectParams(WaterOverlay.EffectParams param) { }
 
-	private void SetUnderwaterFogMaterials(bool fog) { }
+private void SetUnderwaterFogMaterials(bool fog) { }
 
-	private void UpdateEffectState() { }
+private void UpdateEffectState() { }
 
-	protected void Update() { }
+protected void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public struct WaterOverlay.EffectParams // TypeDefIndex: 9138
-{	public float scatterCoefficient; // 0x0
-	public bool blur; // 0x4
-	public float blurDistance; // 0x8
-	public float blurSize; // 0xC
-	public int blurIterations; // 0x10
-	public bool wiggle; // 0x14
-	public float wiggleSpeed; // 0x18
-	public bool chromaticAberration; // 0x1C
-	public bool godRays; // 0x1D
-	public static WaterOverlay.EffectParams DefaultAdmin; // 0x0
-	public static WaterOverlay.EffectParams DefaultGoggles; // 0x20
-	public static WaterOverlay.EffectParams DefaultSubmarine; // 0x40
-	public static WaterOverlay.EffectParams DefaultUnderwaterLab; // 0x60
+{
+	public float scatterCoefficient; 
+	public bool blur; 
+	public float blurDistance; 
+	public float blurSize; 
+	public int blurIterations; 
+	public bool wiggle; 
+	public float wiggleSpeed; 
+	public bool chromaticAberration; 
+	public bool godRays; 
+	public static WaterOverlay.EffectParams DefaultAdmin; 
+	public static WaterOverlay.EffectParams DefaultGoggles; 
+	public static WaterOverlay.EffectParams DefaultSubmarine; 
+	public static WaterOverlay.EffectParams DefaultUnderwaterLab; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

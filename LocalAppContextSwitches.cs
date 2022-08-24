@@ -1,11 +1,13 @@
 internal static class LocalAppContextSwitches // TypeDefIndex: 1811
-{	public static readonly bool IgnoreEmptyKeySequences; // 0x0
-	public static readonly bool DontThrowOnInvalidSurrogatePairs; // 0x1
+{
+	public static readonly bool IgnoreEmptyKeySequences; 
+	public static readonly bool DontThrowOnInvalidSurrogatePairs; 
 
 }
 
 internal static class LocalAppContextSwitches // TypeDefIndex: 2591
-{	public static readonly bool MemberDescriptorEqualsReturnsFalseIfEquivalent; // 0x2B0AA98
+{
+	public static readonly bool MemberDescriptorEqualsReturnsFalseIfEquivalent; 
 
 }
 

@@ -1,20 +1,21 @@
 internal class CreaseShading : PostEffectsBase // TypeDefIndex: 8176
-{	public float intensity; // 0x28
-	public int softness; // 0x2C
-	public float spread; // 0x30
-	public Shader blurShader; // 0x38
-	private Material blurMaterial; // 0x40
-	public Shader depthFetchShader; // 0x48
-	private Material depthFetchMaterial; // 0x50
-	public Shader creaseApplyShader; // 0x58
-	private Material creaseApplyMaterial; // 0x60
+{
+	public float intensity; 
+	public int softness; 
+	public float spread; 
+	public Shader blurShader; 
+	private Material blurMaterial; 
+	public Shader depthFetchShader; 
+	private Material depthFetchMaterial; 
+	public Shader creaseApplyShader; 
+	private Material creaseApplyMaterial; 
 
 
-	public override bool CheckResources() { }
+public override bool CheckResources() { }
 
-	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

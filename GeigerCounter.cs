@@ -1,12 +1,13 @@
 public class GeigerCounter : AttackEntity // TypeDefIndex: 9464
-{	public Transform geigerRod; // 0x280
-	private BasePlayer playerCache; // 0x288
-	private Transform attachmentBoneCache; // 0x290
+{
+	public Transform geigerRod; 
+	private BasePlayer playerCache; 
+	private Transform attachmentBoneCache; 
 
 
-	private void LateUpdate() { }
+private void LateUpdate() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

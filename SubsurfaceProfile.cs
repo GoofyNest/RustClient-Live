@@ -1,25 +1,26 @@
 public class SubsurfaceProfile : ScriptableObject // TypeDefIndex: 10662
-{	private static SubsurfaceProfileTexture profileTexture; // 0x0
-	public SubsurfaceProfileData Data; // 0x18
-	private int id; // 0x3C
+{
+	private static SubsurfaceProfileTexture profileTexture; 
+	public SubsurfaceProfileData Data; 
+	private int id; 
 
-	public static Texture2D Texture { get; }
-	public int Id { get; }
+public static Texture2D Texture { get; }
+public int Id { get; }
 
 
-	public static Texture2D get_Texture() { }
+public static Texture2D get_Texture() { }
 
-	public int get_Id() { }
+public int get_Id() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnDisable() { }
+private void OnDisable() { }
 
-	public void Update() { }
+public void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

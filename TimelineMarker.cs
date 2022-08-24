@@ -1,31 +1,32 @@
 public class TimelineMarker : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7042
-{	public int CurrentPosition; // 0x30
-	public Image Background; // 0x38
-	private Timeline Parent; // 0x40
-	private bool hasDragged; // 0x48
+{
+	public int CurrentPosition; 
+	public Image Background; 
+	private Timeline Parent; 
+	private bool hasDragged; 
 
-	public override bool IsPressed { get; }
+public override bool IsPressed { get; }
 
 
-	public void OnPointerDown(PointerEventData eventData) { }
+public void OnPointerDown(PointerEventData eventData) { }
 
-	public void OnPointerUp(PointerEventData eventData) { }
+public void OnPointerUp(PointerEventData eventData) { }
 
-	public virtual void SelectMarker() { }
+public virtual void SelectMarker() { }
 
-	public void OnDrag(PointerEventData eventData) { }
+public void OnDrag(PointerEventData eventData) { }
 
-	public override bool get_IsPressed() { }
+public override bool get_IsPressed() { }
 
-	internal void Position(Timeline timeline) { }
+internal void Position(Timeline timeline) { }
 
-	protected override void ApplyStyle(StyleAsset.Group s) { }
+protected override void ApplyStyle(StyleAsset.Group s) { }
 
-	public virtual void SetTime(int time) { }
+public virtual void SetTime(int time) { }
 
-	public void Delete() { }
+public void Delete() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,17 +1,18 @@
 public class LootPanelRecycler : LootPanel // TypeDefIndex: 11036
-{	public GameObject controlsOn; // 0x38
-	public GameObject controlsOff; // 0x40
+{
+	public GameObject controlsOn; 
+	public GameObject controlsOff; 
 
 
-	public override void Update() { }
+public override void Update() { }
 
-	public Recycler GetRecycler() { }
+public Recycler GetRecycler() { }
 
-	public bool IsOn() { }
+public bool IsOn() { }
 
-	public void Switch(bool onOff) { }
+public void Switch(bool onOff) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

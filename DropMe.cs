@@ -1,16 +1,17 @@
 public class DropMe : MonoBehaviour, IDropHandler, IEventSystemHandler // TypeDefIndex: 11270
-{	public string[] droppableTypes; // 0x18
+{
+	public string[] droppableTypes; 
 
 
-	public bool Accepts(DragMe drag) { }
+public bool Accepts(DragMe drag) { }
 
-	public void StopHighlight() { }
+public void StopHighlight() { }
 
-	public void StartHighlight() { }
+public void StartHighlight() { }
 
-	public virtual void OnDrop(PointerEventData eventData) { }
+public virtual void OnDrop(PointerEventData eventData) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

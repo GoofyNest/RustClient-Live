@@ -1,70 +1,72 @@
 public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6498
-{	public bool ShouldPool; // 0x10
-	private bool _disposed; // 0x11
-	public WorldMessage.MessageType status; // 0x14
-	public List<PrefabData> prefabs; // 0x18
-	public List<PathData> paths; // 0x20
+{
+	public bool ShouldPool; 
+	private bool _disposed; 
+	public WorldMessage.MessageType status; 
+	public List<PrefabData> prefabs; 
+	public List<PathData> paths; 
 
 
-	public static void ResetToPool(WorldMessage instance) { }
+public static void ResetToPool(WorldMessage instance) { }
 
-	public void ResetToPool() { }
+public void ResetToPool() { }
 
-	public virtual void Dispose() { }
+public virtual void Dispose() { }
 
-	public virtual void EnterPool() { }
+public virtual void EnterPool() { }
 
-	public virtual void LeavePool() { }
+public virtual void LeavePool() { }
 
-	public void CopyTo(WorldMessage instance) { }
+public void CopyTo(WorldMessage instance) { }
 
-	public WorldMessage Copy() { }
+public WorldMessage Copy() { }
 
-	public static WorldMessage Deserialize(Stream stream) { }
+public static WorldMessage Deserialize(Stream stream) { }
 
-	public static WorldMessage DeserializeLengthDelimited(Stream stream) { }
+public static WorldMessage DeserializeLengthDelimited(Stream stream) { }
 
-	public static WorldMessage DeserializeLength(Stream stream, int length) { }
+public static WorldMessage DeserializeLength(Stream stream, int length) { }
 
-	public static WorldMessage Deserialize(byte[] buffer) { }
+public static WorldMessage Deserialize(byte[] buffer) { }
 
-	public void FromProto(Stream stream, bool isDelta = False) { }
+public void FromProto(Stream stream, bool isDelta = False) { }
 
-	public virtual void WriteToStream(Stream stream) { }
+public virtual void WriteToStream(Stream stream) { }
 
-	public virtual void WriteToStreamDelta(Stream stream, WorldMessage previous) { }
+public virtual void WriteToStreamDelta(Stream stream, WorldMessage previous) { }
 
-	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-	public static WorldMessage Deserialize(byte[] buffer, WorldMessage instance, bool isDelta = False) { }
+public static WorldMessage Deserialize(byte[] buffer, WorldMessage instance, bool isDelta = False) { }
 
-	public static WorldMessage Deserialize(Stream stream, WorldMessage instance, bool isDelta) { }
+public static WorldMessage Deserialize(Stream stream, WorldMessage instance, bool isDelta) { }
 
-	public static WorldMessage DeserializeLengthDelimited(Stream stream, WorldMessage instance, bool isDelta) { }
+public static WorldMessage DeserializeLengthDelimited(Stream stream, WorldMessage instance, bool isDelta) { }
 
-	public static WorldMessage DeserializeLength(Stream stream, int length, WorldMessage instance, bool isDelta) { }
+public static WorldMessage DeserializeLength(Stream stream, int length, WorldMessage instance, bool isDelta) { }
 
-	public static void SerializeDelta(Stream stream, WorldMessage instance, WorldMessage previous) { }
+public static void SerializeDelta(Stream stream, WorldMessage instance, WorldMessage previous) { }
 
-	public static void Serialize(Stream stream, WorldMessage instance) { }
+public static void Serialize(Stream stream, WorldMessage instance) { }
 
-	public byte[] ToProtoBytes() { }
+public byte[] ToProtoBytes() { }
 
-	public void ToProto(Stream stream) { }
+public void ToProto(Stream stream) { }
 
-	public static byte[] SerializeToBytes(WorldMessage instance) { }
+public static byte[] SerializeToBytes(WorldMessage instance) { }
 
-	public static void SerializeLengthDelimited(Stream stream, WorldMessage instance) { }
+public static void SerializeLengthDelimited(Stream stream, WorldMessage instance) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public enum WorldMessage.MessageType // TypeDefIndex: 6499
-{	public int value__; // 0x0
-	public const WorldMessage.MessageType Request = 1;
-	public const WorldMessage.MessageType Receive = 2;
-	public const WorldMessage.MessageType Done = 3;
+{
+	public int value__; 
+public const WorldMessage.MessageType Request = 1;
+public const WorldMessage.MessageType Receive = 2;
+public const WorldMessage.MessageType Done = 3;
 
 }
 

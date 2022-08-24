@@ -1,18 +1,19 @@
 public abstract class DSA : AsymmetricAlgorithm // TypeDefIndex: 956
 {
-	protected void .ctor() { }
 
-	public static DSA Create() { }
+protected void .ctor() { }
 
-	public abstract bool VerifySignature(byte[] rgbHash, byte[] rgbSignature);
+public static DSA Create() { }
 
-	public override void FromXmlString(string xmlString) { }
+public abstract bool VerifySignature(byte[] rgbHash, byte[] rgbSignature);
 
-	public override string ToXmlString(bool includePrivateParameters) { }
+public override void FromXmlString(string xmlString) { }
 
-	public abstract DSAParameters ExportParameters(bool includePrivateParameters);
+public override string ToXmlString(bool includePrivateParameters) { }
 
-	public abstract void ImportParameters(DSAParameters parameters);
+public abstract DSAParameters ExportParameters(bool includePrivateParameters);
+
+public abstract void ImportParameters(DSAParameters parameters);
 
 }
 

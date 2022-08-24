@@ -1,10 +1,11 @@
 public static class HierarchyUtil // TypeDefIndex: 11381
-{	public static Dictionary<string, GameObject> rootDict; // 0x1F2BF
+{
+	public static Dictionary<string, GameObject> rootDict; 
 
 
-	public static GameObject GetRoot(string strName, bool groupActive = True, bool persistant = False) { }
+public static GameObject GetRoot(string strName, bool groupActive = True, bool persistant = False) { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

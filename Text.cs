@@ -1,138 +1,139 @@
 public class Text : MaskableGraphic, ILayoutElement // TypeDefIndex: 5014
-{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private FontData m_FontData; // 0xC8
-	[TextAreaAttribute] // RVA: 0x7D8B0 Offset: 0x7CCB0 VA: 0x18007D8B0
-	[SerializeField] // RVA: 0x7D8B0 Offset: 0x7CCB0 VA: 0x18007D8B0
-	protected string m_Text; // 0xD0
-	private TextGenerator m_TextCache; // 0xD8
-	private TextGenerator m_TextCacheForLayout; // 0xE0
-	protected static Material s_DefaultText; // 0x0
-	protected bool m_DisableFontTextureRebuiltCallback; // 0xE8
-	private readonly UIVertex[] m_TempVerts; // 0xF0
+{
+	[SerializeField] 
+	private FontData m_FontData; 
+	[TextAreaAttribute] 
+	[SerializeField] 
+	protected string m_Text; 
+	private TextGenerator m_TextCache; 
+	private TextGenerator m_TextCacheForLayout; 
+	protected static Material s_DefaultText; 
+	protected bool m_DisableFontTextureRebuiltCallback; 
+	private readonly UIVertex[] m_TempVerts; 
 
-	public TextGenerator cachedTextGenerator { get; }
-	public TextGenerator cachedTextGeneratorForLayout { get; }
-	public override Texture mainTexture { get; }
-	public Font font { get; set; }
-	public virtual string text { get; set; }
-	public bool supportRichText { get; set; }
-	public bool resizeTextForBestFit { get; set; }
-	public int resizeTextMinSize { get; set; }
-	public int resizeTextMaxSize { get; set; }
-	public TextAnchor alignment { get; set; }
-	public bool alignByGeometry { get; set; }
-	public int fontSize { get; set; }
-	public HorizontalWrapMode horizontalOverflow { get; set; }
-	public VerticalWrapMode verticalOverflow { get; set; }
-	public float lineSpacing { get; set; }
-	public FontStyle fontStyle { get; set; }
-	public float pixelsPerUnit { get; }
-	public virtual float minWidth { get; }
-	public virtual float preferredWidth { get; }
-	public virtual float flexibleWidth { get; }
-	public virtual float minHeight { get; }
-	public virtual float preferredHeight { get; }
-	public virtual float flexibleHeight { get; }
-	public virtual int layoutPriority { get; }
+public TextGenerator cachedTextGenerator { get; }
+public TextGenerator cachedTextGeneratorForLayout { get; }
+public override Texture mainTexture { get; }
+public Font font { get; set; }
+public virtual string text { get; set; }
+public bool supportRichText { get; set; }
+public bool resizeTextForBestFit { get; set; }
+public int resizeTextMinSize { get; set; }
+public int resizeTextMaxSize { get; set; }
+public TextAnchor alignment { get; set; }
+public bool alignByGeometry { get; set; }
+public int fontSize { get; set; }
+public HorizontalWrapMode horizontalOverflow { get; set; }
+public VerticalWrapMode verticalOverflow { get; set; }
+public float lineSpacing { get; set; }
+public FontStyle fontStyle { get; set; }
+public float pixelsPerUnit { get; }
+public virtual float minWidth { get; }
+public virtual float preferredWidth { get; }
+public virtual float flexibleWidth { get; }
+public virtual float minHeight { get; }
+public virtual float preferredHeight { get; }
+public virtual float flexibleHeight { get; }
+public virtual int layoutPriority { get; }
 
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
-	public TextGenerator get_cachedTextGenerator() { }
+public TextGenerator get_cachedTextGenerator() { }
 
-	public TextGenerator get_cachedTextGeneratorForLayout() { }
+public TextGenerator get_cachedTextGeneratorForLayout() { }
 
-	public override Texture get_mainTexture() { }
+public override Texture get_mainTexture() { }
 
-	public void FontTextureChanged() { }
+public void FontTextureChanged() { }
 
-	public Font get_font() { }
+public Font get_font() { }
 
-	public void set_font(Font value) { }
+public void set_font(Font value) { }
 
-	public virtual string get_text() { }
+public virtual string get_text() { }
 
-	public virtual void set_text(string value) { }
+public virtual void set_text(string value) { }
 
-	public bool get_supportRichText() { }
+public bool get_supportRichText() { }
 
-	public void set_supportRichText(bool value) { }
+public void set_supportRichText(bool value) { }
 
-	public bool get_resizeTextForBestFit() { }
+public bool get_resizeTextForBestFit() { }
 
-	public void set_resizeTextForBestFit(bool value) { }
+public void set_resizeTextForBestFit(bool value) { }
 
-	public int get_resizeTextMinSize() { }
+public int get_resizeTextMinSize() { }
 
-	public void set_resizeTextMinSize(int value) { }
+public void set_resizeTextMinSize(int value) { }
 
-	public int get_resizeTextMaxSize() { }
+public int get_resizeTextMaxSize() { }
 
-	public void set_resizeTextMaxSize(int value) { }
+public void set_resizeTextMaxSize(int value) { }
 
-	public TextAnchor get_alignment() { }
+public TextAnchor get_alignment() { }
 
-	public void set_alignment(TextAnchor value) { }
+public void set_alignment(TextAnchor value) { }
 
-	public bool get_alignByGeometry() { }
+public bool get_alignByGeometry() { }
 
-	public void set_alignByGeometry(bool value) { }
+public void set_alignByGeometry(bool value) { }
 
-	public int get_fontSize() { }
+public int get_fontSize() { }
 
-	public void set_fontSize(int value) { }
+public void set_fontSize(int value) { }
 
-	public HorizontalWrapMode get_horizontalOverflow() { }
+public HorizontalWrapMode get_horizontalOverflow() { }
 
-	public void set_horizontalOverflow(HorizontalWrapMode value) { }
+public void set_horizontalOverflow(HorizontalWrapMode value) { }
 
-	public VerticalWrapMode get_verticalOverflow() { }
+public VerticalWrapMode get_verticalOverflow() { }
 
-	public void set_verticalOverflow(VerticalWrapMode value) { }
+public void set_verticalOverflow(VerticalWrapMode value) { }
 
-	public float get_lineSpacing() { }
+public float get_lineSpacing() { }
 
-	public void set_lineSpacing(float value) { }
+public void set_lineSpacing(float value) { }
 
-	public FontStyle get_fontStyle() { }
+public FontStyle get_fontStyle() { }
 
-	public void set_fontStyle(FontStyle value) { }
+public void set_fontStyle(FontStyle value) { }
 
-	public float get_pixelsPerUnit() { }
+public float get_pixelsPerUnit() { }
 
-	protected override void OnEnable() { }
+protected override void OnEnable() { }
 
-	protected override void OnDisable() { }
+protected override void OnDisable() { }
 
-	protected override void UpdateGeometry() { }
+protected override void UpdateGeometry() { }
 
-	internal void AssignDefaultFont() { }
+internal void AssignDefaultFont() { }
 
-	public TextGenerationSettings GetGenerationSettings(Vector2 extents) { }
+public TextGenerationSettings GetGenerationSettings(Vector2 extents) { }
 
-	public static Vector2 GetTextAnchorPivot(TextAnchor anchor) { }
+public static Vector2 GetTextAnchorPivot(TextAnchor anchor) { }
 
-	protected override void OnPopulateMesh(VertexHelper toFill) { }
+protected override void OnPopulateMesh(VertexHelper toFill) { }
 
-	public virtual void CalculateLayoutInputHorizontal() { }
+public virtual void CalculateLayoutInputHorizontal() { }
 
-	public virtual void CalculateLayoutInputVertical() { }
+public virtual void CalculateLayoutInputVertical() { }
 
-	public virtual float get_minWidth() { }
+public virtual float get_minWidth() { }
 
-	public virtual float get_preferredWidth() { }
+public virtual float get_preferredWidth() { }
 
-	public virtual float get_flexibleWidth() { }
+public virtual float get_flexibleWidth() { }
 
-	public virtual float get_minHeight() { }
+public virtual float get_minHeight() { }
 
-	public virtual float get_preferredHeight() { }
+public virtual float get_preferredHeight() { }
 
-	public virtual float get_flexibleHeight() { }
+public virtual float get_flexibleHeight() { }
 
-	public virtual int get_layoutPriority() { }
+public virtual int get_layoutPriority() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

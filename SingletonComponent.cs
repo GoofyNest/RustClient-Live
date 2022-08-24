@@ -1,16 +1,17 @@
 public abstract class SingletonComponent : FacepunchBehaviour // TypeDefIndex: 5594
 {
-	public abstract void SingletonSetup();
 
-	public abstract void SingletonClear();
+public abstract void SingletonSetup();
 
-	protected virtual void Awake() { }
+public abstract void SingletonClear();
 
-	protected virtual void OnDestroy() { }
+protected virtual void Awake() { }
 
-	public static void InitializeSingletons(GameObject go) { }
+protected virtual void OnDestroy() { }
 
-	protected void .ctor() { }
+public static void InitializeSingletons(GameObject go) { }
+
+protected void .ctor() { }
 
 }
 

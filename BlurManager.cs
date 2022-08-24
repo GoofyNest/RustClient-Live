@@ -1,15 +1,16 @@
 public class BlurManager : MonoBehaviour // TypeDefIndex: 10826
-{	public PostProcessVolume postProcessVolume; // 0x18
-	private float blurAmount; // 0x20
+{
+	public PostProcessVolume postProcessVolume; 
+	private float blurAmount; 
 
 
-	public void Awake() { }
+public void Awake() { }
 
-	private void Update() { }
+private void Update() { }
 
-	private float GetBlurArmount() { }
+private float GetBlurArmount() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

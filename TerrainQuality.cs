@@ -1,22 +1,23 @@
 public class TerrainQuality : TerrainExtension // TypeDefIndex: 10430
-{	internal float HeightMapError; // 0x30
-	internal float BaseMapDistance; // 0x34
-	internal int TerrainShaderLod; // 0x38
-	private ConsoleSystem.Command terrain_quality; // 0x40
-	private ConsoleSystem.Command graphics_shaderlod; // 0x48
+{
+	internal float HeightMapError; 
+	internal float BaseMapDistance; 
+	internal int TerrainShaderLod; 
+	private ConsoleSystem.Command terrain_quality; 
+	private ConsoleSystem.Command graphics_shaderlod; 
 
 
-	public override void Setup() { }
+public override void Setup() { }
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	protected void OnDisable() { }
+protected void OnDisable() { }
 
-	private void FindCommand() { }
+private void FindCommand() { }
 
-	private void TerrainQuality_OnValueChanged(ConsoleSystem.Command obj) { }
+private void TerrainQuality_OnValueChanged(ConsoleSystem.Command obj) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

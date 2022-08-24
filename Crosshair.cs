@@ -1,41 +1,42 @@
 public class Crosshair : BaseMonoBehaviour // TypeDefIndex: 10843
-{	public static bool Enabled; // 0x0
-	public Image Image; // 0x18
-	public RectTransform reticleTransform; // 0x20
-	public CanvasGroup reticleAlpha; // 0x28
-	public RectTransform hitNotifyMarker; // 0x30
-	public CanvasGroup hitNotifyAlpha; // 0x38
-	public static Crosshair instance; // 0x8
-	public static float lastHitTime; // 0x10
-	public float crosshairAlpha; // 0x40
-	internal RectTransform rectTransform; // 0x48
-	public float aimconeMultiplier; // 0x50
-	public float aimconeLerpSpeed; // 0x54
-	private Vector2 hitNotifyStartSize; // 0x58
-	private Vector2 originalReticleSize; // 0x60
-	public GameObjectRef pointsSplashEffect; // 0x68
-	internal int activePoints; // 0x70
+{
+	public static bool Enabled; 
+	public Image Image; 
+	public RectTransform reticleTransform; 
+	public CanvasGroup reticleAlpha; 
+	public RectTransform hitNotifyMarker; 
+	public CanvasGroup hitNotifyAlpha; 
+	public static Crosshair instance; 
+	public static float lastHitTime; 
+	public float crosshairAlpha; 
+	internal RectTransform rectTransform; 
+	public float aimconeMultiplier; 
+	public float aimconeLerpSpeed; 
+	private Vector2 hitNotifyStartSize; 
+	private Vector2 originalReticleSize; 
+	public GameObjectRef pointsSplashEffect; 
+	internal int activePoints; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	private void FixedUpdate() { }
+private void FixedUpdate() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void PointsEffect() { }
+public void PointsEffect() { }
 
-	public void DoPointsSplash(int amount) { }
+public void DoPointsSplash(int amount) { }
 
-	private void ClearPoints() { }
+private void ClearPoints() { }
 
-	public static void OnHit(bool wasKillShot = False) { }
+public static void OnHit(bool wasKillShot = False) { }
 
-	private bool ShouldShowCrosshair() { }
+private bool ShouldShowCrosshair() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

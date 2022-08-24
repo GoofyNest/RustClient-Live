@@ -1,22 +1,24 @@
 public class BatchRendererGroup // TypeDefIndex: 3846
-{	private IntPtr m_GroupHandle; // 0x10
-	private BatchRendererGroup.OnPerformCulling m_PerformCulling; // 0x18
+{
+	private IntPtr m_GroupHandle; 
+	private BatchRendererGroup.OnPerformCulling m_PerformCulling; 
 
 
-	[RequiredByNativeCodeAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private static void InvokeOnPerformCulling(BatchRendererGroup group, ref BatchRendererCullingOutput context, ref LODParameters lodParameters) { }
+	[RequiredByNativeCodeAttribute] 
+private static void InvokeOnPerformCulling(BatchRendererGroup group, ref BatchRendererCullingOutput context, ref LODParameters lodParameters) { }
 
 }
 
 public sealed class BatchRendererGroup.OnPerformCulling : MulticastDelegate // TypeDefIndex: 3847
 {
-	public void .ctor(object object, IntPtr method) { }
 
-	public virtual JobHandle Invoke(BatchRendererGroup rendererGroup, BatchCullingContext cullingContext) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(BatchRendererGroup rendererGroup, BatchCullingContext cullingContext, AsyncCallback callback, object object) { }
+public virtual JobHandle Invoke(BatchRendererGroup rendererGroup, BatchCullingContext cullingContext) { }
 
-	public virtual JobHandle EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(BatchRendererGroup rendererGroup, BatchCullingContext cullingContext, AsyncCallback callback, object object) { }
+
+public virtual JobHandle EndInvoke(IAsyncResult result) { }
 
 }
 

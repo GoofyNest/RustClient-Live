@@ -1,12 +1,13 @@
 public class DisableWithMainMenu : MonoBehaviour // TypeDefIndex: 11104
 {
-	private void OnEnable() { }
 
-	private void OnDisable() { }
+private void OnEnable() { }
 
-	private void OnMainMenuOpenStateChanged() { }
+private void OnDisable() { }
 
-	public void .ctor() { }
+private void OnMainMenuOpenStateChanged() { }
+
+public void .ctor() { }
 
 }
 

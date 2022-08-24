@@ -1,10 +1,11 @@
 public class ParticleSystemPlayer : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 11325
 {
-	protected void OnEnable() { }
 
-	public void OnParentDestroying() { }
+protected void OnEnable() { }
 
-	public void .ctor() { }
+public void OnParentDestroying() { }
+
+public void .ctor() { }
 
 }
 

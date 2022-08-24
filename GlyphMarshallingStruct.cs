@@ -1,12 +1,13 @@
 internal struct GlyphMarshallingStruct // TypeDefIndex: 4122
-{	public uint index; // 0x0
-	public GlyphMetrics metrics; // 0x4
-	public GlyphRect glyphRect; // 0x18
-	public float scale; // 0x28
-	public int atlasIndex; // 0x2C
+{
+	public uint index; 
+	public GlyphMetrics metrics; 
+	public GlyphRect glyphRect; 
+	public float scale; 
+	public int atlasIndex; 
 
 
-	public void .ctor(Glyph glyph) { }
+public void .ctor(Glyph glyph) { }
 
 }
 

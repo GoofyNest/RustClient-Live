@@ -1,10 +1,11 @@
 public class NavmeshPrefabInstantiator : MonoBehaviour // TypeDefIndex: 12131
-{	public GameObjectRef NavmeshPrefab; // 0x18
+{
+	public GameObjectRef NavmeshPrefab; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

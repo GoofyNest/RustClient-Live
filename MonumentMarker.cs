@@ -1,16 +1,17 @@
 public class MonumentMarker : MonoBehaviour // TypeDefIndex: 10957
-{	public Text text; // 0x18
-	public Image imageBackground; // 0x20
-	public Image image; // 0x28
-	public Color dayColor; // 0x30
-	public Color nightColor; // 0x40
+{
+	public Text text; 
+	public Image imageBackground; 
+	public Image image; 
+	public Color dayColor; 
+	public Color nightColor; 
 
 
-	public void Setup(LandmarkInfo info) { }
+public void Setup(LandmarkInfo info) { }
 
-	public void SetNightMode(bool nightMode) { }
+public void SetNightMode(bool nightMode) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

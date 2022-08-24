@@ -1,15 +1,16 @@
 public sealed class X509EnhancedKeyUsageExtension : X509Extension // TypeDefIndex: 2830
-{	private OidCollection _enhKeyUsage; // 0x28
-	private AsnDecodeStatus _status; // 0x30
+{
+	private OidCollection _enhKeyUsage; 
+	private AsnDecodeStatus _status; 
 
 
-	public void .ctor(AsnEncodedData encodedEnhancedKeyUsages, bool critical) { }
+public void .ctor(AsnEncodedData encodedEnhancedKeyUsages, bool critical) { }
 
-	public override void CopyFrom(AsnEncodedData asnEncodedData) { }
+public override void CopyFrom(AsnEncodedData asnEncodedData) { }
 
-	internal AsnDecodeStatus Decode(byte[] extension) { }
+internal AsnDecodeStatus Decode(byte[] extension) { }
 
-	internal override string ToString(bool multiLine) { }
+internal override string ToString(bool multiLine) { }
 
 }
 

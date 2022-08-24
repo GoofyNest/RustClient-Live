@@ -1,10 +1,11 @@
 public sealed class PointerLeaveEvent : PointerEventBase<PointerLeaveEvent> // TypeDefIndex: 4697
 {
-	protected override void Init() { }
 
-	private void LocalInit() { }
+protected override void Init() { }
 
-	public void .ctor() { }
+private void LocalInit() { }
+
+public void .ctor() { }
 
 }
 

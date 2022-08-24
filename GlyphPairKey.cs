@@ -1,12 +1,13 @@
 public struct GlyphPairKey // TypeDefIndex: 6782
-{	public uint firstGlyphIndex; // 0x0
-	public uint secondGlyphIndex; // 0x4
-	public long key; // 0x8
+{
+	public uint firstGlyphIndex; 
+	public uint secondGlyphIndex; 
+	public long key; 
 
 
-	public void .ctor(uint firstGlyphIndex, uint secondGlyphIndex) { }
+public void .ctor(uint firstGlyphIndex, uint secondGlyphIndex) { }
 
-	internal void .ctor(TMP_GlyphPairAdjustmentRecord record) { }
+internal void .ctor(TMP_GlyphPairAdjustmentRecord record) { }
 
 }
 

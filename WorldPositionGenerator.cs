@@ -1,10 +1,11 @@
 public class WorldPositionGenerator : ScriptableObject // TypeDefIndex: 10225
-{	public SpawnFilter Filter; // 0x18
-	public float FilterCutoff; // 0x20
-	public bool aboveWater; // 0x24
+{
+	public SpawnFilter Filter; 
+	public float FilterCutoff; 
+	public bool aboveWater; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,14 +1,15 @@
 internal class EnvoyTerminatorSink : IMessageSink // TypeDefIndex: 1235
-{	public static EnvoyTerminatorSink Instance; // 0x13250
+{
+	public static EnvoyTerminatorSink Instance; 
 
 
-	public IMessage SyncProcessMessage(IMessage msg) { }
+public IMessage SyncProcessMessage(IMessage msg) { }
 
-	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

@@ -1,12 +1,13 @@
 public sealed class TransactionCompletedEventHandler : MulticastDelegate // TypeDefIndex: 3975
 {
-	public void .ctor(object object, IntPtr method) { }
 
-	public virtual void Invoke(object sender, TransactionEventArgs e) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(object sender, TransactionEventArgs e, AsyncCallback callback, object object) { }
+public virtual void Invoke(object sender, TransactionEventArgs e) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(object sender, TransactionEventArgs e, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

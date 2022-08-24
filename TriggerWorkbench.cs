@@ -1,12 +1,13 @@
 public class TriggerWorkbench : TriggerBase // TypeDefIndex: 10051
-{	public Workbench parentBench; // 0x30
+{
+	public Workbench parentBench; 
 
 
-	internal override GameObject InterestedInObject(GameObject obj) { }
+internal override GameObject InterestedInObject(GameObject obj) { }
 
-	public float WorkbenchLevel() { }
+public float WorkbenchLevel() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

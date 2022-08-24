@@ -1,14 +1,15 @@
 public sealed class ErrorEventHandler : MulticastDelegate // TypeDefIndex: 2843
 {
-public sealed class ErrorEventHandler : MulticastDelegate // TypeDefIndex: 2843
 
-	public void .ctor(object object, IntPtr method) { }
+public sealed class ErrorEventHandler : MulticastDelegate 
 
-	public virtual void Invoke(object sender, ErrorEventArgs e) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(object sender, ErrorEventArgs e, AsyncCallback callback, object object) { }
+public virtual void Invoke(object sender, ErrorEventArgs e) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(object sender, ErrorEventArgs e, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

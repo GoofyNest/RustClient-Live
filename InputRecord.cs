@@ -1,13 +1,14 @@
 internal struct InputRecord // TypeDefIndex: 423
-{	public short EventType; // 0x0
-	public bool KeyDown; // 0x2
-	public short RepeatCount; // 0x4
-	public short VirtualKeyCode; // 0x6
-	public short VirtualScanCode; // 0x8
-	public char Character; // 0xA
-	public int ControlKeyState; // 0xC
-	private int pad1; // 0x10
-	private bool pad2; // 0x14
+{
+	public short EventType; 
+	public bool KeyDown; 
+	public short RepeatCount; 
+	public short VirtualKeyCode; 
+	public short VirtualScanCode; 
+	public char Character; 
+	public int ControlKeyState; 
+	private int pad1; 
+	private bool pad2; 
 
 }
 

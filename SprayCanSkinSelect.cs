@@ -1,19 +1,20 @@
 public class SprayCanSkinSelect : UIDialog // TypeDefIndex: 10910
-{	public IconSkinPicker skinPicker; // 0x30
-	private Action<bool, int> onSkinSelected; // 0x38
-	private ItemBlueprint cachedBlueprint; // 0x40
-	private BaseEntity targetEntity; // 0x48
+{
+	public IconSkinPicker skinPicker; 
+	private Action<bool, int> onSkinSelected; 
+	private ItemBlueprint cachedBlueprint; 
+	private BaseEntity targetEntity; 
 
 
-	private void Update() { }
+private void Update() { }
 
-	public void Setup(ItemBlueprint blueprint, SprayCan spray, BaseEntity ent, Action<bool, int> callback) { }
+public void Setup(ItemBlueprint blueprint, SprayCan spray, BaseEntity ent, Action<bool, int> callback) { }
 
-	private void SkinChangedEvent() { }
+private void SkinChangedEvent() { }
 
-	public override void CloseDialog() { }
+public override void CloseDialog() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

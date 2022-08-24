@@ -1,12 +1,13 @@
 public class InvalidTimeZoneException : Exception // TypeDefIndex: 263
 {
-	public void .ctor(string message) { }
 
-	public void .ctor(string message, Exception innerException) { }
+public void .ctor(string message) { }
 
-	protected void .ctor(SerializationInfo info, StreamingContext context) { }
+public void .ctor(string message, Exception innerException) { }
 
-	public void .ctor() { }
+protected void .ctor(SerializationInfo info, StreamingContext context) { }
+
+public void .ctor() { }
 
 }
 

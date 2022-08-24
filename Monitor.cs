@@ -1,75 +1,77 @@
 public static class Monitor // TypeDefIndex: 788
 {
-	public static void Enter(object obj) { }
 
-	public static void Enter(object obj, ref bool lockTaken) { }
+public static void Enter(object obj) { }
 
-	private static void ThrowLockTakenException() { }
+public static void Enter(object obj, ref bool lockTaken) { }
 
-	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	public static void Exit(object obj) { }
+private static void ThrowLockTakenException() { }
 
-	public static void TryEnter(object obj, ref bool lockTaken) { }
+	[ReliabilityContractAttribute] 
+public static void Exit(object obj) { }
 
-	public static bool Wait(object obj, int millisecondsTimeout, bool exitContext) { }
+public static void TryEnter(object obj, ref bool lockTaken) { }
 
-	public static bool Wait(object obj, int millisecondsTimeout) { }
+public static bool Wait(object obj, int millisecondsTimeout, bool exitContext) { }
 
-	public static void Pulse(object obj) { }
+public static bool Wait(object obj, int millisecondsTimeout) { }
 
-	public static void PulseAll(object obj) { }
+public static void Pulse(object obj) { }
 
-	private static bool Monitor_test_synchronised(object obj) { }
+public static void PulseAll(object obj) { }
 
-	private static void Monitor_pulse(object obj) { }
+private static bool Monitor_test_synchronised(object obj) { }
 
-	private static void ObjPulse(object obj) { }
+private static void Monitor_pulse(object obj) { }
 
-	private static void Monitor_pulse_all(object obj) { }
+private static void ObjPulse(object obj) { }
 
-	private static void ObjPulseAll(object obj) { }
+private static void Monitor_pulse_all(object obj) { }
 
-	private static bool Monitor_wait(object obj, int ms) { }
+private static void ObjPulseAll(object obj) { }
 
-	private static bool ObjWait(bool exitContext, int millisecondsTimeout, object obj) { }
+private static bool Monitor_wait(object obj, int ms) { }
 
-	private static void try_enter_with_atomic_var(object obj, int millisecondsTimeout, ref bool lockTaken) { }
+private static bool ObjWait(bool exitContext, int millisecondsTimeout, object obj) { }
 
-	private static void ReliableEnterTimeout(object obj, int timeout, ref bool lockTaken) { }
+private static void try_enter_with_atomic_var(object obj, int millisecondsTimeout, ref bool lockTaken) { }
 
-	private static void ReliableEnter(object obj, ref bool lockTaken) { }
+private static void ReliableEnterTimeout(object obj, int timeout, ref bool lockTaken) { }
+
+private static void ReliableEnter(object obj, ref bool lockTaken) { }
 
 }
 
 public abstract class Monitor // TypeDefIndex: 11817
-{	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RenderTexture <output>k__BackingField; // 0x10
-	internal bool requested; // 0x18
+{
+	[CompilerGeneratedAttribute] 
+	private RenderTexture <output>k__BackingField; 
+	internal bool requested; 
 
-	public RenderTexture output { get; set; }
+public RenderTexture output { get; set; }
 
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public RenderTexture get_output() { }
+	[CompilerGeneratedAttribute] 
+public RenderTexture get_output() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	protected void set_output(RenderTexture value) { }
+	[CompilerGeneratedAttribute] 
+protected void set_output(RenderTexture value) { }
 
-	public bool IsRequestedAndSupported(PostProcessRenderContext context) { }
+public bool IsRequestedAndSupported(PostProcessRenderContext context) { }
 
-	internal abstract bool ShaderResourcesAvailable(PostProcessRenderContext context);
+internal abstract bool ShaderResourcesAvailable(PostProcessRenderContext context);
 
-	internal virtual bool NeedsHalfRes() { }
+internal virtual bool NeedsHalfRes() { }
 
-	protected void CheckOutput(int width, int height) { }
+protected void CheckOutput(int width, int height) { }
 
-	internal virtual void OnEnable() { }
+internal virtual void OnEnable() { }
 
-	internal virtual void OnDisable() { }
+internal virtual void OnDisable() { }
 
-	internal abstract void Render(PostProcessRenderContext context);
+internal abstract void Render(PostProcessRenderContext context);
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
 }
 

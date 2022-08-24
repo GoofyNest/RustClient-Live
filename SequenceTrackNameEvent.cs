@@ -1,12 +1,13 @@
 public sealed class SequenceTrackNameEvent : BaseTextEvent // TypeDefIndex: 7545
 {
-	public void .ctor() { }
 
-	public void .ctor(string name) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor(string name) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

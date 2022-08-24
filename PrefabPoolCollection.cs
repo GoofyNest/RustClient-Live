@@ -1,14 +1,15 @@
 public class PrefabPoolCollection // TypeDefIndex: 11421
-{	public Dictionary<uint, PrefabPool> storage; // 0x10
+{
+	public Dictionary<uint, PrefabPool> storage; 
 
 
-	public void Push(GameObject instance) { }
+public void Push(GameObject instance) { }
 
-	public GameObject Pop(uint id, Vector3 pos, Quaternion rot) { }
+public GameObject Pop(uint id, Vector3 pos, Quaternion rot) { }
 
-	public void Clear() { }
+public void Clear() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

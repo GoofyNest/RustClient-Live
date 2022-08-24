@@ -1,9 +1,10 @@
 public struct ERConnectionGUIStatus // TypeDefIndex: 7186
-{	public int id; // 0x0
-	public bool favourite; // 0x4
+{
+	public int id; 
+	public bool favourite; 
 
 
-	public void .ctor(int _id, bool value) { }
+public void .ctor(int _id, bool value) { }
 
 }
 

@@ -1,14 +1,15 @@
 public class DoubleVisionRenderer : PostProcessEffectRenderer<DoubleVision> // TypeDefIndex: 10250
-{	private int displaceProperty; // 0x20
-	private int amountProperty; // 0x24
-	private Shader doubleVisionShader; // 0x28
+{
+	private int displaceProperty; 
+	private int amountProperty; 
+	private Shader doubleVisionShader; 
 
 
-	public override void Init() { }
+public override void Init() { }
 
-	public override void Render(PostProcessRenderContext context) { }
+public override void Render(PostProcessRenderContext context) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

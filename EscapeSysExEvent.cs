@@ -1,12 +1,13 @@
 public sealed class EscapeSysExEvent : SysExEvent // TypeDefIndex: 7559
 {
-	public void .ctor() { }
 
-	public void .ctor(byte[] data) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor(byte[] data) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

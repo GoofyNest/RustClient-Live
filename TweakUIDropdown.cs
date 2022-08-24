@@ -1,38 +1,40 @@
 public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 11140
-{	public Button Left; // 0x30
-	public Button Right; // 0x38
-	public TextMeshProUGUI Current; // 0x40
-	public Image BackgroundImage; // 0x48
-	public TweakUIDropdown.NameValue[] nameValues; // 0x50
-	public bool assignImageColor; // 0x58
-	public int currentValue; // 0x5C
+{
+	public Button Left; 
+	public Button Right; 
+	public TextMeshProUGUI Current; 
+	public Image BackgroundImage; 
+	public TweakUIDropdown.NameValue[] nameValues; 
+	public bool assignImageColor; 
+	public int currentValue; 
 
 
-	protected override void Init() { }
+protected override void Init() { }
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	public void OnValueChanged() { }
+public void OnValueChanged() { }
 
-	public void ChangeValue(int change) { }
+public void ChangeValue(int change) { }
 
-	protected override void SetConvarValue() { }
+protected override void SetConvarValue() { }
 
-	public override void ResetToConvar() { }
+public override void ResetToConvar() { }
 
-	private void ShowValue(string value) { }
+private void ShowValue(string value) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public class TweakUIDropdown.NameValue // TypeDefIndex: 11141
-{	public string value; // 0x10
-	public Color imageColor; // 0x18
-	public Translate.Phrase label; // 0x28
+{
+	public string value; 
+	public Color imageColor; 
+	public Translate.Phrase label; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

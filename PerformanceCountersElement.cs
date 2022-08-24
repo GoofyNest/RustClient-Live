@@ -1,10 +1,11 @@
 public sealed class PerformanceCountersElement : ConfigurationElement // TypeDefIndex: 3178
-{	protected override ConfigurationPropertyCollection Properties { get; }
+{
+protected override ConfigurationPropertyCollection Properties { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	protected override ConfigurationPropertyCollection get_Properties() { }
+protected override ConfigurationPropertyCollection get_Properties() { }
 
 }
 

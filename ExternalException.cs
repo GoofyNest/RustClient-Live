@@ -1,14 +1,15 @@
 public class ExternalException : SystemException // TypeDefIndex: 1347
 {
-	public void .ctor() { }
 
-	public void .ctor(string message) { }
+public void .ctor() { }
 
-	public void .ctor(string message, int errorCode) { }
+public void .ctor(string message) { }
 
-	protected void .ctor(SerializationInfo info, StreamingContext context) { }
+public void .ctor(string message, int errorCode) { }
 
-	public override string ToString() { }
+protected void .ctor(SerializationInfo info, StreamingContext context) { }
+
+public override string ToString() { }
 
 }
 

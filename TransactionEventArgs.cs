@@ -1,10 +1,11 @@
 public class TransactionEventArgs : EventArgs // TypeDefIndex: 3984
-{	private Transaction transaction; // 0x10
+{
+	private Transaction transaction; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal void .ctor(Transaction transaction) { }
+internal void .ctor(Transaction transaction) { }
 
 }
 

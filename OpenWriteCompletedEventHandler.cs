@@ -1,14 +1,15 @@
 public sealed class OpenWriteCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2960
 {
-public sealed class OpenWriteCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2960
 
-	public void .ctor(object object, IntPtr method) { }
+public sealed class OpenWriteCompletedEventHandler : MulticastDelegate 
 
-	public virtual void Invoke(object sender, OpenWriteCompletedEventArgs e) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(object sender, OpenWriteCompletedEventArgs e, AsyncCallback callback, object object) { }
+public virtual void Invoke(object sender, OpenWriteCompletedEventArgs e) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(object sender, OpenWriteCompletedEventArgs e, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

@@ -1,41 +1,42 @@
 internal class CFObject : IDisposable // TypeDefIndex: 2513
-{	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private IntPtr <Handle>k__BackingField; // 0x10
+{
+	[CompilerGeneratedAttribute] 
+	private IntPtr <Handle>k__BackingField; 
 
-	public IntPtr Handle { get; set; }
+public IntPtr Handle { get; set; }
 
 
-	public static extern IntPtr dlopen(string path, int mode) { }
+public static extern IntPtr dlopen(string path, int mode) { }
 
-	private static extern IntPtr dlsym(IntPtr handle, string symbol) { }
+private static extern IntPtr dlsym(IntPtr handle, string symbol) { }
 
-	public static extern void dlclose(IntPtr handle) { }
+public static extern void dlclose(IntPtr handle) { }
 
-	public static IntPtr GetIndirect(IntPtr handle, string symbol) { }
+public static IntPtr GetIndirect(IntPtr handle, string symbol) { }
 
-	public static IntPtr GetCFObjectHandle(IntPtr handle, string symbol) { }
+public static IntPtr GetCFObjectHandle(IntPtr handle, string symbol) { }
 
-	public void .ctor(IntPtr handle, bool own) { }
+public void .ctor(IntPtr handle, bool own) { }
 
-	protected override void Finalize() { }
+protected override void Finalize() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public IntPtr get_Handle() { }
+	[CompilerGeneratedAttribute] 
+public IntPtr get_Handle() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void set_Handle(IntPtr value) { }
+	[CompilerGeneratedAttribute] 
+private void set_Handle(IntPtr value) { }
 
-	internal static extern IntPtr CFRetain(IntPtr handle) { }
+internal static extern IntPtr CFRetain(IntPtr handle) { }
 
-	private void Retain() { }
+private void Retain() { }
 
-	internal static extern void CFRelease(IntPtr handle) { }
+internal static extern void CFRelease(IntPtr handle) { }
 
-	private void Release() { }
+private void Release() { }
 
-	protected virtual void Dispose(bool disposing) { }
+protected virtual void Dispose(bool disposing) { }
 
-	public void Dispose() { }
+public void Dispose() { }
 
 }
 

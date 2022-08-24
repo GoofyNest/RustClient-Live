@@ -1,13 +1,14 @@
 public sealed class TransactionScope // TypeDefIndex: 3989
-{	private static TransactionOptions defaultOptions; // 0x0
-	private bool completed; // 0x10
+{
+	private static TransactionOptions defaultOptions; 
+	private bool completed; 
 
-	internal bool IsComplete { get; }
+internal bool IsComplete { get; }
 
 
-	internal bool get_IsComplete() { }
+internal bool get_IsComplete() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

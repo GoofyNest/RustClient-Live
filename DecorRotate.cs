@@ -1,11 +1,12 @@
 public class DecorRotate : DecorComponent // TypeDefIndex: 10326
-{	public Vector3 MinRotation; // 0xA0
-	public Vector3 MaxRotation; // 0xAC
+{
+	public Vector3 MinRotation; 
+	public Vector3 MaxRotation; 
 
 
-	public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
+public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

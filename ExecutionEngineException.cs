@@ -1,12 +1,13 @@
 public sealed class ExecutionEngineException : SystemException // TypeDefIndex: 220
 {
-	public void .ctor() { }
 
-	public void .ctor(string message) { }
+public void .ctor() { }
 
-	public void .ctor(string message, Exception innerException) { }
+public void .ctor(string message) { }
 
-	internal void .ctor(SerializationInfo info, StreamingContext context) { }
+public void .ctor(string message, Exception innerException) { }
+
+internal void .ctor(SerializationInfo info, StreamingContext context) { }
 
 }
 

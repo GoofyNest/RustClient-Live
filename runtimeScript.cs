@@ -1,19 +1,20 @@
 public class runtimeScript : MonoBehaviour // TypeDefIndex: 11483
-{	public ERRoadNetwork roadNetwork; // 0x18
-	public ERRoad road; // 0x20
-	public GameObject go; // 0x28
-	public int currentElement; // 0x30
-	public float distance; // 0x34
-	public float speed; // 0x38
+{
+	public ERRoadNetwork roadNetwork; 
+	public ERRoad road; 
+	public GameObject go; 
+	public int currentElement; 
+	public float distance; 
+	public float speed; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	private void Update() { }
+private void Update() { }
 
-	private void OnDestroy() { }
+private void OnDestroy() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

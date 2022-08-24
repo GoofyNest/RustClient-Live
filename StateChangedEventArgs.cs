@@ -1,28 +1,29 @@
 public sealed class StateChangedEventArgs : EventArgs // TypeDefIndex: 7145
-{	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private string <Message>k__BackingField; // 0x10
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private StateChangeType <Type>k__BackingField; // 0x18
+{
+	[CompilerGeneratedAttribute] 
+	private string <Message>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private StateChangeType <Type>k__BackingField; 
 
-	public string Message { get; set; }
-	public StateChangeType Type { get; set; }
+public string Message { get; set; }
+public StateChangeType Type { get; set; }
 
 
-	internal void .ctor(StateChangeType stateChangeType, string message) { }
+internal void .ctor(StateChangeType stateChangeType, string message) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public string get_Message() { }
+	[CompilerGeneratedAttribute] 
+public string get_Message() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void set_Message(string value) { }
+	[CompilerGeneratedAttribute] 
+private void set_Message(string value) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public StateChangeType get_Type() { }
+	[CompilerGeneratedAttribute] 
+public StateChangeType get_Type() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void set_Type(StateChangeType value) { }
+	[CompilerGeneratedAttribute] 
+private void set_Type(StateChangeType value) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
 }
 

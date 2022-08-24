@@ -1,23 +1,25 @@
 internal class ReadContentAsBinaryHelper // TypeDefIndex: 1860
-{	private XmlReader reader; // 0x10
-	private ReadContentAsBinaryHelper.State state; // 0x18
-	private int valueOffset; // 0x1C
-	private bool isEnd; // 0x20
+{
+	private XmlReader reader; 
+	private ReadContentAsBinaryHelper.State state; 
+	private int valueOffset; 
+	private bool isEnd; 
 
 
-	internal void Finish() { }
+internal void Finish() { }
 
-	internal void Reset() { }
+internal void Reset() { }
 
-	private bool MoveToNextContentNode(bool moveIfOnContentNode) { }
+private bool MoveToNextContentNode(bool moveIfOnContentNode) { }
 
 }
 
 private enum ReadContentAsBinaryHelper.State // TypeDefIndex: 1861
-{	public int value__; // 0x0
-	public const ReadContentAsBinaryHelper.State None = 0;
-	public const ReadContentAsBinaryHelper.State InReadContent = 1;
-	public const ReadContentAsBinaryHelper.State InReadElementContent = 2;
+{
+	public int value__; 
+public const ReadContentAsBinaryHelper.State None = 0;
+public const ReadContentAsBinaryHelper.State InReadContent = 1;
+public const ReadContentAsBinaryHelper.State InReadElementContent = 2;
 
 }
 

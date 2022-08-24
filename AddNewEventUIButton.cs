@@ -1,27 +1,29 @@
 public class AddNewEventUIButton : MonoBehaviour // TypeDefIndex: 10779
-{	private BaseStateUI stateUI; // 0x18
+{
+	private BaseStateUI stateUI; 
 
 
-	public void Init(BaseStateUI stateUI) { }
+public void Init(BaseStateUI stateUI) { }
 
-	public void Clicked() { }
+public void Clicked() { }
 
-	public void EventTypeClicked(object value) { }
+public void EventTypeClicked(object value) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 private sealed class AddNewEventUIButton.<>c // TypeDefIndex: 10780
-{	public static readonly AddNewEventUIButton.<>c <>9; // 0x0
-	public static Func<object, string> <>9__2_0; // 0x8
+{
+	public static readonly AddNewEventUIButton.<>c <>9; 
+	public static Func<object, string> <>9__2_0; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal string <Clicked>b__2_0(object v) { }
+internal string <Clicked>b__2_0(object v) { }
 
 }
 

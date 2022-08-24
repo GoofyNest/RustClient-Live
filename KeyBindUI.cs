@@ -1,23 +1,24 @@
 public class KeyBindUI : MonoBehaviour // TypeDefIndex: 11132
-{	public GameObject blockingCanvas; // 0x18
-	public Button btnA; // 0x20
-	public Button btnB; // 0x28
-	public string bindString; // 0x30
-	private Button binding; // 0x38
-	public bool noButtonsDown; // 0x40
+{
+	public GameObject blockingCanvas; 
+	public Button btnA; 
+	public Button btnB; 
+	public string bindString; 
+	private Button binding; 
+	public bool noButtonsDown; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void UpdateBinding() { }
+private void UpdateBinding() { }
 
-	public void StartBinding(Button button) { }
+public void StartBinding(Button button) { }
 
-	public void ResetToDefault() { }
+public void ResetToDefault() { }
 
-	public void Update() { }
+public void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

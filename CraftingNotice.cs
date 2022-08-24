@@ -1,12 +1,13 @@
 public class CraftingNotice : MonoBehaviour // TypeDefIndex: 10986
-{	public CanvasGroup canvasGroup; // 0x18
-	public TextMeshProUGUI itemName; // 0x20
-	public TextMeshProUGUI craftSeconds; // 0x28
+{
+	public CanvasGroup canvasGroup; 
+	public TextMeshProUGUI itemName; 
+	public TextMeshProUGUI craftSeconds; 
 
 
-	private void Update() { }
+private void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

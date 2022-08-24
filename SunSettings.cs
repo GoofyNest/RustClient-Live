@@ -1,12 +1,13 @@
 public class SunSettings : MonoBehaviour, IClientComponent // TypeDefIndex: 9240
-{	private Light light; // 0x18
+{
+	private Light light; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

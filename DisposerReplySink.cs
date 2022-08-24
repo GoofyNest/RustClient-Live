@@ -1,13 +1,14 @@
 internal class DisposerReplySink : IMessageSink // TypeDefIndex: 1149
-{	private IMessageSink _next; // 0x10
-	private IDisposable _disposable; // 0x18
+{
+	private IMessageSink _next; 
+	private IDisposable _disposable; 
 
 
-	public void .ctor(IMessageSink next, IDisposable disposable) { }
+public void .ctor(IMessageSink next, IDisposable disposable) { }
 
-	public IMessage SyncProcessMessage(IMessage msg) { }
+public IMessage SyncProcessMessage(IMessage msg) { }
 
-	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
 }
 

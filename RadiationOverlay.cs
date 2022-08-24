@@ -1,24 +1,25 @@
 public class RadiationOverlay : MonoBehaviour // TypeDefIndex: 9133
-{	public SoundDefinition[] geigerSounds; // 0x18
-	public PostProcessVolume postProcessVolume; // 0x20
-	private Sound sound; // 0x28
-	private float smoothRadiationCurrent; // 0x30
-	private float smoothRadiationVelocity; // 0x34
-	private float smoothRadiationExposureCurrent; // 0x38
-	private float smoothRadiationExposureVelocity; // 0x3C
+{
+	public SoundDefinition[] geigerSounds; 
+	public PostProcessVolume postProcessVolume; 
+	private Sound sound; 
+	private float smoothRadiationCurrent; 
+	private float smoothRadiationVelocity; 
+	private float smoothRadiationExposureCurrent; 
+	private float smoothRadiationExposureVelocity; 
 
 
-	public void Awake() { }
+public void Awake() { }
 
-	protected void Update() { }
+protected void Update() { }
 
-	private void UpdateSound(float exposure) { }
+private void UpdateSound(float exposure) { }
 
-	private float GetRadationFraction() { }
+private float GetRadationFraction() { }
 
-	private float GetRadationExposureFraction() { }
+private float GetRadationExposureFraction() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

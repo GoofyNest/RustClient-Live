@@ -1,14 +1,15 @@
 internal sealed class MessageEnd // TypeDefIndex: 1087
 {
-	internal void .ctor() { }
 
-	public void Write(__BinaryWriter sout) { }
+internal void .ctor() { }
 
-	public void Read(__BinaryParser input) { }
+public void Write(__BinaryWriter sout) { }
 
-	public void Dump() { }
+public void Read(__BinaryParser input) { }
 
-	public void Dump(Stream sout) { }
+public void Dump() { }
+
+public void Dump(Stream sout) { }
 
 }
 

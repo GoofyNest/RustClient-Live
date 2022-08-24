@@ -1,28 +1,29 @@
 internal abstract class RuntimeMethodInfo : MethodInfo, ISerializable // TypeDefIndex: 581
-{	internal BindingFlags BindingFlags { get; }
-	public override Module Module { get; }
-	private RuntimeType ReflectedTypeInternal { get; }
+{
+internal BindingFlags BindingFlags { get; }
+public override Module Module { get; }
+private RuntimeType ReflectedTypeInternal { get; }
 
 
-	internal BindingFlags get_BindingFlags() { }
+internal BindingFlags get_BindingFlags() { }
 
-	public override Module get_Module() { }
+public override Module get_Module() { }
 
-	private RuntimeType get_ReflectedTypeInternal() { }
+private RuntimeType get_ReflectedTypeInternal() { }
 
-	internal override string FormatNameAndSig(bool serialization) { }
+internal override string FormatNameAndSig(bool serialization) { }
 
-	public override Delegate CreateDelegate(Type delegateType) { }
+public override Delegate CreateDelegate(Type delegateType) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	internal RuntimeModule GetRuntimeModule() { }
+internal RuntimeModule GetRuntimeModule() { }
 
-	public void GetObjectData(SerializationInfo info, StreamingContext context) { }
+public void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-	internal string SerializationToString() { }
+internal string SerializationToString() { }
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
 }
 

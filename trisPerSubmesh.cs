@@ -1,8 +1,9 @@
 public class trisPerSubmesh // TypeDefIndex: 11525
-{	public int[] triangles; // 0x10
+{
+	public int[] triangles; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

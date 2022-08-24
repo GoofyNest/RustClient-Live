@@ -1,12 +1,13 @@
 public class IMGUIEvent : EventBase<IMGUIEvent> // TypeDefIndex: 4702
 {
-	public static IMGUIEvent GetPooled(Event systemEvent) { }
 
-	protected override void Init() { }
+public static IMGUIEvent GetPooled(Event systemEvent) { }
 
-	private void LocalInit() { }
+protected override void Init() { }
 
-	public void .ctor() { }
+private void LocalInit() { }
+
+public void .ctor() { }
 
 }
 

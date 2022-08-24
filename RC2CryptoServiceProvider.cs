@@ -1,23 +1,24 @@
 public sealed class RC2CryptoServiceProvider : RC2 // TypeDefIndex: 974
-{	private bool m_use40bitSalt; // 0x50
-	private static KeySizes[] s_legalKeySizes; // 0x0
+{
+	private bool m_use40bitSalt; 
+	private static KeySizes[] s_legalKeySizes; 
 
-	public override int EffectiveKeySize { get; }
+public override int EffectiveKeySize { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public override int get_EffectiveKeySize() { }
+public override int get_EffectiveKeySize() { }
 
-	public override ICryptoTransform CreateEncryptor(byte[] rgbKey, byte[] rgbIV) { }
+public override ICryptoTransform CreateEncryptor(byte[] rgbKey, byte[] rgbIV) { }
 
-	public override ICryptoTransform CreateDecryptor(byte[] rgbKey, byte[] rgbIV) { }
+public override ICryptoTransform CreateDecryptor(byte[] rgbKey, byte[] rgbIV) { }
 
-	public override void GenerateKey() { }
+public override void GenerateKey() { }
 
-	public override void GenerateIV() { }
+public override void GenerateIV() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

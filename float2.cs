@@ -1,29 +1,30 @@
 public struct float2 : IEquatable<float2>, IFormattable // TypeDefIndex: 7101
-{	public float x; // 0x0
-	public float y; // 0x4
+{
+	public float x; 
+	public float y; 
 
 
-	public void .ctor(float x, float y) { }
+public void .ctor(float x, float y) { }
 
-	public void .ctor(int2 v) { }
+public void .ctor(int2 v) { }
 
-	public void .ctor(half2 v) { }
+public void .ctor(half2 v) { }
 
-	public static float2 op_Implicit(int2 v) { }
+public static float2 op_Implicit(int2 v) { }
 
-	public static float2 op_Implicit(half2 v) { }
+public static float2 op_Implicit(half2 v) { }
 
-	public static float2 op_Subtraction(float2 lhs, float2 rhs) { }
+public static float2 op_Subtraction(float2 lhs, float2 rhs) { }
 
-	public bool Equals(float2 rhs) { }
+public bool Equals(float2 rhs) { }
 
-	public override bool Equals(object o) { }
+public override bool Equals(object o) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	public string ToString(string format, IFormatProvider formatProvider) { }
+public string ToString(string format, IFormatProvider formatProvider) { }
 
 }
 

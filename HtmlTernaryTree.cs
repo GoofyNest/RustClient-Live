@@ -1,9 +1,10 @@
 internal abstract class HtmlTernaryTree // TypeDefIndex: 1841
-{	internal static byte[] htmlElements; // 0x0
-	internal static byte[] htmlAttributes; // 0x8
+{
+	internal static byte[] htmlElements; 
+	internal static byte[] htmlAttributes; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

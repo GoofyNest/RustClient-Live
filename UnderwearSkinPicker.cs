@@ -1,19 +1,20 @@
 public class UnderwearSkinPicker : MonoBehaviour // TypeDefIndex: 9248
-{	public GameObjectRef pickerIcon; // 0x18
-	public GameObject container; // 0x20
-	public Action skinChangedEvent; // 0x28
-	public Sprite defaultNudeIcon; // 0x30
-	public Sprite defaultIconMale; // 0x38
-	public Sprite defaultIconFemale; // 0x40
+{
+	public GameObjectRef pickerIcon; 
+	public GameObject container; 
+	public Action skinChangedEvent; 
+	public Sprite defaultNudeIcon; 
+	public Sprite defaultIconMale; 
+	public Sprite defaultIconFemale; 
 
 
-	public void RefreshUnderwear() { }
+public void RefreshUnderwear() { }
 
-	protected void AddOption(string underwearShortName, string text, bool canUse, Sprite icon) { }
+protected void AddOption(string underwearShortName, string text, bool canUse, Sprite icon) { }
 
-	public virtual void OnUnderwearChanged() { }
+public virtual void OnUnderwearChanged() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

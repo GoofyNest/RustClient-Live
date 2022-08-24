@@ -1,14 +1,15 @@
 internal class ProcessWaitHandle : WaitHandle // TypeDefIndex: 2654
 {
-[DefaultMemberAttribute] // RVA: 0x70A90 Offset: 0x6FE90 VA: 0x180070A90
-public class ProcessModuleCollection : ReadOnlyCollectionBase // TypeDefIndex: 2652
 
-[DefaultMemberAttribute] // RVA: 0x70A90 Offset: 0x6FE90 VA: 0x180070A90
-public class ProcessThreadCollection : ReadOnlyCollectionBase // TypeDefIndex: 2653
+[DefaultMemberAttribute] 
+public class ProcessModuleCollection : ReadOnlyCollectionBase 
 
-internal class ProcessWaitHandle : WaitHandle // TypeDefIndex: 2654
+[DefaultMemberAttribute] 
+public class ProcessThreadCollection : ReadOnlyCollectionBase 
 
-	internal void .ctor(SafeProcessHandle processHandle) { }
+internal class ProcessWaitHandle : WaitHandle 
+
+internal void .ctor(SafeProcessHandle processHandle) { }
 
 }
 

@@ -1,9 +1,10 @@
 internal struct HebrewNumberParsingContext // TypeDefIndex: 706
-{	internal HebrewNumber.HS state; // 0x0
-	internal int result; // 0x4
+{
+	internal HebrewNumber.HS state; 
+	internal int result; 
 
 
-	public void .ctor(int result) { }
+public void .ctor(int result) { }
 
 }
 

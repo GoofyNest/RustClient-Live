@@ -1,65 +1,67 @@
 public class ContactsPanel : SingletonComponent<ContactsPanel> // TypeDefIndex: 10938
-{	public RectTransform alliesBucket; // 0x18
-	public RectTransform seenBucket; // 0x20
-	public RectTransform enemiesBucket; // 0x28
-	public RectTransform contentsBucket; // 0x30
-	public ContactsEntry contactEntryPrefab; // 0x38
-	public RawImage mugshotTest; // 0x40
-	public RawImage fullBodyTest; // 0x48
-	public RustButton[] filterButtons; // 0x50
-	public RelationshipManager.RelationshipType selectedRelationshipType; // 0x58
-	public RustButton lastSeenToggle; // 0x60
-	public Translate.Phrase sortingByLastSeenPhrase; // 0x68
-	public Translate.Phrase sortingByFirstSeen; // 0x70
-	public RustText sortText; // 0x78
-	private ContactsPanel.SortMode sortMode; // 0x80
-	private ulong selectedPlayerID; // 0x88
-	private float nextUpdateTime; // 0x90
-	private bool dirty; // 0x94
+{
+	public RectTransform alliesBucket; 
+	public RectTransform seenBucket; 
+	public RectTransform enemiesBucket; 
+	public RectTransform contentsBucket; 
+	public ContactsEntry contactEntryPrefab; 
+	public RawImage mugshotTest; 
+	public RawImage fullBodyTest; 
+	public RustButton[] filterButtons; 
+	public RelationshipManager.RelationshipType selectedRelationshipType; 
+	public RustButton lastSeenToggle; 
+	public Translate.Phrase sortingByLastSeenPhrase; 
+	public Translate.Phrase sortingByFirstSeen; 
+	public RustText sortText; 
+	private ContactsPanel.SortMode sortMode; 
+	private ulong selectedPlayerID; 
+	private float nextUpdateTime; 
+	private bool dirty; 
 
 
-	public RectTransform BucketFromType(RelationshipManager.RelationshipType type) { }
+public RectTransform BucketFromType(RelationshipManager.RelationshipType type) { }
 
-	public void Repopulate() { }
+public void Repopulate() { }
 
-	public void SelectRelationshipType(int type) { }
+public void SelectRelationshipType(int type) { }
 
-	public static RelationshipManager.PlayerRelationshipInfo GetSelectedContact() { }
+public static RelationshipManager.PlayerRelationshipInfo GetSelectedContact() { }
 
-	public void DeselectContact(ContactsEntry deselected) { }
+public void DeselectContact(ContactsEntry deselected) { }
 
-	public static void DeselectContact() { }
+public static void DeselectContact() { }
 
-	public void ContactClicked(ContactsEntry selected) { }
+public void ContactClicked(ContactsEntry selected) { }
 
-	private bool WantsUpdate() { }
+private bool WantsUpdate() { }
 
-	public void Update() { }
+public void Update() { }
 
-	public void MarkDirty() { }
+public void MarkDirty() { }
 
-	public static void ReceivedNewContacts() { }
+public static void ReceivedNewContacts() { }
 
-	protected override void Awake() { }
+protected override void Awake() { }
 
-	private static int CompareRecentlySeen(RelationshipManager.PlayerRelationshipInfo a, RelationshipManager.PlayerRelationshipInfo b) { }
+private static int CompareRecentlySeen(RelationshipManager.PlayerRelationshipInfo a, RelationshipManager.PlayerRelationshipInfo b) { }
 
-	public void SetSortOff() { }
+public void SetSortOff() { }
 
-	public void SetSortOn() { }
+public void SetSortOn() { }
 
-	private void ChangeSortMode(ContactsPanel.SortMode newMode) { }
+private void ChangeSortMode(ContactsPanel.SortMode newMode) { }
 
-	private void UpdateSortText() { }
+private void UpdateSortText() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public enum ContactsPanel.SortMode // TypeDefIndex: 10939
-{	public int value__; // 0x0
-	public const ContactsPanel.SortMode None = 0;
-	public const ContactsPanel.SortMode RecentlySeen = 1;
+{
+	public int value__; 
+public const ContactsPanel.SortMode None = 0;
+public const ContactsPanel.SortMode RecentlySeen = 1;
 
 }
 

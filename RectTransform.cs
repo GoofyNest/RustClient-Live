@@ -1,121 +1,125 @@
 public sealed class RectTransform : Transform // TypeDefIndex: 3565
-{	[DebuggerBrowsableAttribute] // RVA: 0x70650 Offset: 0x6FA50 VA: 0x180070650
-	[CompilerGeneratedAttribute] // RVA: 0x70650 Offset: 0x6FA50 VA: 0x180070650
-	private static RectTransform.ReapplyDrivenProperties reapplyDrivenProperties; // 0x13A90
+{
+	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
+	private static RectTransform.ReapplyDrivenProperties reapplyDrivenProperties; 
 
-	public Rect rect { get; }
-	public Vector2 anchorMin { get; set; }
-	public Vector2 anchorMax { get; set; }
-	public Vector2 anchoredPosition { get; set; }
-	public Vector2 sizeDelta { get; set; }
-	public Vector2 pivot { get; set; }
-	public Vector3 anchoredPosition3D { get; set; }
-	public Vector2 offsetMin { get; set; }
-	public Vector2 offsetMax { get; set; }
+public Rect rect { get; }
+public Vector2 anchorMin { get; set; }
+public Vector2 anchorMax { get; set; }
+public Vector2 anchoredPosition { get; set; }
+public Vector2 sizeDelta { get; set; }
+public Vector2 pivot { get; set; }
+public Vector3 anchoredPosition3D { get; set; }
+public Vector2 offsetMin { get; set; }
+public Vector2 offsetMax { get; set; }
 
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public static void add_reapplyDrivenProperties(RectTransform.ReapplyDrivenProperties value) { }
+	[CompilerGeneratedAttribute] 
+public static void add_reapplyDrivenProperties(RectTransform.ReapplyDrivenProperties value) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public static void remove_reapplyDrivenProperties(RectTransform.ReapplyDrivenProperties value) { }
+	[CompilerGeneratedAttribute] 
+public static void remove_reapplyDrivenProperties(RectTransform.ReapplyDrivenProperties value) { }
 
-	public Rect get_rect() { }
+public Rect get_rect() { }
 
-	public Vector2 get_anchorMin() { }
+public Vector2 get_anchorMin() { }
 
-	public void set_anchorMin(Vector2 value) { }
+public void set_anchorMin(Vector2 value) { }
 
-	public Vector2 get_anchorMax() { }
+public Vector2 get_anchorMax() { }
 
-	public void set_anchorMax(Vector2 value) { }
+public void set_anchorMax(Vector2 value) { }
 
-	public Vector2 get_anchoredPosition() { }
+public Vector2 get_anchoredPosition() { }
 
-	public void set_anchoredPosition(Vector2 value) { }
+public void set_anchoredPosition(Vector2 value) { }
 
-	public Vector2 get_sizeDelta() { }
+public Vector2 get_sizeDelta() { }
 
-	public void set_sizeDelta(Vector2 value) { }
+public void set_sizeDelta(Vector2 value) { }
 
-	public Vector2 get_pivot() { }
+public Vector2 get_pivot() { }
 
-	public void set_pivot(Vector2 value) { }
+public void set_pivot(Vector2 value) { }
 
-	public Vector3 get_anchoredPosition3D() { }
+public Vector3 get_anchoredPosition3D() { }
 
-	public void set_anchoredPosition3D(Vector3 value) { }
+public void set_anchoredPosition3D(Vector3 value) { }
 
-	public Vector2 get_offsetMin() { }
+public Vector2 get_offsetMin() { }
 
-	public void set_offsetMin(Vector2 value) { }
+public void set_offsetMin(Vector2 value) { }
 
-	public Vector2 get_offsetMax() { }
+public Vector2 get_offsetMax() { }
 
-	public void set_offsetMax(Vector2 value) { }
+public void set_offsetMax(Vector2 value) { }
 
-	public void GetLocalCorners(Vector3[] fourCornersArray) { }
+public void GetLocalCorners(Vector3[] fourCornersArray) { }
 
-	public void GetWorldCorners(Vector3[] fourCornersArray) { }
+public void GetWorldCorners(Vector3[] fourCornersArray) { }
 
-	public void SetInsetAndSizeFromParentEdge(RectTransform.Edge edge, float inset, float size) { }
+public void SetInsetAndSizeFromParentEdge(RectTransform.Edge edge, float inset, float size) { }
 
-	public void SetSizeWithCurrentAnchors(RectTransform.Axis axis, float size) { }
+public void SetSizeWithCurrentAnchors(RectTransform.Axis axis, float size) { }
 
-	[RequiredByNativeCodeAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	internal static void SendReapplyDrivenProperties(RectTransform driven) { }
+	[RequiredByNativeCodeAttribute] 
+internal static void SendReapplyDrivenProperties(RectTransform driven) { }
 
-	private Vector2 GetParentSize() { }
+private Vector2 GetParentSize() { }
 
-	private void get_rect_Injected(out Rect ret) { }
+private void get_rect_Injected(out Rect ret) { }
 
-	private void get_anchorMin_Injected(out Vector2 ret) { }
+private void get_anchorMin_Injected(out Vector2 ret) { }
 
-	private void set_anchorMin_Injected(ref Vector2 value) { }
+private void set_anchorMin_Injected(ref Vector2 value) { }
 
-	private void get_anchorMax_Injected(out Vector2 ret) { }
+private void get_anchorMax_Injected(out Vector2 ret) { }
 
-	private void set_anchorMax_Injected(ref Vector2 value) { }
+private void set_anchorMax_Injected(ref Vector2 value) { }
 
-	private void get_anchoredPosition_Injected(out Vector2 ret) { }
+private void get_anchoredPosition_Injected(out Vector2 ret) { }
 
-	private void set_anchoredPosition_Injected(ref Vector2 value) { }
+private void set_anchoredPosition_Injected(ref Vector2 value) { }
 
-	private void get_sizeDelta_Injected(out Vector2 ret) { }
+private void get_sizeDelta_Injected(out Vector2 ret) { }
 
-	private void set_sizeDelta_Injected(ref Vector2 value) { }
+private void set_sizeDelta_Injected(ref Vector2 value) { }
 
-	private void get_pivot_Injected(out Vector2 ret) { }
+private void get_pivot_Injected(out Vector2 ret) { }
 
-	private void set_pivot_Injected(ref Vector2 value) { }
+private void set_pivot_Injected(ref Vector2 value) { }
 
 }
 
 public enum RectTransform.Edge // TypeDefIndex: 3566
-{	public int value__; // 0x0
-	public const RectTransform.Edge Left = 0;
-	public const RectTransform.Edge Right = 1;
-	public const RectTransform.Edge Top = 2;
-	public const RectTransform.Edge Bottom = 3;
+{
+	public int value__; 
+public const RectTransform.Edge Left = 0;
+public const RectTransform.Edge Right = 1;
+public const RectTransform.Edge Top = 2;
+public const RectTransform.Edge Bottom = 3;
 
 }
 
 public enum RectTransform.Axis // TypeDefIndex: 3567
-{	public int value__; // 0x0
-	public const RectTransform.Axis Horizontal = 0;
-	public const RectTransform.Axis Vertical = 1;
+{
+	public int value__; 
+public const RectTransform.Axis Horizontal = 0;
+public const RectTransform.Axis Vertical = 1;
 
 }
 
 public sealed class RectTransform.ReapplyDrivenProperties : MulticastDelegate // TypeDefIndex: 3568
 {
-	public void .ctor(object object, IntPtr method) { }
 
-	public virtual void Invoke(RectTransform driven) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(RectTransform driven, AsyncCallback callback, object object) { }
+public virtual void Invoke(RectTransform driven) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(RectTransform driven, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

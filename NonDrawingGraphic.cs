@@ -1,12 +1,13 @@
 public class NonDrawingGraphic : Graphic // TypeDefIndex: 11274
 {
-	public override void SetMaterialDirty() { }
 
-	public override void SetVerticesDirty() { }
+public override void SetMaterialDirty() { }
 
-	protected override void OnPopulateMesh(VertexHelper vh) { }
+public override void SetVerticesDirty() { }
 
-	public void .ctor() { }
+protected override void OnPopulateMesh(VertexHelper vh) { }
+
+public void .ctor() { }
 
 }
 

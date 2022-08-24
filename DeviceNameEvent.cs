@@ -1,12 +1,13 @@
 public sealed class DeviceNameEvent : BaseTextEvent // TypeDefIndex: 7535
 {
-	public void .ctor() { }
 
-	public void .ctor(string deviceName) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor(string deviceName) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

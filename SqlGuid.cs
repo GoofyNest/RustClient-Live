@@ -1,50 +1,51 @@
 public struct SqlGuid : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4346
-{	private static readonly int s_sizeOfGuid; // 0x0
-	private static readonly int[] s_rgiGuidOrder; // 0x8
-	private byte[] m_value; // 0x0
-	public static readonly SqlGuid Null; // 0x10
+{
+	private static readonly int s_sizeOfGuid; 
+	private static readonly int[] s_rgiGuidOrder; 
+	private byte[] m_value; 
+	public static readonly SqlGuid Null; 
 
-	public bool IsNull { get; }
-	public Guid Value { get; }
+public bool IsNull { get; }
+public Guid Value { get; }
 
 
-	private void .ctor(bool fNull) { }
+private void .ctor(bool fNull) { }
 
-	public void .ctor(Guid g) { }
+public void .ctor(Guid g) { }
 
-	public bool get_IsNull() { }
+public bool get_IsNull() { }
 
-	public Guid get_Value() { }
+public Guid get_Value() { }
 
-	public static SqlGuid op_Implicit(Guid x) { }
+public static SqlGuid op_Implicit(Guid x) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	private static EComparison Compare(SqlGuid x, SqlGuid y) { }
+private static EComparison Compare(SqlGuid x, SqlGuid y) { }
 
-	public static SqlBoolean op_Equality(SqlGuid x, SqlGuid y) { }
+public static SqlBoolean op_Equality(SqlGuid x, SqlGuid y) { }
 
-	public static SqlBoolean op_LessThan(SqlGuid x, SqlGuid y) { }
+public static SqlBoolean op_LessThan(SqlGuid x, SqlGuid y) { }
 
-	public static SqlBoolean op_GreaterThan(SqlGuid x, SqlGuid y) { }
+public static SqlBoolean op_GreaterThan(SqlGuid x, SqlGuid y) { }
 
-	public int CompareTo(object value) { }
+public int CompareTo(object value) { }
 
-	public int CompareTo(SqlGuid value) { }
+public int CompareTo(SqlGuid value) { }
 
-	public override bool Equals(object value) { }
+public override bool Equals(object value) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	private XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() { }
+private XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() { }
 
-	private void System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader) { }
+private void System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader) { }
 
-	private void System.Xml.Serialization.IXmlSerializable.WriteXml(XmlWriter writer) { }
+private void System.Xml.Serialization.IXmlSerializable.WriteXml(XmlWriter writer) { }
 
-	public static XmlQualifiedName GetXsdType(XmlSchemaSet schemaSet) { }
+public static XmlQualifiedName GetXsdType(XmlSchemaSet schemaSet) { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

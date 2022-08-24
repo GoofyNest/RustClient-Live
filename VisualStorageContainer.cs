@@ -1,29 +1,31 @@
 public class VisualStorageContainer : LootContainer // TypeDefIndex: 9614
-{	public VisualStorageContainerNode[] displayNodes; // 0x418
-	public VisualStorageContainer.DisplayModel[] displayModels; // 0x420
-	public Transform nodeParent; // 0x428
-	public GameObject defaultDisplayModel; // 0x430
+{
+	public VisualStorageContainerNode[] displayNodes; 
+	public VisualStorageContainer.DisplayModel[] displayModels; 
+	public Transform nodeParent; 
+	public GameObject defaultDisplayModel; 
 
 
-	public void ClearRigidBodies() { }
+public void ClearRigidBodies() { }
 
-	public void SetItemsVisible(bool vis) { }
+public void SetItemsVisible(bool vis) { }
 
-	public void ItemUpdateComplete() { }
+public void ItemUpdateComplete() { }
 
-	public void UpdateVisibleItems(ItemContainer msg) { }
+public void UpdateVisibleItems(ItemContainer msg) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public class VisualStorageContainer.DisplayModel // TypeDefIndex: 9615
-{	public GameObject displayModel; // 0x10
-	public ItemDefinition def; // 0x18
-	public int slot; // 0x20
+{
+	public GameObject displayModel; 
+	public ItemDefinition def; 
+	public int slot; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

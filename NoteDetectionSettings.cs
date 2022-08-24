@@ -1,16 +1,17 @@
 public sealed class NoteDetectionSettings // TypeDefIndex: 7439
-{	private NoteStartDetectionPolicy _noteStartDetectionPolicy; // 0x10
-	private NoteSearchContext _noteSearchContext; // 0x14
+{
+	private NoteStartDetectionPolicy _noteStartDetectionPolicy; 
+	private NoteSearchContext _noteSearchContext; 
 
-	public NoteStartDetectionPolicy NoteStartDetectionPolicy { get; }
-	public NoteSearchContext NoteSearchContext { get; }
+public NoteStartDetectionPolicy NoteStartDetectionPolicy { get; }
+public NoteSearchContext NoteSearchContext { get; }
 
 
-	public NoteStartDetectionPolicy get_NoteStartDetectionPolicy() { }
+public NoteStartDetectionPolicy get_NoteStartDetectionPolicy() { }
 
-	public NoteSearchContext get_NoteSearchContext() { }
+public NoteSearchContext get_NoteSearchContext() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

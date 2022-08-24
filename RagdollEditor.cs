@@ -1,25 +1,26 @@
 public class RagdollEditor : SingletonComponent<RagdollEditor> // TypeDefIndex: 11438
-{	private Vector3 view; // 0x18
-	private Rigidbody grabbedRigid; // 0x28
-	private Vector3 grabPos; // 0x30
-	private Vector3 grabOffset; // 0x3C
+{
+	private Vector3 view; 
+	private Rigidbody grabbedRigid; 
+	private Vector3 grabPos; 
+	private Vector3 grabOffset; 
 
 
-	private void OnGUI() { }
+private void OnGUI() { }
 
-	protected override void Awake() { }
+protected override void Awake() { }
 
-	private void Update() { }
+private void Update() { }
 
-	private void FixedUpdate() { }
+private void FixedUpdate() { }
 
-	private void StartGrab() { }
+private void StartGrab() { }
 
-	private void UpdateGrab() { }
+private void UpdateGrab() { }
 
-	private void StopGrab() { }
+private void StopGrab() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

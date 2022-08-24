@@ -1,38 +1,39 @@
 public class QDOQDSQOOQDDD // TypeDefIndex: 7171
-{	public int crossingElementLeftIndex; // 0x10
-	public int crossingElementRightIndex; // 0x14
-	public Vector3 centerHandleV3; // 0x18
-	public Vector3 centerHandleV3_2; // 0x24
-	public Vector3 leftHandleV3; // 0x30
-	public Vector3 rightHandleV3; // 0x3C
-	public bool renderFlag; // 0x48
-	public bool leftConnectionHandle; // 0x49
-	public bool rightConnectionHandle; // 0x4A
-	public float sidewalkWidth1; // 0x4C
-	public float sidewalkWidth2; // 0x50
-	public float curbHeight; // 0x54
-	public float curbDepth; // 0x58
-	public bool beveledCurb; // 0x5C
-	public float beveledHeight; // 0x60
-	public float beveledDepth; // 0x64
-	public bool outerCurb; // 0x68
-	public bool roadSideCurbUVControl; // 0x69
-	public bool outerSideCurbUVControl; // 0x6A
-	public Material sidewalkMaterial; // 0x70
-	public List<float> sidewalkUVs; // 0x78
-	public List<float> curbUVs; // 0x80
-	public bool lockUVs; // 0x88
-	public float cornerRadius; // 0x8C
-	public int cornerSegments; // 0x90
-	public float innerSegmentDistance; // 0x94
-	public float startAngle; // 0x98
+{
+	public int crossingElementLeftIndex; 
+	public int crossingElementRightIndex; 
+	public Vector3 centerHandleV3; 
+	public Vector3 centerHandleV3_2; 
+	public Vector3 leftHandleV3; 
+	public Vector3 rightHandleV3; 
+	public bool renderFlag; 
+	public bool leftConnectionHandle; 
+	public bool rightConnectionHandle; 
+	public float sidewalkWidth1; 
+	public float sidewalkWidth2; 
+	public float curbHeight; 
+	public float curbDepth; 
+	public bool beveledCurb; 
+	public float beveledHeight; 
+	public float beveledDepth; 
+	public bool outerCurb; 
+	public bool roadSideCurbUVControl; 
+	public bool outerSideCurbUVControl; 
+	public Material sidewalkMaterial; 
+	public List<float> sidewalkUVs; 
+	public List<float> curbUVs; 
+	public bool lockUVs; 
+	public float cornerRadius; 
+	public int cornerSegments; 
+	public float innerSegmentDistance; 
+	public float startAngle; 
 
 
-	public void .ctor(ERModularBase scr) { }
+public void .ctor(ERModularBase scr) { }
 
-	public void CopyFromSidewalk(ERSideWalk sw) { }
+public void CopyFromSidewalk(ERSideWalk sw) { }
 
-	public static bool ERSidewalkMatch(QDOQDSQOOQDDD sw1, QDOQDSQOOQDDD sw2) { }
+public static bool ERSidewalkMatch(QDOQDSQOOQDDD sw1, QDOQDSQOOQDDD sw2) { }
 
 }
 

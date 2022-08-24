@@ -1,22 +1,23 @@
 public sealed class SoapMethodAttribute : SoapAttribute // TypeDefIndex: 1212
-{	private string _responseElement; // 0x28
-	private string _responseNamespace; // 0x30
-	private string _returnElement; // 0x38
-	private string _soapAction; // 0x40
-	private bool _useAttribute; // 0x48
-	private string _namespace; // 0x50
+{
+	private string _responseElement; 
+	private string _responseNamespace; 
+	private string _returnElement; 
+	private string _soapAction; 
+	private bool _useAttribute; 
+	private string _namespace; 
 
-	public override bool UseAttribute { get; }
-	public override string XmlNamespace { get; }
+public override bool UseAttribute { get; }
+public override string XmlNamespace { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public override bool get_UseAttribute() { }
+public override bool get_UseAttribute() { }
 
-	public override string get_XmlNamespace() { }
+public override string get_XmlNamespace() { }
 
-	internal override void SetReflectionObject(object reflectionObject) { }
+internal override void SetReflectionObject(object reflectionObject) { }
 
 }
 

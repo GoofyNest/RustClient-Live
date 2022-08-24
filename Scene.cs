@@ -1,51 +1,52 @@
 public struct Scene // TypeDefIndex: 3655
-{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private int m_Handle; // 0x0
+{
+	[SerializeField] 
+	private int m_Handle; 
 
-	public int handle { get; }
-	public string name { get; }
-	public bool isLoaded { get; }
-	public int buildIndex { get; }
-	public int rootCount { get; }
+public int handle { get; }
+public string name { get; }
+public bool isLoaded { get; }
+public int buildIndex { get; }
+public int rootCount { get; }
 
 
-	[StaticAccessorAttribute] // RVA: 0xE16A0 Offset: 0xE0AA0 VA: 0x1800E16A0
-	private static bool IsValidInternal(int sceneHandle) { }
+	[StaticAccessorAttribute] 
+private static bool IsValidInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] // RVA: 0xE16A0 Offset: 0xE0AA0 VA: 0x1800E16A0
-	private static string GetNameInternal(int sceneHandle) { }
+	[StaticAccessorAttribute] 
+private static string GetNameInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] // RVA: 0xE16A0 Offset: 0xE0AA0 VA: 0x1800E16A0
-	private static bool GetIsLoadedInternal(int sceneHandle) { }
+	[StaticAccessorAttribute] 
+private static bool GetIsLoadedInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] // RVA: 0xE16A0 Offset: 0xE0AA0 VA: 0x1800E16A0
-	private static int GetBuildIndexInternal(int sceneHandle) { }
+	[StaticAccessorAttribute] 
+private static int GetBuildIndexInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] // RVA: 0xE16A0 Offset: 0xE0AA0 VA: 0x1800E16A0
-	private static int GetRootCountInternal(int sceneHandle) { }
+	[StaticAccessorAttribute] 
+private static int GetRootCountInternal(int sceneHandle) { }
 
-	[StaticAccessorAttribute] // RVA: 0xE16A0 Offset: 0xE0AA0 VA: 0x1800E16A0
-	private static void GetRootGameObjectsInternal(int sceneHandle, object resultRootList) { }
+	[StaticAccessorAttribute] 
+private static void GetRootGameObjectsInternal(int sceneHandle, object resultRootList) { }
 
-	public int get_handle() { }
+public int get_handle() { }
 
-	public bool IsValid() { }
+public bool IsValid() { }
 
-	public string get_name() { }
+public string get_name() { }
 
-	public bool get_isLoaded() { }
+public bool get_isLoaded() { }
 
-	public int get_buildIndex() { }
+public int get_buildIndex() { }
 
-	public int get_rootCount() { }
+public int get_rootCount() { }
 
-	public GameObject[] GetRootGameObjects() { }
+public GameObject[] GetRootGameObjects() { }
 
-	public void GetRootGameObjects(List<GameObject> rootGameObjects) { }
+public void GetRootGameObjects(List<GameObject> rootGameObjects) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override bool Equals(object other) { }
+public override bool Equals(object other) { }
 
 }
 

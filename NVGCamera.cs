@@ -1,29 +1,30 @@
 public class NVGCamera : FacepunchBehaviour, IClothingChanged // TypeDefIndex: 8676
-{	public static NVGCamera instance; // 0x0
-	public PostProcessVolume postProcessVolume; // 0x18
-	public GameObject lights; // 0x20
-	private bool initalized; // 0x28
+{
+	public static NVGCamera instance; 
+	public PostProcessVolume postProcessVolume; 
+	public GameObject lights; 
+	private bool initalized; 
 
 
-	public void Awake() { }
+public void Awake() { }
 
-	public void Start() { }
+public void Start() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnDisable() { }
+private void OnDisable() { }
 
-	public void OnClothingChanged() { }
+public void OnClothingChanged() { }
 
-	public static bool IsEffectOn() { }
+public static bool IsEffectOn() { }
 
-	public static void SetEffectsOn(bool wantsOn, bool fadeOut = True) { }
+public static void SetEffectsOn(bool wantsOn, bool fadeOut = True) { }
 
-	public void OnThink() { }
+public void OnThink() { }
 
-	public void FadeOut() { }
+public void FadeOut() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

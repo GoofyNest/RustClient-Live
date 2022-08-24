@@ -1,18 +1,19 @@
 public class SlotMachineLootPanel : LootPanel // TypeDefIndex: 8748
-{	public Text spinsRemainingText; // 0x38
-	public Text multiplierText; // 0x40
-	public LocalizeText ScrapCostText; // 0x48
+{
+	public Text spinsRemainingText; 
+	public Text multiplierText; 
+	public LocalizeText ScrapCostText; 
 
 
-	public SlotMachineStorage GetStorage() { }
+public SlotMachineStorage GetStorage() { }
 
-	public SlotMachine GetSlotMachine() { }
+public SlotMachine GetSlotMachine() { }
 
-	public override void Update() { }
+public override void Update() { }
 
-	public void OnClickedRaiseLowerBet(int direction) { }
+public void OnClickedRaiseLowerBet(int direction) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

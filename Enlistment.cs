@@ -1,12 +1,13 @@
 public class Enlistment // TypeDefIndex: 3976
-{	internal bool done; // 0x10
+{
+	internal bool done; 
 
 
-	internal void .ctor() { }
+internal void .ctor() { }
 
-	public void Done() { }
+public void Done() { }
 
-	internal virtual void InternalOnDone() { }
+internal virtual void InternalOnDone() { }
 
 }
 

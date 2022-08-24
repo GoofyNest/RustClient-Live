@@ -1,24 +1,25 @@
 public class LootPanelContainer : MonoBehaviour // TypeDefIndex: 11028
-{	public static string containerName; // 0x0
-	public GameObject NoLootPanel; // 0x18
-	internal bool wasShowingPanel; // 0x20
-	internal GameObject currentLootPanel; // 0x28
-	private string _lastLootPanel; // 0x30
+{
+	public static string containerName; 
+	public GameObject NoLootPanel; 
+	internal bool wasShowingPanel; 
+	internal GameObject currentLootPanel; 
+	private string _lastLootPanel; 
 
-	private bool shouldShowPanel { get; }
+private bool shouldShowPanel { get; }
 
 
-	private void Update() { }
+private void Update() { }
 
-	private void CreateLootPanel() { }
+private void CreateLootPanel() { }
 
-	private void DestroyLootPanel() { }
+private void DestroyLootPanel() { }
 
-	private bool get_shouldShowPanel() { }
+private bool get_shouldShowPanel() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

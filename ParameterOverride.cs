@@ -1,38 +1,39 @@
 public abstract class ParameterOverride // TypeDefIndex: 11820
-{	public bool overrideState; // 0x10
+{
+	public bool overrideState; 
 
 
-	internal abstract void Interp(ParameterOverride from, ParameterOverride to, float t);
+internal abstract void Interp(ParameterOverride from, ParameterOverride to, float t);
 
-	public abstract int GetHash();
+public abstract int GetHash();
 
-	public T GetValue<T>() { }
-	/* GenericInstMethod :
-	|
-	|-ParameterOverride.GetValue<bool>
-	|
-	|-ParameterOverride.GetValue<int>
-	|-ParameterOverride.GetValue<Int32Enum>
-	|
-	|-ParameterOverride.GetValue<object>
-	|
-	|-ParameterOverride.GetValue<float>
-	|
-	|-ParameterOverride.GetValue<Color>
-	|-ParameterOverride.GetValue<Vector4>
-	|
-	|-ParameterOverride.GetValue<Vector2>
-	|
-	|-ParameterOverride.GetValue<Vector3>
-	*/
+public T GetValue<T>() { }
+/* GenericInstMethod :
+|
+|-ParameterOverride.GetValue<bool>
+|
+|-ParameterOverride.GetValue<int>
+|-ParameterOverride.GetValue<Int32Enum>
+|
+|-ParameterOverride.GetValue<object>
+|
+|-ParameterOverride.GetValue<float>
+|
+|-ParameterOverride.GetValue<Color>
+|-ParameterOverride.GetValue<Vector4>
+|
+|-ParameterOverride.GetValue<Vector2>
+|
+|-ParameterOverride.GetValue<Vector3>
+*/
 
-	protected internal virtual void OnEnable() { }
+protected internal virtual void OnEnable() { }
 
-	protected internal virtual void OnDisable() { }
+protected internal virtual void OnDisable() { }
 
-	internal abstract void SetValue(ParameterOverride parameter);
+internal abstract void SetValue(ParameterOverride parameter);
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
 }
 

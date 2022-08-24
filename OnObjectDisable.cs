@@ -1,10 +1,11 @@
 internal class OnObjectDisable : MonoBehaviour // TypeDefIndex: 6631
-{	public UnityEvent Action; // 0x18
+{
+	public UnityEvent Action; 
 
 
-	private void OnDisable() { }
+private void OnDisable() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

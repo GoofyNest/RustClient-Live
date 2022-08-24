@@ -1,8 +1,9 @@
 public sealed class ComDefaultInterfaceAttribute : Attribute // TypeDefIndex: 1324
-{	internal Type _val; // 0x10
+{
+	internal Type _val; 
 
 
-	public void .ctor(Type defaultInterface) { }
+public void .ctor(Type defaultInterface) { }
 
 }
 

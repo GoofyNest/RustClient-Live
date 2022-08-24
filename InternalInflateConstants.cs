@@ -1,8 +1,9 @@
 internal static class InternalInflateConstants // TypeDefIndex: 6948
-{	internal static readonly int[] InflateMask; // 0x2CEA
+{
+	internal static readonly int[] InflateMask; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

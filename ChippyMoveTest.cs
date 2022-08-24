@@ -1,12 +1,13 @@
 public class ChippyMoveTest : MonoBehaviour // TypeDefIndex: 8770
-{	public Vector3 heading; // 0x18
-	public float speed; // 0x24
-	public float maxSpeed; // 0x28
+{
+	public Vector3 heading; 
+	public float speed; 
+	public float maxSpeed; 
 
 
-	private void FixedUpdate() { }
+private void FixedUpdate() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

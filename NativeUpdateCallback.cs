@@ -1,14 +1,15 @@
 internal sealed class NativeUpdateCallback : MulticastDelegate // TypeDefIndex: 4520
 {
-internal sealed class NativeUpdateCallback : MulticastDelegate // TypeDefIndex: 4520
 
-	public void .ctor(object object, IntPtr method) { }
+internal sealed class NativeUpdateCallback : MulticastDelegate 
 
-	public virtual void Invoke(NativeInputUpdateType updateType, NativeInputEventBuffer* buffer) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(NativeInputUpdateType updateType, NativeInputEventBuffer* buffer, AsyncCallback callback, object object) { }
+public virtual void Invoke(NativeInputUpdateType updateType, NativeInputEventBuffer* buffer) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(NativeInputUpdateType updateType, NativeInputEventBuffer* buffer, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

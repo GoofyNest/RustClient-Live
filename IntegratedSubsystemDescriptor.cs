@@ -1,12 +1,13 @@
 public abstract class IntegratedSubsystemDescriptor : ISubsystemDescriptorImpl, ISubsystemDescriptor // TypeDefIndex: 3939
-{	internal IntPtr m_Ptr; // 0x10
+{
+	internal IntPtr m_Ptr; 
 
-	private IntPtr UnityEngine.ISubsystemDescriptorImpl.ptr { set; }
+private IntPtr UnityEngine.ISubsystemDescriptorImpl.ptr { set; }
 
 
-	private void UnityEngine.ISubsystemDescriptorImpl.set_ptr(IntPtr value) { }
+private void UnityEngine.ISubsystemDescriptorImpl.set_ptr(IntPtr value) { }
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
 }
 

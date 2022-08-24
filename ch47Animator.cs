@@ -1,33 +1,34 @@
 public class ch47Animator : MonoBehaviour // TypeDefIndex: 8856
-{	public Animator animator; // 0x18
-	public bool bottomDoorOpen; // 0x20
-	public bool landingGearDown; // 0x21
-	public bool leftDoorOpen; // 0x22
-	public bool rightDoorOpen; // 0x23
-	public bool rearDoorOpen; // 0x24
-	public bool rearDoorExtensionOpen; // 0x25
-	public Transform rearRotorBlade; // 0x28
-	public Transform frontRotorBlade; // 0x30
-	public float rotorBladeSpeed; // 0x38
-	public float wheelTurnSpeed; // 0x3C
-	public float wheelTurnAngle; // 0x40
-	public SkinnedMeshRenderer[] blurredRotorBlades; // 0x48
-	public SkinnedMeshRenderer[] RotorBlades; // 0x50
-	private bool blurredRotorBladesEnabled; // 0x58
-	public float blurSpeedThreshold; // 0x5C
+{
+	public Animator animator; 
+	public bool bottomDoorOpen; 
+	public bool landingGearDown; 
+	public bool leftDoorOpen; 
+	public bool rightDoorOpen; 
+	public bool rearDoorOpen; 
+	public bool rearDoorExtensionOpen; 
+	public Transform rearRotorBlade; 
+	public Transform frontRotorBlade; 
+	public float rotorBladeSpeed; 
+	public float wheelTurnSpeed; 
+	public float wheelTurnAngle; 
+	public SkinnedMeshRenderer[] blurredRotorBlades; 
+	public SkinnedMeshRenderer[] RotorBlades; 
+	private bool blurredRotorBladesEnabled; 
+	public float blurSpeedThreshold; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	public void SetDropDoorOpen(bool isOpen) { }
+public void SetDropDoorOpen(bool isOpen) { }
 
-	private void Update() { }
+private void Update() { }
 
-	private void LateUpdate() { }
+private void LateUpdate() { }
 
-	private void EnableBlurredRotorBlades(bool enabled) { }
+private void EnableBlurredRotorBlades(bool enabled) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

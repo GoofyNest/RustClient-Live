@@ -1,14 +1,15 @@
 public sealed class DownloadStringCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2962
 {
-public sealed class DownloadStringCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2962
 
-	public void .ctor(object object, IntPtr method) { }
+public sealed class DownloadStringCompletedEventHandler : MulticastDelegate 
 
-	public virtual void Invoke(object sender, DownloadStringCompletedEventArgs e) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(object sender, DownloadStringCompletedEventArgs e, AsyncCallback callback, object object) { }
+public virtual void Invoke(object sender, DownloadStringCompletedEventArgs e) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(object sender, DownloadStringCompletedEventArgs e, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

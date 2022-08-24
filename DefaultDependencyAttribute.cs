@@ -1,8 +1,9 @@
 public sealed class DefaultDependencyAttribute : Attribute // TypeDefIndex: 1298
-{	private LoadHint loadHint; // 0x10
+{
+	private LoadHint loadHint; 
 
 
-	public void .ctor(LoadHint loadHintArgument) { }
+public void .ctor(LoadHint loadHintArgument) { }
 
 }
 

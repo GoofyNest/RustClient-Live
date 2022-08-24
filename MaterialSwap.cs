@@ -1,14 +1,15 @@
 public class MaterialSwap : MonoBehaviour, IClientComponent // TypeDefIndex: 9351
-{	public int materialIndex; // 0x18
-	public Renderer myRenderer; // 0x20
-	public Material OverrideMaterial; // 0x28
-	private bool initialized; // 0x30
-	private Material[] originalMaterials; // 0x38
+{
+	public int materialIndex; 
+	public Renderer myRenderer; 
+	public Material OverrideMaterial; 
+	private bool initialized; 
+	private Material[] originalMaterials; 
 
 
-	public void SetOverrideEnabled(bool on) { }
+public void SetOverrideEnabled(bool on) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

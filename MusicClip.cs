@@ -1,13 +1,14 @@
 public class MusicClip : ScriptableObject // TypeDefIndex: 9001
-{	public AudioClip audioClip; // 0x18
-	public int lengthInBars; // 0x20
-	public int lengthInBarsWithTail; // 0x24
-	public List<float> fadeInPoints; // 0x28
+{
+	public AudioClip audioClip; 
+	public int lengthInBars; 
+	public int lengthInBarsWithTail; 
+	public List<float> fadeInPoints; 
 
 
-	public float GetNextFadeInPoint(float currentClipTimeBars) { }
+public float GetNextFadeInPoint(float currentClipTimeBars) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

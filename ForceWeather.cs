@@ -1,16 +1,17 @@
 internal class ForceWeather : MonoBehaviour // TypeDefIndex: 12091
-{	private Toggle component; // 0x18
-	public bool Rain; // 0x20
-	public bool Fog; // 0x21
-	public bool Wind; // 0x22
-	public bool Clouds; // 0x23
+{
+	private Toggle component; 
+	public bool Rain; 
+	public bool Fog; 
+	public bool Wind; 
+	public bool Clouds; 
 
 
-	public void OnEnable() { }
+public void OnEnable() { }
 
-	public void Update() { }
+public void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,14 +1,15 @@
 public class MapMarkerCH47 : MapMarker // TypeDefIndex: 8871
-{	private GameObject createdMarker; // 0x178
+{
+	private GameObject createdMarker; 
 
 
-	public override void SetupUIMarker(GameObject marker) { }
+public override void SetupUIMarker(GameObject marker) { }
 
-	public void Update() { }
+public void Update() { }
 
-	private float GetRotation() { }
+private float GetRotation() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

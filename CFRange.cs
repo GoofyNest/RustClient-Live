@@ -1,9 +1,10 @@
 internal struct CFRange // TypeDefIndex: 2516
-{	public IntPtr Location; // 0x0
-	public IntPtr Length; // 0x8
+{
+	public IntPtr Location; 
+	public IntPtr Length; 
 
 
-	public void .ctor(int loc, int len) { }
+public void .ctor(int loc, int len) { }
 
 }
 

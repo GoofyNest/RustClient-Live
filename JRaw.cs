@@ -1,12 +1,13 @@
 public class JRaw : JValue // TypeDefIndex: 6044
 {
-	public void .ctor(JRaw other) { }
 
-	public void .ctor(object rawJson) { }
+public void .ctor(JRaw other) { }
 
-	public static JRaw Create(JsonReader reader) { }
+public void .ctor(object rawJson) { }
 
-	internal override JToken CloneToken() { }
+public static JRaw Create(JsonReader reader) { }
+
+internal override JToken CloneToken() { }
 
 }
 

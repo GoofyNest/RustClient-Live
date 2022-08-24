@@ -1,12 +1,13 @@
 internal sealed class CachingEventHandler : MulticastDelegate // TypeDefIndex: 1942
 {
-	public void .ctor(object object, IntPtr method) { }
 
-	public virtual void Invoke(XsdCachingReader cachingReader) { }
+public void .ctor(object object, IntPtr method) { }
 
-	public virtual IAsyncResult BeginInvoke(XsdCachingReader cachingReader, AsyncCallback callback, object object) { }
+public virtual void Invoke(XsdCachingReader cachingReader) { }
 
-	public virtual void EndInvoke(IAsyncResult result) { }
+public virtual IAsyncResult BeginInvoke(XsdCachingReader cachingReader, AsyncCallback callback, object object) { }
+
+public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

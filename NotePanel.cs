@@ -1,13 +1,14 @@
 public class NotePanel : MonoBehaviour // TypeDefIndex: 8809
-{	public InputField input; // 0x18
-	private Item item; // 0x20
+{
+	public InputField input; 
+	private Item item; 
 
 
-	protected virtual void OnItem(Item item) { }
+protected virtual void OnItem(Item item) { }
 
-	public void OnChanged() { }
+public void OnChanged() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

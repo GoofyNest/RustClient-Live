@@ -1,62 +1,64 @@
 public class LootPanelWaterCatcher : LootPanel // TypeDefIndex: 11037
-{	public ItemIcon sourceItem; // 0x38
-	public Image capacityImage; // 0x40
-	public CanvasGroup helpCanvas; // 0x48
-	public CanvasGroup buttonsCanvas; // 0x50
-	public Button fromButton; // 0x58
-	public Button toButton; // 0x60
-	public Button drinkButton; // 0x68
-	private LootPanelWaterCatcher.TransferMode transferMode; // 0x70
+{
+	public ItemIcon sourceItem; 
+	public Image capacityImage; 
+	public CanvasGroup helpCanvas; 
+	public CanvasGroup buttonsCanvas; 
+	public Button fromButton; 
+	public Button toButton; 
+	public Button drinkButton; 
+	private LootPanelWaterCatcher.TransferMode transferMode; 
 
 
-	protected override void OnDisable() { }
+protected override void OnDisable() { }
 
-	public bool CanCopyFrom() { }
+public bool CanCopyFrom() { }
 
-	public void CopyFrom() { }
+public void CopyFrom() { }
 
-	public bool CanCopyTo() { }
+public bool CanCopyTo() { }
 
-	public void CopyTo() { }
+public void CopyTo() { }
 
-	public void OnCopyFromDown() { }
+public void OnCopyFromDown() { }
 
-	public void OnCopyFromUp() { }
+public void OnCopyFromUp() { }
 
-	public void OnCopyToDown() { }
+public void OnCopyToDown() { }
 
-	public void OnCopyToUp() { }
+public void OnCopyToUp() { }
 
-	public void OnDrinkDown() { }
+public void OnDrinkDown() { }
 
-	public void OnDrinkUp() { }
+public void OnDrinkUp() { }
 
-	private void InitAutoTransfer(LootPanelWaterCatcher.TransferMode mode, float interval, float delay) { }
+private void InitAutoTransfer(LootPanelWaterCatcher.TransferMode mode, float interval, float delay) { }
 
-	private void AutoTransfer() { }
+private void AutoTransfer() { }
 
-	private void StopAutoTransfer() { }
+private void StopAutoTransfer() { }
 
-	public override void Update() { }
+public override void Update() { }
 
-	public bool SelectedValidTarget() { }
+public bool SelectedValidTarget() { }
 
-	public LiquidContainer GetLiquidContainer() { }
+public LiquidContainer GetLiquidContainer() { }
 
-	public bool CanDrink() { }
+public bool CanDrink() { }
 
-	public void Drink() { }
+public void Drink() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 private enum LootPanelWaterCatcher.TransferMode // TypeDefIndex: 11038
-{	public int value__; // 0x0
-	public const LootPanelWaterCatcher.TransferMode None = 0;
-	public const LootPanelWaterCatcher.TransferMode From = 1;
-	public const LootPanelWaterCatcher.TransferMode To = 2;
-	public const LootPanelWaterCatcher.TransferMode Drink = 3;
+{
+	public int value__; 
+public const LootPanelWaterCatcher.TransferMode None = 0;
+public const LootPanelWaterCatcher.TransferMode From = 1;
+public const LootPanelWaterCatcher.TransferMode To = 2;
+public const LootPanelWaterCatcher.TransferMode Drink = 3;
 
 }
 

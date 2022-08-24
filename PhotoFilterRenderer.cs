@@ -1,14 +1,15 @@
 public class PhotoFilterRenderer : PostProcessEffectRenderer<PhotoFilter> // TypeDefIndex: 10267
-{	private int rgbProperty; // 0x20
-	private int densityProperty; // 0x24
-	private Shader greyScaleShader; // 0x28
+{
+	private int rgbProperty; 
+	private int densityProperty; 
+	private Shader greyScaleShader; 
 
 
-	public override void Init() { }
+public override void Init() { }
 
-	public override void Render(PostProcessRenderContext context) { }
+public override void Render(PostProcessRenderContext context) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

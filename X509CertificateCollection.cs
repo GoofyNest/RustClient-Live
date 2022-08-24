@@ -1,119 +1,125 @@
 internal class X509CertificateCollection : CollectionBase, IEnumerable // TypeDefIndex: 59
-{	public X509Certificate Item { get; }
+{
+public X509Certificate Item { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public X509Certificate get_Item(int index) { }
+public X509Certificate get_Item(int index) { }
 
-	public int Add(X509Certificate value) { }
+public int Add(X509Certificate value) { }
 
-	public X509CertificateCollection.X509CertificateEnumerator GetEnumerator() { }
+public X509CertificateCollection.X509CertificateEnumerator GetEnumerator() { }
 
-	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
 }
 
 public class X509CertificateCollection.X509CertificateEnumerator : IEnumerator // TypeDefIndex: 60
-{	private IEnumerator enumerator; // 0x10
+{
+	private IEnumerator enumerator; 
 
-	public X509Certificate Current { get; }
-	private object System.Collections.IEnumerator.Current { get; }
+public X509Certificate Current { get; }
+private object System.Collections.IEnumerator.Current { get; }
 
 
-	public void .ctor(X509CertificateCollection mappings) { }
+public void .ctor(X509CertificateCollection mappings) { }
 
-	public X509Certificate get_Current() { }
+public X509Certificate get_Current() { }
 
-	private object System.Collections.IEnumerator.get_Current() { }
+private object System.Collections.IEnumerator.get_Current() { }
 
-	private bool System.Collections.IEnumerator.MoveNext() { }
+private bool System.Collections.IEnumerator.MoveNext() { }
 
-	private void System.Collections.IEnumerator.Reset() { }
+private void System.Collections.IEnumerator.Reset() { }
 
-	public bool MoveNext() { }
+public bool MoveNext() { }
 
 }
 
 public class X509CertificateCollection : CollectionBase, IEnumerable // TypeDefIndex: 1717
-{	public X509Certificate Item { get; }
+{
+public X509Certificate Item { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public X509Certificate get_Item(int index) { }
+public X509Certificate get_Item(int index) { }
 
-	public int Add(X509Certificate value) { }
+public int Add(X509Certificate value) { }
 
-	public X509CertificateCollection.X509CertificateEnumerator GetEnumerator() { }
+public X509CertificateCollection.X509CertificateEnumerator GetEnumerator() { }
 
-	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
 }
 
 public class X509CertificateCollection.X509CertificateEnumerator : IEnumerator // TypeDefIndex: 1718
-{	private IEnumerator enumerator; // 0x10
+{
+	private IEnumerator enumerator; 
 
-	public X509Certificate Current { get; }
-	private object System.Collections.IEnumerator.Current { get; }
+public X509Certificate Current { get; }
+private object System.Collections.IEnumerator.Current { get; }
 
 
-	public void .ctor(X509CertificateCollection mappings) { }
+public void .ctor(X509CertificateCollection mappings) { }
 
-	public X509Certificate get_Current() { }
+public X509Certificate get_Current() { }
 
-	private object System.Collections.IEnumerator.get_Current() { }
+private object System.Collections.IEnumerator.get_Current() { }
 
-	private bool System.Collections.IEnumerator.MoveNext() { }
+private bool System.Collections.IEnumerator.MoveNext() { }
 
-	private void System.Collections.IEnumerator.Reset() { }
+private void System.Collections.IEnumerator.Reset() { }
 
-	public bool MoveNext() { }
+public bool MoveNext() { }
 
 }
 
 public class X509CertificateCollection : CollectionBase // TypeDefIndex: 2819
-{	public X509Certificate Item { get; }
+{
+public X509Certificate Item { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public void .ctor(X509CertificateCollection value) { }
+public void .ctor(X509CertificateCollection value) { }
 
-	public X509Certificate get_Item(int index) { }
+public X509Certificate get_Item(int index) { }
 
-	public int Add(X509Certificate value) { }
+public int Add(X509Certificate value) { }
 
-	public void AddRange(X509CertificateCollection value) { }
+public void AddRange(X509CertificateCollection value) { }
 
-	public X509CertificateCollection.X509CertificateEnumerator GetEnumerator() { }
+public X509CertificateCollection.X509CertificateEnumerator GetEnumerator() { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
 }
 
 public class X509CertificateCollection.X509CertificateEnumerator : IEnumerator // TypeDefIndex: 2820
-{	private IEnumerator enumerator; // 0x10
+{
+	private IEnumerator enumerator; 
 
-	public X509Certificate Current { get; }
-	private object System.Collections.IEnumerator.Current { get; }
+public X509Certificate Current { get; }
+private object System.Collections.IEnumerator.Current { get; }
 
 
-	public void .ctor(X509CertificateCollection mappings) { }
+public void .ctor(X509CertificateCollection mappings) { }
 
-	public X509Certificate get_Current() { }
+public X509Certificate get_Current() { }
 
-	private object System.Collections.IEnumerator.get_Current() { }
+private object System.Collections.IEnumerator.get_Current() { }
 
-	private bool System.Collections.IEnumerator.MoveNext() { }
+private bool System.Collections.IEnumerator.MoveNext() { }
 
-	private void System.Collections.IEnumerator.Reset() { }
+private void System.Collections.IEnumerator.Reset() { }
 
-	public bool MoveNext() { }
+public bool MoveNext() { }
 
 }
 

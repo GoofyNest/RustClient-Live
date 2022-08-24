@@ -1,36 +1,38 @@
 public static class WaterLevel // TypeDefIndex: 10054
 {
-	public static float Factor(Vector3 start, Vector3 end, float radius, BaseEntity forEntity) { }
 
-	public static float Factor(Bounds bounds, BaseEntity forEntity) { }
+public static float Factor(Vector3 start, Vector3 end, float radius, BaseEntity forEntity) { }
 
-	public static bool Test(Vector3 pos, bool waves = True, BaseEntity forEntity) { }
+public static float Factor(Bounds bounds, BaseEntity forEntity) { }
 
-	public static float GetWaterDepth(Vector3 pos, bool waves = True, BaseEntity forEntity) { }
+public static bool Test(Vector3 pos, bool waves = True, BaseEntity forEntity) { }
 
-	public static float GetOverallWaterDepth(Vector3 pos, bool waves = True, BaseEntity forEntity, bool noEarlyExit = False) { }
+public static float GetWaterDepth(Vector3 pos, bool waves = True, BaseEntity forEntity) { }
 
-	public static WaterLevel.WaterInfo GetBuoyancyWaterInfo(Vector3 pos, Vector2 posUV, float terrainHeight, float waterHeight, bool doDeepwaterChecks, BaseEntity forEntity) { }
+public static float GetOverallWaterDepth(Vector3 pos, bool waves = True, BaseEntity forEntity, bool noEarlyExit = False) { }
 
-	public static WaterLevel.WaterInfo GetWaterInfo(Vector3 pos, bool waves = True, BaseEntity forEntity, bool noEarlyExit = False) { }
+public static WaterLevel.WaterInfo GetBuoyancyWaterInfo(Vector3 pos, Vector2 posUV, float terrainHeight, float waterHeight, bool doDeepwaterChecks, BaseEntity forEntity) { }
 
-	public static WaterLevel.WaterInfo GetWaterInfo(Bounds bounds, BaseEntity forEntity, bool waves = True) { }
+public static WaterLevel.WaterInfo GetWaterInfo(Vector3 pos, bool waves = True, BaseEntity forEntity, bool noEarlyExit = False) { }
 
-	public static WaterLevel.WaterInfo GetWaterInfo(Vector3 start, Vector3 end, float radius, BaseEntity forEntity, bool waves = True) { }
+public static WaterLevel.WaterInfo GetWaterInfo(Bounds bounds, BaseEntity forEntity, bool waves = True) { }
 
-	private static WaterLevel.WaterInfo GetWaterInfoFromVolumes(Bounds bounds, BaseEntity forEntity) { }
+public static WaterLevel.WaterInfo GetWaterInfo(Vector3 start, Vector3 end, float radius, BaseEntity forEntity, bool waves = True) { }
 
-	private static WaterLevel.WaterInfo GetWaterInfoFromVolumes(Vector3 pos, BaseEntity forEntity) { }
+private static WaterLevel.WaterInfo GetWaterInfoFromVolumes(Bounds bounds, BaseEntity forEntity) { }
 
-	private static WaterLevel.WaterInfo GetWaterInfoFromVolumes(Vector3 start, Vector3 end, float radius, BaseEntity forEntity) { }
+private static WaterLevel.WaterInfo GetWaterInfoFromVolumes(Vector3 pos, BaseEntity forEntity) { }
+
+private static WaterLevel.WaterInfo GetWaterInfoFromVolumes(Vector3 start, Vector3 end, float radius, BaseEntity forEntity) { }
 
 }
 
 public struct WaterLevel.WaterInfo // TypeDefIndex: 10055
-{	public bool isValid; // 0x0
-	public float currentDepth; // 0x4
-	public float overallDepth; // 0x8
-	public float surfaceLevel; // 0xC
+{
+	public bool isValid; 
+	public float currentDepth; 
+	public float overallDepth; 
+	public float surfaceLevel; 
 
 }
 

@@ -1,10 +1,11 @@
 public struct TimeSince // TypeDefIndex: 6164
-{	private float time; // 0x0
+{
+	private float time; 
 
 
-	public static float op_Implicit(TimeSince ts) { }
+public static float op_Implicit(TimeSince ts) { }
 
-	public static TimeSince op_Implicit(float ts) { }
+public static TimeSince op_Implicit(float ts) { }
 
 }
 

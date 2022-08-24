@@ -1,139 +1,141 @@
 public class ReaderWriterLockSlim : IDisposable // TypeDefIndex: 3191
-{	private bool fIsReentrant; // 0x10
-	private int myLock; // 0x14
-	private uint numWriteWaiters; // 0x18
-	private uint numReadWaiters; // 0x1C
-	private uint numWriteUpgradeWaiters; // 0x20
-	private uint numUpgradeWaiters; // 0x24
-	private bool fNoWaiters; // 0x28
-	private int upgradeLockOwnerId; // 0x2C
-	private int writeLockOwnerId; // 0x30
-	private EventWaitHandle writeEvent; // 0x38
-	private EventWaitHandle readEvent; // 0x40
-	private EventWaitHandle upgradeEvent; // 0x48
-	private EventWaitHandle waitUpgradeEvent; // 0x50
-	private static long s_nextLockID; // 0x0
-	private long lockID; // 0x58
-	[ThreadStaticAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private static ReaderWriterCount t_rwc; // 0x80000000
-	private bool fUpgradeThreadHoldingRead; // 0x60
-	private uint owners; // 0x64
-	private bool fDisposed; // 0x68
+{
+	private bool fIsReentrant; 
+	private int myLock; 
+	private uint numWriteWaiters; 
+	private uint numReadWaiters; 
+	private uint numWriteUpgradeWaiters; 
+	private uint numUpgradeWaiters; 
+	private bool fNoWaiters; 
+	private int upgradeLockOwnerId; 
+	private int writeLockOwnerId; 
+	private EventWaitHandle writeEvent; 
+	private EventWaitHandle readEvent; 
+	private EventWaitHandle upgradeEvent; 
+	private EventWaitHandle waitUpgradeEvent; 
+	private static long s_nextLockID; 
+	private long lockID; 
+	[ThreadStaticAttribute] 
+	private static ReaderWriterCount t_rwc; 
+	private bool fUpgradeThreadHoldingRead; 
+	private uint owners; 
+	private bool fDisposed; 
 
-	public bool IsReadLockHeld { get; }
-	public bool IsUpgradeableReadLockHeld { get; }
-	public bool IsWriteLockHeld { get; }
-	public int RecursiveReadCount { get; }
-	public int RecursiveUpgradeCount { get; }
-	public int RecursiveWriteCount { get; }
-	public int WaitingReadCount { get; }
-	public int WaitingUpgradeCount { get; }
-	public int WaitingWriteCount { get; }
+public bool IsReadLockHeld { get; }
+public bool IsUpgradeableReadLockHeld { get; }
+public bool IsWriteLockHeld { get; }
+public int RecursiveReadCount { get; }
+public int RecursiveUpgradeCount { get; }
+public int RecursiveWriteCount { get; }
+public int WaitingReadCount { get; }
+public int WaitingUpgradeCount { get; }
+public int WaitingWriteCount { get; }
 
 
-	private void InitializeThreadCounts() { }
+private void InitializeThreadCounts() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public void .ctor(LockRecursionPolicy recursionPolicy) { }
+public void .ctor(LockRecursionPolicy recursionPolicy) { }
 
-	private static bool IsRWEntryEmpty(ReaderWriterCount rwc) { }
+private static bool IsRWEntryEmpty(ReaderWriterCount rwc) { }
 
-	private bool IsRwHashEntryChanged(ReaderWriterCount lrwc) { }
+private bool IsRwHashEntryChanged(ReaderWriterCount lrwc) { }
 
-	private ReaderWriterCount GetThreadRWCount(bool dontAllocate) { }
+private ReaderWriterCount GetThreadRWCount(bool dontAllocate) { }
 
-	public void EnterWriteLock() { }
+public void EnterWriteLock() { }
 
-	public bool TryEnterWriteLock(int millisecondsTimeout) { }
+public bool TryEnterWriteLock(int millisecondsTimeout) { }
 
-	private bool TryEnterWriteLock(ReaderWriterLockSlim.TimeoutTracker timeout) { }
+private bool TryEnterWriteLock(ReaderWriterLockSlim.TimeoutTracker timeout) { }
 
-	private bool TryEnterWriteLockCore(ReaderWriterLockSlim.TimeoutTracker timeout) { }
+private bool TryEnterWriteLockCore(ReaderWriterLockSlim.TimeoutTracker timeout) { }
 
-	public void EnterUpgradeableReadLock() { }
+public void EnterUpgradeableReadLock() { }
 
-	public bool TryEnterUpgradeableReadLock(int millisecondsTimeout) { }
+public bool TryEnterUpgradeableReadLock(int millisecondsTimeout) { }
 
-	private bool TryEnterUpgradeableReadLock(ReaderWriterLockSlim.TimeoutTracker timeout) { }
+private bool TryEnterUpgradeableReadLock(ReaderWriterLockSlim.TimeoutTracker timeout) { }
 
-	private bool TryEnterUpgradeableReadLockCore(ReaderWriterLockSlim.TimeoutTracker timeout) { }
+private bool TryEnterUpgradeableReadLockCore(ReaderWriterLockSlim.TimeoutTracker timeout) { }
 
-	public void ExitWriteLock() { }
+public void ExitWriteLock() { }
 
-	public void ExitUpgradeableReadLock() { }
+public void ExitUpgradeableReadLock() { }
 
-	private void LazyCreateEvent(ref EventWaitHandle waitEvent, bool makeAutoResetEvent) { }
+private void LazyCreateEvent(ref EventWaitHandle waitEvent, bool makeAutoResetEvent) { }
 
-	private bool WaitOnEvent(EventWaitHandle waitEvent, ref uint numWaiters, ReaderWriterLockSlim.TimeoutTracker timeout, bool isWriteWaiter) { }
+private bool WaitOnEvent(EventWaitHandle waitEvent, ref uint numWaiters, ReaderWriterLockSlim.TimeoutTracker timeout, bool isWriteWaiter) { }
 
-	private void ExitAndWakeUpAppropriateWaiters() { }
+private void ExitAndWakeUpAppropriateWaiters() { }
 
-	private void ExitAndWakeUpAppropriateWaitersPreferringWriters() { }
+private void ExitAndWakeUpAppropriateWaitersPreferringWriters() { }
 
-	private void ExitAndWakeUpAppropriateReadWaiters() { }
+private void ExitAndWakeUpAppropriateReadWaiters() { }
 
-	private bool IsWriterAcquired() { }
+private bool IsWriterAcquired() { }
 
-	private void SetWriterAcquired() { }
+private void SetWriterAcquired() { }
 
-	private void ClearWriterAcquired() { }
+private void ClearWriterAcquired() { }
 
-	private void SetWritersWaiting() { }
+private void SetWritersWaiting() { }
 
-	private void ClearWritersWaiting() { }
+private void ClearWritersWaiting() { }
 
-	private void SetUpgraderWaiting() { }
+private void SetUpgraderWaiting() { }
 
-	private void ClearUpgraderWaiting() { }
+private void ClearUpgraderWaiting() { }
 
-	private uint GetNumReaders() { }
+private uint GetNumReaders() { }
 
-	private void EnterMyLock() { }
+private void EnterMyLock() { }
 
-	private void EnterMyLockSpin() { }
+private void EnterMyLockSpin() { }
 
-	private void ExitMyLock() { }
+private void ExitMyLock() { }
 
-	private static void SpinWait(int SpinCount) { }
+private static void SpinWait(int SpinCount) { }
 
-	public void Dispose() { }
+public void Dispose() { }
 
-	private void Dispose(bool disposing) { }
+private void Dispose(bool disposing) { }
 
-	public bool get_IsReadLockHeld() { }
+public bool get_IsReadLockHeld() { }
 
-	public bool get_IsUpgradeableReadLockHeld() { }
+public bool get_IsUpgradeableReadLockHeld() { }
 
-	public bool get_IsWriteLockHeld() { }
+public bool get_IsWriteLockHeld() { }
 
-	public int get_RecursiveReadCount() { }
+public int get_RecursiveReadCount() { }
 
-	public int get_RecursiveUpgradeCount() { }
+public int get_RecursiveUpgradeCount() { }
 
-	public int get_RecursiveWriteCount() { }
+public int get_RecursiveWriteCount() { }
 
-	public int get_WaitingReadCount() { }
+public int get_WaitingReadCount() { }
 
-	public int get_WaitingUpgradeCount() { }
+public int get_WaitingUpgradeCount() { }
 
-	public int get_WaitingWriteCount() { }
+public int get_WaitingWriteCount() { }
 
 }
 
 private struct ReaderWriterLockSlim.TimeoutTracker // TypeDefIndex: 3192
-{	private int m_total; // 0x0
-	private int m_start; // 0x4
+{
+	private int m_total; 
+	private int m_start; 
 
-	public int RemainingMilliseconds { get; }
-	public bool IsExpired { get; }
+public int RemainingMilliseconds { get; }
+public bool IsExpired { get; }
 
 
-	public void .ctor(int millisecondsTimeout) { }
+public void .ctor(int millisecondsTimeout) { }
 
-	public int get_RemainingMilliseconds() { }
+public int get_RemainingMilliseconds() { }
 
-	public bool get_IsExpired() { }
+public bool get_IsExpired() { }
 
 }
 

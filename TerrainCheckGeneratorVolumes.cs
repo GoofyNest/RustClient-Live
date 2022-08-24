@@ -1,10 +1,11 @@
 public class TerrainCheckGeneratorVolumes : MonoBehaviour, IEditorComponent // TypeDefIndex: 10380
-{	public float PlacementRadius; // 0x18
+{
+	public float PlacementRadius; 
 
 
-	protected void OnDrawGizmosSelected() { }
+protected void OnDrawGizmosSelected() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

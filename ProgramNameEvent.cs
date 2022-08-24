@@ -1,12 +1,13 @@
 public sealed class ProgramNameEvent : BaseTextEvent // TypeDefIndex: 7542
 {
-	public void .ctor() { }
 
-	public void .ctor(string programName) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor(string programName) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

@@ -1,15 +1,16 @@
 public class ToggleTerrainRenderer : MonoBehaviour // TypeDefIndex: 11136
-{	public Toggle toggleControl; // 0x18
-	public Text textControl; // 0x20
+{
+	public Toggle toggleControl; 
+	public Text textControl; 
 
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	public void OnToggleChanged() { }
+public void OnToggleChanged() { }
 
-	protected void OnValidate() { }
+protected void OnValidate() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

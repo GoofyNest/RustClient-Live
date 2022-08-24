@@ -1,264 +1,268 @@
 public class ScrollRectEx : UIBehaviour, IInitializePotentialDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, ICanvasElement, ILayoutGroup, ILayoutController // TypeDefIndex: 11707
-{	public PointerEventData.InputButton scrollButton; // 0x18
-	public PointerEventData.InputButton altScrollButton; // 0x1C
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RectTransform m_Content; // 0x20
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private bool m_Horizontal; // 0x28
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private bool m_Vertical; // 0x29
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private ScrollRectEx.MovementType m_MovementType; // 0x2C
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float m_Elasticity; // 0x30
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private bool m_Inertia; // 0x34
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float m_DecelerationRate; // 0x38
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float m_ScrollSensitivity; // 0x3C
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RectTransform m_Viewport; // 0x40
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private Scrollbar m_HorizontalScrollbar; // 0x48
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private Scrollbar m_VerticalScrollbar; // 0x50
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private ScrollRectEx.ScrollbarVisibility m_HorizontalScrollbarVisibility; // 0x58
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private ScrollRectEx.ScrollbarVisibility m_VerticalScrollbarVisibility; // 0x5C
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float m_HorizontalScrollbarSpacing; // 0x60
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float m_VerticalScrollbarSpacing; // 0x64
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private ScrollRectEx.ScrollRectEvent m_OnValueChanged; // 0x68
-	private Vector2 m_PointerStartLocalCursor; // 0x70
-	private Vector2 m_ContentStartPosition; // 0x78
-	private RectTransform m_ViewRect; // 0x80
-	private Bounds m_ContentBounds; // 0x88
-	private Bounds m_ViewBounds; // 0xA0
-	private Vector2 m_Velocity; // 0xB8
-	private bool m_Dragging; // 0xC0
-	private Vector2 m_PrevPosition; // 0xC4
-	private Bounds m_PrevContentBounds; // 0xCC
-	private Bounds m_PrevViewBounds; // 0xE4
-	private bool m_HasRebuiltLayout; // 0xFC
-	private bool m_HSliderExpand; // 0xFD
-	private bool m_VSliderExpand; // 0xFE
-	private float m_HSliderHeight; // 0x100
-	private float m_VSliderWidth; // 0x104
-	private RectTransform m_Rect; // 0x108
-	private RectTransform m_HorizontalScrollbarRect; // 0x110
-	private RectTransform m_VerticalScrollbarRect; // 0x118
-	private DrivenRectTransformTracker m_Tracker; // 0x120
-	private readonly Vector3[] m_Corners; // 0x128
+{
+	public PointerEventData.InputButton scrollButton; 
+	public PointerEventData.InputButton altScrollButton; 
+	[SerializeField] 
+	private RectTransform m_Content; 
+	[SerializeField] 
+	private bool m_Horizontal; 
+	[SerializeField] 
+	private bool m_Vertical; 
+	[SerializeField] 
+	private ScrollRectEx.MovementType m_MovementType; 
+	[SerializeField] 
+	private float m_Elasticity; 
+	[SerializeField] 
+	private bool m_Inertia; 
+	[SerializeField] 
+	private float m_DecelerationRate; 
+	[SerializeField] 
+	private float m_ScrollSensitivity; 
+	[SerializeField] 
+	private RectTransform m_Viewport; 
+	[SerializeField] 
+	private Scrollbar m_HorizontalScrollbar; 
+	[SerializeField] 
+	private Scrollbar m_VerticalScrollbar; 
+	[SerializeField] 
+	private ScrollRectEx.ScrollbarVisibility m_HorizontalScrollbarVisibility; 
+	[SerializeField] 
+	private ScrollRectEx.ScrollbarVisibility m_VerticalScrollbarVisibility; 
+	[SerializeField] 
+	private float m_HorizontalScrollbarSpacing; 
+	[SerializeField] 
+	private float m_VerticalScrollbarSpacing; 
+	[SerializeField] 
+	private ScrollRectEx.ScrollRectEvent m_OnValueChanged; 
+	private Vector2 m_PointerStartLocalCursor; 
+	private Vector2 m_ContentStartPosition; 
+	private RectTransform m_ViewRect; 
+	private Bounds m_ContentBounds; 
+	private Bounds m_ViewBounds; 
+	private Vector2 m_Velocity; 
+	private bool m_Dragging; 
+	private Vector2 m_PrevPosition; 
+	private Bounds m_PrevContentBounds; 
+	private Bounds m_PrevViewBounds; 
+	private bool m_HasRebuiltLayout; 
+	private bool m_HSliderExpand; 
+	private bool m_VSliderExpand; 
+	private float m_HSliderHeight; 
+	private float m_VSliderWidth; 
+	private RectTransform m_Rect; 
+	private RectTransform m_HorizontalScrollbarRect; 
+	private RectTransform m_VerticalScrollbarRect; 
+	private DrivenRectTransformTracker m_Tracker; 
+	private readonly Vector3[] m_Corners; 
 
-	public RectTransform content { get; set; }
-	public bool horizontal { get; set; }
-	public bool vertical { get; set; }
-	public ScrollRectEx.MovementType movementType { get; set; }
-	public float elasticity { get; set; }
-	public bool inertia { get; set; }
-	public float decelerationRate { get; set; }
-	public float scrollSensitivity { get; set; }
-	public RectTransform viewport { get; set; }
-	public Scrollbar horizontalScrollbar { get; set; }
-	public Scrollbar verticalScrollbar { get; set; }
-	public ScrollRectEx.ScrollbarVisibility horizontalScrollbarVisibility { get; set; }
-	public ScrollRectEx.ScrollbarVisibility verticalScrollbarVisibility { get; set; }
-	public float horizontalScrollbarSpacing { get; set; }
-	public float verticalScrollbarSpacing { get; set; }
-	public ScrollRectEx.ScrollRectEvent onValueChanged { get; set; }
-	protected RectTransform viewRect { get; }
-	public Vector2 velocity { get; set; }
-	private RectTransform rectTransform { get; }
-	public Vector2 normalizedPosition { get; set; }
-	public float horizontalNormalizedPosition { get; set; }
-	public float verticalNormalizedPosition { get; set; }
-	private bool hScrollingNeeded { get; }
-	private bool vScrollingNeeded { get; }
+public RectTransform content { get; set; }
+public bool horizontal { get; set; }
+public bool vertical { get; set; }
+public ScrollRectEx.MovementType movementType { get; set; }
+public float elasticity { get; set; }
+public bool inertia { get; set; }
+public float decelerationRate { get; set; }
+public float scrollSensitivity { get; set; }
+public RectTransform viewport { get; set; }
+public Scrollbar horizontalScrollbar { get; set; }
+public Scrollbar verticalScrollbar { get; set; }
+public ScrollRectEx.ScrollbarVisibility horizontalScrollbarVisibility { get; set; }
+public ScrollRectEx.ScrollbarVisibility verticalScrollbarVisibility { get; set; }
+public float horizontalScrollbarSpacing { get; set; }
+public float verticalScrollbarSpacing { get; set; }
+public ScrollRectEx.ScrollRectEvent onValueChanged { get; set; }
+protected RectTransform viewRect { get; }
+public Vector2 velocity { get; set; }
+private RectTransform rectTransform { get; }
+public Vector2 normalizedPosition { get; set; }
+public float horizontalNormalizedPosition { get; set; }
+public float verticalNormalizedPosition { get; set; }
+private bool hScrollingNeeded { get; }
+private bool vScrollingNeeded { get; }
 
 
-	public RectTransform get_content() { }
+public RectTransform get_content() { }
 
-	public void set_content(RectTransform value) { }
+public void set_content(RectTransform value) { }
 
-	public bool get_horizontal() { }
+public bool get_horizontal() { }
 
-	public void set_horizontal(bool value) { }
+public void set_horizontal(bool value) { }
 
-	public bool get_vertical() { }
+public bool get_vertical() { }
 
-	public void set_vertical(bool value) { }
+public void set_vertical(bool value) { }
 
-	public ScrollRectEx.MovementType get_movementType() { }
+public ScrollRectEx.MovementType get_movementType() { }
 
-	public void set_movementType(ScrollRectEx.MovementType value) { }
+public void set_movementType(ScrollRectEx.MovementType value) { }
 
-	public float get_elasticity() { }
+public float get_elasticity() { }
 
-	public void set_elasticity(float value) { }
+public void set_elasticity(float value) { }
 
-	public bool get_inertia() { }
+public bool get_inertia() { }
 
-	public void set_inertia(bool value) { }
+public void set_inertia(bool value) { }
 
-	public float get_decelerationRate() { }
+public float get_decelerationRate() { }
 
-	public void set_decelerationRate(float value) { }
+public void set_decelerationRate(float value) { }
 
-	public float get_scrollSensitivity() { }
+public float get_scrollSensitivity() { }
 
-	public void set_scrollSensitivity(float value) { }
+public void set_scrollSensitivity(float value) { }
 
-	public RectTransform get_viewport() { }
+public RectTransform get_viewport() { }
 
-	public void set_viewport(RectTransform value) { }
+public void set_viewport(RectTransform value) { }
 
-	public Scrollbar get_horizontalScrollbar() { }
+public Scrollbar get_horizontalScrollbar() { }
 
-	public void set_horizontalScrollbar(Scrollbar value) { }
+public void set_horizontalScrollbar(Scrollbar value) { }
 
-	public Scrollbar get_verticalScrollbar() { }
+public Scrollbar get_verticalScrollbar() { }
 
-	public void set_verticalScrollbar(Scrollbar value) { }
+public void set_verticalScrollbar(Scrollbar value) { }
 
-	public ScrollRectEx.ScrollbarVisibility get_horizontalScrollbarVisibility() { }
+public ScrollRectEx.ScrollbarVisibility get_horizontalScrollbarVisibility() { }
 
-	public void set_horizontalScrollbarVisibility(ScrollRectEx.ScrollbarVisibility value) { }
+public void set_horizontalScrollbarVisibility(ScrollRectEx.ScrollbarVisibility value) { }
 
-	public ScrollRectEx.ScrollbarVisibility get_verticalScrollbarVisibility() { }
+public ScrollRectEx.ScrollbarVisibility get_verticalScrollbarVisibility() { }
 
-	public void set_verticalScrollbarVisibility(ScrollRectEx.ScrollbarVisibility value) { }
+public void set_verticalScrollbarVisibility(ScrollRectEx.ScrollbarVisibility value) { }
 
-	public float get_horizontalScrollbarSpacing() { }
+public float get_horizontalScrollbarSpacing() { }
 
-	public void set_horizontalScrollbarSpacing(float value) { }
+public void set_horizontalScrollbarSpacing(float value) { }
 
-	public float get_verticalScrollbarSpacing() { }
+public float get_verticalScrollbarSpacing() { }
 
-	public void set_verticalScrollbarSpacing(float value) { }
+public void set_verticalScrollbarSpacing(float value) { }
 
-	public ScrollRectEx.ScrollRectEvent get_onValueChanged() { }
+public ScrollRectEx.ScrollRectEvent get_onValueChanged() { }
 
-	public void set_onValueChanged(ScrollRectEx.ScrollRectEvent value) { }
+public void set_onValueChanged(ScrollRectEx.ScrollRectEvent value) { }
 
-	protected RectTransform get_viewRect() { }
+protected RectTransform get_viewRect() { }
 
-	public Vector2 get_velocity() { }
+public Vector2 get_velocity() { }
 
-	public void set_velocity(Vector2 value) { }
+public void set_velocity(Vector2 value) { }
 
-	private RectTransform get_rectTransform() { }
+private RectTransform get_rectTransform() { }
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
-	public virtual void Rebuild(CanvasUpdate executing) { }
+public virtual void Rebuild(CanvasUpdate executing) { }
 
-	private void UpdateCachedData() { }
+private void UpdateCachedData() { }
 
-	protected override void OnEnable() { }
+protected override void OnEnable() { }
 
-	protected override void OnDisable() { }
+protected override void OnDisable() { }
 
-	public override bool IsActive() { }
+public override bool IsActive() { }
 
-	private void EnsureLayoutHasRebuilt() { }
+private void EnsureLayoutHasRebuilt() { }
 
-	public virtual void StopMovement() { }
+public virtual void StopMovement() { }
 
-	public virtual void OnScroll(PointerEventData data) { }
+public virtual void OnScroll(PointerEventData data) { }
 
-	public virtual void OnInitializePotentialDrag(PointerEventData eventData) { }
+public virtual void OnInitializePotentialDrag(PointerEventData eventData) { }
 
-	public virtual void OnBeginDrag(PointerEventData eventData) { }
+public virtual void OnBeginDrag(PointerEventData eventData) { }
 
-	public virtual void OnEndDrag(PointerEventData eventData) { }
+public virtual void OnEndDrag(PointerEventData eventData) { }
 
-	public virtual void OnDrag(PointerEventData eventData) { }
+public virtual void OnDrag(PointerEventData eventData) { }
 
-	protected virtual void SetContentAnchoredPosition(Vector2 position) { }
+protected virtual void SetContentAnchoredPosition(Vector2 position) { }
 
-	protected virtual void LateUpdate() { }
+protected virtual void LateUpdate() { }
 
-	private void UpdatePrevData() { }
+private void UpdatePrevData() { }
 
-	private void UpdateScrollbars(Vector2 offset) { }
+private void UpdateScrollbars(Vector2 offset) { }
 
-	public Vector2 get_normalizedPosition() { }
+public Vector2 get_normalizedPosition() { }
 
-	public void set_normalizedPosition(Vector2 value) { }
+public void set_normalizedPosition(Vector2 value) { }
 
-	public float get_horizontalNormalizedPosition() { }
+public float get_horizontalNormalizedPosition() { }
 
-	public void set_horizontalNormalizedPosition(float value) { }
+public void set_horizontalNormalizedPosition(float value) { }
 
-	public float get_verticalNormalizedPosition() { }
+public float get_verticalNormalizedPosition() { }
 
-	public void set_verticalNormalizedPosition(float value) { }
+public void set_verticalNormalizedPosition(float value) { }
 
-	private void SetHorizontalNormalizedPosition(float value) { }
+private void SetHorizontalNormalizedPosition(float value) { }
 
-	private void SetVerticalNormalizedPosition(float value) { }
+private void SetVerticalNormalizedPosition(float value) { }
 
-	private void SetNormalizedPosition(float value, int axis) { }
+private void SetNormalizedPosition(float value, int axis) { }
 
-	private static float RubberDelta(float overStretching, float viewSize) { }
+private static float RubberDelta(float overStretching, float viewSize) { }
 
-	protected override void OnRectTransformDimensionsChange() { }
+protected override void OnRectTransformDimensionsChange() { }
 
-	private bool get_hScrollingNeeded() { }
+private bool get_hScrollingNeeded() { }
 
-	private bool get_vScrollingNeeded() { }
+private bool get_vScrollingNeeded() { }
 
-	public virtual void SetLayoutHorizontal() { }
+public virtual void SetLayoutHorizontal() { }
 
-	public virtual void SetLayoutVertical() { }
+public virtual void SetLayoutVertical() { }
 
-	private void UpdateScrollbarVisibility() { }
+private void UpdateScrollbarVisibility() { }
 
-	private void UpdateScrollbarLayout() { }
+private void UpdateScrollbarLayout() { }
 
-	private void UpdateBounds() { }
+private void UpdateBounds() { }
 
-	private Bounds GetBounds() { }
+private Bounds GetBounds() { }
 
-	private Vector2 CalculateOffset(Vector2 delta) { }
+private Vector2 CalculateOffset(Vector2 delta) { }
 
-	protected void SetDirty() { }
+protected void SetDirty() { }
 
-	protected void SetDirtyCaching() { }
+protected void SetDirtyCaching() { }
 
-	public void CenterOnPosition(Vector2 pos) { }
+public void CenterOnPosition(Vector2 pos) { }
 
-	public void LayoutComplete() { }
+public void LayoutComplete() { }
 
-	public void GraphicUpdateComplete() { }
+public void GraphicUpdateComplete() { }
 
-	private Transform UnityEngine.UI.ICanvasElement.get_transform() { }
+private Transform UnityEngine.UI.ICanvasElement.get_transform() { }
 
 }
 
 public enum ScrollRectEx.MovementType // TypeDefIndex: 11708
-{	public int value__; // 0x0
-	public const ScrollRectEx.MovementType Unrestricted = 0;
-	public const ScrollRectEx.MovementType Elastic = 1;
-	public const ScrollRectEx.MovementType Clamped = 2;
+{
+	public int value__; 
+public const ScrollRectEx.MovementType Unrestricted = 0;
+public const ScrollRectEx.MovementType Elastic = 1;
+public const ScrollRectEx.MovementType Clamped = 2;
 
 }
 
 public enum ScrollRectEx.ScrollbarVisibility // TypeDefIndex: 11709
-{	public int value__; // 0x0
-	public const ScrollRectEx.ScrollbarVisibility Permanent = 0;
-	public const ScrollRectEx.ScrollbarVisibility AutoHide = 1;
-	public const ScrollRectEx.ScrollbarVisibility AutoHideAndExpandViewport = 2;
+{
+	public int value__; 
+public const ScrollRectEx.ScrollbarVisibility Permanent = 0;
+public const ScrollRectEx.ScrollbarVisibility AutoHide = 1;
+public const ScrollRectEx.ScrollbarVisibility AutoHideAndExpandViewport = 2;
 
 }
 
 public class ScrollRectEx.ScrollRectEvent : UnityEvent<Vector2> // TypeDefIndex: 11710
 {
-	public void .ctor() { }
+
+public void .ctor() { }
 
 }
 

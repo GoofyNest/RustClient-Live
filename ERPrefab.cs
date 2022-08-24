@@ -1,9 +1,10 @@
 public class ERPrefab : MonoBehaviour // TypeDefIndex: 7288
-{	public bool isRoadType; // 0x18
-	public bool isSidewalk; // 0x19
+{
+	public bool isRoadType; 
+	public bool isSidewalk; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

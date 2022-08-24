@@ -1,28 +1,29 @@
 public class MarshalByValueComponent : IComponent, IDisposable, IServiceProvider // TypeDefIndex: 2728
-{	private static readonly object EventDisposed; // 0x0
-	private ISite site; // 0x10
-	private EventHandlerList events; // 0x18
+{
+	private static readonly object EventDisposed; 
+	private ISite site; 
+	private EventHandlerList events; 
 
-	[DesignerSerializationVisibilityAttribute] // RVA: 0x9E670 Offset: 0x9DA70 VA: 0x18009E670
-	[BrowsableAttribute] // RVA: 0x9E670 Offset: 0x9DA70 VA: 0x18009E670
-	public virtual ISite Site { get; }
+	[DesignerSerializationVisibilityAttribute] 
+	[BrowsableAttribute] 
+public virtual ISite Site { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	protected override void Finalize() { }
+protected override void Finalize() { }
 
-	public virtual ISite get_Site() { }
+public virtual ISite get_Site() { }
 
-	public void Dispose() { }
+public void Dispose() { }
 
-	protected virtual void Dispose(bool disposing) { }
+protected virtual void Dispose(bool disposing) { }
 
-	public virtual object GetService(Type service) { }
+public virtual object GetService(Type service) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

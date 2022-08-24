@@ -1,15 +1,16 @@
 internal class TargetPool // TypeDefIndex: 11868
-{	private readonly List<int> m_Pool; // 0x10
-	private int m_Current; // 0x18
+{
+	private readonly List<int> m_Pool; 
+	private int m_Current; 
 
 
-	internal void .ctor() { }
+internal void .ctor() { }
 
-	internal int Get() { }
+internal int Get() { }
 
-	private int Get(int i) { }
+private int Get(int i) { }
 
-	internal void Reset() { }
+internal void Reset() { }
 
 }
 

@@ -1,10 +1,11 @@
 public class DragEnterEvent : DragAndDropEventBase<DragEnterEvent> // TypeDefIndex: 4635
 {
-	protected override void Init() { }
 
-	private void LocalInit() { }
+protected override void Init() { }
 
-	public void .ctor() { }
+private void LocalInit() { }
+
+public void .ctor() { }
 
 }
 

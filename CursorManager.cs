@@ -1,19 +1,20 @@
 public class CursorManager : SingletonComponent<CursorManager> // TypeDefIndex: 10844
-{	private static int iHoldOpen; // 0x0
-	private static int iPreviousOpen; // 0x4
+{
+	private static int iHoldOpen; 
+	private static int iPreviousOpen; 
 
 
-	private void Update() { }
+private void Update() { }
 
-	public void SwitchToGame() { }
+public void SwitchToGame() { }
 
-	private void SwitchToUI() { }
+private void SwitchToUI() { }
 
-	public static void HoldOpen(bool cursorVisible = False) { }
+public static void HoldOpen(bool cursorVisible = False) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

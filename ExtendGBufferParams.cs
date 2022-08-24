@@ -1,9 +1,10 @@
 public struct ExtendGBufferParams // TypeDefIndex: 10655
-{	public bool enabled; // 0x0
-	public static ExtendGBufferParams Default; // 0x0
+{
+	public bool enabled; 
+	public static ExtendGBufferParams Default; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

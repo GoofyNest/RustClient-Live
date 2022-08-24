@@ -1,18 +1,19 @@
 internal class ContrastEnhance : PostEffectsBase // TypeDefIndex: 8174
-{	public float intensity; // 0x28
-	public float threshold; // 0x2C
-	private Material separableBlurMaterial; // 0x30
-	private Material contrastCompositeMaterial; // 0x38
-	public float blurSpread; // 0x40
-	public Shader separableBlurShader; // 0x48
-	public Shader contrastCompositeShader; // 0x50
+{
+	public float intensity; 
+	public float threshold; 
+	private Material separableBlurMaterial; 
+	private Material contrastCompositeMaterial; 
+	public float blurSpread; 
+	public Shader separableBlurShader; 
+	public Shader contrastCompositeShader; 
 
 
-	public override bool CheckResources() { }
+public override bool CheckResources() { }
 
-	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

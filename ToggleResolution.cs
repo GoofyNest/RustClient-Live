@@ -1,10 +1,11 @@
 public class ToggleResolution : MonoBehaviour // TypeDefIndex: 11135
-{	public TweakUIDropdown Dropdown; // 0x18
+{
+	public TweakUIDropdown Dropdown; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

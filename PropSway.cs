@@ -1,14 +1,15 @@
 public class PropSway : MonoBehaviour // TypeDefIndex: 9671
-{	public Transform pivotRotator; // 0x18
-	public float swaySpeed; // 0x20
-	public float swayDistance; // 0x24
-	public float lerpSpeed; // 0x28
-	private float lookupIndex; // 0x2C
+{
+	public Transform pivotRotator; 
+	public float swaySpeed; 
+	public float swayDistance; 
+	public float lerpSpeed; 
+	private float lookupIndex; 
 
 
-	public void Update() { }
+public void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

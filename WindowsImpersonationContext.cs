@@ -1,22 +1,23 @@
 public class WindowsImpersonationContext : IDisposable // TypeDefIndex: 933
-{	private IntPtr _token; // 0x10
-	private bool undo; // 0x18
+{
+	private IntPtr _token; 
+	private bool undo; 
 
 
-	internal void .ctor(IntPtr token) { }
+internal void .ctor(IntPtr token) { }
 
-	[ComVisibleAttribute] // RVA: 0x75C30 Offset: 0x75030 VA: 0x180075C30
-	public void Dispose() { }
+	[ComVisibleAttribute] 
+public void Dispose() { }
 
-	public void Undo() { }
+public void Undo() { }
 
-	private static bool CloseToken(IntPtr token) { }
+private static bool CloseToken(IntPtr token) { }
 
-	private static IntPtr DuplicateToken(IntPtr token) { }
+private static IntPtr DuplicateToken(IntPtr token) { }
 
-	private static bool SetCurrentToken(IntPtr token) { }
+private static bool SetCurrentToken(IntPtr token) { }
 
-	private static bool RevertToSelf() { }
+private static bool RevertToSelf() { }
 
 }
 

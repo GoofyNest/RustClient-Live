@@ -1,33 +1,34 @@
 public class LootPanelEngine : LootPanel // TypeDefIndex: 11029
-{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private Image engineImage; // 0x38
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private ItemIcon[] icons; // 0x40
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private GameObject warning; // 0x48
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RustText hp; // 0x50
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RustText power; // 0x58
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RustText acceleration; // 0x60
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RustText topSpeed; // 0x68
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private RustText fuelEconomy; // 0x70
+{
+	[SerializeField] 
+	private Image engineImage; 
+	[SerializeField] 
+	private ItemIcon[] icons; 
+	[SerializeField] 
+	private GameObject warning; 
+	[SerializeField] 
+	private RustText hp; 
+	[SerializeField] 
+	private RustText power; 
+	[SerializeField] 
+	private RustText acceleration; 
+	[SerializeField] 
+	private RustText topSpeed; 
+	[SerializeField] 
+	private RustText fuelEconomy; 
 
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	public override void Update() { }
+public override void Update() { }
 
-	public EngineStorage GetEngineStorage() { }
+public EngineStorage GetEngineStorage() { }
 
-	private void RefreshStats(EngineStorage engineBayStorage) { }
+private void RefreshStats(EngineStorage engineBayStorage) { }
 
-	public void OnDroppedOnEngine(BaseEventData data) { }
+public void OnDroppedOnEngine(BaseEventData data) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

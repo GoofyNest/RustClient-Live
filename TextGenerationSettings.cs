@@ -1,29 +1,30 @@
 public struct TextGenerationSettings // TypeDefIndex: 3951
-{	public Font font; // 0x0
-	public Color color; // 0x8
-	public int fontSize; // 0x18
-	public float lineSpacing; // 0x1C
-	public bool richText; // 0x20
-	public float scaleFactor; // 0x24
-	public FontStyle fontStyle; // 0x28
-	public TextAnchor textAnchor; // 0x2C
-	public bool alignByGeometry; // 0x30
-	public bool resizeTextForBestFit; // 0x31
-	public int resizeTextMinSize; // 0x34
-	public int resizeTextMaxSize; // 0x38
-	public bool updateBounds; // 0x3C
-	public VerticalWrapMode verticalOverflow; // 0x40
-	public HorizontalWrapMode horizontalOverflow; // 0x44
-	public Vector2 generationExtents; // 0x48
-	public Vector2 pivot; // 0x50
-	public bool generateOutOfBounds; // 0x58
+{
+	public Font font; 
+	public Color color; 
+	public int fontSize; 
+	public float lineSpacing; 
+	public bool richText; 
+	public float scaleFactor; 
+	public FontStyle fontStyle; 
+	public TextAnchor textAnchor; 
+	public bool alignByGeometry; 
+	public bool resizeTextForBestFit; 
+	public int resizeTextMinSize; 
+	public int resizeTextMaxSize; 
+	public bool updateBounds; 
+	public VerticalWrapMode verticalOverflow; 
+	public HorizontalWrapMode horizontalOverflow; 
+	public Vector2 generationExtents; 
+	public Vector2 pivot; 
+	public bool generateOutOfBounds; 
 
 
-	private bool CompareColors(Color left, Color right) { }
+private bool CompareColors(Color left, Color right) { }
 
-	private bool CompareVector2(Vector2 left, Vector2 right) { }
+private bool CompareVector2(Vector2 left, Vector2 right) { }
 
-	public bool Equals(TextGenerationSettings other) { }
+public bool Equals(TextGenerationSettings other) { }
 
 }
 

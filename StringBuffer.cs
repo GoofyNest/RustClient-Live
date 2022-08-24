@@ -1,35 +1,36 @@
 internal struct StringBuffer // TypeDefIndex: 5960
-{	private char[] _buffer; // 0x0
-	private int _position; // 0x8
+{
+	private char[] _buffer; 
+	private int _position; 
 
-	public int Position { get; set; }
-	public bool IsEmpty { get; }
-	public char[] InternalBuffer { get; }
+public int Position { get; set; }
+public bool IsEmpty { get; }
+public char[] InternalBuffer { get; }
 
 
-	public int get_Position() { }
+public int get_Position() { }
 
-	public void set_Position(int value) { }
+public void set_Position(int value) { }
 
-	public bool get_IsEmpty() { }
+public bool get_IsEmpty() { }
 
-	public void .ctor(IArrayPool<char> bufferPool, int initalSize) { }
+public void .ctor(IArrayPool<char> bufferPool, int initalSize) { }
 
-	private void .ctor(char[] buffer) { }
+private void .ctor(char[] buffer) { }
 
-	public void Append(IArrayPool<char> bufferPool, char value) { }
+public void Append(IArrayPool<char> bufferPool, char value) { }
 
-	public void Append(IArrayPool<char> bufferPool, char[] buffer, int startIndex, int count) { }
+public void Append(IArrayPool<char> bufferPool, char[] buffer, int startIndex, int count) { }
 
-	public void Clear(IArrayPool<char> bufferPool) { }
+public void Clear(IArrayPool<char> bufferPool) { }
 
-	private void EnsureSize(IArrayPool<char> bufferPool, int appendLength) { }
+private void EnsureSize(IArrayPool<char> bufferPool, int appendLength) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	public string ToString(int start, int length) { }
+public string ToString(int start, int length) { }
 
-	public char[] get_InternalBuffer() { }
+public char[] get_InternalBuffer() { }
 
 }
 

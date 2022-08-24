@@ -1,43 +1,44 @@
 public class LightOccludee : MonoBehaviour // TypeDefIndex: 11306
-{	public float RadiusScale; // 0x18
-	public float MinTimeVisible; // 0x1C
-	public bool IsDynamic; // 0x20
-	private Light light; // 0x28
-	private LightEx lightEx; // 0x30
-	private VolumetricLightBeam volumetricBeam; // 0x38
-	private OccludeeSphere occludee; // 0x40
-	private bool lodVisible; // 0x60
-	private bool volumeVisible; // 0x61
-	private bool occludeeCulled; // 0x62
+{
+	public float RadiusScale; 
+	public float MinTimeVisible; 
+	public bool IsDynamic; 
+	private Light light; 
+	private LightEx lightEx; 
+	private VolumetricLightBeam volumetricBeam; 
+	private OccludeeSphere occludee; 
+	private bool lodVisible; 
+	private bool volumeVisible; 
+	private bool occludeeCulled; 
 
-	public bool IsVisible { get; }
+public bool IsVisible { get; }
 
 
-	public bool get_IsVisible() { }
+public bool get_IsVisible() { }
 
-	private void Awake() { }
+private void Awake() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnDisable() { }
+private void OnDisable() { }
 
-	private void UpdateCullingSphere() { }
+private void UpdateCullingSphere() { }
 
-	public void UpdateDynamicOccludee() { }
+public void UpdateDynamicOccludee() { }
 
-	private void RegisterToOcclusionCulling() { }
+private void RegisterToOcclusionCulling() { }
 
-	private void UnregisterFromOcclusionCulling() { }
+private void UnregisterFromOcclusionCulling() { }
 
-	private void UpdateVisibility() { }
+private void UpdateVisibility() { }
 
-	public void SetLODVisible(bool state) { }
+public void SetLODVisible(bool state) { }
 
-	public void SetVolumeVisible(bool state) { }
+public void SetVolumeVisible(bool state) { }
 
-	protected virtual void OnVisibilityChanged(bool visible) { }
+protected virtual void OnVisibilityChanged(bool visible) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

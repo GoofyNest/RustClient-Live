@@ -1,10 +1,11 @@
 internal static class SerializationEventsCache // TypeDefIndex: 1055
-{	private static Hashtable cache; // 0x2B0AA90
+{
+	private static Hashtable cache; 
 
 
-	internal static SerializationEvents GetSerializationEventsForType(Type t) { }
+internal static SerializationEvents GetSerializationEventsForType(Type t) { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

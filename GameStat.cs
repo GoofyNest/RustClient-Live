@@ -1,38 +1,40 @@
 public class GameStat : MonoBehaviour // TypeDefIndex: 10929
-{	public float refreshTime; // 0x18
-	public Text title; // 0x20
-	public Text globalStat; // 0x28
-	public Text localStat; // 0x30
-	private long globalValue; // 0x38
-	private long localValue; // 0x40
-	private float secondsSinceRefresh; // 0x48
-	private float secondsUntilUpdate; // 0x4C
-	private float secondsUntilChange; // 0x50
-	public GameStat.Stat[] stats; // 0x58
-	private GameStat.Stat[] unshownStats; // 0x60
-	private GameStat.Stat stat; // 0x68
+{
+	public float refreshTime; 
+	public Text title; 
+	public Text globalStat; 
+	public Text localStat; 
+	private long globalValue; 
+	private long localValue; 
+	private float secondsSinceRefresh; 
+	private float secondsUntilUpdate; 
+	private float secondsUntilChange; 
+	public GameStat.Stat[] stats; 
+	private GameStat.Stat[] unshownStats; 
+	private GameStat.Stat stat; 
 
 
-	private void Awake() { }
+private void Awake() { }
 
-	public void Refresh() { }
+public void Refresh() { }
 
-	public void ForceUpdate() { }
+public void ForceUpdate() { }
 
-	public void UpdateText() { }
+public void UpdateText() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private bool <Refresh>b__14_0(GameStat.Stat x) { }
+	[CompilerGeneratedAttribute] 
+private bool <Refresh>b__14_0(GameStat.Stat x) { }
 
 }
 
 public struct GameStat.Stat // TypeDefIndex: 10930
-{	public string statName; // 0x0
-	public string statTitle; // 0x8
+{
+	public string statName; 
+	public string statTitle; 
 
 }
 

@@ -1,12 +1,13 @@
 public class HairDyeCollection : ScriptableObject // TypeDefIndex: 10731
-{	public Texture capMask; // 0x18
-	public bool applyCap; // 0x20
-	public HairDye[] Variations; // 0x28
+{
+	public Texture capMask; 
+	public bool applyCap; 
+	public HairDye[] Variations; 
 
 
-	public HairDye Get(float seed) { }
+public HairDye Get(float seed) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

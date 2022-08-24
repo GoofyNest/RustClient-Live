@@ -1,12 +1,13 @@
 public class PlayAudioEx : MonoBehaviour // TypeDefIndex: 9212
-{	public float delay; // 0x18
+{
+	public float delay; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

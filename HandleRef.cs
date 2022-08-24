@@ -1,13 +1,14 @@
 public struct HandleRef // TypeDefIndex: 1348
-{	internal object m_wrapper; // 0x0
-	internal IntPtr m_handle; // 0x8
+{
+	internal object m_wrapper; 
+	internal IntPtr m_handle; 
 
-	public IntPtr Handle { get; }
+public IntPtr Handle { get; }
 
 
-	public void .ctor(object wrapper, IntPtr handle) { }
+public void .ctor(object wrapper, IntPtr handle) { }
 
-	public IntPtr get_Handle() { }
+public IntPtr get_Handle() { }
 
 }
 

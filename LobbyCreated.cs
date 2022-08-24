@@ -1,17 +1,18 @@
 internal struct LobbyCreated_t : ICallbackData // TypeDefIndex: 5344
-{	internal Result Result; // 0x0
-	internal ulong SteamIDLobby; // 0x8
-	public static int _datasize; // 0x0
+{
+	internal Result Result; 
+	internal ulong SteamIDLobby; 
+	public static int _datasize; 
 
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
+public int DataSize { get; }
+public CallbackType CallbackType { get; }
 
 
-	public int get_DataSize() { }
+public int get_DataSize() { }
 
-	public CallbackType get_CallbackType() { }
+public CallbackType get_CallbackType() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

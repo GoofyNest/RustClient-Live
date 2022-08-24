@@ -1,17 +1,18 @@
 public class LightPulse : MonoBehaviour, IClientComponent // TypeDefIndex: 9350
-{	public Light TargetLight; // 0x18
-	public float PulseSpeed; // 0x20
-	public float Lifetime; // 0x24
-	public float MaxIntensity; // 0x28
-	public float FadeOutSpeed; // 0x2C
-	private TimeSince timeAlive; // 0x30
+{
+	public Light TargetLight; 
+	public float PulseSpeed; 
+	public float Lifetime; 
+	public float MaxIntensity; 
+	public float FadeOutSpeed; 
+	private TimeSince timeAlive; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

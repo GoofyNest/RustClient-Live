@@ -1,15 +1,16 @@
 public sealed class Handlers // TypeDefIndex: 7371
-{	public static readonly string[] List; // 0x0
-	private static Hashtable aliases; // 0x8
+{
+	public static readonly string[] List; 
+	private static Hashtable aliases; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	public static string GetAlias(string name) { }
+public static string GetAlias(string name) { }
 
-	private static void BuildHash() { }
+private static void BuildHash() { }
 
 }
 

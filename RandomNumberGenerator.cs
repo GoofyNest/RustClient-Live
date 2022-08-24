@@ -1,14 +1,15 @@
 public abstract class RandomNumberGenerator : IDisposable // TypeDefIndex: 972
 {
-	protected void .ctor() { }
 
-	public static RandomNumberGenerator Create() { }
+protected void .ctor() { }
 
-	public void Dispose() { }
+public static RandomNumberGenerator Create() { }
 
-	protected virtual void Dispose(bool disposing) { }
+public void Dispose() { }
 
-	public abstract void GetBytes(byte[] data);
+protected virtual void Dispose(bool disposing) { }
+
+public abstract void GetBytes(byte[] data);
 
 }
 

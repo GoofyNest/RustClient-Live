@@ -1,34 +1,35 @@
 public class MedicalTool : AttackEntity // TypeDefIndex: 8603
-{	public float healDurationSelf; // 0x280
-	public float healDurationOther; // 0x284
-	public float healDurationOtherWounded; // 0x288
-	public float maxDistanceOther; // 0x28C
-	public bool canUseOnOther; // 0x290
-	public bool canRevive; // 0x291
-	private BasePlayer useTarget; // 0x298
-	private float resetTime; // 0x2A0
+{
+	public float healDurationSelf; 
+	public float healDurationOther; 
+	public float healDurationOtherWounded; 
+	public float maxDistanceOther; 
+	public bool canUseOnOther; 
+	public bool canRevive; 
+	private BasePlayer useTarget; 
+	private float resetTime; 
 
 
-	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	public BasePlayer GetTarget() { }
+public BasePlayer GetTarget() { }
 
-	public bool AnyPressed() { }
+public bool AnyPressed() { }
 
-	public override void OnInput() { }
+public override void OnInput() { }
 
-	public override void OnViewmodelEvent(string name) { }
+public override void OnViewmodelEvent(string name) { }
 
-	[BaseEntity.RPC_Client] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public void Reset() { }
+	[BaseEntity.RPC_Client] 
+public void Reset() { }
 
-	public override void OnDeploy() { }
+public override void OnDeploy() { }
 
-	public override void OnHolstered() { }
+public override void OnHolstered() { }
 
-	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

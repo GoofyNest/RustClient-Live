@@ -1,14 +1,15 @@
 public class MouseLeaveWindowEvent : MouseEventBase<MouseLeaveWindowEvent> // TypeDefIndex: 4679
 {
-	protected override void Init() { }
 
-	private void LocalInit() { }
+protected override void Init() { }
 
-	public void .ctor() { }
+private void LocalInit() { }
 
-	public static MouseLeaveWindowEvent GetPooled(Event systemEvent) { }
+public void .ctor() { }
 
-	protected internal override void PostDispatch(IPanel panel) { }
+public static MouseLeaveWindowEvent GetPooled(Event systemEvent) { }
+
+protected internal override void PostDispatch(IPanel panel) { }
 
 }
 

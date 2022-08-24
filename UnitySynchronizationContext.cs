@@ -1,48 +1,50 @@
 internal sealed class UnitySynchronizationContext : SynchronizationContext // TypeDefIndex: 3536
-{	private readonly List<UnitySynchronizationContext.WorkRequest> m_AsyncWorkQueue; // 0x18
-	private readonly List<UnitySynchronizationContext.WorkRequest> m_CurrentFrameWork; // 0x20
-	private readonly int m_MainThreadID; // 0x28
-	private int m_TrackedCount; // 0x2C
+{
+	private readonly List<UnitySynchronizationContext.WorkRequest> m_AsyncWorkQueue; 
+	private readonly List<UnitySynchronizationContext.WorkRequest> m_CurrentFrameWork; 
+	private readonly int m_MainThreadID; 
+	private int m_TrackedCount; 
 
 
-	private void .ctor(int mainThreadID) { }
+private void .ctor(int mainThreadID) { }
 
-	private void .ctor(List<UnitySynchronizationContext.WorkRequest> queue, int mainThreadID) { }
+private void .ctor(List<UnitySynchronizationContext.WorkRequest> queue, int mainThreadID) { }
 
-	public override void Send(SendOrPostCallback callback, object state) { }
+public override void Send(SendOrPostCallback callback, object state) { }
 
-	public override void OperationStarted() { }
+public override void OperationStarted() { }
 
-	public override void OperationCompleted() { }
+public override void OperationCompleted() { }
 
-	public override void Post(SendOrPostCallback callback, object state) { }
+public override void Post(SendOrPostCallback callback, object state) { }
 
-	public override SynchronizationContext CreateCopy() { }
+public override SynchronizationContext CreateCopy() { }
 
-	private void Exec() { }
+private void Exec() { }
 
-	private bool HasPendingTasks() { }
+private bool HasPendingTasks() { }
 
-	[RequiredByNativeCodeAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private static void InitializeSynchronizationContext() { }
+	[RequiredByNativeCodeAttribute] 
+private static void InitializeSynchronizationContext() { }
 
-	[RequiredByNativeCodeAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private static void ExecuteTasks() { }
+	[RequiredByNativeCodeAttribute] 
+private static void ExecuteTasks() { }
 
-	[RequiredByNativeCodeAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private static bool ExecutePendingTasks(long millisecondsTimeout) { }
+	[RequiredByNativeCodeAttribute] 
+private static bool ExecutePendingTasks(long millisecondsTimeout) { }
 
 }
 
 private struct UnitySynchronizationContext.WorkRequest // TypeDefIndex: 3537
-{	private readonly SendOrPostCallback m_DelagateCallback; // 0x0
-	private readonly object m_DelagateState; // 0x8
-	private readonly ManualResetEvent m_WaitHandle; // 0x10
+{
+	private readonly SendOrPostCallback m_DelagateCallback; 
+	private readonly object m_DelagateState; 
+	private readonly ManualResetEvent m_WaitHandle; 
 
 
-	public void .ctor(SendOrPostCallback callback, object state, ManualResetEvent waitHandle) { }
+public void .ctor(SendOrPostCallback callback, object state, ManualResetEvent waitHandle) { }
 
-	public void Invoke() { }
+public void Invoke() { }
 
 }
 

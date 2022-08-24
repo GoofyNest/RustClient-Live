@@ -1,25 +1,26 @@
 public abstract class AsymmetricAlgorithm : IDisposable // TypeDefIndex: 938
-{	protected int KeySizeValue; // 0x10
-	protected KeySizes[] LegalKeySizesValue; // 0x18
+{
+	protected int KeySizeValue; 
+	protected KeySizes[] LegalKeySizesValue; 
 
-	public virtual int KeySize { get; set; }
+public virtual int KeySize { get; set; }
 
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
-	public void Dispose() { }
+public void Dispose() { }
 
-	public void Clear() { }
+public void Clear() { }
 
-	protected virtual void Dispose(bool disposing) { }
+protected virtual void Dispose(bool disposing) { }
 
-	public virtual int get_KeySize() { }
+public virtual int get_KeySize() { }
 
-	public virtual void set_KeySize(int value) { }
+public virtual void set_KeySize(int value) { }
 
-	public virtual void FromXmlString(string xmlString) { }
+public virtual void FromXmlString(string xmlString) { }
 
-	public virtual string ToXmlString(bool includePrivateParameters) { }
+public virtual string ToXmlString(bool includePrivateParameters) { }
 
 }
 

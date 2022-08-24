@@ -1,21 +1,22 @@
 public class TweakUIToggle : TweakUIBase // TypeDefIndex: 11145
-{	public Toggle toggleControl; // 0x30
-	public bool inverse; // 0x38
-	public static string lastConVarChanged; // 0x0
-	public static TimeSince timeSinceLastConVarChange; // 0x8
+{
+	public Toggle toggleControl; 
+	public bool inverse; 
+	public static string lastConVarChanged; 
+	public static TimeSince timeSinceLastConVarChange; 
 
 
-	protected override void Init() { }
+protected override void Init() { }
 
-	protected void OnEnable() { }
+protected void OnEnable() { }
 
-	public void OnToggleChanged() { }
+public void OnToggleChanged() { }
 
-	protected override void SetConvarValue() { }
+protected override void SetConvarValue() { }
 
-	public override void ResetToConvar() { }
+public override void ResetToConvar() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,36 +1,37 @@
 public static class ThreadPool // TypeDefIndex: 816
 {
-	private static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, uint millisecondsTimeOutInterval, bool executeOnlyOnce, ref StackCrawlMark stackMark, bool compressStack) { }
 
-	public static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, TimeSpan timeout, bool executeOnlyOnce) { }
+private static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, uint millisecondsTimeOutInterval, bool executeOnlyOnce, ref StackCrawlMark stackMark, bool compressStack) { }
 
-	public static bool QueueUserWorkItem(WaitCallback callBack, object state) { }
+public static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, TimeSpan timeout, bool executeOnlyOnce) { }
 
-	public static bool QueueUserWorkItem(WaitCallback callBack) { }
+public static bool QueueUserWorkItem(WaitCallback callBack, object state) { }
 
-	public static bool UnsafeQueueUserWorkItem(WaitCallback callBack, object state) { }
+public static bool QueueUserWorkItem(WaitCallback callBack) { }
 
-	private static bool QueueUserWorkItemHelper(WaitCallback callBack, object state, ref StackCrawlMark stackMark, bool compressStack) { }
+public static bool UnsafeQueueUserWorkItem(WaitCallback callBack, object state) { }
 
-	internal static void UnsafeQueueCustomWorkItem(IThreadPoolWorkItem workItem, bool forceGlobal) { }
+private static bool QueueUserWorkItemHelper(WaitCallback callBack, object state, ref StackCrawlMark stackMark, bool compressStack) { }
 
-	internal static bool TryPopCustomWorkItem(IThreadPoolWorkItem workItem) { }
+internal static void UnsafeQueueCustomWorkItem(IThreadPoolWorkItem workItem, bool forceGlobal) { }
 
-	internal static bool RequestWorkerThread() { }
+internal static bool TryPopCustomWorkItem(IThreadPoolWorkItem workItem) { }
 
-	private static void EnsureVMInitialized() { }
+internal static bool RequestWorkerThread() { }
 
-	internal static bool NotifyWorkItemComplete() { }
+private static void EnsureVMInitialized() { }
 
-	internal static void ReportThreadStatus(bool isWorking) { }
+internal static bool NotifyWorkItemComplete() { }
 
-	internal static void NotifyWorkItemProgress() { }
+internal static void ReportThreadStatus(bool isWorking) { }
 
-	internal static void NotifyWorkItemProgressNative() { }
+internal static void NotifyWorkItemProgress() { }
 
-	internal static bool IsThreadPoolHosted() { }
+internal static void NotifyWorkItemProgressNative() { }
 
-	private static void InitializeVMTp(ref bool enableWorkerTracking) { }
+internal static bool IsThreadPoolHosted() { }
+
+private static void InitializeVMTp(ref bool enableWorkerTracking) { }
 
 }
 

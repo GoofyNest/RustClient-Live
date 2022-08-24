@@ -1,11 +1,12 @@
 public class ToolgunScreen : MonoBehaviour // TypeDefIndex: 8901
-{	public Text blockInfoText; // 0x18
-	public Text noBlockText; // 0x20
+{
+	public Text blockInfoText; 
+	public Text noBlockText; 
 
 
-	public void SetScreenText(string newText) { }
+public void SetScreenText(string newText) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

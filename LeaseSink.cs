@@ -1,14 +1,15 @@
 internal class LeaseSink : IMessageSink // TypeDefIndex: 1168
-{	private IMessageSink _nextSink; // 0x10
+{
+	private IMessageSink _nextSink; 
 
 
-	public void .ctor(IMessageSink nextSink) { }
+public void .ctor(IMessageSink nextSink) { }
 
-	public IMessage SyncProcessMessage(IMessage msg) { }
+public IMessage SyncProcessMessage(IMessage msg) { }
 
-	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
-	private void RenewLease(IMessage msg) { }
+private void RenewLease(IMessage msg) { }
 
 }
 

@@ -1,15 +1,16 @@
 public class MethodBody // TypeDefIndex: 570
-{	private ExceptionHandlingClause[] clauses; // 0x10
-	private LocalVariableInfo[] locals; // 0x18
-	private byte[] il; // 0x20
-	private bool init_locals; // 0x28
-	private int sig_token; // 0x2C
-	private int max_stack; // 0x30
+{
+	private ExceptionHandlingClause[] clauses; 
+	private LocalVariableInfo[] locals; 
+	private byte[] il; 
+	private bool init_locals; 
+	private int sig_token; 
+	private int max_stack; 
 
 
-	protected void .ctor() { }
+protected void .ctor() { }
 
-	public virtual byte[] GetILAsByteArray() { }
+public virtual byte[] GetILAsByteArray() { }
 
 }
 

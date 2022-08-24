@@ -1,19 +1,20 @@
 public sealed class ReflectionTypeLoadException : SystemException, ISerializable // TypeDefIndex: 548
-{	private Type[] _classes; // 0x88
-	private Exception[] _exceptions; // 0x90
+{
+	private Type[] _classes; 
+	private Exception[] _exceptions; 
 
-	public Type[] Types { get; }
+public Type[] Types { get; }
 
 
-	private void .ctor() { }
+private void .ctor() { }
 
-	public void .ctor(Type[] classes, Exception[] exceptions) { }
+public void .ctor(Type[] classes, Exception[] exceptions) { }
 
-	internal void .ctor(SerializationInfo info, StreamingContext context) { }
+internal void .ctor(SerializationInfo info, StreamingContext context) { }
 
-	public Type[] get_Types() { }
+public Type[] get_Types() { }
 
-	public override void GetObjectData(SerializationInfo info, StreamingContext context) { }
+public override void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
 }
 

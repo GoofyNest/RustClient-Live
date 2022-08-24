@@ -1,68 +1,71 @@
 public class VirtualScroll : MonoBehaviour // TypeDefIndex: 11997
-{	public int ItemHeight; // 0x18
-	public int ItemSpacing; // 0x1C
-	public RectOffset Padding; // 0x20
-	[TooltipAttribute] // RVA: 0xCAD40 Offset: 0xCA140 VA: 0x1800CAD40
-	public GameObject DataSourceObject; // 0x28
-	public GameObject SourceObject; // 0x30
-	public ScrollRect ScrollRect; // 0x38
-	public RectTransform OverrideContentRoot; // 0x40
-	private VirtualScroll.IDataSource dataSource; // 0x48
-	private Dictionary<int, GameObject> ActivePool; // 0x50
-	private Stack<GameObject> InactivePool; // 0x58
+{
+	public int ItemHeight; 
+	public int ItemSpacing; 
+	public RectOffset Padding; 
+	[TooltipAttribute] 
+	public GameObject DataSourceObject; 
+	public GameObject SourceObject; 
+	public ScrollRect ScrollRect; 
+	public RectTransform OverrideContentRoot; 
+	private VirtualScroll.IDataSource dataSource; 
+	private Dictionary<int, GameObject> ActivePool; 
+	private Stack<GameObject> InactivePool; 
 
-	private int BlockHeight { get; }
+private int BlockHeight { get; }
 
 
-	public void Awake() { }
+public void Awake() { }
 
-	public void OnDestroy() { }
+public void OnDestroy() { }
 
-	private void OnScrollChanged(Vector2 pos) { }
+private void OnScrollChanged(Vector2 pos) { }
 
-	public void SetDataSource(VirtualScroll.IDataSource source) { }
+public void SetDataSource(VirtualScroll.IDataSource source) { }
 
-	private int get_BlockHeight() { }
+private int get_BlockHeight() { }
 
-	public void FullRebuild() { }
+public void FullRebuild() { }
 
-	public void DataChanged() { }
+public void DataChanged() { }
 
-	public void Rebuild() { }
+public void Rebuild() { }
 
-	private void RecycleOutOfRange(int startVisible, float endVisible) { }
+private void RecycleOutOfRange(int startVisible, float endVisible) { }
 
-	private void Recycle(int key) { }
+private void Recycle(int key) { }
 
-	private void BuildItem(int i) { }
+private void BuildItem(int i) { }
 
-	private GameObject GetItem() { }
+private GameObject GetItem() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 private sealed class VirtualScroll.<>c__DisplayClass20_0 // TypeDefIndex: 11999
-{	public int startVisible; // 0x10
-	public float endVisible; // 0x14
+{
+	public int startVisible; 
+	public float endVisible; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal bool <RecycleOutOfRange>b__0(int x) { }
+internal bool <RecycleOutOfRange>b__0(int x) { }
 
 }
 
 private sealed class VirtualScroll.<>c // TypeDefIndex: 12000
-{	public static readonly VirtualScroll.<>c <>9; // 0x0
-	public static Func<int, int> <>9__20_1; // 0x8
+{
+	public static readonly VirtualScroll.<>c <>9; 
+	public static Func<int, int> <>9__20_1; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal int <RecycleOutOfRange>b__20_1(int x) { }
+internal int <RecycleOutOfRange>b__20_1(int x) { }
 
 }
 

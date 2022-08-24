@@ -1,27 +1,29 @@
 public class HitchTrough : StorageContainer // TypeDefIndex: 8697
-{	public HitchTrough.HitchSpot[] hitchSpots; // 0x3D0
-	public float caloriesToDecaySeconds; // 0x3D8
+{
+	public HitchTrough.HitchSpot[] hitchSpots; 
+	public float caloriesToDecaySeconds; 
 
 
-	public override void Load(BaseNetworkable.LoadInfo info) { }
+public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public class HitchTrough.HitchSpot // TypeDefIndex: 8698
-{	public HitchTrough owner; // 0x10
-	public Transform spot; // 0x18
-	public EntityRef horse; // 0x20
+{
+	public HitchTrough owner; 
+	public Transform spot; 
+	public EntityRef horse; 
 
 
-	public RidableHorse GetHorse(bool isServer = True) { }
+public RidableHorse GetHorse(bool isServer = True) { }
 
-	public bool IsOccupied(bool isServer = True) { }
+public bool IsOccupied(bool isServer = True) { }
 
-	public void SetOccupiedBy(RidableHorse newHorse) { }
+public void SetOccupiedBy(RidableHorse newHorse) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

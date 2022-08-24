@@ -1,29 +1,30 @@
 public class Occludee : MonoBehaviour // TypeDefIndex: 11507
-{	public float minTimeVisible; // 0x18
-	public bool isStatic; // 0x1C
-	public bool autoRegister; // 0x1D
-	public bool stickyGizmos; // 0x1E
-	public OccludeeState state; // 0x20
-	protected int occludeeId; // 0x28
-	protected Vector3 center; // 0x2C
-	protected float radius; // 0x38
-	protected Renderer renderer; // 0x40
-	protected Collider collider; // 0x48
+{
+	public float minTimeVisible; 
+	public bool isStatic; 
+	public bool autoRegister; 
+	public bool stickyGizmos; 
+	public OccludeeState state; 
+	protected int occludeeId; 
+	protected Vector3 center; 
+	protected float radius; 
+	protected Renderer renderer; 
+	protected Collider collider; 
 
 
-	protected virtual void Awake() { }
+protected virtual void Awake() { }
 
-	public void OnEnable() { }
+public void OnEnable() { }
 
-	public void OnDisable() { }
+public void OnDisable() { }
 
-	public void Register() { }
+public void Register() { }
 
-	public void Unregister() { }
+public void Unregister() { }
 
-	protected virtual void OnVisibilityChanged(bool visible) { }
+protected virtual void OnVisibilityChanged(bool visible) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

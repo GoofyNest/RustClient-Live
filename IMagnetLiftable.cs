@@ -1,10 +1,11 @@
 public class IMagnetLiftable : MonoBehaviour // TypeDefIndex: 9730
 {
-	private void Start() { }
 
-	private void Update() { }
+private void Start() { }
 
-	public void .ctor() { }
+private void Update() { }
+
+public void .ctor() { }
 
 }
 

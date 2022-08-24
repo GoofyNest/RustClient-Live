@@ -1,34 +1,35 @@
 public struct StyleInt : IStyleValue<int>, IEquatable<StyleInt> // TypeDefIndex: 4714
-{	private StyleKeyword m_Keyword; // 0x0
-	private int m_Value; // 0x4
-	private int m_Specificity; // 0x8
+{
+	private StyleKeyword m_Keyword; 
+	private int m_Value; 
+	private int m_Specificity; 
 
-	public int value { get; }
-	internal int specificity { get; }
-	public StyleKeyword keyword { get; }
+public int value { get; }
+internal int specificity { get; }
+public StyleKeyword keyword { get; }
 
 
-	public int get_value() { }
+public int get_value() { }
 
-	internal int get_specificity() { }
+internal int get_specificity() { }
 
-	public StyleKeyword get_keyword() { }
+public StyleKeyword get_keyword() { }
 
-	public void .ctor(int v) { }
+public void .ctor(int v) { }
 
-	internal void .ctor(int v, StyleKeyword keyword) { }
+internal void .ctor(int v, StyleKeyword keyword) { }
 
-	public static bool op_Equality(StyleInt lhs, StyleInt rhs) { }
+public static bool op_Equality(StyleInt lhs, StyleInt rhs) { }
 
-	public static StyleInt op_Implicit(int v) { }
+public static StyleInt op_Implicit(int v) { }
 
-	public bool Equals(StyleInt other) { }
+public bool Equals(StyleInt other) { }
 
-	public override bool Equals(object obj) { }
+public override bool Equals(object obj) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
 }
 

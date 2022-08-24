@@ -1,10 +1,11 @@
 public class InvalidConstraintException : DataException // TypeDefIndex: 4196
 {
-	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-	public void .ctor() { }
+protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-	public void .ctor(string s) { }
+public void .ctor() { }
+
+public void .ctor(string s) { }
 
 }
 

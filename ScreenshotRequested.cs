@@ -1,15 +1,16 @@
 internal struct ScreenshotRequested_t : ICallbackData // TypeDefIndex: 5407
-{	public static int _datasize; // 0x12CE6
+{
+	public static int _datasize; 
 
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
+public int DataSize { get; }
+public CallbackType CallbackType { get; }
 
 
-	public int get_DataSize() { }
+public int get_DataSize() { }
 
-	public CallbackType get_CallbackType() { }
+public CallbackType get_CallbackType() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

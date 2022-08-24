@@ -1,21 +1,23 @@
 internal struct Win32_FIXED_INFO // TypeDefIndex: 3083
-{	public string HostName; // 0x0
-	public string DomainName; // 0x8
-	public IntPtr CurrentDnsServer; // 0x10
-	public Win32_IP_ADDR_STRING DnsServerList; // 0x18
-	public NetBiosNodeType NodeType; // 0x38
-	public string ScopeId; // 0x40
-	public uint EnableRouting; // 0x48
-	public uint EnableProxy; // 0x4C
-	public uint EnableDns; // 0x50
+{
+	public string HostName; 
+	public string DomainName; 
+	public IntPtr CurrentDnsServer; 
+	public Win32_IP_ADDR_STRING DnsServerList; 
+	public NetBiosNodeType NodeType; 
+	public string ScopeId; 
+	public uint EnableRouting; 
+	public uint EnableProxy; 
+	public uint EnableDns; 
 
 }
 
 internal struct Win32_IP_ADDR_STRING // TypeDefIndex: 3084
-{	public IntPtr Next; // 0x0
-	public string IpAddress; // 0x8
-	public string IpMask; // 0x10
-	public uint Context; // 0x18
+{
+	public IntPtr Next; 
+	public string IpAddress; 
+	public string IpMask; 
+	public uint Context; 
 
 }
 

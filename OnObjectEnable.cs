@@ -1,10 +1,11 @@
 internal class OnObjectEnable : MonoBehaviour // TypeDefIndex: 6632
-{	public UnityEvent Action; // 0x18
+{
+	public UnityEvent Action; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

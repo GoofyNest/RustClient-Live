@@ -1,12 +1,13 @@
 public sealed class EditorBrowsableAttribute : Attribute // TypeDefIndex: 2699
-{	private EditorBrowsableState browsableState; // 0x10
+{
+	private EditorBrowsableState browsableState; 
 
 
-	public void .ctor(EditorBrowsableState state) { }
+public void .ctor(EditorBrowsableState state) { }
 
-	public override bool Equals(object obj) { }
+public override bool Equals(object obj) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
 }
 

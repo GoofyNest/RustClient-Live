@@ -1,19 +1,20 @@
 internal class CallContextRemotingData : ICloneable // TypeDefIndex: 1220
-{	private string _logicalCallID; // 0x10
+{
+	private string _logicalCallID; 
 
-	internal string LogicalCallID { get; set; }
-	internal bool HasInfo { get; }
+internal string LogicalCallID { get; set; }
+internal bool HasInfo { get; }
 
 
-	internal string get_LogicalCallID() { }
+internal string get_LogicalCallID() { }
 
-	internal void set_LogicalCallID(string value) { }
+internal void set_LogicalCallID(string value) { }
 
-	internal bool get_HasInfo() { }
+internal bool get_HasInfo() { }
 
-	public object Clone() { }
+public object Clone() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

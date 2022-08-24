@@ -1,11 +1,12 @@
 public class ERConnectionData // TypeDefIndex: 7182
-{	public ERRoad road; // 0x10
-	public int marker; // 0x18
-	public int connectionIndex; // 0x1C
-	public Vector3 position; // 0x20
+{
+	public ERRoad road; 
+	public int marker; 
+	public int connectionIndex; 
+	public Vector3 position; 
 
 
-	public void .ctor(ERRoad rd, int rm, int index) { }
+public void .ctor(ERRoad rd, int rm, int index) { }
 
 }
 

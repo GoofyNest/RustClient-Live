@@ -1,14 +1,15 @@
 public class ValidBounds : SingletonComponent<ValidBounds> // TypeDefIndex: 10052
-{	public Bounds worldBounds; // 0x18
+{
+	public Bounds worldBounds; 
 
 
-	public static bool Test(Vector3 vPos) { }
+public static bool Test(Vector3 vPos) { }
 
-	private void OnDrawGizmosSelected() { }
+private void OnDrawGizmosSelected() { }
 
-	internal bool IsInside(Vector3 vPos) { }
+internal bool IsInside(Vector3 vPos) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

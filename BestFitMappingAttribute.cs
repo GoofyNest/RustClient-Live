@@ -1,8 +1,9 @@
 public sealed class BestFitMappingAttribute : Attribute // TypeDefIndex: 1341
-{	internal bool _bestFitMapping; // 0x10
+{
+	internal bool _bestFitMapping; 
 
 
-	public void .ctor(bool BestFitMapping) { }
+public void .ctor(bool BestFitMapping) { }
 
 }
 

@@ -1,23 +1,24 @@
 public struct FontAssetCreationSettings // TypeDefIndex: 6764
-{	public string sourceFontFileName; // 0x0
-	public string sourceFontFileGUID; // 0x8
-	public int pointSizeSamplingMode; // 0x10
-	public int pointSize; // 0x14
-	public int padding; // 0x18
-	public int packingMode; // 0x1C
-	public int atlasWidth; // 0x20
-	public int atlasHeight; // 0x24
-	public int characterSetSelectionMode; // 0x28
-	public string characterSequence; // 0x30
-	public string referencedFontAssetGUID; // 0x38
-	public string referencedTextAssetGUID; // 0x40
-	public int fontStyle; // 0x48
-	public float fontStyleModifier; // 0x4C
-	public int renderMode; // 0x50
-	public bool includeFontFeatures; // 0x54
+{
+	public string sourceFontFileName; 
+	public string sourceFontFileGUID; 
+	public int pointSizeSamplingMode; 
+	public int pointSize; 
+	public int padding; 
+	public int packingMode; 
+	public int atlasWidth; 
+	public int atlasHeight; 
+	public int characterSetSelectionMode; 
+	public string characterSequence; 
+	public string referencedFontAssetGUID; 
+	public string referencedTextAssetGUID; 
+	public int fontStyle; 
+	public float fontStyleModifier; 
+	public int renderMode; 
+	public bool includeFontFeatures; 
 
 
-	internal void .ctor(string sourceFontFileGUID, int pointSize, int pointSizeSamplingMode, int padding, int packingMode, int atlasWidth, int atlasHeight, int characterSelectionMode, string characterSet, int renderMode) { }
+internal void .ctor(string sourceFontFileGUID, int pointSize, int pointSizeSamplingMode, int padding, int packingMode, int atlasWidth, int atlasHeight, int characterSelectionMode, string characterSet, int renderMode) { }
 
 }
 

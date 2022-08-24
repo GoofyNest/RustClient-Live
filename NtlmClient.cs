@@ -1,47 +1,50 @@
 internal class NtlmClient : IAuthenticationModule // TypeDefIndex: 2560
-{	private static readonly ConditionalWeakTable<HttpWebRequest, NtlmSession> cache; // 0x2B0AAB0
+{
+	private static readonly ConditionalWeakTable<HttpWebRequest, NtlmSession> cache; 
 
-	public string AuthenticationType { get; }
+public string AuthenticationType { get; }
 
 
-	public Authorization Authenticate(string challenge, WebRequest webRequest, ICredentials credentials) { }
+public Authorization Authenticate(string challenge, WebRequest webRequest, ICredentials credentials) { }
 
-	public Authorization PreAuthenticate(WebRequest webRequest, ICredentials credentials) { }
+public Authorization PreAuthenticate(WebRequest webRequest, ICredentials credentials) { }
 
-	public string get_AuthenticationType() { }
+public string get_AuthenticationType() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 
 private sealed class NtlmClient.<>c // TypeDefIndex: 2561
-{	public static readonly NtlmClient.<>c <>9; // 0x0
-	public static ConditionalWeakTable.CreateValueCallback<HttpWebRequest, NtlmSession> <>9__1_0; // 0x8
+{
+	public static readonly NtlmClient.<>c <>9; 
+	public static ConditionalWeakTable.CreateValueCallback<HttpWebRequest, NtlmSession> <>9__1_0; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	internal NtlmSession <Authenticate>b__1_0(HttpWebRequest x) { }
+internal NtlmSession <Authenticate>b__1_0(HttpWebRequest x) { }
 
 }
 
 internal class NtlmClient : IAuthenticationModule // TypeDefIndex: 3017
-{	private IAuthenticationModule authObject; // 0x10
+{
+	private IAuthenticationModule authObject; 
 
-	public string AuthenticationType { get; }
+public string AuthenticationType { get; }
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	public Authorization Authenticate(string challenge, WebRequest webRequest, ICredentials credentials) { }
+public Authorization Authenticate(string challenge, WebRequest webRequest, ICredentials credentials) { }
 
-	public Authorization PreAuthenticate(WebRequest webRequest, ICredentials credentials) { }
+public Authorization PreAuthenticate(WebRequest webRequest, ICredentials credentials) { }
 
-	public string get_AuthenticationType() { }
+public string get_AuthenticationType() { }
 
 }
 

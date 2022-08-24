@@ -1,10 +1,11 @@
 internal class SystemNetworkCredential : NetworkCredential // TypeDefIndex: 2872
-{	internal static readonly SystemNetworkCredential defaultCredential; // 0x13885
+{
+	internal static readonly SystemNetworkCredential defaultCredential; 
 
 
-	private void .ctor() { }
+private void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

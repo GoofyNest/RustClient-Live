@@ -1,12 +1,13 @@
 public sealed class NormalSysExEvent : SysExEvent // TypeDefIndex: 7560
 {
-	public void .ctor() { }
 
-	public void .ctor(byte[] data) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+public void .ctor(byte[] data) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

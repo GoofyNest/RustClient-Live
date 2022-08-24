@@ -1,10 +1,11 @@
 public class SideObjectParams // TypeDefIndex: 7241
-{	public bool[] soActive; // 0x10
-	public float[] soDistanceSideWays; // 0x18
-	public bool[] soSplineActive; // 0x20
+{
+	public bool[] soActive; 
+	public float[] soDistanceSideWays; 
+	public bool[] soSplineActive; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

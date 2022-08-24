@@ -1,16 +1,17 @@
 public class CookieException : FormatException, ISerializable // TypeDefIndex: 2947
 {
-	public void .ctor() { }
 
-	internal void .ctor(string message) { }
+public void .ctor() { }
 
-	internal void .ctor(string message, Exception inner) { }
+internal void .ctor(string message) { }
 
-	protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+internal void .ctor(string message, Exception inner) { }
 
-	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
-	public override void GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+
+public override void GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
 }
 

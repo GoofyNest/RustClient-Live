@@ -1,16 +1,17 @@
 internal sealed class ThreadPoolWorkQueueThreadLocals // TypeDefIndex: 813
-{	[ThreadStaticAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public static ThreadPoolWorkQueueThreadLocals threadLocals; // 0x80000000
-	public readonly ThreadPoolWorkQueue workQueue; // 0x10
-	public readonly ThreadPoolWorkQueue.WorkStealingQueue workStealingQueue; // 0x18
-	public readonly Random random; // 0x20
+{
+	[ThreadStaticAttribute] 
+	public static ThreadPoolWorkQueueThreadLocals threadLocals; 
+	public readonly ThreadPoolWorkQueue workQueue; 
+	public readonly ThreadPoolWorkQueue.WorkStealingQueue workStealingQueue; 
+	public readonly Random random; 
 
 
-	public void .ctor(ThreadPoolWorkQueue tpq) { }
+public void .ctor(ThreadPoolWorkQueue tpq) { }
 
-	private void CleanUp() { }
+private void CleanUp() { }
 
-	protected override void Finalize() { }
+protected override void Finalize() { }
 
 }
 

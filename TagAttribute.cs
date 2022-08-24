@@ -1,7 +1,8 @@
 public struct TagAttribute // TypeDefIndex: 6864
-{	public int startIndex; // 0x0
-	public int length; // 0x4
-	public int hashCode; // 0x8
+{
+	public int startIndex; 
+	public int length; 
+	public int hashCode; 
 
 }
 

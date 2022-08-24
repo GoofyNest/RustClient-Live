@@ -1,8 +1,9 @@
 public class DSASignatureFormatter : AsymmetricSignatureFormatter // TypeDefIndex: 958
-{	private string _oid; // 0x10
+{
+	private string _oid; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

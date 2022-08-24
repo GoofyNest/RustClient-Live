@@ -1,17 +1,18 @@
 internal struct LeaderboardFindResult_t : ICallbackData // TypeDefIndex: 5389
-{	internal ulong SteamLeaderboard; // 0x0
-	internal byte LeaderboardFound; // 0x8
-	public static int _datasize; // 0x0
+{
+	internal ulong SteamLeaderboard; 
+	internal byte LeaderboardFound; 
+	public static int _datasize; 
 
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
+public int DataSize { get; }
+public CallbackType CallbackType { get; }
 
 
-	public int get_DataSize() { }
+public int get_DataSize() { }
 
-	public CallbackType get_CallbackType() { }
+public CallbackType get_CallbackType() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

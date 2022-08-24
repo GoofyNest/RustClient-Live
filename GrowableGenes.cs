@@ -1,16 +1,17 @@
 public class GrowableGenes // TypeDefIndex: 9544
-{	public GrowableGene[] Genes; // 0x10
+{
+	public GrowableGene[] Genes; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private void Clear() { }
+private void Clear() { }
 
-	public void Load(BaseNetworkable.LoadInfo info) { }
+public void Load(BaseNetworkable.LoadInfo info) { }
 
-	public void DebugPrint() { }
+public void DebugPrint() { }
 
-	private string GetDisplayString(bool previousGenes) { }
+private string GetDisplayString(bool previousGenes) { }
 
 }
 

@@ -1,14 +1,15 @@
 public class RandomParameterNumber : StateMachineBehaviour // TypeDefIndex: 11439
-{	public string parameterName; // 0x18
-	public int min; // 0x20
-	public int max; // 0x24
-	public bool preventRepetition; // 0x28
-	private int last; // 0x2C
+{
+	public string parameterName; 
+	public int min; 
+	public int max; 
+	public bool preventRepetition; 
+	private int last; 
 
 
-	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

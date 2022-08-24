@@ -1,12 +1,13 @@
 public class RandomStaticPrefab : MonoBehaviour // TypeDefIndex: 10356
-{	public uint Seed; // 0x18
-	public float Probability; // 0x1C
-	public string ResourceFolder; // 0x20
+{
+	public uint Seed; 
+	public float Probability; 
+	public string ResourceFolder; 
 
 
-	protected void Start() { }
+protected void Start() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

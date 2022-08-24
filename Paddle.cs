@@ -1,29 +1,30 @@
 public class Paddle : BaseMelee // TypeDefIndex: 9471
-{	public float animPaddleCooldown; // 0x2E0
-	public GameObjectRef kayakSeat; // 0x2E8
-	public float animationLerpSpeed; // 0x2F0
-	private static int param_Paddling; // 0x0
-	private static int param_right; // 0x4
-	private static int param_forward; // 0x8
-	private Vector3 smoothedAnimDirection; // 0x2F4
+{
+	public float animPaddleCooldown; 
+	public GameObjectRef kayakSeat; 
+	public float animationLerpSpeed; 
+	private static int param_Paddling; 
+	private static int param_right; 
+	private static int param_forward; 
+	private Vector3 smoothedAnimDirection; 
 
-	protected override bool CanAttack { get; }
-	protected override bool CanThrow { get; }
+protected override bool CanAttack { get; }
+protected override bool CanThrow { get; }
 
 
-	public override AnimatorOverrideController GetHoldAnimations() { }
+public override AnimatorOverrideController GetHoldAnimations() { }
 
-	private bool IsPlayerOnKayak(BasePlayer p) { }
+private bool IsPlayerOnKayak(BasePlayer p) { }
 
-	public override void OnInput() { }
+public override void OnInput() { }
 
-	protected override bool get_CanAttack() { }
+protected override bool get_CanAttack() { }
 
-	protected override bool get_CanThrow() { }
+protected override bool get_CanThrow() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

@@ -1,31 +1,32 @@
 public class MLRSUIDialog : UIDialog // TypeDefIndex: 9726
-{	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private MLRSMainUI mainUI; // 0x30
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private TokenisedPhrase howToUsePhrase; // 0x38
-	[SerializeField] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private float titleChangeInterval; // 0x40
-	private MLRS owner; // 0x48
-	private string baseTitleText; // 0x50
+{
+	[SerializeField] 
+	private MLRSMainUI mainUI; 
+	[SerializeField] 
+	private TokenisedPhrase howToUsePhrase; 
+	[SerializeField] 
+	private float titleChangeInterval; 
+	private MLRS owner; 
+	private string baseTitleText; 
 
 
-	protected void Start() { }
+protected void Start() { }
 
-	protected void Update() { }
+protected void Update() { }
 
-	public override void Clear() { }
+public override void Clear() { }
 
-	public void Init(MLRS mlrs) { }
+public void Init(MLRS mlrs) { }
 
-	public override void OpenDialog() { }
+public override void OpenDialog() { }
 
-	public override void CloseDialog() { }
+public override void CloseDialog() { }
 
-	private void SwapTitleText() { }
+private void SwapTitleText() { }
 
-	private void ClearOwner() { }
+private void ClearOwner() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

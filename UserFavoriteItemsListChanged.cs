@@ -1,18 +1,19 @@
 internal struct UserFavoriteItemsListChanged_t : ICallbackData // TypeDefIndex: 5436
-{	internal PublishedFileId PublishedFileId; // 0x0
-	internal Result Result; // 0x8
-	internal bool WasAddRequest; // 0xC
-	public static int _datasize; // 0x0
+{
+	internal PublishedFileId PublishedFileId; 
+	internal Result Result; 
+	internal bool WasAddRequest; 
+	public static int _datasize; 
 
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
+public int DataSize { get; }
+public CallbackType CallbackType { get; }
 
 
-	public int get_DataSize() { }
+public int get_DataSize() { }
 
-	public CallbackType get_CallbackType() { }
+public CallbackType get_CallbackType() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

@@ -1,12 +1,13 @@
 public sealed class TuneRequestEvent : SystemCommonEvent // TypeDefIndex: 7565
 {
-	public void .ctor() { }
 
-	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
+public void .ctor() { }
 
-	protected override MidiEvent CloneEvent() { }
+internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
 
-	public override string ToString() { }
+protected override MidiEvent CloneEvent() { }
+
+public override string ToString() { }
 
 }
 

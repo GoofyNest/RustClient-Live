@@ -1,15 +1,16 @@
 public class SnowMachine : FogMachine // TypeDefIndex: 8838
-{	public AdaptMeshToTerrain snowMesh; // 0x538
-	public TriggerTemperature tempTrigger; // 0x540
+{
+	public AdaptMeshToTerrain snowMesh; 
+	public TriggerTemperature tempTrigger; 
 
 
-	public override bool MotionModeEnabled() { }
+public override bool MotionModeEnabled() { }
 
-	public override void PostNetworkUpdate() { }
+public override void PostNetworkUpdate() { }
 
-	protected override void ClientInit(Entity info) { }
+protected override void ClientInit(Entity info) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,33 +1,34 @@
 public class MatchCollection : ICollection, IEnumerable // TypeDefIndex: 2622
-{	internal Regex _regex; // 0x10
-	internal ArrayList _matches; // 0x18
-	internal bool _done; // 0x20
-	internal string _input; // 0x28
-	internal int _beginning; // 0x30
-	internal int _length; // 0x34
-	internal int _startat; // 0x38
-	internal int _prevlen; // 0x3C
-	private static int infinite; // 0x0
+{
+	internal Regex _regex; 
+	internal ArrayList _matches; 
+	internal bool _done; 
+	internal string _input; 
+	internal int _beginning; 
+	internal int _length; 
+	internal int _startat; 
+	internal int _prevlen; 
+	private static int infinite; 
 
-	public int Count { get; }
-	public object SyncRoot { get; }
+public int Count { get; }
+public object SyncRoot { get; }
 
 
-	internal void .ctor(Regex regex, string input, int beginning, int length, int startat) { }
+internal void .ctor(Regex regex, string input, int beginning, int length, int startat) { }
 
-	internal Match GetMatch(int i) { }
+internal Match GetMatch(int i) { }
 
-	public int get_Count() { }
+public int get_Count() { }
 
-	public object get_SyncRoot() { }
+public object get_SyncRoot() { }
 
-	public void CopyTo(Array array, int arrayIndex) { }
+public void CopyTo(Array array, int arrayIndex) { }
 
-	public IEnumerator GetEnumerator() { }
+public IEnumerator GetEnumerator() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
-	internal void .ctor() { }
+internal void .ctor() { }
 
 }
 

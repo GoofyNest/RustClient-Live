@@ -1,12 +1,13 @@
 public class DeveloperUI : MonoBehaviour // TypeDefIndex: 11103
 {
-	public bool IsVisible() { }
 
-	public void OnPanelOpened() { }
+public bool IsVisible() { }
 
-	public void Update() { }
+public void OnPanelOpened() { }
 
-	public void .ctor() { }
+public void Update() { }
+
+public void .ctor() { }
 
 }
 

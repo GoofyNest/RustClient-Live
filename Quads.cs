@@ -1,19 +1,20 @@
 internal class Quads // TypeDefIndex: 8198
-{	private static Mesh[] meshes; // 0x0
-	private static int currentQuads; // 0x8
+{
+	private static Mesh[] meshes; 
+	private static int currentQuads; 
 
 
-	private static bool HasMeshes() { }
+private static bool HasMeshes() { }
 
-	public static void Cleanup() { }
+public static void Cleanup() { }
 
-	public static Mesh[] GetMeshes(int totalWidth, int totalHeight) { }
+public static Mesh[] GetMeshes(int totalWidth, int totalHeight) { }
 
-	private static Mesh GetMesh(int triCount, int triOffset, int totalWidth, int totalHeight) { }
+private static Mesh GetMesh(int triCount, int triOffset, int totalWidth, int totalHeight) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

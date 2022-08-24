@@ -1,9 +1,10 @@
 public class BaseResourceExtractor : BaseCombatEntity // TypeDefIndex: 9566
-{	public bool canExtractLiquid; // 0x240
-	public bool canExtractSolid; // 0x241
+{
+	public bool canExtractLiquid; 
+	public bool canExtractSolid; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

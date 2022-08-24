@@ -1,12 +1,13 @@
 public class PerformanceText : MonoBehaviour // TypeDefIndex: 11189
-{	public TextMeshProUGUI text; // 0x18
-	private StringBuilder sb; // 0x20
-	private Performance.Tick tick; // 0x28
+{
+	public TextMeshProUGUI text; 
+	private StringBuilder sb; 
+	private Performance.Tick tick; 
 
 
-	protected void LateUpdate() { }
+protected void LateUpdate() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

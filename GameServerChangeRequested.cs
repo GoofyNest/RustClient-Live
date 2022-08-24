@@ -1,21 +1,22 @@
 internal struct GameServerChangeRequested_t : ICallbackData // TypeDefIndex: 5309
-{	internal byte[] Server; // 0x0
-	internal byte[] Password; // 0x8
-	public static int _datasize; // 0x0
+{
+	internal byte[] Server; 
+	internal byte[] Password; 
+	public static int _datasize; 
 
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
+public int DataSize { get; }
+public CallbackType CallbackType { get; }
 
 
-	internal string ServerUTF8() { }
+internal string ServerUTF8() { }
 
-	internal string PasswordUTF8() { }
+internal string PasswordUTF8() { }
 
-	public int get_DataSize() { }
+public int get_DataSize() { }
 
-	public CallbackType get_CallbackType() { }
+public CallbackType get_CallbackType() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

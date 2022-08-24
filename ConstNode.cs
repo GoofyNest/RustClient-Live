@@ -1,32 +1,33 @@
 internal sealed class ConstNode : ExpressionNode // TypeDefIndex: 4246
-{	internal readonly object _val; // 0x18
+{
+	internal readonly object _val; 
 
 
-	internal void .ctor(DataTable table, ValueType type, object constant) { }
+internal void .ctor(DataTable table, ValueType type, object constant) { }
 
-	internal void .ctor(DataTable table, ValueType type, object constant, bool fParseQuotes) { }
+internal void .ctor(DataTable table, ValueType type, object constant, bool fParseQuotes) { }
 
-	internal override void Bind(DataTable table, List<DataColumn> list) { }
+internal override void Bind(DataTable table, List<DataColumn> list) { }
 
-	internal override object Eval() { }
+internal override object Eval() { }
 
-	internal override object Eval(DataRow row, DataRowVersion version) { }
+internal override object Eval(DataRow row, DataRowVersion version) { }
 
-	internal override object Eval(int[] recordNos) { }
+internal override object Eval(int[] recordNos) { }
 
-	internal override bool IsConstant() { }
+internal override bool IsConstant() { }
 
-	internal override bool IsTableConstant() { }
+internal override bool IsTableConstant() { }
 
-	internal override bool HasLocalAggregate() { }
+internal override bool HasLocalAggregate() { }
 
-	internal override bool HasRemoteAggregate() { }
+internal override bool HasRemoteAggregate() { }
 
-	internal override ExpressionNode Optimize() { }
+internal override ExpressionNode Optimize() { }
 
-	private object SmallestDecimal(object constant) { }
+private object SmallestDecimal(object constant) { }
 
-	private object SmallestNumeric(object constant) { }
+private object SmallestNumeric(object constant) { }
 
 }
 

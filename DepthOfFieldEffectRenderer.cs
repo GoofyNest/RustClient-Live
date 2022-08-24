@@ -1,18 +1,19 @@
 public class DepthOfFieldEffectRenderer : PostProcessEffectRenderer<DepthOfFieldEffect> // TypeDefIndex: 10248
-{	private float focalDistance01; // 0x20
-	private float internalBlurWidth; // 0x24
-	private Shader dofShader; // 0x28
+{
+	private float focalDistance01; 
+	private float internalBlurWidth; 
+	private Shader dofShader; 
 
 
-	public override void Init() { }
+public override void Init() { }
 
-	private float FocalDistance01(Camera cam, float worldDist) { }
+private float FocalDistance01(Camera cam, float worldDist) { }
 
-	private void WriteCoc(PostProcessRenderContext context, PropertySheet sheet) { }
+private void WriteCoc(PostProcessRenderContext context, PropertySheet sheet) { }
 
-	public override void Render(PostProcessRenderContext context) { }
+public override void Render(PostProcessRenderContext context) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

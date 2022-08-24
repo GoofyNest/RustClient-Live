@@ -1,15 +1,16 @@
 public class LeavesBlowing : MonoBehaviour // TypeDefIndex: 10194
-{	public ParticleSystem m_psLeaves; // 0x18
-	public float m_flSwirl; // 0x20
-	public float m_flSpeed; // 0x24
-	public float m_flEmissionRate; // 0x28
+{
+	public ParticleSystem m_psLeaves; 
+	public float m_flSwirl; 
+	public float m_flSpeed; 
+	public float m_flEmissionRate; 
 
 
-	private void Start() { }
+private void Start() { }
 
-	private void Update() { }
+private void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

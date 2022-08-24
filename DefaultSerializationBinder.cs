@@ -1,30 +1,32 @@
 public class DefaultSerializationBinder : SerializationBinder // TypeDefIndex: 6000
-{	internal static readonly DefaultSerializationBinder Instance; // 0x0
-	private readonly ThreadSafeStore<DefaultSerializationBinder.TypeNameKey, Type> _typeCache; // 0x10
+{
+	internal static readonly DefaultSerializationBinder Instance; 
+	private readonly ThreadSafeStore<DefaultSerializationBinder.TypeNameKey, Type> _typeCache; 
 
 
-	private static Type GetTypeFromTypeNameKey(DefaultSerializationBinder.TypeNameKey typeNameKey) { }
+private static Type GetTypeFromTypeNameKey(DefaultSerializationBinder.TypeNameKey typeNameKey) { }
 
-	public override Type BindToType(string assemblyName, string typeName) { }
+public override Type BindToType(string assemblyName, string typeName) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 
 internal struct DefaultSerializationBinder.TypeNameKey // TypeDefIndex: 6001
-{	internal readonly string AssemblyName; // 0x0
-	internal readonly string TypeName; // 0x8
+{
+	internal readonly string AssemblyName; 
+	internal readonly string TypeName; 
 
 
-	public void .ctor(string assemblyName, string typeName) { }
+public void .ctor(string assemblyName, string typeName) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override bool Equals(object obj) { }
+public override bool Equals(object obj) { }
 
-	public bool Equals(DefaultSerializationBinder.TypeNameKey other) { }
+public bool Equals(DefaultSerializationBinder.TypeNameKey other) { }
 
 }
 

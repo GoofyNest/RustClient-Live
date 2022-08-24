@@ -1,8 +1,9 @@
 public struct ParticleSystemNativeArray4 // TypeDefIndex: 4549
-{	public NativeArray<float> x; // 0x0
-	public NativeArray<float> y; // 0x10
-	public NativeArray<float> z; // 0x20
-	public NativeArray<float> w; // 0x30
+{
+	public NativeArray<float> x; 
+	public NativeArray<float> y; 
+	public NativeArray<float> z; 
+	public NativeArray<float> w; 
 
 }
 

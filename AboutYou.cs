@@ -1,14 +1,15 @@
 public class AboutYou : BaseMonoBehaviour // TypeDefIndex: 11083
-{	public Text username; // 0x18
-	public RawImage avatar; // 0x20
-	public Text subtitle; // 0x28
+{
+	public Text username; 
+	public RawImage avatar; 
+	public Text subtitle; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void Init() { }
+private void Init() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

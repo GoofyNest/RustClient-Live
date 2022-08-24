@@ -1,10 +1,11 @@
 public class DecorSocketMale : PrefabAttribute // TypeDefIndex: 10329
 {
-	protected override Type GetIndexedType() { }
 
-	protected void OnDrawGizmos() { }
+protected override Type GetIndexedType() { }
 
-	public void .ctor() { }
+protected void OnDrawGizmos() { }
+
+public void .ctor() { }
 
 }
 

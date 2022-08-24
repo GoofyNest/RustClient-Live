@@ -1,16 +1,17 @@
 public class TriggerNoSpray : TriggerBase // TypeDefIndex: 10030
-{	public BoxCollider TriggerCollider; // 0x30
-	private OBB cachedBounds; // 0x38
-	private Transform cachedTransform; // 0x88
+{
+	public BoxCollider TriggerCollider; 
+	private OBB cachedBounds; 
+	private Transform cachedTransform; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	internal override GameObject InterestedInObject(GameObject obj) { }
+internal override GameObject InterestedInObject(GameObject obj) { }
 
-	public bool IsPositionValid(Vector3 worldPosition) { }
+public bool IsPositionValid(Vector3 worldPosition) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

@@ -1,26 +1,27 @@
 public sealed class ReaderWriterLock : CriticalFinalizerObject // TypeDefIndex: 829
-{	private int seq_num; // 0x10
-	private int state; // 0x14
-	private int readers; // 0x18
-	private int writer_lock_owner; // 0x1C
-	private LockQueue writer_queue; // 0x20
-	private Hashtable reader_locks; // 0x28
+{
+	private int seq_num; 
+	private int state; 
+	private int readers; 
+	private int writer_lock_owner; 
+	private LockQueue writer_queue; 
+	private Hashtable reader_locks; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	protected override void Finalize() { }
+protected override void Finalize() { }
 
-	public void AcquireWriterLock(int millisecondsTimeout) { }
+public void AcquireWriterLock(int millisecondsTimeout) { }
 
-	private void AcquireWriterLock(int millisecondsTimeout, int initialLockCount) { }
+private void AcquireWriterLock(int millisecondsTimeout, int initialLockCount) { }
 
-	[ReliabilityContractAttribute] // RVA: 0x76C70 Offset: 0x76070 VA: 0x180076C70
-	public void ReleaseWriterLock() { }
+	[ReliabilityContractAttribute] 
+public void ReleaseWriterLock() { }
 
-	private void ReleaseWriterLock(int releaseCount) { }
+private void ReleaseWriterLock(int releaseCount) { }
 
-	private bool HasWriterLock() { }
+private bool HasWriterLock() { }
 
 }
 

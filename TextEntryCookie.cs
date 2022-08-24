@@ -1,14 +1,15 @@
 public class TextEntryCookie : MonoBehaviour // TypeDefIndex: 11232
-{	public InputField control { get; }
+{
+public InputField control { get; }
 
 
-	public InputField get_control() { }
+public InputField get_control() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnDisable() { }
+private void OnDisable() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

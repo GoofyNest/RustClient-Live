@@ -1,8 +1,9 @@
 internal class OpenedHost // TypeDefIndex: 2009
-{	internal int nonCachedConnectionsCount; // 0x10
+{
+	internal int nonCachedConnectionsCount; 
 
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

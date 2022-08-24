@@ -1,20 +1,21 @@
 public class Hammer : BaseMelee // TypeDefIndex: 9466
 {
-	protected BuildingBlock GetBuildingBlock(BasePlayer player) { }
 
-	protected BaseVehicleModule GetVehicleModule(BasePlayer player) { }
+protected BuildingBlock GetBuildingBlock(BasePlayer player) { }
 
-	public override void OnFrame() { }
+protected BaseVehicleModule GetVehicleModule(BasePlayer player) { }
 
-	public override void OnInput() { }
+public override void OnFrame() { }
 
-	private void OpenContextMenu() { }
+public override void OnInput() { }
 
-	public override bool CanHit(HitTest info) { }
+private void OpenContextMenu() { }
 
-	public override void DoAttackShared(HitInfo info) { }
+public override bool CanHit(HitTest info) { }
 
-	public void .ctor() { }
+public override void DoAttackShared(HitInfo info) { }
+
+public void .ctor() { }
 
 }
 

@@ -1,15 +1,16 @@
 public class DevControls : MonoBehaviour // TypeDefIndex: 9295
-{	public GUISkin skin; // 0x18
-	internal TabbedPanel tabbedPanel; // 0x20
+{
+	public GUISkin skin; 
+	internal TabbedPanel tabbedPanel; 
 
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnGUI() { }
+private void OnGUI() { }
 
-	private void Init() { }
+private void Init() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

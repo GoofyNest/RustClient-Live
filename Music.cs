@@ -1,18 +1,19 @@
 public class Music : ConsoleSystem // TypeDefIndex: 11942
-{	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	public static bool enabled; // 0x0
-	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	public static int songGapMin; // 0x4
-	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	public static int songGapMax; // 0x8
+{
+	[ClientVar] 
+	public static bool enabled; 
+	[ClientVar] 
+	public static int songGapMin; 
+	[ClientVar] 
+	public static int songGapMax; 
 
 
-	[ClientVar] // RVA: 0x71070 Offset: 0x70470 VA: 0x180071070
-	public static void info(ConsoleSystem.Arg arg) { }
+	[ClientVar] 
+public static void info(ConsoleSystem.Arg arg) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

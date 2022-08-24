@@ -1,137 +1,138 @@
 internal static class ShaderIDs // TypeDefIndex: 11866
-{	internal static readonly int MainTex; // 0x0
-	internal static readonly int Jitter; // 0x4
-	internal static readonly int Sharpness; // 0x8
-	internal static readonly int FinalBlendParameters; // 0xC
-	internal static readonly int HistoryTex; // 0x10
-	internal static readonly int SMAA_Flip; // 0x14
-	internal static readonly int SMAA_Flop; // 0x18
-	internal static readonly int AOParams; // 0x1C
-	internal static readonly int AOColor; // 0x20
-	internal static readonly int OcclusionTexture1; // 0x24
-	internal static readonly int OcclusionTexture2; // 0x28
-	internal static readonly int SAOcclusionTexture; // 0x2C
-	internal static readonly int MSVOcclusionTexture; // 0x30
-	internal static readonly int DepthCopy; // 0x34
-	internal static readonly int LinearDepth; // 0x38
-	internal static readonly int LowDepth1; // 0x3C
-	internal static readonly int LowDepth2; // 0x40
-	internal static readonly int LowDepth3; // 0x44
-	internal static readonly int LowDepth4; // 0x48
-	internal static readonly int TiledDepth1; // 0x4C
-	internal static readonly int TiledDepth2; // 0x50
-	internal static readonly int TiledDepth3; // 0x54
-	internal static readonly int TiledDepth4; // 0x58
-	internal static readonly int Occlusion1; // 0x5C
-	internal static readonly int Occlusion2; // 0x60
-	internal static readonly int Occlusion3; // 0x64
-	internal static readonly int Occlusion4; // 0x68
-	internal static readonly int Combined1; // 0x6C
-	internal static readonly int Combined2; // 0x70
-	internal static readonly int Combined3; // 0x74
-	internal static readonly int SSRResolveTemp; // 0x78
-	internal static readonly int Noise; // 0x7C
-	internal static readonly int Test; // 0x80
-	internal static readonly int Resolve; // 0x84
-	internal static readonly int History; // 0x88
-	internal static readonly int ViewMatrix; // 0x8C
-	internal static readonly int InverseViewMatrix; // 0x90
-	internal static readonly int InverseProjectionMatrix; // 0x94
-	internal static readonly int ScreenSpaceProjectionMatrix; // 0x98
-	internal static readonly int Params2; // 0x9C
-	internal static readonly int FogColor; // 0xA0
-	internal static readonly int FogParams; // 0xA4
-	internal static readonly int VelocityScale; // 0xA8
-	internal static readonly int MaxBlurRadius; // 0xAC
-	internal static readonly int RcpMaxBlurRadius; // 0xB0
-	internal static readonly int VelocityTex; // 0xB4
-	internal static readonly int Tile2RT; // 0xB8
-	internal static readonly int Tile4RT; // 0xBC
-	internal static readonly int Tile8RT; // 0xC0
-	internal static readonly int TileMaxOffs; // 0xC4
-	internal static readonly int TileMaxLoop; // 0xC8
-	internal static readonly int TileVRT; // 0xCC
-	internal static readonly int NeighborMaxTex; // 0xD0
-	internal static readonly int LoopCount; // 0xD4
-	internal static readonly int DepthOfFieldTemp; // 0xD8
-	internal static readonly int DepthOfFieldTex; // 0xDC
-	internal static readonly int Distance; // 0xE0
-	internal static readonly int LensCoeff; // 0xE4
-	internal static readonly int MaxCoC; // 0xE8
-	internal static readonly int RcpMaxCoC; // 0xEC
-	internal static readonly int RcpAspect; // 0xF0
-	internal static readonly int CoCTex; // 0xF4
-	internal static readonly int TaaParams; // 0xF8
-	internal static readonly int AutoExposureTex; // 0xFC
-	internal static readonly int HistogramBuffer; // 0x100
-	internal static readonly int Params; // 0x104
-	internal static readonly int ScaleOffsetRes; // 0x108
-	internal static readonly int BloomTex; // 0x10C
-	internal static readonly int SampleScale; // 0x110
-	internal static readonly int Threshold; // 0x114
-	internal static readonly int ColorIntensity; // 0x118
-	internal static readonly int Bloom_DirtTex; // 0x11C
-	internal static readonly int Bloom_Settings; // 0x120
-	internal static readonly int Bloom_Color; // 0x124
-	internal static readonly int Bloom_DirtTileOffset; // 0x128
-	internal static readonly int ChromaticAberration_Amount; // 0x12C
-	internal static readonly int ChromaticAberration_SpectralLut; // 0x130
-	internal static readonly int Distortion_CenterScale; // 0x134
-	internal static readonly int Distortion_Amount; // 0x138
-	internal static readonly int Lut2D; // 0x13C
-	internal static readonly int Lut3D; // 0x140
-	internal static readonly int Lut3D_Params; // 0x144
-	internal static readonly int Lut2D_Params; // 0x148
-	internal static readonly int UserLut2D_Params; // 0x14C
-	internal static readonly int PostExposure; // 0x150
-	internal static readonly int ColorBalance; // 0x154
-	internal static readonly int ColorFilter; // 0x158
-	internal static readonly int HueSatCon; // 0x15C
-	internal static readonly int Brightness; // 0x160
-	internal static readonly int ChannelMixerRed; // 0x164
-	internal static readonly int ChannelMixerGreen; // 0x168
-	internal static readonly int ChannelMixerBlue; // 0x16C
-	internal static readonly int Lift; // 0x170
-	internal static readonly int InvGamma; // 0x174
-	internal static readonly int Gain; // 0x178
-	internal static readonly int Curves; // 0x17C
-	internal static readonly int CustomToneCurve; // 0x180
-	internal static readonly int ToeSegmentA; // 0x184
-	internal static readonly int ToeSegmentB; // 0x188
-	internal static readonly int MidSegmentA; // 0x18C
-	internal static readonly int MidSegmentB; // 0x190
-	internal static readonly int ShoSegmentA; // 0x194
-	internal static readonly int ShoSegmentB; // 0x198
-	internal static readonly int Vignette_Color; // 0x19C
-	internal static readonly int Vignette_Center; // 0x1A0
-	internal static readonly int Vignette_Settings; // 0x1A4
-	internal static readonly int Vignette_Mask; // 0x1A8
-	internal static readonly int Vignette_Opacity; // 0x1AC
-	internal static readonly int Vignette_Mode; // 0x1B0
-	internal static readonly int Grain_Params1; // 0x1B4
-	internal static readonly int Grain_Params2; // 0x1B8
-	internal static readonly int GrainTex; // 0x1BC
-	internal static readonly int Phase; // 0x1C0
-	internal static readonly int GrainNoiseParameters; // 0x1C4
-	internal static readonly int LumaInAlpha; // 0x1C8
-	internal static readonly int DitheringTex; // 0x1CC
-	internal static readonly int Dithering_Coords; // 0x1D0
-	internal static readonly int From; // 0x1D4
-	internal static readonly int To; // 0x1D8
-	internal static readonly int Interp; // 0x1DC
-	internal static readonly int TargetColor; // 0x1E0
-	internal static readonly int HalfResFinalCopy; // 0x1E4
-	internal static readonly int WaveformSource; // 0x1E8
-	internal static readonly int WaveformBuffer; // 0x1EC
-	internal static readonly int VectorscopeBuffer; // 0x1F0
-	internal static readonly int RenderViewportScaleFactor; // 0x1F4
-	internal static readonly int UVTransform; // 0x1F8
-	internal static readonly int DepthSlice; // 0x1FC
-	internal static readonly int UVScaleOffset; // 0x200
-	internal static readonly int PosScaleOffset; // 0x204
+{
+	internal static readonly int MainTex; 
+	internal static readonly int Jitter; 
+	internal static readonly int Sharpness; 
+	internal static readonly int FinalBlendParameters; 
+	internal static readonly int HistoryTex; 
+	internal static readonly int SMAA_Flip; 
+	internal static readonly int SMAA_Flop; 
+	internal static readonly int AOParams; 
+	internal static readonly int AOColor; 
+	internal static readonly int OcclusionTexture1; 
+	internal static readonly int OcclusionTexture2; 
+	internal static readonly int SAOcclusionTexture; 
+	internal static readonly int MSVOcclusionTexture; 
+	internal static readonly int DepthCopy; 
+	internal static readonly int LinearDepth; 
+	internal static readonly int LowDepth1; 
+	internal static readonly int LowDepth2; 
+	internal static readonly int LowDepth3; 
+	internal static readonly int LowDepth4; 
+	internal static readonly int TiledDepth1; 
+	internal static readonly int TiledDepth2; 
+	internal static readonly int TiledDepth3; 
+	internal static readonly int TiledDepth4; 
+	internal static readonly int Occlusion1; 
+	internal static readonly int Occlusion2; 
+	internal static readonly int Occlusion3; 
+	internal static readonly int Occlusion4; 
+	internal static readonly int Combined1; 
+	internal static readonly int Combined2; 
+	internal static readonly int Combined3; 
+	internal static readonly int SSRResolveTemp; 
+	internal static readonly int Noise; 
+	internal static readonly int Test; 
+	internal static readonly int Resolve; 
+	internal static readonly int History; 
+	internal static readonly int ViewMatrix; 
+	internal static readonly int InverseViewMatrix; 
+	internal static readonly int InverseProjectionMatrix; 
+	internal static readonly int ScreenSpaceProjectionMatrix; 
+	internal static readonly int Params2; 
+	internal static readonly int FogColor; 
+	internal static readonly int FogParams; 
+	internal static readonly int VelocityScale; 
+	internal static readonly int MaxBlurRadius; 
+	internal static readonly int RcpMaxBlurRadius; 
+	internal static readonly int VelocityTex; 
+	internal static readonly int Tile2RT; 
+	internal static readonly int Tile4RT; 
+	internal static readonly int Tile8RT; 
+	internal static readonly int TileMaxOffs; 
+	internal static readonly int TileMaxLoop; 
+	internal static readonly int TileVRT; 
+	internal static readonly int NeighborMaxTex; 
+	internal static readonly int LoopCount; 
+	internal static readonly int DepthOfFieldTemp; 
+	internal static readonly int DepthOfFieldTex; 
+	internal static readonly int Distance; 
+	internal static readonly int LensCoeff; 
+	internal static readonly int MaxCoC; 
+	internal static readonly int RcpMaxCoC; 
+	internal static readonly int RcpAspect; 
+	internal static readonly int CoCTex; 
+	internal static readonly int TaaParams; 
+	internal static readonly int AutoExposureTex; 
+	internal static readonly int HistogramBuffer; 
+	internal static readonly int Params; 
+	internal static readonly int ScaleOffsetRes; 
+	internal static readonly int BloomTex; 
+	internal static readonly int SampleScale; 
+	internal static readonly int Threshold; 
+	internal static readonly int ColorIntensity; 
+	internal static readonly int Bloom_DirtTex; 
+	internal static readonly int Bloom_Settings; 
+	internal static readonly int Bloom_Color; 
+	internal static readonly int Bloom_DirtTileOffset; 
+	internal static readonly int ChromaticAberration_Amount; 
+	internal static readonly int ChromaticAberration_SpectralLut; 
+	internal static readonly int Distortion_CenterScale; 
+	internal static readonly int Distortion_Amount; 
+	internal static readonly int Lut2D; 
+	internal static readonly int Lut3D; 
+	internal static readonly int Lut3D_Params; 
+	internal static readonly int Lut2D_Params; 
+	internal static readonly int UserLut2D_Params; 
+	internal static readonly int PostExposure; 
+	internal static readonly int ColorBalance; 
+	internal static readonly int ColorFilter; 
+	internal static readonly int HueSatCon; 
+	internal static readonly int Brightness; 
+	internal static readonly int ChannelMixerRed; 
+	internal static readonly int ChannelMixerGreen; 
+	internal static readonly int ChannelMixerBlue; 
+	internal static readonly int Lift; 
+	internal static readonly int InvGamma; 
+	internal static readonly int Gain; 
+	internal static readonly int Curves; 
+	internal static readonly int CustomToneCurve; 
+	internal static readonly int ToeSegmentA; 
+	internal static readonly int ToeSegmentB; 
+	internal static readonly int MidSegmentA; 
+	internal static readonly int MidSegmentB; 
+	internal static readonly int ShoSegmentA; 
+	internal static readonly int ShoSegmentB; 
+	internal static readonly int Vignette_Color; 
+	internal static readonly int Vignette_Center; 
+	internal static readonly int Vignette_Settings; 
+	internal static readonly int Vignette_Mask; 
+	internal static readonly int Vignette_Opacity; 
+	internal static readonly int Vignette_Mode; 
+	internal static readonly int Grain_Params1; 
+	internal static readonly int Grain_Params2; 
+	internal static readonly int GrainTex; 
+	internal static readonly int Phase; 
+	internal static readonly int GrainNoiseParameters; 
+	internal static readonly int LumaInAlpha; 
+	internal static readonly int DitheringTex; 
+	internal static readonly int Dithering_Coords; 
+	internal static readonly int From; 
+	internal static readonly int To; 
+	internal static readonly int Interp; 
+	internal static readonly int TargetColor; 
+	internal static readonly int HalfResFinalCopy; 
+	internal static readonly int WaveformSource; 
+	internal static readonly int WaveformBuffer; 
+	internal static readonly int VectorscopeBuffer; 
+	internal static readonly int RenderViewportScaleFactor; 
+	internal static readonly int UVTransform; 
+	internal static readonly int DepthSlice; 
+	internal static readonly int UVScaleOffset; 
+	internal static readonly int PosScaleOffset; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

@@ -1,16 +1,17 @@
 public class UriTypeConverter : TypeConverter // TypeDefIndex: 2599
 {
-	public void .ctor() { }
 
-	private bool CanConvert(Type type) { }
+public void .ctor() { }
 
-	public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType) { }
+private bool CanConvert(Type type) { }
 
-	public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType) { }
+public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType) { }
 
-	public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value) { }
+public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType) { }
 
-	public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType) { }
+public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value) { }
+
+public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType) { }
 
 }
 

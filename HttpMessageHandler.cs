@@ -1,12 +1,13 @@
 public abstract class HttpMessageHandler : IDisposable // TypeDefIndex: 5750
 {
-	public void Dispose() { }
 
-	protected virtual void Dispose(bool disposing) { }
+public void Dispose() { }
 
-	protected internal abstract Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken);
+protected virtual void Dispose(bool disposing) { }
 
-	protected void .ctor() { }
+protected internal abstract Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken);
+
+protected void .ctor() { }
 
 }
 

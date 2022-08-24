@@ -1,20 +1,21 @@
 public struct InventoryItemId : IEquatable<InventoryItemId>, IComparable<InventoryItemId> // TypeDefIndex: 5537
-{	public ulong Value; // 0x0
+{
+	public ulong Value; 
 
 
-	public static InventoryItemId op_Implicit(ulong value) { }
+public static InventoryItemId op_Implicit(ulong value) { }
 
-	public override string ToString() { }
+public override string ToString() { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override bool Equals(object p) { }
+public override bool Equals(object p) { }
 
-	public bool Equals(InventoryItemId p) { }
+public bool Equals(InventoryItemId p) { }
 
-	public static bool op_Equality(InventoryItemId a, InventoryItemId b) { }
+public static bool op_Equality(InventoryItemId a, InventoryItemId b) { }
 
-	public int CompareTo(InventoryItemId other) { }
+public int CompareTo(InventoryItemId other) { }
 
 }
 

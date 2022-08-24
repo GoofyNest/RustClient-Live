@@ -1,30 +1,33 @@
 public class TreeMarkerData : PrefabAttribute, IServerComponent // TypeDefIndex: 9677
-{	public TreeMarkerData.GenerationArc[] GenerationArcs; // 0x98
-	public TreeMarkerData.MarkerLocation[] Markers; // 0xA0
-	public Vector3 GenerationStartPoint; // 0xA8
-	public float GenerationRadius; // 0xB4
-	public float MaxY; // 0xB8
-	public float MinY; // 0xBC
-	public bool ProcessAngleChecks; // 0xC0
+{
+	public TreeMarkerData.GenerationArc[] GenerationArcs; 
+	public TreeMarkerData.MarkerLocation[] Markers; 
+	public Vector3 GenerationStartPoint; 
+	public float GenerationRadius; 
+	public float MaxY; 
+	public float MinY; 
+	public bool ProcessAngleChecks; 
 
 
-	protected override Type GetIndexedType() { }
+protected override Type GetIndexedType() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
 public struct TreeMarkerData.MarkerLocation // TypeDefIndex: 9678
-{	public Vector3 LocalPosition; // 0x0
-	public Vector3 LocalNormal; // 0xC
+{
+	public Vector3 LocalPosition; 
+	public Vector3 LocalNormal; 
 
 }
 
 public struct TreeMarkerData.GenerationArc // TypeDefIndex: 9679
-{	public Vector3 CentrePoint; // 0x0
-	public float Radius; // 0xC
-	public Vector3 Rotation; // 0x10
-	public int OverrideCount; // 0x1C
+{
+	public Vector3 CentrePoint; 
+	public float Radius; 
+	public Vector3 Rotation; 
+	public int OverrideCount; 
 
 }
 

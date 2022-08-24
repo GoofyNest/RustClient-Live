@@ -1,22 +1,23 @@
 public class WaterDepthMask : MonoBehaviour // TypeDefIndex: 10601
-{	private Mesh mesh; // 0x18
-	private Material material; // 0x20
+{
+	private Mesh mesh; 
+	private Material material; 
 
-	public Mesh Mesh { get; }
-	public Material Material { get; }
+public Mesh Mesh { get; }
+public Material Material { get; }
 
 
-	public Mesh get_Mesh() { }
+public Mesh get_Mesh() { }
 
-	public Material get_Material() { }
+public Material get_Material() { }
 
-	private void OnEnable() { }
+private void OnEnable() { }
 
-	private void OnBecameVisible() { }
+private void OnBecameVisible() { }
 
-	private void OnBecameInvisible() { }
+private void OnBecameInvisible() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

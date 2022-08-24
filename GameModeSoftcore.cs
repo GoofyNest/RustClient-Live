@@ -1,15 +1,16 @@
 public class GameModeSoftcore : GameModeVanilla // TypeDefIndex: 9885
-{	public GameObjectRef reclaimManagerPrefab; // 0x228
-	public GameObjectRef reclaimBackpackPrefab; // 0x230
-	public static readonly Translate.Phrase ReclaimToast; // 0x0
-	public ItemAmount[] startingGear; // 0x238
+{
+	public GameObjectRef reclaimManagerPrefab; 
+	public GameObjectRef reclaimBackpackPrefab; 
+	public static readonly Translate.Phrase ReclaimToast; 
+	public ItemAmount[] startingGear; 
 
 
-	protected override void OnCreated() { }
+protected override void OnCreated() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

@@ -1,55 +1,56 @@
 public class ERSORoadExt : ScriptableObject // TypeDefIndex: 7229
-{	public SideObject sideObject; // 0x18
-	public double id; // 0x20
-	public bool active; // 0x28
-	public List<Vector3> vecPositions; // 0x30
-	public bool toggleActive; // 0x38
-	public bool autoGenerate; // 0x39
-	public bool markerActive; // 0x3A
-	public float m_distance; // 0x3C
-	public float xPosition; // 0x40
-	[HideInInspector] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public float oldXPosition; // 0x44
-	public float yPosition; // 0x48
-	public Vector3 randomRotation; // 0x4C
-	public float randomMinRotation; // 0x58
-	public float randomMaxRotation; // 0x5C
-	public float minRandomRotationDistance; // 0x60
-	public float maxRandomRotationDistance; // 0x64
-	public bool distanceChange; // 0x68
-	public bool xPosChange; // 0x69
-	public bool yPosChange; // 0x6A
-	public bool rotationAngleChange; // 0x6B
-	public bool rotationDistanceChange; // 0x6C
-	public bool lockRandomRotations; // 0x6D
-	public bool randomXPositionChange; // 0x6E
-	public bool randomYPositionChange; // 0x6F
-	public bool xPositionDistanceChange; // 0x70
-	public float randomXPosition; // 0x74
-	public float randomMinXPosition; // 0x78
-	public float randomMaxXPosition; // 0x7C
-	public float minRandomXPositionDistance; // 0x80
-	public float maxRandomXPositionDistance; // 0x84
-	public Vector3 boxColliderScale; // 0x88
-	public bool yPositionDistanceChange; // 0x94
-	public float randomYPosition; // 0x98
-	public float randomMinYPosition; // 0x9C
-	public float randomMaxYPosition; // 0xA0
-	public float minRandomYPositionDistance; // 0xA4
-	public float maxRandomYPositionDistance; // 0xA8
-	public GameObject sourceObject; // 0xB0
-	public List<ERSOSection> sections; // 0xB8
-	public List<GameObject> objects; // 0xC0
-	public bool clampToMarkers; // 0xC8
+{
+	public SideObject sideObject; 
+	public double id; 
+	public bool active; 
+	public List<Vector3> vecPositions; 
+	public bool toggleActive; 
+	public bool autoGenerate; 
+	public bool markerActive; 
+	public float m_distance; 
+	public float xPosition; 
+	[HideInInspector] 
+	public float oldXPosition; 
+	public float yPosition; 
+	public Vector3 randomRotation; 
+	public float randomMinRotation; 
+	public float randomMaxRotation; 
+	public float minRandomRotationDistance; 
+	public float maxRandomRotationDistance; 
+	public bool distanceChange; 
+	public bool xPosChange; 
+	public bool yPosChange; 
+	public bool rotationAngleChange; 
+	public bool rotationDistanceChange; 
+	public bool lockRandomRotations; 
+	public bool randomXPositionChange; 
+	public bool randomYPositionChange; 
+	public bool xPositionDistanceChange; 
+	public float randomXPosition; 
+	public float randomMinXPosition; 
+	public float randomMaxXPosition; 
+	public float minRandomXPositionDistance; 
+	public float maxRandomXPositionDistance; 
+	public Vector3 boxColliderScale; 
+	public bool yPositionDistanceChange; 
+	public float randomYPosition; 
+	public float randomMinYPosition; 
+	public float randomMaxYPosition; 
+	public float minRandomYPositionDistance; 
+	public float maxRandomYPositionDistance; 
+	public GameObject sourceObject; 
+	public List<ERSOSection> sections; 
+	public List<GameObject> objects; 
+	public bool clampToMarkers; 
 
 
-	public void Init(SideObject so) { }
+public void Init(SideObject so) { }
 
-	public static ERSORoadExt CreateInstance(SideObject so) { }
+public static ERSORoadExt CreateInstance(SideObject so) { }
 
-	public static void Copy(ERSORoadExt source, ERSORoadExt target) { }
+public static void Copy(ERSORoadExt source, ERSORoadExt target) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

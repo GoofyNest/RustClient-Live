@@ -1,10 +1,11 @@
 public class MoveForward : MonoBehaviour // TypeDefIndex: 11317
-{	public float Speed; // 0x18
+{
+	public float Speed; 
 
 
-	protected void Update() { }
+protected void Update() { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

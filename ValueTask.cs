@@ -1,34 +1,35 @@
 public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7085
-{	private static readonly Task s_canceledTask; // 0x0
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private static readonly Task <CompletedTask>k__BackingField; // 0x8
-	internal readonly object _obj; // 0x0
-	internal readonly short _token; // 0x8
-	internal readonly bool _continueOnCapturedContext; // 0xA
+{
+	private static readonly Task s_canceledTask; 
+	[CompilerGeneratedAttribute] 
+	private static readonly Task <CompletedTask>k__BackingField; 
+	internal readonly object _obj; 
+	internal readonly short _token; 
+	internal readonly bool _continueOnCapturedContext; 
 
-	internal static Task CompletedTask { get; }
-	public bool IsCompleted { get; }
+internal static Task CompletedTask { get; }
+public bool IsCompleted { get; }
 
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	internal static Task get_CompletedTask() { }
+	[CompilerGeneratedAttribute] 
+internal static Task get_CompletedTask() { }
 
-	public void .ctor(Task task) { }
+public void .ctor(Task task) { }
 
-	public override int GetHashCode() { }
+public override int GetHashCode() { }
 
-	public override bool Equals(object obj) { }
+public override bool Equals(object obj) { }
 
-	public bool Equals(ValueTask other) { }
+public bool Equals(ValueTask other) { }
 
-	public bool get_IsCompleted() { }
+public bool get_IsCompleted() { }
 
-	[StackTraceHiddenAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	internal void ThrowIfCompletedUnsuccessfully() { }
+	[StackTraceHiddenAttribute] 
+internal void ThrowIfCompletedUnsuccessfully() { }
 
-	public ValueTaskAwaiter GetAwaiter() { }
+public ValueTaskAwaiter GetAwaiter() { }
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 

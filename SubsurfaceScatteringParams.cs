@@ -1,20 +1,22 @@
 public struct SubsurfaceScatteringParams // TypeDefIndex: 10653
-{	public bool enabled; // 0x0
-	public SubsurfaceScatteringParams.Quality quality; // 0x4
-	public bool halfResolution; // 0x8
-	public float radiusScale; // 0xC
-	public static SubsurfaceScatteringParams Default; // 0x0
+{
+	public bool enabled; 
+	public SubsurfaceScatteringParams.Quality quality; 
+	public bool halfResolution; 
+	public float radiusScale; 
+	public static SubsurfaceScatteringParams Default; 
 
 
-	private static void .cctor() { }
+private static void .cctor() { }
 
 }
 
 public enum SubsurfaceScatteringParams.Quality // TypeDefIndex: 10654
-{	public int value__; // 0x0
-	public const SubsurfaceScatteringParams.Quality Low = 0;
-	public const SubsurfaceScatteringParams.Quality Medium = 1;
-	public const SubsurfaceScatteringParams.Quality High = 2;
+{
+	public int value__; 
+public const SubsurfaceScatteringParams.Quality Low = 0;
+public const SubsurfaceScatteringParams.Quality Medium = 1;
+public const SubsurfaceScatteringParams.Quality High = 2;
 
 }
 

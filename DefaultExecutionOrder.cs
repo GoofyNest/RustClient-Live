@@ -1,12 +1,13 @@
 public class DefaultExecutionOrder : Attribute // TypeDefIndex: 3502
-{	private int m_Order; // 0x10
+{
+	private int m_Order; 
 
-	public int order { get; }
+public int order { get; }
 
 
-	public void .ctor(int order) { }
+public void .ctor(int order) { }
 
-	public int get_order() { }
+public int get_order() { }
 
 }
 

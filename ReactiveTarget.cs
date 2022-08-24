@@ -1,58 +1,59 @@
 public class ReactiveTarget : IOEntity // TypeDefIndex: 8433
-{	private Option __menuOption_Lower_Target; // 0x288
-	private Option __menuOption_Reset_target; // 0x2E0
-	public Animator myAnimator; // 0x338
-	public GameObjectRef bullseyeEffect; // 0x340
-	public GameObjectRef knockdownEffect; // 0x348
-	public float activationPowerTime; // 0x350
-	public int activationPowerAmount; // 0x354
-	private float lastToggleTime; // 0x358
+{
+	private Option __menuOption_Lower_Target; 
+	private Option __menuOption_Reset_target; 
+	public Animator myAnimator; 
+	public GameObjectRef bullseyeEffect; 
+	public GameObjectRef knockdownEffect; 
+	public float activationPowerTime; 
+	public int activationPowerAmount; 
+	private float lastToggleTime; 
 
-	public override bool HasMenuOptions { get; }
+public override bool HasMenuOptions { get; }
 
 
-	public override void GetMenuOptions(List<Option> list) { }
+public override void GetMenuOptions(List<Option> list) { }
 
-	public override bool get_HasMenuOptions() { }
+public override bool get_HasMenuOptions() { }
 
-	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	public void OnHitShared(HitInfo info) { }
+public void OnHitShared(HitInfo info) { }
 
-	public bool IsKnockedDown() { }
+public bool IsKnockedDown() { }
 
-	public override void OnAttacked(HitInfo info) { }
+public override void OnAttacked(HitInfo info) { }
 
-	public override bool CanPickup(BasePlayer player) { }
+public override bool CanPickup(BasePlayer player) { }
 
-	public bool CanToggle() { }
+public bool CanToggle() { }
 
-	[BaseEntity.RPC_Client] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public void HitEffect(BaseEntity.RPCMessage msg) { }
+	[BaseEntity.RPC_Client] 
+public void HitEffect(BaseEntity.RPCMessage msg) { }
 
-	public override void ClientOnEnable() { }
+public override void ClientOnEnable() { }
 
-	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-	private void UpdateAnimationParameters(bool isOn) { }
+private void UpdateAnimationParameters(bool isOn) { }
 
-	[BaseEntity.Menu] // RVA: 0x7F0F0 Offset: 0x7E4F0 VA: 0x18007F0F0
-	[BaseEntity.Menu.Description] // RVA: 0x7F0F0 Offset: 0x7E4F0 VA: 0x18007F0F0
-	[BaseEntity.Menu.Icon] // RVA: 0x7F0F0 Offset: 0x7E4F0 VA: 0x18007F0F0
-	[BaseEntity.Menu.ShowIf] // RVA: 0x7F0F0 Offset: 0x7E4F0 VA: 0x18007F0F0
-	public void Reset_target(BasePlayer player) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+public void Reset_target(BasePlayer player) { }
 
-	public bool Menu_Reset_ShowIf(BasePlayer player) { }
+public bool Menu_Reset_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] // RVA: 0x7F430 Offset: 0x7E830 VA: 0x18007F430
-	[BaseEntity.Menu.Description] // RVA: 0x7F430 Offset: 0x7E830 VA: 0x18007F430
-	[BaseEntity.Menu.Icon] // RVA: 0x7F430 Offset: 0x7E830 VA: 0x18007F430
-	[BaseEntity.Menu.ShowIf] // RVA: 0x7F430 Offset: 0x7E830 VA: 0x18007F430
-	public void Lower_Target(BasePlayer player) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+public void Lower_Target(BasePlayer player) { }
 
-	public bool Menu_Lower_ShowIf(BasePlayer player) { }
+public bool Menu_Lower_ShowIf(BasePlayer player) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 

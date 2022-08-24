@@ -1,31 +1,32 @@
 public class PhotoEntity : ImageStorageEntity, IUGCBrowserEntity // TypeDefIndex: 8815
-{	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private ulong <PhotographerSteamId>k__BackingField; // 0x170
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private uint <ImageCrc>k__BackingField; // 0x178
+{
+	[CompilerGeneratedAttribute] 
+	private ulong <PhotographerSteamId>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <ImageCrc>k__BackingField; 
 
-	public ulong PhotographerSteamId { get; set; }
-	public uint ImageCrc { get; set; }
-	protected override uint CrcToLoad { get; }
+public ulong PhotographerSteamId { get; set; }
+public uint ImageCrc { get; set; }
+protected override uint CrcToLoad { get; }
 
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public ulong get_PhotographerSteamId() { }
+	[CompilerGeneratedAttribute] 
+public ulong get_PhotographerSteamId() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void set_PhotographerSteamId(ulong value) { }
+	[CompilerGeneratedAttribute] 
+private void set_PhotographerSteamId(ulong value) { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	public uint get_ImageCrc() { }
+	[CompilerGeneratedAttribute] 
+public uint get_ImageCrc() { }
 
-	[CompilerGeneratedAttribute] // RVA: 0x6F300 Offset: 0x6E700 VA: 0x18006F300
-	private void set_ImageCrc(uint value) { }
+	[CompilerGeneratedAttribute] 
+private void set_ImageCrc(uint value) { }
 
-	protected override uint get_CrcToLoad() { }
+protected override uint get_CrcToLoad() { }
 
-	public override void Load(BaseNetworkable.LoadInfo info) { }
+public override void Load(BaseNetworkable.LoadInfo info) { }
 
-	public void .ctor() { }
+public void .ctor() { }
 
 }
 
