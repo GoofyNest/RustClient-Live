@@ -20,15 +20,15 @@ internal struct gameserveritem_t // TypeDefIndex: 5504
 	internal ulong SteamID; 
 
 
-internal string GameDirUTF8() { }
+	internal string GameDirUTF8() { }
 
-internal string MapUTF8() { }
+	internal string MapUTF8() { }
 
-internal string GameDescriptionUTF8() { }
+	internal string GameDescriptionUTF8() { }
 
-internal string ServerNameUTF8() { }
+	internal string ServerNameUTF8() { }
 
-internal string GameTagsUTF8() { }
+	internal string GameTagsUTF8() { }
 
 }
 

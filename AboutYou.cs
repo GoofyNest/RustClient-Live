@@ -5,11 +5,11 @@ public class AboutYou : BaseMonoBehaviour // TypeDefIndex: 11083
 	public Text subtitle; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Init() { }
+	private void Init() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

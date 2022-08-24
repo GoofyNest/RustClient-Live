@@ -5,13 +5,13 @@ public abstract class TerrainModifier : PrefabAttribute // TypeDefIndex: 10577
 	public float Fade; 
 
 
-public void Apply(Vector3 pos, float scale) { }
+	public void Apply(Vector3 pos, float scale) { }
 
-protected abstract void Apply(Vector3 position, float opacity, float radius, float fade);
+	protected abstract void Apply(Vector3 position, float opacity, float radius, float fade);
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

@@ -9,15 +9,15 @@ public class TabControl : RustControl // TypeDefIndex: 7038
 	public Image Foreground; 
 
 
-public RustLayout Panel(string name) { }
+	public RustLayout Panel(string name) { }
 
-public RustButton Button(string name) { }
+	public RustButton Button(string name) { }
 
-public void AddTab(string name, Translate.Phrase buttontext, Icons icon = 62241) { }
+	public void AddTab(string name, Translate.Phrase buttontext, Icons icon = 62241) { }
 
-protected override void ApplyStyle(StyleAsset.Group s) { }
+	protected override void ApplyStyle(StyleAsset.Group s) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

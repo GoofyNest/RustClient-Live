@@ -7,11 +7,11 @@ internal class NormalizationTableUtil // TypeDefIndex: 38
 	public static readonly CodePointIndexer Helper; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public static int PropIdx(int cp) { }
+	public static int PropIdx(int cp) { }
 
-public static int MapIdx(int cp) { }
+	public static int MapIdx(int cp) { }
 
 }
 

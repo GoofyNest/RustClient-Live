@@ -4,11 +4,11 @@ public class SoundRepeater : MonoBehaviour // TypeDefIndex: 9042
 	public SoundPlayer player; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Play() { }
+	private void Play() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

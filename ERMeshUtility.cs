@@ -5,9 +5,9 @@ public class ERMeshUtility : MonoBehaviour // TypeDefIndex: 7272
 	public string name; 
 
 
-public void OCQOQCDCQC() { }
+	public void OCQOQCDCQC() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

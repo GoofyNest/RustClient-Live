@@ -6,22 +6,22 @@ public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable // TypeD
 public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable 
 	private ArrayList list; 
 
-protected ArrayList InnerList { get; }
-public virtual int Count { get; }
-private object System.Collections.ICollection.SyncRoot { get; }
+	protected ArrayList InnerList { get; }
+	public virtual int Count { get; }
+	private object System.Collections.ICollection.SyncRoot { get; }
 
 
-protected ArrayList get_InnerList() { }
+	protected ArrayList get_InnerList() { }
 
-public virtual int get_Count() { }
+	public virtual int get_Count() { }
 
-private object System.Collections.ICollection.get_SyncRoot() { }
+	private object System.Collections.ICollection.get_SyncRoot() { }
 
-private void System.Collections.ICollection.CopyTo(Array array, int index) { }
+	private void System.Collections.ICollection.CopyTo(Array array, int index) { }
 
-public virtual IEnumerator GetEnumerator() { }
+	public virtual IEnumerator GetEnumerator() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

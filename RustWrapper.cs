@@ -4,13 +4,13 @@ public class RustWrapper : RustControl // TypeDefIndex: 7037
 	public RectTransform Canvas; 
 
 
-protected override void ApplyStyle(StyleAsset.Group s) { }
+	protected override void ApplyStyle(StyleAsset.Group s) { }
 
-public void Add(UIBehaviour ui) { }
+	public void Add(UIBehaviour ui) { }
 
-public void AddFlex() { }
+	public void AddFlex() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

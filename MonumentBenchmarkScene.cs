@@ -4,19 +4,19 @@ public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 8257
 	public Transform[] vantagePoints; 
 	private bool isFinished; 
 
-public override bool SubmitsOwnResults { get; }
+	public override bool SubmitsOwnResults { get; }
 
 
-public override bool get_SubmitsOwnResults() { }
+	public override bool get_SubmitsOwnResults() { }
 
-public override void StartBenchmark() { }
+	public override void StartBenchmark() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator DoMonumentBenchmark() { }
+	private IEnumerator DoMonumentBenchmark() { }
 
-public override bool ShouldEnd() { }
+	public override bool ShouldEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -37,26 +37,26 @@ private sealed class MonumentBenchmarkScene.<DoMonumentBenchmark>d__6 : IEnumera
 	private Stopwatch <sw>5__11; 
 	private int <i>5__12; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

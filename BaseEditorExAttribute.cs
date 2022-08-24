@@ -4,7 +4,7 @@ public abstract class BaseEditorExAttribute : PropertyAttribute // TypeDefIndex:
 	public string isFalse; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

@@ -1,16 +1,16 @@
 public class PrefabPoolWarmup // TypeDefIndex: 11422
 {
 
-public static void Run() { }
+	public static void Run() { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator Run(float deltaTime, Action<string> statusFunction, string format) { }
+	public static IEnumerator Run(float deltaTime, Action<string> statusFunction, string format) { }
 
-public static string[] GetAssetList() { }
+	public static string[] GetAssetList() { }
 
-private static void PrefabWarmup(string path) { }
+	private static void PrefabWarmup(string path) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -25,26 +25,26 @@ private sealed class PrefabPoolWarmup.<Run>d__1 : IEnumerator<object>, IEnumerat
 	private Stopwatch <sw>5__3; 
 	private int <i>5__4; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -55,13 +55,13 @@ private sealed class PrefabPoolWarmup.<>c // TypeDefIndex: 11424
 	public static Func<GameManifest.PrefabProperties, string> <>9__2_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetAssetList>b__2_0(GameManifest.PrefabProperties x) { }
+	internal bool <GetAssetList>b__2_0(GameManifest.PrefabProperties x) { }
 
-internal string <GetAssetList>b__2_1(GameManifest.PrefabProperties x) { }
+	internal string <GetAssetList>b__2_1(GameManifest.PrefabProperties x) { }
 
 }
 

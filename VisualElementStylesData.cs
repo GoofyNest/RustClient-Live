@@ -32,9 +32,9 @@ internal class VisualElementStylesData // TypeDefIndex: 4728
 	internal float dpiScaling; 
 
 
-public void .ctor(bool isShared) { }
+	public void .ctor(bool isShared) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

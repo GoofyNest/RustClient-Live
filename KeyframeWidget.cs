@@ -4,9 +4,9 @@ public class KeyframeWidget : MonoBehaviour // TypeDefIndex: 10868
 	private KeyframeView.UIKeyframeValue cachedValue; 
 
 
-public void Populate(KeyframeView.UIKeyframeValue value) { }
+	public void Populate(KeyframeView.UIKeyframeValue value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -1,13 +1,13 @@
 public sealed class DefaultProxySection : ConfigurationSection // TypeDefIndex: 3172
 {
-protected override ConfigurationPropertyCollection Properties { get; }
+	protected override ConfigurationPropertyCollection Properties { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-protected override ConfigurationPropertyCollection get_Properties() { }
+	protected override ConfigurationPropertyCollection get_Properties() { }
 
-protected override void Reset(ConfigurationElement parentElement) { }
+	protected override void Reset(ConfigurationElement parentElement) { }
 
 }
 

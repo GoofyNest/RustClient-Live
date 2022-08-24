@@ -25,22 +25,22 @@ public class Drone : RemoteControlEntity // TypeDefIndex: 8689
 	private Sound movementLoopSound; 
 	private SoundModulation.Modulator movementLoopPitch; 
 
-public override bool RequiresMouse { get; }
+	public override bool RequiresMouse { get; }
 
 
-public override bool get_RequiresMouse() { }
+	public override bool get_RequiresMouse() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-private void PlayMovementStopSound() { }
+	private void PlayMovementStopSound() { }
 
-private void UpdateSounds() { }
+	private void UpdateSounds() { }
 
-private void SetMovementLoopSound(SoundDefinition targetDef) { }
+	private void SetMovementLoopSound(SoundDefinition targetDef) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -52,7 +52,7 @@ private struct Drone.DroneInputState // TypeDefIndex: 8690
 	public float yaw; 
 
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 

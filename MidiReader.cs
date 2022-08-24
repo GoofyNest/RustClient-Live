@@ -14,59 +14,59 @@ public sealed class MidiReader : IDisposable // TypeDefIndex: 7587
 	[CompilerGeneratedAttribute] 
 	private readonly long <Length>k__BackingField; 
 
-public long Position { get; set; }
-public long Length { get; }
-public bool EndReached { get; }
+	public long Position { get; set; }
+	public long Length { get; }
+	public bool EndReached { get; }
 
 
-public void .ctor(Stream stream, ReaderSettings settings) { }
+	public void .ctor(Stream stream, ReaderSettings settings) { }
 
-public long get_Position() { }
+	public long get_Position() { }
 
-public void set_Position(long value) { }
+	public void set_Position(long value) { }
 
 	[CompilerGeneratedAttribute] 
-public long get_Length() { }
+	public long get_Length() { }
 
-public bool get_EndReached() { }
+	public bool get_EndReached() { }
 
-public byte ReadByte() { }
+	public byte ReadByte() { }
 
-public sbyte ReadSByte() { }
+	public sbyte ReadSByte() { }
 
-public byte[] ReadBytes(int count) { }
+	public byte[] ReadBytes(int count) { }
 
-public ushort ReadWord() { }
+	public ushort ReadWord() { }
 
-public uint ReadDword() { }
+	public uint ReadDword() { }
 
-public short ReadInt16() { }
+	public short ReadInt16() { }
 
-public string ReadString(int count) { }
+	public string ReadString(int count) { }
 
-public int ReadVlqNumber() { }
+	public int ReadVlqNumber() { }
 
-public long ReadVlqLongNumber() { }
+	public long ReadVlqLongNumber() { }
 
-public uint Read3ByteDword() { }
+	public uint Read3ByteDword() { }
 
-private byte[] ReadBytesInternal(int count) { }
+	private byte[] ReadBytesInternal(int count) { }
 
-private byte[] ReadBytesWithBuffering(int count) { }
+	private byte[] ReadBytesWithBuffering(int count) { }
 
-private byte[] ReadBytesFromBuffer(int count) { }
+	private byte[] ReadBytesFromBuffer(int count) { }
 
-private byte[] ReadBytesWithoutBuffering(int count) { }
+	private byte[] ReadBytesWithoutBuffering(int count) { }
 
-private bool EnsureBufferIsReadyForReading() { }
+	private bool EnsureBufferIsReadyForReading() { }
 
-private void PrepareBuffer() { }
+	private void PrepareBuffer() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-private void Dispose(bool disposing) { }
+	private void Dispose(bool disposing) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -76,11 +76,11 @@ private sealed class MidiReader.<>c // TypeDefIndex: 7588
 	public static Func<byte[], IEnumerable<byte>> <>9__22_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal IEnumerable<byte> <ReadBytes>b__22_0(byte[] bytes) { }
+	internal IEnumerable<byte> <ReadBytes>b__22_0(byte[] bytes) { }
 
 }
 

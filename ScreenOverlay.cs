@@ -7,24 +7,24 @@ public class ScreenOverlay : PostEffectsBase, IImageEffect // TypeDefIndex: 8199
 	private Material overlayMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ScreenOverlay.OverlayBlendMode // TypeDefIndex: 8200
 {
 	public int value__; 
-public const ScreenOverlay.OverlayBlendMode Additive = 0;
-public const ScreenOverlay.OverlayBlendMode ScreenBlend = 1;
-public const ScreenOverlay.OverlayBlendMode Multiply = 2;
-public const ScreenOverlay.OverlayBlendMode Overlay = 3;
-public const ScreenOverlay.OverlayBlendMode AlphaBlend = 4;
+	public const ScreenOverlay.OverlayBlendMode Additive = 0;
+	public const ScreenOverlay.OverlayBlendMode ScreenBlend = 1;
+	public const ScreenOverlay.OverlayBlendMode Multiply = 2;
+	public const ScreenOverlay.OverlayBlendMode Overlay = 3;
+	public const ScreenOverlay.OverlayBlendMode AlphaBlend = 4;
 
 }
 
@@ -36,7 +36,7 @@ public class ScreenOverlay : PostProcessEffectSettings // TypeDefIndex: 10270
 	public TextureParameter normals; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

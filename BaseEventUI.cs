@@ -16,42 +16,42 @@ public class BaseEventUI : MonoBehaviour // TypeDefIndex: 10788
 	private BaseStateUI stateUI; 
 	private Color outputColor; 
 
-public int ID { get; set; }
+	public int ID { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public int get_ID() { }
+	public int get_ID() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ID(int value) { }
+	private void set_ID(int value) { }
 
-public virtual void Init(AIEventType eventType, BaseStateUI stateUI) { }
+	public virtual void Init(AIEventType eventType, BaseStateUI stateUI) { }
 
-public virtual AIEventData Save() { }
+	public virtual AIEventData Save() { }
 
-public virtual void Load(AIEventData data) { }
+	public virtual void Load(AIEventData data) { }
 
-public void SetOutputStateContainer(int id) { }
+	public void SetOutputStateContainer(int id) { }
 
-public void ClearOutputStateContainer() { }
+	public void ClearOutputStateContainer() { }
 
-public int GetOutputStateContainer() { }
+	public int GetOutputStateContainer() { }
 
-public float ParseFloat(string input) { }
+	public float ParseFloat(string input) { }
 
-public void Clicked() { }
+	public void Clicked() { }
 
-public void OutputClicked(object value) { }
+	public void OutputClicked(object value) { }
 
-public void DeleteClicked() { }
+	public void DeleteClicked() { }
 
-public void MoveUpClicked() { }
+	public void MoveUpClicked() { }
 
-public void MoveDownClicked() { }
+	public void MoveDownClicked() { }
 
-public void SetTriggered(bool flag) { }
+	public void SetTriggered(bool flag) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

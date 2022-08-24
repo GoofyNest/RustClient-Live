@@ -19,17 +19,17 @@ public class MixerSnapshotManager : SingletonComponent<MixerSnapshotManager>, IC
 	internal AudioMixerSnapshot currentState; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void SetCCTVMode(bool enabled) { }
+	public void SetCCTVMode(bool enabled) { }
 
-private void DoWoundedLoop() { }
+	private void DoWoundedLoop() { }
 
-private AudioMixerSnapshot GetTargetState(bool isUnderwater) { }
+	private AudioMixerSnapshot GetTargetState(bool isUnderwater) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

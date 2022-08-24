@@ -4,11 +4,11 @@ public class NeedsKeyboardInputField : NeedsKeyboard // TypeDefIndex: 8014
 	private TMP_InputField TargetTmProInputField; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-protected override bool ShouldBlockInput() { }
+	protected override bool ShouldBlockInput() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

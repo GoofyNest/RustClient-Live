@@ -13,72 +13,72 @@ public class CryptoStream : Stream, IDisposable // TypeDefIndex: 949
 	private bool _canWrite; 
 	private bool _finalBlockTransformed; 
 
-public override bool CanRead { get; }
-public override bool CanSeek { get; }
-public override bool CanWrite { get; }
-public override long Length { get; }
-public override long Position { get; set; }
-public bool HasFlushedFinalBlock { get; }
+	public override bool CanRead { get; }
+	public override bool CanSeek { get; }
+	public override bool CanWrite { get; }
+	public override long Length { get; }
+	public override long Position { get; set; }
+	public bool HasFlushedFinalBlock { get; }
 
 
-public void .ctor(Stream stream, ICryptoTransform transform, CryptoStreamMode mode) { }
+	public void .ctor(Stream stream, ICryptoTransform transform, CryptoStreamMode mode) { }
 
-public override bool get_CanRead() { }
+	public override bool get_CanRead() { }
 
-public override bool get_CanSeek() { }
+	public override bool get_CanSeek() { }
 
-public override bool get_CanWrite() { }
+	public override bool get_CanWrite() { }
 
-public override long get_Length() { }
+	public override long get_Length() { }
 
-public override long get_Position() { }
+	public override long get_Position() { }
 
-public override void set_Position(long value) { }
+	public override void set_Position(long value) { }
 
-public bool get_HasFlushedFinalBlock() { }
+	public bool get_HasFlushedFinalBlock() { }
 
-public void FlushFinalBlock() { }
+	public void FlushFinalBlock() { }
 
-public override void Flush() { }
+	public override void Flush() { }
 
-public override long Seek(long offset, SeekOrigin origin) { }
+	public override long Seek(long offset, SeekOrigin origin) { }
 
-public override void SetLength(long value) { }
+	public override void SetLength(long value) { }
 
-public override int Read([In] [Out] byte[] buffer, int offset, int count) { }
+	public override int Read([In] [Out] byte[] buffer, int offset, int count) { }
 
-public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
-
-	[AsyncStateMachineAttribute] 
-private Task<int> ReadAsyncInternal(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
-
-public override void Write(byte[] buffer, int offset, int count) { }
-
-public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+	public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
 	[AsyncStateMachineAttribute] 
-private Task WriteAsyncInternal(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+	private Task<int> ReadAsyncInternal(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-public void Clear() { }
+	public override void Write(byte[] buffer, int offset, int count) { }
 
-protected override void Dispose(bool disposing) { }
+	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-private void InitializeBuffer() { }
+	[AsyncStateMachineAttribute] 
+	private Task WriteAsyncInternal(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+
+	public void Clear() { }
+
+	protected override void Dispose(bool disposing) { }
+
+	private void InitializeBuffer() { }
 
 }
 
 private struct CryptoStream.HopToThreadPoolAwaitable : INotifyCompletion // TypeDefIndex: 950
 {
-public bool IsCompleted { get; }
+	public bool IsCompleted { get; }
 
 
-public CryptoStream.HopToThreadPoolAwaitable GetAwaiter() { }
+	public CryptoStream.HopToThreadPoolAwaitable GetAwaiter() { }
 
-public bool get_IsCompleted() { }
+	public bool get_IsCompleted() { }
 
-public void OnCompleted(Action continuation) { }
+	public void OnCompleted(Action continuation) { }
 
-public void GetResult() { }
+	public void GetResult() { }
 
 }
 
@@ -101,10 +101,10 @@ private struct CryptoStream.<ReadAsyncInternal>d__34 : IAsyncStateMachine // Typ
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__3; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -125,10 +125,10 @@ private struct CryptoStream.<WriteAsyncInternal>d__37 : IAsyncStateMachine // Ty
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

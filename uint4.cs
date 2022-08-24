@@ -11,19 +11,19 @@ public struct uint4 : IEquatable<uint4>, IFormattable
 	public uint w; 
 
 
-public void .ctor(uint x, uint y, uint z, uint w) { }
+	public void .ctor(uint x, uint y, uint z, uint w) { }
 
-public static uint4 op_Multiply(uint4 lhs, uint4 rhs) { }
+	public static uint4 op_Multiply(uint4 lhs, uint4 rhs) { }
 
-public bool Equals(uint4 rhs) { }
+	public bool Equals(uint4 rhs) { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public string ToString(string format, IFormatProvider formatProvider) { }
+	public string ToString(string format, IFormatProvider formatProvider) { }
 
 }
 

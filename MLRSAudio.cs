@@ -24,13 +24,13 @@ public class MLRSAudio : MonoBehaviour // TypeDefIndex: 9722
 	private Sound turretMovementLoop; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateTurretMovementSounds() { }
+	private void UpdateTurretMovementSounds() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

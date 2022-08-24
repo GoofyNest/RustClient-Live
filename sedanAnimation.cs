@@ -28,21 +28,21 @@ public class sedanAnimation : MonoBehaviour // TypeDefIndex: 8298
 	private float traceDistanceNeutralPoint; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void InputPlayer() { }
+	private void InputPlayer() { }
 
-private void DoSteering() { }
+	private void DoSteering() { }
 
-private void ApplyForceAtWheels() { }
+	private void ApplyForceAtWheels() { }
 
-private void UpdateTireAnimation() { }
+	private void UpdateTireAnimation() { }
 
-private float GetShockHeightDelta(WheelCollider wheel) { }
+	private float GetShockHeightDelta(WheelCollider wheel) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

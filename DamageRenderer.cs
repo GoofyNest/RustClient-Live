@@ -19,26 +19,26 @@ public class DamageRenderer : MonoBehaviour, IClientComponent, IPrefabPreProcess
 	private static Material highlightMaterial; 
 
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void UpdateDamage(BaseCombatEntity bce) { }
+	public void UpdateDamage(BaseCombatEntity bce) { }
 
-public void UpdateDamage(float curHealth, bool isDead, float healthFraction) { }
+	public void UpdateDamage(float curHealth, bool isDead, float healthFraction) { }
 
-private void RefreshDamageTex(float healthPercent, bool isDead) { }
+	private void RefreshDamageTex(float healthPercent, bool isDead) { }
 
-private void SetDamageTex(DamageRenderer.DamageShowingRenderer dsr) { }
+	private void SetDamageTex(DamageRenderer.DamageShowingRenderer dsr) { }
 
-public void DrawHighlight() { }
+	public void DrawHighlight() { }
 
-private void Highlight(Renderer renderer) { }
+	private void Highlight(Renderer renderer) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private int[] <PreProcess>g__GetValidMatIndices|12_0(Renderer renderer, ref DamageRenderer.<>c__DisplayClass12_0 ) { }
+	private int[] <PreProcess>g__GetValidMatIndices|12_0(Renderer renderer, ref DamageRenderer.<>c__DisplayClass12_0 ) { }
 
 }
 
@@ -48,7 +48,7 @@ private struct DamageRenderer.DamageShowingRenderer // TypeDefIndex: 9708
 	public int[] indices; 
 
 
-public void .ctor(Renderer renderer, int[] indices) { }
+	public void .ctor(Renderer renderer, int[] indices) { }
 
 }
 

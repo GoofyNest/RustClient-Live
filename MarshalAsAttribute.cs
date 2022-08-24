@@ -14,7 +14,7 @@ public sealed class MarshalAsAttribute : Attribute // TypeDefIndex: 1356
 	public short SizeParamIndex; 
 
 
-internal MarshalAsAttribute Copy() { }
+	internal MarshalAsAttribute Copy() { }
 
 }
 

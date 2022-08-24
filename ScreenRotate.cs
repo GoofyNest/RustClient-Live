@@ -8,11 +8,11 @@ public class ScreenRotate : BaseScreenShake // TypeDefIndex: 9368
 	public bool useViewModelEffect; 
 
 
-public override void Setup() { }
+	public override void Setup() { }
 
-public override void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
+	public override void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -59,13 +59,13 @@ public class ERBend : MonoBehaviour // TypeDefIndex: 7173
 	public bool rightFlag; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void OOCCCDQDCQ() { }
+	public void OOCCCDQDCQ() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

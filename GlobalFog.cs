@@ -16,14 +16,14 @@ internal class GlobalFog : PostEffectsBase // TypeDefIndex: 8189
 	private Material fogMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
 	[ImageEffectOpaque] 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private static void CustomGraphicsBlit(RenderTexture source, RenderTexture dest, Material fxMaterial, int passNr) { }
+	private static void CustomGraphicsBlit(RenderTexture source, RenderTexture dest, Material fxMaterial, int passNr) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

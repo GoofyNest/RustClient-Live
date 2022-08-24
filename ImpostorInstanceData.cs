@@ -11,42 +11,42 @@ public class ImpostorInstanceData // TypeDefIndex: 10679
 	private int hash; 
 	private Vector4 positionAndScale; 
 
-public Renderer Renderer { get; set; }
-public Mesh Mesh { get; set; }
-public Material Material { get; set; }
+	public Renderer Renderer { get; set; }
+	public Mesh Mesh { get; set; }
+	public Material Material { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-private void set_Renderer(Renderer value) { }
+	private void set_Renderer(Renderer value) { }
 
 	[CompilerGeneratedAttribute] 
-public Renderer get_Renderer() { }
+	public Renderer get_Renderer() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Mesh(Mesh value) { }
+	private void set_Mesh(Mesh value) { }
 
 	[CompilerGeneratedAttribute] 
-public Mesh get_Mesh() { }
+	public Mesh get_Mesh() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Material(Material value) { }
+	private void set_Material(Material value) { }
 
 	[CompilerGeneratedAttribute] 
-public Material get_Material() { }
+	public Material get_Material() { }
 
-public void .ctor(Renderer renderer, Mesh mesh, Material material) { }
+	public void .ctor(Renderer renderer, Mesh mesh, Material material) { }
 
-public void .ctor(Vector3 position, Vector3 scale, Mesh mesh, Material material) { }
+	public void .ctor(Vector3 position, Vector3 scale, Mesh mesh, Material material) { }
 
-private int GenerateHashCode() { }
+	private int GenerateHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public Vector4 PositionAndScale() { }
+	public Vector4 PositionAndScale() { }
 
-public void Update() { }
+	public void Update() { }
 
 }
 

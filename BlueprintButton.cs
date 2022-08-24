@@ -15,33 +15,33 @@ public class BlueprintButton : MonoBehaviour, IClientComponent, IInventoryChange
 	private bool hovered; 
 
 
-public void Setup(ItemBlueprint bp, UIBlueprints parent) { }
+	public void Setup(ItemBlueprint bp, UIBlueprints parent) { }
 
-public void Awake() { }
+	public void Awake() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateSelection() { }
+	private void UpdateSelection() { }
 
-private void Refresh() { }
+	private void Refresh() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-public void OnPointerClick(PointerEventData eventData) { }
+	public void OnPointerClick(PointerEventData eventData) { }
 
-public void OnToggleFavouriteClicked() { }
+	public void OnToggleFavouriteClicked() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void OnFavouriteHovered() { }
+	public void OnFavouriteHovered() { }
 
-public void OnFavouriteUnhovered() { }
+	public void OnFavouriteUnhovered() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

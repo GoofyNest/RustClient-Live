@@ -18,7 +18,7 @@ public class SubmarineSonar : FacepunchBehaviour // TypeDefIndex: 11675
 	private SubmarineAudio submarineAudio; 
 	private List<SubmarineSonar.SonarBlip> currentlyInRange; 
 	private float rangeSqr; 
-private const float SWEEP_DURATION = 1;
+	private const float SWEEP_DURATION = 1;
 	private TimeSince timeSinceLastRefresh; 
 	private float sonarAngle; 
 	private int blipIndex; 
@@ -26,29 +26,29 @@ private const float SWEEP_DURATION = 1;
 	private float blipSize; 
 	private Vector3 ourRefreshHeading; 
 	private ParticleSystem.EmitParams emitParams; 
-private const float MOONPOOL_MIN = 2;
-private const float MOONPOOL_MAX = 6;
+	private const float MOONPOOL_MIN = 2;
+	private const float MOONPOOL_MAX = 6;
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void UpdateTick() { }
+	public void UpdateTick() { }
 
-private float GetAngleChangeSinceRefresh() { }
+	private float GetAngleChangeSinceRefresh() { }
 
-private void Refresh(List<SubmarineSonar.SonarBlip> extras) { }
+	private void Refresh(List<SubmarineSonar.SonarBlip> extras) { }
 
-private Color GetBlipColour(SonarObject.SType type, float distance) { }
+	private Color GetBlipColour(SonarObject.SType type, float distance) { }
 
-private static float GetBlipScale(SonarObject.SType type, float distance) { }
+	private static float GetBlipScale(SonarObject.SType type, float distance) { }
 
-public void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-private float <UpdateTick>g__GetCurrentBlipAngle|20_0(SubmarineSonar.SonarBlip nextBlip) { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <UpdateTick>g__ShowBlip|20_1(SubmarineSonar.SonarBlip nextBlip, float nextAngle) { }
+	private float <UpdateTick>g__GetCurrentBlipAngle|20_0(SubmarineSonar.SonarBlip nextBlip) { }
+
+	[CompilerGeneratedAttribute] 
+	private void <UpdateTick>g__ShowBlip|20_1(SubmarineSonar.SonarBlip nextBlip, float nextAngle) { }
 
 }
 
@@ -61,9 +61,9 @@ private struct SubmarineSonar.SonarBlip : IComparable<SubmarineSonar.SonarBlip> 
 	public bool orphan; 
 
 
-public void .ctor(float dist, float angle, Color colour, float scale = 1) { }
+	public void .ctor(float dist, float angle, Color colour, float scale = 1) { }
 
-public int CompareTo(SubmarineSonar.SonarBlip other) { }
+	public int CompareTo(SubmarineSonar.SonarBlip other) { }
 
 }
 

@@ -34,34 +34,34 @@ public class SnowmobileAudio : GroundVehicleAudio // TypeDefIndex: 9756
 	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, bool> wheelWasGrounded; 
 	private Dictionary<VehicleChassisVisuals.ClientWheelData<Snowmobile>, float> lastSuspensionSoundPlayed; 
 
-protected override EngineAudioSet EngineAudioSet { get; set; }
+	protected override EngineAudioSet EngineAudioSet { get; set; }
 
 
-protected override EngineAudioSet get_EngineAudioSet() { }
+	protected override EngineAudioSet get_EngineAudioSet() { }
 
-protected override void set_EngineAudioSet(EngineAudioSet value) { }
+	protected override void set_EngineAudioSet(EngineAudioSet value) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public override void ClientTick() { }
+	public override void ClientTick() { }
 
-private void UpdateMovementLoop(float speedRatio) { }
+	private void UpdateMovementLoop(float speedRatio) { }
 
-private void StopMovementLoop() { }
+	private void StopMovementLoop() { }
 
-private void UpdateSkiSound(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData, float speedRatio) { }
+	private void UpdateSkiSound(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData, float speedRatio) { }
 
-public void StopSkiAudio() { }
+	public void StopSkiAudio() { }
 
-public void StopSkiAudio(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData) { }
+	public void StopSkiAudio(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData) { }
 
-private void UpdateSuspensionSounds() { }
+	private void UpdateSuspensionSounds() { }
 
-public override void OnClientTickStopped() { }
+	public override void OnClientTickStopped() { }
 
-protected override int GetNumEngines() { }
+	protected override int GetNumEngines() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

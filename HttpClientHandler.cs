@@ -16,26 +16,26 @@ public class HttpClientHandler : HttpMessageHandler // TypeDefIndex: 5740
 	private string connectionGroupName; 
 	private bool disposed; 
 
-public CookieContainer CookieContainer { get; }
-public long MaxRequestContentBufferSize { get; }
+	public CookieContainer CookieContainer { get; }
+	public long MaxRequestContentBufferSize { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public CookieContainer get_CookieContainer() { }
+	public CookieContainer get_CookieContainer() { }
 
-public long get_MaxRequestContentBufferSize() { }
+	public long get_MaxRequestContentBufferSize() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-internal virtual HttpWebRequest CreateWebRequest(HttpRequestMessage request) { }
+	internal virtual HttpWebRequest CreateWebRequest(HttpRequestMessage request) { }
 
-private HttpResponseMessage CreateResponseMessage(HttpWebResponse wr, HttpRequestMessage requestMessage, CancellationToken cancellationToken) { }
+	private HttpResponseMessage CreateResponseMessage(HttpWebResponse wr, HttpRequestMessage requestMessage, CancellationToken cancellationToken) { }
 
-private static bool MethodHasBody(HttpMethod method) { }
+	private static bool MethodHasBody(HttpMethod method) { }
 
 	[AsyncStateMachineAttribute] 
-protected internal override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) { }
+	protected internal override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) { }
 
 }
 
@@ -46,13 +46,13 @@ private sealed class HttpClientHandler.<>c // TypeDefIndex: 5741
 	public static Action<object> <>9__64_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CreateWebRequest>b__61_0(string l) { }
+	internal bool <CreateWebRequest>b__61_0(string l) { }
 
-internal void <SendAsync>b__64_0(object l) { }
+	internal void <SendAsync>b__64_0(object l) { }
 
 }
 
@@ -74,10 +74,10 @@ private struct HttpClientHandler.<SendAsync>d__64 : IAsyncStateMachine // TypeDe
 	private TaskAwaiter<HttpResponseMessage> <>u__4; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

@@ -5,13 +5,13 @@ internal class GB18030Encoder : MonoEncoder // TypeDefIndex: 7832
 	private char incomplete_bytes; 
 
 
-public void .ctor(MonoEncoding owner) { }
+	public void .ctor(MonoEncoding owner) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public override int GetByteCountImpl(char* chars, int count, bool refresh) { }
+	public override int GetByteCountImpl(char* chars, int count, bool refresh) { }
 
-public override int GetBytesImpl(char* chars, int charCount, byte* bytes, int byteCount, bool refresh) { }
+	public override int GetBytesImpl(char* chars, int charCount, byte* bytes, int byteCount, bool refresh) { }
 
 }
 

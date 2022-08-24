@@ -22,70 +22,70 @@ internal sealed class ObjectWriter // TypeDefIndex: 1115
 	private Hashtable assemblyToIdTable; 
 	private SerStack niPool; 
 
-internal SerializationObjectManager ObjectManager { get; }
+	internal SerializationObjectManager ObjectManager { get; }
 
 
-internal void .ctor(ISurrogateSelector selector, StreamingContext context, InternalFE formatterEnums, SerializationBinder binder) { }
+	internal void .ctor(ISurrogateSelector selector, StreamingContext context, InternalFE formatterEnums, SerializationBinder binder) { }
 
-internal void Serialize(object graph, Header[] inHeaders, __BinaryWriter serWriter, bool fCheck) { }
+	internal void Serialize(object graph, Header[] inHeaders, __BinaryWriter serWriter, bool fCheck) { }
 
-internal SerializationObjectManager get_ObjectManager() { }
+	internal SerializationObjectManager get_ObjectManager() { }
 
-private void Write(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo) { }
+	private void Write(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo) { }
 
-private void Write(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo, string[] memberNames, Type[] memberTypes, object[] memberData, WriteObjectInfo[] memberObjectInfos) { }
+	private void Write(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo, string[] memberNames, Type[] memberTypes, object[] memberData, WriteObjectInfo[] memberObjectInfos) { }
 
-private void WriteMemberSetup(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo, string memberName, Type memberType, object memberData, WriteObjectInfo memberObjectInfo) { }
+	private void WriteMemberSetup(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo, string memberName, Type memberType, object memberData, WriteObjectInfo memberObjectInfo) { }
 
-private void WriteMembers(NameInfo memberNameInfo, NameInfo memberTypeNameInfo, object memberData, WriteObjectInfo objectInfo, NameInfo typeNameInfo, WriteObjectInfo memberObjectInfo) { }
+	private void WriteMembers(NameInfo memberNameInfo, NameInfo memberTypeNameInfo, object memberData, WriteObjectInfo objectInfo, NameInfo typeNameInfo, WriteObjectInfo memberObjectInfo) { }
 
-private void WriteArray(WriteObjectInfo objectInfo, NameInfo memberNameInfo, WriteObjectInfo memberObjectInfo) { }
+	private void WriteArray(WriteObjectInfo objectInfo, NameInfo memberNameInfo, WriteObjectInfo memberObjectInfo) { }
 
-private void WriteArrayMember(WriteObjectInfo objectInfo, NameInfo arrayElemTypeNameInfo, object data) { }
+	private void WriteArrayMember(WriteObjectInfo objectInfo, NameInfo arrayElemTypeNameInfo, object data) { }
 
-private void WriteRectangle(WriteObjectInfo objectInfo, int rank, int[] maxA, Array array, NameInfo arrayElemNameTypeInfo, int[] lowerBoundA) { }
+	private void WriteRectangle(WriteObjectInfo objectInfo, int rank, int[] maxA, Array array, NameInfo arrayElemNameTypeInfo, int[] lowerBoundA) { }
 
-private object GetNext(out long objID) { }
+	private object GetNext(out long objID) { }
 
-private long InternalGetId(object obj, bool assignUniqueIdToValueType, Type type, out bool isNew) { }
+	private long InternalGetId(object obj, bool assignUniqueIdToValueType, Type type, out bool isNew) { }
 
-private long Schedule(object obj, bool assignUniqueIdToValueType, Type type) { }
+	private long Schedule(object obj, bool assignUniqueIdToValueType, Type type) { }
 
-private long Schedule(object obj, bool assignUniqueIdToValueType, Type type, WriteObjectInfo objectInfo) { }
+	private long Schedule(object obj, bool assignUniqueIdToValueType, Type type, WriteObjectInfo objectInfo) { }
 
-private bool WriteKnownValueClass(NameInfo memberNameInfo, NameInfo typeNameInfo, object data) { }
+	private bool WriteKnownValueClass(NameInfo memberNameInfo, NameInfo typeNameInfo, object data) { }
 
-private void WriteObjectRef(NameInfo nameInfo, long objectId) { }
+	private void WriteObjectRef(NameInfo nameInfo, long objectId) { }
 
-private void WriteString(NameInfo memberNameInfo, NameInfo typeNameInfo, object stringObject) { }
+	private void WriteString(NameInfo memberNameInfo, NameInfo typeNameInfo, object stringObject) { }
 
-private bool CheckForNull(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo, object data) { }
+	private bool CheckForNull(WriteObjectInfo objectInfo, NameInfo memberNameInfo, NameInfo typeNameInfo, object data) { }
 
-private void WriteSerializedStreamHeader(long topId, long headerId) { }
+	private void WriteSerializedStreamHeader(long topId, long headerId) { }
 
-private NameInfo TypeToNameInfo(Type type, WriteObjectInfo objectInfo, InternalPrimitiveTypeE code, NameInfo nameInfo) { }
+	private NameInfo TypeToNameInfo(Type type, WriteObjectInfo objectInfo, InternalPrimitiveTypeE code, NameInfo nameInfo) { }
 
-private NameInfo TypeToNameInfo(Type type) { }
+	private NameInfo TypeToNameInfo(Type type) { }
 
-private NameInfo TypeToNameInfo(WriteObjectInfo objectInfo) { }
+	private NameInfo TypeToNameInfo(WriteObjectInfo objectInfo) { }
 
-private NameInfo TypeToNameInfo(WriteObjectInfo objectInfo, NameInfo nameInfo) { }
+	private NameInfo TypeToNameInfo(WriteObjectInfo objectInfo, NameInfo nameInfo) { }
 
-private void TypeToNameInfo(Type type, NameInfo nameInfo) { }
+	private void TypeToNameInfo(Type type, NameInfo nameInfo) { }
 
-private NameInfo MemberToNameInfo(string name) { }
+	private NameInfo MemberToNameInfo(string name) { }
 
-internal InternalPrimitiveTypeE ToCode(Type type) { }
+	internal InternalPrimitiveTypeE ToCode(Type type) { }
 
-private long GetAssemblyId(WriteObjectInfo objectInfo) { }
+	private long GetAssemblyId(WriteObjectInfo objectInfo) { }
 
-private Type GetType(object obj) { }
+	private Type GetType(object obj) { }
 
-private NameInfo GetNameInfo() { }
+	private NameInfo GetNameInfo() { }
 
-private bool CheckTypeFormat(FormatterTypeStyle test, FormatterTypeStyle want) { }
+	private bool CheckTypeFormat(FormatterTypeStyle test, FormatterTypeStyle want) { }
 
-private void PutNameInfo(NameInfo nameInfo) { }
+	private void PutNameInfo(NameInfo nameInfo) { }
 
 }
 

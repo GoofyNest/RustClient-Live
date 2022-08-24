@@ -3,9 +3,9 @@ public class ExcavatorYawSounds : MonoBehaviour, IClientComponent // TypeDefInde
 	public SoundPlayer[] miningStartClunks; 
 
 
-public void PlayStartClunks() { }
+	public void PlayStartClunks() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

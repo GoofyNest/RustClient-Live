@@ -24,100 +24,100 @@ public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5085
 	private bool m_ForceModuleActive; 
 
 	[ObsoleteAttribute] 
-public StandaloneInputModule.InputMode inputMode { get; }
+	public StandaloneInputModule.InputMode inputMode { get; }
 	[ObsoleteAttribute] 
-public bool allowActivationOnMobileDevice { get; set; }
-public bool forceModuleActive { get; set; }
-public float inputActionsPerSecond { get; set; }
-public float repeatDelay { get; set; }
-public string horizontalAxis { get; set; }
-public string verticalAxis { get; set; }
-public string submitButton { get; set; }
-public string cancelButton { get; set; }
+	public bool allowActivationOnMobileDevice { get; set; }
+	public bool forceModuleActive { get; set; }
+	public float inputActionsPerSecond { get; set; }
+	public float repeatDelay { get; set; }
+	public string horizontalAxis { get; set; }
+	public string verticalAxis { get; set; }
+	public string submitButton { get; set; }
+	public string cancelButton { get; set; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public StandaloneInputModule.InputMode get_inputMode() { }
+	public StandaloneInputModule.InputMode get_inputMode() { }
 
-public bool get_allowActivationOnMobileDevice() { }
+	public bool get_allowActivationOnMobileDevice() { }
 
-public void set_allowActivationOnMobileDevice(bool value) { }
+	public void set_allowActivationOnMobileDevice(bool value) { }
 
-public bool get_forceModuleActive() { }
+	public bool get_forceModuleActive() { }
 
-public void set_forceModuleActive(bool value) { }
+	public void set_forceModuleActive(bool value) { }
 
-public float get_inputActionsPerSecond() { }
+	public float get_inputActionsPerSecond() { }
 
-public void set_inputActionsPerSecond(float value) { }
+	public void set_inputActionsPerSecond(float value) { }
 
-public float get_repeatDelay() { }
+	public float get_repeatDelay() { }
 
-public void set_repeatDelay(float value) { }
+	public void set_repeatDelay(float value) { }
 
-public string get_horizontalAxis() { }
+	public string get_horizontalAxis() { }
 
-public void set_horizontalAxis(string value) { }
+	public void set_horizontalAxis(string value) { }
 
-public string get_verticalAxis() { }
+	public string get_verticalAxis() { }
 
-public void set_verticalAxis(string value) { }
+	public void set_verticalAxis(string value) { }
 
-public string get_submitButton() { }
+	public string get_submitButton() { }
 
-public void set_submitButton(string value) { }
+	public void set_submitButton(string value) { }
 
-public string get_cancelButton() { }
+	public string get_cancelButton() { }
 
-public void set_cancelButton(string value) { }
+	public void set_cancelButton(string value) { }
 
-private bool ShouldIgnoreEventsOnNoFocus() { }
+	private bool ShouldIgnoreEventsOnNoFocus() { }
 
-public override void UpdateModule() { }
+	public override void UpdateModule() { }
 
-private void ReleaseMouse(PointerEventData pointerEvent, GameObject currentOverGo) { }
+	private void ReleaseMouse(PointerEventData pointerEvent, GameObject currentOverGo) { }
 
-public override bool IsModuleSupported() { }
+	public override bool IsModuleSupported() { }
 
-public override bool ShouldActivateModule() { }
+	public override bool ShouldActivateModule() { }
 
-public override void ActivateModule() { }
+	public override void ActivateModule() { }
 
-public override void DeactivateModule() { }
+	public override void DeactivateModule() { }
 
-public override void Process() { }
+	public override void Process() { }
 
-private bool ProcessTouchEvents() { }
+	private bool ProcessTouchEvents() { }
 
-protected void ProcessTouchPress(PointerEventData pointerEvent, bool pressed, bool released) { }
+	protected void ProcessTouchPress(PointerEventData pointerEvent, bool pressed, bool released) { }
 
-protected bool SendSubmitEventToSelectedObject() { }
+	protected bool SendSubmitEventToSelectedObject() { }
 
-private Vector2 GetRawMoveVector() { }
+	private Vector2 GetRawMoveVector() { }
 
-protected bool SendMoveEventToSelectedObject() { }
+	protected bool SendMoveEventToSelectedObject() { }
 
-protected void ProcessMouseEvent() { }
+	protected void ProcessMouseEvent() { }
 
 	[ObsoleteAttribute] 
-protected virtual bool ForceAutoSelect() { }
+	protected virtual bool ForceAutoSelect() { }
 
-protected void ProcessMouseEvent(int id) { }
+	protected void ProcessMouseEvent(int id) { }
 
-protected bool SendUpdateEventToSelectedObject() { }
+	protected bool SendUpdateEventToSelectedObject() { }
 
-protected void ProcessMousePress(PointerInputModule.MouseButtonEventData data) { }
+	protected void ProcessMousePress(PointerInputModule.MouseButtonEventData data) { }
 
-protected GameObject GetCurrentFocusedGameObject() { }
+	protected GameObject GetCurrentFocusedGameObject() { }
 
 }
 
 public enum StandaloneInputModule.InputMode // TypeDefIndex: 5086
 {
 	public int value__; 
-public const StandaloneInputModule.InputMode Mouse = 0;
-public const StandaloneInputModule.InputMode Buttons = 1;
+	public const StandaloneInputModule.InputMode Mouse = 0;
+	public const StandaloneInputModule.InputMode Buttons = 1;
 
 }
 

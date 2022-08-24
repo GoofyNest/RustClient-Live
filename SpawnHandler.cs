@@ -20,7 +20,7 @@ public class SpawnHandler : SingletonComponent<SpawnHandler> // TypeDefIndex: 10
 	public SpawnPopulation[] ConvarSpawnPopulations; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

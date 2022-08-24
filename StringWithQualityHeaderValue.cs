@@ -5,35 +5,35 @@ public class StringWithQualityHeaderValue : ICloneable // TypeDefIndex: 5807
 	[CompilerGeneratedAttribute] 
 	private string <Value>k__BackingField; 
 
-public Nullable<double> Quality { get; set; }
-public string Value { get; set; }
+	public Nullable<double> Quality { get; set; }
+	public string Value { get; set; }
 
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public Nullable<double> get_Quality() { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Quality(Nullable<double> value) { }
+	public Nullable<double> get_Quality() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Value() { }
+	private void set_Quality(Nullable<double> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Value(string value) { }
+	public string get_Value() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Value(string value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-internal static bool TryParse(string input, int minimalCount, out List<StringWithQualityHeaderValue> result) { }
+	public override int GetHashCode() { }
 
-private static bool TryParseElement(Lexer lexer, out StringWithQualityHeaderValue parsedValue, out Token t) { }
+	internal static bool TryParse(string input, int minimalCount, out List<StringWithQualityHeaderValue> result) { }
 
-public override string ToString() { }
+	private static bool TryParseElement(Lexer lexer, out StringWithQualityHeaderValue parsedValue, out Token t) { }
+
+	public override string ToString() { }
 
 }
 

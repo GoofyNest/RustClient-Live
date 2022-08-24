@@ -1,17 +1,17 @@
 public sealed class ChannelAftertouchEvent : ChannelEvent // TypeDefIndex: 7522
 {
-public SevenBitNumber AftertouchValue { get; }
+	public SevenBitNumber AftertouchValue { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public SevenBitNumber get_AftertouchValue() { }
+	public SevenBitNumber get_AftertouchValue() { }
 
-internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
+	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override MidiEvent CloneEvent() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

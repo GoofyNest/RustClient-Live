@@ -16,26 +16,26 @@ public class SMAA : MonoBehaviour // TypeDefIndex: 11562
 	protected Preset m_UltraPreset; 
 	protected Material m_Material; 
 
-public Material Material { get; }
+	public Material Material { get; }
 
 
-public Material get_Material() { }
+	public Material get_Material() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private void Clear(RenderTexture rt) { }
+	private void Clear(RenderTexture rt) { }
 
-private RenderTexture TempRT(int width, int height) { }
+	private RenderTexture TempRT(int width, int height) { }
 
-private void CreatePresets() { }
+	private void CreatePresets() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

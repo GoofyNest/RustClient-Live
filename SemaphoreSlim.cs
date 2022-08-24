@@ -8,48 +8,48 @@ public class SemaphoreSlim : IDisposable // TypeDefIndex: 759
 	private SemaphoreSlim.TaskNode m_asyncHead; 
 	private SemaphoreSlim.TaskNode m_asyncTail; 
 	private static readonly Task<bool> s_trueTask; 
-private const int NO_MAXIMUM = 2147483647;
+	private const int NO_MAXIMUM = 2147483647;
 	private static Action<object> s_cancellationTokenCanceledEventHandler; 
 
 
-public void .ctor(int initialCount, int maxCount) { }
+	public void .ctor(int initialCount, int maxCount) { }
 
-public void Wait() { }
+	public void Wait() { }
 
-public bool Wait(int millisecondsTimeout, CancellationToken cancellationToken) { }
+	public bool Wait(int millisecondsTimeout, CancellationToken cancellationToken) { }
 
-private bool WaitUntilCountOrTimeout(int millisecondsTimeout, uint startTime, CancellationToken cancellationToken) { }
+	private bool WaitUntilCountOrTimeout(int millisecondsTimeout, uint startTime, CancellationToken cancellationToken) { }
 
-public Task WaitAsync() { }
+	public Task WaitAsync() { }
 
-public Task<bool> WaitAsync(int millisecondsTimeout) { }
+	public Task<bool> WaitAsync(int millisecondsTimeout) { }
 
-public Task<bool> WaitAsync(int millisecondsTimeout, CancellationToken cancellationToken) { }
+	public Task<bool> WaitAsync(int millisecondsTimeout, CancellationToken cancellationToken) { }
 
-private SemaphoreSlim.TaskNode CreateAndAddAsyncWaiter() { }
+	private SemaphoreSlim.TaskNode CreateAndAddAsyncWaiter() { }
 
-private bool RemoveAsyncWaiter(SemaphoreSlim.TaskNode task) { }
+	private bool RemoveAsyncWaiter(SemaphoreSlim.TaskNode task) { }
 
 	[AsyncStateMachineAttribute] 
-private Task<bool> WaitUntilCountOrTimeoutAsync(SemaphoreSlim.TaskNode asyncWaiter, int millisecondsTimeout, CancellationToken cancellationToken) { }
+	private Task<bool> WaitUntilCountOrTimeoutAsync(SemaphoreSlim.TaskNode asyncWaiter, int millisecondsTimeout, CancellationToken cancellationToken) { }
 
-public int Release() { }
+	public int Release() { }
 
-public int Release(int releaseCount) { }
+	public int Release(int releaseCount) { }
 
-private static void QueueWaiterTask(SemaphoreSlim.TaskNode waiterTask) { }
+	private static void QueueWaiterTask(SemaphoreSlim.TaskNode waiterTask) { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-protected virtual void Dispose(bool disposing) { }
+	protected virtual void Dispose(bool disposing) { }
 
-private static void CancellationTokenCanceledEventHandler(object obj) { }
+	private static void CancellationTokenCanceledEventHandler(object obj) { }
 
-private void CheckDispose() { }
+	private void CheckDispose() { }
 
-private static string GetResourceString(string str) { }
+	private static string GetResourceString(string str) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -59,11 +59,11 @@ private sealed class SemaphoreSlim.TaskNode : Task<bool>, IThreadPoolWorkItem //
 	internal SemaphoreSlim.TaskNode Next; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private void System.Threading.IThreadPoolWorkItem.ExecuteWorkItem() { }
+	private void System.Threading.IThreadPoolWorkItem.ExecuteWorkItem() { }
 
-private void System.Threading.IThreadPoolWorkItem.MarkAborted(ThreadAbortException tae) { }
+	private void System.Threading.IThreadPoolWorkItem.MarkAborted(ThreadAbortException tae) { }
 
 }
 
@@ -81,10 +81,10 @@ private struct SemaphoreSlim.<WaitUntilCountOrTimeoutAsync>d__31 : IAsyncStateMa
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<bool> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

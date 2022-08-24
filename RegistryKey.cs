@@ -8,62 +8,62 @@ public sealed class RegistryKey : MarshalByRefObject, IDisposable // TypeDefInde
 	private readonly bool isWritable; 
 	private static readonly IRegistryApi RegistryApi; 
 
-public string Name { get; }
+	public string Name { get; }
 	[MonoTODOAttribute] 
 	[ComVisibleAttribute] 
-public SafeRegistryHandle Handle { get; }
-internal bool IsRoot { get; }
-internal RegistryHive Hive { get; }
-internal object InternalHandle { get; }
+	public SafeRegistryHandle Handle { get; }
+	internal bool IsRoot { get; }
+	internal RegistryHive Hive { get; }
+	internal object InternalHandle { get; }
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal void .ctor(RegistryHive hiveId) { }
+	internal void .ctor(RegistryHive hiveId) { }
 
-internal void .ctor(RegistryHive hiveId, IntPtr keyHandle, bool remoteRoot) { }
+	internal void .ctor(RegistryHive hiveId, IntPtr keyHandle, bool remoteRoot) { }
 
-internal void .ctor(object data, string keyName, bool writable) { }
+	internal void .ctor(object data, string keyName, bool writable) { }
 
-internal static bool IsEquals(RegistryKey a, RegistryKey b) { }
+	internal static bool IsEquals(RegistryKey a, RegistryKey b) { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public string get_Name() { }
+	public string get_Name() { }
 
-public void Flush() { }
+	public void Flush() { }
 
-public void Close() { }
+	public void Close() { }
 
-public SafeRegistryHandle get_Handle() { }
+	public SafeRegistryHandle get_Handle() { }
 
-public RegistryKey OpenSubKey(string name) { }
+	public RegistryKey OpenSubKey(string name) { }
 
-public RegistryKey OpenSubKey(string name, bool writable) { }
+	public RegistryKey OpenSubKey(string name, bool writable) { }
 
-public object GetValue(string name) { }
+	public object GetValue(string name) { }
 
-public object GetValue(string name, object defaultValue) { }
+	public object GetValue(string name, object defaultValue) { }
 
-public string[] GetSubKeyNames() { }
+	public string[] GetSubKeyNames() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-internal bool get_IsRoot() { }
+	internal bool get_IsRoot() { }
 
-internal RegistryHive get_Hive() { }
+	internal RegistryHive get_Hive() { }
 
-internal object get_InternalHandle() { }
+	internal object get_InternalHandle() { }
 
-private void AssertKeyStillValid() { }
+	private void AssertKeyStillValid() { }
 
-private void AssertKeyNameLength(string name) { }
+	private void AssertKeyNameLength(string name) { }
 
-internal static string DecodeString(byte[] data) { }
+	internal static string DecodeString(byte[] data) { }
 
-internal static IOException CreateMarkedForDeletionException() { }
+	internal static IOException CreateMarkedForDeletionException() { }
 
-private static string GetHiveName(RegistryHive hive) { }
+	private static string GetHiveName(RegistryHive hive) { }
 
 }
 

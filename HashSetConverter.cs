@@ -1,17 +1,17 @@
 public class HashSetConverter : JsonConverter // TypeDefIndex: 6102
 {
-public override bool CanWrite { get; }
+	public override bool CanWrite { get; }
 
 
-public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
+	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
 
-public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) { }
+	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) { }
 
-public override bool CanConvert(Type objectType) { }
+	public override bool CanConvert(Type objectType) { }
 
-public override bool get_CanWrite() { }
+	public override bool get_CanWrite() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

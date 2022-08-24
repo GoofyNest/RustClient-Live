@@ -16,17 +16,17 @@ public class FishingRodViewmodel : MonoBehaviour // TypeDefIndex: 11433
 	private Vector2 lerpedInputState; 
 
 
-private void Start() { }
+	private void Start() { }
 
-public void UpdateState(bool pullingLeft, bool pullingRight, bool pullingBack, float strainAmount, Animator forAnimator) { }
+	public void UpdateState(bool pullingLeft, bool pullingRight, bool pullingBack, float strainAmount, Animator forAnimator) { }
 
-public void SetFish(int id) { }
+	public void SetFish(int id) { }
 
-public void ToggleCatchRoot(bool state) { }
+	public void ToggleCatchRoot(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

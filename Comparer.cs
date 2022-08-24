@@ -5,26 +5,26 @@ public sealed class Comparer : IComparer, ISerializable // TypeDefIndex: 1385
 	public static readonly Comparer DefaultInvariant; 
 
 
-private void .ctor() { }
+	private void .ctor() { }
 
-public void .ctor(CultureInfo culture) { }
+	public void .ctor(CultureInfo culture) { }
 
-private void .ctor(SerializationInfo info, StreamingContext context) { }
+	private void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public int Compare(object a, object b) { }
+	public int Compare(object a, object b) { }
 
-public void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal class Comparer : IComparer // TypeDefIndex: 2939
 {
 
-private int System.Collections.IComparer.Compare(object ol, object or) { }
+	private int System.Collections.IComparer.Compare(object ol, object or) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

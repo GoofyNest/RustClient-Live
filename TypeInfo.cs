@@ -1,14 +1,14 @@
 public abstract class TypeInfo : Type, IReflectableType // TypeDefIndex: 554
 {
-public virtual IEnumerable<FieldInfo> DeclaredFields { get; }
+	public virtual IEnumerable<FieldInfo> DeclaredFields { get; }
 
 
 	[FriendAccessAllowedAttribute] 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private TypeInfo System.Reflection.IReflectableType.GetTypeInfo() { }
+	private TypeInfo System.Reflection.IReflectableType.GetTypeInfo() { }
 
-public virtual IEnumerable<FieldInfo> get_DeclaredFields() { }
+	public virtual IEnumerable<FieldInfo> get_DeclaredFields() { }
 
 }
 
@@ -18,14 +18,14 @@ internal class TypeInfo : IRemotingTypeInfo // TypeDefIndex: 1153
 	private string[] serverHierarchy; 
 	private string[] interfacesImplemented; 
 
-public string TypeName { get; }
+	public string TypeName { get; }
 
 
-public void .ctor(Type type) { }
+	public void .ctor(Type type) { }
 
-public string get_TypeName() { }
+	public string get_TypeName() { }
 
-public bool CanCastTo(Type fromType, object o) { }
+	public bool CanCastTo(Type fromType, object o) { }
 
 }
 

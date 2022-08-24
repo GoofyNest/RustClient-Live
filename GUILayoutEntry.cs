@@ -12,50 +12,50 @@ internal class GUILayoutEntry // TypeDefIndex: 4053
 	internal static Rect kDummyRect; 
 	protected static int indent; 
 
-public GUIStyle style { get; set; }
-public virtual int marginLeft { get; }
-public virtual int marginRight { get; }
-public virtual int marginTop { get; }
-public virtual int marginBottom { get; }
-public int marginHorizontal { get; }
-public int marginVertical { get; }
+	public GUIStyle style { get; set; }
+	public virtual int marginLeft { get; }
+	public virtual int marginRight { get; }
+	public virtual int marginTop { get; }
+	public virtual int marginBottom { get; }
+	public int marginHorizontal { get; }
+	public int marginVertical { get; }
 
 
-public GUIStyle get_style() { }
+	public GUIStyle get_style() { }
 
-public void set_style(GUIStyle value) { }
+	public void set_style(GUIStyle value) { }
 
-public virtual int get_marginLeft() { }
+	public virtual int get_marginLeft() { }
 
-public virtual int get_marginRight() { }
+	public virtual int get_marginRight() { }
 
-public virtual int get_marginTop() { }
+	public virtual int get_marginTop() { }
 
-public virtual int get_marginBottom() { }
+	public virtual int get_marginBottom() { }
 
-public int get_marginHorizontal() { }
+	public int get_marginHorizontal() { }
 
-public int get_marginVertical() { }
+	public int get_marginVertical() { }
 
-public void .ctor(float _minWidth, float _maxWidth, float _minHeight, float _maxHeight, GUIStyle _style) { }
+	public void .ctor(float _minWidth, float _maxWidth, float _minHeight, float _maxHeight, GUIStyle _style) { }
 
-public void .ctor(float _minWidth, float _maxWidth, float _minHeight, float _maxHeight, GUIStyle _style, GUILayoutOption[] options) { }
+	public void .ctor(float _minWidth, float _maxWidth, float _minHeight, float _maxHeight, GUIStyle _style, GUILayoutOption[] options) { }
 
-public virtual void CalcWidth() { }
+	public virtual void CalcWidth() { }
 
-public virtual void CalcHeight() { }
+	public virtual void CalcHeight() { }
 
-public virtual void SetHorizontal(float x, float width) { }
+	public virtual void SetHorizontal(float x, float width) { }
 
-public virtual void SetVertical(float y, float height) { }
+	public virtual void SetVertical(float y, float height) { }
 
-protected virtual void ApplyStyleSettings(GUIStyle style) { }
+	protected virtual void ApplyStyleSettings(GUIStyle style) { }
 
-public virtual void ApplyOptions(GUILayoutOption[] options) { }
+	public virtual void ApplyOptions(GUILayoutOption[] options) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

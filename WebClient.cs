@@ -51,155 +51,155 @@ public class WebClient : Component // TypeDefIndex: 2953
 	private SendOrPostCallback reportDownloadProgressChanged; 
 	private SendOrPostCallback reportUploadProgressChanged; 
 
-public Encoding Encoding { get; set; }
-public ICredentials Credentials { get; }
+	public Encoding Encoding { get; set; }
+	public ICredentials Credentials { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private void InitWebClientAsync() { }
+	private void InitWebClientAsync() { }
 
-private void ClearWebClientState() { }
+	private void ClearWebClientState() { }
 
-private void CompleteWebClientState() { }
+	private void CompleteWebClientState() { }
 
-public Encoding get_Encoding() { }
+	public Encoding get_Encoding() { }
 
-public void set_Encoding(Encoding value) { }
+	public void set_Encoding(Encoding value) { }
 
-public ICredentials get_Credentials() { }
+	public ICredentials get_Credentials() { }
 
-protected virtual WebRequest GetWebRequest(Uri address) { }
+	protected virtual WebRequest GetWebRequest(Uri address) { }
 
-protected virtual WebResponse GetWebResponse(WebRequest request) { }
+	protected virtual WebResponse GetWebResponse(WebRequest request) { }
 
-protected virtual WebResponse GetWebResponse(WebRequest request, IAsyncResult result) { }
+	protected virtual WebResponse GetWebResponse(WebRequest request, IAsyncResult result) { }
 
-private byte[] DownloadDataInternal(Uri address, out WebRequest request) { }
+	private byte[] DownloadDataInternal(Uri address, out WebRequest request) { }
 
-private byte[] UploadValuesInternal(NameValueCollection data) { }
+	private byte[] UploadValuesInternal(NameValueCollection data) { }
 
-public string DownloadString(string address) { }
+	public string DownloadString(string address) { }
 
-public string DownloadString(Uri address) { }
+	public string DownloadString(Uri address) { }
 
-private static void AbortRequest(WebRequest request) { }
+	private static void AbortRequest(WebRequest request) { }
 
-private void CopyHeadersTo(WebRequest request) { }
+	private void CopyHeadersTo(WebRequest request) { }
 
-private Uri GetUri(string path) { }
+	private Uri GetUri(string path) { }
 
-private Uri GetUri(Uri address) { }
+	private Uri GetUri(Uri address) { }
 
-private static void DownloadBitsResponseCallback(IAsyncResult result) { }
+	private static void DownloadBitsResponseCallback(IAsyncResult result) { }
 
-private static void DownloadBitsReadCallback(IAsyncResult result) { }
+	private static void DownloadBitsReadCallback(IAsyncResult result) { }
 
-private static void DownloadBitsReadCallbackState(WebClient.DownloadBitsState state, IAsyncResult result) { }
+	private static void DownloadBitsReadCallbackState(WebClient.DownloadBitsState state, IAsyncResult result) { }
 
-private byte[] DownloadBits(WebRequest request, Stream writeStream, CompletionDelegate completionDelegate, AsyncOperation asyncOp) { }
+	private byte[] DownloadBits(WebRequest request, Stream writeStream, CompletionDelegate completionDelegate, AsyncOperation asyncOp) { }
 
-private static void UploadBitsRequestCallback(IAsyncResult result) { }
+	private static void UploadBitsRequestCallback(IAsyncResult result) { }
 
-private static void UploadBitsWriteCallback(IAsyncResult result) { }
+	private static void UploadBitsWriteCallback(IAsyncResult result) { }
 
-private void UploadBits(WebRequest request, Stream readStream, byte[] buffer, int chunkSize, byte[] header, byte[] footer, CompletionDelegate uploadCompletionDelegate, CompletionDelegate downloadCompletionDelegate, AsyncOperation asyncOp) { }
+	private void UploadBits(WebRequest request, Stream readStream, byte[] buffer, int chunkSize, byte[] header, byte[] footer, CompletionDelegate uploadCompletionDelegate, CompletionDelegate downloadCompletionDelegate, AsyncOperation asyncOp) { }
 
-private bool ByteArrayHasPrefix(byte[] prefix, byte[] byteArray) { }
+	private bool ByteArrayHasPrefix(byte[] prefix, byte[] byteArray) { }
 
-private string GetStringUsingEncoding(WebRequest request, byte[] data) { }
+	private string GetStringUsingEncoding(WebRequest request, byte[] data) { }
 
-private string MapToDefaultMethod(Uri address) { }
+	private string MapToDefaultMethod(Uri address) { }
 
-private static string UrlEncode(string str) { }
+	private static string UrlEncode(string str) { }
 
-private static string UrlEncode(string str, Encoding e) { }
+	private static string UrlEncode(string str, Encoding e) { }
 
-private static byte[] UrlEncodeToBytes(string str, Encoding e) { }
+	private static byte[] UrlEncodeToBytes(string str, Encoding e) { }
 
-private static byte[] UrlEncodeBytesToBytesInternal(byte[] bytes, int offset, int count, bool alwaysCreateReturnValue) { }
+	private static byte[] UrlEncodeBytesToBytesInternal(byte[] bytes, int offset, int count, bool alwaysCreateReturnValue) { }
 
-private static char IntToHex(int n) { }
+	private static char IntToHex(int n) { }
 
-private static bool IsSafe(char ch) { }
+	private static bool IsSafe(char ch) { }
 
-private void InvokeOperationCompleted(AsyncOperation asyncOp, SendOrPostCallback callback, AsyncCompletedEventArgs eventArgs) { }
+	private void InvokeOperationCompleted(AsyncOperation asyncOp, SendOrPostCallback callback, AsyncCompletedEventArgs eventArgs) { }
 
-private bool AnotherCallInProgress(int callNesting) { }
+	private bool AnotherCallInProgress(int callNesting) { }
 
-protected virtual void OnOpenReadCompleted(OpenReadCompletedEventArgs e) { }
+	protected virtual void OnOpenReadCompleted(OpenReadCompletedEventArgs e) { }
 
-private void OpenReadOperationCompleted(object arg) { }
+	private void OpenReadOperationCompleted(object arg) { }
 
-protected virtual void OnOpenWriteCompleted(OpenWriteCompletedEventArgs e) { }
+	protected virtual void OnOpenWriteCompleted(OpenWriteCompletedEventArgs e) { }
 
-private void OpenWriteOperationCompleted(object arg) { }
-
-	[CompilerGeneratedAttribute] 
-public void add_DownloadStringCompleted(DownloadStringCompletedEventHandler value) { }
+	private void OpenWriteOperationCompleted(object arg) { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_DownloadStringCompleted(DownloadStringCompletedEventHandler value) { }
-
-protected virtual void OnDownloadStringCompleted(DownloadStringCompletedEventArgs e) { }
-
-private void DownloadStringOperationCompleted(object arg) { }
-
-private void DownloadStringAsyncCallback(byte[] returnBytes, Exception exception, object state) { }
-
-public void DownloadStringAsync(Uri address) { }
-
-public void DownloadStringAsync(Uri address, object userToken) { }
-
-protected virtual void OnDownloadDataCompleted(DownloadDataCompletedEventArgs e) { }
-
-private void DownloadDataOperationCompleted(object arg) { }
-
-protected virtual void OnDownloadFileCompleted(AsyncCompletedEventArgs e) { }
-
-private void DownloadFileOperationCompleted(object arg) { }
-
-protected virtual void OnUploadStringCompleted(UploadStringCompletedEventArgs e) { }
-
-private void UploadStringOperationCompleted(object arg) { }
-
-private void StartDownloadAsync(WebClient.UploadBitsState state) { }
-
-protected virtual void OnUploadDataCompleted(UploadDataCompletedEventArgs e) { }
-
-private void UploadDataOperationCompleted(object arg) { }
-
-protected virtual void OnUploadFileCompleted(UploadFileCompletedEventArgs e) { }
-
-private void UploadFileOperationCompleted(object arg) { }
+	public void add_DownloadStringCompleted(DownloadStringCompletedEventHandler value) { }
 
 	[CompilerGeneratedAttribute] 
-public void add_UploadValuesCompleted(UploadValuesCompletedEventHandler value) { }
+	public void remove_DownloadStringCompleted(DownloadStringCompletedEventHandler value) { }
+
+	protected virtual void OnDownloadStringCompleted(DownloadStringCompletedEventArgs e) { }
+
+	private void DownloadStringOperationCompleted(object arg) { }
+
+	private void DownloadStringAsyncCallback(byte[] returnBytes, Exception exception, object state) { }
+
+	public void DownloadStringAsync(Uri address) { }
+
+	public void DownloadStringAsync(Uri address, object userToken) { }
+
+	protected virtual void OnDownloadDataCompleted(DownloadDataCompletedEventArgs e) { }
+
+	private void DownloadDataOperationCompleted(object arg) { }
+
+	protected virtual void OnDownloadFileCompleted(AsyncCompletedEventArgs e) { }
+
+	private void DownloadFileOperationCompleted(object arg) { }
+
+	protected virtual void OnUploadStringCompleted(UploadStringCompletedEventArgs e) { }
+
+	private void UploadStringOperationCompleted(object arg) { }
+
+	private void StartDownloadAsync(WebClient.UploadBitsState state) { }
+
+	protected virtual void OnUploadDataCompleted(UploadDataCompletedEventArgs e) { }
+
+	private void UploadDataOperationCompleted(object arg) { }
+
+	protected virtual void OnUploadFileCompleted(UploadFileCompletedEventArgs e) { }
+
+	private void UploadFileOperationCompleted(object arg) { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_UploadValuesCompleted(UploadValuesCompletedEventHandler value) { }
+	public void add_UploadValuesCompleted(UploadValuesCompletedEventHandler value) { }
 
-protected virtual void OnUploadValuesCompleted(UploadValuesCompletedEventArgs e) { }
+	[CompilerGeneratedAttribute] 
+	public void remove_UploadValuesCompleted(UploadValuesCompletedEventHandler value) { }
 
-private void UploadValuesOperationCompleted(object arg) { }
+	protected virtual void OnUploadValuesCompleted(UploadValuesCompletedEventArgs e) { }
 
-private void UploadValuesAsyncWriteCallback(byte[] returnBytes, Exception exception, object state) { }
+	private void UploadValuesOperationCompleted(object arg) { }
 
-private void UploadValuesAsyncReadCallback(byte[] returnBytes, Exception exception, object state) { }
+	private void UploadValuesAsyncWriteCallback(byte[] returnBytes, Exception exception, object state) { }
 
-public void UploadValuesAsync(Uri address, string method, NameValueCollection data) { }
+	private void UploadValuesAsyncReadCallback(byte[] returnBytes, Exception exception, object state) { }
 
-public void UploadValuesAsync(Uri address, string method, NameValueCollection data, object userToken) { }
+	public void UploadValuesAsync(Uri address, string method, NameValueCollection data) { }
 
-protected virtual void OnDownloadProgressChanged(DownloadProgressChangedEventArgs e) { }
+	public void UploadValuesAsync(Uri address, string method, NameValueCollection data, object userToken) { }
 
-protected virtual void OnUploadProgressChanged(UploadProgressChangedEventArgs e) { }
+	protected virtual void OnDownloadProgressChanged(DownloadProgressChangedEventArgs e) { }
 
-private void ReportDownloadProgressChanged(object arg) { }
+	protected virtual void OnUploadProgressChanged(UploadProgressChangedEventArgs e) { }
 
-private void ReportUploadProgressChanged(object arg) { }
+	private void ReportDownloadProgressChanged(object arg) { }
 
-private void PostProgressChanged(AsyncOperation asyncOp, WebClient.ProgressData progress) { }
+	private void ReportUploadProgressChanged(object arg) { }
+
+	private void PostProgressChanged(AsyncOperation asyncOp, WebClient.ProgressData progress) { }
 
 }
 
@@ -212,9 +212,9 @@ private class WebClient.ProgressData // TypeDefIndex: 2954
 	internal bool HasUploadPhase; 
 
 
-internal void Reset() { }
+	internal void Reset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -232,18 +232,18 @@ private class WebClient.DownloadBitsState // TypeDefIndex: 2955
 	internal long Length; 
 	internal WebClient.ProgressData Progress; 
 
-internal bool Async { get; }
+	internal bool Async { get; }
 
 
-internal void .ctor(WebRequest request, Stream writeStream, CompletionDelegate completionDelegate, AsyncOperation asyncOp, WebClient.ProgressData progress, WebClient webClient) { }
+	internal void .ctor(WebRequest request, Stream writeStream, CompletionDelegate completionDelegate, AsyncOperation asyncOp, WebClient.ProgressData progress, WebClient webClient) { }
 
-internal bool get_Async() { }
+	internal bool get_Async() { }
 
-internal int SetResponse(WebResponse response) { }
+	internal int SetResponse(WebResponse response) { }
 
-internal bool RetrieveBytes(ref int bytesRetrieved) { }
+	internal bool RetrieveBytes(ref int bytesRetrieved) { }
 
-internal void Close() { }
+	internal void Close() { }
 
 }
 
@@ -263,21 +263,21 @@ private class WebClient.UploadBitsState // TypeDefIndex: 2956
 	internal Stream ReadStream; 
 	internal WebClient.ProgressData Progress; 
 
-internal bool FileUpload { get; }
-internal bool Async { get; }
+	internal bool FileUpload { get; }
+	internal bool Async { get; }
 
 
-internal void .ctor(WebRequest request, Stream readStream, byte[] buffer, int chunkSize, byte[] header, byte[] footer, CompletionDelegate uploadCompletionDelegate, CompletionDelegate downloadCompletionDelegate, AsyncOperation asyncOp, WebClient.ProgressData progress, WebClient webClient) { }
+	internal void .ctor(WebRequest request, Stream readStream, byte[] buffer, int chunkSize, byte[] header, byte[] footer, CompletionDelegate uploadCompletionDelegate, CompletionDelegate downloadCompletionDelegate, AsyncOperation asyncOp, WebClient.ProgressData progress, WebClient webClient) { }
 
-internal bool get_FileUpload() { }
+	internal bool get_FileUpload() { }
 
-internal bool get_Async() { }
+	internal bool get_Async() { }
 
-internal void SetRequestStream(Stream writeStream) { }
+	internal void SetRequestStream(Stream writeStream) { }
 
-internal bool WriteBytes() { }
+	internal bool WriteBytes() { }
 
-internal void Close() { }
+	internal void Close() { }
 
 }
 

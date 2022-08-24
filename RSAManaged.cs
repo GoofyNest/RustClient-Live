@@ -15,50 +15,50 @@ internal class RSAManaged : RSA // TypeDefIndex: 75
 	[CompilerGeneratedAttribute] 
 	private RSAManaged.KeyGeneratedEventHandler KeyGenerated; 
 
-public override int KeySize { get; }
-public bool PublicOnly { get; }
+	public override int KeySize { get; }
+	public bool PublicOnly { get; }
 
 
-public void .ctor(int keySize) { }
+	public void .ctor(int keySize) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-private void GenerateKeyPair() { }
+	private void GenerateKeyPair() { }
 
-public override int get_KeySize() { }
+	public override int get_KeySize() { }
 
-public bool get_PublicOnly() { }
+	public bool get_PublicOnly() { }
 
-public override byte[] EncryptValue(byte[] rgb) { }
+	public override byte[] EncryptValue(byte[] rgb) { }
 
-public override RSAParameters ExportParameters(bool includePrivateParameters) { }
+	public override RSAParameters ExportParameters(bool includePrivateParameters) { }
 
-public override void ImportParameters(RSAParameters parameters) { }
+	public override void ImportParameters(RSAParameters parameters) { }
 
-protected override void Dispose(bool disposing) { }
-
-	[CompilerGeneratedAttribute] 
-public void add_KeyGenerated(RSAManaged.KeyGeneratedEventHandler value) { }
+	protected override void Dispose(bool disposing) { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_KeyGenerated(RSAManaged.KeyGeneratedEventHandler value) { }
+	public void add_KeyGenerated(RSAManaged.KeyGeneratedEventHandler value) { }
 
-public override string ToXmlString(bool includePrivateParameters) { }
+	[CompilerGeneratedAttribute] 
+	public void remove_KeyGenerated(RSAManaged.KeyGeneratedEventHandler value) { }
 
-private byte[] GetPaddedValue(BigInteger value, int length) { }
+	public override string ToXmlString(bool includePrivateParameters) { }
+
+	private byte[] GetPaddedValue(BigInteger value, int length) { }
 
 }
 
 public sealed class RSAManaged.KeyGeneratedEventHandler : MulticastDelegate // TypeDefIndex: 76
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(object sender, EventArgs e) { }
+	public virtual void Invoke(object sender, EventArgs e) { }
 
-public virtual IAsyncResult BeginInvoke(object sender, EventArgs e, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(object sender, EventArgs e, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
@@ -78,31 +78,31 @@ public class RSAManaged : RSA // TypeDefIndex: 1761
 	[CompilerGeneratedAttribute] 
 	private RSAManaged.KeyGeneratedEventHandler KeyGenerated; 
 
-public bool PublicOnly { get; }
+	public bool PublicOnly { get; }
 
 
-private void GenerateKeyPair() { }
+	private void GenerateKeyPair() { }
 
-public bool get_PublicOnly() { }
+	public bool get_PublicOnly() { }
 
-public override RSAParameters ExportParameters(bool includePrivateParameters) { }
+	public override RSAParameters ExportParameters(bool includePrivateParameters) { }
 
-public override void ImportParameters(RSAParameters parameters) { }
+	public override void ImportParameters(RSAParameters parameters) { }
 
-private byte[] GetPaddedValue(BigInteger value, int length) { }
+	private byte[] GetPaddedValue(BigInteger value, int length) { }
 
 }
 
 public sealed class RSAManaged.KeyGeneratedEventHandler : MulticastDelegate // TypeDefIndex: 1762
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(object sender, EventArgs e) { }
+	public virtual void Invoke(object sender, EventArgs e) { }
 
-public virtual IAsyncResult BeginInvoke(object sender, EventArgs e, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(object sender, EventArgs e, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

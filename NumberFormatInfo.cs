@@ -42,118 +42,118 @@ public sealed class NumberFormatInfo : ICloneable, IFormatProvider // TypeDefInd
 	internal bool validForParseAsNumber; 
 	[OptionalFieldAttribute] 
 	internal bool validForParseAsCurrency; 
-private const NumberStyles InvalidNumberStyles = -1024;
+	private const NumberStyles InvalidNumberStyles = -1024;
 
-public static NumberFormatInfo InvariantInfo { get; }
-public int CurrencyDecimalDigits { get; }
-public string CurrencyDecimalSeparator { get; }
-public bool IsReadOnly { get; }
-public int[] CurrencyGroupSizes { get; }
-public int[] NumberGroupSizes { get; }
-public int[] PercentGroupSizes { get; }
-public string CurrencyGroupSeparator { get; }
-public string CurrencySymbol { get; }
-public static NumberFormatInfo CurrentInfo { get; }
-public string NaNSymbol { get; }
-public int CurrencyNegativePattern { get; }
-public int NumberNegativePattern { get; }
-public int PercentPositivePattern { get; }
-public int PercentNegativePattern { get; }
-public string NegativeInfinitySymbol { get; }
-public string NegativeSign { get; }
-public int NumberDecimalDigits { get; }
-public string NumberDecimalSeparator { get; }
-public string NumberGroupSeparator { get; }
-public int CurrencyPositivePattern { get; }
-public string PositiveInfinitySymbol { get; }
-public string PositiveSign { get; }
-public int PercentDecimalDigits { get; }
-public string PercentDecimalSeparator { get; }
-public string PercentGroupSeparator { get; }
-public string PercentSymbol { get; }
-public string PerMilleSymbol { get; }
+	public static NumberFormatInfo InvariantInfo { get; }
+	public int CurrencyDecimalDigits { get; }
+	public string CurrencyDecimalSeparator { get; }
+	public bool IsReadOnly { get; }
+	public int[] CurrencyGroupSizes { get; }
+	public int[] NumberGroupSizes { get; }
+	public int[] PercentGroupSizes { get; }
+	public string CurrencyGroupSeparator { get; }
+	public string CurrencySymbol { get; }
+	public static NumberFormatInfo CurrentInfo { get; }
+	public string NaNSymbol { get; }
+	public int CurrencyNegativePattern { get; }
+	public int NumberNegativePattern { get; }
+	public int PercentPositivePattern { get; }
+	public int PercentNegativePattern { get; }
+	public string NegativeInfinitySymbol { get; }
+	public string NegativeSign { get; }
+	public int NumberDecimalDigits { get; }
+	public string NumberDecimalSeparator { get; }
+	public string NumberGroupSeparator { get; }
+	public int CurrencyPositivePattern { get; }
+	public string PositiveInfinitySymbol { get; }
+	public string PositiveSign { get; }
+	public int PercentDecimalDigits { get; }
+	public string PercentDecimalSeparator { get; }
+	public string PercentGroupSeparator { get; }
+	public string PercentSymbol { get; }
+	public string PerMilleSymbol { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[OnSerializingAttribute] 
-private void OnSerializing(StreamingContext ctx) { }
+	private void OnSerializing(StreamingContext ctx) { }
 
 	[OnDeserializingAttribute] 
-private void OnDeserializing(StreamingContext ctx) { }
+	private void OnDeserializing(StreamingContext ctx) { }
 
 	[OnDeserializedAttribute] 
-private void OnDeserialized(StreamingContext ctx) { }
+	private void OnDeserialized(StreamingContext ctx) { }
 
-internal void .ctor(CultureData cultureData) { }
+	internal void .ctor(CultureData cultureData) { }
 
-public static NumberFormatInfo get_InvariantInfo() { }
+	public static NumberFormatInfo get_InvariantInfo() { }
 
-public static NumberFormatInfo GetInstance(IFormatProvider formatProvider) { }
+	public static NumberFormatInfo GetInstance(IFormatProvider formatProvider) { }
 
-public object Clone() { }
+	public object Clone() { }
 
-public int get_CurrencyDecimalDigits() { }
+	public int get_CurrencyDecimalDigits() { }
 
-public string get_CurrencyDecimalSeparator() { }
+	public string get_CurrencyDecimalSeparator() { }
 
-public bool get_IsReadOnly() { }
+	public bool get_IsReadOnly() { }
 
-public int[] get_CurrencyGroupSizes() { }
+	public int[] get_CurrencyGroupSizes() { }
 
-public int[] get_NumberGroupSizes() { }
+	public int[] get_NumberGroupSizes() { }
 
-public int[] get_PercentGroupSizes() { }
+	public int[] get_PercentGroupSizes() { }
 
-public string get_CurrencyGroupSeparator() { }
+	public string get_CurrencyGroupSeparator() { }
 
-public string get_CurrencySymbol() { }
+	public string get_CurrencySymbol() { }
 
-public static NumberFormatInfo get_CurrentInfo() { }
+	public static NumberFormatInfo get_CurrentInfo() { }
 
-public string get_NaNSymbol() { }
+	public string get_NaNSymbol() { }
 
-public int get_CurrencyNegativePattern() { }
+	public int get_CurrencyNegativePattern() { }
 
-public int get_NumberNegativePattern() { }
+	public int get_NumberNegativePattern() { }
 
-public int get_PercentPositivePattern() { }
+	public int get_PercentPositivePattern() { }
 
-public int get_PercentNegativePattern() { }
+	public int get_PercentNegativePattern() { }
 
-public string get_NegativeInfinitySymbol() { }
+	public string get_NegativeInfinitySymbol() { }
 
-public string get_NegativeSign() { }
+	public string get_NegativeSign() { }
 
-public int get_NumberDecimalDigits() { }
+	public int get_NumberDecimalDigits() { }
 
-public string get_NumberDecimalSeparator() { }
+	public string get_NumberDecimalSeparator() { }
 
-public string get_NumberGroupSeparator() { }
+	public string get_NumberGroupSeparator() { }
 
-public int get_CurrencyPositivePattern() { }
+	public int get_CurrencyPositivePattern() { }
 
-public string get_PositiveInfinitySymbol() { }
+	public string get_PositiveInfinitySymbol() { }
 
-public string get_PositiveSign() { }
+	public string get_PositiveSign() { }
 
-public int get_PercentDecimalDigits() { }
+	public int get_PercentDecimalDigits() { }
 
-public string get_PercentDecimalSeparator() { }
+	public string get_PercentDecimalSeparator() { }
 
-public string get_PercentGroupSeparator() { }
+	public string get_PercentGroupSeparator() { }
 
-public string get_PercentSymbol() { }
+	public string get_PercentSymbol() { }
 
-public string get_PerMilleSymbol() { }
+	public string get_PerMilleSymbol() { }
 
-public object GetFormat(Type formatType) { }
+	public object GetFormat(Type formatType) { }
 
-public static NumberFormatInfo ReadOnly(NumberFormatInfo nfi) { }
+	public static NumberFormatInfo ReadOnly(NumberFormatInfo nfi) { }
 
-internal static void ValidateParseStyleInteger(NumberStyles style) { }
+	internal static void ValidateParseStyleInteger(NumberStyles style) { }
 
-internal static void ValidateParseStyleFloatingPoint(NumberStyles style) { }
+	internal static void ValidateParseStyleFloatingPoint(NumberStyles style) { }
 
 }
 

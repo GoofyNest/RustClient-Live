@@ -14,20 +14,20 @@ public class GameStat : MonoBehaviour // TypeDefIndex: 10929
 	private GameStat.Stat stat; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void ForceUpdate() { }
+	public void ForceUpdate() { }
 
-public void UpdateText() { }
+	public void UpdateText() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <Refresh>b__14_0(GameStat.Stat x) { }
+	private bool <Refresh>b__14_0(GameStat.Stat x) { }
 
 }
 

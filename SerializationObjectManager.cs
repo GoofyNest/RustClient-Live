@@ -5,13 +5,13 @@ public sealed class SerializationObjectManager // TypeDefIndex: 1061
 	private StreamingContext m_context; 
 
 
-public void .ctor(StreamingContext context) { }
+	public void .ctor(StreamingContext context) { }
 
-public void RegisterObject(object obj) { }
+	public void RegisterObject(object obj) { }
 
-public void RaiseOnSerializedEvent() { }
+	public void RaiseOnSerializedEvent() { }
 
-private void AddOnSerialized(object obj) { }
+	private void AddOnSerialized(object obj) { }
 
 }
 

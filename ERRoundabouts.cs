@@ -111,63 +111,63 @@ public class ERRoundabouts : MonoBehaviour // TypeDefIndex: 7175
 	public List<QDQDOOQQDQODD> roadTypesDynamic; 
 
 
-private void Start() { }
+	private void Start() { }
 
-public bool UpdateToRoadType(QDQDOOQQDQODD sourcePreset) { }
+	public bool UpdateToRoadType(QDQDOOQQDQODD sourcePreset) { }
 
-public void ResetData() { }
+	public void ResetData() { }
 
-public void ODQDCCOQOD() { }
+	public void ODQDCCOQOD() { }
 
-public void OOQQDCCCCC() { }
+	public void OOQQDCCCCC() { }
 
-public void GetConnectionData() { }
+	public void GetConnectionData() { }
 
-public void UpdateMinMaxInts() { }
+	public void UpdateMinMaxInts() { }
 
-public void ChecknewSegmentInt() { }
+	public void ChecknewSegmentInt() { }
 
-public int GetRoadPresetInt(double id) { }
+	public int GetRoadPresetInt(double id) { }
 
-public void OCQCQODOQC(ERRoundabouts source, bool refreshFlag) { }
+	public void OCQCQODOQC(ERRoundabouts source, bool refreshFlag) { }
 
-public void OCDCOQOOQO() { }
+	public void OCDCOQOOQO() { }
 
-public void ODCDCDDOCC(List<SidewalkPresetClass> sidewalkPresets, int el) { }
+	public void ODCDCDDOCC(List<SidewalkPresetClass> sidewalkPresets, int el) { }
 
-public void OOCDDOQDDO() { }
+	public void OOCDDOQDDO() { }
 
-public void OQQCDOQOOQ() { }
+	public void OQQCDOQOOQ() { }
 
-public void OQCQDQDCOD(int currentIndex) { }
+	public void OQCQDQDCOD(int currentIndex) { }
 
-public void OQQOCQQDOQ(ref List<Vector3> OCCDQOCCDQ, ref List<Vector3> innerSegmentPoints, int leftRight, int startElement, Vector3 leftPoint, Vector3 rightPoint, Vector3 forward, int currentIndex) { }
+	public void OQQOCQQDOQ(ref List<Vector3> OCCDQOCCDQ, ref List<Vector3> innerSegmentPoints, int leftRight, int startElement, Vector3 leftPoint, Vector3 rightPoint, Vector3 forward, int currentIndex) { }
 
-public void OOCCDCDOQC(int currentIndex) { }
+	public void OOCCDCDOQC(int currentIndex) { }
 
-public void ODDDOCDCQO() { }
+	public void ODDDOCDCQO() { }
 
-public void OQCQQCQDCQ(int el, List<int> trIntArray, List<float> uvArray, List<List<int>> leftSidewalkIntArray, List<List<int>> rightSidewalkIntArray, int startend) { }
+	public void OQCQQCQDCQ(int el, List<int> trIntArray, List<float> uvArray, List<List<int>> leftSidewalkIntArray, List<List<int>> rightSidewalkIntArray, int startend) { }
 
-public void OCDDOCDDOQ(List<Vector3> meshVecs, List<int> connectionVecInts, ref List<Vector2> roadShapeVecs, List<Vector2> vecArrays, List<List<Vector3>> leftSidewalkArray, List<List<Vector3>> rightSidewalkArray, int connectionElement, int startend) { }
+	public void OCDDOCDDOQ(List<Vector3> meshVecs, List<int> connectionVecInts, ref List<Vector2> roadShapeVecs, List<Vector2> vecArrays, List<List<Vector3>> leftSidewalkArray, List<List<Vector3>> rightSidewalkArray, int connectionElement, int startend) { }
 
-public void ODQCODQDDQ(int el, Material roadMaterial, int leftVecCount, int rightVecCount) { }
+	public void ODQCODQDDQ(int el, Material roadMaterial, int leftVecCount, int rightVecCount) { }
 
-public void ODCQOCOOQO() { }
+	public void ODCQOCOOQO() { }
 
-public void OCQOCDQQQD(int el) { }
+	public void OCQOCDQQQD(int el) { }
 
-public static bool OQQCODDOOQ(int el, float roundaboutIndent, Vector3 prevVec, bool boolCheck, ref Vector3 vec, ref int indentBorderInt) { }
+	public static bool OQQCODDOOQ(int el, float roundaboutIndent, Vector3 prevVec, bool boolCheck, ref Vector3 vec, ref int indentBorderInt) { }
 
-public void ODQOOCQDDD(float minSurrounding, Vector3 middleVec, Vector3 origVec, bool boolCheck, ref Vector3 vec) { }
+	public void ODQOOCQDDD(float minSurrounding, Vector3 middleVec, Vector3 origVec, bool boolCheck, ref Vector3 vec) { }
 
-public void CheckAgainstFirstSurroundingVec(Vector3 firstIndent, Vector3 firstSurrounding, bool boolCheck, ref Vector3 vec) { }
+	public void CheckAgainstFirstSurroundingVec(Vector3 firstIndent, Vector3 firstSurrounding, bool boolCheck, ref Vector3 vec) { }
 
-public static Vector3 OODOQDOODO(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4) { }
+	public static Vector3 OODOQDOODO(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4) { }
 
-public static Vector3 OQDDDODCOC(Vector3 point, Vector3 pivot, Quaternion angle) { }
+	public static Vector3 OQDDDODCOC(Vector3 point, Vector3 pivot, Quaternion angle) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

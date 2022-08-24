@@ -5,13 +5,13 @@ public class ToggleLayer : MonoBehaviour, IClientComponent // TypeDefIndex: 1113
 	public LayerSelect layer; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void OnToggleChanged() { }
+	public void OnToggleChanged() { }
 
-protected void OnValidate() { }
+	protected void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

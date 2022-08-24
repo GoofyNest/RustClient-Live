@@ -5,15 +5,15 @@ internal sealed class SynchronizationContextAwaitTaskContinuation : AwaitTaskCon
 	private readonly SynchronizationContext m_syncContext; 
 
 
-internal void .ctor(SynchronizationContext context, Action action, bool flowExecutionContext, ref StackCrawlMark stackMark) { }
+	internal void .ctor(SynchronizationContext context, Action action, bool flowExecutionContext, ref StackCrawlMark stackMark) { }
 
-internal sealed override void Run(Task task, bool canInlineContinuationTask) { }
+	internal sealed override void Run(Task task, bool canInlineContinuationTask) { }
 
-private static void PostAction(object state) { }
+	private static void PostAction(object state) { }
 
-private static ContextCallback GetPostActionCallback() { }
+	private static ContextCallback GetPostActionCallback() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -22,11 +22,11 @@ private sealed class SynchronizationContextAwaitTaskContinuation.<>c // TypeDefI
 	public static readonly SynchronizationContextAwaitTaskContinuation.<>c <>9; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <.cctor>b__7_0(object state) { }
+	internal void <.cctor>b__7_0(object state) { }
 
 }
 

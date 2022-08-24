@@ -5,27 +5,27 @@ internal class PointerDispatchState // TypeDefIndex: 4604
 	private bool[] m_ShouldSendCompatibilityMouseEvents; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
-public IEventHandler GetCapturingElement(int pointerId) { }
+	public IEventHandler GetCapturingElement(int pointerId) { }
 
-public bool HasPointerCapture(IEventHandler handler, int pointerId) { }
+	public bool HasPointerCapture(IEventHandler handler, int pointerId) { }
 
-public void CapturePointer(IEventHandler handler, int pointerId) { }
+	public void CapturePointer(IEventHandler handler, int pointerId) { }
 
-public void ReleasePointer(int pointerId) { }
+	public void ReleasePointer(int pointerId) { }
 
-public void ReleasePointer(IEventHandler handler, int pointerId) { }
+	public void ReleasePointer(IEventHandler handler, int pointerId) { }
 
-public void ProcessPointerCapture(int pointerId) { }
+	public void ProcessPointerCapture(int pointerId) { }
 
-public void ActivateCompatibilityMouseEvents(int pointerId) { }
+	public void ActivateCompatibilityMouseEvents(int pointerId) { }
 
-public void PreventCompatibilityMouseEvents(int pointerId) { }
+	public void PreventCompatibilityMouseEvents(int pointerId) { }
 
-public bool ShouldSendCompatibilityMouseEvents(IPointerEvent evt) { }
+	public bool ShouldSendCompatibilityMouseEvents(IPointerEvent evt) { }
 
 }
 

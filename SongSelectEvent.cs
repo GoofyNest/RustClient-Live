@@ -3,24 +3,24 @@ public sealed class SongSelectEvent : SystemCommonEvent // TypeDefIndex: 7564
 	[CompilerGeneratedAttribute] 
 	private SevenBitNumber <Number>k__BackingField; 
 
-public SevenBitNumber Number { get; set; }
+	public SevenBitNumber Number { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(SevenBitNumber number) { }
-
-	[CompilerGeneratedAttribute] 
-public SevenBitNumber get_Number() { }
+	public void .ctor(SevenBitNumber number) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Number(SevenBitNumber value) { }
+	public SevenBitNumber get_Number() { }
 
-internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Number(SevenBitNumber value) { }
 
-protected override MidiEvent CloneEvent() { }
+	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
 
-public override string ToString() { }
+	protected override MidiEvent CloneEvent() { }
+
+	public override string ToString() { }
 
 }
 

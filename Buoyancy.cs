@@ -16,16 +16,16 @@ public class Buoyancy : ListComponent<Buoyancy>, IServerComponent // TypeDefInde
 	public BaseEntity forEntity; 
 	public float submergedFraction; 
 
-public float timeOutOfWater { get; set; }
+	public float timeOutOfWater { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_timeOutOfWater() { }
+	public float get_timeOutOfWater() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_timeOutOfWater(float value) { }
+	private void set_timeOutOfWater(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

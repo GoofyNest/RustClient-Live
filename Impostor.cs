@@ -11,26 +11,26 @@ public class Impostor : MonoBehaviour, IClientComponent // TypeDefIndex: 10676
 	private ImpostorInstanceData <InstanceData>k__BackingField; 
 	public bool keepTrying; 
 
-public ImpostorInstanceData InstanceData { get; set; }
+	public ImpostorInstanceData InstanceData { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public ImpostorInstanceData get_InstanceData() { }
+	public ImpostorInstanceData get_InstanceData() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_InstanceData(ImpostorInstanceData value) { }
+	private void set_InstanceData(ImpostorInstanceData value) { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void InitializeInstanceData() { }
+	private void InitializeInstanceData() { }
 
-public void UpdateInstance() { }
+	public void UpdateInstance() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

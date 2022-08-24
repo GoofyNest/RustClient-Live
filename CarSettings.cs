@@ -34,7 +34,7 @@ public class CarSettings // TypeDefIndex: 9704
 	public float handlingBias; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

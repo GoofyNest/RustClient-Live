@@ -22,29 +22,29 @@ internal struct SimulatePositionsJob : IJob // TypeDefIndex: 7320
 	public float Radius; 
 
 
-public void Execute() { }
+	public void Execute() { }
 
-private void AdjustSimulationSpace() { }
+	private void AdjustSimulationSpace() { }
 
-private void MovePositions() { }
+	private void MovePositions() { }
 
-private void ApplyPositionConstraints(NativeArray<float3> newPositions) { }
+	private void ApplyPositionConstraints(NativeArray<float3> newPositions) { }
 
-private void ResolveCollisions() { }
+	private void ResolveCollisions() { }
 
-private void ApplyRotationConstraints() { }
+	private void ApplyRotationConstraints() { }
 
-private float3 RayMarch(in float3 origin, in float3 direction, float radius, float maxDistance) { }
+	private float3 RayMarch(in float3 origin, in float3 direction, float radius, float maxDistance) { }
 
-private float Scene(in float3 position) { }
+	private float Scene(in float3 position) { }
 
-private static float Union(float d1, float d2) { }
+	private static float Union(float d1, float d2) { }
 
-private static float Capsule(in float3 p, in float3 a, in float3 b, float r) { }
+	private static float Capsule(in float3 p, in float3 a, in float3 b, float r) { }
 
-private static float3 Slerp(float3 a, float3 b, float t) { }
+	private static float3 Slerp(float3 a, float3 b, float t) { }
 
-private static quaternion FromToRotation(float3 from, float3 to) { }
+	private static quaternion FromToRotation(float3 from, float3 to) { }
 
 }
 

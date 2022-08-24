@@ -4,9 +4,9 @@ public class FPSText : MonoBehaviour // TypeDefIndex: 10928
 	private Stopwatch fpsTimer; 
 
 
-protected void Update() { }
+	protected void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

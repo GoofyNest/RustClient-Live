@@ -14,11 +14,11 @@ internal class KnownHttpVerb // TypeDefIndex: 2892
 	internal static KnownHttpVerb MkCol; 
 
 
-internal void .ctor(string name, bool requireContentBody, bool contentBodyNotAllowed, bool connectRequest, bool expectNoContentResponse) { }
+	internal void .ctor(string name, bool requireContentBody, bool contentBodyNotAllowed, bool connectRequest, bool expectNoContentResponse) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public static KnownHttpVerb Parse(string name) { }
+	public static KnownHttpVerb Parse(string name) { }
 
 }
 

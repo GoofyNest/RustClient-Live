@@ -6,9 +6,9 @@ public class PrefabInformation : PrefabAttribute // TypeDefIndex: 9970
 	public Sprite sprite; 
 
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

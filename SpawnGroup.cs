@@ -15,7 +15,7 @@ public class SpawnGroup : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 1
 	public BoxCollider setFreeIfMovedBeyond; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -26,7 +26,7 @@ public class SpawnGroup.SpawnEntry // TypeDefIndex: 10008
 	public bool mobile; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

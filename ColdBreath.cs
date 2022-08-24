@@ -5,13 +5,13 @@ public class ColdBreath : BaseMonoBehaviour // TypeDefIndex: 9329
 	private Transform jawBone; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void Breathe() { }
+	private void Breathe() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

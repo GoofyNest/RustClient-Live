@@ -10,17 +10,17 @@ public class AchievementTodo : BaseMonoBehaviour // TypeDefIndex: 10821
 	internal bool State; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnAchievementStateChanged(Achievement ach, int currentProgress, int progress) { }
+	private void OnAchievementStateChanged(Achievement ach, int currentProgress, int progress) { }
 
-internal void Unlock() { }
+	internal void Unlock() { }
 
-internal void Init(AchievementGroup.AchievementItem item) { }
+	internal void Init(AchievementGroup.AchievementItem item) { }
 
-private void UpdateState() { }
+	private void UpdateState() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

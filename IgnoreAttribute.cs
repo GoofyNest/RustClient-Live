@@ -4,13 +4,13 @@ internal class IgnoreAttribute : Attribute // TypeDefIndex: 3287
 	[CompilerGeneratedAttribute] 
 	private bool <DoesNotContributeToSize>k__BackingField; 
 
-public bool DoesNotContributeToSize { set; }
+	public bool DoesNotContributeToSize { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public void set_DoesNotContributeToSize(bool value) { }
+	public void set_DoesNotContributeToSize(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

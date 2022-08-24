@@ -17,31 +17,31 @@ public class SelectedContact : SingletonComponent<SelectedContact> // TypeDefInd
 	private RelationshipManager.RelationshipType selectedPlayerRelationship; 
 
 
-public void SetSelected_Internal(RelationshipManager.PlayerRelationshipInfo selected) { }
+	public void SetSelected_Internal(RelationshipManager.PlayerRelationshipInfo selected) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void SetVisible(bool wantsVis) { }
+	public void SetVisible(bool wantsVis) { }
 
-public static void SetSelected(RelationshipManager.PlayerRelationshipInfo selected) { }
+	public static void SetSelected(RelationshipManager.PlayerRelationshipInfo selected) { }
 
-public void OnNoteTextChanged() { }
+	public void OnNoteTextChanged() { }
 
-public bool SelectedValid() { }
+	public bool SelectedValid() { }
 
-public void MakeAlly() { }
+	public void MakeAlly() { }
 
-public void MakeSeen() { }
+	public void MakeSeen() { }
 
-public void MakeEnemy() { }
+	public void MakeEnemy() { }
 
-public void Forget() { }
+	public void Forget() { }
 
-public void ToggleMute(bool state) { }
+	public void ToggleMute(bool state) { }
 
-public void ReportPlayer() { }
+	public void ReportPlayer() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -11,27 +11,27 @@ public class MeshLOD : LODComponent, IBatchingHandler // TypeDefIndex: 9941
 	private bool isSmall; 
 
 
-protected override void InitLOD() { }
+	protected override void InitLOD() { }
 
-protected override void EnableLOD() { }
+	protected override void EnableLOD() { }
 
-protected override void DisableLOD() { }
+	protected override void DisableLOD() { }
 
-protected override void Show() { }
+	protected override void Show() { }
 
-protected override void Hide() { }
+	protected override void Hide() { }
 
-protected override void Hide(bool shadowsVisible) { }
+	protected override void Hide(bool shadowsVisible) { }
 
-protected override bool IsLODHiding() { }
+	protected override bool IsLODHiding() { }
 
-protected override void SetLOD(int newlod) { }
+	protected override void SetLOD(int newlod) { }
 
-protected override int GetLOD(float distance) { }
+	protected override int GetLOD(float distance) { }
 
-protected override bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
+	protected override bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -41,11 +41,11 @@ public class MeshLOD.State // TypeDefIndex: 9942
 	public Mesh mesh; 
 
 
-public void Show(MeshFilter filter, MeshRenderer renderer, RendererBatch batch, ShadowCastingMode shadowMode) { }
+	public void Show(MeshFilter filter, MeshRenderer renderer, RendererBatch batch, ShadowCastingMode shadowMode) { }
 
-public void Hide(MeshFilter filter, MeshRenderer renderer, RendererBatch batch, ShadowCastingMode shadowMode, bool shadowsVisible = False) { }
+	public void Hide(MeshFilter filter, MeshRenderer renderer, RendererBatch batch, ShadowCastingMode shadowMode, bool shadowsVisible = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

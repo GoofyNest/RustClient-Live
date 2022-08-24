@@ -6,14 +6,14 @@ public class LandmarkInfo : MonoBehaviour // TypeDefIndex: 9960
 	public Translate.Phrase displayPhrase; 
 	public Sprite mapIcon; 
 
-public virtual MapLayer MapLayer { get; }
+	public virtual MapLayer MapLayer { get; }
 
 
-public virtual MapLayer get_MapLayer() { }
+	public virtual MapLayer get_MapLayer() { }
 
-protected virtual void Awake() { }
+	protected virtual void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

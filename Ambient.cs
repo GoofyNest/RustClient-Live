@@ -1,10 +1,10 @@
 public enum AmbientMode // TypeDefIndex: 3814
 {
 	public int value__; 
-public const AmbientMode Skybox = 0;
-public const AmbientMode Trilight = 1;
-public const AmbientMode Flat = 3;
-public const AmbientMode Custom = 4;
+	public const AmbientMode Skybox = 0;
+	public const AmbientMode Trilight = 1;
+	public const AmbientMode Flat = 3;
+	public const AmbientMode Custom = 4;
 
 }
 
@@ -30,7 +30,7 @@ public class AmbienceDefinition : ScriptableObject // TypeDefIndex: 8969
 	public AmbienceDefinition.ValueRange snow; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -40,7 +40,7 @@ public class AmbienceDefinition.ValueRange // TypeDefIndex: 8970
 	public float max; 
 
 
-public void .ctor(float min, float max) { }
+	public void .ctor(float min, float max) { }
 
 }
 
@@ -49,7 +49,7 @@ public class AmbienceDefinitionList : ScriptableObject // TypeDefIndex: 8971
 	public List<AmbienceDefinition> defs; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -82,79 +82,79 @@ public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<Ambi
 	private Vector3 lastPosition; 
 	private Dictionary<int, int> readingOccurences; 
 
-public TerrainTopology.Enum currentTopology { get; set; }
-public TerrainBiome.Enum currentBiome { get; set; }
+	public TerrainTopology.Enum currentTopology { get; set; }
+	public TerrainBiome.Enum currentBiome { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public TerrainTopology.Enum get_currentTopology() { }
+	public TerrainTopology.Enum get_currentTopology() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_currentTopology(TerrainTopology.Enum value) { }
+	private void set_currentTopology(TerrainTopology.Enum value) { }
 
 	[CompilerGeneratedAttribute] 
-public TerrainBiome.Enum get_currentBiome() { }
+	public TerrainBiome.Enum get_currentBiome() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_currentBiome(TerrainBiome.Enum value) { }
+	private void set_currentBiome(TerrainBiome.Enum value) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-protected void OnDestroy() { }
+	protected void OnDestroy() { }
 
-public void FadeOut(float fadeTimeOverride = -1) { }
+	public void FadeOut(float fadeTimeOverride = -1) { }
 
-public bool IsFadingOut() { }
+	public bool IsFadingOut() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public void SetBaseAmbience(AmbienceDefinitionList ambienceList) { }
+	public void SetBaseAmbience(AmbienceDefinitionList ambienceList) { }
 
-public void DoUpdate() { }
+	public void DoUpdate() { }
 
-public void Tick() { }
+	public void Tick() { }
 
-public void UpdateCameraDistance() { }
+	public void UpdateCameraDistance() { }
 
-public void StartImmediately() { }
+	public void StartImmediately() { }
 
-private void ReadAndUpdateEnvironment() { }
+	private void ReadAndUpdateEnvironment() { }
 
-private void ReadEnvironment() { }
+	private void ReadEnvironment() { }
 
-private void UpdateCurrentEnvironment() { }
+	private void UpdateCurrentEnvironment() { }
 
-private int GetMostCommonReading(List<int> readings) { }
+	private int GetMostCommonReading(List<int> readings) { }
 
-private float GetScore(AmbienceDefinition definition, float rain, float snow, float wind, bool underground) { }
+	private float GetScore(AmbienceDefinition definition, float rain, float snow, float wind, bool underground) { }
 
-private void UpdateBaseSound(float crossFadeTimeOverride = -1) { }
+	private void UpdateBaseSound(float crossFadeTimeOverride = -1) { }
 
-public SoundModulation.Modulator GetPitchModulator() { }
+	public SoundModulation.Modulator GetPitchModulator() { }
 
-private void StartSound(SoundDefinition def, float fadeTime) { }
+	private void StartSound(SoundDefinition def, float fadeTime) { }
 
-private void CrossfadeTo(SoundDefinition def, float fadeTime) { }
+	private void CrossfadeTo(SoundDefinition def, float fadeTime) { }
 
-public SoundDefinition GetBaseSound() { }
+	public SoundDefinition GetBaseSound() { }
 
-private SoundDefinition GetBaseSound(AmbienceDefinitionList ambienceDefinitionList) { }
+	private SoundDefinition GetBaseSound(AmbienceDefinitionList ambienceDefinitionList) { }
 
-public void PlayStings() { }
+	public void PlayStings() { }
 
-private void PlayStings(AmbienceDefinitionList ambienceDefinitionList) { }
+	private void PlayStings(AmbienceDefinitionList ambienceDefinitionList) { }
 
-private void ResetStingTimes(AmbienceDefinitionList ambienceDefinitionList) { }
+	private void ResetStingTimes(AmbienceDefinitionList ambienceDefinitionList) { }
 
-public float GetNextStingTime(AmbienceDefinition sting) { }
+	public float GetNextStingTime(AmbienceDefinition sting) { }
 
-public int CompareTo(AmbienceEmitter other) { }
+	public int CompareTo(AmbienceEmitter other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -168,13 +168,13 @@ public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 8973
 	private SynchronizedClock stingClock; 
 
 
-private void PlaySting(uint seed) { }
+	private void PlaySting(uint seed) { }
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -197,59 +197,59 @@ public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientCompo
 	private Dictionary<AmbienceDefinitionList, AmbienceManager.AmbienceGroup> ambienceGroupsByDef; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void OnApplicationQuit() { }
+	private void OnApplicationQuit() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void Tick() { }
+	private void Tick() { }
 
-private void TickLocalEmitters() { }
+	private void TickLocalEmitters() { }
 
-public void DeactivateEmitter(AmbienceEmitter emitter) { }
+	public void DeactivateEmitter(AmbienceEmitter emitter) { }
 
-public void ActivateEmitter(AmbienceEmitter emitter) { }
+	public void ActivateEmitter(AmbienceEmitter emitter) { }
 
-private void TickCameraEmitters() { }
+	private void TickCameraEmitters() { }
 
-private void SortLocalEmitters() { }
+	private void SortLocalEmitters() { }
 
-private AmbienceManager.EmitterTypeLimit EmitterLimit(AmbienceEmitter emitter) { }
+	private AmbienceManager.EmitterTypeLimit EmitterLimit(AmbienceEmitter emitter) { }
 
-public void OnCullingGroupChange(CullingGroupEvent evt, AmbienceManager.AmbienceGroup group) { }
+	public void OnCullingGroupChange(CullingGroupEvent evt, AmbienceManager.AmbienceGroup group) { }
 
-public void EmitterLeaveRange(AmbienceEmitter emitter) { }
+	public void EmitterLeaveRange(AmbienceEmitter emitter) { }
 
-public void AddEmitter(AmbienceEmitter emitter) { }
+	public void AddEmitter(AmbienceEmitter emitter) { }
 
-public void RemoveEmitter(AmbienceEmitter emitter) { }
+	public void RemoveEmitter(AmbienceEmitter emitter) { }
 
-public void AddCameraEmitter(AmbienceEmitter emitter) { }
+	public void AddCameraEmitter(AmbienceEmitter emitter) { }
 
-public void RemoveCameraEmitter(AmbienceEmitter emitter) { }
+	public void RemoveCameraEmitter(AmbienceEmitter emitter) { }
 
-private void UpdateCullingGroups() { }
+	private void UpdateCullingGroups() { }
 
-private AmbienceManager.AmbienceGroup AmbienceGroupForEmitter(AmbienceEmitter emitter) { }
+	private AmbienceManager.AmbienceGroup AmbienceGroupForEmitter(AmbienceEmitter emitter) { }
 
-public void EnableAdvancedAmbience() { }
+	public void EnableAdvancedAmbience() { }
 
-public void DisableAdvancedAmbience() { }
+	public void DisableAdvancedAmbience() { }
 
-private void SortEmitters(List<AmbienceEmitter> emitterList) { }
+	private void SortEmitters(List<AmbienceEmitter> emitterList) { }
 
-private void SortEmitters(List<AmbienceEmitter> emitterList, int left, int right) { }
+	private void SortEmitters(List<AmbienceEmitter> emitterList, int left, int right) { }
 
-public void AmbienceZoneEntered(AmbienceZone zone) { }
+	public void AmbienceZoneEntered(AmbienceZone zone) { }
 
-public void AmbienceZoneExited(AmbienceZone zone) { }
+	public void AmbienceZoneExited(AmbienceZone zone) { }
 
-public AmbienceZone CurrentAmbienceZone() { }
+	public AmbienceZone CurrentAmbienceZone() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -260,7 +260,7 @@ public class AmbienceManager.EmitterTypeLimit // TypeDefIndex: 8975
 	public int active; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -274,9 +274,9 @@ public class AmbienceManager.AmbienceGroup // TypeDefIndex: 8976
 	public bool cullingGroupDirty; 
 
 
-public void OnCullingGroupChange(CullingGroupEvent evt) { }
+	public void OnCullingGroupChange(CullingGroupEvent evt) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -287,11 +287,11 @@ public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefI
 	public GameObjectRef emitterPrefab; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void CreateBaseEmitters() { }
+	private void CreateBaseEmitters() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -304,17 +304,17 @@ public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 897
 	public float crossfadeTime; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-internal override void OnEntityEnter(BaseEntity ent) { }
+	internal override void OnEntityEnter(BaseEntity ent) { }
 
-internal override void OnEntityLeave(BaseEntity ent) { }
+	internal override void OnEntityLeave(BaseEntity ent) { }
 
-public virtual void PreClientComponentCull(IPrefabProcessor p) { }
+	public virtual void PreClientComponentCull(IPrefabProcessor p) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -338,62 +338,62 @@ public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // Typ
 	private bool queuedState; 
 
 
-private float GetDistance() { }
+	private float GetDistance() { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void ToggleLight(bool state) { }
+	private void ToggleLight(bool state) { }
 
-private void FadingToggle() { }
+	private void FadingToggle() { }
 
-public void SetLightActive(bool lightOn) { }
+	public void SetLightActive(bool lightOn) { }
 
-public void SetTargetIntensity(float intensity, float fadeDuration = -1) { }
+	public void SetTargetIntensity(float intensity, float fadeDuration = -1) { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-protected void OnValidate() { }
+	protected void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum AmbientOcclusionMode // TypeDefIndex: 11752
 {
 	public int value__; 
-public const AmbientOcclusionMode ScalableAmbientObscurance = 0;
-public const AmbientOcclusionMode MultiScaleVolumetricObscurance = 1;
+	public const AmbientOcclusionMode ScalableAmbientObscurance = 0;
+	public const AmbientOcclusionMode MultiScaleVolumetricObscurance = 1;
 
 }
 
 public enum AmbientOcclusionQuality // TypeDefIndex: 11753
 {
 	public int value__; 
-public const AmbientOcclusionQuality Lowest = 0;
-public const AmbientOcclusionQuality Low = 1;
-public const AmbientOcclusionQuality Medium = 2;
-public const AmbientOcclusionQuality High = 3;
-public const AmbientOcclusionQuality Ultra = 4;
+	public const AmbientOcclusionQuality Lowest = 0;
+	public const AmbientOcclusionQuality Low = 1;
+	public const AmbientOcclusionQuality Medium = 2;
+	public const AmbientOcclusionQuality High = 3;
+	public const AmbientOcclusionQuality Ultra = 4;
 
 }
 
 public sealed class AmbientOcclusionModeParameter : ParameterOverride<AmbientOcclusionMode> // TypeDefIndex: 11754
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public sealed class AmbientOcclusionQualityParameter : ParameterOverride<AmbientOcclusionQuality> // TypeDefIndex: 11755
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -427,9 +427,9 @@ public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex
 	public AmbientOcclusionQualityParameter quality; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -438,23 +438,23 @@ internal sealed class AmbientOcclusionRenderer : PostProcessEffectRenderer<Ambie
 	private IAmbientOcclusionMethod[] m_Methods; 
 
 
-public override void Init() { }
+	public override void Init() { }
 
-public bool IsAmbientOnly(PostProcessRenderContext context) { }
+	public bool IsAmbientOnly(PostProcessRenderContext context) { }
 
-public IAmbientOcclusionMethod Get() { }
+	public IAmbientOcclusionMethod Get() { }
 
-public override DepthTextureMode GetCameraFlags() { }
+	public override DepthTextureMode GetCameraFlags() { }
 
-public override void Release() { }
+	public override void Release() { }
 
-public ScalableAO GetScalableAO() { }
+	public ScalableAO GetScalableAO() { }
 
-public MultiScaleVO GetMultiScaleVO() { }
+	public MultiScaleVO GetMultiScaleVO() { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

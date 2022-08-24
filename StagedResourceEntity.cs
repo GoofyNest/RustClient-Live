@@ -6,27 +6,27 @@ public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 8650
 	public GameObject gibSourceTest; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void RunChangeEffect() { }
+	public void RunChangeEffect() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
 	[BaseEntity.RPC_Client] 
-private void ResourceUpdate(BaseEntity.RPCMessage packet) { }
+	private void ResourceUpdate(BaseEntity.RPCMessage packet) { }
 
-public T GetStageComponent<T>() { }
-/* GenericInstMethod :
-|
-|-StagedResourceEntity.GetStageComponent<object>
-|-StagedResourceEntity.GetStageComponent<MeshRenderer>
-*/
+	public T GetStageComponent<T>() { }
+	/* GenericInstMethod :
+	|
+	|-StagedResourceEntity.GetStageComponent<object>
+	|-StagedResourceEntity.GetStageComponent<MeshRenderer>
+	*/
 
-private void UpdateStage() { }
+	private void UpdateStage() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -36,7 +36,7 @@ public class StagedResourceEntity.ResourceStage // TypeDefIndex: 8651
 	public GameObject instance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,15 +6,15 @@ public static class KeyboardMidi // TypeDefIndex: 12111
 
 
 	[ClientVar] 
-public static void Reload() { }
+	public static void Reload() { }
 
-private static Dictionary<int, KeyCode[]> Init(string instrument) { }
+	private static Dictionary<int, KeyCode[]> Init(string instrument) { }
 
-private static KeyCode[] StringToKeycodeArray(string val) { }
+	private static KeyCode[] StringToKeycodeArray(string val) { }
 
-public static bool IsMidiKeyDown(int midi, string instrumentName) { }
+	public static bool IsMidiKeyDown(int midi, string instrumentName) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -25,13 +25,13 @@ private sealed class KeyboardMidi.<>c // TypeDefIndex: 12112
 	public static Func<KeyCode, bool> <>9__4_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal KeyCode <StringToKeycodeArray>b__4_0(string x) { }
+	internal KeyCode <StringToKeycodeArray>b__4_0(string x) { }
 
-internal bool <StringToKeycodeArray>b__4_1(KeyCode x) { }
+	internal bool <StringToKeycodeArray>b__4_1(KeyCode x) { }
 
 }
 

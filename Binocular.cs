@@ -9,23 +9,23 @@ public class Binocular : AttackEntity // TypeDefIndex: 9461
 	private int currentFovIndex; 
 
 
-public bool IsAiming() { }
+	public bool IsAiming() { }
 
-public override void OnDeploy() { }
+	public override void OnDeploy() { }
 
-public override void OnHolster() { }
+	public override void OnHolster() { }
 
-public void ClearOverlays() { }
+	public void ClearOverlays() { }
 
-public override void OnFrame() { }
+	public override void OnFrame() { }
 
-public Vector3 GetScreenPos(Vector3 oldPos) { }
+	public Vector3 GetScreenPos(Vector3 oldPos) { }
 
-public void SetViewmodelVisiblity(bool visible) { }
+	public void SetViewmodelVisiblity(bool visible) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

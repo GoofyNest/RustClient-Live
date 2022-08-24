@@ -5,7 +5,7 @@ public sealed class DebuggerDisplayAttribute : Attribute // TypeDefIndex: 1500
 	private string type; 
 
 
-public void .ctor(string value) { }
+	public void .ctor(string value) { }
 
 }
 

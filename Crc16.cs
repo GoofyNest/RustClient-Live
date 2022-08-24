@@ -4,13 +4,13 @@ public sealed class Crc16 // TypeDefIndex: 7387
 	private short _CRC; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void AddBits(int bitstring, int length) { }
+	internal void AddBits(int bitstring, int length) { }
 
-internal short Checksum() { }
+	internal short Checksum() { }
 
 }
 

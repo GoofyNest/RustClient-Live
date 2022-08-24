@@ -14,68 +14,68 @@ public class CoverPoint // TypeDefIndex: 12122
 	[CompilerGeneratedAttribute] 
 	private float <Score>k__BackingField; 
 
-public CoverPointVolume Volume { get; set; }
-public Vector3 Position { get; set; }
-public Vector3 Normal { get; set; }
-public BaseEntity ReservedFor { get; set; }
-public bool IsReserved { get; }
-public bool IsCompromised { get; set; }
-public float Score { get; set; }
+	public CoverPointVolume Volume { get; set; }
+	public Vector3 Position { get; set; }
+	public Vector3 Normal { get; set; }
+	public BaseEntity ReservedFor { get; set; }
+	public bool IsReserved { get; }
+	public bool IsCompromised { get; set; }
+	public float Score { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public CoverPointVolume get_Volume() { }
+	public CoverPointVolume get_Volume() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Volume(CoverPointVolume value) { }
+	private void set_Volume(CoverPointVolume value) { }
 
-public Vector3 get_Position() { }
+	public Vector3 get_Position() { }
 
-public void set_Position(Vector3 value) { }
+	public void set_Position(Vector3 value) { }
 
-public Vector3 get_Normal() { }
+	public Vector3 get_Normal() { }
 
-public void set_Normal(Vector3 value) { }
-
-	[CompilerGeneratedAttribute] 
-public BaseEntity get_ReservedFor() { }
+	public void set_Normal(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ReservedFor(BaseEntity value) { }
-
-public bool get_IsReserved() { }
+	public BaseEntity get_ReservedFor() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsCompromised() { }
+	public void set_ReservedFor(BaseEntity value) { }
+
+	public bool get_IsReserved() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IsCompromised(bool value) { }
+	public bool get_IsCompromised() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_Score() { }
+	public void set_IsCompromised(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Score(float value) { }
+	public float get_Score() { }
 
-public bool IsValidFor(BaseEntity entity) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Score(float value) { }
 
-public void .ctor(CoverPointVolume volume, float score) { }
+	public bool IsValidFor(BaseEntity entity) { }
 
-public void CoverIsCompromised(float cooldown) { }
+	public void .ctor(CoverPointVolume volume, float score) { }
+
+	public void CoverIsCompromised(float cooldown) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator StartCooldown(float cooldown) { }
+	private IEnumerator StartCooldown(float cooldown) { }
 
-public bool ProvidesCoverFromPoint(Vector3 point, float arcThreshold) { }
+	public bool ProvidesCoverFromPoint(Vector3 point, float arcThreshold) { }
 
 }
 
 public enum CoverPoint.CoverType // TypeDefIndex: 12123
 {
 	public int value__; 
-public const CoverPoint.CoverType Full = 0;
-public const CoverPoint.CoverType Partial = 1;
-public const CoverPoint.CoverType None = 2;
+	public const CoverPoint.CoverType Full = 0;
+	public const CoverPoint.CoverType Partial = 1;
+	public const CoverPoint.CoverType None = 2;
 
 }
 
@@ -86,26 +86,26 @@ private sealed class CoverPoint.<StartCooldown>d__33 : IEnumerator<object>, IEnu
 	public CoverPoint <>4__this; 
 	public float cooldown; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

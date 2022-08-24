@@ -8,7 +8,7 @@ internal class QueryResponse // TypeDefIndex: 6259
 	public string AuthType; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

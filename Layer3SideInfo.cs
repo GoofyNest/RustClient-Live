@@ -5,7 +5,7 @@ public class Layer3SideInfo // TypeDefIndex: 7411
 	internal int PrivateBits; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 

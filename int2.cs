@@ -9,29 +9,29 @@ public struct int2 : IEquatable<int2>, IFormattable
 	public int y; 
 
 
-public void .ctor(int x, int y) { }
+	public void .ctor(int x, int y) { }
 
-public void .ctor(int v) { }
+	public void .ctor(int v) { }
 
-public void .ctor(float2 v) { }
+	public void .ctor(float2 v) { }
 
-public static int2 op_Implicit(int v) { }
+	public static int2 op_Implicit(int v) { }
 
-public static int2 op_Explicit(float2 v) { }
+	public static int2 op_Explicit(float2 v) { }
 
-public static int2 op_Addition(int2 lhs, int rhs) { }
+	public static int2 op_Addition(int2 lhs, int rhs) { }
 
-public static int2 op_Subtraction(int2 lhs, int rhs) { }
+	public static int2 op_Subtraction(int2 lhs, int rhs) { }
 
-public bool Equals(int2 rhs) { }
+	public bool Equals(int2 rhs) { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public string ToString(string format, IFormatProvider formatProvider) { }
+	public string ToString(string format, IFormatProvider formatProvider) { }
 
 }
 

@@ -3,9 +3,9 @@ public class GenerateDecorTopology : ProceduralComponent // TypeDefIndex: 10453
 	public bool KeepExisting; 
 
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -16,9 +16,9 @@ private sealed class GenerateDecorTopology.<>c__DisplayClass1_0 // TypeDefIndex:
 	public int topores; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Process>b__0(int z) { }
+	internal void <Process>b__0(int z) { }
 
 }
 

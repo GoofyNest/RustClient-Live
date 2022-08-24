@@ -25,50 +25,50 @@ public sealed class RijndaelManagedTransform : ICryptoTransform, IDisposable // 
 	private static readonly int[] s_iT; 
 	private static readonly int[] s_iTF; 
 
-public int InputBlockSize { get; }
-public int OutputBlockSize { get; }
-public bool CanTransformMultipleBlocks { get; }
+	public int InputBlockSize { get; }
+	public int OutputBlockSize { get; }
+	public bool CanTransformMultipleBlocks { get; }
 
 
-internal void .ctor(byte[] rgbKey, CipherMode mode, byte[] rgbIV, int blockSize, int feedbackSize, PaddingMode PaddingValue, RijndaelManagedTransformMode transformMode) { }
+	internal void .ctor(byte[] rgbKey, CipherMode mode, byte[] rgbIV, int blockSize, int feedbackSize, PaddingMode PaddingValue, RijndaelManagedTransformMode transformMode) { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-private void Dispose(bool disposing) { }
+	private void Dispose(bool disposing) { }
 
-public int get_InputBlockSize() { }
+	public int get_InputBlockSize() { }
 
-public int get_OutputBlockSize() { }
+	public int get_OutputBlockSize() { }
 
-public bool get_CanTransformMultipleBlocks() { }
+	public bool get_CanTransformMultipleBlocks() { }
 
-public int TransformBlock(byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset) { }
+	public int TransformBlock(byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset) { }
 
-public byte[] TransformFinalBlock(byte[] inputBuffer, int inputOffset, int inputCount) { }
+	public byte[] TransformFinalBlock(byte[] inputBuffer, int inputOffset, int inputCount) { }
 
-public void Reset() { }
+	public void Reset() { }
 
-private int EncryptData(byte[] inputBuffer, int inputOffset, int inputCount, ref byte[] outputBuffer, int outputOffset, PaddingMode paddingMode, bool fLast) { }
+	private int EncryptData(byte[] inputBuffer, int inputOffset, int inputCount, ref byte[] outputBuffer, int outputOffset, PaddingMode paddingMode, bool fLast) { }
 
-private int DecryptData(byte[] inputBuffer, int inputOffset, int inputCount, ref byte[] outputBuffer, int outputOffset, PaddingMode paddingMode, bool fLast) { }
+	private int DecryptData(byte[] inputBuffer, int inputOffset, int inputCount, ref byte[] outputBuffer, int outputOffset, PaddingMode paddingMode, bool fLast) { }
 
-private void Enc(int* encryptindex, int* encryptKeyExpansion, int* T, int* TF, int* work, int* temp) { }
+	private void Enc(int* encryptindex, int* encryptKeyExpansion, int* T, int* TF, int* work, int* temp) { }
 
-private void Dec(int* decryptindex, int* decryptKeyExpansion, int* iT, int* iTF, int* work, int* temp) { }
+	private void Dec(int* decryptindex, int* decryptKeyExpansion, int* iT, int* iTF, int* work, int* temp) { }
 
-private void GenerateKeyExpansion(byte[] rgbKey) { }
+	private void GenerateKeyExpansion(byte[] rgbKey) { }
 
-private static int rot1(int val) { }
+	private static int rot1(int val) { }
 
-private static int rot2(int val) { }
+	private static int rot2(int val) { }
 
-private static int rot3(int val) { }
+	private static int rot3(int val) { }
 
-private static int SubWord(int a) { }
+	private static int SubWord(int a) { }
 
-private static int MulX(int x) { }
+	private static int MulX(int x) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

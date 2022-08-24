@@ -6,9 +6,9 @@ public class PlaceDecorUniform : ProceduralComponent // TypeDefIndex: 10531
 	public float ObjectDithering; 
 
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

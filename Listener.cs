@@ -14,15 +14,15 @@ public class Listener
 	private WebSocketServer server; 
 
 
-public void Start() { }
+	public void Start() { }
 
-public void Shutdown() { }
+	public void Shutdown() { }
 
-public void BroadcastMessage(string str) { }
+	public void BroadcastMessage(string str) { }
 
-public void SendMessage(int target, string str) { }
+	public void SendMessage(int target, string str) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -32,9 +32,9 @@ private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7339
 	public Listener <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Start>b__0(IWebSocketConnection socket) { }
+	internal void <Start>b__0(IWebSocketConnection socket) { }
 
 }
 
@@ -46,13 +46,13 @@ private sealed class Listener.<>c__DisplayClass10_1 // TypeDefIndex: 7340
 	public Listener.<>c__DisplayClass10_0 CS$<>8__locals1; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Start>b__1() { }
+	internal void <Start>b__1() { }
 
-internal void <Start>b__2() { }
+	internal void <Start>b__2() { }
 
-internal void <Start>b__3(string s) { }
+	internal void <Start>b__3(string s) { }
 
 }
 
@@ -62,11 +62,11 @@ private sealed class Listener.<>c // TypeDefIndex: 7341
 	public static Action<Exception> <>9__10_4; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Start>b__10_4(Exception e) { }
+	internal void <Start>b__10_4(Exception e) { }
 
 }
 

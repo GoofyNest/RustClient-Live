@@ -10,11 +10,11 @@ public class TerrainSetNeighbours : MonoBehaviour // TypeDefIndex: 11586
 	private Terrain bottomTerrain; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void SetNeighbours(Terrain leftTerrain, Terrain topTerrain, Terrain rightTerrain, Terrain bottomTerrain) { }
+	public void SetNeighbours(Terrain leftTerrain, Terrain topTerrain, Terrain rightTerrain, Terrain bottomTerrain) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

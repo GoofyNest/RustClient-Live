@@ -1,6 +1,6 @@
 public static class Util // TypeDefIndex: 11645
 {
-public const int OceanMargin = 500;
+	public const int OceanMargin = 500;
 	public static readonly Translate.Phrase NotificationEmpty; 
 	public static readonly Translate.Phrase NotificationDisabled; 
 	public static readonly Translate.Phrase NotificationRateLimit; 
@@ -11,16 +11,16 @@ public const int OceanMargin = 500;
 
 
 	[ExtensionAttribute] 
-public static string ToErrorMessage(NotificationSendResult result) { }
+	public static string ToErrorMessage(NotificationSendResult result) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public static class Util // TypeDefIndex: 11672
 {
 
-public static Info GetInfo(GameObject obj, BasePlayer player) { }
+	public static Info GetInfo(GameObject obj, BasePlayer player) { }
 
 }
 

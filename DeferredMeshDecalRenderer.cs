@@ -1,7 +1,7 @@
 public class DeferredMeshDecalRenderer : MonoBehaviour // TypeDefIndex: 10669
 {
 	private Camera targetCamera; 
-private const string commandBufferName = "DeferredMeshDecals";
+	private const string commandBufferName = "DeferredMeshDecals";
 	private CameraEvent commandBufferEvent; 
 	private CommandBuffer commandBuffer; 
 	private RenderTargetIdentifier[] targets; 
@@ -11,42 +11,42 @@ private const string commandBufferName = "DeferredMeshDecals";
 	private static HashSet<DeferredMeshDecal> visible; 
 	private static Dictionary<DeferredMeshDecal.InstanceData, SimpleList<Matrix4x4>> batches; 
 
-public Camera TargetCamera { get; }
+	public Camera TargetCamera { get; }
 
 
-public Camera get_TargetCamera() { }
+	public Camera get_TargetCamera() { }
 
-public static void Register(DeferredMeshDecal decal) { }
+	public static void Register(DeferredMeshDecal decal) { }
 
-public static void Unregister(DeferredMeshDecal decal) { }
+	public static void Unregister(DeferredMeshDecal decal) { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void CreateCommandBuffer() { }
+	private void CreateCommandBuffer() { }
 
-private void CleanupCommandBuffer() { }
+	private void CleanupCommandBuffer() { }
 
-private void CreateMaterials() { }
+	private void CreateMaterials() { }
 
-private void CleanupMaterials() { }
+	private void CleanupMaterials() { }
 
-public static void BecameVisible(DeferredMeshDecal decal) { }
+	public static void BecameVisible(DeferredMeshDecal decal) { }
 
-public static void BecameInvisible(DeferredMeshDecal decal) { }
+	public static void BecameInvisible(DeferredMeshDecal decal) { }
 
-private void CleanupBatches() { }
+	private void CleanupBatches() { }
 
-private void UpdateBatches() { }
+	private void UpdateBatches() { }
 
-public void FillCommandBuffer(CommandBuffer cb) { }
+	public void FillCommandBuffer(CommandBuffer cb) { }
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

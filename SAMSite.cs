@@ -5,57 +5,57 @@ public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
 	public Vector3 aimDir; 
 
 
-public static void ResetToPool(SAMSite instance) { }
+	public static void ResetToPool(SAMSite instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(SAMSite instance) { }
+	public void CopyTo(SAMSite instance) { }
 
-public SAMSite Copy() { }
+	public SAMSite Copy() { }
 
-public static SAMSite Deserialize(Stream stream) { }
+	public static SAMSite Deserialize(Stream stream) { }
 
-public static SAMSite DeserializeLengthDelimited(Stream stream) { }
+	public static SAMSite DeserializeLengthDelimited(Stream stream) { }
 
-public static SAMSite DeserializeLength(Stream stream, int length) { }
+	public static SAMSite DeserializeLength(Stream stream, int length) { }
 
-public static SAMSite Deserialize(byte[] buffer) { }
+	public static SAMSite Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, SAMSite previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, SAMSite previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static SAMSite Deserialize(byte[] buffer, SAMSite instance, bool isDelta = False) { }
+	public static SAMSite Deserialize(byte[] buffer, SAMSite instance, bool isDelta = False) { }
 
-public static SAMSite Deserialize(Stream stream, SAMSite instance, bool isDelta) { }
+	public static SAMSite Deserialize(Stream stream, SAMSite instance, bool isDelta) { }
 
-public static SAMSite DeserializeLengthDelimited(Stream stream, SAMSite instance, bool isDelta) { }
+	public static SAMSite DeserializeLengthDelimited(Stream stream, SAMSite instance, bool isDelta) { }
 
-public static SAMSite DeserializeLength(Stream stream, int length, SAMSite instance, bool isDelta) { }
+	public static SAMSite DeserializeLength(Stream stream, int length, SAMSite instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, SAMSite instance, SAMSite previous) { }
+	public static void SerializeDelta(Stream stream, SAMSite instance, SAMSite previous) { }
 
-public static void Serialize(Stream stream, SAMSite instance) { }
+	public static void Serialize(Stream stream, SAMSite instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(SAMSite instance) { }
+	public static byte[] SerializeToBytes(SAMSite instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, SAMSite instance) { }
+	public static void SerializeLengthDelimited(Stream stream, SAMSite instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -97,52 +97,52 @@ public class SamSite : ContainerIOEntity // TypeDefIndex: 8441
 	private float previousYawAngle; 
 	private float previousPitchAngle; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override bool IsPowered() { }
+	public override bool IsPowered() { }
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public bool IsInDefenderMode() { }
+	public bool IsInDefenderMode() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void UpdateClientTargetAimDir(Vector3 aimDir) { }
+	public void UpdateClientTargetAimDir(Vector3 aimDir) { }
 
-public void SetClientAim(Vector3 aimDir) { }
+	public void SetClientAim(Vector3 aimDir) { }
 
-public void Update() { }
+	public void Update() { }
 
-private void UpdateSounds() { }
+	private void UpdateSounds() { }
 
-protected override void DoClientDestroy() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-private void Menu_EnableDefenderMode(BasePlayer player) { }
-
-private bool Menu_EnableDefenderMode_ShowIf(BasePlayer player) { }
+	protected override void DoClientDestroy() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-private void Menu_DisableDefenderMode(BasePlayer player) { }
+	private void Menu_EnableDefenderMode(BasePlayer player) { }
 
-private bool Menu_DisableDefenderMode_ShowIf(BasePlayer player) { }
+	private bool Menu_EnableDefenderMode_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	private void Menu_DisableDefenderMode(BasePlayer player) { }
 
-private static void .cctor() { }
+	private bool Menu_DisableDefenderMode_ShowIf(BasePlayer player) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

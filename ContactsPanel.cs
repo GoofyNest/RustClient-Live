@@ -19,49 +19,49 @@ public class ContactsPanel : SingletonComponent<ContactsPanel> // TypeDefIndex: 
 	private bool dirty; 
 
 
-public RectTransform BucketFromType(RelationshipManager.RelationshipType type) { }
+	public RectTransform BucketFromType(RelationshipManager.RelationshipType type) { }
 
-public void Repopulate() { }
+	public void Repopulate() { }
 
-public void SelectRelationshipType(int type) { }
+	public void SelectRelationshipType(int type) { }
 
-public static RelationshipManager.PlayerRelationshipInfo GetSelectedContact() { }
+	public static RelationshipManager.PlayerRelationshipInfo GetSelectedContact() { }
 
-public void DeselectContact(ContactsEntry deselected) { }
+	public void DeselectContact(ContactsEntry deselected) { }
 
-public static void DeselectContact() { }
+	public static void DeselectContact() { }
 
-public void ContactClicked(ContactsEntry selected) { }
+	public void ContactClicked(ContactsEntry selected) { }
 
-private bool WantsUpdate() { }
+	private bool WantsUpdate() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void MarkDirty() { }
+	public void MarkDirty() { }
 
-public static void ReceivedNewContacts() { }
+	public static void ReceivedNewContacts() { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private static int CompareRecentlySeen(RelationshipManager.PlayerRelationshipInfo a, RelationshipManager.PlayerRelationshipInfo b) { }
+	private static int CompareRecentlySeen(RelationshipManager.PlayerRelationshipInfo a, RelationshipManager.PlayerRelationshipInfo b) { }
 
-public void SetSortOff() { }
+	public void SetSortOff() { }
 
-public void SetSortOn() { }
+	public void SetSortOn() { }
 
-private void ChangeSortMode(ContactsPanel.SortMode newMode) { }
+	private void ChangeSortMode(ContactsPanel.SortMode newMode) { }
 
-private void UpdateSortText() { }
+	private void UpdateSortText() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ContactsPanel.SortMode // TypeDefIndex: 10939
 {
 	public int value__; 
-public const ContactsPanel.SortMode None = 0;
-public const ContactsPanel.SortMode RecentlySeen = 1;
+	public const ContactsPanel.SortMode None = 0;
+	public const ContactsPanel.SortMode RecentlySeen = 1;
 
 }
 

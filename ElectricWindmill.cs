@@ -11,23 +11,23 @@ public class ElectricWindmill : IOEntity // TypeDefIndex: 8740
 	protected static int speedIndex; 
 
 
-public override int MaximalPowerOutput() { }
+	public override int MaximalPowerOutput() { }
 
-public override bool IsRootEntity() { }
+	public override bool IsRootEntity() { }
 
-public float GetWindSpeedScale() { }
+	public float GetWindSpeedScale() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public Vector3 GetWindAimDir(float time) { }
+	public Vector3 GetWindAimDir(float time) { }
 
-public void Woosh() { }
+	public void Woosh() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

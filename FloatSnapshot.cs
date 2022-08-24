@@ -4,22 +4,22 @@ public struct FloatSnapshot : ISnapshot<FloatSnapshot> // TypeDefIndex: 12121
 	private float <Time>k__BackingField; 
 	public float value; 
 
-public float Time { get; set; }
+	public float Time { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_Time() { }
+	public float get_Time() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Time(float value) { }
+	public void set_Time(float value) { }
 
-public void .ctor(float time, float value) { }
+	public void .ctor(float time, float value) { }
 
-public void MatchValuesTo(FloatSnapshot entry) { }
+	public void MatchValuesTo(FloatSnapshot entry) { }
 
-public void Lerp(FloatSnapshot prev, FloatSnapshot next, float delta) { }
+	public void Lerp(FloatSnapshot prev, FloatSnapshot next, float delta) { }
 
-public FloatSnapshot GetNew() { }
+	public FloatSnapshot GetNew() { }
 
 }
 

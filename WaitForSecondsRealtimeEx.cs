@@ -5,23 +5,23 @@ public class WaitForSecondsRealtimeEx : CustomYieldInstruction, Pool.IPooled // 
 	[CompilerGeneratedAttribute] 
 	private float <WaitTime>k__BackingField; 
 
-public float WaitTime { get; set; }
-public override bool keepWaiting { get; }
+	public float WaitTime { get; set; }
+	public override bool keepWaiting { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_WaitTime() { }
+	public float get_WaitTime() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_WaitTime(float value) { }
+	public void set_WaitTime(float value) { }
 
-public override bool get_keepWaiting() { }
+	public override bool get_keepWaiting() { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

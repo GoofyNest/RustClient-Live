@@ -6,10 +6,10 @@ internal struct DTSubString // TypeDefIndex: 233
 	internal DTSubStringType type; 
 	internal int value; 
 
-internal char Item { get; }
+	internal char Item { get; }
 
 
-internal char get_Item(int relativeIndex) { }
+	internal char get_Item(int relativeIndex) { }
 
 }
 

@@ -3,17 +3,17 @@ internal struct PartyBeaconID_t : IEquatable<PartyBeaconID_t>, IComparable<Party
 	public ulong Value; 
 
 
-public static PartyBeaconID_t op_Implicit(ulong value) { }
+	public static PartyBeaconID_t op_Implicit(ulong value) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object p) { }
+	public override bool Equals(object p) { }
 
-public bool Equals(PartyBeaconID_t p) { }
+	public bool Equals(PartyBeaconID_t p) { }
 
-public int CompareTo(PartyBeaconID_t other) { }
+	public int CompareTo(PartyBeaconID_t other) { }
 
 }
 

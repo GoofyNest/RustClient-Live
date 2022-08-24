@@ -7,21 +7,21 @@ public class ProtectionValue : MonoBehaviour, IClothingChanged // TypeDefIndex: 
 	public bool displayBaseProtection; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void OnClothingChanged() { }
+	public void OnClothingChanged() { }
 
-public void UpdateFromItem(Item item) { }
+	public void UpdateFromItem(Item item) { }
 
-public float GetProtectionForArea(HitArea area) { }
+	public float GetProtectionForArea(HitArea area) { }
 
-public void UpdateFromArea(HitArea area) { }
+	public void UpdateFromArea(HitArea area) { }
 
-public void SetValue(float val) { }
+	public void SetValue(float val) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

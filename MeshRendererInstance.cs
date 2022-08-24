@@ -7,12 +7,12 @@ public struct MeshRendererInstance // TypeDefIndex: 9165
 	public Vector3 scale; 
 	public MeshCache.Data data; 
 
-public Mesh mesh { get; set; }
+	public Mesh mesh { get; set; }
 
 
-public Mesh get_mesh() { }
+	public Mesh get_mesh() { }
 
-public void set_mesh(Mesh value) { }
+	public void set_mesh(Mesh value) { }
 
 }
 

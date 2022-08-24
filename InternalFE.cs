@@ -6,7 +6,7 @@ internal sealed class InternalFE // TypeDefIndex: 1123
 	internal InternalSerializerTypeE FEserializerTypeEnum; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

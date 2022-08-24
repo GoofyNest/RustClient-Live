@@ -5,261 +5,261 @@ public class ERRoad // TypeDefIndex: 7183
 	public string str; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(ERModularRoad scr) { }
+	public void .ctor(ERModularRoad scr) { }
 
-public void AddInititialMarkers(Vector3 pos) { }
+	public void AddInititialMarkers(Vector3 pos) { }
 
-public void AddMarker(Vector3 pos) { }
+	public void AddMarker(Vector3 pos) { }
 
-public void ClampUVs(bool value) { }
+	public void ClampUVs(bool value) { }
 
-public void FlipTexture() { }
+	public void FlipTexture() { }
 
-public void AddMarkers(Vector3[] pos) { }
+	public void AddMarkers(Vector3[] pos) { }
 
-public void InsertMarker(Vector3 pos) { }
+	public void InsertMarker(Vector3 pos) { }
 
-public void InsertMarkerAt(Vector3 pos, int index) { }
+	public void InsertMarkerAt(Vector3 pos, int index) { }
 
-public void DeleteMarker(int i) { }
+	public void DeleteMarker(int i) { }
 
-public void SetLayer(int layer) { }
+	public void SetLayer(int layer) { }
 
-public void SetTag(string tag) { }
+	public void SetTag(string tag) { }
 
-public void SetWidth(float width) { }
+	public void SetWidth(float width) { }
 
-public float GetWidth() { }
+	public float GetWidth() { }
 
-public ERRoadType GetRoadType(ERRoadType[] roadTypes) { }
+	public ERRoadType GetRoadType(ERRoadType[] roadTypes) { }
 
-public ERRoadType GetRoadType() { }
+	public ERRoadType GetRoadType() { }
 
-public bool SetRoadType(ERRoadType roadType) { }
+	public bool SetRoadType(ERRoadType roadType) { }
 
-public bool SetMarkerControlType(int marker, ERMarkerControlType type) { }
+	public bool SetMarkerControlType(int marker, ERMarkerControlType type) { }
 
-public bool SetSplineStrength(int marker, float strength) { }
+	public bool SetSplineStrength(int marker, float strength) { }
 
-public float GetSplineStrength(int marker) { }
+	public float GetSplineStrength(int marker) { }
 
-public void IsSideObject(bool isSideObject) { }
+	public void IsSideObject(bool isSideObject) { }
 
-public ERRoad InsertIConnector(int index) { }
+	public ERRoad InsertIConnector(int index) { }
 
-public ERRoad InsertIConnector(int index, string connectionName) { }
+	public ERRoad InsertIConnector(int index, string connectionName) { }
 
-public ERRoad InsertIConnector(int index, string connectionName, out ERConnection connection) { }
+	public ERRoad InsertIConnector(int index, string connectionName, out ERConnection connection) { }
 
-private ERRoad InsertIConnectorCore(int index, ref ERCrossingPrefabs pScript) { }
+	private ERRoad InsertIConnectorCore(int index, ref ERCrossingPrefabs pScript) { }
 
-public ERRoad SplitRoad(int markerIndex) { }
+	public ERRoad SplitRoad(int markerIndex) { }
 
 	[EditorBrowsableAttribute] 
-private ERModularRoad SplitRoadExt(int markerIndex) { }
+	private ERModularRoad SplitRoadExt(int markerIndex) { }
 
-public void SetSideObjects(List<ERSORoadExt> soDataExt) { }
+	public void SetSideObjects(List<ERSORoadExt> soDataExt) { }
 
-public void SetSplatmap(bool active) { }
+	public void SetSplatmap(bool active) { }
 
-public void SetSplatmap(bool active, int splatIndex, int expand, int smoothLevel, float opacity) { }
+	public void SetSplatmap(bool active, int splatIndex, int expand, int smoothLevel, float opacity) { }
 
-public void SetMaterial(Material mat) { }
+	public void SetMaterial(Material mat) { }
 
-public void SetMarkerPosition(int marker, Vector3 vec) { }
+	public void SetMarkerPosition(int marker, Vector3 vec) { }
 
-public void SetResolution(float res) { }
+	public void SetResolution(float res) { }
 
-public void IsStatic(bool value) { }
+	public void IsStatic(bool value) { }
 
-public bool IsStatic() { }
+	public bool IsStatic() { }
 
-public float GetResolution() { }
+	public float GetResolution() { }
 
-public void SetAngleThreshold(float res) { }
+	public void SetAngleThreshold(float res) { }
 
-public float GetAngleTreshold(float res) { }
+	public float GetAngleTreshold(float res) { }
 
-public bool ClosedTrack(bool value) { }
+	public bool ClosedTrack(bool value) { }
 
-public void FollowTerrainContours(bool value) { }
-
-	[ObsoleteAttribute] 
-public void SetFollowTerrainContoursOffset(float value) { }
-
-public void FollowTerrainContourThreshold(float value) { }
-
-public void FollowTerrainContours(int markerIndex, bool value) { }
-
-public bool IsClosedTrack() { }
-
-public void SetMarkerPositions(Vector3[] vecs) { }
-
-public void SetMarkerPositions(Vector3[] vecs, int index) { }
-
-public Vector3 GetMarkerPosition(int marker) { }
-
-public Vector3[] GetMarkerPositions() { }
-
-public int GetMarkerCount() { }
-
-public void SetMarkerTilting(float value, int index) { }
-
-public float GetMarkerTilting(int index) { }
-
-public void SetMarkerTiltingCenter(float value, int index) { }
-
-public float GetRadius(int markerIndex) { }
-
-public float GetMarkerTiltingCenter(int index) { }
-
-public Color GetVertexColor(int index) { }
-
-public void SetVertexColor(int index, Color color) { }
-
-public void SetDistances() { }
-
-public Vector3 GetPosition(float distance, ref int currentElement) { }
-
-public Vector3 GetLookatSmooth(float distance, int currentElement) { }
+	public void FollowTerrainContours(bool value) { }
 
 	[ObsoleteAttribute] 
-public Vector3 GetLookatAtDistanceSmooth(float distance, ref int currentElement) { }
+	public void SetFollowTerrainContoursOffset(float value) { }
 
-public int GetMarkerByPoint(int el) { }
+	public void FollowTerrainContourThreshold(float value) { }
 
-public Vector3[] GetSplinePointsCenter() { }
+	public void FollowTerrainContours(int markerIndex, bool value) { }
 
-public Vector3[] GetSplinePointsRightSide() { }
+	public bool IsClosedTrack() { }
 
-public Vector3[] GetSplinePointsRightSideExt() { }
+	public void SetMarkerPositions(Vector3[] vecs) { }
 
-public Vector3[] GetSplinePointsLeftSide() { }
+	public void SetMarkerPositions(Vector3[] vecs, int index) { }
 
-public float SetIndent(float value, int marker) { }
+	public Vector3 GetMarkerPosition(int marker) { }
 
-public float SetIndent(float value, int marker, ERRoadSide type) { }
+	public Vector3[] GetMarkerPositions() { }
 
-	[ObsoleteAttribute] 
-public float SetRightIndent(float value, int marker) { }
+	public int GetMarkerCount() { }
 
-	[ObsoleteAttribute] 
-public float SetLeftIndent(float value, int marker) { }
+	public void SetMarkerTilting(float value, int index) { }
 
-public float SetSurrounding(float value, int marker) { }
+	public float GetMarkerTilting(int index) { }
 
-public float SetSurrounding(float value, int marker, ERRoadSide type) { }
+	public void SetMarkerTiltingCenter(float value, int index) { }
 
-public void SetIndentAlignment(ERIndentAlignment value, int marker, ERRoadSide type) { }
+	public float GetRadius(int markerIndex) { }
 
-public ERIndentAlignment GetIndentAlignment(int marker, ERRoadSide type) { }
+	public float GetMarkerTiltingCenter(int index) { }
 
-	[ObsoleteAttribute] 
-public float SetRightSurrouding(float value, int marker) { }
+	public Color GetVertexColor(int index) { }
 
-	[ObsoleteAttribute] 
-public float SetLeftSurrouding(float value, int marker) { }
+	public void SetVertexColor(int index, Color color) { }
 
-public Vector3[] GetRightIndentPoints() { }
+	public void SetDistances() { }
 
-public Vector3[] GetLeftIndentPoints() { }
+	public Vector3 GetPosition(float distance, ref int currentElement) { }
 
-public Vector3[] GetRightSurroundingPoints() { }
-
-public Vector3[] GetLeftSurroudingPoints() { }
+	public Vector3 GetLookatSmooth(float distance, int currentElement) { }
 
 	[ObsoleteAttribute] 
-public float GetLength() { }
+	public Vector3 GetLookatAtDistanceSmooth(float distance, ref int currentElement) { }
 
-public float GetDistance() { }
+	public int GetMarkerByPoint(int el) { }
 
-public float GetDistance(int markerIndex) { }
+	public Vector3[] GetSplinePointsCenter() { }
 
-public void SideObjectSetActive(SideObject obj, bool value) { }
+	public Vector3[] GetSplinePointsRightSide() { }
 
-public void SideObjectMarkerSetActive(SideObject obj, int marker, bool value) { }
+	public Vector3[] GetSplinePointsRightSideExt() { }
 
-public void SideObjectMarkerSetActive(SideObject obj, int[] markers, bool value) { }
+	public Vector3[] GetSplinePointsLeftSide() { }
 
-public void SetSideObjectOffset(SideObject obj, int marker, OffsetPosition position, float value) { }
+	public float SetIndent(float value, int marker) { }
 
-public void SetTerrainDeformation(bool value) { }
+	public float SetIndent(float value, int marker, ERRoadSide type) { }
 
-public void SetTerrainDeformation(int markerIndex, bool value) { }
+	[ObsoleteAttribute] 
+	public float SetRightIndent(float value, int marker) { }
 
-public void SetMeshCollider(bool flag) { }
+	[ObsoleteAttribute] 
+	public float SetLeftIndent(float value, int marker) { }
 
-public void Refresh() { }
+	public float SetSurrounding(float value, int marker) { }
 
-public ERConnection GetConnectionAtStart() { }
+	public float SetSurrounding(float value, int marker, ERRoadSide type) { }
 
-public GameObject GetConnectionObjectAtStart() { }
+	public void SetIndentAlignment(ERIndentAlignment value, int marker, ERRoadSide type) { }
 
-public ERConnection GetConnectionAtStart(out int connectionIndex) { }
+	public ERIndentAlignment GetIndentAlignment(int marker, ERRoadSide type) { }
 
-public ERConnection GetConnectionObjectAtEnd() { }
+	[ObsoleteAttribute] 
+	public float SetRightSurrouding(float value, int marker) { }
 
-public ERConnection GetConnectionAtEnd() { }
+	[ObsoleteAttribute] 
+	public float SetLeftSurrouding(float value, int marker) { }
 
-public ERConnection GetConnectionAtEnd(out int connectionIndex) { }
+	public Vector3[] GetRightIndentPoints() { }
 
-public GameObject GetConnectionObjectAtEnd(out int connection) { }
+	public Vector3[] GetLeftIndentPoints() { }
 
-public bool ConnectionCheck(ERCrossingPrefabs prefab, int index, int startEnd) { }
+	public Vector3[] GetRightSurroundingPoints() { }
 
-public bool ConnectToStart(ERConnection connectionObject, int connectionIndex) { }
+	public Vector3[] GetLeftSurroudingPoints() { }
 
-public bool ConnectToStart(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
+	[ObsoleteAttribute] 
+	public float GetLength() { }
 
-public bool ConnectToStartExt(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
+	public float GetDistance() { }
 
-public bool ConnectToEnd(ERConnection connectionObject, int connectionIndex) { }
+	public float GetDistance(int markerIndex) { }
 
-public bool ConnectToEnd(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
+	public void SideObjectSetActive(SideObject obj, bool value) { }
 
-public bool ConnectToEndEx(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
+	public void SideObjectMarkerSetActive(SideObject obj, int marker, bool value) { }
 
-public ERConnection AttachToStart(ERConnection connectionObject) { }
+	public void SideObjectMarkerSetActive(SideObject obj, int[] markers, bool value) { }
 
-public ERConnection AttachToEnd(ERConnection connectionObject) { }
+	public void SetSideObjectOffset(SideObject obj, int marker, OffsetPosition position, float value) { }
 
-public ERConnection AttachToStart(ERConnection OQQCOQOCDO, int connectionIndex) { }
+	public void SetTerrainDeformation(bool value) { }
 
-public ERConnection AttachToEnd(ERConnection connectionInstance, int connectionIndex) { }
+	public void SetTerrainDeformation(int markerIndex, bool value) { }
 
-public bool ConnectionMatch(ERConnection connection) { }
+	public void SetMeshCollider(bool flag) { }
 
-public void SetCustomMarkerPoints(int markerIndex, List<Vector3> points) { }
+	public void Refresh() { }
 
-public ERConnection InsertConnector(ERConnection connectionObject, int markerIndex, int connectionIndex1, int connectionIndex2, out ERRoad road) { }
+	public ERConnection GetConnectionAtStart() { }
 
-public void UnConnectStart() { }
+	public GameObject GetConnectionObjectAtStart() { }
 
-public void UnConnectEnd() { }
+	public ERConnection GetConnectionAtStart(out int connectionIndex) { }
 
-public bool ConnectionMatch(ERConnection connection, int connectionIndex) { }
+	public ERConnection GetConnectionObjectAtEnd() { }
 
-public void SnapToTerrain(bool flag) { }
+	public ERConnection GetConnectionAtEnd() { }
 
-public void SnapToTerrain(bool flag, float offset) { }
+	public ERConnection GetConnectionAtEnd(out int connectionIndex) { }
 
-public string GetName() { }
+	public GameObject GetConnectionObjectAtEnd(out int connection) { }
 
-public void SetName(string name) { }
+	public bool ConnectionCheck(ERCrossingPrefabs prefab, int index, int startEnd) { }
 
-public Vector2[] GetShapeNodes() { }
+	public bool ConnectToStart(ERConnection connectionObject, int connectionIndex) { }
 
-public Vector2[] GetRoadShapeNodes(int markerIndex) { }
+	public bool ConnectToStart(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
 
-public void SetRoadShapeNodes(int markerIndex, Vector2[] nodes) { }
+	public bool ConnectToStartExt(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
 
-public void SetRoadShapeNodes(int[] markerIndexes, Vector2[] nodes) { }
+	public bool ConnectToEnd(ERConnection connectionObject, int connectionIndex) { }
 
-public void Clear() { }
+	public bool ConnectToEnd(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
 
-public void Destroy() { }
+	public bool ConnectToEndEx(ERConnection connectionObject, int connectionIndex, bool autoAlign) { }
+
+	public ERConnection AttachToStart(ERConnection connectionObject) { }
+
+	public ERConnection AttachToEnd(ERConnection connectionObject) { }
+
+	public ERConnection AttachToStart(ERConnection OQQCOQOCDO, int connectionIndex) { }
+
+	public ERConnection AttachToEnd(ERConnection connectionInstance, int connectionIndex) { }
+
+	public bool ConnectionMatch(ERConnection connection) { }
+
+	public void SetCustomMarkerPoints(int markerIndex, List<Vector3> points) { }
+
+	public ERConnection InsertConnector(ERConnection connectionObject, int markerIndex, int connectionIndex1, int connectionIndex2, out ERRoad road) { }
+
+	public void UnConnectStart() { }
+
+	public void UnConnectEnd() { }
+
+	public bool ConnectionMatch(ERConnection connection, int connectionIndex) { }
+
+	public void SnapToTerrain(bool flag) { }
+
+	public void SnapToTerrain(bool flag, float offset) { }
+
+	public string GetName() { }
+
+	public void SetName(string name) { }
+
+	public Vector2[] GetShapeNodes() { }
+
+	public Vector2[] GetRoadShapeNodes(int markerIndex) { }
+
+	public void SetRoadShapeNodes(int markerIndex, Vector2[] nodes) { }
+
+	public void SetRoadShapeNodes(int[] markerIndexes, Vector2[] nodes) { }
+
+	public void Clear() { }
+
+	public void Destroy() { }
 
 }
 

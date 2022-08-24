@@ -4,45 +4,45 @@ internal sealed class ColorGradingRenderer : PostProcessEffectRenderer<ColorGrad
 	private readonly Color[] m_Pixels; 
 	private RenderTexture m_InternalLdrLut; 
 	private RenderTexture m_InternalLogLut; 
-private const int k_Lut2DSize = 32;
-private const int k_Lut3DSize = 33;
+	private const int k_Lut2DSize = 32;
+	private const int k_Lut3DSize = 33;
 	private readonly HableCurve m_HableCurve; 
 
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-private void RenderExternalPipeline3D(PostProcessRenderContext context) { }
+	private void RenderExternalPipeline3D(PostProcessRenderContext context) { }
 
-private void RenderHDRPipeline3D(PostProcessRenderContext context) { }
+	private void RenderHDRPipeline3D(PostProcessRenderContext context) { }
 
-private void RenderHDRPipeline2D(PostProcessRenderContext context) { }
+	private void RenderHDRPipeline2D(PostProcessRenderContext context) { }
 
-private void RenderLDRPipeline2D(PostProcessRenderContext context) { }
+	private void RenderLDRPipeline2D(PostProcessRenderContext context) { }
 
-private void CheckInternalLogLut() { }
+	private void CheckInternalLogLut() { }
 
-private void CheckInternalStripLut() { }
+	private void CheckInternalStripLut() { }
 
-private Texture2D GetCurveTexture(bool hdr) { }
+	private Texture2D GetCurveTexture(bool hdr) { }
 
-private static bool IsRenderTextureFormatSupportedForLinearFiltering(RenderTextureFormat format) { }
+	private static bool IsRenderTextureFormatSupportedForLinearFiltering(RenderTextureFormat format) { }
 
-private static RenderTextureFormat GetLutFormat() { }
+	private static RenderTextureFormat GetLutFormat() { }
 
-private static TextureFormat GetCurveFormat() { }
+	private static TextureFormat GetCurveFormat() { }
 
-public override void Release() { }
+	public override void Release() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum ColorGradingRenderer.Pass // TypeDefIndex: 11775
 {
 	public int value__; 
-public const ColorGradingRenderer.Pass LutGenLDRFromScratch = 0;
-public const ColorGradingRenderer.Pass LutGenLDR = 1;
-public const ColorGradingRenderer.Pass LutGenHDR2D = 2;
+	public const ColorGradingRenderer.Pass LutGenLDRFromScratch = 0;
+	public const ColorGradingRenderer.Pass LutGenLDR = 1;
+	public const ColorGradingRenderer.Pass LutGenHDR2D = 2;
 
 }
 

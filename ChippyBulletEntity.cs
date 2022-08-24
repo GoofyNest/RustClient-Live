@@ -7,11 +7,11 @@ public class ChippyBulletEntity : SpriteArcadeEntity // TypeDefIndex: 8768
 	public ArcadeEntity bulletImpact; 
 
 
-public void FixedUpdate() { }
+	public void FixedUpdate() { }
 
-public override void AuthorativeThink(float delta) { }
+	public override void AuthorativeThink(float delta) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -4,13 +4,13 @@ public class DevControls : MonoBehaviour // TypeDefIndex: 9295
 	internal TabbedPanel tabbedPanel; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnGUI() { }
+	private void OnGUI() { }
 
-private void Init() { }
+	private void Init() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

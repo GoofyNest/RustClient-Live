@@ -7,7 +7,7 @@ public struct PhraseRecognizedEventArgs // TypeDefIndex: 3606
 	public readonly TimeSpan phraseDuration; 
 
 
-internal void .ctor(string text, ConfidenceLevel confidence, SemanticMeaning[] semanticMeanings, DateTime phraseStartTime, TimeSpan phraseDuration) { }
+	internal void .ctor(string text, ConfidenceLevel confidence, SemanticMeaning[] semanticMeanings, DateTime phraseStartTime, TimeSpan phraseDuration) { }
 
 }
 

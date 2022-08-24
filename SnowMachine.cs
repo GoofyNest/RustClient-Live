@@ -4,13 +4,13 @@ public class SnowMachine : FogMachine // TypeDefIndex: 8838
 	public TriggerTemperature tempTrigger; 
 
 
-public override bool MotionModeEnabled() { }
+	public override bool MotionModeEnabled() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -4,28 +4,28 @@ public class BaseLock : BaseEntity // TypeDefIndex: 8327
 	[ItemSelector] 
 	public ItemDefinition itemType; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_RemoveLock(BasePlayer player) { }
+	public void Menu_RemoveLock(BasePlayer player) { }
 
-public bool Menu_RemoveLock_ShowIf(BasePlayer player) { }
+	public bool Menu_RemoveLock_ShowIf(BasePlayer player) { }
 
-public override List<Option> GetMenuItems(BasePlayer player) { }
+	public override List<Option> GetMenuItems(BasePlayer player) { }
 
-public override float BoundsPadding() { }
+	public override float BoundsPadding() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

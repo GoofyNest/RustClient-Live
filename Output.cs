@@ -7,16 +7,16 @@ public static class Output // TypeDefIndex: 11984
 
 
 	[CompilerGeneratedAttribute] 
-public static void add_OnMessage(Action<string, string, LogType> value) { }
+	public static void add_OnMessage(Action<string, string, LogType> value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_OnMessage(Action<string, string, LogType> value) { }
+	public static void remove_OnMessage(Action<string, string, LogType> value) { }
 
-public static void Install() { }
+	public static void Install() { }
 
-internal static void LogHandler(string log, string stacktrace, LogType type) { }
+	internal static void LogHandler(string log, string stacktrace, LogType type) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

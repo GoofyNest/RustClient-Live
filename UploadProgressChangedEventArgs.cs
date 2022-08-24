@@ -6,7 +6,7 @@ public class UploadProgressChangedEventArgs : ProgressChangedEventArgs // TypeDe
 	private long m_TotalBytesToSend; 
 
 
-internal void .ctor(int progressPercentage, object userToken, long bytesSent, long totalBytesToSend, long bytesReceived, long totalBytesToReceive) { }
+	internal void .ctor(int progressPercentage, object userToken, long bytesSent, long totalBytesToSend, long bytesReceived, long totalBytesToReceive) { }
 
 }
 

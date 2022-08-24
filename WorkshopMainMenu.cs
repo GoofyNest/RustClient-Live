@@ -6,29 +6,29 @@ public class WorkshopMainMenu : SingletonComponent<WorkshopMainMenu> // TypeDefI
 	public static Translate.Phrase loading_workshop_item; 
 
 
-public void CreateNewItem() { }
+	public void CreateNewItem() { }
 
-private void OnEnable() { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator CreateNewItemAsync() { }
-
-public void StartEditingItem(IWorkshopContent id) { }
-
-public void StartViewingItem(IWorkshopContent id) { }
+	private void OnEnable() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator LoadEditor() { }
+	private IEnumerator CreateNewItemAsync() { }
+
+	public void StartEditingItem(IWorkshopContent id) { }
+
+	public void StartViewingItem(IWorkshopContent id) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator StartEditingItemAsync(IWorkshopContent id) { }
+	private IEnumerator LoadEditor() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator StartViewingItemAsync(IWorkshopContent id) { }
+	private IEnumerator StartEditingItemAsync(IWorkshopContent id) { }
 
-public void .ctor() { }
+	[IteratorStateMachineAttribute] 
+	private IEnumerator StartViewingItemAsync(IWorkshopContent id) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -38,26 +38,26 @@ private sealed class WorkshopMainMenu.<CreateNewItemAsync>d__6 : IEnumerator<obj
 	private object <>2__current; 
 	public WorkshopMainMenu <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -67,11 +67,11 @@ private sealed class WorkshopMainMenu.<>c // TypeDefIndex: 11176
 	public static Action<bool, string> <>9__9_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <LoadEditor>b__9_0(bool o, string str) { }
+	internal void <LoadEditor>b__9_0(bool o, string str) { }
 
 }
 
@@ -81,26 +81,26 @@ private sealed class WorkshopMainMenu.<LoadEditor>d__9 : IEnumerator<object>, IE
 	private object <>2__current; 
 	public WorkshopMainMenu <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -111,26 +111,26 @@ private sealed class WorkshopMainMenu.<StartEditingItemAsync>d__10 : IEnumerator
 	public WorkshopMainMenu <>4__this; 
 	public IWorkshopContent id; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -141,26 +141,26 @@ private sealed class WorkshopMainMenu.<StartViewingItemAsync>d__11 : IEnumerator
 	public WorkshopMainMenu <>4__this; 
 	public IWorkshopContent id; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

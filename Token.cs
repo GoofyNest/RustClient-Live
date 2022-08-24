@@ -7,48 +7,48 @@ internal struct Token // TypeDefIndex: 5781
 	[CompilerGeneratedAttribute] 
 	private int <EndPosition>k__BackingField; 
 
-public int StartPosition { get; set; }
-public int EndPosition { get; set; }
-public Token.Type Kind { get; }
+	public int StartPosition { get; set; }
+	public int EndPosition { get; set; }
+	public Token.Type Kind { get; }
 
 
-public void .ctor(Token.Type type, int startPosition, int endPosition) { }
-
-	[CompilerGeneratedAttribute] 
-public int get_StartPosition() { }
+	public void .ctor(Token.Type type, int startPosition, int endPosition) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_StartPosition(int value) { }
+	public int get_StartPosition() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_EndPosition() { }
+	private void set_StartPosition(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_EndPosition(int value) { }
+	public int get_EndPosition() { }
 
-public Token.Type get_Kind() { }
+	[CompilerGeneratedAttribute] 
+	private void set_EndPosition(int value) { }
 
-public static Token.Type op_Implicit(Token token) { }
+	public Token.Type get_Kind() { }
 
-public override string ToString() { }
+	public static Token.Type op_Implicit(Token token) { }
 
-private static void .cctor() { }
+	public override string ToString() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum Token.Type // TypeDefIndex: 5782
 {
 	public int value__; 
-public const Token.Type Error = 0;
-public const Token.Type End = 1;
-public const Token.Type Token = 2;
-public const Token.Type QuotedString = 3;
-public const Token.Type SeparatorEqual = 4;
-public const Token.Type SeparatorSemicolon = 5;
-public const Token.Type SeparatorSlash = 6;
-public const Token.Type SeparatorDash = 7;
-public const Token.Type SeparatorComma = 8;
-public const Token.Type OpenParens = 9;
+	public const Token.Type Error = 0;
+	public const Token.Type End = 1;
+	public const Token.Type Token = 2;
+	public const Token.Type QuotedString = 3;
+	public const Token.Type SeparatorEqual = 4;
+	public const Token.Type SeparatorSemicolon = 5;
+	public const Token.Type SeparatorSlash = 6;
+	public const Token.Type SeparatorDash = 7;
+	public const Token.Type SeparatorComma = 8;
+	public const Token.Type OpenParens = 9;
 
 }
 

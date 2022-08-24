@@ -9,49 +9,49 @@ public class ViaHeaderValue : ICloneable // TypeDefIndex: 5810
 	[CompilerGeneratedAttribute] 
 	private string <ReceivedBy>k__BackingField; 
 
-public string Comment { get; set; }
-public string ProtocolName { get; set; }
-public string ProtocolVersion { get; set; }
-public string ReceivedBy { get; set; }
+	public string Comment { get; set; }
+	public string ProtocolName { get; set; }
+	public string ProtocolVersion { get; set; }
+	public string ReceivedBy { get; set; }
 
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Comment() { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Comment(string value) { }
+	public string get_Comment() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ProtocolName() { }
+	private void set_Comment(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ProtocolName(string value) { }
+	public string get_ProtocolName() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ProtocolVersion() { }
+	private void set_ProtocolName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ProtocolVersion(string value) { }
+	public string get_ProtocolVersion() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ReceivedBy() { }
+	private void set_ProtocolVersion(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ReceivedBy(string value) { }
+	public string get_ReceivedBy() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	private void set_ReceivedBy(string value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-internal static bool TryParse(string input, int minimalCount, out List<ViaHeaderValue> result) { }
+	public override int GetHashCode() { }
 
-private static bool TryParseElement(Lexer lexer, out ViaHeaderValue parsedValue, out Token t) { }
+	internal static bool TryParse(string input, int minimalCount, out List<ViaHeaderValue> result) { }
 
-public override string ToString() { }
+	private static bool TryParseElement(Lexer lexer, out ViaHeaderValue parsedValue, out Token t) { }
+
+	public override string ToString() { }
 
 }
 

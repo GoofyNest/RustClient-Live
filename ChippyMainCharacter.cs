@@ -7,11 +7,11 @@ public class ChippyMainCharacter : SpriteArcadeEntity // TypeDefIndex: 8769
 	public Vector3 aimDir; 
 
 
-public override void OnKilled() { }
+	public override void OnKilled() { }
 
-public override void AuthorativeThink(float delta) { }
+	public override void AuthorativeThink(float delta) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -18,55 +18,55 @@ public class SkinnedMultiMesh : MonoBehaviour, IPrefabPreProcess // TypeDefIndex
 	[CompilerGeneratedAttribute] 
 	private readonly List<Renderer> <Renderers>k__BackingField; 
 
-public List<Renderer> Renderers { get; }
+	public List<Renderer> Renderers { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public List<Renderer> get_Renderers() { }
+	public List<Renderer> get_Renderers() { }
 
-public void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public long WorkoutPartsHash() { }
+	public long WorkoutPartsHash() { }
 
-public void RebuildModel(PlayerModel model, bool reset) { }
+	public void RebuildModel(PlayerModel model, bool reset) { }
 
-private void DoSkinSetup(PlayerModel model, Wearable wearable) { }
+	private void DoSkinSetup(PlayerModel model, Wearable wearable) { }
 
-private void DoHairCapSetup(Wearable wearable, List<KeyValuePair<HairCapMask, Renderer>> wearableHairCapSkins) { }
+	private void DoHairCapSetup(Wearable wearable, List<KeyValuePair<HairCapMask, Renderer>> wearableHairCapSkins) { }
 
-private void DoHairSetup(Wearable wearable) { }
+	private void DoHairSetup(Wearable wearable) { }
 
-private void DoWearableSetup(Wearable wearable, List<WearableHairCap> wearableHairCap) { }
+	private void DoWearableSetup(Wearable wearable, List<WearableHairCap> wearableHairCap) { }
 
-private void DoRetargeting(Wearable wearable) { }
+	private void DoRetargeting(Wearable wearable) { }
 
-private void DoBoneRetargeting(Wearable wearable, Item item) { }
+	private void DoBoneRetargeting(Wearable wearable, Item item) { }
 
-private void UpdateRenderers(Wearable wearable) { }
+	private void UpdateRenderers(Wearable wearable) { }
 
-private void DoItemSetup(SkinnedMultiMesh.Part part, List<IItemSetup> itemSetups) { }
+	private void DoItemSetup(SkinnedMultiMesh.Part part, List<IItemSetup> itemSetups) { }
 
-public void DoLODSetup() { }
+	public void DoLODSetup() { }
 
-public void DeformCreatedPart(int blendShapeIndex) { }
+	public void DeformCreatedPart(int blendShapeIndex) { }
 
-public Transform FindBone(string strName) { }
+	public Transform FindBone(string strName) { }
 
-public Transform[] GetBones() { }
+	public Transform[] GetBones() { }
 
-public SkinnedMultiMesh.Part[] FindParts(string name) { }
+	public SkinnedMultiMesh.Part[] FindParts(string name) { }
 
-internal void DoShadowOverride(Renderer renderer, MaterialPropertyBlock block) { }
+	internal void DoShadowOverride(Renderer renderer, MaterialPropertyBlock block) { }
 
-private void SetupLightShadowBiasScale(Renderer renderer, MaterialPropertyBlock block, bool shadowOnly) { }
+	private void SetupLightShadowBiasScale(Renderer renderer, MaterialPropertyBlock block, bool shadowOnly) { }
 
-public void SetVisible(bool bVisible) { }
+	public void SetVisible(bool bVisible) { }
 
-public bool IsCurrentlyVisible() { }
+	public bool IsCurrentlyVisible() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -86,13 +86,13 @@ private sealed class SkinnedMultiMesh.<>c // TypeDefIndex: 9237
 	public static Func<Renderer, bool> <>9__39_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal long <WorkoutPartsHash>b__21_0(SkinnedMultiMesh.Part x) { }
+	internal long <WorkoutPartsHash>b__21_0(SkinnedMultiMesh.Part x) { }
 
-internal bool <IsCurrentlyVisible>b__39_0(Renderer r) { }
+	internal bool <IsCurrentlyVisible>b__39_0(Renderer r) { }
 
 }
 
@@ -101,9 +101,9 @@ private sealed class SkinnedMultiMesh.<>c__DisplayClass35_0 // TypeDefIndex: 923
 	public string name; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <FindParts>b__0(SkinnedMultiMesh.Part x) { }
+	internal bool <FindParts>b__0(SkinnedMultiMesh.Part x) { }
 
 }
 

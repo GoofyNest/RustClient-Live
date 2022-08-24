@@ -12,9 +12,9 @@ internal sealed class StaticTree // TypeDefIndex: 6961
 	internal int maxLength; 
 
 
-private void .ctor(short[] treeCodes, int[] extraBits, int extraBase, int elems, int maxLength) { }
+	private void .ctor(short[] treeCodes, int[] extraBits, int extraBase, int elems, int maxLength) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

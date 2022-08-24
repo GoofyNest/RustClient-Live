@@ -3,12 +3,12 @@ internal sealed class CDSCollectionETWBCLProvider : EventSource // TypeDefIndex:
 	public static CDSCollectionETWBCLProvider Log; 
 
 
-private void .ctor() { }
+	private void .ctor() { }
 
 	[EventAttribute] 
-public void ConcurrentDictionary_AcquiringAllLocks(int numOfBuckets) { }
+	public void ConcurrentDictionary_AcquiringAllLocks(int numOfBuckets) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

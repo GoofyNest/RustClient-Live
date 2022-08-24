@@ -5,20 +5,20 @@ internal class ActiveAxis // TypeDefIndex: 2134
 	private Asttree axisTree; 
 	private ArrayList axisStack; 
 
-public int CurrentDepth { get; }
+	public int CurrentDepth { get; }
 
 
-public int get_CurrentDepth() { }
+	public int get_CurrentDepth() { }
 
-internal void Reactivate() { }
+	internal void Reactivate() { }
 
-internal void .ctor(Asttree axisTree) { }
+	internal void .ctor(Asttree axisTree) { }
 
-public bool MoveToStartElement(string localname, string URN) { }
+	public bool MoveToStartElement(string localname, string URN) { }
 
-public virtual bool EndElement(string localname, string URN) { }
+	public virtual bool EndElement(string localname, string URN) { }
 
-public bool MoveToAttribute(string localname, string URN) { }
+	public bool MoveToAttribute(string localname, string URN) { }
 
 }
 

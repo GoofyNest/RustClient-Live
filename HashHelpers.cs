@@ -3,9 +3,9 @@ internal static class HashHelpers // TypeDefIndex: 747
 	public static readonly int RandomSeed; 
 
 
-public static int Combine(int h1, int h2) { }
+	public static int Combine(int h1, int h2) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -17,20 +17,20 @@ internal static class HashHelpers
 	public static readonly int[] primes; 
 	private static ConditionalWeakTable<object, SerializationInfo> s_SerializationInfoTable; 
 
-internal static ConditionalWeakTable<object, SerializationInfo> SerializationInfoTable { get; }
+	internal static ConditionalWeakTable<object, SerializationInfo> SerializationInfoTable { get; }
 
 
-internal static ConditionalWeakTable<object, SerializationInfo> get_SerializationInfoTable() { }
-
-	[ReliabilityContractAttribute] 
-public static bool IsPrime(int candidate) { }
+	internal static ConditionalWeakTable<object, SerializationInfo> get_SerializationInfoTable() { }
 
 	[ReliabilityContractAttribute] 
-public static int GetPrime(int min) { }
+	public static bool IsPrime(int candidate) { }
 
-public static int ExpandPrime(int oldSize) { }
+	[ReliabilityContractAttribute] 
+	public static int GetPrime(int min) { }
 
-private static void .cctor() { }
+	public static int ExpandPrime(int oldSize) { }
+
+	private static void .cctor() { }
 
 }
 

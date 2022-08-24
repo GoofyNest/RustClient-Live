@@ -11,12 +11,12 @@ public class LocalPositionAnimation : MonoBehaviour, IClientComponent // TypeDef
 	public float scaleZ; 
 	public float timeScaleZ; 
 	public AnimationCurve movementZ; 
-private const float maxDistSq = 10000;
+	private const float maxDistSq = 10000;
 
 
-protected void Update() { }
+	protected void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

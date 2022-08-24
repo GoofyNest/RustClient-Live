@@ -12,7 +12,7 @@ public class InputDevices // TypeDefIndex: 4149
 
 
 	[RequiredByNativeCodeAttribute] 
-private static void InvokeConnectionEvent(ulong deviceId, ConnectionChangeType change) { }
+	private static void InvokeConnectionEvent(ulong deviceId, ConnectionChangeType change) { }
 
 }
 

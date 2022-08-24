@@ -3,9 +3,9 @@ public class LifeInfographicStatDynamicRow : LifeInfographicStat // TypeDefIndex
 	public RustText StatName; 
 
 
-public void SetStatName(Translate.Phrase phrase) { }
+	public void SetStatName(Translate.Phrase phrase) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

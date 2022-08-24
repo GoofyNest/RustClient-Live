@@ -16,21 +16,21 @@ public class ProgressBar : UIBehaviour // TypeDefIndex: 11204
 	private CanvasGroup canvasGroup; 
 
 
-protected override void Start() { }
+	protected override void Start() { }
 
-public void Open(string name, Sprite sprite, Action<BasePlayer> action, float time) { }
+	public void Open(string name, Sprite sprite, Action<BasePlayer> action, float time) { }
 
-public void UpdateProgressBar() { }
+	public void UpdateProgressBar() { }
 
-public void PlayOpenSound() { }
+	public void PlayOpenSound() { }
 
-public void PlayCancelSound() { }
+	public void PlayCancelSound() { }
 
-public void Close(bool success = False) { }
+	public void Close(bool success = False) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

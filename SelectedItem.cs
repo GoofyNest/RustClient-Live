@@ -18,38 +18,38 @@ public class SelectedItem : SingletonComponent<SelectedItem>, IInventoryChanged 
 	public static ItemIcon selectedItem; 
 	public static ItemIcon hoveredItem; 
 
-public static Item item { get; }
+	public static Item item { get; }
 
 
-public static void UpdateItem() { }
+	public static void UpdateItem() { }
 
-public static Item get_item() { }
+	public static Item get_item() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public bool NeedsOptionsUpdate(List<Option> oldOpts, List<Option> newOpts, Item item) { }
+	public bool NeedsOptionsUpdate(List<Option> oldOpts, List<Option> newOpts, Item item) { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void RefreshItem(Item item) { }
+	private void RefreshItem(Item item) { }
 
-public static List<Option> ItemMenuOptions(Item item) { }
+	public static List<Option> ItemMenuOptions(Item item) { }
 
-public void Update() { }
+	public void Update() { }
 
-public static void TrySelect(ItemIcon newSelect, bool silent = False) { }
+	public static void TrySelect(ItemIcon newSelect, bool silent = False) { }
 
-public static void ClearIfSelected(ItemIcon newSelect) { }
+	public static void ClearIfSelected(ItemIcon newSelect) { }
 
-public static void ClearSelection() { }
+	public static void ClearSelection() { }
 
-internal static void SetHovered(ItemIcon item) { }
+	internal static void SetHovered(ItemIcon item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

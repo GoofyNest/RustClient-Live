@@ -16,18 +16,18 @@ public class SimpleShark : BaseCombatEntity // TypeDefIndex: 8925
 	private static int param_mouthOpen; 
 	private float currentMouthOpen; 
 
-public override bool IsNpc { get; }
+	public override bool IsNpc { get; }
 
 
-public override bool get_IsNpc() { }
+	public override bool get_IsNpc() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateAnimations() { }
+	public void UpdateAnimations() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

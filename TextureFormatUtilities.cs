@@ -5,17 +5,17 @@ public static class TextureFormatUtilities // TypeDefIndex: 11869
 	private static Dictionary<int, bool> s_SupportedTextureFormats; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-private static bool IsObsolete(object value) { }
+	private static bool IsObsolete(object value) { }
 
-public static RenderTextureFormat GetUncompressedRenderTextureFormat(Texture texture) { }
-
-	[ExtensionAttribute] 
-internal static bool IsSupported(RenderTextureFormat format) { }
+	public static RenderTextureFormat GetUncompressedRenderTextureFormat(Texture texture) { }
 
 	[ExtensionAttribute] 
-internal static bool IsSupported(TextureFormat format) { }
+	internal static bool IsSupported(RenderTextureFormat format) { }
+
+	[ExtensionAttribute] 
+	internal static bool IsSupported(TextureFormat format) { }
 
 }
 

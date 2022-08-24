@@ -1,9 +1,9 @@
 public class WaterDepthTester : MonoBehaviour // TypeDefIndex: 8963
 {
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

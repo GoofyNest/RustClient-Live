@@ -3,11 +3,11 @@ public class SharpenAndVignetteRenderer : PostProcessEffectRenderer<SharpenAndVi
 	private Shader sharpenAndVigenetteShader; 
 
 
-public override void Init() { }
+	public override void Init() { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

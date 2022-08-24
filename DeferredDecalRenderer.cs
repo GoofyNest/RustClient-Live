@@ -8,21 +8,21 @@ public class DeferredDecalRenderer : BaseCommandBuffer // TypeDefIndex: 10649
 	private static MaterialPropertyBlock block; 
 
 
-private void RefreshCommandBuffer(Camera camera) { }
+	private void RefreshCommandBuffer(Camera camera) { }
 
-private void Clear(ListDictionary<InstancingKey, InstancingBuffer> dict) { }
+	private void Clear(ListDictionary<InstancingKey, InstancingBuffer> dict) { }
 
-private void Apply(CommandBuffer buf, RenderTargetIdentifier[] target, int pass, ListDictionary<InstancingKey, ListHashSet<DeferredDecal>> src, ListDictionary<InstancingKey, InstancingBuffer> dst, MaterialPropertyBlock block) { }
+	private void Apply(CommandBuffer buf, RenderTargetIdentifier[] target, int pass, ListDictionary<InstancingKey, ListHashSet<DeferredDecal>> src, ListDictionary<InstancingKey, InstancingBuffer> dst, MaterialPropertyBlock block) { }
 
-private void Apply(CommandBuffer buf, RenderTargetIdentifier[] target, int pass, ListHashSet<DeferredDecal> src, InstancingBuffer dst, MaterialPropertyBlock block) { }
+	private void Apply(CommandBuffer buf, RenderTargetIdentifier[] target, int pass, ListHashSet<DeferredDecal> src, InstancingBuffer dst, MaterialPropertyBlock block) { }
 
-private InstancingBuffer GetBuffer(ListDictionary<InstancingKey, InstancingBuffer> dict, InstancingKey key) { }
+	private InstancingBuffer GetBuffer(ListDictionary<InstancingKey, InstancingBuffer> dict, InstancingKey key) { }
 
-protected void OnPreRender() { }
+	protected void OnPreRender() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

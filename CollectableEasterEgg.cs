@@ -8,34 +8,34 @@ public class CollectableEasterEgg : BaseEntity // TypeDefIndex: 8374
 	public ItemDefinition itemToGive; 
 	private float randOffset; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void BasketPickup() { }
+	public void BasketPickup() { }
 
-public void DelayedPickup() { }
+	public void DelayedPickup() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void Update() { }
+	public void Update() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Pickup(BasePlayer player) { }
+	public void Menu_Pickup(BasePlayer player) { }
 
-public void Menu_Pickup_Start() { }
+	public void Menu_Pickup_Start() { }
 
-public bool Menu_PickupDud_ShowIf(BasePlayer player) { }
+	public bool Menu_PickupDud_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

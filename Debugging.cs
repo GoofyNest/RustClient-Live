@@ -51,87 +51,87 @@ public class Debugging : ConsoleSystem // TypeDefIndex: 11896
 
 	[ServerVar] 
 	[ClientVar] 
-public static bool log { get; set; }
+	public static bool log { get; set; }
 	[ClientVar] 
-public static bool skyreflection { get; set; }
+	public static bool skyreflection { get; set; }
 
 
 	[ServerVar] 
 	[ClientVar] 
-public static void renderinfo(ConsoleSystem.Arg arg) { }
+	public static void renderinfo(ConsoleSystem.Arg arg) { }
 
-public static void set_log(bool value) { }
+	public static void set_log(bool value) { }
 
-public static bool get_log() { }
+	public static bool get_log() { }
 
 	[ClientVar] 
 	[ServerVar] 
-public static void stall(ConsoleSystem.Arg arg) { }
+	public static void stall(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void lookingat(ConsoleSystem.Arg arg) { }
+	public static void lookingat(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void lookingat_debug(ConsoleSystem.Arg arg) { }
+	public static void lookingat_debug(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera(ConsoleSystem.Arg arg) { }
+	public static void debugcamera(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static string debugcamera_fov(ConsoleSystem.Arg arg) { }
+	public static string debugcamera_fov(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_target(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_target(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static string debugcamera_guide(ConsoleSystem.Arg arg) { }
+	public static string debugcamera_guide(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static string debugcamera_guide_color(ConsoleSystem.Arg arg) { }
+	public static string debugcamera_guide_color(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_shake(float amplitude, float frequency, float duration) { }
+	public static void debugcamera_shake(float amplitude, float frequency, float duration) { }
 
 	[ClientVar] 
-public static void debugcamera_stopshake() { }
+	public static void debugcamera_stopshake() { }
 
 	[ClientVar] 
-public static string debugcamera_guide_aspectratio(ConsoleSystem.Arg arg) { }
+	public static string debugcamera_guide_aspectratio(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_save(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_save(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_load(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_load(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_savetofile(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_savetofile(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_clear(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_clear(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_list(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_list(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_targetprint(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_targetprint(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static Debugging.EntityInfo[] ent_find_radius(ConsoleSystem.Arg arg) { }
+	public static Debugging.EntityInfo[] ent_find_radius(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void noclip(ConsoleSystem.Arg arg) { }
+	public static void noclip(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void debugcamera_unfreeze(ConsoleSystem.Arg arg) { }
+	public static void debugcamera_unfreeze(ConsoleSystem.Arg arg) { }
 
-public static bool get_skyreflection() { }
+	public static bool get_skyreflection() { }
 
-public static void set_skyreflection(bool value) { }
+	public static void set_skyreflection(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -148,9 +148,9 @@ private sealed class Debugging.<>c__DisplayClass40_0 // TypeDefIndex: 11898
 	public float radius; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <ent_find_radius>b__0(BaseNetworkable x) { }
+	internal bool <ent_find_radius>b__0(BaseNetworkable x) { }
 
 }
 
@@ -162,15 +162,15 @@ private sealed class Debugging.<>c // TypeDefIndex: 11899
 	public static Func<BaseNetworkable, Debugging.EntityInfo> <>9__40_3; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal uint <ent_find_radius>b__40_1(BaseNetworkable x) { }
+	internal uint <ent_find_radius>b__40_1(BaseNetworkable x) { }
 
-internal BaseNetworkable <ent_find_radius>b__40_2(IGrouping<uint, BaseNetworkable> x) { }
+	internal BaseNetworkable <ent_find_radius>b__40_2(IGrouping<uint, BaseNetworkable> x) { }
 
-internal Debugging.EntityInfo <ent_find_radius>b__40_3(BaseNetworkable x) { }
+	internal Debugging.EntityInfo <ent_find_radius>b__40_3(BaseNetworkable x) { }
 
 }
 

@@ -14,99 +14,99 @@ internal static class ADP // TypeDefIndex: 4363
 	internal static readonly int PtrSize; 
 
 
-private static void TraceException(string trace, Exception e) { }
+	private static void TraceException(string trace, Exception e) { }
 
-internal static void TraceExceptionAsReturnValue(Exception e) { }
+	internal static void TraceExceptionAsReturnValue(Exception e) { }
 
-internal static void TraceExceptionWithoutRethrow(Exception e) { }
+	internal static void TraceExceptionWithoutRethrow(Exception e) { }
 
-internal static ArgumentException Argument(string error) { }
+	internal static ArgumentException Argument(string error) { }
 
-internal static ArgumentException Argument(string error, string parameter) { }
+	internal static ArgumentException Argument(string error, string parameter) { }
 
-internal static ArgumentNullException ArgumentNull(string parameter) { }
+	internal static ArgumentNullException ArgumentNull(string parameter) { }
 
-internal static ArgumentOutOfRangeException ArgumentOutOfRange(string parameterName) { }
+	internal static ArgumentOutOfRangeException ArgumentOutOfRange(string parameterName) { }
 
-internal static ArgumentOutOfRangeException ArgumentOutOfRange(string message, string parameterName) { }
+	internal static ArgumentOutOfRangeException ArgumentOutOfRange(string message, string parameterName) { }
 
-internal static InvalidOperationException InvalidOperation(string error) { }
+	internal static InvalidOperationException InvalidOperation(string error) { }
 
-internal static NotSupportedException NotSupported() { }
+	internal static NotSupportedException NotSupported() { }
 
-internal static NotSupportedException NotSupported(string error) { }
+	internal static NotSupportedException NotSupported(string error) { }
 
-internal static bool IsCatchableExceptionType(Exception e) { }
+	internal static bool IsCatchableExceptionType(Exception e) { }
 
-internal static bool IsCatchableOrSecurityExceptionType(Exception e) { }
+	internal static bool IsCatchableOrSecurityExceptionType(Exception e) { }
 
-internal static ArgumentOutOfRangeException InvalidEnumerationValue(Type type, int value) { }
+	internal static ArgumentOutOfRangeException InvalidEnumerationValue(Type type, int value) { }
 
-internal static string BuildQuotedString(string quotePrefix, string quoteSuffix, string unQuotedString) { }
+	internal static string BuildQuotedString(string quotePrefix, string quoteSuffix, string unQuotedString) { }
 
-internal static bool CompareInsensitiveInvariant(string strvalue, string strconst) { }
+	internal static bool CompareInsensitiveInvariant(string strvalue, string strconst) { }
 
-internal static bool IsNull(object value) { }
+	internal static bool IsNull(object value) { }
 
-internal static Exception InvalidSeekOrigin(string parameterName) { }
+	internal static Exception InvalidSeekOrigin(string parameterName) { }
 
-internal static void TraceExceptionForCapture(Exception e) { }
+	internal static void TraceExceptionForCapture(Exception e) { }
 
-internal static ArgumentOutOfRangeException InvalidAcceptRejectRule(AcceptRejectRule value) { }
+	internal static ArgumentOutOfRangeException InvalidAcceptRejectRule(AcceptRejectRule value) { }
 
-internal static ArgumentOutOfRangeException InvalidConflictOptions(ConflictOption value) { }
+	internal static ArgumentOutOfRangeException InvalidConflictOptions(ConflictOption value) { }
 
-internal static ArgumentOutOfRangeException InvalidMissingMappingAction(MissingMappingAction value) { }
+	internal static ArgumentOutOfRangeException InvalidMissingMappingAction(MissingMappingAction value) { }
 
-internal static ArgumentOutOfRangeException InvalidMissingSchemaAction(MissingSchemaAction value) { }
+	internal static ArgumentOutOfRangeException InvalidMissingSchemaAction(MissingSchemaAction value) { }
 
-internal static ArgumentOutOfRangeException InvalidRule(Rule value) { }
+	internal static ArgumentOutOfRangeException InvalidRule(Rule value) { }
 
-internal static ArgumentOutOfRangeException InvalidStatementType(StatementType value) { }
+	internal static ArgumentOutOfRangeException InvalidStatementType(StatementType value) { }
 
-internal static ArgumentOutOfRangeException InvalidUpdateStatus(UpdateStatus value) { }
+	internal static ArgumentOutOfRangeException InvalidUpdateStatus(UpdateStatus value) { }
 
-internal static Exception WrongType(Type got, Type expected) { }
+	internal static Exception WrongType(Type got, Type expected) { }
 
-private static InvalidOperationException DataMapping(string error) { }
+	private static InvalidOperationException DataMapping(string error) { }
 
-internal static InvalidOperationException ColumnSchemaExpression(string srcColumn, string cacheColumn) { }
+	internal static InvalidOperationException ColumnSchemaExpression(string srcColumn, string cacheColumn) { }
 
-internal static InvalidOperationException ColumnSchemaMismatch(string srcColumn, Type srcType, DataColumn column) { }
+	internal static InvalidOperationException ColumnSchemaMismatch(string srcColumn, Type srcType, DataColumn column) { }
 
-internal static InvalidOperationException ColumnSchemaMissing(string cacheColumn, string tableName, string srcColumn) { }
+	internal static InvalidOperationException ColumnSchemaMissing(string cacheColumn, string tableName, string srcColumn) { }
 
-internal static InvalidOperationException MissingColumnMapping(string srcColumn) { }
+	internal static InvalidOperationException MissingColumnMapping(string srcColumn) { }
 
-internal static Exception InvalidSourceColumn(string parameter) { }
+	internal static Exception InvalidSourceColumn(string parameter) { }
 
-internal static InvalidOperationException DynamicSQLJoinUnsupported() { }
+	internal static InvalidOperationException DynamicSQLJoinUnsupported() { }
 
-internal static InvalidOperationException DynamicSQLNoTableInfo() { }
+	internal static InvalidOperationException DynamicSQLNoTableInfo() { }
 
-internal static InvalidOperationException DynamicSQLNoKeyInfoDelete() { }
+	internal static InvalidOperationException DynamicSQLNoKeyInfoDelete() { }
 
-internal static InvalidOperationException DynamicSQLNoKeyInfoUpdate() { }
+	internal static InvalidOperationException DynamicSQLNoKeyInfoUpdate() { }
 
-internal static InvalidOperationException DynamicSQLNoKeyInfoRowVersionDelete() { }
+	internal static InvalidOperationException DynamicSQLNoKeyInfoRowVersionDelete() { }
 
-internal static InvalidOperationException DynamicSQLNoKeyInfoRowVersionUpdate() { }
+	internal static InvalidOperationException DynamicSQLNoKeyInfoRowVersionUpdate() { }
 
-internal static InvalidOperationException DynamicSQLNestedQuote(string name, string quote) { }
+	internal static InvalidOperationException DynamicSQLNestedQuote(string name, string quote) { }
 
-internal static InvalidOperationException NoQuoteChange() { }
+	internal static InvalidOperationException NoQuoteChange() { }
 
-internal static InvalidOperationException MissingSourceCommand() { }
+	internal static InvalidOperationException MissingSourceCommand() { }
 
-internal static InvalidOperationException MissingSourceCommandConnection() { }
+	internal static InvalidOperationException MissingSourceCommandConnection() { }
 
-internal static void BuildSchemaTableInfoTableNames(string[] columnNameArray) { }
+	internal static void BuildSchemaTableInfoTableNames(string[] columnNameArray) { }
 
-private static int GenerateUniqueName(Dictionary<string, int> hash, ref string columnName, int index, int uniqueIndex) { }
+	private static int GenerateUniqueName(Dictionary<string, int> hash, ref string columnName, int index, int uniqueIndex) { }
 
-internal static int SrcCompare(string strA, string strB) { }
+	internal static int SrcCompare(string strA, string strB) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

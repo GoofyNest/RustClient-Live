@@ -5,9 +5,9 @@ public class FixedRateStepped // TypeDefIndex: 11364
 	internal float nextCall; 
 
 
-public bool ShouldStep() { }
+	public bool ShouldStep() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

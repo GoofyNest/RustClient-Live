@@ -5,12 +5,12 @@ public sealed class RootDesignerSerializerAttribute : Attribute // TypeDefIndex:
 	private string serializerBaseTypeName; 
 	private string typeId; 
 
-public override object TypeId { get; }
+	public override object TypeId { get; }
 
 
-public void .ctor(string serializerTypeName, string baseSerializerTypeName, bool reloadable) { }
+	public void .ctor(string serializerTypeName, string baseSerializerTypeName, bool reloadable) { }
 
-public override object get_TypeId() { }
+	public override object get_TypeId() { }
 
 }
 

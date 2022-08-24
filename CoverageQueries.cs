@@ -14,46 +14,46 @@ public class CoverageQueries : MonoBehaviour // TypeDefIndex: 11475
 	private static CoverageQueries instance; 
 	private static bool _debugShow; 
 
-public static CoverageQueries Instance { get; }
-public static bool Supported { get; }
-public static bool DebugShow { get; set; }
+	public static CoverageQueries Instance { get; }
+	public static bool Supported { get; }
+	public static bool DebugShow { get; set; }
 
 
-public static CoverageQueries get_Instance() { }
+	public static CoverageQueries get_Instance() { }
 
-public static bool get_Supported() { }
+	public static bool get_Supported() { }
 
-public static bool get_DebugShow() { }
+	public static bool get_DebugShow() { }
 
-public static void set_DebugShow(bool value) { }
+	public static void set_DebugShow(bool value) { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-private void UpdateCollection() { }
+	private void UpdateCollection() { }
 
-private void PrepareAndDispatch() { }
+	private void PrepareAndDispatch() { }
 
-private void IssueRead() { }
+	private void IssueRead() { }
 
-private void FetchAndAnalyseResults() { }
+	private void FetchAndAnalyseResults() { }
 
-public static void RegisterQuery(CoverageQueries.Query query) { }
+	public static void RegisterQuery(CoverageQueries.Query query) { }
 
-public static void UnregisterQuery(CoverageQueries.Query query) { }
+	public static void UnregisterQuery(CoverageQueries.Query query) { }
 
-public static void UpdateQuery(CoverageQueries.Query query) { }
+	public static void UpdateQuery(CoverageQueries.Query query) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -66,33 +66,33 @@ public class CoverageQueries.BufferSet // TypeDefIndex: 11476
 	public Color[] inputData; 
 	public Color32[] resultData; 
 	private Material coverageMat; 
-private const int MaxAsyncGPUReadbackRequests = 10;
+	private const int MaxAsyncGPUReadbackRequests = 10;
 	private Queue<AsyncGPUReadbackRequest> asyncRequests; 
 
 
-public void Attach(Material coverageMat) { }
+	public void Attach(Material coverageMat) { }
 
-public void Dispose(bool data = True) { }
+	public void Dispose(bool data = True) { }
 
-public bool CheckResize(int count) { }
+	public bool CheckResize(int count) { }
 
-public void UploadData() { }
+	public void UploadData() { }
 
-public void Dispatch(int count) { }
+	public void Dispatch(int count) { }
 
-public void IssueRead() { }
+	public void IssueRead() { }
 
-public void GetResults() { }
+	public void GetResults() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum CoverageQueries.RadiusSpace // TypeDefIndex: 11477
 {
 	public int value__; 
-public const CoverageQueries.RadiusSpace ScreenNormalized = 0;
-public const CoverageQueries.RadiusSpace World = 1;
+	public const CoverageQueries.RadiusSpace ScreenNormalized = 0;
+	public const CoverageQueries.RadiusSpace World = 1;
 
 }
 
@@ -102,26 +102,26 @@ public class CoverageQueries.Query // TypeDefIndex: 11478
 	public CoverageQueries.Query.Internal intern; 
 	public CoverageQueries.Query.Result result; 
 
-public bool IsRegistered { get; }
+	public bool IsRegistered { get; }
 
 
-public bool get_IsRegistered() { }
+	public bool get_IsRegistered() { }
 
-private void Reset() { }
+	private void Reset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(Vector3 position, CoverageQueries.RadiusSpace radiusSpace, float radius, int sampleCount, float smoothingSpeed = 15) { }
+	public void .ctor(Vector3 position, CoverageQueries.RadiusSpace radiusSpace, float radius, int sampleCount, float smoothingSpeed = 15) { }
 
-public void Register() { }
+	public void Register() { }
 
-public void Update(Vector3 position, float radius) { }
+	public void Update(Vector3 position, float radius) { }
 
-public void UpdatePosition(Vector3 position) { }
+	public void UpdatePosition(Vector3 position) { }
 
-public void UpdateRadius(float radius) { }
+	public void UpdateRadius(float radius) { }
 
-public void Unregister() { }
+	public void Unregister() { }
 
 }
 
@@ -140,7 +140,7 @@ public struct CoverageQueries.Query.Internal // TypeDefIndex: 11480
 	public int id; 
 
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 
@@ -157,7 +157,7 @@ public struct CoverageQueries.Query.Result // TypeDefIndex: 11481
 	public float originSmoothVisibility; 
 
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 

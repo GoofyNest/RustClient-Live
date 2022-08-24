@@ -7,7 +7,7 @@ public class Marketplace : BaseEntity // TypeDefIndex: 8802
 	public GameObjectRef deliveryDronePrefab; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,11 +8,11 @@ public class RealmedRemove : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 9
 	public Component[] doNotRemoveFromClient; 
 
 
-public void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public bool ShouldDelete(Component comp, bool client, bool server) { }
+	public bool ShouldDelete(Component comp, bool client, bool server) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

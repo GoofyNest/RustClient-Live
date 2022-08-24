@@ -6,7 +6,7 @@ public struct LoadSceneParameters // TypeDefIndex: 3659
 	private LocalPhysicsMode m_LocalPhysicsMode; 
 
 
-public void .ctor(LoadSceneMode mode) { }
+	public void .ctor(LoadSceneMode mode) { }
 
 }
 

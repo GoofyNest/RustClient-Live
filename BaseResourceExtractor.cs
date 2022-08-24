@@ -4,7 +4,7 @@ public class BaseResourceExtractor : BaseCombatEntity // TypeDefIndex: 9566
 	public bool canExtractSolid; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

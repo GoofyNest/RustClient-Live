@@ -6,17 +6,17 @@ public class TweakUIToggle : TweakUIBase // TypeDefIndex: 11145
 	public static TimeSince timeSinceLastConVarChange; 
 
 
-protected override void Init() { }
+	protected override void Init() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void OnToggleChanged() { }
+	public void OnToggleChanged() { }
 
-protected override void SetConvarValue() { }
+	protected override void SetConvarValue() { }
 
-public override void ResetToConvar() { }
+	public override void ResetToConvar() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

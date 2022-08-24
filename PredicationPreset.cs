@@ -8,7 +8,7 @@ public class PredicationPreset // TypeDefIndex: 11557
 	public float Strength; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

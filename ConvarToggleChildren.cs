@@ -6,13 +6,13 @@ public class ConvarToggleChildren : MonoBehaviour // TypeDefIndex: 10841
 	private ConsoleSystem.Command Command; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private void SetState(bool newState) { }
+	private void SetState(bool newState) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

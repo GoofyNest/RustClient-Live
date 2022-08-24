@@ -13,49 +13,49 @@ public class HttpWebResponse : WebResponse, ISerializable, IDisposable // TypeDe
 	private bool disposed; 
 	private Stream stream; 
 
-public override long ContentLength { get; }
-public override WebHeaderCollection Headers { get; }
-public override Uri ResponseUri { get; }
-public virtual HttpStatusCode StatusCode { get; }
-public virtual string StatusDescription { get; }
+	public override long ContentLength { get; }
+	public override WebHeaderCollection Headers { get; }
+	public override Uri ResponseUri { get; }
+	public virtual HttpStatusCode StatusCode { get; }
+	public virtual string StatusDescription { get; }
 
 
-internal void .ctor(Uri uri, string method, WebConnectionData data, CookieContainer container) { }
+	internal void .ctor(Uri uri, string method, WebConnectionData data, CookieContainer container) { }
 
 	[ObsoleteAttribute] 
-protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+	protected void .ctor(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
-public override long get_ContentLength() { }
+	public override long get_ContentLength() { }
 
-public override WebHeaderCollection get_Headers() { }
+	public override WebHeaderCollection get_Headers() { }
 
-public override Uri get_ResponseUri() { }
+	public override Uri get_ResponseUri() { }
 
-public virtual HttpStatusCode get_StatusCode() { }
+	public virtual HttpStatusCode get_StatusCode() { }
 
-public virtual string get_StatusDescription() { }
+	public virtual string get_StatusDescription() { }
 
-internal void ReadAll() { }
+	internal void ReadAll() { }
 
-public override Stream GetResponseStream() { }
+	public override Stream GetResponseStream() { }
 
-private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
-protected override void GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
+	protected override void GetObjectData(SerializationInfo serializationInfo, StreamingContext streamingContext) { }
 
-public override void Close() { }
+	public override void Close() { }
 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-private void CheckDisposed() { }
+	private void CheckDisposed() { }
 
-private void FillCookies() { }
+	private void FillCookies() { }
 
 	[ObsoleteAttribute] 
 	[EditorBrowsableAttribute] 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

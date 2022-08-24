@@ -3,13 +3,13 @@ public abstract class ConfigurationSection : ConfigurationElement // TypeDefInde
 
 public abstract class ConfigurationSection : ConfigurationElement 
 
-protected internal virtual void DeserializeSection(XmlReader reader) { }
+	protected internal virtual void DeserializeSection(XmlReader reader) { }
 
-protected internal override bool IsModified() { }
+	protected internal override bool IsModified() { }
 
-protected internal override void ResetModified() { }
+	protected internal override void ResetModified() { }
 
-protected internal virtual string SerializeSection(ConfigurationElement parentElement, string name, ConfigurationSaveMode saveMode) { }
+	protected internal virtual string SerializeSection(ConfigurationElement parentElement, string name, ConfigurationSaveMode saveMode) { }
 
 }
 

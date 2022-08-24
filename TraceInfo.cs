@@ -11,11 +11,11 @@ public struct TraceInfo // TypeDefIndex: 9260
 	public Collider collider; 
 
 
-public void UpdateHitTest(HitTest test) { }
+	public void UpdateHitTest(HitTest test) { }
 
-public uint BoneID() { }
+	public uint BoneID() { }
 
-public uint MaterialID() { }
+	public uint MaterialID() { }
 
 }
 

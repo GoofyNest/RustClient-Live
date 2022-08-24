@@ -24,9 +24,9 @@ public sealed class LensDistortion : PostProcessEffectSettings // TypeDefIndex: 
 	public FloatParameter scale; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

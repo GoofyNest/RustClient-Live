@@ -3,12 +3,12 @@ public class LeanTester : MonoBehaviour // TypeDefIndex: 5575
 	public float timeout; 
 
 
-public void Start() { }
+	public void Start() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator timeoutCheck() { }
+	private IEnumerator timeoutCheck() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -19,26 +19,26 @@ private sealed class LeanTester.<timeoutCheck>d__2 : IEnumerator<object>, IEnume
 	public LeanTester <>4__this; 
 	private float <pauseEndTime>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

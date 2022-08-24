@@ -18,31 +18,31 @@ public class SleepingBagButton : MonoBehaviour, IPointerEnterHandler, IEventSyst
 	internal RespawnInformation.SpawnOptions spawnOption; 
 	internal float releaseTime; 
 
-public float timerSeconds { get; }
-public string friendlyName { get; }
+	public float timerSeconds { get; }
+	public string friendlyName { get; }
 
 
-public float get_timerSeconds() { }
+	public float get_timerSeconds() { }
 
-public string get_friendlyName() { }
+	public string get_friendlyName() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void Setup(RespawnInformation.SpawnOptions option, UIDeathScreen.RespawnColourScheme colourScheme) { }
+	public void Setup(RespawnInformation.SpawnOptions option, UIDeathScreen.RespawnColourScheme colourScheme) { }
 
-private void UpdateButtonState(RespawnInformation.SpawnOptions option) { }
+	private void UpdateButtonState(RespawnInformation.SpawnOptions option) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void DoSpawn() { }
+	public void DoSpawn() { }
 
-public void DeleteBag() { }
+	public void DeleteBag() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

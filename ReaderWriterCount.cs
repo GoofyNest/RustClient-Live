@@ -7,7 +7,7 @@ internal class ReaderWriterCount // TypeDefIndex: 3190
 	public ReaderWriterCount next; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

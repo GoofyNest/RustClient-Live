@@ -11,14 +11,14 @@ public sealed class RegisteredWaitHandle : MarshalByRefObject // TypeDefIndex: 8
 	private bool _unregistered; 
 
 
-internal void .ctor(WaitHandle waitObject, WaitOrTimerCallback callback, object state, TimeSpan timeout, bool executeOnlyOnce) { }
+	internal void .ctor(WaitHandle waitObject, WaitOrTimerCallback callback, object state, TimeSpan timeout, bool executeOnlyOnce) { }
 
-internal void Wait(object state) { }
+	internal void Wait(object state) { }
 
-private void DoCallBack(object timedOut) { }
+	private void DoCallBack(object timedOut) { }
 
 	[ComVisibleAttribute] 
-public bool Unregister(WaitHandle waitObject) { }
+	public bool Unregister(WaitHandle waitObject) { }
 
 }
 

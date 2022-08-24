@@ -1,19 +1,19 @@
 public static class Runtime // TypeDefIndex: 4
 {
 
-private static void mono_runtime_install_handlers() { }
+	private static void mono_runtime_install_handlers() { }
 
-public static void InstallSignalHandlers() { }
+	public static void InstallSignalHandlers() { }
 
-private static void mono_runtime_cleanup_handlers() { }
+	private static void mono_runtime_cleanup_handlers() { }
 
-public static void RemoveSignalHandlers() { }
+	public static void RemoveSignalHandlers() { }
 
-public static string GetDisplayName() { }
+	public static string GetDisplayName() { }
 
-private static string GetNativeStackTrace(Exception exception) { }
+	private static string GetNativeStackTrace(Exception exception) { }
 
-public static bool SetGCAllowSynchronousMajor(bool flag) { }
+	public static bool SetGCAllowSynchronousMajor(bool flag) { }
 
 }
 
@@ -33,55 +33,55 @@ public static class Runtime // TypeDefIndex: 7162
 	[CompilerGeneratedAttribute] 
 	private static HostValidationResult <HostValidation>k__BackingField; 
 
-public static bool Initialized { get; set; }
-private static IntegrityDescriptor Integrity { set; }
-private static HostValidationResult HostValidation { set; }
-public static INetProtect NetProtect { get; }
+	public static bool Initialized { get; set; }
+	private static IntegrityDescriptor Integrity { set; }
+	private static HostValidationResult HostValidation { set; }
+	public static INetProtect NetProtect { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Initialized() { }
+	public static bool get_Initialized() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Initialized(bool value) { }
+	private static void set_Initialized(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Integrity(IntegrityDescriptor value) { }
+	private static void set_Integrity(IntegrityDescriptor value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_HostValidation(HostValidationResult value) { }
+	private static void set_HostValidation(HostValidationResult value) { }
 
-public static void Initialize(EventHandler<StateChangedEventArgs> onStateChanged, EventHandler<LoadCompletedEventArgs> onCompleted, EventHandler<LoadProgressEventArgs> onProgress) { }
+	public static void Initialize(EventHandler<StateChangedEventArgs> onStateChanged, EventHandler<LoadCompletedEventArgs> onCompleted, EventHandler<LoadProgressEventArgs> onProgress) { }
 
-public static bool IsActive() { }
+	public static bool IsActive() { }
 
-public static void Release() { }
+	public static void Release() { }
 
-public static void SetPlatformUserAuthTicket(string PlatformName, byte[] AuthTicket, int AuthTicketLength) { }
+	public static void SetPlatformUserAuthTicket(string PlatformName, byte[] AuthTicket, int AuthTicketLength) { }
 
-public static void ConnectionReset() { }
+	public static void ConnectionReset() { }
 
-public static bool PopNetworkMessage(out byte[] MessageBuffer, out int MessageLength) { }
+	public static bool PopNetworkMessage(out byte[] MessageBuffer, out int MessageLength) { }
 
-public static void PushNetworkMessage(byte[] MessageBuffer, int MessageLength) { }
+	public static void PushNetworkMessage(byte[] MessageBuffer, int MessageLength) { }
 
-public static void PollStatus() { }
+	public static void PollStatus() { }
 
-public static INetProtect get_NetProtect() { }
-
-	[MonoPInvokeCallbackAttribute] 
-private static uint OnInternalProgress(uint Progress, IntPtr CallbackParameter) { }
+	public static INetProtect get_NetProtect() { }
 
 	[MonoPInvokeCallbackAttribute] 
-private static void OnInternalEvent(LoadResult Result, string Message, IntPtr CallbackParameter) { }
+	private static uint OnInternalProgress(uint Progress, IntPtr CallbackParameter) { }
 
 	[MonoPInvokeCallbackAttribute] 
-private static uint OnIntegrityViolation(ClientIntegrityViolationType ViolationType, string ViolationCause, string DefaultMessage, IntPtr CallbackParameter) { }
+	private static void OnInternalEvent(LoadResult Result, string Message, IntPtr CallbackParameter) { }
 
 	[MonoPInvokeCallbackAttribute] 
-private static bool OnHostValidation(HostValidationResult Result, string Message, IntPtr CallbackParameter) { }
+	private static uint OnIntegrityViolation(ClientIntegrityViolationType ViolationType, string ViolationCause, string DefaultMessage, IntPtr CallbackParameter) { }
 
-private static void .cctor() { }
+	[MonoPInvokeCallbackAttribute] 
+	private static bool OnHostValidation(HostValidationResult Result, string Message, IntPtr CallbackParameter) { }
+
+	private static void .cctor() { }
 
 }
 
@@ -90,9 +90,9 @@ private sealed class Runtime.<>c__DisplayClass19_0 // TypeDefIndex: 7163
 	public EventHandler<LoadCompletedEventArgs> onCompleted; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Initialize>b__0(object s, LoadCompletedEventArgs args) { }
+	internal void <Initialize>b__0(object s, LoadCompletedEventArgs args) { }
 
 }
 

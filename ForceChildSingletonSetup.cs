@@ -2,9 +2,9 @@ public class ForceChildSingletonSetup : MonoBehaviour // TypeDefIndex: 11289
 {
 
 	[ComponentHelpAttribute] 
-private void Awake() { }
+	private void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

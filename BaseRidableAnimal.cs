@@ -14,15 +14,15 @@ public class BaseRidableAnimal : BaseVehicle // TypeDefIndex: 8347
 	public bool needsBuildingPrivilegeToUse; 
 	public bool isLootable; 
 	protected ItemContainer inventory; 
-public const BaseEntity.Flags Flag_ForSale = 256;
+	public const BaseEntity.Flags Flag_ForSale = 256;
 	private Vector3 lastMoveDirection; 
 	public GameObjectRef saddlePrefab; 
 	public EntityRef saddleRef; 
 	public Transform movementLOSOrigin; 
 	public SoundPlayer sprintSounds; 
 	public SoundPlayer largeWhinny; 
-public const BaseEntity.Flags Flag_Lead = 32768;
-public const BaseEntity.Flags Flag_HasRider = 2;
+	public const BaseEntity.Flags Flag_Lead = 32768;
+	public const BaseEntity.Flags Flag_HasRider = 2;
 	[HeaderAttribute] 
 	public ItemDefinition purchaseToken; 
 	public GameObjectRef eatEffect; 
@@ -55,7 +55,7 @@ public const BaseEntity.Flags Flag_HasRider = 2;
 	public float hydrationToStaminaRatio; 
 	public float maxStaminaCoreFromWater; 
 	public bool debugMovement; 
-private const float normalOffsetDist = 0,15;
+	private const float normalOffsetDist = 0,15;
 	private Vector3[] normalOffsets; 
 	[ServerVar] 
 	public static float decayminutes; 
@@ -67,128 +67,128 @@ private const float normalOffsetDist = 0,15;
 	private float nextTokenCheckTime; 
 	private bool lastTokenCheckResult; 
 
-public override bool HasMenuOptions { get; }
-public override bool IsNpc { get; }
+	public override bool HasMenuOptions { get; }
+	public override bool IsNpc { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public bool IsForSale() { }
+	public bool IsForSale() { }
 
-public virtual bool CanOpenStorage(BasePlayer player) { }
+	public virtual bool CanOpenStorage(BasePlayer player) { }
 
-public void LoadContainer(BaseNetworkable.LoadInfo info) { }
+	public void LoadContainer(BaseNetworkable.LoadInfo info) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Open(BasePlayer player) { }
+	public void Menu_Open(BasePlayer player) { }
 
-public bool Menu_Open_ShowIf(BasePlayer player) { }
+	public bool Menu_Open_ShowIf(BasePlayer player) { }
 
-public virtual bool ShouldShowLootMenus() { }
+	public virtual bool ShouldShowLootMenus() { }
 
-public float GetBreathingDelay() { }
+	public float GetBreathingDelay() { }
 
-public bool IsLeading() { }
+	public bool IsLeading() { }
 
-public static float UnitsToKPH(float unitsPerSecond) { }
+	public static float UnitsToKPH(float unitsPerSecond) { }
 
-public override bool get_IsNpc() { }
+	public override bool get_IsNpc() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void UpdateBreathingRate() { }
+	public void UpdateBreathingRate() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void SprintSoundPlay() { }
+	public void SprintSoundPlay() { }
 
 	[BaseEntity.RPC_Client] 
-public void Stand(BaseEntity.RPCMessage msg) { }
+	public void Stand(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void Eat(BaseEntity.RPCMessage msg) { }
+	public void Eat(BaseEntity.RPCMessage msg) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_TooHeavy(BasePlayer player) { }
-
-public bool Menu_TooHeavy_ShowIf(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Ride(BasePlayer player) { }
+	public void Menu_TooHeavy(BasePlayer player) { }
 
-public bool Menu_Ride_ShowIf(BasePlayer player) { }
-
-private bool CanPlayerSeeSaddlePoint(BasePlayer player) { }
+	public bool Menu_TooHeavy_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Lead(BasePlayer player) { }
+	public void Menu_Ride(BasePlayer player) { }
 
-public bool Menu_Lead_ShowIf(BasePlayer player) { }
+	public bool Menu_Ride_ShowIf(BasePlayer player) { }
 
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_StopLead(BasePlayer player) { }
-
-public bool Menu_StopLead_ShowIf(BasePlayer player) { }
-
-public virtual bool RideMenuVisible() { }
-
-public override bool MountMenuVisible(BasePlayer player) { }
+	private bool CanPlayerSeeSaddlePoint(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Claim(BasePlayer player) { }
+	public void Menu_Lead(BasePlayer player) { }
 
-public bool Menu_Claim_ShowIf(BasePlayer player) { }
+	public bool Menu_Lead_ShowIf(BasePlayer player) { }
 
-public bool PlayerHasToken(BasePlayer player) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_StopLead(BasePlayer player) { }
 
-public Item GetPurchaseToken(BasePlayer player) { }
+	public bool Menu_StopLead_ShowIf(BasePlayer player) { }
 
-public virtual float GetWalkSpeed() { }
+	public virtual bool RideMenuVisible() { }
 
-public virtual float GetTrotSpeed() { }
+	public override bool MountMenuVisible(BasePlayer player) { }
 
-public virtual float GetRunSpeed() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_Claim(BasePlayer player) { }
 
-public bool IsPlayerTooHeavy(BasePlayer player) { }
+	public bool Menu_Claim_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public bool PlayerHasToken(BasePlayer player) { }
 
-private static void .cctor() { }
+	public Item GetPurchaseToken(BasePlayer player) { }
+
+	public virtual float GetWalkSpeed() { }
+
+	public virtual float GetTrotSpeed() { }
+
+	public virtual float GetRunSpeed() { }
+
+	public bool IsPlayerTooHeavy(BasePlayer player) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum BaseRidableAnimal.RunState // TypeDefIndex: 8348
 {
 	public int value__; 
-public const BaseRidableAnimal.RunState stopped = 1;
-public const BaseRidableAnimal.RunState walk = 2;
-public const BaseRidableAnimal.RunState run = 3;
-public const BaseRidableAnimal.RunState sprint = 4;
-public const BaseRidableAnimal.RunState LAST = 5;
+	public const BaseRidableAnimal.RunState stopped = 1;
+	public const BaseRidableAnimal.RunState walk = 2;
+	public const BaseRidableAnimal.RunState run = 3;
+	public const BaseRidableAnimal.RunState sprint = 4;
+	public const BaseRidableAnimal.RunState LAST = 5;
 
 }
 

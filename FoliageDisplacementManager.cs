@@ -3,19 +3,19 @@ public class FoliageDisplacementManager : SingletonComponent<FoliageDisplacement
 	private SpecialPurposeCamera handle; 
 
 
-public static void Add(FoliageDisplacement instance) { }
+	public static void Add(FoliageDisplacement instance) { }
 
-public static void Remove(FoliageDisplacement instance) { }
+	public static void Remove(FoliageDisplacement instance) { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void CreateHandle() { }
+	private void CreateHandle() { }
 
-private void DestroyHandle() { }
+	private void DestroyHandle() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

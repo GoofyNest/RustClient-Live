@@ -3,24 +3,24 @@ public sealed class SongPositionPointerEvent : SystemCommonEvent // TypeDefIndex
 	private SevenBitNumber _lsb; 
 	private SevenBitNumber _msb; 
 
-public ushort PointerValue { get; set; }
+	public ushort PointerValue { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(ushort pointerValue) { }
+	public void .ctor(ushort pointerValue) { }
 
-public ushort get_PointerValue() { }
+	public ushort get_PointerValue() { }
 
-public void set_PointerValue(ushort value) { }
+	public void set_PointerValue(ushort value) { }
 
-private SevenBitNumber ProcessValue(byte value, string property, InvalidSystemCommonEventParameterValuePolicy policy) { }
+	private SevenBitNumber ProcessValue(byte value, string property, InvalidSystemCommonEventParameterValuePolicy policy) { }
 
-internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
+	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override MidiEvent CloneEvent() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

@@ -7,31 +7,31 @@ public class TimerAIEvent : BaseAIEvent // TypeDefIndex: 9415
 	protected float currentDuration; 
 	protected float elapsedDuration; 
 
-public float DurationMin { get; set; }
-public float DurationMax { get; set; }
+	public float DurationMin { get; set; }
+	public float DurationMax { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_DurationMin() { }
+	public float get_DurationMin() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DurationMin(float value) { }
+	public void set_DurationMin(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_DurationMax() { }
+	public float get_DurationMax() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DurationMax(float value) { }
+	public void set_DurationMax(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void Init(AIEventData data, BaseEntity owner) { }
+	public override void Init(AIEventData data, BaseEntity owner) { }
 
-public override AIEventData ToProto() { }
+	public override AIEventData ToProto() { }
 
-public override void Reset() { }
+	public override void Reset() { }
 
-public override void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
+	public override void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
 
 }
 

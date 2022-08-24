@@ -9,25 +9,25 @@ public struct Vector2Int : IEquatable<Vector2Int> // TypeDefIndex: 3471
 	private static readonly Vector2Int s_Left; 
 	private static readonly Vector2Int s_Right; 
 
-public int x { get; }
-public int y { get; }
+	public int x { get; }
+	public int y { get; }
 
 
-public int get_x() { }
+	public int get_x() { }
 
-public int get_y() { }
+	public int get_y() { }
 
-public void .ctor(int x, int y) { }
+	public void .ctor(int x, int y) { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(Vector2Int other) { }
+	public bool Equals(Vector2Int other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -3,13 +3,13 @@ public sealed class DownloadStringCompletedEventHandler : MulticastDelegate // T
 
 public sealed class DownloadStringCompletedEventHandler : MulticastDelegate 
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(object sender, DownloadStringCompletedEventArgs e) { }
+	public virtual void Invoke(object sender, DownloadStringCompletedEventArgs e) { }
 
-public virtual IAsyncResult BeginInvoke(object sender, DownloadStringCompletedEventArgs e, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(object sender, DownloadStringCompletedEventArgs e, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

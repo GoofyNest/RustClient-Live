@@ -3,7 +3,7 @@ public class DSASignatureFormatter : AsymmetricSignatureFormatter // TypeDefInde
 	private string _oid; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,57 +5,57 @@ public class BaseNPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6295
 	public int flags; 
 
 
-public static void ResetToPool(BaseNPC instance) { }
+	public static void ResetToPool(BaseNPC instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(BaseNPC instance) { }
+	public void CopyTo(BaseNPC instance) { }
 
-public BaseNPC Copy() { }
+	public BaseNPC Copy() { }
 
-public static BaseNPC Deserialize(Stream stream) { }
+	public static BaseNPC Deserialize(Stream stream) { }
 
-public static BaseNPC DeserializeLengthDelimited(Stream stream) { }
+	public static BaseNPC DeserializeLengthDelimited(Stream stream) { }
 
-public static BaseNPC DeserializeLength(Stream stream, int length) { }
+	public static BaseNPC DeserializeLength(Stream stream, int length) { }
 
-public static BaseNPC Deserialize(byte[] buffer) { }
+	public static BaseNPC Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, BaseNPC previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, BaseNPC previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static BaseNPC Deserialize(byte[] buffer, BaseNPC instance, bool isDelta = False) { }
+	public static BaseNPC Deserialize(byte[] buffer, BaseNPC instance, bool isDelta = False) { }
 
-public static BaseNPC Deserialize(Stream stream, BaseNPC instance, bool isDelta) { }
+	public static BaseNPC Deserialize(Stream stream, BaseNPC instance, bool isDelta) { }
 
-public static BaseNPC DeserializeLengthDelimited(Stream stream, BaseNPC instance, bool isDelta) { }
+	public static BaseNPC DeserializeLengthDelimited(Stream stream, BaseNPC instance, bool isDelta) { }
 
-public static BaseNPC DeserializeLength(Stream stream, int length, BaseNPC instance, bool isDelta) { }
+	public static BaseNPC DeserializeLength(Stream stream, int length, BaseNPC instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, BaseNPC instance, BaseNPC previous) { }
+	public static void SerializeDelta(Stream stream, BaseNPC instance, BaseNPC previous) { }
 
-public static void Serialize(Stream stream, BaseNPC instance) { }
+	public static void Serialize(Stream stream, BaseNPC instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(BaseNPC instance) { }
+	public static byte[] SerializeToBytes(BaseNPC instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, BaseNPC instance) { }
+	public static void SerializeLengthDelimited(Stream stream, BaseNPC instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -94,100 +94,100 @@ public class BaseNpc : BaseCombatEntity // TypeDefIndex: 8525
 	public float lastStuckTime; 
 	public float idleDuration; 
 
-public static List<BaseNpc> VisibleNpcList { get; }
-public bool IsSitting { get; set; }
-public bool IsChasing { get; set; }
-public bool IsSleeping { get; set; }
-public override bool IsNpc { get; }
+	public static List<BaseNpc> VisibleNpcList { get; }
+	public bool IsSitting { get; set; }
+	public bool IsChasing { get; set; }
+	public bool IsSleeping { get; set; }
+	public override bool IsNpc { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public int TopologyPreference() { }
+	public int TopologyPreference() { }
 
-public override float GetExtrapolationTime() { }
+	public override float GetExtrapolationTime() { }
 
-public override void OnSignal(BaseEntity.Signal signal, string arg) { }
+	public override void OnSignal(BaseEntity.Signal signal, string arg) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-public static void ClientCycle(float deltaTime) { }
+	public static void ClientCycle(float deltaTime) { }
 
-public override void MakeVisible() { }
+	public override void MakeVisible() { }
 
-protected void ClientUpdate() { }
+	protected void ClientUpdate() { }
 
-public static List<BaseNpc> get_VisibleNpcList() { }
+	public static List<BaseNpc> get_VisibleNpcList() { }
 
-public static void ClearVisibility() { }
+	public static void ClearVisibility() { }
 
-public static void RegisterForVisibility(BaseNpc npc) { }
+	public static void RegisterForVisibility(BaseNpc npc) { }
 
-public static void UnregisterFromVisibility(BaseNpc npc) { }
+	public static void UnregisterFromVisibility(BaseNpc npc) { }
 
-public override void SetNetworkRotation(Quaternion rot) { }
+	public override void SetNetworkRotation(Quaternion rot) { }
 
-public override Quaternion GetNetworkRotation() { }
-
-	[BaseEntity.RPC_Client] 
-public virtual void Eat(Vector3 position) { }
+	public override Quaternion GetNetworkRotation() { }
 
 	[BaseEntity.RPC_Client] 
-public virtual void Attack(Vector3 position) { }
+	public virtual void Eat(Vector3 position) { }
 
 	[BaseEntity.RPC_Client] 
-public virtual void Startled(Vector3 position) { }
+	public virtual void Attack(Vector3 position) { }
 
-public bool HasAiFlag(BaseNpc.AiFlags f) { }
+	[BaseEntity.RPC_Client] 
+	public virtual void Startled(Vector3 position) { }
 
-public void SetAiFlag(BaseNpc.AiFlags f, bool set) { }
+	public bool HasAiFlag(BaseNpc.AiFlags f) { }
 
-public bool get_IsSitting() { }
+	public void SetAiFlag(BaseNpc.AiFlags f, bool set) { }
 
-public void set_IsSitting(bool value) { }
+	public bool get_IsSitting() { }
 
-public bool get_IsChasing() { }
+	public void set_IsSitting(bool value) { }
 
-public void set_IsChasing(bool value) { }
+	public bool get_IsChasing() { }
 
-public bool get_IsSleeping() { }
+	public void set_IsChasing(bool value) { }
 
-public void set_IsSleeping(bool value) { }
+	public bool get_IsSleeping() { }
 
-public static void UpdateNpcVisibilities() { }
+	public void set_IsSleeping(bool value) { }
 
-private float TimeSinceSeen() { }
+	public static void UpdateNpcVisibilities() { }
 
-private void SetNextVisThink(float addTime) { }
+	private float TimeSinceSeen() { }
 
-private bool WantsVisUpdate() { }
+	private void SetNextVisThink(float addTime) { }
 
-protected override void UpdateCullingSpheres() { }
+	private bool WantsVisUpdate() { }
 
-private void VisUpdateUsingCulling(float dist, bool visibility) { }
+	protected override void UpdateCullingSpheres() { }
 
-protected override void OnVisibilityChanged(bool visible) { }
+	private void VisUpdateUsingCulling(float dist, bool visibility) { }
 
-private void VisUpdate() { }
+	protected override void OnVisibilityChanged(bool visible) { }
 
-public override bool get_IsNpc() { }
+	private void VisUpdate() { }
 
-public override float MaxVelocity() { }
+	public override bool get_IsNpc() { }
 
-public void .ctor() { }
+	public override float MaxVelocity() { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum BaseNpc.AiFlags // TypeDefIndex: 8526
 {
 	public int value__; 
-public const BaseNpc.AiFlags Sitting = 2;
-public const BaseNpc.AiFlags Chasing = 4;
-public const BaseNpc.AiFlags Sleeping = 8;
+	public const BaseNpc.AiFlags Sitting = 2;
+	public const BaseNpc.AiFlags Chasing = 4;
+	public const BaseNpc.AiFlags Sleeping = 8;
 
 }
 
@@ -276,16 +276,16 @@ public struct BaseNpc.AiStatistics // TypeDefIndex: 8527
 public enum BaseNpc.AiStatistics.FamilyEnum // TypeDefIndex: 8528
 {
 	public int value__; 
-public const BaseNpc.AiStatistics.FamilyEnum Bear = 0;
-public const BaseNpc.AiStatistics.FamilyEnum Wolf = 1;
-public const BaseNpc.AiStatistics.FamilyEnum Deer = 2;
-public const BaseNpc.AiStatistics.FamilyEnum Boar = 3;
-public const BaseNpc.AiStatistics.FamilyEnum Chicken = 4;
-public const BaseNpc.AiStatistics.FamilyEnum Horse = 5;
-public const BaseNpc.AiStatistics.FamilyEnum Zombie = 6;
-public const BaseNpc.AiStatistics.FamilyEnum Scientist = 7;
-public const BaseNpc.AiStatistics.FamilyEnum Murderer = 8;
-public const BaseNpc.AiStatistics.FamilyEnum Player = 9;
+	public const BaseNpc.AiStatistics.FamilyEnum Bear = 0;
+	public const BaseNpc.AiStatistics.FamilyEnum Wolf = 1;
+	public const BaseNpc.AiStatistics.FamilyEnum Deer = 2;
+	public const BaseNpc.AiStatistics.FamilyEnum Boar = 3;
+	public const BaseNpc.AiStatistics.FamilyEnum Chicken = 4;
+	public const BaseNpc.AiStatistics.FamilyEnum Horse = 5;
+	public const BaseNpc.AiStatistics.FamilyEnum Zombie = 6;
+	public const BaseNpc.AiStatistics.FamilyEnum Scientist = 7;
+	public const BaseNpc.AiStatistics.FamilyEnum Murderer = 8;
+	public const BaseNpc.AiStatistics.FamilyEnum Player = 9;
 
 }
 

@@ -4,41 +4,41 @@ public static class EAC // TypeDefIndex: 9185
 	public static string lastError; 
 	private static byte[] _lastTicket; 
 
-private static bool IsEacEnabled { get; }
-public static bool IsEncryptionSupported { get; }
+	private static bool IsEacEnabled { get; }
+	public static bool IsEncryptionSupported { get; }
 
 
-private static bool get_IsEacEnabled() { }
+	private static bool get_IsEacEnabled() { }
 
-public static bool get_IsEncryptionSupported() { }
+	public static bool get_IsEncryptionSupported() { }
 
-public static void Encrypt(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
+	public static void Encrypt(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
 
-public static void Decrypt(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
+	public static void Decrypt(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
 
-private static void OnLaunchProgress(object sender, LoadProgressEventArgs eventArgs) { }
+	private static void OnLaunchProgress(object sender, LoadProgressEventArgs eventArgs) { }
 
-private static void OnLaunchCompleted(object sender, LoadCompletedEventArgs eventArgs) { }
+	private static void OnLaunchCompleted(object sender, LoadCompletedEventArgs eventArgs) { }
 
-private static void OnStateChanged(object sender, StateChangedEventArgs eventArgs) { }
+	private static void OnStateChanged(object sender, StateChangedEventArgs eventArgs) { }
 
-private static void SendToServer(byte[] message, int messageLength) { }
+	private static void SendToServer(byte[] message, int messageLength) { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator DoStartup() { }
+	public static IEnumerator DoStartup() { }
 
-public static void DoShutdown() { }
+	public static void DoShutdown() { }
 
-public static void DoUpdate() { }
+	public static void DoUpdate() { }
 
 	[AsyncStateMachineAttribute] 
-public static Task OnJoinServer() { }
+	public static Task OnJoinServer() { }
 
-public static void OnLeaveServer() { }
+	public static void OnLeaveServer() { }
 
-public static void OnMessageReceived(Message message) { }
+	public static void OnMessageReceived(Message message) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -47,26 +47,26 @@ private sealed class EAC.<DoStartup>d__12 : IEnumerator<object>, IEnumerator, ID
 	private int <>1__state; 
 	private object <>2__current; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -77,10 +77,10 @@ private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 918
 	private TaskAwaiter<byte[]> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

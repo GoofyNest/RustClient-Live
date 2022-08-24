@@ -5,11 +5,11 @@ public class ToggleHUDLayer : MonoBehaviour, IClientComponent // TypeDefIndex: 1
 	public string hudComponentName; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void OnToggleChanged() { }
+	public void OnToggleChanged() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

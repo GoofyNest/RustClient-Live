@@ -4,7 +4,7 @@ public class SwitchLODMaterials : MonoBehaviour, IEditorComponent // TypeDefInde
 	public Material[] materialSet2; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

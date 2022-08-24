@@ -59,209 +59,209 @@ public class WaterSystem : MonoBehaviour // TypeDefIndex: 10626
 	private static GCHandle currentShoreWavesHandle; 
 	private float lastQualityChange; 
 
-public WaterGerstner.PrecomputedWave[] PrecomputedWaves { get; }
-public WaterGerstner.PrecomputedShoreWaves PrecomputedShoreWaves { get; }
-public Vector4 Global0 { get; }
-public Vector4 Global1 { get; }
-public float ShoreWavesRcpFadeDistance { get; set; }
-public float TerrainRcpFadeDistance { get; set; }
-public bool IsInitialized { get; set; }
-public static WaterCollision Collision { get; set; }
-public static WaterDynamics Dynamics { get; set; }
-public static WaterBody Ocean { get; set; }
-public static HashSet<WaterBody> WaterBodies { get; set; }
-public static float OceanLevel { get; set; }
-public static float WaveTime { get; set; }
-public bool HasCaustics { get; }
-public static Dictionary<WaterCamera, WaterRuntime> Runtimes { get; set; }
-public static HashSet<WaterDepthMask> DepthMasks { get; set; }
-public static WaterSystem Instance { get; }
+	public WaterGerstner.PrecomputedWave[] PrecomputedWaves { get; }
+	public WaterGerstner.PrecomputedShoreWaves PrecomputedShoreWaves { get; }
+	public Vector4 Global0 { get; }
+	public Vector4 Global1 { get; }
+	public float ShoreWavesRcpFadeDistance { get; set; }
+	public float TerrainRcpFadeDistance { get; set; }
+	public bool IsInitialized { get; set; }
+	public static WaterCollision Collision { get; set; }
+	public static WaterDynamics Dynamics { get; set; }
+	public static WaterBody Ocean { get; set; }
+	public static HashSet<WaterBody> WaterBodies { get; set; }
+	public static float OceanLevel { get; set; }
+	public static float WaveTime { get; set; }
+	public bool HasCaustics { get; }
+	public static Dictionary<WaterCamera, WaterRuntime> Runtimes { get; set; }
+	public static HashSet<WaterDepthMask> DepthMasks { get; set; }
+	public static WaterSystem Instance { get; }
 
 
-public WaterGerstner.PrecomputedWave[] get_PrecomputedWaves() { }
+	public WaterGerstner.PrecomputedWave[] get_PrecomputedWaves() { }
 
-public WaterGerstner.PrecomputedShoreWaves get_PrecomputedShoreWaves() { }
+	public WaterGerstner.PrecomputedShoreWaves get_PrecomputedShoreWaves() { }
 
-public Vector4 get_Global0() { }
+	public Vector4 get_Global0() { }
 
-public Vector4 get_Global1() { }
-
-	[CompilerGeneratedAttribute] 
-public float get_ShoreWavesRcpFadeDistance() { }
+	public Vector4 get_Global1() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ShoreWavesRcpFadeDistance(float value) { }
+	public float get_ShoreWavesRcpFadeDistance() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_TerrainRcpFadeDistance() { }
+	private void set_ShoreWavesRcpFadeDistance(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TerrainRcpFadeDistance(float value) { }
+	public float get_TerrainRcpFadeDistance() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsInitialized(bool value) { }
+	private void set_TerrainRcpFadeDistance(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsInitialized() { }
+	private void set_IsInitialized(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static WaterCollision get_Collision() { }
+	public bool get_IsInitialized() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Collision(WaterCollision value) { }
+	public static WaterCollision get_Collision() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Dynamics(WaterDynamics value) { }
+	private static void set_Collision(WaterCollision value) { }
 
 	[CompilerGeneratedAttribute] 
-public static WaterDynamics get_Dynamics() { }
+	private static void set_Dynamics(WaterDynamics value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Ocean(WaterBody value) { }
+	public static WaterDynamics get_Dynamics() { }
 
 	[CompilerGeneratedAttribute] 
-public static WaterBody get_Ocean() { }
+	private static void set_Ocean(WaterBody value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_WaterBodies(HashSet<WaterBody> value) { }
+	public static WaterBody get_Ocean() { }
 
 	[CompilerGeneratedAttribute] 
-public static HashSet<WaterBody> get_WaterBodies() { }
-
-public static float get_OceanLevel() { }
-
-public static void set_OceanLevel(float value) { }
+	private static void set_WaterBodies(HashSet<WaterBody> value) { }
 
 	[CompilerGeneratedAttribute] 
-public static float get_WaveTime() { }
+	public static HashSet<WaterBody> get_WaterBodies() { }
+
+	public static float get_OceanLevel() { }
+
+	public static void set_OceanLevel(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_WaveTime(float value) { }
-
-public bool get_HasCaustics() { }
+	public static float get_WaveTime() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Runtimes(Dictionary<WaterCamera, WaterRuntime> value) { }
+	private static void set_WaveTime(float value) { }
+
+	public bool get_HasCaustics() { }
 
 	[CompilerGeneratedAttribute] 
-public static Dictionary<WaterCamera, WaterRuntime> get_Runtimes() { }
+	private static void set_Runtimes(Dictionary<WaterCamera, WaterRuntime> value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_DepthMasks(HashSet<WaterDepthMask> value) { }
+	public static Dictionary<WaterCamera, WaterRuntime> get_Runtimes() { }
 
 	[CompilerGeneratedAttribute] 
-public static HashSet<WaterDepthMask> get_DepthMasks() { }
+	private static void set_DepthMasks(HashSet<WaterDepthMask> value) { }
 
-public static WaterSystem get_Instance() { }
+	[CompilerGeneratedAttribute] 
+	public static HashSet<WaterDepthMask> get_DepthMasks() { }
 
-private void CheckInstance() { }
+	public static WaterSystem get_Instance() { }
 
-public void Awake() { }
+	private void CheckInstance() { }
 
-private static extern void SetBaseConstants_Native(int shoreMapSize, ref Vector3 shoreMap, int waterHeightMapSize, ref short waterHeightMap, Vector4 packedParams) { }
+	public void Awake() { }
 
-private static extern void SetTerrainConstants_Native(int terrainHeightMapSize, ref short terrainHeightMap, Vector3 terrainPosition, Vector3 terrainSize) { }
+	private static extern void SetBaseConstants_Native(int shoreMapSize, ref Vector3 shoreMap, int waterHeightMapSize, ref short waterHeightMap, Vector4 packedParams) { }
 
-private static extern void SetGerstnerConstants_Native(Vector4 globalParams0, Vector4 globalParams1, ref Vector4 openWaves, ref Vector4 shoreWaves) { }
+	private static extern void SetTerrainConstants_Native(int terrainHeightMapSize, ref short terrainHeightMap, Vector3 terrainPosition, Vector3 terrainSize) { }
 
-private static extern void UpdateOceanLevel_Native(float oceanWaterLevel) { }
+	private static extern void SetGerstnerConstants_Native(Vector4 globalParams0, Vector4 globalParams1, ref Vector4 openWaves, ref Vector4 shoreWaves) { }
 
-private static extern float GetHeightArray_Native(int sampleCount, ref Vector2 pos, ref Vector2 posUV, ref Vector3 shore, ref float terrainHeight, ref float waterHeight) { }
+	private static extern void UpdateOceanLevel_Native(float oceanWaterLevel) { }
 
-private static extern float GetHeight_Native(Vector3 pos) { }
+	private static extern float GetHeightArray_Native(int sampleCount, ref Vector2 pos, ref Vector2 posUV, ref Vector3 shore, ref float terrainHeight, ref float waterHeight) { }
 
-private static extern bool CPU_SupportsSSE41() { }
+	private static extern float GetHeight_Native(Vector3 pos) { }
 
-private static void SetNativeConstants(TerrainTexturing terrainTexturing, TerrainWaterMap terrainWaterMap, TerrainHeightMap terrainHeightMap, Vector4 globalParams0, Vector4 globalParams1, Vector4[] openWaves, Vector4[] shoreWaves) { }
+	private static extern bool CPU_SupportsSSE41() { }
 
-private static void PinObject<T>(T value, ref T currentValue, ref GCHandle currentValueHandle) { }
-/* GenericInstMethod :
-|
-|-WaterSystem.PinObject<short[]>
-|-WaterSystem.PinObject<object>
-|-WaterSystem.PinObject<Vector3[]>
-|-WaterSystem.PinObject<Vector4[]>
-*/
+	private static void SetNativeConstants(TerrainTexturing terrainTexturing, TerrainWaterMap terrainWaterMap, TerrainHeightMap terrainHeightMap, Vector4 globalParams0, Vector4 globalParams1, Vector4[] openWaves, Vector4[] shoreWaves) { }
 
-private static float GetHeight_Managed(Vector3 pos) { }
+	private static void PinObject<T>(T value, ref T currentValue, ref GCHandle currentValueHandle) { }
+	/* GenericInstMethod :
+	|
+	|-WaterSystem.PinObject<short[]>
+	|-WaterSystem.PinObject<object>
+	|-WaterSystem.PinObject<Vector3[]>
+	|-WaterSystem.PinObject<Vector4[]>
+	*/
 
-public static void GetHeightArray_Managed(Vector2[] pos, Vector2[] posUV, Vector3[] shore, float[] terrainHeight, float[] waterHeight) { }
+	private static float GetHeight_Managed(Vector3 pos) { }
 
-public static float GetHeight(Vector3 pos) { }
+	public static void GetHeightArray_Managed(Vector2[] pos, Vector2[] posUV, Vector3[] shore, float[] terrainHeight, float[] waterHeight) { }
 
-public static void GetHeightArray(Vector2[] pos, Vector2[] posUV, Vector3[] shore, float[] terrainHeight, float[] waterHeight) { }
+	public static float GetHeight(Vector3 pos) { }
 
-public static Vector3 GetNormal(Vector3 pos) { }
+	public static void GetHeightArray(Vector2[] pos, Vector2[] posUV, Vector3[] shore, float[] terrainHeight, float[] waterHeight) { }
 
-public static void RegisterBody(WaterBody body) { }
+	public static Vector3 GetNormal(Vector3 pos) { }
 
-public static void UnregisterBody(WaterBody body) { }
+	public static void RegisterBody(WaterBody body) { }
 
-private void UpdateWaves() { }
+	public static void UnregisterBody(WaterBody body) { }
 
-private static void UpdateOceanLevel() { }
+	private void UpdateWaves() { }
 
-public void UpdateWaveData() { }
+	private static void UpdateOceanLevel() { }
 
-private void Update() { }
+	public void UpdateWaveData() { }
 
-private static void ShutdownRuntimes() { }
+	private void Update() { }
 
-public static void Clear() { }
+	private static void ShutdownRuntimes() { }
 
-public static void RegisterCamera(WaterCamera camera) { }
+	public static void Clear() { }
 
-public static void UnregisterCamera(WaterCamera camera) { }
+	public static void RegisterCamera(WaterCamera camera) { }
 
-public static void RegisterDepthMask(WaterDepthMask mask) { }
+	public static void UnregisterCamera(WaterCamera camera) { }
 
-public static void UnregisterDepthMask(WaterDepthMask mask) { }
+	public static void RegisterDepthMask(WaterDepthMask mask) { }
 
-private void CreateReflectionProbe() { }
+	public static void UnregisterDepthMask(WaterDepthMask mask) { }
 
-private void DestroyReflectionProbe() { }
+	private void CreateReflectionProbe() { }
 
-private void CheckReflectionProbe() { }
+	private void DestroyReflectionProbe() { }
 
-private void CreateDefaultHeightSlopeMap() { }
+	private void CheckReflectionProbe() { }
 
-private void DestroyDefaultHeightSlopeMap() { }
+	private void CreateDefaultHeightSlopeMap() { }
 
-private void OnEnable() { }
+	private void DestroyDefaultHeightSlopeMap() { }
 
-private void OnDisable() { }
+	private void OnEnable() { }
 
-public void UpdateClient() { }
+	private void OnDisable() { }
 
-private void DestroyComputeBuffer(ref ComputeBuffer buffer) { }
+	public void UpdateClient() { }
 
-private void UpdateWavesClient() { }
+	private void DestroyComputeBuffer(ref ComputeBuffer buffer) { }
 
-private void UpdateRuntimes() { }
+	private void UpdateWavesClient() { }
 
-public void UpdateMaterial(Material material) { }
+	private void UpdateRuntimes() { }
 
-public void ClearUnderwaterScatterCoefficientOverride() { }
+	public void UpdateMaterial(Material material) { }
 
-public void SetUnderwaterScatterCoefficientOverride(float scatterCoefficient) { }
+	public void ClearUnderwaterScatterCoefficientOverride() { }
 
-private void UpdateReflectionProbe() { }
+	public void SetUnderwaterScatterCoefficientOverride(float scatterCoefficient) { }
 
-public void ResetVisibility() { }
+	private void UpdateReflectionProbe() { }
 
-public void ToggleVisibility(int mask) { }
+	public void ResetVisibility() { }
 
-private void UpdateGlobalShaderProperties() { }
+	public void ToggleVisibility(int mask) { }
 
-private bool UpdateQuality() { }
+	private void UpdateGlobalShaderProperties() { }
 
-private void DisableFallbackPlane() { }
+	private bool UpdateQuality() { }
 
-private void UpdateKeywords() { }
+	private void DisableFallbackPlane() { }
 
-public void .ctor() { }
+	private void UpdateKeywords() { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -289,7 +289,7 @@ public class WaterSystem.SimulationSettings // TypeDefIndex: 10627
 	public float ShoreCrestFoamFadeDistance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -301,7 +301,7 @@ public class WaterSystem.RenderingSettings // TypeDefIndex: 10628
 	public WaterSystem.RenderingSettings.Caustics CausticsAnimation; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -311,7 +311,7 @@ public class WaterSystem.RenderingSettings.SkyProbe // TypeDefIndex: 10629
 	public bool TimeSlicing; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -324,7 +324,7 @@ public class WaterSystem.RenderingSettings.SSR // TypeDefIndex: 10630
 	public float ThicknessEndDist; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -335,16 +335,16 @@ public class WaterSystem.RenderingSettings.Caustics // TypeDefIndex: 10631
 	public Texture2D[] FramesDeep; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum WaterSystem.NativePathState // TypeDefIndex: 10632
 {
 	public int value__; 
-public const WaterSystem.NativePathState Initializing = 0;
-public const WaterSystem.NativePathState Failed = 1;
-public const WaterSystem.NativePathState Ready = 2;
+	public const WaterSystem.NativePathState Initializing = 0;
+	public const WaterSystem.NativePathState Failed = 1;
+	public const WaterSystem.NativePathState Ready = 2;
 
 }
 

@@ -7,13 +7,13 @@ public class ISONoise : PostEffectsBase // TypeDefIndex: 8028
 	private Material noiseMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private static void DrawNoiseQuadGrid(RenderTexture source, RenderTexture dest, Material fxMaterial, Texture2D noise, int passNr) { }
+	private static void DrawNoiseQuadGrid(RenderTexture source, RenderTexture dest, Material fxMaterial, Texture2D noise, int passNr) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

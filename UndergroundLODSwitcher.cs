@@ -3,13 +3,13 @@ public class UndergroundLODSwitcher : MonoBehaviour, IClientComponent // TypeDef
 	public LODComponent TargetComponent; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private bool IsUnderground() { }
+	private bool IsUnderground() { }
 
-private void Reset() { }
+	private void Reset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

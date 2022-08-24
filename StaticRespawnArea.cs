@@ -4,7 +4,7 @@ public class StaticRespawnArea : SleepingBag // TypeDefIndex: 9609
 	public bool allowHostileSpawns; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

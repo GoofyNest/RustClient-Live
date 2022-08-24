@@ -58,161 +58,161 @@ public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 9450
 	[CompilerGeneratedAttribute] 
 	private float <AnsweringMachineMessageLength>k__BackingField; 
 
-public int MaxVoicemailSlots { get; }
-public BasePlayer currentPlayer { get; set; }
-private bool isServer { get; }
-public int lastDialedNumber { get; set; }
-public PhoneDirectory savedNumbers { get; set; }
-public BaseEntity ParentEntity { get; }
-private Cassette cachedCassette { get; }
-public Telephone.CallState clientCallState { get; set; }
-public PhoneDialler CurrentDialog { get; set; }
-public float CallDuration { get; }
-public PhoneDirectory currentDirectory { get; set; }
-public int ConnectedCallPhoneNumber { get; set; }
-public TimeSince AnsweringMessageStartTime { get; set; }
-public float AnsweringMachineMessageLength { get; set; }
-public bool IsDead { get; }
+	public int MaxVoicemailSlots { get; }
+	public BasePlayer currentPlayer { get; set; }
+	private bool isServer { get; }
+	public int lastDialedNumber { get; set; }
+	public PhoneDirectory savedNumbers { get; set; }
+	public BaseEntity ParentEntity { get; }
+	private Cassette cachedCassette { get; }
+	public Telephone.CallState clientCallState { get; set; }
+	public PhoneDialler CurrentDialog { get; set; }
+	public float CallDuration { get; }
+	public PhoneDirectory currentDirectory { get; set; }
+	public int ConnectedCallPhoneNumber { get; set; }
+	public TimeSince AnsweringMessageStartTime { get; set; }
+	public float AnsweringMachineMessageLength { get; set; }
+	public bool IsDead { get; }
 
 
-public void PlayVoicemail(uint id) { }
+	public void PlayVoicemail(uint id) { }
 
-public void StopVoicemail() { }
+	public void StopVoicemail() { }
 
-public void DeleteVoicemail(uint id) { }
+	public void DeleteVoicemail(uint id) { }
 
-public void ClientToggleVoicemail(BaseEntity.RPCMessage msg) { }
+	public void ClientToggleVoicemail(BaseEntity.RPCMessage msg) { }
 
-public int get_MaxVoicemailSlots() { }
+	public int get_MaxVoicemailSlots() { }
 
-public BasePlayer get_currentPlayer() { }
+	public BasePlayer get_currentPlayer() { }
 
-public void set_currentPlayer(BasePlayer value) { }
+	public void set_currentPlayer(BasePlayer value) { }
 
-private bool get_isServer() { }
-
-	[CompilerGeneratedAttribute] 
-public int get_lastDialedNumber() { }
+	private bool get_isServer() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_lastDialedNumber(int value) { }
+	public int get_lastDialedNumber() { }
 
 	[CompilerGeneratedAttribute] 
-public PhoneDirectory get_savedNumbers() { }
+	public void set_lastDialedNumber(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_savedNumbers(PhoneDirectory value) { }
-
-public BaseEntity get_ParentEntity() { }
-
-private Cassette get_cachedCassette() { }
+	public PhoneDirectory get_savedNumbers() { }
 
 	[CompilerGeneratedAttribute] 
-public Telephone.CallState get_clientCallState() { }
+	public void set_savedNumbers(PhoneDirectory value) { }
+
+	public BaseEntity get_ParentEntity() { }
+
+	private Cassette get_cachedCassette() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_clientCallState(Telephone.CallState value) { }
+	public Telephone.CallState get_clientCallState() { }
 
 	[CompilerGeneratedAttribute] 
-public PhoneDialler get_CurrentDialog() { }
+	private void set_clientCallState(Telephone.CallState value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentDialog(PhoneDialler value) { }
-
-public float get_CallDuration() { }
+	public PhoneDialler get_CurrentDialog() { }
 
 	[CompilerGeneratedAttribute] 
-public PhoneDirectory get_currentDirectory() { }
+	private void set_CurrentDialog(PhoneDialler value) { }
+
+	public float get_CallDuration() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_currentDirectory(PhoneDirectory value) { }
+	public PhoneDirectory get_currentDirectory() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_ConnectedCallPhoneNumber() { }
+	private void set_currentDirectory(PhoneDirectory value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ConnectedCallPhoneNumber(int value) { }
-
-public void OpenDialler(BasePlayer player) { }
-
-public void AnswerPhone(BasePlayer player) { }
-
-public void AnswerViaUI() { }
-
-public void OnClosedDialler(BasePlayer player) { }
-
-public void OnLocalPlayerCancelled() { }
-
-public void UpdatePhoneNumber(BaseEntity.RPCMessage msg) { }
-
-public void SetClientState(BaseEntity.RPCMessage msg) { }
-
-private void ToggleRingingLight() { }
-
-public void ControllerLateUpdate() { }
-
-public void DialNumber(int number) { }
-
-public void ClientOnDialFailed(BaseEntity.RPCMessage msg) { }
-
-public void ClientReceiveAnsweringData(BaseEntity.RPCMessage msg, Cassette cachedCassette) { }
-
-public void ClientPlayAnsweringMessage(BaseEntity.RPCMessage msg) { }
+	public int get_ConnectedCallPhoneNumber() { }
 
 	[CompilerGeneratedAttribute] 
-public TimeSince get_AnsweringMessageStartTime() { }
+	private void set_ConnectedCallPhoneNumber(int value) { }
+
+	public void OpenDialler(BasePlayer player) { }
+
+	public void AnswerPhone(BasePlayer player) { }
+
+	public void AnswerViaUI() { }
+
+	public void OnClosedDialler(BasePlayer player) { }
+
+	public void OnLocalPlayerCancelled() { }
+
+	public void UpdatePhoneNumber(BaseEntity.RPCMessage msg) { }
+
+	public void SetClientState(BaseEntity.RPCMessage msg) { }
+
+	private void ToggleRingingLight() { }
+
+	public void ControllerLateUpdate() { }
+
+	public void DialNumber(int number) { }
+
+	public void ClientOnDialFailed(BaseEntity.RPCMessage msg) { }
+
+	public void ClientReceiveAnsweringData(BaseEntity.RPCMessage msg, Cassette cachedCassette) { }
+
+	public void ClientPlayAnsweringMessage(BaseEntity.RPCMessage msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_AnsweringMessageStartTime(TimeSince value) { }
+	public TimeSince get_AnsweringMessageStartTime() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_AnsweringMachineMessageLength() { }
+	private void set_AnsweringMessageStartTime(TimeSince value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_AnsweringMachineMessageLength(float value) { }
-
-private void PlayAnsweringMessage(AudioClip clip, bool canLeaveVoicemail) { }
-
-public void InitiateVoicemailRecord() { }
-
-public void FinishVoicemailRecording() { }
-
-public void ClientHangUp() { }
-
-public void OnIncomingCallDuringCall() { }
-
-public void OnReceivedVoice(BaseEntity.RPCMessage msg) { }
-
-public void SubmitNewName(string newName) { }
-
-public bool RequestPhoneDirectory(int page) { }
-
-public void ReceivePhoneDirectory(BaseEntity.RPCMessage msg) { }
-
-public void Client_AddSavedNumber(uint number, string savedPhoneName) { }
-
-public void Client_RemoveSavedNumber(uint number) { }
-
-public void OnClientLoaded() { }
-
-public bool get_IsDead() { }
-
-private bool IsPowered() { }
-
-public bool IsSavedContactValid(string contactName, int contactNumber) { }
-
-public void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
-
-public void .ctor() { }
+	public float get_AnsweringMachineMessageLength() { }
 
 	[CompilerGeneratedAttribute] 
-private void <ClientToggleVoicemail>b__3_0(AudioClip clip, bool success) { }
+	private void set_AnsweringMachineMessageLength(float value) { }
+
+	private void PlayAnsweringMessage(AudioClip clip, bool canLeaveVoicemail) { }
+
+	public void InitiateVoicemailRecord() { }
+
+	public void FinishVoicemailRecording() { }
+
+	public void ClientHangUp() { }
+
+	public void OnIncomingCallDuringCall() { }
+
+	public void OnReceivedVoice(BaseEntity.RPCMessage msg) { }
+
+	public void SubmitNewName(string newName) { }
+
+	public bool RequestPhoneDirectory(int page) { }
+
+	public void ReceivePhoneDirectory(BaseEntity.RPCMessage msg) { }
+
+	public void Client_AddSavedNumber(uint number, string savedPhoneName) { }
+
+	public void Client_RemoveSavedNumber(uint number) { }
+
+	public void OnClientLoaded() { }
+
+	public bool get_IsDead() { }
+
+	private bool IsPowered() { }
+
+	public bool IsSavedContactValid(string contactName, int contactNumber) { }
+
+	public void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <ClientReceiveAnsweringData>b__93_0(AudioClip clip, bool success) { }
+	private void <ClientToggleVoicemail>b__3_0(AudioClip clip, bool success) { }
 
 	[CompilerGeneratedAttribute] 
-private void <ClientPlayAnsweringMessage>b__94_0(AudioClip clip, bool success) { }
+	private void <ClientReceiveAnsweringData>b__93_0(AudioClip clip, bool success) { }
+
+	[CompilerGeneratedAttribute] 
+	private void <ClientPlayAnsweringMessage>b__94_0(AudioClip clip, bool success) { }
 
 }
 

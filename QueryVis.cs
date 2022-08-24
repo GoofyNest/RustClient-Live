@@ -8,17 +8,17 @@ public class QueryVis : BaseMonoBehaviour, IClientComponent, IOnParentDestroying
 	private float lastCPUSampleValue; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public float SampleVisibility() { }
+	public float SampleVisibility() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public float SampleVisibilityCPU() { }
+	public float SampleVisibilityCPU() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

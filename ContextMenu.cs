@@ -5,11 +5,11 @@ public sealed class ContextMenu : Attribute // TypeDefIndex: 3497
 	public readonly int priority; 
 
 
-public void .ctor(string itemName) { }
+	public void .ctor(string itemName) { }
 
-public void .ctor(string itemName, bool isValidateFunction) { }
+	public void .ctor(string itemName, bool isValidateFunction) { }
 
-public void .ctor(string itemName, bool isValidateFunction, int priority) { }
+	public void .ctor(string itemName, bool isValidateFunction, int priority) { }
 
 }
 

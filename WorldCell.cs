@@ -7,17 +7,17 @@ public class WorldCell // TypeDefIndex: 10080
 	private List<GameObject> instances; 
 
 
-public void .ctor(Vector3 position, float size) { }
+	public void .ctor(Vector3 position, float size) { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-private void Show() { }
+	private void Show() { }
 
-private void Hide() { }
+	private void Hide() { }
 
-public WorldCell.PrefabInfo Add(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
+	public WorldCell.PrefabInfo Add(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
 
-public static bool op_Implicit(WorldCell cell) { }
+	public static bool op_Implicit(WorldCell cell) { }
 
 }
 
@@ -30,9 +30,9 @@ public class WorldCell.PrefabInfo // TypeDefIndex: 10081
 	public Vector3 scale; 
 
 
-public void .ctor(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
+	public void .ctor(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
 
-public GameObject Spawn() { }
+	public GameObject Spawn() { }
 
 }
 

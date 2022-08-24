@@ -11,11 +11,11 @@ public class ScaleBySpeed : MonoBehaviour // TypeDefIndex: 9232
 	private Vector3 prevPosition; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

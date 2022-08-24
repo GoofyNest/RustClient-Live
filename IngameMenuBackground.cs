@@ -4,11 +4,11 @@ public class IngameMenuBackground : MonoBehaviour // TypeDefIndex: 10978
 	public CanvasGroup canvasGroup; 
 
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -4,13 +4,13 @@ public abstract class SubsystemDescriptor : ISubsystemDescriptor // TypeDefIndex
 	[CompilerGeneratedAttribute] 
 	private string <id>k__BackingField; 
 
-public string id { get; }
+	public string id { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_id() { }
+	public string get_id() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

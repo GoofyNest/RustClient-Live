@@ -5,17 +5,17 @@ public class ConstructionGrade : PrefabAttribute // TypeDefIndex: 9057
 	public GameObjectRef skinObject; 
 	internal List<ItemAmount> _costToBuild; 
 
-public float maxHealth { get; }
-public List<ItemAmount> costToBuild { get; }
+	public float maxHealth { get; }
+	public List<ItemAmount> costToBuild { get; }
 
 
-public float get_maxHealth() { }
+	public float get_maxHealth() { }
 
-public List<ItemAmount> get_costToBuild() { }
+	public List<ItemAmount> get_costToBuild() { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

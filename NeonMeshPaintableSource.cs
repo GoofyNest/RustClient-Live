@@ -9,14 +9,14 @@ public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 8834
 	public Color bottomRight; 
 
 
-public override void UpdateMaterials(MaterialPropertyBlock block, Texture2D textureOverride, bool forEditing = False, bool isSelected = False) { }
+	public override void UpdateMaterials(MaterialPropertyBlock block, Texture2D textureOverride, bool forEditing = False, bool isSelected = False) { }
 
-public override Color32[] UpdateFrom(Texture2D input) { }
+	public override Color32[] UpdateFrom(Texture2D input) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private Color <UpdateFrom>g__GetColorForRegion|8_0(int x, int y, int regionWidth, int regionHeight, ref NeonMeshPaintableSource.<>c__DisplayClass8_0 ) { }
+	private Color <UpdateFrom>g__GetColorForRegion|8_0(int x, int y, int regionWidth, int regionHeight, ref NeonMeshPaintableSource.<>c__DisplayClass8_0 ) { }
 
 }
 

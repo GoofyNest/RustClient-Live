@@ -4,9 +4,9 @@ public class BaseCollision : MonoBehaviour, IClientComponent // TypeDefIndex: 92
 	public Model model; 
 
 
-public virtual void TraceTest(HitTest test, List<TraceInfo> hits) { }
+	public virtual void TraceTest(HitTest test, List<TraceInfo> hits) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,31 +5,31 @@ public class RangeItemHeaderValue : ICloneable // TypeDefIndex: 5805
 	[CompilerGeneratedAttribute] 
 	private Nullable<long> <To>k__BackingField; 
 
-public Nullable<long> From { get; set; }
-public Nullable<long> To { get; set; }
+	public Nullable<long> From { get; set; }
+	public Nullable<long> To { get; set; }
 
 
-public void .ctor(Nullable<long> from, Nullable<long> to) { }
-
-	[CompilerGeneratedAttribute] 
-public Nullable<long> get_From() { }
+	public void .ctor(Nullable<long> from, Nullable<long> to) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_From(Nullable<long> value) { }
+	public Nullable<long> get_From() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<long> get_To() { }
+	private void set_From(Nullable<long> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_To(Nullable<long> value) { }
+	public Nullable<long> get_To() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	private void set_To(Nullable<long> value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public override string ToString() { }
+	public override int GetHashCode() { }
+
+	public override string ToString() { }
 
 }
 

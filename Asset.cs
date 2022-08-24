@@ -18,7 +18,7 @@ internal sealed class AssetFileNameExtensionAttribute : Attribute
 	private readonly IEnumerable<string> <otherExtensions>k__BackingField; 
 
 
-public void .ctor(string preferredExtension, string[] otherExtensions) { }
+	public void .ctor(string preferredExtension, string[] otherExtensions) { }
 
 }
 
@@ -39,89 +39,89 @@ public class AssetBundle : Object // TypeDefIndex: 3992
 [NativeHeaderAttribute] 
 public class AssetBundle : Object 
 
-private void .ctor() { }
+	private void .ctor() { }
 
 	[FreeFunctionAttribute] 
-internal static AssetBundleCreateRequest LoadFromFileAsync_Internal(string path, uint crc, ulong offset) { }
+	internal static AssetBundleCreateRequest LoadFromFileAsync_Internal(string path, uint crc, ulong offset) { }
 
-public static AssetBundleCreateRequest LoadFromFileAsync(string path) { }
+	public static AssetBundleCreateRequest LoadFromFileAsync(string path) { }
 
 	[FreeFunctionAttribute] 
-internal static AssetBundle LoadFromFile_Internal(string path, uint crc, ulong offset) { }
+	internal static AssetBundle LoadFromFile_Internal(string path, uint crc, ulong offset) { }
 
-public static AssetBundle LoadFromFile(string path) { }
+	public static AssetBundle LoadFromFile(string path) { }
 
 	[NativeMethodAttribute] 
-public bool Contains(string name) { }
+	public bool Contains(string name) { }
 
-public T LoadAsset<T>(string name) { }
-/* GenericInstMethod :
-|
-|-AssetBundle.LoadAsset<WorkshopSkinBase>
-|-AssetBundle.LoadAsset<object>
-*/
+	public T LoadAsset<T>(string name) { }
+	/* GenericInstMethod :
+	|
+	|-AssetBundle.LoadAsset<WorkshopSkinBase>
+	|-AssetBundle.LoadAsset<object>
+	*/
 
 	[TypeInferenceRuleAttribute] 
-public Object LoadAsset(string name, Type type) { }
+	public Object LoadAsset(string name, Type type) { }
 
 	[NativeThrowsAttribute] 
 	[TypeInferenceRuleAttribute] 
 	[NativeMethodAttribute] 
-private Object LoadAsset_Internal(string name, Type type) { }
+	private Object LoadAsset_Internal(string name, Type type) { }
 
-public AssetBundleRequest LoadAssetAsync(string name) { }
+	public AssetBundleRequest LoadAssetAsync(string name) { }
 
-public AssetBundleRequest LoadAssetAsync<T>(string name) { }
-/* GenericInstMethod :
-|
-|-AssetBundle.LoadAssetAsync<object>
-|-AssetBundle.LoadAssetAsync<Sprite>
-|-AssetBundle.LoadAssetAsync<TextAsset>
-|-AssetBundle.LoadAssetAsync<Texture2D>
-*/
+	public AssetBundleRequest LoadAssetAsync<T>(string name) { }
+	/* GenericInstMethod :
+	|
+	|-AssetBundle.LoadAssetAsync<object>
+	|-AssetBundle.LoadAssetAsync<Sprite>
+	|-AssetBundle.LoadAssetAsync<TextAsset>
+	|-AssetBundle.LoadAssetAsync<Texture2D>
+	*/
 
-public AssetBundleRequest LoadAssetAsync(string name, Type type) { }
+	public AssetBundleRequest LoadAssetAsync(string name, Type type) { }
 
-internal static T[] ConvertObjects<T>(Object[] rawObjects) { }
-/* GenericInstMethod :
-|
-|-AssetBundle.ConvertObjects<object>
-*/
+	internal static T[] ConvertObjects<T>(Object[] rawObjects) { }
+	/* GenericInstMethod :
+	|
+	|-AssetBundle.ConvertObjects<object>
+	*/
 
-public T[] LoadAllAssets<T>() { }
-/* GenericInstMethod :
-|
-|-AssetBundle.LoadAllAssets<AssetBundleManifest>
-|-AssetBundle.LoadAllAssets<object>
-*/
+	public T[] LoadAllAssets<T>() { }
+	/* GenericInstMethod :
+	|
+	|-AssetBundle.LoadAllAssets<AssetBundleManifest>
+	|-AssetBundle.LoadAllAssets<object>
+	*/
 
-public Object[] LoadAllAssets(Type type) { }
-
-	[NativeThrowsAttribute] 
-	[NativeMethodAttribute] 
-private AssetBundleRequest LoadAssetAsync_Internal(string name, Type type) { }
-
-	[NativeMethodAttribute] 
-public void Unload(bool unloadAllLoadedObjects) { }
-
-	[NativeMethodAttribute] 
-public string[] GetAllAssetNames() { }
+	public Object[] LoadAllAssets(Type type) { }
 
 	[NativeThrowsAttribute] 
 	[NativeMethodAttribute] 
-internal Object[] LoadAssetWithSubAssets_Internal(string name, Type type) { }
+	private AssetBundleRequest LoadAssetAsync_Internal(string name, Type type) { }
+
+	[NativeMethodAttribute] 
+	public void Unload(bool unloadAllLoadedObjects) { }
+
+	[NativeMethodAttribute] 
+	public string[] GetAllAssetNames() { }
+
+	[NativeThrowsAttribute] 
+	[NativeMethodAttribute] 
+	internal Object[] LoadAssetWithSubAssets_Internal(string name, Type type) { }
 
 }
 
 public class AssetBundleCreateRequest : AsyncOperation // TypeDefIndex: 3993
 {
-public AssetBundle assetBundle { get; }
+	public AssetBundle assetBundle { get; }
 
 
 	[NativeMethodAttribute] 
-public AssetBundle get_assetBundle() { }
+	public AssetBundle get_assetBundle() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -129,7 +129,7 @@ public class AssetBundleManifest : Object // TypeDefIndex: 3994
 {
 
 	[NativeMethodAttribute] 
-public string[] GetAllAssetBundles() { }
+	public string[] GetAllAssetBundles() { }
 
 }
 
@@ -139,13 +139,13 @@ public class AssetBundleRequest : AsyncOperation // TypeDefIndex: 3996
 [NativeHeaderAttribute] 
 [RequiredByNativeCodeAttribute] 
 public class AssetBundleRequest : AsyncOperation 
-public Object asset { get; }
+	public Object asset { get; }
 
 
 	[NativeMethodAttribute] 
-public Object get_asset() { }
+	public Object get_asset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -154,25 +154,25 @@ public static class AssetPool // TypeDefIndex: 6562
 	public static Dictionary<Type, AssetPool.Pool> storage; 
 
 
-public static T Get<T>() { }
-/* GenericInstMethod :
-|
-|-AssetPool.Get<Mesh>
-|-AssetPool.Get<object>
-*/
+	public static T Get<T>() { }
+	/* GenericInstMethod :
+	|
+	|-AssetPool.Get<Mesh>
+	|-AssetPool.Get<object>
+	*/
 
-public static void Free(ref Mesh mesh) { }
+	public static void Free(ref Mesh mesh) { }
 
-private static AssetPool.Pool GetPool<T>() { }
-/* GenericInstMethod :
-|
-|-AssetPool.GetPool<object>
-|-AssetPool.GetPool<Mesh>
-*/
+	private static AssetPool.Pool GetPool<T>() { }
+	/* GenericInstMethod :
+	|
+	|-AssetPool.GetPool<object>
+	|-AssetPool.GetPool<Mesh>
+	*/
 
-public static void Clear() { }
+	public static void Clear() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -184,22 +184,22 @@ public class AssetPool.Pool // TypeDefIndex: 6563
 	public string name; 
 
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
-public T Pop<T>() { }
-/* GenericInstMethod :
-|
-|-AssetPool.Pool.Pop<object>
-*/
+	public T Pop<T>() { }
+	/* GenericInstMethod :
+	|
+	|-AssetPool.Pool.Pop<object>
+	*/
 
-public void Push<T>(ref T instance) { }
-/* GenericInstMethod :
-|
-|-AssetPool.Pool.Push<object>
-|-AssetPool.Pool.Push<Mesh>
-*/
+	public void Push<T>(ref T instance) { }
+	/* GenericInstMethod :
+	|
+	|-AssetPool.Pool.Push<object>
+	|-AssetPool.Pool.Push<Mesh>
+	*/
 
-public void Clear() { }
+	public void Clear() { }
 
 }
 
@@ -215,45 +215,45 @@ public class AssetBundleBackend : FileSystemBackend, IDisposable
 	[CompilerGeneratedAttribute] 
 	private float <LoadProgress>k__BackingField; 
 
-public static bool Enabled { get; }
-public float LoadProgress { get; set; }
+	public static bool Enabled { get; }
+	public float LoadProgress { get; set; }
 
 
-public static bool get_Enabled() { }
-
-	[CompilerGeneratedAttribute] 
-public float get_LoadProgress() { }
+	public static bool get_Enabled() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_LoadProgress(float value) { }
+	public float get_LoadProgress() { }
 
-public void Load(string assetRoot) { }
+	[CompilerGeneratedAttribute] 
+	private void set_LoadProgress(float value) { }
 
-private AssetBundle LoadBundle(string bundleName) { }
+	public void Load(string assetRoot) { }
 
-public void BuildFileIndex() { }
+	private AssetBundle LoadBundle(string bundleName) { }
 
-public void Dispose() { }
+	public void BuildFileIndex() { }
 
-public override List<string> UnloadBundles(string partialName) { }
+	public void Dispose() { }
 
-protected override T LoadAsset<T>(string filePath) { }
-/* GenericInstMethod :
-|
-|-AssetBundleBackend.LoadAsset<object>
-*/
+	public override List<string> UnloadBundles(string partialName) { }
 
-protected override LoadAssetsResult LoadAssetsAsync(List<string> filePaths, int maxConcurrency, int priority) { }
+	protected override T LoadAsset<T>(string filePath) { }
+	/* GenericInstMethod :
+	|
+	|-AssetBundleBackend.LoadAsset<object>
+	*/
 
-protected override string[] LoadAssetList(string folder, string search) { }
+	protected override LoadAssetsResult LoadAssetsAsync(List<string> filePaths, int maxConcurrency, int priority) { }
 
-public override T[] LoadAllFromBundle<T>(string bundleName, string editorSearch) { }
-/* GenericInstMethod :
-|
-|-AssetBundleBackend.LoadAllFromBundle<object>
-*/
+	protected override string[] LoadAssetList(string folder, string search) { }
 
-public void .ctor() { }
+	public override T[] LoadAllFromBundle<T>(string bundleName, string editorSearch) { }
+	/* GenericInstMethod :
+	|
+	|-AssetBundleBackend.LoadAllFromBundle<object>
+	*/
+
+	public void .ctor() { }
 
 }
 
@@ -264,13 +264,13 @@ private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6
 	public int priority; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <LoadAssetsAsync>b__0(string p) { }
+	internal bool <LoadAssetsAsync>b__0(string p) { }
 
-internal AssetBundle <LoadAssetsAsync>b__1(string p) { }
+	internal AssetBundle <LoadAssetsAsync>b__1(string p) { }
 
-internal LoadAssetsResult <LoadAssetsAsync>b__2(IGrouping<AssetBundle, string> g) { }
+	internal LoadAssetsResult <LoadAssetsAsync>b__2(IGrouping<AssetBundle, string> g) { }
 
 }
 
@@ -280,11 +280,11 @@ private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6653
 	public static Func<string, string> <>9__17_3; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <LoadAssetsAsync>b__17_3(string p) { }
+	internal string <LoadAssetsAsync>b__17_3(string p) { }
 
 }
 
@@ -294,9 +294,9 @@ private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6
 	public Func<KeyValuePair<string, AssetBundle>, bool> <>9__0; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <LoadAssetList>b__0(KeyValuePair<string, AssetBundle> x) { }
+	internal bool <LoadAssetList>b__0(KeyValuePair<string, AssetBundle> x) { }
 
 }
 
@@ -311,19 +311,19 @@ internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6
 	private readonly List<ValueTuple<string, AssetBundleRequest>> _pendingRequests; 
 	private int _index; 
 
-public override int TotalCount { get; }
-public override bool keepWaiting { get; }
+	public override int TotalCount { get; }
+	public override bool keepWaiting { get; }
 
 
-public override int get_TotalCount() { }
+	public override int get_TotalCount() { }
 
-internal void .ctor(AssetBundle bundle, List<string> filePaths, int maxConcurrency, int priority) { }
+	internal void .ctor(AssetBundle bundle, List<string> filePaths, int maxConcurrency, int priority) { }
 
-public override bool get_keepWaiting() { }
+	public override bool get_keepWaiting() { }
 
-private bool Update() { }
+	private bool Update() { }
 
-public override Dictionary<string, Object> GetResult() { }
+	public override Dictionary<string, Object> GetResult() { }
 
 }
 
@@ -334,24 +334,24 @@ public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6656
 	private readonly List<ValueTuple<string, Object>> _loaded; 
 	private readonly int _alreadyLoadedCount; 
 
-public int TotalCount { get; }
-public int CompletedCount { get; }
+	public int TotalCount { get; }
+	public int CompletedCount { get; }
 	[TupleElementNamesAttribute] 
-public IReadOnlyList<ValueTuple<string, Object>> Results { get; }
-public override bool keepWaiting { get; }
+	public IReadOnlyList<ValueTuple<string, Object>> Results { get; }
+	public override bool keepWaiting { get; }
 
 
-internal void .ctor(FileSystemBackend backend, LoadAssetsResult load, List<ValueTuple<string, Object>> loaded) { }
+	internal void .ctor(FileSystemBackend backend, LoadAssetsResult load, List<ValueTuple<string, Object>> loaded) { }
 
-public int get_TotalCount() { }
+	public int get_TotalCount() { }
 
-public int get_CompletedCount() { }
+	public int get_CompletedCount() { }
 
-public IReadOnlyList<ValueTuple<string, Object>> get_Results() { }
+	public IReadOnlyList<ValueTuple<string, Object>> get_Results() { }
 
-public override bool get_keepWaiting() { }
+	public override bool get_keepWaiting() { }
 
-private void OnAssetLoaded(string path, Object obj) { }
+	private void OnAssetLoaded(string path, Object obj) { }
 
 }
 
@@ -362,58 +362,58 @@ public static class AssetNameCache // TypeDefIndex: 10715
 	private static Dictionary<Object, string> upper; 
 
 
-private static string LookupName(Object obj) { }
+	private static string LookupName(Object obj) { }
 
-private static string LookupNameLower(Object obj) { }
+	private static string LookupNameLower(Object obj) { }
 
-private static string LookupNameUpper(Object obj) { }
-
-	[ExtensionAttribute] 
-public static string GetName(PhysicMaterial mat) { }
+	private static string LookupNameUpper(Object obj) { }
 
 	[ExtensionAttribute] 
-public static string GetNameLower(PhysicMaterial mat) { }
+	public static string GetName(PhysicMaterial mat) { }
 
 	[ExtensionAttribute] 
-public static string GetNameUpper(PhysicMaterial mat) { }
+	public static string GetNameLower(PhysicMaterial mat) { }
 
 	[ExtensionAttribute] 
-public static string GetName(Material mat) { }
+	public static string GetNameUpper(PhysicMaterial mat) { }
 
 	[ExtensionAttribute] 
-public static string GetNameLower(Material mat) { }
+	public static string GetName(Material mat) { }
 
 	[ExtensionAttribute] 
-public static string GetNameUpper(Material mat) { }
+	public static string GetNameLower(Material mat) { }
 
-private static void .cctor() { }
+	[ExtensionAttribute] 
+	public static string GetNameUpper(Material mat) { }
+
+	private static void .cctor() { }
 
 }
 
 public static class AssetStorage // TypeDefIndex: 11362
 {
 
-public static void Save<T>(ref T asset, string path) { }
-/* GenericInstMethod :
-|
-|-AssetStorage.Save<object>
-*/
+	public static void Save<T>(ref T asset, string path) { }
+	/* GenericInstMethod :
+	|
+	|-AssetStorage.Save<object>
+	*/
 
-public static void Save(ref Texture2D asset) { }
+	public static void Save(ref Texture2D asset) { }
 
-public static void Save(ref Texture2D asset, string path, bool linear, bool compress) { }
+	public static void Save(ref Texture2D asset, string path, bool linear, bool compress) { }
 
-public static void Load<T>(ref T asset, string path) { }
-/* GenericInstMethod :
-|
-|-AssetStorage.Load<object>
-*/
+	public static void Load<T>(ref T asset, string path) { }
+	/* GenericInstMethod :
+	|
+	|-AssetStorage.Load<object>
+	*/
 
-public static void Delete<T>(ref T asset) { }
-/* GenericInstMethod :
-|
-|-AssetStorage.Delete<object>
-*/
+	public static void Delete<T>(ref T asset) { }
+	/* GenericInstMethod :
+	|
+	|-AssetStorage.Delete<object>
+	*/
 
 }
 

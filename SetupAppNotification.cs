@@ -5,19 +5,19 @@ public class SetupAppNotification : UIDialog // TypeDefIndex: 10909
 	private SmartAlarm _alarm; 
 
 
-public void Initialize(SmartAlarm alarm, string title, string body) { }
+	public void Initialize(SmartAlarm alarm, string title, string body) { }
 
-public void SelectFirstTextField() { }
+	public void SelectFirstTextField() { }
 
-public void MoveToSecondTextField() { }
+	public void MoveToSecondTextField() { }
 
-public void FinishedEditing() { }
+	public void FinishedEditing() { }
 
-private void SelectTextField(RustInput input) { }
+	private void SelectTextField(RustInput input) { }
 
-public void Save() { }
+	public void Save() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

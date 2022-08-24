@@ -13,11 +13,11 @@ public class RustUiTest : MonoBehaviour
 	private static readonly Option[] enumOptionsWithIcons; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -26,9 +26,9 @@ private sealed class RustUiTest.<>c__DisplayClass3_0 // TypeDefIndex: 6999
 	public RustButton file; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Awake>b__10() { }
+	internal void <Awake>b__10() { }
 
 }
 
@@ -50,35 +50,35 @@ private sealed class RustUiTest.<>c // TypeDefIndex: 7000
 	public static UnityAction<Option> <>9__3_13; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Awake>b__3_0() { }
+	internal void <Awake>b__3_0() { }
 
-internal void <Awake>b__3_1() { }
+	internal void <Awake>b__3_1() { }
 
-internal void <Awake>b__3_2() { }
+	internal void <Awake>b__3_2() { }
 
-internal void <Awake>b__3_3(Option val) { }
+	internal void <Awake>b__3_3(Option val) { }
 
-internal void <Awake>b__3_4(string val) { }
+	internal void <Awake>b__3_4(string val) { }
 
-internal void <Awake>b__3_5(float val) { }
+	internal void <Awake>b__3_5(float val) { }
 
-internal void <Awake>b__3_6(float val) { }
+	internal void <Awake>b__3_6(float val) { }
 
-internal void <Awake>b__3_7(bool val) { }
+	internal void <Awake>b__3_7(bool val) { }
 
-internal void <Awake>b__3_8(bool val) { }
+	internal void <Awake>b__3_8(bool val) { }
 
-internal void <Awake>b__3_9(bool val) { }
+	internal void <Awake>b__3_9(bool val) { }
 
-internal void <Awake>b__3_11(Option val) { }
+	internal void <Awake>b__3_11(Option val) { }
 
-internal void <Awake>b__3_12(Option val) { }
+	internal void <Awake>b__3_12(Option val) { }
 
-internal void <Awake>b__3_13(Option val) { }
+	internal void <Awake>b__3_13(Option val) { }
 
 }
 

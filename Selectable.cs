@@ -35,164 +35,164 @@ public class Selectable : UIBehaviour, IMoveHandler, IEventSystemHandler, IPoint
 	private bool <hasSelection>k__BackingField; 
 	private readonly List<CanvasGroup> m_CanvasGroupCache; 
 
-public static Selectable[] allSelectablesArray { get; }
-public static int allSelectableCount { get; }
+	public static Selectable[] allSelectablesArray { get; }
+	public static int allSelectableCount { get; }
 	[ObsoleteAttribute] 
-public static List<Selectable> allSelectables { get; }
-public Navigation navigation { get; set; }
-public Selectable.Transition transition { get; set; }
-public ColorBlock colors { get; set; }
-public SpriteState spriteState { get; set; }
-public AnimationTriggers animationTriggers { get; set; }
-public Graphic targetGraphic { get; set; }
-public bool interactable { get; set; }
-private bool isPointerInside { get; set; }
-private bool isPointerDown { get; set; }
-private bool hasSelection { get; set; }
-public Image image { get; set; }
-public Animator animator { get; }
-protected Selectable.SelectionState currentSelectionState { get; }
+	public static List<Selectable> allSelectables { get; }
+	public Navigation navigation { get; set; }
+	public Selectable.Transition transition { get; set; }
+	public ColorBlock colors { get; set; }
+	public SpriteState spriteState { get; set; }
+	public AnimationTriggers animationTriggers { get; set; }
+	public Graphic targetGraphic { get; set; }
+	public bool interactable { get; set; }
+	private bool isPointerInside { get; set; }
+	private bool isPointerDown { get; set; }
+	private bool hasSelection { get; set; }
+	public Image image { get; set; }
+	public Animator animator { get; }
+	protected Selectable.SelectionState currentSelectionState { get; }
 
 
-public static Selectable[] get_allSelectablesArray() { }
+	public static Selectable[] get_allSelectablesArray() { }
 
-public static int get_allSelectableCount() { }
+	public static int get_allSelectableCount() { }
 
-public static List<Selectable> get_allSelectables() { }
+	public static List<Selectable> get_allSelectables() { }
 
-public static int AllSelectablesNoAlloc(Selectable[] selectables) { }
+	public static int AllSelectablesNoAlloc(Selectable[] selectables) { }
 
-public Navigation get_navigation() { }
+	public Navigation get_navigation() { }
 
-public void set_navigation(Navigation value) { }
+	public void set_navigation(Navigation value) { }
 
-public Selectable.Transition get_transition() { }
+	public Selectable.Transition get_transition() { }
 
-public void set_transition(Selectable.Transition value) { }
+	public void set_transition(Selectable.Transition value) { }
 
-public ColorBlock get_colors() { }
+	public ColorBlock get_colors() { }
 
-public void set_colors(ColorBlock value) { }
+	public void set_colors(ColorBlock value) { }
 
-public SpriteState get_spriteState() { }
+	public SpriteState get_spriteState() { }
 
-public void set_spriteState(SpriteState value) { }
+	public void set_spriteState(SpriteState value) { }
 
-public AnimationTriggers get_animationTriggers() { }
+	public AnimationTriggers get_animationTriggers() { }
 
-public void set_animationTriggers(AnimationTriggers value) { }
+	public void set_animationTriggers(AnimationTriggers value) { }
 
-public Graphic get_targetGraphic() { }
+	public Graphic get_targetGraphic() { }
 
-public void set_targetGraphic(Graphic value) { }
+	public void set_targetGraphic(Graphic value) { }
 
-public bool get_interactable() { }
+	public bool get_interactable() { }
 
-public void set_interactable(bool value) { }
-
-	[CompilerGeneratedAttribute] 
-private bool get_isPointerInside() { }
+	public void set_interactable(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isPointerInside(bool value) { }
+	private bool get_isPointerInside() { }
 
 	[CompilerGeneratedAttribute] 
-private bool get_isPointerDown() { }
+	private void set_isPointerInside(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isPointerDown(bool value) { }
+	private bool get_isPointerDown() { }
 
 	[CompilerGeneratedAttribute] 
-private bool get_hasSelection() { }
+	private void set_isPointerDown(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_hasSelection(bool value) { }
+	private bool get_hasSelection() { }
 
-protected void .ctor() { }
+	[CompilerGeneratedAttribute] 
+	private void set_hasSelection(bool value) { }
 
-public Image get_image() { }
+	protected void .ctor() { }
 
-public void set_image(Image value) { }
+	public Image get_image() { }
 
-public Animator get_animator() { }
+	public void set_image(Image value) { }
 
-protected override void Awake() { }
+	public Animator get_animator() { }
 
-protected override void OnCanvasGroupChanged() { }
+	protected override void Awake() { }
 
-public virtual bool IsInteractable() { }
+	protected override void OnCanvasGroupChanged() { }
 
-protected override void OnDidApplyAnimationProperties() { }
+	public virtual bool IsInteractable() { }
 
-protected override void OnEnable() { }
+	protected override void OnDidApplyAnimationProperties() { }
 
-protected override void OnTransformParentChanged() { }
+	protected override void OnEnable() { }
 
-private void OnSetProperty() { }
+	protected override void OnTransformParentChanged() { }
 
-protected override void OnDisable() { }
+	private void OnSetProperty() { }
 
-private static void RemoveInvalidSelectables() { }
+	protected override void OnDisable() { }
 
-protected Selectable.SelectionState get_currentSelectionState() { }
+	private static void RemoveInvalidSelectables() { }
 
-protected virtual void InstantClearState() { }
+	protected Selectable.SelectionState get_currentSelectionState() { }
 
-protected virtual void DoStateTransition(Selectable.SelectionState state, bool instant) { }
+	protected virtual void InstantClearState() { }
 
-public Selectable FindSelectable(Vector3 dir) { }
+	protected virtual void DoStateTransition(Selectable.SelectionState state, bool instant) { }
 
-private static Vector3 GetPointOnRectEdge(RectTransform rect, Vector2 dir) { }
+	public Selectable FindSelectable(Vector3 dir) { }
 
-private void Navigate(AxisEventData eventData, Selectable sel) { }
+	private static Vector3 GetPointOnRectEdge(RectTransform rect, Vector2 dir) { }
 
-public virtual Selectable FindSelectableOnLeft() { }
+	private void Navigate(AxisEventData eventData, Selectable sel) { }
 
-public virtual Selectable FindSelectableOnRight() { }
+	public virtual Selectable FindSelectableOnLeft() { }
 
-public virtual Selectable FindSelectableOnUp() { }
+	public virtual Selectable FindSelectableOnRight() { }
 
-public virtual Selectable FindSelectableOnDown() { }
+	public virtual Selectable FindSelectableOnUp() { }
 
-public virtual void OnMove(AxisEventData eventData) { }
+	public virtual Selectable FindSelectableOnDown() { }
 
-private void StartColorTween(Color targetColor, bool instant) { }
+	public virtual void OnMove(AxisEventData eventData) { }
 
-private void DoSpriteSwap(Sprite newSprite) { }
+	private void StartColorTween(Color targetColor, bool instant) { }
 
-private void TriggerAnimation(string triggername) { }
+	private void DoSpriteSwap(Sprite newSprite) { }
 
-protected bool IsHighlighted() { }
+	private void TriggerAnimation(string triggername) { }
 
-protected bool IsPressed() { }
+	protected bool IsHighlighted() { }
 
-private void EvaluateAndTransitionToSelectionState() { }
+	protected bool IsPressed() { }
 
-public virtual void OnPointerDown(PointerEventData eventData) { }
+	private void EvaluateAndTransitionToSelectionState() { }
 
-public virtual void OnPointerUp(PointerEventData eventData) { }
+	public virtual void OnPointerDown(PointerEventData eventData) { }
 
-public virtual void OnPointerEnter(PointerEventData eventData) { }
+	public virtual void OnPointerUp(PointerEventData eventData) { }
 
-public virtual void OnPointerExit(PointerEventData eventData) { }
+	public virtual void OnPointerEnter(PointerEventData eventData) { }
 
-public virtual void OnSelect(BaseEventData eventData) { }
+	public virtual void OnPointerExit(PointerEventData eventData) { }
 
-public virtual void OnDeselect(BaseEventData eventData) { }
+	public virtual void OnSelect(BaseEventData eventData) { }
 
-public virtual void Select() { }
+	public virtual void OnDeselect(BaseEventData eventData) { }
 
-private static void .cctor() { }
+	public virtual void Select() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum Selectable.Transition // TypeDefIndex: 5004
 {
 	public int value__; 
-public const Selectable.Transition None = 0;
-public const Selectable.Transition ColorTint = 1;
-public const Selectable.Transition SpriteSwap = 2;
-public const Selectable.Transition Animation = 3;
+	public const Selectable.Transition None = 0;
+	public const Selectable.Transition ColorTint = 1;
+	public const Selectable.Transition SpriteSwap = 2;
+	public const Selectable.Transition Animation = 3;
 
 }
 

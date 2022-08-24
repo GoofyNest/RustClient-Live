@@ -5,17 +5,17 @@ public struct RendererKey : IEquatable<RendererKey> // TypeDefIndex: 9921
 	public int layer; 
 
 
-public void .ctor(Material material, ShadowCastingMode shadows, int layer) { }
+	public void .ctor(Material material, ShadowCastingMode shadows, int layer) { }
 
-public void .ctor(MeshRenderer renderer) { }
+	public void .ctor(MeshRenderer renderer) { }
 
-public void .ctor(RendererBatch batch) { }
+	public void .ctor(RendererBatch batch) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(RendererKey other) { }
+	public bool Equals(RendererKey other) { }
 
 }
 

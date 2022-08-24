@@ -3,11 +3,11 @@ public class DamageToggle : MonoBehaviour // TypeDefIndex: 10847
 	public Toggle toggle; 
 
 
-private void Reset() { }
+	private void Reset() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

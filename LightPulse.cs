@@ -8,11 +8,11 @@ public class LightPulse : MonoBehaviour, IClientComponent // TypeDefIndex: 9350
 	private TimeSince timeAlive; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

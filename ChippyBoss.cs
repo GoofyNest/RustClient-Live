@@ -14,25 +14,25 @@ public class ChippyBoss : SpriteArcadeEntity // TypeDefIndex: 8766
 	private float nextBulletTime; 
 
 
-public void SetLevel(int newLevel) { }
+	public void SetLevel(int newLevel) { }
 
-public override bool OnEntityMessage(string msg, bool predicted = False) { }
+	public override bool OnEntityMessage(string msg, bool predicted = False) { }
 
-public void Flash() { }
+	public void Flash() { }
 
-public override void Initialize() { }
+	public override void Initialize() { }
 
-public void RemoveMe() { }
+	public void RemoveMe() { }
 
-public void Animate() { }
+	public void Animate() { }
 
-public override void Hurt(ArcadeEntity damageSource, float damage, Vector3 hitPos, Collider collider) { }
+	public override void Hurt(ArcadeEntity damageSource, float damage, Vector3 hitPos, Collider collider) { }
 
-public override void OnKilled() { }
+	public override void OnKilled() { }
 
-public void FixedUpdate() { }
+	public void FixedUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -45,7 +45,7 @@ public class ChippyBoss.BossDamagePoint // TypeDefIndex: 8767
 	public bool destroyed; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

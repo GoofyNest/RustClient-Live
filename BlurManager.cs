@@ -4,13 +4,13 @@ public class BlurManager : MonoBehaviour // TypeDefIndex: 10826
 	private float blurAmount; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private float GetBlurArmount() { }
+	private float GetBlurArmount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

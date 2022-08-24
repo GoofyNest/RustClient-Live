@@ -12,17 +12,17 @@ public abstract class Graph : MonoBehaviour // TypeDefIndex: 10932
 	private float max; 
 
 
-protected abstract float GetValue();
+	protected abstract float GetValue();
 
-protected abstract Color GetColor(float value);
+	protected abstract Color GetColor(float value);
 
-protected Vector3 GetVertex(float x, float y) { }
+	protected Vector3 GetVertex(float x, float y) { }
 
-protected void Update() { }
+	protected void Update() { }
 
-protected void OnGUI() { }
+	protected void OnGUI() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

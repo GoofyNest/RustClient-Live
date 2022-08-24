@@ -36,11 +36,11 @@ public struct ERSOSection // TypeDefIndex: 7188
 	public double linkedSoId2; 
 
 
-public void .ctor(Vector3 _startPos, Vector3 _endPos, int _startIndex, int _endIndex, float _startFraction, float _endFraction, float _hsStart, float _hsEnd) { }
+	public void .ctor(Vector3 _startPos, Vector3 _endPos, int _startIndex, int _endIndex, float _startFraction, float _endFraction, float _hsStart, float _hsEnd) { }
 
-public static ERSOSection GetERSOSection(ERModularRoad road, int listIndex, ref int index, int leftright, ref string soType, ref List<ERSOSection> sections) { }
+	public static ERSOSection GetERSOSection(ERModularRoad road, int listIndex, ref int index, int leftright, ref string soType, ref List<ERSOSection> sections) { }
 
-public static ERSOSection AdjustEndOffset(ERSOSection target, ERSOSection source) { }
+	public static ERSOSection AdjustEndOffset(ERSOSection target, ERSOSection source) { }
 
 }
 

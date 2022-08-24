@@ -24,27 +24,27 @@ internal class SortKeyBuffer // TypeDefIndex: 44
 	private bool frenchSorted; 
 
 
-public void .ctor(int lcid) { }
+	public void .ctor(int lcid) { }
 
-public void Reset() { }
+	public void Reset() { }
 
-internal void Initialize(CompareOptions options, int lcid, string s, bool frenchSort) { }
+	internal void Initialize(CompareOptions options, int lcid, string s, bool frenchSort) { }
 
-internal void AppendCJKExtension(byte lv1msb, byte lv1lsb) { }
+	internal void AppendCJKExtension(byte lv1msb, byte lv1lsb) { }
 
-internal void AppendKana(byte category, byte lv1, byte lv2, byte lv3, bool isSmallKana, byte markType, bool isKatakana, bool isHalfWidth) { }
+	internal void AppendKana(byte category, byte lv1, byte lv2, byte lv3, bool isSmallKana, byte markType, bool isKatakana, bool isHalfWidth) { }
 
-internal void AppendNormal(byte category, byte lv1, byte lv2, byte lv3) { }
+	internal void AppendNormal(byte category, byte lv1, byte lv2, byte lv3) { }
 
-private void AppendLevel5(byte category, byte lv1) { }
+	private void AppendLevel5(byte category, byte lv1) { }
 
-private void AppendBufferPrimitive(byte value, ref byte[] buf, ref int bidx) { }
+	private void AppendBufferPrimitive(byte value, ref byte[] buf, ref int bidx) { }
 
-public SortKey GetResultAndReset() { }
+	public SortKey GetResultAndReset() { }
 
-private int GetOptimizedLength(byte[] data, int len, byte defaultValue) { }
+	private int GetOptimizedLength(byte[] data, int len, byte defaultValue) { }
 
-public SortKey GetResult() { }
+	public SortKey GetResult() { }
 
 }
 

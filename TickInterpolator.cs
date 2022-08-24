@@ -8,19 +8,19 @@ public class TickInterpolator // TypeDefIndex: 11401
 	public Vector3 EndPoint; 
 
 
-public void Reset() { }
+	public void Reset() { }
 
-public void Reset(Vector3 point) { }
+	public void Reset(Vector3 point) { }
 
-public void AddPoint(Vector3 point) { }
+	public void AddPoint(Vector3 point) { }
 
-public bool MoveNext(float distance) { }
+	public bool MoveNext(float distance) { }
 
-public bool HasNext() { }
+	public bool HasNext() { }
 
-public void TransformEntries(Matrix4x4 matrix) { }
+	public void TransformEntries(Matrix4x4 matrix) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -30,7 +30,7 @@ private struct TickInterpolator.Segment // TypeDefIndex: 11402
 	public float length; 
 
 
-public void .ctor(Vector3 a, Vector3 b) { }
+	public void .ctor(Vector3 a, Vector3 b) { }
 
 }
 

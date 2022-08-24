@@ -5,13 +5,13 @@ public class ConvarComponent : MonoBehaviour // TypeDefIndex: 11298
 	public List<ConvarComponent.ConvarEvent> List; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private bool ShouldRun() { }
+	private bool ShouldRun() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -23,13 +23,13 @@ public class ConvarComponent.ConvarEvent // TypeDefIndex: 11299
 	internal ConsoleSystem.Command cmd; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-private void cmd_OnValueChanged(ConsoleSystem.Command obj) { }
+	private void cmd_OnValueChanged(ConsoleSystem.Command obj) { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

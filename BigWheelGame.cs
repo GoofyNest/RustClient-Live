@@ -5,16 +5,16 @@ public class BigWheelGame : SpinnerWheel // TypeDefIndex: 8744
 	public GameObjectRef winEffect; 
 
 
-public override bool AllowPlayerSpins() { }
+	public override bool AllowPlayerSpins() { }
 
-public override bool CanUpdateSign(BasePlayer player) { }
+	public override bool CanUpdateSign(BasePlayer player) { }
 
-public HitNumber GetCurrentHitType() { }
+	public HitNumber GetCurrentHitType() { }
 
 	[ContextMenu] 
-private void LoadHitNumbers() { }
+	private void LoadHitNumbers() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

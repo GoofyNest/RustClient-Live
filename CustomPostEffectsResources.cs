@@ -3,7 +3,7 @@ public class CustomPostEffectsResources : ScriptableObject // TypeDefIndex: 1024
 	public Shader[] shaders; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

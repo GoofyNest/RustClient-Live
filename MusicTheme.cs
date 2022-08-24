@@ -24,33 +24,33 @@ public class MusicTheme : ScriptableObject // TypeDefIndex: 9007
 	private List<AudioClip> firstAudioClips; 
 	private Dictionary<AudioClip, bool> audioClipDict; 
 
-public int layerCount { get; }
-public int samplesPerBar { get; }
+	public int layerCount { get; }
+	public int samplesPerBar { get; }
 
 
-public int get_layerCount() { }
+	public int get_layerCount() { }
 
-public int get_samplesPerBar() { }
+	public int get_samplesPerBar() { }
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public List<MusicTheme.PositionedClip> GetActiveClipsForBar(int bar) { }
+	public List<MusicTheme.PositionedClip> GetActiveClipsForBar(int bar) { }
 
-private int ActiveClipCollectionID(int bar) { }
+	private int ActiveClipCollectionID(int bar) { }
 
-public MusicTheme.Layer LayerById(int id) { }
+	public MusicTheme.Layer LayerById(int id) { }
 
-public void AddLayer() { }
+	public void AddLayer() { }
 
-private void UpdateLengthInBars() { }
+	private void UpdateLengthInBars() { }
 
-public bool CanPlayInEnvironment(int currentBiome, int currentTopology, float currentRain, float currentSnow, float currentWind) { }
+	public bool CanPlayInEnvironment(int currentBiome, int currentTopology, float currentRain, float currentSnow, float currentWind) { }
 
-public bool FirstClipsLoaded() { }
+	public bool FirstClipsLoaded() { }
 
-public bool ContainsAudioClip(AudioClip clip) { }
+	public bool ContainsAudioClip(AudioClip clip) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -59,7 +59,7 @@ public class MusicTheme.Layer // TypeDefIndex: 9008
 	public string name; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -80,19 +80,19 @@ public class MusicTheme.PositionedClip // TypeDefIndex: 9009
 	public float jumpMinimumIntensity; 
 	public float jumpMaximumIntensity; 
 
-public int endingBar { get; }
-public bool isControlClip { get; }
+	public int endingBar { get; }
+	public bool isControlClip { get; }
 
 
-public int get_endingBar() { }
+	public int get_endingBar() { }
 
-public bool CanPlay(float intensity) { }
+	public bool CanPlay(float intensity) { }
 
-public bool get_isControlClip() { }
+	public bool get_isControlClip() { }
 
-public void CopySettingsFrom(MusicTheme.PositionedClip otherClip) { }
+	public void CopySettingsFrom(MusicTheme.PositionedClip otherClip) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -102,7 +102,7 @@ public class MusicTheme.ValueRange // TypeDefIndex: 9010
 	public float max; 
 
 
-public void .ctor(float min, float max) { }
+	public void .ctor(float min, float max) { }
 
 }
 

@@ -45,74 +45,74 @@ public class DepthOfFieldDeprecated : PostEffectsBase // TypeDefIndex: 8181
 	private RenderTexture bokehSource2; 
 
 
-private void CreateMaterials() { }
+	private void CreateMaterials() { }
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private float FocalDistance01(float worldDist) { }
+	private float FocalDistance01(float worldDist) { }
 
-private int GetDividerBasedOnQuality() { }
+	private int GetDividerBasedOnQuality() { }
 
-private int GetLowResolutionDividerBasedOnQuality(int baseDivider) { }
+	private int GetLowResolutionDividerBasedOnQuality(int baseDivider) { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private void Blur(RenderTexture from, RenderTexture to, DepthOfFieldDeprecated.DofBlurriness iterations, int blurPass, float spread) { }
+	private void Blur(RenderTexture from, RenderTexture to, DepthOfFieldDeprecated.DofBlurriness iterations, int blurPass, float spread) { }
 
-private void BlurFg(RenderTexture from, RenderTexture to, DepthOfFieldDeprecated.DofBlurriness iterations, int blurPass, float spread) { }
+	private void BlurFg(RenderTexture from, RenderTexture to, DepthOfFieldDeprecated.DofBlurriness iterations, int blurPass, float spread) { }
 
-private void BlurHex(RenderTexture from, RenderTexture to, int blurPass, float spread, RenderTexture tmp) { }
+	private void BlurHex(RenderTexture from, RenderTexture to, int blurPass, float spread, RenderTexture tmp) { }
 
-private void Downsample(RenderTexture from, RenderTexture to) { }
+	private void Downsample(RenderTexture from, RenderTexture to) { }
 
-private void AddBokeh(RenderTexture bokehInfo, RenderTexture tempTex, RenderTexture finalTarget) { }
+	private void AddBokeh(RenderTexture bokehInfo, RenderTexture tempTex, RenderTexture finalTarget) { }
 
-private void ReleaseTextures() { }
+	private void ReleaseTextures() { }
 
-private void AllocateTextures(bool blurForeground, RenderTexture source, int divider, int lowTexDivider) { }
+	private void AllocateTextures(bool blurForeground, RenderTexture source, int divider, int lowTexDivider) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum DepthOfFieldDeprecated.Dof34QualitySetting // TypeDefIndex: 8182
 {
 	public int value__; 
-public const DepthOfFieldDeprecated.Dof34QualitySetting OnlyBackground = 1;
-public const DepthOfFieldDeprecated.Dof34QualitySetting BackgroundAndForeground = 2;
+	public const DepthOfFieldDeprecated.Dof34QualitySetting OnlyBackground = 1;
+	public const DepthOfFieldDeprecated.Dof34QualitySetting BackgroundAndForeground = 2;
 
 }
 
 public enum DepthOfFieldDeprecated.DofResolution // TypeDefIndex: 8183
 {
 	public int value__; 
-public const DepthOfFieldDeprecated.DofResolution High = 2;
-public const DepthOfFieldDeprecated.DofResolution Medium = 3;
-public const DepthOfFieldDeprecated.DofResolution Low = 4;
+	public const DepthOfFieldDeprecated.DofResolution High = 2;
+	public const DepthOfFieldDeprecated.DofResolution Medium = 3;
+	public const DepthOfFieldDeprecated.DofResolution Low = 4;
 
 }
 
 public enum DepthOfFieldDeprecated.DofBlurriness // TypeDefIndex: 8184
 {
 	public int value__; 
-public const DepthOfFieldDeprecated.DofBlurriness Low = 1;
-public const DepthOfFieldDeprecated.DofBlurriness High = 2;
-public const DepthOfFieldDeprecated.DofBlurriness VeryHigh = 4;
+	public const DepthOfFieldDeprecated.DofBlurriness Low = 1;
+	public const DepthOfFieldDeprecated.DofBlurriness High = 2;
+	public const DepthOfFieldDeprecated.DofBlurriness VeryHigh = 4;
 
 }
 
 public enum DepthOfFieldDeprecated.BokehDestination // TypeDefIndex: 8185
 {
 	public int value__; 
-public const DepthOfFieldDeprecated.BokehDestination Background = 1;
-public const DepthOfFieldDeprecated.BokehDestination Foreground = 2;
-public const DepthOfFieldDeprecated.BokehDestination BackgroundAndForeground = 3;
+	public const DepthOfFieldDeprecated.BokehDestination Background = 1;
+	public const DepthOfFieldDeprecated.BokehDestination Foreground = 2;
+	public const DepthOfFieldDeprecated.BokehDestination BackgroundAndForeground = 3;
 
 }
 

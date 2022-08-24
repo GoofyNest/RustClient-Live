@@ -2,12 +2,12 @@ public abstract class IntegratedSubsystemDescriptor : ISubsystemDescriptorImpl, 
 {
 	internal IntPtr m_Ptr; 
 
-private IntPtr UnityEngine.ISubsystemDescriptorImpl.ptr { set; }
+	private IntPtr UnityEngine.ISubsystemDescriptorImpl.ptr { set; }
 
 
-private void UnityEngine.ISubsystemDescriptorImpl.set_ptr(IntPtr value) { }
+	private void UnityEngine.ISubsystemDescriptorImpl.set_ptr(IntPtr value) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

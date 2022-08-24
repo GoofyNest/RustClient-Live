@@ -4,7 +4,7 @@ public class SceneToPrefab : MonoBehaviour, IEditorComponent // TypeDefIndex: 99
 	public GameObject outputPrefab; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

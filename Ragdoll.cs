@@ -17,32 +17,32 @@ public class Ragdoll : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 922
 	private ArticulatedOccludee occludee; 
 	protected bool IsSetup; 
 
-public LODGroup lodGroup { get; }
+	public LODGroup lodGroup { get; }
 
 
-public LODGroup get_lodGroup() { }
+	public LODGroup get_lodGroup() { }
 
-public void Awake() { }
+	public void Awake() { }
 
-private void RagdollSetup() { }
+	private void RagdollSetup() { }
 
-public void CopyBonesFrom(Model otherModel) { }
+	public void CopyBonesFrom(Model otherModel) { }
 
-public void MoveRigidbodiesToRoot() { }
+	public void MoveRigidbodiesToRoot() { }
 
-public void CreatePinJoint() { }
+	public void CreatePinJoint() { }
 
-private void UpdateLODBounds() { }
+	private void UpdateLODBounds() { }
 
-public void SetRagdollSkin(int iSkin) { }
+	public void SetRagdollSkin(int iSkin) { }
 
-public void OnGibbed() { }
+	public void OnGibbed() { }
 
-public virtual void Init() { }
+	public virtual void Init() { }
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

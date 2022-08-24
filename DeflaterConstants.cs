@@ -9,9 +9,9 @@ internal class DeflaterConstants // TypeDefIndex: 5657
 	public static int[] COMPR_FUNC; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

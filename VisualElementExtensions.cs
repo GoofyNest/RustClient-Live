@@ -2,16 +2,16 @@ public static class VisualElementExtensions // TypeDefIndex: 4615
 {
 
 	[ExtensionAttribute] 
-public static Vector2 WorldToLocal(VisualElement ele, Vector2 p) { }
+	public static Vector2 WorldToLocal(VisualElement ele, Vector2 p) { }
 
 	[ExtensionAttribute] 
-public static Rect WorldToLocal(VisualElement ele, Rect r) { }
+	public static Rect WorldToLocal(VisualElement ele, Rect r) { }
 
 	[ExtensionAttribute] 
-public static Rect LocalToWorld(VisualElement ele, Rect r) { }
+	public static Rect LocalToWorld(VisualElement ele, Rect r) { }
 
 	[ExtensionAttribute] 
-public static Rect ChangeCoordinatesTo(VisualElement src, VisualElement dest, Rect rect) { }
+	public static Rect ChangeCoordinatesTo(VisualElement src, VisualElement dest, Rect rect) { }
 
 }
 

@@ -10,59 +10,59 @@ public class UnmanagedMemoryStream : Stream // TypeDefIndex: 659
 	internal bool _isOpen; 
 	private Task<int> _lastReadTask; 
 
-public override bool CanRead { get; }
-public override bool CanSeek { get; }
-public override bool CanWrite { get; }
-public override long Length { get; }
-public override long Position { get; set; }
+	public override bool CanRead { get; }
+	public override bool CanSeek { get; }
+	public override bool CanWrite { get; }
+	public override long Length { get; }
+	public override long Position { get; set; }
 	[CLSCompliantAttribute] 
-public byte* PositionPointer { get; }
+	public byte* PositionPointer { get; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 	[CLSCompliantAttribute] 
-public void .ctor(byte* pointer, long length) { }
+	public void .ctor(byte* pointer, long length) { }
 
-internal void .ctor(byte* pointer, long length, long capacity, FileAccess access, bool skipSecurityCheck) { }
+	internal void .ctor(byte* pointer, long length, long capacity, FileAccess access, bool skipSecurityCheck) { }
 
-internal void Initialize(byte* pointer, long length, long capacity, FileAccess access, bool skipSecurityCheck) { }
+	internal void Initialize(byte* pointer, long length, long capacity, FileAccess access, bool skipSecurityCheck) { }
 
-public override bool get_CanRead() { }
+	public override bool get_CanRead() { }
 
-public override bool get_CanSeek() { }
+	public override bool get_CanSeek() { }
 
-public override bool get_CanWrite() { }
+	public override bool get_CanWrite() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-public override void Flush() { }
+	public override void Flush() { }
 
-public override long get_Length() { }
+	public override long get_Length() { }
 
-public override long get_Position() { }
+	public override long get_Position() { }
 
-public override void set_Position(long value) { }
+	public override void set_Position(long value) { }
 
-public byte* get_PositionPointer() { }
+	public byte* get_PositionPointer() { }
 
-public override int Read([In] [Out] byte[] buffer, int offset, int count) { }
+	public override int Read([In] [Out] byte[] buffer, int offset, int count) { }
 
 	[ComVisibleAttribute] 
-public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+	public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-public override int ReadByte() { }
+	public override int ReadByte() { }
 
-public override long Seek(long offset, SeekOrigin loc) { }
+	public override long Seek(long offset, SeekOrigin loc) { }
 
-public override void SetLength(long value) { }
+	public override void SetLength(long value) { }
 
-public override void Write(byte[] buffer, int offset, int count) { }
+	public override void Write(byte[] buffer, int offset, int count) { }
 
 	[ComVisibleAttribute] 
-public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
 
-public override void WriteByte(byte value) { }
+	public override void WriteByte(byte value) { }
 
 }
 

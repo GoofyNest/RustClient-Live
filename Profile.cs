@@ -6,28 +6,28 @@ public class Profile // TypeDefIndex: 9375
 	public float warnTime; 
 
 
-public void .ctor(string cat, string nam, float WarnTime = 1) { }
+	public void .ctor(string cat, string nam, float WarnTime = 1) { }
 
-public void Start() { }
+	public void Start() { }
 
-public void Stop() { }
+	public void Stop() { }
 
 }
 
 public class Profile : ConsoleSystem // TypeDefIndex: 11953
 {
 
-private static void NeedProfileFolder() { }
+	private static void NeedProfileFolder() { }
 
 	[ClientVar] 
 	[ServerVar] 
-public static void start(ConsoleSystem.Arg arg) { }
+	public static void start(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void stop(ConsoleSystem.Arg arg) { }
+	public static void stop(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

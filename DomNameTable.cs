@@ -7,13 +7,13 @@ internal class DomNameTable // TypeDefIndex: 1946
 	private XmlNameTable nameTable; 
 
 
-public void .ctor(XmlDocument document) { }
+	public void .ctor(XmlDocument document) { }
 
-public XmlName GetName(string prefix, string localName, string ns, IXmlSchemaInfo schemaInfo) { }
+	public XmlName GetName(string prefix, string localName, string ns, IXmlSchemaInfo schemaInfo) { }
 
-public XmlName AddName(string prefix, string localName, string ns, IXmlSchemaInfo schemaInfo) { }
+	public XmlName AddName(string prefix, string localName, string ns, IXmlSchemaInfo schemaInfo) { }
 
-private void Grow() { }
+	private void Grow() { }
 
 }
 

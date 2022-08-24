@@ -4,7 +4,7 @@ internal class Level2Map // TypeDefIndex: 34
 	public byte Replace; 
 
 
-public void .ctor(byte source, byte replace) { }
+	public void .ctor(byte source, byte replace) { }
 
 }
 

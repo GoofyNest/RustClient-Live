@@ -5,13 +5,13 @@ public class MergeFailedEventArgs : EventArgs // TypeDefIndex: 4275
 	[CompilerGeneratedAttribute] 
 	private readonly string <Conflict>k__BackingField; 
 
-public string Conflict { get; }
+	public string Conflict { get; }
 
 
-public void .ctor(DataTable table, string conflict) { }
+	public void .ctor(DataTable table, string conflict) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Conflict() { }
+	public string get_Conflict() { }
 
 }
 

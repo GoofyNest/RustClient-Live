@@ -13,10 +13,10 @@ internal class <Module>
 public static class PlatformServiceExtensions 
 
 	[ExtensionAttribute] 
-public static long AddPlayerStatInt(IPlatformService platform, string key, long amount) { }
+	public static long AddPlayerStatInt(IPlatformService platform, string key, long amount) { }
 
 	[ExtensionAttribute] 
-public static double AddPlayerStatFloat(IPlatformService platform, string key, double amount) { }
+	public static double AddPlayerStatFloat(IPlatformService platform, string key, double amount) { }
 
 }
 

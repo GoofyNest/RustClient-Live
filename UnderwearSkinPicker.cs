@@ -8,13 +8,13 @@ public class UnderwearSkinPicker : MonoBehaviour // TypeDefIndex: 9248
 	public Sprite defaultIconFemale; 
 
 
-public void RefreshUnderwear() { }
+	public void RefreshUnderwear() { }
 
-protected void AddOption(string underwearShortName, string text, bool canUse, Sprite icon) { }
+	protected void AddOption(string underwearShortName, string text, bool canUse, Sprite icon) { }
 
-public virtual void OnUnderwearChanged() { }
+	public virtual void OnUnderwearChanged() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

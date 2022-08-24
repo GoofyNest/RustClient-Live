@@ -42,35 +42,35 @@ public class LookAtIOEnt : MonoBehaviour // TypeDefIndex: 11077
 	private IOEntity.IOType wireToolWasType; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void ClearHandles() { }
+	public void ClearHandles() { }
 
-public void SetupHandles(IOEntity ent, bool showInputs = True, bool showOutputs = True) { }
+	public void SetupHandles(IOEntity ent, bool showInputs = True, bool showOutputs = True) { }
 
-public static int GetSelectedIndex() { }
+	public static int GetSelectedIndex() { }
 
-public static bool SelectedIsInput() { }
+	public static bool SelectedIsInput() { }
 
-public void UpdateClearing() { }
+	public void UpdateClearing() { }
 
-public void UpdateWireInfo() { }
+	public void UpdateWireInfo() { }
 
-public void UpdateLookingHandle(bool includeInputs, bool includeOutputs) { }
+	public void UpdateLookingHandle(bool includeInputs, bool includeOutputs) { }
 
-public Vector3 GetSelectedHandleWorldPosition() { }
+	public Vector3 GetSelectedHandleWorldPosition() { }
 
-public IOEntity.IOType GetSelectedHandleType() { }
+	public IOEntity.IOType GetSelectedHandleType() { }
 
-public void UpdateLookingUI() { }
+	public void UpdateLookingUI() { }
 
-public bool UpdateLookingAtIOEnt() { }
+	public bool UpdateLookingAtIOEnt() { }
 
-private LookAtIOEnt.HandleSet GetHandles(IOEntity.IOType forType) { }
+	private LookAtIOEnt.HandleSet GetHandles(IOEntity.IOType forType) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -14,21 +14,21 @@ public class TechTreeEntry : TechTreeWidget // TypeDefIndex: 10913
 	private float radialFillTime; 
 
 
-public override bool IsLocked() { }
+	public override bool IsLocked() { }
 
-public override void SetSelected(bool wantsSelected) { }
+	public override void SetSelected(bool wantsSelected) { }
 
-private void UpdateRadialFill() { }
+	private void UpdateRadialFill() { }
 
-public override void SetLocked(bool isLocked) { }
+	public override void SetLocked(bool isLocked) { }
 
-public override void SetAbleToUnlock(bool wants) { }
+	public override void SetAbleToUnlock(bool wants) { }
 
-public override bool HasPathToUnlock() { }
+	public override bool HasPathToUnlock() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

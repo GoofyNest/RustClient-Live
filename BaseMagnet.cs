@@ -12,7 +12,7 @@ public class BaseMagnet : MonoBehaviour // TypeDefIndex: 9729
 	public GameObject colliderSource; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

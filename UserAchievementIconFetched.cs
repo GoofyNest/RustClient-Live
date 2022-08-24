@@ -6,17 +6,17 @@ internal struct UserAchievementIconFetched_t : ICallbackData // TypeDefIndex: 53
 	internal int IconHandle; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-internal string AchievementNameUTF8() { }
+	internal string AchievementNameUTF8() { }
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

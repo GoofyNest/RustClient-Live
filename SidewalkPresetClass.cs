@@ -20,7 +20,7 @@ public class SidewalkPresetClass // TypeDefIndex: 7255
 	public bool lockUVs; 
 
 
-public void .ctor(QDOQDSQOOQDDD corner, string name) { }
+	public void .ctor(QDOQDSQOOQDDD corner, string name) { }
 
 }
 

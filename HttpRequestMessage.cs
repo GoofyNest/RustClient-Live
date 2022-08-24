@@ -9,44 +9,44 @@ public class HttpRequestMessage : IDisposable // TypeDefIndex: 5754
 	[CompilerGeneratedAttribute] 
 	private HttpContent <Content>k__BackingField; 
 
-public HttpContent Content { get; set; }
-public HttpRequestHeaders Headers { get; }
-public HttpMethod Method { get; set; }
-public Uri RequestUri { get; set; }
-public Version Version { get; }
+	public HttpContent Content { get; set; }
+	public HttpRequestHeaders Headers { get; }
+	public HttpMethod Method { get; set; }
+	public Uri RequestUri { get; set; }
+	public Version Version { get; }
 
 
-public void .ctor(HttpMethod method, string requestUri) { }
+	public void .ctor(HttpMethod method, string requestUri) { }
 
-public void .ctor(HttpMethod method, Uri requestUri) { }
-
-	[CompilerGeneratedAttribute] 
-public HttpContent get_Content() { }
+	public void .ctor(HttpMethod method, Uri requestUri) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Content(HttpContent value) { }
+	public HttpContent get_Content() { }
 
-public HttpRequestHeaders get_Headers() { }
+	[CompilerGeneratedAttribute] 
+	public void set_Content(HttpContent value) { }
 
-public HttpMethod get_Method() { }
+	public HttpRequestHeaders get_Headers() { }
 
-public void set_Method(HttpMethod value) { }
+	public HttpMethod get_Method() { }
 
-public Uri get_RequestUri() { }
+	public void set_Method(HttpMethod value) { }
 
-public void set_RequestUri(Uri value) { }
+	public Uri get_RequestUri() { }
 
-private static bool IsAllowedAbsoluteUri(Uri uri) { }
+	public void set_RequestUri(Uri value) { }
 
-public Version get_Version() { }
+	private static bool IsAllowedAbsoluteUri(Uri uri) { }
 
-public void Dispose() { }
+	public Version get_Version() { }
 
-protected virtual void Dispose(bool disposing) { }
+	public void Dispose() { }
 
-internal bool SetIsUsed() { }
+	protected virtual void Dispose(bool disposing) { }
 
-public override string ToString() { }
+	internal bool SetIsUsed() { }
+
+	public override string ToString() { }
 
 }
 

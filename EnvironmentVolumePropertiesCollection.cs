@@ -10,13 +10,13 @@ public class EnvironmentVolumePropertiesCollection : ScriptableObject // TypeDef
 	public EnvironmentVolumePropertiesCollection.OceanParameters OceanOverrides; 
 
 
-public float FindReflectionMultiplier(EnvironmentType type) { }
+	public float FindReflectionMultiplier(EnvironmentType type) { }
 
-public float FindAmbientMultiplier(EnvironmentType type) { }
+	public float FindAmbientMultiplier(EnvironmentType type) { }
 
-public LayerMask FindReflectionCullingFlags() { }
+	public LayerMask FindReflectionCullingFlags() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -26,7 +26,7 @@ public class EnvironmentVolumePropertiesCollection.EnvironmentMultiplier // Type
 	public float Multiplier; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -56,7 +56,7 @@ public class EnvironmentVolumePropertiesCollection.OceanParameters // TypeDefInd
 	public Color MoonRayColor; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,11 +6,11 @@ public class ZiplineTarget : MonoBehaviour // TypeDefIndex: 8672
 	public float MonumentConnectionDotMax; 
 
 
-public bool IsValidPosition(Vector3 position) { }
+	public bool IsValidPosition(Vector3 position) { }
 
-public bool IsValidChainPoint(Vector3 from, Vector3 to) { }
+	public bool IsValidChainPoint(Vector3 from, Vector3 to) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

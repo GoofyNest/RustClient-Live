@@ -10,19 +10,19 @@ public class MeshRendererData // TypeDefIndex: 9163
 	public List<Vector4> positions; 
 
 
-public void Alloc() { }
+	public void Alloc() { }
 
-public void Free() { }
+	public void Free() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Apply(Mesh mesh) { }
+	public void Apply(Mesh mesh) { }
 
-public void Combine(MeshRendererGroup meshGroup) { }
+	public void Combine(MeshRendererGroup meshGroup) { }
 
-public void Combine(MeshRendererGroup meshGroup, MeshRendererLookup rendererLookup) { }
+	public void Combine(MeshRendererGroup meshGroup, MeshRendererLookup rendererLookup) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,7 +7,7 @@ public class TriggerWetness : TriggerBase // TypeDefIndex: 10050
 	public float MinLocalHeight; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

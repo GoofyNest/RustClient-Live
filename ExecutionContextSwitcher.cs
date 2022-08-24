@@ -8,10 +8,10 @@ internal struct ExecutionContextSwitcher // TypeDefIndex: 781
 
 	[HandleProcessCorruptedStateExceptionsAttribute] 
 	[ReliabilityContractAttribute] 
-internal bool UndoNoThrow() { }
+	internal bool UndoNoThrow() { }
 
 	[ReliabilityContractAttribute] 
-internal void Undo() { }
+	internal void Undo() { }
 
 }
 

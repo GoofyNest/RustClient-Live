@@ -20,37 +20,37 @@ public class EnvironmentFish : BaseMonoBehaviour, IClientComponent // TypeDefInd
 	private float nextDestinationTime; 
 
 
-public void Startle() { }
+	public void Startle() { }
 
-public bool IsStartled() { }
+	public bool IsStartled() { }
 
-public void Start() { }
+	public void Start() { }
 
-private float GetDesiredSpeed() { }
+	private float GetDesiredSpeed() { }
 
-public float GetTurnSpeed() { }
+	public float GetTurnSpeed() { }
 
-private float GetCurrentSpeed() { }
+	private float GetCurrentSpeed() { }
 
-private void UpdateDirection(float delta) { }
+	private void UpdateDirection(float delta) { }
 
-public void QueuedUpdate() { }
+	public void QueuedUpdate() { }
 
-public void CheckForCollisions() { }
+	public void CheckForCollisions() { }
 
-private void UpdatePosition(float delta) { }
+	private void UpdatePosition(float delta) { }
 
-private void UpdateSpeed(float delta) { }
+	private void UpdateSpeed(float delta) { }
 
-public bool InvalidPosition() { }
+	public bool InvalidPosition() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateDestination() { }
+	private void UpdateDestination() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

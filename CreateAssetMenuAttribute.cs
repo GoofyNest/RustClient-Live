@@ -10,21 +10,21 @@ public sealed class CreateAssetMenuAttribute : Attribute // TypeDefIndex: 3496
 	[DebuggerBrowsableAttribute] 
 	private int <order>k__BackingField; 
 
-public string menuName { set; }
-public string fileName { set; }
-public int order { set; }
+	public string menuName { set; }
+	public string fileName { set; }
+	public int order { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public void set_menuName(string value) { }
+	public void set_menuName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_fileName(string value) { }
+	public void set_fileName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_order(int value) { }
+	public void set_order(int value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

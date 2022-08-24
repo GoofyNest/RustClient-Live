@@ -9,28 +9,28 @@ public class RustToggle : RustControl, IPointerDownHandler, IEventSystemHandler 
 	public RustToggle.ChangedEvent OnChanged; 
 	private Coroutine anim; 
 
-public override StyleAsset Styles { get; }
+	public override StyleAsset Styles { get; }
 
 
-public override StyleAsset get_Styles() { }
+	public override StyleAsset get_Styles() { }
 
-public void SetValue(bool value) { }
+	public void SetValue(bool value) { }
 
-public void OnPointerDown(PointerEventData eventData) { }
+	public void OnPointerDown(PointerEventData eventData) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator AnimateTo() { }
+	private IEnumerator AnimateTo() { }
 
-public override void ApplyStyles() { }
+	public override void ApplyStyles() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class RustToggle.ChangedEvent : UnityEvent<bool> // TypeDefIndex: 7035
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -45,26 +45,26 @@ private sealed class RustToggle.<AnimateTo>d__13 : IEnumerator<object>, IEnumera
 	private float <time>5__5; 
 	private Image <bg>5__6; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

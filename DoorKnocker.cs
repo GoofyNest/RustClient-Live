@@ -4,12 +4,12 @@ public class DoorKnocker : BaseCombatEntity // TypeDefIndex: 8566
 	public Animator knocker2; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void ClientKnock(BaseEntity.RPCMessage msg) { }
+	public void ClientKnock(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

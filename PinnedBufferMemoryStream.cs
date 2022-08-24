@@ -4,11 +4,11 @@ internal sealed class PinnedBufferMemoryStream : UnmanagedMemoryStream // TypeDe
 	private GCHandle _pinningHandle; 
 
 
-internal void .ctor(byte[] array) { }
+	internal void .ctor(byte[] array) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
 }
 

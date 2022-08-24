@@ -7,7 +7,7 @@ public class DevBotSpawner : FacepunchBehaviour // TypeDefIndex: 9293
 	public int maxPopulation; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

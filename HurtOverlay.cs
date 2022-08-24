@@ -6,13 +6,13 @@ public class HurtOverlay : MonoBehaviour // TypeDefIndex: 9130
 	private float smoothVelocity; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private float GetIntensity() { }
+	private float GetIntensity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

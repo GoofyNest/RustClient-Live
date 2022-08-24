@@ -6,12 +6,12 @@ public class XMasRefill : BaseEntity // TypeDefIndex: 8668
 	public AudioSource bells; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void PlayBells() { }
+	public void PlayBells() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

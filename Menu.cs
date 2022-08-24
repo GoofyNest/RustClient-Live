@@ -12,31 +12,31 @@ public class Menu : RustControl // TypeDefIndex: 7008
 	public Blocker Blocker; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void Build() { }
+	public void Build() { }
 
-private void OnOptionSelected(Option option) { }
+	private void OnOptionSelected(Option option) { }
 
-private IEnumerable<Option> GetOptions() { }
+	private IEnumerable<Option> GetOptions() { }
 
-internal void Popup(RectTransform source) { }
+	internal void Popup(RectTransform source) { }
 
-private void RestrainToScreen() { }
+	private void RestrainToScreen() { }
 
-protected override void ApplyStyle(StyleAsset.Group s) { }
+	protected override void ApplyStyle(StyleAsset.Group s) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <Awake>b__11_0(string x) { }
+	private void <Awake>b__11_0(string x) { }
 
 }
 
 public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7009
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -46,9 +46,9 @@ private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7010
 	public Menu <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Build>b__0() { }
+	internal void <Build>b__0() { }
 
 }
 
@@ -57,9 +57,9 @@ private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7011
 	public string searchString; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetOptions>b__1(Option x) { }
+	internal bool <GetOptions>b__1(Option x) { }
 
 }
 
@@ -69,11 +69,11 @@ private sealed class Menu.<>c // TypeDefIndex: 7012
 	public static Func<Option, Option> <>9__14_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal Option <GetOptions>b__14_0(Option x) { }
+	internal Option <GetOptions>b__14_0(Option x) { }
 
 }
 

@@ -7,24 +7,24 @@ public class ConditionalModel : PrefabAttribute // TypeDefIndex: 9051
 	[CompilerGeneratedAttribute] 
 	private uint <targetPrefabId>k__BackingField; 
 
-public uint targetPrefabId { get; set; }
+	public uint targetPrefabId { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public uint get_targetPrefabId() { }
+	public uint get_targetPrefabId() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_targetPrefabId(uint value) { }
+	private void set_targetPrefabId(uint value) { }
 
-protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public bool RunTests(BaseEntity parent) { }
+	public bool RunTests(BaseEntity parent) { }
 
-public GameObject InstantiateSkin(BaseEntity parent) { }
+	public GameObject InstantiateSkin(BaseEntity parent) { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

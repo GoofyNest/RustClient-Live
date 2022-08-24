@@ -5,28 +5,28 @@ public class PhotoEntity : ImageStorageEntity, IUGCBrowserEntity // TypeDefIndex
 	[CompilerGeneratedAttribute] 
 	private uint <ImageCrc>k__BackingField; 
 
-public ulong PhotographerSteamId { get; set; }
-public uint ImageCrc { get; set; }
-protected override uint CrcToLoad { get; }
+	public ulong PhotographerSteamId { get; set; }
+	public uint ImageCrc { get; set; }
+	protected override uint CrcToLoad { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public ulong get_PhotographerSteamId() { }
+	public ulong get_PhotographerSteamId() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_PhotographerSteamId(ulong value) { }
+	private void set_PhotographerSteamId(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_ImageCrc() { }
+	public uint get_ImageCrc() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ImageCrc(uint value) { }
+	private void set_ImageCrc(uint value) { }
 
-protected override uint get_CrcToLoad() { }
+	protected override uint get_CrcToLoad() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

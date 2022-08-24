@@ -3,7 +3,7 @@ public class ComponentHelpAttribute : BaseEditorExAttribute // TypeDefIndex: 801
 	public string help; 
 
 
-public void .ctor(string help) { }
+	public void .ctor(string help) { }
 
 }
 

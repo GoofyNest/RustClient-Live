@@ -15,21 +15,21 @@ public class SleepingBagMapMarker : MonoBehaviour // TypeDefIndex: 10960
 	private RespawnInformation.SpawnOptions cachedSpawnInfo; 
 	private float releaseTime; 
 
-private float timerSeconds { get; }
-private string friendlyName { get; }
+	private float timerSeconds { get; }
+	private string friendlyName { get; }
 
 
-private float get_timerSeconds() { }
+	private float get_timerSeconds() { }
 
-private string get_friendlyName() { }
+	private string get_friendlyName() { }
 
-public void Populate(RespawnInformation.SpawnOptions spawnInfo, UIDeathScreen.RespawnColourScheme colourScheme) { }
+	public void Populate(RespawnInformation.SpawnOptions spawnInfo, UIDeathScreen.RespawnColourScheme colourScheme) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void OnClicked() { }
+	public void OnClicked() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

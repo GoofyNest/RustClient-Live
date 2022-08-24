@@ -6,24 +6,24 @@ public class AdminExistingSellOrder : MonoBehaviour // TypeDefIndex: 8728
 	private int index; 
 
 
-public void Setup(VendingMachine.SellOrder so, int newIndex, VendingPanelAdmin admin) { }
+	public void Setup(VendingMachine.SellOrder so, int newIndex, VendingPanelAdmin admin) { }
 
-public void DeleteClick() { }
+	public void DeleteClick() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class AdminUI : MonoBehaviour // TypeDefIndex: 10824
 {
 
-public bool IsVisible() { }
+	public bool IsVisible() { }
 
-public void OnPanelOpened() { }
+	public void OnPanelOpened() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -49,147 +49,147 @@ public class Admin : ConsoleSystem // TypeDefIndex: 11871
 	public static bool ddraw_netupdate; 
 
 	[ClientVar] 
-public static float adminclouds { get; set; }
+	public static float adminclouds { get; set; }
 	[ClientVar] 
-public static float adminfog { get; set; }
+	public static float adminfog { get; set; }
 	[ClientVar] 
-public static float adminwind { get; set; }
+	public static float adminwind { get; set; }
 	[ClientVar] 
-public static float adminrain { get; set; }
+	public static float adminrain { get; set; }
 
 
 	[ServerVar] 
-public static void status(ConsoleSystem.Arg arg) { }
+	public static void status(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void stats(ConsoleSystem.Arg arg) { }
+	public static void stats(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void killplayer(ConsoleSystem.Arg arg) { }
+	public static void killplayer(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void injureplayer(ConsoleSystem.Arg arg) { }
+	public static void injureplayer(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void recoverplayer(ConsoleSystem.Arg arg) { }
+	public static void recoverplayer(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void kick(ConsoleSystem.Arg arg) { }
+	public static void kick(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void kickall(ConsoleSystem.Arg arg) { }
+	public static void kickall(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void ban(ConsoleSystem.Arg arg) { }
+	public static void ban(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void moderatorid(ConsoleSystem.Arg arg) { }
+	public static void moderatorid(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void ownerid(ConsoleSystem.Arg arg) { }
+	public static void ownerid(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void removemoderator(ConsoleSystem.Arg arg) { }
+	public static void removemoderator(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void removeowner(ConsoleSystem.Arg arg) { }
+	public static void removeowner(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void banid(ConsoleSystem.Arg arg) { }
+	public static void banid(ConsoleSystem.Arg arg) { }
 
-private static bool TryGetBanExpiry(ConsoleSystem.Arg arg, int n, out long expiry, out string durationSuffix) { }
-
-	[ServerVar] 
-public static void unban(ConsoleSystem.Arg arg) { }
+	private static bool TryGetBanExpiry(ConsoleSystem.Arg arg, int n, out long expiry, out string durationSuffix) { }
 
 	[ServerVar] 
-public static void skipqueue(ConsoleSystem.Arg arg) { }
+	public static void unban(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void players(ConsoleSystem.Arg arg) { }
+	public static void skipqueue(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void say(ConsoleSystem.Arg arg) { }
+	public static void players(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void users(ConsoleSystem.Arg arg) { }
+	public static void say(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void sleepingusers(ConsoleSystem.Arg arg) { }
+	public static void users(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void sleepingusersinrange(ConsoleSystem.Arg arg) { }
+	public static void sleepingusers(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void usersinrange(ConsoleSystem.Arg arg) { }
+	public static void sleepingusersinrange(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void usersinrangeofplayer(ConsoleSystem.Arg arg) { }
+	public static void usersinrange(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void banlist(ConsoleSystem.Arg arg) { }
+	public static void usersinrangeofplayer(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void banlistex(ConsoleSystem.Arg arg) { }
+	public static void banlist(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void listid(ConsoleSystem.Arg arg) { }
+	public static void banlistex(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void mute(ConsoleSystem.Arg arg) { }
+	public static void listid(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void unmute(ConsoleSystem.Arg arg) { }
+	public static void mute(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void mutelist(ConsoleSystem.Arg arg) { }
+	public static void unmute(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void clientperf(ConsoleSystem.Arg arg) { }
+	public static void mutelist(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void clientperf_frametime(ConsoleSystem.Arg arg) { }
+	public static void clientperf(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void carstats(ConsoleSystem.Arg arg) { }
+	public static void clientperf_frametime(ConsoleSystem.Arg arg) { }
 
-	[ClientVar] 
-public static string ent(ConsoleSystem.Arg args) { }
-
-public static float get_adminclouds() { }
-
-public static void set_adminclouds(float value) { }
-
-public static float get_adminfog() { }
-
-public static void set_adminfog(float value) { }
-
-public static float get_adminwind() { }
-
-public static void set_adminwind(float value) { }
-
-public static float get_adminrain() { }
-
-public static void set_adminrain(float value) { }
+	[ServerVar] 
+	public static void carstats(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void AdminUI_ReceivePlayerList(ConsoleSystem.Arg arg) { }
+	public static string ent(ConsoleSystem.Arg args) { }
+
+	public static float get_adminclouds() { }
+
+	public static void set_adminclouds(float value) { }
+
+	public static float get_adminfog() { }
+
+	public static void set_adminfog(float value) { }
+
+	public static float get_adminwind() { }
+
+	public static void set_adminwind(float value) { }
+
+	public static float get_adminrain() { }
+
+	public static void set_adminrain(float value) { }
 
 	[ClientVar] 
-public static void AdminUI_ReceiveServerInfo(ConsoleSystem.Arg arg) { }
+	public static void AdminUI_ReceivePlayerList(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void AdminUI_ReceiveCommands(ConsoleSystem.Arg arg) { }
+	public static void AdminUI_ReceiveServerInfo(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void AdminUI_ReceiveUGCList(ConsoleSystem.Arg arg) { }
+	public static void AdminUI_ReceiveCommands(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void hudcomponent(ConsoleSystem.Arg arg) { }
+	public static void AdminUI_ReceiveUGCList(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	[ClientVar] 
+	public static void hudcomponent(ConsoleSystem.Arg arg) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

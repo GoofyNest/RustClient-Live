@@ -5,23 +5,23 @@ public class Subscriber : Pool.IPooled // TypeDefIndex: 6707
 	public ListHashSet<Group> subscribed; 
 
 
-public Group Subscribe(Group group) { }
+	public Group Subscribe(Group group) { }
 
-public Group Subscribe(uint group) { }
+	public Group Subscribe(uint group) { }
 
-public bool IsSubscribed(Group group) { }
+	public bool IsSubscribed(Group group) { }
 
-public void UnsubscribeAll() { }
+	public void UnsubscribeAll() { }
 
-public void Unsubscribe(Group group) { }
+	public void Unsubscribe(Group group) { }
 
-public void Destroy() { }
+	public void Destroy() { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

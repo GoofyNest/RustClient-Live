@@ -15,35 +15,35 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7044
 	public float MaxHeight; 
 
 
-private void Init() { }
+	private void Init() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-public bool Load(string url) { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator WaitForLoad(string url) { }
-
-private void UpdateImageTexture(ValueTuple<Texture2D, Sprite> tex) { }
-
-public void SetMissingImage() { }
-
-public void SetLoadingImage() { }
+	public bool Load(string url) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator StartAndWaitForLoad(string url) { }
+	private IEnumerator WaitForLoad(string url) { }
 
-private void AutosizeForTexture(Texture2D texture) { }
+	private void UpdateImageTexture(ValueTuple<Texture2D, Sprite> tex) { }
 
-private void SetImageEnabled(bool enabled) { }
+	public void SetMissingImage() { }
 
-private static Sprite CreateSprite(Texture2D texture) { }
+	public void SetLoadingImage() { }
 
-public void .ctor() { }
+	[IteratorStateMachineAttribute] 
+	private IEnumerator StartAndWaitForLoad(string url) { }
 
-private static void .cctor() { }
+	private void AutosizeForTexture(Texture2D texture) { }
+
+	private void SetImageEnabled(bool enabled) { }
+
+	private static Sprite CreateSprite(Texture2D texture) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -54,26 +54,26 @@ private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumer
 	public string url; 
 	public HttpImage <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -85,26 +85,26 @@ private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>,
 	public HttpImage <>4__this; 
 	private UnityWebRequest <request>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

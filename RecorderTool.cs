@@ -22,81 +22,81 @@ public class RecorderTool : ThrownWeapon, ICassettePlayer // TypeDefIndex: 8627
 	private uint cassetteToLoad; 
 	private static readonly int PlayAnimBool; 
 
-public Cassette cachedCassette { get; set; }
-public Sprite LoadedCassetteIcon { get; }
-public BaseEntity ToBaseEntity { get; }
-public int StartCountdown { get; set; }
-private bool IsCountingDown { get; }
-public float NormalizedTapeUsed { get; }
+	public Cassette cachedCassette { get; set; }
+	public Sprite LoadedCassetteIcon { get; }
+	public BaseEntity ToBaseEntity { get; }
+	public int StartCountdown { get; set; }
+	private bool IsCountingDown { get; }
+	public float NormalizedTapeUsed { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[CompilerGeneratedAttribute] 
-public Cassette get_cachedCassette() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_cachedCassette(Cassette value) { }
-
-public Sprite get_LoadedCassetteIcon() { }
-
-private bool HasCassette() { }
-
-public BaseEntity get_ToBaseEntity() { }
-
-public void OnCensorRecordingsChanged() { }
-
-public override void OnInput() { }
-
-internal override void DoNetworkDestroy() { }
+	public Cassette get_cachedCassette() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_StartCountdown() { }
+	private void set_cachedCassette(Cassette value) { }
+
+	public Sprite get_LoadedCassetteIcon() { }
+
+	private bool HasCassette() { }
+
+	public BaseEntity get_ToBaseEntity() { }
+
+	public void OnCensorRecordingsChanged() { }
+
+	public override void OnInput() { }
+
+	internal override void DoNetworkDestroy() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_StartCountdown(int value) { }
+	public int get_StartCountdown() { }
 
-private bool get_IsCountingDown() { }
+	[CompilerGeneratedAttribute] 
+	private void set_StartCountdown(int value) { }
 
-public float get_NormalizedTapeUsed() { }
+	private bool get_IsCountingDown() { }
 
-private void StartRecording() { }
+	public float get_NormalizedTapeUsed() { }
 
-private void TickDownStart() { }
+	private void StartRecording() { }
 
-public void StopRecording() { }
+	private void TickDownStart() { }
 
-public override void OnDeploy() { }
+	public void StopRecording() { }
 
-private void CancelRecording() { }
+	public override void OnDeploy() { }
 
-private void RequestFileUpdate() { }
+	private void CancelRecording() { }
 
-public void UpdateAudioClip(AudioClip clip) { }
+	private void RequestFileUpdate() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public void UpdateAudioClip(AudioClip clip) { }
+
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
 	[BaseEntity.RPC_Client] 
-public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
+	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
+	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
-public void OnLoadedWithCassette(Cassette c) { }
+	public void OnLoadedWithCassette(Cassette c) { }
 
-private void UpdateViewmodelCassette(ViewModel vm) { }
+	private void UpdateViewmodelCassette(ViewModel vm) { }
 
-private void UpdateViewmodelPlay(BasePlayer forPlayer, ViewModel vm) { }
+	private void UpdateViewmodelPlay(BasePlayer forPlayer, ViewModel vm) { }
 
-public override void OnDeployed() { }
+	public override void OnDeployed() { }
 
-public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

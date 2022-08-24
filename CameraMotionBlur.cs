@@ -32,40 +32,40 @@ public class CameraMotionBlur : PostEffectsBase // TypeDefIndex: 8168
 	private Camera _camera; 
 
 
-private void CalculateViewProjection() { }
+	private void CalculateViewProjection() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private void Remember() { }
+	private void Remember() { }
 
-private Camera GetTmpCam() { }
+	private Camera GetTmpCam() { }
 
-private void StartFrame() { }
+	private void StartFrame() { }
 
-private static int divRoundUp(int x, int d) { }
+	private static int divRoundUp(int x, int d) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum CameraMotionBlur.MotionBlurFilter // TypeDefIndex: 8169
 {
 	public int value__; 
-public const CameraMotionBlur.MotionBlurFilter CameraMotion = 0;
-public const CameraMotionBlur.MotionBlurFilter LocalBlur = 1;
-public const CameraMotionBlur.MotionBlurFilter Reconstruction = 2;
-public const CameraMotionBlur.MotionBlurFilter ReconstructionDX11 = 3;
-public const CameraMotionBlur.MotionBlurFilter ReconstructionDisc = 4;
+	public const CameraMotionBlur.MotionBlurFilter CameraMotion = 0;
+	public const CameraMotionBlur.MotionBlurFilter LocalBlur = 1;
+	public const CameraMotionBlur.MotionBlurFilter Reconstruction = 2;
+	public const CameraMotionBlur.MotionBlurFilter ReconstructionDX11 = 3;
+	public const CameraMotionBlur.MotionBlurFilter ReconstructionDisc = 4;
 
 }
 

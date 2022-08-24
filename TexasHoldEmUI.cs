@@ -53,28 +53,28 @@ public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDe
 	private int lastPotUpdate; 
 	private List<PlayingCard> localPlayerCards; 
 
-public int DynamicBetAmount { get; set; }
+	public int DynamicBetAmount { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public int get_DynamicBetAmount() { }
+	public int get_DynamicBetAmount() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_DynamicBetAmount(int value) { }
+	private void set_DynamicBetAmount(int value) { }
 
-public void UpdateInGameUI(CardTableUI ui, CardGameController game) { }
+	public void UpdateInGameUI(CardTableUI ui, CardGameController game) { }
 
-public string GetSecondaryInfo(CardTableUI ui, CardGameController game, out CardTableUI.InfoTextUI.Attitude attitude) { }
+	public string GetSecondaryInfo(CardTableUI ui, CardGameController game, out CardTableUI.InfoTextUI.Attitude attitude) { }
 
-public void UpdateInGameUI_NoPlayer(CardTableUI ui) { }
+	public void UpdateInGameUI_NoPlayer(CardTableUI ui) { }
 
-private string GetWinnerNameFromID(ulong playerID) { }
+	private string GetWinnerNameFromID(ulong playerID) { }
 
-private void PopulateCards(List<PlayingCard> cards, Image[] slots, CardTableUI ui) { }
+	private void PopulateCards(List<PlayingCard> cards, Image[] slots, CardTableUI ui) { }
 
-public Translate.Phrase PokerResultToPhrase(PokerLib.PokerResult result) { }
+	public Translate.Phrase PokerResultToPhrase(PokerLib.PokerResult result) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -84,11 +84,11 @@ private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 10886
 	public static Predicate<CardTableUI.KeycodeWithAction> <>9__30_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <UpdateInGameUI>b__30_0(CardTableUI.KeycodeWithAction p) { }
+	internal bool <UpdateInGameUI>b__30_0(CardTableUI.KeycodeWithAction p) { }
 
 }
 

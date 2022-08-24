@@ -6,19 +6,19 @@ public class CardTableSeat : BaseChair // TypeDefIndex: 9582
 	private bool wasShowingCards; 
 
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-protected override void ClientOnPlayerMounted(BasePlayer player) { }
+	protected override void ClientOnPlayerMounted(BasePlayer player) { }
 
-protected override void ClientOnPlayerDismounted(BasePlayer player) { }
+	protected override void ClientOnPlayerDismounted(BasePlayer player) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-private void UpdateCardPosition(BasePlayer forPlayer) { }
+	private void UpdateCardPosition(BasePlayer forPlayer) { }
 
-public override float GetMountedAnimationSpeed() { }
+	public override float GetMountedAnimationSpeed() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

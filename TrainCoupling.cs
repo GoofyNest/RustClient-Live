@@ -10,19 +10,19 @@ public class TrainCoupling // TypeDefIndex: 9769
 	public EntityRef<TrainCar> clientCoupledTo; 
 	public bool clientCoupledToFront; 
 
-public bool IsCoupled { get; }
-public bool IsUncoupled { get; }
+	public bool IsCoupled { get; }
+	public bool IsUncoupled { get; }
 
 
-public bool get_IsCoupled() { }
+	public bool get_IsCoupled() { }
 
-public bool get_IsUncoupled() { }
+	public bool get_IsUncoupled() { }
 
-public void .ctor(TrainCar owner, bool isFrontCoupling, TrainCouplingController controller) { }
+	public void .ctor(TrainCar owner, bool isFrontCoupling, TrainCouplingController controller) { }
 
-public void .ctor(TrainCar owner, bool isFrontCoupling, TrainCouplingController controller, Transform couplingPoint, Transform couplingPivot, BaseEntity.Flags flag) { }
+	public void .ctor(TrainCar owner, bool isFrontCoupling, TrainCouplingController controller, Transform couplingPoint, Transform couplingPivot, BaseEntity.Flags flag) { }
 
-public void VisualTick() { }
+	public void VisualTick() { }
 
 }
 

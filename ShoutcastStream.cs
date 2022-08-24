@@ -14,15 +14,15 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 11978
 	private bool reading; 
 	private string url; 
 	private static List<float[]> pooledBuffers; 
-public const uint MaxSampleBuffer = 163840;
+	public const uint MaxSampleBuffer = 163840;
 	[CompilerGeneratedAttribute] 
 	private uint <currentWriteIndex>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private float[] <floatSamples>k__BackingField; 
 	private byte[] buffer; 
 	public float[] floatBuffer; 
-public const uint bufferSize = 32768;
-private const float const_1_div_32768_ = 3,051758E-05;
+	public const uint bufferSize = 32768;
+	private const float const_1_div_32768_ = 3,051758E-05;
 	private List<ShoutcastStreamer> connectedStreamers; 
 	private static List<ShoutcastStream> connections; 
 	private static List<ShoutcastStream> active; 
@@ -31,75 +31,75 @@ private const float const_1_div_32768_ = 3,051758E-05;
 	private short[] zeroResult; 
 	private short[] byteResult; 
 
-public bool SocketConnected { get; set; }
-public int Frequency { get; }
-public uint currentWriteIndex { get; set; }
-public float[] floatSamples { get; set; }
+	public bool SocketConnected { get; set; }
+	public int Frequency { get; }
+	public uint currentWriteIndex { get; set; }
+	public float[] floatSamples { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_SocketConnected() { }
+	public bool get_SocketConnected() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_SocketConnected(bool value) { }
+	private void set_SocketConnected(bool value) { }
 
-public int get_Frequency() { }
-
-	[CompilerGeneratedAttribute] 
-public uint get_currentWriteIndex() { }
+	public int get_Frequency() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_currentWriteIndex(uint value) { }
+	public uint get_currentWriteIndex() { }
 
 	[CompilerGeneratedAttribute] 
-public float[] get_floatSamples() { }
+	private void set_currentWriteIndex(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_floatSamples(float[] value) { }
+	public float[] get_floatSamples() { }
 
-public static void RunConnections() { }
+	[CompilerGeneratedAttribute] 
+	private void set_floatSamples(float[] value) { }
 
-public static ShoutcastStream GetExistingStream(string host) { }
+	public static void RunConnections() { }
 
-public uint GetLeadStreamerReadIndex() { }
+	public static ShoutcastStream GetExistingStream(string host) { }
 
-public bool IsLeadStream(ShoutcastStreamer stream) { }
+	public uint GetLeadStreamerReadIndex() { }
 
-public void ResetSamples(uint read) { }
+	public bool IsLeadStream(ShoutcastStreamer stream) { }
 
-public void InitialiseConnection(string host, ShoutcastStreamer forStreamer) { }
+	public void ResetSamples(uint read) { }
 
-public void RegisterNewStreamer(ShoutcastStreamer forStreamer) { }
+	public void InitialiseConnection(string host, ShoutcastStreamer forStreamer) { }
+
+	public void RegisterNewStreamer(ShoutcastStreamer forStreamer) { }
 
 	[AsyncStateMachineAttribute] 
-private Task ConnectAsync() { }
+	private Task ConnectAsync() { }
 
 	[AsyncStateMachineAttribute] 
-public Task<bool> ReadDataAsync(ShoutcastStreamer forStreamer) { }
+	public Task<bool> ReadDataAsync(ShoutcastStreamer forStreamer) { }
 
 	[AsyncStateMachineAttribute] 
-private Task<bool> ReadDataAsync(byte[] byteBuffer) { }
+	private Task<bool> ReadDataAsync(byte[] byteBuffer) { }
 
-private float[] IntToFloat(short[] from) { }
+	private float[] IntToFloat(short[] from) { }
 
-private short[] ByteToInt16(byte[] buffer) { }
+	private short[] ByteToInt16(byte[] buffer) { }
 
-private float[] ByteToFloat(byte[] bArray) { }
+	private float[] ByteToFloat(byte[] bArray) { }
 
-private void Disconnect() { }
+	private void Disconnect() { }
 
-private void ClearFloatSamples() { }
+	private void ClearFloatSamples() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
 	[AsyncStateMachineAttribute] 
-private Task ShutdownSafely() { }
+	private Task ShutdownSafely() { }
 
-public void AttemptDisconnect(ShoutcastStreamer streamer) { }
+	public void AttemptDisconnect(ShoutcastStreamer streamer) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -108,9 +108,9 @@ private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 1197
 	public Stream stream; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal MP3Stream <ConnectAsync>b__0() { }
+	internal MP3Stream <ConnectAsync>b__0() { }
 
 }
 
@@ -125,10 +125,10 @@ private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeD
 	private TaskAwaiter<MP3Stream> <>u__3; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -141,10 +141,10 @@ private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // Type
 	private TaskAwaiter<bool> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -157,10 +157,10 @@ private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // Type
 	private TaskAwaiter<int> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -173,10 +173,10 @@ private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // Typ
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

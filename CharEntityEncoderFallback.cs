@@ -6,21 +6,21 @@ internal class CharEntityEncoderFallback : EncoderFallback // TypeDefIndex: 1834
 	private int curMarkPos; 
 	private int startOffset; 
 
-public override int MaxCharCount { get; }
-internal int StartOffset { set; }
+	public override int MaxCharCount { get; }
+	internal int StartOffset { set; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public override EncoderFallbackBuffer CreateFallbackBuffer() { }
+	public override EncoderFallbackBuffer CreateFallbackBuffer() { }
 
-public override int get_MaxCharCount() { }
+	public override int get_MaxCharCount() { }
 
-internal void set_StartOffset(int value) { }
+	internal void set_StartOffset(int value) { }
 
-internal void Reset(int[] textContentMarks, int endMarkPos) { }
+	internal void Reset(int[] textContentMarks, int endMarkPos) { }
 
-internal bool CanReplaceAt(int index) { }
+	internal bool CanReplaceAt(int index) { }
 
 }
 

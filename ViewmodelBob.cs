@@ -15,13 +15,13 @@ public class ViewmodelBob : MonoBehaviour // TypeDefIndex: 11453
 	internal ViewmodelBob.BobSettings smoothedBob; 
 
 
-private ViewmodelBob.BobSettings WorkoutBobSettings(Vector3 newVelocity, float fov, bool isRunning, bool OnGround, bool isAiming, bool isDucked, bool isMounted) { }
+	private ViewmodelBob.BobSettings WorkoutBobSettings(Vector3 newVelocity, float fov, bool isRunning, bool OnGround, bool isAiming, bool isDucked, bool isMounted) { }
 
-public void Apply(ref CachedTransform<BaseViewModel> vm, float fov, BasePlayer player) { }
+	public void Apply(ref CachedTransform<BaseViewModel> vm, float fov, BasePlayer player) { }
 
-private void ApplySettings(ref CachedTransform<BaseViewModel> vm, ViewmodelBob.BobSettings settings) { }
+	private void ApplySettings(ref CachedTransform<BaseViewModel> vm, ViewmodelBob.BobSettings settings) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

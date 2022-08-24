@@ -12,19 +12,19 @@ public class Occludee : MonoBehaviour // TypeDefIndex: 11507
 	protected Collider collider; 
 
 
-protected virtual void Awake() { }
+	protected virtual void Awake() { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void Register() { }
+	public void Register() { }
 
-public void Unregister() { }
+	public void Unregister() { }
 
-protected virtual void OnVisibilityChanged(bool visible) { }
+	protected virtual void OnVisibilityChanged(bool visible) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

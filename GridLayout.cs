@@ -7,7 +7,7 @@ public class GridLayout : Behaviour // TypeDefIndex: 4023
 public class GridLayout : Behaviour 
 
 	[RequiredByNativeCodeAttribute] 
-private void DoNothing() { }
+	private void DoNothing() { }
 
 }
 

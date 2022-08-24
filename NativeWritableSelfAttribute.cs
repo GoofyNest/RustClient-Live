@@ -4,13 +4,13 @@ internal sealed class NativeWritableSelfAttribute : Attribute // TypeDefIndex: 3
 	[DebuggerBrowsableAttribute] 
 	private bool <WritableSelf>k__BackingField; 
 
-public bool WritableSelf { set; }
+	public bool WritableSelf { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public void set_WritableSelf(bool value) { }
+	public void set_WritableSelf(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

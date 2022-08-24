@@ -7,17 +7,17 @@ internal class NativeConditionalAttribute : Attribute // TypeDefIndex: 3270
 	[DebuggerBrowsableAttribute] 
 	private bool <Enabled>k__BackingField; 
 
-public string Condition { set; }
-public bool Enabled { set; }
+	public string Condition { set; }
+	public bool Enabled { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public void set_Condition(string value) { }
+	public void set_Condition(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Enabled(bool value) { }
+	public void set_Enabled(bool value) { }
 
-public void .ctor(string condition) { }
+	public void .ctor(string condition) { }
 
 }
 

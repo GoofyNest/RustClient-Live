@@ -5,7 +5,7 @@ internal static class UnsafeNclNativeMethods.HttpApi
 	private static string[] m_Strings; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -14,18 +14,18 @@ internal static class UnsafeNclNativeMethods.HttpApi.HTTP_REQUEST_HEADER_ID // T
 	private static string[] m_Strings; 
 
 
-internal static string ToString(int position) { }
+	internal static string ToString(int position) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal static class UnsafeNclNativeMethods.SecureStringHelper // TypeDefIndex: 2983
 {
 
-internal static string CreateString(SecureString secureString) { }
+	internal static string CreateString(SecureString secureString) { }
 
-internal static SecureString CreateSecureString(string plainString) { }
+	internal static SecureString CreateSecureString(string plainString) { }
 
 }
 

@@ -6,13 +6,13 @@ public class FastAction
 	private Dictionary<Action, LinkedListNode<Action>> lookup; 
 
 
-public void Add(Action rhs) { }
+	public void Add(Action rhs) { }
 
-public void Remove(Action rhs) { }
+	public void Remove(Action rhs) { }
 
-public void Call() { }
+	public void Call() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

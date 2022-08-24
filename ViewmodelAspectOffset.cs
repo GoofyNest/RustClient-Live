@@ -5,9 +5,9 @@ public class ViewmodelAspectOffset : MonoBehaviour // TypeDefIndex: 11451
 	public float aspectCutoff; 
 
 
-public void Apply(ref CachedTransform<BaseViewModel> vm) { }
+	public void Apply(ref CachedTransform<BaseViewModel> vm) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

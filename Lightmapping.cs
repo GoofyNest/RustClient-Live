@@ -7,31 +7,31 @@ public static class Lightmapping // TypeDefIndex: 3888
 
 
 	[RequiredByNativeCodeAttribute] 
-public static void SetDelegate(Lightmapping.RequestLightsDelegate del) { }
+	public static void SetDelegate(Lightmapping.RequestLightsDelegate del) { }
 
 	[RequiredByNativeCodeAttribute] 
-public static Lightmapping.RequestLightsDelegate GetDelegate() { }
+	public static Lightmapping.RequestLightsDelegate GetDelegate() { }
 
 	[RequiredByNativeCodeAttribute] 
-public static void ResetDelegate() { }
+	public static void ResetDelegate() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void RequestLights(Light[] lights, IntPtr outLightsPtr, int outLightsCount) { }
+	internal static void RequestLights(Light[] lights, IntPtr outLightsPtr, int outLightsCount) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public sealed class Lightmapping.RequestLightsDelegate : MulticastDelegate // TypeDefIndex: 3889
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(Light[] requests, NativeArray<LightDataGI> lightsOutput) { }
+	public virtual void Invoke(Light[] requests, NativeArray<LightDataGI> lightsOutput) { }
 
-public virtual IAsyncResult BeginInvoke(Light[] requests, NativeArray<LightDataGI> lightsOutput, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(Light[] requests, NativeArray<LightDataGI> lightsOutput, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
@@ -40,11 +40,11 @@ private sealed class Lightmapping.<>c // TypeDefIndex: 3890
 	public static readonly Lightmapping.<>c <>9; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <.cctor>b__7_0(Light[] requests, NativeArray<LightDataGI> lightsOutput) { }
+	internal void <.cctor>b__7_0(Light[] requests, NativeArray<LightDataGI> lightsOutput) { }
 
 }
 

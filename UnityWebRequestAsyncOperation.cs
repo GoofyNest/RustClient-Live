@@ -4,13 +4,13 @@ public class UnityWebRequestAsyncOperation : AsyncOperation // TypeDefIndex: 412
 	[CompilerGeneratedAttribute] 
 	private UnityWebRequest <webRequest>k__BackingField; 
 
-internal UnityWebRequest webRequest { set; }
+	internal UnityWebRequest webRequest { set; }
 
 
 	[CompilerGeneratedAttribute] 
-internal void set_webRequest(UnityWebRequest value) { }
+	internal void set_webRequest(UnityWebRequest value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

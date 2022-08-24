@@ -4,9 +4,9 @@ public class TimedRemoval : MonoBehaviour // TypeDefIndex: 9243
 	public float removeDelay; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

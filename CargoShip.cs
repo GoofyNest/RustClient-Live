@@ -27,27 +27,27 @@ public class CargoShip : BaseEntity // TypeDefIndex: 8287
 	public GameObjectRef playerTest; 
 	private uint layoutChoice; 
 	private TimeSince timeSinceUpdatedSounds; 
-private const float updateRateDistSq = 10000;
+	private const float updateRateDistSq = 10000;
 
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void RefreshActiveLayout() { }
+	public void RefreshActiveLayout() { }
 
-public void Update() { }
+	public void Update() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
 	[BaseEntity.RPC_Client] 
-public void DoHornSound(BaseEntity.RPCMessage msg) { }
+	public void DoHornSound(BaseEntity.RPCMessage msg) { }
 
-public override bool SupportsChildDeployables() { }
+	public override bool SupportsChildDeployables() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

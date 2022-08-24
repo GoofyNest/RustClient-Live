@@ -7,11 +7,11 @@ internal class CADMethodRef // TypeDefIndex: 1226
 	private string[] generic_arg_names; 
 
 
-private Type[] GetTypes(string[] typeArray) { }
+	private Type[] GetTypes(string[] typeArray) { }
 
-public MethodBase Resolve() { }
+	public MethodBase Resolve() { }
 
-public void .ctor(IMethodMessage msg) { }
+	public void .ctor(IMethodMessage msg) { }
 
 }
 

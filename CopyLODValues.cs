@@ -9,11 +9,11 @@ public class CopyLODValues : MonoBehaviour, IEditorComponent // TypeDefIndex: 99
 	private bool scale; 
 
 
-public bool CanCopy() { }
+	public bool CanCopy() { }
 
-public void Copy() { }
+	public void Copy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

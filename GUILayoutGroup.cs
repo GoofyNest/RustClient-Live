@@ -21,41 +21,41 @@ internal class GUILayoutGroup : GUILayoutEntry // TypeDefIndex: 4055
 	protected int m_MarginTop; 
 	protected int m_MarginBottom; 
 
-public override int marginLeft { get; }
-public override int marginRight { get; }
-public override int marginTop { get; }
-public override int marginBottom { get; }
+	public override int marginLeft { get; }
+	public override int marginRight { get; }
+	public override int marginTop { get; }
+	public override int marginBottom { get; }
 
 
-public override int get_marginLeft() { }
+	public override int get_marginLeft() { }
 
-public override int get_marginRight() { }
+	public override int get_marginRight() { }
 
-public override int get_marginTop() { }
+	public override int get_marginTop() { }
 
-public override int get_marginBottom() { }
+	public override int get_marginBottom() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void ApplyOptions(GUILayoutOption[] options) { }
+	public override void ApplyOptions(GUILayoutOption[] options) { }
 
-protected override void ApplyStyleSettings(GUIStyle style) { }
+	protected override void ApplyStyleSettings(GUIStyle style) { }
 
-public void ResetCursor() { }
+	public void ResetCursor() { }
 
-public GUILayoutEntry GetNext() { }
+	public GUILayoutEntry GetNext() { }
 
-public void Add(GUILayoutEntry e) { }
+	public void Add(GUILayoutEntry e) { }
 
-public override void CalcWidth() { }
+	public override void CalcWidth() { }
 
-public override void SetHorizontal(float x, float width) { }
+	public override void SetHorizontal(float x, float width) { }
 
-public override void CalcHeight() { }
+	public override void CalcHeight() { }
 
-public override void SetVertical(float y, float height) { }
+	public override void SetVertical(float y, float height) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

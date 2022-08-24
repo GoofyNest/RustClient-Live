@@ -6,15 +6,15 @@ public class TerrainBenchmarkScene : BenchmarkScene // TypeDefIndex: 8268
 	public Transform viewpointB; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public override void StartBenchmark() { }
+	public override void StartBenchmark() { }
 
-public override void BenchmarkUpdate() { }
+	public override void BenchmarkUpdate() { }
 
-private void OnDrawGizmos() { }
+	private void OnDrawGizmos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

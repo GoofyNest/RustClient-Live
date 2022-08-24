@@ -13,48 +13,48 @@ public abstract class MemberDescriptor // TypeDefIndex: 2729
 	private string description; 
 	private object lockCookie; 
 
-protected virtual Attribute[] AttributeArray { get; set; }
-public virtual AttributeCollection Attributes { get; }
-public virtual string Name { get; }
-protected virtual int NameHashCode { get; }
-public virtual string DisplayName { get; }
+	protected virtual Attribute[] AttributeArray { get; set; }
+	public virtual AttributeCollection Attributes { get; }
+	public virtual string Name { get; }
+	protected virtual int NameHashCode { get; }
+	public virtual string DisplayName { get; }
 
 
-protected void .ctor(string name, Attribute[] attributes) { }
+	protected void .ctor(string name, Attribute[] attributes) { }
 
-protected void .ctor(MemberDescriptor oldMemberDescriptor, Attribute[] newAttributes) { }
+	protected void .ctor(MemberDescriptor oldMemberDescriptor, Attribute[] newAttributes) { }
 
-protected virtual Attribute[] get_AttributeArray() { }
+	protected virtual Attribute[] get_AttributeArray() { }
 
-protected virtual void set_AttributeArray(Attribute[] value) { }
+	protected virtual void set_AttributeArray(Attribute[] value) { }
 
-public virtual AttributeCollection get_Attributes() { }
+	public virtual AttributeCollection get_Attributes() { }
 
-public virtual string get_Name() { }
+	public virtual string get_Name() { }
 
-protected virtual int get_NameHashCode() { }
+	protected virtual int get_NameHashCode() { }
 
-public virtual string get_DisplayName() { }
+	public virtual string get_DisplayName() { }
 
-private void CheckAttributesValid() { }
+	private void CheckAttributesValid() { }
 
-protected virtual AttributeCollection CreateAttributeCollection() { }
+	protected virtual AttributeCollection CreateAttributeCollection() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-protected virtual void FillAttributes(IList attributeList) { }
+	protected virtual void FillAttributes(IList attributeList) { }
 
-private void FilterAttributesIfNeeded() { }
+	private void FilterAttributesIfNeeded() { }
 
-protected static MethodInfo FindMethod(Type componentClass, string name, Type[] args, Type returnType) { }
+	protected static MethodInfo FindMethod(Type componentClass, string name, Type[] args, Type returnType) { }
 
-protected static MethodInfo FindMethod(Type componentClass, string name, Type[] args, Type returnType, bool publicOnly) { }
+	protected static MethodInfo FindMethod(Type componentClass, string name, Type[] args, Type returnType, bool publicOnly) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-protected virtual object GetInvocationTarget(Type type, object instance) { }
+	protected virtual object GetInvocationTarget(Type type, object instance) { }
 
-protected static ISite GetSite(object component) { }
+	protected static ISite GetSite(object component) { }
 
 }
 

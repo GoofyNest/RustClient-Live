@@ -5,15 +5,15 @@ public class DevEnableDisable : DevControlsTab // TypeDefIndex: 9298
 	public string TabName; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void ApplyLastSettings() { }
+	private void ApplyLastSettings() { }
 
-public override string GetTabName() { }
+	public override string GetTabName() { }
 
-public override void OnTabContents() { }
+	public override void OnTabContents() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

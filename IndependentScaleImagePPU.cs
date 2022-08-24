@@ -6,11 +6,11 @@ public class IndependentScaleImagePPU : MonoBehaviour, IClientComponent // TypeD
 	private Vector3 lastScale; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

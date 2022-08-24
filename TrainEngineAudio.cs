@@ -86,39 +86,39 @@ public class TrainEngineAudio : MonoBehaviour // TypeDefIndex: 9771
 	private Sound activeHorn; 
 
 
-public void UpdateTick() { }
+	public void UpdateTick() { }
 
-public void StopAll() { }
+	public void StopAll() { }
 
-public void PlayDamageSounds() { }
+	public void PlayDamageSounds() { }
 
-public void StopDamageSounds() { }
+	public void StopDamageSounds() { }
 
-public void PlayThrottleSwitchSound() { }
+	public void PlayThrottleSwitchSound() { }
 
-public void PlayCouplingChangedBeep() { }
+	public void PlayCouplingChangedBeep() { }
 
-public void PlayLinedUpToUnloadBeep() { }
+	public void PlayLinedUpToUnloadBeep() { }
 
-public void PlayUnLinedUpToUnloadBeep() { }
+	public void PlayUnLinedUpToUnloadBeep() { }
 
-public void SetForEngineState(VehicleEngineController.EngineState<TrainEngine> newState) { }
+	public void SetForEngineState(VehicleEngineController.EngineState<TrainEngine> newState) { }
 
-public void PlayLightsToggleSound() { }
+	public void PlayLightsToggleSound() { }
 
-public void SetBrakeSound(bool braking) { }
+	public void SetBrakeSound(bool braking) { }
 
-public void SetHornState(bool on) { }
+	public void SetHornState(bool on) { }
 
-private void StopMovementLoops() { }
+	private void StopMovementLoops() { }
 
-private void StopTurnLoops() { }
+	private void StopTurnLoops() { }
 
-private void StopEngineSounds(bool withinEngineSoundDist) { }
+	private void StopEngineSounds(bool withinEngineSoundDist) { }
 
-private void StartEngineSounds(bool withinEngineSoundDist) { }
+	private void StartEngineSounds(bool withinEngineSoundDist) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -133,7 +133,7 @@ public class TrainEngineAudio.EngineReflection // TypeDefIndex: 9772
 	public float distance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

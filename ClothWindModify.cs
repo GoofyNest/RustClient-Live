@@ -6,11 +6,11 @@ public class ClothWindModify : FacepunchBehaviour // TypeDefIndex: 10698
 	public Vector3 turbulenceScale; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void DoWind() { }
+	public void DoWind() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

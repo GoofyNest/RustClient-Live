@@ -6,11 +6,11 @@ public class WiggleRenderer : PostProcessEffectRenderer<Wiggle> // TypeDefIndex:
 	private float timer; 
 
 
-public override void Init() { }
+	public override void Init() { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

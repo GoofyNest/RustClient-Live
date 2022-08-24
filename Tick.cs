@@ -6,21 +6,21 @@ public static class Tick // TypeDefIndex: 6603
 	private static List<Object> RemoveList; 
 
 
-public static void AddTimed(Object obj, float minDelay, float maxDelay, Action action, string DebugName) { }
+	public static void AddTimed(Object obj, float minDelay, float maxDelay, Action action, string DebugName) { }
 
-public static void Add(Object obj, Action action, string DebugName) { }
+	public static void Add(Object obj, Action action, string DebugName) { }
 
-public static void AddLateUpdate(Object obj, Action action, string DebugName) { }
+	public static void AddLateUpdate(Object obj, Action action, string DebugName) { }
 
-public static void RemoveAll(Object obj) { }
+	public static void RemoveAll(Object obj) { }
 
-private static void Cleanup() { }
+	private static void Cleanup() { }
 
-internal static void OnFrame() { }
+	internal static void OnFrame() { }
 
-internal static void OnFrameLate() { }
+	internal static void OnFrameLate() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -39,13 +39,13 @@ public struct Tick.Entry // TypeDefIndex: 6604
 public class Tick.Entry.List : List<Tick.Entry> // TypeDefIndex: 6605
 {
 
-public void Remove(Object obj) { }
+	public void Remove(Object obj) { }
 
-internal void Tick() { }
+	internal void Tick() { }
 
-internal void TickTimed() { }
+	internal void TickTimed() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

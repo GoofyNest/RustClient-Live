@@ -32,9 +32,9 @@ public class ERDecalClass // TypeDefIndex: 7215
 	public float width2; 
 
 
-public static void CopyDecal(ERDecal source, ERDecalClass target) { }
+	public static void CopyDecal(ERDecal source, ERDecalClass target) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

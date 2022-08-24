@@ -4,15 +4,15 @@ public class DSASignatureDeformatter : AsymmetricSignatureDeformatter // TypeDef
 	private string _oid; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(AsymmetricAlgorithm key) { }
+	public void .ctor(AsymmetricAlgorithm key) { }
 
-public override void SetKey(AsymmetricAlgorithm key) { }
+	public override void SetKey(AsymmetricAlgorithm key) { }
 
-public override void SetHashAlgorithm(string strName) { }
+	public override void SetHashAlgorithm(string strName) { }
 
-public override bool VerifySignature(byte[] rgbHash, byte[] rgbSignature) { }
+	public override bool VerifySignature(byte[] rgbHash, byte[] rgbSignature) { }
 
 }
 

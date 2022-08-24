@@ -29,57 +29,57 @@ internal class Panel : BaseVisualElementPanel // TypeDefIndex: 4601
 	private IMGUIContainer <rootIMGUIContainer>k__BackingField; 
 	private bool m_ValidatingLayout; 
 
-public override VisualElement visualTree { get; }
-public override EventDispatcher dispatcher { get; }
-public override ScriptableObject ownerObject { get; }
-public override ContextType contextType { get; }
-public override FocusController focusController { get; }
-public override EventInterests IMGUIEventInterests { get; }
-public override int IMGUIContainersCount { get; }
-public override IMGUIContainer rootIMGUIContainer { get; }
-internal override uint version { get; }
+	public override VisualElement visualTree { get; }
+	public override EventDispatcher dispatcher { get; }
+	public override ScriptableObject ownerObject { get; }
+	public override ContextType contextType { get; }
+	public override FocusController focusController { get; }
+	public override EventInterests IMGUIEventInterests { get; }
+	public override int IMGUIContainersCount { get; }
+	public override IMGUIContainer rootIMGUIContainer { get; }
+	internal override uint version { get; }
 
 
-public override VisualElement get_visualTree() { }
-
-	[CompilerGeneratedAttribute] 
-public override EventDispatcher get_dispatcher() { }
+	public override VisualElement get_visualTree() { }
 
 	[CompilerGeneratedAttribute] 
-public override ScriptableObject get_ownerObject() { }
+	public override EventDispatcher get_dispatcher() { }
 
 	[CompilerGeneratedAttribute] 
-public override ContextType get_contextType() { }
+	public override ScriptableObject get_ownerObject() { }
 
 	[CompilerGeneratedAttribute] 
-public override FocusController get_focusController() { }
+	public override ContextType get_contextType() { }
 
 	[CompilerGeneratedAttribute] 
-public override EventInterests get_IMGUIEventInterests() { }
+	public override FocusController get_focusController() { }
 
 	[CompilerGeneratedAttribute] 
-public override int get_IMGUIContainersCount() { }
+	public override EventInterests get_IMGUIEventInterests() { }
 
 	[CompilerGeneratedAttribute] 
-public override IMGUIContainer get_rootIMGUIContainer() { }
+	public override int get_IMGUIContainersCount() { }
 
-internal override uint get_version() { }
+	[CompilerGeneratedAttribute] 
+	public override IMGUIContainer get_rootIMGUIContainer() { }
 
-private static VisualElement PickAll(VisualElement root, Vector2 point, List<VisualElement> picked) { }
+	internal override uint get_version() { }
 
-private static VisualElement PerformPick(VisualElement root, Vector2 point, List<VisualElement> picked) { }
+	private static VisualElement PickAll(VisualElement root, Vector2 point, List<VisualElement> picked) { }
 
-public override VisualElement Pick(Vector2 point) { }
+	private static VisualElement PerformPick(VisualElement root, Vector2 point, List<VisualElement> picked) { }
 
-public override void ValidateLayout() { }
+	public override VisualElement Pick(Vector2 point) { }
 
-private void UpdateForRepaint() { }
+	public override void ValidateLayout() { }
 
-public override void Repaint(Event e) { }
+	private void UpdateForRepaint() { }
 
-internal override void OnVersionChanged(VisualElement ve, VersionChangeType versionChangeType) { }
+	public override void Repaint(Event e) { }
 
-private static void .cctor() { }
+	internal override void OnVersionChanged(VisualElement ve, VersionChangeType versionChangeType) { }
+
+	private static void .cctor() { }
 
 }
 

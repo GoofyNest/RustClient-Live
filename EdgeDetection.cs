@@ -13,29 +13,29 @@ public class EdgeDetection : PostEffectsBase // TypeDefIndex: 8186
 	private EdgeDetection.EdgeDetectMode oldMode; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void SetCameraFlag() { }
+	private void SetCameraFlag() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
 	[ImageEffectOpaque] 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum EdgeDetection.EdgeDetectMode // TypeDefIndex: 8187
 {
 	public int value__; 
-public const EdgeDetection.EdgeDetectMode TriangleDepthNormals = 0;
-public const EdgeDetection.EdgeDetectMode RobertsCrossDepthNormals = 1;
-public const EdgeDetection.EdgeDetectMode SobelDepth = 2;
-public const EdgeDetection.EdgeDetectMode SobelDepthThin = 3;
-public const EdgeDetection.EdgeDetectMode TriangleLuminance = 4;
+	public const EdgeDetection.EdgeDetectMode TriangleDepthNormals = 0;
+	public const EdgeDetection.EdgeDetectMode RobertsCrossDepthNormals = 1;
+	public const EdgeDetection.EdgeDetectMode SobelDepth = 2;
+	public const EdgeDetection.EdgeDetectMode SobelDepthThin = 3;
+	public const EdgeDetection.EdgeDetectMode TriangleLuminance = 4;
 
 }
 

@@ -5,9 +5,9 @@ public class DummySwitch : IOEntity // TypeDefIndex: 9797
 	public float duration; 
 
 
-public override bool WantsPower() { }
+	public override bool WantsPower() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -4,21 +4,21 @@ public class Monument : TerrainPlacement // TypeDefIndex: 10583
 	public float Fade; 
 
 
-protected void OnDrawGizmosSelected() { }
+	protected void OnDrawGizmosSelected() { }
 
-protected override void ApplyHeight(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyHeight(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplySplat(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplySplat(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyAlpha(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyAlpha(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyBiome(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyBiome(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyTopology(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyTopology(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyWater(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyWater(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -32,9 +32,9 @@ private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 10584
 	public TextureData heightdata; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyHeight>b__0(int x, int z) { }
+	internal void <ApplyHeight>b__0(int x, int z) { }
 
 }
 
@@ -54,9 +54,9 @@ private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 10585
 	public bool should7; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplySplat>b__0(int x, int z) { }
+	internal void <ApplySplat>b__0(int x, int z) { }
 
 }
 
@@ -67,9 +67,9 @@ private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 10586
 	public TextureData alphadata; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyAlpha>b__0(int x, int z) { }
+	internal void <ApplyAlpha>b__0(int x, int z) { }
 
 }
 
@@ -84,9 +84,9 @@ private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 10587
 	public bool should3; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyBiome>b__0(int x, int z) { }
+	internal void <ApplyBiome>b__0(int x, int z) { }
 
 }
 
@@ -97,9 +97,9 @@ private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 10588
 	public TextureData topologydata; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyTopology>b__0(int x, int z) { }
+	internal void <ApplyTopology>b__0(int x, int z) { }
 
 }
 

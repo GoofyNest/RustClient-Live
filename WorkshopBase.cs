@@ -8,7 +8,7 @@ public class WorkshopBase : ScriptableObject // TypeDefIndex: 7719
 	public Texture2D previewImage; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

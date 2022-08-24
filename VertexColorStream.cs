@@ -36,41 +36,41 @@ public class VertexColorStream : MonoBehaviour // TypeDefIndex: 11527
 	public Vector2[] _uv4; 
 
 
-private void OnDidApplyAnimationProperties() { }
+	private void OnDidApplyAnimationProperties() { }
 
-public void init(Mesh origMesh, bool destroyOld) { }
+	public void init(Mesh origMesh, bool destroyOld) { }
 
-public void setWholeMesh(Mesh tmpMesh) { }
+	public void setWholeMesh(Mesh tmpMesh) { }
 
-public Vector3[] setVertices(Vector3[] _deformedVertices) { }
+	public Vector3[] setVertices(Vector3[] _deformedVertices) { }
 
-public Vector3[] getVertices() { }
+	public Vector3[] getVertices() { }
 
-public Vector3[] getNormals() { }
+	public Vector3[] getNormals() { }
 
-public int[] getTriangles() { }
+	public int[] getTriangles() { }
 
-public void setTangents(Vector4[] _meshTangents) { }
+	public void setTangents(Vector4[] _meshTangents) { }
 
-public Vector4[] getTangents() { }
+	public Vector4[] getTangents() { }
 
-public void setColors(Color[] _vertexColors) { }
+	public void setColors(Color[] _vertexColors) { }
 
-public Color[] getColors() { }
+	public Color[] getColors() { }
 
-public Vector2[] getUVs() { }
+	public Vector2[] getUVs() { }
 
-public void setUV4s(Vector2[] _uv4s) { }
+	public void setUV4s(Vector2[] _uv4s) { }
 
-public Vector2[] getUV4s() { }
+	public Vector2[] getUV4s() { }
 
-public void unlink() { }
+	public void unlink() { }
 
-public void rebuild() { }
+	public void rebuild() { }
 
-private void Start() { }
+	private void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

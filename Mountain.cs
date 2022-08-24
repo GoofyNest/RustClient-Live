@@ -3,21 +3,21 @@ public class Mountain : TerrainPlacement // TypeDefIndex: 10589
 	public float Fade; 
 
 
-protected void OnDrawGizmosSelected() { }
+	protected void OnDrawGizmosSelected() { }
 
-protected override void ApplyHeight(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyHeight(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplySplat(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplySplat(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyAlpha(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyAlpha(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyBiome(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyBiome(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyTopology(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyTopology(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected override void ApplyWater(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	protected override void ApplyWater(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -29,9 +29,9 @@ private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 10590
 	public TextureData heightdata; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyHeight>b__0(int x, int z) { }
+	internal void <ApplyHeight>b__0(int x, int z) { }
 
 }
 
@@ -53,9 +53,9 @@ private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 10591
 	public bool should7; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplySplat>b__0(int x, int z) { }
+	internal void <ApplySplat>b__0(int x, int z) { }
 
 }
 
@@ -72,9 +72,9 @@ private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 10592
 	public bool should3; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyBiome>b__0(int x, int z) { }
+	internal void <ApplyBiome>b__0(int x, int z) { }
 
 }
 
@@ -85,9 +85,9 @@ private sealed class Mountain.<>c__DisplayClass6_0 // TypeDefIndex: 10593
 	public TextureData topologydata; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ApplyTopology>b__0(int x, int z) { }
+	internal void <ApplyTopology>b__0(int x, int z) { }
 
 }
 

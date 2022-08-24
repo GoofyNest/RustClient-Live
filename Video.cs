@@ -10,19 +10,19 @@ public class Video : RustControl // TypeDefIndex: 7043
 	private Vector2 playerSize; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void VideoPlayer_errorReceived(VideoPlayer source, string message) { }
+	private void VideoPlayer_errorReceived(VideoPlayer source, string message) { }
 
-public void PlayUrl(string video) { }
+	public void PlayUrl(string video) { }
 
-public void LateUpdate() { }
+	public void LateUpdate() { }
 
-private void Cover() { }
+	private void Cover() { }
 
-public void Stop() { }
+	public void Stop() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

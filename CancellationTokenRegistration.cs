@@ -4,18 +4,18 @@ public struct CancellationTokenRegistration : IEquatable<CancellationTokenRegist
 	private readonly SparselyPopulatedArrayAddInfo<CancellationCallbackInfo> m_registrationInfo; 
 
 
-internal void .ctor(CancellationCallbackInfo callbackInfo, SparselyPopulatedArrayAddInfo<CancellationCallbackInfo> registrationInfo) { }
+	internal void .ctor(CancellationCallbackInfo callbackInfo, SparselyPopulatedArrayAddInfo<CancellationCallbackInfo> registrationInfo) { }
 
 	[FriendAccessAllowedAttribute] 
-internal bool TryDeregister() { }
+	internal bool TryDeregister() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(CancellationTokenRegistration other) { }
+	public bool Equals(CancellationTokenRegistration other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

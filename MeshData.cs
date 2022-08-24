@@ -10,19 +10,19 @@ public class MeshData // TypeDefIndex: 9160
 	public List<Vector4> positions; 
 
 
-public void AllocMinimal() { }
+	public void AllocMinimal() { }
 
-public void Alloc() { }
+	public void Alloc() { }
 
-public void Free() { }
+	public void Free() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Apply(Mesh mesh) { }
+	public void Apply(Mesh mesh) { }
 
-public void Combine(MeshGroup meshGroup) { }
+	public void Combine(MeshGroup meshGroup) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

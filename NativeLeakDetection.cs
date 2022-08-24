@@ -4,7 +4,7 @@ public static class NativeLeakDetection // TypeDefIndex: 3322
 
 
 	[RuntimeInitializeOnLoadMethodAttribute] 
-private static void Initialize() { }
+	private static void Initialize() { }
 
 }
 

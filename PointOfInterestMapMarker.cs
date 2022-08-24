@@ -5,18 +5,18 @@ public class PointOfInterestMapMarker : MonoBehaviour // TypeDefIndex: 10958
 	[CompilerGeneratedAttribute] 
 	private bool <isLeader>k__BackingField; 
 
-public bool isLeader { get; set; }
+	public bool isLeader { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_isLeader() { }
+	public bool get_isLeader() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isLeader(bool value) { }
+	private void set_isLeader(bool value) { }
 
-public void Populate(MapNote note, bool isTeamLeaders) { }
+	public void Populate(MapNote note, bool isTeamLeaders) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

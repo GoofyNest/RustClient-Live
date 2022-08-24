@@ -4,9 +4,9 @@ public class FireworkBenchmarkScene : BenchmarkScene // TypeDefIndex: 8253
 	public int fireworkCount; 
 
 
-public override void StartBenchmark() { }
+	public override void StartBenchmark() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

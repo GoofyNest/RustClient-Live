@@ -30,11 +30,11 @@ public class NoteBindingCollection : ScriptableObject // TypeDefIndex: 9560
 	public int ShiftedOctave; 
 
 
-public bool FindNoteData(Notes note, int octave, InstrumentKeyController.NoteType type, out NoteBindingCollection.NoteData data, out int noteIndex) { }
+	public bool FindNoteData(Notes note, int octave, InstrumentKeyController.NoteType type, out NoteBindingCollection.NoteData data, out int noteIndex) { }
 
-public bool FindNoteDataIndex(Notes note, int octave, InstrumentKeyController.NoteType type, out int noteIndex) { }
+	public bool FindNoteDataIndex(Notes note, int octave, InstrumentKeyController.NoteType type, out int noteIndex) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -52,7 +52,7 @@ public struct NoteBindingCollection.NoteData // TypeDefIndex: 9561
 	public int NoteSoundPositionTarget; 
 
 
-public string ToNoteString() { }
+	public string ToNoteString() { }
 
 }
 

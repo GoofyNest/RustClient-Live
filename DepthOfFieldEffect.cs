@@ -9,7 +9,7 @@ public class DepthOfFieldEffect : PostProcessEffectSettings // TypeDefIndex: 102
 	public Transform focalTransform; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

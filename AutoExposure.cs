@@ -27,9 +27,9 @@ public sealed class AutoExposure : PostProcessEffectSettings // TypeDefIndex: 11
 	public FloatParameter speedDown; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -13,16 +13,16 @@ public class SantaSleigh : BaseEntity // TypeDefIndex: 8636
 	public float hohoho_additional_spacing; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void ClientPlayHoHoHo() { }
+	public void ClientPlayHoHoHo() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

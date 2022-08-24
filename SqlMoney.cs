@@ -12,85 +12,85 @@ public struct SqlMoney : INullable, IComparable, IXmlSerializable // TypeDefInde
 	public static readonly SqlMoney MinValue; 
 	public static readonly SqlMoney MaxValue; 
 
-public bool IsNull { get; }
-public Decimal Value { get; }
+	public bool IsNull { get; }
+	public Decimal Value { get; }
 
 
-private void .ctor(bool fNull) { }
+	private void .ctor(bool fNull) { }
 
-internal void .ctor(long value, int ignored) { }
+	internal void .ctor(long value, int ignored) { }
 
-public void .ctor(int value) { }
+	public void .ctor(int value) { }
 
-public void .ctor(long value) { }
+	public void .ctor(long value) { }
 
-public void .ctor(Decimal value) { }
+	public void .ctor(Decimal value) { }
 
-public bool get_IsNull() { }
+	public bool get_IsNull() { }
 
-public Decimal get_Value() { }
+	public Decimal get_Value() { }
 
-public Decimal ToDecimal() { }
+	public Decimal ToDecimal() { }
 
-public double ToDouble() { }
+	public double ToDouble() { }
 
-public static SqlMoney op_Implicit(Decimal x) { }
+	public static SqlMoney op_Implicit(Decimal x) { }
 
-public static SqlMoney op_Implicit(long x) { }
+	public static SqlMoney op_Implicit(long x) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public static SqlMoney op_UnaryNegation(SqlMoney x) { }
+	public static SqlMoney op_UnaryNegation(SqlMoney x) { }
 
-public static SqlMoney op_Addition(SqlMoney x, SqlMoney y) { }
+	public static SqlMoney op_Addition(SqlMoney x, SqlMoney y) { }
 
-public static SqlMoney op_Subtraction(SqlMoney x, SqlMoney y) { }
+	public static SqlMoney op_Subtraction(SqlMoney x, SqlMoney y) { }
 
-public static SqlMoney op_Multiply(SqlMoney x, SqlMoney y) { }
+	public static SqlMoney op_Multiply(SqlMoney x, SqlMoney y) { }
 
-public static SqlMoney op_Division(SqlMoney x, SqlMoney y) { }
+	public static SqlMoney op_Division(SqlMoney x, SqlMoney y) { }
 
-public static SqlMoney op_Implicit(SqlByte x) { }
+	public static SqlMoney op_Implicit(SqlByte x) { }
 
-public static SqlMoney op_Implicit(SqlInt16 x) { }
+	public static SqlMoney op_Implicit(SqlInt16 x) { }
 
-public static SqlMoney op_Implicit(SqlInt32 x) { }
+	public static SqlMoney op_Implicit(SqlInt32 x) { }
 
-public static SqlMoney op_Implicit(SqlInt64 x) { }
+	public static SqlMoney op_Implicit(SqlInt64 x) { }
 
-public static SqlMoney op_Explicit(SqlDecimal x) { }
+	public static SqlMoney op_Explicit(SqlDecimal x) { }
 
-public static SqlBoolean op_Equality(SqlMoney x, SqlMoney y) { }
+	public static SqlBoolean op_Equality(SqlMoney x, SqlMoney y) { }
 
-public static SqlBoolean op_LessThan(SqlMoney x, SqlMoney y) { }
+	public static SqlBoolean op_LessThan(SqlMoney x, SqlMoney y) { }
 
-public static SqlBoolean op_GreaterThan(SqlMoney x, SqlMoney y) { }
+	public static SqlBoolean op_GreaterThan(SqlMoney x, SqlMoney y) { }
 
-public static SqlBoolean LessThan(SqlMoney x, SqlMoney y) { }
+	public static SqlBoolean LessThan(SqlMoney x, SqlMoney y) { }
 
-public static SqlBoolean GreaterThan(SqlMoney x, SqlMoney y) { }
+	public static SqlBoolean GreaterThan(SqlMoney x, SqlMoney y) { }
 
-public SqlDouble ToSqlDouble() { }
+	public SqlDouble ToSqlDouble() { }
 
-public SqlDecimal ToSqlDecimal() { }
+	public SqlDecimal ToSqlDecimal() { }
 
-public int CompareTo(object value) { }
+	public int CompareTo(object value) { }
 
-public int CompareTo(SqlMoney value) { }
+	public int CompareTo(SqlMoney value) { }
 
-public override bool Equals(object value) { }
+	public override bool Equals(object value) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() { }
+	private XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() { }
 
-private void System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader) { }
+	private void System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader) { }
 
-private void System.Xml.Serialization.IXmlSerializable.WriteXml(XmlWriter writer) { }
+	private void System.Xml.Serialization.IXmlSerializable.WriteXml(XmlWriter writer) { }
 
-public static XmlQualifiedName GetXsdType(XmlSchemaSet schemaSet) { }
+	public static XmlQualifiedName GetXsdType(XmlSchemaSet schemaSet) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

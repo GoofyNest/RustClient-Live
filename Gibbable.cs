@@ -25,25 +25,25 @@ public class Gibbable : PrefabAttribute, IClientComponent // TypeDefIndex: 9889
 	private Gibbable.GibMesh[] gibRenderers; 
 
 
-protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void CreateGibs(Transform forObject, Gibbable.ParentingType parentingType, Vector3 initialVelocity) { }
+	public void CreateGibs(Transform forObject, Gibbable.ParentingType parentingType, Vector3 initialVelocity) { }
 
-public void CreateGibs(Transform forObject, Gibbable.ParentingType parentingType, Vector3 initialVelocity, Vector3 fxPos, Quaternion fxRotation) { }
+	public void CreateGibs(Transform forObject, Gibbable.ParentingType parentingType, Vector3 initialVelocity, Vector3 fxPos, Quaternion fxRotation) { }
 
-private Vector3 Position(Vector3 position, Quaternion rotation) { }
+	private Vector3 Position(Vector3 position, Quaternion rotation) { }
 
-private Material[] GetMaterialsForGib(Gibbable.GibMesh mesh) { }
+	private Material[] GetMaterialsForGib(Gibbable.GibMesh mesh) { }
 
-public bool GetMeshOverride(int index, out Gibbable.OverrideMesh m) { }
+	public bool GetMeshOverride(int index, out Gibbable.OverrideMesh m) { }
 
-private string GetPathForEffect(Gibbable.BoundsEffectType type) { }
+	private string GetPathForEffect(Gibbable.BoundsEffectType type) { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -63,31 +63,31 @@ public struct Gibbable.OverrideMesh // TypeDefIndex: 9890
 public enum Gibbable.ColliderType // TypeDefIndex: 9891
 {
 	public int value__; 
-public const Gibbable.ColliderType Box = 0;
-public const Gibbable.ColliderType Sphere = 1;
-public const Gibbable.ColliderType Capsule = 2;
+	public const Gibbable.ColliderType Box = 0;
+	public const Gibbable.ColliderType Sphere = 1;
+	public const Gibbable.ColliderType Capsule = 2;
 
 }
 
 public enum Gibbable.ParentingType // TypeDefIndex: 9892
 {
 	public int value__; 
-public const Gibbable.ParentingType None = 0;
-public const Gibbable.ParentingType GibsOnly = 1;
-public const Gibbable.ParentingType FXOnly = 2;
-public const Gibbable.ParentingType All = 3;
+	public const Gibbable.ParentingType None = 0;
+	public const Gibbable.ParentingType GibsOnly = 1;
+	public const Gibbable.ParentingType FXOnly = 2;
+	public const Gibbable.ParentingType All = 3;
 
 }
 
 public enum Gibbable.BoundsEffectType // TypeDefIndex: 9893
 {
 	public int value__; 
-public const Gibbable.BoundsEffectType None = 0;
-public const Gibbable.BoundsEffectType Electrical = 1;
-public const Gibbable.BoundsEffectType Glass = 2;
-public const Gibbable.BoundsEffectType Scrap = 3;
-public const Gibbable.BoundsEffectType Stone = 4;
-public const Gibbable.BoundsEffectType Wood = 5;
+	public const Gibbable.BoundsEffectType None = 0;
+	public const Gibbable.BoundsEffectType Electrical = 1;
+	public const Gibbable.BoundsEffectType Glass = 2;
+	public const Gibbable.BoundsEffectType Scrap = 3;
+	public const Gibbable.BoundsEffectType Stone = 4;
+	public const Gibbable.BoundsEffectType Wood = 5;
 
 }
 

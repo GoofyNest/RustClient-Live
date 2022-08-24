@@ -4,9 +4,9 @@ public class ArmorProperties : ScriptableObject // TypeDefIndex: 9976
 	public HitArea area; 
 
 
-public bool Contains(HitArea hitArea) { }
+	public bool Contains(HitArea hitArea) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

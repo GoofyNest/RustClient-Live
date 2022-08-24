@@ -3,13 +3,13 @@ public class TimeSlider : MonoBehaviour // TypeDefIndex: 11233
 	private Slider slider; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void OnValue(float f) { }
+	public void OnValue(float f) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

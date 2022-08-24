@@ -4,7 +4,7 @@ public class ExcavatorServerEffects : MonoBehaviour // TypeDefIndex: 9631
 	public TriggerBase[] miningTriggers; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

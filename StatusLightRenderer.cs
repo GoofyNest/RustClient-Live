@@ -10,21 +10,21 @@ public class StatusLightRenderer : MonoBehaviour, IClientComponent // TypeDefInd
 	private int emissionID; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void SetOff() { }
+	public void SetOff() { }
 
-public void SetOn() { }
+	public void SetOn() { }
 
-public void SetRed() { }
+	public void SetRed() { }
 
-public void SetGreen() { }
+	public void SetGreen() { }
 
-private Color GetColor(byte r, byte g, byte b, byte a) { }
+	private Color GetColor(byte r, byte g, byte b, byte a) { }
 
-private Color GetColor(byte r, byte g, byte b, byte a, float intensity) { }
+	private Color GetColor(byte r, byte g, byte b, byte a, float intensity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

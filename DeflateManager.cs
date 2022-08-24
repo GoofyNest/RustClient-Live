@@ -75,93 +75,93 @@ internal sealed class DeflateManager // TypeDefIndex: 6942
 	private bool Rfc1950BytesEmitted; 
 	private bool _WantRfc1950HeaderBytes; 
 
-internal bool WantRfc1950HeaderBytes { get; set; }
+	internal bool WantRfc1950HeaderBytes { get; set; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private void _InitializeLazyMatch() { }
+	private void _InitializeLazyMatch() { }
 
-private void _InitializeTreeData() { }
+	private void _InitializeTreeData() { }
 
-internal void _InitializeBlocks() { }
+	internal void _InitializeBlocks() { }
 
-internal void pqdownheap(short[] tree, int k) { }
+	internal void pqdownheap(short[] tree, int k) { }
 
-internal static bool _IsSmaller(short[] tree, int n, int m, sbyte[] depth) { }
+	internal static bool _IsSmaller(short[] tree, int n, int m, sbyte[] depth) { }
 
-internal void scan_tree(short[] tree, int max_code) { }
+	internal void scan_tree(short[] tree, int max_code) { }
 
-internal int build_bl_tree() { }
+	internal int build_bl_tree() { }
 
-internal void send_all_trees(int lcodes, int dcodes, int blcodes) { }
+	internal void send_all_trees(int lcodes, int dcodes, int blcodes) { }
 
-internal void send_tree(short[] tree, int max_code) { }
+	internal void send_tree(short[] tree, int max_code) { }
 
-private void put_bytes(byte[] p, int start, int len) { }
+	private void put_bytes(byte[] p, int start, int len) { }
 
-internal void send_code(int c, short[] tree) { }
+	internal void send_code(int c, short[] tree) { }
 
-internal void send_bits(int value, int length) { }
+	internal void send_bits(int value, int length) { }
 
-internal void _tr_align() { }
+	internal void _tr_align() { }
 
-internal bool _tr_tally(int dist, int lc) { }
+	internal bool _tr_tally(int dist, int lc) { }
 
-internal void send_compressed_block(short[] ltree, short[] dtree) { }
+	internal void send_compressed_block(short[] ltree, short[] dtree) { }
 
-internal void set_data_type() { }
+	internal void set_data_type() { }
 
-internal void bi_flush() { }
+	internal void bi_flush() { }
 
-internal void bi_windup() { }
+	internal void bi_windup() { }
 
-internal void copy_block(int buf, int len, bool header) { }
+	internal void copy_block(int buf, int len, bool header) { }
 
-internal void flush_block_only(bool eof) { }
+	internal void flush_block_only(bool eof) { }
 
-internal BlockState DeflateNone(FlushType flush) { }
+	internal BlockState DeflateNone(FlushType flush) { }
 
-internal void _tr_stored_block(int buf, int stored_len, bool eof) { }
+	internal void _tr_stored_block(int buf, int stored_len, bool eof) { }
 
-internal void _tr_flush_block(int buf, int stored_len, bool eof) { }
+	internal void _tr_flush_block(int buf, int stored_len, bool eof) { }
 
-private void _fillWindow() { }
+	private void _fillWindow() { }
 
-internal BlockState DeflateFast(FlushType flush) { }
+	internal BlockState DeflateFast(FlushType flush) { }
 
-internal BlockState DeflateSlow(FlushType flush) { }
+	internal BlockState DeflateSlow(FlushType flush) { }
 
-internal int longest_match(int cur_match) { }
+	internal int longest_match(int cur_match) { }
 
-internal bool get_WantRfc1950HeaderBytes() { }
+	internal bool get_WantRfc1950HeaderBytes() { }
 
-internal void set_WantRfc1950HeaderBytes(bool value) { }
+	internal void set_WantRfc1950HeaderBytes(bool value) { }
 
-internal int Initialize(ZlibCodec codec, CompressionLevel level, int bits, CompressionStrategy compressionStrategy) { }
+	internal int Initialize(ZlibCodec codec, CompressionLevel level, int bits, CompressionStrategy compressionStrategy) { }
 
-internal int Initialize(ZlibCodec codec, CompressionLevel level, int windowBits, int memLevel, CompressionStrategy strategy) { }
+	internal int Initialize(ZlibCodec codec, CompressionLevel level, int windowBits, int memLevel, CompressionStrategy strategy) { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
-private void SetDeflater() { }
+	private void SetDeflater() { }
 
-internal int Deflate(FlushType flush) { }
+	internal int Deflate(FlushType flush) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDefIndex: 6943
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual BlockState Invoke(FlushType flush) { }
+	public virtual BlockState Invoke(FlushType flush) { }
 
-public virtual IAsyncResult BeginInvoke(FlushType flush, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(FlushType flush, AsyncCallback callback, object object) { }
 
-public virtual BlockState EndInvoke(IAsyncResult result) { }
+	public virtual BlockState EndInvoke(IAsyncResult result) { }
 
 }
 
@@ -175,11 +175,11 @@ internal class DeflateManager.Config // TypeDefIndex: 6944
 	private static readonly DeflateManager.Config[] Table; 
 
 
-private void .ctor(int goodLength, int maxLazy, int niceLength, int maxChainLength, DeflateFlavor flavor) { }
+	private void .ctor(int goodLength, int maxLazy, int niceLength, int maxChainLength, DeflateFlavor flavor) { }
 
-public static DeflateManager.Config Lookup(CompressionLevel level) { }
+	public static DeflateManager.Config Lookup(CompressionLevel level) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

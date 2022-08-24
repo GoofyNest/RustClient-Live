@@ -2,20 +2,20 @@ public class MissingMethodException : MissingMemberException, ISerializable // T
 {
 	private string signature; 
 
-public override string Message { get; }
+	public override string Message { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string message) { }
+	public void .ctor(string message) { }
 
-protected void .ctor(SerializationInfo info, StreamingContext context) { }
+	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public override string get_Message() { }
+	public override string get_Message() { }
 
-public void .ctor(string className, string methodName) { }
+	public void .ctor(string className, string methodName) { }
 
-private void .ctor(string className, string methodName, string signature, string message) { }
+	private void .ctor(string className, string methodName, string signature, string message) { }
 
 }
 

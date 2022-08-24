@@ -7,9 +7,9 @@ public class MoveOverTime : MonoBehaviour // TypeDefIndex: 10226
 	public Vector3 scale; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

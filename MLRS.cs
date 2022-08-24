@@ -9,57 +9,57 @@ public class MLRS : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6422
 	public uint ammoCount; 
 
 
-public static void ResetToPool(MLRS instance) { }
+	public static void ResetToPool(MLRS instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(MLRS instance) { }
+	public void CopyTo(MLRS instance) { }
 
-public MLRS Copy() { }
+	public MLRS Copy() { }
 
-public static MLRS Deserialize(Stream stream) { }
+	public static MLRS Deserialize(Stream stream) { }
 
-public static MLRS DeserializeLengthDelimited(Stream stream) { }
+	public static MLRS DeserializeLengthDelimited(Stream stream) { }
 
-public static MLRS DeserializeLength(Stream stream, int length) { }
+	public static MLRS DeserializeLength(Stream stream, int length) { }
 
-public static MLRS Deserialize(byte[] buffer) { }
+	public static MLRS Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, MLRS previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, MLRS previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static MLRS Deserialize(byte[] buffer, MLRS instance, bool isDelta = False) { }
+	public static MLRS Deserialize(byte[] buffer, MLRS instance, bool isDelta = False) { }
 
-public static MLRS Deserialize(Stream stream, MLRS instance, bool isDelta) { }
+	public static MLRS Deserialize(Stream stream, MLRS instance, bool isDelta) { }
 
-public static MLRS DeserializeLengthDelimited(Stream stream, MLRS instance, bool isDelta) { }
+	public static MLRS DeserializeLengthDelimited(Stream stream, MLRS instance, bool isDelta) { }
 
-public static MLRS DeserializeLength(Stream stream, int length, MLRS instance, bool isDelta) { }
+	public static MLRS DeserializeLength(Stream stream, int length, MLRS instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, MLRS instance, MLRS previous) { }
+	public static void SerializeDelta(Stream stream, MLRS instance, MLRS previous) { }
 
-public static void Serialize(Stream stream, MLRS instance) { }
+	public static void Serialize(Stream stream, MLRS instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(MLRS instance) { }
+	public static byte[] SerializeToBytes(MLRS instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, MLRS instance) { }
+	public static void SerializeLengthDelimited(Stream stream, MLRS instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -145,8 +145,8 @@ public class MLRS : BaseMountable // TypeDefIndex: 8412
 	private int <RocketAmmoCount>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private bool <IsRealigning>k__BackingField; 
-public const BaseEntity.Flags FLAG_FIRING_ROCKETS = 16384;
-public const BaseEntity.Flags FLAG_HAS_AIMING_MODULE = 65536;
+	public const BaseEntity.Flags FLAG_FIRING_ROCKETS = 16384;
+	public const BaseEntity.Flags FLAG_HAS_AIMING_MODULE = 65536;
 	private EntityRef rocketStorageInstance; 
 	private EntityRef dashboardStorageInstance; 
 	private float rocketBaseGravity; 
@@ -155,160 +155,160 @@ public const BaseEntity.Flags FLAG_HAS_AIMING_MODULE = 65536;
 	private float <RocketDamageRadius>k__BackingField; 
 	private bool isInitialLoad; 
 
-public override bool HasMenuOptions { get; }
-public Vector3 UserTargetHitPos { get; set; }
-public Vector3 TrueHitPos { get; set; }
-public bool HasAimingModule { get; }
-private bool CanBeUsed { get; }
-private bool CanFire { get; }
-private float HRotation { get; set; }
-private float VRotation { get; set; }
-public float CurGravityMultiplier { get; set; }
-public int RocketAmmoCount { get; set; }
-public bool IsRealigning { get; set; }
-public bool IsFiringRockets { get; }
-public float RocketDamageRadius { get; set; }
+	public override bool HasMenuOptions { get; }
+	public Vector3 UserTargetHitPos { get; set; }
+	public Vector3 TrueHitPos { get; set; }
+	public bool HasAimingModule { get; }
+	private bool CanBeUsed { get; }
+	private bool CanFire { get; }
+	private float HRotation { get; set; }
+	private float VRotation { get; set; }
+	public float CurGravityMultiplier { get; set; }
+	public int RocketAmmoCount { get; set; }
+	public bool IsRealigning { get; set; }
+	public bool IsFiringRockets { get; }
+	public float RocketDamageRadius { get; set; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-protected void LateUpdate() { }
+	protected void LateUpdate() { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public void SendNewTargetHitPos(Vector3 worldPos) { }
+	public void SendNewTargetHitPos(Vector3 worldPos) { }
 
-protected override bool HideMenuItems(BasePlayer player) { }
+	protected override bool HideMenuItems(BasePlayer player) { }
 
-private void PositionVisuals() { }
+	private void PositionVisuals() { }
 
-private void ShowFullscreenMap() { }
+	private void ShowFullscreenMap() { }
 
-public void OnFullscreenMapClosed() { }
+	public void OnFullscreenMapClosed() { }
 
-private bool ShouldShowDashboardUI() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_SetTarget(BasePlayer player) { }
-
-public bool Menu_SetTarget_ShowIf(BasePlayer player) { }
+	private bool ShouldShowDashboardUI() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Fire_Rockets(BasePlayer player) { }
+	public void Menu_SetTarget(BasePlayer player) { }
 
-public bool Menu_Fire_Rockets_ShowIf(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_Cannot_Fire_Rockets(BasePlayer player) { }
-
-public bool Menu_Cannot_Fire_Rockets_ShowIf(BasePlayer player) { }
+	public bool Menu_SetTarget_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Open_Rocket_Storage(BasePlayer player) { }
+	public void Menu_Fire_Rockets(BasePlayer player) { }
 
-public bool Menu_Open_Rocket_Storage_ShowIf(BasePlayer player) { }
+	public bool Menu_Fire_Rockets_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Open_Dashboard_Storage(BasePlayer player) { }
+	public void Menu_Cannot_Fire_Rockets(BasePlayer player) { }
 
-public bool Menu_Open_Dashboard_Storage_ShowIf(BasePlayer player) { }
+	public bool Menu_Cannot_Fire_Rockets_ShowIf(BasePlayer player) { }
 
-	[CompilerGeneratedAttribute] 
-public Vector3 get_UserTargetHitPos() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_Open_Rocket_Storage(BasePlayer player) { }
 
-	[CompilerGeneratedAttribute] 
-private void set_UserTargetHitPos(Vector3 value) { }
+	public bool Menu_Open_Rocket_Storage_ShowIf(BasePlayer player) { }
 
-	[CompilerGeneratedAttribute] 
-public Vector3 get_TrueHitPos() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_Open_Dashboard_Storage(BasePlayer player) { }
 
-	[CompilerGeneratedAttribute] 
-private void set_TrueHitPos(Vector3 value) { }
-
-public bool get_HasAimingModule() { }
-
-private bool get_CanBeUsed() { }
-
-private bool get_CanFire() { }
-
-private float get_HRotation() { }
-
-private void set_HRotation(float value) { }
-
-private float get_VRotation() { }
-
-private void set_VRotation(float value) { }
+	public bool Menu_Open_Dashboard_Storage_ShowIf(BasePlayer player) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_CurGravityMultiplier() { }
+	public Vector3 get_UserTargetHitPos() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurGravityMultiplier(float value) { }
+	private void set_UserTargetHitPos(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_RocketAmmoCount() { }
+	public Vector3 get_TrueHitPos() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_RocketAmmoCount(int value) { }
+	private void set_TrueHitPos(Vector3 value) { }
+
+	public bool get_HasAimingModule() { }
+
+	private bool get_CanBeUsed() { }
+
+	private bool get_CanFire() { }
+
+	private float get_HRotation() { }
+
+	private void set_HRotation(float value) { }
+
+	private float get_VRotation() { }
+
+	private void set_VRotation(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsRealigning() { }
+	public float get_CurGravityMultiplier() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsRealigning(bool value) { }
-
-public bool get_IsFiringRockets() { }
+	private void set_CurGravityMultiplier(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_RocketDamageRadius() { }
+	public int get_RocketAmmoCount() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_RocketDamageRadius(float value) { }
+	private void set_RocketAmmoCount(int value) { }
 
-public override void InitShared() { }
+	[CompilerGeneratedAttribute] 
+	public bool get_IsRealigning() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	[CompilerGeneratedAttribute] 
+	private void set_IsRealigning(bool value) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public bool get_IsFiringRockets() { }
 
-private void SetUserTargetHitPos(Vector3 worldPos) { }
+	[CompilerGeneratedAttribute] 
+	public float get_RocketDamageRadius() { }
 
-private StorageContainer GetRocketContainer() { }
+	[CompilerGeneratedAttribute] 
+	private void set_RocketDamageRadius(float value) { }
 
-private StorageContainer GetDashboardContainer() { }
+	public override void InitShared() { }
 
-private void HitPosToRotation(Vector3 hitPos, out float hRot, out float vRot, out float g) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private Vector3 GetAimToTarget(Vector3 targetPos, out float g) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-private static float ProjectileDistToSpeed(float x, float y, float angle, float g, float fallbackV) { }
+	private void SetUserTargetHitPos(Vector3 worldPos) { }
 
-private static float ProjectileDistToGravity(float x, float y, float θ, float v) { }
+	private StorageContainer GetRocketContainer() { }
 
-public void .ctor() { }
+	private StorageContainer GetDashboardContainer() { }
 
-private static void .cctor() { }
+	private void HitPosToRotation(Vector3 hitPos, out float hRot, out float vRot, out float g) { }
+
+	private Vector3 GetAimToTarget(Vector3 targetPos, out float g) { }
+
+	private static float ProjectileDistToSpeed(float x, float y, float angle, float g, float fallbackV) { }
+
+	private static float ProjectileDistToGravity(float x, float y, float θ, float v) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -319,7 +319,7 @@ public class MLRS.RocketTube // TypeDefIndex: 8413
 	public Renderer rocket; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -330,7 +330,7 @@ private struct MLRS.TheoreticalProjectile // TypeDefIndex: 8414
 	public float gravityMult; 
 
 
-public void .ctor(Vector3 pos, Vector3 forward, float gravityMult) { }
+	public void .ctor(Vector3 pos, Vector3 forward, float gravityMult) { }
 
 }
 

@@ -9,9 +9,9 @@ internal class MibIPGlobalProperties : UnixIPGlobalProperties // TypeDefIndex: 3
 	private static readonly char[] wsChars; 
 
 
-public void .ctor(string procDir) { }
+	public void .ctor(string procDir) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

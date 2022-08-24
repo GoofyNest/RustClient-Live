@@ -11,43 +11,43 @@ public class MissionsHUD : SingletonComponent<MissionsHUD> // TypeDefIndex: 1118
 	private bool blockOpenSound; 
 	private float nextTextUpdateTime; 
 
-public bool IsOpen { get; }
+	public bool IsOpen { get; }
 
 
-public bool get_IsOpen() { }
+	public bool get_IsOpen() { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-private void ClientConnected() { }
+	private void ClientConnected() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public static void ClientMissionUpdate() { }
+	public static void ClientMissionUpdate() { }
 
-public void ForceUpdate() { }
+	public void ForceUpdate() { }
 
-public void UpdateTimeText() { }
+	public void UpdateTimeText() { }
 
-public void Update() { }
+	public void Update() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator Think() { }
+	private IEnumerator Think() { }
 
-public bool ShouldShow() { }
+	public bool ShouldShow() { }
 
-public void Hide() { }
+	public void Hide() { }
 
-private void Show() { }
+	private void Show() { }
 
-public void Initialize() { }
+	public void Initialize() { }
 
-public void OnItemComplete() { }
+	public void OnItemComplete() { }
 
-public void CheckForListComplete() { }
+	public void CheckForListComplete() { }
 
-public void BlockNextOpenSound() { }
+	public void BlockNextOpenSound() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -57,26 +57,26 @@ private sealed class MissionsHUD.<Think>d__19 : IEnumerator<object>, IEnumerator
 	private object <>2__current; 
 	public MissionsHUD <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

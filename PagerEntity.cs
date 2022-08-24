@@ -8,27 +8,27 @@ public class PagerEntity : BaseEntity, IRFObject // TypeDefIndex: 8611
 	private bool wasOn; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public int GetFrequency() { }
+	public int GetFrequency() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void Beep() { }
+	public void Beep() { }
 
-public void BeginAlarm() { }
+	public void BeginAlarm() { }
 
-public void EndAlarm() { }
+	public void EndAlarm() { }
 
-public void ClientSetFrequency(int newFreq) { }
+	public void ClientSetFrequency(int newFreq) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -9,30 +9,30 @@ public class FrankensteinTableVisuals : MonoBehaviour // TypeDefIndex: 8695
 	public Animator Animator; 
 
 
-public void Refresh(List<ItemDefinition> items, FrankensteinTable table) { }
+	public void Refresh(List<ItemDefinition> items, FrankensteinTable table) { }
 
-private void DisableAllReadyFX() { }
+	private void DisableAllReadyFX() { }
 
-private void SetReadyFX(bool ready) { }
+	private void SetReadyFX(bool ready) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-private void DestroyAnchorChildren(Transform t) { }
+	private void DestroyAnchorChildren(Transform t) { }
 
-public void DisplayItem(ItemDefinition item, FrankensteinTable table) { }
+	public void DisplayItem(ItemDefinition item, FrankensteinTable table) { }
 
-public void DisplayItem(ItemDefinition item, Transform anchor) { }
+	public void DisplayItem(ItemDefinition item, Transform anchor) { }
 
-public void StartWaking() { }
+	public void StartWaking() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator Wake() { }
+	private IEnumerator Wake() { }
 
-private void SetTableUp(bool flag) { }
+	private void SetTableUp(bool flag) { }
 
-private void SetLeverUp(bool flag) { }
+	private void SetLeverUp(bool flag) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -42,26 +42,26 @@ private sealed class FrankensteinTableVisuals.<Wake>d__15 : IEnumerator<object>,
 	private object <>2__current; 
 	public FrankensteinTableVisuals <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -8,9 +8,9 @@ internal sealed class SerObjectInfoCache // TypeDefIndex: 1110
 	internal Type[] memberTypes; 
 
 
-internal void .ctor(string typeName, string assemblyName, bool hasTypeForwardedFrom) { }
+	internal void .ctor(string typeName, string assemblyName, bool hasTypeForwardedFrom) { }
 
-internal void .ctor(Type type) { }
+	internal void .ctor(Type type) { }
 
 }
 

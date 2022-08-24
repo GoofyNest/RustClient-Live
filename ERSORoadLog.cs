@@ -4,7 +4,7 @@ public class ERSORoadLog // TypeDefIndex: 7230
 	public bool active; 
 
 
-public void .ctor(double so) { }
+	public void .ctor(double so) { }
 
 }
 

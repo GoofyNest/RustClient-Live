@@ -10,7 +10,7 @@ internal static class TextInfoToUpperData // TypeDefIndex: 739
 	public static readonly char[] range_a723_a78c; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

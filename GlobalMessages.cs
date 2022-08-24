@@ -16,23 +16,23 @@ public class GlobalMessages // TypeDefIndex: 11373
 	public static Action OnItemIconChangedAction; 
 
 
-public static void OnInventoryChanged() { }
+	public static void OnInventoryChanged() { }
 
-public static void OnViewModeChanged() { }
+	public static void OnViewModeChanged() { }
 
-public static void OnClothingChanged() { }
+	public static void OnClothingChanged() { }
 
-public static void OnViewModelUpdated() { }
+	public static void OnViewModelUpdated() { }
 
-public static void OnBlueprintsChanged() { }
+	public static void OnBlueprintsChanged() { }
 
-public static void OnItemAmountChanged() { }
+	public static void OnItemAmountChanged() { }
 
-public static void OnItemIconChanged() { }
+	public static void OnItemIconChanged() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

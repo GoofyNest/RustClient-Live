@@ -21,43 +21,43 @@ public class TerrainConfig : ScriptableObject // TypeDefIndex: 10309
 	private List<string> dirtMatNames; 
 	private List<string> stoneyMatNames; 
 
-public Texture AlbedoArray { get; }
-public Texture NormalArray { get; }
+	public Texture AlbedoArray { get; }
+	public Texture NormalArray { get; }
 
 
-public Texture get_AlbedoArray() { }
+	public Texture get_AlbedoArray() { }
 
-public Texture get_NormalArray() { }
+	public Texture get_NormalArray() { }
 
-public PhysicMaterial[] GetPhysicMaterials() { }
+	public PhysicMaterial[] GetPhysicMaterials() { }
 
-public Color[] GetAridColors() { }
+	public Color[] GetAridColors() { }
 
-public void GetAridOverlayConstants(out Color[] color, out Vector4[] param) { }
+	public void GetAridOverlayConstants(out Color[] color, out Vector4[] param) { }
 
-public Color[] GetTemperateColors() { }
+	public Color[] GetTemperateColors() { }
 
-public void GetTemperateOverlayConstants(out Color[] color, out Vector4[] param) { }
+	public void GetTemperateOverlayConstants(out Color[] color, out Vector4[] param) { }
 
-public Color[] GetTundraColors() { }
+	public Color[] GetTundraColors() { }
 
-public void GetTundraOverlayConstants(out Color[] color, out Vector4[] param) { }
+	public void GetTundraOverlayConstants(out Color[] color, out Vector4[] param) { }
 
-public Color[] GetArcticColors() { }
+	public Color[] GetArcticColors() { }
 
-public void GetArcticOverlayConstants(out Color[] color, out Vector4[] param) { }
+	public void GetArcticOverlayConstants(out Color[] color, out Vector4[] param) { }
 
-public float[] GetSplatTiling() { }
+	public float[] GetSplatTiling() { }
 
-public float GetMaxSplatTiling() { }
+	public float GetMaxSplatTiling() { }
 
-public float GetMinSplatTiling() { }
+	public float GetMinSplatTiling() { }
 
-public Vector3[] GetPackedUVMIX() { }
+	public Vector3[] GetPackedUVMIX() { }
 
-public TerrainConfig.GroundType GetCurrentGroundType(bool isGrounded, RaycastHit hit) { }
+	public TerrainConfig.GroundType GetCurrentGroundType(bool isGrounded, RaycastHit hit) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -74,7 +74,7 @@ public class TerrainConfig.SplatOverlay // TypeDefIndex: 10310
 	public float BlendFalloff; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -101,20 +101,20 @@ public class TerrainConfig.SplatType // TypeDefIndex: 10311
 	public float UVMIXDist; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum TerrainConfig.GroundType // TypeDefIndex: 10312
 {
 	public int value__; 
-public const TerrainConfig.GroundType None = 0;
-public const TerrainConfig.GroundType HardSurface = 1;
-public const TerrainConfig.GroundType Grass = 2;
-public const TerrainConfig.GroundType Sand = 3;
-public const TerrainConfig.GroundType Snow = 4;
-public const TerrainConfig.GroundType Dirt = 5;
-public const TerrainConfig.GroundType Gravel = 6;
+	public const TerrainConfig.GroundType None = 0;
+	public const TerrainConfig.GroundType HardSurface = 1;
+	public const TerrainConfig.GroundType Grass = 2;
+	public const TerrainConfig.GroundType Sand = 3;
+	public const TerrainConfig.GroundType Snow = 4;
+	public const TerrainConfig.GroundType Dirt = 5;
+	public const TerrainConfig.GroundType Gravel = 6;
 
 }
 

@@ -3,13 +3,13 @@ public class ScreenshotCamera : RustCamera<ScreenshotCamera> // TypeDefIndex: 92
 	public static List<ScreenshotCamera> activeScreenshotCameras; 
 
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected virtual void OnDisable() { }
+	protected virtual void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

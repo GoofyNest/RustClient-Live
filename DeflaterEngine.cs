@@ -25,48 +25,48 @@ internal class DeflaterEngine : DeflaterConstants // TypeDefIndex: 5659
 	private DeflaterHuffman huffman; 
 	private Adler32 adler; 
 
-public int Adler { get; }
-public int TotalIn { get; }
-public DeflateStrategy Strategy { set; }
+	public int Adler { get; }
+	public int TotalIn { get; }
+	public DeflateStrategy Strategy { set; }
 
 
-public void .ctor(DeflaterPending pending) { }
+	public void .ctor(DeflaterPending pending) { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public void ResetAdler() { }
+	public void ResetAdler() { }
 
-public int get_Adler() { }
+	public int get_Adler() { }
 
-public int get_TotalIn() { }
+	public int get_TotalIn() { }
 
-public void set_Strategy(DeflateStrategy value) { }
+	public void set_Strategy(DeflateStrategy value) { }
 
-public void SetLevel(int lvl) { }
+	public void SetLevel(int lvl) { }
 
-private void UpdateHash() { }
+	private void UpdateHash() { }
 
-private int InsertString() { }
+	private int InsertString() { }
 
-private void SlideWindow() { }
+	private void SlideWindow() { }
 
-public void FillWindow() { }
+	public void FillWindow() { }
 
-private bool FindLongestMatch(int curMatch) { }
+	private bool FindLongestMatch(int curMatch) { }
 
-private bool DeflateStored(bool flush, bool finish) { }
+	private bool DeflateStored(bool flush, bool finish) { }
 
-private bool DeflateFast(bool flush, bool finish) { }
+	private bool DeflateFast(bool flush, bool finish) { }
 
-private bool DeflateSlow(bool flush, bool finish) { }
+	private bool DeflateSlow(bool flush, bool finish) { }
 
-public bool Deflate(bool flush, bool finish) { }
+	public bool Deflate(bool flush, bool finish) { }
 
-public void SetInput(byte[] buf, int off, int len) { }
+	public void SetInput(byte[] buf, int off, int len) { }
 
-public bool NeedsInput() { }
+	public bool NeedsInput() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -8,9 +8,9 @@ public class IntegratedSubsystem : ISubsystem
 	internal ISubsystemDescriptor m_subsystemDescriptor; 
 
 
-internal void SetHandle(IntegratedSubsystem inst) { }
+	internal void SetHandle(IntegratedSubsystem inst) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

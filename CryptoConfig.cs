@@ -1,22 +1,22 @@
 public class CryptoConfig // TypeDefIndex: 1003
 {
 	[MonoLimitationAttribute] 
-public static bool AllowOnlyFipsAlgorithms { get; }
+	public static bool AllowOnlyFipsAlgorithms { get; }
 
 
-public static byte[] EncodeOID(string str) { }
+	public static byte[] EncodeOID(string str) { }
 
-private static byte[] EncodeLongNumber(long x) { }
+	private static byte[] EncodeLongNumber(long x) { }
 
-public static bool get_AllowOnlyFipsAlgorithms() { }
+	public static bool get_AllowOnlyFipsAlgorithms() { }
 
-public static object CreateFromName(string name) { }
+	public static object CreateFromName(string name) { }
 
-public static object CreateFromName(string name, object[] args) { }
+	public static object CreateFromName(string name, object[] args) { }
 
-internal static string MapNameToOID(string name, object arg) { }
+	internal static string MapNameToOID(string name, object arg) { }
 
-public static string MapNameToOID(string name) { }
+	public static string MapNameToOID(string name) { }
 
 }
 

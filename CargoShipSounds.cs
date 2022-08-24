@@ -28,15 +28,15 @@ public class CargoShipSounds : MonoBehaviour, IClientComponent // TypeDefIndex: 
 	private HashSet<CargoShipInteriorSoundTrigger> interiorSoundTriggers; 
 
 
-public void UpdateSounds() { }
+	public void UpdateSounds() { }
 
-public void InitSounds() { }
+	public void InitSounds() { }
 
-public void InteriorTriggerEntered(CargoShipInteriorSoundTrigger trigger) { }
+	public void InteriorTriggerEntered(CargoShipInteriorSoundTrigger trigger) { }
 
-public void InteriorTriggerExited(CargoShipInteriorSoundTrigger trigger) { }
+	public void InteriorTriggerExited(CargoShipInteriorSoundTrigger trigger) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

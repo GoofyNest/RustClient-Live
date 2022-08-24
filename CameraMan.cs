@@ -1,8 +1,8 @@
 public class CameraMan : SingletonComponent<CameraMan> // TypeDefIndex: 9139
 {
 	public static string DefaultSaveName; 
-public const string SavePositionExtension = ".cam";
-public const string SavePositionDirectory = "camsaves";
+	public const string SavePositionExtension = ".cam";
+	public const string SavePositionDirectory = "camsaves";
 	public bool OnlyControlWhenCursorHidden; 
 	public bool NeedBothMouseButtonsToZoom; 
 	public float LookSensitivity; 
@@ -26,87 +26,87 @@ public const string SavePositionDirectory = "camsaves";
 	[CompilerGeneratedAttribute] 
 	private float <Zoom>k__BackingField; 
 
-public Color GuideColor { get; set; }
-public int Guide { get; set; }
-private CameraMan.MovementType currentMovementType { get; }
-public float Zoom { get; set; }
-public float Fov { get; set; }
-public static bool Active { get; }
+	public Color GuideColor { get; set; }
+	public int Guide { get; set; }
+	private CameraMan.MovementType currentMovementType { get; }
+	public float Zoom { get; set; }
+	public float Fov { get; set; }
+	public static bool Active { get; }
 
 
-public Color get_GuideColor() { }
+	public Color get_GuideColor() { }
 
-public void set_GuideColor(Color value) { }
+	public void set_GuideColor(Color value) { }
 
-public int get_Guide() { }
+	public int get_Guide() { }
 
-public void set_Guide(int value) { }
+	public void set_Guide(int value) { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void TogglePlayerFreeze() { }
+	public void TogglePlayerFreeze() { }
 
-private bool IsPlayerUnfrozen() { }
+	private bool IsPlayerUnfrozen() { }
 
-public float FovToZoom(float fov) { }
+	public float FovToZoom(float fov) { }
 
-public float ZoomToFov(float zoom) { }
+	public float ZoomToFov(float zoom) { }
 
-public void Save(string name) { }
+	public void Save(string name) { }
 
-public void SaveToFile(string name) { }
+	public void SaveToFile(string name) { }
 
-public CameraMan.CameraState GetCurrentCameraSettings() { }
+	public CameraMan.CameraState GetCurrentCameraSettings() { }
 
-public bool Load(string name) { }
+	public bool Load(string name) { }
 
-public void ApplyState(CameraMan.CameraState savedState) { }
+	public void ApplyState(CameraMan.CameraState savedState) { }
 
-public string PrintSaved() { }
+	public string PrintSaved() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-private void SaveToPlayerPrefs() { }
+	private void SaveToPlayerPrefs() { }
 
-private void LoadFromPlayerPrefs() { }
+	private void LoadFromPlayerPrefs() { }
 
-private CameraMan.MovementType get_currentMovementType() { }
-
-	[CompilerGeneratedAttribute] 
-public float get_Zoom() { }
+	private CameraMan.MovementType get_currentMovementType() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Zoom(float value) { }
+	public float get_Zoom() { }
 
-public float get_Fov() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Zoom(float value) { }
 
-public void set_Fov(float value) { }
+	public float get_Fov() { }
 
-public static bool get_Active() { }
+	public void set_Fov(float value) { }
 
-public void ShakeView(float amplitude, float frequency, float duration) { }
+	public static bool get_Active() { }
 
-public void StopViewShake() { }
+	public void ShakeView(float amplitude, float frequency, float duration) { }
 
-private void Update() { }
+	public void StopViewShake() { }
 
-public void ToggleControl(bool state) { }
+	private void Update() { }
 
-private void UpdateMovement() { }
+	public void ToggleControl(bool state) { }
 
-private void DoControls() { }
+	private void UpdateMovement() { }
 
-public float GetDofDistance(BaseEntity target) { }
+	private void DoControls() { }
 
-public void FocusOnTarget() { }
+	public float GetDofDistance(BaseEntity target) { }
 
-public void .ctor() { }
+	public void FocusOnTarget() { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -122,9 +122,9 @@ public struct CameraMan.CameraState // TypeDefIndex: 9140
 private enum CameraMan.MovementType // TypeDefIndex: 9141
 {
 	public int value__; 
-public const CameraMan.MovementType Free = 0;
-public const CameraMan.MovementType Target = 1;
-public const CameraMan.MovementType LookAtPlayer = 2;
+	public const CameraMan.MovementType Free = 0;
+	public const CameraMan.MovementType Target = 1;
+	public const CameraMan.MovementType LookAtPlayer = 2;
 
 }
 

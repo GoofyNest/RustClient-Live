@@ -5,7 +5,7 @@ public sealed class NativeMatchesParallelForLengthAttribute : Attribute // TypeD
 [AttributeUsageAttribute] 
 public sealed class NativeMatchesParallelForLengthAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

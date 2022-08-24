@@ -10,7 +10,7 @@ public class TerrainAnchorGenerator : MonoBehaviour, IEditorComponent // TypeDef
 	public float AnchorOffsetMax; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

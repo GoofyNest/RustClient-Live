@@ -1,13 +1,13 @@
 public sealed class SplineParameter : ParameterOverride<Spline> // TypeDefIndex: 11829
 {
 
-protected internal override void OnEnable() { }
+	protected internal override void OnEnable() { }
 
-internal override void SetValue(ParameterOverride parameter) { }
+	internal override void SetValue(ParameterOverride parameter) { }
 
-public override void Interp(Spline from, Spline to, float t) { }
+	public override void Interp(Spline from, Spline to, float t) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

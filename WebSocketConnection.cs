@@ -28,106 +28,106 @@ public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6925
 	private bool _closing; 
 	private bool _closed; 
 
-public ISocket Socket { get; set; }
-public IHandler Handler { get; set; }
-public Action OnOpen { get; set; }
-public Action OnClose { get; set; }
-public Action<string> OnMessage { get; set; }
-public BinaryDataHandler OnBinary { get; set; }
-public BinaryDataHandler OnPing { get; set; }
-public BinaryDataHandler OnPong { get; set; }
-public Action<Exception> OnError { get; set; }
-public IWebSocketConnectionInfo ConnectionInfo { get; set; }
-public bool IsAvailable { get; }
+	public ISocket Socket { get; set; }
+	public IHandler Handler { get; set; }
+	public Action OnOpen { get; set; }
+	public Action OnClose { get; set; }
+	public Action<string> OnMessage { get; set; }
+	public BinaryDataHandler OnBinary { get; set; }
+	public BinaryDataHandler OnPing { get; set; }
+	public BinaryDataHandler OnPong { get; set; }
+	public Action<Exception> OnError { get; set; }
+	public IWebSocketConnectionInfo ConnectionInfo { get; set; }
+	public bool IsAvailable { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public ISocket get_Socket() { }
+	public ISocket get_Socket() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Socket(ISocket value) { }
+	public void set_Socket(ISocket value) { }
 
 	[CompilerGeneratedAttribute] 
-public IHandler get_Handler() { }
+	public IHandler get_Handler() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Handler(IHandler value) { }
+	public void set_Handler(IHandler value) { }
 
 	[CompilerGeneratedAttribute] 
-public Action get_OnOpen() { }
+	public Action get_OnOpen() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnOpen(Action value) { }
+	public void set_OnOpen(Action value) { }
 
 	[CompilerGeneratedAttribute] 
-public Action get_OnClose() { }
+	public Action get_OnClose() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnClose(Action value) { }
+	public void set_OnClose(Action value) { }
 
 	[CompilerGeneratedAttribute] 
-public Action<string> get_OnMessage() { }
+	public Action<string> get_OnMessage() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnMessage(Action<string> value) { }
+	public void set_OnMessage(Action<string> value) { }
 
 	[CompilerGeneratedAttribute] 
-public BinaryDataHandler get_OnBinary() { }
+	public BinaryDataHandler get_OnBinary() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnBinary(BinaryDataHandler value) { }
+	public void set_OnBinary(BinaryDataHandler value) { }
 
 	[CompilerGeneratedAttribute] 
-public BinaryDataHandler get_OnPing() { }
+	public BinaryDataHandler get_OnPing() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnPing(BinaryDataHandler value) { }
+	public void set_OnPing(BinaryDataHandler value) { }
 
 	[CompilerGeneratedAttribute] 
-public BinaryDataHandler get_OnPong() { }
+	public BinaryDataHandler get_OnPong() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnPong(BinaryDataHandler value) { }
+	public void set_OnPong(BinaryDataHandler value) { }
 
 	[CompilerGeneratedAttribute] 
-public Action<Exception> get_OnError() { }
+	public Action<Exception> get_OnError() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnError(Action<Exception> value) { }
+	public void set_OnError(Action<Exception> value) { }
 
 	[CompilerGeneratedAttribute] 
-public IWebSocketConnectionInfo get_ConnectionInfo() { }
+	public IWebSocketConnectionInfo get_ConnectionInfo() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ConnectionInfo(IWebSocketConnectionInfo value) { }
+	private void set_ConnectionInfo(IWebSocketConnectionInfo value) { }
 
-public bool get_IsAvailable() { }
+	public bool get_IsAvailable() { }
 
-public void .ctor(ISocket socket, Action<IWebSocketConnection> initialize, Func<ArraySegment<byte>, WebSocketHttpRequest> parseRequest, Func<IWebSocketConnection, WebSocketHttpRequest, IHandler> handlerFactory) { }
+	public void .ctor(ISocket socket, Action<IWebSocketConnection> initialize, Func<ArraySegment<byte>, WebSocketHttpRequest> parseRequest, Func<IWebSocketConnection, WebSocketHttpRequest, IHandler> handlerFactory) { }
 
-public void Send(string message) { }
+	public void Send(string message) { }
 
-private void SendImpl(MemoryBuffer buffer) { }
+	private void SendImpl(MemoryBuffer buffer) { }
 
-public void Close() { }
+	public void Close() { }
 
-public void Close(ushort code) { }
+	public void Close(ushort code) { }
 
-public bool CreateHandler(ArraySegment<byte> data) { }
+	public bool CreateHandler(ArraySegment<byte> data) { }
 
-public void StartReceiving() { }
+	public void StartReceiving() { }
 
-private void HandleReadSuccess(int bytesRead) { }
+	private void HandleReadSuccess(int bytesRead) { }
 
-private void HandleReadError(Exception e) { }
+	private void HandleReadError(Exception e) { }
 
-private void Receive(byte[] buffer, int offset) { }
+	private void Receive(byte[] buffer, int offset) { }
 
-private void HandleWriteError(Exception e) { }
+	private void HandleWriteError(Exception e) { }
 
-private void SendBytes(MemoryBuffer bytes, Action<WebSocketConnection, bool> callback) { }
+	private void SendBytes(MemoryBuffer bytes, Action<WebSocketConnection, bool> callback) { }
 
-private void CloseSocket() { }
+	private void CloseSocket() { }
 
 }
 
@@ -146,29 +146,29 @@ private sealed class WebSocketConnection.<>c // TypeDefIndex: 6926
 	public static AsyncCallback <>9__63_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <.ctor>b__50_0() { }
+	internal void <.ctor>b__50_0() { }
 
-internal void <.ctor>b__50_1() { }
+	internal void <.ctor>b__50_1() { }
 
-internal void <.ctor>b__50_2(string x) { }
+	internal void <.ctor>b__50_2(string x) { }
 
-internal void <.ctor>b__50_3(Span<byte> x) { }
+	internal void <.ctor>b__50_3(Span<byte> x) { }
 
-internal void <.ctor>b__50_4(Span<byte> x) { }
+	internal void <.ctor>b__50_4(Span<byte> x) { }
 
-internal void <.ctor>b__50_5(Span<byte> x) { }
+	internal void <.ctor>b__50_5(Span<byte> x) { }
 
-internal void <.ctor>b__50_6(Exception x) { }
+	internal void <.ctor>b__50_6(Exception x) { }
 
-internal void <Close>b__58_0(WebSocketConnection i, bool s) { }
+	internal void <Close>b__58_0(WebSocketConnection i, bool s) { }
 
-internal void <CreateHandler>b__59_0(WebSocketConnection instance, bool success) { }
+	internal void <CreateHandler>b__59_0(WebSocketConnection instance, bool success) { }
 
-internal void <Receive>b__63_0(IAsyncResult result) { }
+	internal void <Receive>b__63_0(IAsyncResult result) { }
 
 }
 
@@ -178,9 +178,9 @@ private sealed class WebSocketConnection.<>c__DisplayClass65_0 // TypeDefIndex: 
 	public Action<WebSocketConnection, bool> callback; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <SendBytes>b__0(IAsyncResult result) { }
+	internal void <SendBytes>b__0(IAsyncResult result) { }
 
 }
 

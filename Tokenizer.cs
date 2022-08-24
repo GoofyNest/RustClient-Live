@@ -18,30 +18,30 @@ internal sealed class Tokenizer // TypeDefIndex: 920
 	private string _inNestedString; 
 
 
-internal void BasicInitialization() { }
+	internal void BasicInitialization() { }
 
-public void Recycle() { }
+	public void Recycle() { }
 
-internal void .ctor(string input) { }
+	internal void .ctor(string input) { }
 
-internal void ChangeFormat(Encoding encoding) { }
+	internal void ChangeFormat(Encoding encoding) { }
 
-internal void GetTokens(TokenizerStream stream, int maxNum, bool endAfterKet) { }
+	internal void GetTokens(TokenizerStream stream, int maxNum, bool endAfterKet) { }
 
-private string GetStringToken() { }
+	private string GetStringToken() { }
 
 }
 
 private enum Tokenizer.TokenSource // TypeDefIndex: 921
 {
 	public int value__; 
-public const Tokenizer.TokenSource UnicodeByteArray = 0;
-public const Tokenizer.TokenSource UTF8ByteArray = 1;
-public const Tokenizer.TokenSource ASCIIByteArray = 2;
-public const Tokenizer.TokenSource CharArray = 3;
-public const Tokenizer.TokenSource String = 4;
-public const Tokenizer.TokenSource NestedStrings = 5;
-public const Tokenizer.TokenSource Other = 6;
+	public const Tokenizer.TokenSource UnicodeByteArray = 0;
+	public const Tokenizer.TokenSource UTF8ByteArray = 1;
+	public const Tokenizer.TokenSource ASCIIByteArray = 2;
+	public const Tokenizer.TokenSource CharArray = 3;
+	public const Tokenizer.TokenSource String = 4;
+	public const Tokenizer.TokenSource NestedStrings = 5;
+	public const Tokenizer.TokenSource Other = 6;
 
 }
 
@@ -55,15 +55,15 @@ internal sealed class Tokenizer.StringMaker // TypeDefIndex: 922
 	public int _outIndex; 
 
 
-private static uint HashString(string str) { }
+	private static uint HashString(string str) { }
 
-private static uint HashCharArray(char[] a, int l) { }
+	private static uint HashCharArray(char[] a, int l) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private bool CompareStringAndChars(string str, char[] a, int l) { }
+	private bool CompareStringAndChars(string str, char[] a, int l) { }
 
-public string MakeString() { }
+	public string MakeString() { }
 
 }
 
@@ -72,14 +72,14 @@ internal class Tokenizer.StreamTokenReader : Tokenizer.ITokenReader // TypeDefIn
 	internal StreamReader _in; 
 	internal int _numCharRead; 
 
-internal int NumCharEncountered { get; }
+	internal int NumCharEncountered { get; }
 
 
-internal void .ctor(StreamReader input) { }
+	internal void .ctor(StreamReader input) { }
 
-public virtual int Read() { }
+	public virtual int Read() { }
 
-internal int get_NumCharEncountered() { }
+	internal int get_NumCharEncountered() { }
 
 }
 

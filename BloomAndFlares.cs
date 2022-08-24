@@ -36,19 +36,19 @@ public class BloomAndFlares : PostEffectsBase // TypeDefIndex: 8161
 	private Material brightPassFilterMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private void AddTo(float intensity_, RenderTexture from, RenderTexture to) { }
+	private void AddTo(float intensity_, RenderTexture from, RenderTexture to) { }
 
-private void BlendFlares(RenderTexture from, RenderTexture to) { }
+	private void BlendFlares(RenderTexture from, RenderTexture to) { }
 
-private void BrightFilter(float thresh, float useAlphaAsMask, RenderTexture from, RenderTexture to) { }
+	private void BrightFilter(float thresh, float useAlphaAsMask, RenderTexture from, RenderTexture to) { }
 
-private void Vignette(float amount, RenderTexture from, RenderTexture to) { }
+	private void Vignette(float amount, RenderTexture from, RenderTexture to) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

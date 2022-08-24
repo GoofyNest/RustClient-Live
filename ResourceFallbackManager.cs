@@ -5,12 +5,12 @@ internal class ResourceFallbackManager : IEnumerable<CultureInfo>, IEnumerable /
 	private bool m_useParents; 
 
 
-internal void .ctor(CultureInfo startingCulture, CultureInfo neutralResourcesCulture, bool useParents) { }
+	internal void .ctor(CultureInfo startingCulture, CultureInfo neutralResourcesCulture, bool useParents) { }
 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator<CultureInfo> GetEnumerator() { }
+	public IEnumerator<CultureInfo> GetEnumerator() { }
 
 }
 
@@ -22,26 +22,26 @@ private sealed class ResourceFallbackManager.<GetEnumerator>d__5 : IEnumerator<C
 	private CultureInfo <currentCulture>5__1; 
 	private bool <reachedNeutralResourcesCulture>5__2; 
 
-private CultureInfo System.Collections.Generic.IEnumerator<System.Globalization.CultureInfo>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private CultureInfo System.Collections.Generic.IEnumerator<System.Globalization.CultureInfo>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private CultureInfo System.Collections.Generic.IEnumerator<System.Globalization.CultureInfo>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private CultureInfo System.Collections.Generic.IEnumerator<System.Globalization.CultureInfo>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

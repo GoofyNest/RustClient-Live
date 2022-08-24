@@ -4,11 +4,11 @@ public class MortarFirework : RepeatingFirework // TypeDefIndex: 8273
 	public Transform emissionPoint; 
 
 
-public override void Fire() { }
+	public override void Fire() { }
 
-protected virtual void PreInitShell(FireworkShell shell) { }
+	protected virtual void PreInitShell(FireworkShell shell) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

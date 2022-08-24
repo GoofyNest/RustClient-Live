@@ -8,14 +8,14 @@ internal class SendMouseEvents // TypeDefIndex: 4076
 
 
 	[RequiredByNativeCodeAttribute] 
-private static void SetMouseMoved() { }
+	private static void SetMouseMoved() { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void DoSendMouseEvents(int skipRTCameras) { }
+	private static void DoSendMouseEvents(int skipRTCameras) { }
 
-private static void SendEvents(int i, SendMouseEvents.HitInfo hit) { }
+	private static void SendEvents(int i, SendMouseEvents.HitInfo hit) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -25,11 +25,11 @@ private struct SendMouseEvents.HitInfo // TypeDefIndex: 4077
 	public Camera camera; 
 
 
-public void SendMessage(string name) { }
+	public void SendMessage(string name) { }
 
-public static bool op_Implicit(SendMouseEvents.HitInfo exists) { }
+	public static bool op_Implicit(SendMouseEvents.HitInfo exists) { }
 
-public static bool Compare(SendMouseEvents.HitInfo lhs, SendMouseEvents.HitInfo rhs) { }
+	public static bool Compare(SendMouseEvents.HitInfo lhs, SendMouseEvents.HitInfo rhs) { }
 
 }
 

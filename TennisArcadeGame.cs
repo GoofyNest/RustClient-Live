@@ -23,25 +23,25 @@ public class TennisArcadeGame : BaseArcadeGame // TypeDefIndex: 8775
 	private float lastAIHeight; 
 
 
-public override void OnNoHost() { }
+	public override void OnNoHost() { }
 
-public void MainMenu() { }
+	public void MainMenu() { }
 
-public void FixedUpdate() { }
+	public void FixedUpdate() { }
 
-public void UpdateScoreNodes() { }
+	public void UpdateScoreNodes() { }
 
-public override void Initialize() { }
+	public override void Initialize() { }
 
-public void PaddleInput(float amount, int paddleIndex) { }
+	public void PaddleInput(float amount, int paddleIndex) { }
 
-public void GameStart() { }
+	public void GameStart() { }
 
-public void RoundStart() { }
+	public void RoundStart() { }
 
-public override void PlayerInput(InputState inputState, BasePlayer player, int playerIndex = 0, bool clientside = False) { }
+	public override void PlayerInput(InputState inputState, BasePlayer player, int playerIndex = 0, bool clientside = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

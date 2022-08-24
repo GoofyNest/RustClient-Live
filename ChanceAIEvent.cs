@@ -3,22 +3,22 @@ public class ChanceAIEvent : BaseAIEvent // TypeDefIndex: 9395
 	[CompilerGeneratedAttribute] 
 	private float <Chance>k__BackingField; 
 
-public float Chance { get; set; }
+	public float Chance { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_Chance() { }
+	public float get_Chance() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Chance(float value) { }
+	public void set_Chance(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void Init(AIEventData data, BaseEntity owner) { }
+	public override void Init(AIEventData data, BaseEntity owner) { }
 
-public override AIEventData ToProto() { }
+	public override AIEventData ToProto() { }
 
-public override void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
+	public override void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
 
 }
 

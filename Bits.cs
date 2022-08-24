@@ -7,11 +7,11 @@ internal static class Bits // TypeDefIndex: 1831
 	private static readonly uint MASK_1111111111111111; 
 
 
-public static int Count(uint num) { }
+	public static int Count(uint num) { }
 
-public static int LeastPosition(uint num) { }
+	public static int LeastPosition(uint num) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

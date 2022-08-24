@@ -14,40 +14,40 @@ public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 662
 	public Vector3 UpDirection; 
 
 
-public void DebugAlign() { }
+	public void DebugAlign() { }
 
-public void PositionCamera(Camera cam) { }
+	public void PositionCamera(Camera cam) { }
 
-public void PreRender() { }
+	public void PreRender() { }
 
-public void PostRender() { }
-
-	[ContextMenu] 
-public void CreateIcon() { }
+	public void PostRender() { }
 
 	[ContextMenu] 
-public void CreateRender() { }
+	public void CreateIcon() { }
 
-private static float DefaultLightIntensityScale(float intensity) { }
+	[ContextMenu] 
+	public void CreateRender() { }
 
-public void CreateScreenshot(string filename, int width, int height, int SuperSampleSize = 1, PropRenderer.LightIntensityScale lightIntensityScale) { }
+	private static float DefaultLightIntensityScale(float intensity) { }
 
-public static bool RenderScreenshot(GameObject prefab, string filename, int width, int height, int SuperSampleSize = 1) { }
+	public void CreateScreenshot(string filename, int width, int height, int SuperSampleSize = 1, PropRenderer.LightIntensityScale lightIntensityScale) { }
 
-public void .ctor() { }
+	public static bool RenderScreenshot(GameObject prefab, string filename, int width, int height, int SuperSampleSize = 1) { }
+
+	public void .ctor() { }
 
 }
 
 public sealed class PropRenderer.LightIntensityScale : MulticastDelegate // TypeDefIndex: 6624
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual float Invoke(float intensity) { }
+	public virtual float Invoke(float intensity) { }
 
-public virtual IAsyncResult BeginInvoke(float intensity, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(float intensity, AsyncCallback callback, object object) { }
 
-public virtual float EndInvoke(IAsyncResult result) { }
+	public virtual float EndInvoke(IAsyncResult result) { }
 
 }
 

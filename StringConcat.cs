@@ -8,16 +8,16 @@ public struct StringConcat // TypeDefIndex: 2430
 	private List<string> strList; 
 	private int idxStr; 
 
-internal int Count { get; }
+	internal int Count { get; }
 
 
-public void Clear() { }
+	public void Clear() { }
 
-internal int get_Count() { }
+	internal int get_Count() { }
 
-public string GetResult() { }
+	public string GetResult() { }
 
-internal void ConcatNoDelimiter(string s) { }
+	internal void ConcatNoDelimiter(string s) { }
 
 }
 

@@ -6,13 +6,13 @@ public class MusicChangeIntensity : MonoBehaviour // TypeDefIndex: 8999
 	private float lastTick; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void Tick() { }
+	private void Tick() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -23,7 +23,7 @@ public class MusicChangeIntensity.DistanceIntensity // TypeDefIndex: 9000
 	public bool forceStartMusicInSuppressedMusicZones; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

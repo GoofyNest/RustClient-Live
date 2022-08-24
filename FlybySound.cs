@@ -7,11 +7,11 @@ public class FlybySound : MonoBehaviour, IClientComponent // TypeDefIndex: 8991
 	private bool flybyPlayed; 
 
 
-private void Update() { }
+	private void Update() { }
 
-private void DoFlybySound() { }
+	private void DoFlybySound() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

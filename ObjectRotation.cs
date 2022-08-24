@@ -4,9 +4,9 @@ public class ObjectRotation : MonoBehaviour // TypeDefIndex: 11183
 	public bool ignoreNeedsKeyboard; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

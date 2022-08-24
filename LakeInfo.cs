@@ -1,9 +1,9 @@
 public class LakeInfo : MonoBehaviour // TypeDefIndex: 9959
 {
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

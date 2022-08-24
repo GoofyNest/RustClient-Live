@@ -7,11 +7,11 @@ public class ScreenBounce : BaseScreenShake // TypeDefIndex: 9365
 	private Vector3 bounceVelocity; 
 
 
-public override void Setup() { }
+	public override void Setup() { }
 
-public override void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
+	public override void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

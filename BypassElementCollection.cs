@@ -27,7 +27,7 @@ public sealed class BypassElement : ConfigurationElement
 [ConfigurationCollectionAttribute] 
 public sealed class BypassElementCollection : ConfigurationElementCollection 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

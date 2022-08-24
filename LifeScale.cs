@@ -7,17 +7,17 @@ public class LifeScale : BaseMonoBehaviour // TypeDefIndex: 9637
 	private Action updateScaleAction; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void SetProgress(float progress) { }
+	public void SetProgress(float progress) { }
 
-public void Init() { }
+	public void Init() { }
 
-public void UpdateScale() { }
+	public void UpdateScale() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

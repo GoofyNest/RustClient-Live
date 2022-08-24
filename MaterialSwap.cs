@@ -7,9 +7,9 @@ public class MaterialSwap : MonoBehaviour, IClientComponent // TypeDefIndex: 935
 	private Material[] originalMaterials; 
 
 
-public void SetOverrideEnabled(bool on) { }
+	public void SetOverrideEnabled(bool on) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

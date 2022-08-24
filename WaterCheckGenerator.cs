@@ -5,7 +5,7 @@ public class WaterCheckGenerator : MonoBehaviour, IEditorComponent // TypeDefInd
 	public bool CheckRotate; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

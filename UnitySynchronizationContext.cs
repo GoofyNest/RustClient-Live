@@ -6,32 +6,32 @@ internal sealed class UnitySynchronizationContext : SynchronizationContext // Ty
 	private int m_TrackedCount; 
 
 
-private void .ctor(int mainThreadID) { }
+	private void .ctor(int mainThreadID) { }
 
-private void .ctor(List<UnitySynchronizationContext.WorkRequest> queue, int mainThreadID) { }
+	private void .ctor(List<UnitySynchronizationContext.WorkRequest> queue, int mainThreadID) { }
 
-public override void Send(SendOrPostCallback callback, object state) { }
+	public override void Send(SendOrPostCallback callback, object state) { }
 
-public override void OperationStarted() { }
+	public override void OperationStarted() { }
 
-public override void OperationCompleted() { }
+	public override void OperationCompleted() { }
 
-public override void Post(SendOrPostCallback callback, object state) { }
+	public override void Post(SendOrPostCallback callback, object state) { }
 
-public override SynchronizationContext CreateCopy() { }
+	public override SynchronizationContext CreateCopy() { }
 
-private void Exec() { }
+	private void Exec() { }
 
-private bool HasPendingTasks() { }
-
-	[RequiredByNativeCodeAttribute] 
-private static void InitializeSynchronizationContext() { }
+	private bool HasPendingTasks() { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void ExecuteTasks() { }
+	private static void InitializeSynchronizationContext() { }
 
 	[RequiredByNativeCodeAttribute] 
-private static bool ExecutePendingTasks(long millisecondsTimeout) { }
+	private static void ExecuteTasks() { }
+
+	[RequiredByNativeCodeAttribute] 
+	private static bool ExecutePendingTasks(long millisecondsTimeout) { }
 
 }
 
@@ -42,9 +42,9 @@ private struct UnitySynchronizationContext.WorkRequest // TypeDefIndex: 3537
 	private readonly ManualResetEvent m_WaitHandle; 
 
 
-public void .ctor(SendOrPostCallback callback, object state, ManualResetEvent waitHandle) { }
+	public void .ctor(SendOrPostCallback callback, object state, ManualResetEvent waitHandle) { }
 
-public void Invoke() { }
+	public void Invoke() { }
 
 }
 

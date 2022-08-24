@@ -6,19 +6,19 @@ internal class InvokableCallList // TypeDefIndex: 3637
 	private bool m_NeedsUpdate; 
 
 
-public void AddPersistentInvokableCall(BaseInvokableCall call) { }
+	public void AddPersistentInvokableCall(BaseInvokableCall call) { }
 
-public void AddListener(BaseInvokableCall call) { }
+	public void AddListener(BaseInvokableCall call) { }
 
-public void RemoveListener(object targetObj, MethodInfo method) { }
+	public void RemoveListener(object targetObj, MethodInfo method) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void ClearPersistent() { }
+	public void ClearPersistent() { }
 
-public List<BaseInvokableCall> PrepareInvoke() { }
+	public List<BaseInvokableCall> PrepareInvoke() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

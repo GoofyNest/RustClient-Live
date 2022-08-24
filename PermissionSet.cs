@@ -7,46 +7,46 @@ public class PermissionSet : ISecurityEncodable, ICollection, IEnumerable, IDese
 	private bool[] _ignored; 
 	private static object[] action; 
 
-public virtual int Count { get; }
-public virtual object SyncRoot { get; }
+	public virtual int Count { get; }
+	public virtual object SyncRoot { get; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public void .ctor(PermissionState state) { }
+	public void .ctor(PermissionState state) { }
 
-internal void .ctor(IPermission perm) { }
+	internal void .ctor(IPermission perm) { }
 
-public virtual void CopyTo(Array array, int index) { }
+	public virtual void CopyTo(Array array, int index) { }
 
-public void Demand() { }
+	public void Demand() { }
 
-internal void CasOnlyDemand(int skip) { }
+	internal void CasOnlyDemand(int skip) { }
 
-public IEnumerator GetEnumerator() { }
+	public IEnumerator GetEnumerator() { }
 
-public bool IsEmpty() { }
+	public bool IsEmpty() { }
 
-public bool IsUnrestricted() { }
+	public bool IsUnrestricted() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public virtual SecurityElement ToXml() { }
+	public virtual SecurityElement ToXml() { }
 
-public virtual int get_Count() { }
+	public virtual int get_Count() { }
 
-public virtual object get_SyncRoot() { }
+	public virtual object get_SyncRoot() { }
 
 	[MonoTODOAttribute] 
-private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
+	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
 
 	[ComVisibleAttribute] 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
 	[ComVisibleAttribute] 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

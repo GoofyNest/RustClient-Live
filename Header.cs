@@ -9,16 +9,16 @@ public class Header // TypeDefIndex: 1237
 
 public class Header // TypeDefIndex: 7392
 {
-internal const int MPEG2_LSF = 0;
-internal const int MPEG25_LSF = 2;
-internal const int MPEG1 = 1;
-internal const int STEREO = 0;
-internal const int JOINT_STEREO = 1;
-internal const int DUAL_CHANNEL = 2;
-internal const int SINGLE_CHANNEL = 3;
-internal const int FOURTYFOUR_POINT_ONE = 0;
-internal const int FOURTYEIGHT = 1;
-internal const int THIRTYTWO = 2;
+	internal const int MPEG2_LSF = 0;
+	internal const int MPEG25_LSF = 2;
+	internal const int MPEG1 = 1;
+	internal const int STEREO = 0;
+	internal const int JOINT_STEREO = 1;
+	internal const int DUAL_CHANNEL = 2;
+	internal const int SINGLE_CHANNEL = 3;
+	internal const int FOURTYFOUR_POINT_ONE = 0;
+	internal const int FOURTYEIGHT = 1;
+	internal const int THIRTYTWO = 2;
 	internal static readonly int[][] Frequencies; 
 	internal static readonly int[][][] Bitrates; 
 	internal static readonly string[][][] BitrateStr; 
@@ -42,51 +42,51 @@ internal const int THIRTYTWO = 2;
 	private int _Version; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private void InitBlock() { }
+	private void InitBlock() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-internal void read_header(Bitstream stream, Crc16[] crcp) { }
+	internal void read_header(Bitstream stream, Crc16[] crcp) { }
 
-internal int Version() { }
+	internal int Version() { }
 
-internal int Layer() { }
+	internal int Layer() { }
 
-internal int bitrate_index() { }
+	internal int bitrate_index() { }
 
-internal int sample_frequency() { }
+	internal int sample_frequency() { }
 
-internal int Frequency() { }
+	internal int Frequency() { }
 
-internal int Mode() { }
+	internal int Mode() { }
 
-internal bool IsProtection() { }
+	internal bool IsProtection() { }
 
-internal bool IsChecksumOK() { }
+	internal bool IsChecksumOK() { }
 
-internal int Slots() { }
+	internal int Slots() { }
 
-internal int mode_extension() { }
+	internal int mode_extension() { }
 
-internal int CalculateFrameSize() { }
+	internal int CalculateFrameSize() { }
 
-internal string LayerAsString() { }
+	internal string LayerAsString() { }
 
-internal string BitrateAsString() { }
+	internal string BitrateAsString() { }
 
-internal string SampleFrequencyAsString() { }
+	internal string SampleFrequencyAsString() { }
 
-internal string ModeAsString() { }
+	internal string ModeAsString() { }
 
-internal string VersionAsString() { }
+	internal string VersionAsString() { }
 
-internal int NumberSubbands() { }
+	internal int NumberSubbands() { }
 
-internal int IntensityStereoBound() { }
+	internal int IntensityStereoBound() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

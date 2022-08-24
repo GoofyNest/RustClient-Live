@@ -6,15 +6,15 @@ internal sealed class SafeSocketHandle : SafeHandleZeroOrMinusOneIsInvalid // Ty
 	private static bool THROW_ON_ABORT_RETRIES; 
 
 
-public void .ctor(IntPtr preexistingHandle, bool ownsHandle) { }
+	public void .ctor(IntPtr preexistingHandle, bool ownsHandle) { }
 
-protected override bool ReleaseHandle() { }
+	protected override bool ReleaseHandle() { }
 
-public void RegisterForBlockingSyscall() { }
+	public void RegisterForBlockingSyscall() { }
 
-public void UnRegisterForBlockingSyscall() { }
+	public void UnRegisterForBlockingSyscall() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

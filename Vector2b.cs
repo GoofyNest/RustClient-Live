@@ -6,21 +6,21 @@ public struct Vector2b : IEquatable<Vector2b> // TypeDefIndex: 4820
 	public bool y; 
 
 
-public void .ctor(bool x, bool y) { }
+	public void .ctor(bool x, bool y) { }
 
-public static bool op_Equality(Vector2b a, Vector2b b) { }
+	public static bool op_Equality(Vector2b a, Vector2b b) { }
 
-public static bool op_Inequality(Vector2b a, Vector2b b) { }
+	public static bool op_Inequality(Vector2b a, Vector2b b) { }
 
-public bool Equals(Vector2b o) { }
+	public bool Equals(Vector2b o) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

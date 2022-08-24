@@ -11,17 +11,17 @@ internal class WorkshopItemButton : MonoBehaviour // TypeDefIndex: 7742
 	private IWorkshopContent Item; 
 
 
-internal void Init(IWorkshopContent item) { }
+	internal void Init(IWorkshopContent item) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void OpenWebpage() { }
+	public void OpenWebpage() { }
 
-public void StartEditing() { }
+	public void StartEditing() { }
 
-public void StartViewing() { }
+	public void StartViewing() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

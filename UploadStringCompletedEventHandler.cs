@@ -3,13 +3,13 @@ public sealed class UploadStringCompletedEventHandler : MulticastDelegate // Typ
 
 public sealed class UploadStringCompletedEventHandler : MulticastDelegate 
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(object sender, UploadStringCompletedEventArgs e) { }
+	public virtual void Invoke(object sender, UploadStringCompletedEventArgs e) { }
 
-public virtual IAsyncResult BeginInvoke(object sender, UploadStringCompletedEventArgs e, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(object sender, UploadStringCompletedEventArgs e, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

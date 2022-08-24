@@ -73,7 +73,7 @@ public class QDOODOQQDQODD // TypeDefIndex: 7181
 	public double roadTypeTimestamp; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,15 +8,15 @@ internal class MemberInfoSerializationHolder : ISerializable, IObjectReference /
 	private SerializationInfo m_info; 
 
 
-public static void GetSerializationInfo(SerializationInfo info, string name, RuntimeType reflectedClass, string signature, MemberTypes type) { }
+	public static void GetSerializationInfo(SerializationInfo info, string name, RuntimeType reflectedClass, string signature, MemberTypes type) { }
 
-public static void GetSerializationInfo(SerializationInfo info, string name, RuntimeType reflectedClass, string signature, string signature2, MemberTypes type, Type[] genericArguments) { }
+	public static void GetSerializationInfo(SerializationInfo info, string name, RuntimeType reflectedClass, string signature, string signature2, MemberTypes type, Type[] genericArguments) { }
 
-internal void .ctor(SerializationInfo info, StreamingContext context) { }
+	internal void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-public virtual object GetRealObject(StreamingContext context) { }
+	public virtual object GetRealObject(StreamingContext context) { }
 
 }
 

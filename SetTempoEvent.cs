@@ -2,20 +2,20 @@ public sealed class SetTempoEvent : MetaEvent // TypeDefIndex: 7546
 {
 	private long _microsecondsPerBeat; 
 
-public long MicrosecondsPerQuarterNote { get; set; }
+	public long MicrosecondsPerQuarterNote { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public long get_MicrosecondsPerQuarterNote() { }
+	public long get_MicrosecondsPerQuarterNote() { }
 
-public void set_MicrosecondsPerQuarterNote(long value) { }
+	public void set_MicrosecondsPerQuarterNote(long value) { }
 
-protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
+	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override MidiEvent CloneEvent() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

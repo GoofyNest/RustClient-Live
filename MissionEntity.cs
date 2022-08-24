@@ -4,9 +4,9 @@ public class MissionEntity : BaseMonoBehaviour, IOnParentDestroying // TypeDefIn
 	public bool cleanupOnMissionFailed; 
 
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

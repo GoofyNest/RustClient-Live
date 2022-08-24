@@ -8,7 +8,7 @@ public class SlotMachinePayoutSettings : ScriptableObject // TypeDefIndex: 8750
 	public GameObjectRef DefaultWinEffect; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

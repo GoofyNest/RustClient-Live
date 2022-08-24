@@ -10,27 +10,27 @@ internal sealed class TokenizerStream // TypeDefIndex: 927
 	private int m_indexStrings; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void AddToken(short token) { }
+	internal void AddToken(short token) { }
 
-internal void AddString(string str) { }
+	internal void AddString(string str) { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
-internal short GetNextFullToken() { }
+	internal short GetNextFullToken() { }
 
-internal short GetNextToken() { }
+	internal short GetNextToken() { }
 
-internal string GetNextString() { }
+	internal string GetNextString() { }
 
-internal void ThrowAwayNextString() { }
+	internal void ThrowAwayNextString() { }
 
-internal void TagLastToken(short tag) { }
+	internal void TagLastToken(short tag) { }
 
-internal int GetTokenCount() { }
+	internal int GetTokenCount() { }
 
-internal void GoToPosition(int position) { }
+	internal void GoToPosition(int position) { }
 
 }
 

@@ -6,11 +6,11 @@ public class StrongNameKeyPair : ISerializable, IDeserializationCallback // Type
 	private byte[] _keyPairArray; 
 
 
-protected void .ctor(SerializationInfo info, StreamingContext context) { }
+	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
+	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
+	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
 
 }
 

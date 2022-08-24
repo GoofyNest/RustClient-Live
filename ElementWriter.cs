@@ -4,21 +4,21 @@ internal struct ElementWriter // TypeDefIndex: 5838
 	private NamespaceResolver resolver; 
 
 
-public void .ctor(XmlWriter writer) { }
+	public void .ctor(XmlWriter writer) { }
 
-public void WriteElement(XElement e) { }
+	public void WriteElement(XElement e) { }
 
-private string GetPrefixOfNamespace(XNamespace ns, bool allowDefaultNamespace) { }
+	private string GetPrefixOfNamespace(XNamespace ns, bool allowDefaultNamespace) { }
 
-private void PushAncestors(XElement e) { }
+	private void PushAncestors(XElement e) { }
 
-private void PushElement(XElement e) { }
+	private void PushElement(XElement e) { }
 
-private void WriteEndElement() { }
+	private void WriteEndElement() { }
 
-private void WriteFullEndElement() { }
+	private void WriteFullEndElement() { }
 
-private void WriteStartElement(XElement e) { }
+	private void WriteStartElement(XElement e) { }
 
 }
 

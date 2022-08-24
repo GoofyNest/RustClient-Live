@@ -8,9 +8,9 @@ public class MethodBody // TypeDefIndex: 570
 	private int max_stack; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public virtual byte[] GetILAsByteArray() { }
+	public virtual byte[] GetILAsByteArray() { }
 
 }
 

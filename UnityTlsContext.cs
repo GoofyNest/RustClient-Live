@@ -18,51 +18,51 @@ internal class UnityTlsContext : MobileTlsContext // TypeDefIndex: 2509
 	private GCHandle handle; 
 	private Exception lastException; 
 
-public override bool IsAuthenticated { get; }
-internal override X509Certificate LocalClientCertificate { get; }
+	public override bool IsAuthenticated { get; }
+	internal override X509Certificate LocalClientCertificate { get; }
 
 
-public void .ctor(MobileAuthenticatedStream parent, bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool askForClientCert) { }
+	public void .ctor(MobileAuthenticatedStream parent, bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool askForClientCert) { }
 
-private static void ExtractNativeKeyAndChainFromManagedCertificate(X509Certificate cert, UnityTls.unitytls_errorstate* errorState, out UnityTls.unitytls_x509list* nativeCertChain, out UnityTls.unitytls_key* nativeKey) { }
+	private static void ExtractNativeKeyAndChainFromManagedCertificate(X509Certificate cert, UnityTls.unitytls_errorstate* errorState, out UnityTls.unitytls_x509list* nativeCertChain, out UnityTls.unitytls_key* nativeKey) { }
 
-public override bool get_IsAuthenticated() { }
+	public override bool get_IsAuthenticated() { }
 
-internal override X509Certificate get_LocalClientCertificate() { }
+	internal override X509Certificate get_LocalClientCertificate() { }
 
-public override ValueTuple<int, bool> Read(byte[] buffer, int offset, int count) { }
+	public override ValueTuple<int, bool> Read(byte[] buffer, int offset, int count) { }
 
-public override ValueTuple<int, bool> Write(byte[] buffer, int offset, int count) { }
+	public override ValueTuple<int, bool> Write(byte[] buffer, int offset, int count) { }
 
-public override void Shutdown() { }
+	public override void Shutdown() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-public override void StartHandshake() { }
+	public override void StartHandshake() { }
 
-public override bool ProcessHandshake() { }
+	public override bool ProcessHandshake() { }
 
-public override void FinishHandshake() { }
-
-	[MonoPInvokeCallbackAttribute] 
-private static IntPtr WriteCallback(void* userData, byte* data, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
-
-private IntPtr WriteCallback(byte* data, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
+	public override void FinishHandshake() { }
 
 	[MonoPInvokeCallbackAttribute] 
-private static IntPtr ReadCallback(void* userData, byte* buffer, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
+	private static IntPtr WriteCallback(void* userData, byte* data, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
 
-private IntPtr ReadCallback(byte* buffer, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
-
-	[MonoPInvokeCallbackAttribute] 
-private static UnityTls.unitytls_x509verify_result VerifyCallback(void* userData, UnityTls.unitytls_x509list_ref chain, UnityTls.unitytls_errorstate* errorState) { }
-
-private UnityTls.unitytls_x509verify_result VerifyCallback(UnityTls.unitytls_x509list_ref chain, UnityTls.unitytls_errorstate* errorState) { }
+	private IntPtr WriteCallback(byte* data, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
 
 	[MonoPInvokeCallbackAttribute] 
-private static void CertificateCallback(void* userData, UnityTls.unitytls_tlsctx* ctx, byte* cn, IntPtr cnLen, UnityTls.unitytls_x509name* caList, IntPtr caListLen, UnityTls.unitytls_x509list_ref* chain, UnityTls.unitytls_key_ref* key, UnityTls.unitytls_errorstate* errorState) { }
+	private static IntPtr ReadCallback(void* userData, byte* buffer, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
 
-private void CertificateCallback(UnityTls.unitytls_tlsctx* ctx, byte* cn, IntPtr cnLen, UnityTls.unitytls_x509name* caList, IntPtr caListLen, UnityTls.unitytls_x509list_ref* chain, UnityTls.unitytls_key_ref* key, UnityTls.unitytls_errorstate* errorState) { }
+	private IntPtr ReadCallback(byte* buffer, IntPtr bufferLen, UnityTls.unitytls_errorstate* errorState) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	private static UnityTls.unitytls_x509verify_result VerifyCallback(void* userData, UnityTls.unitytls_x509list_ref chain, UnityTls.unitytls_errorstate* errorState) { }
+
+	private UnityTls.unitytls_x509verify_result VerifyCallback(UnityTls.unitytls_x509list_ref chain, UnityTls.unitytls_errorstate* errorState) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	private static void CertificateCallback(void* userData, UnityTls.unitytls_tlsctx* ctx, byte* cn, IntPtr cnLen, UnityTls.unitytls_x509name* caList, IntPtr caListLen, UnityTls.unitytls_x509list_ref* chain, UnityTls.unitytls_key_ref* key, UnityTls.unitytls_errorstate* errorState) { }
+
+	private void CertificateCallback(UnityTls.unitytls_tlsctx* ctx, byte* cn, IntPtr cnLen, UnityTls.unitytls_x509name* caList, IntPtr caListLen, UnityTls.unitytls_x509list_ref* chain, UnityTls.unitytls_key_ref* key, UnityTls.unitytls_errorstate* errorState) { }
 
 }
 

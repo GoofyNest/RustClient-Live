@@ -11,7 +11,7 @@ internal sealed class CachedCodeEntry // TypeDefIndex: 2601
 	internal SharedReference _replref; 
 
 
-internal void .ctor(string key, Hashtable capnames, string[] capslist, RegexCode code, Hashtable caps, int capsize, ExclusiveReference runner, SharedReference repl) { }
+	internal void .ctor(string key, Hashtable capnames, string[] capslist, RegexCode code, Hashtable caps, int capsize, ExclusiveReference runner, SharedReference repl) { }
 
 }
 

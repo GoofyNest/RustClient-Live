@@ -5,9 +5,9 @@ internal abstract class SerializationSource // TypeDefIndex: 2059
 	private bool canBeGenerated; 
 
 
-public void .ctor(string namspace, Type[] includedTypes) { }
+	public void .ctor(string namspace, Type[] includedTypes) { }
 
-protected bool BaseEquals(SerializationSource other) { }
+	protected bool BaseEquals(SerializationSource other) { }
 
 }
 

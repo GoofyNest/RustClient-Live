@@ -5,43 +5,43 @@ public sealed class BarBeatFractionTimeSpan : ITimeSpan, IComparable, IComparabl
 	[CompilerGeneratedAttribute] 
 	private readonly double <Beats>k__BackingField; 
 
-public long Bars { get; }
-public double Beats { get; }
+	public long Bars { get; }
+	public double Beats { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(long bars, double beats) { }
-
-	[CompilerGeneratedAttribute] 
-public long get_Bars() { }
+	public void .ctor(long bars, double beats) { }
 
 	[CompilerGeneratedAttribute] 
-public double get_Beats() { }
+	public long get_Bars() { }
 
-public static bool op_Equality(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
+	[CompilerGeneratedAttribute] 
+	public double get_Beats() { }
 
-public static bool op_Inequality(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
+	public static bool op_Equality(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
 
-public static BarBeatFractionTimeSpan op_Subtraction(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
+	public static bool op_Inequality(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
 
-public static bool op_LessThan(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
+	public static BarBeatFractionTimeSpan op_Subtraction(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
 
-public override bool Equals(object obj) { }
+	public static bool op_LessThan(BarBeatFractionTimeSpan timeSpan1, BarBeatFractionTimeSpan timeSpan2) { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public override string ToString() { }
+	public override int GetHashCode() { }
 
-public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
+	public override string ToString() { }
 
-public ITimeSpan Clone() { }
+	public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
 
-public int CompareTo(object other) { }
+	public ITimeSpan Clone() { }
 
-public int CompareTo(BarBeatFractionTimeSpan other) { }
+	public int CompareTo(object other) { }
 
-public bool Equals(BarBeatFractionTimeSpan other) { }
+	public int CompareTo(BarBeatFractionTimeSpan other) { }
+
+	public bool Equals(BarBeatFractionTimeSpan other) { }
 
 }
 

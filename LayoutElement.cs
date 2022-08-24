@@ -17,65 +17,65 @@ public class LayoutElement : UIBehaviour, ILayoutElement, ILayoutIgnorer // Type
 	[SerializeField] 
 	private int m_LayoutPriority; 
 
-public virtual bool ignoreLayout { get; set; }
-public virtual float minWidth { get; set; }
-public virtual float minHeight { get; set; }
-public virtual float preferredWidth { get; set; }
-public virtual float preferredHeight { get; set; }
-public virtual float flexibleWidth { get; set; }
-public virtual float flexibleHeight { get; set; }
-public virtual int layoutPriority { get; set; }
+	public virtual bool ignoreLayout { get; set; }
+	public virtual float minWidth { get; set; }
+	public virtual float minHeight { get; set; }
+	public virtual float preferredWidth { get; set; }
+	public virtual float preferredHeight { get; set; }
+	public virtual float flexibleWidth { get; set; }
+	public virtual float flexibleHeight { get; set; }
+	public virtual int layoutPriority { get; set; }
 
 
-public virtual bool get_ignoreLayout() { }
+	public virtual bool get_ignoreLayout() { }
 
-public virtual void set_ignoreLayout(bool value) { }
+	public virtual void set_ignoreLayout(bool value) { }
 
-public virtual void CalculateLayoutInputHorizontal() { }
+	public virtual void CalculateLayoutInputHorizontal() { }
 
-public virtual void CalculateLayoutInputVertical() { }
+	public virtual void CalculateLayoutInputVertical() { }
 
-public virtual float get_minWidth() { }
+	public virtual float get_minWidth() { }
 
-public virtual void set_minWidth(float value) { }
+	public virtual void set_minWidth(float value) { }
 
-public virtual float get_minHeight() { }
+	public virtual float get_minHeight() { }
 
-public virtual void set_minHeight(float value) { }
+	public virtual void set_minHeight(float value) { }
 
-public virtual float get_preferredWidth() { }
+	public virtual float get_preferredWidth() { }
 
-public virtual void set_preferredWidth(float value) { }
+	public virtual void set_preferredWidth(float value) { }
 
-public virtual float get_preferredHeight() { }
+	public virtual float get_preferredHeight() { }
 
-public virtual void set_preferredHeight(float value) { }
+	public virtual void set_preferredHeight(float value) { }
 
-public virtual float get_flexibleWidth() { }
+	public virtual float get_flexibleWidth() { }
 
-public virtual void set_flexibleWidth(float value) { }
+	public virtual void set_flexibleWidth(float value) { }
 
-public virtual float get_flexibleHeight() { }
+	public virtual float get_flexibleHeight() { }
 
-public virtual void set_flexibleHeight(float value) { }
+	public virtual void set_flexibleHeight(float value) { }
 
-public virtual int get_layoutPriority() { }
+	public virtual int get_layoutPriority() { }
 
-public virtual void set_layoutPriority(int value) { }
+	public virtual void set_layoutPriority(int value) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnTransformParentChanged() { }
+	protected override void OnTransformParentChanged() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-protected override void OnDidApplyAnimationProperties() { }
+	protected override void OnDidApplyAnimationProperties() { }
 
-protected override void OnBeforeTransformParentChanged() { }
+	protected override void OnBeforeTransformParentChanged() { }
 
-protected void SetDirty() { }
+	protected void SetDirty() { }
 
 }
 

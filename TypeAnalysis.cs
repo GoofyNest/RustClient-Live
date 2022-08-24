@@ -8,7 +8,7 @@ internal sealed class TypeAnalysis // TypeDefIndex: 1591
 	internal readonly EventTags tags; 
 
 
-public void .ctor(Type dataType, EventDataAttribute eventAttrib, List<Type> recursionCheck) { }
+	public void .ctor(Type dataType, EventDataAttribute eventAttrib, List<Type> recursionCheck) { }
 
 }
 

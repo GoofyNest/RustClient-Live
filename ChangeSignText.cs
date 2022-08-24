@@ -14,46 +14,46 @@ public class ChangeSignText : UIDialog // TypeDefIndex: 10887
 	private static string savedContainerName; 
 	private static Vector3 savedContainerEuler; 
 
-public MeshPaintableSource[] currentSources { get; set; }
+	public MeshPaintableSource[] currentSources { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public MeshPaintableSource[] get_currentSources() { }
+	public MeshPaintableSource[] get_currentSources() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_currentSources(MeshPaintableSource[] value) { }
+	public void set_currentSources(MeshPaintableSource[] value) { }
 
-public void Setup(MeshPaintableSource[] sources) { }
+	public void Setup(MeshPaintableSource[] sources) { }
 
-public void LoadImageIntoFrame(int frame, byte[] imageData) { }
+	public void LoadImageIntoFrame(int frame, byte[] imageData) { }
 
-private void DisableLODs(GameObject go) { }
+	private void DisableLODs(GameObject go) { }
 
-public void UpdateSign() { }
+	public void UpdateSign() { }
 
-public void RegisterChange(BaseMeshPaintable paintable) { }
+	public void RegisterChange(BaseMeshPaintable paintable) { }
 
-public void ProcessUndo(BaseMeshPaintable paintable) { }
+	public void ProcessUndo(BaseMeshPaintable paintable) { }
 
-public void ProcessRedo(BaseMeshPaintable paintable) { }
+	public void ProcessRedo(BaseMeshPaintable paintable) { }
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public override void CloseDialog() { }
+	public override void CloseDialog() { }
 
-public void SelectFrame(int n) { }
+	public void SelectFrame(int n) { }
 
-public void ClearCurrentFrame() { }
+	public void ClearCurrentFrame() { }
 
-public void CopyPreviousFrame() { }
+	public void CopyPreviousFrame() { }
 
-public bool IsUndoAvailable(BaseMeshPaintable paintable) { }
+	public bool IsUndoAvailable(BaseMeshPaintable paintable) { }
 
-public bool IsRedoAvailable(BaseMeshPaintable paintable) { }
+	public bool IsRedoAvailable(BaseMeshPaintable paintable) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -64,28 +64,28 @@ private class ChangeSignText.UndoBuffer : IDisposable // TypeDefIndex: 10888
 	private int undoIndex; 
 	private int undoSteps; 
 
-private int CurrentSlot { get; }
-public bool IsUndoAvailable { get; }
-public bool IsRedoAvailable { get; }
+	private int CurrentSlot { get; }
+	public bool IsUndoAvailable { get; }
+	public bool IsRedoAvailable { get; }
 
 
-public void Initialise(Texture2D forTexture, int bufferLength) { }
+	public void Initialise(Texture2D forTexture, int bufferLength) { }
 
-public void RegisterChange(Texture2D forTexture) { }
+	public void RegisterChange(Texture2D forTexture) { }
 
-public void ProcessUndo(Texture2D targetTexture) { }
+	public void ProcessUndo(Texture2D targetTexture) { }
 
-public void ProcessRedo(Texture2D targetTexture) { }
+	public void ProcessRedo(Texture2D targetTexture) { }
 
-private int get_CurrentSlot() { }
+	private int get_CurrentSlot() { }
 
-public bool get_IsUndoAvailable() { }
+	public bool get_IsUndoAvailable() { }
 
-public bool get_IsRedoAvailable() { }
+	public bool get_IsRedoAvailable() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

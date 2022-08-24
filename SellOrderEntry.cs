@@ -24,42 +24,42 @@ public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 
 	private int itemInstanceInt; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void Setup(VendingMachine.SellOrder so, int newIndex, IVendingMachineInterface panel, int minMultiplier = 1) { }
+	public void Setup(VendingMachine.SellOrder so, int newIndex, IVendingMachineInterface panel, int minMultiplier = 1) { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void AmountTextChanged() { }
+	public void AmountTextChanged() { }
 
-public void SetAmount(int newAmount) { }
+	public void SetAmount(int newAmount) { }
 
-public int GetDesiredTransactionCount() { }
+	public int GetDesiredTransactionCount() { }
 
-public int CurrencyAvailable() { }
+	public int CurrencyAvailable() { }
 
-public int MaxTransactionsAffordable() { }
+	public int MaxTransactionsAffordable() { }
 
-public int MaxTransactionsAvailable() { }
+	public int MaxTransactionsAvailable() { }
 
-public int GetMaxTransactionCount() { }
+	public int GetMaxTransactionCount() { }
 
-public void UpdateIcons() { }
+	public void UpdateIcons() { }
 
-public void UpdateNotifications() { }
+	public void UpdateNotifications() { }
 
-public bool CanAfford() { }
+	public bool CanAfford() { }
 
-public void BuyClick() { }
+	public void BuyClick() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <CurrencyAvailable>b__30_0(Item x) { }
+	private bool <CurrencyAvailable>b__30_0(Item x) { }
 
 }
 
@@ -70,13 +70,13 @@ private sealed class SellOrderEntry.<>c // TypeDefIndex: 8735
 	public static Func<Item, int> <>9__30_2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CurrencyAvailable>b__30_1(Item x) { }
+	internal bool <CurrencyAvailable>b__30_1(Item x) { }
 
-internal int <CurrencyAvailable>b__30_2(Item x) { }
+	internal int <CurrencyAvailable>b__30_2(Item x) { }
 
 }
 

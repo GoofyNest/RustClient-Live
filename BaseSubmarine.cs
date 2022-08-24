@@ -122,7 +122,7 @@ public class BaseSubmarine : BaseVehicle, IEngineControllerUser, IEntity, IAirSu
 	public static float oxygenminutes; 
 	[CompilerGeneratedAttribute] 
 	private Vector3 <Velocity>k__BackingField; 
-public const BaseEntity.Flags Flag_Ammo = 16384;
+	public const BaseEntity.Flags Flag_Ammo = 16384;
 	private float _throttle; 
 	private float _rudder; 
 	private float _upDown; 
@@ -136,169 +136,169 @@ public const BaseEntity.Flags Flag_Ammo = 16384;
 	private EntityRef<StorageContainer> itemStorageInstance; 
 	private int waterLayerMask; 
 
-public override bool HasMenuOptions { get; }
-public float PropPercentVelocity { get; set; }
-public ItemModGiveOxygen.AirSupplyType AirType { get; }
-public VehicleEngineController.EngineState<BaseSubmarine> EngineState { get; }
-public Vector3 Velocity { get; set; }
-public bool LightsAreOn { get; }
-public bool HasAmmo { get; }
-public float ThrottleInput { get; set; }
-public float RudderInput { get; set; }
-public float UpDownInput { get; set; }
-public float Oxygen { get; set; }
-protected float PhysicalRudderAngle { get; }
-protected bool IsInWater { get; }
-protected bool IsSurfaced { get; }
+	public override bool HasMenuOptions { get; }
+	public float PropPercentVelocity { get; set; }
+	public ItemModGiveOxygen.AirSupplyType AirType { get; }
+	public VehicleEngineController.EngineState<BaseSubmarine> EngineState { get; }
+	public Vector3 Velocity { get; set; }
+	public bool LightsAreOn { get; }
+	public bool HasAmmo { get; }
+	public float ThrottleInput { get; set; }
+	public float RudderInput { get; set; }
+	public float UpDownInput { get; set; }
+	public float Oxygen { get; set; }
+	protected float PhysicalRudderAngle { get; }
+	protected bool IsInWater { get; }
+	protected bool IsSurfaced { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[CompilerGeneratedAttribute] 
-public float get_PropPercentVelocity() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_PropPercentVelocity(float value) { }
+	public float get_PropPercentVelocity() { }
 
-protected override void ClientInit(Entity info) { }
+	[CompilerGeneratedAttribute] 
+	private void set_PropPercentVelocity(float value) { }
 
-private void ClientFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	protected override void ClientInit(Entity info) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	private void ClientFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public override bool MountMenuVisible(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-private void StartClientTick() { }
+	public override bool MountMenuVisible(BasePlayer player) { }
 
-private void StopClientTick() { }
+	private void StartClientTick() { }
 
-protected void SubmarineClientTick() { }
+	private void StopClientTick() { }
 
-protected virtual bool UpdateInteriorVisuals(bool playerIsInside, float speed) { }
+	protected void SubmarineClientTick() { }
 
-protected virtual bool UpdateExteriorVisuals(bool playerIsInside, float speed) { }
+	protected virtual bool UpdateInteriorVisuals(bool playerIsInside, float speed) { }
 
-private void AmbientLoopBubbles(ParticleSystem particleSystem) { }
+	protected virtual bool UpdateExteriorVisuals(bool playerIsInside, float speed) { }
 
-private void InitialDiveBubbles(ParticleSystem particleSystem) { }
+	private void AmbientLoopBubbles(ParticleSystem particleSystem) { }
 
-protected virtual void TorpedoFired() { }
+	private void InitialDiveBubbles(ParticleSystem particleSystem) { }
+
+	protected virtual void TorpedoFired() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_FuelStorage(BasePlayer player) { }
+	public void Menu_FuelStorage(BasePlayer player) { }
 
-public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_TorpedoStorage(BasePlayer player) { }
-
-public bool Menu_TorpedoStorage_ShowIf(BasePlayer player) { }
+	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_ItemStorage(BasePlayer player) { }
+	public void Menu_TorpedoStorage(BasePlayer player) { }
 
-public bool Menu_ItemStorage_ShowIf(BasePlayer player) { }
+	public bool Menu_TorpedoStorage_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public virtual void Menu_Push(BasePlayer player) { }
+	public void Menu_ItemStorage(BasePlayer player) { }
+
+	public bool Menu_ItemStorage_ShowIf(BasePlayer player) { }
+
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public virtual void Menu_Push(BasePlayer player) { }
 
 	[BaseEntity.RPC_Client] 
-private void SubmarineUpdate(BaseEntity.RPCMessage msg) { }
+	private void SubmarineUpdate(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void EngineStartFailed(BaseEntity.RPCMessage msg) { }
+	private void EngineStartFailed(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void TorpedoFired(BaseEntity.RPCMessage msg) { }
+	private void TorpedoFired(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void TorpedoFireFailed(BaseEntity.RPCMessage msg) { }
+	private void TorpedoFireFailed(BaseEntity.RPCMessage msg) { }
 
-public ItemModGiveOxygen.AirSupplyType get_AirType() { }
+	public ItemModGiveOxygen.AirSupplyType get_AirType() { }
 
-public VehicleEngineController.EngineState<BaseSubmarine> get_EngineState() { }
+	public VehicleEngineController.EngineState<BaseSubmarine> get_EngineState() { }
 
 	[CompilerGeneratedAttribute] 
-public Vector3 get_Velocity() { }
+	public Vector3 get_Velocity() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Velocity(Vector3 value) { }
+	private void set_Velocity(Vector3 value) { }
 
-public bool get_LightsAreOn() { }
+	public bool get_LightsAreOn() { }
 
-public bool get_HasAmmo() { }
+	public bool get_HasAmmo() { }
 
-public float get_ThrottleInput() { }
+	public float get_ThrottleInput() { }
 
-protected void set_ThrottleInput(float value) { }
+	protected void set_ThrottleInput(float value) { }
 
-public float get_RudderInput() { }
+	public float get_RudderInput() { }
 
-protected void set_RudderInput(float value) { }
+	protected void set_RudderInput(float value) { }
 
-public float get_UpDownInput() { }
+	public float get_UpDownInput() { }
 
-protected void set_UpDownInput(float value) { }
+	protected void set_UpDownInput(float value) { }
 
-public float get_Oxygen() { }
+	public float get_Oxygen() { }
 
-protected void set_Oxygen(float value) { }
+	protected void set_Oxygen(float value) { }
 
-protected float get_PhysicalRudderAngle() { }
+	protected float get_PhysicalRudderAngle() { }
 
-protected bool get_IsInWater() { }
+	protected bool get_IsInWater() { }
 
-protected bool get_IsSurfaced() { }
+	protected bool get_IsSurfaced() { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public override float WaterFactorForPlayer(BasePlayer player) { }
+	public override float WaterFactorForPlayer(BasePlayer player) { }
 
-public override float AirFactor() { }
+	public override float AirFactor() { }
 
-public override bool BlocksWaterFor(BasePlayer player) { }
+	public override bool BlocksWaterFor(BasePlayer player) { }
 
-public float GetFuelAmount() { }
+	public float GetFuelAmount() { }
 
-public float GetSpeed() { }
+	public float GetSpeed() { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-public float GetAirTimeRemaining() { }
+	public float GetAirTimeRemaining() { }
 
-protected override bool CanPushNow(BasePlayer pusher) { }
+	protected override bool CanPushNow(BasePlayer pusher) { }
 
-private void UpdatePhysicalRudder(float turnInput, float deltaTime) { }
+	private void UpdatePhysicalRudder(float turnInput, float deltaTime) { }
 
-private bool CanMount(BasePlayer player) { }
+	private bool CanMount(BasePlayer player) { }
 
-private void UpdateWaterInfo() { }
+	private void UpdateWaterInfo() { }
 
-private float GetWaterSurfaceY() { }
+	private float GetWaterSurfaceY() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -308,7 +308,7 @@ public class BaseSubmarine.ParentTriggerInfo // TypeDefIndex: 8350
 	public Transform triggerWaterLevel; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

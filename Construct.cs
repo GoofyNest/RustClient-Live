@@ -5,9 +5,9 @@ public class Construct : ConsoleSystem // TypeDefIndex: 11891
 	public static float frameminutes; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

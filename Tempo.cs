@@ -4,23 +4,23 @@ public sealed class Tempo // TypeDefIndex: 7451
 	[CompilerGeneratedAttribute] 
 	private readonly long <MicrosecondsPerQuarterNote>k__BackingField; 
 
-public long MicrosecondsPerQuarterNote { get; }
+	public long MicrosecondsPerQuarterNote { get; }
 
 
-public void .ctor(long microsecondsPerQuarterNote) { }
+	public void .ctor(long microsecondsPerQuarterNote) { }
 
 	[CompilerGeneratedAttribute] 
-public long get_MicrosecondsPerQuarterNote() { }
+	public long get_MicrosecondsPerQuarterNote() { }
 
-public static bool op_Equality(Tempo tempo1, Tempo tempo2) { }
+	public static bool op_Equality(Tempo tempo1, Tempo tempo2) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

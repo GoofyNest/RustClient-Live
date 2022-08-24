@@ -6,25 +6,25 @@ public class PostProcessVolumeLOD : MonoBehaviour, ILOD, IClientComponent // Typ
 	private LODEnvironmentMode environmentMode; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private float GetDistance() { }
+	private float GetDistance() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class PostProcessLayer : MonoBehaviour // TypeDefIndex: 11734
 {
-private const float updateRate = 0,1;
+	private const float updateRate = 0,1;
 	private RenderTexture colorBuffer; 
 	private RenderTexture depthBuffer; 
 	private RenderTexture motionBuffer; 
@@ -92,188 +92,188 @@ private const float updateRate = 0,1;
 	private readonly List<PostProcessEffectRenderer> m_ActiveEffects; 
 	private readonly List<RenderTargetIdentifier> m_Targets; 
 
-public bool ScreenshotMode { get; set; }
-public uint ScreenWidth { get; }
-public uint ScreenHeight { get; }
-public uint ScaledScreenWidth { get; }
-public uint ScaledScreenHeight { get; }
-public Dictionary<PostProcessEvent, List<PostProcessLayer.SerializedBundleRef>> sortedBundles { get; set; }
-public bool haveBundlesBeenInited { get; set; }
+	public bool ScreenshotMode { get; set; }
+	public uint ScreenWidth { get; }
+	public uint ScreenHeight { get; }
+	public uint ScaledScreenWidth { get; }
+	public uint ScaledScreenHeight { get; }
+	public Dictionary<PostProcessEvent, List<PostProcessLayer.SerializedBundleRef>> sortedBundles { get; set; }
+	public bool haveBundlesBeenInited { get; set; }
 
 
-public bool get_ScreenshotMode() { }
+	public bool get_ScreenshotMode() { }
 
-public void set_ScreenshotMode(bool value) { }
+	public void set_ScreenshotMode(bool value) { }
 
-public uint get_ScreenWidth() { }
+	public uint get_ScreenWidth() { }
 
-public uint get_ScreenHeight() { }
+	public uint get_ScreenHeight() { }
 
-public uint get_ScaledScreenWidth() { }
+	public uint get_ScaledScreenWidth() { }
 
-public uint get_ScaledScreenHeight() { }
+	public uint get_ScaledScreenHeight() { }
 
-private void OnEnableRenderScale() { }
+	private void OnEnableRenderScale() { }
 
-private void OnDisableRenderScale() { }
+	private void OnDisableRenderScale() { }
 
-private void Update() { }
+	private void Update() { }
 
-private PostProcessLayer.ScalingMode GetDesiredScalingMode(NVSDK_NGX_PerfQuality_Value dlssMode) { }
+	private PostProcessLayer.ScalingMode GetDesiredScalingMode(NVSDK_NGX_PerfQuality_Value dlssMode) { }
 
-private bool NeedsRebuild(PostProcessLayer.ScalingMode desiredScalingMode, NVSDK_NGX_PerfQuality_Value dlssMode) { }
+	private bool NeedsRebuild(PostProcessLayer.ScalingMode desiredScalingMode, NVSDK_NGX_PerfQuality_Value dlssMode) { }
 
-public void SetMipMapBias(float bias) { }
+	public void SetMipMapBias(float bias) { }
 
-private float CalculateMipMapBias() { }
+	private float CalculateMipMapBias() { }
 
-private void BuildPostEffectsNew(RenderTextureFormat sourceFormat, PostProcessRenderContext context, RenderTargetIdentifier cameraTarget) { }
+	private void BuildPostEffectsNew(RenderTextureFormat sourceFormat, PostProcessRenderContext context, RenderTargetIdentifier cameraTarget) { }
 
-private void RebuildRenderTargets() { }
+	private void RebuildRenderTargets() { }
 
-private void FreeRenderTargets() { }
+	private void FreeRenderTargets() { }
 
-private void RebuildColorOutput() { }
+	private void RebuildColorOutput() { }
 
-private void FreeRenderColorOutput() { }
+	private void FreeRenderColorOutput() { }
 
-private bool StartDLSS() { }
+	private bool StartDLSS() { }
 
-private bool UpdateDLSSQualitySettings(NVSDK_NGX_PerfQuality_Value perfQuality) { }
+	private bool UpdateDLSSQualitySettings(NVSDK_NGX_PerfQuality_Value perfQuality) { }
 
-private void StopDLSS() { }
-
-	[CompilerGeneratedAttribute] 
-public Dictionary<PostProcessEvent, List<PostProcessLayer.SerializedBundleRef>> get_sortedBundles() { }
+	private void StopDLSS() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_sortedBundles(Dictionary<PostProcessEvent, List<PostProcessLayer.SerializedBundleRef>> value) { }
+	public Dictionary<PostProcessEvent, List<PostProcessLayer.SerializedBundleRef>> get_sortedBundles() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_haveBundlesBeenInited() { }
+	private void set_sortedBundles(Dictionary<PostProcessEvent, List<PostProcessLayer.SerializedBundleRef>> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_haveBundlesBeenInited(bool value) { }
+	public bool get_haveBundlesBeenInited() { }
 
-private void OnEnable() { }
+	[CompilerGeneratedAttribute] 
+	private void set_haveBundlesBeenInited(bool value) { }
 
-private void InitLegacy() { }
+	private void OnEnable() { }
+
+	private void InitLegacy() { }
 
 	[ImageEffectUsesCommandBuffer] 
-private void OnRenderImage(RenderTexture src, RenderTexture dst) { }
+	private void OnRenderImage(RenderTexture src, RenderTexture dst) { }
 
-public void Init(PostProcessResources resources) { }
+	public void Init(PostProcessResources resources) { }
 
-public void InitBundles() { }
+	public void InitBundles() { }
 
-private void UpdateBundleSortList(List<PostProcessLayer.SerializedBundleRef> sortedList, PostProcessEvent evt) { }
+	private void UpdateBundleSortList(List<PostProcessLayer.SerializedBundleRef> sortedList, PostProcessEvent evt) { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Reset() { }
+	private void Reset() { }
 
-private void OnPreCull() { }
+	private void OnPreCull() { }
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-private RenderTextureFormat GetIntermediateFormat() { }
+	private RenderTextureFormat GetIntermediateFormat() { }
 
-private static bool RequiresInitialBlit(Camera camera, PostProcessRenderContext context) { }
+	private static bool RequiresInitialBlit(Camera camera, PostProcessRenderContext context) { }
 
-private void UpdateSrcDstForOpaqueOnly(ref int src, ref int dst, PostProcessRenderContext context, RenderTargetIdentifier cameraTarget, int opaqueOnlyEffectsRemaining) { }
+	private void UpdateSrcDstForOpaqueOnly(ref int src, ref int dst, PostProcessRenderContext context, RenderTargetIdentifier cameraTarget, int opaqueOnlyEffectsRemaining) { }
 
-private void BuildCommandBuffers() { }
+	private void BuildCommandBuffers() { }
 
-private void BuildPostEffectsOld(RenderTextureFormat sourceFormat, PostProcessRenderContext context, RenderTargetIdentifier cameraTarget) { }
+	private void BuildPostEffectsOld(RenderTextureFormat sourceFormat, PostProcessRenderContext context, RenderTargetIdentifier cameraTarget) { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-public PostProcessBundle GetBundle<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessLayer.GetBundle<object>
-|-PostProcessLayer.GetBundle<AmbientOcclusion>
-|-PostProcessLayer.GetBundle<AutoExposure>
-|-PostProcessLayer.GetBundle<ScreenSpaceReflections>
-*/
+	public PostProcessBundle GetBundle<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessLayer.GetBundle<object>
+	|-PostProcessLayer.GetBundle<AmbientOcclusion>
+	|-PostProcessLayer.GetBundle<AutoExposure>
+	|-PostProcessLayer.GetBundle<ScreenSpaceReflections>
+	*/
 
-public PostProcessBundle GetBundle(Type settingsType) { }
+	public PostProcessBundle GetBundle(Type settingsType) { }
 
-public T GetSettings<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessLayer.GetSettings<object>
-*/
+	public T GetSettings<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessLayer.GetSettings<object>
+	*/
 
-public void BakeMSVOMap(CommandBuffer cmd, Camera camera, RenderTargetIdentifier destination, Nullable<RenderTargetIdentifier> depthMap, bool invert, bool isMSAA = False) { }
+	public void BakeMSVOMap(CommandBuffer cmd, Camera camera, RenderTargetIdentifier destination, Nullable<RenderTargetIdentifier> depthMap, bool invert, bool isMSAA = False) { }
 
-internal void OverrideSettings(List<PostProcessEffectSettings> baseSettings, float interpFactor) { }
+	internal void OverrideSettings(List<PostProcessEffectSettings> baseSettings, float interpFactor) { }
 
-private void SetLegacyCameraFlags(PostProcessRenderContext context) { }
+	private void SetLegacyCameraFlags(PostProcessRenderContext context) { }
 
-public void ResetHistory() { }
+	public void ResetHistory() { }
 
-public bool HasOpaqueOnlyEffects(PostProcessRenderContext context) { }
+	public bool HasOpaqueOnlyEffects(PostProcessRenderContext context) { }
 
-public bool HasActiveEffects(PostProcessEvent evt, PostProcessRenderContext context) { }
+	public bool HasActiveEffects(PostProcessEvent evt, PostProcessRenderContext context) { }
 
-private void SetupContext(PostProcessRenderContext context) { }
+	private void SetupContext(PostProcessRenderContext context) { }
 
-public void UpdateVolumeSystem(Camera cam, CommandBuffer cmd) { }
+	public void UpdateVolumeSystem(Camera cam, CommandBuffer cmd) { }
 
-public void RenderOpaqueOnly(PostProcessRenderContext context) { }
+	public void RenderOpaqueOnly(PostProcessRenderContext context) { }
 
-public void Render(PostProcessRenderContext context) { }
+	public void Render(PostProcessRenderContext context) { }
 
-private int RenderInjectionPoint(PostProcessEvent evt, PostProcessRenderContext context, string marker, int releaseTargetAfterUse = -1) { }
+	private int RenderInjectionPoint(PostProcessEvent evt, PostProcessRenderContext context, string marker, int releaseTargetAfterUse = -1) { }
 
-private void RenderList(List<PostProcessLayer.SerializedBundleRef> list, PostProcessRenderContext context, string marker) { }
+	private void RenderList(List<PostProcessLayer.SerializedBundleRef> list, PostProcessRenderContext context, string marker) { }
 
-private void ApplyFlip(PostProcessRenderContext context, MaterialPropertyBlock properties) { }
+	private void ApplyFlip(PostProcessRenderContext context, MaterialPropertyBlock properties) { }
 
-private void ApplyDefaultFlip(MaterialPropertyBlock properties) { }
+	private void ApplyDefaultFlip(MaterialPropertyBlock properties) { }
 
-private int RenderBuiltins(PostProcessRenderContext context, bool isFinalPass, int releaseTargetAfterUse = -1, int eye = -1) { }
+	private int RenderBuiltins(PostProcessRenderContext context, bool isFinalPass, int releaseTargetAfterUse = -1, int eye = -1) { }
 
-private void RenderFinalPass(PostProcessRenderContext context, int releaseTargetAfterUse = -1, int eye = -1) { }
+	private void RenderFinalPass(PostProcessRenderContext context, int releaseTargetAfterUse = -1, int eye = -1) { }
 
-private int RenderEffect<T>(PostProcessRenderContext context, bool useTempTarget = False) { }
-/* GenericInstMethod :
-|
-|-PostProcessLayer.RenderEffect<DepthOfFieldEffect>
-|-PostProcessLayer.RenderEffect<object>
-|-PostProcessLayer.RenderEffect<AutoExposure>
-|-PostProcessLayer.RenderEffect<Bloom>
-|-PostProcessLayer.RenderEffect<ChromaticAberration>
-|-PostProcessLayer.RenderEffect<ColorGrading>
-|-PostProcessLayer.RenderEffect<Grain>
-|-PostProcessLayer.RenderEffect<LensDistortion>
-|-PostProcessLayer.RenderEffect<MotionBlur>
-|-PostProcessLayer.RenderEffect<Vignette>
-*/
+	private int RenderEffect<T>(PostProcessRenderContext context, bool useTempTarget = False) { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessLayer.RenderEffect<DepthOfFieldEffect>
+	|-PostProcessLayer.RenderEffect<object>
+	|-PostProcessLayer.RenderEffect<AutoExposure>
+	|-PostProcessLayer.RenderEffect<Bloom>
+	|-PostProcessLayer.RenderEffect<ChromaticAberration>
+	|-PostProcessLayer.RenderEffect<ColorGrading>
+	|-PostProcessLayer.RenderEffect<Grain>
+	|-PostProcessLayer.RenderEffect<LensDistortion>
+	|-PostProcessLayer.RenderEffect<MotionBlur>
+	|-PostProcessLayer.RenderEffect<Vignette>
+	*/
 
-private bool ShouldGenerateLogHistogram(PostProcessRenderContext context) { }
+	private bool ShouldGenerateLogHistogram(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum PostProcessLayer.ScalingMode // TypeDefIndex: 11735
 {
 	public int value__; 
-public const PostProcessLayer.ScalingMode NATIVE = 0;
-public const PostProcessLayer.ScalingMode BILINEAR = 1;
-public const PostProcessLayer.ScalingMode DLSS = 2;
+	public const PostProcessLayer.ScalingMode NATIVE = 0;
+	public const PostProcessLayer.ScalingMode BILINEAR = 1;
+	public const PostProcessLayer.ScalingMode DLSS = 2;
 
 }
 
 public enum PostProcessLayer.Antialiasing // TypeDefIndex: 11736
 {
 	public int value__; 
-public const PostProcessLayer.Antialiasing None = 0;
-public const PostProcessLayer.Antialiasing FastApproximateAntialiasing = 1;
-public const PostProcessLayer.Antialiasing SubpixelMorphologicalAntialiasing = 2;
-public const PostProcessLayer.Antialiasing TemporalAntialiasing = 3;
+	public const PostProcessLayer.Antialiasing None = 0;
+	public const PostProcessLayer.Antialiasing FastApproximateAntialiasing = 1;
+	public const PostProcessLayer.Antialiasing SubpixelMorphologicalAntialiasing = 2;
+	public const PostProcessLayer.Antialiasing TemporalAntialiasing = 3;
 
 }
 
@@ -283,7 +283,7 @@ public sealed class PostProcessLayer.SerializedBundleRef // TypeDefIndex: 11737
 	public PostProcessBundle bundle; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -300,25 +300,25 @@ private sealed class PostProcessLayer.<>c // TypeDefIndex: 11738
 	public static Func<KeyValuePair<Type, PostProcessBundle>, PostProcessBundle> <>9__97_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnEnableRenderScale>b__31_0(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_0(Shader x) { }
 
-internal bool <OnEnableRenderScale>b__31_1(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_1(Shader x) { }
 
-internal bool <OnEnableRenderScale>b__31_2(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_2(Shader x) { }
 
-internal bool <OnEnableRenderScale>b__31_3(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_3(Shader x) { }
 
-internal bool <OnEnableRenderScale>b__31_4(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_4(Shader x) { }
 
-internal bool <OnEnableRenderScale>b__31_5(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_5(Shader x) { }
 
-internal bool <OnEnableRenderScale>b__31_6(Shader x) { }
+	internal bool <OnEnableRenderScale>b__31_6(Shader x) { }
 
-internal PostProcessBundle <UpdateBundleSortList>b__97_1(KeyValuePair<Type, PostProcessBundle> kvp) { }
+	internal PostProcessBundle <UpdateBundleSortList>b__97_1(KeyValuePair<Type, PostProcessBundle> kvp) { }
 
 }
 
@@ -328,11 +328,11 @@ private sealed class PostProcessLayer.<>c__DisplayClass97_0 // TypeDefIndex: 117
 	public List<PostProcessBundle> effects; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <UpdateBundleSortList>b__0(KeyValuePair<Type, PostProcessBundle> kvp) { }
+	internal bool <UpdateBundleSortList>b__0(KeyValuePair<Type, PostProcessBundle> kvp) { }
 
-internal bool <UpdateBundleSortList>b__2(PostProcessLayer.SerializedBundleRef x) { }
+	internal bool <UpdateBundleSortList>b__2(PostProcessLayer.SerializedBundleRef x) { }
 
 }
 
@@ -341,9 +341,9 @@ private sealed class PostProcessLayer.<>c__DisplayClass97_1 // TypeDefIndex: 117
 	public string searchStr; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <UpdateBundleSortList>b__3(PostProcessBundle b) { }
+	internal bool <UpdateBundleSortList>b__3(PostProcessBundle b) { }
 
 }
 
@@ -352,9 +352,9 @@ private sealed class PostProcessLayer.<>c__DisplayClass97_2 // TypeDefIndex: 117
 	public string typeName; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <UpdateBundleSortList>b__4(PostProcessLayer.SerializedBundleRef b) { }
+	internal bool <UpdateBundleSortList>b__4(PostProcessLayer.SerializedBundleRef b) { }
 
 }
 
@@ -363,9 +363,9 @@ private sealed class PostProcessLayer.<>c__DisplayClass97_3 // TypeDefIndex: 117
 	public string typeName; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <UpdateBundleSortList>b__5(PostProcessBundle b) { }
+	internal bool <UpdateBundleSortList>b__5(PostProcessBundle b) { }
 
 }
 
@@ -422,180 +422,180 @@ public class PostProcessRenderContext // TypeDefIndex: 11743
 	internal bool physicalCamera; 
 	private RenderTextureDescriptor m_sourceDescriptor; 
 
-public Camera camera { get; set; }
-public CommandBuffer command { get; set; }
-public RenderTargetIdentifier source { get; set; }
-public RenderTargetIdentifier destination { get; set; }
-public RenderTextureFormat sourceFormat { get; set; }
-public bool flip { get; set; }
-public PostProcessResources resources { get; set; }
-public PropertySheetFactory propertySheets { get; set; }
-public Dictionary<string, object> userData { get; set; }
-public PostProcessDebugLayer debugLayer { get; set; }
-public int width { get; set; }
-public int height { get; set; }
-public bool stereoActive { get; set; }
-public int xrActiveEye { get; set; }
-public int numberOfEyes { get; set; }
-public PostProcessRenderContext.StereoRenderingMode stereoRenderingMode { get; set; }
-public int screenWidth { get; set; }
-public int screenHeight { get; set; }
-public bool isSceneView { get; set; }
-public PostProcessLayer.Antialiasing antialiasing { get; set; }
-public TemporalAntialiasing temporalAntialiasing { get; set; }
+	public Camera camera { get; set; }
+	public CommandBuffer command { get; set; }
+	public RenderTargetIdentifier source { get; set; }
+	public RenderTargetIdentifier destination { get; set; }
+	public RenderTextureFormat sourceFormat { get; set; }
+	public bool flip { get; set; }
+	public PostProcessResources resources { get; set; }
+	public PropertySheetFactory propertySheets { get; set; }
+	public Dictionary<string, object> userData { get; set; }
+	public PostProcessDebugLayer debugLayer { get; set; }
+	public int width { get; set; }
+	public int height { get; set; }
+	public bool stereoActive { get; set; }
+	public int xrActiveEye { get; set; }
+	public int numberOfEyes { get; set; }
+	public PostProcessRenderContext.StereoRenderingMode stereoRenderingMode { get; set; }
+	public int screenWidth { get; set; }
+	public int screenHeight { get; set; }
+	public bool isSceneView { get; set; }
+	public PostProcessLayer.Antialiasing antialiasing { get; set; }
+	public TemporalAntialiasing temporalAntialiasing { get; set; }
 
 
-public void Resize(int width, int height, bool dlssEnabled) { }
+	public void Resize(int width, int height, bool dlssEnabled) { }
 
-public Camera get_camera() { }
+	public Camera get_camera() { }
 
-public void set_camera(Camera value) { }
-
-	[CompilerGeneratedAttribute] 
-public CommandBuffer get_command() { }
+	public void set_camera(Camera value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_command(CommandBuffer value) { }
+	public CommandBuffer get_command() { }
 
 	[CompilerGeneratedAttribute] 
-public RenderTargetIdentifier get_source() { }
+	public void set_command(CommandBuffer value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_source(RenderTargetIdentifier value) { }
+	public RenderTargetIdentifier get_source() { }
 
 	[CompilerGeneratedAttribute] 
-public RenderTargetIdentifier get_destination() { }
+	public void set_source(RenderTargetIdentifier value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_destination(RenderTargetIdentifier value) { }
+	public RenderTargetIdentifier get_destination() { }
 
 	[CompilerGeneratedAttribute] 
-public RenderTextureFormat get_sourceFormat() { }
+	public void set_destination(RenderTargetIdentifier value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_sourceFormat(RenderTextureFormat value) { }
+	public RenderTextureFormat get_sourceFormat() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_flip() { }
+	public void set_sourceFormat(RenderTextureFormat value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_flip(bool value) { }
+	public bool get_flip() { }
 
 	[CompilerGeneratedAttribute] 
-public PostProcessResources get_resources() { }
+	public void set_flip(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_resources(PostProcessResources value) { }
+	public PostProcessResources get_resources() { }
 
 	[CompilerGeneratedAttribute] 
-public PropertySheetFactory get_propertySheets() { }
+	internal void set_resources(PostProcessResources value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_propertySheets(PropertySheetFactory value) { }
+	public PropertySheetFactory get_propertySheets() { }
 
 	[CompilerGeneratedAttribute] 
-public Dictionary<string, object> get_userData() { }
+	internal void set_propertySheets(PropertySheetFactory value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_userData(Dictionary<string, object> value) { }
+	public Dictionary<string, object> get_userData() { }
 
 	[CompilerGeneratedAttribute] 
-public PostProcessDebugLayer get_debugLayer() { }
+	private void set_userData(Dictionary<string, object> value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_debugLayer(PostProcessDebugLayer value) { }
+	public PostProcessDebugLayer get_debugLayer() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_width() { }
+	internal void set_debugLayer(PostProcessDebugLayer value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_width(int value) { }
+	public int get_width() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_height() { }
+	public void set_width(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_height(int value) { }
+	public int get_height() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_stereoActive() { }
+	public void set_height(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_stereoActive(bool value) { }
+	public bool get_stereoActive() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_xrActiveEye() { }
+	private void set_stereoActive(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_xrActiveEye(int value) { }
+	public int get_xrActiveEye() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_numberOfEyes() { }
+	private void set_xrActiveEye(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_numberOfEyes(int value) { }
+	public int get_numberOfEyes() { }
 
 	[CompilerGeneratedAttribute] 
-public PostProcessRenderContext.StereoRenderingMode get_stereoRenderingMode() { }
+	private void set_numberOfEyes(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_stereoRenderingMode(PostProcessRenderContext.StereoRenderingMode value) { }
+	public PostProcessRenderContext.StereoRenderingMode get_stereoRenderingMode() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_screenWidth() { }
+	private void set_stereoRenderingMode(PostProcessRenderContext.StereoRenderingMode value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_screenWidth(int value) { }
+	public int get_screenWidth() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_screenHeight() { }
+	public void set_screenWidth(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_screenHeight(int value) { }
+	public int get_screenHeight() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_isSceneView() { }
+	public void set_screenHeight(int value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_isSceneView(bool value) { }
+	public bool get_isSceneView() { }
 
 	[CompilerGeneratedAttribute] 
-public PostProcessLayer.Antialiasing get_antialiasing() { }
+	internal void set_isSceneView(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_antialiasing(PostProcessLayer.Antialiasing value) { }
+	public PostProcessLayer.Antialiasing get_antialiasing() { }
 
 	[CompilerGeneratedAttribute] 
-public TemporalAntialiasing get_temporalAntialiasing() { }
+	internal void set_antialiasing(PostProcessLayer.Antialiasing value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_temporalAntialiasing(TemporalAntialiasing value) { }
+	public TemporalAntialiasing get_temporalAntialiasing() { }
 
-public void Reset() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_temporalAntialiasing(TemporalAntialiasing value) { }
 
-public bool IsTemporalAntialiasingActive() { }
+	public void Reset() { }
 
-public bool IsDebugOverlayEnabled(DebugOverlay overlay) { }
+	public bool IsTemporalAntialiasingActive() { }
 
-public void PushDebugOverlay(CommandBuffer cmd, RenderTargetIdentifier source, PropertySheet sheet, int pass) { }
+	public bool IsDebugOverlayEnabled(DebugOverlay overlay) { }
 
-private RenderTextureDescriptor GetDescriptor(int depthBufferBits = 0, RenderTextureFormat colorFormat = 7, RenderTextureReadWrite readWrite = 0) { }
+	public void PushDebugOverlay(CommandBuffer cmd, RenderTargetIdentifier source, PropertySheet sheet, int pass) { }
 
-public void GetScreenSpaceTemporaryRT(CommandBuffer cmd, int nameID, int depthBufferBits = 0, RenderTextureFormat colorFormat = 7, RenderTextureReadWrite readWrite = 0, FilterMode filter = 1, int widthOverride = 0, int heightOverride = 0) { }
+	private RenderTextureDescriptor GetDescriptor(int depthBufferBits = 0, RenderTextureFormat colorFormat = 7, RenderTextureReadWrite readWrite = 0) { }
 
-public RenderTexture GetScreenSpaceTemporaryRT(int depthBufferBits = 0, RenderTextureFormat colorFormat = 7, RenderTextureReadWrite readWrite = 0, int widthOverride = 0, int heightOverride = 0) { }
+	public void GetScreenSpaceTemporaryRT(CommandBuffer cmd, int nameID, int depthBufferBits = 0, RenderTextureFormat colorFormat = 7, RenderTextureReadWrite readWrite = 0, FilterMode filter = 1, int widthOverride = 0, int heightOverride = 0) { }
 
-public void .ctor() { }
+	public RenderTexture GetScreenSpaceTemporaryRT(int depthBufferBits = 0, RenderTextureFormat colorFormat = 7, RenderTextureReadWrite readWrite = 0, int widthOverride = 0, int heightOverride = 0) { }
+
+	public void .ctor() { }
 
 }
 
 public enum PostProcessRenderContext.StereoRenderingMode // TypeDefIndex: 11744
 {
 	public int value__; 
-public const PostProcessRenderContext.StereoRenderingMode MultiPass = 0;
-public const PostProcessRenderContext.StereoRenderingMode SinglePass = 1;
-public const PostProcessRenderContext.StereoRenderingMode SinglePassInstanced = 2;
-public const PostProcessRenderContext.StereoRenderingMode SinglePassMultiview = 3;
+	public const PostProcessRenderContext.StereoRenderingMode MultiPass = 0;
+	public const PostProcessRenderContext.StereoRenderingMode SinglePass = 1;
+	public const PostProcessRenderContext.StereoRenderingMode SinglePassInstanced = 2;
+	public const PostProcessRenderContext.StereoRenderingMode SinglePassMultiview = 3;
 
 }
 
@@ -608,9 +608,9 @@ public sealed class PostProcessAttribute : Attribute // TypeDefIndex: 11749
 	internal readonly bool builtinEffect; 
 
 
-public void .ctor(Type renderer, PostProcessEvent eventType, string menuItem, bool allowInSceneView = True) { }
+	public void .ctor(Type renderer, PostProcessEvent eventType, string menuItem, bool allowInSceneView = True) { }
 
-internal void .ctor(Type renderer, string menuItem, bool allowInSceneView = True) { }
+	internal void .ctor(Type renderer, string menuItem, bool allowInSceneView = True) { }
 
 }
 
@@ -622,44 +622,44 @@ public sealed class PostProcessBundle // TypeDefIndex: 11832
 	private PostProcessEffectSettings <settings>k__BackingField; 
 	private PostProcessEffectRenderer m_Renderer; 
 
-public PostProcessAttribute attribute { get; set; }
-public PostProcessEffectSettings settings { get; set; }
-internal PostProcessEffectRenderer renderer { get; }
+	public PostProcessAttribute attribute { get; set; }
+	public PostProcessEffectSettings settings { get; set; }
+	internal PostProcessEffectRenderer renderer { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public PostProcessAttribute get_attribute() { }
+	public PostProcessAttribute get_attribute() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_attribute(PostProcessAttribute value) { }
+	private void set_attribute(PostProcessAttribute value) { }
 
 	[CompilerGeneratedAttribute] 
-public PostProcessEffectSettings get_settings() { }
+	public PostProcessEffectSettings get_settings() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_settings(PostProcessEffectSettings value) { }
+	private void set_settings(PostProcessEffectSettings value) { }
 
-internal PostProcessEffectRenderer get_renderer() { }
+	internal PostProcessEffectRenderer get_renderer() { }
 
-internal void .ctor(PostProcessEffectSettings settings) { }
+	internal void .ctor(PostProcessEffectSettings settings) { }
 
-internal void Release() { }
+	internal void Release() { }
 
-internal void ResetHistory() { }
+	internal void ResetHistory() { }
 
-internal T CastSettings<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessBundle.CastSettings<object>
-|-PostProcessBundle.CastSettings<AmbientOcclusion>
-*/
+	internal T CastSettings<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessBundle.CastSettings<object>
+	|-PostProcessBundle.CastSettings<AmbientOcclusion>
+	*/
 
-internal T CastRenderer<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessBundle.CastRenderer<object>
-|-PostProcessBundle.CastRenderer<AmbientOcclusionRenderer>
-*/
+	internal T CastRenderer<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessBundle.CastRenderer<object>
+	|-PostProcessBundle.CastRenderer<AmbientOcclusionRenderer>
+	*/
 
 }
 
@@ -676,23 +676,23 @@ public sealed class PostProcessDebug : MonoBehaviour // TypeDefIndex: 11833
 	private CommandBuffer m_CmdAfterEverything; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void Reset() { }
+	private void Reset() { }
 
-private void UpdateStates() { }
+	private void UpdateStates() { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-private void OnGUI() { }
+	private void OnGUI() { }
 
-private void DrawMonitor(ref Rect rect, Monitor monitor, bool enabled) { }
+	private void DrawMonitor(ref Rect rect, Monitor monitor, bool enabled) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -713,52 +713,52 @@ public sealed class PostProcessDebugLayer // TypeDefIndex: 11836
 	private DebugOverlay <debugOverlay>k__BackingField; 
 	public PostProcessDebugLayer.OverlaySettings overlaySettings; 
 
-public RenderTexture debugOverlayTarget { get; set; }
-public bool debugOverlayActive { get; set; }
-public DebugOverlay debugOverlay { get; set; }
+	public RenderTexture debugOverlayTarget { get; set; }
+	public bool debugOverlayActive { get; set; }
+	public DebugOverlay debugOverlay { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public RenderTexture get_debugOverlayTarget() { }
+	public RenderTexture get_debugOverlayTarget() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_debugOverlayTarget(RenderTexture value) { }
+	private void set_debugOverlayTarget(RenderTexture value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_debugOverlayActive() { }
+	public bool get_debugOverlayActive() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_debugOverlayActive(bool value) { }
+	private void set_debugOverlayActive(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public DebugOverlay get_debugOverlay() { }
+	public DebugOverlay get_debugOverlay() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_debugOverlay(DebugOverlay value) { }
+	private void set_debugOverlay(DebugOverlay value) { }
 
-internal void OnEnable() { }
+	internal void OnEnable() { }
 
-internal void OnDisable() { }
+	internal void OnDisable() { }
 
-private void DestroyDebugOverlayTarget() { }
+	private void DestroyDebugOverlayTarget() { }
 
-public void RequestMonitorPass(MonitorType monitor) { }
+	public void RequestMonitorPass(MonitorType monitor) { }
 
-public void RequestDebugOverlay(DebugOverlay mode) { }
+	public void RequestDebugOverlay(DebugOverlay mode) { }
 
-internal void SetFrameSize(int width, int height) { }
+	internal void SetFrameSize(int width, int height) { }
 
-public void PushDebugOverlay(CommandBuffer cmd, RenderTargetIdentifier source, PropertySheet sheet, int pass) { }
+	public void PushDebugOverlay(CommandBuffer cmd, RenderTargetIdentifier source, PropertySheet sheet, int pass) { }
 
-internal DepthTextureMode GetCameraFlags() { }
+	internal DepthTextureMode GetCameraFlags() { }
 
-internal void RenderMonitors(PostProcessRenderContext context) { }
+	internal void RenderMonitors(PostProcessRenderContext context) { }
 
-internal void RenderSpecialOverlays(PostProcessRenderContext context) { }
+	internal void RenderSpecialOverlays(PostProcessRenderContext context) { }
 
-internal void EndFrame() { }
+	internal void EndFrame() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -774,7 +774,7 @@ public class PostProcessDebugLayer.OverlaySettings // TypeDefIndex: 11837
 	public float colorBlindnessStrength; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -783,19 +783,19 @@ public abstract class PostProcessEffectRenderer // TypeDefIndex: 11838
 	protected bool m_ResetHistory; 
 
 
-public virtual void Init() { }
+	public virtual void Init() { }
 
-public virtual DepthTextureMode GetCameraFlags() { }
+	public virtual DepthTextureMode GetCameraFlags() { }
 
-public virtual void ResetHistory() { }
+	public virtual void ResetHistory() { }
 
-public virtual void Release() { }
+	public virtual void Release() { }
 
-public abstract void Render(PostProcessRenderContext context);
+	public abstract void Render(PostProcessRenderContext context);
 
-internal abstract void SetSettings(PostProcessEffectSettings settings);
+	internal abstract void SetSettings(PostProcessEffectSettings settings);
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
@@ -804,103 +804,103 @@ public abstract class PostProcessEffectRenderer<T> : PostProcessEffectRenderer /
 	[CompilerGeneratedAttribute] 
 	private T <settings>k__BackingField; 
 
-public T settings { get; set; }
+	public T settings { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public T get_settings() { }
-/* GenericInstMethod :
-|
-|-PostProcessEffectRenderer<BlurOptimized>.get_settings
-|-PostProcessEffectRenderer<DepthOfFieldEffect>.get_settings
-|-PostProcessEffectRenderer<DoubleVision>.get_settings
-|-PostProcessEffectRenderer<FlashbangEffect>.get_settings
-|-PostProcessEffectRenderer<Frost>.get_settings
-|-PostProcessEffectRenderer<GodRays>.get_settings
-|-PostProcessEffectRenderer<GreyScale>.get_settings
-|-PostProcessEffectRenderer<LensDirtinessEffect>.get_settings
-|-PostProcessEffectRenderer<PhotoFilter>.get_settings
-|-PostProcessEffectRenderer<ScreenOverlay>.get_settings
-|-PostProcessEffectRenderer<SharpenAndVignette>.get_settings
-|-PostProcessEffectRenderer<object>.get_settings
-|-PostProcessEffectRenderer<AmbientOcclusion>.get_settings
-|-PostProcessEffectRenderer<AutoExposure>.get_settings
-|-PostProcessEffectRenderer<Bloom>.get_settings
-|-PostProcessEffectRenderer<ChromaticAberration>.get_settings
-|-PostProcessEffectRenderer<ColorGrading>.get_settings
-|-PostProcessEffectRenderer<DepthOfField>.get_settings
-|-PostProcessEffectRenderer<Grain>.get_settings
-|-PostProcessEffectRenderer<LensDistortion>.get_settings
-|-PostProcessEffectRenderer<MotionBlur>.get_settings
-|-PostProcessEffectRenderer<ScreenSpaceReflections>.get_settings
-|-PostProcessEffectRenderer<Vignette>.get_settings
-|-PostProcessEffectRenderer<Wiggle>.get_settings
-*/
+	public T get_settings() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessEffectRenderer<BlurOptimized>.get_settings
+	|-PostProcessEffectRenderer<DepthOfFieldEffect>.get_settings
+	|-PostProcessEffectRenderer<DoubleVision>.get_settings
+	|-PostProcessEffectRenderer<FlashbangEffect>.get_settings
+	|-PostProcessEffectRenderer<Frost>.get_settings
+	|-PostProcessEffectRenderer<GodRays>.get_settings
+	|-PostProcessEffectRenderer<GreyScale>.get_settings
+	|-PostProcessEffectRenderer<LensDirtinessEffect>.get_settings
+	|-PostProcessEffectRenderer<PhotoFilter>.get_settings
+	|-PostProcessEffectRenderer<ScreenOverlay>.get_settings
+	|-PostProcessEffectRenderer<SharpenAndVignette>.get_settings
+	|-PostProcessEffectRenderer<object>.get_settings
+	|-PostProcessEffectRenderer<AmbientOcclusion>.get_settings
+	|-PostProcessEffectRenderer<AutoExposure>.get_settings
+	|-PostProcessEffectRenderer<Bloom>.get_settings
+	|-PostProcessEffectRenderer<ChromaticAberration>.get_settings
+	|-PostProcessEffectRenderer<ColorGrading>.get_settings
+	|-PostProcessEffectRenderer<DepthOfField>.get_settings
+	|-PostProcessEffectRenderer<Grain>.get_settings
+	|-PostProcessEffectRenderer<LensDistortion>.get_settings
+	|-PostProcessEffectRenderer<MotionBlur>.get_settings
+	|-PostProcessEffectRenderer<ScreenSpaceReflections>.get_settings
+	|-PostProcessEffectRenderer<Vignette>.get_settings
+	|-PostProcessEffectRenderer<Wiggle>.get_settings
+	*/
 
 	[CompilerGeneratedAttribute] 
-internal void set_settings(T value) { }
-/* GenericInstMethod :
-|
-|-PostProcessEffectRenderer<object>.set_settings
-*/
+	internal void set_settings(T value) { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessEffectRenderer<object>.set_settings
+	*/
 
-internal override void SetSettings(PostProcessEffectSettings settings) { }
-/* GenericInstMethod :
-|
-|-PostProcessEffectRenderer<BlurOptimized>.SetSettings
-|-PostProcessEffectRenderer<DepthOfFieldEffect>.SetSettings
-|-PostProcessEffectRenderer<DoubleVision>.SetSettings
-|-PostProcessEffectRenderer<FlashbangEffect>.SetSettings
-|-PostProcessEffectRenderer<Frost>.SetSettings
-|-PostProcessEffectRenderer<GodRays>.SetSettings
-|-PostProcessEffectRenderer<GreyScale>.SetSettings
-|-PostProcessEffectRenderer<LensDirtinessEffect>.SetSettings
-|-PostProcessEffectRenderer<PhotoFilter>.SetSettings
-|-PostProcessEffectRenderer<ScreenOverlay>.SetSettings
-|-PostProcessEffectRenderer<SharpenAndVignette>.SetSettings
-|-PostProcessEffectRenderer<object>.SetSettings
-|-PostProcessEffectRenderer<AmbientOcclusion>.SetSettings
-|-PostProcessEffectRenderer<AutoExposure>.SetSettings
-|-PostProcessEffectRenderer<Bloom>.SetSettings
-|-PostProcessEffectRenderer<ChromaticAberration>.SetSettings
-|-PostProcessEffectRenderer<ColorGrading>.SetSettings
-|-PostProcessEffectRenderer<DepthOfField>.SetSettings
-|-PostProcessEffectRenderer<Grain>.SetSettings
-|-PostProcessEffectRenderer<LensDistortion>.SetSettings
-|-PostProcessEffectRenderer<MotionBlur>.SetSettings
-|-PostProcessEffectRenderer<ScreenSpaceReflections>.SetSettings
-|-PostProcessEffectRenderer<Vignette>.SetSettings
-|-PostProcessEffectRenderer<Wiggle>.SetSettings
-*/
+	internal override void SetSettings(PostProcessEffectSettings settings) { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessEffectRenderer<BlurOptimized>.SetSettings
+	|-PostProcessEffectRenderer<DepthOfFieldEffect>.SetSettings
+	|-PostProcessEffectRenderer<DoubleVision>.SetSettings
+	|-PostProcessEffectRenderer<FlashbangEffect>.SetSettings
+	|-PostProcessEffectRenderer<Frost>.SetSettings
+	|-PostProcessEffectRenderer<GodRays>.SetSettings
+	|-PostProcessEffectRenderer<GreyScale>.SetSettings
+	|-PostProcessEffectRenderer<LensDirtinessEffect>.SetSettings
+	|-PostProcessEffectRenderer<PhotoFilter>.SetSettings
+	|-PostProcessEffectRenderer<ScreenOverlay>.SetSettings
+	|-PostProcessEffectRenderer<SharpenAndVignette>.SetSettings
+	|-PostProcessEffectRenderer<object>.SetSettings
+	|-PostProcessEffectRenderer<AmbientOcclusion>.SetSettings
+	|-PostProcessEffectRenderer<AutoExposure>.SetSettings
+	|-PostProcessEffectRenderer<Bloom>.SetSettings
+	|-PostProcessEffectRenderer<ChromaticAberration>.SetSettings
+	|-PostProcessEffectRenderer<ColorGrading>.SetSettings
+	|-PostProcessEffectRenderer<DepthOfField>.SetSettings
+	|-PostProcessEffectRenderer<Grain>.SetSettings
+	|-PostProcessEffectRenderer<LensDistortion>.SetSettings
+	|-PostProcessEffectRenderer<MotionBlur>.SetSettings
+	|-PostProcessEffectRenderer<ScreenSpaceReflections>.SetSettings
+	|-PostProcessEffectRenderer<Vignette>.SetSettings
+	|-PostProcessEffectRenderer<Wiggle>.SetSettings
+	*/
 
-protected void .ctor() { }
-/* GenericInstMethod :
-|
-|-PostProcessEffectRenderer<BlurOptimized>..ctor
-|-PostProcessEffectRenderer<DepthOfFieldEffect>..ctor
-|-PostProcessEffectRenderer<DoubleVision>..ctor
-|-PostProcessEffectRenderer<FlashbangEffect>..ctor
-|-PostProcessEffectRenderer<Frost>..ctor
-|-PostProcessEffectRenderer<GodRays>..ctor
-|-PostProcessEffectRenderer<GreyScale>..ctor
-|-PostProcessEffectRenderer<LensDirtinessEffect>..ctor
-|-PostProcessEffectRenderer<PhotoFilter>..ctor
-|-PostProcessEffectRenderer<ScreenOverlay>..ctor
-|-PostProcessEffectRenderer<SharpenAndVignette>..ctor
-|-PostProcessEffectRenderer<object>..ctor
-|-PostProcessEffectRenderer<AmbientOcclusion>..ctor
-|-PostProcessEffectRenderer<AutoExposure>..ctor
-|-PostProcessEffectRenderer<Bloom>..ctor
-|-PostProcessEffectRenderer<ChromaticAberration>..ctor
-|-PostProcessEffectRenderer<ColorGrading>..ctor
-|-PostProcessEffectRenderer<DepthOfField>..ctor
-|-PostProcessEffectRenderer<Grain>..ctor
-|-PostProcessEffectRenderer<LensDistortion>..ctor
-|-PostProcessEffectRenderer<MotionBlur>..ctor
-|-PostProcessEffectRenderer<ScreenSpaceReflections>..ctor
-|-PostProcessEffectRenderer<Vignette>..ctor
-|-PostProcessEffectRenderer<Wiggle>..ctor
-*/
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessEffectRenderer<BlurOptimized>..ctor
+	|-PostProcessEffectRenderer<DepthOfFieldEffect>..ctor
+	|-PostProcessEffectRenderer<DoubleVision>..ctor
+	|-PostProcessEffectRenderer<FlashbangEffect>..ctor
+	|-PostProcessEffectRenderer<Frost>..ctor
+	|-PostProcessEffectRenderer<GodRays>..ctor
+	|-PostProcessEffectRenderer<GreyScale>..ctor
+	|-PostProcessEffectRenderer<LensDirtinessEffect>..ctor
+	|-PostProcessEffectRenderer<PhotoFilter>..ctor
+	|-PostProcessEffectRenderer<ScreenOverlay>..ctor
+	|-PostProcessEffectRenderer<SharpenAndVignette>..ctor
+	|-PostProcessEffectRenderer<object>..ctor
+	|-PostProcessEffectRenderer<AmbientOcclusion>..ctor
+	|-PostProcessEffectRenderer<AutoExposure>..ctor
+	|-PostProcessEffectRenderer<Bloom>..ctor
+	|-PostProcessEffectRenderer<ChromaticAberration>..ctor
+	|-PostProcessEffectRenderer<ColorGrading>..ctor
+	|-PostProcessEffectRenderer<DepthOfField>..ctor
+	|-PostProcessEffectRenderer<Grain>..ctor
+	|-PostProcessEffectRenderer<LensDistortion>..ctor
+	|-PostProcessEffectRenderer<MotionBlur>..ctor
+	|-PostProcessEffectRenderer<ScreenSpaceReflections>..ctor
+	|-PostProcessEffectRenderer<Vignette>..ctor
+	|-PostProcessEffectRenderer<Wiggle>..ctor
+	*/
 
 }
 
@@ -911,20 +911,20 @@ public class PostProcessEffectSettings : ScriptableObject // TypeDefIndex: 11840
 	internal ReadOnlyCollection<ParameterOverride> parameters; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void SetAllOverridesTo(bool state, bool excludeEnabled = True) { }
+	public void SetAllOverridesTo(bool state, bool excludeEnabled = True) { }
 
-public virtual bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public virtual bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public int GetHash() { }
+	public int GetHash() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private ParameterOverride <OnEnable>b__3_2(FieldInfo t) { }
+	private ParameterOverride <OnEnable>b__3_2(FieldInfo t) { }
 
 }
 
@@ -935,84 +935,84 @@ private sealed class PostProcessEffectSettings.<>c // TypeDefIndex: 11841
 	public static Func<FieldInfo, int> <>9__3_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnEnable>b__3_0(FieldInfo t) { }
+	internal bool <OnEnable>b__3_0(FieldInfo t) { }
 
-internal int <OnEnable>b__3_1(FieldInfo t) { }
+	internal int <OnEnable>b__3_1(FieldInfo t) { }
 
 }
 
 public enum PostProcessEvent // TypeDefIndex: 11842
 {
 	public int value__; 
-public const PostProcessEvent BeforeTransparent = 0;
-public const PostProcessEvent BeforeStack = 1;
-public const PostProcessEvent AfterStack = 2;
+	public const PostProcessEvent BeforeTransparent = 0;
+	public const PostProcessEvent BeforeStack = 1;
+	public const PostProcessEvent AfterStack = 2;
 
 }
 
 internal struct PostProcessEventComparer : IEqualityComparer<PostProcessEvent> // TypeDefIndex: 11843
 {
 
-public bool Equals(PostProcessEvent x, PostProcessEvent y) { }
+	public bool Equals(PostProcessEvent x, PostProcessEvent y) { }
 
-public int GetHashCode(PostProcessEvent obj) { }
+	public int GetHashCode(PostProcessEvent obj) { }
 
 }
 
 public sealed class PostProcessManager // TypeDefIndex: 11844
 {
 	private static PostProcessManager s_Instance; 
-private const int k_MaxLayerCount = 32;
+	private const int k_MaxLayerCount = 32;
 	private readonly Dictionary<int, List<PostProcessVolume>> m_SortedVolumes; 
 	private readonly List<PostProcessVolume> m_Volumes; 
 	private readonly Dictionary<int, bool> m_SortNeeded; 
 	private readonly List<PostProcessEffectSettings> m_BaseSettings; 
 	public readonly Dictionary<Type, PostProcessAttribute> settingsTypes; 
 
-public static PostProcessManager instance { get; }
+	public static PostProcessManager instance { get; }
 
 
-public static PostProcessManager get_instance() { }
+	public static PostProcessManager get_instance() { }
 
-private void .ctor() { }
+	private void .ctor() { }
 
-private void CleanBaseTypes() { }
+	private void CleanBaseTypes() { }
 
-private void ReloadBaseTypes() { }
+	private void ReloadBaseTypes() { }
 
-public void GetActiveVolumes(PostProcessLayer layer, List<PostProcessVolume> results, bool skipDisabled = True, bool skipZeroWeight = True) { }
+	public void GetActiveVolumes(PostProcessLayer layer, List<PostProcessVolume> results, bool skipDisabled = True, bool skipZeroWeight = True) { }
 
-public PostProcessVolume GetHighestPriorityVolume(PostProcessLayer layer) { }
+	public PostProcessVolume GetHighestPriorityVolume(PostProcessLayer layer) { }
 
-public PostProcessVolume GetHighestPriorityVolume(LayerMask mask) { }
+	public PostProcessVolume GetHighestPriorityVolume(LayerMask mask) { }
 
-public PostProcessVolume QuickVolume(int layer, float priority, PostProcessEffectSettings[] settings) { }
+	public PostProcessVolume QuickVolume(int layer, float priority, PostProcessEffectSettings[] settings) { }
 
-internal void SetLayerDirty(int layer) { }
+	internal void SetLayerDirty(int layer) { }
 
-internal void UpdateVolumeLayer(PostProcessVolume volume, int prevLayer, int newLayer) { }
+	internal void UpdateVolumeLayer(PostProcessVolume volume, int prevLayer, int newLayer) { }
 
-private void Register(PostProcessVolume volume, int layer) { }
+	private void Register(PostProcessVolume volume, int layer) { }
 
-internal void Register(PostProcessVolume volume) { }
+	internal void Register(PostProcessVolume volume) { }
 
-private void Unregister(PostProcessVolume volume, int layer) { }
+	private void Unregister(PostProcessVolume volume, int layer) { }
 
-internal void Unregister(PostProcessVolume volume) { }
+	internal void Unregister(PostProcessVolume volume) { }
 
-private void ReplaceData(PostProcessLayer postProcessLayer) { }
+	private void ReplaceData(PostProcessLayer postProcessLayer) { }
 
-internal void UpdateSettings(PostProcessLayer postProcessLayer, Camera camera) { }
+	internal void UpdateSettings(PostProcessLayer postProcessLayer, Camera camera) { }
 
-private List<PostProcessVolume> GrabVolumes(LayerMask mask) { }
+	private List<PostProcessVolume> GrabVolumes(LayerMask mask) { }
 
-private static void SortByPriority(List<PostProcessVolume> volumes) { }
+	private static void SortByPriority(List<PostProcessVolume> volumes) { }
 
-private static bool IsVolumeRenderedByCamera(PostProcessVolume volume, Camera camera) { }
+	private static bool IsVolumeRenderedByCamera(PostProcessVolume volume, Camera camera) { }
 
 }
 
@@ -1022,11 +1022,11 @@ private sealed class PostProcessManager.<>c // TypeDefIndex: 11845
 	public static Func<Type, bool> <>9__11_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <ReloadBaseTypes>b__11_0(Type t) { }
+	internal bool <ReloadBaseTypes>b__11_0(Type t) { }
 
 }
 
@@ -1037,56 +1037,56 @@ public sealed class PostProcessProfile : ScriptableObject // TypeDefIndex: 11846
 	public bool isDirty; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public T AddSettings<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessProfile.AddSettings<object>
-*/
+	public T AddSettings<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessProfile.AddSettings<object>
+	*/
 
-public PostProcessEffectSettings AddSettings(Type type) { }
+	public PostProcessEffectSettings AddSettings(Type type) { }
 
-public PostProcessEffectSettings AddSettings(PostProcessEffectSettings effect) { }
+	public PostProcessEffectSettings AddSettings(PostProcessEffectSettings effect) { }
 
-public void RemoveSettings<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessProfile.RemoveSettings<object>
-*/
+	public void RemoveSettings<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessProfile.RemoveSettings<object>
+	*/
 
-public void RemoveSettings(Type type) { }
+	public void RemoveSettings(Type type) { }
 
-public bool HasSettings<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessProfile.HasSettings<object>
-*/
+	public bool HasSettings<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessProfile.HasSettings<object>
+	*/
 
-public bool HasSettings(Type type) { }
+	public bool HasSettings(Type type) { }
 
-public T GetSetting<T>() { }
-/* GenericInstMethod :
-|
-|-PostProcessProfile.GetSetting<BlurOptimized>
-|-PostProcessProfile.GetSetting<DepthOfFieldEffect>
-|-PostProcessProfile.GetSetting<FlashbangEffect>
-|-PostProcessProfile.GetSetting<GodRays>
-|-PostProcessProfile.GetSetting<SharpenAndVignette>
-|-PostProcessProfile.GetSetting<object>
-|-PostProcessProfile.GetSetting<ChromaticAberration>
-|-PostProcessProfile.GetSetting<ColorGrading>
-|-PostProcessProfile.GetSetting<MotionBlur>
-|-PostProcessProfile.GetSetting<Wiggle>
-*/
+	public T GetSetting<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessProfile.GetSetting<BlurOptimized>
+	|-PostProcessProfile.GetSetting<DepthOfFieldEffect>
+	|-PostProcessProfile.GetSetting<FlashbangEffect>
+	|-PostProcessProfile.GetSetting<GodRays>
+	|-PostProcessProfile.GetSetting<SharpenAndVignette>
+	|-PostProcessProfile.GetSetting<object>
+	|-PostProcessProfile.GetSetting<ChromaticAberration>
+	|-PostProcessProfile.GetSetting<ColorGrading>
+	|-PostProcessProfile.GetSetting<MotionBlur>
+	|-PostProcessProfile.GetSetting<Wiggle>
+	*/
 
-public bool TryGetSettings<T>(out T outSetting) { }
-/* GenericInstMethod :
-|
-|-PostProcessProfile.TryGetSettings<object>
-*/
+	public bool TryGetSettings<T>(out T outSetting) { }
+	/* GenericInstMethod :
+	|
+	|-PostProcessProfile.TryGetSettings<object>
+	*/
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1096,11 +1096,11 @@ private sealed class PostProcessProfile.<>c // TypeDefIndex: 11847
 	public static Predicate<PostProcessEffectSettings> <>9__2_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnEnable>b__2_0(PostProcessEffectSettings x) { }
+	internal bool <OnEnable>b__2_0(PostProcessEffectSettings x) { }
 
 }
 
@@ -1113,7 +1113,7 @@ public sealed class PostProcessResources : ScriptableObject // TypeDefIndex: 118
 	public PostProcessResources.ComputeShaders computeShaders; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1145,9 +1145,9 @@ public sealed class PostProcessResources.Shaders // TypeDefIndex: 11849
 	public Shader screenSpaceReflections; 
 
 
-public PostProcessResources.Shaders Clone() { }
+	public PostProcessResources.Shaders Clone() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1167,9 +1167,9 @@ public sealed class PostProcessResources.ComputeShaders // TypeDefIndex: 11850
 	public ComputeShader gaussianDownsample; 
 
 
-public PostProcessResources.ComputeShaders Clone() { }
+	public PostProcessResources.ComputeShaders Clone() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1179,7 +1179,7 @@ public sealed class PostProcessResources.SMAALuts // TypeDefIndex: 11851
 	public Texture2D search; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1201,27 +1201,27 @@ public sealed class PostProcessVolume : MonoBehaviour // TypeDefIndex: 11852
 	private float m_PreviousPriority; 
 	private PostProcessProfile m_InternalProfile; 
 
-public PostProcessProfile profile { get; set; }
-internal PostProcessProfile profileRef { get; }
+	public PostProcessProfile profile { get; set; }
+	internal PostProcessProfile profileRef { get; }
 
 
-public PostProcessProfile get_profile() { }
+	public PostProcessProfile get_profile() { }
 
-public void set_profile(PostProcessProfile value) { }
+	public void set_profile(PostProcessProfile value) { }
 
-internal PostProcessProfile get_profileRef() { }
+	internal PostProcessProfile get_profileRef() { }
 
-public bool HasInstantiatedProfile() { }
+	public bool HasInstantiatedProfile() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnDrawGizmos() { }
+	private void OnDrawGizmos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

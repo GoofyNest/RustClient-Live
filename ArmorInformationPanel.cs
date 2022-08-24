@@ -16,13 +16,13 @@ public class ArmorInformationPanel : ItemInformationPanel // TypeDefIndex: 10980
 	public ItemTextValue eggVision; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public string ProtectionAreaText(ItemModWearable wearable) { }
+	public string ProtectionAreaText(ItemModWearable wearable) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

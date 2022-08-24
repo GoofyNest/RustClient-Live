@@ -8,15 +8,15 @@ public class ViewmodelLower : MonoBehaviour // TypeDefIndex: 11458
 	private BasePlayer updatePlayer; 
 
 
-public void SetShouldLower(bool shouldLower) { }
+	public void SetShouldLower(bool shouldLower) { }
 
-private void Update() { }
+	private void Update() { }
 
-private bool ShouldLower(BasePlayer player) { }
+	private bool ShouldLower(BasePlayer player) { }
 
-public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }
+	public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

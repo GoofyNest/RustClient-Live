@@ -3,7 +3,7 @@ public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefI
 	public static bool Paused; 
 	public float CellSize; 
 	public float MaxMilliseconds; 
-public const float MaxRefreshDistance = 500;
+	public const float MaxRefreshDistance = 500;
 	public static float TreeMeshDistance; 
 	private bool treeRefreshRequest; 
 	private Vector3 treeRefreshPosition; 
@@ -13,41 +13,41 @@ public const float MaxRefreshDistance = 500;
 	private Vector2i curCell; 
 	private Stopwatch watch; 
 
-public bool NeedsTimeout { get; }
+	public bool NeedsTimeout { get; }
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public static void RefreshAll() { }
+	public static void RefreshAll() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public static void Refresh(ILOD component, Transform transform, ref LODCell cell) { }
+	public static void Refresh(ILOD component, Transform transform, ref LODCell cell) { }
 
-public static void Add(ILOD component, Transform transform, ref LODCell cell) { }
+	public static void Add(ILOD component, Transform transform, ref LODCell cell) { }
 
-public static void Remove(ILOD component, Transform transform, ref LODCell cell) { }
+	public static void Remove(ILOD component, Transform transform, ref LODCell cell) { }
 
-public static void AddTreeMesh(TreeLOD component) { }
+	public static void AddTreeMesh(TreeLOD component) { }
 
-public static void RemoveTreeMesh(TreeLOD component) { }
+	public static void RemoveTreeMesh(TreeLOD component) { }
 
-private void Init() { }
+	private void Init() { }
 
-private void UpdateTreeMeshes() { }
+	private void UpdateTreeMeshes() { }
 
-public bool get_NeedsTimeout() { }
+	public bool get_NeedsTimeout() { }
 
-public void ResetTimeout() { }
+	public void ResetTimeout() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator UpdateCoroutine() { }
+	private IEnumerator UpdateCoroutine() { }
 
-private Vector2i GetCurrentCellCoordinates() { }
+	private Vector2i GetCurrentCellCoordinates() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -63,26 +63,26 @@ private sealed class LODGrid.<UpdateCoroutine>d__25 : IEnumerator<object>, IEnum
 	private int <x>5__6; 
 	private int <z>5__7; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

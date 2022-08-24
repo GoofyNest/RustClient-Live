@@ -16,8 +16,8 @@ public class TrainCarFuelHatches : MonoBehaviour // TypeDefIndex: 9768
 	private Transform hatch3Col; 
 	[SerializeField] 
 	private Transform hatch3Vis; 
-private const float closedXAngle = 0;
-private const float openXAngle = -145;
+	private const float closedXAngle = 0;
+	private const float openXAngle = -145;
 	[SerializeField] 
 	private SoundDefinition hatchOpenSoundDef; 
 	[SerializeField] 
@@ -29,21 +29,21 @@ private const float openXAngle = -145;
 	private bool isMoving; 
 
 
-public void LinedUpStateChanged(bool linedUp) { }
+	public void LinedUpStateChanged(bool linedUp) { }
 
-private void MoveTick() { }
+	private void MoveTick() { }
 
-private void EndMove() { }
+	private void EndMove() { }
 
-private void SetAngleOnAll(float lerpT, bool closing) { }
+	private void SetAngleOnAll(float lerpT, bool closing) { }
 
-private void SetAngle(Transform transform, float angle) { }
+	private void SetAngle(Transform transform, float angle) { }
 
-private void PlayOpenSounds() { }
+	private void PlayOpenSounds() { }
 
-private void PlayCloseSounds() { }
+	private void PlayCloseSounds() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

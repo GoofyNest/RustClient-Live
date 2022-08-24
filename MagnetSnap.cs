@@ -4,11 +4,11 @@ public class MagnetSnap // TypeDefIndex: 9736
 	private Vector3 prevSnapLocation; 
 
 
-public void .ctor(Transform snapLocation) { }
+	public void .ctor(Transform snapLocation) { }
 
-public void FixedUpdate(Transform target) { }
+	public void FixedUpdate(Transform target) { }
 
-public void PositionTarget(Transform target) { }
+	public void PositionTarget(Transform target) { }
 
 }
 

@@ -4,7 +4,7 @@ public class TriggerAnalytic : TriggerBase, IServerComponent // TypeDefIndex: 10
 	public float Timeout; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

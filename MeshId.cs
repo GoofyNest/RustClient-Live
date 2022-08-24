@@ -5,15 +5,15 @@ public struct MeshId : IEquatable<MeshId> // TypeDefIndex: 4156
 	private ulong m_SubId2; 
 
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(MeshId other) { }
+	public bool Equals(MeshId other) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

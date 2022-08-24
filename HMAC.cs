@@ -8,33 +8,33 @@ public abstract class HMAC : KeyedHashAlgorithm // TypeDefIndex: 960
 	private byte[] m_outer; 
 	private bool m_hashing; 
 
-protected int BlockSizeValue { get; set; }
-public override byte[] Key { get; set; }
+	protected int BlockSizeValue { get; set; }
+	public override byte[] Key { get; set; }
 
 
-protected int get_BlockSizeValue() { }
+	protected int get_BlockSizeValue() { }
 
-protected void set_BlockSizeValue(int value) { }
+	protected void set_BlockSizeValue(int value) { }
 
-private void UpdateIOPadBuffers() { }
+	private void UpdateIOPadBuffers() { }
 
-internal void InitializeKey(byte[] key) { }
+	internal void InitializeKey(byte[] key) { }
 
-public override byte[] get_Key() { }
+	public override byte[] get_Key() { }
 
-public override void set_Key(byte[] value) { }
+	public override void set_Key(byte[] value) { }
 
-public static HMAC Create() { }
+	public static HMAC Create() { }
 
-public override void Initialize() { }
+	public override void Initialize() { }
 
-protected override void HashCore(byte[] rgb, int ib, int cb) { }
+	protected override void HashCore(byte[] rgb, int ib, int cb) { }
 
-protected override byte[] HashFinal() { }
+	protected override byte[] HashFinal() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

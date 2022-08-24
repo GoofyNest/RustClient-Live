@@ -5,11 +5,11 @@ public struct TimeAverageValueData // TypeDefIndex: 6688
 	private ulong counterNext; 
 
 
-public ulong Calculate() { }
+	public ulong Calculate() { }
 
-public void Increment() { }
+	public void Increment() { }
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 

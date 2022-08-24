@@ -11,26 +11,26 @@ public class Toolgun : Hammer // TypeDefIndex: 8655
 	public static bool classiceffects; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override void DoViewmodelImpact(HitTest test) { }
+	public override void DoViewmodelImpact(HitTest test) { }
 
-public void DoTGEffect(Vector3 endPos, Vector3 endNormal) { }
+	public void DoTGEffect(Vector3 endPos, Vector3 endNormal) { }
 
-public void DoAttackEffect(Vector3 endPos, Vector3 normal) { }
+	public void DoAttackEffect(Vector3 endPos, Vector3 normal) { }
 
 	[BaseEntity.RPC_Client] 
-public void EffectSpawn(BaseEntity.RPCMessage msg) { }
+	public void EffectSpawn(BaseEntity.RPCMessage msg) { }
 
-public override void ClientAttack() { }
+	public override void ClientAttack() { }
 
-public override void DoAttackShared(HitInfo info) { }
+	public override void DoAttackShared(HitInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

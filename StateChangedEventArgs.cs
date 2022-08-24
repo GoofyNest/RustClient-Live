@@ -5,25 +5,25 @@ public sealed class StateChangedEventArgs : EventArgs // TypeDefIndex: 7145
 	[CompilerGeneratedAttribute] 
 	private StateChangeType <Type>k__BackingField; 
 
-public string Message { get; set; }
-public StateChangeType Type { get; set; }
+	public string Message { get; set; }
+	public StateChangeType Type { get; set; }
 
 
-internal void .ctor(StateChangeType stateChangeType, string message) { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Message() { }
+	internal void .ctor(StateChangeType stateChangeType, string message) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Message(string value) { }
+	public string get_Message() { }
 
 	[CompilerGeneratedAttribute] 
-public StateChangeType get_Type() { }
+	private void set_Message(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Type(StateChangeType value) { }
+	public StateChangeType get_Type() { }
 
-public override string ToString() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Type(StateChangeType value) { }
+
+	public override string ToString() { }
 
 }
 

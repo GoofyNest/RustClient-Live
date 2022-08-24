@@ -37,41 +37,41 @@ public struct ParticleSystemJobData // TypeDefIndex: 4550
 	[DebuggerBrowsableAttribute] 
 	private readonly ParticleSystemNativeArray4 <customData2>k__BackingField; 
 
-public int count { get; }
-public ParticleSystemNativeArray3 positions { get; }
-public ParticleSystemNativeArray3 velocities { get; }
-public NativeArray<float> aliveTimePercent { get; }
-public NativeArray<float> inverseStartLifetimes { get; }
+	public int count { get; }
+	public ParticleSystemNativeArray3 positions { get; }
+	public ParticleSystemNativeArray3 velocities { get; }
+	public NativeArray<float> aliveTimePercent { get; }
+	public NativeArray<float> inverseStartLifetimes { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public int get_count() { }
+	public int get_count() { }
 
 	[CompilerGeneratedAttribute] 
-public ParticleSystemNativeArray3 get_positions() { }
+	public ParticleSystemNativeArray3 get_positions() { }
 
 	[CompilerGeneratedAttribute] 
-public ParticleSystemNativeArray3 get_velocities() { }
+	public ParticleSystemNativeArray3 get_velocities() { }
 
 	[CompilerGeneratedAttribute] 
-public NativeArray<float> get_aliveTimePercent() { }
+	public NativeArray<float> get_aliveTimePercent() { }
 
 	[CompilerGeneratedAttribute] 
-public NativeArray<float> get_inverseStartLifetimes() { }
+	public NativeArray<float> get_inverseStartLifetimes() { }
 
-internal void .ctor(ref NativeParticleData nativeData) { }
+	internal void .ctor(ref NativeParticleData nativeData) { }
 
-internal NativeArray<T> CreateNativeArray<T>(void* src, int count) { }
-/* GenericInstMethod :
-|
-|-ParticleSystemJobData.CreateNativeArray<float>
-|-ParticleSystemJobData.CreateNativeArray<uint>
-|-ParticleSystemJobData.CreateNativeArray<Color32>
-*/
+	internal NativeArray<T> CreateNativeArray<T>(void* src, int count) { }
+	/* GenericInstMethod :
+	|
+	|-ParticleSystemJobData.CreateNativeArray<float>
+	|-ParticleSystemJobData.CreateNativeArray<uint>
+	|-ParticleSystemJobData.CreateNativeArray<Color32>
+	*/
 
-internal ParticleSystemNativeArray3 CreateNativeArray3(ref NativeParticleData.Array3 ptrs, int count) { }
+	internal ParticleSystemNativeArray3 CreateNativeArray3(ref NativeParticleData.Array3 ptrs, int count) { }
 
-internal ParticleSystemNativeArray4 CreateNativeArray4(ref NativeParticleData.Array4 ptrs, int count) { }
+	internal ParticleSystemNativeArray4 CreateNativeArray4(ref NativeParticleData.Array4 ptrs, int count) { }
 
 }
 

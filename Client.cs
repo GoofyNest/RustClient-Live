@@ -2,19 +2,19 @@ internal class ClientIdentity : Identity // TypeDefIndex: 1134
 {
 	private WeakReference _proxyReference; 
 
-public MarshalByRefObject ClientProxy { get; set; }
-public string TargetUri { get; }
+	public MarshalByRefObject ClientProxy { get; set; }
+	public string TargetUri { get; }
 
 
-public void .ctor(string objectUri, ObjRef objRef) { }
+	public void .ctor(string objectUri, ObjRef objRef) { }
 
-public MarshalByRefObject get_ClientProxy() { }
+	public MarshalByRefObject get_ClientProxy() { }
 
-public void set_ClientProxy(MarshalByRefObject value) { }
+	public void set_ClientProxy(MarshalByRefObject value) { }
 
-public override ObjRef CreateObjRef(Type requestedType) { }
+	public override ObjRef CreateObjRef(Type requestedType) { }
 
-public string get_TargetUri() { }
+	public string get_TargetUri() { }
 
 }
 
@@ -23,17 +23,17 @@ internal class ClientActivatedIdentity : ServerIdentity // TypeDefIndex: 1146
 	private MarshalByRefObject _targetThis; 
 
 
-public void .ctor(string objectUri, Type objectType) { }
+	public void .ctor(string objectUri, Type objectType) { }
 
-public MarshalByRefObject GetServerObject() { }
+	public MarshalByRefObject GetServerObject() { }
 
-public void SetClientProxy(MarshalByRefObject obj) { }
+	public void SetClientProxy(MarshalByRefObject obj) { }
 
-public override void OnLifetimeExpired() { }
+	public override void OnLifetimeExpired() { }
 
-public override IMessage SyncObjectProcessMessage(IMessage msg) { }
+	public override IMessage SyncObjectProcessMessage(IMessage msg) { }
 
-public override IMessageCtrl AsyncObjectProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public override IMessageCtrl AsyncObjectProcessMessage(IMessage msg, IMessageSink replySink) { }
 
 }
 
@@ -42,11 +42,11 @@ internal class ClientContextTerminatorSink : IMessageSink // TypeDefIndex: 1230
 	private Context _context; 
 
 
-public void .ctor(Context ctx) { }
+	public void .ctor(Context ctx) { }
 
-public IMessage SyncProcessMessage(IMessage msg) { }
+	public IMessage SyncProcessMessage(IMessage msg) { }
 
-public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
 }
 
@@ -56,11 +56,11 @@ internal class ClientContextReplySink : IMessageSink // TypeDefIndex: 1231
 	private Context _context; 
 
 
-public void .ctor(Context ctx, IMessageSink replySink) { }
+	public void .ctor(Context ctx, IMessageSink replySink) { }
 
-public IMessage SyncProcessMessage(IMessage msg) { }
+	public IMessage SyncProcessMessage(IMessage msg) { }
 
-public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
 }
 
@@ -73,15 +73,15 @@ internal struct ClientGameServerDeny_t : ICallbackData // TypeDefIndex: 5296
 	internal uint Reason; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -92,57 +92,57 @@ public class ClientReady : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 	public List<ClientReady.ClientInfo> clientInfo; 
 
 
-public static void ResetToPool(ClientReady instance) { }
+	public static void ResetToPool(ClientReady instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ClientReady instance) { }
+	public void CopyTo(ClientReady instance) { }
 
-public ClientReady Copy() { }
+	public ClientReady Copy() { }
 
-public static ClientReady Deserialize(Stream stream) { }
+	public static ClientReady Deserialize(Stream stream) { }
 
-public static ClientReady DeserializeLengthDelimited(Stream stream) { }
+	public static ClientReady DeserializeLengthDelimited(Stream stream) { }
 
-public static ClientReady DeserializeLength(Stream stream, int length) { }
+	public static ClientReady DeserializeLength(Stream stream, int length) { }
 
-public static ClientReady Deserialize(byte[] buffer) { }
+	public static ClientReady Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ClientReady previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ClientReady previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ClientReady Deserialize(byte[] buffer, ClientReady instance, bool isDelta = False) { }
+	public static ClientReady Deserialize(byte[] buffer, ClientReady instance, bool isDelta = False) { }
 
-public static ClientReady Deserialize(Stream stream, ClientReady instance, bool isDelta) { }
+	public static ClientReady Deserialize(Stream stream, ClientReady instance, bool isDelta) { }
 
-public static ClientReady DeserializeLengthDelimited(Stream stream, ClientReady instance, bool isDelta) { }
+	public static ClientReady DeserializeLengthDelimited(Stream stream, ClientReady instance, bool isDelta) { }
 
-public static ClientReady DeserializeLength(Stream stream, int length, ClientReady instance, bool isDelta) { }
+	public static ClientReady DeserializeLength(Stream stream, int length, ClientReady instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ClientReady instance, ClientReady previous) { }
+	public static void SerializeDelta(Stream stream, ClientReady instance, ClientReady previous) { }
 
-public static void Serialize(Stream stream, ClientReady instance) { }
+	public static void Serialize(Stream stream, ClientReady instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ClientReady instance) { }
+	public static byte[] SerializeToBytes(ClientReady instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ClientReady instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ClientReady instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -154,57 +154,57 @@ public class ClientReady.ClientInfo : IDisposable, Pool.IPooled, IProto // TypeD
 	public string value; 
 
 
-public static void ResetToPool(ClientReady.ClientInfo instance) { }
+	public static void ResetToPool(ClientReady.ClientInfo instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ClientReady.ClientInfo instance) { }
+	public void CopyTo(ClientReady.ClientInfo instance) { }
 
-public ClientReady.ClientInfo Copy() { }
+	public ClientReady.ClientInfo Copy() { }
 
-public static ClientReady.ClientInfo Deserialize(Stream stream) { }
+	public static ClientReady.ClientInfo Deserialize(Stream stream) { }
 
-public static ClientReady.ClientInfo DeserializeLengthDelimited(Stream stream) { }
+	public static ClientReady.ClientInfo DeserializeLengthDelimited(Stream stream) { }
 
-public static ClientReady.ClientInfo DeserializeLength(Stream stream, int length) { }
+	public static ClientReady.ClientInfo DeserializeLength(Stream stream, int length) { }
 
-public static ClientReady.ClientInfo Deserialize(byte[] buffer) { }
+	public static ClientReady.ClientInfo Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ClientReady.ClientInfo previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ClientReady.ClientInfo previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ClientReady.ClientInfo Deserialize(byte[] buffer, ClientReady.ClientInfo instance, bool isDelta = False) { }
+	public static ClientReady.ClientInfo Deserialize(byte[] buffer, ClientReady.ClientInfo instance, bool isDelta = False) { }
 
-public static ClientReady.ClientInfo Deserialize(Stream stream, ClientReady.ClientInfo instance, bool isDelta) { }
+	public static ClientReady.ClientInfo Deserialize(Stream stream, ClientReady.ClientInfo instance, bool isDelta) { }
 
-public static ClientReady.ClientInfo DeserializeLengthDelimited(Stream stream, ClientReady.ClientInfo instance, bool isDelta) { }
+	public static ClientReady.ClientInfo DeserializeLengthDelimited(Stream stream, ClientReady.ClientInfo instance, bool isDelta) { }
 
-public static ClientReady.ClientInfo DeserializeLength(Stream stream, int length, ClientReady.ClientInfo instance, bool isDelta) { }
+	public static ClientReady.ClientInfo DeserializeLength(Stream stream, int length, ClientReady.ClientInfo instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ClientReady.ClientInfo instance, ClientReady.ClientInfo previous) { }
+	public static void SerializeDelta(Stream stream, ClientReady.ClientInfo instance, ClientReady.ClientInfo previous) { }
 
-public static void Serialize(Stream stream, ClientReady.ClientInfo instance) { }
+	public static void Serialize(Stream stream, ClientReady.ClientInfo instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ClientReady.ClientInfo instance) { }
+	public static byte[] SerializeToBytes(ClientReady.ClientInfo instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ClientReady.ClientInfo instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ClientReady.ClientInfo instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -229,109 +229,109 @@ public class Client : BaseNetwork // TypeDefIndex: 6687
 	public Stats IncomingStats; 
 	public IClientCallback callbackHandler; 
 
-public Connection Connection { get; set; }
-public virtual bool IsPlaying { get; }
-public string ConnectedAddress { get; set; }
-public int ConnectedPort { get; set; }
-public string ServerName { get; set; }
-public bool IsOfficialServer { get; set; }
-public bool IsRecording { get; }
-public string RecordFilename { get; }
-public TimeSpan RecordTimeElapsed { get; }
+	public Connection Connection { get; set; }
+	public virtual bool IsPlaying { get; }
+	public string ConnectedAddress { get; set; }
+	public int ConnectedPort { get; set; }
+	public string ServerName { get; set; }
+	public bool IsOfficialServer { get; set; }
+	public bool IsRecording { get; }
+	public string RecordFilename { get; }
+	public TimeSpan RecordTimeElapsed { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public Connection get_Connection() { }
+	public Connection get_Connection() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_Connection(Connection value) { }
+	protected void set_Connection(Connection value) { }
 
 	[CompilerGeneratedAttribute] 
-public virtual bool get_IsPlaying() { }
+	public virtual bool get_IsPlaying() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ConnectedAddress() { }
+	public string get_ConnectedAddress() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ConnectedAddress(string value) { }
+	public void set_ConnectedAddress(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_ConnectedPort() { }
+	public int get_ConnectedPort() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ConnectedPort(int value) { }
+	public void set_ConnectedPort(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ServerName() { }
+	public string get_ServerName() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ServerName(string value) { }
+	public void set_ServerName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsOfficialServer() { }
+	public bool get_IsOfficialServer() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IsOfficialServer(bool value) { }
+	public void set_IsOfficialServer(bool value) { }
 
-public virtual bool Connect(string strURL, int port) { }
+	public virtual bool Connect(string strURL, int port) { }
 
-public virtual void Cycle() { }
+	public virtual void Cycle() { }
 
-public virtual void Disconnect(string reason, bool sendReasonToServer = True) { }
+	public virtual void Disconnect(string reason, bool sendReasonToServer = True) { }
 
-public virtual bool IsConnected() { }
+	public virtual bool IsConnected() { }
 
-protected void OnDisconnected(string str) { }
+	protected void OnDisconnected(string str) { }
 
-public Networkable CreateNetworkable(uint networkID, uint networkGroup) { }
+	public Networkable CreateNetworkable(uint networkID, uint networkGroup) { }
 
-public void DestroyNetworkable(ref Networkable networkable) { }
+	public void DestroyNetworkable(ref Networkable networkable) { }
 
-public void SetupNetworkable(Networkable net) { }
+	public void SetupNetworkable(Networkable net) { }
 
-public virtual int GetLastPing() { }
+	public virtual int GetLastPing() { }
 
-public bool get_IsRecording() { }
+	public bool get_IsRecording() { }
 
-public string get_RecordFilename() { }
+	public string get_RecordFilename() { }
 
-public TimeSpan get_RecordTimeElapsed() { }
+	public TimeSpan get_RecordTimeElapsed() { }
 
-public bool StartRecording(string targetFilename, IDemoHeader header) { }
+	public bool StartRecording(string targetFilename, IDemoHeader header) { }
 
-public void StopRecording() { }
+	public void StopRecording() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public class ClientVar : ConsoleVar // TypeDefIndex: 6894
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ClientIntegrityViolationType // TypeDefIndex: 7140
 {
 	public int value__; 
-public const ClientIntegrityViolationType IntegrityViolationNone = 0;
-public const ClientIntegrityViolationType EACHashCatalogueFileNotFound = 1;
-public const ClientIntegrityViolationType EACHashCatalogueError = 2;
-public const ClientIntegrityViolationType EACHashCatalogueCertificateRevoked = 3;
-public const ClientIntegrityViolationType UnknownGameFileVersion = 4;
-public const ClientIntegrityViolationType RequiredGameFileNotFound = 5;
-public const ClientIntegrityViolationType UncataloguedGameFileForbidden = 6;
-public const ClientIntegrityViolationType UnknownSystemFileVersion = 7;
-public const ClientIntegrityViolationType ForbiddenModuleLoaded = 8;
-public const ClientIntegrityViolationType CorruptedMemory = 9;
-public const ClientIntegrityViolationType HackToolDetected = 10;
-public const ClientIntegrityViolationType InternalAntiCheatViolation = 11;
-public const ClientIntegrityViolationType CorruptedNetworkMessageFlow = 12;
-public const ClientIntegrityViolationType CannotRunUnderVirtualMachine = 13;
-public const ClientIntegrityViolationType ForbiddenSystemConfiguration = 14;
+	public const ClientIntegrityViolationType IntegrityViolationNone = 0;
+	public const ClientIntegrityViolationType EACHashCatalogueFileNotFound = 1;
+	public const ClientIntegrityViolationType EACHashCatalogueError = 2;
+	public const ClientIntegrityViolationType EACHashCatalogueCertificateRevoked = 3;
+	public const ClientIntegrityViolationType UnknownGameFileVersion = 4;
+	public const ClientIntegrityViolationType RequiredGameFileNotFound = 5;
+	public const ClientIntegrityViolationType UncataloguedGameFileForbidden = 6;
+	public const ClientIntegrityViolationType UnknownSystemFileVersion = 7;
+	public const ClientIntegrityViolationType ForbiddenModuleLoaded = 8;
+	public const ClientIntegrityViolationType CorruptedMemory = 9;
+	public const ClientIntegrityViolationType HackToolDetected = 10;
+	public const ClientIntegrityViolationType InternalAntiCheatViolation = 11;
+	public const ClientIntegrityViolationType CorruptedNetworkMessageFlow = 12;
+	public const ClientIntegrityViolationType CannotRunUnderVirtualMachine = 13;
+	public const ClientIntegrityViolationType ForbiddenSystemConfiguration = 14;
 
 }
 
@@ -342,29 +342,29 @@ public class Client : Client // TypeDefIndex: 7331
 	private Stopwatch cycleTimer; 
 
 
-public override bool IsConnected() { }
+	public override bool IsConnected() { }
 
-public override bool Connect(string strURL, int port) { }
+	public override bool Connect(string strURL, int port) { }
 
-internal bool HandleRaknetPacket(byte type) { }
+	internal bool HandleRaknetPacket(byte type) { }
 
-protected void HandleMessage() { }
+	protected void HandleMessage() { }
 
-public override void Cycle() { }
+	public override void Cycle() { }
 
-public override void Disconnect(string reason, bool sendReasonToServer) { }
+	public override void Disconnect(string reason, bool sendReasonToServer) { }
 
-public override string GetDebug(Connection connection) { }
+	public override string GetDebug(Connection connection) { }
 
-public override ulong GetStat(Connection connection, BaseNetwork.StatTypeLong type) { }
+	public override ulong GetStat(Connection connection, BaseNetwork.StatTypeLong type) { }
 
-public override int GetLastPing() { }
+	public override int GetLastPing() { }
 
-public override void Send(SendInfo sendinfo, MemoryStream data) { }
+	public override void Send(SendInfo sendinfo, MemoryStream data) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -379,48 +379,48 @@ public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 8884
 	public WireTool.WireColour colour; 
 	public IOEntity ownerIOEnt; 
 
-public int PositionCount { get; }
+	public int PositionCount { get; }
 
 
-public void SetIOEntityOwner(IOEntity newOwner) { }
+	public void SetIOEntityOwner(IOEntity newOwner) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public static void SetDirectionVisibleAll(bool isVisible, IOEntity.IOType forType) { }
+	public static void SetDirectionVisibleAll(bool isVisible, IOEntity.IOType forType) { }
 
-public static void SetDirectionVisibleSingle(bool isVisible, ClientIOLine line) { }
+	public static void SetDirectionVisibleSingle(bool isVisible, ClientIOLine line) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void DelayedDirectionTest() { }
+	public void DelayedDirectionTest() { }
 
-public void SetDirectionVisible(bool isVisible) { }
+	public void SetDirectionVisible(bool isVisible) { }
 
-public void SetVisible(bool isVisible) { }
+	public void SetVisible(bool isVisible) { }
 
-public void SetLineCullDistance(float length) { }
+	public void SetLineCullDistance(float length) { }
 
-public void SetPositions(Vector3[] positions, float[] slackLevels) { }
+	public void SetPositions(Vector3[] positions, float[] slackLevels) { }
 
-public void AddPosition(Vector3 worldPos) { }
+	public void AddPosition(Vector3 worldPos) { }
 
-public void SetLastNodePosition(Vector3 worldPos) { }
+	public void SetLastNodePosition(Vector3 worldPos) { }
 
-public void RemoveLastPosition() { }
+	public void RemoveLastPosition() { }
 
-public float GetLength() { }
+	public float GetLength() { }
 
-public void UpdateBoundsAndPosition() { }
+	public void UpdateBoundsAndPosition() { }
 
-public Vector3 GetLastPlacedNodePosition() { }
+	public Vector3 GetLastPlacedNodePosition() { }
 
-public int get_PositionCount() { }
+	public int get_PositionCount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -452,215 +452,215 @@ public class Client : SingletonComponent<Client>, IClientCallback // TypeDefInde
 	public static ulong DemoLocalClient; 
 	private static Reader Demo; 
 	private static float PreDemoPhysicsSteps; 
-private const float demoTickDistSq = 2500;
+	private const float demoTickDistSq = 2500;
 	[CompilerGeneratedAttribute] 
 	private static BasePlayer <DemoSpectatePlayer>k__BackingField; 
 	public static BaseEntity CurrentEntity; 
 	public HashSet<uint> subscriptions; 
-private const long EntityPositionPacketSize = 36;
-private const long EntityFlagsPacketSize = 8;
+	private const long EntityPositionPacketSize = 36;
+	private const long EntityFlagsPacketSize = 8;
 	private static EventSystem _eventsystem; 
 	private float LastConfigSaveTime; 
 	private Stopwatch ngTimer; 
 
-private bool StatsEnabled { get; }
-public static bool IsPlayingDemo { get; }
-public static bool IsRecordingDemo { get; }
-public static bool IsScrubbingDemo { get; set; }
-public static TimeSpan RecordingTimeElapsed { get; }
-public static string RecordingFilename { get; }
-public static BasePlayer DemoLocalPlayer { get; }
-public static TimeSpan DemoProgress { get; }
-public static TimeSpan DemoLength { get; }
-public static float DemoNormalizedTime { get; }
-public static string DemoName { get; }
-public static DateTime DemoRecordedTime { get; }
-public static BasePlayer DemoSpectatePlayer { get; set; }
-public static EventSystem EventSystem { get; }
+	private bool StatsEnabled { get; }
+	public static bool IsPlayingDemo { get; }
+	public static bool IsRecordingDemo { get; }
+	public static bool IsScrubbingDemo { get; set; }
+	public static TimeSpan RecordingTimeElapsed { get; }
+	public static string RecordingFilename { get; }
+	public static BasePlayer DemoLocalPlayer { get; }
+	public static TimeSpan DemoProgress { get; }
+	public static TimeSpan DemoLength { get; }
+	public static float DemoNormalizedTime { get; }
+	public static string DemoName { get; }
+	public static DateTime DemoRecordedTime { get; }
+	public static BasePlayer DemoSpectatePlayer { get; set; }
+	public static EventSystem EventSystem { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static void add_OnConnected(Action value) { }
+	public static void add_OnConnected(Action value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_OnConnected(Action value) { }
+	public static void remove_OnConnected(Action value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void add_OnDisconnected(Action value) { }
+	public static void add_OnDisconnected(Action value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_OnDisconnected(Action value) { }
+	public static void remove_OnDisconnected(Action value) { }
 
-private bool get_StatsEnabled() { }
+	private bool get_StatsEnabled() { }
 
-private void RegisterIncoming(string type, long bytes) { }
+	private void RegisterIncoming(string type, long bytes) { }
 
-private void RegisterIncoming(string type, string entity, long bytes) { }
+	private void RegisterIncoming(string type, string entity, long bytes) { }
 
-public void OnNetworkMessage(Message packet) { }
+	public void OnNetworkMessage(Message packet) { }
 
-private void OnMessage(Message packet) { }
+	private void OnMessage(Message packet) { }
 
-private void OnRequestUserInformation(Message packet) { }
+	private void OnRequestUserInformation(Message packet) { }
 
-private void OnApproved(Message packet) { }
+	private void OnApproved(Message packet) { }
 
-private void OnRPCMessage(Message packet) { }
+	private void OnRPCMessage(Message packet) { }
 
-private string GetOSName() { }
+	private string GetOSName() { }
 
-public void CancelAuthTicket() { }
+	public void CancelAuthTicket() { }
 
-public IAuthTicket GetAuthTicket(bool cancelOld = True) { }
+	public IAuthTicket GetAuthTicket(bool cancelOld = True) { }
 
-private void CancelLoading() { }
+	private void CancelLoading() { }
 
-private Coroutine StartLoading(IEnumerator coroutine) { }
+	private Coroutine StartLoading(IEnumerator coroutine) { }
 
 	[AsyncStateMachineAttribute] 
-public Task Connect(string strAddress, int port, string protocol, bool hideIpAddress = False) { }
+	public Task Connect(string strAddress, int port, string protocol, bool hideIpAddress = False) { }
 
-private void DestroyNetworkables() { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator DoClientConnected(Approval msg) { }
-
-public void OnClientDisconnected(string strReason) { }
-
-public static void ClientCleanup() { }
-
-private static void OnConsoleReplicatedVars(Message packet) { }
-
-private static void SetReplicatedVar(string fullName, string value) { }
-
-private void RunDebugCommands() { }
-
-private void DrawColliders() { }
-
-private void UpdateNetgraph() { }
-
-private Stats GetCurrentNetworkStats() { }
-
-public static bool get_IsPlayingDemo() { }
-
-public static bool get_IsRecordingDemo() { }
-
-	[CompilerGeneratedAttribute] 
-public static bool get_IsScrubbingDemo() { }
-
-	[CompilerGeneratedAttribute] 
-public static void set_IsScrubbingDemo(bool value) { }
-
-public static TimeSpan get_RecordingTimeElapsed() { }
-
-public static string get_RecordingFilename() { }
-
-public static BasePlayer get_DemoLocalPlayer() { }
-
-public static TimeSpan get_DemoProgress() { }
-
-public static TimeSpan get_DemoLength() { }
-
-public static float get_DemoNormalizedTime() { }
-
-public static string get_DemoName() { }
-
-public static DateTime get_DemoRecordedTime() { }
-
-public void StartPlayingDemo(Reader demo, bool inPlace) { }
+	private void DestroyNetworkables() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator StartPlayingDemoInternal(Reader demo, bool inPlace) { }
+	private IEnumerator DoClientConnected(Approval msg) { }
 
-private void OnDemoKeyframe(Indexer.Keyframe keyframe, HashSet<uint> changedEnts) { }
+	public void OnClientDisconnected(string strReason) { }
 
-public void StopRecordingDemo() { }
+	public static void ClientCleanup() { }
 
-public void StopPlayingDemo(bool finished = False) { }
+	private static void OnConsoleReplicatedVars(Message packet) { }
 
-private void DemoFrame() { }
+	private static void SetReplicatedVar(string fullName, string value) { }
+
+	private void RunDebugCommands() { }
+
+	private void DrawColliders() { }
+
+	private void UpdateNetgraph() { }
+
+	private Stats GetCurrentNetworkStats() { }
+
+	public static bool get_IsPlayingDemo() { }
+
+	public static bool get_IsRecordingDemo() { }
 
 	[CompilerGeneratedAttribute] 
-public static BasePlayer get_DemoSpectatePlayer() { }
+	public static bool get_IsScrubbingDemo() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_DemoSpectatePlayer(BasePlayer value) { }
+	public static void set_IsScrubbingDemo(bool value) { }
 
-private void DemoSpectateNextPlayer(bool forward) { }
+	public static TimeSpan get_RecordingTimeElapsed() { }
 
-private void DemoLateUpdate(bool isLastCall) { }
+	public static string get_RecordingFilename() { }
 
-private void DemoPlayerTick(PlayerTick playerTick) { }
+	public static BasePlayer get_DemoLocalPlayer() { }
 
-private void OnGroupEnter(Message msg) { }
+	public static TimeSpan get_DemoProgress() { }
 
-private void OnGroupLeave(Message msg) { }
+	public static TimeSpan get_DemoLength() { }
 
-private void OnEntityDestroy(Message msg) { }
+	public static float get_DemoNormalizedTime() { }
 
-private void OnGroupDestroy(Message msg) { }
+	public static string get_DemoName() { }
 
-private void OnGroupChange(Message msg) { }
+	public static DateTime get_DemoRecordedTime() { }
 
-private void OnEntities(Message packet) { }
+	public void StartPlayingDemo(Reader demo, bool inPlace) { }
 
-private BaseEntity CreateOrUpdateEntity(Entity info, long size) { }
+	[IteratorStateMachineAttribute] 
+	private IEnumerator StartPlayingDemoInternal(Reader demo, bool inPlace) { }
 
-private void OnEntityPosition(Message packet) { }
+	private void OnDemoKeyframe(Indexer.Keyframe keyframe, HashSet<uint> changedEnts) { }
 
-private void UpdateEntityPosition(uint entID, Vector3 pos, Vector3 rot, float time, uint parentID) { }
+	public void StopRecordingDemo() { }
 
-private void OnEntityFlags(Message packet) { }
+	public void StopPlayingDemo(bool finished = False) { }
 
-private void UpdateEntityFlags(uint entID, int flags) { }
+	private void DemoFrame() { }
 
-public static EventSystem get_EventSystem() { }
+	[CompilerGeneratedAttribute] 
+	public static BasePlayer get_DemoSpectatePlayer() { }
 
-private void ClearVisibility() { }
+	[CompilerGeneratedAttribute] 
+	private static void set_DemoSpectatePlayer(BasePlayer value) { }
 
-private void NetworkInit() { }
+	private void DemoSpectateNextPlayer(bool forward) { }
 
-private void Update() { }
+	private void DemoLateUpdate(bool isLastCall) { }
 
-private void LateUpdate() { }
+	private void DemoPlayerTick(PlayerTick playerTick) { }
 
-private void Disconnect() { }
+	private void OnGroupEnter(Message msg) { }
 
-private void OnDisable() { }
+	private void OnGroupLeave(Message msg) { }
 
-private void OnApplicationQuit() { }
+	private void OnEntityDestroy(Message msg) { }
 
-private void OnLeaveServer() { }
+	private void OnGroupDestroy(Message msg) { }
 
-private void SaveConfigs(bool force = False) { }
+	private void OnGroupChange(Message msg) { }
 
-private static extern uint GetCurrentProcessId() { }
+	private void OnEntities(Message packet) { }
 
-private static extern IntPtr OpenProcess(Client.ProcessAccessFlags processAccess, bool bInheritHandle, uint processId) { }
+	private BaseEntity CreateOrUpdateEntity(Entity info, long size) { }
 
-private static extern bool TerminateProcess(IntPtr hProcess, uint uExitCode) { }
+	private void OnEntityPosition(Message packet) { }
 
-private void ShutdownClient() { }
+	private void UpdateEntityPosition(uint entID, Vector3 pos, Vector3 rot, float time, uint parentID) { }
 
-public void .ctor() { }
+	private void OnEntityFlags(Message packet) { }
 
-private static void .cctor() { }
+	private void UpdateEntityFlags(uint entID, int flags) { }
+
+	public static EventSystem get_EventSystem() { }
+
+	private void ClearVisibility() { }
+
+	private void NetworkInit() { }
+
+	private void Update() { }
+
+	private void LateUpdate() { }
+
+	private void Disconnect() { }
+
+	private void OnDisable() { }
+
+	private void OnApplicationQuit() { }
+
+	private void OnLeaveServer() { }
+
+	private void SaveConfigs(bool force = False) { }
+
+	private static extern uint GetCurrentProcessId() { }
+
+	private static extern IntPtr OpenProcess(Client.ProcessAccessFlags processAccess, bool bInheritHandle, uint processId) { }
+
+	private static extern bool TerminateProcess(IntPtr hProcess, uint uExitCode) { }
+
+	private void ShutdownClient() { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 private enum Client.ConnectionProtocol // TypeDefIndex: 9144
 {
 	public int value__; 
-public const Client.ConnectionProtocol Raknet = 0;
-public const Client.ConnectionProtocol Steamworks = 1;
+	public const Client.ConnectionProtocol Raknet = 0;
+	public const Client.ConnectionProtocol Steamworks = 1;
 
 }
 
 public enum Client.ProcessAccessFlags // TypeDefIndex: 9145
 {
 	public uint value__; 
-public const Client.ProcessAccessFlags Terminate = 1;
-public const Client.ProcessAccessFlags Synchronize = 1048576;
+	public const Client.ProcessAccessFlags Terminate = 1;
+	public const Client.ProcessAccessFlags Synchronize = 1048576;
 
 }
 
@@ -678,10 +678,10 @@ private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 9146
 	private int <i>5__3; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -691,11 +691,11 @@ private sealed class Client.<>c // TypeDefIndex: 9147
 	public static Func<ConsoleSystem.Command, bool> <>9__39_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <DoClientConnected>b__39_0(ConsoleSystem.Command x) { }
+	internal bool <DoClientConnected>b__39_0(ConsoleSystem.Command x) { }
 
 }
 
@@ -707,28 +707,28 @@ private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnu
 	public Client <>4__this; 
 	private BenchmarkTimer <>7__wrap1; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private void <>m__Finally1() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -742,36 +742,36 @@ private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object
 	private BenchmarkTimer <>7__wrap1; 
 	private BenchmarkTimer <>7__wrap2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
+	private void <>m__Finally1() { }
 
-private void <>m__Finally2() { }
+	private void <>m__Finally2() { }
 
-private void <>m__Finally3() { }
+	private void <>m__Finally3() { }
 
-private void <>m__Finally4() { }
+	private void <>m__Finally4() { }
 
-private void <>m__Finally5() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private void <>m__Finally5() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -803,7 +803,7 @@ public class ClientFrametimeReport // TypeDefIndex: 9306
 	public List<int> frame_times; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -814,27 +814,27 @@ public class ClientFrametimeRequest // TypeDefIndex: 9307
 	public int max_frames; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ClientBuildingManager : BuildingManager // TypeDefIndex: 9827
 {
 
-public void Cycle() { }
+	public void Cycle() { }
 
-protected override BuildingManager.Building CreateBuilding(uint id) { }
+	protected override BuildingManager.Building CreateBuilding(uint id) { }
 
-protected override void DisposeBuilding(ref BuildingManager.Building building) { }
+	protected override void DisposeBuilding(ref BuildingManager.Building building) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public static class Client // TypeDefIndex: 11646
 {
-public const byte Default = 0;
-public const byte Tick = 1;
+	public const byte Default = 0;
+	public const byte Tick = 1;
 
 }
 
@@ -904,144 +904,144 @@ public class Client : ConsoleSystem // TypeDefIndex: 11888
 	public static int UnderwearSkin; 
 
 	[ClientVar] 
-public static float maxreceivetime { get; set; }
+	public static float maxreceivetime { get; set; }
 	[ClientVar] 
-public static float minreceivefraction { get; set; }
+	public static float minreceivefraction { get; set; }
 	[ClientVar] 
-public static bool camPhysical { get; set; }
+	public static bool camPhysical { get; set; }
 	[ClientVar] 
-public static int camPhysicalSensor { get; set; }
+	public static int camPhysicalSensor { get; set; }
 	[ClientVar] 
-public static float camPhysicalFocalLength { get; set; }
+	public static float camPhysicalFocalLength { get; set; }
 
 
-public static float get_maxreceivetime() { }
+	public static float get_maxreceivetime() { }
 
-public static void set_maxreceivetime(float value) { }
+	public static void set_maxreceivetime(float value) { }
 
-public static float get_minreceivefraction() { }
+	public static float get_minreceivefraction() { }
 
-public static void set_minreceivefraction(float value) { }
-
-	[ClientVar] 
-public static string connect(string address = "127.0.0.1:28015", string protocol = "", bool hideIpAddress = False) { }
+	public static void set_minreceivefraction(float value) { }
 
 	[ClientVar] 
-public static string connecthidden(string address = "127.0.0.1:28015", string protocol = "") { }
+	public static string connect(string address = "127.0.0.1:28015", string protocol = "", bool hideIpAddress = False) { }
 
 	[ClientVar] 
-public static string fps() { }
+	public static string connecthidden(string address = "127.0.0.1:28015", string protocol = "") { }
 
 	[ClientVar] 
-public static string disconnect() { }
+	public static string fps() { }
 
 	[ClientVar] 
-public static void report() { }
+	public static string disconnect() { }
 
 	[ClientVar] 
-public static string printpos() { }
+	public static void report() { }
 
 	[ClientVar] 
-public static string printrot() { }
+	public static string printpos() { }
 
 	[ClientVar] 
-public static string printeyes() { }
+	public static string printrot() { }
 
 	[ClientVar] 
-public static string printinput() { }
+	public static string printeyes() { }
 
 	[ClientVar] 
-public static string printhead() { }
-
-public static string GetClientFolder(string folder) { }
-
-public static bool get_camPhysical() { }
-
-public static void set_camPhysical(bool value) { }
-
-public static int get_camPhysicalSensor() { }
-
-public static void set_camPhysicalSensor(int value) { }
-
-public static float get_camPhysicalFocalLength() { }
-
-public static void set_camPhysicalFocalLength(float value) { }
+	public static string printinput() { }
 
 	[ClientVar] 
-public static void camPhysicalSensorTypes(ConsoleSystem.Arg arg) { }
+	public static string printhead() { }
+
+	public static string GetClientFolder(string folder) { }
+
+	public static bool get_camPhysical() { }
+
+	public static void set_camPhysical(bool value) { }
+
+	public static int get_camPhysicalSensor() { }
+
+	public static void set_camPhysicalSensor(int value) { }
+
+	public static float get_camPhysicalFocalLength() { }
+
+	public static void set_camPhysicalFocalLength(float value) { }
 
 	[ClientVar] 
-public static void sv(ConsoleSystem.Arg arg) { }
+	public static void camPhysicalSensorTypes(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void consoletoggle() { }
+	public static void sv(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static int ping() { }
+	public static void consoletoggle() { }
 
 	[ClientVar] 
-public static void benchmark(ConsoleSystem.Arg arg) { }
+	public static int ping() { }
 
 	[ClientVar] 
-public static void benchmark_demo(ConsoleSystem.Arg arg) { }
+	public static void benchmark(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void setunderwear(ConsoleSystem.Arg arg) { }
+	public static void benchmark_demo(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void PlayerSeed(ConsoleSystem.Arg arg) { }
+	public static void setunderwear(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void ShufflePlayerSeed(ConsoleSystem.Arg arg) { }
+	public static void PlayerSeed(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void ReportPlayer(ConsoleSystem.Arg arg) { }
+	public static void ShufflePlayerSeed(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void ReportBug(ConsoleSystem.Arg arg) { }
+	public static void ReportPlayer(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	[ClientVar] 
+	public static void ReportBug(ConsoleSystem.Arg arg) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum Client.CameraSensorType // TypeDefIndex: 11889
 {
 	public int value__; 
-public const Client.CameraSensorType _8Mm = 0;
-public const Client.CameraSensorType Super8Mm = 1;
-public const Client.CameraSensorType _16Mm = 2;
-public const Client.CameraSensorType Super16mm = 3;
-public const Client.CameraSensorType _32mm2Perf = 4;
-public const Client.CameraSensorType _35mmAcademy = 5;
-public const Client.CameraSensorType Super35 = 6;
-public const Client.CameraSensorType _65mmALEXA = 7;
-public const Client.CameraSensorType _70mm = 8;
-public const Client.CameraSensorType _70mmImax = 9;
-public const Client.CameraSensorType ALEXA_LF = 10;
-public const Client.CameraSensorType ALEXA_35 = 11;
-public const Client.CameraSensorType Custom = 12;
+	public const Client.CameraSensorType _8Mm = 0;
+	public const Client.CameraSensorType Super8Mm = 1;
+	public const Client.CameraSensorType _16Mm = 2;
+	public const Client.CameraSensorType Super16mm = 3;
+	public const Client.CameraSensorType _32mm2Perf = 4;
+	public const Client.CameraSensorType _35mmAcademy = 5;
+	public const Client.CameraSensorType Super35 = 6;
+	public const Client.CameraSensorType _65mmALEXA = 7;
+	public const Client.CameraSensorType _70mm = 8;
+	public const Client.CameraSensorType _70mmImax = 9;
+	public const Client.CameraSensorType ALEXA_LF = 10;
+	public const Client.CameraSensorType ALEXA_35 = 11;
+	public const Client.CameraSensorType Custom = 12;
 
 }
 
 public static class Client // TypeDefIndex: 12035
 {
-public const float UseDistance = 2;
+	public const float UseDistance = 2;
 	private static Scene _entityScene; 
 	private static Scene _effectScene; 
 	private static Scene _decorScene; 
 
-public static Scene EntityScene { get; }
-public static Scene EffectScene { get; }
-public static Scene DecorScene { get; }
+	public static Scene EntityScene { get; }
+	public static Scene EffectScene { get; }
+	public static Scene DecorScene { get; }
 
 
-public static Scene get_EntityScene() { }
+	public static Scene get_EntityScene() { }
 
-public static Scene get_EffectScene() { }
+	public static Scene get_EffectScene() { }
 
-public static Scene get_DecorScene() { }
+	public static Scene get_DecorScene() { }
 
 }
 

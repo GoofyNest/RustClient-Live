@@ -13,15 +13,15 @@ public class LookatHealth : MonoBehaviour // TypeDefIndex: 11081
 	internal Animator anim; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private bool UpdateInfo() { }
+	private bool UpdateInfo() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

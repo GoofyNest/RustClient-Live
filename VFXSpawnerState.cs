@@ -4,22 +4,22 @@ public sealed class VFXSpawnerState : IDisposable // TypeDefIndex: 4763
 	private bool m_Owner; 
 
 
-internal void .ctor(IntPtr ptr, bool owner) { }
+	internal void .ctor(IntPtr ptr, bool owner) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static VFXSpawnerState CreateSpawnerStateWrapper() { }
+	internal static VFXSpawnerState CreateSpawnerStateWrapper() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal void SetWrapValue(IntPtr ptr) { }
+	internal void SetWrapValue(IntPtr ptr) { }
 
-private void Release() { }
+	private void Release() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
 	[NativeMethodAttribute] 
-private static void Internal_Destroy(IntPtr ptr) { }
+	private static void Internal_Destroy(IntPtr ptr) { }
 
 }
 

@@ -20,7 +20,7 @@ public class TreeEntity : ResourceEntity, IPrefabPreProcess // TypeDefIndex: 865
 	private Vector3 hitDirection; 
 	private Vector3 rotateDirection; 
 	private float impactSoundCheckHeight; 
-private const float treeFallMaxDistSq = 10000;
+	private const float treeFallMaxDistSq = 10000;
 	public GameObjectRef prefab; 
 	public bool hasBonusGame; 
 	public GameObjectRef bonusHitEffect; 
@@ -30,33 +30,33 @@ private const float treeFallMaxDistSq = 10000;
 	public SoundDefinition smallCrackSoundDef; 
 	public SoundDefinition medCrackSoundDef; 
 	private float lastAttackDamage; 
-private const float crackSoundMaxDistSq = 900;
+	private const float crackSoundMaxDistSq = 900;
 	private TreeLOD skin; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void TreeFall(BaseEntity.RPCMessage msg) { }
+	public void TreeFall(BaseEntity.RPCMessage msg) { }
 
-public void TreeFallTick() { }
+	public void TreeFallTick() { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public override bool ShouldLerp() { }
+	public override bool ShouldLerp() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-internal override void DoNetworkDestroy() { }
+	internal override void DoNetworkDestroy() { }
 
 	[BaseEntity.RPC_Client] 
-public void CrackSound(BaseEntity.RPCMessage msg) { }
+	public void CrackSound(BaseEntity.RPCMessage msg) { }
 
-public override float BoundsPadding() { }
+	public override float BoundsPadding() { }
 
-public override void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public override void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -2,289 +2,289 @@ public class CommandBuffer : IDisposable // TypeDefIndex: 3841
 {
 	internal IntPtr m_Ptr; 
 
-public string name { get; set; }
+	public string name { get; set; }
 
 
 	[FreeFunctionAttribute] 
-private void Internal_SetSinglePassStereo(SinglePassStereoMode mode) { }
+	private void Internal_SetSinglePassStereo(SinglePassStereoMode mode) { }
 
 	[FreeFunctionAttribute] 
-private static IntPtr InitBuffer() { }
+	private static IntPtr InitBuffer() { }
 
 	[FreeFunctionAttribute] 
-private void ReleaseBuffer() { }
+	private void ReleaseBuffer() { }
 
 	[FreeFunctionAttribute] 
-public void SetComputeVectorParam(ComputeShader computeShader, int nameID, Vector4 val) { }
+	public void SetComputeVectorParam(ComputeShader computeShader, int nameID, Vector4 val) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_SetComputeFloats(ComputeShader computeShader, int nameID, float[] values) { }
+	private void Internal_SetComputeFloats(ComputeShader computeShader, int nameID, float[] values) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_SetComputeTextureParam(ComputeShader computeShader, int kernelIndex, int nameID, ref RenderTargetIdentifier rt, int mipLevel, RenderTextureSubElement element) { }
+	private void Internal_SetComputeTextureParam(ComputeShader computeShader, int kernelIndex, int nameID, ref RenderTargetIdentifier rt, int mipLevel, RenderTextureSubElement element) { }
 
 	[FreeFunctionAttribute] 
-public void SetComputeBufferParam(ComputeShader computeShader, int kernelIndex, int nameID, ComputeBuffer buffer) { }
+	public void SetComputeBufferParam(ComputeShader computeShader, int kernelIndex, int nameID, ComputeBuffer buffer) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_DispatchCompute(ComputeShader computeShader, int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ) { }
+	private void Internal_DispatchCompute(ComputeShader computeShader, int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ) { }
 
 	[NativeMethodAttribute] 
-private void Internal_GenerateMips(RenderTexture rt) { }
+	private void Internal_GenerateMips(RenderTexture rt) { }
 
-public string get_name() { }
+	public string get_name() { }
 
-public void set_name(string value) { }
-
-	[NativeMethodAttribute] 
-public void Clear() { }
-
-	[FreeFunctionAttribute] 
-private void Internal_DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
+	public void set_name(string value) { }
 
 	[NativeMethodAttribute] 
-private void Internal_DrawRenderer(Renderer renderer, Material material, int submeshIndex, int shaderPass) { }
+	public void Clear() { }
 
 	[FreeFunctionAttribute] 
-private void Internal_DrawMeshInstanced(Mesh mesh, int submeshIndex, Material material, int shaderPass, Matrix4x4[] matrices, int count, MaterialPropertyBlock properties) { }
+	private void Internal_DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
+
+	[NativeMethodAttribute] 
+	private void Internal_DrawRenderer(Renderer renderer, Material material, int submeshIndex, int shaderPass) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, int shaderPass, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties) { }
+	private void Internal_DrawMeshInstanced(Mesh mesh, int submeshIndex, Material material, int shaderPass, Matrix4x4[] matrices, int count, MaterialPropertyBlock properties) { }
 
 	[FreeFunctionAttribute] 
-public void SetViewport(Rect pixelRect) { }
+	private void Internal_DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, int shaderPass, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties) { }
 
 	[FreeFunctionAttribute] 
-private void CopyTexture_Internal(ref RenderTargetIdentifier src, int srcElement, int srcMip, int srcX, int srcY, int srcWidth, int srcHeight, ref RenderTargetIdentifier dst, int dstElement, int dstMip, int dstX, int dstY, int mode) { }
+	public void SetViewport(Rect pixelRect) { }
 
 	[FreeFunctionAttribute] 
-private void Blit_Texture(Texture source, ref RenderTargetIdentifier dest, Material mat, int pass, Vector2 scale, Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
+	private void CopyTexture_Internal(ref RenderTargetIdentifier src, int srcElement, int srcMip, int srcX, int srcY, int srcWidth, int srcHeight, ref RenderTargetIdentifier dst, int dstElement, int dstMip, int dstX, int dstY, int mode) { }
 
 	[FreeFunctionAttribute] 
-private void Blit_Identifier(ref RenderTargetIdentifier source, ref RenderTargetIdentifier dest, Material mat, int pass, Vector2 scale, Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
+	private void Blit_Texture(Texture source, ref RenderTargetIdentifier dest, Material mat, int pass, Vector2 scale, Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
 
 	[FreeFunctionAttribute] 
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode, bool useDynamicScale) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode, bool useDynamicScale) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing, bool enableRandomWrite) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter) { }
-
-public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer) { }
-
-public void GetTemporaryRT(int nameID, int width, int height) { }
+	private void Blit_Identifier(ref RenderTargetIdentifier source, ref RenderTargetIdentifier dest, Material mat, int pass, Vector2 scale, Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
 
 	[FreeFunctionAttribute] 
-private void GetTemporaryRTWithDescriptor(int nameID, RenderTextureDescriptor desc, FilterMode filter) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode, bool useDynamicScale) { }
 
-public void GetTemporaryRT(int nameID, RenderTextureDescriptor desc, FilterMode filter) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode) { }
 
-public void GetTemporaryRT(int nameID, RenderTextureDescriptor desc) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format, int antiAliasing) { }
 
-	[FreeFunctionAttribute] 
-public void ReleaseTemporaryRT(int nameID) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, GraphicsFormat format) { }
 
-	[FreeFunctionAttribute] 
-public void ClearRenderTarget(bool clearDepth, bool clearColor, Color backgroundColor, float depth) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode, bool useDynamicScale) { }
 
-public void ClearRenderTarget(bool clearDepth, bool clearColor, Color backgroundColor) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing, bool enableRandomWrite, RenderTextureMemoryless memorylessMode) { }
 
-	[FreeFunctionAttribute] 
-public void SetGlobalFloat(int nameID, float value) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing, bool enableRandomWrite) { }
 
-	[FreeFunctionAttribute] 
-public void SetGlobalInt(int nameID, int value) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite, int antiAliasing) { }
 
-	[FreeFunctionAttribute] 
-public void SetGlobalVector(int nameID, Vector4 value) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format, RenderTextureReadWrite readWrite) { }
 
-	[FreeFunctionAttribute] 
-public void SetGlobalColor(int nameID, Color value) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter, RenderTextureFormat format) { }
 
-	[FreeFunctionAttribute] 
-public void SetGlobalMatrix(int nameID, Matrix4x4 value) { }
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer, FilterMode filter) { }
+
+	public void GetTemporaryRT(int nameID, int width, int height, int depthBuffer) { }
+
+	public void GetTemporaryRT(int nameID, int width, int height) { }
 
 	[FreeFunctionAttribute] 
-public void EnableShaderKeyword(string keyword) { }
+	private void GetTemporaryRTWithDescriptor(int nameID, RenderTextureDescriptor desc, FilterMode filter) { }
+
+	public void GetTemporaryRT(int nameID, RenderTextureDescriptor desc, FilterMode filter) { }
+
+	public void GetTemporaryRT(int nameID, RenderTextureDescriptor desc) { }
 
 	[FreeFunctionAttribute] 
-public void DisableShaderKeyword(string keyword) { }
+	public void ReleaseTemporaryRT(int nameID) { }
 
 	[FreeFunctionAttribute] 
-public void SetViewProjectionMatrices(Matrix4x4 view, Matrix4x4 proj) { }
+	public void ClearRenderTarget(bool clearDepth, bool clearColor, Color backgroundColor, float depth) { }
+
+	public void ClearRenderTarget(bool clearDepth, bool clearColor, Color backgroundColor) { }
 
 	[FreeFunctionAttribute] 
-private bool ValidateAgainstExecutionFlags(CommandBufferExecutionFlags requiredFlags, CommandBufferExecutionFlags invalidFlags) { }
+	public void SetGlobalFloat(int nameID, float value) { }
 
 	[FreeFunctionAttribute] 
-public void SetGlobalVectorArray(int nameID, Vector4[] values) { }
+	public void SetGlobalInt(int nameID, int value) { }
 
 	[FreeFunctionAttribute] 
-public void SetGlobalMatrixArray(int nameID, Matrix4x4[] values) { }
+	public void SetGlobalVector(int nameID, Vector4 value) { }
 
 	[FreeFunctionAttribute] 
-private void SetGlobalTexture_Impl(int nameID, ref RenderTargetIdentifier rt, RenderTextureSubElement element) { }
+	public void SetGlobalColor(int nameID, Color value) { }
 
 	[FreeFunctionAttribute] 
-public void SetGlobalBuffer(int nameID, ComputeBuffer value) { }
+	public void SetGlobalMatrix(int nameID, Matrix4x4 value) { }
 
 	[FreeFunctionAttribute] 
-private void SetShadowSamplingMode_Impl(ref RenderTargetIdentifier shadowmap, ShadowSamplingMode mode) { }
+	public void EnableShaderKeyword(string keyword) { }
 
 	[FreeFunctionAttribute] 
-public void BeginSample(string name) { }
+	public void DisableShaderKeyword(string keyword) { }
 
 	[FreeFunctionAttribute] 
-public void EndSample(string name) { }
+	public void SetViewProjectionMatrices(Matrix4x4 view, Matrix4x4 proj) { }
 
 	[FreeFunctionAttribute] 
-private void IssuePluginEventAndDataInternal(IntPtr callback, int eventID, IntPtr data) { }
+	private bool ValidateAgainstExecutionFlags(CommandBufferExecutionFlags requiredFlags, CommandBufferExecutionFlags invalidFlags) { }
 
-public void SetRenderTarget(RenderTargetIdentifier rt) { }
+	[FreeFunctionAttribute] 
+	public void SetGlobalVectorArray(int nameID, Vector4[] values) { }
 
-public void SetRenderTarget(RenderTargetIdentifier rt, RenderBufferLoadAction loadAction, RenderBufferStoreAction storeAction) { }
+	[FreeFunctionAttribute] 
+	public void SetGlobalMatrixArray(int nameID, Matrix4x4[] values) { }
 
-public void SetRenderTarget(RenderTargetIdentifier rt, int mipLevel, CubemapFace cubemapFace, int depthSlice) { }
+	[FreeFunctionAttribute] 
+	private void SetGlobalTexture_Impl(int nameID, ref RenderTargetIdentifier rt, RenderTextureSubElement element) { }
 
-public void SetRenderTarget(RenderTargetIdentifier color, RenderTargetIdentifier depth) { }
+	[FreeFunctionAttribute] 
+	public void SetGlobalBuffer(int nameID, ComputeBuffer value) { }
 
-public void SetRenderTarget(RenderTargetIdentifier color, RenderTargetIdentifier depth, int mipLevel, CubemapFace cubemapFace, int depthSlice) { }
+	[FreeFunctionAttribute] 
+	private void SetShadowSamplingMode_Impl(ref RenderTargetIdentifier shadowmap, ShadowSamplingMode mode) { }
 
-public void SetRenderTarget(RenderTargetIdentifier color, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderTargetIdentifier depth, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	[FreeFunctionAttribute] 
+	public void BeginSample(string name) { }
 
-public void SetRenderTarget(RenderTargetIdentifier[] colors, RenderTargetIdentifier depth) { }
+	[FreeFunctionAttribute] 
+	public void EndSample(string name) { }
 
-private void SetRenderTargetSingle_Internal(RenderTargetIdentifier rt, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	[FreeFunctionAttribute] 
+	private void IssuePluginEventAndDataInternal(IntPtr callback, int eventID, IntPtr data) { }
 
-private void SetRenderTargetColorDepth_Internal(RenderTargetIdentifier color, RenderTargetIdentifier depth, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	public void SetRenderTarget(RenderTargetIdentifier rt) { }
 
-private void SetRenderTargetMulti_Internal(RenderTargetIdentifier[] colors, RenderTargetIdentifier depth, RenderBufferLoadAction[] colorLoadActions, RenderBufferStoreAction[] colorStoreActions, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	public void SetRenderTarget(RenderTargetIdentifier rt, RenderBufferLoadAction loadAction, RenderBufferStoreAction storeAction) { }
 
-protected override void Finalize() { }
+	public void SetRenderTarget(RenderTargetIdentifier rt, int mipLevel, CubemapFace cubemapFace, int depthSlice) { }
 
-public void Dispose() { }
+	public void SetRenderTarget(RenderTargetIdentifier color, RenderTargetIdentifier depth) { }
 
-private void Dispose(bool disposing) { }
+	public void SetRenderTarget(RenderTargetIdentifier color, RenderTargetIdentifier depth, int mipLevel, CubemapFace cubemapFace, int depthSlice) { }
 
-public void .ctor() { }
+	public void SetRenderTarget(RenderTargetIdentifier color, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderTargetIdentifier depth, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
 
-public void SetComputeVectorParam(ComputeShader computeShader, string name, Vector4 val) { }
+	public void SetRenderTarget(RenderTargetIdentifier[] colors, RenderTargetIdentifier depth) { }
 
-public void SetComputeFloatParams(ComputeShader computeShader, string name, float[] values) { }
+	private void SetRenderTargetSingle_Internal(RenderTargetIdentifier rt, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
 
-public void SetComputeTextureParam(ComputeShader computeShader, int kernelIndex, string name, RenderTargetIdentifier rt) { }
+	private void SetRenderTargetColorDepth_Internal(RenderTargetIdentifier color, RenderTargetIdentifier depth, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
 
-public void SetComputeBufferParam(ComputeShader computeShader, int kernelIndex, string name, ComputeBuffer buffer) { }
+	private void SetRenderTargetMulti_Internal(RenderTargetIdentifier[] colors, RenderTargetIdentifier depth, RenderBufferLoadAction[] colorLoadActions, RenderBufferStoreAction[] colorStoreActions, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
 
-public void DispatchCompute(ComputeShader computeShader, int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ) { }
+	protected override void Finalize() { }
 
-public void GenerateMips(RenderTexture rt) { }
+	public void Dispose() { }
 
-public void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
+	private void Dispose(bool disposing) { }
 
-public void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass) { }
+	public void .ctor() { }
 
-public void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex) { }
+	public void SetComputeVectorParam(ComputeShader computeShader, string name, Vector4 val) { }
 
-public void DrawRenderer(Renderer renderer, Material material, int submeshIndex, int shaderPass) { }
+	public void SetComputeFloatParams(ComputeShader computeShader, string name, float[] values) { }
 
-public void DrawRenderer(Renderer renderer, Material material, int submeshIndex) { }
+	public void SetComputeTextureParam(ComputeShader computeShader, int kernelIndex, string name, RenderTargetIdentifier rt) { }
 
-public void DrawRenderer(Renderer renderer, Material material) { }
+	public void SetComputeBufferParam(ComputeShader computeShader, int kernelIndex, string name, ComputeBuffer buffer) { }
 
-public void DrawMeshInstanced(Mesh mesh, int submeshIndex, Material material, int shaderPass, Matrix4x4[] matrices, int count, MaterialPropertyBlock properties) { }
+	public void DispatchCompute(ComputeShader computeShader, int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ) { }
 
-public void DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, int shaderPass, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties) { }
+	public void GenerateMips(RenderTexture rt) { }
 
-public void CopyTexture(RenderTargetIdentifier src, RenderTargetIdentifier dst) { }
+	public void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
 
-public void CopyTexture(RenderTargetIdentifier src, int srcElement, int srcMip, RenderTargetIdentifier dst, int dstElement, int dstMip) { }
+	public void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass) { }
 
-public void CopyTexture(RenderTargetIdentifier src, int srcElement, int srcMip, int srcX, int srcY, int srcWidth, int srcHeight, RenderTargetIdentifier dst, int dstElement, int dstMip, int dstX, int dstY) { }
+	public void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int submeshIndex) { }
 
-public void Blit(Texture source, RenderTargetIdentifier dest) { }
+	public void DrawRenderer(Renderer renderer, Material material, int submeshIndex, int shaderPass) { }
 
-public void Blit(Texture source, RenderTargetIdentifier dest, Material mat) { }
+	public void DrawRenderer(Renderer renderer, Material material, int submeshIndex) { }
 
-public void Blit(Texture source, RenderTargetIdentifier dest, Material mat, int pass) { }
+	public void DrawRenderer(Renderer renderer, Material material) { }
 
-public void Blit(RenderTargetIdentifier source, RenderTargetIdentifier dest) { }
+	public void DrawMeshInstanced(Mesh mesh, int submeshIndex, Material material, int shaderPass, Matrix4x4[] matrices, int count, MaterialPropertyBlock properties) { }
 
-public void Blit(RenderTargetIdentifier source, RenderTargetIdentifier dest, Material mat) { }
+	public void DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, int shaderPass, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties) { }
 
-public void Blit(RenderTargetIdentifier source, RenderTargetIdentifier dest, Material mat, int pass) { }
+	public void CopyTexture(RenderTargetIdentifier src, RenderTargetIdentifier dst) { }
 
-public void SetGlobalFloat(string name, float value) { }
+	public void CopyTexture(RenderTargetIdentifier src, int srcElement, int srcMip, RenderTargetIdentifier dst, int dstElement, int dstMip) { }
 
-public void SetGlobalInt(string name, int value) { }
+	public void CopyTexture(RenderTargetIdentifier src, int srcElement, int srcMip, int srcX, int srcY, int srcWidth, int srcHeight, RenderTargetIdentifier dst, int dstElement, int dstMip, int dstX, int dstY) { }
 
-public void SetGlobalVector(string name, Vector4 value) { }
+	public void Blit(Texture source, RenderTargetIdentifier dest) { }
 
-public void SetGlobalColor(string name, Color value) { }
+	public void Blit(Texture source, RenderTargetIdentifier dest, Material mat) { }
 
-public void SetGlobalMatrix(string name, Matrix4x4 value) { }
+	public void Blit(Texture source, RenderTargetIdentifier dest, Material mat, int pass) { }
 
-public void SetGlobalVectorArray(string propertyName, Vector4[] values) { }
+	public void Blit(RenderTargetIdentifier source, RenderTargetIdentifier dest) { }
 
-public void SetGlobalMatrixArray(string propertyName, Matrix4x4[] values) { }
+	public void Blit(RenderTargetIdentifier source, RenderTargetIdentifier dest, Material mat) { }
 
-public void SetGlobalTexture(string name, RenderTargetIdentifier value) { }
+	public void Blit(RenderTargetIdentifier source, RenderTargetIdentifier dest, Material mat, int pass) { }
 
-public void SetGlobalTexture(int nameID, RenderTargetIdentifier value) { }
+	public void SetGlobalFloat(string name, float value) { }
 
-public void SetGlobalTexture(int nameID, RenderTargetIdentifier value, RenderTextureSubElement element) { }
+	public void SetGlobalInt(string name, int value) { }
 
-public void SetGlobalBuffer(string name, ComputeBuffer value) { }
+	public void SetGlobalVector(string name, Vector4 value) { }
 
-public void SetShadowSamplingMode(RenderTargetIdentifier shadowmap, ShadowSamplingMode mode) { }
+	public void SetGlobalColor(string name, Color value) { }
 
-public void SetSinglePassStereo(SinglePassStereoMode mode) { }
+	public void SetGlobalMatrix(string name, Matrix4x4 value) { }
 
-public void IssuePluginEventAndData(IntPtr callback, int eventID, IntPtr data) { }
+	public void SetGlobalVectorArray(string propertyName, Vector4[] values) { }
 
-private void SetComputeVectorParam_Injected(ComputeShader computeShader, int nameID, ref Vector4 val) { }
+	public void SetGlobalMatrixArray(string propertyName, Matrix4x4[] values) { }
 
-private void Internal_DrawMesh_Injected(Mesh mesh, ref Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
+	public void SetGlobalTexture(string name, RenderTargetIdentifier value) { }
 
-private void SetViewport_Injected(ref Rect pixelRect) { }
+	public void SetGlobalTexture(int nameID, RenderTargetIdentifier value) { }
 
-private void Blit_Texture_Injected(Texture source, ref RenderTargetIdentifier dest, Material mat, int pass, ref Vector2 scale, ref Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
+	public void SetGlobalTexture(int nameID, RenderTargetIdentifier value, RenderTextureSubElement element) { }
 
-private void Blit_Identifier_Injected(ref RenderTargetIdentifier source, ref RenderTargetIdentifier dest, Material mat, int pass, ref Vector2 scale, ref Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
+	public void SetGlobalBuffer(string name, ComputeBuffer value) { }
 
-private void GetTemporaryRTWithDescriptor_Injected(int nameID, ref RenderTextureDescriptor desc, FilterMode filter) { }
+	public void SetShadowSamplingMode(RenderTargetIdentifier shadowmap, ShadowSamplingMode mode) { }
 
-private void ClearRenderTarget_Injected(bool clearDepth, bool clearColor, ref Color backgroundColor, float depth) { }
+	public void SetSinglePassStereo(SinglePassStereoMode mode) { }
 
-private void SetGlobalVector_Injected(int nameID, ref Vector4 value) { }
+	public void IssuePluginEventAndData(IntPtr callback, int eventID, IntPtr data) { }
 
-private void SetGlobalColor_Injected(int nameID, ref Color value) { }
+	private void SetComputeVectorParam_Injected(ComputeShader computeShader, int nameID, ref Vector4 val) { }
 
-private void SetGlobalMatrix_Injected(int nameID, ref Matrix4x4 value) { }
+	private void Internal_DrawMesh_Injected(Mesh mesh, ref Matrix4x4 matrix, Material material, int submeshIndex, int shaderPass, MaterialPropertyBlock properties) { }
 
-private void SetViewProjectionMatrices_Injected(ref Matrix4x4 view, ref Matrix4x4 proj) { }
+	private void SetViewport_Injected(ref Rect pixelRect) { }
 
-private void SetRenderTargetSingle_Internal_Injected(ref RenderTargetIdentifier rt, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	private void Blit_Texture_Injected(Texture source, ref RenderTargetIdentifier dest, Material mat, int pass, ref Vector2 scale, ref Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
 
-private void SetRenderTargetColorDepth_Internal_Injected(ref RenderTargetIdentifier color, ref RenderTargetIdentifier depth, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	private void Blit_Identifier_Injected(ref RenderTargetIdentifier source, ref RenderTargetIdentifier dest, Material mat, int pass, ref Vector2 scale, ref Vector2 offset, int sourceDepthSlice, int destDepthSlice) { }
 
-private void SetRenderTargetMulti_Internal_Injected(RenderTargetIdentifier[] colors, ref RenderTargetIdentifier depth, RenderBufferLoadAction[] colorLoadActions, RenderBufferStoreAction[] colorStoreActions, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+	private void GetTemporaryRTWithDescriptor_Injected(int nameID, ref RenderTextureDescriptor desc, FilterMode filter) { }
+
+	private void ClearRenderTarget_Injected(bool clearDepth, bool clearColor, ref Color backgroundColor, float depth) { }
+
+	private void SetGlobalVector_Injected(int nameID, ref Vector4 value) { }
+
+	private void SetGlobalColor_Injected(int nameID, ref Color value) { }
+
+	private void SetGlobalMatrix_Injected(int nameID, ref Matrix4x4 value) { }
+
+	private void SetViewProjectionMatrices_Injected(ref Matrix4x4 view, ref Matrix4x4 proj) { }
+
+	private void SetRenderTargetSingle_Internal_Injected(ref RenderTargetIdentifier rt, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+
+	private void SetRenderTargetColorDepth_Internal_Injected(ref RenderTargetIdentifier color, ref RenderTargetIdentifier depth, RenderBufferLoadAction colorLoadAction, RenderBufferStoreAction colorStoreAction, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
+
+	private void SetRenderTargetMulti_Internal_Injected(RenderTargetIdentifier[] colors, ref RenderTargetIdentifier depth, RenderBufferLoadAction[] colorLoadActions, RenderBufferStoreAction[] colorStoreActions, RenderBufferLoadAction depthLoadAction, RenderBufferStoreAction depthStoreAction) { }
 
 }
 

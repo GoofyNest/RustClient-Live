@@ -10,17 +10,17 @@ internal class Bootstring // TypeDefIndex: 744
 	private readonly int initial_n; 
 
 
-public void .ctor(char delimiter, int baseNum, int tmin, int tmax, int skew, int damp, int initialBias, int initialN) { }
+	public void .ctor(char delimiter, int baseNum, int tmin, int tmax, int skew, int damp, int initialBias, int initialN) { }
 
-public string Encode(string s, int offset) { }
+	public string Encode(string s, int offset) { }
 
-private char EncodeDigit(int d) { }
+	private char EncodeDigit(int d) { }
 
-private int DecodeDigit(char c) { }
+	private int DecodeDigit(char c) { }
 
-private int Adapt(int delta, int numPoints, bool firstTime) { }
+	private int Adapt(int delta, int numPoints, bool firstTime) { }
 
-public string Decode(string s, int offset) { }
+	public string Decode(string s, int offset) { }
 
 }
 

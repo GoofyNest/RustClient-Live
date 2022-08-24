@@ -44,13 +44,13 @@ public class ERSORoadExt : ScriptableObject // TypeDefIndex: 7229
 	public bool clampToMarkers; 
 
 
-public void Init(SideObject so) { }
+	public void Init(SideObject so) { }
 
-public static ERSORoadExt CreateInstance(SideObject so) { }
+	public static ERSORoadExt CreateInstance(SideObject so) { }
 
-public static void Copy(ERSORoadExt source, ERSORoadExt target) { }
+	public static void Copy(ERSORoadExt source, ERSORoadExt target) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

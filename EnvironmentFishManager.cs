@@ -15,25 +15,25 @@ public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // Typ
 	private float nextFishUpdateTime; 
 
 
-public int GetMaxFish() { }
+	public int GetMaxFish() { }
 
-public void Init() { }
+	public void Init() { }
 
-public void GenerateFish() { }
+	public void GenerateFish() { }
 
-public void Cleanup() { }
+	public void Cleanup() { }
 
-public void Awake() { }
+	public void Awake() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateFish() { }
+	public void UpdateFish() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -50,24 +50,24 @@ public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 8950
 	public List<EnvironmentFish> sleeping; 
 
 
-public float GetPopulationScaleForPoint(Vector3 point) { }
+	public float GetPopulationScaleForPoint(Vector3 point) { }
 
-public EnvironmentFish GetSleeping() { }
+	public EnvironmentFish GetSleeping() { }
 
-public void Sleep(EnvironmentFish toSleep) { }
+	public void Sleep(EnvironmentFish toSleep) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class EnvironmentFishManager.EnvironmentFishWorkQueue : ObjectWorkQueue<EnvironmentFish> // TypeDefIndex: 8951
 {
 
-protected override void RunJob(EnvironmentFish entity) { }
+	protected override void RunJob(EnvironmentFish entity) { }
 
-protected override bool ShouldAdd(EnvironmentFish entity) { }
+	protected override bool ShouldAdd(EnvironmentFish entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

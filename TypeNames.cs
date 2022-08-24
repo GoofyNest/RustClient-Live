@@ -2,18 +2,18 @@ internal abstract class TypeNames.ATypeName : TypeName, IEquatable<TypeName> // 
 {
 
 internal abstract class TypeNames.ATypeName : TypeName, IEquatable<TypeName> 
-public abstract string DisplayName { get; }
+	public abstract string DisplayName { get; }
 
 
-public abstract string get_DisplayName();
+	public abstract string get_DisplayName();
 
-public bool Equals(TypeName other) { }
+	public bool Equals(TypeName other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

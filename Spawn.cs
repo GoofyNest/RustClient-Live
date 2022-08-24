@@ -25,26 +25,26 @@ public class Spawn : ConsoleSystem // TypeDefIndex: 11957
 
 
 	[ServerVar] 
-public static void fill_populations(ConsoleSystem.Arg args) { }
+	public static void fill_populations(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
-public static void fill_groups(ConsoleSystem.Arg args) { }
+	public static void fill_groups(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
-public static void fill_individuals(ConsoleSystem.Arg args) { }
+	public static void fill_individuals(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
-public static void report(ConsoleSystem.Arg args) { }
+	public static void report(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
-public static void scalars(ConsoleSystem.Arg args) { }
+	public static void scalars(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
-public static void cargoshipevent(ConsoleSystem.Arg args) { }
+	public static void cargoshipevent(ConsoleSystem.Arg args) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

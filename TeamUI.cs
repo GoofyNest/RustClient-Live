@@ -14,19 +14,19 @@ public class TeamUI : MonoBehaviour // TypeDefIndex: 11231
 	public static string pendingTeamLeaderName; 
 
 
-public void Update() { }
+	public void Update() { }
 
-public void LeaveTeamClicked() { }
+	public void LeaveTeamClicked() { }
 
-public void CreateTeam() { }
+	public void CreateTeam() { }
 
-public void AcceptJoin() { }
+	public void AcceptJoin() { }
 
-public void RejectJoin() { }
+	public void RejectJoin() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -1,7 +1,7 @@
 public class MissionObjective : ScriptableObject // TypeDefIndex: 10218
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -11,7 +11,7 @@ public class MissionObjective_AcquireItem : MissionObjective // TypeDefIndex: 10
 	public int targetItemAmount; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -20,7 +20,7 @@ public class MissionObjective_FreeCrate : MissionObjective // TypeDefIndex: 1022
 	public int targetAmount; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -30,7 +30,7 @@ public class MissionObjective_Harvest : MissionObjective // TypeDefIndex: 10221
 	public int targetItemAmount; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -41,7 +41,7 @@ public class MissionObjective_KillEntity : MissionObjective // TypeDefIndex: 102
 	public bool shouldUpdateMissionLocation; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -52,7 +52,7 @@ public class MissionObjective_Move : MissionObjective // TypeDefIndex: 10223
 	public bool use2D; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -62,7 +62,7 @@ public class MissionObjective_SpeakWith : MissionObjective // TypeDefIndex: 1022
 	public bool destroyReturnItems; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

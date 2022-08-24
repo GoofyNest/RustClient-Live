@@ -6,13 +6,13 @@ public class PaperDollSegment : BaseMonoBehaviour, IPointerEnterHandler, IEventS
 	public Image overlayImg; 
 
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void SetSegmentVisible(bool vis) { }
+	public void SetSegmentVisible(bool vis) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

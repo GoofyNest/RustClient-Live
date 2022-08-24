@@ -3,39 +3,39 @@ internal sealed class SqlStringStorage : DataStorage // TypeDefIndex: 4425
 	private SqlString[] _values; 
 
 
-public void .ctor(DataColumn column) { }
+	public void .ctor(DataColumn column) { }
 
-public override object Aggregate(int[] recordNos, AggregateType kind) { }
+	public override object Aggregate(int[] recordNos, AggregateType kind) { }
 
-public override int Compare(int recordNo1, int recordNo2) { }
+	public override int Compare(int recordNo1, int recordNo2) { }
 
-public int Compare(SqlString valueNo1, SqlString valueNo2) { }
+	public int Compare(SqlString valueNo1, SqlString valueNo2) { }
 
-public override int CompareValueTo(int recordNo, object value) { }
+	public override int CompareValueTo(int recordNo, object value) { }
 
-public override object ConvertValue(object value) { }
+	public override object ConvertValue(object value) { }
 
-public override void Copy(int recordNo1, int recordNo2) { }
+	public override void Copy(int recordNo1, int recordNo2) { }
 
-public override object Get(int record) { }
+	public override object Get(int record) { }
 
-public override int GetStringLength(int record) { }
+	public override int GetStringLength(int record) { }
 
-public override bool IsNull(int record) { }
+	public override bool IsNull(int record) { }
 
-public override void Set(int record, object value) { }
+	public override void Set(int record, object value) { }
 
-public override void SetCapacity(int capacity) { }
+	public override void SetCapacity(int capacity) { }
 
-public override object ConvertXmlToObject(string s) { }
+	public override object ConvertXmlToObject(string s) { }
 
-public override string ConvertObjectToXml(object value) { }
+	public override string ConvertObjectToXml(object value) { }
 
-protected override object GetEmptyStorage(int recordCount) { }
+	protected override object GetEmptyStorage(int recordCount) { }
 
-protected override void CopyValue(int record, object store, BitArray nullbits, int storeIndex) { }
+	protected override void CopyValue(int record, object store, BitArray nullbits, int storeIndex) { }
 
-protected override void SetStorage(object store, BitArray nullbits) { }
+	protected override void SetStorage(object store, BitArray nullbits) { }
 
 }
 

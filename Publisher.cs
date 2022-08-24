@@ -9,40 +9,40 @@ public class Publisher : MonoBehaviour // TypeDefIndex: 7762
 	private string Title; 
 	private GameObject Prefab; 
 
-protected WorkshopInterface Interface { get; }
-protected WorkshopItemEditor Editor { get; }
+	protected WorkshopInterface Interface { get; }
+	protected WorkshopItemEditor Editor { get; }
 
 
-protected WorkshopInterface get_Interface() { }
+	protected WorkshopInterface get_Interface() { }
 
-protected WorkshopItemEditor get_Editor() { }
+	protected WorkshopItemEditor get_Editor() { }
 
-public void StartExport() { }
+	public void StartExport() { }
 
-public void Update() { }
+	public void Update() { }
 
-public bool CanPublish() { }
-
-	[AsyncStateMachineAttribute] 
-private Task DoExport(bool publishToSteam, bool OpenFolder, string forceFolderName) { }
+	public bool CanPublish() { }
 
 	[AsyncStateMachineAttribute] 
-private Task ExportToFolder(string folder, bool OpenFolder) { }
-
-private void CreateWorkshopIcon(string folder) { }
+	private Task DoExport(bool publishToSteam, bool OpenFolder, string forceFolderName) { }
 
 	[AsyncStateMachineAttribute] 
-private Task PublishToSteam(string folder) { }
+	private Task ExportToFolder(string folder, bool OpenFolder) { }
+
+	private void CreateWorkshopIcon(string folder) { }
 
 	[AsyncStateMachineAttribute] 
-private Task ExportTexture(Dictionary<string, string> data, string folder, int group, string paramname, Material mat, Material defaultMat, bool isNormalMap = False) { }
-
-public void Export() { }
+	private Task PublishToSteam(string folder) { }
 
 	[AsyncStateMachineAttribute] 
-public Task DoExport() { }
+	private Task ExportTexture(Dictionary<string, string> data, string folder, int group, string paramname, Material mat, Material defaultMat, bool isNormalMap = False) { }
 
-public void .ctor() { }
+	public void Export() { }
+
+	[AsyncStateMachineAttribute] 
+	public Task DoExport() { }
+
+	public void .ctor() { }
 
 }
 
@@ -58,10 +58,10 @@ private struct Publisher.<DoExport>d__15 : IAsyncStateMachine // TypeDefIndex: 7
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -82,10 +82,10 @@ private struct Publisher.<ExportToFolder>d__16 : IAsyncStateMachine // TypeDefIn
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -99,10 +99,10 @@ private struct Publisher.<PublishToSteam>d__18 : IAsyncStateMachine // TypeDefIn
 	private TaskAwaiter<Nullable<Item>> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -121,10 +121,10 @@ private struct Publisher.<ExportTexture>d__19 : IAsyncStateMachine // TypeDefInd
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -137,10 +137,10 @@ private struct Publisher.<DoExport>d__21 : IAsyncStateMachine // TypeDefIndex: 7
 	private TaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

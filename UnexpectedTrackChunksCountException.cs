@@ -6,7 +6,7 @@ public sealed class UnexpectedTrackChunksCountException : MidiException // TypeD
 	private readonly int <ActualCount>k__BackingField; 
 
 
-internal void .ctor(int expectedCount, int actualCount) { }
+	internal void .ctor(int expectedCount, int actualCount) { }
 
 }
 

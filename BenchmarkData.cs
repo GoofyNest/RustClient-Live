@@ -17,30 +17,30 @@ public class BenchmarkData // TypeDefIndex: 6178
 	private float lastTime; 
 	private double frameTimes; 
 
-private float AvgMilliseconds { get; }
-private float avgFrameRate { get; }
+	private float AvgMilliseconds { get; }
+	private float avgFrameRate { get; }
 
 
-public static BenchmarkData New() { }
+	public static BenchmarkData New() { }
 
-public void WriteTimersToResults() { }
+	public void WriteTimersToResults() { }
 
 	[AsyncStateMachineAttribute] 
-public Task<string> Upload() { }
+	public Task<string> Upload() { }
 
-public string WriteJSON() { }
+	public string WriteJSON() { }
 
-private float get_AvgMilliseconds() { }
+	private float get_AvgMilliseconds() { }
 
-private float get_avgFrameRate() { }
+	private float get_avgFrameRate() { }
 
-public void ResetCounters() { }
+	public void ResetCounters() { }
 
-public void Frame() { }
+	public void Frame() { }
 
-public void CompleteDemoBenchmark(string benchmarkLabel = "") { }
+	public void CompleteDemoBenchmark(string benchmarkLabel = "") { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -52,10 +52,10 @@ private struct BenchmarkData.<Upload>d__13 : IAsyncStateMachine // TypeDefIndex:
 	private TaskAwaiter<string> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

@@ -10,15 +10,15 @@ public struct ResultPage : IDisposable // TypeDefIndex: 5281
 	internal bool ReturnsChildren; 
 	internal bool ReturnsAdditionalPreviews; 
 
-public IEnumerable<Item> Entries { get; }
+	public IEnumerable<Item> Entries { get; }
 
 
 	[IteratorStateMachineAttribute] 
-public IEnumerable<Item> get_Entries() { }
+	public IEnumerable<Item> get_Entries() { }
 
-private ulong GetStat(uint index, ItemStatistic stat) { }
+	private ulong GetStat(uint index, ItemStatistic stat) { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
 }
 
@@ -32,32 +32,32 @@ private sealed class ResultPage.<get_Entries>d__10 : IEnumerable<Item>, IEnumera
 	private SteamUGCDetails_t <details>5__2; 
 	private uint <i>5__3; 
 
-private Item System.Collections.Generic.IEnumerator<Steamworks.Ugc.Item>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private Item System.Collections.Generic.IEnumerator<Steamworks.Ugc.Item>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private Item System.Collections.Generic.IEnumerator<Steamworks.Ugc.Item>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private Item System.Collections.Generic.IEnumerator<Steamworks.Ugc.Item>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<Item> System.Collections.Generic.IEnumerable<Steamworks.Ugc.Item>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<Item> System.Collections.Generic.IEnumerable<Steamworks.Ugc.Item>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 

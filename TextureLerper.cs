@@ -7,24 +7,24 @@ internal class TextureLerper // TypeDefIndex: 11870
 	private List<RenderTexture> m_Recycled; 
 	private List<RenderTexture> m_Actives; 
 
-internal static TextureLerper instance { get; }
+	internal static TextureLerper instance { get; }
 
 
-internal static TextureLerper get_instance() { }
+	internal static TextureLerper get_instance() { }
 
-private void .ctor() { }
+	private void .ctor() { }
 
-internal void BeginFrame(PostProcessRenderContext context) { }
+	internal void BeginFrame(PostProcessRenderContext context) { }
 
-internal void EndFrame() { }
+	internal void EndFrame() { }
 
-private RenderTexture Get(RenderTextureFormat format, int w, int h, int d = 1, bool enableRandomWrite = False, bool force3D = False) { }
+	private RenderTexture Get(RenderTextureFormat format, int w, int h, int d = 1, bool enableRandomWrite = False, bool force3D = False) { }
 
-internal Texture Lerp(Texture from, Texture to, float t) { }
+	internal Texture Lerp(Texture from, Texture to, float t) { }
 
-internal Texture Lerp(Texture from, Color to, float t) { }
+	internal Texture Lerp(Texture from, Color to, float t) { }
 
-internal void Clear() { }
+	internal void Clear() { }
 
 }
 

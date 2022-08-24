@@ -9,17 +9,17 @@ public class FlasherLight : IOEntity // TypeDefIndex: 8714
 	private int flashBurstCount; 
 
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void Flash() { }
+	public void Flash() { }
 
-public void FlashOn() { }
+	public void FlashOn() { }
 
-public void SetOff() { }
+	public void SetOff() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

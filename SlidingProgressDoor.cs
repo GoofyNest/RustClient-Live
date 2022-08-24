@@ -7,13 +7,13 @@ public class SlidingProgressDoor : ProgressDoor // TypeDefIndex: 9809
 	private float client_targetStoredEnergy; 
 
 
-public override void UpdateProgress() { }
+	public override void UpdateProgress() { }
 
-public void Update() { }
+	public void Update() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -29,29 +29,29 @@ public class ScrapTransportHelicopter : MiniCopter // TypeDefIndex: 8295
 	private float lastHealthFraction; 
 
 
-protected override float GetMainRotorScale() { }
+	protected override float GetMainRotorScale() { }
 
-public override bool MountMenuVisible(BasePlayer player) { }
+	public override bool MountMenuVisible(BasePlayer player) { }
 
-private bool PlayerIsInside(BasePlayer player) { }
+	private bool PlayerIsInside(BasePlayer player) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void UpdateLayerIndicies() { }
+	public override void UpdateLayerIndicies() { }
 
-public override void UpdateAnimator() { }
+	public override void UpdateAnimator() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void UpdateDamageEffects() { }
+	public void UpdateDamageEffects() { }
 
-protected override void WorkshopMode() { }
+	protected override void WorkshopMode() { }
 
-protected override bool CanPushNow(BasePlayer pusher) { }
+	protected override bool CanPushNow(BasePlayer pusher) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

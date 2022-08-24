@@ -8,19 +8,19 @@ public static class Global // TypeDefIndex: 6621
 	[CompilerGeneratedAttribute] 
 	private static int <LaunchCountThisVersion>k__BackingField; 
 
-public static MonoBehaviour Runner { get; }
-public static int LaunchCountThisVersion { get; set; }
+	public static MonoBehaviour Runner { get; }
+	public static int LaunchCountThisVersion { get; set; }
 
 
-public static MonoBehaviour get_Runner() { }
-
-	[CompilerGeneratedAttribute] 
-public static int get_LaunchCountThisVersion() { }
+	public static MonoBehaviour get_Runner() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_LaunchCountThisVersion(int value) { }
+	public static int get_LaunchCountThisVersion() { }
 
-public static void Init() { }
+	[CompilerGeneratedAttribute] 
+	private static void set_LaunchCountThisVersion(int value) { }
+
+	public static void Init() { }
 
 }
 
@@ -33,8 +33,8 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 	[ServerVar] 
 	[ClientVar] 
 	public static int maxthreads; 
-private const int DefaultWarmupConcurrency = 1;
-private const int DefaultPreloadConcurrency = 1;
+	private const int DefaultWarmupConcurrency = 1;
+	private const int DefaultPreloadConcurrency = 1;
 	[ServerVar] 
 	[ClientVar] 
 	public static int warmupConcurrency; 
@@ -44,7 +44,7 @@ private const int DefaultPreloadConcurrency = 1;
 	[ServerVar] 
 	[ClientVar] 
 	public static bool forceUnloadBundles; 
-private const bool DefaultAsyncWarmupEnabled = False;
+	private const bool DefaultAsyncWarmupEnabled = False;
 	[ServerVar] 
 	[ClientVar] 
 	public static bool asyncWarmup; 
@@ -77,149 +77,149 @@ private const bool DefaultAsyncWarmupEnabled = False;
 
 	[ServerVar] 
 	[ClientVar] 
-public static int developer { get; set; }
+	public static int developer { get; set; }
 	[ClientVar] 
-public static int censornudity { get; set; }
+	public static int censornudity { get; set; }
 	[ClientVar] 
-public static bool censorsigns { get; set; }
+	public static bool censorsigns { get; set; }
 	[ClientVar] 
-public static bool censorrecordings { get; set; }
+	public static bool censorrecordings { get; set; }
 	[ClientVar] 
-public static bool processMidiInput { get; set; }
+	public static bool processMidiInput { get; set; }
 	[ClientVar] 
-public static bool showBlood { get; set; }
+	public static bool showBlood { get; set; }
 	[ClientVar] 
-public static string language { get; set; }
+	public static string language { get; set; }
 
 
-public static void set_developer(int value) { }
+	public static void set_developer(int value) { }
 
-public static int get_developer() { }
+	public static int get_developer() { }
 
-public static int get_censornudity() { }
+	public static int get_censornudity() { }
 
-public static void set_censornudity(int value) { }
+	public static void set_censornudity(int value) { }
 
-private static bool ForceUnderwear() { }
+	private static bool ForceUnderwear() { }
 
-public static bool get_censorsigns() { }
+	public static bool get_censorsigns() { }
 
-public static void set_censorsigns(bool value) { }
+	public static void set_censorsigns(bool value) { }
 
-public static bool get_censorrecordings() { }
+	public static bool get_censorrecordings() { }
 
-public static void set_censorrecordings(bool value) { }
+	public static void set_censorrecordings(bool value) { }
 
-public static bool get_processMidiInput() { }
+	public static bool get_processMidiInput() { }
 
-public static void set_processMidiInput(bool value) { }
+	public static void set_processMidiInput(bool value) { }
 
-public static bool get_showBlood() { }
+	public static bool get_showBlood() { }
 
-public static void set_showBlood(bool value) { }
+	public static void set_showBlood(bool value) { }
 
 	[ServerVar] 
-public static void restart(ConsoleSystem.Arg args) { }
+	public static void restart(ConsoleSystem.Arg args) { }
 
 	[ClientVar] 
 	[ServerVar] 
-public static void quit(ConsoleSystem.Arg args) { }
+	public static void quit(ConsoleSystem.Arg args) { }
 
 	[ClientVar] 
-public static void writecfg() { }
+	public static void writecfg() { }
 
 	[ClientVar] 
-public static void readcfg(ConsoleSystem.Arg arg) { }
+	public static void readcfg(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void exec(ConsoleSystem.Arg arg) { }
+	public static void exec(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void report(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-	[ClientVar] 
-public static void objects(ConsoleSystem.Arg args) { }
+	public static void report(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void textures(ConsoleSystem.Arg args) { }
+	public static void objects(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void colliders(ConsoleSystem.Arg args) { }
+	public static void textures(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void error(ConsoleSystem.Arg args) { }
+	public static void colliders(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void queue(ConsoleSystem.Arg args) { }
-
-	[ClientVar] 
-public static void status_cl(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void teleport(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void teleport2me(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void teleportany(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void teleportpos(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void teleportlos(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void teleport2owneditem(ConsoleSystem.Arg arg) { }
-
-	[ServerVar] 
-public static void teleport2autheditem(ConsoleSystem.Arg arg) { }
-
-	[ServerVar] 
-public static void teleport2marker(ConsoleSystem.Arg arg) { }
-
-	[ServerVar] 
-public static void teleport2death(ConsoleSystem.Arg arg) { }
+	public static void error(ConsoleSystem.Arg args) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void free(ConsoleSystem.Arg args) { }
+	public static void queue(ConsoleSystem.Arg args) { }
 
-public static string get_language() { }
+	[ClientVar] 
+	public static void status_cl(ConsoleSystem.Arg args) { }
 
-public static void set_language(string value) { }
+	[ServerVar] 
+	public static void teleport(ConsoleSystem.Arg args) { }
+
+	[ServerVar] 
+	public static void teleport2me(ConsoleSystem.Arg args) { }
+
+	[ServerVar] 
+	public static void teleportany(ConsoleSystem.Arg args) { }
+
+	[ServerVar] 
+	public static void teleportpos(ConsoleSystem.Arg args) { }
+
+	[ServerVar] 
+	public static void teleportlos(ConsoleSystem.Arg args) { }
+
+	[ServerVar] 
+	public static void teleport2owneditem(ConsoleSystem.Arg arg) { }
+
+	[ServerVar] 
+	public static void teleport2autheditem(ConsoleSystem.Arg arg) { }
+
+	[ServerVar] 
+	public static void teleport2marker(ConsoleSystem.Arg arg) { }
+
+	[ServerVar] 
+	public static void teleport2death(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void version(ConsoleSystem.Arg arg) { }
+	public static void free(ConsoleSystem.Arg args) { }
+
+	public static string get_language() { }
+
+	public static void set_language(string value) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void sysinfo(ConsoleSystem.Arg arg) { }
+	public static void version(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void sysuid(ConsoleSystem.Arg arg) { }
-
-	[ServerVar] 
-public static void breakitem(ConsoleSystem.Arg args) { }
-
-	[ServerVar] 
-public static void breakclothing(ConsoleSystem.Arg args) { }
+	public static void sysinfo(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
 	[ClientVar] 
-public static void subscriptions(ConsoleSystem.Arg arg) { }
+	public static void sysuid(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	[ServerVar] 
+	public static void breakitem(ConsoleSystem.Arg args) { }
 
-private static void .cctor() { }
+	[ServerVar] 
+	public static void breakclothing(ConsoleSystem.Arg args) { }
+
+	[ServerVar] 
+	[ClientVar] 
+	public static void subscriptions(ConsoleSystem.Arg arg) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -231,15 +231,15 @@ private sealed class Global.<>c // TypeDefIndex: 11923
 	public static Func<Collider, bool> <>9__47_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal long <objects>b__45_0(KeyValuePair<Type, long> x) { }
+	internal long <objects>b__45_0(KeyValuePair<Type, long> x) { }
 
-internal bool <colliders>b__47_0(Collider x) { }
+	internal bool <colliders>b__47_0(Collider x) { }
 
-internal bool <colliders>b__47_1(Collider x) { }
+	internal bool <colliders>b__47_1(Collider x) { }
 
 }
 

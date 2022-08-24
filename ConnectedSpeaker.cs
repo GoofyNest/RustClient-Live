@@ -5,57 +5,57 @@ public class ConnectedSpeaker : IDisposable, Pool.IPooled, IProto // TypeDefInde
 	public uint connectedTo; 
 
 
-public static void ResetToPool(ConnectedSpeaker instance) { }
+	public static void ResetToPool(ConnectedSpeaker instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ConnectedSpeaker instance) { }
+	public void CopyTo(ConnectedSpeaker instance) { }
 
-public ConnectedSpeaker Copy() { }
+	public ConnectedSpeaker Copy() { }
 
-public static ConnectedSpeaker Deserialize(Stream stream) { }
+	public static ConnectedSpeaker Deserialize(Stream stream) { }
 
-public static ConnectedSpeaker DeserializeLengthDelimited(Stream stream) { }
+	public static ConnectedSpeaker DeserializeLengthDelimited(Stream stream) { }
 
-public static ConnectedSpeaker DeserializeLength(Stream stream, int length) { }
+	public static ConnectedSpeaker DeserializeLength(Stream stream, int length) { }
 
-public static ConnectedSpeaker Deserialize(byte[] buffer) { }
+	public static ConnectedSpeaker Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ConnectedSpeaker previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ConnectedSpeaker previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ConnectedSpeaker Deserialize(byte[] buffer, ConnectedSpeaker instance, bool isDelta = False) { }
+	public static ConnectedSpeaker Deserialize(byte[] buffer, ConnectedSpeaker instance, bool isDelta = False) { }
 
-public static ConnectedSpeaker Deserialize(Stream stream, ConnectedSpeaker instance, bool isDelta) { }
+	public static ConnectedSpeaker Deserialize(Stream stream, ConnectedSpeaker instance, bool isDelta) { }
 
-public static ConnectedSpeaker DeserializeLengthDelimited(Stream stream, ConnectedSpeaker instance, bool isDelta) { }
+	public static ConnectedSpeaker DeserializeLengthDelimited(Stream stream, ConnectedSpeaker instance, bool isDelta) { }
 
-public static ConnectedSpeaker DeserializeLength(Stream stream, int length, ConnectedSpeaker instance, bool isDelta) { }
+	public static ConnectedSpeaker DeserializeLength(Stream stream, int length, ConnectedSpeaker instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ConnectedSpeaker instance, ConnectedSpeaker previous) { }
+	public static void SerializeDelta(Stream stream, ConnectedSpeaker instance, ConnectedSpeaker previous) { }
 
-public static void Serialize(Stream stream, ConnectedSpeaker instance) { }
+	public static void Serialize(Stream stream, ConnectedSpeaker instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ConnectedSpeaker instance) { }
+	public static byte[] SerializeToBytes(ConnectedSpeaker instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ConnectedSpeaker instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ConnectedSpeaker instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -70,43 +70,43 @@ public class ConnectedSpeaker : IOEntity // TypeDefIndex: 8563
 	private uint currentReadIndex; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public void SetAudio(Sound sound) { }
+	public void SetAudio(Sound sound) { }
 
-public void StopPlaying() { }
+	public void StopPlaying() { }
 
-private void OnAudioRead(float[] data) { }
-
-	[BaseEntity.RPC_Client] 
-private void Client_PlayAudioFrom(BaseEntity.RPCMessage msg) { }
+	private void OnAudioRead(float[] data) { }
 
 	[BaseEntity.RPC_Client] 
-private void Client_StopPlayingAudio(BaseEntity.RPCMessage msg) { }
+	private void Client_PlayAudioFrom(BaseEntity.RPCMessage msg) { }
 
-public override void ClientOnEnable() { }
+	[BaseEntity.RPC_Client] 
+	private void Client_StopPlayingAudio(BaseEntity.RPCMessage msg) { }
 
-public void SetAudio(AudioClip clip, float time) { }
+	public override void ClientOnEnable() { }
 
-public void SetAudio(ShoutcastStreamer streamer, AudioClip clip, float time) { }
+	public void SetAudio(AudioClip clip, float time) { }
 
-private void UpdatePlaylist() { }
+	public void SetAudio(ShoutcastStreamer streamer, AudioClip clip, float time) { }
 
-public void SetAudio(VoiceProcessor processor) { }
+	private void UpdatePlaylist() { }
 
-private void VoiceUpdate() { }
+	public void SetAudio(VoiceProcessor processor) { }
 
-public Vector3 GetWorldPosition() { }
+	private void VoiceUpdate() { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public Vector3 GetWorldPosition() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void .ctor() { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
+
+	public void .ctor() { }
 
 }
 

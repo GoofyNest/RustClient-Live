@@ -3,9 +3,9 @@ public class PrefabInstantiate : MonoBehaviour, IClientComponent // TypeDefIndex
 	public GameObjectRef Prefab; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

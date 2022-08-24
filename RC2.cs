@@ -4,21 +4,21 @@ public abstract class RC2 : SymmetricAlgorithm // TypeDefIndex: 973
 	private static KeySizes[] s_legalBlockSizes; 
 	private static KeySizes[] s_legalKeySizes; 
 
-public virtual int EffectiveKeySize { get; }
-public override int KeySize { get; set; }
+	public virtual int EffectiveKeySize { get; }
+	public override int KeySize { get; set; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public virtual int get_EffectiveKeySize() { }
+	public virtual int get_EffectiveKeySize() { }
 
-public override int get_KeySize() { }
+	public override int get_KeySize() { }
 
-public override void set_KeySize(int value) { }
+	public override void set_KeySize(int value) { }
 
-public static RC2 Create() { }
+	public static RC2 Create() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

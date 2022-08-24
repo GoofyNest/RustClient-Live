@@ -4,7 +4,7 @@ internal struct NamespaceCache // TypeDefIndex: 5835
 	private string namespaceName; 
 
 
-public XNamespace Get(string namespaceName) { }
+	public XNamespace Get(string namespaceName) { }
 
 }
 

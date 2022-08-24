@@ -56,9 +56,9 @@ public class ERMarker // TypeDefIndex: 7286
 	public Vector3 perpDirRotated; 
 
 
-public void .ctor(Vector3 pos, ERModularRoad scr, int element) { }
+	public void .ctor(Vector3 pos, ERModularRoad scr, int element) { }
 
-public void SetControlType(ERMarkerControlType type) { }
+	public void SetControlType(ERMarkerControlType type) { }
 
 }
 

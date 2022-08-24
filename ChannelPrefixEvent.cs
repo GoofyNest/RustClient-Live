@@ -3,24 +3,24 @@ public sealed class ChannelPrefixEvent : MetaEvent // TypeDefIndex: 7532
 	[CompilerGeneratedAttribute] 
 	private byte <Channel>k__BackingField; 
 
-public byte Channel { get; set; }
+	public byte Channel { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(byte channel) { }
-
-	[CompilerGeneratedAttribute] 
-public byte get_Channel() { }
+	public void .ctor(byte channel) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Channel(byte value) { }
+	public byte get_Channel() { }
 
-protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Channel(byte value) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
 
-public override string ToString() { }
+	protected override MidiEvent CloneEvent() { }
+
+	public override string ToString() { }
 
 }
 

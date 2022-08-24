@@ -7,13 +7,13 @@ public class ERLaneData // TypeDefIndex: 7198
 	public ERLaneDirection direction; 
 
 
-public static ERLaneData CreateInstance() { }
+	public static ERLaneData CreateInstance() { }
 
-public static ERLaneData OOOOCQCDDC(List<ERLaneData> laneData, int index) { }
+	public static ERLaneData OOOOCQCDDC(List<ERLaneData> laneData, int index) { }
 
-public bool Exists(int index, int lane) { }
+	public bool Exists(int index, int lane) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -19,7 +19,7 @@ public static class SchemaTableColumn // TypeDefIndex: 4427
 	public static readonly string BaseColumnName; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -4,24 +4,24 @@ public abstract class MidiEvent // TypeDefIndex: 7517
 	[CompilerGeneratedAttribute] 
 	private readonly MidiEventType <EventType>k__BackingField; 
 
-public MidiEventType EventType { get; }
-public long DeltaTime { get; set; }
+	public MidiEventType EventType { get; }
+	public long DeltaTime { get; set; }
 
 
-public void .ctor(MidiEventType eventType) { }
+	public void .ctor(MidiEventType eventType) { }
 
 	[CompilerGeneratedAttribute] 
-public MidiEventType get_EventType() { }
+	public MidiEventType get_EventType() { }
 
-public long get_DeltaTime() { }
+	public long get_DeltaTime() { }
 
-public void set_DeltaTime(long value) { }
+	public void set_DeltaTime(long value) { }
 
-internal abstract void Read(MidiReader reader, ReadingSettings settings, int size);
+	internal abstract void Read(MidiReader reader, ReadingSettings settings, int size);
 
-protected abstract MidiEvent CloneEvent();
+	protected abstract MidiEvent CloneEvent();
 
-public MidiEvent Clone() { }
+	public MidiEvent Clone() { }
 
 }
 

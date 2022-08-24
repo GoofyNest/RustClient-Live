@@ -20,17 +20,17 @@ public class NoiseAndGrain : PostEffectsBase, IImageEffect // TypeDefIndex: 8194
 	private static float TILE_AMOUNT; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private static void DrawNoiseQuadGrid(RenderTexture source, RenderTexture dest, Material fxMaterial, Texture2D noise, int passNr) { }
+	private static void DrawNoiseQuadGrid(RenderTexture source, RenderTexture dest, Material fxMaterial, Texture2D noise, int passNr) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

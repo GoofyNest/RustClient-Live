@@ -10,28 +10,28 @@ public class Type3Message : MessageBase // TypeDefIndex: 1733
 	private byte[] _lm; 
 	private byte[] _nt; 
 
-public string Domain { set; }
-public string Password { set; }
-public string Username { set; }
+	public string Domain { set; }
+	public string Password { set; }
+	public string Username { set; }
 
 
-public void .ctor(Type2Message type2) { }
+	public void .ctor(Type2Message type2) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void set_Domain(string value) { }
+	public void set_Domain(string value) { }
 
-public void set_Password(string value) { }
+	public void set_Password(string value) { }
 
-public void set_Username(string value) { }
+	public void set_Username(string value) { }
 
-protected override void Decode(byte[] message) { }
+	protected override void Decode(byte[] message) { }
 
-private string DecodeString(byte[] buffer, int offset, int len) { }
+	private string DecodeString(byte[] buffer, int offset, int len) { }
 
-private byte[] EncodeString(string text) { }
+	private byte[] EncodeString(string text) { }
 
-public override byte[] GetBytes() { }
+	public override byte[] GetBytes() { }
 
 }
 

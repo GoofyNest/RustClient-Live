@@ -9,11 +9,11 @@ public class EmissionScaledByLight : MonoBehaviour, IClientComponent // TypeDefI
 	private int index; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

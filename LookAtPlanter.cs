@@ -4,11 +4,11 @@ public class LookAtPlanter : MonoBehaviour // TypeDefIndex: 11080
 	public Text waterText; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public bool UpdateLookingAtPlanter() { }
+	public bool UpdateLookingAtPlanter() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

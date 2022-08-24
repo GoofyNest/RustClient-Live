@@ -4,7 +4,7 @@ public sealed class UnknownFileFormatException : MidiException // TypeDefIndex: 
 	private readonly ushort <FileFormat>k__BackingField; 
 
 
-internal void .ctor(ushort fileFormat) { }
+	internal void .ctor(ushort fileFormat) { }
 
 }
 

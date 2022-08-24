@@ -5,25 +5,25 @@ public sealed class SmpteTimeDivision : TimeDivision // TypeDefIndex: 7611
 	[CompilerGeneratedAttribute] 
 	private readonly byte <Resolution>k__BackingField; 
 
-public SmpteFormat Format { get; }
-public byte Resolution { get; }
+	public SmpteFormat Format { get; }
+	public byte Resolution { get; }
 
 
-public void .ctor(SmpteFormat format, byte resolution) { }
-
-	[CompilerGeneratedAttribute] 
-public SmpteFormat get_Format() { }
+	public void .ctor(SmpteFormat format, byte resolution) { }
 
 	[CompilerGeneratedAttribute] 
-public byte get_Resolution() { }
+	public SmpteFormat get_Format() { }
 
-public static bool op_Equality(SmpteTimeDivision timeDivision1, SmpteTimeDivision timeDivision2) { }
+	[CompilerGeneratedAttribute] 
+	public byte get_Resolution() { }
 
-public override string ToString() { }
+	public static bool op_Equality(SmpteTimeDivision timeDivision1, SmpteTimeDivision timeDivision2) { }
 
-public override bool Equals(object obj) { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
+
+	public override int GetHashCode() { }
 
 }
 

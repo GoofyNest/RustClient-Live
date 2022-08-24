@@ -5,9 +5,9 @@ public class SkeletonDefinition : ScriptableObject // TypeDefIndex: 7347
 	public SkeletonDefinition.RagdollSettings Ragdoll; 
 
 
-public SkeletonDefinition.Bone FindBone(string name) { }
+	public SkeletonDefinition.Bone FindBone(string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -52,9 +52,9 @@ private sealed class SkeletonDefinition.<>c__DisplayClass3_0 // TypeDefIndex: 73
 	public string name; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <FindBone>b__0(SkeletonDefinition.Bone x) { }
+	internal bool <FindBone>b__0(SkeletonDefinition.Bone x) { }
 
 }
 

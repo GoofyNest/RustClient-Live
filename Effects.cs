@@ -13,57 +13,57 @@ public class EffectData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 627
 	public ulong source; 
 
 
-public static void ResetToPool(EffectData instance) { }
+	public static void ResetToPool(EffectData instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(EffectData instance) { }
+	public void CopyTo(EffectData instance) { }
 
-public EffectData Copy() { }
+	public EffectData Copy() { }
 
-public static EffectData Deserialize(Stream stream) { }
+	public static EffectData Deserialize(Stream stream) { }
 
-public static EffectData DeserializeLengthDelimited(Stream stream) { }
+	public static EffectData DeserializeLengthDelimited(Stream stream) { }
 
-public static EffectData DeserializeLength(Stream stream, int length) { }
+	public static EffectData DeserializeLength(Stream stream, int length) { }
 
-public static EffectData Deserialize(byte[] buffer) { }
+	public static EffectData Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, EffectData previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, EffectData previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static EffectData Deserialize(byte[] buffer, EffectData instance, bool isDelta = False) { }
+	public static EffectData Deserialize(byte[] buffer, EffectData instance, bool isDelta = False) { }
 
-public static EffectData Deserialize(Stream stream, EffectData instance, bool isDelta) { }
+	public static EffectData Deserialize(Stream stream, EffectData instance, bool isDelta) { }
 
-public static EffectData DeserializeLengthDelimited(Stream stream, EffectData instance, bool isDelta) { }
+	public static EffectData DeserializeLengthDelimited(Stream stream, EffectData instance, bool isDelta) { }
 
-public static EffectData DeserializeLength(Stream stream, int length, EffectData instance, bool isDelta) { }
+	public static EffectData DeserializeLength(Stream stream, int length, EffectData instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, EffectData instance, EffectData previous) { }
+	public static void SerializeDelta(Stream stream, EffectData instance, EffectData previous) { }
 
-public static void Serialize(Stream stream, EffectData instance) { }
+	public static void Serialize(Stream stream, EffectData instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(EffectData instance) { }
+	public static byte[] SerializeToBytes(EffectData instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, EffectData instance) { }
+	public static void SerializeLengthDelimited(Stream stream, EffectData instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -76,14 +76,14 @@ public class EffectsBenchmarkScene : BenchmarkScene // TypeDefIndex: 8251
 	private bool isFinished; 
 
 
-public override void StartBenchmark() { }
+	public override void StartBenchmark() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator DoEffectBenchmark() { }
+	private IEnumerator DoEffectBenchmark() { }
 
-public override bool ShouldEnd() { }
+	public override bool ShouldEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -94,26 +94,26 @@ private sealed class EffectsBenchmarkScene.<DoEffectBenchmark>d__6 : IEnumerator
 	public EffectsBenchmarkScene <>4__this; 
 	private int <i>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -125,11 +125,11 @@ public class EffectMount : EntityComponent<BaseEntity>, IClientComponent // Type
 	public GameObject mountBone; 
 
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void SetOn(bool isOn) { }
+	public void SetOn(bool isOn) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -138,9 +138,9 @@ public class EffectParent : EntityComponent<BaseEntity>, IClientComponent // Typ
 	public GameObject effect; 
 
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -157,68 +157,68 @@ public class Effect : EffectData // TypeDefIndex: 9330
 	private static Effect reusableInstace; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string effectName, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection) { }
+	public void .ctor(string effectName, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection) { }
 
-public void .ctor(string effectName, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection) { }
+	public void .ctor(string effectName, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection) { }
 
-public void Init(Effect.Type fxtype, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection) { }
+	public void Init(Effect.Type fxtype, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection) { }
 
-public void Init(Effect.Type fxtype, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection) { }
+	public void Init(Effect.Type fxtype, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection) { }
 
-public bool NetworkConstruct() { }
+	public bool NetworkConstruct() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public static void Strip(GameObject obj) { }
+	public static void Strip(GameObject obj) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum Effect.Type // TypeDefIndex: 9331
 {
 	public uint value__; 
-public const Effect.Type Generic = 0;
-public const Effect.Type Projectile = 1;
-public const Effect.Type GenericGlobal = 2;
+	public const Effect.Type Generic = 0;
+	public const Effect.Type Projectile = 1;
+	public const Effect.Type GenericGlobal = 2;
 
 }
 
 public static class Effect.client // TypeDefIndex: 9332
 {
 
-public static void Run(Effect.Type fxtype, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal) { }
+	public static void Run(Effect.Type fxtype, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal) { }
 
-public static void Run(string strName, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal) { }
+	public static void Run(string strName, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal) { }
 
-public static void Run(Effect.Type fxtype, Vector3 posWorld, Vector3 normWorld, Vector3 up) { }
+	public static void Run(Effect.Type fxtype, Vector3 posWorld, Vector3 normWorld, Vector3 up) { }
 
-public static void Run(string strName, Vector3 posWorld, Vector3 normWorld, Vector3 up, Effect.Type overrideType = 0) { }
+	public static void Run(string strName, Vector3 posWorld, Vector3 normWorld, Vector3 up, Effect.Type overrideType = 0) { }
 
-public static void Run(string strName, GameObject obj) { }
+	public static void Run(string strName, GameObject obj) { }
 
-public static void DoAdditiveImpactEffect(HitInfo info, string effectName) { }
+	public static void DoAdditiveImpactEffect(HitInfo info, string effectName) { }
 
-public static void ImpactEffect(HitInfo info) { }
+	public static void ImpactEffect(HitInfo info) { }
 
 }
 
 public static class Effect.server // TypeDefIndex: 9333
 {
 
-public static void Run(Effect.Type fxtype, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection, bool broadcast = False) { }
+	public static void Run(Effect.Type fxtype, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection, bool broadcast = False) { }
 
-public static void Run(string strName, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection, bool broadcast = False) { }
+	public static void Run(string strName, BaseEntity ent, uint boneID, Vector3 posLocal, Vector3 normLocal, Connection sourceConnection, bool broadcast = False) { }
 
-public static void Run(Effect.Type fxtype, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection, bool broadcast = False) { }
+	public static void Run(Effect.Type fxtype, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection, bool broadcast = False) { }
 
-public static void Run(string strName, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection, bool broadcast = False) { }
+	public static void Run(string strName, Vector3 posWorld, Vector3 normWorld, Connection sourceConnection, bool broadcast = False) { }
 
-public static void DoAdditiveImpactEffect(HitInfo info, string effectName) { }
+	public static void DoAdditiveImpactEffect(HitInfo info, string effectName) { }
 
-public static void ImpactEffect(HitInfo info) { }
+	public static void ImpactEffect(HitInfo info) { }
 
 }
 
@@ -228,17 +228,17 @@ public class EffectAudioPerspectiveSwitcher : MonoBehaviour, IEffect, IPrefabPre
 	public EffectParentToWeaponBone parentToWeaponComponent; 
 
 
-private BaseViewModel GetViewModel(Effect effect) { }
+	private BaseViewModel GetViewModel(Effect effect) { }
 
-public virtual void SetupEffect(Effect effect) { }
+	public virtual void SetupEffect(Effect effect) { }
 
-private void MakeThirdPerson() { }
+	private void MakeThirdPerson() { }
 
-private void MakeFirstPerson() { }
+	private void MakeFirstPerson() { }
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -246,32 +246,32 @@ public static class EffectLibrary // TypeDefIndex: 9337
 {
 
 	[ExtensionAttribute] 
-private static void SetupEffect(GameObject go, Effect effect) { }
+	private static void SetupEffect(GameObject go, Effect effect) { }
 
-private static void GenericEffectSpawn(Effect effect) { }
+	private static void GenericEffectSpawn(Effect effect) { }
 
-private static void ProjectileEffectSpawn(Effect effect) { }
+	private static void ProjectileEffectSpawn(Effect effect) { }
 
-public static void Run(Effect fx) { }
+	public static void Run(Effect fx) { }
 
-public static GameObject CreateEffect(string strPrefab, Transform parent, Vector3 pos, Quaternion rot) { }
+	public static GameObject CreateEffect(string strPrefab, Transform parent, Vector3 pos, Quaternion rot) { }
 
-public static GameObject CreateEffect(string strPrefab, Effect effect) { }
+	public static GameObject CreateEffect(string strPrefab, Effect effect) { }
 
-public static GameObject CreateEffect(string strPrefab, Vector3 vPos, Quaternion aAngle) { }
+	public static GameObject CreateEffect(string strPrefab, Vector3 vPos, Quaternion aAngle) { }
 
 }
 
 public class EffectMuzzleFlash : MonoBehaviour, IEffect // TypeDefIndex: 9338
 {
 
-public virtual void SetupEffect(Effect effect) { }
+	public virtual void SetupEffect(Effect effect) { }
 
-private bool ApplyToViewModel() { }
+	private bool ApplyToViewModel() { }
 
-private void PositionOnObject(Transform muzzle) { }
+	private void PositionOnObject(Transform muzzle) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -280,9 +280,9 @@ public static class EffectNetwork // TypeDefIndex: 9339
 	private static Effect effect; 
 
 
-public static void OnReceivedEffect(Message msg) { }
+	public static void OnReceivedEffect(Message msg) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -294,17 +294,17 @@ public class EffectParentToWeaponBone : BaseMonoBehaviour, IEffect // TypeDefInd
 	private Transform bone; 
 
 
-public virtual void SetupEffect(Effect effect) { }
+	public virtual void SetupEffect(Effect effect) { }
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-private bool ApplyToViewModel() { }
+	private bool ApplyToViewModel() { }
 
-private void PositionOnObject(GameObject wm) { }
+	private void PositionOnObject(GameObject wm) { }
 
-public void ClearParent() { }
+	public void ClearParent() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -318,11 +318,11 @@ public class EffectScaleWithCameraDistance : MonoBehaviour, IEffect // TypeDefIn
 	public static bool on; 
 
 
-public virtual void SetupEffect(Effect effect) { }
+	public virtual void SetupEffect(Effect effect) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -331,9 +331,9 @@ public class EffectBlood : EffectRecycle // TypeDefIndex: 9853
 	public GameObjectRef ReplacementEffect; 
 
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -342,21 +342,21 @@ public class EffectDictionary // TypeDefIndex: 9854
 	private static Dictionary<string, string[]> effectDictionary; 
 
 
-public static string GetParticle(string impactType, string materialName) { }
+	public static string GetParticle(string impactType, string materialName) { }
 
-public static string GetParticle(DamageType damageType, string materialName) { }
+	public static string GetParticle(DamageType damageType, string materialName) { }
 
-public static string GetDecal(string impactType, string materialName) { }
+	public static string GetDecal(string impactType, string materialName) { }
 
-public static string GetDecal(DamageType damageType, string materialName) { }
+	public static string GetDecal(DamageType damageType, string materialName) { }
 
-public static string GetDisplacement(string impactType, string materialName) { }
+	public static string GetDisplacement(string impactType, string materialName) { }
 
-private static string LookupEffect(string category, string effect, string material) { }
+	private static string LookupEffect(string category, string effect, string material) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -374,44 +374,44 @@ public class EffectRecycle : BaseMonoBehaviour, IClientComponent, IRagdollInhert
 	private Action detachWaitRecycleAction; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-private float GetParticleSystemLength() { }
+	private float GetParticleSystemLength() { }
 
-private float GetSoundLength() { }
+	private float GetSoundLength() { }
 
-private float GetScreenShakeLength() { }
+	private float GetScreenShakeLength() { }
 
-public virtual Transform RagdollInhertTransform() { }
+	public virtual Transform RagdollInhertTransform() { }
 
-protected virtual void OnEnable() { }
+	protected virtual void OnEnable() { }
 
-public void Recycle() { }
+	public void Recycle() { }
 
-private void DetachFromParent() { }
+	private void DetachFromParent() { }
 
-private void DetachWaitRecycle() { }
+	private void DetachWaitRecycle() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum EffectRecycle.PlayMode // TypeDefIndex: 9856
 {
 	public int value__; 
-public const EffectRecycle.PlayMode Once = 0;
-public const EffectRecycle.PlayMode Looped = 1;
+	public const EffectRecycle.PlayMode Once = 0;
+	public const EffectRecycle.PlayMode Looped = 1;
 
 }
 
 public enum EffectRecycle.ParentDestroyBehaviour // TypeDefIndex: 9857
 {
 	public int value__; 
-public const EffectRecycle.ParentDestroyBehaviour Detach = 0;
-public const EffectRecycle.ParentDestroyBehaviour Destroy = 1;
-public const EffectRecycle.ParentDestroyBehaviour DetachWaitDestroy = 2;
+	public const EffectRecycle.ParentDestroyBehaviour Detach = 0;
+	public const EffectRecycle.ParentDestroyBehaviour Destroy = 1;
+	public const EffectRecycle.ParentDestroyBehaviour DetachWaitDestroy = 2;
 
 }
 
@@ -421,33 +421,33 @@ public class EffectRecycleDetach : BaseMonoBehaviour, IClientComponent, IEffectR
 	private Action recycleAction; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void Recycle() { }
+	public void Recycle() { }
 
-private void DetachFromParent() { }
+	private void DetachFromParent() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class EffectRecycleLite : BasePrefab, IClientComponent, IEffectRecycle, IOnParentDestroying // TypeDefIndex: 9859
 {
-private const float lifeTime = 60;
+	private const float lifeTime = 60;
 	private Action recycleAction; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void Recycle() { }
+	public void Recycle() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -468,7 +468,7 @@ public class Effects : ConsoleSystem // TypeDefIndex: 11906
 	public static bool shafts; 
 	[ClientVar] 
 	public static bool vignet; 
-public const bool color = True;
+	public const bool color = True;
 	[ClientVar] 
 	public static bool footsteps; 
 	[ClientVar] 
@@ -485,39 +485,39 @@ public const bool color = True;
 	public static bool showoutlines; 
 
 	[ClientVar] 
-public static int antialiasing { get; set; }
-public static bool requireMotionVectors { get; }
-public static Effects.AntiAliasingType AntiAliasingMode { get; set; }
+	public static int antialiasing { get; set; }
+	public static bool requireMotionVectors { get; }
+	public static Effects.AntiAliasingType AntiAliasingMode { get; set; }
 
 
-public static int get_antialiasing() { }
+	public static int get_antialiasing() { }
 
-public static void set_antialiasing(int value) { }
+	public static void set_antialiasing(int value) { }
 
-public static bool get_requireMotionVectors() { }
+	public static bool get_requireMotionVectors() { }
 
-public static Effects.AntiAliasingType get_AntiAliasingMode() { }
+	public static Effects.AntiAliasingType get_AntiAliasingMode() { }
 
-public static void set_AntiAliasingMode(Effects.AntiAliasingType value) { }
+	public static void set_AntiAliasingMode(Effects.AntiAliasingType value) { }
 
-public static int ClearAllGibs() { }
+	public static int ClearAllGibs() { }
 
 	[ClientVar] 
-public static void ClearAllGibs(ConsoleSystem.Arg arg) { }
+	public static void ClearAllGibs(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum Effects.AntiAliasingType // TypeDefIndex: 11907
 {
 	public int value__; 
-public const Effects.AntiAliasingType None = 0;
-public const Effects.AntiAliasingType FXAA = 1;
-public const Effects.AntiAliasingType SMAA = 2;
-public const Effects.AntiAliasingType TSSAA = 3;
+	public const Effects.AntiAliasingType None = 0;
+	public const Effects.AntiAliasingType FXAA = 1;
+	public const Effects.AntiAliasingType SMAA = 2;
+	public const Effects.AntiAliasingType TSSAA = 3;
 
 }
 

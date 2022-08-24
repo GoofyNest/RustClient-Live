@@ -3,13 +3,13 @@ public class WaterCheck : PrefabAttribute // TypeDefIndex: 10634
 	public bool Rotate; 
 
 
-protected void OnDrawGizmosSelected() { }
+	protected void OnDrawGizmosSelected() { }
 
-public bool Check(Vector3 pos) { }
+	public bool Check(Vector3 pos) { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

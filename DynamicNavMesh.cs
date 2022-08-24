@@ -12,7 +12,7 @@ public class DynamicNavMesh : SingletonComponent<DynamicNavMesh>, IServerCompone
 	public NavMeshCollectGeometry NavMeshCollectGeometry; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

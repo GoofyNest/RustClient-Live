@@ -12,28 +12,28 @@ internal class TiltShift : PostEffectsBase // TypeDefIndex: 8208
 	private Material tiltShiftMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum TiltShift.TiltShiftMode // TypeDefIndex: 8209
 {
 	public int value__; 
-public const TiltShift.TiltShiftMode TiltShiftMode = 0;
-public const TiltShift.TiltShiftMode IrisMode = 1;
+	public const TiltShift.TiltShiftMode TiltShiftMode = 0;
+	public const TiltShift.TiltShiftMode IrisMode = 1;
 
 }
 
 public enum TiltShift.TiltShiftQuality // TypeDefIndex: 8210
 {
 	public int value__; 
-public const TiltShift.TiltShiftQuality Preview = 0;
-public const TiltShift.TiltShiftQuality Normal = 1;
-public const TiltShift.TiltShiftQuality High = 2;
+	public const TiltShift.TiltShiftQuality Preview = 0;
+	public const TiltShift.TiltShiftQuality Normal = 1;
+	public const TiltShift.TiltShiftQuality High = 2;
 
 }
 

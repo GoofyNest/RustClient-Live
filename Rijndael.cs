@@ -4,9 +4,9 @@ public abstract class Rijndael : SymmetricAlgorithm // TypeDefIndex: 975
 	private static KeySizes[] s_legalKeySizes; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

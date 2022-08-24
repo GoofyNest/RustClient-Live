@@ -6,7 +6,7 @@ public class Sprinkler : IOEntity // TypeDefIndex: 8716
 	public float DecayPerSplash; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

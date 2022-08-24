@@ -132,7 +132,7 @@ internal static class ShaderIDs // TypeDefIndex: 11866
 	internal static readonly int PosScaleOffset; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

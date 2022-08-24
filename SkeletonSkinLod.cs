@@ -13,17 +13,17 @@ public class SkeletonSkinLod : MonoBehaviour // TypeDefIndex: 7354
 	private LOD[] LODs; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void AddRenderer(int lod, Renderer r) { }
+	public void AddRenderer(int lod, Renderer r) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Rebuild() { }
+	public void Rebuild() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

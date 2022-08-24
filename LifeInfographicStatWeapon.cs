@@ -7,9 +7,9 @@ public class LifeInfographicStatWeapon : MonoBehaviour // TypeDefIndex: 11076
 	public Image WeaponIcon; 
 
 
-public void Populate(PlayerLifeStory.WeaponStats stats, ItemDefinition def) { }
+	public void Populate(PlayerLifeStory.WeaponStats stats, ItemDefinition def) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

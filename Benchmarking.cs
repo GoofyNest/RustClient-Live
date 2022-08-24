@@ -4,39 +4,39 @@ public static class Benchmarking // TypeDefIndex: 8261
 	private static bool <IsBenchmarking>k__BackingField; 
 	public static string[] BenchmarkScenes; 
 
-public static bool IsBenchmarking { get; set; }
-public static bool IsAutoBenchmark { get; }
+	public static bool IsBenchmarking { get; set; }
+	public static bool IsAutoBenchmark { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static bool get_IsBenchmarking() { }
+	public static bool get_IsBenchmarking() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_IsBenchmarking(bool value) { }
+	public static void set_IsBenchmarking(bool value) { }
 
-public static bool get_IsAutoBenchmark() { }
-
-	[AsyncStateMachineAttribute] 
-public static Task RunAsync(string demoName, bool runBenchmarkScenes = True) { }
+	public static bool get_IsAutoBenchmark() { }
 
 	[AsyncStateMachineAttribute] 
-public static Task RunSingleSceneAsync(string scene) { }
+	public static Task RunAsync(string demoName, bool runBenchmarkScenes = True) { }
 
 	[AsyncStateMachineAttribute] 
-private static Task RunBenchmarkScene(string scene) { }
+	public static Task RunSingleSceneAsync(string scene) { }
 
 	[AsyncStateMachineAttribute] 
-public static Task RunBenchmarksInScene() { }
+	private static Task RunBenchmarkScene(string scene) { }
 
 	[AsyncStateMachineAttribute] 
-private static Task Report() { }
+	public static Task RunBenchmarksInScene() { }
 
 	[AsyncStateMachineAttribute] 
-private static Task RunDemoBasedBenchmark(string demoName, string benchmarkLabel = "") { }
+	private static Task Report() { }
 
-private static void RecordBundleSizes() { }
+	[AsyncStateMachineAttribute] 
+	private static Task RunDemoBasedBenchmark(string demoName, string benchmarkLabel = "") { }
 
-private static void .cctor() { }
+	private static void RecordBundleSizes() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -53,10 +53,10 @@ private struct Benchmarking.<RunAsync>d__7 : IAsyncStateMachine // TypeDefIndex:
 	private int <>7__wrap4; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -70,10 +70,10 @@ private struct Benchmarking.<RunSingleSceneAsync>d__8 : IAsyncStateMachine // Ty
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -85,10 +85,10 @@ private struct Benchmarking.<RunBenchmarkScene>d__9 : IAsyncStateMachine // Type
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -102,10 +102,10 @@ private struct Benchmarking.<RunBenchmarksInScene>d__10 : IAsyncStateMachine // 
 	private IEnumerator <coroutine>5__4; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -116,10 +116,10 @@ private struct Benchmarking.<Report>d__11 : IAsyncStateMachine // TypeDefIndex: 
 	private TaskAwaiter<string> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -132,10 +132,10 @@ private struct Benchmarking.<RunDemoBasedBenchmark>d__12 : IAsyncStateMachine //
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

@@ -5,7 +5,7 @@ internal class FixupHolder // TypeDefIndex: 1039
 	internal int m_fixupType; 
 
 
-internal void .ctor(long id, object fixupInfo, int fixupType) { }
+	internal void .ctor(long id, object fixupInfo, int fixupType) { }
 
 }
 

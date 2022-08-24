@@ -14,20 +14,20 @@ public class Recipe : ScriptableObject // TypeDefIndex: 10751
 	public Recipe.RecipeIngredient[] Ingredients; 
 	public float MixingDuration; 
 
-public string DisplayName { get; }
-public string DisplayDescription { get; }
-public Sprite DisplayIcon { get; }
+	public string DisplayName { get; }
+	public string DisplayDescription { get; }
+	public Sprite DisplayIcon { get; }
 
 
-public string get_DisplayName() { }
+	public string get_DisplayName() { }
 
-public string get_DisplayDescription() { }
+	public string get_DisplayDescription() { }
 
-public Sprite get_DisplayIcon() { }
+	public Sprite get_DisplayIcon() { }
 
-public bool ContainsItem(Item item) { }
+	public bool ContainsItem(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

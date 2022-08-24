@@ -6,17 +6,17 @@ public class ClothLOD : FacepunchBehaviour // TypeDefIndex: 9923
 	private bool lastWantsEnabled; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void LODCheck() { }
+	public void LODCheck() { }
 
-public void EnableCloth() { }
+	public void EnableCloth() { }
 
-public void DisableCloth() { }
+	public void DisableCloth() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

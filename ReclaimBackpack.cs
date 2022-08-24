@@ -7,15 +7,15 @@ public class ReclaimBackpack : StorageContainer // TypeDefIndex: 8741
 	public GameObject art; 
 
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private bool BelongsToLocalPlayer() { }
+	private bool BelongsToLocalPlayer() { }
 
-public override bool ShouldShowLootMenus() { }
+	public override bool ShouldShowLootMenus() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

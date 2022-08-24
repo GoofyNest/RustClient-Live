@@ -17,25 +17,25 @@ public class BradleyMoveTest : MonoBehaviour // TypeDefIndex: 8860
 	public GameObject followTest; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Initialize() { }
+	public void Initialize() { }
 
-public void SetDestination(Vector3 dest) { }
+	public void SetDestination(Vector3 dest) { }
 
-public void FixedUpdate() { }
+	public void FixedUpdate() { }
 
-public void ApplyBrakes(float amount) { }
+	public void ApplyBrakes(float amount) { }
 
-public float GetMotorTorque(bool rightSide) { }
+	public float GetMotorTorque(bool rightSide) { }
 
-public void SetMotorTorque(float newThrottle, bool rightSide, float torqueAmount) { }
+	public void SetMotorTorque(float newThrottle, bool rightSide, float torqueAmount) { }
 
-public void ApplyBrakeTorque(float amount, bool rightSide) { }
+	public void ApplyBrakeTorque(float amount, bool rightSide) { }
 
-public void AdjustFriction() { }
+	public void AdjustFriction() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

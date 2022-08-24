@@ -4,9 +4,9 @@ public static class StreamEx // TypeDefIndex: 11350
 
 
 	[ExtensionAttribute] 
-public static void WriteToOtherStream(Stream self, Stream target) { }
+	public static void WriteToOtherStream(Stream self, Stream target) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

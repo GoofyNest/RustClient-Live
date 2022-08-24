@@ -4,13 +4,13 @@ public sealed class X509EnhancedKeyUsageExtension : X509Extension // TypeDefInde
 	private AsnDecodeStatus _status; 
 
 
-public void .ctor(AsnEncodedData encodedEnhancedKeyUsages, bool critical) { }
+	public void .ctor(AsnEncodedData encodedEnhancedKeyUsages, bool critical) { }
 
-public override void CopyFrom(AsnEncodedData asnEncodedData) { }
+	public override void CopyFrom(AsnEncodedData asnEncodedData) { }
 
-internal AsnDecodeStatus Decode(byte[] extension) { }
+	internal AsnDecodeStatus Decode(byte[] extension) { }
 
-internal override string ToString(bool multiLine) { }
+	internal override string ToString(bool multiLine) { }
 
 }
 

@@ -2,35 +2,35 @@ public struct TransformAccessArray : IDisposable // TypeDefIndex: 3590
 {
 	private IntPtr m_TransformArray; 
 
-public bool isCreated { get; }
+	public bool isCreated { get; }
 
 
-public void .ctor(int capacity, int desiredJobCount = -1) { }
+	public void .ctor(int capacity, int desiredJobCount = -1) { }
 
-public static void Allocate(int capacity, int desiredJobCount, out TransformAccessArray array) { }
+	public static void Allocate(int capacity, int desiredJobCount, out TransformAccessArray array) { }
 
-public bool get_isCreated() { }
+	public bool get_isCreated() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-internal IntPtr GetTransformAccessArrayForSchedule() { }
+	internal IntPtr GetTransformAccessArrayForSchedule() { }
 
-public void Add(Transform transform) { }
-
-	[NativeMethodAttribute] 
-private static IntPtr Create(int capacity, int desiredJobCount) { }
+	public void Add(Transform transform) { }
 
 	[NativeMethodAttribute] 
-private static void DestroyTransformAccessArray(IntPtr transformArray) { }
+	private static IntPtr Create(int capacity, int desiredJobCount) { }
 
 	[NativeMethodAttribute] 
-private static void Add(IntPtr transformArrayIntPtr, Transform transform) { }
+	private static void DestroyTransformAccessArray(IntPtr transformArray) { }
 
 	[NativeMethodAttribute] 
-internal static IntPtr GetSortedTransformAccess(IntPtr transformArrayIntPtr) { }
+	private static void Add(IntPtr transformArrayIntPtr, Transform transform) { }
 
 	[NativeMethodAttribute] 
-internal static IntPtr GetSortedToUserIndex(IntPtr transformArrayIntPtr) { }
+	internal static IntPtr GetSortedTransformAccess(IntPtr transformArrayIntPtr) { }
+
+	[NativeMethodAttribute] 
+	internal static IntPtr GetSortedToUserIndex(IntPtr transformArrayIntPtr) { }
 
 }
 

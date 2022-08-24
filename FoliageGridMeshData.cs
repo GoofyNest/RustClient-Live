@@ -5,17 +5,17 @@ public class FoliageGridMeshData // TypeDefIndex: 11368
 	public Bounds bounds; 
 
 
-public void Alloc() { }
+	public void Alloc() { }
 
-public void Free() { }
+	public void Free() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Combine(MeshGroup meshGroup) { }
+	public void Combine(MeshGroup meshGroup) { }
 
-public void Apply(Mesh mesh) { }
+	public void Apply(Mesh mesh) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -30,7 +30,7 @@ public struct FoliageGridMeshData.FoliageVertex // TypeDefIndex: 11369
 	public static readonly VertexAttributeDescriptor[] VertexLayout; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

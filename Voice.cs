@@ -4,9 +4,9 @@ public class Voice : ConsoleSystem // TypeDefIndex: 11970
 	public static bool loopback; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

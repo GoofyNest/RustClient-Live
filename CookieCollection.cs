@@ -7,47 +7,47 @@ public class CookieCollection : ICollection, IEnumerable // TypeDefIndex: 2940
 	[OptionalFieldAttribute] 
 	private bool m_IsReadOnly; 
 
-public Cookie Item { get; }
-public int Count { get; }
-public object SyncRoot { get; }
-internal bool IsOtherVersionSeen { get; }
+	public Cookie Item { get; }
+	public int Count { get; }
+	public object SyncRoot { get; }
+	internal bool IsOtherVersionSeen { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public Cookie get_Item(int index) { }
+	public Cookie get_Item(int index) { }
 
-public void Add(Cookie cookie) { }
+	public void Add(Cookie cookie) { }
 
-public void Add(CookieCollection cookies) { }
+	public void Add(CookieCollection cookies) { }
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public object get_SyncRoot() { }
+	public object get_SyncRoot() { }
 
-public void CopyTo(Array array, int index) { }
+	public void CopyTo(Array array, int index) { }
 
-internal DateTime TimeStamp(CookieCollection.Stamp how) { }
+	internal DateTime TimeStamp(CookieCollection.Stamp how) { }
 
-internal bool get_IsOtherVersionSeen() { }
+	internal bool get_IsOtherVersionSeen() { }
 
-internal int InternalAdd(Cookie cookie, bool isStrict) { }
+	internal int InternalAdd(Cookie cookie, bool isStrict) { }
 
-internal int IndexOf(Cookie cookie) { }
+	internal int IndexOf(Cookie cookie) { }
 
-internal void RemoveAt(int idx) { }
+	internal void RemoveAt(int idx) { }
 
-public IEnumerator GetEnumerator() { }
+	public IEnumerator GetEnumerator() { }
 
 }
 
 internal enum CookieCollection.Stamp // TypeDefIndex: 2941
 {
 	public int value__; 
-public const CookieCollection.Stamp Check = 0;
-public const CookieCollection.Stamp Set = 1;
-public const CookieCollection.Stamp SetToUnused = 2;
-public const CookieCollection.Stamp SetToMaxUsed = 3;
+	public const CookieCollection.Stamp Check = 0;
+	public const CookieCollection.Stamp Set = 1;
+	public const CookieCollection.Stamp SetToUnused = 2;
+	public const CookieCollection.Stamp SetToMaxUsed = 3;
 
 }
 
@@ -58,16 +58,16 @@ private class CookieCollection.CookieCollectionEnumerator : IEnumerator // TypeD
 	private int m_index; 
 	private int m_version; 
 
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
-internal void .ctor(CookieCollection cookies) { }
+	internal void .ctor(CookieCollection cookies) { }
 
-private object System.Collections.IEnumerator.get_Current() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
-private bool System.Collections.IEnumerator.MoveNext() { }
+	private bool System.Collections.IEnumerator.MoveNext() { }
 
-private void System.Collections.IEnumerator.Reset() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 }
 

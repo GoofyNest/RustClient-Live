@@ -6,7 +6,7 @@ public class ERConnectionData // TypeDefIndex: 7182
 	public Vector3 position; 
 
 
-public void .ctor(ERRoad rd, int rm, int index) { }
+	public void .ctor(ERRoad rd, int rm, int index) { }
 
 }
 

@@ -6,11 +6,11 @@ internal class ChameleonKey // TypeDefIndex: 2142
 	private int hashCode; 
 
 
-public void .ctor(string ns, XmlSchema originalSchema) { }
+	public void .ctor(string ns, XmlSchema originalSchema) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
 }
 

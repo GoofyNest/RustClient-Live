@@ -16,21 +16,21 @@ public class NGSS_Directional : MonoBehaviour // TypeDefIndex: 11502
 	public NGSS_Directional.SAMPLER_COUNT SAMPLERS_COUNT; 
 
 
-private void Update() { }
+	private void Update() { }
 
-private void SetGlobalSettings(bool enabled) { }
+	private void SetGlobalSettings(bool enabled) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum NGSS_Directional.SAMPLER_COUNT // TypeDefIndex: 11503
 {
 	public int value__; 
-public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_16 = 0;
-public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_25 = 1;
-public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_32 = 2;
-public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_64 = 3;
+	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_16 = 0;
+	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_25 = 1;
+	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_32 = 2;
+	public const NGSS_Directional.SAMPLER_COUNT SAMPLERS_64 = 3;
 
 }
 

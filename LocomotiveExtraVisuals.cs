@@ -29,25 +29,25 @@ public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 9764
 	private float[] fanSpeedVariation; 
 
 
-public void UpdateTick() { }
+	public void UpdateTick() { }
 
-public void StopAll() { }
+	public void StopAll() { }
 
-private void UpdateNeedle(Transform needle, LocomotiveExtraVisuals.NeedleType type) { }
+	private void UpdateNeedle(Transform needle, LocomotiveExtraVisuals.NeedleType type) { }
 
-private float GetTargetAngle(LocomotiveExtraVisuals.NeedleType type) { }
+	private float GetTargetAngle(LocomotiveExtraVisuals.NeedleType type) { }
 
-private void SetAngle(Transform tr, float angle) { }
+	private void SetAngle(Transform tr, float angle) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum LocomotiveExtraVisuals.NeedleType // TypeDefIndex: 9765
 {
 	public int value__; 
-public const LocomotiveExtraVisuals.NeedleType Speed = 0;
-public const LocomotiveExtraVisuals.NeedleType Pressure = 1;
+	public const LocomotiveExtraVisuals.NeedleType Speed = 0;
+	public const LocomotiveExtraVisuals.NeedleType Pressure = 1;
 
 }
 

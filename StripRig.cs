@@ -5,11 +5,11 @@ public class StripRig : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10012
 	public bool fromServer; 
 
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void Strip(IPrefabProcessor preProcess, SkinnedMeshRenderer skinnedMeshRenderer) { }
+	public void Strip(IPrefabProcessor preProcess, SkinnedMeshRenderer skinnedMeshRenderer) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

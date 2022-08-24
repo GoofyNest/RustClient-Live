@@ -7,18 +7,18 @@ public class EnvironmentVolumeTrigger : MonoBehaviour // TypeDefIndex: 9866
 	[HideInInspector] 
 	public Vector3 Size; 
 
-public EnvironmentVolume volume { get; set; }
+	public EnvironmentVolume volume { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public EnvironmentVolume get_volume() { }
+	public EnvironmentVolume get_volume() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_volume(EnvironmentVolume value) { }
+	private void set_volume(EnvironmentVolume value) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -9,7 +9,7 @@ public class GodRays : PostProcessEffectSettings // TypeDefIndex: 10259
 	public FloatParameter MaxRadius; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

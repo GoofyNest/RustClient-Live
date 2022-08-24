@@ -6,11 +6,11 @@ public class BunnyEntry : MonoBehaviour // TypeDefIndex: 8787
 	public RawImage selfImage; 
 
 
-public void UpdateText(string newName, int amount, bool isLocalPlayer = False) { }
+	public void UpdateText(string newName, int amount, bool isLocalPlayer = False) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

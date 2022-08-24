@@ -5,9 +5,9 @@ public class DepthAwareBackgroundBlur : DepthOfField // TypeDefIndex: 8177
 	public DepthOfField.BlurSampleCount BlurQuality; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

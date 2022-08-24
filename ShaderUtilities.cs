@@ -64,27 +64,27 @@ public static class ShaderUtilities // TypeDefIndex: 6822
 	private static Shader k_ShaderRef_MobileSDF; 
 	private static Shader k_ShaderRef_MobileBitmap; 
 
-internal static Shader ShaderRef_MobileSDF { get; }
-internal static Shader ShaderRef_MobileBitmap { get; }
+	internal static Shader ShaderRef_MobileSDF { get; }
+	internal static Shader ShaderRef_MobileBitmap { get; }
 
 
-internal static Shader get_ShaderRef_MobileSDF() { }
+	internal static Shader get_ShaderRef_MobileSDF() { }
 
-internal static Shader get_ShaderRef_MobileBitmap() { }
+	internal static Shader get_ShaderRef_MobileBitmap() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public static void GetShaderPropertyIDs() { }
+	public static void GetShaderPropertyIDs() { }
 
-public static void UpdateShaderRatios(Material mat) { }
+	public static void UpdateShaderRatios(Material mat) { }
 
-public static Vector4 GetFontExtent(Material material) { }
+	public static Vector4 GetFontExtent(Material material) { }
 
-public static bool IsMaskingEnabled(Material material) { }
+	public static bool IsMaskingEnabled(Material material) { }
 
-public static float GetPadding(Material material, bool enableExtraPadding, bool isBold) { }
+	public static float GetPadding(Material material, bool enableExtraPadding, bool isBold) { }
 
-public static float GetPadding(Material[] materials, bool enableExtraPadding, bool isBold) { }
+	public static float GetPadding(Material[] materials, bool enableExtraPadding, bool isBold) { }
 
 }
 

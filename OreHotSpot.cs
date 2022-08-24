@@ -9,19 +9,19 @@ public class OreHotSpot : BaseCombatEntity, ILOD // TypeDefIndex: 8811
 	private LODCell cell; 
 
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-private void SpawnVisual() { }
+	private void SpawnVisual() { }
 
-private void DestroyVisual() { }
+	private void DestroyVisual() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,13 +7,13 @@ internal struct GlyphAdjustmentRecord // TypeDefIndex: 4114
 	[NativeNameAttribute] 
 	private GlyphValueRecord m_GlyphValueRecord; 
 
-public uint glyphIndex { get; }
-public GlyphValueRecord glyphValueRecord { get; }
+	public uint glyphIndex { get; }
+	public GlyphValueRecord glyphValueRecord { get; }
 
 
-public uint get_glyphIndex() { }
+	public uint get_glyphIndex() { }
 
-public GlyphValueRecord get_glyphValueRecord() { }
+	public GlyphValueRecord get_glyphValueRecord() { }
 
 }
 

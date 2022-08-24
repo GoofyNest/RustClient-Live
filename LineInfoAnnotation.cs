@@ -4,7 +4,7 @@ internal class LineInfoAnnotation // TypeDefIndex: 5825
 	internal int linePosition; 
 
 
-public void .ctor(int lineNumber, int linePosition) { }
+	public void .ctor(int lineNumber, int linePosition) { }
 
 }
 

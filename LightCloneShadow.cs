@@ -17,19 +17,19 @@ public class LightCloneShadow : MonoBehaviour // TypeDefIndex: 10683
 	private int screenHeight; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void AllocateShadowClone() { }
+	private void AllocateShadowClone() { }
 
-private void DestroyShadowClone() { }
+	private void DestroyShadowClone() { }
 
-private void UpdateShadowMask() { }
+	private void UpdateShadowMask() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

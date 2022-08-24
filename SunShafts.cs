@@ -16,28 +16,28 @@ public class SunShafts : PostEffectsBase // TypeDefIndex: 8205
 	private Material simpleClearMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum SunShafts.SunShaftsResolution // TypeDefIndex: 8206
 {
 	public int value__; 
-public const SunShafts.SunShaftsResolution Low = 0;
-public const SunShafts.SunShaftsResolution Normal = 1;
-public const SunShafts.SunShaftsResolution High = 2;
+	public const SunShafts.SunShaftsResolution Low = 0;
+	public const SunShafts.SunShaftsResolution Normal = 1;
+	public const SunShafts.SunShaftsResolution High = 2;
 
 }
 
 public enum SunShafts.ShaftsScreenBlendMode // TypeDefIndex: 8207
 {
 	public int value__; 
-public const SunShafts.ShaftsScreenBlendMode Screen = 0;
-public const SunShafts.ShaftsScreenBlendMode Add = 1;
+	public const SunShafts.ShaftsScreenBlendMode Screen = 0;
+	public const SunShafts.ShaftsScreenBlendMode Add = 1;
 
 }
 

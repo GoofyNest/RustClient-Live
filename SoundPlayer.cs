@@ -11,52 +11,52 @@ public class SoundPlayer : BaseMonoBehaviour, IClientComponent, IOnParentDestroy
 	[CompilerGeneratedAttribute] 
 	private Sound <sound>k__BackingField; 
 
-public Sound sound { get; set; }
+	public Sound sound { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Sound get_sound() { }
+	public Sound get_sound() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_sound(Sound value) { }
+	protected void set_sound(Sound value) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void DoPendingUpdate() { }
+	public void DoPendingUpdate() { }
 
-public bool ShouldStartThisFrame() { }
+	public bool ShouldStartThisFrame() { }
 
-public void Play() { }
+	public void Play() { }
 
-public void PlayOneshot() { }
+	public void PlayOneshot() { }
 
-public void PlayOneshotRandomDelay(float min = 0, float max = 1) { }
+	public void PlayOneshotRandomDelay(float min = 0, float max = 1) { }
 
-public void FadeInAndPlay(float time = 0,5) { }
+	public void FadeInAndPlay(float time = 0,5) { }
 
-public void FadeOutAndRecycle(float time = 0,5) { }
+	public void FadeOutAndRecycle(float time = 0,5) { }
 
-public virtual void CreateSound() { }
+	public virtual void CreateSound() { }
 
-public bool IsPlaying() { }
+	public bool IsPlaying() { }
 
-public bool HasSound() { }
+	public bool HasSound() { }
 
-public void DestroySound() { }
+	public void DestroySound() { }
 
-public void Stop() { }
+	public void Stop() { }
 
-public void MakeThirdPerson() { }
+	public void MakeThirdPerson() { }
 
-public void MakeFirstPerson() { }
+	public void MakeFirstPerson() { }
 
-public float GetLength() { }
+	public float GetLength() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

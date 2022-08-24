@@ -2,28 +2,28 @@ public class X509Certificate2Collection : X509CertificateCollection // TypeDefIn
 {
 	private static string[] newline_split; 
 
-public X509Certificate2 Item { get; }
+	public X509Certificate2 Item { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(X509Certificate2Collection certificates) { }
+	public void .ctor(X509Certificate2Collection certificates) { }
 
-public X509Certificate2 get_Item(int index) { }
+	public X509Certificate2 get_Item(int index) { }
 
-public int Add(X509Certificate2 certificate) { }
-
-	[MonoTODOAttribute] 
-public void AddRange(X509Certificate2Collection certificates) { }
-
-public bool Contains(X509Certificate2 certificate) { }
+	public int Add(X509Certificate2 certificate) { }
 
 	[MonoTODOAttribute] 
-public X509Certificate2Collection Find(X509FindType findType, object findValue, bool validOnly) { }
+	public void AddRange(X509Certificate2Collection certificates) { }
 
-public X509Certificate2Enumerator GetEnumerator() { }
+	public bool Contains(X509Certificate2 certificate) { }
 
-private static void .cctor() { }
+	[MonoTODOAttribute] 
+	public X509Certificate2Collection Find(X509FindType findType, object findValue, bool validOnly) { }
+
+	public X509Certificate2Enumerator GetEnumerator() { }
+
+	private static void .cctor() { }
 
 }
 

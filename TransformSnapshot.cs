@@ -5,22 +5,22 @@ public struct TransformSnapshot : ISnapshot<TransformSnapshot> // TypeDefIndex: 
 	public Vector3 pos; 
 	public Quaternion rot; 
 
-public float Time { get; set; }
+	public float Time { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_Time() { }
+	public float get_Time() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Time(float value) { }
+	public void set_Time(float value) { }
 
-public void .ctor(float time, Vector3 pos, Quaternion rot) { }
+	public void .ctor(float time, Vector3 pos, Quaternion rot) { }
 
-public void MatchValuesTo(TransformSnapshot entry) { }
+	public void MatchValuesTo(TransformSnapshot entry) { }
 
-public void Lerp(TransformSnapshot prev, TransformSnapshot next, float delta) { }
+	public void Lerp(TransformSnapshot prev, TransformSnapshot next, float delta) { }
 
-public TransformSnapshot GetNew() { }
+	public TransformSnapshot GetNew() { }
 
 }
 

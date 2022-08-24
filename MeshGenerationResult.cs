@@ -16,33 +16,33 @@ public struct MeshGenerationResult : IEquatable<MeshGenerationResult> // TypeDef
 	[DebuggerBrowsableAttribute] 
 	private readonly MeshVertexAttributes <Attributes>k__BackingField; 
 
-public MeshId MeshId { get; }
-public Mesh Mesh { get; }
-public MeshCollider MeshCollider { get; }
-public MeshGenerationStatus Status { get; }
-public MeshVertexAttributes Attributes { get; }
+	public MeshId MeshId { get; }
+	public Mesh Mesh { get; }
+	public MeshCollider MeshCollider { get; }
+	public MeshGenerationStatus Status { get; }
+	public MeshVertexAttributes Attributes { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public MeshId get_MeshId() { }
+	public MeshId get_MeshId() { }
 
 	[CompilerGeneratedAttribute] 
-public Mesh get_Mesh() { }
+	public Mesh get_Mesh() { }
 
 	[CompilerGeneratedAttribute] 
-public MeshCollider get_MeshCollider() { }
+	public MeshCollider get_MeshCollider() { }
 
 	[CompilerGeneratedAttribute] 
-public MeshGenerationStatus get_Status() { }
+	public MeshGenerationStatus get_Status() { }
 
 	[CompilerGeneratedAttribute] 
-public MeshVertexAttributes get_Attributes() { }
+	public MeshVertexAttributes get_Attributes() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(MeshGenerationResult other) { }
+	public bool Equals(MeshGenerationResult other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

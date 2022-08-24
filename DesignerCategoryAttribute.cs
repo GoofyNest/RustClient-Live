@@ -7,25 +7,25 @@ public sealed class DesignerCategoryAttribute : Attribute // TypeDefIndex: 2693
 	public static readonly DesignerCategoryAttribute Form; 
 	public static readonly DesignerCategoryAttribute Generic; 
 
-public string Category { get; }
-public override object TypeId { get; }
+	public string Category { get; }
+	public override object TypeId { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string category) { }
+	public void .ctor(string category) { }
 
-public string get_Category() { }
+	public string get_Category() { }
 
-public override object get_TypeId() { }
+	public override object get_TypeId() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool IsDefaultAttribute() { }
+	public override bool IsDefaultAttribute() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

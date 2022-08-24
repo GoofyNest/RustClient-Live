@@ -4,11 +4,11 @@ public class BurstClothManager : MonoBehaviour // TypeDefIndex: 7311
 	internal readonly List<BurstCloth> Instances; 
 
 
-public void LateUpdate() { }
+	public void LateUpdate() { }
 
-public static BurstClothManager Get() { }
+	public static BurstClothManager Get() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

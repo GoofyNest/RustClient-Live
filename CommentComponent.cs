@@ -4,7 +4,7 @@ public class CommentComponent : MonoBehaviour, IEditorComponent // TypeDefIndex:
 	public string comment; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

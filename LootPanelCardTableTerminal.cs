@@ -8,11 +8,11 @@ public class LootPanelCardTableTerminal : LootPanel // TypeDefIndex: 11027
 	private Translate.Phrase phraseMax; 
 
 
-public CardTablePlayerStorage GetTerminal() { }
+	public CardTablePlayerStorage GetTerminal() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

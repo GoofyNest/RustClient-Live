@@ -33,35 +33,35 @@ public abstract class TerrainPlacement : PrefabAttribute // TypeDefIndex: 10594
 	public Texture2DRef blendmap; 
 
 
-public void Apply(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
+	public void Apply(Matrix4x4 localToWorld, Matrix4x4 worldToLocal) { }
 
-protected bool ShouldHeight() { }
+	protected bool ShouldHeight() { }
 
-protected bool ShouldSplat(int id = -1) { }
+	protected bool ShouldSplat(int id = -1) { }
 
-protected bool ShouldAlpha() { }
+	protected bool ShouldAlpha() { }
 
-protected bool ShouldBiome(int id = -1) { }
+	protected bool ShouldBiome(int id = -1) { }
 
-protected bool ShouldTopology(int id = -1) { }
+	protected bool ShouldTopology(int id = -1) { }
 
-protected bool ShouldWater() { }
+	protected bool ShouldWater() { }
 
-protected abstract void ApplyHeight(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
+	protected abstract void ApplyHeight(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
 
-protected abstract void ApplySplat(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
+	protected abstract void ApplySplat(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
 
-protected abstract void ApplyAlpha(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
+	protected abstract void ApplyAlpha(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
 
-protected abstract void ApplyBiome(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
+	protected abstract void ApplyBiome(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
 
-protected abstract void ApplyTopology(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
+	protected abstract void ApplyTopology(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
 
-protected abstract void ApplyWater(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
+	protected abstract void ApplyWater(Matrix4x4 localToWorld, Matrix4x4 worldToLocal);
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

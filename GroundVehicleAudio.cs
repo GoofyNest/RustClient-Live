@@ -36,76 +36,76 @@ public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // Ty
 	private float <engineRpm>k__BackingField; 
 	private float engineRpmDamp; 
 	private float wheelsRpm; 
-private const float WHEELS_RPM_CHANGE_RATE_LIMIT = 400;
+	private const float WHEELS_RPM_CHANGE_RATE_LIMIT = 400;
 	private int gear; 
 	private int prevGear; 
 
-protected float CameraDistance { get; set; }
-protected bool inWater { get; set; }
-protected abstract EngineAudioSet EngineAudioSet { get; set; }
-public float engineRpm { get; set; }
+	protected float CameraDistance { get; set; }
+	protected bool inWater { get; set; }
+	protected abstract EngineAudioSet EngineAudioSet { get; set; }
+	public float engineRpm { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-protected float get_CameraDistance() { }
+	protected float get_CameraDistance() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CameraDistance(float value) { }
+	private void set_CameraDistance(float value) { }
 
 	[CompilerGeneratedAttribute] 
-protected bool get_inWater() { }
+	protected bool get_inWater() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_inWater(bool value) { }
+	private void set_inWater(bool value) { }
 
-protected abstract EngineAudioSet get_EngineAudioSet();
+	protected abstract EngineAudioSet get_EngineAudioSet();
 
-protected abstract void set_EngineAudioSet(EngineAudioSet value);
-
-	[CompilerGeneratedAttribute] 
-public float get_engineRpm() { }
+	protected abstract void set_EngineAudioSet(EngineAudioSet value);
 
 	[CompilerGeneratedAttribute] 
-private void set_engineRpm(float value) { }
+	public float get_engineRpm() { }
 
-protected virtual void Awake() { }
+	[CompilerGeneratedAttribute] 
+	private void set_engineRpm(float value) { }
 
-public virtual void ClientTick() { }
+	protected virtual void Awake() { }
 
-public virtual void OnClientTickStopped() { }
+	public virtual void ClientTick() { }
 
-public void OnEngineStateChanged<T>(VehicleEngineController.EngineState<T> newState) { }
-/* GenericInstMethod :
-|
-|-GroundVehicleAudio.OnEngineStateChanged<GroundVehicle>
-|-GroundVehicleAudio.OnEngineStateChanged<object>
-*/
+	public virtual void OnClientTickStopped() { }
 
-public void PlayLightsToggleSound() { }
+	public void OnEngineStateChanged<T>(VehicleEngineController.EngineState<T> newState) { }
+	/* GenericInstMethod :
+	|
+	|-GroundVehicleAudio.OnEngineStateChanged<GroundVehicle>
+	|-GroundVehicleAudio.OnEngineStateChanged<object>
+	*/
 
-public void PlayEngineStartFailSound() { }
+	public void PlayLightsToggleSound() { }
 
-protected abstract int GetNumEngines();
+	public void PlayEngineStartFailSound() { }
 
-private void StartEngineSounds() { }
+	protected abstract int GetNumEngines();
 
-private void StopEngineSounds() { }
+	private void StartEngineSounds() { }
 
-private void UpdateWaterSounds() { }
+	private void StopEngineSounds() { }
 
-private void UpdateEngineSounds() { }
+	private void UpdateWaterSounds() { }
 
-private float GetWheelRPM() { }
+	private void UpdateEngineSounds() { }
 
-private float GetEngineRPM() { }
+	private float GetWheelRPM() { }
 
-private void UpdateBrakeSounds() { }
+	private float GetEngineRPM() { }
 
-private void StopBrakeSound() { }
+	private void UpdateBrakeSounds() { }
 
-private void StopWaterSounds() { }
+	private void StopBrakeSound() { }
 
-protected void .ctor() { }
+	private void StopWaterSounds() { }
+
+	protected void .ctor() { }
 
 }
 

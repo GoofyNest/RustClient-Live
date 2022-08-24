@@ -6,45 +6,45 @@ internal abstract class ServerIdentity : Identity // TypeDefIndex: 1145
 	protected Context _context; 
 	protected Lease _lease; 
 
-public Type ObjectType { get; }
-public Lease Lease { get; }
-public Context Context { get; set; }
+	public Type ObjectType { get; }
+	public Lease Lease { get; }
+	public Context Context { get; set; }
 
 
-public void .ctor(string objectUri, Context context, Type objectType) { }
+	public void .ctor(string objectUri, Context context, Type objectType) { }
 
-public Type get_ObjectType() { }
+	public Type get_ObjectType() { }
 
-public void StartTrackingLifetime(ILease lease) { }
+	public void StartTrackingLifetime(ILease lease) { }
 
-public virtual void OnLifetimeExpired() { }
+	public virtual void OnLifetimeExpired() { }
 
-public override ObjRef CreateObjRef(Type requestedType) { }
+	public override ObjRef CreateObjRef(Type requestedType) { }
 
-public void AttachServerObject(MarshalByRefObject serverObject, Context context) { }
+	public void AttachServerObject(MarshalByRefObject serverObject, Context context) { }
 
-public Lease get_Lease() { }
+	public Lease get_Lease() { }
 
-public Context get_Context() { }
+	public Context get_Context() { }
 
-public void set_Context(Context value) { }
+	public void set_Context(Context value) { }
 
-public abstract IMessage SyncObjectProcessMessage(IMessage msg);
+	public abstract IMessage SyncObjectProcessMessage(IMessage msg);
 
-public abstract IMessageCtrl AsyncObjectProcessMessage(IMessage msg, IMessageSink replySink);
+	public abstract IMessageCtrl AsyncObjectProcessMessage(IMessage msg, IMessageSink replySink);
 
-protected void DisposeServerObject() { }
+	protected void DisposeServerObject() { }
 
 }
 
 internal class ServerContextTerminatorSink : IMessageSink // TypeDefIndex: 1259
 {
 
-public IMessage SyncProcessMessage(IMessage msg) { }
+	public IMessage SyncProcessMessage(IMessage msg) { }
 
-public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -53,11 +53,11 @@ internal class ServerObjectTerminatorSink : IMessageSink // TypeDefIndex: 1260
 	private IMessageSink _nextSink; 
 
 
-public void .ctor(IMessageSink nextSink) { }
+	public void .ctor(IMessageSink nextSink) { }
 
-public IMessage SyncProcessMessage(IMessage msg) { }
+	public IMessage SyncProcessMessage(IMessage msg) { }
 
-public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
 }
 
@@ -67,24 +67,24 @@ internal class ServerObjectReplySink : IMessageSink // TypeDefIndex: 1261
 	private ServerIdentity _identity; 
 
 
-public void .ctor(ServerIdentity identity, IMessageSink replySink) { }
+	public void .ctor(ServerIdentity identity, IMessageSink replySink) { }
 
-public IMessage SyncProcessMessage(IMessage msg) { }
+	public IMessage SyncProcessMessage(IMessage msg) { }
 
-public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
 }
 
 internal sealed class ServerCertValidationCallbackWrapper : MulticastDelegate // TypeDefIndex: 2542
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual bool Invoke(ServerCertValidationCallback callback, X509Certificate certificate, X509Chain chain, MonoSslPolicyErrors sslPolicyErrors) { }
+	public virtual bool Invoke(ServerCertValidationCallback callback, X509Certificate certificate, X509Chain chain, MonoSslPolicyErrors sslPolicyErrors) { }
 
-public virtual IAsyncResult BeginInvoke(ServerCertValidationCallback callback, X509Certificate certificate, X509Chain chain, MonoSslPolicyErrors sslPolicyErrors, AsyncCallback __callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(ServerCertValidationCallback callback, X509Certificate certificate, X509Chain chain, MonoSslPolicyErrors sslPolicyErrors, AsyncCallback __callback, object object) { }
 
-public virtual bool EndInvoke(IAsyncResult result) { }
+	public virtual bool EndInvoke(IAsyncResult result) { }
 
 }
 
@@ -94,11 +94,11 @@ internal class ServerCertValidationCallback // TypeDefIndex: 2985
 	private readonly ExecutionContext m_Context; 
 
 
-internal void .ctor(RemoteCertificateValidationCallback validationCallback) { }
+	internal void .ctor(RemoteCertificateValidationCallback validationCallback) { }
 
-internal void Callback(object state) { }
+	internal void Callback(object state) { }
 
-internal bool Invoke(object request, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { }
+	internal bool Invoke(object request, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { }
 
 }
 
@@ -111,7 +111,7 @@ private class ServerCertValidationCallback.CallbackContext // TypeDefIndex: 2986
 	internal bool result; 
 
 
-internal void .ctor(object request, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { }
+	internal void .ctor(object request, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { }
 
 }
 
@@ -157,158 +157,158 @@ public struct ServerInfo : IEquatable<ServerInfo> // TypeDefIndex: 5557
 	private int <QueryPort>k__BackingField; 
 	private string[] _tags; 
 
-public string Name { get; set; }
-public int Ping { get; set; }
-public string GameDir { set; }
-public string Map { get; set; }
-public string Description { set; }
-public uint AppId { get; set; }
-public int Players { get; set; }
-public int MaxPlayers { get; set; }
-public int BotPlayers { set; }
-public bool Passworded { set; }
-public bool Secure { get; set; }
-public uint LastTimePlayed { get; set; }
-public int Version { set; }
-public string TagString { get; set; }
-public ulong SteamId { get; set; }
-public uint AddressRaw { get; set; }
-public IPAddress Address { get; set; }
-public int ConnectionPort { get; set; }
-public int QueryPort { get; set; }
+	public string Name { get; set; }
+	public int Ping { get; set; }
+	public string GameDir { set; }
+	public string Map { get; set; }
+	public string Description { set; }
+	public uint AppId { get; set; }
+	public int Players { get; set; }
+	public int MaxPlayers { get; set; }
+	public int BotPlayers { set; }
+	public bool Passworded { set; }
+	public bool Secure { get; set; }
+	public uint LastTimePlayed { get; set; }
+	public int Version { set; }
+	public string TagString { get; set; }
+	public ulong SteamId { get; set; }
+	public uint AddressRaw { get; set; }
+	public IPAddress Address { get; set; }
+	public int ConnectionPort { get; set; }
+	public int QueryPort { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
 	[IsReadOnlyAttribute] 
-public string get_Name() { }
+	public string get_Name() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Name(string value) { }
+	public void set_Name(string value) { }
 
 	[IsReadOnlyAttribute] 
 	[CompilerGeneratedAttribute] 
-public int get_Ping() { }
+	public int get_Ping() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Ping(int value) { }
+	public void set_Ping(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_GameDir(string value) { }
-
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
-public string get_Map() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Map(string value) { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Description(string value) { }
-
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
-public uint get_AppId() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_AppId(uint value) { }
-
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
-public int get_Players() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Players(int value) { }
-
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
-public int get_MaxPlayers() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_MaxPlayers(int value) { }
-
-	[CompilerGeneratedAttribute] 
-public void set_BotPlayers(int value) { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Passworded(bool value) { }
-
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
-public bool get_Secure() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Secure(bool value) { }
-
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
-public uint get_LastTimePlayed() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_LastTimePlayed(uint value) { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Version(int value) { }
+	public void set_GameDir(string value) { }
 
 	[CompilerGeneratedAttribute] 
 	[IsReadOnlyAttribute] 
-public string get_TagString() { }
+	public string get_Map() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_TagString(string value) { }
+	public void set_Map(string value) { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Description(string value) { }
 
 	[IsReadOnlyAttribute] 
 	[CompilerGeneratedAttribute] 
-public ulong get_SteamId() { }
+	public uint get_AppId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_SteamId(ulong value) { }
-
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
-public uint get_AddressRaw() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_AddressRaw(uint value) { }
+	public void set_AppId(uint value) { }
 
 	[IsReadOnlyAttribute] 
 	[CompilerGeneratedAttribute] 
-public IPAddress get_Address() { }
+	public int get_Players() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Address(IPAddress value) { }
+	public void set_Players(int value) { }
+
+	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute] 
+	public int get_MaxPlayers() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_MaxPlayers(int value) { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_BotPlayers(int value) { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Passworded(bool value) { }
+
+	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute] 
+	public bool get_Secure() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Secure(bool value) { }
+
+	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute] 
+	public uint get_LastTimePlayed() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_LastTimePlayed(uint value) { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Version(int value) { }
 
 	[CompilerGeneratedAttribute] 
 	[IsReadOnlyAttribute] 
-public int get_ConnectionPort() { }
+	public string get_TagString() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ConnectionPort(int value) { }
+	public void set_TagString(string value) { }
+
+	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute] 
+	public ulong get_SteamId() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_SteamId(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
 	[IsReadOnlyAttribute] 
-public int get_QueryPort() { }
+	public uint get_AddressRaw() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_QueryPort(int value) { }
+	public void set_AddressRaw(uint value) { }
 
-internal static ServerInfo From(gameserveritem_t item) { }
+	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute] 
+	public IPAddress get_Address() { }
 
-public void .ctor(uint ip, ushort cport, ushort qport, uint timeplayed) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Address(IPAddress value) { }
 
-public void AddToHistory() { }
+	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute] 
+	public int get_ConnectionPort() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ConnectionPort(int value) { }
+
+	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute] 
+	public int get_QueryPort() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_QueryPort(int value) { }
+
+	internal static ServerInfo From(gameserveritem_t item) { }
+
+	public void .ctor(uint ip, ushort cport, ushort qport, uint timeplayed) { }
+
+	public void AddToHistory() { }
 
 	[AsyncStateMachineAttribute] 
-public Task<Dictionary<string, string>> QueryRulesAsync() { }
+	public Task<Dictionary<string, string>> QueryRulesAsync() { }
 
-public void RemoveFromHistory() { }
+	public void RemoveFromHistory() { }
 
-public void AddToFavourites() { }
+	public void AddToFavourites() { }
 
-public void RemoveFromFavourites() { }
+	public void RemoveFromFavourites() { }
 
-public bool Equals(ServerInfo other) { }
+	public bool Equals(ServerInfo other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 
@@ -320,22 +320,22 @@ private struct ServerInfo.<QueryRulesAsync>d__85 : IAsyncStateMachine // TypeDef
 	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 public enum ServerQuerySet // TypeDefIndex: 5695
 {
 	public int value__; 
-public const ServerQuerySet Whitelist = 0;
-public const ServerQuerySet Internet = 1;
-public const ServerQuerySet LocalNetwork = 2;
-public const ServerQuerySet Friends = 3;
-public const ServerQuerySet Favorites = 4;
-public const ServerQuerySet History = 5;
+	public const ServerQuerySet Whitelist = 0;
+	public const ServerQuerySet Internet = 1;
+	public const ServerQuerySet LocalNetwork = 2;
+	public const ServerQuerySet Friends = 3;
+	public const ServerQuerySet Favorites = 4;
+	public const ServerQuerySet History = 5;
 
 }
 
@@ -378,85 +378,85 @@ public struct ServerInfo // TypeDefIndex: 5701
 	[CompilerGeneratedAttribute] 
 	private readonly string <ConnectionString>k__BackingField; 
 
-public uint AppId { get; }
-public string Name { get; }
-public IPAddress Address { get; }
-public uint AddressRaw { get; }
-public int ConnectionPort { get; }
-public int QueryPort { get; }
-public string Map { get; }
-public string TagString { get; }
-public bool IsSecure { get; }
-public int Players { get; }
-public int MaxPlayers { get; }
-public uint LastTimePlayed { get; }
-public int Ping { get; }
-public ulong SteamId { get; }
-public uint Born { get; }
-public IReadOnlyList<string> Tags { get; }
-public string ConnectionProtocol { get; }
-public string ConnectionString { get; }
+	public uint AppId { get; }
+	public string Name { get; }
+	public IPAddress Address { get; }
+	public uint AddressRaw { get; }
+	public int ConnectionPort { get; }
+	public int QueryPort { get; }
+	public string Map { get; }
+	public string TagString { get; }
+	public bool IsSecure { get; }
+	public int Players { get; }
+	public int MaxPlayers { get; }
+	public uint LastTimePlayed { get; }
+	public int Ping { get; }
+	public ulong SteamId { get; }
+	public uint Born { get; }
+	public IReadOnlyList<string> Tags { get; }
+	public string ConnectionProtocol { get; }
+	public string ConnectionString { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public uint get_AppId() { }
+	public uint get_AppId() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Name() { }
+	public string get_Name() { }
 
 	[CompilerGeneratedAttribute] 
-public IPAddress get_Address() { }
+	public IPAddress get_Address() { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_AddressRaw() { }
+	public uint get_AddressRaw() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_ConnectionPort() { }
+	public int get_ConnectionPort() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_QueryPort() { }
+	public int get_QueryPort() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Map() { }
+	public string get_Map() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_TagString() { }
+	public string get_TagString() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsSecure() { }
+	public bool get_IsSecure() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_Players() { }
+	public int get_Players() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_MaxPlayers() { }
+	public int get_MaxPlayers() { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_LastTimePlayed() { }
+	public uint get_LastTimePlayed() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_Ping() { }
+	public int get_Ping() { }
 
 	[CompilerGeneratedAttribute] 
-public ulong get_SteamId() { }
+	public ulong get_SteamId() { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_Born() { }
+	public uint get_Born() { }
 
 	[CompilerGeneratedAttribute] 
-public IReadOnlyList<string> get_Tags() { }
+	public IReadOnlyList<string> get_Tags() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ConnectionProtocol() { }
+	public string get_ConnectionProtocol() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ConnectionString() { }
+	public string get_ConnectionString() { }
 
-public void .ctor(uint appId, string name, IPAddress address, int connectionPort, int queryPort, string map, string tagString, bool isSecure, int players, int maxPlayers, uint lastTimePlayed, int ping, ulong steamId, int authedPlayers = 2147483647) { }
+	public void .ctor(uint appId, string name, IPAddress address, int connectionPort, int queryPort, string map, string tagString, bool isSecure, int players, int maxPlayers, uint lastTimePlayed, int ping, ulong steamId, int authedPlayers = 2147483647) { }
 
-private static uint AddressToUInt32(IPAddress address) { }
+	private static uint AddressToUInt32(IPAddress address) { }
 
-private static uint Swap(uint x) { }
+	private static uint Swap(uint x) { }
 
 }
 
@@ -466,11 +466,11 @@ private sealed class ServerInfo.<>c // TypeDefIndex: 5702
 	public static Func<string, bool> <>9__54_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <.ctor>b__54_0(string x) { }
+	internal bool <.ctor>b__54_0(string x) { }
 
 }
 
@@ -493,41 +493,41 @@ public struct ServerParameters // TypeDefIndex: 5703
 	[CompilerGeneratedAttribute] 
 	private readonly ushort <QueryPort>k__BackingField; 
 
-public string ShortName { get; }
-public string FullName { get; }
-public string Version { get; }
-public bool IsSecure { get; }
-public bool HideIP { get; }
-public IPAddress Address { get; }
-public ushort GamePort { get; }
-public ushort QueryPort { get; }
+	public string ShortName { get; }
+	public string FullName { get; }
+	public string Version { get; }
+	public bool IsSecure { get; }
+	public bool HideIP { get; }
+	public IPAddress Address { get; }
+	public ushort GamePort { get; }
+	public ushort QueryPort { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_ShortName() { }
+	public string get_ShortName() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_FullName() { }
+	public string get_FullName() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Version() { }
+	public string get_Version() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsSecure() { }
+	public bool get_IsSecure() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_HideIP() { }
+	public bool get_HideIP() { }
 
 	[CompilerGeneratedAttribute] 
-public IPAddress get_Address() { }
+	public IPAddress get_Address() { }
 
 	[CompilerGeneratedAttribute] 
-public ushort get_GamePort() { }
+	public ushort get_GamePort() { }
 
 	[CompilerGeneratedAttribute] 
-public ushort get_QueryPort() { }
+	public ushort get_QueryPort() { }
 
-public void .ctor(string shortName, string fullName, string version, bool isSecure, bool hideIP, IPAddress address, ushort gamePort, ushort queryPort = 0) { }
+	public void .ctor(string shortName, string fullName, string version, bool isSecure, bool hideIP, IPAddress address, ushort gamePort, ushort queryPort = 0) { }
 
 }
 
@@ -536,7 +536,7 @@ public static class ServerInfoExtensions // TypeDefIndex: 6157
 
 	[AsyncStateMachineAttribute] 
 	[ExtensionAttribute] 
-public static Task<Dictionary<string, string>> QueryRulesAsync(ServerInfo server) { }
+	public static Task<Dictionary<string, string>> QueryRulesAsync(ServerInfo server) { }
 
 }
 
@@ -548,10 +548,10 @@ private struct ServerInfoExtensions.<QueryRulesAsync>d__0 : IAsyncStateMachine /
 	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -560,25 +560,25 @@ public static class ServerListMetadata // TypeDefIndex: 6211
 	[CompilerGeneratedAttribute] 
 	private static DateTimeOffset <LastDownloaded>k__BackingField; 
 
-public static DateTimeOffset LastDownloaded { get; set; }
+	public static DateTimeOffset LastDownloaded { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public static DateTimeOffset get_LastDownloaded() { }
+	public static DateTimeOffset get_LastDownloaded() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_LastDownloaded(DateTimeOffset value) { }
+	private static void set_LastDownloaded(DateTimeOffset value) { }
 
-public static void Refresh(bool force = False) { }
+	public static void Refresh(bool force = False) { }
 
-private static void UpdateMetadata() { }
+	private static void UpdateMetadata() { }
 
-private static void LoadMetadata(string json) { }
+	private static void LoadMetadata(string json) { }
 
-private static void OnUpdated(Dictionary<IPEndPoint, int> metadata) { }
+	private static void OnUpdated(Dictionary<IPEndPoint, int> metadata) { }
 
 	[CompilerGeneratedAttribute] 
-internal static bool <LoadMetadata>g__TryParseIPEndPoint|6_0(string value, out IPEndPoint endPoint) { }
+	internal static bool <LoadMetadata>g__TryParseIPEndPoint|6_0(string value, out IPEndPoint endPoint) { }
 
 }
 
@@ -588,11 +588,11 @@ private sealed class ServerListMetadata.<>c // TypeDefIndex: 6212
 	public static Action<string> <>9__5_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <UpdateMetadata>b__5_0(string str) { }
+	internal void <UpdateMetadata>b__5_0(string str) { }
 
 }
 
@@ -603,57 +603,57 @@ public class ServerGib : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6330
 	public string gibName; 
 
 
-public static void ResetToPool(ServerGib instance) { }
+	public static void ResetToPool(ServerGib instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ServerGib instance) { }
+	public void CopyTo(ServerGib instance) { }
 
-public ServerGib Copy() { }
+	public ServerGib Copy() { }
 
-public static ServerGib Deserialize(Stream stream) { }
+	public static ServerGib Deserialize(Stream stream) { }
 
-public static ServerGib DeserializeLengthDelimited(Stream stream) { }
+	public static ServerGib DeserializeLengthDelimited(Stream stream) { }
 
-public static ServerGib DeserializeLength(Stream stream, int length) { }
+	public static ServerGib DeserializeLength(Stream stream, int length) { }
 
-public static ServerGib Deserialize(byte[] buffer) { }
+	public static ServerGib Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ServerGib previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ServerGib previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ServerGib Deserialize(byte[] buffer, ServerGib instance, bool isDelta = False) { }
+	public static ServerGib Deserialize(byte[] buffer, ServerGib instance, bool isDelta = False) { }
 
-public static ServerGib Deserialize(Stream stream, ServerGib instance, bool isDelta) { }
+	public static ServerGib Deserialize(Stream stream, ServerGib instance, bool isDelta) { }
 
-public static ServerGib DeserializeLengthDelimited(Stream stream, ServerGib instance, bool isDelta) { }
+	public static ServerGib DeserializeLengthDelimited(Stream stream, ServerGib instance, bool isDelta) { }
 
-public static ServerGib DeserializeLength(Stream stream, int length, ServerGib instance, bool isDelta) { }
+	public static ServerGib DeserializeLength(Stream stream, int length, ServerGib instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ServerGib instance, ServerGib previous) { }
+	public static void SerializeDelta(Stream stream, ServerGib instance, ServerGib previous) { }
 
-public static void Serialize(Stream stream, ServerGib instance) { }
+	public static void Serialize(Stream stream, ServerGib instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ServerGib instance) { }
+	public static byte[] SerializeToBytes(ServerGib instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ServerGib instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ServerGib instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -675,82 +675,82 @@ public abstract class Server : BaseNetwork // TypeDefIndex: 6703
 	private Dictionary<ulong, Connection> connectionByGUID; 
 	private Dictionary<string, List<Connection>> connectionsByIP; 
 
-public virtual string ProtocolId { get; }
-public virtual bool AllowPassthroughMessages { get; }
+	public virtual string ProtocolId { get; }
+	public virtual bool AllowPassthroughMessages { get; }
 
 
-public abstract bool IsConnected();
+	public abstract bool IsConnected();
 
-public virtual string get_ProtocolId() { }
+	public virtual string get_ProtocolId() { }
 
-public virtual bool get_AllowPassthroughMessages() { }
+	public virtual bool get_AllowPassthroughMessages() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public virtual bool Start() { }
+	public virtual bool Start() { }
 
-public virtual void Stop(string shutdownMsg) { }
+	public virtual void Stop(string shutdownMsg) { }
 
-public virtual void Cycle() { }
+	public virtual void Cycle() { }
 
-public abstract void Disconnect(Connection cn);
+	public abstract void Disconnect(Connection cn);
 
-public abstract void Kick(Connection cn, string message, bool logfile = False);
+	public abstract void Kick(Connection cn, string message, bool logfile = False);
 
-public uint TakeUID() { }
+	public uint TakeUID() { }
 
-public void ReturnUID(uint uid) { }
+	public void ReturnUID(uint uid) { }
 
-public void RegisterUID(uint uid) { }
+	public void RegisterUID(uint uid) { }
 
-internal void ResetUIDs() { }
+	internal void ResetUIDs() { }
 
-public Networkable CreateNetworkable() { }
+	public Networkable CreateNetworkable() { }
 
-public Networkable CreateNetworkable(uint uid) { }
+	public Networkable CreateNetworkable(uint uid) { }
 
-public void DestroyNetworkable(ref Networkable networkable) { }
+	public void DestroyNetworkable(ref Networkable networkable) { }
 
-protected void OnDisconnected(string strReason, Connection cn) { }
+	protected void OnDisconnected(string strReason, Connection cn) { }
 
-protected Connection FindConnection(ulong guid) { }
+	protected Connection FindConnection(ulong guid) { }
 
-protected virtual void OnNewConnection() { }
+	protected virtual void OnNewConnection() { }
 
-private string IPAddressWithoutPort(string address) { }
+	private string IPAddressWithoutPort(string address) { }
 
-protected virtual void OnNewConnection(Connection connection) { }
+	protected virtual void OnNewConnection(Connection connection) { }
 
-protected void RemoveConnection(Connection connection) { }
+	protected void RemoveConnection(Connection connection) { }
 
-public virtual int GetAveragePing(Connection connection) { }
+	public virtual int GetAveragePing(Connection connection) { }
 
-public virtual void SendUnconnected(uint netAddr, ushort netPort, byte[] steamResponseBuffer, int packetSize) { }
+	public virtual void SendUnconnected(uint netAddr, ushort netPort, byte[] steamResponseBuffer, int packetSize) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public class ServerVar : ConsoleVar // TypeDefIndex: 6891
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ServerUserVar : ConsoleVar // TypeDefIndex: 6892
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ServerAllVar : ConsoleVar // TypeDefIndex: 6893
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -758,54 +758,54 @@ public class Server : Server // TypeDefIndex: 7333
 {
 	private Peer peer; 
 
-public override string ProtocolId { get; }
-public override bool AllowPassthroughMessages { get; }
+	public override string ProtocolId { get; }
+	public override bool AllowPassthroughMessages { get; }
 
 
-public override string get_ProtocolId() { }
+	public override string get_ProtocolId() { }
 
-public override bool get_AllowPassthroughMessages() { }
+	public override bool get_AllowPassthroughMessages() { }
 
-public override bool IsConnected() { }
+	public override bool IsConnected() { }
 
-public override bool Start() { }
+	public override bool Start() { }
 
-public override void Stop(string shutdownMsg) { }
+	public override void Stop(string shutdownMsg) { }
 
-public override void Disconnect(Connection cn) { }
+	public override void Disconnect(Connection cn) { }
 
-public override void Kick(Connection cn, string message, bool logfile) { }
+	public override void Kick(Connection cn, string message, bool logfile) { }
 
-internal bool HandleRaknetPacket(byte type, Connection connection) { }
+	internal bool HandleRaknetPacket(byte type, Connection connection) { }
 
-internal void UnconnectedPacket() { }
+	internal void UnconnectedPacket() { }
 
-internal void ConnectedPacket(Connection connection) { }
+	internal void ConnectedPacket(Connection connection) { }
 
-public override void Cycle() { }
+	public override void Cycle() { }
 
-protected override void OnNewConnection() { }
+	protected override void OnNewConnection() { }
 
-public override string GetDebug(Connection connection) { }
+	public override string GetDebug(Connection connection) { }
 
-public override int GetAveragePing(Connection connection) { }
+	public override int GetAveragePing(Connection connection) { }
 
-public override ulong GetStat(Connection connection, BaseNetwork.StatTypeLong type) { }
+	public override ulong GetStat(Connection connection, BaseNetwork.StatTypeLong type) { }
 
-public override void SendUnconnected(uint netAddr, ushort netPort, byte[] data, int size) { }
+	public override void SendUnconnected(uint netAddr, ushort netPort, byte[] data, int size) { }
 
-public override void Send(SendInfo sendinfo, MemoryStream data) { }
+	public override void Send(SendInfo sendinfo, MemoryStream data) { }
 
-private void Send(SendInfo sendinfo, MemoryStream data, Connection connection) { }
+	private void Send(SendInfo sendinfo, MemoryStream data, Connection connection) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ServerConsole : SingletonComponent<ServerConsole> // TypeDefIndex: 9289
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -820,19 +820,19 @@ public class ServerGib : BaseCombatEntity // TypeDefIndex: 9604
 	private bool initialized; 
 
 
-public MeshCollider GetCollider() { }
+	public MeshCollider GetCollider() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void ClientSetGib(string newgibname) { }
+	public void ClientSetGib(string newgibname) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void VisualsInit(Mesh mesh, Material[] materials) { }
+	public void VisualsInit(Mesh mesh, Material[] materials) { }
 
-public virtual void PhysicsInit(Mesh physicsMesh) { }
+	public virtual void PhysicsInit(Mesh physicsMesh) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -847,14 +847,14 @@ public class ServerProjectile : EntityComponent<BaseEntity>, IServerComponent //
 	public Vector3 swimSpeed; 
 	public float radius; 
 
-public virtual bool HasRangeLimit { get; }
+	public virtual bool HasRangeLimit { get; }
 
 
-public virtual bool get_HasRangeLimit() { }
+	public virtual bool get_HasRangeLimit() { }
 
-public float GetMaxRange(float maxFuseTime) { }
+	public float GetMaxRange(float maxFuseTime) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -862,10 +862,10 @@ public class ServerMgr : SingletonComponent<ServerMgr> // TypeDefIndex: 10711
 {
 
 public class ServerMgr : SingletonComponent<ServerMgr> 
-public const string BYPASS_PROCEDURAL_SPAWN_PREF = "bypassProceduralSpawn";
+	public const string BYPASS_PROCEDURAL_SPAWN_PREF = "bypassProceduralSpawn";
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -876,9 +876,9 @@ public class ServerPerformance : BaseMonoBehaviour // TypeDefIndex: 10712
 	public static ulong position_changes; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -892,27 +892,27 @@ public class ServerBrowser : MonoBehaviour // TypeDefIndex: 11146
 	private HashSet<string> excludeTags; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void OnOpenStateChanged() { }
+	private void OnOpenStateChanged() { }
 
-public void RefreshAll() { }
+	public void RefreshAll() { }
 
-private void ClearAll() { }
+	private void ClearAll() { }
 
-public void SetOrder(string strBy) { }
+	public void SetOrder(string strBy) { }
 
-public void SetShowFull(bool showFull) { }
+	public void SetShowFull(bool showFull) { }
 
-public void SetShowEmpty(bool showFull) { }
+	public void SetShowEmpty(bool showFull) { }
 
-public void SetSearchFilter(string txt) { }
+	public void SetSearchFilter(string txt) { }
 
-public void SetTagsFilter(ServerBrowserTagFilters tagFilters) { }
+	public void SetTagsFilter(ServerBrowserTagFilters tagFilters) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -923,15 +923,15 @@ public class ServerBrowserCategory : MonoBehaviour // TypeDefIndex: 11147
 	public bool isDirty; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void Dirty() { }
+	public void Dirty() { }
 
-public void UpdateCounts() { }
+	public void UpdateCounts() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -941,11 +941,11 @@ private sealed class ServerBrowserCategory.<>c // TypeDefIndex: 11148
 	public static Func<ServerInfo, int> <>9__6_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <UpdateCounts>b__6_0(ServerInfo x) { }
+	internal int <UpdateCounts>b__6_0(ServerInfo x) { }
 
 }
 
@@ -965,28 +965,28 @@ public class ServerBrowserInfo : SingletonComponent<ServerBrowserInfo> // TypeDe
 	private string descriptionText; 
 
 
-public override void SingletonSetup() { }
+	public override void SingletonSetup() { }
 
-public void Open(ServerInfo server) { }
+	public void Open(ServerInfo server) { }
 
-public void Close() { }
+	public void Close() { }
 
-public void JoinServer() { }
+	public void JoinServer() { }
 
-public void JoinDelayed() { }
+	public void JoinDelayed() { }
 
-public static void Join(ServerInfo server) { }
+	public static void Join(ServerInfo server) { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
 	[AsyncStateMachineAttribute] 
-private void QueryRules() { }
+	private void QueryRules() { }
 
-private void EnableRefreshButton() { }
+	private void EnableRefreshButton() { }
 
-public void VisitWebpage() { }
+	public void VisitWebpage() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1000,10 +1000,10 @@ private struct ServerBrowserInfo.<QueryRules>d__19 : IAsyncStateMachine // TypeD
 	private TaskAwaiter<Dictionary<string, string>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -1023,17 +1023,17 @@ public class ServerBrowserItem : MonoBehaviour // TypeDefIndex: 11151
 	internal bool preventFavouriteToggle; 
 
 
-private static string GetFriendOnServer(IPAddress addr, int port) { }
+	private static string GetFriendOnServer(IPAddress addr, int port) { }
 
-private static bool GetIsFavourite(IPAddress addr, int port) { }
+	private static bool GetIsFavourite(IPAddress addr, int port) { }
 
-internal void Init(ServerInfo s, bool isFavourites, bool isHistory) { }
+	internal void Init(ServerInfo s, bool isFavourites, bool isHistory) { }
 
-public void OnClicked() { }
+	public void OnClicked() { }
 
-public void OnFavouriteToggle(bool favourite) { }
+	public void OnFavouriteToggle(bool favourite) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1050,25 +1050,25 @@ private sealed class ServerBrowserItem.<>c // TypeDefIndex: 11152
 	public static Func<ServerInfo, string> <>9__11_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetFriendOnServer>b__8_0(IPlayerInfo x) { }
+	internal bool <GetFriendOnServer>b__8_0(IPlayerInfo x) { }
 
-internal bool <GetFriendOnServer>b__8_1(IPlayerInfo x) { }
+	internal bool <GetFriendOnServer>b__8_1(IPlayerInfo x) { }
 
-internal bool <GetFriendOnServer>b__8_2(IPlayerInfo x) { }
+	internal bool <GetFriendOnServer>b__8_2(IPlayerInfo x) { }
 
-internal string <GetFriendOnServer>b__8_3(IPlayerInfo x) { }
+	internal string <GetFriendOnServer>b__8_3(IPlayerInfo x) { }
 
-internal string <GetFriendOnServer>b__8_4(IGrouping<string, IPlayerInfo> x) { }
+	internal string <GetFriendOnServer>b__8_4(IGrouping<string, IPlayerInfo> x) { }
 
-internal string <GetFriendOnServer>b__8_5(IGrouping<string, IPlayerInfo> x) { }
+	internal string <GetFriendOnServer>b__8_5(IGrouping<string, IPlayerInfo> x) { }
 
-internal string <GetFriendOnServer>b__8_6(IPlayerInfo y) { }
+	internal string <GetFriendOnServer>b__8_6(IPlayerInfo y) { }
 
-internal string <GetIsFavourite>b__11_0(ServerInfo x) { }
+	internal string <GetIsFavourite>b__11_0(ServerInfo x) { }
 
 }
 
@@ -1105,57 +1105,57 @@ public class ServerBrowserList : BaseMonoBehaviour, VirtualScroll.IDataSource //
 	private RealTimeSince timeSinceRebuild; 
 
 
-public bool IsCheater() { }
+	public bool IsCheater() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-private void ServerResponded(ServerInfo server) { }
+	private void ServerResponded(ServerInfo server) { }
 
-public void InitFilters(string searchFilter, bool showFull, bool showEmpty, HashSet<string> searchTags, HashSet<string> excludeTags) { }
+	public void InitFilters(string searchFilter, bool showFull, bool showEmpty, HashSet<string> searchTags, HashSet<string> excludeTags) { }
 
-public void Init() { }
+	public void Init() { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void AddServer(ServerInfo server) { }
+	public void AddServer(ServerInfo server) { }
 
-public void Rebuild() { }
+	public void Rebuild() { }
 
-internal IOrderedEnumerable<ServerInfo> GetSortedServers() { }
+	internal IOrderedEnumerable<ServerInfo> GetSortedServers() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void SearchFilter(string searchtext, bool showFull, bool showEmpty, HashSet<string> searchTags, HashSet<string> excludeTags) { }
+	public void SearchFilter(string searchtext, bool showFull, bool showEmpty, HashSet<string> searchTags, HashSet<string> excludeTags) { }
 
-public void OrderBy(string strBy) { }
+	public void OrderBy(string strBy) { }
 
-private void UpdateAllPlayerClamps() { }
+	private void UpdateAllPlayerClamps() { }
 
-private static ServerInfo ClampPlayerCount(in ServerInfo server, int maxAllowedPlayers) { }
+	private static ServerInfo ClampPlayerCount(in ServerInfo server, int maxAllowedPlayers) { }
 
-public int GetItemCount() { }
+	public int GetItemCount() { }
 
-public void SetItemData(int i, GameObject obj) { }
+	public void SetItemData(int i, GameObject obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum ServerBrowserList.QueryType // TypeDefIndex: 11154
 {
 	public int value__; 
-public const ServerBrowserList.QueryType RegularInternet = 0;
-public const ServerBrowserList.QueryType Friends = 1;
-public const ServerBrowserList.QueryType History = 2;
-public const ServerBrowserList.QueryType LAN = 3;
-public const ServerBrowserList.QueryType Favourites = 4;
-public const ServerBrowserList.QueryType None = 5;
+	public const ServerBrowserList.QueryType RegularInternet = 0;
+	public const ServerBrowserList.QueryType Friends = 1;
+	public const ServerBrowserList.QueryType History = 2;
+	public const ServerBrowserList.QueryType LAN = 3;
+	public const ServerBrowserList.QueryType Favourites = 4;
+	public const ServerBrowserList.QueryType None = 5;
 
 }
 
@@ -1193,39 +1193,39 @@ private sealed class ServerBrowserList.<>c // TypeDefIndex: 11157
 	public static Func<ServerInfo, int> <>9__41_16; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <Refresh>b__11_0(Manifest.ServerDesc x) { }
+	internal string <Refresh>b__11_0(Manifest.ServerDesc x) { }
 
-internal bool <GetSortedServers>b__41_1(ServerInfo x) { }
+	internal bool <GetSortedServers>b__41_1(ServerInfo x) { }
 
-internal bool <GetSortedServers>b__41_2(ServerInfo x) { }
+	internal bool <GetSortedServers>b__41_2(ServerInfo x) { }
 
-internal int <GetSortedServers>b__41_3(ServerInfo x) { }
+	internal int <GetSortedServers>b__41_3(ServerInfo x) { }
 
-internal uint <GetSortedServers>b__41_5(ServerInfo x) { }
+	internal uint <GetSortedServers>b__41_5(ServerInfo x) { }
 
-internal uint <GetSortedServers>b__41_7(ServerInfo x) { }
+	internal uint <GetSortedServers>b__41_7(ServerInfo x) { }
 
-internal bool <GetSortedServers>b__41_8(ServerInfo x) { }
+	internal bool <GetSortedServers>b__41_8(ServerInfo x) { }
 
-internal uint <GetSortedServers>b__41_9(ServerInfo x) { }
+	internal uint <GetSortedServers>b__41_9(ServerInfo x) { }
 
-internal bool <GetSortedServers>b__41_10(ServerInfo x) { }
+	internal bool <GetSortedServers>b__41_10(ServerInfo x) { }
 
-internal uint <GetSortedServers>b__41_11(ServerInfo x) { }
+	internal uint <GetSortedServers>b__41_11(ServerInfo x) { }
 
-internal string <GetSortedServers>b__41_12(ServerInfo x) { }
+	internal string <GetSortedServers>b__41_12(ServerInfo x) { }
 
-internal string <GetSortedServers>b__41_13(ServerInfo x) { }
+	internal string <GetSortedServers>b__41_13(ServerInfo x) { }
 
-internal int <GetSortedServers>b__41_14(ServerInfo x) { }
+	internal int <GetSortedServers>b__41_14(ServerInfo x) { }
 
-internal int <GetSortedServers>b__41_15(ServerInfo x) { }
+	internal int <GetSortedServers>b__41_15(ServerInfo x) { }
 
-internal int <GetSortedServers>b__41_16(ServerInfo x) { }
+	internal int <GetSortedServers>b__41_16(ServerInfo x) { }
 
 }
 
@@ -1234,9 +1234,9 @@ private sealed class ServerBrowserList.<>c__DisplayClass12_0 // TypeDefIndex: 11
 	public ServerBrowserList.Rules rule; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <ServerResponded>b__0(string x) { }
+	internal bool <ServerResponded>b__0(string x) { }
 
 }
 
@@ -1246,13 +1246,13 @@ private sealed class ServerBrowserList.<>c__DisplayClass41_0 // TypeDefIndex: 11
 	public int now; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetSortedServers>b__0(ServerInfo x) { }
+	internal bool <GetSortedServers>b__0(ServerInfo x) { }
 
-internal bool <GetSortedServers>b__4(ServerInfo x) { }
+	internal bool <GetSortedServers>b__4(ServerInfo x) { }
 
-internal bool <GetSortedServers>b__6(ServerInfo x) { }
+	internal bool <GetSortedServers>b__6(ServerInfo x) { }
 
 }
 
@@ -1267,24 +1267,24 @@ public class ServerBrowserTag : MonoBehaviour // TypeDefIndex: 11160
 	[CompilerGeneratedAttribute] 
 	private bool <IsActive>k__BackingField; 
 
-public bool IsActive { get; set; }
+	public bool IsActive { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsActive() { }
+	public bool get_IsActive() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsActive(bool value) { }
+	private void set_IsActive(bool value) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public bool Test(in ServerInfo serverInfo) { }
+	public bool Test(in ServerInfo serverInfo) { }
 
-public void Toggle() { }
+	public void Toggle() { }
 
-private void Refresh() { }
+	private void Refresh() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1297,17 +1297,17 @@ public class ServerBrowserTagFilters : MonoBehaviour // TypeDefIndex: 11161
 	private List<bool> _previousState; 
 
 
-public void Start() { }
+	public void Start() { }
 
-public void Open() { }
+	public void Open() { }
 
-public void Close() { }
+	public void Close() { }
 
-public void GetTags(out HashSet<string> searchTags, out HashSet<string> excludeTags) { }
+	public void GetTags(out HashSet<string> searchTags, out HashSet<string> excludeTags) { }
 
-private List<bool> GetCurrentSelections() { }
+	private List<bool> GetCurrentSelections() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1318,13 +1318,13 @@ private sealed class ServerBrowserTagFilters.<>c // TypeDefIndex: 11162
 	public static Func<ServerBrowserTag, bool> <>9__9_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <Close>b__7_0(bool b) { }
+	internal bool <Close>b__7_0(bool b) { }
 
-internal bool <GetCurrentSelections>b__9_0(ServerBrowserTag t) { }
+	internal bool <GetCurrentSelections>b__9_0(ServerBrowserTag t) { }
 
 }
 
@@ -1333,13 +1333,13 @@ public class ServerBrowserTagList : MonoBehaviour // TypeDefIndex: 11163
 	private ServerBrowserTag[] _allTags; 
 
 
-private void Initialize() { }
+	private void Initialize() { }
 
-public void Awake() { }
+	public void Awake() { }
 
-public bool Refresh(ServerInfo server) { }
+	public bool Refresh(ServerInfo server) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1350,14 +1350,14 @@ public class ServerHistory : MonoBehaviour // TypeDefIndex: 11164
 	internal IServerQuery Request; 
 
 
-private void Start() { }
+	private void Start() { }
 
 	[AsyncStateMachineAttribute] 
-public Task Refresh() { }
+	public Task Refresh() { }
 
-private void OnServer(ServerInfo server) { }
+	private void OnServer(ServerInfo server) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1369,10 +1369,10 @@ private struct ServerHistory.<Refresh>d__4 : IAsyncStateMachine // TypeDefIndex:
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -1382,11 +1382,11 @@ private sealed class ServerHistory.<>c // TypeDefIndex: 11166
 	public static Func<Transform, object> <>9__5_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal object <OnServer>b__5_0(Transform x) { }
+	internal object <OnServer>b__5_0(Transform x) { }
 
 }
 
@@ -1399,11 +1399,11 @@ public class ServerHistoryItem : MonoBehaviour // TypeDefIndex: 11167
 	public uint order; 
 
 
-internal void Setup(ServerInfo s) { }
+	internal void Setup(ServerInfo s) { }
 
-public void Open() { }
+	public void Open() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1411,10 +1411,10 @@ public static class ServerInfoHelpers // TypeDefIndex: 11168
 {
 
 	[AsyncStateMachineAttribute] 
-public static Task<Nullable<ServerInfo>> Load(string address, int port) { }
+	public static Task<Nullable<ServerInfo>> Load(string address, int port) { }
 
 	[AsyncStateMachineAttribute] 
-public static Task<Dictionary<string, string>> LoadRules(ServerInfo serverInfo) { }
+	public static Task<Dictionary<string, string>> LoadRules(ServerInfo serverInfo) { }
 
 }
 
@@ -1430,10 +1430,10 @@ private struct ServerInfoHelpers.<Load>d__0 : IAsyncStateMachine // TypeDefIndex
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -1448,17 +1448,17 @@ private struct ServerInfoHelpers.<LoadRules>d__1 : IAsyncStateMachine // TypeDef
 	private TaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 public static class Server // TypeDefIndex: 11647
 {
-public const byte Default = 0;
-public const byte Positions = 14;
+	public const byte Default = 0;
+	public const byte Positions = 14;
 
 }
 
@@ -1666,13 +1666,13 @@ public class Server : ConsoleSystem // TypeDefIndex: 11956
 	public static bool printReportsToConsole; 
 
 
-public static float TickDelta() { }
+	public static float TickDelta() { }
 
-public static float TickTime(uint tick) { }
+	public static float TickTime(uint tick) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

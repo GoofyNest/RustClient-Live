@@ -49,39 +49,39 @@ internal sealed class Converter // TypeDefIndex: 1090
 	internal static Type typeofMarshalByRefObject; 
 
 
-internal static InternalPrimitiveTypeE ToCode(Type type) { }
+	internal static InternalPrimitiveTypeE ToCode(Type type) { }
 
-internal static bool IsWriteAsByteArray(InternalPrimitiveTypeE code) { }
+	internal static bool IsWriteAsByteArray(InternalPrimitiveTypeE code) { }
 
-internal static int TypeLength(InternalPrimitiveTypeE code) { }
+	internal static int TypeLength(InternalPrimitiveTypeE code) { }
 
-internal static Type ToArrayType(InternalPrimitiveTypeE code) { }
+	internal static Type ToArrayType(InternalPrimitiveTypeE code) { }
 
-private static void InitTypeA() { }
+	private static void InitTypeA() { }
 
-private static void InitArrayTypeA() { }
+	private static void InitArrayTypeA() { }
 
-internal static Type ToType(InternalPrimitiveTypeE code) { }
+	internal static Type ToType(InternalPrimitiveTypeE code) { }
 
-internal static Array CreatePrimitiveArray(InternalPrimitiveTypeE code, int length) { }
+	internal static Array CreatePrimitiveArray(InternalPrimitiveTypeE code, int length) { }
 
-internal static bool IsPrimitiveArray(Type type, out object typeInformation) { }
+	internal static bool IsPrimitiveArray(Type type, out object typeInformation) { }
 
-private static void InitValueA() { }
+	private static void InitValueA() { }
 
-internal static string ToComType(InternalPrimitiveTypeE code) { }
+	internal static string ToComType(InternalPrimitiveTypeE code) { }
 
-private static void InitTypeCodeA() { }
+	private static void InitTypeCodeA() { }
 
-internal static TypeCode ToTypeCode(InternalPrimitiveTypeE code) { }
+	internal static TypeCode ToTypeCode(InternalPrimitiveTypeE code) { }
 
-private static void InitCodeA() { }
+	private static void InitCodeA() { }
 
-internal static InternalPrimitiveTypeE ToPrimitiveTypeEnum(TypeCode typeCode) { }
+	internal static InternalPrimitiveTypeE ToPrimitiveTypeEnum(TypeCode typeCode) { }
 
-internal static object FromString(string value, InternalPrimitiveTypeE code) { }
+	internal static object FromString(string value, InternalPrimitiveTypeE code) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

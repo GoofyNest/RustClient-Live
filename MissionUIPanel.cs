@@ -9,25 +9,25 @@ public class MissionUIPanel : MonoBehaviour // TypeDefIndex: 10217
 	private bool dirty; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public static void MissionsUpdated() { }
+	public static void MissionsUpdated() { }
 
-public bool IsOpen() { }
+	public bool IsOpen() { }
 
-public void Open() { }
+	public void Open() { }
 
-public void Close() { }
+	public void Close() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void AbandonMission() { }
+	public void AbandonMission() { }
 
-public void DoUpdate() { }
+	public void DoUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

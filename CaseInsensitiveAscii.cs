@@ -4,17 +4,17 @@ internal class CaseInsensitiveAscii : IEqualityComparer, IComparer // TypeDefInd
 	internal static readonly byte[] AsciiToLower; 
 
 
-public int GetHashCode(object myObject) { }
+	public int GetHashCode(object myObject) { }
 
-public int Compare(object firstObject, object secondObject) { }
+	public int Compare(object firstObject, object secondObject) { }
 
-private int FastGetHashCode(string myString) { }
+	private int FastGetHashCode(string myString) { }
 
-public bool Equals(object firstObject, object secondObject) { }
+	public bool Equals(object firstObject, object secondObject) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

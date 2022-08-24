@@ -3,15 +3,15 @@ public sealed class NeutralResourcesLanguageAttribute : Attribute // TypeDefInde
 	private string _culture; 
 	private UltimateResourceFallbackLocation _fallbackLoc; 
 
-public string CultureName { get; }
-public UltimateResourceFallbackLocation Location { get; }
+	public string CultureName { get; }
+	public UltimateResourceFallbackLocation Location { get; }
 
 
-public void .ctor(string cultureName) { }
+	public void .ctor(string cultureName) { }
 
-public string get_CultureName() { }
+	public string get_CultureName() { }
 
-public UltimateResourceFallbackLocation get_Location() { }
+	public UltimateResourceFallbackLocation get_Location() { }
 
 }
 

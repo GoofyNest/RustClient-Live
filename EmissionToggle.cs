@@ -9,17 +9,17 @@ public class EmissionToggle : MonoBehaviour, IClientComponent // TypeDefIndex: 9
 	private static int emissionColorID; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-private void Init() { }
+	private void Init() { }
 
-public void SetEmissionEnabled(bool on) { }
+	public void SetEmissionEnabled(bool on) { }
 
-public void SetEmission(float percent) { }
+	public void SetEmission(float percent) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

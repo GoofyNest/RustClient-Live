@@ -4,7 +4,7 @@ public struct ERConnectionGUIStatus // TypeDefIndex: 7186
 	public bool favourite; 
 
 
-public void .ctor(int _id, bool value) { }
+	public void .ctor(int _id, bool value) { }
 
 }
 

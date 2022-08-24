@@ -31,17 +31,17 @@ public class ERMaterial : ScriptableObject // TypeDefIndex: 7223
 	public Material triangleStripMaterial; 
 
 
-public void Init(ERModularBase scr) { }
+	public void Init(ERModularBase scr) { }
 
-public static ERMaterial CreateInstance(ERModularBase scr) { }
+	public static ERMaterial CreateInstance(ERModularBase scr) { }
 
-public static string[] OCQOOCOQQC(ERModularBase scr) { }
+	public static string[] OCQOOCOQQC(ERModularBase scr) { }
 
-public static ERMaterial OQDQOCCODO(ERModularBase scr, ERIConnector prefab, ref int targetRoad, ref int index) { }
+	public static ERMaterial OQDQOCCODO(ERModularBase scr, ERIConnector prefab, ref int targetRoad, ref int index) { }
 
-public static Material OOQCDDQODC(ERModularBase scr, ERIConnector prefab) { }
+	public static Material OOQCDDQODC(ERModularBase scr, ERIConnector prefab) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

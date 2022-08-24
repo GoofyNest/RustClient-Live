@@ -3,42 +3,42 @@ public class DownloadHandler : IDisposable // TypeDefIndex: 4132
 	[VisibleToOtherModulesAttribute] 
 	internal IntPtr m_Ptr; 
 
-public byte[] data { get; }
-public string text { get; }
+	public byte[] data { get; }
+	public string text { get; }
 
 
 	[NativeMethodAttribute] 
-private void Release() { }
+	private void Release() { }
 
 	[VisibleToOtherModulesAttribute] 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public byte[] get_data() { }
+	public byte[] get_data() { }
 
-public string get_text() { }
+	public string get_text() { }
 
-protected virtual byte[] GetData() { }
+	protected virtual byte[] GetData() { }
 
-protected virtual string GetText() { }
+	protected virtual string GetText() { }
 
-private Encoding GetTextEncoder() { }
+	private Encoding GetTextEncoder() { }
 
-private string GetContentType() { }
+	private string GetContentType() { }
 
-protected static T GetCheckedDownloader<T>(UnityWebRequest www) { }
-/* GenericInstMethod :
-|
-|-DownloadHandler.GetCheckedDownloader<DownloadHandlerTexture>
-|-DownloadHandler.GetCheckedDownloader<object>
-*/
+	protected static T GetCheckedDownloader<T>(UnityWebRequest www) { }
+	/* GenericInstMethod :
+	|
+	|-DownloadHandler.GetCheckedDownloader<DownloadHandlerTexture>
+	|-DownloadHandler.GetCheckedDownloader<object>
+	*/
 
 	[NativeThrowsAttribute] 
 	[VisibleToOtherModulesAttribute] 
-internal static byte[] InternalGetByteArray(DownloadHandler dh) { }
+	internal static byte[] InternalGetByteArray(DownloadHandler dh) { }
 
 }
 

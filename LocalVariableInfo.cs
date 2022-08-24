@@ -5,9 +5,9 @@ public class LocalVariableInfo // TypeDefIndex: 569
 	internal ushort position; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

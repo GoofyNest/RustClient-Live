@@ -6,7 +6,7 @@ public class ScrapTransportHelicopterWheelEffects : MonoBehaviour, IServerCompon
 	public float minDistBetweenEffects; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

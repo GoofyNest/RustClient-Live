@@ -28,7 +28,7 @@ public class ReverbSettings : ScriptableObject // TypeDefIndex: 9017
 	public float density; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

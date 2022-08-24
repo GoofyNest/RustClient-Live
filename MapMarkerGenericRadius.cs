@@ -7,14 +7,14 @@ public class MapMarkerGenericRadius : MapMarker // TypeDefIndex: 8602
 	private UIMapGenericRadius cachedUIMarker; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void MarkerUpdate(BaseEntity.RPCMessage msg) { }
+	public void MarkerUpdate(BaseEntity.RPCMessage msg) { }
 
-public override void SetupUIMarker(GameObject marker) { }
+	public override void SetupUIMarker(GameObject marker) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

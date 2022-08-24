@@ -5,15 +5,15 @@ public class ViewmodelItem : MonoBehaviour // TypeDefIndex: 9254
 	private Animator viewmodelAnimator; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnOffStateChanged() { }
+	private void OnOffStateChanged() { }
 
-private Item FindItem() { }
+	private Item FindItem() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

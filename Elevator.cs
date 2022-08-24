@@ -5,57 +5,57 @@ public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6387
 	public int floor; 
 
 
-public static void ResetToPool(Elevator instance) { }
+	public static void ResetToPool(Elevator instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Elevator instance) { }
+	public void CopyTo(Elevator instance) { }
 
-public Elevator Copy() { }
+	public Elevator Copy() { }
 
-public static Elevator Deserialize(Stream stream) { }
+	public static Elevator Deserialize(Stream stream) { }
 
-public static Elevator DeserializeLengthDelimited(Stream stream) { }
+	public static Elevator DeserializeLengthDelimited(Stream stream) { }
 
-public static Elevator DeserializeLength(Stream stream, int length) { }
+	public static Elevator DeserializeLength(Stream stream, int length) { }
 
-public static Elevator Deserialize(byte[] buffer) { }
+	public static Elevator Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Elevator previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Elevator previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Elevator Deserialize(byte[] buffer, Elevator instance, bool isDelta = False) { }
+	public static Elevator Deserialize(byte[] buffer, Elevator instance, bool isDelta = False) { }
 
-public static Elevator Deserialize(Stream stream, Elevator instance, bool isDelta) { }
+	public static Elevator Deserialize(Stream stream, Elevator instance, bool isDelta) { }
 
-public static Elevator DeserializeLengthDelimited(Stream stream, Elevator instance, bool isDelta) { }
+	public static Elevator DeserializeLengthDelimited(Stream stream, Elevator instance, bool isDelta) { }
 
-public static Elevator DeserializeLength(Stream stream, int length, Elevator instance, bool isDelta) { }
+	public static Elevator DeserializeLength(Stream stream, int length, Elevator instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Elevator instance, Elevator previous) { }
+	public static void SerializeDelta(Stream stream, Elevator instance, Elevator previous) { }
 
-public static void Serialize(Stream stream, Elevator instance) { }
+	public static void Serialize(Stream stream, Elevator instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Elevator instance) { }
+	public static byte[] SerializeToBytes(Elevator instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Elevator instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Elevator instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -80,66 +80,66 @@ public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 8387
 	public float movementAccentMaxInterval; 
 	private Sound liftMovementLoopSound; 
 	private float nextMovementAccent; 
-private const BaseEntity.Flags PressedUp = 128;
-private const BaseEntity.Flags PressedDown = 256;
+	private const BaseEntity.Flags PressedUp = 128;
+	private const BaseEntity.Flags PressedDown = 256;
 
-public override bool HasMenuOptions { get; }
-private Elevator owner { get; }
+	public override bool HasMenuOptions { get; }
+	private Elevator owner { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private Elevator get_owner() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_RaiseElevator(BasePlayer p) { }
-
-protected bool Menu_RaiseElevator_ShowIf(BasePlayer p) { }
-
-protected virtual bool Menu_RaiseElevator_ShowIf_Base(BasePlayer p) { }
+	private Elevator get_owner() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_RaiseElevatorToTop(BasePlayer p) { }
+	public void Menu_RaiseElevator(BasePlayer p) { }
+
+	protected bool Menu_RaiseElevator_ShowIf(BasePlayer p) { }
+
+	protected virtual bool Menu_RaiseElevator_ShowIf_Base(BasePlayer p) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_LowerElevator(BasePlayer p) { }
-
-protected bool Menu_LowerElevator_ShowIf(BasePlayer p) { }
-
-protected virtual bool Menu_LowerElevator_ShowIf_Base(BasePlayer p) { }
+	public void Menu_RaiseElevatorToTop(BasePlayer p) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_LowerElevatorToFloor(BasePlayer p) { }
+	public void Menu_LowerElevator(BasePlayer p) { }
 
-protected bool GetLookingAtButton(BasePlayer p, out Elevator.Direction d) { }
+	protected bool Menu_LowerElevator_ShowIf(BasePlayer p) { }
 
-public void PlayLiftArrivalEffect() { }
+	protected virtual bool Menu_LowerElevator_ShowIf_Base(BasePlayer p) { }
 
-public void StartMovementSounds() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_LowerElevatorToFloor(BasePlayer p) { }
 
-public void UpdateMovementSounds() { }
+	protected bool GetLookingAtButton(BasePlayer p, out Elevator.Direction d) { }
 
-public void StopMovementSounds() { }
+	public void PlayLiftArrivalEffect() { }
 
-public void ToggleMovementCollider(bool state) { }
+	public void StartMovementSounds() { }
 
-public void .ctor() { }
+	public void UpdateMovementSounds() { }
+
+	public void StopMovementSounds() { }
+
+	public void ToggleMovementCollider(bool state) { }
+
+	public void .ctor() { }
 
 }
 
@@ -148,30 +148,30 @@ public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 8388
 	private Option __menuOption_Menu_LowerElevatorToFloor; 
 	private Option __menuOption_Menu_RaiseElevatorToTop; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_RaiseElevatorToTop(BasePlayer p) { }
+	public override bool get_HasMenuOptions() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_LowerElevatorToFloor(BasePlayer p) { }
+	public void Menu_RaiseElevatorToTop(BasePlayer p) { }
 
-protected override bool Menu_RaiseElevator_ShowIf_Base(BasePlayer p) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_LowerElevatorToFloor(BasePlayer p) { }
 
-protected override bool Menu_LowerElevator_ShowIf_Base(BasePlayer p) { }
+	protected override bool Menu_RaiseElevator_ShowIf_Base(BasePlayer p) { }
 
-public void .ctor() { }
+	protected override bool Menu_LowerElevator_ShowIf_Base(BasePlayer p) { }
+
+	public void .ctor() { }
 
 }
 
@@ -194,66 +194,66 @@ public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 8692
 	public Transform CableRoot; 
 	[CompilerGeneratedAttribute] 
 	private int <Floor>k__BackingField; 
-protected const BaseEntity.Flags TopFloorFlag = 128;
-public const BaseEntity.Flags ElevatorPowered = 256;
+	protected const BaseEntity.Flags TopFloorFlag = 128;
+	public const BaseEntity.Flags ElevatorPowered = 256;
 	private ElevatorLift liftEntity; 
 
-protected virtual bool IsStatic { get; }
-public int Floor { get; set; }
-protected bool IsTop { get; }
+	protected virtual bool IsStatic { get; }
+	public int Floor { get; set; }
+	protected bool IsTop { get; }
 
 
-protected virtual bool get_IsStatic() { }
-
-	[CompilerGeneratedAttribute] 
-public int get_Floor() { }
+	protected virtual bool get_IsStatic() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Floor(int value) { }
+	public int get_Floor() { }
 
-protected bool get_IsTop() { }
+	[CompilerGeneratedAttribute] 
+	public void set_Floor(int value) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	protected bool get_IsTop() { }
 
-private void UpdateCable() { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private void SetCableBounds(float height) { }
+	private void UpdateCable() { }
 
-private void DisableUpdate() { }
+	private void SetCableBounds(float height) { }
 
-public override void ClientOnEnable() { }
+	private void DisableUpdate() { }
 
-protected override void SpawnGibs() { }
+	public override void ClientOnEnable() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	protected override void SpawnGibs() { }
 
-private void FindExistingLiftChild() { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void OnFlagToggled(bool state) { }
+	private void FindExistingLiftChild() { }
 
-public void .ctor() { }
+	public void OnFlagToggled(bool state) { }
+
+	public void .ctor() { }
 
 }
 
 public enum Elevator.Direction // TypeDefIndex: 8693
 {
 	public int value__; 
-public const Elevator.Direction Up = 0;
-public const Elevator.Direction Down = 1;
+	public const Elevator.Direction Up = 0;
+	public const Elevator.Direction Down = 1;
 
 }
 
 public class ElevatorStatic : Elevator // TypeDefIndex: 8694
 {
 	public bool StaticTop; 
-private const BaseEntity.Flags LiftRecentlyArrived = 512;
+	private const BaseEntity.Flags LiftRecentlyArrived = 512;
 
-protected override bool IsStatic { get; }
+	protected override bool IsStatic { get; }
 
 
-protected override bool get_IsStatic() { }
+	protected override bool get_IsStatic() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -262,9 +262,9 @@ public class ElevatorIOEntity : IOEntity // TypeDefIndex: 9799
 	public int Consumption; 
 
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

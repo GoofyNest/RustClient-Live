@@ -16,57 +16,57 @@ public sealed class ResourceReader : IResourceReader, IEnumerable, IDisposable /
 	private int _version; 
 
 
-internal void .ctor(Stream stream, Dictionary<string, ResourceLocator> resCache) { }
+	internal void .ctor(Stream stream, Dictionary<string, ResourceLocator> resCache) { }
 
-public void Close() { }
+	public void Close() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-private void Dispose(bool disposing) { }
+	private void Dispose(bool disposing) { }
 
-internal static int ReadUnalignedI4(int* p) { }
+	internal static int ReadUnalignedI4(int* p) { }
 
-private void SkipString() { }
+	private void SkipString() { }
 
-private int GetNameHash(int index) { }
+	private int GetNameHash(int index) { }
 
-private int GetNamePosition(int index) { }
+	private int GetNamePosition(int index) { }
 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
-public IDictionaryEnumerator GetEnumerator() { }
+	public IDictionaryEnumerator GetEnumerator() { }
 
-internal ResourceReader.ResourceEnumerator GetEnumeratorInternal() { }
+	internal ResourceReader.ResourceEnumerator GetEnumeratorInternal() { }
 
-internal int FindPosForResource(string name) { }
+	internal int FindPosForResource(string name) { }
 
-private bool CompareStringEqualsName(string name) { }
+	private bool CompareStringEqualsName(string name) { }
 
-private string AllocateStringForNameIndex(int index, out int dataOffset) { }
+	private string AllocateStringForNameIndex(int index, out int dataOffset) { }
 
-private object GetValueForNameIndex(int index) { }
+	private object GetValueForNameIndex(int index) { }
 
-internal string LoadString(int pos) { }
+	internal string LoadString(int pos) { }
 
-internal object LoadObject(int pos) { }
+	internal object LoadObject(int pos) { }
 
-internal object LoadObject(int pos, out ResourceTypeCode typeCode) { }
+	internal object LoadObject(int pos, out ResourceTypeCode typeCode) { }
 
-internal object LoadObjectV1(int pos) { }
+	internal object LoadObjectV1(int pos) { }
 
-private object _LoadObjectV1(int pos) { }
+	private object _LoadObjectV1(int pos) { }
 
-internal object LoadObjectV2(int pos, out ResourceTypeCode typeCode) { }
+	internal object LoadObjectV2(int pos, out ResourceTypeCode typeCode) { }
 
-private object _LoadObjectV2(int pos, out ResourceTypeCode typeCode) { }
+	private object _LoadObjectV2(int pos, out ResourceTypeCode typeCode) { }
 
-private object DeserializeObject(int typeIndex) { }
+	private object DeserializeObject(int typeIndex) { }
 
-private void ReadResources() { }
+	private void ReadResources() { }
 
-private void _ReadResources() { }
+	private void _ReadResources() { }
 
-private RuntimeType FindType(int typeIndex) { }
+	private RuntimeType FindType(int typeIndex) { }
 
 }
 
@@ -77,28 +77,28 @@ internal sealed class ResourceReader.ResourceEnumerator : IDictionaryEnumerator,
 	private int _currentName; 
 	private int _dataPosition; 
 
-public object Key { get; }
-public object Current { get; }
-internal int DataPosition { get; }
-public DictionaryEntry Entry { get; }
-public object Value { get; }
+	public object Key { get; }
+	public object Current { get; }
+	internal int DataPosition { get; }
+	public DictionaryEntry Entry { get; }
+	public object Value { get; }
 
 
-internal void .ctor(ResourceReader reader) { }
+	internal void .ctor(ResourceReader reader) { }
 
-public bool MoveNext() { }
+	public bool MoveNext() { }
 
-public object get_Key() { }
+	public object get_Key() { }
 
-public object get_Current() { }
+	public object get_Current() { }
 
-internal int get_DataPosition() { }
+	internal int get_DataPosition() { }
 
-public DictionaryEntry get_Entry() { }
+	public DictionaryEntry get_Entry() { }
 
-public object get_Value() { }
+	public object get_Value() { }
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 

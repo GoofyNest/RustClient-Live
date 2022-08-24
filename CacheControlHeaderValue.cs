@@ -30,119 +30,119 @@ public class CacheControlHeaderValue : ICloneable // TypeDefIndex: 5759
 	[CompilerGeneratedAttribute] 
 	private Nullable<TimeSpan> <SharedMaxAge>k__BackingField; 
 
-public ICollection<NameValueHeaderValue> Extensions { get; }
-public Nullable<TimeSpan> MaxAge { get; set; }
-public bool MaxStale { get; set; }
-public Nullable<TimeSpan> MaxStaleLimit { get; set; }
-public Nullable<TimeSpan> MinFresh { get; set; }
-public bool MustRevalidate { get; set; }
-public bool NoCache { get; set; }
-public ICollection<string> NoCacheHeaders { get; }
-public bool NoStore { get; set; }
-public bool NoTransform { get; set; }
-public bool OnlyIfCached { get; set; }
-public bool Private { get; set; }
-public ICollection<string> PrivateHeaders { get; }
-public bool ProxyRevalidate { get; set; }
-public bool Public { get; set; }
-public Nullable<TimeSpan> SharedMaxAge { get; set; }
+	public ICollection<NameValueHeaderValue> Extensions { get; }
+	public Nullable<TimeSpan> MaxAge { get; set; }
+	public bool MaxStale { get; set; }
+	public Nullable<TimeSpan> MaxStaleLimit { get; set; }
+	public Nullable<TimeSpan> MinFresh { get; set; }
+	public bool MustRevalidate { get; set; }
+	public bool NoCache { get; set; }
+	public ICollection<string> NoCacheHeaders { get; }
+	public bool NoStore { get; set; }
+	public bool NoTransform { get; set; }
+	public bool OnlyIfCached { get; set; }
+	public bool Private { get; set; }
+	public ICollection<string> PrivateHeaders { get; }
+	public bool ProxyRevalidate { get; set; }
+	public bool Public { get; set; }
+	public Nullable<TimeSpan> SharedMaxAge { get; set; }
 
 
-public ICollection<NameValueHeaderValue> get_Extensions() { }
-
-	[CompilerGeneratedAttribute] 
-public Nullable<TimeSpan> get_MaxAge() { }
+	public ICollection<NameValueHeaderValue> get_Extensions() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MaxAge(Nullable<TimeSpan> value) { }
+	public Nullable<TimeSpan> get_MaxAge() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_MaxStale() { }
+	public void set_MaxAge(Nullable<TimeSpan> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MaxStale(bool value) { }
+	public bool get_MaxStale() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<TimeSpan> get_MaxStaleLimit() { }
+	public void set_MaxStale(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MaxStaleLimit(Nullable<TimeSpan> value) { }
+	public Nullable<TimeSpan> get_MaxStaleLimit() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<TimeSpan> get_MinFresh() { }
+	public void set_MaxStaleLimit(Nullable<TimeSpan> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MinFresh(Nullable<TimeSpan> value) { }
+	public Nullable<TimeSpan> get_MinFresh() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_MustRevalidate() { }
+	public void set_MinFresh(Nullable<TimeSpan> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MustRevalidate(bool value) { }
+	public bool get_MustRevalidate() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_NoCache() { }
+	public void set_MustRevalidate(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_NoCache(bool value) { }
-
-public ICollection<string> get_NoCacheHeaders() { }
+	public bool get_NoCache() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_NoStore() { }
+	public void set_NoCache(bool value) { }
+
+	public ICollection<string> get_NoCacheHeaders() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_NoStore(bool value) { }
+	public bool get_NoStore() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_NoTransform() { }
+	public void set_NoStore(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_NoTransform(bool value) { }
+	public bool get_NoTransform() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_OnlyIfCached() { }
+	public void set_NoTransform(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_OnlyIfCached(bool value) { }
+	public bool get_OnlyIfCached() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Private() { }
+	public void set_OnlyIfCached(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Private(bool value) { }
-
-public ICollection<string> get_PrivateHeaders() { }
+	public bool get_Private() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_ProxyRevalidate() { }
+	public void set_Private(bool value) { }
+
+	public ICollection<string> get_PrivateHeaders() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ProxyRevalidate(bool value) { }
+	public bool get_ProxyRevalidate() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Public() { }
+	public void set_ProxyRevalidate(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Public(bool value) { }
+	public bool get_Public() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<TimeSpan> get_SharedMaxAge() { }
+	public void set_Public(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_SharedMaxAge(Nullable<TimeSpan> value) { }
+	public Nullable<TimeSpan> get_SharedMaxAge() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	public void set_SharedMaxAge(Nullable<TimeSpan> value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public static bool TryParse(string input, out CacheControlHeaderValue parsedValue) { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public static bool TryParse(string input, out CacheControlHeaderValue parsedValue) { }
 
-public void .ctor() { }
+	public override string ToString() { }
+
+	public void .ctor() { }
 
 }
 

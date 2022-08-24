@@ -10,48 +10,48 @@ public class SearchLight : IOEntity // TypeDefIndex: 8443
 	private Vector3 aimDir; 
 	private bool wasMoving; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void Update() { }
+	public void Update() { }
 
-private void UpdateAimpoint() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void UseLight(BasePlayer player) { }
-
-public bool Menu_UseLight_ShowIf(BasePlayer player) { }
+	private void UpdateAimpoint() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void StopUseLight(BasePlayer player) { }
+	public void UseLight(BasePlayer player) { }
 
-public bool Menu_StopUseLight_ShowIf(BasePlayer player) { }
+	public bool Menu_UseLight_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void StopUseLight(BasePlayer player) { }
+
+	public bool Menu_StopUseLight_ShowIf(BasePlayer player) { }
+
+	public void .ctor() { }
 
 }
 
 public static class SearchLight.SearchLightFlags // TypeDefIndex: 8444
 {
-public const BaseEntity.Flags PlayerUsing = 2048;
+	public const BaseEntity.Flags PlayerUsing = 2048;
 
 }
 

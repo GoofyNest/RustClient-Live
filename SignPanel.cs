@@ -7,15 +7,15 @@ public class SignPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 8817
 	private Texture2D _texture; 
 
 
-public void OnItem(Item item) { }
+	public void OnItem(Item item) { }
 
-public void OnImageLoaded(Texture2D texture) { }
+	public void OnImageLoaded(Texture2D texture) { }
 
-public static void SizeImageBasedOnTexture(Texture2D tex, RectTransform imageContainer) { }
+	public static void SizeImageBasedOnTexture(Texture2D tex, RectTransform imageContainer) { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

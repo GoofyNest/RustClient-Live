@@ -5,18 +5,18 @@ public abstract class ChannelEvent : MidiEvent // TypeDefIndex: 7515
 	[CompilerGeneratedAttribute] 
 	private FourBitNumber <Channel>k__BackingField; 
 
-public FourBitNumber Channel { get; set; }
+	public FourBitNumber Channel { get; set; }
 
 
-protected void .ctor(MidiEventType eventType) { }
-
-	[CompilerGeneratedAttribute] 
-public FourBitNumber get_Channel() { }
+	protected void .ctor(MidiEventType eventType) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Channel(FourBitNumber value) { }
+	public FourBitNumber get_Channel() { }
 
-protected byte ReadDataByte(MidiReader reader, ReadingSettings settings) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Channel(FourBitNumber value) { }
+
+	protected byte ReadDataByte(MidiReader reader, ReadingSettings settings) { }
 
 }
 

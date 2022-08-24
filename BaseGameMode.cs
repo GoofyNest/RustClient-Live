@@ -2,9 +2,9 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 8517
 {
 	private GameMode gameModeScores; 
 	public string[] scoreColumns; 
-public const BaseEntity.Flags Flag_Warmup = 128;
-public const BaseEntity.Flags Flag_GameOver = 256;
-public const BaseEntity.Flags Flag_WaitingForPlayers = 512;
+	public const BaseEntity.Flags Flag_Warmup = 128;
+	public const BaseEntity.Flags Flag_GameOver = 256;
+	public const BaseEntity.Flags Flag_WaitingForPlayers = 512;
 	[CompilerGeneratedAttribute] 
 	private static Action<BaseGameMode> GameModeChanged; 
 	public string shortname; 
@@ -50,102 +50,102 @@ public const BaseEntity.Flags Flag_WaitingForPlayers = 512;
 	private bool wasMatchActive; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public GameMode GetGameScores() { }
+	public GameMode GetGameScores() { }
 
-public int ScoreColumnIndex(string scoreName) { }
+	public int ScoreColumnIndex(string scoreName) { }
 
-public void InitScores() { }
+	public void InitScores() { }
 
-public void CopyGameModeScores(GameMode from, GameMode to) { }
+	public void CopyGameModeScores(GameMode from, GameMode to) { }
 
-public GameMode.PlayerScore GetPlayerScoreForPlayer(BasePlayer player) { }
+	public GameMode.PlayerScore GetPlayerScoreForPlayer(BasePlayer player) { }
 
-public int GetScoreIndexByName(string name) { }
+	public int GetScoreIndexByName(string name) { }
 
-public virtual bool IsDraw() { }
+	public virtual bool IsDraw() { }
 
-public virtual string GetWinnerName() { }
+	public virtual string GetWinnerName() { }
 
-public virtual int GetPlayerTeamPosition(BasePlayer player) { }
+	public virtual int GetPlayerTeamPosition(BasePlayer player) { }
 
-public virtual int GetPlayerRank(BasePlayer player) { }
+	public virtual int GetPlayerRank(BasePlayer player) { }
 
-public int GetWinningTeamIndex() { }
+	public int GetWinningTeamIndex() { }
 
-public virtual bool DidPlayerWin(BasePlayer player) { }
+	public virtual bool DidPlayerWin(BasePlayer player) { }
 
-public bool IsTeamGame() { }
+	public bool IsTeamGame() { }
 
-public bool KeepScores() { }
-
-	[CompilerGeneratedAttribute] 
-public static void add_GameModeChanged(Action<BaseGameMode> value) { }
+	public bool KeepScores() { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_GameModeChanged(Action<BaseGameMode> value) { }
+	public static void add_GameModeChanged(Action<BaseGameMode> value) { }
 
-public bool HasAnyGameModeTag(string[] tags) { }
+	[CompilerGeneratedAttribute] 
+	public static void remove_GameModeChanged(Action<BaseGameMode> value) { }
 
-public bool HasGameModeTag(string tag) { }
+	public bool HasAnyGameModeTag(string[] tags) { }
 
-public bool AllowsSleeping() { }
+	public bool HasGameModeTag(string tag) { }
 
-public bool HasLoadouts() { }
+	public bool AllowsSleeping() { }
 
-public int GetNumTeams() { }
+	public bool HasLoadouts() { }
 
-public int GetTeamScore(int teamIndex) { }
+	public int GetNumTeams() { }
 
-public static void SetActiveGameMode(BaseGameMode newActive, bool serverside) { }
+	public int GetTeamScore(int teamIndex) { }
 
-public static BaseGameMode GetActiveGameMode(bool serverside) { }
+	public static void SetActiveGameMode(BaseGameMode newActive, bool serverside) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public static BaseGameMode GetActiveGameMode(bool serverside) { }
 
-public virtual bool InWarmup() { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public virtual bool IsWaitingForPlayers() { }
+	public virtual bool InWarmup() { }
 
-public virtual bool IsMatchOver() { }
+	public virtual bool IsWaitingForPlayers() { }
 
-public virtual bool IsMatchActive() { }
+	public virtual bool IsMatchOver() { }
 
-public override void InitShared() { }
+	public virtual bool IsMatchActive() { }
 
-public override void DestroyShared() { }
+	public override void InitShared() { }
 
-protected virtual void OnCreated() { }
+	public override void DestroyShared() { }
 
-public void DelayedRespawn() { }
+	protected virtual void OnCreated() { }
 
-public void DoRespawn() { }
+	public void DelayedRespawn() { }
 
-public override void PostNetworkUpdate() { }
+	public void DoRespawn() { }
 
-protected virtual void ClientWarmupStart() { }
+	public override void PostNetworkUpdate() { }
 
-protected virtual void ClientMatchEnd() { }
+	protected virtual void ClientWarmupStart() { }
 
-protected virtual void ClientMatchStart() { }
+	protected virtual void ClientMatchEnd() { }
 
-public virtual SoundDefinition GetWarmupMusic() { }
+	protected virtual void ClientMatchStart() { }
 
-public virtual SoundDefinition GetMatchEndMusic() { }
+	public virtual SoundDefinition GetWarmupMusic() { }
 
-public float TimeUntilWarmupEnds() { }
+	public virtual SoundDefinition GetMatchEndMusic() { }
 
-public float TimeUntilMatchResets() { }
+	public float TimeUntilWarmupEnds() { }
 
-public float TimeUntilMatchEnds() { }
+	public float TimeUntilMatchResets() { }
+
+	public float TimeUntilMatchEnds() { }
 
 	[BaseEntity.RPC_Client] 
-public void RPC_ScoreSplash(BaseEntity.RPCMessage msg) { }
+	public void RPC_ScoreSplash(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -155,7 +155,7 @@ public class BaseGameMode.GameModeTeam // TypeDefIndex: 8518
 	public PlayerInventoryProperties[] teamloadouts; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

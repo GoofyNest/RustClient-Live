@@ -6,9 +6,9 @@ public class WaterPump : LiquidContainer // TypeDefIndex: 9521
 	public int PowerConsumption; 
 
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

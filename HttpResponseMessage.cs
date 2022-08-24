@@ -10,47 +10,47 @@ public class HttpResponseMessage : IDisposable // TypeDefIndex: 5755
 	[CompilerGeneratedAttribute] 
 	private HttpRequestMessage <RequestMessage>k__BackingField; 
 
-public HttpContent Content { get; set; }
-public HttpResponseHeaders Headers { get; }
-public bool IsSuccessStatusCode { get; }
-public string ReasonPhrase { get; set; }
-public HttpRequestMessage RequestMessage { set; }
-public HttpStatusCode StatusCode { get; set; }
-public Version Version { get; }
+	public HttpContent Content { get; set; }
+	public HttpResponseHeaders Headers { get; }
+	public bool IsSuccessStatusCode { get; }
+	public string ReasonPhrase { get; set; }
+	public HttpRequestMessage RequestMessage { set; }
+	public HttpStatusCode StatusCode { get; set; }
+	public Version Version { get; }
 
 
-public void .ctor(HttpStatusCode statusCode) { }
-
-	[CompilerGeneratedAttribute] 
-public HttpContent get_Content() { }
+	public void .ctor(HttpStatusCode statusCode) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Content(HttpContent value) { }
-
-public HttpResponseHeaders get_Headers() { }
-
-public bool get_IsSuccessStatusCode() { }
-
-public string get_ReasonPhrase() { }
-
-public void set_ReasonPhrase(string value) { }
+	public HttpContent get_Content() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_RequestMessage(HttpRequestMessage value) { }
+	public void set_Content(HttpContent value) { }
 
-public HttpStatusCode get_StatusCode() { }
+	public HttpResponseHeaders get_Headers() { }
 
-public void set_StatusCode(HttpStatusCode value) { }
+	public bool get_IsSuccessStatusCode() { }
 
-public Version get_Version() { }
+	public string get_ReasonPhrase() { }
 
-public void Dispose() { }
+	public void set_ReasonPhrase(string value) { }
 
-protected virtual void Dispose(bool disposing) { }
+	[CompilerGeneratedAttribute] 
+	public void set_RequestMessage(HttpRequestMessage value) { }
 
-public HttpResponseMessage EnsureSuccessStatusCode() { }
+	public HttpStatusCode get_StatusCode() { }
 
-public override string ToString() { }
+	public void set_StatusCode(HttpStatusCode value) { }
+
+	public Version get_Version() { }
+
+	public void Dispose() { }
+
+	protected virtual void Dispose(bool disposing) { }
+
+	public HttpResponseMessage EnsureSuccessStatusCode() { }
+
+	public override string ToString() { }
 
 }
 

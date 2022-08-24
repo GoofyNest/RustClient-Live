@@ -1,9 +1,9 @@
 public sealed class ExitGUIException : Exception // TypeDefIndex: 4052
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void .ctor(string message) { }
+	internal void .ctor(string message) { }
 
 }
 

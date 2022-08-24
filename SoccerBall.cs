@@ -15,7 +15,7 @@ public class SoccerBall : BaseCombatEntity // TypeDefIndex: 9759
 	private float otherForceMultiplier; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

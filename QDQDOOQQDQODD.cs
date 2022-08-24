@@ -90,61 +90,61 @@ public class QDQDOOQQDQODD // TypeDefIndex: 7194
 	public int controlType; 
 
 
-public void RoadTypeUpgrade() { }
+	public void RoadTypeUpgrade() { }
 
-public int GetTagIndex(string[] tags) { }
+	public int GetTagIndex(string[] tags) { }
 
-public static int GetTagIndex(string[] tags, string tag) { }
+	public static int GetTagIndex(string[] tags, string tag) { }
 
-public void OQQOCCODOD() { }
+	public void OQQOCCODOD() { }
 
-public void .ctor(int count) { }
+	public void .ctor(int count) { }
 
-public void UpdateTimestamp() { }
+	public void UpdateTimestamp() { }
 
-public static bool ODQDDOCDDC(ERModularBase scr) { }
+	public static bool ODQDDOCDDC(ERModularBase scr) { }
 
-public static string[] RoadNames(List<QDQDOOQQDQODD> roadTypes) { }
+	public static string[] RoadNames(List<QDQDOOQQDQODD> roadTypes) { }
 
-public static string[] Nodes(ERRoadShape data) { }
+	public static string[] Nodes(ERRoadShape data) { }
 
-public static string[] LaneNodes(ERRoadShape data) { }
+	public static string[] LaneNodes(ERRoadShape data) { }
 
-public static GUIContent[] LaneNodesContents(ERRoadShape data) { }
+	public static GUIContent[] LaneNodesContents(ERRoadShape data) { }
 
-public void ODQQQODOQD() { }
+	public void ODQQQODOQD() { }
 
-public static int SetRoadType(List<QDQDOOQQDQODD> roadTypes, double roadType) { }
+	public static int SetRoadType(List<QDQDOOQQDQODD> roadTypes, double roadType) { }
 
-public void UpdateUVs() { }
+	public void UpdateUVs() { }
 
-public static QDQDOOQQDQODD GetRoadTypeElByID(List<QDQDOOQQDQODD> roadTypes, double id) { }
+	public static QDQDOOQQDQODD GetRoadTypeElByID(List<QDQDOOQQDQODD> roadTypes, double id) { }
 
-public static int ODDQDCOODD(List<QDQDOOQQDQODD> roadTypes, double id, ref string[] ramps, ref QDQDOOQQDQODD[] rampTypes) { }
+	public static int ODDQDCOODD(List<QDQDOOQQDQODD> roadTypes, double id, ref string[] ramps, ref QDQDOOQQDQODD[] rampTypes) { }
 
-public static int GetRoadTypeByID(List<QDQDOOQQDQODD> roadTypes, double id) { }
+	public static int GetRoadTypeByID(List<QDQDOOQQDQODD> roadTypes, double id) { }
 
-public static bool OOQDCODDCO(List<QDQDOOQQDQODD> roadTypes, double id, ref QDQDOOQQDQODD motorwayLink) { }
+	public static bool OOQDCODDCO(List<QDQDOOQQDQODD> roadTypes, double id, ref QDQDOOQQDQODD motorwayLink) { }
 
-public static string[] ODODCOQODO(List<QDQDOOQQDQODD> roadTypes) { }
+	public static string[] ODODCOQODO(List<QDQDOOQQDQODD> roadTypes) { }
 
-public static bool GetTerrainDeformationByID(List<QDQDOOQQDQODD> roadTypes, double id, ref int element) { }
+	public static bool GetTerrainDeformationByID(List<QDQDOOQQDQODD> roadTypes, double id, ref int element) { }
 
-public static void UpdateUVTiling(List<QDQDOOQQDQODD> roadTypes, double id, float tiling) { }
+	public static void UpdateUVTiling(List<QDQDOOQQDQODD> roadTypes, double id, float tiling) { }
 
-public static void UpdateResolution(List<QDQDOOQQDQODD> roadTypes, double id, ref float resolution, ref float threshold) { }
+	public static void UpdateResolution(List<QDQDOOQQDQODD> roadTypes, double id, ref float resolution, ref float threshold) { }
 
-public void OCDOCDQQQO(QDQDOOQQDQODD sourcePreset, List<SideObject> sceneSideObjects, List<SideObjectLog> projectSideObjects, bool copyShapeData) { }
+	public void OCDOCDQQQO(QDQDOOQQDQODD sourcePreset, List<SideObject> sceneSideObjects, List<SideObjectLog> projectSideObjects, bool copyShapeData) { }
 
-public static void OOOCDCQQCO(QDQDOOQQDQODD sourcePreset, ERModularRoad road, bool update, int customShapeHandling, bool checkRoadWidth) { }
+	public static void OOOCDCQQCO(QDQDOOQQDQODD sourcePreset, ERModularRoad road, bool update, int customShapeHandling, bool checkRoadWidth) { }
 
-public static void AssignSideObjects(ERModularBase scr, int roadTypeInt, ERModularRoad OCCQOOOQQO) { }
+	public static void AssignSideObjects(ERModularBase scr, int roadTypeInt, ERModularRoad OCCQOOOQQO) { }
 
-public static void HasActiveSideObjects(List<ERSORoadExt> sos1, List<ERSORoadExt> sos2, ref bool flag1, ref bool flag2) { }
+	public static void HasActiveSideObjects(List<ERSORoadExt> sos1, List<ERSORoadExt> sos2, ref bool flag1, ref bool flag2) { }
 
-public int OOOOCQCDDC(int index, ERLaneDirection direction) { }
+	public int OOOOCQCDDC(int index, ERLaneDirection direction) { }
 
-public static bool ODCDDDQCQQ(QDQDOOQQDQODD rt1, QDQDOOQQDQODD rt2) { }
+	public static bool ODCDDDQCQQ(QDQDOOQQDQODD rt1, QDQDOOQQDQODD rt2) { }
 
 }
 

@@ -7,11 +7,11 @@ public class StringFirecracker : TimedExplosive // TypeDefIndex: 8756
 	public Transform clientFirecrackerTransform; 
 
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public void CreatePinJoint() { }
+	public void CreatePinJoint() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

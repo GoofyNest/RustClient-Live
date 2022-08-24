@@ -11,17 +11,17 @@ public class HorseRagdoll : AnimalRagdoll // TypeDefIndex: 8928
 	private bool showRoadsignArmor; 
 
 
-public void SetBreedIndex(int newIndex) { }
+	public void SetBreedIndex(int newIndex) { }
 
-public void SetShowHair(bool wants) { }
+	public void SetShowHair(bool wants) { }
 
-public void SetShowArmor(bool showWood, bool showRoadsign) { }
+	public void SetShowArmor(bool showWood, bool showRoadsign) { }
 
-public override void Init() { }
+	public override void Init() { }
 
-public void UpdateVisuals() { }
+	public void UpdateVisuals() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

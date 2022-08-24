@@ -11,7 +11,7 @@ internal static class TextInfoToLowerData // TypeDefIndex: 740
 	public static readonly char[] range_a722_a78b; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

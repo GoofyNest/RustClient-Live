@@ -8,57 +8,57 @@ public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefI
 	public List<RelationshipManager.PlayerRelationships> relationships; 
 
 
-public static void ResetToPool(RelationshipManager instance) { }
+	public static void ResetToPool(RelationshipManager instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(RelationshipManager instance) { }
+	public void CopyTo(RelationshipManager instance) { }
 
-public RelationshipManager Copy() { }
+	public RelationshipManager Copy() { }
 
-public static RelationshipManager Deserialize(Stream stream) { }
+	public static RelationshipManager Deserialize(Stream stream) { }
 
-public static RelationshipManager DeserializeLengthDelimited(Stream stream) { }
+	public static RelationshipManager DeserializeLengthDelimited(Stream stream) { }
 
-public static RelationshipManager DeserializeLength(Stream stream, int length) { }
+	public static RelationshipManager DeserializeLength(Stream stream, int length) { }
 
-public static RelationshipManager Deserialize(byte[] buffer) { }
+	public static RelationshipManager Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, RelationshipManager previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, RelationshipManager previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static RelationshipManager Deserialize(byte[] buffer, RelationshipManager instance, bool isDelta = False) { }
+	public static RelationshipManager Deserialize(byte[] buffer, RelationshipManager instance, bool isDelta = False) { }
 
-public static RelationshipManager Deserialize(Stream stream, RelationshipManager instance, bool isDelta) { }
+	public static RelationshipManager Deserialize(Stream stream, RelationshipManager instance, bool isDelta) { }
 
-public static RelationshipManager DeserializeLengthDelimited(Stream stream, RelationshipManager instance, bool isDelta) { }
+	public static RelationshipManager DeserializeLengthDelimited(Stream stream, RelationshipManager instance, bool isDelta) { }
 
-public static RelationshipManager DeserializeLength(Stream stream, int length, RelationshipManager instance, bool isDelta) { }
+	public static RelationshipManager DeserializeLength(Stream stream, int length, RelationshipManager instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, RelationshipManager instance, RelationshipManager previous) { }
+	public static void SerializeDelta(Stream stream, RelationshipManager instance, RelationshipManager previous) { }
 
-public static void Serialize(Stream stream, RelationshipManager instance) { }
+	public static void Serialize(Stream stream, RelationshipManager instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(RelationshipManager instance) { }
+	public static byte[] SerializeToBytes(RelationshipManager instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, RelationshipManager instance) { }
+	public static void SerializeLengthDelimited(Stream stream, RelationshipManager instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -75,57 +75,57 @@ public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPoo
 	public float timeSinceSeen; 
 
 
-public static void ResetToPool(RelationshipManager.PlayerRelationshipInfo instance) { }
+	public static void ResetToPool(RelationshipManager.PlayerRelationshipInfo instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(RelationshipManager.PlayerRelationshipInfo instance) { }
+	public void CopyTo(RelationshipManager.PlayerRelationshipInfo instance) { }
 
-public RelationshipManager.PlayerRelationshipInfo Copy() { }
+	public RelationshipManager.PlayerRelationshipInfo Copy() { }
 
-public static RelationshipManager.PlayerRelationshipInfo Deserialize(Stream stream) { }
+	public static RelationshipManager.PlayerRelationshipInfo Deserialize(Stream stream) { }
 
-public static RelationshipManager.PlayerRelationshipInfo DeserializeLengthDelimited(Stream stream) { }
+	public static RelationshipManager.PlayerRelationshipInfo DeserializeLengthDelimited(Stream stream) { }
 
-public static RelationshipManager.PlayerRelationshipInfo DeserializeLength(Stream stream, int length) { }
+	public static RelationshipManager.PlayerRelationshipInfo DeserializeLength(Stream stream, int length) { }
 
-public static RelationshipManager.PlayerRelationshipInfo Deserialize(byte[] buffer) { }
+	public static RelationshipManager.PlayerRelationshipInfo Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, RelationshipManager.PlayerRelationshipInfo previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, RelationshipManager.PlayerRelationshipInfo previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static RelationshipManager.PlayerRelationshipInfo Deserialize(byte[] buffer, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta = False) { }
+	public static RelationshipManager.PlayerRelationshipInfo Deserialize(byte[] buffer, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta = False) { }
 
-public static RelationshipManager.PlayerRelationshipInfo Deserialize(Stream stream, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta) { }
+	public static RelationshipManager.PlayerRelationshipInfo Deserialize(Stream stream, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta) { }
 
-public static RelationshipManager.PlayerRelationshipInfo DeserializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta) { }
+	public static RelationshipManager.PlayerRelationshipInfo DeserializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta) { }
 
-public static RelationshipManager.PlayerRelationshipInfo DeserializeLength(Stream stream, int length, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta) { }
+	public static RelationshipManager.PlayerRelationshipInfo DeserializeLength(Stream stream, int length, RelationshipManager.PlayerRelationshipInfo instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, RelationshipManager.PlayerRelationshipInfo instance, RelationshipManager.PlayerRelationshipInfo previous) { }
+	public static void SerializeDelta(Stream stream, RelationshipManager.PlayerRelationshipInfo instance, RelationshipManager.PlayerRelationshipInfo previous) { }
 
-public static void Serialize(Stream stream, RelationshipManager.PlayerRelationshipInfo instance) { }
+	public static void Serialize(Stream stream, RelationshipManager.PlayerRelationshipInfo instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(RelationshipManager.PlayerRelationshipInfo instance) { }
+	public static byte[] SerializeToBytes(RelationshipManager.PlayerRelationshipInfo instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationshipInfo instance) { }
+	public static void SerializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationshipInfo instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -137,65 +137,65 @@ public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled
 	public List<RelationshipManager.PlayerRelationshipInfo> relations; 
 
 
-public static void ResetToPool(RelationshipManager.PlayerRelationships instance) { }
+	public static void ResetToPool(RelationshipManager.PlayerRelationships instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(RelationshipManager.PlayerRelationships instance) { }
+	public void CopyTo(RelationshipManager.PlayerRelationships instance) { }
 
-public RelationshipManager.PlayerRelationships Copy() { }
+	public RelationshipManager.PlayerRelationships Copy() { }
 
-public static RelationshipManager.PlayerRelationships Deserialize(Stream stream) { }
+	public static RelationshipManager.PlayerRelationships Deserialize(Stream stream) { }
 
-public static RelationshipManager.PlayerRelationships DeserializeLengthDelimited(Stream stream) { }
+	public static RelationshipManager.PlayerRelationships DeserializeLengthDelimited(Stream stream) { }
 
-public static RelationshipManager.PlayerRelationships DeserializeLength(Stream stream, int length) { }
+	public static RelationshipManager.PlayerRelationships DeserializeLength(Stream stream, int length) { }
 
-public static RelationshipManager.PlayerRelationships Deserialize(byte[] buffer) { }
+	public static RelationshipManager.PlayerRelationships Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, RelationshipManager.PlayerRelationships previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, RelationshipManager.PlayerRelationships previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static RelationshipManager.PlayerRelationships Deserialize(byte[] buffer, RelationshipManager.PlayerRelationships instance, bool isDelta = False) { }
+	public static RelationshipManager.PlayerRelationships Deserialize(byte[] buffer, RelationshipManager.PlayerRelationships instance, bool isDelta = False) { }
 
-public static RelationshipManager.PlayerRelationships Deserialize(Stream stream, RelationshipManager.PlayerRelationships instance, bool isDelta) { }
+	public static RelationshipManager.PlayerRelationships Deserialize(Stream stream, RelationshipManager.PlayerRelationships instance, bool isDelta) { }
 
-public static RelationshipManager.PlayerRelationships DeserializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationships instance, bool isDelta) { }
+	public static RelationshipManager.PlayerRelationships DeserializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationships instance, bool isDelta) { }
 
-public static RelationshipManager.PlayerRelationships DeserializeLength(Stream stream, int length, RelationshipManager.PlayerRelationships instance, bool isDelta) { }
+	public static RelationshipManager.PlayerRelationships DeserializeLength(Stream stream, int length, RelationshipManager.PlayerRelationships instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, RelationshipManager.PlayerRelationships instance, RelationshipManager.PlayerRelationships previous) { }
+	public static void SerializeDelta(Stream stream, RelationshipManager.PlayerRelationships instance, RelationshipManager.PlayerRelationships previous) { }
 
-public static void Serialize(Stream stream, RelationshipManager.PlayerRelationships instance) { }
+	public static void Serialize(Stream stream, RelationshipManager.PlayerRelationships instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(RelationshipManager.PlayerRelationships instance) { }
+	public static byte[] SerializeToBytes(RelationshipManager.PlayerRelationships instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationships instance) { }
+	public static void SerializeLengthDelimited(Stream stream, RelationshipManager.PlayerRelationships instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class RelationshipManager : BaseEntity // TypeDefIndex: 8628
 {
-private const int MugshotResolution = 256;
-private const int MugshotMaxFileSize = 65536;
-private const float MugshotMaxDistance = 50;
+	private const int MugshotResolution = 256;
+	private const int MugshotMaxFileSize = 65536;
+	private const float MugshotMaxDistance = 50;
 	public static RelationshipManager.PlayerRelationships localRelationships; 
 	[ClientVar] 
 	public static Vector3 mugshotOffset; 
@@ -203,56 +203,56 @@ private const float MugshotMaxDistance = 50;
 	private static RelationshipManager <ClientInstance>k__BackingField; 
 	public static int clientMaxTeamSize; 
 
-public static RelationshipManager ClientInstance { get; set; }
+	public static RelationshipManager ClientInstance { get; set; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public static void RequestUpdatedContacts() { }
-
-	[BaseEntity.RPC_Client] 
-public void CLIENT_DoMugshot(BaseEntity.RPCMessage msg) { }
+	public static void RequestUpdatedContacts() { }
 
 	[BaseEntity.RPC_Client] 
-public void CLIENT_RecieveLocalRelationships(BaseEntity.RPCMessage msg) { }
+	public void CLIENT_DoMugshot(BaseEntity.RPCMessage msg) { }
 
-public static void ChangeRelationship(ulong targetPlayerID, RelationshipManager.RelationshipType newRelationshipType) { }
+	[BaseEntity.RPC_Client] 
+	public void CLIENT_RecieveLocalRelationships(BaseEntity.RPCMessage msg) { }
 
-public static bool VisCheck(Vector3 a, Vector3 b) { }
+	public static void ChangeRelationship(ulong targetPlayerID, RelationshipManager.RelationshipType newRelationshipType) { }
 
-public static void CaptureAndSendMugshot(BasePlayer targetPlayer) { }
+	public static bool VisCheck(Vector3 a, Vector3 b) { }
 
-public static RelationshipManager.PlayerRelationships GetLocal() { }
+	public static void CaptureAndSendMugshot(BasePlayer targetPlayer) { }
 
-private static uint GetSteamIdHash(ulong requesterSteamId, ulong targetSteamId) { }
+	public static RelationshipManager.PlayerRelationships GetLocal() { }
+
+	private static uint GetSteamIdHash(ulong requesterSteamId, ulong targetSteamId) { }
 
 	[CompilerGeneratedAttribute] 
-public static RelationshipManager get_ClientInstance() { }
+	public static RelationshipManager get_ClientInstance() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_ClientInstance(RelationshipManager value) { }
+	private static void set_ClientInstance(RelationshipManager value) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public static bool TeamsEnabled() { }
+	public static bool TeamsEnabled() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum RelationshipManager.RelationshipType // TypeDefIndex: 8629
 {
 	public int value__; 
-public const RelationshipManager.RelationshipType NONE = 0;
-public const RelationshipManager.RelationshipType Acquaintance = 1;
-public const RelationshipManager.RelationshipType Friend = 2;
-public const RelationshipManager.RelationshipType Enemy = 3;
+	public const RelationshipManager.RelationshipType NONE = 0;
+	public const RelationshipManager.RelationshipType Acquaintance = 1;
+	public const RelationshipManager.RelationshipType Friend = 2;
+	public const RelationshipManager.RelationshipType Enemy = 3;
 
 }
 
@@ -270,24 +270,24 @@ public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerF
 	public bool mugshotLoading; 
 	public Texture2D mugshotTexture; 
 
-public bool IsMugshotLoaded { get; }
+	public bool IsMugshotLoaded { get; }
 
 
-public bool get_IsMugshotLoaded() { }
+	public bool get_IsMugshotLoaded() { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-private void Reset() { }
+	private void Reset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void RequestMugshot() { }
+	public void RequestMugshot() { }
 
-private void WaitingForMugshotTimeout() { }
+	private void WaitingForMugshotTimeout() { }
 
-public void OnServerFileReceived(FileStorage.Type type, uint numId, uint crc, byte[] data) { }
+	public void OnServerFileReceived(FileStorage.Type type, uint numId, uint crc, byte[] data) { }
 
 }
 
@@ -298,13 +298,13 @@ public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIn
 	public Dictionary<ulong, RelationshipManager.PlayerRelationshipInfo> relations; 
 
 
-public RelationshipManager.PlayerRelationshipInfo GetRelations(ulong player) { }
+	public RelationshipManager.PlayerRelationshipInfo GetRelations(ulong player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
 }
 
@@ -315,13 +315,13 @@ private sealed class RelationshipManager.<>c // TypeDefIndex: 8632
 	public static Func<RelationshipManager.PlayerRelationshipInfo, ulong> <>9__10_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal ulong <CLIENT_RecieveLocalRelationships>b__10_0(ulong r) { }
+	internal ulong <CLIENT_RecieveLocalRelationships>b__10_0(ulong r) { }
 
-internal ulong <CLIENT_RecieveLocalRelationships>b__10_1(RelationshipManager.PlayerRelationshipInfo r) { }
+	internal ulong <CLIENT_RecieveLocalRelationships>b__10_1(RelationshipManager.PlayerRelationshipInfo r) { }
 
 }
 

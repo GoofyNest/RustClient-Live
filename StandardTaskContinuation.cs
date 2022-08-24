@@ -5,9 +5,9 @@ internal class StandardTaskContinuation : TaskContinuation // TypeDefIndex: 876
 	private readonly TaskScheduler m_taskScheduler; 
 
 
-internal void .ctor(Task task, TaskContinuationOptions options, TaskScheduler scheduler) { }
+	internal void .ctor(Task task, TaskContinuationOptions options, TaskScheduler scheduler) { }
 
-internal override void Run(Task completedTask, bool bCanInlineContinuationTask) { }
+	internal override void Run(Task completedTask, bool bCanInlineContinuationTask) { }
 
 }
 

@@ -5,19 +5,19 @@ public class WaitForSecondsRealtime : CustomYieldInstruction // TypeDefIndex: 35
 	private float <waitTime>k__BackingField; 
 	private float m_WaitUntilTime; 
 
-public float waitTime { get; set; }
-public override bool keepWaiting { get; }
+	public float waitTime { get; set; }
+	public override bool keepWaiting { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_waitTime() { }
+	public float get_waitTime() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_waitTime(float value) { }
+	public void set_waitTime(float value) { }
 
-public override bool get_keepWaiting() { }
+	public override bool get_keepWaiting() { }
 
-public void .ctor(float time) { }
+	public void .ctor(float time) { }
 
 }
 

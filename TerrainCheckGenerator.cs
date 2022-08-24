@@ -9,7 +9,7 @@ public class TerrainCheckGenerator : MonoBehaviour, IEditorComponent // TypeDefI
 	public bool CheckRotate; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -3,11 +3,11 @@ public class MaterialSetup : MonoBehaviour, IClientComponent // TypeDefIndex: 11
 	public MaterialConfig config; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-private void Setup() { }
+	private void Setup() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -29,11 +29,11 @@ public class ERRoadType // TypeDefIndex: 7227
 	private ERRoadShape ᙃ; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void Update() { }
+	public void Update() { }
 
-public static QDQDOOQQDQODD GetRoadType(ERRoadType t, ERModularBase baseScript) { }
+	public static QDQDOOQQDQODD GetRoadType(ERRoadType t, ERModularBase baseScript) { }
 
 }
 

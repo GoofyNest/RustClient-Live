@@ -1,9 +1,9 @@
 public class PositionAsUV1 : BaseMeshEffect // TypeDefIndex: 5035
 {
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public override void ModifyMesh(VertexHelper vh) { }
+	public override void ModifyMesh(VertexHelper vh) { }
 
 }
 

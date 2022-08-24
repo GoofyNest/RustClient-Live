@@ -8,15 +8,15 @@ public class RandomDynamicObject : MonoBehaviour, IClientComponent, ILOD // Type
 	private LODCell cell; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

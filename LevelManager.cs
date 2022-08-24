@@ -2,19 +2,19 @@ public static class LevelManager // TypeDefIndex: 9962
 {
 	public static string CurrentLevelName; 
 
-public static bool isLoaded { get; }
+	public static bool isLoaded { get; }
 
 
-public static bool get_isLoaded() { }
+	public static bool get_isLoaded() { }
 
-public static bool IsValid(string strName) { }
+	public static bool IsValid(string strName) { }
 
-public static void LoadLevel(string strName, bool keepLoadingScreenOpen = True) { }
+	public static void LoadLevel(string strName, bool keepLoadingScreenOpen = True) { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator LoadLevelAsync(string strName, bool keepLoadingScreenOpen = True) { }
+	public static IEnumerator LoadLevelAsync(string strName, bool keepLoadingScreenOpen = True) { }
 
-public static void UnloadLevel(bool loadingScreen = True) { }
+	public static void UnloadLevel(bool loadingScreen = True) { }
 
 }
 
@@ -25,26 +25,26 @@ private sealed class LevelManager.<LoadLevelAsync>d__5 : IEnumerator<object>, IE
 	public string strName; 
 	public bool keepLoadingScreenOpen; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

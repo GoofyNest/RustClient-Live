@@ -6,15 +6,15 @@ public class LerpBetweenPointsBool : MonoBehaviour, IClientComponent // TypeDefI
 	private Vector3 initialPos; 
 
 
-public void SetAtOffset(bool should) { }
+	public void SetAtOffset(bool should) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private void SetEnabled(bool state) { }
+	private void SetEnabled(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -3,39 +3,39 @@ public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 10407
 	internal int res; 
 
 
-public void ApplyFilter(float normX, float normZ, float radius, float fade, Action<int, int, float> action) { }
+	public void ApplyFilter(float normX, float normZ, float radius, float fade, Action<int, int, float> action) { }
 
-public void ForEach(Vector3 worldPos, float radius, Action<int, int> action) { }
+	public void ForEach(Vector3 worldPos, float radius, Action<int, int> action) { }
 
-public void ForEachParallel(Vector3 v0, Vector3 v1, Vector3 v2, Action<int, int> action) { }
+	public void ForEachParallel(Vector3 v0, Vector3 v1, Vector3 v2, Action<int, int> action) { }
 
-public void ForEachParallel(Vector2i v0, Vector2i v1, Vector2i v2, Action<int, int> action) { }
+	public void ForEachParallel(Vector2i v0, Vector2i v1, Vector2i v2, Action<int, int> action) { }
 
-public void ForEach(Vector3 v0, Vector3 v1, Vector3 v2, Action<int, int> action) { }
+	public void ForEach(Vector3 v0, Vector3 v1, Vector3 v2, Action<int, int> action) { }
 
-public void ForEach(Vector2i v0, Vector2i v1, Vector2i v2, Action<int, int> action) { }
+	public void ForEach(Vector2i v0, Vector2i v1, Vector2i v2, Action<int, int> action) { }
 
-private void ForEachInternal(Vector2i v0, Vector2i v1, Vector2i v2, Action<int, int> action, Vector2i min, Vector2i max) { }
+	private void ForEachInternal(Vector2i v0, Vector2i v1, Vector2i v2, Action<int, int> action, Vector2i min, Vector2i max) { }
 
-public void ForEachParallel(Vector3 v0, Vector3 v1, Vector3 v2, Vector3 v3, Action<int, int> action) { }
+	public void ForEachParallel(Vector3 v0, Vector3 v1, Vector3 v2, Vector3 v3, Action<int, int> action) { }
 
-public void ForEachParallel(Vector2i v0, Vector2i v1, Vector2i v2, Vector2i v3, Action<int, int> action) { }
+	public void ForEachParallel(Vector2i v0, Vector2i v1, Vector2i v2, Vector2i v3, Action<int, int> action) { }
 
-public void ForEach(Vector3 v0, Vector3 v1, Vector3 v2, Vector3 v3, Action<int, int> action) { }
+	public void ForEach(Vector3 v0, Vector3 v1, Vector3 v2, Vector3 v3, Action<int, int> action) { }
 
-public void ForEach(Vector2i v0, Vector2i v1, Vector2i v2, Vector2i v3, Action<int, int> action) { }
+	public void ForEach(Vector2i v0, Vector2i v1, Vector2i v2, Vector2i v3, Action<int, int> action) { }
 
-private void ForEachInternal(Vector2i v0, Vector2i v1, Vector2i v2, Vector2i v3, Action<int, int> action, Vector2i min, Vector2i max) { }
+	private void ForEachInternal(Vector2i v0, Vector2i v1, Vector2i v2, Vector2i v3, Action<int, int> action, Vector2i min, Vector2i max) { }
 
-public void ForEach(int x_min, int x_max, int z_min, int z_max, Action<int, int> action) { }
+	public void ForEach(int x_min, int x_max, int z_min, int z_max, Action<int, int> action) { }
 
-public void ForEach(Action<int, int> action) { }
+	public void ForEach(Action<int, int> action) { }
 
-public int Index(float normalized) { }
+	public int Index(float normalized) { }
 
-public float Coordinate(int index) { }
+	public float Coordinate(int index) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
@@ -50,9 +50,9 @@ private sealed class TerrainMap.<>c__DisplayClass4_0 // TypeDefIndex: 10408
 	public Action<int, int> action; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ForEachParallel>b__0(int thread_id, int thread_count) { }
+	internal void <ForEachParallel>b__0(int thread_id, int thread_count) { }
 
 }
 
@@ -69,9 +69,9 @@ private sealed class TerrainMap.<>c__DisplayClass9_0 // TypeDefIndex: 10409
 	public Action<int, int> action; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <ForEachParallel>b__0(int thread_id, int thread_count) { }
+	internal void <ForEachParallel>b__0(int thread_id, int thread_count) { }
 
 }
 

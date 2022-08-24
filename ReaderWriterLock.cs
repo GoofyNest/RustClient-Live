@@ -8,20 +8,20 @@ public sealed class ReaderWriterLock : CriticalFinalizerObject // TypeDefIndex: 
 	private Hashtable reader_locks; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void AcquireWriterLock(int millisecondsTimeout) { }
+	public void AcquireWriterLock(int millisecondsTimeout) { }
 
-private void AcquireWriterLock(int millisecondsTimeout, int initialLockCount) { }
+	private void AcquireWriterLock(int millisecondsTimeout, int initialLockCount) { }
 
 	[ReliabilityContractAttribute] 
-public void ReleaseWriterLock() { }
+	public void ReleaseWriterLock() { }
 
-private void ReleaseWriterLock(int releaseCount) { }
+	private void ReleaseWriterLock(int releaseCount) { }
 
-private bool HasWriterLock() { }
+	private bool HasWriterLock() { }
 
 }
 

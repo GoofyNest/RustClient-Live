@@ -4,7 +4,7 @@ internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7743
 	public WorkshopItemButton ButtonPrefab; 
 	public GameObject Container; 
 	public ListType ListType; 
-private const int PerPage = 50;
+	private const int PerPage = 50;
 	public int Page; 
 	public Button PreviousPage; 
 	public Button NextPage; 
@@ -15,37 +15,37 @@ private const int PerPage = 50;
 	private int TotalResults; 
 	private bool Refreshing; 
 
-private int NumPages { get; }
+	private int NumPages { get; }
 
 
-public static void RefreshAll() { }
+	public static void RefreshAll() { }
 
-private int get_NumPages() { }
+	private int get_NumPages() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void PageNext() { }
+	private void PageNext() { }
 
-private void PagePrev() { }
+	private void PagePrev() { }
 
-public void OnChangedItemType(int type) { }
+	public void OnChangedItemType(int type) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void SwitchToLatest() { }
+	public void SwitchToLatest() { }
 
-public void SwitchToTrending() { }
+	public void SwitchToTrending() { }
 
-public void SwitchToPopular() { }
+	public void SwitchToPopular() { }
 
-public void SwitchToAccepted() { }
+	public void SwitchToAccepted() { }
 
 	[AsyncStateMachineAttribute] 
-public Task Refresh() { }
+	public Task Refresh() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -58,17 +58,17 @@ private sealed class WorkshopItemList.<>c // TypeDefIndex: 7744
 	public static Func<Item, DateTime> <>9__26_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <Awake>b__17_0(Skinnable x) { }
+	internal bool <Awake>b__17_0(Skinnable x) { }
 
-internal string <Awake>b__17_1(Skinnable x) { }
+	internal string <Awake>b__17_1(Skinnable x) { }
 
-internal string <Awake>b__17_2(string x) { }
+	internal string <Awake>b__17_2(string x) { }
 
-internal DateTime <Refresh>b__26_0(Item x) { }
+	internal DateTime <Refresh>b__26_0(Item x) { }
 
 }
 
@@ -80,10 +80,10 @@ private struct WorkshopItemList.<Refresh>d__26 : IAsyncStateMachine // TypeDefIn
 	private TaskAwaiter<Nullable<ResultPage>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

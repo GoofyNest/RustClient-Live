@@ -5,23 +5,23 @@ public class IdentifierConfig : UIDialog // TypeDefIndex: 8683
 	public string id; 
 
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-public void SetRCObj(IRemoteControllable newRC) { }
+	public void SetRCObj(IRemoteControllable newRC) { }
 
-public void Confirm() { }
+	public void Confirm() { }
 
-public void SelectTextField() { }
+	public void SelectTextField() { }
 
-public int GetIntValue() { }
+	public int GetIntValue() { }
 
-public void ValueChanged() { }
+	public void ValueChanged() { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public void OnTextFieldEnd() { }
+	public void OnTextFieldEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

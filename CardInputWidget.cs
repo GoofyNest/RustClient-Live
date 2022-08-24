@@ -6,9 +6,9 @@ public class CardInputWidget : MonoBehaviour // TypeDefIndex: 10873
 	private KeyCode lastKey; 
 
 
-public void Populate(KeyCode key, Translate.Phrase display, string extra) { }
+	public void Populate(KeyCode key, Translate.Phrase display, string extra) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

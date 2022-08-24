@@ -7,21 +7,21 @@ public class WaterVolume : TriggerBase // TypeDefIndex: 10057
 	public bool waterEnabled; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public bool Test(Vector3 pos, out WaterLevel.WaterInfo info) { }
+	public bool Test(Vector3 pos, out WaterLevel.WaterInfo info) { }
 
-public bool Test(Bounds bounds, out WaterLevel.WaterInfo info) { }
+	public bool Test(Bounds bounds, out WaterLevel.WaterInfo info) { }
 
-public bool Test(Vector3 start, Vector3 end, float radius, out WaterLevel.WaterInfo info) { }
+	public bool Test(Vector3 start, Vector3 end, float radius, out WaterLevel.WaterInfo info) { }
 
-private bool CheckCutOffPlanes(Vector3 pos) { }
+	private bool CheckCutOffPlanes(Vector3 pos) { }
 
-private void UpdateCachedTransform() { }
+	private void UpdateCachedTransform() { }
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

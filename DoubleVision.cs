@@ -6,7 +6,7 @@ public class DoubleVision : PostProcessEffectSettings // TypeDefIndex: 10249
 	public FloatParameter amount; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

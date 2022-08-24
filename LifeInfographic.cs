@@ -17,34 +17,34 @@ public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11069
 	private int closeState; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-private void Refresh_Age() { }
+	private void Refresh_Age() { }
 
-private void Refresh_Death() { }
+	private void Refresh_Death() { }
 
-private void Show(string name) { }
+	private void Show(string name) { }
 
-private void UpdateKilledByAvatar(ulong id) { }
+	private void UpdateKilledByAvatar(ulong id) { }
 
-public static bool TryGetDefinitionFromEntityName(string entityName, out ItemDefinition def) { }
+	public static bool TryGetDefinitionFromEntityName(string entityName, out ItemDefinition def) { }
 
-private void UpdateKilledByWeaponImage(string weaponName) { }
+	private void UpdateKilledByWeaponImage(string weaponName) { }
 
-public bool GetDamageDisplay(DamageType forType, out LifeInfographic.DamageSetting setting) { }
+	public bool GetDamageDisplay(DamageType forType, out LifeInfographic.DamageSetting setting) { }
 
-public void AnimateIn() { }
+	public void AnimateIn() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator Animate() { }
+	private IEnumerator Animate() { }
 
-public void ResetAnimators() { }
+	public void ResetAnimators() { }
 
-public bool TryGetPrefabInformationForAttacker(string attackerName, out PrefabInformation info) { }
+	public bool TryGetPrefabInformationForAttacker(string attackerName, out PrefabInformation info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -64,26 +64,26 @@ private sealed class LifeInfographic.<Animate>d__26 : IEnumerator<object>, IEnum
 	private Animator[] <>7__wrap1; 
 	private int <>7__wrap2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

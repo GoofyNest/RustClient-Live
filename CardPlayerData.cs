@@ -18,75 +18,75 @@ public class CardPlayerData : IDisposable // TypeDefIndex: 12008
 	private int <TrueCardCount>k__BackingField; 
 	private int clientScrap; 
 
-public ulong UserID { get; set; }
-public CardPlayerData.CardPlayerState State { get; set; }
-public bool HasUser { get; }
-public bool HasUserInGame { get; }
-public bool HasUserInCurrentRound { get; }
-public bool HasAvailableInputs { get; }
-private bool IsClient { get; }
-public bool LeftRoundEarly { get; set; }
-public bool SendCardDetails { get; set; }
-public int TrueCardCount { get; set; }
+	public ulong UserID { get; set; }
+	public CardPlayerData.CardPlayerState State { get; set; }
+	public bool HasUser { get; }
+	public bool HasUserInGame { get; }
+	public bool HasUserInCurrentRound { get; }
+	public bool HasAvailableInputs { get; }
+	private bool IsClient { get; }
+	public bool LeftRoundEarly { get; set; }
+	public bool SendCardDetails { get; set; }
+	public int TrueCardCount { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public ulong get_UserID() { }
+	public ulong get_UserID() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_UserID(ulong value) { }
+	private void set_UserID(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-public CardPlayerData.CardPlayerState get_State() { }
+	public CardPlayerData.CardPlayerState get_State() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_State(CardPlayerData.CardPlayerState value) { }
+	private void set_State(CardPlayerData.CardPlayerState value) { }
 
-public bool get_HasUser() { }
+	public bool get_HasUser() { }
 
-public bool get_HasUserInGame() { }
+	public bool get_HasUserInGame() { }
 
-public bool get_HasUserInCurrentRound() { }
+	public bool get_HasUserInCurrentRound() { }
 
-public bool get_HasAvailableInputs() { }
+	public bool get_HasAvailableInputs() { }
 
-private bool get_IsClient() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_LeftRoundEarly() { }
+	private bool get_IsClient() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_LeftRoundEarly(bool value) { }
+	public bool get_LeftRoundEarly() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_SendCardDetails() { }
+	private void set_LeftRoundEarly(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_SendCardDetails(bool value) { }
-
-public void .ctor(int mountIndex, bool isServer) { }
-
-public void Dispose() { }
-
-public int GetScrapAmount() { }
+	public bool get_SendCardDetails() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_TrueCardCount() { }
+	private void set_SendCardDetails(bool value) { }
+
+	public void .ctor(int mountIndex, bool isServer) { }
+
+	public void Dispose() { }
+
+	public int GetScrapAmount() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TrueCardCount(int value) { }
+	public int get_TrueCardCount() { }
 
-public void Load(CardTable.CardPlayer msg) { }
+	[CompilerGeneratedAttribute] 
+	private void set_TrueCardCount(int value) { }
+
+	public void Load(CardTable.CardPlayer msg) { }
 
 }
 
 public enum CardPlayerData.CardPlayerState // TypeDefIndex: 12009
 {
 	public int value__; 
-public const CardPlayerData.CardPlayerState None = 0;
-public const CardPlayerData.CardPlayerState WantsToPlay = 1;
-public const CardPlayerData.CardPlayerState InGame = 2;
-public const CardPlayerData.CardPlayerState InCurrentRound = 3;
+	public const CardPlayerData.CardPlayerState None = 0;
+	public const CardPlayerData.CardPlayerState WantsToPlay = 1;
+	public const CardPlayerData.CardPlayerState InGame = 2;
+	public const CardPlayerData.CardPlayerState InCurrentRound = 3;
 
 }
 

@@ -3,107 +3,107 @@ internal static class ReflectionUtils // TypeDefIndex: 5965
 	public static readonly Type[] EmptyTypes; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 	[ExtensionAttribute] 
-public static bool IsVirtual(PropertyInfo propertyInfo) { }
+	public static bool IsVirtual(PropertyInfo propertyInfo) { }
 
 	[ExtensionAttribute] 
-public static MethodInfo GetBaseDefinition(PropertyInfo propertyInfo) { }
+	public static MethodInfo GetBaseDefinition(PropertyInfo propertyInfo) { }
 
-public static bool IsPublic(PropertyInfo property) { }
+	public static bool IsPublic(PropertyInfo property) { }
 
-public static Type GetObjectType(object v) { }
+	public static Type GetObjectType(object v) { }
 
-public static string GetTypeName(Type t, FormatterAssemblyStyle assemblyFormat, SerializationBinder binder) { }
+	public static string GetTypeName(Type t, FormatterAssemblyStyle assemblyFormat, SerializationBinder binder) { }
 
-private static string RemoveAssemblyDetails(string fullyQualifiedTypeName) { }
+	private static string RemoveAssemblyDetails(string fullyQualifiedTypeName) { }
 
-public static bool HasDefaultConstructor(Type t, bool nonPublic) { }
+	public static bool HasDefaultConstructor(Type t, bool nonPublic) { }
 
-public static ConstructorInfo GetDefaultConstructor(Type t) { }
+	public static ConstructorInfo GetDefaultConstructor(Type t) { }
 
-public static ConstructorInfo GetDefaultConstructor(Type t, bool nonPublic) { }
+	public static ConstructorInfo GetDefaultConstructor(Type t, bool nonPublic) { }
 
-public static bool IsNullable(Type t) { }
+	public static bool IsNullable(Type t) { }
 
-public static bool IsNullableType(Type t) { }
+	public static bool IsNullableType(Type t) { }
 
-public static Type EnsureNotNullableType(Type t) { }
+	public static Type EnsureNotNullableType(Type t) { }
 
-public static bool IsGenericDefinition(Type type, Type genericInterfaceDefinition) { }
+	public static bool IsGenericDefinition(Type type, Type genericInterfaceDefinition) { }
 
-public static bool ImplementsGenericDefinition(Type type, Type genericInterfaceDefinition) { }
+	public static bool ImplementsGenericDefinition(Type type, Type genericInterfaceDefinition) { }
 
-public static bool ImplementsGenericDefinition(Type type, Type genericInterfaceDefinition, out Type implementingType) { }
+	public static bool ImplementsGenericDefinition(Type type, Type genericInterfaceDefinition, out Type implementingType) { }
 
-public static bool InheritsGenericDefinition(Type type, Type genericClassDefinition) { }
+	public static bool InheritsGenericDefinition(Type type, Type genericClassDefinition) { }
 
-public static bool InheritsGenericDefinition(Type type, Type genericClassDefinition, out Type implementingType) { }
+	public static bool InheritsGenericDefinition(Type type, Type genericClassDefinition, out Type implementingType) { }
 
-private static bool InheritsGenericDefinitionInternal(Type currentType, Type genericClassDefinition, out Type implementingType) { }
+	private static bool InheritsGenericDefinitionInternal(Type currentType, Type genericClassDefinition, out Type implementingType) { }
 
-public static Type GetCollectionItemType(Type type) { }
+	public static Type GetCollectionItemType(Type type) { }
 
-public static void GetDictionaryKeyValueTypes(Type dictionaryType, out Type keyType, out Type valueType) { }
+	public static void GetDictionaryKeyValueTypes(Type dictionaryType, out Type keyType, out Type valueType) { }
 
-public static Type GetMemberUnderlyingType(MemberInfo member) { }
+	public static Type GetMemberUnderlyingType(MemberInfo member) { }
 
-public static bool IsIndexedProperty(MemberInfo member) { }
+	public static bool IsIndexedProperty(MemberInfo member) { }
 
-public static bool IsIndexedProperty(PropertyInfo property) { }
+	public static bool IsIndexedProperty(PropertyInfo property) { }
 
-public static object GetMemberValue(MemberInfo member, object target) { }
+	public static object GetMemberValue(MemberInfo member, object target) { }
 
-public static void SetMemberValue(MemberInfo member, object target, object value) { }
+	public static void SetMemberValue(MemberInfo member, object target, object value) { }
 
-public static bool CanReadMemberValue(MemberInfo member, bool nonPublic) { }
+	public static bool CanReadMemberValue(MemberInfo member, bool nonPublic) { }
 
-public static bool CanSetMemberValue(MemberInfo member, bool nonPublic, bool canSetReadOnly) { }
+	public static bool CanSetMemberValue(MemberInfo member, bool nonPublic, bool canSetReadOnly) { }
 
-public static List<MemberInfo> GetFieldsAndProperties(Type type, BindingFlags bindingAttr) { }
+	public static List<MemberInfo> GetFieldsAndProperties(Type type, BindingFlags bindingAttr) { }
 
-private static bool IsOverridenGenericMember(MemberInfo memberInfo, BindingFlags bindingAttr) { }
+	private static bool IsOverridenGenericMember(MemberInfo memberInfo, BindingFlags bindingAttr) { }
 
-public static T GetAttribute<T>(object attributeProvider) { }
-/* GenericInstMethod :
-|
-|-ReflectionUtils.GetAttribute<JsonExtensionDataAttribute>
-|-ReflectionUtils.GetAttribute<object>
-*/
+	public static T GetAttribute<T>(object attributeProvider) { }
+	/* GenericInstMethod :
+	|
+	|-ReflectionUtils.GetAttribute<JsonExtensionDataAttribute>
+	|-ReflectionUtils.GetAttribute<object>
+	*/
 
-public static T GetAttribute<T>(object attributeProvider, bool inherit) { }
-/* GenericInstMethod :
-|
-|-ReflectionUtils.GetAttribute<object>
-*/
+	public static T GetAttribute<T>(object attributeProvider, bool inherit) { }
+	/* GenericInstMethod :
+	|
+	|-ReflectionUtils.GetAttribute<object>
+	*/
 
-public static T[] GetAttributes<T>(object attributeProvider, bool inherit) { }
-/* GenericInstMethod :
-|
-|-ReflectionUtils.GetAttributes<object>
-*/
+	public static T[] GetAttributes<T>(object attributeProvider, bool inherit) { }
+	/* GenericInstMethod :
+	|
+	|-ReflectionUtils.GetAttributes<object>
+	*/
 
-public static Attribute[] GetAttributes(object attributeProvider, Type attributeType, bool inherit) { }
+	public static Attribute[] GetAttributes(object attributeProvider, Type attributeType, bool inherit) { }
 
-public static void SplitFullyQualifiedTypeName(string fullyQualifiedTypeName, out string typeName, out string assemblyName) { }
+	public static void SplitFullyQualifiedTypeName(string fullyQualifiedTypeName, out string typeName, out string assemblyName) { }
 
-private static Nullable<int> GetAssemblyDelimiterIndex(string fullyQualifiedTypeName) { }
+	private static Nullable<int> GetAssemblyDelimiterIndex(string fullyQualifiedTypeName) { }
 
-public static MemberInfo GetMemberInfoFromType(Type targetType, MemberInfo memberInfo) { }
+	public static MemberInfo GetMemberInfoFromType(Type targetType, MemberInfo memberInfo) { }
 
-public static IEnumerable<FieldInfo> GetFields(Type targetType, BindingFlags bindingAttr) { }
+	public static IEnumerable<FieldInfo> GetFields(Type targetType, BindingFlags bindingAttr) { }
 
-private static void GetChildPrivateFields(IList<MemberInfo> initialFields, Type targetType, BindingFlags bindingAttr) { }
+	private static void GetChildPrivateFields(IList<MemberInfo> initialFields, Type targetType, BindingFlags bindingAttr) { }
 
-public static IEnumerable<PropertyInfo> GetProperties(Type targetType, BindingFlags bindingAttr) { }
+	public static IEnumerable<PropertyInfo> GetProperties(Type targetType, BindingFlags bindingAttr) { }
 
 	[ExtensionAttribute] 
-public static BindingFlags RemoveFlag(BindingFlags bindingAttr, BindingFlags flag) { }
+	public static BindingFlags RemoveFlag(BindingFlags bindingAttr, BindingFlags flag) { }
 
-private static void GetChildPrivateProperties(IList<PropertyInfo> initialProperties, Type targetType, BindingFlags bindingAttr) { }
+	private static void GetChildPrivateProperties(IList<PropertyInfo> initialProperties, Type targetType, BindingFlags bindingAttr) { }
 
-public static object GetDefaultValue(Type type) { }
+	public static object GetDefaultValue(Type type) { }
 
 }
 
@@ -116,17 +116,17 @@ private sealed class ReflectionUtils.<>c // TypeDefIndex: 5966
 	public static Func<FieldInfo, bool> <>9__39_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetDefaultConstructor>b__10_0(ConstructorInfo c) { }
+	internal bool <GetDefaultConstructor>b__10_0(ConstructorInfo c) { }
 
-internal string <GetFieldsAndProperties>b__29_0(MemberInfo m) { }
+	internal string <GetFieldsAndProperties>b__29_0(MemberInfo m) { }
 
-internal Type <GetMemberInfoFromType>b__37_0(ParameterInfo p) { }
+	internal Type <GetMemberInfoFromType>b__37_0(ParameterInfo p) { }
 
-internal bool <GetChildPrivateFields>b__39_0(FieldInfo f) { }
+	internal bool <GetChildPrivateFields>b__39_0(FieldInfo f) { }
 
 }
 
@@ -135,20 +135,20 @@ private sealed class ReflectionUtils.<>c__DisplayClass42_0 // TypeDefIndex: 5967
 	public PropertyInfo subTypeProperty; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetChildPrivateProperties>b__0(PropertyInfo p) { }
+	internal bool <GetChildPrivateProperties>b__0(PropertyInfo p) { }
 
-internal bool <GetChildPrivateProperties>b__1(PropertyInfo p) { }
+	internal bool <GetChildPrivateProperties>b__1(PropertyInfo p) { }
 
-internal bool <GetChildPrivateProperties>b__2(PropertyInfo p) { }
+	internal bool <GetChildPrivateProperties>b__2(PropertyInfo p) { }
 
 }
 
 private sealed class ReflectionUtils.<>c__DisplayClass43_0 // TypeDefIndex: 5968
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

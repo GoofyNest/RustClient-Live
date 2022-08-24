@@ -3,9 +3,9 @@ public class ParticleDisableOnParentDestroy : MonoBehaviour, IOnParentDestroying
 	public float destroyAfterSeconds; 
 
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -15,15 +15,15 @@ internal sealed class GUIScrollGroup : GUILayoutGroup // TypeDefIndex: 4056
 
 
 	[RequiredByNativeCodeAttribute] 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void CalcWidth() { }
+	public override void CalcWidth() { }
 
-public override void SetHorizontal(float x, float width) { }
+	public override void SetHorizontal(float x, float width) { }
 
-public override void CalcHeight() { }
+	public override void CalcHeight() { }
 
-public override void SetVertical(float y, float height) { }
+	public override void SetVertical(float y, float height) { }
 
 }
 

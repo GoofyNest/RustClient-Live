@@ -2,184 +2,184 @@ public class Graphics // TypeDefIndex: 3389
 {
 	internal static readonly int kMaxDrawMeshInstanceCount; 
 
-public static RenderBuffer activeColorBuffer { get; }
-public static RenderBuffer activeDepthBuffer { get; }
+	public static RenderBuffer activeColorBuffer { get; }
+	public static RenderBuffer activeDepthBuffer { get; }
 
 
 	[FreeFunctionAttribute] 
-private static int Internal_GetMaxDrawMeshInstanceCount() { }
+	private static int Internal_GetMaxDrawMeshInstanceCount() { }
 
 	[FreeFunctionAttribute] 
-private static RenderBuffer GetActiveColorBuffer() { }
+	private static RenderBuffer GetActiveColorBuffer() { }
 
 	[FreeFunctionAttribute] 
-private static RenderBuffer GetActiveDepthBuffer() { }
+	private static RenderBuffer GetActiveDepthBuffer() { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_SetNullRT() { }
+	private static void Internal_SetNullRT() { }
 
 	[NativeMethodAttribute] 
-private static void Internal_SetRTSimple(RenderBuffer color, RenderBuffer depth, int mip, CubemapFace face, int depthSlice) { }
+	private static void Internal_SetRTSimple(RenderBuffer color, RenderBuffer depth, int mip, CubemapFace face, int depthSlice) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_SetRandomWriteTargetBuffer(int index, ComputeBuffer uav, bool preserveCounterValue) { }
+	private static void Internal_SetRandomWriteTargetBuffer(int index, ComputeBuffer uav, bool preserveCounterValue) { }
 
 	[StaticAccessorAttribute] 
-public static void ClearRandomWriteTargets() { }
+	public static void ClearRandomWriteTargets() { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_DrawMeshNow2(Mesh mesh, int subsetIndex, Matrix4x4 matrix) { }
+	private static void Internal_DrawMeshNow2(Mesh mesh, int subsetIndex, Matrix4x4 matrix) { }
 
 	[FreeFunctionAttribute] 
 	[VisibleToOtherModulesAttribute] 
-internal static void Internal_DrawTexture(ref Internal_DrawTextureArguments args) { }
+	internal static void Internal_DrawTexture(ref Internal_DrawTextureArguments args) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_DrawMesh(Mesh mesh, int submeshIndex, Matrix4x4 matrix, Material material, int layer, Camera camera, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, Transform probeAnchor, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+	private static void Internal_DrawMesh(Mesh mesh, int submeshIndex, Matrix4x4 matrix, Material material, int layer, Camera camera, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, Transform probeAnchor, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+	private static void Internal_DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_DrawProceduralIndirectNow(MeshTopology topology, ComputeBuffer bufferWithArgs, int argsOffset) { }
+	private static void Internal_DrawProceduralIndirectNow(MeshTopology topology, ComputeBuffer bufferWithArgs, int argsOffset) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_BlitMaterial5(Texture source, RenderTexture dest, Material mat, int pass, bool setRT) { }
+	private static void Internal_BlitMaterial5(Texture source, RenderTexture dest, Material mat, int pass, bool setRT) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_BlitMultiTap4(Texture source, RenderTexture dest, Material mat, Vector2[] offsets) { }
+	private static void Internal_BlitMultiTap4(Texture source, RenderTexture dest, Material mat, Vector2[] offsets) { }
 
 	[FreeFunctionAttribute] 
-private static void Blit2(Texture source, RenderTexture dest) { }
+	private static void Blit2(Texture source, RenderTexture dest) { }
 
 	[NativeMethodAttribute] 
-public static void ExecuteCommandBuffer(CommandBuffer buffer) { }
+	public static void ExecuteCommandBuffer(CommandBuffer buffer) { }
 
-internal static void SetRenderTargetImpl(RenderBuffer colorBuffer, RenderBuffer depthBuffer, int mipLevel, CubemapFace face, int depthSlice) { }
+	internal static void SetRenderTargetImpl(RenderBuffer colorBuffer, RenderBuffer depthBuffer, int mipLevel, CubemapFace face, int depthSlice) { }
 
-internal static void SetRenderTargetImpl(RenderTexture rt, int mipLevel, CubemapFace face, int depthSlice) { }
+	internal static void SetRenderTargetImpl(RenderTexture rt, int mipLevel, CubemapFace face, int depthSlice) { }
 
-public static void SetRenderTarget(RenderTexture rt, int mipLevel, CubemapFace face, int depthSlice) { }
+	public static void SetRenderTarget(RenderTexture rt, int mipLevel, CubemapFace face, int depthSlice) { }
 
-public static void SetRenderTarget(RenderBuffer colorBuffer, RenderBuffer depthBuffer, int mipLevel, CubemapFace face, int depthSlice) { }
+	public static void SetRenderTarget(RenderBuffer colorBuffer, RenderBuffer depthBuffer, int mipLevel, CubemapFace face, int depthSlice) { }
 
-public static RenderBuffer get_activeColorBuffer() { }
+	public static RenderBuffer get_activeColorBuffer() { }
 
-public static RenderBuffer get_activeDepthBuffer() { }
+	public static RenderBuffer get_activeDepthBuffer() { }
 
-public static void SetRandomWriteTarget(int index, ComputeBuffer uav, bool preserveCounterValue) { }
+	public static void SetRandomWriteTarget(int index, ComputeBuffer uav, bool preserveCounterValue) { }
 
-private static void DrawTextureImpl(Rect screenRect, Texture texture, Rect sourceRect, int leftBorder, int rightBorder, int topBorder, int bottomBorder, Color color, Material mat, int pass) { }
+	private static void DrawTextureImpl(Rect screenRect, Texture texture, Rect sourceRect, int leftBorder, int rightBorder, int topBorder, int bottomBorder, Color color, Material mat, int pass) { }
 
-public static void DrawTexture(Rect screenRect, Texture texture, Rect sourceRect, int leftBorder, int rightBorder, int topBorder, int bottomBorder, Material mat, int pass) { }
+	public static void DrawTexture(Rect screenRect, Texture texture, Rect sourceRect, int leftBorder, int rightBorder, int topBorder, int bottomBorder, Material mat, int pass) { }
 
-public static void DrawTexture(Rect screenRect, Texture texture, int leftBorder, int rightBorder, int topBorder, int bottomBorder, Material mat, int pass) { }
+	public static void DrawTexture(Rect screenRect, Texture texture, int leftBorder, int rightBorder, int topBorder, int bottomBorder, Material mat, int pass) { }
 
-public static void DrawTexture(Rect screenRect, Texture texture, Material mat, int pass) { }
+	public static void DrawTexture(Rect screenRect, Texture texture, Material mat, int pass) { }
 
-public static void DrawMeshNow(Mesh mesh, Matrix4x4 matrix, int materialIndex) { }
+	public static void DrawMeshNow(Mesh mesh, Matrix4x4 matrix, int materialIndex) { }
 
-public static void DrawMeshNow(Mesh mesh, Matrix4x4 matrix) { }
+	public static void DrawMeshNow(Mesh mesh, Matrix4x4 matrix) { }
 
-public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, Transform probeAnchor, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+	public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, Transform probeAnchor, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
 
-public static void DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+	public static void DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
 
-public static void DrawProceduralIndirectNow(MeshTopology topology, ComputeBuffer bufferWithArgs, int argsOffset = 0) { }
+	public static void DrawProceduralIndirectNow(MeshTopology topology, ComputeBuffer bufferWithArgs, int argsOffset = 0) { }
 
-public static void Blit(Texture source, RenderTexture dest) { }
+	public static void Blit(Texture source, RenderTexture dest) { }
 
-public static void Blit(Texture source, RenderTexture dest, Material mat, int pass) { }
+	public static void Blit(Texture source, RenderTexture dest, Material mat, int pass) { }
 
-public static void Blit(Texture source, RenderTexture dest, Material mat) { }
+	public static void Blit(Texture source, RenderTexture dest, Material mat) { }
 
-public static void Blit(Texture source, Material mat, int pass) { }
+	public static void Blit(Texture source, Material mat, int pass) { }
 
-public static void Blit(Texture source, Material mat) { }
+	public static void Blit(Texture source, Material mat) { }
 
-public static void BlitMultiTap(Texture source, RenderTexture dest, Material mat, Vector2[] offsets) { }
-
-	[ExcludeFromDocsAttribute] 
-public static void DrawMesh(Mesh mesh, Vector3 position, Quaternion rotation, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties, bool castShadows, bool receiveShadows) { }
+	public static void BlitMultiTap(Texture source, RenderTexture dest, Material mat, Vector2[] offsets) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer) { }
+	public static void DrawMesh(Mesh mesh, Vector3 position, Quaternion rotation, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties, bool castShadows, bool receiveShadows) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties) { }
+	public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties, bool castShadows, bool receiveShadows) { }
+	public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera) { }
+	public static void DrawMesh(Mesh mesh, Matrix4x4 matrix, Material material, int layer, Camera camera, int submeshIndex, MaterialPropertyBlock properties, bool castShadows, bool receiveShadows) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void DrawTexture(Rect screenRect, Texture texture) { }
+	public static void DrawMeshInstancedIndirect(Mesh mesh, int submeshIndex, Material material, Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void SetRenderTarget(RenderTexture rt) { }
+	public static void DrawTexture(Rect screenRect, Texture texture) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void SetRenderTarget(RenderTexture rt, int mipLevel) { }
+	public static void SetRenderTarget(RenderTexture rt) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void SetRenderTarget(RenderBuffer colorBuffer, RenderBuffer depthBuffer) { }
+	public static void SetRenderTarget(RenderTexture rt, int mipLevel) { }
 
 	[ExcludeFromDocsAttribute] 
-public static void SetRandomWriteTarget(int index, ComputeBuffer uav) { }
+	public static void SetRenderTarget(RenderBuffer colorBuffer, RenderBuffer depthBuffer) { }
 
-private static void .cctor() { }
+	[ExcludeFromDocsAttribute] 
+	public static void SetRandomWriteTarget(int index, ComputeBuffer uav) { }
 
-private static void GetActiveColorBuffer_Injected(out RenderBuffer ret) { }
+	private static void .cctor() { }
 
-private static void GetActiveDepthBuffer_Injected(out RenderBuffer ret) { }
+	private static void GetActiveColorBuffer_Injected(out RenderBuffer ret) { }
 
-private static void Internal_SetRTSimple_Injected(ref RenderBuffer color, ref RenderBuffer depth, int mip, CubemapFace face, int depthSlice) { }
+	private static void GetActiveDepthBuffer_Injected(out RenderBuffer ret) { }
 
-private static void Internal_DrawMeshNow2_Injected(Mesh mesh, int subsetIndex, ref Matrix4x4 matrix) { }
+	private static void Internal_SetRTSimple_Injected(ref RenderBuffer color, ref RenderBuffer depth, int mip, CubemapFace face, int depthSlice) { }
 
-private static void Internal_DrawMesh_Injected(Mesh mesh, int submeshIndex, ref Matrix4x4 matrix, Material material, int layer, Camera camera, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, Transform probeAnchor, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+	private static void Internal_DrawMeshNow2_Injected(Mesh mesh, int subsetIndex, ref Matrix4x4 matrix) { }
 
-private static void Internal_DrawMeshInstancedIndirect_Injected(Mesh mesh, int submeshIndex, Material material, ref Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+	private static void Internal_DrawMesh_Injected(Mesh mesh, int submeshIndex, ref Matrix4x4 matrix, Material material, int layer, Camera camera, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, Transform probeAnchor, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
+
+	private static void Internal_DrawMeshInstancedIndirect_Injected(Mesh mesh, int submeshIndex, Material material, ref Bounds bounds, ComputeBuffer bufferWithArgs, int argsOffset, MaterialPropertyBlock properties, ShadowCastingMode castShadows, bool receiveShadows, int layer, Camera camera, LightProbeUsage lightProbeUsage, LightProbeProxyVolume lightProbeProxyVolume) { }
 
 }
 
 public static class Graphics // TypeDefIndex: 8219
 {
 
-public static extern IntPtr GetRenderEventFunc() { }
+	public static extern IntPtr GetRenderEventFunc() { }
 
 }
 
 public static class Graphics.BufferReadback // TypeDefIndex: 8220
 {
 
-public static extern IntPtr CreateForTexture(IntPtr tex, uint width, uint height, uint format) { }
+	public static extern IntPtr CreateForTexture(IntPtr tex, uint width, uint height, uint format) { }
 
-public static extern IntPtr CreateForBuffer(IntPtr buf, uint size) { }
+	public static extern IntPtr CreateForBuffer(IntPtr buf, uint size) { }
 
-public static extern void Destroy(IntPtr inst) { }
+	public static extern void Destroy(IntPtr inst) { }
 
-public static extern void IssueRead(IntPtr inst) { }
+	public static extern void IssueRead(IntPtr inst) { }
 
-public static extern uint GetDataSize(IntPtr inst) { }
+	public static extern uint GetDataSize(IntPtr inst) { }
 
-public static extern uint GetDataStride(IntPtr inst) { }
+	public static extern uint GetDataStride(IntPtr inst) { }
 
-public static extern void GetData(IntPtr inst, ref byte data) { }
+	public static extern void GetData(IntPtr inst, ref byte data) { }
 
-public static extern void GetData(IntPtr inst, ref Color32 data) { }
+	public static extern void GetData(IntPtr inst, ref Color32 data) { }
 
-public static extern void GetData(IntPtr inst, ref float data) { }
+	public static extern void GetData(IntPtr inst, ref float data) { }
 
 }
 
 public class Graphics : ConsoleSystem // TypeDefIndex: 11924
 {
-private const float MinShadowDistance = 100;
-private const float MaxShadowDistance2Split = 600;
-private const float MaxShadowDistance4Split = 1000;
+	private const float MinShadowDistance = 100;
+	private const float MaxShadowDistance2Split = 600;
+	private const float MaxShadowDistance4Split = 1000;
 	private static float _shadowdistance; 
 	[ClientVar] 
 	public static int shadowmode; 
@@ -254,176 +254,176 @@ private const float MaxShadowDistance4Split = 1000;
 	private static bool _aggressiveShadowLodWearable; 
 
 	[ClientVar] 
-public static int quality { get; set; }
+	public static int quality { get; set; }
 	[ClientVar] 
-public static float shadowdistance { get; set; }
+	public static float shadowdistance { get; set; }
 	[ClientVar] 
-public static int shadowcascades { get; set; }
+	public static int shadowcascades { get; set; }
 	[ClientVar] 
-public static int shadowquality { get; set; }
+	public static int shadowquality { get; set; }
 	[ClientVar] 
-public static float fov { get; set; }
+	public static float fov { get; set; }
 	[ClientVar] 
-public static float lodbias { get; set; }
+	public static float lodbias { get; set; }
 	[ClientVar] 
-public static int shaderlod { get; set; }
+	public static int shaderlod { get; set; }
 	[ClientVar] 
-public static int vsync { get; set; }
+	public static int vsync { get; set; }
 	[ClientVar] 
-public static int resolution { get; set; }
+	public static int resolution { get; set; }
 	[ClientVar] 
-public static int screenmode { get; set; }
+	public static int screenmode { get; set; }
 	[ClientVar] 
-public static float uiscale { get; set; }
+	public static float uiscale { get; set; }
 	[ClientVar] 
-public static int af { get; set; }
+	public static int af { get; set; }
 	[ClientVar] 
-public static int parallax { get; set; }
+	public static int parallax { get; set; }
 	[ClientVar] 
-public static bool itemskins { get; set; }
+	public static bool itemskins { get; set; }
 	[ClientVar] 
-public static bool itemskinunload { get; set; }
+	public static bool itemskinunload { get; set; }
 	[ClientVar] 
-public static float itemskintimeout { get; set; }
+	public static float itemskintimeout { get; set; }
 	[ClientVar] 
-public static bool impostorshadows { get; set; }
+	public static bool impostorshadows { get; set; }
 	[ClientVar] 
-public static int showtexeldensity { get; set; }
+	public static int showtexeldensity { get; set; }
 	[ClientVar] 
-public static bool waves { get; set; }
+	public static bool waves { get; set; }
 	[ClientVar] 
-public static int maxQueuedFrames { get; set; }
+	public static int maxQueuedFrames { get; set; }
 	[ClientVar] 
-public static float renderScale { get; set; }
+	public static float renderScale { get; set; }
 	[ClientVar] 
-public static bool aggressiveShadowLodWearable { get; set; }
+	public static bool aggressiveShadowLodWearable { get; set; }
 
 
-public static int get_quality() { }
+	public static int get_quality() { }
 
-public static void set_quality(int value) { }
+	public static void set_quality(int value) { }
 
-public static float EnforceShadowDistanceBounds(float distance) { }
+	public static float EnforceShadowDistanceBounds(float distance) { }
 
-public static float get_shadowdistance() { }
+	public static float get_shadowdistance() { }
 
-public static void set_shadowdistance(float value) { }
+	public static void set_shadowdistance(float value) { }
 
-public static int get_shadowcascades() { }
+	public static int get_shadowcascades() { }
 
-public static void set_shadowcascades(int value) { }
+	public static void set_shadowcascades(int value) { }
 
-public static int get_shadowquality() { }
+	public static int get_shadowquality() { }
 
-public static void set_shadowquality(int value) { }
+	public static void set_shadowquality(int value) { }
 
-public static float get_fov() { }
+	public static float get_fov() { }
 
-public static void set_fov(float value) { }
+	public static void set_fov(float value) { }
 
-public static float get_lodbias() { }
+	public static float get_lodbias() { }
 
-public static void set_lodbias(float value) { }
-
-	[ClientVar] 
-public static void dof_focus_target(ConsoleSystem.Arg arg) { }
+	public static void set_lodbias(float value) { }
 
 	[ClientVar] 
-public static void dof_nudge(ConsoleSystem.Arg arg) { }
-
-public static int get_shaderlod() { }
-
-public static void set_shaderlod(int value) { }
-
-public static int get_vsync() { }
-
-public static void set_vsync(int value) { }
+	public static void dof_focus_target(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void resolutions(ConsoleSystem.Arg arg) { }
+	public static void dof_nudge(ConsoleSystem.Arg arg) { }
 
-public static int get_resolution() { }
+	public static int get_shaderlod() { }
 
-public static void set_resolution(int value) { }
+	public static void set_shaderlod(int value) { }
 
-public static List<Resolution> GetUniqueResolutions() { }
+	public static int get_vsync() { }
 
-private static void CacheResolutions() { }
-
-public static int get_screenmode() { }
-
-public static void set_screenmode(int value) { }
-
-private static void ApplyScreenSettings() { }
-
-private static FullScreenMode GetScreenMode() { }
+	public static void set_vsync(int value) { }
 
 	[ClientVar] 
-public static void dof_focus_lookingat(ConsoleSystem.Arg arg) { }
+	public static void resolutions(ConsoleSystem.Arg arg) { }
 
-public static float get_uiscale() { }
+	public static int get_resolution() { }
 
-public static void set_uiscale(float value) { }
+	public static void set_resolution(int value) { }
 
-public static int get_af() { }
+	public static List<Resolution> GetUniqueResolutions() { }
 
-public static void set_af(int value) { }
+	private static void CacheResolutions() { }
 
-public static int get_parallax() { }
+	public static int get_screenmode() { }
 
-public static void set_parallax(int value) { }
+	public static void set_screenmode(int value) { }
 
-public static bool get_itemskins() { }
+	private static void ApplyScreenSettings() { }
 
-public static void set_itemskins(bool value) { }
-
-public static bool get_itemskinunload() { }
-
-public static void set_itemskinunload(bool value) { }
-
-public static float get_itemskintimeout() { }
-
-public static void set_itemskintimeout(float value) { }
-
-public static bool get_impostorshadows() { }
-
-public static void set_impostorshadows(bool value) { }
-
-public static int get_showtexeldensity() { }
-
-public static void set_showtexeldensity(int value) { }
-
-public static bool get_waves() { }
-
-public static void set_waves(bool value) { }
-
-public static int get_maxQueuedFrames() { }
-
-public static void set_maxQueuedFrames(int value) { }
-
-public static float get_renderScale() { }
-
-public static void set_renderScale(float value) { }
+	private static FullScreenMode GetScreenMode() { }
 
 	[ClientVar] 
-public static void SetMipMapBias(ConsoleSystem.Arg arg) { }
+	public static void dof_focus_lookingat(ConsoleSystem.Arg arg) { }
+
+	public static float get_uiscale() { }
+
+	public static void set_uiscale(float value) { }
+
+	public static int get_af() { }
+
+	public static void set_af(int value) { }
+
+	public static int get_parallax() { }
+
+	public static void set_parallax(int value) { }
+
+	public static bool get_itemskins() { }
+
+	public static void set_itemskins(bool value) { }
+
+	public static bool get_itemskinunload() { }
+
+	public static void set_itemskinunload(bool value) { }
+
+	public static float get_itemskintimeout() { }
+
+	public static void set_itemskintimeout(float value) { }
+
+	public static bool get_impostorshadows() { }
+
+	public static void set_impostorshadows(bool value) { }
+
+	public static int get_showtexeldensity() { }
+
+	public static void set_showtexeldensity(int value) { }
+
+	public static bool get_waves() { }
+
+	public static void set_waves(bool value) { }
+
+	public static int get_maxQueuedFrames() { }
+
+	public static void set_maxQueuedFrames(int value) { }
+
+	public static float get_renderScale() { }
+
+	public static void set_renderScale(float value) { }
 
 	[ClientVar] 
-public static void ResetMipMapBias() { }
+	public static void SetMipMapBias(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void ReportShadowCasters(ConsoleSystem.Arg arg) { }
+	public static void ResetMipMapBias() { }
 
 	[ClientVar] 
-public static void ReportParticleSystems(ConsoleSystem.Arg arg) { }
+	public static void ReportShadowCasters(ConsoleSystem.Arg arg) { }
 
-public static bool get_aggressiveShadowLodWearable() { }
+	[ClientVar] 
+	public static void ReportParticleSystems(ConsoleSystem.Arg arg) { }
 
-public static void set_aggressiveShadowLodWearable(bool value) { }
+	public static bool get_aggressiveShadowLodWearable() { }
 
-public void .ctor() { }
+	public static void set_aggressiveShadowLodWearable(bool value) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -437,19 +437,19 @@ private sealed class Graphics.<>c // TypeDefIndex: 11925
 	public static Func<Resolution, int> <>9__60_3; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal Vector2Int <CacheResolutions>b__60_0(Resolution r) { }
+	internal Vector2Int <CacheResolutions>b__60_0(Resolution r) { }
 
-internal Resolution <CacheResolutions>b__60_1(IGrouping<Vector2Int, Resolution> g) { }
+	internal Resolution <CacheResolutions>b__60_1(IGrouping<Vector2Int, Resolution> g) { }
 
-internal int <CacheResolutions>b__60_4(Resolution r) { }
+	internal int <CacheResolutions>b__60_4(Resolution r) { }
 
-internal int <CacheResolutions>b__60_2(Resolution r) { }
+	internal int <CacheResolutions>b__60_2(Resolution r) { }
 
-internal int <CacheResolutions>b__60_3(Resolution r) { }
+	internal int <CacheResolutions>b__60_3(Resolution r) { }
 
 }
 

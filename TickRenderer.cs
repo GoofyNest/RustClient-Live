@@ -4,11 +4,11 @@ public class TickRenderer : MaskableGraphic // TypeDefIndex: 7073
 	private static UIVertex[] quad; 
 
 
-protected override void OnPopulateMesh(VertexHelper vh) { }
+	protected override void OnPopulateMesh(VertexHelper vh) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -13,91 +13,91 @@ internal class X509Certificate2ImplMono : X509Certificate2Impl // TypeDefIndex: 
 	private static byte[] email; 
 	private static byte[] signedData; 
 
-public override bool IsValid { get; }
-public override X509ExtensionCollection Extensions { get; }
-public override X500DistinguishedName IssuerName { get; }
-public override AsymmetricAlgorithm PrivateKey { get; set; }
-public override PublicKey PublicKey { get; }
-public override Oid SignatureAlgorithm { get; }
-public override X500DistinguishedName SubjectName { get; }
-public override int Version { get; }
-internal override X509CertificateImplCollection IntermediateCertificates { get; }
-internal X509Certificate MonoCertificate { get; }
-internal override X509Certificate2Impl FallbackImpl { get; }
+	public override bool IsValid { get; }
+	public override X509ExtensionCollection Extensions { get; }
+	public override X500DistinguishedName IssuerName { get; }
+	public override AsymmetricAlgorithm PrivateKey { get; set; }
+	public override PublicKey PublicKey { get; }
+	public override Oid SignatureAlgorithm { get; }
+	public override X500DistinguishedName SubjectName { get; }
+	public override int Version { get; }
+	internal override X509CertificateImplCollection IntermediateCertificates { get; }
+	internal X509Certificate MonoCertificate { get; }
+	internal override X509Certificate2Impl FallbackImpl { get; }
 
 
-public override bool get_IsValid() { }
+	public override bool get_IsValid() { }
 
-private void .ctor(X509Certificate cert) { }
+	private void .ctor(X509Certificate cert) { }
 
-private void .ctor(X509Certificate2ImplMono other) { }
+	private void .ctor(X509Certificate2ImplMono other) { }
 
-public override X509CertificateImpl Clone() { }
+	public override X509CertificateImpl Clone() { }
 
-public override string GetIssuerName(bool legacyV1Mode) { }
+	public override string GetIssuerName(bool legacyV1Mode) { }
 
-public override string GetSubjectName(bool legacyV1Mode) { }
+	public override string GetSubjectName(bool legacyV1Mode) { }
 
-public override byte[] GetRawCertData() { }
+	public override byte[] GetRawCertData() { }
 
-protected override byte[] GetCertHash(bool lazy) { }
+	protected override byte[] GetCertHash(bool lazy) { }
 
-public override DateTime GetValidFrom() { }
+	public override DateTime GetValidFrom() { }
 
-public override DateTime GetValidUntil() { }
+	public override DateTime GetValidUntil() { }
 
-public override bool Equals(X509CertificateImpl other, out bool result) { }
+	public override bool Equals(X509CertificateImpl other, out bool result) { }
 
-public override byte[] GetSerialNumber() { }
+	public override byte[] GetSerialNumber() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override X509ExtensionCollection get_Extensions() { }
+	public override X509ExtensionCollection get_Extensions() { }
 
-public override X500DistinguishedName get_IssuerName() { }
+	public override X500DistinguishedName get_IssuerName() { }
 
-public override AsymmetricAlgorithm get_PrivateKey() { }
+	public override AsymmetricAlgorithm get_PrivateKey() { }
 
-public override void set_PrivateKey(AsymmetricAlgorithm value) { }
+	public override void set_PrivateKey(AsymmetricAlgorithm value) { }
 
-public override PublicKey get_PublicKey() { }
+	public override PublicKey get_PublicKey() { }
 
-public override Oid get_SignatureAlgorithm() { }
+	public override Oid get_SignatureAlgorithm() { }
 
-public override X500DistinguishedName get_SubjectName() { }
+	public override X500DistinguishedName get_SubjectName() { }
 
-public override int get_Version() { }
-
-	[MonoTODOAttribute] 
-public override string GetNameInfo(X509NameType nameType, bool forIssuer) { }
-
-private ASN1 Find(byte[] oid, ASN1 dn) { }
-
-private string GetValueAsString(ASN1 pair) { }
-
-private X509Certificate ImportPkcs12(byte[] rawData, string password) { }
+	public override int get_Version() { }
 
 	[MonoTODOAttribute] 
-public override void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags) { }
+	public override string GetNameInfo(X509NameType nameType, bool forIssuer) { }
 
-public override void Reset() { }
+	private ASN1 Find(byte[] oid, ASN1 dn) { }
 
-public override string ToString() { }
+	private string GetValueAsString(ASN1 pair) { }
 
-public override string ToString(bool verbose) { }
-
-private static void AppendBuffer(StringBuilder sb, byte[] buffer) { }
+	private X509Certificate ImportPkcs12(byte[] rawData, string password) { }
 
 	[MonoTODOAttribute] 
-public override bool Verify(X509Certificate2 thisCertificate) { }
+	public override void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags) { }
 
-internal override X509CertificateImplCollection get_IntermediateCertificates() { }
+	public override void Reset() { }
 
-internal X509Certificate get_MonoCertificate() { }
+	public override string ToString() { }
 
-internal override X509Certificate2Impl get_FallbackImpl() { }
+	public override string ToString(bool verbose) { }
 
-private static void .cctor() { }
+	private static void AppendBuffer(StringBuilder sb, byte[] buffer) { }
+
+	[MonoTODOAttribute] 
+	public override bool Verify(X509Certificate2 thisCertificate) { }
+
+	internal override X509CertificateImplCollection get_IntermediateCertificates() { }
+
+	internal X509Certificate get_MonoCertificate() { }
+
+	internal override X509Certificate2Impl get_FallbackImpl() { }
+
+	private static void .cctor() { }
 
 }
 

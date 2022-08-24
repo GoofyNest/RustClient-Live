@@ -10,19 +10,19 @@ public struct uint3 : IEquatable<uint3>, IFormattable
 	public uint z; 
 
 
-public void .ctor(uint x, uint y, uint z) { }
+	public void .ctor(uint x, uint y, uint z) { }
 
-public static uint3 op_Multiply(uint3 lhs, uint3 rhs) { }
+	public static uint3 op_Multiply(uint3 lhs, uint3 rhs) { }
 
-public bool Equals(uint3 rhs) { }
+	public bool Equals(uint3 rhs) { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public string ToString(string format, IFormatProvider formatProvider) { }
+	public string ToString(string format, IFormatProvider formatProvider) { }
 
 }
 

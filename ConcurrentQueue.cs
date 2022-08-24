@@ -7,62 +7,62 @@ private sealed class ConcurrentQueue.Segment<T> // TypeDefIndex: 1437
 	internal bool _frozenForEnqueues; 
 	internal ConcurrentQueue.Segment<T> _nextSegment; 
 
-internal int Capacity { get; }
-internal int FreezeOffset { get; }
+	internal int Capacity { get; }
+	internal int FreezeOffset { get; }
 
 
-public void .ctor(int boundedLength) { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>..ctor
-|
-|-ConcurrentQueue.Segment<object>..ctor
-*/
+	public void .ctor(int boundedLength) { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>..ctor
+	|
+	|-ConcurrentQueue.Segment<object>..ctor
+	*/
 
-internal int get_Capacity() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.get_Capacity
-|-ConcurrentQueue.Segment<object>.get_Capacity
-*/
+	internal int get_Capacity() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.get_Capacity
+	|-ConcurrentQueue.Segment<object>.get_Capacity
+	*/
 
-internal int get_FreezeOffset() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.get_FreezeOffset
-|-ConcurrentQueue.Segment<object>.get_FreezeOffset
-*/
+	internal int get_FreezeOffset() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.get_FreezeOffset
+	|-ConcurrentQueue.Segment<object>.get_FreezeOffset
+	*/
 
-internal void EnsureFrozenForEnqueues() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.EnsureFrozenForEnqueues
-|-ConcurrentQueue.Segment<object>.EnsureFrozenForEnqueues
-*/
+	internal void EnsureFrozenForEnqueues() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.EnsureFrozenForEnqueues
+	|-ConcurrentQueue.Segment<object>.EnsureFrozenForEnqueues
+	*/
 
-public bool TryDequeue(out T item) { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.TryDequeue
-|
-|-ConcurrentQueue.Segment<object>.TryDequeue
-*/
+	public bool TryDequeue(out T item) { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.TryDequeue
+	|
+	|-ConcurrentQueue.Segment<object>.TryDequeue
+	*/
 
-public bool TryPeek(out T result, bool resultUsed) { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.TryPeek
-|
-|-ConcurrentQueue.Segment<object>.TryPeek
-*/
+	public bool TryPeek(out T result, bool resultUsed) { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.TryPeek
+	|
+	|-ConcurrentQueue.Segment<object>.TryPeek
+	*/
 
-public bool TryEnqueue(T item) { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.TryEnqueue
-|
-|-ConcurrentQueue.Segment<object>.TryEnqueue
-*/
+	public bool TryEnqueue(T item) { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.Segment<SteamNetworkingUtils.DebugMessage>.TryEnqueue
+	|
+	|-ConcurrentQueue.Segment<object>.TryEnqueue
+	*/
 
 }
 
@@ -91,60 +91,60 @@ private sealed class ConcurrentQueue.<Enumerate>d__27<T> : IEnumerator<T>, IDisp
 	private int <sTail>5__7; 
 	private int <i>5__8; 
 
-private T System.Collections.Generic.IEnumerator<T>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private T System.Collections.Generic.IEnumerator<T>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>..ctor
-|-ConcurrentQueue.<Enumerate>d__27<object>..ctor
-*/
+	public void .ctor(int <>1__state) { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>..ctor
+	|-ConcurrentQueue.<Enumerate>d__27<object>..ctor
+	*/
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.IDisposable.Dispose
-|-ConcurrentQueue.<Enumerate>d__27<object>.System.IDisposable.Dispose
-*/
+	private void System.IDisposable.Dispose() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.IDisposable.Dispose
+	|-ConcurrentQueue.<Enumerate>d__27<object>.System.IDisposable.Dispose
+	*/
 
-private bool MoveNext() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.MoveNext
-|
-|-ConcurrentQueue.<Enumerate>d__27<object>.MoveNext
-*/
-
-	[DebuggerHiddenAttribute] 
-private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.Collections.Generic.IEnumerator<T>.get_Current
-|
-|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.Generic.IEnumerator<T>.get_Current
-*/
+	private bool MoveNext() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.MoveNext
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<object>.MoveNext
+	*/
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.Collections.IEnumerator.Reset
-|
-|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.IEnumerator.Reset
-*/
+	private T System.Collections.Generic.IEnumerator<T>.get_Current() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.Collections.Generic.IEnumerator<T>.get_Current
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.Generic.IEnumerator<T>.get_Current
+	*/
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
-/* GenericInstMethod :
-|
-|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.Collections.IEnumerator.get_Current
-|
-|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.IEnumerator.get_Current
-*/
+	private void System.Collections.IEnumerator.Reset() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.Collections.IEnumerator.Reset
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.IEnumerator.Reset
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
+	/* GenericInstMethod :
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<SteamNetworkingUtils.DebugMessage>.System.Collections.IEnumerator.get_Current
+	|
+	|-ConcurrentQueue.<Enumerate>d__27<object>.System.Collections.IEnumerator.get_Current
+	*/
 
 }
 

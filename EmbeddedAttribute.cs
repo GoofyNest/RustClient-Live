@@ -5,7 +5,7 @@ internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 4792
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -18,7 +18,7 @@ internal class <Module>
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -29,7 +29,7 @@ internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 6675
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -40,7 +40,7 @@ internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 6722
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -51,7 +51,7 @@ internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 6900
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -62,7 +62,7 @@ internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 7081
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -73,14 +73,14 @@ internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 7304
 [EmbeddedAttribute] 
 internal sealed class EmbeddedAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 internal sealed class EmbeddedAttribute : Attribute // TypeDefIndex: 8247
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

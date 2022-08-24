@@ -14,26 +14,26 @@ public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 11332
 
 
 	[ClientVar] 
-public static void takescreenshot(ConsoleSystem.Arg arg) { }
+	public static void takescreenshot(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void takehiresscreenshot(ConsoleSystem.Arg arg) { }
+	public static void takehiresscreenshot(ConsoleSystem.Arg arg) { }
 
-private void TakeScreenshotNormal() { }
+	private void TakeScreenshotNormal() { }
 
-private void TakeHighResScreenshot() { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator SaveScreenshot(string ext, int resolutionX, int resolutionY, bool withHud, bool withoutHud) { }
-
-private void GetScreenCallback(Texture2D texture) { }
+	private void TakeHighResScreenshot() { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator GetScreen(Camera camera, int resolutionX, int resolutionY, Action<Texture2D> finishedCallback, Action renderCallback, bool updateCamera = False) { }
+	private IEnumerator SaveScreenshot(string ext, int resolutionX, int resolutionY, bool withHud, bool withoutHud) { }
 
-public void .ctor() { }
+	private void GetScreenCallback(Texture2D texture) { }
 
-private static void .cctor() { }
+	[IteratorStateMachineAttribute] 
+	public static IEnumerator GetScreen(Camera camera, int resolutionX, int resolutionY, Action<Texture2D> finishedCallback, Action renderCallback, bool updateCamera = False) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -51,26 +51,26 @@ private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnu
 	private bool <oldNametags>5__3; 
 	private int <i>5__4; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -94,26 +94,26 @@ private sealed class Screenshot.<GetScreen>d__11 : IEnumerator<object>, IEnumera
 	private bool <originalBranding>5__9; 
 	private bool <nvgEnabled>5__10; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

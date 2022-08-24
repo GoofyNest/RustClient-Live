@@ -21,24 +21,24 @@ public class LensDirtiness : MonoBehaviour, IImageEffect // TypeDefIndex: 8063
 	public Color BloomColor; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void SetKeyword() { }
+	private void SetKeyword() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum LensDirtiness.Pass // TypeDefIndex: 8064
 {
 	public int value__; 
-public const LensDirtiness.Pass Threshold = 0;
-public const LensDirtiness.Pass Kawase = 1;
-public const LensDirtiness.Pass Compose = 2;
+	public const LensDirtiness.Pass Threshold = 0;
+	public const LensDirtiness.Pass Kawase = 1;
+	public const LensDirtiness.Pass Compose = 2;
 
 }
 

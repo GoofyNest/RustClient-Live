@@ -7,11 +7,11 @@ public class DeliveryDroneConfig : BaseScriptableObject // TypeDefIndex: 8800
 	public LayerMask layerMask; 
 
 
-public void FindDescentPoints(VendingMachine vendingMachine, float currentY, out Vector3 waitPosition, out Vector3 descendPosition) { }
+	public void FindDescentPoints(VendingMachine vendingMachine, float currentY, out Vector3 waitPosition, out Vector3 descendPosition) { }
 
-public bool IsVendingMachineAccessible(VendingMachine vendingMachine, Vector3 offset, out RaycastHit hitInfo) { }
+	public bool IsVendingMachineAccessible(VendingMachine vendingMachine, Vector3 offset, out RaycastHit hitInfo) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

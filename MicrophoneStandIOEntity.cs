@@ -10,32 +10,32 @@ public class MicrophoneStandIOEntity : IOEntity, IAudioConnectionSource // TypeD
 	private float fakeInput; 
 	private int lastFrameMove; 
 
-public float VolumeVisualisationMultiplier { get; }
+	public float VolumeVisualisationMultiplier { get; }
 
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-private void FindNearbyInstruments() { }
+	private void FindNearbyInstruments() { }
 
-public void PlayNote(InstrumentKeyController key, SoundDefinition def, float velocity, NoteBindingCollection collection) { }
+	public void PlayNote(InstrumentKeyController key, SoundDefinition def, float velocity, NoteBindingCollection collection) { }
 
-public void StopNote(InstrumentKeyController key, float fadeOutTime = 0,1) { }
+	public void StopNote(InstrumentKeyController key, float fadeOutTime = 0,1) { }
 
-public void SpeakerConnected(ConnectedSpeaker speaker) { }
+	public void SpeakerConnected(ConnectedSpeaker speaker) { }
 
-public void SpeakerDisconnected(ConnectedSpeaker repeater) { }
+	public void SpeakerDisconnected(ConnectedSpeaker repeater) { }
 
-public AudioSource GetSource() { }
+	public AudioSource GetSource() { }
 
-public float get_VolumeVisualisationMultiplier() { }
+	public float get_VolumeVisualisationMultiplier() { }
 
-public float GetFakeInput() { }
+	public float GetFakeInput() { }
 
-private int GetActiveSoundsCount() { }
+	private int GetActiveSoundsCount() { }
 
-public IOEntity ToEntity() { }
+	public IOEntity ToEntity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -11,49 +11,49 @@ public class HableCurve // TypeDefIndex: 11854
 	private readonly HableCurve.Segment[] m_Segments; 
 	public readonly HableCurve.Uniforms uniforms; 
 
-public float whitePoint { get; set; }
-public float inverseWhitePoint { get; set; }
-internal float x0 { get; set; }
-internal float x1 { get; set; }
+	public float whitePoint { get; set; }
+	public float inverseWhitePoint { get; set; }
+	internal float x0 { get; set; }
+	internal float x1 { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_whitePoint() { }
+	public float get_whitePoint() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_whitePoint(float value) { }
+	private void set_whitePoint(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_inverseWhitePoint() { }
+	public float get_inverseWhitePoint() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_inverseWhitePoint(float value) { }
+	private void set_inverseWhitePoint(float value) { }
 
 	[CompilerGeneratedAttribute] 
-internal float get_x0() { }
+	internal float get_x0() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_x0(float value) { }
+	private void set_x0(float value) { }
 
 	[CompilerGeneratedAttribute] 
-internal float get_x1() { }
+	internal float get_x1() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_x1(float value) { }
+	private void set_x1(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public float Eval(float x) { }
+	public float Eval(float x) { }
 
-public void Init(float toeStrength, float toeLength, float shoulderStrength, float shoulderLength, float shoulderAngle, float gamma) { }
+	public void Init(float toeStrength, float toeLength, float shoulderStrength, float shoulderLength, float shoulderAngle, float gamma) { }
 
-private void InitSegments(HableCurve.DirectParams srcParams) { }
+	private void InitSegments(HableCurve.DirectParams srcParams) { }
 
-private void SolveAB(out float lnA, out float B, float x0, float y0, float m) { }
+	private void SolveAB(out float lnA, out float B, float x0, float y0, float m) { }
 
-private void AsSlopeIntercept(out float m, out float b, float x0, float x1, float y0, float y1) { }
+	private void AsSlopeIntercept(out float m, out float b, float x0, float x1, float y0, float y1) { }
 
-private float EvalDerivativeLinearGamma(float m, float b, float g, float x) { }
+	private float EvalDerivativeLinearGamma(float m, float b, float g, float x) { }
 
 }
 
@@ -67,9 +67,9 @@ private class HableCurve.Segment // TypeDefIndex: 11855
 	public float B; 
 
 
-public float Eval(float x) { }
+	public float Eval(float x) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -90,30 +90,30 @@ public class HableCurve.Uniforms // TypeDefIndex: 11857
 {
 	private HableCurve parent; 
 
-public Vector4 curve { get; }
-public Vector4 toeSegmentA { get; }
-public Vector4 toeSegmentB { get; }
-public Vector4 midSegmentA { get; }
-public Vector4 midSegmentB { get; }
-public Vector4 shoSegmentA { get; }
-public Vector4 shoSegmentB { get; }
+	public Vector4 curve { get; }
+	public Vector4 toeSegmentA { get; }
+	public Vector4 toeSegmentB { get; }
+	public Vector4 midSegmentA { get; }
+	public Vector4 midSegmentB { get; }
+	public Vector4 shoSegmentA { get; }
+	public Vector4 shoSegmentB { get; }
 
 
-internal void .ctor(HableCurve parent) { }
+	internal void .ctor(HableCurve parent) { }
 
-public Vector4 get_curve() { }
+	public Vector4 get_curve() { }
 
-public Vector4 get_toeSegmentA() { }
+	public Vector4 get_toeSegmentA() { }
 
-public Vector4 get_toeSegmentB() { }
+	public Vector4 get_toeSegmentB() { }
 
-public Vector4 get_midSegmentA() { }
+	public Vector4 get_midSegmentA() { }
 
-public Vector4 get_midSegmentB() { }
+	public Vector4 get_midSegmentB() { }
 
-public Vector4 get_shoSegmentA() { }
+	public Vector4 get_shoSegmentA() { }
 
-public Vector4 get_shoSegmentB() { }
+	public Vector4 get_shoSegmentB() { }
 
 }
 

@@ -7,21 +7,21 @@ public struct UgcAdditionalPreview // TypeDefIndex: 5560
 	[CompilerGeneratedAttribute] 
 	private ItemPreviewType <ItemPreviewType>k__BackingField; 
 
-private string UrlOrVideoID { set; }
-private string OriginalFileName { set; }
-private ItemPreviewType ItemPreviewType { set; }
+	private string UrlOrVideoID { set; }
+	private string OriginalFileName { set; }
+	private ItemPreviewType ItemPreviewType { set; }
 
 
-internal void .ctor(string urlOrVideoID, string originalFileName, ItemPreviewType itemPreviewType) { }
-
-	[CompilerGeneratedAttribute] 
-private void set_UrlOrVideoID(string value) { }
+	internal void .ctor(string urlOrVideoID, string originalFileName, ItemPreviewType itemPreviewType) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_OriginalFileName(string value) { }
+	private void set_UrlOrVideoID(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ItemPreviewType(ItemPreviewType value) { }
+	private void set_OriginalFileName(string value) { }
+
+	[CompilerGeneratedAttribute] 
+	private void set_ItemPreviewType(ItemPreviewType value) { }
 
 }
 

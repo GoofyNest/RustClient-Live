@@ -28,29 +28,29 @@ public struct SphericalHarmonicsL2 : IEquatable<SphericalHarmonicsL2> // TypeDef
 	private float shb7; 
 	private float shb8; 
 
-public float Item { get; }
+	public float Item { get; }
 
 
-public void AddAmbientLight(Color color) { }
+	public void AddAmbientLight(Color color) { }
 
-public void AddDirectionalLight(Vector3 direction, Color color, float intensity) { }
+	public void AddDirectionalLight(Vector3 direction, Color color, float intensity) { }
 
 	[FreeFunctionAttribute] 
-private static void AddDirectionalLightInternal(ref SphericalHarmonicsL2 sh, Vector3 direction, Color color) { }
+	private static void AddDirectionalLightInternal(ref SphericalHarmonicsL2 sh, Vector3 direction, Color color) { }
 
-public float get_Item(int rgb, int coefficient) { }
+	public float get_Item(int rgb, int coefficient) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(SphericalHarmonicsL2 other) { }
+	public bool Equals(SphericalHarmonicsL2 other) { }
 
-public static bool op_Equality(SphericalHarmonicsL2 lhs, SphericalHarmonicsL2 rhs) { }
+	public static bool op_Equality(SphericalHarmonicsL2 lhs, SphericalHarmonicsL2 rhs) { }
 
-private static void AddAmbientLight_Injected(ref SphericalHarmonicsL2 _unity_self, ref Color color) { }
+	private static void AddAmbientLight_Injected(ref SphericalHarmonicsL2 _unity_self, ref Color color) { }
 
-private static void AddDirectionalLightInternal_Injected(ref SphericalHarmonicsL2 sh, ref Vector3 direction, ref Color color) { }
+	private static void AddDirectionalLightInternal_Injected(ref SphericalHarmonicsL2 sh, ref Vector3 direction, ref Color color) { }
 
 }
 

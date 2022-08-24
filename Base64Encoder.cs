@@ -5,13 +5,13 @@ internal abstract class Base64Encoder // TypeDefIndex: 1813
 	private char[] charsLine; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal abstract void WriteChars(char[] chars, int index, int count);
+	internal abstract void WriteChars(char[] chars, int index, int count);
 
-internal void Encode(byte[] buffer, int index, int count) { }
+	internal void Encode(byte[] buffer, int index, int count) { }
 
-internal void Flush() { }
+	internal void Flush() { }
 
 }
 
@@ -23,13 +23,13 @@ internal class Base64Encoder // TypeDefIndex: 5917
 	private int _leftOverBytesCount; 
 
 
-public void .ctor(TextWriter writer) { }
+	public void .ctor(TextWriter writer) { }
 
-public void Encode(byte[] buffer, int index, int count) { }
+	public void Encode(byte[] buffer, int index, int count) { }
 
-public void Flush() { }
+	public void Flush() { }
 
-private void WriteChars(char[] chars, int index, int count) { }
+	private void WriteChars(char[] chars, int index, int count) { }
 
 }
 

@@ -8,11 +8,11 @@ public struct ViewModelDrawEvent : IEquatable<ViewModelDrawEvent> // TypeDefInde
 	public int pass; 
 
 
-public bool Equals(ViewModelDrawEvent other) { }
+	public bool Equals(ViewModelDrawEvent other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

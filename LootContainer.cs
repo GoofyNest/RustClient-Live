@@ -19,32 +19,32 @@ public class LootContainer : StorageContainer
 	public LootContainer.spawnType SpawnType; 
 	private bool localPlayerInvolved; 
 
-public bool shouldRefreshContents { get; }
+	public bool shouldRefreshContents { get; }
 
 
-public bool get_shouldRefreshContents() { }
+	public bool get_shouldRefreshContents() { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public override void DoDestroyEffects(BaseNetworkable.DestroyMode mode, Message msg) { }
+	public override void DoDestroyEffects(BaseNetworkable.DestroyMode mode, Message msg) { }
 
-public override void OnAttacked(HitInfo info) { }
+	public override void OnAttacked(HitInfo info) { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum LootContainer.spawnType // TypeDefIndex: 9590
 {
 	public int value__; 
-public const LootContainer.spawnType GENERIC = 0;
-public const LootContainer.spawnType PLAYER = 1;
-public const LootContainer.spawnType TOWN = 2;
-public const LootContainer.spawnType AIRDROP = 3;
-public const LootContainer.spawnType CRASHSITE = 4;
-public const LootContainer.spawnType ROADSIDE = 5;
+	public const LootContainer.spawnType GENERIC = 0;
+	public const LootContainer.spawnType PLAYER = 1;
+	public const LootContainer.spawnType TOWN = 2;
+	public const LootContainer.spawnType AIRDROP = 3;
+	public const LootContainer.spawnType CRASHSITE = 4;
+	public const LootContainer.spawnType ROADSIDE = 5;
 
 }
 

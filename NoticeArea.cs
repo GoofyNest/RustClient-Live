@@ -10,19 +10,19 @@ public class NoticeArea : SingletonComponent<NoticeArea> // TypeDefIndex: 11040
 	private RealTimeSince timeSinceUpdatedNotices; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public static void ItemPickUp(ItemDefinition def, int amount, string nameOverride) { }
+	public static void ItemPickUp(ItemDefinition def, int amount, string nameOverride) { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateLayout() { }
+	private void UpdateLayout() { }
 
-private static Vector2 ApplySizing(RectTransform rectT, bool setSize = False) { }
+	private static Vector2 ApplySizing(RectTransform rectT, bool setSize = False) { }
 
-public void RefreshNotices() { }
+	public void RefreshNotices() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

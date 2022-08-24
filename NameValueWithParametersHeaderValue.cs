@@ -2,26 +2,26 @@ public class NameValueWithParametersHeaderValue : NameValueHeaderValue, ICloneab
 {
 	private List<NameValueHeaderValue> parameters; 
 
-public ICollection<NameValueHeaderValue> Parameters { get; }
+	public ICollection<NameValueHeaderValue> Parameters { get; }
 
 
-protected void .ctor(NameValueWithParametersHeaderValue source) { }
+	protected void .ctor(NameValueWithParametersHeaderValue source) { }
 
-private void .ctor() { }
+	private void .ctor() { }
 
-public ICollection<NameValueHeaderValue> get_Parameters() { }
+	public ICollection<NameValueHeaderValue> get_Parameters() { }
 
-private object System.ICloneable.Clone() { }
+	private object System.ICloneable.Clone() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-internal static bool TryParse(string input, int minimalCount, out List<NameValueWithParametersHeaderValue> result) { }
+	internal static bool TryParse(string input, int minimalCount, out List<NameValueWithParametersHeaderValue> result) { }
 
-private static bool TryParseElement(Lexer lexer, out NameValueWithParametersHeaderValue parsedValue, out Token t) { }
+	private static bool TryParseElement(Lexer lexer, out NameValueWithParametersHeaderValue parsedValue, out Token t) { }
 
 }
 

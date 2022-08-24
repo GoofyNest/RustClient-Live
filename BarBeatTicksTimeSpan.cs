@@ -7,49 +7,49 @@ public sealed class BarBeatTicksTimeSpan : ITimeSpan, IComparable, IComparable<B
 	[CompilerGeneratedAttribute] 
 	private readonly long <Ticks>k__BackingField; 
 
-public long Bars { get; }
-public long Beats { get; }
-public long Ticks { get; }
+	public long Bars { get; }
+	public long Beats { get; }
+	public long Ticks { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(long bars, long beats) { }
+	public void .ctor(long bars, long beats) { }
 
-public void .ctor(long bars, long beats, long ticks) { }
-
-	[CompilerGeneratedAttribute] 
-public long get_Bars() { }
+	public void .ctor(long bars, long beats, long ticks) { }
 
 	[CompilerGeneratedAttribute] 
-public long get_Beats() { }
+	public long get_Bars() { }
 
 	[CompilerGeneratedAttribute] 
-public long get_Ticks() { }
+	public long get_Beats() { }
 
-public static bool op_Equality(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
+	[CompilerGeneratedAttribute] 
+	public long get_Ticks() { }
 
-public static bool op_Inequality(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
+	public static bool op_Equality(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
 
-public static BarBeatTicksTimeSpan op_Subtraction(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
+	public static bool op_Inequality(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
 
-public static bool op_LessThan(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
+	public static BarBeatTicksTimeSpan op_Subtraction(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
 
-public override bool Equals(object obj) { }
+	public static bool op_LessThan(BarBeatTicksTimeSpan timeSpan1, BarBeatTicksTimeSpan timeSpan2) { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public override string ToString() { }
+	public override int GetHashCode() { }
 
-public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
+	public override string ToString() { }
 
-public ITimeSpan Clone() { }
+	public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
 
-public int CompareTo(object other) { }
+	public ITimeSpan Clone() { }
 
-public int CompareTo(BarBeatTicksTimeSpan other) { }
+	public int CompareTo(object other) { }
 
-public bool Equals(BarBeatTicksTimeSpan other) { }
+	public int CompareTo(BarBeatTicksTimeSpan other) { }
+
+	public bool Equals(BarBeatTicksTimeSpan other) { }
 
 }
 

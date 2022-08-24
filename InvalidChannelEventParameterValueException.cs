@@ -6,7 +6,7 @@ public sealed class InvalidChannelEventParameterValueException : MidiException /
 	private readonly byte <Value>k__BackingField; 
 
 
-internal void .ctor(MidiEventType eventType, byte value) { }
+	internal void .ctor(MidiEventType eventType, byte value) { }
 
 }
 

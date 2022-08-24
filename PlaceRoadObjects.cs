@@ -8,9 +8,9 @@ public class PlaceRoadObjects : ProceduralComponent // TypeDefIndex: 10559
 	public PathList.PathObject[] Path; 
 
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

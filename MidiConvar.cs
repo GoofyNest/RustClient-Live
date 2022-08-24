@@ -8,81 +8,81 @@ public class MidiConvar : MonoBehaviour // TypeDefIndex: 9312
 	private List<MidiConvar.NoteBinding> noteBindings; 
 
 	[ClientVar] 
-public static bool Enabled { get; set; }
+	public static bool Enabled { get; set; }
 
 
-public static bool get_Enabled() { }
+	public static bool get_Enabled() { }
 
-public static void set_Enabled(bool value) { }
-
-	[ClientVar] 
-public static void BindKnob(ConsoleSystem.Arg arg) { }
+	public static void set_Enabled(bool value) { }
 
 	[ClientVar] 
-public static void BindKnobRelative(ConsoleSystem.Arg arg) { }
+	public static void BindKnob(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void BindKeyOn(ConsoleSystem.Arg arg) { }
+	public static void BindKnobRelative(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void BindKeyOff(ConsoleSystem.Arg arg) { }
+	public static void BindKeyOn(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void PrintBindings(ConsoleSystem.Arg arg) { }
+	public static void BindKeyOff(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void ClearAllBindings(ConsoleSystem.Arg arg) { }
+	public static void PrintBindings(ConsoleSystem.Arg arg) { }
 
 	[ClientVar] 
-public static void ReloadBindings(ConsoleSystem.Arg arg) { }
+	public static void ClearAllBindings(ConsoleSystem.Arg arg) { }
 
-private void OnEnable() { }
+	[ClientVar] 
+	public static void ReloadBindings(ConsoleSystem.Arg arg) { }
 
-private void OnDisable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void OnDisable() { }
 
-private void KnobDelegate(MidiChannel channel, int knobnumber, float knobvalue) { }
+	private void Update() { }
 
-private void NoteOffDelegate(MidiChannel channel, int note) { }
+	private void KnobDelegate(MidiChannel channel, int knobnumber, float knobvalue) { }
 
-private void NoteOnDelegate(MidiChannel channel, int note, float velocity) { }
+	private void NoteOffDelegate(MidiChannel channel, int note) { }
 
-private int ChannelToInt(MidiChannel channel) { }
+	private void NoteOnDelegate(MidiChannel channel, int note, float velocity) { }
 
-private static bool CanRunBinds() { }
+	private int ChannelToInt(MidiChannel channel) { }
 
-public void AddKnobBinding(int knob, string convar, float minValue, float maxValue, int channel) { }
+	private static bool CanRunBinds() { }
 
-public void AddKnobBinding(int knob, string convar, float rate, int channel) { }
+	public void AddKnobBinding(int knob, string convar, float minValue, float maxValue, int channel) { }
 
-public void AddNoteBinding(int note, string convar, MidiConvar.NoteType type, int channel, bool cycled) { }
+	public void AddKnobBinding(int knob, string convar, float rate, int channel) { }
 
-private bool RemoveBindingForKnob(int knob, int channel) { }
+	public void AddNoteBinding(int note, string convar, MidiConvar.NoteType type, int channel, bool cycled) { }
 
-private bool RemoveBindingForNote(int note, int channel, MidiConvar.NoteType t) { }
+	private bool RemoveBindingForKnob(int knob, int channel) { }
 
-private void SaveBindings() { }
+	private bool RemoveBindingForNote(int note, int channel, MidiConvar.NoteType t) { }
 
-private void LoadBindings() { }
+	private void SaveBindings() { }
 
-private string GetBindingsPath() { }
+	private void LoadBindings() { }
 
-private string PrintBindings() { }
+	private string GetBindingsPath() { }
 
-private void ClearAllBindings() { }
+	private string PrintBindings() { }
 
-public void .ctor() { }
+	private void ClearAllBindings() { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum MidiConvar.NoteType // TypeDefIndex: 9313
 {
 	public int value__; 
-public const MidiConvar.NoteType NoteOn = 0;
-public const MidiConvar.NoteType NoteOff = 1;
+	public const MidiConvar.NoteType NoteOn = 0;
+	public const MidiConvar.NoteType NoteOff = 1;
 
 }
 

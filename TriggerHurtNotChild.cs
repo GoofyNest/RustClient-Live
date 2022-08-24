@@ -15,7 +15,7 @@ public class TriggerHurtNotChild : TriggerBase, IServerComponent, IHurtTrigger /
 	public float activationDelay; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

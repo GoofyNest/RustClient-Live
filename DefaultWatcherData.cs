@@ -11,7 +11,7 @@ internal class DefaultWatcherData // TypeDefIndex: 2839
 	public Hashtable Files; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

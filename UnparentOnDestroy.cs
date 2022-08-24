@@ -3,11 +3,11 @@ public class UnparentOnDestroy : MonoBehaviour, IOnParentDestroying // TypeDefIn
 	public float destroyAfterSeconds; 
 
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-protected void OnValidate() { }
+	protected void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

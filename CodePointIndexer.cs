@@ -6,9 +6,9 @@ internal class CodePointIndexer // TypeDefIndex: 29
 	private int defaultCP; 
 
 
-public void .ctor(int[] starts, int[] ends, int defaultIndex, int defaultCP) { }
+	public void .ctor(int[] starts, int[] ends, int defaultIndex, int defaultCP) { }
 
-public int ToIndex(int cp) { }
+	public int ToIndex(int cp) { }
 
 }
 
@@ -21,7 +21,7 @@ internal struct CodePointIndexer.TableRange // TypeDefIndex: 30
 	public readonly int IndexEnd; 
 
 
-public void .ctor(int start, int end, int indexStart) { }
+	public void .ctor(int start, int end, int indexStart) { }
 
 }
 

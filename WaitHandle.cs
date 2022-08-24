@@ -1,69 +1,69 @@
 public abstract class WaitHandle : MarshalByRefObject, IDisposable // TypeDefIndex: 822
 {
-public const int WaitTimeout = 258;
-private const int MAX_WAITHANDLES = 64;
+	public const int WaitTimeout = 258;
+	private const int MAX_WAITHANDLES = 64;
 	private IntPtr waitHandle; 
 	internal SafeWaitHandle safeWaitHandle; 
 	internal bool hasThreadAffinity; 
-private const int WAIT_OBJECT_0 = 0;
-private const int WAIT_ABANDONED = 128;
-private const int WAIT_FAILED = 2147483647;
-private const int ERROR_TOO_MANY_POSTS = 298;
+	private const int WAIT_OBJECT_0 = 0;
+	private const int WAIT_ABANDONED = 128;
+	private const int WAIT_FAILED = 2147483647;
+	private const int ERROR_TOO_MANY_POSTS = 298;
 	protected static readonly IntPtr InvalidHandle; 
-internal const int MaxWaitHandles = 64;
+	internal const int MaxWaitHandles = 64;
 
 	[ObsoleteAttribute] 
-public virtual IntPtr Handle { set; }
-public SafeWaitHandle SafeWaitHandle { get; set; }
+	public virtual IntPtr Handle { set; }
+	public SafeWaitHandle SafeWaitHandle { get; set; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private void Init() { }
+	private void Init() { }
 
-public virtual void set_Handle(IntPtr value) { }
-
-	[ReliabilityContractAttribute] 
-public SafeWaitHandle get_SafeWaitHandle() { }
+	public virtual void set_Handle(IntPtr value) { }
 
 	[ReliabilityContractAttribute] 
-public void set_SafeWaitHandle(SafeWaitHandle value) { }
-
-internal void SetHandleInternal(SafeWaitHandle handle) { }
-
-public virtual bool WaitOne(int millisecondsTimeout, bool exitContext) { }
-
-public virtual bool WaitOne() { }
-
-public virtual bool WaitOne(int millisecondsTimeout) { }
-
-private bool WaitOne(long timeout, bool exitContext) { }
-
-internal static bool InternalWaitOne(SafeHandle waitableSafeHandle, long millisecondsTimeout, bool hasThreadAffinity, bool exitContext) { }
+	public SafeWaitHandle get_SafeWaitHandle() { }
 
 	[ReliabilityContractAttribute] 
-public static int WaitAny(WaitHandle[] waitHandles, int millisecondsTimeout, bool exitContext) { }
+	public void set_SafeWaitHandle(SafeWaitHandle value) { }
+
+	internal void SetHandleInternal(SafeWaitHandle handle) { }
+
+	public virtual bool WaitOne(int millisecondsTimeout, bool exitContext) { }
+
+	public virtual bool WaitOne() { }
+
+	public virtual bool WaitOne(int millisecondsTimeout) { }
+
+	private bool WaitOne(long timeout, bool exitContext) { }
+
+	internal static bool InternalWaitOne(SafeHandle waitableSafeHandle, long millisecondsTimeout, bool hasThreadAffinity, bool exitContext) { }
 
 	[ReliabilityContractAttribute] 
-public static int WaitAny(WaitHandle[] waitHandles, TimeSpan timeout, bool exitContext) { }
+	public static int WaitAny(WaitHandle[] waitHandles, int millisecondsTimeout, bool exitContext) { }
 
-private static void ThrowAbandonedMutexException() { }
+	[ReliabilityContractAttribute] 
+	public static int WaitAny(WaitHandle[] waitHandles, TimeSpan timeout, bool exitContext) { }
 
-private static void ThrowAbandonedMutexException(int location, WaitHandle handle) { }
+	private static void ThrowAbandonedMutexException() { }
 
-public virtual void Close() { }
+	private static void ThrowAbandonedMutexException(int location, WaitHandle handle) { }
 
-protected virtual void Dispose(bool explicitDisposing) { }
+	public virtual void Close() { }
 
-public void Dispose() { }
+	protected virtual void Dispose(bool explicitDisposing) { }
 
-private static int WaitMultiple(WaitHandle[] waitHandles, int millisecondsTimeout, bool exitContext, bool WaitAll) { }
+	public void Dispose() { }
 
-private static int WaitOneNative(SafeHandle waitableSafeHandle, uint millisecondsTimeout, bool hasThreadAffinity, bool exitContext) { }
+	private static int WaitMultiple(WaitHandle[] waitHandles, int millisecondsTimeout, bool exitContext, bool WaitAll) { }
 
-private static int Wait_internal(IntPtr* handles, int numHandles, bool waitAll, int ms) { }
+	private static int WaitOneNative(SafeHandle waitableSafeHandle, uint millisecondsTimeout, bool hasThreadAffinity, bool exitContext) { }
 
-private static void .cctor() { }
+	private static int Wait_internal(IntPtr* handles, int numHandles, bool waitAll, int ms) { }
+
+	private static void .cctor() { }
 
 }
 

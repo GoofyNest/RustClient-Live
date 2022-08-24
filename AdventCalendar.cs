@@ -12,30 +12,30 @@ public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 8304
 	public GameObjectRef giftEffect; 
 	public GameObjectRef boxCloseEffect; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_OpenCalendar(BasePlayer player) { }
+	public void Menu_OpenCalendar(BasePlayer player) { }
 
-public bool Menu_OpenCalendar_ShowIf(BasePlayer player) { }
+	public bool Menu_OpenCalendar_ShowIf(BasePlayer player) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void CheckCrosses() { }
+	public void CheckCrosses() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -44,7 +44,7 @@ public class AdventCalendar.DayReward // TypeDefIndex: 8305
 	public ItemAmount[] rewards; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

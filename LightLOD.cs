@@ -18,37 +18,37 @@ public class LightLOD : MonoBehaviour, ILOD, IClientComponent // TypeDefIndex: 1
 	private static int updateIndex; 
 
 
-private int GetMaxLightCount() { }
+	private int GetMaxLightCount() { }
 
-private List<LightLOD> GetCurrentLights() { }
+	private List<LightLOD> GetCurrentLights() { }
 
-private void FadeIn() { }
+	private void FadeIn() { }
 
-private void FadeOut() { }
+	private void FadeOut() { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public static void ClearAll() { }
+	public static void ClearAll() { }
 
-public static void UpdateAll() { }
+	public static void UpdateAll() { }
 
-private void UpdateLight(float lightIntensity, float shadowIntensity) { }
+	private void UpdateLight(float lightIntensity, float shadowIntensity) { }
 
-private void UpdateLight() { }
+	private void UpdateLight() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-protected void OnValidate() { }
+	protected void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

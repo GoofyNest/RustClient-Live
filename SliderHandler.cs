@@ -12,61 +12,61 @@ internal struct SliderHandler // TypeDefIndex: 4060
 	private readonly int id; 
 
 
-public void .ctor(Rect position, float currentValue, float size, float start, float end, GUIStyle slider, GUIStyle thumb, bool horiz, int id, GUIStyle thumbExtent) { }
+	public void .ctor(Rect position, float currentValue, float size, float start, float end, GUIStyle slider, GUIStyle thumb, bool horiz, int id, GUIStyle thumbExtent) { }
 
-public float Handle() { }
+	public float Handle() { }
 
-private float OnMouseDown() { }
+	private float OnMouseDown() { }
 
-private float OnMouseDrag() { }
+	private float OnMouseDrag() { }
 
-private float OnMouseUp() { }
+	private float OnMouseUp() { }
 
-private float OnRepaint() { }
+	private float OnRepaint() { }
 
-private EventType CurrentEventType() { }
+	private EventType CurrentEventType() { }
 
-private int CurrentScrollTroughSide() { }
+	private int CurrentScrollTroughSide() { }
 
-private bool IsEmptySlider() { }
+	private bool IsEmptySlider() { }
 
-private bool SupportsPageMovements() { }
+	private bool SupportsPageMovements() { }
 
-private float PageMovementValue() { }
+	private float PageMovementValue() { }
 
-private float PageUpMovementBound() { }
+	private float PageUpMovementBound() { }
 
-private Event CurrentEvent() { }
+	private Event CurrentEvent() { }
 
-private float ValueForCurrentMousePosition() { }
+	private float ValueForCurrentMousePosition() { }
 
-private float Clamp(float value) { }
+	private float Clamp(float value) { }
 
-private Rect ThumbSelectionRect() { }
+	private Rect ThumbSelectionRect() { }
 
-private void StartDraggingWithValue(float dragStartValue) { }
+	private void StartDraggingWithValue(float dragStartValue) { }
 
-private SliderState SliderState() { }
+	private SliderState SliderState() { }
 
-private Rect ThumbExtRect() { }
+	private Rect ThumbExtRect() { }
 
-private Rect ThumbRect() { }
+	private Rect ThumbRect() { }
 
-private Rect VerticalThumbRect() { }
+	private Rect VerticalThumbRect() { }
 
-private Rect HorizontalThumbRect() { }
+	private Rect HorizontalThumbRect() { }
 
-private float ClampedCurrentValue() { }
+	private float ClampedCurrentValue() { }
 
-private float MousePosition() { }
+	private float MousePosition() { }
 
-private float ValuesPerPixel() { }
+	private float ValuesPerPixel() { }
 
-private float ThumbSize() { }
+	private float ThumbSize() { }
 
-private float MaxValue() { }
+	private float MaxValue() { }
 
-private float MinValue() { }
+	private float MinValue() { }
 
 }
 

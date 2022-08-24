@@ -13,33 +13,33 @@ public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7033
 	public float MaxWidth; 
 	private object[] localizationArguments; 
 
-public string LanguageToken { get; }
-public string LanguageEnglish { get; }
+	public string LanguageToken { get; }
+	public string LanguageEnglish { get; }
 
 
-public string get_LanguageToken() { }
+	public string get_LanguageToken() { }
 
-public string get_LanguageEnglish() { }
+	public string get_LanguageEnglish() { }
 
-public void SetPhrase(Translate.Phrase phrase) { }
+	public void SetPhrase(Translate.Phrase phrase) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void SetPhraseArguments(object[] args) { }
+	public void SetPhraseArguments(object[] args) { }
 
-public void SetText(string str) { }
+	public void SetText(string str) { }
 
-public void DoAutoSize() { }
+	public void DoAutoSize() { }
 
-public override void Rebuild(CanvasUpdate update) { }
+	public override void Rebuild(CanvasUpdate update) { }
 
-private string GetLocalizedText(bool englishVersion) { }
+	private string GetLocalizedText(bool englishVersion) { }
 
-private void UpdateLocalizedText(bool forceEnglish) { }
+	private void UpdateLocalizedText(bool forceEnglish) { }
 
-public static void OnLanguageChanged() { }
+	public static void OnLanguageChanged() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

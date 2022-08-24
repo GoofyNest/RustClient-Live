@@ -9,31 +9,31 @@ public class DiamondGraph : UIPrimitiveBase // TypeDefIndex: 11711
 	[SerializeField] 
 	private float m_d; 
 
-public float A { get; set; }
-public float B { get; set; }
-public float C { get; set; }
-public float D { get; set; }
+	public float A { get; set; }
+	public float B { get; set; }
+	public float C { get; set; }
+	public float D { get; set; }
 
 
-public float get_A() { }
+	public float get_A() { }
 
-public void set_A(float value) { }
+	public void set_A(float value) { }
 
-public float get_B() { }
+	public float get_B() { }
 
-public void set_B(float value) { }
+	public void set_B(float value) { }
 
-public float get_C() { }
+	public float get_C() { }
 
-public void set_C(float value) { }
+	public void set_C(float value) { }
 
-public float get_D() { }
+	public float get_D() { }
 
-public void set_D(float value) { }
+	public void set_D(float value) { }
 
-protected override void OnPopulateMesh(VertexHelper vh) { }
+	protected override void OnPopulateMesh(VertexHelper vh) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -29,17 +29,17 @@ public class ERSOMarkerExt : ScriptableObject // TypeDefIndex: 7237
 	public ERSOMarkerExt otherSide; 
 
 
-public void Init(SideObject so, bool flag) { }
+	public void Init(SideObject so, bool flag) { }
 
-public void OODOOOQQCO(ERSOMarkerExt source) { }
+	public void OODOOOQQCO(ERSOMarkerExt source) { }
 
-public void Copy(ERSOMarkerExt source) { }
+	public void Copy(ERSOMarkerExt source) { }
 
-public static ERSOMarkerExt CreateInstance(SideObject so, bool flag) { }
+	public static ERSOMarkerExt CreateInstance(SideObject so, bool flag) { }
 
-public void ODCOCDOOCQ(SideObject so) { }
+	public void ODCOCDOOCQ(SideObject so) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

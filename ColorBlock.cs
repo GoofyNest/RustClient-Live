@@ -22,55 +22,55 @@ public struct ColorBlock : IEquatable<ColorBlock> // TypeDefIndex: 4911
 	[SerializeField] 
 	private float m_FadeDuration; 
 
-public Color normalColor { get; set; }
-public Color highlightedColor { get; set; }
-public Color pressedColor { get; set; }
-public Color selectedColor { get; set; }
-public Color disabledColor { get; set; }
-public float colorMultiplier { get; set; }
-public float fadeDuration { get; set; }
-public static ColorBlock defaultColorBlock { get; }
+	public Color normalColor { get; set; }
+	public Color highlightedColor { get; set; }
+	public Color pressedColor { get; set; }
+	public Color selectedColor { get; set; }
+	public Color disabledColor { get; set; }
+	public float colorMultiplier { get; set; }
+	public float fadeDuration { get; set; }
+	public static ColorBlock defaultColorBlock { get; }
 
 
-public Color get_normalColor() { }
+	public Color get_normalColor() { }
 
-public void set_normalColor(Color value) { }
+	public void set_normalColor(Color value) { }
 
-public Color get_highlightedColor() { }
+	public Color get_highlightedColor() { }
 
-public void set_highlightedColor(Color value) { }
+	public void set_highlightedColor(Color value) { }
 
-public Color get_pressedColor() { }
+	public Color get_pressedColor() { }
 
-public void set_pressedColor(Color value) { }
+	public void set_pressedColor(Color value) { }
 
-public Color get_selectedColor() { }
+	public Color get_selectedColor() { }
 
-public void set_selectedColor(Color value) { }
+	public void set_selectedColor(Color value) { }
 
-public Color get_disabledColor() { }
+	public Color get_disabledColor() { }
 
-public void set_disabledColor(Color value) { }
+	public void set_disabledColor(Color value) { }
 
-public float get_colorMultiplier() { }
+	public float get_colorMultiplier() { }
 
-public void set_colorMultiplier(float value) { }
+	public void set_colorMultiplier(float value) { }
 
-public float get_fadeDuration() { }
+	public float get_fadeDuration() { }
 
-public void set_fadeDuration(float value) { }
+	public void set_fadeDuration(float value) { }
 
-public static ColorBlock get_defaultColorBlock() { }
+	public static ColorBlock get_defaultColorBlock() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(ColorBlock other) { }
+	public bool Equals(ColorBlock other) { }
 
-public static bool op_Equality(ColorBlock point1, ColorBlock point2) { }
+	public static bool op_Equality(ColorBlock point1, ColorBlock point2) { }
 
-public static bool op_Inequality(ColorBlock point1, ColorBlock point2) { }
+	public static bool op_Inequality(ColorBlock point1, ColorBlock point2) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

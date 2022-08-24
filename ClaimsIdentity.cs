@@ -22,59 +22,59 @@ public class ClaimsIdentity : IIdentity // TypeDefIndex: 935
 	[OptionalFieldAttribute] 
 	private string m_serializedClaims; 
 
-public virtual string AuthenticationType { get; }
-public ClaimsIdentity Actor { get; set; }
-public virtual IEnumerable<Claim> Claims { get; }
-public virtual string Name { get; }
+	public virtual string AuthenticationType { get; }
+	public ClaimsIdentity Actor { get; set; }
+	public virtual IEnumerable<Claim> Claims { get; }
+	public virtual string Name { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(IEnumerable<Claim> claims) { }
+	public void .ctor(IEnumerable<Claim> claims) { }
 
-public void .ctor(IIdentity identity, IEnumerable<Claim> claims, string authenticationType, string nameType, string roleType) { }
+	public void .ctor(IIdentity identity, IEnumerable<Claim> claims, string authenticationType, string nameType, string roleType) { }
 
-internal void .ctor(IIdentity identity, IEnumerable<Claim> claims, string authenticationType, string nameType, string roleType, bool checkAuthType) { }
+	internal void .ctor(IIdentity identity, IEnumerable<Claim> claims, string authenticationType, string nameType, string roleType, bool checkAuthType) { }
 
-protected void .ctor(SerializationInfo info, StreamingContext context) { }
+	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public virtual string get_AuthenticationType() { }
+	public virtual string get_AuthenticationType() { }
 
-public ClaimsIdentity get_Actor() { }
+	public ClaimsIdentity get_Actor() { }
 
-public void set_Actor(ClaimsIdentity value) { }
+	public void set_Actor(ClaimsIdentity value) { }
 
 	[IteratorStateMachineAttribute] 
-public virtual IEnumerable<Claim> get_Claims() { }
+	public virtual IEnumerable<Claim> get_Claims() { }
 
-public virtual string get_Name() { }
+	public virtual string get_Name() { }
 
-public virtual ClaimsIdentity Clone() { }
+	public virtual ClaimsIdentity Clone() { }
 
-private void SafeAddClaims(IEnumerable<Claim> claims) { }
+	private void SafeAddClaims(IEnumerable<Claim> claims) { }
 
-private void SafeAddClaim(Claim claim) { }
+	private void SafeAddClaim(Claim claim) { }
 
-public virtual Claim FindFirst(string type) { }
+	public virtual Claim FindFirst(string type) { }
 
 	[OnSerializingAttribute] 
-private void OnSerializingMethod(StreamingContext context) { }
+	private void OnSerializingMethod(StreamingContext context) { }
 
 	[OnDeserializedAttribute] 
-private void OnDeserializedMethod(StreamingContext context) { }
+	private void OnDeserializedMethod(StreamingContext context) { }
 
 	[OnDeserializingAttribute] 
-private void OnDeserializingMethod(StreamingContext context) { }
+	private void OnDeserializingMethod(StreamingContext context) { }
 
-protected virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	protected virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-private void DeserializeClaims(string serializedClaims) { }
+	private void DeserializeClaims(string serializedClaims) { }
 
-private string SerializeClaims() { }
+	private string SerializeClaims() { }
 
-private bool IsCircular(ClaimsIdentity subject) { }
+	private bool IsCircular(ClaimsIdentity subject) { }
 
-private void Deserialize(SerializationInfo info, StreamingContext context, bool useContext) { }
+	private void Deserialize(SerializationInfo info, StreamingContext context, bool useContext) { }
 
 }
 
@@ -88,34 +88,34 @@ private sealed class ClaimsIdentity.<get_Claims>d__51 : IEnumerable<Claim>, IEnu
 	private int <j>5__2; 
 	private IEnumerator<Claim> <>7__wrap1; 
 
-private Claim System.Collections.Generic.IEnumerator<System.Security.Claims.Claim>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private Claim System.Collections.Generic.IEnumerator<System.Security.Claims.Claim>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
-
-	[DebuggerHiddenAttribute] 
-private Claim System.Collections.Generic.IEnumerator<System.Security.Claims.Claim>.get_Current() { }
+	private void <>m__Finally1() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private Claim System.Collections.Generic.IEnumerator<System.Security.Claims.Claim>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<Claim> System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<Claim> System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 

@@ -6,33 +6,33 @@ public sealed class MidiTimeCodeEvent : SystemCommonEvent // TypeDefIndex: 7562
 	[CompilerGeneratedAttribute] 
 	private FourBitNumber <ComponentValue>k__BackingField; 
 
-public MidiTimeCodeComponent Component { get; set; }
-public FourBitNumber ComponentValue { get; set; }
+	public MidiTimeCodeComponent Component { get; set; }
+	public FourBitNumber ComponentValue { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(MidiTimeCodeComponent component, FourBitNumber componentValue) { }
-
-	[CompilerGeneratedAttribute] 
-public MidiTimeCodeComponent get_Component() { }
+	public void .ctor(MidiTimeCodeComponent component, FourBitNumber componentValue) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Component(MidiTimeCodeComponent value) { }
+	public MidiTimeCodeComponent get_Component() { }
 
 	[CompilerGeneratedAttribute] 
-public FourBitNumber get_ComponentValue() { }
+	public void set_Component(MidiTimeCodeComponent value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ComponentValue(FourBitNumber value) { }
+	public FourBitNumber get_ComponentValue() { }
 
-internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
+	[CompilerGeneratedAttribute] 
+	public void set_ComponentValue(FourBitNumber value) { }
 
-protected override MidiEvent CloneEvent() { }
+	internal override void Read(MidiReader reader, ReadingSettings settings, int size) { }
 
-public override string ToString() { }
+	protected override MidiEvent CloneEvent() { }
 
-private static void .cctor() { }
+	public override string ToString() { }
+
+	private static void .cctor() { }
 
 }
 

@@ -14,57 +14,57 @@ public class BradleyAPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 	public Vector3 rightSideGun2; 
 
 
-public static void ResetToPool(BradleyAPC instance) { }
+	public static void ResetToPool(BradleyAPC instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(BradleyAPC instance) { }
+	public void CopyTo(BradleyAPC instance) { }
 
-public BradleyAPC Copy() { }
+	public BradleyAPC Copy() { }
 
-public static BradleyAPC Deserialize(Stream stream) { }
+	public static BradleyAPC Deserialize(Stream stream) { }
 
-public static BradleyAPC DeserializeLengthDelimited(Stream stream) { }
+	public static BradleyAPC DeserializeLengthDelimited(Stream stream) { }
 
-public static BradleyAPC DeserializeLength(Stream stream, int length) { }
+	public static BradleyAPC DeserializeLength(Stream stream, int length) { }
 
-public static BradleyAPC Deserialize(byte[] buffer) { }
+	public static BradleyAPC Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, BradleyAPC previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, BradleyAPC previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static BradleyAPC Deserialize(byte[] buffer, BradleyAPC instance, bool isDelta = False) { }
+	public static BradleyAPC Deserialize(byte[] buffer, BradleyAPC instance, bool isDelta = False) { }
 
-public static BradleyAPC Deserialize(Stream stream, BradleyAPC instance, bool isDelta) { }
+	public static BradleyAPC Deserialize(Stream stream, BradleyAPC instance, bool isDelta) { }
 
-public static BradleyAPC DeserializeLengthDelimited(Stream stream, BradleyAPC instance, bool isDelta) { }
+	public static BradleyAPC DeserializeLengthDelimited(Stream stream, BradleyAPC instance, bool isDelta) { }
 
-public static BradleyAPC DeserializeLength(Stream stream, int length, BradleyAPC instance, bool isDelta) { }
+	public static BradleyAPC DeserializeLength(Stream stream, int length, BradleyAPC instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, BradleyAPC instance, BradleyAPC previous) { }
+	public static void SerializeDelta(Stream stream, BradleyAPC instance, BradleyAPC previous) { }
 
-public static void Serialize(Stream stream, BradleyAPC instance) { }
+	public static void Serialize(Stream stream, BradleyAPC instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(BradleyAPC instance) { }
+	public static byte[] SerializeToBytes(BradleyAPC instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, BradleyAPC instance) { }
+	public static void SerializeLengthDelimited(Stream stream, BradleyAPC instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -177,30 +177,30 @@ public class BradleyAPC : BaseCombatEntity // TypeDefIndex: 8536
 	public int navMeshPathIndex; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void InitializeClientsideEffects() { }
+	public void InitializeClientsideEffects() { }
 
-public void ShutdownClientsideEffects() { }
+	public void ShutdownClientsideEffects() { }
 
-public void UpdateSounds() { }
+	public void UpdateSounds() { }
 
 	[BaseEntity.RPC_Client] 
-public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
+	public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
 
-public void AimWeaponAt(Transform weaponYaw, Transform weaponPitch, Vector3 direction, float minPitch = -360, float maxPitch = 360, float maxYaw = 360, Transform parentOverride) { }
+	public void AimWeaponAt(Transform weaponYaw, Transform weaponPitch, Vector3 direction, float minPitch = -360, float maxPitch = 360, float maxYaw = 360, Transform parentOverride) { }
 
-public void LateUpdate() { }
+	public void LateUpdate() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -212,19 +212,19 @@ public class BradleyAPC.TargetInfo : Pool.IPooled // TypeDefIndex: 8537
 	public Vector3 lastSeenPosition; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void Setup(BaseEntity ent, float time) { }
+	public void Setup(BaseEntity ent, float time) { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public float GetPriorityScore(BradleyAPC apc) { }
+	public float GetPriorityScore(BradleyAPC apc) { }
 
-public bool IsVisible() { }
+	public bool IsVisible() { }
 
-public bool IsValid() { }
+	public bool IsValid() { }
 
 }
 

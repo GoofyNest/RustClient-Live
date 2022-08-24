@@ -13,11 +13,11 @@ public class ERSideWalkInstance // TypeDefIndex: 7222
 	public Vector3 endPos; 
 
 
-public void .ctor(ERSideWalk msidewalk, float mStart, float mEnd, Vector3 mStartPos, Vector3 mEndPos, ERModularRoad road, string side) { }
+	public void .ctor(ERSideWalk msidewalk, float mStart, float mEnd, Vector3 mStartPos, Vector3 mEndPos, ERModularRoad road, string side) { }
 
-public void CreateObject(ERModularRoad road, string side) { }
+	public void CreateObject(ERModularRoad road, string side) { }
 
-public void GetObject(ERModularRoad road, string side) { }
+	public void GetObject(ERModularRoad road, string side) { }
 
 }
 

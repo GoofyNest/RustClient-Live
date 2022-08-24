@@ -56,76 +56,76 @@ public class SupportedRenderingFeatures // TypeDefIndex: 3854
 	[DebuggerBrowsableAttribute] 
 	private bool <overridesMaximumLODLevel>k__BackingField; 
 
-public static SupportedRenderingFeatures active { get; set; }
-public SupportedRenderingFeatures.LightmapMixedBakeModes defaultMixedLightingModes { get; }
-public SupportedRenderingFeatures.LightmapMixedBakeModes mixedLightingModes { get; }
-public LightmapBakeType lightmapBakeTypes { get; }
-public LightmapsMode lightmapsModes { get; }
-public bool enlighten { get; }
+	public static SupportedRenderingFeatures active { get; set; }
+	public SupportedRenderingFeatures.LightmapMixedBakeModes defaultMixedLightingModes { get; }
+	public SupportedRenderingFeatures.LightmapMixedBakeModes mixedLightingModes { get; }
+	public LightmapBakeType lightmapBakeTypes { get; }
+	public LightmapsMode lightmapsModes { get; }
+	public bool enlighten { get; }
 
 
-public static SupportedRenderingFeatures get_active() { }
+	public static SupportedRenderingFeatures get_active() { }
 
-public static void set_active(SupportedRenderingFeatures value) { }
-
-	[CompilerGeneratedAttribute] 
-public SupportedRenderingFeatures.LightmapMixedBakeModes get_defaultMixedLightingModes() { }
+	public static void set_active(SupportedRenderingFeatures value) { }
 
 	[CompilerGeneratedAttribute] 
-public SupportedRenderingFeatures.LightmapMixedBakeModes get_mixedLightingModes() { }
+	public SupportedRenderingFeatures.LightmapMixedBakeModes get_defaultMixedLightingModes() { }
 
 	[CompilerGeneratedAttribute] 
-public LightmapBakeType get_lightmapBakeTypes() { }
+	public SupportedRenderingFeatures.LightmapMixedBakeModes get_mixedLightingModes() { }
 
 	[CompilerGeneratedAttribute] 
-public LightmapsMode get_lightmapsModes() { }
+	public LightmapBakeType get_lightmapBakeTypes() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_enlighten() { }
+	public LightmapsMode get_lightmapsModes() { }
+
+	[CompilerGeneratedAttribute] 
+	public bool get_enlighten() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void FallbackMixedLightingModeByRef(IntPtr fallbackModePtr) { }
+	internal static void FallbackMixedLightingModeByRef(IntPtr fallbackModePtr) { }
 
-internal static bool IsMixedLightingModeSupported(MixedLightingMode mixedMode) { }
-
-	[RequiredByNativeCodeAttribute] 
-internal static void IsMixedLightingModeSupportedByRef(MixedLightingMode mixedMode, IntPtr isSupportedPtr) { }
-
-internal static bool IsLightmapBakeTypeSupported(LightmapBakeType bakeType) { }
+	internal static bool IsMixedLightingModeSupported(MixedLightingMode mixedMode) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void IsLightmapBakeTypeSupportedByRef(LightmapBakeType bakeType, IntPtr isSupportedPtr) { }
+	internal static void IsMixedLightingModeSupportedByRef(MixedLightingMode mixedMode, IntPtr isSupportedPtr) { }
+
+	internal static bool IsLightmapBakeTypeSupported(LightmapBakeType bakeType) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void IsLightmapsModeSupportedByRef(LightmapsMode mode, IntPtr isSupportedPtr) { }
+	internal static void IsLightmapBakeTypeSupportedByRef(LightmapBakeType bakeType, IntPtr isSupportedPtr) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void IsLightmapperSupportedByRef(int lightmapper, IntPtr isSupportedPtr) { }
+	internal static void IsLightmapsModeSupportedByRef(LightmapsMode mode, IntPtr isSupportedPtr) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void FallbackLightmapperByRef(IntPtr lightmapperPtr) { }
+	internal static void IsLightmapperSupportedByRef(int lightmapper, IntPtr isSupportedPtr) { }
 
-public void .ctor() { }
+	[RequiredByNativeCodeAttribute] 
+	internal static void FallbackLightmapperByRef(IntPtr lightmapperPtr) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum SupportedRenderingFeatures.ReflectionProbeModes // TypeDefIndex: 3855
 {
 	public int value__; 
-public const SupportedRenderingFeatures.ReflectionProbeModes None = 0;
-public const SupportedRenderingFeatures.ReflectionProbeModes Rotation = 1;
+	public const SupportedRenderingFeatures.ReflectionProbeModes None = 0;
+	public const SupportedRenderingFeatures.ReflectionProbeModes Rotation = 1;
 
 }
 
 public enum SupportedRenderingFeatures.LightmapMixedBakeModes // TypeDefIndex: 3856
 {
 	public int value__; 
-public const SupportedRenderingFeatures.LightmapMixedBakeModes None = 0;
-public const SupportedRenderingFeatures.LightmapMixedBakeModes IndirectOnly = 1;
-public const SupportedRenderingFeatures.LightmapMixedBakeModes Subtractive = 2;
-public const SupportedRenderingFeatures.LightmapMixedBakeModes Shadowmask = 4;
+	public const SupportedRenderingFeatures.LightmapMixedBakeModes None = 0;
+	public const SupportedRenderingFeatures.LightmapMixedBakeModes IndirectOnly = 1;
+	public const SupportedRenderingFeatures.LightmapMixedBakeModes Subtractive = 2;
+	public const SupportedRenderingFeatures.LightmapMixedBakeModes Shadowmask = 4;
 
 }
 

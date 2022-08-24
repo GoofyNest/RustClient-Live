@@ -6,19 +6,19 @@ public class AlignedLineDrawerDecal : AlignedLineDrawer, INotifyLOD // TypeDefIn
 	private bool isLodShowing; 
 
 
-protected override void AssignMesh() { }
+	protected override void AssignMesh() { }
 
-public override void SetColour(Color c) { }
+	public override void SetColour(Color c) { }
 
-private Material GetColourMaterial(Color c) { }
+	private Material GetColourMaterial(Color c) { }
 
-public void Show() { }
+	public void Show() { }
 
-public void Hide() { }
+	public void Hide() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -9,7 +9,7 @@ public sealed class NativeContainerIsAtomicWriteOnlyAttribute : Attribute
 [AttributeUsageAttribute] 
 public sealed class NativeContainerSupportsMinMaxWriteRestrictionAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

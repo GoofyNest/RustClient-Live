@@ -9,11 +9,11 @@ public class GunModInformationPanel : ItemInformationPanel // TypeDefIndex: 1100
 	public ItemTextValue ammoDisplay; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

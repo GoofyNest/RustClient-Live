@@ -4,7 +4,7 @@ public class ERPrefab : MonoBehaviour // TypeDefIndex: 7288
 	public bool isSidewalk; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -38,180 +38,180 @@ internal sealed class XdrBuilder : SchemaBuilder // TypeDefIndex: 2291
 	private Hashtable _UndeclaredElements; 
 	private XmlResolver xmlResolver; 
 
-internal XmlResolver XmlResolver { set; }
+	internal XmlResolver XmlResolver { set; }
 
 
-internal void .ctor(XmlReader reader, XmlNamespaceManager curmgr, SchemaInfo sinfo, string targetNamspace, XmlNameTable nameTable, SchemaNames schemaNames, ValidationEventHandler eventhandler) { }
+	internal void .ctor(XmlReader reader, XmlNamespaceManager curmgr, SchemaInfo sinfo, string targetNamspace, XmlNameTable nameTable, SchemaNames schemaNames, ValidationEventHandler eventhandler) { }
 
-internal override bool ProcessElement(string prefix, string name, string ns) { }
+	internal override bool ProcessElement(string prefix, string name, string ns) { }
 
-internal override void ProcessAttribute(string prefix, string name, string ns, string value) { }
+	internal override void ProcessAttribute(string prefix, string name, string ns, string value) { }
 
-internal void set_XmlResolver(XmlResolver value) { }
+	internal void set_XmlResolver(XmlResolver value) { }
 
-private bool LoadSchema(string uri) { }
+	private bool LoadSchema(string uri) { }
 
-internal static bool IsXdrSchema(string uri) { }
+	internal static bool IsXdrSchema(string uri) { }
 
-internal override bool IsContentParsed() { }
+	internal override bool IsContentParsed() { }
 
-internal override void ProcessMarkup(XmlNode[] markup) { }
+	internal override void ProcessMarkup(XmlNode[] markup) { }
 
-internal override void ProcessCData(string value) { }
+	internal override void ProcessCData(string value) { }
 
-internal override void StartChildren() { }
+	internal override void StartChildren() { }
 
-internal override void EndChildren() { }
+	internal override void EndChildren() { }
 
-private void Push() { }
+	private void Push() { }
 
-private void Pop() { }
+	private void Pop() { }
 
-private void PushGroupInfo() { }
+	private void PushGroupInfo() { }
 
-private void PopGroupInfo() { }
+	private void PopGroupInfo() { }
 
-private static void XDR_InitRoot(XdrBuilder builder, object obj) { }
+	private static void XDR_InitRoot(XdrBuilder builder, object obj) { }
 
-private static void XDR_BuildRoot_Name(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildRoot_Name(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildRoot_ID(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildRoot_ID(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BeginRoot(XdrBuilder builder) { }
+	private static void XDR_BeginRoot(XdrBuilder builder) { }
 
-private static void XDR_EndRoot(XdrBuilder builder) { }
+	private static void XDR_EndRoot(XdrBuilder builder) { }
 
-private static void XDR_InitElementType(XdrBuilder builder, object obj) { }
+	private static void XDR_InitElementType(XdrBuilder builder, object obj) { }
 
-private static void XDR_BuildElementType_Name(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_Name(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_Content(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_Content(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_Model(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_Model(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_Order(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_Order(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_DtType(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_DtType(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_DtValues(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_DtValues(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_DtMaxLength(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_DtMaxLength(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElementType_DtMinLength(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElementType_DtMinLength(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BeginElementType(XdrBuilder builder) { }
+	private static void XDR_BeginElementType(XdrBuilder builder) { }
 
-private static void XDR_EndElementType(XdrBuilder builder) { }
+	private static void XDR_EndElementType(XdrBuilder builder) { }
 
-private static void XDR_InitAttributeType(XdrBuilder builder, object obj) { }
+	private static void XDR_InitAttributeType(XdrBuilder builder, object obj) { }
 
-private static void XDR_BuildAttributeType_Name(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_Name(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttributeType_Required(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_Required(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttributeType_Default(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_Default(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttributeType_DtType(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_DtType(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttributeType_DtValues(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_DtValues(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttributeType_DtMaxLength(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_DtMaxLength(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttributeType_DtMinLength(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttributeType_DtMinLength(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BeginAttributeType(XdrBuilder builder) { }
+	private static void XDR_BeginAttributeType(XdrBuilder builder) { }
 
-private static void XDR_EndAttributeType(XdrBuilder builder) { }
+	private static void XDR_EndAttributeType(XdrBuilder builder) { }
 
-private static void XDR_InitElement(XdrBuilder builder, object obj) { }
+	private static void XDR_InitElement(XdrBuilder builder, object obj) { }
 
-private static void XDR_BuildElement_Type(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElement_Type(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElement_MinOccurs(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElement_MinOccurs(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildElement_MaxOccurs(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildElement_MaxOccurs(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_EndElement(XdrBuilder builder) { }
+	private static void XDR_EndElement(XdrBuilder builder) { }
 
-private static void XDR_InitAttribute(XdrBuilder builder, object obj) { }
+	private static void XDR_InitAttribute(XdrBuilder builder, object obj) { }
 
-private static void XDR_BuildAttribute_Type(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttribute_Type(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttribute_Required(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttribute_Required(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildAttribute_Default(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildAttribute_Default(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BeginAttribute(XdrBuilder builder) { }
+	private static void XDR_BeginAttribute(XdrBuilder builder) { }
 
-private static void XDR_EndAttribute(XdrBuilder builder) { }
+	private static void XDR_EndAttribute(XdrBuilder builder) { }
 
-private static void XDR_InitGroup(XdrBuilder builder, object obj) { }
+	private static void XDR_InitGroup(XdrBuilder builder, object obj) { }
 
-private static void XDR_BuildGroup_Order(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildGroup_Order(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildGroup_MinOccurs(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildGroup_MinOccurs(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_BuildGroup_MaxOccurs(XdrBuilder builder, object obj, string prefix) { }
+	private static void XDR_BuildGroup_MaxOccurs(XdrBuilder builder, object obj, string prefix) { }
 
-private static void XDR_EndGroup(XdrBuilder builder) { }
+	private static void XDR_EndGroup(XdrBuilder builder) { }
 
-private static void XDR_InitElementDtType(XdrBuilder builder, object obj) { }
+	private static void XDR_InitElementDtType(XdrBuilder builder, object obj) { }
 
-private static void XDR_EndElementDtType(XdrBuilder builder) { }
+	private static void XDR_EndElementDtType(XdrBuilder builder) { }
 
-private static void XDR_InitAttributeDtType(XdrBuilder builder, object obj) { }
+	private static void XDR_InitAttributeDtType(XdrBuilder builder, object obj) { }
 
-private static void XDR_EndAttributeDtType(XdrBuilder builder) { }
+	private static void XDR_EndAttributeDtType(XdrBuilder builder) { }
 
-private bool GetNextState(XmlQualifiedName qname) { }
+	private bool GetNextState(XmlQualifiedName qname) { }
 
-private bool IsSkipableElement(XmlQualifiedName qname) { }
+	private bool IsSkipableElement(XmlQualifiedName qname) { }
 
-private bool IsSkipableAttribute(XmlQualifiedName qname) { }
+	private bool IsSkipableAttribute(XmlQualifiedName qname) { }
 
-private int GetOrder(XmlQualifiedName qname) { }
+	private int GetOrder(XmlQualifiedName qname) { }
 
-private void AddOrder() { }
+	private void AddOrder() { }
 
-private static bool IsYes(object obj, XdrBuilder builder) { }
+	private static bool IsYes(object obj, XdrBuilder builder) { }
 
-private static uint ParseMinOccurs(object obj, XdrBuilder builder) { }
+	private static uint ParseMinOccurs(object obj, XdrBuilder builder) { }
 
-private static uint ParseMaxOccurs(object obj, XdrBuilder builder) { }
+	private static uint ParseMaxOccurs(object obj, XdrBuilder builder) { }
 
-private static void HandleMinMax(ParticleContentValidator pContent, uint cMin, uint cMax) { }
+	private static void HandleMinMax(ParticleContentValidator pContent, uint cMin, uint cMax) { }
 
-private static void ParseDtMaxLength(ref uint cVal, object obj, XdrBuilder builder) { }
+	private static void ParseDtMaxLength(ref uint cVal, object obj, XdrBuilder builder) { }
 
-private static void ParseDtMinLength(ref uint cVal, object obj, XdrBuilder builder) { }
+	private static void ParseDtMinLength(ref uint cVal, object obj, XdrBuilder builder) { }
 
-private static void CompareMinMaxLength(uint cMin, uint cMax, XdrBuilder builder) { }
+	private static void CompareMinMaxLength(uint cMin, uint cMax, XdrBuilder builder) { }
 
-private static bool ParseInteger(string str, ref uint n) { }
+	private static bool ParseInteger(string str, ref uint n) { }
 
-private void XDR_CheckAttributeDefault(XdrBuilder.DeclBaseInfo decl, SchemaAttDef pAttdef) { }
+	private void XDR_CheckAttributeDefault(XdrBuilder.DeclBaseInfo decl, SchemaAttDef pAttdef) { }
 
-private void SetAttributePresence(SchemaAttDef pAttdef, bool fRequired) { }
+	private void SetAttributePresence(SchemaAttDef pAttdef, bool fRequired) { }
 
-private int GetContent(XmlQualifiedName qname) { }
+	private int GetContent(XmlQualifiedName qname) { }
 
-private bool GetModel(XmlQualifiedName qname) { }
+	private bool GetModel(XmlQualifiedName qname) { }
 
-private XmlSchemaDatatype CheckDatatype(string str) { }
+	private XmlSchemaDatatype CheckDatatype(string str) { }
 
-private void CheckDefaultAttValue(SchemaAttDef attDef) { }
+	private void CheckDefaultAttValue(SchemaAttDef attDef) { }
 
-private bool IsGlobal(int flags) { }
+	private bool IsGlobal(int flags) { }
 
-private void SendValidationEvent(string code, string[] args, XmlSeverityType severity) { }
+	private void SendValidationEvent(string code, string[] args, XmlSeverityType severity) { }
 
-private void SendValidationEvent(string code) { }
+	private void SendValidationEvent(string code) { }
 
-private void SendValidationEvent(string code, string msg) { }
+	private void SendValidationEvent(string code, string msg) { }
 
-private void SendValidationEvent(XmlSchemaException e, XmlSeverityType severity) { }
+	private void SendValidationEvent(XmlSchemaException e, XmlSeverityType severity) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -231,9 +231,9 @@ private sealed class XdrBuilder.DeclBaseInfo // TypeDefIndex: 2292
 	internal XdrBuilder.DeclBaseInfo _Next; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
 }
 
@@ -246,11 +246,11 @@ private sealed class XdrBuilder.GroupContent // TypeDefIndex: 2293
 	internal int _Order; 
 
 
-internal static void Copy(XdrBuilder.GroupContent from, XdrBuilder.GroupContent to) { }
+	internal static void Copy(XdrBuilder.GroupContent from, XdrBuilder.GroupContent to) { }
 
-internal static XdrBuilder.GroupContent Copy(XdrBuilder.GroupContent other) { }
+	internal static XdrBuilder.GroupContent Copy(XdrBuilder.GroupContent other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -272,7 +272,7 @@ private sealed class XdrBuilder.ElementContent // TypeDefIndex: 2294
 	internal Hashtable _AttDefList; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -292,59 +292,59 @@ private sealed class XdrBuilder.AttributeContent // TypeDefIndex: 2295
 	internal object _Default; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private sealed class XdrBuilder.XdrBuildFunction : MulticastDelegate // TypeDefIndex: 2296
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(XdrBuilder builder, object obj, string prefix) { }
+	public virtual void Invoke(XdrBuilder builder, object obj, string prefix) { }
 
-public virtual IAsyncResult BeginInvoke(XdrBuilder builder, object obj, string prefix, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(XdrBuilder builder, object obj, string prefix, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 private sealed class XdrBuilder.XdrInitFunction : MulticastDelegate // TypeDefIndex: 2297
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(XdrBuilder builder, object obj) { }
+	public virtual void Invoke(XdrBuilder builder, object obj) { }
 
-public virtual IAsyncResult BeginInvoke(XdrBuilder builder, object obj, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(XdrBuilder builder, object obj, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 private sealed class XdrBuilder.XdrBeginChildFunction : MulticastDelegate // TypeDefIndex: 2298
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(XdrBuilder builder) { }
+	public virtual void Invoke(XdrBuilder builder) { }
 
-public virtual IAsyncResult BeginInvoke(XdrBuilder builder, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(XdrBuilder builder, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 private sealed class XdrBuilder.XdrEndChildFunction : MulticastDelegate // TypeDefIndex: 2299
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(XdrBuilder builder) { }
+	public virtual void Invoke(XdrBuilder builder) { }
 
-public virtual IAsyncResult BeginInvoke(XdrBuilder builder, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(XdrBuilder builder, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
@@ -356,9 +356,9 @@ private sealed class XdrBuilder.XdrAttributeEntry // TypeDefIndex: 2300
 	internal XdrBuilder.XdrBuildFunction _BuildFunc; 
 
 
-internal void .ctor(SchemaNames.Token a, XmlTokenizedType ttype, XdrBuilder.XdrBuildFunction build) { }
+	internal void .ctor(SchemaNames.Token a, XmlTokenizedType ttype, XdrBuilder.XdrBuildFunction build) { }
 
-internal void .ctor(SchemaNames.Token a, XmlTokenizedType ttype, int schemaFlags, XdrBuilder.XdrBuildFunction build) { }
+	internal void .ctor(SchemaNames.Token a, XmlTokenizedType ttype, int schemaFlags, XdrBuilder.XdrBuildFunction build) { }
 
 }
 
@@ -373,7 +373,7 @@ private sealed class XdrBuilder.XdrEntry // TypeDefIndex: 2301
 	internal bool _AllowText; 
 
 
-internal void .ctor(SchemaNames.Token n, int[] states, XdrBuilder.XdrAttributeEntry[] attributes, XdrBuilder.XdrInitFunction init, XdrBuilder.XdrBeginChildFunction begin, XdrBuilder.XdrEndChildFunction end, bool fText) { }
+	internal void .ctor(SchemaNames.Token n, int[] states, XdrBuilder.XdrAttributeEntry[] attributes, XdrBuilder.XdrInitFunction init, XdrBuilder.XdrBeginChildFunction begin, XdrBuilder.XdrEndChildFunction end, bool fText) { }
 
 }
 

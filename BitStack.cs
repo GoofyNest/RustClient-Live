@@ -5,17 +5,17 @@ internal class BitStack // TypeDefIndex: 1830
 	private uint curr; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void PushBit(bool bit) { }
+	public void PushBit(bool bit) { }
 
-public bool PopBit() { }
+	public bool PopBit() { }
 
-public bool PeekBit() { }
+	public bool PeekBit() { }
 
-private void PushCurr() { }
+	private void PushCurr() { }
 
-private void PopCurr() { }
+	private void PopCurr() { }
 
 }
 

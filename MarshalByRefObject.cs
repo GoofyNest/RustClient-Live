@@ -2,18 +2,18 @@ public abstract class MarshalByRefObject // TypeDefIndex: 371
 {
 	private object _identity; 
 
-internal ServerIdentity ObjectIdentity { get; set; }
+	internal ServerIdentity ObjectIdentity { get; set; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-internal ServerIdentity get_ObjectIdentity() { }
+	internal ServerIdentity get_ObjectIdentity() { }
 
-internal void set_ObjectIdentity(ServerIdentity value) { }
+	internal void set_ObjectIdentity(ServerIdentity value) { }
 
-public virtual ObjRef CreateObjRef(Type requestedType) { }
+	public virtual ObjRef CreateObjRef(Type requestedType) { }
 
-public virtual object InitializeLifetimeService() { }
+	public virtual object InitializeLifetimeService() { }
 
 }
 

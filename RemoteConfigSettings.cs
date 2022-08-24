@@ -7,7 +7,7 @@ public class RemoteConfigSettings // TypeDefIndex: 4743
 
 
 	[RequiredByNativeCodeAttribute] 
-internal static void RemoteConfigSettingsUpdated(RemoteConfigSettings rcs, bool wasLastUpdatedFromServer) { }
+	internal static void RemoteConfigSettingsUpdated(RemoteConfigSettings rcs, bool wasLastUpdatedFromServer) { }
 
 }
 

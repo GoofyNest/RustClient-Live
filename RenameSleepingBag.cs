@@ -4,17 +4,17 @@ public class RenameSleepingBag : UIDialog // TypeDefIndex: 10908
 	public SleepingBag bag; 
 
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-public void SelectTextField() { }
+	public void SelectTextField() { }
 
-public void DoRename() { }
+	public void DoRename() { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public void OnTextFieldEnd() { }
+	public void OnTextFieldEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

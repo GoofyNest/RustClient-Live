@@ -4,7 +4,7 @@ public class FishingBobber : BaseCombatEntity // TypeDefIndex: 8868
 	public Rigidbody myRigidBody; 
 	public Transform lineAttachPoint; 
 	public Transform bobberRoot; 
-public const BaseEntity.Flags CaughtFish = 128;
+	public const BaseEntity.Flags CaughtFish = 128;
 	public float HorizontalMoveSpeed; 
 	public float PullAwayMoveSpeed; 
 	public float SidewaysInputForce; 
@@ -13,9 +13,9 @@ public const BaseEntity.Flags CaughtFish = 128;
 	private Vector3 lastPosition; 
 
 
-public void UpdateWithCurrentState(BaseFishingRod.FishState state) { }
+	public void UpdateWithCurrentState(BaseFishingRod.FishState state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

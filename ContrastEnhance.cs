@@ -9,11 +9,11 @@ internal class ContrastEnhance : PostEffectsBase // TypeDefIndex: 8174
 	public Shader contrastCompositeShader; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,32 +8,32 @@ public sealed class DSACryptoServiceProvider : DSA // TypeDefIndex: 1005
 	private DSAManaged dsa; 
 	private static bool useMachineKeyStore; 
 
-public override int KeySize { get; }
+	public override int KeySize { get; }
 	[ComVisibleAttribute] 
-public bool PublicOnly { get; }
+	public bool PublicOnly { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(int dwKeySize) { }
+	public void .ctor(int dwKeySize) { }
 
-private void Common(int dwKeySize, bool parameters) { }
+	private void Common(int dwKeySize, bool parameters) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public override int get_KeySize() { }
+	public override int get_KeySize() { }
 
-public bool get_PublicOnly() { }
+	public bool get_PublicOnly() { }
 
-public override DSAParameters ExportParameters(bool includePrivateParameters) { }
+	public override DSAParameters ExportParameters(bool includePrivateParameters) { }
 
-public override void ImportParameters(DSAParameters parameters) { }
+	public override void ImportParameters(DSAParameters parameters) { }
 
-public override bool VerifySignature(byte[] rgbHash, byte[] rgbSignature) { }
+	public override bool VerifySignature(byte[] rgbHash, byte[] rgbSignature) { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-private void OnKeyGenerated(object sender, EventArgs e) { }
+	private void OnKeyGenerated(object sender, EventArgs e) { }
 
 }
 

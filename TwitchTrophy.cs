@@ -4,19 +4,19 @@ public class TwitchTrophy : BaseCombatEntity // TypeDefIndex: 8476
 	[HeaderAttribute] 
 	public GameObjectRef DialogPrefab; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
-public void Menu_OpenTrophy(BasePlayer player) { }
+	public void Menu_OpenTrophy(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

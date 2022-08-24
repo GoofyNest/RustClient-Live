@@ -7,21 +7,21 @@ public struct Vector3b : IEquatable<Vector3b> // TypeDefIndex: 4822
 	public bool z; 
 
 
-public void .ctor(bool x, bool y, bool z) { }
+	public void .ctor(bool x, bool y, bool z) { }
 
-public static bool op_Equality(Vector3b a, Vector3b b) { }
+	public static bool op_Equality(Vector3b a, Vector3b b) { }
 
-public static bool op_Inequality(Vector3b a, Vector3b b) { }
+	public static bool op_Inequality(Vector3b a, Vector3b b) { }
 
-public bool Equals(Vector3b o) { }
+	public bool Equals(Vector3b o) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

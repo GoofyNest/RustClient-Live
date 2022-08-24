@@ -182,57 +182,57 @@ public class ERCrossings : MonoBehaviour // TypeDefIndex: 7169
 	public int updateQueue; 
 
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void ODOCCDCQOC() { }
+	public void ODOCCDCQOC() { }
 
-public Vector3 OOQCQDQCOO(int index, Vector3 p0, Vector3 p1, Vector3 p2, bool update) { }
+	public Vector3 OOQCQDQCOO(int index, Vector3 p0, Vector3 p1, Vector3 p2, bool update) { }
 
-public void UpdateAllConnectionAngles() { }
+	public void UpdateAllConnectionAngles() { }
 
-public void OOOCDCQQCO() { }
+	public void OOOCDCQQCO() { }
 
-public bool UpdateToRoadType(QDQDOOQQDQODD sourcePreset, ref List<ERModularRoad> updatedRoads) { }
+	public bool UpdateToRoadType(QDQDOOQQDQODD sourcePreset, ref List<ERModularRoad> updatedRoads) { }
 
-public bool RoadIsUpdated(ERModularRoad rd, ref List<ERModularRoad> updatedRoads) { }
+	public bool RoadIsUpdated(ERModularRoad rd, ref List<ERModularRoad> updatedRoads) { }
 
-public int SetRoadTypeInt(double id) { }
+	public int SetRoadTypeInt(double id) { }
 
-public void OCQCQODOQC(ERCrossings source, bool refreshFlag) { }
+	public void OCQCQODOQC(ERCrossings source, bool refreshFlag) { }
 
-public void OQCQCOOCDD() { }
+	public void OQCQCOOCDD() { }
 
-public void OCQDQODOQD(bool sidewalkSceneHandleFlag, bool rebuildRoads) { }
+	public void OCQDQODOQD(bool sidewalkSceneHandleFlag, bool rebuildRoads) { }
 
-public void OQCQDQDCOD() { }
+	public void OQCQDQDCOD() { }
 
-public void ODDDOCDCQO(bool rebuildRoads) { }
+	public void ODDDOCDCQO(bool rebuildRoads) { }
 
-public void OQCQQCQDCQ(int el, List<List<int>> trIntArray, List<float> uvArray, List<List<int>> leftSidewalkIntArray, List<List<int>> rightSidewalkIntArray, int startend) { }
+	public void OQCQQCQDCQ(int el, List<List<int>> trIntArray, List<float> uvArray, List<List<int>> leftSidewalkIntArray, List<List<int>> rightSidewalkIntArray, int startend) { }
 
-public void ODQCODQDDQ(int el, Material roadMaterial, int leftCorner, int rightCorner, int leftVecCount, int rightVecCount) { }
+	public void ODQCODQDDQ(int el, Material roadMaterial, int leftCorner, int rightCorner, int leftVecCount, int rightVecCount) { }
 
-public void OCDDOCDDOQ(List<Vector3> meshVecs, List<int> connectionVecInts, ref List<Vector2> roadShapeVecs, List<List<Vector3>> vecArrays, List<List<Vector3>> leftSidewalkArray, List<List<Vector3>> rightSidewalkArray, int connectionElement, int startend) { }
+	public void OCDDOCDDOQ(List<Vector3> meshVecs, List<int> connectionVecInts, ref List<Vector2> roadShapeVecs, List<List<Vector3>> vecArrays, List<List<Vector3>> leftSidewalkArray, List<List<Vector3>> rightSidewalkArray, int connectionElement, int startend) { }
 
-public static void ODOODQDCCQ(List<Vector3> sourceVecs, ref List<Vector2> roadShapeVecs, Vector3 centerPoint, Vector3 startPoint, float halfWayDistance) { }
+	public static void ODOODQDCCQ(List<Vector3> sourceVecs, ref List<Vector2> roadShapeVecs, Vector3 centerPoint, Vector3 startPoint, float halfWayDistance) { }
 
-public static string GetRoadShapeVecString(List<Vector2> vecs, List<Vector2> lvecs, List<Vector2> rvecs, ref int matchCount) { }
+	public static string GetRoadShapeVecString(List<Vector2> vecs, List<Vector2> lvecs, List<Vector2> rvecs, ref int matchCount) { }
 
-public void ODCCCQCQOO() { }
+	public void ODCCCQCQOO() { }
 
-public void ODCDCDDOCC(List<SidewalkPresetClass> sidewalkPresets, int el) { }
+	public void ODCDCDDOCC(List<SidewalkPresetClass> sidewalkPresets, int el) { }
 
-public void OCCODQDOCO() { }
+	public void OCCODQDOCO() { }
 
-public void OQDOQDQQQQ(int el) { }
+	public void OQDOQDQQQQ(int el) { }
 
-public void OODOQQQQCO() { }
+	public void OODOQQQQCO() { }
 
-public void OQCOOQQOOD() { }
+	public void OQCOOQQOOD() { }
 
-public bool OQDOOCDOCD(ERModularRoad road, float angle) { }
+	public bool OQDOOCDOCD(ERModularRoad road, float angle) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -242,11 +242,11 @@ private sealed class ERCrossings.ᙃ // TypeDefIndex: 7170
 	public static Comparison<ERConnectionSibling> <>9__203_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <OQDOOCDOCD>b__203_0(ERConnectionSibling x, ERConnectionSibling y) { }
+	internal int <OQDOOCDOCD>b__203_0(ERConnectionSibling x, ERConnectionSibling y) { }
 
 }
 

@@ -1,23 +1,23 @@
 public class RegexConverter : JsonConverter // TypeDefIndex: 6105
 {
 
-public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
+	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
 
-private bool HasFlag(RegexOptions options, RegexOptions flag) { }
+	private bool HasFlag(RegexOptions options, RegexOptions flag) { }
 
-private void WriteBson(BsonWriter writer, Regex regex) { }
+	private void WriteBson(BsonWriter writer, Regex regex) { }
 
-private void WriteJson(JsonWriter writer, Regex regex, JsonSerializer serializer) { }
+	private void WriteJson(JsonWriter writer, Regex regex, JsonSerializer serializer) { }
 
-public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) { }
+	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) { }
 
-private object ReadRegexString(JsonReader reader) { }
+	private object ReadRegexString(JsonReader reader) { }
 
-private Regex ReadRegexObject(JsonReader reader, JsonSerializer serializer) { }
+	private Regex ReadRegexObject(JsonReader reader, JsonSerializer serializer) { }
 
-public override bool CanConvert(Type objectType) { }
+	public override bool CanConvert(Type objectType) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

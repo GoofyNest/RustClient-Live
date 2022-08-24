@@ -7,7 +7,7 @@ public class TriggerHurt : TriggerBase, IServerComponent, IHurtTrigger
 	public DamageType damageType; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

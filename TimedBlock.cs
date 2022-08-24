@@ -5,11 +5,11 @@ internal class TimedBlock : IComparable<TimedBlock> // TypeDefIndex: 5634
 	public readonly string blockName; 
 
 
-public void .ctor(DateTime deadline, Action block, string blockName) { }
+	public void .ctor(DateTime deadline, Action block, string blockName) { }
 
-public int CompareTo(TimedBlock other) { }
+	public int CompareTo(TimedBlock other) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

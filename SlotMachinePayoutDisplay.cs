@@ -6,11 +6,11 @@ public class SlotMachinePayoutDisplay : MonoBehaviour // TypeDefIndex: 8749
 	private List<SlotMachinePayoutWidget> spawnedWidgets; 
 
 
-public void Populate(SlotMachinePayoutSettings.PayoutInfo[] payouts, SlotMachinePayoutSettings.IndividualPayouts[] individualPayouts, int multiplier) { }
+	public void Populate(SlotMachinePayoutSettings.PayoutInfo[] payouts, SlotMachinePayoutSettings.IndividualPayouts[] individualPayouts, int multiplier) { }
 
-public void ClearWidgets() { }
+	public void ClearWidgets() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

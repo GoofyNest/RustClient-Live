@@ -29,7 +29,7 @@ public class PatrolHelicopterAI : BaseMonoBehaviour // TypeDefIndex: 9601
 	public GameObjectRef rocketProjectile_Napalm; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -42,24 +42,24 @@ public class PatrolHelicopterAI.targetinfo // TypeDefIndex: 9602
 	public float nextLOSCheck; 
 
 
-public void .ctor(BaseEntity initEnt, BasePlayer initPly) { }
+	public void .ctor(BaseEntity initEnt, BasePlayer initPly) { }
 
-public bool IsVisible() { }
+	public bool IsVisible() { }
 
-public float TimeSinceSeen() { }
+	public float TimeSinceSeen() { }
 
 }
 
 public enum PatrolHelicopterAI.aiState // TypeDefIndex: 9603
 {
 	public int value__; 
-public const PatrolHelicopterAI.aiState IDLE = 0;
-public const PatrolHelicopterAI.aiState MOVE = 1;
-public const PatrolHelicopterAI.aiState ORBIT = 2;
-public const PatrolHelicopterAI.aiState STRAFE = 3;
-public const PatrolHelicopterAI.aiState PATROL = 4;
-public const PatrolHelicopterAI.aiState GUARD = 5;
-public const PatrolHelicopterAI.aiState DEATH = 6;
+	public const PatrolHelicopterAI.aiState IDLE = 0;
+	public const PatrolHelicopterAI.aiState MOVE = 1;
+	public const PatrolHelicopterAI.aiState ORBIT = 2;
+	public const PatrolHelicopterAI.aiState STRAFE = 3;
+	public const PatrolHelicopterAI.aiState PATROL = 4;
+	public const PatrolHelicopterAI.aiState GUARD = 5;
+	public const PatrolHelicopterAI.aiState DEATH = 6;
 
 }
 

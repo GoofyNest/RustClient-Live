@@ -9,20 +9,20 @@ public class SleepingBagClusterMapMarker : MonoBehaviour // TypeDefIndex: 10959
 	public static SleepingBagClusterMapMarker currentlyOpen; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Populate(List<RespawnInformation.SpawnOptions> options, UIDeathScreen.RespawnColourScheme colourScheme) { }
+	public void Populate(List<RespawnInformation.SpawnOptions> options, UIDeathScreen.RespawnColourScheme colourScheme) { }
 
-private SleepingBagButton GetButton() { }
+	private SleepingBagButton GetButton() { }
 
-public void ToggleOpen() { }
+	public void ToggleOpen() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <ToggleOpen>b__10_0() { }
+	private void <ToggleOpen>b__10_0() { }
 
 }
 

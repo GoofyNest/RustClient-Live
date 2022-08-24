@@ -35,70 +35,70 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 	private int _pingSampleCount; 
 	private int _minimumPingSample; 
 
-public static bool isOpen { get; }
-public static bool WantsSkip { get; set; }
-public static string Text { get; set; }
+	public static bool isOpen { get; }
+	public static bool WantsSkip { get; set; }
+	public static string Text { get; set; }
 
 
-public static bool get_isOpen() { }
-
-	[CompilerGeneratedAttribute] 
-public static bool get_WantsSkip() { }
+	public static bool get_isOpen() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_WantsSkip(bool value) { }
+	public static bool get_WantsSkip() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Text(string value) { }
+	private static void set_WantsSkip(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_Text() { }
+	private static void set_Text(string value) { }
 
-protected override void Awake() { }
+	[CompilerGeneratedAttribute] 
+	public static string get_Text() { }
 
-protected override void OnDestroy() { }
+	protected override void Awake() { }
 
-public void OnDisable() { }
+	protected override void OnDestroy() { }
 
-public static void Show(bool hideCancel = False) { }
+	public void OnDisable() { }
 
-public static void Hide() { }
+	public static void Show(bool hideCancel = False) { }
 
-public static void ShowPerformanceWarning() { }
+	public static void Hide() { }
 
-public static void HidePerformanceWarning() { }
+	public static void ShowPerformanceWarning() { }
 
-public static void ShowSkip() { }
+	public static void HidePerformanceWarning() { }
 
-public static void HideSkip() { }
+	public static void ShowSkip() { }
 
-public static void Update(string strType) { }
+	public static void HideSkip() { }
 
-public static void Update(string strType, string strSubtitle) { }
+	public static void Update(string strType) { }
 
-public void UpdateFromServer(string strTitle, string strSubtitle) { }
+	public static void Update(string strType, string strSubtitle) { }
 
-public void CancelLoading() { }
+	public void UpdateFromServer(string strTitle, string strSubtitle) { }
 
-public void SkipLoading() { }
+	public void CancelLoading() { }
 
-private void HidePingWarning() { }
+	public void SkipLoading() { }
 
-private void UpdatePingWarning() { }
+	private void HidePingWarning() { }
 
-public void UpdateServerInfo(Nullable<ServerInfo> server, Dictionary<string, string> serverRules) { }
+	private void UpdatePingWarning() { }
 
-private void LoadBackgroundImage() { }
+	public void UpdateServerInfo(Nullable<ServerInfo> server, Dictionary<string, string> serverRules) { }
 
-private void FreeBackgroundImage() { }
+	private void LoadBackgroundImage() { }
 
-private void ChooseBackgroundImage() { }
+	private void FreeBackgroundImage() { }
 
-public void .ctor() { }
+	private void ChooseBackgroundImage() { }
+
+	public void .ctor() { }
 
 	[AsyncStateMachineAttribute] 
 	[CompilerGeneratedAttribute] 
-private void <ChooseBackgroundImage>g__PreloadBackgroundImage|56_0(string url) { }
+	private void <ChooseBackgroundImage>g__PreloadBackgroundImage|56_0(string url) { }
 
 }
 
@@ -111,10 +111,10 @@ private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|5
 	private TaskAwaiter<string> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

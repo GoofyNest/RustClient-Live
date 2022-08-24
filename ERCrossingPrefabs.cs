@@ -110,55 +110,55 @@ public class ERCrossingPrefabs : MonoBehaviour // TypeDefIndex: 7179
 	public float surrounding; 
 
 
-public void OCOODQQDQO() { }
+	public void OCOODQQDQO() { }
 
-public void OOCQCCQDOQ(Vector3 v1, Vector3 v2, int connectionElement, ERModularRoad road) { }
+	public void OOCQCCQDOQ(Vector3 v1, Vector3 v2, int connectionElement, ERModularRoad road) { }
 
-public void OCQDDQODCC(int el) { }
+	public void OCQDDQODCC(int el) { }
 
-public void OCDOCCODOC(int elInt, float distance) { }
+	public void OCDOCCODOC(int elInt, float distance) { }
 
-public void DeformTCossingConnection(int elInt, float distance, float defaultDistance, List<Vector3> controlPoints, float multiplyFactor, float angle, Vector3 cpCenterPoint, float curveStrength) { }
+	public void DeformTCossingConnection(int elInt, float distance, float defaultDistance, List<Vector3> controlPoints, float multiplyFactor, float angle, Vector3 cpCenterPoint, float curveStrength) { }
 
-public void OOODCOOOCQ(List<int> affectedVecs, List<Vector2> tmpVecs) { }
+	public void OOODCOOOCQ(List<int> affectedVecs, List<Vector2> tmpVecs) { }
 
-public void OQOQDDOCDC(bool ignorePriority, ERModularRoad road) { }
+	public void OQOQDDOCDC(bool ignorePriority, ERModularRoad road) { }
 
-public void OQQODODQCQ() { }
+	public void OQQODODQCQ() { }
 
-public void OQQCDODDQQ(bool forceFlag) { }
+	public void OQQCDODDQQ(bool forceFlag) { }
 
-public void CheckPlanarUVs() { }
+	public void CheckPlanarUVs() { }
 
-public static bool OOCCOODCOO(List<ERModularRoad> affectedObjects, ERModularRoad roadScr) { }
+	public static bool OOCCOODCOO(List<ERModularRoad> affectedObjects, ERModularRoad roadScr) { }
 
-public void OCCDCDDOOQ(bool flag) { }
+	public void OCCDCDDOOQ(bool flag) { }
 
-public void OODODQQCOD(int el) { }
+	public void OODODQQCOD(int el) { }
 
-public bool HasConnections() { }
+	public bool HasConnections() { }
 
-public bool HasConnectionsFull() { }
+	public bool HasConnectionsFull() { }
 
-public void OOQOQQODCD() { }
+	public void OOQOQQODCD() { }
 
-public void OCODDQDQCC(int el, int startend) { }
+	public void OCODDQDQCC(int el, int startend) { }
 
-public void PopulateSiblingsList() { }
+	public void PopulateSiblingsList() { }
 
-public void InitFlexConnector() { }
+	public void InitFlexConnector() { }
 
-public void AttachRoadToFlexConnector(ERModularBase scr, float OCCDOQCODC, Vector3 OCCQOCQOQD) { }
+	public void AttachRoadToFlexConnector(ERModularBase scr, float OCCDOQCODC, Vector3 OCCQOCQOQD) { }
 
-public void OQQQQOOCDO(int index) { }
+	public void OQQQQOOCDO(int index) { }
 
-public void SetElementInfo(int index, int sourceIndex) { }
+	public void SetElementInfo(int index, int sourceIndex) { }
 
-public static void ODDQDDQOOD() { }
+	public static void ODDQDDQOOD() { }
 
-public static bool OQCDCDOOCD(Vector3 pTarget, Vector3 pSource, Vector3 pCheck) { }
+	public static bool OQCDCDOOCD(Vector3 pTarget, Vector3 pSource, Vector3 pCheck) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

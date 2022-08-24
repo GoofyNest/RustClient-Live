@@ -8,13 +8,13 @@ public class HotOverlay : MonoBehaviour // TypeDefIndex: 9129
 	private ColorGrading colorGrading; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private float GetIntensity() { }
+	private float GetIntensity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

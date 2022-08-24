@@ -6,13 +6,13 @@ public struct ContactPoint // TypeDefIndex: 3932
 	internal int m_OtherColliderInstanceID; 
 	internal float m_Separation; 
 
-public Vector3 point { get; }
-public Vector3 normal { get; }
+	public Vector3 point { get; }
+	public Vector3 normal { get; }
 
 
-public Vector3 get_point() { }
+	public Vector3 get_point() { }
 
-public Vector3 get_normal() { }
+	public Vector3 get_normal() { }
 
 }
 

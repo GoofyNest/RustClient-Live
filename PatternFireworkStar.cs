@@ -5,11 +5,11 @@ public class PatternFireworkStar : MonoBehaviour, IClientComponent // TypeDefInd
 	public ParticleSystem[] ParticleSystems; 
 
 
-public void Initialize(Color color) { }
+	public void Initialize(Color color) { }
 
-public void Explode() { }
+	public void Explode() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

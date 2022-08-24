@@ -34,26 +34,26 @@ public class BaseHelicopterVehicle : BaseVehicle // TypeDefIndex: 8325
 	private SoundModulation.Modulator flightThwopsGainMod; 
 	private TimeSince timeSinceUpdatedGroundEffects; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public virtual void UpdateEffects() { }
+	public virtual void UpdateEffects() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void InitializeClientsideEffects() { }
+	public void InitializeClientsideEffects() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public virtual void Menu_Push(BasePlayer player) { }
+	public virtual void Menu_Push(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -66,9 +66,9 @@ public class BaseHelicopterVehicle.HelicopterInputState // TypeDefIndex: 8326
 	public bool groundControl; 
 
 
-public void Reset() { }
+	public void Reset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

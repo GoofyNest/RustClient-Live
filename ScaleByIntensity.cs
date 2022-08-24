@@ -5,11 +5,11 @@ public class ScaleByIntensity : MonoBehaviour // TypeDefIndex: 9231
 	public float maxIntensity; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -4,7 +4,7 @@ public class UnreferencedObjectEventArgs : EventArgs // TypeDefIndex: 2053
 	private string id; 
 
 
-public void .ctor(object o, string id) { }
+	public void .ctor(object o, string id) { }
 
 }
 

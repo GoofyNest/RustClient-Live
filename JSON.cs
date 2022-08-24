@@ -6,38 +6,38 @@ public static class JsonUtility
 
 	[ThreadSafeAttribute] 
 	[FreeFunctionAttribute] 
-private static object FromJsonInternal(string json, object objectToOverwrite, Type type) { }
+	private static object FromJsonInternal(string json, object objectToOverwrite, Type type) { }
 
-public static T FromJson<T>(string json) { }
-/* GenericInstMethod :
-|
-|-JsonUtility.FromJson<RandomUsernames.DataFile>
-|-JsonUtility.FromJson<object>
-*/
+	public static T FromJson<T>(string json) { }
+	/* GenericInstMethod :
+	|
+	|-JsonUtility.FromJson<RandomUsernames.DataFile>
+	|-JsonUtility.FromJson<object>
+	*/
 
-public static object FromJson(string json, Type type) { }
+	public static object FromJson(string json, Type type) { }
 
 }
 
 internal enum JSONNodeType // TypeDefIndex: 5637
 {
 	public int value__; 
-public const JSONNodeType Array = 1;
-public const JSONNodeType Object = 2;
-public const JSONNodeType String = 3;
-public const JSONNodeType Number = 4;
-public const JSONNodeType NullValue = 5;
-public const JSONNodeType Boolean = 6;
-public const JSONNodeType None = 7;
-public const JSONNodeType Custom = 255;
+	public const JSONNodeType Array = 1;
+	public const JSONNodeType Object = 2;
+	public const JSONNodeType String = 3;
+	public const JSONNodeType Number = 4;
+	public const JSONNodeType NullValue = 5;
+	public const JSONNodeType Boolean = 6;
+	public const JSONNodeType None = 7;
+	public const JSONNodeType Custom = 255;
 
 }
 
 internal enum JSONTextMode // TypeDefIndex: 5638
 {
 	public int value__; 
-public const JSONTextMode Compact = 0;
-public const JSONTextMode Indent = 1;
+	public const JSONTextMode Compact = 0;
+	public const JSONTextMode Indent = 1;
 
 }
 
@@ -48,101 +48,101 @@ internal abstract class JSONNode // TypeDefIndex: 5639
 	[ThreadStaticAttribute] 
 	private static StringBuilder m_EscapeBuilder; 
 
-public virtual JSONNode Item { get; }
-public virtual JSONNode Item { get; set; }
-public virtual string Value { get; }
-public virtual int Count { get; }
-public virtual bool IsNumber { get; }
-public virtual bool IsBoolean { get; }
-public virtual bool IsArray { get; }
-public virtual IEnumerable<JSONNode> Children { get; }
-public virtual double AsDouble { get; }
-public virtual int AsInt { get; }
-public virtual bool AsBool { get; }
-public virtual long AsLong { get; }
-public virtual JSONArray AsArray { get; }
-public virtual JSONObject AsObject { get; }
-internal static StringBuilder EscapeBuilder { get; }
+	public virtual JSONNode Item { get; }
+	public virtual JSONNode Item { get; set; }
+	public virtual string Value { get; }
+	public virtual int Count { get; }
+	public virtual bool IsNumber { get; }
+	public virtual bool IsBoolean { get; }
+	public virtual bool IsArray { get; }
+	public virtual IEnumerable<JSONNode> Children { get; }
+	public virtual double AsDouble { get; }
+	public virtual int AsInt { get; }
+	public virtual bool AsBool { get; }
+	public virtual long AsLong { get; }
+	public virtual JSONArray AsArray { get; }
+	public virtual JSONObject AsObject { get; }
+	internal static StringBuilder EscapeBuilder { get; }
 
 
-public virtual JSONNode get_Item(int aIndex) { }
+	public virtual JSONNode get_Item(int aIndex) { }
 
-public virtual JSONNode get_Item(string aKey) { }
+	public virtual JSONNode get_Item(string aKey) { }
 
-public virtual void set_Item(string aKey, JSONNode value) { }
+	public virtual void set_Item(string aKey, JSONNode value) { }
 
-public virtual string get_Value() { }
+	public virtual string get_Value() { }
 
-public virtual int get_Count() { }
+	public virtual int get_Count() { }
 
-public virtual bool get_IsNumber() { }
+	public virtual bool get_IsNumber() { }
 
-public virtual bool get_IsBoolean() { }
+	public virtual bool get_IsBoolean() { }
 
-public virtual bool get_IsArray() { }
+	public virtual bool get_IsArray() { }
 
-public virtual void Add(string aKey, JSONNode aItem) { }
+	public virtual void Add(string aKey, JSONNode aItem) { }
 
-public virtual void Add(JSONNode aItem) { }
+	public virtual void Add(JSONNode aItem) { }
 
 	[IteratorStateMachineAttribute] 
-public virtual IEnumerable<JSONNode> get_Children() { }
+	public virtual IEnumerable<JSONNode> get_Children() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-internal abstract void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode);
+	internal abstract void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode);
 
-public abstract JSONNode.Enumerator GetEnumerator();
+	public abstract JSONNode.Enumerator GetEnumerator();
 
-public virtual double get_AsDouble() { }
+	public virtual double get_AsDouble() { }
 
-public virtual int get_AsInt() { }
+	public virtual int get_AsInt() { }
 
-public virtual bool get_AsBool() { }
+	public virtual bool get_AsBool() { }
 
-public virtual long get_AsLong() { }
+	public virtual long get_AsLong() { }
 
-public virtual JSONArray get_AsArray() { }
+	public virtual JSONArray get_AsArray() { }
 
-public virtual JSONObject get_AsObject() { }
+	public virtual JSONObject get_AsObject() { }
 
-public static JSONNode op_Implicit(string s) { }
+	public static JSONNode op_Implicit(string s) { }
 
-public static string op_Implicit(JSONNode d) { }
+	public static string op_Implicit(JSONNode d) { }
 
-public static JSONNode op_Implicit(double n) { }
+	public static JSONNode op_Implicit(double n) { }
 
-public static JSONNode op_Implicit(bool b) { }
+	public static JSONNode op_Implicit(bool b) { }
 
-public static bool op_Equality(JSONNode a, object b) { }
+	public static bool op_Equality(JSONNode a, object b) { }
 
-public static bool op_Inequality(JSONNode a, object b) { }
+	public static bool op_Inequality(JSONNode a, object b) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-internal static StringBuilder get_EscapeBuilder() { }
+	internal static StringBuilder get_EscapeBuilder() { }
 
-internal static string Escape(string aText) { }
+	internal static string Escape(string aText) { }
 
-private static JSONNode ParseElement(string token, bool quoted) { }
+	private static JSONNode ParseElement(string token, bool quoted) { }
 
-public static JSONNode Parse(string aJSON) { }
+	public static JSONNode Parse(string aJSON) { }
 
-public abstract void SerializeBinary(BinaryWriter aWriter);
+	public abstract void SerializeBinary(BinaryWriter aWriter);
 
-public void SaveToBinaryStream(Stream aData) { }
+	public void SaveToBinaryStream(Stream aData) { }
 
-public string SaveToBinaryBase64() { }
+	public string SaveToBinaryBase64() { }
 
-public static JSONNode DeserializeBinary(BinaryReader aReader) { }
+	public static JSONNode DeserializeBinary(BinaryReader aReader) { }
 
-public static JSONNode LoadFromBinaryStream(Stream aData) { }
+	public static JSONNode LoadFromBinaryStream(Stream aData) { }
 
-public static JSONNode LoadFromBinaryBase64(string aBase64) { }
+	public static JSONNode LoadFromBinaryBase64(string aBase64) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
@@ -152,25 +152,25 @@ public struct JSONNode.Enumerator // TypeDefIndex: 5640
 	private Dictionary.Enumerator<string, JSONNode> m_Object; 
 	private List.Enumerator<JSONNode> m_Array; 
 
-public KeyValuePair<string, JSONNode> Current { get; }
+	public KeyValuePair<string, JSONNode> Current { get; }
 
 
-public void .ctor(List.Enumerator<JSONNode> aArrayEnum) { }
+	public void .ctor(List.Enumerator<JSONNode> aArrayEnum) { }
 
-public void .ctor(Dictionary.Enumerator<string, JSONNode> aDictEnum) { }
+	public void .ctor(Dictionary.Enumerator<string, JSONNode> aDictEnum) { }
 
-public KeyValuePair<string, JSONNode> get_Current() { }
+	public KeyValuePair<string, JSONNode> get_Current() { }
 
-public bool MoveNext() { }
+	public bool MoveNext() { }
 
 }
 
 private enum JSONNode.Enumerator.Type // TypeDefIndex: 5641
 {
 	public int value__; 
-public const JSONNode.Enumerator.Type None = 0;
-public const JSONNode.Enumerator.Type Array = 1;
-public const JSONNode.Enumerator.Type Object = 2;
+	public const JSONNode.Enumerator.Type None = 0;
+	public const JSONNode.Enumerator.Type Array = 1;
+	public const JSONNode.Enumerator.Type Object = 2;
 
 }
 
@@ -180,32 +180,32 @@ private sealed class JSONNode.<get_Children>d__40 : IEnumerable<JSONNode>, IEnum
 	private JSONNode <>2__current; 
 	private int <>l__initialThreadId; 
 
-private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<JSONNode> System.Collections.Generic.IEnumerable<GameAnalyticsSDK.Net.Utilities.JSONNode>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<JSONNode> System.Collections.Generic.IEnumerable<GameAnalyticsSDK.Net.Utilities.JSONNode>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
@@ -214,35 +214,35 @@ internal class JSONArray : JSONNode // TypeDefIndex: 5643
 	private List<JSONNode> m_List; 
 	private bool inline; 
 
-public override bool IsArray { get; }
-public override JSONNode Item { get; }
-public override JSONNode Item { get; set; }
-public override int Count { get; }
-public override IEnumerable<JSONNode> Children { get; }
+	public override bool IsArray { get; }
+	public override JSONNode Item { get; }
+	public override JSONNode Item { get; set; }
+	public override int Count { get; }
+	public override IEnumerable<JSONNode> Children { get; }
 
 
-public override bool get_IsArray() { }
+	public override bool get_IsArray() { }
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public override JSONNode get_Item(int aIndex) { }
+	public override JSONNode get_Item(int aIndex) { }
 
-public override JSONNode get_Item(string aKey) { }
+	public override JSONNode get_Item(string aKey) { }
 
-public override void set_Item(string aKey, JSONNode value) { }
+	public override void set_Item(string aKey, JSONNode value) { }
 
-public override int get_Count() { }
+	public override int get_Count() { }
 
-public override void Add(string aKey, JSONNode aItem) { }
+	public override void Add(string aKey, JSONNode aItem) { }
 
 	[IteratorStateMachineAttribute] 
-public override IEnumerable<JSONNode> get_Children() { }
+	public override IEnumerable<JSONNode> get_Children() { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -254,34 +254,34 @@ private sealed class JSONArray.<get_Children>d__22 : IEnumerable<JSONNode>, IEnu
 	public JSONArray <>4__this; 
 	private List.Enumerator<JSONNode> <>7__wrap1; 
 
-private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
-
-	[DebuggerHiddenAttribute] 
-private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.get_Current() { }
+	private void <>m__Finally1() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<JSONNode> System.Collections.Generic.IEnumerable<GameAnalyticsSDK.Net.Utilities.JSONNode>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<JSONNode> System.Collections.Generic.IEnumerable<GameAnalyticsSDK.Net.Utilities.JSONNode>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
@@ -290,32 +290,32 @@ internal class JSONObject : JSONNode // TypeDefIndex: 5645
 	private Dictionary<string, JSONNode> m_Dict; 
 	private bool inline; 
 
-public override JSONNode Item { get; set; }
-public override JSONNode Item { get; }
-public override int Count { get; }
-public override IEnumerable<JSONNode> Children { get; }
+	public override JSONNode Item { get; set; }
+	public override JSONNode Item { get; }
+	public override int Count { get; }
+	public override IEnumerable<JSONNode> Children { get; }
 
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public override JSONNode get_Item(string aKey) { }
+	public override JSONNode get_Item(string aKey) { }
 
-public override void set_Item(string aKey, JSONNode value) { }
+	public override void set_Item(string aKey, JSONNode value) { }
 
-public override JSONNode get_Item(int aIndex) { }
+	public override JSONNode get_Item(int aIndex) { }
 
-public override int get_Count() { }
+	public override int get_Count() { }
 
-public override void Add(string aKey, JSONNode aItem) { }
+	public override void Add(string aKey, JSONNode aItem) { }
 
 	[IteratorStateMachineAttribute] 
-public override IEnumerable<JSONNode> get_Children() { }
+	public override IEnumerable<JSONNode> get_Children() { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -327,34 +327,34 @@ private sealed class JSONObject.<get_Children>d__23 : IEnumerable<JSONNode>, IEn
 	public JSONObject <>4__this; 
 	private Dictionary.Enumerator<string, JSONNode> <>7__wrap1; 
 
-private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
-
-	[DebuggerHiddenAttribute] 
-private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.get_Current() { }
+	private void <>m__Finally1() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private JSONNode System.Collections.Generic.IEnumerator<GameAnalyticsSDK.Net.Utilities.JSONNode>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<JSONNode> System.Collections.Generic.IEnumerable<GameAnalyticsSDK.Net.Utilities.JSONNode>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<JSONNode> System.Collections.Generic.IEnumerable<GameAnalyticsSDK.Net.Utilities.JSONNode>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
@@ -362,22 +362,22 @@ internal class JSONString : JSONNode // TypeDefIndex: 5647
 {
 	private string m_Data; 
 
-public override string Value { get; }
+	public override string Value { get; }
 
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public override string get_Value() { }
+	public override string get_Value() { }
 
-public void .ctor(string aData) { }
+	public void .ctor(string aData) { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
 }
 
@@ -385,33 +385,33 @@ internal class JSONNumber : JSONNode // TypeDefIndex: 5648
 {
 	private double m_Data; 
 
-public override bool IsNumber { get; }
-public override string Value { get; }
-public override double AsDouble { get; }
-public override long AsLong { get; }
+	public override bool IsNumber { get; }
+	public override string Value { get; }
+	public override double AsDouble { get; }
+	public override long AsLong { get; }
 
 
-public override bool get_IsNumber() { }
+	public override bool get_IsNumber() { }
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public override string get_Value() { }
+	public override string get_Value() { }
 
-public override double get_AsDouble() { }
+	public override double get_AsDouble() { }
 
-public override long get_AsLong() { }
+	public override long get_AsLong() { }
 
-public void .ctor(double aData) { }
+	public void .ctor(double aData) { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-private static bool IsNumeric(object value) { }
+	private static bool IsNumeric(object value) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
 }
 
@@ -419,28 +419,28 @@ internal class JSONBool : JSONNode // TypeDefIndex: 5649
 {
 	private bool m_Data; 
 
-public override bool IsBoolean { get; }
-public override string Value { get; }
-public override bool AsBool { get; }
+	public override bool IsBoolean { get; }
+	public override string Value { get; }
+	public override bool AsBool { get; }
 
 
-public override bool get_IsBoolean() { }
+	public override bool get_IsBoolean() { }
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public override string get_Value() { }
+	public override string get_Value() { }
 
-public override bool get_AsBool() { }
+	public override bool get_AsBool() { }
 
-public void .ctor(bool aData) { }
+	public void .ctor(bool aData) { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
 }
 
@@ -449,29 +449,29 @@ internal class JSONNull : JSONNode // TypeDefIndex: 5650
 	private static JSONNull m_StaticInstance; 
 	public static bool reuseSameInstance; 
 
-public override string Value { get; }
-public override bool AsBool { get; }
+	public override string Value { get; }
+	public override bool AsBool { get; }
 
 
-public static JSONNull CreateOrGet() { }
+	public static JSONNull CreateOrGet() { }
 
-private void .ctor() { }
+	private void .ctor() { }
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public override string get_Value() { }
+	public override string get_Value() { }
 
-public override bool get_AsBool() { }
+	public override bool get_AsBool() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -480,89 +480,89 @@ internal class JSONLazyCreator : JSONNode // TypeDefIndex: 5651
 	private JSONNode m_Node; 
 	private string m_Key; 
 
-public override JSONNode Item { get; }
-public override JSONNode Item { get; set; }
-public override int AsInt { get; }
-public override double AsDouble { get; }
-public override long AsLong { get; }
-public override bool AsBool { get; }
-public override JSONArray AsArray { get; }
-public override JSONObject AsObject { get; }
+	public override JSONNode Item { get; }
+	public override JSONNode Item { get; set; }
+	public override int AsInt { get; }
+	public override double AsDouble { get; }
+	public override long AsLong { get; }
+	public override bool AsBool { get; }
+	public override JSONArray AsArray { get; }
+	public override JSONObject AsObject { get; }
 
 
-public override JSONNode.Enumerator GetEnumerator() { }
+	public override JSONNode.Enumerator GetEnumerator() { }
 
-public void .ctor(JSONNode aNode) { }
+	public void .ctor(JSONNode aNode) { }
 
-public void .ctor(JSONNode aNode, string aKey) { }
+	public void .ctor(JSONNode aNode, string aKey) { }
 
-private T Set<T>(T aVal) { }
-/* GenericInstMethod :
-|
-|-JSONLazyCreator.Set<JSONArray>
-|-JSONLazyCreator.Set<JSONBool>
-|-JSONLazyCreator.Set<JSONNumber>
-|-JSONLazyCreator.Set<JSONObject>
-|-JSONLazyCreator.Set<JSONString>
-|-JSONLazyCreator.Set<object>
-*/
+	private T Set<T>(T aVal) { }
+	/* GenericInstMethod :
+	|
+	|-JSONLazyCreator.Set<JSONArray>
+	|-JSONLazyCreator.Set<JSONBool>
+	|-JSONLazyCreator.Set<JSONNumber>
+	|-JSONLazyCreator.Set<JSONObject>
+	|-JSONLazyCreator.Set<JSONString>
+	|-JSONLazyCreator.Set<object>
+	*/
 
-public override JSONNode get_Item(int aIndex) { }
+	public override JSONNode get_Item(int aIndex) { }
 
-public override JSONNode get_Item(string aKey) { }
+	public override JSONNode get_Item(string aKey) { }
 
-public override void set_Item(string aKey, JSONNode value) { }
+	public override void set_Item(string aKey, JSONNode value) { }
 
-public override void Add(JSONNode aItem) { }
+	public override void Add(JSONNode aItem) { }
 
-public override void Add(string aKey, JSONNode aItem) { }
+	public override void Add(string aKey, JSONNode aItem) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override int get_AsInt() { }
+	public override int get_AsInt() { }
 
-public override double get_AsDouble() { }
+	public override double get_AsDouble() { }
 
-public override long get_AsLong() { }
+	public override long get_AsLong() { }
 
-public override bool get_AsBool() { }
+	public override bool get_AsBool() { }
 
-public override JSONArray get_AsArray() { }
+	public override JSONArray get_AsArray() { }
 
-public override JSONObject get_AsObject() { }
+	public override JSONObject get_AsObject() { }
 
-internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
+	internal override void WriteToStringBuilder(StringBuilder aSB, int aIndent, int aIndentInc, JSONTextMode aMode) { }
 
-public override void SerializeBinary(BinaryWriter aWriter) { }
+	public override void SerializeBinary(BinaryWriter aWriter) { }
 
 }
 
 internal static class JSON // TypeDefIndex: 5652
 {
 
-public static JSONNode Parse(string aJSON) { }
+	public static JSONNode Parse(string aJSON) { }
 
 }
 
 public sealed class JsonConstructorAttribute : Attribute // TypeDefIndex: 5872
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class JsonException : Exception // TypeDefIndex: 5874
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string message) { }
+	public void .ctor(string message) { }
 
-public void .ctor(string message, Exception innerException) { }
+	public void .ctor(string message, Exception innerException) { }
 
-public void .ctor(SerializationInfo info, StreamingContext context) { }
+	public void .ctor(SerializationInfo info, StreamingContext context) { }
 
 }
 
@@ -573,33 +573,33 @@ public class JsonExtensionDataAttribute : Attribute // TypeDefIndex: 5875
 	[CompilerGeneratedAttribute] 
 	private bool <ReadData>k__BackingField; 
 
-public bool WriteData { get; set; }
-public bool ReadData { get; set; }
+	public bool WriteData { get; set; }
+	public bool ReadData { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_WriteData() { }
+	public bool get_WriteData() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_WriteData(bool value) { }
+	public void set_WriteData(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_ReadData() { }
+	public bool get_ReadData() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ReadData(bool value) { }
+	public void set_ReadData(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 internal enum JsonContainerType // TypeDefIndex: 5876
 {
 	public int value__; 
-public const JsonContainerType None = 0;
-public const JsonContainerType Object = 1;
-public const JsonContainerType Array = 2;
-public const JsonContainerType Constructor = 3;
+	public const JsonContainerType None = 0;
+	public const JsonContainerType Object = 1;
+	public const JsonContainerType Array = 2;
+	public const JsonContainerType Constructor = 3;
 
 }
 
@@ -612,33 +612,33 @@ internal struct JsonPosition // TypeDefIndex: 5877
 	internal bool HasIndex; 
 
 
-public void .ctor(JsonContainerType type) { }
+	public void .ctor(JsonContainerType type) { }
 
-internal int CalculateLength() { }
+	internal int CalculateLength() { }
 
-internal void WriteTo(StringBuilder sb) { }
+	internal void WriteTo(StringBuilder sb) { }
 
-internal static bool TypeHasIndex(JsonContainerType type) { }
+	internal static bool TypeHasIndex(JsonContainerType type) { }
 
-internal static string BuildPath(List<JsonPosition> positions, Nullable<JsonPosition> currentPosition) { }
+	internal static string BuildPath(List<JsonPosition> positions, Nullable<JsonPosition> currentPosition) { }
 
-internal static string FormatMessage(IJsonLineInfo lineInfo, string path, string message) { }
+	internal static string FormatMessage(IJsonLineInfo lineInfo, string path, string message) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public sealed class JsonRequiredAttribute : Attribute // TypeDefIndex: 5878
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public sealed class JsonArrayAttribute : JsonContainerAttribute // TypeDefIndex: 5884
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -653,17 +653,17 @@ public abstract class JsonContainerAttribute : Attribute // TypeDefIndex: 5885
 	internal Nullable<ReferenceLoopHandling> _itemReferenceLoopHandling; 
 	internal Nullable<TypeNameHandling> _itemTypeNameHandling; 
 
-public Type ItemConverterType { get; }
-public object[] ItemConverterParameters { get; }
+	public Type ItemConverterType { get; }
+	public object[] ItemConverterParameters { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public Type get_ItemConverterType() { }
+	public Type get_ItemConverterType() { }
 
 	[CompilerGeneratedAttribute] 
-public object[] get_ItemConverterParameters() { }
+	public object[] get_ItemConverterParameters() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
@@ -673,16 +673,16 @@ public sealed class JsonConverterAttribute : Attribute // TypeDefIndex: 5887
 	[CompilerGeneratedAttribute] 
 	private object[] <ConverterParameters>k__BackingField; 
 
-public Type ConverterType { get; }
-public object[] ConverterParameters { get; }
+	public Type ConverterType { get; }
+	public object[] ConverterParameters { get; }
 
 
-public Type get_ConverterType() { }
+	public Type get_ConverterType() { }
 
 	[CompilerGeneratedAttribute] 
-public object[] get_ConverterParameters() { }
+	public object[] get_ConverterParameters() { }
 
-public void .ctor(Type converterType) { }
+	public void .ctor(Type converterType) { }
 
 }
 
@@ -691,12 +691,12 @@ public sealed class JsonObjectAttribute : JsonContainerAttribute // TypeDefIndex
 	private MemberSerialization _memberSerialization; 
 	internal Nullable<Required> _itemRequired; 
 
-public MemberSerialization MemberSerialization { get; }
+	public MemberSerialization MemberSerialization { get; }
 
 
-public MemberSerialization get_MemberSerialization() { }
+	public MemberSerialization get_MemberSerialization() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -743,82 +743,82 @@ public class JsonSerializerSettings // TypeDefIndex: 5889
 	[CompilerGeneratedAttribute] 
 	private EventHandler<ErrorEventArgs> <Error>k__BackingField; 
 
-public ReferenceLoopHandling ReferenceLoopHandling { get; }
-public MissingMemberHandling MissingMemberHandling { get; }
-public ObjectCreationHandling ObjectCreationHandling { get; }
-public NullValueHandling NullValueHandling { get; }
-public DefaultValueHandling DefaultValueHandling { get; }
-public IList<JsonConverter> Converters { get; set; }
-public PreserveReferencesHandling PreserveReferencesHandling { get; }
-public TypeNameHandling TypeNameHandling { get; }
-public MetadataPropertyHandling MetadataPropertyHandling { get; }
-public FormatterAssemblyStyle TypeNameAssemblyFormat { get; }
-public ConstructorHandling ConstructorHandling { get; }
-public IContractResolver ContractResolver { get; }
-public IEqualityComparer EqualityComparer { get; }
-public Func<IReferenceResolver> ReferenceResolverProvider { get; }
-public ITraceWriter TraceWriter { get; }
-public SerializationBinder Binder { get; }
-public EventHandler<ErrorEventArgs> Error { get; }
-public StreamingContext Context { get; }
+	public ReferenceLoopHandling ReferenceLoopHandling { get; }
+	public MissingMemberHandling MissingMemberHandling { get; }
+	public ObjectCreationHandling ObjectCreationHandling { get; }
+	public NullValueHandling NullValueHandling { get; }
+	public DefaultValueHandling DefaultValueHandling { get; }
+	public IList<JsonConverter> Converters { get; set; }
+	public PreserveReferencesHandling PreserveReferencesHandling { get; }
+	public TypeNameHandling TypeNameHandling { get; }
+	public MetadataPropertyHandling MetadataPropertyHandling { get; }
+	public FormatterAssemblyStyle TypeNameAssemblyFormat { get; }
+	public ConstructorHandling ConstructorHandling { get; }
+	public IContractResolver ContractResolver { get; }
+	public IEqualityComparer EqualityComparer { get; }
+	public Func<IReferenceResolver> ReferenceResolverProvider { get; }
+	public ITraceWriter TraceWriter { get; }
+	public SerializationBinder Binder { get; }
+	public EventHandler<ErrorEventArgs> Error { get; }
+	public StreamingContext Context { get; }
 
 
-public ReferenceLoopHandling get_ReferenceLoopHandling() { }
+	public ReferenceLoopHandling get_ReferenceLoopHandling() { }
 
-public MissingMemberHandling get_MissingMemberHandling() { }
+	public MissingMemberHandling get_MissingMemberHandling() { }
 
-public ObjectCreationHandling get_ObjectCreationHandling() { }
+	public ObjectCreationHandling get_ObjectCreationHandling() { }
 
-public NullValueHandling get_NullValueHandling() { }
+	public NullValueHandling get_NullValueHandling() { }
 
-public DefaultValueHandling get_DefaultValueHandling() { }
-
-	[CompilerGeneratedAttribute] 
-public IList<JsonConverter> get_Converters() { }
+	public DefaultValueHandling get_DefaultValueHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Converters(IList<JsonConverter> value) { }
-
-public PreserveReferencesHandling get_PreserveReferencesHandling() { }
-
-public TypeNameHandling get_TypeNameHandling() { }
-
-public MetadataPropertyHandling get_MetadataPropertyHandling() { }
-
-public FormatterAssemblyStyle get_TypeNameAssemblyFormat() { }
-
-public ConstructorHandling get_ConstructorHandling() { }
+	public IList<JsonConverter> get_Converters() { }
 
 	[CompilerGeneratedAttribute] 
-public IContractResolver get_ContractResolver() { }
+	public void set_Converters(IList<JsonConverter> value) { }
+
+	public PreserveReferencesHandling get_PreserveReferencesHandling() { }
+
+	public TypeNameHandling get_TypeNameHandling() { }
+
+	public MetadataPropertyHandling get_MetadataPropertyHandling() { }
+
+	public FormatterAssemblyStyle get_TypeNameAssemblyFormat() { }
+
+	public ConstructorHandling get_ConstructorHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public IEqualityComparer get_EqualityComparer() { }
+	public IContractResolver get_ContractResolver() { }
 
 	[CompilerGeneratedAttribute] 
-public Func<IReferenceResolver> get_ReferenceResolverProvider() { }
+	public IEqualityComparer get_EqualityComparer() { }
 
 	[CompilerGeneratedAttribute] 
-public ITraceWriter get_TraceWriter() { }
+	public Func<IReferenceResolver> get_ReferenceResolverProvider() { }
 
 	[CompilerGeneratedAttribute] 
-public SerializationBinder get_Binder() { }
+	public ITraceWriter get_TraceWriter() { }
 
 	[CompilerGeneratedAttribute] 
-public EventHandler<ErrorEventArgs> get_Error() { }
+	public SerializationBinder get_Binder() { }
 
-public StreamingContext get_Context() { }
+	[CompilerGeneratedAttribute] 
+	public EventHandler<ErrorEventArgs> get_Error() { }
 
-private static void .cctor() { }
+	public StreamingContext get_Context() { }
 
-public void .ctor() { }
+	private static void .cctor() { }
+
+	public void .ctor() { }
 
 }
 
 private sealed class JsonSerializerSettings.<>c__DisplayClass90_0 // TypeDefIndex: 5890
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -836,127 +836,127 @@ public class JsonTextReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5894
 	private IArrayPool<char> _arrayPool; 
 	internal PropertyNameTable NameTable; 
 
-public int LineNumber { get; }
-public int LinePosition { get; }
+	public int LineNumber { get; }
+	public int LinePosition { get; }
 
 
-public void .ctor(TextReader reader) { }
+	public void .ctor(TextReader reader) { }
 
-private void EnsureBufferNotEmpty() { }
+	private void EnsureBufferNotEmpty() { }
 
-private void OnNewLine(int pos) { }
+	private void OnNewLine(int pos) { }
 
-private void ParseString(char quote, ReadType readType) { }
+	private void ParseString(char quote, ReadType readType) { }
 
-private static void BlockCopyChars(char[] src, int srcOffset, char[] dst, int dstOffset, int count) { }
+	private static void BlockCopyChars(char[] src, int srcOffset, char[] dst, int dstOffset, int count) { }
 
-private void ShiftBufferIfNeeded() { }
+	private void ShiftBufferIfNeeded() { }
 
-private int ReadData(bool append) { }
+	private int ReadData(bool append) { }
 
-private int ReadData(bool append, int charsRequired) { }
+	private int ReadData(bool append, int charsRequired) { }
 
-private bool EnsureChars(int relativePosition, bool append) { }
+	private bool EnsureChars(int relativePosition, bool append) { }
 
-private bool ReadChars(int relativePosition, bool append) { }
+	private bool ReadChars(int relativePosition, bool append) { }
 
-public override bool Read() { }
+	public override bool Read() { }
 
-public override Nullable<int> ReadAsInt32() { }
+	public override Nullable<int> ReadAsInt32() { }
 
-public override Nullable<DateTime> ReadAsDateTime() { }
+	public override Nullable<DateTime> ReadAsDateTime() { }
 
-public override string ReadAsString() { }
+	public override string ReadAsString() { }
 
-public override byte[] ReadAsBytes() { }
+	public override byte[] ReadAsBytes() { }
 
-private object ReadStringValue(ReadType readType) { }
+	private object ReadStringValue(ReadType readType) { }
 
-private JsonReaderException CreateUnexpectedCharacterException(char c) { }
+	private JsonReaderException CreateUnexpectedCharacterException(char c) { }
 
-public override Nullable<bool> ReadAsBoolean() { }
+	public override Nullable<bool> ReadAsBoolean() { }
 
-private void ProcessValueComma() { }
+	private void ProcessValueComma() { }
 
-private object ReadNumberValue(ReadType readType) { }
+	private object ReadNumberValue(ReadType readType) { }
 
-public override Nullable<DateTimeOffset> ReadAsDateTimeOffset() { }
+	public override Nullable<DateTimeOffset> ReadAsDateTimeOffset() { }
 
-public override Nullable<Decimal> ReadAsDecimal() { }
+	public override Nullable<Decimal> ReadAsDecimal() { }
 
-public override Nullable<double> ReadAsDouble() { }
+	public override Nullable<double> ReadAsDouble() { }
 
-private void HandleNull() { }
+	private void HandleNull() { }
 
-private void ReadFinished() { }
+	private void ReadFinished() { }
 
-private bool ReadNullChar() { }
+	private bool ReadNullChar() { }
 
-private void EnsureBuffer() { }
+	private void EnsureBuffer() { }
 
-private void ReadStringIntoBuffer(char quote) { }
+	private void ReadStringIntoBuffer(char quote) { }
 
-private void WriteCharToBuffer(char writeChar, int lastWritePosition, int writeToPosition) { }
+	private void WriteCharToBuffer(char writeChar, int lastWritePosition, int writeToPosition) { }
 
-private char ParseUnicode() { }
+	private char ParseUnicode() { }
 
-private void ReadNumberIntoBuffer() { }
+	private void ReadNumberIntoBuffer() { }
 
-private void ClearRecentString() { }
+	private void ClearRecentString() { }
 
-private bool ParsePostValue() { }
+	private bool ParsePostValue() { }
 
-private bool ParseObject() { }
+	private bool ParseObject() { }
 
-private bool ParseProperty() { }
+	private bool ParseProperty() { }
 
-private bool ValidIdentifierChar(char value) { }
+	private bool ValidIdentifierChar(char value) { }
 
-private void ParseUnquotedProperty() { }
+	private void ParseUnquotedProperty() { }
 
-private bool ParseValue() { }
+	private bool ParseValue() { }
 
-private void ProcessLineFeed() { }
+	private void ProcessLineFeed() { }
 
-private void ProcessCarriageReturn(bool append) { }
+	private void ProcessCarriageReturn(bool append) { }
 
-private bool EatWhitespace(bool oneOrMore) { }
+	private bool EatWhitespace(bool oneOrMore) { }
 
-private void ParseConstructor() { }
+	private void ParseConstructor() { }
 
-private void ParseNumber(ReadType readType) { }
+	private void ParseNumber(ReadType readType) { }
 
-private void ParseComment(bool setToken) { }
+	private void ParseComment(bool setToken) { }
 
-private void EndComment(bool setToken, int initialPosition, int endPosition) { }
+	private void EndComment(bool setToken, int initialPosition, int endPosition) { }
 
-private bool MatchValue(string value) { }
+	private bool MatchValue(string value) { }
 
-private bool MatchValueWithTrailingSeparator(string value) { }
+	private bool MatchValueWithTrailingSeparator(string value) { }
 
-private bool IsSeparator(char c) { }
+	private bool IsSeparator(char c) { }
 
-private void ParseTrue() { }
+	private void ParseTrue() { }
 
-private void ParseNull() { }
+	private void ParseNull() { }
 
-private void ParseUndefined() { }
+	private void ParseUndefined() { }
 
-private void ParseFalse() { }
+	private void ParseFalse() { }
 
-private object ParseNumberNegativeInfinity(ReadType readType) { }
+	private object ParseNumberNegativeInfinity(ReadType readType) { }
 
-private object ParseNumberPositiveInfinity(ReadType readType) { }
+	private object ParseNumberPositiveInfinity(ReadType readType) { }
 
-private object ParseNumberNaN(ReadType readType) { }
+	private object ParseNumberNaN(ReadType readType) { }
 
-public override void Close() { }
+	public override void Close() { }
 
-public bool HasLineInfo() { }
+	public bool HasLineInfo() { }
 
-public int get_LineNumber() { }
+	public int get_LineNumber() { }
 
-public int get_LinePosition() { }
+	public int get_LinePosition() { }
 
 }
 
@@ -980,33 +980,33 @@ public sealed class JsonPropertyAttribute : Attribute // TypeDefIndex: 5895
 	[CompilerGeneratedAttribute] 
 	private string <PropertyName>k__BackingField; 
 
-public Type ItemConverterType { get; }
-public object[] ItemConverterParameters { get; }
-public string PropertyName { get; set; }
+	public Type ItemConverterType { get; }
+	public object[] ItemConverterParameters { get; }
+	public string PropertyName { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Type get_ItemConverterType() { }
+	public Type get_ItemConverterType() { }
 
 	[CompilerGeneratedAttribute] 
-public object[] get_ItemConverterParameters() { }
+	public object[] get_ItemConverterParameters() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_PropertyName() { }
+	public string get_PropertyName() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_PropertyName(string value) { }
+	public void set_PropertyName(string value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string propertyName) { }
+	public void .ctor(string propertyName) { }
 
 }
 
 public sealed class JsonIgnoreAttribute : Attribute // TypeDefIndex: 5896
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1023,107 +1023,107 @@ public class JsonTextWriter : JsonWriter // TypeDefIndex: 5897
 	private IArrayPool<char> _arrayPool; 
 	private char[] _indentChars; 
 
-private Base64Encoder Base64Encoder { get; }
-public char QuoteChar { get; }
+	private Base64Encoder Base64Encoder { get; }
+	public char QuoteChar { get; }
 
 
-private Base64Encoder get_Base64Encoder() { }
+	private Base64Encoder get_Base64Encoder() { }
 
-public char get_QuoteChar() { }
+	public char get_QuoteChar() { }
 
-public void .ctor(TextWriter textWriter) { }
+	public void .ctor(TextWriter textWriter) { }
 
-public override void Close() { }
+	public override void Close() { }
 
-public override void WriteStartObject() { }
+	public override void WriteStartObject() { }
 
-public override void WriteStartArray() { }
+	public override void WriteStartArray() { }
 
-public override void WriteStartConstructor(string name) { }
+	public override void WriteStartConstructor(string name) { }
 
-protected override void WriteEnd(JsonToken token) { }
+	protected override void WriteEnd(JsonToken token) { }
 
-public override void WritePropertyName(string name) { }
+	public override void WritePropertyName(string name) { }
 
-public override void WritePropertyName(string name, bool escape) { }
+	public override void WritePropertyName(string name, bool escape) { }
 
-internal override void OnStringEscapeHandlingChanged() { }
+	internal override void OnStringEscapeHandlingChanged() { }
 
-private void UpdateCharEscapeFlags() { }
+	private void UpdateCharEscapeFlags() { }
 
-protected override void WriteIndent() { }
+	protected override void WriteIndent() { }
 
-protected override void WriteValueDelimiter() { }
+	protected override void WriteValueDelimiter() { }
 
-protected override void WriteIndentSpace() { }
+	protected override void WriteIndentSpace() { }
 
-private void WriteValueInternal(string value, JsonToken token) { }
+	private void WriteValueInternal(string value, JsonToken token) { }
 
-public override void WriteValue(object value) { }
+	public override void WriteValue(object value) { }
 
-public override void WriteNull() { }
+	public override void WriteNull() { }
 
-public override void WriteUndefined() { }
+	public override void WriteUndefined() { }
 
-public override void WriteRaw(string json) { }
+	public override void WriteRaw(string json) { }
 
-public override void WriteValue(string value) { }
+	public override void WriteValue(string value) { }
 
-private void WriteEscapedString(string value, bool quote) { }
+	private void WriteEscapedString(string value, bool quote) { }
 
-public override void WriteValue(int value) { }
-
-	[CLSCompliantAttribute] 
-public override void WriteValue(uint value) { }
-
-public override void WriteValue(long value) { }
+	public override void WriteValue(int value) { }
 
 	[CLSCompliantAttribute] 
-public override void WriteValue(ulong value) { }
+	public override void WriteValue(uint value) { }
 
-public override void WriteValue(float value) { }
-
-public override void WriteValue(Nullable<float> value) { }
-
-public override void WriteValue(double value) { }
-
-public override void WriteValue(Nullable<double> value) { }
-
-public override void WriteValue(bool value) { }
-
-public override void WriteValue(short value) { }
+	public override void WriteValue(long value) { }
 
 	[CLSCompliantAttribute] 
-public override void WriteValue(ushort value) { }
+	public override void WriteValue(ulong value) { }
 
-public override void WriteValue(char value) { }
+	public override void WriteValue(float value) { }
 
-public override void WriteValue(byte value) { }
+	public override void WriteValue(Nullable<float> value) { }
+
+	public override void WriteValue(double value) { }
+
+	public override void WriteValue(Nullable<double> value) { }
+
+	public override void WriteValue(bool value) { }
+
+	public override void WriteValue(short value) { }
 
 	[CLSCompliantAttribute] 
-public override void WriteValue(sbyte value) { }
+	public override void WriteValue(ushort value) { }
 
-public override void WriteValue(Decimal value) { }
+	public override void WriteValue(char value) { }
 
-public override void WriteValue(DateTime value) { }
+	public override void WriteValue(byte value) { }
 
-public override void WriteValue(byte[] value) { }
+	[CLSCompliantAttribute] 
+	public override void WriteValue(sbyte value) { }
 
-public override void WriteValue(DateTimeOffset value) { }
+	public override void WriteValue(Decimal value) { }
 
-public override void WriteValue(Guid value) { }
+	public override void WriteValue(DateTime value) { }
 
-public override void WriteValue(TimeSpan value) { }
+	public override void WriteValue(byte[] value) { }
 
-public override void WriteValue(Uri value) { }
+	public override void WriteValue(DateTimeOffset value) { }
 
-public override void WriteComment(string text) { }
+	public override void WriteValue(Guid value) { }
 
-private void EnsureWriteBuffer() { }
+	public override void WriteValue(TimeSpan value) { }
 
-private void WriteIntegerValue(long value) { }
+	public override void WriteValue(Uri value) { }
 
-private void WriteIntegerValue(ulong uvalue) { }
+	public override void WriteComment(string text) { }
+
+	private void EnsureWriteBuffer() { }
+
+	private void WriteIntegerValue(long value) { }
+
+	private void WriteIntegerValue(ulong uvalue) { }
 
 }
 
@@ -1132,21 +1132,21 @@ public class JsonWriterException : JsonException // TypeDefIndex: 5898
 	[CompilerGeneratedAttribute] 
 	private string <Path>k__BackingField; 
 
-private string Path { set; }
+	private string Path { set; }
 
 
 	[CompilerGeneratedAttribute] 
-private void set_Path(string value) { }
+	private void set_Path(string value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(SerializationInfo info, StreamingContext context) { }
+	public void .ctor(SerializationInfo info, StreamingContext context) { }
 
-internal void .ctor(string message, Exception innerException, string path) { }
+	internal void .ctor(string message, Exception innerException, string path) { }
 
-internal static JsonWriterException Create(JsonWriter writer, string message, Exception ex) { }
+	internal static JsonWriterException Create(JsonWriter writer, string message, Exception ex) { }
 
-internal static JsonWriterException Create(string path, string message, Exception ex) { }
+	internal static JsonWriterException Create(string path, string message, Exception ex) { }
 
 }
 
@@ -1159,58 +1159,58 @@ public class JsonReaderException : JsonException // TypeDefIndex: 5899
 	[CompilerGeneratedAttribute] 
 	private string <Path>k__BackingField; 
 
-private int LineNumber { set; }
-private int LinePosition { set; }
-private string Path { set; }
+	private int LineNumber { set; }
+	private int LinePosition { set; }
+	private string Path { set; }
 
 
 	[CompilerGeneratedAttribute] 
-private void set_LineNumber(int value) { }
+	private void set_LineNumber(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_LinePosition(int value) { }
+	private void set_LinePosition(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Path(string value) { }
+	private void set_Path(string value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(SerializationInfo info, StreamingContext context) { }
+	public void .ctor(SerializationInfo info, StreamingContext context) { }
 
-internal void .ctor(string message, Exception innerException, string path, int lineNumber, int linePosition) { }
+	internal void .ctor(string message, Exception innerException, string path, int lineNumber, int linePosition) { }
 
-internal static JsonReaderException Create(JsonReader reader, string message) { }
+	internal static JsonReaderException Create(JsonReader reader, string message) { }
 
-internal static JsonReaderException Create(JsonReader reader, string message, Exception ex) { }
+	internal static JsonReaderException Create(JsonReader reader, string message, Exception ex) { }
 
-internal static JsonReaderException Create(IJsonLineInfo lineInfo, string path, string message, Exception ex) { }
+	internal static JsonReaderException Create(IJsonLineInfo lineInfo, string path, string message, Exception ex) { }
 
 }
 
 public abstract class JsonConverter // TypeDefIndex: 5900
 {
-public virtual bool CanRead { get; }
-public virtual bool CanWrite { get; }
+	public virtual bool CanRead { get; }
+	public virtual bool CanWrite { get; }
 
 
-public abstract void WriteJson(JsonWriter writer, object value, JsonSerializer serializer);
+	public abstract void WriteJson(JsonWriter writer, object value, JsonSerializer serializer);
 
-public abstract object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer);
+	public abstract object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer);
 
-public abstract bool CanConvert(Type objectType);
+	public abstract bool CanConvert(Type objectType);
 
-public virtual bool get_CanRead() { }
+	public virtual bool get_CanRead() { }
 
-public virtual bool get_CanWrite() { }
+	public virtual bool get_CanWrite() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
 public class JsonConverterCollection : Collection<JsonConverter> // TypeDefIndex: 5901
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1234,151 +1234,151 @@ public abstract class JsonReader : IDisposable // TypeDefIndex: 5902
 	[CompilerGeneratedAttribute] 
 	private bool <SupportMultipleContent>k__BackingField; 
 
-protected JsonReader.State CurrentState { get; }
-public bool CloseInput { get; set; }
-public bool SupportMultipleContent { get; set; }
-public DateTimeZoneHandling DateTimeZoneHandling { get; set; }
-public DateParseHandling DateParseHandling { get; set; }
-public FloatParseHandling FloatParseHandling { get; set; }
-public string DateFormatString { get; set; }
-public Nullable<int> MaxDepth { get; set; }
-public virtual JsonToken TokenType { get; }
-public virtual object Value { get; }
-public virtual Type ValueType { get; }
-public virtual int Depth { get; }
-public virtual string Path { get; }
-public CultureInfo Culture { get; set; }
+	protected JsonReader.State CurrentState { get; }
+	public bool CloseInput { get; set; }
+	public bool SupportMultipleContent { get; set; }
+	public DateTimeZoneHandling DateTimeZoneHandling { get; set; }
+	public DateParseHandling DateParseHandling { get; set; }
+	public FloatParseHandling FloatParseHandling { get; set; }
+	public string DateFormatString { get; set; }
+	public Nullable<int> MaxDepth { get; set; }
+	public virtual JsonToken TokenType { get; }
+	public virtual object Value { get; }
+	public virtual Type ValueType { get; }
+	public virtual int Depth { get; }
+	public virtual string Path { get; }
+	public CultureInfo Culture { get; set; }
 
 
-protected JsonReader.State get_CurrentState() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_CloseInput() { }
+	protected JsonReader.State get_CurrentState() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_CloseInput(bool value) { }
+	public bool get_CloseInput() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_SupportMultipleContent() { }
+	public void set_CloseInput(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_SupportMultipleContent(bool value) { }
+	public bool get_SupportMultipleContent() { }
 
-public DateTimeZoneHandling get_DateTimeZoneHandling() { }
+	[CompilerGeneratedAttribute] 
+	public void set_SupportMultipleContent(bool value) { }
 
-public void set_DateTimeZoneHandling(DateTimeZoneHandling value) { }
+	public DateTimeZoneHandling get_DateTimeZoneHandling() { }
 
-public DateParseHandling get_DateParseHandling() { }
+	public void set_DateTimeZoneHandling(DateTimeZoneHandling value) { }
 
-public void set_DateParseHandling(DateParseHandling value) { }
+	public DateParseHandling get_DateParseHandling() { }
 
-public FloatParseHandling get_FloatParseHandling() { }
+	public void set_DateParseHandling(DateParseHandling value) { }
 
-public void set_FloatParseHandling(FloatParseHandling value) { }
+	public FloatParseHandling get_FloatParseHandling() { }
 
-public string get_DateFormatString() { }
+	public void set_FloatParseHandling(FloatParseHandling value) { }
 
-public void set_DateFormatString(string value) { }
+	public string get_DateFormatString() { }
 
-public Nullable<int> get_MaxDepth() { }
+	public void set_DateFormatString(string value) { }
 
-public void set_MaxDepth(Nullable<int> value) { }
+	public Nullable<int> get_MaxDepth() { }
 
-public virtual JsonToken get_TokenType() { }
+	public void set_MaxDepth(Nullable<int> value) { }
 
-public virtual object get_Value() { }
+	public virtual JsonToken get_TokenType() { }
 
-public virtual Type get_ValueType() { }
+	public virtual object get_Value() { }
 
-public virtual int get_Depth() { }
+	public virtual Type get_ValueType() { }
 
-public virtual string get_Path() { }
+	public virtual int get_Depth() { }
 
-public CultureInfo get_Culture() { }
+	public virtual string get_Path() { }
 
-public void set_Culture(CultureInfo value) { }
+	public CultureInfo get_Culture() { }
 
-internal JsonPosition GetPosition(int depth) { }
+	public void set_Culture(CultureInfo value) { }
 
-protected void .ctor() { }
+	internal JsonPosition GetPosition(int depth) { }
 
-private void Push(JsonContainerType value) { }
+	protected void .ctor() { }
 
-private JsonContainerType Pop() { }
+	private void Push(JsonContainerType value) { }
 
-private JsonContainerType Peek() { }
+	private JsonContainerType Pop() { }
 
-public abstract bool Read();
+	private JsonContainerType Peek() { }
 
-public virtual Nullable<int> ReadAsInt32() { }
+	public abstract bool Read();
 
-internal Nullable<int> ReadInt32String(string s) { }
+	public virtual Nullable<int> ReadAsInt32() { }
 
-public virtual string ReadAsString() { }
+	internal Nullable<int> ReadInt32String(string s) { }
 
-public virtual byte[] ReadAsBytes() { }
+	public virtual string ReadAsString() { }
 
-internal byte[] ReadArrayIntoByteArray() { }
+	public virtual byte[] ReadAsBytes() { }
 
-public virtual Nullable<double> ReadAsDouble() { }
+	internal byte[] ReadArrayIntoByteArray() { }
 
-internal Nullable<double> ReadDoubleString(string s) { }
+	public virtual Nullable<double> ReadAsDouble() { }
 
-public virtual Nullable<bool> ReadAsBoolean() { }
+	internal Nullable<double> ReadDoubleString(string s) { }
 
-internal Nullable<bool> ReadBooleanString(string s) { }
+	public virtual Nullable<bool> ReadAsBoolean() { }
 
-public virtual Nullable<Decimal> ReadAsDecimal() { }
+	internal Nullable<bool> ReadBooleanString(string s) { }
 
-internal Nullable<Decimal> ReadDecimalString(string s) { }
+	public virtual Nullable<Decimal> ReadAsDecimal() { }
 
-public virtual Nullable<DateTime> ReadAsDateTime() { }
+	internal Nullable<Decimal> ReadDecimalString(string s) { }
 
-internal Nullable<DateTime> ReadDateTimeString(string s) { }
+	public virtual Nullable<DateTime> ReadAsDateTime() { }
 
-public virtual Nullable<DateTimeOffset> ReadAsDateTimeOffset() { }
+	internal Nullable<DateTime> ReadDateTimeString(string s) { }
 
-internal Nullable<DateTimeOffset> ReadDateTimeOffsetString(string s) { }
+	public virtual Nullable<DateTimeOffset> ReadAsDateTimeOffset() { }
 
-internal void ReaderReadAndAssert() { }
+	internal Nullable<DateTimeOffset> ReadDateTimeOffsetString(string s) { }
 
-internal JsonReaderException CreateUnexpectedEndException() { }
+	internal void ReaderReadAndAssert() { }
 
-internal void ReadIntoWrappedTypeObject() { }
+	internal JsonReaderException CreateUnexpectedEndException() { }
 
-public void Skip() { }
+	internal void ReadIntoWrappedTypeObject() { }
 
-protected void SetToken(JsonToken newToken) { }
+	public void Skip() { }
 
-protected void SetToken(JsonToken newToken, object value) { }
+	protected void SetToken(JsonToken newToken) { }
 
-internal void SetToken(JsonToken newToken, object value, bool updateIndex) { }
+	protected void SetToken(JsonToken newToken, object value) { }
 
-internal void SetPostValueState(bool updateIndex) { }
+	internal void SetToken(JsonToken newToken, object value, bool updateIndex) { }
 
-private void UpdateScopeWithFinishedValue() { }
+	internal void SetPostValueState(bool updateIndex) { }
 
-private void ValidateEnd(JsonToken endToken) { }
+	private void UpdateScopeWithFinishedValue() { }
 
-protected void SetStateBasedOnCurrent() { }
+	private void ValidateEnd(JsonToken endToken) { }
 
-private void SetFinished() { }
+	protected void SetStateBasedOnCurrent() { }
 
-private JsonContainerType GetTypeForCloseToken(JsonToken token) { }
+	private void SetFinished() { }
 
-private void System.IDisposable.Dispose() { }
+	private JsonContainerType GetTypeForCloseToken(JsonToken token) { }
 
-protected virtual void Dispose(bool disposing) { }
+	private void System.IDisposable.Dispose() { }
 
-public virtual void Close() { }
+	protected virtual void Dispose(bool disposing) { }
 
-internal void ReadAndAssert() { }
+	public virtual void Close() { }
 
-internal bool ReadAndMoveToContent() { }
+	internal void ReadAndAssert() { }
 
-internal bool MoveToContent() { }
+	internal bool ReadAndMoveToContent() { }
 
-private JsonToken GetContentToken() { }
+	internal bool MoveToContent() { }
+
+	private JsonToken GetContentToken() { }
 
 }
 
@@ -1395,123 +1395,123 @@ public static class JsonConvert // TypeDefIndex: 5904
 	public static readonly string NaN; 
 	private static readonly JsonSerializerSettings InitialSerializerSettings; 
 
-public static Func<JsonSerializerSettings> DefaultSettings { get; set; }
+	public static Func<JsonSerializerSettings> DefaultSettings { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public static Func<JsonSerializerSettings> get_DefaultSettings() { }
+	public static Func<JsonSerializerSettings> get_DefaultSettings() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_DefaultSettings(Func<JsonSerializerSettings> value) { }
+	public static void set_DefaultSettings(Func<JsonSerializerSettings> value) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal static JsonSerializerSettings GetDefaultSettings() { }
+	internal static JsonSerializerSettings GetDefaultSettings() { }
 
-public static string ToString(bool value) { }
+	public static string ToString(bool value) { }
 
-public static string ToString(char value) { }
+	public static string ToString(char value) { }
 
-internal static string ToString(float value, FloatFormatHandling floatFormatHandling, char quoteChar, bool nullable) { }
+	internal static string ToString(float value, FloatFormatHandling floatFormatHandling, char quoteChar, bool nullable) { }
 
-private static string EnsureFloatFormat(double value, string text, FloatFormatHandling floatFormatHandling, char quoteChar, bool nullable) { }
+	private static string EnsureFloatFormat(double value, string text, FloatFormatHandling floatFormatHandling, char quoteChar, bool nullable) { }
 
-internal static string ToString(double value, FloatFormatHandling floatFormatHandling, char quoteChar, bool nullable) { }
+	internal static string ToString(double value, FloatFormatHandling floatFormatHandling, char quoteChar, bool nullable) { }
 
-private static string EnsureDecimalPlace(double value, string text) { }
+	private static string EnsureDecimalPlace(double value, string text) { }
 
-private static string EnsureDecimalPlace(string text) { }
+	private static string EnsureDecimalPlace(string text) { }
 
-public static string ToString(Decimal value) { }
+	public static string ToString(Decimal value) { }
 
-public static string ToString(string value) { }
+	public static string ToString(string value) { }
 
-public static string ToString(string value, char delimiter) { }
+	public static string ToString(string value, char delimiter) { }
 
-public static string ToString(string value, char delimiter, StringEscapeHandling stringEscapeHandling) { }
+	public static string ToString(string value, char delimiter, StringEscapeHandling stringEscapeHandling) { }
 
-public static string SerializeObject(object value) { }
+	public static string SerializeObject(object value) { }
 
-public static string SerializeObject(object value, Formatting formatting) { }
+	public static string SerializeObject(object value, Formatting formatting) { }
 
-public static string SerializeObject(object value, Type type, JsonSerializerSettings settings) { }
+	public static string SerializeObject(object value, Type type, JsonSerializerSettings settings) { }
 
-public static string SerializeObject(object value, Formatting formatting, JsonSerializerSettings settings) { }
+	public static string SerializeObject(object value, Formatting formatting, JsonSerializerSettings settings) { }
 
-public static string SerializeObject(object value, Type type, Formatting formatting, JsonSerializerSettings settings) { }
+	public static string SerializeObject(object value, Type type, Formatting formatting, JsonSerializerSettings settings) { }
 
-private static string SerializeObjectInternal(object value, Type type, JsonSerializer jsonSerializer) { }
+	private static string SerializeObjectInternal(object value, Type type, JsonSerializer jsonSerializer) { }
 
-public static object DeserializeObject(string value, Type type) { }
+	public static object DeserializeObject(string value, Type type) { }
 
-public static T DeserializeObject<T>(string value) { }
-/* GenericInstMethod :
-|
-|-JsonConvert.DeserializeObject<CameraMan.CameraState>
-|
-|-JsonConvert.DeserializeObject<ClientFrametimeRequest>
-|-JsonConvert.DeserializeObject<CompanionSubscription.Status>
-|-JsonConvert.DeserializeObject<Account.AccountJson>
-|-JsonConvert.DeserializeObject<BuildInfo>
-|-JsonConvert.DeserializeObject<AddResponse>
-|-JsonConvert.DeserializeObject<BaseResponse>
-|-JsonConvert.DeserializeObject<QueryResponse[]>
-|-JsonConvert.DeserializeObject<Entry[]>
-|-JsonConvert.DeserializeObject<Rank>
-|-JsonConvert.DeserializeObject<Manifest>
-|-JsonConvert.DeserializeObject<SteamInventoryCrafting.MarketPrice>
-|-JsonConvert.DeserializeObject<Skin.Manifest>
-|-JsonConvert.DeserializeObject<Dictionary<string, CameraMan.CameraState>>
-|-JsonConvert.DeserializeObject<Dictionary<string, int>>
-|-JsonConvert.DeserializeObject<Dictionary<string, string>>
-|-JsonConvert.DeserializeObject<Dictionary<ulong, Chat.MuteEntry>>
-|-JsonConvert.DeserializeObject<List<Admin.PlayerInfo>>
-|-JsonConvert.DeserializeObject<List<Admin.ServerConvarInfo>>
-|-JsonConvert.DeserializeObject<List<Admin.ServerUGCInfo>>
-|-JsonConvert.DeserializeObject<Telephone.CensoredNumbers>
-|-JsonConvert.DeserializeObject<object>
-|
-|-JsonConvert.DeserializeObject<NoticeData>
-|
-|-JsonConvert.DeserializeObject<RCon.Command>
-|
-|-JsonConvert.DeserializeObject<CorePropsFile>
-*/
+	public static T DeserializeObject<T>(string value) { }
+	/* GenericInstMethod :
+	|
+	|-JsonConvert.DeserializeObject<CameraMan.CameraState>
+	|
+	|-JsonConvert.DeserializeObject<ClientFrametimeRequest>
+	|-JsonConvert.DeserializeObject<CompanionSubscription.Status>
+	|-JsonConvert.DeserializeObject<Account.AccountJson>
+	|-JsonConvert.DeserializeObject<BuildInfo>
+	|-JsonConvert.DeserializeObject<AddResponse>
+	|-JsonConvert.DeserializeObject<BaseResponse>
+	|-JsonConvert.DeserializeObject<QueryResponse[]>
+	|-JsonConvert.DeserializeObject<Entry[]>
+	|-JsonConvert.DeserializeObject<Rank>
+	|-JsonConvert.DeserializeObject<Manifest>
+	|-JsonConvert.DeserializeObject<SteamInventoryCrafting.MarketPrice>
+	|-JsonConvert.DeserializeObject<Skin.Manifest>
+	|-JsonConvert.DeserializeObject<Dictionary<string, CameraMan.CameraState>>
+	|-JsonConvert.DeserializeObject<Dictionary<string, int>>
+	|-JsonConvert.DeserializeObject<Dictionary<string, string>>
+	|-JsonConvert.DeserializeObject<Dictionary<ulong, Chat.MuteEntry>>
+	|-JsonConvert.DeserializeObject<List<Admin.PlayerInfo>>
+	|-JsonConvert.DeserializeObject<List<Admin.ServerConvarInfo>>
+	|-JsonConvert.DeserializeObject<List<Admin.ServerUGCInfo>>
+	|-JsonConvert.DeserializeObject<Telephone.CensoredNumbers>
+	|-JsonConvert.DeserializeObject<object>
+	|
+	|-JsonConvert.DeserializeObject<NoticeData>
+	|
+	|-JsonConvert.DeserializeObject<RCon.Command>
+	|
+	|-JsonConvert.DeserializeObject<CorePropsFile>
+	*/
 
-public static T DeserializeObject<T>(string value, JsonSerializerSettings settings) { }
-/* GenericInstMethod :
-|
-|-JsonConvert.DeserializeObject<CameraMan.CameraState>
-|
-|-JsonConvert.DeserializeObject<NoticeData>
-|
-|-JsonConvert.DeserializeObject<RCon.Command>
-|
-|-JsonConvert.DeserializeObject<CorePropsFile>
-|
-|-JsonConvert.DeserializeObject<object>
-*/
+	public static T DeserializeObject<T>(string value, JsonSerializerSettings settings) { }
+	/* GenericInstMethod :
+	|
+	|-JsonConvert.DeserializeObject<CameraMan.CameraState>
+	|
+	|-JsonConvert.DeserializeObject<NoticeData>
+	|
+	|-JsonConvert.DeserializeObject<RCon.Command>
+	|
+	|-JsonConvert.DeserializeObject<CorePropsFile>
+	|
+	|-JsonConvert.DeserializeObject<object>
+	*/
 
-public static object DeserializeObject(string value, Type type, JsonSerializerSettings settings) { }
+	public static object DeserializeObject(string value, Type type, JsonSerializerSettings settings) { }
 
 }
 
 public class JsonSerializationException : JsonException // TypeDefIndex: 5905
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string message) { }
+	public void .ctor(string message) { }
 
-public void .ctor(string message, Exception innerException) { }
+	public void .ctor(string message, Exception innerException) { }
 
-public void .ctor(SerializationInfo info, StreamingContext context) { }
+	public void .ctor(SerializationInfo info, StreamingContext context) { }
 
-internal static JsonSerializationException Create(JsonReader reader, string message) { }
+	internal static JsonSerializationException Create(JsonReader reader, string message) { }
 
-internal static JsonSerializationException Create(JsonReader reader, string message, Exception ex) { }
+	internal static JsonSerializationException Create(JsonReader reader, string message, Exception ex) { }
 
-internal static JsonSerializationException Create(IJsonLineInfo lineInfo, string path, string message, Exception ex) { }
+	internal static JsonSerializationException Create(IJsonLineInfo lineInfo, string path, string message, Exception ex) { }
 
 }
 
@@ -1550,157 +1550,157 @@ public class JsonSerializer // TypeDefIndex: 5906
 	[CompilerGeneratedAttribute] 
 	private EventHandler<ErrorEventArgs> Error; 
 
-public virtual IReferenceResolver ReferenceResolver { set; }
-public virtual SerializationBinder Binder { set; }
-public virtual ITraceWriter TraceWriter { get; set; }
-public virtual IEqualityComparer EqualityComparer { set; }
-public virtual TypeNameHandling TypeNameHandling { set; }
-public virtual FormatterAssemblyStyle TypeNameAssemblyFormat { set; }
-public virtual PreserveReferencesHandling PreserveReferencesHandling { set; }
-public virtual ReferenceLoopHandling ReferenceLoopHandling { set; }
-public virtual MissingMemberHandling MissingMemberHandling { set; }
-public virtual NullValueHandling NullValueHandling { set; }
-public virtual DefaultValueHandling DefaultValueHandling { set; }
-public virtual ObjectCreationHandling ObjectCreationHandling { get; set; }
-public virtual ConstructorHandling ConstructorHandling { set; }
-public virtual MetadataPropertyHandling MetadataPropertyHandling { get; set; }
-public virtual JsonConverterCollection Converters { get; }
-public virtual IContractResolver ContractResolver { get; set; }
-public virtual StreamingContext Context { get; set; }
-public virtual Formatting Formatting { get; set; }
-public virtual bool CheckAdditionalContent { get; set; }
+	public virtual IReferenceResolver ReferenceResolver { set; }
+	public virtual SerializationBinder Binder { set; }
+	public virtual ITraceWriter TraceWriter { get; set; }
+	public virtual IEqualityComparer EqualityComparer { set; }
+	public virtual TypeNameHandling TypeNameHandling { set; }
+	public virtual FormatterAssemblyStyle TypeNameAssemblyFormat { set; }
+	public virtual PreserveReferencesHandling PreserveReferencesHandling { set; }
+	public virtual ReferenceLoopHandling ReferenceLoopHandling { set; }
+	public virtual MissingMemberHandling MissingMemberHandling { set; }
+	public virtual NullValueHandling NullValueHandling { set; }
+	public virtual DefaultValueHandling DefaultValueHandling { set; }
+	public virtual ObjectCreationHandling ObjectCreationHandling { get; set; }
+	public virtual ConstructorHandling ConstructorHandling { set; }
+	public virtual MetadataPropertyHandling MetadataPropertyHandling { get; set; }
+	public virtual JsonConverterCollection Converters { get; }
+	public virtual IContractResolver ContractResolver { get; set; }
+	public virtual StreamingContext Context { get; set; }
+	public virtual Formatting Formatting { get; set; }
+	public virtual bool CheckAdditionalContent { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public virtual void add_Error(EventHandler<ErrorEventArgs> value) { }
+	public virtual void add_Error(EventHandler<ErrorEventArgs> value) { }
 
 	[CompilerGeneratedAttribute] 
-public virtual void remove_Error(EventHandler<ErrorEventArgs> value) { }
+	public virtual void remove_Error(EventHandler<ErrorEventArgs> value) { }
 
-public virtual void set_ReferenceResolver(IReferenceResolver value) { }
+	public virtual void set_ReferenceResolver(IReferenceResolver value) { }
 
-public virtual void set_Binder(SerializationBinder value) { }
+	public virtual void set_Binder(SerializationBinder value) { }
 
-public virtual ITraceWriter get_TraceWriter() { }
+	public virtual ITraceWriter get_TraceWriter() { }
 
-public virtual void set_TraceWriter(ITraceWriter value) { }
+	public virtual void set_TraceWriter(ITraceWriter value) { }
 
-public virtual void set_EqualityComparer(IEqualityComparer value) { }
+	public virtual void set_EqualityComparer(IEqualityComparer value) { }
 
-public virtual void set_TypeNameHandling(TypeNameHandling value) { }
+	public virtual void set_TypeNameHandling(TypeNameHandling value) { }
 
-public virtual void set_TypeNameAssemblyFormat(FormatterAssemblyStyle value) { }
+	public virtual void set_TypeNameAssemblyFormat(FormatterAssemblyStyle value) { }
 
-public virtual void set_PreserveReferencesHandling(PreserveReferencesHandling value) { }
+	public virtual void set_PreserveReferencesHandling(PreserveReferencesHandling value) { }
 
-public virtual void set_ReferenceLoopHandling(ReferenceLoopHandling value) { }
+	public virtual void set_ReferenceLoopHandling(ReferenceLoopHandling value) { }
 
-public virtual void set_MissingMemberHandling(MissingMemberHandling value) { }
+	public virtual void set_MissingMemberHandling(MissingMemberHandling value) { }
 
-public virtual void set_NullValueHandling(NullValueHandling value) { }
+	public virtual void set_NullValueHandling(NullValueHandling value) { }
 
-public virtual void set_DefaultValueHandling(DefaultValueHandling value) { }
+	public virtual void set_DefaultValueHandling(DefaultValueHandling value) { }
 
-public virtual ObjectCreationHandling get_ObjectCreationHandling() { }
+	public virtual ObjectCreationHandling get_ObjectCreationHandling() { }
 
-public virtual void set_ObjectCreationHandling(ObjectCreationHandling value) { }
+	public virtual void set_ObjectCreationHandling(ObjectCreationHandling value) { }
 
-public virtual void set_ConstructorHandling(ConstructorHandling value) { }
+	public virtual void set_ConstructorHandling(ConstructorHandling value) { }
 
-public virtual MetadataPropertyHandling get_MetadataPropertyHandling() { }
+	public virtual MetadataPropertyHandling get_MetadataPropertyHandling() { }
 
-public virtual void set_MetadataPropertyHandling(MetadataPropertyHandling value) { }
+	public virtual void set_MetadataPropertyHandling(MetadataPropertyHandling value) { }
 
-public virtual JsonConverterCollection get_Converters() { }
+	public virtual JsonConverterCollection get_Converters() { }
 
-public virtual IContractResolver get_ContractResolver() { }
+	public virtual IContractResolver get_ContractResolver() { }
 
-public virtual void set_ContractResolver(IContractResolver value) { }
+	public virtual void set_ContractResolver(IContractResolver value) { }
 
-public virtual StreamingContext get_Context() { }
+	public virtual StreamingContext get_Context() { }
 
-public virtual void set_Context(StreamingContext value) { }
+	public virtual void set_Context(StreamingContext value) { }
 
-public virtual Formatting get_Formatting() { }
+	public virtual Formatting get_Formatting() { }
 
-public virtual void set_Formatting(Formatting value) { }
+	public virtual void set_Formatting(Formatting value) { }
 
-public virtual bool get_CheckAdditionalContent() { }
+	public virtual bool get_CheckAdditionalContent() { }
 
-public virtual void set_CheckAdditionalContent(bool value) { }
+	public virtual void set_CheckAdditionalContent(bool value) { }
 
-internal bool IsCheckAdditionalContentSet() { }
+	internal bool IsCheckAdditionalContentSet() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public static JsonSerializer Create() { }
+	public static JsonSerializer Create() { }
 
-public static JsonSerializer Create(JsonSerializerSettings settings) { }
+	public static JsonSerializer Create(JsonSerializerSettings settings) { }
 
-public static JsonSerializer CreateDefault() { }
+	public static JsonSerializer CreateDefault() { }
 
-public static JsonSerializer CreateDefault(JsonSerializerSettings settings) { }
+	public static JsonSerializer CreateDefault(JsonSerializerSettings settings) { }
 
-private static void ApplySerializerSettings(JsonSerializer serializer, JsonSerializerSettings settings) { }
+	private static void ApplySerializerSettings(JsonSerializer serializer, JsonSerializerSettings settings) { }
 
-public void Populate(JsonReader reader, object target) { }
+	public void Populate(JsonReader reader, object target) { }
 
-internal virtual void PopulateInternal(JsonReader reader, object target) { }
+	internal virtual void PopulateInternal(JsonReader reader, object target) { }
 
-public T Deserialize<T>(JsonReader reader) { }
-/* GenericInstMethod :
-|
-|-JsonSerializer.Deserialize<Int32Enum>
-|-JsonSerializer.Deserialize<RegexOptions>
-|
-|-JsonSerializer.Deserialize<object>
-*/
+	public T Deserialize<T>(JsonReader reader) { }
+	/* GenericInstMethod :
+	|
+	|-JsonSerializer.Deserialize<Int32Enum>
+	|-JsonSerializer.Deserialize<RegexOptions>
+	|
+	|-JsonSerializer.Deserialize<object>
+	*/
 
-public object Deserialize(JsonReader reader, Type objectType) { }
+	public object Deserialize(JsonReader reader, Type objectType) { }
 
-internal virtual object DeserializeInternal(JsonReader reader, Type objectType) { }
+	internal virtual object DeserializeInternal(JsonReader reader, Type objectType) { }
 
-private void SetupReader(JsonReader reader, out CultureInfo previousCulture, out Nullable<DateTimeZoneHandling> previousDateTimeZoneHandling, out Nullable<DateParseHandling> previousDateParseHandling, out Nullable<FloatParseHandling> previousFloatParseHandling, out Nullable<int> previousMaxDepth, out string previousDateFormatString) { }
+	private void SetupReader(JsonReader reader, out CultureInfo previousCulture, out Nullable<DateTimeZoneHandling> previousDateTimeZoneHandling, out Nullable<DateParseHandling> previousDateParseHandling, out Nullable<FloatParseHandling> previousFloatParseHandling, out Nullable<int> previousMaxDepth, out string previousDateFormatString) { }
 
-private void ResetReader(JsonReader reader, CultureInfo previousCulture, Nullable<DateTimeZoneHandling> previousDateTimeZoneHandling, Nullable<DateParseHandling> previousDateParseHandling, Nullable<FloatParseHandling> previousFloatParseHandling, Nullable<int> previousMaxDepth, string previousDateFormatString) { }
+	private void ResetReader(JsonReader reader, CultureInfo previousCulture, Nullable<DateTimeZoneHandling> previousDateTimeZoneHandling, Nullable<DateParseHandling> previousDateParseHandling, Nullable<FloatParseHandling> previousFloatParseHandling, Nullable<int> previousMaxDepth, string previousDateFormatString) { }
 
-public void Serialize(JsonWriter jsonWriter, object value, Type objectType) { }
+	public void Serialize(JsonWriter jsonWriter, object value, Type objectType) { }
 
-public void Serialize(JsonWriter jsonWriter, object value) { }
+	public void Serialize(JsonWriter jsonWriter, object value) { }
 
-internal virtual void SerializeInternal(JsonWriter jsonWriter, object value, Type objectType) { }
+	internal virtual void SerializeInternal(JsonWriter jsonWriter, object value, Type objectType) { }
 
-internal IReferenceResolver GetReferenceResolver() { }
+	internal IReferenceResolver GetReferenceResolver() { }
 
-internal JsonConverter GetMatchingConverter(Type type) { }
+	internal JsonConverter GetMatchingConverter(Type type) { }
 
-internal static JsonConverter GetMatchingConverter(IList<JsonConverter> converters, Type objectType) { }
+	internal static JsonConverter GetMatchingConverter(IList<JsonConverter> converters, Type objectType) { }
 
-internal void OnError(ErrorEventArgs e) { }
+	internal void OnError(ErrorEventArgs e) { }
 
 }
 
 public enum JsonToken // TypeDefIndex: 5911
 {
 	public int value__; 
-public const JsonToken None = 0;
-public const JsonToken StartObject = 1;
-public const JsonToken StartArray = 2;
-public const JsonToken StartConstructor = 3;
-public const JsonToken PropertyName = 4;
-public const JsonToken Comment = 5;
-public const JsonToken Raw = 6;
-public const JsonToken Integer = 7;
-public const JsonToken Float = 8;
-public const JsonToken String = 9;
-public const JsonToken Boolean = 10;
-public const JsonToken Null = 11;
-public const JsonToken Undefined = 12;
-public const JsonToken EndObject = 13;
-public const JsonToken EndArray = 14;
-public const JsonToken EndConstructor = 15;
-public const JsonToken Date = 16;
-public const JsonToken Bytes = 17;
+	public const JsonToken None = 0;
+	public const JsonToken StartObject = 1;
+	public const JsonToken StartArray = 2;
+	public const JsonToken StartConstructor = 3;
+	public const JsonToken PropertyName = 4;
+	public const JsonToken Comment = 5;
+	public const JsonToken Raw = 6;
+	public const JsonToken Integer = 7;
+	public const JsonToken Float = 8;
+	public const JsonToken String = 9;
+	public const JsonToken Boolean = 10;
+	public const JsonToken Null = 11;
+	public const JsonToken Undefined = 12;
+	public const JsonToken EndObject = 13;
+	public const JsonToken EndArray = 14;
+	public const JsonToken EndConstructor = 15;
+	public const JsonToken Date = 16;
+	public const JsonToken Bytes = 17;
 
 }
 
@@ -1721,266 +1721,266 @@ public abstract class JsonWriter : IDisposable // TypeDefIndex: 5912
 	private string _dateFormatString; 
 	private CultureInfo _culture; 
 
-public bool CloseOutput { get; set; }
-protected internal int Top { get; }
-public WriteState WriteState { get; }
-internal string ContainerPath { get; }
-public string Path { get; }
-public Formatting Formatting { get; set; }
-public DateFormatHandling DateFormatHandling { get; set; }
-public DateTimeZoneHandling DateTimeZoneHandling { get; set; }
-public StringEscapeHandling StringEscapeHandling { get; set; }
-public FloatFormatHandling FloatFormatHandling { get; set; }
-public string DateFormatString { get; set; }
-public CultureInfo Culture { get; set; }
+	public bool CloseOutput { get; set; }
+	protected internal int Top { get; }
+	public WriteState WriteState { get; }
+	internal string ContainerPath { get; }
+	public string Path { get; }
+	public Formatting Formatting { get; set; }
+	public DateFormatHandling DateFormatHandling { get; set; }
+	public DateTimeZoneHandling DateTimeZoneHandling { get; set; }
+	public StringEscapeHandling StringEscapeHandling { get; set; }
+	public FloatFormatHandling FloatFormatHandling { get; set; }
+	public string DateFormatString { get; set; }
+	public CultureInfo Culture { get; set; }
 
 
-internal static JsonWriter.State[][] BuildStateArray() { }
+	internal static JsonWriter.State[][] BuildStateArray() { }
 
-private static void .cctor() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_CloseOutput() { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_CloseOutput(bool value) { }
+	public bool get_CloseOutput() { }
 
-protected internal int get_Top() { }
+	[CompilerGeneratedAttribute] 
+	public void set_CloseOutput(bool value) { }
 
-public WriteState get_WriteState() { }
+	protected internal int get_Top() { }
 
-internal string get_ContainerPath() { }
+	public WriteState get_WriteState() { }
 
-public string get_Path() { }
+	internal string get_ContainerPath() { }
 
-public Formatting get_Formatting() { }
+	public string get_Path() { }
 
-public void set_Formatting(Formatting value) { }
+	public Formatting get_Formatting() { }
 
-public DateFormatHandling get_DateFormatHandling() { }
+	public void set_Formatting(Formatting value) { }
 
-public void set_DateFormatHandling(DateFormatHandling value) { }
+	public DateFormatHandling get_DateFormatHandling() { }
 
-public DateTimeZoneHandling get_DateTimeZoneHandling() { }
+	public void set_DateFormatHandling(DateFormatHandling value) { }
 
-public void set_DateTimeZoneHandling(DateTimeZoneHandling value) { }
+	public DateTimeZoneHandling get_DateTimeZoneHandling() { }
 
-public StringEscapeHandling get_StringEscapeHandling() { }
+	public void set_DateTimeZoneHandling(DateTimeZoneHandling value) { }
 
-public void set_StringEscapeHandling(StringEscapeHandling value) { }
+	public StringEscapeHandling get_StringEscapeHandling() { }
 
-internal virtual void OnStringEscapeHandlingChanged() { }
+	public void set_StringEscapeHandling(StringEscapeHandling value) { }
 
-public FloatFormatHandling get_FloatFormatHandling() { }
+	internal virtual void OnStringEscapeHandlingChanged() { }
 
-public void set_FloatFormatHandling(FloatFormatHandling value) { }
+	public FloatFormatHandling get_FloatFormatHandling() { }
 
-public string get_DateFormatString() { }
+	public void set_FloatFormatHandling(FloatFormatHandling value) { }
 
-public void set_DateFormatString(string value) { }
+	public string get_DateFormatString() { }
 
-public CultureInfo get_Culture() { }
+	public void set_DateFormatString(string value) { }
 
-public void set_Culture(CultureInfo value) { }
+	public CultureInfo get_Culture() { }
 
-protected void .ctor() { }
+	public void set_Culture(CultureInfo value) { }
 
-internal void UpdateScopeWithFinishedValue() { }
+	protected void .ctor() { }
 
-private void Push(JsonContainerType value) { }
+	internal void UpdateScopeWithFinishedValue() { }
 
-private JsonContainerType Pop() { }
+	private void Push(JsonContainerType value) { }
 
-private JsonContainerType Peek() { }
+	private JsonContainerType Pop() { }
 
-public virtual void Close() { }
+	private JsonContainerType Peek() { }
 
-public virtual void WriteStartObject() { }
+	public virtual void Close() { }
 
-public virtual void WriteEndObject() { }
+	public virtual void WriteStartObject() { }
 
-public virtual void WriteStartArray() { }
+	public virtual void WriteEndObject() { }
 
-public virtual void WriteEndArray() { }
+	public virtual void WriteStartArray() { }
 
-public virtual void WriteStartConstructor(string name) { }
+	public virtual void WriteEndArray() { }
 
-public virtual void WriteEndConstructor() { }
+	public virtual void WriteStartConstructor(string name) { }
 
-public virtual void WritePropertyName(string name) { }
+	public virtual void WriteEndConstructor() { }
 
-public virtual void WritePropertyName(string name, bool escape) { }
+	public virtual void WritePropertyName(string name) { }
 
-public virtual void WriteEnd() { }
+	public virtual void WritePropertyName(string name, bool escape) { }
 
-public void WriteToken(JsonReader reader) { }
+	public virtual void WriteEnd() { }
 
-public void WriteToken(JsonReader reader, bool writeChildren) { }
+	public void WriteToken(JsonReader reader) { }
 
-public void WriteToken(JsonToken token, object value) { }
+	public void WriteToken(JsonReader reader, bool writeChildren) { }
 
-internal virtual void WriteToken(JsonReader reader, bool writeChildren, bool writeDateConstructorAsDate, bool writeComments) { }
+	public void WriteToken(JsonToken token, object value) { }
 
-private void WriteConstructorDate(JsonReader reader) { }
+	internal virtual void WriteToken(JsonReader reader, bool writeChildren, bool writeDateConstructorAsDate, bool writeComments) { }
 
-private void WriteEnd(JsonContainerType type) { }
+	private void WriteConstructorDate(JsonReader reader) { }
 
-private void AutoCompleteAll() { }
+	private void WriteEnd(JsonContainerType type) { }
 
-private JsonToken GetCloseTokenForType(JsonContainerType type) { }
+	private void AutoCompleteAll() { }
 
-private void AutoCompleteClose(JsonContainerType type) { }
+	private JsonToken GetCloseTokenForType(JsonContainerType type) { }
 
-protected virtual void WriteEnd(JsonToken token) { }
+	private void AutoCompleteClose(JsonContainerType type) { }
 
-protected virtual void WriteIndent() { }
+	protected virtual void WriteEnd(JsonToken token) { }
 
-protected virtual void WriteValueDelimiter() { }
+	protected virtual void WriteIndent() { }
 
-protected virtual void WriteIndentSpace() { }
+	protected virtual void WriteValueDelimiter() { }
 
-internal void AutoComplete(JsonToken tokenBeingWritten) { }
+	protected virtual void WriteIndentSpace() { }
 
-public virtual void WriteNull() { }
+	internal void AutoComplete(JsonToken tokenBeingWritten) { }
 
-public virtual void WriteUndefined() { }
+	public virtual void WriteNull() { }
 
-public virtual void WriteRaw(string json) { }
+	public virtual void WriteUndefined() { }
 
-public virtual void WriteRawValue(string json) { }
+	public virtual void WriteRaw(string json) { }
 
-public virtual void WriteValue(string value) { }
+	public virtual void WriteRawValue(string json) { }
 
-public virtual void WriteValue(int value) { }
+	public virtual void WriteValue(string value) { }
 
-	[CLSCompliantAttribute] 
-public virtual void WriteValue(uint value) { }
-
-public virtual void WriteValue(long value) { }
+	public virtual void WriteValue(int value) { }
 
 	[CLSCompliantAttribute] 
-public virtual void WriteValue(ulong value) { }
+	public virtual void WriteValue(uint value) { }
 
-public virtual void WriteValue(float value) { }
-
-public virtual void WriteValue(double value) { }
-
-public virtual void WriteValue(bool value) { }
-
-public virtual void WriteValue(short value) { }
+	public virtual void WriteValue(long value) { }
 
 	[CLSCompliantAttribute] 
-public virtual void WriteValue(ushort value) { }
+	public virtual void WriteValue(ulong value) { }
 
-public virtual void WriteValue(char value) { }
+	public virtual void WriteValue(float value) { }
 
-public virtual void WriteValue(byte value) { }
+	public virtual void WriteValue(double value) { }
 
-	[CLSCompliantAttribute] 
-public virtual void WriteValue(sbyte value) { }
+	public virtual void WriteValue(bool value) { }
 
-public virtual void WriteValue(Decimal value) { }
-
-public virtual void WriteValue(DateTime value) { }
-
-public virtual void WriteValue(DateTimeOffset value) { }
-
-public virtual void WriteValue(Guid value) { }
-
-public virtual void WriteValue(TimeSpan value) { }
-
-public virtual void WriteValue(Nullable<int> value) { }
+	public virtual void WriteValue(short value) { }
 
 	[CLSCompliantAttribute] 
-public virtual void WriteValue(Nullable<uint> value) { }
+	public virtual void WriteValue(ushort value) { }
 
-public virtual void WriteValue(Nullable<long> value) { }
+	public virtual void WriteValue(char value) { }
 
-	[CLSCompliantAttribute] 
-public virtual void WriteValue(Nullable<ulong> value) { }
-
-public virtual void WriteValue(Nullable<float> value) { }
-
-public virtual void WriteValue(Nullable<double> value) { }
-
-public virtual void WriteValue(Nullable<bool> value) { }
-
-public virtual void WriteValue(Nullable<short> value) { }
+	public virtual void WriteValue(byte value) { }
 
 	[CLSCompliantAttribute] 
-public virtual void WriteValue(Nullable<ushort> value) { }
+	public virtual void WriteValue(sbyte value) { }
 
-public virtual void WriteValue(Nullable<char> value) { }
+	public virtual void WriteValue(Decimal value) { }
 
-public virtual void WriteValue(Nullable<byte> value) { }
+	public virtual void WriteValue(DateTime value) { }
+
+	public virtual void WriteValue(DateTimeOffset value) { }
+
+	public virtual void WriteValue(Guid value) { }
+
+	public virtual void WriteValue(TimeSpan value) { }
+
+	public virtual void WriteValue(Nullable<int> value) { }
 
 	[CLSCompliantAttribute] 
-public virtual void WriteValue(Nullable<sbyte> value) { }
+	public virtual void WriteValue(Nullable<uint> value) { }
 
-public virtual void WriteValue(Nullable<Decimal> value) { }
+	public virtual void WriteValue(Nullable<long> value) { }
 
-public virtual void WriteValue(Nullable<DateTime> value) { }
+	[CLSCompliantAttribute] 
+	public virtual void WriteValue(Nullable<ulong> value) { }
 
-public virtual void WriteValue(Nullable<DateTimeOffset> value) { }
+	public virtual void WriteValue(Nullable<float> value) { }
 
-public virtual void WriteValue(Nullable<Guid> value) { }
+	public virtual void WriteValue(Nullable<double> value) { }
 
-public virtual void WriteValue(Nullable<TimeSpan> value) { }
+	public virtual void WriteValue(Nullable<bool> value) { }
 
-public virtual void WriteValue(byte[] value) { }
+	public virtual void WriteValue(Nullable<short> value) { }
 
-public virtual void WriteValue(Uri value) { }
+	[CLSCompliantAttribute] 
+	public virtual void WriteValue(Nullable<ushort> value) { }
 
-public virtual void WriteValue(object value) { }
+	public virtual void WriteValue(Nullable<char> value) { }
 
-public virtual void WriteComment(string text) { }
+	public virtual void WriteValue(Nullable<byte> value) { }
 
-private void System.IDisposable.Dispose() { }
+	[CLSCompliantAttribute] 
+	public virtual void WriteValue(Nullable<sbyte> value) { }
 
-protected virtual void Dispose(bool disposing) { }
+	public virtual void WriteValue(Nullable<Decimal> value) { }
 
-internal static void WriteValue(JsonWriter writer, PrimitiveTypeCode typeCode, object value) { }
+	public virtual void WriteValue(Nullable<DateTime> value) { }
 
-private static JsonWriterException CreateUnsupportedTypeException(JsonWriter writer, object value) { }
+	public virtual void WriteValue(Nullable<DateTimeOffset> value) { }
 
-internal void InternalWriteEnd(JsonContainerType container) { }
+	public virtual void WriteValue(Nullable<Guid> value) { }
 
-internal void InternalWritePropertyName(string name) { }
+	public virtual void WriteValue(Nullable<TimeSpan> value) { }
 
-internal void InternalWriteRaw() { }
+	public virtual void WriteValue(byte[] value) { }
 
-internal void InternalWriteStart(JsonToken token, JsonContainerType container) { }
+	public virtual void WriteValue(Uri value) { }
 
-internal void InternalWriteValue(JsonToken token) { }
+	public virtual void WriteValue(object value) { }
 
-internal void InternalWriteComment() { }
+	public virtual void WriteComment(string text) { }
+
+	private void System.IDisposable.Dispose() { }
+
+	protected virtual void Dispose(bool disposing) { }
+
+	internal static void WriteValue(JsonWriter writer, PrimitiveTypeCode typeCode, object value) { }
+
+	private static JsonWriterException CreateUnsupportedTypeException(JsonWriter writer, object value) { }
+
+	internal void InternalWriteEnd(JsonContainerType container) { }
+
+	internal void InternalWritePropertyName(string name) { }
+
+	internal void InternalWriteRaw() { }
+
+	internal void InternalWriteStart(JsonToken token, JsonContainerType container) { }
+
+	internal void InternalWriteValue(JsonToken token) { }
+
+	internal void InternalWriteComment() { }
 
 }
 
 internal enum JsonWriter.State // TypeDefIndex: 5913
 {
 	public int value__; 
-public const JsonWriter.State Start = 0;
-public const JsonWriter.State Property = 1;
-public const JsonWriter.State ObjectStart = 2;
-public const JsonWriter.State Object = 3;
-public const JsonWriter.State ArrayStart = 4;
-public const JsonWriter.State Array = 5;
-public const JsonWriter.State ConstructorStart = 6;
-public const JsonWriter.State Constructor = 7;
-public const JsonWriter.State Closed = 8;
-public const JsonWriter.State Error = 9;
+	public const JsonWriter.State Start = 0;
+	public const JsonWriter.State Property = 1;
+	public const JsonWriter.State ObjectStart = 2;
+	public const JsonWriter.State Object = 3;
+	public const JsonWriter.State ArrayStart = 4;
+	public const JsonWriter.State Array = 5;
+	public const JsonWriter.State ConstructorStart = 6;
+	public const JsonWriter.State Constructor = 7;
+	public const JsonWriter.State Closed = 8;
+	public const JsonWriter.State Error = 9;
 
 }
 
 internal static class JsonTokenUtils // TypeDefIndex: 5918
 {
 
-internal static bool IsEndToken(JsonToken token) { }
+	internal static bool IsEndToken(JsonToken token) { }
 
-internal static bool IsStartToken(JsonToken token) { }
+	internal static bool IsStartToken(JsonToken token) { }
 
-internal static bool IsPrimitiveToken(JsonToken token) { }
+	internal static bool IsPrimitiveToken(JsonToken token) { }
 
 }
 
@@ -1997,45 +1997,45 @@ public class JsonContainerContract : JsonContract // TypeDefIndex: 5977
 	[CompilerGeneratedAttribute] 
 	private Nullable<TypeNameHandling> <ItemTypeNameHandling>k__BackingField; 
 
-internal JsonContract ItemContract { get; set; }
-internal JsonContract FinalItemContract { get; }
-public JsonConverter ItemConverter { get; set; }
-public Nullable<bool> ItemIsReference { get; set; }
-public Nullable<ReferenceLoopHandling> ItemReferenceLoopHandling { get; set; }
-public Nullable<TypeNameHandling> ItemTypeNameHandling { get; set; }
+	internal JsonContract ItemContract { get; set; }
+	internal JsonContract FinalItemContract { get; }
+	public JsonConverter ItemConverter { get; set; }
+	public Nullable<bool> ItemIsReference { get; set; }
+	public Nullable<ReferenceLoopHandling> ItemReferenceLoopHandling { get; set; }
+	public Nullable<TypeNameHandling> ItemTypeNameHandling { get; set; }
 
 
-internal JsonContract get_ItemContract() { }
+	internal JsonContract get_ItemContract() { }
 
-internal void set_ItemContract(JsonContract value) { }
+	internal void set_ItemContract(JsonContract value) { }
 
-internal JsonContract get_FinalItemContract() { }
-
-	[CompilerGeneratedAttribute] 
-public JsonConverter get_ItemConverter() { }
+	internal JsonContract get_FinalItemContract() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemConverter(JsonConverter value) { }
+	public JsonConverter get_ItemConverter() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<bool> get_ItemIsReference() { }
+	public void set_ItemConverter(JsonConverter value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemIsReference(Nullable<bool> value) { }
+	public Nullable<bool> get_ItemIsReference() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<ReferenceLoopHandling> get_ItemReferenceLoopHandling() { }
+	public void set_ItemIsReference(Nullable<bool> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemReferenceLoopHandling(Nullable<ReferenceLoopHandling> value) { }
+	public Nullable<ReferenceLoopHandling> get_ItemReferenceLoopHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<TypeNameHandling> get_ItemTypeNameHandling() { }
+	public void set_ItemReferenceLoopHandling(Nullable<ReferenceLoopHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemTypeNameHandling(Nullable<TypeNameHandling> value) { }
+	public Nullable<TypeNameHandling> get_ItemTypeNameHandling() { }
 
-internal void .ctor(Type underlyingType) { }
+	[CompilerGeneratedAttribute] 
+	public void set_ItemTypeNameHandling(Nullable<TypeNameHandling> value) { }
+
+	internal void .ctor(Type underlyingType) { }
 
 }
 
@@ -2045,54 +2045,54 @@ internal class TraceJsonReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5980
 	private readonly JsonTextWriter _textWriter; 
 	private readonly StringWriter _sw; 
 
-public override int Depth { get; }
-public override string Path { get; }
-public override JsonToken TokenType { get; }
-public override object Value { get; }
-public override Type ValueType { get; }
-private int Newtonsoft.Json.IJsonLineInfo.LineNumber { get; }
-private int Newtonsoft.Json.IJsonLineInfo.LinePosition { get; }
+	public override int Depth { get; }
+	public override string Path { get; }
+	public override JsonToken TokenType { get; }
+	public override object Value { get; }
+	public override Type ValueType { get; }
+	private int Newtonsoft.Json.IJsonLineInfo.LineNumber { get; }
+	private int Newtonsoft.Json.IJsonLineInfo.LinePosition { get; }
 
 
-public void .ctor(JsonReader innerReader) { }
+	public void .ctor(JsonReader innerReader) { }
 
-public string GetDeserializedJsonMessage() { }
+	public string GetDeserializedJsonMessage() { }
 
-public override bool Read() { }
+	public override bool Read() { }
 
-public override Nullable<int> ReadAsInt32() { }
+	public override Nullable<int> ReadAsInt32() { }
 
-public override string ReadAsString() { }
+	public override string ReadAsString() { }
 
-public override byte[] ReadAsBytes() { }
+	public override byte[] ReadAsBytes() { }
 
-public override Nullable<Decimal> ReadAsDecimal() { }
+	public override Nullable<Decimal> ReadAsDecimal() { }
 
-public override Nullable<double> ReadAsDouble() { }
+	public override Nullable<double> ReadAsDouble() { }
 
-public override Nullable<bool> ReadAsBoolean() { }
+	public override Nullable<bool> ReadAsBoolean() { }
 
-public override Nullable<DateTime> ReadAsDateTime() { }
+	public override Nullable<DateTime> ReadAsDateTime() { }
 
-public override Nullable<DateTimeOffset> ReadAsDateTimeOffset() { }
+	public override Nullable<DateTimeOffset> ReadAsDateTimeOffset() { }
 
-public override int get_Depth() { }
+	public override int get_Depth() { }
 
-public override string get_Path() { }
+	public override string get_Path() { }
 
-public override JsonToken get_TokenType() { }
+	public override JsonToken get_TokenType() { }
 
-public override object get_Value() { }
+	public override object get_Value() { }
 
-public override Type get_ValueType() { }
+	public override Type get_ValueType() { }
 
-public override void Close() { }
+	public override void Close() { }
 
-private bool Newtonsoft.Json.IJsonLineInfo.HasLineInfo() { }
+	private bool Newtonsoft.Json.IJsonLineInfo.HasLineInfo() { }
 
-private int Newtonsoft.Json.IJsonLineInfo.get_LineNumber() { }
+	private int Newtonsoft.Json.IJsonLineInfo.get_LineNumber() { }
 
-private int Newtonsoft.Json.IJsonLineInfo.get_LinePosition() { }
+	private int Newtonsoft.Json.IJsonLineInfo.get_LinePosition() { }
 
 }
 
@@ -2103,81 +2103,81 @@ internal class TraceJsonWriter : JsonWriter // TypeDefIndex: 5981
 	private readonly StringWriter _sw; 
 
 
-public void .ctor(JsonWriter innerWriter) { }
+	public void .ctor(JsonWriter innerWriter) { }
 
-public string GetSerializedJsonMessage() { }
+	public string GetSerializedJsonMessage() { }
 
-public override void WriteValue(Decimal value) { }
+	public override void WriteValue(Decimal value) { }
 
-public override void WriteValue(bool value) { }
+	public override void WriteValue(bool value) { }
 
-public override void WriteValue(byte value) { }
+	public override void WriteValue(byte value) { }
 
-public override void WriteValue(Nullable<byte> value) { }
+	public override void WriteValue(Nullable<byte> value) { }
 
-public override void WriteValue(char value) { }
+	public override void WriteValue(char value) { }
 
-public override void WriteValue(byte[] value) { }
+	public override void WriteValue(byte[] value) { }
 
-public override void WriteValue(DateTime value) { }
+	public override void WriteValue(DateTime value) { }
 
-public override void WriteValue(DateTimeOffset value) { }
+	public override void WriteValue(DateTimeOffset value) { }
 
-public override void WriteValue(double value) { }
+	public override void WriteValue(double value) { }
 
-public override void WriteUndefined() { }
+	public override void WriteUndefined() { }
 
-public override void WriteNull() { }
+	public override void WriteNull() { }
 
-public override void WriteValue(float value) { }
+	public override void WriteValue(float value) { }
 
-public override void WriteValue(Guid value) { }
+	public override void WriteValue(Guid value) { }
 
-public override void WriteValue(int value) { }
+	public override void WriteValue(int value) { }
 
-public override void WriteValue(long value) { }
+	public override void WriteValue(long value) { }
 
-public override void WriteValue(object value) { }
+	public override void WriteValue(object value) { }
 
-public override void WriteValue(sbyte value) { }
+	public override void WriteValue(sbyte value) { }
 
-public override void WriteValue(short value) { }
+	public override void WriteValue(short value) { }
 
-public override void WriteValue(string value) { }
+	public override void WriteValue(string value) { }
 
-public override void WriteValue(TimeSpan value) { }
+	public override void WriteValue(TimeSpan value) { }
 
-public override void WriteValue(uint value) { }
+	public override void WriteValue(uint value) { }
 
-public override void WriteValue(ulong value) { }
+	public override void WriteValue(ulong value) { }
 
-public override void WriteValue(Uri value) { }
+	public override void WriteValue(Uri value) { }
 
-public override void WriteValue(ushort value) { }
+	public override void WriteValue(ushort value) { }
 
-public override void WriteComment(string text) { }
+	public override void WriteComment(string text) { }
 
-public override void WriteStartArray() { }
+	public override void WriteStartArray() { }
 
-public override void WriteEndArray() { }
+	public override void WriteEndArray() { }
 
-public override void WriteStartConstructor(string name) { }
+	public override void WriteStartConstructor(string name) { }
 
-public override void WriteEndConstructor() { }
+	public override void WriteEndConstructor() { }
 
-public override void WritePropertyName(string name) { }
+	public override void WritePropertyName(string name) { }
 
-public override void WritePropertyName(string name, bool escape) { }
+	public override void WritePropertyName(string name, bool escape) { }
 
-public override void WriteStartObject() { }
+	public override void WriteStartObject() { }
 
-public override void WriteEndObject() { }
+	public override void WriteEndObject() { }
 
-public override void WriteRawValue(string json) { }
+	public override void WriteRawValue(string json) { }
 
-public override void WriteRaw(string json) { }
+	public override void WriteRaw(string json) { }
 
-public override void Close() { }
+	public override void Close() { }
 
 }
 
@@ -2188,41 +2188,41 @@ internal class JsonFormatterConverter : IFormatterConverter // TypeDefIndex: 598
 	private readonly JsonProperty _member; 
 
 
-public void .ctor(JsonSerializerInternalReader reader, JsonISerializableContract contract, JsonProperty member) { }
+	public void .ctor(JsonSerializerInternalReader reader, JsonISerializableContract contract, JsonProperty member) { }
 
-private T GetTokenValue<T>(object value) { }
-/* GenericInstMethod :
-|
-|-JsonFormatterConverter.GetTokenValue<bool>
-|
-|-JsonFormatterConverter.GetTokenValue<int>
-|
-|-JsonFormatterConverter.GetTokenValue<long>
-|
-|-JsonFormatterConverter.GetTokenValue<object>
-|-JsonFormatterConverter.GetTokenValue<string>
-|
-|-JsonFormatterConverter.GetTokenValue<float>
-*/
+	private T GetTokenValue<T>(object value) { }
+	/* GenericInstMethod :
+	|
+	|-JsonFormatterConverter.GetTokenValue<bool>
+	|
+	|-JsonFormatterConverter.GetTokenValue<int>
+	|
+	|-JsonFormatterConverter.GetTokenValue<long>
+	|
+	|-JsonFormatterConverter.GetTokenValue<object>
+	|-JsonFormatterConverter.GetTokenValue<string>
+	|
+	|-JsonFormatterConverter.GetTokenValue<float>
+	*/
 
-public object Convert(object value, Type type) { }
+	public object Convert(object value, Type type) { }
 
-public bool ToBoolean(object value) { }
+	public bool ToBoolean(object value) { }
 
-public int ToInt32(object value) { }
+	public int ToInt32(object value) { }
 
-public long ToInt64(object value) { }
+	public long ToInt64(object value) { }
 
-public float ToSingle(object value) { }
+	public float ToSingle(object value) { }
 
-public string ToString(object value) { }
+	public string ToString(object value) { }
 
 }
 
 public class JsonLinqContract : JsonContract // TypeDefIndex: 5984
 {
 
-public void .ctor(Type underlyingType) { }
+	public void .ctor(Type underlyingType) { }
 
 }
 
@@ -2232,18 +2232,18 @@ public class JsonPrimitiveContract : JsonContract // TypeDefIndex: 5985
 	private PrimitiveTypeCode <TypeCode>k__BackingField; 
 	private static readonly Dictionary<Type, ReadType> ReadTypeMap; 
 
-internal PrimitiveTypeCode TypeCode { get; set; }
+	internal PrimitiveTypeCode TypeCode { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-internal PrimitiveTypeCode get_TypeCode() { }
+	internal PrimitiveTypeCode get_TypeCode() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_TypeCode(PrimitiveTypeCode value) { }
+	internal void set_TypeCode(PrimitiveTypeCode value) { }
 
-public void .ctor(Type underlyingType) { }
+	public void .ctor(Type underlyingType) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -2269,81 +2269,81 @@ public class JsonArrayContract : JsonContainerContract // TypeDefIndex: 6005
 	[CompilerGeneratedAttribute] 
 	private bool <HasParameterizedCreator>k__BackingField; 
 
-public Type CollectionItemType { get; set; }
-public bool IsMultidimensionalArray { get; set; }
-internal bool IsArray { get; set; }
-internal bool ShouldCreateWrapper { get; set; }
-internal bool CanDeserialize { get; set; }
-internal ObjectConstructor<object> ParameterizedCreator { get; }
-public ObjectConstructor<object> OverrideCreator { get; set; }
-public bool HasParameterizedCreator { get; set; }
-internal bool HasParameterizedCreatorInternal { get; }
+	public Type CollectionItemType { get; set; }
+	public bool IsMultidimensionalArray { get; set; }
+	internal bool IsArray { get; set; }
+	internal bool ShouldCreateWrapper { get; set; }
+	internal bool CanDeserialize { get; set; }
+	internal ObjectConstructor<object> ParameterizedCreator { get; }
+	public ObjectConstructor<object> OverrideCreator { get; set; }
+	public bool HasParameterizedCreator { get; set; }
+	internal bool HasParameterizedCreatorInternal { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public Type get_CollectionItemType() { }
+	public Type get_CollectionItemType() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CollectionItemType(Type value) { }
+	private void set_CollectionItemType(Type value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsMultidimensionalArray() { }
+	public bool get_IsMultidimensionalArray() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsMultidimensionalArray(bool value) { }
+	private void set_IsMultidimensionalArray(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-internal bool get_IsArray() { }
+	internal bool get_IsArray() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsArray(bool value) { }
+	private void set_IsArray(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-internal bool get_ShouldCreateWrapper() { }
+	internal bool get_ShouldCreateWrapper() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ShouldCreateWrapper(bool value) { }
+	private void set_ShouldCreateWrapper(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-internal bool get_CanDeserialize() { }
+	internal bool get_CanDeserialize() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CanDeserialize(bool value) { }
+	private void set_CanDeserialize(bool value) { }
 
-internal ObjectConstructor<object> get_ParameterizedCreator() { }
+	internal ObjectConstructor<object> get_ParameterizedCreator() { }
 
-public ObjectConstructor<object> get_OverrideCreator() { }
+	public ObjectConstructor<object> get_OverrideCreator() { }
 
-public void set_OverrideCreator(ObjectConstructor<object> value) { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_HasParameterizedCreator() { }
+	public void set_OverrideCreator(ObjectConstructor<object> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_HasParameterizedCreator(bool value) { }
+	public bool get_HasParameterizedCreator() { }
 
-internal bool get_HasParameterizedCreatorInternal() { }
+	[CompilerGeneratedAttribute] 
+	public void set_HasParameterizedCreator(bool value) { }
 
-public void .ctor(Type underlyingType) { }
+	internal bool get_HasParameterizedCreatorInternal() { }
 
-internal IWrappedCollection CreateWrapper(object list) { }
+	public void .ctor(Type underlyingType) { }
 
-internal IList CreateTemporaryCollection() { }
+	internal IWrappedCollection CreateWrapper(object list) { }
+
+	internal IList CreateTemporaryCollection() { }
 
 }
 
 internal enum JsonContractType // TypeDefIndex: 6006
 {
 	public int value__; 
-public const JsonContractType None = 0;
-public const JsonContractType Object = 1;
-public const JsonContractType Array = 2;
-public const JsonContractType Primitive = 3;
-public const JsonContractType String = 4;
-public const JsonContractType Dictionary = 5;
-public const JsonContractType Dynamic = 6;
-public const JsonContractType Serializable = 7;
-public const JsonContractType Linq = 8;
+	public const JsonContractType None = 0;
+	public const JsonContractType Object = 1;
+	public const JsonContractType Array = 2;
+	public const JsonContractType Primitive = 3;
+	public const JsonContractType String = 4;
+	public const JsonContractType Dictionary = 5;
+	public const JsonContractType Dynamic = 6;
+	public const JsonContractType Serializable = 7;
+	public const JsonContractType Linq = 8;
 
 }
 
@@ -2377,85 +2377,85 @@ public abstract class JsonContract // TypeDefIndex: 6011
 	[CompilerGeneratedAttribute] 
 	private bool <DefaultCreatorNonPublic>k__BackingField; 
 
-public Type UnderlyingType { get; set; }
-public Type CreatedType { get; set; }
-public Nullable<bool> IsReference { get; set; }
-public JsonConverter Converter { get; set; }
-internal JsonConverter InternalConverter { get; set; }
-public IList<SerializationCallback> OnDeserializedCallbacks { get; }
-public IList<SerializationCallback> OnDeserializingCallbacks { get; }
-public IList<SerializationCallback> OnSerializedCallbacks { get; }
-public IList<SerializationCallback> OnSerializingCallbacks { get; }
-public IList<SerializationErrorCallback> OnErrorCallbacks { get; }
-public Func<object> DefaultCreator { get; set; }
-public bool DefaultCreatorNonPublic { get; set; }
+	public Type UnderlyingType { get; set; }
+	public Type CreatedType { get; set; }
+	public Nullable<bool> IsReference { get; set; }
+	public JsonConverter Converter { get; set; }
+	internal JsonConverter InternalConverter { get; set; }
+	public IList<SerializationCallback> OnDeserializedCallbacks { get; }
+	public IList<SerializationCallback> OnDeserializingCallbacks { get; }
+	public IList<SerializationCallback> OnSerializedCallbacks { get; }
+	public IList<SerializationCallback> OnSerializingCallbacks { get; }
+	public IList<SerializationErrorCallback> OnErrorCallbacks { get; }
+	public Func<object> DefaultCreator { get; set; }
+	public bool DefaultCreatorNonPublic { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Type get_UnderlyingType() { }
+	public Type get_UnderlyingType() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_UnderlyingType(Type value) { }
+	private void set_UnderlyingType(Type value) { }
 
-public Type get_CreatedType() { }
+	public Type get_CreatedType() { }
 
-public void set_CreatedType(Type value) { }
-
-	[CompilerGeneratedAttribute] 
-public Nullable<bool> get_IsReference() { }
+	public void set_CreatedType(Type value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IsReference(Nullable<bool> value) { }
+	public Nullable<bool> get_IsReference() { }
 
 	[CompilerGeneratedAttribute] 
-public JsonConverter get_Converter() { }
+	public void set_IsReference(Nullable<bool> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Converter(JsonConverter value) { }
+	public JsonConverter get_Converter() { }
 
 	[CompilerGeneratedAttribute] 
-internal JsonConverter get_InternalConverter() { }
+	public void set_Converter(JsonConverter value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_InternalConverter(JsonConverter value) { }
-
-public IList<SerializationCallback> get_OnDeserializedCallbacks() { }
-
-public IList<SerializationCallback> get_OnDeserializingCallbacks() { }
-
-public IList<SerializationCallback> get_OnSerializedCallbacks() { }
-
-public IList<SerializationCallback> get_OnSerializingCallbacks() { }
-
-public IList<SerializationErrorCallback> get_OnErrorCallbacks() { }
+	internal JsonConverter get_InternalConverter() { }
 
 	[CompilerGeneratedAttribute] 
-public Func<object> get_DefaultCreator() { }
+	internal void set_InternalConverter(JsonConverter value) { }
+
+	public IList<SerializationCallback> get_OnDeserializedCallbacks() { }
+
+	public IList<SerializationCallback> get_OnDeserializingCallbacks() { }
+
+	public IList<SerializationCallback> get_OnSerializedCallbacks() { }
+
+	public IList<SerializationCallback> get_OnSerializingCallbacks() { }
+
+	public IList<SerializationErrorCallback> get_OnErrorCallbacks() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DefaultCreator(Func<object> value) { }
+	public Func<object> get_DefaultCreator() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_DefaultCreatorNonPublic() { }
+	public void set_DefaultCreator(Func<object> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DefaultCreatorNonPublic(bool value) { }
+	public bool get_DefaultCreatorNonPublic() { }
 
-internal void .ctor(Type underlyingType) { }
+	[CompilerGeneratedAttribute] 
+	public void set_DefaultCreatorNonPublic(bool value) { }
 
-internal void InvokeOnSerializing(object o, StreamingContext context) { }
+	internal void .ctor(Type underlyingType) { }
 
-internal void InvokeOnSerialized(object o, StreamingContext context) { }
+	internal void InvokeOnSerializing(object o, StreamingContext context) { }
 
-internal void InvokeOnDeserializing(object o, StreamingContext context) { }
+	internal void InvokeOnSerialized(object o, StreamingContext context) { }
 
-internal void InvokeOnDeserialized(object o, StreamingContext context) { }
+	internal void InvokeOnDeserializing(object o, StreamingContext context) { }
 
-internal void InvokeOnError(object o, StreamingContext context, ErrorContext errorContext) { }
+	internal void InvokeOnDeserialized(object o, StreamingContext context) { }
 
-internal static SerializationCallback CreateSerializationCallback(MethodInfo callbackMethodInfo) { }
+	internal void InvokeOnError(object o, StreamingContext context, ErrorContext errorContext) { }
 
-internal static SerializationErrorCallback CreateSerializationErrorCallback(MethodInfo callbackMethodInfo) { }
+	internal static SerializationCallback CreateSerializationCallback(MethodInfo callbackMethodInfo) { }
+
+	internal static SerializationErrorCallback CreateSerializationErrorCallback(MethodInfo callbackMethodInfo) { }
 
 }
 
@@ -2464,9 +2464,9 @@ private sealed class JsonContract.<>c__DisplayClass73_0 // TypeDefIndex: 6012
 	public MethodInfo callbackMethodInfo; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <CreateSerializationCallback>b__0(object o, StreamingContext context) { }
+	internal void <CreateSerializationCallback>b__0(object o, StreamingContext context) { }
 
 }
 
@@ -2475,9 +2475,9 @@ private sealed class JsonContract.<>c__DisplayClass74_0 // TypeDefIndex: 6013
 	public MethodInfo callbackMethodInfo; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <CreateSerializationErrorCallback>b__0(object o, StreamingContext context, ErrorContext econtext) { }
+	internal void <CreateSerializationErrorCallback>b__0(object o, StreamingContext context, ErrorContext econtext) { }
 
 }
 
@@ -2543,209 +2543,209 @@ public class JsonProperty // TypeDefIndex: 6015
 	[CompilerGeneratedAttribute] 
 	private Nullable<ReferenceLoopHandling> <ItemReferenceLoopHandling>k__BackingField; 
 
-internal JsonContract PropertyContract { get; set; }
-public string PropertyName { get; set; }
-public Type DeclaringType { get; set; }
-public Nullable<int> Order { get; set; }
-public string UnderlyingName { get; set; }
-public IValueProvider ValueProvider { get; set; }
-public IAttributeProvider AttributeProvider { set; }
-public Type PropertyType { get; set; }
-public JsonConverter Converter { get; set; }
-public JsonConverter MemberConverter { get; set; }
-public bool Ignored { get; set; }
-public bool Readable { get; set; }
-public bool Writable { get; set; }
-public bool HasMemberAttribute { get; set; }
-public object DefaultValue { get; set; }
-public Required Required { get; }
-public Nullable<bool> IsReference { get; set; }
-public Nullable<NullValueHandling> NullValueHandling { get; set; }
-public Nullable<DefaultValueHandling> DefaultValueHandling { get; set; }
-public Nullable<ReferenceLoopHandling> ReferenceLoopHandling { get; set; }
-public Nullable<ObjectCreationHandling> ObjectCreationHandling { get; set; }
-public Nullable<TypeNameHandling> TypeNameHandling { get; set; }
-public Predicate<object> ShouldSerialize { get; set; }
-public Predicate<object> ShouldDeserialize { get; }
-public Predicate<object> GetIsSpecified { get; set; }
-public Action<object, object> SetIsSpecified { get; set; }
-public JsonConverter ItemConverter { get; set; }
-public Nullable<bool> ItemIsReference { get; set; }
-public Nullable<TypeNameHandling> ItemTypeNameHandling { get; set; }
-public Nullable<ReferenceLoopHandling> ItemReferenceLoopHandling { get; set; }
+	internal JsonContract PropertyContract { get; set; }
+	public string PropertyName { get; set; }
+	public Type DeclaringType { get; set; }
+	public Nullable<int> Order { get; set; }
+	public string UnderlyingName { get; set; }
+	public IValueProvider ValueProvider { get; set; }
+	public IAttributeProvider AttributeProvider { set; }
+	public Type PropertyType { get; set; }
+	public JsonConverter Converter { get; set; }
+	public JsonConverter MemberConverter { get; set; }
+	public bool Ignored { get; set; }
+	public bool Readable { get; set; }
+	public bool Writable { get; set; }
+	public bool HasMemberAttribute { get; set; }
+	public object DefaultValue { get; set; }
+	public Required Required { get; }
+	public Nullable<bool> IsReference { get; set; }
+	public Nullable<NullValueHandling> NullValueHandling { get; set; }
+	public Nullable<DefaultValueHandling> DefaultValueHandling { get; set; }
+	public Nullable<ReferenceLoopHandling> ReferenceLoopHandling { get; set; }
+	public Nullable<ObjectCreationHandling> ObjectCreationHandling { get; set; }
+	public Nullable<TypeNameHandling> TypeNameHandling { get; set; }
+	public Predicate<object> ShouldSerialize { get; set; }
+	public Predicate<object> ShouldDeserialize { get; }
+	public Predicate<object> GetIsSpecified { get; set; }
+	public Action<object, object> SetIsSpecified { get; set; }
+	public JsonConverter ItemConverter { get; set; }
+	public Nullable<bool> ItemIsReference { get; set; }
+	public Nullable<TypeNameHandling> ItemTypeNameHandling { get; set; }
+	public Nullable<ReferenceLoopHandling> ItemReferenceLoopHandling { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-internal JsonContract get_PropertyContract() { }
+	internal JsonContract get_PropertyContract() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_PropertyContract(JsonContract value) { }
+	internal void set_PropertyContract(JsonContract value) { }
 
-public string get_PropertyName() { }
+	public string get_PropertyName() { }
 
-public void set_PropertyName(string value) { }
-
-	[CompilerGeneratedAttribute] 
-public Type get_DeclaringType() { }
+	public void set_PropertyName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DeclaringType(Type value) { }
+	public Type get_DeclaringType() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<int> get_Order() { }
+	public void set_DeclaringType(Type value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Order(Nullable<int> value) { }
+	public Nullable<int> get_Order() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_UnderlyingName() { }
+	public void set_Order(Nullable<int> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_UnderlyingName(string value) { }
+	public string get_UnderlyingName() { }
 
 	[CompilerGeneratedAttribute] 
-public IValueProvider get_ValueProvider() { }
+	public void set_UnderlyingName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ValueProvider(IValueProvider value) { }
+	public IValueProvider get_ValueProvider() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_AttributeProvider(IAttributeProvider value) { }
-
-public Type get_PropertyType() { }
-
-public void set_PropertyType(Type value) { }
+	public void set_ValueProvider(IValueProvider value) { }
 
 	[CompilerGeneratedAttribute] 
-public JsonConverter get_Converter() { }
+	public void set_AttributeProvider(IAttributeProvider value) { }
+
+	public Type get_PropertyType() { }
+
+	public void set_PropertyType(Type value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Converter(JsonConverter value) { }
+	public JsonConverter get_Converter() { }
 
 	[CompilerGeneratedAttribute] 
-public JsonConverter get_MemberConverter() { }
+	public void set_Converter(JsonConverter value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MemberConverter(JsonConverter value) { }
+	public JsonConverter get_MemberConverter() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Ignored() { }
+	public void set_MemberConverter(JsonConverter value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Ignored(bool value) { }
+	public bool get_Ignored() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Readable() { }
+	public void set_Ignored(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Readable(bool value) { }
+	public bool get_Readable() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Writable() { }
+	public void set_Readable(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Writable(bool value) { }
+	public bool get_Writable() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_HasMemberAttribute() { }
+	public void set_Writable(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_HasMemberAttribute(bool value) { }
-
-public object get_DefaultValue() { }
-
-public void set_DefaultValue(object value) { }
-
-internal object GetResolvedDefaultValue() { }
-
-public Required get_Required() { }
+	public bool get_HasMemberAttribute() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<bool> get_IsReference() { }
+	public void set_HasMemberAttribute(bool value) { }
+
+	public object get_DefaultValue() { }
+
+	public void set_DefaultValue(object value) { }
+
+	internal object GetResolvedDefaultValue() { }
+
+	public Required get_Required() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IsReference(Nullable<bool> value) { }
+	public Nullable<bool> get_IsReference() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<NullValueHandling> get_NullValueHandling() { }
+	public void set_IsReference(Nullable<bool> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_NullValueHandling(Nullable<NullValueHandling> value) { }
+	public Nullable<NullValueHandling> get_NullValueHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<DefaultValueHandling> get_DefaultValueHandling() { }
+	public void set_NullValueHandling(Nullable<NullValueHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DefaultValueHandling(Nullable<DefaultValueHandling> value) { }
+	public Nullable<DefaultValueHandling> get_DefaultValueHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<ReferenceLoopHandling> get_ReferenceLoopHandling() { }
+	public void set_DefaultValueHandling(Nullable<DefaultValueHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ReferenceLoopHandling(Nullable<ReferenceLoopHandling> value) { }
+	public Nullable<ReferenceLoopHandling> get_ReferenceLoopHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<ObjectCreationHandling> get_ObjectCreationHandling() { }
+	public void set_ReferenceLoopHandling(Nullable<ReferenceLoopHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ObjectCreationHandling(Nullable<ObjectCreationHandling> value) { }
+	public Nullable<ObjectCreationHandling> get_ObjectCreationHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<TypeNameHandling> get_TypeNameHandling() { }
+	public void set_ObjectCreationHandling(Nullable<ObjectCreationHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_TypeNameHandling(Nullable<TypeNameHandling> value) { }
+	public Nullable<TypeNameHandling> get_TypeNameHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Predicate<object> get_ShouldSerialize() { }
+	public void set_TypeNameHandling(Nullable<TypeNameHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ShouldSerialize(Predicate<object> value) { }
+	public Predicate<object> get_ShouldSerialize() { }
 
 	[CompilerGeneratedAttribute] 
-public Predicate<object> get_ShouldDeserialize() { }
+	public void set_ShouldSerialize(Predicate<object> value) { }
 
 	[CompilerGeneratedAttribute] 
-public Predicate<object> get_GetIsSpecified() { }
+	public Predicate<object> get_ShouldDeserialize() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_GetIsSpecified(Predicate<object> value) { }
+	public Predicate<object> get_GetIsSpecified() { }
 
 	[CompilerGeneratedAttribute] 
-public Action<object, object> get_SetIsSpecified() { }
+	public void set_GetIsSpecified(Predicate<object> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_SetIsSpecified(Action<object, object> value) { }
-
-public override string ToString() { }
+	public Action<object, object> get_SetIsSpecified() { }
 
 	[CompilerGeneratedAttribute] 
-public JsonConverter get_ItemConverter() { }
+	public void set_SetIsSpecified(Action<object, object> value) { }
+
+	public override string ToString() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemConverter(JsonConverter value) { }
+	public JsonConverter get_ItemConverter() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<bool> get_ItemIsReference() { }
+	public void set_ItemConverter(JsonConverter value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemIsReference(Nullable<bool> value) { }
+	public Nullable<bool> get_ItemIsReference() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<TypeNameHandling> get_ItemTypeNameHandling() { }
+	public void set_ItemIsReference(Nullable<bool> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemTypeNameHandling(Nullable<TypeNameHandling> value) { }
+	public Nullable<TypeNameHandling> get_ItemTypeNameHandling() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<ReferenceLoopHandling> get_ItemReferenceLoopHandling() { }
+	public void set_ItemTypeNameHandling(Nullable<TypeNameHandling> value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemReferenceLoopHandling(Nullable<ReferenceLoopHandling> value) { }
+	public Nullable<ReferenceLoopHandling> get_ItemReferenceLoopHandling() { }
 
-internal void WritePropertyName(JsonWriter writer) { }
+	[CompilerGeneratedAttribute] 
+	public void set_ItemReferenceLoopHandling(Nullable<ReferenceLoopHandling> value) { }
 
-public void .ctor() { }
+	internal void WritePropertyName(JsonWriter writer) { }
+
+	public void .ctor() { }
 
 }
 
@@ -2755,17 +2755,17 @@ public class JsonPropertyCollection : KeyedCollection<string, JsonProperty> // T
 	private readonly List<JsonProperty> _list; 
 
 
-public void .ctor(Type type) { }
+	public void .ctor(Type type) { }
 
-protected override string GetKeyForItem(JsonProperty item) { }
+	protected override string GetKeyForItem(JsonProperty item) { }
 
-public void AddProperty(JsonProperty property) { }
+	public void AddProperty(JsonProperty property) { }
 
-public JsonProperty GetClosestMatchProperty(string propertyName) { }
+	public JsonProperty GetClosestMatchProperty(string propertyName) { }
 
-private bool TryGetValue(string key, out JsonProperty item) { }
+	private bool TryGetValue(string key, out JsonProperty item) { }
 
-public JsonProperty GetProperty(string propertyName, StringComparison comparisonType) { }
+	public JsonProperty GetProperty(string propertyName, StringComparison comparisonType) { }
 
 }
 
@@ -2790,69 +2790,69 @@ public class JsonObjectContract : JsonContainerContract // TypeDefIndex: 6018
 	private JsonPropertyCollection _creatorParameters; 
 	private Type _extensionDataValueType; 
 
-public MemberSerialization MemberSerialization { get; set; }
-public Nullable<Required> ItemRequired { get; set; }
-public JsonPropertyCollection Properties { get; set; }
-public JsonPropertyCollection CreatorParameters { get; }
+	public MemberSerialization MemberSerialization { get; set; }
+	public Nullable<Required> ItemRequired { get; set; }
+	public JsonPropertyCollection Properties { get; set; }
+	public JsonPropertyCollection CreatorParameters { get; }
 	[ObsoleteAttribute] 
-public ConstructorInfo OverrideConstructor { set; }
+	public ConstructorInfo OverrideConstructor { set; }
 	[ObsoleteAttribute] 
-public ConstructorInfo ParametrizedConstructor { set; }
-public ObjectConstructor<object> OverrideCreator { get; }
-internal ObjectConstructor<object> ParameterizedCreator { get; }
-public ExtensionDataSetter ExtensionDataSetter { get; set; }
-public ExtensionDataGetter ExtensionDataGetter { get; set; }
-public Type ExtensionDataValueType { set; }
-internal bool HasRequiredOrDefaultValueProperties { get; }
+	public ConstructorInfo ParametrizedConstructor { set; }
+	public ObjectConstructor<object> OverrideCreator { get; }
+	internal ObjectConstructor<object> ParameterizedCreator { get; }
+	public ExtensionDataSetter ExtensionDataSetter { get; set; }
+	public ExtensionDataGetter ExtensionDataGetter { get; set; }
+	public Type ExtensionDataValueType { set; }
+	internal bool HasRequiredOrDefaultValueProperties { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public MemberSerialization get_MemberSerialization() { }
+	public MemberSerialization get_MemberSerialization() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MemberSerialization(MemberSerialization value) { }
+	public void set_MemberSerialization(MemberSerialization value) { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<Required> get_ItemRequired() { }
+	public Nullable<Required> get_ItemRequired() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemRequired(Nullable<Required> value) { }
+	public void set_ItemRequired(Nullable<Required> value) { }
 
 	[CompilerGeneratedAttribute] 
-public JsonPropertyCollection get_Properties() { }
+	public JsonPropertyCollection get_Properties() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Properties(JsonPropertyCollection value) { }
+	private void set_Properties(JsonPropertyCollection value) { }
 
-public JsonPropertyCollection get_CreatorParameters() { }
+	public JsonPropertyCollection get_CreatorParameters() { }
 
-public void set_OverrideConstructor(ConstructorInfo value) { }
+	public void set_OverrideConstructor(ConstructorInfo value) { }
 
-public void set_ParametrizedConstructor(ConstructorInfo value) { }
+	public void set_ParametrizedConstructor(ConstructorInfo value) { }
 
-public ObjectConstructor<object> get_OverrideCreator() { }
+	public ObjectConstructor<object> get_OverrideCreator() { }
 
-internal ObjectConstructor<object> get_ParameterizedCreator() { }
-
-	[CompilerGeneratedAttribute] 
-public ExtensionDataSetter get_ExtensionDataSetter() { }
+	internal ObjectConstructor<object> get_ParameterizedCreator() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ExtensionDataSetter(ExtensionDataSetter value) { }
+	public ExtensionDataSetter get_ExtensionDataSetter() { }
 
 	[CompilerGeneratedAttribute] 
-public ExtensionDataGetter get_ExtensionDataGetter() { }
+	public void set_ExtensionDataSetter(ExtensionDataSetter value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ExtensionDataGetter(ExtensionDataGetter value) { }
+	public ExtensionDataGetter get_ExtensionDataGetter() { }
 
-public void set_ExtensionDataValueType(Type value) { }
+	[CompilerGeneratedAttribute] 
+	public void set_ExtensionDataGetter(ExtensionDataGetter value) { }
 
-internal bool get_HasRequiredOrDefaultValueProperties() { }
+	public void set_ExtensionDataValueType(Type value) { }
 
-public void .ctor(Type underlyingType) { }
+	internal bool get_HasRequiredOrDefaultValueProperties() { }
 
-internal object GetUninitializedObject() { }
+	public void .ctor(Type underlyingType) { }
+
+	internal object GetUninitializedObject() { }
 
 }
 
@@ -2864,137 +2864,137 @@ internal abstract class JsonSerializerInternalBase // TypeDefIndex: 6019
 	internal readonly ITraceWriter TraceWriter; 
 	protected JsonSerializerProxy InternalSerializer; 
 
-internal BidirectionalDictionary<string, object> DefaultReferenceMappings { get; }
+	internal BidirectionalDictionary<string, object> DefaultReferenceMappings { get; }
 
 
-protected void .ctor(JsonSerializer serializer) { }
+	protected void .ctor(JsonSerializer serializer) { }
 
-internal BidirectionalDictionary<string, object> get_DefaultReferenceMappings() { }
+	internal BidirectionalDictionary<string, object> get_DefaultReferenceMappings() { }
 
-private ErrorContext GetErrorContext(object currentObject, object member, string path, Exception error) { }
+	private ErrorContext GetErrorContext(object currentObject, object member, string path, Exception error) { }
 
-protected void ClearErrorContext() { }
+	protected void ClearErrorContext() { }
 
-protected bool IsErrorHandled(object currentObject, JsonContract contract, object keyValue, IJsonLineInfo lineInfo, string path, Exception ex) { }
+	protected bool IsErrorHandled(object currentObject, JsonContract contract, object keyValue, IJsonLineInfo lineInfo, string path, Exception ex) { }
 
 }
 
 private class JsonSerializerInternalBase.ReferenceEqualsEqualityComparer : IEqualityComparer<object> // TypeDefIndex: 6020
 {
 
-private bool System.Collections.Generic.IEqualityComparer<System.Object>.Equals(object x, object y) { }
+	private bool System.Collections.Generic.IEqualityComparer<System.Object>.Equals(object x, object y) { }
 
-private int System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode(object obj) { }
+	private int System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode(object obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 internal class JsonSerializerInternalReader : JsonSerializerInternalBase // TypeDefIndex: 6021
 {
 
-public void .ctor(JsonSerializer serializer) { }
+	public void .ctor(JsonSerializer serializer) { }
 
-public void Populate(JsonReader reader, object target) { }
+	public void Populate(JsonReader reader, object target) { }
 
-private JsonContract GetContractSafe(Type type) { }
+	private JsonContract GetContractSafe(Type type) { }
 
-public object Deserialize(JsonReader reader, Type objectType, bool checkAdditionalContent) { }
+	public object Deserialize(JsonReader reader, Type objectType, bool checkAdditionalContent) { }
 
-private JsonSerializerProxy GetInternalSerializer() { }
+	private JsonSerializerProxy GetInternalSerializer() { }
 
-private JToken CreateJToken(JsonReader reader, JsonContract contract) { }
+	private JToken CreateJToken(JsonReader reader, JsonContract contract) { }
 
-private JToken CreateJObject(JsonReader reader) { }
+	private JToken CreateJObject(JsonReader reader) { }
 
-private object CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue) { }
+	private object CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue) { }
 
-private static bool CoerceEmptyStringToNull(Type objectType, JsonContract contract, string s) { }
+	private static bool CoerceEmptyStringToNull(Type objectType, JsonContract contract, string s) { }
 
-internal string GetExpectedDescription(JsonContract contract) { }
+	internal string GetExpectedDescription(JsonContract contract) { }
 
-private JsonConverter GetConverter(JsonContract contract, JsonConverter memberConverter, JsonContainerContract containerContract, JsonProperty containerProperty) { }
+	private JsonConverter GetConverter(JsonContract contract, JsonConverter memberConverter, JsonContainerContract containerContract, JsonProperty containerProperty) { }
 
-private object CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue) { }
+	private object CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue) { }
 
-private bool ReadMetadataPropertiesToken(JTokenReader reader, ref Type objectType, ref JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue, out object newValue, out string id) { }
+	private bool ReadMetadataPropertiesToken(JTokenReader reader, ref Type objectType, ref JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue, out object newValue, out string id) { }
 
-private bool ReadMetadataProperties(JsonReader reader, ref Type objectType, ref JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue, out object newValue, out string id) { }
+	private bool ReadMetadataProperties(JsonReader reader, ref Type objectType, ref JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, object existingValue, out object newValue, out string id) { }
 
-private void ResolveTypeName(JsonReader reader, ref Type objectType, ref JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, string qualifiedTypeName) { }
+	private void ResolveTypeName(JsonReader reader, ref Type objectType, ref JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, string qualifiedTypeName) { }
 
-private JsonArrayContract EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract) { }
+	private JsonArrayContract EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract) { }
 
-private object CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, object existingValue, string id) { }
+	private object CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, object existingValue, string id) { }
 
-private bool HasNoDefinedType(JsonContract contract) { }
+	private bool HasNoDefinedType(JsonContract contract) { }
 
-private object EnsureType(JsonReader reader, object value, CultureInfo culture, JsonContract contract, Type targetType) { }
+	private object EnsureType(JsonReader reader, object value, CultureInfo culture, JsonContract contract, Type targetType) { }
 
-private bool SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, object target) { }
+	private bool SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, object target) { }
 
-private bool CalculatePropertyDetails(JsonProperty property, ref JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, object target, out bool useExistingValue, out object currentValue, out JsonContract propertyContract, out bool gottenCurrentValue) { }
+	private bool CalculatePropertyDetails(JsonProperty property, ref JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, object target, out bool useExistingValue, out object currentValue, out JsonContract propertyContract, out bool gottenCurrentValue) { }
 
-private void AddReference(JsonReader reader, string id, object value) { }
+	private void AddReference(JsonReader reader, string id, object value) { }
 
-private bool HasFlag(DefaultValueHandling value, DefaultValueHandling flag) { }
+	private bool HasFlag(DefaultValueHandling value, DefaultValueHandling flag) { }
 
-private bool ShouldSetPropertyValue(JsonProperty property, object value) { }
+	private bool ShouldSetPropertyValue(JsonProperty property, object value) { }
 
-private IList CreateNewList(JsonReader reader, JsonArrayContract contract, out bool createdFromNonDefaultCreator) { }
+	private IList CreateNewList(JsonReader reader, JsonArrayContract contract, out bool createdFromNonDefaultCreator) { }
 
-private IDictionary CreateNewDictionary(JsonReader reader, JsonDictionaryContract contract, out bool createdFromNonDefaultCreator) { }
+	private IDictionary CreateNewDictionary(JsonReader reader, JsonDictionaryContract contract, out bool createdFromNonDefaultCreator) { }
 
-private void OnDeserializing(JsonReader reader, JsonContract contract, object value) { }
+	private void OnDeserializing(JsonReader reader, JsonContract contract, object value) { }
 
-private void OnDeserialized(JsonReader reader, JsonContract contract, object value) { }
+	private void OnDeserialized(JsonReader reader, JsonContract contract, object value) { }
 
-private object PopulateDictionary(IDictionary dictionary, JsonReader reader, JsonDictionaryContract contract, JsonProperty containerProperty, string id) { }
+	private object PopulateDictionary(IDictionary dictionary, JsonReader reader, JsonDictionaryContract contract, JsonProperty containerProperty, string id) { }
 
-private object PopulateMultidimensionalArray(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, string id) { }
+	private object PopulateMultidimensionalArray(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, string id) { }
 
-private void ThrowUnexpectedEndException(JsonReader reader, JsonContract contract, object currentObject, string message) { }
+	private void ThrowUnexpectedEndException(JsonReader reader, JsonContract contract, object currentObject, string message) { }
 
-private object PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, string id) { }
+	private object PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, string id) { }
 
-private object CreateISerializable(JsonReader reader, JsonISerializableContract contract, JsonProperty member, string id) { }
+	private object CreateISerializable(JsonReader reader, JsonISerializableContract contract, JsonProperty member, string id) { }
 
-internal object CreateISerializableItem(JToken token, Type type, JsonISerializableContract contract, JsonProperty member) { }
+	internal object CreateISerializableItem(JToken token, Type type, JsonISerializableContract contract, JsonProperty member) { }
 
-private object CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor<object> creator, string id) { }
+	private object CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor<object> creator, string id) { }
 
-private object DeserializeConvertable(JsonConverter converter, JsonReader reader, Type objectType, object existingValue) { }
+	private object DeserializeConvertable(JsonConverter converter, JsonReader reader, Type objectType, object existingValue) { }
 
-private List<JsonSerializerInternalReader.CreatorPropertyContext> ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType) { }
+	private List<JsonSerializerInternalReader.CreatorPropertyContext> ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType) { }
 
-private bool ReadForType(JsonReader reader, JsonContract contract, bool hasConverter) { }
+	private bool ReadForType(JsonReader reader, JsonContract contract, bool hasConverter) { }
 
-public object CreateNewObject(JsonReader reader, JsonObjectContract objectContract, JsonProperty containerMember, JsonProperty containerProperty, string id, out bool createdFromNonDefaultCreator) { }
+	public object CreateNewObject(JsonReader reader, JsonObjectContract objectContract, JsonProperty containerMember, JsonProperty containerProperty, string id, out bool createdFromNonDefaultCreator) { }
 
-private object PopulateObject(object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, string id) { }
+	private object PopulateObject(object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, string id) { }
 
-private bool ShouldDeserialize(JsonReader reader, JsonProperty property, object target) { }
+	private bool ShouldDeserialize(JsonReader reader, JsonProperty property, object target) { }
 
-private bool CheckPropertyName(JsonReader reader, string memberName) { }
+	private bool CheckPropertyName(JsonReader reader, string memberName) { }
 
-private void SetExtensionData(JsonObjectContract contract, JsonProperty member, JsonReader reader, string memberName, object o) { }
+	private void SetExtensionData(JsonObjectContract contract, JsonProperty member, JsonReader reader, string memberName, object o) { }
 
-private object ReadExtensionDataValue(JsonObjectContract contract, JsonProperty member, JsonReader reader) { }
+	private object ReadExtensionDataValue(JsonObjectContract contract, JsonProperty member, JsonReader reader) { }
 
-private void EndProcessProperty(object newObject, JsonReader reader, JsonObjectContract contract, int initialDepth, JsonProperty property, JsonSerializerInternalReader.PropertyPresence presence, bool setDefaultValue) { }
+	private void EndProcessProperty(object newObject, JsonReader reader, JsonObjectContract contract, int initialDepth, JsonProperty property, JsonSerializerInternalReader.PropertyPresence presence, bool setDefaultValue) { }
 
-private void SetPropertyPresence(JsonReader reader, JsonProperty property, Dictionary<JsonProperty, JsonSerializerInternalReader.PropertyPresence> requiredProperties) { }
+	private void SetPropertyPresence(JsonReader reader, JsonProperty property, Dictionary<JsonProperty, JsonSerializerInternalReader.PropertyPresence> requiredProperties) { }
 
-private void HandleError(JsonReader reader, bool readPastError, int initialDepth) { }
+	private void HandleError(JsonReader reader, bool readPastError, int initialDepth) { }
 
 }
 
 internal enum JsonSerializerInternalReader.PropertyPresence // TypeDefIndex: 6022
 {
 	public int value__; 
-public const JsonSerializerInternalReader.PropertyPresence None = 0;
-public const JsonSerializerInternalReader.PropertyPresence Null = 1;
-public const JsonSerializerInternalReader.PropertyPresence Value = 2;
+	public const JsonSerializerInternalReader.PropertyPresence None = 0;
+	public const JsonSerializerInternalReader.PropertyPresence Null = 1;
+	public const JsonSerializerInternalReader.PropertyPresence Value = 2;
 
 }
 
@@ -3008,7 +3008,7 @@ internal class JsonSerializerInternalReader.CreatorPropertyContext // TypeDefInd
 	public bool Used; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3017,9 +3017,9 @@ private sealed class JsonSerializerInternalReader.<>c__DisplayClass36_0 // TypeD
 	public JsonProperty property; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CreateObjectUsingCreatorWithParameters>b__1(JsonSerializerInternalReader.CreatorPropertyContext p) { }
+	internal bool <CreateObjectUsingCreatorWithParameters>b__1(JsonSerializerInternalReader.CreatorPropertyContext p) { }
 
 }
 
@@ -3032,17 +3032,17 @@ private sealed class JsonSerializerInternalReader.<>c // TypeDefIndex: 6025
 	public static Func<JsonProperty, JsonSerializerInternalReader.PropertyPresence> <>9__41_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <CreateObjectUsingCreatorWithParameters>b__36_0(JsonProperty p) { }
+	internal string <CreateObjectUsingCreatorWithParameters>b__36_0(JsonProperty p) { }
 
-internal string <CreateObjectUsingCreatorWithParameters>b__36_2(JsonProperty p) { }
+	internal string <CreateObjectUsingCreatorWithParameters>b__36_2(JsonProperty p) { }
 
-internal JsonProperty <PopulateObject>b__41_0(JsonProperty m) { }
+	internal JsonProperty <PopulateObject>b__41_0(JsonProperty m) { }
 
-internal JsonSerializerInternalReader.PropertyPresence <PopulateObject>b__41_1(JsonProperty m) { }
+	internal JsonSerializerInternalReader.PropertyPresence <PopulateObject>b__41_1(JsonProperty m) { }
 
 }
 
@@ -3053,77 +3053,77 @@ internal class JsonSerializerInternalWriter : JsonSerializerInternalBase // Type
 	private readonly List<object> _serializeStack; 
 
 
-public void .ctor(JsonSerializer serializer) { }
+	public void .ctor(JsonSerializer serializer) { }
 
-public void Serialize(JsonWriter jsonWriter, object value, Type objectType) { }
+	public void Serialize(JsonWriter jsonWriter, object value, Type objectType) { }
 
-private JsonSerializerProxy GetInternalSerializer() { }
+	private JsonSerializerProxy GetInternalSerializer() { }
 
-private JsonContract GetContractSafe(object value) { }
+	private JsonContract GetContractSafe(object value) { }
 
-private void SerializePrimitive(JsonWriter writer, object value, JsonPrimitiveContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
+	private void SerializePrimitive(JsonWriter writer, object value, JsonPrimitiveContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
 
-private void SerializeValue(JsonWriter writer, object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
+	private void SerializeValue(JsonWriter writer, object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
 
-private Nullable<bool> ResolveIsReference(JsonContract contract, JsonProperty property, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private Nullable<bool> ResolveIsReference(JsonContract contract, JsonProperty property, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private bool ShouldWriteReference(object value, JsonProperty property, JsonContract valueContract, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private bool ShouldWriteReference(object value, JsonProperty property, JsonContract valueContract, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private bool ShouldWriteProperty(object memberValue, JsonProperty property) { }
+	private bool ShouldWriteProperty(object memberValue, JsonProperty property) { }
 
-private bool CheckForCircularReference(JsonWriter writer, object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty) { }
+	private bool CheckForCircularReference(JsonWriter writer, object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty) { }
 
-private void WriteReference(JsonWriter writer, object value) { }
+	private void WriteReference(JsonWriter writer, object value) { }
 
-private string GetReference(JsonWriter writer, object value) { }
+	private string GetReference(JsonWriter writer, object value) { }
 
-internal static bool TryConvertToString(object value, Type type, out string s) { }
+	internal static bool TryConvertToString(object value, Type type, out string s) { }
 
-private void SerializeString(JsonWriter writer, object value, JsonStringContract contract) { }
+	private void SerializeString(JsonWriter writer, object value, JsonStringContract contract) { }
 
-private void OnSerializing(JsonWriter writer, JsonContract contract, object value) { }
+	private void OnSerializing(JsonWriter writer, JsonContract contract, object value) { }
 
-private void OnSerialized(JsonWriter writer, JsonContract contract, object value) { }
+	private void OnSerialized(JsonWriter writer, JsonContract contract, object value) { }
 
-private void SerializeObject(JsonWriter writer, object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void SerializeObject(JsonWriter writer, object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private bool CalculatePropertyValues(JsonWriter writer, object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, out JsonContract memberContract, out object memberValue) { }
+	private bool CalculatePropertyValues(JsonWriter writer, object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, out JsonContract memberContract, out object memberValue) { }
 
-private void WriteObjectStart(JsonWriter writer, object value, JsonContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void WriteObjectStart(JsonWriter writer, object value, JsonContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private void WriteReferenceIdProperty(JsonWriter writer, Type type, object value) { }
+	private void WriteReferenceIdProperty(JsonWriter writer, Type type, object value) { }
 
-private void WriteTypeProperty(JsonWriter writer, Type type) { }
+	private void WriteTypeProperty(JsonWriter writer, Type type) { }
 
-private bool HasFlag(DefaultValueHandling value, DefaultValueHandling flag) { }
+	private bool HasFlag(DefaultValueHandling value, DefaultValueHandling flag) { }
 
-private bool HasFlag(PreserveReferencesHandling value, PreserveReferencesHandling flag) { }
+	private bool HasFlag(PreserveReferencesHandling value, PreserveReferencesHandling flag) { }
 
-private bool HasFlag(TypeNameHandling value, TypeNameHandling flag) { }
+	private bool HasFlag(TypeNameHandling value, TypeNameHandling flag) { }
 
-private void SerializeConvertable(JsonWriter writer, JsonConverter converter, object value, JsonContract contract, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void SerializeConvertable(JsonWriter writer, JsonConverter converter, object value, JsonContract contract, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private void SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private void SerializeMultidimensionalArray(JsonWriter writer, Array values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void SerializeMultidimensionalArray(JsonWriter writer, Array values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private void SerializeMultidimensionalArray(JsonWriter writer, Array values, JsonArrayContract contract, JsonProperty member, int initialDepth, int[] indices) { }
+	private void SerializeMultidimensionalArray(JsonWriter writer, Array values, JsonArrayContract contract, JsonProperty member, int initialDepth, int[] indices) { }
 
-private bool WriteStartArray(JsonWriter writer, object values, JsonArrayContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
+	private bool WriteStartArray(JsonWriter writer, object values, JsonArrayContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
 
-private void SerializeISerializable(JsonWriter writer, ISerializable value, JsonISerializableContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void SerializeISerializable(JsonWriter writer, ISerializable value, JsonISerializableContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private bool ShouldWriteType(TypeNameHandling typeNameHandlingFlag, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
+	private bool ShouldWriteType(TypeNameHandling typeNameHandlingFlag, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty) { }
 
-private void SerializeDictionary(JsonWriter writer, IDictionary values, JsonDictionaryContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
+	private void SerializeDictionary(JsonWriter writer, IDictionary values, JsonDictionaryContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty) { }
 
-private string GetPropertyName(JsonWriter writer, object name, JsonContract contract, out bool escape) { }
+	private string GetPropertyName(JsonWriter writer, object name, JsonContract contract, out bool escape) { }
 
-private void HandleError(JsonWriter writer, int initialDepth) { }
+	private void HandleError(JsonWriter writer, int initialDepth) { }
 
-private bool ShouldSerialize(JsonWriter writer, JsonProperty property, object target) { }
+	private bool ShouldSerialize(JsonWriter writer, JsonProperty property, object target) { }
 
-private bool IsSpecified(JsonWriter writer, JsonProperty property, object target) { }
+	private bool IsSpecified(JsonWriter writer, JsonProperty property, object target) { }
 
 }
 
@@ -3133,101 +3133,101 @@ internal class JsonSerializerProxy : JsonSerializer // TypeDefIndex: 6027
 	private readonly JsonSerializerInternalWriter _serializerWriter; 
 	private readonly JsonSerializer _serializer; 
 
-public override IReferenceResolver ReferenceResolver { set; }
-public override ITraceWriter TraceWriter { get; set; }
-public override IEqualityComparer EqualityComparer { set; }
-public override JsonConverterCollection Converters { get; }
-public override DefaultValueHandling DefaultValueHandling { set; }
-public override IContractResolver ContractResolver { get; set; }
-public override MissingMemberHandling MissingMemberHandling { set; }
-public override NullValueHandling NullValueHandling { set; }
-public override ObjectCreationHandling ObjectCreationHandling { get; set; }
-public override ReferenceLoopHandling ReferenceLoopHandling { set; }
-public override PreserveReferencesHandling PreserveReferencesHandling { set; }
-public override TypeNameHandling TypeNameHandling { set; }
-public override MetadataPropertyHandling MetadataPropertyHandling { get; set; }
-public override FormatterAssemblyStyle TypeNameAssemblyFormat { set; }
-public override ConstructorHandling ConstructorHandling { set; }
-public override SerializationBinder Binder { set; }
-public override StreamingContext Context { get; set; }
-public override Formatting Formatting { get; set; }
-public override bool CheckAdditionalContent { get; set; }
+	public override IReferenceResolver ReferenceResolver { set; }
+	public override ITraceWriter TraceWriter { get; set; }
+	public override IEqualityComparer EqualityComparer { set; }
+	public override JsonConverterCollection Converters { get; }
+	public override DefaultValueHandling DefaultValueHandling { set; }
+	public override IContractResolver ContractResolver { get; set; }
+	public override MissingMemberHandling MissingMemberHandling { set; }
+	public override NullValueHandling NullValueHandling { set; }
+	public override ObjectCreationHandling ObjectCreationHandling { get; set; }
+	public override ReferenceLoopHandling ReferenceLoopHandling { set; }
+	public override PreserveReferencesHandling PreserveReferencesHandling { set; }
+	public override TypeNameHandling TypeNameHandling { set; }
+	public override MetadataPropertyHandling MetadataPropertyHandling { get; set; }
+	public override FormatterAssemblyStyle TypeNameAssemblyFormat { set; }
+	public override ConstructorHandling ConstructorHandling { set; }
+	public override SerializationBinder Binder { set; }
+	public override StreamingContext Context { get; set; }
+	public override Formatting Formatting { get; set; }
+	public override bool CheckAdditionalContent { get; set; }
 
 
-public override void add_Error(EventHandler<ErrorEventArgs> value) { }
+	public override void add_Error(EventHandler<ErrorEventArgs> value) { }
 
-public override void remove_Error(EventHandler<ErrorEventArgs> value) { }
+	public override void remove_Error(EventHandler<ErrorEventArgs> value) { }
 
-public override void set_ReferenceResolver(IReferenceResolver value) { }
+	public override void set_ReferenceResolver(IReferenceResolver value) { }
 
-public override ITraceWriter get_TraceWriter() { }
+	public override ITraceWriter get_TraceWriter() { }
 
-public override void set_TraceWriter(ITraceWriter value) { }
+	public override void set_TraceWriter(ITraceWriter value) { }
 
-public override void set_EqualityComparer(IEqualityComparer value) { }
+	public override void set_EqualityComparer(IEqualityComparer value) { }
 
-public override JsonConverterCollection get_Converters() { }
+	public override JsonConverterCollection get_Converters() { }
 
-public override void set_DefaultValueHandling(DefaultValueHandling value) { }
+	public override void set_DefaultValueHandling(DefaultValueHandling value) { }
 
-public override IContractResolver get_ContractResolver() { }
+	public override IContractResolver get_ContractResolver() { }
 
-public override void set_ContractResolver(IContractResolver value) { }
+	public override void set_ContractResolver(IContractResolver value) { }
 
-public override void set_MissingMemberHandling(MissingMemberHandling value) { }
+	public override void set_MissingMemberHandling(MissingMemberHandling value) { }
 
-public override void set_NullValueHandling(NullValueHandling value) { }
+	public override void set_NullValueHandling(NullValueHandling value) { }
 
-public override ObjectCreationHandling get_ObjectCreationHandling() { }
+	public override ObjectCreationHandling get_ObjectCreationHandling() { }
 
-public override void set_ObjectCreationHandling(ObjectCreationHandling value) { }
+	public override void set_ObjectCreationHandling(ObjectCreationHandling value) { }
 
-public override void set_ReferenceLoopHandling(ReferenceLoopHandling value) { }
+	public override void set_ReferenceLoopHandling(ReferenceLoopHandling value) { }
 
-public override void set_PreserveReferencesHandling(PreserveReferencesHandling value) { }
+	public override void set_PreserveReferencesHandling(PreserveReferencesHandling value) { }
 
-public override void set_TypeNameHandling(TypeNameHandling value) { }
+	public override void set_TypeNameHandling(TypeNameHandling value) { }
 
-public override MetadataPropertyHandling get_MetadataPropertyHandling() { }
+	public override MetadataPropertyHandling get_MetadataPropertyHandling() { }
 
-public override void set_MetadataPropertyHandling(MetadataPropertyHandling value) { }
+	public override void set_MetadataPropertyHandling(MetadataPropertyHandling value) { }
 
-public override void set_TypeNameAssemblyFormat(FormatterAssemblyStyle value) { }
+	public override void set_TypeNameAssemblyFormat(FormatterAssemblyStyle value) { }
 
-public override void set_ConstructorHandling(ConstructorHandling value) { }
+	public override void set_ConstructorHandling(ConstructorHandling value) { }
 
-public override void set_Binder(SerializationBinder value) { }
+	public override void set_Binder(SerializationBinder value) { }
 
-public override StreamingContext get_Context() { }
+	public override StreamingContext get_Context() { }
 
-public override void set_Context(StreamingContext value) { }
+	public override void set_Context(StreamingContext value) { }
 
-public override Formatting get_Formatting() { }
+	public override Formatting get_Formatting() { }
 
-public override void set_Formatting(Formatting value) { }
+	public override void set_Formatting(Formatting value) { }
 
-public override bool get_CheckAdditionalContent() { }
+	public override bool get_CheckAdditionalContent() { }
 
-public override void set_CheckAdditionalContent(bool value) { }
+	public override void set_CheckAdditionalContent(bool value) { }
 
-internal JsonSerializerInternalBase GetInternalSerializer() { }
+	internal JsonSerializerInternalBase GetInternalSerializer() { }
 
-public void .ctor(JsonSerializerInternalReader serializerReader) { }
+	public void .ctor(JsonSerializerInternalReader serializerReader) { }
 
-public void .ctor(JsonSerializerInternalWriter serializerWriter) { }
+	public void .ctor(JsonSerializerInternalWriter serializerWriter) { }
 
-internal override object DeserializeInternal(JsonReader reader, Type objectType) { }
+	internal override object DeserializeInternal(JsonReader reader, Type objectType) { }
 
-internal override void PopulateInternal(JsonReader reader, object target) { }
+	internal override void PopulateInternal(JsonReader reader, object target) { }
 
-internal override void SerializeInternal(JsonWriter jsonWriter, object value, Type rootType) { }
+	internal override void SerializeInternal(JsonWriter jsonWriter, object value, Type rootType) { }
 
 }
 
 public class JsonStringContract : JsonPrimitiveContract // TypeDefIndex: 6028
 {
 
-public void .ctor(Type underlyingType) { }
+	public void .ctor(Type underlyingType) { }
 
 }
 
@@ -3238,68 +3238,68 @@ internal static class JsonTypeReflector // TypeDefIndex: 6029
 	private static readonly ThreadSafeStore<Type, Type> AssociatedMetadataTypesCache; 
 	private static ReflectionObject _metadataTypeAttributeReflectionObject; 
 
-public static bool FullyTrusted { get; }
-public static ReflectionDelegateFactory ReflectionDelegateFactory { get; }
+	public static bool FullyTrusted { get; }
+	public static ReflectionDelegateFactory ReflectionDelegateFactory { get; }
 
 
-public static T GetCachedAttribute<T>(object attributeProvider) { }
-/* GenericInstMethod :
-|
-|-JsonTypeReflector.GetCachedAttribute<JsonContainerAttribute>
-|-JsonTypeReflector.GetCachedAttribute<JsonConverterAttribute>
-|-JsonTypeReflector.GetCachedAttribute<JsonObjectAttribute>
-|-JsonTypeReflector.GetCachedAttribute<object>
-|-JsonTypeReflector.GetCachedAttribute<SerializableAttribute>
-*/
+	public static T GetCachedAttribute<T>(object attributeProvider) { }
+	/* GenericInstMethod :
+	|
+	|-JsonTypeReflector.GetCachedAttribute<JsonContainerAttribute>
+	|-JsonTypeReflector.GetCachedAttribute<JsonConverterAttribute>
+	|-JsonTypeReflector.GetCachedAttribute<JsonObjectAttribute>
+	|-JsonTypeReflector.GetCachedAttribute<object>
+	|-JsonTypeReflector.GetCachedAttribute<SerializableAttribute>
+	*/
 
-public static DataContractAttribute GetDataContractAttribute(Type type) { }
+	public static DataContractAttribute GetDataContractAttribute(Type type) { }
 
-public static DataMemberAttribute GetDataMemberAttribute(MemberInfo memberInfo) { }
+	public static DataMemberAttribute GetDataMemberAttribute(MemberInfo memberInfo) { }
 
-public static MemberSerialization GetObjectMemberSerialization(Type objectType, bool ignoreSerializableAttribute) { }
+	public static MemberSerialization GetObjectMemberSerialization(Type objectType, bool ignoreSerializableAttribute) { }
 
-public static JsonConverter GetJsonConverter(object attributeProvider) { }
+	public static JsonConverter GetJsonConverter(object attributeProvider) { }
 
-public static JsonConverter CreateJsonConverterInstance(Type converterType, object[] converterArgs) { }
+	public static JsonConverter CreateJsonConverterInstance(Type converterType, object[] converterArgs) { }
 
-private static Func<object[], JsonConverter> GetJsonConverterCreator(Type converterType) { }
+	private static Func<object[], JsonConverter> GetJsonConverterCreator(Type converterType) { }
 
-public static TypeConverter GetTypeConverter(Type type) { }
+	public static TypeConverter GetTypeConverter(Type type) { }
 
-private static Type GetAssociatedMetadataType(Type type) { }
+	private static Type GetAssociatedMetadataType(Type type) { }
 
-private static Type GetAssociateMetadataTypeFromAttribute(Type type) { }
+	private static Type GetAssociateMetadataTypeFromAttribute(Type type) { }
 
-private static T GetAttribute<T>(Type type) { }
-/* GenericInstMethod :
-|
-|-JsonTypeReflector.GetAttribute<object>
-*/
+	private static T GetAttribute<T>(Type type) { }
+	/* GenericInstMethod :
+	|
+	|-JsonTypeReflector.GetAttribute<object>
+	*/
 
-private static T GetAttribute<T>(MemberInfo memberInfo) { }
-/* GenericInstMethod :
-|
-|-JsonTypeReflector.GetAttribute<object>
-*/
+	private static T GetAttribute<T>(MemberInfo memberInfo) { }
+	/* GenericInstMethod :
+	|
+	|-JsonTypeReflector.GetAttribute<object>
+	*/
 
-public static T GetAttribute<T>(object provider) { }
-/* GenericInstMethod :
-|
-|-JsonTypeReflector.GetAttribute<JsonExtensionDataAttribute>
-|-JsonTypeReflector.GetAttribute<JsonIgnoreAttribute>
-|-JsonTypeReflector.GetAttribute<JsonPropertyAttribute>
-|-JsonTypeReflector.GetAttribute<JsonRequiredAttribute>
-|-JsonTypeReflector.GetAttribute<DefaultValueAttribute>
-|-JsonTypeReflector.GetAttribute<NonSerializedAttribute>
-|-JsonTypeReflector.GetAttribute<object>
-|-JsonTypeReflector.GetAttribute<DataMemberAttribute>
-*/
+	public static T GetAttribute<T>(object provider) { }
+	/* GenericInstMethod :
+	|
+	|-JsonTypeReflector.GetAttribute<JsonExtensionDataAttribute>
+	|-JsonTypeReflector.GetAttribute<JsonIgnoreAttribute>
+	|-JsonTypeReflector.GetAttribute<JsonPropertyAttribute>
+	|-JsonTypeReflector.GetAttribute<JsonRequiredAttribute>
+	|-JsonTypeReflector.GetAttribute<DefaultValueAttribute>
+	|-JsonTypeReflector.GetAttribute<NonSerializedAttribute>
+	|-JsonTypeReflector.GetAttribute<object>
+	|-JsonTypeReflector.GetAttribute<DataMemberAttribute>
+	*/
 
-public static bool get_FullyTrusted() { }
+	public static bool get_FullyTrusted() { }
 
-public static ReflectionDelegateFactory get_ReflectionDelegateFactory() { }
+	public static ReflectionDelegateFactory get_ReflectionDelegateFactory() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -3309,9 +3309,9 @@ private sealed class JsonTypeReflector.<>c__DisplayClass18_0 // TypeDefIndex: 60
 	public Func<object> defaultConstructor; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal JsonConverter <GetJsonConverterCreator>b__0(object[] parameters) { }
+	internal JsonConverter <GetJsonConverterCreator>b__0(object[] parameters) { }
 
 }
 
@@ -3321,39 +3321,39 @@ private sealed class JsonTypeReflector.<>c // TypeDefIndex: 6031
 	public static Func<object, Type> <>9__18_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal Type <GetJsonConverterCreator>b__18_1(object param) { }
+	internal Type <GetJsonConverterCreator>b__18_1(object param) { }
 
 }
 
 public class JPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 6038
 {
-public override Type ComponentType { get; }
-public override bool IsReadOnly { get; }
-public override Type PropertyType { get; }
-protected override int NameHashCode { get; }
+	public override Type ComponentType { get; }
+	public override bool IsReadOnly { get; }
+	public override Type PropertyType { get; }
+	protected override int NameHashCode { get; }
 
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
-private static JObject CastInstance(object instance) { }
+	private static JObject CastInstance(object instance) { }
 
-public override object GetValue(object component) { }
+	public override object GetValue(object component) { }
 
-public override void SetValue(object component, object value) { }
+	public override void SetValue(object component, object value) { }
 
-public override bool ShouldSerializeValue(object component) { }
+	public override bool ShouldSerializeValue(object component) { }
 
-public override Type get_ComponentType() { }
+	public override Type get_ComponentType() { }
 
-public override bool get_IsReadOnly() { }
+	public override bool get_IsReadOnly() { }
 
-public override Type get_PropertyType() { }
+	public override Type get_PropertyType() { }
 
-protected override int get_NameHashCode() { }
+	protected override int get_NameHashCode() { }
 
 }
 
@@ -3362,38 +3362,38 @@ internal class JPropertyKeyedCollection : Collection<JToken> // TypeDefIndex: 60
 	private static readonly IEqualityComparer<string> Comparer; 
 	private Dictionary<string, JToken> _dictionary; 
 
-public ICollection<string> Keys { get; }
+	public ICollection<string> Keys { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private void AddKey(string key, JToken item) { }
+	private void AddKey(string key, JToken item) { }
 
-protected override void ClearItems() { }
+	protected override void ClearItems() { }
 
-public bool Contains(string key) { }
+	public bool Contains(string key) { }
 
-private void EnsureDictionary() { }
+	private void EnsureDictionary() { }
 
-private string GetKeyForItem(JToken item) { }
+	private string GetKeyForItem(JToken item) { }
 
-protected override void InsertItem(int index, JToken item) { }
+	protected override void InsertItem(int index, JToken item) { }
 
-protected override void RemoveItem(int index) { }
+	protected override void RemoveItem(int index) { }
 
-private void RemoveKey(string key) { }
+	private void RemoveKey(string key) { }
 
-protected override void SetItem(int index, JToken item) { }
+	protected override void SetItem(int index, JToken item) { }
 
-public bool TryGetValue(string key, out JToken value) { }
+	public bool TryGetValue(string key, out JToken value) { }
 
-public ICollection<string> get_Keys() { }
+	public ICollection<string> get_Keys() { }
 
-public int IndexOfReference(JToken t) { }
+	public int IndexOfReference(JToken t) { }
 
-public bool Compare(JPropertyKeyedCollection other) { }
+	public bool Compare(JPropertyKeyedCollection other) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -3402,22 +3402,22 @@ public class JsonLoadSettings // TypeDefIndex: 6040
 	private CommentHandling _commentHandling; 
 	private LineInfoHandling _lineInfoHandling; 
 
-public CommentHandling CommentHandling { get; }
-public LineInfoHandling LineInfoHandling { get; }
+	public CommentHandling CommentHandling { get; }
+	public LineInfoHandling LineInfoHandling { get; }
 
 
-public CommentHandling get_CommentHandling() { }
+	public CommentHandling get_CommentHandling() { }
 
-public LineInfoHandling get_LineInfoHandling() { }
+	public LineInfoHandling get_LineInfoHandling() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class JsonMergeSettings // TypeDefIndex: 6041
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3427,11 +3427,11 @@ public class JTokenEqualityComparer : IEqualityComparer<JToken> // TypeDefIndex:
 [PreserveAttribute] 
 public class JTokenEqualityComparer : IEqualityComparer<JToken> 
 
-public bool Equals(JToken x, JToken y) { }
+	public bool Equals(JToken x, JToken y) { }
 
-public int GetHashCode(JToken obj) { }
+	public int GetHashCode(JToken obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3444,34 +3444,34 @@ public class JConstructor : JContainer
 	private string _name; 
 	private readonly List<JToken> _values; 
 
-protected override IList<JToken> ChildrenTokens { get; }
-public string Name { get; }
-public override JTokenType Type { get; }
+	protected override IList<JToken> ChildrenTokens { get; }
+	public string Name { get; }
+	public override JTokenType Type { get; }
 
 
-protected override IList<JToken> get_ChildrenTokens() { }
+	protected override IList<JToken> get_ChildrenTokens() { }
 
-internal override int IndexOfItem(JToken item) { }
+	internal override int IndexOfItem(JToken item) { }
 
-public string get_Name() { }
+	public string get_Name() { }
 
-public override JTokenType get_Type() { }
+	public override JTokenType get_Type() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(JConstructor other) { }
+	public void .ctor(JConstructor other) { }
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
-internal override bool DeepEquals(JToken node) { }
+	internal override bool DeepEquals(JToken node) { }
 
-internal override JToken CloneToken() { }
+	internal override JToken CloneToken() { }
 
-public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
+	public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
 
-internal override int GetDeepHashCode() { }
+	internal override int GetDeepHashCode() { }
 
-public static JConstructor Load(JsonReader reader, JsonLoadSettings settings) { }
+	public static JConstructor Load(JsonReader reader, JsonLoadSettings settings) { }
 
 }
 
@@ -3481,134 +3481,134 @@ public abstract class JContainer : JToken, IList<JToken>, ICollection<JToken>, I
 	private object _syncRoot; 
 	private bool _busy; 
 
-protected abstract IList<JToken> ChildrenTokens { get; }
-public override bool HasValues { get; }
-public override JToken First { get; }
-public override JToken Last { get; }
-private JToken System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.Item { get; set; }
-private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.IsReadOnly { get; }
-private bool System.Collections.IList.IsFixedSize { get; }
-private bool System.Collections.IList.IsReadOnly { get; }
-private object System.Collections.IList.Item { get; set; }
-public int Count { get; }
-private object System.Collections.ICollection.SyncRoot { get; }
+	protected abstract IList<JToken> ChildrenTokens { get; }
+	public override bool HasValues { get; }
+	public override JToken First { get; }
+	public override JToken Last { get; }
+	private JToken System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.Item { get; set; }
+	private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.IsReadOnly { get; }
+	private bool System.Collections.IList.IsFixedSize { get; }
+	private bool System.Collections.IList.IsReadOnly { get; }
+	private object System.Collections.IList.Item { get; set; }
+	public int Count { get; }
+	private object System.Collections.ICollection.SyncRoot { get; }
 
 
-protected abstract IList<JToken> get_ChildrenTokens();
+	protected abstract IList<JToken> get_ChildrenTokens();
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void .ctor(JContainer other) { }
+	internal void .ctor(JContainer other) { }
 
-internal void CheckReentrancy() { }
+	internal void CheckReentrancy() { }
 
-protected virtual void OnListChanged(ListChangedEventArgs e) { }
+	protected virtual void OnListChanged(ListChangedEventArgs e) { }
 
-public override bool get_HasValues() { }
+	public override bool get_HasValues() { }
 
-internal bool ContentsEqual(JContainer container) { }
+	internal bool ContentsEqual(JContainer container) { }
 
-public override JToken get_First() { }
+	public override JToken get_First() { }
 
-public override JToken get_Last() { }
+	public override JToken get_Last() { }
 
-public override JEnumerable<JToken> Children() { }
+	public override JEnumerable<JToken> Children() { }
 
-internal bool IsMultiContent(object content) { }
+	internal bool IsMultiContent(object content) { }
 
-internal JToken EnsureParentToken(JToken item, bool skipParentCheck) { }
+	internal JToken EnsureParentToken(JToken item, bool skipParentCheck) { }
 
-internal abstract int IndexOfItem(JToken item);
+	internal abstract int IndexOfItem(JToken item);
 
-internal virtual void InsertItem(int index, JToken item, bool skipParentCheck) { }
+	internal virtual void InsertItem(int index, JToken item, bool skipParentCheck) { }
 
-internal virtual void RemoveItemAt(int index) { }
+	internal virtual void RemoveItemAt(int index) { }
 
-internal virtual bool RemoveItem(JToken item) { }
+	internal virtual bool RemoveItem(JToken item) { }
 
-internal virtual JToken GetItem(int index) { }
+	internal virtual JToken GetItem(int index) { }
 
-internal virtual void SetItem(int index, JToken item) { }
+	internal virtual void SetItem(int index, JToken item) { }
 
-internal virtual void ClearItems() { }
+	internal virtual void ClearItems() { }
 
-internal virtual void ReplaceItem(JToken existing, JToken replacement) { }
+	internal virtual void ReplaceItem(JToken existing, JToken replacement) { }
 
-internal virtual bool ContainsItem(JToken item) { }
+	internal virtual bool ContainsItem(JToken item) { }
 
-internal virtual void CopyItemsTo(Array array, int arrayIndex) { }
+	internal virtual void CopyItemsTo(Array array, int arrayIndex) { }
 
-internal static bool IsTokenUnchanged(JToken currentValue, JToken newValue) { }
+	internal static bool IsTokenUnchanged(JToken currentValue, JToken newValue) { }
 
-internal virtual void ValidateToken(JToken o, JToken existing) { }
+	internal virtual void ValidateToken(JToken o, JToken existing) { }
 
-public virtual void Add(object content) { }
+	public virtual void Add(object content) { }
 
-internal void AddAndSkipParentCheck(JToken token) { }
+	internal void AddAndSkipParentCheck(JToken token) { }
 
-internal void AddInternal(int index, object content, bool skipParentCheck) { }
+	internal void AddInternal(int index, object content, bool skipParentCheck) { }
 
-internal static JToken CreateFromContent(object content) { }
+	internal static JToken CreateFromContent(object content) { }
 
-public void RemoveAll() { }
+	public void RemoveAll() { }
 
-internal void ReadTokenFrom(JsonReader reader, JsonLoadSettings options) { }
+	internal void ReadTokenFrom(JsonReader reader, JsonLoadSettings options) { }
 
-internal void ReadContentFrom(JsonReader r, JsonLoadSettings settings) { }
+	internal void ReadContentFrom(JsonReader r, JsonLoadSettings settings) { }
 
-internal int ContentsHashCode() { }
+	internal int ContentsHashCode() { }
 
-private int System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.IndexOf(JToken item) { }
+	private int System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.IndexOf(JToken item) { }
 
-private void System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.Insert(int index, JToken item) { }
+	private void System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.Insert(int index, JToken item) { }
 
-private void System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.RemoveAt(int index) { }
+	private void System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.RemoveAt(int index) { }
 
-private JToken System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.get_Item(int index) { }
+	private JToken System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.get_Item(int index) { }
 
-private void System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.set_Item(int index, JToken value) { }
+	private void System.Collections.Generic.IList<Newtonsoft.Json.Linq.JToken>.set_Item(int index, JToken value) { }
 
-private void System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Add(JToken item) { }
+	private void System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Add(JToken item) { }
 
-private void System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Clear() { }
+	private void System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Clear() { }
 
-private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Contains(JToken item) { }
+	private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Contains(JToken item) { }
 
-private void System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.CopyTo(JToken[] array, int arrayIndex) { }
+	private void System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.CopyTo(JToken[] array, int arrayIndex) { }
 
-private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.get_IsReadOnly() { }
+	private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.get_IsReadOnly() { }
 
-private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Remove(JToken item) { }
+	private bool System.Collections.Generic.ICollection<Newtonsoft.Json.Linq.JToken>.Remove(JToken item) { }
 
-private JToken EnsureValue(object value) { }
+	private JToken EnsureValue(object value) { }
 
-private int System.Collections.IList.Add(object value) { }
+	private int System.Collections.IList.Add(object value) { }
 
-private void System.Collections.IList.Clear() { }
+	private void System.Collections.IList.Clear() { }
 
-private bool System.Collections.IList.Contains(object value) { }
+	private bool System.Collections.IList.Contains(object value) { }
 
-private int System.Collections.IList.IndexOf(object value) { }
+	private int System.Collections.IList.IndexOf(object value) { }
 
-private void System.Collections.IList.Insert(int index, object value) { }
+	private void System.Collections.IList.Insert(int index, object value) { }
 
-private bool System.Collections.IList.get_IsFixedSize() { }
+	private bool System.Collections.IList.get_IsFixedSize() { }
 
-private bool System.Collections.IList.get_IsReadOnly() { }
+	private bool System.Collections.IList.get_IsReadOnly() { }
 
-private void System.Collections.IList.Remove(object value) { }
+	private void System.Collections.IList.Remove(object value) { }
 
-private void System.Collections.IList.RemoveAt(int index) { }
+	private void System.Collections.IList.RemoveAt(int index) { }
 
-private object System.Collections.IList.get_Item(int index) { }
+	private object System.Collections.IList.get_Item(int index) { }
 
-private void System.Collections.IList.set_Item(int index, object value) { }
+	private void System.Collections.IList.set_Item(int index, object value) { }
 
-private void System.Collections.ICollection.CopyTo(Array array, int index) { }
+	private void System.Collections.ICollection.CopyTo(Array array, int index) { }
 
-public int get_Count() { }
+	public int get_Count() { }
 
-private object System.Collections.ICollection.get_SyncRoot() { }
+	private object System.Collections.ICollection.get_SyncRoot() { }
 
 }
 
@@ -3620,89 +3620,89 @@ public class JObject : JContainer, IDictionary<string, JToken>, ICollection<KeyV
 	[CompilerGeneratedAttribute] 
 	private PropertyChangingEventHandler PropertyChanging; 
 
-protected override IList<JToken> ChildrenTokens { get; }
-public override JTokenType Type { get; }
-public JToken Item { get; set; }
-private ICollection<string> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.Keys { get; }
-private ICollection<JToken> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.Values { get; }
-private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.IsReadOnly { get; }
+	protected override IList<JToken> ChildrenTokens { get; }
+	public override JTokenType Type { get; }
+	public JToken Item { get; set; }
+	private ICollection<string> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.Keys { get; }
+	private ICollection<JToken> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.Values { get; }
+	private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.IsReadOnly { get; }
 
 
-protected override IList<JToken> get_ChildrenTokens() { }
+	protected override IList<JToken> get_ChildrenTokens() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(JObject other) { }
+	public void .ctor(JObject other) { }
 
-internal override bool DeepEquals(JToken node) { }
+	internal override bool DeepEquals(JToken node) { }
 
-internal override int IndexOfItem(JToken item) { }
+	internal override int IndexOfItem(JToken item) { }
 
-internal override void InsertItem(int index, JToken item, bool skipParentCheck) { }
+	internal override void InsertItem(int index, JToken item, bool skipParentCheck) { }
 
-internal override void ValidateToken(JToken o, JToken existing) { }
+	internal override void ValidateToken(JToken o, JToken existing) { }
 
-internal void InternalPropertyChanged(JProperty childProperty) { }
+	internal void InternalPropertyChanged(JProperty childProperty) { }
 
-internal void InternalPropertyChanging(JProperty childProperty) { }
+	internal void InternalPropertyChanging(JProperty childProperty) { }
 
-internal override JToken CloneToken() { }
+	internal override JToken CloneToken() { }
 
-public override JTokenType get_Type() { }
+	public override JTokenType get_Type() { }
 
-public JProperty Property(string name) { }
+	public JProperty Property(string name) { }
 
-public JToken get_Item(string propertyName) { }
+	public JToken get_Item(string propertyName) { }
 
-public void set_Item(string propertyName, JToken value) { }
+	public void set_Item(string propertyName, JToken value) { }
 
-public static JObject Load(JsonReader reader) { }
+	public static JObject Load(JsonReader reader) { }
 
-public static JObject Load(JsonReader reader, JsonLoadSettings settings) { }
+	public static JObject Load(JsonReader reader, JsonLoadSettings settings) { }
 
-public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
+	public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
 
-public void Add(string propertyName, JToken value) { }
+	public void Add(string propertyName, JToken value) { }
 
-private bool System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.ContainsKey(string key) { }
+	private bool System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.ContainsKey(string key) { }
 
-private ICollection<string> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.get_Keys() { }
+	private ICollection<string> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.get_Keys() { }
 
-public bool Remove(string propertyName) { }
+	public bool Remove(string propertyName) { }
 
-public bool TryGetValue(string propertyName, out JToken value) { }
+	public bool TryGetValue(string propertyName, out JToken value) { }
 
-private ICollection<JToken> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.get_Values() { }
+	private ICollection<JToken> System.Collections.Generic.IDictionary<System.String,Newtonsoft.Json.Linq.JToken>.get_Values() { }
 
-private void System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Add(KeyValuePair<string, JToken> item) { }
+	private void System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Add(KeyValuePair<string, JToken> item) { }
 
-private void System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Clear() { }
+	private void System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Clear() { }
 
-private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Contains(KeyValuePair<string, JToken> item) { }
+	private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Contains(KeyValuePair<string, JToken> item) { }
 
-private void System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.CopyTo(KeyValuePair<string, JToken>[] array, int arrayIndex) { }
+	private void System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.CopyTo(KeyValuePair<string, JToken>[] array, int arrayIndex) { }
 
-private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.get_IsReadOnly() { }
+	private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.get_IsReadOnly() { }
 
-private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Remove(KeyValuePair<string, JToken> item) { }
+	private bool System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Remove(KeyValuePair<string, JToken> item) { }
 
-internal override int GetDeepHashCode() { }
+	internal override int GetDeepHashCode() { }
 
-public IEnumerator<KeyValuePair<string, JToken>> GetEnumerator() { }
+	public IEnumerator<KeyValuePair<string, JToken>> GetEnumerator() { }
 
-protected virtual void OnPropertyChanged(string propertyName) { }
+	protected virtual void OnPropertyChanged(string propertyName) { }
 
-protected virtual void OnPropertyChanging(string propertyName) { }
+	protected virtual void OnPropertyChanging(string propertyName) { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
 
-private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
+	private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
 
-private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
+	private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
 
-private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
+	private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
 
 }
 
@@ -3711,9 +3711,9 @@ private sealed class JObject.<>c // TypeDefIndex: 6061
 	public static readonly JObject.<>c <>9; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3724,28 +3724,28 @@ private sealed class JObject.<GetEnumerator>d__58 : IEnumerator<KeyValuePair<str
 	public JObject <>4__this; 
 	private IEnumerator<JToken> <>7__wrap1; 
 
-private KeyValuePair<string, JToken> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private KeyValuePair<string, JToken> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
-
-	[DebuggerHiddenAttribute] 
-private KeyValuePair<string, JToken> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.get_Current() { }
+	private void <>m__Finally1() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private KeyValuePair<string, JToken> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,Newtonsoft.Json.Linq.JToken>>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -3753,59 +3753,59 @@ public class JArray : JContainer, IList<JToken>, ICollection<JToken>, IEnumerabl
 {
 	private readonly List<JToken> _values; 
 
-protected override IList<JToken> ChildrenTokens { get; }
-public override JTokenType Type { get; }
-public JToken Item { get; set; }
-public bool IsReadOnly { get; }
+	protected override IList<JToken> ChildrenTokens { get; }
+	public override JTokenType Type { get; }
+	public JToken Item { get; set; }
+	public bool IsReadOnly { get; }
 
 
-protected override IList<JToken> get_ChildrenTokens() { }
+	protected override IList<JToken> get_ChildrenTokens() { }
 
-public override JTokenType get_Type() { }
+	public override JTokenType get_Type() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(JArray other) { }
+	public void .ctor(JArray other) { }
 
-public void .ctor(object content) { }
+	public void .ctor(object content) { }
 
-internal override bool DeepEquals(JToken node) { }
+	internal override bool DeepEquals(JToken node) { }
 
-internal override JToken CloneToken() { }
+	internal override JToken CloneToken() { }
 
-public static JArray Load(JsonReader reader) { }
+	public static JArray Load(JsonReader reader) { }
 
-public static JArray Load(JsonReader reader, JsonLoadSettings settings) { }
+	public static JArray Load(JsonReader reader, JsonLoadSettings settings) { }
 
-public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
+	public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
 
-public JToken get_Item(int index) { }
+	public JToken get_Item(int index) { }
 
-public void set_Item(int index, JToken value) { }
+	public void set_Item(int index, JToken value) { }
 
-internal override int IndexOfItem(JToken item) { }
+	internal override int IndexOfItem(JToken item) { }
 
-public int IndexOf(JToken item) { }
+	public int IndexOf(JToken item) { }
 
-public void Insert(int index, JToken item) { }
+	public void Insert(int index, JToken item) { }
 
-public void RemoveAt(int index) { }
+	public void RemoveAt(int index) { }
 
-public IEnumerator<JToken> GetEnumerator() { }
+	public IEnumerator<JToken> GetEnumerator() { }
 
-public void Add(JToken item) { }
+	public void Add(JToken item) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public bool Contains(JToken item) { }
+	public bool Contains(JToken item) { }
 
-public void CopyTo(JToken[] array, int arrayIndex) { }
+	public void CopyTo(JToken[] array, int arrayIndex) { }
 
-public bool get_IsReadOnly() { }
+	public bool get_IsReadOnly() { }
 
-public bool Remove(JToken item) { }
+	public bool Remove(JToken item) { }
 
-internal override int GetDeepHashCode() { }
+	internal override int GetDeepHashCode() { }
 
 }
 
@@ -3816,39 +3816,39 @@ public class JTokenReader : JsonReader, IJsonLineInfo // TypeDefIndex: 6064
 	private JToken _parent; 
 	private JToken _current; 
 
-public JToken CurrentToken { get; }
-private int Newtonsoft.Json.IJsonLineInfo.LineNumber { get; }
-private int Newtonsoft.Json.IJsonLineInfo.LinePosition { get; }
-public override string Path { get; }
+	public JToken CurrentToken { get; }
+	private int Newtonsoft.Json.IJsonLineInfo.LineNumber { get; }
+	private int Newtonsoft.Json.IJsonLineInfo.LinePosition { get; }
+	public override string Path { get; }
 
 
-public JToken get_CurrentToken() { }
+	public JToken get_CurrentToken() { }
 
-public void .ctor(JToken token) { }
+	public void .ctor(JToken token) { }
 
-public override bool Read() { }
+	public override bool Read() { }
 
-private bool ReadOver(JToken t) { }
+	private bool ReadOver(JToken t) { }
 
-private bool ReadToEnd() { }
+	private bool ReadToEnd() { }
 
-private Nullable<JsonToken> GetEndToken(JContainer c) { }
+	private Nullable<JsonToken> GetEndToken(JContainer c) { }
 
-private bool ReadInto(JContainer c) { }
+	private bool ReadInto(JContainer c) { }
 
-private bool SetEnd(JContainer c) { }
+	private bool SetEnd(JContainer c) { }
 
-private void SetToken(JToken token) { }
+	private void SetToken(JToken token) { }
 
-private string SafeToString(object value) { }
+	private string SafeToString(object value) { }
 
-private bool Newtonsoft.Json.IJsonLineInfo.HasLineInfo() { }
+	private bool Newtonsoft.Json.IJsonLineInfo.HasLineInfo() { }
 
-private int Newtonsoft.Json.IJsonLineInfo.get_LineNumber() { }
+	private int Newtonsoft.Json.IJsonLineInfo.get_LineNumber() { }
 
-private int Newtonsoft.Json.IJsonLineInfo.get_LinePosition() { }
+	private int Newtonsoft.Json.IJsonLineInfo.get_LinePosition() { }
 
-public override string get_Path() { }
+	public override string get_Path() { }
 
 }
 
@@ -3859,88 +3859,88 @@ public class JTokenWriter : JsonWriter // TypeDefIndex: 6065
 	private JValue _value; 
 	private JToken _current; 
 
-public JToken Token { get; }
+	public JToken Token { get; }
 
 
-public JToken get_Token() { }
+	public JToken get_Token() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void Close() { }
+	public override void Close() { }
 
-public override void WriteStartObject() { }
+	public override void WriteStartObject() { }
 
-private void AddParent(JContainer container) { }
+	private void AddParent(JContainer container) { }
 
-private void RemoveParent() { }
+	private void RemoveParent() { }
 
-public override void WriteStartArray() { }
+	public override void WriteStartArray() { }
 
-public override void WriteStartConstructor(string name) { }
+	public override void WriteStartConstructor(string name) { }
 
-protected override void WriteEnd(JsonToken token) { }
+	protected override void WriteEnd(JsonToken token) { }
 
-public override void WritePropertyName(string name) { }
+	public override void WritePropertyName(string name) { }
 
-private void AddValue(object value, JsonToken token) { }
+	private void AddValue(object value, JsonToken token) { }
 
-internal void AddValue(JValue value, JsonToken token) { }
+	internal void AddValue(JValue value, JsonToken token) { }
 
-public override void WriteValue(object value) { }
+	public override void WriteValue(object value) { }
 
-public override void WriteNull() { }
+	public override void WriteNull() { }
 
-public override void WriteUndefined() { }
+	public override void WriteUndefined() { }
 
-public override void WriteRaw(string json) { }
+	public override void WriteRaw(string json) { }
 
-public override void WriteComment(string text) { }
+	public override void WriteComment(string text) { }
 
-public override void WriteValue(string value) { }
+	public override void WriteValue(string value) { }
 
-public override void WriteValue(int value) { }
-
-	[CLSCompliantAttribute] 
-public override void WriteValue(uint value) { }
-
-public override void WriteValue(long value) { }
+	public override void WriteValue(int value) { }
 
 	[CLSCompliantAttribute] 
-public override void WriteValue(ulong value) { }
+	public override void WriteValue(uint value) { }
 
-public override void WriteValue(float value) { }
-
-public override void WriteValue(double value) { }
-
-public override void WriteValue(bool value) { }
-
-public override void WriteValue(short value) { }
+	public override void WriteValue(long value) { }
 
 	[CLSCompliantAttribute] 
-public override void WriteValue(ushort value) { }
+	public override void WriteValue(ulong value) { }
 
-public override void WriteValue(char value) { }
+	public override void WriteValue(float value) { }
 
-public override void WriteValue(byte value) { }
+	public override void WriteValue(double value) { }
+
+	public override void WriteValue(bool value) { }
+
+	public override void WriteValue(short value) { }
 
 	[CLSCompliantAttribute] 
-public override void WriteValue(sbyte value) { }
+	public override void WriteValue(ushort value) { }
 
-public override void WriteValue(Decimal value) { }
+	public override void WriteValue(char value) { }
 
-public override void WriteValue(DateTime value) { }
+	public override void WriteValue(byte value) { }
 
-public override void WriteValue(DateTimeOffset value) { }
+	[CLSCompliantAttribute] 
+	public override void WriteValue(sbyte value) { }
 
-public override void WriteValue(byte[] value) { }
+	public override void WriteValue(Decimal value) { }
 
-public override void WriteValue(TimeSpan value) { }
+	public override void WriteValue(DateTime value) { }
 
-public override void WriteValue(Guid value) { }
+	public override void WriteValue(DateTimeOffset value) { }
 
-public override void WriteValue(Uri value) { }
+	public override void WriteValue(byte[] value) { }
 
-internal override void WriteToken(JsonReader reader, bool writeChildren, bool writeDateConstructorAsDate, bool writeComments) { }
+	public override void WriteValue(TimeSpan value) { }
+
+	public override void WriteValue(Guid value) { }
+
+	public override void WriteValue(Uri value) { }
+
+	internal override void WriteToken(JsonReader reader, bool writeChildren, bool writeDateConstructorAsDate, bool writeComments) { }
 
 }
 
@@ -3960,204 +3960,204 @@ public abstract class JToken : IJEnumerable<JToken>, IEnumerable<JToken>, IEnume
 	private static readonly JTokenType[] DateTimeTypes; 
 	private static readonly JTokenType[] BytesTypes; 
 
-public JContainer Parent { get; set; }
-public JToken Root { get; }
-public abstract JTokenType Type { get; }
-public abstract bool HasValues { get; }
-public JToken Next { get; set; }
-public JToken Previous { get; set; }
-public string Path { get; }
-public virtual JToken First { get; }
-public virtual JToken Last { get; }
-private int Newtonsoft.Json.IJsonLineInfo.LineNumber { get; }
-private int Newtonsoft.Json.IJsonLineInfo.LinePosition { get; }
+	public JContainer Parent { get; set; }
+	public JToken Root { get; }
+	public abstract JTokenType Type { get; }
+	public abstract bool HasValues { get; }
+	public JToken Next { get; set; }
+	public JToken Previous { get; set; }
+	public string Path { get; }
+	public virtual JToken First { get; }
+	public virtual JToken Last { get; }
+	private int Newtonsoft.Json.IJsonLineInfo.LineNumber { get; }
+	private int Newtonsoft.Json.IJsonLineInfo.LinePosition { get; }
 
 
 	[DebuggerStepThroughAttribute] 
-public JContainer get_Parent() { }
+	public JContainer get_Parent() { }
 
-internal void set_Parent(JContainer value) { }
+	internal void set_Parent(JContainer value) { }
 
-public JToken get_Root() { }
+	public JToken get_Root() { }
 
-internal abstract JToken CloneToken();
+	internal abstract JToken CloneToken();
 
-internal abstract bool DeepEquals(JToken node);
+	internal abstract bool DeepEquals(JToken node);
 
-public abstract JTokenType get_Type();
+	public abstract JTokenType get_Type();
 
-public abstract bool get_HasValues();
+	public abstract bool get_HasValues();
 
-public static bool DeepEquals(JToken t1, JToken t2) { }
+	public static bool DeepEquals(JToken t1, JToken t2) { }
 
-public JToken get_Next() { }
+	public JToken get_Next() { }
 
-internal void set_Next(JToken value) { }
+	internal void set_Next(JToken value) { }
 
-public JToken get_Previous() { }
+	public JToken get_Previous() { }
 
-internal void set_Previous(JToken value) { }
+	internal void set_Previous(JToken value) { }
 
-public string get_Path() { }
+	public string get_Path() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public virtual JToken get_First() { }
+	public virtual JToken get_First() { }
 
-public virtual JToken get_Last() { }
+	public virtual JToken get_Last() { }
 
-public virtual JEnumerable<JToken> Children() { }
+	public virtual JEnumerable<JToken> Children() { }
 
-public void Remove() { }
+	public void Remove() { }
 
-public void Replace(JToken value) { }
+	public void Replace(JToken value) { }
 
-public abstract void WriteTo(JsonWriter writer, JsonConverter[] converters);
+	public abstract void WriteTo(JsonWriter writer, JsonConverter[] converters);
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public string ToString(Formatting formatting, JsonConverter[] converters) { }
+	public string ToString(Formatting formatting, JsonConverter[] converters) { }
 
-private static JValue EnsureValue(JToken value) { }
+	private static JValue EnsureValue(JToken value) { }
 
-private static string GetType(JToken token) { }
+	private static string GetType(JToken token) { }
 
-private static bool ValidateToken(JToken o, JTokenType[] validTypes, bool nullable) { }
+	private static bool ValidateToken(JToken o, JTokenType[] validTypes, bool nullable) { }
 
-public static bool op_Explicit(JToken value) { }
+	public static bool op_Explicit(JToken value) { }
 
-public static DateTimeOffset op_Explicit(JToken value) { }
+	public static DateTimeOffset op_Explicit(JToken value) { }
 
-public static Nullable<bool> op_Explicit(JToken value) { }
+	public static Nullable<bool> op_Explicit(JToken value) { }
 
-public static long op_Explicit(JToken value) { }
+	public static long op_Explicit(JToken value) { }
 
-public static Nullable<DateTime> op_Explicit(JToken value) { }
+	public static Nullable<DateTime> op_Explicit(JToken value) { }
 
-public static Nullable<DateTimeOffset> op_Explicit(JToken value) { }
+	public static Nullable<DateTimeOffset> op_Explicit(JToken value) { }
 
-public static Nullable<Decimal> op_Explicit(JToken value) { }
+	public static Nullable<Decimal> op_Explicit(JToken value) { }
 
-public static Nullable<double> op_Explicit(JToken value) { }
+	public static Nullable<double> op_Explicit(JToken value) { }
 
-public static Nullable<char> op_Explicit(JToken value) { }
+	public static Nullable<char> op_Explicit(JToken value) { }
 
-public static int op_Explicit(JToken value) { }
+	public static int op_Explicit(JToken value) { }
 
-public static short op_Explicit(JToken value) { }
-
-	[CLSCompliantAttribute] 
-public static ushort op_Explicit(JToken value) { }
+	public static short op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static char op_Explicit(JToken value) { }
-
-public static byte op_Explicit(JToken value) { }
+	public static ushort op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static sbyte op_Explicit(JToken value) { }
+	public static char op_Explicit(JToken value) { }
 
-public static Nullable<int> op_Explicit(JToken value) { }
-
-public static Nullable<short> op_Explicit(JToken value) { }
+	public static byte op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static Nullable<ushort> op_Explicit(JToken value) { }
+	public static sbyte op_Explicit(JToken value) { }
 
-public static Nullable<byte> op_Explicit(JToken value) { }
+	public static Nullable<int> op_Explicit(JToken value) { }
 
-	[CLSCompliantAttribute] 
-public static Nullable<sbyte> op_Explicit(JToken value) { }
-
-public static DateTime op_Explicit(JToken value) { }
-
-public static Nullable<long> op_Explicit(JToken value) { }
-
-public static Nullable<float> op_Explicit(JToken value) { }
-
-public static Decimal op_Explicit(JToken value) { }
+	public static Nullable<short> op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static Nullable<uint> op_Explicit(JToken value) { }
+	public static Nullable<ushort> op_Explicit(JToken value) { }
+
+	public static Nullable<byte> op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static Nullable<ulong> op_Explicit(JToken value) { }
+	public static Nullable<sbyte> op_Explicit(JToken value) { }
 
-public static double op_Explicit(JToken value) { }
+	public static DateTime op_Explicit(JToken value) { }
 
-public static float op_Explicit(JToken value) { }
+	public static Nullable<long> op_Explicit(JToken value) { }
 
-public static string op_Explicit(JToken value) { }
+	public static Nullable<float> op_Explicit(JToken value) { }
+
+	public static Decimal op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static uint op_Explicit(JToken value) { }
+	public static Nullable<uint> op_Explicit(JToken value) { }
 
 	[CLSCompliantAttribute] 
-public static ulong op_Explicit(JToken value) { }
+	public static Nullable<ulong> op_Explicit(JToken value) { }
 
-public static Guid op_Explicit(JToken value) { }
+	public static double op_Explicit(JToken value) { }
 
-public static Nullable<Guid> op_Explicit(JToken value) { }
+	public static float op_Explicit(JToken value) { }
 
-public static TimeSpan op_Explicit(JToken value) { }
+	public static string op_Explicit(JToken value) { }
 
-public static Nullable<TimeSpan> op_Explicit(JToken value) { }
+	[CLSCompliantAttribute] 
+	public static uint op_Explicit(JToken value) { }
 
-public static Uri op_Explicit(JToken value) { }
+	[CLSCompliantAttribute] 
+	public static ulong op_Explicit(JToken value) { }
 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	public static Guid op_Explicit(JToken value) { }
 
-private IEnumerator<JToken> System.Collections.Generic.IEnumerable<Newtonsoft.Json.Linq.JToken>.GetEnumerator() { }
+	public static Nullable<Guid> op_Explicit(JToken value) { }
 
-internal abstract int GetDeepHashCode();
+	public static TimeSpan op_Explicit(JToken value) { }
 
-public JsonReader CreateReader() { }
+	public static Nullable<TimeSpan> op_Explicit(JToken value) { }
 
-public T ToObject<T>() { }
-/* GenericInstMethod :
-|
-|-JToken.ToObject<UITwitchTrophy.TrophyPage>
-|-JToken.ToObject<object>
-*/
+	public static Uri op_Explicit(JToken value) { }
 
-public object ToObject(Type objectType) { }
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
-public object ToObject(Type objectType, JsonSerializer jsonSerializer) { }
+	private IEnumerator<JToken> System.Collections.Generic.IEnumerable<Newtonsoft.Json.Linq.JToken>.GetEnumerator() { }
 
-public static JToken ReadFrom(JsonReader reader) { }
+	internal abstract int GetDeepHashCode();
 
-public static JToken ReadFrom(JsonReader reader, JsonLoadSettings settings) { }
+	public JsonReader CreateReader() { }
 
-public static JToken Parse(string json) { }
+	public T ToObject<T>() { }
+	/* GenericInstMethod :
+	|
+	|-JToken.ToObject<UITwitchTrophy.TrophyPage>
+	|-JToken.ToObject<object>
+	*/
 
-public static JToken Parse(string json, JsonLoadSettings settings) { }
+	public object ToObject(Type objectType) { }
 
-public static JToken Load(JsonReader reader, JsonLoadSettings settings) { }
+	public object ToObject(Type objectType, JsonSerializer jsonSerializer) { }
 
-internal void SetLineInfo(IJsonLineInfo lineInfo, JsonLoadSettings settings) { }
+	public static JToken ReadFrom(JsonReader reader) { }
 
-internal void SetLineInfo(int lineNumber, int linePosition) { }
+	public static JToken ReadFrom(JsonReader reader, JsonLoadSettings settings) { }
 
-private bool Newtonsoft.Json.IJsonLineInfo.HasLineInfo() { }
+	public static JToken Parse(string json) { }
 
-private int Newtonsoft.Json.IJsonLineInfo.get_LineNumber() { }
+	public static JToken Parse(string json, JsonLoadSettings settings) { }
 
-private int Newtonsoft.Json.IJsonLineInfo.get_LinePosition() { }
+	public static JToken Load(JsonReader reader, JsonLoadSettings settings) { }
 
-private object System.ICloneable.Clone() { }
+	internal void SetLineInfo(IJsonLineInfo lineInfo, JsonLoadSettings settings) { }
 
-public JToken DeepClone() { }
+	internal void SetLineInfo(int lineNumber, int linePosition) { }
 
-public void AddAnnotation(object annotation) { }
+	private bool Newtonsoft.Json.IJsonLineInfo.HasLineInfo() { }
 
-public T Annotation<T>() { }
-/* GenericInstMethod :
-|
-|-JToken.Annotation<JToken.LineInfoAnnotation>
-|-JToken.Annotation<object>
-*/
+	private int Newtonsoft.Json.IJsonLineInfo.get_LineNumber() { }
 
-private static void .cctor() { }
+	private int Newtonsoft.Json.IJsonLineInfo.get_LinePosition() { }
+
+	private object System.ICloneable.Clone() { }
+
+	public JToken DeepClone() { }
+
+	public void AddAnnotation(object annotation) { }
+
+	public T Annotation<T>() { }
+	/* GenericInstMethod :
+	|
+	|-JToken.Annotation<JToken.LineInfoAnnotation>
+	|-JToken.Annotation<object>
+	*/
+
+	private static void .cctor() { }
 
 }
 
@@ -4167,7 +4167,7 @@ private class JToken.LineInfoAnnotation // TypeDefIndex: 6067
 	internal readonly int LinePosition; 
 
 
-public void .ctor(int lineNumber, int linePosition) { }
+	public void .ctor(int lineNumber, int linePosition) { }
 
 }
 
@@ -4191,56 +4191,56 @@ public class JProperty : JContainer
 	private readonly JProperty.JPropertyList _content; 
 	private readonly string _name; 
 
-protected override IList<JToken> ChildrenTokens { get; }
-public string Name { get; }
-public JToken Value { get; set; }
-public override JTokenType Type { get; }
+	protected override IList<JToken> ChildrenTokens { get; }
+	public string Name { get; }
+	public JToken Value { get; set; }
+	public override JTokenType Type { get; }
 
 
-protected override IList<JToken> get_ChildrenTokens() { }
-
-	[DebuggerStepThroughAttribute] 
-public string get_Name() { }
+	protected override IList<JToken> get_ChildrenTokens() { }
 
 	[DebuggerStepThroughAttribute] 
-public JToken get_Value() { }
-
-public void set_Value(JToken value) { }
-
-public void .ctor(JProperty other) { }
-
-internal override JToken GetItem(int index) { }
-
-internal override void SetItem(int index, JToken item) { }
-
-internal override bool RemoveItem(JToken item) { }
-
-internal override void RemoveItemAt(int index) { }
-
-internal override int IndexOfItem(JToken item) { }
-
-internal override void InsertItem(int index, JToken item, bool skipParentCheck) { }
-
-internal override bool ContainsItem(JToken item) { }
-
-internal override void ClearItems() { }
-
-internal override bool DeepEquals(JToken node) { }
-
-internal override JToken CloneToken() { }
+	public string get_Name() { }
 
 	[DebuggerStepThroughAttribute] 
-public override JTokenType get_Type() { }
+	public JToken get_Value() { }
 
-internal void .ctor(string name) { }
+	public void set_Value(JToken value) { }
 
-public void .ctor(string name, object content) { }
+	public void .ctor(JProperty other) { }
 
-public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
+	internal override JToken GetItem(int index) { }
 
-internal override int GetDeepHashCode() { }
+	internal override void SetItem(int index, JToken item) { }
 
-public static JProperty Load(JsonReader reader, JsonLoadSettings settings) { }
+	internal override bool RemoveItem(JToken item) { }
+
+	internal override void RemoveItemAt(int index) { }
+
+	internal override int IndexOfItem(JToken item) { }
+
+	internal override void InsertItem(int index, JToken item, bool skipParentCheck) { }
+
+	internal override bool ContainsItem(JToken item) { }
+
+	internal override void ClearItems() { }
+
+	internal override bool DeepEquals(JToken node) { }
+
+	internal override JToken CloneToken() { }
+
+	[DebuggerStepThroughAttribute] 
+	public override JTokenType get_Type() { }
+
+	internal void .ctor(string name) { }
+
+	public void .ctor(string name, object content) { }
+
+	public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
+
+	internal override int GetDeepHashCode() { }
+
+	public static JProperty Load(JsonReader reader, JsonLoadSettings settings) { }
 
 }
 
@@ -4248,40 +4248,40 @@ private class JProperty.JPropertyList : IList<JToken>, ICollection<JToken>, IEnu
 {
 	internal JToken _token; 
 
-public int Count { get; }
-public bool IsReadOnly { get; }
-public JToken Item { get; set; }
+	public int Count { get; }
+	public bool IsReadOnly { get; }
+	public JToken Item { get; set; }
 
 
-public IEnumerator<JToken> GetEnumerator() { }
+	public IEnumerator<JToken> GetEnumerator() { }
 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
-public void Add(JToken item) { }
+	public void Add(JToken item) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public bool Contains(JToken item) { }
+	public bool Contains(JToken item) { }
 
-public void CopyTo(JToken[] array, int arrayIndex) { }
+	public void CopyTo(JToken[] array, int arrayIndex) { }
 
-public bool Remove(JToken item) { }
+	public bool Remove(JToken item) { }
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public bool get_IsReadOnly() { }
+	public bool get_IsReadOnly() { }
 
-public int IndexOf(JToken item) { }
+	public int IndexOf(JToken item) { }
 
-public void Insert(int index, JToken item) { }
+	public void Insert(int index, JToken item) { }
 
-public void RemoveAt(int index) { }
+	public void RemoveAt(int index) { }
 
-public JToken get_Item(int index) { }
+	public JToken get_Item(int index) { }
 
-public void set_Item(int index, JToken value) { }
+	public void set_Item(int index, JToken value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -4291,50 +4291,50 @@ private sealed class JProperty.JPropertyList.<GetEnumerator>d__1 : IEnumerator<J
 	private JToken <>2__current; 
 	public JProperty.JPropertyList <>4__this; 
 
-private JToken System.Collections.Generic.IEnumerator<Newtonsoft.Json.Linq.JToken>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private JToken System.Collections.Generic.IEnumerator<Newtonsoft.Json.Linq.JToken>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private JToken System.Collections.Generic.IEnumerator<Newtonsoft.Json.Linq.JToken>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private JToken System.Collections.Generic.IEnumerator<Newtonsoft.Json.Linq.JToken>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
 public enum JTokenType // TypeDefIndex: 6076
 {
 	public int value__; 
-public const JTokenType None = 0;
-public const JTokenType Object = 1;
-public const JTokenType Array = 2;
-public const JTokenType Constructor = 3;
-public const JTokenType Property = 4;
-public const JTokenType Comment = 5;
-public const JTokenType Integer = 6;
-public const JTokenType Float = 7;
-public const JTokenType String = 8;
-public const JTokenType Boolean = 9;
-public const JTokenType Null = 10;
-public const JTokenType Undefined = 11;
-public const JTokenType Date = 12;
-public const JTokenType Raw = 13;
-public const JTokenType Bytes = 14;
-public const JTokenType Guid = 15;
-public const JTokenType Uri = 16;
-public const JTokenType TimeSpan = 17;
+	public const JTokenType None = 0;
+	public const JTokenType Object = 1;
+	public const JTokenType Array = 2;
+	public const JTokenType Constructor = 3;
+	public const JTokenType Property = 4;
+	public const JTokenType Comment = 5;
+	public const JTokenType Integer = 6;
+	public const JTokenType Float = 7;
+	public const JTokenType String = 8;
+	public const JTokenType Boolean = 9;
+	public const JTokenType Null = 10;
+	public const JTokenType Undefined = 11;
+	public const JTokenType Date = 12;
+	public const JTokenType Raw = 13;
+	public const JTokenType Bytes = 14;
+	public const JTokenType Guid = 15;
+	public const JTokenType Uri = 16;
+	public const JTokenType TimeSpan = 17;
 
 }
 
@@ -4343,92 +4343,92 @@ public class JValue : JToken, IFormattable, IComparable, IConvertible // TypeDef
 	private JTokenType _valueType; 
 	private object _value; 
 
-public override bool HasValues { get; }
-public override JTokenType Type { get; }
-public object Value { get; }
+	public override bool HasValues { get; }
+	public override JTokenType Type { get; }
+	public object Value { get; }
 
 
-internal void .ctor(object value, JTokenType type) { }
+	internal void .ctor(object value, JTokenType type) { }
 
-public void .ctor(JValue other) { }
+	public void .ctor(JValue other) { }
 
-public void .ctor(object value) { }
+	public void .ctor(object value) { }
 
-internal override bool DeepEquals(JToken node) { }
+	internal override bool DeepEquals(JToken node) { }
 
-public override bool get_HasValues() { }
+	public override bool get_HasValues() { }
 
-internal static int Compare(JTokenType valueType, object objA, object objB) { }
+	internal static int Compare(JTokenType valueType, object objA, object objB) { }
 
-private static int CompareFloat(object objA, object objB) { }
+	private static int CompareFloat(object objA, object objB) { }
 
-internal override JToken CloneToken() { }
+	internal override JToken CloneToken() { }
 
-public static JValue CreateComment(string value) { }
+	public static JValue CreateComment(string value) { }
 
-public static JValue CreateNull() { }
+	public static JValue CreateNull() { }
 
-public static JValue CreateUndefined() { }
+	public static JValue CreateUndefined() { }
 
-private static JTokenType GetValueType(Nullable<JTokenType> current, object value) { }
+	private static JTokenType GetValueType(Nullable<JTokenType> current, object value) { }
 
-private static JTokenType GetStringValueType(Nullable<JTokenType> current) { }
+	private static JTokenType GetStringValueType(Nullable<JTokenType> current) { }
 
-public override JTokenType get_Type() { }
+	public override JTokenType get_Type() { }
 
-public object get_Value() { }
+	public object get_Value() { }
 
-public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
+	public override void WriteTo(JsonWriter writer, JsonConverter[] converters) { }
 
-internal override int GetDeepHashCode() { }
+	internal override int GetDeepHashCode() { }
 
-private static bool ValuesEquals(JValue v1, JValue v2) { }
+	private static bool ValuesEquals(JValue v1, JValue v2) { }
 
-public bool Equals(JValue other) { }
+	public bool Equals(JValue other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public string ToString(IFormatProvider formatProvider) { }
+	public string ToString(IFormatProvider formatProvider) { }
 
-public string ToString(string format, IFormatProvider formatProvider) { }
+	public string ToString(string format, IFormatProvider formatProvider) { }
 
-private int System.IComparable.CompareTo(object obj) { }
+	private int System.IComparable.CompareTo(object obj) { }
 
-private TypeCode System.IConvertible.GetTypeCode() { }
+	private TypeCode System.IConvertible.GetTypeCode() { }
 
-private bool System.IConvertible.ToBoolean(IFormatProvider provider) { }
+	private bool System.IConvertible.ToBoolean(IFormatProvider provider) { }
 
-private char System.IConvertible.ToChar(IFormatProvider provider) { }
+	private char System.IConvertible.ToChar(IFormatProvider provider) { }
 
-private sbyte System.IConvertible.ToSByte(IFormatProvider provider) { }
+	private sbyte System.IConvertible.ToSByte(IFormatProvider provider) { }
 
-private byte System.IConvertible.ToByte(IFormatProvider provider) { }
+	private byte System.IConvertible.ToByte(IFormatProvider provider) { }
 
-private short System.IConvertible.ToInt16(IFormatProvider provider) { }
+	private short System.IConvertible.ToInt16(IFormatProvider provider) { }
 
-private ushort System.IConvertible.ToUInt16(IFormatProvider provider) { }
+	private ushort System.IConvertible.ToUInt16(IFormatProvider provider) { }
 
-private int System.IConvertible.ToInt32(IFormatProvider provider) { }
+	private int System.IConvertible.ToInt32(IFormatProvider provider) { }
 
-private uint System.IConvertible.ToUInt32(IFormatProvider provider) { }
+	private uint System.IConvertible.ToUInt32(IFormatProvider provider) { }
 
-private long System.IConvertible.ToInt64(IFormatProvider provider) { }
+	private long System.IConvertible.ToInt64(IFormatProvider provider) { }
 
-private ulong System.IConvertible.ToUInt64(IFormatProvider provider) { }
+	private ulong System.IConvertible.ToUInt64(IFormatProvider provider) { }
 
-private float System.IConvertible.ToSingle(IFormatProvider provider) { }
+	private float System.IConvertible.ToSingle(IFormatProvider provider) { }
 
-private double System.IConvertible.ToDouble(IFormatProvider provider) { }
+	private double System.IConvertible.ToDouble(IFormatProvider provider) { }
 
-private Decimal System.IConvertible.ToDecimal(IFormatProvider provider) { }
+	private Decimal System.IConvertible.ToDecimal(IFormatProvider provider) { }
 
-private DateTime System.IConvertible.ToDateTime(IFormatProvider provider) { }
+	private DateTime System.IConvertible.ToDateTime(IFormatProvider provider) { }
 
-private object System.IConvertible.ToType(Type conversionType, IFormatProvider provider) { }
+	private object System.IConvertible.ToType(Type conversionType, IFormatProvider provider) { }
 
 }
 
@@ -4438,8 +4438,8 @@ public static class JSON // TypeDefIndex: 11578
 	private static readonly Type excludeAttrType; 
 	private static readonly Type decodeAliasAttrType; 
 	private static readonly Dictionary<string, Type> typeCache; 
-private const BindingFlags instanceBindingFlags = 52;
-private const BindingFlags staticBindingFlags = 56;
+	private const BindingFlags instanceBindingFlags = 52;
+	private const BindingFlags staticBindingFlags = 56;
 	private static readonly MethodInfo decodeTypeMethod; 
 	private static readonly MethodInfo decodeListMethod; 
 	private static readonly MethodInfo decodeDictionaryMethod; 
@@ -4447,387 +4447,387 @@ private const BindingFlags staticBindingFlags = 56;
 	private static readonly MethodInfo decodeMultiRankArrayMethod; 
 
 
-public static Variant Load(string json) { }
+	public static Variant Load(string json) { }
 
-public static string Dump(object data) { }
+	public static string Dump(object data) { }
 
-public static string Dump(object data, EncodeOptions options) { }
+	public static string Dump(object data, EncodeOptions options) { }
 
-public static void MakeInto<T>(Variant data, out T item) { }
-/* GenericInstMethod :
-|
-|-JSON.MakeInto<object>
-*/
+	public static void MakeInto<T>(Variant data, out T item) { }
+	/* GenericInstMethod :
+	|
+	|-JSON.MakeInto<object>
+	*/
 
-private static Type FindType(string fullName) { }
-
-	[PreserveAttribute] 
-private static T DecodeType<T>(Variant data) { }
-/* GenericInstMethod :
-|
-|-JSON.DecodeType<bool>
-|
-|-JSON.DecodeType<Decimal>
-|
-|-JSON.DecodeType<double>
-|
-|-JSON.DecodeType<short>
-|
-|-JSON.DecodeType<int>
-|
-|-JSON.DecodeType<long>
-|
-|-JSON.DecodeType<object>
-|
-|-JSON.DecodeType<float>
-|
-|-JSON.DecodeType<ushort>
-|
-|-JSON.DecodeType<uint>
-|
-|-JSON.DecodeType<ulong>
-*/
+	private static Type FindType(string fullName) { }
 
 	[PreserveAttribute] 
-private static List<T> DecodeList<T>(Variant data) { }
-/* GenericInstMethod :
-|
-|-JSON.DecodeList<bool>
-|
-|-JSON.DecodeList<Decimal>
-|
-|-JSON.DecodeList<double>
-|
-|-JSON.DecodeList<short>
-|
-|-JSON.DecodeList<int>
-|
-|-JSON.DecodeList<long>
-|
-|-JSON.DecodeList<object>
-|
-|-JSON.DecodeList<float>
-|
-|-JSON.DecodeList<ushort>
-|
-|-JSON.DecodeList<uint>
-|
-|-JSON.DecodeList<ulong>
-*/
+	private static T DecodeType<T>(Variant data) { }
+	/* GenericInstMethod :
+	|
+	|-JSON.DecodeType<bool>
+	|
+	|-JSON.DecodeType<Decimal>
+	|
+	|-JSON.DecodeType<double>
+	|
+	|-JSON.DecodeType<short>
+	|
+	|-JSON.DecodeType<int>
+	|
+	|-JSON.DecodeType<long>
+	|
+	|-JSON.DecodeType<object>
+	|
+	|-JSON.DecodeType<float>
+	|
+	|-JSON.DecodeType<ushort>
+	|
+	|-JSON.DecodeType<uint>
+	|
+	|-JSON.DecodeType<ulong>
+	*/
 
 	[PreserveAttribute] 
-private static Dictionary<TKey, TValue> DecodeDictionary<TKey, TValue>(Variant data) { }
-/* GenericInstMethod :
-|
-|-JSON.DecodeDictionary<bool, bool>
-|
-|-JSON.DecodeDictionary<bool, Decimal>
-|
-|-JSON.DecodeDictionary<bool, double>
-|
-|-JSON.DecodeDictionary<bool, short>
-|
-|-JSON.DecodeDictionary<bool, int>
-|
-|-JSON.DecodeDictionary<bool, long>
-|
-|-JSON.DecodeDictionary<bool, object>
-|
-|-JSON.DecodeDictionary<bool, float>
-|
-|-JSON.DecodeDictionary<bool, ushort>
-|
-|-JSON.DecodeDictionary<bool, uint>
-|
-|-JSON.DecodeDictionary<bool, ulong>
-|
-|-JSON.DecodeDictionary<Decimal, bool>
-|
-|-JSON.DecodeDictionary<Decimal, Decimal>
-|
-|-JSON.DecodeDictionary<Decimal, double>
-|
-|-JSON.DecodeDictionary<Decimal, short>
-|
-|-JSON.DecodeDictionary<Decimal, int>
-|
-|-JSON.DecodeDictionary<Decimal, long>
-|
-|-JSON.DecodeDictionary<Decimal, object>
-|
-|-JSON.DecodeDictionary<Decimal, float>
-|
-|-JSON.DecodeDictionary<Decimal, ushort>
-|
-|-JSON.DecodeDictionary<Decimal, uint>
-|
-|-JSON.DecodeDictionary<Decimal, ulong>
-|
-|-JSON.DecodeDictionary<double, bool>
-|
-|-JSON.DecodeDictionary<double, Decimal>
-|
-|-JSON.DecodeDictionary<double, double>
-|
-|-JSON.DecodeDictionary<double, short>
-|
-|-JSON.DecodeDictionary<double, int>
-|
-|-JSON.DecodeDictionary<double, long>
-|
-|-JSON.DecodeDictionary<double, object>
-|
-|-JSON.DecodeDictionary<double, float>
-|
-|-JSON.DecodeDictionary<double, ushort>
-|
-|-JSON.DecodeDictionary<double, uint>
-|
-|-JSON.DecodeDictionary<double, ulong>
-|
-|-JSON.DecodeDictionary<short, bool>
-|
-|-JSON.DecodeDictionary<short, Decimal>
-|
-|-JSON.DecodeDictionary<short, double>
-|
-|-JSON.DecodeDictionary<short, short>
-|
-|-JSON.DecodeDictionary<short, int>
-|
-|-JSON.DecodeDictionary<short, long>
-|
-|-JSON.DecodeDictionary<short, object>
-|
-|-JSON.DecodeDictionary<short, float>
-|
-|-JSON.DecodeDictionary<short, ushort>
-|
-|-JSON.DecodeDictionary<short, uint>
-|
-|-JSON.DecodeDictionary<short, ulong>
-|
-|-JSON.DecodeDictionary<int, bool>
-|
-|-JSON.DecodeDictionary<int, Decimal>
-|
-|-JSON.DecodeDictionary<int, double>
-|
-|-JSON.DecodeDictionary<int, short>
-|
-|-JSON.DecodeDictionary<int, int>
-|
-|-JSON.DecodeDictionary<int, long>
-|
-|-JSON.DecodeDictionary<int, object>
-|
-|-JSON.DecodeDictionary<int, float>
-|
-|-JSON.DecodeDictionary<int, ushort>
-|
-|-JSON.DecodeDictionary<int, uint>
-|
-|-JSON.DecodeDictionary<int, ulong>
-|
-|-JSON.DecodeDictionary<long, bool>
-|
-|-JSON.DecodeDictionary<long, Decimal>
-|
-|-JSON.DecodeDictionary<long, double>
-|
-|-JSON.DecodeDictionary<long, short>
-|
-|-JSON.DecodeDictionary<long, int>
-|
-|-JSON.DecodeDictionary<long, long>
-|
-|-JSON.DecodeDictionary<long, object>
-|
-|-JSON.DecodeDictionary<long, float>
-|
-|-JSON.DecodeDictionary<long, ushort>
-|
-|-JSON.DecodeDictionary<long, uint>
-|
-|-JSON.DecodeDictionary<long, ulong>
-|
-|-JSON.DecodeDictionary<object, bool>
-|
-|-JSON.DecodeDictionary<object, Decimal>
-|
-|-JSON.DecodeDictionary<object, double>
-|
-|-JSON.DecodeDictionary<object, short>
-|
-|-JSON.DecodeDictionary<object, int>
-|
-|-JSON.DecodeDictionary<object, long>
-|
-|-JSON.DecodeDictionary<object, object>
-|
-|-JSON.DecodeDictionary<object, float>
-|
-|-JSON.DecodeDictionary<object, ushort>
-|
-|-JSON.DecodeDictionary<object, uint>
-|
-|-JSON.DecodeDictionary<object, ulong>
-|
-|-JSON.DecodeDictionary<float, bool>
-|
-|-JSON.DecodeDictionary<float, Decimal>
-|
-|-JSON.DecodeDictionary<float, double>
-|
-|-JSON.DecodeDictionary<float, short>
-|
-|-JSON.DecodeDictionary<float, int>
-|
-|-JSON.DecodeDictionary<float, long>
-|
-|-JSON.DecodeDictionary<float, object>
-|
-|-JSON.DecodeDictionary<float, float>
-|
-|-JSON.DecodeDictionary<float, ushort>
-|
-|-JSON.DecodeDictionary<float, uint>
-|
-|-JSON.DecodeDictionary<float, ulong>
-|
-|-JSON.DecodeDictionary<ushort, bool>
-|
-|-JSON.DecodeDictionary<ushort, Decimal>
-|
-|-JSON.DecodeDictionary<ushort, double>
-|
-|-JSON.DecodeDictionary<ushort, short>
-|
-|-JSON.DecodeDictionary<ushort, int>
-|
-|-JSON.DecodeDictionary<ushort, long>
-|
-|-JSON.DecodeDictionary<ushort, object>
-|
-|-JSON.DecodeDictionary<ushort, float>
-|
-|-JSON.DecodeDictionary<ushort, ushort>
-|
-|-JSON.DecodeDictionary<ushort, uint>
-|
-|-JSON.DecodeDictionary<ushort, ulong>
-|
-|-JSON.DecodeDictionary<uint, bool>
-|
-|-JSON.DecodeDictionary<uint, Decimal>
-|
-|-JSON.DecodeDictionary<uint, double>
-|
-|-JSON.DecodeDictionary<uint, short>
-|
-|-JSON.DecodeDictionary<uint, int>
-|
-|-JSON.DecodeDictionary<uint, long>
-|
-|-JSON.DecodeDictionary<uint, object>
-|
-|-JSON.DecodeDictionary<uint, float>
-|
-|-JSON.DecodeDictionary<uint, ushort>
-|
-|-JSON.DecodeDictionary<uint, uint>
-|
-|-JSON.DecodeDictionary<uint, ulong>
-|
-|-JSON.DecodeDictionary<ulong, bool>
-|
-|-JSON.DecodeDictionary<ulong, Decimal>
-|
-|-JSON.DecodeDictionary<ulong, double>
-|
-|-JSON.DecodeDictionary<ulong, short>
-|
-|-JSON.DecodeDictionary<ulong, int>
-|
-|-JSON.DecodeDictionary<ulong, long>
-|
-|-JSON.DecodeDictionary<ulong, object>
-|
-|-JSON.DecodeDictionary<ulong, float>
-|
-|-JSON.DecodeDictionary<ulong, ushort>
-|
-|-JSON.DecodeDictionary<ulong, uint>
-|
-|-JSON.DecodeDictionary<ulong, ulong>
-*/
+	private static List<T> DecodeList<T>(Variant data) { }
+	/* GenericInstMethod :
+	|
+	|-JSON.DecodeList<bool>
+	|
+	|-JSON.DecodeList<Decimal>
+	|
+	|-JSON.DecodeList<double>
+	|
+	|-JSON.DecodeList<short>
+	|
+	|-JSON.DecodeList<int>
+	|
+	|-JSON.DecodeList<long>
+	|
+	|-JSON.DecodeList<object>
+	|
+	|-JSON.DecodeList<float>
+	|
+	|-JSON.DecodeList<ushort>
+	|
+	|-JSON.DecodeList<uint>
+	|
+	|-JSON.DecodeList<ulong>
+	*/
 
 	[PreserveAttribute] 
-private static T[] DecodeArray<T>(Variant data) { }
-/* GenericInstMethod :
-|
-|-JSON.DecodeArray<bool>
-|
-|-JSON.DecodeArray<Decimal>
-|
-|-JSON.DecodeArray<double>
-|
-|-JSON.DecodeArray<short>
-|
-|-JSON.DecodeArray<int>
-|
-|-JSON.DecodeArray<long>
-|
-|-JSON.DecodeArray<object>
-|
-|-JSON.DecodeArray<float>
-|
-|-JSON.DecodeArray<ushort>
-|
-|-JSON.DecodeArray<uint>
-|
-|-JSON.DecodeArray<ulong>
-*/
+	private static Dictionary<TKey, TValue> DecodeDictionary<TKey, TValue>(Variant data) { }
+	/* GenericInstMethod :
+	|
+	|-JSON.DecodeDictionary<bool, bool>
+	|
+	|-JSON.DecodeDictionary<bool, Decimal>
+	|
+	|-JSON.DecodeDictionary<bool, double>
+	|
+	|-JSON.DecodeDictionary<bool, short>
+	|
+	|-JSON.DecodeDictionary<bool, int>
+	|
+	|-JSON.DecodeDictionary<bool, long>
+	|
+	|-JSON.DecodeDictionary<bool, object>
+	|
+	|-JSON.DecodeDictionary<bool, float>
+	|
+	|-JSON.DecodeDictionary<bool, ushort>
+	|
+	|-JSON.DecodeDictionary<bool, uint>
+	|
+	|-JSON.DecodeDictionary<bool, ulong>
+	|
+	|-JSON.DecodeDictionary<Decimal, bool>
+	|
+	|-JSON.DecodeDictionary<Decimal, Decimal>
+	|
+	|-JSON.DecodeDictionary<Decimal, double>
+	|
+	|-JSON.DecodeDictionary<Decimal, short>
+	|
+	|-JSON.DecodeDictionary<Decimal, int>
+	|
+	|-JSON.DecodeDictionary<Decimal, long>
+	|
+	|-JSON.DecodeDictionary<Decimal, object>
+	|
+	|-JSON.DecodeDictionary<Decimal, float>
+	|
+	|-JSON.DecodeDictionary<Decimal, ushort>
+	|
+	|-JSON.DecodeDictionary<Decimal, uint>
+	|
+	|-JSON.DecodeDictionary<Decimal, ulong>
+	|
+	|-JSON.DecodeDictionary<double, bool>
+	|
+	|-JSON.DecodeDictionary<double, Decimal>
+	|
+	|-JSON.DecodeDictionary<double, double>
+	|
+	|-JSON.DecodeDictionary<double, short>
+	|
+	|-JSON.DecodeDictionary<double, int>
+	|
+	|-JSON.DecodeDictionary<double, long>
+	|
+	|-JSON.DecodeDictionary<double, object>
+	|
+	|-JSON.DecodeDictionary<double, float>
+	|
+	|-JSON.DecodeDictionary<double, ushort>
+	|
+	|-JSON.DecodeDictionary<double, uint>
+	|
+	|-JSON.DecodeDictionary<double, ulong>
+	|
+	|-JSON.DecodeDictionary<short, bool>
+	|
+	|-JSON.DecodeDictionary<short, Decimal>
+	|
+	|-JSON.DecodeDictionary<short, double>
+	|
+	|-JSON.DecodeDictionary<short, short>
+	|
+	|-JSON.DecodeDictionary<short, int>
+	|
+	|-JSON.DecodeDictionary<short, long>
+	|
+	|-JSON.DecodeDictionary<short, object>
+	|
+	|-JSON.DecodeDictionary<short, float>
+	|
+	|-JSON.DecodeDictionary<short, ushort>
+	|
+	|-JSON.DecodeDictionary<short, uint>
+	|
+	|-JSON.DecodeDictionary<short, ulong>
+	|
+	|-JSON.DecodeDictionary<int, bool>
+	|
+	|-JSON.DecodeDictionary<int, Decimal>
+	|
+	|-JSON.DecodeDictionary<int, double>
+	|
+	|-JSON.DecodeDictionary<int, short>
+	|
+	|-JSON.DecodeDictionary<int, int>
+	|
+	|-JSON.DecodeDictionary<int, long>
+	|
+	|-JSON.DecodeDictionary<int, object>
+	|
+	|-JSON.DecodeDictionary<int, float>
+	|
+	|-JSON.DecodeDictionary<int, ushort>
+	|
+	|-JSON.DecodeDictionary<int, uint>
+	|
+	|-JSON.DecodeDictionary<int, ulong>
+	|
+	|-JSON.DecodeDictionary<long, bool>
+	|
+	|-JSON.DecodeDictionary<long, Decimal>
+	|
+	|-JSON.DecodeDictionary<long, double>
+	|
+	|-JSON.DecodeDictionary<long, short>
+	|
+	|-JSON.DecodeDictionary<long, int>
+	|
+	|-JSON.DecodeDictionary<long, long>
+	|
+	|-JSON.DecodeDictionary<long, object>
+	|
+	|-JSON.DecodeDictionary<long, float>
+	|
+	|-JSON.DecodeDictionary<long, ushort>
+	|
+	|-JSON.DecodeDictionary<long, uint>
+	|
+	|-JSON.DecodeDictionary<long, ulong>
+	|
+	|-JSON.DecodeDictionary<object, bool>
+	|
+	|-JSON.DecodeDictionary<object, Decimal>
+	|
+	|-JSON.DecodeDictionary<object, double>
+	|
+	|-JSON.DecodeDictionary<object, short>
+	|
+	|-JSON.DecodeDictionary<object, int>
+	|
+	|-JSON.DecodeDictionary<object, long>
+	|
+	|-JSON.DecodeDictionary<object, object>
+	|
+	|-JSON.DecodeDictionary<object, float>
+	|
+	|-JSON.DecodeDictionary<object, ushort>
+	|
+	|-JSON.DecodeDictionary<object, uint>
+	|
+	|-JSON.DecodeDictionary<object, ulong>
+	|
+	|-JSON.DecodeDictionary<float, bool>
+	|
+	|-JSON.DecodeDictionary<float, Decimal>
+	|
+	|-JSON.DecodeDictionary<float, double>
+	|
+	|-JSON.DecodeDictionary<float, short>
+	|
+	|-JSON.DecodeDictionary<float, int>
+	|
+	|-JSON.DecodeDictionary<float, long>
+	|
+	|-JSON.DecodeDictionary<float, object>
+	|
+	|-JSON.DecodeDictionary<float, float>
+	|
+	|-JSON.DecodeDictionary<float, ushort>
+	|
+	|-JSON.DecodeDictionary<float, uint>
+	|
+	|-JSON.DecodeDictionary<float, ulong>
+	|
+	|-JSON.DecodeDictionary<ushort, bool>
+	|
+	|-JSON.DecodeDictionary<ushort, Decimal>
+	|
+	|-JSON.DecodeDictionary<ushort, double>
+	|
+	|-JSON.DecodeDictionary<ushort, short>
+	|
+	|-JSON.DecodeDictionary<ushort, int>
+	|
+	|-JSON.DecodeDictionary<ushort, long>
+	|
+	|-JSON.DecodeDictionary<ushort, object>
+	|
+	|-JSON.DecodeDictionary<ushort, float>
+	|
+	|-JSON.DecodeDictionary<ushort, ushort>
+	|
+	|-JSON.DecodeDictionary<ushort, uint>
+	|
+	|-JSON.DecodeDictionary<ushort, ulong>
+	|
+	|-JSON.DecodeDictionary<uint, bool>
+	|
+	|-JSON.DecodeDictionary<uint, Decimal>
+	|
+	|-JSON.DecodeDictionary<uint, double>
+	|
+	|-JSON.DecodeDictionary<uint, short>
+	|
+	|-JSON.DecodeDictionary<uint, int>
+	|
+	|-JSON.DecodeDictionary<uint, long>
+	|
+	|-JSON.DecodeDictionary<uint, object>
+	|
+	|-JSON.DecodeDictionary<uint, float>
+	|
+	|-JSON.DecodeDictionary<uint, ushort>
+	|
+	|-JSON.DecodeDictionary<uint, uint>
+	|
+	|-JSON.DecodeDictionary<uint, ulong>
+	|
+	|-JSON.DecodeDictionary<ulong, bool>
+	|
+	|-JSON.DecodeDictionary<ulong, Decimal>
+	|
+	|-JSON.DecodeDictionary<ulong, double>
+	|
+	|-JSON.DecodeDictionary<ulong, short>
+	|
+	|-JSON.DecodeDictionary<ulong, int>
+	|
+	|-JSON.DecodeDictionary<ulong, long>
+	|
+	|-JSON.DecodeDictionary<ulong, object>
+	|
+	|-JSON.DecodeDictionary<ulong, float>
+	|
+	|-JSON.DecodeDictionary<ulong, ushort>
+	|
+	|-JSON.DecodeDictionary<ulong, uint>
+	|
+	|-JSON.DecodeDictionary<ulong, ulong>
+	*/
 
 	[PreserveAttribute] 
-private static void DecodeMultiRankArray<T>(ProxyArray arrayData, Array array, int arrayRank, int[] indices) { }
-/* GenericInstMethod :
-|
-|-JSON.DecodeMultiRankArray<object>
-*/
+	private static T[] DecodeArray<T>(Variant data) { }
+	/* GenericInstMethod :
+	|
+	|-JSON.DecodeArray<bool>
+	|
+	|-JSON.DecodeArray<Decimal>
+	|
+	|-JSON.DecodeArray<double>
+	|
+	|-JSON.DecodeArray<short>
+	|
+	|-JSON.DecodeArray<int>
+	|
+	|-JSON.DecodeArray<long>
+	|
+	|-JSON.DecodeArray<object>
+	|
+	|-JSON.DecodeArray<float>
+	|
+	|-JSON.DecodeArray<ushort>
+	|
+	|-JSON.DecodeArray<uint>
+	|
+	|-JSON.DecodeArray<ulong>
+	*/
 
 	[PreserveAttribute] 
-public static void SupportTypeForAOT<T>() { }
-/* GenericInstMethod :
-|
-|-JSON.SupportTypeForAOT<bool>
-|
-|-JSON.SupportTypeForAOT<Decimal>
-|
-|-JSON.SupportTypeForAOT<double>
-|
-|-JSON.SupportTypeForAOT<short>
-|
-|-JSON.SupportTypeForAOT<int>
-|
-|-JSON.SupportTypeForAOT<long>
-|
-|-JSON.SupportTypeForAOT<object>
-|-JSON.SupportTypeForAOT<string>
-|
-|-JSON.SupportTypeForAOT<float>
-|
-|-JSON.SupportTypeForAOT<ushort>
-|
-|-JSON.SupportTypeForAOT<uint>
-|
-|-JSON.SupportTypeForAOT<ulong>
-*/
+	private static void DecodeMultiRankArray<T>(ProxyArray arrayData, Array array, int arrayRank, int[] indices) { }
+	/* GenericInstMethod :
+	|
+	|-JSON.DecodeMultiRankArray<object>
+	*/
 
 	[PreserveAttribute] 
-private static void SupportValueTypesForAOT() { }
+	public static void SupportTypeForAOT<T>() { }
+	/* GenericInstMethod :
+	|
+	|-JSON.SupportTypeForAOT<bool>
+	|
+	|-JSON.SupportTypeForAOT<Decimal>
+	|
+	|-JSON.SupportTypeForAOT<double>
+	|
+	|-JSON.SupportTypeForAOT<short>
+	|
+	|-JSON.SupportTypeForAOT<int>
+	|
+	|-JSON.SupportTypeForAOT<long>
+	|
+	|-JSON.SupportTypeForAOT<object>
+	|-JSON.SupportTypeForAOT<string>
+	|
+	|-JSON.SupportTypeForAOT<float>
+	|
+	|-JSON.SupportTypeForAOT<ushort>
+	|
+	|-JSON.SupportTypeForAOT<uint>
+	|
+	|-JSON.SupportTypeForAOT<ulong>
+	*/
 
-private static void .cctor() { }
+	[PreserveAttribute] 
+	private static void SupportValueTypesForAOT() { }
+
+	private static void .cctor() { }
 
 }
 

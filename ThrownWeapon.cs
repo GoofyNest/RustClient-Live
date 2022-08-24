@@ -8,15 +8,15 @@ public class ThrownWeapon : AttackEntity // TypeDefIndex: 8654
 	public bool canStick; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

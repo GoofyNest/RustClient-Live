@@ -5,9 +5,9 @@ public class RandomStaticPrefab : MonoBehaviour // TypeDefIndex: 10356
 	public string ResourceFolder; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

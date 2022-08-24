@@ -28,20 +28,20 @@ public class FoliagePlacement : ScriptableObject // TypeDefIndex: 9876
 	public Mesh mesh1; 
 	[FormerlySerializedAsAttribute] 
 	public Mesh mesh2; 
-public const int lods = 5;
-public const int octaves = 1;
-public const float frequency = 0,05;
-public const float amplitude = 0,5;
-public const float offset = 0,5;
+	public const int lods = 5;
+	public const int octaves = 1;
+	public const float frequency = 0,05;
+	public const float amplitude = 0,5;
+	public const float offset = 0,5;
 
 
-public void Init() { }
+	public void Init() { }
 
-public bool CheckBatch(Vector3 pivot, float size) { }
+	public bool CheckBatch(Vector3 pivot, float size) { }
 
-public void AddBatch(FoliageGroup batchGroup, float lod, uint seed) { }
+	public void AddBatch(FoliageGroup batchGroup, float lod, uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

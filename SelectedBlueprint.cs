@@ -20,52 +20,52 @@ public class SelectedBlueprint : SingletonComponent<SelectedBlueprint>, IInvento
 	private int craftAmount; 
 	private BlueprintCraftGridRow[] ingredientRows; 
 
-public static bool isOpen { get; }
+	public static bool isOpen { get; }
 
 
-public static void UpdateBlueprint(ItemBlueprint blueprint) { }
+	public static void UpdateBlueprint(ItemBlueprint blueprint) { }
 
-public static void RefreshFavouriteDisplay() { }
+	public static void RefreshFavouriteDisplay() { }
 
-public static bool get_isOpen() { }
+	public static bool get_isOpen() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void ChangeEffects() { }
+	public void ChangeEffects() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void RefreshBlueprint() { }
+	private void RefreshBlueprint() { }
 
-public void Max() { }
+	public void Max() { }
 
-public void StartCrafting() { }
+	public void StartCrafting() { }
 
-public void AddToCraft(int i) { }
+	public void AddToCraft(int i) { }
 
-public void SetCraftFromTextbox(string i) { }
+	public void SetCraftFromTextbox(string i) { }
 
-public void SetCraft(int i) { }
+	public void SetCraft(int i) { }
 
-public void UpdateIngredients() { }
+	public void UpdateIngredients() { }
 
-private void Update() { }
+	private void Update() { }
 
-public bool CanCraft() { }
+	public bool CanCraft() { }
 
-public bool CanCraftAmount(int amount) { }
+	public bool CanCraftAmount(int amount) { }
 
-public void Unlock() { }
+	public void Unlock() { }
 
-public void ToggleFavourite() { }
+	public void ToggleFavourite() { }
 
-private void RefreshFavouriteButton() { }
+	private void RefreshFavouriteButton() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -74,11 +74,11 @@ private sealed class SelectedBlueprint.<>c__DisplayClass30_0 // TypeDefIndex: 10
 	public int inventoryId; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <StartCrafting>b__0(ItemSkinDirectory.Skin x) { }
+	internal bool <StartCrafting>b__0(ItemSkinDirectory.Skin x) { }
 
-internal bool <StartCrafting>b__1(IPlayerItemDefinition x) { }
+	internal bool <StartCrafting>b__1(IPlayerItemDefinition x) { }
 
 }
 

@@ -20,55 +20,55 @@ internal sealed class ExpressionParser // TypeDefIndex: 4251
 	internal ExpressionNode _expression; 
 
 
-internal void .ctor(DataTable table) { }
+	internal void .ctor(DataTable table) { }
 
-internal void LoadExpression(string data) { }
+	internal void LoadExpression(string data) { }
 
-internal void StartScan() { }
+	internal void StartScan() { }
 
-internal ExpressionNode Parse() { }
+	internal ExpressionNode Parse() { }
 
-private ExpressionNode ParseAggregateArgument(FunctionId aggregate) { }
+	private ExpressionNode ParseAggregateArgument(FunctionId aggregate) { }
 
-private ExpressionNode NodePop() { }
+	private ExpressionNode NodePop() { }
 
-private ExpressionNode NodePeek() { }
+	private ExpressionNode NodePeek() { }
 
-private void NodePush(ExpressionNode node) { }
+	private void NodePush(ExpressionNode node) { }
 
-private void BuildExpression(int pri) { }
+	private void BuildExpression(int pri) { }
 
-internal void CheckToken(Tokens token) { }
+	internal void CheckToken(Tokens token) { }
 
-internal Tokens Scan() { }
+	internal Tokens Scan() { }
 
-private void ScanNumeric() { }
+	private void ScanNumeric() { }
 
-private void ScanName() { }
+	private void ScanName() { }
 
-private void ScanName(char chEnd, char esc, string charsToEscape) { }
+	private void ScanName(char chEnd, char esc, string charsToEscape) { }
 
-private void ScanDate() { }
+	private void ScanDate() { }
 
-private void ScanBinaryConstant() { }
+	private void ScanBinaryConstant() { }
 
-private void ScanReserved() { }
+	private void ScanReserved() { }
 
-private void ScanString(char escape) { }
+	private void ScanString(char escape) { }
 
-internal void ScanToken(Tokens token) { }
+	internal void ScanToken(Tokens token) { }
 
-private void ScanWhite() { }
+	private void ScanWhite() { }
 
-private bool IsWhiteSpace(char ch) { }
+	private bool IsWhiteSpace(char ch) { }
 
-private bool IsAlphaNumeric(char ch) { }
+	private bool IsAlphaNumeric(char ch) { }
 
-private bool IsDigit(char ch) { }
+	private bool IsDigit(char ch) { }
 
-private bool IsAlpha(char ch) { }
+	private bool IsAlpha(char ch) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -79,7 +79,7 @@ private struct ExpressionParser.ReservedWords // TypeDefIndex: 4252
 	internal readonly int _op; 
 
 
-internal void .ctor(string word, Tokens token, int op) { }
+	internal void .ctor(string word, Tokens token, int op) { }
 
 }
 

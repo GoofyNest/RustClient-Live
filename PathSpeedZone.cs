@@ -5,13 +5,13 @@ public class PathSpeedZone : MonoBehaviour // TypeDefIndex: 8863
 	public float maxVelocityPerSec; 
 
 
-public OBB WorldSpaceBounds() { }
+	public OBB WorldSpaceBounds() { }
 
-public float GetMaxSpeed() { }
+	public float GetMaxSpeed() { }
 
-public virtual void OnDrawGizmosSelected() { }
+	public virtual void OnDrawGizmosSelected() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

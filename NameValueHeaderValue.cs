@@ -4,41 +4,41 @@ public class NameValueHeaderValue : ICloneable // TypeDefIndex: 5787
 	[CompilerGeneratedAttribute] 
 	private string <Name>k__BackingField; 
 
-public string Name { get; set; }
-public string Value { get; set; }
+	public string Name { get; set; }
+	public string Value { get; set; }
 
 
-public void .ctor(string name, string value) { }
+	public void .ctor(string name, string value) { }
 
-protected internal void .ctor(NameValueHeaderValue source) { }
+	protected internal void .ctor(NameValueHeaderValue source) { }
 
-internal void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Name() { }
+	internal void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Name(string value) { }
+	public string get_Name() { }
 
-public string get_Value() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_Name(string value) { }
 
-public void set_Value(string value) { }
+	public string get_Value() { }
 
-internal static NameValueHeaderValue Create(string name, string value) { }
+	public void set_Value(string value) { }
 
-private object System.ICloneable.Clone() { }
+	internal static NameValueHeaderValue Create(string name, string value) { }
 
-public override int GetHashCode() { }
+	private object System.ICloneable.Clone() { }
 
-public override bool Equals(object obj) { }
+	public override int GetHashCode() { }
 
-internal static bool TryParsePragma(string input, int minimalCount, out List<NameValueHeaderValue> result) { }
+	public override bool Equals(object obj) { }
 
-internal static bool TryParseParameters(Lexer lexer, out List<NameValueHeaderValue> result, out Token t) { }
+	internal static bool TryParsePragma(string input, int minimalCount, out List<NameValueHeaderValue> result) { }
 
-public override string ToString() { }
+	internal static bool TryParseParameters(Lexer lexer, out List<NameValueHeaderValue> result, out Token t) { }
 
-private static bool TryParseElement(Lexer lexer, out NameValueHeaderValue parsedValue, out Token t) { }
+	public override string ToString() { }
+
+	private static bool TryParseElement(Lexer lexer, out NameValueHeaderValue parsedValue, out Token t) { }
 
 }
 

@@ -7,11 +7,11 @@ public class ScaleTrailRenderer : ScaleRenderer // TypeDefIndex: 9362
 	private float startMultiplier; 
 
 
-public override void GatherInitialValues() { }
+	public override void GatherInitialValues() { }
 
-public override void SetScale_Internal(float scale) { }
+	public override void SetScale_Internal(float scale) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

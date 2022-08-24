@@ -13,7 +13,7 @@ public class HelicopterTurret : MonoBehaviour // TypeDefIndex: 9599
 	public BaseCombatEntity _target; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

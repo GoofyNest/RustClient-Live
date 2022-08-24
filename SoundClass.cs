@@ -15,7 +15,7 @@ public class SoundClass : ScriptableObject // TypeDefIndex: 9024
 	public List<SoundDefinition> definitions; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

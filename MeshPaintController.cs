@@ -23,37 +23,37 @@ public class MeshPaintController : MonoBehaviour, IClientComponent // TypeDefInd
 	private BaseMeshPaintable lastPaintedMesh; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private bool IsCopyPasteModifierHeld() { }
+	private bool IsCopyPasteModifierHeld() { }
 
-private void Draw(Vector3 pos) { }
+	private void Draw(Vector3 pos) { }
 
-private void ApplyPaintables() { }
+	private void ApplyPaintables() { }
 
-public void UpdateBrushSize(float fNewSize) { }
+	public void UpdateBrushSize(float fNewSize) { }
 
-public void UpdateBrushAlpha(float fAlpha) { }
+	public void UpdateBrushAlpha(float fAlpha) { }
 
-public void UpdateBrushColor(Color color) { }
+	public void UpdateBrushColor(Color color) { }
 
-public void UpdateBrushTexture(Texture texture) { }
+	public void UpdateBrushTexture(Texture texture) { }
 
-public void SetLastBrush(Toggle toggle) { }
+	public void SetLastBrush(Toggle toggle) { }
 
-public void SwitchToLastBrushIfErasing() { }
+	public void SwitchToLastBrushIfErasing() { }
 
-public void OnClickedUndo() { }
+	public void OnClickedUndo() { }
 
-public void OnClickedRedo() { }
+	public void OnClickedRedo() { }
 
-private void UpdateUndoRedoButtons() { }
+	private void UpdateUndoRedoButtons() { }
 
-public void UpdateLastPaintedMesh(BaseMeshPaintable paintable) { }
+	public void UpdateLastPaintedMesh(BaseMeshPaintable paintable) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

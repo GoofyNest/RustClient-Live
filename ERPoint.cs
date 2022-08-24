@@ -7,23 +7,23 @@ public class ERPoint // TypeDefIndex: 7184
 	[DebuggerBrowsableAttribute] 
 	private double ᙃ; 
 
-public double x { get; set; }
-public double y { get; set; }
+	public double x { get; set; }
+	public double y { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public void set_x(double value) { }
+	public void set_x(double value) { }
 
 	[CompilerGeneratedAttribute] 
-public double get_x() { }
+	public double get_x() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_y(double value) { }
+	public void set_y(double value) { }
 
 	[CompilerGeneratedAttribute] 
-public double get_y() { }
+	public double get_y() { }
 
-public void .ctor(double x, double y) { }
+	public void .ctor(double x, double y) { }
 
 }
 

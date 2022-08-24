@@ -7,37 +7,37 @@ public class StaticInstrument : BaseMountable // TypeDefIndex: 8652
 	private BasePlayer lateUpdatePlayer; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-protected override AnimatorOverrideController GetAnimationOverride() { }
+	protected override AnimatorOverrideController GetAnimationOverride() { }
 
-protected override float GetSpineLookAtWeight() { }
+	protected override float GetSpineLookAtWeight() { }
 
-protected override bool SuppressHandsAnimationLayer() { }
+	protected override bool SuppressHandsAnimationLayer() { }
 
-public override float GetMountedAnimationSpeed() { }
+	public override float GetMountedAnimationSpeed() { }
 
-public override void OnClientInput(BasePlayer player) { }
+	public override void OnClientInput(BasePlayer player) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-protected override void ClientOnPlayerMounted(BasePlayer player) { }
+	protected override void ClientOnPlayerMounted(BasePlayer player) { }
 
-protected override void ClientOnPlayerDismounted(BasePlayer player) { }
+	protected override void ClientOnPlayerDismounted(BasePlayer player) { }
 
-public override void ResetState() { }
-
-	[BaseEntity.RPC_Client] 
-private void Client_PlayNote(BaseEntity.RPCMessage msg) { }
+	public override void ResetState() { }
 
 	[BaseEntity.RPC_Client] 
-private void Client_StopNote(BaseEntity.RPCMessage msg) { }
+	private void Client_PlayNote(BaseEntity.RPCMessage msg) { }
 
-public override bool IsInstrument() { }
+	[BaseEntity.RPC_Client] 
+	private void Client_StopNote(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public override bool IsInstrument() { }
+
+	public void .ctor() { }
 
 }
 

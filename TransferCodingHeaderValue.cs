@@ -3,29 +3,29 @@ public class TransferCodingHeaderValue : ICloneable // TypeDefIndex: 5808
 	internal string value; 
 	internal List<NameValueHeaderValue> parameters; 
 
-public ICollection<NameValueHeaderValue> Parameters { get; }
-public string Value { get; }
+	public ICollection<NameValueHeaderValue> Parameters { get; }
+	public string Value { get; }
 
 
-protected void .ctor(TransferCodingHeaderValue source) { }
+	protected void .ctor(TransferCodingHeaderValue source) { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public ICollection<NameValueHeaderValue> get_Parameters() { }
+	public ICollection<NameValueHeaderValue> get_Parameters() { }
 
-public string get_Value() { }
+	public string get_Value() { }
 
-private object System.ICloneable.Clone() { }
+	private object System.ICloneable.Clone() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-internal static bool TryParse(string input, int minimalCount, out List<TransferCodingHeaderValue> result) { }
+	internal static bool TryParse(string input, int minimalCount, out List<TransferCodingHeaderValue> result) { }
 
-private static bool TryParseElement(Lexer lexer, out TransferCodingHeaderValue parsedValue, out Token t) { }
+	private static bool TryParseElement(Lexer lexer, out TransferCodingHeaderValue parsedValue, out Token t) { }
 
 }
 

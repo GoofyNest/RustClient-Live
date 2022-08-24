@@ -359,121 +359,121 @@ public class ERModularBase : MonoBehaviour // TypeDefIndex: 7199
 	public bool v32b4Flag; 
 
 
-public void OnBuildModeEnter() { }
+	public void OnBuildModeEnter() { }
 
-public void OnRoadUpdate(ERRoad road) { }
+	public void OnRoadUpdate(ERRoad road) { }
 
-public void RoadNetworkInit() { }
+	public void RoadNetworkInit() { }
 
-public void UpdateQueue() { }
+	public void UpdateQueue() { }
 
-public void SetRoadTypeList() { }
+	public void SetRoadTypeList() { }
 
-public void UpdateRoadTypeStatus() { }
+	public void UpdateRoadTypeStatus() { }
 
-public void OCOCQOODCO() { }
+	public void OCOCQOODCO() { }
 
-public void OCQODDDCQQ() { }
+	public void OCQODDDCQQ() { }
 
-public void ODODOQOODO() { }
+	public void ODODOQOODO() { }
 
-public void OOCQCCCQCD() { }
+	public void OOCQCCCQCD() { }
 
-public void OQDQQODDCD(GameObject go, Vector3 pos) { }
+	public void OQDQQODDCD(GameObject go, Vector3 pos) { }
 
-public void ODCDQQCQOC() { }
+	public void ODCDQQCQOC() { }
 
-public ERCrossingPrefabs OCDQQCQCQQ(GameObject prefab, ERModularRoad OCCQOOOQQO, int OCODDDQOQC, int connectionSegment) { }
+	public ERCrossingPrefabs OCDQQCQCQQ(GameObject prefab, ERModularRoad OCCQOOOQQO, int OCODDDQOQC, int connectionSegment) { }
 
-public ERCrossingPrefabs AttachConnector(ERModularRoad OCCQOOOQQO, int OCODDDQOQC) { }
+	public ERCrossingPrefabs AttachConnector(ERModularRoad OCCQOOOQQO, int OCODDDQOQC) { }
 
-public void OCCDCDQOOD(ERModularRoad OCCQOOOQQO, int selectedMarker) { }
+	public void OCCDCDQOOD(ERModularRoad OCCQOOOQQO, int selectedMarker) { }
 
-public int OOOCOQQDQO(ERModularRoad OCCQOOOQQO, ERCrossingPrefabs prefabScript, int OCODDDQOQC, int startConnection, bool swapFlag) { }
+	public int OOOCOQQDQO(ERModularRoad OCCQOOOQQO, ERCrossingPrefabs prefabScript, int OCODDDQOQC, int startConnection, bool swapFlag) { }
 
-public int OOQQQQCCOC(string roadShapeString, List<string> strings, List<QDOODOQQDQODD> crossingElements) { }
+	public int OOQQQQCCOC(string roadShapeString, List<string> strings, List<QDOODOQQDQODD> crossingElements) { }
 
-public GameObject OOQDQOOQQQ(GameObject prefab, Vector3 hitPos, ref GameObject newPrefab, ref ERCrossingPrefabs prefabScript, ref ERCrossings crossingsScript) { }
+	public GameObject OOQDQOOQQQ(GameObject prefab, Vector3 hitPos, ref GameObject newPrefab, ref ERCrossingPrefabs prefabScript, ref ERCrossings crossingsScript) { }
 
-public void OQOCDOOQCQ(ERCrossingPrefabs prefabScript) { }
+	public void OQOCDOOQCQ(ERCrossingPrefabs prefabScript) { }
 
-public void OQCDDCDDQC(GameObject newPrefab, GameObject prefab) { }
+	public void OQCDDCDDQC(GameObject newPrefab, GameObject prefab) { }
 
-public void ODDQCOQCQC() { }
+	public void ODDQCOQCQC() { }
 
-public List<ERTerrain> OODQQODOOC(ref bool multTerrainResFlag) { }
+	public List<ERTerrain> OODQQODOOC(ref bool multTerrainResFlag) { }
 
-public void ODDCCODOOC() { }
+	public void ODDCCODOOC() { }
 
-public void OQQQDCQOOC(bool restoreTerrain) { }
+	public void OQQQDCQOOC(bool restoreTerrain) { }
 
-public void OQQOOCQQCD(Vector3 pos) { }
+	public void OQQOOCQQCD(Vector3 pos) { }
 
-public void OCDDQOCDCO(ref Vector3 pos) { }
+	public void OCDDQOCDCO(ref Vector3 pos) { }
 
-public Vector3 OQOODODDQO(Vector3 pos) { }
+	public Vector3 OQOODODDQO(Vector3 pos) { }
 
-public Vector2 GetTerrainUV(Vector3 pos) { }
+	public Vector2 GetTerrainUV(Vector3 pos) { }
 
-public Terrain OQOQDDOQOD(ref Vector3 pos, bool setSelected) { }
+	public Terrain OQOQDDOQOD(ref Vector3 pos, bool setSelected) { }
 
-public void OQCQQQDQQD() { }
+	public void OQCQQQDQQD() { }
 
-public void UpdateLODLevels(int levels) { }
+	public void UpdateLODLevels(int levels) { }
 
-public void UpdateSideObjectsInScene() { }
+	public void UpdateSideObjectsInScene() { }
 
-public void OOCDOOCQQC() { }
+	public void OOCDOOCQQC() { }
 
-public void OQQDDOQQOO() { }
+	public void OQQDDOQQOO() { }
 
-public ERRoadType[] GetRoadTypes() { }
+	public ERRoadType[] GetRoadTypes() { }
 
-public ERRoadType GetRoadTypeByName(string name) { }
+	public ERRoadType GetRoadTypeByName(string name) { }
 
-public string GetNewRoadName(double id) { }
+	public string GetNewRoadName(double id) { }
 
-public string GetRoadNameByID(double id) { }
+	public string GetRoadNameByID(double id) { }
 
-public SideObject OQCDCQCDCQ(string name) { }
+	public SideObject OQCDCQCDCQ(string name) { }
 
-public void InitLoadImage(string url) { }
+	public void InitLoadImage(string url) { }
 
-private IEnumerator LoadImage(string url) { }
+	private IEnumerator LoadImage(string url) { }
 
-public IEnumerator BuildTerrainRoutine(ERRoadNetwork roadNetwork) { }
+	public IEnumerator BuildTerrainRoutine(ERRoadNetwork roadNetwork) { }
 
-public float OCCQDCCCOD(Vector3 fwd, Vector3 targetDir, Vector3 up) { }
+	public float OCCQDCCCOD(Vector3 fwd, Vector3 targetDir, Vector3 up) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public sealed class ERModularBase.RoadUpdate : MulticastDelegate // TypeDefIndex: 7200
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(ERRoad road) { }
+	public virtual void Invoke(ERRoad road) { }
 
-public virtual IAsyncResult BeginInvoke(ERRoad road, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(ERRoad road, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class ERModularBase.OnBuildMode : MulticastDelegate // TypeDefIndex: 7201
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke() { }
+	public virtual void Invoke() { }
 
-public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
@@ -485,26 +485,26 @@ private sealed class ERModularBase.ᙃ : IEnumerator<object>, IDisposable, IEnum
 	public ERModularBase <>4__this; 
 	private WWW 5AAA1; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -515,26 +515,26 @@ private sealed class ERModularBase.ᙄ : IEnumerator<object>, IDisposable, IEnum
 	public ERRoadNetwork roadNetwork; 
 	public ERModularBase <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

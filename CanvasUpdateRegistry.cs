@@ -7,46 +7,46 @@ public class CanvasUpdateRegistry // TypeDefIndex: 4910
 	private readonly IndexedSet<ICanvasElement> m_GraphicRebuildQueue; 
 	private static readonly Comparison<ICanvasElement> s_SortLayoutFunction; 
 
-public static CanvasUpdateRegistry instance { get; }
+	public static CanvasUpdateRegistry instance { get; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public static CanvasUpdateRegistry get_instance() { }
+	public static CanvasUpdateRegistry get_instance() { }
 
-private bool ObjectValidForUpdate(ICanvasElement element) { }
+	private bool ObjectValidForUpdate(ICanvasElement element) { }
 
-private void CleanInvalidItems() { }
+	private void CleanInvalidItems() { }
 
-private void PerformUpdate() { }
+	private void PerformUpdate() { }
 
-private static int ParentCount(Transform child) { }
+	private static int ParentCount(Transform child) { }
 
-private static int SortLayoutList(ICanvasElement x, ICanvasElement y) { }
+	private static int SortLayoutList(ICanvasElement x, ICanvasElement y) { }
 
-public static void RegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
+	public static void RegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
 
-public static bool TryRegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
+	public static bool TryRegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
 
-private bool InternalRegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
+	private bool InternalRegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
 
-public static void RegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
+	public static void RegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
 
-public static bool TryRegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
+	public static bool TryRegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
 
-private bool InternalRegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
+	private bool InternalRegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
 
-public static void UnRegisterCanvasElementForRebuild(ICanvasElement element) { }
+	public static void UnRegisterCanvasElementForRebuild(ICanvasElement element) { }
 
-private void InternalUnRegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
+	private void InternalUnRegisterCanvasElementForLayoutRebuild(ICanvasElement element) { }
 
-private void InternalUnRegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
+	private void InternalUnRegisterCanvasElementForGraphicRebuild(ICanvasElement element) { }
 
-public static bool IsRebuildingLayout() { }
+	public static bool IsRebuildingLayout() { }
 
-public static bool IsRebuildingGraphics() { }
+	public static bool IsRebuildingGraphics() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

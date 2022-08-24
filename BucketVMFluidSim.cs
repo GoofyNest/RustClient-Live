@@ -17,29 +17,29 @@ public class BucketVMFluidSim : MonoBehaviour // TypeDefIndex: 9328
 	private Vector3 initialPosition; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void SetFillingFromWorld(bool isFilling) { }
+	private void SetFillingFromWorld(bool isFilling) { }
 
-private void UpdateWaterLevel(float newLevel) { }
+	private void UpdateWaterLevel(float newLevel) { }
 
-private void Update() { }
+	private void Update() { }
 
-private void CalculateTurbulence() { }
+	private void CalculateTurbulence() { }
 
-private void DoWaterTipping() { }
+	private void DoWaterTipping() { }
 
-public void AddWater(float waterAmount) { }
+	public void AddWater(float waterAmount) { }
 
-private void DisableWaterSpillEffects() { }
+	private void DisableWaterSpillEffects() { }
 
-private void UpdateWaterLine() { }
+	private void UpdateWaterLine() { }
 
-private float fsel(float c, float x, float y) { }
+	private float fsel(float c, float x, float y) { }
 
-private float RemapValClamped(float val, float A, float B, float C, float D) { }
+	private float RemapValClamped(float val, float A, float B, float C, float D) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -13,38 +13,38 @@ public static class RenderPipelineManager // TypeDefIndex: 3851
 	[CompilerGeneratedAttribute] 
 	private static Action<ScriptableRenderContext, Camera> beginCameraRendering; 
 
-public static RenderPipeline currentPipeline { get; set; }
+	public static RenderPipeline currentPipeline { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public static RenderPipeline get_currentPipeline() { }
+	public static RenderPipeline get_currentPipeline() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_currentPipeline(RenderPipeline value) { }
+	private static void set_currentPipeline(RenderPipeline value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void add_beginFrameRendering(Action<ScriptableRenderContext, Camera[]> value) { }
+	public static void add_beginFrameRendering(Action<ScriptableRenderContext, Camera[]> value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_beginFrameRendering(Action<ScriptableRenderContext, Camera[]> value) { }
+	public static void remove_beginFrameRendering(Action<ScriptableRenderContext, Camera[]> value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void add_beginCameraRendering(Action<ScriptableRenderContext, Camera> value) { }
+	public static void add_beginCameraRendering(Action<ScriptableRenderContext, Camera> value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_beginCameraRendering(Action<ScriptableRenderContext, Camera> value) { }
+	public static void remove_beginCameraRendering(Action<ScriptableRenderContext, Camera> value) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void CleanupRenderPipeline() { }
+	internal static void CleanupRenderPipeline() { }
 
-private static void GetCameras(ScriptableRenderContext context) { }
+	private static void GetCameras(ScriptableRenderContext context) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void DoRenderLoop_Internal(RenderPipelineAsset pipe, IntPtr loopPtr) { }
+	private static void DoRenderLoop_Internal(RenderPipelineAsset pipe, IntPtr loopPtr) { }
 
-private static void PrepareRenderPipeline(RenderPipelineAsset pipelineAsset) { }
+	private static void PrepareRenderPipeline(RenderPipelineAsset pipelineAsset) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

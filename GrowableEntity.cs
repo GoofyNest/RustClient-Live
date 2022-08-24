@@ -22,57 +22,57 @@ public class GrowableEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 	public int previousGenes; 
 
 
-public static void ResetToPool(GrowableEntity instance) { }
+	public static void ResetToPool(GrowableEntity instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(GrowableEntity instance) { }
+	public void CopyTo(GrowableEntity instance) { }
 
-public GrowableEntity Copy() { }
+	public GrowableEntity Copy() { }
 
-public static GrowableEntity Deserialize(Stream stream) { }
+	public static GrowableEntity Deserialize(Stream stream) { }
 
-public static GrowableEntity DeserializeLengthDelimited(Stream stream) { }
+	public static GrowableEntity DeserializeLengthDelimited(Stream stream) { }
 
-public static GrowableEntity DeserializeLength(Stream stream, int length) { }
+	public static GrowableEntity DeserializeLength(Stream stream, int length) { }
 
-public static GrowableEntity Deserialize(byte[] buffer) { }
+	public static GrowableEntity Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, GrowableEntity previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, GrowableEntity previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static GrowableEntity Deserialize(byte[] buffer, GrowableEntity instance, bool isDelta = False) { }
+	public static GrowableEntity Deserialize(byte[] buffer, GrowableEntity instance, bool isDelta = False) { }
 
-public static GrowableEntity Deserialize(Stream stream, GrowableEntity instance, bool isDelta) { }
+	public static GrowableEntity Deserialize(Stream stream, GrowableEntity instance, bool isDelta) { }
 
-public static GrowableEntity DeserializeLengthDelimited(Stream stream, GrowableEntity instance, bool isDelta) { }
+	public static GrowableEntity DeserializeLengthDelimited(Stream stream, GrowableEntity instance, bool isDelta) { }
 
-public static GrowableEntity DeserializeLength(Stream stream, int length, GrowableEntity instance, bool isDelta) { }
+	public static GrowableEntity DeserializeLength(Stream stream, int length, GrowableEntity instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, GrowableEntity instance, GrowableEntity previous) { }
+	public static void SerializeDelta(Stream stream, GrowableEntity instance, GrowableEntity previous) { }
 
-public static void Serialize(Stream stream, GrowableEntity instance) { }
+	public static void Serialize(Stream stream, GrowableEntity instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(GrowableEntity instance) { }
+	public static byte[] SerializeToBytes(GrowableEntity instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, GrowableEntity instance) { }
+	public static void SerializeLengthDelimited(Stream stream, GrowableEntity instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -111,165 +111,165 @@ public class GrowableEntity : BaseCombatEntity, IInstanceDataReceiver // TypeDef
 	private float <Yield>k__BackingField; 
 	private float stageAge; 
 	public GrowableGenes Genes; 
-private const float startingHealth = 10;
+	private const float startingHealth = 10;
 
-public override bool HasMenuOptions { get; }
-public PlantProperties.State State { get; set; }
-public float Age { get; set; }
-public float LightQuality { get; set; }
-public float GroundQuality { get; set; }
-public float WaterQuality { get; set; }
-public float WaterConsumption { get; set; }
-public bool Fertilized { get; set; }
-public float TemperatureQuality { get; set; }
-public float OverallQuality { get; set; }
-public float Yield { get; set; }
-public float StageProgressFraction { get; }
-private PlantProperties.Stage currentStage { get; }
-public static float ThinkDeltaTime { get; }
-private float growDeltaTime { get; }
-public int CurrentPickAmount { get; }
-public float CurrentPickAmountFloat { get; }
+	public override bool HasMenuOptions { get; }
+	public PlantProperties.State State { get; set; }
+	public float Age { get; set; }
+	public float LightQuality { get; set; }
+	public float GroundQuality { get; set; }
+	public float WaterQuality { get; set; }
+	public float WaterConsumption { get; set; }
+	public bool Fertilized { get; set; }
+	public float TemperatureQuality { get; set; }
+	public float OverallQuality { get; set; }
+	public float Yield { get; set; }
+	public float StageProgressFraction { get; }
+	private PlantProperties.Stage currentStage { get; }
+	public static float ThinkDeltaTime { get; }
+	private float growDeltaTime { get; }
+	public int CurrentPickAmount { get; }
+	public float CurrentPickAmountFloat { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override bool AlwaysShowCrosshair() { }
+	public override bool AlwaysShowCrosshair() { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.ShowIf] 
-public void MenuPick(BasePlayer ply) { }
-
-public bool MenuCanPick(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.ShowIf] 
-public void MenuClone(BasePlayer ply) { }
+	public void MenuPick(BasePlayer ply) { }
 
-public bool MenuCanClone(BasePlayer player) { }
+	public bool MenuCanPick(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.ShowIf] 
-public void MenuRemove(BasePlayer ply) { }
+	public void MenuClone(BasePlayer ply) { }
 
-public bool MenuCanRemove(BasePlayer player) { }
+	public bool MenuCanClone(BasePlayer player) { }
 
-public override void LookingAtTick() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.ShowIf] 
+	public void MenuRemove(BasePlayer ply) { }
+
+	public bool MenuCanRemove(BasePlayer player) { }
+
+	public override void LookingAtTick() { }
 
 	[BaseEntity.RPC_Client] 
-private void RPC_ReceiveQualityUpdate(BaseEntity.RPCMessage msg) { }
+	private void RPC_ReceiveQualityUpdate(BaseEntity.RPCMessage msg) { }
 
-private void ChangeSkin() { }
+	private void ChangeSkin() { }
 
-private void DestroySkin() { }
+	private void DestroySkin() { }
 
-private void SpawnSkin() { }
+	private void SpawnSkin() { }
 
-private void UpdateSkinParameters() { }
+	private void UpdateSkinParameters() { }
 
-private void RefreshRenderers() { }
+	private void RefreshRenderers() { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public MaterialColorLerp GetMaterialColorLerp() { }
+	public MaterialColorLerp GetMaterialColorLerp() { }
 
-public void UpdateHealthVisual() { }
-
-	[CompilerGeneratedAttribute] 
-public PlantProperties.State get_State() { }
+	public void UpdateHealthVisual() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_State(PlantProperties.State value) { }
+	public PlantProperties.State get_State() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_Age() { }
+	private void set_State(PlantProperties.State value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Age(float value) { }
+	public float get_Age() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_LightQuality() { }
+	private void set_Age(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_LightQuality(float value) { }
+	public float get_LightQuality() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_GroundQuality() { }
+	private void set_LightQuality(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_GroundQuality(float value) { }
+	public float get_GroundQuality() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_WaterQuality() { }
+	private void set_GroundQuality(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WaterQuality(float value) { }
+	public float get_WaterQuality() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_WaterConsumption() { }
+	private void set_WaterQuality(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WaterConsumption(float value) { }
+	public float get_WaterConsumption() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Fertilized() { }
+	private void set_WaterConsumption(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Fertilized(bool value) { }
+	public bool get_Fertilized() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_TemperatureQuality() { }
+	private void set_Fertilized(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TemperatureQuality(float value) { }
+	public float get_TemperatureQuality() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_OverallQuality() { }
+	private void set_TemperatureQuality(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_OverallQuality(float value) { }
+	public float get_OverallQuality() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_Yield() { }
+	private void set_OverallQuality(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Yield(float value) { }
+	public float get_Yield() { }
 
-public float get_StageProgressFraction() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Yield(float value) { }
 
-private PlantProperties.Stage get_currentStage() { }
+	public float get_StageProgressFraction() { }
 
-public static float get_ThinkDeltaTime() { }
+	private PlantProperties.Stage get_currentStage() { }
 
-private float get_growDeltaTime() { }
+	public static float get_ThinkDeltaTime() { }
 
-public void ReceiveInstanceData(Item.InstanceData data) { }
+	private float get_growDeltaTime() { }
 
-public override void ResetState() { }
+	public void ReceiveInstanceData(Item.InstanceData data) { }
 
-public bool CanPick() { }
+	public override void ResetState() { }
 
-public int get_CurrentPickAmount() { }
+	public bool CanPick() { }
 
-public float get_CurrentPickAmountFloat() { }
+	public int get_CurrentPickAmount() { }
 
-public bool CanTakeSeeds() { }
+	public float get_CurrentPickAmountFloat() { }
 
-public bool CanClone() { }
+	public bool CanTakeSeeds() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public bool CanClone() { }
 
-private void ChangeState(PlantProperties.State state, bool resetAge, bool loading = False) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	private void ChangeState(PlantProperties.State state, bool resetAge, bool loading = False) { }
+
+	public void .ctor() { }
 
 }
 

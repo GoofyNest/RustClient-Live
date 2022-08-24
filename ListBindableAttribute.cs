@@ -6,20 +6,20 @@ public sealed class ListBindableAttribute : Attribute // TypeDefIndex: 2724
 	private bool listBindable; 
 	private bool isDefault; 
 
-public bool ListBindable { get; }
+	public bool ListBindable { get; }
 
 
-public void .ctor(bool listBindable) { }
+	public void .ctor(bool listBindable) { }
 
-public bool get_ListBindable() { }
+	public bool get_ListBindable() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool IsDefaultAttribute() { }
+	public override bool IsDefaultAttribute() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

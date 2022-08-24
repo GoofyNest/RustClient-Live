@@ -11,29 +11,29 @@ internal sealed class NewDiffgramGen // TypeDefIndex: 4331
 	private bool _writeHierarchy; 
 
 
-internal void .ctor(DataSet ds) { }
+	internal void .ctor(DataSet ds) { }
 
-internal void .ctor(DataTable dt, bool writeHierarchy) { }
+	internal void .ctor(DataTable dt, bool writeHierarchy) { }
 
-private void CreateTableHierarchy(DataTable dt) { }
+	private void CreateTableHierarchy(DataTable dt) { }
 
-private void DoAssignments(ArrayList tables) { }
+	private void DoAssignments(ArrayList tables) { }
 
-private bool EmptyData() { }
+	private bool EmptyData() { }
 
-internal void Save(XmlWriter xmlw) { }
+	internal void Save(XmlWriter xmlw) { }
 
-internal void Save(XmlWriter xmlw, DataTable table) { }
+	internal void Save(XmlWriter xmlw, DataTable table) { }
 
-private void GenerateTable(DataTable table) { }
+	private void GenerateTable(DataTable table) { }
 
-private void GenerateTableErrors(DataTable table) { }
+	private void GenerateTableErrors(DataTable table) { }
 
-private void GenerateRow(DataRow row) { }
+	private void GenerateRow(DataRow row) { }
 
-private void GenerateColumn(DataRow row, DataColumn col, DataRowVersion version) { }
+	private void GenerateColumn(DataRow row, DataColumn col, DataRowVersion version) { }
 
-internal static string QualifiedName(string prefix, string name) { }
+	internal static string QualifiedName(string prefix, string name) { }
 
 }
 

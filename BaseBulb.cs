@@ -11,17 +11,17 @@ public class BaseBulb : MonoBehaviour // TypeDefIndex: 8824
 	private MaterialPropertyBlock materialPropertyBlock; 
 
 
-public virtual void SetOn(bool wantsOn) { }
+	public virtual void SetOn(bool wantsOn) { }
 
-public virtual void SetSpacingIndex(float timeOffset, int bulbIndex) { }
+	public virtual void SetSpacingIndex(float timeOffset, int bulbIndex) { }
 
-public virtual void SetBulbAnimation(AdvancedChristmasLights.AnimationType type) { }
+	public virtual void SetBulbAnimation(AdvancedChristmasLights.AnimationType type) { }
 
-private void UpdateMaterialProperties() { }
+	private void UpdateMaterialProperties() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

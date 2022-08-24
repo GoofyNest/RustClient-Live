@@ -4,13 +4,13 @@ public class GhostSheetSystemSpaceUpdater : MonoBehaviour, IClientComponent // T
 	private BasePlayer player; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Update() { }
+	public void Update() { }
 
-private void SetSimulateSpace(Transform transform, bool collisionEnabled) { }
+	private void SetSimulateSpace(Transform transform, bool collisionEnabled) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

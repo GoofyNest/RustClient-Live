@@ -8,15 +8,15 @@ public class TriggerAchievement : TriggerBase // TypeDefIndex: 10016
 	private List<ulong> triggeredPlayers; 
 
 
-public void OnPuzzleReset() { }
+	public void OnPuzzleReset() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-internal override void OnEntityEnter(BaseEntity ent) { }
+	internal override void OnEntityEnter(BaseEntity ent) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

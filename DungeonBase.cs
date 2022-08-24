@@ -13,9 +13,9 @@ public class DungeonNavmesh : FacepunchBehaviour, IServerComponent // TypeDefInd
 	public static List<DungeonNavmesh> Instances; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -25,20 +25,20 @@ public class DungeonBaseInfo : LandmarkInfo // TypeDefIndex: 10335
 	internal List<DungeonBaseFloor> Floors; 
 
 
-public float Distance(Vector3 position) { }
+	public float Distance(Vector3 position) { }
 
-public float SqrDistance(Vector3 position) { }
+	public float SqrDistance(Vector3 position) { }
 
-public void Add(DungeonBaseLink link) { }
+	public void Add(DungeonBaseLink link) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private int <Add>b__4_0(DungeonBaseFloor l, DungeonBaseFloor r) { }
+	private int <Add>b__4_0(DungeonBaseFloor l, DungeonBaseFloor r) { }
 
 }
 
@@ -47,11 +47,11 @@ public class DungeonBaseFloor // TypeDefIndex: 10336
 	public List<DungeonBaseLink> Links; 
 
 
-public float Distance(Vector3 position) { }
+	public float Distance(Vector3 position) { }
 
-public float SignedDistance(Vector3 position) { }
+	public float SignedDistance(Vector3 position) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -60,14 +60,14 @@ public class DungeonBaseLandmarkInfo : LandmarkInfo // TypeDefIndex: 10337
 	private DungeonBaseLink baseLink; 
 	private Nullable<MapLayer> layer; 
 
-public override MapLayer MapLayer { get; }
+	public override MapLayer MapLayer { get; }
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public override MapLayer get_MapLayer() { }
+	public override MapLayer get_MapLayer() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -85,26 +85,26 @@ public class DungeonBaseLink : MonoBehaviour // TypeDefIndex: 10338
 	private List<DungeonBaseSocket> sockets; 
 	private List<DungeonVolume> volumes; 
 
-internal List<DungeonBaseSocket> Sockets { get; }
-internal List<DungeonVolume> Volumes { get; }
+	internal List<DungeonBaseSocket> Sockets { get; }
+	internal List<DungeonVolume> Volumes { get; }
 
 
-internal List<DungeonBaseSocket> get_Sockets() { }
+	internal List<DungeonBaseSocket> get_Sockets() { }
 
-internal List<DungeonVolume> get_Volumes() { }
+	internal List<DungeonVolume> get_Volumes() { }
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum DungeonBaseLinkType // TypeDefIndex: 10339
 {
 	public int value__; 
-public const DungeonBaseLinkType Room = 0;
-public const DungeonBaseLinkType Corridor = 1;
-public const DungeonBaseLinkType End = 2;
+	public const DungeonBaseLinkType Room = 0;
+	public const DungeonBaseLinkType Corridor = 1;
+	public const DungeonBaseLinkType End = 2;
 
 }
 
@@ -115,16 +115,16 @@ public class DungeonBaseSocket : MonoBehaviour // TypeDefIndex: 10340
 	public bool Female; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum DungeonBaseSocketType // TypeDefIndex: 10341
 {
 	public int value__; 
-public const DungeonBaseSocketType Horizontal = 0;
-public const DungeonBaseSocketType Vertical = 1;
-public const DungeonBaseSocketType Pillar = 2;
+	public const DungeonBaseSocketType Horizontal = 0;
+	public const DungeonBaseSocketType Vertical = 1;
+	public const DungeonBaseSocketType Pillar = 2;
 
 }
 
@@ -135,7 +135,7 @@ public class DungeonBaseTransition : MonoBehaviour // TypeDefIndex: 10342
 	public DungeonBaseLinkType Neighbour2; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -153,27 +153,27 @@ public class DungeonGridCell : MonoBehaviour // TypeDefIndex: 10343
 	public MeshRenderer[] MapRenderers; 
 
 
-public bool ShouldAvoid(uint id) { }
+	public bool ShouldAvoid(uint id) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum DungeonGridConnectionType // TypeDefIndex: 10344
 {
 	public int value__; 
-public const DungeonGridConnectionType None = 0;
-public const DungeonGridConnectionType TrainTunnel = 1;
+	public const DungeonGridConnectionType None = 0;
+	public const DungeonGridConnectionType TrainTunnel = 1;
 
 }
 
 public enum DungeonGridConnectionVariant // TypeDefIndex: 10345
 {
 	public int value__; 
-public const DungeonGridConnectionVariant A = 0;
-public const DungeonGridConnectionVariant B = 1;
+	public const DungeonGridConnectionVariant A = 0;
+	public const DungeonGridConnectionVariant B = 1;
 
 }
 
@@ -184,10 +184,10 @@ public struct DungeonGridConnectionHash // TypeDefIndex: 10346
 	public bool West; 
 	public bool East; 
 
-public int Value { get; }
+	public int Value { get; }
 
 
-public int get_Value() { }
+	public int get_Value() { }
 
 }
 
@@ -200,19 +200,19 @@ public class DungeonGridInfo : LandmarkInfo // TypeDefIndex: 10347
 	internal List<GameObject> Links; 
 
 
-public float Distance(Vector3 position) { }
+	public float Distance(Vector3 position) { }
 
-public float SqrDistance(Vector3 position) { }
+	public float SqrDistance(Vector3 position) { }
 
-public bool IsValidSpawnPosition(Vector3 position) { }
+	public bool IsValidSpawnPosition(Vector3 position) { }
 
-public Vector3 SnapPosition(Vector3 pos) { }
+	public Vector3 SnapPosition(Vector3 pos) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -226,18 +226,18 @@ public class DungeonGridLink : MonoBehaviour // TypeDefIndex: 10348
 	public int Rotation; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum DungeonGridLinkType // TypeDefIndex: 10349
 {
 	public int value__; 
-public const DungeonGridLinkType Default = 0;
-public const DungeonGridLinkType Elevator = 1;
-public const DungeonGridLinkType Transition = 2;
+	public const DungeonGridLinkType Default = 0;
+	public const DungeonGridLinkType Elevator = 1;
+	public const DungeonGridLinkType Transition = 2;
 
 }
 
@@ -246,11 +246,11 @@ public class DungeonVolume : MonoBehaviour // TypeDefIndex: 10350
 	public Bounds bounds; 
 
 
-public OBB GetBounds(Vector3 position, Quaternion rotation) { }
+	public OBB GetBounds(Vector3 position, Quaternion rotation) { }
 
-public OBB GetBounds(Vector3 position, Quaternion rotation, Vector3 extrude) { }
+	public OBB GetBounds(Vector3 position, Quaternion rotation, Vector3 extrude) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -3,7 +3,7 @@ internal sealed class FieldNameLookup : BasicFieldNameLookup // TypeDefIndex: 43
 	private readonly int _defaultLocaleID; 
 
 
-public void .ctor(IDataReader reader, int defaultLocaleID) { }
+	public void .ctor(IDataReader reader, int defaultLocaleID) { }
 
 }
 

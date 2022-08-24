@@ -6,9 +6,9 @@ public class DecorAlign : DecorComponent // TypeDefIndex: 10322
 	public Vector3 SlopeScale; 
 
 
-public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
+	public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

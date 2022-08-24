@@ -8,20 +8,20 @@ internal class ChannelData // TypeDefIndex: 1139
 	private ArrayList _clientProviders; 
 	private Hashtable _customProperties; 
 
-internal ArrayList ServerProviders { get; }
-public ArrayList ClientProviders { get; }
-public Hashtable CustomProperties { get; }
+	internal ArrayList ServerProviders { get; }
+	public ArrayList ClientProviders { get; }
+	public Hashtable CustomProperties { get; }
 
 
-internal ArrayList get_ServerProviders() { }
+	internal ArrayList get_ServerProviders() { }
 
-public ArrayList get_ClientProviders() { }
+	public ArrayList get_ClientProviders() { }
 
-public Hashtable get_CustomProperties() { }
+	public Hashtable get_CustomProperties() { }
 
-public void CopyFrom(ChannelData other) { }
+	public void CopyFrom(ChannelData other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -31,7 +31,7 @@ public class ChannelData // TypeDefIndex: 7409
 	internal int[] ScaleFactorBits; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 

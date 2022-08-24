@@ -7,11 +7,11 @@ public class ViewmodelPunch : MonoBehaviour // TypeDefIndex: 11460
 	private float punchStartTime; 
 
 
-public void DoPunch() { }
+	public void DoPunch() { }
 
-public void Apply(ref CachedTransform<BaseViewModel> vm, float fov, BasePlayer player) { }
+	public void Apply(ref CachedTransform<BaseViewModel> vm, float fov, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

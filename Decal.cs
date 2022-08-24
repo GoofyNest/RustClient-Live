@@ -11,13 +11,13 @@ public class Decal : ConsoleSystem // TypeDefIndex: 11900
 
 
 	[ClientVar] 
-public static void clear(ConsoleSystem.Arg args) { }
+	public static void clear(ConsoleSystem.Arg args) { }
 
-public static void clear() { }
+	public static void clear() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

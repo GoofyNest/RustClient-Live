@@ -6,9 +6,9 @@ public struct VertexGradient // TypeDefIndex: 6856
 	public Color bottomRight; 
 
 
-public void .ctor(Color color) { }
+	public void .ctor(Color color) { }
 
-public void .ctor(Color color0, Color color1, Color color2, Color color3) { }
+	public void .ctor(Color color0, Color color1, Color color2, Color color3) { }
 
 }
 

@@ -2,23 +2,23 @@ public sealed class DecoderReplacementFallback : DecoderFallback // TypeDefIndex
 {
 	private string strDefault; 
 
-public string DefaultString { get; }
-public override int MaxCharCount { get; }
+	public string DefaultString { get; }
+	public override int MaxCharCount { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string replacement) { }
+	public void .ctor(string replacement) { }
 
-public string get_DefaultString() { }
+	public string get_DefaultString() { }
 
-public override DecoderFallbackBuffer CreateFallbackBuffer() { }
+	public override DecoderFallbackBuffer CreateFallbackBuffer() { }
 
-public override int get_MaxCharCount() { }
+	public override int get_MaxCharCount() { }
 
-public override bool Equals(object value) { }
+	public override bool Equals(object value) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

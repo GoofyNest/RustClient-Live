@@ -17,36 +17,36 @@ public class VisualizeTexelDensity : MonoBehaviour // TypeDefIndex: 11529
 	private Material texelDensityOverlayMat; 
 	private static VisualizeTexelDensity instance; 
 
-public static VisualizeTexelDensity Instance { get; }
+	public static VisualizeTexelDensity Instance { get; }
 
 
-public static VisualizeTexelDensity get_Instance() { }
+	public static VisualizeTexelDensity get_Instance() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void LoadResources() { }
+	private void LoadResources() { }
 
-private void SafeDestroyViewTexelDensity() { }
+	private void SafeDestroyViewTexelDensity() { }
 
-private void SafeDestroyViewTexelDensityRT() { }
+	private void SafeDestroyViewTexelDensityRT() { }
 
-private void UpdateViewTexelDensity(bool screenResized) { }
+	private void UpdateViewTexelDensity(bool screenResized) { }
 
-private bool CheckScreenResized(int width, int height) { }
+	private bool CheckScreenResized(int width, int height) { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private void DrawGUIText(float x, float y, Vector2 size, string text, GUIStyle fontStyle) { }
+	private void DrawGUIText(float x, float y, Vector2 size, string text, GUIStyle fontStyle) { }
 
-private void OnGUI() { }
+	private void OnGUI() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

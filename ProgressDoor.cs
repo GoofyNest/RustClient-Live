@@ -6,9 +6,9 @@ public class ProgressDoor : IOEntity // TypeDefIndex: 9808
 	public float openProgress; 
 
 
-public virtual void UpdateProgress() { }
+	public virtual void UpdateProgress() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

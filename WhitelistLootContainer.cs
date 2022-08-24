@@ -3,9 +3,9 @@ public class WhitelistLootContainer : LootContainer // TypeDefIndex: 9618
 	public static readonly Translate.Phrase CantLootToast; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

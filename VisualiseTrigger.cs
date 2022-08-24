@@ -4,7 +4,7 @@ public class VisualiseTrigger : MonoBehaviour, IEditorComponent // TypeDefIndex:
 	private Color colour; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -1,73 +1,73 @@
 public abstract class PropertyInfo : MemberInfo, _PropertyInfo // TypeDefIndex: 597
 {
-public abstract PropertyAttributes Attributes { get; }
-public abstract bool CanRead { get; }
-public abstract bool CanWrite { get; }
-public override MemberTypes MemberType { get; }
-public abstract Type PropertyType { get; }
+	public abstract PropertyAttributes Attributes { get; }
+	public abstract bool CanRead { get; }
+	public abstract bool CanWrite { get; }
+	public override MemberTypes MemberType { get; }
+	public abstract Type PropertyType { get; }
 
 
-public abstract PropertyAttributes get_Attributes();
+	public abstract PropertyAttributes get_Attributes();
 
-public abstract bool get_CanRead();
+	public abstract bool get_CanRead();
 
-public abstract bool get_CanWrite();
+	public abstract bool get_CanWrite();
 
-public override MemberTypes get_MemberType() { }
+	public override MemberTypes get_MemberType() { }
 
-public abstract Type get_PropertyType();
+	public abstract Type get_PropertyType();
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public abstract MethodInfo[] GetAccessors(bool nonPublic);
+	public abstract MethodInfo[] GetAccessors(bool nonPublic);
 
-public MethodInfo GetGetMethod() { }
+	public MethodInfo GetGetMethod() { }
 
-public abstract MethodInfo GetGetMethod(bool nonPublic);
+	public abstract MethodInfo GetGetMethod(bool nonPublic);
 
-public abstract ParameterInfo[] GetIndexParameters();
+	public abstract ParameterInfo[] GetIndexParameters();
 
-public MethodInfo GetSetMethod() { }
+	public MethodInfo GetSetMethod() { }
 
-public abstract MethodInfo GetSetMethod(bool nonPublic);
-
-	[DebuggerHiddenAttribute] 
-	[DebuggerStepThroughAttribute] 
-public virtual object GetValue(object obj, object[] index) { }
-
-	[DebuggerStepThroughAttribute] 
-	[DebuggerHiddenAttribute] 
-public object GetValue(object obj) { }
-
-public abstract object GetValue(object obj, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture);
+	public abstract MethodInfo GetSetMethod(bool nonPublic);
 
 	[DebuggerHiddenAttribute] 
 	[DebuggerStepThroughAttribute] 
-public virtual void SetValue(object obj, object value, object[] index) { }
+	public virtual object GetValue(object obj, object[] index) { }
 
-public abstract void SetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture);
+	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute] 
+	public object GetValue(object obj) { }
 
-public virtual Type[] GetOptionalCustomModifiers() { }
+	public abstract object GetValue(object obj, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture);
 
-public virtual Type[] GetRequiredCustomModifiers() { }
+	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute] 
+	public virtual void SetValue(object obj, object value, object[] index) { }
 
-private static NotImplementedException CreateNIE() { }
+	public abstract void SetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture);
 
-public virtual object GetConstantValue() { }
+	public virtual Type[] GetOptionalCustomModifiers() { }
 
-public virtual object GetRawConstantValue() { }
+	public virtual Type[] GetRequiredCustomModifiers() { }
 
-public override bool Equals(object obj) { }
+	private static NotImplementedException CreateNIE() { }
 
-public override int GetHashCode() { }
+	public virtual object GetConstantValue() { }
 
-public static bool op_Equality(PropertyInfo left, PropertyInfo right) { }
+	public virtual object GetRawConstantValue() { }
 
-public static bool op_Inequality(PropertyInfo left, PropertyInfo right) { }
+	public override bool Equals(object obj) { }
 
-private static PropertyInfo internal_from_handle_type(IntPtr event_handle, IntPtr type_handle) { }
+	public override int GetHashCode() { }
 
-internal static PropertyInfo GetPropertyFromHandle(RuntimePropertyHandle handle, RuntimeTypeHandle reflectedType) { }
+	public static bool op_Equality(PropertyInfo left, PropertyInfo right) { }
+
+	public static bool op_Inequality(PropertyInfo left, PropertyInfo right) { }
+
+	private static PropertyInfo internal_from_handle_type(IntPtr event_handle, IntPtr type_handle) { }
+
+	internal static PropertyInfo GetPropertyFromHandle(RuntimePropertyHandle handle, RuntimeTypeHandle reflectedType) { }
 
 }
 

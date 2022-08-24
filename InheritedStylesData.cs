@@ -10,15 +10,15 @@ internal class InheritedStylesData : IEquatable<InheritedStylesData> // TypeDefI
 	public StyleInt whiteSpace; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public bool Equals(InheritedStylesData other) { }
+	public bool Equals(InheritedStylesData other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

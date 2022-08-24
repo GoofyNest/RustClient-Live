@@ -12,36 +12,36 @@ public class UriBuilder // TypeDefIndex: 2564
 	private Uri _uri; 
 	private string _username; 
 
-public string Host { set; }
-public string Path { set; }
-public string Query { set; }
-public string Scheme { set; }
-public Uri Uri { get; }
+	public string Host { set; }
+	public string Path { set; }
+	public string Query { set; }
+	public string Scheme { set; }
+	public Uri Uri { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(Uri uri) { }
+	public void .ctor(Uri uri) { }
 
-private void Init(Uri uri) { }
+	private void Init(Uri uri) { }
 
-public void set_Host(string value) { }
+	public void set_Host(string value) { }
 
-public void set_Path(string value) { }
+	public void set_Path(string value) { }
 
-public void set_Query(string value) { }
+	public void set_Query(string value) { }
 
-public void set_Scheme(string value) { }
+	public void set_Scheme(string value) { }
 
-public Uri get_Uri() { }
+	public Uri get_Uri() { }
 
-public override bool Equals(object rparam) { }
+	public override bool Equals(object rparam) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private void SetFieldsFromUri(Uri uri) { }
+	private void SetFieldsFromUri(Uri uri) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

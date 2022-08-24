@@ -7,17 +7,17 @@ public class ToolsHUDUI : MonoBehaviour // TypeDefIndex: 11236
 	private bool initialised; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-private void Init() { }
+	private void Init() { }
 
-private void AddToggleObj(string trName, string labelText) { }
+	private void AddToggleObj(string trName, string labelText) { }
 
-public void SelectAll() { }
+	public void SelectAll() { }
 
-public void SelectNone() { }
+	public void SelectNone() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

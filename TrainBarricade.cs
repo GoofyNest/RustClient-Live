@@ -12,13 +12,13 @@ public class TrainBarricade : BaseCombatEntity, ITrainCollidable // TypeDefIndex
 	private float nextEffectTime; 
 
 
-public bool CustomCollision(TrainCar train, TriggerTrainCollisions trainTrigger) { }
+	public bool CustomCollision(TrainCar train, TriggerTrainCollisions trainTrigger) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

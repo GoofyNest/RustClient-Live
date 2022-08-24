@@ -4,7 +4,7 @@ public sealed class InvalidMidiTimeCodeComponentException : MidiException // Typ
 	private readonly byte <MidiTimeCodeComponent>k__BackingField; 
 
 
-internal void .ctor(byte midiTimeCodeComponent) { }
+	internal void .ctor(byte midiTimeCodeComponent) { }
 
 }
 

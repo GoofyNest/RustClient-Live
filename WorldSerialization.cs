@@ -1,55 +1,55 @@
 public class WorldSerialization // TypeDefIndex: 7787
 {
-public const uint CurrentVersion = 9;
+	public const uint CurrentVersion = 9;
 	[CompilerGeneratedAttribute] 
 	private uint <Version>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private string <Checksum>k__BackingField; 
 	public WorldData world; 
 
-public uint Version { get; set; }
-public string Checksum { get; set; }
+	public uint Version { get; set; }
+	public string Checksum { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public uint get_Version() { }
+	public uint get_Version() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Version(uint value) { }
+	private void set_Version(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Checksum() { }
+	public string get_Checksum() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Checksum(string value) { }
+	private void set_Checksum(string value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public MapData GetMap(string name) { }
+	public MapData GetMap(string name) { }
 
-public void AddMap(string name, byte[] data) { }
+	public void AddMap(string name, byte[] data) { }
 
-public IEnumerable<PrefabData> GetPrefabs(string category) { }
+	public IEnumerable<PrefabData> GetPrefabs(string category) { }
 
-public void AddPrefab(string category, uint id, Vector3 position, Quaternion rotation, Vector3 scale) { }
+	public void AddPrefab(string category, uint id, Vector3 position, Quaternion rotation, Vector3 scale) { }
 
-public IEnumerable<PathData> GetPaths(string name) { }
+	public IEnumerable<PathData> GetPaths(string name) { }
 
-public PathData GetPath(string name) { }
+	public PathData GetPath(string name) { }
 
-public void AddPath(PathData path) { }
+	public void AddPath(PathData path) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Save(string fileName) { }
+	public void Save(string fileName) { }
 
-public void Load(string fileName) { }
+	public void Load(string fileName) { }
 
-public void CalculateChecksum() { }
+	public void CalculateChecksum() { }
 
-private string Hash() { }
+	private string Hash() { }
 
-public int CalculateCount() { }
+	public int CalculateCount() { }
 
 }
 
@@ -58,9 +58,9 @@ private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7
 	public string category; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetPrefabs>b__0(PrefabData p) { }
+	internal bool <GetPrefabs>b__0(PrefabData p) { }
 
 }
 
@@ -69,9 +69,9 @@ private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7
 	public string name; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetPaths>b__0(PathData p) { }
+	internal bool <GetPaths>b__0(PathData p) { }
 
 }
 

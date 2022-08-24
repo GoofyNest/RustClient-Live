@@ -65,55 +65,55 @@ public class SubmarineAudio : MonoBehaviour // TypeDefIndex: 9760
 	private float previousThrottleInput; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void UpdateTick(BaseSubmarine submarine, bool playerIsInside, float speed, float curSubDepthY) { }
+	public void UpdateTick(BaseSubmarine submarine, bool playerIsInside, float speed, float curSubDepthY) { }
 
-public void EndAllSounds() { }
+	public void EndAllSounds() { }
 
-public void PlayEngineStartFailSound() { }
+	public void PlayEngineStartFailSound() { }
 
-public void PlayAmmoFlagRaise() { }
+	public void PlayAmmoFlagRaise() { }
 
-public void PlayAmmoFlagLower() { }
+	public void PlayAmmoFlagLower() { }
 
-public void PlaySonarBlipSound() { }
+	public void PlaySonarBlipSound() { }
 
-public void PlayTorpedoFireFailedSound() { }
+	public void PlayTorpedoFireFailedSound() { }
 
-private bool WithinEngineSoundDistance() { }
+	private bool WithinEngineSoundDistance() { }
 
-private void StartEngineSounds() { }
+	private void StartEngineSounds() { }
 
-private void StopEngineSounds() { }
+	private void StopEngineSounds() { }
 
-private void StartInteriorActiveAmbience() { }
+	private void StartInteriorActiveAmbience() { }
 
-private void StopInteriorActiveAmbience() { }
+	private void StopInteriorActiveAmbience() { }
 
-private void StartClimbOrDiveSounds() { }
+	private void StartClimbOrDiveSounds() { }
 
-private void StopClimbOrDiveSounds() { }
+	private void StopClimbOrDiveSounds() { }
 
-private void PlayEmergeSubmergeSounds(float curSubDepthY) { }
+	private void PlayEmergeSubmergeSounds(float curSubDepthY) { }
 
-private void PlayInteriorSteeringSounds(BaseSubmarine submarine) { }
+	private void PlayInteriorSteeringSounds(BaseSubmarine submarine) { }
 
-private void StartUnderwaterLoop(float waterFactor) { }
+	private void StartUnderwaterLoop(float waterFactor) { }
 
-private void StopUnderwaterLoop() { }
+	private void StopUnderwaterLoop() { }
 
-private void UpdateSurfaceWaterSounds(float speed, float curSubDepthY) { }
+	private void UpdateSurfaceWaterSounds(float speed, float curSubDepthY) { }
 
-private void StartUnderwaterMovementSounds() { }
+	private void StartUnderwaterMovementSounds() { }
 
-private void StopUnderwaterMovementSounds() { }
+	private void StopUnderwaterMovementSounds() { }
 
-private void StartHeavyDamageSparkSound() { }
+	private void StartHeavyDamageSparkSound() { }
 
-private void StopHeavyDamageSparkSound() { }
+	private void StopHeavyDamageSparkSound() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

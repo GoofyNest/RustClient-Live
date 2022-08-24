@@ -10,15 +10,15 @@ public class SedanWheelSmoke : MonoBehaviour // TypeDefIndex: 8297
 	private float updateTime; 
 
 
-public void InitWheelSmoke() { }
+	public void InitWheelSmoke() { }
 
-public void UpdateWheelSmoke() { }
+	public void UpdateWheelSmoke() { }
 
-private void UpdateTireEffects(float speedRatio) { }
+	private void UpdateTireEffects(float speedRatio) { }
 
-private bool CheckInWater(int i) { }
+	private bool CheckInWater(int i) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -10,9 +10,9 @@ public class SkyLantern : StorageContainer, IIgniteable // TypeDefIndex: 8757
 	public Transform collisionCheckPoint; 
 
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

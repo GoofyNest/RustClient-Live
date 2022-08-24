@@ -4,7 +4,7 @@ public class ConvarControlledSpawnPopulation : SpawnPopulation // TypeDefIndex: 
 	public string PopulationConvar; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -9,7 +9,7 @@ internal struct MovedFromAttributeData // TypeDefIndex: 3653
 	public bool autoUdpateAPI; 
 
 
-public void Set(bool autoUpdateAPI, string sourceNamespace, string sourceAssembly, string sourceClassName) { }
+	public void Set(bool autoUpdateAPI, string sourceNamespace, string sourceAssembly, string sourceClassName) { }
 
 }
 

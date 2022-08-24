@@ -5,49 +5,49 @@ public class HeldBoomBox : HeldEntity, ICassettePlayer // TypeDefIndex: 8574
 	private TimeSince lastPlayToggle; 
 	private static int animPlay; 
 
-public BaseEntity ToBaseEntity { get; }
+	public BaseEntity ToBaseEntity { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public BaseEntity get_ToBaseEntity() { }
+	public BaseEntity get_ToBaseEntity() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override void OnHolster() { }
+	public override void OnHolster() { }
 
-public override void OnDeploy() { }
+	public override void OnDeploy() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
-
-	[BaseEntity.RPC_Client] 
-public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
 	[BaseEntity.RPC_Client] 
-public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
+	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void OnRadioIPChanged(BaseEntity.RPCMessage msg) { }
+	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
-public void OnLoadedWithCassette(Cassette c) { }
+	[BaseEntity.RPC_Client] 
+	public void OnRadioIPChanged(BaseEntity.RPCMessage msg) { }
 
-public void OnCensorRecordingsChanged() { }
+	public void OnLoadedWithCassette(Cassette c) { }
 
-private void UpdateCassetteSwapper() { }
+	public void OnCensorRecordingsChanged() { }
 
-private void UpdateViewmodelCassette(ViewModel vm) { }
+	private void UpdateCassetteSwapper() { }
 
-private void UpdateViewmodelPlay(ViewModel vm) { }
+	private void UpdateViewmodelCassette(ViewModel vm) { }
 
-public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+	private void UpdateViewmodelPlay(ViewModel vm) { }
 
-public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-public void .ctor() { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

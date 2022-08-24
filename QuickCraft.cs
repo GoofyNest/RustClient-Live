@@ -11,49 +11,49 @@ public class QuickCraft : SingletonComponent<QuickCraft>, IInventoryChanged // T
 	private bool forceRebuild; 
 	private bool isDirty; 
 	private int lastHash; 
-private const int buttonCount = 18;
+	private const int buttonCount = 18;
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void LoadFavourites() { }
+	private void LoadFavourites() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void Dirty() { }
+	private void Dirty() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator WatchForChanges() { }
+	private IEnumerator WatchForChanges() { }
 
-private void Rebuild() { }
+	private void Rebuild() { }
 
-public bool RecentlyRebuilt() { }
+	public bool RecentlyRebuilt() { }
 
-public void ForceRebuild() { }
+	public void ForceRebuild() { }
 
-public void ToggleFavourite(ItemBlueprint bp) { }
+	public void ToggleFavourite(ItemBlueprint bp) { }
 
-public static bool IsBluePrintFavourited(ItemBlueprint bp) { }
+	public static bool IsBluePrintFavourited(ItemBlueprint bp) { }
 
-public static void AddFavouriteBlueprint(ItemBlueprint bp) { }
+	public static void AddFavouriteBlueprint(ItemBlueprint bp) { }
 
-public static void RemoveFavouriteBlueprint(ItemBlueprint bp) { }
+	public static void RemoveFavouriteBlueprint(ItemBlueprint bp) { }
 
-private static string GetSaveString(ItemBlueprint bp) { }
+	private static string GetSaveString(ItemBlueprint bp) { }
 
-public void SetFavouriteIconState(bool favourited, Image image) { }
+	public void SetFavouriteIconState(bool favourited, Image image) { }
 
-public void SetFavouriteIconHoveredState(bool favourited, Image image) { }
+	public void SetFavouriteIconHoveredState(bool favourited, Image image) { }
 
-public void SetFavouriteIconUnhoveredState(bool favourited, Image image) { }
+	public void SetFavouriteIconUnhoveredState(bool favourited, Image image) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -63,26 +63,26 @@ private sealed class QuickCraft.<WatchForChanges>d__16 : IEnumerator<object>, IE
 	private object <>2__current; 
 	public QuickCraft <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -21,115 +21,115 @@ public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // T
 	private float <TotalMass>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private bool <HasInited>k__BackingField; 
-public const BaseEntity.Flags FLAG_KINEMATIC = 16384;
+	public const BaseEntity.Flags FLAG_KINEMATIC = 16384;
 	private Dictionary<BaseVehicleModule, Action> moduleAddActions; 
 
-public override bool HasMenuOptions { get; }
-public Vector3 CentreOfMass { get; }
-public int NumAttachedModules { get; }
-public bool HasAnyModules { get; }
-public List<BaseVehicleModule> AttachedModuleEntities { get; }
-public int TotalSockets { get; }
-public int NumFreeSockets { get; }
-private float Mass { get; }
-public float TotalMass { get; set; }
-public bool IsKinematic { get; }
-public virtual bool IsLockable { get; }
-public bool HasInited { get; set; }
-private ItemDefinition AssociatedItemDef { get; }
-public bool IsEditableNow { get; }
+	public override bool HasMenuOptions { get; }
+	public Vector3 CentreOfMass { get; }
+	public int NumAttachedModules { get; }
+	public bool HasAnyModules { get; }
+	public List<BaseVehicleModule> AttachedModuleEntities { get; }
+	public int TotalSockets { get; }
+	public int NumFreeSockets { get; }
+	private float Mass { get; }
+	public float TotalMass { get; set; }
+	public bool IsKinematic { get; }
+	public virtual bool IsLockable { get; }
+	public bool HasInited { get; set; }
+	private ItemDefinition AssociatedItemDef { get; }
+	public bool IsEditableNow { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-protected override void GroundVehicleClientTick() { }
+	protected override void GroundVehicleClientTick() { }
 
-protected override void OnClientTickStopped() { }
+	protected override void OnClientTickStopped() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public virtual void ClientLightsChanged(bool headlightsOn, bool brakesOn) { }
+	public virtual void ClientLightsChanged(bool headlightsOn, bool brakesOn) { }
 
-protected abstract bool IsBraking();
+	protected abstract bool IsBraking();
 
-private void RefreshLODSets() { }
+	private void RefreshLODSets() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public virtual void Menu_Push(BasePlayer player) { }
+	public virtual void Menu_Push(BasePlayer player) { }
 
-public Vector3 get_CentreOfMass() { }
+	public Vector3 get_CentreOfMass() { }
 
-public int get_NumAttachedModules() { }
+	public int get_NumAttachedModules() { }
 
-public bool get_HasAnyModules() { }
-
-	[CompilerGeneratedAttribute] 
-public List<BaseVehicleModule> get_AttachedModuleEntities() { }
-
-public int get_TotalSockets() { }
-
-public int get_NumFreeSockets() { }
-
-private float get_Mass() { }
+	public bool get_HasAnyModules() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_TotalMass() { }
+	public List<BaseVehicleModule> get_AttachedModuleEntities() { }
+
+	public int get_TotalSockets() { }
+
+	public int get_NumFreeSockets() { }
+
+	private float get_Mass() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TotalMass(float value) { }
-
-public bool get_IsKinematic() { }
-
-public virtual bool get_IsLockable() { }
+	public float get_TotalMass() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_HasInited() { }
+	private void set_TotalMass(float value) { }
+
+	public bool get_IsKinematic() { }
+
+	public virtual bool get_IsLockable() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_HasInited(bool value) { }
+	public bool get_HasInited() { }
 
-private ItemDefinition get_AssociatedItemDef() { }
+	[CompilerGeneratedAttribute] 
+	private void set_HasInited(bool value) { }
 
-public bool get_IsEditableNow() { }
+	private ItemDefinition get_AssociatedItemDef() { }
 
-public override void InitShared() { }
+	public bool get_IsEditableNow() { }
 
-public virtual bool PlayerCanUseThis(BasePlayer player, ModularCarLock.LockType lockType) { }
+	public override void InitShared() { }
 
-public bool TryDeduceSocketIndex(BaseVehicleModule addedModule, out int index) { }
+	public virtual bool PlayerCanUseThis(BasePlayer player, ModularCarLock.LockType lockType) { }
 
-public void AddMass(float moduleMass, Vector3 moduleCOM, Vector3 moduleWorldPos) { }
+	public bool TryDeduceSocketIndex(BaseVehicleModule addedModule, out int index) { }
 
-public void RemoveMass(float moduleMass, Vector3 moduleCOM, Vector3 moduleWorldPos) { }
+	public void AddMass(float moduleMass, Vector3 moduleCOM, Vector3 moduleWorldPos) { }
 
-public bool TryGetModuleAt(int socketIndex, out BaseVehicleModule result) { }
+	public void RemoveMass(float moduleMass, Vector3 moduleCOM, Vector3 moduleWorldPos) { }
 
-public ModularVehicleSocket GetSocket(int index) { }
+	public bool TryGetModuleAt(int socketIndex, out BaseVehicleModule result) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public ModularVehicleSocket GetSocket(int index) { }
 
-protected override bool CanPushNow(BasePlayer pusher) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-protected override void OnChildAdded(BaseEntity childEntity) { }
+	protected override bool CanPushNow(BasePlayer pusher) { }
 
-protected override void OnChildRemoved(BaseEntity childEntity) { }
+	protected override void OnChildAdded(BaseEntity childEntity) { }
 
-protected virtual void ModuleEntityAdded(BaseVehicleModule addedModule) { }
+	protected override void OnChildRemoved(BaseEntity childEntity) { }
 
-protected virtual void ModuleEntityRemoved(BaseVehicleModule removedModule) { }
+	protected virtual void ModuleEntityAdded(BaseVehicleModule addedModule) { }
 
-private void RefreshModulesExcept(BaseVehicleModule ignoredModule) { }
+	protected virtual void ModuleEntityRemoved(BaseVehicleModule removedModule) { }
 
-protected void .ctor() { }
+	private void RefreshModulesExcept(BaseVehicleModule ignoredModule) { }
+
+	protected void .ctor() { }
 
 }
 
@@ -139,9 +139,9 @@ private sealed class BaseModularVehicle.<>c__DisplayClass64_0 // TypeDefIndex: 8
 	public BaseVehicleModule module; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <OnChildAdded>b__0() { }
+	internal void <OnChildAdded>b__0() { }
 
 }
 

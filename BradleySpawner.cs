@@ -9,7 +9,7 @@ public class BradleySpawner : MonoBehaviour, IServerComponent // TypeDefIndex: 8
 	public static BradleySpawner singleton; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,11 +6,11 @@ public class GameModeSoftcore : GameModeVanilla // TypeDefIndex: 9885
 	public ItemAmount[] startingGear; 
 
 
-protected override void OnCreated() { }
+	protected override void OnCreated() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

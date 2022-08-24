@@ -9,22 +9,22 @@ public class TextBuffer // TypeDefIndex: 6595
 	private int curchars; 
 	private int maxchars; 
 
-public int Count { get; }
+	public int Count { get; }
 
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public void .ctor(int maxlines, int maxchars = 2147483647) { }
+	public void .ctor(int maxlines, int maxchars = 2147483647) { }
 
-public void Add(string text) { }
+	public void Add(string text) { }
 
-public void Remove() { }
+	public void Remove() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public string Get(int index) { }
+	public string Get(int index) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

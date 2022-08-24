@@ -8,9 +8,9 @@ public class LinearFog : MonoBehaviour // TypeDefIndex: 10095
 	public bool fogSky; 
 
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

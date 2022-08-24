@@ -14,14 +14,14 @@ public class PetBrain : BaseAIBrain<BasePet> // TypeDefIndex: 8614
 	public static float ControlDistance; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void OnCommandGiven(BaseEntity.RPCMessage msg) { }
+	private void OnCommandGiven(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

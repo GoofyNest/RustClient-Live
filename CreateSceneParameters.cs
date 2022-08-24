@@ -4,7 +4,7 @@ public struct CreateSceneParameters // TypeDefIndex: 3660
 	private LocalPhysicsMode m_LocalPhysicsMode; 
 
 
-public void .ctor(LocalPhysicsMode physicsMode) { }
+	public void .ctor(LocalPhysicsMode physicsMode) { }
 
 }
 

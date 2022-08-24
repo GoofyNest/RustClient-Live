@@ -18,80 +18,80 @@ public class Exception : ISerializable, _Exception // TypeDefIndex: 218
 	private SafeSerializationManager _safeSerializationManager; 
 	internal StackTrace[] captured_traces; 
 	private IntPtr[] native_trace_ips; 
-private const int _COMPlusExceptionCode = -532462766;
+	private const int _COMPlusExceptionCode = -532462766;
 
-public virtual string Message { get; }
-public virtual IDictionary Data { get; }
-public Exception InnerException { get; }
-public virtual string StackTrace { get; }
-public virtual string Source { get; }
-public int HResult { get; set; }
+	public virtual string Message { get; }
+	public virtual IDictionary Data { get; }
+	public Exception InnerException { get; }
+	public virtual string StackTrace { get; }
+	public virtual string Source { get; }
+	public int HResult { get; set; }
 
 
-private void Init() { }
+	private void Init() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string message) { }
+	public void .ctor(string message) { }
 
-public void .ctor(string message, Exception innerException) { }
+	public void .ctor(string message, Exception innerException) { }
 
-protected void .ctor(SerializationInfo info, StreamingContext context) { }
+	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public virtual string get_Message() { }
+	public virtual string get_Message() { }
 
-public virtual IDictionary get_Data() { }
+	public virtual IDictionary get_Data() { }
 
-private static bool IsImmutableAgileException(Exception e) { }
+	private static bool IsImmutableAgileException(Exception e) { }
 
-private string GetClassName() { }
+	private string GetClassName() { }
 
-public Exception get_InnerException() { }
+	public Exception get_InnerException() { }
 
-public virtual string get_StackTrace() { }
+	public virtual string get_StackTrace() { }
 
-private string GetStackTrace(bool needFileInfo) { }
+	private string GetStackTrace(bool needFileInfo) { }
 
 	[FriendAccessAllowedAttribute] 
-internal void SetErrorCode(int hr) { }
+	internal void SetErrorCode(int hr) { }
 
-public virtual string get_Source() { }
+	public virtual string get_Source() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private string ToString(bool needFileLineInfo, bool needMessage) { }
+	private string ToString(bool needFileLineInfo, bool needMessage) { }
 
-public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
 	[OnDeserializedAttribute] 
-private void OnDeserialized(StreamingContext context) { }
+	private void OnDeserialized(StreamingContext context) { }
 
-private string StripFileInfo(string stackTrace, bool isRemoteStackTrace) { }
+	private string StripFileInfo(string stackTrace, bool isRemoteStackTrace) { }
 
-internal void RestoreExceptionDispatchInfo(ExceptionDispatchInfo exceptionDispatchInfo) { }
+	internal void RestoreExceptionDispatchInfo(ExceptionDispatchInfo exceptionDispatchInfo) { }
 
-public int get_HResult() { }
+	public int get_HResult() { }
 
-protected void set_HResult(int value) { }
+	protected void set_HResult(int value) { }
 
-public Type GetType() { }
+	public Type GetType() { }
 
-internal static string GetMessageFromNativeResources(Exception.ExceptionMessageKind kind) { }
+	internal static string GetMessageFromNativeResources(Exception.ExceptionMessageKind kind) { }
 
-internal Exception FixRemotingException() { }
+	internal Exception FixRemotingException() { }
 
-internal static void ReportUnhandledException(Exception exception) { }
+	internal static void ReportUnhandledException(Exception exception) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal enum Exception.ExceptionMessageKind // TypeDefIndex: 219
 {
 	public int value__; 
-public const Exception.ExceptionMessageKind ThreadAbort = 1;
-public const Exception.ExceptionMessageKind ThreadInterrupted = 2;
-public const Exception.ExceptionMessageKind OutOfMemory = 3;
+	public const Exception.ExceptionMessageKind ThreadAbort = 1;
+	public const Exception.ExceptionMessageKind ThreadInterrupted = 2;
+	public const Exception.ExceptionMessageKind OutOfMemory = 3;
 
 }
 

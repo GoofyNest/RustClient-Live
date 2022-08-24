@@ -23,59 +23,59 @@ public class Skin // TypeDefIndex: 7728
 	public Action OnLoaded; 
 	public Action OnIconLoaded; 
 
-public bool AssetsRequested { get; set; }
-public bool IconRequested { get; set; }
-public bool AssetsLoaded { get; set; }
-public bool IconLoaded { get; set; }
+	public bool AssetsRequested { get; set; }
+	public bool IconRequested { get; set; }
+	public bool AssetsLoaded { get; set; }
+	public bool IconLoaded { get; set; }
 
 
-private void LoadManifestFromFile() { }
+	private void LoadManifestFromFile() { }
 
-private void DeserializeManifest() { }
-
-	[IteratorStateMachineAttribute] 
-public IEnumerator LoadIcon(ulong workshopId, string directory, AssetBundle bundle) { }
+	private void DeserializeManifest() { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator LoadAssets(ulong workshopId, string directory, AssetBundle bundle) { }
+	public IEnumerator LoadIcon(ulong workshopId, string directory, AssetBundle bundle) { }
 
-public void UnloadAssets() { }
+	[IteratorStateMachineAttribute] 
+	public IEnumerator LoadAssets(ulong workshopId, string directory, AssetBundle bundle) { }
 
-private void UpdateTextureMetadata(Texture2D texture, string textureName, bool anisoFiltering, bool trilinearFiltering) { }
+	public void UnloadAssets() { }
 
-internal void Apply(GameObject gameObject) { }
+	private void UpdateTextureMetadata(Texture2D texture, string textureName, bool anisoFiltering, bool trilinearFiltering) { }
 
-public int GetSizeInBytes() { }
+	internal void Apply(GameObject gameObject) { }
 
-	[CompilerGeneratedAttribute] 
-public bool get_AssetsRequested() { }
-
-	[CompilerGeneratedAttribute] 
-public void set_AssetsRequested(bool value) { }
+	public int GetSizeInBytes() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IconRequested() { }
+	public bool get_AssetsRequested() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IconRequested(bool value) { }
+	public void set_AssetsRequested(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_AssetsLoaded() { }
+	public bool get_IconRequested() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_AssetsLoaded(bool value) { }
+	public void set_IconRequested(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IconLoaded() { }
+	public bool get_AssetsLoaded() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_IconLoaded(bool value) { }
+	internal void set_AssetsLoaded(bool value) { }
 
-public static void Apply(GameObject obj, Skinnable skinnable, Material[] Materials) { }
+	[CompilerGeneratedAttribute] 
+	public bool get_IconLoaded() { }
 
-internal void ReadDefaults() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_IconLoaded(bool value) { }
 
-public void .ctor() { }
+	public static void Apply(GameObject obj, Skinnable skinnable, Material[] Materials) { }
+
+	internal void ReadDefaults() { }
+
+	public void .ctor() { }
 
 }
 
@@ -92,44 +92,44 @@ public class Skin.Manifest // TypeDefIndex: 7729
 	[CompilerGeneratedAttribute] 
 	private Skin.Manifest.Group[] <Groups>k__BackingField; 
 
-public int Version { get; set; }
-public string ItemType { get; set; }
-public ulong AuthorId { get; set; }
-public DateTime PublishDate { get; set; }
-public Skin.Manifest.Group[] Groups { get; set; }
+	public int Version { get; set; }
+	public string ItemType { get; set; }
+	public ulong AuthorId { get; set; }
+	public DateTime PublishDate { get; set; }
+	public Skin.Manifest.Group[] Groups { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public int get_Version() { }
+	public int get_Version() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Version(int value) { }
+	public void set_Version(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ItemType() { }
+	public string get_ItemType() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ItemType(string value) { }
+	public void set_ItemType(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public ulong get_AuthorId() { }
+	public ulong get_AuthorId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_AuthorId(ulong value) { }
+	public void set_AuthorId(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-public DateTime get_PublishDate() { }
+	public DateTime get_PublishDate() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_PublishDate(DateTime value) { }
+	public void set_PublishDate(DateTime value) { }
 
 	[CompilerGeneratedAttribute] 
-public Skin.Manifest.Group[] get_Groups() { }
+	public Skin.Manifest.Group[] get_Groups() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Groups(Skin.Manifest.Group[] value) { }
+	public void set_Groups(Skin.Manifest.Group[] value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -142,30 +142,30 @@ public class Skin.Manifest.Group // TypeDefIndex: 7730
 	[CompilerGeneratedAttribute] 
 	private Dictionary<string, Skin.Manifest.ColorEntry> <Colors>k__BackingField; 
 
-public Dictionary<string, string> Textures { get; set; }
-public Dictionary<string, float> Floats { get; set; }
-public Dictionary<string, Skin.Manifest.ColorEntry> Colors { get; set; }
+	public Dictionary<string, string> Textures { get; set; }
+	public Dictionary<string, float> Floats { get; set; }
+	public Dictionary<string, Skin.Manifest.ColorEntry> Colors { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Dictionary<string, string> get_Textures() { }
+	public Dictionary<string, string> get_Textures() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Textures(Dictionary<string, string> value) { }
+	public void set_Textures(Dictionary<string, string> value) { }
 
 	[CompilerGeneratedAttribute] 
-public Dictionary<string, float> get_Floats() { }
+	public Dictionary<string, float> get_Floats() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Floats(Dictionary<string, float> value) { }
+	public void set_Floats(Dictionary<string, float> value) { }
 
 	[CompilerGeneratedAttribute] 
-public Dictionary<string, Skin.Manifest.ColorEntry> get_Colors() { }
+	public Dictionary<string, Skin.Manifest.ColorEntry> get_Colors() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Colors(Dictionary<string, Skin.Manifest.ColorEntry> value) { }
+	public void set_Colors(Dictionary<string, Skin.Manifest.ColorEntry> value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -178,30 +178,30 @@ public class Skin.Manifest.ColorEntry // TypeDefIndex: 7731
 	[CompilerGeneratedAttribute] 
 	private float <b>k__BackingField; 
 
-public float r { get; set; }
-public float g { get; set; }
-public float b { get; set; }
+	public float r { get; set; }
+	public float g { get; set; }
+	public float b { get; set; }
 
 
-public void .ctor(Color c) { }
-
-	[CompilerGeneratedAttribute] 
-public float get_r() { }
+	public void .ctor(Color c) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_r(float value) { }
+	public float get_r() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_g() { }
+	public void set_r(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_g(float value) { }
+	public float get_g() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_b() { }
+	public void set_g(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_b(float value) { }
+	public float get_b() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_b(float value) { }
 
 }
 
@@ -212,9 +212,9 @@ private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7732
 	public Skin <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <LoadIcon>g__FindURL|0() { }
+	internal void <LoadIcon>g__FindURL|0() { }
 
 }
 
@@ -231,26 +231,26 @@ private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, ID
 	private UnityWebRequest <request>5__3; 
 	private AsyncTextureLoad <request>5__4; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -273,28 +273,28 @@ private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, 
 	private AssetBundleRequest <textureRequest>5__10; 
 	private AsyncTextureLoad <request>5__11; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private void <>m__Finally1() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -3,25 +3,25 @@ public struct ScriptableRenderContext : IEquatable<ScriptableRenderContext> // T
 	private IntPtr m_Ptr; 
 
 
-private int GetNumberOfCameras_Internal() { }
+	private int GetNumberOfCameras_Internal() { }
 
-private Camera GetCamera_Internal(int index) { }
+	private Camera GetCamera_Internal(int index) { }
 
-internal void .ctor(IntPtr ptr) { }
+	internal void .ctor(IntPtr ptr) { }
 
-internal int GetNumberOfCameras() { }
+	internal int GetNumberOfCameras() { }
 
-internal Camera GetCamera(int index) { }
+	internal Camera GetCamera(int index) { }
 
-public bool Equals(ScriptableRenderContext other) { }
+	public bool Equals(ScriptableRenderContext other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private static int GetNumberOfCameras_Internal_Injected(ref ScriptableRenderContext _unity_self) { }
+	private static int GetNumberOfCameras_Internal_Injected(ref ScriptableRenderContext _unity_self) { }
 
-private static Camera GetCamera_Internal_Injected(ref ScriptableRenderContext _unity_self, int index) { }
+	private static Camera GetCamera_Internal_Injected(ref ScriptableRenderContext _unity_self, int index) { }
 
 }
 

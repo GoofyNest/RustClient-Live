@@ -4,11 +4,11 @@ public class SirenLight : IOEntity // TypeDefIndex: 8715
 	public float speed; 
 
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

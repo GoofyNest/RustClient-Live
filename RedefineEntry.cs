@@ -4,7 +4,7 @@ internal class RedefineEntry // TypeDefIndex: 2267
 	internal XmlSchema schemaToUpdate; 
 
 
-public void .ctor(XmlSchemaRedefine external, XmlSchema schema) { }
+	public void .ctor(XmlSchemaRedefine external, XmlSchema schema) { }
 
 }
 

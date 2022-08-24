@@ -17,15 +17,15 @@ public class TechTreeLine : TechTreeWidget // TypeDefIndex: 10915
 	private bool targetLeft; 
 
 
-public override void SetLocked(bool wantsLocked) { }
+	public override void SetLocked(bool wantsLocked) { }
 
-public void SetTargetAbove(bool isTargetAbove) { }
+	public void SetTargetAbove(bool isTargetAbove) { }
 
-public void SetTargetToLeft(bool isLeft) { }
+	public void SetTargetToLeft(bool isLeft) { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,17 +5,17 @@ public class HurtPunch : MonoBehaviour // TypeDefIndex: 9131
 	private static float punchHurtTime; 
 
 
-public static void Punch(float damageScale = 1) { }
+	public static void Punch(float damageScale = 1) { }
 
-private float GetPunchHurtScale() { }
+	private float GetPunchHurtScale() { }
 
-public void Awake() { }
+	public void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

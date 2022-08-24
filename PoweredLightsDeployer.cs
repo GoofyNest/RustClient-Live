@@ -8,24 +8,24 @@ public class PoweredLightsDeployer : HeldEntity // TypeDefIndex: 8625
 	public float lengthPerAmount; 
 	private float nextClickTime; 
 
-public AdvancedChristmasLights active { get; set; }
+	public AdvancedChristmasLights active { get; set; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override bool NeedsCrosshair() { }
+	public override bool NeedsCrosshair() { }
 
-public static bool CanPlayerUse(BasePlayer player) { }
+	public static bool CanPlayerUse(BasePlayer player) { }
 
-public AdvancedChristmasLights get_active() { }
+	public AdvancedChristmasLights get_active() { }
 
-public void set_active(AdvancedChristmasLights value) { }
+	public void set_active(AdvancedChristmasLights value) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

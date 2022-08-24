@@ -4,7 +4,7 @@ public struct ERCell // TypeDefIndex: 7187
 	public int y; 
 
 
-public void .ctor(int _x, int _y) { }
+	public void .ctor(int _x, int _y) { }
 
 }
 

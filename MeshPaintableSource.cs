@@ -19,21 +19,21 @@ public class MeshPaintableSource : MonoBehaviour, IClientComponent // TypeDefInd
 	private static MaterialPropertyBlock block; 
 
 
-public void Init() { }
+	public void Init() { }
 
-public void Free() { }
+	public void Free() { }
 
-public virtual void UpdateMaterials(MaterialPropertyBlock block, Texture2D textureOverride, bool forEditing = False, bool isSelected = False) { }
+	public virtual void UpdateMaterials(MaterialPropertyBlock block, Texture2D textureOverride, bool forEditing = False, bool isSelected = False) { }
 
-public virtual Color32[] UpdateFrom(Texture2D input) { }
+	public virtual Color32[] UpdateFrom(Texture2D input) { }
 
-public void Load(byte[] data) { }
+	public void Load(byte[] data) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

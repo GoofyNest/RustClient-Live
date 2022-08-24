@@ -10,7 +10,7 @@ public static class Registry // TypeDefIndex: 101
 	public static readonly RegistryKey Users; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

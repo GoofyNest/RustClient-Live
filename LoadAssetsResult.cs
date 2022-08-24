@@ -4,34 +4,34 @@ public abstract class LoadAssetsResult : CustomYieldInstruction // TypeDefIndex:
 	private int <CompletedCount>k__BackingField; 
 	public LoadAssetsResult.AssetLoaded OnAssetLoaded; 
 
-public abstract int TotalCount { get; }
-public virtual int CompletedCount { get; set; }
+	public abstract int TotalCount { get; }
+	public virtual int CompletedCount { get; set; }
 
 
-public abstract int get_TotalCount();
-
-	[CompilerGeneratedAttribute] 
-public virtual int get_CompletedCount() { }
+	public abstract int get_TotalCount();
 
 	[CompilerGeneratedAttribute] 
-protected virtual void set_CompletedCount(int value) { }
+	public virtual int get_CompletedCount() { }
 
-public abstract Dictionary<string, Object> GetResult();
+	[CompilerGeneratedAttribute] 
+	protected virtual void set_CompletedCount(int value) { }
 
-protected void .ctor() { }
+	public abstract Dictionary<string, Object> GetResult();
+
+	protected void .ctor() { }
 
 }
 
 public sealed class LoadAssetsResult.AssetLoaded : MulticastDelegate // TypeDefIndex: 6662
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(string path, Object obj) { }
+	public virtual void Invoke(string path, Object obj) { }
 
-public virtual IAsyncResult BeginInvoke(string path, Object obj, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(string path, Object obj, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

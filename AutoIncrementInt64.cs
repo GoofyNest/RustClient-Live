@@ -4,35 +4,35 @@ internal sealed class AutoIncrementInt64 : AutoIncrementValue // TypeDefIndex: 4
 	private long _seed; 
 	private long _step; 
 
-internal override object Current { get; set; }
-internal override Type DataType { get; }
-internal override long Seed { get; set; }
-internal override long Step { get; set; }
+	internal override object Current { get; set; }
+	internal override Type DataType { get; }
+	internal override long Seed { get; set; }
+	internal override long Step { get; set; }
 
 
-internal override object get_Current() { }
+	internal override object get_Current() { }
 
-internal override void set_Current(object value) { }
+	internal override void set_Current(object value) { }
 
-internal override Type get_DataType() { }
+	internal override Type get_DataType() { }
 
-internal override long get_Seed() { }
+	internal override long get_Seed() { }
 
-internal override void set_Seed(long value) { }
+	internal override void set_Seed(long value) { }
 
-internal override long get_Step() { }
+	internal override long get_Step() { }
 
-internal override void set_Step(long value) { }
+	internal override void set_Step(long value) { }
 
-internal override void MoveAfter() { }
+	internal override void MoveAfter() { }
 
-internal override void SetCurrent(object value, IFormatProvider formatProvider) { }
+	internal override void SetCurrent(object value, IFormatProvider formatProvider) { }
 
-internal override void SetCurrentAndIncrement(object value) { }
+	internal override void SetCurrentAndIncrement(object value) { }
 
-private bool BoundaryCheck(BigInteger value) { }
+	private bool BoundaryCheck(BigInteger value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

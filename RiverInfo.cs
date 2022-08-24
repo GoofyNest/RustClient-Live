@@ -1,9 +1,9 @@
 public class RiverInfo : MonoBehaviour // TypeDefIndex: 9987
 {
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

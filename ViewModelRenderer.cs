@@ -7,31 +7,31 @@ public class ViewModelRenderer : MonoBehaviour // TypeDefIndex: 11449
 	private Renderer viewModelRenderer; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void AddDrawEvents() { }
+	public void AddDrawEvents() { }
 
-public void RemoveDrawEvents() { }
+	public void RemoveDrawEvents() { }
 
 	[ContextMenu] 
 	[ButtonAttribute] 
-public void CacheReferences() { }
+	public void CacheReferences() { }
 
-private void CacheTextures() { }
+	private void CacheTextures() { }
 
-private void DisableTextureStreaming() { }
+	private void DisableTextureStreaming() { }
 
-private void EnableTextureStreaming() { }
+	private void EnableTextureStreaming() { }
 
-public static int FindPassWithLightMode(Material material, string lightMode) { }
+	public static int FindPassWithLightMode(Material material, string lightMode) { }
 
-public static int FindPassWithRenderType(Material material, string renderType) { }
+	public static int FindPassWithRenderType(Material material, string renderType) { }
 
-public static RenderType CategorizeMaterial(Material material, out int pass, out int grabPass) { }
+	public static RenderType CategorizeMaterial(Material material, out int pass, out int grabPass) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -42,13 +42,13 @@ private sealed class ViewModelRenderer.<>c // TypeDefIndex: 11450
 	public static Comparison<ViewModelDrawEvent> <>9__9_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <CacheReferences>b__9_0(ViewModelDrawEvent a, ViewModelDrawEvent b) { }
+	internal int <CacheReferences>b__9_0(ViewModelDrawEvent a, ViewModelDrawEvent b) { }
 
-internal int <CacheReferences>b__9_1(ViewModelDrawEvent a, ViewModelDrawEvent b) { }
+	internal int <CacheReferences>b__9_1(ViewModelDrawEvent a, ViewModelDrawEvent b) { }
 
 }
 

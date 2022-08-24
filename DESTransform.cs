@@ -15,23 +15,23 @@ internal class DESTransform : SymmetricTransform // TypeDefIndex: 1004
 	internal static readonly uint[] fpTab; 
 
 
-internal void .ctor(SymmetricAlgorithm symmAlgo, bool encryption, byte[] key, byte[] iv) { }
+	internal void .ctor(SymmetricAlgorithm symmAlgo, bool encryption, byte[] key, byte[] iv) { }
 
-private uint CipherFunct(uint r, int n) { }
+	private uint CipherFunct(uint r, int n) { }
 
-internal static void Permutation(byte[] input, byte[] output, uint[] permTab, bool preSwap) { }
+	internal static void Permutation(byte[] input, byte[] output, uint[] permTab, bool preSwap) { }
 
-private static void BSwap(byte[] byteBuff) { }
+	private static void BSwap(byte[] byteBuff) { }
 
-internal void SetKey(byte[] key) { }
+	internal void SetKey(byte[] key) { }
 
-public void ProcessBlock(byte[] input, byte[] output) { }
+	public void ProcessBlock(byte[] input, byte[] output) { }
 
-protected override void ECB(byte[] input, byte[] output) { }
+	protected override void ECB(byte[] input, byte[] output) { }
 
-internal static byte[] GetStrongKey() { }
+	internal static byte[] GetStrongKey() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

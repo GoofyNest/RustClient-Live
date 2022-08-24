@@ -18,42 +18,42 @@ public class RCBookmarkEntry : MonoBehaviour // TypeDefIndex: 8686
 	private bool <isControlling>k__BackingField; 
 	public EventTrigger eventTrigger; 
 
-public string identifier { get; set; }
-public uint netid { get; set; }
-public bool isControlling { get; set; }
+	public string identifier { get; set; }
+	public uint netid { get; set; }
+	public bool isControlling { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_identifier() { }
+	public string get_identifier() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_identifier(string value) { }
+	private void set_identifier(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_netid() { }
+	public uint get_netid() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_netid(uint value) { }
+	private void set_netid(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_isControlling() { }
+	public bool get_isControlling() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isControlling(bool value) { }
+	private void set_isControlling(bool value) { }
 
-public void CursorEnter() { }
+	public void CursorEnter() { }
 
-public void CursorExit() { }
+	public void CursorExit() { }
 
-public void Setup(string newidentifier, uint newnetid, ComputerMenu ownerMenu, string overrideText = "") { }
+	public void Setup(string newidentifier, uint newnetid, ComputerMenu ownerMenu, string overrideText = "") { }
 
-public void DeletePressed() { }
+	public void DeletePressed() { }
 
-public void OnPressed() { }
+	public void OnPressed() { }
 
-public void DisconnectedPressed() { }
+	public void DisconnectedPressed() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

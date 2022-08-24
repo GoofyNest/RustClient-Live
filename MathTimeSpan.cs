@@ -10,43 +10,43 @@ public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7491
 	[CompilerGeneratedAttribute] 
 	private readonly TimeSpanMode <Mode>k__BackingField; 
 
-public ITimeSpan TimeSpan1 { get; }
-public ITimeSpan TimeSpan2 { get; }
-public MathOperation Operation { get; }
-public TimeSpanMode Mode { get; }
+	public ITimeSpan TimeSpan1 { get; }
+	public ITimeSpan TimeSpan2 { get; }
+	public MathOperation Operation { get; }
+	public TimeSpanMode Mode { get; }
 
 
-internal void .ctor(ITimeSpan timeSpan1, ITimeSpan timeSpan2, MathOperation operation, TimeSpanMode mode) { }
-
-	[CompilerGeneratedAttribute] 
-public ITimeSpan get_TimeSpan1() { }
+	internal void .ctor(ITimeSpan timeSpan1, ITimeSpan timeSpan2, MathOperation operation, TimeSpanMode mode) { }
 
 	[CompilerGeneratedAttribute] 
-public ITimeSpan get_TimeSpan2() { }
+	public ITimeSpan get_TimeSpan1() { }
 
 	[CompilerGeneratedAttribute] 
-public MathOperation get_Operation() { }
+	public ITimeSpan get_TimeSpan2() { }
 
 	[CompilerGeneratedAttribute] 
-public TimeSpanMode get_Mode() { }
+	public MathOperation get_Operation() { }
 
-public static bool op_Equality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
+	[CompilerGeneratedAttribute] 
+	public TimeSpanMode get_Mode() { }
 
-public static bool op_Inequality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
+	public static bool op_Equality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
 
-public override string ToString() { }
+	public static bool op_Inequality(MathTimeSpan timeSpan1, MathTimeSpan timeSpan2) { }
 
-public override bool Equals(object obj) { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
+	public override int GetHashCode() { }
 
-public ITimeSpan Clone() { }
+	public ITimeSpan Subtract(ITimeSpan timeSpan, TimeSpanMode mode) { }
 
-public int CompareTo(object other) { }
+	public ITimeSpan Clone() { }
 
-private static void .cctor() { }
+	public int CompareTo(object other) { }
+
+	private static void .cctor() { }
 
 }
 

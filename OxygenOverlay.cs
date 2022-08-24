@@ -11,13 +11,13 @@ public class OxygenOverlay : MonoBehaviour // TypeDefIndex: 9132
 	private float smoothVelocity; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private float GetIntensity() { }
+	private float GetIntensity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

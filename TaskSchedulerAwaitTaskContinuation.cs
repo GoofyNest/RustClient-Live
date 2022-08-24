@@ -3,9 +3,9 @@ internal sealed class TaskSchedulerAwaitTaskContinuation : AwaitTaskContinuation
 	private readonly TaskScheduler m_scheduler; 
 
 
-internal void .ctor(TaskScheduler scheduler, Action action, bool flowExecutionContext, ref StackCrawlMark stackMark) { }
+	internal void .ctor(TaskScheduler scheduler, Action action, bool flowExecutionContext, ref StackCrawlMark stackMark) { }
 
-internal sealed override void Run(Task ignored, bool canInlineContinuationTask) { }
+	internal sealed override void Run(Task ignored, bool canInlineContinuationTask) { }
 
 }
 
@@ -15,11 +15,11 @@ private sealed class TaskSchedulerAwaitTaskContinuation.<>c // TypeDefIndex: 880
 	public static Action<object> <>9__2_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Run>b__2_0(object state) { }
+	internal void <Run>b__2_0(object state) { }
 
 }
 

@@ -11,25 +11,25 @@ public class FocusChangeDirection // TypeDefIndex: 4587
 	private static readonly FocusChangeDirection <lastValue>k__BackingField; 
 	private readonly int m_Value; 
 
-public static FocusChangeDirection unspecified { get; }
-public static FocusChangeDirection none { get; }
-protected static FocusChangeDirection lastValue { get; }
+	public static FocusChangeDirection unspecified { get; }
+	public static FocusChangeDirection none { get; }
+	protected static FocusChangeDirection lastValue { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static FocusChangeDirection get_unspecified() { }
+	public static FocusChangeDirection get_unspecified() { }
 
 	[CompilerGeneratedAttribute] 
-public static FocusChangeDirection get_none() { }
+	public static FocusChangeDirection get_none() { }
 
 	[CompilerGeneratedAttribute] 
-protected static FocusChangeDirection get_lastValue() { }
+	protected static FocusChangeDirection get_lastValue() { }
 
-protected void .ctor(int value) { }
+	protected void .ctor(int value) { }
 
-public static int op_Implicit(FocusChangeDirection fcd) { }
+	public static int op_Implicit(FocusChangeDirection fcd) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

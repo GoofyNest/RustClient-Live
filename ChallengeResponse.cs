@@ -7,37 +7,37 @@ public class ChallengeResponse : IDisposable // TypeDefIndex: 1725
 	private byte[] _lmpwd; 
 	private byte[] _ntpwd; 
 
-public string Password { set; }
-public byte[] Challenge { set; }
-public byte[] LM { get; }
-public byte[] NT { get; }
+	public string Password { set; }
+	public byte[] Challenge { set; }
+	public byte[] LM { get; }
+	public byte[] NT { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string password, byte[] challenge) { }
+	public void .ctor(string password, byte[] challenge) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void set_Password(string value) { }
+	public void set_Password(string value) { }
 
-public void set_Challenge(byte[] value) { }
+	public void set_Challenge(byte[] value) { }
 
-public byte[] get_LM() { }
+	public byte[] get_LM() { }
 
-public byte[] get_NT() { }
+	public byte[] get_NT() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-private void Dispose(bool disposing) { }
+	private void Dispose(bool disposing) { }
 
-private byte[] GetResponse(byte[] pwd) { }
+	private byte[] GetResponse(byte[] pwd) { }
 
-private byte[] PrepareDESKey(byte[] key56bits, int position) { }
+	private byte[] PrepareDESKey(byte[] key56bits, int position) { }
 
-private byte[] PasswordToKey(string password, int position) { }
+	private byte[] PasswordToKey(string password, int position) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

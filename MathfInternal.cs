@@ -7,7 +7,7 @@ public struct MathfInternal
 	public static bool IsFlushToZeroEnabled; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

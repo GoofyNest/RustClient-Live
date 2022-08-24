@@ -81,17 +81,17 @@ public class ERMarkerExt : ScriptableObject // TypeDefIndex: 7262
 	public List<Vector3> customPoints; 
 
 
-public void Init(Vector3 pos, ERModularRoad scr, int element) { }
+	public void Init(Vector3 pos, ERModularRoad scr, int element) { }
 
-public static ERMarkerExt CreateInstance(Vector3 pos, ERModularRoad scr, int element) { }
+	public static ERMarkerExt CreateInstance(Vector3 pos, ERModularRoad scr, int element) { }
 
-public void SetControlType(ERMarkerControlType type) { }
+	public void SetControlType(ERMarkerControlType type) { }
 
-public string[] SoNames() { }
+	public string[] SoNames() { }
 
-public static void OOQQCOQDQC(ERMarkerExt source, ERMarkerExt target, string name) { }
+	public static void OOQQCOQDQC(ERMarkerExt source, ERMarkerExt target, string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,7 +7,7 @@ internal struct GlyphMarshallingStruct // TypeDefIndex: 4122
 	public int atlasIndex; 
 
 
-public void .ctor(Glyph glyph) { }
+	public void .ctor(Glyph glyph) { }
 
 }
 

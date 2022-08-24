@@ -11,7 +11,7 @@ public class LevelInfo : SingletonComponent<LevelInfo> // TypeDefIndex: 9961
 	public int version; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

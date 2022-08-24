@@ -4,11 +4,11 @@ internal static class StringBuilderCache // TypeDefIndex: 464
 	private static StringBuilder CachedInstance; 
 
 
-public static StringBuilder Acquire(int capacity = 16) { }
+	public static StringBuilder Acquire(int capacity = 16) { }
 
-public static void Release(StringBuilder sb) { }
+	public static void Release(StringBuilder sb) { }
 
-public static string GetStringAndRelease(StringBuilder sb) { }
+	public static string GetStringAndRelease(StringBuilder sb) { }
 
 }
 

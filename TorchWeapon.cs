@@ -7,21 +7,21 @@ public class TorchWeapon : BaseMelee // TypeDefIndex: 8656
 	private TimeUntil blockVmUpdates; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void GetAttackStats(HitInfo info) { }
+	public override void GetAttackStats(HitInfo info) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-private void ToggleOn() { }
+	private void ToggleOn() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public override AnimatorOverrideController GetHoldAnimations() { }
+	public override AnimatorOverrideController GetHoldAnimations() { }
 
-public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

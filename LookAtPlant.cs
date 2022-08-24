@@ -18,15 +18,15 @@ public class LookAtPlant : MonoBehaviour // TypeDefIndex: 11079
 	public InfoBar Overall; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public bool UpdateLookingAtPlant() { }
+	public bool UpdateLookingAtPlant() { }
 
-private void SetGeneticsInfo(GrowableEntity growable) { }
+	private void SetGeneticsInfo(GrowableEntity growable) { }
 
-private void SetAgeAndStage(GrowableEntity growable) { }
+	private void SetAgeAndStage(GrowableEntity growable) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

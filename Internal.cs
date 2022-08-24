@@ -27,17 +27,17 @@ internal static class Internal_SubsystemInstances // TypeDefIndex: 3942
 
 
 	[RequiredByNativeCodeAttribute] 
-internal static void Internal_InitializeManagedInstance(IntPtr ptr, IntegratedSubsystem inst) { }
+	internal static void Internal_InitializeManagedInstance(IntPtr ptr, IntegratedSubsystem inst) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void Internal_ClearManagedInstances() { }
+	internal static void Internal_ClearManagedInstances() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void Internal_RemoveInstanceByPtr(IntPtr ptr) { }
+	internal static void Internal_RemoveInstanceByPtr(IntPtr ptr) { }
 
-internal static IntegratedSubsystem Internal_GetInstanceByPtr(IntPtr ptr) { }
+	internal static IntegratedSubsystem Internal_GetInstanceByPtr(IntPtr ptr) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -48,15 +48,15 @@ internal static class Internal_SubsystemDescriptors // TypeDefIndex: 3943
 
 
 	[RequiredByNativeCodeAttribute] 
-internal static bool Internal_AddDescriptor(SubsystemDescriptor descriptor) { }
+	internal static bool Internal_AddDescriptor(SubsystemDescriptor descriptor) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void Internal_InitializeManagedDescriptor(IntPtr ptr, ISubsystemDescriptorImpl desc) { }
+	internal static void Internal_InitializeManagedDescriptor(IntPtr ptr, ISubsystemDescriptorImpl desc) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void Internal_ClearManagedDescriptors() { }
+	internal static void Internal_ClearManagedDescriptors() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

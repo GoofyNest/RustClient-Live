@@ -5,16 +5,16 @@ internal class MatchEnumerator : IEnumerator // TypeDefIndex: 2623
 	internal int _curindex; 
 	internal bool _done; 
 
-public object Current { get; }
+	public object Current { get; }
 
 
-internal void .ctor(MatchCollection matchcoll) { }
+	internal void .ctor(MatchCollection matchcoll) { }
 
-public bool MoveNext() { }
+	public bool MoveNext() { }
 
-public object get_Current() { }
+	public object get_Current() { }
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 

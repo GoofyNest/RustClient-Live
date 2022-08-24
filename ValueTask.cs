@@ -7,29 +7,29 @@ public struct ValueTask : IEquatable<ValueTask> // TypeDefIndex: 7085
 	internal readonly short _token; 
 	internal readonly bool _continueOnCapturedContext; 
 
-internal static Task CompletedTask { get; }
-public bool IsCompleted { get; }
+	internal static Task CompletedTask { get; }
+	public bool IsCompleted { get; }
 
 
 	[CompilerGeneratedAttribute] 
-internal static Task get_CompletedTask() { }
+	internal static Task get_CompletedTask() { }
 
-public void .ctor(Task task) { }
+	public void .ctor(Task task) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(ValueTask other) { }
+	public bool Equals(ValueTask other) { }
 
-public bool get_IsCompleted() { }
+	public bool get_IsCompleted() { }
 
 	[StackTraceHiddenAttribute] 
-internal void ThrowIfCompletedUnsuccessfully() { }
+	internal void ThrowIfCompletedUnsuccessfully() { }
 
-public ValueTaskAwaiter GetAwaiter() { }
+	public ValueTaskAwaiter GetAwaiter() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

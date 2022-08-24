@@ -15,27 +15,27 @@ public class VendingMachineScreen : MonoBehaviour // TypeDefIndex: 8738
 	public float nextImageTime; 
 	public int currentImageIndex; 
 	private float imageCycleTime; 
-private const float maxDistSq = 225;
+	private const float maxDistSq = 225;
 
 
-public void UpdateLOD() { }
+	public void UpdateLOD() { }
 
-public void UpdateLightAnimation() { }
+	public void UpdateLightAnimation() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum VendingMachineScreen.vmScreenState // TypeDefIndex: 8739
 {
 	public int value__; 
-public const VendingMachineScreen.vmScreenState ItemScroll = 0;
-public const VendingMachineScreen.vmScreenState Vending = 1;
-public const VendingMachineScreen.vmScreenState Message = 2;
-public const VendingMachineScreen.vmScreenState ShopName = 3;
-public const VendingMachineScreen.vmScreenState OutOfStock = 4;
+	public const VendingMachineScreen.vmScreenState ItemScroll = 0;
+	public const VendingMachineScreen.vmScreenState Vending = 1;
+	public const VendingMachineScreen.vmScreenState Message = 2;
+	public const VendingMachineScreen.vmScreenState ShopName = 3;
+	public const VendingMachineScreen.vmScreenState OutOfStock = 4;
 
 }
 

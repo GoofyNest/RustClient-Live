@@ -5,37 +5,37 @@ public class ProductInfoHeaderValue : ICloneable // TypeDefIndex: 5802
 	[CompilerGeneratedAttribute] 
 	private ProductHeaderValue <Product>k__BackingField; 
 
-public string Comment { get; set; }
-public ProductHeaderValue Product { get; set; }
+	public string Comment { get; set; }
+	public ProductHeaderValue Product { get; set; }
 
 
-public void .ctor(ProductHeaderValue product) { }
+	public void .ctor(ProductHeaderValue product) { }
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Comment() { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Comment(string value) { }
+	public string get_Comment() { }
 
 	[CompilerGeneratedAttribute] 
-public ProductHeaderValue get_Product() { }
+	private void set_Comment(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Product(ProductHeaderValue value) { }
+	public ProductHeaderValue get_Product() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Product(ProductHeaderValue value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-internal static bool TryParse(string input, int minimalCount, out List<ProductInfoHeaderValue> result) { }
+	public override int GetHashCode() { }
 
-private static bool TryParseElement(Lexer lexer, out ProductInfoHeaderValue parsedValue) { }
+	internal static bool TryParse(string input, int minimalCount, out List<ProductInfoHeaderValue> result) { }
 
-public override string ToString() { }
+	private static bool TryParseElement(Lexer lexer, out ProductInfoHeaderValue parsedValue) { }
+
+	public override string ToString() { }
 
 }
 

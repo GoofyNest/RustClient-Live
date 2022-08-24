@@ -7,13 +7,13 @@ public class WorldSplineSharedData : ScriptableObject // TypeDefIndex: 11411
 
 
 	[RuntimeInitializeOnLoadMethodAttribute] 
-private static void Init() { }
+	private static void Init() { }
 
-public static bool TryGetDataFor(WorldSpline worldSpline, out WorldSplineData data) { }
+	public static bool TryGetDataFor(WorldSpline worldSpline, out WorldSplineData data) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

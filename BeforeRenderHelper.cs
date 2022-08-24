@@ -3,9 +3,9 @@ internal static class BeforeRenderHelper // TypeDefIndex: 3381
 	private static List<BeforeRenderHelper.OrderBlock> s_OrderBlocks; 
 
 
-public static void Invoke() { }
+	public static void Invoke() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

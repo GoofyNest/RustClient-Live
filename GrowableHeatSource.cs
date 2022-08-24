@@ -3,7 +3,7 @@ public class GrowableHeatSource : EntityComponent<BaseEntity>, IServerComponent 
 	public float heatAmount; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

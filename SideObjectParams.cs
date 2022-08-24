@@ -5,7 +5,7 @@ public class SideObjectParams // TypeDefIndex: 7241
 	public bool[] soSplineActive; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

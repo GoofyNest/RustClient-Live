@@ -1,16 +1,16 @@
 public class GenerateCliffTopology : ProceduralComponent // TypeDefIndex: 10449
 {
 	public bool KeepExisting; 
-private const int filter = 8389632;
+	private const int filter = 8389632;
 
 
-public static void Process(int x, int z) { }
+	public static void Process(int x, int z) { }
 
-private static void Process(int x, int z, bool keepExisting) { }
+	private static void Process(int x, int z, bool keepExisting) { }
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -21,11 +21,11 @@ private sealed class GenerateCliffTopology.<>c__DisplayClass4_0 // TypeDefIndex:
 	public int[] map; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Process>b__0(int z) { }
+	internal void <Process>b__0(int z) { }
 
-internal void <Process>b__1(int x, int y) { }
+	internal void <Process>b__1(int x, int y) { }
 
 }
 

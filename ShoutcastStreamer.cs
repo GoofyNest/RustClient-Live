@@ -17,71 +17,71 @@ public class ShoutcastStreamer : MonoBehaviour, IClientComponent // TypeDefIndex
 	private int sampleRate; 
 	[CompilerGeneratedAttribute] 
 	private uint <CurrentReadIndex>k__BackingField; 
-private const uint BufferStartCutOff = 81920;
+	private const uint BufferStartCutOff = 81920;
 	private bool canUpdate; 
 	private bool wantsShutdown; 
 	private RadioPlaylist currentPlaylist; 
 	private TimeUntil nextStatLog; 
-private const float StatLogInterval = 60;
+	private const float StatLogInterval = 60;
 	private bool waitAudio; 
 	private float waitUntilBuffer; 
 
 	[ClientVar] 
-public static bool AllowInternetStreams { get; set; }
-public static int ActiveStreamCount { get; }
-public uint CurrentReadIndex { get; set; }
-public bool IsConnected { get; }
-public bool IsPlayingBuiltinAudio { get; }
-private uint BufferedData { get; }
-private float BufferedPercentage { get; }
+	public static bool AllowInternetStreams { get; set; }
+	public static int ActiveStreamCount { get; }
+	public uint CurrentReadIndex { get; set; }
+	public bool IsConnected { get; }
+	public bool IsPlayingBuiltinAudio { get; }
+	private uint BufferedData { get; }
+	private float BufferedPercentage { get; }
 
 
-public static bool get_AllowInternetStreams() { }
+	public static bool get_AllowInternetStreams() { }
 
-public static void set_AllowInternetStreams(bool value) { }
+	public static void set_AllowInternetStreams(bool value) { }
 
-public static int get_ActiveStreamCount() { }
-
-	[CompilerGeneratedAttribute] 
-public uint get_CurrentReadIndex() { }
+	public static int get_ActiveStreamCount() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_CurrentReadIndex(uint value) { }
+	public uint get_CurrentReadIndex() { }
 
-public bool get_IsConnected() { }
+	[CompilerGeneratedAttribute] 
+	public void set_CurrentReadIndex(uint value) { }
 
-public bool get_IsPlayingBuiltinAudio() { }
+	public bool get_IsConnected() { }
 
-public void Connect(string host, bool localPlayer = False) { }
+	public bool get_IsPlayingBuiltinAudio() { }
 
-private RadioPlaylist GetPlaylistforUrl(string url) { }
+	public void Connect(string host, bool localPlayer = False) { }
 
-private void PlayPlaylist() { }
+	private RadioPlaylist GetPlaylistforUrl(string url) { }
 
-public void OnStreamsAllowedToggled(bool allowed) { }
+	private void PlayPlaylist() { }
 
-public void Disconnect(bool playSafeAfterDisconnect = False) { }
+	public void OnStreamsAllowedToggled(bool allowed) { }
 
-private void OnAudioRead(float[] data) { }
+	public void Disconnect(bool playSafeAfterDisconnect = False) { }
 
-public static int ProcessStreamData(float[] data, float[] floatSamples, ref uint readIndex, uint writeIndex) { }
+	private void OnAudioRead(float[] data) { }
 
-protected void Update() { }
+	public static int ProcessStreamData(float[] data, float[] floatSamples, ref uint readIndex, uint writeIndex) { }
 
-public void ResetSample(uint read) { }
+	protected void Update() { }
 
-private uint get_BufferedData() { }
+	public void ResetSample(uint read) { }
 
-private float get_BufferedPercentage() { }
+	private uint get_BufferedData() { }
+
+	private float get_BufferedPercentage() { }
 
 	[AsyncStateMachineAttribute] 
-private void ReadData() { }
+	private void ReadData() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -93,10 +93,10 @@ private struct ShoutcastStreamer.<ReadData>d__46 : IAsyncStateMachine // TypeDef
 	private TaskAwaiter<bool> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

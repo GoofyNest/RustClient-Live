@@ -10,13 +10,13 @@ public class FireBomb : MonoBehaviour, IClientComponent // TypeDefIndex: 9346
 	private float nextEmitTime; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void CreateParticleEffect() { }
+	private void CreateParticleEffect() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

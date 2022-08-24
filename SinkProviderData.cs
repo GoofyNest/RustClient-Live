@@ -4,15 +4,15 @@ public class SinkProviderData // TypeDefIndex: 1201
 	private ArrayList children; 
 	private Hashtable properties; 
 
-public IList Children { get; }
-public IDictionary Properties { get; }
+	public IList Children { get; }
+	public IDictionary Properties { get; }
 
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
-public IList get_Children() { }
+	public IList get_Children() { }
 
-public IDictionary get_Properties() { }
+	public IDictionary get_Properties() { }
 
 }
 

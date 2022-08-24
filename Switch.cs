@@ -8,13 +8,13 @@ public abstract class Switch // TypeDefIndex: 2635
 	private static int s_LastCollectionCount; 
 
 
-protected void .ctor(string displayName, string description) { }
+	protected void .ctor(string displayName, string description) { }
 
-protected void .ctor(string displayName, string description, string defaultSwitchValue) { }
+	protected void .ctor(string displayName, string description, string defaultSwitchValue) { }
 
-private static void _pruneCachedSwitches() { }
+	private static void _pruneCachedSwitches() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

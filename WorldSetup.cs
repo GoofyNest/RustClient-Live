@@ -14,18 +14,18 @@ public class WorldSetup : SingletonComponent<WorldSetup> // TypeDefIndex: 10570
 	internal List<MonumentNode> MonumentNodes; 
 
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-protected void CreateObject(GameObject prefab) { }
+	protected void CreateObject(GameObject prefab) { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator InitCoroutine() { }
+	public IEnumerator InitCoroutine() { }
 
-private void CancelSetup(string msg) { }
+	private void CancelSetup(string msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -36,13 +36,13 @@ private sealed class WorldSetup.<>c // TypeDefIndex: 10571
 	public static Action<string> <>9__15_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <InitCoroutine>b__15_0(string str) { }
+	internal void <InitCoroutine>b__15_0(string str) { }
 
-internal void <InitCoroutine>b__15_1(string str) { }
+	internal void <InitCoroutine>b__15_1(string str) { }
 
 }
 
@@ -67,26 +67,26 @@ private sealed class WorldSetup.<InitCoroutine>d__15 : IEnumerator<object>, IEnu
 	private ProceduralComponent <component>5__15; 
 	private uint <seed>5__16; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -2,38 +2,38 @@ public struct Friend // TypeDefIndex: 5236
 {
 	public SteamId Id; 
 
-public bool IsMe { get; }
-public bool IsFriend { get; }
-public bool IsPlayingThisGame { get; }
-public bool IsOnline { get; }
-public Relationship Relationship { get; }
-public FriendState State { get; }
-public string Name { get; }
-public Nullable<Friend.FriendGameInfo> GameInfo { get; }
+	public bool IsMe { get; }
+	public bool IsFriend { get; }
+	public bool IsPlayingThisGame { get; }
+	public bool IsOnline { get; }
+	public Relationship Relationship { get; }
+	public FriendState State { get; }
+	public string Name { get; }
+	public Nullable<Friend.FriendGameInfo> GameInfo { get; }
 
 
-public void .ctor(SteamId steamid) { }
+	public void .ctor(SteamId steamid) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public bool get_IsMe() { }
+	public bool get_IsMe() { }
 
-public bool get_IsFriend() { }
+	public bool get_IsFriend() { }
 
-public bool get_IsPlayingThisGame() { }
+	public bool get_IsPlayingThisGame() { }
 
-public bool get_IsOnline() { }
+	public bool get_IsOnline() { }
 
 	[AsyncStateMachineAttribute] 
-public Task RequestInfoAsync() { }
+	public Task RequestInfoAsync() { }
 
-public Relationship get_Relationship() { }
+	public Relationship get_Relationship() { }
 
-public FriendState get_State() { }
+	public FriendState get_State() { }
 
-public string get_Name() { }
+	public string get_Name() { }
 
-public Nullable<Friend.FriendGameInfo> get_GameInfo() { }
+	public Nullable<Friend.FriendGameInfo> get_GameInfo() { }
 
 }
 
@@ -45,12 +45,12 @@ public struct Friend.FriendGameInfo // TypeDefIndex: 5237
 	public int ConnectionPort; 
 	public int QueryPort; 
 
-public IPAddress IpAddress { get; }
+	public IPAddress IpAddress { get; }
 
 
-public IPAddress get_IpAddress() { }
+	public IPAddress get_IpAddress() { }
 
-internal static Friend.FriendGameInfo From(FriendGameInfo_t i) { }
+	internal static Friend.FriendGameInfo From(FriendGameInfo_t i) { }
 
 }
 
@@ -62,10 +62,10 @@ private struct Friend.<RequestInfoAsync>d__13 : IAsyncStateMachine // TypeDefInd
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

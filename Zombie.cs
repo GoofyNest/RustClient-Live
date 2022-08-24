@@ -3,16 +3,16 @@ public class Zombie : BaseAnimalNPC // TypeDefIndex: 8944
 	[ServerVar] 
 	public static float Population; 
 
-public override BaseEntity.TraitFlag Traits { get; }
+	public override BaseEntity.TraitFlag Traits { get; }
 
 
-public override BaseEntity.TraitFlag get_Traits() { }
+	public override BaseEntity.TraitFlag get_Traits() { }
 
-public override string Categorize() { }
+	public override string Categorize() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

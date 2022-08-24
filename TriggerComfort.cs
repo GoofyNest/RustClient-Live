@@ -5,9 +5,9 @@ public class TriggerComfort : TriggerBase // TypeDefIndex: 10020
 	public float minComfortRange; 
 
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

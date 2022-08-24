@@ -14,57 +14,57 @@ public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 	public int multiplier; 
 
 
-public static void ResetToPool(SlotMachine instance) { }
+	public static void ResetToPool(SlotMachine instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(SlotMachine instance) { }
+	public void CopyTo(SlotMachine instance) { }
 
-public SlotMachine Copy() { }
+	public SlotMachine Copy() { }
 
-public static SlotMachine Deserialize(Stream stream) { }
+	public static SlotMachine Deserialize(Stream stream) { }
 
-public static SlotMachine DeserializeLengthDelimited(Stream stream) { }
+	public static SlotMachine DeserializeLengthDelimited(Stream stream) { }
 
-public static SlotMachine DeserializeLength(Stream stream, int length) { }
+	public static SlotMachine DeserializeLength(Stream stream, int length) { }
 
-public static SlotMachine Deserialize(byte[] buffer) { }
+	public static SlotMachine Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, SlotMachine previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, SlotMachine previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static SlotMachine Deserialize(byte[] buffer, SlotMachine instance, bool isDelta = False) { }
+	public static SlotMachine Deserialize(byte[] buffer, SlotMachine instance, bool isDelta = False) { }
 
-public static SlotMachine Deserialize(Stream stream, SlotMachine instance, bool isDelta) { }
+	public static SlotMachine Deserialize(Stream stream, SlotMachine instance, bool isDelta) { }
 
-public static SlotMachine DeserializeLengthDelimited(Stream stream, SlotMachine instance, bool isDelta) { }
+	public static SlotMachine DeserializeLengthDelimited(Stream stream, SlotMachine instance, bool isDelta) { }
 
-public static SlotMachine DeserializeLength(Stream stream, int length, SlotMachine instance, bool isDelta) { }
+	public static SlotMachine DeserializeLength(Stream stream, int length, SlotMachine instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, SlotMachine instance, SlotMachine previous) { }
+	public static void SerializeDelta(Stream stream, SlotMachine instance, SlotMachine previous) { }
 
-public static void Serialize(Stream stream, SlotMachine instance) { }
+	public static void Serialize(Stream stream, SlotMachine instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(SlotMachine instance) { }
+	public static byte[] SerializeToBytes(SlotMachine instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, SlotMachine instance) { }
+	public static void SerializeLengthDelimited(Stream stream, SlotMachine instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -98,8 +98,8 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 8447
 	public SlotMachinePayoutDisplay PayoutDisplay; 
 	public SlotMachinePayoutSettings PayoutSettings; 
 	public Transform HandIkTarget; 
-private const BaseEntity.Flags HasScrapForSpin = 128;
-private const BaseEntity.Flags IsSpinningFlag = 256;
+	private const BaseEntity.Flags HasScrapForSpin = 128;
+	private const BaseEntity.Flags IsSpinningFlag = 256;
 	public Material PayoutIconMaterial; 
 	public MeshRenderer[] PulseRenderers; 
 	public float PulseSpeed; 
@@ -118,104 +118,104 @@ private const BaseEntity.Flags IsSpinningFlag = 256;
 	private static int emissionId; 
 	private Quaternion InitialArmRotation; 
 
-public override bool HasMenuOptions { get; }
-private bool IsSpinning { get; }
-public int CurrentMultiplier { get; set; }
-public static Material instancedSpriteMaterial { get; set; }
+	public override bool HasMenuOptions { get; }
+	private bool IsSpinning { get; }
+	public int CurrentMultiplier { get; set; }
+	public static Material instancedSpriteMaterial { get; set; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private bool get_IsSpinning() { }
-
-	[CompilerGeneratedAttribute] 
-public int get_CurrentMultiplier() { }
+	private bool get_IsSpinning() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentMultiplier(int value) { }
+	public int get_CurrentMultiplier() { }
 
 	[CompilerGeneratedAttribute] 
-public static Material get_instancedSpriteMaterial() { }
+	private void set_CurrentMultiplier(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_instancedSpriteMaterial(Material value) { }
+	public static Material get_instancedSpriteMaterial() { }
 
-protected override bool HideMenuItems(BasePlayer player) { }
+	[CompilerGeneratedAttribute] 
+	private static void set_instancedSpriteMaterial(Material value) { }
 
-private bool CanSpin() { }
+	protected override bool HideMenuItems(BasePlayer player) { }
+
+	private bool CanSpin() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Spin(BasePlayer player) { }
+	public void Menu_Spin(BasePlayer player) { }
 
-public bool Menu_Spin_ShowIf(BasePlayer player) { }
+	public bool Menu_Spin_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Deposit(BasePlayer player) { }
+	public void Menu_Deposit(BasePlayer player) { }
 
-public bool Menu_Deposit_ShowIf(BasePlayer player) { }
+	public bool Menu_Deposit_ShowIf(BasePlayer player) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-private void UpdateSpriteMaterial() { }
+	private void UpdateSpriteMaterial() { }
 
-private void UpdatePulse() { }
+	private void UpdatePulse() { }
 
-private void StartPulse(float duration) { }
+	private void StartPulse(float duration) { }
 
-private static float CalculateReelAngle(int oldResult, int newResult, int numSpins, int maxNumSpins, float timeSinceSpin, float maxTime) { }
+	private static float CalculateReelAngle(int oldResult, int newResult, int numSpins, int maxNumSpins, float timeSinceSpin, float maxTime) { }
 
 	[BaseEntity.RPC_Client] 
-private void RPC_OnSpin(BaseEntity.RPCMessage msg) { }
+	private void RPC_OnSpin(BaseEntity.RPCMessage msg) { }
 
-private void UpdateSpinVisualsInvoke() { }
+	private void UpdateSpinVisualsInvoke() { }
 
-private void UpdateSpinVisuals(bool force = False) { }
+	private void UpdateSpinVisuals(bool force = False) { }
 
-public override Quaternion GetMountedRotation() { }
+	public override Quaternion GetMountedRotation() { }
 
-public void RequestMultiplierChange(int newMultiplier) { }
+	public void RequestMultiplierChange(int newMultiplier) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private bool CalculatePayout(out SlotMachinePayoutSettings.PayoutInfo info, out int bonus) { }
+	private bool CalculatePayout(out SlotMachinePayoutSettings.PayoutInfo info, out int bonus) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum SlotMachine.SlotFaces // TypeDefIndex: 8448
 {
 	public int value__; 
-public const SlotMachine.SlotFaces Scrap = 0;
-public const SlotMachine.SlotFaces Rope = 1;
-public const SlotMachine.SlotFaces Apple = 2;
-public const SlotMachine.SlotFaces LowGrade = 3;
-public const SlotMachine.SlotFaces Wood = 4;
-public const SlotMachine.SlotFaces Bandage = 5;
-public const SlotMachine.SlotFaces Charcoal = 6;
-public const SlotMachine.SlotFaces Gunpowder = 7;
-public const SlotMachine.SlotFaces Rust = 8;
-public const SlotMachine.SlotFaces Meat = 9;
-public const SlotMachine.SlotFaces Hammer = 10;
-public const SlotMachine.SlotFaces Sulfur = 11;
-public const SlotMachine.SlotFaces TechScrap = 12;
-public const SlotMachine.SlotFaces Frags = 13;
-public const SlotMachine.SlotFaces Cloth = 14;
-public const SlotMachine.SlotFaces LuckySeven = 15;
+	public const SlotMachine.SlotFaces Scrap = 0;
+	public const SlotMachine.SlotFaces Rope = 1;
+	public const SlotMachine.SlotFaces Apple = 2;
+	public const SlotMachine.SlotFaces LowGrade = 3;
+	public const SlotMachine.SlotFaces Wood = 4;
+	public const SlotMachine.SlotFaces Bandage = 5;
+	public const SlotMachine.SlotFaces Charcoal = 6;
+	public const SlotMachine.SlotFaces Gunpowder = 7;
+	public const SlotMachine.SlotFaces Rust = 8;
+	public const SlotMachine.SlotFaces Meat = 9;
+	public const SlotMachine.SlotFaces Hammer = 10;
+	public const SlotMachine.SlotFaces Sulfur = 11;
+	public const SlotMachine.SlotFaces TechScrap = 12;
+	public const SlotMachine.SlotFaces Frags = 13;
+	public const SlotMachine.SlotFaces Cloth = 14;
+	public const SlotMachine.SlotFaces LuckySeven = 15;
 
 }
 

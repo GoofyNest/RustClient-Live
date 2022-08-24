@@ -3,41 +3,41 @@ public abstract class CriticalHandle : CriticalFinalizerObject, IDisposable // T
 	protected IntPtr handle; 
 	private bool _isClosed; 
 
-public bool IsClosed { get; }
-public abstract bool IsInvalid { get; }
+	public bool IsClosed { get; }
+	public abstract bool IsInvalid { get; }
 
 
 	[ReliabilityContractAttribute] 
-protected void .ctor(IntPtr invalidHandleValue) { }
+	protected void .ctor(IntPtr invalidHandleValue) { }
 
 	[ReliabilityContractAttribute] 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
 	[ReliabilityContractAttribute] 
-private void Cleanup() { }
+	private void Cleanup() { }
 
-private static void FireCustomerDebugProbe() { }
-
-	[ReliabilityContractAttribute] 
-protected void SetHandle(IntPtr handle) { }
+	private static void FireCustomerDebugProbe() { }
 
 	[ReliabilityContractAttribute] 
-public bool get_IsClosed() { }
+	protected void SetHandle(IntPtr handle) { }
 
 	[ReliabilityContractAttribute] 
-public abstract bool get_IsInvalid();
+	public bool get_IsClosed() { }
 
 	[ReliabilityContractAttribute] 
-public void Close() { }
+	public abstract bool get_IsInvalid();
 
 	[ReliabilityContractAttribute] 
-public void Dispose() { }
+	public void Close() { }
 
 	[ReliabilityContractAttribute] 
-protected virtual void Dispose(bool disposing) { }
+	public void Dispose() { }
 
 	[ReliabilityContractAttribute] 
-protected abstract bool ReleaseHandle();
+	protected virtual void Dispose(bool disposing) { }
+
+	[ReliabilityContractAttribute] 
+	protected abstract bool ReleaseHandle();
 
 }
 

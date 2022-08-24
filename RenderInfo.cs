@@ -1,7 +1,7 @@
 public static class RenderInfo // TypeDefIndex: 12020
 {
 
-public static void GenerateReport() { }
+	public static void GenerateReport() { }
 
 }
 
@@ -28,9 +28,9 @@ public struct RenderInfo.RendererInstance // TypeDefIndex: 12021
 	public int ParticleCount; 
 
 
-public static RenderInfo.RendererInstance From(Renderer renderer) { }
+	public static RenderInfo.RendererInstance From(Renderer renderer) { }
 
-public void ReadMesh(Mesh mesh) { }
+	public void ReadMesh(Mesh mesh) { }
 
 }
 

@@ -12,46 +12,46 @@ public class RendererBatch : MonoBehaviour, IClientComponent
 	private RendererGroup batchGroup; 
 	private MeshRendererInstance batchInstance; 
 
-public Transform BatchTransform { get; set; }
-public MeshRenderer BatchRenderer { get; set; }
-public MeshFilter BatchFilter { get; set; }
+	public Transform BatchTransform { get; set; }
+	public MeshRenderer BatchRenderer { get; set; }
+	public MeshFilter BatchFilter { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Transform get_BatchTransform() { }
+	public Transform get_BatchTransform() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_BatchTransform(Transform value) { }
+	public void set_BatchTransform(Transform value) { }
 
 	[CompilerGeneratedAttribute] 
-public MeshRenderer get_BatchRenderer() { }
+	public MeshRenderer get_BatchRenderer() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_BatchRenderer(MeshRenderer value) { }
+	public void set_BatchRenderer(MeshRenderer value) { }
 
 	[CompilerGeneratedAttribute] 
-public MeshFilter get_BatchFilter() { }
+	public MeshFilter get_BatchFilter() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_BatchFilter(MeshFilter value) { }
+	public void set_BatchFilter(MeshFilter value) { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void Add() { }
+	public void Add() { }
 
-public void Remove() { }
+	public void Remove() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void AddBatch(RendererGroup batchGroup) { }
+	public void AddBatch(RendererGroup batchGroup) { }
 
-public void WorkshopMode() { }
+	public void WorkshopMode() { }
 
-public void Toggle(bool state) { }
+	public void Toggle(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

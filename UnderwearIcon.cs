@@ -6,11 +6,11 @@ public class UnderwearIcon : MonoBehaviour, IClientComponent // TypeDefIndex: 92
 	internal string underwearShortName; 
 
 
-internal void Setup(string newUnderwearShortname, string text, bool canUse, Sprite icon) { }
+	internal void Setup(string newUnderwearShortname, string text, bool canUse, Sprite icon) { }
 
-public void Select() { }
+	public void Select() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

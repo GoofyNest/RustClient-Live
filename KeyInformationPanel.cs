@@ -4,11 +4,11 @@ public class KeyInformationPanel : ItemInformationPanel // TypeDefIndex: 11024
 	private Text id; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

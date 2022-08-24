@@ -10,15 +10,15 @@ public class OnePoleLowpassFilter : MonoBehaviour // TypeDefIndex: 9015
 	private float prevFrequency; 
 
 
-public void Update() { }
+	public void Update() { }
 
-private void OnAudioFilterRead(float[] data, int channels) { }
+	private void OnAudioFilterRead(float[] data, int channels) { }
 
-private void SetupChannelData(int channels) { }
+	private void SetupChannelData(int channels) { }
 
-private void UpdateFilterCoefficients() { }
+	private void UpdateFilterCoefficients() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -27,7 +27,7 @@ private class OnePoleLowpassFilter.ChannelData // TypeDefIndex: 9016
 	public float out1; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -11,37 +11,37 @@ public class AddSellOrderManager : MonoBehaviour // TypeDefIndex: 8726
 	public VendingPanelAdmin adminPanel; 
 
 
-public void ItemSelectionMade(ItemDefinition info, bool asBP) { }
+	public void ItemSelectionMade(ItemDefinition info, bool asBP) { }
 
-public void Search(string search) { }
+	public void Search(string search) { }
 
-private bool IsValidSearchResult(string search, ItemDefinition target) { }
+	private bool IsValidSearchResult(string search, ItemDefinition target) { }
 
-private float ScoreSearchResult(string search, ItemDefinition target) { }
+	private float ScoreSearchResult(string search, ItemDefinition target) { }
 
-public void OnSellSearchChanged() { }
+	public void OnSellSearchChanged() { }
 
-public void OnCurrencySearchChanged() { }
+	public void OnCurrencySearchChanged() { }
 
-public void OnSellSearchComplete() { }
+	public void OnSellSearchComplete() { }
 
-public void AddSellOrder() { }
+	public void AddSellOrder() { }
 
-public void ResetSellOrderObjects() { }
+	public void ResetSellOrderObjects() { }
 
-public void OnAmountTextChanged() { }
+	public void OnAmountTextChanged() { }
 
-public void ClampAmountValues() { }
+	public void ClampAmountValues() { }
 
-public int ClampedAmountValue(string amount, ItemDefinition itemDef, bool limitToStackable = True) { }
+	public int ClampedAmountValue(string amount, ItemDefinition itemDef, bool limitToStackable = True) { }
 
-public int GetIntAmount(string text) { }
+	public int GetIntAmount(string text) { }
 
-public void CurrencyPlusMinus(int delta) { }
+	public void CurrencyPlusMinus(int delta) { }
 
-public void SellItemPlusMinus(int delta) { }
+	public void SellItemPlusMinus(int delta) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -51,11 +51,11 @@ private sealed class AddSellOrderManager.<>c__DisplayClass10_0 // TypeDefIndex: 
 	public string search; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <Search>b__0(ItemDefinition x) { }
+	internal bool <Search>b__0(ItemDefinition x) { }
 
-internal float <Search>b__1(ItemDefinition y) { }
+	internal float <Search>b__1(ItemDefinition y) { }
 
 }
 

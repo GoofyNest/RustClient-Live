@@ -16,17 +16,17 @@ public struct LightDataGI // TypeDefIndex: 3886
 	public FalloffType falloff; 
 
 
-public void Init(ref DirectionalLight light) { }
+	public void Init(ref DirectionalLight light) { }
 
-public void Init(ref PointLight light) { }
+	public void Init(ref PointLight light) { }
 
-public void Init(ref SpotLight light) { }
+	public void Init(ref SpotLight light) { }
 
-public void Init(ref RectangleLight light) { }
+	public void Init(ref RectangleLight light) { }
 
-public void Init(ref DiscLight light) { }
+	public void Init(ref DiscLight light) { }
 
-public void InitNoBake(int lightInstanceID) { }
+	public void InitNoBake(int lightInstanceID) { }
 
 }
 

@@ -8,21 +8,21 @@ public abstract class WeatherEffect : BaseMonoBehaviour, IClientComponent // Typ
 	private Action invokeUpdate; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-protected void InvokeUpdate() { }
+	protected void InvokeUpdate() { }
 
-protected abstract float GetCurrentIntensity();
+	protected abstract float GetCurrentIntensity();
 
-protected abstract float GetUpdateInterval(float intensity);
+	protected abstract float GetUpdateInterval(float intensity);
 
-protected abstract void UpdatePosition(float intensity);
+	protected abstract void UpdatePosition(float intensity);
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

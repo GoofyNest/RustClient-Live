@@ -4,47 +4,47 @@ public class VideoCapture : IDisposable // TypeDefIndex: 3616
 	private static readonly long HR_SUCCESS; 
 
 
-private static VideoCapture.VideoCaptureResult MakeCaptureResult(long hResult) { }
+	private static VideoCapture.VideoCaptureResult MakeCaptureResult(long hResult) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void InvokeOnCreatedVideoCaptureResourceDelegate(VideoCapture.OnVideoCaptureResourceCreatedCallback callback, IntPtr nativePtr) { }
+	private static void InvokeOnCreatedVideoCaptureResourceDelegate(VideoCapture.OnVideoCaptureResourceCreatedCallback callback, IntPtr nativePtr) { }
 
-private void .ctor(IntPtr nativeCaptureObject) { }
-
-	[RequiredByNativeCodeAttribute] 
-private static void InvokeOnVideoModeStartedDelegate(VideoCapture.OnVideoModeStartedCallback callback, long hResult) { }
+	private void .ctor(IntPtr nativeCaptureObject) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void InvokeOnVideoModeStoppedDelegate(VideoCapture.OnVideoModeStoppedCallback callback, long hResult) { }
+	private static void InvokeOnVideoModeStartedDelegate(VideoCapture.OnVideoModeStartedCallback callback, long hResult) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void InvokeOnStartedRecordingVideoToDiskDelegate(VideoCapture.OnStartedRecordingVideoCallback callback, long hResult) { }
+	private static void InvokeOnVideoModeStoppedDelegate(VideoCapture.OnVideoModeStoppedCallback callback, long hResult) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void InvokeOnStoppedRecordingVideoToDiskDelegate(VideoCapture.OnStoppedRecordingVideoCallback callback, long hResult) { }
+	private static void InvokeOnStartedRecordingVideoToDiskDelegate(VideoCapture.OnStartedRecordingVideoCallback callback, long hResult) { }
 
-public void Dispose() { }
+	[RequiredByNativeCodeAttribute] 
+	private static void InvokeOnStoppedRecordingVideoToDiskDelegate(VideoCapture.OnStoppedRecordingVideoCallback callback, long hResult) { }
+
+	public void Dispose() { }
 
 	[NativeMethodAttribute] 
 	[NativeConditionalAttribute] 
-private void Dispose_Internal() { }
+	private void Dispose_Internal() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
 	[ThreadAndSerializationSafeAttribute] 
 	[NativeConditionalAttribute] 
 	[NativeMethodAttribute] 
-private void DisposeThreaded_Internal() { }
+	private void DisposeThreaded_Internal() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum VideoCapture.CaptureResultType // TypeDefIndex: 3617
 {
 	public int value__; 
-public const VideoCapture.CaptureResultType Success = 0;
-public const VideoCapture.CaptureResultType UnknownError = 1;
+	public const VideoCapture.CaptureResultType Success = 0;
+	public const VideoCapture.CaptureResultType UnknownError = 1;
 
 }
 
@@ -58,65 +58,65 @@ public struct VideoCapture.VideoCaptureResult // TypeDefIndex: 3618
 public sealed class VideoCapture.OnVideoCaptureResourceCreatedCallback : MulticastDelegate // TypeDefIndex: 3619
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(VideoCapture captureObject) { }
+	public virtual void Invoke(VideoCapture captureObject) { }
 
-public virtual IAsyncResult BeginInvoke(VideoCapture captureObject, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(VideoCapture captureObject, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class VideoCapture.OnVideoModeStartedCallback : MulticastDelegate // TypeDefIndex: 3620
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
+	public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
 
-public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class VideoCapture.OnVideoModeStoppedCallback : MulticastDelegate // TypeDefIndex: 3621
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
+	public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
 
-public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class VideoCapture.OnStartedRecordingVideoCallback : MulticastDelegate // TypeDefIndex: 3622
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
+	public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
 
-public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class VideoCapture.OnStoppedRecordingVideoCallback : MulticastDelegate // TypeDefIndex: 3623
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
+	public virtual void Invoke(VideoCapture.VideoCaptureResult result) { }
 
-public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(VideoCapture.VideoCaptureResult result, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

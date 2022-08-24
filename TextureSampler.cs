@@ -5,15 +5,15 @@ public class TextureSampler // TypeDefIndex: 5613
 	private int _width; 
 
 
-public Color GetPixelBilinear(float u, float v) { }
+	public Color GetPixelBilinear(float u, float v) { }
 
-public Color GetPixel(float x, float y) { }
+	public Color GetPixel(float x, float y) { }
 
-private float Mod(float x, float y) { }
+	private float Mod(float x, float y) { }
 
-private float WrapBetween(float value, float min, float max) { }
+	private float WrapBetween(float value, float min, float max) { }
 
-public void .ctor(Texture2D source) { }
+	public void .ctor(Texture2D source) { }
 
 }
 

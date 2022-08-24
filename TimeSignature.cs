@@ -6,27 +6,27 @@ public sealed class TimeSignature // TypeDefIndex: 7457
 	[CompilerGeneratedAttribute] 
 	private readonly int <Denominator>k__BackingField; 
 
-public int Numerator { get; }
-public int Denominator { get; }
+	public int Numerator { get; }
+	public int Denominator { get; }
 
 
-public void .ctor(int numerator, int denominator) { }
-
-	[CompilerGeneratedAttribute] 
-public int get_Numerator() { }
+	public void .ctor(int numerator, int denominator) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_Denominator() { }
+	public int get_Numerator() { }
 
-public static bool op_Equality(TimeSignature timeSignature1, TimeSignature timeSignature2) { }
+	[CompilerGeneratedAttribute] 
+	public int get_Denominator() { }
 
-public override string ToString() { }
+	public static bool op_Equality(TimeSignature timeSignature1, TimeSignature timeSignature2) { }
 
-public override bool Equals(object obj) { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-private static void .cctor() { }
+	public override int GetHashCode() { }
+
+	private static void .cctor() { }
 
 }
 

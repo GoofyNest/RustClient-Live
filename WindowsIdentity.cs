@@ -8,36 +8,36 @@ public class WindowsIdentity : ClaimsIdentity, IIdentity, IDeserializationCallba
 	private SerializationInfo _info; 
 	private static IntPtr invalidWindows; 
 
-public sealed override string AuthenticationType { get; }
-public override string Name { get; }
+	public sealed override string AuthenticationType { get; }
+	public override string Name { get; }
 
 
-public void .ctor(IntPtr userToken, string type, WindowsAccountType acctType, bool isAuthenticated) { }
+	public void .ctor(IntPtr userToken, string type, WindowsAccountType acctType, bool isAuthenticated) { }
 
-public void .ctor(SerializationInfo info, StreamingContext context) { }
+	public void .ctor(SerializationInfo info, StreamingContext context) { }
 
 	[ComVisibleAttribute] 
-public void Dispose() { }
+	public void Dispose() { }
 
-public static WindowsIdentity GetCurrent() { }
+	public static WindowsIdentity GetCurrent() { }
 
-public virtual WindowsImpersonationContext Impersonate() { }
+	public virtual WindowsImpersonationContext Impersonate() { }
 
-public sealed override string get_AuthenticationType() { }
+	public sealed override string get_AuthenticationType() { }
 
-public override string get_Name() { }
+	public override string get_Name() { }
 
-private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
+	private void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) { }
 
-private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
+	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-private void SetToken(IntPtr token) { }
+	private void SetToken(IntPtr token) { }
 
-internal static IntPtr GetCurrentToken() { }
+	internal static IntPtr GetCurrentToken() { }
 
-private static string GetTokenName(IntPtr token) { }
+	private static string GetTokenName(IntPtr token) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

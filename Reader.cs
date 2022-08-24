@@ -18,83 +18,83 @@ public class Reader // TypeDefIndex: 6649
 	[CompilerGeneratedAttribute] 
 	private bool <IsPaused>k__BackingField; 
 
-public static Reader Active { get; set; }
-public string Name { get; set; }
-public long CurrentTime { get; set; }
-public Indexer Index { get; set; }
-public DemoHeader Header { get; set; }
-private long startPosition { get; set; }
-public bool IsFinished { get; }
-public bool IsPaused { get; set; }
+	public static Reader Active { get; set; }
+	public string Name { get; set; }
+	public long CurrentTime { get; set; }
+	public Indexer Index { get; set; }
+	public DemoHeader Header { get; set; }
+	private long startPosition { get; set; }
+	public bool IsFinished { get; }
+	public bool IsPaused { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public static Reader get_Active() { }
+	public static Reader get_Active() { }
 
 	[CompilerGeneratedAttribute] 
-internal static void set_Active(Reader value) { }
+	internal static void set_Active(Reader value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Name() { }
+	public string get_Name() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Name(string value) { }
+	private void set_Name(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public long get_CurrentTime() { }
+	public long get_CurrentTime() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentTime(long value) { }
+	private void set_CurrentTime(long value) { }
 
 	[CompilerGeneratedAttribute] 
-public Indexer get_Index() { }
+	public Indexer get_Index() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Index(Indexer value) { }
+	private void set_Index(Indexer value) { }
 
 	[CompilerGeneratedAttribute] 
-public DemoHeader get_Header() { }
+	public DemoHeader get_Header() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Header(DemoHeader value) { }
+	private void set_Header(DemoHeader value) { }
 
 	[CompilerGeneratedAttribute] 
-private long get_startPosition() { }
+	private long get_startPosition() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_startPosition(long value) { }
+	private void set_startPosition(long value) { }
 
-public void Play() { }
+	public void Play() { }
 
-public void Pause() { }
+	public void Pause() { }
 
-public void .ctor(string name, Stream stream) { }
+	public void .ctor(string name, Stream stream) { }
 
-public void SetActive() { }
+	public void SetActive() { }
 
-public void JumpTo(long time) { }
+	public void JumpTo(long time) { }
 
-public void CreateIndex() { }
+	public void CreateIndex() { }
 
-private void ReadHeader() { }
+	private void ReadHeader() { }
 
-public bool get_IsFinished() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_IsPaused() { }
+	public bool get_IsFinished() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_IsPaused(bool value) { }
+	public bool get_IsPaused() { }
 
-public static Reader FromFile(string filename) { }
+	[CompilerGeneratedAttribute] 
+	internal void set_IsPaused(bool value) { }
 
-public void Stop() { }
+	public static Reader FromFile(string filename) { }
 
-public void Progress(long timeAmountMs) { }
+	public void Stop() { }
 
-public void ResetToStart() { }
+	public void Progress(long timeAmountMs) { }
 
-public Packet ReadPacket() { }
+	public void ResetToStart() { }
+
+	public Packet ReadPacket() { }
 
 }
 

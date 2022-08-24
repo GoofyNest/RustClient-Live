@@ -11,9 +11,9 @@ public class PhysicsEffects : MonoBehaviour // TypeDefIndex: 9357
 	public LayerMask ignoreLayers; 
 
 
-public void PlayImpactSound(float hardness) { }
+	public void PlayImpactSound(float hardness) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

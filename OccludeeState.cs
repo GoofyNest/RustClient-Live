@@ -7,18 +7,18 @@ public class OccludeeState : OcclusionCulling.SmartListValue // TypeDefIndex: 11
 	public OcclusionCulling.Cell cell; 
 	public OcclusionCulling.SimpleList<OccludeeState.State> states; 
 
-public bool isVisible { get; }
+	public bool isVisible { get; }
 
 
-public bool get_isVisible() { }
+	public bool get_isVisible() { }
 
-public OccludeeState Initialize(OcclusionCulling.SimpleList<OccludeeState.State> states, OcclusionCulling.BufferSet set, int slot, Vector4 sphereBounds, bool isVisible, float minTimeVisible, bool isStatic, int layer, OcclusionCulling.OnVisibilityChanged onVisibilityChanged) { }
+	public OccludeeState Initialize(OcclusionCulling.SimpleList<OccludeeState.State> states, OcclusionCulling.BufferSet set, int slot, Vector4 sphereBounds, bool isVisible, float minTimeVisible, bool isStatic, int layer, OcclusionCulling.OnVisibilityChanged onVisibilityChanged) { }
 
-public void Invalidate() { }
+	public void Invalidate() { }
 
-public void MakeVisible() { }
+	public void MakeVisible() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -35,7 +35,7 @@ public struct OccludeeState.State // TypeDefIndex: 11506
 	public static OccludeeState.State Unused; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

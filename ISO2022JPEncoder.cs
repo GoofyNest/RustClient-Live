@@ -9,17 +9,17 @@ internal class ISO2022JPEncoder : MonoEncoder // TypeDefIndex: 7805
 	private static readonly char[] full_width_map; 
 
 
-public void .ctor(MonoEncoding owner, bool allow1ByteKana, bool allowShiftIO) { }
+	public void .ctor(MonoEncoding owner, bool allow1ByteKana, bool allowShiftIO) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public override int GetByteCountImpl(char* chars, int charCount, bool flush) { }
+	public override int GetByteCountImpl(char* chars, int charCount, bool flush) { }
 
-private void SwitchMode(byte* bytes, ref int byteIndex, ref int byteCount, ref ISO2022JPMode cur, ISO2022JPMode next) { }
+	private void SwitchMode(byte* bytes, ref int byteIndex, ref int byteCount, ref ISO2022JPMode cur, ISO2022JPMode next) { }
 
-public override int GetBytesImpl(char* chars, int charCount, byte* bytes, int byteCount, bool flush) { }
+	public override int GetBytesImpl(char* chars, int charCount, byte* bytes, int byteCount, bool flush) { }
 
-public override void Reset() { }
+	public override void Reset() { }
 
 }
 

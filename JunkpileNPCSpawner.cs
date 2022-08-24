@@ -4,7 +4,7 @@ public class JunkpileNPCSpawner : NPCSpawner // TypeDefIndex: 10002
 	public bool UseSpawnChance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

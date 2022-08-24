@@ -10,23 +10,23 @@ internal class RequiredByNativeCodeAttribute : Attribute // TypeDefIndex: 3289
 	[CompilerGeneratedAttribute] 
 	private bool <GenerateProxy>k__BackingField; 
 
-public string Name { set; }
-public bool Optional { set; }
-public bool GenerateProxy { set; }
+	public string Name { set; }
+	public bool Optional { set; }
+	public bool GenerateProxy { set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string name) { }
-
-	[CompilerGeneratedAttribute] 
-public void set_Name(string value) { }
+	public void .ctor(string name) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Optional(bool value) { }
+	public void set_Name(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_GenerateProxy(bool value) { }
+	public void set_Optional(bool value) { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_GenerateProxy(bool value) { }
 
 }
 

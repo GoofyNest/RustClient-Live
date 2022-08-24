@@ -3,19 +3,19 @@ public abstract class CallbackEventHandler : IEventHandler // TypeDefIndex: 4650
 	private EventCallbackRegistry m_CallbackRegistry; 
 
 
-public abstract void SendEvent(EventBase e);
+	public abstract void SendEvent(EventBase e);
 
-internal void HandleEventAtTargetPhase(EventBase evt) { }
+	internal void HandleEventAtTargetPhase(EventBase evt) { }
 
-public virtual void HandleEvent(EventBase evt) { }
+	public virtual void HandleEvent(EventBase evt) { }
 
-public bool HasTrickleDownHandlers() { }
+	public bool HasTrickleDownHandlers() { }
 
-public bool HasBubbleUpHandlers() { }
+	public bool HasBubbleUpHandlers() { }
 
-protected virtual void ExecuteDefaultActionAtTarget(EventBase evt) { }
+	protected virtual void ExecuteDefaultActionAtTarget(EventBase evt) { }
 
-protected virtual void ExecuteDefaultAction(EventBase evt) { }
+	protected virtual void ExecuteDefaultAction(EventBase evt) { }
 
 }
 

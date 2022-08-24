@@ -6,25 +6,25 @@ public class NVGCamera : FacepunchBehaviour, IClothingChanged // TypeDefIndex: 8
 	private bool initalized; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Start() { }
+	public void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void OnClothingChanged() { }
+	public void OnClothingChanged() { }
 
-public static bool IsEffectOn() { }
+	public static bool IsEffectOn() { }
 
-public static void SetEffectsOn(bool wantsOn, bool fadeOut = True) { }
+	public static void SetEffectsOn(bool wantsOn, bool fadeOut = True) { }
 
-public void OnThink() { }
+	public void OnThink() { }
 
-public void FadeOut() { }
+	public void FadeOut() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -32,63 +32,63 @@ public class Bloom : PostEffectsBase // TypeDefIndex: 8151
 	private Material brightPassFilterMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-private void AddTo(float intensity_, RenderTexture from, RenderTexture to) { }
+	private void AddTo(float intensity_, RenderTexture from, RenderTexture to) { }
 
-private void BlendFlares(RenderTexture from, RenderTexture to) { }
+	private void BlendFlares(RenderTexture from, RenderTexture to) { }
 
-private void BrightFilter(float thresh, RenderTexture from, RenderTexture to) { }
+	private void BrightFilter(float thresh, RenderTexture from, RenderTexture to) { }
 
-private void BrightFilter(Color threshColor, RenderTexture from, RenderTexture to) { }
+	private void BrightFilter(Color threshColor, RenderTexture from, RenderTexture to) { }
 
-private void Vignette(float amount, RenderTexture from, RenderTexture to) { }
+	private void Vignette(float amount, RenderTexture from, RenderTexture to) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum Bloom.LensFlareStyle // TypeDefIndex: 8152
 {
 	public int value__; 
-public const Bloom.LensFlareStyle Ghosting = 0;
-public const Bloom.LensFlareStyle Anamorphic = 1;
-public const Bloom.LensFlareStyle Combined = 2;
+	public const Bloom.LensFlareStyle Ghosting = 0;
+	public const Bloom.LensFlareStyle Anamorphic = 1;
+	public const Bloom.LensFlareStyle Combined = 2;
 
 }
 
 public enum Bloom.TweakMode // TypeDefIndex: 8153
 {
 	public int value__; 
-public const Bloom.TweakMode Basic = 0;
-public const Bloom.TweakMode Complex = 1;
+	public const Bloom.TweakMode Basic = 0;
+	public const Bloom.TweakMode Complex = 1;
 
 }
 
 public enum Bloom.HDRBloomMode // TypeDefIndex: 8154
 {
 	public int value__; 
-public const Bloom.HDRBloomMode Auto = 0;
-public const Bloom.HDRBloomMode On = 1;
-public const Bloom.HDRBloomMode Off = 2;
+	public const Bloom.HDRBloomMode Auto = 0;
+	public const Bloom.HDRBloomMode On = 1;
+	public const Bloom.HDRBloomMode Off = 2;
 
 }
 
 public enum Bloom.BloomScreenBlendMode // TypeDefIndex: 8155
 {
 	public int value__; 
-public const Bloom.BloomScreenBlendMode Screen = 0;
-public const Bloom.BloomScreenBlendMode Add = 1;
+	public const Bloom.BloomScreenBlendMode Screen = 0;
+	public const Bloom.BloomScreenBlendMode Add = 1;
 
 }
 
 public enum Bloom.BloomQuality // TypeDefIndex: 8156
 {
 	public int value__; 
-public const Bloom.BloomQuality Cheap = 0;
-public const Bloom.BloomQuality High = 1;
+	public const Bloom.BloomQuality Cheap = 0;
+	public const Bloom.BloomQuality High = 1;
 
 }
 
@@ -126,9 +126,9 @@ public sealed class Bloom : PostProcessEffectSettings // TypeDefIndex: 11763
 	public FloatParameter dirtIntensity; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

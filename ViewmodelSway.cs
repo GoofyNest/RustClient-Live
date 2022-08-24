@@ -11,13 +11,13 @@ public class ViewmodelSway : MonoBehaviour // TypeDefIndex: 11461
 	public float rotateAmountTest; 
 
 
-public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }
+	public void Apply(ref CachedTransform<BaseViewModel> vm, BasePlayer player) { }
 
-private void ApplyPositionalSway(ref CachedTransform<BaseViewModel> vm, bool aiming, BasePlayer player) { }
+	private void ApplyPositionalSway(ref CachedTransform<BaseViewModel> vm, bool aiming, BasePlayer player) { }
 
-private void ApplyRotationSway(ref CachedTransform<BaseViewModel> vm, bool aiming) { }
+	private void ApplyRotationSway(ref CachedTransform<BaseViewModel> vm, bool aiming) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -14,9 +14,9 @@ public class BlendedSoundLoops : MonoBehaviour, IClientComponent // TypeDefIndex
 	private float smoothedBlend; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -33,7 +33,7 @@ public class BlendedSoundLoops.Loop // TypeDefIndex: 8986
 	public SoundModulation.Modulator pitchMod; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

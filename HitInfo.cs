@@ -34,44 +34,44 @@ public class HitInfo // TypeDefIndex: 9899
 	public bool DidGather; 
 	public float gatherScale; 
 
-public BasePlayer InitiatorPlayer { get; }
-public Vector3 attackNormal { get; }
-public bool hasDamage { get; }
-public bool isHeadshot { get; }
-public Translate.Phrase bonePhrase { get; }
-public string boneName { get; }
-public HitArea boneArea { get; }
+	public BasePlayer InitiatorPlayer { get; }
+	public Vector3 attackNormal { get; }
+	public bool hasDamage { get; }
+	public bool isHeadshot { get; }
+	public Translate.Phrase bonePhrase { get; }
+	public string boneName { get; }
+	public HitArea boneArea { get; }
 
 
-public bool IsProjectile() { }
+	public bool IsProjectile() { }
 
-public BasePlayer get_InitiatorPlayer() { }
+	public BasePlayer get_InitiatorPlayer() { }
 
-public Vector3 get_attackNormal() { }
+	public Vector3 get_attackNormal() { }
 
-public bool get_hasDamage() { }
+	public bool get_hasDamage() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(BaseEntity attacker, BaseEntity target, DamageType type, float damageAmount, Vector3 vhitPosition) { }
+	public void .ctor(BaseEntity attacker, BaseEntity target, DamageType type, float damageAmount, Vector3 vhitPosition) { }
 
-public void .ctor(BaseEntity attacker, BaseEntity target, DamageType type, float damageAmount) { }
+	public void .ctor(BaseEntity attacker, BaseEntity target, DamageType type, float damageAmount) { }
 
-public void LoadFromAttack(Attack attack, bool serverSide) { }
+	public void LoadFromAttack(Attack attack, bool serverSide) { }
 
-public bool get_isHeadshot() { }
+	public bool get_isHeadshot() { }
 
-public Translate.Phrase get_bonePhrase() { }
+	public Translate.Phrase get_bonePhrase() { }
 
-public string get_boneName() { }
+	public string get_boneName() { }
 
-public HitArea get_boneArea() { }
+	public HitArea get_boneArea() { }
 
-public Vector3 PositionOnRay(Vector3 position) { }
+	public Vector3 PositionOnRay(Vector3 position) { }
 
-public Vector3 HitPositionOnRay() { }
+	public Vector3 HitPositionOnRay() { }
 
-public bool IsNaNOrInfinity() { }
+	public bool IsNaNOrInfinity() { }
 
 }
 

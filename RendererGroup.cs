@@ -15,62 +15,62 @@ public class RendererGroup : Pool.IPooled // TypeDefIndex: 9920
 	private Action updateData; 
 	private Action refreshBatches; 
 
-public float Size { get; }
-public Vector3 Position { get; }
-public int Count { get; }
+	public float Size { get; }
+	public Vector3 Position { get; }
+	public int Count { get; }
 
 
-public float get_Size() { }
+	public float get_Size() { }
 
-public Vector3 get_Position() { }
+	public Vector3 get_Position() { }
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public void Initialize(RendererGrid grid, RendererCell cell, RendererKey key) { }
+	public void Initialize(RendererGrid grid, RendererCell cell, RendererKey key) { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void Add(RendererBatch renderer) { }
+	public void Add(RendererBatch renderer) { }
 
-public void Remove(RendererBatch renderer) { }
+	public void Remove(RendererBatch renderer) { }
 
-public void Invalidate() { }
+	public void Invalidate() { }
 
-public void Add(MeshRendererInstance instance) { }
+	public void Add(MeshRendererInstance instance) { }
 
-public void UpdateData() { }
+	public void UpdateData() { }
 
-public void CreateBatches() { }
+	public void CreateBatches() { }
 
-public void RefreshBatches() { }
+	public void RefreshBatches() { }
 
-public void ApplyBatches() { }
+	public void ApplyBatches() { }
 
-public void DisplayBatches() { }
+	public void DisplayBatches() { }
 
-public IEnumerator UpdateDataAsync() { }
+	public IEnumerator UpdateDataAsync() { }
 
-public IEnumerator RefreshBatchesAsync() { }
+	public IEnumerator RefreshBatchesAsync() { }
 
-public void Start() { }
+	public void Start() { }
 
-public void End() { }
+	public void End() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public int MeshCount() { }
+	public int MeshCount() { }
 
-public int BatchedMeshCount() { }
+	public int BatchedMeshCount() { }
 
-public int VertexCount() { }
+	public int VertexCount() { }
 
-public MeshRendererBatch CreateBatch() { }
+	public MeshRendererBatch CreateBatch() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

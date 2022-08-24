@@ -17,36 +17,36 @@ public class LaserLight : AudioVisualisationEntity // TypeDefIndex: 9446
 	private TimeSince lastLookAtTick; 
 	private static bool hasAwardedLookAtAchievement; 
 
-public override bool ShowColourOption { get; }
-public override bool ShowSpeedOption { get; }
-public override bool ShowVolumeOption { get; }
+	public override bool ShowColourOption { get; }
+	public override bool ShowSpeedOption { get; }
+	public override bool ShowVolumeOption { get; }
 
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-protected override void UpdateVisualisation(float volume, bool force = False) { }
+	protected override void UpdateVisualisation(float volume, bool force = False) { }
 
-private void GetCurrentVolumeRange(out float min, out float max) { }
+	private void GetCurrentVolumeRange(out float min, out float max) { }
 
-private void GetCurrentSpeedRange(out float minSpeed, out float maxSpeed) { }
+	private void GetCurrentSpeedRange(out float minSpeed, out float maxSpeed) { }
 
-private LaserLight.ColourSetting GetColourSettings(AudioVisualisationEntity.LightColour colour) { }
+	private LaserLight.ColourSetting GetColourSettings(AudioVisualisationEntity.LightColour colour) { }
 
-protected override void UpdateVisualSettings() { }
+	protected override void UpdateVisualSettings() { }
 
-public override bool get_ShowColourOption() { }
+	public override bool get_ShowColourOption() { }
 
-public override bool get_ShowSpeedOption() { }
+	public override bool get_ShowSpeedOption() { }
 
-public override bool get_ShowVolumeOption() { }
+	public override bool get_ShowVolumeOption() { }
 
-public override void LookingAtTick() { }
+	public override void LookingAtTick() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

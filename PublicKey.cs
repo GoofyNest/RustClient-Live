@@ -6,29 +6,29 @@ public sealed class PublicKey // TypeDefIndex: 2811
 	private Oid _oid; 
 	private static byte[] Empty; 
 
-public AsnEncodedData EncodedKeyValue { get; }
-public AsnEncodedData EncodedParameters { get; }
-public AsymmetricAlgorithm Key { get; }
-public Oid Oid { get; }
+	public AsnEncodedData EncodedKeyValue { get; }
+	public AsnEncodedData EncodedParameters { get; }
+	public AsymmetricAlgorithm Key { get; }
+	public Oid Oid { get; }
 
 
-internal void .ctor(X509Certificate certificate) { }
+	internal void .ctor(X509Certificate certificate) { }
 
-public AsnEncodedData get_EncodedKeyValue() { }
+	public AsnEncodedData get_EncodedKeyValue() { }
 
-public AsnEncodedData get_EncodedParameters() { }
+	public AsnEncodedData get_EncodedParameters() { }
 
-public AsymmetricAlgorithm get_Key() { }
+	public AsymmetricAlgorithm get_Key() { }
 
-public Oid get_Oid() { }
+	public Oid get_Oid() { }
 
-private static byte[] GetUnsignedBigInteger(byte[] integer) { }
+	private static byte[] GetUnsignedBigInteger(byte[] integer) { }
 
-internal static DSA DecodeDSA(byte[] rawPublicKey, byte[] rawParameters) { }
+	internal static DSA DecodeDSA(byte[] rawPublicKey, byte[] rawParameters) { }
 
-internal static RSA DecodeRSA(byte[] rawPublicKey) { }
+	internal static RSA DecodeRSA(byte[] rawPublicKey) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

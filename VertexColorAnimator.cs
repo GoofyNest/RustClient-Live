@@ -7,21 +7,21 @@ public class VertexColorAnimator : MonoBehaviour // TypeDefIndex: 11526
 	private float elapsedTime; 
 
 
-public void initLists() { }
+	public void initLists() { }
 
-public void addMesh(Mesh mesh, float atPosition) { }
+	public void addMesh(Mesh mesh, float atPosition) { }
 
-private void Start() { }
+	private void Start() { }
 
-public void replaceKeyframe(int frameIndex, Mesh mesh) { }
+	public void replaceKeyframe(int frameIndex, Mesh mesh) { }
 
-public void deleteKeyframe(int frameIndex) { }
+	public void deleteKeyframe(int frameIndex) { }
 
-public void scrobble(float scrobblePos) { }
+	public void scrobble(float scrobblePos) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

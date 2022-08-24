@@ -4,13 +4,13 @@ public static class ProgressBarUI // TypeDefIndex: 11205
 	private static Buttons.ConButton holdButton; 
 
 
-public static bool IsOpen() { }
+	public static bool IsOpen() { }
 
-public static void Cancel() { }
+	public static void Cancel() { }
 
-public static void Open(Option sourceOption, Buttons.ConButton buttonToHold) { }
+	public static void Open(Option sourceOption, Buttons.ConButton buttonToHold) { }
 
-public static void FrameUpdate(BasePlayer player) { }
+	public static void FrameUpdate(BasePlayer player) { }
 
 }
 

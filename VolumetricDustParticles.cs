@@ -20,56 +20,56 @@ public class VolumetricDustParticles : MonoBehaviour // TypeDefIndex: 11552
 	private static Camera ms_MainCamera; 
 	private VolumetricLightBeam m_Master; 
 
-public bool isCulled { get; set; }
-public bool particlesAreInstantiated { get; }
-public int particlesCurrentCount { get; }
-public int particlesMaxCount { get; }
-public Camera mainCamera { get; }
+	public bool isCulled { get; set; }
+	public bool particlesAreInstantiated { get; }
+	public int particlesCurrentCount { get; }
+	public int particlesMaxCount { get; }
+	public Camera mainCamera { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_isCulled() { }
+	public bool get_isCulled() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isCulled(bool value) { }
+	private void set_isCulled(bool value) { }
 
-public bool get_particlesAreInstantiated() { }
+	public bool get_particlesAreInstantiated() { }
 
-public int get_particlesCurrentCount() { }
+	public int get_particlesCurrentCount() { }
 
-public int get_particlesMaxCount() { }
+	public int get_particlesMaxCount() { }
 
-public Camera get_mainCamera() { }
+	public Camera get_mainCamera() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void InstantiateParticleSystem() { }
+	private void InstantiateParticleSystem() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void SetActiveAndPlay() { }
+	private void SetActiveAndPlay() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void SetParticleProperties() { }
+	private void SetParticleProperties() { }
 
-private void UpdateCulling() { }
+	private void UpdateCulling() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum VolumetricDustParticles.Direction // TypeDefIndex: 11553
 {
 	public int value__; 
-public const VolumetricDustParticles.Direction Beam = 0;
-public const VolumetricDustParticles.Direction Random = 1;
+	public const VolumetricDustParticles.Direction Beam = 0;
+	public const VolumetricDustParticles.Direction Random = 1;
 
 }
 

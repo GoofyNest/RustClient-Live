@@ -16,14 +16,14 @@ public class Batching : ConsoleSystem // TypeDefIndex: 11880
 
 
 	[ClientVar] 
-public static void refresh_renderers(ConsoleSystem.Arg args) { }
+	public static void refresh_renderers(ConsoleSystem.Arg args) { }
 
 	[ClientVar] 
-public static void print_renderers(ConsoleSystem.Arg args) { }
+	public static void print_renderers(ConsoleSystem.Arg args) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

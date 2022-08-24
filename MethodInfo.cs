@@ -1,36 +1,36 @@
 public abstract class MethodInfo : MethodBase, _MethodInfo // TypeDefIndex: 542
 {
-public override MemberTypes MemberType { get; }
-public virtual Type ReturnType { get; }
+	public override MemberTypes MemberType { get; }
+	public virtual Type ReturnType { get; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public static bool op_Equality(MethodInfo left, MethodInfo right) { }
+	public static bool op_Equality(MethodInfo left, MethodInfo right) { }
 
-public static bool op_Inequality(MethodInfo left, MethodInfo right) { }
+	public static bool op_Inequality(MethodInfo left, MethodInfo right) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override MemberTypes get_MemberType() { }
+	public override MemberTypes get_MemberType() { }
 
-public virtual Type get_ReturnType() { }
+	public virtual Type get_ReturnType() { }
 
-public abstract MethodInfo GetBaseDefinition();
-
-	[ComVisibleAttribute] 
-public override Type[] GetGenericArguments() { }
+	public abstract MethodInfo GetBaseDefinition();
 
 	[ComVisibleAttribute] 
-public virtual MethodInfo GetGenericMethodDefinition() { }
+	public override Type[] GetGenericArguments() { }
 
-public virtual MethodInfo MakeGenericMethod(Type[] typeArguments) { }
+	[ComVisibleAttribute] 
+	public virtual MethodInfo GetGenericMethodDefinition() { }
 
-public virtual Delegate CreateDelegate(Type delegateType) { }
+	public virtual MethodInfo MakeGenericMethod(Type[] typeArguments) { }
 
-internal virtual MethodInfo GetBaseMethod() { }
+	public virtual Delegate CreateDelegate(Type delegateType) { }
+
+	internal virtual MethodInfo GetBaseMethod() { }
 
 }
 

@@ -6,13 +6,13 @@ public class SubbandLayer2IntensityStereo : SubbandLayer2 // TypeDefIndex: 7407
 	protected int Channel2Scfsi; 
 
 
-internal void .ctor(int subbandnumber) { }
+	internal void .ctor(int subbandnumber) { }
 
-internal override void ReadScaleFactorSelection(Bitstream stream, Crc16 crc) { }
+	internal override void ReadScaleFactorSelection(Bitstream stream, Crc16 crc) { }
 
-internal override void ReadScaleFactor(Bitstream stream, Header header) { }
+	internal override void ReadScaleFactor(Bitstream stream, Header header) { }
 
-internal override bool PutNextSample(int channels, SynthesisFilter filter1, SynthesisFilter filter2) { }
+	internal override bool PutNextSample(int channels, SynthesisFilter filter1, SynthesisFilter filter2) { }
 
 }
 

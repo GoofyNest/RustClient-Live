@@ -10,38 +10,38 @@ internal struct RegisterGameEvent // TypeDefIndex: 7709
 	private bool <ValueOptional>k__BackingField; 
 
 	[JsonPropertyAttribute] 
-public string GameId { get; set; }
+	public string GameId { get; set; }
 	[JsonPropertyAttribute] 
-public string Event { get; set; }
+	public string Event { get; set; }
 	[JsonPropertyAttribute] 
-public int IconId { get; set; }
+	public int IconId { get; set; }
 	[JsonPropertyAttribute] 
-public bool ValueOptional { get; set; }
+	public bool ValueOptional { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_GameId() { }
+	public string get_GameId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_GameId(string value) { }
+	public void set_GameId(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Event() { }
+	public string get_Event() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Event(string value) { }
+	public void set_Event(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_IconId() { }
+	public int get_IconId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IconId(int value) { }
+	public void set_IconId(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_ValueOptional() { }
+	public bool get_ValueOptional() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ValueOptional(bool value) { }
+	public void set_ValueOptional(bool value) { }
 
 }
 

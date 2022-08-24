@@ -14,7 +14,7 @@ public class VisualCarWheel : CarWheel // TypeDefIndex: 9779
 	public ParticleSystem asphaltSpinFX; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

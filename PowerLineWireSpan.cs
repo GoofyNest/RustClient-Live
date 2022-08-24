@@ -7,9 +7,9 @@ public class PowerLineWireSpan : MonoBehaviour // TypeDefIndex: 10371
 	public List<PowerLineWireConnection> connections; 
 
 
-public void Init(PowerLineWire wire) { }
+	public void Init(PowerLineWire wire) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

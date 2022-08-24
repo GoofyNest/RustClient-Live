@@ -11,19 +11,19 @@ public struct RaycastResult // TypeDefIndex: 5089
 	public Vector3 worldNormal; 
 	public Vector2 screenPosition; 
 
-public GameObject gameObject { get; set; }
-public bool isValid { get; }
+	public GameObject gameObject { get; set; }
+	public bool isValid { get; }
 
 
-public GameObject get_gameObject() { }
+	public GameObject get_gameObject() { }
 
-public void set_gameObject(GameObject value) { }
+	public void set_gameObject(GameObject value) { }
 
-public bool get_isValid() { }
+	public bool get_isValid() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

@@ -26,47 +26,47 @@ public class DepthOfField : PostEffectsBase // TypeDefIndex: 8178
 	private ComputeBuffer cbPoints; 
 	private float internalBlurWidth; 
 
-public bool ForceOnlyFarBlur { get; set; }
+	public bool ForceOnlyFarBlur { get; set; }
 
 
-public bool get_ForceOnlyFarBlur() { }
+	public bool get_ForceOnlyFarBlur() { }
 
-public void set_ForceOnlyFarBlur(bool value) { }
+	public void set_ForceOnlyFarBlur(bool value) { }
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void ReleaseComputeResources() { }
+	private void ReleaseComputeResources() { }
 
-private void CreateComputeResources() { }
+	private void CreateComputeResources() { }
 
-private float FocalDistance01(float worldDist) { }
+	private float FocalDistance01(float worldDist) { }
 
-private void WriteCoc(RenderTexture fromTo, bool fgDilate) { }
+	private void WriteCoc(RenderTexture fromTo, bool fgDilate) { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum DepthOfField.BlurType // TypeDefIndex: 8179
 {
 	public int value__; 
-public const DepthOfField.BlurType DiscBlur = 0;
-public const DepthOfField.BlurType DX11 = 1;
+	public const DepthOfField.BlurType DiscBlur = 0;
+	public const DepthOfField.BlurType DX11 = 1;
 
 }
 
 public enum DepthOfField.BlurSampleCount // TypeDefIndex: 8180
 {
 	public int value__; 
-public const DepthOfField.BlurSampleCount Low = 0;
-public const DepthOfField.BlurSampleCount Medium = 1;
-public const DepthOfField.BlurSampleCount High = 2;
+	public const DepthOfField.BlurSampleCount Low = 0;
+	public const DepthOfField.BlurSampleCount Medium = 1;
+	public const DepthOfField.BlurSampleCount High = 2;
 
 }
 
@@ -86,9 +86,9 @@ public sealed class DepthOfField : PostProcessEffectSettings // TypeDefIndex: 11
 	public KernelSizeParameter kernelSize; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

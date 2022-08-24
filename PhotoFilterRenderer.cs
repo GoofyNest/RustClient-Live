@@ -5,11 +5,11 @@ public class PhotoFilterRenderer : PostProcessEffectRenderer<PhotoFilter> // Typ
 	private Shader greyScaleShader; 
 
 
-public override void Init() { }
+	public override void Init() { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

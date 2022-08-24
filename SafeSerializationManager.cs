@@ -6,27 +6,27 @@ internal sealed class SafeSerializationManager : IObjectReference, ISerializable
 	private RuntimeType m_realType; 
 	[CompilerGeneratedAttribute] 
 	private EventHandler<SafeSerializationEventArgs> SerializeObjectState; 
-private const string RealTypeSerializationName = "CLR_SafeSerializationManager_RealType";
+	private const string RealTypeSerializationName = "CLR_SafeSerializationManager_RealType";
 
-internal bool IsActive { get; }
+	internal bool IsActive { get; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private void .ctor(SerializationInfo info, StreamingContext context) { }
+	private void .ctor(SerializationInfo info, StreamingContext context) { }
 
-internal bool get_IsActive() { }
+	internal bool get_IsActive() { }
 
-internal void CompleteSerialization(object serializedObject, SerializationInfo info, StreamingContext context) { }
+	internal void CompleteSerialization(object serializedObject, SerializationInfo info, StreamingContext context) { }
 
-internal void CompleteDeserialization(object deserializedObject) { }
+	internal void CompleteDeserialization(object deserializedObject) { }
 
-private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
+	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-private object System.Runtime.Serialization.IObjectReference.GetRealObject(StreamingContext context) { }
+	private object System.Runtime.Serialization.IObjectReference.GetRealObject(StreamingContext context) { }
 
 	[OnDeserializedAttribute] 
-private void OnDeserialized(StreamingContext context) { }
+	private void OnDeserialized(StreamingContext context) { }
 
 }
 

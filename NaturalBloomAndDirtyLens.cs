@@ -28,29 +28,29 @@ public class NaturalBloomAndDirtyLens : MonoBehaviour // TypeDefIndex: 10097
 	private static int[] sourceID; 
 
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void UpdateMaterial(bool encoding) { }
+	private void UpdateMaterial(bool encoding) { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 private static class NaturalBloomAndDirtyLens.Param // TypeDefIndex: 10098
 {
-public const int _BloomRange = 0;
-public const int _BloomCutoff = 1;
-public const int _BloomIntensity = 2;
-public const int _LensDirtIntensity = 3;
-public const int _MipWeights = 4;
-public const int _LensDirt = 5;
-public const int _BlurSize = 6;
-public const int _TemporalHistory = 7;
-public const int _TemporalFilterWeight = 8;
+	public const int _BloomRange = 0;
+	public const int _BloomCutoff = 1;
+	public const int _BloomIntensity = 2;
+	public const int _LensDirtIntensity = 3;
+	public const int _MipWeights = 4;
+	public const int _LensDirt = 5;
+	public const int _BlurSize = 6;
+	public const int _TemporalHistory = 7;
+	public const int _TemporalFilterWeight = 8;
 
 }
 

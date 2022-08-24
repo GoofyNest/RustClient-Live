@@ -42,23 +42,23 @@ public class SubbandLayer2 : ASubband // TypeDefIndex: 7406
 	protected readonly int Subbandnumber; 
 
 
-internal void .ctor(int subbandnumber) { }
+	internal void .ctor(int subbandnumber) { }
 
-protected virtual int GetAllocationLength(Header header) { }
+	protected virtual int GetAllocationLength(Header header) { }
 
-protected virtual void PrepareForSampleRead(Header header, int allocation, int channel, float[] factor, int[] codelength, float[] c, float[] d) { }
+	protected virtual void PrepareForSampleRead(Header header, int allocation, int channel, float[] factor, int[] codelength, float[] c, float[] d) { }
 
-internal override void ReadAllocation(Bitstream stream, Header header, Crc16 crc) { }
+	internal override void ReadAllocation(Bitstream stream, Header header, Crc16 crc) { }
 
-internal virtual void ReadScaleFactorSelection(Bitstream stream, Crc16 crc) { }
+	internal virtual void ReadScaleFactorSelection(Bitstream stream, Crc16 crc) { }
 
-internal override void ReadScaleFactor(Bitstream stream, Header header) { }
+	internal override void ReadScaleFactor(Bitstream stream, Header header) { }
 
-internal override bool ReadSampleData(Bitstream stream) { }
+	internal override bool ReadSampleData(Bitstream stream) { }
 
-internal override bool PutNextSample(int channels, SynthesisFilter filter1, SynthesisFilter filter2) { }
+	internal override bool PutNextSample(int channels, SynthesisFilter filter1, SynthesisFilter filter2) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

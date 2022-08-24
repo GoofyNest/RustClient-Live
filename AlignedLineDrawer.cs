@@ -18,44 +18,44 @@ public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex
 	public static AlignedLineDrawer.LineDrawerQueue WorkQueue; 
 	private Action meshUpdateCompleteAction; 
 
-public Mesh CreatedMesh { get; set; }
-private List<AlignedLineDrawer.LinePoint> Points { get; }
+	public Mesh CreatedMesh { get; set; }
+	private List<AlignedLineDrawer.LinePoint> Points { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public Mesh get_CreatedMesh() { }
+	public Mesh get_CreatedMesh() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CreatedMesh(Mesh value) { }
+	private void set_CreatedMesh(Mesh value) { }
 
-private List<AlignedLineDrawer.LinePoint> get_Points() { }
+	private List<AlignedLineDrawer.LinePoint> get_Points() { }
 
-public void QueueMeshUpdate(bool isFinal, Action onComplete) { }
+	public void QueueMeshUpdate(bool isFinal, Action onComplete) { }
 
-public void ClearMesh() { }
+	public void ClearMesh() { }
 
-public virtual void UpdateMesh(bool isFinal = False) { }
+	public virtual void UpdateMesh(bool isFinal = False) { }
 
-private void MakeEndCap(AlignedLineDrawer.LinePoint startPoint, AlignedLineDrawer.LinePoint oppositePoint, List<Vector3> verts, List<int> tris, List<Vector2> uvs, Matrix4x4 localToWorld, int startTriangle, int endTriangle) { }
+	private void MakeEndCap(AlignedLineDrawer.LinePoint startPoint, AlignedLineDrawer.LinePoint oppositePoint, List<Vector3> verts, List<int> tris, List<Vector2> uvs, Matrix4x4 localToWorld, int startTriangle, int endTriangle) { }
 
-private void ExtrudePoints(List<AlignedLineDrawer.LinePoint> points, List<Vector3> verts, List<int> tris, List<Vector2> uvs, float extrudeDistance) { }
+	private void ExtrudePoints(List<AlignedLineDrawer.LinePoint> points, List<Vector3> verts, List<int> tris, List<Vector2> uvs, float extrudeDistance) { }
 
-protected virtual void AssignMesh() { }
+	protected virtual void AssignMesh() { }
 
-public virtual void SetColour(Color c) { }
+	public virtual void SetColour(Color c) { }
 
-public virtual void SetWidth(float width) { }
+	public virtual void SetWidth(float width) { }
 
-public static int GetCompressedPathLength(List<AlignedLineDrawer.LinePoint> toCompress, float tolerance) { }
+	public static int GetCompressedPathLength(List<AlignedLineDrawer.LinePoint> toCompress, float tolerance) { }
 
-public static void CompressPath(List<AlignedLineDrawer.LinePoint> toCompress, float tolerance) { }
+	public static void CompressPath(List<AlignedLineDrawer.LinePoint> toCompress, float tolerance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <UpdateMesh>g__GenerateLineSegment|24_0(int startPoint, int endPoint, ref AlignedLineDrawer.<>c__DisplayClass24_0 ) { }
+	private void <UpdateMesh>g__GenerateLineSegment|24_0(int startPoint, int endPoint, ref AlignedLineDrawer.<>c__DisplayClass24_0 ) { }
 
 }
 
@@ -69,11 +69,11 @@ public struct AlignedLineDrawer.LinePoint // TypeDefIndex: 8876
 public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDrawer> // TypeDefIndex: 8877
 {
 
-protected override void RunJob(AlignedLineDrawer entity) { }
+	protected override void RunJob(AlignedLineDrawer entity) { }
 
-protected override bool ShouldAdd(AlignedLineDrawer entity) { }
+	protected override bool ShouldAdd(AlignedLineDrawer entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

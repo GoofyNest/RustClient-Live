@@ -8,27 +8,27 @@ public class BigWheelBettingTerminal : StorageContainer // TypeDefIndex: 8534
 	public float nextSpinTime; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void OnDrawGizmos() { }
+	public void OnDrawGizmos() { }
 
-public bool IsPlayerValid(BasePlayer player) { }
+	public bool IsPlayerValid(BasePlayer player) { }
 
-public override bool ShouldShowLootMenus() { }
+	public override bool ShouldShowLootMenus() { }
 
-private Vector3 SoundPosition() { }
+	private Vector3 SoundPosition() { }
 
-public void WinSound() { }
+	public void WinSound() { }
 
-public void LoseSound() { }
-
-	[BaseEntity.RPC_Client] 
-public void SetTimeUntilNextSpin(BaseEntity.RPCMessage msg) { }
+	public void LoseSound() { }
 
 	[BaseEntity.RPC_Client] 
-public void WinOrLoseSound(BaseEntity.RPCMessage msg) { }
+	public void SetTimeUntilNextSpin(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	[BaseEntity.RPC_Client] 
+	public void WinOrLoseSound(BaseEntity.RPCMessage msg) { }
+
+	public void .ctor() { }
 
 }
 

@@ -23,54 +23,54 @@ public class IMGUIContainer : VisualElement // TypeDefIndex: 4591
 	public static readonly string ussClassName; 
 	private IMGUIContainer.GUIGlobals m_GUIGlobals; 
 
-public Action onGUIHandler { get; }
-internal ObjectGUIState guiState { get; }
-internal Rect lastWorldClip { get; }
-private GUILayoutUtility.LayoutCache cache { get; }
-private float layoutMeasuredWidth { get; }
-private float layoutMeasuredHeight { get; }
-public ContextType contextType { get; }
-internal bool focusOnlyIfHasFocusableControls { get; }
+	public Action onGUIHandler { get; }
+	internal ObjectGUIState guiState { get; }
+	internal Rect lastWorldClip { get; }
+	private GUILayoutUtility.LayoutCache cache { get; }
+	private float layoutMeasuredWidth { get; }
+	private float layoutMeasuredHeight { get; }
+	public ContextType contextType { get; }
+	internal bool focusOnlyIfHasFocusableControls { get; }
 
 
-public Action get_onGUIHandler() { }
+	public Action get_onGUIHandler() { }
 
-internal ObjectGUIState get_guiState() { }
-
-	[CompilerGeneratedAttribute] 
-internal Rect get_lastWorldClip() { }
-
-private GUILayoutUtility.LayoutCache get_cache() { }
-
-private float get_layoutMeasuredWidth() { }
-
-private float get_layoutMeasuredHeight() { }
+	internal ObjectGUIState get_guiState() { }
 
 	[CompilerGeneratedAttribute] 
-public ContextType get_contextType() { }
+	internal Rect get_lastWorldClip() { }
+
+	private GUILayoutUtility.LayoutCache get_cache() { }
+
+	private float get_layoutMeasuredWidth() { }
+
+	private float get_layoutMeasuredHeight() { }
 
 	[CompilerGeneratedAttribute] 
-internal bool get_focusOnlyIfHasFocusableControls() { }
+	public ContextType get_contextType() { }
 
-private void SaveGlobals() { }
+	[CompilerGeneratedAttribute] 
+	internal bool get_focusOnlyIfHasFocusableControls() { }
 
-private void RestoreGlobals() { }
+	private void SaveGlobals() { }
 
-private void DoOnGUI(Event evt, Matrix4x4 parentTransform, Rect clippingRect, bool isComputingLayout, Rect layoutSize, Action onGUIHandler, bool canAffectFocus = True) { }
+	private void RestoreGlobals() { }
 
-public void MarkDirtyLayout() { }
+	private void DoOnGUI(Event evt, Matrix4x4 parentTransform, Rect clippingRect, bool isComputingLayout, Rect layoutSize, Action onGUIHandler, bool canAffectFocus = True) { }
 
-internal bool SendEventToIMGUI(EventBase evt, bool canAffectFocus = True) { }
+	public void MarkDirtyLayout() { }
 
-internal bool HandleIMGUIEvent(Event e, bool canAffectFocus) { }
+	internal bool SendEventToIMGUI(EventBase evt, bool canAffectFocus = True) { }
 
-internal bool HandleIMGUIEvent(Event e, Action onGUIHandler, bool canAffectFocus) { }
+	internal bool HandleIMGUIEvent(Event e, bool canAffectFocus) { }
 
-private bool HandleIMGUIEvent(Event e, Matrix4x4 worldTransform, Rect clippingRect, Action onGUIHandler, bool canAffectFocus) { }
+	internal bool HandleIMGUIEvent(Event e, Action onGUIHandler, bool canAffectFocus) { }
 
-private static void GetCurrentTransformAndClip(IMGUIContainer container, Event evt, out Matrix4x4 transform, out Rect clipRect) { }
+	private bool HandleIMGUIEvent(Event e, Matrix4x4 worldTransform, Rect clippingRect, Action onGUIHandler, bool canAffectFocus) { }
 
-private static void .cctor() { }
+	private static void GetCurrentTransformAndClip(IMGUIContainer container, Event evt, out Matrix4x4 transform, out Rect clipRect) { }
+
+	private static void .cctor() { }
 
 }
 

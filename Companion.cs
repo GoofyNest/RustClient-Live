@@ -1,6 +1,6 @@
 public class CompanionSetupScreen : SingletonComponent<CompanionSetupScreen> // TypeDefIndex: 11084
 {
-public const string PairedKey = "companionPaired";
+	public const string PairedKey = "companionPaired";
 	public GameObject instructionsBody; 
 	public GameObject detailsPanel; 
 	public GameObject loadingMessage; 
@@ -20,57 +20,57 @@ public const string PairedKey = "companionPaired";
 	private Nullable<bool> _enabled; 
 	private bool _hidePair; 
 
-public CompanionSetupScreen.ScreenState State { get; set; }
+	public CompanionSetupScreen.ScreenState State { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public CompanionSetupScreen.ScreenState get_State() { }
+	public CompanionSetupScreen.ScreenState get_State() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_State(CompanionSetupScreen.ScreenState value) { }
+	private void set_State(CompanionSetupScreen.ScreenState value) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Refresh() { }
-
-	[AsyncStateMachineAttribute] 
-public void RefreshImpl() { }
+	public void Refresh() { }
 
 	[AsyncStateMachineAttribute] 
-public void Enable() { }
+	public void RefreshImpl() { }
 
 	[AsyncStateMachineAttribute] 
-public void Disable() { }
+	public void Enable() { }
 
-public void Pair() { }
+	[AsyncStateMachineAttribute] 
+	public void Disable() { }
 
-private void ResetPair() { }
+	public void Pair() { }
 
-public void OpenVideo() { }
+	private void ResetPair() { }
 
-public void HelpPressed() { }
+	public void OpenVideo() { }
 
-public void HelpReleased() { }
+	public void HelpPressed() { }
 
-private void UpdateUI() { }
+	public void HelpReleased() { }
 
-public void ChangeState(CompanionSetupScreen.ScreenState state) { }
+	private void UpdateUI() { }
 
-public void .ctor() { }
+	public void ChangeState(CompanionSetupScreen.ScreenState state) { }
+
+	public void .ctor() { }
 
 }
 
 public enum CompanionSetupScreen.ScreenState // TypeDefIndex: 11085
 {
 	public int value__; 
-public const CompanionSetupScreen.ScreenState Loading = 0;
-public const CompanionSetupScreen.ScreenState Error = 1;
-public const CompanionSetupScreen.ScreenState NoServer = 2;
-public const CompanionSetupScreen.ScreenState NotSupported = 3;
-public const CompanionSetupScreen.ScreenState NotInstalled = 4;
-public const CompanionSetupScreen.ScreenState Disabled = 5;
-public const CompanionSetupScreen.ScreenState Enabled = 6;
-public const CompanionSetupScreen.ScreenState ShowHelp = 7;
+	public const CompanionSetupScreen.ScreenState Loading = 0;
+	public const CompanionSetupScreen.ScreenState Error = 1;
+	public const CompanionSetupScreen.ScreenState NoServer = 2;
+	public const CompanionSetupScreen.ScreenState NotSupported = 3;
+	public const CompanionSetupScreen.ScreenState NotInstalled = 4;
+	public const CompanionSetupScreen.ScreenState Disabled = 5;
+	public const CompanionSetupScreen.ScreenState Enabled = 6;
+	public const CompanionSetupScreen.ScreenState ShowHelp = 7;
 
 }
 
@@ -82,10 +82,10 @@ private struct CompanionSetupScreen.<RefreshImpl>d__24 : IAsyncStateMachine // T
 	private TaskAwaiter<CompanionSubscription.Status> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -97,10 +97,10 @@ private struct CompanionSetupScreen.<Enable>d__25 : IAsyncStateMachine // TypeDe
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -112,10 +112,10 @@ private struct CompanionSetupScreen.<Disable>d__26 : IAsyncStateMachine // TypeD
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -129,17 +129,17 @@ public static class CompanionSubscription // TypeDefIndex: 11089
 
 
 	[AsyncStateMachineAttribute] 
-public static Task<CompanionSubscription.Status> CheckStatus() { }
+	public static Task<CompanionSubscription.Status> CheckStatus() { }
 
 	[AsyncStateMachineAttribute] 
-public static Task Add() { }
+	public static Task Add() { }
 
 	[AsyncStateMachineAttribute] 
-public static Task Remove() { }
+	public static Task Remove() { }
 
-private static StringContent GenerateRequest(IAuthTicket authTicket) { }
+	private static StringContent GenerateRequest(IAuthTicket authTicket) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -149,7 +149,7 @@ private class CompanionSubscription.Request // TypeDefIndex: 11090
 	public string ServerId; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -159,7 +159,7 @@ public class CompanionSubscription.Status // TypeDefIndex: 11091
 	public bool IsSubscribed; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -173,10 +173,10 @@ private struct CompanionSubscription.<CheckStatus>d__5 : IAsyncStateMachine // T
 	private TaskAwaiter<string> <>u__3; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -189,10 +189,10 @@ private struct CompanionSubscription.<Add>d__6 : IAsyncStateMachine // TypeDefIn
 	private TaskAwaiter<HttpResponseMessage> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -205,10 +205,10 @@ private struct CompanionSubscription.<Remove>d__7 : IAsyncStateMachine // TypeDe
 	private TaskAwaiter<HttpResponseMessage> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

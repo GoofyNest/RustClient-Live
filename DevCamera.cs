@@ -6,13 +6,13 @@ public class DevCamera : MonoBehaviour // TypeDefIndex: 9294
 	private float zoom; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void DoFreeMovement() { }
+	private void DoFreeMovement() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

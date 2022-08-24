@@ -1,13 +1,13 @@
 public class UnderwaterEffect : WeatherEffect // TypeDefIndex: 10073
 {
 
-protected override float GetCurrentIntensity() { }
+	protected override float GetCurrentIntensity() { }
 
-protected override float GetUpdateInterval(float intensity) { }
+	protected override float GetUpdateInterval(float intensity) { }
 
-protected override void UpdatePosition(float intensity) { }
+	protected override void UpdatePosition(float intensity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

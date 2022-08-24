@@ -11,13 +11,13 @@ public class BuoyancyPoint : MonoBehaviour // TypeDefIndex: 9701
 	private static readonly Color gizmoColour; 
 
 
-public void Start() { }
+	public void Start() { }
 
-public void OnDrawGizmos() { }
+	public void OnDrawGizmos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

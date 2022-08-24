@@ -10,11 +10,11 @@ internal sealed class ValueFixup // TypeDefIndex: 1122
 	internal string memberName; 
 
 
-internal void .ctor(Array arrayObj, int[] indexMap) { }
+	internal void .ctor(Array arrayObj, int[] indexMap) { }
 
-internal void .ctor(object memberObject, string memberName, ReadObjectInfo objectInfo) { }
+	internal void .ctor(object memberObject, string memberName, ReadObjectInfo objectInfo) { }
 
-internal void Fixup(ParseRecord record, ParseRecord parent) { }
+	internal void Fixup(ParseRecord record, ParseRecord parent) { }
 
 }
 

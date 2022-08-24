@@ -8,17 +8,17 @@ public class KeyBindUI : MonoBehaviour // TypeDefIndex: 11132
 	public bool noButtonsDown; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void UpdateBinding() { }
+	private void UpdateBinding() { }
 
-public void StartBinding(Button button) { }
+	public void StartBinding(Button button) { }
 
-public void ResetToDefault() { }
+	public void ResetToDefault() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

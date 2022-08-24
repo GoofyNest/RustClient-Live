@@ -17,27 +17,27 @@ public class SoundSource : MonoBehaviour, IClientComponentEx, ILOD, ISoundBudget
 	private List<RaycastHit> hits; 
 
 
-private void OnDrawGizmosSelected() { }
+	private void OnDrawGizmosSelected() { }
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void DoUpdate() { }
+	public void DoUpdate() { }
 
-public void DoOcclusionCheck() { }
+	public void DoOcclusionCheck() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-public virtual void PreClientComponentCull(IPrefabProcessor p) { }
+	public virtual void PreClientComponentCull(IPrefabProcessor p) { }
 
-public bool IsSyncedToParent() { }
+	public bool IsSyncedToParent() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -47,7 +47,7 @@ public class SoundSource.OcclusionPoint // TypeDefIndex: 9044
 	public bool isOccluded; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,7 +6,7 @@ internal class IdRefNode // TypeDefIndex: 2394
 	internal IdRefNode Next; 
 
 
-internal void .ctor(IdRefNode next, string id, int lineNo, int linePos) { }
+	internal void .ctor(IdRefNode next, string id, int lineNo, int linePos) { }
 
 }
 

@@ -9,17 +9,17 @@ public class RadiationOverlay : MonoBehaviour // TypeDefIndex: 9133
 	private float smoothRadiationExposureVelocity; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private void UpdateSound(float exposure) { }
+	private void UpdateSound(float exposure) { }
 
-private float GetRadationFraction() { }
+	private float GetRadationFraction() { }
 
-private float GetRadationExposureFraction() { }
+	private float GetRadationExposureFraction() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

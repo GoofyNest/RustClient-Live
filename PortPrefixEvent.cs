@@ -3,24 +3,24 @@ public sealed class PortPrefixEvent : MetaEvent // TypeDefIndex: 7541
 	[CompilerGeneratedAttribute] 
 	private byte <Port>k__BackingField; 
 
-public byte Port { get; set; }
+	public byte Port { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(byte port) { }
-
-	[CompilerGeneratedAttribute] 
-public byte get_Port() { }
+	public void .ctor(byte port) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Port(byte value) { }
+	public byte get_Port() { }
 
-protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Port(byte value) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
 
-public override string ToString() { }
+	protected override MidiEvent CloneEvent() { }
+
+	public override string ToString() { }
 
 }
 

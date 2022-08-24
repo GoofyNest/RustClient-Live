@@ -16,13 +16,13 @@ internal sealed class InflateCodes // TypeDefIndex: 6949
 	internal int dtree_index; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void Init(int bl, int bd, int[] tl, int tl_index, int[] td, int td_index) { }
+	internal void Init(int bl, int bd, int[] tl, int tl_index, int[] td, int td_index) { }
 
-internal int Process(InflateBlocks blocks, int r) { }
+	internal int Process(InflateBlocks blocks, int r) { }
 
-internal int InflateFast(int bl, int bd, int[] tl, int tl_index, int[] td, int td_index, InflateBlocks s, ZlibCodec z) { }
+	internal int InflateFast(int bl, int bd, int[] tl, int tl_index, int[] td, int td_index, InflateBlocks s, ZlibCodec z) { }
 
 }
 

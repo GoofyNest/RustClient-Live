@@ -5,19 +5,19 @@ public class CargoMoveTest : FacepunchBehaviour // TypeDefIndex: 8286
 	private float turnScale; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void FindInitialNode() { }
+	public void FindInitialNode() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void UpdateMovement() { }
+	public void UpdateMovement() { }
 
-public int GetClosestNodeToUs() { }
+	public int GetClosestNodeToUs() { }
 
-public void OnDrawGizmosSelected() { }
+	public void OnDrawGizmosSelected() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

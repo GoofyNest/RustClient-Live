@@ -11,10 +11,10 @@ public class CharacterJoint : Joint
 	[ObsoleteAttribute] 
 	public JointDrive rotationDrive; 
 
-public bool enableProjection { set; }
+	public bool enableProjection { set; }
 
 
-public void set_enableProjection(bool value) { }
+	public void set_enableProjection(bool value) { }
 
 }
 

@@ -9,21 +9,21 @@ public abstract class BaseScreenShake : MonoBehaviour // TypeDefIndex: 9364
 	private int currentFrame; 
 
 
-public static void Apply(Camera cam, BaseViewModel vm) { }
+	public static void Apply(Camera cam, BaseViewModel vm) { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void Run(ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
+	public void Run(ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
 
-public abstract void Setup();
+	public abstract void Setup();
 
-public abstract void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm);
+	public abstract void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm);
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

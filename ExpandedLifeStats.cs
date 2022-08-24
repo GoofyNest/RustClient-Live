@@ -23,22 +23,22 @@ public class ExpandedLifeStats : MonoBehaviour // TypeDefIndex: 10923
 	private List<GameObject> rowsToRetire; 
 
 
-public void Toggle() { }
+	public void Toggle() { }
 
-public void Toggle(bool newState) { }
+	public void Toggle(bool newState) { }
 
-private void PopulateDynamicStats() { }
+	private void PopulateDynamicStats() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator WaitAndRelayout() { }
+	private IEnumerator WaitAndRelayout() { }
 
-private void PopulateGenericStats(List<ExpandedLifeStats.GenericStatDisplay> stats, Transform parent, PlayerLifeStory life) { }
+	private void PopulateGenericStats(List<ExpandedLifeStats.GenericStatDisplay> stats, Transform parent, PlayerLifeStory life) { }
 
-private void PopulateWeaponStats(List<PlayerLifeStory.WeaponStats> stats, Transform parent) { }
+	private void PopulateWeaponStats(List<PlayerLifeStory.WeaponStats> stats, Transform parent) { }
 
-public void UpdateScrollGradient() { }
+	public void UpdateScrollGradient() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -56,11 +56,11 @@ private sealed class ExpandedLifeStats.<>c // TypeDefIndex: 10925
 	public static Comparison<PlayerLifeStory.WeaponStats> <>9__21_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <PopulateDynamicStats>b__21_0(PlayerLifeStory.WeaponStats a, PlayerLifeStory.WeaponStats b) { }
+	internal int <PopulateDynamicStats>b__21_0(PlayerLifeStory.WeaponStats a, PlayerLifeStory.WeaponStats b) { }
 
 }
 
@@ -70,26 +70,26 @@ private sealed class ExpandedLifeStats.<WaitAndRelayout>d__22 : IEnumerator<obje
 	private object <>2__current; 
 	public ExpandedLifeStats <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -98,9 +98,9 @@ private sealed class ExpandedLifeStats.<>c__DisplayClass23_0 // TypeDefIndex: 10
 	public ExpandedLifeStats.GenericStatDisplay genericStatDisplay; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <PopulateGenericStats>b__0(PlayerLifeStory.GenericStat p) { }
+	internal bool <PopulateGenericStats>b__0(PlayerLifeStory.GenericStat p) { }
 
 }
 

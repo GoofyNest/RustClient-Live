@@ -17,26 +17,26 @@ internal class UVTextureAnimator : MonoBehaviour // TypeDefIndex: 11473
 	private Material instanceMaterial; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void InitDefaultVariables() { }
+	private void InitDefaultVariables() { }
 
-private void Play() { }
+	private void Play() { }
 
-private void PlayDelay() { }
+	private void PlayDelay() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator UpdateCorutine() { }
+	private IEnumerator UpdateCorutine() { }
 
-private void UpdateCorutineFrame() { }
+	private void UpdateCorutineFrame() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -46,26 +46,26 @@ private sealed class UVTextureAnimator.<UpdateCorutine>d__21 : IEnumerator<objec
 	private object <>2__current; 
 	public UVTextureAnimator <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

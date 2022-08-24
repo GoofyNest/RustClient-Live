@@ -3,11 +3,11 @@ internal sealed class ChromaticAberrationRenderer : PostProcessEffectRenderer<Ch
 	private Texture2D m_InternalSpectralLut; 
 
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public override void Release() { }
+	public override void Release() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

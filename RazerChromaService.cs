@@ -10,47 +10,47 @@ public class RazerChromaService : IRgbService // TypeDefIndex: 7713
 	[CompilerGeneratedAttribute] 
 	private Vector3 <ColorCorrection>k__BackingField; 
 
-public bool IsConnected { get; set; }
-public Vector3 ColorCorrection { get; set; }
+	public bool IsConnected { get; set; }
+	public Vector3 ColorCorrection { get; set; }
 
 
-public void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_IsConnected() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsConnected(bool value) { }
+	public bool get_IsConnected() { }
 
 	[CompilerGeneratedAttribute] 
-public Vector3 get_ColorCorrection() { }
+	private void set_IsConnected(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ColorCorrection(Vector3 value) { }
-
-public ValueTask Start() { }
-
-public ValueTask Stop() { }
-
-public ValueTask Update() { }
-
-public void StaticColor(Color color) { }
-
-public void PulseColor(Color color, float duration) { }
-
-public void Event(RgbEventType type) { }
-
-private void CalculateAndRenderColor() { }
-
-private static void SetColor(Color32 color) { }
-
-private static int ColorToInt32(byte r, byte g, byte b) { }
+	public Vector3 get_ColorCorrection() { }
 
 	[CompilerGeneratedAttribute] 
-internal static void <SetColor>g__EnableEffect|21_0(Guid effectId) { }
+	public void set_ColorCorrection(Vector3 value) { }
+
+	public ValueTask Start() { }
+
+	public ValueTask Stop() { }
+
+	public ValueTask Update() { }
+
+	public void StaticColor(Color color) { }
+
+	public void PulseColor(Color color, float duration) { }
+
+	public void Event(RgbEventType type) { }
+
+	private void CalculateAndRenderColor() { }
+
+	private static void SetColor(Color32 color) { }
+
+	private static int ColorToInt32(byte r, byte g, byte b) { }
 
 	[CompilerGeneratedAttribute] 
-internal static void <SetColor>g__CheckCreateEffect|21_1(int result) { }
+	internal static void <SetColor>g__EnableEffect|21_0(Guid effectId) { }
+
+	[CompilerGeneratedAttribute] 
+	internal static void <SetColor>g__CheckCreateEffect|21_1(int result) { }
 
 }
 

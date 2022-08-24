@@ -5,13 +5,13 @@ public abstract class VFXSpawnerCallbacks : ScriptableObject // TypeDefIndex: 47
 [Serializable]
 public abstract class VFXSpawnerCallbacks : ScriptableObject 
 
-public abstract void OnPlay(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
+	public abstract void OnPlay(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
 
-public abstract void OnUpdate(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
+	public abstract void OnUpdate(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
 
-public abstract void OnStop(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
+	public abstract void OnStop(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

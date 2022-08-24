@@ -9,15 +9,15 @@ public static class FirstPersonSpectatorMode // TypeDefIndex: 9188
 	private static TimeUntil reloadEnds; 
 
 
-public static void Apply(Camera cam, BaseEntity target) { }
+	public static void Apply(Camera cam, BaseEntity target) { }
 
-public static void OnFirstPersonSpectateEnds() { }
+	public static void OnFirstPersonSpectateEnds() { }
 
-public static void OnPlayerSignal(BaseEntity.Signal signal, string arg, BasePlayer fromPlayer) { }
+	public static void OnPlayerSignal(BaseEntity.Signal signal, string arg, BasePlayer fromPlayer) { }
 
-public static void OnHeldNetworkUpdate(HeldEntity entity) { }
+	public static void OnHeldNetworkUpdate(HeldEntity entity) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

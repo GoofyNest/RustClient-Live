@@ -25,9 +25,9 @@ public class ERSOMarker // TypeDefIndex: 7236
 	public float rotationCenter; 
 
 
-public void .ctor(SideObject so, bool flag) { }
+	public void .ctor(SideObject so, bool flag) { }
 
-public void OODOOOQQCO(ERSOMarkerExt source) { }
+	public void OODOOOQQCO(ERSOMarkerExt source) { }
 
 }
 

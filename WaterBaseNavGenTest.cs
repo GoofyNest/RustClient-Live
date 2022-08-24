@@ -4,9 +4,9 @@ public class WaterBaseNavGenTest : MonoBehaviour // TypeDefIndex: 8285
 
 
 	[ContextMenu] 
-public void NavGen() { }
+	public void NavGen() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

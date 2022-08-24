@@ -19,35 +19,35 @@ public class VoiceProcessor : EntityComponentBase // TypeDefIndex: 9663
 	private static MemoryStream decompressStream; 
 
 
-private void InitializeSpeaker() { }
+	private void InitializeSpeaker() { }
 
-public void ClientUpdate() { }
+	public void ClientUpdate() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void StopPlayback() { }
+	public void StopPlayback() { }
 
-private void StartPlaying() { }
+	private void StartPlaying() { }
 
-private bool ShouldMute() { }
+	private bool ShouldMute() { }
 
-private void OnAudioRead(float[] data) { }
+	private void OnAudioRead(float[] data) { }
 
-public void Receive(byte[] data) { }
+	public void Receive(byte[] data) { }
 
-private void WriteToClip(byte[] uncompressed, int iSize) { }
+	private void WriteToClip(byte[] uncompressed, int iSize) { }
 
-public void RegisterSubProcessor(VoiceProcessor processor) { }
+	public void RegisterSubProcessor(VoiceProcessor processor) { }
 
-public void DeregisterSubProcessor(VoiceProcessor processor) { }
+	public void DeregisterSubProcessor(VoiceProcessor processor) { }
 
-public void ReceiveDataFromOtherProcessor(byte[] data, int size, VoiceProcessor fromProcessor) { }
+	public void ReceiveDataFromOtherProcessor(byte[] data, int size, VoiceProcessor fromProcessor) { }
 
-private void WriteToClip(float f) { }
+	private void WriteToClip(float f) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -7,23 +7,23 @@ public class MapLayerRenderer : SingletonComponent<MapLayerRenderer> // TypeDefI
 	private Nullable<MapLayer> _currentlyRenderedLayer; 
 
 
-private void RenderTrainLayer() { }
+	private void RenderTrainLayer() { }
 
-private CommandBuffer BuildCommandBufferTrainTunnels() { }
+	private CommandBuffer BuildCommandBufferTrainTunnels() { }
 
-private void RenderUnderwaterLabs(int floor) { }
+	private void RenderUnderwaterLabs(int floor) { }
 
-public int GetUnderwaterLabFloorCount() { }
+	public int GetUnderwaterLabFloorCount() { }
 
-private CommandBuffer BuildCommandBufferUnderwaterLabs(int floor) { }
+	private CommandBuffer BuildCommandBufferUnderwaterLabs(int floor) { }
 
-public void Render(MapLayer layer) { }
+	public void Render(MapLayer layer) { }
 
-private void RenderImpl(CommandBuffer cb) { }
+	private void RenderImpl(CommandBuffer cb) { }
 
-public static MapLayerRenderer GetOrCreate() { }
+	public static MapLayerRenderer GetOrCreate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -33,11 +33,11 @@ private sealed class MapLayerRenderer.<>c // TypeDefIndex: 10949
 	public static Func<DungeonBaseInfo, int> <>9__4_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <GetUnderwaterLabFloorCount>b__4_0(DungeonBaseInfo l) { }
+	internal int <GetUnderwaterLabFloorCount>b__4_0(DungeonBaseInfo l) { }
 
 }
 

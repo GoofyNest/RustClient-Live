@@ -15,45 +15,45 @@ public class WebSocketConnectionInfo : IWebSocketConnectionInfo // TypeDefIndex:
 	[CompilerGeneratedAttribute] 
 	private Guid <Id>k__BackingField; 
 
-private string SubProtocol { set; }
-private string Origin { set; }
-private string Host { set; }
-public string Path { get; set; }
-public IPAddress ClientIpAddress { get; set; }
-public int ClientPort { set; }
-public Guid Id { set; }
+	private string SubProtocol { set; }
+	private string Origin { set; }
+	private string Host { set; }
+	public string Path { get; set; }
+	public IPAddress ClientIpAddress { get; set; }
+	public int ClientPort { set; }
+	public Guid Id { set; }
 
 
-public static WebSocketConnectionInfo Create(WebSocketHttpRequest request, IPAddress clientIp, int clientPort) { }
+	public static WebSocketConnectionInfo Create(WebSocketHttpRequest request, IPAddress clientIp, int clientPort) { }
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-private void set_SubProtocol(string value) { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Origin(string value) { }
+	private void set_SubProtocol(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Host(string value) { }
+	private void set_Origin(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Path() { }
+	private void set_Host(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Path(string value) { }
+	public string get_Path() { }
 
 	[CompilerGeneratedAttribute] 
-public IPAddress get_ClientIpAddress() { }
+	private void set_Path(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ClientIpAddress(IPAddress value) { }
+	public IPAddress get_ClientIpAddress() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ClientPort(int value) { }
+	public void set_ClientIpAddress(IPAddress value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Id(Guid value) { }
+	public void set_ClientPort(int value) { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Id(Guid value) { }
 
 }
 

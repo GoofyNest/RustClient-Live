@@ -9,7 +9,7 @@ public class Entry // TypeDefIndex: 6253
 	public DateTime Created; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

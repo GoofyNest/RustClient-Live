@@ -55,38 +55,38 @@ public class BaseHelicopter : BaseCombatEntity // TypeDefIndex: 8519
 	private bool nightLightsOn; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void InitalizeWeakspots() { }
+	public void InitalizeWeakspots() { }
 
-public override float MaxVelocity() { }
+	public override float MaxVelocity() { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void InitializeClientsideEffects() { }
+	public void InitializeClientsideEffects() { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-public void SetLights(bool areOn) { }
+	public void SetLights(bool areOn) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateEffects() { }
+	public void UpdateEffects() { }
 
-public void UpdateRotorWashPosition(Vector3 pos, Vector3 normal) { }
+	public void UpdateRotorWashPosition(Vector3 pos, Vector3 normal) { }
 
-public void ToggleRotorWash(bool enabled) { }
+	public void ToggleRotorWash(bool enabled) { }
 
-public void UpdateRotorVisibility() { }
+	public void UpdateRotorVisibility() { }
 
 	[BaseEntity.RPC_Client] 
-public void FireGun(BaseEntity.RPCMessage rpc) { }
+	public void FireGun(BaseEntity.RPCMessage rpc) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -104,11 +104,11 @@ public class BaseHelicopter.weakspot // TypeDefIndex: 8520
 	public List<BasePlayer> attackers; 
 
 
-public float HealthFraction() { }
+	public float HealthFraction() { }
 
-public void ClientHealthUpdate(float newHealth) { }
+	public void ClientHealthUpdate(float newHealth) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

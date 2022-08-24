@@ -7,15 +7,15 @@ public class MACTripleDES : KeyedHashAlgorithm // TypeDefIndex: 969
 	private TripleDES des; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void Initialize() { }
+	public override void Initialize() { }
 
-protected override void HashCore(byte[] rgbData, int ibStart, int cbSize) { }
+	protected override void HashCore(byte[] rgbData, int ibStart, int cbSize) { }
 
-protected override byte[] HashFinal() { }
+	protected override byte[] HashFinal() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
 }
 

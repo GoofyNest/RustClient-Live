@@ -9,7 +9,7 @@ public class M2BradleyPhysics : MonoBehaviour // TypeDefIndex: 9592
 	private Vector3 nextWaypoint; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -9,9 +9,9 @@ public class GenericSpawnPoint : BaseSpawnPoint // TypeDefIndex: 9998
 	public UnityEvent OnObjectRetiredEvent; 
 
 
-public Quaternion GetRandomRotation() { }
+	public Quaternion GetRandomRotation() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

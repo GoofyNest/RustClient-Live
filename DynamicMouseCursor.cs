@@ -9,13 +9,13 @@ public class DynamicMouseCursor : MonoBehaviour // TypeDefIndex: 10920
 	private List<RaycastResult> results; 
 
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-private void UpdateCursor(Texture2D cursor, Vector2 offs) { }
+	private void UpdateCursor(Texture2D cursor, Vector2 offs) { }
 
-private GameObject CurrentlyHoveredItem() { }
+	private GameObject CurrentlyHoveredItem() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

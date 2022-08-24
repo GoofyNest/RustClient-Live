@@ -6,17 +6,17 @@ public class CameraTool : HeldEntity // TypeDefIndex: 8542
 	internal float focalDistanceSmooth; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void EditViewAngles() { }
+	public override void EditViewAngles() { }
 
-public override void OnFrame() { }
+	public override void OnFrame() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override void ModifyCamera() { }
+	public override void ModifyCamera() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

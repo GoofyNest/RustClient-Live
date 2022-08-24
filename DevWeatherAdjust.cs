@@ -1,11 +1,11 @@
 public class DevWeatherAdjust : MonoBehaviour // TypeDefIndex: 9303
 {
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnGUI() { }
+	protected void OnGUI() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

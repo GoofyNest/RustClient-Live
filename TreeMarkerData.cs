@@ -9,9 +9,9 @@ public class TreeMarkerData : PrefabAttribute, IServerComponent // TypeDefIndex:
 	public bool ProcessAngleChecks; 
 
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

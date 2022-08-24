@@ -10,23 +10,23 @@ public class MLRSUIDialog : UIDialog // TypeDefIndex: 9726
 	private string baseTitleText; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-public override void Clear() { }
+	public override void Clear() { }
 
-public void Init(MLRS mlrs) { }
+	public void Init(MLRS mlrs) { }
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-public override void CloseDialog() { }
+	public override void CloseDialog() { }
 
-private void SwapTitleText() { }
+	private void SwapTitleText() { }
 
-private void ClearOwner() { }
+	private void ClearOwner() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

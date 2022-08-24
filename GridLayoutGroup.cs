@@ -13,76 +13,76 @@ public class GridLayoutGroup : LayoutGroup // TypeDefIndex: 4965
 	[SerializeField] 
 	protected int m_ConstraintCount; 
 
-public GridLayoutGroup.Corner startCorner { get; set; }
-public GridLayoutGroup.Axis startAxis { get; set; }
-public Vector2 cellSize { get; set; }
-public Vector2 spacing { get; set; }
-public GridLayoutGroup.Constraint constraint { get; set; }
-public int constraintCount { get; set; }
+	public GridLayoutGroup.Corner startCorner { get; set; }
+	public GridLayoutGroup.Axis startAxis { get; set; }
+	public Vector2 cellSize { get; set; }
+	public Vector2 spacing { get; set; }
+	public GridLayoutGroup.Constraint constraint { get; set; }
+	public int constraintCount { get; set; }
 
 
-public GridLayoutGroup.Corner get_startCorner() { }
+	public GridLayoutGroup.Corner get_startCorner() { }
 
-public void set_startCorner(GridLayoutGroup.Corner value) { }
+	public void set_startCorner(GridLayoutGroup.Corner value) { }
 
-public GridLayoutGroup.Axis get_startAxis() { }
+	public GridLayoutGroup.Axis get_startAxis() { }
 
-public void set_startAxis(GridLayoutGroup.Axis value) { }
+	public void set_startAxis(GridLayoutGroup.Axis value) { }
 
-public Vector2 get_cellSize() { }
+	public Vector2 get_cellSize() { }
 
-public void set_cellSize(Vector2 value) { }
+	public void set_cellSize(Vector2 value) { }
 
-public Vector2 get_spacing() { }
+	public Vector2 get_spacing() { }
 
-public void set_spacing(Vector2 value) { }
+	public void set_spacing(Vector2 value) { }
 
-public GridLayoutGroup.Constraint get_constraint() { }
+	public GridLayoutGroup.Constraint get_constraint() { }
 
-public void set_constraint(GridLayoutGroup.Constraint value) { }
+	public void set_constraint(GridLayoutGroup.Constraint value) { }
 
-public int get_constraintCount() { }
+	public int get_constraintCount() { }
 
-public void set_constraintCount(int value) { }
+	public void set_constraintCount(int value) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public override void CalculateLayoutInputHorizontal() { }
+	public override void CalculateLayoutInputHorizontal() { }
 
-public override void CalculateLayoutInputVertical() { }
+	public override void CalculateLayoutInputVertical() { }
 
-public override void SetLayoutHorizontal() { }
+	public override void SetLayoutHorizontal() { }
 
-public override void SetLayoutVertical() { }
+	public override void SetLayoutVertical() { }
 
-private void SetCellsAlongAxis(int axis) { }
+	private void SetCellsAlongAxis(int axis) { }
 
 }
 
 public enum GridLayoutGroup.Corner // TypeDefIndex: 4966
 {
 	public int value__; 
-public const GridLayoutGroup.Corner UpperLeft = 0;
-public const GridLayoutGroup.Corner UpperRight = 1;
-public const GridLayoutGroup.Corner LowerLeft = 2;
-public const GridLayoutGroup.Corner LowerRight = 3;
+	public const GridLayoutGroup.Corner UpperLeft = 0;
+	public const GridLayoutGroup.Corner UpperRight = 1;
+	public const GridLayoutGroup.Corner LowerLeft = 2;
+	public const GridLayoutGroup.Corner LowerRight = 3;
 
 }
 
 public enum GridLayoutGroup.Axis // TypeDefIndex: 4967
 {
 	public int value__; 
-public const GridLayoutGroup.Axis Horizontal = 0;
-public const GridLayoutGroup.Axis Vertical = 1;
+	public const GridLayoutGroup.Axis Horizontal = 0;
+	public const GridLayoutGroup.Axis Vertical = 1;
 
 }
 
 public enum GridLayoutGroup.Constraint // TypeDefIndex: 4968
 {
 	public int value__; 
-public const GridLayoutGroup.Constraint Flexible = 0;
-public const GridLayoutGroup.Constraint FixedColumnCount = 1;
-public const GridLayoutGroup.Constraint FixedRowCount = 2;
+	public const GridLayoutGroup.Constraint Flexible = 0;
+	public const GridLayoutGroup.Constraint FixedColumnCount = 1;
+	public const GridLayoutGroup.Constraint FixedRowCount = 2;
 
 }
 

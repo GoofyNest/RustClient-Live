@@ -12,7 +12,7 @@ public class BaseFishingRod : HeldEntity // TypeDefIndex: 8513
 	public float ConditionLossOnFail; 
 	public float GlobalStrainSpeedMultiplier; 
 	public float MaxCastDistance; 
-public const BaseEntity.Flags Straining = 128;
+	public const BaseEntity.Flags Straining = 128;
 	public ItemModFishable ForceFish; 
 	public static BaseEntity.Flags PullingLeftFlag; 
 	public static BaseEntity.Flags PullingRightFlag; 
@@ -45,115 +45,115 @@ public const BaseEntity.Flags Straining = 128;
 	private TimeUntil consumingBackMovement; 
 	private TimeSince reelInAnimTimer; 
 
-public BaseFishingRod.CatchState CurrentState { get; set; }
-public static bool ShowLureFailError { get; }
+	public BaseFishingRod.CatchState CurrentState { get; set; }
+	public static bool ShowLureFailError { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[CompilerGeneratedAttribute] 
-public BaseFishingRod.CatchState get_CurrentState() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentState(BaseFishingRod.CatchState value) { }
+	public BaseFishingRod.CatchState get_CurrentState() { }
 
-public static bool get_ShowLureFailError() { }
+	[CompilerGeneratedAttribute] 
+	private void set_CurrentState(BaseFishingRod.CatchState value) { }
 
-public override void OnInput() { }
+	public static bool get_ShowLureFailError() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnInput() { }
 
-private void UpdateLineRenderer() { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-private void UpdateSounds(bool onLine, float strainAmount) { }
+	private void UpdateLineRenderer() { }
 
-private Vector3 GetCurrentCastArcTarget(BasePlayer ply) { }
+	private void UpdateSounds(bool onLine, float strainAmount) { }
 
-private Vector3 GetWorldSpaceLineRendererStartPoint(BasePlayer ply, FishingRodViewmodel fishViewmodel) { }
+	private Vector3 GetCurrentCastArcTarget(BasePlayer ply) { }
 
-private Vector3 GetRodCatchPoint(BasePlayer ply, FishingRodViewmodel fishViewmodel) { }
+	private Vector3 GetWorldSpaceLineRendererStartPoint(BasePlayer ply, FishingRodViewmodel fishViewmodel) { }
 
-public override bool HeldEntityBlocksMovement(InputState state) { }
+	private Vector3 GetRodCatchPoint(BasePlayer ply, FishingRodViewmodel fishViewmodel) { }
 
-	[BaseEntity.RPC_Client] 
-private void Client_ReceiveCastPoint(BaseEntity.RPCMessage msg) { }
-
-	[BaseEntity.RPC_Client] 
-private void Client_HookedSomething(BaseEntity.RPCMessage msg) { }
+	public override bool HeldEntityBlocksMovement(InputState state) { }
 
 	[BaseEntity.RPC_Client] 
-private void Client_UpdateFishState(BaseEntity.RPCMessage msg) { }
+	private void Client_ReceiveCastPoint(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void Client_OnCaughtFish(BaseEntity.RPCMessage msg) { }
+	private void Client_HookedSomething(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void Client_ResetLine(BaseEntity.RPCMessage msg) { }
+	private void Client_UpdateFishState(BaseEntity.RPCMessage msg) { }
 
-public override void OnViewmodelEvent(string name) { }
+	[BaseEntity.RPC_Client] 
+	private void Client_OnCaughtFish(BaseEntity.RPCMessage msg) { }
 
-protected override void ProcessPlayerModel(PlayerModel playerModel) { }
+	[BaseEntity.RPC_Client] 
+	private void Client_ResetLine(BaseEntity.RPCMessage msg) { }
 
-public override void OnHolster() { }
+	public override void OnViewmodelEvent(string name) { }
 
-public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+	protected override void ProcessPlayerModel(PlayerModel playerModel) { }
 
-public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+	public override void OnHolster() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public override bool BlocksGestures() { }
+	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-private bool AllowPullInDirection(Vector3 worldDirection, Vector3 bobberPosition) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private bool EvaluateFishingPosition(ref Vector3 pos, BasePlayer ply, out BaseFishingRod.FailReason reason, out WaterBody waterBody) { }
+	public override bool BlocksGestures() { }
 
-private Item GetCurrentLure() { }
+	private bool AllowPullInDirection(Vector3 worldDirection, Vector3 bobberPosition) { }
 
-private bool HasReelInInput(InputState state) { }
+	private bool EvaluateFishingPosition(ref Vector3 pos, BasePlayer ply, out BaseFishingRod.FailReason reason, out WaterBody waterBody) { }
 
-public void .ctor() { }
+	private Item GetCurrentLure() { }
 
-private static void .cctor() { }
+	private bool HasReelInInput(InputState state) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum BaseFishingRod.CatchState // TypeDefIndex: 8514
 {
 	public int value__; 
-public const BaseFishingRod.CatchState None = 0;
-public const BaseFishingRod.CatchState Aiming = 1;
-public const BaseFishingRod.CatchState Waiting = 2;
-public const BaseFishingRod.CatchState Catching = 3;
-public const BaseFishingRod.CatchState Caught = 4;
+	public const BaseFishingRod.CatchState None = 0;
+	public const BaseFishingRod.CatchState Aiming = 1;
+	public const BaseFishingRod.CatchState Waiting = 2;
+	public const BaseFishingRod.CatchState Catching = 3;
+	public const BaseFishingRod.CatchState Caught = 4;
 
 }
 
 public enum BaseFishingRod.FishState // TypeDefIndex: 8515
 {
 	public int value__; 
-public const BaseFishingRod.FishState PullingLeft = 1;
-public const BaseFishingRod.FishState PullingRight = 2;
-public const BaseFishingRod.FishState PullingBack = 4;
+	public const BaseFishingRod.FishState PullingLeft = 1;
+	public const BaseFishingRod.FishState PullingRight = 2;
+	public const BaseFishingRod.FishState PullingBack = 4;
 
 }
 
 public enum BaseFishingRod.FailReason // TypeDefIndex: 8516
 {
 	public int value__; 
-public const BaseFishingRod.FailReason UserRequested = 0;
-public const BaseFishingRod.FailReason BadAngle = 1;
-public const BaseFishingRod.FailReason TensionBreak = 2;
-public const BaseFishingRod.FailReason Unequipped = 3;
-public const BaseFishingRod.FailReason TimeOut = 4;
-public const BaseFishingRod.FailReason Success = 5;
-public const BaseFishingRod.FailReason NoWaterFound = 6;
-public const BaseFishingRod.FailReason Obstructed = 7;
-public const BaseFishingRod.FailReason NoLure = 8;
-public const BaseFishingRod.FailReason TooShallow = 9;
-public const BaseFishingRod.FailReason TooClose = 10;
-public const BaseFishingRod.FailReason TooFarAway = 11;
-public const BaseFishingRod.FailReason PlayerMoved = 12;
+	public const BaseFishingRod.FailReason UserRequested = 0;
+	public const BaseFishingRod.FailReason BadAngle = 1;
+	public const BaseFishingRod.FailReason TensionBreak = 2;
+	public const BaseFishingRod.FailReason Unequipped = 3;
+	public const BaseFishingRod.FailReason TimeOut = 4;
+	public const BaseFishingRod.FailReason Success = 5;
+	public const BaseFishingRod.FailReason NoWaterFound = 6;
+	public const BaseFishingRod.FailReason Obstructed = 7;
+	public const BaseFishingRod.FailReason NoLure = 8;
+	public const BaseFishingRod.FailReason TooShallow = 9;
+	public const BaseFishingRod.FailReason TooClose = 10;
+	public const BaseFishingRod.FailReason TooFarAway = 11;
+	public const BaseFishingRod.FailReason PlayerMoved = 12;
 
 }
 

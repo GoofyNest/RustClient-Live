@@ -9,9 +9,9 @@ public class WaterRendering // TypeDefIndex: 10618
 	private bool initialized; 
 	private WaterRadialMesh radialMesh; 
 	private WaterRendering.RenderState state; 
-private const int MaxCullingVolumes = 4;
-private const float MaxCullingVolumeDistanceToCamera = 500;
-private const float MaxCullingVolumeSqrDistanceToCamera = 250000;
+	private const int MaxCullingVolumes = 4;
+	private const float MaxCullingVolumeDistanceToCamera = 500;
+	private const float MaxCullingVolumeSqrDistanceToCamera = 250000;
 	private static Vector4[] cullingVolumeArray; 
 	private static Plane[] frustumPlanes; 
 	private Material reflectionMat; 
@@ -32,77 +32,77 @@ private const float MaxCullingVolumeSqrDistanceToCamera = 250000;
 	private RenderTargetIdentifier[] targets; 
 	private bool initializedMaterials; 
 
-public bool IsInitialized { get; }
-public Material ReflectionMaterial { get; }
-public Material UnderwaterMaterial { get; }
-public MaterialPropertyBlock UnderwaterBlock { get; }
+	public bool IsInitialized { get; }
+	public Material ReflectionMaterial { get; }
+	public Material UnderwaterMaterial { get; }
+	public MaterialPropertyBlock UnderwaterBlock { get; }
 
 
-public bool get_IsInitialized() { }
+	public bool get_IsInitialized() { }
 
-public Material get_ReflectionMaterial() { }
+	public Material get_ReflectionMaterial() { }
 
-public Material get_UnderwaterMaterial() { }
+	public Material get_UnderwaterMaterial() { }
 
-public MaterialPropertyBlock get_UnderwaterBlock() { }
+	public MaterialPropertyBlock get_UnderwaterBlock() { }
 
-public void Initialize(WaterSystem water, WaterRuntime runtime, int maxVertexCount) { }
+	public void Initialize(WaterSystem water, WaterRuntime runtime, int maxVertexCount) { }
 
-public void Destroy() { }
+	public void Destroy() { }
 
-private void CheckScreenSize() { }
+	private void CheckScreenSize() { }
 
-private void CheckCommandBuffer() { }
+	private void CheckCommandBuffer() { }
 
-private void CleanupCommandBuffer() { }
+	private void CleanupCommandBuffer() { }
 
-public bool CheckLostData() { }
+	public bool CheckLostData() { }
 
-private static void CheckCreateRenderTexture(ref RenderTexture rt, string name, int width, int height, RenderTextureFormat format, bool linear, FilterMode filter = 0) { }
+	private static void CheckCreateRenderTexture(ref RenderTexture rt, string name, int width, int height, RenderTextureFormat format, bool linear, FilterMode filter = 0) { }
 
-private static void SafeDestroyRenderTexture(ref RenderTexture rt) { }
+	private static void SafeDestroyRenderTexture(ref RenderTexture rt) { }
 
-private void CheckRenderTextures() { }
+	private void CheckRenderTextures() { }
 
-private void CleanupRenderTextures() { }
+	private void CleanupRenderTextures() { }
 
-private void CheckOverlayMesh() { }
+	private void CheckOverlayMesh() { }
 
-private void CleanupOverlayMesh() { }
+	private void CleanupOverlayMesh() { }
 
-private bool IsVisibleToCamera() { }
+	private bool IsVisibleToCamera() { }
 
-private void FillCommandBuffer_SetGlobals(CommandBuffer cb) { }
+	private void FillCommandBuffer_SetGlobals(CommandBuffer cb) { }
 
-private void FillCommandBuffer_Mask(CommandBuffer cb) { }
+	private void FillCommandBuffer_Mask(CommandBuffer cb) { }
 
-private void FillCommandBuffer_Depth(CommandBuffer cb) { }
+	private void FillCommandBuffer_Depth(CommandBuffer cb) { }
 
-private void FillCommandBuffer_PreFog(CommandBuffer cb) { }
+	private void FillCommandBuffer_PreFog(CommandBuffer cb) { }
 
-private void FillCommandBuffer_PostFog(CommandBuffer cb) { }
+	private void FillCommandBuffer_PostFog(CommandBuffer cb) { }
 
-private void CheckAndClearUnderwaterBlock() { }
+	private void CheckAndClearUnderwaterBlock() { }
 
-public void ClearUnderwaterScatterCoefficientOverride() { }
+	public void ClearUnderwaterScatterCoefficientOverride() { }
 
-public void SetUnderwaterScatterCoefficientOverride(float scatterCoefficient) { }
+	public void SetUnderwaterScatterCoefficientOverride(float scatterCoefficient) { }
 
-public void UpdateUnderwaterMaterial(Material reference) { }
+	public void UpdateUnderwaterMaterial(Material reference) { }
 
-public static List<WaterCullingVolume> FindAndSortVisibleCullingVolumes(Camera camera, List<WaterCullingVolume> list) { }
+	public static List<WaterCullingVolume> FindAndSortVisibleCullingVolumes(Camera camera, List<WaterCullingVolume> list) { }
 
-public void PrepareRender(int visibilityMask) { }
+	public void PrepareRender(int visibilityMask) { }
 
-private bool IssueRender(bool debug, bool depthOnly) { }
+	private bool IssueRender(bool debug, bool depthOnly) { }
 
-public bool IssueRender(bool debug) { }
+	public bool IssueRender(bool debug) { }
 
-public void ShowDebug() { }
+	public void ShowDebug() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -125,11 +125,11 @@ private sealed class WaterRendering.<>c // TypeDefIndex: 10620
 	public static Comparison<WaterCullingVolume> <>9__62_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <FindAndSortVisibleCullingVolumes>b__62_0(WaterCullingVolume x, WaterCullingVolume y) { }
+	internal int <FindAndSortVisibleCullingVolumes>b__62_0(WaterCullingVolume x, WaterCullingVolume y) { }
 
 }
 

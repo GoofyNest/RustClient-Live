@@ -44,87 +44,87 @@ public class MapView : FacepunchBehaviour // TypeDefIndex: 10953
 	private MapLayer visibleLayer; 
 	internal static MapEntity lastActiveMap; 
 
-public bool followingPlayer { get; set; }
-private bool IsOpen { get; }
-public static float MarkerScale { get; }
-private static BasePlayer LocalPlayerEntity { get; }
+	public bool followingPlayer { get; set; }
+	private bool IsOpen { get; }
+	public static float MarkerScale { get; }
+	private static BasePlayer LocalPlayerEntity { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_followingPlayer() { }
+	public bool get_followingPlayer() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_followingPlayer(bool value) { }
+	public void set_followingPlayer(bool value) { }
 
-private bool get_IsOpen() { }
+	private bool get_IsOpen() { }
 
-public static float get_MarkerScale() { }
+	public static float get_MarkerScale() { }
 
-private static BasePlayer get_LocalPlayerEntity() { }
+	private static BasePlayer get_LocalPlayerEntity() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-public void SetActiveView() { }
+	public void SetActiveView() { }
 
-public void ClearActiveView() { }
+	public void ClearActiveView() { }
 
-public void MarkersDirty() { }
+	public void MarkersDirty() { }
 
-private void SetupMonuments() { }
+	private void SetupMonuments() { }
 
-private void SetupMarkers() { }
+	private void SetupMarkers() { }
 
-public void PopulateMarker(MapMarker marker) { }
+	public void PopulateMarker(MapMarker marker) { }
 
-private void PopulateMarker(GameObject uiMarker, MapMarker marker) { }
+	private void PopulateMarker(GameObject uiMarker, MapMarker marker) { }
 
-public void UpdatePointsOfInterest() { }
+	public void UpdatePointsOfInterest() { }
 
-public void PopulateSleepingBags() { }
+	public void PopulateSleepingBags() { }
 
-private SleepingBagMapMarker GetSleepingBagMarker() { }
+	private SleepingBagMapMarker GetSleepingBagMarker() { }
 
-private SleepingBagClusterMapMarker GetSleepingBagClusterMarker() { }
+	private SleepingBagClusterMapMarker GetSleepingBagClusterMarker() { }
 
-private void BuildMapMarkerClusters(List<MapMarker> markers, List<MapView.MapMarkerCluster> resultClusters, List<MapMarker> resultMarkers) { }
+	private void BuildMapMarkerClusters(List<MapMarker> markers, List<MapView.MapMarkerCluster> resultClusters, List<MapMarker> resultMarkers) { }
 
-private void BuildSpawnOptionClusters(List<RespawnInformation.SpawnOptions> spawnOptions, ref List<MapView.SleepingBagCluster> resultClusters, ref List<RespawnInformation.SpawnOptions> resultSleepingBags) { }
+	private void BuildSpawnOptionClusters(List<RespawnInformation.SpawnOptions> spawnOptions, ref List<MapView.SleepingBagCluster> resultClusters, ref List<RespawnInformation.SpawnOptions> resultSleepingBags) { }
 
-private bool ShouldShowSleepingBags() { }
+	private bool ShouldShowSleepingBags() { }
 
-private void UpdateMissionMarkers() { }
+	private void UpdateMissionMarkers() { }
 
-public void UpdateMarkers() { }
+	public void UpdateMarkers() { }
 
-private void Update() { }
+	private void Update() { }
 
-private MapLayer GetSelectedMapLayer() { }
+	private MapLayer GetSelectedMapLayer() { }
 
-private static Nullable<MapLayer> GetCurrentUndergroundLayer() { }
+	private static Nullable<MapLayer> GetCurrentUndergroundLayer() { }
 
-public Vector2 WorldPosToImagePos(Vector3 worldPos) { }
+	public Vector2 WorldPosToImagePos(Vector3 worldPos) { }
 
-public Vector3 ImagePosToWorldPos(Vector2 imagePos) { }
+	public Vector3 ImagePosToWorldPos(Vector2 imagePos) { }
 
-public void CenterOn(Vector3 worldPos) { }
+	public void CenterOn(Vector3 worldPos) { }
 
-public void UpdatePlayerPosition(BasePlayer player) { }
+	public void UpdatePlayerPosition(BasePlayer player) { }
 
-public void DoPlayerUpdate() { }
+	public void DoPlayerUpdate() { }
 
-public void ClientTeamUpdated(bool positionsOnly = False) { }
+	public void ClientTeamUpdated(bool positionsOnly = False) { }
 
-public void LockCurrentLayer() { }
+	public void LockCurrentLayer() { }
 
-public void UnlockCurrentLayer() { }
+	public void UnlockCurrentLayer() { }
 
-public void SetCurrentLayer(int layer) { }
+	public void SetCurrentLayer(int layer) { }
 
-public void UpdateLayerButtons(Nullable<MapLayer> currentLayer) { }
+	public void UpdateLayerButtons(Nullable<MapLayer> currentLayer) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -6,11 +6,11 @@ public class FrostRenderer : PostProcessEffectRenderer<Frost> // TypeDefIndex: 1
 	private Shader frostShader; 
 
 
-public override void Init() { }
+	public override void Init() { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,26 +6,26 @@ internal class RemotingProxy : RealProxy, IRemotingTypeInfo // TypeDefIndex: 116
 	private bool _hasEnvoySink; 
 	private ConstructionCall _ctorCall; 
 
-public string TypeName { get; }
+	public string TypeName { get; }
 
 
-internal void .ctor(Type type, ClientIdentity identity) { }
+	internal void .ctor(Type type, ClientIdentity identity) { }
 
-internal void .ctor(Type type, string activationUrl, object[] activationAttributes) { }
+	internal void .ctor(Type type, string activationUrl, object[] activationAttributes) { }
 
-public override IMessage Invoke(IMessage request) { }
+	public override IMessage Invoke(IMessage request) { }
 
-internal void AttachIdentity(Identity identity) { }
+	internal void AttachIdentity(Identity identity) { }
 
-internal IMessage ActivateRemoteObject(IMethodMessage request) { }
+	internal IMessage ActivateRemoteObject(IMethodMessage request) { }
 
-public string get_TypeName() { }
+	public string get_TypeName() { }
 
-public bool CanCastTo(Type fromType, object o) { }
+	public bool CanCastTo(Type fromType, object o) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -18,13 +18,13 @@ public class TimedExplosive : BaseEntity // TypeDefIndex: 9683
 	private float lastBounceTime; 
 
 
-public override void DoDestroyEffects(BaseNetworkable.DestroyMode mode, Message msg) { }
+	public override void DoDestroyEffects(BaseNetworkable.DestroyMode mode, Message msg) { }
 
-public override float GetExtrapolationTime() { }
+	public override float GetExtrapolationTime() { }
 
-public virtual void SetCollisionEnabled(bool wantsCollision) { }
+	public virtual void SetCollisionEnabled(bool wantsCollision) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

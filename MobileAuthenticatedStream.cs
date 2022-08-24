@@ -20,129 +20,129 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 	private static int nextId; 
 	internal readonly int ID; 
 
-public MonoTlsSettings Settings { get; }
-public MonoTlsProvider Provider { get; }
-public AuthenticatedStream AuthenticatedStream { get; }
-public override bool IsAuthenticated { get; }
-public X509Certificate InternalLocalCertificate { get; }
-public override bool CanRead { get; }
-public override bool CanWrite { get; }
-public override bool CanSeek { get; }
-public override long Length { get; }
-public override long Position { get; set; }
-public override int ReadTimeout { get; }
-public override int WriteTimeout { get; }
+	public MonoTlsSettings Settings { get; }
+	public MonoTlsProvider Provider { get; }
+	public AuthenticatedStream AuthenticatedStream { get; }
+	public override bool IsAuthenticated { get; }
+	public X509Certificate InternalLocalCertificate { get; }
+	public override bool CanRead { get; }
+	public override bool CanWrite { get; }
+	public override bool CanSeek { get; }
+	public override long Length { get; }
+	public override long Position { get; set; }
+	public override int ReadTimeout { get; }
+	public override int WriteTimeout { get; }
 
 
-public void .ctor(Stream innerStream, bool leaveInnerStreamOpen, SslStream owner, MonoTlsSettings settings, MonoTlsProvider provider) { }
-
-	[CompilerGeneratedAttribute] 
-public MonoTlsSettings get_Settings() { }
+	public void .ctor(Stream innerStream, bool leaveInnerStreamOpen, SslStream owner, MonoTlsSettings settings, MonoTlsProvider provider) { }
 
 	[CompilerGeneratedAttribute] 
-public MonoTlsProvider get_Provider() { }
-
-internal void CheckThrow(bool authSuccessCheck, bool shutdownCheck = False) { }
-
-internal static Exception GetSSPIException(Exception e) { }
-
-internal static Exception GetIOException(Exception e, string message) { }
-
-internal ExceptionDispatchInfo SetException(Exception e) { }
-
-public void AuthenticateAsClient(string targetHost, X509CertificateCollection clientCertificates, SslProtocols enabledSslProtocols, bool checkCertificateRevocation) { }
-
-public IAsyncResult BeginAuthenticateAsServer(X509Certificate serverCertificate, bool clientCertificateRequired, SslProtocols enabledSslProtocols, bool checkCertificateRevocation, AsyncCallback asyncCallback, object asyncState) { }
-
-public void EndAuthenticateAsServer(IAsyncResult asyncResult) { }
-
-public AuthenticatedStream get_AuthenticatedStream() { }
-
-	[AsyncStateMachineAttribute] 
-private Task ProcessAuthentication(bool runSynchronously, bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool clientCertRequired) { }
-
-protected abstract MobileTlsContext CreateContext(bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool askForClientCert);
-
-public override IAsyncResult BeginRead(byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState) { }
-
-public override int EndRead(IAsyncResult asyncResult) { }
-
-public override IAsyncResult BeginWrite(byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState) { }
-
-public override void EndWrite(IAsyncResult asyncResult) { }
-
-public override int Read(byte[] buffer, int offset, int count) { }
-
-public override void Write(byte[] buffer, int offset, int count) { }
-
-public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
-
-public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
-
-	[AsyncStateMachineAttribute] 
-private Task<int> StartOperation(MobileAuthenticatedStream.OperationType type, AsyncProtocolRequest asyncRequest, CancellationToken cancellationToken) { }
-
-internal int InternalRead(byte[] buffer, int offset, int size, out bool outWantMore) { }
-
-private ValueTuple<int, bool> InternalRead(AsyncProtocolRequest asyncRequest, BufferOffsetSize internalBuffer, byte[] buffer, int offset, int size) { }
-
-internal bool InternalWrite(byte[] buffer, int offset, int size) { }
-
-private bool InternalWrite(AsyncProtocolRequest asyncRequest, BufferOffsetSize2 internalBuffer, byte[] buffer, int offset, int size) { }
-
-	[AsyncStateMachineAttribute] 
-internal Task<int> InnerRead(bool sync, int requestedSize, CancellationToken cancellationToken) { }
-
-	[AsyncStateMachineAttribute] 
-internal Task InnerWrite(bool sync, CancellationToken cancellationToken) { }
-
-internal AsyncOperationStatus ProcessHandshake(AsyncOperationStatus status) { }
-
-internal ValueTuple<int, bool> ProcessRead(BufferOffsetSize userBuffer) { }
-
-internal ValueTuple<int, bool> ProcessWrite(BufferOffsetSize userBuffer) { }
-
-public override bool get_IsAuthenticated() { }
-
-protected override void Dispose(bool disposing) { }
-
-public override void Flush() { }
-
-public X509Certificate get_InternalLocalCertificate() { }
-
-public override long Seek(long offset, SeekOrigin origin) { }
-
-public override void SetLength(long value) { }
-
-public override bool get_CanRead() { }
-
-public override bool get_CanWrite() { }
-
-public override bool get_CanSeek() { }
-
-public override long get_Length() { }
-
-public override long get_Position() { }
-
-public override void set_Position(long value) { }
-
-public override int get_ReadTimeout() { }
-
-public override int get_WriteTimeout() { }
-
-private static void .cctor() { }
+	public MonoTlsSettings get_Settings() { }
 
 	[CompilerGeneratedAttribute] 
-private void <InnerWrite>b__67_0() { }
+	public MonoTlsProvider get_Provider() { }
+
+	internal void CheckThrow(bool authSuccessCheck, bool shutdownCheck = False) { }
+
+	internal static Exception GetSSPIException(Exception e) { }
+
+	internal static Exception GetIOException(Exception e, string message) { }
+
+	internal ExceptionDispatchInfo SetException(Exception e) { }
+
+	public void AuthenticateAsClient(string targetHost, X509CertificateCollection clientCertificates, SslProtocols enabledSslProtocols, bool checkCertificateRevocation) { }
+
+	public IAsyncResult BeginAuthenticateAsServer(X509Certificate serverCertificate, bool clientCertificateRequired, SslProtocols enabledSslProtocols, bool checkCertificateRevocation, AsyncCallback asyncCallback, object asyncState) { }
+
+	public void EndAuthenticateAsServer(IAsyncResult asyncResult) { }
+
+	public AuthenticatedStream get_AuthenticatedStream() { }
+
+	[AsyncStateMachineAttribute] 
+	private Task ProcessAuthentication(bool runSynchronously, bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool clientCertRequired) { }
+
+	protected abstract MobileTlsContext CreateContext(bool serverMode, string targetHost, SslProtocols enabledProtocols, X509Certificate serverCertificate, X509CertificateCollection clientCertificates, bool askForClientCert);
+
+	public override IAsyncResult BeginRead(byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState) { }
+
+	public override int EndRead(IAsyncResult asyncResult) { }
+
+	public override IAsyncResult BeginWrite(byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState) { }
+
+	public override void EndWrite(IAsyncResult asyncResult) { }
+
+	public override int Read(byte[] buffer, int offset, int count) { }
+
+	public override void Write(byte[] buffer, int offset, int count) { }
+
+	public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+
+	public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken) { }
+
+	[AsyncStateMachineAttribute] 
+	private Task<int> StartOperation(MobileAuthenticatedStream.OperationType type, AsyncProtocolRequest asyncRequest, CancellationToken cancellationToken) { }
+
+	internal int InternalRead(byte[] buffer, int offset, int size, out bool outWantMore) { }
+
+	private ValueTuple<int, bool> InternalRead(AsyncProtocolRequest asyncRequest, BufferOffsetSize internalBuffer, byte[] buffer, int offset, int size) { }
+
+	internal bool InternalWrite(byte[] buffer, int offset, int size) { }
+
+	private bool InternalWrite(AsyncProtocolRequest asyncRequest, BufferOffsetSize2 internalBuffer, byte[] buffer, int offset, int size) { }
+
+	[AsyncStateMachineAttribute] 
+	internal Task<int> InnerRead(bool sync, int requestedSize, CancellationToken cancellationToken) { }
+
+	[AsyncStateMachineAttribute] 
+	internal Task InnerWrite(bool sync, CancellationToken cancellationToken) { }
+
+	internal AsyncOperationStatus ProcessHandshake(AsyncOperationStatus status) { }
+
+	internal ValueTuple<int, bool> ProcessRead(BufferOffsetSize userBuffer) { }
+
+	internal ValueTuple<int, bool> ProcessWrite(BufferOffsetSize userBuffer) { }
+
+	public override bool get_IsAuthenticated() { }
+
+	protected override void Dispose(bool disposing) { }
+
+	public override void Flush() { }
+
+	public X509Certificate get_InternalLocalCertificate() { }
+
+	public override long Seek(long offset, SeekOrigin origin) { }
+
+	public override void SetLength(long value) { }
+
+	public override bool get_CanRead() { }
+
+	public override bool get_CanWrite() { }
+
+	public override bool get_CanSeek() { }
+
+	public override long get_Length() { }
+
+	public override long get_Position() { }
+
+	public override void set_Position(long value) { }
+
+	public override int get_ReadTimeout() { }
+
+	public override int get_WriteTimeout() { }
+
+	private static void .cctor() { }
+
+	[CompilerGeneratedAttribute] 
+	private void <InnerWrite>b__67_0() { }
 
 }
 
 private enum MobileAuthenticatedStream.OperationType // TypeDefIndex: 2545
 {
 	public int value__; 
-public const MobileAuthenticatedStream.OperationType Read = 0;
-public const MobileAuthenticatedStream.OperationType Write = 1;
-public const MobileAuthenticatedStream.OperationType Shutdown = 2;
+	public const MobileAuthenticatedStream.OperationType Read = 0;
+	public const MobileAuthenticatedStream.OperationType Write = 1;
+	public const MobileAuthenticatedStream.OperationType Shutdown = 2;
 
 }
 
@@ -161,10 +161,10 @@ private struct MobileAuthenticatedStream.<ProcessAuthentication>d__47 : IAsyncSt
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -179,10 +179,10 @@ private struct MobileAuthenticatedStream.<StartOperation>d__58 : IAsyncStateMach
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<AsyncProtocolResult> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -192,9 +192,9 @@ private sealed class MobileAuthenticatedStream.<>c__DisplayClass66_0 // TypeDefI
 	public int len; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <InnerRead>b__0() { }
+	internal int <InnerRead>b__0() { }
 
 }
 
@@ -209,10 +209,10 @@ private struct MobileAuthenticatedStream.<InnerRead>d__66 : IAsyncStateMachine /
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<int> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -226,10 +226,10 @@ private struct MobileAuthenticatedStream.<InnerWrite>d__67 : IAsyncStateMachine 
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

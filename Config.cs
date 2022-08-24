@@ -24,24 +24,24 @@ public class Config : ScriptableObject // TypeDefIndex: 11534
 	public ParticleSystem dustParticlesPrefab; 
 	private static Config m_Instance; 
 
-public Shader beamShader { get; }
-public Vector4 globalNoiseParam { get; }
-public static Config Instance { get; }
+	public Shader beamShader { get; }
+	public Vector4 globalNoiseParam { get; }
+	public static Config Instance { get; }
 
 
-public Shader get_beamShader() { }
+	public Shader get_beamShader() { }
 
-public Vector4 get_globalNoiseParam() { }
+	public Vector4 get_globalNoiseParam() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public ParticleSystem NewVolumetricDustParticles() { }
+	public ParticleSystem NewVolumetricDustParticles() { }
 
-public static Config get_Instance() { }
+	public static Config get_Instance() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

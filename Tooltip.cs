@@ -6,26 +6,26 @@ public class Tooltip : BaseMonoBehaviour, IClientComponent, IPointerEnterHandler
 	public GameObject TooltipObject; 
 	public string token; 
 
-public string english { get; }
+	public string english { get; }
 
 
-public string get_english() { }
+	public string get_english() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OpenTooltip() { }
+	public void OpenTooltip() { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public static void KillTooltip() { }
+	public static void KillTooltip() { }
 
-private Canvas GetTopMostCanvas() { }
+	private Canvas GetTopMostCanvas() { }
 
-private void CreateTextTooltip() { }
+	private void CreateTextTooltip() { }
 
-private static string ParseTokens(string text) { }
+	private static string ParseTokens(string text) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

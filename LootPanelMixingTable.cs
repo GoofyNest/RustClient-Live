@@ -9,27 +9,27 @@ public class LootPanelMixingTable : LootPanel, IInventoryChanged // TypeDefIndex
 	private List<Item> inventoryItems; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public void SetupRecipeBook() { }
+	public void SetupRecipeBook() { }
 
-private void DestroyRecipeItems() { }
+	private void DestroyRecipeItems() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void RefreshRecipeValidity() { }
+	private void RefreshRecipeValidity() { }
 
-public MixingTable GetMixingTable() { }
+	public MixingTable GetMixingTable() { }
 
-public bool IsOn() { }
+	public bool IsOn() { }
 
-public void Switch(bool onOff) { }
+	public void Switch(bool onOff) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

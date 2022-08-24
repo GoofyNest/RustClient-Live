@@ -12,29 +12,29 @@ public class TextElementEnumerator : IEnumerator // TypeDefIndex: 718
 	private int endIndex; 
 	private int nextTextElementLen; 
 
-public object Current { get; }
+	public object Current { get; }
 
 
-internal void .ctor(string str, int startIndex, int strLen) { }
+	internal void .ctor(string str, int startIndex, int strLen) { }
 
 	[OnDeserializingAttribute] 
-private void OnDeserializing(StreamingContext ctx) { }
+	private void OnDeserializing(StreamingContext ctx) { }
 
 	[OnDeserializedAttribute] 
-private void OnDeserialized(StreamingContext ctx) { }
+	private void OnDeserialized(StreamingContext ctx) { }
 
 	[OnSerializingAttribute] 
-private void OnSerializing(StreamingContext ctx) { }
+	private void OnSerializing(StreamingContext ctx) { }
 
-public bool MoveNext() { }
+	public bool MoveNext() { }
 
-public object get_Current() { }
+	public object get_Current() { }
 
-public string GetTextElement() { }
+	public string GetTextElement() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 

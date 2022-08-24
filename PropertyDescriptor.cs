@@ -6,43 +6,43 @@ public abstract class PropertyDescriptor : MemberDescriptor // TypeDefIndex: 273
 	private Type[] editorTypes; 
 	private int editorCount; 
 
-public abstract Type ComponentType { get; }
-public virtual TypeConverter Converter { get; }
-public abstract bool IsReadOnly { get; }
-public abstract Type PropertyType { get; }
+	public abstract Type ComponentType { get; }
+	public virtual TypeConverter Converter { get; }
+	public abstract bool IsReadOnly { get; }
+	public abstract Type PropertyType { get; }
 
 
-protected void .ctor(string name, Attribute[] attrs) { }
+	protected void .ctor(string name, Attribute[] attrs) { }
 
-protected void .ctor(MemberDescriptor descr, Attribute[] attrs) { }
+	protected void .ctor(MemberDescriptor descr, Attribute[] attrs) { }
 
-public abstract Type get_ComponentType();
+	public abstract Type get_ComponentType();
 
-public virtual TypeConverter get_Converter() { }
+	public virtual TypeConverter get_Converter() { }
 
-public abstract bool get_IsReadOnly();
+	public abstract bool get_IsReadOnly();
 
-public abstract Type get_PropertyType();
+	public abstract Type get_PropertyType();
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-protected object CreateInstance(Type type) { }
+	protected object CreateInstance(Type type) { }
 
-protected override void FillAttributes(IList attributeList) { }
+	protected override void FillAttributes(IList attributeList) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-protected override object GetInvocationTarget(Type type, object instance) { }
+	protected override object GetInvocationTarget(Type type, object instance) { }
 
-protected Type GetTypeFromName(string typeName) { }
+	protected Type GetTypeFromName(string typeName) { }
 
-public abstract object GetValue(object component);
+	public abstract object GetValue(object component);
 
-protected virtual void OnValueChanged(object component, EventArgs e) { }
+	protected virtual void OnValueChanged(object component, EventArgs e) { }
 
-public abstract void SetValue(object component, object value);
+	public abstract void SetValue(object component, object value);
 
-public abstract bool ShouldSerializeValue(object component);
+	public abstract bool ShouldSerializeValue(object component);
 
 }
 

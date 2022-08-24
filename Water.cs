@@ -10,9 +10,9 @@ public class Water : ConsoleSystem // TypeDefIndex: 11971
 	public static int MinReflections; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

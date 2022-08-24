@@ -4,7 +4,7 @@ internal class BaseResponse // TypeDefIndex: 6257
 	public string Reason; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

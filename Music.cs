@@ -9,11 +9,11 @@ public class Music : ConsoleSystem // TypeDefIndex: 11942
 
 
 	[ClientVar] 
-public static void info(ConsoleSystem.Arg arg) { }
+	public static void info(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

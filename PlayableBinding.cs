@@ -8,20 +8,20 @@ public struct PlayableBinding // TypeDefIndex: 3867
 	public static readonly double DefaultDuration; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal sealed class PlayableBinding.CreateOutputMethod : MulticastDelegate // TypeDefIndex: 3868
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual PlayableOutput Invoke(PlayableGraph graph, string name) { }
+	public virtual PlayableOutput Invoke(PlayableGraph graph, string name) { }
 
-public virtual IAsyncResult BeginInvoke(PlayableGraph graph, string name, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(PlayableGraph graph, string name, AsyncCallback callback, object object) { }
 
-public virtual PlayableOutput EndInvoke(IAsyncResult result) { }
+	public virtual PlayableOutput EndInvoke(IAsyncResult result) { }
 
 }
 

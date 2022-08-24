@@ -9,43 +9,43 @@ internal class Lease : MarshalByRefObject, ILease // TypeDefIndex: 1165
 	private Queue _renewingSponsors; 
 	private Lease.RenewalDelegate _renewalDelegate; 
 
-public TimeSpan CurrentLeaseTime { get; }
-public LeaseState CurrentState { get; }
-public TimeSpan RenewOnCallTime { get; }
+	public TimeSpan CurrentLeaseTime { get; }
+	public LeaseState CurrentState { get; }
+	public TimeSpan RenewOnCallTime { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public TimeSpan get_CurrentLeaseTime() { }
+	public TimeSpan get_CurrentLeaseTime() { }
 
-public LeaseState get_CurrentState() { }
+	public LeaseState get_CurrentState() { }
 
-public void Activate() { }
+	public void Activate() { }
 
-public TimeSpan get_RenewOnCallTime() { }
+	public TimeSpan get_RenewOnCallTime() { }
 
-public TimeSpan Renew(TimeSpan renewalTime) { }
+	public TimeSpan Renew(TimeSpan renewalTime) { }
 
-public void Unregister(ISponsor obj) { }
+	public void Unregister(ISponsor obj) { }
 
-internal void UpdateState() { }
+	internal void UpdateState() { }
 
-private void CheckNextSponsor() { }
+	private void CheckNextSponsor() { }
 
-private void ProcessSponsorResponse(object state, bool timedOut) { }
+	private void ProcessSponsorResponse(object state, bool timedOut) { }
 
 }
 
 private sealed class Lease.RenewalDelegate : MulticastDelegate // TypeDefIndex: 1166
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual TimeSpan Invoke(ILease lease) { }
+	public virtual TimeSpan Invoke(ILease lease) { }
 
-public virtual IAsyncResult BeginInvoke(ILease lease, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(ILease lease, AsyncCallback callback, object object) { }
 
-public virtual TimeSpan EndInvoke(IAsyncResult result) { }
+	public virtual TimeSpan EndInvoke(IAsyncResult result) { }
 
 }
 

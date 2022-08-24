@@ -68,7 +68,7 @@ public class ERRoundaboutElement // TypeDefIndex: 7174
 	public double prevTimestamp; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

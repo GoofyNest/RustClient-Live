@@ -8,32 +8,32 @@ public class PickAFriend : UIDialog // TypeDefIndex: 10902
 	public Translate.Phrase turretHeaderPhrase; 
 	public SteamFriendsList friendsList; 
 
-public Func<ulong, bool> shouldShowPlayer { set; }
+	public Func<ulong, bool> shouldShowPlayer { set; }
 
 
-public void set_shouldShowPlayer(Func<ulong, bool> value) { }
+	public void set_shouldShowPlayer(Func<ulong, bool> value) { }
 
-public void SetHeaderText(PickAFriend.PickFriendMode mode) { }
+	public void SetHeaderText(PickAFriend.PickFriendMode mode) { }
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-private void CheckForNoInput() { }
+	private void CheckForNoInput() { }
 
-public void SelectTextField() { }
+	public void SelectTextField() { }
 
-public void DoAssign(ulong steamid, string steamName) { }
+	public void DoAssign(ulong steamid, string steamName) { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum PickAFriend.PickFriendMode // TypeDefIndex: 10903
 {
 	public int value__; 
-public const PickAFriend.PickFriendMode SleepingBag = 0;
-public const PickAFriend.PickFriendMode AutoTurret = 1;
+	public const PickAFriend.PickFriendMode SleepingBag = 0;
+	public const PickAFriend.PickFriendMode AutoTurret = 1;
 
 }
 

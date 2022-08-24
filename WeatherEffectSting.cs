@@ -6,15 +6,15 @@ public abstract class WeatherEffectSting : BaseMonoBehaviour, IClientComponent /
 	private SynchronizedClock stingClock; 
 
 
-private void PlaySting(uint seed) { }
+	private void PlaySting(uint seed) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void LateUpdate() { }
+	protected void LateUpdate() { }
 
-protected abstract float GetCurrentIntensity();
+	protected abstract float GetCurrentIntensity();
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

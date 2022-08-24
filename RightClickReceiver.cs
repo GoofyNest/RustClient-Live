@@ -3,9 +3,9 @@ public class RightClickReceiver : MonoBehaviour, IPointerClickHandler, IEventSys
 	public UnityEvent ClickReceiver; 
 
 
-public void OnPointerClick(PointerEventData eventData) { }
+	public void OnPointerClick(PointerEventData eventData) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -23,39 +23,39 @@ public class ChippyArcadeGame : BaseArcadeGame // TypeDefIndex: 8765
 	private float nextClickTime; 
 
 
-public override void Initialize() { }
+	public override void Initialize() { }
 
-public override void OnNoHost() { }
+	public override void OnNoHost() { }
 
-public void DestroyNonMapEntites() { }
+	public void DestroyNonMapEntites() { }
 
-public void MainMenu() { }
+	public void MainMenu() { }
 
-public void SetLevel(int newLevel) { }
+	public void SetLevel(int newLevel) { }
 
-public void StartGame() { }
+	public void StartGame() { }
 
-public void BossKilled(ChippyBoss killed) { }
+	public void BossKilled(ChippyBoss killed) { }
 
-public void SpawnEnemies() { }
+	public void SpawnEnemies() { }
 
-public void FixedUpdate() { }
+	public void FixedUpdate() { }
 
-public void GameOver() { }
+	public void GameOver() { }
 
-public void SetMenuVisible(bool isVisible) { }
+	public void SetMenuVisible(bool isVisible) { }
 
-public override void MenuAction(string message) { }
+	public override void MenuAction(string message) { }
 
-public void UpdateMenuButtons() { }
+	public void UpdateMenuButtons() { }
 
-public void SelectNextButton(int dir) { }
+	public void SelectNextButton(int dir) { }
 
-public void SetScoresVisible(bool wantsVis) { }
+	public void SetScoresVisible(bool wantsVis) { }
 
-public override void PlayerInput(InputState inputState, BasePlayer player, int playerIndex = 0, bool clientside = False) { }
+	public override void PlayerInput(InputState inputState, BasePlayer player, int playerIndex = 0, bool clientside = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

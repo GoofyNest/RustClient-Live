@@ -4,7 +4,7 @@ internal sealed class TokenizerShortBlock // TypeDefIndex: 925
 	internal TokenizerShortBlock m_next; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

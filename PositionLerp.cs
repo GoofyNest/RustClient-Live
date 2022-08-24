@@ -5,8 +5,8 @@ public class PositionLerp : IDisposable // TypeDefIndex: 9221
 	public static bool DebugDraw; 
 	public static int TimeOffsetInterval; 
 	public static float TimeOffset; 
-public const int TimeOffsetIntervalMin = 4;
-public const int TimeOffsetIntervalMax = 64;
+	public const int TimeOffsetIntervalMin = 4;
+	public const int TimeOffsetIntervalMax = 64;
 	private bool enabled; 
 	private Action idleDisable; 
 	private Interpolator<TransformSnapshot> interpolator; 
@@ -22,53 +22,53 @@ public const int TimeOffsetIntervalMax = 64;
 	private float extrapolatedTime; 
 	private float enabledTime; 
 
-public bool Enabled { get; set; }
-public static float LerpTime { get; }
+	public bool Enabled { get; set; }
+	public static float LerpTime { get; }
 
 
-public bool get_Enabled() { }
+	public bool get_Enabled() { }
 
-public void set_Enabled(bool value) { }
+	public void set_Enabled(bool value) { }
 
-public static float get_LerpTime() { }
+	public static float get_LerpTime() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void Initialize(IPosLerpTarget target) { }
+	public void Initialize(IPosLerpTarget target) { }
 
-public void Snapshot(Vector3 position, Quaternion rotation, float serverTime) { }
+	public void Snapshot(Vector3 position, Quaternion rotation, float serverTime) { }
 
-public void Snapshot(Vector3 position, Quaternion rotation) { }
+	public void Snapshot(Vector3 position, Quaternion rotation) { }
 
-public void SnapTo(Vector3 position, Quaternion rotation, float serverTime) { }
+	public void SnapTo(Vector3 position, Quaternion rotation, float serverTime) { }
 
-public void SnapTo(Vector3 position, Quaternion rotation) { }
+	public void SnapTo(Vector3 position, Quaternion rotation) { }
 
-public void SnapToEnd() { }
+	public void SnapToEnd() { }
 
-public void Wipe() { }
+	public void Wipe() { }
 
-public static void WipeAll() { }
+	public static void WipeAll() { }
 
-protected void DoCycle() { }
+	protected void DoCycle() { }
 
-public void TransformEntries(Matrix4x4 matrix) { }
+	public void TransformEntries(Matrix4x4 matrix) { }
 
-public Quaternion GetEstimatedAngularVelocity() { }
+	public Quaternion GetEstimatedAngularVelocity() { }
 
-public Vector3 GetEstimatedVelocity() { }
+	public Vector3 GetEstimatedVelocity() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public static void Clear() { }
+	public static void Clear() { }
 
-public static void Cycle() { }
+	public static void Cycle() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

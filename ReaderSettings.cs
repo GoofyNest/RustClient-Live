@@ -8,28 +8,28 @@ public sealed class ReaderSettings // TypeDefIndex: 7600
 	[CompilerGeneratedAttribute] 
 	private byte[] <Buffer>k__BackingField; 
 
-public int NonSeekableStreamBufferSize { get; }
-public int NonSeekableStreamIncrementalBytesReadingThreshold { get; }
-public int NonSeekableStreamIncrementalBytesReadingStep { get; }
-public BufferingPolicy BufferingPolicy { get; }
-public int BufferSize { get; }
-public byte[] Buffer { get; }
+	public int NonSeekableStreamBufferSize { get; }
+	public int NonSeekableStreamIncrementalBytesReadingThreshold { get; }
+	public int NonSeekableStreamIncrementalBytesReadingStep { get; }
+	public BufferingPolicy BufferingPolicy { get; }
+	public int BufferSize { get; }
+	public byte[] Buffer { get; }
 
 
-public int get_NonSeekableStreamBufferSize() { }
+	public int get_NonSeekableStreamBufferSize() { }
 
-public int get_NonSeekableStreamIncrementalBytesReadingThreshold() { }
+	public int get_NonSeekableStreamIncrementalBytesReadingThreshold() { }
 
-public int get_NonSeekableStreamIncrementalBytesReadingStep() { }
+	public int get_NonSeekableStreamIncrementalBytesReadingStep() { }
 
-public BufferingPolicy get_BufferingPolicy() { }
+	public BufferingPolicy get_BufferingPolicy() { }
 
-public int get_BufferSize() { }
+	public int get_BufferSize() { }
 
 	[CompilerGeneratedAttribute] 
-public byte[] get_Buffer() { }
+	public byte[] get_Buffer() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

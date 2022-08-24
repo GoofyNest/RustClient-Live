@@ -18,9 +18,9 @@ public class SkinSet : ScriptableObject // TypeDefIndex: 10758
 	public Material EyeMaterial; 
 
 
-internal Color GetSkinColor(float skinNumber) { }
+	internal Color GetSkinColor(float skinNumber) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

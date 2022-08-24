@@ -1,9 +1,9 @@
 internal static class SR // TypeDefIndex: 3
 {
 
-internal static string Format(string resourceFormat, object p1) { }
+	internal static string Format(string resourceFormat, object p1) { }
 
-internal static string Format(string resourceFormat, object p1, object p2) { }
+	internal static string Format(string resourceFormat, object p1, object p2) { }
 
 }
 
@@ -32,9 +32,9 @@ internal class <Module>
 
 internal static class SR 
 
-internal static string GetString(string name, object[] args) { }
+	internal static string GetString(string name, object[] args) { }
 
-internal static string GetString(CultureInfo culture, string name, object[] args) { }
+	internal static string GetString(CultureInfo culture, string name, object[] args) { }
 
 }
 
@@ -83,15 +83,15 @@ internal class <Module>
 
 internal static class SR 
 
-internal static string GetString(string name, object[] args) { }
+	internal static string GetString(string name, object[] args) { }
 
-internal static string GetString(CultureInfo culture, string name, object[] args) { }
+	internal static string GetString(CultureInfo culture, string name, object[] args) { }
 
-internal static string GetString(string name) { }
+	internal static string GetString(string name) { }
 
-internal static string Format(string resourceFormat, object p1) { }
+	internal static string Format(string resourceFormat, object p1) { }
 
-internal static string Format(string resourceFormat, object p1, object p2) { }
+	internal static string Format(string resourceFormat, object p1, object p2) { }
 
 }
 
@@ -100,9 +100,9 @@ internal static class SR // TypeDefIndex: 3188
 
 internal static class SR 
 
-internal static string GetString(string name) { }
+	internal static string GetString(string name) { }
 
-internal static string Format(string resourceFormat, object p1) { }
+	internal static string Format(string resourceFormat, object p1) { }
 
 }
 
@@ -111,7 +111,7 @@ internal static class SR // TypeDefIndex: 3962
 
 internal static class SR 
 
-internal static string Format(string resourceFormat, object p1) { }
+	internal static string Format(string resourceFormat, object p1) { }
 
 }
 
@@ -120,15 +120,15 @@ internal static class SR // TypeDefIndex: 4164
 
 internal static class SR 
 
-internal static string GetString(string name) { }
+	internal static string GetString(string name) { }
 
-internal static string Format(string resourceFormat, object[] args) { }
+	internal static string Format(string resourceFormat, object[] args) { }
 
-internal static string Format(string resourceFormat, object p1) { }
+	internal static string Format(string resourceFormat, object p1) { }
 
-internal static string Format(string resourceFormat, object p1, object p2) { }
+	internal static string Format(string resourceFormat, object p1, object p2) { }
 
-internal static string Format(string resourceFormat, object p1, object p2, object p3) { }
+	internal static string Format(string resourceFormat, object p1, object p2, object p3) { }
 
 }
 
@@ -138,19 +138,19 @@ internal class SR // TypeDefIndex: 4895
 	private static CultureInfo resourceCulture; 
 
 	[EditorBrowsableAttribute] 
-internal static ResourceManager ResourceManager { get; }
-internal static string DataTypes { get; }
-internal static string Keywords { get; }
-internal static string MetaDataCollections { get; }
+	internal static ResourceManager ResourceManager { get; }
+	internal static string DataTypes { get; }
+	internal static string Keywords { get; }
+	internal static string MetaDataCollections { get; }
 
 
-internal static ResourceManager get_ResourceManager() { }
+	internal static ResourceManager get_ResourceManager() { }
 
-internal static string get_DataTypes() { }
+	internal static string get_DataTypes() { }
 
-internal static string get_Keywords() { }
+	internal static string get_Keywords() { }
 
-internal static string get_MetaDataCollections() { }
+	internal static string get_MetaDataCollections() { }
 
 }
 
@@ -166,21 +166,21 @@ internal static class SR
 	[CompilerGeneratedAttribute] 
 	private static readonly Type <ResourceType>k__BackingField; 
 
-private static ResourceManager ResourceManager { get; }
-internal static Type ResourceType { get; }
-internal static string ArgumentException_BufferNotFromPool { get; }
+	private static ResourceManager ResourceManager { get; }
+	internal static Type ResourceType { get; }
+	internal static string ArgumentException_BufferNotFromPool { get; }
 
 
-private static ResourceManager get_ResourceManager() { }
+	private static ResourceManager get_ResourceManager() { }
 
-internal static string GetResourceString(string resourceKey, string defaultString) { }
+	internal static string GetResourceString(string resourceKey, string defaultString) { }
 
 	[CompilerGeneratedAttribute] 
-internal static Type get_ResourceType() { }
+	internal static Type get_ResourceType() { }
 
-internal static string get_ArgumentException_BufferNotFromPool() { }
+	internal static string get_ArgumentException_BufferNotFromPool() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -190,34 +190,34 @@ internal static class SR // TypeDefIndex: 6734
 	[CompilerGeneratedAttribute] 
 	private static readonly Type <ResourceType>k__BackingField; 
 
-private static ResourceManager ResourceManager { get; }
-internal static Type ResourceType { get; }
-internal static string NotSupported_CannotCallEqualsOnSpan { get; }
-internal static string NotSupported_CannotCallGetHashCodeOnSpan { get; }
-internal static string Argument_InvalidTypeWithPointersNotSupported { get; }
-internal static string Argument_DestinationTooShort { get; }
+	private static ResourceManager ResourceManager { get; }
+	internal static Type ResourceType { get; }
+	internal static string NotSupported_CannotCallEqualsOnSpan { get; }
+	internal static string NotSupported_CannotCallGetHashCodeOnSpan { get; }
+	internal static string Argument_InvalidTypeWithPointersNotSupported { get; }
+	internal static string Argument_DestinationTooShort { get; }
 
 
-private static ResourceManager get_ResourceManager() { }
+	private static ResourceManager get_ResourceManager() { }
 
-private static bool UsingResourceKeys() { }
+	private static bool UsingResourceKeys() { }
 
-internal static string GetResourceString(string resourceKey, string defaultString) { }
+	internal static string GetResourceString(string resourceKey, string defaultString) { }
 
-internal static string Format(string resourceFormat, object p1) { }
+	internal static string Format(string resourceFormat, object p1) { }
 
 	[CompilerGeneratedAttribute] 
-internal static Type get_ResourceType() { }
+	internal static Type get_ResourceType() { }
 
-internal static string get_NotSupported_CannotCallEqualsOnSpan() { }
+	internal static string get_NotSupported_CannotCallEqualsOnSpan() { }
 
-internal static string get_NotSupported_CannotCallGetHashCodeOnSpan() { }
+	internal static string get_NotSupported_CannotCallGetHashCodeOnSpan() { }
 
-internal static string get_Argument_InvalidTypeWithPointersNotSupported() { }
+	internal static string get_Argument_InvalidTypeWithPointersNotSupported() { }
 
-internal static string get_Argument_DestinationTooShort() { }
+	internal static string get_Argument_DestinationTooShort() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

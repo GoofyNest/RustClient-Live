@@ -4,27 +4,27 @@ internal class CrossAppDomainSink : IMessageSink // TypeDefIndex: 1190
 	private static MethodInfo processMessageMethod; 
 	private int _domainID; 
 
-internal int TargetDomainId { get; }
+	internal int TargetDomainId { get; }
 
 
-internal void .ctor(int domainID) { }
+	internal void .ctor(int domainID) { }
 
-internal static CrossAppDomainSink GetSink(int domainID) { }
+	internal static CrossAppDomainSink GetSink(int domainID) { }
 
-internal int get_TargetDomainId() { }
+	internal int get_TargetDomainId() { }
 
-private static CrossAppDomainSink.ProcessMessageRes ProcessMessageInDomain(byte[] arrRequest, CADMethodCallMessage cadMsg) { }
+	private static CrossAppDomainSink.ProcessMessageRes ProcessMessageInDomain(byte[] arrRequest, CADMethodCallMessage cadMsg) { }
 
-public virtual IMessage SyncProcessMessage(IMessage msgRequest) { }
+	public virtual IMessage SyncProcessMessage(IMessage msgRequest) { }
 
-public virtual IMessageCtrl AsyncProcessMessage(IMessage reqMsg, IMessageSink replySink) { }
+	public virtual IMessageCtrl AsyncProcessMessage(IMessage reqMsg, IMessageSink replySink) { }
 
-public void SendAsyncMessage(object data) { }
+	public void SendAsyncMessage(object data) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <AsyncProcessMessage>b__10_0(object data) { }
+	private void <AsyncProcessMessage>b__10_0(object data) { }
 
 }
 

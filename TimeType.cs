@@ -5,9 +5,9 @@ internal class TimeType // TypeDefIndex: 403
 	public string Name; 
 
 
-public void .ctor(int offset, bool is_dst, string abbrev) { }
+	public void .ctor(int offset, bool is_dst, string abbrev) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

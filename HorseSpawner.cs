@@ -5,7 +5,7 @@ public class HorseSpawner : VehicleSpawner // TypeDefIndex: 8845
 	public bool spawnForSale; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

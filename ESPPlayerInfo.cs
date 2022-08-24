@@ -21,57 +21,57 @@ public class ESPPlayerInfo : MonoBehaviour // TypeDefIndex: 12002
 	private float distanceFromCamera; 
 	private TimeSince lastHealthUpdate; 
 
-public BasePlayer Entity { get; set; }
+	public BasePlayer Entity { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public BasePlayer get_Entity() { }
+	public BasePlayer get_Entity() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Entity(BasePlayer value) { }
+	public void set_Entity(BasePlayer value) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-internal void Init(BasePlayer entity) { }
+	internal void Init(BasePlayer entity) { }
 
-private void UpdateText(BasePlayer entity) { }
+	private void UpdateText(BasePlayer entity) { }
 
-private void SetColor(Color color) { }
+	private void SetColor(Color color) { }
 
-private void Update() { }
+	private void Update() { }
 
-private void LateQueuedUpdate() { }
+	private void LateQueuedUpdate() { }
 
-public Vector3 GetVisCheckPosition() { }
+	public Vector3 GetVisCheckPosition() { }
 
-public void VisCheckPosition() { }
+	public void VisCheckPosition() { }
 
-public bool IsTeamMember() { }
+	public bool IsTeamMember() { }
 
-public void SetTextEnabled(bool wantsOn) { }
+	public void SetTextEnabled(bool wantsOn) { }
 
-private bool IsAlly() { }
+	private bool IsAlly() { }
 
-private bool IsEnemy() { }
+	private bool IsEnemy() { }
 
-private void UpdateColor() { }
+	private void UpdateColor() { }
 
-private void Position() { }
+	private void Position() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public class ESPPlayerInfo.ESPWorkQueue : ObjectWorkQueue<ESPPlayerInfo> // TypeDefIndex: 12003
 {
 
-protected override void RunJob(ESPPlayerInfo entity) { }
+	protected override void RunJob(ESPPlayerInfo entity) { }
 
-protected override bool ShouldAdd(ESPPlayerInfo entity) { }
+	protected override bool ShouldAdd(ESPPlayerInfo entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

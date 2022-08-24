@@ -40,36 +40,36 @@ public class NpcWalkAnimation : MonoBehaviour, IClientComponent // TypeDefIndex:
 	private float avgTurnDifference; 
 
 
-public void Start() { }
+	public void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public Quaternion GetRotation() { }
+	public Quaternion GetRotation() { }
 
-private void QueuedGroundAlign() { }
+	private void QueuedGroundAlign() { }
 
-private void Update() { }
+	private void Update() { }
 
-public bool GroundSample(Vector3 origin, out RaycastHit hit) { }
+	public bool GroundSample(Vector3 origin, out RaycastHit hit) { }
 
-public void LateUpdate() { }
+	public void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public class NpcWalkAnimation.NPCWalkWorkQueue : PersistentObjectWorkQueue<NpcWalkAnimation> // TypeDefIndex: 9118
 {
 
-protected override void RunJob(NpcWalkAnimation entity) { }
+	protected override void RunJob(NpcWalkAnimation entity) { }
 
-protected override bool ShouldAdd(NpcWalkAnimation entity) { }
+	protected override bool ShouldAdd(NpcWalkAnimation entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

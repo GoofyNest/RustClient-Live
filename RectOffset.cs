@@ -5,57 +5,57 @@ public class RectOffset // TypeDefIndex: 3378
 	private readonly object m_SourceStyle; 
 
 	[NativePropertyAttribute] 
-public int left { get; set; }
+	public int left { get; set; }
 	[NativePropertyAttribute] 
-public int right { get; set; }
+	public int right { get; set; }
 	[NativePropertyAttribute] 
-public int top { get; }
+	public int top { get; }
 	[NativePropertyAttribute] 
-public int bottom { get; }
-public int horizontal { get; }
-public int vertical { get; }
+	public int bottom { get; }
+	public int horizontal { get; }
+	public int vertical { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[VisibleToOtherModulesAttribute] 
-internal void .ctor(object sourceStyle, IntPtr source) { }
+	internal void .ctor(object sourceStyle, IntPtr source) { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private void Destroy() { }
-
-	[ThreadAndSerializationSafeAttribute] 
-private static IntPtr InternalCreate() { }
+	private void Destroy() { }
 
 	[ThreadAndSerializationSafeAttribute] 
-private static void InternalDestroy(IntPtr ptr) { }
+	private static IntPtr InternalCreate() { }
 
-public int get_left() { }
+	[ThreadAndSerializationSafeAttribute] 
+	private static void InternalDestroy(IntPtr ptr) { }
 
-public void set_left(int value) { }
+	public int get_left() { }
 
-public int get_right() { }
+	public void set_left(int value) { }
 
-public void set_right(int value) { }
+	public int get_right() { }
 
-public int get_top() { }
+	public void set_right(int value) { }
 
-public int get_bottom() { }
+	public int get_top() { }
 
-public int get_horizontal() { }
+	public int get_bottom() { }
 
-public int get_vertical() { }
+	public int get_horizontal() { }
 
-public Rect Add(Rect rect) { }
+	public int get_vertical() { }
 
-public Rect Remove(Rect rect) { }
+	public Rect Add(Rect rect) { }
 
-private void Add_Injected(ref Rect rect, out Rect ret) { }
+	public Rect Remove(Rect rect) { }
 
-private void Remove_Injected(ref Rect rect, out Rect ret) { }
+	private void Add_Injected(ref Rect rect, out Rect ret) { }
+
+	private void Remove_Injected(ref Rect rect, out Rect ret) { }
 
 }
 

@@ -7,9 +7,9 @@ public class PropSway : MonoBehaviour // TypeDefIndex: 9671
 	private float lookupIndex; 
 
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

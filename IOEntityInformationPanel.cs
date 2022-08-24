@@ -7,13 +7,13 @@ public class IOEntityInformationPanel : ItemInformationPanel // TypeDefIndex: 11
 	public ItemTextValue chargeDisplay; 
 
 
-public IOEntity GetIOEntityToUse(ItemDefinition info) { }
+	public IOEntity GetIOEntityToUse(ItemDefinition info) { }
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

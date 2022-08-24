@@ -13,19 +13,19 @@ public class FoliageGridBenchmarkScene : BenchmarkScene // TypeDefIndex: 8254
 	public bool moveVantangePoint; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public override void StartBenchmark() { }
+	public override void StartBenchmark() { }
 
-public override void BenchmarkUpdate() { }
+	public override void BenchmarkUpdate() { }
 
-public override void StopBenchmark() { }
+	public override void StopBenchmark() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-private void OnDrawGizmos() { }
+	private void OnDrawGizmos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

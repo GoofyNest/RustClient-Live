@@ -1,25 +1,25 @@
 public class InvokeHandlerFixedTime : InvokeHandlerBase<InvokeHandlerFixedTime> // TypeDefIndex: 5567
 {
 
-protected override float GetTime() { }
+	protected override float GetTime() { }
 
-public static void FindInvokes(Behaviour sender, List<InvokeAction> list) { }
+	public static void FindInvokes(Behaviour sender, List<InvokeAction> list) { }
 
-public static int Count() { }
+	public static int Count() { }
 
-public static bool IsInvoking(Behaviour sender, Action action) { }
+	public static bool IsInvoking(Behaviour sender, Action action) { }
 
-public static void Invoke(Behaviour sender, Action action, float time) { }
+	public static void Invoke(Behaviour sender, Action action, float time) { }
 
-public static void InvokeRepeating(Behaviour sender, Action action, float time, float repeat) { }
+	public static void InvokeRepeating(Behaviour sender, Action action, float time, float repeat) { }
 
-public static void InvokeRandomized(Behaviour sender, Action action, float time, float repeat, float random) { }
+	public static void InvokeRandomized(Behaviour sender, Action action, float time, float repeat, float random) { }
 
-public static void CancelInvoke(Behaviour sender, Action action) { }
+	public static void CancelInvoke(Behaviour sender, Action action) { }
 
-private static void CreateInstance() { }
+	private static void CreateInstance() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

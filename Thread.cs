@@ -20,161 +20,161 @@ public sealed class Thread : CriticalFinalizerObject, _Thread // TypeDefIndex: 8
 	private ExecutionContext m_ExecutionContext; 
 	private bool m_ExecutionContextBelongsToOuterScope; 
 
-internal bool ExecutionContextBelongsToCurrentScope { get; set; }
-public ThreadPriority Priority { set; }
-public CultureInfo CurrentUICulture { get; set; }
-public CultureInfo CurrentCulture { get; set; }
-private InternalThread Internal { get; }
-public static Context CurrentContext { get; }
-public static Thread CurrentThread { get; }
-internal static int CurrentThreadId { get; }
-public bool IsThreadPoolThread { get; }
-internal bool IsThreadPoolThreadInternal { get; }
-public bool IsAlive { get; }
-public bool IsBackground { set; }
-public string Name { set; }
-public ThreadState ThreadState { get; }
-public int ManagedThreadId { get; }
+	internal bool ExecutionContextBelongsToCurrentScope { get; set; }
+	public ThreadPriority Priority { set; }
+	public CultureInfo CurrentUICulture { get; set; }
+	public CultureInfo CurrentCulture { get; set; }
+	private InternalThread Internal { get; }
+	public static Context CurrentContext { get; }
+	public static Thread CurrentThread { get; }
+	internal static int CurrentThreadId { get; }
+	public bool IsThreadPoolThread { get; }
+	internal bool IsThreadPoolThreadInternal { get; }
+	public bool IsAlive { get; }
+	public bool IsBackground { set; }
+	public string Name { set; }
+	public ThreadState ThreadState { get; }
+	public int ManagedThreadId { get; }
 
 
-private static void AsyncLocalSetCurrentCulture(AsyncLocalValueChangedArgs<CultureInfo> args) { }
+	private static void AsyncLocalSetCurrentCulture(AsyncLocalValueChangedArgs<CultureInfo> args) { }
 
-private static void AsyncLocalSetCurrentUICulture(AsyncLocalValueChangedArgs<CultureInfo> args) { }
+	private static void AsyncLocalSetCurrentUICulture(AsyncLocalValueChangedArgs<CultureInfo> args) { }
 
-public void .ctor(ThreadStart start) { }
+	public void .ctor(ThreadStart start) { }
 
-public void .ctor(ParameterizedThreadStart start) { }
+	public void .ctor(ParameterizedThreadStart start) { }
 
-public void Start() { }
+	public void Start() { }
 
-public void Start(object parameter) { }
+	public void Start(object parameter) { }
 
-private void Start(ref StackCrawlMark stackMark) { }
-
-	[ReliabilityContractAttribute] 
-internal ExecutionContext.Reader GetExecutionContextReader() { }
-
-internal bool get_ExecutionContextBelongsToCurrentScope() { }
-
-internal void set_ExecutionContextBelongsToCurrentScope(bool value) { }
+	private void Start(ref StackCrawlMark stackMark) { }
 
 	[ReliabilityContractAttribute] 
-internal ExecutionContext GetMutableExecutionContext() { }
+	internal ExecutionContext.Reader GetExecutionContextReader() { }
+
+	internal bool get_ExecutionContextBelongsToCurrentScope() { }
+
+	internal void set_ExecutionContextBelongsToCurrentScope(bool value) { }
 
 	[ReliabilityContractAttribute] 
-internal void SetExecutionContext(ExecutionContext value, bool belongsToCurrentScope) { }
+	internal ExecutionContext GetMutableExecutionContext() { }
 
 	[ReliabilityContractAttribute] 
-internal void SetExecutionContext(ExecutionContext.Reader value, bool belongsToCurrentScope) { }
-
-public void set_Priority(ThreadPriority value) { }
-
-private void SetPriorityNative(int priority) { }
-
-private bool JoinInternal(int millisecondsTimeout) { }
-
-public void Join() { }
-
-public bool Join(int millisecondsTimeout) { }
-
-private static void SleepInternal(int millisecondsTimeout) { }
-
-public static void Sleep(int millisecondsTimeout) { }
+	internal void SetExecutionContext(ExecutionContext value, bool belongsToCurrentScope) { }
 
 	[ReliabilityContractAttribute] 
-private static bool YieldInternal() { }
+	internal void SetExecutionContext(ExecutionContext.Reader value, bool belongsToCurrentScope) { }
+
+	public void set_Priority(ThreadPriority value) { }
+
+	private void SetPriorityNative(int priority) { }
+
+	private bool JoinInternal(int millisecondsTimeout) { }
+
+	public void Join() { }
+
+	public bool Join(int millisecondsTimeout) { }
+
+	private static void SleepInternal(int millisecondsTimeout) { }
+
+	public static void Sleep(int millisecondsTimeout) { }
 
 	[ReliabilityContractAttribute] 
-public static bool Yield() { }
-
-private void SetStartHelper(Delegate start, int maxStackSize) { }
-
-public CultureInfo get_CurrentUICulture() { }
-
-public void set_CurrentUICulture(CultureInfo value) { }
-
-internal CultureInfo GetCurrentUICultureNoAppX() { }
-
-public CultureInfo get_CurrentCulture() { }
-
-public void set_CurrentCulture(CultureInfo value) { }
-
-private CultureInfo GetCurrentCultureNoAppX() { }
-
-private static void nativeInitCultureAccessors() { }
-
-public static void MemoryBarrier() { }
-
-private void ConstructInternalThread() { }
-
-private InternalThread get_Internal() { }
-
-public static Context get_CurrentContext() { }
-
-private static Thread GetCurrentThread() { }
+	private static bool YieldInternal() { }
 
 	[ReliabilityContractAttribute] 
-public static Thread get_CurrentThread() { }
+	public static bool Yield() { }
 
-internal static int get_CurrentThreadId() { }
+	private void SetStartHelper(Delegate start, int maxStackSize) { }
 
-public static int GetDomainID() { }
+	public CultureInfo get_CurrentUICulture() { }
 
-private IntPtr Thread_internal(MulticastDelegate start) { }
+	public void set_CurrentUICulture(CultureInfo value) { }
 
-	[ReliabilityContractAttribute] 
-protected override void Finalize() { }
+	internal CultureInfo GetCurrentUICultureNoAppX() { }
 
-public bool get_IsThreadPoolThread() { }
+	public CultureInfo get_CurrentCulture() { }
 
-internal bool get_IsThreadPoolThreadInternal() { }
+	public void set_CurrentCulture(CultureInfo value) { }
 
-public bool get_IsAlive() { }
+	private CultureInfo GetCurrentCultureNoAppX() { }
 
-public void set_IsBackground(bool value) { }
+	private static void nativeInitCultureAccessors() { }
 
-private static void SetName_internal(InternalThread thread, string name) { }
+	public static void MemoryBarrier() { }
 
-public void set_Name(string value) { }
+	private void ConstructInternalThread() { }
 
-public ThreadState get_ThreadState() { }
+	private InternalThread get_Internal() { }
 
-private static void Abort_internal(InternalThread thread, object stateInfo) { }
+	public static Context get_CurrentContext() { }
 
-public void Abort() { }
-
-private static void SpinWait_nop() { }
+	private static Thread GetCurrentThread() { }
 
 	[ReliabilityContractAttribute] 
-public static void SpinWait(int iterations) { }
+	public static Thread get_CurrentThread() { }
 
-private void StartInternal(IPrincipal principal, ref StackCrawlMark stackMark) { }
+	internal static int get_CurrentThreadId() { }
 
-private static void SetState(InternalThread thread, ThreadState set) { }
+	public static int GetDomainID() { }
 
-private static void ClrState(InternalThread thread, ThreadState clr) { }
-
-private static ThreadState GetState(InternalThread thread) { }
-
-private static int SystemMaxStackStize() { }
-
-private static int GetProcessDefaultStackSize(int maxStackSize) { }
-
-private void SetStart(MulticastDelegate start, int maxStackSize) { }
+	private IntPtr Thread_internal(MulticastDelegate start) { }
 
 	[ReliabilityContractAttribute] 
-public int get_ManagedThreadId() { }
+	protected override void Finalize() { }
+
+	public bool get_IsThreadPoolThread() { }
+
+	internal bool get_IsThreadPoolThreadInternal() { }
+
+	public bool get_IsAlive() { }
+
+	public void set_IsBackground(bool value) { }
+
+	private static void SetName_internal(InternalThread thread, string name) { }
+
+	public void set_Name(string value) { }
+
+	public ThreadState get_ThreadState() { }
+
+	private static void Abort_internal(InternalThread thread, object stateInfo) { }
+
+	public void Abort() { }
+
+	private static void SpinWait_nop() { }
 
 	[ReliabilityContractAttribute] 
-public static void BeginCriticalRegion() { }
+	public static void SpinWait(int iterations) { }
+
+	private void StartInternal(IPrincipal principal, ref StackCrawlMark stackMark) { }
+
+	private static void SetState(InternalThread thread, ThreadState set) { }
+
+	private static void ClrState(InternalThread thread, ThreadState clr) { }
+
+	private static ThreadState GetState(InternalThread thread) { }
+
+	private static int SystemMaxStackStize() { }
+
+	private static int GetProcessDefaultStackSize(int maxStackSize) { }
+
+	private void SetStart(MulticastDelegate start, int maxStackSize) { }
 
 	[ReliabilityContractAttribute] 
-public static void EndCriticalRegion() { }
+	public int get_ManagedThreadId() { }
+
+	[ReliabilityContractAttribute] 
+	public static void BeginCriticalRegion() { }
+
+	[ReliabilityContractAttribute] 
+	public static void EndCriticalRegion() { }
 
 	[ComVisibleAttribute] 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private ThreadState ValidateThreadState() { }
+	private ThreadState ValidateThreadState() { }
 
 }
 

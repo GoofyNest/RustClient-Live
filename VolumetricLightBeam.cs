@@ -63,121 +63,121 @@ public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 11554
 	private Coroutine m_CoPlaytimeUpdate; 
 	private Light _CachedLight; 
 
-public float coneAngle { get; }
-public float coneRadiusEnd { get; }
-public float coneVolume { get; }
-public float coneApexOffsetZ { get; }
-public int geomSides { get; set; }
-public int geomSegments { get; set; }
-public float attenuationLerpLinearQuad { get; }
-public int sortingLayerID { get; set; }
-public string sortingLayerName { get; set; }
-public int sortingOrder { get; set; }
-public bool trackChangesDuringPlaytime { get; set; }
-public bool isCurrentlyTrackingChanges { get; }
-public bool hasGeometry { get; }
-public Bounds bounds { get; }
-public int blendingModeAsInt { get; }
-public MeshRenderer Renderer { get; }
-public string meshStats { get; }
-public int meshVerticesCount { get; }
-public int meshTrianglesCount { get; }
-private Light lightSpotAttached { get; }
+	public float coneAngle { get; }
+	public float coneRadiusEnd { get; }
+	public float coneVolume { get; }
+	public float coneApexOffsetZ { get; }
+	public int geomSides { get; set; }
+	public int geomSegments { get; set; }
+	public float attenuationLerpLinearQuad { get; }
+	public int sortingLayerID { get; set; }
+	public string sortingLayerName { get; set; }
+	public int sortingOrder { get; set; }
+	public bool trackChangesDuringPlaytime { get; set; }
+	public bool isCurrentlyTrackingChanges { get; }
+	public bool hasGeometry { get; }
+	public Bounds bounds { get; }
+	public int blendingModeAsInt { get; }
+	public MeshRenderer Renderer { get; }
+	public string meshStats { get; }
+	public int meshVerticesCount { get; }
+	public int meshTrianglesCount { get; }
+	private Light lightSpotAttached { get; }
 
 
-public float get_coneAngle() { }
+	public float get_coneAngle() { }
 
-public float get_coneRadiusEnd() { }
+	public float get_coneRadiusEnd() { }
 
-public float get_coneVolume() { }
+	public float get_coneVolume() { }
 
-public float get_coneApexOffsetZ() { }
+	public float get_coneApexOffsetZ() { }
 
-public int get_geomSides() { }
+	public int get_geomSides() { }
 
-public void set_geomSides(int value) { }
+	public void set_geomSides(int value) { }
 
-public int get_geomSegments() { }
+	public int get_geomSegments() { }
 
-public void set_geomSegments(int value) { }
+	public void set_geomSegments(int value) { }
 
-public float get_attenuationLerpLinearQuad() { }
+	public float get_attenuationLerpLinearQuad() { }
 
-public int get_sortingLayerID() { }
+	public int get_sortingLayerID() { }
 
-public void set_sortingLayerID(int value) { }
+	public void set_sortingLayerID(int value) { }
 
-public string get_sortingLayerName() { }
+	public string get_sortingLayerName() { }
 
-public void set_sortingLayerName(string value) { }
+	public void set_sortingLayerName(string value) { }
 
-public int get_sortingOrder() { }
+	public int get_sortingOrder() { }
 
-public void set_sortingOrder(int value) { }
+	public void set_sortingOrder(int value) { }
 
-public bool get_trackChangesDuringPlaytime() { }
+	public bool get_trackChangesDuringPlaytime() { }
 
-public void set_trackChangesDuringPlaytime(bool value) { }
+	public void set_trackChangesDuringPlaytime(bool value) { }
 
-public bool get_isCurrentlyTrackingChanges() { }
+	public bool get_isCurrentlyTrackingChanges() { }
 
-public bool get_hasGeometry() { }
+	public bool get_hasGeometry() { }
 
-public Bounds get_bounds() { }
+	public Bounds get_bounds() { }
 
-public void SetClippingPlane(Plane planeWS) { }
+	public void SetClippingPlane(Plane planeWS) { }
 
-public void SetClippingPlaneOff() { }
+	public void SetClippingPlaneOff() { }
 
-public bool IsColliderHiddenByDynamicOccluder(Collider collider) { }
+	public bool IsColliderHiddenByDynamicOccluder(Collider collider) { }
 
-public int get_blendingModeAsInt() { }
+	public int get_blendingModeAsInt() { }
 
-public MeshRenderer get_Renderer() { }
+	public MeshRenderer get_Renderer() { }
 
-public string get_meshStats() { }
+	public string get_meshStats() { }
 
-public int get_meshVerticesCount() { }
+	public int get_meshVerticesCount() { }
 
-public int get_meshTrianglesCount() { }
+	public int get_meshTrianglesCount() { }
 
-private Light get_lightSpotAttached() { }
+	private Light get_lightSpotAttached() { }
 
-public float GetInsideBeamFactor(Vector3 posWS) { }
+	public float GetInsideBeamFactor(Vector3 posWS) { }
 
-public float GetInsideBeamFactorFromObjectSpacePos(Vector3 posOS) { }
+	public float GetInsideBeamFactorFromObjectSpacePos(Vector3 posOS) { }
 
 	[ObsoleteAttribute] 
-public void Generate() { }
+	public void Generate() { }
 
-public virtual void GenerateGeometry() { }
+	public virtual void GenerateGeometry() { }
 
-public virtual void UpdateAfterManualPropertyChange() { }
+	public virtual void UpdateAfterManualPropertyChange() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void StartPlaytimeUpdateIfNeeded() { }
+	private void StartPlaytimeUpdateIfNeeded() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator CoPlaytimeUpdate() { }
+	private IEnumerator CoPlaytimeUpdate() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-private void DestroyBeam() { }
+	private void DestroyBeam() { }
 
-private void AssignPropertiesFromSpotLight(Light lightSpot) { }
+	private void AssignPropertiesFromSpotLight(Light lightSpot) { }
 
-private void ClampProperties() { }
+	private void ClampProperties() { }
 
-private void ValidateProperties() { }
+	private void ValidateProperties() { }
 
-private void HandleBackwardCompatibility(int serializedVersion, int newVersion) { }
+	private void HandleBackwardCompatibility(int serializedVersion, int newVersion) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -187,26 +187,26 @@ private sealed class VolumetricLightBeam.<CoPlaytimeUpdate>d__98 : IEnumerator<o
 	private object <>2__current; 
 	public VolumetricLightBeam <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

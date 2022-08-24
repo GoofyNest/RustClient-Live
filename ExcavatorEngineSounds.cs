@@ -3,9 +3,9 @@ public class ExcavatorEngineSounds : MonoBehaviour, IClientComponent // TypeDefI
 	public SoundPlayer[] engineStartClunks; 
 
 
-public void PlayStartClunks() { }
+	public void PlayStartClunks() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

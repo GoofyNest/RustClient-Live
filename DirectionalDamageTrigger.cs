@@ -5,7 +5,7 @@ public class DirectionalDamageTrigger : TriggerBase // TypeDefIndex: 9277
 	public GameObjectRef attackEffect; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

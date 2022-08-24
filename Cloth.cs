@@ -12,21 +12,21 @@ public sealed class Cloth : Component
 	[CompilerGeneratedAttribute] 
 	private readonly bool <selfCollision>k__BackingField; 
 
-public Vector3 externalAcceleration { get; set; }
-public bool enabled { set; }
+	public Vector3 externalAcceleration { get; set; }
+	public bool enabled { set; }
 
 
-public Vector3 get_externalAcceleration() { }
+	public Vector3 get_externalAcceleration() { }
 
-public void set_externalAcceleration(Vector3 value) { }
+	public void set_externalAcceleration(Vector3 value) { }
 
-public void set_enabled(bool value) { }
+	public void set_enabled(bool value) { }
 
-public void SetEnabledFading(bool enabled, float interpolationTime) { }
+	public void SetEnabledFading(bool enabled, float interpolationTime) { }
 
-private void get_externalAcceleration_Injected(out Vector3 ret) { }
+	private void get_externalAcceleration_Injected(out Vector3 ret) { }
 
-private void set_externalAcceleration_Injected(ref Vector3 value) { }
+	private void set_externalAcceleration_Injected(ref Vector3 value) { }
 
 }
 

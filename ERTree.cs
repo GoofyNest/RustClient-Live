@@ -8,9 +8,9 @@ public class ERTree // TypeDefIndex: 7283
 	public float widthScale; 
 
 
-public void .ctor(TreeInstance instance) { }
+	public void .ctor(TreeInstance instance) { }
 
-public TreeInstance SetERTreeInstance(ERTree eRTreeinstance) { }
+	public TreeInstance SetERTreeInstance(ERTree eRTreeinstance) { }
 
 }
 

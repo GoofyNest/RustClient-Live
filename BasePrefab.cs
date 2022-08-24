@@ -5,14 +5,14 @@ public class BasePrefab : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 
 	[HideInInspector] 
 	public bool isClient; 
 
-public bool isServer { get; }
+	public bool isServer { get; }
 
 
-public bool get_isServer() { }
+	public bool get_isServer() { }
 
-public virtual void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public virtual void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -17,17 +17,17 @@ public class PatternFireworkShell : FireworkShell // TypeDefIndex: 8277
 	private PatternFirework.Design _design; 
 
 
-public override void Init(MortarFirework firework) { }
+	public override void Init(MortarFirework firework) { }
 
-public override void Cleanup() { }
+	public override void Cleanup() { }
 
-public override float CalculateFuseLength() { }
+	public override float CalculateFuseLength() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public override void Explode() { }
+	public override void Explode() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

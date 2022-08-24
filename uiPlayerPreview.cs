@@ -11,19 +11,19 @@ public class uiPlayerPreview : SingletonComponent<uiPlayerPreview> // TypeDefInd
 	private bool wasOpen; 
 
 
-public static void Create() { }
+	public static void Create() { }
 
-private void Start() { }
+	private void Start() { }
 
-public void UpdateFrom(BasePlayer player) { }
+	public void UpdateFrom(BasePlayer player) { }
 
-private void Update() { }
+	private void Update() { }
 
-private void CleanupLayers() { }
+	private void CleanupLayers() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

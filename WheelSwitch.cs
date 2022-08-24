@@ -12,34 +12,34 @@ public class WheelSwitch : IOEntity // TypeDefIndex: 8487
 	private BasePlayer rotatorPlayer; 
 	private float animProgress; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void OnUseStopped(BasePlayer player) { }
+	public override void OnUseStopped(BasePlayer player) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void Update() { }
+	public void Update() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Turn(BasePlayer player) { }
+	public void Menu_Turn(BasePlayer player) { }
 
-public bool Menu_Turn_ShowIf(BasePlayer player) { }
+	public bool Menu_Turn_ShowIf(BasePlayer player) { }
 
-public bool IsBeingRotated() { }
+	public bool IsBeingRotated() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

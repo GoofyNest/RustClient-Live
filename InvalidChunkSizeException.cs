@@ -8,7 +8,7 @@ public sealed class InvalidChunkSizeException : MidiException // TypeDefIndex: 7
 	private readonly long <ActualSize>k__BackingField; 
 
 
-internal void .ctor(string chunkId, long expectedSize, long actualSize) { }
+	internal void .ctor(string chunkId, long expectedSize, long actualSize) { }
 
 }
 

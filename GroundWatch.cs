@@ -7,7 +7,7 @@ public class GroundWatch : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 
 	public BaseEntity[] whitelist; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

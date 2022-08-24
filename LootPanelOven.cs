@@ -4,15 +4,15 @@ public class LootPanelOven : LootPanel // TypeDefIndex: 11034
 	public GameObject controlsOff; 
 
 
-public override void Update() { }
+	public override void Update() { }
 
-public BaseOven GetBaseOven() { }
+	public BaseOven GetBaseOven() { }
 
-public bool IsOn() { }
+	public bool IsOn() { }
 
-public void Switch(bool onOff) { }
+	public void Switch(bool onOff) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -12,19 +12,19 @@ public class FlashbangOverlay : MonoBehaviour, IClientComponent // TypeDefIndex:
 	private SoundModulation.Modulator deafGain; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void Flash(float time) { }
+	public void Flash(float time) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void UpdateAudio() { }
+	public void UpdateAudio() { }
 
-public void ShutdownAudio() { }
+	public void ShutdownAudio() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

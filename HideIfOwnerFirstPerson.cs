@@ -5,26 +5,26 @@ public class HideIfOwnerFirstPerson : EntityComponent<BaseEntity>, IClientCompon
 	protected bool lastHidden; 
 	private Dictionary<Renderer, ShadowCastingMode> previousValues; 
 
-public bool IsHidden { get; }
+	public bool IsHidden { get; }
 
 
-public bool get_IsHidden() { }
+	public bool get_IsHidden() { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void OnViewModeChanged() { }
+	public void OnViewModeChanged() { }
 
-public void SetHidden(bool shouldHide) { }
+	public void SetHidden(bool shouldHide) { }
 
-public bool ShouldHide() { }
+	public bool ShouldHide() { }
 
-private void SetShadowsOnly(GameObject root) { }
+	private void SetShadowsOnly(GameObject root) { }
 
-private void RevertShadowsOnly(GameObject root) { }
+	private void RevertShadowsOnly(GameObject root) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

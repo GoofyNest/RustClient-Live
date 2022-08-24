@@ -29,11 +29,11 @@ public class QDOQDSQOOQDDD // TypeDefIndex: 7171
 	public float startAngle; 
 
 
-public void .ctor(ERModularBase scr) { }
+	public void .ctor(ERModularBase scr) { }
 
-public void CopyFromSidewalk(ERSideWalk sw) { }
+	public void CopyFromSidewalk(ERSideWalk sw) { }
 
-public static bool ERSidewalkMatch(QDOQDSQOOQDDD sw1, QDOQDSQOOQDDD sw2) { }
+	public static bool ERSidewalkMatch(QDOQDSQOOQDDD sw1, QDOQDSQOOQDDD sw2) { }
 
 }
 

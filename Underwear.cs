@@ -13,19 +13,19 @@ public class Underwear : ScriptableObject // TypeDefIndex: 10773
 	public bool adminOnly; 
 
 
-public uint GetID() { }
+	public uint GetID() { }
 
-public bool HasMaleParts() { }
+	public bool HasMaleParts() { }
 
-public bool HasFemaleParts() { }
+	public bool HasFemaleParts() { }
 
-public bool ValidForPlayer(BasePlayer player) { }
+	public bool ValidForPlayer(BasePlayer player) { }
 
-public static bool IsFemale(BasePlayer player) { }
+	public static bool IsFemale(BasePlayer player) { }
 
-public static bool Validate(Underwear underwear, BasePlayer player) { }
+	public static bool Validate(Underwear underwear, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,17 +6,17 @@ public class MorphCache : FacepunchBehaviour // TypeDefIndex: 10686
 	private int shapeIndex; 
 
 
-public void Setup() { }
+	public void Setup() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public void SetShapes(Mesh[] shapes) { }
+	public void SetShapes(Mesh[] shapes) { }
 
-public void SetShapeIndex(int index) { }
+	public void SetShapeIndex(int index) { }
 
-private void UpdateShape() { }
+	private void UpdateShape() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

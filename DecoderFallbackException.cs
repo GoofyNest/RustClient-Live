@@ -4,11 +4,11 @@ public sealed class DecoderFallbackException : ArgumentException // TypeDefIndex
 	private int index; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void .ctor(SerializationInfo info, StreamingContext context) { }
+	internal void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public void .ctor(string message, byte[] bytesUnknown, int index) { }
+	public void .ctor(string message, byte[] bytesUnknown, int index) { }
 
 }
 

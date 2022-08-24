@@ -5,14 +5,14 @@ internal class ObjectHolderListEnumerator // TypeDefIndex: 1043
 	private int m_startingVersion; 
 	private int m_currPos; 
 
-internal ObjectHolder Current { get; }
+	internal ObjectHolder Current { get; }
 
 
-internal void .ctor(ObjectHolderList list, bool isFixupEnumerator) { }
+	internal void .ctor(ObjectHolderList list, bool isFixupEnumerator) { }
 
-internal bool MoveNext() { }
+	internal bool MoveNext() { }
 
-internal ObjectHolder get_Current() { }
+	internal ObjectHolder get_Current() { }
 
 }
 

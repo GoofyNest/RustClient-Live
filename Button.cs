@@ -4,30 +4,30 @@ public class Button : Selectable, IPointerClickHandler, IEventSystemHandler, ISu
 	[SerializeField] 
 	private Button.ButtonClickedEvent m_OnClick; 
 
-public Button.ButtonClickedEvent onClick { get; set; }
+	public Button.ButtonClickedEvent onClick { get; set; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public Button.ButtonClickedEvent get_onClick() { }
+	public Button.ButtonClickedEvent get_onClick() { }
 
-public void set_onClick(Button.ButtonClickedEvent value) { }
+	public void set_onClick(Button.ButtonClickedEvent value) { }
 
-private void Press() { }
+	private void Press() { }
 
-public virtual void OnPointerClick(PointerEventData eventData) { }
+	public virtual void OnPointerClick(PointerEventData eventData) { }
 
-public virtual void OnSubmit(BaseEventData eventData) { }
+	public virtual void OnSubmit(BaseEventData eventData) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator OnFinishSubmit() { }
+	private IEnumerator OnFinishSubmit() { }
 
 }
 
 public class Button.ButtonClickedEvent : UnityEvent // TypeDefIndex: 4906
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -39,44 +39,44 @@ private sealed class Button.<OnFinishSubmit>d__9 : IEnumerator<object>, IEnumera
 	private float <fadeTime>5__2; 
 	private float <elapsedTime>5__3; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
 public enum BUTTON // TypeDefIndex: 10100
 {
 	public int value__; 
-public const BUTTON FORWARD = 2;
-public const BUTTON BACKWARD = 4;
-public const BUTTON LEFT = 8;
-public const BUTTON RIGHT = 16;
-public const BUTTON JUMP = 32;
-public const BUTTON DUCK = 64;
-public const BUTTON SPRINT = 128;
-public const BUTTON USE = 256;
-public const BUTTON FIRE_PRIMARY = 1024;
-public const BUTTON FIRE_SECONDARY = 2048;
-public const BUTTON RELOAD = 8192;
-public const BUTTON FIRE_THIRD = 134217728;
+	public const BUTTON FORWARD = 2;
+	public const BUTTON BACKWARD = 4;
+	public const BUTTON LEFT = 8;
+	public const BUTTON RIGHT = 16;
+	public const BUTTON JUMP = 32;
+	public const BUTTON DUCK = 64;
+	public const BUTTON SPRINT = 128;
+	public const BUTTON USE = 256;
+	public const BUTTON FIRE_PRIMARY = 1024;
+	public const BUTTON FIRE_SECONDARY = 2048;
+	public const BUTTON RELOAD = 8192;
+	public const BUTTON FIRE_THIRD = 134217728;
 
 }
 

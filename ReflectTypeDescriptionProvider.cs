@@ -15,64 +15,64 @@ internal sealed class ReflectTypeDescriptionProvider : TypeDescriptionProvider /
 	private static readonly Type[] _skipInterfaceAttributeList; 
 	private static object _internalSyncObject; 
 
-private static Hashtable IntrinsicTypeConverters { get; }
+	private static Hashtable IntrinsicTypeConverters { get; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private static Hashtable get_IntrinsicTypeConverters() { }
+	private static Hashtable get_IntrinsicTypeConverters() { }
 
-public override object CreateInstance(IServiceProvider provider, Type objectType, Type[] argTypes, object[] args) { }
+	public override object CreateInstance(IServiceProvider provider, Type objectType, Type[] argTypes, object[] args) { }
 
-private static object CreateInstance(Type objectType, Type callingType) { }
+	private static object CreateInstance(Type objectType, Type callingType) { }
 
-internal AttributeCollection GetAttributes(Type type) { }
+	internal AttributeCollection GetAttributes(Type type) { }
 
-public override IDictionary GetCache(object instance) { }
+	public override IDictionary GetCache(object instance) { }
 
-internal TypeConverter GetConverter(Type type, object instance) { }
+	internal TypeConverter GetConverter(Type type, object instance) { }
 
-internal AttributeCollection GetExtendedAttributes(object instance) { }
+	internal AttributeCollection GetExtendedAttributes(object instance) { }
 
-internal TypeConverter GetExtendedConverter(object instance) { }
+	internal TypeConverter GetExtendedConverter(object instance) { }
 
-internal PropertyDescriptorCollection GetExtendedProperties(object instance) { }
+	internal PropertyDescriptorCollection GetExtendedProperties(object instance) { }
 
-protected internal override IExtenderProvider[] GetExtenderProviders(object instance) { }
+	protected internal override IExtenderProvider[] GetExtenderProviders(object instance) { }
 
-private static IExtenderProvider[] GetExtenders(ICollection components, object instance, IDictionary cache) { }
+	private static IExtenderProvider[] GetExtenders(ICollection components, object instance, IDictionary cache) { }
 
-internal object GetExtendedPropertyOwner(object instance, PropertyDescriptor pd) { }
+	internal object GetExtendedPropertyOwner(object instance, PropertyDescriptor pd) { }
 
-public override ICustomTypeDescriptor GetExtendedTypeDescriptor(object instance) { }
+	public override ICustomTypeDescriptor GetExtendedTypeDescriptor(object instance) { }
 
-internal PropertyDescriptorCollection GetProperties(Type type) { }
+	internal PropertyDescriptorCollection GetProperties(Type type) { }
 
-internal object GetPropertyOwner(Type type, object instance, PropertyDescriptor pd) { }
+	internal object GetPropertyOwner(Type type, object instance, PropertyDescriptor pd) { }
 
-public override Type GetReflectionType(Type objectType, object instance) { }
+	public override Type GetReflectionType(Type objectType, object instance) { }
 
-private ReflectTypeDescriptionProvider.ReflectedTypeData GetTypeData(Type type, bool createIfNeeded) { }
+	private ReflectTypeDescriptionProvider.ReflectedTypeData GetTypeData(Type type, bool createIfNeeded) { }
 
-public override ICustomTypeDescriptor GetTypeDescriptor(Type objectType, object instance) { }
+	public override ICustomTypeDescriptor GetTypeDescriptor(Type objectType, object instance) { }
 
-private static Type GetTypeFromName(string typeName) { }
+	private static Type GetTypeFromName(string typeName) { }
 
-internal bool IsPopulated(Type type) { }
+	internal bool IsPopulated(Type type) { }
 
-private static Attribute[] ReflectGetAttributes(Type type) { }
+	private static Attribute[] ReflectGetAttributes(Type type) { }
 
-internal static Attribute[] ReflectGetAttributes(MemberInfo member) { }
+	internal static Attribute[] ReflectGetAttributes(MemberInfo member) { }
 
-private static PropertyDescriptor[] ReflectGetExtendedProperties(IExtenderProvider provider) { }
+	private static PropertyDescriptor[] ReflectGetExtendedProperties(IExtenderProvider provider) { }
 
-private static PropertyDescriptor[] ReflectGetProperties(Type type) { }
+	private static PropertyDescriptor[] ReflectGetProperties(Type type) { }
 
-internal void Refresh(Type type) { }
+	internal void Refresh(Type type) { }
 
-private static object SearchIntrinsicTable(Hashtable table, Type callingType) { }
+	private static object SearchIntrinsicTable(Hashtable table, Type callingType) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -87,22 +87,22 @@ private class ReflectTypeDescriptionProvider.ReflectedTypeData // TypeDefIndex: 
 	private Type[] _editorTypes; 
 	private int _editorCount; 
 
-internal bool IsPopulated { get; }
+	internal bool IsPopulated { get; }
 
 
-internal void .ctor(Type type) { }
+	internal void .ctor(Type type) { }
 
-internal bool get_IsPopulated() { }
+	internal bool get_IsPopulated() { }
 
-internal AttributeCollection GetAttributes() { }
+	internal AttributeCollection GetAttributes() { }
 
-internal TypeConverter GetConverter(object instance) { }
+	internal TypeConverter GetConverter(object instance) { }
 
-internal PropertyDescriptorCollection GetProperties() { }
+	internal PropertyDescriptorCollection GetProperties() { }
 
-private Type GetTypeFromName(string typeName) { }
+	private Type GetTypeFromName(string typeName) { }
 
-internal void Refresh() { }
+	internal void Refresh() { }
 
 }
 

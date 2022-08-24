@@ -30,19 +30,19 @@ public class ERSideWalk // TypeDefIndex: 7197
 	public float innerSegmentDistance; 
 
 
-public static ERSideWalk CreateInstance(int count) { }
+	public static ERSideWalk CreateInstance(int count) { }
 
-public void UpdateTimestamp() { }
+	public void UpdateTimestamp() { }
 
-public static string[] SidewalkNames(List<ERSideWalk> sidewalks) { }
+	public static string[] SidewalkNames(List<ERSideWalk> sidewalks) { }
 
-public static void CopySidewalk(ERSideWalk source, ERSideWalk target) { }
+	public static void CopySidewalk(ERSideWalk source, ERSideWalk target) { }
 
-public static void RefreshSidewalks(List<ERSideWalk> sidewalks) { }
+	public static void RefreshSidewalks(List<ERSideWalk> sidewalks) { }
 
-public void OOQQDCCDQO() { }
+	public void OOQQDCCDQO() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

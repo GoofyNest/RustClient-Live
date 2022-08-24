@@ -6,13 +6,13 @@ public class LODManager : SingletonComponent<LODManager> // TypeDefIndex: 9935
 	private int offset; 
 
 
-protected void LateUpdate() { }
+	protected void LateUpdate() { }
 
-public static void Add(ILOD component, Transform transform) { }
+	public static void Add(ILOD component, Transform transform) { }
 
-public static void Remove(ILOD component, Transform transform) { }
+	public static void Remove(ILOD component, Transform transform) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

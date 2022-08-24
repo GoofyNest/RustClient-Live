@@ -6,13 +6,13 @@ public sealed class Fog // TypeDefIndex: 11783
 	public bool excludeSkybox; 
 
 
-internal DepthTextureMode GetCameraFlags() { }
+	internal DepthTextureMode GetCameraFlags() { }
 
-internal bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	internal bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-internal void Render(PostProcessRenderContext context) { }
+	internal void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

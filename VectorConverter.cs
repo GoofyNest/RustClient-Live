@@ -10,46 +10,46 @@ public class VectorConverter : JsonConverter // TypeDefIndex: 6107
 	[CompilerGeneratedAttribute] 
 	private bool <EnableVector4>k__BackingField; 
 
-public bool EnableVector2 { get; set; }
-public bool EnableVector3 { get; set; }
-public bool EnableVector4 { get; set; }
+	public bool EnableVector2 { get; set; }
+	public bool EnableVector3 { get; set; }
+	public bool EnableVector4 { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_EnableVector2() { }
+	public bool get_EnableVector2() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_EnableVector2(bool value) { }
+	public void set_EnableVector2(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_EnableVector3() { }
+	public bool get_EnableVector3() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_EnableVector3(bool value) { }
+	public void set_EnableVector3(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_EnableVector4() { }
+	public bool get_EnableVector4() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_EnableVector4(bool value) { }
+	public void set_EnableVector4(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
+	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
 
-private static void WriteVector(JsonWriter writer, float x, float y, Nullable<float> z, Nullable<float> w) { }
+	private static void WriteVector(JsonWriter writer, float x, float y, Nullable<float> z, Nullable<float> w) { }
 
-public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) { }
+	public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer) { }
 
-public override bool CanConvert(Type objectType) { }
+	public override bool CanConvert(Type objectType) { }
 
-private static Vector2 PopulateVector2(JsonReader reader) { }
+	private static Vector2 PopulateVector2(JsonReader reader) { }
 
-private static Vector3 PopulateVector3(JsonReader reader) { }
+	private static Vector3 PopulateVector3(JsonReader reader) { }
 
-private static Vector4 PopulateVector4(JsonReader reader) { }
+	private static Vector4 PopulateVector4(JsonReader reader) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

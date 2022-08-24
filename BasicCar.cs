@@ -21,42 +21,42 @@ public class BasicCar : BaseVehicle // TypeDefIndex: 9698
 	private float shockDistance; 
 	private float traceDistanceNeutralPoint; 
 	private int cachedMask; 
-private const float wheelSpinConstant = 120;
+	private const float wheelSpinConstant = 120;
 	private AverageVelocity averageVelocity; 
 	private Sound engineSoundLoop; 
 	private SoundModulation.Modulator engineSoundVolume; 
 	private SoundModulation.Modulator engineSoundPitch; 
 
 
-public override float MaxVelocity() { }
+	public override float MaxVelocity() { }
 
-public override Vector3 EyePositionForPlayer(BasePlayer player, Quaternion viewRot) { }
+	public override Vector3 EyePositionForPlayer(BasePlayer player, Quaternion viewRot) { }
 
-protected override void DoClientDestroy() { }
+	protected override void DoClientDestroy() { }
 
-public override void SetNetworkPosition(Vector3 vPos) { }
+	public override void SetNetworkPosition(Vector3 vPos) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void Update() { }
+	public void Update() { }
 
-private float GetShockHeightDelta(WheelCollider wheel, int i) { }
+	private float GetShockHeightDelta(WheelCollider wheel, int i) { }
 
-private float ClientSteering() { }
+	private float ClientSteering() { }
 
-public bool IsBreaking() { }
+	public bool IsBreaking() { }
 
-private void UpdateTireAnimation() { }
+	private void UpdateTireAnimation() { }
 
-public void InitializeClientsideEffects() { }
+	public void InitializeClientsideEffects() { }
 
-public void ShutdownClientsideEffects() { }
+	public void ShutdownClientsideEffects() { }
 
-public bool IsEngineOn() { }
+	public bool IsEngineOn() { }
 
-public void UpdateSounds() { }
+	public void UpdateSounds() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -71,7 +71,7 @@ public class BasicCar.VehicleWheel // TypeDefIndex: 9699
 	public bool powerWheel; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

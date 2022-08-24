@@ -17,13 +17,13 @@ internal sealed class X501 // TypeDefIndex: 57
 	private static byte[] initial; 
 
 
-public static string ToString(ASN1 seq) { }
+	public static string ToString(ASN1 seq) { }
 
-public static string ToString(ASN1 seq, bool reversed, string separator, bool quotes) { }
+	public static string ToString(ASN1 seq, bool reversed, string separator, bool quotes) { }
 
-private static void AppendEntry(StringBuilder sb, ASN1 entry, bool quotes) { }
+	private static void AppendEntry(StringBuilder sb, ASN1 entry, bool quotes) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -46,13 +46,13 @@ public sealed class X501 // TypeDefIndex: 1713
 	private static byte[] initial; 
 
 
-public static string ToString(ASN1 seq) { }
+	public static string ToString(ASN1 seq) { }
 
-public static string ToString(ASN1 seq, bool reversed, string separator, bool quotes) { }
+	public static string ToString(ASN1 seq, bool reversed, string separator, bool quotes) { }
 
-private static void AppendEntry(StringBuilder sb, ASN1 entry, bool quotes) { }
+	private static void AppendEntry(StringBuilder sb, ASN1 entry, bool quotes) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -7,15 +7,15 @@ public class FlintStrikeWeapon : BaseProjectile // TypeDefIndex: 9463
 	private int strikes; 
 
 
-public override RecoilProperties GetRecoil() { }
+	public override RecoilProperties GetRecoil() { }
 
-public override void DoAttack() { }
+	public override void DoAttack() { }
 
-public override void OnFrame() { }
+	public override void OnFrame() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

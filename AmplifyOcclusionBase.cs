@@ -117,104 +117,104 @@ public class AmplifyOcclusionBase : MonoBehaviour // TypeDefIndex: 11464
 	private AmplifyOcclusionBase.TargetDesc m_target; 
 
 
-private void createCommandBuffer(ref AmplifyOcclusionBase.CmdBuffer aCmdBuffer, string aCmdBufferName, CameraEvent aCameraEvent) { }
+	private void createCommandBuffer(ref AmplifyOcclusionBase.CmdBuffer aCmdBuffer, string aCmdBufferName, CameraEvent aCameraEvent) { }
 
-private void cleanupCommandBuffer(ref AmplifyOcclusionBase.CmdBuffer aCmdBuffer) { }
+	private void cleanupCommandBuffer(ref AmplifyOcclusionBase.CmdBuffer aCmdBuffer) { }
 
-private void createQuadMesh() { }
+	private void createQuadMesh() { }
 
-private void PerformBlit(CommandBuffer cb, Material mat, int pass) { }
+	private void PerformBlit(CommandBuffer cb, Material mat, int pass) { }
 
-private Material createMaterialWithShaderName(string aShaderName, bool aThroughErrorMsg) { }
+	private Material createMaterialWithShaderName(string aShaderName, bool aThroughErrorMsg) { }
 
-private void checkMaterials(bool aThroughErrorMsg) { }
+	private void checkMaterials(bool aThroughErrorMsg) { }
 
-private bool checkRenderTextureFormats() { }
+	private bool checkRenderTextureFormats() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Reset() { }
+	private void Reset() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void releaseRT() { }
+	private void releaseRT() { }
 
-private bool checkParamsChanged() { }
+	private bool checkParamsChanged() { }
 
-private void updateParams() { }
+	private void updateParams() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-private int safeAllocateTemporaryRT(CommandBuffer cb, string propertyName, int width, int height, RenderTextureFormat format = 7, RenderTextureReadWrite readWrite = 0, FilterMode filterMode = 0) { }
+	private int safeAllocateTemporaryRT(CommandBuffer cb, string propertyName, int width, int height, RenderTextureFormat format = 7, RenderTextureReadWrite readWrite = 0, FilterMode filterMode = 0) { }
 
-private void safeReleaseTemporaryRT(CommandBuffer cb, int id) { }
+	private void safeReleaseTemporaryRT(CommandBuffer cb, int id) { }
 
-private RenderTexture safeAllocateRT(string name, int width, int height, RenderTextureFormat format, RenderTextureReadWrite readWrite, FilterMode filterMode = 0) { }
+	private RenderTexture safeAllocateRT(string name, int width, int height, RenderTextureFormat format, RenderTextureReadWrite readWrite, FilterMode filterMode = 0) { }
 
-private void safeReleaseRT(ref RenderTexture rt) { }
+	private void safeReleaseRT(ref RenderTexture rt) { }
 
-private void BeginSample(CommandBuffer cb, string name) { }
+	private void BeginSample(CommandBuffer cb, string name) { }
 
-private void EndSample(CommandBuffer cb, string name) { }
+	private void EndSample(CommandBuffer cb, string name) { }
 
-private void commandBuffer_FillComputeOcclusion(CommandBuffer cb) { }
+	private void commandBuffer_FillComputeOcclusion(CommandBuffer cb) { }
 
-private void commandBuffer_Blur(CommandBuffer cb, RenderTargetIdentifier aSourceRT, int aSourceWidth, int aSourceHeight) { }
+	private void commandBuffer_Blur(CommandBuffer cb, RenderTargetIdentifier aSourceRT, int aSourceWidth, int aSourceHeight) { }
 
-private int getTemporalPass() { }
+	private int getTemporalPass() { }
 
-private void commandBuffer_TemporalFilter(CommandBuffer cb) { }
+	private void commandBuffer_TemporalFilter(CommandBuffer cb) { }
 
-private void commandBuffer_FillApplyDeferred(CommandBuffer cb, bool logTarget) { }
+	private void commandBuffer_FillApplyDeferred(CommandBuffer cb, bool logTarget) { }
 
-private void commandBuffer_FillApplyPostEffect(CommandBuffer cb) { }
+	private void commandBuffer_FillApplyPostEffect(CommandBuffer cb) { }
 
-private void commandBuffer_FillApplyDebug(CommandBuffer cb) { }
+	private void commandBuffer_FillApplyDebug(CommandBuffer cb) { }
 
-private bool isStereoSinglePassEnabled() { }
+	private bool isStereoSinglePassEnabled() { }
 
-private void UpdateGlobalShaderConstants() { }
+	private void UpdateGlobalShaderConstants() { }
 
-private void UpdateGlobalShaderConstants_AmbientOcclusion() { }
+	private void UpdateGlobalShaderConstants_AmbientOcclusion() { }
 
-private void UpdateGlobalShaderConstants_Matrices() { }
+	private void UpdateGlobalShaderConstants_Matrices() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum AmplifyOcclusionBase.ApplicationMethod // TypeDefIndex: 11465
 {
 	public int value__; 
-public const AmplifyOcclusionBase.ApplicationMethod PostEffect = 0;
-public const AmplifyOcclusionBase.ApplicationMethod Deferred = 1;
-public const AmplifyOcclusionBase.ApplicationMethod Debug = 2;
+	public const AmplifyOcclusionBase.ApplicationMethod PostEffect = 0;
+	public const AmplifyOcclusionBase.ApplicationMethod Deferred = 1;
+	public const AmplifyOcclusionBase.ApplicationMethod Debug = 2;
 
 }
 
 public enum AmplifyOcclusionBase.PerPixelNormalSource // TypeDefIndex: 11466
 {
 	public int value__; 
-public const AmplifyOcclusionBase.PerPixelNormalSource None = 0;
-public const AmplifyOcclusionBase.PerPixelNormalSource Camera = 1;
-public const AmplifyOcclusionBase.PerPixelNormalSource GBuffer = 2;
-public const AmplifyOcclusionBase.PerPixelNormalSource GBufferOctaEncoded = 3;
+	public const AmplifyOcclusionBase.PerPixelNormalSource None = 0;
+	public const AmplifyOcclusionBase.PerPixelNormalSource Camera = 1;
+	public const AmplifyOcclusionBase.PerPixelNormalSource GBuffer = 2;
+	public const AmplifyOcclusionBase.PerPixelNormalSource GBufferOctaEncoded = 3;
 
 }
 
 public enum AmplifyOcclusionBase.SampleCountLevel // TypeDefIndex: 11467
 {
 	public int value__; 
-public const AmplifyOcclusionBase.SampleCountLevel Low = 0;
-public const AmplifyOcclusionBase.SampleCountLevel Medium = 1;
-public const AmplifyOcclusionBase.SampleCountLevel High = 2;
-public const AmplifyOcclusionBase.SampleCountLevel VeryHigh = 3;
+	public const AmplifyOcclusionBase.SampleCountLevel Low = 0;
+	public const AmplifyOcclusionBase.SampleCountLevel Medium = 1;
+	public const AmplifyOcclusionBase.SampleCountLevel High = 2;
+	public const AmplifyOcclusionBase.SampleCountLevel VeryHigh = 3;
 
 }
 
@@ -240,30 +240,30 @@ private struct AmplifyOcclusionBase.TargetDesc // TypeDefIndex: 11469
 
 private static class AmplifyOcclusionBase.ShaderPass // TypeDefIndex: 11470
 {
-public const int CombineDownsampledOcclusionDepth = 16;
-public const int CombineEmission = 17;
-public const int CombineEmissionLog = 18;
-public const int BlurHorizontal1 = 0;
-public const int BlurVertical1 = 1;
-public const int BlurHorizontal2 = 2;
-public const int BlurVertical2 = 3;
-public const int BlurHorizontal3 = 4;
-public const int BlurVertical3 = 5;
-public const int BlurHorizontal4 = 6;
-public const int BlurVertical4 = 7;
-public const int ApplyDebug = 0;
-public const int ApplyDebugTemporal = 1;
-public const int ApplyDeferred = 5;
-public const int ApplyDeferredTemporal = 6;
-public const int ApplyDeferredLog = 10;
-public const int ApplyDeferredLogTemporal = 11;
-public const int ApplyPostEffect = 15;
-public const int ApplyPostEffectTemporal = 16;
-public const int ApplyPostEffectTemporalMultiply = 20;
-public const int OcclusionLow_None = 0;
-public const int OcclusionLow_Camera = 1;
-public const int OcclusionLow_GBuffer = 2;
-public const int OcclusionLow_GBufferOctaEncoded = 3;
+	public const int CombineDownsampledOcclusionDepth = 16;
+	public const int CombineEmission = 17;
+	public const int CombineEmissionLog = 18;
+	public const int BlurHorizontal1 = 0;
+	public const int BlurVertical1 = 1;
+	public const int BlurHorizontal2 = 2;
+	public const int BlurVertical2 = 3;
+	public const int BlurHorizontal3 = 4;
+	public const int BlurVertical3 = 5;
+	public const int BlurHorizontal4 = 6;
+	public const int BlurVertical4 = 7;
+	public const int ApplyDebug = 0;
+	public const int ApplyDebugTemporal = 1;
+	public const int ApplyDeferred = 5;
+	public const int ApplyDeferredTemporal = 6;
+	public const int ApplyDeferredLog = 10;
+	public const int ApplyDeferredLogTemporal = 11;
+	public const int ApplyPostEffect = 15;
+	public const int ApplyPostEffectTemporal = 16;
+	public const int ApplyPostEffectTemporalMultiply = 20;
+	public const int OcclusionLow_None = 0;
+	public const int OcclusionLow_Camera = 1;
+	public const int OcclusionLow_GBuffer = 2;
+	public const int OcclusionLow_GBufferOctaEncoded = 3;
 
 }
 
@@ -307,7 +307,7 @@ private static class AmplifyOcclusionBase.PropertyID // TypeDefIndex: 11471
 	public static readonly int _AO_Source; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

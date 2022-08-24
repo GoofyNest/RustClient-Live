@@ -8,28 +8,28 @@ internal class CodePageDataItem // TypeDefIndex: 735
 	internal uint m_flags; 
 	private static readonly char[] sep; 
 
-public string WebName { get; }
-public virtual int UIFamilyCodePage { get; }
-public string HeaderName { get; }
-public string BodyName { get; }
-public uint Flags { get; }
+	public string WebName { get; }
+	public virtual int UIFamilyCodePage { get; }
+	public string HeaderName { get; }
+	public string BodyName { get; }
+	public uint Flags { get; }
 
 
-internal void .ctor(int dataIndex) { }
+	internal void .ctor(int dataIndex) { }
 
-internal static string CreateString(string pStrings, uint index) { }
+	internal static string CreateString(string pStrings, uint index) { }
 
-public string get_WebName() { }
+	public string get_WebName() { }
 
-public virtual int get_UIFamilyCodePage() { }
+	public virtual int get_UIFamilyCodePage() { }
 
-public string get_HeaderName() { }
+	public string get_HeaderName() { }
 
-public string get_BodyName() { }
+	public string get_BodyName() { }
 
-public uint get_Flags() { }
+	public uint get_Flags() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

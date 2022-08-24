@@ -5,7 +5,7 @@ internal sealed class DelegateData // TypeDefIndex: 355
 	public bool curried_first_arg; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

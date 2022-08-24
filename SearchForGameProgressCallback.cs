@@ -8,15 +8,15 @@ internal struct SearchForGameProgressCallback_t : ICallbackData // TypeDefIndex:
 	internal int CPlayersSearching; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

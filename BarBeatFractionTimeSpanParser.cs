@@ -6,9 +6,9 @@ internal static class BarBeatFractionTimeSpanParser // TypeDefIndex: 7484
 	private static readonly string[] Patterns; 
 
 
-internal static ParsingResult TryParse(string input, out BarBeatFractionTimeSpan timeSpan) { }
+	internal static ParsingResult TryParse(string input, out BarBeatFractionTimeSpan timeSpan) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

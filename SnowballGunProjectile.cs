@@ -4,11 +4,11 @@ public class SnowballGunProjectile : Projectile // TypeDefIndex: 8828
 	public GameObjectRef SnowballImpactEffect; 
 
 
-protected override float CalculateEffectScale() { }
+	protected override float CalculateEffectScale() { }
 
-protected override void AdditiveImpactEffect(HitInfo info) { }
+	protected override void AdditiveImpactEffect(HitInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

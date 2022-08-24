@@ -6,32 +6,32 @@ public class Reflection : ConsoleSystem // TypeDefIndex: 11954
 	public static bool forests; 
 
 	[ClientVar] 
-public static int resolution { get; set; }
+	public static int resolution { get; set; }
 	[ClientVar] 
-public static float updateinterval { get; set; }
+	public static float updateinterval { get; set; }
 	[ClientVar] 
-public static int timeslicing { get; set; }
+	public static int timeslicing { get; set; }
 
 
-public static int get_resolution() { }
+	public static int get_resolution() { }
 
-public static void set_resolution(int value) { }
+	public static void set_resolution(int value) { }
 
-public static float get_updateinterval() { }
+	public static float get_updateinterval() { }
 
-public static void set_updateinterval(float value) { }
+	public static void set_updateinterval(float value) { }
 
-public static int get_timeslicing() { }
+	public static int get_timeslicing() { }
 
-public static void set_timeslicing(int value) { }
+	public static void set_timeslicing(int value) { }
 
-private static ReflectionProbeTimeSlicingMode TimeSlicingFromInt(int i) { }
+	private static ReflectionProbeTimeSlicingMode TimeSlicingFromInt(int i) { }
 
-private static int TimeSlicingToInt(ReflectionProbeTimeSlicingMode mode) { }
+	private static int TimeSlicingToInt(ReflectionProbeTimeSlicingMode mode) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

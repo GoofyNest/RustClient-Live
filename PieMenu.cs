@@ -43,35 +43,35 @@ public class PieMenu : UIBehaviour // TypeDefIndex: 11190
 	private static AnimationCurve easePunch; 
 
 
-protected override void Start() { }
+	protected override void Start() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void AddOption(PieMenu.MenuOption option) { }
+	public void AddOption(PieMenu.MenuOption option) { }
 
-public void FinishAndOpen() { }
+	public void FinishAndOpen() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-public void SetDefaultOption() { }
+	public void SetDefaultOption() { }
 
-public void PlayOpenSound() { }
+	public void PlayOpenSound() { }
 
-public void PlayCancelSound() { }
+	public void PlayCancelSound() { }
 
-public void Close(bool success = False) { }
+	public void Close(bool success = False) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void Rebuild() { }
+	public void Rebuild() { }
 
-public void UpdateInteraction(bool allowLerp = True) { }
+	public void UpdateInteraction(bool allowLerp = True) { }
 
-public bool DoSelect() { }
+	public bool DoSelect() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -91,7 +91,7 @@ public class PieMenu.MenuOption // TypeDefIndex: 11191
 	public bool wantsMerge; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -105,8 +105,8 @@ public struct PieMenu.MenuOption.ColorMode // TypeDefIndex: 11192
 public enum PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption // TypeDefIndex: 11193
 {
 	public int value__; 
-public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption CustomColor = 0;
-public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption SpriteColor = 1;
+	public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption CustomColor = 0;
+	public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption SpriteColor = 1;
 
 }
 
@@ -117,13 +117,13 @@ private sealed class PieMenu.<>c // TypeDefIndex: 11194
 	public static Func<PieMenu.MenuOption, bool> <>9__43_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <Rebuild>b__43_0(PieMenu.MenuOption x) { }
+	internal int <Rebuild>b__43_0(PieMenu.MenuOption x) { }
 
-internal bool <Rebuild>b__43_1(PieMenu.MenuOption x) { }
+	internal bool <Rebuild>b__43_1(PieMenu.MenuOption x) { }
 
 }
 

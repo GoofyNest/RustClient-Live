@@ -32,22 +32,22 @@ public class MagnetCraneAudio : MonoBehaviour // TypeDefIndex: 9731
 	private float arm01Speed; 
 	private float arm02Speed; 
 	private float cabinYawSpeed; 
-private const float MIN_TIME_BETWEEN_ONESHOTS = 0,5;
+	private const float MIN_TIME_BETWEEN_ONESHOTS = 0,5;
 	private TimeSince timeSinceLastCabinSound; 
 	private TimeSince timeSinceLastArmSound; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void ClientTick() { }
+	public void ClientTick() { }
 
-public void OnClientTickStopped() { }
+	public void OnClientTickStopped() { }
 
-private void TryPlayOneshot(SoundDefinition soundDef, GameObject targetParent, ref TimeSince timeSinceLast) { }
+	private void TryPlayOneshot(SoundDefinition soundDef, GameObject targetParent, ref TimeSince timeSinceLast) { }
 
-private void StopAll() { }
+	private void StopAll() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

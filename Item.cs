@@ -1,56 +1,56 @@
 internal enum ItemUpdateStatus // TypeDefIndex: 5163
 {
 	public int value__; 
-public const ItemUpdateStatus Invalid = 0;
-public const ItemUpdateStatus PreparingConfig = 1;
-public const ItemUpdateStatus PreparingContent = 2;
-public const ItemUpdateStatus UploadingContent = 3;
-public const ItemUpdateStatus UploadingPreviewFile = 4;
-public const ItemUpdateStatus CommittingChanges = 5;
+	public const ItemUpdateStatus Invalid = 0;
+	public const ItemUpdateStatus PreparingConfig = 1;
+	public const ItemUpdateStatus PreparingContent = 2;
+	public const ItemUpdateStatus UploadingContent = 3;
+	public const ItemUpdateStatus UploadingPreviewFile = 4;
+	public const ItemUpdateStatus CommittingChanges = 5;
 
 }
 
 internal enum ItemState // TypeDefIndex: 5164
 {
 	public int value__; 
-public const ItemState None = 0;
-public const ItemState Subscribed = 1;
-public const ItemState LegacyItem = 2;
-public const ItemState Installed = 4;
-public const ItemState NeedsUpdate = 8;
-public const ItemState Downloading = 16;
-public const ItemState DownloadPending = 32;
+	public const ItemState None = 0;
+	public const ItemState Subscribed = 1;
+	public const ItemState LegacyItem = 2;
+	public const ItemState Installed = 4;
+	public const ItemState NeedsUpdate = 8;
+	public const ItemState Downloading = 16;
+	public const ItemState DownloadPending = 32;
 
 }
 
 internal enum ItemStatistic // TypeDefIndex: 5165
 {
 	public int value__; 
-public const ItemStatistic NumSubscriptions = 0;
-public const ItemStatistic NumFavorites = 1;
-public const ItemStatistic NumFollowers = 2;
-public const ItemStatistic NumUniqueSubscriptions = 3;
-public const ItemStatistic NumUniqueFavorites = 4;
-public const ItemStatistic NumUniqueFollowers = 5;
-public const ItemStatistic NumUniqueWebsiteViews = 6;
-public const ItemStatistic ReportScore = 7;
-public const ItemStatistic NumSecondsPlayed = 8;
-public const ItemStatistic NumPlaytimeSessions = 9;
-public const ItemStatistic NumComments = 10;
-public const ItemStatistic NumSecondsPlayedDuringTimePeriod = 11;
-public const ItemStatistic NumPlaytimeSessionsDuringTimePeriod = 12;
+	public const ItemStatistic NumSubscriptions = 0;
+	public const ItemStatistic NumFavorites = 1;
+	public const ItemStatistic NumFollowers = 2;
+	public const ItemStatistic NumUniqueSubscriptions = 3;
+	public const ItemStatistic NumUniqueFavorites = 4;
+	public const ItemStatistic NumUniqueFollowers = 5;
+	public const ItemStatistic NumUniqueWebsiteViews = 6;
+	public const ItemStatistic ReportScore = 7;
+	public const ItemStatistic NumSecondsPlayed = 8;
+	public const ItemStatistic NumPlaytimeSessions = 9;
+	public const ItemStatistic NumComments = 10;
+	public const ItemStatistic NumSecondsPlayedDuringTimePeriod = 11;
+	public const ItemStatistic NumPlaytimeSessionsDuringTimePeriod = 12;
 
 }
 
 public enum ItemPreviewType // TypeDefIndex: 5166
 {
 	public int value__; 
-public const ItemPreviewType Image = 0;
-public const ItemPreviewType YouTubeVideo = 1;
-public const ItemPreviewType Sketchfab = 2;
-public const ItemPreviewType EnvironmentMap_HorizontalCross = 3;
-public const ItemPreviewType EnvironmentMap_LatLong = 4;
-public const ItemPreviewType ReservedMax = 255;
+	public const ItemPreviewType Image = 0;
+	public const ItemPreviewType YouTubeVideo = 1;
+	public const ItemPreviewType Sketchfab = 2;
+	public const ItemPreviewType EnvironmentMap_HorizontalCross = 3;
+	public const ItemPreviewType EnvironmentMap_LatLong = 4;
+	public const ItemPreviewType ReservedMax = 255;
 
 }
 
@@ -100,147 +100,147 @@ public struct Item // TypeDefIndex: 5277
 	[CompilerGeneratedAttribute] 
 	private string <Metadata>k__BackingField; 
 
-public PublishedFileId Id { get; }
-public string Title { get; set; }
-public string Description { get; set; }
-public string[] Tags { get; set; }
-public Dictionary<string, string> KeyValueTags { get; set; }
-public Friend Owner { get; }
-public DateTime Updated { get; }
-public UgcAdditionalPreview[] AdditionalPreviews { get; set; }
-public bool IsInstalled { get; }
-public bool IsDownloading { get; }
-public bool IsDownloadPending { get; }
-public string Directory { get; }
-private ItemState State { get; }
-public string Url { get; }
-internal ulong NumSubscriptions { set; }
-internal ulong NumFavorites { set; }
-internal ulong NumFollowers { set; }
-internal ulong NumUniqueSubscriptions { set; }
-internal ulong NumUniqueFavorites { set; }
-internal ulong NumUniqueFollowers { set; }
-internal ulong NumUniqueWebsiteViews { set; }
-internal ulong ReportScore { set; }
-internal ulong NumSecondsPlayed { set; }
-internal ulong NumPlaytimeSessions { set; }
-internal ulong NumComments { set; }
-internal ulong NumSecondsPlayedDuringTimePeriod { set; }
-internal ulong NumPlaytimeSessionsDuringTimePeriod { set; }
-public string PreviewImageUrl { get; set; }
-internal string Metadata { set; }
+	public PublishedFileId Id { get; }
+	public string Title { get; set; }
+	public string Description { get; set; }
+	public string[] Tags { get; set; }
+	public Dictionary<string, string> KeyValueTags { get; set; }
+	public Friend Owner { get; }
+	public DateTime Updated { get; }
+	public UgcAdditionalPreview[] AdditionalPreviews { get; set; }
+	public bool IsInstalled { get; }
+	public bool IsDownloading { get; }
+	public bool IsDownloadPending { get; }
+	public string Directory { get; }
+	private ItemState State { get; }
+	public string Url { get; }
+	internal ulong NumSubscriptions { set; }
+	internal ulong NumFavorites { set; }
+	internal ulong NumFollowers { set; }
+	internal ulong NumUniqueSubscriptions { set; }
+	internal ulong NumUniqueFavorites { set; }
+	internal ulong NumUniqueFollowers { set; }
+	internal ulong NumUniqueWebsiteViews { set; }
+	internal ulong ReportScore { set; }
+	internal ulong NumSecondsPlayed { set; }
+	internal ulong NumPlaytimeSessions { set; }
+	internal ulong NumComments { set; }
+	internal ulong NumSecondsPlayedDuringTimePeriod { set; }
+	internal ulong NumPlaytimeSessionsDuringTimePeriod { set; }
+	public string PreviewImageUrl { get; set; }
+	internal string Metadata { set; }
 
 
-public void .ctor(PublishedFileId id) { }
+	public void .ctor(PublishedFileId id) { }
 
-public PublishedFileId get_Id() { }
-
-	[IsReadOnlyAttribute] 
-	[CompilerGeneratedAttribute] 
-public string get_Title() { }
-
-	[CompilerGeneratedAttribute] 
-internal void set_Title(string value) { }
-
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
-public string get_Description() { }
-
-	[CompilerGeneratedAttribute] 
-internal void set_Description(string value) { }
-
-	[CompilerGeneratedAttribute] 
-	[IsReadOnlyAttribute] 
-public string[] get_Tags() { }
-
-	[CompilerGeneratedAttribute] 
-internal void set_Tags(string[] value) { }
+	public PublishedFileId get_Id() { }
 
 	[IsReadOnlyAttribute] 
 	[CompilerGeneratedAttribute] 
-public Dictionary<string, string> get_KeyValueTags() { }
+	public string get_Title() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_KeyValueTags(Dictionary<string, string> value) { }
+	internal void set_Title(string value) { }
 
-public Friend get_Owner() { }
+	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute] 
+	public string get_Description() { }
 
-public DateTime get_Updated() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_Description(string value) { }
+
+	[CompilerGeneratedAttribute] 
+	[IsReadOnlyAttribute] 
+	public string[] get_Tags() { }
+
+	[CompilerGeneratedAttribute] 
+	internal void set_Tags(string[] value) { }
 
 	[IsReadOnlyAttribute] 
 	[CompilerGeneratedAttribute] 
-public UgcAdditionalPreview[] get_AdditionalPreviews() { }
+	public Dictionary<string, string> get_KeyValueTags() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_AdditionalPreviews(UgcAdditionalPreview[] value) { }
+	internal void set_KeyValueTags(Dictionary<string, string> value) { }
 
-public bool get_IsInstalled() { }
+	public Friend get_Owner() { }
 
-public bool get_IsDownloading() { }
+	public DateTime get_Updated() { }
 
-public bool get_IsDownloadPending() { }
+	[IsReadOnlyAttribute] 
+	[CompilerGeneratedAttribute] 
+	public UgcAdditionalPreview[] get_AdditionalPreviews() { }
 
-public string get_Directory() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_AdditionalPreviews(UgcAdditionalPreview[] value) { }
 
-public bool Download(bool highPriority = False) { }
+	public bool get_IsInstalled() { }
 
-private ItemState get_State() { }
+	public bool get_IsDownloading() { }
 
-internal static Item From(SteamUGCDetails_t details) { }
+	public bool get_IsDownloadPending() { }
+
+	public string get_Directory() { }
+
+	public bool Download(bool highPriority = False) { }
+
+	private ItemState get_State() { }
+
+	internal static Item From(SteamUGCDetails_t details) { }
 
 	[AsyncStateMachineAttribute] 
-public Task<Nullable<Result>> Vote(bool up) { }
+	public Task<Nullable<Result>> Vote(bool up) { }
 
-public string get_Url() { }
-
-	[CompilerGeneratedAttribute] 
-internal void set_NumSubscriptions(ulong value) { }
+	public string get_Url() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumFavorites(ulong value) { }
+	internal void set_NumSubscriptions(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumFollowers(ulong value) { }
+	internal void set_NumFavorites(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumUniqueSubscriptions(ulong value) { }
+	internal void set_NumFollowers(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumUniqueFavorites(ulong value) { }
+	internal void set_NumUniqueSubscriptions(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumUniqueFollowers(ulong value) { }
+	internal void set_NumUniqueFavorites(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumUniqueWebsiteViews(ulong value) { }
+	internal void set_NumUniqueFollowers(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_ReportScore(ulong value) { }
+	internal void set_NumUniqueWebsiteViews(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumSecondsPlayed(ulong value) { }
+	internal void set_ReportScore(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumPlaytimeSessions(ulong value) { }
+	internal void set_NumSecondsPlayed(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumComments(ulong value) { }
+	internal void set_NumPlaytimeSessions(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumSecondsPlayedDuringTimePeriod(ulong value) { }
+	internal void set_NumComments(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_NumPlaytimeSessionsDuringTimePeriod(ulong value) { }
+	internal void set_NumSecondsPlayedDuringTimePeriod(ulong value) { }
+
+	[CompilerGeneratedAttribute] 
+	internal void set_NumPlaytimeSessionsDuringTimePeriod(ulong value) { }
 
 	[CompilerGeneratedAttribute] 
 	[IsReadOnlyAttribute] 
-public string get_PreviewImageUrl() { }
+	public string get_PreviewImageUrl() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_PreviewImageUrl(string value) { }
+	internal void set_PreviewImageUrl(string value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Metadata(string value) { }
+	internal void set_Metadata(string value) { }
 
 }
 
@@ -253,10 +253,10 @@ private struct Item.<Vote>d__83 : IAsyncStateMachine // TypeDefIndex: 5278
 	private CallResult<SetUserItemVoteResult_t> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -266,15 +266,15 @@ internal struct ItemInstalled_t : ICallbackData // TypeDefIndex: 5434
 	internal PublishedFileId PublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -293,57 +293,57 @@ public class ItemContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 	public List<Item> contents; 
 
 
-public static void ResetToPool(ItemContainer instance) { }
+	public static void ResetToPool(ItemContainer instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ItemContainer instance) { }
+	public void CopyTo(ItemContainer instance) { }
 
-public ItemContainer Copy() { }
+	public ItemContainer Copy() { }
 
-public static ItemContainer Deserialize(Stream stream) { }
+	public static ItemContainer Deserialize(Stream stream) { }
 
-public static ItemContainer DeserializeLengthDelimited(Stream stream) { }
+	public static ItemContainer DeserializeLengthDelimited(Stream stream) { }
 
-public static ItemContainer DeserializeLength(Stream stream, int length) { }
+	public static ItemContainer DeserializeLength(Stream stream, int length) { }
 
-public static ItemContainer Deserialize(byte[] buffer) { }
+	public static ItemContainer Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ItemContainer previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ItemContainer previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ItemContainer Deserialize(byte[] buffer, ItemContainer instance, bool isDelta = False) { }
+	public static ItemContainer Deserialize(byte[] buffer, ItemContainer instance, bool isDelta = False) { }
 
-public static ItemContainer Deserialize(Stream stream, ItemContainer instance, bool isDelta) { }
+	public static ItemContainer Deserialize(Stream stream, ItemContainer instance, bool isDelta) { }
 
-public static ItemContainer DeserializeLengthDelimited(Stream stream, ItemContainer instance, bool isDelta) { }
+	public static ItemContainer DeserializeLengthDelimited(Stream stream, ItemContainer instance, bool isDelta) { }
 
-public static ItemContainer DeserializeLength(Stream stream, int length, ItemContainer instance, bool isDelta) { }
+	public static ItemContainer DeserializeLength(Stream stream, int length, ItemContainer instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ItemContainer instance, ItemContainer previous) { }
+	public static void SerializeDelta(Stream stream, ItemContainer instance, ItemContainer previous) { }
 
-public static void Serialize(Stream stream, ItemContainer instance) { }
+	public static void Serialize(Stream stream, ItemContainer instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ItemContainer instance) { }
+	public static byte[] SerializeToBytes(ItemContainer instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ItemContainer instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ItemContainer instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -368,57 +368,57 @@ public class Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6440
 	public ItemContainer contents; 
 
 
-public static void ResetToPool(Item instance) { }
+	public static void ResetToPool(Item instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Item instance) { }
+	public void CopyTo(Item instance) { }
 
-public Item Copy() { }
+	public Item Copy() { }
 
-public static Item Deserialize(Stream stream) { }
+	public static Item Deserialize(Stream stream) { }
 
-public static Item DeserializeLengthDelimited(Stream stream) { }
+	public static Item DeserializeLengthDelimited(Stream stream) { }
 
-public static Item DeserializeLength(Stream stream, int length) { }
+	public static Item DeserializeLength(Stream stream, int length) { }
 
-public static Item Deserialize(byte[] buffer) { }
+	public static Item Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Item previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Item previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Item Deserialize(byte[] buffer, Item instance, bool isDelta = False) { }
+	public static Item Deserialize(byte[] buffer, Item instance, bool isDelta = False) { }
 
-public static Item Deserialize(Stream stream, Item instance, bool isDelta) { }
+	public static Item Deserialize(Stream stream, Item instance, bool isDelta) { }
 
-public static Item DeserializeLengthDelimited(Stream stream, Item instance, bool isDelta) { }
+	public static Item DeserializeLengthDelimited(Stream stream, Item instance, bool isDelta) { }
 
-public static Item DeserializeLength(Stream stream, int length, Item instance, bool isDelta) { }
+	public static Item DeserializeLength(Stream stream, int length, Item instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Item instance, Item previous) { }
+	public static void SerializeDelta(Stream stream, Item instance, Item previous) { }
 
-public static void Serialize(Stream stream, Item instance) { }
+	public static void Serialize(Stream stream, Item instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Item instance) { }
+	public static byte[] SerializeToBytes(Item instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Item instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Item instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -432,57 +432,57 @@ public class Item.InstanceData : IDisposable, Pool.IPooled, IProto // TypeDefInd
 	public uint subEntity; 
 
 
-public static void ResetToPool(Item.InstanceData instance) { }
+	public static void ResetToPool(Item.InstanceData instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Item.InstanceData instance) { }
+	public void CopyTo(Item.InstanceData instance) { }
 
-public Item.InstanceData Copy() { }
+	public Item.InstanceData Copy() { }
 
-public static Item.InstanceData Deserialize(Stream stream) { }
+	public static Item.InstanceData Deserialize(Stream stream) { }
 
-public static Item.InstanceData DeserializeLengthDelimited(Stream stream) { }
+	public static Item.InstanceData DeserializeLengthDelimited(Stream stream) { }
 
-public static Item.InstanceData DeserializeLength(Stream stream, int length) { }
+	public static Item.InstanceData DeserializeLength(Stream stream, int length) { }
 
-public static Item.InstanceData Deserialize(byte[] buffer) { }
+	public static Item.InstanceData Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Item.InstanceData previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Item.InstanceData previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Item.InstanceData Deserialize(byte[] buffer, Item.InstanceData instance, bool isDelta = False) { }
+	public static Item.InstanceData Deserialize(byte[] buffer, Item.InstanceData instance, bool isDelta = False) { }
 
-public static Item.InstanceData Deserialize(Stream stream, Item.InstanceData instance, bool isDelta) { }
+	public static Item.InstanceData Deserialize(Stream stream, Item.InstanceData instance, bool isDelta) { }
 
-public static Item.InstanceData DeserializeLengthDelimited(Stream stream, Item.InstanceData instance, bool isDelta) { }
+	public static Item.InstanceData DeserializeLengthDelimited(Stream stream, Item.InstanceData instance, bool isDelta) { }
 
-public static Item.InstanceData DeserializeLength(Stream stream, int length, Item.InstanceData instance, bool isDelta) { }
+	public static Item.InstanceData DeserializeLength(Stream stream, int length, Item.InstanceData instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Item.InstanceData instance, Item.InstanceData previous) { }
+	public static void SerializeDelta(Stream stream, Item.InstanceData instance, Item.InstanceData previous) { }
 
-public static void Serialize(Stream stream, Item.InstanceData instance) { }
+	public static void Serialize(Stream stream, Item.InstanceData instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Item.InstanceData instance) { }
+	public static byte[] SerializeToBytes(Item.InstanceData instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Item.InstanceData instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Item.InstanceData instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -494,57 +494,57 @@ public class Item.ConditionData : IDisposable, Pool.IPooled, IProto // TypeDefIn
 	public float maxCondition; 
 
 
-public static void ResetToPool(Item.ConditionData instance) { }
+	public static void ResetToPool(Item.ConditionData instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Item.ConditionData instance) { }
+	public void CopyTo(Item.ConditionData instance) { }
 
-public Item.ConditionData Copy() { }
+	public Item.ConditionData Copy() { }
 
-public static Item.ConditionData Deserialize(Stream stream) { }
+	public static Item.ConditionData Deserialize(Stream stream) { }
 
-public static Item.ConditionData DeserializeLengthDelimited(Stream stream) { }
+	public static Item.ConditionData DeserializeLengthDelimited(Stream stream) { }
 
-public static Item.ConditionData DeserializeLength(Stream stream, int length) { }
+	public static Item.ConditionData DeserializeLength(Stream stream, int length) { }
 
-public static Item.ConditionData Deserialize(byte[] buffer) { }
+	public static Item.ConditionData Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Item.ConditionData previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Item.ConditionData previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Item.ConditionData Deserialize(byte[] buffer, Item.ConditionData instance, bool isDelta = False) { }
+	public static Item.ConditionData Deserialize(byte[] buffer, Item.ConditionData instance, bool isDelta = False) { }
 
-public static Item.ConditionData Deserialize(Stream stream, Item.ConditionData instance, bool isDelta) { }
+	public static Item.ConditionData Deserialize(Stream stream, Item.ConditionData instance, bool isDelta) { }
 
-public static Item.ConditionData DeserializeLengthDelimited(Stream stream, Item.ConditionData instance, bool isDelta) { }
+	public static Item.ConditionData DeserializeLengthDelimited(Stream stream, Item.ConditionData instance, bool isDelta) { }
 
-public static Item.ConditionData DeserializeLength(Stream stream, int length, Item.ConditionData instance, bool isDelta) { }
+	public static Item.ConditionData DeserializeLength(Stream stream, int length, Item.ConditionData instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Item.ConditionData instance, Item.ConditionData previous) { }
+	public static void SerializeDelta(Stream stream, Item.ConditionData instance, Item.ConditionData previous) { }
 
-public static void Serialize(Stream stream, Item.ConditionData instance) { }
+	public static void Serialize(Stream stream, Item.ConditionData instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Item.ConditionData instance) { }
+	public static byte[] SerializeToBytes(Item.ConditionData instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Item.ConditionData instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Item.ConditionData instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -556,57 +556,57 @@ public class ItemAmountList : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 	public List<float> amount; 
 
 
-public static void ResetToPool(ItemAmountList instance) { }
+	public static void ResetToPool(ItemAmountList instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ItemAmountList instance) { }
+	public void CopyTo(ItemAmountList instance) { }
 
-public ItemAmountList Copy() { }
+	public ItemAmountList Copy() { }
 
-public static ItemAmountList Deserialize(Stream stream) { }
+	public static ItemAmountList Deserialize(Stream stream) { }
 
-public static ItemAmountList DeserializeLengthDelimited(Stream stream) { }
+	public static ItemAmountList DeserializeLengthDelimited(Stream stream) { }
 
-public static ItemAmountList DeserializeLength(Stream stream, int length) { }
+	public static ItemAmountList DeserializeLength(Stream stream, int length) { }
 
-public static ItemAmountList Deserialize(byte[] buffer) { }
+	public static ItemAmountList Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ItemAmountList previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ItemAmountList previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ItemAmountList Deserialize(byte[] buffer, ItemAmountList instance, bool isDelta = False) { }
+	public static ItemAmountList Deserialize(byte[] buffer, ItemAmountList instance, bool isDelta = False) { }
 
-public static ItemAmountList Deserialize(Stream stream, ItemAmountList instance, bool isDelta) { }
+	public static ItemAmountList Deserialize(Stream stream, ItemAmountList instance, bool isDelta) { }
 
-public static ItemAmountList DeserializeLengthDelimited(Stream stream, ItemAmountList instance, bool isDelta) { }
+	public static ItemAmountList DeserializeLengthDelimited(Stream stream, ItemAmountList instance, bool isDelta) { }
 
-public static ItemAmountList DeserializeLength(Stream stream, int length, ItemAmountList instance, bool isDelta) { }
+	public static ItemAmountList DeserializeLength(Stream stream, int length, ItemAmountList instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ItemAmountList instance, ItemAmountList previous) { }
+	public static void SerializeDelta(Stream stream, ItemAmountList instance, ItemAmountList previous) { }
 
-public static void Serialize(Stream stream, ItemAmountList instance) { }
+	public static void Serialize(Stream stream, ItemAmountList instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ItemAmountList instance) { }
+	public static byte[] SerializeToBytes(ItemAmountList instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ItemAmountList instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ItemAmountList instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -616,7 +616,7 @@ public class ItemSchema // TypeDefIndex: 7740
 	public ItemSchema.Item[] items; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -648,12 +648,12 @@ public class ItemSchema.Item // TypeDefIndex: 7741
 	public string workshopdownload; 
 
 	[JsonIgnoreAttribute] 
-public double Price { get; }
+	public double Price { get; }
 
 
-public double get_Price() { }
+	public double get_Price() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -665,36 +665,36 @@ public class ItemBasedFlowRestrictor : IOEntity, IContainerSounds // TypeDefInde
 	public int maxStackSize; 
 	public int numSlots; 
 	public string lootPanelName; 
-public const BaseEntity.Flags HasPassthrough = 128;
-public const BaseEntity.Flags Sparks = 256;
+	public const BaseEntity.Flags HasPassthrough = 128;
+	public const BaseEntity.Flags Sparks = 256;
 	public float passthroughItemConditionLossPerSec; 
 	public SoundDefinition openSound; 
 	public SoundDefinition closeSound; 
 
-public override bool HasMenuOptions { get; }
-public SoundDefinition OpenSound { get; }
-public SoundDefinition CloseSound { get; }
+	public override bool HasMenuOptions { get; }
+	public SoundDefinition OpenSound { get; }
+	public SoundDefinition CloseSound { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Open(BasePlayer player) { }
+	public void Menu_Open(BasePlayer player) { }
 
-public bool Menu_Open_ShowIf(BasePlayer player) { }
+	public bool Menu_Open_ShowIf(BasePlayer player) { }
 
-public SoundDefinition get_OpenSound() { }
+	public SoundDefinition get_OpenSound() { }
 
-public SoundDefinition get_CloseSound() { }
+	public SoundDefinition get_CloseSound() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -708,42 +708,42 @@ public class ItemSearchEntry : MonoBehaviour // TypeDefIndex: 8731
 	private AddSellOrderManager manager; 
 
 
-public void Setup(ItemDefinition info, AddSellOrderManager mgr) { }
+	public void Setup(ItemDefinition info, AddSellOrderManager mgr) { }
 
-public void Clicked() { }
+	public void Clicked() { }
 
-public void ClickedBP() { }
+	public void ClickedBP() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemModCrackOpen : ItemModUnwrap // TypeDefIndex: 8785
 {
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemModOpenLootBag : ItemModUnwrap // TypeDefIndex: 8793
 {
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemModPhoto : ItemModAssociatedEntity<PhotoEntity> // TypeDefIndex: 8814
 {
-protected override bool AllowNullParenting { get; }
+	protected override bool AllowNullParenting { get; }
 
 
-protected override bool get_AllowNullParenting() { }
+	protected override bool get_AllowNullParenting() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -755,9 +755,9 @@ public class ItemModUnwrap : ItemMod // TypeDefIndex: 8823
 	public int maxTries; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -768,11 +768,11 @@ public class ItemModOpenWrapped : ItemMod // TypeDefIndex: 8829
 	public static Translate.Phrase open_wrapped_gift_desc; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -784,11 +784,11 @@ public class ItemModWrap : ItemMod // TypeDefIndex: 8830
 	public static Translate.Phrase wrap_gift_desc; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -797,20 +797,20 @@ public class ItemModXMasTreeDecoration : ItemMod // TypeDefIndex: 8832
 	public ItemModXMasTreeDecoration.xmasFlags flagsToChange; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemModXMasTreeDecoration.xmasFlags // TypeDefIndex: 8833
 {
 	public int value__; 
-public const ItemModXMasTreeDecoration.xmasFlags pineCones = 128;
-public const ItemModXMasTreeDecoration.xmasFlags candyCanes = 256;
-public const ItemModXMasTreeDecoration.xmasFlags gingerbreadMen = 512;
-public const ItemModXMasTreeDecoration.xmasFlags Tinsel = 1024;
-public const ItemModXMasTreeDecoration.xmasFlags Balls = 2048;
-public const ItemModXMasTreeDecoration.xmasFlags Star = 16384;
-public const ItemModXMasTreeDecoration.xmasFlags Lights = 32768;
+	public const ItemModXMasTreeDecoration.xmasFlags pineCones = 128;
+	public const ItemModXMasTreeDecoration.xmasFlags candyCanes = 256;
+	public const ItemModXMasTreeDecoration.xmasFlags gingerbreadMen = 512;
+	public const ItemModXMasTreeDecoration.xmasFlags Tinsel = 1024;
+	public const ItemModXMasTreeDecoration.xmasFlags Balls = 2048;
+	public const ItemModXMasTreeDecoration.xmasFlags Star = 16384;
+	public const ItemModXMasTreeDecoration.xmasFlags Lights = 32768;
 
 }
 
@@ -820,11 +820,11 @@ public class ItemModRFListener : ItemModAssociatedEntity<PagerEntity> // TypeDef
 	private uint pendingPagerID; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void ConfigureClicked(BasePlayer player) { }
+	public void ConfigureClicked(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -834,13 +834,13 @@ public class ItemButtonTools : MonoBehaviour // TypeDefIndex: 9281
 	public ItemDefinition itemDef; 
 
 
-public void GiveSelf(int amount) { }
+	public void GiveSelf(int amount) { }
 
-public void GiveArmed() { }
+	public void GiveArmed() { }
 
-public void GiveBlueprint() { }
+	public void GiveBlueprint() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -854,21 +854,21 @@ public class ItemListTools : MonoBehaviour // TypeDefIndex: 9282
 	private IOrderedEnumerable<ItemDefinition> allItems; 
 
 
-public void OnPanelOpened() { }
+	public void OnPanelOpened() { }
 
-private void OnOpenDevTools() { }
+	private void OnOpenDevTools() { }
 
-private void CacheAllItems() { }
+	private void CacheAllItems() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-private void RebuildCategories() { }
+	private void RebuildCategories() { }
 
-private void SwitchItemCategory(ItemDefinition[] defs) { }
+	private void SwitchItemCategory(ItemDefinition[] defs) { }
 
-public void FilterItems(string searchText) { }
+	public void FilterItems(string searchText) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -881,17 +881,17 @@ private sealed class ItemListTools.<>c // TypeDefIndex: 9283
 	public static Func<ItemDefinition, string> <>9__11_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <CacheAllItems>b__8_0(ItemDefinition x) { }
+	internal string <CacheAllItems>b__8_0(ItemDefinition x) { }
 
-internal ItemCategory <RebuildCategories>b__10_0(ItemDefinition x) { }
+	internal ItemCategory <RebuildCategories>b__10_0(ItemDefinition x) { }
 
-internal ItemCategory <RebuildCategories>b__10_1(IGrouping<ItemCategory, ItemDefinition> x) { }
+	internal ItemCategory <RebuildCategories>b__10_1(IGrouping<ItemCategory, ItemDefinition> x) { }
 
-internal string <SwitchItemCategory>b__11_0(ItemDefinition x) { }
+	internal string <SwitchItemCategory>b__11_0(ItemDefinition x) { }
 
 }
 
@@ -902,9 +902,9 @@ private sealed class ItemListTools.<>c__DisplayClass10_0 // TypeDefIndex: 9284
 	public ItemListTools <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <RebuildCategories>b__2() { }
+	internal void <RebuildCategories>b__2() { }
 
 }
 
@@ -913,20 +913,20 @@ public class ItemTools : MonoBehaviour // TypeDefIndex: 9311
 
 public class ItemTools : MonoBehaviour 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemModAssociatedEntityMobile : ItemModAssociatedEntity<MobileInventoryEntity> // TypeDefIndex: 9444
 {
-protected override bool AllowNullParenting { get; }
+	protected override bool AllowNullParenting { get; }
 
 
-protected override bool get_AllowNullParenting() { }
+	protected override bool get_AllowNullParenting() { }
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -935,26 +935,26 @@ public class ItemModCassette : ItemModAssociatedEntity<Cassette> // TypeDefIndex
 	public int noteSpriteIndex; 
 	public PreloadedCassetteContent PreloadedContent; 
 
-protected override bool AllowNullParenting { get; }
-protected override bool AllowHeldEntityParenting { get; }
+	protected override bool AllowNullParenting { get; }
+	protected override bool AllowHeldEntityParenting { get; }
 
 
-protected override bool get_AllowNullParenting() { }
+	protected override bool get_AllowNullParenting() { }
 
-protected override bool get_AllowHeldEntityParenting() { }
+	protected override bool get_AllowHeldEntityParenting() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemModSign : ItemModAssociatedEntity<SignContent> // TypeDefIndex: 9513
 {
-protected override bool AllowNullParenting { get; }
+	protected override bool AllowNullParenting { get; }
 
 
-protected override bool get_AllowNullParenting() { }
+	protected override bool get_AllowNullParenting() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -965,7 +965,7 @@ public class ItemPickup : DroppedItem // TypeDefIndex: 9791
 	public ulong skinOverride; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -987,7 +987,7 @@ public class ItemCraftTask // TypeDefIndex: 10102
 	public float worksecondsRequired; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -998,17 +998,17 @@ public class ItemCrafter : EntityComponent<BasePlayer> // TypeDefIndex: 10103
 	public int taskUID; 
 
 
-public void AddContainer(ItemContainer container) { }
+	public void AddContainer(ItemContainer container) { }
 
-public static float GetScaledDuration(ItemBlueprint bp, float workbenchLevel) { }
+	public static float GetScaledDuration(ItemBlueprint bp, float workbenchLevel) { }
 
-private bool DoesHaveUsableItem(int item, int iAmount) { }
+	private bool DoesHaveUsableItem(int item, int iAmount) { }
 
-public bool CanCraft(ItemBlueprint bp, int amount = 1, bool free = False) { }
+	public bool CanCraft(ItemBlueprint bp, int amount = 1, bool free = False) { }
 
-public bool CanCraft(ItemDefinition def, int amount = 1, bool free = False) { }
+	public bool CanCraft(ItemDefinition def, int amount = 1, bool free = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1021,9 +1021,9 @@ public class ItemEventFlag : MonoBehaviour, IItemUpdate // TypeDefIndex: 10104
 	internal bool lastState; 
 
 
-public virtual void OnItemUpdate(Item item) { }
+	public virtual void OnItemUpdate(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1055,170 +1055,170 @@ public class Item // TypeDefIndex: 10105
 	private EntityRef worldEnt; 
 	private EntityRef heldEntity; 
 
-public float condition { get; set; }
-public float maxCondition { get; set; }
-public float maxConditionNormalized { get; }
-public float conditionNormalized { get; set; }
-public bool hasCondition { get; }
-public bool isBroken { get; }
-public int despawnMultiplier { get; }
-public ItemDefinition blueprintTargetDef { get; }
-public int blueprintTarget { get; set; }
-public int blueprintAmount { get; set; }
-public Item parentItem { get; }
-public float temperature { get; }
-internal Sprite iconSprite { get; }
-internal bool isLoadingIconSprite { get; }
-public BaseEntity.TraitFlag Traits { get; }
+	public float condition { get; set; }
+	public float maxCondition { get; set; }
+	public float maxConditionNormalized { get; }
+	public float conditionNormalized { get; set; }
+	public bool hasCondition { get; }
+	public bool isBroken { get; }
+	public int despawnMultiplier { get; }
+	public ItemDefinition blueprintTargetDef { get; }
+	public int blueprintTarget { get; set; }
+	public int blueprintAmount { get; set; }
+	public Item parentItem { get; }
+	public float temperature { get; }
+	internal Sprite iconSprite { get; }
+	internal bool isLoadingIconSprite { get; }
+	public BaseEntity.TraitFlag Traits { get; }
 
 
-public void UpdateAmountDisplay(Text text) { }
+	public void UpdateAmountDisplay(Text text) { }
 
-public static void UpdateAmountDisplay(Text text, Item item, Nullable<int> amountOverride, ItemDefinition infoOverride) { }
+	public static void UpdateAmountDisplay(Text text, Item item, Nullable<int> amountOverride, ItemDefinition infoOverride) { }
 
-private static string FormatAmount(ItemDefinition.AmountType type, int amount) { }
+	private static string FormatAmount(ItemDefinition.AmountType type, int amount) { }
 
-public void set_condition(float value) { }
+	public void set_condition(float value) { }
 
-public float get_condition() { }
+	public float get_condition() { }
 
-public void set_maxCondition(float value) { }
+	public void set_maxCondition(float value) { }
 
-public float get_maxCondition() { }
+	public float get_maxCondition() { }
 
-public float get_maxConditionNormalized() { }
+	public float get_maxConditionNormalized() { }
 
-public float get_conditionNormalized() { }
+	public float get_conditionNormalized() { }
 
-public void set_conditionNormalized(float value) { }
+	public void set_conditionNormalized(float value) { }
 
-public bool get_hasCondition() { }
+	public bool get_hasCondition() { }
 
-public bool get_isBroken() { }
+	public bool get_isBroken() { }
 
-public int get_despawnMultiplier() { }
+	public int get_despawnMultiplier() { }
 
-public ItemDefinition get_blueprintTargetDef() { }
+	public ItemDefinition get_blueprintTargetDef() { }
 
-public int get_blueprintTarget() { }
+	public int get_blueprintTarget() { }
 
-public void set_blueprintTarget(int value) { }
+	public void set_blueprintTarget(int value) { }
 
-public int get_blueprintAmount() { }
+	public int get_blueprintAmount() { }
 
-public void set_blueprintAmount(int value) { }
+	public void set_blueprintAmount(int value) { }
 
-public bool IsBlueprint() { }
-
-	[CompilerGeneratedAttribute] 
-public void add_OnDirty(Action<Item> value) { }
+	public bool IsBlueprint() { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_OnDirty(Action<Item> value) { }
-
-public bool HasFlag(Item.Flag f) { }
-
-public void SetFlag(Item.Flag f, bool b) { }
-
-public bool IsOn() { }
-
-public bool IsOnFire() { }
-
-public bool IsCooking() { }
-
-public bool IsLocked() { }
-
-public Item get_parentItem() { }
-
-public void MarkDirty() { }
-
-public void OnChanged() { }
-
-public void CollectedForCrafting(BasePlayer crafter) { }
-
-public void ReturnedFromCancelledCraft(BasePlayer crafter) { }
-
-public bool IsChildContainer(ItemContainer c) { }
-
-public bool IsBusy() { }
-
-public void BusyFor(float fTime) { }
-
-public void Remove(float fTime = 0) { }
-
-internal void DoRemove() { }
-
-public void SwitchOnOff(bool bNewState) { }
-
-public void LockUnlock(bool bNewState) { }
-
-public float get_temperature() { }
-
-public BasePlayer GetOwnerPlayer() { }
-
-public bool CanBeHeld() { }
-
-public bool CanStack(Item item) { }
-
-public bool IsValid() { }
-
-public void SetWorldEntity(BaseEntity ent) { }
-
-public void OnMovedToWorld() { }
-
-public BaseEntity GetWorldEntity() { }
-
-public BaseEntity GetHeldEntity() { }
-
-public bool BeltBarSelect(BasePlayer player) { }
-
-public virtual int GetTotalUISlots() { }
-
-public virtual int GetFilledUISlots() { }
-
-public bool HasAmmo(AmmoTypes ammoType) { }
-
-public void FindAmmo(List<Item> list, AmmoTypes ammoType) { }
-
-public int GetAmmoAmount(AmmoTypes ammoType) { }
-
-public override string ToString() { }
-
-public Item FindItem(uint iUID) { }
-
-public int MaxStackable() { }
-
-internal Sprite get_iconSprite() { }
-
-internal bool get_isLoadingIconSprite() { }
-
-public BaseEntity.TraitFlag get_Traits() { }
-
-public virtual Item Save(bool bIncludeContainer = False, bool bIncludeOwners = True) { }
-
-public virtual void Load(Item load) { }
-
-public void .ctor() { }
-
-private static void .cctor() { }
+	public void add_OnDirty(Action<Item> value) { }
 
 	[CompilerGeneratedAttribute] 
-private bool <get_iconSprite>b__95_0(ItemSkinDirectory.Skin x) { }
+	public void remove_OnDirty(Action<Item> value) { }
+
+	public bool HasFlag(Item.Flag f) { }
+
+	public void SetFlag(Item.Flag f, bool b) { }
+
+	public bool IsOn() { }
+
+	public bool IsOnFire() { }
+
+	public bool IsCooking() { }
+
+	public bool IsLocked() { }
+
+	public Item get_parentItem() { }
+
+	public void MarkDirty() { }
+
+	public void OnChanged() { }
+
+	public void CollectedForCrafting(BasePlayer crafter) { }
+
+	public void ReturnedFromCancelledCraft(BasePlayer crafter) { }
+
+	public bool IsChildContainer(ItemContainer c) { }
+
+	public bool IsBusy() { }
+
+	public void BusyFor(float fTime) { }
+
+	public void Remove(float fTime = 0) { }
+
+	internal void DoRemove() { }
+
+	public void SwitchOnOff(bool bNewState) { }
+
+	public void LockUnlock(bool bNewState) { }
+
+	public float get_temperature() { }
+
+	public BasePlayer GetOwnerPlayer() { }
+
+	public bool CanBeHeld() { }
+
+	public bool CanStack(Item item) { }
+
+	public bool IsValid() { }
+
+	public void SetWorldEntity(BaseEntity ent) { }
+
+	public void OnMovedToWorld() { }
+
+	public BaseEntity GetWorldEntity() { }
+
+	public BaseEntity GetHeldEntity() { }
+
+	public bool BeltBarSelect(BasePlayer player) { }
+
+	public virtual int GetTotalUISlots() { }
+
+	public virtual int GetFilledUISlots() { }
+
+	public bool HasAmmo(AmmoTypes ammoType) { }
+
+	public void FindAmmo(List<Item> list, AmmoTypes ammoType) { }
+
+	public int GetAmmoAmount(AmmoTypes ammoType) { }
+
+	public override string ToString() { }
+
+	public Item FindItem(uint iUID) { }
+
+	public int MaxStackable() { }
+
+	internal Sprite get_iconSprite() { }
+
+	internal bool get_isLoadingIconSprite() { }
+
+	public BaseEntity.TraitFlag get_Traits() { }
+
+	public virtual Item Save(bool bIncludeContainer = False, bool bIncludeOwners = True) { }
+
+	public virtual void Load(Item load) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <get_isLoadingIconSprite>b__97_0(ItemSkinDirectory.Skin x) { }
+	private bool <get_iconSprite>b__95_0(ItemSkinDirectory.Skin x) { }
+
+	[CompilerGeneratedAttribute] 
+	private bool <get_isLoadingIconSprite>b__97_0(ItemSkinDirectory.Skin x) { }
 
 }
 
 public enum Item.Flag // TypeDefIndex: 10106
 {
 	public int value__; 
-public const Item.Flag None = 0;
-public const Item.Flag Placeholder = 1;
-public const Item.Flag IsOn = 2;
-public const Item.Flag OnFire = 4;
-public const Item.Flag IsLocked = 8;
-public const Item.Flag Cooking = 16;
+	public const Item.Flag None = 0;
+	public const Item.Flag Placeholder = 1;
+	public const Item.Flag IsOn = 2;
+	public const Item.Flag OnFire = 4;
+	public const Item.Flag IsLocked = 8;
+	public const Item.Flag Cooking = 16;
 
 }
 
@@ -1227,11 +1227,11 @@ private sealed class Item.<>c // TypeDefIndex: 10107
 	public static readonly Item.<>c <>9; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <.cctor>b__103_0(ValueTuple<ItemDefinition.AmountType, int> t) { }
+	internal string <.cctor>b__103_0(ValueTuple<ItemDefinition.AmountType, int> t) { }
 
 }
 
@@ -1252,114 +1252,114 @@ public sealed class ItemContainer // TypeDefIndex: 10110
 	public bool isServer; 
 	public int maxStackSize; 
 
-public bool HasLimitedAllowedItems { get; }
+	public bool HasLimitedAllowedItems { get; }
 
 
-public bool HasFlag(ItemContainer.Flag f) { }
+	public bool HasFlag(ItemContainer.Flag f) { }
 
-public void SetFlag(ItemContainer.Flag f, bool b) { }
+	public void SetFlag(ItemContainer.Flag f, bool b) { }
 
-public bool IsLocked() { }
+	public bool IsLocked() { }
 
-public bool PlayerItemInputBlocked() { }
+	public bool PlayerItemInputBlocked() { }
 
-public bool get_HasLimitedAllowedItems() { }
+	public bool get_HasLimitedAllowedItems() { }
 
-public void OnChanged() { }
+	public void OnChanged() { }
 
-public void ClientInitialize(Item parentItem, int iMaxCapacity) { }
+	public void ClientInitialize(Item parentItem, int iMaxCapacity) { }
 
-public Item FindItemByUID(uint iUID) { }
+	public Item FindItemByUID(uint iUID) { }
 
-public bool IsFull() { }
+	public bool IsFull() { }
 
-public bool IsEmpty() { }
+	public bool IsEmpty() { }
 
-public bool CanAccept(Item item) { }
+	public bool CanAccept(Item item) { }
 
-public int GetMaxTransferAmount(ItemDefinition def) { }
+	public int GetMaxTransferAmount(ItemDefinition def) { }
 
-public void SetOnlyAllowedItem(ItemDefinition def) { }
+	public void SetOnlyAllowedItem(ItemDefinition def) { }
 
-public void SetOnlyAllowedItems(ItemDefinition[] defs) { }
+	public void SetOnlyAllowedItems(ItemDefinition[] defs) { }
 
-internal bool Insert(Item item) { }
+	internal bool Insert(Item item) { }
 
-public bool SlotTaken(Item item, int i) { }
+	public bool SlotTaken(Item item, int i) { }
 
-public Item GetSlot(int slot) { }
+	public Item GetSlot(int slot) { }
 
-internal bool FindPosition(Item item) { }
+	internal bool FindPosition(Item item) { }
 
-internal void Clear() { }
+	internal void Clear() { }
 
-public void Kill() { }
+	public void Kill() { }
 
-public int GetAmount(int itemid, bool onlyUsableAmounts) { }
+	public int GetAmount(int itemid, bool onlyUsableAmounts) { }
 
-public Item FindItemByItemID(int itemid) { }
+	public Item FindItemByItemID(int itemid) { }
 
-public Item FindItemsByItemName(string name) { }
+	public Item FindItemsByItemName(string name) { }
 
-public Item FindBySubEntityID(uint subEntityID) { }
+	public Item FindBySubEntityID(uint subEntityID) { }
 
-public List<Item> FindItemsByItemID(int itemid) { }
+	public List<Item> FindItemsByItemID(int itemid) { }
 
-public ItemContainer Save() { }
+	public ItemContainer Save() { }
 
-public void Load(ItemContainer container) { }
+	public void Load(ItemContainer container) { }
 
-public BasePlayer GetOwnerPlayer() { }
+	public BasePlayer GetOwnerPlayer() { }
 
-public int ContainerMaxStackSize() { }
+	public int ContainerMaxStackSize() { }
 
-public void FindAmmo(List<Item> list, AmmoTypes ammoType) { }
+	public void FindAmmo(List<Item> list, AmmoTypes ammoType) { }
 
-public bool HasAmmo(AmmoTypes ammoType) { }
+	public bool HasAmmo(AmmoTypes ammoType) { }
 
-public int GetAmmoAmount(AmmoTypes ammoType) { }
+	public int GetAmmoAmount(AmmoTypes ammoType) { }
 
-public int TotalItemAmount() { }
+	public int TotalItemAmount() { }
 
-public uint ContentsHash() { }
+	public uint ContentsHash() { }
 
-internal ItemContainer FindContainer(uint id) { }
+	internal ItemContainer FindContainer(uint id) { }
 
-public ItemContainer.CanAcceptResult CanAcceptItem(Item item, int targetPos) { }
+	public ItemContainer.CanAcceptResult CanAcceptItem(Item item, int targetPos) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemContainer.Flag // TypeDefIndex: 10111
 {
 	public int value__; 
-public const ItemContainer.Flag IsPlayer = 1;
-public const ItemContainer.Flag Clothing = 2;
-public const ItemContainer.Flag Belt = 4;
-public const ItemContainer.Flag SingleType = 8;
-public const ItemContainer.Flag IsLocked = 16;
-public const ItemContainer.Flag ShowSlotsOnIcon = 32;
-public const ItemContainer.Flag NoBrokenItems = 64;
-public const ItemContainer.Flag NoItemInput = 128;
-public const ItemContainer.Flag ContentsHidden = 256;
+	public const ItemContainer.Flag IsPlayer = 1;
+	public const ItemContainer.Flag Clothing = 2;
+	public const ItemContainer.Flag Belt = 4;
+	public const ItemContainer.Flag SingleType = 8;
+	public const ItemContainer.Flag IsLocked = 16;
+	public const ItemContainer.Flag ShowSlotsOnIcon = 32;
+	public const ItemContainer.Flag NoBrokenItems = 64;
+	public const ItemContainer.Flag NoItemInput = 128;
+	public const ItemContainer.Flag ContentsHidden = 256;
 
 }
 
 public enum ItemContainer.ContentsType // TypeDefIndex: 10112
 {
 	public int value__; 
-public const ItemContainer.ContentsType Generic = 1;
-public const ItemContainer.ContentsType Liquid = 2;
+	public const ItemContainer.ContentsType Generic = 1;
+	public const ItemContainer.ContentsType Liquid = 2;
 
 }
 
 public enum ItemContainer.CanAcceptResult // TypeDefIndex: 10113
 {
 	public int value__; 
-public const ItemContainer.CanAcceptResult CanAccept = 0;
-public const ItemContainer.CanAcceptResult CannotAccept = 1;
-public const ItemContainer.CanAcceptResult CannotAcceptRightNow = 2;
+	public const ItemContainer.CanAcceptResult CanAccept = 0;
+	public const ItemContainer.CanAcceptResult CannotAccept = 1;
+	public const ItemContainer.CanAcceptResult CannotAcceptRightNow = 2;
 
 }
 
@@ -1368,9 +1368,9 @@ private sealed class ItemContainer.<>c__DisplayClass41_0 // TypeDefIndex: 10114
 	public int itemid; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <FindItemsByItemID>b__0(Item x) { }
+	internal bool <FindItemsByItemID>b__0(Item x) { }
 
 }
 
@@ -1396,17 +1396,17 @@ public class ItemBlueprint : MonoBehaviour // TypeDefIndex: 10115
 	public string UnlockAchievment; 
 	public string RecycleStat; 
 
-public ItemDefinition targetItem { get; }
-public bool NeedsSteamDLC { get; }
+	public ItemDefinition targetItem { get; }
+	public bool NeedsSteamDLC { get; }
 
 
-public ItemDefinition get_targetItem() { }
+	public ItemDefinition get_targetItem() { }
 
-public bool get_NeedsSteamDLC() { }
+	public bool get_NeedsSteamDLC() { }
 
-public string GetIngredientString(bool colorMissing) { }
+	public string GetIngredientString(bool colorMissing) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1470,69 +1470,69 @@ public class ItemDefinition : MonoBehaviour // TypeDefIndex: 10116
 	private bool <CraftableWithSkin>k__BackingField; 
 	public ItemDefinition[] Children; 
 
-public IPlayerItemDefinition[] skins2 { get; }
-public ItemBlueprint Blueprint { get; }
-public int craftingStackable { get; }
-public bool isWearable { get; }
-public ItemModWearable ItemModWearable { get; set; }
-public bool isHoldable { get; set; }
-public bool isUsable { get; set; }
-public bool HasSkins { get; }
-public bool CraftableWithSkin { get; set; }
+	public IPlayerItemDefinition[] skins2 { get; }
+	public ItemBlueprint Blueprint { get; }
+	public int craftingStackable { get; }
+	public bool isWearable { get; }
+	public ItemModWearable ItemModWearable { get; set; }
+	public bool isHoldable { get; set; }
+	public bool isUsable { get; set; }
+	public bool HasSkins { get; }
+	public bool CraftableWithSkin { get; set; }
 
 
-public IPlayerItemDefinition[] get_skins2() { }
+	public IPlayerItemDefinition[] get_skins2() { }
 
-public void InvalidateWorkshopSkinCache() { }
+	public void InvalidateWorkshopSkinCache() { }
 
-public ItemBlueprint get_Blueprint() { }
+	public ItemBlueprint get_Blueprint() { }
 
-public int get_craftingStackable() { }
+	public int get_craftingStackable() { }
 
-public bool HasFlag(ItemDefinition.Flag f) { }
+	public bool HasFlag(ItemDefinition.Flag f) { }
 
-public void Initialize(List<ItemDefinition> itemList) { }
+	public void Initialize(List<ItemDefinition> itemList) { }
 
-public virtual string GetDisplayName(Item item) { }
+	public virtual string GetDisplayName(Item item) { }
 
-public virtual string GetDescriptionText(Item item) { }
+	public virtual string GetDescriptionText(Item item) { }
 
-public virtual string GetDescriptionText() { }
+	public virtual string GetDescriptionText() { }
 
-public Sprite FindIconSprite(int skinid) { }
+	public Sprite FindIconSprite(int skinid) { }
 
-public bool get_isWearable() { }
-
-	[CompilerGeneratedAttribute] 
-public ItemModWearable get_ItemModWearable() { }
+	public bool get_isWearable() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ItemModWearable(ItemModWearable value) { }
+	public ItemModWearable get_ItemModWearable() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_isHoldable() { }
+	private void set_ItemModWearable(ItemModWearable value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isHoldable(bool value) { }
+	public bool get_isHoldable() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_isUsable() { }
+	private void set_isHoldable(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isUsable(bool value) { }
-
-public bool get_HasSkins() { }
+	public bool get_isUsable() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_CraftableWithSkin() { }
+	private void set_isUsable(bool value) { }
+
+	public bool get_HasSkins() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CraftableWithSkin(bool value) { }
-
-public void .ctor() { }
+	public bool get_CraftableWithSkin() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <Initialize>b__45_0(ItemDefinition x) { }
+	private void set_CraftableWithSkin(bool value) { }
+
+	public void .ctor() { }
+
+	[CompilerGeneratedAttribute] 
+	private bool <Initialize>b__45_0(ItemDefinition x) { }
 
 }
 
@@ -1555,36 +1555,36 @@ public class ItemDefinition.Condition.WorldSpawnCondition // TypeDefIndex: 10118
 	public float fractionMax; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemDefinition.RedirectVendingBehaviour // TypeDefIndex: 10119
 {
 	public int value__; 
-public const ItemDefinition.RedirectVendingBehaviour NoListing = 0;
-public const ItemDefinition.RedirectVendingBehaviour ListAsUniqueItem = 1;
+	public const ItemDefinition.RedirectVendingBehaviour NoListing = 0;
+	public const ItemDefinition.RedirectVendingBehaviour ListAsUniqueItem = 1;
 
 }
 
 public enum ItemDefinition.Flag // TypeDefIndex: 10120
 {
 	public int value__; 
-public const ItemDefinition.Flag NoDropping = 1;
-public const ItemDefinition.Flag NotStraightToBelt = 2;
+	public const ItemDefinition.Flag NoDropping = 1;
+	public const ItemDefinition.Flag NotStraightToBelt = 2;
 
 }
 
 public enum ItemDefinition.AmountType // TypeDefIndex: 10121
 {
 	public int value__; 
-public const ItemDefinition.AmountType Count = 0;
-public const ItemDefinition.AmountType Millilitre = 1;
-public const ItemDefinition.AmountType Feet = 2;
-public const ItemDefinition.AmountType Genetics = 3;
-public const ItemDefinition.AmountType OxygenSeconds = 4;
-public const ItemDefinition.AmountType Frequency = 5;
-public const ItemDefinition.AmountType Generic = 6;
+	public const ItemDefinition.AmountType Count = 0;
+	public const ItemDefinition.AmountType Millilitre = 1;
+	public const ItemDefinition.AmountType Feet = 2;
+	public const ItemDefinition.AmountType Genetics = 3;
+	public const ItemDefinition.AmountType OxygenSeconds = 4;
+	public const ItemDefinition.AmountType Frequency = 5;
+	public const ItemDefinition.AmountType Generic = 6;
 
 }
 
@@ -1594,55 +1594,55 @@ private sealed class ItemDefinition.<>c__DisplayClass35_0 // TypeDefIndex: 10122
 	public ItemDefinition <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <get_skins2>b__0(IPlayerItemDefinition x) { }
+	internal bool <get_skins2>b__0(IPlayerItemDefinition x) { }
 
 }
 
 public enum ItemCategory // TypeDefIndex: 10123
 {
 	public int value__; 
-public const ItemCategory Weapon = 0;
-public const ItemCategory Construction = 1;
-public const ItemCategory Items = 2;
-public const ItemCategory Resources = 3;
-public const ItemCategory Attire = 4;
-public const ItemCategory Tool = 5;
-public const ItemCategory Medical = 6;
-public const ItemCategory Food = 7;
-public const ItemCategory Ammunition = 8;
-public const ItemCategory Traps = 9;
-public const ItemCategory Misc = 10;
-public const ItemCategory All = 11;
-public const ItemCategory Common = 12;
-public const ItemCategory Component = 13;
-public const ItemCategory Search = 14;
-public const ItemCategory Favourite = 15;
-public const ItemCategory Electrical = 16;
-public const ItemCategory Fun = 17;
+	public const ItemCategory Weapon = 0;
+	public const ItemCategory Construction = 1;
+	public const ItemCategory Items = 2;
+	public const ItemCategory Resources = 3;
+	public const ItemCategory Attire = 4;
+	public const ItemCategory Tool = 5;
+	public const ItemCategory Medical = 6;
+	public const ItemCategory Food = 7;
+	public const ItemCategory Ammunition = 8;
+	public const ItemCategory Traps = 9;
+	public const ItemCategory Misc = 10;
+	public const ItemCategory All = 11;
+	public const ItemCategory Common = 12;
+	public const ItemCategory Component = 13;
+	public const ItemCategory Search = 14;
+	public const ItemCategory Favourite = 15;
+	public const ItemCategory Electrical = 16;
+	public const ItemCategory Fun = 17;
 
 }
 
 public enum ItemSlot // TypeDefIndex: 10124
 {
 	public int value__; 
-public const ItemSlot None = 1;
-public const ItemSlot Barrel = 2;
-public const ItemSlot Silencer = 4;
-public const ItemSlot Scope = 8;
-public const ItemSlot UnderBarrel = 16;
-public const ItemSlot Magazine = 32;
+	public const ItemSlot None = 1;
+	public const ItemSlot Barrel = 2;
+	public const ItemSlot Silencer = 4;
+	public const ItemSlot Scope = 8;
+	public const ItemSlot UnderBarrel = 16;
+	public const ItemSlot Magazine = 32;
 
 }
 
 public enum ItemSelectionPanel // TypeDefIndex: 10125
 {
 	public int value__; 
-public const ItemSelectionPanel None = 0;
-public const ItemSelectionPanel Vessel = 1;
-public const ItemSelectionPanel Modifications = 2;
-public const ItemSelectionPanel GunInformation = 3;
+	public const ItemSelectionPanel None = 0;
+	public const ItemSelectionPanel Vessel = 1;
+	public const ItemSelectionPanel Modifications = 2;
+	public const ItemSelectionPanel GunInformation = 3;
 
 }
 
@@ -1651,7 +1651,7 @@ public class ItemSelector : PropertyAttribute // TypeDefIndex: 10126
 	public ItemCategory category; 
 
 
-public void .ctor(ItemCategory category = 11) { }
+	public void .ctor(ItemCategory category = 11) { }
 
 }
 
@@ -1660,31 +1660,31 @@ public class ItemMod : MonoBehaviour // TypeDefIndex: 10127
 	protected ItemMod[] siblingMods; 
 
 
-public virtual void ModInit() { }
+	public virtual void ModInit() { }
 
-public virtual void OnChanged(Item item) { }
+	public virtual void OnChanged(Item item) { }
 
-public virtual void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public virtual void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public virtual bool BeltSelect(Item item, BasePlayer player) { }
+	public virtual bool BeltSelect(Item item, BasePlayer player) { }
 
-public virtual void CL_DoAction(Item item, BasePlayer player) { }
+	public virtual void CL_DoAction(Item item, BasePlayer player) { }
 
-public virtual void OnObjectSetup(Item item, GameObject obj) { }
+	public virtual void OnObjectSetup(Item item, GameObject obj) { }
 
-public virtual int GetTotalUISlots(Item item) { }
+	public virtual int GetTotalUISlots(Item item) { }
 
-public virtual int GetFilledUISlots(Item item) { }
+	public virtual int GetFilledUISlots(Item item) { }
 
-public virtual bool CanDoAction(Item item, BasePlayer player) { }
+	public virtual bool CanDoAction(Item item, BasePlayer player) { }
 
-public virtual bool Passes(Item item) { }
+	public virtual bool Passes(Item item) { }
 
-public virtual void OnRemovedFromWorld(Item item) { }
+	public virtual void OnRemovedFromWorld(Item item) { }
 
-public virtual void OnMovedToWorld(Item item) { }
+	public virtual void OnMovedToWorld(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1693,9 +1693,9 @@ public class ItemModActionChange : ItemMod // TypeDefIndex: 10128
 	public ItemMod[] actions; 
 
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1704,9 +1704,9 @@ public class ItemModActionContainerChange : ItemMod // TypeDefIndex: 10129
 	public ItemMod[] actions; 
 
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1715,7 +1715,7 @@ public class ItemModAlterCondition : ItemMod // TypeDefIndex: 10130
 	public float conditionChange; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1731,18 +1731,18 @@ public class ItemModAnimalEquipment : ItemMod // TypeDefIndex: 10131
 	public ItemModAnimalEquipment.SlotType slot; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemModAnimalEquipment.SlotType // TypeDefIndex: 10132
 {
 	public int value__; 
-public const ItemModAnimalEquipment.SlotType Basic = 0;
-public const ItemModAnimalEquipment.SlotType Armor = 1;
-public const ItemModAnimalEquipment.SlotType Saddle = 2;
-public const ItemModAnimalEquipment.SlotType Bit = 3;
-public const ItemModAnimalEquipment.SlotType Feet = 4;
+	public const ItemModAnimalEquipment.SlotType Basic = 0;
+	public const ItemModAnimalEquipment.SlotType Armor = 1;
+	public const ItemModAnimalEquipment.SlotType Saddle = 2;
+	public const ItemModAnimalEquipment.SlotType Bit = 3;
+	public const ItemModAnimalEquipment.SlotType Feet = 4;
 
 }
 
@@ -1750,56 +1750,56 @@ public abstract class ItemModAssociatedEntity<T> : ItemMod // TypeDefIndex: 1013
 {
 	public GameObjectRef entityPrefab; 
 
-protected virtual bool AllowNullParenting { get; }
-protected virtual bool AllowHeldEntityParenting { get; }
+	protected virtual bool AllowNullParenting { get; }
+	protected virtual bool AllowHeldEntityParenting { get; }
 
 
-protected virtual bool get_AllowNullParenting() { }
-/* GenericInstMethod :
-|
-|-ItemModAssociatedEntity<PagerEntity>.get_AllowNullParenting
-|-ItemModAssociatedEntity<object>.get_AllowNullParenting
-*/
+	protected virtual bool get_AllowNullParenting() { }
+	/* GenericInstMethod :
+	|
+	|-ItemModAssociatedEntity<PagerEntity>.get_AllowNullParenting
+	|-ItemModAssociatedEntity<object>.get_AllowNullParenting
+	*/
 
-protected virtual bool get_AllowHeldEntityParenting() { }
-/* GenericInstMethod :
-|
-|-ItemModAssociatedEntity<MobileInventoryEntity>.get_AllowHeldEntityParenting
-|-ItemModAssociatedEntity<PagerEntity>.get_AllowHeldEntityParenting
-|-ItemModAssociatedEntity<PaintedItemStorageEntity>.get_AllowHeldEntityParenting
-|-ItemModAssociatedEntity<PhotoEntity>.get_AllowHeldEntityParenting
-|-ItemModAssociatedEntity<SignContent>.get_AllowHeldEntityParenting
-|-ItemModAssociatedEntity<object>.get_AllowHeldEntityParenting
-*/
+	protected virtual bool get_AllowHeldEntityParenting() { }
+	/* GenericInstMethod :
+	|
+	|-ItemModAssociatedEntity<MobileInventoryEntity>.get_AllowHeldEntityParenting
+	|-ItemModAssociatedEntity<PagerEntity>.get_AllowHeldEntityParenting
+	|-ItemModAssociatedEntity<PaintedItemStorageEntity>.get_AllowHeldEntityParenting
+	|-ItemModAssociatedEntity<PhotoEntity>.get_AllowHeldEntityParenting
+	|-ItemModAssociatedEntity<SignContent>.get_AllowHeldEntityParenting
+	|-ItemModAssociatedEntity<object>.get_AllowHeldEntityParenting
+	*/
 
-public static T GetAssociatedEntity(Item item, bool isServer = True) { }
-/* GenericInstMethod :
-|
-|-ItemModAssociatedEntity<MobileInventoryEntity>.GetAssociatedEntity
-|-ItemModAssociatedEntity<PagerEntity>.GetAssociatedEntity
-|-ItemModAssociatedEntity<PaintedItemStorageEntity>.GetAssociatedEntity
-|-ItemModAssociatedEntity<SignContent>.GetAssociatedEntity
-|-ItemModAssociatedEntity<object>.GetAssociatedEntity
-*/
+	public static T GetAssociatedEntity(Item item, bool isServer = True) { }
+	/* GenericInstMethod :
+	|
+	|-ItemModAssociatedEntity<MobileInventoryEntity>.GetAssociatedEntity
+	|-ItemModAssociatedEntity<PagerEntity>.GetAssociatedEntity
+	|-ItemModAssociatedEntity<PaintedItemStorageEntity>.GetAssociatedEntity
+	|-ItemModAssociatedEntity<SignContent>.GetAssociatedEntity
+	|-ItemModAssociatedEntity<object>.GetAssociatedEntity
+	*/
 
-protected void .ctor() { }
-/* GenericInstMethod :
-|
-|-ItemModAssociatedEntity<Cassette>..ctor
-|-ItemModAssociatedEntity<MobileInventoryEntity>..ctor
-|-ItemModAssociatedEntity<PagerEntity>..ctor
-|-ItemModAssociatedEntity<PaintedItemStorageEntity>..ctor
-|-ItemModAssociatedEntity<PhotoEntity>..ctor
-|-ItemModAssociatedEntity<SignContent>..ctor
-|-ItemModAssociatedEntity<object>..ctor
-*/
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-ItemModAssociatedEntity<Cassette>..ctor
+	|-ItemModAssociatedEntity<MobileInventoryEntity>..ctor
+	|-ItemModAssociatedEntity<PagerEntity>..ctor
+	|-ItemModAssociatedEntity<PaintedItemStorageEntity>..ctor
+	|-ItemModAssociatedEntity<PhotoEntity>..ctor
+	|-ItemModAssociatedEntity<SignContent>..ctor
+	|-ItemModAssociatedEntity<object>..ctor
+	*/
 
 }
 
 public class ItemModBaitContainer : ItemModContainer // TypeDefIndex: 10134
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1808,9 +1808,9 @@ public class ItemModBlueprintCraft : ItemMod // TypeDefIndex: 10135
 	public GameObjectRef successEffect; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1823,7 +1823,7 @@ public class ItemModBurnable : ItemMod // TypeDefIndex: 10136
 	public float byproductChance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1832,7 +1832,7 @@ public class ItemModCassetteContainer : ItemModContainer // TypeDefIndex: 10137
 	public ItemDefinition[] CassetteItems; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1841,7 +1841,7 @@ public class ItemModChildIO : ItemMod // TypeDefIndex: 10138
 	public GameObjectRef TargetChildIO; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1851,7 +1851,7 @@ public class ItemModCompostable : MonoBehaviour // TypeDefIndex: 10139
 	public float BaitValue; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1861,9 +1861,9 @@ public class ItemModConditionContainerFlag : ItemMod // TypeDefIndex: 10140
 	public bool requiredState; 
 
 
-public override bool Passes(Item item) { }
+	public override bool Passes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1875,9 +1875,9 @@ public class ItemModConditionHasCondition : ItemMod // TypeDefIndex: 10141
 	public bool lessThan; 
 
 
-public override bool Passes(Item item) { }
+	public override bool Passes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1888,12 +1888,12 @@ public class ItemModConditionHasContents : ItemMod // TypeDefIndex: 10142
 	public bool requiredState; 
 
 
-public override bool Passes(Item item) { }
+	public override bool Passes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <Passes>b__2_0(Item x) { }
+	private bool <Passes>b__2_0(Item x) { }
 
 }
 
@@ -1903,9 +1903,9 @@ public class ItemModConditionHasFlag : ItemMod // TypeDefIndex: 10143
 	public bool requiredState; 
 
 
-public override bool Passes(Item item) { }
+	public override bool Passes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1914,9 +1914,9 @@ public class ItemModConditionInWater : ItemMod // TypeDefIndex: 10144
 	public bool requiredState; 
 
 
-public override bool Passes(Item item) { }
+	public override bool Passes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1925,9 +1925,9 @@ public class ItemModConditionIsSleeping : ItemMod // TypeDefIndex: 10145
 	public bool requiredState; 
 
 
-public override bool Passes(Item item) { }
+	public override bool Passes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1940,9 +1940,9 @@ public class ItemModConsumable : MonoBehaviour // TypeDefIndex: 10146
 	public List<ModifierDefintion> modifiers; 
 
 
-public float GetIfType(MetabolismAttribute.Type typeToPick) { }
+	public float GetIfType(MetabolismAttribute.Type typeToPick) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1954,7 +1954,7 @@ public class ItemModConsumable.ConsumableEffect // TypeDefIndex: 10147
 	public float onlyIfHealthLessThan; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1967,11 +1967,11 @@ public class ItemModConsume : ItemMod // TypeDefIndex: 10148
 	public ItemModConsumable primaryConsumable; 
 
 
-public override void CL_DoAction(Item item, BasePlayer player) { }
+	public override void CL_DoAction(Item item, BasePlayer player) { }
 
-public override bool CanDoAction(Item item, BasePlayer player) { }
+	public override bool CanDoAction(Item item, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1982,7 +1982,7 @@ public class ItemModConsumeChance : ItemModConsume // TypeDefIndex: 10149
 	public ItemModConsumable secondaryConsumable; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1991,11 +1991,11 @@ public class ItemModConsumeContents : ItemMod // TypeDefIndex: 10150
 	public GameObjectRef consumeEffect; 
 
 
-public override void CL_DoAction(Item item, BasePlayer player) { }
+	public override void CL_DoAction(Item item, BasePlayer player) { }
 
-public override bool CanDoAction(Item item, BasePlayer player) { }
+	public override bool CanDoAction(Item item, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2014,11 +2014,11 @@ public class ItemModContainer : ItemMod // TypeDefIndex: 10151
 	public List<ItemAmount> defaultContents; 
 
 
-public override int GetTotalUISlots(Item item) { }
+	public override int GetTotalUISlots(Item item) { }
 
-public override int GetFilledUISlots(Item item) { }
+	public override int GetFilledUISlots(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2028,16 +2028,16 @@ public class ItemModContainerRestriction : ItemMod // TypeDefIndex: 10152
 	public ItemModContainerRestriction.SlotFlags slotFlags; 
 
 
-public bool CanExistWith(ItemModContainerRestriction other) { }
+	public bool CanExistWith(ItemModContainerRestriction other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemModContainerRestriction.SlotFlags // TypeDefIndex: 10153
 {
 	public int value__; 
-public const ItemModContainerRestriction.SlotFlags Map = 1;
+	public const ItemModContainerRestriction.SlotFlags Map = 1;
 
 }
 
@@ -2052,9 +2052,9 @@ public class ItemModCookable : ItemMod // TypeDefIndex: 10154
 	public bool setCookingFlag; 
 
 
-public void OnValidate() { }
+	public void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2066,9 +2066,9 @@ public class ItemModCycle : ItemMod // TypeDefIndex: 10155
 	public bool onlyAdvanceTimerWhenPass; 
 
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2080,9 +2080,9 @@ public class ItemModDeployable : MonoBehaviour // TypeDefIndex: 10156
 	public string UnlockAchievement; 
 
 
-public Deployable GetDeployable(BaseEntity entity) { }
+	public Deployable GetDeployable(BaseEntity entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2092,7 +2092,7 @@ public class ItemModEntity : ItemMod // TypeDefIndex: 10157
 	public string defaultBone; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2101,7 +2101,7 @@ public class ItemModEntityReference : MonoBehaviour // TypeDefIndex: 10158
 	public GameObjectRef entityPrefab; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2125,7 +2125,7 @@ public class ItemModFishable : ItemMod // TypeDefIndex: 10159
 	public string SteamStatName; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2139,27 +2139,27 @@ public class ItemModGiveOxygen : ItemMod, IAirSupply // TypeDefIndex: 10161
 	private float timeRemaining; 
 	private float cycleTime; 
 
-public ItemModGiveOxygen.AirSupplyType AirType { get; }
+	public ItemModGiveOxygen.AirSupplyType AirType { get; }
 
 
-public ItemModGiveOxygen.AirSupplyType get_AirType() { }
+	public ItemModGiveOxygen.AirSupplyType get_AirType() { }
 
-public float GetAirTimeRemaining() { }
+	public float GetAirTimeRemaining() { }
 
-public override void ModInit() { }
+	public override void ModInit() { }
 
-public override void OnChanged(Item item) { }
+	public override void OnChanged(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemModGiveOxygen.AirSupplyType // TypeDefIndex: 10162
 {
 	public int value__; 
-public const ItemModGiveOxygen.AirSupplyType Lungs = 0;
-public const ItemModGiveOxygen.AirSupplyType ScubaTank = 1;
-public const ItemModGiveOxygen.AirSupplyType Submarine = 2;
+	public const ItemModGiveOxygen.AirSupplyType Lungs = 0;
+	public const ItemModGiveOxygen.AirSupplyType ScubaTank = 1;
+	public const ItemModGiveOxygen.AirSupplyType Submarine = 2;
 
 }
 
@@ -2168,7 +2168,7 @@ public class ItemModKeycard : ItemMod // TypeDefIndex: 10163
 	public int accessLevel; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2181,13 +2181,13 @@ public class ItemModMenuOption : ItemMod // TypeDefIndex: 10164
 	public bool isPrimaryOption; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public override bool BeltSelect(Item item, BasePlayer player) { }
+	public override bool BeltSelect(Item item, BasePlayer player) { }
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2197,24 +2197,24 @@ public class ItemModPaintable : ItemModAssociatedEntity<PaintedItemStorageEntity
 	public MeshPaintableSource[] PaintableSources; 
 	private EntityRef<PaintedItemStorageEntity> _paintStorage; 
 
-protected override bool AllowNullParenting { get; }
+	protected override bool AllowNullParenting { get; }
 
 
-protected override bool get_AllowNullParenting() { }
+	protected override bool get_AllowNullParenting() { }
 
-public override void OnObjectSetup(Item item, GameObject obj) { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator DeferredSetup(Item item, PaintableItem paintable) { }
-
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
-
-private void PaintClicked(BasePlayer player) { }
+	public override void OnObjectSetup(Item item, GameObject obj) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator OpenPaintUI(EntityRef<PaintedItemStorageEntity> paintStorage) { }
+	private IEnumerator DeferredSetup(Item item, PaintableItem paintable) { }
 
-public void .ctor() { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+
+	private void PaintClicked(BasePlayer player) { }
+
+	[IteratorStateMachineAttribute] 
+	private IEnumerator OpenPaintUI(EntityRef<PaintedItemStorageEntity> paintStorage) { }
+
+	public void .ctor() { }
 
 }
 
@@ -2227,26 +2227,26 @@ private sealed class ItemModPaintable.<DeferredSetup>d__5 : IEnumerator<object>,
 	public ItemModPaintable <>4__this; 
 	private int <count>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -2255,9 +2255,9 @@ private sealed class ItemModPaintable.<>c__DisplayClass9_0 // TypeDefIndex: 1016
 	public PaintedItemStorageEntity entity; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <OpenPaintUI>b__0(int frame, Texture2D texture) { }
+	internal void <OpenPaintUI>b__0(int frame, Texture2D texture) { }
 
 }
 
@@ -2269,26 +2269,26 @@ private sealed class ItemModPaintable.<OpenPaintUI>d__9 : IEnumerator<object>, I
 	public ItemModPaintable <>4__this; 
 	private int <i>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -2304,7 +2304,7 @@ public class ItemModPetStats : ItemMod // TypeDefIndex: 10169
 	public float AttackRateModifier; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2324,32 +2324,32 @@ public class ItemModProjectile : MonoBehaviour // TypeDefIndex: 10170
 	public string category; 
 
 
-public float GetRandomVelocity() { }
+	public float GetRandomVelocity() { }
 
-public float GetSpreadScalar() { }
+	public float GetSpreadScalar() { }
 
-public float GetIndexedSpreadScalar(int shotIndex, int maxShots) { }
+	public float GetIndexedSpreadScalar(int shotIndex, int maxShots) { }
 
-public float GetAverageVelocity() { }
+	public float GetAverageVelocity() { }
 
-public float GetMinVelocity() { }
+	public float GetMinVelocity() { }
 
-public float GetMaxVelocity() { }
+	public float GetMaxVelocity() { }
 
-public bool IsAmmo(AmmoTypes ammo) { }
+	public bool IsAmmo(AmmoTypes ammo) { }
 
-public virtual void ServerProjectileHit(HitInfo info) { }
+	public virtual void ServerProjectileHit(HitInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemModProjectileMod : MonoBehaviour // TypeDefIndex: 10171
 {
 
-public virtual void ServerProjectileHit(HitInfo info) { }
+	public virtual void ServerProjectileHit(HitInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2361,7 +2361,7 @@ public class ItemModProjectileRadialDamage : ItemModProjectileMod // TypeDefInde
 	public bool ignoreHitObject; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2375,7 +2375,7 @@ public class ItemModProjectileSpawn : ItemModProjectile // TypeDefIndex: 10173
 	public int numToCreateChances; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2387,9 +2387,9 @@ public class ItemModRecycleInto : ItemMod // TypeDefIndex: 10174
 	public GameObjectRef successEffect; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2400,11 +2400,11 @@ public class ItemModRepair : ItemMod // TypeDefIndex: 10175
 	public int workbenchLvlRequired; 
 
 
-public bool HasCraftLevel(BasePlayer player) { }
+	public bool HasCraftLevel(BasePlayer player) { }
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2417,9 +2417,9 @@ public class ItemModReveal : ItemMod // TypeDefIndex: 10176
 	public GameObjectRef successEffect; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2429,14 +2429,14 @@ public class ItemModSound : ItemMod // TypeDefIndex: 10177
 	public ItemModSound.Type actionType; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ItemModSound.Type // TypeDefIndex: 10178
 {
 	public int value__; 
-public const ItemModSound.Type OnAttachToWeapon = 0;
+	public const ItemModSound.Type OnAttachToWeapon = 0;
 
 }
 
@@ -2445,7 +2445,7 @@ public class ItemModStudyBlueprint : ItemMod // TypeDefIndex: 10179
 	public GameObjectRef studyEffect; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2456,7 +2456,7 @@ public class ItemModSummerSunglassesEquip : ItemMod // TypeDefIndex: 10180
 	public string AchivementName; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2470,7 +2470,7 @@ public class ItemModSwap : ItemMod // TypeDefIndex: 10181
 	public ItemAmount[] RandomOptions; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2480,7 +2480,7 @@ public class ItemModSwitchFlag : ItemMod // TypeDefIndex: 10182
 	public bool state; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2495,9 +2495,9 @@ public class ItemModUpgrade : ItemMod // TypeDefIndex: 10183
 	public GameObjectRef failEffect; 
 
 
-public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
+	public override void GetMenuOptions(Item item, List<Option> list, BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2506,7 +2506,7 @@ public class ItemModUseContent : ItemMod // TypeDefIndex: 10184
 	public int amountToConsume; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2529,36 +2529,36 @@ public class ItemModWearable : ItemMod // TypeDefIndex: 10185
 	public GameObjectRef breakEffect; 
 	public GameObjectRef viewmodelAddition; 
 
-public Wearable targetWearable { get; }
+	public Wearable targetWearable { get; }
 
 
-public Wearable get_targetWearable() { }
+	public Wearable get_targetWearable() { }
 
-private void DoPrepare() { }
+	private void DoPrepare() { }
 
-public override void ModInit() { }
+	public override void ModInit() { }
 
-public bool ProtectsArea(HitArea area) { }
+	public bool ProtectsArea(HitArea area) { }
 
-public bool HasProtections() { }
+	public bool HasProtections() { }
 
-internal float GetProtection(Item item, DamageType damageType) { }
+	internal float GetProtection(Item item, DamageType damageType) { }
 
-public float ConditionProtectionScale(Item item) { }
+	public float ConditionProtectionScale(Item item) { }
 
-public void CollectProtection(Item item, ProtectionProperties protection) { }
+	public void CollectProtection(Item item, ProtectionProperties protection) { }
 
-private bool IsHeadgear() { }
+	private bool IsHeadgear() { }
 
-public bool IsFootwear() { }
+	public bool IsFootwear() { }
 
-public void OnDressModel(Item item, PlayerModel model) { }
+	public void OnDressModel(Item item, PlayerModel model) { }
 
-public override void OnObjectSetup(Item item, GameObject obj) { }
+	public override void OnObjectSetup(Item item, GameObject obj) { }
 
-public bool CanExistWith(ItemModWearable wearable) { }
+	public bool CanExistWith(ItemModWearable wearable) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2567,9 +2567,9 @@ private sealed class ItemModWearable.<>c__DisplayClass28_0 // TypeDefIndex: 1018
 	public Item item; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnObjectSetup>b__0(ItemSkinDirectory.Skin x) { }
+	internal bool <OnObjectSetup>b__0(ItemSkinDirectory.Skin x) { }
 
 }
 
@@ -2579,9 +2579,9 @@ public class ItemModXPWhenUsed : ItemMod // TypeDefIndex: 10187
 	public int unitSize; 
 
 
-public void GiveConsumeXP(Item item) { }
+	public void GiveConsumeXP(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2590,7 +2590,7 @@ public class ItemFootstepSounds : MonoBehaviour // TypeDefIndex: 10188
 	public string effectFolder; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2601,22 +2601,22 @@ public class ItemAmount : ISerializationCallbackReceiver // TypeDefIndex: 10189
 	public float amount; 
 	public float startAmount; 
 
-public int itemid { get; }
+	public int itemid { get; }
 
 
-public void .ctor(ItemDefinition item, float amt = 0) { }
+	public void .ctor(ItemDefinition item, float amt = 0) { }
 
-public int get_itemid() { }
+	public int get_itemid() { }
 
-public virtual float GetAmount() { }
+	public virtual float GetAmount() { }
 
-public virtual void OnAfterDeserialize() { }
+	public virtual void OnAfterDeserialize() { }
 
-public virtual void OnBeforeSerialize() { }
+	public virtual void OnBeforeSerialize() { }
 
-public static ItemAmountList SerialiseList(List<ItemAmount> list) { }
+	public static ItemAmountList SerialiseList(List<ItemAmount> list) { }
 
-public static void DeserialiseList(List<ItemAmount> target, ItemAmountList source) { }
+	public static void DeserialiseList(List<ItemAmount> target, ItemAmountList source) { }
 
 }
 
@@ -2627,9 +2627,9 @@ public class ItemAmountRandom // TypeDefIndex: 10190
 	public AnimationCurve amount; 
 
 
-public int RandomAmount() { }
+	public int RandomAmount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2638,11 +2638,11 @@ public class ItemAmountRanged : ItemAmount // TypeDefIndex: 10191
 	public float maxAmount; 
 
 
-public override void OnAfterDeserialize() { }
+	public override void OnAfterDeserialize() { }
 
-public void .ctor(ItemDefinition item, float amt = 0, float max = -1) { }
+	public void .ctor(ItemDefinition item, float amt = 0, float max = -1) { }
 
-public override float GetAmount() { }
+	public override float GetAmount() { }
 
 }
 
@@ -2656,25 +2656,25 @@ public class ItemManager // TypeDefIndex: 10192
 	public static ItemDefinition blueprintBaseDef; 
 
 
-public static void InvalidateWorkshopSkinCache() { }
+	public static void InvalidateWorkshopSkinCache() { }
 
-public static void Initialize() { }
+	public static void Initialize() { }
 
-public static void UpdateUnlockedSkins() { }
+	public static void UpdateUnlockedSkins() { }
 
-public static Item Load(Item load, Item created, bool isServer) { }
+	public static Item Load(Item load, Item created, bool isServer) { }
 
-public static ItemDefinition FindItemDefinition(int itemID) { }
+	public static ItemDefinition FindItemDefinition(int itemID) { }
 
-public static ItemDefinition FindItemDefinition(string shortName) { }
+	public static ItemDefinition FindItemDefinition(string shortName) { }
 
-public static ItemBlueprint FindBlueprint(ItemDefinition item) { }
+	public static ItemBlueprint FindBlueprint(ItemDefinition item) { }
 
-public static List<ItemDefinition> GetItemDefinitions() { }
+	public static List<ItemDefinition> GetItemDefinitions() { }
 
-public static List<ItemBlueprint> GetBlueprints() { }
+	public static List<ItemBlueprint> GetBlueprints() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2689,21 +2689,21 @@ private sealed class ItemManager.<>c // TypeDefIndex: 10193
 	public static Func<ItemBlueprint, int> <>9__7_5; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal ItemDefinition <Initialize>b__7_0(GameObject x) { }
+	internal ItemDefinition <Initialize>b__7_0(GameObject x) { }
 
-internal bool <Initialize>b__7_1(ItemDefinition x) { }
+	internal bool <Initialize>b__7_1(ItemDefinition x) { }
 
-internal ItemBlueprint <Initialize>b__7_2(GameObject x) { }
+	internal ItemBlueprint <Initialize>b__7_2(GameObject x) { }
 
-internal bool <Initialize>b__7_3(ItemBlueprint x) { }
+	internal bool <Initialize>b__7_3(ItemBlueprint x) { }
 
-internal bool <Initialize>b__7_4(ItemBlueprint x) { }
+	internal bool <Initialize>b__7_4(ItemBlueprint x) { }
 
-internal int <Initialize>b__7_5(ItemBlueprint x) { }
+	internal int <Initialize>b__7_5(ItemBlueprint x) { }
 
 }
 
@@ -2716,11 +2716,11 @@ public class ItemSkin : SteamInventoryItem // TypeDefIndex: 10737
 	public SteamInventoryItem UnlockedViaSteamItem; 
 
 
-public void ApplySkin(GameObject obj) { }
+	public void ApplySkin(GameObject obj) { }
 
-public override bool HasUnlocked(ulong playerId) { }
+	public override bool HasUnlocked(ulong playerId) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2729,16 +2729,16 @@ public class ItemSkinDirectory : ScriptableObject // TypeDefIndex: 10738
 	private static ItemSkinDirectory _Instance; 
 	public ItemSkinDirectory.Skin[] skins; 
 
-public static ItemSkinDirectory Instance { get; }
+	public static ItemSkinDirectory Instance { get; }
 
 
-public static ItemSkinDirectory get_Instance() { }
+	public static ItemSkinDirectory get_Instance() { }
 
-public static ItemSkinDirectory.Skin[] ForItem(ItemDefinition item) { }
+	public static ItemSkinDirectory.Skin[] ForItem(ItemDefinition item) { }
 
-public static ItemSkinDirectory.Skin FindByInventoryDefinitionId(int id) { }
+	public static ItemSkinDirectory.Skin FindByInventoryDefinitionId(int id) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2750,10 +2750,10 @@ public struct ItemSkinDirectory.Skin // TypeDefIndex: 10739
 	public bool isSkin; 
 	private SteamInventoryItem _invItem; 
 
-public SteamInventoryItem invItem { get; }
+	public SteamInventoryItem invItem { get; }
 
 
-public SteamInventoryItem get_invItem() { }
+	public SteamInventoryItem get_invItem() { }
 
 }
 
@@ -2762,9 +2762,9 @@ private sealed class ItemSkinDirectory.<>c__DisplayClass5_0 // TypeDefIndex: 107
 	public ItemDefinition item; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <ForItem>b__0(ItemSkinDirectory.Skin x) { }
+	internal bool <ForItem>b__0(ItemSkinDirectory.Skin x) { }
 
 }
 
@@ -2773,18 +2773,18 @@ private sealed class ItemSkinDirectory.<>c__DisplayClass6_0 // TypeDefIndex: 107
 	public int id; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <FindByInventoryDefinitionId>b__0(ItemSkinDirectory.Skin x) { }
+	internal bool <FindByInventoryDefinitionId>b__0(ItemSkinDirectory.Skin x) { }
 
 }
 
 public abstract class ItemContainerSource : MonoBehaviour // TypeDefIndex: 10851
 {
 
-public abstract ItemContainer GetItemContainer();
+	public abstract ItemContainer GetItemContainer();
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
@@ -2793,9 +2793,9 @@ public class ItemDropCommand : MonoBehaviour // TypeDefIndex: 11007
 	public string command; 
 
 
-private void OnDroppedValue(ItemIcon.DragInfo dropInfo) { }
+	private void OnDroppedValue(ItemIcon.DragInfo dropInfo) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2833,8 +2833,8 @@ public class ItemIcon : BaseMonoBehaviour, IPointerClickHandler, IEventSystemHan
 	internal Image[] slotImages; 
 	private static Dictionary<uint, float> containerLootStartTimes; 
 	private bool queuedForLooting; 
-private const float processLootQueueInterval = 0,2;
-private const float lootItemDuration = 0,2;
+	private const float processLootQueueInterval = 0,2;
+	private const float lootItemDuration = 0,2;
 	private uint queuedQuickLootContainerID; 
 	private float queuedLootAtTime; 
 	private bool visible; 
@@ -2844,101 +2844,101 @@ private const float lootItemDuration = 0,2;
 	public Action timedAction; 
 	public Nullable<Vector2> timedActionTime; 
 
-private Item iconValue { get; }
+	private Item iconValue { get; }
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public static void ClearLootTimers() { }
+	public static void ClearLootTimers() { }
 
-public void ClearProgressImage() { }
+	public void ClearProgressImage() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void OnShow() { }
+	public void OnShow() { }
 
-public void OnHide() { }
+	public void OnHide() { }
 
-public void ClearLooting() { }
+	public void ClearLooting() { }
 
-private void Update() { }
+	private void Update() { }
 
-public Sprite GetItemSprite(out Color tint) { }
+	public Sprite GetItemSprite(out Color tint) { }
 
-public void OnItemAmountChanged() { }
+	public void OnItemAmountChanged() { }
 
-public void OnItemIconChanged() { }
+	public void OnItemIconChanged() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void UpdateHoverText() { }
+	private void UpdateHoverText() { }
 
-private void UpdateItemIcon() { }
+	private void UpdateItemIcon() { }
 
-private void SetBackgroundUnderlayVisible(bool flag) { }
+	private void SetBackgroundUnderlayVisible(bool flag) { }
 
-private void UpdateCornerIcon() { }
+	private void UpdateCornerIcon() { }
 
-private void UpdateSlots() { }
+	private void UpdateSlots() { }
 
-private Item get_iconValue() { }
+	private Item get_iconValue() { }
 
-public void Select() { }
+	public void Select() { }
 
-public void SelectSilent() { }
+	public void SelectSilent() { }
 
-private void InternalSelect(bool silent = False) { }
+	private void InternalSelect(bool silent = False) { }
 
-public void Deselect() { }
+	public void Deselect() { }
 
-public void SetActive(bool active) { }
+	public void SetActive(bool active) { }
 
-public virtual void OnDroppedValue(ItemIcon.DragInfo dropInfo) { }
+	public virtual void OnDroppedValue(ItemIcon.DragInfo dropInfo) { }
 
-private bool TryToDropInsideItem(ItemIcon.DragInfo dropInfo, Item item) { }
+	private bool TryToDropInsideItem(ItemIcon.DragInfo dropInfo, Item item) { }
 
-public void SetTimedLootAction(uint sourceContainer, Action action) { }
+	public void SetTimedLootAction(uint sourceContainer, Action action) { }
 
-private float CalculateLootDelay(uint sourceContainer) { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator StartTimedLootAction(float delay) { }
-
-public void RunTimedAction() { }
-
-public void ClearTimedAction() { }
-
-private void RemoveFromLootQueue() { }
+	private float CalculateLootDelay(uint sourceContainer) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator UpdateTimedActionIcon() { }
+	private IEnumerator StartTimedLootAction(float delay) { }
 
-private void TryToQuickMove() { }
+	public void RunTimedAction() { }
 
-public virtual void TryToMove() { }
+	public void ClearTimedAction() { }
 
-public void EquipAsClothingItem() { }
+	private void RemoveFromLootQueue() { }
 
-public virtual void OnPointerClick(PointerEventData eventData) { }
+	[IteratorStateMachineAttribute] 
+	private IEnumerator UpdateTimedActionIcon() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	private void TryToQuickMove() { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public virtual void TryToMove() { }
 
-public object GetDragData() { }
+	public void EquipAsClothingItem() { }
 
-public string GetDragType() { }
+	public virtual void OnPointerClick(PointerEventData eventData) { }
 
-public Sprite GetDragSprite() { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void .ctor() { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-private static void .cctor() { }
+	public object GetDragData() { }
+
+	public string GetDragType() { }
+
+	public Sprite GetDragSprite() { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <EquipAsClothingItem>b__78_0() { }
+	private void <EquipAsClothingItem>b__78_0() { }
 
 }
 
@@ -2949,7 +2949,7 @@ public class ItemIcon.DragInfo // TypeDefIndex: 11009
 	public bool canDrop; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2960,26 +2960,26 @@ private sealed class ItemIcon.<StartTimedLootAction>d__71 : IEnumerator<object>,
 	public ItemIcon <>4__this; 
 	public float delay; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -2989,26 +2989,26 @@ private sealed class ItemIcon.<UpdateTimedActionIcon>d__75 : IEnumerator<object>
 	private object <>2__current; 
 	public ItemIcon <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -3018,26 +3018,26 @@ private sealed class ItemIcon.<>c__DisplayClass77_0 // TypeDefIndex: 11012
 	public PlayerLoot loot; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <TryToMove>b__0() { }
+	internal void <TryToMove>b__0() { }
 
-internal void <TryToMove>b__1() { }
+	internal void <TryToMove>b__1() { }
 
-internal void <TryToMove>b__2() { }
+	internal void <TryToMove>b__2() { }
 
-internal void <TryToMove>b__3() { }
+	internal void <TryToMove>b__3() { }
 
 }
 
 public class ItemInformationPanel : MonoBehaviour // TypeDefIndex: 11013
 {
 
-public virtual bool EligableForDisplay(ItemDefinition info) { }
+	public virtual bool EligableForDisplay(ItemDefinition info) { }
 
-public virtual void SetupForItem(ItemDefinition info, Item item) { }
+	public virtual void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3049,11 +3049,11 @@ public class ItemOptionButton : MonoBehaviour // TypeDefIndex: 11014
 	internal Option option; 
 
 
-public void Setup(Item item, Option option) { }
+	public void Setup(Item item, Option option) { }
 
-public void Pressed() { }
+	public void Pressed() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3062,13 +3062,13 @@ public class ItemPanel : SingletonComponent<ItemPanel> // TypeDefIndex: 11015
 	private ItemIcon item; 
 
 
-private void Start() { }
+	private void Start() { }
 
-public void Update() { }
+	public void Update() { }
 
-private void OnChanged() { }
+	private void OnChanged() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3079,29 +3079,29 @@ public class ItemPickupNotice : MonoBehaviour // TypeDefIndex: 11016
 	private TimeSince enabledTime; 
 	private RectTransform targetRect; 
 	private CanvasGroup targetCanvas; 
-private const float pickupNoticeTime = 4;
+	private const float pickupNoticeTime = 4;
 
-public ItemDefinition itemInfo { set; }
-public int amount { set; }
+	public ItemDefinition itemInfo { set; }
+	public int amount { set; }
 
 
-public void set_itemInfo(ItemDefinition value) { }
+	public void set_itemInfo(ItemDefinition value) { }
 
-public void set_amount(int value) { }
+	public void set_amount(int value) { }
 
-public void AppendTotal(int amount) { }
+	public void AppendTotal(int amount) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void BlockLayoutUpdates() { }
+	public void BlockLayoutUpdates() { }
 
-public void AllowLayoutUpdates() { }
+	public void AllowLayoutUpdates() { }
 
-public bool ProcessAnimation(AnimationCurve sizeCurve, AnimationCurve alphaCurve) { }
+	public bool ProcessAnimation(AnimationCurve sizeCurve, AnimationCurve alphaCurve) { }
 
-public void PopupNoticeEnd() { }
+	public void PopupNoticeEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3117,26 +3117,26 @@ public class ItemPreviewIcon : BaseMonoBehaviour, IInventoryChanged, IItemAmount
 	public Item item; 
 	private bool invalidSlot; 
 
-private Item iconValue { get; }
+	private Item iconValue { get; }
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public Sprite GetItemSprite() { }
+	public Sprite GetItemSprite() { }
 
-public void OnItemAmountChanged() { }
+	public void OnItemAmountChanged() { }
 
-public void OnItemIconChanged() { }
+	public void OnItemIconChanged() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void UpdateItemIcon() { }
+	private void UpdateItemIcon() { }
 
-private Item get_iconValue() { }
+	private Item get_iconValue() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3149,42 +3149,42 @@ public class ItemSplitter : MonoBehaviour // TypeDefIndex: 11018
 	private static bool isInputFieldOpen; 
 	private float oldAmount; 
 
-public ItemIcon.DragInfo dragInfo { get; }
+	public ItemIcon.DragInfo dragInfo { get; }
 
 
-public static bool IsInputFieldOpen() { }
+	public static bool IsInputFieldOpen() { }
 
-private void Start() { }
+	private void Start() { }
 
-public ItemIcon.DragInfo get_dragInfo() { }
+	public ItemIcon.DragInfo get_dragInfo() { }
 
-public void RefreshValue() { }
+	public void RefreshValue() { }
 
-public void Update() { }
+	public void Update() { }
 
-private string FormatValueString(float value) { }
+	private string FormatValueString(float value) { }
 
-private void OnAmountInputFieldValueChanged() { }
+	private void OnAmountInputFieldValueChanged() { }
 
-public void OnSliderLeftMouseDown() { }
+	public void OnSliderLeftMouseDown() { }
 
-public void OnSliderRightMouseUp() { }
+	public void OnSliderRightMouseUp() { }
 
-public void OnSliderMiddleMouseDown() { }
+	public void OnSliderMiddleMouseDown() { }
 
-private void SetAmountInputFieldVisible(bool flag) { }
+	private void SetAmountInputFieldVisible(bool flag) { }
 
-public static int GetSplitAmount(int itemAmount) { }
+	public static int GetSplitAmount(int itemAmount) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
-
-	[CompilerGeneratedAttribute] 
-private void <Start>b__6_0(string <p0>) { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <Start>b__6_1(string <p0>) { }
+	private void <Start>b__6_0(string <p0>) { }
+
+	[CompilerGeneratedAttribute] 
+	private void <Start>b__6_1(string <p0>) { }
 
 }
 
@@ -3193,13 +3193,13 @@ public class ItemSplitterDragOut : MonoBehaviour, IDraggable // TypeDefIndex: 11
 	public ItemSplitter rootSplitter; 
 
 
-public object GetDragData() { }
+	public object GetDragData() { }
 
-public string GetDragType() { }
+	public string GetDragType() { }
 
-public Sprite GetDragSprite() { }
+	public Sprite GetDragSprite() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3208,11 +3208,11 @@ public class ItemSplitterSlider : MonoBehaviour, IPointerUpHandler, IEventSystem
 	public ItemSplitter Splitter; 
 
 
-public void OnPointerDown(PointerEventData eventData) { }
+	public void OnPointerDown(PointerEventData eventData) { }
 
-public void OnPointerUp(PointerEventData eventData) { }
+	public void OnPointerUp(PointerEventData eventData) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3225,22 +3225,22 @@ public class ItemStatValue : MonoBehaviour // TypeDefIndex: 11021
 	public bool asPercentage; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void SetValue(float val, int numDecimals = 0, string overrideText = "") { }
+	public void SetValue(float val, int numDecimals = 0, string overrideText = "") { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class ItemSubmitPanel : LootPanel // TypeDefIndex: 11022
 {
 
-public void SubmitClicked() { }
+	public void SubmitClicked() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3257,9 +3257,9 @@ public class ItemTextValue : MonoBehaviour // TypeDefIndex: 11023
 	public float multiplier; 
 
 
-public void SetValue(float val, int numDecimals = 0, string overrideText = "") { }
+	public void SetValue(float val, int numDecimals = 0, string overrideText = "") { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3283,35 +3283,35 @@ public class ItemStore : SingletonComponent<ItemStore>, VirtualScroll.IDataSourc
 	public RustText TotalValue; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void OnPurchaseFinished(AppId appid, ulong orderid, bool success) { }
-
-	[AsyncStateMachineAttribute] 
-private void RefreshList() { }
-
-private void AddItem(IPlayerItemDefinition item) { }
-
-internal void ShowModal(IPlayerItemDefinition item) { }
-
-internal void AddToCart(IPlayerItemDefinition item) { }
-
-public void EmptyCart() { }
-
-private void UpdateShoppingList() { }
-
-public void RemoveFromCart(int index) { }
+	private void OnPurchaseFinished(AppId appid, ulong orderid, bool success) { }
 
 	[AsyncStateMachineAttribute] 
-public void Checkout() { }
+	private void RefreshList() { }
 
-public int GetItemCount() { }
+	private void AddItem(IPlayerItemDefinition item) { }
 
-public void SetItemData(int i, GameObject obj) { }
+	internal void ShowModal(IPlayerItemDefinition item) { }
 
-public void .ctor() { }
+	internal void AddToCart(IPlayerItemDefinition item) { }
 
-private static void .cctor() { }
+	public void EmptyCart() { }
+
+	private void UpdateShoppingList() { }
+
+	public void RemoveFromCart(int index) { }
+
+	[AsyncStateMachineAttribute] 
+	public void Checkout() { }
+
+	public int GetItemCount() { }
+
+	public void SetItemData(int i, GameObject obj) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -3324,17 +3324,17 @@ private sealed class ItemStore.<>c // TypeDefIndex: 11106
 	public static Func<SteamItemDefinition, InventoryDef> <>9__24_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <OnPurchaseFinished>b__16_0(IPlayerItemDefinition x) { }
+	internal int <OnPurchaseFinished>b__16_0(IPlayerItemDefinition x) { }
 
-internal int <RefreshList>b__17_0(IPlayerItemDefinition x) { }
+	internal int <RefreshList>b__17_0(IPlayerItemDefinition x) { }
 
-internal int <UpdateShoppingList>b__22_0(IPlayerItemDefinition x) { }
+	internal int <UpdateShoppingList>b__22_0(IPlayerItemDefinition x) { }
 
-internal InventoryDef <Checkout>b__24_0(SteamItemDefinition i) { }
+	internal InventoryDef <Checkout>b__24_0(SteamItemDefinition i) { }
 
 }
 
@@ -3346,10 +3346,10 @@ private struct ItemStore.<RefreshList>d__17 : IAsyncStateMachine // TypeDefIndex
 	private TaskAwaiter<List<IPlayerItemDefinition>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -3361,38 +3361,38 @@ private struct ItemStore.<Checkout>d__24 : IAsyncStateMachine // TypeDefIndex: 1
 	private TaskAwaiter<Nullable<InventoryPurchaseResult>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 public class ItemStoreBuyFailedModal : MonoBehaviour // TypeDefIndex: 11109
 {
 
-public void Show(ulong orderid) { }
+	public void Show(ulong orderid) { }
 
-public void Hide() { }
+	public void Hide() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <Hide>b__1_0() { }
+	private void <Hide>b__1_0() { }
 
 }
 
 public class ItemStoreBuySuccessModal : MonoBehaviour // TypeDefIndex: 11110
 {
 
-public void Show(ulong orderId) { }
+	public void Show(ulong orderId) { }
 
-public void Hide() { }
+	public void Hide() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <Hide>b__1_0() { }
+	private void <Hide>b__1_0() { }
 
 }
 
@@ -3403,11 +3403,11 @@ public class ItemStoreCartItem : MonoBehaviour // TypeDefIndex: 11111
 	public TextMeshProUGUI Price; 
 
 
-public void Init(int index, IPlayerItemDefinition def) { }
+	public void Init(int index, IPlayerItemDefinition def) { }
 
-public void RemoveFromCart() { }
+	public void RemoveFromCart() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3421,13 +3421,13 @@ public class ItemStoreItem : MonoBehaviour // TypeDefIndex: 11112
 	private IPlayerItemDefinition item; 
 
 
-internal void Init(IPlayerItemDefinition item, bool inCart) { }
+	internal void Init(IPlayerItemDefinition item, bool inCart) { }
 
-public void ShowModal() { }
+	public void ShowModal() { }
 
-public void AddToCart() { }
+	public void AddToCart() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3440,16 +3440,16 @@ public class ItemStoreItemInfoModal : MonoBehaviour // TypeDefIndex: 11113
 	private IPlayerItemDefinition item; 
 
 
-public void Show(IPlayerItemDefinition item) { }
+	public void Show(IPlayerItemDefinition item) { }
 
-public void AddToCart() { }
+	public void AddToCart() { }
 
-public void Hide() { }
+	public void Hide() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <Hide>b__7_0() { }
+	private void <Hide>b__7_0() { }
 
 }
 
@@ -3460,7 +3460,7 @@ public class ItemModEngineItem : ItemMod // TypeDefIndex: 12108
 	public int tier; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3470,16 +3470,16 @@ public class ItemModVehicleChassis : ItemMod, VehicleModuleInformationPanel.IVeh
 	[RangeAttribute] 
 	public int socketsTaken; 
 
-public int SocketsTaken { get; }
+	public int SocketsTaken { get; }
 
 
-public int get_SocketsTaken() { }
+	public int get_SocketsTaken() { }
 
-public override int GetTotalUISlots(Item item) { }
+	public override int GetTotalUISlots(Item item) { }
 
-public override int GetFilledUISlots(Item item) { }
+	public override int GetFilledUISlots(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3490,16 +3490,16 @@ public class ItemModVehicleModule : ItemMod, VehicleModuleInformationPanel.IVehi
 	public int socketsTaken; 
 	public bool doNonUserSpawn; 
 
-public int SocketsTaken { get; }
+	public int SocketsTaken { get; }
 
 
-public int get_SocketsTaken() { }
+	public int get_SocketsTaken() { }
 
-public override int GetTotalUISlots(Item item) { }
+	public override int GetTotalUISlots(Item item) { }
 
-public override int GetFilledUISlots(Item item) { }
+	public override int GetFilledUISlots(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

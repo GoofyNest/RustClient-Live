@@ -5,7 +5,7 @@ public sealed class JobProducerTypeAttribute : Attribute // TypeDefIndex: 3309
 	private readonly Type <ProducerType>k__BackingField; 
 
 
-public void .ctor(Type producerType) { }
+	public void .ctor(Type producerType) { }
 
 }
 

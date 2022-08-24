@@ -2,16 +2,16 @@ public class SynchronizedClock // TypeDefIndex: 11399
 {
 	public List<SynchronizedClock.TimedEvent> events; 
 
-private static float CurrentTime { get; }
+	private static float CurrentTime { get; }
 
 
-private static float get_CurrentTime() { }
+	private static float get_CurrentTime() { }
 
-public void Add(float delta, float variance, Action<uint> action) { }
+	public void Add(float delta, float variance, Action<uint> action) { }
 
-public void Tick() { }
+	public void Tick() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

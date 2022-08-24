@@ -6,7 +6,7 @@ public class LazyAimProperties : ScriptableObject // TypeDefIndex: 9980
 	public float deadzoneAngle; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

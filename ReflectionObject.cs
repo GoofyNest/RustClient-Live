@@ -5,31 +5,31 @@ internal class ReflectionObject // TypeDefIndex: 5932
 	[CompilerGeneratedAttribute] 
 	private IDictionary<string, ReflectionMember> <Members>k__BackingField; 
 
-public ObjectConstructor<object> Creator { get; set; }
-public IDictionary<string, ReflectionMember> Members { get; set; }
+	public ObjectConstructor<object> Creator { get; set; }
+	public IDictionary<string, ReflectionMember> Members { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public ObjectConstructor<object> get_Creator() { }
+	public ObjectConstructor<object> get_Creator() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Creator(ObjectConstructor<object> value) { }
+	private void set_Creator(ObjectConstructor<object> value) { }
 
 	[CompilerGeneratedAttribute] 
-public IDictionary<string, ReflectionMember> get_Members() { }
+	public IDictionary<string, ReflectionMember> get_Members() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Members(IDictionary<string, ReflectionMember> value) { }
+	private void set_Members(IDictionary<string, ReflectionMember> value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public object GetValue(object target, string member) { }
+	public object GetValue(object target, string member) { }
 
-public Type GetType(string member) { }
+	public Type GetType(string member) { }
 
-public static ReflectionObject Create(Type t, string[] memberNames) { }
+	public static ReflectionObject Create(Type t, string[] memberNames) { }
 
-public static ReflectionObject Create(Type t, MethodBase creator, string[] memberNames) { }
+	public static ReflectionObject Create(Type t, MethodBase creator, string[] memberNames) { }
 
 }
 
@@ -38,9 +38,9 @@ private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 593
 	public Func<object> ctor; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal object <Create>b__0(object[] args) { }
+	internal object <Create>b__0(object[] args) { }
 
 }
 
@@ -49,9 +49,9 @@ private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 593
 	public MethodCall<object, object> call; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal object <Create>b__1(object target) { }
+	internal object <Create>b__1(object target) { }
 
 }
 
@@ -60,9 +60,9 @@ private sealed class ReflectionObject.<>c__DisplayClass13_2 // TypeDefIndex: 593
 	public MethodCall<object, object> call; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <Create>b__2(object target, object arg) { }
+	internal void <Create>b__2(object target, object arg) { }
 
 }
 

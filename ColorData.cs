@@ -8,30 +8,30 @@ internal struct ColorData // TypeDefIndex: 7700
 	private byte <Blue>k__BackingField; 
 
 	[JsonPropertyAttribute] 
-public byte Red { get; set; }
+	public byte Red { get; set; }
 	[JsonPropertyAttribute] 
-public byte Green { get; set; }
+	public byte Green { get; set; }
 	[JsonPropertyAttribute] 
-public byte Blue { get; set; }
+	public byte Blue { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public byte get_Red() { }
+	public byte get_Red() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Red(byte value) { }
+	public void set_Red(byte value) { }
 
 	[CompilerGeneratedAttribute] 
-public byte get_Green() { }
+	public byte get_Green() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Green(byte value) { }
+	public void set_Green(byte value) { }
 
 	[CompilerGeneratedAttribute] 
-public byte get_Blue() { }
+	public byte get_Blue() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Blue(byte value) { }
+	public void set_Blue(byte value) { }
 
 }
 

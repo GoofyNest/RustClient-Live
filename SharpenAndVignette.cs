@@ -14,7 +14,7 @@ public class SharpenAndVignette : PostProcessEffectSettings // TypeDefIndex: 102
 	public FloatParameter darkness; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

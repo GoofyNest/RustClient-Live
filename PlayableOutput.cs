@@ -5,13 +5,13 @@ public struct PlayableOutput : IEquatable<PlayableOutput> // TypeDefIndex: 3871
 
 
 	[VisibleToOtherModulesAttribute] 
-internal void .ctor(PlayableOutputHandle handle) { }
+	internal void .ctor(PlayableOutputHandle handle) { }
 
-public PlayableOutputHandle GetHandle() { }
+	public PlayableOutputHandle GetHandle() { }
 
-public bool Equals(PlayableOutput other) { }
+	public bool Equals(PlayableOutput other) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

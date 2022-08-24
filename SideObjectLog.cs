@@ -214,9 +214,9 @@ public class SideObjectLog // TypeDefIndex: 7248
 	public bool isUsedAsChild; 
 
 
-public void OODOOOQQCO(SideObject so) { }
+	public void OODOOOQQCO(SideObject so) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

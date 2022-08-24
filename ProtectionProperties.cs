@@ -8,27 +8,27 @@ public class ProtectionProperties : ScriptableObject // TypeDefIndex: 10750
 	public float[] amounts; 
 
 
-public void OnValidate() { }
+	public void OnValidate() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Add(float amount) { }
+	public void Add(float amount) { }
 
-public void Add(DamageType index, float amount) { }
+	public void Add(DamageType index, float amount) { }
 
-public void Add(ProtectionProperties other, float scale) { }
+	public void Add(ProtectionProperties other, float scale) { }
 
-public void Add(List<Item> items, HitArea area = -1) { }
+	public void Add(List<Item> items, HitArea area = -1) { }
 
-public void Multiply(float multiplier) { }
+	public void Multiply(float multiplier) { }
 
-public void Multiply(DamageType index, float multiplier) { }
+	public void Multiply(DamageType index, float multiplier) { }
 
-public void Scale(DamageTypeList damageList, float ProtectionAmount = 1) { }
+	public void Scale(DamageTypeList damageList, float ProtectionAmount = 1) { }
 
-public float Get(DamageType damageType) { }
+	public float Get(DamageType damageType) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

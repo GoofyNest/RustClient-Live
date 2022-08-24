@@ -5,10 +5,10 @@ internal static class ColorUtil // TypeDefIndex: 7649
 internal static class ColorUtil 
 
 	[ExtensionAttribute] 
-public static Color Scale(Color color, float factor) { }
+	public static Color Scale(Color color, float factor) { }
 
 	[ExtensionAttribute] 
-public static Color Scale(Color color, Vector3 factors) { }
+	public static Color Scale(Color color, Vector3 factors) { }
 
 }
 

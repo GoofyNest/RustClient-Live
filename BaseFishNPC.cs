@@ -3,21 +3,21 @@ public class BaseFishNPC : BaseNpc, IAIAttack, IAISenses // TypeDefIndex: 8324
 	private Option __menuOption_MenuDesignAI; 
 	protected BaseAIBrain<BaseFishNPC> brain; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.ShowIf] 
-public void MenuDesignAI(BasePlayer ply) { }
+	public void MenuDesignAI(BasePlayer ply) { }
 
-public bool CanDesignAI(BasePlayer player) { }
+	public bool CanDesignAI(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

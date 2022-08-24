@@ -10,13 +10,13 @@ public class DecorPatch // TypeDefIndex: 10332
 	private List<GameObject> spawns; 
 
 
-public void DestroyInstances() { }
+	public void DestroyInstances() { }
 
-public void .ctor(DecorSpawn decorSpawn, int i, int j) { }
+	public void .ctor(DecorSpawn decorSpawn, int i, int j) { }
 
-public bool Shift() { }
+	public bool Shift() { }
 
-public void Spawn() { }
+	public void Spawn() { }
 
 }
 

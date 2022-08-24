@@ -7,19 +7,19 @@ public class FoliageRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 
 	private MeshInstance batchInstance; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void Add() { }
+	public void Add() { }
 
-public void Remove() { }
+	public void Remove() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void AddBatch(FoliageGroup batchGroup, float lod, uint seed) { }
+	public void AddBatch(FoliageGroup batchGroup, float lod, uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

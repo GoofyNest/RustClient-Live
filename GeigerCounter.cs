@@ -5,9 +5,9 @@ public class GeigerCounter : AttackEntity // TypeDefIndex: 9464
 	private Transform attachmentBoneCache; 
 
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

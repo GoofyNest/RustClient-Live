@@ -3,17 +3,17 @@ public class VisualElementFocusChangeDirection : FocusChangeDirection // TypeDef
 	private static readonly VisualElementFocusChangeDirection s_Left; 
 	private static readonly VisualElementFocusChangeDirection s_Right; 
 
-public static FocusChangeDirection left { get; }
-public static FocusChangeDirection right { get; }
+	public static FocusChangeDirection left { get; }
+	public static FocusChangeDirection right { get; }
 
 
-public static FocusChangeDirection get_left() { }
+	public static FocusChangeDirection get_left() { }
 
-public static FocusChangeDirection get_right() { }
+	public static FocusChangeDirection get_right() { }
 
-protected void .ctor(int value) { }
+	protected void .ctor(int value) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

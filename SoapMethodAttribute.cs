@@ -7,17 +7,17 @@ public sealed class SoapMethodAttribute : SoapAttribute // TypeDefIndex: 1212
 	private bool _useAttribute; 
 	private string _namespace; 
 
-public override bool UseAttribute { get; }
-public override string XmlNamespace { get; }
+	public override bool UseAttribute { get; }
+	public override string XmlNamespace { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override bool get_UseAttribute() { }
+	public override bool get_UseAttribute() { }
 
-public override string get_XmlNamespace() { }
+	public override string get_XmlNamespace() { }
 
-internal override void SetReflectionObject(object reflectionObject) { }
+	internal override void SetReflectionObject(object reflectionObject) { }
 
 }
 

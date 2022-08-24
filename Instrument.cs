@@ -6,57 +6,57 @@ public class InstrumentRecording : IDisposable, Pool.IPooled, IProto // TypeDefI
 	public int forInstrument; 
 
 
-public static void ResetToPool(InstrumentRecording instance) { }
+	public static void ResetToPool(InstrumentRecording instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(InstrumentRecording instance) { }
+	public void CopyTo(InstrumentRecording instance) { }
 
-public InstrumentRecording Copy() { }
+	public InstrumentRecording Copy() { }
 
-public static InstrumentRecording Deserialize(Stream stream) { }
+	public static InstrumentRecording Deserialize(Stream stream) { }
 
-public static InstrumentRecording DeserializeLengthDelimited(Stream stream) { }
+	public static InstrumentRecording DeserializeLengthDelimited(Stream stream) { }
 
-public static InstrumentRecording DeserializeLength(Stream stream, int length) { }
+	public static InstrumentRecording DeserializeLength(Stream stream, int length) { }
 
-public static InstrumentRecording Deserialize(byte[] buffer) { }
+	public static InstrumentRecording Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, InstrumentRecording previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, InstrumentRecording previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static InstrumentRecording Deserialize(byte[] buffer, InstrumentRecording instance, bool isDelta = False) { }
+	public static InstrumentRecording Deserialize(byte[] buffer, InstrumentRecording instance, bool isDelta = False) { }
 
-public static InstrumentRecording Deserialize(Stream stream, InstrumentRecording instance, bool isDelta) { }
+	public static InstrumentRecording Deserialize(Stream stream, InstrumentRecording instance, bool isDelta) { }
 
-public static InstrumentRecording DeserializeLengthDelimited(Stream stream, InstrumentRecording instance, bool isDelta) { }
+	public static InstrumentRecording DeserializeLengthDelimited(Stream stream, InstrumentRecording instance, bool isDelta) { }
 
-public static InstrumentRecording DeserializeLength(Stream stream, int length, InstrumentRecording instance, bool isDelta) { }
+	public static InstrumentRecording DeserializeLength(Stream stream, int length, InstrumentRecording instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, InstrumentRecording instance, InstrumentRecording previous) { }
+	public static void SerializeDelta(Stream stream, InstrumentRecording instance, InstrumentRecording previous) { }
 
-public static void Serialize(Stream stream, InstrumentRecording instance) { }
+	public static void Serialize(Stream stream, InstrumentRecording instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(InstrumentRecording instance) { }
+	public static byte[] SerializeToBytes(InstrumentRecording instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, InstrumentRecording instance) { }
+	public static void SerializeLengthDelimited(Stream stream, InstrumentRecording instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -74,57 +74,57 @@ public class InstrumentRecordingNote : IDisposable, Pool.IPooled, IProto // Type
 	public bool hasPlayed; 
 
 
-public static void ResetToPool(InstrumentRecordingNote instance) { }
+	public static void ResetToPool(InstrumentRecordingNote instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(InstrumentRecordingNote instance) { }
+	public void CopyTo(InstrumentRecordingNote instance) { }
 
-public InstrumentRecordingNote Copy() { }
+	public InstrumentRecordingNote Copy() { }
 
-public static InstrumentRecordingNote Deserialize(Stream stream) { }
+	public static InstrumentRecordingNote Deserialize(Stream stream) { }
 
-public static InstrumentRecordingNote DeserializeLengthDelimited(Stream stream) { }
+	public static InstrumentRecordingNote DeserializeLengthDelimited(Stream stream) { }
 
-public static InstrumentRecordingNote DeserializeLength(Stream stream, int length) { }
+	public static InstrumentRecordingNote DeserializeLength(Stream stream, int length) { }
 
-public static InstrumentRecordingNote Deserialize(byte[] buffer) { }
+	public static InstrumentRecordingNote Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, InstrumentRecordingNote previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, InstrumentRecordingNote previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static InstrumentRecordingNote Deserialize(byte[] buffer, InstrumentRecordingNote instance, bool isDelta = False) { }
+	public static InstrumentRecordingNote Deserialize(byte[] buffer, InstrumentRecordingNote instance, bool isDelta = False) { }
 
-public static InstrumentRecordingNote Deserialize(Stream stream, InstrumentRecordingNote instance, bool isDelta) { }
+	public static InstrumentRecordingNote Deserialize(Stream stream, InstrumentRecordingNote instance, bool isDelta) { }
 
-public static InstrumentRecordingNote DeserializeLengthDelimited(Stream stream, InstrumentRecordingNote instance, bool isDelta) { }
+	public static InstrumentRecordingNote DeserializeLengthDelimited(Stream stream, InstrumentRecordingNote instance, bool isDelta) { }
 
-public static InstrumentRecordingNote DeserializeLength(Stream stream, int length, InstrumentRecordingNote instance, bool isDelta) { }
+	public static InstrumentRecordingNote DeserializeLength(Stream stream, int length, InstrumentRecordingNote instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, InstrumentRecordingNote instance, InstrumentRecordingNote previous) { }
+	public static void SerializeDelta(Stream stream, InstrumentRecordingNote instance, InstrumentRecordingNote previous) { }
 
-public static void Serialize(Stream stream, InstrumentRecordingNote instance) { }
+	public static void Serialize(Stream stream, InstrumentRecordingNote instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(InstrumentRecordingNote instance) { }
+	public static byte[] SerializeToBytes(InstrumentRecordingNote instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, InstrumentRecordingNote instance) { }
+	public static void SerializeLengthDelimited(Stream stream, InstrumentRecordingNote instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -136,57 +136,57 @@ public class InstrumentMidiBindings : IDisposable, Pool.IPooled, IProto // TypeD
 	public uint forInstrument; 
 
 
-public static void ResetToPool(InstrumentMidiBindings instance) { }
+	public static void ResetToPool(InstrumentMidiBindings instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(InstrumentMidiBindings instance) { }
+	public void CopyTo(InstrumentMidiBindings instance) { }
 
-public InstrumentMidiBindings Copy() { }
+	public InstrumentMidiBindings Copy() { }
 
-public static InstrumentMidiBindings Deserialize(Stream stream) { }
+	public static InstrumentMidiBindings Deserialize(Stream stream) { }
 
-public static InstrumentMidiBindings DeserializeLengthDelimited(Stream stream) { }
+	public static InstrumentMidiBindings DeserializeLengthDelimited(Stream stream) { }
 
-public static InstrumentMidiBindings DeserializeLength(Stream stream, int length) { }
+	public static InstrumentMidiBindings DeserializeLength(Stream stream, int length) { }
 
-public static InstrumentMidiBindings Deserialize(byte[] buffer) { }
+	public static InstrumentMidiBindings Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, InstrumentMidiBindings previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, InstrumentMidiBindings previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static InstrumentMidiBindings Deserialize(byte[] buffer, InstrumentMidiBindings instance, bool isDelta = False) { }
+	public static InstrumentMidiBindings Deserialize(byte[] buffer, InstrumentMidiBindings instance, bool isDelta = False) { }
 
-public static InstrumentMidiBindings Deserialize(Stream stream, InstrumentMidiBindings instance, bool isDelta) { }
+	public static InstrumentMidiBindings Deserialize(Stream stream, InstrumentMidiBindings instance, bool isDelta) { }
 
-public static InstrumentMidiBindings DeserializeLengthDelimited(Stream stream, InstrumentMidiBindings instance, bool isDelta) { }
+	public static InstrumentMidiBindings DeserializeLengthDelimited(Stream stream, InstrumentMidiBindings instance, bool isDelta) { }
 
-public static InstrumentMidiBindings DeserializeLength(Stream stream, int length, InstrumentMidiBindings instance, bool isDelta) { }
+	public static InstrumentMidiBindings DeserializeLength(Stream stream, int length, InstrumentMidiBindings instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, InstrumentMidiBindings instance, InstrumentMidiBindings previous) { }
+	public static void SerializeDelta(Stream stream, InstrumentMidiBindings instance, InstrumentMidiBindings previous) { }
 
-public static void Serialize(Stream stream, InstrumentMidiBindings instance) { }
+	public static void Serialize(Stream stream, InstrumentMidiBindings instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(InstrumentMidiBindings instance) { }
+	public static byte[] SerializeToBytes(InstrumentMidiBindings instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, InstrumentMidiBindings instance) { }
+	public static void SerializeLengthDelimited(Stream stream, InstrumentMidiBindings instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -200,70 +200,70 @@ public class InstrumentMidiBinding : IDisposable, Pool.IPooled, IProto // TypeDe
 	public int noteType; 
 
 
-public static void ResetToPool(InstrumentMidiBinding instance) { }
+	public static void ResetToPool(InstrumentMidiBinding instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(InstrumentMidiBinding instance) { }
+	public void CopyTo(InstrumentMidiBinding instance) { }
 
-public InstrumentMidiBinding Copy() { }
+	public InstrumentMidiBinding Copy() { }
 
-public static InstrumentMidiBinding Deserialize(Stream stream) { }
+	public static InstrumentMidiBinding Deserialize(Stream stream) { }
 
-public static InstrumentMidiBinding DeserializeLengthDelimited(Stream stream) { }
+	public static InstrumentMidiBinding DeserializeLengthDelimited(Stream stream) { }
 
-public static InstrumentMidiBinding DeserializeLength(Stream stream, int length) { }
+	public static InstrumentMidiBinding DeserializeLength(Stream stream, int length) { }
 
-public static InstrumentMidiBinding Deserialize(byte[] buffer) { }
+	public static InstrumentMidiBinding Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, InstrumentMidiBinding previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, InstrumentMidiBinding previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static InstrumentMidiBinding Deserialize(byte[] buffer, InstrumentMidiBinding instance, bool isDelta = False) { }
+	public static InstrumentMidiBinding Deserialize(byte[] buffer, InstrumentMidiBinding instance, bool isDelta = False) { }
 
-public static InstrumentMidiBinding Deserialize(Stream stream, InstrumentMidiBinding instance, bool isDelta) { }
+	public static InstrumentMidiBinding Deserialize(Stream stream, InstrumentMidiBinding instance, bool isDelta) { }
 
-public static InstrumentMidiBinding DeserializeLengthDelimited(Stream stream, InstrumentMidiBinding instance, bool isDelta) { }
+	public static InstrumentMidiBinding DeserializeLengthDelimited(Stream stream, InstrumentMidiBinding instance, bool isDelta) { }
 
-public static InstrumentMidiBinding DeserializeLength(Stream stream, int length, InstrumentMidiBinding instance, bool isDelta) { }
+	public static InstrumentMidiBinding DeserializeLength(Stream stream, int length, InstrumentMidiBinding instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, InstrumentMidiBinding instance, InstrumentMidiBinding previous) { }
+	public static void SerializeDelta(Stream stream, InstrumentMidiBinding instance, InstrumentMidiBinding previous) { }
 
-public static void Serialize(Stream stream, InstrumentMidiBinding instance) { }
+	public static void Serialize(Stream stream, InstrumentMidiBinding instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(InstrumentMidiBinding instance) { }
+	public static byte[] SerializeToBytes(InstrumentMidiBinding instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, InstrumentMidiBinding instance) { }
+	public static void SerializeLengthDelimited(Stream stream, InstrumentMidiBinding instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public sealed class InstrumentNameEvent : BaseTextEvent // TypeDefIndex: 7537
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string instrumentName) { }
+	public void .ctor(string instrumentName) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override MidiEvent CloneEvent() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 
@@ -278,43 +278,43 @@ public class InstrumentTool : HeldEntity // TypeDefIndex: 8586
 	private InstrumentViewmodel instrumentView; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void ClampPitch(ref float pitch) { }
+	public override void ClampPitch(ref float pitch) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override float GetMovementMultiplier() { }
+	public override float GetMovementMultiplier() { }
 
-protected virtual void LateUpdate() { }
+	protected virtual void LateUpdate() { }
 
-public override void OnDeployed() { }
+	public override void OnDeployed() { }
 
-private void OnAnimationSlotSet(InstrumentKeyController.AnimationSlot slot) { }
+	private void OnAnimationSlotSet(InstrumentKeyController.AnimationSlot slot) { }
 
-public override void OnHolstered() { }
+	public override void OnHolstered() { }
 
-protected override void ProcessPlayerModel(PlayerModel playerModel) { }
+	protected override void ProcessPlayerModel(PlayerModel playerModel) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-protected virtual void RemotePlayerDeploy(BasePlayer player) { }
+	protected virtual void RemotePlayerDeploy(BasePlayer player) { }
 
-protected virtual void RemotePlayerHolster(BasePlayer player) { }
+	protected virtual void RemotePlayerHolster(BasePlayer player) { }
 
-public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public override void ResetState() { }
-
-	[BaseEntity.RPC_Client] 
-private void Client_PlayNote(BaseEntity.RPCMessage msg) { }
+	public override void ResetState() { }
 
 	[BaseEntity.RPC_Client] 
-private void Client_StopNote(BaseEntity.RPCMessage msg) { }
+	private void Client_PlayNote(BaseEntity.RPCMessage msg) { }
 
-public override bool IsInstrument() { }
+	[BaseEntity.RPC_Client] 
+	private void Client_StopNote(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public override bool IsInstrument() { }
+
+	public void .ctor() { }
 
 }
 
@@ -327,11 +327,11 @@ public class InstrumentStateBehaviour : StateMachineBehaviour // TypeDefIndex: 8
 	public float AnimatorCrossfadeDuration; 
 
 
-public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+	public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -359,11 +359,11 @@ public class InstrumentViewmodel : MonoBehaviour // TypeDefIndex: 8743
 	private readonly int playedNoteHash; 
 
 
-public void UpdateSlots(InstrumentKeyController.AnimationSlot currentSlot, bool recentlyPlayed, bool playedNoteThisFrame) { }
+	public void UpdateSlots(InstrumentKeyController.AnimationSlot currentSlot, bool recentlyPlayed, bool playedNoteThisFrame) { }
 
-private void UpdateState(int param, bool state) { }
+	private void UpdateState(int param, bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -376,21 +376,21 @@ public class InstrumentToolGuitar : InstrumentTool // TypeDefIndex: 9467
 	private static readonly int deployHash; 
 
 
-protected override void LateUpdate() { }
+	protected override void LateUpdate() { }
 
-protected override void ProcessPlayerModel(PlayerModel playerModel) { }
+	protected override void ProcessPlayerModel(PlayerModel playerModel) { }
 
-public override void OnReliableEvent(string name) { }
+	public override void OnReliableEvent(string name) { }
 
-public void DeployBegin() { }
+	public void DeployBegin() { }
 
-public void DeployComplete() { }
+	public void DeployComplete() { }
 
-public override void OnSpawnedForWorkshopPreview() { }
+	public override void OnSpawnedForWorkshopPreview() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -403,7 +403,7 @@ public class InstrumentDebugInput : MonoBehaviour // TypeDefIndex: 9548
 	public SoundDefinition OverrideDefinition; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -443,28 +443,28 @@ public class InstrumentIKController : MonoBehaviour // TypeDefIndex: 9549
 	private float lastSetRightFootTime; 
 
 
-public void HoldHandsUpdate(InstrumentKeyController key) { }
+	public void HoldHandsUpdate(InstrumentKeyController key) { }
 
-public void UpdateIK(BasePlayer forPlayer) { }
+	public void UpdateIK(BasePlayer forPlayer) { }
 
-private Vector3 GetHandHeight(float noteTime) { }
+	private Vector3 GetHandHeight(float noteTime) { }
 
-private Vector3 GetWorldSpaceIkTarget(int target, InstrumentKeyController.IKType type, Vector3 localOffset) { }
+	private Vector3 GetWorldSpaceIkTarget(int target, InstrumentKeyController.IKType type, Vector3 localOffset) { }
 
-private Transform GetHandTransform(int target, InstrumentKeyController.IKType type) { }
+	private Transform GetHandTransform(int target, InstrumentKeyController.IKType type) { }
 
-private Transform GetHandRotationTransform(int target, InstrumentKeyController.IKType type) { }
+	private Transform GetHandRotationTransform(int target, InstrumentKeyController.IKType type) { }
 
-public void SetIkTarget(InstrumentKeyController.IKType type, int target) { }
+	public void SetIkTarget(InstrumentKeyController.IKType type, int target) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class InstrumentIKTargetAttribute : PropertyAttribute // TypeDefIndex: 9550
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -493,7 +493,7 @@ public class InstrumentKeyController : MonoBehaviour // TypeDefIndex: 9551
 	private InstrumentRecording playingRecording; 
 	private float playbackElapsedTime; 
 	private List<int> stoppedNotes; 
-public const float DEFAULT_NOTE_VELOCITY = 1;
+	public const float DEFAULT_NOTE_VELOCITY = 1;
 	public NoteBindingCollection Bindings; 
 	public InstrumentKeyController.NoteBinding[] NoteBindings; 
 	public Transform[] NoteSoundPositions; 
@@ -503,8 +503,8 @@ public const float DEFAULT_NOTE_VELOCITY = 1;
 	public Animator InstrumentAnimator; 
 	public BaseEntity RPCHandler; 
 	public uint overrideAchievementId; 
-private const string ALL_INSTRUMENTS_ACHIEVEMENT_NAME = "PLAY_ALL_INSTRUMENTS";
-private const int INSTRUMENT_ACHIEVEMENT_COUNT = 11;
+	private const string ALL_INSTRUMENTS_ACHIEVEMENT_NAME = "PLAY_ALL_INSTRUMENTS";
+	private const int INSTRUMENT_ACHIEVEMENT_COUNT = 11;
 	private static HashSet<uint> playedInstruments; 
 	private InstrumentKeyController.NoteBinding workerBinding; 
 	private BasePlayer midiPlayer; 
@@ -526,144 +526,144 @@ private const int INSTRUMENT_ACHIEVEMENT_COUNT = 11;
 	[CompilerGeneratedAttribute] 
 	private bool <PlayedNoteThisFrame>k__BackingField; 
 
-public MicrophoneStandIOEntity currentReceiver { get; set; }
-public bool FullKeyboardMode { get; set; }
-public InstrumentKeyController.AnimationSlot CurrentAnimation { get; set; }
-public bool RecentlyPlayedNote { get; }
-private bool HeldByLocalPlayer { get; }
-private bool IsPlaying { get; }
-private int CurrentlyPlayingNotes { get; }
-public bool PlayedNoteThisFrame { get; set; }
+	public MicrophoneStandIOEntity currentReceiver { get; set; }
+	public bool FullKeyboardMode { get; set; }
+	public InstrumentKeyController.AnimationSlot CurrentAnimation { get; set; }
+	public bool RecentlyPlayedNote { get; }
+	private bool HeldByLocalPlayer { get; }
+	private bool IsPlaying { get; }
+	private int CurrentlyPlayingNotes { get; }
+	public bool PlayedNoteThisFrame { get; set; }
 
 
-private void DisableProps() { }
+	private void DisableProps() { }
 
-private void UpdateHeldProps(BasePlayer forPlayer) { }
+	private void UpdateHeldProps(BasePlayer forPlayer) { }
 
-private void RunInstrumentAnimation(BasePlayer forPlayer) { }
+	private void RunInstrumentAnimation(BasePlayer forPlayer) { }
 
-private void SetAnimationSlot(InstrumentKeyController.AnimationSlot slot, PlayerModel forPlayer) { }
+	private void SetAnimationSlot(InstrumentKeyController.AnimationSlot slot, PlayerModel forPlayer) { }
 
-private int GetAnimationSlotHash(InstrumentKeyController.AnimationSlot slot) { }
-
-	[CompilerGeneratedAttribute] 
-public MicrophoneStandIOEntity get_currentReceiver() { }
+	private int GetAnimationSlotHash(InstrumentKeyController.AnimationSlot slot) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_currentReceiver(MicrophoneStandIOEntity value) { }
-
-public bool SetCurrentReceiver(MicrophoneStandIOEntity receiver) { }
-
-public void ClearReceiver() { }
-
-public void SubscribeToMidi(BasePlayer forPlayer) { }
-
-public void UpdateMidiBindings() { }
-
-public void UnsubscribeFromMidi() { }
-
-public void ResetState() { }
-
-private void PlayNoteViaMIDI(int noteIndex, float velocity) { }
-
-private void StopNoteViaMIDI(int noteIndex) { }
-
-private void NoteOnDelegate(MidiChannel channel, int note, float velocity) { }
-
-private void NoteOffDelegate(MidiChannel channel, int note) { }
-
-private void KnobDelegate(MidiChannel channel, int knobNumber, float knobValue) { }
-
-private bool ApplyMidiRebinding(int inNote, out int index) { }
-
-private void ConvertMidiNoteToIndex(int note, out int index) { }
-
-public void StartRecording(string fileName) { }
-
-public void StopRecording() { }
-
-private void RecordNoteStart(Notes note, int octave, float velocity, InstrumentKeyController.NoteType type, bool hold) { }
-
-private void RecordNoteStop(Notes note, int octave, InstrumentKeyController.NoteType type) { }
-
-public void PlayRecording(InstrumentRecording recording) { }
-
-private void UpdatePlayingRecording(BasePlayer forPlayer) { }
-
-private void StopPlayingRecording() { }
+	public MicrophoneStandIOEntity get_currentReceiver() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_FullKeyboardMode() { }
+	private void set_currentReceiver(MicrophoneStandIOEntity value) { }
+
+	public bool SetCurrentReceiver(MicrophoneStandIOEntity receiver) { }
+
+	public void ClearReceiver() { }
+
+	public void SubscribeToMidi(BasePlayer forPlayer) { }
+
+	public void UpdateMidiBindings() { }
+
+	public void UnsubscribeFromMidi() { }
+
+	public void ResetState() { }
+
+	private void PlayNoteViaMIDI(int noteIndex, float velocity) { }
+
+	private void StopNoteViaMIDI(int noteIndex) { }
+
+	private void NoteOnDelegate(MidiChannel channel, int note, float velocity) { }
+
+	private void NoteOffDelegate(MidiChannel channel, int note) { }
+
+	private void KnobDelegate(MidiChannel channel, int knobNumber, float knobValue) { }
+
+	private bool ApplyMidiRebinding(int inNote, out int index) { }
+
+	private void ConvertMidiNoteToIndex(int note, out int index) { }
+
+	public void StartRecording(string fileName) { }
+
+	public void StopRecording() { }
+
+	private void RecordNoteStart(Notes note, int octave, float velocity, InstrumentKeyController.NoteType type, bool hold) { }
+
+	private void RecordNoteStop(Notes note, int octave, InstrumentKeyController.NoteType type) { }
+
+	public void PlayRecording(InstrumentRecording recording) { }
+
+	private void UpdatePlayingRecording(BasePlayer forPlayer) { }
+
+	private void StopPlayingRecording() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_FullKeyboardMode(bool value) { }
+	public bool get_FullKeyboardMode() { }
 
 	[CompilerGeneratedAttribute] 
-public InstrumentKeyController.AnimationSlot get_CurrentAnimation() { }
+	private void set_FullKeyboardMode(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentAnimation(InstrumentKeyController.AnimationSlot value) { }
-
-public bool get_RecentlyPlayedNote() { }
-
-private bool get_HeldByLocalPlayer() { }
-
-private bool get_IsPlaying() { }
-
-private int get_CurrentlyPlayingNotes() { }
-
-public void SetFullKeyboardMode(bool state) { }
-
-public void OnInput(BasePlayer player) { }
-
-private void OnDisable() { }
-
-public void InUseUpdate(BasePlayer forPlayer) { }
-
-public void LateUpdateInstrument(BasePlayer forPlayer) { }
-
-public void PlayNoteRPC(BaseEntity.RPCMessage msg, bool isLocal) { }
-
-public bool PlayNote(Notes note, InstrumentKeyController.NoteType type, int octave, float velocity, bool isLocal) { }
-
-public bool StopNote(Notes note, InstrumentKeyController.NoteType type, int octave) { }
-
-public void StopNoteRPC(BaseEntity.RPCMessage msg, bool isLocal) { }
-
-public void StopAllNotes(bool blockUntilRelease) { }
-
-public void StopOldestNote(bool blockUntilRelease, bool isVoiceStealing = False) { }
-
-public void OnClientBeginUse(BasePlayer player) { }
-
-public void SetupBindings() { }
-
-public void OnClientEndUse(BasePlayer player) { }
-
-public void OnEnable() { }
-
-private GameObject GetNoteSoundPosition(int index) { }
+	public InstrumentKeyController.AnimationSlot get_CurrentAnimation() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_PlayedNoteThisFrame() { }
+	private void set_CurrentAnimation(InstrumentKeyController.AnimationSlot value) { }
+
+	public bool get_RecentlyPlayedNote() { }
+
+	private bool get_HeldByLocalPlayer() { }
+
+	private bool get_IsPlaying() { }
+
+	private int get_CurrentlyPlayingNotes() { }
+
+	public void SetFullKeyboardMode(bool state) { }
+
+	public void OnInput(BasePlayer player) { }
+
+	private void OnDisable() { }
+
+	public void InUseUpdate(BasePlayer forPlayer) { }
+
+	public void LateUpdateInstrument(BasePlayer forPlayer) { }
+
+	public void PlayNoteRPC(BaseEntity.RPCMessage msg, bool isLocal) { }
+
+	public bool PlayNote(Notes note, InstrumentKeyController.NoteType type, int octave, float velocity, bool isLocal) { }
+
+	public bool StopNote(Notes note, InstrumentKeyController.NoteType type, int octave) { }
+
+	public void StopNoteRPC(BaseEntity.RPCMessage msg, bool isLocal) { }
+
+	public void StopAllNotes(bool blockUntilRelease) { }
+
+	public void StopOldestNote(bool blockUntilRelease, bool isVoiceStealing = False) { }
+
+	public void OnClientBeginUse(BasePlayer player) { }
+
+	public void SetupBindings() { }
+
+	public void OnClientEndUse(BasePlayer player) { }
+
+	public void OnEnable() { }
+
+	private GameObject GetNoteSoundPosition(int index) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_PlayedNoteThisFrame(bool value) { }
-
-public void OnPlayerPlayedNote(Notes note, InstrumentKeyController.NoteType type, int octave, float velocity, BasePlayer player) { }
-
-private void LoadPlayedInstruments() { }
-
-private void SavePlayedInstruments() { }
-
-public void OnPlayerStoppedNote(Notes note, InstrumentKeyController.NoteType type, int octave) { }
-
-public void .ctor() { }
-
-private static void .cctor() { }
+	public bool get_PlayedNoteThisFrame() { }
 
 	[CompilerGeneratedAttribute] 
-private void <SetFullKeyboardMode>b__98_0() { }
+	private void set_PlayedNoteThisFrame(bool value) { }
+
+	public void OnPlayerPlayedNote(Notes note, InstrumentKeyController.NoteType type, int octave, float velocity, BasePlayer player) { }
+
+	private void LoadPlayedInstruments() { }
+
+	private void SavePlayedInstruments() { }
+
+	public void OnPlayerStoppedNote(Notes note, InstrumentKeyController.NoteType type, int octave) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
+
+	[CompilerGeneratedAttribute] 
+	private void <SetFullKeyboardMode>b__98_0() { }
 
 }
 
@@ -678,71 +678,71 @@ public struct InstrumentKeyController.NoteBinding // TypeDefIndex: 9552
 	public bool MidiOn; 
 	public bool MouseOn; 
 
-public bool Playing { get; }
-public float PlayingDuration { get; }
-public bool RecentlyPlayedNote { get; }
+	public bool Playing { get; }
+	public float PlayingDuration { get; }
+	public bool RecentlyPlayedNote { get; }
 
 
-public bool get_Playing() { }
+	public bool get_Playing() { }
 
-public float get_PlayingDuration() { }
+	public float get_PlayingDuration() { }
 
-public bool get_RecentlyPlayedNote() { }
+	public bool get_RecentlyPlayedNote() { }
 
-private bool ButtonIsDown(Notes note, InstrumentKeyController.NoteType type) { }
+	private bool ButtonIsDown(Notes note, InstrumentKeyController.NoteType type) { }
 
-private bool ButtonJustPressed(Notes note, InstrumentKeyController.NoteType type) { }
+	private bool ButtonJustPressed(Notes note, InstrumentKeyController.NoteType type) { }
 
-public void Update(BasePlayer player, InstrumentKeyController keyController, int octave, NoteBindingCollection noteCollection, NoteBindingCollection.NoteData data) { }
+	public void Update(BasePlayer player, InstrumentKeyController keyController, int octave, NoteBindingCollection noteCollection, NoteBindingCollection.NoteData data) { }
 
-public bool PlaySound(bool isLocal, float velocity, InstrumentKeyController keyController, NoteBindingCollection noteCollection, NoteBindingCollection.NoteData data) { }
+	public bool PlaySound(bool isLocal, float velocity, InstrumentKeyController keyController, NoteBindingCollection noteCollection, NoteBindingCollection.NoteData data) { }
 
-public static void SetupSound(bool isLocal, float velocity, NoteBindingCollection noteCollection, Sound forSound) { }
+	public static void SetupSound(bool isLocal, float velocity, NoteBindingCollection noteCollection, Sound forSound) { }
 
-public bool StopPlayingNote(InstrumentKeyController keyController, bool blockUntilKeyRelease = False, bool isVoiceStealing = False) { }
+	public bool StopPlayingNote(InstrumentKeyController keyController, bool blockUntilKeyRelease = False, bool isVoiceStealing = False) { }
 
-public void BlockKeyUntilRelease() { }
+	public void BlockKeyUntilRelease() { }
 
-private Sound CreateSound(InstrumentKeyController keyController, NoteBindingCollection.NoteData data) { }
+	private Sound CreateSound(InstrumentKeyController keyController, NoteBindingCollection.NoteData data) { }
 
 }
 
 public enum InstrumentKeyController.IKType // TypeDefIndex: 9553
 {
 	public int value__; 
-public const InstrumentKeyController.IKType LeftHand = 0;
-public const InstrumentKeyController.IKType RightHand = 1;
-public const InstrumentKeyController.IKType RightFoot = 2;
+	public const InstrumentKeyController.IKType LeftHand = 0;
+	public const InstrumentKeyController.IKType RightHand = 1;
+	public const InstrumentKeyController.IKType RightFoot = 2;
 
 }
 
 public enum InstrumentKeyController.NoteType // TypeDefIndex: 9554
 {
 	public int value__; 
-public const InstrumentKeyController.NoteType Regular = 0;
-public const InstrumentKeyController.NoteType Sharp = 1;
+	public const InstrumentKeyController.NoteType Regular = 0;
+	public const InstrumentKeyController.NoteType Sharp = 1;
 
 }
 
 public enum InstrumentKeyController.InstrumentType // TypeDefIndex: 9555
 {
 	public int value__; 
-public const InstrumentKeyController.InstrumentType Note = 0;
-public const InstrumentKeyController.InstrumentType Hold = 1;
+	public const InstrumentKeyController.InstrumentType Note = 0;
+	public const InstrumentKeyController.InstrumentType Hold = 1;
 
 }
 
 public enum InstrumentKeyController.AnimationSlot // TypeDefIndex: 9556
 {
 	public int value__; 
-public const InstrumentKeyController.AnimationSlot None = 0;
-public const InstrumentKeyController.AnimationSlot One = 1;
-public const InstrumentKeyController.AnimationSlot Two = 2;
-public const InstrumentKeyController.AnimationSlot Three = 3;
-public const InstrumentKeyController.AnimationSlot Four = 4;
-public const InstrumentKeyController.AnimationSlot Five = 5;
-public const InstrumentKeyController.AnimationSlot Six = 6;
-public const InstrumentKeyController.AnimationSlot Seven = 7;
+	public const InstrumentKeyController.AnimationSlot None = 0;
+	public const InstrumentKeyController.AnimationSlot One = 1;
+	public const InstrumentKeyController.AnimationSlot Two = 2;
+	public const InstrumentKeyController.AnimationSlot Three = 3;
+	public const InstrumentKeyController.AnimationSlot Four = 4;
+	public const InstrumentKeyController.AnimationSlot Five = 5;
+	public const InstrumentKeyController.AnimationSlot Six = 6;
+	public const InstrumentKeyController.AnimationSlot Seven = 7;
 
 }
 
@@ -753,7 +753,7 @@ public struct InstrumentKeyController.KeySet // TypeDefIndex: 9557
 	public int OctaveShift; 
 
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 
@@ -773,14 +773,14 @@ public struct InstrumentKeyController.IKNoteTarget // TypeDefIndex: 9559
 
 public abstract class InstrumentTip : BaseTip // TypeDefIndex: 11605
 {
-public InstrumentKeyController Instrument { get; }
+	public InstrumentKeyController Instrument { get; }
 
 
-public InstrumentKeyController get_Instrument() { }
+	public InstrumentKeyController get_Instrument() { }
 
-public bool IsKeypadHostingMusicBinds() { }
+	public bool IsKeypadHostingMusicBinds() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

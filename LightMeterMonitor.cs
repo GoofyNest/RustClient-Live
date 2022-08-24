@@ -5,11 +5,11 @@ public sealed class LightMeterMonitor : Monitor // TypeDefIndex: 11815
 	public bool showCurves; 
 
 
-internal override bool ShaderResourcesAvailable(PostProcessRenderContext context) { }
+	internal override bool ShaderResourcesAvailable(PostProcessRenderContext context) { }
 
-internal override void Render(PostProcessRenderContext context) { }
+	internal override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -10,44 +10,44 @@ public class Logger : ILogger, ILogHandler // TypeDefIndex: 3458
 	[DebuggerBrowsableAttribute] 
 	private LogType <filterLogType>k__BackingField; 
 
-public ILogHandler logHandler { get; set; }
-public bool logEnabled { get; set; }
-public LogType filterLogType { get; set; }
+	public ILogHandler logHandler { get; set; }
+	public bool logEnabled { get; set; }
+	public LogType filterLogType { get; set; }
 
 
-public void .ctor(ILogHandler logHandler) { }
-
-	[CompilerGeneratedAttribute] 
-public ILogHandler get_logHandler() { }
+	public void .ctor(ILogHandler logHandler) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_logHandler(ILogHandler value) { }
+	public ILogHandler get_logHandler() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_logEnabled() { }
+	public void set_logHandler(ILogHandler value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_logEnabled(bool value) { }
+	public bool get_logEnabled() { }
 
 	[CompilerGeneratedAttribute] 
-public LogType get_filterLogType() { }
+	public void set_logEnabled(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_filterLogType(LogType value) { }
+	public LogType get_filterLogType() { }
 
-public bool IsLogTypeAllowed(LogType logType) { }
+	[CompilerGeneratedAttribute] 
+	public void set_filterLogType(LogType value) { }
 
-private static string GetString(object message) { }
+	public bool IsLogTypeAllowed(LogType logType) { }
 
-public void Log(LogType logType, object message) { }
+	private static string GetString(object message) { }
 
-public void Log(LogType logType, object message, Object context) { }
+	public void Log(LogType logType, object message) { }
 
-public void LogFormat(LogType logType, string format, object[] args) { }
+	public void Log(LogType logType, object message, Object context) { }
 
-public void LogFormat(LogType logType, Object context, string format, object[] args) { }
+	public void LogFormat(LogType logType, string format, object[] args) { }
 
-public void LogException(Exception exception, Object context) { }
+	public void LogFormat(LogType logType, Object context, string format, object[] args) { }
+
+	public void LogException(Exception exception, Object context) { }
 
 }
 

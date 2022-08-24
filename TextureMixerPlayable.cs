@@ -3,9 +3,9 @@ public struct TextureMixerPlayable : IEquatable<TextureMixerPlayable> // TypeDef
 	private PlayableHandle m_Handle; 
 
 
-public PlayableHandle GetHandle() { }
+	public PlayableHandle GetHandle() { }
 
-public bool Equals(TextureMixerPlayable other) { }
+	public bool Equals(TextureMixerPlayable other) { }
 
 }
 

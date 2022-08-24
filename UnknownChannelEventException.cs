@@ -6,7 +6,7 @@ public sealed class UnknownChannelEventException : MidiException // TypeDefIndex
 	private readonly FourBitNumber <StatusByte>k__BackingField; 
 
 
-internal void .ctor(FourBitNumber statusByte, FourBitNumber channel) { }
+	internal void .ctor(FourBitNumber statusByte, FourBitNumber channel) { }
 
 }
 

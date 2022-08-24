@@ -5,17 +5,17 @@ public class FirstPersonEffect : MonoBehaviour, IEffect, IPrefabPreProcess // Ty
 	public EffectParentToWeaponBone parentToWeaponComponent; 
 
 
-private BaseViewModel GetViewModel(Effect effect) { }
+	private BaseViewModel GetViewModel(Effect effect) { }
 
-public virtual void SetupEffect(Effect effect) { }
+	public virtual void SetupEffect(Effect effect) { }
 
-private void MakeThirdPerson() { }
+	private void MakeThirdPerson() { }
 
-private void MakeFirstPerson() { }
+	private void MakeFirstPerson() { }
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

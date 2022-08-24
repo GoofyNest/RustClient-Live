@@ -9,7 +9,7 @@ public static class PointerId // TypeDefIndex: 4688
 	public static readonly int penPointerCount; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

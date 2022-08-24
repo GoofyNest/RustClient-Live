@@ -15,29 +15,29 @@ public class CullingVolume : MonoBehaviour, IClientComponent // TypeDefIndex: 98
 	private float lastSeen; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void Start() { }
+	protected void Start() { }
 
-private void UpdateBounds() { }
+	private void UpdateBounds() { }
 
-private void UpdateTrigger() { }
+	private void UpdateTrigger() { }
 
-private void UpdateComponents() { }
+	private void UpdateComponents() { }
 
-private void UpdateLights() { }
+	private void UpdateLights() { }
 
-protected void OnDrawGizmosSelected() { }
+	protected void OnDrawGizmosSelected() { }
 
-public void MarkSeen(bool recursive = True) { }
+	public void MarkSeen(bool recursive = True) { }
 
-public bool UpdateVisible(bool recursive = True) { }
+	public bool UpdateVisible(bool recursive = True) { }
 
-private bool IsVisible() { }
+	private bool IsVisible() { }
 
-private void SetVisible(bool state) { }
+	private void SetVisible(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

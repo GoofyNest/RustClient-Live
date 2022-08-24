@@ -5,13 +5,13 @@ public class BenchmarkTimer : IDisposable // TypeDefIndex: 6180
 	private Stopwatch stopwatch; 
 
 
-public static BenchmarkTimer New(string name) { }
+	public static BenchmarkTimer New(string name) { }
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

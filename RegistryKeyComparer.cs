@@ -1,11 +1,11 @@
 internal class RegistryKeyComparer : IEqualityComparer // TypeDefIndex: 107
 {
 
-public bool Equals(object x, object y) { }
+	public bool Equals(object x, object y) { }
 
-public int GetHashCode(object obj) { }
+	public int GetHashCode(object obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

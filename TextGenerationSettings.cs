@@ -20,11 +20,11 @@ public struct TextGenerationSettings // TypeDefIndex: 3951
 	public bool generateOutOfBounds; 
 
 
-private bool CompareColors(Color left, Color right) { }
+	private bool CompareColors(Color left, Color right) { }
 
-private bool CompareVector2(Vector2 left, Vector2 right) { }
+	private bool CompareVector2(Vector2 left, Vector2 right) { }
 
-public bool Equals(TextGenerationSettings other) { }
+	public bool Equals(TextGenerationSettings other) { }
 
 }
 

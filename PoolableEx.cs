@@ -2,13 +2,13 @@ public static class PoolableEx // TypeDefIndex: 11419
 {
 
 	[ExtensionAttribute] 
-public static bool SupportsPoolingInParent(GameObject gameObject) { }
+	public static bool SupportsPoolingInParent(GameObject gameObject) { }
 
 	[ExtensionAttribute] 
-public static bool SupportsPooling(GameObject gameObject) { }
+	public static bool SupportsPooling(GameObject gameObject) { }
 
 	[ExtensionAttribute] 
-public static void AwakeFromInstantiate(GameObject gameObject) { }
+	public static void AwakeFromInstantiate(GameObject gameObject) { }
 
 }
 

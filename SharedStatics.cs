@@ -4,13 +4,13 @@ internal sealed class SharedStatics // TypeDefIndex: 298
 	private Tokenizer.StringMaker _maker; 
 
 
-private void .ctor() { }
+	private void .ctor() { }
 
-public static Tokenizer.StringMaker GetSharedStringMaker() { }
+	public static Tokenizer.StringMaker GetSharedStringMaker() { }
 
-public static void ReleaseSharedStringMaker(ref Tokenizer.StringMaker maker) { }
+	public static void ReleaseSharedStringMaker(ref Tokenizer.StringMaker maker) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

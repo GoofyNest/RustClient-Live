@@ -24,13 +24,13 @@ public class Antialiasing : PostEffectsBase // TypeDefIndex: 8150
 	private Material materialFXAAIII; 
 
 
-public Material CurrentAAMaterial() { }
+	public Material CurrentAAMaterial() { }
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

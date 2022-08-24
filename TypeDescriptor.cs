@@ -16,94 +16,94 @@ public sealed class TypeDescriptor // TypeDefIndex: 2758
 	private static RefreshEventHandler Refreshed; 
 
 	[EditorBrowsableAttribute] 
-public static Type ComObjectType { get; }
+	public static Type ComObjectType { get; }
 	[EditorBrowsableAttribute] 
-public static Type InterfaceType { get; }
-internal static int MetadataVersion { get; }
+	public static Type InterfaceType { get; }
+	internal static int MetadataVersion { get; }
 
 
-public static Type get_ComObjectType() { }
+	public static Type get_ComObjectType() { }
 
-public static Type get_InterfaceType() { }
+	public static Type get_InterfaceType() { }
 
-internal static int get_MetadataVersion() { }
-
-	[EditorBrowsableAttribute] 
-public static void AddProvider(TypeDescriptionProvider provider, Type type) { }
-
-private static void CheckDefaultProvider(Type type) { }
-
-public static object CreateInstance(IServiceProvider provider, Type objectType, Type[] argTypes, object[] args) { }
-
-private static ArrayList FilterMembers(IList members, Attribute[] attributes) { }
+	internal static int get_MetadataVersion() { }
 
 	[EditorBrowsableAttribute] 
-public static object GetAssociation(Type type, object primary) { }
+	public static void AddProvider(TypeDescriptionProvider provider, Type type) { }
 
-public static AttributeCollection GetAttributes(Type componentType) { }
+	private static void CheckDefaultProvider(Type type) { }
 
-public static AttributeCollection GetAttributes(object component) { }
+	public static object CreateInstance(IServiceProvider provider, Type objectType, Type[] argTypes, object[] args) { }
 
-	[EditorBrowsableAttribute] 
-public static AttributeCollection GetAttributes(object component, bool noCustomTypeDesc) { }
-
-internal static IDictionary GetCache(object instance) { }
-
-public static TypeConverter GetConverter(Type type) { }
-
-internal static ICustomTypeDescriptor GetDescriptor(Type type, string typeName) { }
-
-internal static ICustomTypeDescriptor GetDescriptor(object component, bool noCustomTypeDesc) { }
-
-internal static ICustomTypeDescriptor GetExtendedDescriptor(object component) { }
-
-private static string GetExtenderCollisionSuffix(MemberDescriptor member) { }
-
-private static Type GetNodeForBaseType(Type searchType) { }
-
-public static PropertyDescriptorCollection GetProperties(object component) { }
+	private static ArrayList FilterMembers(IList members, Attribute[] attributes) { }
 
 	[EditorBrowsableAttribute] 
-public static PropertyDescriptorCollection GetProperties(object component, bool noCustomTypeDesc) { }
+	public static object GetAssociation(Type type, object primary) { }
 
-private static PropertyDescriptorCollection GetPropertiesImpl(object component, Attribute[] attributes, bool noCustomTypeDesc, bool noAttributes) { }
+	public static AttributeCollection GetAttributes(Type componentType) { }
 
-internal static TypeDescriptionProvider GetProviderRecursive(Type type) { }
+	public static AttributeCollection GetAttributes(object component) { }
 
 	[EditorBrowsableAttribute] 
-public static Type GetReflectionType(Type type) { }
+	public static AttributeCollection GetAttributes(object component, bool noCustomTypeDesc) { }
 
-private static TypeDescriptor.TypeDescriptionNode NodeFor(Type type) { }
+	internal static IDictionary GetCache(object instance) { }
 
-private static TypeDescriptor.TypeDescriptionNode NodeFor(Type type, bool createDelegator) { }
+	public static TypeConverter GetConverter(Type type) { }
 
-private static TypeDescriptor.TypeDescriptionNode NodeFor(object instance) { }
+	internal static ICustomTypeDescriptor GetDescriptor(Type type, string typeName) { }
 
-private static TypeDescriptor.TypeDescriptionNode NodeFor(object instance, bool createDelegator) { }
+	internal static ICustomTypeDescriptor GetDescriptor(object component, bool noCustomTypeDesc) { }
 
-private static ICollection PipelineAttributeFilter(int pipelineType, ICollection members, Attribute[] filter, object instance, IDictionary cache) { }
+	internal static ICustomTypeDescriptor GetExtendedDescriptor(object component) { }
 
-private static ICollection PipelineFilter(int pipelineType, ICollection members, object instance, IDictionary cache) { }
+	private static string GetExtenderCollisionSuffix(MemberDescriptor member) { }
 
-private static ICollection PipelineInitialize(int pipelineType, ICollection members, IDictionary cache) { }
+	private static Type GetNodeForBaseType(Type searchType) { }
 
-private static ICollection PipelineMerge(int pipelineType, ICollection primary, ICollection secondary, object instance, IDictionary cache) { }
+	public static PropertyDescriptorCollection GetProperties(object component) { }
 
-private static void RaiseRefresh(object component) { }
+	[EditorBrowsableAttribute] 
+	public static PropertyDescriptorCollection GetProperties(object component, bool noCustomTypeDesc) { }
 
-private static void RaiseRefresh(Type type) { }
+	private static PropertyDescriptorCollection GetPropertiesImpl(object component, Attribute[] attributes, bool noCustomTypeDesc, bool noAttributes) { }
 
-public static void Refresh(object component) { }
+	internal static TypeDescriptionProvider GetProviderRecursive(Type type) { }
 
-private static void Refresh(object component, bool refreshReflectionProvider) { }
+	[EditorBrowsableAttribute] 
+	public static Type GetReflectionType(Type type) { }
 
-public static void Refresh(Type type) { }
+	private static TypeDescriptor.TypeDescriptionNode NodeFor(Type type) { }
 
-private static bool ShouldHideMember(MemberDescriptor member, Attribute attribute) { }
+	private static TypeDescriptor.TypeDescriptionNode NodeFor(Type type, bool createDelegator) { }
 
-public static void SortDescriptorArray(IList infos) { }
+	private static TypeDescriptor.TypeDescriptionNode NodeFor(object instance) { }
 
-private static void .cctor() { }
+	private static TypeDescriptor.TypeDescriptionNode NodeFor(object instance, bool createDelegator) { }
+
+	private static ICollection PipelineAttributeFilter(int pipelineType, ICollection members, Attribute[] filter, object instance, IDictionary cache) { }
+
+	private static ICollection PipelineFilter(int pipelineType, ICollection members, object instance, IDictionary cache) { }
+
+	private static ICollection PipelineInitialize(int pipelineType, ICollection members, IDictionary cache) { }
+
+	private static ICollection PipelineMerge(int pipelineType, ICollection primary, ICollection secondary, object instance, IDictionary cache) { }
+
+	private static void RaiseRefresh(object component) { }
+
+	private static void RaiseRefresh(Type type) { }
+
+	public static void Refresh(object component) { }
+
+	private static void Refresh(object component, bool refreshReflectionProvider) { }
+
+	public static void Refresh(Type type) { }
+
+	private static bool ShouldHideMember(MemberDescriptor member, Attribute attribute) { }
+
+	public static void SortDescriptorArray(IList infos) { }
+
+	private static void .cctor() { }
 
 }
 
@@ -113,9 +113,9 @@ private sealed class TypeDescriptor.AttributeFilterCacheItem // TypeDefIndex: 27
 	internal ICollection FilteredMembers; 
 
 
-internal void .ctor(Attribute[] filter, ICollection filteredMembers) { }
+	internal void .ctor(Attribute[] filter, ICollection filteredMembers) { }
 
-internal bool IsValid(Attribute[] filter) { }
+	internal bool IsValid(Attribute[] filter) { }
 
 }
 
@@ -125,9 +125,9 @@ private sealed class TypeDescriptor.FilterCacheItem // TypeDefIndex: 2760
 	internal ICollection FilteredMembers; 
 
 
-internal void .ctor(ITypeDescriptorFilterService filterService, ICollection filteredMembers) { }
+	internal void .ctor(ITypeDescriptorFilterService filterService, ICollection filteredMembers) { }
 
-internal bool IsValid(ITypeDescriptorFilterService filterService) { }
+	internal bool IsValid(ITypeDescriptorFilterService filterService) { }
 
 }
 
@@ -138,11 +138,11 @@ private sealed class TypeDescriptor.MemberDescriptorComparer : IComparer
 	public static readonly TypeDescriptor.MemberDescriptorComparer Instance; 
 
 
-public int Compare(object left, object right) { }
+	public int Compare(object left, object right) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -152,17 +152,17 @@ private sealed class TypeDescriptor.MergedTypeDescriptor : ICustomTypeDescriptor
 	private ICustomTypeDescriptor _secondary; 
 
 
-internal void .ctor(ICustomTypeDescriptor primary, ICustomTypeDescriptor secondary) { }
+	internal void .ctor(ICustomTypeDescriptor primary, ICustomTypeDescriptor secondary) { }
 
-private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
+	private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
 
-private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
+	private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
 
-private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
+	private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
 
 }
 
@@ -172,19 +172,19 @@ private sealed class TypeDescriptor.TypeDescriptionNode : TypeDescriptionProvide
 	internal TypeDescriptionProvider Provider; 
 
 
-internal void .ctor(TypeDescriptionProvider provider) { }
+	internal void .ctor(TypeDescriptionProvider provider) { }
 
-public override object CreateInstance(IServiceProvider provider, Type objectType, Type[] argTypes, object[] args) { }
+	public override object CreateInstance(IServiceProvider provider, Type objectType, Type[] argTypes, object[] args) { }
 
-public override IDictionary GetCache(object instance) { }
+	public override IDictionary GetCache(object instance) { }
 
-public override ICustomTypeDescriptor GetExtendedTypeDescriptor(object instance) { }
+	public override ICustomTypeDescriptor GetExtendedTypeDescriptor(object instance) { }
 
-protected internal override IExtenderProvider[] GetExtenderProviders(object instance) { }
+	protected internal override IExtenderProvider[] GetExtenderProviders(object instance) { }
 
-public override Type GetReflectionType(Type objectType, object instance) { }
+	public override Type GetReflectionType(Type objectType, object instance) { }
 
-public override ICustomTypeDescriptor GetTypeDescriptor(Type objectType, object instance) { }
+	public override ICustomTypeDescriptor GetTypeDescriptor(Type objectType, object instance) { }
 
 }
 
@@ -194,17 +194,17 @@ private struct TypeDescriptor.TypeDescriptionNode.DefaultExtendedTypeDescriptor 
 	private object _instance; 
 
 
-internal void .ctor(TypeDescriptor.TypeDescriptionNode node, object instance) { }
+	internal void .ctor(TypeDescriptor.TypeDescriptionNode node, object instance) { }
 
-private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
+	private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
 
-private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
+	private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
 
-private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
+	private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
 
 }
 
@@ -215,17 +215,17 @@ private struct TypeDescriptor.TypeDescriptionNode.DefaultTypeDescriptor : ICusto
 	private object _instance; 
 
 
-internal void .ctor(TypeDescriptor.TypeDescriptionNode node, Type objectType, object instance) { }
+	internal void .ctor(TypeDescriptor.TypeDescriptionNode node, Type objectType, object instance) { }
 
-private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
+	private AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() { }
 
-private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
+	private TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() { }
 
-private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
+	private PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes) { }
 
-private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
+	private object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd) { }
 
 }
 

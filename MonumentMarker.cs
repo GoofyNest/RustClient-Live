@@ -7,11 +7,11 @@ public class MonumentMarker : MonoBehaviour // TypeDefIndex: 10957
 	public Color nightColor; 
 
 
-public void Setup(LandmarkInfo info) { }
+	public void Setup(LandmarkInfo info) { }
 
-public void SetNightMode(bool nightMode) { }
+	public void SetNightMode(bool nightMode) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

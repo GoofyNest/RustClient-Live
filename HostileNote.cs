@@ -18,11 +18,11 @@ public class HostileNote : MonoBehaviour, IClientComponent // TypeDefIndex: 1093
 	private string hostileTimeLeftString; 
 
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

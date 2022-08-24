@@ -12,38 +12,38 @@ public sealed class MemoryProfiler // TypeDefIndex: 3584
 
 
 	[CompilerGeneratedAttribute] 
-private static void add_m_SnapshotFinished(Action<string, bool> value) { }
+	private static void add_m_SnapshotFinished(Action<string, bool> value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void remove_m_SnapshotFinished(Action<string, bool> value) { }
+	private static void remove_m_SnapshotFinished(Action<string, bool> value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void add_m_SaveScreenshotToDisk(Action<string, bool, DebugScreenCapture> value) { }
+	private static void add_m_SaveScreenshotToDisk(Action<string, bool, DebugScreenCapture> value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void remove_m_SaveScreenshotToDisk(Action<string, bool, DebugScreenCapture> value) { }
+	private static void remove_m_SaveScreenshotToDisk(Action<string, bool, DebugScreenCapture> value) { }
 
 	[StaticAccessorAttribute] 
 	[NativeMethodAttribute] 
 	[NativeConditionalAttribute] 
-private static void StartOperation(uint captureFlag, bool requestScreenshot, string path) { }
+	private static void StartOperation(uint captureFlag, bool requestScreenshot, string path) { }
 
-public static void TakeSnapshot(string path, Action<string, bool> finishCallback, CaptureFlags captureFlags = 3) { }
+	public static void TakeSnapshot(string path, Action<string, bool> finishCallback, CaptureFlags captureFlags = 3) { }
 
-public static void TakeSnapshot(string path, Action<string, bool> finishCallback, Action<string, bool, DebugScreenCapture> screenshotCallback, CaptureFlags captureFlags = 3) { }
-
-	[RequiredByNativeCodeAttribute] 
-private static byte[] PrepareMetadata() { }
-
-internal static int WriteIntToByteArray(byte[] array, int offset, int value) { }
-
-internal static int WriteStringToByteArray(byte[] array, int offset, string value) { }
+	public static void TakeSnapshot(string path, Action<string, bool> finishCallback, Action<string, bool, DebugScreenCapture> screenshotCallback, CaptureFlags captureFlags = 3) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void FinalizeSnapshot(string path, bool result) { }
+	private static byte[] PrepareMetadata() { }
+
+	internal static int WriteIntToByteArray(byte[] array, int offset, int value) { }
+
+	internal static int WriteStringToByteArray(byte[] array, int offset, string value) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void SaveScreenshotToDisk(string path, bool result, IntPtr pixelsPtr, int pixelsCount, TextureFormat format, int width, int height) { }
+	private static void FinalizeSnapshot(string path, bool result) { }
+
+	[RequiredByNativeCodeAttribute] 
+	private static void SaveScreenshotToDisk(string path, bool result, IntPtr pixelsPtr, int pixelsCount, TextureFormat format, int width, int height) { }
 
 }
 

@@ -12,19 +12,19 @@ public class flamethrowerFire : MonoBehaviour // TypeDefIndex: 11463
 	private flamethrowerState previousflameState; 
 
 
-public void PilotLightOn() { }
+	public void PilotLightOn() { }
 
-public void SetFlameStatus(bool status) { }
+	public void SetFlameStatus(bool status) { }
 
-public void ShutOff() { }
+	public void ShutOff() { }
 
-public void FlameOn() { }
+	public void FlameOn() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

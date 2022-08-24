@@ -4,9 +4,9 @@ internal class BootConfigData // TypeDefIndex: 3359
 
 
 	[RequiredByNativeCodeAttribute] 
-private static BootConfigData WrapBootConfigData(IntPtr nativeHandle) { }
+	private static BootConfigData WrapBootConfigData(IntPtr nativeHandle) { }
 
-private void .ctor(IntPtr nativeHandle) { }
+	private void .ctor(IntPtr nativeHandle) { }
 
 }
 

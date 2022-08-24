@@ -12,7 +12,7 @@ internal static class InternalConstants // TypeDefIndex: 6960
 	internal static readonly int REPZ_11_138; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

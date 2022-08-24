@@ -6,20 +6,20 @@ internal class ReadContentAsBinaryHelper // TypeDefIndex: 1860
 	private bool isEnd; 
 
 
-internal void Finish() { }
+	internal void Finish() { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
-private bool MoveToNextContentNode(bool moveIfOnContentNode) { }
+	private bool MoveToNextContentNode(bool moveIfOnContentNode) { }
 
 }
 
 private enum ReadContentAsBinaryHelper.State // TypeDefIndex: 1861
 {
 	public int value__; 
-public const ReadContentAsBinaryHelper.State None = 0;
-public const ReadContentAsBinaryHelper.State InReadContent = 1;
-public const ReadContentAsBinaryHelper.State InReadElementContent = 2;
+	public const ReadContentAsBinaryHelper.State None = 0;
+	public const ReadContentAsBinaryHelper.State InReadContent = 1;
+	public const ReadContentAsBinaryHelper.State InReadElementContent = 2;
 
 }
 

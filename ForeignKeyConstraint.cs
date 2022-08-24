@@ -6,100 +6,100 @@ public class ForeignKeyConstraint : Constraint // TypeDefIndex: 4268
 	private DataKey _childKey; 
 	private DataKey _parentKey; 
 
-internal DataKey ChildKey { get; }
+	internal DataKey ChildKey { get; }
 	[ReadOnlyAttribute] 
-public virtual DataColumn[] Columns { get; }
+	public virtual DataColumn[] Columns { get; }
 	[ReadOnlyAttribute] 
-public override DataTable Table { get; }
+	public override DataTable Table { get; }
 	[DefaultValueAttribute] 
-public virtual AcceptRejectRule AcceptRejectRule { get; set; }
+	public virtual AcceptRejectRule AcceptRejectRule { get; set; }
 	[DefaultValueAttribute] 
-public virtual Rule DeleteRule { get; set; }
+	public virtual Rule DeleteRule { get; set; }
 	[ReadOnlyAttribute] 
-public virtual DataColumn[] RelatedColumns { get; }
-internal DataColumn[] RelatedColumnsReference { get; }
-internal DataKey ParentKey { get; }
+	public virtual DataColumn[] RelatedColumns { get; }
+	internal DataColumn[] RelatedColumnsReference { get; }
+	internal DataKey ParentKey { get; }
 	[ReadOnlyAttribute] 
-public virtual DataTable RelatedTable { get; }
+	public virtual DataTable RelatedTable { get; }
 	[DefaultValueAttribute] 
-public virtual Rule UpdateRule { get; set; }
+	public virtual Rule UpdateRule { get; set; }
 
 
-public void .ctor(DataColumn[] parentColumns, DataColumn[] childColumns) { }
+	public void .ctor(DataColumn[] parentColumns, DataColumn[] childColumns) { }
 
-public void .ctor(string constraintName, DataColumn[] parentColumns, DataColumn[] childColumns) { }
+	public void .ctor(string constraintName, DataColumn[] parentColumns, DataColumn[] childColumns) { }
 
-internal DataKey get_ChildKey() { }
+	internal DataKey get_ChildKey() { }
 
-public virtual DataColumn[] get_Columns() { }
+	public virtual DataColumn[] get_Columns() { }
 
-public override DataTable get_Table() { }
+	public override DataTable get_Table() { }
 
-internal override void CheckCanAddToCollection(ConstraintCollection constraints) { }
+	internal override void CheckCanAddToCollection(ConstraintCollection constraints) { }
 
-internal override bool CanBeRemovedFromCollection(ConstraintCollection constraints, bool fThrowException) { }
+	internal override bool CanBeRemovedFromCollection(ConstraintCollection constraints, bool fThrowException) { }
 
-internal bool IsKeyNull(object[] values) { }
+	internal bool IsKeyNull(object[] values) { }
 
-internal override bool IsConstraintViolated() { }
+	internal override bool IsConstraintViolated() { }
 
-internal override bool CanEnableConstraint() { }
+	internal override bool CanEnableConstraint() { }
 
-internal void CascadeCommit(DataRow row) { }
+	internal void CascadeCommit(DataRow row) { }
 
-internal void CascadeDelete(DataRow row) { }
+	internal void CascadeDelete(DataRow row) { }
 
-internal void CascadeRollback(DataRow row) { }
+	internal void CascadeRollback(DataRow row) { }
 
-internal void CascadeUpdate(DataRow row) { }
+	internal void CascadeUpdate(DataRow row) { }
 
-internal void CheckCanClearParentTable(DataTable table) { }
+	internal void CheckCanClearParentTable(DataTable table) { }
 
-internal void CheckCanRemoveParentRow(DataRow row) { }
+	internal void CheckCanRemoveParentRow(DataRow row) { }
 
-internal void CheckCascade(DataRow row, DataRowAction action) { }
+	internal void CheckCascade(DataRow row, DataRowAction action) { }
 
-internal override void CheckConstraint(DataRow childRow, DataRowAction action) { }
+	internal override void CheckConstraint(DataRow childRow, DataRowAction action) { }
 
-private void NonVirtualCheckState() { }
+	private void NonVirtualCheckState() { }
 
-internal override void CheckState() { }
+	internal override void CheckState() { }
 
-public virtual AcceptRejectRule get_AcceptRejectRule() { }
+	public virtual AcceptRejectRule get_AcceptRejectRule() { }
 
-public virtual void set_AcceptRejectRule(AcceptRejectRule value) { }
+	public virtual void set_AcceptRejectRule(AcceptRejectRule value) { }
 
-internal override bool ContainsColumn(DataColumn column) { }
+	internal override bool ContainsColumn(DataColumn column) { }
 
-internal override Constraint Clone(DataSet destination) { }
+	internal override Constraint Clone(DataSet destination) { }
 
-internal override Constraint Clone(DataSet destination, bool ignorNSforTableLookup) { }
+	internal override Constraint Clone(DataSet destination, bool ignorNSforTableLookup) { }
 
-internal ForeignKeyConstraint Clone(DataTable destination) { }
+	internal ForeignKeyConstraint Clone(DataTable destination) { }
 
-private void Create(string relationName, DataColumn[] parentColumns, DataColumn[] childColumns) { }
+	private void Create(string relationName, DataColumn[] parentColumns, DataColumn[] childColumns) { }
 
-public virtual Rule get_DeleteRule() { }
+	public virtual Rule get_DeleteRule() { }
 
-public virtual void set_DeleteRule(Rule value) { }
+	public virtual void set_DeleteRule(Rule value) { }
 
-public override bool Equals(object key) { }
+	public override bool Equals(object key) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public virtual DataColumn[] get_RelatedColumns() { }
+	public virtual DataColumn[] get_RelatedColumns() { }
 
-internal DataColumn[] get_RelatedColumnsReference() { }
+	internal DataColumn[] get_RelatedColumnsReference() { }
 
-internal DataKey get_ParentKey() { }
+	internal DataKey get_ParentKey() { }
 
-internal DataRelation FindParentRelation() { }
+	internal DataRelation FindParentRelation() { }
 
-public virtual DataTable get_RelatedTable() { }
+	public virtual DataTable get_RelatedTable() { }
 
-public virtual Rule get_UpdateRule() { }
+	public virtual Rule get_UpdateRule() { }
 
-public virtual void set_UpdateRule(Rule value) { }
+	public virtual void set_UpdateRule(Rule value) { }
 
 }
 

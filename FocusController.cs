@@ -8,36 +8,36 @@ public class FocusController // TypeDefIndex: 4589
 	[DebuggerBrowsableAttribute] 
 	private int <imguiKeyboardControl>k__BackingField; 
 
-private IFocusRing focusRing { get; }
-internal int imguiKeyboardControl { get; set; }
+	private IFocusRing focusRing { get; }
+	internal int imguiKeyboardControl { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-private IFocusRing get_focusRing() { }
+	private IFocusRing get_focusRing() { }
 
-internal Focusable GetLeafFocusedElement() { }
+	internal Focusable GetLeafFocusedElement() { }
 
-internal void DoFocusChange(Focusable f) { }
+	internal void DoFocusChange(Focusable f) { }
 
-private void AboutToReleaseFocus(Focusable focusable, Focusable willGiveFocusTo, FocusChangeDirection direction) { }
+	private void AboutToReleaseFocus(Focusable focusable, Focusable willGiveFocusTo, FocusChangeDirection direction) { }
 
-private void ReleaseFocus(Focusable focusable, Focusable willGiveFocusTo, FocusChangeDirection direction) { }
+	private void ReleaseFocus(Focusable focusable, Focusable willGiveFocusTo, FocusChangeDirection direction) { }
 
-private void AboutToGrabFocus(Focusable focusable, Focusable willTakeFocusFrom, FocusChangeDirection direction) { }
+	private void AboutToGrabFocus(Focusable focusable, Focusable willTakeFocusFrom, FocusChangeDirection direction) { }
 
-private void GrabFocus(Focusable focusable, Focusable willTakeFocusFrom, FocusChangeDirection direction) { }
+	private void GrabFocus(Focusable focusable, Focusable willTakeFocusFrom, FocusChangeDirection direction) { }
 
-private void SwitchFocus(Focusable newFocusedElement, FocusChangeDirection direction) { }
+	private void SwitchFocus(Focusable newFocusedElement, FocusChangeDirection direction) { }
 
-internal Focusable SwitchFocusOnEvent(EventBase e) { }
-
-	[CompilerGeneratedAttribute] 
-internal int get_imguiKeyboardControl() { }
+	internal Focusable SwitchFocusOnEvent(EventBase e) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_imguiKeyboardControl(int value) { }
+	internal int get_imguiKeyboardControl() { }
 
-internal void SyncIMGUIFocus(int imguiKeyboardControlID, Focusable imguiContainerHavingKeyboardControl, bool forceSwitch) { }
+	[CompilerGeneratedAttribute] 
+	internal void set_imguiKeyboardControl(int value) { }
+
+	internal void SyncIMGUIFocus(int imguiKeyboardControlID, Focusable imguiContainerHavingKeyboardControl, bool forceSwitch) { }
 
 }
 

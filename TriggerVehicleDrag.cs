@@ -5,9 +5,9 @@ public class TriggerVehicleDrag : TriggerBase, IServerComponent // TypeDefIndex:
 	public float vehicleDrag; 
 
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

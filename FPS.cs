@@ -4,20 +4,20 @@ public class FPS : ConsoleSystem // TypeDefIndex: 11919
 
 	[ClientVar] 
 	[ServerVar] 
-public static int limit { get; set; }
+	public static int limit { get; set; }
 	[ClientVar] 
-public static int graph { get; set; }
+	public static int graph { get; set; }
 
 
-public static int get_limit() { }
+	public static int get_limit() { }
 
-public static void set_limit(int value) { }
+	public static void set_limit(int value) { }
 
-public static int get_graph() { }
+	public static int get_graph() { }
 
-public static void set_graph(int value) { }
+	public static void set_graph(int value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

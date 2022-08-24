@@ -24,55 +24,55 @@ public class BaseMelee : AttackEntity // TypeDefIndex: 8523
 	public ResourceDispenser.GatherProperties gathering; 
 	private bool throwReady; 
 
-protected virtual bool CanAttack { get; }
-protected virtual bool CanThrow { get; }
+	protected virtual bool CanAttack { get; }
+	protected virtual bool CanThrow { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
 
-internal void DoThrow() { }
+	internal void DoThrow() { }
 
-private Projectile CreateProjectile(string prefabPath, Vector3 pos, Vector3 forward, Vector3 velocity) { }
+	private Projectile CreateProjectile(string prefabPath, Vector3 pos, Vector3 forward, Vector3 velocity) { }
 
-public override void GetAttackStats(HitInfo info) { }
+	public override void GetAttackStats(HitInfo info) { }
 
-public virtual void DoAttackShared(HitInfo info) { }
+	public virtual void DoAttackShared(HitInfo info) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-protected virtual bool get_CanAttack() { }
+	protected virtual bool get_CanAttack() { }
 
-protected virtual bool get_CanThrow() { }
+	protected virtual bool get_CanThrow() { }
 
-public virtual void ClientAttack() { }
+	public virtual void ClientAttack() { }
 
-public override void OnHolstered() { }
+	public override void OnHolstered() { }
 
-protected virtual void ProcessAttack(HitTest hit) { }
+	protected virtual void ProcessAttack(HitTest hit) { }
 
-protected virtual void DoAttack() { }
+	protected virtual void DoAttack() { }
 
-public virtual void DoViewmodelImpact(HitTest test) { }
+	public virtual void DoViewmodelImpact(HitTest test) { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-public ResourceDispenser.GatherPropertyEntry GetGatherInfoFromIndex(ResourceDispenser.GatherType index) { }
+	public ResourceDispenser.GatherPropertyEntry GetGatherInfoFromIndex(ResourceDispenser.GatherType index) { }
 
-public virtual bool CanHit(HitTest info) { }
+	public virtual bool CanHit(HitTest info) { }
 
-public float TotalDamage() { }
+	public float TotalDamage() { }
 
-public override bool CanBeUsedInWater() { }
+	public override bool CanBeUsedInWater() { }
 
-public string GetStrikeEffectPath(string materialName) { }
+	public string GetStrikeEffectPath(string materialName) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -82,7 +82,7 @@ public class BaseMelee.MaterialFX // TypeDefIndex: 8524
 	public GameObjectRef fx; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

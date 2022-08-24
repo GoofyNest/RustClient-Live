@@ -6,25 +6,25 @@ internal class HtmlEncodedRawTextWriterIndent : HtmlEncodedRawTextWriter // Type
 	private bool newLineOnAttributes; 
 
 
-public void .ctor(TextWriter writer, XmlWriterSettings settings) { }
+	public void .ctor(TextWriter writer, XmlWriterSettings settings) { }
 
-public void .ctor(Stream stream, XmlWriterSettings settings) { }
+	public void .ctor(Stream stream, XmlWriterSettings settings) { }
 
-public override void WriteDocType(string name, string pubid, string sysid, string subset) { }
+	public override void WriteDocType(string name, string pubid, string sysid, string subset) { }
 
-public override void WriteStartElement(string prefix, string localName, string ns) { }
+	public override void WriteStartElement(string prefix, string localName, string ns) { }
 
-internal override void StartElementContent() { }
+	internal override void StartElementContent() { }
 
-internal override void WriteEndElement(string prefix, string localName, string ns) { }
+	internal override void WriteEndElement(string prefix, string localName, string ns) { }
 
-public override void WriteStartAttribute(string prefix, string localName, string ns) { }
+	public override void WriteStartAttribute(string prefix, string localName, string ns) { }
 
-protected override void FlushBuffer() { }
+	protected override void FlushBuffer() { }
 
-private void Init(XmlWriterSettings settings) { }
+	private void Init(XmlWriterSettings settings) { }
 
-private void WriteIndent() { }
+	private void WriteIndent() { }
 
 }
 

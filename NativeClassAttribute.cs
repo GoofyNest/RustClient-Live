@@ -7,19 +7,19 @@ internal sealed class NativeClassAttribute : Attribute // TypeDefIndex: 3267
 	[CompilerGeneratedAttribute] 
 	private string <Declaration>k__BackingField; 
 
-private string QualifiedNativeName { set; }
-private string Declaration { set; }
+	private string QualifiedNativeName { set; }
+	private string Declaration { set; }
 
 
 	[CompilerGeneratedAttribute] 
-private void set_QualifiedNativeName(string value) { }
+	private void set_QualifiedNativeName(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Declaration(string value) { }
+	private void set_Declaration(string value) { }
 
-public void .ctor(string qualifiedCppName) { }
+	public void .ctor(string qualifiedCppName) { }
 
-public void .ctor(string qualifiedCppName, string declaration) { }
+	public void .ctor(string qualifiedCppName, string declaration) { }
 
 }
 

@@ -26,42 +26,42 @@ public class LaserBeam : MonoBehaviour // TypeDefIndex: 8891
 
 
 	[ClientVar] 
-public static void PrintQueue(ConsoleSystem.Arg args) { }
+	public static void PrintQueue(ConsoleSystem.Arg args) { }
 
-public void LaserUpdate() { }
+	public void LaserUpdate() { }
 
-public BaseProjectile GetLocalPlayerWeapon() { }
+	public BaseProjectile GetLocalPlayerWeapon() { }
 
-public Vector3 GetDotFinalPosition(Ray castRay) { }
+	public Vector3 GetDotFinalPosition(Ray castRay) { }
 
-public Vector3 DotCast(Ray castRay) { }
+	public Vector3 DotCast(Ray castRay) { }
 
-private void UpdateDot() { }
+	private void UpdateDot() { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void UpdateBeam() { }
+	private void UpdateBeam() { }
 
-private void UpdateLaserPositions() { }
+	private void UpdateLaserPositions() { }
 
-public void LateUpdate() { }
+	public void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public class LaserBeam.LaserBeamWorkQueue : PersistentObjectWorkQueue<LaserBeam> // TypeDefIndex: 8892
 {
 
-protected override void RunJob(LaserBeam entity) { }
+	protected override void RunJob(LaserBeam entity) { }
 
-protected override bool ShouldAdd(LaserBeam entity) { }
+	protected override bool ShouldAdd(LaserBeam entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

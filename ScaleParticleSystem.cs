@@ -8,11 +8,11 @@ public class ScaleParticleSystem : ScaleRenderer // TypeDefIndex: 9360
 	private float startGravity; 
 
 
-public override void GatherInitialValues() { }
+	public override void GatherInitialValues() { }
 
-public override void SetScale_Internal(float scale) { }
+	public override void SetScale_Internal(float scale) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

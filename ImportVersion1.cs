@@ -2,9 +2,9 @@ internal class ImportVersion1 : SingletonComponent<ImportVersion1> // TypeDefInd
 {
 
 	[IteratorStateMachineAttribute] 
-internal IEnumerator DoImport(IWorkshopContent item, Skin skin) { }
+	internal IEnumerator DoImport(IWorkshopContent item, Skin skin) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -14,26 +14,26 @@ private sealed class ImportVersion1.<DoImport>d__0 : IEnumerator<object>, IEnume
 	private object <>2__current; 
 	public IWorkshopContent item; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -13,39 +13,39 @@ public class ErrorContext // TypeDefIndex: 6002
 	[CompilerGeneratedAttribute] 
 	private bool <Handled>k__BackingField; 
 
-internal bool Traced { get; set; }
-public Exception Error { get; set; }
-private object OriginalObject { set; }
-private object Member { set; }
-private string Path { set; }
-public bool Handled { get; }
+	internal bool Traced { get; set; }
+	public Exception Error { get; set; }
+	private object OriginalObject { set; }
+	private object Member { set; }
+	private string Path { set; }
+	public bool Handled { get; }
 
 
-internal void .ctor(object originalObject, object member, string path, Exception error) { }
-
-	[CompilerGeneratedAttribute] 
-internal bool get_Traced() { }
+	internal void .ctor(object originalObject, object member, string path, Exception error) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Traced(bool value) { }
+	internal bool get_Traced() { }
 
 	[CompilerGeneratedAttribute] 
-public Exception get_Error() { }
+	internal void set_Traced(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Error(Exception value) { }
+	public Exception get_Error() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_OriginalObject(object value) { }
+	private void set_Error(Exception value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Member(object value) { }
+	private void set_OriginalObject(object value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Path(string value) { }
+	private void set_Member(object value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Handled() { }
+	private void set_Path(string value) { }
+
+	[CompilerGeneratedAttribute] 
+	public bool get_Handled() { }
 
 }
 

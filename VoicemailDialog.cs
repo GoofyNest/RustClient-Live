@@ -12,26 +12,26 @@ public class VoicemailDialog : MonoBehaviour // TypeDefIndex: 10900
 	private float duration; 
 	private List<VoicemailEntry> toRetire; 
 
-public static bool IsRecordingVoicemail { get; }
+	public static bool IsRecordingVoicemail { get; }
 
 
-public static bool get_IsRecordingVoicemail() { }
+	public static bool get_IsRecordingVoicemail() { }
 
-public void ShowRecordingDialog(float recordingTime) { }
+	public void ShowRecordingDialog(float recordingTime) { }
 
-public void ShowBrowsingDialog(List<VoicemailEntry> ids, int maxVoicemail) { }
+	public void ShowBrowsingDialog(List<VoicemailEntry> ids, int maxVoicemail) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void CloseDialog() { }
+	public void CloseDialog() { }
 
-public void StopPlayingAllVoicemails(VoicemailEntry exceptFor) { }
+	public void StopPlayingAllVoicemails(VoicemailEntry exceptFor) { }
 
-public void OnDeletedVoicemail(VoicemailEntry entry) { }
+	public void OnDeletedVoicemail(VoicemailEntry entry) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

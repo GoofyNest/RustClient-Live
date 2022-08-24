@@ -22,19 +22,19 @@ public class LightEx : UpdateBehaviour, IClientComponent // TypeDefIndex: 9195
 	private LightLOD lightLOD; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public override void DeltaUpdate(float deltaTime) { }
+	public override void DeltaUpdate(float deltaTime) { }
 
-protected void OnValidate() { }
+	protected void OnValidate() { }
 
-public static bool CheckConflict(GameObject go) { }
+	public static bool CheckConflict(GameObject go) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

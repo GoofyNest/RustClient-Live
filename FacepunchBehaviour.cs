@@ -5,23 +5,23 @@ internal class <Module>
 
 public abstract class FacepunchBehaviour : MonoBehaviour 
 
-public void Invoke(Action action, float time) { }
+	public void Invoke(Action action, float time) { }
 
-public void InvokeRepeating(Action action, float time, float repeat) { }
+	public void InvokeRepeating(Action action, float time, float repeat) { }
 
-public void InvokeRandomized(Action action, float time, float repeat, float random) { }
+	public void InvokeRandomized(Action action, float time, float repeat, float random) { }
 
-public void CancelInvoke(Action action) { }
+	public void CancelInvoke(Action action) { }
 
-public bool IsInvoking(Action action) { }
+	public bool IsInvoking(Action action) { }
 
-public void InvokeRepeatingFixedTime(Action action) { }
+	public void InvokeRepeatingFixedTime(Action action) { }
 
-public void CancelInvokeFixedTime(Action action) { }
+	public void CancelInvokeFixedTime(Action action) { }
 
-public bool IsInvokingFixedTime(Action action) { }
+	public bool IsInvokingFixedTime(Action action) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

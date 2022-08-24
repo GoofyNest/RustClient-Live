@@ -18,64 +18,64 @@ public class WebSocketServer : IDisposable // TypeDefIndex: 6931
 	[CompilerGeneratedAttribute] 
 	private bool <RestartAfterListenError>k__BackingField; 
 
-public ISocket ListenerSocket { get; set; }
-public bool SupportDualStack { get; }
-public int Port { get; set; }
-public X509Certificate2 Certificate { get; set; }
-public SslProtocols EnabledSslProtocols { get; }
-public bool RestartAfterListenError { get; set; }
-public bool IsSecure { get; }
+	public ISocket ListenerSocket { get; set; }
+	public bool SupportDualStack { get; }
+	public int Port { get; set; }
+	public X509Certificate2 Certificate { get; set; }
+	public SslProtocols EnabledSslProtocols { get; }
+	public bool RestartAfterListenError { get; set; }
+	public bool IsSecure { get; }
 
 
-public void .ctor(string location, bool supportDualStack = True) { }
-
-	[CompilerGeneratedAttribute] 
-public ISocket get_ListenerSocket() { }
+	public void .ctor(string location, bool supportDualStack = True) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ListenerSocket(ISocket value) { }
+	public ISocket get_ListenerSocket() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_SupportDualStack() { }
+	public void set_ListenerSocket(ISocket value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_Port() { }
+	public bool get_SupportDualStack() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Port(int value) { }
+	public int get_Port() { }
 
 	[CompilerGeneratedAttribute] 
-public X509Certificate2 get_Certificate() { }
+	private void set_Port(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Certificate(X509Certificate2 value) { }
+	public X509Certificate2 get_Certificate() { }
 
 	[CompilerGeneratedAttribute] 
-public SslProtocols get_EnabledSslProtocols() { }
+	public void set_Certificate(X509Certificate2 value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_RestartAfterListenError() { }
+	public SslProtocols get_EnabledSslProtocols() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_RestartAfterListenError(bool value) { }
-
-public bool get_IsSecure() { }
-
-public void Dispose() { }
-
-private IPAddress ParseIPAddress(Uri uri) { }
-
-public void Start(Action<IWebSocketConnection> config) { }
-
-private void ListenForClients() { }
-
-private void OnClientConnect(ISocket clientSocket) { }
+	public bool get_RestartAfterListenError() { }
 
 	[CompilerGeneratedAttribute] 
-private void <ListenForClients>b__35_0(Exception e) { }
+	public void set_RestartAfterListenError(bool value) { }
+
+	public bool get_IsSecure() { }
+
+	public void Dispose() { }
+
+	private IPAddress ParseIPAddress(Uri uri) { }
+
+	public void Start(Action<IWebSocketConnection> config) { }
+
+	private void ListenForClients() { }
+
+	private void OnClientConnect(ISocket clientSocket) { }
 
 	[CompilerGeneratedAttribute] 
-private WebSocketHttpRequest <OnClientConnect>b__36_0(ArraySegment<byte> bytes) { }
+	private void <ListenForClients>b__35_0(Exception e) { }
+
+	[CompilerGeneratedAttribute] 
+	private WebSocketHttpRequest <OnClientConnect>b__36_0(ArraySegment<byte> bytes) { }
 
 }
 
@@ -86,13 +86,13 @@ private sealed class WebSocketServer.<>c // TypeDefIndex: 6932
 	public static Action<Exception> <>9__36_2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal IHandler <OnClientConnect>b__36_1(IWebSocketConnection c, WebSocketHttpRequest r) { }
+	internal IHandler <OnClientConnect>b__36_1(IWebSocketConnection c, WebSocketHttpRequest r) { }
 
-internal void <OnClientConnect>b__36_2(Exception e) { }
+	internal void <OnClientConnect>b__36_2(Exception e) { }
 
 }
 

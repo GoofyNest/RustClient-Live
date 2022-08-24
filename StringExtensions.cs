@@ -7,45 +7,45 @@ public static class StringExtensions // TypeDefIndex: 4846
 
 
 	[ExtensionAttribute] 
-public static string QuoteSafe(string str) { }
+	public static string QuoteSafe(string str) { }
 
 	[ExtensionAttribute] 
-public static string[] SplitQuotesStrings(string input, int maxCount = 2147483647) { }
+	public static string[] SplitQuotesStrings(string input, int maxCount = 2147483647) { }
 
 	[ExtensionAttribute] 
-public static Decimal ToDecimal(string str, Decimal Default) { }
+	public static Decimal ToDecimal(string str, Decimal Default) { }
 
 	[ExtensionAttribute] 
-public static float ToFloat(string str, float Default = 0) { }
+	public static float ToFloat(string str, float Default = 0) { }
 
 	[ExtensionAttribute] 
-public static int ToInt(string str, int Default = 0) { }
+	public static int ToInt(string str, int Default = 0) { }
 
 	[ExtensionAttribute] 
-public static bool ToBool(string str) { }
+	public static bool ToBool(string str) { }
 
 	[ExtensionAttribute] 
-public static string Truncate(string str, int maxLength, string appendage) { }
+	public static string Truncate(string str, int maxLength, string appendage) { }
 
 	[ExtensionAttribute] 
-public static string TruncateFilename(string str, int maxLength, string appendage) { }
+	public static string TruncateFilename(string str, int maxLength, string appendage) { }
 
 	[ExtensionAttribute] 
-public static bool Contains(string source, string toCheck, StringComparison comp) { }
+	public static bool Contains(string source, string toCheck, StringComparison comp) { }
 
 	[ExtensionAttribute] 
-public static string Snippet(string source, string find, int padding) { }
+	public static string Snippet(string source, string find, int padding) { }
 
 	[ExtensionAttribute] 
-public static string RemoveBadCharacters(string str) { }
+	public static string RemoveBadCharacters(string str) { }
 
 	[ExtensionAttribute] 
-public static string Base64Encode(string plainText) { }
+	public static string Base64Encode(string plainText) { }
 
 	[ExtensionAttribute] 
-public static string Base64Decode(string base64EncodedData) { }
+	public static string Base64Decode(string base64EncodedData) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -55,11 +55,11 @@ private sealed class StringExtensions.<>c // TypeDefIndex: 4847
 	public static Func<char, bool> <>9__14_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <RemoveBadCharacters>b__14_0(char x) { }
+	internal bool <RemoveBadCharacters>b__14_0(char x) { }
 
 }
 
@@ -67,13 +67,13 @@ public static class StringExtensions // TypeDefIndex: 5604
 {
 
 	[ExtensionAttribute] 
-public static string BBCodeToUnity(string x) { }
+	public static string BBCodeToUnity(string x) { }
 
 	[ExtensionAttribute] 
-public static Vector3 ToVector3(string str) { }
+	public static Vector3 ToVector3(string str) { }
 
 	[ExtensionAttribute] 
-public static Color ToColor(string str) { }
+	public static Color ToColor(string str) { }
 
 }
 

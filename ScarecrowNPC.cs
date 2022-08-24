@@ -9,28 +9,28 @@ public class ScarecrowNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 844
 	[HeaderAttribute] 
 	public LootContainer.LootSpawnSlot[] LootSpawnSlots; 
 
-public override bool HasMenuOptions { get; }
-public BaseAIBrain<ScarecrowNPC> Brain { get; set; }
+	public override bool HasMenuOptions { get; }
+	public BaseAIBrain<ScarecrowNPC> Brain { get; set; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
-
-	[CompilerGeneratedAttribute] 
-public BaseAIBrain<ScarecrowNPC> get_Brain() { }
+	public override bool get_HasMenuOptions() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_Brain(BaseAIBrain<ScarecrowNPC> value) { }
+	public BaseAIBrain<ScarecrowNPC> get_Brain() { }
+
+	[CompilerGeneratedAttribute] 
+	protected void set_Brain(BaseAIBrain<ScarecrowNPC> value) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.ShowIf] 
-public void MenuDesignAI(BasePlayer ply) { }
+	public void MenuDesignAI(BasePlayer ply) { }
 
-public bool CanDesignAI(BasePlayer player) { }
+	public bool CanDesignAI(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

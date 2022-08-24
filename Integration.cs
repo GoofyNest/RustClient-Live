@@ -7,48 +7,48 @@ public class Integration : BaseIntegration // TypeDefIndex: 8229
 	private Auth _auth; 
 	private IAuthTicket _steamTicket; 
 
-public override string PublicKey { get; }
-public override string Bucket { get; }
-public override string UserId { get; }
-public override string UserName { get; }
-public override Auth Auth { get; }
-public override string ServerAddress { get; }
-public override string ServerName { get; }
+	public override string PublicKey { get; }
+	public override string Bucket { get; }
+	public override string UserId { get; }
+	public override string UserName { get; }
+	public override Auth Auth { get; }
+	public override string ServerAddress { get; }
+	public override string ServerName { get; }
 
 
-public override string get_PublicKey() { }
+	public override string get_PublicKey() { }
 
-public override string get_Bucket() { }
-
-	[CompilerGeneratedAttribute] 
-public void add_OnManifestUpdated(Action value) { }
+	public override string get_Bucket() { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_OnManifestUpdated(Action value) { }
-
-public override void OnManifestFile(Manifest manifest) { }
+	public void add_OnManifestUpdated(Action value) { }
 
 	[CompilerGeneratedAttribute] 
-public void add_OnServerMetadataUpdated(Action value) { }
+	public void remove_OnManifestUpdated(Action value) { }
+
+	public override void OnManifestFile(Manifest manifest) { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_OnServerMetadataUpdated(Action value) { }
+	public void add_OnServerMetadataUpdated(Action value) { }
 
-public override void OnServerMetadata(Dictionary<IPEndPoint, int> metadata) { }
+	[CompilerGeneratedAttribute] 
+	public void remove_OnServerMetadataUpdated(Action value) { }
 
-public override string get_UserId() { }
+	public override void OnServerMetadata(Dictionary<IPEndPoint, int> metadata) { }
 
-public override string get_UserName() { }
+	public override string get_UserId() { }
 
-public override Auth get_Auth() { }
+	public override string get_UserName() { }
 
-public override bool ShouldReportException(string message, string stackTrace, LogType type) { }
+	public override Auth get_Auth() { }
 
-public override string get_ServerAddress() { }
+	public override bool ShouldReportException(string message, string stackTrace, LogType type) { }
 
-public override string get_ServerName() { }
+	public override string get_ServerAddress() { }
 
-public void .ctor() { }
+	public override string get_ServerName() { }
+
+	public void .ctor() { }
 
 }
 

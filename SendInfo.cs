@@ -7,9 +7,9 @@ public struct SendInfo // TypeDefIndex: 6701
 	public Connection connection; 
 
 
-public void .ctor(List<Connection> connections) { }
+	public void .ctor(List<Connection> connections) { }
 
-public void .ctor(Connection connection) { }
+	public void .ctor(Connection connection) { }
 
 }
 

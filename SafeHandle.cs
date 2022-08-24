@@ -4,56 +4,56 @@ public abstract class SafeHandle : CriticalFinalizerObject, IDisposable // TypeD
 	private int _state; 
 	private bool _ownsHandle; 
 	private bool _fullyInitialized; 
-private const int RefCount_Mask = 2147483644;
-private const int RefCount_One = 4;
+	private const int RefCount_Mask = 2147483644;
+	private const int RefCount_One = 4;
 
-public bool IsClosed { get; }
-public abstract bool IsInvalid { get; }
+	public bool IsClosed { get; }
+	public abstract bool IsInvalid { get; }
 
-
-	[ReliabilityContractAttribute] 
-protected void .ctor(IntPtr invalidHandleValue, bool ownsHandle) { }
-
-protected override void Finalize() { }
 
 	[ReliabilityContractAttribute] 
-protected void SetHandle(IntPtr handle) { }
+	protected void .ctor(IntPtr invalidHandleValue, bool ownsHandle) { }
+
+	protected override void Finalize() { }
 
 	[ReliabilityContractAttribute] 
-public IntPtr DangerousGetHandle() { }
+	protected void SetHandle(IntPtr handle) { }
 
 	[ReliabilityContractAttribute] 
-public bool get_IsClosed() { }
+	public IntPtr DangerousGetHandle() { }
 
 	[ReliabilityContractAttribute] 
-public abstract bool get_IsInvalid();
+	public bool get_IsClosed() { }
 
 	[ReliabilityContractAttribute] 
-public void Close() { }
+	public abstract bool get_IsInvalid();
 
 	[ReliabilityContractAttribute] 
-public void Dispose() { }
+	public void Close() { }
 
 	[ReliabilityContractAttribute] 
-protected virtual void Dispose(bool disposing) { }
+	public void Dispose() { }
 
 	[ReliabilityContractAttribute] 
-protected abstract bool ReleaseHandle();
+	protected virtual void Dispose(bool disposing) { }
 
 	[ReliabilityContractAttribute] 
-public void SetHandleAsInvalid() { }
+	protected abstract bool ReleaseHandle();
 
 	[ReliabilityContractAttribute] 
-public void DangerousAddRef(ref bool success) { }
+	public void SetHandleAsInvalid() { }
 
 	[ReliabilityContractAttribute] 
-public void DangerousRelease() { }
+	public void DangerousAddRef(ref bool success) { }
 
-private void InternalDispose() { }
+	[ReliabilityContractAttribute] 
+	public void DangerousRelease() { }
 
-private void InternalFinalize() { }
+	private void InternalDispose() { }
 
-private void DangerousReleaseInternal(bool dispose) { }
+	private void InternalFinalize() { }
+
+	private void DangerousReleaseInternal(bool dispose) { }
 
 }
 

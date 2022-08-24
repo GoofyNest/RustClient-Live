@@ -11,14 +11,14 @@ public class NewYearGong : BaseCombatEntity // TypeDefIndex: 8609
 	private Sound playingSound; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void PlaySound(BaseEntity.RPCMessage msg) { }
+	public void PlaySound(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

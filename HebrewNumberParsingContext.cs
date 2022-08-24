@@ -4,7 +4,7 @@ internal struct HebrewNumberParsingContext // TypeDefIndex: 706
 	internal int result; 
 
 
-public void .ctor(int result) { }
+	public void .ctor(int result) { }
 
 }
 

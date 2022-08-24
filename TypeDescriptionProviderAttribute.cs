@@ -2,14 +2,14 @@ public sealed class TypeDescriptionProviderAttribute : Attribute // TypeDefIndex
 {
 	private string _typeName; 
 
-public string TypeName { get; }
+	public string TypeName { get; }
 
 
-public void .ctor(string typeName) { }
+	public void .ctor(string typeName) { }
 
-public void .ctor(Type type) { }
+	public void .ctor(Type type) { }
 
-public string get_TypeName() { }
+	public string get_TypeName() { }
 
 }
 

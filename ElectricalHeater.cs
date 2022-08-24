@@ -8,17 +8,17 @@ public class ElectricalHeater : IOEntity // TypeDefIndex: 8705
 	private bool wasOn; 
 
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void LightLerp() { }
+	public void LightLerp() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

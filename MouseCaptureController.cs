@@ -5,15 +5,15 @@ public static class MouseCaptureController // TypeDefIndex: 4594
 
 
 	[ExtensionAttribute] 
-public static bool HasMouseCapture(IEventHandler handler) { }
+	public static bool HasMouseCapture(IEventHandler handler) { }
 
 	[ExtensionAttribute] 
-public static void CaptureMouse(IEventHandler handler) { }
+	public static void CaptureMouse(IEventHandler handler) { }
 
 	[ExtensionAttribute] 
-public static void ReleaseMouse(IEventHandler handler) { }
+	public static void ReleaseMouse(IEventHandler handler) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -4,11 +4,11 @@ public class RadixSorter // TypeDefIndex: 11396
 	private uint[] offset; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void SortU8(uint[] values, uint[] remap, uint num) { }
+	public void SortU8(uint[] values, uint[] remap, uint num) { }
 
-public void SortU24(uint[] values, uint[] remap, uint[] remapTemp, uint num) { }
+	public void SortU24(uint[] values, uint[] remap, uint[] remapTemp, uint num) { }
 
 }
 

@@ -11,57 +11,57 @@ public class RustImageButton : RustControl, IPointerDownHandler, IEventSystemHan
 	public Sprite PressedImage; 
 	public Sprite UnpressedImage; 
 
-public bool Value { get; set; }
-public float minWidth { get; }
-public float preferredWidth { get; }
-public float flexibleWidth { get; }
-public float minHeight { get; }
-public float preferredHeight { get; }
-public float flexibleHeight { get; }
-public int layoutPriority { get; }
+	public bool Value { get; set; }
+	public float minWidth { get; }
+	public float preferredWidth { get; }
+	public float flexibleWidth { get; }
+	public float minHeight { get; }
+	public float preferredHeight { get; }
+	public float flexibleHeight { get; }
+	public int layoutPriority { get; }
 
 
-public bool get_Value() { }
+	public bool get_Value() { }
 
-public void set_Value(bool value) { }
+	public void set_Value(bool value) { }
 
-public void Press() { }
+	public void Press() { }
 
-public void Unpress() { }
+	public void Unpress() { }
 
-public virtual void OnPointerDown(PointerEventData eventData) { }
+	public virtual void OnPointerDown(PointerEventData eventData) { }
 
-public void Toggle(bool v, bool forced = False) { }
+	public void Toggle(bool v, bool forced = False) { }
 
-private void ToggleTabPanel(bool onOff) { }
+	private void ToggleTabPanel(bool onOff) { }
 
-private void DoUnpressSiblings() { }
+	private void DoUnpressSiblings() { }
 
-public virtual void OnPointerUp(PointerEventData eventData) { }
+	public virtual void OnPointerUp(PointerEventData eventData) { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-protected override void ApplyStyle(StyleAsset.Group s) { }
+	protected override void ApplyStyle(StyleAsset.Group s) { }
 
-public float get_minWidth() { }
+	public float get_minWidth() { }
 
-public float get_preferredWidth() { }
+	public float get_preferredWidth() { }
 
-public float get_flexibleWidth() { }
+	public float get_flexibleWidth() { }
 
-public float get_minHeight() { }
+	public float get_minHeight() { }
 
-public float get_preferredHeight() { }
+	public float get_preferredHeight() { }
 
-public float get_flexibleHeight() { }
+	public float get_flexibleHeight() { }
 
-public int get_layoutPriority() { }
+	public int get_layoutPriority() { }
 
-public void CalculateLayoutInputHorizontal() { }
+	public void CalculateLayoutInputHorizontal() { }
 
-public void CalculateLayoutInputVertical() { }
+	public void CalculateLayoutInputVertical() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

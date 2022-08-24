@@ -7,20 +7,20 @@ public class DoorAnimEvents : MonoBehaviour, IClientComponent // TypeDefIndex: 9
 	public GameObject soundTarget; 
 	public bool checkAnimSpeed; 
 
-public Animator animator { get; }
+	public Animator animator { get; }
 
 
-public Animator get_animator() { }
+	public Animator get_animator() { }
 
-private void DoorOpenStart() { }
+	private void DoorOpenStart() { }
 
-private void DoorOpenEnd() { }
+	private void DoorOpenEnd() { }
 
-private void DoorCloseStart() { }
+	private void DoorCloseStart() { }
 
-private void DoorCloseEnd() { }
+	private void DoorCloseEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

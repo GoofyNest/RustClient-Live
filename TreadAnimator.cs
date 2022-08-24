@@ -30,26 +30,26 @@ public class TreadAnimator : MonoBehaviour, IClientComponent // TypeDefIndex: 88
 	private int cachedMask; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void CalculateVelocity() { }
+	public void CalculateVelocity() { }
 
-public Vector3 GetCurrentVelocity() { }
+	public Vector3 GetCurrentVelocity() { }
 
-public float GetAngularSpeed() { }
+	public float GetAngularSpeed() { }
 
-public float GetSpeed(bool rightSide) { }
+	public float GetSpeed(bool rightSide) { }
 
-private void AnimateWheelsTreads() { }
+	private void AnimateWheelsTreads() { }
 
-public void UpdateHeights() { }
+	public void UpdateHeights() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <AnimateWheelsTreads>g__AnimateTreadWheel|30_0(ref float treadMovement, ref Material treadMat, bool left, ref TreadAnimator.<>c__DisplayClass30_0 ) { }
+	private void <AnimateWheelsTreads>g__AnimateTreadWheel|30_0(ref float treadMovement, ref Material treadMat, bool left, ref TreadAnimator.<>c__DisplayClass30_0 ) { }
 
 }
 

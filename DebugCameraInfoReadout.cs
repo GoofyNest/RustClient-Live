@@ -4,13 +4,13 @@ public class DebugCameraInfoReadout : SingletonComponent<DebugCameraInfoReadout>
 	private StringBuilder builder; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void Toggle(bool state) { }
+	public void Toggle(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

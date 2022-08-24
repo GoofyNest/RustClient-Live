@@ -12,10 +12,10 @@ public class VFXExpressionValues
 	internal IntPtr m_Ptr; 
 
 
-private void .ctor() { }
+	private void .ctor() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static VFXExpressionValues CreateExpressionValuesWrapper(IntPtr ptr) { }
+	internal static VFXExpressionValues CreateExpressionValuesWrapper(IntPtr ptr) { }
 
 }
 

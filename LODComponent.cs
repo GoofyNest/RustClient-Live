@@ -12,90 +12,90 @@ public abstract class LODComponent : BaseMonoBehaviour, IClientComponent, ILOD /
 	private bool occludeeShadowsVisible; 
 	private float occludeeShadowRange; 
 	private OccludeeSphere occludee; 
-private const float OccludeeMinTimeVisible = 0,1;
+	private const float OccludeeMinTimeVisible = 0,1;
 	private static HashSet<LODComponent> occludeeSet; 
 	private static readonly int DynamicOccludeeLowPerFrame; 
 	private static readonly float DynamicOccludeeMinimumLowInterval; 
 	private static ListHashSet<LODComponent> dynamicOccludees; 
 	private static int dynamicOccludeeLowIndex; 
 
-public static HashSet<LODComponent> OccludeeSet { get; }
-public float CurrentDistance { get; }
+	public static HashSet<LODComponent> OccludeeSet { get; }
+	public float CurrentDistance { get; }
 
 
-public static HashSet<LODComponent> get_OccludeeSet() { }
+	public static HashSet<LODComponent> get_OccludeeSet() { }
 
-public float get_CurrentDistance() { }
+	public float get_CurrentDistance() { }
 
-private float GetDistance() { }
+	private float GetDistance() { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void SetEnvironmentMode(LODEnvironmentMode mode) { }
+	public void SetEnvironmentMode(LODEnvironmentMode mode) { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void EnableCulling() { }
+	private void EnableCulling() { }
 
-private void DisableCulling() { }
+	private void DisableCulling() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-private void ChangeCulling(float distance) { }
+	private void ChangeCulling(float distance) { }
 
-private void ChangeCulling() { }
+	private void ChangeCulling() { }
 
-public static void ChangeCullingAll() { }
+	public static void ChangeCullingAll() { }
 
-private void UpdateVisibility() { }
+	private void UpdateVisibility() { }
 
-public void SetVisible(bool state) { }
+	public void SetVisible(bool state) { }
 
-protected abstract void InitLOD();
+	protected abstract void InitLOD();
 
-protected abstract void EnableLOD();
+	protected abstract void EnableLOD();
 
-protected abstract void DisableLOD();
+	protected abstract void DisableLOD();
 
-protected abstract int GetLOD(float distance);
+	protected abstract int GetLOD(float distance);
 
-protected abstract void SetLOD(int newlod);
+	protected abstract void SetLOD(int newlod);
 
-protected abstract void Show();
+	protected abstract void Show();
 
-protected abstract void Hide();
+	protected abstract void Hide();
 
-protected virtual void Hide(bool shadowsVisible) { }
+	protected virtual void Hide(bool shadowsVisible) { }
 
-protected virtual bool IsLODHiding() { }
+	protected virtual bool IsLODHiding() { }
 
-public void WorkshopMode() { }
+	public void WorkshopMode() { }
 
-protected virtual bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
+	protected virtual bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
 
-private void UpdateShadowRange() { }
+	private void UpdateShadowRange() { }
 
-public static void ClearOccludees() { }
+	public static void ClearOccludees() { }
 
-private static void UpdateDynamicOccludeeBounds(LODComponent lodcomp) { }
+	private static void UpdateDynamicOccludeeBounds(LODComponent lodcomp) { }
 
-public static void UpdateDynamicOccludees() { }
+	public static void UpdateDynamicOccludees() { }
 
-public void ResetCulling() { }
+	public void ResetCulling() { }
 
-protected virtual void RegisterToCulling(bool isVisible = True) { }
+	protected virtual void RegisterToCulling(bool isVisible = True) { }
 
-protected virtual void UnregisterFromCulling() { }
+	protected virtual void UnregisterFromCulling() { }
 
-protected virtual void OnVisibilityChanged(bool visible) { }
+	protected virtual void OnVisibilityChanged(bool visible) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -118,11 +118,11 @@ private sealed class LODComponent.<>c // TypeDefIndex: 9931
 	public static Predicate<LODComponent> <>9__34_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <ChangeCullingAll>b__34_0(LODComponent i) { }
+	internal bool <ChangeCullingAll>b__34_0(LODComponent i) { }
 
 }
 

@@ -8,15 +8,15 @@ public class ResourceEntity : BaseEntity // TypeDefIndex: 9675
 	protected bool isKilled; 
 
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override void OnAttacked(HitInfo info) { }
+	public override void OnAttacked(HitInfo info) { }
 
-public override float BoundsPadding() { }
+	public override float BoundsPadding() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -2,12 +2,12 @@ public class SendMessageToEntityOnAnimationFinish : StateMachineBehaviour // Typ
 {
 	public string messageToSendToEntity; 
 	public float repeatRate; 
-private const float lastMessageSent = 0;
+	private const float lastMessageSent = 0;
 
 
-public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+	public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

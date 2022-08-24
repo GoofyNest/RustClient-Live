@@ -5,24 +5,24 @@ public class TypeLoadException : SystemException, ISerializable // TypeDefIndex:
 	private string MessageArg; 
 	internal int ResourceId; 
 
-public override string Message { get; }
+	public override string Message { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string message) { }
+	public void .ctor(string message) { }
 
-public override string get_Message() { }
+	public override string get_Message() { }
 
-private void SetMessageField() { }
+	private void SetMessageField() { }
 
-private void .ctor(string className, string assemblyName) { }
+	private void .ctor(string className, string assemblyName) { }
 
-private void .ctor(string className, string assemblyName, string messageArg, int resourceId) { }
+	private void .ctor(string className, string assemblyName, string messageArg, int resourceId) { }
 
-protected void .ctor(SerializationInfo info, StreamingContext context) { }
+	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public override void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public override void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
 }
 

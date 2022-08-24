@@ -36,9 +36,9 @@ public class MiniCopterSounds : MonoBehaviour, IClientComponent // TypeDefIndex:
 	private bool isStartingUp; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

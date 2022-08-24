@@ -3,15 +3,15 @@ internal sealed class NotesBuilder // TypeDefIndex: 7440
 	private readonly NoteDetectionSettings _noteDetectionSettings; 
 
 
-public void .ctor(NoteDetectionSettings noteDetectionSettings) { }
+	public void .ctor(NoteDetectionSettings noteDetectionSettings) { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerable<Note> GetNotesLazy(IEnumerable<TimedEvent> timedEvents, bool collectTimedEvents = False, List<TimedEvent> collectedTimedEvents) { }
+	public IEnumerable<Note> GetNotesLazy(IEnumerable<TimedEvent> timedEvents, bool collectTimedEvents = False, List<TimedEvent> collectedTimedEvents) { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerable<Note> GetNotesLazy(IEnumerable<Tuple<TimedEvent, int>> timedEvents, bool collectTimedEvents = False, List<Tuple<TimedEvent, int>> collectedTimedEvents) { }
+	public IEnumerable<Note> GetNotesLazy(IEnumerable<Tuple<TimedEvent, int>> timedEvents, bool collectTimedEvents = False, List<Tuple<TimedEvent, int>> collectedTimedEvents) { }
 
-private static int GetNoteEventId(NoteEvent noteEvent) { }
+	private static int GetNoteEventId(NoteEvent noteEvent) { }
 
 }
 
@@ -22,25 +22,25 @@ private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7441
 	[CompilerGeneratedAttribute] 
 	private TimedEvent <NoteOffTimedEvent>k__BackingField; 
 
-public TimedEvent NoteOnTimedEvent { get; }
-public TimedEvent NoteOffTimedEvent { get; set; }
-public bool IsCompleted { get; }
+	public TimedEvent NoteOnTimedEvent { get; }
+	public TimedEvent NoteOffTimedEvent { get; set; }
+	public bool IsCompleted { get; }
 
 
-public void .ctor(TimedEvent noteOnTimedEvent) { }
-
-	[CompilerGeneratedAttribute] 
-public TimedEvent get_NoteOnTimedEvent() { }
+	public void .ctor(TimedEvent noteOnTimedEvent) { }
 
 	[CompilerGeneratedAttribute] 
-public TimedEvent get_NoteOffTimedEvent() { }
+	public TimedEvent get_NoteOnTimedEvent() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_NoteOffTimedEvent(TimedEvent value) { }
+	public TimedEvent get_NoteOffTimedEvent() { }
 
-public bool get_IsCompleted() { }
+	[CompilerGeneratedAttribute] 
+	public void set_NoteOffTimedEvent(TimedEvent value) { }
 
-public Note GetNote() { }
+	public bool get_IsCompleted() { }
+
+	public Note GetNote() { }
 
 }
 
@@ -50,43 +50,43 @@ private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefInd
 	private readonly Stack<LinkedListNode<TDescriptor>> _nodesStack; 
 	private readonly Queue<LinkedListNode<TDescriptor>> _nodesQueue; 
 
-public int Count { get; }
+	public int Count { get; }
 
 
-public void .ctor(NoteStartDetectionPolicy noteStartDetectionPolicy) { }
-/* GenericInstMethod :
-|
-|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>..ctor
-|-NotesBuilder.NoteOnsHolderBase<object>..ctor
-*/
+	public void .ctor(NoteStartDetectionPolicy noteStartDetectionPolicy) { }
+	/* GenericInstMethod :
+	|
+	|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>..ctor
+	|-NotesBuilder.NoteOnsHolderBase<object>..ctor
+	*/
 
-public int get_Count() { }
-/* GenericInstMethod :
-|
-|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>.get_Count
-|-NotesBuilder.NoteOnsHolderBase<object>.get_Count
-*/
+	public int get_Count() { }
+	/* GenericInstMethod :
+	|
+	|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>.get_Count
+	|-NotesBuilder.NoteOnsHolderBase<object>.get_Count
+	*/
 
-public void Add(LinkedListNode<TDescriptor> noteOnNode) { }
-/* GenericInstMethod :
-|
-|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>.Add
-|-NotesBuilder.NoteOnsHolderBase<object>.Add
-*/
+	public void Add(LinkedListNode<TDescriptor> noteOnNode) { }
+	/* GenericInstMethod :
+	|
+	|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>.Add
+	|-NotesBuilder.NoteOnsHolderBase<object>.Add
+	*/
 
-public LinkedListNode<TDescriptor> GetNext() { }
-/* GenericInstMethod :
-|
-|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>.GetNext
-|-NotesBuilder.NoteOnsHolderBase<object>.GetNext
-*/
+	public LinkedListNode<TDescriptor> GetNext() { }
+	/* GenericInstMethod :
+	|
+	|-NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor>.GetNext
+	|-NotesBuilder.NoteOnsHolderBase<object>.GetNext
+	*/
 
 }
 
 private sealed class NotesBuilder.NoteOnsHolder : NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor> // TypeDefIndex: 7443
 {
 
-public void .ctor(NoteStartDetectionPolicy noteStartDetectionPolicy) { }
+	public void .ctor(NoteStartDetectionPolicy noteStartDetectionPolicy) { }
 
 }
 
@@ -108,36 +108,36 @@ private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnume
 	private LinkedListNode<NotesBuilder.NoteDescriptor> <n>5__5; 
 	private LinkedList.Enumerator<NotesBuilder.NoteDescriptor> <>7__wrap5; 
 
-private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
+	private void <>m__Finally1() { }
 
-private void <>m__Finally2() { }
-
-	[DebuggerHiddenAttribute] 
-private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.get_Current() { }
+	private void <>m__Finally2() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<Note> System.Collections.Generic.IEnumerable<Melanchall.DryWetMidi.Interaction.Note>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<Note> System.Collections.Generic.IEnumerable<Melanchall.DryWetMidi.Interaction.Note>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
@@ -160,36 +160,36 @@ private sealed class NotesBuilder.<GetNotesLazy>d__8 : IEnumerable<Note>, IEnume
 	private LinkedListNode<NotesBuilder.NoteDescriptor> <n>5__6; 
 	private LinkedList.Enumerator<NotesBuilder.NoteDescriptor> <>7__wrap6; 
 
-private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
+	private void <>m__Finally1() { }
 
-private void <>m__Finally2() { }
-
-	[DebuggerHiddenAttribute] 
-private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.get_Current() { }
+	private void <>m__Finally2() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private Note System.Collections.Generic.IEnumerator<Melanchall.DryWetMidi.Interaction.Note>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator<Note> System.Collections.Generic.IEnumerable<Melanchall.DryWetMidi.Interaction.Note>.GetEnumerator() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator<Note> System.Collections.Generic.IEnumerable<Melanchall.DryWetMidi.Interaction.Note>.GetEnumerator() { }
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 

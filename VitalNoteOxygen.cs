@@ -25,18 +25,18 @@ public class VitalNoteOxygen : MonoBehaviour, IClientComponent, IVitalNotice // 
 	protected bool show; 
 	private TimeSince timeSinceLastRefresh; 
 
-public bool IsActive { get; }
+	public bool IsActive { get; }
 
 
-public void Refresh() { }
+	public void Refresh() { }
 
-private void Hide() { }
+	private void Hide() { }
 
-protected virtual void Show() { }
+	protected virtual void Show() { }
 
-public bool get_IsActive() { }
+	public bool get_IsActive() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

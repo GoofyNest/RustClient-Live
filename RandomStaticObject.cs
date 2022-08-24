@@ -5,9 +5,9 @@ public class RandomStaticObject : MonoBehaviour // TypeDefIndex: 10355
 	public GameObject[] Candidates; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

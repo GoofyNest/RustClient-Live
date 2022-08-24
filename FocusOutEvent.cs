@@ -1,11 +1,11 @@
 public class FocusOutEvent : FocusEventBase<FocusOutEvent> // TypeDefIndex: 4652
 {
 
-protected override void Init() { }
+	protected override void Init() { }
 
-private void LocalInit() { }
+	private void LocalInit() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

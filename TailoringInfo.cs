@@ -6,7 +6,7 @@ internal class TailoringInfo // TypeDefIndex: 31
 	public readonly bool FrenchSort; 
 
 
-public void .ctor(int lcid, int tailoringIndex, int tailoringCount, bool frenchSort) { }
+	public void .ctor(int lcid, int tailoringIndex, int tailoringCount, bool frenchSort) { }
 
 }
 

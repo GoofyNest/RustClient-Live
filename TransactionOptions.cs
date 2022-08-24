@@ -4,13 +4,13 @@ public struct TransactionOptions // TypeDefIndex: 3988
 	private TimeSpan timeout; 
 
 
-internal void .ctor(IsolationLevel level, TimeSpan timeout) { }
+	internal void .ctor(IsolationLevel level, TimeSpan timeout) { }
 
-public static bool op_Equality(TransactionOptions x, TransactionOptions y) { }
+	public static bool op_Equality(TransactionOptions x, TransactionOptions y) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

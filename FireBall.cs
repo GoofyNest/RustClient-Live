@@ -16,11 +16,11 @@ public class FireBall : BaseEntity, ISplashable // TypeDefIndex: 9537
 	private bool wasResting; 
 
 
-public bool IsResting() { }
+	public bool IsResting() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

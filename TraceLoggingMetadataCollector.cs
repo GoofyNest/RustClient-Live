@@ -6,46 +6,46 @@ internal class TraceLoggingMetadataCollector // TypeDefIndex: 1587
 	[CompilerGeneratedAttribute] 
 	private EventFieldTags <Tags>k__BackingField; 
 
-internal EventFieldTags Tags { get; set; }
-internal int ScratchSize { get; }
-internal int DataCount { get; }
-internal int PinCount { get; }
-private bool BeginningBufferedArray { get; }
+	internal EventFieldTags Tags { get; set; }
+	internal int ScratchSize { get; }
+	internal int DataCount { get; }
+	internal int PinCount { get; }
+	private bool BeginningBufferedArray { get; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-private void .ctor(TraceLoggingMetadataCollector other, FieldMetadata group) { }
-
-	[CompilerGeneratedAttribute] 
-internal EventFieldTags get_Tags() { }
+	private void .ctor(TraceLoggingMetadataCollector other, FieldMetadata group) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Tags(EventFieldTags value) { }
+	internal EventFieldTags get_Tags() { }
 
-internal int get_ScratchSize() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_Tags(EventFieldTags value) { }
 
-internal int get_DataCount() { }
+	internal int get_ScratchSize() { }
 
-internal int get_PinCount() { }
+	internal int get_DataCount() { }
 
-private bool get_BeginningBufferedArray() { }
+	internal int get_PinCount() { }
 
-public TraceLoggingMetadataCollector AddGroup(string name) { }
+	private bool get_BeginningBufferedArray() { }
 
-public void AddScalar(string name, TraceLoggingDataType type) { }
+	public TraceLoggingMetadataCollector AddGroup(string name) { }
 
-public void AddBinary(string name, TraceLoggingDataType type) { }
+	public void AddScalar(string name, TraceLoggingDataType type) { }
 
-public void AddArray(string name, TraceLoggingDataType type) { }
+	public void AddBinary(string name, TraceLoggingDataType type) { }
 
-public void BeginBufferedArray() { }
+	public void AddArray(string name, TraceLoggingDataType type) { }
 
-public void EndBufferedArray() { }
+	public void BeginBufferedArray() { }
 
-internal byte[] GetMetadata() { }
+	public void EndBufferedArray() { }
 
-private void AddField(FieldMetadata fieldMetadata) { }
+	internal byte[] GetMetadata() { }
+
+	private void AddField(FieldMetadata fieldMetadata) { }
 
 }
 
@@ -59,17 +59,17 @@ private class TraceLoggingMetadataCollector.Impl // TypeDefIndex: 1588
 	private bool scalar; 
 
 
-public void AddScalar(int size) { }
+	public void AddScalar(int size) { }
 
-public void AddNonscalar() { }
+	public void AddNonscalar() { }
 
-public void BeginBuffered() { }
+	public void BeginBuffered() { }
 
-public void EndBuffered() { }
+	public void EndBuffered() { }
 
-public int Encode(byte[] metadata) { }
+	public int Encode(byte[] metadata) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

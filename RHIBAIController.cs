@@ -4,13 +4,13 @@ public class RHIBAIController : FacepunchBehaviour // TypeDefIndex: 9703
 
 
 	[ContextMenu] 
-public void SetupPatrolPath() { }
+	public void SetupPatrolPath() { }
 
-public float GetWaterDepth(Vector3 pos) { }
+	public float GetWaterDepth(Vector3 pos) { }
 
-public void OnDrawGizmosSelected() { }
+	public void OnDrawGizmosSelected() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

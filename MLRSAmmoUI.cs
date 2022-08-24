@@ -7,11 +7,11 @@ public class MLRSAmmoUI : MonoBehaviour // TypeDefIndex: 9721
 	private int lastSetAmmoCount; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void SetAmmo(int ammoCount) { }
+	public void SetAmmo(int ammoCount) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -12,21 +12,21 @@ public class LayerIDecoder : IFrameDecoder // TypeDefIndex: 7400
 	protected int WhichChannels; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public virtual void DecodeFrame() { }
+	public virtual void DecodeFrame() { }
 
-internal virtual void Create(Bitstream stream0, Header header0, SynthesisFilter filtera, SynthesisFilter filterb, ABuffer buffer0, int whichCh0) { }
+	internal virtual void Create(Bitstream stream0, Header header0, SynthesisFilter filtera, SynthesisFilter filterb, ABuffer buffer0, int whichCh0) { }
 
-protected virtual void CreateSubbands() { }
+	protected virtual void CreateSubbands() { }
 
-protected virtual void ReadAllocation() { }
+	protected virtual void ReadAllocation() { }
 
-protected virtual void ReadScaleFactorSelection() { }
+	protected virtual void ReadScaleFactorSelection() { }
 
-protected virtual void ReadScaleFactors() { }
+	protected virtual void ReadScaleFactors() { }
 
-protected virtual void ReadSampleData() { }
+	protected virtual void ReadSampleData() { }
 
 }
 

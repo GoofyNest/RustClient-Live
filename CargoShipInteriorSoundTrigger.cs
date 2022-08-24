@@ -3,11 +3,11 @@ public class CargoShipInteriorSoundTrigger : MonoBehaviour, IClientComponent // 
 	public CargoShipSounds cargoShipSounds; 
 
 
-private void OnTriggerEnter(Collider other) { }
+	private void OnTriggerEnter(Collider other) { }
 
-private void OnTriggerExit(Collider other) { }
+	private void OnTriggerExit(Collider other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

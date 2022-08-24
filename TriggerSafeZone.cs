@@ -6,30 +6,30 @@ public class TriggerSafeZone : TriggerBase // TypeDefIndex: 10045
 	[CompilerGeneratedAttribute] 
 	private Collider <triggerCollider>k__BackingField; 
 
-public Collider triggerCollider { get; set; }
+	public Collider triggerCollider { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Collider get_triggerCollider() { }
+	public Collider get_triggerCollider() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_triggerCollider(Collider value) { }
+	private void set_triggerCollider(Collider value) { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-public bool PassesHeightChecks(Vector3 entPos) { }
+	public bool PassesHeightChecks(Vector3 entPos) { }
 
-public float GetSafeLevel(Vector3 pos) { }
+	public float GetSafeLevel(Vector3 pos) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -7,9 +7,9 @@ public class PlacePowerlineObjects : ProceduralComponent // TypeDefIndex: 10557
 	public PathList.PathObject[] Path; 
 
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

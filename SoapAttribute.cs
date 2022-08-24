@@ -9,17 +9,17 @@ public class SoapAttribute : Attribute
 	protected string ProtXmlNamespace; 
 	protected object ReflectInfo; 
 
-public virtual bool UseAttribute { get; }
-public virtual string XmlNamespace { get; }
+	public virtual bool UseAttribute { get; }
+	public virtual string XmlNamespace { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public virtual bool get_UseAttribute() { }
+	public virtual bool get_UseAttribute() { }
 
-public virtual string get_XmlNamespace() { }
+	public virtual string get_XmlNamespace() { }
 
-internal virtual void SetReflectionObject(object reflectionObject) { }
+	internal virtual void SetReflectionObject(object reflectionObject) { }
 
 }
 

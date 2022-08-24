@@ -15,25 +15,25 @@ public class Scoreboard : MonoBehaviour, IClientComponent // TypeDefIndex: 11212
 	private bool dirty; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public static void ForceScoreboardUpdate() { }
+	public static void ForceScoreboardUpdate() { }
 
-public static void UpdateScoreboard() { }
+	public static void UpdateScoreboard() { }
 
-public void OnToggle(bool isShowing) { }
+	public void OnToggle(bool isShowing) { }
 
-private static void OnDisconnected() { }
+	private static void OnDisconnected() { }
 
-public void ClearTeamContents() { }
+	public void ClearTeamContents() { }
 
-public void RebuildScoreboard() { }
+	public void RebuildScoreboard() { }
 
-public void UpdateScoreboard(bool rebuild = False) { }
+	public void UpdateScoreboard(bool rebuild = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -43,7 +43,7 @@ public class Scoreboard.TeamColumn // TypeDefIndex: 11213
 	public GameObject[] activeColumns; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

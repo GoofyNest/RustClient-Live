@@ -8,57 +8,57 @@ public class Tree : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6496
 	public float scale; 
 
 
-public static void ResetToPool(Tree instance) { }
+	public static void ResetToPool(Tree instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Tree instance) { }
+	public void CopyTo(Tree instance) { }
 
-public Tree Copy() { }
+	public Tree Copy() { }
 
-public static Tree Deserialize(Stream stream) { }
+	public static Tree Deserialize(Stream stream) { }
 
-public static Tree DeserializeLengthDelimited(Stream stream) { }
+	public static Tree DeserializeLengthDelimited(Stream stream) { }
 
-public static Tree DeserializeLength(Stream stream, int length) { }
+	public static Tree DeserializeLength(Stream stream, int length) { }
 
-public static Tree Deserialize(byte[] buffer) { }
+	public static Tree Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Tree previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Tree previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Tree Deserialize(byte[] buffer, Tree instance, bool isDelta = False) { }
+	public static Tree Deserialize(byte[] buffer, Tree instance, bool isDelta = False) { }
 
-public static Tree Deserialize(Stream stream, Tree instance, bool isDelta) { }
+	public static Tree Deserialize(Stream stream, Tree instance, bool isDelta) { }
 
-public static Tree DeserializeLengthDelimited(Stream stream, Tree instance, bool isDelta) { }
+	public static Tree DeserializeLengthDelimited(Stream stream, Tree instance, bool isDelta) { }
 
-public static Tree DeserializeLength(Stream stream, int length, Tree instance, bool isDelta) { }
+	public static Tree DeserializeLength(Stream stream, int length, Tree instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Tree instance, Tree previous) { }
+	public static void SerializeDelta(Stream stream, Tree instance, Tree previous) { }
 
-public static void Serialize(Stream stream, Tree instance) { }
+	public static void Serialize(Stream stream, Tree instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Tree instance) { }
+	public static byte[] SerializeToBytes(Tree instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Tree instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Tree instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -78,19 +78,19 @@ internal sealed class Tree // TypeDefIndex: 6953
 	internal StaticTree staticTree; 
 
 
-internal static int DistanceCode(int dist) { }
+	internal static int DistanceCode(int dist) { }
 
-internal void gen_bitlen(DeflateManager s) { }
+	internal void gen_bitlen(DeflateManager s) { }
 
-internal void build_tree(DeflateManager s) { }
+	internal void build_tree(DeflateManager s) { }
 
-internal static void gen_codes(short[] tree, int max_code, short[] bl_count) { }
+	internal static void gen_codes(short[] tree, int max_code, short[] bl_count) { }
 
-internal static int bi_reverse(int code, int len) { }
+	internal static int bi_reverse(int code, int len) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -100,28 +100,28 @@ public class Tree : ConsoleSystem // TypeDefIndex: 11966
 	private static int m_meshes; 
 
 	[ClientVar] 
-public static float quality { get; set; }
-public static float lod { get; }
-public static float cull { get; }
+	public static float quality { get; set; }
+	public static float lod { get; }
+	public static float cull { get; }
 	[ClientVar] 
-public static int meshes { get; set; }
+	public static int meshes { get; set; }
 
 
-public static float get_quality() { }
+	public static float get_quality() { }
 
-public static void set_quality(float value) { }
+	public static void set_quality(float value) { }
 
-public static float get_lod() { }
+	public static float get_lod() { }
 
-public static float get_cull() { }
+	public static float get_cull() { }
 
-public static int get_meshes() { }
+	public static int get_meshes() { }
 
-public static void set_meshes(int value) { }
+	public static void set_meshes(int value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -1,23 +1,23 @@
 internal abstract class RuntimeFieldInfo : FieldInfo, ISerializable // TypeDefIndex: 577
 {
-internal BindingFlags BindingFlags { get; }
-public override Module Module { get; }
-private RuntimeType ReflectedTypeInternal { get; }
+	internal BindingFlags BindingFlags { get; }
+	public override Module Module { get; }
+	private RuntimeType ReflectedTypeInternal { get; }
 
 
-internal BindingFlags get_BindingFlags() { }
+	internal BindingFlags get_BindingFlags() { }
 
-public override Module get_Module() { }
+	public override Module get_Module() { }
 
-internal RuntimeType GetDeclaringTypeInternal() { }
+	internal RuntimeType GetDeclaringTypeInternal() { }
 
-private RuntimeType get_ReflectedTypeInternal() { }
+	private RuntimeType get_ReflectedTypeInternal() { }
 
-internal RuntimeModule GetRuntimeModule() { }
+	internal RuntimeModule GetRuntimeModule() { }
 
-public void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

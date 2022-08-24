@@ -3,23 +3,23 @@ public sealed class TicksPerQuarterNoteTimeDivision : TimeDivision // TypeDefInd
 	[CompilerGeneratedAttribute] 
 	private readonly short <TicksPerQuarterNote>k__BackingField; 
 
-public short TicksPerQuarterNote { get; }
+	public short TicksPerQuarterNote { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(short ticksPerQuarterNote) { }
+	public void .ctor(short ticksPerQuarterNote) { }
 
 	[CompilerGeneratedAttribute] 
-public short get_TicksPerQuarterNote() { }
+	public short get_TicksPerQuarterNote() { }
 
-public static bool op_Equality(TicksPerQuarterNoteTimeDivision timeDivision1, TicksPerQuarterNoteTimeDivision timeDivision2) { }
+	public static bool op_Equality(TicksPerQuarterNoteTimeDivision timeDivision1, TicksPerQuarterNoteTimeDivision timeDivision2) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

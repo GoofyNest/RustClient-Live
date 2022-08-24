@@ -8,23 +8,23 @@ public class Paddle : BaseMelee // TypeDefIndex: 9471
 	private static int param_forward; 
 	private Vector3 smoothedAnimDirection; 
 
-protected override bool CanAttack { get; }
-protected override bool CanThrow { get; }
+	protected override bool CanAttack { get; }
+	protected override bool CanThrow { get; }
 
 
-public override AnimatorOverrideController GetHoldAnimations() { }
+	public override AnimatorOverrideController GetHoldAnimations() { }
 
-private bool IsPlayerOnKayak(BasePlayer p) { }
+	private bool IsPlayerOnKayak(BasePlayer p) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-protected override bool get_CanAttack() { }
+	protected override bool get_CanAttack() { }
 
-protected override bool get_CanThrow() { }
+	protected override bool get_CanThrow() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

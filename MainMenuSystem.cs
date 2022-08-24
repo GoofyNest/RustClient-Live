@@ -14,38 +14,38 @@ public class MainMenuSystem : SingletonComponent<MainMenuSystem> // TypeDefIndex
 	public GameObject ReflexModeOption; 
 	public GameObject ReflexLatencyMarkerOption; 
 
-private bool shouldShowSessionButton { get; }
+	private bool shouldShowSessionButton { get; }
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-protected override void OnDestroy() { }
+	protected override void OnDestroy() { }
 
-private void Update() { }
+	private void Update() { }
 
-private bool get_shouldShowSessionButton() { }
+	private bool get_shouldShowSessionButton() { }
 
-private void OnEscape() { }
+	private void OnEscape() { }
 
-public void HideClicked() { }
+	public void HideClicked() { }
 
-public static void Hide() { }
+	public static void Hide() { }
 
-public static void Show() { }
+	public static void Show() { }
 
-private void ShowDemoBrowserButton() { }
+	private void ShowDemoBrowserButton() { }
 
-private void OnEnabledState(bool b) { }
+	private void OnEnabledState(bool b) { }
 
-private static void OnConnected() { }
+	private static void OnConnected() { }
 
-private static void OnDisconnected() { }
+	private static void OnDisconnected() { }
 
-public void OnClickedQuitDemo() { }
+	public void OnClickedQuitDemo() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -56,13 +56,13 @@ private sealed class MainMenuSystem.<>c // TypeDefIndex: 11120
 	public static Func<IPlayerItemDefinition, int> <>9__15_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <Update>b__15_0(IPlayerItemDefinition x) { }
+	internal bool <Update>b__15_0(IPlayerItemDefinition x) { }
 
-internal int <Update>b__15_1(IPlayerItemDefinition x) { }
+	internal int <Update>b__15_1(IPlayerItemDefinition x) { }
 
 }
 

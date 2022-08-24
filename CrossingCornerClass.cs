@@ -8,7 +8,7 @@ public class CrossingCornerClass // TypeDefIndex: 7256
 	public float innerSegmentDistance; 
 
 
-public void .ctor(QDOQDSQOOQDDD sw, string name) { }
+	public void .ctor(QDOQDSQOOQDDD sw, string name) { }
 
 }
 

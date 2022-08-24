@@ -18,101 +18,101 @@ public class StreamReader : TextReader // TypeDefIndex: 646
 	private bool _closable; 
 	private Task _asyncReadTask; 
 
-internal static int DefaultBufferSize { get; }
-public virtual Encoding CurrentEncoding { get; }
-public virtual Stream BaseStream { get; }
-internal bool LeaveOpen { get; }
+	internal static int DefaultBufferSize { get; }
+	public virtual Encoding CurrentEncoding { get; }
+	public virtual Stream BaseStream { get; }
+	internal bool LeaveOpen { get; }
 
 
-internal static int get_DefaultBufferSize() { }
+	internal static int get_DefaultBufferSize() { }
 
-private void CheckAsyncTaskInProgress() { }
+	private void CheckAsyncTaskInProgress() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public void .ctor(Stream stream) { }
+	public void .ctor(Stream stream) { }
 
-public void .ctor(Stream stream, bool detectEncodingFromByteOrderMarks) { }
+	public void .ctor(Stream stream, bool detectEncodingFromByteOrderMarks) { }
 
-public void .ctor(Stream stream, Encoding encoding) { }
+	public void .ctor(Stream stream, Encoding encoding) { }
 
-public void .ctor(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen) { }
+	public void .ctor(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen) { }
 
-public void .ctor(string path) { }
+	public void .ctor(string path) { }
 
-public void .ctor(string path, bool detectEncodingFromByteOrderMarks) { }
+	public void .ctor(string path, bool detectEncodingFromByteOrderMarks) { }
 
-public void .ctor(string path, Encoding encoding) { }
+	public void .ctor(string path, Encoding encoding) { }
 
-public void .ctor(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize) { }
+	public void .ctor(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize) { }
 
-internal void .ctor(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool checkHost) { }
+	internal void .ctor(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool checkHost) { }
 
-private void Init(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen) { }
+	private void Init(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen) { }
 
-internal void Init(Stream stream) { }
+	internal void Init(Stream stream) { }
 
-public override void Close() { }
+	public override void Close() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-public virtual Encoding get_CurrentEncoding() { }
+	public virtual Encoding get_CurrentEncoding() { }
 
-public virtual Stream get_BaseStream() { }
+	public virtual Stream get_BaseStream() { }
 
-internal bool get_LeaveOpen() { }
+	internal bool get_LeaveOpen() { }
 
-public override int Peek() { }
+	public override int Peek() { }
 
-internal bool DataAvailable() { }
+	internal bool DataAvailable() { }
 
-public override int Read() { }
+	public override int Read() { }
 
-public override int Read([In] [Out] char[] buffer, int index, int count) { }
+	public override int Read([In] [Out] char[] buffer, int index, int count) { }
 
-public override string ReadToEnd() { }
+	public override string ReadToEnd() { }
 
-private void CompressBuffer(int n) { }
+	private void CompressBuffer(int n) { }
 
-private void DetectEncoding() { }
+	private void DetectEncoding() { }
 
-private bool IsPreamble() { }
+	private bool IsPreamble() { }
 
-internal virtual int ReadBuffer() { }
+	internal virtual int ReadBuffer() { }
 
-private int ReadBuffer(char[] userBuffer, int userOffset, int desiredChars, out bool readToUserBuffer) { }
+	private int ReadBuffer(char[] userBuffer, int userOffset, int desiredChars, out bool readToUserBuffer) { }
 
-public override string ReadLine() { }
+	public override string ReadLine() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 private class StreamReader.NullStreamReader : StreamReader // TypeDefIndex: 647
 {
-public override Stream BaseStream { get; }
-public override Encoding CurrentEncoding { get; }
+	public override Stream BaseStream { get; }
+	public override Encoding CurrentEncoding { get; }
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public override Stream get_BaseStream() { }
+	public override Stream get_BaseStream() { }
 
-public override Encoding get_CurrentEncoding() { }
+	public override Encoding get_CurrentEncoding() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-public override int Peek() { }
+	public override int Peek() { }
 
-public override int Read() { }
+	public override int Read() { }
 
-public override int Read(char[] buffer, int index, int count) { }
+	public override int Read(char[] buffer, int index, int count) { }
 
-public override string ReadLine() { }
+	public override string ReadLine() { }
 
-public override string ReadToEnd() { }
+	public override string ReadToEnd() { }
 
-internal override int ReadBuffer() { }
+	internal override int ReadBuffer() { }
 
 }
 

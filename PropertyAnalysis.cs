@@ -6,7 +6,7 @@ internal sealed class PropertyAnalysis // TypeDefIndex: 1530
 	internal readonly EventFieldAttribute fieldAttribute; 
 
 
-public void .ctor(string name, MethodInfo getterInfo, TraceLoggingTypeInfo typeInfo, EventFieldAttribute fieldAttribute) { }
+	public void .ctor(string name, MethodInfo getterInfo, TraceLoggingTypeInfo typeInfo, EventFieldAttribute fieldAttribute) { }
 
 }
 

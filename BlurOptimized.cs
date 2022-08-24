@@ -12,23 +12,23 @@ public class BlurOptimized : PostEffectsBase, IImageEffect // TypeDefIndex: 8166
 	private Material blurMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum BlurOptimized.BlurType // TypeDefIndex: 8167
 {
 	public int value__; 
-public const BlurOptimized.BlurType StandardGauss = 0;
-public const BlurOptimized.BlurType SgxGauss = 1;
+	public const BlurOptimized.BlurType StandardGauss = 0;
+	public const BlurOptimized.BlurType SgxGauss = 1;
 
 }
 
@@ -44,7 +44,7 @@ public class BlurOptimized : PostProcessEffectSettings // TypeDefIndex: 10242
 	public BlurTypeParameter blurType; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,11 +6,11 @@ public class HorseEquipmentInformationPanel : ItemInformationPanel // TypeDefInd
 	public ItemTextValue storageAmountDisplay; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -11,9 +11,9 @@ public class TriggerTemperature : TriggerBase // TypeDefIndex: 10048
 	public float blockMaxHour; 
 
 
-private void OnValidate() { }
+	private void OnValidate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

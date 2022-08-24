@@ -11,11 +11,11 @@ public class WearableHairCap : MonoBehaviour // TypeDefIndex: 9255
 	private static int _HairPackedMapUV2; 
 
 
-public void ApplyHairCap(MaterialPropertyBlock block) { }
+	public void ApplyHairCap(MaterialPropertyBlock block) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

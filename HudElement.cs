@@ -6,13 +6,13 @@ public class HudElement : MonoBehaviour // TypeDefIndex: 10934
 	private float lastMax; 
 
 
-public void SetValue(float value, float max = 1) { }
+	public void SetValue(float value, float max = 1) { }
 
-private void SetText(string v) { }
+	private void SetText(string v) { }
 
-private void SetImage(float f) { }
+	private void SetImage(float f) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,61 +8,61 @@ public class CommunityEntity : PointEntity // TypeDefIndex: 8551
 	public static CommunityEntity ClientInstance; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void CL_ReceiveFilePng(BaseEntity.RPCMessage msg) { }
+	public void CL_ReceiveFilePng(BaseEntity.RPCMessage msg) { }
 
-private static CommunityEntity.CachedTexture GetCachedTexture(uint textureId) { }
+	private static CommunityEntity.CachedTexture GetCachedTexture(uint textureId) { }
 
-private CommunityEntity.CachedTexture StoreCachedTexture(uint textureId, byte[] bytes) { }
+	private CommunityEntity.CachedTexture StoreCachedTexture(uint textureId, byte[] bytes) { }
 
-private void ApplyTextureToImage(MaskableGraphic component, uint textureID) { }
+	private void ApplyTextureToImage(MaskableGraphic component, uint textureID) { }
 
-private void ApplyCachedTextureToImage(MaskableGraphic component, CommunityEntity.CachedTexture texture) { }
+	private void ApplyCachedTextureToImage(MaskableGraphic component, CommunityEntity.CachedTexture texture) { }
 
-private static void UnloadTextureCache() { }
+	private static void UnloadTextureCache() { }
 
-public static void DestroyServerCreatedUI() { }
+	public static void DestroyServerCreatedUI() { }
 
-public void SetVisible(bool b) { }
+	public void SetVisible(bool b) { }
 
-private static void RegisterUi(GameObject go) { }
+	private static void RegisterUi(GameObject go) { }
 
 	[BaseEntity.RPC_Client] 
-public void AddUI(BaseEntity.RPCMessage msg) { }
+	public void AddUI(BaseEntity.RPCMessage msg) { }
 
-private GameObject FindPanel(string name) { }
+	private GameObject FindPanel(string name) { }
 
-private void CreateComponents(GameObject go, Object obj) { }
+	private void CreateComponents(GameObject go, Object obj) { }
 
-private static T ParseEnum<T>(string value, T defaultValue) { }
-/* GenericInstMethod :
-|
-|-CommunityEntity.ParseEnum<Int32Enum>
-|-CommunityEntity.ParseEnum<TextAnchor>
-|-CommunityEntity.ParseEnum<Image.Type>
-|-CommunityEntity.ParseEnum<InputField.LineType>
-|-CommunityEntity.ParseEnum<VerticalWrapMode>
-*/
+	private static T ParseEnum<T>(string value, T defaultValue) { }
+	/* GenericInstMethod :
+	|
+	|-CommunityEntity.ParseEnum<Int32Enum>
+	|-CommunityEntity.ParseEnum<TextAnchor>
+	|-CommunityEntity.ParseEnum<Image.Type>
+	|-CommunityEntity.ParseEnum<InputField.LineType>
+	|-CommunityEntity.ParseEnum<VerticalWrapMode>
+	*/
 
-private void GraphicComponentCreated(Graphic c, Object obj) { }
+	private void GraphicComponentCreated(Graphic c, Object obj) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator LoadTextureFromWWW(RawImage c, string p) { }
+	private IEnumerator LoadTextureFromWWW(RawImage c, string p) { }
 
 	[BaseEntity.RPC_Client] 
-public void DestroyUI(BaseEntity.RPCMessage msg) { }
+	public void DestroyUI(BaseEntity.RPCMessage msg) { }
 
-private void DestroyPanel(string pnlName) { }
+	private void DestroyPanel(string pnlName) { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override void DestroyShared() { }
+	public override void DestroyShared() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -77,13 +77,13 @@ private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 8552
 	private Text textComponent; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void UpdateCountdown() { }
+	private void UpdateCountdown() { }
 
-private void End() { }
+	private void End() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -92,11 +92,11 @@ private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 8553
 	public float duration; 
 
 
-public void FadeOutAndDestroy() { }
+	public void FadeOutAndDestroy() { }
 
-public void Kill() { }
+	public void Kill() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -106,9 +106,9 @@ private class CommunityEntity.CachedTexture // TypeDefIndex: 8554
 	public Sprite Sprite; 
 
 
-public void Destroy() { }
+	public void Destroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -117,7 +117,7 @@ private sealed class CommunityEntity.<>c__DisplayClass19_0 // TypeDefIndex: 8555
 	public Image c; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -127,11 +127,11 @@ private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 8556
 	public CommunityEntity.<>c__DisplayClass19_0 CS$<>8__locals1; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CreateComponents>b__0(ItemSkinDirectory.Skin x) { }
+	internal bool <CreateComponents>b__0(ItemSkinDirectory.Skin x) { }
 
-internal void <CreateComponents>b__1() { }
+	internal void <CreateComponents>b__1() { }
 
 }
 
@@ -140,9 +140,9 @@ private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 8557
 	public string cmd; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <CreateComponents>b__2() { }
+	internal void <CreateComponents>b__2() { }
 
 }
 
@@ -152,9 +152,9 @@ private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 8558
 	public CommunityEntity <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <CreateComponents>b__3() { }
+	internal void <CreateComponents>b__3() { }
 
 }
 
@@ -163,9 +163,9 @@ private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 8559
 	public string cmd; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <CreateComponents>b__4(string value) { }
+	internal void <CreateComponents>b__4(string value) { }
 
 }
 
@@ -177,26 +177,26 @@ private sealed class CommunityEntity.<LoadTextureFromWWW>d__22 : IEnumerator<obj
 	public RawImage c; 
 	private WWW <www>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -1,14 +1,14 @@
 public sealed class TerrainLayer : Object // TypeDefIndex: 4095
 {
-public Texture2D diffuseTexture { get; }
+	public Texture2D diffuseTexture { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_Create(TerrainLayer layer) { }
+	private static void Internal_Create(TerrainLayer layer) { }
 
-public Texture2D get_diffuseTexture() { }
+	public Texture2D get_diffuseTexture() { }
 
 }
 

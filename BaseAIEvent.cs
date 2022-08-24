@@ -23,116 +23,116 @@ public class BaseAIEvent // TypeDefIndex: 9392
 	private float executeTimer; 
 	protected float deltaTime; 
 
-public AIEventType EventType { get; set; }
-public int TriggerStateContainerID { get; set; }
-public BaseAIEvent.ExecuteRate Rate { get; set; }
-public float ExecutionRate { get; }
-public bool ShouldExecute { get; set; }
-public bool Result { get; set; }
-public bool Inverted { get; set; }
-public int OutputEntityMemorySlot { get; set; }
-public bool ShouldSetOutputEntityMemory { get; }
-public int InputEntityMemorySlot { get; set; }
-public int ID { get; set; }
-public BaseEntity Owner { get; set; }
-public bool HasValidTriggerState { get; }
+	public AIEventType EventType { get; set; }
+	public int TriggerStateContainerID { get; set; }
+	public BaseAIEvent.ExecuteRate Rate { get; set; }
+	public float ExecutionRate { get; }
+	public bool ShouldExecute { get; set; }
+	public bool Result { get; set; }
+	public bool Inverted { get; set; }
+	public int OutputEntityMemorySlot { get; set; }
+	public bool ShouldSetOutputEntityMemory { get; }
+	public int InputEntityMemorySlot { get; set; }
+	public int ID { get; set; }
+	public BaseEntity Owner { get; set; }
+	public bool HasValidTriggerState { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public AIEventType get_EventType() { }
+	public AIEventType get_EventType() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_EventType(AIEventType value) { }
+	private void set_EventType(AIEventType value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_TriggerStateContainerID() { }
+	public int get_TriggerStateContainerID() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TriggerStateContainerID(int value) { }
+	private void set_TriggerStateContainerID(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public BaseAIEvent.ExecuteRate get_Rate() { }
+	public BaseAIEvent.ExecuteRate get_Rate() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_Rate(BaseAIEvent.ExecuteRate value) { }
+	protected void set_Rate(BaseAIEvent.ExecuteRate value) { }
 
-public float get_ExecutionRate() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_ShouldExecute() { }
+	public float get_ExecutionRate() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_ShouldExecute(bool value) { }
+	public bool get_ShouldExecute() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Result() { }
+	protected void set_ShouldExecute(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_Result(bool value) { }
+	public bool get_Result() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Inverted() { }
+	protected void set_Result(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Inverted(bool value) { }
+	public bool get_Inverted() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_OutputEntityMemorySlot() { }
+	private void set_Inverted(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_OutputEntityMemorySlot(int value) { }
-
-public bool get_ShouldSetOutputEntityMemory() { }
+	public int get_OutputEntityMemorySlot() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_InputEntityMemorySlot() { }
+	protected void set_OutputEntityMemorySlot(int value) { }
+
+	public bool get_ShouldSetOutputEntityMemory() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_InputEntityMemorySlot(int value) { }
+	public int get_InputEntityMemorySlot() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_ID() { }
+	protected void set_InputEntityMemorySlot(int value) { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_ID(int value) { }
+	public int get_ID() { }
 
 	[CompilerGeneratedAttribute] 
-public BaseEntity get_Owner() { }
+	protected void set_ID(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Owner(BaseEntity value) { }
+	public BaseEntity get_Owner() { }
 
-public bool get_HasValidTriggerState() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Owner(BaseEntity value) { }
 
-public void .ctor(AIEventType type) { }
+	public bool get_HasValidTriggerState() { }
 
-public virtual void Init(AIEventData data, BaseEntity owner) { }
+	public void .ctor(AIEventType type) { }
 
-public virtual void Init(int triggerStateContainer, int id, BaseEntity owner, int inputMemorySlot, int outputMemorySlot, bool inverted) { }
+	public virtual void Init(AIEventData data, BaseEntity owner) { }
 
-public virtual AIEventData ToProto() { }
+	public virtual void Init(int triggerStateContainer, int id, BaseEntity owner, int inputMemorySlot, int outputMemorySlot, bool inverted) { }
 
-public virtual void Reset() { }
+	public virtual AIEventData ToProto() { }
 
-public void Tick(float deltaTime, IAIEventListener listener) { }
+	public virtual void Reset() { }
 
-public virtual void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
+	public void Tick(float deltaTime, IAIEventListener listener) { }
 
-public virtual void PostExecute() { }
+	public virtual void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
 
-public void TriggerStateChange(IAIEventListener listener, int sourceEventID) { }
+	public virtual void PostExecute() { }
 
-public static BaseAIEvent CreateEvent(AIEventType eventType) { }
+	public void TriggerStateChange(IAIEventListener listener, int sourceEventID) { }
+
+	public static BaseAIEvent CreateEvent(AIEventType eventType) { }
 
 }
 
 public enum BaseAIEvent.ExecuteRate // TypeDefIndex: 9393
 {
 	public int value__; 
-public const BaseAIEvent.ExecuteRate Slow = 0;
-public const BaseAIEvent.ExecuteRate Normal = 1;
-public const BaseAIEvent.ExecuteRate Fast = 2;
-public const BaseAIEvent.ExecuteRate VeryFast = 3;
+	public const BaseAIEvent.ExecuteRate Slow = 0;
+	public const BaseAIEvent.ExecuteRate Normal = 1;
+	public const BaseAIEvent.ExecuteRate Fast = 2;
+	public const BaseAIEvent.ExecuteRate VeryFast = 3;
 
 }
 

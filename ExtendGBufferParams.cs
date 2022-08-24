@@ -4,7 +4,7 @@ public struct ExtendGBufferParams // TypeDefIndex: 10655
 	public static ExtendGBufferParams Default; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

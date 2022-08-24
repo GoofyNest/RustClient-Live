@@ -12,7 +12,7 @@ public class ERTerrainData // TypeDefIndex: 7295
 	public bool ignorePreserveHeights; 
 
 
-public void .ctor(int m_terrainWidth, int m_terrainHeight, float m_originalHeight, float m_flattenedHeight, bool m_critical, float m_perc, float m_outerHeight, Vector3 m_hitPoint, Vector3 m_outerPoint) { }
+	public void .ctor(int m_terrainWidth, int m_terrainHeight, float m_originalHeight, float m_flattenedHeight, bool m_critical, float m_perc, float m_outerHeight, Vector3 m_hitPoint, Vector3 m_outerPoint) { }
 
 }
 

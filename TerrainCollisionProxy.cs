@@ -3,7 +3,7 @@ public class TerrainCollisionProxy : MonoBehaviour, IServerComponent // TypeDefI
 	public WheelCollider[] colliders; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

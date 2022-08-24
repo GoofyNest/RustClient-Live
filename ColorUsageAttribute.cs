@@ -12,12 +12,12 @@ public sealed class ColorUsageAttribute : PropertyAttribute // TypeDefIndex: 348
 	public readonly float maxExposureValue; 
 
 
-public void .ctor(bool showAlpha) { }
+	public void .ctor(bool showAlpha) { }
 
-public void .ctor(bool showAlpha, bool hdr) { }
+	public void .ctor(bool showAlpha, bool hdr) { }
 
 	[ObsoleteAttribute] 
-public void .ctor(bool showAlpha, bool hdr, float minBrightness, float maxBrightness, float minExposureValue, float maxExposureValue) { }
+	public void .ctor(bool showAlpha, bool hdr, float minBrightness, float maxBrightness, float minExposureValue, float maxExposureValue) { }
 
 }
 

@@ -3,13 +3,13 @@ public class DevEnvironment : DevControlsTab // TypeDefIndex: 9299
 	public TOD_Sky sky; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public override string GetTabName() { }
+	public override string GetTabName() { }
 
-public override void OnTabContents() { }
+	public override void OnTabContents() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

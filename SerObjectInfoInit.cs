@@ -5,7 +5,7 @@ internal sealed class SerObjectInfoInit // TypeDefIndex: 1109
 	internal SerStack oiPool; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

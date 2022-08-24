@@ -13,23 +13,23 @@ public class FireworkShell : BaseMonoBehaviour, IClientComponent // TypeDefIndex
 	protected bool exploded; 
 
 
-public virtual void Init(MortarFirework firework) { }
+	public virtual void Init(MortarFirework firework) { }
 
-public void ToggleExplosionLight(bool wantsOn) { }
+	public void ToggleExplosionLight(bool wantsOn) { }
 
-public virtual void Update() { }
+	public virtual void Update() { }
 
-public virtual void Cleanup() { }
+	public virtual void Cleanup() { }
 
-public float SoundDelayTime() { }
+	public float SoundDelayTime() { }
 
-public void PlaySound() { }
+	public void PlaySound() { }
 
-public virtual void Explode() { }
+	public virtual void Explode() { }
 
-public virtual float CalculateFuseLength() { }
+	public virtual float CalculateFuseLength() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

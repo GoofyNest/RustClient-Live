@@ -44,195 +44,195 @@ internal class GAState // TypeDefIndex: 5670
 	private readonly List<ICommandCenterListener> commandCenterListeners; 
 	private readonly object configurationsLock; 
 
-private static GAState Instance { get; }
-private static string UserId { get; set; }
-public static string Identifier { get; set; }
-public static bool Initialized { get; set; }
-public static long SessionStart { get; set; }
-public static int SessionNum { get; set; }
-public static int TransactionNum { get; set; }
-public static string SessionId { get; set; }
-public static string CurrentCustomDimension01 { get; set; }
-public static string CurrentCustomDimension02 { get; set; }
-public static string CurrentCustomDimension03 { get; set; }
-public static string GameKey { get; set; }
-public static string GameSecret { get; set; }
-public static string[] AvailableCustomDimensions01 { get; }
-public static string[] AvailableCustomDimensions02 { get; }
-public static string[] AvailableCustomDimensions03 { get; }
-public static string Build { get; set; }
-public static bool IsEventSubmissionEnabled { get; }
-private bool Enabled { get; set; }
-private string FacebookId { get; set; }
-private string Gender { get; set; }
-private int BirthYear { get; set; }
-private JSONNode SdkConfigCached { set; }
-private bool InitAuthorized { get; set; }
-private long ClientServerTimeOffset { get; set; }
-private string DefaultUserId { get; set; }
-private static JSONNode SdkConfig { get; }
+	private static GAState Instance { get; }
+	private static string UserId { get; set; }
+	public static string Identifier { get; set; }
+	public static bool Initialized { get; set; }
+	public static long SessionStart { get; set; }
+	public static int SessionNum { get; set; }
+	public static int TransactionNum { get; set; }
+	public static string SessionId { get; set; }
+	public static string CurrentCustomDimension01 { get; set; }
+	public static string CurrentCustomDimension02 { get; set; }
+	public static string CurrentCustomDimension03 { get; set; }
+	public static string GameKey { get; set; }
+	public static string GameSecret { get; set; }
+	public static string[] AvailableCustomDimensions01 { get; }
+	public static string[] AvailableCustomDimensions02 { get; }
+	public static string[] AvailableCustomDimensions03 { get; }
+	public static string Build { get; set; }
+	public static bool IsEventSubmissionEnabled { get; }
+	private bool Enabled { get; set; }
+	private string FacebookId { get; set; }
+	private string Gender { get; set; }
+	private int BirthYear { get; set; }
+	private JSONNode SdkConfigCached { set; }
+	private bool InitAuthorized { get; set; }
+	private long ClientServerTimeOffset { get; set; }
+	private string DefaultUserId { get; set; }
+	private static JSONNode SdkConfig { get; }
 
 
-private static GAState get_Instance() { }
+	private static GAState get_Instance() { }
 
-private static string get_UserId() { }
+	private static string get_UserId() { }
 
-public static void set_UserId(string value) { }
+	public static void set_UserId(string value) { }
 
-public static string get_Identifier() { }
+	public static string get_Identifier() { }
 
-private static void set_Identifier(string value) { }
+	private static void set_Identifier(string value) { }
 
-public static bool get_Initialized() { }
+	public static bool get_Initialized() { }
 
-private static void set_Initialized(bool value) { }
+	private static void set_Initialized(bool value) { }
 
-public static long get_SessionStart() { }
+	public static long get_SessionStart() { }
 
-private static void set_SessionStart(long value) { }
+	private static void set_SessionStart(long value) { }
 
-public static int get_SessionNum() { }
+	public static int get_SessionNum() { }
 
-private static void set_SessionNum(int value) { }
+	private static void set_SessionNum(int value) { }
 
-public static int get_TransactionNum() { }
+	public static int get_TransactionNum() { }
 
-private static void set_TransactionNum(int value) { }
+	private static void set_TransactionNum(int value) { }
 
-public static string get_SessionId() { }
+	public static string get_SessionId() { }
 
-private static void set_SessionId(string value) { }
+	private static void set_SessionId(string value) { }
 
-public static string get_CurrentCustomDimension01() { }
+	public static string get_CurrentCustomDimension01() { }
 
-private static void set_CurrentCustomDimension01(string value) { }
+	private static void set_CurrentCustomDimension01(string value) { }
 
-public static string get_CurrentCustomDimension02() { }
+	public static string get_CurrentCustomDimension02() { }
 
-private static void set_CurrentCustomDimension02(string value) { }
+	private static void set_CurrentCustomDimension02(string value) { }
 
-public static string get_CurrentCustomDimension03() { }
+	public static string get_CurrentCustomDimension03() { }
 
-private static void set_CurrentCustomDimension03(string value) { }
+	private static void set_CurrentCustomDimension03(string value) { }
 
-public static string get_GameKey() { }
+	public static string get_GameKey() { }
 
-private static void set_GameKey(string value) { }
+	private static void set_GameKey(string value) { }
 
-public static string get_GameSecret() { }
+	public static string get_GameSecret() { }
 
-private static void set_GameSecret(string value) { }
+	private static void set_GameSecret(string value) { }
 
-public static string[] get_AvailableCustomDimensions01() { }
+	public static string[] get_AvailableCustomDimensions01() { }
 
-public static string[] get_AvailableCustomDimensions02() { }
+	public static string[] get_AvailableCustomDimensions02() { }
 
-public static string[] get_AvailableCustomDimensions03() { }
+	public static string[] get_AvailableCustomDimensions03() { }
 
-public static string get_Build() { }
+	public static string get_Build() { }
 
-public static void set_Build(string value) { }
+	public static void set_Build(string value) { }
 
-public static bool get_IsEventSubmissionEnabled() { }
-
-	[CompilerGeneratedAttribute] 
-private bool get_Enabled() { }
+	public static bool get_IsEventSubmissionEnabled() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Enabled(bool value) { }
+	private bool get_Enabled() { }
 
 	[CompilerGeneratedAttribute] 
-private string get_FacebookId() { }
+	private void set_Enabled(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_FacebookId(string value) { }
+	private string get_FacebookId() { }
 
 	[CompilerGeneratedAttribute] 
-private string get_Gender() { }
+	private void set_FacebookId(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Gender(string value) { }
+	private string get_Gender() { }
 
 	[CompilerGeneratedAttribute] 
-private int get_BirthYear() { }
+	private void set_Gender(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_BirthYear(int value) { }
+	private int get_BirthYear() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_SdkConfigCached(JSONNode value) { }
+	private void set_BirthYear(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private bool get_InitAuthorized() { }
+	private void set_SdkConfigCached(JSONNode value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_InitAuthorized(bool value) { }
+	private bool get_InitAuthorized() { }
 
 	[CompilerGeneratedAttribute] 
-private long get_ClientServerTimeOffset() { }
+	private void set_InitAuthorized(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_ClientServerTimeOffset(long value) { }
+	private long get_ClientServerTimeOffset() { }
 
-private string get_DefaultUserId() { }
+	[CompilerGeneratedAttribute] 
+	private void set_ClientServerTimeOffset(long value) { }
 
-private void set_DefaultUserId(string value) { }
+	private string get_DefaultUserId() { }
 
-private static JSONNode get_SdkConfig() { }
+	private void set_DefaultUserId(string value) { }
 
-private void .ctor() { }
+	private static JSONNode get_SdkConfig() { }
 
-protected override void Finalize() { }
+	private void .ctor() { }
 
-public static bool IsEnabled() { }
+	protected override void Finalize() { }
 
-public static void SetCustomDimension01(string dimension) { }
+	public static bool IsEnabled() { }
 
-public static void SetCustomDimension02(string dimension) { }
+	public static void SetCustomDimension01(string dimension) { }
 
-public static void SetCustomDimension03(string dimension) { }
+	public static void SetCustomDimension02(string dimension) { }
 
-public static void IncrementSessionNum() { }
+	public static void SetCustomDimension03(string dimension) { }
 
-public static void IncrementTransactionNum() { }
+	public static void IncrementSessionNum() { }
 
-public static bool HasAvailableCustomDimensions01(string dimension1) { }
+	public static void IncrementTransactionNum() { }
 
-public static bool HasAvailableCustomDimensions02(string dimension2) { }
+	public static bool HasAvailableCustomDimensions01(string dimension1) { }
 
-public static bool HasAvailableCustomDimensions03(string dimension3) { }
+	public static bool HasAvailableCustomDimensions02(string dimension2) { }
 
-public static void SetKeys(string gameKey, string gameSecret) { }
+	public static bool HasAvailableCustomDimensions03(string dimension3) { }
 
-public static void InternalInitialize() { }
+	public static void SetKeys(string gameKey, string gameSecret) { }
 
-public static void EndSessionAndStopQueue(bool endThread) { }
+	public static void InternalInitialize() { }
 
-public static JSONObject GetEventAnnotations() { }
+	public static void EndSessionAndStopQueue(bool endThread) { }
 
-public static JSONObject GetInitAnnotations() { }
+	public static JSONObject GetEventAnnotations() { }
 
-public static long GetClientTsAdjusted() { }
+	public static JSONObject GetInitAnnotations() { }
 
-public static bool SessionIsStarted() { }
+	public static long GetClientTsAdjusted() { }
 
-public static JSONObject ValidateAndCleanCustomFields(IDictionary<string, object> fields) { }
+	public static bool SessionIsStarted() { }
 
-private static void CacheIdentifier() { }
+	public static JSONObject ValidateAndCleanCustomFields(IDictionary<string, object> fields) { }
 
-private static void EnsurePersistedStates() { }
+	private static void CacheIdentifier() { }
 
-private static void StartNewSession() { }
+	private static void EnsurePersistedStates() { }
 
-public static void StartNewSession(EGAHTTPApiResponse initResponse, JSONObject initResponseDict) { }
+	private static void StartNewSession() { }
 
-private static void ValidateAndFixCurrentDimensions() { }
+	public static void StartNewSession(EGAHTTPApiResponse initResponse, JSONObject initResponseDict) { }
 
-private static long CalculateServerTimeOffset(long serverTs) { }
+	private static void ValidateAndFixCurrentDimensions() { }
 
-private static void PopulateConfigurations(JSONNode sdkConfig) { }
+	private static long CalculateServerTimeOffset(long serverTs) { }
 
-private static void .cctor() { }
+	private static void PopulateConfigurations(JSONNode sdkConfig) { }
+
+	private static void .cctor() { }
 
 }
 

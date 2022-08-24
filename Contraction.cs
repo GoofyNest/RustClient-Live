@@ -6,7 +6,7 @@ internal class Contraction // TypeDefIndex: 32
 	public readonly byte[] SortKey; 
 
 
-public void .ctor(int index, char[] source, string replacement, byte[] sortkey) { }
+	public void .ctor(int index, char[] source, string replacement, byte[] sortkey) { }
 
 }
 

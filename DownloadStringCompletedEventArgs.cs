@@ -2,12 +2,12 @@ public class DownloadStringCompletedEventArgs : AsyncCompletedEventArgs // TypeD
 {
 	private string m_Result; 
 
-public string Result { get; }
+	public string Result { get; }
 
 
-internal void .ctor(string result, Exception exception, bool cancelled, object userToken) { }
+	internal void .ctor(string result, Exception exception, bool cancelled, object userToken) { }
 
-public string get_Result() { }
+	public string get_Result() { }
 
 }
 

@@ -3,24 +3,24 @@ public sealed class SequenceNumberEvent : MetaEvent // TypeDefIndex: 7543
 	[CompilerGeneratedAttribute] 
 	private ushort <Number>k__BackingField; 
 
-public ushort Number { get; set; }
+	public ushort Number { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(ushort number) { }
-
-	[CompilerGeneratedAttribute] 
-public ushort get_Number() { }
+	public void .ctor(ushort number) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Number(ushort value) { }
+	public ushort get_Number() { }
 
-protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
+	[CompilerGeneratedAttribute] 
+	public void set_Number(ushort value) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
 
-public override string ToString() { }
+	protected override MidiEvent CloneEvent() { }
+
+	public override string ToString() { }
 
 }
 

@@ -19,41 +19,41 @@ internal sealed class WriteObjectInfo // TypeDefIndex: 1107
 	private string binderAssemblyString; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void ObjectEnd() { }
+	internal void ObjectEnd() { }
 
-private void InternalInit() { }
+	private void InternalInit() { }
 
-internal static WriteObjectInfo Serialize(object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder) { }
+	internal static WriteObjectInfo Serialize(object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder) { }
 
-internal void InitSerialize(object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder) { }
+	internal void InitSerialize(object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder) { }
 
-internal static WriteObjectInfo Serialize(Type objectType, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, SerializationBinder binder) { }
+	internal static WriteObjectInfo Serialize(Type objectType, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, SerializationBinder binder) { }
 
-internal void InitSerialize(Type objectType, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, SerializationBinder binder) { }
+	internal void InitSerialize(Type objectType, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, SerializationBinder binder) { }
 
-private void InitSiWrite() { }
+	private void InitSiWrite() { }
 
-private static void CheckTypeForwardedFrom(SerObjectInfoCache cache, Type objectType, string binderAssemblyString) { }
+	private static void CheckTypeForwardedFrom(SerObjectInfoCache cache, Type objectType, string binderAssemblyString) { }
 
-private void InitNoMembers() { }
+	private void InitNoMembers() { }
 
-private void InitMemberInfo() { }
+	private void InitMemberInfo() { }
 
-internal string GetTypeFullName() { }
+	internal string GetTypeFullName() { }
 
-internal string GetAssemblyString() { }
+	internal string GetAssemblyString() { }
 
-private void InvokeSerializationBinder(SerializationBinder binder) { }
+	private void InvokeSerializationBinder(SerializationBinder binder) { }
 
-internal Type GetMemberType(MemberInfo objMember) { }
+	internal Type GetMemberType(MemberInfo objMember) { }
 
-internal void GetMemberInfo(out string[] outMemberNames, out Type[] outMemberTypes, out object[] outMemberData) { }
+	internal void GetMemberInfo(out string[] outMemberNames, out Type[] outMemberTypes, out object[] outMemberData) { }
 
-private static WriteObjectInfo GetObjectInfo(SerObjectInfoInit serObjectInfoInit) { }
+	private static WriteObjectInfo GetObjectInfo(SerObjectInfoInit serObjectInfoInit) { }
 
-private static void PutObjectInfo(SerObjectInfoInit serObjectInfoInit, WriteObjectInfo objectInfo) { }
+	private static void PutObjectInfo(SerObjectInfoInit serObjectInfoInit, WriteObjectInfo objectInfo) { }
 
 }
 

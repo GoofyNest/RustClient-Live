@@ -6,15 +6,15 @@ public static class StringFormatCache // TypeDefIndex: 10767
 	private static Dictionary<StringFormatCache.Key4, string> dict4; 
 
 
-public static string Get(string format, string value1) { }
+	public static string Get(string format, string value1) { }
 
-public static string Get(string format, string value1, string value2) { }
+	public static string Get(string format, string value1, string value2) { }
 
-public static string Get(string format, string value1, string value2, string value3) { }
+	public static string Get(string format, string value1, string value2, string value3) { }
 
-public static string Get(string format, string value1, string value2, string value3, string value4) { }
+	public static string Get(string format, string value1, string value2, string value3, string value4) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -24,13 +24,13 @@ private struct StringFormatCache.Key1 : IEquatable<StringFormatCache.Key1> // Ty
 	public string value1; 
 
 
-public void .ctor(string format, string value1) { }
+	public void .ctor(string format, string value1) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(StringFormatCache.Key1 other) { }
+	public bool Equals(StringFormatCache.Key1 other) { }
 
 }
 
@@ -41,13 +41,13 @@ private struct StringFormatCache.Key2 : IEquatable<StringFormatCache.Key2> // Ty
 	public string value2; 
 
 
-public void .ctor(string format, string value1, string value2) { }
+	public void .ctor(string format, string value1, string value2) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(StringFormatCache.Key2 other) { }
+	public bool Equals(StringFormatCache.Key2 other) { }
 
 }
 
@@ -59,13 +59,13 @@ private struct StringFormatCache.Key3 : IEquatable<StringFormatCache.Key3> // Ty
 	public string value3; 
 
 
-public void .ctor(string format, string value1, string value2, string value3) { }
+	public void .ctor(string format, string value1, string value2, string value3) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(StringFormatCache.Key3 other) { }
+	public bool Equals(StringFormatCache.Key3 other) { }
 
 }
 
@@ -78,13 +78,13 @@ private struct StringFormatCache.Key4 : IEquatable<StringFormatCache.Key4> // Ty
 	public string value4; 
 
 
-public void .ctor(string format, string value1, string value2, string value3, string value4) { }
+	public void .ctor(string format, string value1, string value2, string value3, string value4) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(StringFormatCache.Key4 other) { }
+	public bool Equals(StringFormatCache.Key4 other) { }
 
 }
 

@@ -6,13 +6,13 @@ public class RepeatingFirework : BaseFirework // TypeDefIndex: 8279
 
 
 	[BaseEntity.RPC_Client] 
-public void RPCFire(BaseEntity.RPCMessage msg) { }
+	public void RPCFire(BaseEntity.RPCMessage msg) { }
 
-public virtual void Fire() { }
+	public virtual void Fire() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

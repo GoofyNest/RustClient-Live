@@ -6,11 +6,11 @@ public class LeavesBlowing : MonoBehaviour // TypeDefIndex: 10194
 	public float m_flEmissionRate; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

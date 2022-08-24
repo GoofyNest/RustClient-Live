@@ -6,48 +6,48 @@ public class Planner : HeldEntity // TypeDefIndex: 8615
 	internal Planner.Guide guide; 
 	public BaseEntity[] buildableList; 
 
-public bool isTypeDeployable { get; }
+	public bool isTypeDeployable { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public override void OnFrame() { }
+	public override void OnFrame() { }
 
-public override void OnDeploy() { }
+	public override void OnDeploy() { }
 
-public override void OnHolstered() { }
+	public override void OnHolstered() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-private void OpenComponentMenu() { }
+	private void OpenComponentMenu() { }
 
-private void SwitchConstruction(Construction c) { }
+	private void SwitchConstruction(Construction c) { }
 
-private void DoBuild() { }
+	private void DoBuild() { }
 
-private void SetDefaultPlan() { }
+	private void SetDefaultPlan() { }
 
-public override bool NeedsCrosshair() { }
+	public override bool NeedsCrosshair() { }
 
-private void UpdateGuide() { }
+	private void UpdateGuide() { }
 
-private void CloseGuide() { }
+	private void CloseGuide() { }
 
-internal void FillPlacement(ref Construction.Target target, Construction component) { }
+	internal void FillPlacement(ref Construction.Target target, Construction component) { }
 
-internal void FindTerrainPlacement(ref Construction.Target target, Construction component) { }
+	internal void FindTerrainPlacement(ref Construction.Target target, Construction component) { }
 
-internal bool FindAppropriateHandle(ref Construction.Target target, Construction component) { }
+	internal bool FindAppropriateHandle(ref Construction.Target target, Construction component) { }
 
-public ItemModDeployable GetModDeployable() { }
+	public ItemModDeployable GetModDeployable() { }
 
-public Deployable GetDeployable() { }
+	public Deployable GetDeployable() { }
 
-public bool get_isTypeDeployable() { }
+	public bool get_isTypeDeployable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -63,42 +63,42 @@ public class Planner.Guide // TypeDefIndex: 8616
 	private Planner.Guide.PlacementState lastPlacementState; 
 
 
-public bool IsValid() { }
+	public bool IsValid() { }
 
-private void UpdateComponent(Construction c) { }
+	private void UpdateComponent(Construction c) { }
 
-public void Update(ref Construction.Target placement, Construction currentComponent) { }
+	public void Update(ref Construction.Target placement, Construction currentComponent) { }
 
-public void BecomeValid() { }
+	public void BecomeValid() { }
 
-public void BecomeNeutral() { }
+	public void BecomeNeutral() { }
 
-public void BecomeInvalid(bool force = False) { }
+	public void BecomeInvalid(bool force = False) { }
 
-public void Shutdown() { }
+	public void Shutdown() { }
 
-private Material CacheMaterialInstance(Material asset, ref Material inst) { }
+	private Material CacheMaterialInstance(Material asset, ref Material inst) { }
 
-private void ReleaseMaterialInstance(ref Material mat) { }
+	private void ReleaseMaterialInstance(ref Material mat) { }
 
-private Material CacheGoodMaterial() { }
+	private Material CacheGoodMaterial() { }
 
-private Material CacheNeutralMaterial() { }
+	private Material CacheNeutralMaterial() { }
 
-private Material CacheBadMaterial() { }
+	private Material CacheBadMaterial() { }
 
-private void UpdateGuideTransparency(bool transparent) { }
+	private void UpdateGuideTransparency(bool transparent) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum Planner.Guide.PlacementState // TypeDefIndex: 8617
 {
 	public int value__; 
-public const Planner.Guide.PlacementState Invalid = 0;
-public const Planner.Guide.PlacementState Neutral = 1;
-public const Planner.Guide.PlacementState Valid = 2;
+	public const Planner.Guide.PlacementState Invalid = 0;
+	public const Planner.Guide.PlacementState Neutral = 1;
+	public const Planner.Guide.PlacementState Valid = 2;
 
 }
 
@@ -108,9 +108,9 @@ private sealed class Planner.<>c__DisplayClass9_0 // TypeDefIndex: 8618
 	public Planner <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <OpenComponentMenu>b__0(BasePlayer ply) { }
+	internal void <OpenComponentMenu>b__0(BasePlayer ply) { }
 
 }
 

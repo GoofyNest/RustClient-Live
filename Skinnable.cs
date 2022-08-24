@@ -17,16 +17,16 @@ public class Skinnable : ScriptableObject
 	public static Skinnable[] All; 
 	private Material[] _sourceMaterials; 
 
-public Material[] SourceMaterials { get; }
+	public Material[] SourceMaterials { get; }
 
 
-public static Skinnable FindForItem(string itemType) { }
+	public static Skinnable FindForItem(string itemType) { }
 
-public static Skinnable FindForEntity(string entityName) { }
+	public static Skinnable FindForEntity(string entityName) { }
 
-public Material[] get_SourceMaterials() { }
+	public Material[] get_SourceMaterials() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -37,7 +37,7 @@ public class Skinnable.Group // TypeDefIndex: 7716
 	public int MaxTextureSize; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -46,9 +46,9 @@ private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7717
 	public string itemType; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <FindForItem>b__0(Skinnable x) { }
+	internal bool <FindForItem>b__0(Skinnable x) { }
 
 }
 
@@ -57,9 +57,9 @@ private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7718
 	public string entityName; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <FindForEntity>b__0(Skinnable x) { }
+	internal bool <FindForEntity>b__0(Skinnable x) { }
 
 }
 

@@ -5,7 +5,7 @@ internal sealed class OperatorInfo // TypeDefIndex: 4254
 	internal int _priority; 
 
 
-internal void .ctor(Nodes type, int op, int pri) { }
+	internal void .ctor(Nodes type, int op, int pri) { }
 
 }
 

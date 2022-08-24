@@ -23,13 +23,13 @@ public struct ERRoadShape // TypeDefIndex: 7204
 	public bool isset; 
 
 
-public void .ctor(float width) { }
+	public void .ctor(float width) { }
 
-public void OCCQQDOQOD(List<Vector2> _nodes) { }
+	public void OCCQQDOQOD(List<Vector2> _nodes) { }
 
-public void Copy(ERRoadShape shape) { }
+	public void Copy(ERRoadShape shape) { }
 
-public void IsSymmetrical() { }
+	public void IsSymmetrical() { }
 
 }
 

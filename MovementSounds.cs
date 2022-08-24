@@ -19,19 +19,19 @@ public class MovementSounds : MonoBehaviour, IOnParentDestroying, ISoundBudgeted
 	private float lastTime; 
 
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void DoUpdate() { }
+	public void DoUpdate() { }
 
-public void UpdateVelocity(Vector3 velocity) { }
+	public void UpdateVelocity(Vector3 velocity) { }
 
-public bool IsSyncedToParent() { }
+	public bool IsSyncedToParent() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

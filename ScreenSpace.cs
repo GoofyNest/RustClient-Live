@@ -15,14 +15,14 @@ internal class ScreenSpaceAmbientObscurance : PostEffectsBase // TypeDefIndex: 8
 	private Material aoMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
 	[ImageEffectOpaque] 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -41,68 +41,68 @@ public class ScreenSpaceAmbientOcclusion : MonoBehaviour // TypeDefIndex: 8202
 	private bool m_Supported; 
 
 
-private static Material CreateMaterial(Shader shader) { }
+	private static Material CreateMaterial(Shader shader) { }
 
-private static void DestroyMaterial(Material mat) { }
+	private static void DestroyMaterial(Material mat) { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void CreateMaterials() { }
+	private void CreateMaterials() { }
 
 	[ImageEffectOpaque] 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ScreenSpaceAmbientOcclusion.SSAOSamples // TypeDefIndex: 8203
 {
 	public int value__; 
-public const ScreenSpaceAmbientOcclusion.SSAOSamples Low = 0;
-public const ScreenSpaceAmbientOcclusion.SSAOSamples Medium = 1;
-public const ScreenSpaceAmbientOcclusion.SSAOSamples High = 2;
+	public const ScreenSpaceAmbientOcclusion.SSAOSamples Low = 0;
+	public const ScreenSpaceAmbientOcclusion.SSAOSamples Medium = 1;
+	public const ScreenSpaceAmbientOcclusion.SSAOSamples High = 2;
 
 }
 
 public enum ScreenSpaceReflectionPreset // TypeDefIndex: 11796
 {
 	public int value__; 
-public const ScreenSpaceReflectionPreset Lower = 0;
-public const ScreenSpaceReflectionPreset Low = 1;
-public const ScreenSpaceReflectionPreset Medium = 2;
-public const ScreenSpaceReflectionPreset High = 3;
-public const ScreenSpaceReflectionPreset Higher = 4;
-public const ScreenSpaceReflectionPreset Ultra = 5;
-public const ScreenSpaceReflectionPreset Overkill = 6;
-public const ScreenSpaceReflectionPreset Custom = 7;
+	public const ScreenSpaceReflectionPreset Lower = 0;
+	public const ScreenSpaceReflectionPreset Low = 1;
+	public const ScreenSpaceReflectionPreset Medium = 2;
+	public const ScreenSpaceReflectionPreset High = 3;
+	public const ScreenSpaceReflectionPreset Higher = 4;
+	public const ScreenSpaceReflectionPreset Ultra = 5;
+	public const ScreenSpaceReflectionPreset Overkill = 6;
+	public const ScreenSpaceReflectionPreset Custom = 7;
 
 }
 
 public enum ScreenSpaceReflectionResolution // TypeDefIndex: 11797
 {
 	public int value__; 
-public const ScreenSpaceReflectionResolution Downsampled = 0;
-public const ScreenSpaceReflectionResolution FullSize = 1;
-public const ScreenSpaceReflectionResolution Supersampled = 2;
+	public const ScreenSpaceReflectionResolution Downsampled = 0;
+	public const ScreenSpaceReflectionResolution FullSize = 1;
+	public const ScreenSpaceReflectionResolution Supersampled = 2;
 
 }
 
 public sealed class ScreenSpaceReflectionPresetParameter : ParameterOverride<ScreenSpaceReflectionPreset> // TypeDefIndex: 11798
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public sealed class ScreenSpaceReflectionResolutionParameter : ParameterOverride<ScreenSpaceReflectionResolution> // TypeDefIndex: 11799
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -128,9 +128,9 @@ public sealed class ScreenSpaceReflections : PostProcessEffectSettings // TypeDe
 	public FloatParameter vignette; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -142,15 +142,15 @@ internal sealed class ScreenSpaceReflectionsRenderer : PostProcessEffectRenderer
 	private readonly ScreenSpaceReflectionsRenderer.QualityPreset[] m_Presets; 
 
 
-public override DepthTextureMode GetCameraFlags() { }
+	public override DepthTextureMode GetCameraFlags() { }
 
-internal void CheckRT(ref RenderTexture rt, int width, int height, FilterMode filterMode, bool useMipMap) { }
+	internal void CheckRT(ref RenderTexture rt, int width, int height, FilterMode filterMode, bool useMipMap) { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public override void Release() { }
+	public override void Release() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -161,17 +161,17 @@ private class ScreenSpaceReflectionsRenderer.QualityPreset // TypeDefIndex: 1180
 	public ScreenSpaceReflectionResolution downsampling; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum ScreenSpaceReflectionsRenderer.Pass // TypeDefIndex: 11803
 {
 	public int value__; 
-public const ScreenSpaceReflectionsRenderer.Pass Test = 0;
-public const ScreenSpaceReflectionsRenderer.Pass Resolve = 1;
-public const ScreenSpaceReflectionsRenderer.Pass Reproject = 2;
-public const ScreenSpaceReflectionsRenderer.Pass Composite = 3;
+	public const ScreenSpaceReflectionsRenderer.Pass Test = 0;
+	public const ScreenSpaceReflectionsRenderer.Pass Resolve = 1;
+	public const ScreenSpaceReflectionsRenderer.Pass Reproject = 2;
+	public const ScreenSpaceReflectionsRenderer.Pass Composite = 3;
 
 }
 

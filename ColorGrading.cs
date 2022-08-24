@@ -129,9 +129,9 @@ public sealed class ColorGrading : PostProcessEffectSettings // TypeDefIndex: 11
 	public SplineParameter lumVsSatCurve; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

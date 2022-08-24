@@ -4,12 +4,12 @@ public class TypeThroughButton : Button, IUpdateSelectedHandler, IEventSystemHan
 	private Event _processingEvent; 
 
 
-public void OnUpdateSelected(BaseEventData eventData) { }
+	public void OnUpdateSelected(BaseEventData eventData) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator DelayedActivateTextField(Event e) { }
+	private IEnumerator DelayedActivateTextField(Event e) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -20,26 +20,26 @@ private sealed class TypeThroughButton.<DelayedActivateTextField>d__3 : IEnumera
 	public TypeThroughButton <>4__this; 
 	public Event e; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

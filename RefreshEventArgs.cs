@@ -4,9 +4,9 @@ public class RefreshEventArgs : EventArgs // TypeDefIndex: 2744
 	private Type typeChanged; 
 
 
-public void .ctor(object componentChanged) { }
+	public void .ctor(object componentChanged) { }
 
-public void .ctor(Type typeChanged) { }
+	public void .ctor(Type typeChanged) { }
 
 }
 

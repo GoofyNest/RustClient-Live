@@ -8,19 +8,19 @@ internal class ElementUnderPointer // TypeDefIndex: 4639
 	private bool[] m_IsPickingPointerTemporaries; 
 
 
-internal VisualElement GetTopElementUnderPointer(int pointerId, out Vector2 pickPosition, out bool isTemporary) { }
+	internal VisualElement GetTopElementUnderPointer(int pointerId, out Vector2 pickPosition, out bool isTemporary) { }
 
-internal VisualElement GetTopElementUnderPointer(int pointerId) { }
+	internal VisualElement GetTopElementUnderPointer(int pointerId) { }
 
-private Vector2 GetEventPointerPosition(EventBase triggerEvent) { }
+	private Vector2 GetEventPointerPosition(EventBase triggerEvent) { }
 
-internal void SetTemporaryElementUnderPointer(VisualElement newElementUnderPointer, EventBase triggerEvent) { }
+	internal void SetTemporaryElementUnderPointer(VisualElement newElementUnderPointer, EventBase triggerEvent) { }
 
-internal void SetElementUnderPointer(VisualElement newElementUnderPointer, EventBase triggerEvent) { }
+	internal void SetElementUnderPointer(VisualElement newElementUnderPointer, EventBase triggerEvent) { }
 
-private void SetElementUnderPointer(VisualElement newElementUnderPointer, EventBase triggerEvent, bool temporary) { }
+	private void SetElementUnderPointer(VisualElement newElementUnderPointer, EventBase triggerEvent, bool temporary) { }
 
-internal void CommitElementUnderPointers(EventDispatcher dispatcher) { }
+	internal void CommitElementUnderPointers(EventDispatcher dispatcher) { }
 
 }
 

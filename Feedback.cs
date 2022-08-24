@@ -2,7 +2,7 @@ public static class Feedback // TypeDefIndex: 6194
 {
 
 	[AsyncStateMachineAttribute] 
-public static Task<string> Report(Feedback feedback) { }
+	public static Task<string> Report(Feedback feedback) { }
 
 }
 
@@ -16,10 +16,10 @@ private struct Feedback.<Report>d__0 : IAsyncStateMachine // TypeDefIndex: 6195
 	private TaskAwaiter<string> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

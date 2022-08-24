@@ -6,7 +6,7 @@ public struct NoiseParameters // TypeDefIndex: 10290
 	public float Offset; 
 
 
-public void .ctor(int octaves, float frequency, float amplitude, float offset) { }
+	public void .ctor(int octaves, float frequency, float amplitude, float offset) { }
 
 }
 

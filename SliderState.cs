@@ -6,7 +6,7 @@ internal class SliderState // TypeDefIndex: 4059
 
 
 	[RequiredByNativeCodeAttribute] 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

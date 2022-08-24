@@ -4,15 +4,15 @@ internal struct RequestPlayersForGameProgressCallback_t : ICallbackData // TypeD
 	internal ulong LSearchID; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -30,24 +30,24 @@ internal struct RequestPlayersForGameResultCallback_t : ICallbackData // TypeDef
 	internal ulong LUniqueGameID; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal enum RequestPlayersForGameResultCallback_t.PlayerAcceptState_t // TypeDefIndex: 5351
 {
 	public int value__; 
-public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t Unknown = 0;
-public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t PlayerAccepted = 1;
-public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t PlayerDeclined = 2;
+	public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t Unknown = 0;
+	public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t PlayerAccepted = 1;
+	public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t PlayerDeclined = 2;
 
 }
 
@@ -58,15 +58,15 @@ internal struct RequestPlayersForGameFinalResultCallback_t : ICallbackData // Ty
 	internal ulong LUniqueGameID; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

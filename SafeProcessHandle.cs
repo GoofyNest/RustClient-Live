@@ -3,13 +3,13 @@ public sealed class SafeProcessHandle : SafeHandleZeroOrMinusOneIsInvalid // Typ
 	internal static SafeProcessHandle InvalidHandle; 
 
 
-internal void .ctor(IntPtr handle) { }
+	internal void .ctor(IntPtr handle) { }
 
-public void .ctor(IntPtr existingHandle, bool ownsHandle) { }
+	public void .ctor(IntPtr existingHandle, bool ownsHandle) { }
 
-protected override bool ReleaseHandle() { }
+	protected override bool ReleaseHandle() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

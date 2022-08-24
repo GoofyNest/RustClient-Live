@@ -4,9 +4,9 @@ public class Grayscale : ImageEffectBase // TypeDefIndex: 8190
 	public float rampOffset; 
 
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

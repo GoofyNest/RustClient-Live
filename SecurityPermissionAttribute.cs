@@ -2,10 +2,10 @@ public sealed class SecurityPermissionAttribute : CodeAccessSecurityAttribute //
 {
 	private SecurityPermissionFlag m_Flags; 
 
-public bool SkipVerification { set; }
+	public bool SkipVerification { set; }
 
 
-public void set_SkipVerification(bool value) { }
+	public void set_SkipVerification(bool value) { }
 
 }
 

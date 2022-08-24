@@ -5,7 +5,7 @@ internal class TokenHashValue // TypeDefIndex: 696
 	internal int tokenValue; 
 
 
-internal void .ctor(string tokenString, TokenType tokenType, int tokenValue) { }
+	internal void .ctor(string tokenString, TokenType tokenType, int tokenValue) { }
 
 }
 

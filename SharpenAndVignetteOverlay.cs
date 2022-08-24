@@ -4,13 +4,13 @@ public class SharpenAndVignetteOverlay : MonoBehaviour // TypeDefIndex: 9134
 	private SharpenAndVignette sharpenAndVignette; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

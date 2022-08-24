@@ -3,9 +3,9 @@ internal sealed class ParentForeignKeyConstraintEnumerator : ForeignKeyConstrain
 	private readonly DataTable _table; 
 
 
-public void .ctor(DataSet dataSet, DataTable inTable) { }
+	public void .ctor(DataSet dataSet, DataTable inTable) { }
 
-protected override bool IsValidCandidate(Constraint constraint) { }
+	protected override bool IsValidCandidate(Constraint constraint) { }
 
 }
 

@@ -6,57 +6,57 @@ public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 	public float remainingMixTime; 
 
 
-public static void ResetToPool(MixingTable instance) { }
+	public static void ResetToPool(MixingTable instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(MixingTable instance) { }
+	public void CopyTo(MixingTable instance) { }
 
-public MixingTable Copy() { }
+	public MixingTable Copy() { }
 
-public static MixingTable Deserialize(Stream stream) { }
+	public static MixingTable Deserialize(Stream stream) { }
 
-public static MixingTable DeserializeLengthDelimited(Stream stream) { }
+	public static MixingTable DeserializeLengthDelimited(Stream stream) { }
 
-public static MixingTable DeserializeLength(Stream stream, int length) { }
+	public static MixingTable DeserializeLength(Stream stream, int length) { }
 
-public static MixingTable Deserialize(byte[] buffer) { }
+	public static MixingTable Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, MixingTable previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, MixingTable previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static MixingTable Deserialize(byte[] buffer, MixingTable instance, bool isDelta = False) { }
+	public static MixingTable Deserialize(byte[] buffer, MixingTable instance, bool isDelta = False) { }
 
-public static MixingTable Deserialize(Stream stream, MixingTable instance, bool isDelta) { }
+	public static MixingTable Deserialize(Stream stream, MixingTable instance, bool isDelta) { }
 
-public static MixingTable DeserializeLengthDelimited(Stream stream, MixingTable instance, bool isDelta) { }
+	public static MixingTable DeserializeLengthDelimited(Stream stream, MixingTable instance, bool isDelta) { }
 
-public static MixingTable DeserializeLength(Stream stream, int length, MixingTable instance, bool isDelta) { }
+	public static MixingTable DeserializeLength(Stream stream, int length, MixingTable instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, MixingTable instance, MixingTable previous) { }
+	public static void SerializeDelta(Stream stream, MixingTable instance, MixingTable previous) { }
 
-public static void Serialize(Stream stream, MixingTable instance) { }
+	public static void Serialize(Stream stream, MixingTable instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(MixingTable instance) { }
+	public static byte[] SerializeToBytes(MixingTable instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, MixingTable instance) { }
+	public static void SerializeLengthDelimited(Stream stream, MixingTable instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -74,58 +74,58 @@ public class MixingTable : StorageContainer // TypeDefIndex: 8411
 	private float lastTickTimestamp; 
 	private List<Item> inventoryItems; 
 
-public override bool HasMenuOptions { get; }
-public float RemainingMixTime { get; set; }
-public float TotalMixTime { get; set; }
-public float ClientEstimatedRemainingMixTime { get; }
-public float ProgressFraction { get; }
+	public override bool HasMenuOptions { get; }
+	public float RemainingMixTime { get; set; }
+	public float TotalMixTime { get; set; }
+	public float ClientEstimatedRemainingMixTime { get; }
+	public float ProgressFraction { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[CompilerGeneratedAttribute] 
-public float get_RemainingMixTime() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_RemainingMixTime(float value) { }
+	public float get_RemainingMixTime() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_TotalMixTime() { }
+	private void set_RemainingMixTime(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TotalMixTime(float value) { }
+	public float get_TotalMixTime() { }
 
-public float get_ClientEstimatedRemainingMixTime() { }
+	[CompilerGeneratedAttribute] 
+	private void set_TotalMixTime(float value) { }
 
-public float get_ProgressFraction() { }
+	public float get_ClientEstimatedRemainingMixTime() { }
+
+	public float get_ProgressFraction() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_TurnOn(BasePlayer player) { }
+	public void Menu_TurnOn(BasePlayer player) { }
 
-public bool Menu_TurnOn_ShowIf(BasePlayer player) { }
+	public bool Menu_TurnOn_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_TurnOff(BasePlayer player) { }
+	public void Menu_TurnOff(BasePlayer player) { }
 
-public bool Menu_TurnOff_ShowIf(BasePlayer player) { }
+	public bool Menu_TurnOff_ShowIf(BasePlayer player) { }
 
-private int GetItemWaterAmount(Item item) { }
+	private int GetItemWaterAmount(Item item) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public List<Item> GetOrderedContainerItems(ItemContainer container, out bool itemsAreContiguous) { }
+	public List<Item> GetOrderedContainerItems(ItemContainer container, out bool itemsAreContiguous) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

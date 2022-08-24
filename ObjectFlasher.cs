@@ -7,11 +7,11 @@ public class ObjectFlasher : BaseMonoBehaviour // TypeDefIndex: 11319
 	public float randomOffset; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Toggle() { }
+	public void Toggle() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

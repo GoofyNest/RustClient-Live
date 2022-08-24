@@ -7,15 +7,15 @@ internal class RepaintData // TypeDefIndex: 4598
 	[DebuggerBrowsableAttribute] 
 	private Event <repaintEvent>k__BackingField; 
 
-public Matrix4x4 currentOffset { get; }
-public Event repaintEvent { set; }
+	public Matrix4x4 currentOffset { get; }
+	public Event repaintEvent { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Matrix4x4 get_currentOffset() { }
+	public Matrix4x4 get_currentOffset() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_repaintEvent(Event value) { }
+	public void set_repaintEvent(Event value) { }
 
 }
 

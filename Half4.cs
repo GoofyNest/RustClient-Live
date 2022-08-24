@@ -6,9 +6,9 @@ public struct Half4 // TypeDefIndex: 11417
 	public ushort w; 
 
 
-public void .ctor(Vector4 vec) { }
+	public void .ctor(Vector4 vec) { }
 
-public static Vector4 op_Explicit(Half4 vec) { }
+	public static Vector4 op_Explicit(Half4 vec) { }
 
 }
 

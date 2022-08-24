@@ -6,15 +6,15 @@ public class SprayCanSkinSelect : UIDialog // TypeDefIndex: 10910
 	private BaseEntity targetEntity; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void Setup(ItemBlueprint blueprint, SprayCan spray, BaseEntity ent, Action<bool, int> callback) { }
+	public void Setup(ItemBlueprint blueprint, SprayCan spray, BaseEntity ent, Action<bool, int> callback) { }
 
-private void SkinChangedEvent() { }
+	private void SkinChangedEvent() { }
 
-public override void CloseDialog() { }
+	public override void CloseDialog() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

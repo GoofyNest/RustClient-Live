@@ -7,11 +7,11 @@ public class MLRSVelocityUI : MonoBehaviour // TypeDefIndex: 9727
 	private float lastSetPercent; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void SetVelocity(float curVel, float maxVel) { }
+	public void SetVelocity(float curVel, float maxVel) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

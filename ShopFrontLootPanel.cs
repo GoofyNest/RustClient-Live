@@ -12,15 +12,15 @@ public class ShopFrontLootPanel : LootPanel // TypeDefIndex: 8673
 	public Translate.Phrase noOnePhrase; 
 
 
-public ShopFront GetShopfront() { }
+	public ShopFront GetShopfront() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public void AcceptClicked() { }
+	public void AcceptClicked() { }
 
-public void CancelClicked() { }
+	public void CancelClicked() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -18,17 +18,17 @@ public class LootPanelEngine : LootPanel // TypeDefIndex: 11029
 	private RustText fuelEconomy; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public EngineStorage GetEngineStorage() { }
+	public EngineStorage GetEngineStorage() { }
 
-private void RefreshStats(EngineStorage engineBayStorage) { }
+	private void RefreshStats(EngineStorage engineBayStorage) { }
 
-public void OnDroppedOnEngine(BaseEventData data) { }
+	public void OnDroppedOnEngine(BaseEventData data) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,13 +7,13 @@ public class ParticleEmitFromParentObject : MonoBehaviour // TypeDefIndex: 9355
 	private float lastBoundsUpdate; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void UpdateRenderBounds(float delay = 0) { }
+	private void UpdateRenderBounds(float delay = 0) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -23,72 +23,72 @@ public sealed class TemporalAntialiasing // TypeDefIndex: 11807
 	private int <sampleIndex>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private int <sampleCount>k__BackingField; 
-private const int k_NumEyes = 2;
-private const int k_NumHistoryTextures = 2;
+	private const int k_NumEyes = 2;
+	private const int k_NumHistoryTextures = 2;
 	private readonly RenderTexture[][] m_HistoryTextures; 
 	private readonly int[] m_HistoryPingPong; 
 
-public Vector2 jitter { get; set; }
-public Vector2 jitterRaw { get; set; }
-public int sampleIndex { get; set; }
-public int sampleCount { get; set; }
+	public Vector2 jitter { get; set; }
+	public Vector2 jitterRaw { get; set; }
+	public int sampleIndex { get; set; }
+	public int sampleCount { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Vector2 get_jitter() { }
+	public Vector2 get_jitter() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_jitter(Vector2 value) { }
+	private void set_jitter(Vector2 value) { }
 
 	[CompilerGeneratedAttribute] 
-public Vector2 get_jitterRaw() { }
+	public Vector2 get_jitterRaw() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_jitterRaw(Vector2 value) { }
+	private void set_jitterRaw(Vector2 value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_sampleIndex() { }
+	public int get_sampleIndex() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_sampleIndex(int value) { }
+	private void set_sampleIndex(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_sampleCount() { }
+	public int get_sampleCount() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_sampleCount(int value) { }
+	public void set_sampleCount(int value) { }
 
-public bool IsSupported() { }
+	public bool IsSupported() { }
 
-internal DepthTextureMode GetCameraFlags() { }
+	internal DepthTextureMode GetCameraFlags() { }
 
-internal void ResetHistory() { }
+	internal void ResetHistory() { }
 
-private Vector2 GenerateRandomOffset() { }
+	private Vector2 GenerateRandomOffset() { }
 
-public Matrix4x4 GetJitteredProjectionMatrix(Camera camera) { }
+	public Matrix4x4 GetJitteredProjectionMatrix(Camera camera) { }
 
-public void ConfigureJitteredProjectionMatrix(PostProcessRenderContext context) { }
+	public void ConfigureJitteredProjectionMatrix(PostProcessRenderContext context) { }
 
-public void ConfigureStereoJitteredProjectionMatrices(PostProcessRenderContext context) { }
+	public void ConfigureStereoJitteredProjectionMatrices(PostProcessRenderContext context) { }
 
-private void GenerateHistoryName(RenderTexture rt, int id, PostProcessRenderContext context) { }
+	private void GenerateHistoryName(RenderTexture rt, int id, PostProcessRenderContext context) { }
 
-private RenderTexture CheckHistory(int id, PostProcessRenderContext context) { }
+	private RenderTexture CheckHistory(int id, PostProcessRenderContext context) { }
 
-internal void Render(PostProcessRenderContext context) { }
+	internal void Render(PostProcessRenderContext context) { }
 
-internal void Release() { }
+	internal void Release() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum TemporalAntialiasing.Pass // TypeDefIndex: 11808
 {
 	public int value__; 
-public const TemporalAntialiasing.Pass SolverDilate = 0;
-public const TemporalAntialiasing.Pass SolverNoDilate = 1;
+	public const TemporalAntialiasing.Pass SolverDilate = 0;
+	public const TemporalAntialiasing.Pass SolverNoDilate = 1;
 
 }
 

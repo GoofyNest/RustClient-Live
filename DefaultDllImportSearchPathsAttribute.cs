@@ -3,7 +3,7 @@ public sealed class DefaultDllImportSearchPathsAttribute : Attribute // TypeDefI
 	internal DllImportSearchPath _paths; 
 
 
-public void .ctor(DllImportSearchPath paths) { }
+	public void .ctor(DllImportSearchPath paths) { }
 
 }
 

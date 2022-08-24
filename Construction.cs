@@ -30,32 +30,32 @@ public class Construction : PrefabAttribute // TypeDefIndex: 9052
 	public Deployable deployable; 
 	public ConstructionPlaceholder placeholder; 
 
-public static bool DebugDraw { get; }
+	public static bool DebugDraw { get; }
 
 
-public bool UpdatePlacement(Transform transform, Construction common, ref Construction.Target target) { }
+	public bool UpdatePlacement(Transform transform, Construction common, ref Construction.Target target) { }
 
-private bool TestPlacingThroughRock(ref Construction.Placement placement, Construction.Target target) { }
+	private bool TestPlacingThroughRock(ref Construction.Placement placement, Construction.Target target) { }
 
-private static bool TestPlacingThroughWall(ref Construction.Placement placement, Transform transform, Construction common, Construction.Target target) { }
+	private static bool TestPlacingThroughWall(ref Construction.Placement placement, Transform transform, Construction common, Construction.Target target) { }
 
-private bool TestPlacingCloseToRoad(ref Construction.Placement placement, Construction.Target target) { }
+	private bool TestPlacingCloseToRoad(ref Construction.Placement placement, Construction.Target target) { }
 
-public virtual bool ShowAsNeutral(Construction.Target target) { }
+	public virtual bool ShowAsNeutral(Construction.Target target) { }
 
-public static bool get_DebugDraw() { }
+	public static bool get_DebugDraw() { }
 
-public bool HasMaleSockets(Construction.Target target) { }
+	public bool HasMaleSockets(Construction.Target target) { }
 
-public void FindMaleSockets(Construction.Target target, List<Socket_Base> sockets) { }
+	public void FindMaleSockets(Construction.Target target, List<Socket_Base> sockets) { }
 
-public GameObject CreateGuideSkin() { }
+	public GameObject CreateGuideSkin() { }
 
-protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	protected override void AttributeSetup(GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -73,9 +73,9 @@ public struct Construction.Target // TypeDefIndex: 9053
 	public bool inBuildingPrivilege; 
 
 
-public Quaternion GetWorldRotation(bool female) { }
+	public Quaternion GetWorldRotation(bool female) { }
 
-public Vector3 GetWorldPosition() { }
+	public Vector3 GetWorldPosition() { }
 
 }
 
@@ -85,7 +85,7 @@ public class Construction.Placement // TypeDefIndex: 9054
 	public Quaternion rotation; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -95,15 +95,15 @@ public class Construction.Grade // TypeDefIndex: 9055
 	public float maxHealth; 
 	public List<ItemAmount> costToBuild; 
 
-public PhysicMaterial physicMaterial { get; }
-public ProtectionProperties damageProtecton { get; }
+	public PhysicMaterial physicMaterial { get; }
+	public ProtectionProperties damageProtecton { get; }
 
 
-public PhysicMaterial get_physicMaterial() { }
+	public PhysicMaterial get_physicMaterial() { }
 
-public ProtectionProperties get_damageProtecton() { }
+	public ProtectionProperties get_damageProtecton() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -114,13 +114,13 @@ private sealed class Construction.<>c // TypeDefIndex: 9056
 	public static Func<ConstructionGrade, BuildingGrade.Enum> <>9__33_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CreateGuideSkin>b__33_0(ConstructionGrade x) { }
+	internal bool <CreateGuideSkin>b__33_0(ConstructionGrade x) { }
 
-internal BuildingGrade.Enum <CreateGuideSkin>b__33_1(ConstructionGrade x) { }
+	internal BuildingGrade.Enum <CreateGuideSkin>b__33_1(ConstructionGrade x) { }
 
 }
 
@@ -129,11 +129,11 @@ public class Construction_SleepingBag : Construction // TypeDefIndex: 9063
 	public static bool ShowSleepingBagProximityWarning; 
 
 
-public override bool ShowAsNeutral(Construction.Target target) { }
+	public override bool ShowAsNeutral(Construction.Target target) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

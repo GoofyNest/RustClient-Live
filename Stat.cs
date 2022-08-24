@@ -5,25 +5,25 @@ public struct Stat // TypeDefIndex: 5559
 	[CompilerGeneratedAttribute] 
 	private SteamId <UserId>k__BackingField; 
 
-public string Name { get; set; }
-internal SteamId UserId { set; }
+	public string Name { get; set; }
+	internal SteamId UserId { set; }
 
 
 	[IsReadOnlyAttribute] 
 	[CompilerGeneratedAttribute] 
-public string get_Name() { }
+	public string get_Name() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Name(string value) { }
+	internal void set_Name(string value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_UserId(SteamId value) { }
+	internal void set_UserId(SteamId value) { }
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
-public double GetGlobalFloat() { }
+	public double GetGlobalFloat() { }
 
-public long GetGlobalInt() { }
+	public long GetGlobalInt() { }
 
 }
 

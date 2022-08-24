@@ -25,21 +25,21 @@ public class FirecrackerRepeater : BaseMonoBehaviour, IClientComponent // TypeDe
 	private float startTime; 
 
 
-private void Start() { }
+	private void Start() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void Begin() { }
+	public void Begin() { }
 
-public float GetProgress() { }
+	public float GetProgress() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void SetTwistAmount(int index, Vector3 twistAmountToUse) { }
+	public void SetTwistAmount(int index, Vector3 twistAmountToUse) { }
 
-public void Explode() { }
+	public void Explode() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

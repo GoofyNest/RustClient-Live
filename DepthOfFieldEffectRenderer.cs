@@ -5,15 +5,15 @@ public class DepthOfFieldEffectRenderer : PostProcessEffectRenderer<DepthOfField
 	private Shader dofShader; 
 
 
-public override void Init() { }
+	public override void Init() { }
 
-private float FocalDistance01(Camera cam, float worldDist) { }
+	private float FocalDistance01(Camera cam, float worldDist) { }
 
-private void WriteCoc(PostProcessRenderContext context, PropertySheet sheet) { }
+	private void WriteCoc(PostProcessRenderContext context, PropertySheet sheet) { }
 
-public override void Render(PostProcessRenderContext context) { }
+	public override void Render(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

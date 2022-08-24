@@ -4,18 +4,18 @@ internal class StackBuilderSink : IMessageSink // TypeDefIndex: 1262
 	private RealProxy _rp; 
 
 
-public void .ctor(MarshalByRefObject obj, bool forceInternalExecute) { }
+	public void .ctor(MarshalByRefObject obj, bool forceInternalExecute) { }
 
-public IMessage SyncProcessMessage(IMessage msg) { }
+	public IMessage SyncProcessMessage(IMessage msg) { }
 
-public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
+	public IMessageCtrl AsyncProcessMessage(IMessage msg, IMessageSink replySink) { }
 
-private void ExecuteAsyncMessage(object ob) { }
+	private void ExecuteAsyncMessage(object ob) { }
 
-private void CheckParameters(IMessage msg) { }
+	private void CheckParameters(IMessage msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void <AsyncProcessMessage>b__4_0(object data) { }
+	private void <AsyncProcessMessage>b__4_0(object data) { }
 
 }
 

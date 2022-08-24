@@ -12,17 +12,17 @@ public class UnreadMessages : SingletonComponent<UnreadMessages> // TypeDefIndex
 	private List<RustButton> createdButtons; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void Frame() { }
+	public void Frame() { }
 
-private void UpdateForAmount(int count) { }
+	private void UpdateForAmount(int count) { }
 
-public void OpenList() { }
+	public void OpenList() { }
 
-public void CloseList() { }
+	public void CloseList() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -31,9 +31,9 @@ private sealed class UnreadMessages.<>c__DisplayClass13_0 // TypeDefIndex: 11172
 	public NoticeData info; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <OpenList>b__2() { }
+	internal void <OpenList>b__2() { }
 
 }
 
@@ -44,13 +44,13 @@ private sealed class UnreadMessages.<>c // TypeDefIndex: 11173
 	public static Func<AccountNotice, DateTime> <>9__13_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OpenList>b__13_0(AccountNotice x) { }
+	internal bool <OpenList>b__13_0(AccountNotice x) { }
 
-internal DateTime <OpenList>b__13_1(AccountNotice x) { }
+	internal DateTime <OpenList>b__13_1(AccountNotice x) { }
 
 }
 

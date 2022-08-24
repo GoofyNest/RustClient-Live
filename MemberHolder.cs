@@ -4,11 +4,11 @@ internal class MemberHolder // TypeDefIndex: 1035
 	internal StreamingContext context; 
 
 
-internal void .ctor(Type type, StreamingContext ctx) { }
+	internal void .ctor(Type type, StreamingContext ctx) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
 }
 

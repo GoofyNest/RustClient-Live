@@ -7,7 +7,7 @@ public class tPoint // TypeDefIndex: 7284
 	public int v; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

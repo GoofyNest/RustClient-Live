@@ -14,23 +14,23 @@ public class TeamMemberElement : MonoBehaviour, IPointerEnterHandler, IEventSyst
 	public int teamIndex; 
 
 
-public void UpdateState(string name, bool isOnline, bool isAlive = True, bool isLeader = False, bool isWounded = False) { }
+	public void UpdateState(string name, bool isOnline, bool isAlive = True, bool isLeader = False, bool isWounded = False) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void OnPointerClick(PointerEventData eventData) { }
+	public void OnPointerClick(PointerEventData eventData) { }
 
-public void OverlayClick() { }
+	public void OverlayClick() { }
 
-public void SetOverlayVisible(bool wantsVisible) { }
+	public void SetOverlayVisible(bool wantsVisible) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

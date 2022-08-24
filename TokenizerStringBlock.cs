@@ -4,7 +4,7 @@ internal sealed class TokenizerStringBlock // TypeDefIndex: 926
 	internal TokenizerStringBlock m_next; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

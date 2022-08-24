@@ -4,13 +4,13 @@ public class UnderwearManifest : ScriptableObject // TypeDefIndex: 10774
 	public List<Underwear> underwears; 
 
 
-public static UnderwearManifest Get() { }
+	public static UnderwearManifest Get() { }
 
-public void PrintManifest() { }
+	public void PrintManifest() { }
 
-public Underwear GetUnderwear(uint id) { }
+	public Underwear GetUnderwear(uint id) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

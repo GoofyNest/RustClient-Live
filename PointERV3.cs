@@ -10,7 +10,7 @@ public class PointERV3 // TypeDefIndex: 7302
 	public int z; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

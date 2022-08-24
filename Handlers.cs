@@ -4,13 +4,13 @@ public sealed class Handlers // TypeDefIndex: 7371
 	private static Hashtable aliases; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public static string GetAlias(string name) { }
+	public static string GetAlias(string name) { }
 
-private static void BuildHash() { }
+	private static void BuildHash() { }
 
 }
 

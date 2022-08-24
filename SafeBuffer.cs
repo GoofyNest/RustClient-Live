@@ -5,10 +5,10 @@ public abstract class SafeBuffer : SafeHandleZeroOrMinusOneIsInvalid // TypeDefI
 
 	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
-public void AcquirePointer(ref byte* pointer) { }
+	public void AcquirePointer(ref byte* pointer) { }
 
 	[ReliabilityContractAttribute] 
-public void ReleasePointer() { }
+	public void ReleasePointer() { }
 
 }
 

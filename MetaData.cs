@@ -4,7 +4,7 @@ public class MetaData // TypeDefIndex: 3583
 	public string platform; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,17 +6,17 @@ public class RainSurfaceAmbience : SingletonComponent<RainSurfaceAmbience>, ICli
 	private Dictionary<PhysicMaterial, RainSurfaceAmbience.SurfaceSound> surfaceSoundsByMaterial; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void ReadParticlePatchRaycastHit(bool didHit, RaycastHit raycastHit, ParticlePatch particlePatch) { }
+	public void ReadParticlePatchRaycastHit(bool didHit, RaycastHit raycastHit, ParticlePatch particlePatch) { }
 
-public void ParticlePatchDestroyingInstances(ParticlePatch particlePatch) { }
+	public void ParticlePatchDestroyingInstances(ParticlePatch particlePatch) { }
 
-private void DespawnEmitter(ParticlePatch particlePatch) { }
+	private void DespawnEmitter(ParticlePatch particlePatch) { }
 
-private RainSurfaceAmbience.SurfaceSound FindSurfaceSound(PhysicMaterial physicMaterial) { }
+	private RainSurfaceAmbience.SurfaceSound FindSurfaceSound(PhysicMaterial physicMaterial) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -26,7 +26,7 @@ public class RainSurfaceAmbience.SurfaceSound // TypeDefIndex: 8980
 	public List<PhysicMaterial> materials; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,13 +5,13 @@ internal static class ValidationHelper // TypeDefIndex: 2888
 	internal static readonly char[] InvalidParamChars; 
 
 
-public static string MakeStringNull(string stringValue) { }
+	public static string MakeStringNull(string stringValue) { }
 
-public static bool IsBlankString(string stringValue) { }
+	public static bool IsBlankString(string stringValue) { }
 
-public static bool ValidateTcpPort(int port) { }
+	public static bool ValidateTcpPort(int port) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -4,22 +4,22 @@ public struct TypedReference // TypeDefIndex: 323
 	private IntPtr Value; 
 	private IntPtr Type; 
 
-internal bool IsNull { get; }
+	internal bool IsNull { get; }
 
 
 	[CLSCompliantAttribute] 
-public static TypedReference MakeTypedReference(object target, FieldInfo[] flds) { }
+	public static TypedReference MakeTypedReference(object target, FieldInfo[] flds) { }
 
-private static TypedReference MakeTypedReferenceInternal(object target, FieldInfo[] fields) { }
+	private static TypedReference MakeTypedReferenceInternal(object target, FieldInfo[] fields) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-internal bool get_IsNull() { }
+	internal bool get_IsNull() { }
 
 	[CLSCompliantAttribute] 
-public static void SetTypedReference(TypedReference target, object value) { }
+	public static void SetTypedReference(TypedReference target, object value) { }
 
 }
 

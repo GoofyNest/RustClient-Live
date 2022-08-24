@@ -13,11 +13,11 @@ public class ZoomImage : MonoBehaviour, IScrollHandler, IEventSystemHandler // T
 	private RectTransform _thisTransform; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void OnScroll(PointerEventData eventData) { }
+	public void OnScroll(PointerEventData eventData) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,29 +6,29 @@ public class TimerConfig : UIDialog // TypeDefIndex: 8736
 	public float seconds; 
 
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-public void SetTimerSwitch(CustomTimerSwitch newSwitch) { }
+	public void SetTimerSwitch(CustomTimerSwitch newSwitch) { }
 
-public void Confirm() { }
+	public void Confirm() { }
 
-public void SelectTextField() { }
+	public void SelectTextField() { }
 
-public float GetRawFloatValue() { }
+	public float GetRawFloatValue() { }
 
-public float GetFloatValue() { }
+	public float GetFloatValue() { }
 
-public int GetIntValue() { }
+	public int GetIntValue() { }
 
-public void ValueChanged() { }
+	public void ValueChanged() { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public void OnTextFieldEnd() { }
+	public void OnTextFieldEnd() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

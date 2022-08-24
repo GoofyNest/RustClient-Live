@@ -13,15 +13,15 @@ public class TakeCollisionDamage : FacepunchBehaviour // TypeDefIndex: 9752
 	[SerializeField] 
 	private float velocityRestorePercent; 
 
-private bool IsServer { get; }
-private bool IsClient { get; }
+	private bool IsServer { get; }
+	private bool IsClient { get; }
 
 
-private bool get_IsServer() { }
+	private bool get_IsServer() { }
 
-private bool get_IsClient() { }
+	private bool get_IsClient() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

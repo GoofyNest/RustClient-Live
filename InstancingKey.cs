@@ -6,13 +6,13 @@ public struct InstancingKey : IEquatable<InstancingKey> // TypeDefIndex: 11359
 	public int shaderPass; 
 
 
-public void .ctor(Mesh mesh, int submeshIndex, Material material, int shaderPass) { }
+	public void .ctor(Mesh mesh, int submeshIndex, Material material, int shaderPass) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(InstancingKey other) { }
+	public bool Equals(InstancingKey other) { }
 
 }
 

@@ -11,9 +11,9 @@ public struct VideoClipPlayable : IEquatable<VideoClipPlayable>
 	private PlayableHandle m_Handle; 
 
 
-public PlayableHandle GetHandle() { }
+	public PlayableHandle GetHandle() { }
 
-public bool Equals(VideoClipPlayable other) { }
+	public bool Equals(VideoClipPlayable other) { }
 
 }
 

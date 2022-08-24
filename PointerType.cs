@@ -1,9 +1,9 @@
 public enum PointerType // TypeDefIndex: 4028
 {
 	public int value__; 
-public const PointerType Mouse = 0;
-public const PointerType Touch = 1;
-public const PointerType Pen = 2;
+	public const PointerType Mouse = 0;
+	public const PointerType Touch = 1;
+	public const PointerType Pen = 2;
 
 }
 
@@ -15,11 +15,11 @@ public static class PointerType // TypeDefIndex: 4687
 	public static readonly string unknown; 
 
 
-internal static string GetPointerType(int pointerId) { }
+	internal static string GetPointerType(int pointerId) { }
 
-internal static bool IsDirectManipulationDevice(string pointerType) { }
+	internal static bool IsDirectManipulationDevice(string pointerType) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

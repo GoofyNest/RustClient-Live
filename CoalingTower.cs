@@ -8,57 +8,57 @@ public class CoalingTower : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 	public uint activeUnloadableID; 
 
 
-public static void ResetToPool(CoalingTower instance) { }
+	public static void ResetToPool(CoalingTower instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(CoalingTower instance) { }
+	public void CopyTo(CoalingTower instance) { }
 
-public CoalingTower Copy() { }
+	public CoalingTower Copy() { }
 
-public static CoalingTower Deserialize(Stream stream) { }
+	public static CoalingTower Deserialize(Stream stream) { }
 
-public static CoalingTower DeserializeLengthDelimited(Stream stream) { }
+	public static CoalingTower DeserializeLengthDelimited(Stream stream) { }
 
-public static CoalingTower DeserializeLength(Stream stream, int length) { }
+	public static CoalingTower DeserializeLength(Stream stream, int length) { }
 
-public static CoalingTower Deserialize(byte[] buffer) { }
+	public static CoalingTower Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, CoalingTower previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, CoalingTower previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static CoalingTower Deserialize(byte[] buffer, CoalingTower instance, bool isDelta = False) { }
+	public static CoalingTower Deserialize(byte[] buffer, CoalingTower instance, bool isDelta = False) { }
 
-public static CoalingTower Deserialize(Stream stream, CoalingTower instance, bool isDelta) { }
+	public static CoalingTower Deserialize(Stream stream, CoalingTower instance, bool isDelta) { }
 
-public static CoalingTower DeserializeLengthDelimited(Stream stream, CoalingTower instance, bool isDelta) { }
+	public static CoalingTower DeserializeLengthDelimited(Stream stream, CoalingTower instance, bool isDelta) { }
 
-public static CoalingTower DeserializeLength(Stream stream, int length, CoalingTower instance, bool isDelta) { }
+	public static CoalingTower DeserializeLength(Stream stream, int length, CoalingTower instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, CoalingTower instance, CoalingTower previous) { }
+	public static void SerializeDelta(Stream stream, CoalingTower instance, CoalingTower previous) { }
 
-public static void Serialize(Stream stream, CoalingTower instance) { }
+	public static void Serialize(Stream stream, CoalingTower instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(CoalingTower instance) { }
+	public static byte[] SerializeToBytes(CoalingTower instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, CoalingTower instance) { }
+	public static void SerializeLengthDelimited(Stream stream, CoalingTower instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -163,14 +163,14 @@ public class CoalingTower : IOEntity // TypeDefIndex: 8282
 	private NetworkedProperty<int> LootTypeIndex; 
 	private EntityRef<TrainCar> activeTrainCarRef; 
 	private EntityRef<TrainCarUnloadable> activeUnloadableRef; 
-private const BaseEntity.Flags LinedUpFlag = 256;
-private const BaseEntity.Flags HasUnloadableFlag = 128;
-private const BaseEntity.Flags UnloadingInProgressFlag = 8192;
-private const BaseEntity.Flags MoveToNextInProgressFlag = 512;
-private const BaseEntity.Flags MoveToPrevInProgressFlag = 1024;
+	private const BaseEntity.Flags LinedUpFlag = 256;
+	private const BaseEntity.Flags HasUnloadableFlag = 128;
+	private const BaseEntity.Flags UnloadingInProgressFlag = 8192;
+	private const BaseEntity.Flags MoveToNextInProgressFlag = 512;
+	private const BaseEntity.Flags MoveToPrevInProgressFlag = 1024;
 	private EntityRef<OreHopper> oreStorageInstance; 
 	private EntityRef<PercentFullStorageContainer> fuelStorageInstance; 
-public const float TIME_TO_EMPTY = 40;
+	public const float TIME_TO_EMPTY = 40;
 	[CompilerGeneratedAttribute] 
 	private Vector3 <UnloadingPos>k__BackingField; 
 	private static List<CoalingTower> unloadersInWorld; 
@@ -185,145 +185,145 @@ public const float TIME_TO_EMPTY = 40;
 	private Option __menuOption_Menu_Unavailable; 
 	private Option __menuOption_Menu_Unload; 
 
-private bool HasTrainCar { get; }
-private bool HasUnloadable { get; }
-private bool HasUnloadableLinedUp { get; }
-public Vector3 UnloadingPos { get; set; }
-public override bool HasMenuOptions { get; }
+	private bool HasTrainCar { get; }
+	private bool HasUnloadable { get; }
+	private bool HasUnloadableLinedUp { get; }
+	public Vector3 UnloadingPos { get; set; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void RefreshSignalLights() { }
+	public void RefreshSignalLights() { }
 
-private void SetSignalLightRenderer(MeshRenderer renderer, bool hasTrainCar, bool hasUnloadable, bool hasUnloadableLinedUp) { }
+	private void SetSignalLightRenderer(MeshRenderer renderer, bool hasTrainCar, bool hasUnloadable, bool hasUnloadableLinedUp) { }
 
-public void PlayButtonPressSound() { }
+	public void PlayButtonPressSound() { }
 
-public void PlayButtonReleaseSound() { }
+	public void PlayButtonReleaseSound() { }
 
-public void PlayFailedActionSound() { }
+	public void PlayFailedActionSound() { }
 
-public void PlayFailedShuntAlarmSound() { }
+	public void PlayFailedShuntAlarmSound() { }
 
-private void StartSounds() { }
+	private void StartSounds() { }
 
-private void StartSuctionSounds() { }
+	private void StartSuctionSounds() { }
 
-private void StopSounds() { }
+	private void StopSounds() { }
 
-private bool IsLookingAtControls(BasePlayer player) { }
+	private bool IsLookingAtControls(BasePlayer player) { }
 
-private bool IsLookingAtUnload(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_Unload(BasePlayer player) { }
-
-public bool Menu_Unload_ShowIf(BasePlayer player) { }
+	private bool IsLookingAtUnload(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Next(BasePlayer player) { }
+	public void Menu_Unload(BasePlayer player) { }
 
-public bool Menu_Next_ShowIf(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_Prev(BasePlayer player) { }
-
-public bool Menu_Prev_ShowIf(BasePlayer player) { }
+	public bool Menu_Unload_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Unavailable(BasePlayer player) { }
+	public void Menu_Next(BasePlayer player) { }
 
-public bool Menu_Unavailable_ShowIf(BasePlayer player) { }
+	public bool Menu_Next_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_BinFull(BasePlayer player) { }
+	public void Menu_Prev(BasePlayer player) { }
 
-public bool Menu_BinFull_ShowIf(BasePlayer player) { }
+	public bool Menu_Prev_ShowIf(BasePlayer player) { }
+
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_Unavailable(BasePlayer player) { }
+
+	public bool Menu_Unavailable_ShowIf(BasePlayer player) { }
+
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_BinFull(BasePlayer player) { }
+
+	public bool Menu_BinFull_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.RPC_Client] 
-private void ActionFailed(BaseEntity.RPCMessage msg) { }
+	private void ActionFailed(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void IssueDuringShunt(BaseEntity.RPCMessage msg) { }
+	private void IssueDuringShunt(BaseEntity.RPCMessage msg) { }
 
-private bool get_HasTrainCar() { }
+	private bool get_HasTrainCar() { }
 
-private bool get_HasUnloadable() { }
+	private bool get_HasUnloadable() { }
 
-private bool get_HasUnloadableLinedUp() { }
-
-	[CompilerGeneratedAttribute] 
-public Vector3 get_UnloadingPos() { }
+	private bool get_HasUnloadableLinedUp() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_UnloadingPos(Vector3 value) { }
+	public Vector3 get_UnloadingPos() { }
 
-public override void InitShared() { }
+	[CompilerGeneratedAttribute] 
+	private void set_UnloadingPos(Vector3 value) { }
 
-public override void DestroyShared() { }
+	public override void InitShared() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void DestroyShared() { }
 
-public static bool IsUnderAnUnloader(TrainCar trainCar, out bool isLinedUp, out Vector3 unloaderPos) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public bool TrainCarIsUnder(TrainCar trainCar, out bool isLinedUp) { }
+	public static bool IsUnderAnUnloader(TrainCar trainCar, out bool isLinedUp, out Vector3 unloaderPos) { }
 
-private OreHopper GetOreStorage() { }
+	public bool TrainCarIsUnder(TrainCar trainCar, out bool isLinedUp) { }
 
-private PercentFullStorageContainer GetFuelStorage() { }
+	private OreHopper GetOreStorage() { }
 
-private TrainCar GetActiveTrainCar() { }
+	private PercentFullStorageContainer GetFuelStorage() { }
 
-private TrainCarUnloadable GetActiveUnloadable() { }
+	private TrainCar GetActiveTrainCar() { }
 
-private bool OutputBinIsFull() { }
+	private TrainCarUnloadable GetActiveUnloadable() { }
 
-private bool WagonIsEmpty() { }
+	private bool OutputBinIsFull() { }
 
-private bool CanUnloadNow(out CoalingTower.ActionAttemptStatus attemptStatus) { }
+	private bool WagonIsEmpty() { }
 
-public override void GetMenuOptions(List<Option> list) { }
+	private bool CanUnloadNow(out CoalingTower.ActionAttemptStatus attemptStatus) { }
 
-public override bool get_HasMenuOptions() { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool get_HasMenuOptions() { }
 
-public void .ctor() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum CoalingTower.ActionAttemptStatus // TypeDefIndex: 8283
 {
 	public int value__; 
-public const CoalingTower.ActionAttemptStatus NoError = 0;
-public const CoalingTower.ActionAttemptStatus GenericError = 1;
-public const CoalingTower.ActionAttemptStatus NoTrainCar = 2;
-public const CoalingTower.ActionAttemptStatus NoNextTrainCar = 3;
-public const CoalingTower.ActionAttemptStatus NoPrevTrainCar = 4;
-public const CoalingTower.ActionAttemptStatus TrainIsMoving = 5;
-public const CoalingTower.ActionAttemptStatus OutputIsFull = 6;
-public const CoalingTower.ActionAttemptStatus AlreadyShunting = 7;
-public const CoalingTower.ActionAttemptStatus TrainHasThrottle = 8;
+	public const CoalingTower.ActionAttemptStatus NoError = 0;
+	public const CoalingTower.ActionAttemptStatus GenericError = 1;
+	public const CoalingTower.ActionAttemptStatus NoTrainCar = 2;
+	public const CoalingTower.ActionAttemptStatus NoNextTrainCar = 3;
+	public const CoalingTower.ActionAttemptStatus NoPrevTrainCar = 4;
+	public const CoalingTower.ActionAttemptStatus TrainIsMoving = 5;
+	public const CoalingTower.ActionAttemptStatus OutputIsFull = 6;
+	public const CoalingTower.ActionAttemptStatus AlreadyShunting = 7;
+	public const CoalingTower.ActionAttemptStatus TrainHasThrottle = 8;
 
 }
 

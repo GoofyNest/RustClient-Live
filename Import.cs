@@ -5,17 +5,17 @@ public static class Import
 	private static Regex regex; 
 
 
-public static T[] FromUrl<T>(string sheetId) { }
-/* GenericInstMethod :
-|
-|-Import.FromUrl<object>
-*/
+	public static T[] FromUrl<T>(string sheetId) { }
+	/* GenericInstMethod :
+	|
+	|-Import.FromUrl<object>
+	*/
 
-private static string[] GetCSVColumns(string line) { }
+	private static string[] GetCSVColumns(string line) { }
 
-private static void MonoSecurityBullshitHack() { }
+	private static void MonoSecurityBullshitHack() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -24,11 +24,11 @@ private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7792
 	public string[] columnNames; 
 
 
-public void .ctor() { }
-/* GenericInstMethod :
-|
-|-Import.<>c__DisplayClass0_0<object>..ctor
-*/
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-Import.<>c__DisplayClass0_0<object>..ctor
+	*/
 
 }
 
@@ -39,17 +39,17 @@ private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7793
 	public Func<PropertyInfo, bool> <>9__0; 
 
 
-public void .ctor() { }
-/* GenericInstMethod :
-|
-|-Import.<>c__DisplayClass0_1<object>..ctor
-*/
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-Import.<>c__DisplayClass0_1<object>..ctor
+	*/
 
-internal bool <FromUrl>b__0(PropertyInfo x) { }
-/* GenericInstMethod :
-|
-|-Import.<>c__DisplayClass0_1<object>.<FromUrl>b__0
-*/
+	internal bool <FromUrl>b__0(PropertyInfo x) { }
+	/* GenericInstMethod :
+	|
+	|-Import.<>c__DisplayClass0_1<object>.<FromUrl>b__0
+	*/
 
 }
 
@@ -60,13 +60,13 @@ private sealed class Import.<>c // TypeDefIndex: 7794
 	public static RemoteCertificateValidationCallback <>9__3_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <GetCSVColumns>b__2_0(Match x) { }
+	internal string <GetCSVColumns>b__2_0(Match x) { }
 
-internal bool <MonoSecurityBullshitHack>b__3_0(object a, X509Certificate b, X509Chain c, SslPolicyErrors d) { }
+	internal bool <MonoSecurityBullshitHack>b__3_0(object a, X509Certificate b, X509Chain c, SslPolicyErrors d) { }
 
 }
 

@@ -1,11 +1,11 @@
 internal class ReflectionOnlyType : RuntimeType // TypeDefIndex: 295
 {
-public override RuntimeTypeHandle TypeHandle { get; }
+	public override RuntimeTypeHandle TypeHandle { get; }
 
 
-private void .ctor() { }
+	private void .ctor() { }
 
-public override RuntimeTypeHandle get_TypeHandle() { }
+	public override RuntimeTypeHandle get_TypeHandle() { }
 
 }
 

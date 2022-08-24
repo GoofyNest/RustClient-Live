@@ -1,11 +1,11 @@
 public class GenerateRoadTopology : ProceduralComponent // TypeDefIndex: 10521
 {
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-private void MarkRoadside() { }
+	private void MarkRoadside() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -17,9 +17,9 @@ private sealed class GenerateRoadTopology.<>c__DisplayClass1_0 // TypeDefIndex: 
 	public TerrainHeightMap heightmap; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <MarkRoadside>b__0(int x, int y) { }
+	internal void <MarkRoadside>b__0(int x, int y) { }
 
 }
 

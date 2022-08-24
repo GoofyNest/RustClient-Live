@@ -1,11 +1,11 @@
 internal class ForeignKeyConstraintEnumerator : ConstraintEnumerator // TypeDefIndex: 4178
 {
 
-public void .ctor(DataSet dataSet) { }
+	public void .ctor(DataSet dataSet) { }
 
-protected override bool IsValidCandidate(Constraint constraint) { }
+	protected override bool IsValidCandidate(Constraint constraint) { }
 
-public ForeignKeyConstraint GetForeignKeyConstraint() { }
+	public ForeignKeyConstraint GetForeignKeyConstraint() { }
 
 }
 

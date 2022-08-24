@@ -8,9 +8,9 @@ public class ERSideObjectSection : MonoBehaviour // TypeDefIndex: 7293
 	public bool mirrored; 
 
 
-public void Copy(ERSideObjectSection source) { }
+	public void Copy(ERSideObjectSection source) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

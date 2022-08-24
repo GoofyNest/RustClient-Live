@@ -1,6 +1,6 @@
 public class ImpostorRenderer : MonoBehaviour // TypeDefIndex: 10681
 {
-public const string MainPassName = "DEFERRED";
+	public const string MainPassName = "DEFERRED";
 	private Camera camera; 
 	private static HashSet<ImpostorShadows> Shadows; 
 	private static HashSet<Impostor> Impostors; 
@@ -13,44 +13,44 @@ public const string MainPassName = "DEFERRED";
 	private static readonly int NaNProperty; 
 	private static readonly int PositionBufferProperty; 
 
-private Camera Camera { get; }
-public static bool IsSupported { get; }
-public static ImpostorRenderer Instance { get; }
+	private Camera Camera { get; }
+	public static bool IsSupported { get; }
+	public static ImpostorRenderer Instance { get; }
 
 
-private Camera get_Camera() { }
+	private Camera get_Camera() { }
 
-public static bool get_IsSupported() { }
+	public static bool get_IsSupported() { }
 
-public static ImpostorRenderer get_Instance() { }
+	public static ImpostorRenderer get_Instance() { }
 
-private void CheckInstance() { }
+	private void CheckInstance() { }
 
-public static void Clear() { }
+	public static void Clear() { }
 
-public static void Register(ImpostorShadows shadows) { }
+	public static void Register(ImpostorShadows shadows) { }
 
-public static void Unregister(ImpostorShadows shadows) { }
+	public static void Unregister(ImpostorShadows shadows) { }
 
-public static void Register(Impostor impostor) { }
+	public static void Register(Impostor impostor) { }
 
-public static void Unregister(Impostor impostor) { }
+	public static void Unregister(Impostor impostor) { }
 
-public static void RegisterBatching(ImpostorInstanceData data) { }
+	public static void RegisterBatching(ImpostorInstanceData data) { }
 
-public static void UnregisterBatching(ImpostorInstanceData data) { }
+	public static void UnregisterBatching(ImpostorInstanceData data) { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void OnPreCull() { }
+	public void OnPreCull() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -8,21 +8,21 @@ public class EasterBasket : AttackEntity // TypeDefIndex: 8567
 	private bool didHaveAmmo; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
 
-public Item GetAmmo() { }
+	public Item GetAmmo() { }
 
-public bool HasAmmo() { }
+	public bool HasAmmo() { }
 
-public void LaunchProjectile() { }
+	public void LaunchProjectile() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

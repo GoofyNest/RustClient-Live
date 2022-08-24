@@ -30,65 +30,65 @@ public struct SqlDateTime : INullable, IComparable, IXmlSerializable // TypeDefI
 	public static readonly SqlDateTime MaxValue; 
 	public static readonly SqlDateTime Null; 
 
-public bool IsNull { get; }
-public DateTime Value { get; }
-public int DayTicks { get; }
-public int TimeTicks { get; }
+	public bool IsNull { get; }
+	public DateTime Value { get; }
+	public int DayTicks { get; }
+	public int TimeTicks { get; }
 
 
-private void .ctor(bool fNull) { }
+	private void .ctor(bool fNull) { }
 
-public void .ctor(DateTime value) { }
+	public void .ctor(DateTime value) { }
 
-public void .ctor(int dayTicks, int timeTicks) { }
+	public void .ctor(int dayTicks, int timeTicks) { }
 
-public bool get_IsNull() { }
+	public bool get_IsNull() { }
 
-private static TimeSpan ToTimeSpan(SqlDateTime value) { }
+	private static TimeSpan ToTimeSpan(SqlDateTime value) { }
 
-private static DateTime ToDateTime(SqlDateTime value) { }
+	private static DateTime ToDateTime(SqlDateTime value) { }
 
-private static SqlDateTime FromTimeSpan(TimeSpan value) { }
+	private static SqlDateTime FromTimeSpan(TimeSpan value) { }
 
-private static SqlDateTime FromDateTime(DateTime value) { }
+	private static SqlDateTime FromDateTime(DateTime value) { }
 
-public DateTime get_Value() { }
+	public DateTime get_Value() { }
 
-public int get_DayTicks() { }
+	public int get_DayTicks() { }
 
-public int get_TimeTicks() { }
+	public int get_TimeTicks() { }
 
-public static SqlDateTime op_Implicit(DateTime value) { }
+	public static SqlDateTime op_Implicit(DateTime value) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public static SqlBoolean op_Equality(SqlDateTime x, SqlDateTime y) { }
+	public static SqlBoolean op_Equality(SqlDateTime x, SqlDateTime y) { }
 
-public static SqlBoolean op_LessThan(SqlDateTime x, SqlDateTime y) { }
+	public static SqlBoolean op_LessThan(SqlDateTime x, SqlDateTime y) { }
 
-public static SqlBoolean op_GreaterThan(SqlDateTime x, SqlDateTime y) { }
+	public static SqlBoolean op_GreaterThan(SqlDateTime x, SqlDateTime y) { }
 
-public static SqlBoolean LessThan(SqlDateTime x, SqlDateTime y) { }
+	public static SqlBoolean LessThan(SqlDateTime x, SqlDateTime y) { }
 
-public static SqlBoolean GreaterThan(SqlDateTime x, SqlDateTime y) { }
+	public static SqlBoolean GreaterThan(SqlDateTime x, SqlDateTime y) { }
 
-public int CompareTo(object value) { }
+	public int CompareTo(object value) { }
 
-public int CompareTo(SqlDateTime value) { }
+	public int CompareTo(SqlDateTime value) { }
 
-public override bool Equals(object value) { }
+	public override bool Equals(object value) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() { }
+	private XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() { }
 
-private void System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader) { }
+	private void System.Xml.Serialization.IXmlSerializable.ReadXml(XmlReader reader) { }
 
-private void System.Xml.Serialization.IXmlSerializable.WriteXml(XmlWriter writer) { }
+	private void System.Xml.Serialization.IXmlSerializable.WriteXml(XmlWriter writer) { }
 
-public static XmlQualifiedName GetXsdType(XmlSchemaSet schemaSet) { }
+	public static XmlQualifiedName GetXsdType(XmlSchemaSet schemaSet) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -8,14 +8,14 @@ internal class CFProxySettings // TypeDefIndex: 2524
 	private static IntPtr kCFNetworkProxiesProxyAutoConfigURLString; 
 	private CFDictionary settings; 
 
-public CFDictionary Dictionary { get; }
+	public CFDictionary Dictionary { get; }
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor(CFDictionary settings) { }
+	public void .ctor(CFDictionary settings) { }
 
-public CFDictionary get_Dictionary() { }
+	public CFDictionary get_Dictionary() { }
 
 }
 

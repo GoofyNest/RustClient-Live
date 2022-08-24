@@ -20,11 +20,11 @@ public class ERLaneConnector // TypeDefIndex: 7243
 	public float maxSpeed; 
 
 
-public static ERLaneConnector CreateInstance() { }
+	public static ERLaneConnector CreateInstance() { }
 
-public static List<ERLaneConnector> GetLaneConnectors(ERLaneData laneData, int index) { }
+	public static List<ERLaneConnector> GetLaneConnectors(ERLaneData laneData, int index) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

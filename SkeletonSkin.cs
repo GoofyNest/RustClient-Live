@@ -8,11 +8,11 @@ public class SkeletonSkin : MonoBehaviour // TypeDefIndex: 7353
 	public Transform[] BoneTransforms; 
 
 
-public void Retarget(Skeleton target) { }
+	public void Retarget(Skeleton target) { }
 
-public SkinnedMeshRenderer DuplicateAndRetarget(GameObject host, Skeleton target) { }
+	public SkinnedMeshRenderer DuplicateAndRetarget(GameObject host, Skeleton target) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

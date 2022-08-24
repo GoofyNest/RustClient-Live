@@ -8,46 +8,46 @@ public sealed class TempoMap // TypeDefIndex: 7452
 	[CompilerGeneratedAttribute] 
 	private TimeDivision <TimeDivision>k__BackingField; 
 
-public TimeDivision TimeDivision { get; set; }
-internal ValueLine<TimeSignature> TimeSignatureLine { get; set; }
-internal ValueLine<Tempo> TempoLine { get; set; }
-internal bool IsTempoMapReady { get; }
+	public TimeDivision TimeDivision { get; set; }
+	internal ValueLine<TimeSignature> TimeSignatureLine { get; set; }
+	internal ValueLine<Tempo> TempoLine { get; set; }
+	internal bool IsTempoMapReady { get; }
 
 
-internal void .ctor(TimeDivision timeDivision) { }
-
-	[CompilerGeneratedAttribute] 
-public TimeDivision get_TimeDivision() { }
+	internal void .ctor(TimeDivision timeDivision) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_TimeDivision(TimeDivision value) { }
+	public TimeDivision get_TimeDivision() { }
 
-internal ValueLine<TimeSignature> get_TimeSignatureLine() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_TimeDivision(TimeDivision value) { }
 
-internal void set_TimeSignatureLine(ValueLine<TimeSignature> value) { }
+	internal ValueLine<TimeSignature> get_TimeSignatureLine() { }
 
-internal ValueLine<Tempo> get_TempoLine() { }
+	internal void set_TimeSignatureLine(ValueLine<TimeSignature> value) { }
 
-internal void set_TempoLine(ValueLine<Tempo> value) { }
+	internal ValueLine<Tempo> get_TempoLine() { }
 
-internal bool get_IsTempoMapReady() { }
+	internal void set_TempoLine(ValueLine<Tempo> value) { }
 
-internal TempoMap Flip(long centerTime) { }
+	internal bool get_IsTempoMapReady() { }
 
-internal TCache GetValuesCache<TCache>() { }
-/* GenericInstMethod :
-|
-|-TempoMap.GetValuesCache<MetricTempoMapValuesCache>
-|-TempoMap.GetValuesCache<object>
-*/
+	internal TempoMap Flip(long centerTime) { }
 
-private void InvalidateCaches(TempoMapLine tempoMapLine) { }
+	internal TCache GetValuesCache<TCache>() { }
+	/* GenericInstMethod :
+	|
+	|-TempoMap.GetValuesCache<MetricTempoMapValuesCache>
+	|-TempoMap.GetValuesCache<object>
+	*/
 
-private void OnTimeSignatureChanged(object sender, EventArgs args) { }
+	private void InvalidateCaches(TempoMapLine tempoMapLine) { }
 
-private void OnTempoChanged(object sender, EventArgs args) { }
+	private void OnTimeSignatureChanged(object sender, EventArgs args) { }
 
-private static void .cctor() { }
+	private void OnTempoChanged(object sender, EventArgs args) { }
+
+	private static void .cctor() { }
 
 }
 
@@ -57,9 +57,9 @@ private sealed class TempoMap.<>c__DisplayClass35_0 // TypeDefIndex: 7453
 	public Func<ITempoMapValuesCache, bool> <>9__0; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <InvalidateCaches>b__0(ITempoMapValuesCache c) { }
+	internal bool <InvalidateCaches>b__0(ITempoMapValuesCache c) { }
 
 }
 

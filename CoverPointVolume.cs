@@ -15,28 +15,28 @@ public class CoverPointVolume : MonoBehaviour, IServerComponent // TypeDefIndex:
 
 
 	[ContextMenu] 
-private void ClearCoverPoints() { }
+	private void ClearCoverPoints() { }
 
-public Bounds GetBounds() { }
+	public Bounds GetBounds() { }
 
-private CoverPoint CalculateCoverPoint(NavMeshHit info) { }
+	private CoverPoint CalculateCoverPoint(NavMeshHit info) { }
 
-internal CoverPointVolume.CoverType ProvidesCoverInDir(Ray ray, float maxDistance, out RaycastHit rayHit) { }
+	internal CoverPointVolume.CoverType ProvidesCoverInDir(Ray ray, float maxDistance, out RaycastHit rayHit) { }
 
-public bool Contains(Vector3 point) { }
+	public bool Contains(Vector3 point) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 internal enum CoverPointVolume.CoverType // TypeDefIndex: 12127
 {
 	public int value__; 
-public const CoverPointVolume.CoverType None = 0;
-public const CoverPointVolume.CoverType Partial = 1;
-public const CoverPointVolume.CoverType Full = 2;
+	public const CoverPointVolume.CoverType None = 0;
+	public const CoverPointVolume.CoverType Partial = 1;
+	public const CoverPointVolume.CoverType Full = 2;
 
 }
 

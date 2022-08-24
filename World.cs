@@ -25,152 +25,152 @@ public static class World // TypeDefIndex: 10315
 	[CompilerGeneratedAttribute] 
 	private static WorldSerialization <Serialization>k__BackingField; 
 
-public static uint Seed { get; set; }
-public static uint Size { get; set; }
-public static string Checksum { get; set; }
-public static string Url { get; set; }
-public static bool Procedural { get; set; }
-public static bool Cached { get; set; }
-public static bool Networked { get; set; }
-public static bool Receiving { get; set; }
-public static bool Transfer { get; set; }
-public static bool LoadedFromSave { get; set; }
-public static int SpawnIndex { get; set; }
-public static WorldSerialization Serialization { get; set; }
-public static string Name { get; }
-public static string MapFileName { get; }
-public static string MapFolderName { get; }
+	public static uint Seed { get; set; }
+	public static uint Size { get; set; }
+	public static string Checksum { get; set; }
+	public static string Url { get; set; }
+	public static bool Procedural { get; set; }
+	public static bool Cached { get; set; }
+	public static bool Networked { get; set; }
+	public static bool Receiving { get; set; }
+	public static bool Transfer { get; set; }
+	public static bool LoadedFromSave { get; set; }
+	public static int SpawnIndex { get; set; }
+	public static WorldSerialization Serialization { get; set; }
+	public static string Name { get; }
+	public static string MapFileName { get; }
+	public static string MapFolderName { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static uint get_Seed() { }
+	public static uint get_Seed() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Seed(uint value) { }
+	public static void set_Seed(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public static uint get_Size() { }
+	public static uint get_Size() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Size(uint value) { }
+	public static void set_Size(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_Checksum() { }
+	public static string get_Checksum() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Checksum(string value) { }
+	public static void set_Checksum(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_Url() { }
+	public static string get_Url() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Url(string value) { }
+	public static void set_Url(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Procedural() { }
+	public static bool get_Procedural() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Procedural(bool value) { }
+	public static void set_Procedural(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Cached() { }
+	public static bool get_Cached() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Cached(bool value) { }
+	public static void set_Cached(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Networked() { }
+	public static bool get_Networked() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Networked(bool value) { }
+	public static void set_Networked(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Receiving() { }
+	public static bool get_Receiving() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Receiving(bool value) { }
+	public static void set_Receiving(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Transfer() { }
+	public static bool get_Transfer() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Transfer(bool value) { }
+	public static void set_Transfer(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static bool get_LoadedFromSave() { }
+	public static bool get_LoadedFromSave() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_LoadedFromSave(bool value) { }
+	public static void set_LoadedFromSave(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static int get_SpawnIndex() { }
+	public static int get_SpawnIndex() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_SpawnIndex(int value) { }
+	public static void set_SpawnIndex(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public static WorldSerialization get_Serialization() { }
+	public static WorldSerialization get_Serialization() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Serialization(WorldSerialization value) { }
+	public static void set_Serialization(WorldSerialization value) { }
 
-public static string get_Name() { }
+	public static string get_Name() { }
 
-public static string GetServerBrowserMapName() { }
+	public static string GetServerBrowserMapName() { }
 
-public static bool CanLoadFromUrl() { }
+	public static bool CanLoadFromUrl() { }
 
-public static bool CanLoadFromDisk() { }
+	public static bool CanLoadFromDisk() { }
 
-public static void CleanupOldFiles() { }
+	public static void CleanupOldFiles() { }
 
-public static string get_MapFileName() { }
+	public static string get_MapFileName() { }
 
-public static string get_MapFolderName() { }
+	public static string get_MapFolderName() { }
 
-public static byte[] GetMap(string name) { }
+	public static byte[] GetMap(string name) { }
 
-public static void AddMap(string name, byte[] data) { }
+	public static void AddMap(string name, byte[] data) { }
 
-public static void AddPrefab(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
+	public static void AddPrefab(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
 
-public static PathData PathListToPathData(PathList src) { }
+	public static PathData PathListToPathData(PathList src) { }
 
-public static PathList PathDataToPathList(PathData src) { }
+	public static PathList PathDataToPathList(PathData src) { }
 
-public static Vector3[] VectorListToArray(List<VectorData> src) { }
+	public static Vector3[] VectorListToArray(List<VectorData> src) { }
 
-public static List<VectorData> VectorArrayToList(Vector3[] src) { }
+	public static List<VectorData> VectorArrayToList(Vector3[] src) { }
 
-public static IEnumerable<PathList> GetPaths(string name) { }
+	public static IEnumerable<PathList> GetPaths(string name) { }
 
-public static void AddPaths(IEnumerable<PathList> paths) { }
+	public static void AddPaths(IEnumerable<PathList> paths) { }
 
-public static void AddPath(PathList path) { }
+	public static void AddPath(PathList path) { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator SpawnAsync(float deltaTime, Action<string> statusFunction) { }
+	public static IEnumerator SpawnAsync(float deltaTime, Action<string> statusFunction) { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator Spawn(float deltaTime, Action<string> statusFunction) { }
+	public static IEnumerator Spawn(float deltaTime, Action<string> statusFunction) { }
 
-public static void Spawn() { }
+	public static void Spawn() { }
 
-public static void Spawn(string category, string folder) { }
+	public static void Spawn(string category, string folder) { }
 
-public static void Spawn(string category, string[] folders) { }
+	public static void Spawn(string category, string[] folders) { }
 
-private static void Spawn(PrefabData prefab) { }
+	private static void Spawn(PrefabData prefab) { }
 
-private static void Spawn(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
+	private static void Spawn(string category, Prefab prefab, Vector3 position, Quaternion rotation, Vector3 scale) { }
 
-private static void Status(Action<string> statusFunction, string status, object obj1) { }
+	private static void Status(Action<string> statusFunction, string status, object obj1) { }
 
-private static void Status(Action<string> statusFunction, string status, object obj1, object obj2) { }
+	private static void Status(Action<string> statusFunction, string status, object obj1, object obj2) { }
 
-private static void Status(Action<string> statusFunction, string status, object obj1, object obj2, object obj3) { }
+	private static void Status(Action<string> statusFunction, string status, object obj1, object obj2, object obj3) { }
 
-private static void Status(Action<string> statusFunction, string status, object[] objs) { }
+	private static void Status(Action<string> statusFunction, string status, object[] objs) { }
 
 }
 
@@ -180,9 +180,9 @@ private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 10316
 	public Regex regex2; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CleanupOldFiles>b__0(string path) { }
+	internal bool <CleanupOldFiles>b__0(string path) { }
 
 }
 
@@ -195,17 +195,17 @@ private sealed class World.<>c // TypeDefIndex: 10317
 	public static Func<IGrouping<string, PrefabData>, List<PrefabData>> <>9__68_2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal PathList <GetPaths>b__65_0(PathData p) { }
+	internal PathList <GetPaths>b__65_0(PathData p) { }
 
-internal string <SpawnAsync>b__68_0(PrefabData p) { }
+	internal string <SpawnAsync>b__68_0(PrefabData p) { }
 
-internal string <SpawnAsync>b__68_1(IGrouping<string, PrefabData> g) { }
+	internal string <SpawnAsync>b__68_1(IGrouping<string, PrefabData> g) { }
 
-internal List<PrefabData> <SpawnAsync>b__68_2(IGrouping<string, PrefabData> g) { }
+	internal List<PrefabData> <SpawnAsync>b__68_2(IGrouping<string, PrefabData> g) { }
 
 }
 
@@ -222,26 +222,26 @@ private sealed class World.<SpawnAsync>d__68 : IEnumerator<object>, IEnumerator,
 	private Stopwatch <sw>5__6; 
 	private AssetPreloadResult <load>5__7; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -254,26 +254,26 @@ private sealed class World.<Spawn>d__69 : IEnumerator<object>, IEnumerator, IDis
 	private Stopwatch <sw>5__2; 
 	private int <i>5__3; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -288,22 +288,22 @@ public class World : ConsoleSystem // TypeDefIndex: 11975
 
 	[ClientVar] 
 	[ServerVar] 
-public static void monuments(ConsoleSystem.Arg arg) { }
+	public static void monuments(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void rendermap(ConsoleSystem.Arg arg) { }
+	public static void rendermap(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void rendertunnels(ConsoleSystem.Arg arg) { }
+	public static void rendertunnels(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
-public static void renderlabs(ConsoleSystem.Arg arg) { }
+	public static void renderlabs(ConsoleSystem.Arg arg) { }
 
-private static void RenderMapLayerToFile(ConsoleSystem.Arg arg, string name, MapLayer layer) { }
+	private static void RenderMapLayerToFile(ConsoleSystem.Arg arg, string name, MapLayer layer) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

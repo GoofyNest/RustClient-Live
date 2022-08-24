@@ -5,11 +5,11 @@ public class WorkshopViewmodelControls : MonoBehaviour // TypeDefIndex: 7747
 	public Toggle admire; 
 
 
-private void Clear() { }
+	private void Clear() { }
 
-internal void DoUpdate(GameObject ViewModel) { }
+	internal void DoUpdate(GameObject ViewModel) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

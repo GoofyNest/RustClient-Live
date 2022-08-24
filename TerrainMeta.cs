@@ -60,277 +60,277 @@ public class TerrainMeta : MonoBehaviour // TypeDefIndex: 10424
 	[CompilerGeneratedAttribute] 
 	private static TerrainTexturing <Texturing>k__BackingField; 
 
-public static TerrainConfig Config { get; set; }
-public static Terrain Terrain { get; set; }
-public static Transform Transform { get; set; }
-public static Vector3 Position { get; set; }
-public static Vector3 Size { get; set; }
-public static Vector3 Center { get; }
-public static Vector3 OneOverSize { get; set; }
-public static Vector3 HighestPoint { get; set; }
-public static Vector3 LowestPoint { get; set; }
-public static float LootAxisAngle { get; set; }
-public static float BiomeAxisAngle { get; set; }
-public static TerrainData Data { get; set; }
-public static TerrainCollider Collider { get; set; }
-public static TerrainCollision Collision { get; set; }
-public static TerrainPhysics Physics { get; set; }
-public static TerrainColors Colors { get; set; }
-public static TerrainQuality Quality { get; set; }
-public static TerrainPath Path { get; set; }
-public static TerrainBiomeMap BiomeMap { get; set; }
-public static TerrainAlphaMap AlphaMap { get; set; }
-public static TerrainBlendMap BlendMap { get; set; }
-public static TerrainHeightMap HeightMap { get; set; }
-public static TerrainSplatMap SplatMap { get; set; }
-public static TerrainTopologyMap TopologyMap { get; set; }
-public static TerrainWaterMap WaterMap { get; set; }
-public static TerrainDistanceMap DistanceMap { get; set; }
-public static TerrainPlacementMap PlacementMap { get; set; }
-public static TerrainTexturing Texturing { get; set; }
+	public static TerrainConfig Config { get; set; }
+	public static Terrain Terrain { get; set; }
+	public static Transform Transform { get; set; }
+	public static Vector3 Position { get; set; }
+	public static Vector3 Size { get; set; }
+	public static Vector3 Center { get; }
+	public static Vector3 OneOverSize { get; set; }
+	public static Vector3 HighestPoint { get; set; }
+	public static Vector3 LowestPoint { get; set; }
+	public static float LootAxisAngle { get; set; }
+	public static float BiomeAxisAngle { get; set; }
+	public static TerrainData Data { get; set; }
+	public static TerrainCollider Collider { get; set; }
+	public static TerrainCollision Collision { get; set; }
+	public static TerrainPhysics Physics { get; set; }
+	public static TerrainColors Colors { get; set; }
+	public static TerrainQuality Quality { get; set; }
+	public static TerrainPath Path { get; set; }
+	public static TerrainBiomeMap BiomeMap { get; set; }
+	public static TerrainAlphaMap AlphaMap { get; set; }
+	public static TerrainBlendMap BlendMap { get; set; }
+	public static TerrainHeightMap HeightMap { get; set; }
+	public static TerrainSplatMap SplatMap { get; set; }
+	public static TerrainTopologyMap TopologyMap { get; set; }
+	public static TerrainWaterMap WaterMap { get; set; }
+	public static TerrainDistanceMap DistanceMap { get; set; }
+	public static TerrainPlacementMap PlacementMap { get; set; }
+	public static TerrainTexturing Texturing { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public static TerrainConfig get_Config() { }
+	public static TerrainConfig get_Config() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Config(TerrainConfig value) { }
+	private static void set_Config(TerrainConfig value) { }
 
 	[CompilerGeneratedAttribute] 
-public static Terrain get_Terrain() { }
+	public static Terrain get_Terrain() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Terrain(Terrain value) { }
+	private static void set_Terrain(Terrain value) { }
 
 	[CompilerGeneratedAttribute] 
-public static Transform get_Transform() { }
+	public static Transform get_Transform() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Transform(Transform value) { }
+	private static void set_Transform(Transform value) { }
 
 	[CompilerGeneratedAttribute] 
-public static Vector3 get_Position() { }
+	public static Vector3 get_Position() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Position(Vector3 value) { }
+	private static void set_Position(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-public static Vector3 get_Size() { }
+	public static Vector3 get_Size() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Size(Vector3 value) { }
+	private static void set_Size(Vector3 value) { }
 
-public static Vector3 get_Center() { }
-
-	[CompilerGeneratedAttribute] 
-public static Vector3 get_OneOverSize() { }
+	public static Vector3 get_Center() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_OneOverSize(Vector3 value) { }
+	public static Vector3 get_OneOverSize() { }
 
 	[CompilerGeneratedAttribute] 
-public static Vector3 get_HighestPoint() { }
+	private static void set_OneOverSize(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_HighestPoint(Vector3 value) { }
+	public static Vector3 get_HighestPoint() { }
 
 	[CompilerGeneratedAttribute] 
-public static Vector3 get_LowestPoint() { }
+	public static void set_HighestPoint(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_LowestPoint(Vector3 value) { }
+	public static Vector3 get_LowestPoint() { }
 
 	[CompilerGeneratedAttribute] 
-public static float get_LootAxisAngle() { }
+	public static void set_LowestPoint(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_LootAxisAngle(float value) { }
+	public static float get_LootAxisAngle() { }
 
 	[CompilerGeneratedAttribute] 
-public static float get_BiomeAxisAngle() { }
+	private static void set_LootAxisAngle(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_BiomeAxisAngle(float value) { }
+	public static float get_BiomeAxisAngle() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainData get_Data() { }
+	private static void set_BiomeAxisAngle(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Data(TerrainData value) { }
+	public static TerrainData get_Data() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainCollider get_Collider() { }
+	private static void set_Data(TerrainData value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Collider(TerrainCollider value) { }
+	public static TerrainCollider get_Collider() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainCollision get_Collision() { }
+	private static void set_Collider(TerrainCollider value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Collision(TerrainCollision value) { }
+	public static TerrainCollision get_Collision() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainPhysics get_Physics() { }
+	private static void set_Collision(TerrainCollision value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Physics(TerrainPhysics value) { }
+	public static TerrainPhysics get_Physics() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainColors get_Colors() { }
+	private static void set_Physics(TerrainPhysics value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Colors(TerrainColors value) { }
+	public static TerrainColors get_Colors() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainQuality get_Quality() { }
+	private static void set_Colors(TerrainColors value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Quality(TerrainQuality value) { }
+	public static TerrainQuality get_Quality() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainPath get_Path() { }
+	private static void set_Quality(TerrainQuality value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Path(TerrainPath value) { }
+	public static TerrainPath get_Path() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainBiomeMap get_BiomeMap() { }
+	private static void set_Path(TerrainPath value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_BiomeMap(TerrainBiomeMap value) { }
+	public static TerrainBiomeMap get_BiomeMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainAlphaMap get_AlphaMap() { }
+	private static void set_BiomeMap(TerrainBiomeMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_AlphaMap(TerrainAlphaMap value) { }
+	public static TerrainAlphaMap get_AlphaMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainBlendMap get_BlendMap() { }
+	private static void set_AlphaMap(TerrainAlphaMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_BlendMap(TerrainBlendMap value) { }
+	public static TerrainBlendMap get_BlendMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainHeightMap get_HeightMap() { }
+	private static void set_BlendMap(TerrainBlendMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_HeightMap(TerrainHeightMap value) { }
+	public static TerrainHeightMap get_HeightMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainSplatMap get_SplatMap() { }
+	private static void set_HeightMap(TerrainHeightMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_SplatMap(TerrainSplatMap value) { }
+	public static TerrainSplatMap get_SplatMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainTopologyMap get_TopologyMap() { }
+	private static void set_SplatMap(TerrainSplatMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_TopologyMap(TerrainTopologyMap value) { }
+	public static TerrainTopologyMap get_TopologyMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainWaterMap get_WaterMap() { }
+	private static void set_TopologyMap(TerrainTopologyMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_WaterMap(TerrainWaterMap value) { }
+	public static TerrainWaterMap get_WaterMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainDistanceMap get_DistanceMap() { }
+	private static void set_WaterMap(TerrainWaterMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_DistanceMap(TerrainDistanceMap value) { }
+	public static TerrainDistanceMap get_DistanceMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainPlacementMap get_PlacementMap() { }
+	private static void set_DistanceMap(TerrainDistanceMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_PlacementMap(TerrainPlacementMap value) { }
+	public static TerrainPlacementMap get_PlacementMap() { }
 
 	[CompilerGeneratedAttribute] 
-public static TerrainTexturing get_Texturing() { }
+	private static void set_PlacementMap(TerrainPlacementMap value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Texturing(TerrainTexturing value) { }
+	public static TerrainTexturing get_Texturing() { }
 
-public static bool OutOfBounds(Vector3 worldPos) { }
+	[CompilerGeneratedAttribute] 
+	private static void set_Texturing(TerrainTexturing value) { }
 
-public static bool OutOfMargin(Vector3 worldPos) { }
+	public static bool OutOfBounds(Vector3 worldPos) { }
 
-public static Vector3 RandomPointOffshore() { }
+	public static bool OutOfMargin(Vector3 worldPos) { }
 
-public static Vector3 Normalize(Vector3 worldPos) { }
+	public static Vector3 RandomPointOffshore() { }
 
-public static float NormalizeX(float x) { }
+	public static Vector3 Normalize(Vector3 worldPos) { }
 
-public static float NormalizeY(float y) { }
+	public static float NormalizeX(float x) { }
 
-public static float NormalizeZ(float z) { }
+	public static float NormalizeY(float y) { }
 
-public static Vector3 Denormalize(Vector3 normPos) { }
+	public static float NormalizeZ(float z) { }
 
-public static float DenormalizeX(float normX) { }
+	public static Vector3 Denormalize(Vector3 normPos) { }
 
-public static float DenormalizeY(float normY) { }
+	public static float DenormalizeX(float normX) { }
 
-public static float DenormalizeZ(float normZ) { }
+	public static float DenormalizeY(float normY) { }
 
-protected void Awake() { }
+	public static float DenormalizeZ(float normZ) { }
 
-public void Init(Terrain terrainOverride, TerrainConfig configOverride) { }
+	protected void Awake() { }
 
-public static void InitNoTerrain(bool createPath = False) { }
+	public void Init(Terrain terrainOverride, TerrainConfig configOverride) { }
 
-public void SetupComponents() { }
+	public static void InitNoTerrain(bool createPath = False) { }
 
-public void PostSetupComponents() { }
+	public void SetupComponents() { }
 
-public void BindShaderProperties() { }
+	public void PostSetupComponents() { }
 
-public void .ctor() { }
+	public void BindShaderProperties() { }
+
+	public void .ctor() { }
 
 }
 
 public enum TerrainMeta.PaintMode // TypeDefIndex: 10425
 {
 	public int value__; 
-public const TerrainMeta.PaintMode None = 0;
-public const TerrainMeta.PaintMode Splats = 1;
-public const TerrainMeta.PaintMode Biomes = 2;
-public const TerrainMeta.PaintMode Alpha = 3;
-public const TerrainMeta.PaintMode Blend = 4;
-public const TerrainMeta.PaintMode Field = 5;
-public const TerrainMeta.PaintMode Cliff = 6;
-public const TerrainMeta.PaintMode Summit = 7;
-public const TerrainMeta.PaintMode Beachside = 8;
-public const TerrainMeta.PaintMode Beach = 9;
-public const TerrainMeta.PaintMode Forest = 10;
-public const TerrainMeta.PaintMode Forestside = 11;
-public const TerrainMeta.PaintMode Ocean = 12;
-public const TerrainMeta.PaintMode Oceanside = 13;
-public const TerrainMeta.PaintMode Decor = 14;
-public const TerrainMeta.PaintMode Monument = 15;
-public const TerrainMeta.PaintMode Road = 16;
-public const TerrainMeta.PaintMode Roadside = 17;
-public const TerrainMeta.PaintMode Bridge = 18;
-public const TerrainMeta.PaintMode River = 19;
-public const TerrainMeta.PaintMode Riverside = 20;
-public const TerrainMeta.PaintMode Lake = 21;
-public const TerrainMeta.PaintMode Lakeside = 22;
-public const TerrainMeta.PaintMode Offshore = 23;
-public const TerrainMeta.PaintMode Rail = 24;
-public const TerrainMeta.PaintMode Railside = 25;
-public const TerrainMeta.PaintMode Building = 26;
-public const TerrainMeta.PaintMode Cliffside = 27;
-public const TerrainMeta.PaintMode Mountain = 28;
-public const TerrainMeta.PaintMode Clutter = 29;
-public const TerrainMeta.PaintMode Alt = 30;
-public const TerrainMeta.PaintMode Tier0 = 31;
-public const TerrainMeta.PaintMode Tier1 = 32;
-public const TerrainMeta.PaintMode Tier2 = 33;
-public const TerrainMeta.PaintMode Mainland = 34;
-public const TerrainMeta.PaintMode Hilltop = 35;
+	public const TerrainMeta.PaintMode None = 0;
+	public const TerrainMeta.PaintMode Splats = 1;
+	public const TerrainMeta.PaintMode Biomes = 2;
+	public const TerrainMeta.PaintMode Alpha = 3;
+	public const TerrainMeta.PaintMode Blend = 4;
+	public const TerrainMeta.PaintMode Field = 5;
+	public const TerrainMeta.PaintMode Cliff = 6;
+	public const TerrainMeta.PaintMode Summit = 7;
+	public const TerrainMeta.PaintMode Beachside = 8;
+	public const TerrainMeta.PaintMode Beach = 9;
+	public const TerrainMeta.PaintMode Forest = 10;
+	public const TerrainMeta.PaintMode Forestside = 11;
+	public const TerrainMeta.PaintMode Ocean = 12;
+	public const TerrainMeta.PaintMode Oceanside = 13;
+	public const TerrainMeta.PaintMode Decor = 14;
+	public const TerrainMeta.PaintMode Monument = 15;
+	public const TerrainMeta.PaintMode Road = 16;
+	public const TerrainMeta.PaintMode Roadside = 17;
+	public const TerrainMeta.PaintMode Bridge = 18;
+	public const TerrainMeta.PaintMode River = 19;
+	public const TerrainMeta.PaintMode Riverside = 20;
+	public const TerrainMeta.PaintMode Lake = 21;
+	public const TerrainMeta.PaintMode Lakeside = 22;
+	public const TerrainMeta.PaintMode Offshore = 23;
+	public const TerrainMeta.PaintMode Rail = 24;
+	public const TerrainMeta.PaintMode Railside = 25;
+	public const TerrainMeta.PaintMode Building = 26;
+	public const TerrainMeta.PaintMode Cliffside = 27;
+	public const TerrainMeta.PaintMode Mountain = 28;
+	public const TerrainMeta.PaintMode Clutter = 29;
+	public const TerrainMeta.PaintMode Alt = 30;
+	public const TerrainMeta.PaintMode Tier0 = 31;
+	public const TerrainMeta.PaintMode Tier1 = 32;
+	public const TerrainMeta.PaintMode Tier2 = 33;
+	public const TerrainMeta.PaintMode Mainland = 34;
+	public const TerrainMeta.PaintMode Hilltop = 35;
 
 }
 

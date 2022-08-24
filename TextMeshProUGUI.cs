@@ -25,157 +25,157 @@ public class TextMeshProUGUI : TMP_Text, ILayoutElement // TypeDefIndex: 6867
 	private bool <blockRectTransformChange>k__BackingField; 
 	private bool m_isRebuildingLayout; 
 
-public bool blockRectTransformChange { get; set; }
-public override Material materialForRendering { get; }
-public override bool autoSizeTextContainer { get; set; }
-public override Mesh mesh { get; }
-public CanvasRenderer canvasRenderer { get; }
-public Vector4 maskOffset { get; set; }
+	public bool blockRectTransformChange { get; set; }
+	public override Material materialForRendering { get; }
+	public override bool autoSizeTextContainer { get; set; }
+	public override Mesh mesh { get; }
+	public CanvasRenderer canvasRenderer { get; }
+	public Vector4 maskOffset { get; set; }
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-protected override void OnDestroy() { }
+	protected override void OnDestroy() { }
 
-protected override void LoadFontAsset() { }
+	protected override void LoadFontAsset() { }
 
-private Canvas GetCanvas() { }
+	private Canvas GetCanvas() { }
 
-private void EnableMasking() { }
+	private void EnableMasking() { }
 
-private void DisableMasking() { }
+	private void DisableMasking() { }
 
-private void UpdateMask() { }
+	private void UpdateMask() { }
 
-protected override Material GetMaterial(Material mat) { }
+	protected override Material GetMaterial(Material mat) { }
 
-protected override Material[] GetMaterials(Material[] mats) { }
+	protected override Material[] GetMaterials(Material[] mats) { }
 
-protected override void SetSharedMaterial(Material mat) { }
+	protected override void SetSharedMaterial(Material mat) { }
 
-protected override Material[] GetSharedMaterials() { }
+	protected override Material[] GetSharedMaterials() { }
 
-protected override void SetSharedMaterials(Material[] materials) { }
+	protected override void SetSharedMaterials(Material[] materials) { }
 
-protected override void SetOutlineThickness(float thickness) { }
+	protected override void SetOutlineThickness(float thickness) { }
 
-protected override void SetFaceColor(Color32 color) { }
+	protected override void SetFaceColor(Color32 color) { }
 
-protected override void SetOutlineColor(Color32 color) { }
+	protected override void SetOutlineColor(Color32 color) { }
 
-protected override void SetShaderDepth() { }
+	protected override void SetShaderDepth() { }
 
-protected override void SetCulling() { }
+	protected override void SetCulling() { }
 
-private void SetPerspectiveCorrection() { }
+	private void SetPerspectiveCorrection() { }
 
-protected override float GetPaddingForMaterial(Material mat) { }
+	protected override float GetPaddingForMaterial(Material mat) { }
 
-protected override float GetPaddingForMaterial() { }
+	protected override float GetPaddingForMaterial() { }
 
-private void SetMeshArrays(int size) { }
+	private void SetMeshArrays(int size) { }
 
-protected override int SetArraySizes(TMP_Text.UnicodeChar[] chars) { }
+	protected override int SetArraySizes(TMP_Text.UnicodeChar[] chars) { }
 
-public override void ComputeMarginSize() { }
+	public override void ComputeMarginSize() { }
 
-protected override void OnDidApplyAnimationProperties() { }
+	protected override void OnDidApplyAnimationProperties() { }
 
-protected override void OnCanvasHierarchyChanged() { }
+	protected override void OnCanvasHierarchyChanged() { }
 
-protected override void OnTransformParentChanged() { }
+	protected override void OnTransformParentChanged() { }
 
-protected override void OnRectTransformDimensionsChange() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_blockRectTransformChange() { }
+	protected override void OnRectTransformDimensionsChange() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_blockRectTransformChange(bool value) { }
+	public bool get_blockRectTransformChange() { }
 
-internal override void InternalUpdate() { }
+	[CompilerGeneratedAttribute] 
+	public void set_blockRectTransformChange(bool value) { }
 
-private void OnPreRenderCanvas() { }
+	internal override void InternalUpdate() { }
 
-protected override void GenerateTextMesh() { }
+	private void OnPreRenderCanvas() { }
 
-protected override Vector3[] GetTextContainerLocalCorners() { }
+	protected override void GenerateTextMesh() { }
 
-protected override void SetActiveSubMeshes(bool state) { }
+	protected override Vector3[] GetTextContainerLocalCorners() { }
 
-protected override Bounds GetCompoundBounds() { }
+	protected override void SetActiveSubMeshes(bool state) { }
 
-private void UpdateSDFScale(float scaleDelta) { }
+	protected override Bounds GetCompoundBounds() { }
 
-protected override void AdjustLineOffset(int startIndex, int endIndex, float offset) { }
+	private void UpdateSDFScale(float scaleDelta) { }
 
-public override Material get_materialForRendering() { }
+	protected override void AdjustLineOffset(int startIndex, int endIndex, float offset) { }
 
-public override bool get_autoSizeTextContainer() { }
+	public override Material get_materialForRendering() { }
 
-public override void set_autoSizeTextContainer(bool value) { }
+	public override bool get_autoSizeTextContainer() { }
 
-public override Mesh get_mesh() { }
+	public override void set_autoSizeTextContainer(bool value) { }
 
-public CanvasRenderer get_canvasRenderer() { }
+	public override Mesh get_mesh() { }
 
-public void CalculateLayoutInputHorizontal() { }
+	public CanvasRenderer get_canvasRenderer() { }
 
-public void CalculateLayoutInputVertical() { }
+	public void CalculateLayoutInputHorizontal() { }
 
-public override void SetVerticesDirty() { }
+	public void CalculateLayoutInputVertical() { }
 
-public override void SetLayoutDirty() { }
+	public override void SetVerticesDirty() { }
 
-public override void SetMaterialDirty() { }
+	public override void SetLayoutDirty() { }
 
-public override void SetAllDirty() { }
+	public override void SetMaterialDirty() { }
 
-public override void Rebuild(CanvasUpdate update) { }
+	public override void SetAllDirty() { }
 
-private void UpdateSubObjectPivot() { }
+	public override void Rebuild(CanvasUpdate update) { }
 
-public override Material GetModifiedMaterial(Material baseMaterial) { }
+	private void UpdateSubObjectPivot() { }
 
-protected override void UpdateMaterial() { }
+	public override Material GetModifiedMaterial(Material baseMaterial) { }
 
-public Vector4 get_maskOffset() { }
+	protected override void UpdateMaterial() { }
 
-public void set_maskOffset(Vector4 value) { }
+	public Vector4 get_maskOffset() { }
 
-public override void RecalculateClipping() { }
+	public void set_maskOffset(Vector4 value) { }
 
-public override void RecalculateMasking() { }
+	public override void RecalculateClipping() { }
 
-public override void Cull(Rect clipRect, bool validRect) { }
+	public override void RecalculateMasking() { }
 
-public override void UpdateMeshPadding() { }
+	public override void Cull(Rect clipRect, bool validRect) { }
 
-protected override void InternalCrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) { }
+	public override void UpdateMeshPadding() { }
 
-protected override void InternalCrossFadeAlpha(float alpha, float duration, bool ignoreTimeScale) { }
+	protected override void InternalCrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) { }
 
-public override void ForceMeshUpdate() { }
+	protected override void InternalCrossFadeAlpha(float alpha, float duration, bool ignoreTimeScale) { }
 
-public override void ForceMeshUpdate(bool ignoreInactive) { }
+	public override void ForceMeshUpdate() { }
 
-public override TMP_TextInfo GetTextInfo(string text) { }
+	public override void ForceMeshUpdate(bool ignoreInactive) { }
 
-public override void ClearMesh() { }
+	public override TMP_TextInfo GetTextInfo(string text) { }
 
-public override void UpdateGeometry(Mesh mesh, int index) { }
+	public override void ClearMesh() { }
 
-public override void UpdateVertexData(TMP_VertexDataUpdateFlags flags) { }
+	public override void UpdateGeometry(Mesh mesh, int index) { }
 
-public override void UpdateVertexData() { }
+	public override void UpdateVertexData(TMP_VertexDataUpdateFlags flags) { }
 
-public void UpdateFontAsset() { }
+	public override void UpdateVertexData() { }
 
-public void .ctor() { }
+	public void UpdateFontAsset() { }
+
+	public void .ctor() { }
 
 }
 

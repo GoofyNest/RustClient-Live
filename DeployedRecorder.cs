@@ -10,57 +10,57 @@ public class DeployedRecorder : StorageContainer, ICassettePlayer // TypeDefInde
 	private Cassette cachedCassette; 
 	private bool initialLoad; 
 
-public override bool HasMenuOptions { get; }
-public BaseEntity ToBaseEntity { get; }
+	public override bool HasMenuOptions { get; }
+	public BaseEntity ToBaseEntity { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public BaseEntity get_ToBaseEntity() { }
+	public BaseEntity get_ToBaseEntity() { }
 
-protected override void ClientInit(Entity info) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Play(BasePlayer forPlayer) { }
+	protected override void ClientInit(Entity info) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Stop(BasePlayer forPlayer) { }
+	public void Play(BasePlayer forPlayer) { }
 
-private bool CanStop(BasePlayer forPlayer) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Stop(BasePlayer forPlayer) { }
 
-private bool CanStart(BasePlayer forPlayer) { }
+	private bool CanStop(BasePlayer forPlayer) { }
 
-private bool HasTape() { }
+	private bool CanStart(BasePlayer forPlayer) { }
 
-private void UpdateAudioClip(AudioClip clip) { }
+	private bool HasTape() { }
 
-private void UpdateCassetteMesh() { }
+	private void UpdateAudioClip(AudioClip clip) { }
+
+	private void UpdateCassetteMesh() { }
 
 	[BaseEntity.RPC_Client] 
-public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
+	public void Client_OnCassetteInserted(BaseEntity.RPCMessage msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
+	public void Client_OnCassetteRemoved(BaseEntity.RPCMessage msg) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void OnLoadedWithCassette(Cassette c) { }
+	public void OnLoadedWithCassette(Cassette c) { }
 
-public void OnCensorRecordingsChanged() { }
+	public void OnCensorRecordingsChanged() { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

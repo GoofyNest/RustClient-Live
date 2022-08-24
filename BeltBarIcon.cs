@@ -4,13 +4,13 @@ public class BeltBarIcon : MonoBehaviour // TypeDefIndex: 10981
 	private bool wasSelected; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void ResetSelected() { }
+	public void ResetSelected() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

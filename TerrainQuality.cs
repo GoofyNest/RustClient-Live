@@ -7,17 +7,17 @@ public class TerrainQuality : TerrainExtension // TypeDefIndex: 10430
 	private ConsoleSystem.Command graphics_shaderlod; 
 
 
-public override void Setup() { }
+	public override void Setup() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void FindCommand() { }
+	private void FindCommand() { }
 
-private void TerrainQuality_OnValueChanged(ConsoleSystem.Command obj) { }
+	private void TerrainQuality_OnValueChanged(ConsoleSystem.Command obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

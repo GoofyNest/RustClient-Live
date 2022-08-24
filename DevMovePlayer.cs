@@ -7,7 +7,7 @@ public class DevMovePlayer : BaseMonoBehaviour // TypeDefIndex: 9301
 	public Vector3 lookPoint; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

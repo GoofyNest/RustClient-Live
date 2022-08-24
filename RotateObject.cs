@@ -7,11 +7,11 @@ public class RotateObject : MonoBehaviour // TypeDefIndex: 9288
 	private Vector3 rotateVector; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -16,58 +16,58 @@ public static class Performance // TypeDefIndex: 6208
 	private static int[] frameBuckets; 
 	private static float[] frameBucketFractions; 
 
-public static FrameRateCategory FrameRateCategory { get; }
-public static int FrameCountLastSecond { get; set; }
-public static double AvgFrameTimeLastSecond { get; }
-public static int MemoryUsage { get; set; }
-public static int GarbageCollections { get; set; }
-public static float SecondsSinceLastConnection { get; set; }
-public static int[] CategorizedFrameCount { get; }
+	public static FrameRateCategory FrameRateCategory { get; }
+	public static int FrameCountLastSecond { get; set; }
+	public static double AvgFrameTimeLastSecond { get; }
+	public static int MemoryUsage { get; set; }
+	public static int GarbageCollections { get; set; }
+	public static float SecondsSinceLastConnection { get; set; }
+	public static int[] CategorizedFrameCount { get; }
 
 
-public static FrameRateCategory get_FrameRateCategory() { }
-
-	[CompilerGeneratedAttribute] 
-public static int get_FrameCountLastSecond() { }
+	public static FrameRateCategory get_FrameRateCategory() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_FrameCountLastSecond(int value) { }
-
-public static double get_AvgFrameTimeLastSecond() { }
+	public static int get_FrameCountLastSecond() { }
 
 	[CompilerGeneratedAttribute] 
-public static int get_MemoryUsage() { }
+	private static void set_FrameCountLastSecond(int value) { }
+
+	public static double get_AvgFrameTimeLastSecond() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_MemoryUsage(int value) { }
+	public static int get_MemoryUsage() { }
 
 	[CompilerGeneratedAttribute] 
-public static int get_GarbageCollections() { }
+	private static void set_MemoryUsage(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_GarbageCollections(int value) { }
+	public static int get_GarbageCollections() { }
 
 	[CompilerGeneratedAttribute] 
-public static float get_SecondsSinceLastConnection() { }
+	private static void set_GarbageCollections(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_SecondsSinceLastConnection(float value) { }
+	public static float get_SecondsSinceLastConnection() { }
 
-public static int[] get_CategorizedFrameCount() { }
+	[CompilerGeneratedAttribute] 
+	private static void set_SecondsSinceLastConnection(float value) { }
 
-internal static void Frame() { }
+	public static int[] get_CategorizedFrameCount() { }
 
-private static void OneSecond(double timelapse) { }
+	internal static void Frame() { }
 
-private static FrameRateCategory CategorizeFrameRate(int i) { }
+	private static void OneSecond(double timelapse) { }
 
-private static void UpdateFrameBuckets() { }
+	private static FrameRateCategory CategorizeFrameRate(int i) { }
 
-public static int GetFrameCount(FrameRateCategory category) { }
+	private static void UpdateFrameBuckets() { }
 
-public static float GetFrameFraction(FrameRateCategory category) { }
+	public static int GetFrameCount(FrameRateCategory category) { }
 
-private static void .cctor() { }
+	public static float GetFrameFraction(FrameRateCategory category) { }
+
+	private static void .cctor() { }
 
 }
 
@@ -75,8 +75,8 @@ public class Performance : SingletonComponent<Performance> // TypeDefIndex: 9317
 {
 	public static Performance.Tick current; 
 	public static Performance.Tick report; 
-public const int FrameHistoryCount = 1000;
-private const int HistoryLength = 60;
+	public const int FrameHistoryCount = 1000;
+	private const int HistoryLength = 60;
 	private static long cycles; 
 	private static int[] frameRateHistory; 
 	private static float[] frameTimeHistory; 
@@ -85,19 +85,19 @@ private const int HistoryLength = 60;
 	private float time; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public List<int> GetFrameTimes(int requestedStart, int maxCount, out int startIndex) { }
+	public List<int> GetFrameTimes(int requestedStart, int maxCount, out int startIndex) { }
 
-private void FPSTimer() { }
+	private void FPSTimer() { }
 
-private float AverageFrameRate() { }
+	private float AverageFrameRate() { }
 
-private float AverageFrameTime() { }
+	private float AverageFrameTime() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

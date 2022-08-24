@@ -64,89 +64,89 @@ public class BaseNavigator : BaseMonoBehaviour // TypeDefIndex: 8945
 	[CompilerGeneratedAttribute] 
 	private BaseNavigator.NavigationType <LastUsedNavigationType>k__BackingField; 
 
-public AIMovePointPath Path { get; set; }
-public BasePath AStarGraph { get; set; }
-public NavMeshAgent Agent { get; set; }
-public BaseCombatEntity BaseEntity { get; set; }
-public Vector3 Destination { get; set; }
-public virtual bool IsOnNavMeshLink { get; }
-public bool Moving { get; }
-public BaseNavigator.NavigationType CurrentNavigationType { get; set; }
-public BaseNavigator.NavigationType LastUsedNavigationType { get; set; }
+	public AIMovePointPath Path { get; set; }
+	public BasePath AStarGraph { get; set; }
+	public NavMeshAgent Agent { get; set; }
+	public BaseCombatEntity BaseEntity { get; set; }
+	public Vector3 Destination { get; set; }
+	public virtual bool IsOnNavMeshLink { get; }
+	public bool Moving { get; }
+	public BaseNavigator.NavigationType CurrentNavigationType { get; set; }
+	public BaseNavigator.NavigationType LastUsedNavigationType { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public AIMovePointPath get_Path() { }
+	public AIMovePointPath get_Path() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Path(AIMovePointPath value) { }
+	public void set_Path(AIMovePointPath value) { }
 
 	[CompilerGeneratedAttribute] 
-public BasePath get_AStarGraph() { }
+	public BasePath get_AStarGraph() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_AStarGraph(BasePath value) { }
+	public void set_AStarGraph(BasePath value) { }
 
-public int TopologyPreference() { }
-
-	[CompilerGeneratedAttribute] 
-public NavMeshAgent get_Agent() { }
+	public int TopologyPreference() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Agent(NavMeshAgent value) { }
+	public NavMeshAgent get_Agent() { }
 
 	[CompilerGeneratedAttribute] 
-public BaseCombatEntity get_BaseEntity() { }
+	private void set_Agent(NavMeshAgent value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_BaseEntity(BaseCombatEntity value) { }
+	public BaseCombatEntity get_BaseEntity() { }
 
 	[CompilerGeneratedAttribute] 
-public Vector3 get_Destination() { }
+	private void set_BaseEntity(BaseCombatEntity value) { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_Destination(Vector3 value) { }
-
-public virtual bool get_IsOnNavMeshLink() { }
-
-public bool get_Moving() { }
+	public Vector3 get_Destination() { }
 
 	[CompilerGeneratedAttribute] 
-public BaseNavigator.NavigationType get_CurrentNavigationType() { }
+	protected void set_Destination(Vector3 value) { }
+
+	public virtual bool get_IsOnNavMeshLink() { }
+
+	public bool get_Moving() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentNavigationType(BaseNavigator.NavigationType value) { }
+	public BaseNavigator.NavigationType get_CurrentNavigationType() { }
 
 	[CompilerGeneratedAttribute] 
-public BaseNavigator.NavigationType get_LastUsedNavigationType() { }
+	private void set_CurrentNavigationType(BaseNavigator.NavigationType value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_LastUsedNavigationType(BaseNavigator.NavigationType value) { }
+	public BaseNavigator.NavigationType get_LastUsedNavigationType() { }
 
-public void .ctor() { }
+	[CompilerGeneratedAttribute] 
+	private void set_LastUsedNavigationType(BaseNavigator.NavigationType value) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum BaseNavigator.NavigationType // TypeDefIndex: 8946
 {
 	public int value__; 
-public const BaseNavigator.NavigationType None = 0;
-public const BaseNavigator.NavigationType NavMesh = 1;
-public const BaseNavigator.NavigationType AStar = 2;
-public const BaseNavigator.NavigationType Custom = 3;
-public const BaseNavigator.NavigationType Base = 4;
+	public const BaseNavigator.NavigationType None = 0;
+	public const BaseNavigator.NavigationType NavMesh = 1;
+	public const BaseNavigator.NavigationType AStar = 2;
+	public const BaseNavigator.NavigationType Custom = 3;
+	public const BaseNavigator.NavigationType Base = 4;
 
 }
 
 public enum BaseNavigator.NavigationSpeed // TypeDefIndex: 8947
 {
 	public int value__; 
-public const BaseNavigator.NavigationSpeed Slowest = 0;
-public const BaseNavigator.NavigationSpeed Slow = 1;
-public const BaseNavigator.NavigationSpeed Normal = 2;
-public const BaseNavigator.NavigationSpeed Fast = 3;
+	public const BaseNavigator.NavigationSpeed Slowest = 0;
+	public const BaseNavigator.NavigationSpeed Slow = 1;
+	public const BaseNavigator.NavigationSpeed Normal = 2;
+	public const BaseNavigator.NavigationSpeed Fast = 3;
 
 }
 

@@ -10,9 +10,9 @@ public class PieShape : Graphic // TypeDefIndex: 11197
 	public bool debugDrawing; 
 
 
-protected override void OnPopulateMesh(VertexHelper vbo) { }
+	protected override void OnPopulateMesh(VertexHelper vbo) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

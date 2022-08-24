@@ -6,7 +6,7 @@ public struct BatchCullingContext // TypeDefIndex: 3844
 	public readonly LODParameters lodParameters; 
 
 
-public void .ctor(NativeArray<Plane> inCullingPlanes, NativeArray<BatchVisibility> inOutBatchVisibility, NativeArray<int> outVisibleIndices, LODParameters inLodParameters) { }
+	public void .ctor(NativeArray<Plane> inCullingPlanes, NativeArray<BatchVisibility> inOutBatchVisibility, NativeArray<int> outVisibleIndices, LODParameters inLodParameters) { }
 
 }
 

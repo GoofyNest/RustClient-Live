@@ -33,75 +33,75 @@ public class MusicManager : SingletonComponent<MusicManager>, IClientComponent /
 	private MusicClipLoader clipLoader; 
 	private List<MusicTheme> validThemes; 
 
-public double currentThemeTime { get; }
-public int themeBar { get; }
+	public double currentThemeTime { get; }
+	public int themeBar { get; }
 
 
-public double get_currentThemeTime() { }
+	public double get_currentThemeTime() { }
 
-public int get_themeBar() { }
+	public int get_themeBar() { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void StartMusic() { }
+	public void StartMusic() { }
 
-public MusicTheme GetThemeToPlay(MusicZone currentMusicZone) { }
+	public MusicTheme GetThemeToPlay(MusicZone currentMusicZone) { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateCurrentBar() { }
+	private void UpdateCurrentBar() { }
 
-private void DoBarJump(int offset) { }
+	private void DoBarJump(int offset) { }
 
-private void HandleMusicPlayback() { }
+	private void HandleMusicPlayback() { }
 
-private void DoClipFades() { }
+	private void DoClipFades() { }
 
-private AudioSource GetFreeAudioSource() { }
+	private AudioSource GetFreeAudioSource() { }
 
-public void ForceThemeChange(MusicTheme theme) { }
+	public void ForceThemeChange(MusicTheme theme) { }
 
-private void DoForcedThemeChange() { }
+	private void DoForcedThemeChange() { }
 
-private void UpdateClips() { }
+	private void UpdateClips() { }
 
-private void UpdateActiveClips() { }
+	private void UpdateActiveClips() { }
 
-private void AddActiveClipsForBar(int bar) { }
+	private void AddActiveClipsForBar(int bar) { }
 
-private void UpdateControlClips() { }
+	private void UpdateControlClips() { }
 
-private void UpdateBarJumpClips() { }
+	private void UpdateBarJumpClips() { }
 
-private void UpdateMusicClips() { }
+	private void UpdateMusicClips() { }
 
-private void ScheduleClip(MusicTheme.PositionedClip clip) { }
+	private void ScheduleClip(MusicTheme.PositionedClip clip) { }
 
-private void FadeInClip(MusicTheme.PositionedClip clip) { }
+	private void FadeInClip(MusicTheme.PositionedClip clip) { }
 
-private void FadeOutClip(MusicTheme.PositionedClip clip) { }
+	private void FadeOutClip(MusicTheme.PositionedClip clip) { }
 
-private MusicManager.ClipPlaybackData GetPlaybackData(MusicTheme.PositionedClip clip) { }
+	private MusicManager.ClipPlaybackData GetPlaybackData(MusicTheme.PositionedClip clip) { }
 
-private MusicManager.ClipPlaybackData GetPlaybackData(AudioSource source) { }
+	private MusicManager.ClipPlaybackData GetPlaybackData(AudioSource source) { }
 
-private void ResyncClips() { }
+	private void ResyncClips() { }
 
-private void CheckSyncSource() { }
+	private void CheckSyncSource() { }
 
-public void ShuffleThemes() { }
+	public void ShuffleThemes() { }
 
-public void MusicZoneEntered(MusicZone zone) { }
+	public void MusicZoneEntered(MusicZone zone) { }
 
-public void MusicZoneExited(MusicZone zone) { }
+	public void MusicZoneExited(MusicZone zone) { }
 
-public MusicZone CurrentMusicZone() { }
+	public MusicZone CurrentMusicZone() { }
 
-public static void RaiseIntensityTo(float amount, int holdLengthBars = 0) { }
+	public static void RaiseIntensityTo(float amount, int holdLengthBars = 0) { }
 
-public void StopMusic() { }
+	public void StopMusic() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -116,7 +116,7 @@ public class MusicManager.ClipPlaybackData // TypeDefIndex: 9005
 	public bool needsSync; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -126,11 +126,11 @@ private sealed class MusicManager.<>c // TypeDefIndex: 9006
 	public static Func<MusicTheme, float> <>9__60_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal float <ShuffleThemes>b__60_0(MusicTheme x) { }
+	internal float <ShuffleThemes>b__60_0(MusicTheme x) { }
 
 }
 

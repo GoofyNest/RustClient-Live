@@ -5,7 +5,7 @@ public struct SpawnIndividual // TypeDefIndex: 9993
 	public Quaternion Rotation; 
 
 
-public void .ctor(uint prefabID, Vector3 position, Quaternion rotation) { }
+	public void .ctor(uint prefabID, Vector3 position, Quaternion rotation) { }
 
 }
 

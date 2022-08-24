@@ -10,21 +10,21 @@ internal class WebConnectionData // TypeDefIndex: 3030
 	public string[] Challenge; 
 	private ReadState _readState; 
 
-public HttpWebRequest request { get; set; }
-public ReadState ReadState { get; set; }
+	public HttpWebRequest request { get; set; }
+	public ReadState ReadState { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(HttpWebRequest request) { }
+	public void .ctor(HttpWebRequest request) { }
 
-public HttpWebRequest get_request() { }
+	public HttpWebRequest get_request() { }
 
-public void set_request(HttpWebRequest value) { }
+	public void set_request(HttpWebRequest value) { }
 
-public ReadState get_ReadState() { }
+	public ReadState get_ReadState() { }
 
-public void set_ReadState(ReadState value) { }
+	public void set_ReadState(ReadState value) { }
 
 }
 

@@ -6,9 +6,9 @@ public class Sentry : ConsoleSystem // TypeDefIndex: 11955
 	public static float hostileduration; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -14,46 +14,46 @@ public class SoundFade : MonoBehaviour, IClientComponent // TypeDefIndex: 9028
 	private float fadeOutTimeFinished; 
 	private float fadeOutTimeBuffer; 
 
-public Sound sound { get; }
-public bool isFading { get; }
-public bool isFadingOut { get; }
-public bool isFadingIn { get; }
-public float fadeTimeLeft { get; }
+	public Sound sound { get; }
+	public bool isFading { get; }
+	public bool isFadingOut { get; }
+	public bool isFadingIn { get; }
+	public float fadeTimeLeft { get; }
 
 
-public Sound get_sound() { }
+	public Sound get_sound() { }
 
-public bool get_isFading() { }
+	public bool get_isFading() { }
 
-public bool get_isFadingOut() { }
+	public bool get_isFadingOut() { }
 
-public bool get_isFadingIn() { }
+	public bool get_isFadingIn() { }
 
-public float get_fadeTimeLeft() { }
+	public float get_fadeTimeLeft() { }
 
-public void FadeIn(float time) { }
+	public void FadeIn(float time) { }
 
-public void FadeOut(float time) { }
+	public void FadeOut(float time) { }
 
-public void DoUpdate() { }
+	public void DoUpdate() { }
 
-private void HQFadeComplete() { }
+	private void HQFadeComplete() { }
 
-public void Init() { }
+	public void Init() { }
 
-private void DoFade(float time, SoundFade.Direction direction) { }
+	private void DoFade(float time, SoundFade.Direction direction) { }
 
-public bool isGainLevelAudible() { }
+	public bool isGainLevelAudible() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum SoundFade.Direction // TypeDefIndex: 9029
 {
 	public int value__; 
-public const SoundFade.Direction In = 0;
-public const SoundFade.Direction Out = 1;
+	public const SoundFade.Direction In = 0;
+	public const SoundFade.Direction Out = 1;
 
 }
 

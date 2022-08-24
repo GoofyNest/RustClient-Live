@@ -5,21 +5,21 @@ public class AnimatedBuildingBlock : StabilityEntity // TypeDefIndex: 9481
 	private bool isAnimating; 
 
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-private void SetBatching(bool state) { }
+	private void SetBatching(bool state) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-protected void UpdateAnimationParameters(bool init) { }
+	protected void UpdateAnimationParameters(bool init) { }
 
-protected void OnAnimatorFinished() { }
+	protected void OnAnimatorFinished() { }
 
-private void PutAnimatorToSleep() { }
+	private void PutAnimatorToSleep() { }
 
-protected virtual void OnAnimatorDisabled() { }
+	protected virtual void OnAnimatorDisabled() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

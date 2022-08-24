@@ -4,13 +4,13 @@ internal sealed class NameCache // TypeDefIndex: 1121
 	private string name; 
 
 
-internal object GetCachedValue(string name) { }
+	internal object GetCachedValue(string name) { }
 
-internal void SetCachedValue(object value) { }
+	internal void SetCachedValue(object value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

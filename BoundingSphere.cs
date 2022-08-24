@@ -4,7 +4,7 @@ public struct BoundingSphere // TypeDefIndex: 3364
 	public float radius; 
 
 
-public void .ctor(Vector3 pos, float rad) { }
+	public void .ctor(Vector3 pos, float rad) { }
 
 }
 

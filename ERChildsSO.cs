@@ -7,7 +7,7 @@ public struct ERChildsSO // TypeDefIndex: 7246
 	public float yOffset; 
 
 
-public void .ctor(int _id) { }
+	public void .ctor(int _id) { }
 
 }
 

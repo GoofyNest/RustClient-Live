@@ -6,9 +6,9 @@ public class ToolgunBeam : MonoBehaviour // TypeDefIndex: 8900
 	public float fadeSpeed; 
 
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

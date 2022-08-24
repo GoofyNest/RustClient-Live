@@ -11,7 +11,7 @@ public class TorpedoServerProjectile : ServerProjectile // TypeDefIndex: 9612
 	private float shallowWaterCutoff; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

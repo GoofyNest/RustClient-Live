@@ -4,7 +4,7 @@ public class PerformedAttackAIEvent : BaseAIEvent // TypeDefIndex: 9406
 	private BaseCombatEntity combatEntity; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

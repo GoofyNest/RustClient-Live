@@ -6,9 +6,9 @@ public class SledSeat : BaseVehicleSeat // TypeDefIndex: 8837
 	public Transform RightFoot; 
 
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

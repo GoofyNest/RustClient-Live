@@ -15,19 +15,19 @@ public class FlameJet : MonoBehaviour // TypeDefIndex: 8898
 	public Color currentColor; 
 
 
-private void Initialize() { }
+	private void Initialize() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-public void LateUpdate() { }
+	public void LateUpdate() { }
 
-public void SetOn(bool isOn) { }
+	public void SetOn(bool isOn) { }
 
-private float curve(float x) { }
+	private float curve(float x) { }
 
-private void UpdateLine() { }
+	private void UpdateLine() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

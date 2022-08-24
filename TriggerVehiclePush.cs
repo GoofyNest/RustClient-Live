@@ -11,7 +11,7 @@ public class TriggerVehiclePush : TriggerBase, IServerComponent // TypeDefIndex:
 	public bool useCentreOfMass; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -9,7 +9,7 @@ internal sealed class RegexTree // TypeDefIndex: 2631
 	internal int _captop; 
 
 
-internal void .ctor(RegexNode root, Hashtable caps, int[] capnumlist, int captop, Hashtable capnames, string[] capslist, RegexOptions opts) { }
+	internal void .ctor(RegexNode root, Hashtable caps, int[] capnumlist, int captop, Hashtable capnames, string[] capslist, RegexOptions opts) { }
 
 }
 

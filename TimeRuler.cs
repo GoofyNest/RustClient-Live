@@ -6,11 +6,11 @@ public class TimeRuler : RustControl // TypeDefIndex: 7039
 	public TickRenderer TickRenderer; 
 
 
-public void Rebuild() { }
+	public void Rebuild() { }
 
-public float TimeToPos(int time) { }
+	public float TimeToPos(int time) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

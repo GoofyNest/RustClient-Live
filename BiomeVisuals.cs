@@ -6,13 +6,13 @@ public class BiomeVisuals : MonoBehaviour // TypeDefIndex: 10351
 	public GameObject Arctic; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-private void SetChoice(GameObject selection) { }
+	private void SetChoice(GameObject selection) { }
 
-private void ApplyChoice(GameObject selection, GameObject target, bool shouldDestroy) { }
+	private void ApplyChoice(GameObject selection, GameObject target, bool shouldDestroy) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

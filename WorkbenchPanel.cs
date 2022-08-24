@@ -12,25 +12,25 @@ public class WorkbenchPanel : LootPanel, IInventoryChanged // TypeDefIndex: 1106
 	private bool wasWorking; 
 
 
-public override void Update() { }
+	public override void Update() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public void ExperimentButtonClicked() { }
+	public void ExperimentButtonClicked() { }
 
-public Workbench GetWorkbench() { }
+	public Workbench GetWorkbench() { }
 
-public bool CanAffordExperiment() { }
+	public bool CanAffordExperiment() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-public bool IsWorking() { }
+	public bool IsWorking() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

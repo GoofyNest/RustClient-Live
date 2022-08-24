@@ -26,37 +26,37 @@ public struct Query // TypeDefIndex: 5279
 	private Nullable<uint> WantsReturnPlaytimeStats; 
 	private Nullable<bool> WantsDefaultStats; 
 
-public static Query All { get; }
+	public static Query All { get; }
 
 
-public void .ctor(UgcType type) { }
+	public void .ctor(UgcType type) { }
 
-public static Query get_All() { }
+	public static Query get_All() { }
 
-public Query RankedByPublicationDate() { }
+	public Query RankedByPublicationDate() { }
 
-public Query RankedByAcceptanceDate() { }
+	public Query RankedByAcceptanceDate() { }
 
-public Query RankedByTrend() { }
+	public Query RankedByTrend() { }
 
-internal Query LimitUser(SteamId steamid) { }
+	internal Query LimitUser(SteamId steamid) { }
 
-public Query WhereUserPublished(SteamId user) { }
+	public Query WhereUserPublished(SteamId user) { }
 
-public Query WithFileId(PublishedFileId[] files) { }
+	public Query WithFileId(PublishedFileId[] files) { }
 
 	[AsyncStateMachineAttribute] 
-public Task<Nullable<ResultPage>> GetPageAsync(int page) { }
+	public Task<Nullable<ResultPage>> GetPageAsync(int page) { }
 
-public Query WithTrendDays(int days) { }
+	public Query WithTrendDays(int days) { }
 
-public Query MatchAllTags() { }
+	public Query MatchAllTags() { }
 
-public Query WithTag(string tag) { }
+	public Query WithTag(string tag) { }
 
-private void ApplyConstraints(UGCQueryHandle_t handle) { }
+	private void ApplyConstraints(UGCQueryHandle_t handle) { }
 
-private void ApplyReturns(UGCQueryHandle_t handle) { }
+	private void ApplyReturns(UGCQueryHandle_t handle) { }
 
 }
 
@@ -69,10 +69,10 @@ private struct Query.<GetPageAsync>d__76 : IAsyncStateMachine // TypeDefIndex: 5
 	private CallResult<SteamUGCQueryCompleted_t> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

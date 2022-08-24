@@ -6,46 +6,46 @@ public struct InventoryItem : IEquatable<InventoryItem> // TypeDefIndex: 5241
 	internal ushort _quantity; 
 	internal Dictionary<string, string> _properties; 
 
-public InventoryItemId Id { get; }
-public InventoryDefId DefId { get; }
-public int Quantity { get; }
-public InventoryDef Def { get; }
-public Dictionary<string, string> Properties { get; }
-public DateTime Acquired { get; }
+	public InventoryItemId Id { get; }
+	public InventoryDefId DefId { get; }
+	public int Quantity { get; }
+	public InventoryDef Def { get; }
+	public Dictionary<string, string> Properties { get; }
+	public DateTime Acquired { get; }
 
 
-public InventoryItemId get_Id() { }
+	public InventoryItemId get_Id() { }
 
-public InventoryDefId get_DefId() { }
+	public InventoryDefId get_DefId() { }
 
-public int get_Quantity() { }
+	public int get_Quantity() { }
 
-public InventoryDef get_Def() { }
+	public InventoryDef get_Def() { }
 
-public Dictionary<string, string> get_Properties() { }
-
-	[AsyncStateMachineAttribute] 
-public Task<Nullable<InventoryResult>> ConsumeAsync(int amount = 1) { }
+	public Dictionary<string, string> get_Properties() { }
 
 	[AsyncStateMachineAttribute] 
-public Task<Nullable<InventoryResult>> SplitStackAsync(int quantity = 1) { }
+	public Task<Nullable<InventoryResult>> ConsumeAsync(int amount = 1) { }
 
 	[AsyncStateMachineAttribute] 
-public Task<Nullable<InventoryResult>> AddAsync(InventoryItem add, int quantity = 1) { }
+	public Task<Nullable<InventoryResult>> SplitStackAsync(int quantity = 1) { }
 
-internal static InventoryItem From(SteamItemDetails_t details) { }
+	[AsyncStateMachineAttribute] 
+	public Task<Nullable<InventoryResult>> AddAsync(InventoryItem add, int quantity = 1) { }
 
-internal static Dictionary<string, string> GetProperties(SteamInventoryResult_t result, int index) { }
+	internal static InventoryItem From(SteamItemDetails_t details) { }
 
-public DateTime get_Acquired() { }
+	internal static Dictionary<string, string> GetProperties(SteamInventoryResult_t result, int index) { }
 
-public static bool op_Equality(InventoryItem a, InventoryItem b) { }
+	public DateTime get_Acquired() { }
 
-public override bool Equals(object p) { }
+	public static bool op_Equality(InventoryItem a, InventoryItem b) { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object p) { }
 
-public bool Equals(InventoryItem p) { }
+	public override int GetHashCode() { }
+
+	public bool Equals(InventoryItem p) { }
 
 }
 
@@ -65,10 +65,10 @@ private struct InventoryItem.<ConsumeAsync>d__21 : IAsyncStateMachine // TypeDef
 	private TaskAwaiter<Nullable<InventoryResult>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -81,10 +81,10 @@ private struct InventoryItem.<SplitStackAsync>d__22 : IAsyncStateMachine // Type
 	private TaskAwaiter<Nullable<InventoryResult>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -98,10 +98,10 @@ private struct InventoryItem.<AddAsync>d__23 : IAsyncStateMachine // TypeDefInde
 	private TaskAwaiter<Nullable<InventoryResult>> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

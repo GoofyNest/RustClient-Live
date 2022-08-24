@@ -16,7 +16,7 @@ internal class RestrictionFacets // TypeDefIndex: 2178
 	internal RestrictionFlags FixedFlags; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

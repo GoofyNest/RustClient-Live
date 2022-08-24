@@ -9,13 +9,13 @@ public class LTBezier // TypeDefIndex: 5582
 	private float[] arcLengths; 
 
 
-public void .ctor(Vector3 a, Vector3 b, Vector3 c, Vector3 d, float precision) { }
+	public void .ctor(Vector3 a, Vector3 b, Vector3 c, Vector3 d, float precision) { }
 
-private float map(float u) { }
+	private float map(float u) { }
 
-private Vector3 bezierPoint(float t) { }
+	private Vector3 bezierPoint(float t) { }
 
-public Vector3 point(float t) { }
+	public Vector3 point(float t) { }
 
 }
 

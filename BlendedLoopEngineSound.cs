@@ -7,22 +7,22 @@ public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDef
 	public float smoothedRPMControl; 
 	private BlendedLoopEngineSound.EngineLoop[] engineLoops; 
 
-public float maxDistance { get; }
+	public float maxDistance { get; }
 
 
-public BlendedLoopEngineSound.EngineLoop[] GetEngineLoops() { }
+	public BlendedLoopEngineSound.EngineLoop[] GetEngineLoops() { }
 
-public float GetLoopGain(int idx) { }
+	public float GetLoopGain(int idx) { }
 
-public float GetLoopPitch(int idx) { }
+	public float GetLoopPitch(int idx) { }
 
-public float get_maxDistance() { }
+	public float get_maxDistance() { }
 
-public void Init(BlendedEngineLoopDefinition definition) { }
+	public void Init(BlendedEngineLoopDefinition definition) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -35,13 +35,13 @@ public class BlendedLoopEngineSound.EngineLoop // TypeDefIndex: 8984
 	public SoundModulation.Modulator pitchMod; 
 
 
-public void .ctor(BlendedEngineLoopDefinition.EngineLoopDefinition definition, BlendedLoopEngineSound parent) { }
+	public void .ctor(BlendedEngineLoopDefinition.EngineLoopDefinition definition, BlendedLoopEngineSound parent) { }
 
-public void Update(float RPM, float cameraDistance) { }
+	public void Update(float RPM, float cameraDistance) { }
 
-public void CreateSound() { }
+	public void CreateSound() { }
 
-public void RecycleSound() { }
+	public void RecycleSound() { }
 
 }
 

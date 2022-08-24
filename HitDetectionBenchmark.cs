@@ -1,6 +1,6 @@
 public class HitDetectionBenchmark : BenchmarkScene // TypeDefIndex: 8255
 {
-private const int PlayerCount = 50;
+	private const int PlayerCount = 50;
 	public GameObjectRef PlayerModelPrefab; 
 	public GameObjectRef PlayerCollisionPrefab; 
 	protected List<PlayerModel> PlayerModels; 
@@ -8,13 +8,13 @@ private const int PlayerCount = 50;
 	protected ItemModWearable[] Wearables; 
 
 
-public override void StartBenchmark() { }
+	public override void StartBenchmark() { }
 
-public override void BenchmarkUpdate() { }
+	public override void BenchmarkUpdate() { }
 
-public override void StopBenchmark() { }
+	public override void StopBenchmark() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -26,15 +26,15 @@ private sealed class HitDetectionBenchmark.<>c // TypeDefIndex: 8256
 	public static Func<ItemModWearable, Guid> <>9__6_2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal ItemModWearable <StartBenchmark>b__6_0(ItemDefinition x) { }
+	internal ItemModWearable <StartBenchmark>b__6_0(ItemDefinition x) { }
 
-internal bool <StartBenchmark>b__6_1(ItemModWearable x) { }
+	internal bool <StartBenchmark>b__6_1(ItemModWearable x) { }
 
-internal Guid <StartBenchmark>b__6_2(ItemModWearable x) { }
+	internal Guid <StartBenchmark>b__6_2(ItemModWearable x) { }
 
 }
 

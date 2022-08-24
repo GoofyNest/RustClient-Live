@@ -106,7 +106,7 @@ private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=21252
 [Serializable]
 public sealed class UnmanagedMarshal 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 

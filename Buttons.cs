@@ -104,9 +104,9 @@ public class Buttons // TypeDefIndex: 9270
 	public static Buttons.ConButton Pets; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -116,29 +116,29 @@ public class Buttons.ConButton : ConsoleSystem.IConsoleButton // TypeDefIndex: 9
 	private bool <IsDown>k__BackingField; 
 	private int frame; 
 
-public bool IsDown { get; set; }
-public bool JustPressed { get; }
-public bool JustReleased { get; }
-public bool IsPressed { get; set; }
+	public bool IsDown { get; set; }
+	public bool JustPressed { get; }
+	public bool JustReleased { get; }
+	public bool IsPressed { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsDown() { }
+	public bool get_IsDown() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IsDown(bool value) { }
+	public void set_IsDown(bool value) { }
 
-public bool get_JustPressed() { }
+	public bool get_JustPressed() { }
 
-public bool get_JustReleased() { }
+	public bool get_JustReleased() { }
 
-public void Call(ConsoleSystem.Arg arg) { }
+	public void Call(ConsoleSystem.Arg arg) { }
 
-public bool get_IsPressed() { }
+	public bool get_IsPressed() { }
 
-public void set_IsPressed(bool value) { }
+	public void set_IsPressed(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

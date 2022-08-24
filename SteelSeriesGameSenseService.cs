@@ -1,10 +1,10 @@
 public class SteelSeriesGameSenseService : RestRgbService // TypeDefIndex: 7693
 {
-private const string GameId = "RUST";
-private const string StaticColorEvent = "STATIC_COLOR";
-private const string PulseColorEvent = "PULSE_COLOR";
-private const string AllyDeathEvent = "ALLY_DIED";
-private const string EnemyDeathEvent = "ENEMY_DIED";
+	private const string GameId = "RUST";
+	private const string StaticColorEvent = "STATIC_COLOR";
+	private const string PulseColorEvent = "PULSE_COLOR";
+	private const string AllyDeathEvent = "ALLY_DIED";
+	private const string EnemyDeathEvent = "ENEMY_DIED";
 	private static readonly string PulseHandlerCode; 
 	private string _address; 
 	private string _heartbeatEndpoint; 
@@ -13,36 +13,36 @@ private const string EnemyDeathEvent = "ENEMY_DIED";
 
 
 	[AsyncStateMachineAttribute] 
-protected override ValueTask<bool> Initialize() { }
+	protected override ValueTask<bool> Initialize() { }
 
 	[AsyncStateMachineAttribute] 
-protected override ValueTask Shutdown() { }
+	protected override ValueTask Shutdown() { }
 
 	[AsyncStateMachineAttribute] 
-protected override Task SendHeartbeat() { }
+	protected override Task SendHeartbeat() { }
 
 	[AsyncStateMachineAttribute] 
-protected override Task SendStaticColor(Color color) { }
+	protected override Task SendStaticColor(Color color) { }
 
 	[AsyncStateMachineAttribute] 
-protected override Task SendPulseColor(Color color, float duration) { }
+	protected override Task SendPulseColor(Color color, float duration) { }
 
 	[AsyncStateMachineAttribute] 
-protected override Task SendEvent(RgbEventType type) { }
+	protected override Task SendEvent(RgbEventType type) { }
 
-private static string TryGetMomentsEvent(RgbEventType type) { }
+	private static string TryGetMomentsEvent(RgbEventType type) { }
 
-private ColorData GetColorData(Color color) { }
+	private ColorData GetColorData(Color color) { }
 
-private string GetEndpoint(string path) { }
+	private string GetEndpoint(string path) { }
 
-private static string GetGameSenseAddress() { }
+	private static string GetGameSenseAddress() { }
 
-private static string GetCorePropsPath() { }
+	private static string GetCorePropsPath() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -55,10 +55,10 @@ private struct SteelSeriesGameSenseService.<Initialize>d__10 : IAsyncStateMachin
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -70,10 +70,10 @@ private struct SteelSeriesGameSenseService.<Shutdown>d__11 : IAsyncStateMachine 
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -85,10 +85,10 @@ private struct SteelSeriesGameSenseService.<SendHeartbeat>d__12 : IAsyncStateMac
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -101,10 +101,10 @@ private struct SteelSeriesGameSenseService.<SendStaticColor>d__13 : IAsyncStateM
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -118,10 +118,10 @@ private struct SteelSeriesGameSenseService.<SendPulseColor>d__14 : IAsyncStateMa
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -134,10 +134,10 @@ private struct SteelSeriesGameSenseService.<SendEvent>d__15 : IAsyncStateMachine
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

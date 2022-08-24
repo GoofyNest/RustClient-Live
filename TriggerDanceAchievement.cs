@@ -4,7 +4,7 @@ public class TriggerDanceAchievement : TriggerBase // TypeDefIndex: 10021
 	public string AchievementName; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

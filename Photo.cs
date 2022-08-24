@@ -6,57 +6,57 @@ public class Photo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6383
 	public uint imageCrc; 
 
 
-public static void ResetToPool(Photo instance) { }
+	public static void ResetToPool(Photo instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Photo instance) { }
+	public void CopyTo(Photo instance) { }
 
-public Photo Copy() { }
+	public Photo Copy() { }
 
-public static Photo Deserialize(Stream stream) { }
+	public static Photo Deserialize(Stream stream) { }
 
-public static Photo DeserializeLengthDelimited(Stream stream) { }
+	public static Photo DeserializeLengthDelimited(Stream stream) { }
 
-public static Photo DeserializeLength(Stream stream, int length) { }
+	public static Photo DeserializeLength(Stream stream, int length) { }
 
-public static Photo Deserialize(byte[] buffer) { }
+	public static Photo Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Photo previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Photo previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Photo Deserialize(byte[] buffer, Photo instance, bool isDelta = False) { }
+	public static Photo Deserialize(byte[] buffer, Photo instance, bool isDelta = False) { }
 
-public static Photo Deserialize(Stream stream, Photo instance, bool isDelta) { }
+	public static Photo Deserialize(Stream stream, Photo instance, bool isDelta) { }
 
-public static Photo DeserializeLengthDelimited(Stream stream, Photo instance, bool isDelta) { }
+	public static Photo DeserializeLengthDelimited(Stream stream, Photo instance, bool isDelta) { }
 
-public static Photo DeserializeLength(Stream stream, int length, Photo instance, bool isDelta) { }
+	public static Photo DeserializeLength(Stream stream, int length, Photo instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Photo instance, Photo previous) { }
+	public static void SerializeDelta(Stream stream, Photo instance, Photo previous) { }
 
-public static void Serialize(Stream stream, Photo instance) { }
+	public static void Serialize(Stream stream, Photo instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Photo instance) { }
+	public static byte[] SerializeToBytes(Photo instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Photo instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Photo instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

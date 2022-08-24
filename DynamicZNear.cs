@@ -5,15 +5,15 @@ public class DynamicZNear : MonoBehaviour // TypeDefIndex: 9184
 	private Camera cam; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void LateUpdate() { }
+	protected void LateUpdate() { }
 
-private float WorkoutZNear() { }
+	private float WorkoutZNear() { }
 
-private float ScreenTest(float x, float y) { }
+	private float ScreenTest(float x, float y) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -10,7 +10,7 @@ public class VisualEffectAsset : VisualEffectObject
 	public static readonly int StopEventID; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

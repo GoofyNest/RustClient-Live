@@ -92,7 +92,7 @@ internal static class Defines // TypeDefIndex: 5503
 	internal static readonly int k_cbSteamNetworkingSocketsFakeUDPPortMaxMessageSize; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -106,39 +106,39 @@ internal class <Module>
 internal class <Module> 
 
 public static class Defines 
-public const string Ident = "RUST DEMO FORMAT";
+	public const string Ident = "RUST DEMO FORMAT";
 
 }
 
 public class Defines // TypeDefIndex: 6677
 {
-public const byte lowestUserPacket = 140;
-public const int packetHeaderSize = 1;
+	public const byte lowestUserPacket = 140;
+	public const int packetHeaderSize = 1;
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public static class Defines // TypeDefIndex: 12031
 {
 	public static uint appID; 
-public const string resourceFolder = "assets/bundled";
+	public const string resourceFolder = "assets/bundled";
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public static class Defines.Connection // TypeDefIndex: 12032
 {
-public const byte mode_steam = 228;
+	public const byte mode_steam = 228;
 
 }
 
 public static class Defines.Tags // TypeDefIndex: 12033
 {
-public const string NotPlayerUsable = "Not Player Usable";
+	public const string NotPlayerUsable = "Not Player Usable";
 
 }
 

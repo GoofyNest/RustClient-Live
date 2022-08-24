@@ -3,7 +3,7 @@ internal abstract class RSAPKCS1SignatureDescription : SignatureDescription // T
 	private string _hashAlgorithm; 
 
 
-protected void .ctor(string hashAlgorithm, string digestAlgorithm) { }
+	protected void .ctor(string hashAlgorithm, string digestAlgorithm) { }
 
 }
 

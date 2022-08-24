@@ -23,64 +23,64 @@ public class BaseLiquidVessel : AttackEntity // TypeDefIndex: 8522
 	private float nextFreeTime; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public int AmountHeld() { }
+	public int AmountHeld() { }
 
-public float HeldFraction() { }
+	public float HeldFraction() { }
 
-public int MaxHoldable() { }
+	public int MaxHoldable() { }
 
-public bool CanDrink() { }
+	public bool CanDrink() { }
 
-private bool IsWeaponBusy() { }
+	private bool IsWeaponBusy() { }
 
-private void SetBusyFor(float dur) { }
+	private void SetBusyFor(float dur) { }
 
-private void ClearBusy() { }
+	private void ClearBusy() { }
 
-public virtual void CLThrow() { }
+	public virtual void CLThrow() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public virtual void DoSendFilling(bool flag) { }
+	public virtual void DoSendFilling(bool flag) { }
 
-public virtual void OnPrimaryAttackPressed() { }
+	public virtual void OnPrimaryAttackPressed() { }
 
-public virtual void OnEmptyPrimaryAttackPressed() { }
+	public virtual void OnEmptyPrimaryAttackPressed() { }
 
-public virtual void OnPrimaryAttackReleased() { }
+	public virtual void OnPrimaryAttackReleased() { }
 
-public virtual void OnReloadPressed() { }
+	public virtual void OnReloadPressed() { }
 
-public virtual void OnReloadHeld() { }
+	public virtual void OnReloadHeld() { }
 
-public virtual void OnPrimaryAttackHeld(Item ammo, BasePlayer player) { }
+	public virtual void OnPrimaryAttackHeld(Item ammo, BasePlayer player) { }
 
-public override void OnViewmodelEvent(string name) { }
-
-	[BaseEntity.RPC_Client] 
-public void CLIENT_StartFillingSoundsContainer(BaseEntity.RPCMessage rpc) { }
+	public override void OnViewmodelEvent(string name) { }
 
 	[BaseEntity.RPC_Client] 
-public void CLIENT_StartFillingSoundsWorld(BaseEntity.RPCMessage rpc) { }
-
-private void StartFillingSounds(bool fromContainer = True) { }
+	public void CLIENT_StartFillingSoundsContainer(BaseEntity.RPCMessage rpc) { }
 
 	[BaseEntity.RPC_Client] 
-public void CLIENT_StopFillingSounds(BaseEntity.RPCMessage rpc) { }
+	public void CLIENT_StartFillingSoundsWorld(BaseEntity.RPCMessage rpc) { }
 
-private void StopFillingSounds() { }
+	private void StartFillingSounds(bool fromContainer = True) { }
 
-public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+	[BaseEntity.RPC_Client] 
+	public void CLIENT_StopFillingSounds(BaseEntity.RPCMessage rpc) { }
 
-public bool CanFillFromWorld() { }
+	private void StopFillingSounds() { }
 
-public bool CanThrow() { }
+	public override void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-public LiquidContainer GetFacingLiquidContainer() { }
+	public bool CanFillFromWorld() { }
 
-public void .ctor() { }
+	public bool CanThrow() { }
+
+	public LiquidContainer GetFacingLiquidContainer() { }
+
+	public void .ctor() { }
 
 }
 

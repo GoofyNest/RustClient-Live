@@ -20,32 +20,32 @@ public class InstantCameraTool : HeldEntity // TypeDefIndex: 8584
 	private float focalDistanceTarget; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void EditViewAngles() { }
+	public override void EditViewAngles() { }
 
-public override void OnFrame() { }
+	public override void OnFrame() { }
 
-private float GetAutofocusDistance() { }
+	private float GetAutofocusDistance() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator TakePhoto() { }
+	private IEnumerator TakePhoto() { }
 
-private void RenderCallback() { }
+	private void RenderCallback() { }
 
-private void GetScreenCallback(Texture2D texture) { }
+	private void GetScreenCallback(Texture2D texture) { }
 
-public override void ModifyCamera() { }
+	public override void ModifyCamera() { }
 
-private void FadeOut() { }
+	private void FadeOut() { }
 
-public override void OnDeployed() { }
+	public override void OnDeployed() { }
 
-public override void OnHolstered() { }
+	public override void OnHolstered() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -56,26 +56,26 @@ private sealed class InstantCameraTool.<TakePhoto>d__19 : IEnumerator<object>, I
 	public InstantCameraTool <>4__this; 
 	private int <originalNudity>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

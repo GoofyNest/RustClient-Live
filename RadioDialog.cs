@@ -10,21 +10,21 @@ public class RadioDialog : UIDialog // TypeDefIndex: 10905
 	private string selectedUrl; 
 
 
-public void SetBoomBox(BoomBox box) { }
+	public void SetBoomBox(BoomBox box) { }
 
-public void OnURLChanged(string newUrl) { }
+	public void OnURLChanged(string newUrl) { }
 
-public void OnClickedConfirm() { }
+	public void OnClickedConfirm() { }
 
-public void UpdateFavourites(Dictionary<string, string> globalUrls, Dictionary<string, string> serverUrls) { }
+	public void UpdateFavourites(Dictionary<string, string> globalUrls, Dictionary<string, string> serverUrls) { }
 
-private void PopulateFavouritesFromList(Dictionary<string, string> urls) { }
+	private void PopulateFavouritesFromList(Dictionary<string, string> urls) { }
 
-private void ClearFavourites() { }
+	private void ClearFavourites() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -34,9 +34,9 @@ private sealed class RadioDialog.<>c__DisplayClass12_0 // TypeDefIndex: 10906
 	public RadioDialog <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <PopulateFavouritesFromList>b__0(string s) { }
+	internal void <PopulateFavouritesFromList>b__0(string s) { }
 
 }
 

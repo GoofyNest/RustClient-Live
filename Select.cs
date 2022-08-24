@@ -15,51 +15,51 @@ internal sealed class Select // TypeDefIndex: 4297
 	private int _matchedCandidates; 
 
 
-public void .ctor(DataTable table, string filterExpression, string sort, DataViewRowState recordStates) { }
+	public void .ctor(DataTable table, string filterExpression, string sort, DataViewRowState recordStates) { }
 
-private bool IsSupportedOperator(int op) { }
+	private bool IsSupportedOperator(int op) { }
 
-private void AnalyzeExpression(BinaryNode expr) { }
+	private void AnalyzeExpression(BinaryNode expr) { }
 
-private bool CompareSortIndexDesc(IndexField[] fields) { }
+	private bool CompareSortIndexDesc(IndexField[] fields) { }
 
-private bool FindSortIndex() { }
+	private bool FindSortIndex() { }
 
-private int CompareClosestCandidateIndexDesc(IndexField[] fields) { }
+	private int CompareClosestCandidateIndexDesc(IndexField[] fields) { }
 
-private bool FindClosestCandidateIndex() { }
+	private bool FindClosestCandidateIndex() { }
 
-private void InitCandidateColumns() { }
+	private void InitCandidateColumns() { }
 
-private void CreateIndex() { }
+	private void CreateIndex() { }
 
-private bool IsOperatorIn(ExpressionNode enode) { }
+	private bool IsOperatorIn(ExpressionNode enode) { }
 
-private void BuildLinearExpression() { }
+	private void BuildLinearExpression() { }
 
-public DataRow[] SelectRows() { }
+	public DataRow[] SelectRows() { }
 
-public DataRow[] GetRows() { }
+	public DataRow[] GetRows() { }
 
-private bool AcceptRecord(int record) { }
+	private bool AcceptRecord(int record) { }
 
-private int Eval(BinaryNode expr, DataRow row, DataRowVersion version) { }
+	private int Eval(BinaryNode expr, DataRow row, DataRowVersion version) { }
 
-private int Evaluate(int record) { }
+	private int Evaluate(int record) { }
 
-private int FindFirstMatchingRecord() { }
+	private int FindFirstMatchingRecord() { }
 
-private int FindLastMatchingRecord(int lo) { }
+	private int FindLastMatchingRecord(int lo) { }
 
-private Range GetBinaryFilteredRecords() { }
+	private Range GetBinaryFilteredRecords() { }
 
-private int[] GetLinearFilteredRecords(Range range) { }
+	private int[] GetLinearFilteredRecords(Range range) { }
 
-private DataRow[] GetLinearFilteredRows(Range range) { }
+	private DataRow[] GetLinearFilteredRows(Range range) { }
 
-private int CompareRecords(int record1, int record2) { }
+	private int CompareRecords(int record1, int record2) { }
 
-private void Sort(int left, int right) { }
+	private void Sort(int left, int right) { }
 
 }
 
@@ -70,7 +70,7 @@ private sealed class Select.ColumnInfo // TypeDefIndex: 4298
 	public BinaryNode expr; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

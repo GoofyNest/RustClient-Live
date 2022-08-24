@@ -1,6 +1,6 @@
 public class PhysicsRaycaster : BaseRaycaster // TypeDefIndex: 5093
 {
-protected const int kNoEventMaskSet = -1;
+	protected const int kNoEventMaskSet = -1;
 	protected Camera m_EventCamera; 
 	[SerializeField] 
 	protected LayerMask m_EventMask; 
@@ -9,32 +9,32 @@ protected const int kNoEventMaskSet = -1;
 	protected int m_LastMaxRayIntersections; 
 	private RaycastHit[] m_Hits; 
 
-public override Camera eventCamera { get; }
-public virtual int depth { get; }
-public int finalEventMask { get; }
-public LayerMask eventMask { get; set; }
-public int maxRayIntersections { get; set; }
+	public override Camera eventCamera { get; }
+	public virtual int depth { get; }
+	public int finalEventMask { get; }
+	public LayerMask eventMask { get; set; }
+	public int maxRayIntersections { get; set; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public override Camera get_eventCamera() { }
+	public override Camera get_eventCamera() { }
 
-public virtual int get_depth() { }
+	public virtual int get_depth() { }
 
-public int get_finalEventMask() { }
+	public int get_finalEventMask() { }
 
-public LayerMask get_eventMask() { }
+	public LayerMask get_eventMask() { }
 
-public void set_eventMask(LayerMask value) { }
+	public void set_eventMask(LayerMask value) { }
 
-public int get_maxRayIntersections() { }
+	public int get_maxRayIntersections() { }
 
-public void set_maxRayIntersections(int value) { }
+	public void set_maxRayIntersections(int value) { }
 
-protected bool ComputeRayAndDistance(PointerEventData eventData, ref Ray ray, ref float distanceToClipPlane) { }
+	protected bool ComputeRayAndDistance(PointerEventData eventData, ref Ray ray, ref float distanceToClipPlane) { }
 
-public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList) { }
+	public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList) { }
 
 }
 
@@ -43,11 +43,11 @@ private class PhysicsRaycaster.RaycastHitComparer : IComparer<RaycastHit> // Typ
 	public static PhysicsRaycaster.RaycastHitComparer instance; 
 
 
-public int Compare(RaycastHit x, RaycastHit y) { }
+	public int Compare(RaycastHit x, RaycastHit y) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

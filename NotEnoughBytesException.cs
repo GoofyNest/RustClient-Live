@@ -6,9 +6,9 @@ public sealed class NotEnoughBytesException : MidiException // TypeDefIndex: 757
 	private readonly long <ActualCount>k__BackingField; 
 
 
-internal void .ctor(string message, Exception innerException) { }
+	internal void .ctor(string message, Exception innerException) { }
 
-internal void .ctor(string message, long expectedCount, long actualCount) { }
+	internal void .ctor(string message, long expectedCount, long actualCount) { }
 
 }
 

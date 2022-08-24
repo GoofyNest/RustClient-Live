@@ -2,10 +2,10 @@ public static class TempoMapManagingUtilities // TypeDefIndex: 7455
 {
 
 	[ExtensionAttribute] 
-public static TempoMap GetTempoMap(IEnumerable<TrackChunk> trackChunks, TimeDivision timeDivision) { }
+	public static TempoMap GetTempoMap(IEnumerable<TrackChunk> trackChunks, TimeDivision timeDivision) { }
 
 	[ExtensionAttribute] 
-public static TempoMap GetTempoMap(MidiFile file) { }
+	public static TempoMap GetTempoMap(MidiFile file) { }
 
 }
 
@@ -17,15 +17,15 @@ private sealed class TempoMapManagingUtilities.<>c // TypeDefIndex: 7456
 	public static Func<EventsCollection, int> <>9__3_2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetTempoMap>b__3_0(TrackChunk c) { }
+	internal bool <GetTempoMap>b__3_0(TrackChunk c) { }
 
-internal EventsCollection <GetTempoMap>b__3_1(TrackChunk c) { }
+	internal EventsCollection <GetTempoMap>b__3_1(TrackChunk c) { }
 
-internal int <GetTempoMap>b__3_2(EventsCollection c) { }
+	internal int <GetTempoMap>b__3_2(EventsCollection c) { }
 
 }
 

@@ -12,15 +12,15 @@ public class SpawnFilter // TypeDefIndex: 10308
 	public TerrainTopology.Enum TopologyNot; 
 
 
-public bool Test(Vector3 worldPos) { }
+	public bool Test(Vector3 worldPos) { }
 
-public bool Test(float normX, float normZ) { }
+	public bool Test(float normX, float normZ) { }
 
-public float GetFactor(Vector3 worldPos, bool checkPlacementMap = True) { }
+	public float GetFactor(Vector3 worldPos, bool checkPlacementMap = True) { }
 
-public float GetFactor(float normX, float normZ, bool checkPlacementMap = True) { }
+	public float GetFactor(float normX, float normZ, bool checkPlacementMap = True) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,15 +7,15 @@ public class MenuTip : MonoBehaviour // TypeDefIndex: 10968
 	private float nextTipTime; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateTip() { }
+	public void UpdateTip() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

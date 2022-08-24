@@ -8,7 +8,7 @@ public sealed class InvalidSystemCommonEventParameterValueException : MidiExcept
 	private readonly int <ComponentValue>k__BackingField; 
 
 
-internal void .ctor(MidiEventType eventType, string componentName, int componentValue) { }
+	internal void .ctor(MidiEventType eventType, string componentName, int componentValue) { }
 
 }
 

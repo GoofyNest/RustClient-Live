@@ -15,57 +15,57 @@ public abstract class MaskableGraphic : Graphic, IClippable, IMaskable, IMateria
 	protected int m_StencilValue; 
 	private readonly Vector3[] m_Corners; 
 
-public MaskableGraphic.CullStateChangedEvent onCullStateChanged { get; set; }
-public bool maskable { get; set; }
-private Rect rootCanvasRect { get; }
+	public MaskableGraphic.CullStateChangedEvent onCullStateChanged { get; set; }
+	public bool maskable { get; set; }
+	private Rect rootCanvasRect { get; }
 
 
-public MaskableGraphic.CullStateChangedEvent get_onCullStateChanged() { }
+	public MaskableGraphic.CullStateChangedEvent get_onCullStateChanged() { }
 
-public void set_onCullStateChanged(MaskableGraphic.CullStateChangedEvent value) { }
+	public void set_onCullStateChanged(MaskableGraphic.CullStateChangedEvent value) { }
 
-public bool get_maskable() { }
+	public bool get_maskable() { }
 
-public void set_maskable(bool value) { }
+	public void set_maskable(bool value) { }
 
-public virtual Material GetModifiedMaterial(Material baseMaterial) { }
+	public virtual Material GetModifiedMaterial(Material baseMaterial) { }
 
-public virtual void Cull(Rect clipRect, bool validRect) { }
+	public virtual void Cull(Rect clipRect, bool validRect) { }
 
-private void UpdateCull(bool cull) { }
+	private void UpdateCull(bool cull) { }
 
-public virtual void SetClipRect(Rect clipRect, bool validRect) { }
+	public virtual void SetClipRect(Rect clipRect, bool validRect) { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-protected override void OnTransformParentChanged() { }
+	protected override void OnTransformParentChanged() { }
 
 	[EditorBrowsableAttribute] 
 	[ObsoleteAttribute] 
-public virtual void ParentMaskStateChanged() { }
+	public virtual void ParentMaskStateChanged() { }
 
-protected override void OnCanvasHierarchyChanged() { }
+	protected override void OnCanvasHierarchyChanged() { }
 
-private Rect get_rootCanvasRect() { }
+	private Rect get_rootCanvasRect() { }
 
-private void UpdateClipParent() { }
+	private void UpdateClipParent() { }
 
-public virtual void RecalculateClipping() { }
+	public virtual void RecalculateClipping() { }
 
-public virtual void RecalculateMasking() { }
+	public virtual void RecalculateMasking() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private GameObject UnityEngine.UI.IClippable.get_gameObject() { }
+	private GameObject UnityEngine.UI.IClippable.get_gameObject() { }
 
 }
 
 public class MaskableGraphic.CullStateChangedEvent : UnityEvent<bool> // TypeDefIndex: 4987
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -39,20 +39,20 @@ public class SoundDefinition : ScriptableObject // TypeDefIndex: 9026
 	public AnimationCurve spreadCurve; 
 	public bool useCustomSpreadCurve; 
 
-public float maxDistance { get; }
+	public float maxDistance { get; }
 
 
-public float get_maxDistance() { }
+	public float get_maxDistance() { }
 
-public float GetLength() { }
+	public float GetLength() { }
 
-public Sound Play() { }
+	public Sound Play() { }
 
-public Sound Play(GameObject forGameObject) { }
+	public Sound Play(GameObject forGameObject) { }
 
-public AudioClip GetClip() { }
+	public AudioClip GetClip() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -63,7 +63,7 @@ public class SoundDefinition.DistanceAudioClipList // TypeDefIndex: 9027
 	public List<WeightedAudioClip> audioClips; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

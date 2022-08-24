@@ -12,29 +12,29 @@ public class QuickCraftButton : MonoBehaviour, IPointerClickHandler, IEventSyste
 	private static int lastClickedItemID; 
 
 
-internal void Setup(ItemBlueprint item) { }
+	internal void Setup(ItemBlueprint item) { }
 
-private void RefreshFavouriteIcon() { }
+	private void RefreshFavouriteIcon() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void QueueItem(int quantity) { }
+	private void QueueItem(int quantity) { }
 
-public void OnPointerClick(PointerEventData eventData) { }
+	public void OnPointerClick(PointerEventData eventData) { }
 
-public void OnToggleFavouriteClicked() { }
+	public void OnToggleFavouriteClicked() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void OnFavouriteHovered() { }
+	public void OnFavouriteHovered() { }
 
-public void OnFavouriteUnhovered() { }
+	public void OnFavouriteUnhovered() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

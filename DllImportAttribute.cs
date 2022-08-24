@@ -10,18 +10,18 @@ public sealed class DllImportAttribute : Attribute // TypeDefIndex: 1338
 	public bool BestFitMapping; 
 	public bool ThrowOnUnmappableChar; 
 
-public string Value { get; }
+	public string Value { get; }
 
 
-internal static Attribute GetCustomAttribute(RuntimeMethodInfo method) { }
+	internal static Attribute GetCustomAttribute(RuntimeMethodInfo method) { }
 
-internal static bool IsDefined(RuntimeMethodInfo method) { }
+	internal static bool IsDefined(RuntimeMethodInfo method) { }
 
-internal void .ctor(string dllName, string entryPoint, CharSet charSet, bool exactSpelling, bool setLastError, bool preserveSig, CallingConvention callingConvention, bool bestFitMapping, bool throwOnUnmappableChar) { }
+	internal void .ctor(string dllName, string entryPoint, CharSet charSet, bool exactSpelling, bool setLastError, bool preserveSig, CallingConvention callingConvention, bool bestFitMapping, bool throwOnUnmappableChar) { }
 
-public void .ctor(string dllName) { }
+	public void .ctor(string dllName) { }
 
-public string get_Value() { }
+	public string get_Value() { }
 
 }
 

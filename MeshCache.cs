@@ -3,9 +3,9 @@ public static class MeshCache // TypeDefIndex: 9152
 	public static Dictionary<Mesh, MeshCache.Data> dictionary; 
 
 
-public static MeshCache.Data Get(Mesh mesh) { }
+	public static MeshCache.Data Get(Mesh mesh) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -23,7 +23,7 @@ public class MeshCache.Data // TypeDefIndex: 9153
 	public Vector2[] uv4; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -17,13 +17,13 @@ public sealed class DetailPrototype
 	internal int m_UsePrototypeMesh; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-private bool Equals(DetailPrototype other) { }
+	private bool Equals(DetailPrototype other) { }
 
 }
 

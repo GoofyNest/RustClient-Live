@@ -4,24 +4,24 @@ internal class CharEntityEncoderFallbackBuffer : EncoderFallbackBuffer // TypeDe
 	private string charEntity; 
 	private int charEntityIndex; 
 
-public override int Remaining { get; }
+	public override int Remaining { get; }
 
 
-internal void .ctor(CharEntityEncoderFallback parent) { }
+	internal void .ctor(CharEntityEncoderFallback parent) { }
 
-public override bool Fallback(char charUnknown, int index) { }
+	public override bool Fallback(char charUnknown, int index) { }
 
-public override bool Fallback(char charUnknownHigh, char charUnknownLow, int index) { }
+	public override bool Fallback(char charUnknownHigh, char charUnknownLow, int index) { }
 
-public override char GetNextChar() { }
+	public override char GetNextChar() { }
 
-public override bool MovePrevious() { }
+	public override bool MovePrevious() { }
 
-public override int get_Remaining() { }
+	public override int get_Remaining() { }
 
-public override void Reset() { }
+	public override void Reset() { }
 
-private int SurrogateCharToUtf32(char highSurrogate, char lowSurrogate) { }
+	private int SurrogateCharToUtf32(char highSurrogate, char lowSurrogate) { }
 
 }
 

@@ -5,7 +5,7 @@ public class TeamMemberMapMarker : MonoBehaviour // TypeDefIndex: 10961
 	public Tooltip toolTip; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

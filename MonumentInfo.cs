@@ -19,48 +19,48 @@ public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 996
 	[HideInInspector] 
 	public Vector3 PreventBuildingOrigin; 
 
-private bool HasApproximatePreventBuildingRadius { get; }
+	private bool HasApproximatePreventBuildingRadius { get; }
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public bool CheckPlacement(Vector3 pos, Quaternion rot, Vector3 scale) { }
+	public bool CheckPlacement(Vector3 pos, Quaternion rot, Vector3 scale) { }
 
-public float Distance(Vector3 position) { }
+	public float Distance(Vector3 position) { }
 
-public float SqrDistance(Vector3 position) { }
+	public float SqrDistance(Vector3 position) { }
 
-public float Distance(OBB obb) { }
+	public float Distance(OBB obb) { }
 
-public float SqrDistance(OBB obb) { }
+	public float SqrDistance(OBB obb) { }
 
-public bool IsInBounds(Vector3 position) { }
+	public bool IsInBounds(Vector3 position) { }
 
-public Vector3 ClosestPointOnBounds(Vector3 position) { }
+	public Vector3 ClosestPointOnBounds(Vector3 position) { }
 
-public PathFinder.Point GetPathFinderPoint(int res) { }
+	public PathFinder.Point GetPathFinderPoint(int res) { }
 
-public int GetPathFinderRadius(int res) { }
+	public int GetPathFinderRadius(int res) { }
 
-protected void OnDrawGizmosSelected() { }
+	protected void OnDrawGizmosSelected() { }
 
-public static int TierToMask(MonumentTier tier) { }
+	public static int TierToMask(MonumentTier tier) { }
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-private DungeonGridInfo FindDungeonEntrance() { }
+	private DungeonGridInfo FindDungeonEntrance() { }
 
-private bool DetermineHasDungeonLink() { }
+	private bool DetermineHasDungeonLink() { }
 
-private bool DetermineWantsDungeonLink() { }
+	private bool DetermineWantsDungeonLink() { }
 
-public bool IsPointWithinApproximatePreventBuildingRadius(Vector3 worldPoint) { }
+	public bool IsPointWithinApproximatePreventBuildingRadius(Vector3 worldPoint) { }
 
-private bool get_HasApproximatePreventBuildingRadius() { }
+	private bool get_HasApproximatePreventBuildingRadius() { }
 
-private void CalculatePreventBuildingRadius(out Vector3 localSpaceCentre, out float radius) { }
+	private void CalculatePreventBuildingRadius(out Vector3 localSpaceCentre, out float radius) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

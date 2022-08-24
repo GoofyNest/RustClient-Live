@@ -4,15 +4,15 @@ public class DecalRecycle : BasePrefab, IClientComponent, IEffectRecycle, IOnPar
 	private Action recycleAction; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected virtual void OnEnable() { }
+	protected virtual void OnEnable() { }
 
-public void Recycle() { }
+	public void Recycle() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

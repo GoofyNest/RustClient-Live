@@ -4,15 +4,15 @@ public class HideUntilMobile : EntityComponent<BaseEntity> // TypeDefIndex: 9896
 	private Vector3 startPos; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void ForceVisible() { }
+	public void ForceVisible() { }
 
-public void SetVis(bool isVisible) { }
+	public void SetVis(bool isVisible) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

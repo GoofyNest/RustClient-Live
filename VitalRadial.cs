@@ -1,9 +1,9 @@
 public class VitalRadial : MonoBehaviour // TypeDefIndex: 11284
 {
 
-private void Awake() { }
+	private void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -16,66 +16,66 @@ public class FoliageGroup : Pool.IPooled // TypeDefIndex: 9872
 	private Action updateData; 
 	private Action refreshBatches; 
 
-public float Size { get; }
-public Vector3 Position { get; }
-public int Count { get; }
+	public float Size { get; }
+	public Vector3 Position { get; }
+	public int Count { get; }
 
 
-public float get_Size() { }
+	public float get_Size() { }
 
-public Vector3 get_Position() { }
+	public Vector3 get_Position() { }
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public void Initialize(FoliageGrid grid, FoliageCell cell, FoliageKey key) { }
+	public void Initialize(FoliageGrid grid, FoliageCell cell, FoliageKey key) { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void Add(FoliageRenderer renderer) { }
+	public void Add(FoliageRenderer renderer) { }
 
-public void Remove(FoliageRenderer renderer) { }
+	public void Remove(FoliageRenderer renderer) { }
 
-public void Add(FoliagePlacement placement) { }
+	public void Add(FoliagePlacement placement) { }
 
-public void Remove(FoliagePlacement placement) { }
+	public void Remove(FoliagePlacement placement) { }
 
-public void Add(MeshInstance instance) { }
+	public void Add(MeshInstance instance) { }
 
-public void UpdateData() { }
+	public void UpdateData() { }
 
-public void CreateBatches() { }
+	public void CreateBatches() { }
 
-public void RefreshBatches() { }
+	public void RefreshBatches() { }
 
-public void ApplyBatches() { }
+	public void ApplyBatches() { }
 
-public void DisplayBatches() { }
-
-	[IteratorStateMachineAttribute] 
-public IEnumerator UpdateDataAsync() { }
+	public void DisplayBatches() { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator RefreshBatchesAsync() { }
+	public IEnumerator UpdateDataAsync() { }
 
-public void Start() { }
+	[IteratorStateMachineAttribute] 
+	public IEnumerator RefreshBatchesAsync() { }
 
-public void End() { }
+	public void Start() { }
 
-public void Clear() { }
+	public void End() { }
 
-public void Cancel() { }
+	public void Clear() { }
 
-public int MeshCount() { }
+	public void Cancel() { }
 
-public int BatchedMeshCount() { }
+	public int MeshCount() { }
 
-public int VertexCount() { }
+	public int BatchedMeshCount() { }
 
-public FoliageGridBatch CreateBatch() { }
+	public int VertexCount() { }
 
-public void .ctor() { }
+	public FoliageGridBatch CreateBatch() { }
+
+	public void .ctor() { }
 
 }
 
@@ -86,26 +86,26 @@ private sealed class FoliageGroup.<UpdateDataAsync>d__33 : IEnumerator<object>, 
 	public FoliageGroup <>4__this; 
 	private IEnumerator <enumerator>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -116,26 +116,26 @@ private sealed class FoliageGroup.<RefreshBatchesAsync>d__35 : IEnumerator<objec
 	public FoliageGroup <>4__this; 
 	private IEnumerator <enumerator>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

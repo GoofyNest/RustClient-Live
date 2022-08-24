@@ -22,12 +22,12 @@ public class SpawnPopulation : BaseScriptableObject // TypeDefIndex: 9994
 	public SpawnFilter Filter; 
 	public float FilterCutoff; 
 
-public virtual float TargetDensity { get; }
+	public virtual float TargetDensity { get; }
 
 
-public virtual float get_TargetDensity() { }
+	public virtual float get_TargetDensity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

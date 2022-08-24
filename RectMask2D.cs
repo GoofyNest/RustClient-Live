@@ -11,37 +11,37 @@ public class RectMask2D : UIBehaviour, IClipper, ICanvasRaycastFilter // TypeDef
 	private Canvas m_Canvas; 
 	private Vector3[] m_Corners; 
 
-private Canvas Canvas { get; }
-public Rect canvasRect { get; }
-public RectTransform rectTransform { get; }
-private Rect rootCanvasRect { get; }
+	private Canvas Canvas { get; }
+	public Rect canvasRect { get; }
+	public RectTransform rectTransform { get; }
+	private Rect rootCanvasRect { get; }
 
 
-private Canvas get_Canvas() { }
+	private Canvas get_Canvas() { }
 
-public Rect get_canvasRect() { }
+	public Rect get_canvasRect() { }
 
-public RectTransform get_rectTransform() { }
+	public RectTransform get_rectTransform() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public virtual bool IsRaycastLocationValid(Vector2 sp, Camera eventCamera) { }
+	public virtual bool IsRaycastLocationValid(Vector2 sp, Camera eventCamera) { }
 
-private Rect get_rootCanvasRect() { }
+	private Rect get_rootCanvasRect() { }
 
-public virtual void PerformClipping() { }
+	public virtual void PerformClipping() { }
 
-public void AddClippable(IClippable clippable) { }
+	public void AddClippable(IClippable clippable) { }
 
-public void RemoveClippable(IClippable clippable) { }
+	public void RemoveClippable(IClippable clippable) { }
 
-protected override void OnTransformParentChanged() { }
+	protected override void OnTransformParentChanged() { }
 
-protected override void OnCanvasHierarchyChanged() { }
+	protected override void OnCanvasHierarchyChanged() { }
 
 }
 

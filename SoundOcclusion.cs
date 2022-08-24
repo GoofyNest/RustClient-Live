@@ -13,24 +13,24 @@ public class SoundOcclusion : MonoBehaviour // TypeDefIndex: 9038
 	private Ray ray; 
 	private List<RaycastHit> hits; 
 
-public bool isOccluded { get; set; }
+	public bool isOccluded { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_isOccluded() { }
+	public bool get_isOccluded() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isOccluded(bool value) { }
+	private void set_isOccluded(bool value) { }
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Init() { }
+	public void Init() { }
 
-public void UpdateOcclusion(bool lerp = False) { }
+	public void UpdateOcclusion(bool lerp = False) { }
 
-public void DoOcclusionCheck() { }
+	public void DoOcclusionCheck() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

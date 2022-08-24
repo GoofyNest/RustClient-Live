@@ -11,34 +11,34 @@ public class LightOccludee : MonoBehaviour // TypeDefIndex: 11306
 	private bool volumeVisible; 
 	private bool occludeeCulled; 
 
-public bool IsVisible { get; }
+	public bool IsVisible { get; }
 
 
-public bool get_IsVisible() { }
+	public bool get_IsVisible() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void UpdateCullingSphere() { }
+	private void UpdateCullingSphere() { }
 
-public void UpdateDynamicOccludee() { }
+	public void UpdateDynamicOccludee() { }
 
-private void RegisterToOcclusionCulling() { }
+	private void RegisterToOcclusionCulling() { }
 
-private void UnregisterFromOcclusionCulling() { }
+	private void UnregisterFromOcclusionCulling() { }
 
-private void UpdateVisibility() { }
+	private void UpdateVisibility() { }
 
-public void SetLODVisible(bool state) { }
+	public void SetLODVisible(bool state) { }
 
-public void SetVolumeVisible(bool state) { }
+	public void SetVolumeVisible(bool state) { }
 
-protected virtual void OnVisibilityChanged(bool visible) { }
+	protected virtual void OnVisibilityChanged(bool visible) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

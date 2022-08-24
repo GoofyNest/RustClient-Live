@@ -6,13 +6,13 @@ public class MusicClipLoader // TypeDefIndex: 9002
 	public List<AudioClip> clipsToUnload; 
 
 
-public void Update() { }
+	public void Update() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-private MusicClipLoader.LoadedAudioClip FindLoadedClip(AudioClip clip) { }
+	private MusicClipLoader.LoadedAudioClip FindLoadedClip(AudioClip clip) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -22,7 +22,7 @@ public class MusicClipLoader.LoadedAudioClip // TypeDefIndex: 9003
 	public float unloadTime; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,13 +8,13 @@ public class DiscoFloorColourLookups : PrefabAttribute, IClientComponent // Type
 	public Gradient[] ColourGradients; 
 
 
-public float[] GetLookup(DiscoFloorMesh.PatternType pattern) { }
+	public float[] GetLookup(DiscoFloorMesh.PatternType pattern) { }
 
-public Gradient GetColourGradient(int index) { }
+	public Gradient GetColourGradient(int index) { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

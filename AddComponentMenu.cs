@@ -4,9 +4,9 @@ public sealed class AddComponentMenu : Attribute // TypeDefIndex: 3495
 	private int m_Ordering; 
 
 
-public void .ctor(string menuName) { }
+	public void .ctor(string menuName) { }
 
-public void .ctor(string menuName, int order) { }
+	public void .ctor(string menuName, int order) { }
 
 }
 

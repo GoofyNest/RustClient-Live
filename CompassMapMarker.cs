@@ -4,9 +4,9 @@ public class CompassMapMarker : MonoBehaviour // TypeDefIndex: 10833
 	public GameObject LeaderRoot; 
 
 
-public void PopulateMarker(bool isTeamLeaders) { }
+	public void PopulateMarker(bool isTeamLeaders) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

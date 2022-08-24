@@ -14,9 +14,9 @@ public class Stability : ConsoleSystem // TypeDefIndex: 11959
 	public static float surroundingsqueue; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

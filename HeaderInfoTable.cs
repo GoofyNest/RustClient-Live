@@ -5,18 +5,18 @@ internal class HeaderInfoTable // TypeDefIndex: 2916
 	private static HeaderParser SingleParser; 
 	private static HeaderParser MultiParser; 
 
-internal HeaderInfo Item { get; }
+	internal HeaderInfo Item { get; }
 
 
-private static string[] ParseSingleValue(string value) { }
+	private static string[] ParseSingleValue(string value) { }
 
-private static string[] ParseMultiValue(string value) { }
+	private static string[] ParseMultiValue(string value) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal HeaderInfo get_Item(string name) { }
+	internal HeaderInfo get_Item(string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

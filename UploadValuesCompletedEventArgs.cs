@@ -2,12 +2,12 @@ public class UploadValuesCompletedEventArgs : AsyncCompletedEventArgs // TypeDef
 {
 	private byte[] m_Result; 
 
-public byte[] Result { get; }
+	public byte[] Result { get; }
 
 
-internal void .ctor(byte[] result, Exception exception, bool cancelled, object userToken) { }
+	internal void .ctor(byte[] result, Exception exception, bool cancelled, object userToken) { }
 
-public byte[] get_Result() { }
+	public byte[] get_Result() { }
 
 }
 

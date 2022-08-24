@@ -7,11 +7,11 @@ internal sealed class ThreadPoolWorkQueueThreadLocals // TypeDefIndex: 813
 	public readonly Random random; 
 
 
-public void .ctor(ThreadPoolWorkQueue tpq) { }
+	public void .ctor(ThreadPoolWorkQueue tpq) { }
 
-private void CleanUp() { }
+	private void CleanUp() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
 }
 

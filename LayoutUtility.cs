@@ -1,27 +1,27 @@
 public static class LayoutUtility // TypeDefIndex: 4981
 {
 
-public static float GetMinSize(RectTransform rect, int axis) { }
+	public static float GetMinSize(RectTransform rect, int axis) { }
 
-public static float GetPreferredSize(RectTransform rect, int axis) { }
+	public static float GetPreferredSize(RectTransform rect, int axis) { }
 
-public static float GetFlexibleSize(RectTransform rect, int axis) { }
+	public static float GetFlexibleSize(RectTransform rect, int axis) { }
 
-public static float GetMinWidth(RectTransform rect) { }
+	public static float GetMinWidth(RectTransform rect) { }
 
-public static float GetPreferredWidth(RectTransform rect) { }
+	public static float GetPreferredWidth(RectTransform rect) { }
 
-public static float GetFlexibleWidth(RectTransform rect) { }
+	public static float GetFlexibleWidth(RectTransform rect) { }
 
-public static float GetMinHeight(RectTransform rect) { }
+	public static float GetMinHeight(RectTransform rect) { }
 
-public static float GetPreferredHeight(RectTransform rect) { }
+	public static float GetPreferredHeight(RectTransform rect) { }
 
-public static float GetFlexibleHeight(RectTransform rect) { }
+	public static float GetFlexibleHeight(RectTransform rect) { }
 
-public static float GetLayoutProperty(RectTransform rect, Func<ILayoutElement, float> property, float defaultValue) { }
+	public static float GetLayoutProperty(RectTransform rect, Func<ILayoutElement, float> property, float defaultValue) { }
 
-public static float GetLayoutProperty(RectTransform rect, Func<ILayoutElement, float> property, float defaultValue, out ILayoutElement source) { }
+	public static float GetLayoutProperty(RectTransform rect, Func<ILayoutElement, float> property, float defaultValue, out ILayoutElement source) { }
 
 }
 
@@ -38,25 +38,25 @@ private sealed class LayoutUtility.<>c // TypeDefIndex: 4982
 	public static Func<ILayoutElement, float> <>9__8_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal float <GetMinWidth>b__3_0(ILayoutElement e) { }
+	internal float <GetMinWidth>b__3_0(ILayoutElement e) { }
 
-internal float <GetPreferredWidth>b__4_0(ILayoutElement e) { }
+	internal float <GetPreferredWidth>b__4_0(ILayoutElement e) { }
 
-internal float <GetPreferredWidth>b__4_1(ILayoutElement e) { }
+	internal float <GetPreferredWidth>b__4_1(ILayoutElement e) { }
 
-internal float <GetFlexibleWidth>b__5_0(ILayoutElement e) { }
+	internal float <GetFlexibleWidth>b__5_0(ILayoutElement e) { }
 
-internal float <GetMinHeight>b__6_0(ILayoutElement e) { }
+	internal float <GetMinHeight>b__6_0(ILayoutElement e) { }
 
-internal float <GetPreferredHeight>b__7_0(ILayoutElement e) { }
+	internal float <GetPreferredHeight>b__7_0(ILayoutElement e) { }
 
-internal float <GetPreferredHeight>b__7_1(ILayoutElement e) { }
+	internal float <GetPreferredHeight>b__7_1(ILayoutElement e) { }
 
-internal float <GetFlexibleHeight>b__8_0(ILayoutElement e) { }
+	internal float <GetFlexibleHeight>b__8_0(ILayoutElement e) { }
 
 }
 

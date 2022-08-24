@@ -22,34 +22,34 @@ internal class Deflater // TypeDefIndex: 5656
 	private DeflaterPending pending; 
 	private DeflaterEngine engine; 
 
-public int TotalIn { get; }
-public bool IsFinished { get; }
-public bool IsNeedingInput { get; }
+	public int TotalIn { get; }
+	public bool IsFinished { get; }
+	public bool IsNeedingInput { get; }
 
 
-public void .ctor(int level, bool noZlibHeaderOrFooter) { }
+	public void .ctor(int level, bool noZlibHeaderOrFooter) { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public int get_TotalIn() { }
+	public int get_TotalIn() { }
 
-public void Flush() { }
+	public void Flush() { }
 
-public void Finish() { }
+	public void Finish() { }
 
-public bool get_IsFinished() { }
+	public bool get_IsFinished() { }
 
-public bool get_IsNeedingInput() { }
+	public bool get_IsNeedingInput() { }
 
-public void SetInput(byte[] input, int off, int len) { }
+	public void SetInput(byte[] input, int off, int len) { }
 
-public void SetLevel(int lvl) { }
+	public void SetLevel(int lvl) { }
 
-public void SetStrategy(DeflateStrategy strategy) { }
+	public void SetStrategy(DeflateStrategy strategy) { }
 
-public int Deflate(byte[] output, int offset, int length) { }
+	public int Deflate(byte[] output, int offset, int length) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

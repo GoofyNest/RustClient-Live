@@ -7,7 +7,7 @@ public sealed class UnmanagedFunctionPointerAttribute : Attribute // TypeDefInde
 	public bool SetLastError; 
 
 
-public void .ctor(CallingConvention callingConvention) { }
+	public void .ctor(CallingConvention callingConvention) { }
 
 }
 

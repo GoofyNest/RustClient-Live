@@ -6,9 +6,9 @@ public struct MidiMessage // TypeDefIndex: 7641
 	public byte data2; 
 
 
-public void .ctor(ulong data) { }
+	public void .ctor(ulong data) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

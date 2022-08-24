@@ -1,17 +1,17 @@
 public sealed class TimeWarning : IDisposable // TypeDefIndex: 5595
 {
 
-private void .ctor() { }
+	private void .ctor() { }
 
-public static TimeWarning New(string name, int maxmilliseconds = 0) { }
+	public static TimeWarning New(string name, int maxmilliseconds = 0) { }
 
-public void Dispose() { }
-
-	[ConditionalAttribute] 
-public static void BeginSample(string name) { }
+	public void Dispose() { }
 
 	[ConditionalAttribute] 
-public static void EndSample() { }
+	public static void BeginSample(string name) { }
+
+	[ConditionalAttribute] 
+	public static void EndSample() { }
 
 }
 

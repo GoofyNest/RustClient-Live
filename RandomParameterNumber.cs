@@ -7,9 +7,9 @@ public class RandomParameterNumber : StateMachineBehaviour // TypeDefIndex: 1143
 	private int last; 
 
 
-public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,11 +6,11 @@ public class MLRSAmmoIcon : MonoBehaviour
 	private GameObject fill; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void SetState(bool filled) { }
+	public void SetState(bool filled) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

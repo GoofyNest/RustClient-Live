@@ -12,34 +12,34 @@ public class VirtualScroll : MonoBehaviour // TypeDefIndex: 11997
 	private Dictionary<int, GameObject> ActivePool; 
 	private Stack<GameObject> InactivePool; 
 
-private int BlockHeight { get; }
+	private int BlockHeight { get; }
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-private void OnScrollChanged(Vector2 pos) { }
+	private void OnScrollChanged(Vector2 pos) { }
 
-public void SetDataSource(VirtualScroll.IDataSource source) { }
+	public void SetDataSource(VirtualScroll.IDataSource source) { }
 
-private int get_BlockHeight() { }
+	private int get_BlockHeight() { }
 
-public void FullRebuild() { }
+	public void FullRebuild() { }
 
-public void DataChanged() { }
+	public void DataChanged() { }
 
-public void Rebuild() { }
+	public void Rebuild() { }
 
-private void RecycleOutOfRange(int startVisible, float endVisible) { }
+	private void RecycleOutOfRange(int startVisible, float endVisible) { }
 
-private void Recycle(int key) { }
+	private void Recycle(int key) { }
 
-private void BuildItem(int i) { }
+	private void BuildItem(int i) { }
 
-private GameObject GetItem() { }
+	private GameObject GetItem() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -49,9 +49,9 @@ private sealed class VirtualScroll.<>c__DisplayClass20_0 // TypeDefIndex: 11999
 	public float endVisible; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <RecycleOutOfRange>b__0(int x) { }
+	internal bool <RecycleOutOfRange>b__0(int x) { }
 
 }
 
@@ -61,11 +61,11 @@ private sealed class VirtualScroll.<>c // TypeDefIndex: 12000
 	public static Func<int, int> <>9__20_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <RecycleOutOfRange>b__20_1(int x) { }
+	internal int <RecycleOutOfRange>b__20_1(int x) { }
 
 }
 

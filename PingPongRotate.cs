@@ -5,11 +5,11 @@ public class PingPongRotate : MonoBehaviour // TypeDefIndex: 9287
 	public Vector3 rotationAmount; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public Quaternion GetRotation(int index) { }
+	public Quaternion GetRotation(int index) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

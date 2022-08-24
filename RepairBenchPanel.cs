@@ -14,34 +14,34 @@ public class RepairBenchPanel : LootPanel // TypeDefIndex: 11047
 	public GameObject attachmentSkinBlocker; 
 	private Item _displayItem; 
 
-public Item item { get; }
+	public Item item { get; }
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public Item get_item() { }
+	public Item get_item() { }
 
-public void UpdateAvailableSkins() { }
+	public void UpdateAvailableSkins() { }
 
-public void SkinClicked() { }
+	public void SkinClicked() { }
 
-private void DisableAttachmentBlock() { }
+	private void DisableAttachmentBlock() { }
 
-public void RepairClicked() { }
+	public void RepairClicked() { }
 
-public bool IsItemRepairable(ItemDefinition info) { }
+	public bool IsItemRepairable(ItemDefinition info) { }
 
-private string GetCostText() { }
+	private string GetCostText() { }
 
-private void Refresh() { }
+	private void Refresh() { }
 
-public void UpdateSkinPanel() { }
+	public void UpdateSkinPanel() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

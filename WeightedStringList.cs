@@ -3,16 +3,16 @@ public class WeightedStringList // TypeDefIndex: 6214
 	public List<WeightedStringList.Container> Objects; 
 	private float _total; 
 
-private float Total { get; }
+	private float Total { get; }
 
 
-private float get_Total() { }
+	private float get_Total() { }
 
-public string Get(float f) { }
+	public string Get(float f) { }
 
-public string GetRandom() { }
+	public string GetRandom() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -29,11 +29,11 @@ private sealed class WeightedStringList.<>c // TypeDefIndex: 6216
 	public static Func<WeightedStringList.Container, float> <>9__3_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal float <get_Total>b__3_0(WeightedStringList.Container x) { }
+	internal float <get_Total>b__3_0(WeightedStringList.Container x) { }
 
 }
 

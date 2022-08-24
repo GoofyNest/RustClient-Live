@@ -60,7 +60,7 @@ public class CardTableUI : UIDialog // TypeDefIndex: 10874
 	private CardTableUI.ICardGameSubUI <curGameTypeUI>k__BackingField; 
 	private int lastInputCount; 
 	private TimeSince showInputTimer; 
-private const float DismountTime = 1;
+	private const float DismountTime = 1;
 	private bool dismountInProgress; 
 	private TimeSince dismountStart; 
 	public CardTableUI.KeycodeWithAction dismountInput; 
@@ -69,59 +69,59 @@ private const float DismountTime = 1;
 	private static Dictionary<int, Sprite> smallCardImageDict; 
 	private static Dictionary<int, Sprite> transparentCardImageDict; 
 
-public CardTableUI.ICardGameSubUI curGameTypeUI { get; set; }
-private float dismountNormalisedProgress { get; }
+	public CardTableUI.ICardGameSubUI curGameTypeUI { get; set; }
+	private float dismountNormalisedProgress { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public CardTableUI.ICardGameSubUI get_curGameTypeUI() { }
+	public CardTableUI.ICardGameSubUI get_curGameTypeUI() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_curGameTypeUI(CardTableUI.ICardGameSubUI value) { }
+	private void set_curGameTypeUI(CardTableUI.ICardGameSubUI value) { }
 
-private float get_dismountNormalisedProgress() { }
+	private float get_dismountNormalisedProgress() { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-public void OnPlayerPressedEscape() { }
+	public void OnPlayerPressedEscape() { }
 
-public override void CloseDialog() { }
+	public override void CloseDialog() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public void SetOwner(CardTable owner) { }
+	public void SetOwner(CardTable owner) { }
 
-public override void OpenDialog() { }
+	public override void OpenDialog() { }
 
-public static Sprite GetImage(int cardIndex, CardTableUI.CardType type) { }
+	public static Sprite GetImage(int cardIndex, CardTableUI.CardType type) { }
 
-public void SetImage(Image image, int cardIndex, CardTableUI.CardType size) { }
+	public void SetImage(Image image, int cardIndex, CardTableUI.CardType size) { }
 
-public void SetImage(Image image, Sprite sprite) { }
+	public void SetImage(Image image, Sprite sprite) { }
 
-public void ShowTimer() { }
+	public void ShowTimer() { }
 
-public void HideTimer() { }
+	public void HideTimer() { }
 
-private void RefreshUIState(CardPlayerData localPlayerData, bool forced = False) { }
+	private void RefreshUIState(CardPlayerData localPlayerData, bool forced = False) { }
 
-private void SetUIState(CardTableUI.UIState newState, bool forced = False) { }
+	private void SetUIState(CardTableUI.UIState newState, bool forced = False) { }
 
-private void UpdateVitals() { }
+	private void UpdateVitals() { }
 
-private void SetInfoUI(CardTableUI.InfoTextUI infoTextUI, string text, CardTableUI.InfoTextUI.Attitude attitude) { }
+	private void SetInfoUI(CardTableUI.InfoTextUI infoTextUI, string text, CardTableUI.InfoTextUI.Attitude attitude) { }
 
-private void RefreshAvailableInputs(CardPlayerData localPlayerData) { }
+	private void RefreshAvailableInputs(CardPlayerData localPlayerData) { }
 
-private void StartDismountTime() { }
+	private void StartDismountTime() { }
 
-private void CheckDismount() { }
+	private void CheckDismount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -134,7 +134,7 @@ public class CardTableUI.PlayingCardImage // TypeDefIndex: 10875
 	public Sprite imageTransparent; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -145,28 +145,28 @@ public class CardTableUI.InfoTextUI // TypeDefIndex: 10876
 	public Image background; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum CardTableUI.InfoTextUI.Attitude // TypeDefIndex: 10877
 {
 	public int value__; 
-public const CardTableUI.InfoTextUI.Attitude Neutral = 0;
-public const CardTableUI.InfoTextUI.Attitude Good = 1;
-public const CardTableUI.InfoTextUI.Attitude Bad = 2;
+	public const CardTableUI.InfoTextUI.Attitude Neutral = 0;
+	public const CardTableUI.InfoTextUI.Attitude Good = 1;
+	public const CardTableUI.InfoTextUI.Attitude Bad = 2;
 
 }
 
 public enum CardTableUI.UIState // TypeDefIndex: 10879
 {
 	public int value__; 
-public const CardTableUI.UIState None = 0;
-public const CardTableUI.UIState Loading = 1;
-public const CardTableUI.UIState WaitingForNextRound = 2;
-public const CardTableUI.UIState Playing = 3;
-public const CardTableUI.UIState CannotJoin = 4;
-public const CardTableUI.UIState NotEnoughPlayers = 5;
+	public const CardTableUI.UIState None = 0;
+	public const CardTableUI.UIState Loading = 1;
+	public const CardTableUI.UIState WaitingForNextRound = 2;
+	public const CardTableUI.UIState Playing = 3;
+	public const CardTableUI.UIState CannotJoin = 4;
+	public const CardTableUI.UIState NotEnoughPlayers = 5;
 
 }
 
@@ -178,16 +178,16 @@ public struct CardTableUI.KeycodeWithAction // TypeDefIndex: 10880
 	public string extraString; 
 
 
-public void .ctor(KeyCode keyCode, Action action, Translate.Phrase displayPhrase, string extraString) { }
+	public void .ctor(KeyCode keyCode, Action action, Translate.Phrase displayPhrase, string extraString) { }
 
 }
 
 public enum CardTableUI.CardType // TypeDefIndex: 10881
 {
 	public int value__; 
-public const CardTableUI.CardType Large = 0;
-public const CardTableUI.CardType Small = 1;
-public const CardTableUI.CardType LargeTransparent = 2;
+	public const CardTableUI.CardType Large = 0;
+	public const CardTableUI.CardType Small = 1;
+	public const CardTableUI.CardType LargeTransparent = 2;
 
 }
 

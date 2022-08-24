@@ -26,15 +26,15 @@ public class LiquidWobble : MonoBehaviour // TypeDefIndex: 10684
 	private static int turbulenceID; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private float CalculateWaterLevel() { }
+	private float CalculateWaterLevel() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -4,16 +4,16 @@ public struct OccludeeSphere // TypeDefIndex: 11504
 	public OccludeeState state; 
 	public OcclusionCulling.Sphere sphere; 
 
-public bool IsRegistered { get; }
+	public bool IsRegistered { get; }
 
 
-public bool get_IsRegistered() { }
+	public bool get_IsRegistered() { }
 
-public void Invalidate() { }
+	public void Invalidate() { }
 
-public void .ctor(int id) { }
+	public void .ctor(int id) { }
 
-public void .ctor(int id, OcclusionCulling.Sphere sphere) { }
+	public void .ctor(int id, OcclusionCulling.Sphere sphere) { }
 
 }
 

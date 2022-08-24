@@ -3,16 +3,16 @@ public class TimeSinceThreatAIEvent : BaseAIEvent // TypeDefIndex: 9414
 	[CompilerGeneratedAttribute] 
 	private float <Value>k__BackingField; 
 
-public float Value { get; set; }
+	public float Value { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_Value() { }
+	public float get_Value() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Value(float value) { }
+	private void set_Value(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

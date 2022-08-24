@@ -6,9 +6,9 @@ public class PowerLineWireConnectionDef // TypeDefIndex: 10368
 	public bool hidden; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(PowerLineWireConnectionDef src) { }
+	public void .ctor(PowerLineWireConnectionDef src) { }
 
 }
 

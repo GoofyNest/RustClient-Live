@@ -4,9 +4,9 @@ public class RandomDestroy : MonoBehaviour // TypeDefIndex: 10352
 	public float Probability; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

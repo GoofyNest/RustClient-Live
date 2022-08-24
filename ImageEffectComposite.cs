@@ -8,14 +8,14 @@ public class ImageEffectComposite : MonoBehaviour // TypeDefIndex: 8030
 	private bool sorted; 
 
 
-public void Add(ImageEffectLayer effect) { }
+	public void Add(ImageEffectLayer effect) { }
 
-public void Remove(ImageEffectLayer effect) { }
+	public void Remove(ImageEffectLayer effect) { }
 
 	[ImageEffectTransformsToLDR] 
-private void OnRenderImage(RenderTexture src, RenderTexture dst) { }
+	private void OnRenderImage(RenderTexture src, RenderTexture dst) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -25,11 +25,11 @@ private sealed class ImageEffectComposite.<>c // TypeDefIndex: 8031
 	public static Comparison<ImageEffectLayer> <>9__9_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <.ctor>b__9_0(ImageEffectLayer x, ImageEffectLayer y) { }
+	internal int <.ctor>b__9_0(ImageEffectLayer x, ImageEffectLayer y) { }
 
 }
 

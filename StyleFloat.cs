@@ -4,29 +4,29 @@ public struct StyleFloat : IStyleValue<float>, IEquatable<StyleFloat> // TypeDef
 	private float m_Value; 
 	private int m_Specificity; 
 
-public float value { get; }
-public StyleKeyword keyword { get; }
+	public float value { get; }
+	public StyleKeyword keyword { get; }
 
 
-public float get_value() { }
+	public float get_value() { }
 
-public StyleKeyword get_keyword() { }
+	public StyleKeyword get_keyword() { }
 
-public void .ctor(float v) { }
+	public void .ctor(float v) { }
 
-internal void .ctor(float v, StyleKeyword keyword) { }
+	internal void .ctor(float v, StyleKeyword keyword) { }
 
-public static bool op_Equality(StyleFloat lhs, StyleFloat rhs) { }
+	public static bool op_Equality(StyleFloat lhs, StyleFloat rhs) { }
 
-public static StyleFloat op_Implicit(float v) { }
+	public static StyleFloat op_Implicit(float v) { }
 
-public bool Equals(StyleFloat other) { }
+	public bool Equals(StyleFloat other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

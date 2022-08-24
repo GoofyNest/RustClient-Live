@@ -14,14 +14,14 @@ public class SceneField
 	[SerializeField] 
 	private string sceneName; 
 
-public string SceneName { get; }
+	public string SceneName { get; }
 
 
-public string get_SceneName() { }
+	public string get_SceneName() { }
 
-public static string op_Implicit(SceneField sceneField) { }
+	public static string op_Implicit(SceneField sceneField) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

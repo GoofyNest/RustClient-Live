@@ -4,13 +4,13 @@ public class ParticleSystemIK : MonoBehaviour, IClientComponent // TypeDefIndex:
 	private ParticleSystemIK.ParticleSystemIKJob job; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnParticleUpdateJobScheduled() { }
+	private void OnParticleUpdateJobScheduled() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -24,7 +24,7 @@ public struct ParticleSystemIK.ParticleSystemIKJob : IJobParticleSystem // TypeD
 	public float deltaTime; 
 
 
-public void Execute(ParticleSystemJobData particles) { }
+	public void Execute(ParticleSystemJobData particles) { }
 
 }
 

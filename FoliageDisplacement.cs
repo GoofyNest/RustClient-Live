@@ -8,17 +8,17 @@ public class FoliageDisplacement : MonoBehaviour, IClientComponent, ILOD // Type
 	private LODCell cell; 
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-private void SetVisible(bool state) { }
+	private void SetVisible(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

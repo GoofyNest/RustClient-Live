@@ -1,13 +1,13 @@
 internal class Ucs4Encoding4321 : Ucs4Encoding // TypeDefIndex: 2016
 {
-public override string EncodingName { get; }
+	public override string EncodingName { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override string get_EncodingName() { }
+	public override string get_EncodingName() { }
 
-public override byte[] GetPreamble() { }
+	public override byte[] GetPreamble() { }
 
 }
 

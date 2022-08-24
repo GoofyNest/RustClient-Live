@@ -3,26 +3,26 @@ public class TechTreeWidget : BaseMonoBehaviour // TypeDefIndex: 10917
 	public int id; 
 	private Vector3 originalPos; 
 
-public RectTransform rectTransform { get; }
+	public RectTransform rectTransform { get; }
 
 
-public RectTransform get_rectTransform() { }
+	public RectTransform get_rectTransform() { }
 
-public virtual bool IsLocked() { }
+	public virtual bool IsLocked() { }
 
-public virtual bool HasPathToUnlock() { }
+	public virtual bool HasPathToUnlock() { }
 
-public virtual void SetLocked(bool isLocked) { }
+	public virtual void SetLocked(bool isLocked) { }
 
-public virtual void SetSelected(bool isSelected) { }
+	public virtual void SetSelected(bool isSelected) { }
 
-public virtual void SetAbleToUnlock(bool wants) { }
+	public virtual void SetAbleToUnlock(bool wants) { }
 
-public virtual void UnlockPunch(float scale = 1) { }
+	public virtual void UnlockPunch(float scale = 1) { }
 
-public void PunchSim() { }
+	public void PunchSim() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

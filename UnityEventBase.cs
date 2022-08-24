@@ -7,35 +7,35 @@ public abstract class UnityEventBase : ISerializationCallbackReceiver // TypeDef
 	private bool m_CallsDirty; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize() { }
+	private void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize() { }
 
-private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize() { }
+	private void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize() { }
 
-protected abstract MethodInfo FindMethod_Impl(string name, object targetObj);
+	protected abstract MethodInfo FindMethod_Impl(string name, object targetObj);
 
-internal abstract BaseInvokableCall GetDelegate(object target, MethodInfo theFunction);
+	internal abstract BaseInvokableCall GetDelegate(object target, MethodInfo theFunction);
 
-internal MethodInfo FindMethod(PersistentCall call) { }
+	internal MethodInfo FindMethod(PersistentCall call) { }
 
-internal MethodInfo FindMethod(string name, object listener, PersistentListenerMode mode, Type argumentType) { }
+	internal MethodInfo FindMethod(string name, object listener, PersistentListenerMode mode, Type argumentType) { }
 
-private void DirtyPersistentCalls() { }
+	private void DirtyPersistentCalls() { }
 
-private void RebuildPersistentCallsIfNeeded() { }
+	private void RebuildPersistentCallsIfNeeded() { }
 
-internal void AddCall(BaseInvokableCall call) { }
+	internal void AddCall(BaseInvokableCall call) { }
 
-protected void RemoveListener(object targetObj, MethodInfo method) { }
+	protected void RemoveListener(object targetObj, MethodInfo method) { }
 
-public void RemoveAllListeners() { }
+	public void RemoveAllListeners() { }
 
-internal List<BaseInvokableCall> PrepareInvoke() { }
+	internal List<BaseInvokableCall> PrepareInvoke() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public static MethodInfo GetValidMethodInfo(object obj, string functionName, Type[] argumentTypes) { }
+	public static MethodInfo GetValidMethodInfo(object obj, string functionName, Type[] argumentTypes) { }
 
 }
 

@@ -6,11 +6,11 @@ public struct ERLane // TypeDefIndex: 7219
 	public int laneIndex; 
 
 
-public void .ctor(float position, ERLaneDirection direction, int index) { }
+	public void .ctor(float position, ERLaneDirection direction, int index) { }
 
-public void .ctor(ERLane lane) { }
+	public void .ctor(ERLane lane) { }
 
-public void Copy(ERLane lane) { }
+	public void Copy(ERLane lane) { }
 
 }
 

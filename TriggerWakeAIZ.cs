@@ -4,7 +4,7 @@ public class TriggerWakeAIZ : TriggerBase, IServerComponent // TypeDefIndex: 100
 	public List<AIInformationZone> zones; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -11,44 +11,44 @@ public sealed class PhotoCaptureFrame : IDisposable // TypeDefIndex: 3615
 	[DebuggerBrowsableAttribute] 
 	private CapturePixelFormat <pixelFormat>k__BackingField; 
 
-public int dataLength { get; set; }
-private bool hasLocationData { set; }
-private CapturePixelFormat pixelFormat { set; }
+	public int dataLength { get; set; }
+	private bool hasLocationData { set; }
+	private CapturePixelFormat pixelFormat { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public int get_dataLength() { }
+	public int get_dataLength() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_dataLength(int value) { }
+	private void set_dataLength(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_hasLocationData(bool value) { }
+	private void set_hasLocationData(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_pixelFormat(CapturePixelFormat value) { }
+	private void set_pixelFormat(CapturePixelFormat value) { }
 
 	[ThreadAndSerializationSafeAttribute] 
-private int GetDataLength() { }
+	private int GetDataLength() { }
 
 	[ThreadAndSerializationSafeAttribute] 
-private bool GetHasLocationData() { }
+	private bool GetHasLocationData() { }
 
 	[ThreadAndSerializationSafeAttribute] 
-private CapturePixelFormat GetCapturePixelFormat() { }
+	private CapturePixelFormat GetCapturePixelFormat() { }
 
-internal void .ctor(IntPtr nativePtr) { }
+	internal void .ctor(IntPtr nativePtr) { }
 
-private void Cleanup() { }
+	private void Cleanup() { }
 
 	[ThreadAndSerializationSafeAttribute] 
 	[NativeNameAttribute] 
 	[NativeConditionalAttribute] 
-private void Dispose_Internal() { }
+	private void Dispose_Internal() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
 }
 

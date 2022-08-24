@@ -7,7 +7,7 @@ public class ERBlendVecs // TypeDefIndex: 7180
 	public int blendType; 
 
 
-public void .ctor(int index, int mIndex, float weight, int conn, int type) { }
+	public void .ctor(int index, int mIndex, float weight, int conn, int type) { }
 
 }
 

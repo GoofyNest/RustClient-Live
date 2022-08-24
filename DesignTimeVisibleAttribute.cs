@@ -5,20 +5,20 @@ public sealed class DesignTimeVisibleAttribute : Attribute // TypeDefIndex: 2691
 	public static readonly DesignTimeVisibleAttribute No; 
 	public static readonly DesignTimeVisibleAttribute Default; 
 
-public bool Visible { get; }
+	public bool Visible { get; }
 
 
-public void .ctor(bool visible) { }
+	public void .ctor(bool visible) { }
 
-public bool get_Visible() { }
+	public bool get_Visible() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool IsDefaultAttribute() { }
+	public override bool IsDefaultAttribute() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -2,13 +2,13 @@ public static class NotesManagingUtilities // TypeDefIndex: 7447
 {
 
 	[ExtensionAttribute] 
-public static ICollection<Note> GetNotes(EventsCollection eventsCollection, NoteDetectionSettings settings) { }
+	public static ICollection<Note> GetNotes(EventsCollection eventsCollection, NoteDetectionSettings settings) { }
 
 	[ExtensionAttribute] 
-public static ICollection<Note> GetNotes(IEnumerable<TrackChunk> trackChunks, NoteDetectionSettings settings) { }
+	public static ICollection<Note> GetNotes(IEnumerable<TrackChunk> trackChunks, NoteDetectionSettings settings) { }
 
 	[ExtensionAttribute] 
-public static ICollection<Note> GetNotes(MidiFile file, NoteDetectionSettings settings) { }
+	public static ICollection<Note> GetNotes(MidiFile file, NoteDetectionSettings settings) { }
 
 }
 
@@ -19,13 +19,13 @@ private sealed class NotesManagingUtilities.<>c // TypeDefIndex: 7448
 	public static Func<EventsCollection, int> <>9__16_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal EventsCollection <GetNotes>b__16_0(TrackChunk c) { }
+	internal EventsCollection <GetNotes>b__16_0(TrackChunk c) { }
 
-internal int <GetNotes>b__16_1(EventsCollection e) { }
+	internal int <GetNotes>b__16_1(EventsCollection e) { }
 
 }
 

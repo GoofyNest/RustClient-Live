@@ -4,17 +4,17 @@ public static class StackTraceUtility // TypeDefIndex: 3527
 
 
 	[RequiredByNativeCodeAttribute] 
-internal static void SetProjectFolder(string folder) { }
+	internal static void SetProjectFolder(string folder) { }
 
 	[RequiredByNativeCodeAttribute] 
-public static string ExtractStackTrace() { }
+	public static string ExtractStackTrace() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void ExtractStringFromExceptionInternal(object exceptiono, out string message, out string stackTrace) { }
+	internal static void ExtractStringFromExceptionInternal(object exceptiono, out string message, out string stackTrace) { }
 
-internal static string ExtractFormattedStackTrace(StackTrace stackTrace) { }
+	internal static string ExtractFormattedStackTrace(StackTrace stackTrace) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

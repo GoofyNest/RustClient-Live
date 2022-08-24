@@ -7,7 +7,7 @@ public class BlendedEngineLoopDefinition : ScriptableObject // TypeDefIndex: 898
 	public float RPMChangeRateDown; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -21,9 +21,9 @@ public class BlendedEngineLoopDefinition.EngineLoopDefinition // TypeDefIndex: 8
 	public float stopRPM; 
 
 
-public float GetPitchForRPM(float targetRPM) { }
+	public float GetPitchForRPM(float targetRPM) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

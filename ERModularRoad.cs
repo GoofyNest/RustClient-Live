@@ -262,119 +262,119 @@ public class ERModularRoad : MonoBehaviour // TypeDefIndex: 7178
 	public ERLaneDirection oneWayDirection; 
 
 
-public bool ODDQCOCDQQ(ERCrossingPrefabs prefabScript) { }
+	public bool ODDQCOCDQQ(ERCrossingPrefabs prefabScript) { }
 
-public void ODQCQCDCDQ(List<ERDecal> decalPresets) { }
+	public void ODQCQCDCDQ(List<ERDecal> decalPresets) { }
 
-public void OOQOCCOOOD() { }
+	public void OOQOCCOOOD() { }
 
-public float GetRoadWidth() { }
+	public float GetRoadWidth() { }
 
-public void OQQOCOQDCQ(Vector3 pos) { }
+	public void OQQOCOQDCQ(Vector3 pos) { }
 
-public int OCDQCCCDCC(Vector3 pos) { }
+	public int OCDQCCCDCC(Vector3 pos) { }
 
-public void GetInsertPointExt(Vector3 pos, ref int n1, int marker) { }
+	public void GetInsertPointExt(Vector3 pos, ref int n1, int marker) { }
 
-public void OCOOCCODDD(Vector3 pos, ref int n1) { }
+	public void OCOOCCODDD(Vector3 pos, ref int n1) { }
 
-public void OOODDDDQQO(Vector3 pos, ref int n1, int selectedMarker, bool sameRoad) { }
+	public void OOODDDDQQO(Vector3 pos, ref int n1, int selectedMarker, bool sameRoad) { }
 
-public int OQCCQDDOQD(Vector3 pos) { }
+	public int OQCCQDDOQD(Vector3 pos) { }
 
-public int OOCDODCOOD(Vector3 pos, int selectedMarker) { }
+	public int OOCDODCOOD(Vector3 pos, int selectedMarker) { }
 
-public int HandleAddMarkerAtStart(Vector3 pos, int selectedMarker) { }
+	public int HandleAddMarkerAtStart(Vector3 pos, int selectedMarker) { }
 
-public void ODDDCDQCCO(ERCrossingPrefabs ODCQDOOOCC, int targetElement, bool reverse, bool uvReverse, bool UpdateResolutionFlag) { }
+	public void ODDDCDQCCO(ERCrossingPrefabs ODCQDOOOCC, int targetElement, bool reverse, bool uvReverse, bool UpdateResolutionFlag) { }
 
-public void OOOCDCQQCO(bool ignorePrefabAlignment, int selectedMarker) { }
+	public void OOOCDCQQCO(bool ignorePrefabAlignment, int selectedMarker) { }
 
-public void PrintRoadShape(List<Vector2> lst) { }
+	public void PrintRoadShape(List<Vector2> lst) { }
 
-public void OCQOQCDCQC(bool ignorePrefabAlignment, bool forceAutoRotate) { }
+	public void OCQOQCDCQC(bool ignorePrefabAlignment, bool forceAutoRotate) { }
 
-private void OCODCOOQOC(ref List<Vector3> vecs, ref List<Vector2> uvs, ref List<Vector2> uvs2, int cols, ref int addedRows, ref List<bool> isPlanar, ref List<Color> colors, ref float uv, ref float uv4) { }
+	private void OCODCOOQOC(ref List<Vector3> vecs, ref List<Vector2> uvs, ref List<Vector2> uvs2, int cols, ref int addedRows, ref List<bool> isPlanar, ref List<Color> colors, ref float uv, ref float uv4) { }
 
-public void OCDCOOQOQD(Mesh m) { }
+	public void OCDCOOQOQD(Mesh m) { }
 
-public void OQOOOOOOCQ(ERDecal decal, ref GameObject decalPrefab, string name) { }
+	public void OQOOOOOOCQ(ERDecal decal, ref GameObject decalPrefab, string name) { }
 
-public float ODCDOQOOOO(ERDecal decal, float roadWidth) { }
+	public float ODCDOQOOOO(ERDecal decal, float roadWidth) { }
 
-public void OOOCOODQCO(string type) { }
+	public void OOOCOODQCO(string type) { }
 
-public void OQOCCDCCDD(GameObject decal, int index) { }
+	public void OQOCCDCCDD(GameObject decal, int index) { }
 
-public float OCDDDDQDQQ(int startEnd) { }
+	public float OCDDDDQDQQ(int startEnd) { }
 
-public Vector3[] AdjustNormals(Vector3[] normals) { }
+	public Vector3[] AdjustNormals(Vector3[] normals) { }
 
-public void AdjustPrefabNormals(List<int> roadInts, List<int> prefabInts, Vector3[] normals, GameObject prefab, Vector3[] verts) { }
+	public void AdjustPrefabNormals(List<int> roadInts, List<int> prefabInts, Vector3[] normals, GameObject prefab, Vector3[] verts) { }
 
-public bool OQCDCDOOCD(Vector3 pTarget, Vector3 pSource, Vector3 pCheck) { }
+	public bool OQCDCDOOCD(Vector3 pTarget, Vector3 pSource, Vector3 pCheck) { }
 
-public void OODCOQOQOD(ref List<Vector3> surfaceVecs, ERCrossingPrefabs prefabScript, ref bool startSurfacesSafe, float distance, float minIndent) { }
+	public void OODCOQOQOD(ref List<Vector3> surfaceVecs, ERCrossingPrefabs prefabScript, ref bool startSurfacesSafe, float distance, float minIndent) { }
 
-public void ODOCCQDCQO(ref List<Vector3> surfaceVecs, ERCrossingPrefabs prefabScript, int el, ref bool surfacesSafe, float distance, float minIndent) { }
+	public void ODOCCQDCQO(ref List<Vector3> surfaceVecs, ERCrossingPrefabs prefabScript, int el, ref bool surfacesSafe, float distance, float minIndent) { }
 
-public bool OQCODQODCO(Vector3 ODCQDOOOCCIndent, Vector3 otherPrefabIndent, Vector3 v) { }
+	public bool OQCODQODCO(Vector3 ODCQDOOOCCIndent, Vector3 otherPrefabIndent, Vector3 v) { }
 
-public void OCQOQQCDOD(List<Vector3> surfaceVecs, List<Vector2> uvs, int h, List<bool> doBridge, Vector3 firstDir, Vector3 lastDir, float indent, float surrounding, List<bool> tunnelSegments) { }
+	public void OCQOQQCDOD(List<Vector3> surfaceVecs, List<Vector2> uvs, int h, List<bool> doBridge, Vector3 firstDir, Vector3 lastDir, float indent, float surrounding, List<bool> tunnelSegments) { }
 
-public void InterpolateSurfaces(ref List<Vector3> surfaceVecs, ref List<Vector2> uvs, ref List<int> tris, Vector3 dir, int vecCount, int startEnd, float indent, float surrounding) { }
+	public void InterpolateSurfaces(ref List<Vector3> surfaceVecs, ref List<Vector2> uvs, ref List<int> tris, Vector3 dir, int vecCount, int startEnd, float indent, float surrounding) { }
 
-public void OOCCDCDCQD() { }
+	public void OOCCDCDCQD() { }
 
-public List<Vector3> OQDDOOOOQD(List<ERMarkerExt> markersExt, float faceDist, bool ignorePrefabAlignment, ref List<float> tValues, ref List<float> markerDistances, bool forceAutoRotate, ref List<float> rotationArray, ref List<float> bendAngles) { }
+	public List<Vector3> OQDDOOOOQD(List<ERMarkerExt> markersExt, float faceDist, bool ignorePrefabAlignment, ref List<float> tValues, ref List<float> markerDistances, bool forceAutoRotate, ref List<float> rotationArray, ref List<float> bendAngles) { }
 
-public void OCQOOCCQDD(List<ERMarkerExt> tmpMarkers, int j, Vector3[] tr, Vector3 circleDir, float totalDist, ref Vector3 startCP, int startMarker, List<Vector3> p) { }
+	public void OCQOOCCQDD(List<ERMarkerExt> tmpMarkers, int j, Vector3[] tr, Vector3 circleDir, float totalDist, ref Vector3 startCP, int startMarker, List<Vector3> p) { }
 
-public void OQDOQOCDDQ(List<ERMarkerExt> tmpMarkersExt, int j, Vector3[] tr, ref Vector3 endCP, int startMarker) { }
+	public void OQDOQOCDDQ(List<ERMarkerExt> tmpMarkersExt, int j, Vector3[] tr, ref Vector3 endCP, int startMarker) { }
 
-public void OOCCQCCDQC(ref Vector3 endCP, Vector3 curV3, Vector3 nextV3, Vector3 nextNextV3) { }
+	public void OOCCQCCDQC(ref Vector3 endCP, Vector3 curV3, Vector3 nextV3, Vector3 nextNextV3) { }
 
-public List<float> OQDOOOQODD(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, ref List<float> OQQOODQCCC, List<float> randomRotations) { }
+	public List<float> OQDOOOQODD(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, ref List<float> OQQOODQCCC, List<float> randomRotations) { }
 
-public void RoadSmoothness(float curDist, ERMarkerExt marker, float totalDistance, ref float randomYDistanceStart, ref float randomYDistanceEnd, ref float randomYDistanceMiddle, ref Vector3 randomYDistanceV3, ref Vector3 v, ref float currentRandomYDistance, ref float randomRotationStart, ref float randomRotationEnd, ref float randomRotationMiddle, ref Vector3 randomRotationV3, ref float currentRandomRotation, ref List<float> rotationArray) { }
+	public void RoadSmoothness(float curDist, ERMarkerExt marker, float totalDistance, ref float randomYDistanceStart, ref float randomYDistanceEnd, ref float randomYDistanceMiddle, ref Vector3 randomYDistanceV3, ref Vector3 v, ref float currentRandomYDistance, ref float randomRotationStart, ref float randomRotationEnd, ref float randomRotationMiddle, ref Vector3 randomRotationV3, ref float currentRandomRotation, ref List<float> rotationArray) { }
 
-public List<List<Vector2>> GetRoadShapeValues(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, List<Vector2> roadShape) { }
+	public List<List<Vector2>> GetRoadShapeValues(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, List<Vector2> roadShape) { }
 
-public List<float> GetSurfaceValues(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, ref List<float> leftIndents, ref List<float> rightIndents, ref List<float> leftSurrounding, ref List<float> rightSurrounding, float minRequiredIndent) { }
+	public List<float> GetSurfaceValues(List<float> tValues, List<float> markerDistances, List<ERMarkerExt> markers, int startMarker, int endMarker, ref List<float> leftIndents, ref List<float> rightIndents, ref List<float> leftSurrounding, ref List<float> rightSurrounding, float minRequiredIndent) { }
 
-public bool OCCQQDDDQC(SideObject obj, bool flag) { }
+	public bool OCCQQDDDQC(SideObject obj, bool flag) { }
 
-public bool ODQCOQQDCD(SideObject obj, int marker, bool flag) { }
+	public bool ODQCOQQDCD(SideObject obj, int marker, bool flag) { }
 
-public bool ERSetSideObjectOffset(SideObject obj, int marker, OffsetPosition position, float value) { }
+	public bool ERSetSideObjectOffset(SideObject obj, int marker, OffsetPosition position, float value) { }
 
-public bool ODQCOQQDCD(SideObject obj, int[] markers, bool flag) { }
+	public bool ODQCOQQDCD(SideObject obj, int[] markers, bool flag) { }
 
-public List<Vector3> OQOQDCODCD(bool flag) { }
+	public List<Vector3> OQOQDCODCD(bool flag) { }
 
-public void OQOQDQCDCQ() { }
+	public void OQOQDQCDCQ() { }
 
-public List<float> ODQQOQQDOO(Vector3[] tr) { }
+	public List<float> ODQQOQQDOO(Vector3[] tr) { }
 
-public Vector3 OOOOQCODCQ(float offset) { }
+	public Vector3 OOOOQCODCQ(float offset) { }
 
-public static Vector3 OODODQQQCD(Vector3 P0, Vector3 P1, Vector3 P2, Vector3 P3, float t, float tension) { }
+	public static Vector3 OODODQQQCD(Vector3 P0, Vector3 P1, Vector3 P2, Vector3 P3, float t, float tension) { }
 
-public Vector3 OCCDDOCCDQ(int startend, ERCrossingPrefabs prefab) { }
+	public Vector3 OCCDDOCCDQ(int startend, ERCrossingPrefabs prefab) { }
 
-public void OQDQOOQODD(bool lineMask, bool biomeMask) { }
+	public void OQDQOOQODD(bool lineMask, bool biomeMask) { }
 
-public void SetMarkerShape(List<Vector2> conVecs, Vector3 scale, ERCrossingPrefabs prefab, int connectionIndex) { }
+	public void SetMarkerShape(List<Vector2> conVecs, Vector3 scale, ERCrossingPrefabs prefab, int connectionIndex) { }
 
-public void ODQOCQCCDC(ERIndentAlignment value, int marker, ERRoadSide type) { }
+	public void ODQOCQCCDC(ERIndentAlignment value, int marker, ERRoadSide type) { }
 
-public ERIndentAlignment ERGetIndentAlignment(int marker, ERRoadSide type) { }
+	public ERIndentAlignment ERGetIndentAlignment(int marker, ERRoadSide type) { }
 
-public void FlipRoadUVs(bool update) { }
+	public void FlipRoadUVs(bool update) { }
 
-public ERRoadType GetRoadType(ERRoadType[] roadTypes) { }
+	public ERRoadType GetRoadType(ERRoadType[] roadTypes) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

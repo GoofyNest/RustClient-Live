@@ -8,17 +8,17 @@ public class PowerBar : MonoBehaviour // TypeDefIndex: 11202
 	private float progress; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void SetProgress(float newprogress) { }
+	public void SetProgress(float newprogress) { }
 
-public void SetVisible(bool wantsVis) { }
+	public void SetVisible(bool wantsVis) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

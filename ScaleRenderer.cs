@@ -8,19 +8,19 @@ public class ScaleRenderer : MonoBehaviour // TypeDefIndex: 9361
 	public Renderer myRenderer; 
 
 
-private bool ScaleDifferent(float newScale) { }
+	private bool ScaleDifferent(float newScale) { }
 
-public void Start() { }
+	public void Start() { }
 
-public void SetScale(float scale) { }
+	public void SetScale(float scale) { }
 
-public virtual void SetScale_Internal(float scale) { }
+	public virtual void SetScale_Internal(float scale) { }
 
-public virtual void SetRendererEnabled(bool isEnabled) { }
+	public virtual void SetRendererEnabled(bool isEnabled) { }
 
-public virtual void GatherInitialValues() { }
+	public virtual void GatherInitialValues() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -2,10 +2,10 @@ internal class APIUpdaterRuntimeHelpers // TypeDefIndex: 3575
 {
 
 	[RequiredByNativeCodeAttribute] 
-internal static bool GetMovedFromAttributeDataForType(Type sourceType, out string assembly, out string nsp, out string klass) { }
+	internal static bool GetMovedFromAttributeDataForType(Type sourceType, out string assembly, out string nsp, out string klass) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static bool GetObsoleteTypeRedirection(Type sourceType, out string assemblyName, out string nsp, out string className) { }
+	internal static bool GetObsoleteTypeRedirection(Type sourceType, out string assemblyName, out string nsp, out string className) { }
 
 }
 

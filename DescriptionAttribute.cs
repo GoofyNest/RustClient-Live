@@ -3,27 +3,27 @@ public class DescriptionAttribute : Attribute // TypeDefIndex: 2689
 	public static readonly DescriptionAttribute Default; 
 	private string description; 
 
-public virtual string Description { get; }
-protected string DescriptionValue { get; set; }
+	public virtual string Description { get; }
+	protected string DescriptionValue { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string description) { }
+	public void .ctor(string description) { }
 
-public virtual string get_Description() { }
+	public virtual string get_Description() { }
 
-protected string get_DescriptionValue() { }
+	protected string get_DescriptionValue() { }
 
-protected void set_DescriptionValue(string value) { }
+	protected void set_DescriptionValue(string value) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool IsDefaultAttribute() { }
+	public override bool IsDefaultAttribute() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

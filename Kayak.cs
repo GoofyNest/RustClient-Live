@@ -20,40 +20,40 @@ public class Kayak : BaseBoat, IPoolVehicle // TypeDefIndex: 8593
 	private float lastSoundUpdate; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-public void OnPaddled(BaseEntity.RPCMessage msg) { }
+	public void OnPaddled(BaseEntity.RPCMessage msg) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public override void OnClientInput(BasePlayer player) { }
+	public override void OnClientInput(BasePlayer player) { }
 
-public void AnimationSplashEvent(string splashType, BasePlayer forPlayer) { }
+	public void AnimationSplashEvent(string splashType, BasePlayer forPlayer) { }
 
-private string GetEffectPath(bool forward) { }
+	private string GetEffectPath(bool forward) { }
 
-private int GetPlayerSeat_Client(BasePlayer p) { }
+	private int GetPlayerSeat_Client(BasePlayer p) { }
 
-protected override bool CanPushNow(BasePlayer pusher) { }
+	protected override bool CanPushNow(BasePlayer pusher) { }
 
-private bool ShowPushMenu(BasePlayer player) { }
+	private bool ShowPushMenu(BasePlayer player) { }
 
-private void UpdateSounds() { }
+	private void UpdateSounds() { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public bool IsPlayerHoldingPaddle(BasePlayer player) { }
+	public bool IsPlayerHoldingPaddle(BasePlayer player) { }
 
-private Vector3 GetPaddlePoint(int index, Kayak.PaddleDirection direction) { }
+	private Vector3 GetPaddlePoint(int index, Kayak.PaddleDirection direction) { }
 
-private bool IsInWater() { }
+	private bool IsInWater() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -68,10 +68,10 @@ private struct Kayak.PlayerAnimationState // TypeDefIndex: 8594
 private enum Kayak.PaddleDirection // TypeDefIndex: 8595
 {
 	public int value__; 
-public const Kayak.PaddleDirection Left = 0;
-public const Kayak.PaddleDirection Right = 1;
-public const Kayak.PaddleDirection LeftBack = 2;
-public const Kayak.PaddleDirection RightBack = 3;
+	public const Kayak.PaddleDirection Left = 0;
+	public const Kayak.PaddleDirection Right = 1;
+	public const Kayak.PaddleDirection LeftBack = 2;
+	public const Kayak.PaddleDirection RightBack = 3;
 
 }
 

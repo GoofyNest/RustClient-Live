@@ -5,37 +5,37 @@ public class AuthenticationHeaderValue : ICloneable // TypeDefIndex: 5758
 	[CompilerGeneratedAttribute] 
 	private string <Scheme>k__BackingField; 
 
-public string Parameter { get; set; }
-public string Scheme { get; set; }
+	public string Parameter { get; set; }
+	public string Scheme { get; set; }
 
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Parameter() { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Parameter(string value) { }
+	public string get_Parameter() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Scheme() { }
+	private void set_Parameter(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Scheme(string value) { }
+	public string get_Scheme() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Scheme(string value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public static bool TryParse(string input, out AuthenticationHeaderValue parsedValue) { }
+	public override int GetHashCode() { }
 
-internal static bool TryParse(string input, int minimalCount, out List<AuthenticationHeaderValue> result) { }
+	public static bool TryParse(string input, out AuthenticationHeaderValue parsedValue) { }
 
-private static bool TryParseElement(Lexer lexer, out AuthenticationHeaderValue parsedValue, out Token t) { }
+	internal static bool TryParse(string input, int minimalCount, out List<AuthenticationHeaderValue> result) { }
 
-public override string ToString() { }
+	private static bool TryParseElement(Lexer lexer, out AuthenticationHeaderValue parsedValue, out Token t) { }
+
+	public override string ToString() { }
 
 }
 

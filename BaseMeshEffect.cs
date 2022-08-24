@@ -2,22 +2,22 @@ public abstract class BaseMeshEffect : UIBehaviour, IMeshModifier // TypeDefInde
 {
 	private Graphic m_Graphic; 
 
-protected Graphic graphic { get; }
+	protected Graphic graphic { get; }
 
 
-protected Graphic get_graphic() { }
+	protected Graphic get_graphic() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-protected override void OnDidApplyAnimationProperties() { }
+	protected override void OnDidApplyAnimationProperties() { }
 
-public virtual void ModifyMesh(Mesh mesh) { }
+	public virtual void ModifyMesh(Mesh mesh) { }
 
-public abstract void ModifyMesh(VertexHelper vh);
+	public abstract void ModifyMesh(VertexHelper vh);
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

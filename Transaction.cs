@@ -15,60 +15,60 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3983
 	[CompilerGeneratedAttribute] 
 	private TransactionCompletedEventHandler TransactionCompleted; 
 
-internal List<IEnlistmentNotification> Volatiles { get; }
-internal List<ISinglePhaseNotification> Durables { get; }
-public static Transaction Current { get; }
-internal static Transaction CurrentInternal { get; }
-public TransactionInformation TransactionInformation { get; }
-private bool Aborted { set; }
-internal TransactionScope Scope { get; }
+	internal List<IEnlistmentNotification> Volatiles { get; }
+	internal List<ISinglePhaseNotification> Durables { get; }
+	public static Transaction Current { get; }
+	internal static Transaction CurrentInternal { get; }
+	public TransactionInformation TransactionInformation { get; }
+	private bool Aborted { set; }
+	internal TransactionScope Scope { get; }
 
 
-internal List<IEnlistmentNotification> get_Volatiles() { }
+	internal List<IEnlistmentNotification> get_Volatiles() { }
 
-internal List<ISinglePhaseNotification> get_Durables() { }
+	internal List<ISinglePhaseNotification> get_Durables() { }
 
-internal void .ctor() { }
-
-	[MonoTODOAttribute] 
-private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
-
-public static Transaction get_Current() { }
-
-internal static Transaction get_CurrentInternal() { }
-
-public TransactionInformation get_TransactionInformation() { }
-
-public void Dispose() { }
+	internal void .ctor() { }
 
 	[MonoTODOAttribute] 
-public Enlistment EnlistVolatile(IEnlistmentNotification enlistmentNotification, EnlistmentOptions enlistmentOptions) { }
+	private void System.Runtime.Serialization.ISerializable.GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-private Enlistment EnlistVolatileInternal(IEnlistmentNotification notification, EnlistmentOptions options) { }
+	public static Transaction get_Current() { }
 
-public override bool Equals(object obj) { }
+	internal static Transaction get_CurrentInternal() { }
 
-private bool Equals(Transaction t) { }
+	public TransactionInformation get_TransactionInformation() { }
 
-public static bool op_Equality(Transaction x, Transaction y) { }
+	public void Dispose() { }
 
-public static bool op_Inequality(Transaction x, Transaction y) { }
+	[MonoTODOAttribute] 
+	public Enlistment EnlistVolatile(IEnlistmentNotification enlistmentNotification, EnlistmentOptions enlistmentOptions) { }
 
-public override int GetHashCode() { }
+	private Enlistment EnlistVolatileInternal(IEnlistmentNotification notification, EnlistmentOptions options) { }
 
-public void Rollback() { }
+	public override bool Equals(object obj) { }
 
-public void Rollback(Exception e) { }
+	private bool Equals(Transaction t) { }
 
-internal void Rollback(Exception ex, object abortingEnlisted) { }
+	public static bool op_Equality(Transaction x, Transaction y) { }
 
-private void set_Aborted(bool value) { }
+	public static bool op_Inequality(Transaction x, Transaction y) { }
 
-internal TransactionScope get_Scope() { }
+	public override int GetHashCode() { }
 
-private void FireCompleted() { }
+	public void Rollback() { }
 
-private static void EnsureIncompleteCurrentScope() { }
+	public void Rollback(Exception e) { }
+
+	internal void Rollback(Exception ex, object abortingEnlisted) { }
+
+	private void set_Aborted(bool value) { }
+
+	internal TransactionScope get_Scope() { }
+
+	private void FireCompleted() { }
+
+	private static void EnsureIncompleteCurrentScope() { }
 
 }
 

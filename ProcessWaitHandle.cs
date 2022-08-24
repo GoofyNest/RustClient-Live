@@ -9,7 +9,7 @@ public class ProcessThreadCollection : ReadOnlyCollectionBase
 
 internal class ProcessWaitHandle : WaitHandle 
 
-internal void .ctor(SafeProcessHandle processHandle) { }
+	internal void .ctor(SafeProcessHandle processHandle) { }
 
 }
 

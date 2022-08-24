@@ -6,20 +6,20 @@ public class WorldAnchor : Component // TypeDefIndex: 4769
 
 
 	[RequiredByNativeCodeAttribute] 
-private static void Internal_TriggerEventOnTrackingLost(WorldAnchor worldAnchor, bool located) { }
+	private static void Internal_TriggerEventOnTrackingLost(WorldAnchor worldAnchor, bool located) { }
 
 }
 
 public sealed class WorldAnchor.OnTrackingChangedDelegate : MulticastDelegate // TypeDefIndex: 4770
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(WorldAnchor worldAnchor, bool located) { }
+	public virtual void Invoke(WorldAnchor worldAnchor, bool located) { }
 
-public virtual IAsyncResult BeginInvoke(WorldAnchor worldAnchor, bool located, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(WorldAnchor worldAnchor, bool located, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

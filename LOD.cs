@@ -5,7 +5,7 @@ public struct LOD // TypeDefIndex: 3440
 	public Renderer[] renderers; 
 
 
-public void .ctor(float screenRelativeTransitionHeight, Renderer[] renderers) { }
+	public void .ctor(float screenRelativeTransitionHeight, Renderer[] renderers) { }
 
 }
 

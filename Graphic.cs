@@ -27,141 +27,141 @@ public abstract class Graphic : UIBehaviour, ICanvasElement // TypeDefIndex: 493
 	[CompilerGeneratedAttribute] 
 	private bool <useLegacyMeshGeneration>k__BackingField; 
 
-public static Material defaultGraphicMaterial { get; }
-public virtual Color color { get; set; }
-public virtual bool raycastTarget { get; set; }
-protected bool useLegacyMeshGeneration { get; set; }
-public int depth { get; }
-public RectTransform rectTransform { get; }
-public Canvas canvas { get; }
-public CanvasRenderer canvasRenderer { get; }
-public virtual Material defaultMaterial { get; }
-public virtual Material material { get; set; }
-public virtual Material materialForRendering { get; }
-public virtual Texture mainTexture { get; }
-protected static Mesh workerMesh { get; }
+	public static Material defaultGraphicMaterial { get; }
+	public virtual Color color { get; set; }
+	public virtual bool raycastTarget { get; set; }
+	protected bool useLegacyMeshGeneration { get; set; }
+	public int depth { get; }
+	public RectTransform rectTransform { get; }
+	public Canvas canvas { get; }
+	public CanvasRenderer canvasRenderer { get; }
+	public virtual Material defaultMaterial { get; }
+	public virtual Material material { get; set; }
+	public virtual Material materialForRendering { get; }
+	public virtual Texture mainTexture { get; }
+	protected static Mesh workerMesh { get; }
 
 
-public static Material get_defaultGraphicMaterial() { }
+	public static Material get_defaultGraphicMaterial() { }
 
-public virtual Color get_color() { }
+	public virtual Color get_color() { }
 
-public virtual void set_color(Color value) { }
+	public virtual void set_color(Color value) { }
 
-public virtual bool get_raycastTarget() { }
+	public virtual bool get_raycastTarget() { }
 
-public virtual void set_raycastTarget(bool value) { }
-
-	[CompilerGeneratedAttribute] 
-protected bool get_useLegacyMeshGeneration() { }
+	public virtual void set_raycastTarget(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_useLegacyMeshGeneration(bool value) { }
+	protected bool get_useLegacyMeshGeneration() { }
 
-protected void .ctor() { }
+	[CompilerGeneratedAttribute] 
+	protected void set_useLegacyMeshGeneration(bool value) { }
 
-public virtual void SetAllDirty() { }
+	protected void .ctor() { }
 
-public virtual void SetLayoutDirty() { }
+	public virtual void SetAllDirty() { }
 
-public virtual void SetVerticesDirty() { }
+	public virtual void SetLayoutDirty() { }
 
-public virtual void SetMaterialDirty() { }
+	public virtual void SetVerticesDirty() { }
 
-protected override void OnRectTransformDimensionsChange() { }
+	public virtual void SetMaterialDirty() { }
 
-protected override void OnBeforeTransformParentChanged() { }
+	protected override void OnRectTransformDimensionsChange() { }
 
-protected override void OnTransformParentChanged() { }
+	protected override void OnBeforeTransformParentChanged() { }
 
-public int get_depth() { }
+	protected override void OnTransformParentChanged() { }
 
-public RectTransform get_rectTransform() { }
+	public int get_depth() { }
 
-public Canvas get_canvas() { }
+	public RectTransform get_rectTransform() { }
 
-private void CacheCanvas() { }
+	public Canvas get_canvas() { }
 
-public CanvasRenderer get_canvasRenderer() { }
+	private void CacheCanvas() { }
 
-public virtual Material get_defaultMaterial() { }
+	public CanvasRenderer get_canvasRenderer() { }
 
-public virtual Material get_material() { }
+	public virtual Material get_defaultMaterial() { }
 
-public virtual void set_material(Material value) { }
+	public virtual Material get_material() { }
 
-public virtual Material get_materialForRendering() { }
+	public virtual void set_material(Material value) { }
 
-public virtual Texture get_mainTexture() { }
+	public virtual Material get_materialForRendering() { }
 
-protected override void OnEnable() { }
+	public virtual Texture get_mainTexture() { }
 
-protected override void OnDisable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDestroy() { }
+	protected override void OnDisable() { }
 
-protected override void OnCanvasHierarchyChanged() { }
+	protected override void OnDestroy() { }
 
-public virtual void OnCullingChanged() { }
+	protected override void OnCanvasHierarchyChanged() { }
 
-public virtual void Rebuild(CanvasUpdate update) { }
+	public virtual void OnCullingChanged() { }
 
-public virtual void LayoutComplete() { }
+	public virtual void Rebuild(CanvasUpdate update) { }
 
-public virtual void GraphicUpdateComplete() { }
+	public virtual void LayoutComplete() { }
 
-protected virtual void UpdateMaterial() { }
+	public virtual void GraphicUpdateComplete() { }
 
-protected virtual void UpdateGeometry() { }
+	protected virtual void UpdateMaterial() { }
 
-private void DoMeshGeneration() { }
+	protected virtual void UpdateGeometry() { }
 
-private void DoLegacyMeshGeneration() { }
+	private void DoMeshGeneration() { }
 
-protected static Mesh get_workerMesh() { }
+	private void DoLegacyMeshGeneration() { }
+
+	protected static Mesh get_workerMesh() { }
 
 	[EditorBrowsableAttribute] 
 	[ObsoleteAttribute] 
-protected virtual void OnFillVBO(List<UIVertex> vbo) { }
+	protected virtual void OnFillVBO(List<UIVertex> vbo) { }
 
 	[ObsoleteAttribute] 
-protected virtual void OnPopulateMesh(Mesh m) { }
+	protected virtual void OnPopulateMesh(Mesh m) { }
 
-protected virtual void OnPopulateMesh(VertexHelper vh) { }
+	protected virtual void OnPopulateMesh(VertexHelper vh) { }
 
-protected override void OnDidApplyAnimationProperties() { }
+	protected override void OnDidApplyAnimationProperties() { }
 
-public virtual void SetNativeSize() { }
+	public virtual void SetNativeSize() { }
 
-public virtual bool Raycast(Vector2 sp, Camera eventCamera) { }
+	public virtual bool Raycast(Vector2 sp, Camera eventCamera) { }
 
-public Vector2 PixelAdjustPoint(Vector2 point) { }
+	public Vector2 PixelAdjustPoint(Vector2 point) { }
 
-public Rect GetPixelAdjustedRect() { }
+	public Rect GetPixelAdjustedRect() { }
 
-public virtual void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) { }
+	public virtual void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha) { }
 
-public virtual void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha, bool useRGB) { }
+	public virtual void CrossFadeColor(Color targetColor, float duration, bool ignoreTimeScale, bool useAlpha, bool useRGB) { }
 
-private static Color CreateColorFromAlpha(float alpha) { }
+	private static Color CreateColorFromAlpha(float alpha) { }
 
-public virtual void CrossFadeAlpha(float alpha, float duration, bool ignoreTimeScale) { }
+	public virtual void CrossFadeAlpha(float alpha, float duration, bool ignoreTimeScale) { }
 
-public void RegisterDirtyLayoutCallback(UnityAction action) { }
+	public void RegisterDirtyLayoutCallback(UnityAction action) { }
 
-public void UnregisterDirtyLayoutCallback(UnityAction action) { }
+	public void UnregisterDirtyLayoutCallback(UnityAction action) { }
 
-public void RegisterDirtyVerticesCallback(UnityAction action) { }
+	public void RegisterDirtyVerticesCallback(UnityAction action) { }
 
-public void UnregisterDirtyVerticesCallback(UnityAction action) { }
+	public void UnregisterDirtyVerticesCallback(UnityAction action) { }
 
-public void RegisterDirtyMaterialCallback(UnityAction action) { }
+	public void RegisterDirtyMaterialCallback(UnityAction action) { }
 
-public void UnregisterDirtyMaterialCallback(UnityAction action) { }
+	public void UnregisterDirtyMaterialCallback(UnityAction action) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-private Transform UnityEngine.UI.ICanvasElement.get_transform() { }
+	private Transform UnityEngine.UI.ICanvasElement.get_transform() { }
 
 }
 

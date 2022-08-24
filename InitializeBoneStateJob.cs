@@ -8,7 +8,7 @@ internal struct InitializeBoneStateJob : IJobParallelForTransform // TypeDefInde
 	public NativeArray<BoneState> State; 
 
 
-public void Execute(int index, TransformAccess transform) { }
+	public void Execute(int index, TransformAccess transform) { }
 
 }
 

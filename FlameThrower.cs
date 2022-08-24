@@ -31,49 +31,49 @@ public class FlameThrower : AttackEntity // TypeDefIndex: 8568
 	private bool firing; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private bool IsWeaponBusy() { }
+	private bool IsWeaponBusy() { }
 
-private void SetBusyFor(float dur) { }
+	private void SetBusyFor(float dur) { }
 
-private void ClearBusy() { }
+	private void ClearBusy() { }
 
-public void ReduceAmmo(float firingTime) { }
+	public void ReduceAmmo(float firingTime) { }
 
-public void PilotLightToggle_Shared() { }
+	public void PilotLightToggle_Shared() { }
 
-public bool IsPilotOn() { }
+	public bool IsPilotOn() { }
 
-public bool IsFlameOn() { }
+	public bool IsFlameOn() { }
 
-public bool HasAmmo() { }
+	public bool HasAmmo() { }
 
-public Item GetAmmo() { }
+	public Item GetAmmo() { }
 
-public Sound GetFlameLoopSound() { }
+	public Sound GetFlameLoopSound() { }
 
-public Sound GetPilotLoopSound() { }
+	public Sound GetPilotLoopSound() { }
 
-public void Update() { }
+	public void Update() { }
 
-private void UpdateSounds(bool isFirstPerson = False) { }
+	private void UpdateSounds(bool isFirstPerson = False) { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public void UpdateFlameStateFirstPerson() { }
+	public void UpdateFlameStateFirstPerson() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public override void OnHolstered() { }
+	public override void OnHolstered() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override void GetItemOptions(List<Option> options) { }
+	public override void GetItemOptions(List<Option> options) { }
 
-protected virtual void UpdateAmmoDisplay() { }
+	protected virtual void UpdateAmmoDisplay() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

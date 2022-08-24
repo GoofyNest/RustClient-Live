@@ -7,18 +7,18 @@ public class ResourceDispenser : EntityComponent<BaseEntity>, IServerComponent /
 	public float fractionRemaining; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ResourceDispenser.GatherType // TypeDefIndex: 9505
 {
 	public int value__; 
-public const ResourceDispenser.GatherType Tree = 0;
-public const ResourceDispenser.GatherType Ore = 1;
-public const ResourceDispenser.GatherType Flesh = 2;
-public const ResourceDispenser.GatherType UNSET = 3;
-public const ResourceDispenser.GatherType LAST = 4;
+	public const ResourceDispenser.GatherType Tree = 0;
+	public const ResourceDispenser.GatherType Ore = 1;
+	public const ResourceDispenser.GatherType Flesh = 2;
+	public const ResourceDispenser.GatherType UNSET = 3;
+	public const ResourceDispenser.GatherType LAST = 4;
 
 }
 
@@ -29,7 +29,7 @@ public class ResourceDispenser.GatherPropertyEntry // TypeDefIndex: 9506
 	public float conditionLost; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -40,15 +40,15 @@ public class ResourceDispenser.GatherProperties // TypeDefIndex: 9507
 	public ResourceDispenser.GatherPropertyEntry Flesh; 
 
 
-public float GetProficiency() { }
+	public float GetProficiency() { }
 
-public bool Any() { }
+	public bool Any() { }
 
-public ResourceDispenser.GatherPropertyEntry GetFromIndex(int index) { }
+	public ResourceDispenser.GatherPropertyEntry GetFromIndex(int index) { }
 
-public ResourceDispenser.GatherPropertyEntry GetFromIndex(ResourceDispenser.GatherType index) { }
+	public ResourceDispenser.GatherPropertyEntry GetFromIndex(ResourceDispenser.GatherType index) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

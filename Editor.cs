@@ -16,31 +16,31 @@ public struct Editor // TypeDefIndex: 5274
 	private Dictionary<string, List<string>> KeyValueTags; 
 	private HashSet<string> KeyValueTagsToRemove; 
 
-public static Editor NewMicrotransactionFile { get; }
+	public static Editor NewMicrotransactionFile { get; }
 
 
-internal void .ctor(WorkshopFileType filetype) { }
+	internal void .ctor(WorkshopFileType filetype) { }
 
-public void .ctor(PublishedFileId fileId) { }
+	public void .ctor(PublishedFileId fileId) { }
 
-public static Editor get_NewMicrotransactionFile() { }
+	public static Editor get_NewMicrotransactionFile() { }
 
-public Editor WithTitle(string t) { }
+	public Editor WithTitle(string t) { }
 
-public Editor WithChangeLog(string t) { }
+	public Editor WithChangeLog(string t) { }
 
-public Editor WithPreviewFile(string t) { }
+	public Editor WithPreviewFile(string t) { }
 
-public Editor WithContent(DirectoryInfo t) { }
+	public Editor WithContent(DirectoryInfo t) { }
 
-public Editor WithContent(string folderName) { }
+	public Editor WithContent(string folderName) { }
 
-public Editor WithPublicVisibility() { }
+	public Editor WithPublicVisibility() { }
 
-public Editor WithTag(string tag) { }
+	public Editor WithTag(string tag) { }
 
 	[AsyncStateMachineAttribute] 
-public Task<PublishResult> SubmitAsync(IProgress<float> progress, Action<PublishResult> onItemCreated) { }
+	public Task<PublishResult> SubmitAsync(IProgress<float> progress, Action<PublishResult> onItemCreated) { }
 
 }
 
@@ -58,17 +58,17 @@ private struct Editor.<SubmitAsync>d__40 : IAsyncStateMachine // TypeDefIndex: 5
 	private TaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
 public class Editor : ConsoleSystem // TypeDefIndex: 11905
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,11 +5,11 @@ public class DecayPoint : PrefabAttribute // TypeDefIndex: 9064
 	public Socket_Base socket; 
 
 
-public bool IsOccupied(BaseEntity entity) { }
+	public bool IsOccupied(BaseEntity entity) { }
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

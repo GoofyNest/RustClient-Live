@@ -5,17 +5,17 @@ public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeD
 	public ParticleSystemContainer.ParticleSystemGroup[] particleGroups; 
 
 
-public void Play() { }
+	public void Play() { }
 
-public void Pause() { }
+	public void Pause() { }
 
-public void Stop() { }
+	public void Stop() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

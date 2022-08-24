@@ -17,27 +17,27 @@ internal class PersistentCall // TypeDefIndex: 3635
 	[FormerlySerializedAsAttribute] 
 	private UnityEventCallState m_CallState; 
 
-public Object target { get; }
-public string methodName { get; }
-public PersistentListenerMode mode { get; }
-public ArgumentCache arguments { get; }
+	public Object target { get; }
+	public string methodName { get; }
+	public PersistentListenerMode mode { get; }
+	public ArgumentCache arguments { get; }
 
 
-public Object get_target() { }
+	public Object get_target() { }
 
-public string get_methodName() { }
+	public string get_methodName() { }
 
-public PersistentListenerMode get_mode() { }
+	public PersistentListenerMode get_mode() { }
 
-public ArgumentCache get_arguments() { }
+	public ArgumentCache get_arguments() { }
 
-public bool IsValid() { }
+	public bool IsValid() { }
 
-public BaseInvokableCall GetRuntimeCall(UnityEventBase theEvent) { }
+	public BaseInvokableCall GetRuntimeCall(UnityEventBase theEvent) { }
 
-private static BaseInvokableCall GetObjectCall(Object target, MethodInfo method, ArgumentCache arguments) { }
+	private static BaseInvokableCall GetObjectCall(Object target, MethodInfo method, ArgumentCache arguments) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

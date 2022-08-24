@@ -1,9 +1,9 @@
 public class OCOCDDODDQ : MonoBehaviour // TypeDefIndex: 7294
 {
 
-public static void OQCODQOCQD(ERSideWalk sw, ref List<Vector3> vecs, Vector3 startVec, int rows, int closedVecCountStart, int closedVecCountEnd, int startEnd) { }
+	public static void OQCODQOCQD(ERSideWalk sw, ref List<Vector3> vecs, Vector3 startVec, int rows, int closedVecCountStart, int closedVecCountEnd, int startEnd) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

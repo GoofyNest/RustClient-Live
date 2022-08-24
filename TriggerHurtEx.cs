@@ -20,15 +20,15 @@ public class TriggerHurtEx : TriggerBase, IServerComponent, IHurtTrigger // Type
 	public bool damageEnabled; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum TriggerHurtEx.HurtType // TypeDefIndex: 10714
 {
 	public int value__; 
-public const TriggerHurtEx.HurtType Simple = 0;
-public const TriggerHurtEx.HurtType IncludeBleedingAndScreenShake = 1;
+	public const TriggerHurtEx.HurtType Simple = 0;
+	public const TriggerHurtEx.HurtType IncludeBleedingAndScreenShake = 1;
 
 }
 

@@ -25,59 +25,59 @@ internal sealed class ReflectPropertyDescriptor : PropertyDescriptor // TypeDefI
 	private EventDescriptor realChangedEvent; 
 	private Type receiverType; 
 
-public override Type ComponentType { get; }
-private object DefaultValue { get; }
-private MethodInfo GetMethodValue { get; }
-private bool IsExtender { get; }
-public override bool IsReadOnly { get; }
-public override Type PropertyType { get; }
-private MethodInfo SetMethodValue { get; }
-private MethodInfo ShouldSerializeMethodValue { get; }
+	public override Type ComponentType { get; }
+	private object DefaultValue { get; }
+	private MethodInfo GetMethodValue { get; }
+	private bool IsExtender { get; }
+	public override bool IsReadOnly { get; }
+	public override Type PropertyType { get; }
+	private MethodInfo SetMethodValue { get; }
+	private MethodInfo ShouldSerializeMethodValue { get; }
 
 
-public void .ctor(Type componentClass, string name, Type type, Attribute[] attributes) { }
+	public void .ctor(Type componentClass, string name, Type type, Attribute[] attributes) { }
 
-public void .ctor(Type componentClass, string name, Type type, PropertyInfo propInfo, MethodInfo getMethod, MethodInfo setMethod, Attribute[] attrs) { }
+	public void .ctor(Type componentClass, string name, Type type, PropertyInfo propInfo, MethodInfo getMethod, MethodInfo setMethod, Attribute[] attrs) { }
 
-public void .ctor(Type componentClass, string name, Type type, Type receiverType, MethodInfo getMethod, MethodInfo setMethod, Attribute[] attrs) { }
+	public void .ctor(Type componentClass, string name, Type type, Type receiverType, MethodInfo getMethod, MethodInfo setMethod, Attribute[] attrs) { }
 
-public override Type get_ComponentType() { }
+	public override Type get_ComponentType() { }
 
-private object get_DefaultValue() { }
+	private object get_DefaultValue() { }
 
-private MethodInfo get_GetMethodValue() { }
+	private MethodInfo get_GetMethodValue() { }
 
-private bool get_IsExtender() { }
+	private bool get_IsExtender() { }
 
-public override bool get_IsReadOnly() { }
+	public override bool get_IsReadOnly() { }
 
-public override Type get_PropertyType() { }
+	public override Type get_PropertyType() { }
 
-private MethodInfo get_SetMethodValue() { }
+	private MethodInfo get_SetMethodValue() { }
 
-private MethodInfo get_ShouldSerializeMethodValue() { }
+	private MethodInfo get_ShouldSerializeMethodValue() { }
 
-internal Type ExtenderGetReceiverType() { }
+	internal Type ExtenderGetReceiverType() { }
 
-internal Type ExtenderGetType(IExtenderProvider provider) { }
+	internal Type ExtenderGetType(IExtenderProvider provider) { }
 
-internal object ExtenderGetValue(IExtenderProvider provider, object component) { }
+	internal object ExtenderGetValue(IExtenderProvider provider, object component) { }
 
-internal void ExtenderSetValue(IExtenderProvider provider, object component, object value, PropertyDescriptor notifyDesc) { }
+	internal void ExtenderSetValue(IExtenderProvider provider, object component, object value, PropertyDescriptor notifyDesc) { }
 
-internal bool ExtenderShouldSerializeValue(IExtenderProvider provider, object component) { }
+	internal bool ExtenderShouldSerializeValue(IExtenderProvider provider, object component) { }
 
-protected override void FillAttributes(IList attributes) { }
+	protected override void FillAttributes(IList attributes) { }
 
-public override object GetValue(object component) { }
+	public override object GetValue(object component) { }
 
-protected override void OnValueChanged(object component, EventArgs e) { }
+	protected override void OnValueChanged(object component, EventArgs e) { }
 
-public override void SetValue(object component, object value) { }
+	public override void SetValue(object component, object value) { }
 
-public override bool ShouldSerializeValue(object component) { }
+	public override bool ShouldSerializeValue(object component) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

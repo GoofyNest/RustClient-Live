@@ -5,21 +5,21 @@ internal class CircularByteBuffer // TypeDefIndex: 7386
 	private int _Length; 
 	private int _NumValid; 
 
-internal byte Item { get; }
-internal int NumValid { get; }
+	internal byte Item { get; }
+	internal int NumValid { get; }
 
 
-internal void .ctor(int size) { }
+	internal void .ctor(int size) { }
 
-internal byte get_Item(int index) { }
+	internal byte get_Item(int index) { }
 
-internal int get_NumValid() { }
+	internal int get_NumValid() { }
 
-internal byte Push(byte newValue) { }
+	internal byte Push(byte newValue) { }
 
-private byte InternalGet(int offset) { }
+	private byte InternalGet(int offset) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

@@ -3,40 +3,40 @@ internal class CFObject : IDisposable // TypeDefIndex: 2513
 	[CompilerGeneratedAttribute] 
 	private IntPtr <Handle>k__BackingField; 
 
-public IntPtr Handle { get; set; }
+	public IntPtr Handle { get; set; }
 
 
-public static extern IntPtr dlopen(string path, int mode) { }
+	public static extern IntPtr dlopen(string path, int mode) { }
 
-private static extern IntPtr dlsym(IntPtr handle, string symbol) { }
+	private static extern IntPtr dlsym(IntPtr handle, string symbol) { }
 
-public static extern void dlclose(IntPtr handle) { }
+	public static extern void dlclose(IntPtr handle) { }
 
-public static IntPtr GetIndirect(IntPtr handle, string symbol) { }
+	public static IntPtr GetIndirect(IntPtr handle, string symbol) { }
 
-public static IntPtr GetCFObjectHandle(IntPtr handle, string symbol) { }
+	public static IntPtr GetCFObjectHandle(IntPtr handle, string symbol) { }
 
-public void .ctor(IntPtr handle, bool own) { }
+	public void .ctor(IntPtr handle, bool own) { }
 
-protected override void Finalize() { }
-
-	[CompilerGeneratedAttribute] 
-public IntPtr get_Handle() { }
+	protected override void Finalize() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Handle(IntPtr value) { }
+	public IntPtr get_Handle() { }
 
-internal static extern IntPtr CFRetain(IntPtr handle) { }
+	[CompilerGeneratedAttribute] 
+	private void set_Handle(IntPtr value) { }
 
-private void Retain() { }
+	internal static extern IntPtr CFRetain(IntPtr handle) { }
 
-internal static extern void CFRelease(IntPtr handle) { }
+	private void Retain() { }
 
-private void Release() { }
+	internal static extern void CFRelease(IntPtr handle) { }
 
-protected virtual void Dispose(bool disposing) { }
+	private void Release() { }
 
-public void Dispose() { }
+	protected virtual void Dispose(bool disposing) { }
+
+	public void Dispose() { }
 
 }
 

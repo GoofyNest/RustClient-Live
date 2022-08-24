@@ -1,7 +1,7 @@
 public class EZSoftBone : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 7128
 {
-public const float DeltaTime_Min = 1E-06;
-public const int MaxInstanceCount = 12;
+	public const float DeltaTime_Min = 1E-06;
+	public const int MaxInstanceCount = 12;
 	private static float CurrentFrame; 
 	private static int InstanceNumber; 
 	[FormerlySerializedAsAttribute] 
@@ -58,81 +58,81 @@ public const int MaxInstanceCount = 12;
 	private bool isVisible; 
 	private Vector3 forceDirection; 
 
-public EZSoftBoneMaterial sharedMaterial { get; set; }
-public Transform simulateSpace { get; set; }
+	public EZSoftBoneMaterial sharedMaterial { get; set; }
+	public Transform simulateSpace { get; set; }
 
 
-public EZSoftBoneMaterial get_sharedMaterial() { }
+	public EZSoftBoneMaterial get_sharedMaterial() { }
 
-public void set_sharedMaterial(EZSoftBoneMaterial value) { }
+	public void set_sharedMaterial(EZSoftBoneMaterial value) { }
 
-public Transform get_simulateSpace() { }
+	public Transform get_simulateSpace() { }
 
-public void set_simulateSpace(Transform value) { }
+	public void set_simulateSpace(Transform value) { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void RevertTransforms() { }
+	public void RevertTransforms() { }
 
-public void RevertTransforms(int startDepth) { }
+	public void RevertTransforms(int startDepth) { }
 
-public void InitStructures(bool force = False) { }
+	public void InitStructures(bool force = False) { }
 
-public void SetRestState() { }
+	public void SetRestState() { }
 
-private void CreateBones() { }
+	private void CreateBones() { }
 
-private void SetParentBones() { }
+	private void SetParentBones() { }
 
-private void SetSiblings() { }
+	private void SetSiblings() { }
 
-private void SetTreeLength() { }
+	private void SetTreeLength() { }
 
-public void RefreshRadius() { }
+	public void RefreshRadius() { }
 
-private void UpdateStructures(float deltaTime) { }
+	private void UpdateStructures(float deltaTime) { }
 
-private void UpdateBones(EZSoftBone.Bone bone, float deltaTime) { }
+	private void UpdateBones(EZSoftBone.Bone bone, float deltaTime) { }
 
-private void UpdateTransforms() { }
+	private void UpdateTransforms() { }
 
-private void UpdateSimulationSpace(Transform transform) { }
+	private void UpdateSimulationSpace(Transform transform) { }
 
-public void PushBonesOutOfDeadZone() { }
+	public void PushBonesOutOfDeadZone() { }
 
-public void PlayerPreviewVisibility(bool isVisible) { }
+	public void PlayerPreviewVisibility(bool isVisible) { }
 
-public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-internal static bool <SetSiblings>g__HasBoneAtDepth|55_1(EZSoftBone.BoneChain chain, int depth) { }
+	internal static bool <SetSiblings>g__HasBoneAtDepth|55_1(EZSoftBone.BoneChain chain, int depth) { }
 
 }
 
 public enum EZSoftBone.UnificationMode // TypeDefIndex: 7129
 {
 	public int value__; 
-public const EZSoftBone.UnificationMode None = 0;
-public const EZSoftBone.UnificationMode Rooted = 1;
-public const EZSoftBone.UnificationMode Unified = 2;
+	public const EZSoftBone.UnificationMode None = 0;
+	public const EZSoftBone.UnificationMode Rooted = 1;
+	public const EZSoftBone.UnificationMode Unified = 2;
 
 }
 
 public enum EZSoftBone.DeltaTimeMode // TypeDefIndex: 7130
 {
 	public int value__; 
-public const EZSoftBone.DeltaTimeMode DeltaTime = 0;
-public const EZSoftBone.DeltaTimeMode SmoothDeltaTime = 1;
-public const EZSoftBone.DeltaTimeMode UnscaledDeltaTime = 2;
-public const EZSoftBone.DeltaTimeMode Constant = 3;
+	public const EZSoftBone.DeltaTimeMode DeltaTime = 0;
+	public const EZSoftBone.DeltaTimeMode SmoothDeltaTime = 1;
+	public const EZSoftBone.DeltaTimeMode UnscaledDeltaTime = 2;
+	public const EZSoftBone.DeltaTimeMode Constant = 3;
 
 }
 
@@ -141,9 +141,9 @@ private class EZSoftBone.BoneChain // TypeDefIndex: 7131
 	public EZSoftBone.Bone[] childBones; 
 
 
-public void .ctor(Transform origin, Transform systemSpace, Transform transform, List<Transform> endBones, int startDepth) { }
+	public void .ctor(Transform origin, Transform systemSpace, Transform transform, List<Transform> endBones, int startDepth) { }
 
-public void InitializeParents() { }
+	public void InitializeParents() { }
 
 }
 
@@ -176,27 +176,27 @@ private class EZSoftBone.Bone // TypeDefIndex: 7132
 	public Vector3 speed; 
 
 
-public void .ctor(Transform systemSpace, Transform transform, int depth, float boneLength) { }
+	public void .ctor(Transform systemSpace, Transform transform, int depth, float boneLength) { }
 
-public void SetTreeLength() { }
+	public void SetTreeLength() { }
 
-public void SetTreeLength(float treeLength) { }
+	public void SetTreeLength(float treeLength) { }
 
-public void SetLeftSibling(EZSoftBone.Bone left) { }
+	public void SetLeftSibling(EZSoftBone.Bone left) { }
 
-public void SetRightSibling(EZSoftBone.Bone right) { }
+	public void SetRightSibling(EZSoftBone.Bone right) { }
 
-public void Inflate(float baseRadius, AnimationCurve radiusCurve) { }
+	public void Inflate(float baseRadius, AnimationCurve radiusCurve) { }
 
-public void Inflate(float baseRadius, AnimationCurve radiusCurve, EZSoftBoneMaterial material) { }
+	public void Inflate(float baseRadius, AnimationCurve radiusCurve, EZSoftBoneMaterial material) { }
 
-public void RevertTransforms(int startDepth) { }
+	public void RevertTransforms(int startDepth) { }
 
-public void UpdateTransform(bool siblingRotationConstraints, int startDepth) { }
+	public void UpdateTransform(bool siblingRotationConstraints, int startDepth) { }
 
-public void SetRestState() { }
+	public void SetRestState() { }
 
-public void UpdateSpace() { }
+	public void UpdateSpace() { }
 
 }
 
@@ -206,11 +206,11 @@ private sealed class EZSoftBone.<>c // TypeDefIndex: 7133
 	public static Func<EZSoftBone.BoneChain, int> <>9__55_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <SetSiblings>b__55_0(EZSoftBone.BoneChain c) { }
+	internal int <SetSiblings>b__55_0(EZSoftBone.BoneChain c) { }
 
 }
 

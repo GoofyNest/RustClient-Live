@@ -11,7 +11,7 @@ public class CoverageQueryFlare : BaseMonoBehaviour, IClientComponent, IOnParent
 	public CoverageQueries.RadiusSpace coverageRadiusSpace; 
 	public float coverageRadius; 
 	public LODDistanceMode DistanceMode; 
-private const float tickRate = 0,03030303;
+	private const float tickRate = 0,03030303;
 	private static MaterialPropertyBlock block; 
 	private bool isCulled; 
 	private bool isOccluded; 
@@ -33,50 +33,50 @@ private const float tickRate = 0,03030303;
 	private readonly int ColorMultID; 
 	private LODEnvironmentMode EnvironmentMode; 
 
-public float CurrentDistance { get; }
+	public float CurrentDistance { get; }
 
 
-public float get_CurrentDistance() { }
+	public float get_CurrentDistance() { }
 
-private float GetDistance() { }
+	private float GetDistance() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-private int GetLOD(float distance) { }
+	private int GetLOD(float distance) { }
 
-private void SetLOD(int newlod) { }
+	private void SetLOD(int newlod) { }
 
-private void Show() { }
+	private void Show() { }
 
-private void Hide() { }
+	private void Hide() { }
 
-private void ShowRenderers() { }
+	private void ShowRenderers() { }
 
-private void HideRenderers() { }
+	private void HideRenderers() { }
 
-public void OnParentDestroying() { }
+	public void OnParentDestroying() { }
 
-public void Tick() { }
+	public void Tick() { }
 
-private void UpdateMaterialProperties() { }
+	private void UpdateMaterialProperties() { }
 
-public float SampleVisibility() { }
+	public float SampleVisibility() { }
 
-public void SetFlareIntensity(float intensity) { }
+	public void SetFlareIntensity(float intensity) { }
 
-private void RegisterCoverageQuery() { }
+	private void RegisterCoverageQuery() { }
 
-private void UnRegisterCoverageQuery() { }
+	private void UnRegisterCoverageQuery() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

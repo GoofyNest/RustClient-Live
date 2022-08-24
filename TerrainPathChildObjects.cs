@@ -11,11 +11,11 @@ public class TerrainPathChildObjects : MonoBehaviour // TypeDefIndex: 10362
 	public InfrastructureType Type; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnDrawGizmos() { }
+	protected void OnDrawGizmos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

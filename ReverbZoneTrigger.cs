@@ -27,35 +27,35 @@ public class ReverbZoneTrigger : TriggerBase, IClientComponentEx, ILOD, ISoundBu
 	private int roomLF; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-public void DoUpdate() { }
+	public void DoUpdate() { }
 
-private void ApplyReverbSettings() { }
+	private void ApplyReverbSettings() { }
 
-private void DisableReverbZone() { }
+	private void DisableReverbZone() { }
 
-private void EnableReverbZone() { }
+	private void EnableReverbZone() { }
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-internal override void OnEntityEnter(BaseEntity ent) { }
+	internal override void OnEntityEnter(BaseEntity ent) { }
 
-internal override void OnEntityLeave(BaseEntity ent) { }
+	internal override void OnEntityLeave(BaseEntity ent) { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-public virtual void PreClientComponentCull(IPrefabProcessor p) { }
+	public virtual void PreClientComponentCull(IPrefabProcessor p) { }
 
-public bool IsSyncedToParent() { }
+	public bool IsSyncedToParent() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

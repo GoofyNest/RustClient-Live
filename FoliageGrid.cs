@@ -11,55 +11,55 @@ public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // 
 	private Vector3 prevPosition; 
 	private Stopwatch watch; 
 
-public static float MaxRefreshDistance { get; }
-public bool Initialized { get; }
-public float MaxMilliseconds { get; }
-public FoliageCell Item { get; }
-public bool NeedsTimeout { get; }
+	public static float MaxRefreshDistance { get; }
+	public bool Initialized { get; }
+	public float MaxMilliseconds { get; }
+	public FoliageCell Item { get; }
+	public bool NeedsTimeout { get; }
 
 
-public static float get_MaxRefreshDistance() { }
+	public static float get_MaxRefreshDistance() { }
 
-public bool get_Initialized() { }
+	public bool get_Initialized() { }
 
-public float get_MaxMilliseconds() { }
+	public float get_MaxMilliseconds() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public static void RefreshAll(bool force = False) { }
+	public static void RefreshAll(bool force = False) { }
 
-public void Refresh(bool force = False) { }
+	public void Refresh(bool force = False) { }
 
-public FoliageCell get_Item(Vector3 worldPos) { }
+	public FoliageCell get_Item(Vector3 worldPos) { }
 
-private void Init() { }
+	private void Init() { }
 
-public FoliageGridBatch CreateInstance() { }
+	public FoliageGridBatch CreateInstance() { }
 
-public void RecycleInstance(FoliageGridBatch instance) { }
+	public void RecycleInstance(FoliageGridBatch instance) { }
 
-public void AddPlacement(FoliagePlacement placement) { }
+	public void AddPlacement(FoliagePlacement placement) { }
 
-public int MeshCount() { }
+	public int MeshCount() { }
 
-public int BatchedMeshCount() { }
+	public int BatchedMeshCount() { }
 
-public int VertexCount() { }
+	public int VertexCount() { }
 
-public bool get_NeedsTimeout() { }
+	public bool get_NeedsTimeout() { }
 
-public void ResetTimeout() { }
+	public void ResetTimeout() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator UpdateCoroutine() { }
+	private IEnumerator UpdateCoroutine() { }
 
-private bool NeedsUpdate() { }
+	private bool NeedsUpdate() { }
 
-private Vector2i GetCurrentCellCoordinates() { }
+	private Vector2i GetCurrentCellCoordinates() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -73,26 +73,26 @@ private sealed class FoliageGrid.<UpdateCoroutine>d__31 : IEnumerator<object>, I
 	private List<IEnumerator> <enumerators>5__4; 
 	private int <i>5__5; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

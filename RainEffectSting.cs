@@ -1,9 +1,9 @@
 public class RainEffectSting : WeatherEffectSting // TypeDefIndex: 10075
 {
 
-protected override float GetCurrentIntensity() { }
+	protected override float GetCurrentIntensity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

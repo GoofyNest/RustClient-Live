@@ -8,13 +8,13 @@ public class HudMenuInput : ListComponent<HudMenuInput>
 	private RustInput rustInput; 
 
 
-public static bool AnyActive() { }
+	public static bool AnyActive() { }
 
-private void Start() { }
+	private void Start() { }
 
-private bool IsCurrentlyActive() { }
+	private bool IsCurrentlyActive() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

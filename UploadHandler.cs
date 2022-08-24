@@ -2,24 +2,24 @@ public class UploadHandler : IDisposable // TypeDefIndex: 4134
 {
 	internal IntPtr m_Ptr; 
 
-public string contentType { set; }
+	public string contentType { set; }
 
 
 	[NativeMethodAttribute] 
-private void Release() { }
+	private void Release() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public void set_contentType(string value) { }
+	public void set_contentType(string value) { }
 
-internal virtual void SetContentType(string newContentType) { }
+	internal virtual void SetContentType(string newContentType) { }
 
 	[NativeMethodAttribute] 
-private void InternalSetContentType(string newContentType) { }
+	private void InternalSetContentType(string newContentType) { }
 
 }
 

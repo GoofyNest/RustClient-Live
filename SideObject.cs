@@ -223,37 +223,37 @@ public class SideObject : ScriptableObject // TypeDefIndex: 7189
 	public bool isUsedAsChild; 
 
 
-public void SetSideObject(int count, int scategory) { }
+	public void SetSideObject(int count, int scategory) { }
 
-public void UpdateTimeStamp() { }
+	public void UpdateTimeStamp() { }
 
-public void OOCCDCDOQC() { }
+	public void OOCCDCDOQC() { }
 
-public void OQOQOQOODC() { }
+	public void OQOQOQOODC() { }
 
-public void SetMaxVertices() { }
+	public void SetMaxVertices() { }
 
-public static bool CheckSOChildActive(List<ERSOSection> sections, SideObject so) { }
+	public static bool CheckSOChildActive(List<ERSOSection> sections, SideObject so) { }
 
-public void OOOCDOQOOC(bool updateTimeStamp) { }
+	public void OOOCDOQOOC(bool updateTimeStamp) { }
 
-public void OQDODCOODC() { }
+	public void OQDODCOODC() { }
 
-public void OQDDDDOOQD(Vector3 m_testMeshPos, bool updateTimeStamp) { }
+	public void OQDDDDOOQD(Vector3 m_testMeshPos, bool updateTimeStamp) { }
 
-private void OQOODQQQQC(List<Vector3> vecs, float startDistance, List<Vector3> vecs1, float endDistance, ref List<int> startArray, ref List<int> endArray, int section) { }
+	private void OQOODQQQQC(List<Vector3> vecs, float startDistance, List<Vector3> vecs1, float endDistance, ref List<int> startArray, ref List<int> endArray, int section) { }
 
-private float OQQDDOCDDQ(List<GameObject> goObjects, bool rotate180) { }
+	private float OQQDDOCDDQ(List<GameObject> goObjects, bool rotate180) { }
 
-private bool HasMissingData(ERMesh meshData, ERMesh meshData2, int ignore) { }
+	private bool HasMissingData(ERMesh meshData, ERMesh meshData2, int ignore) { }
 
-public void OODOOOQQCO(SideObject so) { }
+	public void OODOOOQQCO(SideObject so) { }
 
-public void OCDOCDQQQO(SideObjectLog so) { }
+	public void OCDOCDQQQO(SideObjectLog so) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

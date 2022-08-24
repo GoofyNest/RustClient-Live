@@ -10,11 +10,11 @@ internal static class MusicalTimeSpanParser // TypeDefIndex: 7488
 	private static readonly string[] Patterns; 
 
 
-internal static ParsingResult TryParse(string input, out MusicalTimeSpan timeSpan) { }
+	internal static ParsingResult TryParse(string input, out MusicalTimeSpan timeSpan) { }
 
-private static string GetMnemonicGroup(string groupName, IEnumerable<string> mnemonics) { }
+	private static string GetMnemonicGroup(string groupName, IEnumerable<string> mnemonics) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

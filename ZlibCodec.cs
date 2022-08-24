@@ -17,27 +17,27 @@ public sealed class ZlibCodec // TypeDefIndex: 6966
 	public CompressionStrategy Strategy; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public int InitializeInflate(bool expectRfc1950Header) { }
+	public int InitializeInflate(bool expectRfc1950Header) { }
 
-public int InitializeInflate(int windowBits, bool expectRfc1950Header) { }
+	public int InitializeInflate(int windowBits, bool expectRfc1950Header) { }
 
-public int Inflate(FlushType flush) { }
+	public int Inflate(FlushType flush) { }
 
-public int EndInflate() { }
+	public int EndInflate() { }
 
-public int InitializeDeflate(CompressionLevel level, bool wantRfc1950Header) { }
+	public int InitializeDeflate(CompressionLevel level, bool wantRfc1950Header) { }
 
-private int _InternalInitializeDeflate(bool wantRfc1950Header) { }
+	private int _InternalInitializeDeflate(bool wantRfc1950Header) { }
 
-public int Deflate(FlushType flush) { }
+	public int Deflate(FlushType flush) { }
 
-public int EndDeflate() { }
+	public int EndDeflate() { }
 
-internal void flush_pending() { }
+	internal void flush_pending() { }
 
-internal int read_buf(byte[] buf, int start, int size) { }
+	internal int read_buf(byte[] buf, int start, int size) { }
 
 }
 

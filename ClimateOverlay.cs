@@ -10,13 +10,13 @@ public class ClimateOverlay : MonoBehaviour // TypeDefIndex: 9126
 	private float[] dstWeights; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void UpdateBlendTargets() { }
+	private void UpdateBlendTargets() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

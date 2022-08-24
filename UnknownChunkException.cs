@@ -4,7 +4,7 @@ public sealed class UnknownChunkException : MidiException // TypeDefIndex: 7583
 	private readonly string <ChunkId>k__BackingField; 
 
 
-internal void .ctor(string chunkId) { }
+	internal void .ctor(string chunkId) { }
 
 }
 

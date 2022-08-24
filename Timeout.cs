@@ -4,7 +4,7 @@ public static class Timeout // TypeDefIndex: 821
 	public static readonly TimeSpan InfiniteTimeSpan; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

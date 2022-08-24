@@ -4,7 +4,7 @@ public class DownloadProgressChangedEventArgs : ProgressChangedEventArgs // Type
 	private long m_TotalBytesToReceive; 
 
 
-internal void .ctor(int progressPercentage, object userToken, long bytesReceived, long totalBytesToReceive) { }
+	internal void .ctor(int progressPercentage, object userToken, long bytesReceived, long totalBytesToReceive) { }
 
 }
 

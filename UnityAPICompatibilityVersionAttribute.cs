@@ -4,7 +4,7 @@ public class UnityAPICompatibilityVersionAttribute : Attribute // TypeDefIndex: 
 	private string[] _configurationAssembliesHashes; 
 
 
-public void .ctor(string version, string[] configurationAssembliesHashes) { }
+	public void .ctor(string version, string[] configurationAssembliesHashes) { }
 
 }
 

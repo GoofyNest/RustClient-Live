@@ -20,7 +20,7 @@ public struct ERSplatmap // TypeDefIndex: 7282
 	public float tValue12; 
 
 
-public void .ctor(int m_x, int m_y, int m_index, int m_layer, float m_value, ERModularRoad scr, float tv1, float tv2, float tv3, float tv4, float tv5, float tv6, float tv7, float tv8, float tv9, float tv10, float tv11, float tv12) { }
+	public void .ctor(int m_x, int m_y, int m_index, int m_layer, float m_value, ERModularRoad scr, float tv1, float tv2, float tv3, float tv4, float tv5, float tv6, float tv7, float tv8, float tv9, float tv10, float tv11, float tv12) { }
 
 }
 

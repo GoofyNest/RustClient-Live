@@ -26,7 +26,7 @@ public class ERSideObjectInstance : MonoBehaviour // TypeDefIndex: 7281
 	public List<Vector3> startEndPositions; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

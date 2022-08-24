@@ -1,15 +1,15 @@
 internal class ISteamScreenshots : SteamInterface // TypeDefIndex: 5129
 {
 
-internal void .ctor(bool IsGameServer) { }
+	internal void .ctor(bool IsGameServer) { }
 
-internal static extern IntPtr SteamAPI_SteamScreenshots_v003() { }
+	internal static extern IntPtr SteamAPI_SteamScreenshots_v003() { }
 
-public override IntPtr GetUserInterfacePointer() { }
+	public override IntPtr GetUserInterfacePointer() { }
 
-private static extern void _TriggerScreenshot(IntPtr self) { }
+	private static extern void _TriggerScreenshot(IntPtr self) { }
 
-internal void TriggerScreenshot() { }
+	internal void TriggerScreenshot() { }
 
 }
 

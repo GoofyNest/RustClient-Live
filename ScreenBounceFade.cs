@@ -11,11 +11,11 @@ public class ScreenBounceFade : BaseScreenShake // TypeDefIndex: 9366
 	public float scale; 
 
 
-public override void Setup() { }
+	public override void Setup() { }
 
-public override void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
+	public override void Run(float delta, ref CachedTransform<Camera> cam, ref CachedTransform<BaseViewModel> vm) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

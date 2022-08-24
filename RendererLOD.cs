@@ -7,27 +7,27 @@ public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 9951
 	private bool isSmall; 
 
 
-protected override void InitLOD() { }
+	protected override void InitLOD() { }
 
-protected override void EnableLOD() { }
+	protected override void EnableLOD() { }
 
-protected override void DisableLOD() { }
+	protected override void DisableLOD() { }
 
-protected override void Show() { }
+	protected override void Show() { }
 
-protected override void Hide() { }
+	protected override void Hide() { }
 
-protected override void Hide(bool shadowsVisible) { }
+	protected override void Hide(bool shadowsVisible) { }
 
-protected override bool IsLODHiding() { }
+	protected override bool IsLODHiding() { }
 
-protected override void SetLOD(int newlod) { }
+	protected override void SetLOD(int newlod) { }
 
-protected override int GetLOD(float distance) { }
+	protected override int GetLOD(float distance) { }
 
-protected override bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
+	protected override bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -40,11 +40,11 @@ public class RendererLOD.State // TypeDefIndex: 9952
 	public bool isImpostor; 
 
 
-public void Show(RendererBatch batch, bool forceShadowsOff = False) { }
+	public void Show(RendererBatch batch, bool forceShadowsOff = False) { }
 
-public void Hide(RendererBatch batch, bool shadowsVisible = False) { }
+	public void Hide(RendererBatch batch, bool shadowsVisible = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

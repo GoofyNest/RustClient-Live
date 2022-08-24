@@ -54,25 +54,25 @@ public class m2bradleyAnimator : MonoBehaviour // TypeDefIndex: 9593
 	private float wheelAngle; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void AnimateWheelsTreads() { }
+	private void AnimateWheelsTreads() { }
 
-private void AdjustShocksHeight() { }
+	private void AdjustShocksHeight() { }
 
-private void TrackTurret() { }
+	private void TrackTurret() { }
 
-private void TrackSpotLight() { }
+	private void TrackSpotLight() { }
 
-private void TrackSideGuns() { }
+	private void TrackSideGuns() { }
 
-public void CalculateYawPitchOffset(Transform objectTransform, Vector3 vecStart, Vector3 vecEnd, out float yaw, out float pitch) { }
+	public void CalculateYawPitchOffset(Transform objectTransform, Vector3 vecStart, Vector3 vecEnd, out float yaw, out float pitch) { }
 
-public float NormalizeYaw(float flYaw) { }
+	public float NormalizeYaw(float flYaw) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

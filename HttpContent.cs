@@ -5,49 +5,49 @@ public abstract class HttpContent : IDisposable // TypeDefIndex: 5744
 	private bool disposed; 
 	private HttpContentHeaders headers; 
 
-public HttpContentHeaders Headers { get; }
-internal Nullable<long> LoadedBufferLength { get; }
+	public HttpContentHeaders Headers { get; }
+	internal Nullable<long> LoadedBufferLength { get; }
 
 
-public HttpContentHeaders get_Headers() { }
+	public HttpContentHeaders get_Headers() { }
 
-internal Nullable<long> get_LoadedBufferLength() { }
+	internal Nullable<long> get_LoadedBufferLength() { }
 
-internal void CopyTo(Stream stream) { }
+	internal void CopyTo(Stream stream) { }
 
-public Task CopyToAsync(Stream stream) { }
+	public Task CopyToAsync(Stream stream) { }
 
-public Task CopyToAsync(Stream stream, TransportContext context) { }
-
-	[AsyncStateMachineAttribute] 
-protected virtual Task<Stream> CreateContentReadStreamAsync() { }
-
-private static HttpContent.FixedMemoryStream CreateFixedMemoryStream(long maxBufferSize) { }
-
-public void Dispose() { }
-
-protected virtual void Dispose(bool disposing) { }
-
-public Task LoadIntoBufferAsync() { }
+	public Task CopyToAsync(Stream stream, TransportContext context) { }
 
 	[AsyncStateMachineAttribute] 
-public Task LoadIntoBufferAsync(long maxBufferSize) { }
+	protected virtual Task<Stream> CreateContentReadStreamAsync() { }
+
+	private static HttpContent.FixedMemoryStream CreateFixedMemoryStream(long maxBufferSize) { }
+
+	public void Dispose() { }
+
+	protected virtual void Dispose(bool disposing) { }
+
+	public Task LoadIntoBufferAsync() { }
 
 	[AsyncStateMachineAttribute] 
-public Task<Stream> ReadAsStreamAsync() { }
+	public Task LoadIntoBufferAsync(long maxBufferSize) { }
 
 	[AsyncStateMachineAttribute] 
-public Task<string> ReadAsStringAsync() { }
+	public Task<Stream> ReadAsStreamAsync() { }
 
-private static Encoding GetEncodingFromBuffer(byte[] buffer, int length, ref int preambleLength) { }
+	[AsyncStateMachineAttribute] 
+	public Task<string> ReadAsStringAsync() { }
 
-private static int StartsWith(byte[] array, int length, byte[] value) { }
+	private static Encoding GetEncodingFromBuffer(byte[] buffer, int length, ref int preambleLength) { }
 
-protected internal abstract Task SerializeToStreamAsync(Stream stream, TransportContext context);
+	private static int StartsWith(byte[] array, int length, byte[] value) { }
 
-protected internal abstract bool TryComputeLength(out long length);
+	protected internal abstract Task SerializeToStreamAsync(Stream stream, TransportContext context);
 
-protected void .ctor() { }
+	protected internal abstract bool TryComputeLength(out long length);
+
+	protected void .ctor() { }
 
 }
 
@@ -56,13 +56,13 @@ private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefInde
 	private readonly long maxSize; 
 
 
-public void .ctor(long maxSize) { }
+	public void .ctor(long maxSize) { }
 
-private void CheckOverflow(int count) { }
+	private void CheckOverflow(int count) { }
 
-public override void WriteByte(byte value) { }
+	public override void WriteByte(byte value) { }
 
-public override void Write(byte[] buffer, int offset, int count) { }
+	public override void Write(byte[] buffer, int offset, int count) { }
 
 }
 
@@ -74,10 +74,10 @@ private struct HttpContent.<CreateContentReadStreamAsync>d__12 : IAsyncStateMach
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -90,10 +90,10 @@ private struct HttpContent.<LoadIntoBufferAsync>d__17 : IAsyncStateMachine // Ty
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -105,10 +105,10 @@ private struct HttpContent.<ReadAsStreamAsync>d__18 : IAsyncStateMachine // Type
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<Stream> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -120,10 +120,10 @@ private struct HttpContent.<ReadAsStringAsync>d__20 : IAsyncStateMachine // Type
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

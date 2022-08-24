@@ -9,31 +9,31 @@ public class CookieContainer // TypeDefIndex: 2944
 	private string m_fqdnMyDomain; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private void AddRemoveDomain(string key, PathList value) { }
+	private void AddRemoveDomain(string key, PathList value) { }
 
-internal void Add(Cookie cookie, bool throwOnError) { }
+	internal void Add(Cookie cookie, bool throwOnError) { }
 
-private bool AgeCookies(string domain) { }
+	private bool AgeCookies(string domain) { }
 
-private int ExpireCollection(CookieCollection cc) { }
+	private int ExpireCollection(CookieCollection cc) { }
 
-internal bool IsLocalDomain(string host) { }
+	internal bool IsLocalDomain(string host) { }
 
-internal CookieCollection CookieCutter(Uri uri, string headerName, string setCookieHeader, bool isThrow) { }
+	internal CookieCollection CookieCutter(Uri uri, string headerName, string setCookieHeader, bool isThrow) { }
 
-internal CookieCollection InternalGetCookies(Uri uri) { }
+	internal CookieCollection InternalGetCookies(Uri uri) { }
 
-private void BuildCookieCollectionFromDomainMatches(Uri uri, bool isSecure, int port, CookieCollection cookies, List<string> domainAttribute, bool matchOnlyPlainCookie) { }
+	private void BuildCookieCollectionFromDomainMatches(Uri uri, bool isSecure, int port, CookieCollection cookies, List<string> domainAttribute, bool matchOnlyPlainCookie) { }
 
-private void MergeUpdateCollections(CookieCollection destination, CookieCollection source, int port, bool isSecure, bool isPlainOnly) { }
+	private void MergeUpdateCollections(CookieCollection destination, CookieCollection source, int port, bool isSecure, bool isPlainOnly) { }
 
-public string GetCookieHeader(Uri uri) { }
+	public string GetCookieHeader(Uri uri) { }
 
-internal string GetCookieHeader(Uri uri, out string optCookie2) { }
+	internal string GetCookieHeader(Uri uri, out string optCookie2) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

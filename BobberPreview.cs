@@ -5,9 +5,9 @@ public class BobberPreview : MonoBehaviour // TypeDefIndex: 8869
 	public MeshRenderer TargetRenderer; 
 
 
-public void SetState(bool state) { }
+	public void SetState(bool state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -16,7 +16,7 @@ public static class SchemaTableOptionalColumn // TypeDefIndex: 4428
 	public static readonly string ColumnMapping; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

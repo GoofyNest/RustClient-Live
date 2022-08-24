@@ -15,28 +15,28 @@ public class Megaphone : HeldEntity // TypeDefIndex: 8604
 	private float talkingLayerWeight; 
 
 	[ReplicatedVar] 
-public static float MegaphoneVoiceRange { get; set; }
+	public static float MegaphoneVoiceRange { get; set; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[CompilerGeneratedAttribute] 
-public static float get_MegaphoneVoiceRange() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_MegaphoneVoiceRange(float value) { }
+	public static float get_MegaphoneVoiceRange() { }
 
-public bool Receive(byte[] data) { }
+	[CompilerGeneratedAttribute] 
+	public static void set_MegaphoneVoiceRange(float value) { }
 
-public override void OnInput() { }
+	public bool Receive(byte[] data) { }
 
-private void Update() { }
+	public override void OnInput() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	private void Update() { }
 
-public void .ctor() { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

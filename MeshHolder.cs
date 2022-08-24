@@ -30,9 +30,9 @@ public class MeshHolder // TypeDefIndex: 11524
 	public Vector2[] _uv4; 
 
 
-public void setAnimationData(Mesh mesh) { }
+	public void setAnimationData(Mesh mesh) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

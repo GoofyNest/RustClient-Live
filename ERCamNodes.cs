@@ -14,7 +14,7 @@ public class ERCamNodes : ScriptableObject // TypeDefIndex: 7217
 	public GameObject endLookat; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

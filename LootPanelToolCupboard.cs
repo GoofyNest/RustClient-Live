@@ -11,15 +11,15 @@ public class LootPanelToolCupboard : LootPanel // TypeDefIndex: 8719
 	private float nextUpdateTime; 
 
 
-public BuildingPrivlidge GetTC() { }
+	public BuildingPrivlidge GetTC() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateCosts() { }
+	public void UpdateCosts() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -29,11 +29,11 @@ private sealed class LootPanelToolCupboard.<>c // TypeDefIndex: 8720
 	public static Func<Item, int> <>9__12_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <UpdateCosts>b__12_0(Item x) { }
+	internal int <UpdateCosts>b__12_0(Item x) { }
 
 }
 

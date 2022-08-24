@@ -10,23 +10,23 @@ public abstract class LODComponentParticleSystem : LODComponent // TypeDefIndex:
 	private bool initialized; 
 
 
-protected override void InitLOD() { }
+	protected override void InitLOD() { }
 
-protected override void EnableLOD() { }
+	protected override void EnableLOD() { }
 
-protected override void DisableLOD() { }
+	protected override void DisableLOD() { }
 
-protected override void Show() { }
+	protected override void Show() { }
 
-protected override void Hide() { }
+	protected override void Hide() { }
 
-private void EnableParticleRenderer() { }
+	private void EnableParticleRenderer() { }
 
-private void DisableParticleRenderer() { }
+	private void DisableParticleRenderer() { }
 
-protected void SetEmissionRate(float rate) { }
+	protected void SetEmissionRate(float rate) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 

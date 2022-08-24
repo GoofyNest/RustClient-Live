@@ -8,35 +8,35 @@ internal class WebConnectionGroup // TypeDefIndex: 3031
 	[CompilerGeneratedAttribute] 
 	private EventHandler ConnectionClosed; 
 
-public string Name { get; }
-internal Queue Queue { get; }
+	public string Name { get; }
+	internal Queue Queue { get; }
 
 
-public void .ctor(ServicePoint sPoint, string name) { }
-
-	[CompilerGeneratedAttribute] 
-public void add_ConnectionClosed(EventHandler value) { }
+	public void .ctor(ServicePoint sPoint, string name) { }
 
 	[CompilerGeneratedAttribute] 
-public void remove_ConnectionClosed(EventHandler value) { }
+	public void add_ConnectionClosed(EventHandler value) { }
 
-private void OnConnectionClosed() { }
+	[CompilerGeneratedAttribute] 
+	public void remove_ConnectionClosed(EventHandler value) { }
 
-public void Close() { }
+	private void OnConnectionClosed() { }
 
-public WebConnection GetConnection(HttpWebRequest request, out bool created) { }
+	public void Close() { }
 
-private static void PrepareSharingNtlm(WebConnection cnc, HttpWebRequest request) { }
+	public WebConnection GetConnection(HttpWebRequest request, out bool created) { }
 
-private WebConnectionGroup.ConnectionState FindIdleConnection() { }
+	private static void PrepareSharingNtlm(WebConnection cnc, HttpWebRequest request) { }
 
-private WebConnection CreateOrReuseConnection(HttpWebRequest request, out bool created) { }
+	private WebConnectionGroup.ConnectionState FindIdleConnection() { }
 
-public string get_Name() { }
+	private WebConnection CreateOrReuseConnection(HttpWebRequest request, out bool created) { }
 
-internal Queue get_Queue() { }
+	public string get_Name() { }
 
-internal bool TryRecycle(TimeSpan maxIdleTime, ref DateTime idleSince) { }
+	internal Queue get_Queue() { }
+
+	internal bool TryRecycle(TimeSpan maxIdleTime, ref DateTime idleSince) { }
 
 }
 
@@ -49,36 +49,36 @@ private class WebConnectionGroup.ConnectionState : IWebConnectionState // TypeDe
 	private bool busy; 
 	private DateTime idleSince; 
 
-public WebConnection Connection { get; set; }
-public WebConnectionGroup Group { get; set; }
-public ServicePoint ServicePoint { get; }
-public bool Busy { get; }
-public DateTime IdleSince { get; }
+	public WebConnection Connection { get; set; }
+	public WebConnectionGroup Group { get; set; }
+	public ServicePoint ServicePoint { get; }
+	public bool Busy { get; }
+	public DateTime IdleSince { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public WebConnection get_Connection() { }
+	public WebConnection get_Connection() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Connection(WebConnection value) { }
+	private void set_Connection(WebConnection value) { }
 
 	[CompilerGeneratedAttribute] 
-public WebConnectionGroup get_Group() { }
+	public WebConnectionGroup get_Group() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Group(WebConnectionGroup value) { }
+	private void set_Group(WebConnectionGroup value) { }
 
-public ServicePoint get_ServicePoint() { }
+	public ServicePoint get_ServicePoint() { }
 
-public bool get_Busy() { }
+	public bool get_Busy() { }
 
-public DateTime get_IdleSince() { }
+	public DateTime get_IdleSince() { }
 
-public bool TrySetBusy() { }
+	public bool TrySetBusy() { }
 
-public void SetIdle() { }
+	public void SetIdle() { }
 
-public void .ctor(WebConnectionGroup group) { }
+	public void .ctor(WebConnectionGroup group) { }
 
 }
 

@@ -5,13 +5,13 @@ public class ShowIfConvarEnabled : MonoBehaviour // TypeDefIndex: 11276
 	private ConsoleSystem.Command _cmd; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-private void OnValueChanged(ConsoleSystem.Command obj) { }
+	private void OnValueChanged(ConsoleSystem.Command obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

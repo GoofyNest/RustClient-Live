@@ -6,21 +6,21 @@ public class ViewmodelAttachment : EntityComponent<BaseEntity>, IClientComponent
 	public GameObject spawnedGameObject; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void OnViewModeChanged() { }
+	public void OnViewModeChanged() { }
 
-public void OnViewModelUpdated() { }
+	public void OnViewModelUpdated() { }
 
-public void CreateAttachment() { }
+	public void CreateAttachment() { }
 
-public virtual void RootEntFlagsChanged(BaseEntity flagCarrier) { }
+	public virtual void RootEntFlagsChanged(BaseEntity flagCarrier) { }
 
-private bool IsThisOurViewmodel(BaseViewModel viewmodel) { }
+	private bool IsThisOurViewmodel(BaseViewModel viewmodel) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

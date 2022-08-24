@@ -3,11 +3,11 @@ public class PetCommandList : PrefabAttribute // TypeDefIndex: 9432
 	public List<PetCommandList.PetCommandDesc> Commands; 
 
 
-protected override Type GetIndexedType() { }
+	protected override Type GetIndexedType() { }
 
-public List<PetCommandList.PetCommandDesc> GetCommandDescriptions() { }
+	public List<PetCommandList.PetCommandDesc> GetCommandDescriptions() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

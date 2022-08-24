@@ -5,11 +5,11 @@ public class AtmosphereVolume : MonoBehaviour // TypeDefIndex: 10638
 	public FogSettings FogSettings; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

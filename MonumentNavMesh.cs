@@ -21,7 +21,7 @@ public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIn
 	public Transform CustomNavMeshRoot; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

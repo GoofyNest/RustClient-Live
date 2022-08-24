@@ -4,9 +4,9 @@ public class RotateCameraAroundObject : MonoBehaviour // TypeDefIndex: 11330
 	public float m_flRotateSpeed; 
 
 
-private void FixedUpdate() { }
+	private void FixedUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

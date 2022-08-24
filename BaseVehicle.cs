@@ -5,57 +5,57 @@ public class BaseVehicle : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 	public List<BaseVehicle.MountPoint> mountPoints; 
 
 
-public static void ResetToPool(BaseVehicle instance) { }
+	public static void ResetToPool(BaseVehicle instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(BaseVehicle instance) { }
+	public void CopyTo(BaseVehicle instance) { }
 
-public BaseVehicle Copy() { }
+	public BaseVehicle Copy() { }
 
-public static BaseVehicle Deserialize(Stream stream) { }
+	public static BaseVehicle Deserialize(Stream stream) { }
 
-public static BaseVehicle DeserializeLengthDelimited(Stream stream) { }
+	public static BaseVehicle DeserializeLengthDelimited(Stream stream) { }
 
-public static BaseVehicle DeserializeLength(Stream stream, int length) { }
+	public static BaseVehicle DeserializeLength(Stream stream, int length) { }
 
-public static BaseVehicle Deserialize(byte[] buffer) { }
+	public static BaseVehicle Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, BaseVehicle previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, BaseVehicle previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static BaseVehicle Deserialize(byte[] buffer, BaseVehicle instance, bool isDelta = False) { }
+	public static BaseVehicle Deserialize(byte[] buffer, BaseVehicle instance, bool isDelta = False) { }
 
-public static BaseVehicle Deserialize(Stream stream, BaseVehicle instance, bool isDelta) { }
+	public static BaseVehicle Deserialize(Stream stream, BaseVehicle instance, bool isDelta) { }
 
-public static BaseVehicle DeserializeLengthDelimited(Stream stream, BaseVehicle instance, bool isDelta) { }
+	public static BaseVehicle DeserializeLengthDelimited(Stream stream, BaseVehicle instance, bool isDelta) { }
 
-public static BaseVehicle DeserializeLength(Stream stream, int length, BaseVehicle instance, bool isDelta) { }
+	public static BaseVehicle DeserializeLength(Stream stream, int length, BaseVehicle instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, BaseVehicle instance, BaseVehicle previous) { }
+	public static void SerializeDelta(Stream stream, BaseVehicle instance, BaseVehicle previous) { }
 
-public static void Serialize(Stream stream, BaseVehicle instance) { }
+	public static void Serialize(Stream stream, BaseVehicle instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(BaseVehicle instance) { }
+	public static byte[] SerializeToBytes(BaseVehicle instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, BaseVehicle instance) { }
+	public static void SerializeLengthDelimited(Stream stream, BaseVehicle instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -67,57 +67,57 @@ public class BaseVehicle.MountPoint : IDisposable, Pool.IPooled, IProto // TypeD
 	public uint mountableId; 
 
 
-public static void ResetToPool(BaseVehicle.MountPoint instance) { }
+	public static void ResetToPool(BaseVehicle.MountPoint instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(BaseVehicle.MountPoint instance) { }
+	public void CopyTo(BaseVehicle.MountPoint instance) { }
 
-public BaseVehicle.MountPoint Copy() { }
+	public BaseVehicle.MountPoint Copy() { }
 
-public static BaseVehicle.MountPoint Deserialize(Stream stream) { }
+	public static BaseVehicle.MountPoint Deserialize(Stream stream) { }
 
-public static BaseVehicle.MountPoint DeserializeLengthDelimited(Stream stream) { }
+	public static BaseVehicle.MountPoint DeserializeLengthDelimited(Stream stream) { }
 
-public static BaseVehicle.MountPoint DeserializeLength(Stream stream, int length) { }
+	public static BaseVehicle.MountPoint DeserializeLength(Stream stream, int length) { }
 
-public static BaseVehicle.MountPoint Deserialize(byte[] buffer) { }
+	public static BaseVehicle.MountPoint Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, BaseVehicle.MountPoint previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, BaseVehicle.MountPoint previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static BaseVehicle.MountPoint Deserialize(byte[] buffer, BaseVehicle.MountPoint instance, bool isDelta = False) { }
+	public static BaseVehicle.MountPoint Deserialize(byte[] buffer, BaseVehicle.MountPoint instance, bool isDelta = False) { }
 
-public static BaseVehicle.MountPoint Deserialize(Stream stream, BaseVehicle.MountPoint instance, bool isDelta) { }
+	public static BaseVehicle.MountPoint Deserialize(Stream stream, BaseVehicle.MountPoint instance, bool isDelta) { }
 
-public static BaseVehicle.MountPoint DeserializeLengthDelimited(Stream stream, BaseVehicle.MountPoint instance, bool isDelta) { }
+	public static BaseVehicle.MountPoint DeserializeLengthDelimited(Stream stream, BaseVehicle.MountPoint instance, bool isDelta) { }
 
-public static BaseVehicle.MountPoint DeserializeLength(Stream stream, int length, BaseVehicle.MountPoint instance, bool isDelta) { }
+	public static BaseVehicle.MountPoint DeserializeLength(Stream stream, int length, BaseVehicle.MountPoint instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, BaseVehicle.MountPoint instance, BaseVehicle.MountPoint previous) { }
+	public static void SerializeDelta(Stream stream, BaseVehicle.MountPoint instance, BaseVehicle.MountPoint previous) { }
 
-public static void Serialize(Stream stream, BaseVehicle.MountPoint instance) { }
+	public static void Serialize(Stream stream, BaseVehicle.MountPoint instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(BaseVehicle.MountPoint instance) { }
+	public static byte[] SerializeToBytes(BaseVehicle.MountPoint instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, BaseVehicle.MountPoint instance) { }
+	public static void SerializeLengthDelimited(Stream stream, BaseVehicle.MountPoint instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -129,57 +129,57 @@ public class Motorboat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6346
 	public uint fuelStorageID; 
 
 
-public static void ResetToPool(Motorboat instance) { }
+	public static void ResetToPool(Motorboat instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Motorboat instance) { }
+	public void CopyTo(Motorboat instance) { }
 
-public Motorboat Copy() { }
+	public Motorboat Copy() { }
 
-public static Motorboat Deserialize(Stream stream) { }
+	public static Motorboat Deserialize(Stream stream) { }
 
-public static Motorboat DeserializeLengthDelimited(Stream stream) { }
+	public static Motorboat DeserializeLengthDelimited(Stream stream) { }
 
-public static Motorboat DeserializeLength(Stream stream, int length) { }
+	public static Motorboat DeserializeLength(Stream stream, int length) { }
 
-public static Motorboat Deserialize(byte[] buffer) { }
+	public static Motorboat Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Motorboat previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Motorboat previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Motorboat Deserialize(byte[] buffer, Motorboat instance, bool isDelta = False) { }
+	public static Motorboat Deserialize(byte[] buffer, Motorboat instance, bool isDelta = False) { }
 
-public static Motorboat Deserialize(Stream stream, Motorboat instance, bool isDelta) { }
+	public static Motorboat Deserialize(Stream stream, Motorboat instance, bool isDelta) { }
 
-public static Motorboat DeserializeLengthDelimited(Stream stream, Motorboat instance, bool isDelta) { }
+	public static Motorboat DeserializeLengthDelimited(Stream stream, Motorboat instance, bool isDelta) { }
 
-public static Motorboat DeserializeLength(Stream stream, int length, Motorboat instance, bool isDelta) { }
+	public static Motorboat DeserializeLength(Stream stream, int length, Motorboat instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Motorboat instance, Motorboat previous) { }
+	public static void SerializeDelta(Stream stream, Motorboat instance, Motorboat previous) { }
 
-public static void Serialize(Stream stream, Motorboat instance) { }
+	public static void Serialize(Stream stream, Motorboat instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Motorboat instance) { }
+	public static byte[] SerializeToBytes(Motorboat instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Motorboat instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Motorboat instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -190,57 +190,57 @@ public class ModularVehicle : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 	public bool editable; 
 
 
-public static void ResetToPool(ModularVehicle instance) { }
+	public static void ResetToPool(ModularVehicle instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ModularVehicle instance) { }
+	public void CopyTo(ModularVehicle instance) { }
 
-public ModularVehicle Copy() { }
+	public ModularVehicle Copy() { }
 
-public static ModularVehicle Deserialize(Stream stream) { }
+	public static ModularVehicle Deserialize(Stream stream) { }
 
-public static ModularVehicle DeserializeLengthDelimited(Stream stream) { }
+	public static ModularVehicle DeserializeLengthDelimited(Stream stream) { }
 
-public static ModularVehicle DeserializeLength(Stream stream, int length) { }
+	public static ModularVehicle DeserializeLength(Stream stream, int length) { }
 
-public static ModularVehicle Deserialize(byte[] buffer) { }
+	public static ModularVehicle Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ModularVehicle previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ModularVehicle previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ModularVehicle Deserialize(byte[] buffer, ModularVehicle instance, bool isDelta = False) { }
+	public static ModularVehicle Deserialize(byte[] buffer, ModularVehicle instance, bool isDelta = False) { }
 
-public static ModularVehicle Deserialize(Stream stream, ModularVehicle instance, bool isDelta) { }
+	public static ModularVehicle Deserialize(Stream stream, ModularVehicle instance, bool isDelta) { }
 
-public static ModularVehicle DeserializeLengthDelimited(Stream stream, ModularVehicle instance, bool isDelta) { }
+	public static ModularVehicle DeserializeLengthDelimited(Stream stream, ModularVehicle instance, bool isDelta) { }
 
-public static ModularVehicle DeserializeLength(Stream stream, int length, ModularVehicle instance, bool isDelta) { }
+	public static ModularVehicle DeserializeLength(Stream stream, int length, ModularVehicle instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ModularVehicle instance, ModularVehicle previous) { }
+	public static void SerializeDelta(Stream stream, ModularVehicle instance, ModularVehicle previous) { }
 
-public static void Serialize(Stream stream, ModularVehicle instance) { }
+	public static void Serialize(Stream stream, ModularVehicle instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ModularVehicle instance) { }
+	public static byte[] SerializeToBytes(ModularVehicle instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ModularVehicle instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ModularVehicle instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -257,57 +257,57 @@ public class ModularCar : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 	public int lockID; 
 
 
-public static void ResetToPool(ModularCar instance) { }
+	public static void ResetToPool(ModularCar instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(ModularCar instance) { }
+	public void CopyTo(ModularCar instance) { }
 
-public ModularCar Copy() { }
+	public ModularCar Copy() { }
 
-public static ModularCar Deserialize(Stream stream) { }
+	public static ModularCar Deserialize(Stream stream) { }
 
-public static ModularCar DeserializeLengthDelimited(Stream stream) { }
+	public static ModularCar DeserializeLengthDelimited(Stream stream) { }
 
-public static ModularCar DeserializeLength(Stream stream, int length) { }
+	public static ModularCar DeserializeLength(Stream stream, int length) { }
 
-public static ModularCar Deserialize(byte[] buffer) { }
+	public static ModularCar Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, ModularCar previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, ModularCar previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static ModularCar Deserialize(byte[] buffer, ModularCar instance, bool isDelta = False) { }
+	public static ModularCar Deserialize(byte[] buffer, ModularCar instance, bool isDelta = False) { }
 
-public static ModularCar Deserialize(Stream stream, ModularCar instance, bool isDelta) { }
+	public static ModularCar Deserialize(Stream stream, ModularCar instance, bool isDelta) { }
 
-public static ModularCar DeserializeLengthDelimited(Stream stream, ModularCar instance, bool isDelta) { }
+	public static ModularCar DeserializeLengthDelimited(Stream stream, ModularCar instance, bool isDelta) { }
 
-public static ModularCar DeserializeLength(Stream stream, int length, ModularCar instance, bool isDelta) { }
+	public static ModularCar DeserializeLength(Stream stream, int length, ModularCar instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, ModularCar instance, ModularCar previous) { }
+	public static void SerializeDelta(Stream stream, ModularCar instance, ModularCar previous) { }
 
-public static void Serialize(Stream stream, ModularCar instance) { }
+	public static void Serialize(Stream stream, ModularCar instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(ModularCar instance) { }
+	public static byte[] SerializeToBytes(ModularCar instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, ModularCar instance) { }
+	public static void SerializeLengthDelimited(Stream stream, ModularCar instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -322,57 +322,57 @@ public class VehicleLift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 	public int occupantLockID; 
 
 
-public static void ResetToPool(VehicleLift instance) { }
+	public static void ResetToPool(VehicleLift instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(VehicleLift instance) { }
+	public void CopyTo(VehicleLift instance) { }
 
-public VehicleLift Copy() { }
+	public VehicleLift Copy() { }
 
-public static VehicleLift Deserialize(Stream stream) { }
+	public static VehicleLift Deserialize(Stream stream) { }
 
-public static VehicleLift DeserializeLengthDelimited(Stream stream) { }
+	public static VehicleLift DeserializeLengthDelimited(Stream stream) { }
 
-public static VehicleLift DeserializeLength(Stream stream, int length) { }
+	public static VehicleLift DeserializeLength(Stream stream, int length) { }
 
-public static VehicleLift Deserialize(byte[] buffer) { }
+	public static VehicleLift Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, VehicleLift previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, VehicleLift previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static VehicleLift Deserialize(byte[] buffer, VehicleLift instance, bool isDelta = False) { }
+	public static VehicleLift Deserialize(byte[] buffer, VehicleLift instance, bool isDelta = False) { }
 
-public static VehicleLift Deserialize(Stream stream, VehicleLift instance, bool isDelta) { }
+	public static VehicleLift Deserialize(Stream stream, VehicleLift instance, bool isDelta) { }
 
-public static VehicleLift DeserializeLengthDelimited(Stream stream, VehicleLift instance, bool isDelta) { }
+	public static VehicleLift DeserializeLengthDelimited(Stream stream, VehicleLift instance, bool isDelta) { }
 
-public static VehicleLift DeserializeLength(Stream stream, int length, VehicleLift instance, bool isDelta) { }
+	public static VehicleLift DeserializeLength(Stream stream, int length, VehicleLift instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, VehicleLift instance, VehicleLift previous) { }
+	public static void SerializeDelta(Stream stream, VehicleLift instance, VehicleLift previous) { }
 
-public static void Serialize(Stream stream, VehicleLift instance) { }
+	public static void Serialize(Stream stream, VehicleLift instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(VehicleLift instance) { }
+	public static byte[] SerializeToBytes(VehicleLift instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, VehicleLift instance) { }
+	public static void SerializeLengthDelimited(Stream stream, VehicleLift instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -386,57 +386,57 @@ public class EngineStorage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 	public float fuelEconomyBoost; 
 
 
-public static void ResetToPool(EngineStorage instance) { }
+	public static void ResetToPool(EngineStorage instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(EngineStorage instance) { }
+	public void CopyTo(EngineStorage instance) { }
 
-public EngineStorage Copy() { }
+	public EngineStorage Copy() { }
 
-public static EngineStorage Deserialize(Stream stream) { }
+	public static EngineStorage Deserialize(Stream stream) { }
 
-public static EngineStorage DeserializeLengthDelimited(Stream stream) { }
+	public static EngineStorage DeserializeLengthDelimited(Stream stream) { }
 
-public static EngineStorage DeserializeLength(Stream stream, int length) { }
+	public static EngineStorage DeserializeLength(Stream stream, int length) { }
 
-public static EngineStorage Deserialize(byte[] buffer) { }
+	public static EngineStorage Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, EngineStorage previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, EngineStorage previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static EngineStorage Deserialize(byte[] buffer, EngineStorage instance, bool isDelta = False) { }
+	public static EngineStorage Deserialize(byte[] buffer, EngineStorage instance, bool isDelta = False) { }
 
-public static EngineStorage Deserialize(Stream stream, EngineStorage instance, bool isDelta) { }
+	public static EngineStorage Deserialize(Stream stream, EngineStorage instance, bool isDelta) { }
 
-public static EngineStorage DeserializeLengthDelimited(Stream stream, EngineStorage instance, bool isDelta) { }
+	public static EngineStorage DeserializeLengthDelimited(Stream stream, EngineStorage instance, bool isDelta) { }
 
-public static EngineStorage DeserializeLength(Stream stream, int length, EngineStorage instance, bool isDelta) { }
+	public static EngineStorage DeserializeLength(Stream stream, int length, EngineStorage instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, EngineStorage instance, EngineStorage previous) { }
+	public static void SerializeDelta(Stream stream, EngineStorage instance, EngineStorage previous) { }
 
-public static void Serialize(Stream stream, EngineStorage instance) { }
+	public static void Serialize(Stream stream, EngineStorage instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(EngineStorage instance) { }
+	public static byte[] SerializeToBytes(EngineStorage instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, EngineStorage instance) { }
+	public static void SerializeLengthDelimited(Stream stream, EngineStorage instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -448,57 +448,57 @@ public class VehicleVendor : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 	public uint spawnerRef; 
 
 
-public static void ResetToPool(VehicleVendor instance) { }
+	public static void ResetToPool(VehicleVendor instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(VehicleVendor instance) { }
+	public void CopyTo(VehicleVendor instance) { }
 
-public VehicleVendor Copy() { }
+	public VehicleVendor Copy() { }
 
-public static VehicleVendor Deserialize(Stream stream) { }
+	public static VehicleVendor Deserialize(Stream stream) { }
 
-public static VehicleVendor DeserializeLengthDelimited(Stream stream) { }
+	public static VehicleVendor DeserializeLengthDelimited(Stream stream) { }
 
-public static VehicleVendor DeserializeLength(Stream stream, int length) { }
+	public static VehicleVendor DeserializeLength(Stream stream, int length) { }
 
-public static VehicleVendor Deserialize(byte[] buffer) { }
+	public static VehicleVendor Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, VehicleVendor previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, VehicleVendor previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static VehicleVendor Deserialize(byte[] buffer, VehicleVendor instance, bool isDelta = False) { }
+	public static VehicleVendor Deserialize(byte[] buffer, VehicleVendor instance, bool isDelta = False) { }
 
-public static VehicleVendor Deserialize(Stream stream, VehicleVendor instance, bool isDelta) { }
+	public static VehicleVendor Deserialize(Stream stream, VehicleVendor instance, bool isDelta) { }
 
-public static VehicleVendor DeserializeLengthDelimited(Stream stream, VehicleVendor instance, bool isDelta) { }
+	public static VehicleVendor DeserializeLengthDelimited(Stream stream, VehicleVendor instance, bool isDelta) { }
 
-public static VehicleVendor DeserializeLength(Stream stream, int length, VehicleVendor instance, bool isDelta) { }
+	public static VehicleVendor DeserializeLength(Stream stream, int length, VehicleVendor instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, VehicleVendor instance, VehicleVendor previous) { }
+	public static void SerializeDelta(Stream stream, VehicleVendor instance, VehicleVendor previous) { }
 
-public static void Serialize(Stream stream, VehicleVendor instance) { }
+	public static void Serialize(Stream stream, VehicleVendor instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(VehicleVendor instance) { }
+	public static byte[] SerializeToBytes(VehicleVendor instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, VehicleVendor instance) { }
+	public static void SerializeLengthDelimited(Stream stream, VehicleVendor instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -510,57 +510,57 @@ public class VehicleVendor.PlayerStorage : IDisposable, Pool.IPooled, IProto // 
 	public List<VehicleVendor.PlayerStorage.PlayerStoredVehicle> storedVehicles; 
 
 
-public static void ResetToPool(VehicleVendor.PlayerStorage instance) { }
+	public static void ResetToPool(VehicleVendor.PlayerStorage instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(VehicleVendor.PlayerStorage instance) { }
+	public void CopyTo(VehicleVendor.PlayerStorage instance) { }
 
-public VehicleVendor.PlayerStorage Copy() { }
+	public VehicleVendor.PlayerStorage Copy() { }
 
-public static VehicleVendor.PlayerStorage Deserialize(Stream stream) { }
+	public static VehicleVendor.PlayerStorage Deserialize(Stream stream) { }
 
-public static VehicleVendor.PlayerStorage DeserializeLengthDelimited(Stream stream) { }
+	public static VehicleVendor.PlayerStorage DeserializeLengthDelimited(Stream stream) { }
 
-public static VehicleVendor.PlayerStorage DeserializeLength(Stream stream, int length) { }
+	public static VehicleVendor.PlayerStorage DeserializeLength(Stream stream, int length) { }
 
-public static VehicleVendor.PlayerStorage Deserialize(byte[] buffer) { }
+	public static VehicleVendor.PlayerStorage Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, VehicleVendor.PlayerStorage previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, VehicleVendor.PlayerStorage previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static VehicleVendor.PlayerStorage Deserialize(byte[] buffer, VehicleVendor.PlayerStorage instance, bool isDelta = False) { }
+	public static VehicleVendor.PlayerStorage Deserialize(byte[] buffer, VehicleVendor.PlayerStorage instance, bool isDelta = False) { }
 
-public static VehicleVendor.PlayerStorage Deserialize(Stream stream, VehicleVendor.PlayerStorage instance, bool isDelta) { }
+	public static VehicleVendor.PlayerStorage Deserialize(Stream stream, VehicleVendor.PlayerStorage instance, bool isDelta) { }
 
-public static VehicleVendor.PlayerStorage DeserializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage instance, bool isDelta) { }
+	public static VehicleVendor.PlayerStorage DeserializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage instance, bool isDelta) { }
 
-public static VehicleVendor.PlayerStorage DeserializeLength(Stream stream, int length, VehicleVendor.PlayerStorage instance, bool isDelta) { }
+	public static VehicleVendor.PlayerStorage DeserializeLength(Stream stream, int length, VehicleVendor.PlayerStorage instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, VehicleVendor.PlayerStorage instance, VehicleVendor.PlayerStorage previous) { }
+	public static void SerializeDelta(Stream stream, VehicleVendor.PlayerStorage instance, VehicleVendor.PlayerStorage previous) { }
 
-public static void Serialize(Stream stream, VehicleVendor.PlayerStorage instance) { }
+	public static void Serialize(Stream stream, VehicleVendor.PlayerStorage instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(VehicleVendor.PlayerStorage instance) { }
+	public static byte[] SerializeToBytes(VehicleVendor.PlayerStorage instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage instance) { }
+	public static void SerializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -573,57 +573,57 @@ public class VehicleVendor.PlayerStorage.PlayerStoredVehicle : IDisposable, Pool
 	public float health; 
 
 
-public static void ResetToPool(VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
+	public static void ResetToPool(VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
+	public void CopyTo(VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
 
-public VehicleVendor.PlayerStorage.PlayerStoredVehicle Copy() { }
+	public VehicleVendor.PlayerStorage.PlayerStoredVehicle Copy() { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(Stream stream) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(Stream stream) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLengthDelimited(Stream stream) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLengthDelimited(Stream stream) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLength(Stream stream, int length) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLength(Stream stream, int length) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(byte[] buffer) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(byte[] buffer, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta = False) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(byte[] buffer, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta = False) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle Deserialize(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta) { }
 
-public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLength(Stream stream, int length, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta) { }
+	public static VehicleVendor.PlayerStorage.PlayerStoredVehicle DeserializeLength(Stream stream, int length, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, VehicleVendor.PlayerStorage.PlayerStoredVehicle previous) { }
+	public static void SerializeDelta(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance, VehicleVendor.PlayerStorage.PlayerStoredVehicle previous) { }
 
-public static void Serialize(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
+	public static void Serialize(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
+	public static byte[] SerializeToBytes(VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
+	public static void SerializeLengthDelimited(Stream stream, VehicleVendor.PlayerStorage.PlayerStoredVehicle instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -634,57 +634,57 @@ public class VehicleModule : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 	public int socketIndex; 
 
 
-public static void ResetToPool(VehicleModule instance) { }
+	public static void ResetToPool(VehicleModule instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(VehicleModule instance) { }
+	public void CopyTo(VehicleModule instance) { }
 
-public VehicleModule Copy() { }
+	public VehicleModule Copy() { }
 
-public static VehicleModule Deserialize(Stream stream) { }
+	public static VehicleModule Deserialize(Stream stream) { }
 
-public static VehicleModule DeserializeLengthDelimited(Stream stream) { }
+	public static VehicleModule DeserializeLengthDelimited(Stream stream) { }
 
-public static VehicleModule DeserializeLength(Stream stream, int length) { }
+	public static VehicleModule DeserializeLength(Stream stream, int length) { }
 
-public static VehicleModule Deserialize(byte[] buffer) { }
+	public static VehicleModule Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, VehicleModule previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, VehicleModule previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static VehicleModule Deserialize(byte[] buffer, VehicleModule instance, bool isDelta = False) { }
+	public static VehicleModule Deserialize(byte[] buffer, VehicleModule instance, bool isDelta = False) { }
 
-public static VehicleModule Deserialize(Stream stream, VehicleModule instance, bool isDelta) { }
+	public static VehicleModule Deserialize(Stream stream, VehicleModule instance, bool isDelta) { }
 
-public static VehicleModule DeserializeLengthDelimited(Stream stream, VehicleModule instance, bool isDelta) { }
+	public static VehicleModule DeserializeLengthDelimited(Stream stream, VehicleModule instance, bool isDelta) { }
 
-public static VehicleModule DeserializeLength(Stream stream, int length, VehicleModule instance, bool isDelta) { }
+	public static VehicleModule DeserializeLength(Stream stream, int length, VehicleModule instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, VehicleModule instance, VehicleModule previous) { }
+	public static void SerializeDelta(Stream stream, VehicleModule instance, VehicleModule previous) { }
 
-public static void Serialize(Stream stream, VehicleModule instance) { }
+	public static void Serialize(Stream stream, VehicleModule instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(VehicleModule instance) { }
+	public static byte[] SerializeToBytes(VehicleModule instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, VehicleModule instance) { }
+	public static void SerializeLengthDelimited(Stream stream, VehicleModule instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -697,57 +697,57 @@ public class CamperModule : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 	public uint storageID; 
 
 
-public static void ResetToPool(CamperModule instance) { }
+	public static void ResetToPool(CamperModule instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(CamperModule instance) { }
+	public void CopyTo(CamperModule instance) { }
 
-public CamperModule Copy() { }
+	public CamperModule Copy() { }
 
-public static CamperModule Deserialize(Stream stream) { }
+	public static CamperModule Deserialize(Stream stream) { }
 
-public static CamperModule DeserializeLengthDelimited(Stream stream) { }
+	public static CamperModule DeserializeLengthDelimited(Stream stream) { }
 
-public static CamperModule DeserializeLength(Stream stream, int length) { }
+	public static CamperModule DeserializeLength(Stream stream, int length) { }
 
-public static CamperModule Deserialize(byte[] buffer) { }
+	public static CamperModule Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, CamperModule previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, CamperModule previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static CamperModule Deserialize(byte[] buffer, CamperModule instance, bool isDelta = False) { }
+	public static CamperModule Deserialize(byte[] buffer, CamperModule instance, bool isDelta = False) { }
 
-public static CamperModule Deserialize(Stream stream, CamperModule instance, bool isDelta) { }
+	public static CamperModule Deserialize(Stream stream, CamperModule instance, bool isDelta) { }
 
-public static CamperModule DeserializeLengthDelimited(Stream stream, CamperModule instance, bool isDelta) { }
+	public static CamperModule DeserializeLengthDelimited(Stream stream, CamperModule instance, bool isDelta) { }
 
-public static CamperModule DeserializeLength(Stream stream, int length, CamperModule instance, bool isDelta) { }
+	public static CamperModule DeserializeLength(Stream stream, int length, CamperModule instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, CamperModule instance, CamperModule previous) { }
+	public static void SerializeDelta(Stream stream, CamperModule instance, CamperModule previous) { }
 
-public static void Serialize(Stream stream, CamperModule instance) { }
+	public static void Serialize(Stream stream, CamperModule instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(CamperModule instance) { }
+	public static byte[] SerializeToBytes(CamperModule instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, CamperModule instance) { }
+	public static void SerializeLengthDelimited(Stream stream, CamperModule instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -769,96 +769,96 @@ public class BaseVehicle : BaseMountable // TypeDefIndex: 8351
 	[FormerlySerializedAsAttribute] 
 	public float explosionForceMultiplier; 
 	public float explosionForceMax; 
-public const BaseEntity.Flags Flag_OnlyOwnerEntry = 16;
-public const BaseEntity.Flags Flag_Headlights = 2048;
-public const BaseEntity.Flags Flag_Stationary = 32768;
-public const BaseEntity.Flags Flag_SeatsFull = 524288;
+	public const BaseEntity.Flags Flag_OnlyOwnerEntry = 16;
+	public const BaseEntity.Flags Flag_Headlights = 2048;
+	public const BaseEntity.Flags Flag_Stationary = 32768;
+	public const BaseEntity.Flags Flag_SeatsFull = 524288;
 	private readonly List<BaseVehicle> childVehicles; 
 
-public override bool HasMenuOptions { get; }
-public bool IsMovingOrOn { get; }
-public override float RealisticMass { get; }
-public BaseVehicle.Enumerable allMountPoints { get; }
+	public override bool HasMenuOptions { get; }
+	public bool IsMovingOrOn { get; }
+	public override float RealisticMass { get; }
+	public BaseVehicle.Enumerable allMountPoints { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public virtual void InitializeClientEffects() { }
+	public virtual void InitializeClientEffects() { }
 
-public virtual float GetHUDHealth() { }
+	public virtual float GetHUDHealth() { }
 
-public virtual float GetHUDMaxHealth() { }
+	public virtual float GetHUDMaxHealth() { }
 
-public override bool LocalPlayerIsMounted() { }
+	public override bool LocalPlayerIsMounted() { }
 
-public virtual bool Menu_Push_ShowIf(BasePlayer player) { }
+	public virtual bool Menu_Push_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-private void Menu_Occupied(BasePlayer player) { }
+	private void Menu_Occupied(BasePlayer player) { }
 
-protected virtual bool Menu_Occupied_ShowIf(BasePlayer player) { }
+	protected virtual bool Menu_Occupied_ShowIf(BasePlayer player) { }
 
-public override bool Menu_Mount_ShowIf(BasePlayer player) { }
+	public override bool Menu_Mount_ShowIf(BasePlayer player) { }
 
-protected virtual void WorkshopMode() { }
+	protected virtual void WorkshopMode() { }
 
-public bool IsStationary() { }
+	public bool IsStationary() { }
 
-public bool IsMoving() { }
+	public bool IsMoving() { }
 
-public bool get_IsMovingOrOn() { }
+	public bool get_IsMovingOrOn() { }
 
-public override float get_RealisticMass() { }
+	public override float get_RealisticMass() { }
 
-public override bool PlayerIsMounted(BasePlayer player) { }
+	public override bool PlayerIsMounted(BasePlayer player) { }
 
-protected virtual bool CanPushNow(BasePlayer pusher) { }
+	protected virtual bool CanPushNow(BasePlayer pusher) { }
 
-public bool HasMountPoints() { }
+	public bool HasMountPoints() { }
 
-public override bool IsMounted() { }
+	public override bool IsMounted() { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-public bool IsFlipped() { }
+	public bool IsFlipped() { }
 
-public virtual bool IsVehicleRoot() { }
+	public virtual bool IsVehicleRoot() { }
 
-public override bool DirectlyMountable() { }
+	public override bool DirectlyMountable() { }
 
-public override BaseVehicle VehicleParent() { }
+	public override BaseVehicle VehicleParent() { }
 
-protected override void OnChildAdded(BaseEntity child) { }
+	protected override void OnChildAdded(BaseEntity child) { }
 
-protected override void OnChildRemoved(BaseEntity child) { }
+	protected override void OnChildRemoved(BaseEntity child) { }
 
-public BaseVehicle.Enumerable get_allMountPoints() { }
+	public BaseVehicle.Enumerable get_allMountPoints() { }
 
-public BaseVehicle.MountPointInfo GetMountPoint(int index) { }
+	public BaseVehicle.MountPointInfo GetMountPoint(int index) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum BaseVehicle.ClippingCheckMode // TypeDefIndex: 8352
 {
 	public int value__; 
-public const BaseVehicle.ClippingCheckMode OnMountOnly = 0;
-public const BaseVehicle.ClippingCheckMode Always = 1;
-public const BaseVehicle.ClippingCheckMode AlwaysHeadOnly = 2;
+	public const BaseVehicle.ClippingCheckMode OnMountOnly = 0;
+	public const BaseVehicle.ClippingCheckMode Always = 1;
+	public const BaseVehicle.ClippingCheckMode AlwaysHeadOnly = 2;
 
 }
 
@@ -871,7 +871,7 @@ public class BaseVehicle.MountPointInfo // TypeDefIndex: 8353
 	public GameObjectRef prefab; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -880,13 +880,13 @@ public struct BaseVehicle.Enumerable : IEnumerable<BaseVehicle.MountPointInfo>, 
 	private readonly BaseVehicle _vehicle; 
 
 
-public void .ctor(BaseVehicle vehicle) { }
+	public void .ctor(BaseVehicle vehicle) { }
 
-public BaseVehicle.Enumerator GetEnumerator() { }
+	public BaseVehicle.Enumerator GetEnumerator() { }
 
-private IEnumerator<BaseVehicle.MountPointInfo> System.Collections.Generic.IEnumerable<BaseVehicle.MountPointInfo>.GetEnumerator() { }
+	private IEnumerator<BaseVehicle.MountPointInfo> System.Collections.Generic.IEnumerable<BaseVehicle.MountPointInfo>.GetEnumerator() { }
 
-private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 
 }
 
@@ -900,35 +900,35 @@ public struct BaseVehicle.Enumerator : IEnumerator<BaseVehicle.MountPointInfo>, 
 	[CompilerGeneratedAttribute] 
 	private BaseVehicle.MountPointInfo <Current>k__BackingField; 
 
-public BaseVehicle.MountPointInfo Current { get; set; }
-private object System.Collections.IEnumerator.Current { get; }
+	public BaseVehicle.MountPointInfo Current { get; set; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public BaseVehicle.MountPointInfo get_Current() { }
+	public BaseVehicle.MountPointInfo get_Current() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Current(BaseVehicle.MountPointInfo value) { }
+	private void set_Current(BaseVehicle.MountPointInfo value) { }
 
-public void .ctor(BaseVehicle vehicle) { }
+	public void .ctor(BaseVehicle vehicle) { }
 
-public bool MoveNext() { }
+	public bool MoveNext() { }
 
-private object System.Collections.IEnumerator.get_Current() { }
+	private object System.Collections.IEnumerator.get_Current() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-public void Reset() { }
+	public void Reset() { }
 
 }
 
 private enum BaseVehicle.Enumerator.State // TypeDefIndex: 8356
 {
 	public int value__; 
-public const BaseVehicle.Enumerator.State Direct = 0;
-public const BaseVehicle.Enumerator.State EnterChild = 1;
-public const BaseVehicle.Enumerator.State EnumerateChild = 2;
-public const BaseVehicle.Enumerator.State Finished = 3;
+	public const BaseVehicle.Enumerator.State Direct = 0;
+	public const BaseVehicle.Enumerator.State EnterChild = 1;
+	public const BaseVehicle.Enumerator.State EnumerateChild = 2;
+	public const BaseVehicle.Enumerator.State Finished = 3;
 
 }
 
@@ -937,11 +937,11 @@ private class BaseVehicle.Enumerator.Box : Pool.IPooled // TypeDefIndex: 8357
 	public BaseVehicle.Enumerator Value; 
 
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -950,7 +950,7 @@ public class BaseVehicleModule : BaseVehicle, IPrefabPreProcess // TypeDefIndex:
 	private Option __menuOption_Menu_Locked; 
 	private Option __menuOption_Menu_Push; 
 	private Option __menuOption_Menu_Use; 
-public const string CAR_LOCKED_ACTION_NAME = "car_locked";
+	public const string CAR_LOCKED_ACTION_NAME = "car_locked";
 	[HeaderAttribute] 
 	[SerializeField] 
 	private Transform centreOfMassTransform; 
@@ -981,155 +981,155 @@ public const string CAR_LOCKED_ACTION_NAME = "car_locked";
 	private bool prevRefreshVehicleIsDead; 
 	private bool prevRefreshVehicleIsLockable; 
 
-public override bool HasMenuOptions { get; }
-public BaseModularVehicle Vehicle { get; set; }
-public int FirstSocketIndex { get; set; }
-public Vector3 CentreOfMass { get; }
-public float Mass { get; }
-public uint ID { get; }
-public bool IsOnAVehicle { get; }
-public ItemDefinition AssociatedItemDef { get; }
-public virtual bool HasSeating { get; }
-public virtual bool HasAnEngine { get; }
+	public override bool HasMenuOptions { get; }
+	public BaseModularVehicle Vehicle { get; set; }
+	public int FirstSocketIndex { get; set; }
+	public Vector3 CentreOfMass { get; }
+	public float Mass { get; }
+	public uint ID { get; }
+	public bool IsOnAVehicle { get; }
+	public ItemDefinition AssociatedItemDef { get; }
+	public virtual bool HasSeating { get; }
+	public virtual bool HasAnEngine { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public virtual void ClientVehicleTick() { }
+	public virtual void ClientVehicleTick() { }
 
-public virtual void OnClientTickStopped() { }
+	public virtual void OnClientTickStopped() { }
 
-public virtual void ClientOnLoad() { }
+	public virtual void ClientOnLoad() { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public void SetLightState(bool headlightsOn, bool brakesOn) { }
+	public void SetLightState(bool headlightsOn, bool brakesOn) { }
 
-public void ClearDecals(BaseVehicleModule.DecalType decalType) { }
+	public void ClearDecals(BaseVehicleModule.DecalType decalType) { }
 
-public void DrawHighlight() { }
+	public void DrawHighlight() { }
 
-public override bool Menu_Mount_ShowIf(BasePlayer player) { }
+	public override bool Menu_Mount_ShowIf(BasePlayer player) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_Push(BasePlayer player) { }
-
-public override bool Menu_Push_ShowIf(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Use(BasePlayer player) { }
+	public void Menu_Push(BasePlayer player) { }
 
-public bool Menu_Use_ShowIf(BasePlayer player) { }
+	public override bool Menu_Push_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Locked(BasePlayer player) { }
+	public void Menu_Use(BasePlayer player) { }
 
-public virtual bool Menu_Locked_ShowIf(BasePlayer player) { }
+	public bool Menu_Use_ShowIf(BasePlayer player) { }
+
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_Locked(BasePlayer player) { }
+
+	public virtual bool Menu_Locked_ShowIf(BasePlayer player) { }
 
 	[CompilerGeneratedAttribute] 
-public BaseModularVehicle get_Vehicle() { }
+	public BaseModularVehicle get_Vehicle() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Vehicle(BaseModularVehicle value) { }
+	private void set_Vehicle(BaseModularVehicle value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_FirstSocketIndex() { }
+	public int get_FirstSocketIndex() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_FirstSocketIndex(int value) { }
+	private void set_FirstSocketIndex(int value) { }
 
-public Vector3 get_CentreOfMass() { }
+	public Vector3 get_CentreOfMass() { }
 
-public float get_Mass() { }
+	public float get_Mass() { }
 
-public uint get_ID() { }
+	public uint get_ID() { }
 
-public bool get_IsOnAVehicle() { }
+	public bool get_IsOnAVehicle() { }
 
-public ItemDefinition get_AssociatedItemDef() { }
+	public ItemDefinition get_AssociatedItemDef() { }
 
-public virtual bool get_HasSeating() { }
+	public virtual bool get_HasSeating() { }
 
-public virtual bool get_HasAnEngine() { }
+	public virtual bool get_HasAnEngine() { }
 
-public override void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public override void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public void RefreshParameters() { }
+	public void RefreshParameters() { }
 
-public virtual void ModuleAdded(BaseModularVehicle vehicle, int firstSocketIndex) { }
+	public virtual void ModuleAdded(BaseModularVehicle vehicle, int firstSocketIndex) { }
 
-public virtual void ModuleRemoved() { }
+	public virtual void ModuleRemoved() { }
 
-public void OtherVehicleModulesChanged() { }
+	public void OtherVehicleModulesChanged() { }
 
-public virtual void OnEngineStateChanged(VehicleEngineController.EngineState<GroundVehicle> oldState, VehicleEngineController.EngineState<GroundVehicle> newState) { }
+	public virtual void OnEngineStateChanged(VehicleEngineController.EngineState<GroundVehicle> oldState, VehicleEngineController.EngineState<GroundVehicle> newState) { }
 
-public override float MaxHealth() { }
+	public override float MaxHealth() { }
 
-public override float StartHealth() { }
+	public override float StartHealth() { }
 
-public int GetNumSocketsTaken() { }
+	public int GetNumSocketsTaken() { }
 
-public List<ConditionalObject> GetConditionals() { }
+	public List<ConditionalObject> GetConditionals() { }
 
-public virtual float GetMaxDriveForce() { }
+	public virtual float GetMaxDriveForce() { }
 
-public void RefreshConditionals(bool canGib) { }
+	public void RefreshConditionals(bool canGib) { }
 
-protected virtual void PostConditionalRefresh() { }
+	protected virtual void PostConditionalRefresh() { }
 
-private void RefreshConditional(ConditionalObject conditional, bool canGib) { }
+	private void RefreshConditional(ConditionalObject conditional, bool canGib) { }
 
-private bool TryGetAdjacentModuleInFront(out BaseVehicleModule result) { }
+	private bool TryGetAdjacentModuleInFront(out BaseVehicleModule result) { }
 
-private bool TryGetAdjacentModuleBehind(out BaseVehicleModule result) { }
+	private bool TryGetAdjacentModuleBehind(out BaseVehicleModule result) { }
 
-private bool InSameVisualGroupAs(BaseVehicleModule moduleEntity, ConditionalObject.AdjacentMatchType matchType) { }
+	private bool InSameVisualGroupAs(BaseVehicleModule moduleEntity, ConditionalObject.AdjacentMatchType matchType) { }
 
-private bool CanBeUsedNowBy(BasePlayer player) { }
+	private bool CanBeUsedNowBy(BasePlayer player) { }
 
-public bool PlayerIsLookingAtUsable(string lookingAtColldierName, string usableColliderName) { }
+	public bool PlayerIsLookingAtUsable(string lookingAtColldierName, string usableColliderName) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override bool IsVehicleRoot() { }
+	public override bool IsVehicleRoot() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum BaseVehicleModule.DecalType // TypeDefIndex: 8359
 {
 	public int value__; 
-public const BaseVehicleModule.DecalType All = 0;
-public const BaseVehicleModule.DecalType Glass = 1;
+	public const BaseVehicleModule.DecalType All = 0;
+	public const BaseVehicleModule.DecalType Glass = 1;
 
 }
 
 public enum BaseVehicleModule.VisualGroup // TypeDefIndex: 8360
 {
 	public int value__; 
-public const BaseVehicleModule.VisualGroup None = 0;
-public const BaseVehicleModule.VisualGroup Engine = 1;
-public const BaseVehicleModule.VisualGroup Cabin = 2;
-public const BaseVehicleModule.VisualGroup Flatbed = 3;
+	public const BaseVehicleModule.VisualGroup None = 0;
+	public const BaseVehicleModule.VisualGroup Engine = 1;
+	public const BaseVehicleModule.VisualGroup Cabin = 2;
+	public const BaseVehicleModule.VisualGroup Flatbed = 3;
 
 }
 
@@ -1138,7 +1138,7 @@ public class BaseVehicleModule.LODLevel // TypeDefIndex: 8361
 	public Renderer[] renderers; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1147,32 +1147,32 @@ public class EngineSwitch : BaseEntity // TypeDefIndex: 8389
 	private Option __menuOption_Menu_StartEngine; 
 	private Option __menuOption_Menu_StopEngine; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_StartEngine(BasePlayer player) { }
-
-public bool Menu_EngineOn_ShowIf(BasePlayer player) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_StopEngine(BasePlayer player) { }
+	public void Menu_StartEngine(BasePlayer player) { }
 
-public bool Menu_EngineOff_ShowIf(BasePlayer player) { }
+	public bool Menu_EngineOn_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_StopEngine(BasePlayer player) { }
+
+	public bool Menu_EngineOff_ShowIf(BasePlayer player) { }
+
+	public void .ctor() { }
 
 }
 
@@ -1199,7 +1199,7 @@ public class ModularCar : BaseModularVehicle, IVehicleLockUser, VehicleChassisVi
 	private TimeSince timeSinceEnginePerfCheck; 
 	private bool failedStartWasEngineProblem; 
 	private bool wasBraking; 
-private const float FAILED_START_LIGHT_TIME = 1;
+	private const float FAILED_START_LIGHT_TIME = 1;
 	private static int detailColorID; 
 	[HeaderAttribute] 
 	public ModularCarChassisVisuals chassisVisuals; 
@@ -1229,163 +1229,163 @@ private const float FAILED_START_LIGHT_TIME = 1;
 	public static float population; 
 	[ServerVar] 
 	public static float outsidedecayminutes; 
-public const BUTTON RapidSteerButton = 128;
+	public const BUTTON RapidSteerButton = 128;
 	public ModularCarLock carLock; 
 	private VehicleEngineController.EngineState<GroundVehicle> lastSetEngineState; 
 	private float cachedFuelFraction; 
 
-public override bool HasMenuOptions { get; }
-public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataFL { get; set; }
-public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataFR { get; set; }
-public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataRL { get; set; }
-public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataRR { get; set; }
-public override float DriveWheelVelocity { get; }
-public float DriveWheelSlip { get; }
-public float SteerAngle { get; }
-public ItemDefinition AssociatedItemDef { get; }
-public float MaxSteerAngle { get; }
-public override bool IsLockable { get; }
+	public override bool HasMenuOptions { get; }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataFL { get; set; }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataFR { get; set; }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataRL { get; set; }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> WheelDataRR { get; set; }
+	public override float DriveWheelVelocity { get; }
+	public float DriveWheelSlip { get; }
+	public float SteerAngle { get; }
+	public ItemDefinition AssociatedItemDef { get; }
+	public float MaxSteerAngle { get; }
+	public override bool IsLockable { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-
-	[CompilerGeneratedAttribute] 
-public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataFL() { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WheelDataFL(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataFL() { }
 
 	[CompilerGeneratedAttribute] 
-public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataFR() { }
+	private void set_WheelDataFL(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WheelDataFR(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataFR() { }
 
 	[CompilerGeneratedAttribute] 
-public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataRL() { }
+	private void set_WheelDataFR(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WheelDataRL(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataRL() { }
 
 	[CompilerGeneratedAttribute] 
-public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataRR() { }
+	private void set_WheelDataRL(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WheelDataRR(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
+	public VehicleChassisVisuals.ClientWheelData<ModularCar> get_WheelDataRR() { }
 
-protected override void ClientInit(Entity info) { }
+	[CompilerGeneratedAttribute] 
+	private void set_WheelDataRR(VehicleChassisVisuals.ClientWheelData<ModularCar> value) { }
 
-protected override void OnLifeStateChanged() { }
+	protected override void ClientInit(Entity info) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	protected override void OnLifeStateChanged() { }
 
-public bool HasAnEngineAtLowPerformance() { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public bool HasLowFuel() { }
+	public bool HasAnEngineAtLowPerformance() { }
 
-public bool HadRecentFailedEngineStart() { }
+	public bool HasLowFuel() { }
 
-protected override void SpawnGibs() { }
+	public bool HadRecentFailedEngineStart() { }
 
-protected override void GroundVehicleClientTick() { }
+	protected override void SpawnGibs() { }
 
-protected override void OnClientTickStopped() { }
+	protected override void GroundVehicleClientTick() { }
 
-protected override bool IsBraking() { }
+	protected override void OnClientTickStopped() { }
+
+	protected override bool IsBraking() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_FuelStorage(BasePlayer player) { }
+	public void Menu_FuelStorage(BasePlayer player) { }
 
-public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
+	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Locked(BasePlayer player) { }
+	public void Menu_Locked(BasePlayer player) { }
 
-public bool Menu_Locked_ShowIf(BasePlayer player) { }
+	public bool Menu_Locked_ShowIf(BasePlayer player) { }
 
-public override bool MountMenuVisible(BasePlayer player) { }
+	public override bool MountMenuVisible(BasePlayer player) { }
 
-public override float GetHUDHealth() { }
+	public override float GetHUDHealth() { }
 
-public override float GetHUDMaxHealth() { }
-
-	[BaseEntity.RPC_Client] 
-private void ModularCarUpdate(BaseEntity.RPCMessage msg) { }
+	public override float GetHUDMaxHealth() { }
 
 	[BaseEntity.RPC_Client] 
-private void EngineStartFailed(BaseEntity.RPCMessage msg) { }
+	private void ModularCarUpdate(BaseEntity.RPCMessage msg) { }
 
-public override float get_DriveWheelVelocity() { }
+	[BaseEntity.RPC_Client] 
+	private void EngineStartFailed(BaseEntity.RPCMessage msg) { }
 
-public float get_DriveWheelSlip() { }
+	public override float get_DriveWheelVelocity() { }
 
-public float get_SteerAngle() { }
+	public float get_DriveWheelSlip() { }
 
-public ItemDefinition get_AssociatedItemDef() { }
+	public float get_SteerAngle() { }
 
-public float get_MaxSteerAngle() { }
+	public ItemDefinition get_AssociatedItemDef() { }
 
-public override bool get_IsLockable() { }
+	public float get_MaxSteerAngle() { }
 
-public override void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public override bool get_IsLockable() { }
 
-public override void InitShared() { }
+	public override void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public override float MaxHealth() { }
+	public override void InitShared() { }
 
-public override float StartHealth() { }
+	public override float MaxHealth() { }
 
-public float TotalHealth() { }
+	public override float StartHealth() { }
 
-public float TotalMaxHealth() { }
+	public float TotalHealth() { }
 
-public override float GetMaxForwardSpeed() { }
+	public float TotalMaxHealth() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override float GetMaxForwardSpeed() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override float GetThrottleInput() { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public override float GetBrakeInput() { }
+	public override float GetThrottleInput() { }
 
-public float GetMaxDriveForce() { }
+	public override float GetBrakeInput() { }
 
-public float GetFuelFraction() { }
+	public float GetMaxDriveForce() { }
 
-public bool PlayerHasUnlockPermission(BasePlayer player) { }
+	public float GetFuelFraction() { }
 
-public override bool PlayerCanUseThis(BasePlayer player, ModularCarLock.LockType lockType) { }
+	public bool PlayerHasUnlockPermission(BasePlayer player) { }
 
-public bool PlayerCanDestroyLock(BasePlayer player, BaseVehicleModule viaModule) { }
+	public override bool PlayerCanUseThis(BasePlayer player, ModularCarLock.LockType lockType) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public bool PlayerCanDestroyLock(BasePlayer player, BaseVehicleModule viaModule) { }
 
-protected override bool CanPushNow(BasePlayer pusher) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-protected bool RefreshEngineState() { }
+	protected override bool CanPushNow(BasePlayer pusher) { }
 
-private float RollOffDriveForce(float driveForce) { }
+	protected bool RefreshEngineState() { }
 
-private void RefreshChassisProtectionState() { }
+	private float RollOffDriveForce(float driveForce) { }
 
-protected override void ModuleEntityAdded(BaseVehicleModule addedModule) { }
+	private void RefreshChassisProtectionState() { }
 
-protected override void ModuleEntityRemoved(BaseVehicleModule removedModule) { }
+	protected override void ModuleEntityAdded(BaseVehicleModule addedModule) { }
 
-public void .ctor() { }
+	protected override void ModuleEntityRemoved(BaseVehicleModule removedModule) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -1402,17 +1402,17 @@ public class ModularCar.SpawnSettings // TypeDefIndex: 8416
 	public ModularCar.SpawnSettings.AdminBonus adminBonus; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ModularCar.SpawnSettings.AdminBonus // TypeDefIndex: 8417
 {
 	public int value__; 
-public const ModularCar.SpawnSettings.AdminBonus None = 0;
-public const ModularCar.SpawnSettings.AdminBonus T1PlusFuel = 1;
-public const ModularCar.SpawnSettings.AdminBonus T2PlusFuel = 2;
-public const ModularCar.SpawnSettings.AdminBonus T3PlusFuel = 3;
+	public const ModularCar.SpawnSettings.AdminBonus None = 0;
+	public const ModularCar.SpawnSettings.AdminBonus T1PlusFuel = 1;
+	public const ModularCar.SpawnSettings.AdminBonus T2PlusFuel = 2;
+	public const ModularCar.SpawnSettings.AdminBonus T3PlusFuel = 3;
 
 }
 
@@ -1468,133 +1468,133 @@ public class ModularCarGarage : ContainerIOEntity // TypeDefIndex: 8418
 	private ModularCarGarage.VehicleLiftState vehicleLiftState; 
 	private Sound liftLoopSound; 
 	private Vector3 downPos; 
-public const BaseEntity.Flags DestroyingChassis = 16384;
-public const float TimeToDestroyChassis = 10;
+	public const BaseEntity.Flags DestroyingChassis = 16384;
+	public const float TimeToDestroyChassis = 10;
 
-public override bool HasMenuOptions { get; }
-public float TimeLeftToCancelChassisDestroy { get; }
-public bool PlatformIsOccupied { get; set; }
-public bool HasEditableOccupant { get; set; }
-public bool HasDriveableOccupant { get; set; }
-public ModularCarGarage.OccupantLock OccupantLockState { get; set; }
-public int OccupantLockID { get; set; }
-private bool LiftIsUp { get; }
-private bool LiftIsMoving { get; }
-private bool LiftIsDown { get; }
-public bool IsDestroyingChassis { get; }
+	public override bool HasMenuOptions { get; }
+	public float TimeLeftToCancelChassisDestroy { get; }
+	public bool PlatformIsOccupied { get; set; }
+	public bool HasEditableOccupant { get; set; }
+	public bool HasDriveableOccupant { get; set; }
+	public ModularCarGarage.OccupantLock OccupantLockState { get; set; }
+	public int OccupantLockID { get; set; }
+	private bool LiftIsUp { get; }
+	private bool LiftIsMoving { get; }
+	private bool LiftIsDown { get; }
+	public bool IsDestroyingChassis { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void TryRepair(uint itemUID) { }
+	public void TryRepair(uint itemUID) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void ClientSelectedLootItem(Item item) { }
+	public void ClientSelectedLootItem(Item item) { }
 
-public override int GetMoveToContainerIndex(BasePlayer player, Item item) { }
+	public override int GetMoveToContainerIndex(BasePlayer player, Item item) { }
 
-private bool PlayerHasInternalModuleLoot() { }
+	private bool PlayerHasInternalModuleLoot() { }
 
-public void ClientRequestAddLock() { }
+	public void ClientRequestAddLock() { }
 
-public void ClientRequestRemoveLock() { }
+	public void ClientRequestRemoveLock() { }
 
-public void ClientRequestNewKey() { }
+	public void ClientRequestNewKey() { }
 
-private void RefreshPoweredLightState() { }
+	private void RefreshPoweredLightState() { }
 
-private void RefreshInUseLightState() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_EditVehicle(BasePlayer player) { }
-
-public bool Menu_EditVehicle_ShowIf(BasePlayer player) { }
+	private void RefreshInUseLightState() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_InsufficientPower(BasePlayer player) { }
+	public void Menu_EditVehicle(BasePlayer player) { }
 
-public bool Menu_InsufficientPower_ShowIf(BasePlayer player) { }
+	public bool Menu_EditVehicle_ShowIf(BasePlayer player) { }
 
-public void StartChassisDestroy() { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_InsufficientPower(BasePlayer player) { }
 
-public void CancelChassisDestroy() { }
+	public bool Menu_InsufficientPower_ShowIf(BasePlayer player) { }
 
-public float get_TimeLeftToCancelChassisDestroy() { }
+	public void StartChassisDestroy() { }
 
-	[CompilerGeneratedAttribute] 
-public bool get_PlatformIsOccupied() { }
+	public void CancelChassisDestroy() { }
 
-	[CompilerGeneratedAttribute] 
-private void set_PlatformIsOccupied(bool value) { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_HasEditableOccupant() { }
-
-	[CompilerGeneratedAttribute] 
-private void set_HasEditableOccupant(bool value) { }
+	public float get_TimeLeftToCancelChassisDestroy() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_HasDriveableOccupant() { }
+	public bool get_PlatformIsOccupied() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_HasDriveableOccupant(bool value) { }
+	private void set_PlatformIsOccupied(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public ModularCarGarage.OccupantLock get_OccupantLockState() { }
+	public bool get_HasEditableOccupant() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_OccupantLockState(ModularCarGarage.OccupantLock value) { }
+	private void set_HasEditableOccupant(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_OccupantLockID() { }
+	public bool get_HasDriveableOccupant() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_OccupantLockID(int value) { }
+	private void set_HasDriveableOccupant(bool value) { }
 
-private bool get_LiftIsUp() { }
+	[CompilerGeneratedAttribute] 
+	public ModularCarGarage.OccupantLock get_OccupantLockState() { }
 
-private bool get_LiftIsMoving() { }
+	[CompilerGeneratedAttribute] 
+	private void set_OccupantLockState(ModularCarGarage.OccupantLock value) { }
 
-private bool get_LiftIsDown() { }
+	[CompilerGeneratedAttribute] 
+	public int get_OccupantLockID() { }
 
-public bool get_IsDestroyingChassis() { }
+	[CompilerGeneratedAttribute] 
+	private void set_OccupantLockID(int value) { }
 
-public override void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	private bool get_LiftIsUp() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	private bool get_LiftIsMoving() { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	private bool get_LiftIsDown() { }
 
-public override int ConsumptionAmount() { }
+	public bool get_IsDestroyingChassis() { }
 
-private void SetOccupantState(bool hasOccupant, bool editableOccupant, bool driveableOccupant, ModularCarGarage.OccupantLock occupantLockState, int occupantLockID, bool forced = False) { }
+	public override void PreProcess(IPrefabProcessor process, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-private void RefreshLiftState(bool forced = False) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-private void MoveLift(ModularCarGarage.VehicleLiftState desiredLiftState, float startDelay = 0, bool forced = False) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-private void MoveLiftUp() { }
+	public override int ConsumptionAmount() { }
 
-private void MoveLiftDown() { }
+	private void SetOccupantState(bool hasOccupant, bool editableOccupant, bool driveableOccupant, ModularCarGarage.OccupantLock occupantLockState, int occupantLockID, bool forced = False) { }
 
-private void StartLiftSounds() { }
+	private void RefreshLiftState(bool forced = False) { }
 
-private void UpdateLiftSounds() { }
+	private void MoveLift(ModularCarGarage.VehicleLiftState desiredLiftState, float startDelay = 0, bool forced = False) { }
 
-public void .ctor() { }
+	private void MoveLiftUp() { }
+
+	private void MoveLiftDown() { }
+
+	private void StartLiftSounds() { }
+
+	private void UpdateLiftSounds() { }
+
+	public void .ctor() { }
 
 }
 
@@ -1604,24 +1604,24 @@ public class ModularCarGarage.ChassisBuildOption // TypeDefIndex: 8419
 	public ItemDefinition itemDef; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ModularCarGarage.OccupantLock // TypeDefIndex: 8420
 {
 	public int value__; 
-public const ModularCarGarage.OccupantLock CannotHaveLock = 0;
-public const ModularCarGarage.OccupantLock NoLock = 1;
-public const ModularCarGarage.OccupantLock HasLock = 2;
+	public const ModularCarGarage.OccupantLock CannotHaveLock = 0;
+	public const ModularCarGarage.OccupantLock NoLock = 1;
+	public const ModularCarGarage.OccupantLock HasLock = 2;
 
 }
 
 private enum ModularCarGarage.VehicleLiftState // TypeDefIndex: 8421
 {
 	public int value__; 
-public const ModularCarGarage.VehicleLiftState Down = 0;
-public const ModularCarGarage.VehicleLiftState Up = 1;
+	public const ModularCarGarage.VehicleLiftState Down = 0;
+	public const ModularCarGarage.VehicleLiftState Up = 1;
 
 }
 
@@ -1651,14 +1651,14 @@ public class MotorRowboat : BaseBoat // TypeDefIndex: 8422
 	private bool wasEngineOn; 
 	private float nextSplashAccent; 
 	private int prevSteering; 
-protected const BaseEntity.Flags Flag_EngineOn = 128;
-protected const BaseEntity.Flags Flag_ThrottleOn = 256;
-protected const BaseEntity.Flags Flag_TurnLeft = 512;
-protected const BaseEntity.Flags Flag_TurnRight = 1024;
-protected const BaseEntity.Flags Flag_Submerged = 2048;
-protected const BaseEntity.Flags Flag_HasFuel = 16384;
-protected const BaseEntity.Flags Flag_RecentlyPushed = 65536;
-private const float submergeFractionMinimum = 0,85;
+	protected const BaseEntity.Flags Flag_EngineOn = 128;
+	protected const BaseEntity.Flags Flag_ThrottleOn = 256;
+	protected const BaseEntity.Flags Flag_TurnLeft = 512;
+	protected const BaseEntity.Flags Flag_TurnRight = 1024;
+	protected const BaseEntity.Flags Flag_Submerged = 2048;
+	protected const BaseEntity.Flags Flag_HasFuel = 16384;
+	protected const BaseEntity.Flags Flag_RecentlyPushed = 65536;
+	private const float submergeFractionMinimum = 0,85;
 	[HeaderAttribute] 
 	public GameObjectRef fuelStoragePrefab; 
 	public float fuelPerSec; 
@@ -1700,80 +1700,80 @@ private const float submergeFractionMinimum = 0,85;
 	protected float currentEngineRotation; 
 	protected float propellerRotationSpeed; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void UpdateSounds() { }
+	public void UpdateSounds() { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateWake() { }
+	public void UpdateWake() { }
 
-public void UpdateEffects() { }
+	public void UpdateEffects() { }
 
-public override void InitializeClientEffects() { }
+	public override void InitializeClientEffects() { }
 
-public virtual void ShutdownClientEffects() { }
+	public virtual void ShutdownClientEffects() { }
 
-public virtual void UpdateEngineRotation() { }
+	public virtual void UpdateEngineRotation() { }
 
-public override void SetNetworkPosition(Vector3 vPos) { }
+	public override void SetNetworkPosition(Vector3 vPos) { }
 
-public override bool MountMenuVisible(BasePlayer player) { }
+	public override bool MountMenuVisible(BasePlayer player) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public virtual bool LookingAtEngine(BasePlayer player) { }
+	public virtual bool LookingAtEngine(BasePlayer player) { }
 
-public virtual bool LookingAtFuelArea(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_StartEngine(BasePlayer player) { }
-
-public bool Menu_StartEngine_ShowIf(BasePlayer player) { }
+	public virtual bool LookingAtFuelArea(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_StopEngine(BasePlayer player) { }
+	public void Menu_StartEngine(BasePlayer player) { }
 
-public bool Menu_StopEngine_ShowIf(BasePlayer player) { }
+	public bool Menu_StartEngine_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_FuelStorage(BasePlayer player) { }
+	public void Menu_StopEngine(BasePlayer player) { }
 
-public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
+	public bool Menu_StopEngine_ShowIf(BasePlayer player) { }
 
-public override void OnSignal(BaseEntity.Signal signal, string arg) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_FuelStorage(BasePlayer player) { }
 
-protected override bool CanPushNow(BasePlayer pusher) { }
+	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
-private bool ShowPushMenu(BasePlayer player) { }
+	public override void OnSignal(BaseEntity.Signal signal, string arg) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	protected override bool CanPushNow(BasePlayer pusher) { }
 
-protected override void WorkshopMode() { }
+	private bool ShowPushMenu(BasePlayer player) { }
 
-public void .ctor() { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private static void .cctor() { }
+	protected override void WorkshopMode() { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -1797,72 +1797,72 @@ public class VehicleModuleCamper : VehicleModuleSeating // TypeDefIndex: 8477
 	private EntityRef<Locker> activeLocker; 
 	private EntityRef<StorageContainer> activeStorage; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-public override bool IsOnThisModule(BasePlayer player) { }
+	public override bool IsOnThisModule(BasePlayer player) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_MakeBed(BasePlayer player) { }
-
-public virtual bool Menu_MakeBed_ShowIf(BasePlayer player) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_ClearBedOwner(BasePlayer player) { }
+	public void Menu_MakeBed(BasePlayer player) { }
 
-public virtual bool Menu_ClearBedOwner_ShowIf(BasePlayer player) { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Icon] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
-public void Menu_AssignToFriend(BasePlayer player) { }
-
-public virtual bool Menu_AssignToFriend_Test(BasePlayer player) { }
+	public virtual bool Menu_MakeBed_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Rename(BasePlayer player) { }
+	public void Menu_ClearBedOwner(BasePlayer player) { }
 
-protected virtual bool CanRename_Test(BasePlayer player) { }
+	public virtual bool Menu_ClearBedOwner_ShowIf(BasePlayer player) { }
 
-private SleepingBagCamper GetSleepingBagForPlayer(BasePlayer p) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_AssignToFriend(BasePlayer player) { }
+
+	public virtual bool Menu_AssignToFriend_Test(BasePlayer player) { }
+
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Icon] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.ShowIf] 
+	public void Menu_Rename(BasePlayer player) { }
+
+	protected virtual bool CanRename_Test(BasePlayer player) { }
+
+	private SleepingBagCamper GetSleepingBagForPlayer(BasePlayer p) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_OpenLocker(BasePlayer player) { }
+	public void Menu_OpenLocker(BasePlayer player) { }
 
-public bool Menu_OpenLocker_ShowIf(BasePlayer player) { }
+	public bool Menu_OpenLocker_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_OpenStorage(BasePlayer player) { }
+	public void Menu_OpenStorage(BasePlayer player) { }
 
-public bool Menu_OpenStorage_ShowIf(BasePlayer player) { }
+	public bool Menu_OpenStorage_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -1894,7 +1894,7 @@ public class VehicleModuleSeating : BaseVehicleModule, IPrefabPreProcess // Type
 	[SerializeField] 
 	private SoundDefinition hornStart; 
 	private Sound activeHorn; 
-private const BaseEntity.Flags FLAG_HORN = 65536;
+	private const BaseEntity.Flags FLAG_HORN = 65536;
 	private float steerPercent; 
 	private float throttlePercent; 
 	private float brakePercent; 
@@ -1906,77 +1906,77 @@ private const BaseEntity.Flags FLAG_HORN = 65536;
 	private MaterialPropertyBlock dashboardLightPB; 
 	private static int emissionColorID; 
 
-public override bool HasMenuOptions { get; }
-public override bool HasSeating { get; }
-protected ModularCar Car { get; set; }
-protected bool IsOnACar { get; }
-protected bool IsOnAVehicleLockUser { get; }
-public bool DoorsAreLockable { get; }
+	public override bool HasMenuOptions { get; }
+	public override bool HasSeating { get; }
+	protected ModularCar Car { get; set; }
+	protected bool IsOnACar { get; }
+	protected bool IsOnAVehicleLockUser { get; }
+	public bool DoorsAreLockable { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override bool get_HasSeating() { }
-
-	[CompilerGeneratedAttribute] 
-protected ModularCar get_Car() { }
+	public override bool get_HasSeating() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Car(ModularCar value) { }
+	protected ModularCar get_Car() { }
 
-protected bool get_IsOnACar() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Car(ModularCar value) { }
 
-protected bool get_IsOnAVehicleLockUser() { }
+	protected bool get_IsOnACar() { }
 
-public bool get_DoorsAreLockable() { }
+	protected bool get_IsOnAVehicleLockUser() { }
 
-public override void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
+	public bool get_DoorsAreLockable() { }
 
-public override void ClientVehicleTick() { }
+	public override void PreProcess(IPrefabProcessor preProcess, GameObject rootObj, string name, bool serverside, bool clientside, bool bundling) { }
 
-public override void OnClientTickStopped() { }
+	public override void ClientVehicleTick() { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void OnClientTickStopped() { }
 
-private void SetCheckEngineLightState(bool isOn) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-private void SetFuelLightState(bool isOn) { }
+	private void SetCheckEngineLightState(bool isOn) { }
 
-private void SetLightState(bool isOn, int lightMatIndex, Color lightEmission) { }
+	private void SetFuelLightState(bool isOn) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	private void SetLightState(bool isOn, int lightMatIndex, Color lightEmission) { }
 
-public bool ValidMountRay(BasePlayer player) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public override bool Menu_Locked_ShowIf(BasePlayer player) { }
+	public bool ValidMountRay(BasePlayer player) { }
 
-private bool LookingAtAMountHotSpot(BasePlayer localPlayer) { }
+	public override bool Menu_Locked_ShowIf(BasePlayer player) { }
+
+	private bool LookingAtAMountHotSpot(BasePlayer localPlayer) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_DestroyLock(BasePlayer player) { }
+	public void Menu_DestroyLock(BasePlayer player) { }
 
-public bool Menu_DestroyLock_ShowIf(BasePlayer player) { }
+	public bool Menu_DestroyLock_ShowIf(BasePlayer player) { }
 
-public virtual bool IsOnThisModule(BasePlayer player) { }
+	public virtual bool IsOnThisModule(BasePlayer player) { }
 
-public bool HasADriverSeat() { }
+	public bool HasADriverSeat() { }
 
-public override void ModuleAdded(BaseModularVehicle vehicle, int firstSocketIndex) { }
+	public override void ModuleAdded(BaseModularVehicle vehicle, int firstSocketIndex) { }
 
-public override void ModuleRemoved() { }
+	public override void ModuleRemoved() { }
 
-public bool PlayerCanDestroyLock(BasePlayer player) { }
+	public bool PlayerCanDestroyLock(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -1986,7 +1986,7 @@ public class VehicleModuleSeating.MountHotSpot // TypeDefIndex: 8479
 	public Vector2 size; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2019,7 +2019,7 @@ public class VehicleModuleSeating.Seating // TypeDefIndex: 8480
 	public Color fuelLightEmission; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2030,30 +2030,30 @@ public class VehicleModuleStorage : VehicleModuleSeating // TypeDefIndex: 8481
 	private VehicleModuleStorage.Storage storage; 
 	private EntityRef storageUnitInstance; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public IItemContainerEntity GetContainer() { }
+	public IItemContainerEntity GetContainer() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Open(BasePlayer player) { }
+	public void Menu_Open(BasePlayer player) { }
 
-public bool Menu_Open_ShowIf(BasePlayer player) { }
+	public bool Menu_Open_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2063,7 +2063,7 @@ public class VehicleModuleStorage.Storage // TypeDefIndex: 8482
 	public Transform storageUnitPoint; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2078,29 +2078,29 @@ public class VehicleModuleTaxi : VehicleModuleStorage // TypeDefIndex: 8483
 	[SerializeField] 
 	private float maxKickVelocity; 
 
-public override bool HasMenuOptions { get; }
-private Vector3 KickButtonPos { get; }
+	public override bool HasMenuOptions { get; }
+	private Vector3 KickButtonPos { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private Vector3 get_KickButtonPos() { }
+	private Vector3 get_KickButtonPos() { }
 
-private bool CanKickPassengers(BasePlayer player) { }
+	private bool CanKickPassengers(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Kick_Passengers(BasePlayer player) { }
+	public void Menu_Kick_Passengers(BasePlayer player) { }
 
-public bool Menu_Kick_Passengers_ShowIf(BasePlayer player) { }
+	public bool Menu_Kick_Passengers_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2108,22 +2108,22 @@ public class ModularCarOven : BaseOven // TypeDefIndex: 8608
 {
 	private BaseVehicleModule moduleParent; 
 
-private BaseVehicleModule ModuleParent { get; }
+	private BaseVehicleModule ModuleParent { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private BaseVehicleModule get_ModuleParent() { }
+	private BaseVehicleModule get_ModuleParent() { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-protected override bool SwitchOff_ShowIf(BasePlayer player) { }
+	protected override bool SwitchOff_ShowIf(BasePlayer player) { }
 
-protected override bool SwitchOn_ShowIf(BasePlayer player) { }
+	protected override bool SwitchOn_ShowIf(BasePlayer player) { }
 
-protected override bool Menu_Open_ShowIf(BasePlayer player) { }
+	protected override bool Menu_Open_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2133,15 +2133,15 @@ public class VehicleVendor : NPCTalking // TypeDefIndex: 8851
 	public VehicleSpawner vehicleSpawner; 
 
 
-public override string GetConversationStartSpeech(BasePlayer player) { }
+	public override string GetConversationStartSpeech(BasePlayer player) { }
 
-public VehicleSpawner GetVehicleSpawner() { }
+	public VehicleSpawner GetVehicleSpawner() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override ConversationData GetConversationFor(BasePlayer player) { }
+	public override ConversationData GetConversationFor(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2155,11 +2155,11 @@ public class VehicleSpawner : BaseEntity // TypeDefIndex: 8852
 	public float safeRadius; 
 
 
-public virtual int GetOccupyLayer() { }
+	public virtual int GetOccupyLayer() { }
 
-public BaseVehicle GetVehicleOccupying() { }
+	public BaseVehicle GetVehicleOccupying() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2169,7 +2169,7 @@ public class VehicleSpawner.SpawnPair // TypeDefIndex: 8853
 	public GameObjectRef prefabToSpawn; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2202,25 +2202,25 @@ public class EngineAudioClip : MonoBehaviour, IClientComponent // TypeDefIndex: 
 	private bool audioDataLoaded; 
 
 
-private int GetBucketRPM(int RPM) { }
+	private int GetBucketRPM(int RPM) { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateRPM() { }
+	private void UpdateRPM() { }
 
-private void InitAudioClip() { }
+	private void InitAudioClip() { }
 
-private void OnAudioRead(float[] data) { }
+	private void OnAudioRead(float[] data) { }
 
-private void SpawnGrain() { }
+	private void SpawnGrain() { }
 
-private void CleanupFinishedGrains() { }
+	private void CleanupFinishedGrains() { }
 
-private void SetupRPMBuckets() { }
+	private void SetupRPMBuckets() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2233,7 +2233,7 @@ public class EngineAudioClip.EngineCycle // TypeDefIndex: 8988
 	public int id; 
 
 
-public void .ctor(int RPM, int startSample, int endSample, float period, int id) { }
+	public void .ctor(int RPM, int startSample, int endSample, float period, int id) { }
 
 }
 
@@ -2244,13 +2244,13 @@ public class EngineAudioClip.EngineCycleBucket // TypeDefIndex: 8989
 	public List<int> remainingCycles; 
 
 
-public void .ctor(int RPM) { }
+	public void .ctor(int RPM) { }
 
-public EngineAudioClip.EngineCycle GetCycle(Random random, int lastCycleId) { }
+	public EngineAudioClip.EngineCycle GetCycle(Random random, int lastCycleId) { }
 
-private void ResetRemainingCycles(Random random) { }
+	private void ResetRemainingCycles(Random random) { }
 
-public void Add(EngineAudioClip.EngineCycle cycle) { }
+	public void Add(EngineAudioClip.EngineCycle cycle) { }
 
 }
 
@@ -2269,33 +2269,33 @@ public class EngineAudioClip.Grain // TypeDefIndex: 8990
 	private int releaseStartSample; 
 	private int endSample; 
 
-public bool finished { get; }
+	public bool finished { get; }
 
 
-public bool get_finished() { }
+	public bool get_finished() { }
 
-public void Init(float[] source, EngineAudioClip.EngineCycle cycle, int cyclePadding) { }
+	public void Init(float[] source, EngineAudioClip.EngineCycle cycle, int cyclePadding) { }
 
-public float GetSample() { }
+	public float GetSample() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class BaseVehicleMountPoint : BaseMountable // TypeDefIndex: 9696
 {
 
-public override bool DirectlyMountable() { }
+	public override bool DirectlyMountable() { }
 
-public override BaseVehicle VehicleParent() { }
+	public override BaseVehicle VehicleParent() { }
 
-public override bool BlocksWaterFor(BasePlayer player) { }
+	public override bool BlocksWaterFor(BasePlayer player) { }
 
-public override float WaterFactorForPlayer(BasePlayer player) { }
+	public override float WaterFactorForPlayer(BasePlayer player) { }
 
-public override float AirFactor() { }
+	public override float AirFactor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2306,15 +2306,15 @@ public class BaseVehicleSeat : BaseVehicleMountPoint // TypeDefIndex: 9697
 	public bool forcePlayerModelUpdate; 
 
 
-public override void OnClientInput(BasePlayer player) { }
+	public override void OnClientInput(BasePlayer player) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public override float GetMountedAnimationSpeed() { }
+	public override float GetMountedAnimationSpeed() { }
 
-public override bool ForceUpdatePlayerModel(BasePlayer p) { }
+	public override bool ForceUpdatePlayerModel(BasePlayer p) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2338,9 +2338,9 @@ public class EngineAudioSet : ScriptableObject // TypeDefIndex: 9734
 	public SoundDefinition badPerformanceLoop; 
 
 
-public BlendedEngineLoopDefinition GetEngineLoopDef(int numEngines) { }
+	public BlendedEngineLoopDefinition GetEngineLoopDef(int numEngines) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2351,11 +2351,11 @@ public class ModularCarCentralLockingSwitch : VehicleModuleButtonComponent // Ty
 	public Vector3 switchOnPos; 
 
 
-public override void ClientUse(BasePlayer player, BaseVehicleModule parentModule) { }
+	public override void ClientUse(BasePlayer player, BaseVehicleModule parentModule) { }
 
-public override void ClientUpdateTick(BaseVehicleModule parentModule) { }
+	public override void ClientUpdateTick(BaseVehicleModule parentModule) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2368,19 +2368,19 @@ public class ModularCarChassisVisuals : VehicleChassisVisuals<ModularCar>, IClie
 	private ModularCar modularCar; 
 
 
-public override void Init(ModularCar owner, VehicleChassisVisuals.ClientWheelData<ModularCar>[] clientWheelData) { }
+	public override void Init(ModularCar owner, VehicleChassisVisuals.ClientWheelData<ModularCar>[] clientWheelData) { }
 
-protected override void PreWheelUpdateTick() { }
+	protected override void PreWheelUpdateTick() { }
 
-protected override void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt) { }
+	protected override void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt) { }
 
-protected override void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData, bool isOn, float steer, float dt) { }
+	protected override void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData, bool isOn, float steer, float dt) { }
 
-private void UpdateAxle(Transform axle, VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataL, VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataR, float dt, bool instant) { }
+	private void UpdateAxle(Transform axle, VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataL, VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataR, float dt, bool instant) { }
 
-private void LookAt(ModularCarChassisVisuals.LookAtTarget lookAt) { }
+	private void LookAt(ModularCarChassisVisuals.LookAtTarget lookAt) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2393,7 +2393,7 @@ public class ModularCarChassisVisuals.Steering // TypeDefIndex: 9739
 	public ModularCarChassisVisuals.LookAtTarget steeringArm; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2404,14 +2404,14 @@ public class ModularCarChassisVisuals.LookAtTarget // TypeDefIndex: 9740
 	public Vector3 angleAdjust; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class VehicleLiftOccupantTrigger : TriggerBase // TypeDefIndex: 9741
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2420,40 +2420,40 @@ public class ModularCarLock // TypeDefIndex: 9743
 	private readonly bool isServer; 
 	private readonly ModularCar owner; 
 	public int LockID; 
-public const BaseEntity.Flags FLAG_CENTRAL_LOCKING = 256;
-public const float LOCK_DESTROY_HEALTH = 0,15;
+	public const BaseEntity.Flags FLAG_CENTRAL_LOCKING = 256;
+	public const float LOCK_DESTROY_HEALTH = 0,15;
 
-public bool HasALock { get; }
-public bool IsLocked { get; }
-public bool CentralLockingIsOn { get; }
+	public bool HasALock { get; }
+	public bool IsLocked { get; }
+	public bool CentralLockingIsOn { get; }
 
 
-public bool get_HasALock() { }
+	public bool get_HasALock() { }
 
-public bool get_IsLocked() { }
+	public bool get_IsLocked() { }
 
-public bool get_CentralLockingIsOn() { }
+	public bool get_CentralLockingIsOn() { }
 
-public void .ctor(ModularCar owner, bool isServer) { }
+	public void .ctor(ModularCar owner, bool isServer) { }
 
-public bool PlayerHasUnlockPermission(BasePlayer player) { }
+	public bool PlayerHasUnlockPermission(BasePlayer player) { }
 
-public bool PlayerCanUseThis(BasePlayer player, ModularCarLock.LockType lockType) { }
+	public bool PlayerCanUseThis(BasePlayer player, ModularCarLock.LockType lockType) { }
 
-public bool PlayerCanDestroyLock(BaseVehicleModule viaModule) { }
+	public bool PlayerCanDestroyLock(BaseVehicleModule viaModule) { }
 
-private bool KeyCanUnlockThis(Item key) { }
+	private bool KeyCanUnlockThis(Item key) { }
 
 	[CompilerGeneratedAttribute] 
-private bool <PlayerHasUnlockPermission>b__13_0(Item key) { }
+	private bool <PlayerHasUnlockPermission>b__13_0(Item key) { }
 
 }
 
 public enum ModularCarLock.LockType // TypeDefIndex: 9744
 {
 	public int value__; 
-public const ModularCarLock.LockType Door = 0;
-public const ModularCarLock.LockType General = 1;
+	public const ModularCarLock.LockType Door = 0;
+	public const ModularCarLock.LockType General = 1;
 
 }
 
@@ -2462,7 +2462,7 @@ public class ModularCarPresetConfig : ScriptableObject // TypeDefIndex: 9745
 	public ItemModVehicleModule[] socketItemDefs; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2478,33 +2478,33 @@ public class ModularCarSeat : MouseSteerableSeat // TypeDefIndex: 9746
 	private Vector3 rightHandIKPos; 
 	public float providesComfort; 
 
-public bool HasLeftFootIK { get; }
-public bool HasRightFootIK { get; }
-public Vector3 LeftFootIKPos { get; }
-public Vector3 RightFootIKPos { get; }
-public bool HasLeftHandIK { get; }
-public bool HasRightHandIK { get; }
-public Vector3 LeftHandIKPos { get; }
-public Vector3 RightHandIKPos { get; }
+	public bool HasLeftFootIK { get; }
+	public bool HasRightFootIK { get; }
+	public Vector3 LeftFootIKPos { get; }
+	public Vector3 RightFootIKPos { get; }
+	public bool HasLeftHandIK { get; }
+	public bool HasRightHandIK { get; }
+	public Vector3 LeftHandIKPos { get; }
+	public Vector3 RightHandIKPos { get; }
 
 
-public bool get_HasLeftFootIK() { }
+	public bool get_HasLeftFootIK() { }
 
-public bool get_HasRightFootIK() { }
+	public bool get_HasRightFootIK() { }
 
-public Vector3 get_LeftFootIKPos() { }
+	public Vector3 get_LeftFootIKPos() { }
 
-public Vector3 get_RightFootIKPos() { }
+	public Vector3 get_RightFootIKPos() { }
 
-public bool get_HasLeftHandIK() { }
+	public bool get_HasLeftHandIK() { }
 
-public bool get_HasRightHandIK() { }
+	public bool get_HasRightHandIK() { }
 
-public Vector3 get_LeftHandIKPos() { }
+	public Vector3 get_LeftHandIKPos() { }
 
-public Vector3 get_RightHandIKPos() { }
+	public Vector3 get_RightHandIKPos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2514,13 +2514,13 @@ public class ModularVehicleShopFront : ShopFront // TypeDefIndex: 9747
 	private float maxUseDistance; 
 
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-public override bool ShouldShowLootMenus() { }
+	public override bool ShouldShowLootMenus() { }
 
-private bool WithinUseDistance(BasePlayer player) { }
+	private bool WithinUseDistance(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2531,7 +2531,7 @@ public class CamperSeatConfig : MonoBehaviour // TypeDefIndex: 9748
 	public Transform StoragePosition; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2541,11 +2541,11 @@ public abstract class VehicleModuleButtonComponent : MonoBehaviour // TypeDefInd
 	public SoundDefinition pressSoundDef; 
 
 
-public virtual void ClientUse(BasePlayer player, BaseVehicleModule parentModule) { }
+	public virtual void ClientUse(BasePlayer player, BaseVehicleModule parentModule) { }
 
-public virtual void ClientUpdateTick(BaseVehicleModule parentModule) { }
+	public virtual void ClientUpdateTick(BaseVehicleModule parentModule) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
 }
 
@@ -2563,91 +2563,91 @@ public class VehicleModuleEngine : VehicleModuleStorage // TypeDefIndex: 9750
 	private float <PerformanceFractionFuelEconomy>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private float <OverallPerformanceFraction>k__BackingField; 
-private const float FORCE_MULTIPLIER = 12,75;
-private const float HEALTH_PERFORMANCE_FRACTION = 0,25;
-private const float LOW_PERFORMANCE_THRESHOLD = 0,5;
+	private const float FORCE_MULTIPLIER = 12,75;
+	private const float HEALTH_PERFORMANCE_FRACTION = 0,25;
+	private const float LOW_PERFORMANCE_THRESHOLD = 0,5;
 	private Sound badPerformanceLoop; 
 	private SoundModulation.Modulator badPerformancePitchModulator; 
 	private float prevSmokePercent; 
 
-public override bool HasAnEngine { get; }
-public bool IsUsable { get; set; }
-public float PerformanceFractionAcceleration { get; set; }
-public float PerformanceFractionTopSpeed { get; set; }
-public float PerformanceFractionFuelEconomy { get; set; }
-public float OverallPerformanceFraction { get; set; }
-public bool AtLowPerformance { get; }
-public bool AtPeakPerformance { get; }
-public int KW { get; }
-public EngineAudioSet AudioSet { get; }
-private bool EngineIsOn { get; }
+	public override bool HasAnEngine { get; }
+	public bool IsUsable { get; set; }
+	public float PerformanceFractionAcceleration { get; set; }
+	public float PerformanceFractionTopSpeed { get; set; }
+	public float PerformanceFractionFuelEconomy { get; set; }
+	public float OverallPerformanceFraction { get; set; }
+	public bool AtLowPerformance { get; }
+	public bool AtPeakPerformance { get; }
+	public int KW { get; }
+	public EngineAudioSet AudioSet { get; }
+	private bool EngineIsOn { get; }
 
 
-public override bool get_HasAnEngine() { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_IsUsable() { }
+	public override bool get_HasAnEngine() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsUsable(bool value) { }
+	public bool get_IsUsable() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_PerformanceFractionAcceleration() { }
+	private void set_IsUsable(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_PerformanceFractionAcceleration(float value) { }
+	public float get_PerformanceFractionAcceleration() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_PerformanceFractionTopSpeed() { }
+	private void set_PerformanceFractionAcceleration(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_PerformanceFractionTopSpeed(float value) { }
+	public float get_PerformanceFractionTopSpeed() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_PerformanceFractionFuelEconomy() { }
+	private void set_PerformanceFractionTopSpeed(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_PerformanceFractionFuelEconomy(float value) { }
+	public float get_PerformanceFractionFuelEconomy() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_OverallPerformanceFraction() { }
+	private void set_PerformanceFractionFuelEconomy(float value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_OverallPerformanceFraction(float value) { }
+	public float get_OverallPerformanceFraction() { }
 
-public bool get_AtLowPerformance() { }
+	[CompilerGeneratedAttribute] 
+	private void set_OverallPerformanceFraction(float value) { }
 
-public bool get_AtPeakPerformance() { }
+	public bool get_AtLowPerformance() { }
 
-public int get_KW() { }
+	public bool get_AtPeakPerformance() { }
 
-public EngineAudioSet get_AudioSet() { }
+	public int get_KW() { }
 
-private bool get_EngineIsOn() { }
+	public EngineAudioSet get_AudioSet() { }
 
-public override void InitShared() { }
+	private bool get_EngineIsOn() { }
 
-public override void OnEngineStateChanged(VehicleEngineController.EngineState<GroundVehicle> oldState, VehicleEngineController.EngineState<GroundVehicle> newState) { }
+	public override void InitShared() { }
 
-public override float GetMaxDriveForce() { }
+	public override void OnEngineStateChanged(VehicleEngineController.EngineState<GroundVehicle> oldState, VehicleEngineController.EngineState<GroundVehicle> newState) { }
 
-public void RefreshPerformanceStats(EngineStorage engineStorage) { }
+	public override float GetMaxDriveForce() { }
 
-private float GetPerformanceFraction(float statBoostPercent) { }
+	public void RefreshPerformanceStats(EngineStorage engineStorage) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	private float GetPerformanceFraction(float statBoostPercent) { }
 
-public override void ClientOnEnable() { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override void ClientVehicleTick() { }
+	public override void ClientOnEnable() { }
 
-private void PlayBadPerformanceSound() { }
+	public override void ClientVehicleTick() { }
 
-private void StopBadPerformanceSound() { }
+	private void PlayBadPerformanceSound() { }
 
-private void SetFXState(bool isOn) { }
+	private void StopBadPerformanceSound() { }
 
-public void .ctor() { }
+	private void SetFXState(bool isOn) { }
+
+	public void .ctor() { }
 
 }
 
@@ -2668,7 +2668,7 @@ public class VehicleModuleEngine.Engine // TypeDefIndex: 9751
 	public float exhaustSmokeChangeRate; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2685,13 +2685,13 @@ public class VehicleLight : MonoBehaviour, IClientComponent // TypeDefIndex: 975
 	private static int emissionColorID; 
 
 
-public void SetLightVisuals(bool headlightsOn, bool brakesOn) { }
+	public void SetLightVisuals(bool headlightsOn, bool brakesOn) { }
 
-public static void SetLightVisuals(IReadOnlyList<VehicleLight> lights, bool headlightsOn, bool brakesOn) { }
+	public static void SetLightVisuals(IReadOnlyList<VehicleLight> lights, bool headlightsOn, bool brakesOn) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -2701,7 +2701,7 @@ public class VehicleLight.LightRenderer // TypeDefIndex: 9754
 	public int matIndex; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -2713,11 +2713,11 @@ public class EngineDamageOverTime // TypeDefIndex: 9761
 	private readonly Action trigger; 
 
 
-public void .ctor(float triggerDamage, float maxSeconds, Action trigger) { }
+	public void .ctor(float triggerDamage, float maxSeconds, Action trigger) { }
 
-public void TakeDamage(float amount) { }
+	public void TakeDamage(float amount) { }
 
-private float GetRecentDamage() { }
+	private float GetRecentDamage() { }
 
 }
 
@@ -2727,7 +2727,7 @@ private struct EngineDamageOverTime.RecentDamage // TypeDefIndex: 9762
 	public readonly float amount; 
 
 
-public void .ctor(float time, float amount) { }
+	public void .ctor(float time, float amount) { }
 
 }
 
@@ -2739,158 +2739,158 @@ public abstract class VehicleChassisVisuals<T> : MonoBehaviour // TypeDefIndex: 
 	private float prevSteer; 
 	private bool isStopped; 
 
-public VehicleChassisVisuals.ClientWheelData<T>[] clientWheelData { get; set; }
+	public VehicleChassisVisuals.ClientWheelData<T>[] clientWheelData { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public VehicleChassisVisuals.ClientWheelData<T>[] get_clientWheelData() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.get_clientWheelData
-*/
+	public VehicleChassisVisuals.ClientWheelData<T>[] get_clientWheelData() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.get_clientWheelData
+	*/
 
 	[CompilerGeneratedAttribute] 
-protected void set_clientWheelData(VehicleChassisVisuals.ClientWheelData<T>[] value) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.set_clientWheelData
-*/
+	protected void set_clientWheelData(VehicleChassisVisuals.ClientWheelData<T>[] value) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.set_clientWheelData
+	*/
 
-public virtual void Init(T owner, VehicleChassisVisuals.ClientWheelData<T>[] clientWheelData) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.Init
-|-VehicleChassisVisuals<Snowmobile>.Init
-|-VehicleChassisVisuals<object>.Init
-*/
+	public virtual void Init(T owner, VehicleChassisVisuals.ClientWheelData<T>[] clientWheelData) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.Init
+	|-VehicleChassisVisuals<Snowmobile>.Init
+	|-VehicleChassisVisuals<object>.Init
+	*/
 
-public void UpdateTick(float dt, bool instantForced = False) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.UpdateTick
-|-VehicleChassisVisuals<Snowmobile>.UpdateTick
-|-VehicleChassisVisuals<object>.UpdateTick
-*/
+	public void UpdateTick(float dt, bool instantForced = False) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.UpdateTick
+	|-VehicleChassisVisuals<Snowmobile>.UpdateTick
+	|-VehicleChassisVisuals<object>.UpdateTick
+	*/
 
-public bool IsGrounded() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<Snowmobile>.IsGrounded
-|-VehicleChassisVisuals<object>.IsGrounded
-*/
+	public bool IsGrounded() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<Snowmobile>.IsGrounded
+	|-VehicleChassisVisuals<object>.IsGrounded
+	*/
 
-protected abstract void PreWheelUpdateTick();
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.PreWheelUpdateTick
-*/
+	protected abstract void PreWheelUpdateTick();
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.PreWheelUpdateTick
+	*/
 
-protected abstract void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOn, float steer, float dt);
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.UpdateWheelVisuals
-*/
+	protected abstract void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOn, float steer, float dt);
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.UpdateWheelVisuals
+	*/
 
-protected abstract void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt);
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.PostWheelUpdateTick
-*/
+	protected abstract void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt);
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.PostWheelUpdateTick
+	*/
 
-public float CalculateWheelSlip() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.CalculateWheelSlip
-|-VehicleChassisVisuals<Snowmobile>.CalculateWheelSlip
-|-VehicleChassisVisuals<object>.CalculateWheelSlip
-*/
+	public float CalculateWheelSlip() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.CalculateWheelSlip
+	|-VehicleChassisVisuals<Snowmobile>.CalculateWheelSlip
+	|-VehicleChassisVisuals<object>.CalculateWheelSlip
+	*/
 
-protected void UpdateWheelSuspensionData(VehicleChassisVisuals.ClientWheelData<T> wheelData, Vector3 traceSource, Nullable<Vector3> traceSource2) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.UpdateWheelSuspensionData
-|-VehicleChassisVisuals<Snowmobile>.UpdateWheelSuspensionData
-|-VehicleChassisVisuals<object>.UpdateWheelSuspensionData
-*/
+	protected void UpdateWheelSuspensionData(VehicleChassisVisuals.ClientWheelData<T> wheelData, Vector3 traceSource, Nullable<Vector3> traceSource2) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.UpdateWheelSuspensionData
+	|-VehicleChassisVisuals<Snowmobile>.UpdateWheelSuspensionData
+	|-VehicleChassisVisuals<object>.UpdateWheelSuspensionData
+	*/
 
-protected float GetWheelRotation(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool receivingDriveWheelVels, float dt) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.GetWheelRotation
-|-VehicleChassisVisuals<Snowmobile>.GetWheelRotation
-|-VehicleChassisVisuals<object>.GetWheelRotation
-*/
+	protected float GetWheelRotation(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool receivingDriveWheelVels, float dt) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.GetWheelRotation
+	|-VehicleChassisVisuals<Snowmobile>.GetWheelRotation
+	|-VehicleChassisVisuals<object>.GetWheelRotation
+	*/
 
-protected static void UpdateSteerRotation(Transform t, float steer, int axis) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.UpdateSteerRotation
-|-VehicleChassisVisuals<object>.UpdateSteerRotation
-*/
+	protected static void UpdateSteerRotation(Transform t, float steer, int axis) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.UpdateSteerRotation
+	|-VehicleChassisVisuals<object>.UpdateSteerRotation
+	*/
 
-protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, float throttleInput) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.ShowTerrainFX
-|-VehicleChassisVisuals<object>.ShowTerrainFX
-*/
+	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, float throttleInput) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.ShowTerrainFX
+	|-VehicleChassisVisuals<object>.ShowTerrainFX
+	*/
 
-protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, float throttleInput, float speed, float minSpeed) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<Snowmobile>.ShowTerrainFX
-|-VehicleChassisVisuals<object>.ShowTerrainFX
-*/
+	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, float throttleInput, float speed, float minSpeed) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<Snowmobile>.ShowTerrainFX
+	|-VehicleChassisVisuals<object>.ShowTerrainFX
+	*/
 
-protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOnWater, float spinSlip, TerrainConfig.GroundType groundType, float throttleInput) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.ShowTerrainFX
-*/
+	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOnWater, float spinSlip, TerrainConfig.GroundType groundType, float throttleInput) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.ShowTerrainFX
+	*/
 
-protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOnWater, float spinSlip, TerrainConfig.GroundType groundType, float throttleInput, float speed, float minSpeed) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<Snowmobile>.ShowTerrainFX
-|-VehicleChassisVisuals<object>.ShowTerrainFX
-*/
+	protected static void ShowTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData, bool isOnWater, float spinSlip, TerrainConfig.GroundType groundType, float throttleInput, float speed, float minSpeed) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<Snowmobile>.ShowTerrainFX
+	|-VehicleChassisVisuals<object>.ShowTerrainFX
+	*/
 
-public void UpdateTickStopped() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.UpdateTickStopped
-|-VehicleChassisVisuals<Snowmobile>.UpdateTickStopped
-|-VehicleChassisVisuals<object>.UpdateTickStopped
-*/
+	public void UpdateTickStopped() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.UpdateTickStopped
+	|-VehicleChassisVisuals<Snowmobile>.UpdateTickStopped
+	|-VehicleChassisVisuals<object>.UpdateTickStopped
+	*/
 
-protected virtual void StopAll() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>.StopAll
-|-VehicleChassisVisuals<Snowmobile>.StopAll
-|-VehicleChassisVisuals<object>.StopAll
-*/
+	protected virtual void StopAll() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>.StopAll
+	|-VehicleChassisVisuals<Snowmobile>.StopAll
+	|-VehicleChassisVisuals<object>.StopAll
+	*/
 
-protected static void StopTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.StopTerrainFX
-*/
+	protected static void StopTerrainFX(VehicleChassisVisuals.ClientWheelData<T> wheelData) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.StopTerrainFX
+	*/
 
-protected void .ctor() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<ModularCar>..ctor
-|-VehicleChassisVisuals<Snowmobile>..ctor
-|-VehicleChassisVisuals<object>..ctor
-*/
+	protected void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<ModularCar>..ctor
+	|-VehicleChassisVisuals<Snowmobile>..ctor
+	|-VehicleChassisVisuals<object>..ctor
+	*/
 
 	[CompilerGeneratedAttribute] 
-internal static bool <UpdateWheelSuspensionData>g__GetSuspensionHit|17_0(Vector3 ts, out RaycastHit hit, ref VehicleChassisVisuals.<>c__DisplayClass17_0<T> ) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals<object>.<UpdateWheelSuspensionData>g__GetSuspensionHit|17_0
-*/
+	internal static bool <UpdateWheelSuspensionData>g__GetSuspensionHit|17_0(Vector3 ts, out RaycastHit hit, ref VehicleChassisVisuals.<>c__DisplayClass17_0<T> ) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals<object>.<UpdateWheelSuspensionData>g__GetSuspensionHit|17_0
+	*/
 
 }
 
@@ -2911,23 +2911,23 @@ public class VehicleChassisVisuals.ClientWheelData<T> // TypeDefIndex: 9782
 	public Sound sound; 
 	public SoundModulation.Modulator gainModulator; 
 
-public bool isOnHardGround { get; }
+	public bool isOnHardGround { get; }
 
 
-public bool get_isOnHardGround() { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals.ClientWheelData<ModularCar>.get_isOnHardGround
-|-VehicleChassisVisuals.ClientWheelData<object>.get_isOnHardGround
-*/
+	public bool get_isOnHardGround() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals.ClientWheelData<ModularCar>.get_isOnHardGround
+	|-VehicleChassisVisuals.ClientWheelData<object>.get_isOnHardGround
+	*/
 
-public void .ctor(VisualCarWheel wheel, Transform vehicleTransform) { }
-/* GenericInstMethod :
-|
-|-VehicleChassisVisuals.ClientWheelData<ModularCar>..ctor
-|-VehicleChassisVisuals.ClientWheelData<Snowmobile>..ctor
-|-VehicleChassisVisuals.ClientWheelData<object>..ctor
-*/
+	public void .ctor(VisualCarWheel wheel, Transform vehicleTransform) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleChassisVisuals.ClientWheelData<ModularCar>..ctor
+	|-VehicleChassisVisuals.ClientWheelData<Snowmobile>..ctor
+	|-VehicleChassisVisuals.ClientWheelData<object>..ctor
+	*/
 
 }
 
@@ -2949,104 +2949,104 @@ public class VehicleEngineController<TOwner> // TypeDefIndex: 9786
 	private readonly Transform waterloggedPoint; 
 	private readonly BaseEntity.Flags engineStartingFlag; 
 
-public VehicleEngineController.EngineState<TOwner> CurEngineState { get; }
-public bool IsOn { get; }
-public bool IsOff { get; }
-public bool IsStarting { get; }
-public bool IsStartingOrOn { get; }
-public EntityFuelSystem FuelSystem { get; set; }
+	public VehicleEngineController.EngineState<TOwner> CurEngineState { get; }
+	public bool IsOn { get; }
+	public bool IsOff { get; }
+	public bool IsStarting { get; }
+	public bool IsStartingOrOn { get; }
+	public EntityFuelSystem FuelSystem { get; set; }
 
 
-public VehicleEngineController.EngineState<TOwner> get_CurEngineState() { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<BaseSubmarine>.get_CurEngineState
-|-VehicleEngineController<GroundVehicle>.get_CurEngineState
-|-VehicleEngineController<MiniCopter>.get_CurEngineState
-|-VehicleEngineController<object>.get_CurEngineState
-|-VehicleEngineController<TrainEngine>.get_CurEngineState
-*/
+	public VehicleEngineController.EngineState<TOwner> get_CurEngineState() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<BaseSubmarine>.get_CurEngineState
+	|-VehicleEngineController<GroundVehicle>.get_CurEngineState
+	|-VehicleEngineController<MiniCopter>.get_CurEngineState
+	|-VehicleEngineController<object>.get_CurEngineState
+	|-VehicleEngineController<TrainEngine>.get_CurEngineState
+	*/
 
-public bool get_IsOn() { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<BaseSubmarine>.get_IsOn
-|-VehicleEngineController<GroundVehicle>.get_IsOn
-|-VehicleEngineController<object>.get_IsOn
-*/
+	public bool get_IsOn() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<BaseSubmarine>.get_IsOn
+	|-VehicleEngineController<GroundVehicle>.get_IsOn
+	|-VehicleEngineController<object>.get_IsOn
+	*/
 
-public bool get_IsOff() { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<object>.get_IsOff
-|-VehicleEngineController<TrainEngine>.get_IsOff
-*/
+	public bool get_IsOff() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<object>.get_IsOff
+	|-VehicleEngineController<TrainEngine>.get_IsOff
+	*/
 
-public bool get_IsStarting() { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<MiniCopter>.get_IsStarting
-|-VehicleEngineController<object>.get_IsStarting
-*/
+	public bool get_IsStarting() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<MiniCopter>.get_IsStarting
+	|-VehicleEngineController<object>.get_IsStarting
+	*/
 
-public bool get_IsStartingOrOn() { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<GroundVehicle>.get_IsStartingOrOn
-|-VehicleEngineController<object>.get_IsStartingOrOn
-|-VehicleEngineController<TrainEngine>.get_IsStartingOrOn
-*/
-
-	[CompilerGeneratedAttribute] 
-public EntityFuelSystem get_FuelSystem() { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<BaseSubmarine>.get_FuelSystem
-|-VehicleEngineController<GroundVehicle>.get_FuelSystem
-|-VehicleEngineController<MiniCopter>.get_FuelSystem
-|-VehicleEngineController<object>.get_FuelSystem
-|-VehicleEngineController<TrainEngine>.get_FuelSystem
-*/
+	public bool get_IsStartingOrOn() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<GroundVehicle>.get_IsStartingOrOn
+	|-VehicleEngineController<object>.get_IsStartingOrOn
+	|-VehicleEngineController<TrainEngine>.get_IsStartingOrOn
+	*/
 
 	[CompilerGeneratedAttribute] 
-private void set_FuelSystem(EntityFuelSystem value) { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<object>.set_FuelSystem
-*/
+	public EntityFuelSystem get_FuelSystem() { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<BaseSubmarine>.get_FuelSystem
+	|-VehicleEngineController<GroundVehicle>.get_FuelSystem
+	|-VehicleEngineController<MiniCopter>.get_FuelSystem
+	|-VehicleEngineController<object>.get_FuelSystem
+	|-VehicleEngineController<TrainEngine>.get_FuelSystem
+	*/
 
-public void .ctor(TOwner owner, bool isServer, float engineStartupTime, GameObjectRef fuelStoragePrefab, Transform waterloggedPoint, BaseEntity.Flags engineStartingFlag = 128) { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<BaseSubmarine>..ctor
-|-VehicleEngineController<GroundVehicle>..ctor
-|-VehicleEngineController<MiniCopter>..ctor
-|-VehicleEngineController<object>..ctor
-|-VehicleEngineController<TrainEngine>..ctor
-*/
+	[CompilerGeneratedAttribute] 
+	private void set_FuelSystem(EntityFuelSystem value) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<object>.set_FuelSystem
+	*/
 
-public VehicleEngineController.EngineState<TOwner> EngineStateFrom(BaseEntity.Flags flags) { }
-/* GenericInstMethod :
-|
-|-VehicleEngineController<object>.EngineStateFrom
-|-VehicleEngineController<TrainEngine>.EngineStateFrom
-*/
+	public void .ctor(TOwner owner, bool isServer, float engineStartupTime, GameObjectRef fuelStoragePrefab, Transform waterloggedPoint, BaseEntity.Flags engineStartingFlag = 128) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<BaseSubmarine>..ctor
+	|-VehicleEngineController<GroundVehicle>..ctor
+	|-VehicleEngineController<MiniCopter>..ctor
+	|-VehicleEngineController<object>..ctor
+	|-VehicleEngineController<TrainEngine>..ctor
+	*/
+
+	public VehicleEngineController.EngineState<TOwner> EngineStateFrom(BaseEntity.Flags flags) { }
+	/* GenericInstMethod :
+	|
+	|-VehicleEngineController<object>.EngineStateFrom
+	|-VehicleEngineController<TrainEngine>.EngineStateFrom
+	*/
 
 }
 
 public enum VehicleEngineController.EngineState<TOwner> // TypeDefIndex: 9787
 {
 	public int value__; 
-public const VehicleEngineController.EngineState<TOwner> Off = 0;
-public const VehicleEngineController.EngineState<TOwner> Starting = 1;
-public const VehicleEngineController.EngineState<TOwner> On = 2;
+	public const VehicleEngineController.EngineState<TOwner> Off = 0;
+	public const VehicleEngineController.EngineState<TOwner> Starting = 1;
+	public const VehicleEngineController.EngineState<TOwner> On = 2;
 
 }
 
 public class VehicleSpawnPoint : SpaceCheckingSpawnPoint // TypeDefIndex: 10010
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3068,11 +3068,11 @@ public class EngineItemInformationPanel : ItemInformationPanel // TypeDefIndex: 
 	private GameObject fuelEconomyRoot; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3085,21 +3085,21 @@ public class VehicleEditingItemIcon : MonoBehaviour, IInventoryChanged // TypeDe
 	private ItemIcon itemIcon; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void InventoryChangeRefresh() { }
+	private void InventoryChangeRefresh() { }
 
-private void SetLinkSprite(Sprite sprite) { }
+	private void SetLinkSprite(Sprite sprite) { }
 
-private void ClearLinkSprite() { }
+	private void ClearLinkSprite() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3191,66 +3191,66 @@ public class VehicleEditingPanel : LootPanel // TypeDefIndex: 11061
 	private ModularCarGarage.OccupantLock occupantLockState; 
 	private int occupantLockID; 
 
-private Item CurSelectedItem { get; }
-private ItemContainer ModulesContainer { get; }
-private ItemContainer ChassisContainer { get; }
-private ItemContainer ModuleInternalItemContainer { get; }
+	private Item CurSelectedItem { get; }
+	private ItemContainer ModulesContainer { get; }
+	private ItemContainer ChassisContainer { get; }
+	private ItemContainer ModuleInternalItemContainer { get; }
 
 
-private Item get_CurSelectedItem() { }
+	private Item get_CurSelectedItem() { }
 
-private ItemContainer get_ModulesContainer() { }
+	private ItemContainer get_ModulesContainer() { }
 
-private ItemContainer get_ChassisContainer() { }
+	private ItemContainer get_ChassisContainer() { }
 
-private ItemContainer get_ModuleInternalItemContainer() { }
+	private ItemContainer get_ModuleInternalItemContainer() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public void RepairClicked() { }
+	public void RepairClicked() { }
 
-public void CraftLockClicked() { }
+	public void CraftLockClicked() { }
 
-public void RemoveLockClicked() { }
+	public void RemoveLockClicked() { }
 
-public void DestroyChassisClicked() { }
+	public void DestroyChassisClicked() { }
 
-public void TakeInternalItemsClicked() { }
+	public void TakeInternalItemsClicked() { }
 
-public void OnCopyFromLiquidDown() { }
+	public void OnCopyFromLiquidDown() { }
 
-public void OnCopyFromLiquidUp() { }
+	public void OnCopyFromLiquidUp() { }
 
-private bool SelectedValidLiquidTarget() { }
+	private bool SelectedValidLiquidTarget() { }
 
-private void LiquidCopyFrom() { }
+	private void LiquidCopyFrom() { }
 
-private bool CanTakeLiquid() { }
+	private bool CanTakeLiquid() { }
 
-private ModularCarGarage GetGarage() { }
+	private ModularCarGarage GetGarage() { }
 
-private void RefreshEditUI() { }
+	private void RefreshEditUI() { }
 
-private void RefreshHasVehicle(ModularCarGarage garage, bool forced = False) { }
+	private void RefreshHasVehicle(ModularCarGarage garage, bool forced = False) { }
 
-private void RefreshInfoText() { }
+	private void RefreshInfoText() { }
 
-private void RefreshWarningText() { }
+	private void RefreshWarningText() { }
 
-private void OnSelectedItemChanged(Item newSelectedItem) { }
+	private void OnSelectedItemChanged(Item newSelectedItem) { }
 
-private void RefreshDestroyGroup(ModularCarGarage garage) { }
+	private void RefreshDestroyGroup(ModularCarGarage garage) { }
 
-private void RefreshLockCreation(ModularCarGarage garage) { }
+	private void RefreshLockCreation(ModularCarGarage garage) { }
 
-private void RefreshRepair() { }
+	private void RefreshRepair() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <RefreshLockCreation>g__AddResourceInfo|72_0(string prefixText, ItemAmount ingredient, ref VehicleEditingPanel.<>c__DisplayClass72_0 ) { }
+	private bool <RefreshLockCreation>g__AddResourceInfo|72_0(string prefixText, ItemAmount ingredient, ref VehicleEditingPanel.<>c__DisplayClass72_0 ) { }
 
 }
 
@@ -3262,9 +3262,9 @@ private class VehicleEditingPanel.CreateChassisEntry // TypeDefIndex: 11062
 	public Text requirementsText; 
 
 
-public ItemDefinition GetChassisItemDef(ModularCarGarage garage) { }
+	public ItemDefinition GetChassisItemDef(ModularCarGarage garage) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3281,18 +3281,18 @@ public class VehicleModuleInformationPanel : ItemInformationPanel // TypeDefInde
 	public ItemStatValue hpDisplay; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class vehicle : ConsoleSystem // TypeDefIndex: 11968
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3300,13 +3300,13 @@ public static class EngineItemTypeEx // TypeDefIndex: 12098
 {
 
 	[ExtensionAttribute] 
-public static bool BoostsAcceleration(EngineStorage.EngineItemTypes engineItemType) { }
+	public static bool BoostsAcceleration(EngineStorage.EngineItemTypes engineItemType) { }
 
 	[ExtensionAttribute] 
-public static bool BoostsTopSpeed(EngineStorage.EngineItemTypes engineItemType) { }
+	public static bool BoostsTopSpeed(EngineStorage.EngineItemTypes engineItemType) { }
 
 	[ExtensionAttribute] 
-public static bool BoostsFuelEconomy(EngineStorage.EngineItemTypes engineItemType) { }
+	public static bool BoostsFuelEconomy(EngineStorage.EngineItemTypes engineItemType) { }
 
 }
 
@@ -3336,60 +3336,60 @@ public class EngineStorage : StorageContainer // TypeDefIndex: 12099
 	[CompilerGeneratedAttribute] 
 	private float <fuelEconomyBoostPercent>k__BackingField; 
 
-public bool isUsable { get; set; }
-public float accelerationBoostPercent { get; set; }
-public float topSpeedBoostPercent { get; set; }
-public float fuelEconomyBoostPercent { get; set; }
+	public bool isUsable { get; set; }
+	public float accelerationBoostPercent { get; set; }
+	public float topSpeedBoostPercent { get; set; }
+	public float fuelEconomyBoostPercent { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_isUsable() { }
+	public bool get_isUsable() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_isUsable(bool value) { }
+	private void set_isUsable(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_accelerationBoostPercent() { }
+	public float get_accelerationBoostPercent() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_accelerationBoostPercent(float value) { }
+	private void set_accelerationBoostPercent(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_topSpeedBoostPercent() { }
+	public float get_topSpeedBoostPercent() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_topSpeedBoostPercent(float value) { }
+	private void set_topSpeedBoostPercent(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_fuelEconomyBoostPercent() { }
+	public float get_fuelEconomyBoostPercent() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_fuelEconomyBoostPercent(float value) { }
+	private void set_fuelEconomyBoostPercent(float value) { }
 
-public VehicleModuleEngine GetEngineModule() { }
+	public VehicleModuleEngine GetEngineModule() { }
 
-public float GetAveragedLoadoutPercent() { }
+	public float GetAveragedLoadoutPercent() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-private int GetValidSlot(Item item) { }
+	private int GetValidSlot(Item item) { }
 
-public override int GetMoveToSlotIndex(BasePlayer player, Item item) { }
+	public override int GetMoveToSlotIndex(BasePlayer player, Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum EngineStorage.EngineItemTypes // TypeDefIndex: 12100
 {
 	public int value__; 
-public const EngineStorage.EngineItemTypes Crankshaft = 0;
-public const EngineStorage.EngineItemTypes Carburetor = 1;
-public const EngineStorage.EngineItemTypes SparkPlug = 2;
-public const EngineStorage.EngineItemTypes Piston = 3;
-public const EngineStorage.EngineItemTypes Valve = 4;
+	public const EngineStorage.EngineItemTypes Crankshaft = 0;
+	public const EngineStorage.EngineItemTypes Carburetor = 1;
+	public const EngineStorage.EngineItemTypes SparkPlug = 2;
+	public const EngineStorage.EngineItemTypes Piston = 3;
+	public const EngineStorage.EngineItemTypes Valve = 4;
 
 }
 
@@ -3444,7 +3444,7 @@ public class ModularCarAudio : GroundVehicleAudio // TypeDefIndex: 12101
 	private float skidRatio; 
 	private Sound skidSound; 
 	private SoundModulation.Modulator skidGain; 
-private const float SKID_RATIO_CHANGE_RATE = 12;
+	private const float SKID_RATIO_CHANGE_RATE = 12;
 	private Dictionary<VehicleChassisVisuals.ClientWheelData<ModularCar>, float> prevWheelExtensionPercent; 
 	private Dictionary<VehicleChassisVisuals.ClientWheelData<ModularCar>, bool> wheelWasGrounded; 
 	private Dictionary<VehicleChassisVisuals.ClientWheelData<ModularCar>, float> lastSuspensionSoundPlayed; 
@@ -3457,56 +3457,56 @@ private const float SKID_RATIO_CHANGE_RATE = 12;
 	private float lastMovementStopSoundPlayed; 
 	private float noMovementCount; 
 
-protected override EngineAudioSet EngineAudioSet { get; set; }
-private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataFL { get; }
-private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataFR { get; }
-private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataRL { get; }
-private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataRR { get; }
+	protected override EngineAudioSet EngineAudioSet { get; set; }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataFL { get; }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataFR { get; }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataRL { get; }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> wheelDataRR { get; }
 
 
-protected override EngineAudioSet get_EngineAudioSet() { }
+	protected override EngineAudioSet get_EngineAudioSet() { }
 
-protected override void set_EngineAudioSet(EngineAudioSet value) { }
+	protected override void set_EngineAudioSet(EngineAudioSet value) { }
 
-private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataFL() { }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataFL() { }
 
-private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataFR() { }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataFR() { }
 
-private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataRL() { }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataRL() { }
 
-private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataRR() { }
+	private VehicleChassisVisuals.ClientWheelData<ModularCar> get_wheelDataRR() { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public override void ClientTick() { }
+	public override void ClientTick() { }
 
-public override void OnClientTickStopped() { }
+	public override void OnClientTickStopped() { }
 
-internal void OnModuleAdded(BaseVehicleModule addedModule) { }
+	internal void OnModuleAdded(BaseVehicleModule addedModule) { }
 
-internal void OnModuleRemoved(BaseVehicleModule removedModule) { }
+	internal void OnModuleRemoved(BaseVehicleModule removedModule) { }
 
-protected override int GetNumEngines() { }
+	protected override int GetNumEngines() { }
 
-private void PlayTyreAudio() { }
+	private void PlayTyreAudio() { }
 
-private void StopTyreAudio() { }
+	private void StopTyreAudio() { }
 
-private void StopSkidSound() { }
+	private void StopSkidSound() { }
 
-private void UpdateMovementRattleSound() { }
+	private void UpdateMovementRattleSound() { }
 
-private void StopMovementRattleSound() { }
+	private void StopMovementRattleSound() { }
 
-private void UpdateSuspensionSounds() { }
+	private void UpdateSuspensionSounds() { }
 
-private void UpdateSkidSound(float dt, VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData) { }
+	private void UpdateSkidSound(float dt, VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData) { }
 
-private void StopTyreSound(VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData) { }
+	private void StopTyreSound(VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData) { }
 
-private void UpdateTyreSound(VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData, float speedRatio) { }
+	private void UpdateTyreSound(VehicleChassisVisuals.ClientWheelData<ModularCar> wheelData, float speedRatio) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3519,41 +3519,41 @@ public class ModularVehicleSocket // TypeDefIndex: 12102
 	[SerializeField] 
 	private ModularVehicleSocket.SocketLocationType locationType; 
 
-public Vector3 WorldPosition { get; }
-public Quaternion WorldRotation { get; }
-public ModularVehicleSocket.SocketWheelType WheelType { get; }
-public ModularVehicleSocket.SocketLocationType LocationType { get; }
+	public Vector3 WorldPosition { get; }
+	public Quaternion WorldRotation { get; }
+	public ModularVehicleSocket.SocketWheelType WheelType { get; }
+	public ModularVehicleSocket.SocketLocationType LocationType { get; }
 
 
-public Vector3 get_WorldPosition() { }
+	public Vector3 get_WorldPosition() { }
 
-public Quaternion get_WorldRotation() { }
+	public Quaternion get_WorldRotation() { }
 
-public ModularVehicleSocket.SocketWheelType get_WheelType() { }
+	public ModularVehicleSocket.SocketWheelType get_WheelType() { }
 
-public ModularVehicleSocket.SocketLocationType get_LocationType() { }
+	public ModularVehicleSocket.SocketLocationType get_LocationType() { }
 
-public bool ShouldBeActive(ConditionalSocketSettings modelSettings) { }
+	public bool ShouldBeActive(ConditionalSocketSettings modelSettings) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ModularVehicleSocket.SocketWheelType // TypeDefIndex: 12103
 {
 	public int value__; 
-public const ModularVehicleSocket.SocketWheelType NoWheel = 0;
-public const ModularVehicleSocket.SocketWheelType ForwardWheel = 1;
-public const ModularVehicleSocket.SocketWheelType BackWheel = 2;
+	public const ModularVehicleSocket.SocketWheelType NoWheel = 0;
+	public const ModularVehicleSocket.SocketWheelType ForwardWheel = 1;
+	public const ModularVehicleSocket.SocketWheelType BackWheel = 2;
 
 }
 
 public enum ModularVehicleSocket.SocketLocationType // TypeDefIndex: 12104
 {
 	public int value__; 
-public const ModularVehicleSocket.SocketLocationType Middle = 0;
-public const ModularVehicleSocket.SocketLocationType Front = 1;
-public const ModularVehicleSocket.SocketLocationType Back = 2;
+	public const ModularVehicleSocket.SocketLocationType Middle = 0;
+	public const ModularVehicleSocket.SocketLocationType Front = 1;
+	public const ModularVehicleSocket.SocketLocationType Back = 2;
 
 }
 
@@ -3563,9 +3563,9 @@ public class VehicleModuleEngineItems : ScriptableObject // TypeDefIndex: 12105
 	private ItemModEngineItem[] engineItems; 
 
 
-public bool TryGetItem(int tier, EngineStorage.EngineItemTypes type, out ItemModEngineItem output) { }
+	public bool TryGetItem(int tier, EngineStorage.EngineItemTypes type, out ItemModEngineItem output) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3580,15 +3580,15 @@ public class VehicleModuleSlidingComponent // TypeDefIndex: 12106
 	private float positionPercent; 
 
 
-public bool WantsOpenPos(BaseEntity parentEntity) { }
+	public bool WantsOpenPos(BaseEntity parentEntity) { }
 
-public void ClientUpdateTick(BaseVehicleModule parentModule) { }
+	public void ClientUpdateTick(BaseVehicleModule parentModule) { }
 
-private void PlaySounds(bool wantsOpenPos) { }
+	private void PlaySounds(bool wantsOpenPos) { }
 
-private void CheckPosition(BaseEntity parentEntity, float dt) { }
+	private void CheckPosition(BaseEntity parentEntity, float dt) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -3599,7 +3599,7 @@ public class VehicleModuleSlidingComponent.SlidingPart // TypeDefIndex: 12107
 	public Vector3 closedPosition; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

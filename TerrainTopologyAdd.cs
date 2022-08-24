@@ -4,9 +4,9 @@ public class TerrainTopologyAdd : TerrainModifier // TypeDefIndex: 10581
 	public TerrainTopology.Enum TopologyType; 
 
 
-protected override void Apply(Vector3 position, float opacity, float radius, float fade) { }
+	protected override void Apply(Vector3 position, float opacity, float radius, float fade) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

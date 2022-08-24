@@ -10,9 +10,9 @@ public sealed class ChromaticAberration : PostProcessEffectSettings // TypeDefIn
 	public BoolParameter fastMode; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

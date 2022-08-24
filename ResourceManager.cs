@@ -33,56 +33,56 @@ public class ResourceManager // TypeDefIndex: 491
 	internal static readonly string MscorlibName; 
 	internal static readonly int DEBUG; 
 
-public virtual string BaseName { get; }
-protected UltimateResourceFallbackLocation FallbackLocation { get; }
+	public virtual string BaseName { get; }
+	protected UltimateResourceFallbackLocation FallbackLocation { get; }
 
 
-private void Init() { }
+	private void Init() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public void .ctor(string baseName, Assembly assembly) { }
+	public void .ctor(string baseName, Assembly assembly) { }
 
-public void .ctor(Type resourceSource) { }
+	public void .ctor(Type resourceSource) { }
 
 	[OnDeserializingAttribute] 
-private void OnDeserializing(StreamingContext ctx) { }
+	private void OnDeserializing(StreamingContext ctx) { }
 
 	[OnDeserializedAttribute] 
-private void OnDeserialized(StreamingContext ctx) { }
+	private void OnDeserialized(StreamingContext ctx) { }
 
 	[OnSerializingAttribute] 
-private void OnSerializing(StreamingContext ctx) { }
+	private void OnSerializing(StreamingContext ctx) { }
 
-private void CommonAssemblyInit() { }
+	private void CommonAssemblyInit() { }
 
-public virtual string get_BaseName() { }
+	public virtual string get_BaseName() { }
 
-protected UltimateResourceFallbackLocation get_FallbackLocation() { }
+	protected UltimateResourceFallbackLocation get_FallbackLocation() { }
 
-protected virtual string GetResourceFileName(CultureInfo culture) { }
+	protected virtual string GetResourceFileName(CultureInfo culture) { }
 
-internal ResourceSet GetFirstResourceSet(CultureInfo culture) { }
+	internal ResourceSet GetFirstResourceSet(CultureInfo culture) { }
 
-public virtual ResourceSet GetResourceSet(CultureInfo culture, bool createIfNotExists, bool tryParents) { }
+	public virtual ResourceSet GetResourceSet(CultureInfo culture, bool createIfNotExists, bool tryParents) { }
 
-protected virtual ResourceSet InternalGetResourceSet(CultureInfo culture, bool createIfNotExists, bool tryParents) { }
+	protected virtual ResourceSet InternalGetResourceSet(CultureInfo culture, bool createIfNotExists, bool tryParents) { }
 
-private ResourceSet InternalGetResourceSet(CultureInfo requestedCulture, bool createIfNotExists, bool tryParents, ref StackCrawlMark stackMark) { }
+	private ResourceSet InternalGetResourceSet(CultureInfo requestedCulture, bool createIfNotExists, bool tryParents, ref StackCrawlMark stackMark) { }
 
-private static void AddResourceSet(Dictionary<string, ResourceSet> localResourceSets, string cultureName, ref ResourceSet rs) { }
+	private static void AddResourceSet(Dictionary<string, ResourceSet> localResourceSets, string cultureName, ref ResourceSet rs) { }
 
-protected static Version GetSatelliteContractVersion(Assembly a) { }
+	protected static Version GetSatelliteContractVersion(Assembly a) { }
 
-internal static bool CompareNames(string asmTypeName1, string typeName2, AssemblyName asmName2) { }
+	internal static bool CompareNames(string asmTypeName1, string typeName2, AssemblyName asmName2) { }
 
-private void SetAppXConfiguration() { }
+	private void SetAppXConfiguration() { }
 
-public virtual string GetString(string name) { }
+	public virtual string GetString(string name) { }
 
-public virtual string GetString(string name, CultureInfo culture) { }
+	public virtual string GetString(string name, CultureInfo culture) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -92,7 +92,7 @@ internal class ResourceManager.CultureNameResourceSetPair // TypeDefIndex: 492
 	public ResourceSet lastResourceSet; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -100,50 +100,50 @@ internal class ResourceManager.ResourceManagerMediator // TypeDefIndex: 493
 {
 	private ResourceManager _rm; 
 
-internal string ModuleDir { get; }
-internal Type LocationInfo { get; }
-internal Type UserResourceSet { get; }
-internal string BaseNameField { get; }
-internal CultureInfo NeutralResourcesCulture { get; }
-internal bool LookedForSatelliteContractVersion { get; set; }
-internal Version SatelliteContractVersion { get; set; }
-internal UltimateResourceFallbackLocation FallbackLoc { get; }
-internal RuntimeAssembly CallingAssembly { get; }
-internal RuntimeAssembly MainAssembly { get; }
-internal string BaseName { get; }
+	internal string ModuleDir { get; }
+	internal Type LocationInfo { get; }
+	internal Type UserResourceSet { get; }
+	internal string BaseNameField { get; }
+	internal CultureInfo NeutralResourcesCulture { get; }
+	internal bool LookedForSatelliteContractVersion { get; set; }
+	internal Version SatelliteContractVersion { get; set; }
+	internal UltimateResourceFallbackLocation FallbackLoc { get; }
+	internal RuntimeAssembly CallingAssembly { get; }
+	internal RuntimeAssembly MainAssembly { get; }
+	internal string BaseName { get; }
 
 
-internal void .ctor(ResourceManager rm) { }
+	internal void .ctor(ResourceManager rm) { }
 
-internal string get_ModuleDir() { }
+	internal string get_ModuleDir() { }
 
-internal Type get_LocationInfo() { }
+	internal Type get_LocationInfo() { }
 
-internal Type get_UserResourceSet() { }
+	internal Type get_UserResourceSet() { }
 
-internal string get_BaseNameField() { }
+	internal string get_BaseNameField() { }
 
-internal CultureInfo get_NeutralResourcesCulture() { }
+	internal CultureInfo get_NeutralResourcesCulture() { }
 
-internal string GetResourceFileName(CultureInfo culture) { }
+	internal string GetResourceFileName(CultureInfo culture) { }
 
-internal bool get_LookedForSatelliteContractVersion() { }
+	internal bool get_LookedForSatelliteContractVersion() { }
 
-internal void set_LookedForSatelliteContractVersion(bool value) { }
+	internal void set_LookedForSatelliteContractVersion(bool value) { }
 
-internal Version get_SatelliteContractVersion() { }
+	internal Version get_SatelliteContractVersion() { }
 
-internal void set_SatelliteContractVersion(Version value) { }
+	internal void set_SatelliteContractVersion(Version value) { }
 
-internal Version ObtainSatelliteContractVersion(Assembly a) { }
+	internal Version ObtainSatelliteContractVersion(Assembly a) { }
 
-internal UltimateResourceFallbackLocation get_FallbackLoc() { }
+	internal UltimateResourceFallbackLocation get_FallbackLoc() { }
 
-internal RuntimeAssembly get_CallingAssembly() { }
+	internal RuntimeAssembly get_CallingAssembly() { }
 
-internal RuntimeAssembly get_MainAssembly() { }
+	internal RuntimeAssembly get_MainAssembly() { }
 
-internal string get_BaseName() { }
+	internal string get_BaseName() { }
 
 }
 

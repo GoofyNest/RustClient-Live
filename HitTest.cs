@@ -22,26 +22,26 @@ public class HitTest // TypeDefIndex: 9897
 	public string HitMaterial; 
 
 
-public Vector3 HitPointWorld() { }
+	public Vector3 HitPointWorld() { }
 
-public Vector3 HitNormalWorld() { }
+	public Vector3 HitNormalWorld() { }
 
-public Attack BuildAttackMessage() { }
+	public Attack BuildAttackMessage() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum HitTest.Type // TypeDefIndex: 9898
 {
 	public int value__; 
-public const HitTest.Type Generic = 0;
-public const HitTest.Type ProjectileEffect = 1;
-public const HitTest.Type Projectile = 2;
-public const HitTest.Type MeleeAttack = 3;
-public const HitTest.Type Use = 4;
+	public const HitTest.Type Generic = 0;
+	public const HitTest.Type ProjectileEffect = 1;
+	public const HitTest.Type Projectile = 2;
+	public const HitTest.Type MeleeAttack = 3;
+	public const HitTest.Type Use = 4;
 
 }
 

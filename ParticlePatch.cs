@@ -13,17 +13,17 @@ public class ParticlePatch // TypeDefIndex: 10357
 	private List<GameObject> spawns; 
 
 
-public void DestroyInstances() { }
+	public void DestroyInstances() { }
 
-public void CreateInstances() { }
+	public void CreateInstances() { }
 
-public void UpdateInstances() { }
+	public void UpdateInstances() { }
 
-public void .ctor(ParticleSpawn particleSpawn, int i, int j) { }
+	public void .ctor(ParticleSpawn particleSpawn, int i, int j) { }
 
-public bool Shift() { }
+	public bool Shift() { }
 
-public void Spawn() { }
+	public void Spawn() { }
 
 }
 

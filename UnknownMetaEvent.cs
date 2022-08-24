@@ -5,28 +5,28 @@ public sealed class UnknownMetaEvent : MetaEvent // TypeDefIndex: 7551
 	[CompilerGeneratedAttribute] 
 	private byte[] <Data>k__BackingField; 
 
-public byte StatusByte { get; }
-public byte[] Data { get; set; }
+	public byte StatusByte { get; }
+	public byte[] Data { get; set; }
 
 
-internal void .ctor(byte statusByte) { }
+	internal void .ctor(byte statusByte) { }
 
-internal void .ctor(byte statusByte, byte[] data) { }
-
-	[CompilerGeneratedAttribute] 
-public byte get_StatusByte() { }
+	internal void .ctor(byte statusByte, byte[] data) { }
 
 	[CompilerGeneratedAttribute] 
-public byte[] get_Data() { }
+	public byte get_StatusByte() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Data(byte[] value) { }
+	public byte[] get_Data() { }
 
-protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
+	[CompilerGeneratedAttribute] 
+	private void set_Data(byte[] value) { }
 
-protected override MidiEvent CloneEvent() { }
+	protected override void ReadContent(MidiReader reader, ReadingSettings settings, int size) { }
 
-public override string ToString() { }
+	protected override MidiEvent CloneEvent() { }
+
+	public override string ToString() { }
 
 }
 

@@ -5,15 +5,15 @@ public class MenuButtonArcadeEntity : TextArcadeEntity // TypeDefIndex: 8772
 	public string clickMessage; 
 
 
-public bool IsHighlighted() { }
+	public bool IsHighlighted() { }
 
-public void SetHighlighted(bool wantsHighlight) { }
+	public void SetHighlighted(bool wantsHighlight) { }
 
-public void OnClicked() { }
+	public void OnClicked() { }
 
-public override void PostLoad() { }
+	public override void PostLoad() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

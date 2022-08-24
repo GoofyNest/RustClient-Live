@@ -8,15 +8,15 @@ public class WaterPurifier : LiquidContainer // TypeDefIndex: 9522
 	public bool stopWhenOutputFull; 
 
 
-public bool IsBoiling() { }
+	public bool IsBoiling() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public static class WaterPurifier.WaterPurifierFlags // TypeDefIndex: 9523
 {
-public const BaseEntity.Flags Boiling = 128;
+	public const BaseEntity.Flags Boiling = 128;
 
 }
 

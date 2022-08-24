@@ -5,17 +5,17 @@ public static class StencilMaterial // TypeDefIndex: 5012
 
 	[EditorBrowsableAttribute] 
 	[ObsoleteAttribute] 
-public static Material Add(Material baseMat, int stencilID) { }
+	public static Material Add(Material baseMat, int stencilID) { }
 
-public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask) { }
+	public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask) { }
 
-public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask, int readMask, int writeMask) { }
+	public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask, int readMask, int writeMask) { }
 
-public static void Remove(Material customMat) { }
+	public static void Remove(Material customMat) { }
 
-public static void ClearAll() { }
+	public static void ClearAll() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -33,7 +33,7 @@ private class StencilMaterial.MatEntry // TypeDefIndex: 5013
 	public ColorWriteMask colorMask; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

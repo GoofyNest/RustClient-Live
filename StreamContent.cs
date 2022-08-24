@@ -7,19 +7,19 @@ public class StreamContent : HttpContent // TypeDefIndex: 5756
 	private bool contentCopied; 
 
 
-public void .ctor(Stream content) { }
+	public void .ctor(Stream content) { }
 
-public void .ctor(Stream content, int bufferSize) { }
+	public void .ctor(Stream content, int bufferSize) { }
 
-internal void .ctor(Stream content, CancellationToken cancellationToken) { }
+	internal void .ctor(Stream content, CancellationToken cancellationToken) { }
 
-protected override Task<Stream> CreateContentReadStreamAsync() { }
+	protected override Task<Stream> CreateContentReadStreamAsync() { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-protected internal override Task SerializeToStreamAsync(Stream stream, TransportContext context) { }
+	protected internal override Task SerializeToStreamAsync(Stream stream, TransportContext context) { }
 
-protected internal override bool TryComputeLength(out long length) { }
+	protected internal override bool TryComputeLength(out long length) { }
 
 }
 

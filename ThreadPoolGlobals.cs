@@ -8,7 +8,7 @@ internal static class ThreadPoolGlobals // TypeDefIndex: 808
 	public static ThreadPoolWorkQueue workQueue; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

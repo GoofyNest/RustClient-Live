@@ -15,19 +15,19 @@ public struct Touch // TypeDefIndex: 4073
 	private float m_AltitudeAngle; 
 	private float m_AzimuthAngle; 
 
-public int fingerId { get; }
-public Vector2 position { get; }
-public TouchPhase phase { get; }
-public TouchType type { get; }
+	public int fingerId { get; }
+	public Vector2 position { get; }
+	public TouchPhase phase { get; }
+	public TouchType type { get; }
 
 
-public int get_fingerId() { }
+	public int get_fingerId() { }
 
-public Vector2 get_position() { }
+	public Vector2 get_position() { }
 
-public TouchPhase get_phase() { }
+	public TouchPhase get_phase() { }
 
-public TouchType get_type() { }
+	public TouchType get_type() { }
 
 }
 

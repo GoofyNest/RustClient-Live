@@ -8,13 +8,13 @@ public class runtimeScript : MonoBehaviour // TypeDefIndex: 11483
 	public float speed; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

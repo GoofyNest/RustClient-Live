@@ -7,11 +7,11 @@ public class FlashlightBeam : MonoBehaviour, IClientComponent // TypeDefIndex: 8
 	private Vector4 BeamST; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

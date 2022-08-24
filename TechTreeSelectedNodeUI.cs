@@ -20,15 +20,15 @@ public class TechTreeSelectedNodeUI : MonoBehaviour // TypeDefIndex: 10916
 	private int preReqCost; 
 
 
-public void Start() { }
+	public void Start() { }
 
-public void HideIP() { }
+	public void HideIP() { }
 
-public void TryUnlock() { }
+	public void TryUnlock() { }
 
-public void DoSelection(TechTreeData.NodeInstance node) { }
+	public void DoSelection(TechTreeData.NodeInstance node) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

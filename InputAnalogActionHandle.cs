@@ -3,15 +3,15 @@ internal struct InputAnalogActionHandle_t : IEquatable<InputAnalogActionHandle_t
 	public ulong Value; 
 
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object p) { }
+	public override bool Equals(object p) { }
 
-public bool Equals(InputAnalogActionHandle_t p) { }
+	public bool Equals(InputAnalogActionHandle_t p) { }
 
-public int CompareTo(InputAnalogActionHandle_t other) { }
+	public int CompareTo(InputAnalogActionHandle_t other) { }
 
 }
 

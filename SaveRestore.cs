@@ -4,9 +4,9 @@ public class SaveRestore : SingletonComponent<SaveRestore> // TypeDefIndex: 9988
 	public static DateTime SaveCreatedTime; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

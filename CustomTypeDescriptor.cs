@@ -9,17 +9,17 @@ public abstract class CustomTypeDescriptor : ICustomTypeDescriptor
 	private ICustomTypeDescriptor _parent; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public virtual AttributeCollection GetAttributes() { }
+	public virtual AttributeCollection GetAttributes() { }
 
-public virtual TypeConverter GetConverter() { }
+	public virtual TypeConverter GetConverter() { }
 
-public virtual PropertyDescriptorCollection GetProperties() { }
+	public virtual PropertyDescriptorCollection GetProperties() { }
 
-public virtual PropertyDescriptorCollection GetProperties(Attribute[] attributes) { }
+	public virtual PropertyDescriptorCollection GetProperties(Attribute[] attributes) { }
 
-public virtual object GetPropertyOwner(PropertyDescriptor pd) { }
+	public virtual object GetPropertyOwner(PropertyDescriptor pd) { }
 
 }
 

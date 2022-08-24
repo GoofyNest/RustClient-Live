@@ -9,7 +9,7 @@ public class Frost : PostProcessEffectSettings // TypeDefIndex: 10253
 	public FloatParameter darkness; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

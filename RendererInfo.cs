@@ -6,11 +6,11 @@ public class RendererInfo : ComponentInfo<Renderer> // TypeDefIndex: 9169
 	public MeshFilter meshFilter; 
 
 
-public override void Reset() { }
+	public override void Reset() { }
 
-public override void Setup() { }
+	public override void Setup() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

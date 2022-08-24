@@ -6,57 +6,57 @@ public class MicrophoneStand : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 	public uint IORef; 
 
 
-public static void ResetToPool(MicrophoneStand instance) { }
+	public static void ResetToPool(MicrophoneStand instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(MicrophoneStand instance) { }
+	public void CopyTo(MicrophoneStand instance) { }
 
-public MicrophoneStand Copy() { }
+	public MicrophoneStand Copy() { }
 
-public static MicrophoneStand Deserialize(Stream stream) { }
+	public static MicrophoneStand Deserialize(Stream stream) { }
 
-public static MicrophoneStand DeserializeLengthDelimited(Stream stream) { }
+	public static MicrophoneStand DeserializeLengthDelimited(Stream stream) { }
 
-public static MicrophoneStand DeserializeLength(Stream stream, int length) { }
+	public static MicrophoneStand DeserializeLength(Stream stream, int length) { }
 
-public static MicrophoneStand Deserialize(byte[] buffer) { }
+	public static MicrophoneStand Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, MicrophoneStand previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, MicrophoneStand previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static MicrophoneStand Deserialize(byte[] buffer, MicrophoneStand instance, bool isDelta = False) { }
+	public static MicrophoneStand Deserialize(byte[] buffer, MicrophoneStand instance, bool isDelta = False) { }
 
-public static MicrophoneStand Deserialize(Stream stream, MicrophoneStand instance, bool isDelta) { }
+	public static MicrophoneStand Deserialize(Stream stream, MicrophoneStand instance, bool isDelta) { }
 
-public static MicrophoneStand DeserializeLengthDelimited(Stream stream, MicrophoneStand instance, bool isDelta) { }
+	public static MicrophoneStand DeserializeLengthDelimited(Stream stream, MicrophoneStand instance, bool isDelta) { }
 
-public static MicrophoneStand DeserializeLength(Stream stream, int length, MicrophoneStand instance, bool isDelta) { }
+	public static MicrophoneStand DeserializeLength(Stream stream, int length, MicrophoneStand instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, MicrophoneStand instance, MicrophoneStand previous) { }
+	public static void SerializeDelta(Stream stream, MicrophoneStand instance, MicrophoneStand previous) { }
 
-public static void Serialize(Stream stream, MicrophoneStand instance) { }
+	public static void Serialize(Stream stream, MicrophoneStand instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(MicrophoneStand instance) { }
+	public static byte[] SerializeToBytes(MicrophoneStand instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, MicrophoneStand instance) { }
+	public static void SerializeLengthDelimited(Stream stream, MicrophoneStand instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -80,37 +80,37 @@ public class MicrophoneStand : BaseMountable // TypeDefIndex: 8605
 	public EntityRef<IOEntity> ioEntity; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private void Update() { }
+	private void Update() { }
 
-public override void OnClientInput(BasePlayer player) { }
+	public override void OnClientInput(BasePlayer player) { }
 
-public bool Receive(byte[] data) { }
+	public bool Receive(byte[] data) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-private void <OnClientInput>b__19_0(BasePlayer ply) { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnClientInput>b__19_1(BasePlayer ply) { }
+	private void <OnClientInput>b__19_0(BasePlayer ply) { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnClientInput>b__19_2(BasePlayer ply) { }
+	private void <OnClientInput>b__19_1(BasePlayer ply) { }
+
+	[CompilerGeneratedAttribute] 
+	private void <OnClientInput>b__19_2(BasePlayer ply) { }
 
 }
 
 public enum MicrophoneStand.SpeechMode // TypeDefIndex: 8606
 {
 	public int value__; 
-public const MicrophoneStand.SpeechMode Normal = 0;
-public const MicrophoneStand.SpeechMode HighPitch = 1;
-public const MicrophoneStand.SpeechMode LowPitch = 2;
+	public const MicrophoneStand.SpeechMode Normal = 0;
+	public const MicrophoneStand.SpeechMode HighPitch = 1;
+	public const MicrophoneStand.SpeechMode LowPitch = 2;
 
 }
 

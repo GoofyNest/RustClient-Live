@@ -7,25 +7,25 @@ internal sealed class LocalDataStoreMgr // TypeDefIndex: 148
 	private long m_CookieGenerator; 
 
 
-public LocalDataStoreHolder CreateLocalDataStore() { }
+	public LocalDataStoreHolder CreateLocalDataStore() { }
 
-public void DeleteLocalDataStore(LocalDataStore store) { }
+	public void DeleteLocalDataStore(LocalDataStore store) { }
 
-public LocalDataStoreSlot AllocateDataSlot() { }
+	public LocalDataStoreSlot AllocateDataSlot() { }
 
-public LocalDataStoreSlot AllocateNamedDataSlot(string name) { }
+	public LocalDataStoreSlot AllocateNamedDataSlot(string name) { }
 
-public LocalDataStoreSlot GetNamedDataSlot(string name) { }
+	public LocalDataStoreSlot GetNamedDataSlot(string name) { }
 
-public void FreeNamedDataSlot(string name) { }
+	public void FreeNamedDataSlot(string name) { }
 
-internal void FreeDataSlot(int slot, long cookie) { }
+	internal void FreeDataSlot(int slot, long cookie) { }
 
-public void ValidateSlot(LocalDataStoreSlot slot) { }
+	public void ValidateSlot(LocalDataStoreSlot slot) { }
 
-internal int GetSlotTableLength() { }
+	internal int GetSlotTableLength() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

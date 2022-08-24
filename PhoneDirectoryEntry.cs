@@ -11,23 +11,23 @@ public class PhoneDirectoryEntry : MonoBehaviour // TypeDefIndex: 10898
 	private PhoneDirectoryEntry.NumberType assignedType; 
 
 
-public void Populate(PhoneDirectory.DirectoryEntry entry, PhoneDialler forDialog, PhoneDirectoryEntry.NumberType type) { }
+	public void Populate(PhoneDirectory.DirectoryEntry entry, PhoneDialler forDialog, PhoneDirectoryEntry.NumberType type) { }
 
-private void SetPhoneName(string phoneName, int number, PhoneDirectoryEntry.NumberType type) { }
+	private void SetPhoneName(string phoneName, int number, PhoneDirectoryEntry.NumberType type) { }
 
-public void OnClickedDial() { }
+	public void OnClickedDial() { }
 
-public void OnClickedDelete() { }
+	public void OnClickedDelete() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum PhoneDirectoryEntry.NumberType // TypeDefIndex: 10899
 {
 	public int value__; 
-public const PhoneDirectoryEntry.NumberType Directory = 0;
-public const PhoneDirectoryEntry.NumberType Contact = 1;
+	public const PhoneDirectoryEntry.NumberType Directory = 0;
+	public const PhoneDirectoryEntry.NumberType Contact = 1;
 
 }
 

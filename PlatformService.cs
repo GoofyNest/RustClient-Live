@@ -3,9 +3,9 @@ public static class PlatformService // TypeDefIndex: 6155
 	public static readonly IPlatformService Instance; 
 
 
-public static bool Initialize(IPlatformHooks hooks) { }
+	public static bool Initialize(IPlatformHooks hooks) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

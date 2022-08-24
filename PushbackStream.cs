@@ -7,13 +7,13 @@ public class PushbackStream // TypeDefIndex: 7395
 	private int _NumForwardBytesInBuffer; 
 
 
-internal void .ctor(Stream s, int backBufferSize) { }
+	internal void .ctor(Stream s, int backBufferSize) { }
 
-internal int Read(sbyte[] toRead, int offset, int length) { }
+	internal int Read(sbyte[] toRead, int offset, int length) { }
 
-internal void UnRead(int length) { }
+	internal void UnRead(int length) { }
 
-internal void Close() { }
+	internal void Close() { }
 
 }
 

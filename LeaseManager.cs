@@ -4,17 +4,17 @@ internal class LeaseManager // TypeDefIndex: 1167
 	private Timer _timer; 
 
 
-public void SetPollTime(TimeSpan timeSpan) { }
+	public void SetPollTime(TimeSpan timeSpan) { }
 
-public void TrackLifetime(ServerIdentity identity) { }
+	public void TrackLifetime(ServerIdentity identity) { }
 
-public void StartManager() { }
+	public void StartManager() { }
 
-public void StopManager() { }
+	public void StopManager() { }
 
-public void ManageLeases(object state) { }
+	public void ManageLeases(object state) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

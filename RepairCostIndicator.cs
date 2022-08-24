@@ -5,13 +5,13 @@ public class RepairCostIndicator : SingletonComponent<RepairCostIndicator>, ICli
 	private TimeSince showTime; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void ShowCostIndicator(List<ItemAmount> costs, BasePlayer player) { }
+	public void ShowCostIndicator(List<ItemAmount> costs, BasePlayer player) { }
 
-private void UpdateFade() { }
+	private void UpdateFade() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

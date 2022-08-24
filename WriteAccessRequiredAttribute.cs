@@ -9,7 +9,7 @@ public sealed class NativeContainerNeedsThreadIndexAttribute : Attribute
 [AttributeUsageAttribute] 
 public class WriteAccessRequiredAttribute : Attribute 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

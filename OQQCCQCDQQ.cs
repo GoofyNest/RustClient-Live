@@ -152,55 +152,55 @@ public class OQQCCQCDQQ : MonoBehaviour // TypeDefIndex: 7271
 	public List<Vector3> detailVecs; 
 
 
-public static void OOOCDQDQDC(List<ERMarkerExt> markers, List<OQQCCQCDQQ> exitRoads, ref List<Vector3> splinePoints, ref List<float> tValues) { }
+	public static void OOOCDQDQDC(List<ERMarkerExt> markers, List<OQQCCQCDQQ> exitRoads, ref List<Vector3> splinePoints, ref List<float> tValues) { }
 
-public static void ODOCDDDDDO(List<ERMarkerExt> markers, OQQCCQCDQQ exitRoad, ref List<Vector3> splinePoints, ref List<float> tValues, int currentInt) { }
+	public static void ODOCDDDDDO(List<ERMarkerExt> markers, OQQCCQCDQQ exitRoad, ref List<Vector3> splinePoints, ref List<float> tValues, int currentInt) { }
 
-public static void OQCCQOQDDO(ERModularBase baseScript, ERModularRoad road, List<OQQCCQCDQQ> exitRoads, List<ERMarkerExt> markers, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight, ref bool hasExits, List<float> leftIndentFloats, List<float> rightIndentFloats, List<float> leftSurroundingFloats, List<float> rightSurroundingFloats, ref List<Vector3> surfaceVecs) { }
+	public static void OQCCQOQDDO(ERModularBase baseScript, ERModularRoad road, List<OQQCCQCDQQ> exitRoads, List<ERMarkerExt> markers, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight, ref bool hasExits, List<float> leftIndentFloats, List<float> rightIndentFloats, List<float> leftSurroundingFloats, List<float> rightSurroundingFloats, ref List<Vector3> surfaceVecs) { }
 
-public static void OCCCOOCCQC(ERModularBase baseScript, ERModularRoad road, OQQCCQCDQQ exitRoad, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight, List<float> leftIndentFloats, List<float> rightIndentFloats, List<float> leftSurroundingFloats, List<float> rightSurroundingFloats, ref List<Vector3> roadSurfaceVecs) { }
+	public static void OCCCOOCCQC(ERModularBase baseScript, ERModularRoad road, OQQCCQCDQQ exitRoad, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight, List<float> leftIndentFloats, List<float> rightIndentFloats, List<float> leftSurroundingFloats, List<float> rightSurroundingFloats, ref List<Vector3> roadSurfaceVecs) { }
 
-public void BuildMeshInit(OQQCCQCDQQ exitRoad, List<Vector3> vecs, List<Vector2> uvs, List<int> tris, List<Color> colors, Material mat, ERModularRoad road) { }
+	public void BuildMeshInit(OQQCCQCDQQ exitRoad, List<Vector3> vecs, List<Vector2> uvs, List<int> tris, List<Color> colors, Material mat, ERModularRoad road) { }
 
-public void OQDDCODQCD() { }
+	public void OQDDCODQCD() { }
 
-public void SpawnSplitObjects() { }
+	public void SpawnSplitObjects() { }
 
-public void OQDDCCQOOO(ref int curGo, Vector3 v) { }
+	public void OQDDCCQOOO(ref int curGo, Vector3 v) { }
 
-public static void OOOOOCODQO(OQQCCQCDQQ exitRoad, int vecCount, List<Vector3> vecs, List<Vector2> uvsArray, List<int> tris) { }
+	public static void OOOOOCODQO(OQQCCQCDQQ exitRoad, int vecCount, List<Vector3> vecs, List<Vector2> uvsArray, List<int> tris) { }
 
-public static void ODQCODOCDO(OQQCCQCDQQ exitRoad, int vecCount, List<Vector3> vecs, List<Vector2> uvsArray, List<int> tris, int decalIndex) { }
+	public static void ODQCODOCDO(OQQCCQCDQQ exitRoad, int vecCount, List<Vector3> vecs, List<Vector2> uvsArray, List<int> tris, int decalIndex) { }
 
-public static void OQCCDDDOQQ(int i, int j, Vector3 prevPos, List<Vector3> edgeVecs, List<Vector3> soSplinePointsRight, float angleThreshold, ref List<Vector3> tmpvecs) { }
+	public static void OQCCDDDOQQ(int i, int j, Vector3 prevPos, List<Vector3> edgeVecs, List<Vector3> soSplinePointsRight, float angleThreshold, ref List<Vector3> tmpvecs) { }
 
-private static void OOOQCQDCDD(int curLeft, int endLeft, int curRight, int endRight, List<int> rightInts, List<Vector3> vecs, ref List<int> tris) { }
+	private static void OOOQCQDCDD(int curLeft, int endLeft, int curRight, int endRight, List<int> rightInts, List<Vector3> vecs, ref List<int> tris) { }
 
-public static void ODCDCQCOCQ(List<Vector3> vecs, ref List<int> tris) { }
+	public static void ODCDCQCOCQ(List<Vector3> vecs, ref List<int> tris) { }
 
-public static void ODQDQDCOQD(ERModularBase baseScript, ERModularRoad road, OQQCCQCDQQ exitRoad, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight) { }
+	public static void ODQDQDCOQD(ERModularBase baseScript, ERModularRoad road, OQQCCQCDQQ exitRoad, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight) { }
 
-public static void ODDDDDDQQD(ERModularBase baseScript, ERModularRoad road, ERMarkerExt marker, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight) { }
+	public static void ODDDDDDQQD(ERModularBase baseScript, ERModularRoad road, ERMarkerExt marker, ref List<Vector3> soSplinePointsLeft, ref List<Vector3> soSplinePointsRight) { }
 
-public static void OQDOQDDCDD(ERModularBase baseScript, ERModularRoad road, OQQCCQCDQQ exitRoad, List<ERMarkerExt> markers, List<List<Vector3>> exitOuterVerticesExtrusion, List<List<Vector3>> exitOuterVerticesFixed, List<List<Vector3>> exitOuterVerticesCurve, List<Vector3> exitInnerVertices) { }
+	public static void OQDOQDDCDD(ERModularBase baseScript, ERModularRoad road, OQQCCQCDQQ exitRoad, List<ERMarkerExt> markers, List<List<Vector3>> exitOuterVerticesExtrusion, List<List<Vector3>> exitOuterVerticesFixed, List<List<Vector3>> exitOuterVerticesCurve, List<Vector3> exitInnerVertices) { }
 
-public static void OCDQCQDDOQ(ERModularBase baseScript, ERModularRoad road, List<ERMarkerExt> markers) { }
+	public static void OCDQCQDDOQ(ERModularBase baseScript, ERModularRoad road, List<ERMarkerExt> markers) { }
 
-public static void OCDDDOQCCO(ERModularBase baseScript, List<ERMarkerExt> markers, ref List<Vector3> vecs, ref List<Vector2> uvsArray, ref List<Vector2> uvsArray2, ref List<Color> customColors, ref List<Color> colors, ref List<List<int>> tris, ref Material[] materialsList) { }
+	public static void OCDDDOQCCO(ERModularBase baseScript, List<ERMarkerExt> markers, ref List<Vector3> vecs, ref List<Vector2> uvsArray, ref List<Vector2> uvsArray2, ref List<Color> customColors, ref List<Color> colors, ref List<List<int>> tris, ref Material[] materialsList) { }
 
-public static void OCDDCCQCCD(ref int triIndex, ref List<List<int>> tris, ref Material[] materialsList, Material m) { }
+	public static void OCDDCCQCCD(ref int triIndex, ref List<List<int>> tris, ref Material[] materialsList, Material m) { }
 
-public static float OQQDDDDDOC(Vector3 v, List<Vector3> soSplinePointsLeft, List<Vector3> soSplinePointsRight, ref int cInt, bool flag, ref int match) { }
+	public static float OQQDDDDDOC(Vector3 v, List<Vector3> soSplinePointsLeft, List<Vector3> soSplinePointsRight, ref int cInt, bool flag, ref int match) { }
 
-private static void ODDDOCDCQO(List<Vector3> vecs, List<Vector2> uvs, List<int> tris, List<Color> colors, Material mat, GameObject go, ERModularRoad road) { }
+	private static void ODDDOCDCQO(List<Vector3> vecs, List<Vector2> uvs, List<int> tris, List<Color> colors, Material mat, GameObject go, ERModularRoad road) { }
 
-private void OCCDCQQDOQ(List<Vector3> vecs, List<int> connectionInts, List<Vector3> surfaceVecs, Vector3 prefDirVec) { }
+	private void OCCDCQQDOQ(List<Vector3> vecs, List<int> connectionInts, List<Vector3> surfaceVecs, Vector3 prefDirVec) { }
 
-public Vector3 ODCCQQDQQQ() { }
+	public Vector3 ODCCQQDQQQ() { }
 
-public void OCQOQQCDOD(List<Vector3> surfaceVecs, List<Vector2> uvs, int firstSection, int secondSection) { }
+	public void OCQOQQCDOD(List<Vector3> surfaceVecs, List<Vector2> uvs, int firstSection, int secondSection) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

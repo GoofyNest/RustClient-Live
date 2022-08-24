@@ -6,9 +6,9 @@ public struct LinearColor // TypeDefIndex: 3880
 	private float m_intensity; 
 
 
-public static LinearColor Convert(Color color, float intensity) { }
+	public static LinearColor Convert(Color color, float intensity) { }
 
-public static LinearColor Black() { }
+	public static LinearColor Black() { }
 
 }
 

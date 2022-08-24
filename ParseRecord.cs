@@ -43,11 +43,11 @@ internal sealed class ParseRecord // TypeDefIndex: 1117
 	internal int PRnullCount; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void Init() { }
+	internal void Init() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

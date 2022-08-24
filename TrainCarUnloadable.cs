@@ -32,73 +32,73 @@ public class TrainCarUnloadable : TrainCar // TypeDefIndex: 8470
 	private MeshRenderer[] orePlaneRenderers; 
 	private float clientOrePercentFull; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-protected override void OnChildAdded(BaseEntity child) { }
+	protected override void OnChildAdded(BaseEntity child) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public bool IsEmpty() { }
+	public bool IsEmpty() { }
 
-public bool TryGetLootType(out TrainWagonLootData.LootOption lootOption) { }
+	public bool TryGetLootType(out TrainWagonLootData.LootOption lootOption) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-public int GetFilledLootAmount() { }
+	public int GetFilledLootAmount() { }
 
-public void SetVisualOreLevel(float percent) { }
+	public void SetVisualOreLevel(float percent) { }
 
-private void AnimateUnload(float startPercent) { }
+	private void AnimateUnload(float startPercent) { }
 
-private void UnloadAnimTick() { }
+	private void UnloadAnimTick() { }
 
-private void EndUnloadAnim() { }
+	private void EndUnloadAnim() { }
 
-public float GetOrePercent() { }
+	public float GetOrePercent() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-private void SetOreMat() { }
+	private void SetOreMat() { }
 
-private void SetClientOrePercent(float percent) { }
+	private void SetClientOrePercent(float percent) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_Open(BasePlayer player) { }
+	public void Menu_Open(BasePlayer player) { }
 
-public bool Menu_Open_ShowIf(BasePlayer player) { }
-
-	[BaseEntity.RPC_Client] 
-private void RPC_AnimateUnload(BaseEntity.RPCMessage msg) { }
+	public bool Menu_Open_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.RPC_Client] 
-private void RPC_StopAnimateUnload(BaseEntity.RPCMessage msg) { }
+	private void RPC_AnimateUnload(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	[BaseEntity.RPC_Client] 
+	private void RPC_StopAnimateUnload(BaseEntity.RPCMessage msg) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
 public enum TrainCarUnloadable.WagonType // TypeDefIndex: 8471
 {
 	public int value__; 
-public const TrainCarUnloadable.WagonType Ore = 0;
-public const TrainCarUnloadable.WagonType Lootboxes = 1;
-public const TrainCarUnloadable.WagonType Fuel = 2;
+	public const TrainCarUnloadable.WagonType Ore = 0;
+	public const TrainCarUnloadable.WagonType Lootboxes = 1;
+	public const TrainCarUnloadable.WagonType Fuel = 2;
 
 }
 

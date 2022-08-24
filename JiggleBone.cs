@@ -19,13 +19,13 @@ public class JiggleBone : BaseMonoBehaviour // TypeDefIndex: 8784
 	private bool disabled; 
 
 
-public void LODCheck() { }
+	public void LODCheck() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

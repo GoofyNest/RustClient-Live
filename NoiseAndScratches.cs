@@ -19,20 +19,20 @@ public class NoiseAndScratches : MonoBehaviour // TypeDefIndex: 8195
 	private float scratchX; 
 	private float scratchY; 
 
-protected Material material { get; }
+	protected Material material { get; }
 
 
-protected void Start() { }
+	protected void Start() { }
 
-protected Material get_material() { }
+	protected Material get_material() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void SanitizeParameters() { }
+	private void SanitizeParameters() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

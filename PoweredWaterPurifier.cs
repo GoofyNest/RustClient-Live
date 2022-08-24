@@ -7,13 +7,13 @@ public class PoweredWaterPurifier : WaterPurifier // TypeDefIndex: 9515
 	public MeshRenderer TargetRenderer; 
 
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	public override void OnFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

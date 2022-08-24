@@ -43,85 +43,85 @@ public class PhoneDialler : UIDialog // TypeDefIndex: 10896
 	private int lastEnteredFrame; 
 	private bool inputtingNumber; 
 
-public bool IsContactsActive { get; }
-public float NormalisedAnsweringMessagePlayTime { get; }
-public bool IsPlayingAnsweringMessage { get; }
+	public bool IsContactsActive { get; }
+	public float NormalisedAnsweringMessagePlayTime { get; }
+	public bool IsPlayingAnsweringMessage { get; }
 
 
-public bool get_IsContactsActive() { }
+	public bool get_IsContactsActive() { }
 
-public void SetPhone(PhoneController t) { }
+	public void SetPhone(PhoneController t) { }
 
-public void Update() { }
+	public void Update() { }
 
-public void EnterNumber(int i) { }
+	public void EnterNumber(int i) { }
 
-public void SetNumber(string number) { }
+	public void SetNumber(string number) { }
 
-public void ClearCode() { }
+	public void ClearCode() { }
 
-public void Dial() { }
+	public void Dial() { }
 
-public void OnFail(Telephone.DialFailReason reason) { }
+	public void OnFail(Telephone.DialFailReason reason) { }
 
-public void OnPhoneStateChanged(PhoneController c) { }
+	public void OnPhoneStateChanged(PhoneController c) { }
 
-public void Answer() { }
+	public void Answer() { }
 
-public void HangUp() { }
+	public void HangUp() { }
 
-public override void CloseDialog() { }
+	public override void CloseDialog() { }
 
-public void ForceClose() { }
+	public void ForceClose() { }
 
-public static string FormatPhoneNumber(string number) { }
+	public static string FormatPhoneNumber(string number) { }
 
-public void OnClickedDirectory() { }
+	public void OnClickedDirectory() { }
 
-public void OnReceivedDirectory() { }
+	public void OnReceivedDirectory() { }
 
-public void OnClickedContacts() { }
+	public void OnClickedContacts() { }
 
-public void PopulateDirectory(PhoneDirectory directory, Transform forRoot, bool showDeleteOption) { }
+	public void PopulateDirectory(PhoneDirectory directory, Transform forRoot, bool showDeleteOption) { }
 
-public void OnClickedCallDirectoryEntry(string number) { }
+	public void OnClickedCallDirectoryEntry(string number) { }
 
-public void OnClickedDeletePhoneNumber(string phoneNumber) { }
+	public void OnClickedDeletePhoneNumber(string phoneNumber) { }
 
-public void OnNameInput(string newName) { }
+	public void OnNameInput(string newName) { }
 
-public void OnClickedSaveNumber() { }
+	public void OnClickedSaveNumber() { }
 
-public void UpdateAddContactButton() { }
+	public void UpdateAddContactButton() { }
 
-public void LoadDirectory(int direction) { }
+	public void LoadDirectory(int direction) { }
 
-private void UpdateIncomingCallText(PhoneController c) { }
+	private void UpdateIncomingCallText(PhoneController c) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator PlayInputBeepsForPhoneNumber(string number) { }
+	private IEnumerator PlayInputBeepsForPhoneNumber(string number) { }
 
-public void OnReceivedAnsweringMessage(float length, bool canLeaveVoicemail) { }
+	public void OnReceivedAnsweringMessage(float length, bool canLeaveVoicemail) { }
 
-public void OnStartedRecordingVoicemail(float duration) { }
+	public void OnStartedRecordingVoicemail(float duration) { }
 
-public void FinishVoicemailRecording() { }
+	public void FinishVoicemailRecording() { }
 
-public void PlayVoicemail(uint id) { }
+	public void PlayVoicemail(uint id) { }
 
-public void StopVoicemail() { }
+	public void StopVoicemail() { }
 
-public void DeleteVoicemail(uint id) { }
+	public void DeleteVoicemail(uint id) { }
 
-public float get_NormalisedAnsweringMessagePlayTime() { }
+	public float get_NormalisedAnsweringMessagePlayTime() { }
 
-public bool get_IsPlayingAnsweringMessage() { }
+	public bool get_IsPlayingAnsweringMessage() { }
 
-public void OnClickedVoicemail() { }
+	public void OnClickedVoicemail() { }
 
-public void CopyCurrentNumberToClipboard() { }
+	public void CopyCurrentNumberToClipboard() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -133,26 +133,26 @@ private sealed class PhoneDialler.<PlayInputBeepsForPhoneNumber>d__68 : IEnumera
 	public string number; 
 	private int <i>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

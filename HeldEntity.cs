@@ -5,57 +5,57 @@ public class HeldEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 631
 	public uint itemUID; 
 
 
-public static void ResetToPool(HeldEntity instance) { }
+	public static void ResetToPool(HeldEntity instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(HeldEntity instance) { }
+	public void CopyTo(HeldEntity instance) { }
 
-public HeldEntity Copy() { }
+	public HeldEntity Copy() { }
 
-public static HeldEntity Deserialize(Stream stream) { }
+	public static HeldEntity Deserialize(Stream stream) { }
 
-public static HeldEntity DeserializeLengthDelimited(Stream stream) { }
+	public static HeldEntity DeserializeLengthDelimited(Stream stream) { }
 
-public static HeldEntity DeserializeLength(Stream stream, int length) { }
+	public static HeldEntity DeserializeLength(Stream stream, int length) { }
 
-public static HeldEntity Deserialize(byte[] buffer) { }
+	public static HeldEntity Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, HeldEntity previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, HeldEntity previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static HeldEntity Deserialize(byte[] buffer, HeldEntity instance, bool isDelta = False) { }
+	public static HeldEntity Deserialize(byte[] buffer, HeldEntity instance, bool isDelta = False) { }
 
-public static HeldEntity Deserialize(Stream stream, HeldEntity instance, bool isDelta) { }
+	public static HeldEntity Deserialize(Stream stream, HeldEntity instance, bool isDelta) { }
 
-public static HeldEntity DeserializeLengthDelimited(Stream stream, HeldEntity instance, bool isDelta) { }
+	public static HeldEntity DeserializeLengthDelimited(Stream stream, HeldEntity instance, bool isDelta) { }
 
-public static HeldEntity DeserializeLength(Stream stream, int length, HeldEntity instance, bool isDelta) { }
+	public static HeldEntity DeserializeLength(Stream stream, int length, HeldEntity instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, HeldEntity instance, HeldEntity previous) { }
+	public static void SerializeDelta(Stream stream, HeldEntity instance, HeldEntity previous) { }
 
-public static void Serialize(Stream stream, HeldEntity instance) { }
+	public static void Serialize(Stream stream, HeldEntity instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(HeldEntity instance) { }
+	public static byte[] SerializeToBytes(HeldEntity instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, HeldEntity instance) { }
+	public static void SerializeLengthDelimited(Stream stream, HeldEntity instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -72,7 +72,7 @@ public class HeldEntity : BaseEntity // TypeDefIndex: 8575
 	protected bool isDeployed; 
 	public static float lastExamineTime; 
 	private float nextExamineTime; 
-public const BaseEntity.Flags Flag_ForceVisible = 65536;
+	public const BaseEntity.Flags Flag_ForceVisible = 65536;
 	[HeaderAttribute] 
 	public string handBone; 
 	public AnimatorOverrideController HoldAnimationOverride; 
@@ -88,103 +88,103 @@ public const BaseEntity.Flags Flag_ForceVisible = 65536;
 	public float FirstPersonRotationStrength; 
 	internal uint ownerItemUID; 
 
-public bool hostile { get; }
+	public bool hostile { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public virtual void AddPunch(Vector3 amount, float duration) { }
+	public virtual void AddPunch(Vector3 amount, float duration) { }
 
 	[BaseEntity.RPC_Client] 
-public void CL_Punch(BaseEntity.RPCMessage msg) { }
+	public void CL_Punch(BaseEntity.RPCMessage msg) { }
 
-public virtual void DoRecoilCompensation() { }
+	public virtual void DoRecoilCompensation() { }
 
-public Vector3 GetAddedPunch() { }
+	public Vector3 GetAddedPunch() { }
 
-public virtual void SimPunches() { }
+	public virtual void SimPunches() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public float GetFovOverride() { }
+	public float GetFovOverride() { }
 
-internal override void DoNetworkDestroy() { }
+	internal override void DoNetworkDestroy() { }
 
-public virtual void PostLateClientCycle() { }
+	public virtual void PostLateClientCycle() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void UpdateHolsteredOffset() { }
+	public void UpdateHolsteredOffset() { }
 
-public virtual void EditViewAngles() { }
+	public virtual void EditViewAngles() { }
 
-public virtual void ClampPitch(ref float pitch) { }
+	public virtual void ClampPitch(ref float pitch) { }
 
-public virtual void OnFrame() { }
+	public virtual void OnFrame() { }
 
-public virtual void OnInput() { }
+	public virtual void OnInput() { }
 
-public virtual void Examine() { }
+	public virtual void Examine() { }
 
-public virtual void OnDeploy() { }
+	public virtual void OnDeploy() { }
 
-public virtual void OnDeployed() { }
+	public virtual void OnDeployed() { }
 
-public virtual void OnHolster() { }
+	public virtual void OnHolster() { }
 
-public virtual void OnHolstered() { }
+	public virtual void OnHolstered() { }
 
-public virtual void OnViewmodelEvent(string name) { }
+	public virtual void OnViewmodelEvent(string name) { }
 
-public virtual void OnReliableEvent(string name) { }
+	public virtual void OnReliableEvent(string name) { }
 
-public virtual void ModifyCamera() { }
+	public virtual void ModifyCamera() { }
 
-public override bool ShouldDestroyImmediately() { }
+	public override bool ShouldDestroyImmediately() { }
 
-internal void UpdatePlayerModel(PlayerModel playerModel) { }
+	internal void UpdatePlayerModel(PlayerModel playerModel) { }
 
-protected virtual void ProcessPlayerModel(PlayerModel playerModel) { }
+	protected virtual void ProcessPlayerModel(PlayerModel playerModel) { }
 
-public virtual AnimatorOverrideController GetHoldAnimations() { }
+	public virtual AnimatorOverrideController GetHoldAnimations() { }
 
-public virtual float GetMovementMultiplier() { }
+	public virtual float GetMovementMultiplier() { }
 
-public virtual void OnSpawnedForWorkshopPreview() { }
+	public virtual void OnSpawnedForWorkshopPreview() { }
 
-public virtual bool HeldEntityBlocksMovement(InputState state) { }
+	public virtual bool HeldEntityBlocksMovement(InputState state) { }
 
-public virtual void ProcessSpectatorViewmodel(ViewModel vm) { }
+	public virtual void ProcessSpectatorViewmodel(ViewModel vm) { }
 
-public virtual void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
+	public virtual void ProcessSpectatorViewmodelEvent(ViewModel vm, BaseEntity.Signal signal, string arg) { }
 
-public bool get_hostile() { }
+	public bool get_hostile() { }
 
-public bool LightsOn() { }
+	public bool LightsOn() { }
 
-public bool IsDeployed() { }
+	public bool IsDeployed() { }
 
-public BasePlayer GetOwnerPlayer() { }
+	public BasePlayer GetOwnerPlayer() { }
 
-public Connection GetOwnerConnection() { }
+	public Connection GetOwnerConnection() { }
 
-public virtual bool CanBeUsedInWater() { }
+	public virtual bool CanBeUsedInWater() { }
 
-public virtual bool BlocksGestures() { }
+	public virtual bool BlocksGestures() { }
 
-protected Item GetOwnerItem() { }
+	protected Item GetOwnerItem() { }
 
-public override Item GetItem() { }
+	public override Item GetItem() { }
 
-public ItemDefinition GetOwnerItemDefinition() { }
+	public ItemDefinition GetOwnerItemDefinition() { }
 
-public virtual bool IsInstrument() { }
+	public virtual bool IsInstrument() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -196,7 +196,7 @@ public class HeldEntity.PunchEntry // TypeDefIndex: 8576
 	public Vector3 amountAdded; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -209,23 +209,23 @@ public class HeldEntity.HolsterInfo // TypeDefIndex: 8577
 	public Vector3 holsterRotationOffset; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum HeldEntity.HolsterInfo.HolsterSlot // TypeDefIndex: 8578
 {
 	public int value__; 
-public const HeldEntity.HolsterInfo.HolsterSlot BACK = 0;
-public const HeldEntity.HolsterInfo.HolsterSlot RIGHT_THIGH = 1;
-public const HeldEntity.HolsterInfo.HolsterSlot LEFT_THIGH = 2;
+	public const HeldEntity.HolsterInfo.HolsterSlot BACK = 0;
+	public const HeldEntity.HolsterInfo.HolsterSlot RIGHT_THIGH = 1;
+	public const HeldEntity.HolsterInfo.HolsterSlot LEFT_THIGH = 2;
 
 }
 
 public static class HeldEntity.HeldEntityFlags // TypeDefIndex: 8579
 {
-public const BaseEntity.Flags Deployed = 1024;
-public const BaseEntity.Flags LightsOn = 2048;
+	public const BaseEntity.Flags Deployed = 1024;
+	public const BaseEntity.Flags LightsOn = 2048;
 
 }
 

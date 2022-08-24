@@ -5,57 +5,57 @@ public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefInd
 	public List<int> itemIds; 
 
 
-public static void ResetToPool(FrankensteinTable instance) { }
+	public static void ResetToPool(FrankensteinTable instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(FrankensteinTable instance) { }
+	public void CopyTo(FrankensteinTable instance) { }
 
-public FrankensteinTable Copy() { }
+	public FrankensteinTable Copy() { }
 
-public static FrankensteinTable Deserialize(Stream stream) { }
+	public static FrankensteinTable Deserialize(Stream stream) { }
 
-public static FrankensteinTable DeserializeLengthDelimited(Stream stream) { }
+	public static FrankensteinTable DeserializeLengthDelimited(Stream stream) { }
 
-public static FrankensteinTable DeserializeLength(Stream stream, int length) { }
+	public static FrankensteinTable DeserializeLength(Stream stream, int length) { }
 
-public static FrankensteinTable Deserialize(byte[] buffer) { }
+	public static FrankensteinTable Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, FrankensteinTable previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, FrankensteinTable previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static FrankensteinTable Deserialize(byte[] buffer, FrankensteinTable instance, bool isDelta = False) { }
+	public static FrankensteinTable Deserialize(byte[] buffer, FrankensteinTable instance, bool isDelta = False) { }
 
-public static FrankensteinTable Deserialize(Stream stream, FrankensteinTable instance, bool isDelta) { }
+	public static FrankensteinTable Deserialize(Stream stream, FrankensteinTable instance, bool isDelta) { }
 
-public static FrankensteinTable DeserializeLengthDelimited(Stream stream, FrankensteinTable instance, bool isDelta) { }
+	public static FrankensteinTable DeserializeLengthDelimited(Stream stream, FrankensteinTable instance, bool isDelta) { }
 
-public static FrankensteinTable DeserializeLength(Stream stream, int length, FrankensteinTable instance, bool isDelta) { }
+	public static FrankensteinTable DeserializeLength(Stream stream, int length, FrankensteinTable instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, FrankensteinTable instance, FrankensteinTable previous) { }
+	public static void SerializeDelta(Stream stream, FrankensteinTable instance, FrankensteinTable previous) { }
 
-public static void Serialize(Stream stream, FrankensteinTable instance) { }
+	public static void Serialize(Stream stream, FrankensteinTable instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(FrankensteinTable instance) { }
+	public static byte[] SerializeToBytes(FrankensteinTable instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, FrankensteinTable instance) { }
+	public static void SerializeLengthDelimited(Stream stream, FrankensteinTable instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -75,55 +75,55 @@ public class FrankensteinTable : StorageContainer // TypeDefIndex: 8392
 	[HeaderAttribute] 
 	public float TableDownDuration; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public bool IsHeadItem(ItemDefinition itemDef) { }
+	public bool IsHeadItem(ItemDefinition itemDef) { }
 
-public bool IsTorsoItem(ItemDefinition itemDef) { }
+	public bool IsTorsoItem(ItemDefinition itemDef) { }
 
-public bool IsLegsItem(ItemDefinition itemDef) { }
+	public bool IsLegsItem(ItemDefinition itemDef) { }
 
-public void Create() { }
-
-	[BaseEntity.Menu] 
-	[BaseEntity.Menu.Description] 
-	[BaseEntity.Menu.ShowIf] 
-	[BaseEntity.Menu.Icon] 
-public void MenuWakeFrankenstein(BasePlayer ply) { }
-
-public bool CanWake(BasePlayer player) { }
+	public void Create() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.ShowIf] 
 	[BaseEntity.Menu.Icon] 
-public void MenuSleepFrankenstein(BasePlayer ply) { }
+	public void MenuWakeFrankenstein(BasePlayer ply) { }
 
-public bool CanSleep(BasePlayer player) { }
+	public bool CanWake(BasePlayer player) { }
 
-public bool HasValidItems(ItemContainer container) { }
+	[BaseEntity.Menu] 
+	[BaseEntity.Menu.Description] 
+	[BaseEntity.Menu.ShowIf] 
+	[BaseEntity.Menu.Icon] 
+	public void MenuSleepFrankenstein(BasePlayer ply) { }
 
-public List<ItemDefinition> GetValidItems(ItemContainer container) { }
+	public bool CanSleep(BasePlayer player) { }
 
-public bool HasAllValidItems(List<ItemDefinition> items) { }
+	public bool HasValidItems(ItemContainer container) { }
 
-private void CheckItem(ItemDefinition item, List<ItemDefinition> itemList, List<ItemDefinition> validItems, ref bool set) { }
+	public List<ItemDefinition> GetValidItems(ItemContainer container) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public bool HasAllValidItems(List<ItemDefinition> items) { }
+
+	private void CheckItem(ItemDefinition item, List<ItemDefinition> itemList, List<ItemDefinition> validItems, ref bool set) { }
+
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
 	[BaseEntity.RPC_Client] 
-public void CL_WakeFrankenstein(BaseEntity.RPCMessage msg) { }
+	public void CL_WakeFrankenstein(BaseEntity.RPCMessage msg) { }
 
-public void RefreshVisuals() { }
+	public void RefreshVisuals() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

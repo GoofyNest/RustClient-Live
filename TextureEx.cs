@@ -4,14 +4,14 @@ public static class TextureEx // TypeDefIndex: 5605
 
 
 	[ExtensionAttribute] 
-public static void Clear(Texture2D tex, Color32 color) { }
+	public static void Clear(Texture2D tex, Color32 color) { }
 
 	[ExtensionAttribute] 
-public static int GetSizeInBytes(Texture texture) { }
+	public static int GetSizeInBytes(Texture texture) { }
 
-public static int GetBitsPerPixel(TextureFormat format) { }
+	public static int GetBitsPerPixel(TextureFormat format) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

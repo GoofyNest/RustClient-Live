@@ -19,31 +19,31 @@ public class DistanceFlareLOD : FacepunchBehaviour, ILOD, IClientComponent // Ty
 	private bool queuedState; 
 
 
-private float GetDistance() { }
+	private float GetDistance() { }
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-private void UpdateMaterialPropertyBlock() { }
+	private void UpdateMaterialPropertyBlock() { }
 
-private void ToggleFlare(bool state) { }
+	private void ToggleFlare(bool state) { }
 
-private void FadingToggle() { }
+	private void FadingToggle() { }
 
-public void SetFlareActive(bool lightOn) { }
+	public void SetFlareActive(bool lightOn) { }
 
-public void SetFlareIntensity(float intensity) { }
+	public void SetFlareIntensity(float intensity) { }
 
-public void RefreshLOD() { }
+	public void RefreshLOD() { }
 
-public void ChangeLOD() { }
+	public void ChangeLOD() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

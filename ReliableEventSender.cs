@@ -11,15 +11,15 @@ public class ReliableEventSender : StateMachineBehaviour // TypeDefIndex: 9119
 	private AnimationEvents eventComponent; 
 
 
-public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+	public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-public override void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+	public override void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-private void SendEvent(Animator animator, string eventName) { }
+	private void SendEvent(Animator animator, string eventName) { }
 
-public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
+	public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

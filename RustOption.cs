@@ -7,33 +7,33 @@ public class RustOption : RustControl // TypeDefIndex: 7025
 	private int CurrentOption; 
 	public RustOption.ChangedEvent OnChanged; 
 
-public Option Value { get; }
+	public Option Value { get; }
 
 
-public Option get_Value() { }
+	public Option get_Value() { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void SetOptions(Option[] options) { }
+	public void SetOptions(Option[] options) { }
 
-public void SetOption(int i) { }
+	public void SetOption(int i) { }
 
-public void SetOptionDefault() { }
+	public void SetOptionDefault() { }
 
-public void OnLeft() { }
+	public void OnLeft() { }
 
-public void OnRight() { }
+	public void OnRight() { }
 
-protected override void ApplyStyle(StyleAsset.Group s) { }
+	protected override void ApplyStyle(StyleAsset.Group s) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class RustOption.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7026
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

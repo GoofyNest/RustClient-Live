@@ -4,15 +4,15 @@ public class BirthdayBalloonHandler : MonoBehaviour // TypeDefIndex: 9578
 	public float checkRadius; 
 
 
-public void OnDrawGizmos() { }
+	public void OnDrawGizmos() { }
 
-public Vector3 GetCheckOrigin() { }
+	public Vector3 GetCheckOrigin() { }
 
-public void SetOn() { }
+	public void SetOn() { }
 
-public void SetOff() { }
+	public void SetOff() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

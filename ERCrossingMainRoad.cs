@@ -74,13 +74,13 @@ public class ERCrossingMainRoad : MonoBehaviour // TypeDefIndex: 7251
 	public string name; 
 
 
-public void OCQOQCDCQC() { }
+	public void OCQOQCDCQC() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-private List<int> Triangulate(List<Vector3> vecs, List<Vector3> edges) { }
+	private List<int> Triangulate(List<Vector3> vecs, List<Vector3> edges) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

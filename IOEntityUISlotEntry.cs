@@ -5,11 +5,11 @@ public class IOEntityUISlotEntry : MonoBehaviour // TypeDefIndex: 10935
 	public Text rightText; 
 
 
-public void Hide() { }
+	public void Hide() { }
 
-public void UpdateText(bool visible, string left, string right, bool wantsSelected = False) { }
+	public void UpdateText(bool visible, string left, string right, bool wantsSelected = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

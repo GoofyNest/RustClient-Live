@@ -1,35 +1,35 @@
 public class WaterGerstner // TypeDefIndex: 10610
 {
-public const int WaveCount = 6;
+	public const int WaveCount = 6;
 
 
-public static void UpdatePrecomputedWaves(WaterGerstner.WaveParams[] waves, ref WaterGerstner.PrecomputedWave[] precomputed) { }
+	public static void UpdatePrecomputedWaves(WaterGerstner.WaveParams[] waves, ref WaterGerstner.PrecomputedWave[] precomputed) { }
 
-public static void UpdatePrecomputedShoreWaves(WaterGerstner.ShoreWaveParams shoreWaves, ref WaterGerstner.PrecomputedShoreWaves precomputed) { }
+	public static void UpdatePrecomputedShoreWaves(WaterGerstner.ShoreWaveParams shoreWaves, ref WaterGerstner.PrecomputedShoreWaves precomputed) { }
 
-public static void UpdateWaveArray(WaterGerstner.PrecomputedWave[] precomputed, ref Vector4[] array) { }
+	public static void UpdateWaveArray(WaterGerstner.PrecomputedWave[] precomputed, ref Vector4[] array) { }
 
-public static void UpdateShoreWaveArray(WaterGerstner.PrecomputedShoreWaves precomputed, ref Vector4[] array) { }
+	public static void UpdateShoreWaveArray(WaterGerstner.PrecomputedShoreWaves precomputed, ref Vector4[] array) { }
 
-private static void GerstnerWave(WaterGerstner.PrecomputedWave wave, Vector2 pos, Vector2 shoreVec, ref float outH) { }
+	private static void GerstnerWave(WaterGerstner.PrecomputedWave wave, Vector2 pos, Vector2 shoreVec, ref float outH) { }
 
-private static void GerstnerWave(WaterGerstner.PrecomputedWave wave, Vector2 pos, Vector2 shoreVec, ref Vector3 outP) { }
+	private static void GerstnerWave(WaterGerstner.PrecomputedWave wave, Vector2 pos, Vector2 shoreVec, ref Vector3 outP) { }
 
-private static void GerstnerShoreWave(WaterGerstner.PrecomputedShoreWaves wave, Vector2 waveDir, Vector2 pos, Vector2 shoreVec, float variation_t, ref float outH) { }
+	private static void GerstnerShoreWave(WaterGerstner.PrecomputedShoreWaves wave, Vector2 waveDir, Vector2 pos, Vector2 shoreVec, float variation_t, ref float outH) { }
 
-private static void GerstnerShoreWave(WaterGerstner.PrecomputedShoreWaves wave, Vector2 waveDir, Vector2 pos, Vector2 shoreVec, float variation_t, ref Vector3 outP) { }
+	private static void GerstnerShoreWave(WaterGerstner.PrecomputedShoreWaves wave, Vector2 waveDir, Vector2 pos, Vector2 shoreVec, float variation_t, ref Vector3 outP) { }
 
-public static Vector3 SampleDisplacement(WaterSystem instance, Vector3 location, Vector3 shore) { }
+	public static Vector3 SampleDisplacement(WaterSystem instance, Vector3 location, Vector3 shore) { }
 
-private static float SampleHeightREF(WaterSystem instance, Vector3 location, Vector3 shore) { }
+	private static float SampleHeightREF(WaterSystem instance, Vector3 location, Vector3 shore) { }
 
-private static void SampleHeightArrayREF(WaterSystem instance, Vector2[] location, Vector3[] shore, float[] height) { }
+	private static void SampleHeightArrayREF(WaterSystem instance, Vector2[] location, Vector3[] shore, float[] height) { }
 
-public static float SampleHeight(WaterSystem instance, Vector3 location, Vector3 shore) { }
+	public static float SampleHeight(WaterSystem instance, Vector3 location, Vector3 shore) { }
 
-public static void SampleHeightArray(WaterSystem instance, Vector2[] location, Vector3[] shore, float[] height) { }
+	public static void SampleHeightArray(WaterSystem instance, Vector2[] location, Vector3[] shore, float[] height) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -45,7 +45,7 @@ public class WaterGerstner.WaveParams // TypeDefIndex: 10611
 	public float Speed; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -64,7 +64,7 @@ public class WaterGerstner.ShoreWaveParams // TypeDefIndex: 10612
 	public float DirectionVarAmp; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -79,7 +79,7 @@ public struct WaterGerstner.PrecomputedWave // TypeDefIndex: 10613
 	public static WaterGerstner.PrecomputedWave Default; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -96,7 +96,7 @@ public struct WaterGerstner.PrecomputedShoreWaves // TypeDefIndex: 10614
 	public static WaterGerstner.PrecomputedShoreWaves Default; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

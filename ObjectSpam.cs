@@ -5,9 +5,9 @@ public class ObjectSpam : MonoBehaviour // TypeDefIndex: 9286
 	public float radius; 
 
 
-private void Start() { }
+	private void Start() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -13,48 +13,48 @@ public class SoundManager : SingletonComponent<SoundManager>, IClientComponent /
 	private float cameraVelSmoothSpeed; 
 	private List<Sound> otherLocalSounds; 
 
-public Vector3 smoothedCameraVel { get; set; }
+	public Vector3 smoothedCameraVel { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public Vector3 get_smoothedCameraVel() { }
+	public Vector3 get_smoothedCameraVel() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_smoothedCameraVel(Vector3 value) { }
+	private void set_smoothedCameraVel(Vector3 value) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void Update() { }
+	public void Update() { }
 
-private void UpdateCameraVelocity() { }
+	private void UpdateCameraVelocity() { }
 
-private void StartPendingSoundPlayers() { }
+	private void StartPendingSoundPlayers() { }
 
-private void StartScheduledSounds() { }
+	private void StartScheduledSounds() { }
 
-public static void AddPendingSoundPlayer(SoundPlayer player) { }
+	public static void AddPendingSoundPlayer(SoundPlayer player) { }
 
-public static void AddBudgetedUpdatable(ISoundBudgetedUpdate updatable) { }
+	public static void AddBudgetedUpdatable(ISoundBudgetedUpdate updatable) { }
 
-public static void RemoveBudgetedUpdatable(ISoundBudgetedUpdate updatable) { }
+	public static void RemoveBudgetedUpdatable(ISoundBudgetedUpdate updatable) { }
 
-public static SoundManager.ScheduledSound ScheduleOneshot(SoundDefinition def, float startTime, Vector3 position, float volumeMod = 1) { }
+	public static SoundManager.ScheduledSound ScheduleOneshot(SoundDefinition def, float startTime, Vector3 position, float volumeMod = 1) { }
 
-public static void CancelScheduledSound(SoundManager.ScheduledSound scheduledSound) { }
+	public static void CancelScheduledSound(SoundManager.ScheduledSound scheduledSound) { }
 
-public static Sound PlayOneshot(SoundDefinition def, GameObject targetParent, bool firstPerson = False, Vector3 position) { }
+	public static Sound PlayOneshot(SoundDefinition def, GameObject targetParent, bool firstPerson = False, Vector3 position) { }
 
-public static Sound RequestSoundInstance(SoundDefinition def, GameObject targetParent, Vector3 position, bool firstPerson = False) { }
+	public static Sound RequestSoundInstance(SoundDefinition def, GameObject targetParent, Vector3 position, bool firstPerson = False) { }
 
-private Sound CreateSoundInstance(SoundDefinition def, GameObject targetParent, bool firstPerson, float cameraDistance) { }
+	private Sound CreateSoundInstance(SoundDefinition def, GameObject targetParent, bool firstPerson, float cameraDistance) { }
 
-private List<Sound> GetOtherLocalSoundInstances(SoundDefinition def, Vector3 pos, List<Sound> otherSounds) { }
+	private List<Sound> GetOtherLocalSoundInstances(SoundDefinition def, Vector3 pos, List<Sound> otherSounds) { }
 
-private GameObject GetSoundObject(SoundDefinition soundDef) { }
+	private GameObject GetSoundObject(SoundDefinition soundDef) { }
 
-public static void RecycleSound(Sound sound) { }
+	public static void RecycleSound(Sound sound) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -66,7 +66,7 @@ public class SoundManager.ScheduledSound // TypeDefIndex: 9033
 	public float volumeMod; 
 
 
-public void .ctor(SoundDefinition def, float startTime, Vector3 position, float volumeMod = 1) { }
+	public void .ctor(SoundDefinition def, float startTime, Vector3 position, float volumeMod = 1) { }
 
 }
 

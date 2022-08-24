@@ -36,29 +36,29 @@ public class SEScreenSpaceShadows : MonoBehaviour // TypeDefIndex: 11522
 	private Texture2D noBlendTex; 
 
 
-private void AddCommandBufferClean(Light light, CommandBuffer commandBuffer, LightEvent lightEvent) { }
+	private void AddCommandBufferClean(Light light, CommandBuffer commandBuffer, LightEvent lightEvent) { }
 
-private void AddCommandBufferClean(Camera camera, CommandBuffer commandBuffer, CameraEvent cameraEvent) { }
+	private void AddCommandBufferClean(Camera camera, CommandBuffer commandBuffer, CameraEvent cameraEvent) { }
 
-private void RemoveCommandBuffer(Light light, CommandBuffer commandBuffer, LightEvent lightEvent) { }
+	private void RemoveCommandBuffer(Light light, CommandBuffer commandBuffer, LightEvent lightEvent) { }
 
-private void RemoveCommandBuffer(Camera camera, CommandBuffer commandBuffer, CameraEvent cameraEvent) { }
+	private void RemoveCommandBuffer(Camera camera, CommandBuffer commandBuffer, CameraEvent cameraEvent) { }
 
-private void RemoveCommandBuffers() { }
+	private void RemoveCommandBuffers() { }
 
-public bool GetCompatibleRenderPath() { }
+	public bool GetCompatibleRenderPath() { }
 
-private void Init() { }
+	private void Init() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

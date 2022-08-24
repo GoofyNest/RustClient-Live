@@ -4,7 +4,7 @@ public class WireTool : HeldEntity // TypeDefIndex: 8662
 	public Sprite OutputSprite; 
 	public Sprite ClearSprite; 
 	public static float maxWireLength; 
-private const int maxLineNodes = 16;
+	private const int maxLineNodes = 16;
 	public GameObjectRef plugEffect; 
 	public GameObjectRef ioLine; 
 	public IOEntity.IOType wireType; 
@@ -19,7 +19,7 @@ private const int maxLineNodes = 16;
 	public static Translate.Phrase Yellow; 
 	public static Translate.Phrase YellowDesc; 
 	public WireTool.PendingPlug_t pending; 
-private const float lineThickness = 0,02;
+	private const float lineThickness = 0,02;
 	private bool wantsCrosshair; 
 	private ClientIOLine pendingLine; 
 	private WireTool.WireColour currentColour; 
@@ -30,121 +30,121 @@ private const float lineThickness = 0,02;
 	private bool isSolo; 
 	private float clearProgress; 
 
-public bool CanChangeColours { get; }
+	public bool CanChangeColours { get; }
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-private void AddIOOption(IOEntity.IOSlot slot, List<Option> opts, bool input, int index, int order = 0) { }
+	private void AddIOOption(IOEntity.IOSlot slot, List<Option> opts, bool input, int index, int order = 0) { }
 
-public void AddClearConnections(List<Option> opts) { }
+	public void AddClearConnections(List<Option> opts) { }
 
-public List<Option> GetIOOptions(IOEntity source) { }
+	public List<Option> GetIOOptions(IOEntity source) { }
 
-public bool get_CanChangeColours() { }
+	public bool get_CanChangeColours() { }
 
-public void ClearPendingPlug() { }
+	public void ClearPendingPlug() { }
 
-public bool HasPendingPlug() { }
+	public bool HasPendingPlug() { }
 
-public bool PendingPlugIsInput() { }
+	public bool PendingPlugIsInput() { }
 
-public bool PendingPlugIsType(IOEntity.IOType type) { }
+	public bool PendingPlugIsType(IOEntity.IOType type) { }
 
-public bool PendingPlugIsOutput() { }
+	public bool PendingPlugIsOutput() { }
 
-public Vector3 PendingPlugWorldPos() { }
+	public Vector3 PendingPlugWorldPos() { }
 
-public static bool CanPlayerUseWires(BasePlayer player) { }
+	public static bool CanPlayerUseWires(BasePlayer player) { }
 
-public static bool CanModifyEntity(BasePlayer player, BaseEntity ent) { }
+	public static bool CanModifyEntity(BasePlayer player, BaseEntity ent) { }
 
-public bool PendingPlugRoot() { }
+	public bool PendingPlugRoot() { }
 
-public bool HasPendingWire() { }
+	public bool HasPendingWire() { }
 
-public float GetPendingLengthRemaining() { }
+	public float GetPendingLengthRemaining() { }
 
-public int GetWireClicksRemaining() { }
+	public int GetWireClicksRemaining() { }
 
-public bool ValidSurface() { }
+	public bool ValidSurface() { }
 
-public void ClientRequestClear(IOEntity ent, int slot, bool input) { }
+	public void ClientRequestClear(IOEntity ent, int slot, bool input) { }
 
-public IOEntity GetLookingAtIOEnt() { }
+	public IOEntity GetLookingAtIOEnt() { }
 
-public override void OnHolster() { }
+	public override void OnHolster() { }
 
-public override void OnDeploy() { }
+	public override void OnDeploy() { }
 
-public bool WantsInputList() { }
+	public bool WantsInputList() { }
 
-public bool WantsOutputList() { }
+	public bool WantsOutputList() { }
 
-public void ClearClicked() { }
+	public void ClearClicked() { }
 
-private bool IsSlotOccupied(IOEntity ent, bool input, int index) { }
+	private bool IsSlotOccupied(IOEntity ent, bool input, int index) { }
 
-private bool IsSlotValidType(IOEntity ent, bool input, int index) { }
+	private bool IsSlotValidType(IOEntity ent, bool input, int index) { }
 
-public void ClientAttemptConnection(bool input, int index) { }
+	public void ClientAttemptConnection(bool input, int index) { }
 
-public void BeginLine(Vector3 startWorldPos) { }
+	public void BeginLine(Vector3 startWorldPos) { }
 
-public static ClientIOLine CreateLine(Vector3 spawnPos, Quaternion rotation, IOEntity.IOType type, WireTool.WireColour colour) { }
+	public static ClientIOLine CreateLine(Vector3 spawnPos, Quaternion rotation, IOEntity.IOType type, WireTool.WireColour colour) { }
 
-private static string GetElectricalWirePath(WireTool.WireColour colour) { }
+	private static string GetElectricalWirePath(WireTool.WireColour colour) { }
 
-private static string GetFluidicWirePath(WireTool.WireColour colour) { }
+	private static string GetFluidicWirePath(WireTool.WireColour colour) { }
 
-public void EndLine(bool destroy = False) { }
+	public void EndLine(bool destroy = False) { }
 
-private bool SendPendingLine(IOEntity input, int inputIndex, IOEntity output, int outputIndex, List<Vector3> positions) { }
+	private bool SendPendingLine(IOEntity input, int inputIndex, IOEntity output, int outputIndex, List<Vector3> positions) { }
 
-public override bool NeedsCrosshair() { }
+	public override bool NeedsCrosshair() { }
 
-public static void RefreshDirectionalVisibility() { }
+	public static void RefreshDirectionalVisibility() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public float GetClearProgress() { }
+	public float GetClearProgress() { }
 
-private void SetCurrentColour(WireTool.WireColour newColour) { }
+	private void SetCurrentColour(WireTool.WireColour newColour) { }
 
-private bool ValidateLine(List<Vector3> lineList, IOEntity inputEntity, IOEntity outputEntity, BasePlayer byPlayer) { }
+	private bool ValidateLine(List<Vector3> lineList, IOEntity inputEntity, IOEntity outputEntity, BasePlayer byPlayer) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
-
-	[CompilerGeneratedAttribute] 
-private void <AddClearConnections>b__5_0(BasePlayer ply) { }
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnInput>b__67_0(BasePlayer ply) { }
+	private void <AddClearConnections>b__5_0(BasePlayer ply) { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnInput>b__67_1(BasePlayer ply) { }
+	private void <OnInput>b__67_0(BasePlayer ply) { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnInput>b__67_2(BasePlayer ply) { }
+	private void <OnInput>b__67_1(BasePlayer ply) { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnInput>b__67_3(BasePlayer ply) { }
+	private void <OnInput>b__67_2(BasePlayer ply) { }
 
 	[CompilerGeneratedAttribute] 
-private void <OnInput>b__67_4(BasePlayer ply) { }
+	private void <OnInput>b__67_3(BasePlayer ply) { }
+
+	[CompilerGeneratedAttribute] 
+	private void <OnInput>b__67_4(BasePlayer ply) { }
 
 }
 
 public enum WireTool.WireColour // TypeDefIndex: 8663
 {
 	public int value__; 
-public const WireTool.WireColour Default = 0;
-public const WireTool.WireColour Red = 1;
-public const WireTool.WireColour Green = 2;
-public const WireTool.WireColour Blue = 3;
-public const WireTool.WireColour Yellow = 4;
+	public const WireTool.WireColour Default = 0;
+	public const WireTool.WireColour Red = 1;
+	public const WireTool.WireColour Green = 2;
+	public const WireTool.WireColour Blue = 3;
+	public const WireTool.WireColour Yellow = 4;
 
 }
 
@@ -164,9 +164,9 @@ private sealed class WireTool.<>c__DisplayClass4_0 // TypeDefIndex: 8665
 	public int index; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <AddIOOption>b__0(BasePlayer ply) { }
+	internal void <AddIOOption>b__0(BasePlayer ply) { }
 
 }
 
@@ -176,11 +176,11 @@ private sealed class WireTool.<>c // TypeDefIndex: 8666
 	public static Func<Collider, bool> <>9__33_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CanPlayerUseWires>b__33_0(Collider collider) { }
+	internal bool <CanPlayerUseWires>b__33_0(Collider collider) { }
 
 }
 

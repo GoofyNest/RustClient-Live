@@ -12,31 +12,31 @@ public class Detonator : HeldEntity, IRFObject // TypeDefIndex: 8565
 	private float attackReleasedTime; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public virtual bool IsFullyDeployed() { }
+	public virtual bool IsFullyDeployed() { }
 
-protected void ProcessInputTime() { }
+	protected void ProcessInputTime() { }
 
-public override void OnDeploy() { }
+	public override void OnDeploy() { }
 
-public override void OnHolstered() { }
+	public override void OnHolstered() { }
 
-private void OpenConfigPanel() { }
+	private void OpenConfigPanel() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public void BeginSounds() { }
+	public void BeginSounds() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public int GetFrequency() { }
+	public int GetFrequency() { }
 
-public void ClientSetFrequency(int newFreq) { }
+	public void ClientSetFrequency(int newFreq) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

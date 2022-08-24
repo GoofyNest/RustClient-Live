@@ -4,15 +4,15 @@ public struct AnimatorControllerPlayable : IEquatable<AnimatorControllerPlayable
 	private static readonly AnimatorControllerPlayable m_NullPlayable; 
 
 
-internal void .ctor(PlayableHandle handle) { }
+	internal void .ctor(PlayableHandle handle) { }
 
-public PlayableHandle GetHandle() { }
+	public PlayableHandle GetHandle() { }
 
-public void SetHandle(PlayableHandle handle) { }
+	public void SetHandle(PlayableHandle handle) { }
 
-public bool Equals(AnimatorControllerPlayable other) { }
+	public bool Equals(AnimatorControllerPlayable other) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

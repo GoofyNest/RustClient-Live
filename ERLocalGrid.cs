@@ -16,15 +16,15 @@ public class ERLocalGrid : ScriptableObject // TypeDefIndex: 7212
 	public Vector3 OOCDQCOOQC; 
 
 
-public void Init(ERModularBase scr) { }
+	public void Init(ERModularBase scr) { }
 
-public static ERLocalGrid CreateInstance(ERModularBase scr) { }
+	public static ERLocalGrid CreateInstance(ERModularBase scr) { }
 
-public static string[] GridNames(ERModularBase scr) { }
+	public static string[] GridNames(ERModularBase scr) { }
 
-public void SetOffsets(ERModularBase scr, Vector3 pos, Vector3 v) { }
+	public void SetOffsets(ERModularBase scr, Vector3 pos, Vector3 v) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

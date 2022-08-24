@@ -10,7 +10,7 @@ public class IndividualSpawner : BaseMonoBehaviour, IServerComponent // TypeDefI
 	private bool oneTimeSpawner; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -9,27 +9,27 @@ public class DeferredDecal : MonoBehaviour // TypeDefIndex: 10648
 	private bool cached; 
 	private Matrix4x4 localToWorldMatrix; 
 
-public bool IsDecalEnabled { get; set; }
-public Matrix4x4 matrix { get; }
+	public bool IsDecalEnabled { get; set; }
+	public Matrix4x4 matrix { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsDecalEnabled() { }
+	public bool get_IsDecalEnabled() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_IsDecalEnabled(bool value) { }
+	private void set_IsDecalEnabled(bool value) { }
 
-public Matrix4x4 get_matrix() { }
+	public Matrix4x4 get_matrix() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void DisableDecal() { }
+	public void DisableDecal() { }
 
-public void EnableDecal() { }
+	public void EnableDecal() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

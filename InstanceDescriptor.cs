@@ -5,11 +5,11 @@ public sealed class InstanceDescriptor // TypeDefIndex: 2787
 	private bool isComplete; 
 
 
-public void .ctor(MemberInfo member, ICollection arguments) { }
+	public void .ctor(MemberInfo member, ICollection arguments) { }
 
-public void .ctor(MemberInfo member, ICollection arguments, bool isComplete) { }
+	public void .ctor(MemberInfo member, ICollection arguments, bool isComplete) { }
 
-public object Invoke() { }
+	public object Invoke() { }
 
 }
 

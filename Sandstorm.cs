@@ -6,11 +6,11 @@ public class Sandstorm : MonoBehaviour // TypeDefIndex: 9359
 	public float m_flEmissionRate; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

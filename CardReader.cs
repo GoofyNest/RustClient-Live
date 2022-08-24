@@ -11,13 +11,13 @@ public class CardReader : IOEntity // TypeDefIndex: 8543
 	public BaseEntity.Flags AccessLevel3; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void ClientCardSwiped(Keycard card) { }
+	public void ClientCardSwiped(Keycard card) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -4,7 +4,7 @@ public class RenamedEventArgs : FileSystemEventArgs // TypeDefIndex: 2853
 	private string oldFullPath; 
 
 
-public void .ctor(WatcherChangeTypes changeType, string directory, string name, string oldName) { }
+	public void .ctor(WatcherChangeTypes changeType, string directory, string name, string oldName) { }
 
 }
 

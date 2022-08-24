@@ -9,21 +9,21 @@ public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 11140
 	public int currentValue; 
 
 
-protected override void Init() { }
+	protected override void Init() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void OnValueChanged() { }
+	public void OnValueChanged() { }
 
-public void ChangeValue(int change) { }
+	public void ChangeValue(int change) { }
 
-protected override void SetConvarValue() { }
+	protected override void SetConvarValue() { }
 
-public override void ResetToConvar() { }
+	public override void ResetToConvar() { }
 
-private void ShowValue(string value) { }
+	private void ShowValue(string value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -34,7 +34,7 @@ public class TweakUIDropdown.NameValue // TypeDefIndex: 11141
 	public Translate.Phrase label; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

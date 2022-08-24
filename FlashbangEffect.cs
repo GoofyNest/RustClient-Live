@@ -6,7 +6,7 @@ public class FlashbangEffect : PostProcessEffectSettings // TypeDefIndex: 10251
 	public FloatParameter whiteoutIntensity; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,17 +7,17 @@ public sealed class SecurityPermission : CodeAccessPermission
 	private SecurityPermissionFlag flags; 
 
 
-public void .ctor(PermissionState state) { }
+	public void .ctor(PermissionState state) { }
 
-public bool IsUnrestricted() { }
+	public bool IsUnrestricted() { }
 
-public override bool IsSubsetOf(IPermission target) { }
+	public override bool IsSubsetOf(IPermission target) { }
 
-public override SecurityElement ToXml() { }
+	public override SecurityElement ToXml() { }
 
-private bool IsEmpty() { }
+	private bool IsEmpty() { }
 
-private SecurityPermission Cast(IPermission target) { }
+	private SecurityPermission Cast(IPermission target) { }
 
 }
 

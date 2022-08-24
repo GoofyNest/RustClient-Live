@@ -21,82 +21,82 @@ public class DeferredExtension : MonoBehaviour // TypeDefIndex: 10656
 	private static HashSet<DeferredExtensionMesh> registeredMeshes; 
 	private static HashSet<DeferredExtensionMesh> visibleMeshes; 
 
-private Camera targetCamera { get; }
-private int TargetWidth { get; }
-private int TargetHeight { get; }
+	private Camera targetCamera { get; }
+	private int TargetWidth { get; }
+	private int TargetHeight { get; }
 
 
-private Camera get_targetCamera() { }
+	private Camera get_targetCamera() { }
 
-private int get_TargetWidth() { }
+	private int get_TargetWidth() { }
 
-private int get_TargetHeight() { }
+	private int get_TargetHeight() { }
 
-public static void Register(DeferredExtensionMesh mesh) { }
+	public static void Register(DeferredExtensionMesh mesh) { }
 
-public static void Unregister(DeferredExtensionMesh mesh) { }
+	public static void Unregister(DeferredExtensionMesh mesh) { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void CheckCommandBuffers() { }
+	private void CheckCommandBuffers() { }
 
-private void CleanupCommandBuffers() { }
+	private void CleanupCommandBuffers() { }
 
-private void CreateMaterials() { }
+	private void CreateMaterials() { }
 
-private void CleanupMaterials() { }
+	private void CleanupMaterials() { }
 
-private void BindSystemTextures() { }
+	private void BindSystemTextures() { }
 
-private void SafeCleanupTexture<T>(ref T tex) { }
-/* GenericInstMethod :
-|
-|-DeferredExtension.SafeCleanupTexture<object>
-|-DeferredExtension.SafeCleanupTexture<RenderTexture>
-*/
+	private void SafeCleanupTexture<T>(ref T tex) { }
+	/* GenericInstMethod :
+	|
+	|-DeferredExtension.SafeCleanupTexture<object>
+	|-DeferredExtension.SafeCleanupTexture<RenderTexture>
+	*/
 
-private void CleanupSystemTextures() { }
+	private void CleanupSystemTextures() { }
 
-private void CheckSystemTextures() { }
+	private void CheckSystemTextures() { }
 
-public static void BecameVisible(DeferredExtensionMesh mesh) { }
+	public static void BecameVisible(DeferredExtensionMesh mesh) { }
 
-public static void BecameInvisible(DeferredExtensionMesh mesh) { }
+	public static void BecameInvisible(DeferredExtensionMesh mesh) { }
 
-public void FillCommandBuffer_ExtendGBuffer(CommandBuffer cb) { }
+	public void FillCommandBuffer_ExtendGBuffer(CommandBuffer cb) { }
 
-public void FillCommandBuffer_PostSubsurface(CommandBuffer cb) { }
+	public void FillCommandBuffer_PostSubsurface(CommandBuffer cb) { }
 
-private void CheckConsoleVars() { }
+	private void CheckConsoleVars() { }
 
-private void CheckShaderKeywords() { }
+	private void CheckShaderKeywords() { }
 
-private void SetShaderGlobals() { }
+	private void SetShaderGlobals() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-public static float LightIntensityScale(float intensity) { }
+	public static float LightIntensityScale(float intensity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 private enum DeferredExtension.SubsurfacePass // TypeDefIndex: 10657
 {
 	public int value__; 
-public const DeferredExtension.SubsurfacePass SetupFullRes = 0;
-public const DeferredExtension.SubsurfacePass SetupHalfRes = 1;
-public const DeferredExtension.SubsurfacePass Direction0 = 2;
-public const DeferredExtension.SubsurfacePass Direction1 = 3;
-public const DeferredExtension.SubsurfacePass RecombineFullRes = 4;
-public const DeferredExtension.SubsurfacePass RecombineHalfRes = 5;
-public const DeferredExtension.SubsurfacePass RecombinePassthrough = 6;
+	public const DeferredExtension.SubsurfacePass SetupFullRes = 0;
+	public const DeferredExtension.SubsurfacePass SetupHalfRes = 1;
+	public const DeferredExtension.SubsurfacePass Direction0 = 2;
+	public const DeferredExtension.SubsurfacePass Direction1 = 3;
+	public const DeferredExtension.SubsurfacePass RecombineFullRes = 4;
+	public const DeferredExtension.SubsurfacePass RecombineHalfRes = 5;
+	public const DeferredExtension.SubsurfacePass RecombinePassthrough = 6;
 
 }
 

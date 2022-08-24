@@ -4,12 +4,12 @@ public class IpList : Internet // TypeDefIndex: 5289
 	private bool wantsCancel; 
 
 
-public void .ctor(IEnumerable<string> list) { }
+	public void .ctor(IEnumerable<string> list) { }
 
 	[AsyncStateMachineAttribute] 
-public override Task<bool> RunQueryAsync(float timeoutSeconds = 10) { }
+	public override Task<bool> RunQueryAsync(float timeoutSeconds = 10) { }
 
-public override void Cancel() { }
+	public override void Cancel() { }
 
 }
 
@@ -27,10 +27,10 @@ private struct IpList.<RunQueryAsync>d__4 : IAsyncStateMachine // TypeDefIndex: 
 	private TaskAwaiter<bool> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

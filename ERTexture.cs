@@ -8,9 +8,9 @@ public class ERTexture // TypeDefIndex: 7225
 	public float rightInnerOffset; 
 
 
-public void .ctor(Texture2D _texture, float _roadWidth, float _leftOffset, float _rightOffset, float _leftInnerOffset, float _rightInnerOffset) { }
+	public void .ctor(Texture2D _texture, float _roadWidth, float _leftOffset, float _rightOffset, float _leftInnerOffset, float _rightInnerOffset) { }
 
-public static ERTexture GetERTexture(Material mat) { }
+	public static ERTexture GetERTexture(Material mat) { }
 
 }
 

@@ -14,9 +14,9 @@ public sealed class Grain : PostProcessEffectSettings // TypeDefIndex: 11784
 	public FloatParameter lumContrib; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

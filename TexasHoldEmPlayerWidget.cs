@@ -55,35 +55,35 @@ public class TexasHoldEmPlayerWidget : MonoBehaviour // TypeDefIndex: 10882
 	private TimeSince lastHandResultShow; 
 
 
-public void PopulateWidget(CardPlayerData pData, CardTableUI ui, TexasHoldEmPlayerWidget.PlayerUIState uiState, TexasHoldEmPlayerWidget.PlayerChipState chipState, bool isLocalPlayer, bool roundInProgress) { }
+	public void PopulateWidget(CardPlayerData pData, CardTableUI ui, TexasHoldEmPlayerWidget.PlayerUIState uiState, TexasHoldEmPlayerWidget.PlayerChipState chipState, bool isLocalPlayer, bool roundInProgress) { }
 
-public void DisplayInputAction(TexasHoldEmController.PokerInputOption input, int value) { }
+	public void DisplayInputAction(TexasHoldEmController.PokerInputOption input, int value) { }
 
-public void DisplayHandResult(PokerLib.PokerResult result, TexasHoldEmUI ui) { }
+	public void DisplayHandResult(PokerLib.PokerResult result, TexasHoldEmUI ui) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum TexasHoldEmPlayerWidget.PlayerUIState // TypeDefIndex: 10883
 {
 	public int value__; 
-public const TexasHoldEmPlayerWidget.PlayerUIState Default = 0;
-public const TexasHoldEmPlayerWidget.PlayerUIState TheirTurn = 1;
-public const TexasHoldEmPlayerWidget.PlayerUIState Winner = 2;
-public const TexasHoldEmPlayerWidget.PlayerUIState Neutral = 3;
-public const TexasHoldEmPlayerWidget.PlayerUIState Loser = 4;
-public const TexasHoldEmPlayerWidget.PlayerUIState Folded = 5;
+	public const TexasHoldEmPlayerWidget.PlayerUIState Default = 0;
+	public const TexasHoldEmPlayerWidget.PlayerUIState TheirTurn = 1;
+	public const TexasHoldEmPlayerWidget.PlayerUIState Winner = 2;
+	public const TexasHoldEmPlayerWidget.PlayerUIState Neutral = 3;
+	public const TexasHoldEmPlayerWidget.PlayerUIState Loser = 4;
+	public const TexasHoldEmPlayerWidget.PlayerUIState Folded = 5;
 
 }
 
 public enum TexasHoldEmPlayerWidget.PlayerChipState // TypeDefIndex: 10884
 {
 	public int value__; 
-public const TexasHoldEmPlayerWidget.PlayerChipState None = 0;
-public const TexasHoldEmPlayerWidget.PlayerChipState Dealer = 1;
-public const TexasHoldEmPlayerWidget.PlayerChipState SmallBlind = 2;
-public const TexasHoldEmPlayerWidget.PlayerChipState BigBlind = 3;
+	public const TexasHoldEmPlayerWidget.PlayerChipState None = 0;
+	public const TexasHoldEmPlayerWidget.PlayerChipState Dealer = 1;
+	public const TexasHoldEmPlayerWidget.PlayerChipState SmallBlind = 2;
+	public const TexasHoldEmPlayerWidget.PlayerChipState BigBlind = 3;
 
 }
 

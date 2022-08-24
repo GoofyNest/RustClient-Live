@@ -9,9 +9,9 @@ public class ExceptionHandlingClause // TypeDefIndex: 567
 	internal int handler_length; 
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

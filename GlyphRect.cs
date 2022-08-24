@@ -14,32 +14,32 @@ public struct GlyphRect : IEquatable<GlyphRect> // TypeDefIndex: 4110
 	private int m_Height; 
 	private static readonly GlyphRect s_ZeroGlyphRect; 
 
-public int x { get; }
-public int y { get; }
-public int width { get; }
-public int height { get; }
-public static GlyphRect zero { get; }
+	public int x { get; }
+	public int y { get; }
+	public int width { get; }
+	public int height { get; }
+	public static GlyphRect zero { get; }
 
 
-public int get_x() { }
+	public int get_x() { }
 
-public int get_y() { }
+	public int get_y() { }
 
-public int get_width() { }
+	public int get_width() { }
 
-public int get_height() { }
+	public int get_height() { }
 
-public static GlyphRect get_zero() { }
+	public static GlyphRect get_zero() { }
 
-public void .ctor(int x, int y, int width, int height) { }
+	public void .ctor(int x, int y, int width, int height) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(GlyphRect other) { }
+	public bool Equals(GlyphRect other) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

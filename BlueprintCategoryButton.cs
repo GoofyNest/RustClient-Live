@@ -12,25 +12,25 @@ public class BlueprintCategoryButton : MonoBehaviour, IInventoryChanged, IPointe
 	private bool Selected; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void OnInventoryChanged() { }
+	public void OnInventoryChanged() { }
 
-private void UpdateValue() { }
+	private void UpdateValue() { }
 
-public void ValueChanged(bool b) { }
+	public void ValueChanged(bool b) { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void DoBounceAnim() { }
+	public void DoBounceAnim() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

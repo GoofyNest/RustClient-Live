@@ -5,15 +5,15 @@ public class MuteListController : UIDialog // TypeDefIndex: 12036
 	public SteamFriendsList SearchList; 
 
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-private void PopulateMuteList() { }
+	private void PopulateMuteList() { }
 
-public void RemoveFromMuteList(ulong id) { }
+	public void RemoveFromMuteList(ulong id) { }
 
-public void MutePlayer(ulong id, string playerName) { }
+	public void MutePlayer(ulong id, string playerName) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -23,11 +23,11 @@ private sealed class MuteListController.<>c // TypeDefIndex: 12037
 	public static Func<ulong, bool> <>9__3_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnEnable>b__3_0(ulong arg) { }
+	internal bool <OnEnable>b__3_0(ulong arg) { }
 
 }
 
@@ -37,9 +37,9 @@ private sealed class MuteListController.<>c__DisplayClass4_0 // TypeDefIndex: 12
 	public MuteListController <>4__this; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <PopulateMuteList>b__0() { }
+	internal void <PopulateMuteList>b__0() { }
 
 }
 

@@ -9,19 +9,19 @@ public class LookatTooltip : MonoBehaviour // TypeDefIndex: 11082
 	private int lastInfoHash; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateLookingAtHud(BaseEntity ent) { }
+	private void UpdateLookingAtHud(BaseEntity ent) { }
 
-public bool HasChanged(BaseEntity ent) { }
+	public bool HasChanged(BaseEntity ent) { }
 
-private void UpdateTooltipInfo() { }
+	private void UpdateTooltipInfo() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

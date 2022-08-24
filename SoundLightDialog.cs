@@ -8,13 +8,13 @@ public class SoundLightDialog : UIDialog // TypeDefIndex: 10907
 	private AudioVisualisationEntity targetEntity; 
 
 
-public void SetLight(AudioVisualisationEntity entity) { }
+	public void SetLight(AudioVisualisationEntity entity) { }
 
-public override void CloseDialog() { }
+	public override void CloseDialog() { }
 
-private int GetValueFromOption(RustOption option, int defaultValue = 0) { }
+	private int GetValueFromOption(RustOption option, int defaultValue = 0) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

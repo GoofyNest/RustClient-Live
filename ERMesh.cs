@@ -143,53 +143,53 @@ public class ERMesh // TypeDefIndex: 7247
 	public bool terrainMesh; 
 
 
-public void OCQQQCQQDD() { }
+	public void OCQQQCQQDD() { }
 
-public void .ctor(GameObject m_go, SideObject soScript, float minZ, Transform sourceTransform, Vector3 scale, Mesh m, Material mat, float startMin = 0, bool rotate180 = False) { }
+	public void .ctor(GameObject m_go, SideObject soScript, float minZ, Transform sourceTransform, Vector3 scale, Mesh m, Material mat, float startMin = 0, bool rotate180 = False) { }
 
-private void OCDCDCQQDQ(GameObject m_go, SideObject soScript, float minZ, Transform sourceTransform, Vector3 scale, Mesh m, Material mat, float startMin, bool namingConvention) { }
+	private void OCDCDCQQDQ(GameObject m_go, SideObject soScript, float minZ, Transform sourceTransform, Vector3 scale, Mesh m, Material mat, float startMin, bool namingConvention) { }
 
-private void OCDCQCQQOC(List<Vector3> vecs, ref List<ZIndexArray> zValueVecIndexes, ref List<float> zValues) { }
+	private void OCDCQCQQOC(List<Vector3> vecs, ref List<ZIndexArray> zValueVecIndexes, ref List<float> zValues) { }
 
-public void GetMiddleSementInfo(List<Vector3> vecs, ref float minMiddleZ, ref float maxMiddleZ, ref List<int> middleStartInts, ref List<int> middleEndInts) { }
+	public void GetMiddleSementInfo(List<Vector3> vecs, ref float minMiddleZ, ref float maxMiddleZ, ref List<int> middleStartInts, ref List<int> middleEndInts) { }
 
-public void GetMiddleEdges(List<Vector3> vecs, float z, ref List<int> edgeInts) { }
+	public void GetMiddleEdges(List<Vector3> vecs, float z, ref List<int> edgeInts) { }
 
-public bool OOCDOCOCQO(Vector3 v, int index, List<float> zV, ref List<ZIndexArray> zVIndexes) { }
+	public bool OOCDOCOCQO(Vector3 v, int index, List<float> zV, ref List<ZIndexArray> zVIndexes) { }
 
-public void OCDQOQOCCD(int index, Vector3 v, ref List<int> vecsInts, ref List<Vector3> vecs, ref List<Vector2> uv, ref List<Vector2> uv2, ref List<Vector3> normals, ref List<Color> colors, ref List<Vector4> tangents, Vector2 sourceUv, Vector2 sourceUv2, Vector3 sourceNormal, Color sourceColor, Vector4 sourceTangent, ref int tri) { }
+	public void OCDQOQOCCD(int index, Vector3 v, ref List<int> vecsInts, ref List<Vector3> vecs, ref List<Vector2> uv, ref List<Vector2> uv2, ref List<Vector3> normals, ref List<Color> colors, ref List<Vector4> tangents, Vector2 sourceUv, Vector2 sourceUv2, Vector3 sourceNormal, Color sourceColor, Vector4 sourceTangent, ref int tri) { }
 
-public void ODDDDDQDOQ(int index, ref List<int> vecsInts) { }
+	public void ODDDDDQDOQ(int index, ref List<int> vecsInts) { }
 
-public void InEdgePairArray(int index1, int index2, ref List<CRedge> vecsInts) { }
+	public void InEdgePairArray(int index1, int index2, ref List<CRedge> vecsInts) { }
 
-public void OQCDQOQOCQ(float adjustZ) { }
+	public void OQCDQOQOCQ(float adjustZ) { }
 
-public void OCDDCDODQQ(ref List<List<int>> groups, List<int> triInts, List<int> edgeInts) { }
+	public void OCDDCDODQQ(ref List<List<int>> groups, List<int> triInts, List<int> edgeInts) { }
 
-public void OOQOCOQOOO(List<CRedge> edges, ref int curInt) { }
+	public void OOQOCOQOOO(List<CRedge> edges, ref int curInt) { }
 
-public bool OCCCOQOCQO(List<CRedge> edges, int index, int curInt) { }
+	public bool OCCCOQOCQO(List<CRedge> edges, int index, int curInt) { }
 
-public bool ODDDDDQDOQ(int index, List<int> edgeInts) { }
+	public bool ODDDDDQDOQ(int index, List<int> edgeInts) { }
 
-public bool OCDOQODCCQ(List<CRedge> edges, int index1, int index2) { }
+	public bool OCDOQODCCQ(List<CRedge> edges, int index1, int index2) { }
 
-public void MatchEdgePairs(List<CRedge> startEdgePairs, List<CRedge> endEdgePairs, ref List<int> startInts, ref List<int> endInts, ref List<int> startIntsNC, ref List<int> endIntsNC, List<Vector3> startVecs, List<Vector3> endVecs, List<Vector3> startNormals, List<Vector3> normals, ref int OQOQODDQCCInt, ref int ODQCDQCCODInt) { }
+	public void MatchEdgePairs(List<CRedge> startEdgePairs, List<CRedge> endEdgePairs, ref List<int> startInts, ref List<int> endInts, ref List<int> startIntsNC, ref List<int> endIntsNC, List<Vector3> startVecs, List<Vector3> endVecs, List<Vector3> startNormals, List<Vector3> normals, ref int OQOQODDQCCInt, ref int ODQCDQCCODInt) { }
 
-public void OQOCDDCQDD(List<List<int>> startGroups, List<List<int>> endGroups, ref List<int> startInts, ref List<int> endInts, List<Vector3> startVecs, List<Vector3> endVecs) { }
+	public void OQOCDDCQDD(List<List<int>> startGroups, List<List<int>> endGroups, ref List<int> startInts, ref List<int> endInts, List<Vector3> startVecs, List<Vector3> endVecs) { }
 
-public void ODDDOCDCQO(ERModularRoad roadScr, GameObject go, SideObject so, ERModularBase scr, bool mirrored, int sectionListIndex, List<int> sectionIndexes, int autoSectionStart) { }
+	public void ODDDOCDCQO(ERModularRoad roadScr, GameObject go, SideObject so, ERModularBase scr, bool mirrored, int sectionListIndex, List<int> sectionIndexes, int autoSectionStart) { }
 
-public static bool OQCQCDQDOO(ERModularRoad rd, int listIndex, int listItemIndex, SideObject so, bool mirrored) { }
+	public static bool OQCQCDQDOO(ERModularRoad rd, int listIndex, int listItemIndex, SideObject so, bool mirrored) { }
 
-private void OODCCOCQOC(GameObject go, SideObject so, ERModularBase scr, List<Vector3> sVecs, List<Vector2> sUv, List<Vector2> sUv2, List<Color> sColors, List<Vector3> sNormals, List<Vector4> sTangents, List<int> sTriangles, List<int> normalArray1, List<int> normalArray2, List<Material> materials, List<Vector3> sTerrainNormals) { }
+	private void OODCCOCQOC(GameObject go, SideObject so, ERModularBase scr, List<Vector3> sVecs, List<Vector2> sUv, List<Vector2> sUv2, List<Color> sColors, List<Vector3> sNormals, List<Vector4> sTangents, List<int> sTriangles, List<int> normalArray1, List<int> normalArray2, List<Material> materials, List<Vector3> sTerrainNormals) { }
 
-private void OCOCOQQOOO(ref int vecCount, ref List<int> intList, List<Vector3> vecsList, float zValue) { }
+	private void OCOCOQQOOO(ref int vecCount, ref List<int> intList, List<Vector3> vecsList, float zValue) { }
 
-private void OCODQQOCDD(ref List<int> targetIntList, List<int> sourceIntList, List<Vector3> targetVecs, List<Vector3> sourceVecs) { }
+	private void OCODQQOCDD(ref List<int> targetIntList, List<int> sourceIntList, List<Vector3> targetVecs, List<Vector3> sourceVecs) { }
 
-public void Clear() { }
+	public void Clear() { }
 
 }
 

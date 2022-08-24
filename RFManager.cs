@@ -6,11 +6,11 @@ public class RFManager // TypeDefIndex: 9813
 	public static int maxFreq; 
 
 
-public static int ClampFrequency(int freq) { }
+	public static int ClampFrequency(int freq) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

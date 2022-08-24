@@ -2,7 +2,7 @@ internal class ScriptingUtility // TypeDefIndex: 3524
 {
 
 	[RequiredByNativeCodeAttribute] 
-private static bool IsManagedCodeWorking() { }
+	private static bool IsManagedCodeWorking() { }
 
 }
 

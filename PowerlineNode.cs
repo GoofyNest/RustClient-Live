@@ -4,9 +4,9 @@ public class PowerlineNode : MonoBehaviour // TypeDefIndex: 10360
 	public float MaxDistance; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

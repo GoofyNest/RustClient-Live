@@ -4,17 +4,17 @@ public class ViewmodelEditor : SingletonComponent<ViewmodelEditor> // TypeDefInd
 	private bool meleeHit; 
 
 
-private void OnGUI() { }
+	private void OnGUI() { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void DrawWeaponSwitch(Rect rect) { }
+	private void DrawWeaponSwitch(Rect rect) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void DoAnimationEvent(string name) { }
+	public void DoAnimationEvent(string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -25,13 +25,13 @@ private sealed class ViewmodelEditor.<>c // TypeDefIndex: 11456
 	public static Func<BaseViewModel, string> <>9__4_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <DrawWeaponSwitch>b__4_0(BaseViewModel x) { }
+	internal string <DrawWeaponSwitch>b__4_0(BaseViewModel x) { }
 
-internal string <DrawWeaponSwitch>b__4_1(BaseViewModel x) { }
+	internal string <DrawWeaponSwitch>b__4_1(BaseViewModel x) { }
 
 }
 

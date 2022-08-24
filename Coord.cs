@@ -4,7 +4,7 @@ internal struct Coord // TypeDefIndex: 424
 	public short Y; 
 
 
-public void .ctor(int x, int y) { }
+	public void .ctor(int x, int y) { }
 
 }
 

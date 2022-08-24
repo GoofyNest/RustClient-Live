@@ -10,40 +10,40 @@ public class LTSeq // TypeDefIndex: 5574
 	public bool toggle; 
 	private uint _id; 
 
-public int id { get; }
+	public int id { get; }
 
 
-public int get_id() { }
+	public int get_id() { }
 
-public void reset() { }
+	public void reset() { }
 
-public void init(uint id, uint global_counter) { }
+	public void init(uint id, uint global_counter) { }
 
-private LTSeq addOn() { }
+	private LTSeq addOn() { }
 
-private float addPreviousDelays() { }
+	private float addPreviousDelays() { }
 
-public LTSeq append(float delay) { }
+	public LTSeq append(float delay) { }
 
-public LTSeq append(Action callback) { }
+	public LTSeq append(Action callback) { }
 
-public LTSeq append(Action<object> callback, object obj) { }
+	public LTSeq append(Action<object> callback, object obj) { }
 
-public LTSeq append(GameObject gameObject, Action callback) { }
+	public LTSeq append(GameObject gameObject, Action callback) { }
 
-public LTSeq append(GameObject gameObject, Action<object> callback, object obj) { }
+	public LTSeq append(GameObject gameObject, Action<object> callback, object obj) { }
 
-public LTSeq append(LTDescr tween) { }
+	public LTSeq append(LTDescr tween) { }
 
-public LTSeq insert(LTDescr tween) { }
+	public LTSeq insert(LTDescr tween) { }
 
-public LTSeq setScale(float timeScale) { }
+	public LTSeq setScale(float timeScale) { }
 
-private void setScaleRecursive(LTSeq seq, float timeScale, int count) { }
+	private void setScaleRecursive(LTSeq seq, float timeScale, int count) { }
 
-public LTSeq reverse() { }
+	public LTSeq reverse() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -41,12 +41,12 @@ internal sealed class InternalThread : CriticalFinalizerObject // TypeDefIndex: 
 	private IntPtr last; 
 
 
-private void Thread_free_internal() { }
+	private void Thread_free_internal() { }
 
 	[ReliabilityContractAttribute] 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

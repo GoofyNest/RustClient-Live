@@ -9,29 +9,29 @@ public class DeployGuide : BaseMonoBehaviour
 	private MeshFilter meshFilter; 
 
 
-public static void HideFor(float seconds) { }
+	public static void HideFor(float seconds) { }
 
-private void UnHide() { }
+	private void UnHide() { }
 
-public static void Start(Deployable deployable) { }
+	public static void Start(Deployable deployable) { }
 
-public static void End() { }
+	public static void End() { }
 
-public static void Place(Vector3 pos, Quaternion rot) { }
+	public static void Place(Vector3 pos, Quaternion rot) { }
 
-public static DeployGuide Create(Deployable source) { }
+	public static DeployGuide Create(Deployable source) { }
 
-public void Setup(Deployable source) { }
+	public void Setup(Deployable source) { }
 
-public void SetGood() { }
+	public void SetGood() { }
 
-public void SetBad() { }
+	public void SetBad() { }
 
-public static bool Update() { }
+	public static bool Update() { }
 
-public static void SetValid(bool valid) { }
+	public static void SetValid(bool valid) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

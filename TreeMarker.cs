@@ -5,21 +5,21 @@ public class TreeMarker : BaseEntity // TypeDefIndex: 8269
 	public GameObjectRef spawnEffect; 
 	private Vector3 initialPosition; 
 	public bool SpherecastOnInit; 
-private const float markerDistSq = 900;
+	private const float markerDistSq = 900;
 
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
 	[BaseEntity.RPC_Client] 
-public void MarkerHit(BaseEntity.RPCMessage msg) { }
+	public void MarkerHit(BaseEntity.RPCMessage msg) { }
 
-public void UpdatePositioning() { }
+	public void UpdatePositioning() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

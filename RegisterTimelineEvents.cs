@@ -6,22 +6,22 @@ internal struct RegisterTimelineEvents // TypeDefIndex: 7710
 	private List<TimelineEvent> <Events>k__BackingField; 
 
 	[JsonPropertyAttribute] 
-public string GameId { get; set; }
+	public string GameId { get; set; }
 	[JsonPropertyAttribute] 
-public List<TimelineEvent> Events { get; set; }
+	public List<TimelineEvent> Events { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_GameId() { }
+	public string get_GameId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_GameId(string value) { }
+	public void set_GameId(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public List<TimelineEvent> get_Events() { }
+	public List<TimelineEvent> get_Events() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Events(List<TimelineEvent> value) { }
+	public void set_Events(List<TimelineEvent> value) { }
 
 }
 

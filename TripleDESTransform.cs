@@ -8,11 +8,11 @@ internal class TripleDESTransform : SymmetricTransform // TypeDefIndex: 1013
 	private DESTransform D3; 
 
 
-public void .ctor(TripleDES algo, bool encryption, byte[] key, byte[] iv) { }
+	public void .ctor(TripleDES algo, bool encryption, byte[] key, byte[] iv) { }
 
-protected override void ECB(byte[] input, byte[] output) { }
+	protected override void ECB(byte[] input, byte[] output) { }
 
-internal static byte[] GetStrongKey() { }
+	internal static byte[] GetStrongKey() { }
 
 }
 

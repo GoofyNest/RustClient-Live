@@ -9,11 +9,11 @@ internal class RC2Transform : SymmetricTransform // TypeDefIndex: 1007
 	private static readonly byte[] pitable; 
 
 
-public void .ctor(RC2 rc2Algo, bool encryption, byte[] key, byte[] iv) { }
+	public void .ctor(RC2 rc2Algo, bool encryption, byte[] key, byte[] iv) { }
 
-protected override void ECB(byte[] input, byte[] output) { }
+	protected override void ECB(byte[] input, byte[] output) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

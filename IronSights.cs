@@ -27,23 +27,23 @@ public class IronSights : MonoBehaviour // TypeDefIndex: 11436
 	private AnimationCurve currentCurve; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateIronsights(ref CachedTransform<BaseViewModel> vm, Camera cam) { }
+	public void UpdateIronsights(ref CachedTransform<BaseViewModel> vm, Camera cam) { }
 
-private float GetUltrawideOffset() { }
+	private float GetUltrawideOffset() { }
 
-public void SetIronsightsEnabled(bool b) { }
+	public void SetIronsightsEnabled(bool b) { }
 
-public void SetEnabled(bool val) { }
+	public void SetEnabled(bool val) { }
 
-public float GetFOVOffset(float fFOV) { }
+	public float GetFOVOffset(float fFOV) { }
 
-public float GetDelta() { }
+	public float GetDelta() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

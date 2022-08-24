@@ -9,57 +9,57 @@ public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 	public int linedUpToUnload; 
 
 
-public static void ResetToPool(TrainEngine instance) { }
+	public static void ResetToPool(TrainEngine instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(TrainEngine instance) { }
+	public void CopyTo(TrainEngine instance) { }
 
-public TrainEngine Copy() { }
+	public TrainEngine Copy() { }
 
-public static TrainEngine Deserialize(Stream stream) { }
+	public static TrainEngine Deserialize(Stream stream) { }
 
-public static TrainEngine DeserializeLengthDelimited(Stream stream) { }
+	public static TrainEngine DeserializeLengthDelimited(Stream stream) { }
 
-public static TrainEngine DeserializeLength(Stream stream, int length) { }
+	public static TrainEngine DeserializeLength(Stream stream, int length) { }
 
-public static TrainEngine Deserialize(byte[] buffer) { }
+	public static TrainEngine Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, TrainEngine previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, TrainEngine previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static TrainEngine Deserialize(byte[] buffer, TrainEngine instance, bool isDelta = False) { }
+	public static TrainEngine Deserialize(byte[] buffer, TrainEngine instance, bool isDelta = False) { }
 
-public static TrainEngine Deserialize(Stream stream, TrainEngine instance, bool isDelta) { }
+	public static TrainEngine Deserialize(Stream stream, TrainEngine instance, bool isDelta) { }
 
-public static TrainEngine DeserializeLengthDelimited(Stream stream, TrainEngine instance, bool isDelta) { }
+	public static TrainEngine DeserializeLengthDelimited(Stream stream, TrainEngine instance, bool isDelta) { }
 
-public static TrainEngine DeserializeLength(Stream stream, int length, TrainEngine instance, bool isDelta) { }
+	public static TrainEngine DeserializeLength(Stream stream, int length, TrainEngine instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, TrainEngine instance, TrainEngine previous) { }
+	public static void SerializeDelta(Stream stream, TrainEngine instance, TrainEngine previous) { }
 
-public static void Serialize(Stream stream, TrainEngine instance) { }
+	public static void Serialize(Stream stream, TrainEngine instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(TrainEngine instance) { }
+	public static byte[] SerializeToBytes(TrainEngine instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, TrainEngine instance) { }
+	public static void SerializeLengthDelimited(Stream stream, TrainEngine instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -148,149 +148,149 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 	private Light[] sparkLights; 
 	[SerializeField] 
 	private TrainEngineAudio trainAudio; 
-public const BaseEntity.Flags Flag_HazardAhead = 16384;
-private const BaseEntity.Flags Flag_Horn = 65536;
-public const BaseEntity.Flags Flag_AltColor = 131072;
-public const BaseEntity.Flags Flag_EngineSlowed = 262144;
+	public const BaseEntity.Flags Flag_HazardAhead = 16384;
+	private const BaseEntity.Flags Flag_Horn = 65536;
+	public const BaseEntity.Flags Flag_AltColor = 131072;
+	public const BaseEntity.Flags Flag_EngineSlowed = 262144;
 	private VehicleEngineController<TrainEngine> engineController; 
 	[CompilerGeneratedAttribute] 
 	private TrainEngine.EngineSpeeds <CurThrottleSetting>k__BackingField; 
 
-public override bool HasMenuOptions { get; }
-public bool LightsAreOn { get; }
-public bool CloseToHazard { get; }
-public bool EngineIsSlowed { get; }
-public TrainEngine.EngineSpeeds CurThrottleSetting { get; set; }
-public override TrainCar.TrainCarType CarType { get; }
+	public override bool HasMenuOptions { get; }
+	public bool LightsAreOn { get; }
+	public bool CloseToHazard { get; }
+	public bool EngineIsSlowed { get; }
+	public TrainEngine.EngineSpeeds CurThrottleSetting { get; set; }
+	public override TrainCar.TrainCarType CarType { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-protected override void TrainClientTick() { }
+	protected override void TrainClientTick() { }
 
-protected override void StopClientTick() { }
+	protected override void StopClientTick() { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public override bool MountMenuVisible(BasePlayer player) { }
+	public override bool MountMenuVisible(BasePlayer player) { }
 
-protected override void ClientFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
+	protected override void ClientFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
-protected override void OnLifeStateChanged() { }
+	protected override void OnLifeStateChanged() { }
 
-private void RefreshMovementLightVisuals() { }
+	private void RefreshMovementLightVisuals() { }
 
-private void UpdateMonitorVisuals(bool couplingChanged = False) { }
+	private void UpdateMonitorVisuals(bool couplingChanged = False) { }
 
-private void ResetMonitorCouplingHighlight() { }
+	private void ResetMonitorCouplingHighlight() { }
 
-private void UpdateControlLeverVisuals() { }
+	private void UpdateControlLeverVisuals() { }
 
-protected override bool UpdateBraking(float forwardSpeed) { }
+	protected override bool UpdateBraking(float forwardSpeed) { }
 
-protected void PlaySparks() { }
+	protected void PlaySparks() { }
 
-protected void StopSparks() { }
+	protected void StopSparks() { }
 
-protected void SetSparks(bool play) { }
+	protected void SetSparks(bool play) { }
 
-private void UpdateDamageFX() { }
+	private void UpdateDamageFX() { }
 
-private void UpdateEngineFX() { }
+	private void UpdateEngineFX() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_FuelStorage(BasePlayer player) { }
+	public void Menu_FuelStorage(BasePlayer player) { }
 
-public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
-
-	[BaseEntity.RPC_Client] 
-private void SetThrottle(BaseEntity.RPCMessage msg) { }
+	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
 	[BaseEntity.RPC_Client] 
-private void SetFuelAmount(BaseEntity.RPCMessage msg) { }
+	private void SetThrottle(BaseEntity.RPCMessage msg) { }
 
-public bool get_LightsAreOn() { }
+	[BaseEntity.RPC_Client] 
+	private void SetFuelAmount(BaseEntity.RPCMessage msg) { }
 
-public bool get_CloseToHazard() { }
+	public bool get_LightsAreOn() { }
 
-public bool get_EngineIsSlowed() { }
+	public bool get_CloseToHazard() { }
+
+	public bool get_EngineIsSlowed() { }
 
 	[CompilerGeneratedAttribute] 
-public TrainEngine.EngineSpeeds get_CurThrottleSetting() { }
+	public TrainEngine.EngineSpeeds get_CurThrottleSetting() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_CurThrottleSetting(TrainEngine.EngineSpeeds value) { }
+	protected void set_CurThrottleSetting(TrainEngine.EngineSpeeds value) { }
 
-public override TrainCar.TrainCarType get_CarType() { }
+	public override TrainCar.TrainCarType get_CarType() { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-private float GetEnginePowerMultiplier(float minPercent) { }
+	private float GetEnginePowerMultiplier(float minPercent) { }
 
-public float GetThrottleFraction() { }
+	public float GetThrottleFraction() { }
 
-public bool IsNearDesiredSpeed(float leeway) { }
+	public bool IsNearDesiredSpeed(float leeway) { }
 
-protected override void SetTrackSelection(TrainTrackSpline.TrackSelection trackSelection) { }
+	protected override void SetTrackSelection(TrainTrackSpline.TrackSelection trackSelection) { }
 
-private void SetThrottle(TrainEngine.EngineSpeeds throttle) { }
+	private void SetThrottle(TrainEngine.EngineSpeeds throttle) { }
 
-private int GetFuelAmount() { }
+	private int GetFuelAmount() { }
 
-private bool CanMount(BasePlayer player) { }
+	private bool CanMount(BasePlayer player) { }
 
-private bool PlayerIsOnPlatform(BasePlayer player) { }
+	private bool PlayerIsOnPlatform(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private enum TrainEngine.TrainMovementState // TypeDefIndex: 8473
 {
 	public int value__; 
-public const TrainEngine.TrainMovementState Stationary = 0;
-public const TrainEngine.TrainMovementState MovingForwards = 1;
-public const TrainEngine.TrainMovementState MovingBackwards = 2;
+	public const TrainEngine.TrainMovementState Stationary = 0;
+	public const TrainEngine.TrainMovementState MovingForwards = 1;
+	public const TrainEngine.TrainMovementState MovingBackwards = 2;
 
 }
 
 private enum TrainEngine.LeverStyle // TypeDefIndex: 8474
 {
 	public int value__; 
-public const TrainEngine.LeverStyle WorkCart = 0;
-public const TrainEngine.LeverStyle Locomotive = 1;
+	public const TrainEngine.LeverStyle WorkCart = 0;
+	public const TrainEngine.LeverStyle Locomotive = 1;
 
 }
 
 public enum TrainEngine.EngineSpeeds // TypeDefIndex: 8475
 {
 	public int value__; 
-public const TrainEngine.EngineSpeeds Rev_Hi = 0;
-public const TrainEngine.EngineSpeeds Rev_Med = 1;
-public const TrainEngine.EngineSpeeds Rev_Lo = 2;
-public const TrainEngine.EngineSpeeds Zero = 3;
-public const TrainEngine.EngineSpeeds Fwd_Lo = 4;
-public const TrainEngine.EngineSpeeds Fwd_Med = 5;
-public const TrainEngine.EngineSpeeds Fwd_Hi = 6;
+	public const TrainEngine.EngineSpeeds Rev_Hi = 0;
+	public const TrainEngine.EngineSpeeds Rev_Med = 1;
+	public const TrainEngine.EngineSpeeds Rev_Lo = 2;
+	public const TrainEngine.EngineSpeeds Zero = 3;
+	public const TrainEngine.EngineSpeeds Fwd_Lo = 4;
+	public const TrainEngine.EngineSpeeds Fwd_Med = 5;
+	public const TrainEngine.EngineSpeeds Fwd_Hi = 6;
 
 }
 

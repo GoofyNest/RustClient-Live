@@ -3,23 +3,23 @@ internal class Grid.Node<T> // TypeDefIndex: 4830
 	public HashSet<T> Contents; 
 
 
-public void Add(T obj) { }
-/* GenericInstMethod :
-|
-|-Grid.Node<object>.Add
-*/
+	public void Add(T obj) { }
+	/* GenericInstMethod :
+	|
+	|-Grid.Node<object>.Add
+	*/
 
-public bool Remove(T obj) { }
-/* GenericInstMethod :
-|
-|-Grid.Node<object>.Remove
-*/
+	public bool Remove(T obj) { }
+	/* GenericInstMethod :
+	|
+	|-Grid.Node<object>.Remove
+	*/
 
-public void .ctor() { }
-/* GenericInstMethod :
-|
-|-Grid.Node<object>..ctor
-*/
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-Grid.Node<object>..ctor
+	*/
 
 }
 

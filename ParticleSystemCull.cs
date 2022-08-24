@@ -3,11 +3,11 @@ public class ParticleSystemCull : LODComponentParticleSystem // TypeDefIndex: 99
 	public float Distance; 
 
 
-protected override void SetLOD(int newlod) { }
+	protected override void SetLOD(int newlod) { }
 
-protected override int GetLOD(float distance) { }
+	protected override int GetLOD(float distance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

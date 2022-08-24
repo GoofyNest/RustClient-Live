@@ -16,26 +16,26 @@ public static class RemoteSettings
 
 
 	[RequiredByNativeCodeAttribute] 
-internal static void RemoteSettingsUpdated(bool wasLastUpdatedFromServer) { }
+	internal static void RemoteSettingsUpdated(bool wasLastUpdatedFromServer) { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void RemoteSettingsBeforeFetchFromServer() { }
+	internal static void RemoteSettingsBeforeFetchFromServer() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void RemoteSettingsUpdateCompleted(bool wasLastUpdatedFromServer, bool settingsChanged, int response) { }
+	internal static void RemoteSettingsUpdateCompleted(bool wasLastUpdatedFromServer, bool settingsChanged, int response) { }
 
 }
 
 public sealed class RemoteSettings.UpdatedEventHandler : MulticastDelegate // TypeDefIndex: 4742
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke() { }
+	public virtual void Invoke() { }
 
-public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

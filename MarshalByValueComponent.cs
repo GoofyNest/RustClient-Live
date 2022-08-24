@@ -6,24 +6,24 @@ public class MarshalByValueComponent : IComponent, IDisposable, IServiceProvider
 
 	[DesignerSerializationVisibilityAttribute] 
 	[BrowsableAttribute] 
-public virtual ISite Site { get; }
+	public virtual ISite Site { get; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-protected override void Finalize() { }
+	protected override void Finalize() { }
 
-public virtual ISite get_Site() { }
+	public virtual ISite get_Site() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-protected virtual void Dispose(bool disposing) { }
+	protected virtual void Dispose(bool disposing) { }
 
-public virtual object GetService(Type service) { }
+	public virtual object GetService(Type service) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

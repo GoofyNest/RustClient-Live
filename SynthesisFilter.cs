@@ -1,6 +1,6 @@
 public class SynthesisFilter // TypeDefIndex: 7397
 {
-private const double MY_PI = 3,14159265358979;
+	private const double MY_PI = 3,14159265358979;
 	private static readonly float Cos164; 
 	private static readonly float Cos364; 
 	private static readonly float Cos564; 
@@ -45,64 +45,64 @@ private const double MY_PI = 3,14159265358979;
 	private int _ActualWritePos; 
 	private float[] _Eq; 
 
-internal float[] Eq { set; }
+	internal float[] Eq { set; }
 
 
-internal void .ctor(int channelnumber, float factor, float[] eq0) { }
+	internal void .ctor(int channelnumber, float factor, float[] eq0) { }
 
-internal void set_Eq(float[] value) { }
+	internal void set_Eq(float[] value) { }
 
-private void InitBlock() { }
+	private void InitBlock() { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
-internal void AddSample(float sample, int subbandnumber) { }
+	internal void AddSample(float sample, int subbandnumber) { }
 
-internal void AddSamples(float[] s) { }
+	internal void AddSamples(float[] s) { }
 
-private void ComputeNewValues() { }
+	private void ComputeNewValues() { }
 
-private void compute_pc_samples0(ABuffer buffer) { }
+	private void compute_pc_samples0(ABuffer buffer) { }
 
-private void compute_pc_samples1(ABuffer buffer) { }
+	private void compute_pc_samples1(ABuffer buffer) { }
 
-private void compute_pc_samples2(ABuffer buffer) { }
+	private void compute_pc_samples2(ABuffer buffer) { }
 
-private void compute_pc_samples3(ABuffer buffer) { }
+	private void compute_pc_samples3(ABuffer buffer) { }
 
-private void compute_pc_samples4(ABuffer buffer) { }
+	private void compute_pc_samples4(ABuffer buffer) { }
 
-private void compute_pc_samples5(ABuffer buffer) { }
+	private void compute_pc_samples5(ABuffer buffer) { }
 
-private void compute_pc_samples6(ABuffer buffer) { }
+	private void compute_pc_samples6(ABuffer buffer) { }
 
-private void compute_pc_samples7(ABuffer buffer) { }
+	private void compute_pc_samples7(ABuffer buffer) { }
 
-private void compute_pc_samples8(ABuffer buffer) { }
+	private void compute_pc_samples8(ABuffer buffer) { }
 
-private void compute_pc_samples9(ABuffer buffer) { }
+	private void compute_pc_samples9(ABuffer buffer) { }
 
-private void compute_pc_samples10(ABuffer buffer) { }
+	private void compute_pc_samples10(ABuffer buffer) { }
 
-private void compute_pc_samples11(ABuffer buffer) { }
+	private void compute_pc_samples11(ABuffer buffer) { }
 
-private void compute_pc_samples12(ABuffer buffer) { }
+	private void compute_pc_samples12(ABuffer buffer) { }
 
-private void compute_pc_samples13(ABuffer buffer) { }
+	private void compute_pc_samples13(ABuffer buffer) { }
 
-private void compute_pc_samples14(ABuffer buffer) { }
+	private void compute_pc_samples14(ABuffer buffer) { }
 
-private void Compute_pc_samples15(ABuffer buffer) { }
+	private void Compute_pc_samples15(ABuffer buffer) { }
 
-private void compute_pc_samples(ABuffer buffer) { }
+	private void compute_pc_samples(ABuffer buffer) { }
 
-internal void calculate_pc_samples(ABuffer buffer) { }
+	internal void calculate_pc_samples(ABuffer buffer) { }
 
-private static float[][] SplitArray(float[] array, int blockSize) { }
+	private static float[][] SplitArray(float[] array, int blockSize) { }
 
-private static float[] SubArray(float[] array, int offs, int len) { }
+	private static float[] SubArray(float[] array, int offs, int len) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

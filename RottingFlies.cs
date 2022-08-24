@@ -7,18 +7,18 @@ public class RottingFlies : MonoBehaviour, IClientComponent // TypeDefIndex: 935
 	public static bool Hide; 
 	private GameObject particleInstance; 
 	private Sound sound; 
-private const float maxDistSq = 10000;
+	private const float maxDistSq = 10000;
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

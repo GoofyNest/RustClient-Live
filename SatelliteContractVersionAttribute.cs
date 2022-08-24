@@ -2,12 +2,12 @@ public sealed class SatelliteContractVersionAttribute : Attribute // TypeDefInde
 {
 	private string _version; 
 
-public string Version { get; }
+	public string Version { get; }
 
 
-public void .ctor(string version) { }
+	public void .ctor(string version) { }
 
-public string get_Version() { }
+	public string get_Version() { }
 
 }
 

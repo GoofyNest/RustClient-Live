@@ -15,24 +15,24 @@ public class FlameTurret : StorageContainer // TypeDefIndex: 8569
 	public TargetTrigger trigger; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public bool IsTriggered() { }
+	public bool IsTriggered() { }
 
-public Vector3 GetEyePosition() { }
+	public Vector3 GetEyePosition() { }
 
-public void Update() { }
+	public void Update() { }
 
-public override bool CanPickup(BasePlayer player) { }
+	public override bool CanPickup(BasePlayer player) { }
 
-public void ClientThink() { }
+	public void ClientThink() { }
 
 	[BaseEntity.RPC_Client] 
-public void CLIENT_ReceiveAimDir(BaseEntity.RPCMessage rpc) { }
+	public void CLIENT_ReceiveAimDir(BaseEntity.RPCMessage rpc) { }
 
-public void UpdateAiming() { }
+	public void UpdateAiming() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

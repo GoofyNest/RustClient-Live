@@ -5,9 +5,9 @@ public class SoundClassTest : MonoBehaviour // TypeDefIndex: 9025
 	private float lastPlayed; 
 
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

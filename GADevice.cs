@@ -12,55 +12,55 @@ internal static class GADevice // TypeDefIndex: 5675
 	[CompilerGeneratedAttribute] 
 	private static string <ConnectionType>k__BackingField; 
 
-private static string SdkGameEngineVersion { get; set; }
-public static string GameEngineVersion { get; set; }
-public static string ConnectionType { get; set; }
-public static string RelevantSdkVersion { get; }
-public static string BuildPlatform { get; }
-public static string OSVersion { get; }
-public static string DeviceManufacturer { get; }
-public static string WritablePath { get; }
+	private static string SdkGameEngineVersion { get; set; }
+	public static string GameEngineVersion { get; set; }
+	public static string ConnectionType { get; set; }
+	public static string RelevantSdkVersion { get; }
+	public static string BuildPlatform { get; }
+	public static string OSVersion { get; }
+	public static string DeviceManufacturer { get; }
+	public static string WritablePath { get; }
 
 
-public static void Touch() { }
-
-	[CompilerGeneratedAttribute] 
-private static string get_SdkGameEngineVersion() { }
+	public static void Touch() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_SdkGameEngineVersion(string value) { }
+	private static string get_SdkGameEngineVersion() { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_GameEngineVersion() { }
+	public static void set_SdkGameEngineVersion(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_GameEngineVersion(string value) { }
+	public static string get_GameEngineVersion() { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_ConnectionType() { }
+	public static void set_GameEngineVersion(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_ConnectionType(string value) { }
+	public static string get_ConnectionType() { }
 
-public static string get_RelevantSdkVersion() { }
+	[CompilerGeneratedAttribute] 
+	public static void set_ConnectionType(string value) { }
 
-public static string get_BuildPlatform() { }
+	public static string get_RelevantSdkVersion() { }
 
-public static string get_OSVersion() { }
+	public static string get_BuildPlatform() { }
 
-public static string get_DeviceManufacturer() { }
+	public static string get_OSVersion() { }
 
-public static string get_WritablePath() { }
+	public static string get_DeviceManufacturer() { }
 
-public static void UpdateConnectionType() { }
+	public static string get_WritablePath() { }
 
-private static string GetOSVersionString() { }
+	public static void UpdateConnectionType() { }
 
-private static string GetPersistentPath() { }
+	private static string GetOSVersionString() { }
 
-private static string UnityRuntimePlatformToString(RuntimePlatform platform) { }
+	private static string GetPersistentPath() { }
 
-private static void .cctor() { }
+	private static string UnityRuntimePlatformToString(RuntimePlatform platform) { }
+
+	private static void .cctor() { }
 
 }
 

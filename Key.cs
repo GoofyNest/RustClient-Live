@@ -5,25 +5,25 @@ public struct Key // TypeDefIndex: 6283
 	[CompilerGeneratedAttribute] 
 	private Wire <WireType>k__BackingField; 
 
-public uint Field { get; set; }
-public Wire WireType { get; set; }
+	public uint Field { get; set; }
+	public Wire WireType { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public uint get_Field() { }
+	public uint get_Field() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Field(uint value) { }
+	public void set_Field(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public Wire get_WireType() { }
+	public Wire get_WireType() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_WireType(Wire value) { }
+	public void set_WireType(Wire value) { }
 
-public void .ctor(uint field, Wire wireType) { }
+	public void .ctor(uint field, Wire wireType) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

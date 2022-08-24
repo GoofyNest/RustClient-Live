@@ -13,21 +13,21 @@ public class WaterOverlay : MonoBehaviour, IClientComponent // TypeDefIndex: 913
 	private GodRays godRays; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-protected void OnDestroy() { }
+	protected void OnDestroy() { }
 
-private WaterOverlay.EffectParams GetEffectParams() { }
+	private WaterOverlay.EffectParams GetEffectParams() { }
 
-private void SetEffectParams(WaterOverlay.EffectParams param) { }
+	private void SetEffectParams(WaterOverlay.EffectParams param) { }
 
-private void SetUnderwaterFogMaterials(bool fog) { }
+	private void SetUnderwaterFogMaterials(bool fog) { }
 
-private void UpdateEffectState() { }
+	private void UpdateEffectState() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -48,7 +48,7 @@ public struct WaterOverlay.EffectParams // TypeDefIndex: 9138
 	public static WaterOverlay.EffectParams DefaultUnderwaterLab; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -4,7 +4,7 @@ public class LTEvent // TypeDefIndex: 5586
 	public object data; 
 
 
-public void .ctor(int id, object data) { }
+	public void .ctor(int id, object data) { }
 
 }
 

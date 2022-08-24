@@ -4,56 +4,56 @@ public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3870
 	internal uint m_Version; 
 	private static readonly PlayableHandle m_Null; 
 
-public static PlayableHandle Null { get; }
+	public static PlayableHandle Null { get; }
 
 
 	[VisibleToOtherModulesAttribute] 
-internal bool IsPlayableOfType<T>() { }
-/* GenericInstMethod :
-|
-|-PlayableHandle.IsPlayableOfType<object>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationLayerMixerPlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationMixerPlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationMotionXToDeltaPlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationOffsetPlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationPosePlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationRemoveScalePlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimationScriptPlayable>
-|
-|-PlayableHandle.IsPlayableOfType<AnimatorControllerPlayable>
-*/
+	internal bool IsPlayableOfType<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PlayableHandle.IsPlayableOfType<object>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationLayerMixerPlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationMixerPlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationMotionXToDeltaPlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationOffsetPlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationPosePlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationRemoveScalePlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimationScriptPlayable>
+	|
+	|-PlayableHandle.IsPlayableOfType<AnimatorControllerPlayable>
+	*/
 
-public static PlayableHandle get_Null() { }
+	public static PlayableHandle get_Null() { }
 
-public static bool op_Equality(PlayableHandle x, PlayableHandle y) { }
+	public static bool op_Equality(PlayableHandle x, PlayableHandle y) { }
 
-public override bool Equals(object p) { }
+	public override bool Equals(object p) { }
 
-public bool Equals(PlayableHandle other) { }
+	public bool Equals(PlayableHandle other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-internal static bool CompareVersion(PlayableHandle lhs, PlayableHandle rhs) { }
+	internal static bool CompareVersion(PlayableHandle lhs, PlayableHandle rhs) { }
 
 	[VisibleToOtherModulesAttribute] 
-internal bool IsValid() { }
+	internal bool IsValid() { }
 
 	[VisibleToOtherModulesAttribute] 
 	[FreeFunctionAttribute] 
-internal Type GetPlayableType() { }
+	internal Type GetPlayableType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-private static bool IsValid_Injected(ref PlayableHandle _unity_self) { }
+	private static bool IsValid_Injected(ref PlayableHandle _unity_self) { }
 
-private static Type GetPlayableType_Injected(ref PlayableHandle _unity_self) { }
+	private static Type GetPlayableType_Injected(ref PlayableHandle _unity_self) { }
 
 }
 

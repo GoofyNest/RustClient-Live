@@ -13,45 +13,45 @@ public struct VertexAttributeDescriptor : IEquatable<VertexAttributeDescriptor> 
 	[DebuggerBrowsableAttribute] 
 	private int <stream>k__BackingField; 
 
-public VertexAttribute attribute { get; set; }
-public VertexAttributeFormat format { get; set; }
-public int dimension { get; set; }
-public int stream { get; set; }
+	public VertexAttribute attribute { get; set; }
+	public VertexAttributeFormat format { get; set; }
+	public int dimension { get; set; }
+	public int stream { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public VertexAttribute get_attribute() { }
+	public VertexAttribute get_attribute() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_attribute(VertexAttribute value) { }
+	public void set_attribute(VertexAttribute value) { }
 
 	[CompilerGeneratedAttribute] 
-public VertexAttributeFormat get_format() { }
+	public VertexAttributeFormat get_format() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_format(VertexAttributeFormat value) { }
+	public void set_format(VertexAttributeFormat value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_dimension() { }
+	public int get_dimension() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_dimension(int value) { }
+	public void set_dimension(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_stream() { }
+	public int get_stream() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_stream(int value) { }
+	public void set_stream(int value) { }
 
-public void .ctor(VertexAttribute attribute = 0, VertexAttributeFormat format = 0, int dimension = 3, int stream = 0) { }
+	public void .ctor(VertexAttribute attribute = 0, VertexAttributeFormat format = 0, int dimension = 3, int stream = 0) { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(VertexAttributeDescriptor other) { }
+	public bool Equals(VertexAttributeDescriptor other) { }
 
 }
 

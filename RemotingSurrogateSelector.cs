@@ -6,11 +6,11 @@ public class RemotingSurrogateSelector : ISurrogateSelector // TypeDefIndex: 125
 	private ISurrogateSelector _next; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public virtual ISerializationSurrogate GetSurrogate(Type type, StreamingContext context, out ISurrogateSelector ssout) { }
+	public virtual ISerializationSurrogate GetSurrogate(Type type, StreamingContext context, out ISurrogateSelector ssout) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

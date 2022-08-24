@@ -10,15 +10,15 @@ public class PerformanceUI : MonoBehaviour // TypeDefIndex: 6210
 	private float updateTime; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateRainbow() { }
+	private void UpdateRainbow() { }
 
-public static void SpawnPrefab() { }
+	public static void SpawnPrefab() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

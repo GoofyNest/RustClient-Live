@@ -16,30 +16,30 @@ public class ServicePointManager // TypeDefIndex: 3019
 	private static int tcp_keepalive_interval; 
 
 	[MonoTODOAttribute] 
-public static bool CheckCertificateRevocationList { get; }
-public static int DnsRefreshTimeout { get; }
-public static SecurityProtocolType SecurityProtocol { get; }
-internal static ServerCertValidationCallback ServerCertValidationCallback { get; }
-public static RemoteCertificateValidationCallback ServerCertificateValidationCallback { set; }
+	public static bool CheckCertificateRevocationList { get; }
+	public static int DnsRefreshTimeout { get; }
+	public static SecurityProtocolType SecurityProtocol { get; }
+	internal static ServerCertValidationCallback ServerCertValidationCallback { get; }
+	public static RemoteCertificateValidationCallback ServerCertificateValidationCallback { set; }
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal static ICertificatePolicy GetLegacyCertificatePolicy() { }
+	internal static ICertificatePolicy GetLegacyCertificatePolicy() { }
 
-public static bool get_CheckCertificateRevocationList() { }
+	public static bool get_CheckCertificateRevocationList() { }
 
-public static int get_DnsRefreshTimeout() { }
+	public static int get_DnsRefreshTimeout() { }
 
-public static SecurityProtocolType get_SecurityProtocol() { }
+	public static SecurityProtocolType get_SecurityProtocol() { }
 
-internal static ServerCertValidationCallback get_ServerCertValidationCallback() { }
+	internal static ServerCertValidationCallback get_ServerCertValidationCallback() { }
 
-public static void set_ServerCertificateValidationCallback(RemoteCertificateValidationCallback value) { }
+	public static void set_ServerCertificateValidationCallback(RemoteCertificateValidationCallback value) { }
 
-public static ServicePoint FindServicePoint(Uri address, IWebProxy proxy) { }
+	public static ServicePoint FindServicePoint(Uri address, IWebProxy proxy) { }
 
-internal static void CloseConnectionGroup(string connectionGroupName) { }
+	internal static void CloseConnectionGroup(string connectionGroupName) { }
 
 }
 
@@ -49,16 +49,16 @@ private class ServicePointManager.SPKey // TypeDefIndex: 3020
 	private Uri proxy; 
 	private bool use_connect; 
 
-public bool UsesProxy { get; }
+	public bool UsesProxy { get; }
 
 
-public void .ctor(Uri uri, Uri proxy, bool use_connect) { }
+	public void .ctor(Uri uri, Uri proxy, bool use_connect) { }
 
-public bool get_UsesProxy() { }
+	public bool get_UsesProxy() { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
 }
 

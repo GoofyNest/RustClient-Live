@@ -18,19 +18,19 @@ public class BaseMission : BaseScriptableObject // TypeDefIndex: 10200
 	public BaseMission.PositionGenerator[] positionGenerators; 
 	public ItemAmount[] baseRewards; 
 
-public uint id { get; }
-public bool isRepeatable { get; }
+	public uint id { get; }
+	public bool isRepeatable { get; }
 
 
-public uint get_id() { }
+	public uint get_id() { }
 
-public bool get_isRepeatable() { }
+	public bool get_isRepeatable() { }
 
-public virtual Sprite GetIcon(BaseMission.MissionInstance instance) { }
+	public virtual Sprite GetIcon(BaseMission.MissionInstance instance) { }
 
-public bool IsEligableForMission(BasePlayer player, IMissionProvider provider) { }
+	public bool IsEligableForMission(BasePlayer player, IMissionProvider provider) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -40,35 +40,35 @@ public class BaseMission.MissionDependancy // TypeDefIndex: 10201
 	public BaseMission.MissionStatus targetMissionDesiredStatus; 
 	public bool everAttempted; 
 
-public uint targetMissionID { get; }
+	public uint targetMissionID { get; }
 
 
-public uint get_targetMissionID() { }
+	public uint get_targetMissionID() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum BaseMission.MissionStatus // TypeDefIndex: 10202
 {
 	public int value__; 
-public const BaseMission.MissionStatus Default = 0;
-public const BaseMission.MissionStatus Active = 1;
-public const BaseMission.MissionStatus Accomplished = 2;
-public const BaseMission.MissionStatus Failed = 3;
-public const BaseMission.MissionStatus Completed = 4;
+	public const BaseMission.MissionStatus Default = 0;
+	public const BaseMission.MissionStatus Active = 1;
+	public const BaseMission.MissionStatus Accomplished = 2;
+	public const BaseMission.MissionStatus Failed = 3;
+	public const BaseMission.MissionStatus Completed = 4;
 
 }
 
 public enum BaseMission.MissionEventType // TypeDefIndex: 10203
 {
 	public int value__; 
-public const BaseMission.MissionEventType CUSTOM = 0;
-public const BaseMission.MissionEventType HARVEST = 1;
-public const BaseMission.MissionEventType CONVERSATION = 2;
-public const BaseMission.MissionEventType KILL_ENTITY = 3;
-public const BaseMission.MissionEventType ACQUIRE_ITEM = 4;
-public const BaseMission.MissionEventType FREE_CRATE = 5;
+	public const BaseMission.MissionEventType CUSTOM = 0;
+	public const BaseMission.MissionEventType HARVEST = 1;
+	public const BaseMission.MissionEventType CONVERSATION = 2;
+	public const BaseMission.MissionEventType KILL_ENTITY = 3;
+	public const BaseMission.MissionEventType ACQUIRE_ITEM = 4;
+	public const BaseMission.MissionEventType FREE_CRATE = 5;
 
 }
 
@@ -81,9 +81,9 @@ public class BaseMission.MissionObjectiveEntry // TypeDefIndex: 10204
 	public MissionObjective objective; 
 
 
-public MissionObjective Get() { }
+	public MissionObjective Get() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -105,17 +105,17 @@ public class BaseMission.MissionInstance : Pool.IPooled // TypeDefIndex: 10205
 	public ItemAmount[] rewards; 
 
 
-public BaseMission GetMission() { }
+	public BaseMission GetMission() { }
 
-public bool ShouldShowOnMap() { }
+	public bool ShouldShowOnMap() { }
 
-public bool ShouldShowOnCompass() { }
+	public bool ShouldShowOnCompass() { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -128,15 +128,15 @@ public class BaseMission.MissionInstance.ObjectiveStatus // TypeDefIndex: 10206
 	public float genericFloat1; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum BaseMission.MissionInstance.ObjectiveType // TypeDefIndex: 10207
 {
 	public int value__; 
-public const BaseMission.MissionInstance.ObjectiveType MOVE = 0;
-public const BaseMission.MissionInstance.ObjectiveType KILL = 1;
+	public const BaseMission.MissionInstance.ObjectiveType MOVE = 0;
+	public const BaseMission.MissionInstance.ObjectiveType KILL = 1;
 
 }
 
@@ -157,17 +157,17 @@ public class BaseMission.PositionGenerator // TypeDefIndex: 10208
 	public WorldPositionGenerator worldPositionGenerator; 
 
 
-public string GetIdentifier() { }
+	public string GetIdentifier() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum BaseMission.PositionGenerator.PositionType // TypeDefIndex: 10209
 {
 	public int value__; 
-public const BaseMission.PositionGenerator.PositionType MissionPoint = 0;
-public const BaseMission.PositionGenerator.PositionType WorldPositionGenerator = 1;
+	public const BaseMission.PositionGenerator.PositionType MissionPoint = 0;
+	public const BaseMission.PositionGenerator.PositionType WorldPositionGenerator = 1;
 
 }
 
@@ -179,7 +179,7 @@ public class BaseMission.MissionEntityEntry // TypeDefIndex: 10210
 	public bool cleanupOnMissionSuccess; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

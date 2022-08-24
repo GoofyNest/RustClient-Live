@@ -5,9 +5,9 @@ public class ParticleRandomLifetime : MonoBehaviour // TypeDefIndex: 9211
 	public float maxScale; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

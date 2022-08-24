@@ -6,7 +6,7 @@ public class StyleAsset : ScriptableObject // TypeDefIndex: 7063
 	public StyleAsset.Group Disabled; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -17,7 +17,7 @@ public class StyleAsset.Group // TypeDefIndex: 7064
 	public Color Icon; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

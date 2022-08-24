@@ -4,7 +4,7 @@ public class PowerLineWireConnectionHelper : MonoBehaviour // TypeDefIndex: 1037
 	public bool showgizmo; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,7 +6,7 @@ public sealed class ComCompatibleVersionAttribute : Attribute // TypeDefIndex: 1
 	internal int _revision; 
 
 
-public void .ctor(int major, int minor, int build, int revision) { }
+	public void .ctor(int major, int minor, int build, int revision) { }
 
 }
 

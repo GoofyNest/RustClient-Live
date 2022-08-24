@@ -7,14 +7,14 @@ public class FrankensteinPet : BasePet, IAISenses, IAIAttack // TypeDefIndex: 85
 	public SoundDefinition AttackVocalSFX; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.RPC_Client] 
-private void OnAttack(BaseEntity.RPCMessage msg) { }
+	private void OnAttack(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

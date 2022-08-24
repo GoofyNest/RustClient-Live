@@ -12,9 +12,9 @@ internal static class MetricTimeSpanParser // TypeDefIndex: 7486
 	private static readonly string[] Patterns; 
 
 
-internal static ParsingResult TryParse(string input, out MetricTimeSpan timeSpan) { }
+	internal static ParsingResult TryParse(string input, out MetricTimeSpan timeSpan) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

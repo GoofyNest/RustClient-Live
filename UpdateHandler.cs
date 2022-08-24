@@ -3,15 +3,15 @@ public class UpdateHandler : SingletonComponent<UpdateHandler> // TypeDefIndex: 
 	private ListHashSet<UpdateBehaviour> list; 
 
 
-protected void Update() { }
+	protected void Update() { }
 
-public static void Add(UpdateBehaviour behaviour) { }
+	public static void Add(UpdateBehaviour behaviour) { }
 
-public static void Remove(UpdateBehaviour behaviour) { }
+	public static void Remove(UpdateBehaviour behaviour) { }
 
-private static void CreateInstance() { }
+	private static void CreateInstance() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

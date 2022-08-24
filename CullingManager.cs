@@ -3,13 +3,13 @@ public class CullingManager : SingletonComponent<CullingManager> // TypeDefIndex
 	private List<CullingVolume> volumes; 
 
 
-public void MarkSeen(Vector3 pos) { }
+	public void MarkSeen(Vector3 pos) { }
 
-private void RemoveInvisible() { }
+	private void RemoveInvisible() { }
 
-protected void LateUpdate() { }
+	protected void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

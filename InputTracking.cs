@@ -21,19 +21,19 @@ public static class InputTracking
 
 
 	[RequiredByNativeCodeAttribute] 
-private static void InvokeTrackingEvent(InputTracking.TrackingStateEventType eventType, XRNode nodeType, long uniqueID, bool tracked) { }
+	private static void InvokeTrackingEvent(InputTracking.TrackingStateEventType eventType, XRNode nodeType, long uniqueID, bool tracked) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 private enum InputTracking.TrackingStateEventType // TypeDefIndex: 4138
 {
 	public int value__; 
-public const InputTracking.TrackingStateEventType NodeAdded = 0;
-public const InputTracking.TrackingStateEventType NodeRemoved = 1;
-public const InputTracking.TrackingStateEventType TrackingAcquired = 2;
-public const InputTracking.TrackingStateEventType TrackingLost = 3;
+	public const InputTracking.TrackingStateEventType NodeAdded = 0;
+	public const InputTracking.TrackingStateEventType NodeRemoved = 1;
+	public const InputTracking.TrackingStateEventType TrackingAcquired = 2;
+	public const InputTracking.TrackingStateEventType TrackingLost = 3;
 
 }
 

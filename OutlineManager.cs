@@ -9,30 +9,30 @@ public class OutlineManager : MonoBehaviour, IClientComponent // TypeDefIndex: 1
 	private float nextUpdateTime; 
 
 
-private void BlurCreate() { }
+	private void BlurCreate() { }
 
-private void BlurDestroy() { }
+	private void BlurDestroy() { }
 
-public static void BlurRT(RenderTexture myRT, float radius, int passNum) { }
+	public static void BlurRT(RenderTexture myRT, float radius, int passNum) { }
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void UpdateOutlines() { }
+	public void UpdateOutlines() { }
 
-public void ClearOutlines() { }
+	public void ClearOutlines() { }
 
-public void CleanupOutlines() { }
+	public void CleanupOutlines() { }
 
 	[ImageEffectOpaque] 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

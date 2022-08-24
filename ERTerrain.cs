@@ -36,7 +36,7 @@ public class ERTerrain : MonoBehaviour // TypeDefIndex: 7279
 	public TerrainData terrain; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

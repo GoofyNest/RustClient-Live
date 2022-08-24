@@ -20,37 +20,37 @@ public class MeshPaintable3D : BaseMeshPaintable // TypeDefIndex: 9204
 	[CompilerGeneratedAttribute] 
 	private bool <HasChanges>k__BackingField; 
 
-public override Texture2D TargetTexture { get; set; }
-public override bool HasChanges { get; set; }
+	public override Texture2D TargetTexture { get; set; }
+	public override bool HasChanges { get; set; }
 
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public override Texture2D get_TargetTexture() { }
+	public override Texture2D get_TargetTexture() { }
 
-public override void set_TargetTexture(Texture2D value) { }
-
-	[CompilerGeneratedAttribute] 
-public override bool get_HasChanges() { }
+	public override void set_TargetTexture(Texture2D value) { }
 
 	[CompilerGeneratedAttribute] 
-public override void set_HasChanges(bool value) { }
+	public override bool get_HasChanges() { }
 
-public override void Init(MeshPaintableSource source, bool isSelected) { }
+	[CompilerGeneratedAttribute] 
+	public override void set_HasChanges(bool value) { }
 
-public override void DrawTexture(Vector2 uv, float width, float height, Texture2D texture, Color textureColor) { }
+	public override void Init(MeshPaintableSource source, bool isSelected) { }
 
-public override void Clear() { }
+	public override void DrawTexture(Vector2 uv, float width, float height, Texture2D texture, Color textureColor) { }
 
-public override void Apply() { }
+	public override void Clear() { }
 
-public override bool ShouldHit(RaycastHit info) { }
+	public override void Apply() { }
 
-private void PrepareForDrawing() { }
+	public override bool ShouldHit(RaycastHit info) { }
 
-public void .ctor() { }
+	private void PrepareForDrawing() { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -85,15 +85,15 @@ private struct MeshPaintable3D.DrawTextureJob : IJobParallelFor // TypeDefIndex:
 	public bool isPaintBrush; 
 
 
-public void Execute(int index) { }
+	public void Execute(int index) { }
 
-private float2 SampleUv(float x, float y) { }
+	private float2 SampleUv(float x, float y) { }
 
-private Color SampleTexture(float x, float y) { }
+	private Color SampleTexture(float x, float y) { }
 
-private static Color ToColor(float4 color) { }
+	private static Color ToColor(float4 color) { }
 
-private static float4 ToFloat4(Color color) { }
+	private static float4 ToFloat4(Color color) { }
 
 }
 

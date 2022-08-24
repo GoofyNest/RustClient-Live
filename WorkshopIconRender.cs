@@ -4,7 +4,7 @@ public class WorkshopIconRender : MonoBehaviour // TypeDefIndex: 11532
 	public int MaximumId; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

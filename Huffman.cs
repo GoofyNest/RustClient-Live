@@ -35,13 +35,13 @@ internal sealed class Huffman // TypeDefIndex: 7393
 	private readonly char _Tablename2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-private void .ctor(string s, int xlen, int ylen, int linbits, int linmax, int ref, int[] table, int[] hlen, int[][] val, int treelen) { }
+	private void .ctor(string s, int xlen, int ylen, int linbits, int linmax, int ref, int[] table, int[] hlen, int[][] val, int treelen) { }
 
-internal static int Decode(Huffman h, int[] x, int[] y, int[] v, int[] w, BitReserve br) { }
+	internal static int Decode(Huffman h, int[] x, int[] y, int[] v, int[] w, BitReserve br) { }
 
-internal static void Initialize() { }
+	internal static void Initialize() { }
 
 }
 

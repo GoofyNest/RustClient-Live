@@ -5,9 +5,9 @@ public class ElectricalCombiner : IOEntity // TypeDefIndex: 8708
 	public int input3Amount; 
 
 
-public override bool IsRootEntity() { }
+	public override bool IsRootEntity() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

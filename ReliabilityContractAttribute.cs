@@ -4,7 +4,7 @@ public sealed class ReliabilityContractAttribute : Attribute // TypeDefIndex: 12
 	private Cer _cer; 
 
 
-public void .ctor(Consistency consistencyGuarantee, Cer cer) { }
+	public void .ctor(Consistency consistencyGuarantee, Cer cer) { }
 
 }
 

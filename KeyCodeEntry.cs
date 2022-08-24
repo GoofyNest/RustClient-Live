@@ -13,30 +13,30 @@ public class KeyCodeEntry : UIDialog // TypeDefIndex: 10894
 	private int lastEnteredFrame; 
 
 
-public void SetUsingGuestCode(bool should) { }
+	public void SetUsingGuestCode(bool should) { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-public void Cancel() { }
+	public void Cancel() { }
 
-public void ClearCode() { }
+	public void ClearCode() { }
 
-private void DeleteCodeCharacter() { }
+	private void DeleteCodeCharacter() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void EnterLastUsedNumber() { }
+	public void EnterLastUsedNumber() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator ProcessLastNumberInput() { }
+	private IEnumerator ProcessLastNumberInput() { }
 
-public void EnterNumber(int i) { }
+	public void EnterNumber(int i) { }
 
-private void EnterNumberInternal(int i, bool bypassTimeCheck = False) { }
+	private void EnterNumberInternal(int i, bool bypassTimeCheck = False) { }
 
-public void Finished() { }
+	public void Finished() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -47,26 +47,26 @@ private sealed class KeyCodeEntry.<ProcessLastNumberInput>d__17 : IEnumerator<ob
 	public KeyCodeEntry <>4__this; 
 	private int <i>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

@@ -5,35 +5,35 @@ public class ProductHeaderValue : ICloneable // TypeDefIndex: 5801
 	[CompilerGeneratedAttribute] 
 	private string <Version>k__BackingField; 
 
-public string Name { get; set; }
-public string Version { get; set; }
+	public string Name { get; set; }
+	public string Version { get; set; }
 
 
-internal void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Name() { }
+	internal void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Name(string value) { }
+	public string get_Name() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Version() { }
+	internal void set_Name(string value) { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Version(string value) { }
+	public string get_Version() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	internal void set_Version(string value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-internal static bool TryParse(string input, int minimalCount, out List<ProductHeaderValue> result) { }
+	public override int GetHashCode() { }
 
-private static bool TryParseElement(Lexer lexer, out ProductHeaderValue parsedValue, out Token t) { }
+	internal static bool TryParse(string input, int minimalCount, out List<ProductHeaderValue> result) { }
 
-public override string ToString() { }
+	private static bool TryParseElement(Lexer lexer, out ProductHeaderValue parsedValue, out Token t) { }
+
+	public override string ToString() { }
 
 }
 

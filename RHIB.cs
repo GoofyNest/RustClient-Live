@@ -5,32 +5,32 @@ public class RHIB : MotorRowboat // TypeDefIndex: 8439
 	[ServerVar] 
 	public static float rhibpopulation; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Release(BasePlayer player) { }
+	public void Release(BasePlayer player) { }
 
-public bool Release_ShowIf(BasePlayer player) { }
+	public bool Release_ShowIf(BasePlayer player) { }
 
-public override bool LookingAtEngine(BasePlayer player) { }
+	public override bool LookingAtEngine(BasePlayer player) { }
 
-public override bool LookingAtFuelArea(BasePlayer player) { }
+	public override bool LookingAtFuelArea(BasePlayer player) { }
 
-public override void UpdateEngineRotation() { }
+	public override void UpdateEngineRotation() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

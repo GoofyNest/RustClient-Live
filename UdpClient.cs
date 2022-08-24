@@ -7,48 +7,48 @@ public class UdpClient : IDisposable // TypeDefIndex: 3060
 	private bool m_CleanedUp; 
 	private bool m_IsBroadcast; 
 
-public Socket Client { get; set; }
+	public Socket Client { get; set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(AddressFamily family) { }
+	public void .ctor(AddressFamily family) { }
 
-public Socket get_Client() { }
+	public Socket get_Client() { }
 
-public void set_Client(Socket value) { }
+	public void set_Client(Socket value) { }
 
-private void FreeResources() { }
+	private void FreeResources() { }
 
-public void Dispose() { }
+	public void Dispose() { }
 
-protected virtual void Dispose(bool disposing) { }
+	protected virtual void Dispose(bool disposing) { }
 
-public void Connect(IPEndPoint endPoint) { }
+	public void Connect(IPEndPoint endPoint) { }
 
-private void CheckForBroadcast(IPAddress ipAddress) { }
+	private void CheckForBroadcast(IPAddress ipAddress) { }
 
-public IAsyncResult BeginSend(byte[] datagram, int bytes, IPEndPoint endPoint, AsyncCallback requestCallback, object state) { }
+	public IAsyncResult BeginSend(byte[] datagram, int bytes, IPEndPoint endPoint, AsyncCallback requestCallback, object state) { }
 
-public IAsyncResult BeginSend(byte[] datagram, int bytes, AsyncCallback requestCallback, object state) { }
+	public IAsyncResult BeginSend(byte[] datagram, int bytes, AsyncCallback requestCallback, object state) { }
 
-public int EndSend(IAsyncResult asyncResult) { }
+	public int EndSend(IAsyncResult asyncResult) { }
 
-public IAsyncResult BeginReceive(AsyncCallback requestCallback, object state) { }
+	public IAsyncResult BeginReceive(AsyncCallback requestCallback, object state) { }
 
-public byte[] EndReceive(IAsyncResult asyncResult, ref IPEndPoint remoteEP) { }
+	public byte[] EndReceive(IAsyncResult asyncResult, ref IPEndPoint remoteEP) { }
 
-public Task<int> SendAsync(byte[] datagram, int bytes) { }
+	public Task<int> SendAsync(byte[] datagram, int bytes) { }
 
-public Task<UdpReceiveResult> ReceiveAsync() { }
+	public Task<UdpReceiveResult> ReceiveAsync() { }
 
-private void createClientSocket() { }
-
-	[CompilerGeneratedAttribute] 
-private IAsyncResult <ReceiveAsync>b__64_0(AsyncCallback callback, object state) { }
+	private void createClientSocket() { }
 
 	[CompilerGeneratedAttribute] 
-private UdpReceiveResult <ReceiveAsync>b__64_1(IAsyncResult ar) { }
+	private IAsyncResult <ReceiveAsync>b__64_0(AsyncCallback callback, object state) { }
+
+	[CompilerGeneratedAttribute] 
+	private UdpReceiveResult <ReceiveAsync>b__64_1(IAsyncResult ar) { }
 
 }
 

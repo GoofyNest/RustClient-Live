@@ -5,15 +5,15 @@ public struct InventoryRecipe : IEquatable<InventoryRecipe> // TypeDefIndex: 524
 	public string Source; 
 
 
-internal static InventoryRecipe FromString(string part, InventoryDef Result) { }
+	internal static InventoryRecipe FromString(string part, InventoryDef Result) { }
 
-internal bool ContainsIngredient(InventoryDef inventoryDef) { }
+	internal bool ContainsIngredient(InventoryDef inventoryDef) { }
 
-public override bool Equals(object p) { }
+	public override bool Equals(object p) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public bool Equals(InventoryRecipe p) { }
+	public bool Equals(InventoryRecipe p) { }
 
 }
 
@@ -24,7 +24,7 @@ public struct InventoryRecipe.Ingredient // TypeDefIndex: 5247
 	public int Count; 
 
 
-internal static InventoryRecipe.Ingredient FromString(string part) { }
+	internal static InventoryRecipe.Ingredient FromString(string part) { }
 
 }
 
@@ -35,13 +35,13 @@ private sealed class InventoryRecipe.<>c // TypeDefIndex: 5248
 	public static Func<InventoryRecipe.Ingredient, bool> <>9__4_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal InventoryRecipe.Ingredient <FromString>b__4_0(string x) { }
+	internal InventoryRecipe.Ingredient <FromString>b__4_0(string x) { }
 
-internal bool <FromString>b__4_1(InventoryRecipe.Ingredient x) { }
+	internal bool <FromString>b__4_1(InventoryRecipe.Ingredient x) { }
 
 }
 
@@ -50,9 +50,9 @@ private sealed class InventoryRecipe.<>c__DisplayClass5_0 // TypeDefIndex: 5249
 	public InventoryDef inventoryDef; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <ContainsIngredient>b__0(InventoryRecipe.Ingredient x) { }
+	internal bool <ContainsIngredient>b__0(InventoryRecipe.Ingredient x) { }
 
 }
 

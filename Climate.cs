@@ -1,9 +1,9 @@
 public class Climate : SingletonComponent<Climate> // TypeDefIndex: 9828
 {
-private const float fadeAngle = 20;
-private const float defaultTemp = 15;
-private const int weatherDurationHours = 18;
-private const int weatherFadeHours = 6;
+	private const float fadeAngle = 20;
+	private const float defaultTemp = 15;
+	private const int weatherDurationHours = 18;
+	private const int weatherFadeHours = 6;
 	[RangeAttribute] 
 	public float BlendingSpeed; 
 	[RangeAttribute] 
@@ -48,131 +48,131 @@ private const int weatherFadeHours = 6;
 	private Dictionary<WeatherPresetType, WeatherPreset[]> presetLookup; 
 	private Climate.ClimateParameters[] climateLookup; 
 
-public float WeatherStateBlend { get; set; }
-public uint WeatherSeedPrevious { get; set; }
-public uint WeatherSeedTarget { get; set; }
-public uint WeatherSeedNext { get; set; }
-public WeatherPreset WeatherStatePrevious { get; set; }
-public WeatherPreset WeatherStateTarget { get; set; }
-public WeatherPreset WeatherStateNext { get; set; }
-public WeatherPreset WeatherState { get; set; }
-public WeatherPreset WeatherClampsMin { get; set; }
-public WeatherPreset WeatherClampsMax { get; set; }
-public WeatherPreset WeatherOverrides { get; set; }
-public LegacyWeatherState Overrides { get; set; }
+	public float WeatherStateBlend { get; set; }
+	public uint WeatherSeedPrevious { get; set; }
+	public uint WeatherSeedTarget { get; set; }
+	public uint WeatherSeedNext { get; set; }
+	public WeatherPreset WeatherStatePrevious { get; set; }
+	public WeatherPreset WeatherStateTarget { get; set; }
+	public WeatherPreset WeatherStateNext { get; set; }
+	public WeatherPreset WeatherState { get; set; }
+	public WeatherPreset WeatherClampsMin { get; set; }
+	public WeatherPreset WeatherClampsMax { get; set; }
+	public WeatherPreset WeatherOverrides { get; set; }
+	public LegacyWeatherState Overrides { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_WeatherStateBlend() { }
+	public float get_WeatherStateBlend() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherStateBlend(float value) { }
+	private void set_WeatherStateBlend(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_WeatherSeedPrevious() { }
+	public uint get_WeatherSeedPrevious() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherSeedPrevious(uint value) { }
+	private void set_WeatherSeedPrevious(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_WeatherSeedTarget() { }
+	public uint get_WeatherSeedTarget() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherSeedTarget(uint value) { }
+	private void set_WeatherSeedTarget(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public uint get_WeatherSeedNext() { }
+	public uint get_WeatherSeedNext() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherSeedNext(uint value) { }
+	private void set_WeatherSeedNext(uint value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherStatePrevious() { }
+	public WeatherPreset get_WeatherStatePrevious() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherStatePrevious(WeatherPreset value) { }
+	private void set_WeatherStatePrevious(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherStateTarget() { }
+	public WeatherPreset get_WeatherStateTarget() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherStateTarget(WeatherPreset value) { }
+	private void set_WeatherStateTarget(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherStateNext() { }
+	public WeatherPreset get_WeatherStateNext() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherStateNext(WeatherPreset value) { }
+	private void set_WeatherStateNext(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherState() { }
+	public WeatherPreset get_WeatherState() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherState(WeatherPreset value) { }
+	private void set_WeatherState(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherClampsMin() { }
+	public WeatherPreset get_WeatherClampsMin() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherClampsMin(WeatherPreset value) { }
+	private void set_WeatherClampsMin(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherClampsMax() { }
+	public WeatherPreset get_WeatherClampsMax() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherClampsMax(WeatherPreset value) { }
+	private void set_WeatherClampsMax(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public WeatherPreset get_WeatherOverrides() { }
+	public WeatherPreset get_WeatherOverrides() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_WeatherOverrides(WeatherPreset value) { }
+	private void set_WeatherOverrides(WeatherPreset value) { }
 
 	[CompilerGeneratedAttribute] 
-public LegacyWeatherState get_Overrides() { }
+	public LegacyWeatherState get_Overrides() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Overrides(LegacyWeatherState value) { }
+	private void set_Overrides(LegacyWeatherState value) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-protected override void OnDestroy() { }
+	protected override void OnDestroy() { }
 
-protected void Start() { }
+	protected void Start() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-private static bool Initialized() { }
+	private static bool Initialized() { }
 
-public static float GetClouds(Vector3 position) { }
+	public static float GetClouds(Vector3 position) { }
 
-public static float GetFog(Vector3 position) { }
+	public static float GetFog(Vector3 position) { }
 
-public static float GetWind(Vector3 position) { }
+	public static float GetWind(Vector3 position) { }
 
-public static float GetThunder(Vector3 position) { }
+	public static float GetThunder(Vector3 position) { }
 
-public static float GetRainbow(Vector3 position) { }
+	public static float GetRainbow(Vector3 position) { }
 
-public static float GetAurora(Vector3 position) { }
+	public static float GetAurora(Vector3 position) { }
 
-public static float GetRain(Vector3 position) { }
+	public static float GetRain(Vector3 position) { }
 
-public static float GetSnow(Vector3 position) { }
+	public static float GetSnow(Vector3 position) { }
 
-public static float GetTemperature(Vector3 position) { }
+	public static float GetTemperature(Vector3 position) { }
 
-private uint GetSeedFromLong(long val) { }
+	private uint GetSeedFromLong(long val) { }
 
-private WeatherPreset GetWeatherPreset(uint seed) { }
+	private WeatherPreset GetWeatherPreset(uint seed) { }
 
-private WeatherPreset GetWeatherPreset(uint seed, WeatherPresetType type) { }
+	private WeatherPreset GetWeatherPreset(uint seed, WeatherPresetType type) { }
 
-private WeatherPreset[] CacheWeatherPresets(WeatherPresetType type) { }
+	private WeatherPreset[] CacheWeatherPresets(WeatherPresetType type) { }
 
-private float FindBlendParameters(Vector3 pos, out Climate.ClimateParameters src, out Climate.ClimateParameters dst) { }
+	private float FindBlendParameters(Vector3 pos, out Climate.ClimateParameters src, out Climate.ClimateParameters dst) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -187,7 +187,7 @@ public class Climate.ClimateParameters // TypeDefIndex: 9829
 	public Climate.Texture2D4 LUT; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -207,7 +207,7 @@ public class Climate.WeatherParameters // TypeDefIndex: 9830
 	public float RainChance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -219,45 +219,45 @@ public class Climate.Value4<T> // TypeDefIndex: 9831
 	public T Night; 
 
 
-public float FindBlendParameters(TOD_Sky sky, out T src, out T dst) { }
-/* GenericInstMethod :
-|
-|-Climate.Value4<object>.FindBlendParameters
-|
-|-Climate.Value4<float>.FindBlendParameters
-|
-|-Climate.Value4<Color>.FindBlendParameters
-*/
+	public float FindBlendParameters(TOD_Sky sky, out T src, out T dst) { }
+	/* GenericInstMethod :
+	|
+	|-Climate.Value4<object>.FindBlendParameters
+	|
+	|-Climate.Value4<float>.FindBlendParameters
+	|
+	|-Climate.Value4<Color>.FindBlendParameters
+	*/
 
-public void .ctor() { }
-/* GenericInstMethod :
-|
-|-Climate.Value4<object>..ctor
-|-Climate.Value4<float>..ctor
-|-Climate.Value4<Color>..ctor
-|-Climate.Value4<Texture2D>..ctor
-*/
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-Climate.Value4<object>..ctor
+	|-Climate.Value4<float>..ctor
+	|-Climate.Value4<Color>..ctor
+	|-Climate.Value4<Texture2D>..ctor
+	*/
 
 }
 
 public class Climate.Float4 : Climate.Value4<float> // TypeDefIndex: 9832
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class Climate.Color4 : Climate.Value4<Color> // TypeDefIndex: 9833
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class Climate.Texture2D4 : Climate.Value4<Texture2D> // TypeDefIndex: 9834
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -266,9 +266,9 @@ private sealed class Climate.<>c__DisplayClass87_0 // TypeDefIndex: 9835
 	public WeatherPresetType type; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CacheWeatherPresets>b__0(WeatherPreset x) { }
+	internal bool <CacheWeatherPresets>b__0(WeatherPreset x) { }
 
 }
 

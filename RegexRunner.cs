@@ -17,59 +17,59 @@ public abstract class RegexRunner // TypeDefIndex: 2629
 	private int timeout; 
 	private bool ignoreTimeout; 
 	private int timeoutOccursAt; 
-private const int TimeoutCheckFrequency = 1000;
+	private const int TimeoutCheckFrequency = 1000;
 	private int timeoutChecksToSkip; 
 
 
-protected internal void .ctor() { }
+	protected internal void .ctor() { }
 
-protected internal Match Scan(Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout) { }
+	protected internal Match Scan(Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout) { }
 
-private void StartTimeoutWatch() { }
+	private void StartTimeoutWatch() { }
 
-protected void CheckTimeout() { }
+	protected void CheckTimeout() { }
 
-private void DoCheckTimeout() { }
+	private void DoCheckTimeout() { }
 
-protected abstract void Go();
+	protected abstract void Go();
 
-protected abstract bool FindFirstChar();
+	protected abstract bool FindFirstChar();
 
-protected abstract void InitTrackCount();
+	protected abstract void InitTrackCount();
 
-private void InitMatch() { }
+	private void InitMatch() { }
 
-private Match TidyMatch(bool quick) { }
+	private Match TidyMatch(bool quick) { }
 
-protected void EnsureStorage() { }
+	protected void EnsureStorage() { }
 
-protected bool IsBoundary(int index, int startpos, int endpos) { }
+	protected bool IsBoundary(int index, int startpos, int endpos) { }
 
-protected bool IsECMABoundary(int index, int startpos, int endpos) { }
+	protected bool IsECMABoundary(int index, int startpos, int endpos) { }
 
-protected void DoubleTrack() { }
+	protected void DoubleTrack() { }
 
-protected void DoubleStack() { }
+	protected void DoubleStack() { }
 
-protected void DoubleCrawl() { }
+	protected void DoubleCrawl() { }
 
-protected void Crawl(int i) { }
+	protected void Crawl(int i) { }
 
-protected int Popcrawl() { }
+	protected int Popcrawl() { }
 
-protected int Crawlpos() { }
+	protected int Crawlpos() { }
 
-protected void Capture(int capnum, int start, int end) { }
+	protected void Capture(int capnum, int start, int end) { }
 
-protected void TransferCapture(int capnum, int uncapnum, int start, int end) { }
+	protected void TransferCapture(int capnum, int uncapnum, int start, int end) { }
 
-protected void Uncapture() { }
+	protected void Uncapture() { }
 
-protected bool IsMatched(int cap) { }
+	protected bool IsMatched(int cap) { }
 
-protected int MatchIndex(int cap) { }
+	protected int MatchIndex(int cap) { }
 
-protected int MatchLength(int cap) { }
+	protected int MatchLength(int cap) { }
 
 }
 

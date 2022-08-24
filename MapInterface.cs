@@ -22,37 +22,37 @@ public class MapInterface : SingletonComponent<MapInterface> // TypeDefIndex: 10
 	private float rmbStartTime; 
 	internal static MapEntity lastActiveMap; 
 
-private static BasePlayer LocalPlayerEntity { get; }
-public static MapEntity localPlayerMap { get; }
+	private static BasePlayer LocalPlayerEntity { get; }
+	public static MapEntity localPlayerMap { get; }
 
 
-private static BasePlayer get_LocalPlayerEntity() { }
+	private static BasePlayer get_LocalPlayerEntity() { }
 
-public static void SetOpen(bool open) { }
+	public static void SetOpen(bool open) { }
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void FollowPlayer() { }
+	public void FollowPlayer() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public static void ResetMap() { }
+	public static void ResetMap() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void MarkerInput() { }
+	private void MarkerInput() { }
 
-public static MapEntity get_localPlayerMap() { }
+	public static MapEntity get_localPlayerMap() { }
 
-private void ForceOpen(bool open) { }
+	private void ForceOpen(bool open) { }
 
-public void GetPointOfInterestSettings(int index, out Sprite resultSprite, out Color resultColour) { }
+	public void GetPointOfInterestSettings(int index, out Sprite resultSprite, out Color resultColour) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

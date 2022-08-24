@@ -4,18 +4,18 @@ public static class Account // TypeDefIndex: 6172
 	public static int UnreadNotices; 
 	public static AccountNotice[] Notices; 
 
-public static bool IsReachable { get; }
+	public static bool IsReachable { get; }
 
 
-public static bool get_IsReachable() { }
-
-	[AsyncStateMachineAttribute] 
-public static Task Refresh() { }
+	public static bool get_IsReachable() { }
 
 	[AsyncStateMachineAttribute] 
-public static Task ReadAllNotices() { }
+	public static Task Refresh() { }
 
-private static void .cctor() { }
+	[AsyncStateMachineAttribute] 
+	public static Task ReadAllNotices() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -28,30 +28,30 @@ public class Account.AccountJson // TypeDefIndex: 6173
 	[CompilerGeneratedAttribute] 
 	private AccountNotice[] <Notices>k__BackingField; 
 
-public string SteamId { get; set; }
-public int UnreadNotices { get; set; }
-public AccountNotice[] Notices { get; set; }
+	public string SteamId { get; set; }
+	public int UnreadNotices { get; set; }
+	public AccountNotice[] Notices { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_SteamId() { }
+	public string get_SteamId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_SteamId(string value) { }
+	public void set_SteamId(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_UnreadNotices() { }
+	public int get_UnreadNotices() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_UnreadNotices(int value) { }
+	public void set_UnreadNotices(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public AccountNotice[] get_Notices() { }
+	public AccountNotice[] get_Notices() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Notices(AccountNotice[] value) { }
+	public void set_Notices(AccountNotice[] value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -64,10 +64,10 @@ private struct Account.<Refresh>d__6 : IAsyncStateMachine // TypeDefIndex: 6174
 	private TaskAwaiter<string> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -81,10 +81,10 @@ private struct Account.<ReadAllNotices>d__7 : IAsyncStateMachine // TypeDefIndex
 	private TaskAwaiter <>u__3; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

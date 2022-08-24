@@ -4,22 +4,22 @@ public class HealthBelowAIEvent : BaseAIEvent // TypeDefIndex: 9396
 	private float <HealthFraction>k__BackingField; 
 	private BaseCombatEntity combatEntity; 
 
-public float HealthFraction { get; set; }
+	public float HealthFraction { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_HealthFraction() { }
+	public float get_HealthFraction() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_HealthFraction(float value) { }
+	public void set_HealthFraction(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public override void Init(AIEventData data, BaseEntity owner) { }
+	public override void Init(AIEventData data, BaseEntity owner) { }
 
-public override AIEventData ToProto() { }
+	public override AIEventData ToProto() { }
 
-public override void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
+	public override void Execute(AIMemory memory, AIBrainSenses senses, StateStatus stateStatus) { }
 
 }
 

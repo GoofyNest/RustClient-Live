@@ -14,11 +14,11 @@ internal sealed class PrimitiveArray // TypeDefIndex: 1125
 	private ulong[] uint64A; 
 
 
-internal void .ctor(InternalPrimitiveTypeE code, Array array) { }
+	internal void .ctor(InternalPrimitiveTypeE code, Array array) { }
 
-internal void Init(InternalPrimitiveTypeE code, Array array) { }
+	internal void Init(InternalPrimitiveTypeE code, Array array) { }
 
-internal void SetValue(string value, int index) { }
+	internal void SetValue(string value, int index) { }
 
 }
 

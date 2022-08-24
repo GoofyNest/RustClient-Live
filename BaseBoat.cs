@@ -9,30 +9,30 @@ public class BaseBoat : BaseVehicle // TypeDefIndex: 8318
 	public Transform centerOfMass; 
 	public Buoyancy buoyancy; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public bool InDryDock() { }
+	public bool InDryDock() { }
 
-public override float MaxVelocity() { }
+	public override float MaxVelocity() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public virtual void Menu_Push(BasePlayer player) { }
+	public virtual void Menu_Push(BasePlayer player) { }
 
-public virtual bool EngineInWater() { }
+	public virtual bool EngineInWater() { }
 
-public override float WaterFactorForPlayer(BasePlayer player) { }
+	public override float WaterFactorForPlayer(BasePlayer player) { }
 
-public static float GetWaterDepth(Vector3 pos) { }
+	public static float GetWaterDepth(Vector3 pos) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

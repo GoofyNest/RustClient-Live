@@ -45,41 +45,41 @@ public class LiquidWeaponEffects : MonoBehaviour // TypeDefIndex: 9469
 	private bool emitting; 
 
 
-public void Init(BasePlayer player, float currentRange, float maxRange) { }
+	public void Init(BasePlayer player, float currentRange, float maxRange) { }
 
-public void SetWaterLevel(float fraction, bool instant) { }
+	public void SetWaterLevel(float fraction, bool instant) { }
 
-public void SetPressureFraction(float pressure) { }
+	public void SetPressureFraction(float pressure) { }
 
-private void Update() { }
+	private void Update() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void StartEmission() { }
+	public void StartEmission() { }
 
-public void StopEmission(float delay) { }
+	public void StopEmission(float delay) { }
 
-private void StopEmissionCo() { }
+	private void StopEmissionCo() { }
 
-private void FixedUpdate() { }
+	private void FixedUpdate() { }
 
-private void DoSplash(Vector3 point, Vector3 direction) { }
+	private void DoSplash(Vector3 point, Vector3 direction) { }
 
-private void OnDrawGizmos() { }
+	private void OnDrawGizmos() { }
 
-public void StartShootSounds() { }
+	public void StartShootSounds() { }
 
-public void StopShootSounds() { }
+	public void StopShootSounds() { }
 
-private void UpdateShootSounds() { }
+	private void UpdateShootSounds() { }
 
-private void StartImpactSounds(Vector3 position) { }
+	private void StartImpactSounds(Vector3 position) { }
 
-private void StopImpactSounds() { }
+	private void StopImpactSounds() { }
 
-private void RepositionImpactSounds(Vector3 position) { }
+	private void RepositionImpactSounds(Vector3 position) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,37 +6,37 @@ public class RendererCell : Pool.IPooled // TypeDefIndex: 9916
 	public bool isInPool; 
 	private ListDictionary<RendererKey, RendererGroup> batches; 
 
-public int Count { get; }
+	public int Count { get; }
 
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public void Initialize(RendererGrid grid, Vector3 position) { }
+	public void Initialize(RendererGrid grid, Vector3 position) { }
 
-public bool NeedsRefresh() { }
+	public bool NeedsRefresh() { }
 
-public int MeshCount() { }
+	public int MeshCount() { }
 
-public int BatchedMeshCount() { }
+	public int BatchedMeshCount() { }
 
-public int VertexCount() { }
+	public int VertexCount() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator RefreshAsync() { }
+	public IEnumerator RefreshAsync() { }
 
-public RendererGroup FindBatchGroup(RendererBatch renderer) { }
+	public RendererGroup FindBatchGroup(RendererBatch renderer) { }
 
-private RendererGroup CreateRendererGroup(RendererGrid grid, RendererCell cell, RendererKey key) { }
+	private RendererGroup CreateRendererGroup(RendererGrid grid, RendererCell cell, RendererKey key) { }
 
-private void DestroyRendererGroup(ref RendererGroup grp) { }
+	private void DestroyRendererGroup(ref RendererGroup grp) { }
 
-public void EnterPool() { }
+	public void EnterPool() { }
 
-public void LeavePool() { }
+	public void LeavePool() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -51,26 +51,26 @@ private sealed class RendererCell.<RefreshAsync>d__13 : IEnumerator<object>, IEn
 	private RendererGroup <batchGroup>5__5; 
 	private int <j>5__6; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

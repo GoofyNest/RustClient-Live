@@ -3,7 +3,7 @@ public class ReflectionAttributeProvider : IAttributeProvider // TypeDefIndex: 5
 	private readonly object _attributeProvider; 
 
 
-public void .ctor(object attributeProvider) { }
+	public void .ctor(object attributeProvider) { }
 
 }
 

@@ -10,30 +10,30 @@ public class GameManifest : ScriptableObject // TypeDefIndex: 10723
 	public GameManifest.GuidPath[] guidPaths; 
 	public string[] entities; 
 
-public static GameManifest Current { get; }
+	public static GameManifest Current { get; }
 
 
-public static GameManifest get_Current() { }
+	public static GameManifest get_Current() { }
 
-public static void Load() { }
+	public static void Load() { }
 
-public static void LoadAssets() { }
+	public static void LoadAssets() { }
 
-internal static Dictionary<string, string[]> LoadEffectDictionary() { }
+	internal static Dictionary<string, string[]> LoadEffectDictionary() { }
 
-internal static string GUIDToPath(string guid) { }
+	internal static string GUIDToPath(string guid) { }
 
-internal static Object GUIDToObject(string guid) { }
+	internal static Object GUIDToObject(string guid) { }
 
-internal static void Invalidate(string path) { }
+	internal static void Invalidate(string path) { }
 
-private static string GetMetadataStatus() { }
+	private static string GetMetadataStatus() { }
 
-private static string GetAssetStatus() { }
+	private static string GetAssetStatus() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -54,7 +54,7 @@ public class GameManifest.PrefabProperties // TypeDefIndex: 10725
 	public bool pool; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -65,7 +65,7 @@ public class GameManifest.EffectCategory // TypeDefIndex: 10726
 	public List<string> prefabs; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -76,7 +76,7 @@ public class GameManifest.GuidPath // TypeDefIndex: 10727
 	public string guid; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

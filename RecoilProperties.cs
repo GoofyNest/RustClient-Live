@@ -25,9 +25,9 @@ public class RecoilProperties : ScriptableObject // TypeDefIndex: 10755
 	public RecoilProperties newRecoilOverride; 
 
 
-public RecoilProperties GetRecoil() { }
+	public RecoilProperties GetRecoil() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

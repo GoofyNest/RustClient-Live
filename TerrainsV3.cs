@@ -4,7 +4,7 @@ public class TerrainsV3 // TypeDefIndex: 7301
 	public string id; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

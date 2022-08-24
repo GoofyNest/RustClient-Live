@@ -2,15 +2,15 @@ internal class Group : AstNode // TypeDefIndex: 1794
 {
 	private AstNode groupNode; 
 
-public override AstNode.AstType Type { get; }
-public override XPathResultType ReturnType { get; }
+	public override AstNode.AstType Type { get; }
+	public override XPathResultType ReturnType { get; }
 
 
-public void .ctor(AstNode groupNode) { }
+	public void .ctor(AstNode groupNode) { }
 
-public override AstNode.AstType get_Type() { }
+	public override AstNode.AstType get_Type() { }
 
-public override XPathResultType get_ReturnType() { }
+	public override XPathResultType get_ReturnType() { }
 
 }
 
@@ -23,19 +23,19 @@ public class Group : Capture // TypeDefIndex: 2616
 	[OptionalFieldAttribute] 
 	internal string _name; 
 
-public bool Success { get; }
-public CaptureCollection Captures { get; }
+	public bool Success { get; }
+	public CaptureCollection Captures { get; }
 
 
-internal void .ctor(string text, int[] caps, int capcount, string name) { }
+	internal void .ctor(string text, int[] caps, int capcount, string name) { }
 
-public bool get_Success() { }
+	public bool get_Success() { }
 
-public CaptureCollection get_Captures() { }
+	public CaptureCollection get_Captures() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 
@@ -47,26 +47,26 @@ public class Group : IDisposable // TypeDefIndex: 6708
 	public ListHashSet<Networkable> networkables; 
 	public List<Connection> subscribers; 
 
-public bool isGlobal { get; }
+	public bool isGlobal { get; }
 
 
-public bool get_isGlobal() { }
+	public bool get_isGlobal() { }
 
-public void .ctor(Manager m, uint id) { }
+	public void .ctor(Manager m, uint id) { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public void Join(Networkable nw) { }
+	public void Join(Networkable nw) { }
 
-public void Leave(Networkable nw) { }
+	public void Leave(Networkable nw) { }
 
-public void AddSubscriber(Connection cn) { }
+	public void AddSubscriber(Connection cn) { }
 
-public void RemoveSubscriber(Connection cn) { }
+	public void RemoveSubscriber(Connection cn) { }
 
-public bool HasSubscribers() { }
+	public bool HasSubscribers() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
 }
 

@@ -4,7 +4,7 @@ public class PrefabParameters : MonoBehaviour // TypeDefIndex: 9973
 	public int Count; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

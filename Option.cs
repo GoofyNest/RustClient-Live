@@ -6,11 +6,11 @@ public struct Option // TypeDefIndex: 7027
 	public bool Default; 
 
 
-public void .ctor(string token, string english, string value, bool isdefault = False, Icons icon = 0) { }
+	public void .ctor(string token, string english, string value, bool isdefault = False, Icons icon = 0) { }
 
-public void .ctor(Translate.Phrase phrase, string value, bool isdefault = False, Icons icon = 0) { }
+	public void .ctor(Translate.Phrase phrase, string value, bool isdefault = False, Icons icon = 0) { }
 
-public void .ctor(Icons icon, string value, bool isdefault = False) { }
+	public void .ctor(Icons icon, string value, bool isdefault = False) { }
 
 }
 
@@ -33,14 +33,14 @@ public struct Option // TypeDefIndex: 11670
 	public Sprite iconSprite; 
 	public string command; 
 
-public BaseEntity.Menu.Option copyOptionsFrom { set; }
+	public BaseEntity.Menu.Option copyOptionsFrom { set; }
 
 
-public void set_copyOptionsFrom(BaseEntity.Menu.Option value) { }
+	public void set_copyOptionsFrom(BaseEntity.Menu.Option value) { }
 
-public void RunTimeStart() { }
+	public void RunTimeStart() { }
 
-public void RunTimeProgress() { }
+	public void RunTimeProgress() { }
 
 }
 

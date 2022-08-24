@@ -4,13 +4,13 @@ public class TerrainColors : TerrainExtension // TypeDefIndex: 10387
 	private TerrainBiomeMap biomeMap; 
 
 
-public override void Setup() { }
+	public override void Setup() { }
 
-public Color GetColor(Vector3 worldPos, int mask = -1) { }
+	public Color GetColor(Vector3 worldPos, int mask = -1) { }
 
-public Color GetColor(float normX, float normZ, int mask = -1) { }
+	public Color GetColor(float normX, float normZ, int mask = -1) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

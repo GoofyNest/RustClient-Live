@@ -3,27 +3,27 @@ public class LiquidVessel : HeldEntity // TypeDefIndex: 8596
 	private float busyTime; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public bool CanDrink() { }
+	public bool CanDrink() { }
 
-public bool CanFillHere(Vector3 pos) { }
+	public bool CanFillHere(Vector3 pos) { }
 
-public int AmountHeld() { }
+	public int AmountHeld() { }
 
-public float HeldFraction() { }
+	public float HeldFraction() { }
 
-public bool IsFull() { }
+	public bool IsFull() { }
 
-public int MaxHoldable() { }
+	public int MaxHoldable() { }
 
-public bool AnyPressed() { }
+	public bool AnyPressed() { }
 
-public override void OnInput() { }
+	public override void OnInput() { }
 
-public override void OnViewmodelEvent(string name) { }
+	public override void OnViewmodelEvent(string name) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

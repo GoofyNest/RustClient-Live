@@ -1,7 +1,7 @@
 internal sealed class LayerIIIDecoder : IFrameDecoder // TypeDefIndex: 7402
 {
-private const int SSLIMIT = 18;
-private const int SBLIMIT = 32;
+	private const int SSLIMIT = 18;
+	private const int SBLIMIT = 32;
 	private static readonly int[][] Slen; 
 	internal static readonly int[] Pretab; 
 	internal static readonly float[] TwoToNegativeHalfPow; 
@@ -53,45 +53,45 @@ private const int SBLIMIT = 32;
 	internal int[] Y; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal void .ctor(Bitstream stream, Header header, SynthesisFilter filtera, SynthesisFilter filterb, ABuffer buffer, int whichCh) { }
+	internal void .ctor(Bitstream stream, Header header, SynthesisFilter filtera, SynthesisFilter filterb, ABuffer buffer, int whichCh) { }
 
-public void DecodeFrame() { }
+	public void DecodeFrame() { }
 
-private void InitBlock() { }
+	private void InitBlock() { }
 
-internal void Decode() { }
+	internal void Decode() { }
 
-private bool ReadSideInfo() { }
+	private bool ReadSideInfo() { }
 
-private void ReadScaleFactors(int ch, int gr) { }
+	private void ReadScaleFactors(int ch, int gr) { }
 
-private void GetLSFScaleData(int ch, int gr) { }
+	private void GetLSFScaleData(int ch, int gr) { }
 
-private void GLSFScaleFactors(int ch, int gr) { }
+	private void GLSFScaleFactors(int ch, int gr) { }
 
-private void HuffmanDecode(int ch, int gr) { }
+	private void HuffmanDecode(int ch, int gr) { }
 
-private void GetKStereoValues(int isPos, int ioType, int i) { }
+	private void GetKStereoValues(int isPos, int ioType, int i) { }
 
-private void DequantizeSample(float[][] xr, int ch, int gr) { }
+	private void DequantizeSample(float[][] xr, int ch, int gr) { }
 
-private void Reorder(float[][] xr, int ch, int gr) { }
+	private void Reorder(float[][] xr, int ch, int gr) { }
 
-private void Stereo(int gr) { }
+	private void Stereo(int gr) { }
 
-private void Antialias(int ch, int gr) { }
+	private void Antialias(int ch, int gr) { }
 
-private void Hybrid(int ch, int gr) { }
+	private void Hybrid(int ch, int gr) { }
 
-private void DoDownMix() { }
+	private void DoDownMix() { }
 
-internal void InverseMdct(float[] inValues, float[] outValues, int blockType) { }
+	internal void InverseMdct(float[] inValues, float[] outValues, int blockType) { }
 
-private static float[] CreatePowerTable() { }
+	private static float[] CreatePowerTable() { }
 
-internal static int[] Reorder(int[] scalefacBand) { }
+	internal static int[] Reorder(int[] scalefacBand) { }
 
 }
 

@@ -13,87 +13,87 @@ internal sealed class RegexInterpreter : RegexRunner // TypeDefIndex: 2619
 	internal CultureInfo runculture; 
 
 
-internal void .ctor(RegexCode code, CultureInfo culture) { }
+	internal void .ctor(RegexCode code, CultureInfo culture) { }
 
-protected override void InitTrackCount() { }
+	protected override void InitTrackCount() { }
 
-private void Advance() { }
+	private void Advance() { }
 
-private void Advance(int i) { }
+	private void Advance(int i) { }
 
-private void Goto(int newpos) { }
+	private void Goto(int newpos) { }
 
-private void Textto(int newpos) { }
+	private void Textto(int newpos) { }
 
-private void Trackto(int newpos) { }
+	private void Trackto(int newpos) { }
 
-private int Textstart() { }
+	private int Textstart() { }
 
-private int Textpos() { }
+	private int Textpos() { }
 
-private int Trackpos() { }
+	private int Trackpos() { }
 
-private void TrackPush() { }
+	private void TrackPush() { }
 
-private void TrackPush(int I1) { }
+	private void TrackPush(int I1) { }
 
-private void TrackPush(int I1, int I2) { }
+	private void TrackPush(int I1, int I2) { }
 
-private void TrackPush(int I1, int I2, int I3) { }
+	private void TrackPush(int I1, int I2, int I3) { }
 
-private void TrackPush2(int I1) { }
+	private void TrackPush2(int I1) { }
 
-private void TrackPush2(int I1, int I2) { }
+	private void TrackPush2(int I1, int I2) { }
 
-private void Backtrack() { }
+	private void Backtrack() { }
 
-private void SetOperator(int op) { }
+	private void SetOperator(int op) { }
 
-private void TrackPop() { }
+	private void TrackPop() { }
 
-private void TrackPop(int framesize) { }
+	private void TrackPop(int framesize) { }
 
-private int TrackPeek() { }
+	private int TrackPeek() { }
 
-private int TrackPeek(int i) { }
+	private int TrackPeek(int i) { }
 
-private void StackPush(int I1) { }
+	private void StackPush(int I1) { }
 
-private void StackPush(int I1, int I2) { }
+	private void StackPush(int I1, int I2) { }
 
-private void StackPop() { }
+	private void StackPop() { }
 
-private void StackPop(int framesize) { }
+	private void StackPop(int framesize) { }
 
-private int StackPeek() { }
+	private int StackPeek() { }
 
-private int StackPeek(int i) { }
+	private int StackPeek(int i) { }
 
-private int Operator() { }
+	private int Operator() { }
 
-private int Operand(int i) { }
+	private int Operand(int i) { }
 
-private int Leftchars() { }
+	private int Leftchars() { }
 
-private int Rightchars() { }
+	private int Rightchars() { }
 
-private int Bump() { }
+	private int Bump() { }
 
-private int Forwardchars() { }
+	private int Forwardchars() { }
 
-private char Forwardcharnext() { }
+	private char Forwardcharnext() { }
 
-private bool Stringmatch(string str) { }
+	private bool Stringmatch(string str) { }
 
-private bool Refmatch(int index, int len) { }
+	private bool Refmatch(int index, int len) { }
 
-private void Backwardnext() { }
+	private void Backwardnext() { }
 
-private char CharAt(int j) { }
+	private char CharAt(int j) { }
 
-protected override bool FindFirstChar() { }
+	protected override bool FindFirstChar() { }
 
-protected override void Go() { }
+	protected override void Go() { }
 
 }
 

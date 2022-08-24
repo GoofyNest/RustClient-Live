@@ -4,26 +4,26 @@ public class SonarObject : MonoBehaviour, IClientComponent // TypeDefIndex: 1167
 	private SonarObject.SType sonarType; 
 	public static List<SonarObject> trackedObjects; 
 
-public SonarObject.SType SonarType { get; }
+	public SonarObject.SType SonarType { get; }
 
 
-public SonarObject.SType get_SonarType() { }
+	public SonarObject.SType get_SonarType() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum SonarObject.SType // TypeDefIndex: 11674
 {
 	public int value__; 
-public const SonarObject.SType MoonPool = 0;
-public const SonarObject.SType Sub = 1;
+	public const SonarObject.SType MoonPool = 0;
+	public const SonarObject.SType Sub = 1;
 
 }
 

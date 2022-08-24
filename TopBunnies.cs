@@ -8,11 +8,11 @@ public class TopBunnies : MonoBehaviour // TypeDefIndex: 8789
 	private int lastSeconds; 
 
 
-public void Update() { }
+	public void Update() { }
 
-public void DoListUpdate() { }
+	public void DoListUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -12,10 +12,10 @@ public class TriggerParent : TriggerBase, IServerComponent // TypeDefIndex: 1003
 	public bool ParentNPCPlayers; 
 	[TooltipAttribute] 
 	public bool overrideOtherTriggers; 
-public const int CLIP_CHECK_MASK = 1218511105;
+	public const int CLIP_CHECK_MASK = 1218511105;
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

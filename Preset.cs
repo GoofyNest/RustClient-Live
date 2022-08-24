@@ -16,7 +16,7 @@ public class Preset // TypeDefIndex: 11558
 	public float LocalContrastAdaptationFactor; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

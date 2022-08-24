@@ -13,13 +13,13 @@ public class ByteArrayContent : HttpContent
 	private readonly int count; 
 
 
-public void .ctor(byte[] content) { }
+	public void .ctor(byte[] content) { }
 
-protected override Task<Stream> CreateContentReadStreamAsync() { }
+	protected override Task<Stream> CreateContentReadStreamAsync() { }
 
-protected internal override Task SerializeToStreamAsync(Stream stream, TransportContext context) { }
+	protected internal override Task SerializeToStreamAsync(Stream stream, TransportContext context) { }
 
-protected internal override bool TryComputeLength(out long length) { }
+	protected internal override bool TryComputeLength(out long length) { }
 
 }
 

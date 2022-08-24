@@ -10,23 +10,23 @@ internal class UnitySerializationHolder : ISerializable, IObjectReference // Typ
 	private int m_unityType; 
 
 
-internal static void GetUnitySerializationInfo(SerializationInfo info, Missing missing) { }
+	internal static void GetUnitySerializationInfo(SerializationInfo info, Missing missing) { }
 
-internal static RuntimeType AddElementTypes(SerializationInfo info, RuntimeType type) { }
+	internal static RuntimeType AddElementTypes(SerializationInfo info, RuntimeType type) { }
 
-internal Type MakeElementTypes(Type type) { }
+	internal Type MakeElementTypes(Type type) { }
 
-internal static void GetUnitySerializationInfo(SerializationInfo info, RuntimeType type) { }
+	internal static void GetUnitySerializationInfo(SerializationInfo info, RuntimeType type) { }
 
-internal static void GetUnitySerializationInfo(SerializationInfo info, int unityType, string data, RuntimeAssembly assembly) { }
+	internal static void GetUnitySerializationInfo(SerializationInfo info, int unityType, string data, RuntimeAssembly assembly) { }
 
-internal void .ctor(SerializationInfo info, StreamingContext context) { }
+	internal void .ctor(SerializationInfo info, StreamingContext context) { }
 
-private void ThrowInsufficientInformation(string field) { }
+	private void ThrowInsufficientInformation(string field) { }
 
-public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-public virtual object GetRealObject(StreamingContext context) { }
+	public virtual object GetRealObject(StreamingContext context) { }
 
 }
 

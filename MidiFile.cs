@@ -6,34 +6,34 @@ public sealed class MidiFile // TypeDefIndex: 7585
 	[CompilerGeneratedAttribute] 
 	private readonly ChunksCollection <Chunks>k__BackingField; 
 
-public TimeDivision TimeDivision { get; set; }
-public ChunksCollection Chunks { get; }
+	public TimeDivision TimeDivision { get; set; }
+	public ChunksCollection Chunks { get; }
 
 
-public void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public TimeDivision get_TimeDivision() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_TimeDivision(TimeDivision value) { }
+	public TimeDivision get_TimeDivision() { }
 
 	[CompilerGeneratedAttribute] 
-public ChunksCollection get_Chunks() { }
+	public void set_TimeDivision(TimeDivision value) { }
 
-public static MidiFile Read(string filePath, ReadingSettings settings) { }
+	[CompilerGeneratedAttribute] 
+	public ChunksCollection get_Chunks() { }
 
-public static MidiFile Read(Stream stream, ReadingSettings settings) { }
+	public static MidiFile Read(string filePath, ReadingSettings settings) { }
 
-private static MidiChunk ReadChunk(MidiReader reader, ReadingSettings settings, int actualTrackChunksCount, Nullable<int> expectedTrackChunksCount) { }
+	public static MidiFile Read(Stream stream, ReadingSettings settings) { }
 
-private static void ReactOnUnexpectedTrackChunksCount(UnexpectedTrackChunksCountPolicy policy, int actualTrackChunksCount, int expectedTrackChunksCount) { }
+	private static MidiChunk ReadChunk(MidiReader reader, ReadingSettings settings, int actualTrackChunksCount, Nullable<int> expectedTrackChunksCount) { }
 
-private static void ReactOnNotEnoughBytes(NotEnoughBytesPolicy policy, Exception exception) { }
+	private static void ReactOnUnexpectedTrackChunksCount(UnexpectedTrackChunksCountPolicy policy, int actualTrackChunksCount, int expectedTrackChunksCount) { }
 
-private static MidiChunk TryCreateChunk(string chunkId, ChunkTypesCollection chunksTypes) { }
+	private static void ReactOnNotEnoughBytes(NotEnoughBytesPolicy policy, Exception exception) { }
 
-private static bool IsChunkType(Type type) { }
+	private static MidiChunk TryCreateChunk(string chunkId, ChunkTypesCollection chunksTypes) { }
+
+	private static bool IsChunkType(Type type) { }
 
 }
 

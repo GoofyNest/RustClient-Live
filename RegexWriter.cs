@@ -12,35 +12,35 @@ internal sealed class RegexWriter // TypeDefIndex: 2632
 	internal Hashtable _caps; 
 
 
-internal static RegexCode Write(RegexTree t) { }
+	internal static RegexCode Write(RegexTree t) { }
 
-private void .ctor() { }
+	private void .ctor() { }
 
-internal void PushInt(int I) { }
+	internal void PushInt(int I) { }
 
-internal bool EmptyStack() { }
+	internal bool EmptyStack() { }
 
-internal int PopInt() { }
+	internal int PopInt() { }
 
-internal int CurPos() { }
+	internal int CurPos() { }
 
-internal void PatchJump(int Offset, int jumpDest) { }
+	internal void PatchJump(int Offset, int jumpDest) { }
 
-internal void Emit(int op) { }
+	internal void Emit(int op) { }
 
-internal void Emit(int op, int opd1) { }
+	internal void Emit(int op, int opd1) { }
 
-internal void Emit(int op, int opd1, int opd2) { }
+	internal void Emit(int op, int opd1, int opd2) { }
 
-internal int StringCode(string str) { }
+	internal int StringCode(string str) { }
 
-internal ArgumentException MakeException(string message) { }
+	internal ArgumentException MakeException(string message) { }
 
-internal int MapCapnum(int capnum) { }
+	internal int MapCapnum(int capnum) { }
 
-internal RegexCode RegexCodeFromRegexTree(RegexTree tree) { }
+	internal RegexCode RegexCodeFromRegexTree(RegexTree tree) { }
 
-internal void EmitFragment(int nodetype, RegexNode node, int CurIndex) { }
+	internal void EmitFragment(int nodetype, RegexNode node, int CurIndex) { }
 
 }
 

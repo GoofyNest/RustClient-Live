@@ -7,11 +7,11 @@ internal class ForceWeather : MonoBehaviour // TypeDefIndex: 12091
 	public bool Clouds; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

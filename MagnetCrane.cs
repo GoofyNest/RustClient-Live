@@ -61,65 +61,65 @@ public class MagnetCrane : GroundVehicle, IGenericLerpTarget<MagnetCrane.MagnetC
 	[SerializeField] 
 	private EmissionToggle lightToggle; 
 	public static readonly Translate.Phrase ReturnMessage; 
-private const BaseEntity.Flags Flag_ArmMovement = 32768;
-private const BaseEntity.Flags Flag_BaseMovementInput = 262144;
+	private const BaseEntity.Flags Flag_ArmMovement = 32768;
+	private const BaseEntity.Flags Flag_BaseMovementInput = 262144;
 	private static int leftTreadParam; 
 	private static int rightTreadParam; 
 	private static int yawParam; 
 	private static int arm1Param; 
 	private static int arm2Param; 
 
-public override bool HasMenuOptions { get; }
-public override float DriveWheelVelocity { get; }
+	public override bool HasMenuOptions { get; }
+	public override float DriveWheelVelocity { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public override void UpdatePlayerModel(BasePlayer player) { }
+	public override void UpdatePlayerModel(BasePlayer player) { }
 
-public void SetFrom(MagnetCrane.MagnetCraneSnapshot snapshot) { }
+	public void SetFrom(MagnetCrane.MagnetCraneSnapshot snapshot) { }
 
-public MagnetCrane.MagnetCraneSnapshot GetCurrentState() { }
+	public MagnetCrane.MagnetCraneSnapshot GetCurrentState() { }
 
-public void DebugInterpolationState(Interpolator.Segment<MagnetCrane.MagnetCraneSnapshot> segment, List<MagnetCrane.MagnetCraneSnapshot> entries) { }
+	public void DebugInterpolationState(Interpolator.Segment<MagnetCrane.MagnetCraneSnapshot> segment, List<MagnetCrane.MagnetCraneSnapshot> entries) { }
 
-protected override void GroundVehicleClientTick() { }
+	protected override void GroundVehicleClientTick() { }
 
-protected override void OnClientTickStopped() { }
+	protected override void OnClientTickStopped() { }
 
-private void UpdateExhaust() { }
+	private void UpdateExhaust() { }
 
-private void InitAnimInterpolator() { }
+	private void InitAnimInterpolator() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_FuelStorage(BasePlayer player) { }
+	public void Menu_FuelStorage(BasePlayer player) { }
 
-public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
+	public bool Menu_FuelStorage_ShowIf(BasePlayer player) { }
 
-public override float get_DriveWheelVelocity() { }
+	public override float get_DriveWheelVelocity() { }
 
-public override float GetThrottleInput() { }
+	public override float GetThrottleInput() { }
 
-public override float GetBrakeInput() { }
+	public override float GetBrakeInput() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override float GetMaxForwardSpeed() { }
+	public override float GetMaxForwardSpeed() { }
 
-public override bool CanBeLooted(BasePlayer player) { }
+	public override bool CanBeLooted(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -131,22 +131,22 @@ public struct MagnetCrane.MagnetCraneSnapshot : ISnapshot<MagnetCrane.MagnetCran
 	public float arm1; 
 	public float arm2; 
 
-public float Time { get; set; }
+	public float Time { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public float get_Time() { }
+	public float get_Time() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Time(float value) { }
+	public void set_Time(float value) { }
 
-public void .ctor(float time, float yaw, float arm1, float arm2) { }
+	public void .ctor(float time, float yaw, float arm1, float arm2) { }
 
-public void MatchValuesTo(MagnetCrane.MagnetCraneSnapshot entry) { }
+	public void MatchValuesTo(MagnetCrane.MagnetCraneSnapshot entry) { }
 
-public void Lerp(MagnetCrane.MagnetCraneSnapshot prev, MagnetCrane.MagnetCraneSnapshot next, float delta) { }
+	public void Lerp(MagnetCrane.MagnetCraneSnapshot prev, MagnetCrane.MagnetCraneSnapshot next, float delta) { }
 
-public MagnetCrane.MagnetCraneSnapshot GetNew() { }
+	public MagnetCrane.MagnetCraneSnapshot GetNew() { }
 
 }
 

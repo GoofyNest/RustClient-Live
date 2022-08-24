@@ -3,33 +3,33 @@ public class DamageTypeList // TypeDefIndex: 12027
 	public float[] types; 
 
 
-public void Set(DamageType index, float amount) { }
+	public void Set(DamageType index, float amount) { }
 
-public float Get(DamageType index) { }
+	public float Get(DamageType index) { }
 
-public void Add(DamageType index, float amount) { }
+	public void Add(DamageType index, float amount) { }
 
-public void Scale(DamageType index, float amount) { }
+	public void Scale(DamageType index, float amount) { }
 
-public bool Has(DamageType index) { }
+	public bool Has(DamageType index) { }
 
-public float Total() { }
+	public float Total() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void Add(List<DamageTypeEntry> entries) { }
+	public void Add(List<DamageTypeEntry> entries) { }
 
-public void ScaleAll(float amount) { }
+	public void ScaleAll(float amount) { }
 
-public DamageType GetMajorityDamageType() { }
+	public DamageType GetMajorityDamageType() { }
 
-public bool IsMeleeType() { }
+	public bool IsMeleeType() { }
 
-public bool IsBleedCausing() { }
+	public bool IsBleedCausing() { }
 
-public bool IsConsideredAnAttack() { }
+	public bool IsConsideredAnAttack() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

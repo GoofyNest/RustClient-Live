@@ -15,124 +15,124 @@ public abstract class RestRgbService : IRgbService // TypeDefIndex: 7678
 	[CompilerGeneratedAttribute] 
 	private TimeSpan <ReinitializeDelay>k__BackingField; 
 
-public bool IsConnected { get; set; }
-public Vector3 ColorCorrection { get; set; }
-protected HttpClient Client { get; set; }
-protected TimeSpan HeartbeatInterval { get; set; }
-protected TimeSpan ReinitializeDelay { get; set; }
+	public bool IsConnected { get; set; }
+	public Vector3 ColorCorrection { get; set; }
+	protected HttpClient Client { get; set; }
+	protected TimeSpan HeartbeatInterval { get; set; }
+	protected TimeSpan ReinitializeDelay { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public bool get_IsConnected() { }
+	public bool get_IsConnected() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_IsConnected(bool value) { }
+	protected void set_IsConnected(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public Vector3 get_ColorCorrection() { }
+	public Vector3 get_ColorCorrection() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ColorCorrection(Vector3 value) { }
+	public void set_ColorCorrection(Vector3 value) { }
 
 	[CompilerGeneratedAttribute] 
-protected HttpClient get_Client() { }
+	protected HttpClient get_Client() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_Client(HttpClient value) { }
+	protected void set_Client(HttpClient value) { }
 
 	[CompilerGeneratedAttribute] 
-protected TimeSpan get_HeartbeatInterval() { }
+	protected TimeSpan get_HeartbeatInterval() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_HeartbeatInterval(TimeSpan value) { }
+	protected void set_HeartbeatInterval(TimeSpan value) { }
 
 	[CompilerGeneratedAttribute] 
-protected TimeSpan get_ReinitializeDelay() { }
+	protected TimeSpan get_ReinitializeDelay() { }
 
 	[CompilerGeneratedAttribute] 
-protected void set_ReinitializeDelay(TimeSpan value) { }
+	protected void set_ReinitializeDelay(TimeSpan value) { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-protected abstract ValueTask<bool> Initialize();
+	protected abstract ValueTask<bool> Initialize();
 
-protected abstract ValueTask Shutdown();
+	protected abstract ValueTask Shutdown();
 
-protected abstract Task SendHeartbeat();
+	protected abstract Task SendHeartbeat();
 
-protected abstract Task SendStaticColor(Color color);
+	protected abstract Task SendStaticColor(Color color);
 
-protected abstract Task SendPulseColor(Color color, float duration);
+	protected abstract Task SendPulseColor(Color color, float duration);
 
-protected abstract Task SendEvent(RgbEventType type);
+	protected abstract Task SendEvent(RgbEventType type);
 
 	[AsyncStateMachineAttribute] 
-public ValueTask Start() { }
+	public ValueTask Start() { }
 
 	[AsyncStateMachineAttribute] 
-public ValueTask Stop() { }
+	public ValueTask Stop() { }
 
 	[AsyncStateMachineAttribute] 
-public ValueTask Update() { }
+	public ValueTask Update() { }
 
 	[AsyncStateMachineAttribute] 
-private void SendHeartbeatAndWait() { }
+	private void SendHeartbeatAndWait() { }
 
-public void StaticColor(Color color) { }
-
-	[AsyncStateMachineAttribute] 
-private void StaticColorImpl(Color color) { }
-
-public void PulseColor(Color color, float duration) { }
+	public void StaticColor(Color color) { }
 
 	[AsyncStateMachineAttribute] 
-private void PulseColorImpl(Color color, float duration) { }
+	private void StaticColorImpl(Color color) { }
 
-public void Event(RgbEventType type) { }
-
-	[AsyncStateMachineAttribute] 
-private void EventImpl(RgbEventType type) { }
-
-private void ShutdownFromFailure() { }
+	public void PulseColor(Color color, float duration) { }
 
 	[AsyncStateMachineAttribute] 
-protected Task<HttpResponseMessage> SendPost<T>(string endpoint, T payload) { }
-/* GenericInstMethod :
-|
-|-RestRgbService.SendPost<GameEvent<ColorEventData>>
-|
-|-RestRgbService.SendPost<GameEvent<EmptyEventData>>
-|
-|-RestRgbService.SendPost<GameMetadata>
-|
-|-RestRgbService.SendPost<LoadGoLispHandlers>
-|
-|-RestRgbService.SendPost<RegisterGameEvent>
-|
-|-RestRgbService.SendPost<RegisterTimelineEvents>
-|
-|-RestRgbService.SendPost<RemoveGame>
-*/
+	private void PulseColorImpl(Color color, float duration) { }
 
-protected static HttpContent BuildContent<T>(T parameters) { }
-/* GenericInstMethod :
-|
-|-RestRgbService.BuildContent<GameEvent<ColorEventData>>
-|
-|-RestRgbService.BuildContent<GameEvent<EmptyEventData>>
-|
-|-RestRgbService.BuildContent<GameMetadata>
-|
-|-RestRgbService.BuildContent<Heartbeat>
-|
-|-RestRgbService.BuildContent<LoadGoLispHandlers>
-|
-|-RestRgbService.BuildContent<RegisterGameEvent>
-|
-|-RestRgbService.BuildContent<RegisterTimelineEvents>
-|
-|-RestRgbService.BuildContent<RemoveGame>
-*/
+	public void Event(RgbEventType type) { }
+
+	[AsyncStateMachineAttribute] 
+	private void EventImpl(RgbEventType type) { }
+
+	private void ShutdownFromFailure() { }
+
+	[AsyncStateMachineAttribute] 
+	protected Task<HttpResponseMessage> SendPost<T>(string endpoint, T payload) { }
+	/* GenericInstMethod :
+	|
+	|-RestRgbService.SendPost<GameEvent<ColorEventData>>
+	|
+	|-RestRgbService.SendPost<GameEvent<EmptyEventData>>
+	|
+	|-RestRgbService.SendPost<GameMetadata>
+	|
+	|-RestRgbService.SendPost<LoadGoLispHandlers>
+	|
+	|-RestRgbService.SendPost<RegisterGameEvent>
+	|
+	|-RestRgbService.SendPost<RegisterTimelineEvents>
+	|
+	|-RestRgbService.SendPost<RemoveGame>
+	*/
+
+	protected static HttpContent BuildContent<T>(T parameters) { }
+	/* GenericInstMethod :
+	|
+	|-RestRgbService.BuildContent<GameEvent<ColorEventData>>
+	|
+	|-RestRgbService.BuildContent<GameEvent<EmptyEventData>>
+	|
+	|-RestRgbService.BuildContent<GameMetadata>
+	|
+	|-RestRgbService.BuildContent<Heartbeat>
+	|
+	|-RestRgbService.BuildContent<LoadGoLispHandlers>
+	|
+	|-RestRgbService.BuildContent<RegisterGameEvent>
+	|
+	|-RestRgbService.BuildContent<RegisterTimelineEvents>
+	|
+	|-RestRgbService.BuildContent<RemoveGame>
+	*/
 
 }
 
@@ -145,10 +145,10 @@ private struct RestRgbService.<Start>d__31 : IAsyncStateMachine // TypeDefIndex:
 	private ValueTaskAwaiter<bool> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -161,10 +161,10 @@ private struct RestRgbService.<Stop>d__32 : IAsyncStateMachine // TypeDefIndex: 
 	private ValueTaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -176,10 +176,10 @@ private struct RestRgbService.<Update>d__33 : IAsyncStateMachine // TypeDefIndex
 	private ValueTaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -192,10 +192,10 @@ private struct RestRgbService.<SendHeartbeatAndWait>d__34 : IAsyncStateMachine /
 	private TaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -208,10 +208,10 @@ private struct RestRgbService.<StaticColorImpl>d__36 : IAsyncStateMachine // Typ
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -225,10 +225,10 @@ private struct RestRgbService.<PulseColorImpl>d__38 : IAsyncStateMachine // Type
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -241,10 +241,10 @@ private struct RestRgbService.<EventImpl>d__40 : IAsyncStateMachine // TypeDefIn
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -258,42 +258,42 @@ private struct RestRgbService.<SendPost>d__42<T> : IAsyncStateMachine // TypeDef
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 
 
-private void MoveNext() { }
-/* GenericInstMethod :
-|
-|-RestRgbService.<SendPost>d__42<GameEvent<ColorEventData>>.MoveNext
-|
-|-RestRgbService.<SendPost>d__42<GameEvent<EmptyEventData>>.MoveNext
-|
-|-RestRgbService.<SendPost>d__42<GameMetadata>.MoveNext
-|
-|-RestRgbService.<SendPost>d__42<LoadGoLispHandlers>.MoveNext
-|
-|-RestRgbService.<SendPost>d__42<RegisterGameEvent>.MoveNext
-|
-|-RestRgbService.<SendPost>d__42<RegisterTimelineEvents>.MoveNext
-|
-|-RestRgbService.<SendPost>d__42<RemoveGame>.MoveNext
-*/
+	private void MoveNext() { }
+	/* GenericInstMethod :
+	|
+	|-RestRgbService.<SendPost>d__42<GameEvent<ColorEventData>>.MoveNext
+	|
+	|-RestRgbService.<SendPost>d__42<GameEvent<EmptyEventData>>.MoveNext
+	|
+	|-RestRgbService.<SendPost>d__42<GameMetadata>.MoveNext
+	|
+	|-RestRgbService.<SendPost>d__42<LoadGoLispHandlers>.MoveNext
+	|
+	|-RestRgbService.<SendPost>d__42<RegisterGameEvent>.MoveNext
+	|
+	|-RestRgbService.<SendPost>d__42<RegisterTimelineEvents>.MoveNext
+	|
+	|-RestRgbService.<SendPost>d__42<RemoveGame>.MoveNext
+	*/
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
-/* GenericInstMethod :
-|
-|-RestRgbService.<SendPost>d__42<GameEvent<ColorEventData>>.SetStateMachine
-|
-|-RestRgbService.<SendPost>d__42<GameEvent<EmptyEventData>>.SetStateMachine
-|
-|-RestRgbService.<SendPost>d__42<GameMetadata>.SetStateMachine
-|
-|-RestRgbService.<SendPost>d__42<LoadGoLispHandlers>.SetStateMachine
-|
-|-RestRgbService.<SendPost>d__42<RegisterGameEvent>.SetStateMachine
-|
-|-RestRgbService.<SendPost>d__42<RegisterTimelineEvents>.SetStateMachine
-|
-|-RestRgbService.<SendPost>d__42<RemoveGame>.SetStateMachine
-*/
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	/* GenericInstMethod :
+	|
+	|-RestRgbService.<SendPost>d__42<GameEvent<ColorEventData>>.SetStateMachine
+	|
+	|-RestRgbService.<SendPost>d__42<GameEvent<EmptyEventData>>.SetStateMachine
+	|
+	|-RestRgbService.<SendPost>d__42<GameMetadata>.SetStateMachine
+	|
+	|-RestRgbService.<SendPost>d__42<LoadGoLispHandlers>.SetStateMachine
+	|
+	|-RestRgbService.<SendPost>d__42<RegisterGameEvent>.SetStateMachine
+	|
+	|-RestRgbService.<SendPost>d__42<RegisterTimelineEvents>.SetStateMachine
+	|
+	|-RestRgbService.<SendPost>d__42<RemoveGame>.SetStateMachine
+	*/
 
 }
 

@@ -1,7 +1,7 @@
 public class DeferredDecalSystem // TypeDefIndex: 10651
 {
 	internal static bool IsDirty; 
-internal const int QueueSize = 2;
+	internal const int QueueSize = 2;
 	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] DiffuseDecals; 
 	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] SpecularDecals; 
 	internal static ListDictionary<InstancingKey, ListHashSet<DeferredDecal>>[] NormalsDecals; 
@@ -18,24 +18,24 @@ internal const int QueueSize = 2;
 	internal static RenderTargetIdentifier[] EmissionRenderTarget; 
 	internal static RenderTargetIdentifier[] CombinedRenderTarget; 
 
-public static bool IsEmpty { get; }
+	public static bool IsEmpty { get; }
 
 
-public static bool get_IsEmpty() { }
+	public static bool get_IsEmpty() { }
 
-public static void Clear() { }
+	public static void Clear() { }
 
-private static ListHashSet<DeferredDecal> GetList(DeferredDecal decal, ListDictionary<InstancingKey, ListHashSet<DeferredDecal>> dict, int pass) { }
+	private static ListHashSet<DeferredDecal> GetList(DeferredDecal decal, ListDictionary<InstancingKey, ListHashSet<DeferredDecal>> dict, int pass) { }
 
-public static void AddDecal(DeferredDecal decal) { }
+	public static void AddDecal(DeferredDecal decal) { }
 
-public static void RemoveDecal(DeferredDecal decal) { }
+	public static void RemoveDecal(DeferredDecal decal) { }
 
-public static void RefreshDecal(DeferredDecal decal) { }
+	public static void RefreshDecal(DeferredDecal decal) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

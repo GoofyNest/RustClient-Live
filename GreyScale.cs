@@ -12,7 +12,7 @@ public class GreyScale : PostProcessEffectSettings // TypeDefIndex: 10261
 	public ColorParameter color; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

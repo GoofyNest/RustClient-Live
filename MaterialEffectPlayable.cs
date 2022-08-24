@@ -3,9 +3,9 @@ public struct MaterialEffectPlayable : IEquatable<MaterialEffectPlayable> // Typ
 	private PlayableHandle m_Handle; 
 
 
-public PlayableHandle GetHandle() { }
+	public PlayableHandle GetHandle() { }
 
-public bool Equals(MaterialEffectPlayable other) { }
+	public bool Equals(MaterialEffectPlayable other) { }
 
 }
 

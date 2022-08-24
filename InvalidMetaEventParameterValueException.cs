@@ -8,7 +8,7 @@ public sealed class InvalidMetaEventParameterValueException : MidiException // T
 	private readonly int <Value>k__BackingField; 
 
 
-internal void .ctor(MidiEventType eventType, string propertyName, int value) { }
+	internal void .ctor(MidiEventType eventType, string propertyName, int value) { }
 
 }
 

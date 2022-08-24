@@ -8,11 +8,11 @@ internal sealed class DictionaryValueCollectionDebugView<TKey, TValue>
 [Serializable]
 internal sealed class NonRandomizedStringEqualityComparer : EqualityComparer<string> 
 
-public sealed override bool Equals(string x, string y) { }
+	public sealed override bool Equals(string x, string y) { }
 
-public sealed override int GetHashCode(string obj) { }
+	public sealed override int GetHashCode(string obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

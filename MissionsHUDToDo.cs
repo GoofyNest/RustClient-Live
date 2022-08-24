@@ -10,17 +10,17 @@ public class MissionsHUDToDo : BaseMonoBehaviour // TypeDefIndex: 11182
 	internal bool State; 
 
 
-public void MissionsUpdated() { }
+	public void MissionsUpdated() { }
 
-internal void Unlock() { }
+	internal void Unlock() { }
 
-internal void Init(BaseMission.MissionObjectiveEntry missionObjective, int newIndex) { }
+	internal void Init(BaseMission.MissionObjectiveEntry missionObjective, int newIndex) { }
 
-internal void Shutdown() { }
+	internal void Shutdown() { }
 
-private void UpdateState() { }
+	private void UpdateState() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -2,18 +2,18 @@ internal class WorkshopPlayerPreview : MonoBehaviour // TypeDefIndex: 7768
 {
 	internal GameObject Instance; 
 
-protected WorkshopInterface Interface { get; }
+	protected WorkshopInterface Interface { get; }
 
 
-protected WorkshopInterface get_Interface() { }
+	protected WorkshopInterface get_Interface() { }
 
-public void Setup(GameObject ClothingPrefab, ulong id, bool focus, bool IsClothing) { }
+	public void Setup(GameObject ClothingPrefab, ulong id, bool focus, bool IsClothing) { }
 
-public void Cleanup() { }
+	public void Cleanup() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,43 +8,43 @@ public class ContentRangeHeaderValue : ICloneable // TypeDefIndex: 5764
 	[CompilerGeneratedAttribute] 
 	private Nullable<long> <To>k__BackingField; 
 
-public Nullable<long> From { get; set; }
-public Nullable<long> Length { get; set; }
-public Nullable<long> To { get; set; }
-public string Unit { get; }
+	public Nullable<long> From { get; set; }
+	public Nullable<long> Length { get; set; }
+	public Nullable<long> To { get; set; }
+	public string Unit { get; }
 
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public Nullable<long> get_From() { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_From(Nullable<long> value) { }
+	public Nullable<long> get_From() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<long> get_Length() { }
+	private void set_From(Nullable<long> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Length(Nullable<long> value) { }
+	public Nullable<long> get_Length() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<long> get_To() { }
+	private void set_Length(Nullable<long> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_To(Nullable<long> value) { }
+	public Nullable<long> get_To() { }
 
-public string get_Unit() { }
+	[CompilerGeneratedAttribute] 
+	private void set_To(Nullable<long> value) { }
 
-private object System.ICloneable.Clone() { }
+	public string get_Unit() { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public static bool TryParse(string input, out ContentRangeHeaderValue parsedValue) { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public static bool TryParse(string input, out ContentRangeHeaderValue parsedValue) { }
+
+	public override string ToString() { }
 
 }
 

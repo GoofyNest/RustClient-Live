@@ -35,120 +35,120 @@ public struct RenderTextureDescriptor // TypeDefIndex: 3451
 	[DebuggerBrowsableAttribute] 
 	private RenderTextureMemoryless <memoryless>k__BackingField; 
 
-public int width { get; set; }
-public int height { get; set; }
-public int msaaSamples { get; set; }
-public int volumeDepth { get; set; }
-public int mipCount { set; }
-public GraphicsFormat graphicsFormat { get; set; }
-public RenderTextureFormat colorFormat { get; set; }
-public bool sRGB { get; set; }
-public int depthBufferBits { get; set; }
-public TextureDimension dimension { get; set; }
-public ShadowSamplingMode shadowSamplingMode { get; set; }
-public VRTextureUsage vrUsage { get; set; }
-public RenderTextureMemoryless memoryless { get; set; }
-public bool useMipMap { get; set; }
-public bool autoGenerateMips { get; set; }
-public bool enableRandomWrite { get; set; }
-internal bool createdFromScript { set; }
-public bool useDynamicScale { set; }
+	public int width { get; set; }
+	public int height { get; set; }
+	public int msaaSamples { get; set; }
+	public int volumeDepth { get; set; }
+	public int mipCount { set; }
+	public GraphicsFormat graphicsFormat { get; set; }
+	public RenderTextureFormat colorFormat { get; set; }
+	public bool sRGB { get; set; }
+	public int depthBufferBits { get; set; }
+	public TextureDimension dimension { get; set; }
+	public ShadowSamplingMode shadowSamplingMode { get; set; }
+	public VRTextureUsage vrUsage { get; set; }
+	public RenderTextureMemoryless memoryless { get; set; }
+	public bool useMipMap { get; set; }
+	public bool autoGenerateMips { get; set; }
+	public bool enableRandomWrite { get; set; }
+	internal bool createdFromScript { set; }
+	public bool useDynamicScale { set; }
 
 
 	[CompilerGeneratedAttribute] 
-public int get_width() { }
+	public int get_width() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_width(int value) { }
+	public void set_width(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_height() { }
+	public int get_height() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_height(int value) { }
+	public void set_height(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_msaaSamples() { }
+	public int get_msaaSamples() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_msaaSamples(int value) { }
+	public void set_msaaSamples(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public int get_volumeDepth() { }
+	public int get_volumeDepth() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_volumeDepth(int value) { }
+	public void set_volumeDepth(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_mipCount(int value) { }
+	public void set_mipCount(int value) { }
 
-public GraphicsFormat get_graphicsFormat() { }
+	public GraphicsFormat get_graphicsFormat() { }
 
-public void set_graphicsFormat(GraphicsFormat value) { }
+	public void set_graphicsFormat(GraphicsFormat value) { }
 
-public RenderTextureFormat get_colorFormat() { }
+	public RenderTextureFormat get_colorFormat() { }
 
-public void set_colorFormat(RenderTextureFormat value) { }
+	public void set_colorFormat(RenderTextureFormat value) { }
 
-public bool get_sRGB() { }
+	public bool get_sRGB() { }
 
-public void set_sRGB(bool value) { }
+	public void set_sRGB(bool value) { }
 
-public int get_depthBufferBits() { }
+	public int get_depthBufferBits() { }
 
-public void set_depthBufferBits(int value) { }
-
-	[CompilerGeneratedAttribute] 
-public TextureDimension get_dimension() { }
+	public void set_depthBufferBits(int value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_dimension(TextureDimension value) { }
+	public TextureDimension get_dimension() { }
 
 	[CompilerGeneratedAttribute] 
-public ShadowSamplingMode get_shadowSamplingMode() { }
+	public void set_dimension(TextureDimension value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_shadowSamplingMode(ShadowSamplingMode value) { }
+	public ShadowSamplingMode get_shadowSamplingMode() { }
 
 	[CompilerGeneratedAttribute] 
-public VRTextureUsage get_vrUsage() { }
+	public void set_shadowSamplingMode(ShadowSamplingMode value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_vrUsage(VRTextureUsage value) { }
+	public VRTextureUsage get_vrUsage() { }
 
 	[CompilerGeneratedAttribute] 
-public RenderTextureMemoryless get_memoryless() { }
+	public void set_vrUsage(VRTextureUsage value) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_memoryless(RenderTextureMemoryless value) { }
+	public RenderTextureMemoryless get_memoryless() { }
 
-public void .ctor(int width, int height) { }
+	[CompilerGeneratedAttribute] 
+	public void set_memoryless(RenderTextureMemoryless value) { }
 
-public void .ctor(int width, int height, RenderTextureFormat colorFormat, int depthBufferBits) { }
+	public void .ctor(int width, int height) { }
 
-public void .ctor(int width, int height, GraphicsFormat colorFormat, int depthBufferBits) { }
+	public void .ctor(int width, int height, RenderTextureFormat colorFormat, int depthBufferBits) { }
 
-public void .ctor(int width, int height, GraphicsFormat colorFormat, int depthBufferBits, int mipCount) { }
+	public void .ctor(int width, int height, GraphicsFormat colorFormat, int depthBufferBits) { }
 
-private void SetOrClearRenderTextureCreationFlag(bool value, RenderTextureCreationFlags flag) { }
+	public void .ctor(int width, int height, GraphicsFormat colorFormat, int depthBufferBits, int mipCount) { }
 
-public bool get_useMipMap() { }
+	private void SetOrClearRenderTextureCreationFlag(bool value, RenderTextureCreationFlags flag) { }
 
-public void set_useMipMap(bool value) { }
+	public bool get_useMipMap() { }
 
-public bool get_autoGenerateMips() { }
+	public void set_useMipMap(bool value) { }
 
-public void set_autoGenerateMips(bool value) { }
+	public bool get_autoGenerateMips() { }
 
-public bool get_enableRandomWrite() { }
+	public void set_autoGenerateMips(bool value) { }
 
-public void set_enableRandomWrite(bool value) { }
+	public bool get_enableRandomWrite() { }
 
-internal void set_createdFromScript(bool value) { }
+	public void set_enableRandomWrite(bool value) { }
 
-public void set_useDynamicScale(bool value) { }
+	internal void set_createdFromScript(bool value) { }
 
-private static void .cctor() { }
+	public void set_useDynamicScale(bool value) { }
+
+	private static void .cctor() { }
 
 }
 

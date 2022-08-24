@@ -16,16 +16,16 @@ public class LargeShredder : BaseEntity // TypeDefIndex: 9633
 	public GameObjectRef shredSoundEffect; 
 	public Transform resourceSpawnPoint; 
 	private Quaternion entryRotation; 
-public const string SHRED_STAT = "cars_shredded";
+	public const string SHRED_STAT = "cars_shredded";
 
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void ClientUpdate() { }
+	public void ClientUpdate() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

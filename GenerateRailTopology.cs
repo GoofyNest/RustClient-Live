@@ -1,11 +1,11 @@
 public class GenerateRailTopology : ProceduralComponent // TypeDefIndex: 10496
 {
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-private void MarkRailside() { }
+	private void MarkRailside() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -17,9 +17,9 @@ private sealed class GenerateRailTopology.<>c__DisplayClass1_0 // TypeDefIndex: 
 	public TerrainHeightMap heightmap; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <MarkRailside>b__0(int x, int y) { }
+	internal void <MarkRailside>b__0(int x, int y) { }
 
 }
 

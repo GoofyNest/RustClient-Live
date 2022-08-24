@@ -4,30 +4,30 @@ public sealed class GUIStyleState // TypeDefIndex: 4047
 	private readonly GUIStyle m_SourceStyle; 
 
 	[NativePropertyAttribute] 
-public Color textColor { get; set; }
+	public Color textColor { get; set; }
 
 
-public Color get_textColor() { }
+	public Color get_textColor() { }
 
-public void set_textColor(Color value) { }
-
-	[FreeFunctionAttribute] 
-private static IntPtr Init() { }
+	public void set_textColor(Color value) { }
 
 	[FreeFunctionAttribute] 
-private void Cleanup() { }
+	private static IntPtr Init() { }
 
-public void .ctor() { }
+	[FreeFunctionAttribute] 
+	private void Cleanup() { }
 
-private void .ctor(GUIStyle sourceStyle, IntPtr source) { }
+	public void .ctor() { }
 
-internal static GUIStyleState GetGUIStyleState(GUIStyle sourceStyle, IntPtr source) { }
+	private void .ctor(GUIStyle sourceStyle, IntPtr source) { }
 
-protected override void Finalize() { }
+	internal static GUIStyleState GetGUIStyleState(GUIStyle sourceStyle, IntPtr source) { }
 
-private void get_textColor_Injected(out Color ret) { }
+	protected override void Finalize() { }
 
-private void set_textColor_Injected(ref Color value) { }
+	private void get_textColor_Injected(out Color ret) { }
+
+	private void set_textColor_Injected(ref Color value) { }
 
 }
 

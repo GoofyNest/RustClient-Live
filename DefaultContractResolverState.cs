@@ -4,7 +4,7 @@ internal class DefaultContractResolverState // TypeDefIndex: 5990
 	public PropertyNameTable NameTable; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

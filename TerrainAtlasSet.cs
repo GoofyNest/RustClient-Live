@@ -1,14 +1,14 @@
 public class TerrainAtlasSet : ScriptableObject // TypeDefIndex: 10381
 {
-public const int SplatCount = 8;
-public const int SplatSize = 2048;
-public const int MaxSplatSize = 2047;
-public const int SplatPadding = 256;
-public const int AtlasSize = 8192;
-public const int RegionSize = 2560;
-public const int SplatsPerLine = 3;
-public const int SourceTypeCount = 3;
-public const int AtlasMipCount = 10;
+	public const int SplatCount = 8;
+	public const int SplatSize = 2048;
+	public const int MaxSplatSize = 2047;
+	public const int SplatPadding = 256;
+	public const int AtlasSize = 8192;
+	public const int RegionSize = 2560;
+	public const int SplatsPerLine = 3;
+	public const int SourceTypeCount = 3;
+	public const int AtlasMipCount = 10;
 	public static string[] sourceTypeNames; 
 	public static string[] sourceTypeNamesExt; 
 	public static string[] sourceTypePostfix; 
@@ -28,21 +28,21 @@ public const int AtlasMipCount = 10;
 	public string normalArraySavePath; 
 
 
-public void CheckReset() { }
+	public void CheckReset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public enum TerrainAtlasSet.SourceType // TypeDefIndex: 10382
 {
 	public int value__; 
-public const TerrainAtlasSet.SourceType ALBEDO = 0;
-public const TerrainAtlasSet.SourceType NORMAL = 1;
-public const TerrainAtlasSet.SourceType PACKED = 2;
-public const TerrainAtlasSet.SourceType COUNT = 3;
+	public const TerrainAtlasSet.SourceType ALBEDO = 0;
+	public const TerrainAtlasSet.SourceType NORMAL = 1;
+	public const TerrainAtlasSet.SourceType PACKED = 2;
+	public const TerrainAtlasSet.SourceType COUNT = 3;
 
 }
 
@@ -51,9 +51,9 @@ public class TerrainAtlasSet.SourceMapSet // TypeDefIndex: 10383
 	public Texture2D[] maps; 
 
 
-internal void CheckReset() { }
+	internal void CheckReset() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

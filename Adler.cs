@@ -4,9 +4,9 @@ public sealed class Adler // TypeDefIndex: 6962
 	private static readonly int NMAX; 
 
 
-public static uint Adler32(uint adler, byte[] buf, int index, int len) { }
+	public static uint Adler32(uint adler, byte[] buf, int index, int len) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

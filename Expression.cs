@@ -3,12 +3,12 @@ public abstract class Expression // TypeDefIndex: 3239
 	private static readonly CacheDict<Type, MethodInfo> s_lambdaDelegateCache; 
 	private static ConditionalWeakTable<Expression, Expression.ExtensionInfo> s_legacyCtorSupportTable; 
 
-public virtual ExpressionType NodeType { get; }
+	public virtual ExpressionType NodeType { get; }
 
 
-public virtual ExpressionType get_NodeType() { }
+	public virtual ExpressionType get_NodeType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

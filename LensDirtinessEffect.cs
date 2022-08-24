@@ -9,7 +9,7 @@ public class LensDirtinessEffect : PostProcessEffectSettings // TypeDefIndex: 10
 	public ColorParameter bloomColor; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

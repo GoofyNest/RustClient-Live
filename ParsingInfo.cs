@@ -11,7 +11,7 @@ internal struct ParsingInfo // TypeDefIndex: 239
 	internal DateTimeParse.MatchNumberDelegate parseNumberDelegate; 
 
 
-internal void Init() { }
+	internal void Init() { }
 
 }
 

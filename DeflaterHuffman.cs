@@ -24,31 +24,31 @@ internal class DeflaterHuffman // TypeDefIndex: 5660
 	private static byte[] staticDLength; 
 
 
-public static short BitReverse(int toReverse) { }
+	public static short BitReverse(int toReverse) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor(DeflaterPending pending) { }
+	public void .ctor(DeflaterPending pending) { }
 
-public void Reset() { }
+	public void Reset() { }
 
-private int Lcode(int len) { }
+	private int Lcode(int len) { }
 
-private int Dcode(int distance) { }
+	private int Dcode(int distance) { }
 
-public void SendAllTrees(int blTreeCodes) { }
+	public void SendAllTrees(int blTreeCodes) { }
 
-public void CompressBlock() { }
+	public void CompressBlock() { }
 
-public void FlushStoredBlock(byte[] stored, int storedOffset, int storedLength, bool lastBlock) { }
+	public void FlushStoredBlock(byte[] stored, int storedOffset, int storedLength, bool lastBlock) { }
 
-public void FlushBlock(byte[] stored, int storedOffset, int storedLength, bool lastBlock) { }
+	public void FlushBlock(byte[] stored, int storedOffset, int storedLength, bool lastBlock) { }
 
-public bool IsFull() { }
+	public bool IsFull() { }
 
-public bool TallyLit(int lit) { }
+	public bool TallyLit(int lit) { }
 
-public bool TallyDist(int dist, int len) { }
+	public bool TallyDist(int dist, int len) { }
 
 }
 
@@ -64,25 +64,25 @@ internal class DeflaterHuffman.Tree // TypeDefIndex: 5661
 	private DeflaterHuffman dh; 
 
 
-public void .ctor(DeflaterHuffman dh, int elems, int minCodes, int maxLength) { }
+	public void .ctor(DeflaterHuffman dh, int elems, int minCodes, int maxLength) { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public void WriteSymbol(int code) { }
+	public void WriteSymbol(int code) { }
 
-public void SetStaticCodes(short[] stCodes, byte[] stLength) { }
+	public void SetStaticCodes(short[] stCodes, byte[] stLength) { }
 
-public void BuildCodes() { }
+	public void BuildCodes() { }
 
-private void BuildLength(int[] childs) { }
+	private void BuildLength(int[] childs) { }
 
-public void BuildTree() { }
+	public void BuildTree() { }
 
-public int GetEncodedLength() { }
+	public int GetEncodedLength() { }
 
-public void CalcBLFreq(DeflaterHuffman.Tree blTree) { }
+	public void CalcBLFreq(DeflaterHuffman.Tree blTree) { }
 
-public void WriteTree(DeflaterHuffman.Tree blTree) { }
+	public void WriteTree(DeflaterHuffman.Tree blTree) { }
 
 }
 

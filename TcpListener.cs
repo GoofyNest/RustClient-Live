@@ -6,17 +6,17 @@ public class TcpListener // TypeDefIndex: 3059
 	private bool m_ExclusiveAddressUse; 
 
 
-public void .ctor(IPAddress localaddr, int port) { }
+	public void .ctor(IPAddress localaddr, int port) { }
 
-public void Start() { }
+	public void Start() { }
 
-public void Start(int backlog) { }
+	public void Start(int backlog) { }
 
-public void Stop() { }
+	public void Stop() { }
 
-public bool Pending() { }
+	public bool Pending() { }
 
-public Socket AcceptSocket() { }
+	public Socket AcceptSocket() { }
 
 }
 

@@ -18,23 +18,23 @@ public class ZiplineAudio : MonoBehaviour // TypeDefIndex: 8670
 	private bool sparksActive; 
 
 
-private void Update() { }
+	private void Update() { }
 
-private void StartMovementLoop() { }
+	private void StartMovementLoop() { }
 
-private void StopMovementLoop() { }
+	private void StopMovementLoop() { }
 
-private void StartFrictionLoop() { }
+	private void StartFrictionLoop() { }
 
-private void StopFrictionLoop() { }
+	private void StopFrictionLoop() { }
 
-private void StartSparksLoop() { }
+	private void StartSparksLoop() { }
 
-private void StopSparksLoop() { }
+	private void StopSparksLoop() { }
 
-public void EnableSparksAudio(bool sparksEnabled) { }
+	public void EnableSparksAudio(bool sparksEnabled) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

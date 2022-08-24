@@ -48,23 +48,23 @@ public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClie
 	private float steerPercent; 
 
 
-public override void Init(Snowmobile owner, VehicleChassisVisuals.ClientWheelData<Snowmobile>[] clientWheelData) { }
+	public override void Init(Snowmobile owner, VehicleChassisVisuals.ClientWheelData<Snowmobile>[] clientWheelData) { }
 
-protected override void PreWheelUpdateTick() { }
+	protected override void PreWheelUpdateTick() { }
 
-protected override void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt) { }
+	protected override void PostWheelUpdateTick(bool instant, bool isCloseToCamera, float steer, float dt) { }
 
-protected override void StopAll() { }
+	protected override void StopAll() { }
 
-protected override void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData, bool isOn, float steer, float dt) { }
+	protected override void UpdateWheelVisuals(VehicleChassisVisuals.ClientWheelData<Snowmobile> wheelData, bool isOn, float steer, float dt) { }
 
-private void SetSuspensionExtension(Transform visualWheel, Vector3 restingLocalPos, float extension, float prevExtension, float maxVisualExtension, float updateSpeed, float dt, bool reverse) { }
+	private void SetSuspensionExtension(Transform visualWheel, Vector3 restingLocalPos, float extension, float prevExtension, float maxVisualExtension, float updateSpeed, float dt, bool reverse) { }
 
-private void InitAnim() { }
+	private void InitAnim() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -74,7 +74,7 @@ private class SnowmobileChassisVisuals.TreadRenderer // TypeDefIndex: 9758
 	public int materialIndex; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

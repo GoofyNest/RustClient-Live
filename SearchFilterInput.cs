@@ -7,29 +7,29 @@ public class SearchFilterInput : MonoBehaviour // TypeDefIndex: 9234
 	private string <CurrentSearchInput>k__BackingField; 
 	public Action<string> OnSearchFilterChanged; 
 
-public bool IsOpen { get; }
-public string CurrentSearchInput { get; set; }
+	public bool IsOpen { get; }
+	public string CurrentSearchInput { get; set; }
 
 
-public bool get_IsOpen() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_CurrentSearchInput() { }
+	public bool get_IsOpen() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_CurrentSearchInput(string value) { }
+	public string get_CurrentSearchInput() { }
 
-public void Toggle() { }
+	[CompilerGeneratedAttribute] 
+	private void set_CurrentSearchInput(string value) { }
 
-public void SetOpen(bool state) { }
+	public void Toggle() { }
 
-public void Cancel() { }
+	public void SetOpen(bool state) { }
 
-public void OnSearchStringChanged(string newInput) { }
+	public void Cancel() { }
 
-public void OnSearchStringSubmit(string newInput) { }
+	public void OnSearchStringChanged(string newInput) { }
 
-public void .ctor() { }
+	public void OnSearchStringSubmit(string newInput) { }
+
+	public void .ctor() { }
 
 }
 

@@ -5,9 +5,9 @@ public class ChippyMoveTest : MonoBehaviour // TypeDefIndex: 8770
 	public float maxSpeed; 
 
 
-private void FixedUpdate() { }
+	private void FixedUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

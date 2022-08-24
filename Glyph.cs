@@ -16,38 +16,38 @@ public class Glyph // TypeDefIndex: 4112
 	[SerializeField] 
 	private int m_AtlasIndex; 
 
-public uint index { get; set; }
-public GlyphMetrics metrics { get; set; }
-public GlyphRect glyphRect { get; set; }
-public float scale { get; set; }
-public int atlasIndex { get; set; }
+	public uint index { get; set; }
+	public GlyphMetrics metrics { get; set; }
+	public GlyphRect glyphRect { get; set; }
+	public float scale { get; set; }
+	public int atlasIndex { get; set; }
 
 
-public uint get_index() { }
+	public uint get_index() { }
 
-public void set_index(uint value) { }
+	public void set_index(uint value) { }
 
-public GlyphMetrics get_metrics() { }
+	public GlyphMetrics get_metrics() { }
 
-public void set_metrics(GlyphMetrics value) { }
+	public void set_metrics(GlyphMetrics value) { }
 
-public GlyphRect get_glyphRect() { }
+	public GlyphRect get_glyphRect() { }
 
-public void set_glyphRect(GlyphRect value) { }
+	public void set_glyphRect(GlyphRect value) { }
 
-public float get_scale() { }
+	public float get_scale() { }
 
-public void set_scale(float value) { }
+	public void set_scale(float value) { }
 
-public int get_atlasIndex() { }
+	public int get_atlasIndex() { }
 
-public void set_atlasIndex(int value) { }
+	public void set_atlasIndex(int value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void .ctor(GlyphMarshallingStruct glyphStruct) { }
+	internal void .ctor(GlyphMarshallingStruct glyphStruct) { }
 
-public void .ctor(uint index, GlyphMetrics metrics, GlyphRect glyphRect, float scale, int atlasIndex) { }
+	public void .ctor(uint index, GlyphMetrics metrics, GlyphRect glyphRect, float scale, int atlasIndex) { }
 
 }
 

@@ -13,57 +13,57 @@ public class ExceptionReporter : MonoBehaviour // TypeDefIndex: 6193
 	[CompilerGeneratedAttribute] 
 	private static string <ProjectId>k__BackingField; 
 
-public static bool Disabled { get; set; }
-public static string PublicKey { get; set; }
-public static string SecretKey { get; set; }
-public static string Host { get; set; }
-public static string ProjectId { get; set; }
-private static Dictionary<string, string> Headers { get; }
+	public static bool Disabled { get; set; }
+	public static string PublicKey { get; set; }
+	public static string SecretKey { get; set; }
+	public static string Host { get; set; }
+	public static string ProjectId { get; set; }
+	private static Dictionary<string, string> Headers { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Disabled() { }
+	public static bool get_Disabled() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Disabled(bool value) { }
+	public static void set_Disabled(bool value) { }
 
-internal static void InstallHooks() { }
+	internal static void InstallHooks() { }
 
-private static void OnLogMessage(string message, string stackTrace, LogType type) { }
-
-	[CompilerGeneratedAttribute] 
-public static string get_PublicKey() { }
+	private static void OnLogMessage(string message, string stackTrace, LogType type) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_PublicKey(string value) { }
+	public static string get_PublicKey() { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_SecretKey() { }
+	private static void set_PublicKey(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_SecretKey(string value) { }
+	public static string get_SecretKey() { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_Host() { }
+	private static void set_SecretKey(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_Host(string value) { }
+	public static string get_Host() { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_ProjectId() { }
+	private static void set_Host(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_ProjectId(string value) { }
+	public static string get_ProjectId() { }
 
-public static void InitializeFromUrl(string url) { }
+	[CompilerGeneratedAttribute] 
+	private static void set_ProjectId(string value) { }
 
-public static void SendReport(string exception, string stacktrace) { }
+	public static void InitializeFromUrl(string url) { }
 
-private static Dictionary<string, string> get_Headers() { }
+	public static void SendReport(string exception, string stacktrace) { }
 
-public void .ctor() { }
+	private static Dictionary<string, string> get_Headers() { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

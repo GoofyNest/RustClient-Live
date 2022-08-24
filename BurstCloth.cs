@@ -1,7 +1,7 @@
 public class BurstCloth : MonoBehaviour // TypeDefIndex: 7308
 {
-internal const int TickRateMultiplier = 60;
-internal const int MaximumTickRate = 240;
+	internal const int TickRateMultiplier = 60;
+	internal const int MaximumTickRate = 240;
 	private static readonly List<CapsuleParams> CapsuleParamsShared; 
 	[HeaderAttribute] 
 	public Transform[] RootBones; 
@@ -48,41 +48,41 @@ internal const int MaximumTickRate = 240;
 	private NativeArray<ColliderState> _colliderState; 
 
 
-protected void Initialize() { }
+	protected void Initialize() { }
 
-protected virtual void Awake() { }
+	protected virtual void Awake() { }
 
-protected virtual void OnEnable() { }
+	protected virtual void OnEnable() { }
 
-protected virtual void OnDisable() { }
+	protected virtual void OnDisable() { }
 
-protected internal virtual void FrameUpdate() { }
+	protected internal virtual void FrameUpdate() { }
 
-internal JobHandle SimulateSystem() { }
+	internal JobHandle SimulateSystem() { }
 
-private void SetupData() { }
+	private void SetupData() { }
 
-private void SetupManagedData() { }
+	private void SetupManagedData() { }
 
-private void SetupNativeData() { }
+	private void SetupNativeData() { }
 
-protected virtual ValueTuple<Vector3, Quaternion, Vector3> GetOriginTransform() { }
+	protected virtual ValueTuple<Vector3, Quaternion, Vector3> GetOriginTransform() { }
 
-protected virtual void GatherColliders(List<CapsuleParams> colliders) { }
+	protected virtual void GatherColliders(List<CapsuleParams> colliders) { }
 
-private static ValueTuple<Vector3, float> GetBoneLocalPositionAndLength(Transform parent, Transform child) { }
+	private static ValueTuple<Vector3, float> GetBoneLocalPositionAndLength(Transform parent, Transform child) { }
 
-private ValueTuple<Transform, int> GetSiblingAndIndex(int chainIndex, int depth) { }
+	private ValueTuple<Transform, int> GetSiblingAndIndex(int chainIndex, int depth) { }
 
-private void BuildBoneToIndexMap(Dictionary<Transform, int> boneToIndex) { }
+	private void BuildBoneToIndexMap(Dictionary<Transform, int> boneToIndex) { }
 
-protected static CapsuleParams GetCapsuleParams(CapsuleCollider collider) { }
+	protected static CapsuleParams GetCapsuleParams(CapsuleCollider collider) { }
 
-protected void UpdateCachedMaterialData() { }
+	protected void UpdateCachedMaterialData() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -99,13 +99,13 @@ private sealed class BurstCloth.<>c // TypeDefIndex: 7310
 	public static Func<BurstCloth.Chain, int> <>9__42_1; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <SetupManagedData>b__42_0(BurstCloth.Chain c) { }
+	internal int <SetupManagedData>b__42_0(BurstCloth.Chain c) { }
 
-internal int <SetupManagedData>b__42_1(BurstCloth.Chain c) { }
+	internal int <SetupManagedData>b__42_1(BurstCloth.Chain c) { }
 
 }
 

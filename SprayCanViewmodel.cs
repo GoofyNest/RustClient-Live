@@ -5,15 +5,15 @@ public class SprayCanViewmodel : MonoBehaviour, IAnimationEventReceiver // TypeD
 	private Sound sprayLoop; 
 
 
-public void SetSprayColour(Color c) { }
+	public void SetSprayColour(Color c) { }
 
-public void ToggleSpray(bool state) { }
+	public void ToggleSpray(bool state) { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void OnAnimationEvent(string eventName) { }
+	public void OnAnimationEvent(string eventName) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

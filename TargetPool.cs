@@ -4,13 +4,13 @@ internal class TargetPool // TypeDefIndex: 11868
 	private int m_Current; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal int Get() { }
+	internal int Get() { }
 
-private int Get(int i) { }
+	private int Get(int i) { }
 
-internal void Reset() { }
+	internal void Reset() { }
 
 }
 

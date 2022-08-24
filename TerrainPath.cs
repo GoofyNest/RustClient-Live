@@ -18,36 +18,36 @@ public class TerrainPath : TerrainExtension // TypeDefIndex: 10427
 	private Dictionary<string, List<PowerlineNode>> wires; 
 
 
-public override void PostSetup() { }
+	public override void PostSetup() { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public T FindClosest<T>(List<T> list, Vector3 pos) { }
-/* GenericInstMethod :
-|
-|-TerrainPath.FindClosest<DungeonBaseInfo>
-|-TerrainPath.FindClosest<DungeonGridInfo>
-|-TerrainPath.FindClosest<MonumentInfo>
-|-TerrainPath.FindClosest<object>
-*/
+	public T FindClosest<T>(List<T> list, Vector3 pos) { }
+	/* GenericInstMethod :
+	|
+	|-TerrainPath.FindClosest<DungeonBaseInfo>
+	|-TerrainPath.FindClosest<DungeonGridInfo>
+	|-TerrainPath.FindClosest<MonumentInfo>
+	|-TerrainPath.FindClosest<object>
+	*/
 
-public static int[,] CreatePowerlineCostmap(ref uint seed) { }
+	public static int[,] CreatePowerlineCostmap(ref uint seed) { }
 
-public static int[,] CreateRoadCostmap(ref uint seed) { }
+	public static int[,] CreateRoadCostmap(ref uint seed) { }
 
-public static int[,] CreateRailCostmap(ref uint seed) { }
+	public static int[,] CreateRailCostmap(ref uint seed) { }
 
-public static int[,] CreateBoatCostmap(float depth) { }
+	public static int[,] CreateBoatCostmap(float depth) { }
 
-public void AddWire(PowerlineNode node) { }
+	public void AddWire(PowerlineNode node) { }
 
-public void CreateWires() { }
+	public void CreateWires() { }
 
-private void CreateWire(string name, List<GameObject> objects, GameObjectRef wirePrefab) { }
+	private void CreateWire(string name, List<GameObject> objects, GameObjectRef wirePrefab) { }
 
-public MonumentInfo FindMonumentWithBoundsOverlap(Vector3 position) { }
+	public MonumentInfo FindMonumentWithBoundsOverlap(Vector3 position) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

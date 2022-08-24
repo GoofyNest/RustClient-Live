@@ -9,11 +9,11 @@ public class ChildrenScreenshot : MonoBehaviour // TypeDefIndex: 11296
 
 
 	[ContextMenu] 
-public void CreateScreenshots() { }
+	public void CreateScreenshots() { }
 
-public void PositionCamera(Camera cam, GameObject obj) { }
+	public void PositionCamera(Camera cam, GameObject obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

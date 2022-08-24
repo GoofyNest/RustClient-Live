@@ -4,7 +4,7 @@ public class TimedUnlootableCrate : LootContainer // TypeDefIndex: 9605
 	public float unlootableDuration; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

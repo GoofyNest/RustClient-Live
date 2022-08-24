@@ -6,7 +6,7 @@ public class Explosion_Bloom : MonoBehaviour // TypeDefIndex: 11486
 	[HideInInspector] 
 	private Shader m_Shader; 
 	private Material m_Material; 
-private const int kMaxIterations = 16;
+	private const int kMaxIterations = 16;
 	private RenderTexture[] m_blurBuffer1; 
 	private RenderTexture[] m_blurBuffer2; 
 	private int m_Threshold; 
@@ -16,30 +16,30 @@ private const int kMaxIterations = 16;
 	private int m_Intensity; 
 	private int m_BaseTex; 
 
-public Shader shader { get; }
-public Material material { get; }
-public static bool supportsDX11 { get; }
+	public Shader shader { get; }
+	public Material material { get; }
+	public static bool supportsDX11 { get; }
 
 
-public Shader get_shader() { }
+	public Shader get_shader() { }
 
-public Material get_material() { }
+	public Material get_material() { }
 
-public static bool IsSupported(Shader s, bool needDepth, bool needHdr, MonoBehaviour effect) { }
+	public static bool IsSupported(Shader s, bool needDepth, bool needHdr, MonoBehaviour effect) { }
 
-public static Material CheckShaderAndCreateMaterial(Shader s) { }
+	public static Material CheckShaderAndCreateMaterial(Shader s) { }
 
-public static bool get_supportsDX11() { }
+	public static bool get_supportsDX11() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -66,20 +66,20 @@ public struct Explosion_Bloom.Settings // TypeDefIndex: 11487
 	[TooltipAttribute] 
 	public bool antiFlicker; 
 
-public float thresholdGamma { get; set; }
-public float thresholdLinear { get; set; }
-public static Explosion_Bloom.Settings defaultSettings { get; }
+	public float thresholdGamma { get; set; }
+	public float thresholdLinear { get; set; }
+	public static Explosion_Bloom.Settings defaultSettings { get; }
 
 
-public void set_thresholdGamma(float value) { }
+	public void set_thresholdGamma(float value) { }
 
-public float get_thresholdGamma() { }
+	public float get_thresholdGamma() { }
 
-public void set_thresholdLinear(float value) { }
+	public void set_thresholdLinear(float value) { }
 
-public float get_thresholdLinear() { }
+	public float get_thresholdLinear() { }
 
-public static Explosion_Bloom.Settings get_defaultSettings() { }
+	public static Explosion_Bloom.Settings get_defaultSettings() { }
 
 }
 
@@ -95,13 +95,13 @@ public class ExplosionDemoGUI : MonoBehaviour // TypeDefIndex: 11488
 	private float dpiScale; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void OnGUI() { }
+	private void OnGUI() { }
 
-private void ChangeCurrent(int delta) { }
+	private void ChangeCurrent(int delta) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -110,11 +110,11 @@ public class ExplosionDemoReactivator : MonoBehaviour // TypeDefIndex: 11489
 	public float TimeDelayToReactivate; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Reactivate() { }
+	private void Reactivate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -129,17 +129,17 @@ public class ExplosionPlatformActivator : MonoBehaviour // TypeDefIndex: 11490
 	private bool canUpdate; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Init() { }
+	private void Init() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnTriggerEnter(Collider coll) { }
+	private void OnTriggerEnter(Collider coll) { }
 
-private void OnTriggerExit(Collider other) { }
+	private void OnTriggerExit(Collider other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -151,13 +151,13 @@ public class ExplosionsFPS : MonoBehaviour // TypeDefIndex: 11491
 	private int frames; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnGUI() { }
+	private void OnGUI() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -172,11 +172,11 @@ public class ExplosionsBillboard : MonoBehaviour // TypeDefIndex: 11492
 	private Transform contT; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -186,13 +186,13 @@ public class ExplosionsDeactivateRendererByTime : MonoBehaviour // TypeDefIndex:
 	private Renderer rend; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void DeactivateRenderer() { }
+	private void DeactivateRenderer() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -206,13 +206,13 @@ public class ExplosionsLightCurves : MonoBehaviour // TypeDefIndex: 11494
 	private Light lightSource; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -221,11 +221,11 @@ public class ExplosionsParticleSystemScaler : MonoBehaviour // TypeDefIndex: 114
 	public float particlesScale; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -243,13 +243,13 @@ public class ExplosionsScaleCurves : MonoBehaviour // TypeDefIndex: 11496
 	private float evalZ; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -266,13 +266,13 @@ public class ExplosionsShaderColorGradient : MonoBehaviour // TypeDefIndex: 1149
 	private Color oldColor; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -289,13 +289,13 @@ public class ExplosionsShaderFloatCurves : MonoBehaviour // TypeDefIndex: 11498
 	private float startTime; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -305,13 +305,13 @@ public class ExplosionsShaderQueue : MonoBehaviour // TypeDefIndex: 11499
 	private Renderer rend; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void SetProjectorQueue() { }
+	private void SetProjectorQueue() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -339,28 +339,28 @@ internal class ExplosionsSpriteSheetAnimation : MonoBehaviour // TypeDefIndex: 1
 	private bool animationStoped; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void InitDefaultVariables() { }
+	private void InitDefaultVariables() { }
 
-private void Play() { }
+	private void Play() { }
 
-private void PlayDelay() { }
+	private void PlayDelay() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator UpdateCorutine() { }
+	private IEnumerator UpdateCorutine() { }
 
-private void UpdateFrame() { }
+	private void UpdateFrame() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -370,26 +370,26 @@ private sealed class ExplosionsSpriteSheetAnimation.<UpdateCorutine>d__26 : IEnu
 	private object <>2__current; 
 	public ExplosionsSpriteSheetAnimation <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

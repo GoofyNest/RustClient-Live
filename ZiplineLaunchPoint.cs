@@ -14,43 +14,43 @@ public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 8489
 	public GameObjectRef ArrivalPointRef; 
 	private bool hasSetupLineRenderer; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-private void UpdateLineRenderer(bool force = False) { }
+	private void UpdateLineRenderer(bool force = False) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-private void Menu_MountZipline(BasePlayer player) { }
+	private void Menu_MountZipline(BasePlayer player) { }
 
-private bool Menu_Mount_ShowIf(BasePlayer player) { }
+	private bool Menu_Mount_ShowIf(BasePlayer player) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-private void CalculateZiplinePoints(List<Vector3> targets, ref List<Vector3> points) { }
+	private void CalculateZiplinePoints(List<Vector3> targets, ref List<Vector3> points) { }
 
-private Vector3 CalculateLineMidPoint(Vector3 start, Vector3 endPoint) { }
+	private Vector3 CalculateLineMidPoint(Vector3 start, Vector3 endPoint) { }
 
-private void UpdateBuildingBlocks() { }
+	private void UpdateBuildingBlocks() { }
 
-private bool IsPlayerFacingValidDirection(BasePlayer ply) { }
+	private bool IsPlayerFacingValidDirection(BasePlayer ply) { }
 
-public float GetLineLength() { }
+	public float GetLineLength() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <UpdateBuildingBlocks>g__SetUpBuildingBlock|24_0(BoxCollider longCollider, BoxCollider pointCollider, int startIndex, int endIndex) { }
+	private void <UpdateBuildingBlocks>g__SetUpBuildingBlock|24_0(BoxCollider longCollider, BoxCollider pointCollider, int startIndex, int endIndex) { }
 
 }
 

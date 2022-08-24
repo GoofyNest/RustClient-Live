@@ -10,47 +10,47 @@ public static class GA // TypeDefIndex: 5676
 	[CompilerGeneratedAttribute] 
 	private static string <Device>k__BackingField; 
 
-public static bool Logging { get; set; }
-public static string CustomUserId { get; set; }
-public static string Build { get; set; }
-public static string Device { get; set; }
+	public static bool Logging { get; set; }
+	public static string CustomUserId { get; set; }
+	public static string Build { get; set; }
+	public static string Device { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public static bool get_Logging() { }
+	public static bool get_Logging() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Logging(bool value) { }
+	public static void set_Logging(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_CustomUserId() { }
+	public static string get_CustomUserId() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_CustomUserId(string value) { }
+	public static void set_CustomUserId(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_Build() { }
+	public static string get_Build() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Build(string value) { }
+	public static void set_Build(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public static string get_Device() { }
+	public static string get_Device() { }
 
 	[CompilerGeneratedAttribute] 
-public static void set_Device(string value) { }
+	public static void set_Device(string value) { }
 
-public static void Initialize(string gameKey, string gameSecret) { }
+	public static void Initialize(string gameKey, string gameSecret) { }
 
-public static void DesignEvent(string eventName) { }
+	public static void DesignEvent(string eventName) { }
 
-public static void DesignEvent(string eventName, float eventValue) { }
+	public static void DesignEvent(string eventName, float eventValue) { }
 
-public static void BusinessEvent(string currency, int amount, string itemType, string itemId, string cartType) { }
+	public static void BusinessEvent(string currency, int amount, string itemType, string itemId, string cartType) { }
 
-public static void Shutdown() { }
+	public static void Shutdown() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

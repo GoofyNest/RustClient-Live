@@ -4,15 +4,15 @@ internal class UsedByNativeCodeAttribute : Attribute // TypeDefIndex: 3288
 	[CompilerGeneratedAttribute] 
 	private string <Name>k__BackingField; 
 
-public string Name { set; }
+	public string Name { set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(string name) { }
+	public void .ctor(string name) { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Name(string value) { }
+	public void set_Name(string value) { }
 
 }
 

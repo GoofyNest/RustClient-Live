@@ -7,7 +7,7 @@ public class AdaptMeshToTerrain : MonoBehaviour // TypeDefIndex: 10637
 	public float MaxDisplacement; 
 	[RangeAttribute] 
 	public int PlaneResolution; 
-private const int LODCount = 3;
+	private const int LODCount = 3;
 	private MeshFilter meshFilter; 
 	private MeshRenderer meshRenderer; 
 	private MeshCollider meshCollider; 
@@ -18,27 +18,27 @@ private const int LODCount = 3;
 	private MaterialPropertyBlock block; 
 
 
-private void CheckInitialize() { }
+	private void CheckInitialize() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void SetMaterialPropertyBlock() { }
+	private void SetMaterialPropertyBlock() { }
 
-private void DestroyMeshes() { }
+	private void DestroyMeshes() { }
 
-private void CheckReferenceMeshes() { }
+	private void CheckReferenceMeshes() { }
 
-public void Adapt() { }
+	public void Adapt() { }
 
-private Mesh CreatePlaneMesh(int resolution) { }
+	private Mesh CreatePlaneMesh(int resolution) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

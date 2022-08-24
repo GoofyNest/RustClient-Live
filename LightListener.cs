@@ -8,11 +8,11 @@ public class LightListener : BaseEntity // TypeDefIndex: 9635
 	public LightGroupAtTime offLights; 
 
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void SetLightsOn(bool wantsOn) { }
+	public void SetLightsOn(bool wantsOn) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

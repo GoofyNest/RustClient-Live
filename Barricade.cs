@@ -7,7 +7,7 @@ public class Barricade : DecayEntity // TypeDefIndex: 9508
 	public NavMeshModifierVolume NavMeshVolumeHumanoids; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

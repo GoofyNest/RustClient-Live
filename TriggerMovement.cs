@@ -6,13 +6,13 @@ public class TriggerMovement : TriggerBase, IClientComponent // TypeDefIndex: 92
 	private float scale; 
 
 
-public void SetMovementScale(float newScale) { }
+	public void SetMovementScale(float newScale) { }
 
-public float GetMovementScale() { }
+	public float GetMovementScale() { }
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

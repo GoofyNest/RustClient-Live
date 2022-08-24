@@ -3,13 +3,13 @@ internal class DelegateSerializationHolder : ISerializable, IObjectReference // 
 	private Delegate _delegate; 
 
 
-private void .ctor(SerializationInfo info, StreamingContext ctx) { }
+	private void .ctor(SerializationInfo info, StreamingContext ctx) { }
 
-public static void GetDelegateData(Delegate instance, SerializationInfo info, StreamingContext ctx) { }
+	public static void GetDelegateData(Delegate instance, SerializationInfo info, StreamingContext ctx) { }
 
-public void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-public object GetRealObject(StreamingContext context) { }
+	public object GetRealObject(StreamingContext context) { }
 
 }
 
@@ -24,9 +24,9 @@ private class DelegateSerializationHolder.DelegateEntry // TypeDefIndex: 358
 	public DelegateSerializationHolder.DelegateEntry delegateEntry; 
 
 
-public void .ctor(Delegate del, string targetLabel) { }
+	public void .ctor(Delegate del, string targetLabel) { }
 
-public Delegate DeserializeDelegate(SerializationInfo info, int index) { }
+	public Delegate DeserializeDelegate(SerializationInfo info, int index) { }
 
 }
 

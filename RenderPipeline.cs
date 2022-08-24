@@ -4,22 +4,22 @@ public abstract class RenderPipeline // TypeDefIndex: 3849
 	[DebuggerBrowsableAttribute] 
 	private bool <disposed>k__BackingField; 
 
-public bool disposed { get; set; }
+	public bool disposed { get; set; }
 
 
-protected abstract void Render(ScriptableRenderContext context, Camera[] cameras);
+	protected abstract void Render(ScriptableRenderContext context, Camera[] cameras);
 
-internal void InternalRender(ScriptableRenderContext context, Camera[] cameras) { }
-
-	[CompilerGeneratedAttribute] 
-public bool get_disposed() { }
+	internal void InternalRender(ScriptableRenderContext context, Camera[] cameras) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_disposed(bool value) { }
+	public bool get_disposed() { }
 
-internal void Dispose() { }
+	[CompilerGeneratedAttribute] 
+	private void set_disposed(bool value) { }
 
-protected virtual void Dispose(bool disposing) { }
+	internal void Dispose() { }
+
+	protected virtual void Dispose(bool disposing) { }
 
 }
 

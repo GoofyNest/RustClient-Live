@@ -18,215 +18,215 @@ public sealed class GUIStyle // TypeDefIndex: 4048
 	private static GUIStyle s_None; 
 
 	[NativePropertyAttribute] 
-internal string rawName { get; set; }
+	internal string rawName { get; set; }
 	[NativePropertyAttribute] 
-public Font font { get; }
+	public Font font { get; }
 	[NativePropertyAttribute] 
-public ImagePosition imagePosition { get; }
+	public ImagePosition imagePosition { get; }
 	[NativePropertyAttribute] 
-public TextAnchor alignment { set; }
+	public TextAnchor alignment { set; }
 	[NativePropertyAttribute] 
-public bool wordWrap { get; }
+	public bool wordWrap { get; }
 	[NativePropertyAttribute] 
-public Vector2 contentOffset { get; set; }
+	public Vector2 contentOffset { get; set; }
 	[NativePropertyAttribute] 
-public float fixedWidth { get; }
+	public float fixedWidth { get; }
 	[NativePropertyAttribute] 
-public float fixedHeight { get; }
+	public float fixedHeight { get; }
 	[NativePropertyAttribute] 
-public bool stretchWidth { get; set; }
+	public bool stretchWidth { get; set; }
 	[NativePropertyAttribute] 
-public bool stretchHeight { get; set; }
+	public bool stretchHeight { get; set; }
 	[NativePropertyAttribute] 
-public int fontSize { set; }
+	public int fontSize { set; }
 	[NativePropertyAttribute] 
-internal Vector2 Internal_clipOffset { set; }
-public string name { get; set; }
-public GUIStyleState normal { get; }
-public RectOffset margin { get; }
-public RectOffset padding { get; }
-public float lineHeight { get; }
-public static GUIStyle none { get; }
-public bool isHeightDependantOnWidth { get; }
+	internal Vector2 Internal_clipOffset { set; }
+	public string name { get; set; }
+	public GUIStyleState normal { get; }
+	public RectOffset margin { get; }
+	public RectOffset padding { get; }
+	public float lineHeight { get; }
+	public static GUIStyle none { get; }
+	public bool isHeightDependantOnWidth { get; }
 
 
-internal string get_rawName() { }
+	internal string get_rawName() { }
 
-internal void set_rawName(string value) { }
+	internal void set_rawName(string value) { }
 
-public Font get_font() { }
+	public Font get_font() { }
 
-public ImagePosition get_imagePosition() { }
+	public ImagePosition get_imagePosition() { }
 
-public void set_alignment(TextAnchor value) { }
+	public void set_alignment(TextAnchor value) { }
 
-public bool get_wordWrap() { }
+	public bool get_wordWrap() { }
 
-public Vector2 get_contentOffset() { }
+	public Vector2 get_contentOffset() { }
 
-public void set_contentOffset(Vector2 value) { }
+	public void set_contentOffset(Vector2 value) { }
 
-public float get_fixedWidth() { }
+	public float get_fixedWidth() { }
 
-public float get_fixedHeight() { }
+	public float get_fixedHeight() { }
 
-public bool get_stretchWidth() { }
+	public bool get_stretchWidth() { }
 
-public void set_stretchWidth(bool value) { }
+	public void set_stretchWidth(bool value) { }
 
-public bool get_stretchHeight() { }
+	public bool get_stretchHeight() { }
 
-public void set_stretchHeight(bool value) { }
+	public void set_stretchHeight(bool value) { }
 
-public void set_fontSize(int value) { }
+	public void set_fontSize(int value) { }
 
-internal void set_Internal_clipOffset(Vector2 value) { }
-
-	[FreeFunctionAttribute] 
-private static IntPtr Internal_Create(GUIStyle self) { }
+	internal void set_Internal_clipOffset(Vector2 value) { }
 
 	[FreeFunctionAttribute] 
-private static IntPtr Internal_Copy(GUIStyle self, GUIStyle other) { }
+	private static IntPtr Internal_Create(GUIStyle self) { }
 
 	[FreeFunctionAttribute] 
-private static void Internal_Destroy(IntPtr self) { }
+	private static IntPtr Internal_Copy(GUIStyle self, GUIStyle other) { }
 
 	[FreeFunctionAttribute] 
-private IntPtr GetStyleStatePtr(int idx) { }
+	private static void Internal_Destroy(IntPtr self) { }
 
 	[FreeFunctionAttribute] 
-private IntPtr GetRectOffsetPtr(int idx) { }
+	private IntPtr GetStyleStatePtr(int idx) { }
 
 	[FreeFunctionAttribute] 
-private static float Internal_GetLineHeight(IntPtr target) { }
+	private IntPtr GetRectOffsetPtr(int idx) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_Draw(Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
+	private static float Internal_GetLineHeight(IntPtr target) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_Draw2(Rect position, GUIContent content, int controlID, bool on) { }
+	private void Internal_Draw(Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_DrawCursor(Rect position, GUIContent content, int pos, Color cursorColor) { }
+	private void Internal_Draw2(Rect position, GUIContent content, int controlID, bool on) { }
 
 	[FreeFunctionAttribute] 
-private void Internal_DrawWithTextSelection(Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus, bool drawSelectionAsComposition, int cursorFirst, int cursorLast, Color cursorColor, Color selectionColor) { }
+	private void Internal_DrawCursor(Rect position, GUIContent content, int pos, Color cursorColor) { }
 
 	[FreeFunctionAttribute] 
-internal Vector2 Internal_GetCursorPixelPosition(Rect position, GUIContent content, int cursorStringIndex) { }
+	private void Internal_DrawWithTextSelection(Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus, bool drawSelectionAsComposition, int cursorFirst, int cursorLast, Color cursorColor, Color selectionColor) { }
 
 	[FreeFunctionAttribute] 
-internal int Internal_GetCursorStringIndex(Rect position, GUIContent content, Vector2 cursorPixelPosition) { }
+	internal Vector2 Internal_GetCursorPixelPosition(Rect position, GUIContent content, int cursorStringIndex) { }
 
 	[FreeFunctionAttribute] 
-internal string Internal_GetSelectedRenderedText(Rect localPosition, GUIContent mContent, int selectIndex, int cursorIndex) { }
+	internal int Internal_GetCursorStringIndex(Rect position, GUIContent content, Vector2 cursorPixelPosition) { }
 
 	[FreeFunctionAttribute] 
-internal Vector2 Internal_CalcSize(GUIContent content) { }
+	internal string Internal_GetSelectedRenderedText(Rect localPosition, GUIContent mContent, int selectIndex, int cursorIndex) { }
 
 	[FreeFunctionAttribute] 
-internal Vector2 Internal_CalcSizeWithConstraints(GUIContent content, Vector2 maxSize) { }
+	internal Vector2 Internal_CalcSize(GUIContent content) { }
 
 	[FreeFunctionAttribute] 
-private float Internal_CalcHeight(GUIContent content, float width) { }
+	internal Vector2 Internal_CalcSizeWithConstraints(GUIContent content, Vector2 maxSize) { }
 
 	[FreeFunctionAttribute] 
-private Vector2 Internal_CalcMinMaxWidth(GUIContent content) { }
+	private float Internal_CalcHeight(GUIContent content, float width) { }
 
 	[FreeFunctionAttribute] 
-internal static void SetMouseTooltip(string tooltip, Rect screenRect) { }
+	private Vector2 Internal_CalcMinMaxWidth(GUIContent content) { }
 
 	[FreeFunctionAttribute] 
-private static float Internal_GetCursorFlashOffset() { }
+	internal static void SetMouseTooltip(string tooltip, Rect screenRect) { }
 
 	[FreeFunctionAttribute] 
-internal static void SetDefaultFont(Font font) { }
+	private static float Internal_GetCursorFlashOffset() { }
 
-public void .ctor() { }
+	[FreeFunctionAttribute] 
+	internal static void SetDefaultFont(Font font) { }
 
-public void .ctor(GUIStyle other) { }
+	public void .ctor() { }
 
-protected override void Finalize() { }
+	public void .ctor(GUIStyle other) { }
 
-public string get_name() { }
+	protected override void Finalize() { }
 
-public void set_name(string value) { }
+	public string get_name() { }
 
-public GUIStyleState get_normal() { }
+	public void set_name(string value) { }
 
-public RectOffset get_margin() { }
+	public GUIStyleState get_normal() { }
 
-public RectOffset get_padding() { }
+	public RectOffset get_margin() { }
 
-public float get_lineHeight() { }
+	public RectOffset get_padding() { }
 
-public void Draw(Rect position, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
+	public float get_lineHeight() { }
 
-public void Draw(Rect position, GUIContent content, int controlID) { }
+	public void Draw(Rect position, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
 
-public void Draw(Rect position, GUIContent content, int controlID, bool on) { }
+	public void Draw(Rect position, GUIContent content, int controlID) { }
 
-public void Draw(Rect position, GUIContent content, int controlID, bool on, bool hover) { }
+	public void Draw(Rect position, GUIContent content, int controlID, bool on) { }
 
-private void Draw(Rect position, GUIContent content, int controlId, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
+	public void Draw(Rect position, GUIContent content, int controlID, bool on, bool hover) { }
 
-public void DrawCursor(Rect position, GUIContent content, int controlID, int character) { }
+	private void Draw(Rect position, GUIContent content, int controlId, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
 
-internal void DrawWithTextSelection(Rect position, GUIContent content, bool isActive, bool hasKeyboardFocus, int firstSelectedCharacter, int lastSelectedCharacter, bool drawSelectionAsComposition, Color selectionColor) { }
+	public void DrawCursor(Rect position, GUIContent content, int controlID, int character) { }
 
-internal void DrawWithTextSelection(Rect position, GUIContent content, int controlID, int firstSelectedCharacter, int lastSelectedCharacter, bool drawSelectionAsComposition) { }
+	internal void DrawWithTextSelection(Rect position, GUIContent content, bool isActive, bool hasKeyboardFocus, int firstSelectedCharacter, int lastSelectedCharacter, bool drawSelectionAsComposition, Color selectionColor) { }
 
-public void DrawWithTextSelection(Rect position, GUIContent content, int controlID, int firstSelectedCharacter, int lastSelectedCharacter) { }
+	internal void DrawWithTextSelection(Rect position, GUIContent content, int controlID, int firstSelectedCharacter, int lastSelectedCharacter, bool drawSelectionAsComposition) { }
 
-public static GUIStyle op_Implicit(string str) { }
+	public void DrawWithTextSelection(Rect position, GUIContent content, int controlID, int firstSelectedCharacter, int lastSelectedCharacter) { }
 
-public static GUIStyle get_none() { }
+	public static GUIStyle op_Implicit(string str) { }
 
-public Vector2 GetCursorPixelPosition(Rect position, GUIContent content, int cursorStringIndex) { }
+	public static GUIStyle get_none() { }
 
-public int GetCursorStringIndex(Rect position, GUIContent content, Vector2 cursorPixelPosition) { }
+	public Vector2 GetCursorPixelPosition(Rect position, GUIContent content, int cursorStringIndex) { }
 
-public Vector2 CalcSize(GUIContent content) { }
+	public int GetCursorStringIndex(Rect position, GUIContent content, Vector2 cursorPixelPosition) { }
 
-internal Vector2 CalcSizeWithConstraints(GUIContent content, Vector2 constraints) { }
+	public Vector2 CalcSize(GUIContent content) { }
 
-public float CalcHeight(GUIContent content, float width) { }
+	internal Vector2 CalcSizeWithConstraints(GUIContent content, Vector2 constraints) { }
 
-public bool get_isHeightDependantOnWidth() { }
+	public float CalcHeight(GUIContent content, float width) { }
 
-public void CalcMinMaxWidth(GUIContent content, out float minWidth, out float maxWidth) { }
+	public bool get_isHeightDependantOnWidth() { }
 
-public override string ToString() { }
+	public void CalcMinMaxWidth(GUIContent content, out float minWidth, out float maxWidth) { }
 
-private static void .cctor() { }
+	public override string ToString() { }
 
-private void get_contentOffset_Injected(out Vector2 ret) { }
+	private static void .cctor() { }
 
-private void set_contentOffset_Injected(ref Vector2 value) { }
+	private void get_contentOffset_Injected(out Vector2 ret) { }
 
-private void set_Internal_clipOffset_Injected(ref Vector2 value) { }
+	private void set_contentOffset_Injected(ref Vector2 value) { }
 
-private void Internal_Draw_Injected(ref Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
+	private void set_Internal_clipOffset_Injected(ref Vector2 value) { }
 
-private void Internal_Draw2_Injected(ref Rect position, GUIContent content, int controlID, bool on) { }
+	private void Internal_Draw_Injected(ref Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus) { }
 
-private void Internal_DrawCursor_Injected(ref Rect position, GUIContent content, int pos, ref Color cursorColor) { }
+	private void Internal_Draw2_Injected(ref Rect position, GUIContent content, int controlID, bool on) { }
 
-private void Internal_DrawWithTextSelection_Injected(ref Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus, bool drawSelectionAsComposition, int cursorFirst, int cursorLast, ref Color cursorColor, ref Color selectionColor) { }
+	private void Internal_DrawCursor_Injected(ref Rect position, GUIContent content, int pos, ref Color cursorColor) { }
 
-private void Internal_GetCursorPixelPosition_Injected(ref Rect position, GUIContent content, int cursorStringIndex, out Vector2 ret) { }
+	private void Internal_DrawWithTextSelection_Injected(ref Rect screenRect, GUIContent content, bool isHover, bool isActive, bool on, bool hasKeyboardFocus, bool drawSelectionAsComposition, int cursorFirst, int cursorLast, ref Color cursorColor, ref Color selectionColor) { }
 
-private int Internal_GetCursorStringIndex_Injected(ref Rect position, GUIContent content, ref Vector2 cursorPixelPosition) { }
+	private void Internal_GetCursorPixelPosition_Injected(ref Rect position, GUIContent content, int cursorStringIndex, out Vector2 ret) { }
 
-private string Internal_GetSelectedRenderedText_Injected(ref Rect localPosition, GUIContent mContent, int selectIndex, int cursorIndex) { }
+	private int Internal_GetCursorStringIndex_Injected(ref Rect position, GUIContent content, ref Vector2 cursorPixelPosition) { }
 
-private void Internal_CalcSize_Injected(GUIContent content, out Vector2 ret) { }
+	private string Internal_GetSelectedRenderedText_Injected(ref Rect localPosition, GUIContent mContent, int selectIndex, int cursorIndex) { }
 
-private void Internal_CalcSizeWithConstraints_Injected(GUIContent content, ref Vector2 maxSize, out Vector2 ret) { }
+	private void Internal_CalcSize_Injected(GUIContent content, out Vector2 ret) { }
 
-private void Internal_CalcMinMaxWidth_Injected(GUIContent content, out Vector2 ret) { }
+	private void Internal_CalcSizeWithConstraints_Injected(GUIContent content, ref Vector2 maxSize, out Vector2 ret) { }
 
-private static void SetMouseTooltip_Injected(string tooltip, ref Rect screenRect) { }
+	private void Internal_CalcMinMaxWidth_Injected(GUIContent content, out Vector2 ret) { }
+
+	private static void SetMouseTooltip_Injected(string tooltip, ref Rect screenRect) { }
 
 }
 

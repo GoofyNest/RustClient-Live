@@ -6,13 +6,13 @@ public class SkeletonProperties : ScriptableObject // TypeDefIndex: 9981
 	private Dictionary<uint, SkeletonProperties.BoneProperty> quickLookup; 
 
 
-public void OnValidate() { }
+	public void OnValidate() { }
 
-private void BuildDictionary() { }
+	private void BuildDictionary() { }
 
-public SkeletonProperties.BoneProperty FindBone(uint id) { }
+	public SkeletonProperties.BoneProperty FindBone(uint id) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -23,7 +23,7 @@ public class SkeletonProperties.BoneProperty // TypeDefIndex: 9982
 	public HitArea area; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -32,9 +32,9 @@ private sealed class SkeletonProperties.<>c__DisplayClass3_0 // TypeDefIndex: 99
 	public Transform child; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnValidate>b__0(SkeletonProperties.BoneProperty x) { }
+	internal bool <OnValidate>b__0(SkeletonProperties.BoneProperty x) { }
 
 }
 

@@ -10,13 +10,13 @@ public class PlayingCardsViewmodel : MonoBehaviour // TypeDefIndex: 9583
 	private Sprite blankCard; 
 
 
-protected void Start() { }
+	protected void Start() { }
 
-public bool PopulateCards(List<PlayingCard> cards) { }
+	public bool PopulateCards(List<PlayingCard> cards) { }
 
-private bool SetSprite(Image image, Sprite sprite) { }
+	private bool SetSprite(Image image, Sprite sprite) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

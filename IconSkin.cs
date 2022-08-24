@@ -8,26 +8,26 @@ public class IconSkin : MonoBehaviour, IItemIconChanged, IClientComponent // Typ
 	[CompilerGeneratedAttribute] 
 	private string <searchString>k__BackingField; 
 
-public string searchString { get; set; }
+	public string searchString { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_searchString() { }
+	public string get_searchString() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_searchString(string value) { }
+	private void set_searchString(string value) { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-public void OnItemIconChanged() { }
+	public void OnItemIconChanged() { }
 
-internal void Setup(ItemDefinition item, int skinid, string text, bool canUse) { }
+	internal void Setup(ItemDefinition item, int skinid, string text, bool canUse) { }
 
-public void Select() { }
+	public void Select() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

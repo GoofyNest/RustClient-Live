@@ -4,14 +4,14 @@ public class ConversationData : ScriptableObject // TypeDefIndex: 8840
 	public Translate.Phrase providerNameTranslated; 
 	public ConversationData.SpeechNode[] speeches; 
 
-public string providerName { get; }
+	public string providerName { get; }
 
 
-public string get_providerName() { }
+	public string get_providerName() { }
 
-public int GetSpeechNodeIndex(string speechShortName) { }
+	public int GetSpeechNodeIndex(string speechShortName) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -23,22 +23,22 @@ public class ConversationData.ConversationCondition // TypeDefIndex: 8841
 	public string failedSpeechNode; 
 
 
-public bool Passes(BasePlayer player, IConversationProvider provider) { }
+	public bool Passes(BasePlayer player, IConversationProvider provider) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ConversationData.ConversationCondition.ConditionType // TypeDefIndex: 8842
 {
 	public int value__; 
-public const ConversationData.ConversationCondition.ConditionType NONE = 0;
-public const ConversationData.ConversationCondition.ConditionType HASHEALTH = 1;
-public const ConversationData.ConversationCondition.ConditionType HASSCRAP = 2;
-public const ConversationData.ConversationCondition.ConditionType PROVIDERBUSY = 3;
-public const ConversationData.ConversationCondition.ConditionType MISSIONCOMPLETE = 4;
-public const ConversationData.ConversationCondition.ConditionType MISSIONATTEMPTED = 5;
-public const ConversationData.ConversationCondition.ConditionType CANACCEPT = 6;
+	public const ConversationData.ConversationCondition.ConditionType NONE = 0;
+	public const ConversationData.ConversationCondition.ConditionType HASHEALTH = 1;
+	public const ConversationData.ConversationCondition.ConditionType HASSCRAP = 2;
+	public const ConversationData.ConversationCondition.ConditionType PROVIDERBUSY = 3;
+	public const ConversationData.ConversationCondition.ConditionType MISSIONCOMPLETE = 4;
+	public const ConversationData.ConversationCondition.ConditionType MISSIONATTEMPTED = 5;
+	public const ConversationData.ConversationCondition.ConditionType CANACCEPT = 6;
 
 }
 
@@ -49,16 +49,16 @@ public class ConversationData.ResponseNode // TypeDefIndex: 8843
 	public string actionString; 
 	public string resultingSpeechNode; 
 
-public string responseText { get; }
+	public string responseText { get; }
 
 
-public string get_responseText() { }
+	public string get_responseText() { }
 
-public bool PassesConditions(BasePlayer player, IConversationProvider provider) { }
+	public bool PassesConditions(BasePlayer player, IConversationProvider provider) { }
 
-public string GetFailedSpeechNode(BasePlayer player, IConversationProvider provider) { }
+	public string GetFailedSpeechNode(BasePlayer player, IConversationProvider provider) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -69,12 +69,12 @@ public class ConversationData.SpeechNode // TypeDefIndex: 8844
 	public ConversationData.ResponseNode[] responses; 
 	public Vector2 nodePosition; 
 
-public string statement { get; }
+	public string statement { get; }
 
 
-public string get_statement() { }
+	public string get_statement() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -8,35 +8,35 @@ public struct OSPlatform : IEquatable<OSPlatform> // TypeDefIndex: 1319
 	[CompilerGeneratedAttribute] 
 	private static readonly OSPlatform <Windows>k__BackingField; 
 
-public static OSPlatform Linux { get; }
-public static OSPlatform OSX { get; }
-public static OSPlatform Windows { get; }
+	public static OSPlatform Linux { get; }
+	public static OSPlatform OSX { get; }
+	public static OSPlatform Windows { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static OSPlatform get_Linux() { }
+	public static OSPlatform get_Linux() { }
 
 	[CompilerGeneratedAttribute] 
-public static OSPlatform get_OSX() { }
+	public static OSPlatform get_OSX() { }
 
 	[CompilerGeneratedAttribute] 
-public static OSPlatform get_Windows() { }
+	public static OSPlatform get_Windows() { }
 
-private void .ctor(string osPlatform) { }
+	private void .ctor(string osPlatform) { }
 
-public bool Equals(OSPlatform other) { }
+	public bool Equals(OSPlatform other) { }
 
-internal bool Equals(string other) { }
+	internal bool Equals(string other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-public static bool op_Equality(OSPlatform left, OSPlatform right) { }
+	public static bool op_Equality(OSPlatform left, OSPlatform right) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

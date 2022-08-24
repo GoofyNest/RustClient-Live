@@ -12,36 +12,36 @@ public class CCTV_RC : PoweredRemoteControlEntity // TypeDefIndex: 8372
 	private float pitchAmount; 
 	private float yawAmount; 
 	public bool hasPTZ; 
-public const BaseEntity.Flags Flag_HasViewer = 2048;
+	public const BaseEntity.Flags Flag_HasViewer = 2048;
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public void UpdateRotation(float delta) { }
+	public void UpdateRotation(float delta) { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void Update() { }
+	public void Update() { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_SetDir(BasePlayer player) { }
+	public void Menu_SetDir(BasePlayer player) { }
 
-public bool Menu_SetDir_ShowIf(BasePlayer player) { }
+	public bool Menu_SetDir_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

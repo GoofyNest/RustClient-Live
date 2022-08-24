@@ -4,15 +4,15 @@ public class ObjectMotionVectorFix : MonoBehaviour // TypeDefIndex: 10687
 	private static Queue<Renderer> restoreQueue; 
 
 
-private void OnBecameVisible() { }
+	private void OnBecameVisible() { }
 
-public static void DisableObjectMotionVectors(LODGroup lodGroup) { }
+	public static void DisableObjectMotionVectors(LODGroup lodGroup) { }
 
-public static void RestoreObjectMotionVectors() { }
+	public static void RestoreObjectMotionVectors() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

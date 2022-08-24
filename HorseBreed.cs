@@ -9,7 +9,7 @@ public class HorseBreed : ScriptableObject // TypeDefIndex: 8960
 	public float maxStamina; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

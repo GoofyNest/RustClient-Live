@@ -4,17 +4,17 @@ internal static class NclUtilities // TypeDefIndex: 2887
 	private static object _LocalAddressesLock; 
 	internal static string _LocalDomainName; 
 
-internal static IPAddress[] LocalAddresses { get; }
-private static object LocalAddressesLock { get; }
+	internal static IPAddress[] LocalAddresses { get; }
+	private static object LocalAddressesLock { get; }
 
 
-internal static bool IsAddressLocal(IPAddress ipAddress) { }
+	internal static bool IsAddressLocal(IPAddress ipAddress) { }
 
-private static IPHostEntry GetLocalHost() { }
+	private static IPHostEntry GetLocalHost() { }
 
-internal static IPAddress[] get_LocalAddresses() { }
+	internal static IPAddress[] get_LocalAddresses() { }
 
-private static object get_LocalAddressesLock() { }
+	private static object get_LocalAddressesLock() { }
 
 }
 

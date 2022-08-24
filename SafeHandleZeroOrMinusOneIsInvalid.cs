@@ -1,12 +1,12 @@
 public abstract class SafeHandleZeroOrMinusOneIsInvalid : SafeHandle // TypeDefIndex: 117
 {
-public override bool IsInvalid { get; }
+	public override bool IsInvalid { get; }
 
 
 	[ReliabilityContractAttribute] 
-protected void .ctor(bool ownsHandle) { }
+	protected void .ctor(bool ownsHandle) { }
 
-public override bool get_IsInvalid() { }
+	public override bool get_IsInvalid() { }
 
 }
 

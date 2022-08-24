@@ -9,57 +9,57 @@ public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 	public bool scaleWithServerPopulation; 
 
 
-public static void ResetToPool(PuzzleReset instance) { }
+	public static void ResetToPool(PuzzleReset instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(PuzzleReset instance) { }
+	public void CopyTo(PuzzleReset instance) { }
 
-public PuzzleReset Copy() { }
+	public PuzzleReset Copy() { }
 
-public static PuzzleReset Deserialize(Stream stream) { }
+	public static PuzzleReset Deserialize(Stream stream) { }
 
-public static PuzzleReset DeserializeLengthDelimited(Stream stream) { }
+	public static PuzzleReset DeserializeLengthDelimited(Stream stream) { }
 
-public static PuzzleReset DeserializeLength(Stream stream, int length) { }
+	public static PuzzleReset DeserializeLength(Stream stream, int length) { }
 
-public static PuzzleReset Deserialize(byte[] buffer) { }
+	public static PuzzleReset Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, PuzzleReset previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, PuzzleReset previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static PuzzleReset Deserialize(byte[] buffer, PuzzleReset instance, bool isDelta = False) { }
+	public static PuzzleReset Deserialize(byte[] buffer, PuzzleReset instance, bool isDelta = False) { }
 
-public static PuzzleReset Deserialize(Stream stream, PuzzleReset instance, bool isDelta) { }
+	public static PuzzleReset Deserialize(Stream stream, PuzzleReset instance, bool isDelta) { }
 
-public static PuzzleReset DeserializeLengthDelimited(Stream stream, PuzzleReset instance, bool isDelta) { }
+	public static PuzzleReset DeserializeLengthDelimited(Stream stream, PuzzleReset instance, bool isDelta) { }
 
-public static PuzzleReset DeserializeLength(Stream stream, int length, PuzzleReset instance, bool isDelta) { }
+	public static PuzzleReset DeserializeLength(Stream stream, int length, PuzzleReset instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, PuzzleReset instance, PuzzleReset previous) { }
+	public static void SerializeDelta(Stream stream, PuzzleReset instance, PuzzleReset previous) { }
 
-public static void Serialize(Stream stream, PuzzleReset instance) { }
+	public static void Serialize(Stream stream, PuzzleReset instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(PuzzleReset instance) { }
+	public static byte[] SerializeToBytes(PuzzleReset instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, PuzzleReset instance) { }
+	public static void SerializeLengthDelimited(Stream stream, PuzzleReset instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -79,7 +79,7 @@ public class PuzzleReset : FacepunchBehaviour // TypeDefIndex: 9810
 	public Vector3[] resetPositions; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

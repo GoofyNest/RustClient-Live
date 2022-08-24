@@ -16,56 +16,56 @@ public class WaterInteraction : MonoBehaviour // TypeDefIndex: 10615
 	private float <Rotation>k__BackingField; 
 	private Transform cachedTransform; 
 
-public Texture2D Texture { get; set; }
-public WaterDynamics.Image Image { get; set; }
-public Vector2 Position { get; set; }
-public Vector2 Scale { get; set; }
-public float Rotation { get; set; }
+	public Texture2D Texture { get; set; }
+	public WaterDynamics.Image Image { get; set; }
+	public Vector2 Position { get; set; }
+	public Vector2 Scale { get; set; }
+	public float Rotation { get; set; }
 
 
-public Texture2D get_Texture() { }
+	public Texture2D get_Texture() { }
 
-public void set_Texture(Texture2D value) { }
-
-	[CompilerGeneratedAttribute] 
-public WaterDynamics.Image get_Image() { }
+	public void set_Texture(Texture2D value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Image(WaterDynamics.Image value) { }
+	public WaterDynamics.Image get_Image() { }
 
 	[CompilerGeneratedAttribute] 
-public Vector2 get_Position() { }
+	private void set_Image(WaterDynamics.Image value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Position(Vector2 value) { }
+	public Vector2 get_Position() { }
 
 	[CompilerGeneratedAttribute] 
-public Vector2 get_Scale() { }
+	private void set_Position(Vector2 value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Scale(Vector2 value) { }
+	public Vector2 get_Scale() { }
 
 	[CompilerGeneratedAttribute] 
-public float get_Rotation() { }
+	private void set_Scale(Vector2 value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Rotation(float value) { }
+	public float get_Rotation() { }
 
-protected void OnEnable() { }
+	[CompilerGeneratedAttribute] 
+	private void set_Rotation(float value) { }
 
-protected void OnDisable() { }
+	protected void OnEnable() { }
 
-public void CheckRegister() { }
+	protected void OnDisable() { }
 
-private void UpdateImage() { }
+	public void CheckRegister() { }
 
-private void Register() { }
+	private void UpdateImage() { }
 
-private void Unregister() { }
+	private void Register() { }
 
-public void UpdateTransform() { }
+	private void Unregister() { }
 
-public void .ctor() { }
+	public void UpdateTransform() { }
+
+	public void .ctor() { }
 
 }
 

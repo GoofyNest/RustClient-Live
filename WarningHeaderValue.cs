@@ -9,51 +9,51 @@ public class WarningHeaderValue : ICloneable // TypeDefIndex: 5811
 	[CompilerGeneratedAttribute] 
 	private string <Text>k__BackingField; 
 
-public string Agent { get; set; }
-public int Code { get; set; }
-public Nullable<DateTimeOffset> Date { get; set; }
-public string Text { get; set; }
+	public string Agent { get; set; }
+	public int Code { get; set; }
+	public Nullable<DateTimeOffset> Date { get; set; }
+	public string Text { get; set; }
 
 
-private void .ctor() { }
-
-	[CompilerGeneratedAttribute] 
-public string get_Agent() { }
+	private void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Agent(string value) { }
+	public string get_Agent() { }
 
 	[CompilerGeneratedAttribute] 
-public int get_Code() { }
+	private void set_Agent(string value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Code(int value) { }
+	public int get_Code() { }
 
 	[CompilerGeneratedAttribute] 
-public Nullable<DateTimeOffset> get_Date() { }
+	private void set_Code(int value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Date(Nullable<DateTimeOffset> value) { }
+	public Nullable<DateTimeOffset> get_Date() { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Text() { }
+	private void set_Date(Nullable<DateTimeOffset> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Text(string value) { }
+	public string get_Text() { }
 
-private static bool IsCodeValid(int code) { }
+	[CompilerGeneratedAttribute] 
+	private void set_Text(string value) { }
 
-private object System.ICloneable.Clone() { }
+	private static bool IsCodeValid(int code) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-internal static bool TryParse(string input, int minimalCount, out List<WarningHeaderValue> result) { }
+	public override int GetHashCode() { }
 
-private static bool TryParseElement(Lexer lexer, out WarningHeaderValue parsedValue, out Token t) { }
+	internal static bool TryParse(string input, int minimalCount, out List<WarningHeaderValue> result) { }
 
-public override string ToString() { }
+	private static bool TryParseElement(Lexer lexer, out WarningHeaderValue parsedValue, out Token t) { }
+
+	public override string ToString() { }
 
 }
 

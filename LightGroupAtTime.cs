@@ -33,32 +33,32 @@ public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 9196
 	private IOEntity cachedPowerEnt; 
 
 
-private void Clear() { }
+	private void Clear() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public virtual float GetIntensity() { }
+	public virtual float GetIntensity() { }
 
-public virtual float GetPowerScale() { }
+	public virtual float GetPowerScale() { }
 
-private void UpdateLights() { }
+	private void UpdateLights() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
 public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 9197
 {
 
-protected override void RunJob(LightGroupAtTime entity) { }
+	protected override void RunJob(LightGroupAtTime entity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -10,23 +10,23 @@ public class SmokeGrenade : TimedExplosive // TypeDefIndex: 9607
 	public float fieldMax; 
 
 
-public override void DestroyShared() { }
+	public override void DestroyShared() { }
 
-public void EnsureSmokeEffectEnabled() { }
+	public void EnsureSmokeEffectEnabled() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void CheckFuse() { }
+	public void CheckFuse() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

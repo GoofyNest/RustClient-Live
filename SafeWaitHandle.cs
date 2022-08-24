@@ -2,9 +2,9 @@ public sealed class SafeWaitHandle : SafeHandleZeroOrMinusOneIsInvalid // TypeDe
 {
 
 	[ReliabilityContractAttribute] 
-public void .ctor(IntPtr existingHandle, bool ownsHandle) { }
+	public void .ctor(IntPtr existingHandle, bool ownsHandle) { }
 
-protected override bool ReleaseHandle() { }
+	protected override bool ReleaseHandle() { }
 
 }
 

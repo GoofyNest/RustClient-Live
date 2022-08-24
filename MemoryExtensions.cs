@@ -4,17 +4,17 @@ public static class MemoryExtensions // TypeDefIndex: 6728
 
 
 	[ExtensionAttribute] 
-public static void Reverse<T>(Span<T> span) { }
-/* GenericInstMethod :
-|
-|-MemoryExtensions.Reverse<byte>
-|
-|-MemoryExtensions.Reverse<object>
-*/
+	public static void Reverse<T>(Span<T> span) { }
+	/* GenericInstMethod :
+	|
+	|-MemoryExtensions.Reverse<byte>
+	|
+	|-MemoryExtensions.Reverse<object>
+	*/
 
-private static IntPtr MeasureStringAdjustment() { }
+	private static IntPtr MeasureStringAdjustment() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

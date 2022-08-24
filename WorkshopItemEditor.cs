@@ -26,139 +26,139 @@ public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // Type
 	public GameObject item_position_b; 
 	private static readonly Regex ModelCleanup; 
 
-internal GameObject Prefab { get; set; }
-internal GameObject ViewModel { get; set; }
-internal Skinnable Skinnable { get; set; }
-internal Skin Skin { get; set; }
-internal ulong ItemId { get; set; }
-protected WorkshopInterface Interface { get; }
-internal Publisher Publisher { get; }
-public FileDialog FileDialog { get; }
-public string ItemTitle { get; set; }
-public string ChangeLog { get; set; }
+	internal GameObject Prefab { get; set; }
+	internal GameObject ViewModel { get; set; }
+	internal Skinnable Skinnable { get; set; }
+	internal Skin Skin { get; set; }
+	internal ulong ItemId { get; set; }
+	protected WorkshopInterface Interface { get; }
+	internal Publisher Publisher { get; }
+	public FileDialog FileDialog { get; }
+	public string ItemTitle { get; set; }
+	public string ChangeLog { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-internal GameObject get_Prefab() { }
+	internal GameObject get_Prefab() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Prefab(GameObject value) { }
+	internal void set_Prefab(GameObject value) { }
 
 	[CompilerGeneratedAttribute] 
-internal GameObject get_ViewModel() { }
+	internal GameObject get_ViewModel() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_ViewModel(GameObject value) { }
+	internal void set_ViewModel(GameObject value) { }
 
 	[CompilerGeneratedAttribute] 
-internal Skinnable get_Skinnable() { }
+	internal Skinnable get_Skinnable() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Skinnable(Skinnable value) { }
+	internal void set_Skinnable(Skinnable value) { }
 
 	[CompilerGeneratedAttribute] 
-internal Skin get_Skin() { }
+	internal Skin get_Skin() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_Skin(Skin value) { }
+	internal void set_Skin(Skin value) { }
 
 	[CompilerGeneratedAttribute] 
-internal ulong get_ItemId() { }
+	internal ulong get_ItemId() { }
 
 	[CompilerGeneratedAttribute] 
-internal void set_ItemId(ulong value) { }
+	internal void set_ItemId(ulong value) { }
 
-protected WorkshopInterface get_Interface() { }
+	protected WorkshopInterface get_Interface() { }
 
-internal static void Loading(bool v1, string v2, string v3, float v4) { }
+	internal static void Loading(bool v1, string v2, string v3, float v4) { }
 
-internal Publisher get_Publisher() { }
+	internal Publisher get_Publisher() { }
 
-public FileDialog get_FileDialog() { }
+	public FileDialog get_FileDialog() { }
 
-public string get_ItemTitle() { }
+	public string get_ItemTitle() { }
 
-public void set_ItemTitle(string value) { }
+	public void set_ItemTitle(string value) { }
 
-public string get_ChangeLog() { }
+	public string get_ChangeLog() { }
 
-public void set_ChangeLog(string value) { }
+	public void set_ChangeLog(string value) { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void ClearEditor() { }
+	private void ClearEditor() { }
 
-public void StartNewItem(string type = "TShirt") { }
+	public void StartNewItem(string type = "TShirt") { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator StartViewingItem(IWorkshopContent item) { }
+	public IEnumerator StartViewingItem(IWorkshopContent item) { }
 
 	[IteratorStateMachineAttribute] 
-public IEnumerator StartEditingItem(IWorkshopContent item) { }
+	public IEnumerator StartEditingItem(IWorkshopContent item) { }
 
-private void HideEditor() { }
+	private void HideEditor() { }
 
-private void ShowEditor() { }
-
-	[IteratorStateMachineAttribute] 
-internal IEnumerator OpenItem(IWorkshopContent item) { }
-
-private void OnImportFinished() { }
-
-internal Texture2D SetTexture(string paramName, string fullName, bool isNormalMap) { }
-
-internal void SetFloat(string paramName, float value) { }
-
-internal void SetColor(string paramName, Color val) { }
-
-internal void SetTexture(string paramName, Texture tex) { }
-
-private bool LoadItemType(IEnumerable<string> tags) { }
-
-private bool LoadItemType(string v) { }
-
-private GameObject LoadForPreview(string entityPrefabName, bool preprocess = True) { }
-
-public void OnChangedItemType(int type) { }
-
-private void UpdateMaterialRows() { }
-
-private void UpdateMaterialTabs() { }
-
-private void InitScene() { }
-
-private void InitPlayerPreview(ulong playerid, bool focus) { }
-
-public void RandomizePlayerPreview() { }
-
-public void DownloadModel() { }
-
-public static bool IsLesserLOD(string name) { }
-
-public static void RemoveLODs(GameObject prefab) { }
-
-private static void RemoveComponents<T>(GameObject prefab) { }
-/* GenericInstMethod :
-|
-|-WorkshopItemEditor.RemoveComponents<object>
-|-WorkshopItemEditor.RemoveComponents<Rigidbody>
-*/
+	private void ShowEditor() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator DoDownloadModel() { }
+	internal IEnumerator OpenItem(IWorkshopContent item) { }
 
-private void Update() { }
+	private void OnImportFinished() { }
 
-private void LateUpdate() { }
+	internal Texture2D SetTexture(string paramName, string fullName, bool isNormalMap) { }
 
-public void SwitchMaterial(int i) { }
+	internal void SetFloat(string paramName, float value) { }
 
-public void .ctor() { }
+	internal void SetColor(string paramName, Color val) { }
 
-private static void .cctor() { }
+	internal void SetTexture(string paramName, Texture tex) { }
+
+	private bool LoadItemType(IEnumerable<string> tags) { }
+
+	private bool LoadItemType(string v) { }
+
+	private GameObject LoadForPreview(string entityPrefabName, bool preprocess = True) { }
+
+	public void OnChangedItemType(int type) { }
+
+	private void UpdateMaterialRows() { }
+
+	private void UpdateMaterialTabs() { }
+
+	private void InitScene() { }
+
+	private void InitPlayerPreview(ulong playerid, bool focus) { }
+
+	public void RandomizePlayerPreview() { }
+
+	public void DownloadModel() { }
+
+	public static bool IsLesserLOD(string name) { }
+
+	public static void RemoveLODs(GameObject prefab) { }
+
+	private static void RemoveComponents<T>(GameObject prefab) { }
+	/* GenericInstMethod :
+	|
+	|-WorkshopItemEditor.RemoveComponents<object>
+	|-WorkshopItemEditor.RemoveComponents<Rigidbody>
+	*/
+
+	[IteratorStateMachineAttribute] 
+	private IEnumerator DoDownloadModel() { }
+
+	private void Update() { }
+
+	private void LateUpdate() { }
+
+	public void SwitchMaterial(int i) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <LoadItemType>b__61_0(Dropdown.OptionData x) { }
+	private bool <LoadItemType>b__61_0(Dropdown.OptionData x) { }
 
 }
 
@@ -170,15 +170,15 @@ private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7751
 	public static Func<string, string> <>9__47_2; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <OnEnable>b__47_0(Skinnable x) { }
+	internal bool <OnEnable>b__47_0(Skinnable x) { }
 
-internal string <OnEnable>b__47_1(Skinnable x) { }
+	internal string <OnEnable>b__47_1(Skinnable x) { }
 
-internal string <OnEnable>b__47_2(string x) { }
+	internal string <OnEnable>b__47_2(string x) { }
 
 }
 
@@ -189,26 +189,26 @@ private sealed class WorkshopItemEditor.<StartViewingItem>d__50 : IEnumerator<ob
 	public WorkshopItemEditor <>4__this; 
 	public IWorkshopContent item; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -219,26 +219,26 @@ private sealed class WorkshopItemEditor.<StartEditingItem>d__51 : IEnumerator<ob
 	public WorkshopItemEditor <>4__this; 
 	public IWorkshopContent item; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -250,26 +250,26 @@ private sealed class WorkshopItemEditor.<OpenItem>d__54 : IEnumerator<object>, I
 	public IWorkshopContent item; 
 	private Task<IPlayerInfo> <t>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -279,26 +279,26 @@ private sealed class WorkshopItemEditor.<DoDownloadModel>d__74 : IEnumerator<obj
 	private object <>2__current; 
 	public WorkshopItemEditor <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

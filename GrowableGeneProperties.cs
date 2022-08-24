@@ -4,7 +4,7 @@ public class GrowableGeneProperties : ScriptableObject // TypeDefIndex: 9542
 	public GrowableGeneProperties.GeneWeight[] Weights; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

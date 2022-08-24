@@ -7,46 +7,46 @@ public sealed class Font : Object // TypeDefIndex: 3959
 	[CompilerGeneratedAttribute] 
 	private Font.FontTextureRebuildCallback m_FontTextureRebuildCallback; 
 
-public Material material { get; }
-public bool dynamic { get; }
-public int fontSize { get; }
+	public Material material { get; }
+	public bool dynamic { get; }
+	public int fontSize { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public static void add_textureRebuilt(Action<Font> value) { }
+	public static void add_textureRebuilt(Action<Font> value) { }
 
 	[CompilerGeneratedAttribute] 
-public static void remove_textureRebuilt(Action<Font> value) { }
+	public static void remove_textureRebuilt(Action<Font> value) { }
 
-public Material get_material() { }
+	public Material get_material() { }
 
-public bool get_dynamic() { }
+	public bool get_dynamic() { }
 
-public int get_fontSize() { }
+	public int get_fontSize() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[RequiredByNativeCodeAttribute] 
-internal static void InvokeTextureRebuilt_Internal(Font font) { }
+	internal static void InvokeTextureRebuilt_Internal(Font font) { }
 
-public bool HasCharacter(char c) { }
+	public bool HasCharacter(char c) { }
 
-private bool HasCharacter(int c) { }
+	private bool HasCharacter(int c) { }
 
-private static void Internal_CreateFont(Font self, string name) { }
+	private static void Internal_CreateFont(Font self, string name) { }
 
 }
 
 public sealed class Font.FontTextureRebuildCallback : MulticastDelegate // TypeDefIndex: 3960
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke() { }
+	public virtual void Invoke() { }
 
-public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

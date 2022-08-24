@@ -5,7 +5,7 @@ public class RemoveChildObjectsAlongPath : MonoBehaviour, IEditorComponent // Ty
 	public float Distance; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -13,21 +13,21 @@ public class CH47FlightTest : MonoBehaviour // TypeDefIndex: 8854
 	private static float altitudeTolerance; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public CH47FlightTest.HelicopterInputState_t GetHelicopterInputState() { }
+	public CH47FlightTest.HelicopterInputState_t GetHelicopterInputState() { }
 
-public CH47FlightTest.HelicopterInputState_t GetAIInputState() { }
+	public CH47FlightTest.HelicopterInputState_t GetAIInputState() { }
 
-public float GetIdealAltitude() { }
+	public float GetIdealAltitude() { }
 
-public void FixedUpdate() { }
+	public void FixedUpdate() { }
 
-public void OnDrawGizmos() { }
+	public void OnDrawGizmos() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

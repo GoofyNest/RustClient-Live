@@ -9,57 +9,57 @@ public class Modifier : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
 	public float duration; 
 
 
-public static void ResetToPool(Modifier instance) { }
+	public static void ResetToPool(Modifier instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Modifier instance) { }
+	public void CopyTo(Modifier instance) { }
 
-public Modifier Copy() { }
+	public Modifier Copy() { }
 
-public static Modifier Deserialize(Stream stream) { }
+	public static Modifier Deserialize(Stream stream) { }
 
-public static Modifier DeserializeLengthDelimited(Stream stream) { }
+	public static Modifier DeserializeLengthDelimited(Stream stream) { }
 
-public static Modifier DeserializeLength(Stream stream, int length) { }
+	public static Modifier DeserializeLength(Stream stream, int length) { }
 
-public static Modifier Deserialize(byte[] buffer) { }
+	public static Modifier Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Modifier previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Modifier previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Modifier Deserialize(byte[] buffer, Modifier instance, bool isDelta = False) { }
+	public static Modifier Deserialize(byte[] buffer, Modifier instance, bool isDelta = False) { }
 
-public static Modifier Deserialize(Stream stream, Modifier instance, bool isDelta) { }
+	public static Modifier Deserialize(Stream stream, Modifier instance, bool isDelta) { }
 
-public static Modifier DeserializeLengthDelimited(Stream stream, Modifier instance, bool isDelta) { }
+	public static Modifier DeserializeLengthDelimited(Stream stream, Modifier instance, bool isDelta) { }
 
-public static Modifier DeserializeLength(Stream stream, int length, Modifier instance, bool isDelta) { }
+	public static Modifier DeserializeLength(Stream stream, int length, Modifier instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Modifier instance, Modifier previous) { }
+	public static void SerializeDelta(Stream stream, Modifier instance, Modifier previous) { }
 
-public static void Serialize(Stream stream, Modifier instance) { }
+	public static void Serialize(Stream stream, Modifier instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Modifier instance) { }
+	public static byte[] SerializeToBytes(Modifier instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Modifier instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Modifier instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -79,81 +79,81 @@ public class Modifier // TypeDefIndex: 9622
 	private bool <Expired>k__BackingField; 
 	private float lastClientUpdateTimestamp; 
 
-public Modifier.ModifierType Type { get; set; }
-public Modifier.ModifierSource Source { get; set; }
-public float Value { get; set; }
-public float Duration { get; set; }
-public float TimeRemaining { get; set; }
-public bool Expired { get; set; }
-public float ClientEstimatedTimeRemaining { get; }
+	public Modifier.ModifierType Type { get; set; }
+	public Modifier.ModifierSource Source { get; set; }
+	public float Value { get; set; }
+	public float Duration { get; set; }
+	public float TimeRemaining { get; set; }
+	public bool Expired { get; set; }
+	public float ClientEstimatedTimeRemaining { get; }
 
 
 	[CompilerGeneratedAttribute] 
-public Modifier.ModifierType get_Type() { }
+	public Modifier.ModifierType get_Type() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Type(Modifier.ModifierType value) { }
+	private void set_Type(Modifier.ModifierType value) { }
 
 	[CompilerGeneratedAttribute] 
-public Modifier.ModifierSource get_Source() { }
+	public Modifier.ModifierSource get_Source() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Source(Modifier.ModifierSource value) { }
+	private void set_Source(Modifier.ModifierSource value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_Value() { }
+	public float get_Value() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Value(float value) { }
+	private void set_Value(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_Duration() { }
+	public float get_Duration() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Duration(float value) { }
+	private void set_Duration(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public float get_TimeRemaining() { }
+	public float get_TimeRemaining() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_TimeRemaining(float value) { }
+	private void set_TimeRemaining(float value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_Expired() { }
+	public bool get_Expired() { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Expired(bool value) { }
+	private void set_Expired(bool value) { }
 
-public float get_ClientEstimatedTimeRemaining() { }
+	public float get_ClientEstimatedTimeRemaining() { }
 
-public void Init(Modifier.ModifierType type, Modifier.ModifierSource source, float value, float duration, float remaining) { }
+	public void Init(Modifier.ModifierType type, Modifier.ModifierSource source, float value, float duration, float remaining) { }
 
-public void Tick(BaseCombatEntity ownerEntity, float delta) { }
+	public void Tick(BaseCombatEntity ownerEntity, float delta) { }
 
-public Modifier Save() { }
+	public Modifier Save() { }
 
-public void Load(Modifier m) { }
+	public void Load(Modifier m) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum Modifier.ModifierType // TypeDefIndex: 9623
 {
 	public int value__; 
-public const Modifier.ModifierType Wood_Yield = 0;
-public const Modifier.ModifierType Ore_Yield = 1;
-public const Modifier.ModifierType Radiation_Resistance = 2;
-public const Modifier.ModifierType Radiation_Exposure_Resistance = 3;
-public const Modifier.ModifierType Max_Health = 4;
-public const Modifier.ModifierType Scrap_Yield = 5;
+	public const Modifier.ModifierType Wood_Yield = 0;
+	public const Modifier.ModifierType Ore_Yield = 1;
+	public const Modifier.ModifierType Radiation_Resistance = 2;
+	public const Modifier.ModifierType Radiation_Exposure_Resistance = 3;
+	public const Modifier.ModifierType Max_Health = 4;
+	public const Modifier.ModifierType Scrap_Yield = 5;
 
 }
 
 public enum Modifier.ModifierSource // TypeDefIndex: 9624
 {
 	public int value__; 
-public const Modifier.ModifierSource Tea = 0;
+	public const Modifier.ModifierSource Tea = 0;
 
 }
 

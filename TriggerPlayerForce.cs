@@ -3,10 +3,10 @@ public class TriggerPlayerForce : TriggerBase, IServerComponent // TypeDefIndex:
 	public BoxCollider triggerCollider; 
 	public float pushVelocity; 
 	public bool requireUpAxis; 
-private const float HACK_DISABLE_TIME = 4;
+	private const float HACK_DISABLE_TIME = 4;
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,7 +5,7 @@ public class WorldPositionGenerator : ScriptableObject // TypeDefIndex: 10225
 	public bool aboveWater; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

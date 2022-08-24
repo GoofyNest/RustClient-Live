@@ -3,11 +3,11 @@ public class SubmarineOverlay : MonoBehaviour // TypeDefIndex: 9135
 	public PostProcessVolume postProcessVolume; 
 
 
-protected void Update() { }
+	protected void Update() { }
 
-private bool GetShouldEnable() { }
+	private bool GetShouldEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -21,19 +21,19 @@ public class GranularAudioClip : MonoBehaviour // TypeDefIndex: 8994
 	private bool inited; 
 
 
-private void Update() { }
+	private void Update() { }
 
-private void RefreshCachedData() { }
+	private void RefreshCachedData() { }
 
-private void InitAudioClip() { }
+	private void InitAudioClip() { }
 
-private void OnAudioRead(float[] data) { }
+	private void OnAudioRead(float[] data) { }
 
-private void SpawnGrain() { }
+	private void SpawnGrain() { }
 
-private void CleanupFinishedGrains() { }
+	private void CleanupFinishedGrains() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -53,16 +53,16 @@ public class GranularAudioClip.Grain // TypeDefIndex: 8995
 	private int releaseStartSample; 
 	private int endSample; 
 
-public bool finished { get; }
+	public bool finished { get; }
 
 
-public bool get_finished() { }
+	public bool get_finished() { }
 
-public void Init(float[] source, int start, int attack, int sustain, int release) { }
+	public void Init(float[] source, int start, int attack, int sustain, int release) { }
 
-public float GetSample() { }
+	public float GetSample() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -7,11 +7,11 @@ public struct LODParameters : IEquatable<LODParameters> // TypeDefIndex: 3848
 	private int m_CameraPixelHeight; 
 
 
-public bool Equals(LODParameters other) { }
+	public bool Equals(LODParameters other) { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

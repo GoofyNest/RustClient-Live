@@ -7,9 +7,9 @@ internal class ProviderData // TypeDefIndex: 1140
 	internal IList CustomData; 
 
 
-public void CopyFrom(ProviderData other) { }
+	public void CopyFrom(ProviderData other) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

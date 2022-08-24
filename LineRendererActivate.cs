@@ -1,9 +1,9 @@
 public class LineRendererActivate : MonoBehaviour, IClientComponent // TypeDefIndex: 8889
 {
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -3,7 +3,7 @@ public class WearableShadowLod : MonoBehaviour, IClientComponent // TypeDefIndex
 	public Renderer[] DisableShadows; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

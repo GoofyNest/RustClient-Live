@@ -15,58 +15,58 @@ public class Hero // TypeDefIndex: 6202
 	[CompilerGeneratedAttribute] 
 	private double <Chance>k__BackingField; 
 
-public string Ident { get; set; }
-public string MediaUrl { get; set; }
-public string TitleText { get; set; }
-public string ActionText { get; set; }
-public string TargetUrl { get; set; }
-public string Conditions { get; set; }
-public double Chance { get; set; }
+	public string Ident { get; set; }
+	public string MediaUrl { get; set; }
+	public string TitleText { get; set; }
+	public string ActionText { get; set; }
+	public string TargetUrl { get; set; }
+	public string Conditions { get; set; }
+	public double Chance { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_Ident() { }
+	public string get_Ident() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Ident(string value) { }
+	public void set_Ident(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_MediaUrl() { }
+	public string get_MediaUrl() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_MediaUrl(string value) { }
+	public void set_MediaUrl(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_TitleText() { }
+	public string get_TitleText() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_TitleText(string value) { }
+	public void set_TitleText(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_ActionText() { }
+	public string get_ActionText() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ActionText(string value) { }
+	public void set_ActionText(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_TargetUrl() { }
+	public string get_TargetUrl() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_TargetUrl(string value) { }
+	public void set_TargetUrl(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Conditions() { }
+	public string get_Conditions() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Conditions(string value) { }
+	public void set_Conditions(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public double get_Chance() { }
+	public double get_Chance() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Chance(double value) { }
+	public void set_Chance(double value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -83,17 +83,17 @@ public class Hero : ConsoleSystem // TypeDefIndex: 11930
 	[ClientVar] 
 	public static string url; 
 
-public static string CookieName { get; }
+	public static string CookieName { get; }
 
 
-public static string get_CookieName() { }
+	public static string get_CookieName() { }
 
 	[ClientVar] 
-public static void Show(ConsoleSystem.Arg arg) { }
+	public static void Show(ConsoleSystem.Arg arg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -111,22 +111,22 @@ public class Hero : SingletonComponent<Hero> // TypeDefIndex: 12088
 	private bool canShowHero; 
 
 
-public void Roll() { }
+	public void Roll() { }
 
 	[AsyncStateMachineAttribute] 
-public Task ShowAsync() { }
+	public Task ShowAsync() { }
 
-public void ClickHide() { }
+	public void ClickHide() { }
 
-public void MarkAsSeen() { }
+	public void MarkAsSeen() { }
 
-public void ClickEnter() { }
+	public void ClickEnter() { }
 
-public void Hide() { }
+	public void Hide() { }
 
-public void OnMenuHidden() { }
+	public void OnMenuHidden() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -136,11 +136,11 @@ private sealed class Hero.<>c // TypeDefIndex: 12089
 	public static Func<Hero, Guid> <>9__9_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal Guid <Roll>b__9_0(Hero x) { }
+	internal Guid <Roll>b__9_0(Hero x) { }
 
 }
 
@@ -154,10 +154,10 @@ private struct Hero.<ShowAsync>d__10 : IAsyncStateMachine // TypeDefIndex: 12090
 	private TaskAwaiter<string> <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

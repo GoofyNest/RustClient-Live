@@ -7,41 +7,41 @@ public class RendererGrid : SingletonComponent<RendererGrid>, IClientComponent /
 	private WorldSpaceGrid<RendererCell> grid; 
 	private Stopwatch watch; 
 
-public bool NeedsTimeout { get; }
+	public bool NeedsTimeout { get; }
 
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public static void RefreshAll() { }
+	public static void RefreshAll() { }
 
-public void Refresh() { }
+	public void Refresh() { }
 
-public RendererGroup Add(Vector3 position, RendererBatch batch) { }
+	public RendererGroup Add(Vector3 position, RendererBatch batch) { }
 
-public void Remove(RendererCell cell) { }
+	public void Remove(RendererCell cell) { }
 
-private void Init() { }
+	private void Init() { }
 
-public MeshRendererBatch CreateInstance() { }
+	public MeshRendererBatch CreateInstance() { }
 
-public void RecycleInstance(MeshRendererBatch instance) { }
+	public void RecycleInstance(MeshRendererBatch instance) { }
 
-public int MeshCount() { }
+	public int MeshCount() { }
 
-public int BatchedMeshCount() { }
+	public int BatchedMeshCount() { }
 
-public int VertexCount() { }
+	public int VertexCount() { }
 
-public bool get_NeedsTimeout() { }
+	public bool get_NeedsTimeout() { }
 
-public void ResetTimeout() { }
+	public void ResetTimeout() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator UpdateCoroutine() { }
+	private IEnumerator UpdateCoroutine() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -55,26 +55,26 @@ private sealed class RendererGrid.<UpdateCoroutine>d__20 : IEnumerator<object>, 
 	private RendererCell <cell>5__4; 
 	private IEnumerator <enumerator>5__5; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

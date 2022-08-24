@@ -15,120 +15,120 @@ public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5991
 	[CompilerGeneratedAttribute] 
 	private bool <IgnoreSerializableAttribute>k__BackingField; 
 
-internal static IContractResolver Instance { get; }
+	internal static IContractResolver Instance { get; }
 	[ObsoleteAttribute] 
-public BindingFlags DefaultMembersSearchFlags { get; set; }
-public bool SerializeCompilerGeneratedMembers { get; }
-public bool IgnoreSerializableInterface { get; }
-public bool IgnoreSerializableAttribute { get; set; }
+	public BindingFlags DefaultMembersSearchFlags { get; set; }
+	public bool SerializeCompilerGeneratedMembers { get; }
+	public bool IgnoreSerializableInterface { get; }
+	public bool IgnoreSerializableAttribute { get; set; }
 
 
-internal static IContractResolver get_Instance() { }
-
-	[CompilerGeneratedAttribute] 
-public BindingFlags get_DefaultMembersSearchFlags() { }
+	internal static IContractResolver get_Instance() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_DefaultMembersSearchFlags(BindingFlags value) { }
+	public BindingFlags get_DefaultMembersSearchFlags() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_SerializeCompilerGeneratedMembers() { }
+	public void set_DefaultMembersSearchFlags(BindingFlags value) { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IgnoreSerializableInterface() { }
+	public bool get_SerializeCompilerGeneratedMembers() { }
 
 	[CompilerGeneratedAttribute] 
-public bool get_IgnoreSerializableAttribute() { }
+	public bool get_IgnoreSerializableInterface() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_IgnoreSerializableAttribute(bool value) { }
+	public bool get_IgnoreSerializableAttribute() { }
 
-public void .ctor() { }
+	[CompilerGeneratedAttribute] 
+	public void set_IgnoreSerializableAttribute(bool value) { }
+
+	public void .ctor() { }
 
 	[ObsoleteAttribute] 
-public void .ctor(bool shareCache) { }
+	public void .ctor(bool shareCache) { }
 
-internal DefaultContractResolverState GetState() { }
+	internal DefaultContractResolverState GetState() { }
 
-public virtual JsonContract ResolveContract(Type type) { }
+	public virtual JsonContract ResolveContract(Type type) { }
 
-protected virtual List<MemberInfo> GetSerializableMembers(Type objectType) { }
+	protected virtual List<MemberInfo> GetSerializableMembers(Type objectType) { }
 
-private bool ShouldSerializeEntityMember(MemberInfo memberInfo) { }
+	private bool ShouldSerializeEntityMember(MemberInfo memberInfo) { }
 
-protected virtual JsonObjectContract CreateObjectContract(Type objectType) { }
+	protected virtual JsonObjectContract CreateObjectContract(Type objectType) { }
 
-private MemberInfo GetExtensionDataMemberForType(Type type) { }
+	private MemberInfo GetExtensionDataMemberForType(Type type) { }
 
-private static void SetExtensionDataDelegates(JsonObjectContract contract, MemberInfo member) { }
+	private static void SetExtensionDataDelegates(JsonObjectContract contract, MemberInfo member) { }
 
-private ConstructorInfo GetAttributeConstructor(Type objectType) { }
+	private ConstructorInfo GetAttributeConstructor(Type objectType) { }
 
-private ConstructorInfo GetParameterizedConstructor(Type objectType) { }
+	private ConstructorInfo GetParameterizedConstructor(Type objectType) { }
 
-protected virtual IList<JsonProperty> CreateConstructorParameters(ConstructorInfo constructor, JsonPropertyCollection memberProperties) { }
+	protected virtual IList<JsonProperty> CreateConstructorParameters(ConstructorInfo constructor, JsonPropertyCollection memberProperties) { }
 
-protected virtual JsonProperty CreatePropertyFromConstructorParameter(JsonProperty matchingMemberProperty, ParameterInfo parameterInfo) { }
+	protected virtual JsonProperty CreatePropertyFromConstructorParameter(JsonProperty matchingMemberProperty, ParameterInfo parameterInfo) { }
 
-protected virtual JsonConverter ResolveContractConverter(Type objectType) { }
+	protected virtual JsonConverter ResolveContractConverter(Type objectType) { }
 
-private Func<object> GetDefaultCreator(Type createdType) { }
+	private Func<object> GetDefaultCreator(Type createdType) { }
 
-private void InitializeContract(JsonContract contract) { }
+	private void InitializeContract(JsonContract contract) { }
 
-private void ResolveCallbackMethods(JsonContract contract, Type t) { }
+	private void ResolveCallbackMethods(JsonContract contract, Type t) { }
 
-private void GetCallbackMethodsForType(Type type, out List<SerializationCallback> onSerializing, out List<SerializationCallback> onSerialized, out List<SerializationCallback> onDeserializing, out List<SerializationCallback> onDeserialized, out List<SerializationErrorCallback> onError) { }
+	private void GetCallbackMethodsForType(Type type, out List<SerializationCallback> onSerializing, out List<SerializationCallback> onSerialized, out List<SerializationCallback> onDeserializing, out List<SerializationCallback> onDeserialized, out List<SerializationErrorCallback> onError) { }
 
-private static bool ShouldSkipDeserialized(Type t) { }
+	private static bool ShouldSkipDeserialized(Type t) { }
 
-private static bool ShouldSkipSerializing(Type t) { }
+	private static bool ShouldSkipSerializing(Type t) { }
 
-private List<Type> GetClassHierarchyForType(Type type) { }
+	private List<Type> GetClassHierarchyForType(Type type) { }
 
-protected virtual JsonDictionaryContract CreateDictionaryContract(Type objectType) { }
+	protected virtual JsonDictionaryContract CreateDictionaryContract(Type objectType) { }
 
-protected virtual JsonArrayContract CreateArrayContract(Type objectType) { }
+	protected virtual JsonArrayContract CreateArrayContract(Type objectType) { }
 
-protected virtual JsonPrimitiveContract CreatePrimitiveContract(Type objectType) { }
+	protected virtual JsonPrimitiveContract CreatePrimitiveContract(Type objectType) { }
 
-protected virtual JsonLinqContract CreateLinqContract(Type objectType) { }
+	protected virtual JsonLinqContract CreateLinqContract(Type objectType) { }
 
-protected virtual JsonISerializableContract CreateISerializableContract(Type objectType) { }
+	protected virtual JsonISerializableContract CreateISerializableContract(Type objectType) { }
 
-protected virtual JsonStringContract CreateStringContract(Type objectType) { }
+	protected virtual JsonStringContract CreateStringContract(Type objectType) { }
 
-protected virtual JsonContract CreateContract(Type objectType) { }
+	protected virtual JsonContract CreateContract(Type objectType) { }
 
-internal static bool IsJsonPrimitiveType(Type t) { }
+	internal static bool IsJsonPrimitiveType(Type t) { }
 
-internal static bool IsIConvertible(Type t) { }
+	internal static bool IsIConvertible(Type t) { }
 
-internal static bool CanConvertToString(Type type) { }
+	internal static bool CanConvertToString(Type type) { }
 
-private static bool IsValidCallback(MethodInfo method, ParameterInfo[] parameters, Type attributeType, MethodInfo currentCallback, ref Type prevAttributeType) { }
+	private static bool IsValidCallback(MethodInfo method, ParameterInfo[] parameters, Type attributeType, MethodInfo currentCallback, ref Type prevAttributeType) { }
 
-internal static string GetClrTypeFullName(Type type) { }
+	internal static string GetClrTypeFullName(Type type) { }
 
-protected virtual IList<JsonProperty> CreateProperties(Type type, MemberSerialization memberSerialization) { }
+	protected virtual IList<JsonProperty> CreateProperties(Type type, MemberSerialization memberSerialization) { }
 
-protected virtual IValueProvider CreateMemberValueProvider(MemberInfo member) { }
+	protected virtual IValueProvider CreateMemberValueProvider(MemberInfo member) { }
 
-protected virtual JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization) { }
+	protected virtual JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization) { }
 
-private void SetPropertySettingsFromAttributes(JsonProperty property, object attributeProvider, string name, Type declaringType, MemberSerialization memberSerialization, out bool allowNonPublicAccess) { }
+	private void SetPropertySettingsFromAttributes(JsonProperty property, object attributeProvider, string name, Type declaringType, MemberSerialization memberSerialization, out bool allowNonPublicAccess) { }
 
-private Predicate<object> CreateShouldSerializeTest(MemberInfo member) { }
+	private Predicate<object> CreateShouldSerializeTest(MemberInfo member) { }
 
-private void SetIsSpecifiedActions(JsonProperty property, MemberInfo member, bool allowNonPublicAccess) { }
+	private void SetIsSpecifiedActions(JsonProperty property, MemberInfo member, bool allowNonPublicAccess) { }
 
-protected virtual string ResolvePropertyName(string propertyName) { }
+	protected virtual string ResolvePropertyName(string propertyName) { }
 
-protected virtual string ResolveDictionaryKey(string dictionaryKey) { }
+	protected virtual string ResolveDictionaryKey(string dictionaryKey) { }
 
-public string GetResolvedPropertyName(string propertyName) { }
+	public string GetResolvedPropertyName(string propertyName) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -150,21 +150,21 @@ private sealed class DefaultContractResolver.<>c
 	public static Func<JsonProperty, int> <>9__60_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <GetSerializableMembers>b__30_0(MemberInfo m) { }
+	internal bool <GetSerializableMembers>b__30_0(MemberInfo m) { }
 
-internal bool <GetSerializableMembers>b__30_1(MemberInfo m) { }
+	internal bool <GetSerializableMembers>b__30_1(MemberInfo m) { }
 
-internal IEnumerable<MemberInfo> <GetExtensionDataMemberForType>b__33_0(Type baseType) { }
+	internal IEnumerable<MemberInfo> <GetExtensionDataMemberForType>b__33_0(Type baseType) { }
 
-internal bool <GetExtensionDataMemberForType>b__33_1(MemberInfo m) { }
+	internal bool <GetExtensionDataMemberForType>b__33_1(MemberInfo m) { }
 
-internal bool <GetAttributeConstructor>b__36_0(ConstructorInfo c) { }
+	internal bool <GetAttributeConstructor>b__36_0(ConstructorInfo c) { }
 
-internal int <CreateProperties>b__60_0(JsonProperty p) { }
+	internal int <CreateProperties>b__60_0(JsonProperty p) { }
 
 }
 
@@ -174,7 +174,7 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefInd
 	public MemberInfo member; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -186,9 +186,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefInd
 	public DefaultContractResolver.<>c__DisplayClass34_0 CS$<>8__locals1; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal void <SetExtensionDataDelegates>b__0(object o, string key, object value) { }
+	internal void <SetExtensionDataDelegates>b__0(object o, string key, object value) { }
 
 }
 
@@ -198,9 +198,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefInd
 	public DefaultContractResolver.<>c__DisplayClass34_0 CS$<>8__locals2; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal IEnumerable<KeyValuePair<object, object>> <SetExtensionDataDelegates>b__1(object o) { }
+	internal IEnumerable<KeyValuePair<object, object>> <SetExtensionDataDelegates>b__1(object o) { }
 
 }
 
@@ -209,9 +209,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefInd
 	public MethodCall<object, object> shouldSerializeCall; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <CreateShouldSerializeTest>b__0(object o) { }
+	internal bool <CreateShouldSerializeTest>b__0(object o) { }
 
 }
 
@@ -220,9 +220,9 @@ private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefInd
 	public Func<object, object> specifiedPropertyGet; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <SetIsSpecifiedActions>b__0(object o) { }
+	internal bool <SetIsSpecifiedActions>b__0(object o) { }
 
 }
 

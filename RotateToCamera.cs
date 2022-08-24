@@ -3,9 +3,9 @@ public class RotateToCamera : MonoBehaviour, IClientComponent // TypeDefIndex: 9
 	public float maxDistance; 
 
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

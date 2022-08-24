@@ -3,17 +3,17 @@ internal struct OverlayBrowserProtocolNavigation_t : ICallbackData // TypeDefInd
 	internal byte[] RgchURI; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-internal string RgchURIUTF8() { }
+	internal string RgchURIUTF8() { }
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

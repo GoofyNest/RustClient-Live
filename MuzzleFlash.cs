@@ -3,9 +3,9 @@ public class MuzzleFlash_Flamelet : MonoBehaviour // TypeDefIndex: 9352
 	public ParticleSystem flameletParticle; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -17,11 +17,11 @@ public class Muzzleflash_AlphaRandom : MonoBehaviour // TypeDefIndex: 9353
 	private GradientAlphaKey[] gak; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

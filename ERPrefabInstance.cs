@@ -11,9 +11,9 @@ public class ERPrefabInstance : MonoBehaviour // TypeDefIndex: 7289
 	public int sectionIndex; 
 
 
-public void Copy(ERPrefabInstance source) { }
+	public void Copy(ERPrefabInstance source) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

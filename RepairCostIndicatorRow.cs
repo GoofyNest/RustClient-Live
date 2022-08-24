@@ -9,9 +9,9 @@ public class RepairCostIndicatorRow : MonoBehaviour // TypeDefIndex: 11211
 	public Color MissingColour; 
 
 
-public void Populate(ItemDefinition def, int totalRequired, int currentAmount) { }
+	public void Populate(ItemDefinition def, int totalRequired, int currentAmount) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

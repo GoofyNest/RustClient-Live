@@ -7,15 +7,15 @@ public class PlaceMonumentsOffshore : ProceduralComponent // TypeDefIndex: 10541
 	public int DistanceBetweenMonuments; 
 	[FormerlySerializedAsAttribute] 
 	public int MinWorldSize; 
-private const int Candidates = 10;
-private const int Attempts = 10000;
+	private const int Candidates = 10;
+	private const int Attempts = 10000;
 
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-private bool CheckRadius(List<PlaceMonumentsOffshore.SpawnInfo> spawns, Vector3 pos, float radius) { }
+	private bool CheckRadius(List<PlaceMonumentsOffshore.SpawnInfo> spawns, Vector3 pos, float radius) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -34,11 +34,11 @@ private sealed class PlaceMonumentsOffshore.<>c // TypeDefIndex: 10543
 	public static Func<string, string> <>9__9_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal string <Process>b__9_0(string folder) { }
+	internal string <Process>b__9_0(string folder) { }
 
 }
 

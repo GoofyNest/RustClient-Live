@@ -8,43 +8,43 @@ public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5737
 	private long buffer_size; 
 	private TimeSpan timeout; 
 
-public long MaxResponseContentBufferSize { get; }
-public TimeSpan Timeout { set; }
+	public long MaxResponseContentBufferSize { get; }
+	public TimeSpan Timeout { set; }
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void .ctor(HttpMessageHandler handler, bool disposeHandler) { }
+	public void .ctor(HttpMessageHandler handler, bool disposeHandler) { }
 
-public long get_MaxResponseContentBufferSize() { }
+	public long get_MaxResponseContentBufferSize() { }
 
-public void set_Timeout(TimeSpan value) { }
+	public void set_Timeout(TimeSpan value) { }
 
-protected override void Dispose(bool disposing) { }
+	protected override void Dispose(bool disposing) { }
 
-public Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption) { }
+	public Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption) { }
 
-public Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content) { }
+	public Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content) { }
 
-public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request) { }
+	public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request) { }
 
-public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption) { }
+	public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption) { }
 
-public override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) { }
+	public override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) { }
 
-public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken) { }
-
-	[AsyncStateMachineAttribute] 
-private Task<HttpResponseMessage> SendAsyncWorker(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken) { }
+	public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken) { }
 
 	[AsyncStateMachineAttribute] 
-public Task<string> GetStringAsync(string requestUri) { }
+	private Task<HttpResponseMessage> SendAsyncWorker(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken) { }
 
-private static void .cctor() { }
+	[AsyncStateMachineAttribute] 
+	public Task<string> GetStringAsync(string requestUri) { }
+
+	private static void .cctor() { }
 
 	[DebuggerHiddenAttribute] 
 	[CompilerGeneratedAttribute] 
-private Task<HttpResponseMessage> <>n__0(HttpRequestMessage request, CancellationToken cancellationToken) { }
+	private Task<HttpResponseMessage> <>n__0(HttpRequestMessage request, CancellationToken cancellationToken) { }
 
 }
 
@@ -62,10 +62,10 @@ private struct HttpClient.<SendAsyncWorker>d__47 : IAsyncStateMachine // TypeDef
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -80,10 +80,10 @@ private struct HttpClient.<GetStringAsync>d__52 : IAsyncStateMachine // TypeDefI
 	private ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<string> <>u__2; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 

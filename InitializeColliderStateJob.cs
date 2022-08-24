@@ -8,7 +8,7 @@ internal struct InitializeColliderStateJob : IJobParallelForTransform // TypeDef
 	public NativeArray<ColliderState> State; 
 
 
-public void Execute(int index, TransformAccess transform) { }
+	public void Execute(int index, TransformAccess transform) { }
 
 }
 

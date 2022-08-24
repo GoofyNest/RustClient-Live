@@ -6,9 +6,9 @@ public class ContactsEntry : MonoBehaviour // TypeDefIndex: 10937
 	public RelationshipManager.PlayerRelationshipInfo info; 
 
 
-public void Setup(RelationshipManager.PlayerRelationshipInfo newInfo) { }
+	public void Setup(RelationshipManager.PlayerRelationshipInfo newInfo) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

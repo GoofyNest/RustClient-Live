@@ -7,27 +7,27 @@ public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 
 	public static bool isCrafting; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public void ClearCraftingQueue() { }
+	public void ClearCraftingQueue() { }
 
-internal static void TaskStarted(int taskid, float time) { }
+	internal static void TaskStarted(int taskid, float time) { }
 
-internal static int Count(ItemBlueprint bp) { }
+	internal static int Count(ItemBlueprint bp) { }
 
-internal static void TaskAdd(int taskid, int itemid, int amount, int skinid) { }
+	internal static void TaskAdd(int taskid, int itemid, int amount, int skinid) { }
 
-internal static void TaskFinished(int taskid, bool success, int amountleft) { }
+	internal static void TaskFinished(int taskid, bool success, int amountleft) { }
 
-internal static void TaskFastTracked(int taskid) { }
+	internal static void TaskFastTracked(int taskid) { }
 
-public void UpdateVisibility() { }
+	public void UpdateVisibility() { }
 
-public CraftingQueueIcon GetActive() { }
+	public CraftingQueueIcon GetActive() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -37,9 +37,9 @@ private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 10988
 	public Func<CraftingQueueIcon, bool> <>9__0; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <TaskStarted>b__0(CraftingQueueIcon x) { }
+	internal bool <TaskStarted>b__0(CraftingQueueIcon x) { }
 
 }
 
@@ -49,9 +49,9 @@ private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 10989
 	public Func<CraftingQueueIcon, bool> <>9__0; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <TaskFinished>b__0(CraftingQueueIcon x) { }
+	internal bool <TaskFinished>b__0(CraftingQueueIcon x) { }
 
 }
 
@@ -61,9 +61,9 @@ private sealed class CraftingQueue.<>c__DisplayClass10_0 // TypeDefIndex: 10990
 	public Func<CraftingQueueIcon, bool> <>9__0; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <TaskFastTracked>b__0(CraftingQueueIcon x) { }
+	internal bool <TaskFastTracked>b__0(CraftingQueueIcon x) { }
 
 }
 

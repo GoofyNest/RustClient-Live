@@ -6,19 +6,19 @@ public class TweakUISlider : TweakUIBase // TypeDefIndex: 11144
 	public static TimeSince timeSinceLastConVarChange; 
 
 
-protected override void Init() { }
+	protected override void Init() { }
 
-protected void OnEnable() { }
+	protected void OnEnable() { }
 
-public void OnChanged() { }
+	public void OnChanged() { }
 
-protected override void SetConvarValue() { }
+	protected override void SetConvarValue() { }
 
-public override void ResetToConvar() { }
+	public override void ResetToConvar() { }
 
-private void RefreshSliderDisplay(float value) { }
+	private void RefreshSliderDisplay(float value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

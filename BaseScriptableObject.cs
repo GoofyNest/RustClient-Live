@@ -4,17 +4,17 @@ public class BaseScriptableObject : ScriptableObject // TypeDefIndex: 11288
 	public uint FilenameStringId; 
 
 
-public string LookupFileName() { }
+	public string LookupFileName() { }
 
-public static bool op_Equality(BaseScriptableObject a, BaseScriptableObject b) { }
+	public static bool op_Equality(BaseScriptableObject a, BaseScriptableObject b) { }
 
-public static bool op_Inequality(BaseScriptableObject a, BaseScriptableObject b) { }
+	public static bool op_Inequality(BaseScriptableObject a, BaseScriptableObject b) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override bool Equals(object o) { }
+	public override bool Equals(object o) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

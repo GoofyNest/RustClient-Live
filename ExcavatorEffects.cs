@@ -9,13 +9,13 @@ public class ExcavatorEffects : MonoBehaviour // TypeDefIndex: 9628
 	public bool wasMining; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void SetMining(bool isMining, bool force = False) { }
+	public void SetMining(bool isMining, bool force = False) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

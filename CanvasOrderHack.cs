@@ -1,9 +1,9 @@
 public class CanvasOrderHack : MonoBehaviour // TypeDefIndex: 9110
 {
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

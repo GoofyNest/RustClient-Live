@@ -3,9 +3,9 @@ public class FoliageSpawn : MonoBehaviour, IClientComponent // TypeDefIndex: 987
 	public FoliagePlacement Placement; 
 
 
-protected void Awake() { }
+	protected void Awake() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

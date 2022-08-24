@@ -14,11 +14,11 @@ public class LightingOverride : MonoBehaviour // TypeDefIndex: 6634
 	public float aspect; 
 
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

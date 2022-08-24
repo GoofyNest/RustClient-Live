@@ -4,7 +4,7 @@ public class WeightedAudioClip // TypeDefIndex: 9047
 	public int weight; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

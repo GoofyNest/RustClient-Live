@@ -6,17 +6,17 @@ internal class ThreadHelper // TypeDefIndex: 800
 	internal static ContextCallback _ccb; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal void .ctor(Delegate start) { }
+	internal void .ctor(Delegate start) { }
 
-internal void SetExecutionContextHelper(ExecutionContext ec) { }
+	internal void SetExecutionContextHelper(ExecutionContext ec) { }
 
-private static void ThreadStart_Context(object state) { }
+	private static void ThreadStart_Context(object state) { }
 
-internal void ThreadStart(object obj) { }
+	internal void ThreadStart(object obj) { }
 
-internal void ThreadStart() { }
+	internal void ThreadStart() { }
 
 }
 

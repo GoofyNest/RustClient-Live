@@ -6,9 +6,9 @@ public class BasePathNode : MonoBehaviour // TypeDefIndex: 8859
 	public bool straightaway; 
 
 
-public void OnDrawGizmosSelected() { }
+	public void OnDrawGizmosSelected() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

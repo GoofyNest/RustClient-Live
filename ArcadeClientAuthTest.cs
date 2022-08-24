@@ -6,9 +6,9 @@ public class ArcadeClientAuthTest : ArcadeEntityController // TypeDefIndex: 8758
 	public ArcadeEntity myEntity; 
 
 
-public void AuthorativeThink(float delta) { }
+	public void AuthorativeThink(float delta) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

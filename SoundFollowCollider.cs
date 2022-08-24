@@ -7,17 +7,17 @@ public class SoundFollowCollider : MonoBehaviour, IClientComponent // TypeDefInd
 	private bool soundPlaying; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-public void StartSound() { }
+	public void StartSound() { }
 
-public void StopSound() { }
+	public void StopSound() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void FadeOutSound() { }
+	private void FadeOutSound() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

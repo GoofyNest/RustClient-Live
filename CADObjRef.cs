@@ -5,7 +5,7 @@ internal class CADObjRef // TypeDefIndex: 1225
 	internal byte[] TypeInfo; 
 
 
-public void .ctor(ObjRef o, int sourceDomain) { }
+	public void .ctor(ObjRef o, int sourceDomain) { }
 
 }
 

@@ -4,7 +4,7 @@ public class DevDressPlayer : MonoBehaviour // TypeDefIndex: 9297
 	public List<ItemAmount> clothesToWear; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -6,7 +6,7 @@ internal sealed class TypeDependencyAttribute : Attribute
 	private string typeName; 
 
 
-public void .ctor(string typeName) { }
+	public void .ctor(string typeName) { }
 
 }
 

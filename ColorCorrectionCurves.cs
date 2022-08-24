@@ -26,29 +26,29 @@ public class ColorCorrectionCurves : PostEffectsBase, IImageEffect // TypeDefInd
 	private bool updateTexturesOnStartup; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Awake() { }
+	private void Awake() { }
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public void UpdateParameters() { }
+	public void UpdateParameters() { }
 
-private void UpdateTextures() { }
+	private void UpdateTextures() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum ColorCorrectionCurves.ColorCorrectionMode // TypeDefIndex: 8171
 {
 	public int value__; 
-public const ColorCorrectionCurves.ColorCorrectionMode Simple = 0;
-public const ColorCorrectionCurves.ColorCorrectionMode Advanced = 1;
+	public const ColorCorrectionCurves.ColorCorrectionMode Simple = 0;
+	public const ColorCorrectionCurves.ColorCorrectionMode Advanced = 1;
 
 }
 

@@ -22,19 +22,19 @@ public class ESPCanvas : MonoBehaviour // TypeDefIndex: 12001
 	private static bool cachedUsingZoomItem; 
 
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Update() { }
+	public void Update() { }
 
-private bool StartWatching(BasePlayer entity) { }
+	private bool StartWatching(BasePlayer entity) { }
 
-public bool ShouldShow(BasePlayer ent) { }
+	public bool ShouldShow(BasePlayer ent) { }
 
-public static bool IsUsingZoomItem() { }
+	public static bool IsUsingZoomItem() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

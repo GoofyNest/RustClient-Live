@@ -5,11 +5,11 @@ public class DestroyArcadeEntity : BaseMonoBehaviour // TypeDefIndex: 8771
 	public float TimeToDieVariance; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void DestroyAction() { }
+	private void DestroyAction() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

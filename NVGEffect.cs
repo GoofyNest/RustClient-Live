@@ -12,23 +12,23 @@ public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 8678
 	private Material material; 
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void OnDestroy() { }
+	private void OnDestroy() { }
 
-private void UpdateColorCorrectionTexture(NVGEffect.ColorCorrectionParams param, ref Texture2D tex) { }
+	private void UpdateColorCorrectionTexture(NVGEffect.ColorCorrectionParams param, ref Texture2D tex) { }
 
-public void UpdateTextures() { }
+	public void UpdateTextures() { }
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

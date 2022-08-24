@@ -24,9 +24,9 @@ public sealed class Vignette : PostProcessEffectSettings // TypeDefIndex: 11811
 	public FloatParameter opacity; 
 
 
-public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
+	public override bool IsEnabledAndSupported(PostProcessRenderContext context) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -58,26 +58,26 @@ public class MLRSMainUI : MonoBehaviour // TypeDefIndex: 9723
 	private float readyToFireSoundInterval; 
 
 
-public void Init(MLRS mlrs) { }
+	public void Init(MLRS mlrs) { }
 
-protected void Start() { }
+	protected void Start() { }
 
-protected void OnDisable() { }
+	protected void OnDisable() { }
 
-protected void Update() { }
+	protected void Update() { }
 
-public string GetTitleText() { }
+	public string GetTitleText() { }
 
-public void SetTitleText(string text) { }
+	public void SetTitleText(string text) { }
 
-public void CentreMap() { }
+	public void CentreMap() { }
 
-private void ActiveUIUpdateTick() { }
+	private void ActiveUIUpdateTick() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private bool <ActiveUIUpdateTick>g__MouseIsOverTheMap|39_0() { }
+	private bool <ActiveUIUpdateTick>g__MouseIsOverTheMap|39_0() { }
 
 }
 

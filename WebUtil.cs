@@ -1,39 +1,39 @@
 public static class WebUtil // TypeDefIndex: 6230
 {
 
-internal static void Get(string url, Action<string> result) { }
+	internal static void Get(string url, Action<string> result) { }
 
 	[IteratorStateMachineAttribute] 
-private static IEnumerator DownloadStringCoroutine(UnityWebRequest www, Action<string> result) { }
+	private static IEnumerator DownloadStringCoroutine(UnityWebRequest www, Action<string> result) { }
 
 	[AsyncStateMachineAttribute] 
-public static Task<string> DownloadFileTemp(string url, bool keepextension) { }
+	public static Task<string> DownloadFileTemp(string url, bool keepextension) { }
 
-private static void DownloadString(UnityWebRequest www, Action<string> result) { }
+	private static void DownloadString(UnityWebRequest www, Action<string> result) { }
 
-internal static void Post(string url, Dictionary<string, string> data, bool wait, Action<string> result) { }
-
-	[AsyncStateMachineAttribute] 
-internal static Task<string> PostAsync(string url, Dictionary<string, string> data) { }
-
-internal static void PostData(string url, object dataObject, Action<string> result, bool wait = False) { }
+	internal static void Post(string url, Dictionary<string, string> data, bool wait, Action<string> result) { }
 
 	[AsyncStateMachineAttribute] 
-internal static Task<string> PostDataAsync(string url, object dataObject) { }
+	internal static Task<string> PostAsync(string url, Dictionary<string, string> data) { }
+
+	internal static void PostData(string url, object dataObject, Action<string> result, bool wait = False) { }
+
+	[AsyncStateMachineAttribute] 
+	internal static Task<string> PostDataAsync(string url, object dataObject) { }
 
 	[IteratorStateMachineAttribute] 
-private static IEnumerator PostValuesCoroutine(WWW www, Action<string> result) { }
+	private static IEnumerator PostValuesCoroutine(WWW www, Action<string> result) { }
 
-internal static string Escape(string type) { }
+	internal static string Escape(string type) { }
 
 }
 
 private class WebUtil.AcceptAllCertificates : CertificateHandler // TypeDefIndex: 6231
 {
 
-protected override bool ValidateCertificate(byte[] certificateData) { }
+	protected override bool ValidateCertificate(byte[] certificateData) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -44,26 +44,26 @@ private sealed class WebUtil.<DownloadStringCoroutine>d__2 : IEnumerator<object>
 	public UnityWebRequest www; 
 	public Action<string> result; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -79,10 +79,10 @@ private struct WebUtil.<DownloadFileTemp>d__3 : IAsyncStateMachine // TypeDefInd
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -97,10 +97,10 @@ private struct WebUtil.<PostAsync>d__6 : IAsyncStateMachine // TypeDefIndex: 623
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -116,10 +116,10 @@ private struct WebUtil.<PostDataAsync>d__8 : IAsyncStateMachine // TypeDefIndex:
 	private TaskAwaiter <>u__1; 
 
 
-private void MoveNext() { }
+	private void MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void SetStateMachine(IAsyncStateMachine stateMachine) { }
+	private void SetStateMachine(IAsyncStateMachine stateMachine) { }
 
 }
 
@@ -130,26 +130,26 @@ private sealed class WebUtil.<PostValuesCoroutine>d__9 : IEnumerator<object>, IE
 	public WWW www; 
 	public Action<string> result; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

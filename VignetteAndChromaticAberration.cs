@@ -16,21 +16,21 @@ public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // T
 	private Material m_ChromAberrationMaterial; 
 
 
-public override bool CheckResources() { }
+	public override bool CheckResources() { }
 
-public bool IsActive() { }
+	public bool IsActive() { }
 
-public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
+	public void OnRenderImage(RenderTexture source, RenderTexture destination) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum VignetteAndChromaticAberration.AberrationMode // TypeDefIndex: 8217
 {
 	public int value__; 
-public const VignetteAndChromaticAberration.AberrationMode Simple = 0;
-public const VignetteAndChromaticAberration.AberrationMode Advanced = 1;
+	public const VignetteAndChromaticAberration.AberrationMode Simple = 0;
+	public const VignetteAndChromaticAberration.AberrationMode Advanced = 1;
 
 }
 

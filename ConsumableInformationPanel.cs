@@ -10,15 +10,15 @@ public class ConsumableInformationPanel : ItemInformationPanel // TypeDefIndex: 
 	private GrowableGenes genes; 
 
 
-public override bool EligableForDisplay(ItemDefinition info) { }
+	public override bool EligableForDisplay(ItemDefinition info) { }
 
-private void GetValues() { }
+	private void GetValues() { }
 
-public override void SetupForItem(ItemDefinition info, Item item) { }
+	public override void SetupForItem(ItemDefinition info, Item item) { }
 
-private void SetupGenes(Item item) { }
+	private void SetupGenes(Item item) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

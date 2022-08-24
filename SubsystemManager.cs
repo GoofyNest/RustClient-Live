@@ -8,17 +8,17 @@ public static class SubsystemManager // TypeDefIndex: 3944
 	private static Action reloadSubsytemsCompleted; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal static void ReportSingleSubsystemAnalytics(string id) { }
+	internal static void ReportSingleSubsystemAnalytics(string id) { }
 
-internal static void StaticConstructScriptingClassMap() { }
-
-	[RequiredByNativeCodeAttribute] 
-private static void Internal_ReloadSubsystemsStarted() { }
+	internal static void StaticConstructScriptingClassMap() { }
 
 	[RequiredByNativeCodeAttribute] 
-private static void Internal_ReloadSubsystemsCompleted() { }
+	private static void Internal_ReloadSubsystemsStarted() { }
+
+	[RequiredByNativeCodeAttribute] 
+	private static void Internal_ReloadSubsystemsCompleted() { }
 
 }
 

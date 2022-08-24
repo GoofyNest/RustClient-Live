@@ -4,19 +4,19 @@ public struct InputFeatureUsage : IEquatable<InputFeatureUsage> // TypeDefIndex:
 	[NativeNameAttribute] 
 	internal InputFeatureType m_InternalType; 
 
-public string name { get; }
-internal InputFeatureType internalType { get; }
+	public string name { get; }
+	internal InputFeatureType internalType { get; }
 
 
-public string get_name() { }
+	public string get_name() { }
 
-internal InputFeatureType get_internalType() { }
+	internal InputFeatureType get_internalType() { }
 
-public override bool Equals(object obj) { }
+	public override bool Equals(object obj) { }
 
-public bool Equals(InputFeatureUsage other) { }
+	public bool Equals(InputFeatureUsage other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
 }
 

@@ -6,13 +6,13 @@ public class AspectRatioGuide : MonoBehaviour // TypeDefIndex: 10825
 	public float ratio; 
 
 
-private void Populate() { }
+	private void Populate() { }
 
-public void Awake() { }
+	public void Awake() { }
 
-public void Update() { }
+	public void Update() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

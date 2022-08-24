@@ -11,90 +11,90 @@ public class MainCamera : RustCamera<MainCamera> // TypeDefIndex: 9200
 	private int totalFrames; 
 	private RealTimeSince timeSinceFrameSubmit; 
 	private Stopwatch frameTime; 
-protected const float defaultSqrDistance = 1,677722E+07;
+	protected const float defaultSqrDistance = 1,677722E+07;
 
-public static bool isValid { get; }
-public static Vector3 velocity { get; set; }
-public static Vector3 position { get; set; }
-public static Vector3 forward { get; set; }
-public static Vector3 right { get; set; }
-public static Vector3 up { get; set; }
-public static Quaternion rotation { get; set; }
-public static Ray Ray { get; }
-public static RaycastHit Raycast { get; }
+	public static bool isValid { get; }
+	public static Vector3 velocity { get; set; }
+	public static Vector3 position { get; set; }
+	public static Vector3 forward { get; set; }
+	public static Vector3 right { get; set; }
+	public static Vector3 up { get; set; }
+	public static Quaternion rotation { get; set; }
+	public static Ray Ray { get; }
+	public static RaycastHit Raycast { get; }
 
 
-public static bool get_isValid() { }
-
-	[CompilerGeneratedAttribute] 
-public static Vector3 get_velocity() { }
+	public static bool get_isValid() { }
 
 	[CompilerGeneratedAttribute] 
-private static void set_velocity(Vector3 value) { }
+	public static Vector3 get_velocity() { }
 
-public static Vector3 get_position() { }
+	[CompilerGeneratedAttribute] 
+	private static void set_velocity(Vector3 value) { }
 
-public static void set_position(Vector3 value) { }
+	public static Vector3 get_position() { }
 
-public static Vector3 get_forward() { }
+	public static void set_position(Vector3 value) { }
 
-public static void set_forward(Vector3 value) { }
+	public static Vector3 get_forward() { }
 
-public static Vector3 get_right() { }
+	public static void set_forward(Vector3 value) { }
 
-public static void set_right(Vector3 value) { }
+	public static Vector3 get_right() { }
 
-public static Vector3 get_up() { }
+	public static void set_right(Vector3 value) { }
 
-public static void set_up(Vector3 value) { }
+	public static Vector3 get_up() { }
 
-public static Quaternion get_rotation() { }
+	public static void set_up(Vector3 value) { }
 
-public static void set_rotation(Quaternion value) { }
+	public static Quaternion get_rotation() { }
 
-public static Ray get_Ray() { }
+	public static void set_rotation(Quaternion value) { }
 
-public static RaycastHit get_Raycast() { }
+	public static Ray get_Ray() { }
 
-public static EnvironmentType GetEnvironment() { }
+	public static RaycastHit get_Raycast() { }
 
-public static bool InEnvironment(EnvironmentType type) { }
+	public static EnvironmentType GetEnvironment() { }
 
-protected override void Awake() { }
+	public static bool InEnvironment(EnvironmentType type) { }
 
-public void Setup() { }
+	protected override void Awake() { }
 
-protected override void OnDestroy() { }
+	public void Setup() { }
 
-private void AdjustTextureStreamingBudget() { }
+	protected override void OnDestroy() { }
 
-private void Update() { }
+	private void AdjustTextureStreamingBudget() { }
 
-public void RecordFrameTime() { }
+	private void Update() { }
 
-protected override void LateUpdate() { }
+	public void RecordFrameTime() { }
 
-public static float Distance(Vector3 pos) { }
+	protected override void LateUpdate() { }
 
-public static float SqrDistance(Vector3 pos) { }
+	public static float Distance(Vector3 pos) { }
 
-public static float Distance(BaseEntity ent) { }
+	public static float SqrDistance(Vector3 pos) { }
 
-public static float SqrDistance(BaseEntity ent) { }
+	public static float Distance(BaseEntity ent) { }
 
-public static float Distance2D(Vector3 pos) { }
+	public static float SqrDistance(BaseEntity ent) { }
 
-public static float SqrDistance2D(Vector3 pos) { }
+	public static float Distance2D(Vector3 pos) { }
 
-public static float Distance2D(BaseEntity ent) { }
+	public static float SqrDistance2D(Vector3 pos) { }
 
-public static HitTest Trace(float maxDistance, BaseEntity IgnoreEntity, float radius = 0) { }
+	public static float Distance2D(BaseEntity ent) { }
 
-public static bool IsInFrontOfLocalPlayerCamera(Vector3 point) { }
+	public static HitTest Trace(float maxDistance, BaseEntity IgnoreEntity, float radius = 0) { }
 
-public void .ctor() { }
+	public static bool IsInFrontOfLocalPlayerCamera(Vector3 point) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

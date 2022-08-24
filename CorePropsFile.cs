@@ -4,14 +4,14 @@ internal struct CorePropsFile // TypeDefIndex: 7703
 	private string <Address>k__BackingField; 
 
 	[JsonPropertyAttribute] 
-public string Address { get; set; }
+	public string Address { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_Address() { }
+	public string get_Address() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Address(string value) { }
+	public void set_Address(string value) { }
 
 }
 

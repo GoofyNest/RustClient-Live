@@ -4,7 +4,7 @@ public class SBI // TypeDefIndex: 7412
 	internal int[] S; 
 
 
-internal void .ctor(int[] thel, int[] thes) { }
+	internal void .ctor(int[] thel, int[] thes) { }
 
 }
 

@@ -7,13 +7,13 @@ public class TimeBasedSoundSpread : SoundModifier // TypeDefIndex: 9046
 	private SoundModulation.Modulator modulator; 
 
 
-public override void Init(Sound targetSound) { }
+	public override void Init(Sound targetSound) { }
 
-public override void OnSoundPlay() { }
+	public override void OnSoundPlay() { }
 
-public override void ApplyModification() { }
+	public override void ApplyModification() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

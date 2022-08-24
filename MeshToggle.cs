@@ -4,19 +4,19 @@ public class MeshToggle : MonoBehaviour // TypeDefIndex: 11316
 	public Mesh[] ColliderMeshes; 
 
 
-public void SwitchRenderer(int index) { }
+	public void SwitchRenderer(int index) { }
 
-public void SwitchRenderer(float factor) { }
+	public void SwitchRenderer(float factor) { }
 
-public void SwitchCollider(int index) { }
+	public void SwitchCollider(int index) { }
 
-public void SwitchCollider(float factor) { }
+	public void SwitchCollider(float factor) { }
 
-public void SwitchAll(int index) { }
+	public void SwitchAll(int index) { }
 
-public void SwitchAll(float factor) { }
+	public void SwitchAll(float factor) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

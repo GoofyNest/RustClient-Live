@@ -5,15 +5,15 @@ public class SlotMachineLootPanel : LootPanel // TypeDefIndex: 8748
 	public LocalizeText ScrapCostText; 
 
 
-public SlotMachineStorage GetStorage() { }
+	public SlotMachineStorage GetStorage() { }
 
-public SlotMachine GetSlotMachine() { }
+	public SlotMachine GetSlotMachine() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public void OnClickedRaiseLowerBet(int direction) { }
+	public void OnClickedRaiseLowerBet(int direction) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -23,45 +23,45 @@ public class RgbEffects : SingletonComponent<RgbEffects> // TypeDefIndex: 10705
 	private float _lastPulseDuration; 
 
 
-public void OnEnable() { }
+	public void OnEnable() { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-private void UpdateLighting() { }
+	private void UpdateLighting() { }
 
-private void CopyColorCorrection() { }
+	private void CopyColorCorrection() { }
 
-private void SetStaticColor(Color color, bool force = False) { }
+	private void SetStaticColor(Color color, bool force = False) { }
 
-private void PulseColor(RgbColor color, float duration) { }
+	private void PulseColor(RgbColor color, float duration) { }
 
-private Color GetColor(RgbColor color) { }
+	private Color GetColor(RgbColor color) { }
 
-private static Color PreprocessColor(Color color) { }
+	private static Color PreprocessColor(Color color) { }
 
-public static void Static(RgbColor color) { }
+	public static void Static(RgbColor color) { }
 
-public static void Pulse(RgbColor color, float duration = 0,5) { }
+	public static void Pulse(RgbColor color, float duration = 0,5) { }
 
-public static void Event(RgbEventType type) { }
+	public static void Event(RgbEventType type) { }
 
-public static void DamagePulse(DamageType type) { }
+	public static void DamagePulse(DamageType type) { }
 
-private static RgbColor GetCurrentBackground() { }
+	private static RgbColor GetCurrentBackground() { }
 
-private static Nullable<ValueTuple<RgbColor, float>> GetCurrentFlash() { }
-
-	[ClientVar] 
-	[EditorBrowsableAttribute] 
-public static void ConVar_Static(ConsoleSystem.Arg args) { }
+	private static Nullable<ValueTuple<RgbColor, float>> GetCurrentFlash() { }
 
 	[ClientVar] 
 	[EditorBrowsableAttribute] 
-public static void ConVar_Pulse(ConsoleSystem.Arg args) { }
+	public static void ConVar_Static(ConsoleSystem.Arg args) { }
 
-public void .ctor() { }
+	[ClientVar] 
+	[EditorBrowsableAttribute] 
+	public static void ConVar_Pulse(ConsoleSystem.Arg args) { }
 
-private static void .cctor() { }
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

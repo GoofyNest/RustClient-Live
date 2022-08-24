@@ -7,17 +7,17 @@ public class ObjectIDGenerator // TypeDefIndex: 1036
 	private static readonly int[] sizes; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private int FindElement(object obj, out bool found) { }
+	private int FindElement(object obj, out bool found) { }
 
-public virtual long GetId(object obj, out bool firstTime) { }
+	public virtual long GetId(object obj, out bool firstTime) { }
 
-public virtual long HasId(object obj, out bool firstTime) { }
+	public virtual long HasId(object obj, out bool firstTime) { }
 
-private void Rehash() { }
+	private void Rehash() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

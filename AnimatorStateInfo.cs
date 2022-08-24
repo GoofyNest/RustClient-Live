@@ -10,16 +10,16 @@ public struct AnimatorStateInfo // TypeDefIndex: 4485
 	private int m_Tag; 
 	private int m_Loop; 
 
-public int shortNameHash { get; }
-public float normalizedTime { get; }
-public float speed { get; }
+	public int shortNameHash { get; }
+	public float normalizedTime { get; }
+	public float speed { get; }
 
 
-public int get_shortNameHash() { }
+	public int get_shortNameHash() { }
 
-public float get_normalizedTime() { }
+	public float get_normalizedTime() { }
 
-public float get_speed() { }
+	public float get_speed() { }
 
 }
 

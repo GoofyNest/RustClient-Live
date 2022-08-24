@@ -16,68 +16,68 @@ public sealed class DictationRecognizer // TypeDefIndex: 3596
 
 
 	[RequiredByNativeCodeAttribute] 
-private void DictationRecognizer_InvokeHypothesisGeneratedEvent(string keyword) { }
+	private void DictationRecognizer_InvokeHypothesisGeneratedEvent(string keyword) { }
 
 	[RequiredByNativeCodeAttribute] 
-private void DictationRecognizer_InvokeResultGeneratedEvent(string keyword, ConfidenceLevel minimumConfidence) { }
+	private void DictationRecognizer_InvokeResultGeneratedEvent(string keyword, ConfidenceLevel minimumConfidence) { }
 
 	[RequiredByNativeCodeAttribute] 
-private void DictationRecognizer_InvokeCompletedEvent(DictationCompletionCause cause) { }
+	private void DictationRecognizer_InvokeCompletedEvent(DictationCompletionCause cause) { }
 
 	[RequiredByNativeCodeAttribute] 
-private void DictationRecognizer_InvokeErrorEvent(string error, int hresult) { }
+	private void DictationRecognizer_InvokeErrorEvent(string error, int hresult) { }
 
 }
 
 public sealed class DictationRecognizer.DictationHypothesisDelegate : MulticastDelegate // TypeDefIndex: 3597
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(string text) { }
+	public virtual void Invoke(string text) { }
 
-public virtual IAsyncResult BeginInvoke(string text, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(string text, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class DictationRecognizer.DictationResultDelegate : MulticastDelegate // TypeDefIndex: 3598
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(string text, ConfidenceLevel confidence) { }
+	public virtual void Invoke(string text, ConfidenceLevel confidence) { }
 
-public virtual IAsyncResult BeginInvoke(string text, ConfidenceLevel confidence, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(string text, ConfidenceLevel confidence, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class DictationRecognizer.DictationCompletedDelegate : MulticastDelegate // TypeDefIndex: 3599
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(DictationCompletionCause cause) { }
+	public virtual void Invoke(DictationCompletionCause cause) { }
 
-public virtual IAsyncResult BeginInvoke(DictationCompletionCause cause, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(DictationCompletionCause cause, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 
 public sealed class DictationRecognizer.DictationErrorHandler : MulticastDelegate // TypeDefIndex: 3600
 {
 
-public void .ctor(object object, IntPtr method) { }
+	public void .ctor(object object, IntPtr method) { }
 
-public virtual void Invoke(string error, int hresult) { }
+	public virtual void Invoke(string error, int hresult) { }
 
-public virtual IAsyncResult BeginInvoke(string error, int hresult, AsyncCallback callback, object object) { }
+	public virtual IAsyncResult BeginInvoke(string error, int hresult, AsyncCallback callback, object object) { }
 
-public virtual void EndInvoke(IAsyncResult result) { }
+	public virtual void EndInvoke(IAsyncResult result) { }
 
 }
 

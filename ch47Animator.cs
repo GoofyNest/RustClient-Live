@@ -18,17 +18,17 @@ public class ch47Animator : MonoBehaviour // TypeDefIndex: 8856
 	public float blurSpeedThreshold; 
 
 
-private void Start() { }
+	private void Start() { }
 
-public void SetDropDoorOpen(bool isOpen) { }
+	public void SetDropDoorOpen(bool isOpen) { }
 
-private void Update() { }
+	private void Update() { }
 
-private void LateUpdate() { }
+	private void LateUpdate() { }
 
-private void EnableBlurredRotorBlades(bool enabled) { }
+	private void EnableBlurredRotorBlades(bool enabled) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

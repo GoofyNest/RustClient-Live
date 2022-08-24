@@ -8,53 +8,53 @@ public class AspectRatioFitter : UIBehaviour, ILayoutSelfController, ILayoutCont
 	private bool m_DelayedSetDirty; 
 	private DrivenRectTransformTracker m_Tracker; 
 
-public AspectRatioFitter.AspectMode aspectMode { get; set; }
-public float aspectRatio { get; set; }
-private RectTransform rectTransform { get; }
+	public AspectRatioFitter.AspectMode aspectMode { get; set; }
+	public float aspectRatio { get; set; }
+	private RectTransform rectTransform { get; }
 
 
-public AspectRatioFitter.AspectMode get_aspectMode() { }
+	public AspectRatioFitter.AspectMode get_aspectMode() { }
 
-public void set_aspectMode(AspectRatioFitter.AspectMode value) { }
+	public void set_aspectMode(AspectRatioFitter.AspectMode value) { }
 
-public float get_aspectRatio() { }
+	public float get_aspectRatio() { }
 
-public void set_aspectRatio(float value) { }
+	public void set_aspectRatio(float value) { }
 
-private RectTransform get_rectTransform() { }
+	private RectTransform get_rectTransform() { }
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-protected override void OnEnable() { }
+	protected override void OnEnable() { }
 
-protected override void OnDisable() { }
+	protected override void OnDisable() { }
 
-protected virtual void Update() { }
+	protected virtual void Update() { }
 
-protected override void OnRectTransformDimensionsChange() { }
+	protected override void OnRectTransformDimensionsChange() { }
 
-private void UpdateRect() { }
+	private void UpdateRect() { }
 
-private float GetSizeDeltaToProduceSize(float size, int axis) { }
+	private float GetSizeDeltaToProduceSize(float size, int axis) { }
 
-private Vector2 GetParentSize() { }
+	private Vector2 GetParentSize() { }
 
-public virtual void SetLayoutHorizontal() { }
+	public virtual void SetLayoutHorizontal() { }
 
-public virtual void SetLayoutVertical() { }
+	public virtual void SetLayoutVertical() { }
 
-protected void SetDirty() { }
+	protected void SetDirty() { }
 
 }
 
 public enum AspectRatioFitter.AspectMode // TypeDefIndex: 4958
 {
 	public int value__; 
-public const AspectRatioFitter.AspectMode None = 0;
-public const AspectRatioFitter.AspectMode WidthControlsHeight = 1;
-public const AspectRatioFitter.AspectMode HeightControlsWidth = 2;
-public const AspectRatioFitter.AspectMode FitInParent = 3;
-public const AspectRatioFitter.AspectMode EnvelopeParent = 4;
+	public const AspectRatioFitter.AspectMode None = 0;
+	public const AspectRatioFitter.AspectMode WidthControlsHeight = 1;
+	public const AspectRatioFitter.AspectMode HeightControlsWidth = 2;
+	public const AspectRatioFitter.AspectMode FitInParent = 3;
+	public const AspectRatioFitter.AspectMode EnvelopeParent = 4;
 
 }
 

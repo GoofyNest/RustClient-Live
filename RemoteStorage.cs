@@ -1,10 +1,10 @@
 internal enum RemoteStoragePublishedFileVisibility // TypeDefIndex: 5152
 {
 	public int value__; 
-public const RemoteStoragePublishedFileVisibility Public = 0;
-public const RemoteStoragePublishedFileVisibility FriendsOnly = 1;
-public const RemoteStoragePublishedFileVisibility Private = 2;
-public const RemoteStoragePublishedFileVisibility Unlisted = 3;
+	public const RemoteStoragePublishedFileVisibility Public = 0;
+	public const RemoteStoragePublishedFileVisibility FriendsOnly = 1;
+	public const RemoteStoragePublishedFileVisibility Private = 2;
+	public const RemoteStoragePublishedFileVisibility Unlisted = 3;
 
 }
 
@@ -15,15 +15,15 @@ internal struct RemoteStorageFileShareResult_t : ICallbackData // TypeDefIndex: 
 	internal byte[] Filename; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -34,15 +34,15 @@ internal struct RemoteStoragePublishFileResult_t : ICallbackData // TypeDefIndex
 	internal bool UserNeedsToAcceptWorkshopLegalAgreement; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -52,15 +52,15 @@ internal struct RemoteStorageDeletePublishedFileResult_t : ICallbackData // Type
 	internal PublishedFileId PublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -72,15 +72,15 @@ internal struct RemoteStorageEnumerateUserPublishedFilesResult_t : ICallbackData
 	internal PublishedFileId[] GPublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -90,15 +90,15 @@ internal struct RemoteStorageSubscribePublishedFileResult_t : ICallbackData // T
 	internal PublishedFileId PublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -111,15 +111,15 @@ internal struct RemoteStorageEnumerateUserSubscribedFilesResult_t : ICallbackDat
 	internal uint[] GRTimeSubscribed; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -129,15 +129,15 @@ internal struct RemoteStorageUnsubscribePublishedFileResult_t : ICallbackData //
 	internal PublishedFileId PublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -148,15 +148,15 @@ internal struct RemoteStorageUpdatePublishedFileResult_t : ICallbackData // Type
 	internal bool UserNeedsToAcceptWorkshopLegalAgreement; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -170,15 +170,15 @@ internal struct RemoteStorageDownloadUGCResult_t : ICallbackData // TypeDefIndex
 	internal ulong SteamIDOwner; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -207,15 +207,15 @@ internal struct RemoteStorageGetPublishedFileDetailsResult_t : ICallbackData // 
 	internal bool AcceptedForUse; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -230,15 +230,15 @@ internal struct RemoteStorageEnumerateWorkshopFilesResult_t : ICallbackData // T
 	internal uint StartIndex; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -252,15 +252,15 @@ internal struct RemoteStorageGetPublishedItemVoteDetailsResult_t : ICallbackData
 	internal float FScore; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -270,15 +270,15 @@ internal struct RemoteStoragePublishedFileSubscribed_t : ICallbackData // TypeDe
 	internal AppId AppID; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -288,15 +288,15 @@ internal struct RemoteStoragePublishedFileUnsubscribed_t : ICallbackData // Type
 	internal AppId AppID; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -306,15 +306,15 @@ internal struct RemoteStoragePublishedFileDeleted_t : ICallbackData // TypeDefIn
 	internal AppId AppID; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -324,15 +324,15 @@ internal struct RemoteStorageUpdateUserPublishedItemVoteResult_t : ICallbackData
 	internal PublishedFileId PublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -343,15 +343,15 @@ internal struct RemoteStorageUserVoteDetails_t : ICallbackData // TypeDefIndex: 
 	internal WorkshopVote Vote; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -363,15 +363,15 @@ internal struct RemoteStorageEnumerateUserSharedWorkshopFilesResult_t : ICallbac
 	internal PublishedFileId[] GPublishedFileId; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -382,15 +382,15 @@ internal struct RemoteStorageSetUserPublishedFileActionResult_t : ICallbackData 
 	internal WorkshopFileAction Action; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -404,15 +404,15 @@ internal struct RemoteStorageEnumeratePublishedFilesByUserActionResult_t : ICall
 	internal uint[] GRTimeUpdated; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -422,15 +422,15 @@ internal struct RemoteStoragePublishFileProgress_t : ICallbackData // TypeDefInd
 	internal bool Preview; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -441,15 +441,15 @@ internal struct RemoteStoragePublishedFileUpdated_t : ICallbackData // TypeDefIn
 	internal ulong Unused; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -458,15 +458,15 @@ internal struct RemoteStorageFileWriteAsyncComplete_t : ICallbackData // TypeDef
 	internal Result Result; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -478,15 +478,15 @@ internal struct RemoteStorageFileReadAsyncComplete_t : ICallbackData // TypeDefI
 	internal uint Read; 
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -494,15 +494,15 @@ internal struct RemoteStorageLocalFileChange_t : ICallbackData // TypeDefIndex: 
 {
 	public static int _datasize; 
 
-public int DataSize { get; }
-public CallbackType CallbackType { get; }
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
 
 
-public int get_DataSize() { }
+	public int get_DataSize() { }
 
-public CallbackType get_CallbackType() { }
+	public CallbackType get_CallbackType() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

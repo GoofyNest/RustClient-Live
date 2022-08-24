@@ -12,9 +12,9 @@ public class Legs : ConsoleSystem // TypeDefIndex: 11937
 	public static Vector3 ModelRotation; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

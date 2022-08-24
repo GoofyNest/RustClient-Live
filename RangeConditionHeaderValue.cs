@@ -5,35 +5,35 @@ public class RangeConditionHeaderValue : ICloneable // TypeDefIndex: 5803
 	[CompilerGeneratedAttribute] 
 	private EntityTagHeaderValue <EntityTag>k__BackingField; 
 
-public Nullable<DateTimeOffset> Date { get; set; }
-public EntityTagHeaderValue EntityTag { get; set; }
+	public Nullable<DateTimeOffset> Date { get; set; }
+	public EntityTagHeaderValue EntityTag { get; set; }
 
 
-public void .ctor(DateTimeOffset date) { }
+	public void .ctor(DateTimeOffset date) { }
 
-public void .ctor(EntityTagHeaderValue entityTag) { }
-
-	[CompilerGeneratedAttribute] 
-public Nullable<DateTimeOffset> get_Date() { }
+	public void .ctor(EntityTagHeaderValue entityTag) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_Date(Nullable<DateTimeOffset> value) { }
+	public Nullable<DateTimeOffset> get_Date() { }
 
 	[CompilerGeneratedAttribute] 
-public EntityTagHeaderValue get_EntityTag() { }
+	private void set_Date(Nullable<DateTimeOffset> value) { }
 
 	[CompilerGeneratedAttribute] 
-private void set_EntityTag(EntityTagHeaderValue value) { }
+	public EntityTagHeaderValue get_EntityTag() { }
 
-private object System.ICloneable.Clone() { }
+	[CompilerGeneratedAttribute] 
+	private void set_EntityTag(EntityTagHeaderValue value) { }
 
-public override bool Equals(object obj) { }
+	private object System.ICloneable.Clone() { }
 
-public override int GetHashCode() { }
+	public override bool Equals(object obj) { }
 
-public static bool TryParse(string input, out RangeConditionHeaderValue parsedValue) { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public static bool TryParse(string input, out RangeConditionHeaderValue parsedValue) { }
+
+	public override string ToString() { }
 
 }
 

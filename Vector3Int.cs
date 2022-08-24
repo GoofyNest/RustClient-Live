@@ -10,30 +10,30 @@ public struct Vector3Int : IEquatable<Vector3Int> // TypeDefIndex: 3472
 	private static readonly Vector3Int s_Left; 
 	private static readonly Vector3Int s_Right; 
 
-public int x { get; }
-public int y { get; }
-public int z { get; }
+	public int x { get; }
+	public int y { get; }
+	public int z { get; }
 
 
-public int get_x() { }
+	public int get_x() { }
 
-public int get_y() { }
+	public int get_y() { }
 
-public int get_z() { }
+	public int get_z() { }
 
-public void .ctor(int x, int y, int z) { }
+	public void .ctor(int x, int y, int z) { }
 
-public static bool op_Equality(Vector3Int lhs, Vector3Int rhs) { }
+	public static bool op_Equality(Vector3Int lhs, Vector3Int rhs) { }
 
-public override bool Equals(object other) { }
+	public override bool Equals(object other) { }
 
-public bool Equals(Vector3Int other) { }
+	public bool Equals(Vector3Int other) { }
 
-public override int GetHashCode() { }
+	public override int GetHashCode() { }
 
-public override string ToString() { }
+	public override string ToString() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

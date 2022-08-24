@@ -4,11 +4,11 @@ internal sealed class CompletionActionInvoker : IThreadPoolWorkItem // TypeDefIn
 	private readonly Task m_completingTask; 
 
 
-internal void .ctor(ITaskCompletionAction action, Task completingTask) { }
+	internal void .ctor(ITaskCompletionAction action, Task completingTask) { }
 
-public void ExecuteWorkItem() { }
+	public void ExecuteWorkItem() { }
 
-public void MarkAborted(ThreadAbortException tae) { }
+	public void MarkAborted(ThreadAbortException tae) { }
 
 }
 

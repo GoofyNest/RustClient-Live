@@ -9,7 +9,7 @@ internal class MSCompatUnicodeTableUtil // TypeDefIndex: 37
 	public static readonly CodePointIndexer Cjk; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

@@ -6,7 +6,7 @@ public static class PlaybackStats // TypeDefIndex: 6648
 	public static TimeSpan DemoLength; 
 
 
-public static void Reset() { }
+	public static void Reset() { }
 
 }
 

@@ -10,56 +10,56 @@ public abstract class NameObjectCollectionBase : ICollection, IEnumerable, ISeri
 	private object _syncRoot; 
 	private static StringComparer defaultComparer; 
 
-protected bool IsReadOnly { get; }
-public virtual int Count { get; }
-private object System.Collections.ICollection.SyncRoot { get; }
+	protected bool IsReadOnly { get; }
+	public virtual int Count { get; }
+	private object System.Collections.ICollection.SyncRoot { get; }
 
 
-protected void .ctor() { }
+	protected void .ctor() { }
 
-protected void .ctor(IEqualityComparer equalityComparer) { }
+	protected void .ctor(IEqualityComparer equalityComparer) { }
 
-protected void .ctor(int capacity, IEqualityComparer equalityComparer) { }
+	protected void .ctor(int capacity, IEqualityComparer equalityComparer) { }
 
-internal void .ctor(DBNull dummy) { }
+	internal void .ctor(DBNull dummy) { }
 
-protected void .ctor(SerializationInfo info, StreamingContext context) { }
+	protected void .ctor(SerializationInfo info, StreamingContext context) { }
 
-public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
+	public virtual void GetObjectData(SerializationInfo info, StreamingContext context) { }
 
-public virtual void OnDeserialization(object sender) { }
+	public virtual void OnDeserialization(object sender) { }
 
-private void Reset() { }
+	private void Reset() { }
 
-private void Reset(int capacity) { }
+	private void Reset(int capacity) { }
 
-private NameObjectCollectionBase.NameObjectEntry FindEntry(string key) { }
+	private NameObjectCollectionBase.NameObjectEntry FindEntry(string key) { }
 
-protected bool get_IsReadOnly() { }
+	protected bool get_IsReadOnly() { }
 
-protected void BaseAdd(string name, object value) { }
+	protected void BaseAdd(string name, object value) { }
 
-protected void BaseRemove(string name) { }
+	protected void BaseRemove(string name) { }
 
-protected object BaseGet(string name) { }
+	protected object BaseGet(string name) { }
 
-protected void BaseSet(string name, object value) { }
+	protected void BaseSet(string name, object value) { }
 
-protected object BaseGet(int index) { }
+	protected object BaseGet(int index) { }
 
-protected string BaseGetKey(int index) { }
+	protected string BaseGetKey(int index) { }
 
-public virtual IEnumerator GetEnumerator() { }
+	public virtual IEnumerator GetEnumerator() { }
 
-public virtual int get_Count() { }
+	public virtual int get_Count() { }
 
-private void System.Collections.ICollection.CopyTo(Array array, int index) { }
+	private void System.Collections.ICollection.CopyTo(Array array, int index) { }
 
-private object System.Collections.ICollection.get_SyncRoot() { }
+	private object System.Collections.ICollection.get_SyncRoot() { }
 
-protected string[] BaseGetAllKeys() { }
+	protected string[] BaseGetAllKeys() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -69,7 +69,7 @@ internal class NameObjectCollectionBase.NameObjectEntry // TypeDefIndex: 3103
 	internal object Value; 
 
 
-internal void .ctor(string name, object value) { }
+	internal void .ctor(string name, object value) { }
 
 }
 
@@ -79,16 +79,16 @@ internal class NameObjectCollectionBase.NameObjectKeysEnumerator : IEnumerator /
 	private NameObjectCollectionBase _coll; 
 	private int _version; 
 
-public object Current { get; }
+	public object Current { get; }
 
 
-internal void .ctor(NameObjectCollectionBase coll) { }
+	internal void .ctor(NameObjectCollectionBase coll) { }
 
-public bool MoveNext() { }
+	public bool MoveNext() { }
 
-public void Reset() { }
+	public void Reset() { }
 
-public object get_Current() { }
+	public object get_Current() { }
 
 }
 

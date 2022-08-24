@@ -5,9 +5,9 @@ public class ScaleFactorTable // TypeDefIndex: 7414
 	private LayerIIIDecoder _EnclosingInstance; 
 
 
-internal void .ctor(LayerIIIDecoder enclosingInstance, int[] thel, int[] thes) { }
+	internal void .ctor(LayerIIIDecoder enclosingInstance, int[] thel, int[] thes) { }
 
-private void InitBlock(LayerIIIDecoder enclosingInstance) { }
+	private void InitBlock(LayerIIIDecoder enclosingInstance) { }
 
 }
 

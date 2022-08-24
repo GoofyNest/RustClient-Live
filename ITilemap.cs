@@ -19,12 +19,12 @@ public class ITilemap
 	internal Tilemap m_Tilemap; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-public void RefreshTile(Vector3Int position) { }
+	public void RefreshTile(Vector3Int position) { }
 
 	[RequiredByNativeCodeAttribute] 
-private static ITilemap CreateInstance() { }
+	private static ITilemap CreateInstance() { }
 
 }
 

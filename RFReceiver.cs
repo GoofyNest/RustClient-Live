@@ -4,30 +4,30 @@ public class RFReceiver : IOEntity, IRFObject // TypeDefIndex: 8438
 	public int frequency; 
 	public GameObjectRef frequencyPanelPrefab; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public int GetFrequency() { }
+	public int GetFrequency() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Menu_SetFreqency(BasePlayer player) { }
+	public void Menu_SetFreqency(BasePlayer player) { }
 
-public bool Menu_SetFrequency_ShowIf(BasePlayer player) { }
+	public bool Menu_SetFrequency_ShowIf(BasePlayer player) { }
 
-public void ClientSetFrequency(int newFreq) { }
+	public void ClientSetFrequency(int newFreq) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

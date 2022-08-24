@@ -41,39 +41,39 @@ public class ViewModelCamera : MonoBehaviour // TypeDefIndex: 11446
 	private Matrix4x4 previousViewProjectionMatrix; 
 
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-public void OnBeforeGBuffer(CommandBuffer cb) { }
+	public void OnBeforeGBuffer(CommandBuffer cb) { }
 
-public void OnAfterGBuffer(CommandBuffer cb) { }
+	public void OnAfterGBuffer(CommandBuffer cb) { }
 
-private void OnBeforeImageEffectsOpaque(CommandBuffer cb) { }
+	private void OnBeforeImageEffectsOpaque(CommandBuffer cb) { }
 
-private void OnAfterForwardAlpha(CommandBuffer cb) { }
+	private void OnAfterForwardAlpha(CommandBuffer cb) { }
 
-private void SetCameraMatrices(CommandBuffer cb) { }
+	private void SetCameraMatrices(CommandBuffer cb) { }
 
-private void UpdateAmbientProbe(CommandBuffer cb) { }
+	private void UpdateAmbientProbe(CommandBuffer cb) { }
 
-private void UpdateSkyReflection(CommandBuffer cb) { }
+	private void UpdateSkyReflection(CommandBuffer cb) { }
 
-private void UpdateSHCoefficients(CommandBuffer cb) { }
+	private void UpdateSHCoefficients(CommandBuffer cb) { }
 
-private void UpdateLightParameters(CommandBuffer cb) { }
+	private void UpdateLightParameters(CommandBuffer cb) { }
 
-public void Clear() { }
+	public void Clear() { }
 
-public void AddGBufferDrawEvent(ViewModelDrawEvent drawEvent) { }
+	public void AddGBufferDrawEvent(ViewModelDrawEvent drawEvent) { }
 
-public void AddForwardAlphaDrawEvent(ViewModelDrawEvent drawEvent) { }
+	public void AddForwardAlphaDrawEvent(ViewModelDrawEvent drawEvent) { }
 
-public void RemoveGBufferDrawEvent(ViewModelDrawEvent drawEvent) { }
+	public void RemoveGBufferDrawEvent(ViewModelDrawEvent drawEvent) { }
 
-public void RemoveForwardAlphaDrawEvent(ViewModelDrawEvent drawEvent) { }
+	public void RemoveForwardAlphaDrawEvent(ViewModelDrawEvent drawEvent) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

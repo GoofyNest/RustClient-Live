@@ -4,24 +4,24 @@ public class ImageEffectLayer : FacepunchBehaviour // TypeDefIndex: 8032
 	private IImageEffect[] effects; 
 	internal bool _layerEnabled; 
 
-public int SortOrder { get; }
-public IImageEffect[] Effects { get; }
-public bool layerEnabled { get; set; }
+	public int SortOrder { get; }
+	public IImageEffect[] Effects { get; }
+	public bool layerEnabled { get; set; }
 
 
-public int get_SortOrder() { }
+	public int get_SortOrder() { }
 
-public IImageEffect[] get_Effects() { }
+	public IImageEffect[] get_Effects() { }
 
-public virtual void Start() { }
+	public virtual void Start() { }
 
-public virtual void OnDisable() { }
+	public virtual void OnDisable() { }
 
-public bool get_layerEnabled() { }
+	public bool get_layerEnabled() { }
 
-public void set_layerEnabled(bool value) { }
+	public void set_layerEnabled(bool value) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

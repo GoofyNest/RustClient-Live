@@ -20,7 +20,7 @@ internal sealed class ValidationState // TypeDefIndex: 2290
 	public bool TooComplex; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

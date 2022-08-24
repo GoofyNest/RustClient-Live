@@ -6,19 +6,19 @@ internal class PropertyNameTable // TypeDefIndex: 5919
 	private int _mask; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public string Get(char[] key, int start, int length) { }
+	public string Get(char[] key, int start, int length) { }
 
-public string Add(string key) { }
+	public string Add(string key) { }
 
-private string AddEntry(string str, int hashCode) { }
+	private string AddEntry(string str, int hashCode) { }
 
-private void Grow() { }
+	private void Grow() { }
 
-private static bool TextEquals(string str1, char[] str2, int str2Start, int str2Length) { }
+	private static bool TextEquals(string str1, char[] str2, int str2Start, int str2Length) { }
 
 }
 
@@ -29,7 +29,7 @@ private class PropertyNameTable.Entry // TypeDefIndex: 5920
 	internal PropertyNameTable.Entry Next; 
 
 
-internal void .ctor(string value, int hashCode, PropertyNameTable.Entry next) { }
+	internal void .ctor(string value, int hashCode, PropertyNameTable.Entry next) { }
 
 }
 

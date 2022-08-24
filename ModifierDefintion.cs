@@ -6,7 +6,7 @@ public class ModifierDefintion // TypeDefIndex: 9621
 	public float duration; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

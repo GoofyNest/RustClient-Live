@@ -9,7 +9,7 @@ public class GameModeCapturePoint : BaseEntity // TypeDefIndex: 9881
 	private int capturingTeam; 
 	public EntityRef capturingPlayer; 
 	public EntityRef capturedPlayer; 
-public const BaseEntity.Flags Flag_Contested = 8192;
+	public const BaseEntity.Flags Flag_Contested = 8192;
 	public RustText capturePointText; 
 	public RustText captureOwnerName; 
 	public Image captureProgressImage; 
@@ -18,13 +18,13 @@ public const BaseEntity.Flags Flag_Contested = 8192;
 	public Transform computerPoint; 
 
 
-public bool IsContested() { }
+	public bool IsContested() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public override void PostNetworkUpdate() { }
+	public override void PostNetworkUpdate() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

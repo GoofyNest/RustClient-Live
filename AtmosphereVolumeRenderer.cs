@@ -13,51 +13,51 @@ public class AtmosphereVolumeRenderer : MonoBehaviour // TypeDefIndex: 10640
 	private static HashSet<AtmosphereVolume> registeredVolumes; 
 	private List<AtmosphereVolumeRenderer.CurrentVolumeEntry> currentVolumes; 
 
-private static bool isSupported { get; }
-public Camera TargetCamera { get; }
+	private static bool isSupported { get; }
+	public Camera TargetCamera { get; }
 
 
-private static bool get_isSupported() { }
+	private static bool get_isSupported() { }
 
-public Camera get_TargetCamera() { }
+	public Camera get_TargetCamera() { }
 
-public static void Clear() { }
+	public static void Clear() { }
 
-public static void Register(AtmosphereVolume volume) { }
+	public static void Register(AtmosphereVolume volume) { }
 
-public static void Unregister(AtmosphereVolume volume) { }
+	public static void Unregister(AtmosphereVolume volume) { }
 
-private void OnEnable() { }
+	private void OnEnable() { }
 
-private void OnDisable() { }
+	private void OnDisable() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void CheckCommandBuffer() { }
+	private void CheckCommandBuffer() { }
 
-private void CleanupCommandBuffer() { }
+	private void CleanupCommandBuffer() { }
 
-private void CheckMaterials() { }
+	private void CheckMaterials() { }
 
-private void CleanupMaterials() { }
+	private void CleanupMaterials() { }
 
-private void UpdateVolumeMesh() { }
+	private void UpdateVolumeMesh() { }
 
-public void FindAndSortVolumes(Camera camera) { }
+	public void FindAndSortVolumes(Camera camera) { }
 
-public void UpdateAtmosphere() { }
+	public void UpdateAtmosphere() { }
 
-private void SetFrustumGlobalShaderParams(CommandBuffer cb, Camera camera) { }
+	private void SetFrustumGlobalShaderParams(CommandBuffer cb, Camera camera) { }
 
-private bool SetGlobalShaderParams(CommandBuffer cb) { }
+	private bool SetGlobalShaderParams(CommandBuffer cb) { }
 
-private void ClearGlobalShaderParams(CommandBuffer cb) { }
+	private void ClearGlobalShaderParams(CommandBuffer cb) { }
 
-private void FillCommandBuffer(CommandBuffer cb) { }
+	private void FillCommandBuffer(CommandBuffer cb) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 
@@ -67,7 +67,7 @@ private struct AtmosphereVolumeRenderer.CurrentVolumeEntry // TypeDefIndex: 1064
 	public float distanceSqr; 
 
 
-public void .ctor(AtmosphereVolume volume, float distance) { }
+	public void .ctor(AtmosphereVolume volume, float distance) { }
 
 }
 
@@ -77,11 +77,11 @@ private sealed class AtmosphereVolumeRenderer.<>c // TypeDefIndex: 10642
 	public static Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry> <>9__28_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <FindAndSortVolumes>b__28_0(AtmosphereVolumeRenderer.CurrentVolumeEntry x, AtmosphereVolumeRenderer.CurrentVolumeEntry y) { }
+	internal int <FindAndSortVolumes>b__28_0(AtmosphereVolumeRenderer.CurrentVolumeEntry x, AtmosphereVolumeRenderer.CurrentVolumeEntry y) { }
 
 }
 

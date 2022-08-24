@@ -6,15 +6,15 @@ public class PhotoPanel : MonoBehaviour, IImageReceiver // TypeDefIndex: 8816
 	private Texture2D _texture; 
 
 
-public void OnItem(Item item) { }
+	public void OnItem(Item item) { }
 
-public void OnImageLoaded(Texture2D texture) { }
+	public void OnImageLoaded(Texture2D texture) { }
 
-public void OnMessageChanged() { }
+	public void OnMessageChanged() { }
 
-public void OnDestroy() { }
+	public void OnDestroy() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

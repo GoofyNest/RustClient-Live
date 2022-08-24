@@ -1,11 +1,11 @@
 public class ResourceDepositManager : BaseEntity // TypeDefIndex: 9570
 {
 	public static ResourceDepositManager _manager; 
-private const int resolution = 20;
+	private const int resolution = 20;
 	public Dictionary<Vector2i, ResourceDepositManager.ResourceDeposit> _deposits; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -16,18 +16,18 @@ public class ResourceDepositManager.ResourceDeposit // TypeDefIndex: 9571
 	public List<ResourceDepositManager.ResourceDeposit.ResourceDepositEntry> _resources; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
-public void Add(ItemDefinition type, float efficiency, int amount, float workNeeded, ResourceDepositManager.ResourceDeposit.surveySpawnType spawnType, bool liquid = False) { }
+	public void Add(ItemDefinition type, float efficiency, int amount, float workNeeded, ResourceDepositManager.ResourceDeposit.surveySpawnType spawnType, bool liquid = False) { }
 
 }
 
 public enum ResourceDepositManager.ResourceDeposit.surveySpawnType // TypeDefIndex: 9572
 {
 	public int value__; 
-public const ResourceDepositManager.ResourceDeposit.surveySpawnType ITEM = 0;
-public const ResourceDepositManager.ResourceDeposit.surveySpawnType OIL = 1;
-public const ResourceDepositManager.ResourceDeposit.surveySpawnType WATER = 2;
+	public const ResourceDepositManager.ResourceDeposit.surveySpawnType ITEM = 0;
+	public const ResourceDepositManager.ResourceDeposit.surveySpawnType OIL = 1;
+	public const ResourceDepositManager.ResourceDeposit.surveySpawnType WATER = 2;
 
 }
 
@@ -43,9 +43,9 @@ public class ResourceDepositManager.ResourceDeposit.ResourceDepositEntry // Type
 	public bool isLiquid; 
 
 
-public void Subtract(int subamount) { }
+	public void Subtract(int subamount) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

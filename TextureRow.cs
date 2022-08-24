@@ -10,52 +10,52 @@ public class TextureRow : MaterialRow // TypeDefIndex: 7759
 	private Texture Default; 
 	private FileSystemWatcher watcher; 
 
-public bool IsDefault { get; }
-public bool IsClear { get; }
+	public bool IsDefault { get; }
+	public bool IsClear { get; }
 
 
-public void Update() { }
+	public void Update() { }
 
-public void SetFilenameText(string filename) { }
+	public void SetFilenameText(string filename) { }
 
-public void OnDisable() { }
+	public void OnDisable() { }
 
-public void OpenFileBrowser() { }
-
-	[IteratorStateMachineAttribute] 
-public IEnumerator BrowseForTexture() { }
-
-public void Load(string fullname) { }
-
-public void SetTexture(Texture tex) { }
-
-public bool get_IsDefault() { }
-
-public bool get_IsClear() { }
-
-public override void Read(Material source, Material def) { }
-
-public void OpenFileLocation() { }
-
-public void SaveFile() { }
+	public void OpenFileBrowser() { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator DoSaveFile() { }
+	public IEnumerator BrowseForTexture() { }
 
-public void ResetToDefault() { }
+	public void Load(string fullname) { }
 
-public void ResetToClear() { }
+	public void SetTexture(Texture tex) { }
 
-public void StartWatching() { }
+	public bool get_IsDefault() { }
 
-public void FileChanged(string name) { }
+	public bool get_IsClear() { }
 
-public void StopWatching() { }
+	public override void Read(Material source, Material def) { }
 
-public void .ctor() { }
+	public void OpenFileLocation() { }
+
+	public void SaveFile() { }
+
+	[IteratorStateMachineAttribute] 
+	private IEnumerator DoSaveFile() { }
+
+	public void ResetToDefault() { }
+
+	public void ResetToClear() { }
+
+	public void StartWatching() { }
+
+	public void FileChanged(string name) { }
+
+	public void StopWatching() { }
+
+	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-private void <StartWatching>b__26_0(object a, FileSystemEventArgs e) { }
+	private void <StartWatching>b__26_0(object a, FileSystemEventArgs e) { }
 
 }
 
@@ -65,26 +65,26 @@ private sealed class TextureRow.<BrowseForTexture>d__12 : IEnumerator<object>, I
 	private object <>2__current; 
 	public TextureRow <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -94,26 +94,26 @@ private sealed class TextureRow.<DoSaveFile>d__22 : IEnumerator<object>, IEnumer
 	private object <>2__current; 
 	public TextureRow <>4__this; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

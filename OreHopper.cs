@@ -8,19 +8,19 @@ public class OreHopper : PercentFullStorageContainer // TypeDefIndex: 8284
 	private Nullable<int> lastSetLootTypeIndex; 
 
 
-protected override void OnPercentFullChanged(float newPercentFull) { }
+	protected override void OnPercentFullChanged(float newPercentFull) { }
 
-private void SetVisualOreLevel(float percentFull) { }
+	private void SetVisualOreLevel(float percentFull) { }
 
-public void VisualLerpToOreLevel() { }
+	public void VisualLerpToOreLevel() { }
 
-private void OreVisualLerpUpdate() { }
+	private void OreVisualLerpUpdate() { }
 
-protected override void ClientInit(Entity info) { }
+	protected override void ClientInit(Entity info) { }
 
-public void SetOreMat(int lootTypeIndex, ParticleSystem[] unloadingFX, ParticleSystem[] particleFX) { }
+	public void SetOreMat(int lootTypeIndex, ParticleSystem[] unloadingFX, ParticleSystem[] particleFX) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

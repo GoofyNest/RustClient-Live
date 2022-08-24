@@ -4,14 +4,14 @@ internal class WebRequestPrefixElement // TypeDefIndex: 2890
 	internal IWebRequestCreate creator; 
 	internal Type creatorType; 
 
-public IWebRequestCreate Creator { get; set; }
+	public IWebRequestCreate Creator { get; set; }
 
 
-public IWebRequestCreate get_Creator() { }
+	public IWebRequestCreate get_Creator() { }
 
-public void set_Creator(IWebRequestCreate value) { }
+	public void set_Creator(IWebRequestCreate value) { }
 
-public void .ctor(string P, IWebRequestCreate C) { }
+	public void .ctor(string P, IWebRequestCreate C) { }
 
 }
 

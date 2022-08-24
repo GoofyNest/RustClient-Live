@@ -12,42 +12,42 @@ public class CraftingQueueIcon : MonoBehaviour, IPointerUpHandler, IEventSystemH
 	private ScrollRect scrollRect; 
 	private bool pointerOverButton; 
 
-public string timeLeftString { get; }
+	public string timeLeftString { get; }
 
 
-private void Awake() { }
+	private void Awake() { }
 
-private void Update() { }
+	private void Update() { }
 
-public string get_timeLeftString() { }
+	public string get_timeLeftString() { }
 
-internal void OnTaskStart(float endTime) { }
+	internal void OnTaskStart(float endTime) { }
 
-internal void ResetEndTime() { }
+	internal void ResetEndTime() { }
 
-internal void Finished(bool success, int amountleft) { }
+	internal void Finished(bool success, int amountleft) { }
 
-internal void Init(int taskid, int itemid, int amount, int skinid, ScrollRect scrollRect) { }
+	internal void Init(int taskid, int itemid, int amount, int skinid, ScrollRect scrollRect) { }
 
-private void Cancel() { }
+	private void Cancel() { }
 
-private void FastTrack() { }
+	private void FastTrack() { }
 
-public void MoveIconToFront() { }
+	public void MoveIconToFront() { }
 
-public void OnPointerEnter(PointerEventData eventData) { }
+	public void OnPointerEnter(PointerEventData eventData) { }
 
-public void OnPointerExit(PointerEventData eventData) { }
+	public void OnPointerExit(PointerEventData eventData) { }
 
-public void OnPointerUp(PointerEventData eventData) { }
+	public void OnPointerUp(PointerEventData eventData) { }
 
-public void OnDrag(PointerEventData eventData) { }
+	public void OnDrag(PointerEventData eventData) { }
 
-public void OnBeginDrag(PointerEventData eventData) { }
+	public void OnBeginDrag(PointerEventData eventData) { }
 
-public void OnEndDrag(PointerEventData eventData) { }
+	public void OnEndDrag(PointerEventData eventData) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

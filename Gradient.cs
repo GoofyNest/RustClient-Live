@@ -2,43 +2,43 @@ public class Gradient : IEquatable<Gradient> // TypeDefIndex: 3464
 {
 	internal IntPtr m_Ptr; 
 
-public GradientColorKey[] colorKeys { get; }
-public GradientAlphaKey[] alphaKeys { get; }
+	public GradientColorKey[] colorKeys { get; }
+	public GradientAlphaKey[] alphaKeys { get; }
 
 
 	[FreeFunctionAttribute] 
-private static IntPtr Init() { }
+	private static IntPtr Init() { }
 
 	[FreeFunctionAttribute] 
-private void Cleanup() { }
+	private void Cleanup() { }
 
 	[FreeFunctionAttribute] 
-private bool Internal_Equals(IntPtr other) { }
+	private bool Internal_Equals(IntPtr other) { }
 
 	[RequiredByNativeCodeAttribute] 
-public void .ctor() { }
+	public void .ctor() { }
 
-protected override void Finalize() { }
-
-	[FreeFunctionAttribute] 
-public Color Evaluate(float time) { }
+	protected override void Finalize() { }
 
 	[FreeFunctionAttribute] 
-public GradientColorKey[] get_colorKeys() { }
+	public Color Evaluate(float time) { }
 
 	[FreeFunctionAttribute] 
-public GradientAlphaKey[] get_alphaKeys() { }
+	public GradientColorKey[] get_colorKeys() { }
 
 	[FreeFunctionAttribute] 
-public void SetKeys(GradientColorKey[] colorKeys, GradientAlphaKey[] alphaKeys) { }
+	public GradientAlphaKey[] get_alphaKeys() { }
 
-public override bool Equals(object o) { }
+	[FreeFunctionAttribute] 
+	public void SetKeys(GradientColorKey[] colorKeys, GradientAlphaKey[] alphaKeys) { }
 
-public bool Equals(Gradient other) { }
+	public override bool Equals(object o) { }
 
-public override int GetHashCode() { }
+	public bool Equals(Gradient other) { }
 
-private void Evaluate_Injected(float time, out Color ret) { }
+	public override int GetHashCode() { }
+
+	private void Evaluate_Injected(float time, out Color ret) { }
 
 }
 

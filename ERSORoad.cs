@@ -33,7 +33,7 @@ public class ERSORoad // TypeDefIndex: 7228
 	public float maxRandomYPositionDistance; 
 
 
-public void .ctor(SideObject so) { }
+	public void .ctor(SideObject so) { }
 
 }
 

@@ -12,15 +12,15 @@ public class MaterialEffect : ScriptableObject // TypeDefIndex: 10195
 	public AnimationCurve SpeedGainCurve; 
 
 
-public MaterialEffect.Entry GetEntryFromMaterial(PhysicMaterial mat) { }
+	public MaterialEffect.Entry GetEntryFromMaterial(PhysicMaterial mat) { }
 
-public MaterialEffect.Entry GetWaterEntry() { }
+	public MaterialEffect.Entry GetWaterEntry() { }
 
-public void SpawnOnRay(Ray ray, int mask, float length = 0,5, Vector3 forward, float speed = 0) { }
+	public void SpawnOnRay(Ray ray, int mask, float length = 0,5, Vector3 forward, float speed = 0) { }
 
-public void PlaySound(SoundDefinition definition, Vector3 position, float velocity = 0) { }
+	public void PlaySound(SoundDefinition definition, Vector3 position, float velocity = 0) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -31,7 +31,7 @@ public class MaterialEffect.Entry // TypeDefIndex: 10196
 	public SoundDefinition SoundDefinition; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

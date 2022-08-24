@@ -108,38 +108,38 @@ public class ERConnectionSibling // TypeDefIndex: 7191
 	public bool hasChanged; 
 
 
-public void Clear() { }
+	public void Clear() { }
 
-private void Init(ERModularRoad scr, float angle, Vector3 controlPoint, Transform transform) { }
+	private void Init(ERModularRoad scr, float angle, Vector3 controlPoint, Transform transform) { }
 
-public static ERConnectionSibling CreateInstance(ERModularRoad scr, float angle, Vector3 controlPoint, Transform transform, List<ERConnectionSibling> siblings) { }
+	public static ERConnectionSibling CreateInstance(ERModularRoad scr, float angle, Vector3 controlPoint, Transform transform, List<ERConnectionSibling> siblings) { }
 
-private void GetRoadTypeIndex(double id, List<QDQDOOQQDQODD> types) { }
+	private void GetRoadTypeIndex(double id, List<QDQDOOQQDQODD> types) { }
 
-public void ODDQDOCDCC(int index, List<QDQDOOQQDQODD> types) { }
+	public void ODDQDOCDCC(int index, List<QDQDOOQQDQODD> types) { }
 
-public void OCQQDCCOQO(List<QDQDOOQQDQODD> types) { }
+	public void OCQQDCCOQO(List<QDQDOOQQDQODD> types) { }
 
-private void BuildRoadShape() { }
+	private void BuildRoadShape() { }
 
-public static void SetPriorityConnection(List<ERConnectionSibling> siblings, int index) { }
+	public static void SetPriorityConnection(List<ERConnectionSibling> siblings, int index) { }
 
-public Vector2 GetVector2(Vector2 v1, Vector2 v2, Vector2 v3) { }
+	public Vector2 GetVector2(Vector2 v1, Vector2 v2, Vector2 v3) { }
 
-public void OCQODDOQQC(double type, List<QDQDOOQQDQODD> roadTypes) { }
+	public void OCQODDOQQC(double type, List<QDQDOOQQDQODD> roadTypes) { }
 
-public static Vector3 GetAngleControlPoint(Vector3 cp, Vector3 p0, Vector3 p1, Vector3 p2) { }
+	public static Vector3 GetAngleControlPoint(Vector3 cp, Vector3 p0, Vector3 p1, Vector3 p2) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 private class ERConnectionSibling.ᙃ : IComparer // TypeDefIndex: 7192
 {
 
-private int System.Collections.IComparer.Compare(object a, object b) { }
+	private int System.Collections.IComparer.Compare(object a, object b) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -149,11 +149,11 @@ private sealed class ERConnectionSibling.ᙄ // TypeDefIndex: 7193
 	public static Comparison<ERConnectionSibling> <>9__109_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal int <CreateInstance>b__109_0(ERConnectionSibling x, ERConnectionSibling y) { }
+	internal int <CreateInstance>b__109_0(ERConnectionSibling x, ERConnectionSibling y) { }
 
 }
 

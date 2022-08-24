@@ -10,16 +10,16 @@ public class Flashbang : TimedExplosive // TypeDefIndex: 8570
 	private SoundModulation.Modulator deafGain; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public void FlashFrom(Vector3 pos, float amount) { }
+	public void FlashFrom(Vector3 pos, float amount) { }
 
 	[BaseEntity.RPC_Client] 
-public void Client_DoFlash(BaseEntity.RPCMessage msg) { }
+	public void Client_DoFlash(BaseEntity.RPCMessage msg) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

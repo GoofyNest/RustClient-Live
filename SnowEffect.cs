@@ -6,13 +6,13 @@ public class SnowEffect : WeatherEffect // TypeDefIndex: 10072
 	public bool Stormy; 
 
 
-protected override float GetCurrentIntensity() { }
+	protected override float GetCurrentIntensity() { }
 
-protected override float GetUpdateInterval(float intensity) { }
+	protected override float GetUpdateInterval(float intensity) { }
 
-protected override void UpdatePosition(float intensity) { }
+	protected override void UpdatePosition(float intensity) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

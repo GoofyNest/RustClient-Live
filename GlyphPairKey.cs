@@ -5,9 +5,9 @@ public struct GlyphPairKey // TypeDefIndex: 6782
 	public long key; 
 
 
-public void .ctor(uint firstGlyphIndex, uint secondGlyphIndex) { }
+	public void .ctor(uint firstGlyphIndex, uint secondGlyphIndex) { }
 
-internal void .ctor(TMP_GlyphPairAdjustmentRecord record) { }
+	internal void .ctor(TMP_GlyphPairAdjustmentRecord record) { }
 
 }
 

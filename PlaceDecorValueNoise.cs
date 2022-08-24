@@ -6,9 +6,9 @@ public class PlaceDecorValueNoise : ProceduralComponent // TypeDefIndex: 10532
 	public float ObjectDensity; 
 
 
-public override void Process(uint seed) { }
+	public override void Process(uint seed) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

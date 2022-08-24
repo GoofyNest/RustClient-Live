@@ -6,7 +6,7 @@ public class ProgressChangedEventArgs : EventArgs
 	private readonly object userState; 
 
 
-public void .ctor(int progressPercentage, object userState) { }
+	public void .ctor(int progressPercentage, object userState) { }
 
 }
 

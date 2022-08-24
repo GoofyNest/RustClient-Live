@@ -8,21 +8,21 @@ public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 9939
 	private bool force; 
 
 
-protected override void InitLOD() { }
+	protected override void InitLOD() { }
 
-protected override void EnableLOD() { }
+	protected override void EnableLOD() { }
 
-protected override void DisableLOD() { }
+	protected override void DisableLOD() { }
 
-protected override void Show() { }
+	protected override void Show() { }
 
-protected override void Hide() { }
+	protected override void Hide() { }
 
-protected override void SetLOD(int newlod) { }
+	protected override void SetLOD(int newlod) { }
 
-protected override int GetLOD(float distance) { }
+	protected override int GetLOD(float distance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

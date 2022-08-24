@@ -7,15 +7,15 @@ public class TreadEffects : MonoBehaviour // TypeDefIndex: 8866
 	private float forwardSpeed; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void Update() { }
+	private void Update() { }
 
-private void UpdateTreadDirtEffects(float speedRatio) { }
+	private void UpdateTreadDirtEffects(float speedRatio) { }
 
-public void EnableTreadSmoke(int iWheel, bool bEnable) { }
+	public void EnableTreadSmoke(int iWheel, bool bEnable) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

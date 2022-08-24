@@ -22,15 +22,15 @@ internal sealed class ObjectProgress // TypeDefIndex: 1089
 	internal ParseRecord pr; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void Init() { }
+	internal void Init() { }
 
-internal void ArrayCountIncrement(int value) { }
+	internal void ArrayCountIncrement(int value) { }
 
-internal bool GetNext(out BinaryTypeEnum outBinaryTypeEnum, out object outTypeInformation) { }
+	internal bool GetNext(out BinaryTypeEnum outBinaryTypeEnum, out object outTypeInformation) { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

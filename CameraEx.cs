@@ -2,10 +2,10 @@ public static class CameraEx // TypeDefIndex: 5612
 {
 
 	[ExtensionAttribute] 
-public static void FocusOnRenderer(Camera cam, GameObject obj, Vector3 lookDirection, Vector3 Up, int layerMask = -1) { }
+	public static void FocusOnRenderer(Camera cam, GameObject obj, Vector3 lookDirection, Vector3 Up, int layerMask = -1) { }
 
 	[ExtensionAttribute] 
-public static void SaveScreenshot(Camera cam, string name, int width, int height, bool transparent, int SuperSampleSize, Nullable<Color> background) { }
+	public static void SaveScreenshot(Camera cam, string name, int width, int height, bool transparent, int SuperSampleSize, Nullable<Color> background) { }
 
 }
 
@@ -26,11 +26,11 @@ public class CameraEx : MonoBehaviour // TypeDefIndex: 11198
 	public float aspect; 
 
 
-private void OnPreRender() { }
+	private void OnPreRender() { }
 
-private void OnPostRender() { }
+	private void OnPostRender() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

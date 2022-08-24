@@ -6,9 +6,9 @@ public class MusicClip : ScriptableObject // TypeDefIndex: 9001
 	public List<float> fadeInPoints; 
 
 
-public float GetNextFadeInPoint(float currentClipTimeBars) { }
+	public float GetNextFadeInPoint(float currentClipTimeBars) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

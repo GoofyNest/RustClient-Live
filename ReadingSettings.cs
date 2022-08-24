@@ -28,81 +28,81 @@ public class ReadingSettings // TypeDefIndex: 7601
 	[CompilerGeneratedAttribute] 
 	private ReaderSettings <ReaderSettings>k__BackingField; 
 
-public UnexpectedTrackChunksCountPolicy UnexpectedTrackChunksCountPolicy { get; }
-public ExtraTrackChunkPolicy ExtraTrackChunkPolicy { get; }
-public UnknownChunkIdPolicy UnknownChunkIdPolicy { get; }
-public MissedEndOfTrackPolicy MissedEndOfTrackPolicy { get; }
-public SilentNoteOnPolicy SilentNoteOnPolicy { get; }
-public InvalidChunkSizePolicy InvalidChunkSizePolicy { get; }
-public UnknownFileFormatPolicy UnknownFileFormatPolicy { get; }
-public UnknownChannelEventPolicy UnknownChannelEventPolicy { get; }
-public UnknownChannelEventCallback UnknownChannelEventCallback { get; }
-public InvalidChannelEventParameterValuePolicy InvalidChannelEventParameterValuePolicy { get; }
-public InvalidMetaEventParameterValuePolicy InvalidMetaEventParameterValuePolicy { get; }
-public InvalidSystemCommonEventParameterValuePolicy InvalidSystemCommonEventParameterValuePolicy { get; }
-public NotEnoughBytesPolicy NotEnoughBytesPolicy { get; }
-public NoHeaderChunkPolicy NoHeaderChunkPolicy { get; }
-public ChunkTypesCollection CustomChunkTypes { get; }
-public EventTypesCollection CustomMetaEventTypes { get; }
-public Encoding TextEncoding { get; }
-public DecodeTextCallback DecodeTextCallback { get; }
-public ZeroLengthDataPolicy ZeroLengthDataPolicy { get; }
-public EndOfTrackStoringPolicy EndOfTrackStoringPolicy { get; }
-public ReaderSettings ReaderSettings { get; set; }
+	public UnexpectedTrackChunksCountPolicy UnexpectedTrackChunksCountPolicy { get; }
+	public ExtraTrackChunkPolicy ExtraTrackChunkPolicy { get; }
+	public UnknownChunkIdPolicy UnknownChunkIdPolicy { get; }
+	public MissedEndOfTrackPolicy MissedEndOfTrackPolicy { get; }
+	public SilentNoteOnPolicy SilentNoteOnPolicy { get; }
+	public InvalidChunkSizePolicy InvalidChunkSizePolicy { get; }
+	public UnknownFileFormatPolicy UnknownFileFormatPolicy { get; }
+	public UnknownChannelEventPolicy UnknownChannelEventPolicy { get; }
+	public UnknownChannelEventCallback UnknownChannelEventCallback { get; }
+	public InvalidChannelEventParameterValuePolicy InvalidChannelEventParameterValuePolicy { get; }
+	public InvalidMetaEventParameterValuePolicy InvalidMetaEventParameterValuePolicy { get; }
+	public InvalidSystemCommonEventParameterValuePolicy InvalidSystemCommonEventParameterValuePolicy { get; }
+	public NotEnoughBytesPolicy NotEnoughBytesPolicy { get; }
+	public NoHeaderChunkPolicy NoHeaderChunkPolicy { get; }
+	public ChunkTypesCollection CustomChunkTypes { get; }
+	public EventTypesCollection CustomMetaEventTypes { get; }
+	public Encoding TextEncoding { get; }
+	public DecodeTextCallback DecodeTextCallback { get; }
+	public ZeroLengthDataPolicy ZeroLengthDataPolicy { get; }
+	public EndOfTrackStoringPolicy EndOfTrackStoringPolicy { get; }
+	public ReaderSettings ReaderSettings { get; set; }
 
 
-public UnexpectedTrackChunksCountPolicy get_UnexpectedTrackChunksCountPolicy() { }
+	public UnexpectedTrackChunksCountPolicy get_UnexpectedTrackChunksCountPolicy() { }
 
-public ExtraTrackChunkPolicy get_ExtraTrackChunkPolicy() { }
+	public ExtraTrackChunkPolicy get_ExtraTrackChunkPolicy() { }
 
-public UnknownChunkIdPolicy get_UnknownChunkIdPolicy() { }
+	public UnknownChunkIdPolicy get_UnknownChunkIdPolicy() { }
 
-public MissedEndOfTrackPolicy get_MissedEndOfTrackPolicy() { }
+	public MissedEndOfTrackPolicy get_MissedEndOfTrackPolicy() { }
 
-public SilentNoteOnPolicy get_SilentNoteOnPolicy() { }
+	public SilentNoteOnPolicy get_SilentNoteOnPolicy() { }
 
-public InvalidChunkSizePolicy get_InvalidChunkSizePolicy() { }
+	public InvalidChunkSizePolicy get_InvalidChunkSizePolicy() { }
 
-public UnknownFileFormatPolicy get_UnknownFileFormatPolicy() { }
+	public UnknownFileFormatPolicy get_UnknownFileFormatPolicy() { }
 
-public UnknownChannelEventPolicy get_UnknownChannelEventPolicy() { }
-
-	[CompilerGeneratedAttribute] 
-public UnknownChannelEventCallback get_UnknownChannelEventCallback() { }
-
-public InvalidChannelEventParameterValuePolicy get_InvalidChannelEventParameterValuePolicy() { }
-
-public InvalidMetaEventParameterValuePolicy get_InvalidMetaEventParameterValuePolicy() { }
-
-public InvalidSystemCommonEventParameterValuePolicy get_InvalidSystemCommonEventParameterValuePolicy() { }
-
-public NotEnoughBytesPolicy get_NotEnoughBytesPolicy() { }
-
-public NoHeaderChunkPolicy get_NoHeaderChunkPolicy() { }
+	public UnknownChannelEventPolicy get_UnknownChannelEventPolicy() { }
 
 	[CompilerGeneratedAttribute] 
-public ChunkTypesCollection get_CustomChunkTypes() { }
+	public UnknownChannelEventCallback get_UnknownChannelEventCallback() { }
+
+	public InvalidChannelEventParameterValuePolicy get_InvalidChannelEventParameterValuePolicy() { }
+
+	public InvalidMetaEventParameterValuePolicy get_InvalidMetaEventParameterValuePolicy() { }
+
+	public InvalidSystemCommonEventParameterValuePolicy get_InvalidSystemCommonEventParameterValuePolicy() { }
+
+	public NotEnoughBytesPolicy get_NotEnoughBytesPolicy() { }
+
+	public NoHeaderChunkPolicy get_NoHeaderChunkPolicy() { }
 
 	[CompilerGeneratedAttribute] 
-public EventTypesCollection get_CustomMetaEventTypes() { }
+	public ChunkTypesCollection get_CustomChunkTypes() { }
 
 	[CompilerGeneratedAttribute] 
-public Encoding get_TextEncoding() { }
+	public EventTypesCollection get_CustomMetaEventTypes() { }
 
 	[CompilerGeneratedAttribute] 
-public DecodeTextCallback get_DecodeTextCallback() { }
-
-public ZeroLengthDataPolicy get_ZeroLengthDataPolicy() { }
-
-public EndOfTrackStoringPolicy get_EndOfTrackStoringPolicy() { }
+	public Encoding get_TextEncoding() { }
 
 	[CompilerGeneratedAttribute] 
-public ReaderSettings get_ReaderSettings() { }
+	public DecodeTextCallback get_DecodeTextCallback() { }
+
+	public ZeroLengthDataPolicy get_ZeroLengthDataPolicy() { }
+
+	public EndOfTrackStoringPolicy get_EndOfTrackStoringPolicy() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_ReaderSettings(ReaderSettings value) { }
+	public ReaderSettings get_ReaderSettings() { }
 
-public void .ctor() { }
+	[CompilerGeneratedAttribute] 
+	public void set_ReaderSettings(ReaderSettings value) { }
+
+	public void .ctor() { }
 
 }
 

@@ -18,25 +18,25 @@ public class Crosshair : BaseMonoBehaviour // TypeDefIndex: 10843
 	internal int activePoints; 
 
 
-private void Start() { }
+	private void Start() { }
 
-private void FixedUpdate() { }
+	private void FixedUpdate() { }
 
-private void Update() { }
+	private void Update() { }
 
-public void PointsEffect() { }
+	public void PointsEffect() { }
 
-public void DoPointsSplash(int amount) { }
+	public void DoPointsSplash(int amount) { }
 
-private void ClearPoints() { }
+	private void ClearPoints() { }
 
-public static void OnHit(bool wasKillShot = False) { }
+	public static void OnHit(bool wasKillShot = False) { }
 
-private bool ShouldShowCrosshair() { }
+	private bool ShouldShowCrosshair() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
 }
 

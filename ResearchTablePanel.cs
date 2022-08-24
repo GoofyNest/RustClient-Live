@@ -14,28 +14,28 @@ public class ResearchTablePanel : LootPanel // TypeDefIndex: 11048
 	public GameObject[] workbenchReqs; 
 	private Item _researchItem; 
 
-public Item researchItem { get; }
+	public Item researchItem { get; }
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-public override void Update() { }
+	public override void Update() { }
 
-public void ResearchClicked() { }
+	public void ResearchClicked() { }
 
-public Item get_researchItem() { }
+	public Item get_researchItem() { }
 
-public bool IsResearching() { }
+	public bool IsResearching() { }
 
-public float ResearchTimeLeft() { }
+	public float ResearchTimeLeft() { }
 
-private void Refresh() { }
+	private void Refresh() { }
 
-private void UpdateResearchProgress() { }
+	private void UpdateResearchProgress() { }
 
-public void UpdateWorkbenchNotifications() { }
+	public void UpdateWorkbenchNotifications() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

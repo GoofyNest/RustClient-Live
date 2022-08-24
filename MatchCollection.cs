@@ -10,25 +10,25 @@ public class MatchCollection : ICollection, IEnumerable // TypeDefIndex: 2622
 	internal int _prevlen; 
 	private static int infinite; 
 
-public int Count { get; }
-public object SyncRoot { get; }
+	public int Count { get; }
+	public object SyncRoot { get; }
 
 
-internal void .ctor(Regex regex, string input, int beginning, int length, int startat) { }
+	internal void .ctor(Regex regex, string input, int beginning, int length, int startat) { }
 
-internal Match GetMatch(int i) { }
+	internal Match GetMatch(int i) { }
 
-public int get_Count() { }
+	public int get_Count() { }
 
-public object get_SyncRoot() { }
+	public object get_SyncRoot() { }
 
-public void CopyTo(Array array, int arrayIndex) { }
+	public void CopyTo(Array array, int arrayIndex) { }
 
-public IEnumerator GetEnumerator() { }
+	public IEnumerator GetEnumerator() { }
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 

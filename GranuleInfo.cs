@@ -16,7 +16,7 @@ public class GranuleInfo // TypeDefIndex: 7410
 	internal int WindowSwitchingFlag; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
 }
 

@@ -17,13 +17,13 @@ public class PlayableDirector : Behaviour
 
 
 	[RequiredByNativeCodeAttribute] 
-private void SendOnPlayableDirectorPlay() { }
+	private void SendOnPlayableDirectorPlay() { }
 
 	[RequiredByNativeCodeAttribute] 
-private void SendOnPlayableDirectorPause() { }
+	private void SendOnPlayableDirectorPause() { }
 
 	[RequiredByNativeCodeAttribute] 
-private void SendOnPlayableDirectorStop() { }
+	private void SendOnPlayableDirectorStop() { }
 
 }
 

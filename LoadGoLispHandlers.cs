@@ -6,22 +6,22 @@ internal struct LoadGoLispHandlers // TypeDefIndex: 7708
 	private string <Code>k__BackingField; 
 
 	[JsonPropertyAttribute] 
-public string GameId { get; set; }
+	public string GameId { get; set; }
 	[JsonPropertyAttribute] 
-public string Code { get; set; }
+	public string Code { get; set; }
 
 
 	[CompilerGeneratedAttribute] 
-public string get_GameId() { }
+	public string get_GameId() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_GameId(string value) { }
+	public void set_GameId(string value) { }
 
 	[CompilerGeneratedAttribute] 
-public string get_Code() { }
+	public string get_Code() { }
 
 	[CompilerGeneratedAttribute] 
-public void set_Code(string value) { }
+	public void set_Code(string value) { }
 
 }
 

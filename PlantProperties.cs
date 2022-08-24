@@ -35,21 +35,21 @@ public class PlantProperties : ScriptableObject // TypeDefIndex: 9639
 	public int BaseMarketValue; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public enum PlantProperties.State // TypeDefIndex: 9640
 {
 	public int value__; 
-public const PlantProperties.State Seed = 0;
-public const PlantProperties.State Seedling = 1;
-public const PlantProperties.State Sapling = 2;
-public const PlantProperties.State Crossbreed = 3;
-public const PlantProperties.State Mature = 4;
-public const PlantProperties.State Fruiting = 5;
-public const PlantProperties.State Ripe = 6;
-public const PlantProperties.State Dying = 7;
+	public const PlantProperties.State Seed = 0;
+	public const PlantProperties.State Seedling = 1;
+	public const PlantProperties.State Sapling = 2;
+	public const PlantProperties.State Crossbreed = 3;
+	public const PlantProperties.State Mature = 4;
+	public const PlantProperties.State Fruiting = 5;
+	public const PlantProperties.State Ripe = 6;
+	public const PlantProperties.State Dying = 7;
 
 }
 
@@ -63,10 +63,10 @@ public struct PlantProperties.Stage // TypeDefIndex: 9641
 	public GameObjectRef skinObject; 
 	public bool IgnoreConditions; 
 
-public float lifeLengthSeconds { get; }
+	public float lifeLengthSeconds { get; }
 
 
-public float get_lifeLengthSeconds() { }
+	public float get_lifeLengthSeconds() { }
 
 }
 

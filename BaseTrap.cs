@@ -5,57 +5,57 @@ public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6326
 	public ulong triggeredID; 
 
 
-public static void ResetToPool(Landmine instance) { }
+	public static void ResetToPool(Landmine instance) { }
 
-public void ResetToPool() { }
+	public void ResetToPool() { }
 
-public virtual void Dispose() { }
+	public virtual void Dispose() { }
 
-public virtual void EnterPool() { }
+	public virtual void EnterPool() { }
 
-public virtual void LeavePool() { }
+	public virtual void LeavePool() { }
 
-public void CopyTo(Landmine instance) { }
+	public void CopyTo(Landmine instance) { }
 
-public Landmine Copy() { }
+	public Landmine Copy() { }
 
-public static Landmine Deserialize(Stream stream) { }
+	public static Landmine Deserialize(Stream stream) { }
 
-public static Landmine DeserializeLengthDelimited(Stream stream) { }
+	public static Landmine DeserializeLengthDelimited(Stream stream) { }
 
-public static Landmine DeserializeLength(Stream stream, int length) { }
+	public static Landmine DeserializeLength(Stream stream, int length) { }
 
-public static Landmine Deserialize(byte[] buffer) { }
+	public static Landmine Deserialize(byte[] buffer) { }
 
-public void FromProto(Stream stream, bool isDelta = False) { }
+	public void FromProto(Stream stream, bool isDelta = False) { }
 
-public virtual void WriteToStream(Stream stream) { }
+	public virtual void WriteToStream(Stream stream) { }
 
-public virtual void WriteToStreamDelta(Stream stream, Landmine previous) { }
+	public virtual void WriteToStreamDelta(Stream stream, Landmine previous) { }
 
-public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
 
-public static Landmine Deserialize(byte[] buffer, Landmine instance, bool isDelta = False) { }
+	public static Landmine Deserialize(byte[] buffer, Landmine instance, bool isDelta = False) { }
 
-public static Landmine Deserialize(Stream stream, Landmine instance, bool isDelta) { }
+	public static Landmine Deserialize(Stream stream, Landmine instance, bool isDelta) { }
 
-public static Landmine DeserializeLengthDelimited(Stream stream, Landmine instance, bool isDelta) { }
+	public static Landmine DeserializeLengthDelimited(Stream stream, Landmine instance, bool isDelta) { }
 
-public static Landmine DeserializeLength(Stream stream, int length, Landmine instance, bool isDelta) { }
+	public static Landmine DeserializeLength(Stream stream, int length, Landmine instance, bool isDelta) { }
 
-public static void SerializeDelta(Stream stream, Landmine instance, Landmine previous) { }
+	public static void SerializeDelta(Stream stream, Landmine instance, Landmine previous) { }
 
-public static void Serialize(Stream stream, Landmine instance) { }
+	public static void Serialize(Stream stream, Landmine instance) { }
 
-public byte[] ToProtoBytes() { }
+	public byte[] ToProtoBytes() { }
 
-public void ToProto(Stream stream) { }
+	public void ToProto(Stream stream) { }
 
-public static byte[] SerializeToBytes(Landmine instance) { }
+	public static byte[] SerializeToBytes(Landmine instance) { }
 
-public static void SerializeLengthDelimited(Stream stream, Landmine instance) { }
+	public static void SerializeLengthDelimited(Stream stream, Landmine instance) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -65,34 +65,34 @@ public class BearTrap : BaseTrap // TypeDefIndex: 8362
 	protected Animator animator; 
 	private bool initialized; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public bool Armed() { }
+	public bool Armed() { }
 
-public override void InitShared() { }
+	public override void InitShared() { }
 
-public override bool CanPickup(BasePlayer player) { }
+	public override bool CanPickup(BasePlayer player) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Arm_Beartrap(BasePlayer player) { }
+	public void Arm_Beartrap(BasePlayer player) { }
 
-public bool Menu_Arm_ShowIf(BasePlayer player) { }
+	public bool Menu_Arm_ShowIf(BasePlayer player) { }
 
-public override void ClientOnEnable() { }
+	public override void ClientOnEnable() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -107,30 +107,30 @@ public class Landmine : BaseTrap // TypeDefIndex: 8402
 	private ulong triggerPlayerID; 
 	public List<DamageTypeEntry> damageTypes; 
 
-public override bool HasMenuOptions { get; }
+	public override bool HasMenuOptions { get; }
 
 
-public override void GetMenuOptions(List<Option> list) { }
+	public override void GetMenuOptions(List<Option> list) { }
 
-public override bool get_HasMenuOptions() { }
+	public override bool get_HasMenuOptions() { }
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public bool Triggered() { }
+	public bool Triggered() { }
 
-public bool Armed() { }
+	public bool Armed() { }
 
-public override void Load(BaseNetworkable.LoadInfo info) { }
+	public override void Load(BaseNetworkable.LoadInfo info) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 
 	[BaseEntity.Menu.Icon] 
 	[BaseEntity.Menu.ShowIf] 
-public void Arm_Landmine(BasePlayer player) { }
+	public void Arm_Landmine(BasePlayer player) { }
 
-public bool Menu_Disarm_ShowIf(BasePlayer player) { }
+	public bool Menu_Disarm_ShowIf(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -148,33 +148,33 @@ public class GunTrap : StorageContainer // TypeDefIndex: 8572
 	public TargetTrigger trigger; 
 
 
-public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-public override string Categorize() { }
+	public override string Categorize() { }
 
-public bool IsTriggered() { }
+	public bool IsTriggered() { }
 
-public Vector3 GetEyePosition() { }
+	public Vector3 GetEyePosition() { }
 
 	[BaseEntity.RPC_Client] 
-public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
+	public void CLIENT_FireGun(BaseEntity.RPCMessage rpc) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public static class GunTrap.GunTrapFlags // TypeDefIndex: 8573
 {
-public const BaseEntity.Flags Triggered = 128;
+	public const BaseEntity.Flags Triggered = 128;
 
 }
 
 public class BaseTrap : DecayEntity // TypeDefIndex: 9684
 {
 
-public override bool DisplayHealthInfo(BasePlayer player) { }
+	public override bool DisplayHealthInfo(BasePlayer player) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -183,23 +183,23 @@ public class BaseTrapTrigger : TriggerBase // TypeDefIndex: 9685
 	public BaseTrap _trap; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class BearTrapTrigger : BaseTrapTrigger // TypeDefIndex: 9686
 {
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 9687
 {
 
-public override void TrappedEffect() { }
+	public override void TrappedEffect() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -215,7 +215,7 @@ public class TrappableWildlife : ScriptableObject // TypeDefIndex: 9688
 	public float xpScale; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -227,7 +227,7 @@ public class TrappableWildlife.BaitType // TypeDefIndex: 9689
 	public int maxToConsume; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -242,23 +242,23 @@ public class WildlifeTrap : StorageContainer // TypeDefIndex: 9690
 	protected float nextEffectTime; 
 
 
-public bool HasCatch() { }
+	public bool HasCatch() { }
 
-public bool IsTrapActive() { }
+	public bool IsTrapActive() { }
 
-public override void ResetState() { }
+	public override void ResetState() { }
 
-public void Update() { }
+	public void Update() { }
 
-public virtual void TrappedEffect() { }
+	public virtual void TrappedEffect() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
 public static class WildlifeTrap.WildlifeTrapFlags // TypeDefIndex: 9691
 {
-public const BaseEntity.Flags Occupied = 128;
+	public const BaseEntity.Flags Occupied = 128;
 
 }
 
@@ -268,7 +268,7 @@ public class WildlifeTrap.WildlifeWeight // TypeDefIndex: 9692
 	public int weight; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -287,60 +287,60 @@ public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 9819
 	private static GameObject _menuUi; 
 	private static string lastWrittenValue; 
 
-public static bool needsSetup { get; }
-public static bool isPresent { get; }
+	public static bool needsSetup { get; }
+	public static bool isPresent { get; }
 
 
-public static bool get_needsSetup() { }
+	public static bool get_needsSetup() { }
 
-public static bool get_isPresent() { }
+	public static bool get_isPresent() { }
 
-public static void RunDefaults() { }
+	public static void RunDefaults() { }
 
-public static void Init_Tier0() { }
+	public static void Init_Tier0() { }
 
-public static void Init_Systems() { }
+	public static void Init_Systems() { }
 
-public static void Init_Config() { }
+	public static void Init_Config() { }
 
-public static void NetworkInitRaknet() { }
+	public static void NetworkInitRaknet() { }
 
-public static void NetworkInitSteamworks(bool enableSteamDatagramRelay) { }
-
-	[IteratorStateMachineAttribute] 
-private IEnumerator Start() { }
-
-public static GameObject LoadEngineUI() { }
-
-public static GameObject LoadGameUI() { }
-
-public static GameObject LoadMenuUI() { }
-
-private static GameObject InstantiatePrefabPersistent(string path) { }
-
-public static void ToggleUIHack() { }
-
-public static void SetUIVisible(bool visible) { }
+	public static void NetworkInitSteamworks(bool enableSteamDatagramRelay) { }
 
 	[IteratorStateMachineAttribute] 
-private IEnumerator ClientStartup() { }
+	private IEnumerator Start() { }
 
-protected void Update() { }
+	public static GameObject LoadEngineUI() { }
 
-private void StartupShared() { }
+	public static GameObject LoadGameUI() { }
 
-public void ThrowError(string error) { }
+	public static GameObject LoadMenuUI() { }
 
-public void ExitGame() { }
+	private static GameObject InstantiatePrefabPersistent(string path) { }
+
+	public static void ToggleUIHack() { }
+
+	public static void SetUIVisible(bool visible) { }
 
 	[IteratorStateMachineAttribute] 
-public static IEnumerator LoadingUpdate(string str) { }
+	private IEnumerator ClientStartup() { }
 
-public static void WriteToLog(string str) { }
+	protected void Update() { }
 
-public void .ctor() { }
+	private void StartupShared() { }
 
-private static void .cctor() { }
+	public void ThrowError(string error) { }
+
+	public void ExitGame() { }
+
+	[IteratorStateMachineAttribute] 
+	public static IEnumerator LoadingUpdate(string str) { }
+
+	public static void WriteToLog(string str) { }
+
+	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 
@@ -353,17 +353,17 @@ private sealed class Bootstrap.<>c // TypeDefIndex: 9820
 	public static Func<int> <>9__14_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal GameObject <Init_Tier0>b__13_0(string str) { }
+	internal GameObject <Init_Tier0>b__13_0(string str) { }
 
-internal void <Init_Tier0>b__13_1() { }
+	internal void <Init_Tier0>b__13_1() { }
 
-internal bool <Init_Tier0>b__13_2() { }
+	internal bool <Init_Tier0>b__13_2() { }
 
-internal int <Init_Systems>b__14_0() { }
+	internal int <Init_Systems>b__14_0() { }
 
 }
 
@@ -376,32 +376,32 @@ private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, 
 	private AssetBundleBackend <newBackend>5__3; 
 	private BenchmarkTimer <>7__wrap3; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
+	private void <>m__Finally1() { }
 
-private void <>m__Finally2() { }
+	private void <>m__Finally2() { }
 
-private void <>m__Finally3() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private void <>m__Finally3() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -413,34 +413,34 @@ private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnum
 	private BenchmarkTimer <>7__wrap1; 
 	private AsyncOperation <op>5__3; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
+	private bool MoveNext() { }
 
-private void <>m__Finally1() { }
+	private void <>m__Finally1() { }
 
-private void <>m__Finally2() { }
+	private void <>m__Finally2() { }
 
-private void <>m__Finally3() { }
+	private void <>m__Finally3() { }
 
-private void <>m__Finally4() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private void <>m__Finally4() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
@@ -450,26 +450,26 @@ private sealed class Bootstrap.<LoadingUpdate>d__33 : IEnumerator<object>, IEnum
 	private object <>2__current; 
 	public string str; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 

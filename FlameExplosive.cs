@@ -10,7 +10,7 @@ public class FlameExplosive : TimedExplosive // TypeDefIndex: 9539
 	public AnimationCurve spreadCurve; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

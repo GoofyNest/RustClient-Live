@@ -3,19 +3,19 @@ public class SpriteArcadeEntity : ArcadeEntity // TypeDefIndex: 8773
 	public SpriteRenderer spriteRenderer; 
 
 
-public override void SetVisible(bool wantsVis) { }
+	public override void SetVisible(bool wantsVis) { }
 
-public override void Initialize() { }
+	public override void Initialize() { }
 
-public override bool IsVisible() { }
+	public override bool IsVisible() { }
 
-public virtual void SetHeading(Vector3 newHeading) { }
+	public virtual void SetHeading(Vector3 newHeading) { }
 
-public void UpdateSprite() { }
+	public void UpdateSprite() { }
 
-public override void PostLoad() { }
+	public override void PostLoad() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

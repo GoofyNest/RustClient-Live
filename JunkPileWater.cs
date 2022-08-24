@@ -4,7 +4,7 @@ public class JunkPileWater : JunkPile // TypeDefIndex: 8797
 	public bool debugDraw; 
 
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

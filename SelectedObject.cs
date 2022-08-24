@@ -7,11 +7,11 @@ public class SelectedObject : ScriptableObject // TypeDefIndex: 7235
 	public ERCrossingPrefabs prefab; 
 
 
-public void Init(ERModularRoad rScr, ERCrossingPrefabs pScr, int marker) { }
+	public void Init(ERModularRoad rScr, ERCrossingPrefabs pScr, int marker) { }
 
-public static SelectedObject CreateInstance(ERModularRoad rScr, ERCrossingPrefabs pScr, int marker) { }
+	public static SelectedObject CreateInstance(ERModularRoad rScr, ERCrossingPrefabs pScr, int marker) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

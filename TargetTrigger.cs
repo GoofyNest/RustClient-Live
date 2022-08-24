@@ -4,9 +4,9 @@ public class TargetTrigger : TriggerBase // TypeDefIndex: 9577
 	public Transform losEyes; 
 
 
-internal override GameObject InterestedInObject(GameObject obj) { }
+	internal override GameObject InterestedInObject(GameObject obj) { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

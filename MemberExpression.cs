@@ -6,17 +6,17 @@ public class MemberExpression : Expression
 	[CompilerGeneratedAttribute] 
 	private readonly Expression <Expression>k__BackingField; 
 
-public MemberInfo Member { get; }
-public Expression Expression { get; }
+	public MemberInfo Member { get; }
+	public Expression Expression { get; }
 
 
-public MemberInfo get_Member() { }
+	public MemberInfo get_Member() { }
 
 	[CompilerGeneratedAttribute] 
-public Expression get_Expression() { }
+	public Expression get_Expression() { }
 
 	[ExcludeFromCodeCoverageAttribute] 
-internal virtual MemberInfo GetMember() { }
+	internal virtual MemberInfo GetMember() { }
 
 }
 

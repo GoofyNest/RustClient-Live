@@ -4,13 +4,13 @@ internal class FixupHolderList // TypeDefIndex: 1040
 	internal int m_count; 
 
 
-internal void .ctor() { }
+	internal void .ctor() { }
 
-internal void .ctor(int startingSize) { }
+	internal void .ctor(int startingSize) { }
 
-internal virtual void Add(FixupHolder fixup) { }
+	internal virtual void Add(FixupHolder fixup) { }
 
-private void EnlargeArray() { }
+	private void EnlargeArray() { }
 
 }
 

@@ -8,9 +8,9 @@ public class Igniter : IOEntity // TypeDefIndex: 8713
 	public int PowerConsumption; 
 
 
-public override int ConsumptionAmount() { }
+	public override int ConsumptionAmount() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 

@@ -5,20 +5,20 @@ public class MenuBackgroundVideo : SingletonComponent<MenuBackgroundVideo> // Ty
 	private bool errored; 
 
 
-protected override void Awake() { }
+	protected override void Awake() { }
 
-private void OnVideoError(VideoPlayer source, string message) { }
+	private void OnVideoError(VideoPlayer source, string message) { }
 
-public void LoadVideoList() { }
+	public void LoadVideoList() { }
 
-public void Update() { }
+	public void Update() { }
 
-private void NextVideo() { }
+	private void NextVideo() { }
 
 	[IteratorStateMachineAttribute] 
-internal IEnumerator ReadyVideo() { }
+	internal IEnumerator ReadyVideo() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
 }
 
@@ -30,15 +30,15 @@ private sealed class MenuBackgroundVideo.<>c // TypeDefIndex: 11122
 	public static Func<string, bool> <>9__7_0; 
 
 
-private static void .cctor() { }
+	private static void .cctor() { }
 
-public void .ctor() { }
+	public void .ctor() { }
 
-internal bool <LoadVideoList>b__5_0(string x) { }
+	internal bool <LoadVideoList>b__5_0(string x) { }
 
-internal Guid <LoadVideoList>b__5_1(string x) { }
+	internal Guid <LoadVideoList>b__5_1(string x) { }
 
-internal bool <NextVideo>b__7_0(string x) { }
+	internal bool <NextVideo>b__7_0(string x) { }
 
 }
 
@@ -49,26 +49,26 @@ private sealed class MenuBackgroundVideo.<ReadyVideo>d__8 : IEnumerator<object>,
 	public MenuBackgroundVideo <>4__this; 
 	private VideoPlayer <player>5__2; 
 
-private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-private object System.Collections.IEnumerator.Current { get; }
+	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
 
 
 	[DebuggerHiddenAttribute] 
-public void .ctor(int <>1__state) { }
+	public void .ctor(int <>1__state) { }
 
 	[DebuggerHiddenAttribute] 
-private void System.IDisposable.Dispose() { }
+	private void System.IDisposable.Dispose() { }
 
-private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
+	private bool MoveNext() { }
 
 	[DebuggerHiddenAttribute] 
-private void System.Collections.IEnumerator.Reset() { }
+	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
 
 	[DebuggerHiddenAttribute] 
-private object System.Collections.IEnumerator.get_Current() { }
+	private void System.Collections.IEnumerator.Reset() { }
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
 
 }
 
