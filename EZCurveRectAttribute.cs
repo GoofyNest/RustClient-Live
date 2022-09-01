@@ -1,7 +1,7 @@
-public class EZCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7125
+public class EZCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7126
 {
 
-public class EZCurveRectAttribute : PropertyAttribute 
+public class EZCurveRectAttribute : PropertyAttribute
 	public Rect rect; 
 	public Color color; 
 

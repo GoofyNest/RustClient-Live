@@ -1,7 +1,7 @@
-public class HungerAboveAIEvent : BaseAIEvent // TypeDefIndex: 9398
+public class HungerAboveAIEvent : BaseAIEvent // TypeDefIndex: 9402
 {
 
-public class HungerAboveAIEvent : BaseAIEvent 
+public class HungerAboveAIEvent : BaseAIEvent
 	[CompilerGeneratedAttribute] 
 	private float <Value>k__BackingField; 
 

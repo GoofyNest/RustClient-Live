@@ -1,4 +1,4 @@
-public class TouchInputModule : PointerInputModule // TypeDefIndex: 5087
+public class TouchInputModule : PointerInputModule // TypeDefIndex: 5088
 {
 	private Vector2 m_LastMousePosition; 
 	private Vector2 m_MousePosition; 

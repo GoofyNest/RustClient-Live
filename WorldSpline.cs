@@ -1,4 +1,4 @@
-public class WorldSpline : MonoBehaviour // TypeDefIndex: 11407
+public class WorldSpline : MonoBehaviour // TypeDefIndex: 11435
 {
 	public int dataIndex; 
 	public Vector3[] points; 
@@ -30,10 +30,6 @@ public class WorldSpline : MonoBehaviour // TypeDefIndex: 11407
 	public Vector3 GetStartTangentWorld() { }
 
 	public Vector3 GetEndTangentWorld() { }
-
-	public Vector3 GetTangentWorld(float distance) { }
-
-	public Vector3 GetTangentWorld(float distance, WorldSplineData data) { }
 
 	public Vector3 GetTangentCubicHermiteWorld(float distance) { }
 

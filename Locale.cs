@@ -10,7 +10,7 @@ internal sealed class Locale // TypeDefIndex: 2
 internal sealed class Locale // TypeDefIndex: 1703
 {
 
-internal sealed class Locale 
+internal sealed class Locale
 
 	public static string GetText(string msg) { }
 

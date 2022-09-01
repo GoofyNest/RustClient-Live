@@ -1,4 +1,4 @@
-public class PrefabData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6509
+public class PrefabData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6510
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -2,7 +2,7 @@ public sealed class DetailPrototype // TypeDefIndex: 4091
 {
 
 [UsedByNativeCodeAttribute] 
-public sealed class DetailPrototype 
+public sealed class DetailPrototype
 	internal GameObject m_Prototype; 
 	internal Texture2D m_PrototypeTexture; 
 	internal Color m_HealthyColor; 

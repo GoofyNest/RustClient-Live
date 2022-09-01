@@ -1,4 +1,4 @@
-public class PatternFirework : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6424
+public class PatternFirework : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6425
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class PatternFirework : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class PatternFirework.Design : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6425
+public class PatternFirework.Design : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6426
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -122,7 +122,7 @@ public class PatternFirework.Design : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class PatternFirework.Star : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6426
+public class PatternFirework.Star : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6427
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -184,7 +184,7 @@ public class PatternFirework.Star : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6427
+public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6428
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -247,7 +247,7 @@ public class PatternFirework.SavedDesign : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex: 8275
+public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex: 8276
 {
 	public const int CurrentVersion = 1;
 	[HeaderAttribute] 
@@ -321,7 +321,7 @@ public class PatternFirework : MortarFirework, IUGCBrowserEntity // TypeDefIndex
 
 }
 
-public enum PatternFirework.FuseLength // TypeDefIndex: 8276
+public enum PatternFirework.FuseLength // TypeDefIndex: 8277
 {
 	public int value__; 
 	public const PatternFirework.FuseLength Short = 0;

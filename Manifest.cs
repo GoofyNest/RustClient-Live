@@ -162,7 +162,7 @@ public enum ManifestEnvelope.ManifestFormats // TypeDefIndex: 1628
 
 }
 
-public static class Manifest // TypeDefIndex: 6199
+public static class Manifest // TypeDefIndex: 6200
 {
 	[CompilerGeneratedAttribute] 
 	private static DateTime <LastDownloaded>k__BackingField; 
@@ -196,7 +196,7 @@ public static class Manifest // TypeDefIndex: 6199
 
 }
 
-private sealed class Manifest.<>c // TypeDefIndex: 6200
+private sealed class Manifest.<>c // TypeDefIndex: 6201
 {
 	public static readonly Manifest.<>c <>9; 
 	public static Action<string> <>9__9_0; 
@@ -210,7 +210,7 @@ private sealed class Manifest.<>c // TypeDefIndex: 6200
 
 }
 
-private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6201
+private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6202
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -239,7 +239,7 @@ private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnume
 
 }
 
-public class Manifest // TypeDefIndex: 6244
+public class Manifest // TypeDefIndex: 6245
 {
 	public Manifest.NewsInfo News; 
 	public Manifest.ServersInfo Servers; 
@@ -261,7 +261,7 @@ public class Manifest // TypeDefIndex: 6244
 
 }
 
-public class Manifest.Administrator // TypeDefIndex: 6245
+public class Manifest.Administrator // TypeDefIndex: 6246
 {
 	public string UserId; 
 	public string Level; 
@@ -271,27 +271,31 @@ public class Manifest.Administrator // TypeDefIndex: 6245
 
 }
 
-public class Manifest.NewsInfo // TypeDefIndex: 6246
+public class Manifest.NewsInfo // TypeDefIndex: 6247
 {
-	public Manifest.NewsInfo.StatusInfo[] Status; 
+	public Manifest.NewsInfo.BlogInfo[] Blogs; 
 
 
 	public void .ctor() { }
 
 }
 
-public class Manifest.NewsInfo.StatusInfo // TypeDefIndex: 6247
+public class Manifest.NewsInfo.BlogInfo // TypeDefIndex: 6248
 {
-	public DateTime DateTime; 
-	public string Content; 
-	public string Type; 
+	public DateTime Date; 
+	public string ShortName; 
+	public string Title; 
+	public string HeaderImage; 
+	public string SummaryHtml; 
+	public string Url; 
+	public string Tags; 
 
 
 	public void .ctor() { }
 
 }
 
-public class Manifest.ServersInfo // TypeDefIndex: 6248
+public class Manifest.ServersInfo // TypeDefIndex: 6249
 {
 	public Manifest.ServerDesc[] Official; 
 	public string[] Banned; 
@@ -303,7 +307,7 @@ public class Manifest.ServersInfo // TypeDefIndex: 6248
 
 }
 
-public class Manifest.ServerDesc // TypeDefIndex: 6249
+public class Manifest.ServerDesc // TypeDefIndex: 6250
 {
 	public string Address; 
 	public int Port; 
@@ -313,7 +317,7 @@ public class Manifest.ServerDesc // TypeDefIndex: 6249
 
 }
 
-public class Manifest // TypeDefIndex: 11939
+public class Manifest // TypeDefIndex: 11967
 {
 
 	[ClientVar] 

@@ -1,4 +1,4 @@
-public class Internet : Base // TypeDefIndex: 5288
+public class Internet : Base // TypeDefIndex: 5289
 {
 
 	internal override void LaunchQuery() { }

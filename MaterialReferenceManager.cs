@@ -1,4 +1,4 @@
-public class MaterialReferenceManager // TypeDefIndex: 6741
+public class MaterialReferenceManager // TypeDefIndex: 6742
 {
 	private static MaterialReferenceManager s_Instance; 
 	private Dictionary<int, Material> m_FontMaterialReferenceLookup; 

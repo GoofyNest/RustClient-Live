@@ -1,4 +1,4 @@
-public class CCTVOverlay : MonoBehaviour // TypeDefIndex: 9125
+public class CCTVOverlay : MonoBehaviour // TypeDefIndex: 9129
 {
 	public PostProcessVolume postProcessVolume; 
 

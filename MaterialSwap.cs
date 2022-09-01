@@ -1,4 +1,4 @@
-public class MaterialSwap : MonoBehaviour, IClientComponent // TypeDefIndex: 9351
+public class MaterialSwap : MonoBehaviour, IClientComponent // TypeDefIndex: 9355
 {
 	public int materialIndex; 
 	public Renderer myRenderer; 

@@ -1,4 +1,4 @@
-public class FluidSwitch : ElectricSwitch // TypeDefIndex: 9800
+public class FluidSwitch : ElectricSwitch // TypeDefIndex: 9805
 {
 	private BaseEntity.Flags Flag_PumpPowered; 
 	public Animator PumpAnimator; 

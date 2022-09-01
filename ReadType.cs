@@ -1,4 +1,4 @@
-internal enum ReadType // TypeDefIndex: 5893
+internal enum ReadType // TypeDefIndex: 5894
 {
 	public int value__; 
 	public const ReadType Read = 0;

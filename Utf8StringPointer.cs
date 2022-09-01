@@ -1,4 +1,4 @@
-internal struct Utf8StringPointer // TypeDefIndex: 5271
+internal struct Utf8StringPointer // TypeDefIndex: 5272
 {
 	internal IntPtr ptr; 
 

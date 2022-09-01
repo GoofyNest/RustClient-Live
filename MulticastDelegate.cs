@@ -3,7 +3,7 @@ public abstract class MulticastDelegate : Delegate // TypeDefIndex: 377
 
 [ComVisibleAttribute] 
 [Serializable]
-public abstract class MulticastDelegate : Delegate 
+public abstract class MulticastDelegate : Delegate
 	private Delegate[] delegates; 
 
 

@@ -1,4 +1,4 @@
-public class FlasherLight : IOEntity // TypeDefIndex: 8714
+public class FlasherLight : IOEntity // TypeDefIndex: 8717
 {
 	public EmissionToggle toggler; 
 	public Light myLight; 

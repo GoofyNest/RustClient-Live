@@ -1,4 +1,4 @@
-public class OOQQQDOCDD : MonoBehaviour // TypeDefIndex: 7285
+public class OOQQQDOCDD : MonoBehaviour // TypeDefIndex: 7286
 {
 
 	public static void OCODDOCODQ(ref int startInt, float startOffset, ref List<int> markerInts, ref List<Vector3> vecPositions, ref List<Vector3> soSplinePointLeft, List<Vector3> soSplinePointRight, ref ERSOMarkerExt soMarker, ERModularRoad roadScr, ref List<List<Vector2>> nodeList) { }

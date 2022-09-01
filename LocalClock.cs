@@ -1,4 +1,4 @@
-public class LocalClock // TypeDefIndex: 11382
+public class LocalClock // TypeDefIndex: 11410
 {
 	public List<LocalClock.TimedEvent> events; 
 
@@ -11,7 +11,7 @@ public class LocalClock // TypeDefIndex: 11382
 
 }
 
-public struct LocalClock.TimedEvent // TypeDefIndex: 11383
+public struct LocalClock.TimedEvent // TypeDefIndex: 11411
 {
 	public float time; 
 	public float delta; 

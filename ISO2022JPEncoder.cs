@@ -1,4 +1,4 @@
-internal class ISO2022JPEncoder : MonoEncoder // TypeDefIndex: 7805
+internal class ISO2022JPEncoder : MonoEncoder // TypeDefIndex: 7806
 {
 	private static JISConvert convert; 
 	private readonly bool allow_1byte_kana; 

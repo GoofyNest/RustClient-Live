@@ -1,4 +1,4 @@
-internal struct HSteamUser : IEquatable<HSteamUser>, IComparable<HSteamUser> // TypeDefIndex: 5523
+internal struct HSteamUser : IEquatable<HSteamUser>, IComparable<HSteamUser> // TypeDefIndex: 5524
 {
 	public int Value; 
 

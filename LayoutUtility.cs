@@ -1,4 +1,4 @@
-public static class LayoutUtility // TypeDefIndex: 4981
+public static class LayoutUtility // TypeDefIndex: 4982
 {
 
 	public static float GetMinSize(RectTransform rect, int axis) { }
@@ -25,7 +25,7 @@ public static class LayoutUtility // TypeDefIndex: 4981
 
 }
 
-private sealed class LayoutUtility.<>c // TypeDefIndex: 4982
+private sealed class LayoutUtility.<>c // TypeDefIndex: 4983
 {
 	public static readonly LayoutUtility.<>c <>9; 
 	public static Func<ILayoutElement, float> <>9__3_0; 

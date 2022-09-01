@@ -1,8 +1,8 @@
-internal static class ColorUtil // TypeDefIndex: 7649
+internal static class ColorUtil // TypeDefIndex: 7650
 {
 
 [ExtensionAttribute] 
-internal static class ColorUtil 
+internal static class ColorUtil
 
 	[ExtensionAttribute] 
 	public static Color Scale(Color color, float factor) { }

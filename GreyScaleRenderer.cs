@@ -1,4 +1,4 @@
-public class GreyScaleRenderer : PostProcessEffectRenderer<GreyScale> // TypeDefIndex: 10262
+public class GreyScaleRenderer : PostProcessEffectRenderer<GreyScale> // TypeDefIndex: 10269
 {
 	private int dataProperty; 
 	private int colorProperty; 

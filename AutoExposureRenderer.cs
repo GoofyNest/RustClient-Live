@@ -1,4 +1,4 @@
-internal sealed class AutoExposureRenderer : PostProcessEffectRenderer<AutoExposure> // TypeDefIndex: 11762
+internal sealed class AutoExposureRenderer : PostProcessEffectRenderer<AutoExposure> // TypeDefIndex: 11790
 {
 	private const int k_NumEyes = 2;
 	private const int k_NumAutoExposureTextures = 2;

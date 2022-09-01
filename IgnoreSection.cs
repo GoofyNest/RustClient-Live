@@ -1,7 +1,7 @@
 public sealed class IgnoreSection : ConfigurationSection // TypeDefIndex: 1700
 {
 
-public sealed class IgnoreSection : ConfigurationSection 
+public sealed class IgnoreSection : ConfigurationSection
 	protected internal override ConfigurationPropertyCollection Properties { get; }
 
 

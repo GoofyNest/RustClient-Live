@@ -1,4 +1,4 @@
-public class UnparentOnDestroy : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 9249
+public class UnparentOnDestroy : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 9253
 {
 	public float destroyAfterSeconds; 
 

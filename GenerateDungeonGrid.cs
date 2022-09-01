@@ -1,4 +1,4 @@
-public class GenerateDungeonGrid : ProceduralComponent // TypeDefIndex: 10459
+public class GenerateDungeonGrid : ProceduralComponent // TypeDefIndex: 10470
 {
 	public string TunnelFolder; 
 	public string StationFolder; 
@@ -22,7 +22,7 @@ public class GenerateDungeonGrid : ProceduralComponent // TypeDefIndex: 10459
 
 }
 
-private class GenerateDungeonGrid.PathNode // TypeDefIndex: 10460
+private class GenerateDungeonGrid.PathNode // TypeDefIndex: 10471
 {
 	public MonumentInfo monument; 
 	public PathFinder.Node node; 
@@ -32,7 +32,7 @@ private class GenerateDungeonGrid.PathNode // TypeDefIndex: 10460
 
 }
 
-private class GenerateDungeonGrid.PathSegment // TypeDefIndex: 10461
+private class GenerateDungeonGrid.PathSegment // TypeDefIndex: 10472
 {
 	public PathFinder.Node start; 
 	public PathFinder.Node end; 
@@ -42,7 +42,7 @@ private class GenerateDungeonGrid.PathSegment // TypeDefIndex: 10461
 
 }
 
-private class GenerateDungeonGrid.PathLink // TypeDefIndex: 10462
+private class GenerateDungeonGrid.PathLink // TypeDefIndex: 10473
 {
 	public GenerateDungeonGrid.PathLinkSide downwards; 
 	public GenerateDungeonGrid.PathLinkSide upwards; 
@@ -52,7 +52,7 @@ private class GenerateDungeonGrid.PathLink // TypeDefIndex: 10462
 
 }
 
-private class GenerateDungeonGrid.PathLinkSide // TypeDefIndex: 10463
+private class GenerateDungeonGrid.PathLinkSide // TypeDefIndex: 10474
 {
 	public GenerateDungeonGrid.PathLinkSegment origin; 
 	public List<GenerateDungeonGrid.PathLinkSegment> segments; 
@@ -66,7 +66,7 @@ private class GenerateDungeonGrid.PathLinkSide // TypeDefIndex: 10463
 
 }
 
-private class GenerateDungeonGrid.PathLinkSegment // TypeDefIndex: 10464
+private class GenerateDungeonGrid.PathLinkSegment // TypeDefIndex: 10475
 {
 	public Vector3 position; 
 	public Quaternion rotation; 
@@ -92,7 +92,7 @@ private class GenerateDungeonGrid.PathLinkSegment // TypeDefIndex: 10464
 
 }
 
-private struct GenerateDungeonGrid.<>c__DisplayClass17_0 // TypeDefIndex: 10465
+private struct GenerateDungeonGrid.<>c__DisplayClass17_0 // TypeDefIndex: 10476
 {
 	public PathFinder pathFinder; 
 	public List<GenerateDungeonGrid.PathNode> secondaryNodeList; 
@@ -101,13 +101,13 @@ private struct GenerateDungeonGrid.<>c__DisplayClass17_0 // TypeDefIndex: 10465
 
 }
 
-private struct GenerateDungeonGrid.<>c__DisplayClass17_1 // TypeDefIndex: 10466
+private struct GenerateDungeonGrid.<>c__DisplayClass17_1 // TypeDefIndex: 10477
 {
 	public DungeonGridInfo entrance; 
 
 }
 
-private sealed class GenerateDungeonGrid.<>c__DisplayClass17_2 // TypeDefIndex: 10467
+private sealed class GenerateDungeonGrid.<>c__DisplayClass17_2 // TypeDefIndex: 10478
 {
 	public PathFinder.Node stationNode; 
 	public GenerateDungeonGrid <>4__this; 
@@ -123,13 +123,13 @@ private sealed class GenerateDungeonGrid.<>c__DisplayClass17_2 // TypeDefIndex: 
 
 }
 
-private struct GenerateDungeonGrid.<>c__DisplayClass17_3 // TypeDefIndex: 10468
+private struct GenerateDungeonGrid.<>c__DisplayClass17_3 // TypeDefIndex: 10479
 {
 	public bool isStartPoint; 
 
 }
 
-private sealed class GenerateDungeonGrid.<>c__DisplayClass17_4 // TypeDefIndex: 10469
+private sealed class GenerateDungeonGrid.<>c__DisplayClass17_4 // TypeDefIndex: 10480
 {
 	public GenerateDungeonGrid.PathSegment segment; 
 
@@ -142,7 +142,7 @@ private sealed class GenerateDungeonGrid.<>c__DisplayClass17_4 // TypeDefIndex: 
 
 }
 
-private sealed class GenerateDungeonGrid.<>c__DisplayClass17_5 // TypeDefIndex: 10470
+private sealed class GenerateDungeonGrid.<>c__DisplayClass17_5 // TypeDefIndex: 10481
 {
 	public GenerateDungeonGrid.PathNode node; 
 
@@ -155,7 +155,7 @@ private sealed class GenerateDungeonGrid.<>c__DisplayClass17_5 // TypeDefIndex: 
 
 }
 
-private sealed class GenerateDungeonGrid.<>c__DisplayClass17_6 // TypeDefIndex: 10471
+private sealed class GenerateDungeonGrid.<>c__DisplayClass17_6 // TypeDefIndex: 10482
 {
 	public GenerateDungeonGrid.PathNode node; 
 
@@ -168,7 +168,7 @@ private sealed class GenerateDungeonGrid.<>c__DisplayClass17_6 // TypeDefIndex: 
 
 }
 
-private sealed class GenerateDungeonGrid.<>c__DisplayClass17_7 // TypeDefIndex: 10472
+private sealed class GenerateDungeonGrid.<>c__DisplayClass17_7 // TypeDefIndex: 10483
 {
 	public GenerateDungeonGrid.PathNode node; 
 
@@ -181,7 +181,7 @@ private sealed class GenerateDungeonGrid.<>c__DisplayClass17_7 // TypeDefIndex: 
 
 }
 
-private sealed class GenerateDungeonGrid.<>c // TypeDefIndex: 10473
+private sealed class GenerateDungeonGrid.<>c // TypeDefIndex: 10484
 {
 	public static readonly GenerateDungeonGrid.<>c <>9; 
 	public static Func<Prefab<DungeonGridLink>, int> <>9__17_0; 

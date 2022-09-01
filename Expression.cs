@@ -15,9 +15,9 @@ public abstract class Expression // TypeDefIndex: 3239
 private class Expression.ExtensionInfo // TypeDefIndex: 3242
 {
 
-internal class Expression.MemberExpressionProxy 
+internal class Expression.MemberExpressionProxy
 
-private class Expression.ExtensionInfo 
+private class Expression.ExtensionInfo
 	internal readonly ExpressionType NodeType; 
 
 }

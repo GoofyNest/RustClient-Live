@@ -1,4 +1,4 @@
-public class TextContainer : UIBehaviour // TypeDefIndex: 6869
+public class TextContainer : UIBehaviour // TypeDefIndex: 6870
 {
 	private bool m_hasChanged; 
 	[SerializeField] 

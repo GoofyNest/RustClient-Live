@@ -3,7 +3,7 @@ public struct FaceInfo // TypeDefIndex: 4109
 
 [UsedByNativeCodeAttribute] 
 [Serializable]
-public struct FaceInfo 
+public struct FaceInfo
 	[NativeNameAttribute] 
 	[SerializeField] 
 	private string m_FamilyName; 
@@ -153,7 +153,7 @@ public struct FaceInfo
 
 }
 
-public class FaceInfo_Legacy // TypeDefIndex: 6762
+public class FaceInfo_Legacy // TypeDefIndex: 6763
 {
 	public string Name; 
 	public float PointSize; 

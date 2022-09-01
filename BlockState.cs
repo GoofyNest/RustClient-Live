@@ -1,9 +1,9 @@
-internal enum BlockState // TypeDefIndex: 6940
+internal enum BlockState // TypeDefIndex: 6941
 {
 
-internal class <Module> 
+internal class <Module>
 
-internal enum BlockState 
+internal enum BlockState
 	public int value__; 
 	public const BlockState NeedMore = 0;
 	public const BlockState BlockDone = 1;

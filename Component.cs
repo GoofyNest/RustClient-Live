@@ -92,6 +92,7 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponent<CommandBufferManager>
 	|-Component.GetComponent<CommunityEntity.FadeOut>
 	|-Component.GetComponent<ComputerStation>
+	|-Component.GetComponent<ContainerSourceLoot>
 	|-Component.GetComponent<CoverageQueryFlare>
 	|-Component.GetComponent<DamageRenderer>
 	|-Component.GetComponent<DecorComponent>
@@ -129,7 +130,6 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponent<IAudioConnectionSource>
 	|-Component.GetComponent<IBatchingHandler>
 	|-Component.GetComponent<IDraggable>
-	|-Component.GetComponent<IItemContainerEntity>
 	|-Component.GetComponent<IOEntity>
 	|-Component.GetComponent<IRFObject>
 	|-Component.GetComponent<IRemoteControllable>
@@ -146,10 +146,12 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponent<ItemIcon>
 	|-Component.GetComponent<ItemModAnimalEquipment>
 	|-Component.GetComponent<ItemModAssociatedEntityMobile>
+	|-Component.GetComponent<ItemModBurnable>
 	|-Component.GetComponent<ItemModChildIO>
 	|-Component.GetComponent<ItemModConsumable>
 	|-Component.GetComponent<ItemModConsume>
 	|-Component.GetComponent<ItemModContainer>
+	|-Component.GetComponent<ItemModCookable>
 	|-Component.GetComponent<ItemModDeployable>
 	|-Component.GetComponent<ItemModEntity>
 	|-Component.GetComponent<ItemModKeycard>
@@ -174,6 +176,7 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponent<NeedsCursor>
 	|-Component.GetComponent<NeedsKeyboard>
 	|-Component.GetComponent<OnePoleLowpassFilter>
+	|-Component.GetComponent<OvenItemIcon>
 	|-Component.GetComponent<PagerEntity>
 	|-Component.GetComponent<PaintableItem>
 	|-Component.GetComponent<Planner>
@@ -287,6 +290,7 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponent<CanvasScaler>
 	|-Component.GetComponent<Graphic>
 	|-Component.GetComponent<GraphicRaycaster>
+	|-Component.GetComponent<GridLayoutGroup>
 	|-Component.GetComponent<ILayoutController>
 	|-Component.GetComponent<Image>
 	|-Component.GetComponent<InputField>
@@ -348,7 +352,10 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.TryGetComponent<ItemModEntity>
 	|-Component.TryGetComponent<ItemModProjectile>
 	|-Component.TryGetComponent<LootContainer>
+	|-Component.TryGetComponent<NewsParagraph>
+	|-Component.TryGetComponent<PreventBuildingMonumentTag>
 	|-Component.TryGetComponent<RendererLOD>
+	|-Component.TryGetComponent<SpawnableBoundsBlocker>
 	|-Component.TryGetComponent<SprayCanViewmodel>
 	|-Component.TryGetComponent<SwapKeycard>
 	|-Component.TryGetComponent<object>
@@ -394,6 +401,7 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponentInChildren<NeedsMouseButtons>
 	|-Component.GetComponentInChildren<NeedsMouseWheel>
 	|-Component.GetComponentInChildren<OutlineObject>
+	|-Component.GetComponentInChildren<OvenLootPanel>
 	|-Component.GetComponentInChildren<RustButton>
 	|-Component.GetComponentInChildren<SteamInventoryItem>
 	|-Component.GetComponentInChildren<TextMeshProUGUI>
@@ -500,6 +508,7 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponentsInChildren<PathInterestNode>
 	|-Component.GetComponentsInChildren<PathSpeedZone>
 	|-Component.GetComponentsInChildren<NetGraphItem>
+	|-Component.GetComponentsInChildren<RustText>
 	|-Component.GetComponentsInChildren<TimelineMarker>
 	|-Component.GetComponentsInChildren<ServerBrowserTag>
 	|-Component.GetComponentsInChildren<Sound>
@@ -530,7 +539,6 @@ public class Component : Object // TypeDefIndex: 3508
 	|-Component.GetComponentsInChildren<ServerAdminUGCEntryPattern>
 	|-Component.GetComponentsInChildren<object>
 	|-Component.GetComponentsInChildren<AudioSource>
-	|-Component.GetComponentsInChildren<Collider>
 	|-Component.GetComponentsInChildren<Component>
 	|-Component.GetComponentsInChildren<MeshRenderer>
 	|-Component.GetComponentsInChildren<ParticleSystem>

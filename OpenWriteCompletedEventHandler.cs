@@ -1,7 +1,7 @@
 public sealed class OpenWriteCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2960
 {
 
-public sealed class OpenWriteCompletedEventHandler : MulticastDelegate 
+public sealed class OpenWriteCompletedEventHandler : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

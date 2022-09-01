@@ -1,4 +1,4 @@
-public abstract class LayoutGroup : UIBehaviour, ILayoutElement, ILayoutGroup, ILayoutController // TypeDefIndex: 4977
+public abstract class LayoutGroup : UIBehaviour, ILayoutElement, ILayoutGroup, ILayoutController // TypeDefIndex: 4978
 {
 	[SerializeField] 
 	protected RectOffset m_Padding; 
@@ -121,7 +121,7 @@ public abstract class LayoutGroup : UIBehaviour, ILayoutElement, ILayoutGroup, I
 
 }
 
-private sealed class LayoutGroup.<DelayedSetDirty>d__56 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4978
+private sealed class LayoutGroup.<DelayedSetDirty>d__56 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4979
 {
 	private int <>1__state; 
 	private object <>2__current; 

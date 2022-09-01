@@ -1,4 +1,4 @@
-public class Wiggle : PostProcessEffectSettings // TypeDefIndex: 10274
+public class Wiggle : PostProcessEffectSettings // TypeDefIndex: 10281
 {
 	public FloatParameter speed; 
 	public FloatParameter scale; 

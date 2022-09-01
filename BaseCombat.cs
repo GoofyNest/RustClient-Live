@@ -1,4 +1,4 @@
-public class BaseCombat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6294
+public class BaseCombat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6295
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

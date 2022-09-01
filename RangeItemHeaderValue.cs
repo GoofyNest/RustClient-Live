@@ -1,4 +1,4 @@
-public class RangeItemHeaderValue : ICloneable // TypeDefIndex: 5805
+public class RangeItemHeaderValue : ICloneable // TypeDefIndex: 5806
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<long> <From>k__BackingField; 

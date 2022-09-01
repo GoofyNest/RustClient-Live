@@ -1,9 +1,9 @@
 public class DecimalConverter : BaseNumberConverter // TypeDefIndex: 2684
 {
 
-public class DateTimeOffsetConverter : TypeConverter 
+public class DateTimeOffsetConverter : TypeConverter
 
-public class DecimalConverter : BaseNumberConverter 
+public class DecimalConverter : BaseNumberConverter
 	internal override bool AllowHex { get; }
 	internal override Type TargetType { get; }
 

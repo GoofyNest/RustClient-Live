@@ -1,4 +1,4 @@
-public static class TerrainFilterEx // TypeDefIndex: 10441
+public static class TerrainFilterEx // TypeDefIndex: 10452
 {
 
 	[ExtensionAttribute] 

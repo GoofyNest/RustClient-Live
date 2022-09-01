@@ -1,4 +1,4 @@
-internal sealed class MathTimeSpanConverter : ITimeSpanConverter // TypeDefIndex: 7474
+internal sealed class MathTimeSpanConverter : ITimeSpanConverter // TypeDefIndex: 7475
 {
 	private static readonly Dictionary<TimeSpanMode, Func<MathTimeSpan, long, TempoMap, long>> Converters; 
 

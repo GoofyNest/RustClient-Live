@@ -1,4 +1,4 @@
-public enum MissingMemberHandling // TypeDefIndex: 5907
+public enum MissingMemberHandling // TypeDefIndex: 5908
 {
 	public int value__; 
 	public const MissingMemberHandling Ignore = 0;

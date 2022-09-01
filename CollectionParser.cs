@@ -1,4 +1,4 @@
-internal static class CollectionParser // TypeDefIndex: 5762
+internal static class CollectionParser // TypeDefIndex: 5763
 {
 
 	public static bool TryParse<T>(string input, int minimalCount, ElementTryParser<T> parser, out List<T> result) { }

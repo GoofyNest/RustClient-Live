@@ -1,4 +1,4 @@
-public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6316
+public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6317
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class SleepingBag : DecayEntity // TypeDefIndex: 8446
+public class SleepingBag : DecayEntity // TypeDefIndex: 8448
 {
 	private Option __menuOption_Menu_AssignToFriend; 
 	private Option __menuOption_Menu_CloseDoor; 
@@ -77,6 +77,12 @@ public class SleepingBag : DecayEntity // TypeDefIndex: 8446
 	public bool isStatic; 
 	public bool canBePublic; 
 	public const BaseEntity.Flags IsPublicFlag = 512;
+	public static Translate.Phrase bagLimitPhrase; 
+	public static Translate.Phrase bagLimitReachedPhrase; 
+	public Translate.Phrase assignOtherBagPhrase; 
+	public Translate.Phrase assignedBagPhrase; 
+	public Translate.Phrase cannotAssignBedPhrase; 
+	public Translate.Phrase cannotMakeBedPhrase; 
 
 	public override bool HasMenuOptions { get; }
 
@@ -139,8 +145,10 @@ public class SleepingBag : DecayEntity // TypeDefIndex: 8446
 
 	public void .ctor() { }
 
+	private static void .cctor() { }
+
 	[CompilerGeneratedAttribute] 
-	private void <Menu_AssignToFriend>b__24_0(ulong id, string steamName) { }
+	private void <Menu_AssignToFriend>b__30_0(ulong id, string steamName) { }
 
 }
 

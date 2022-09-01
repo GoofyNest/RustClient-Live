@@ -1,8 +1,8 @@
-public class Skinnable : ScriptableObject // TypeDefIndex: 7715
+public class Skinnable : ScriptableObject // TypeDefIndex: 7716
 {
 
 [CreateAssetMenuAttribute] 
-public class Skinnable : ScriptableObject 
+public class Skinnable : ScriptableObject
 	public string Name; 
 	public string ItemName; 
 	public GameObject EntityPrefab; 
@@ -30,7 +30,7 @@ public class Skinnable : ScriptableObject
 
 }
 
-public class Skinnable.Group // TypeDefIndex: 7716
+public class Skinnable.Group // TypeDefIndex: 7717
 {
 	public string Name; 
 	public Material Material; 
@@ -41,7 +41,7 @@ public class Skinnable.Group // TypeDefIndex: 7716
 
 }
 
-private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7717
+private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7718
 {
 	public string itemType; 
 
@@ -52,7 +52,7 @@ private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7717
 
 }
 
-private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7718
+private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7719
 {
 	public string entityName; 
 

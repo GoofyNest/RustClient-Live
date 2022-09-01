@@ -1,4 +1,4 @@
-public static class ExecuteEvents // TypeDefIndex: 5076
+public static class ExecuteEvents // TypeDefIndex: 5077
 {
 	private static readonly ExecuteEvents.EventFunction<IPointerEnterHandler> s_PointerEnterHandler; 
 	private static readonly ExecuteEvents.EventFunction<IPointerExitHandler> s_PointerExitHandler; 
@@ -179,7 +179,7 @@ public static class ExecuteEvents // TypeDefIndex: 5076
 
 }
 
-public sealed class ExecuteEvents.EventFunction<T1> : MulticastDelegate // TypeDefIndex: 5077
+public sealed class ExecuteEvents.EventFunction<T1> : MulticastDelegate // TypeDefIndex: 5078
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -225,7 +225,7 @@ public sealed class ExecuteEvents.EventFunction<T1> : MulticastDelegate // TypeD
 
 }
 
-private sealed class ExecuteEvents.<>c // TypeDefIndex: 5078
+private sealed class ExecuteEvents.<>c // TypeDefIndex: 5079
 {
 	public static readonly ExecuteEvents.<>c <>9; 
 

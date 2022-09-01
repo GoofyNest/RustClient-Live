@@ -1,4 +1,4 @@
-public struct InventoryResult : IDisposable // TypeDefIndex: 5250
+public struct InventoryResult : IDisposable // TypeDefIndex: 5251
 {
 	internal SteamInventoryResult_t _id; 
 	[CompilerGeneratedAttribute] 
@@ -28,7 +28,7 @@ public struct InventoryResult : IDisposable // TypeDefIndex: 5250
 
 }
 
-private struct InventoryResult.<GetAsync>d__11 : IAsyncStateMachine // TypeDefIndex: 5251
+private struct InventoryResult.<GetAsync>d__11 : IAsyncStateMachine // TypeDefIndex: 5252
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 

@@ -2,7 +2,7 @@ public struct PhysicsScene2D : IEquatable<PhysicsScene2D> // TypeDefIndex: 4079
 {
 
 [NativeHeaderAttribute] 
-public struct PhysicsScene2D : IEquatable<PhysicsScene2D> 
+public struct PhysicsScene2D : IEquatable<PhysicsScene2D>
 	private int m_Handle; 
 
 

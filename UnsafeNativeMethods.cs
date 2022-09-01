@@ -1,7 +1,7 @@
 internal static class UnsafeNativeMethods.ManifestEtw // TypeDefIndex: 91
 {
 
-internal static class UnsafeNativeMethods.ManifestEtw 
+internal static class UnsafeNativeMethods.ManifestEtw
 
 	internal static extern uint EventRegister(in Guid providerId, [In] UnsafeNativeMethods.ManifestEtw.EtwEnableCallback enableCallback, [In] void* callbackContext, ref long registrationHandle) { }
 
@@ -100,7 +100,7 @@ internal struct UnsafeNativeMethods.ManifestEtw.TRACE_ENABLE_INFO // TypeDefInde
 
 }
 
-internal static class UnsafeNativeMethods // TypeDefIndex: 4896
+internal static class UnsafeNativeMethods // TypeDefIndex: 4897
 {
 	internal static readonly bool use_sqlite3_close_v2; 
 	internal static readonly bool use_sqlite3_open_v2; 

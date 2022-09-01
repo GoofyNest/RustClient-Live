@@ -1,4 +1,4 @@
-public class ERSORoadLog // TypeDefIndex: 7230
+public class ERSORoadLog // TypeDefIndex: 7231
 {
 	public double id; 
 	public bool active; 

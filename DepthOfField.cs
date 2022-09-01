@@ -1,4 +1,4 @@
-public class DepthOfField : PostEffectsBase // TypeDefIndex: 8178
+public class DepthOfField : PostEffectsBase // TypeDefIndex: 8179
 {
 	public bool visualizeFocus; 
 	public float focalLength; 
@@ -53,7 +53,7 @@ public class DepthOfField : PostEffectsBase // TypeDefIndex: 8178
 
 }
 
-public enum DepthOfField.BlurType // TypeDefIndex: 8179
+public enum DepthOfField.BlurType // TypeDefIndex: 8180
 {
 	public int value__; 
 	public const DepthOfField.BlurType DiscBlur = 0;
@@ -61,7 +61,7 @@ public enum DepthOfField.BlurType // TypeDefIndex: 8179
 
 }
 
-public enum DepthOfField.BlurSampleCount // TypeDefIndex: 8180
+public enum DepthOfField.BlurSampleCount // TypeDefIndex: 8181
 {
 	public int value__; 
 	public const DepthOfField.BlurSampleCount Low = 0;
@@ -70,7 +70,7 @@ public enum DepthOfField.BlurSampleCount // TypeDefIndex: 8180
 
 }
 
-public sealed class DepthOfField : PostProcessEffectSettings // TypeDefIndex: 11778
+public sealed class DepthOfField : PostProcessEffectSettings // TypeDefIndex: 11806
 {
 	[MinAttribute] 
 	[TooltipAttribute] 

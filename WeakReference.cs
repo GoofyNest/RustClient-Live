@@ -3,7 +3,7 @@ public class WeakReference : ISerializable // TypeDefIndex: 421
 
 [ComVisibleAttribute] 
 [Serializable]
-public class WeakReference : ISerializable 
+public class WeakReference : ISerializable
 	private bool isLongReference; 
 	private GCHandle gcHandle; 
 

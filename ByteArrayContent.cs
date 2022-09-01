@@ -1,13 +1,13 @@
-public class ByteArrayContent : HttpContent // TypeDefIndex: 5736
+public class ByteArrayContent : HttpContent // TypeDefIndex: 5737
 {
 
-internal class <Module> 
+internal class <Module>
 
-internal class <Module> 
+internal class <Module>
 
-internal class <Module> 
+internal class <Module>
 
-public class ByteArrayContent : HttpContent 
+public class ByteArrayContent : HttpContent
 	private readonly byte[] content; 
 	private readonly int offset; 
 	private readonly int count; 

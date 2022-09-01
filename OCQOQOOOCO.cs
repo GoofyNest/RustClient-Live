@@ -1,4 +1,4 @@
-public class OCQOQOOOCO : MonoBehaviour // TypeDefIndex: 7278
+public class OCQOQOOOCO : MonoBehaviour // TypeDefIndex: 7279
 {
 
 	public static float OCOCQCDDCD(ref List<Vector3> splinePoints, ERModularRoad scr, int marker, ref List<Vector3> segPoints, ref List<float> tValues, ref float totalDist, int startMarker, ref float xzDistance, bool getDistance, ref float radius, ref List<float> bendAngles) { }

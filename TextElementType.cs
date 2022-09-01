@@ -1,4 +1,4 @@
-public enum TextElementType // TypeDefIndex: 6839
+public enum TextElementType // TypeDefIndex: 6840
 {
 	public byte value__; 
 	public const TextElementType Character = 1;

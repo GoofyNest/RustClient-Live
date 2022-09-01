@@ -1,4 +1,4 @@
-internal struct GSClientAchievementStatus_t : ICallbackData // TypeDefIndex: 5493
+internal struct GSClientAchievementStatus_t : ICallbackData // TypeDefIndex: 5494
 {
 	internal ulong SteamID; 
 	internal byte[] PchAchievement; 

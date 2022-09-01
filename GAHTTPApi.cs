@@ -1,4 +1,4 @@
-internal class GAHTTPApi // TypeDefIndex: 5673
+internal class GAHTTPApi // TypeDefIndex: 5674
 {
 	private static readonly GAHTTPApi _instance; 
 	private static string protocol; 

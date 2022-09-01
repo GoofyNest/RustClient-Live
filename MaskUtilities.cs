@@ -1,4 +1,4 @@
-public class MaskUtilities // TypeDefIndex: 4985
+public class MaskUtilities // TypeDefIndex: 4986
 {
 
 	public static void Notify2DMaskStateChanged(Component mask) { }

@@ -1,4 +1,4 @@
-public class Vortex : ImageEffectBase // TypeDefIndex: 8218
+public class Vortex : ImageEffectBase // TypeDefIndex: 8219
 {
 	public Vector2 radius; 
 	public float angle; 

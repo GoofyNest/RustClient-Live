@@ -2,7 +2,7 @@ public static class ScreenCapture // TypeDefIndex: 4558
 {
 
 [NativeHeaderAttribute] 
-public static class ScreenCapture 
+public static class ScreenCapture
 
 	public static void CaptureScreenshot(string filename, int superSize) { }
 

@@ -1,4 +1,4 @@
-public class RandomDynamicPrefab : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 10354
+public class RandomDynamicPrefab : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 10365
 {
 	public uint Seed; 
 	public float Distance; 

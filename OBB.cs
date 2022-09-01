@@ -1,4 +1,4 @@
-public struct OBB // TypeDefIndex: 6590
+public struct OBB // TypeDefIndex: 6591
 {
 	public Quaternion rotation; 
 	public Vector3 position; 
@@ -42,6 +42,8 @@ public struct OBB // TypeDefIndex: 6590
 	public float SqrDistance(OBB other) { }
 
 	public float SqrDistance(Vector3 position) { }
+
+	public void DebugDraw(Color colour, float duration) { }
 
 }
 

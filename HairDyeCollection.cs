@@ -1,4 +1,4 @@
-public class HairDyeCollection : ScriptableObject // TypeDefIndex: 10731
+public class HairDyeCollection : ScriptableObject // TypeDefIndex: 10742
 {
 	public Texture capMask; 
 	public bool applyCap; 

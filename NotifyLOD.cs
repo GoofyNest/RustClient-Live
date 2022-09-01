@@ -1,4 +1,4 @@
-public class NotifyLOD : LODComponent // TypeDefIndex: 9943
+public class NotifyLOD : LODComponent // TypeDefIndex: 9950
 {
 	public float Distance; 
 	public float MinDistanceMultiplier; 

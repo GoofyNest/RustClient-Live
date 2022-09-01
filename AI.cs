@@ -1,4 +1,4 @@
-public class AIDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6540
+public class AIDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6541
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -64,7 +64,7 @@ public class AIDesign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6540
 
 }
 
-public class AIStateContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6541
+public class AIStateContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6542
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -128,7 +128,7 @@ public class AIStateContainer : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class AIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6542
+public class AIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6543
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -207,7 +207,7 @@ public class AIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class NPCTalking : NPCShopKeeper, IConversationProvider // TypeDefIndex: 8425
+public class NPCTalking : NPCShopKeeper, IConversationProvider // TypeDefIndex: 8427
 {
 	private Option __menuOption_Menu_Talk; 
 	public ConversationData[] conversations; 
@@ -263,7 +263,7 @@ public class NPCTalking : NPCShopKeeper, IConversationProvider // TypeDefIndex: 
 
 }
 
-public class NPCTalking.NPCConversationResultAction // TypeDefIndex: 8426
+public class NPCTalking.NPCConversationResultAction // TypeDefIndex: 8428
 {
 	public string action; 
 	public int scrapCost; 
@@ -275,7 +275,7 @@ public class NPCTalking.NPCConversationResultAction // TypeDefIndex: 8426
 
 }
 
-public class NPCVendingOrder : ScriptableObject // TypeDefIndex: 8722
+public class NPCVendingOrder : ScriptableObject // TypeDefIndex: 8725
 {
 	public NPCVendingOrder.Entry[] orders; 
 
@@ -284,7 +284,7 @@ public class NPCVendingOrder : ScriptableObject // TypeDefIndex: 8722
 
 }
 
-public class NPCVendingOrder.Entry // TypeDefIndex: 8723
+public class NPCVendingOrder.Entry // TypeDefIndex: 8726
 {
 	public ItemDefinition sellItem; 
 	public int sellItemAmount; 
@@ -302,7 +302,7 @@ public class NPCVendingOrder.Entry // TypeDefIndex: 8723
 
 }
 
-public class NPCVendingOrderManifest : ScriptableObject // TypeDefIndex: 8724
+public class NPCVendingOrderManifest : ScriptableObject // TypeDefIndex: 8727
 {
 	public NPCVendingOrder[] orderList; 
 
@@ -315,7 +315,7 @@ public class NPCVendingOrderManifest : ScriptableObject // TypeDefIndex: 8724
 
 }
 
-public class NPCVendingMachine : VendingMachine // TypeDefIndex: 8725
+public class NPCVendingMachine : VendingMachine // TypeDefIndex: 8728
 {
 	public NPCVendingOrder vendingOrders; 
 
@@ -332,7 +332,7 @@ public class NPCVendingMachine : VendingMachine // TypeDefIndex: 8725
 
 }
 
-public class NPCDwelling : BaseEntity // TypeDefIndex: 8821
+public class NPCDwelling : BaseEntity // TypeDefIndex: 8824
 {
 	public NPCSpawner npcSpawner; 
 	public float NPCSpawnChance; 
@@ -345,7 +345,7 @@ public class NPCDwelling : BaseEntity // TypeDefIndex: 8821
 
 }
 
-public class NPCMissionProvider : NPCTalking, IMissionProvider // TypeDefIndex: 8849
+public class NPCMissionProvider : NPCTalking, IMissionProvider // TypeDefIndex: 8852
 {
 	public MissionManifest manifest; 
 
@@ -360,7 +360,7 @@ public class NPCMissionProvider : NPCTalking, IMissionProvider // TypeDefIndex: 
 
 }
 
-public class NPCShopKeeper : NPCPlayer // TypeDefIndex: 8850
+public class NPCShopKeeper : NPCPlayer // TypeDefIndex: 8853
 {
 	public EntityRef invisibleVendingMachineRef; 
 	public InvisibleVendingMachine machine; 
@@ -376,14 +376,14 @@ public class NPCShopKeeper : NPCPlayer // TypeDefIndex: 8850
 
 }
 
-public class NPCPlayerCorpse : PlayerCorpse // TypeDefIndex: 8867
+public class NPCPlayerCorpse : PlayerCorpse // TypeDefIndex: 8870
 {
 
 	public void .ctor() { }
 
 }
 
-public class AICoverPoint : AIPoint // TypeDefIndex: 8903
+public class AICoverPoint : AIPoint // TypeDefIndex: 8906
 {
 	public float coverDot; 
 
@@ -394,7 +394,7 @@ public class AICoverPoint : AIPoint // TypeDefIndex: 8903
 
 }
 
-public class AICoverPointTool : MonoBehaviour // TypeDefIndex: 8904
+public class AICoverPointTool : MonoBehaviour // TypeDefIndex: 8907
 {
 
 	[ContextMenu] 
@@ -412,7 +412,7 @@ public class AICoverPointTool : MonoBehaviour // TypeDefIndex: 8904
 
 }
 
-private struct AICoverPointTool.TestResult // TypeDefIndex: 8905
+private struct AICoverPointTool.TestResult // TypeDefIndex: 8908
 {
 	public Vector3 Position; 
 	public bool Valid; 
@@ -423,7 +423,7 @@ private struct AICoverPointTool.TestResult // TypeDefIndex: 8905
 
 }
 
-public class AIInformationCell // TypeDefIndex: 8906
+public class AIInformationCell // TypeDefIndex: 8909
 {
 	public Bounds BoundingBox; 
 	public List<AIInformationCell> NeighbourCells; 
@@ -450,7 +450,7 @@ public class AIInformationCell // TypeDefIndex: 8906
 
 }
 
-public class AIInformationCellContents<T> // TypeDefIndex: 8907
+public class AIInformationCellContents<T> // TypeDefIndex: 8910
 {
 	public HashSet<T> Items; 
 
@@ -506,7 +506,7 @@ public class AIInformationCellContents<T> // TypeDefIndex: 8907
 
 }
 
-public class AIInformationGrid : MonoBehaviour // TypeDefIndex: 8908
+public class AIInformationGrid : MonoBehaviour // TypeDefIndex: 8911
 {
 	public int CellSize; 
 	public Bounds BoundingBox; 
@@ -544,7 +544,7 @@ public class AIInformationGrid : MonoBehaviour // TypeDefIndex: 8908
 
 }
 
-public class AIInformationGridTester : MonoBehaviour // TypeDefIndex: 8909
+public class AIInformationGridTester : MonoBehaviour // TypeDefIndex: 8912
 {
 	public AIInformationGrid Grid; 
 	public float Range; 
@@ -556,7 +556,7 @@ public class AIInformationGridTester : MonoBehaviour // TypeDefIndex: 8909
 
 }
 
-public class AIInformationZone : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 8910
+public class AIInformationZone : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 8913
 {
 	public bool ShouldSleepAI; 
 	public bool Virtual; 
@@ -578,7 +578,7 @@ public class AIInformationZone : BaseMonoBehaviour, IServerComponent // TypeDefI
 
 }
 
-public class AIMovePoint : AIPoint // TypeDefIndex: 8911
+public class AIMovePoint : AIPoint // TypeDefIndex: 8914
 {
 	public ListDictionary<AIMovePoint, float> distances; 
 	public ListDictionary<AICoverPoint, float> distancesToCover; 
@@ -603,7 +603,7 @@ public class AIMovePoint : AIPoint // TypeDefIndex: 8911
 
 }
 
-public class AIMovePoint.DistTo // TypeDefIndex: 8912
+public class AIMovePoint.DistTo // TypeDefIndex: 8915
 {
 	public float distance; 
 	public AIMovePoint target; 
@@ -613,7 +613,7 @@ public class AIMovePoint.DistTo // TypeDefIndex: 8912
 
 }
 
-public class AIMovePointPath : MonoBehaviour // TypeDefIndex: 8913
+public class AIMovePointPath : MonoBehaviour // TypeDefIndex: 8916
 {
 	public Color DebugPathColor; 
 	public AIMovePointPath.Mode LoopMode; 
@@ -643,7 +643,7 @@ public class AIMovePointPath : MonoBehaviour // TypeDefIndex: 8913
 
 }
 
-public enum AIMovePointPath.Mode // TypeDefIndex: 8914
+public enum AIMovePointPath.Mode // TypeDefIndex: 8917
 {
 	public int value__; 
 	public const AIMovePointPath.Mode Loop = 0;
@@ -651,7 +651,7 @@ public enum AIMovePointPath.Mode // TypeDefIndex: 8914
 
 }
 
-public enum AIMovePointPath.PathDirection // TypeDefIndex: 8915
+public enum AIMovePointPath.PathDirection // TypeDefIndex: 8918
 {
 	public int value__; 
 	public const AIMovePointPath.PathDirection Forwards = 0;
@@ -659,7 +659,7 @@ public enum AIMovePointPath.PathDirection // TypeDefIndex: 8915
 
 }
 
-public class AIPoint : BaseMonoBehaviour // TypeDefIndex: 8916
+public class AIPoint : BaseMonoBehaviour // TypeDefIndex: 8919
 {
 	private BaseEntity currentUser; 
 
@@ -682,7 +682,7 @@ public class AIPoint : BaseMonoBehaviour // TypeDefIndex: 8916
 
 }
 
-public class AITraversalArea : TriggerBase // TypeDefIndex: 8917
+public class AITraversalArea : TriggerBase // TypeDefIndex: 8920
 {
 	public Transform entryPoint1; 
 	public Transform entryPoint2; 
@@ -720,7 +720,7 @@ public class AITraversalArea : TriggerBase // TypeDefIndex: 8917
 
 }
 
-public class AITraversalWaitPoint : MonoBehaviour // TypeDefIndex: 8918
+public class AITraversalWaitPoint : MonoBehaviour // TypeDefIndex: 8921
 {
 	public float nextFreeTime; 
 
@@ -733,14 +733,14 @@ public class AITraversalWaitPoint : MonoBehaviour // TypeDefIndex: 8918
 
 }
 
-public class AnimalBrain : BaseAIBrain<BaseAnimalNPC> // TypeDefIndex: 8919
+public class AnimalBrain : BaseAIBrain // TypeDefIndex: 8922
 {
 
 	public void .ctor() { }
 
 }
 
-public class AnimalRagdoll : Ragdoll // TypeDefIndex: 8926
+public class AnimalRagdoll : Ragdoll // TypeDefIndex: 8929
 {
 	public SkinnedMeshRenderer[] bodyRenderers; 
 	public SkinnedMeshRenderer[] hairRenderers; 
@@ -750,21 +750,21 @@ public class AnimalRagdoll : Ragdoll // TypeDefIndex: 8926
 
 }
 
-public class AIThinkManager : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 8929
+public class AIThinkManager : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 8932
 {
 
 	public void .ctor() { }
 
 }
 
-public class ScientistBrain : BaseAIBrain<HumanNPC> // TypeDefIndex: 8933
+public class ScientistBrain : BaseAIBrain // TypeDefIndex: 8936
 {
 
 	public void .ctor() { }
 
 }
 
-public class ScientistNPC : HumanNPC, IAIMounted // TypeDefIndex: 8934
+public class ScientistNPC : HumanNPC, IAIMounted // TypeDefIndex: 8937
 {
 	public GameObjectRef[] RadioChatterEffects; 
 	public GameObjectRef[] DeathEffects; 
@@ -777,7 +777,7 @@ public class ScientistNPC : HumanNPC, IAIMounted // TypeDefIndex: 8934
 
 }
 
-public enum ScientistNPC.RadioChatterType // TypeDefIndex: 8935
+public enum ScientistNPC.RadioChatterType // TypeDefIndex: 8938
 {
 	public int value__; 
 	public const ScientistNPC.RadioChatterType NONE = 0;
@@ -786,7 +786,7 @@ public enum ScientistNPC.RadioChatterType // TypeDefIndex: 8935
 
 }
 
-public class NPCPlayer : BasePlayer // TypeDefIndex: 8938
+public class NPCPlayer : BasePlayer // TypeDefIndex: 8941
 {
 	public AIInformationZone VirtualInfoZone; 
 	public Vector3 finalDestination; 
@@ -809,21 +809,21 @@ public class NPCPlayer : BasePlayer // TypeDefIndex: 8938
 
 }
 
-public class NPCNavigator : BaseNavigator // TypeDefIndex: 8953
+public class NPCNavigator : BaseNavigator // TypeDefIndex: 8956
 {
 
 	public void .ctor() { }
 
 }
 
-public class NPCPlayerNavigator : BaseNavigator // TypeDefIndex: 8954
+public class NPCPlayerNavigator : BaseNavigator // TypeDefIndex: 8957
 {
 
 	public void .ctor() { }
 
 }
 
-public class NPCPlayerNavigatorTester : BaseMonoBehaviour // TypeDefIndex: 8955
+public class NPCPlayerNavigatorTester : BaseMonoBehaviour // TypeDefIndex: 8958
 {
 	public BasePathNode TargetNode; 
 	private BasePathNode currentNode; 
@@ -833,7 +833,7 @@ public class NPCPlayerNavigatorTester : BaseMonoBehaviour // TypeDefIndex: 8955
 
 }
 
-public enum AIState // TypeDefIndex: 8964
+public enum AIState // TypeDefIndex: 8967
 {
 	public int value__; 
 	public const AIState None = 0;
@@ -864,7 +864,7 @@ public enum AIState // TypeDefIndex: 8964
 
 }
 
-public enum AIThinkMode // TypeDefIndex: 8965
+public enum AIThinkMode // TypeDefIndex: 8968
 {
 	public int value__; 
 	public const AIThinkMode FixedUpdate = 0;
@@ -872,7 +872,7 @@ public enum AIThinkMode // TypeDefIndex: 8965
 
 }
 
-public class AimConeUtil // TypeDefIndex: 8968
+public class AimConeUtil // TypeDefIndex: 8971
 {
 
 	public static Vector3 GetModifiedAimConeDirection(float aimCone, Vector3 inputVec, bool anywhereInside = True) { }
@@ -883,7 +883,7 @@ public class AimConeUtil // TypeDefIndex: 8968
 
 }
 
-public class AnimalSkin : MonoBehaviour, IClientComponent // TypeDefIndex: 9111
+public class AnimalSkin : MonoBehaviour, IClientComponent // TypeDefIndex: 9114
 {
 	public SkinnedMeshRenderer[] animalMesh; 
 	public AnimalMultiSkin[] animalSkins; 
@@ -899,7 +899,7 @@ public class AnimalSkin : MonoBehaviour, IClientComponent // TypeDefIndex: 9111
 
 }
 
-public class AnimalMultiSkin // TypeDefIndex: 9112
+public class AnimalMultiSkin // TypeDefIndex: 9115
 {
 	public Material[] multiSkin; 
 
@@ -908,7 +908,7 @@ public class AnimalMultiSkin // TypeDefIndex: 9112
 
 }
 
-public class AnimalAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 9113
+public class AnimalAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 9116
 {
 	public BaseEntity Entity; 
 	public BaseNpc Target; 
@@ -957,7 +957,7 @@ public class AnimalAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 
 
 }
 
-public class AnimalFootIK : MonoBehaviour // TypeDefIndex: 9115
+public class AnimalFootIK : MonoBehaviour // TypeDefIndex: 9118
 {
 	public Transform[] Feet; 
 	public Animator animator; 
@@ -978,7 +978,7 @@ public class AnimalFootIK : MonoBehaviour // TypeDefIndex: 9115
 
 }
 
-public class NPCFootstepEffects : BaseFootstepEffect // TypeDefIndex: 9354
+public class NPCFootstepEffects : BaseFootstepEffect // TypeDefIndex: 9358
 {
 	public string impactEffectDirectory; 
 	public Transform frontLeftFoot; 
@@ -1003,14 +1003,14 @@ public class NPCFootstepEffects : BaseFootstepEffect // TypeDefIndex: 9354
 
 }
 
-public class AIBrainSenses // TypeDefIndex: 9376
+public class AIBrainSenses // TypeDefIndex: 9380
 {
 
 	public void .ctor() { }
 
 }
 
-public class AIDesignSO : BaseScriptableObject // TypeDefIndex: 9377
+public class AIDesignSO : BaseScriptableObject // TypeDefIndex: 9381
 {
 	public string Filename; 
 
@@ -1019,7 +1019,7 @@ public class AIDesignSO : BaseScriptableObject // TypeDefIndex: 9377
 
 }
 
-public class AIDesign // TypeDefIndex: 9378
+public class AIDesign // TypeDefIndex: 9382
 {
 	[CompilerGeneratedAttribute] 
 	private AIDesignScope <Scope>k__BackingField; 
@@ -1061,7 +1061,7 @@ public class AIDesign // TypeDefIndex: 9378
 
 }
 
-public static class AIDesigns // TypeDefIndex: 9379
+public static class AIDesigns // TypeDefIndex: 9383
 {
 	public const string DesignFolderPath = "cfg/ai/";
 	private static Dictionary<string, AIDesign> designs; 
@@ -1077,7 +1077,7 @@ public static class AIDesigns // TypeDefIndex: 9379
 
 }
 
-public enum AIEventType // TypeDefIndex: 9380
+public enum AIEventType // TypeDefIndex: 9384
 {
 	public int value__; 
 	public const AIEventType Timer = 0;
@@ -1109,7 +1109,7 @@ public enum AIEventType // TypeDefIndex: 9380
 
 }
 
-public class AIEvents // TypeDefIndex: 9381
+public class AIEvents // TypeDefIndex: 9385
 {
 	public AIMemory Memory; 
 	[CompilerGeneratedAttribute] 
@@ -1145,7 +1145,7 @@ public class AIEvents // TypeDefIndex: 9381
 
 }
 
-public class AIMemory // TypeDefIndex: 9382
+public class AIMemory // TypeDefIndex: 9386
 {
 	public AIMemoryBank<BaseEntity> Entity; 
 	public AIMemoryBank<Vector3> Position; 
@@ -1156,7 +1156,7 @@ public class AIMemory // TypeDefIndex: 9382
 
 }
 
-public class AIMemoryBank<T> // TypeDefIndex: 9387
+public class AIMemoryBank<T> // TypeDefIndex: 9391
 {
 	private MemoryBankType type; 
 	private T[] slots; 
@@ -1216,7 +1216,7 @@ public class AIMemoryBank<T> // TypeDefIndex: 9387
 
 }
 
-public class AIStateContainer // TypeDefIndex: 9421
+public class AIStateContainer // TypeDefIndex: 9425
 {
 	[CompilerGeneratedAttribute] 
 	private int <ID>k__BackingField; 
@@ -1257,7 +1257,7 @@ public class AIStateContainer // TypeDefIndex: 9421
 
 }
 
-public enum AIDesignScope // TypeDefIndex: 9424
+public enum AIDesignScope // TypeDefIndex: 9428
 {
 	public int value__; 
 	public const AIDesignScope Default = 0;
@@ -1266,7 +1266,7 @@ public enum AIDesignScope // TypeDefIndex: 9424
 
 }
 
-public class NPCAutoTurret : AutoTurret // TypeDefIndex: 9576
+public class NPCAutoTurret : AutoTurret // TypeDefIndex: 9581
 {
 	public Transform centerMuzzle; 
 	public Transform muzzleLeft; 
@@ -1278,7 +1278,7 @@ public class NPCAutoTurret : AutoTurret // TypeDefIndex: 9576
 
 }
 
-public class AIHelicopterAnimation : MonoBehaviour // TypeDefIndex: 9597
+public class AIHelicopterAnimation : MonoBehaviour // TypeDefIndex: 9602
 {
 	public PatrolHelicopterAI _ai; 
 	public float swayAmount; 
@@ -1295,7 +1295,7 @@ public class AIHelicopterAnimation : MonoBehaviour // TypeDefIndex: 9597
 
 }
 
-public class NPCSpawner : SpawnGroup // TypeDefIndex: 10003
+public class NPCSpawner : SpawnGroup // TypeDefIndex: 10010
 {
 	public int AdditionalLOSBlockingLayer; 
 	public MonumentNavMesh monumentNavMesh; 
@@ -1320,7 +1320,7 @@ public class NPCSpawner : SpawnGroup // TypeDefIndex: 10003
 
 }
 
-public class AI : ConsoleSystem // TypeDefIndex: 11876
+public class AI : ConsoleSystem // TypeDefIndex: 11904
 {
 	[ReplicatedVar] 
 	public static bool allowdesigning; 
@@ -1354,7 +1354,7 @@ public class AI : ConsoleSystem // TypeDefIndex: 11876
 
 }
 
-public class AiManagedAgent : FacepunchBehaviour, IServerComponent // TypeDefIndex: 12129
+public class AiManagedAgent : FacepunchBehaviour, IServerComponent // TypeDefIndex: 12157
 {
 	[TooltipAttribute] 
 	public int AgentTypeIndex; 
@@ -1364,7 +1364,7 @@ public class AiManagedAgent : FacepunchBehaviour, IServerComponent // TypeDefInd
 
 }
 
-public class AiManager : SingletonComponent<AiManager>, IServerComponent // TypeDefIndex: 12130
+public class AiManager : SingletonComponent<AiManager>, IServerComponent // TypeDefIndex: 12158
 {
 	[HeaderAttribute] 
 	[SerializeField] 
@@ -1388,7 +1388,7 @@ public class AiManager : SingletonComponent<AiManager>, IServerComponent // Type
 
 }
 
-public class ScientistSpawner : SpawnGroup // TypeDefIndex: 12132
+public class ScientistSpawner : SpawnGroup // TypeDefIndex: 12160
 {
 	[HeaderAttribute] 
 	public bool Mobile; 
@@ -1410,7 +1410,7 @@ public class ScientistSpawner : SpawnGroup // TypeDefIndex: 12132
 
 }
 
-public class AiLocationManager : FacepunchBehaviour, IServerComponent // TypeDefIndex: 12133
+public class AiLocationManager : FacepunchBehaviour, IServerComponent // TypeDefIndex: 12161
 {
 	public static List<AiLocationManager> Managers; 
 	[SerializeField] 
@@ -1433,7 +1433,7 @@ public class AiLocationManager : FacepunchBehaviour, IServerComponent // TypeDef
 
 }
 
-public class AiLocationSpawner : SpawnGroup // TypeDefIndex: 12134
+public class AiLocationSpawner : SpawnGroup // TypeDefIndex: 12162
 {
 	public AiLocationSpawner.SquadSpawnerLocation Location; 
 	public AiLocationManager Manager; 
@@ -1449,7 +1449,7 @@ public class AiLocationSpawner : SpawnGroup // TypeDefIndex: 12134
 
 }
 
-public enum AiLocationSpawner.SquadSpawnerLocation // TypeDefIndex: 12135
+public enum AiLocationSpawner.SquadSpawnerLocation // TypeDefIndex: 12163
 {
 	public int value__; 
 	public const AiLocationSpawner.SquadSpawnerLocation MilitaryTunnels = 0;
@@ -1463,7 +1463,7 @@ public enum AiLocationSpawner.SquadSpawnerLocation // TypeDefIndex: 12135
 
 }
 
-public class ScientistJunkpileSpawner : MonoBehaviour, IServerComponent // TypeDefIndex: 12139
+public class ScientistJunkpileSpawner : MonoBehaviour, IServerComponent // TypeDefIndex: 12167
 {
 	public GameObjectRef ScientistPrefab; 
 	public List<BaseCombatEntity> Spawned; 
@@ -1483,7 +1483,7 @@ public class ScientistJunkpileSpawner : MonoBehaviour, IServerComponent // TypeD
 
 }
 
-public enum ScientistJunkpileSpawner.JunkpileType // TypeDefIndex: 12140
+public enum ScientistJunkpileSpawner.JunkpileType // TypeDefIndex: 12168
 {
 	public int value__; 
 	public const ScientistJunkpileSpawner.JunkpileType A = 0;

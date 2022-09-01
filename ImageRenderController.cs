@@ -1,4 +1,4 @@
-public class ImageRenderController : SingletonComponent<ImageRenderController> // TypeDefIndex: 10099
+public class ImageRenderController : SingletonComponent<ImageRenderController> // TypeDefIndex: 10106
 {
 	public Camera Camera; 
 

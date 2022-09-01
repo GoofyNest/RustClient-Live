@@ -1,4 +1,4 @@
-public sealed class LoadCompletedEventArgs : LoadEventArgs // TypeDefIndex: 7150
+public sealed class LoadCompletedEventArgs : LoadEventArgs // TypeDefIndex: 7151
 {
 	[CompilerGeneratedAttribute] 
 	private LoadResult <Status>k__BackingField; 

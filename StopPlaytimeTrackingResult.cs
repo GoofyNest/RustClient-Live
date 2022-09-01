@@ -1,4 +1,4 @@
-internal struct StopPlaytimeTrackingResult_t : ICallbackData // TypeDefIndex: 5440
+internal struct StopPlaytimeTrackingResult_t : ICallbackData // TypeDefIndex: 5441
 {
 	internal Result Result; 
 	public static int _datasize; 

@@ -1,4 +1,4 @@
-internal static class GAUtilities // TypeDefIndex: 5636
+internal static class GAUtilities // TypeDefIndex: 5637
 {
 	private static readonly DateTime origin; 
 

@@ -1,39 +1,39 @@
-public sealed class Note : IComparable<Note> // TypeDefIndex: 7433
+public sealed class Note : IComparable<Note> // TypeDefIndex: 7434
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=60 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=60
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=72
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=88 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=88
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=92
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=128
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=324 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=324
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1500 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1500
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=8748 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=8748
 
-internal class <Module> 
+internal class <Module>
 
-public sealed class Note : IComparable<Note> 
+public sealed class Note : IComparable<Note>
 	private static readonly ConcurrentDictionary<SevenBitNumber, Note> Cache; 
 	[CompilerGeneratedAttribute] 
 	private readonly SevenBitNumber <NoteNumber>k__BackingField; 
@@ -68,7 +68,7 @@ public sealed class Note : IComparable<Note>
 
 }
 
-public class Note : ILengthedObject, ITimedObject // TypeDefIndex: 7438
+public class Note : ILengthedObject, ITimedObject // TypeDefIndex: 7439
 {
 	public static readonly SevenBitNumber DefaultVelocity; 
 	[CompilerGeneratedAttribute] 
@@ -123,7 +123,7 @@ public class Note : ILengthedObject, ITimedObject // TypeDefIndex: 7438
 
 }
 
-public class Note : ConsoleSystem // TypeDefIndex: 11945
+public class Note : ConsoleSystem // TypeDefIndex: 11973
 {
 
 	[ClientVar] 

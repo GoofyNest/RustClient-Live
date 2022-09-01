@@ -1,7 +1,7 @@
 public sealed class CreateAssetMenuAttribute : Attribute // TypeDefIndex: 3496
 {
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private string <menuName>k__BackingField; 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 

@@ -1,4 +1,4 @@
-internal struct GSGameplayStats_t : ICallbackData // TypeDefIndex: 5495
+internal struct GSGameplayStats_t : ICallbackData // TypeDefIndex: 5496
 {
 	internal Result Result; 
 	internal int Rank; 

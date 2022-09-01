@@ -1,4 +1,4 @@
-public sealed class PitchBendEvent : ChannelEvent // TypeDefIndex: 7528
+public sealed class PitchBendEvent : ChannelEvent // TypeDefIndex: 7529
 {
 	public ushort PitchValue { get; }
 

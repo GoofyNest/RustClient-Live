@@ -1,4 +1,4 @@
-internal struct FriendsIsFollowing_t : ICallbackData // TypeDefIndex: 5322
+internal struct FriendsIsFollowing_t : ICallbackData // TypeDefIndex: 5323
 {
 	internal Result Result; 
 	internal ulong SteamID; 

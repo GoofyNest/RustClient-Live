@@ -1,4 +1,4 @@
-public static class ColorEx // TypeDefIndex: 5597
+public static class ColorEx // TypeDefIndex: 5598
 {
 
 	[ExtensionAttribute] 

@@ -1,4 +1,4 @@
-public class WaterInteraction : MonoBehaviour // TypeDefIndex: 10615
+public class WaterInteraction : MonoBehaviour // TypeDefIndex: 10626
 {
 	[SerializeField] 
 	private Texture2D texture; 

@@ -1,7 +1,8 @@
-public static class StringExtensions // TypeDefIndex: 4846
+public static class StringExtensions // TypeDefIndex: 4847
 {
 	private static readonly Regex regexSplitQuotes; 
 	private static char[] spaceOrQuote; 
+	private static StringBuilder _quoteSafeBuilder; 
 	private static char[] FilenameDelim; 
 	private static readonly char[] _badCharacters; 
 
@@ -49,21 +50,21 @@ public static class StringExtensions // TypeDefIndex: 4846
 
 }
 
-private sealed class StringExtensions.<>c // TypeDefIndex: 4847
+private sealed class StringExtensions.<>c // TypeDefIndex: 4848
 {
 	public static readonly StringExtensions.<>c <>9; 
-	public static Func<char, bool> <>9__14_0; 
+	public static Func<char, bool> <>9__15_0; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal bool <RemoveBadCharacters>b__14_0(char x) { }
+	internal bool <RemoveBadCharacters>b__15_0(char x) { }
 
 }
 
-public static class StringExtensions // TypeDefIndex: 5604
+public static class StringExtensions // TypeDefIndex: 5605
 {
 
 	[ExtensionAttribute] 

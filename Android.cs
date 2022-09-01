@@ -1,7 +1,7 @@
 public sealed class AndroidJavaRunnable : MulticastDelegate // TypeDefIndex: 4463
 {
 
-public sealed class AndroidJavaRunnable : MulticastDelegate 
+public sealed class AndroidJavaRunnable : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

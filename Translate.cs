@@ -1,13 +1,13 @@
-public static class Translate // TypeDefIndex: 6718
+public static class Translate // TypeDefIndex: 6719
 {
 
-private struct <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=128 
+private struct <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=128
 
-private struct <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=256 
+private struct <PrivateImplementationDetails>{A0874672-3A49-45D7-A8B0-51E6098CECDA}.__StaticArrayInitTypeSize=256
 
-internal class <Module> 
+internal class <Module>
 
-public static class Translate 
+public static class Translate
 	private static Dictionary<string, string> translations; 
 	private static string language; 
 
@@ -30,7 +30,7 @@ public static class Translate
 
 }
 
-public class Translate.Phrase // TypeDefIndex: 6719
+public class Translate.Phrase // TypeDefIndex: 6720
 {
 	public string token; 
 	[TextAreaAttribute] 

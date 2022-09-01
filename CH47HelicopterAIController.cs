@@ -1,4 +1,4 @@
-public class CH47HelicopterAIController : CH47Helicopter // TypeDefIndex: 9715
+public class CH47HelicopterAIController : CH47Helicopter // TypeDefIndex: 9720
 {
 	public GameObjectRef scientistPrefab; 
 	public GameObjectRef dismountablePrefab; 

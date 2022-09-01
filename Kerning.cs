@@ -1,4 +1,4 @@
-public struct KerningPairKey // TypeDefIndex: 6766
+public struct KerningPairKey // TypeDefIndex: 6767
 {
 	public uint ascii_Left; 
 	public uint ascii_Right; 
@@ -9,7 +9,7 @@ public struct KerningPairKey // TypeDefIndex: 6766
 
 }
 
-public class KerningPair // TypeDefIndex: 6768
+public class KerningPair // TypeDefIndex: 6769
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
@@ -60,7 +60,7 @@ public class KerningPair // TypeDefIndex: 6768
 
 }
 
-public class KerningTable // TypeDefIndex: 6769
+public class KerningTable // TypeDefIndex: 6770
 {
 	public List<KerningPair> kerningPairs; 
 
@@ -81,7 +81,7 @@ public class KerningTable // TypeDefIndex: 6769
 
 }
 
-private sealed class KerningTable.<>c__DisplayClass3_0 // TypeDefIndex: 6770
+private sealed class KerningTable.<>c__DisplayClass3_0 // TypeDefIndex: 6771
 {
 	public uint first; 
 	public uint second; 
@@ -93,7 +93,7 @@ private sealed class KerningTable.<>c__DisplayClass3_0 // TypeDefIndex: 6770
 
 }
 
-private sealed class KerningTable.<>c__DisplayClass4_0 // TypeDefIndex: 6771
+private sealed class KerningTable.<>c__DisplayClass4_0 // TypeDefIndex: 6772
 {
 	public uint first; 
 	public uint second; 
@@ -105,7 +105,7 @@ private sealed class KerningTable.<>c__DisplayClass4_0 // TypeDefIndex: 6771
 
 }
 
-private sealed class KerningTable.<>c__DisplayClass5_0 // TypeDefIndex: 6772
+private sealed class KerningTable.<>c__DisplayClass5_0 // TypeDefIndex: 6773
 {
 	public int left; 
 	public int right; 
@@ -117,7 +117,7 @@ private sealed class KerningTable.<>c__DisplayClass5_0 // TypeDefIndex: 6772
 
 }
 
-private sealed class KerningTable.<>c // TypeDefIndex: 6773
+private sealed class KerningTable.<>c // TypeDefIndex: 6774
 {
 	public static readonly KerningTable.<>c <>9; 
 	public static Func<KerningPair, uint> <>9__7_0; 

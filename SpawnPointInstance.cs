@@ -1,4 +1,4 @@
-public class SpawnPointInstance : MonoBehaviour // TypeDefIndex: 10009
+public class SpawnPointInstance : MonoBehaviour // TypeDefIndex: 10016
 {
 
 	public void .ctor() { }

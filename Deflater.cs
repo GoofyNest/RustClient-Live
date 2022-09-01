@@ -1,4 +1,4 @@
-internal class Deflater // TypeDefIndex: 5656
+internal class Deflater // TypeDefIndex: 5657
 {
 	public static int BEST_COMPRESSION; 
 	public static int BEST_SPEED; 

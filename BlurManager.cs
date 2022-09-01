@@ -1,4 +1,4 @@
-public class BlurManager : MonoBehaviour // TypeDefIndex: 10826
+public class BlurManager : MonoBehaviour // TypeDefIndex: 10837
 {
 	public PostProcessVolume postProcessVolume; 
 	private float blurAmount; 

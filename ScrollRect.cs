@@ -1,4 +1,4 @@
-public class ScrollRect : UIBehaviour, IInitializePotentialDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, ICanvasElement, ILayoutElement, ILayoutGroup, ILayoutController // TypeDefIndex: 4994
+public class ScrollRect : UIBehaviour, IInitializePotentialDragHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, ICanvasElement, ILayoutElement, ILayoutGroup, ILayoutController // TypeDefIndex: 4995
 {
 	[SerializeField] 
 	private RectTransform m_Content; 
@@ -271,7 +271,7 @@ public class ScrollRect : UIBehaviour, IInitializePotentialDragHandler, IEventSy
 
 }
 
-public enum ScrollRect.MovementType // TypeDefIndex: 4995
+public enum ScrollRect.MovementType // TypeDefIndex: 4996
 {
 	public int value__; 
 	public const ScrollRect.MovementType Unrestricted = 0;
@@ -280,7 +280,7 @@ public enum ScrollRect.MovementType // TypeDefIndex: 4995
 
 }
 
-public enum ScrollRect.ScrollbarVisibility // TypeDefIndex: 4996
+public enum ScrollRect.ScrollbarVisibility // TypeDefIndex: 4997
 {
 	public int value__; 
 	public const ScrollRect.ScrollbarVisibility Permanent = 0;
@@ -289,7 +289,7 @@ public enum ScrollRect.ScrollbarVisibility // TypeDefIndex: 4996
 
 }
 
-public class ScrollRect.ScrollRectEvent : UnityEvent<Vector2> // TypeDefIndex: 4997
+public class ScrollRect.ScrollRectEvent : UnityEvent<Vector2> // TypeDefIndex: 4998
 {
 
 	public void .ctor() { }

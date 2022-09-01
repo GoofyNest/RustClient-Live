@@ -1,4 +1,4 @@
-public enum DurationControlProgress // TypeDefIndex: 5143
+public enum DurationControlProgress // TypeDefIndex: 5144
 {
 	public int value__; 
 	public const DurationControlProgress Progress_Full = 0;

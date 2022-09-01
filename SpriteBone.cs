@@ -1,7 +1,7 @@
 public struct SpriteBone // TypeDefIndex: 3577
 {
-	[NativeNameAttribute] 
 	[SerializeField] 
+	[NativeNameAttribute] 
 	private string m_Name; 
 	[NativeNameAttribute] 
 	[SerializeField] 
@@ -12,8 +12,8 @@ public struct SpriteBone // TypeDefIndex: 3577
 	[NativeNameAttribute] 
 	[SerializeField] 
 	private float m_Length; 
-	[NativeNameAttribute] 
 	[SerializeField] 
+	[NativeNameAttribute] 
 	private int m_ParentId; 
 
 }

@@ -1,4 +1,4 @@
-public enum FontFeatureLookupFlags // TypeDefIndex: 6778
+public enum FontFeatureLookupFlags // TypeDefIndex: 6779
 {
 	public int value__; 
 	public const FontFeatureLookupFlags IgnoreLigatures = 4;

@@ -1,4 +1,4 @@
-public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 8257
+public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 8258
 {
 	public string[] monumentPrefabs; 
 	public Transform[] vantagePoints; 
@@ -20,7 +20,7 @@ public class MonumentBenchmarkScene : BenchmarkScene // TypeDefIndex: 8257
 
 }
 
-private sealed class MonumentBenchmarkScene.<DoMonumentBenchmark>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 8258
+private sealed class MonumentBenchmarkScene.<DoMonumentBenchmark>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 8259
 {
 	private int <>1__state; 
 	private object <>2__current; 

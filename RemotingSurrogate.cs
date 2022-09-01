@@ -1,7 +1,7 @@
 internal class RemotingSurrogate : ISerializationSurrogate // TypeDefIndex: 1255
 {
 
-internal class RemotingSurrogate : ISerializationSurrogate 
+internal class RemotingSurrogate : ISerializationSurrogate
 
 	public virtual void GetObjectData(object obj, SerializationInfo si, StreamingContext sc) { }
 

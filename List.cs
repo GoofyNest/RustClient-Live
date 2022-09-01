@@ -77,7 +77,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WindZoneExManager.CurrentZoneEntry>..ctor
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>..ctor
 	|
-	|-List.Enumerator<BaseEntity.ServerFileRequest>..ctor
+	|-List.Enumerator<BaseEntity.PendingFileRequest>..ctor
 	|-List.Enumerator<CardTableUI.KeycodeWithAction>..ctor
 	|-List.Enumerator<Demos.DemoInfo>..ctor
 	|-List.Enumerator<Output.Entry>..ctor
@@ -213,7 +213,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<BaseAIEvent>.Dispose
 	|-List.Enumerator<BaseBulb>.Dispose
 	|-List.Enumerator<BaseCollision>.Dispose
-	|-List.Enumerator<BaseEntity.ServerFileRequest>.Dispose
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.Dispose
 	|-List.Enumerator<BaseEntity>.Dispose
 	|-List.Enumerator<BaseMeshPaintable>.Dispose
 	|-List.Enumerator<BaseMission.MissionInstance>.Dispose
@@ -349,6 +349,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ItemDefinition>.Dispose
 	|-List.Enumerator<ItemIcon>.Dispose
 	|-List.Enumerator<ItemModConsumable.ConsumableEffect>.Dispose
+	|-List.Enumerator<ItemPickupNotice>.Dispose
 	|-List.Enumerator<ItemSkinDirectory.Skin>.Dispose
 	|-List.Enumerator<ItemSlot>.Dispose
 	|-List.Enumerator<Value>.Dispose
@@ -388,6 +389,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<JsonSerializerInternalReader.CreatorPropertyContext>.Dispose
 	|-List.Enumerator<SerializationCallback>.Dispose
 	|-List.Enumerator<OutlineObject>.Dispose
+	|-List.Enumerator<OvenItemIcon>.Dispose
 	|-List.Enumerator<PaintableItem>.Dispose
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>.Dispose
 	|-List.Enumerator<PathFinder.Node>.Dispose
@@ -437,6 +439,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlayerLifeStory.GenericStat>.Dispose
 	|-List.Enumerator<PlayerLifeStory.WeaponStats>.Dispose
 	|-List.Enumerator<PlayerTeam.TeamMember>.Dispose
+	|-List.Enumerator<PrefabData>.Dispose
 	|-List.Enumerator<RelationshipManager.PlayerRelationshipInfo>.Dispose
 	|-List.Enumerator<RespawnInformation.SpawnOptions>.Dispose
 	|-List.Enumerator<Tree>.Dispose
@@ -746,6 +749,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ItemDefinition>.MoveNext
 	|-List.Enumerator<ItemIcon>.MoveNext
 	|-List.Enumerator<ItemModConsumable.ConsumableEffect>.MoveNext
+	|-List.Enumerator<ItemPickupNotice>.MoveNext
 	|-List.Enumerator<Value>.MoveNext
 	|-List.Enumerator<KeyframeWidget>.MoveNext
 	|-List.Enumerator<LODComponent>.MoveNext
@@ -768,6 +772,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<JsonSerializerInternalReader.CreatorPropertyContext>.MoveNext
 	|-List.Enumerator<SerializationCallback>.MoveNext
 	|-List.Enumerator<OutlineObject>.MoveNext
+	|-List.Enumerator<OvenItemIcon>.MoveNext
 	|-List.Enumerator<PaintableItem>.MoveNext
 	|-List.Enumerator<PathFinder.Node>.MoveNext
 	|-List.Enumerator<PathList.MeshObject>.MoveNext
@@ -803,6 +808,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlayerLifeStory.GenericStat>.MoveNext
 	|-List.Enumerator<PlayerLifeStory.WeaponStats>.MoveNext
 	|-List.Enumerator<PlayerTeam.TeamMember>.MoveNext
+	|-List.Enumerator<PrefabData>.MoveNext
 	|-List.Enumerator<RelationshipManager.PlayerRelationshipInfo>.MoveNext
 	|-List.Enumerator<RespawnInformation.SpawnOptions>.MoveNext
 	|-List.Enumerator<Tree>.MoveNext
@@ -965,7 +971,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<FocusController.FocusedElement>.MoveNext
 	|-List.Enumerator<WindZoneExManager.CurrentZoneEntry>.MoveNext
 	|
-	|-List.Enumerator<BaseEntity.ServerFileRequest>.MoveNext
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.MoveNext
 	|
 	|-List.Enumerator<CardTableUI.KeycodeWithAction>.MoveNext
 	|-List.Enumerator<ItemSkinDirectory.Skin>.MoveNext
@@ -1209,7 +1215,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WindZoneExManager.CurrentZoneEntry>.MoveNextRare
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>.MoveNextRare
 	|
-	|-List.Enumerator<BaseEntity.ServerFileRequest>.MoveNextRare
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.MoveNextRare
 	|-List.Enumerator<CardTableUI.KeycodeWithAction>.MoveNextRare
 	|-List.Enumerator<Demos.DemoInfo>.MoveNextRare
 	|-List.Enumerator<Output.Entry>.MoveNextRare
@@ -1434,6 +1440,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ItemDefinition>.get_Current
 	|-List.Enumerator<ItemIcon>.get_Current
 	|-List.Enumerator<ItemModConsumable.ConsumableEffect>.get_Current
+	|-List.Enumerator<ItemPickupNotice>.get_Current
 	|-List.Enumerator<Value>.get_Current
 	|-List.Enumerator<KeyframeWidget>.get_Current
 	|-List.Enumerator<LODComponent>.get_Current
@@ -1456,6 +1463,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<JsonSerializerInternalReader.CreatorPropertyContext>.get_Current
 	|-List.Enumerator<SerializationCallback>.get_Current
 	|-List.Enumerator<OutlineObject>.get_Current
+	|-List.Enumerator<OvenItemIcon>.get_Current
 	|-List.Enumerator<PaintableItem>.get_Current
 	|-List.Enumerator<PathFinder.Node>.get_Current
 	|-List.Enumerator<PathFinder.Point>.get_Current
@@ -1492,6 +1500,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlayerLifeStory.GenericStat>.get_Current
 	|-List.Enumerator<PlayerLifeStory.WeaponStats>.get_Current
 	|-List.Enumerator<PlayerTeam.TeamMember>.get_Current
+	|-List.Enumerator<PrefabData>.get_Current
 	|-List.Enumerator<RelationshipManager.PlayerRelationshipInfo>.get_Current
 	|-List.Enumerator<RespawnInformation.SpawnOptions>.get_Current
 	|-List.Enumerator<Tree>.get_Current
@@ -1664,7 +1673,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<MidiConvar.NoteBinding>.get_Current
 	|-List.Enumerator<TransformSnapshot>.get_Current
 	|-List.Enumerator<SkinnedMultiMesh.Part>.get_Current
-	|-List.Enumerator<BaseEntity.ServerFileRequest>.get_Current
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.get_Current
 	|-List.Enumerator<Demos.DemoInfo>.get_Current
 	|-List.Enumerator<Output.Entry>.get_Current
 	|-List.Enumerator<ItemSkinDirectory.Skin>.get_Current
@@ -1876,7 +1885,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WindZoneExManager.CurrentZoneEntry>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.get_Current
 	|
-	|-List.Enumerator<BaseEntity.ServerFileRequest>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Demos.DemoInfo>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Output.Entry>.System.Collections.IEnumerator.get_Current
@@ -2072,7 +2081,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WindZoneExManager.CurrentZoneEntry>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.Reset
 	|
-	|-List.Enumerator<BaseEntity.ServerFileRequest>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Demos.DemoInfo>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Output.Entry>.System.Collections.IEnumerator.Reset
@@ -2199,7 +2208,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 
 }
 
-public static class List // TypeDefIndex: 4843
+public static class List // TypeDefIndex: 4844
 {
 
 	[ExtensionAttribute] 
@@ -2222,20 +2231,21 @@ public static class List // TypeDefIndex: 4843
 	*/
 
 	[ExtensionAttribute] 
-	public static TItem FindWith<TItem, TKey>(List<TItem> items, Func<TItem, TKey> selector, TKey search) { }
+	public static TItem FindWith<TItem, TKey>(IReadOnlyCollection<TItem> items, Func<TItem, TKey> selector, TKey search, IEqualityComparer<TKey> comparer) { }
 	/* GenericInstMethod :
+	|
+	|-List.FindWith<Manifest.NewsInfo.BlogInfo, string>
+	|-List.FindWith<object, object>
 	|
 	|-List.FindWith<MarketTerminal.PendingOrder, uint>
 	|-List.FindWith<object, uint>
 	|
 	|-List.FindWith<PlayerTeam.TeamMember, ulong>
 	|-List.FindWith<object, ulong>
-	|
-	|-List.FindWith<object, object>
 	*/
 
 	[ExtensionAttribute] 
-	public static Nullable<TItem> TryFindWith<TItem, TKey>(List<TItem> items, Func<TItem, TKey> selector, TKey search, IEqualityComparer<TItem> comparer) { }
+	public static Nullable<TItem> TryFindWith<TItem, TKey>(IReadOnlyCollection<TItem> items, Func<TItem, TKey> selector, TKey search, IEqualityComparer<TKey> comparer) { }
 	/* GenericInstMethod :
 	|
 	|-List.TryFindWith<ImageStorageEntity.ImageRequest, IImageReceiver>
@@ -2243,7 +2253,7 @@ public static class List // TypeDefIndex: 4843
 	*/
 
 	[ExtensionAttribute] 
-	public static int FindIndexWith<TItem, TKey>(List<TItem> items, Func<TItem, TKey> selector, TKey search) { }
+	public static int FindIndexWith<TItem, TKey>(IReadOnlyList<TItem> items, Func<TItem, TKey> selector, TKey search) { }
 	/* GenericInstMethod :
 	|
 	|-List.FindIndexWith<object, object>

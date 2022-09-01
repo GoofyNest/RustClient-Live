@@ -1,4 +1,4 @@
-public class VirtualScroll : MonoBehaviour // TypeDefIndex: 11997
+public class VirtualScroll : MonoBehaviour // TypeDefIndex: 12025
 {
 	public int ItemHeight; 
 	public int ItemSpacing; 
@@ -21,7 +21,7 @@ public class VirtualScroll : MonoBehaviour // TypeDefIndex: 11997
 
 	private void OnScrollChanged(Vector2 pos) { }
 
-	public void SetDataSource(VirtualScroll.IDataSource source) { }
+	public void SetDataSource(VirtualScroll.IDataSource source, bool forceRebuild = False) { }
 
 	private int get_BlockHeight() { }
 
@@ -43,7 +43,7 @@ public class VirtualScroll : MonoBehaviour // TypeDefIndex: 11997
 
 }
 
-private sealed class VirtualScroll.<>c__DisplayClass20_0 // TypeDefIndex: 11999
+private sealed class VirtualScroll.<>c__DisplayClass20_0 // TypeDefIndex: 12027
 {
 	public int startVisible; 
 	public float endVisible; 
@@ -55,7 +55,7 @@ private sealed class VirtualScroll.<>c__DisplayClass20_0 // TypeDefIndex: 11999
 
 }
 
-private sealed class VirtualScroll.<>c // TypeDefIndex: 12000
+private sealed class VirtualScroll.<>c // TypeDefIndex: 12028
 {
 	public static readonly VirtualScroll.<>c <>9; 
 	public static Func<int, int> <>9__20_1; 

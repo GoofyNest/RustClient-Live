@@ -3,7 +3,7 @@ public enum TaskCreationOptions // TypeDefIndex: 862
 
 [FlagsAttribute] 
 [Serializable]
-public enum TaskCreationOptions 
+public enum TaskCreationOptions
 	public int value__; 
 	public const TaskCreationOptions None = 0;
 	public const TaskCreationOptions PreferFairness = 1;

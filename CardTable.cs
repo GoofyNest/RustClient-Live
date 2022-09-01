@@ -1,4 +1,4 @@
-public class CardTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6407
+public class CardTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6408
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -65,7 +65,7 @@ public class CardTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6407
 
 }
 
-public class CardTable.CardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6408
+public class CardTable.CardPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6409
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -135,7 +135,7 @@ public class CardTable.CardPlayer : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class CardTable.TexasHoldEm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6409
+public class CardTable.TexasHoldEm : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6410
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -199,7 +199,7 @@ public class CardTable.TexasHoldEm : IDisposable, Pool.IPooled, IProto // TypeDe
 
 }
 
-public class CardTable.WinnerBreakdown : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6410
+public class CardTable.WinnerBreakdown : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6411
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -261,7 +261,7 @@ public class CardTable.WinnerBreakdown : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public class CardTable.WinnerBreakdown.Winner : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6411
+public class CardTable.WinnerBreakdown.Winner : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6412
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -324,7 +324,7 @@ public class CardTable.WinnerBreakdown.Winner : IDisposable, Pool.IPooled, IProt
 
 }
 
-public class CardTable.CardList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6412
+public class CardTable.CardList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6413
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -385,7 +385,7 @@ public class CardTable.CardList : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class CardTable : BaseVehicle // TypeDefIndex: 8367
+public class CardTable : BaseVehicle // TypeDefIndex: 8369
 {
 	private Option __menuOption_Menu_Open; 
 	private Option __menuOption_Menu_Play; 
@@ -529,7 +529,7 @@ public class CardTable : BaseVehicle // TypeDefIndex: 8367
 
 }
 
-public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 8368
+public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 8370
 {
 	public int chipValue; 
 	public GameObject[] chips; 
@@ -541,14 +541,14 @@ public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIn
 
 }
 
-public enum CardTable.CardGameOption // TypeDefIndex: 8369
+public enum CardTable.CardGameOption // TypeDefIndex: 8371
 {
 	public int value__; 
 	public const CardTable.CardGameOption TexasHoldEm = 0;
 
 }
 
-public class CardTable.PlayerStorageInfo // TypeDefIndex: 8370
+public class CardTable.PlayerStorageInfo // TypeDefIndex: 8372
 {
 	public Transform storagePos; 
 

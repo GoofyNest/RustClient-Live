@@ -1,10 +1,12 @@
-public class NoticeArea : SingletonComponent<NoticeArea> // TypeDefIndex: 11040
+public class NoticeArea : SingletonComponent<NoticeArea> // TypeDefIndex: 11054
 {
 	public GameObjectRef itemPickupPrefab; 
 	public GameObjectRef itemPickupCondensedText; 
 	public GameObjectRef itemDroppedPrefab; 
 	public AnimationCurve pickupSizeCurve; 
 	public AnimationCurve pickupAlphaCurve; 
+	public AnimationCurve reuseAlphaCurve; 
+	public AnimationCurve reuseSizeCurve; 
 	private IVitalNotice[] notices; 
 	private List<ItemPickupNotice> pickups; 
 	private RealTimeSince timeSinceUpdatedNotices; 

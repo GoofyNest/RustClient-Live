@@ -1,4 +1,4 @@
-public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable<string>>>, IEnumerable // TypeDefIndex: 5775
+public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable<string>>>, IEnumerable // TypeDefIndex: 5776
 {
 	private static readonly Dictionary<string, HeaderInfo> known_headers; 
 	private readonly Dictionary<string, HttpHeaders.HeaderBucket> headers; 
@@ -71,7 +71,7 @@ public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable
 
 }
 
-private class HttpHeaders.HeaderBucket // TypeDefIndex: 5776
+private class HttpHeaders.HeaderBucket // TypeDefIndex: 5777
 {
 	public object Parsed; 
 	private List<string> values; 
@@ -93,7 +93,7 @@ private class HttpHeaders.HeaderBucket // TypeDefIndex: 5776
 
 }
 
-private sealed class HttpHeaders.<GetEnumerator>d__19 : IEnumerator<KeyValuePair<string, IEnumerable<string>>>, IDisposable, IEnumerator // TypeDefIndex: 5777
+private sealed class HttpHeaders.<GetEnumerator>d__19 : IEnumerator<KeyValuePair<string, IEnumerable<string>>>, IDisposable, IEnumerator // TypeDefIndex: 5778
 {
 	private int <>1__state; 
 	private KeyValuePair<string, IEnumerable<string>> <>2__current; 

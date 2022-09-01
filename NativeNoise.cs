@@ -1,4 +1,4 @@
-public static class NativeNoise // TypeDefIndex: 10288
+public static class NativeNoise // TypeDefIndex: 10299
 {
 
 	public static extern float Simplex1D(float x) { }

@@ -1,8 +1,8 @@
 public abstract class PhraseRecognizer // TypeDefIndex: 3594
 {
 	protected IntPtr m_Recognizer; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private PhraseRecognizer.PhraseRecognizedDelegate OnPhraseRecognized; 
 
 

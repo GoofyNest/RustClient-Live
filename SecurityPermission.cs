@@ -3,7 +3,7 @@ public sealed class SecurityPermission : CodeAccessPermission // TypeDefIndex: 9
 
 [ComVisibleAttribute] 
 [Serializable]
-public sealed class SecurityPermission : CodeAccessPermission 
+public sealed class SecurityPermission : CodeAccessPermission
 	private SecurityPermissionFlag flags; 
 
 

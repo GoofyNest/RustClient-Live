@@ -1,4 +1,4 @@
-internal class CreaseShading : PostEffectsBase // TypeDefIndex: 8176
+internal class CreaseShading : PostEffectsBase // TypeDefIndex: 8177
 {
 	public float intensity; 
 	public int softness; 

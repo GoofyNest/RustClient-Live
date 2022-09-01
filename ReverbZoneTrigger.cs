@@ -1,4 +1,4 @@
-public class ReverbZoneTrigger : TriggerBase, IClientComponentEx, ILOD, ISoundBudgetedUpdate // TypeDefIndex: 9018
+public class ReverbZoneTrigger : TriggerBase, IClientComponentEx, ILOD, ISoundBudgetedUpdate // TypeDefIndex: 9021
 {
 	public Collider trigger; 
 	public AudioReverbZone reverbZone; 

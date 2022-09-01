@@ -2,7 +2,7 @@ internal sealed class TypeDependencyAttribute : Attribute // TypeDefIndex: 1310
 {
 
 [AttributeUsageAttribute] 
-internal sealed class TypeDependencyAttribute : Attribute 
+internal sealed class TypeDependencyAttribute : Attribute
 	private string typeName; 
 
 

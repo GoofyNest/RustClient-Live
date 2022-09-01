@@ -1,9 +1,9 @@
-public class EdgeER // TypeDefIndex: 6873
+public class EdgeER // TypeDefIndex: 6874
 {
 
-internal class <Module> 
+internal class <Module>
 
-public class EdgeER 
+public class EdgeER
 	public PointER StartPoint; 
 	public PointER EndPoint; 
 

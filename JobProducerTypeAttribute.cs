@@ -1,7 +1,7 @@
 public sealed class JobProducerTypeAttribute : Attribute // TypeDefIndex: 3309
 {
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private readonly Type <ProducerType>k__BackingField; 
 
 

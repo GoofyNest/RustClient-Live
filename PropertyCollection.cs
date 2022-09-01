@@ -2,7 +2,7 @@ public class PropertyCollection : Hashtable, ICloneable // TypeDefIndex: 4282
 {
 
 [Serializable]
-public class PropertyCollection : Hashtable, ICloneable 
+public class PropertyCollection : Hashtable, ICloneable
 
 	public void .ctor() { }
 

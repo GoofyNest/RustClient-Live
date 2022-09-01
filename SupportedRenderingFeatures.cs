@@ -10,17 +10,17 @@ public class SupportedRenderingFeatures // TypeDefIndex: 3854
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private SupportedRenderingFeatures.LightmapMixedBakeModes <mixedLightingModes>k__BackingField; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private LightmapBakeType <lightmapBakeTypes>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private LightmapsMode <lightmapsModes>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private bool <enlighten>k__BackingField; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private bool <lightProbeProxyVolumes>k__BackingField; 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -34,23 +34,23 @@ public class SupportedRenderingFeatures // TypeDefIndex: 3854
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private bool <rendererPriority>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private bool <terrainDetailUnsupported>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private bool <overridesEnvironmentLighting>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private bool <overridesFog>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private bool <overridesOtherLightingSettings>k__BackingField; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private bool <editableMaterialRenderQueue>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private bool <overridesLODBias>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

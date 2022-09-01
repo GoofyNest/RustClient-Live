@@ -1,4 +1,4 @@
-public class ObjectiveStatus : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6450
+public class ObjectiveStatus : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6451
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-public sealed class ControlChangeEvent : ChannelEvent // TypeDefIndex: 7523
+public sealed class ControlChangeEvent : ChannelEvent // TypeDefIndex: 7524
 {
 	public SevenBitNumber ControlNumber { get; }
 	public SevenBitNumber ControlValue { get; }

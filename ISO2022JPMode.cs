@@ -1,4 +1,4 @@
-internal enum ISO2022JPMode // TypeDefIndex: 7804
+internal enum ISO2022JPMode // TypeDefIndex: 7805
 {
 	public int value__; 
 	public const ISO2022JPMode ASCII = 0;

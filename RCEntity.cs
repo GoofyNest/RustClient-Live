@@ -1,4 +1,4 @@
-public class RCEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6375
+public class RCEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6376
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

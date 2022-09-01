@@ -1,4 +1,4 @@
-public static class UnityButtons // TypeDefIndex: 8233
+public static class UnityButtons // TypeDefIndex: 8234
 {
 	private static bool isRegistered; 
 
@@ -9,7 +9,7 @@ public static class UnityButtons // TypeDefIndex: 8233
 
 }
 
-private sealed class UnityButtons.<>c__DisplayClass1_0 // TypeDefIndex: 8234
+private sealed class UnityButtons.<>c__DisplayClass1_0 // TypeDefIndex: 8235
 {
 	public KeyCode localKey; 
 	public bool isFKey; 
@@ -22,7 +22,7 @@ private sealed class UnityButtons.<>c__DisplayClass1_0 // TypeDefIndex: 8234
 
 }
 
-private sealed class UnityButtons.<>c__DisplayClass1_1 // TypeDefIndex: 8235
+private sealed class UnityButtons.<>c__DisplayClass1_1 // TypeDefIndex: 8236
 {
 	public float lastWheelValue; 
 	public float wheelValue; 
@@ -36,7 +36,7 @@ private sealed class UnityButtons.<>c__DisplayClass1_1 // TypeDefIndex: 8235
 
 }
 
-private sealed class UnityButtons.<>c__DisplayClass1_2 // TypeDefIndex: 8236
+private sealed class UnityButtons.<>c__DisplayClass1_2 // TypeDefIndex: 8237
 {
 	public float lastWheelValue; 
 	public float wheelValue; 

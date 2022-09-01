@@ -5,14 +5,14 @@ public sealed class IsByRefLikeAttribute : Attribute // TypeDefIndex: 1270
 
 }
 
-internal sealed class IsByRefLikeAttribute : Attribute // TypeDefIndex: 6724
+internal sealed class IsByRefLikeAttribute : Attribute // TypeDefIndex: 6725
 {
 
 	public void .ctor() { }
 
 }
 
-internal sealed class IsByRefLikeAttribute : Attribute // TypeDefIndex: 6902
+internal sealed class IsByRefLikeAttribute : Attribute // TypeDefIndex: 6903
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class NpcWalkAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 9117
+public class NpcWalkAnimation : MonoBehaviour, IClientComponent // TypeDefIndex: 9121
 {
 	public Vector3 HipFudge; 
 	public BaseNpc Npc; 
@@ -62,7 +62,7 @@ public class NpcWalkAnimation : MonoBehaviour, IClientComponent // TypeDefIndex:
 
 }
 
-public class NpcWalkAnimation.NPCWalkWorkQueue : PersistentObjectWorkQueue<NpcWalkAnimation> // TypeDefIndex: 9118
+public class NpcWalkAnimation.NPCWalkWorkQueue : PersistentObjectWorkQueue<NpcWalkAnimation> // TypeDefIndex: 9122
 {
 
 	protected override void RunJob(NpcWalkAnimation entity) { }

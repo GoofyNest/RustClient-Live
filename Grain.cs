@@ -1,4 +1,4 @@
-public sealed class Grain : PostProcessEffectSettings // TypeDefIndex: 11784
+public sealed class Grain : PostProcessEffectSettings // TypeDefIndex: 11812
 {
 	[TooltipAttribute] 
 	public BoolParameter colored; 

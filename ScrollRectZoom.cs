@@ -1,4 +1,4 @@
-public class ScrollRectZoom : MonoBehaviour, IScrollHandler, IEventSystemHandler // TypeDefIndex: 11215
+public class ScrollRectZoom : MonoBehaviour, IScrollHandler, IEventSystemHandler // TypeDefIndex: 11243
 {
 	public ScrollRectEx scrollRect; 
 	public float zoom; 

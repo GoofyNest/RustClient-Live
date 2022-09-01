@@ -1,4 +1,4 @@
-internal class KoreanEncoding : DbcsEncoding // TypeDefIndex: 7817
+internal class KoreanEncoding : DbcsEncoding // TypeDefIndex: 7818
 {
 	private bool useUHC; 
 
@@ -19,7 +19,7 @@ internal class KoreanEncoding : DbcsEncoding // TypeDefIndex: 7817
 
 }
 
-private sealed class KoreanEncoding.KoreanDecoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7818
+private sealed class KoreanEncoding.KoreanDecoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7819
 {
 	private bool useUHC; 
 	private int last_byte_count; 

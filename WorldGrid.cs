@@ -1,9 +1,10 @@
-public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // TypeDefIndex: 10082
+public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // TypeDefIndex: 10089
 {
 	public static bool Paused; 
 	public float CellSize; 
 	public float MaxMilliseconds; 
 	public const float MaxRefreshDistance = 500;
+	public const float MinTimeBetweenRefreshes = 1;
 	private List<GameObject> tempInstances; 
 	private WorldSpaceGrid<WorldCell> grid; 
 	private Vector2i curCell; 
@@ -37,7 +38,7 @@ public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // Type
 
 }
 
-private sealed class WorldGrid.<UpdateCoroutine>d__16 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10083
+private sealed class WorldGrid.<UpdateCoroutine>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10090
 {
 	private int <>1__state; 
 	private object <>2__current; 

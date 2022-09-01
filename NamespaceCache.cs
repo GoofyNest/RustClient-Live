@@ -1,4 +1,4 @@
-internal struct NamespaceCache // TypeDefIndex: 5835
+internal struct NamespaceCache // TypeDefIndex: 5836
 {
 	private XNamespace ns; 
 	private string namespaceName; 

@@ -1,4 +1,4 @@
-public enum Result // TypeDefIndex: 5135
+public enum Result // TypeDefIndex: 5136
 {
 	public int value__; 
 	public const Result None = 0;
@@ -127,7 +127,7 @@ public enum Result // TypeDefIndex: 5135
 
 }
 
-public class Result.Entry<T> // TypeDefIndex: 6261
+public class Result.Entry<T> // TypeDefIndex: 6262
 {
 	public T Content; 
 	public string Id; 

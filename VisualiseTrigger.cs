@@ -1,4 +1,4 @@
-public class VisualiseTrigger : MonoBehaviour, IEditorComponent // TypeDefIndex: 11337
+public class VisualiseTrigger : MonoBehaviour, IEditorComponent // TypeDefIndex: 11365
 {
 	[SerializeField] 
 	private Color colour; 

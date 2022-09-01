@@ -1,4 +1,4 @@
-internal class RectangularVertexClipper // TypeDefIndex: 4916
+internal class RectangularVertexClipper // TypeDefIndex: 4917
 {
 	private readonly Vector3[] m_WorldCorners; 
 	private readonly Vector3[] m_CanvasCorners; 

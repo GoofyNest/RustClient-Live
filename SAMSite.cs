@@ -1,4 +1,4 @@
-public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
+public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6346
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class SAMSite : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
 
 }
 
-public class SamSite : ContainerIOEntity // TypeDefIndex: 8441
+public class SamSite : ContainerIOEntity // TypeDefIndex: 8443
 {
 	private Option __menuOption_Menu_DisableDefenderMode; 
 	private Option __menuOption_Menu_EnableDefenderMode; 

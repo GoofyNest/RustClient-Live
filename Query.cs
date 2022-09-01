@@ -1,4 +1,4 @@
-public struct Query // TypeDefIndex: 5279
+public struct Query // TypeDefIndex: 5280
 {
 	private UgcType matchingType; 
 	private UGCQuery queryType; 
@@ -60,7 +60,7 @@ public struct Query // TypeDefIndex: 5279
 
 }
 
-private struct Query.<GetPageAsync>d__76 : IAsyncStateMachine // TypeDefIndex: 5280
+private struct Query.<GetPageAsync>d__76 : IAsyncStateMachine // TypeDefIndex: 5281
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<ResultPage>> <>t__builder; 

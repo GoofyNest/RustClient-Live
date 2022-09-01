@@ -1,4 +1,4 @@
-public class WorldSetup : SingletonComponent<WorldSetup> // TypeDefIndex: 10570
+public class WorldSetup : SingletonComponent<WorldSetup> // TypeDefIndex: 10581
 {
 	public bool AutomaticallySetup; 
 	public GameObject terrain; 
@@ -29,7 +29,7 @@ public class WorldSetup : SingletonComponent<WorldSetup> // TypeDefIndex: 10570
 
 }
 
-private sealed class WorldSetup.<>c // TypeDefIndex: 10571
+private sealed class WorldSetup.<>c // TypeDefIndex: 10582
 {
 	public static readonly WorldSetup.<>c <>9; 
 	public static Action<string> <>9__15_0; 
@@ -46,7 +46,7 @@ private sealed class WorldSetup.<>c // TypeDefIndex: 10571
 
 }
 
-private sealed class WorldSetup.<InitCoroutine>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10572
+private sealed class WorldSetup.<InitCoroutine>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10583
 {
 	private int <>1__state; 
 	private object <>2__current; 

@@ -1,4 +1,4 @@
-public class SedanWheelSmoke : MonoBehaviour // TypeDefIndex: 8297
+public class SedanWheelSmoke : MonoBehaviour // TypeDefIndex: 8298
 {
 	public ParticleSystem[] tireSmoke; 
 	public ParticleSystem[] tireWaterSplash; 

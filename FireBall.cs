@@ -1,4 +1,4 @@
-public class FireBall : BaseEntity, ISplashable // TypeDefIndex: 9537
+public class FireBall : BaseEntity, ISplashable // TypeDefIndex: 9541
 {
 	public float lifeTimeMin; 
 	public float lifeTimeMax; 

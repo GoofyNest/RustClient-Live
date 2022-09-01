@@ -1,4 +1,4 @@
-internal struct ClanOfficerListResponse_t : ICallbackData // TypeDefIndex: 5312
+internal struct ClanOfficerListResponse_t : ICallbackData // TypeDefIndex: 5313
 {
 	internal ulong SteamIDClan; 
 	internal int COfficers; 

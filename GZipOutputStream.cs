@@ -1,4 +1,4 @@
-internal class GZipOutputStream : DeflaterOutputStream // TypeDefIndex: 5655
+internal class GZipOutputStream : DeflaterOutputStream // TypeDefIndex: 5656
 {
 	protected Crc32 crc; 
 

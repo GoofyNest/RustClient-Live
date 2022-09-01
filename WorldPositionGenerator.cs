@@ -1,4 +1,4 @@
-public class WorldPositionGenerator : ScriptableObject // TypeDefIndex: 10225
+public class WorldPositionGenerator : ScriptableObject // TypeDefIndex: 10232
 {
 	public SpawnFilter Filter; 
 	public float FilterCutoff; 

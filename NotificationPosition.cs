@@ -1,4 +1,4 @@
-public enum NotificationPosition // TypeDefIndex: 5141
+public enum NotificationPosition // TypeDefIndex: 5142
 {
 	public int value__; 
 	public const NotificationPosition TopLeft = 0;

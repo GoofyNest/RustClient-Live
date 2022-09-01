@@ -1,4 +1,4 @@
-public class LinearFog : MonoBehaviour // TypeDefIndex: 10095
+public class LinearFog : MonoBehaviour // TypeDefIndex: 10102
 {
 	public Material fogMaterial; 
 	public Color fogColor; 

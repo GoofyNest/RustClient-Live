@@ -1,10 +1,10 @@
 internal class PersistentCall // TypeDefIndex: 3635
 {
-	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
+	[SerializeField] 
 	private Object m_Target; 
-	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
+	[FormerlySerializedAsAttribute] 
 	private string m_MethodName; 
 	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
@@ -13,8 +13,8 @@ internal class PersistentCall // TypeDefIndex: 3635
 	[SerializeField] 
 	private ArgumentCache m_Arguments; 
 	[FormerlySerializedAsAttribute] 
-	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
+	[SerializeField] 
 	private UnityEventCallState m_CallState; 
 
 	public Object target { get; }

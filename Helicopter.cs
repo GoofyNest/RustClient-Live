@@ -1,4 +1,4 @@
-public class Helicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6329
+public class Helicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6330
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

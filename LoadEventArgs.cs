@@ -1,4 +1,4 @@
-public abstract class LoadEventArgs : EventArgs // TypeDefIndex: 7151
+public abstract class LoadEventArgs : EventArgs // TypeDefIndex: 7152
 {
 	[CompilerGeneratedAttribute] 
 	private string <Message>k__BackingField; 

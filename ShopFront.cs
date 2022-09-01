@@ -1,4 +1,4 @@
-public class ShopFront : StorageContainer // TypeDefIndex: 8637
+public class ShopFront : StorageContainer // TypeDefIndex: 8640
 {
 	public float maxUseAngle; 
 	public BasePlayer vendorPlayer; 
@@ -26,8 +26,6 @@ public class ShopFront : StorageContainer // TypeDefIndex: 8637
 
 	public bool LootEligable(BasePlayer player) { }
 
-	public override int GetMoveToContainerIndex(BasePlayer player, Item item) { }
-
 	public override bool ShouldShowLootMenus() { }
 
 	[BaseEntity.RPC_Client] 
@@ -37,7 +35,7 @@ public class ShopFront : StorageContainer // TypeDefIndex: 8637
 
 }
 
-public static class ShopFront.ShopFrontFlags // TypeDefIndex: 8638
+public static class ShopFront.ShopFrontFlags // TypeDefIndex: 8641
 {
 	public const BaseEntity.Flags VendorAccepted = 128;
 	public const BaseEntity.Flags CustomerAccepted = 256;

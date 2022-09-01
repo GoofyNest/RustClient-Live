@@ -1,4 +1,4 @@
-internal class CircularByteBuffer // TypeDefIndex: 7386
+internal class CircularByteBuffer // TypeDefIndex: 7387
 {
 	private byte[] _DataArray; 
 	private int _Index; 

@@ -627,11 +627,11 @@ private enum BinaryNode.DataTypePrecedence // TypeDefIndex: 4244
 
 }
 
-public class BinaryConverter : JsonConverter // TypeDefIndex: 6099
+public class BinaryConverter : JsonConverter // TypeDefIndex: 6100
 {
 
 [PreserveAttribute] 
-public class BinaryConverter : JsonConverter 
+public class BinaryConverter : JsonConverter
 	private ReflectionObject _reflectionObject; 
 
 
@@ -651,7 +651,7 @@ public class BinaryConverter : JsonConverter
 
 }
 
-public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6104
+public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6105
 {
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
@@ -664,7 +664,7 @@ public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6104
 
 }
 
-internal enum BsonBinaryType // TypeDefIndex: 6132
+internal enum BsonBinaryType // TypeDefIndex: 6133
 {
 	public byte value__; 
 	public const BsonBinaryType Binary = 0;
@@ -679,7 +679,7 @@ internal enum BsonBinaryType // TypeDefIndex: 6132
 
 }
 
-internal class BsonBinaryWriter // TypeDefIndex: 6133
+internal class BsonBinaryWriter // TypeDefIndex: 6134
 {
 	private static readonly Encoding Encoding; 
 
@@ -688,7 +688,7 @@ internal class BsonBinaryWriter // TypeDefIndex: 6133
 
 }
 
-public class BsonReader : JsonReader // TypeDefIndex: 6134
+public class BsonReader : JsonReader // TypeDefIndex: 6135
 {
 	private static readonly byte[] SeqRange1; 
 	private static readonly byte[] SeqRange2; 
@@ -758,7 +758,7 @@ public class BsonReader : JsonReader // TypeDefIndex: 6134
 
 }
 
-private enum BsonReader.BsonReaderState // TypeDefIndex: 6135
+private enum BsonReader.BsonReaderState // TypeDefIndex: 6136
 {
 	public int value__; 
 	public const BsonReader.BsonReaderState Normal = 0;
@@ -773,7 +773,7 @@ private enum BsonReader.BsonReaderState // TypeDefIndex: 6135
 
 }
 
-private class BsonReader.ContainerContext // TypeDefIndex: 6136
+private class BsonReader.ContainerContext // TypeDefIndex: 6137
 {
 	public readonly BsonType Type; 
 	public int Length; 
@@ -784,7 +784,7 @@ private class BsonReader.ContainerContext // TypeDefIndex: 6136
 
 }
 
-internal abstract class BsonToken // TypeDefIndex: 6137
+internal abstract class BsonToken // TypeDefIndex: 6138
 {
 	[CompilerGeneratedAttribute] 
 	private BsonToken <Parent>k__BackingField; 
@@ -802,7 +802,7 @@ internal abstract class BsonToken // TypeDefIndex: 6137
 
 }
 
-internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable // TypeDefIndex: 6138
+internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable // TypeDefIndex: 6139
 {
 	private readonly List<BsonProperty> _children; 
 
@@ -821,7 +821,7 @@ internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable //
 
 }
 
-internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // TypeDefIndex: 6139
+internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // TypeDefIndex: 6140
 {
 	private readonly List<BsonToken> _children; 
 
@@ -840,7 +840,7 @@ internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // Typ
 
 }
 
-internal class BsonValue : BsonToken // TypeDefIndex: 6140
+internal class BsonValue : BsonToken // TypeDefIndex: 6141
 {
 	private readonly object _value; 
 	private readonly BsonType _type; 
@@ -854,7 +854,7 @@ internal class BsonValue : BsonToken // TypeDefIndex: 6140
 
 }
 
-internal class BsonString : BsonValue // TypeDefIndex: 6141
+internal class BsonString : BsonValue // TypeDefIndex: 6142
 {
 	[CompilerGeneratedAttribute] 
 	private bool <IncludeLength>k__BackingField; 
@@ -869,11 +869,11 @@ internal class BsonString : BsonValue // TypeDefIndex: 6141
 
 }
 
-internal class BsonRegex : BsonToken // TypeDefIndex: 6143
+internal class BsonRegex : BsonToken // TypeDefIndex: 6144
 {
 
 [PreserveAttribute] 
-internal class BsonRegex : BsonToken 
+internal class BsonRegex : BsonToken
 	[CompilerGeneratedAttribute] 
 	private BsonString <Pattern>k__BackingField; 
 	[CompilerGeneratedAttribute] 
@@ -896,7 +896,7 @@ internal class BsonRegex : BsonToken
 
 }
 
-internal class BsonProperty // TypeDefIndex: 6144
+internal class BsonProperty // TypeDefIndex: 6145
 {
 	[CompilerGeneratedAttribute] 
 	private BsonString <Name>k__BackingField; 
@@ -917,7 +917,7 @@ internal class BsonProperty // TypeDefIndex: 6144
 
 }
 
-internal enum BsonType // TypeDefIndex: 6145
+internal enum BsonType // TypeDefIndex: 6146
 {
 	public sbyte value__; 
 	public const BsonType Number = 1;
@@ -943,7 +943,7 @@ internal enum BsonType // TypeDefIndex: 6145
 
 }
 
-public class BsonWriter : JsonWriter // TypeDefIndex: 6146
+public class BsonWriter : JsonWriter // TypeDefIndex: 6147
 {
 	private BsonToken _root; 
 	private BsonToken _parent; 
@@ -960,7 +960,7 @@ public class BsonWriter : JsonWriter // TypeDefIndex: 6146
 
 }
 
-public class BsonObjectId // TypeDefIndex: 6147
+public class BsonObjectId // TypeDefIndex: 6148
 {
 	[CompilerGeneratedAttribute] 
 	private byte[] <Value>k__BackingField; 
@@ -978,7 +978,7 @@ public class BsonObjectId // TypeDefIndex: 6147
 
 }
 
-public static class BinaryReaderExtensions // TypeDefIndex: 6221
+public static class BinaryReaderExtensions // TypeDefIndex: 6222
 {
 
 	[ExtensionAttribute] 
@@ -986,7 +986,7 @@ public static class BinaryReaderExtensions // TypeDefIndex: 6221
 
 }
 
-public static class BinaryWriterExtensions // TypeDefIndex: 6222
+public static class BinaryWriterExtensions // TypeDefIndex: 6223
 {
 
 	[ExtensionAttribute] 
@@ -994,7 +994,7 @@ public static class BinaryWriterExtensions // TypeDefIndex: 6222
 
 }
 
-public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6911
+public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6912
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1007,7 +1007,7 @@ public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6911
 
 }
 
-public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7297
+public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7298
 {
 
 	public void .ctor() { }

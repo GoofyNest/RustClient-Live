@@ -1,4 +1,4 @@
-public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6326
+public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6327
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class Landmine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6326
 
 }
 
-public class BearTrap : BaseTrap // TypeDefIndex: 8362
+public class BearTrap : BaseTrap // TypeDefIndex: 8364
 {
 	private Option __menuOption_Arm_Beartrap; 
 	protected Animator animator; 
@@ -96,7 +96,7 @@ public class BearTrap : BaseTrap // TypeDefIndex: 8362
 
 }
 
-public class Landmine : BaseTrap // TypeDefIndex: 8402
+public class Landmine : BaseTrap // TypeDefIndex: 8404
 {
 	private Option __menuOption_Arm_Landmine; 
 	public GameObjectRef explosionEffect; 
@@ -134,7 +134,7 @@ public class Landmine : BaseTrap // TypeDefIndex: 8402
 
 }
 
-public class GunTrap : StorageContainer // TypeDefIndex: 8572
+public class GunTrap : StorageContainer // TypeDefIndex: 8575
 {
 	public GameObjectRef gun_fire_effect; 
 	public GameObjectRef bulletEffect; 
@@ -163,13 +163,13 @@ public class GunTrap : StorageContainer // TypeDefIndex: 8572
 
 }
 
-public static class GunTrap.GunTrapFlags // TypeDefIndex: 8573
+public static class GunTrap.GunTrapFlags // TypeDefIndex: 8576
 {
 	public const BaseEntity.Flags Triggered = 128;
 
 }
 
-public class BaseTrap : DecayEntity // TypeDefIndex: 9684
+public class BaseTrap : DecayEntity // TypeDefIndex: 9689
 {
 
 	public override bool DisplayHealthInfo(BasePlayer player) { }
@@ -178,7 +178,7 @@ public class BaseTrap : DecayEntity // TypeDefIndex: 9684
 
 }
 
-public class BaseTrapTrigger : TriggerBase // TypeDefIndex: 9685
+public class BaseTrapTrigger : TriggerBase // TypeDefIndex: 9690
 {
 	public BaseTrap _trap; 
 
@@ -187,14 +187,14 @@ public class BaseTrapTrigger : TriggerBase // TypeDefIndex: 9685
 
 }
 
-public class BearTrapTrigger : BaseTrapTrigger // TypeDefIndex: 9686
+public class BearTrapTrigger : BaseTrapTrigger // TypeDefIndex: 9691
 {
 
 	public void .ctor() { }
 
 }
 
-public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 9687
+public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 9692
 {
 
 	public override void TrappedEffect() { }
@@ -203,7 +203,7 @@ public class SurvivalFishTrap : WildlifeTrap // TypeDefIndex: 9687
 
 }
 
-public class TrappableWildlife : ScriptableObject // TypeDefIndex: 9688
+public class TrappableWildlife : ScriptableObject // TypeDefIndex: 9693
 {
 	public GameObjectRef worldObject; 
 	public ItemDefinition inventoryObject; 
@@ -219,7 +219,7 @@ public class TrappableWildlife : ScriptableObject // TypeDefIndex: 9688
 
 }
 
-public class TrappableWildlife.BaitType // TypeDefIndex: 9689
+public class TrappableWildlife.BaitType // TypeDefIndex: 9694
 {
 	public float successRate; 
 	public ItemDefinition bait; 
@@ -231,7 +231,7 @@ public class TrappableWildlife.BaitType // TypeDefIndex: 9689
 
 }
 
-public class WildlifeTrap : StorageContainer // TypeDefIndex: 9690
+public class WildlifeTrap : StorageContainer // TypeDefIndex: 9695
 {
 	public float tickRate; 
 	public GameObjectRef trappedEffect; 
@@ -256,13 +256,13 @@ public class WildlifeTrap : StorageContainer // TypeDefIndex: 9690
 
 }
 
-public static class WildlifeTrap.WildlifeTrapFlags // TypeDefIndex: 9691
+public static class WildlifeTrap.WildlifeTrapFlags // TypeDefIndex: 9696
 {
 	public const BaseEntity.Flags Occupied = 128;
 
 }
 
-public class WildlifeTrap.WildlifeWeight // TypeDefIndex: 9692
+public class WildlifeTrap.WildlifeWeight // TypeDefIndex: 9697
 {
 	public TrappableWildlife wildlife; 
 	public int weight; 
@@ -272,7 +272,7 @@ public class WildlifeTrap.WildlifeWeight // TypeDefIndex: 9692
 
 }
 
-public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 9819
+public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 9824
 {
 	internal static bool bootstrapInitRun; 
 	public static bool isErrored; 
@@ -344,7 +344,7 @@ public class Bootstrap : SingletonComponent<Bootstrap> // TypeDefIndex: 9819
 
 }
 
-private sealed class Bootstrap.<>c // TypeDefIndex: 9820
+private sealed class Bootstrap.<>c // TypeDefIndex: 9825
 {
 	public static readonly Bootstrap.<>c <>9; 
 	public static Func<string, GameObject> <>9__13_0; 
@@ -367,7 +367,7 @@ private sealed class Bootstrap.<>c // TypeDefIndex: 9820
 
 }
 
-private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9821
+private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9826
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -405,7 +405,7 @@ private sealed class Bootstrap.<Start>d__18 : IEnumerator<object>, IEnumerator, 
 
 }
 
-private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9822
+private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9827
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -444,7 +444,7 @@ private sealed class Bootstrap.<ClientStartup>d__28 : IEnumerator<object>, IEnum
 
 }
 
-private sealed class Bootstrap.<LoadingUpdate>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9823
+private sealed class Bootstrap.<LoadingUpdate>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9828
 {
 	private int <>1__state; 
 	private object <>2__current; 

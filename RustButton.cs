@@ -1,4 +1,4 @@
-public class RustButton : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, ILayoutElement // TypeDefIndex: 7013
+public class RustButton : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, ILayoutElement // TypeDefIndex: 7014
 {
 	public Image Background; 
 	public RustText Text; 
@@ -38,6 +38,10 @@ public class RustButton : RustControl, IPointerDownHandler, IEventSystemHandler,
 	public void Unpress() { }
 
 	public virtual void OnPointerDown(PointerEventData eventData) { }
+
+	public void SetToggleTrue() { }
+
+	public void SetToggleFalse() { }
 
 	public void Toggle(bool v, bool forced = False) { }
 

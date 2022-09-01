@@ -3,8 +3,8 @@ public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private static Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent> reflectionProbeChanged; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Action<Cubemap> defaultReflectionSet; 
 
 	[NativeNameAttribute] 

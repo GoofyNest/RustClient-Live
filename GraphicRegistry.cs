@@ -1,4 +1,4 @@
-public class GraphicRegistry // TypeDefIndex: 4934
+public class GraphicRegistry // TypeDefIndex: 4935
 {
 	private static GraphicRegistry s_Instance; 
 	private readonly Dictionary<Canvas, IndexedSet<Graphic>> m_Graphics; 

@@ -1,4 +1,4 @@
-internal struct LobbyChatUpdate_t : ICallbackData // TypeDefIndex: 5339
+internal struct LobbyChatUpdate_t : ICallbackData // TypeDefIndex: 5340
 {
 	internal ulong SteamIDLobby; 
 	internal ulong SteamIDUserChanged; 

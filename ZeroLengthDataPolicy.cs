@@ -1,4 +1,4 @@
-public enum ZeroLengthDataPolicy // TypeDefIndex: 7610
+public enum ZeroLengthDataPolicy // TypeDefIndex: 7611
 {
 	public int value__; 
 	public const ZeroLengthDataPolicy ReadAsEmptyObject = 0;

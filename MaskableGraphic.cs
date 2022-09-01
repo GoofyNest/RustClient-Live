@@ -1,4 +1,4 @@
-public abstract class MaskableGraphic : Graphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 4986
+public abstract class MaskableGraphic : Graphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 4987
 {
 	protected bool m_ShouldRecalculateStencil; 
 	protected Material m_MaskMaterial; 
@@ -62,7 +62,7 @@ public abstract class MaskableGraphic : Graphic, IClippable, IMaskable, IMateria
 
 }
 
-public class MaskableGraphic.CullStateChangedEvent : UnityEvent<bool> // TypeDefIndex: 4987
+public class MaskableGraphic.CullStateChangedEvent : UnityEvent<bool> // TypeDefIndex: 4988
 {
 
 	public void .ctor() { }

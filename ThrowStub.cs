@@ -19,7 +19,7 @@ internal sealed class ThrowStub : ObjectDisposedException // TypeDefIndex: 3186
 
 }
 
-internal sealed class ThrowStub : ObjectDisposedException // TypeDefIndex: 5853
+internal sealed class ThrowStub : ObjectDisposedException // TypeDefIndex: 5854
 {
 
 	public static void ThrowNotSupportedException() { }

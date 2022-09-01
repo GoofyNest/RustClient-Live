@@ -11,7 +11,7 @@ public sealed class ParticleSystem : Component // TypeDefIndex: 4527
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
-public sealed class ParticleSystem : Component 
+public sealed class ParticleSystem : Component
 	[ObsoleteAttribute] 
 	public bool playOnAwake { get; }
 	[ObsoleteAttribute] 

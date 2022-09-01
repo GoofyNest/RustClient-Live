@@ -1,4 +1,4 @@
-internal struct HServerListRequest : IEquatable<HServerListRequest>, IComparable<HServerListRequest> // TypeDefIndex: 5525
+internal struct HServerListRequest : IEquatable<HServerListRequest>, IComparable<HServerListRequest> // TypeDefIndex: 5526
 {
 	public IntPtr Value; 
 

@@ -42,7 +42,7 @@ public static class Monitor // TypeDefIndex: 788
 
 }
 
-public abstract class Monitor // TypeDefIndex: 11817
+public abstract class Monitor // TypeDefIndex: 11845
 {
 	[CompilerGeneratedAttribute] 
 	private RenderTexture <output>k__BackingField; 

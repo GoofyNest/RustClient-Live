@@ -1,4 +1,4 @@
-public class TypeHint : Attribute // TypeDefIndex: 11573
+public class TypeHint : Attribute // TypeDefIndex: 11601
 {
 
 	public void .ctor() { }

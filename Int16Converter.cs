@@ -1,7 +1,7 @@
 public class Int16Converter : BaseNumberConverter // TypeDefIndex: 2720
 {
 
-public class Int16Converter : BaseNumberConverter 
+public class Int16Converter : BaseNumberConverter
 	internal override Type TargetType { get; }
 
 

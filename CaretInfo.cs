@@ -1,4 +1,4 @@
-public struct CaretInfo // TypeDefIndex: 6845
+public struct CaretInfo // TypeDefIndex: 6846
 {
 	public int index; 
 	public CaretPosition position; 

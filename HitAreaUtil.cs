@@ -1,4 +1,4 @@
-public static class HitAreaUtil // TypeDefIndex: 9902
+public static class HitAreaUtil // TypeDefIndex: 9909
 {
 
 	public static string Format(HitArea area) { }

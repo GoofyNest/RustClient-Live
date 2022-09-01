@@ -1,4 +1,4 @@
-public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 8734
+public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 8737
 {
 	public VirtualItemIcon MerchandiseIcon; 
 	public VirtualItemIcon CurrencyIcon; 
@@ -63,7 +63,7 @@ public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 
 
 }
 
-private sealed class SellOrderEntry.<>c // TypeDefIndex: 8735
+private sealed class SellOrderEntry.<>c // TypeDefIndex: 8738
 {
 	public static readonly SellOrderEntry.<>c <>9; 
 	public static Func<Item, bool> <>9__30_1; 

@@ -5,14 +5,14 @@ public class PreserveAttribute : Attribute // TypeDefIndex: 3652
 
 }
 
-internal class PreserveAttribute : Attribute // TypeDefIndex: 5257
+internal class PreserveAttribute : Attribute // TypeDefIndex: 5258
 {
 
 	public void .ctor() { }
 
 }
 
-public class PreserveAttribute : Attribute // TypeDefIndex: 5973
+public class PreserveAttribute : Attribute // TypeDefIndex: 5974
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class PickAFriend : UIDialog // TypeDefIndex: 10902
+public class PickAFriend : UIDialog // TypeDefIndex: 10913
 {
 	public InputField input; 
 	public RustText headerText; 
@@ -29,7 +29,7 @@ public class PickAFriend : UIDialog // TypeDefIndex: 10902
 
 }
 
-public enum PickAFriend.PickFriendMode // TypeDefIndex: 10903
+public enum PickAFriend.PickFriendMode // TypeDefIndex: 10914
 {
 	public int value__; 
 	public const PickAFriend.PickFriendMode SleepingBag = 0;

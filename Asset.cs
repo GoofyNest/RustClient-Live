@@ -1,15 +1,15 @@
 internal sealed class AssetFileNameExtensionAttribute : Attribute // TypeDefIndex: 3263
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024
 
-internal class <Module> 
+internal class <Module>
 
 [VisibleToOtherModulesAttribute] 
 [AttributeUsageAttribute] 
-internal sealed class AssetFileNameExtensionAttribute : Attribute 
+internal sealed class AssetFileNameExtensionAttribute : Attribute
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private readonly string <preferredExtension>k__BackingField; 
@@ -37,7 +37,7 @@ public class AssetBundle : Object // TypeDefIndex: 3992
 [ExcludeFromPresetAttribute] 
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
-public class AssetBundle : Object 
+public class AssetBundle : Object
 
 	private void .ctor() { }
 
@@ -138,7 +138,7 @@ public class AssetBundleRequest : AsyncOperation // TypeDefIndex: 3996
 
 [NativeHeaderAttribute] 
 [RequiredByNativeCodeAttribute] 
-public class AssetBundleRequest : AsyncOperation 
+public class AssetBundleRequest : AsyncOperation
 	public Object asset { get; }
 
 
@@ -149,7 +149,7 @@ public class AssetBundleRequest : AsyncOperation
 
 }
 
-public static class AssetPool // TypeDefIndex: 6562
+public static class AssetPool // TypeDefIndex: 6563
 {
 	public static Dictionary<Type, AssetPool.Pool> storage; 
 
@@ -176,7 +176,7 @@ public static class AssetPool // TypeDefIndex: 6562
 
 }
 
-public class AssetPool.Pool // TypeDefIndex: 6563
+public class AssetPool.Pool // TypeDefIndex: 6564
 {
 	public Stack<Object> stack; 
 	public int allocated; 
@@ -203,10 +203,10 @@ public class AssetPool.Pool // TypeDefIndex: 6563
 
 }
 
-public class AssetBundleBackend : FileSystemBackend, IDisposable // TypeDefIndex: 6651
+public class AssetBundleBackend : FileSystemBackend, IDisposable // TypeDefIndex: 6652
 {
 
-public class AssetBundleBackend : FileSystemBackend, IDisposable 
+public class AssetBundleBackend : FileSystemBackend, IDisposable
 	private AssetBundle rootBundle; 
 	private AssetBundleManifest manifest; 
 	private Dictionary<string, AssetBundle> bundles; 
@@ -257,7 +257,7 @@ public class AssetBundleBackend : FileSystemBackend, IDisposable
 
 }
 
-private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6652
+private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6653
 {
 	public AssetBundleBackend <>4__this; 
 	public int maxConcurrency; 
@@ -274,7 +274,7 @@ private sealed class AssetBundleBackend.<>c__DisplayClass17_0 // TypeDefIndex: 6
 
 }
 
-private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6653
+private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6654
 {
 	public static readonly AssetBundleBackend.<>c <>9; 
 	public static Func<string, string> <>9__17_3; 
@@ -288,7 +288,7 @@ private sealed class AssetBundleBackend.<>c // TypeDefIndex: 6653
 
 }
 
-private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6654
+private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6655
 {
 	public string folder; 
 	public Func<KeyValuePair<string, AssetBundle>, bool> <>9__0; 
@@ -300,7 +300,7 @@ private sealed class AssetBundleBackend.<>c__DisplayClass18_0 // TypeDefIndex: 6
 
 }
 
-internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6655
+internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6656
 {
 	private readonly AssetBundle _bundle; 
 	private readonly List<string> _filePaths; 
@@ -327,7 +327,7 @@ internal class AssetBundleLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6
 
 }
 
-public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6656
+public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6657
 {
 	private readonly FileSystemBackend _backend; 
 	private readonly LoadAssetsResult _load; 
@@ -355,7 +355,7 @@ public class AssetPreloadResult : CustomYieldInstruction // TypeDefIndex: 6656
 
 }
 
-public static class AssetNameCache // TypeDefIndex: 10715
+public static class AssetNameCache // TypeDefIndex: 10726
 {
 	private static Dictionary<Object, string> mixed; 
 	private static Dictionary<Object, string> lower; 
@@ -390,7 +390,7 @@ public static class AssetNameCache // TypeDefIndex: 10715
 
 }
 
-public static class AssetStorage // TypeDefIndex: 11362
+public static class AssetStorage // TypeDefIndex: 11390
 {
 
 	public static void Save<T>(ref T asset, string path) { }

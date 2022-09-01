@@ -1,8 +1,8 @@
-public struct half : IEquatable<half>, IFormattable // TypeDefIndex: 7107
+public struct half : IEquatable<half>, IFormattable // TypeDefIndex: 7108
 {
 
 [Serializable]
-public struct half : IEquatable<half>, IFormattable 
+public struct half : IEquatable<half>, IFormattable
 	public ushort value; 
 
 

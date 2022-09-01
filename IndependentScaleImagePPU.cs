@@ -1,4 +1,4 @@
-public class IndependentScaleImagePPU : MonoBehaviour, IClientComponent // TypeDefIndex: 10947
+public class IndependentScaleImagePPU : MonoBehaviour, IClientComponent // TypeDefIndex: 10959
 {
 	public Transform scaleParent; 
 	public Image image; 

@@ -1,9 +1,10 @@
-public class RendererCell : Pool.IPooled // TypeDefIndex: 9916
+public class RendererCell : Pool.IPooled // TypeDefIndex: 9923
 {
 	public Vector3 position; 
 	public RendererGrid grid; 
 	public bool interrupt; 
 	public bool isInPool; 
+	public float Timestamp; 
 	private ListDictionary<RendererKey, RendererGroup> batches; 
 
 	public int Count { get; }
@@ -40,7 +41,7 @@ public class RendererCell : Pool.IPooled // TypeDefIndex: 9916
 
 }
 
-private sealed class RendererCell.<RefreshAsync>d__13 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9917
+private sealed class RendererCell.<RefreshAsync>d__14 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9924
 {
 	private int <>1__state; 
 	private object <>2__current; 

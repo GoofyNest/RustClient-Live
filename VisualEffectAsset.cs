@@ -5,7 +5,7 @@ public class VisualEffectAsset : VisualEffectObject // TypeDefIndex: 4765
 [UsedByNativeCodeAttribute] 
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
-public class VisualEffectAsset : VisualEffectObject 
+public class VisualEffectAsset : VisualEffectObject
 	public static readonly int PlayEventID; 
 	public static readonly int StopEventID; 
 

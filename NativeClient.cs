@@ -1,4 +1,4 @@
-internal static class NativeClient // TypeDefIndex: 7155
+internal static class NativeClient // TypeDefIndex: 7156
 {
 	private static readonly string InterfaceVersion; 
 	private static readonly NativeClient.INativeModule Module; 
@@ -32,7 +32,7 @@ internal static class NativeClient // TypeDefIndex: 7155
 
 }
 
-public sealed class NativeClient.CallbackProgress : MulticastDelegate // TypeDefIndex: 7156
+public sealed class NativeClient.CallbackProgress : MulticastDelegate // TypeDefIndex: 7157
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -45,7 +45,7 @@ public sealed class NativeClient.CallbackProgress : MulticastDelegate // TypeDef
 
 }
 
-public sealed class NativeClient.CallbackFinished : MulticastDelegate // TypeDefIndex: 7157
+public sealed class NativeClient.CallbackFinished : MulticastDelegate // TypeDefIndex: 7158
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -58,7 +58,7 @@ public sealed class NativeClient.CallbackFinished : MulticastDelegate // TypeDef
 
 }
 
-public sealed class NativeClient.CallbackIntegrity : MulticastDelegate // TypeDefIndex: 7158
+public sealed class NativeClient.CallbackIntegrity : MulticastDelegate // TypeDefIndex: 7159
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -71,7 +71,7 @@ public sealed class NativeClient.CallbackIntegrity : MulticastDelegate // TypeDe
 
 }
 
-public sealed class NativeClient.CallbackHostValidation : MulticastDelegate // TypeDefIndex: 7159
+public sealed class NativeClient.CallbackHostValidation : MulticastDelegate // TypeDefIndex: 7160
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -84,7 +84,7 @@ public sealed class NativeClient.CallbackHostValidation : MulticastDelegate // T
 
 }
 
-private sealed class NativeClient.UnityModule : NativeClient.INativeModule // TypeDefIndex: 7161
+private sealed class NativeClient.UnityModule : NativeClient.INativeModule // TypeDefIndex: 7162
 {
 
 	private static extern IntPtr CreateGameClient(string InterfaceVersion) { }

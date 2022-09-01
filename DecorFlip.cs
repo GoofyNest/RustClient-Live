@@ -1,4 +1,4 @@
-public class DecorFlip : DecorComponent // TypeDefIndex: 10323
+public class DecorFlip : DecorComponent // TypeDefIndex: 10334
 {
 	public DecorFlip.AxisType FlipAxis; 
 
@@ -9,7 +9,7 @@ public class DecorFlip : DecorComponent // TypeDefIndex: 10323
 
 }
 
-public enum DecorFlip.AxisType // TypeDefIndex: 10324
+public enum DecorFlip.AxisType // TypeDefIndex: 10335
 {
 	public int value__; 
 	public const DecorFlip.AxisType X = 0;

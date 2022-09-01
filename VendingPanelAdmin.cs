@@ -1,4 +1,4 @@
-public class VendingPanelAdmin : UIDialog // TypeDefIndex: 8737
+public class VendingPanelAdmin : UIDialog // TypeDefIndex: 8740
 {
 	public GameObject sellOrderAdminContainer; 
 	public GameObject sellOrderAdminPrefab; 

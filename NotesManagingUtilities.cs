@@ -1,4 +1,4 @@
-public static class NotesManagingUtilities // TypeDefIndex: 7447
+public static class NotesManagingUtilities // TypeDefIndex: 7448
 {
 
 	[ExtensionAttribute] 
@@ -12,7 +12,7 @@ public static class NotesManagingUtilities // TypeDefIndex: 7447
 
 }
 
-private sealed class NotesManagingUtilities.<>c // TypeDefIndex: 7448
+private sealed class NotesManagingUtilities.<>c // TypeDefIndex: 7449
 {
 	public static readonly NotesManagingUtilities.<>c <>9; 
 	public static Func<TrackChunk, EventsCollection> <>9__16_0; 

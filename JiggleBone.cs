@@ -1,4 +1,4 @@
-public class JiggleBone : BaseMonoBehaviour // TypeDefIndex: 8784
+public class JiggleBone : BaseMonoBehaviour // TypeDefIndex: 8787
 {
 	public bool debugMode; 
 	private Vector3 targetPos; 

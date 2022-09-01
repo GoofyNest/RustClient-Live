@@ -1,4 +1,4 @@
-public class WorkshopIconRender : MonoBehaviour // TypeDefIndex: 11532
+public class WorkshopIconRender : MonoBehaviour // TypeDefIndex: 11560
 {
 	public int MinimumId; 
 	public int MaximumId; 

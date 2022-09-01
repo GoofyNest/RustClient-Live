@@ -1,7 +1,7 @@
 public abstract class TypeBuilder : TypeInfo // TypeDefIndex: 613
 {
 
-public abstract class TypeBuilder : TypeInfo 
+public abstract class TypeBuilder : TypeInfo
 	public const int UnspecifiedTypeSize = 0;
 
 	public override Assembly Assembly { get; }

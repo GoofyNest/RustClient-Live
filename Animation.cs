@@ -225,7 +225,7 @@ public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable> // TypeD
 [RequiredByNativeCodeAttribute] 
 [StaticAccessorAttribute] 
 [NativeHeaderAttribute] 
-public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable> 
+public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable>
 	private PlayableHandle m_Handle; 
 
 
@@ -371,17 +371,17 @@ public struct AnimationStream // TypeDefIndex: 4513
 
 }
 
-public class AnimationTriggers // TypeDefIndex: 4904
+public class AnimationTriggers // TypeDefIndex: 4905
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=104 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=104
 
-internal class <Module> 
+internal class <Module>
 
-internal class <Module> 
+internal class <Module>
 
 [Serializable]
-public class AnimationTriggers 
+public class AnimationTriggers
 	private const string kDefaultNormalAnimName = "Normal";
 	private const string kDefaultHighlightedAnimName = "Highlighted";
 	private const string kDefaultPressedAnimName = "Pressed";
@@ -434,7 +434,7 @@ public class AnimationTriggers
 
 }
 
-public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 8783
+public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 8786
 {
 	public Animator animator; 
 
@@ -447,7 +447,7 @@ public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 8783
 
 }
 
-public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 9120
+public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 9124
 {
 	public GameObject targetObject; 
 
@@ -458,7 +458,7 @@ public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 9120
 
 }
 
-public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 9325
+public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 9329
 {
 	public Transform rootObject; 
 	public HeldEntity targetEntity; 

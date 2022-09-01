@@ -1,4 +1,4 @@
-public class PhysicsRaycaster : BaseRaycaster // TypeDefIndex: 5093
+public class PhysicsRaycaster : BaseRaycaster // TypeDefIndex: 5094
 {
 	protected const int kNoEventMaskSet = -1;
 	protected Camera m_EventCamera; 
@@ -38,7 +38,7 @@ public class PhysicsRaycaster : BaseRaycaster // TypeDefIndex: 5093
 
 }
 
-private class PhysicsRaycaster.RaycastHitComparer : IComparer<RaycastHit> // TypeDefIndex: 5094
+private class PhysicsRaycaster.RaycastHitComparer : IComparer<RaycastHit> // TypeDefIndex: 5095
 {
 	public static PhysicsRaycaster.RaycastHitComparer instance; 
 

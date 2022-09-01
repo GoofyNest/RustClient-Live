@@ -1,4 +1,4 @@
-public class DudExplosive : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
+public class DudExplosive : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6323
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

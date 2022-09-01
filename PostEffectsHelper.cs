@@ -1,4 +1,4 @@
-internal class PostEffectsHelper : MonoBehaviour // TypeDefIndex: 8197
+internal class PostEffectsHelper : MonoBehaviour // TypeDefIndex: 8198
 {
 
 	private void OnRenderImage(RenderTexture source, RenderTexture destination) { }

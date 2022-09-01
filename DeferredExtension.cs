@@ -1,4 +1,4 @@
-public class DeferredExtension : MonoBehaviour // TypeDefIndex: 10656
+public class DeferredExtension : MonoBehaviour // TypeDefIndex: 10667
 {
 	public ExtendGBufferParams extendGBuffer; 
 	public SubsurfaceScatteringParams subsurfaceScattering; 
@@ -87,7 +87,7 @@ public class DeferredExtension : MonoBehaviour // TypeDefIndex: 10656
 
 }
 
-private enum DeferredExtension.SubsurfacePass // TypeDefIndex: 10657
+private enum DeferredExtension.SubsurfacePass // TypeDefIndex: 10668
 {
 	public int value__; 
 	public const DeferredExtension.SubsurfacePass SetupFullRes = 0;

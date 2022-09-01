@@ -777,7 +777,7 @@ public sealed class SocketElement : ConfigurationElement // TypeDefIndex: 3180
 
 }
 
-public class SocketManager // TypeDefIndex: 5182
+public class SocketManager // TypeDefIndex: 5183
 {
 	[CompilerGeneratedAttribute] 
 	private ISocketManager <Interface>k__BackingField; 
@@ -827,7 +827,7 @@ public class SocketManager // TypeDefIndex: 5182
 
 }
 
-public struct Socket // TypeDefIndex: 5547
+public struct Socket // TypeDefIndex: 5548
 {
 	internal uint Id; 
 
@@ -840,7 +840,7 @@ public struct Socket // TypeDefIndex: 5547
 
 }
 
-public class SocketWrapper : ISocket // TypeDefIndex: 6921
+public class SocketWrapper : ISocket // TypeDefIndex: 6922
 {
 	private static readonly byte[] keepAliveValues; 
 	private readonly Socket _socket; 
@@ -891,7 +891,7 @@ public class SocketWrapper : ISocket // TypeDefIndex: 6921
 
 }
 
-private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6922
+private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6923
 {
 	public SslStream ssl; 
 	public X509Certificate2 certificate; 
@@ -912,7 +912,7 @@ private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6922
 
 }
 
-private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6923
+private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6924
 {
 	public SocketWrapper <>4__this; 
 	public Action<ISocket> callback; 
@@ -931,7 +931,7 @@ private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6923
 
 }
 
-public class SocketHandle : PrefabAttribute // TypeDefIndex: 9088
+public class SocketHandle : PrefabAttribute // TypeDefIndex: 9091
 {
 
 	protected override Type GetIndexedType() { }
@@ -942,7 +942,7 @@ public class SocketHandle : PrefabAttribute // TypeDefIndex: 9088
 
 }
 
-public class SocketMod : PrefabAttribute // TypeDefIndex: 9089
+public class SocketMod : PrefabAttribute // TypeDefIndex: 9092
 {
 	public Socket_Base baseSocket; 
 	public Translate.Phrase FailedPhrase; 
@@ -958,7 +958,7 @@ public class SocketMod : PrefabAttribute // TypeDefIndex: 9089
 
 }
 
-public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 9090
+public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 9093
 {
 	public bool wantsAngle; 
 	public Vector3 worldNormal; 
@@ -976,7 +976,7 @@ public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 9090
 
 }
 
-public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 9091
+public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 9094
 {
 	public Bounds bounds; 
 	public LayerMask layerMask; 
@@ -985,9 +985,9 @@ public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 9091
 
 	private void OnDrawGizmosSelected() { }
 
-	public static bool IsInArea(Vector3 position, Quaternion rotation, Bounds bounds, LayerMask layerMask) { }
+	public static bool IsInArea(Vector3 position, Quaternion rotation, Bounds bounds, LayerMask layerMask, BaseEntity entity) { }
 
-	public bool DoCheck(Vector3 position, Quaternion rotation) { }
+	public bool DoCheck(Vector3 position, Quaternion rotation, BaseEntity entity) { }
 
 	public override bool DoCheck(Construction.Placement place) { }
 
@@ -995,7 +995,7 @@ public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 9091
 
 }
 
-public class SocketMod_Attraction : SocketMod // TypeDefIndex: 9092
+public class SocketMod_Attraction : SocketMod // TypeDefIndex: 9095
 {
 	public float outerRadius; 
 	public float innerRadius; 
@@ -1015,7 +1015,7 @@ public class SocketMod_Attraction : SocketMod // TypeDefIndex: 9092
 
 }
 
-public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 9093
+public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 9096
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1031,7 +1031,7 @@ public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 9093
 
 }
 
-public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 9094
+public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 9097
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1048,7 +1048,7 @@ public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 9094
 
 }
 
-private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex: 9095
+private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex: 9098
 {
 	public BaseEntity ent; 
 
@@ -1059,7 +1059,7 @@ private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex:
 
 }
 
-public class SocketMod_EntityType : SocketMod // TypeDefIndex: 9096
+public class SocketMod_EntityType : SocketMod // TypeDefIndex: 9099
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1076,7 +1076,7 @@ public class SocketMod_EntityType : SocketMod // TypeDefIndex: 9096
 
 }
 
-public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 9097
+public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 9100
 {
 	public float spotSize; 
 
@@ -1089,7 +1089,7 @@ public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 9097
 
 }
 
-public class SocketMod_InWater : SocketMod // TypeDefIndex: 9098
+public class SocketMod_InWater : SocketMod // TypeDefIndex: 9101
 {
 	public bool wantsInWater; 
 	public static Translate.Phrase WantsWaterPhrase; 
@@ -1106,7 +1106,7 @@ public class SocketMod_InWater : SocketMod // TypeDefIndex: 9098
 
 }
 
-public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 9099
+public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 9102
 {
 	public PhysicMaterial[] ValidMaterials; 
 	private PhysicMaterial foundMaterial; 
@@ -1118,7 +1118,7 @@ public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 9099
 
 }
 
-public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 9100
+public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 9103
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1134,7 +1134,7 @@ public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 9100
 
 }
 
-public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 9101
+public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 9104
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1153,7 +1153,7 @@ public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 9101
 
 }
 
-public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 9102
+public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 9105
 {
 	public bool wantsInTerrain; 
 
@@ -1168,7 +1168,7 @@ public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 9102
 
 }
 
-public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 9103
+public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 9106
 {
 	public float MinimumWaterDepth; 
 	public float MaximumWaterDepth; 
@@ -1185,7 +1185,7 @@ public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 9103
 
 }
 
-public class Socket_Base : PrefabAttribute // TypeDefIndex: 9104
+public class Socket_Base : PrefabAttribute // TypeDefIndex: 9107
 {
 	public bool male; 
 	public bool maleDummy; 
@@ -1223,7 +1223,7 @@ public class Socket_Base : PrefabAttribute // TypeDefIndex: 9104
 
 }
 
-public class Socket_Free : Socket_Base // TypeDefIndex: 9105
+public class Socket_Free : Socket_Base // TypeDefIndex: 9108
 {
 	public Vector3 idealPlacementNormal; 
 	public bool useTargetNormal; 
@@ -1240,7 +1240,7 @@ public class Socket_Free : Socket_Base // TypeDefIndex: 9105
 
 }
 
-public class Socket_Specific : Socket_Base // TypeDefIndex: 9106
+public class Socket_Specific : Socket_Base // TypeDefIndex: 9109
 {
 	public bool useFemaleRotation; 
 	public string targetSocketName; 
@@ -1256,7 +1256,7 @@ public class Socket_Specific : Socket_Base // TypeDefIndex: 9106
 
 }
 
-public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 9107
+public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 9110
 {
 	public int rotationDegrees; 
 	public int rotationOffset; 
@@ -1273,7 +1273,7 @@ public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 9107
 
 }
 
-public class Socket_Terrain : Socket_Base // TypeDefIndex: 9108
+public class Socket_Terrain : Socket_Base // TypeDefIndex: 9111
 {
 	public float placementHeight; 
 	public bool alignToNormal; 

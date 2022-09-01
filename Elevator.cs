@@ -1,4 +1,4 @@
-public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6387
+public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6388
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class Elevator : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6387
 
 }
 
-public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 8387
+public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 8389
 {
 	private Option __menuOption_Menu_LowerElevator; 
 	private Option __menuOption_Menu_LowerElevatorToFloor; 
@@ -143,7 +143,7 @@ public class ElevatorLift : BaseCombatEntity // TypeDefIndex: 8387
 
 }
 
-public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 8388
+public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 8390
 {
 	private Option __menuOption_Menu_LowerElevatorToFloor; 
 	private Option __menuOption_Menu_RaiseElevatorToTop; 
@@ -175,7 +175,7 @@ public class ElevatorLiftStatic : ElevatorLift // TypeDefIndex: 8388
 
 }
 
-public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 8692
+public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 8695
 {
 	public Transform LiftRoot; 
 	public GameObjectRef LiftEntityPrefab; 
@@ -235,7 +235,7 @@ public class Elevator : IOEntity, IFlagNotify // TypeDefIndex: 8692
 
 }
 
-public enum Elevator.Direction // TypeDefIndex: 8693
+public enum Elevator.Direction // TypeDefIndex: 8696
 {
 	public int value__; 
 	public const Elevator.Direction Up = 0;
@@ -243,7 +243,7 @@ public enum Elevator.Direction // TypeDefIndex: 8693
 
 }
 
-public class ElevatorStatic : Elevator // TypeDefIndex: 8694
+public class ElevatorStatic : Elevator // TypeDefIndex: 8697
 {
 	public bool StaticTop; 
 	private const BaseEntity.Flags LiftRecentlyArrived = 512;
@@ -257,7 +257,7 @@ public class ElevatorStatic : Elevator // TypeDefIndex: 8694
 
 }
 
-public class ElevatorIOEntity : IOEntity // TypeDefIndex: 9799
+public class ElevatorIOEntity : IOEntity // TypeDefIndex: 9804
 {
 	public int Consumption; 
 

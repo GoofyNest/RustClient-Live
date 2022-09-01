@@ -1,4 +1,4 @@
-public class TriggerForce : TriggerBase, IServerComponent // TypeDefIndex: 10023
+public class TriggerForce : TriggerBase, IServerComponent // TypeDefIndex: 10030
 {
 	public const float GravityMultiplier = 0,1;
 	public const float VelocityLerp = 10;

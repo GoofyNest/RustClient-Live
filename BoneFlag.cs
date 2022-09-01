@@ -1,8 +1,8 @@
-public enum BoneFlag // TypeDefIndex: 7343
+public enum BoneFlag // TypeDefIndex: 7344
 {
 
 [FlagsAttribute] 
-public enum BoneFlag 
+public enum BoneFlag
 	public int value__; 
 	public const BoneFlag Left = 1;
 	public const BoneFlag Middle = 2;

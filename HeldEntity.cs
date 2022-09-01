@@ -1,4 +1,4 @@
-public class HeldEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6312
+public class HeldEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6313
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class HeldEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 631
 
 }
 
-public class HeldEntity : BaseEntity // TypeDefIndex: 8575
+public class HeldEntity : BaseEntity // TypeDefIndex: 8578
 {
 	protected List<HeldEntity.PunchEntry> _punches; 
 	protected Vector3 punchAdded; 
@@ -188,7 +188,7 @@ public class HeldEntity : BaseEntity // TypeDefIndex: 8575
 
 }
 
-public class HeldEntity.PunchEntry // TypeDefIndex: 8576
+public class HeldEntity.PunchEntry // TypeDefIndex: 8579
 {
 	public Vector3 amount; 
 	public float duration; 
@@ -200,7 +200,7 @@ public class HeldEntity.PunchEntry // TypeDefIndex: 8576
 
 }
 
-public class HeldEntity.HolsterInfo // TypeDefIndex: 8577
+public class HeldEntity.HolsterInfo // TypeDefIndex: 8580
 {
 	public HeldEntity.HolsterInfo.HolsterSlot slot; 
 	public bool displayWhenHolstered; 
@@ -213,7 +213,7 @@ public class HeldEntity.HolsterInfo // TypeDefIndex: 8577
 
 }
 
-public enum HeldEntity.HolsterInfo.HolsterSlot // TypeDefIndex: 8578
+public enum HeldEntity.HolsterInfo.HolsterSlot // TypeDefIndex: 8581
 {
 	public int value__; 
 	public const HeldEntity.HolsterInfo.HolsterSlot BACK = 0;
@@ -222,7 +222,7 @@ public enum HeldEntity.HolsterInfo.HolsterSlot // TypeDefIndex: 8578
 
 }
 
-public static class HeldEntity.HeldEntityFlags // TypeDefIndex: 8579
+public static class HeldEntity.HeldEntityFlags // TypeDefIndex: 8582
 {
 	public const BaseEntity.Flags Deployed = 1024;
 	public const BaseEntity.Flags LightsOn = 2048;

@@ -1,4 +1,4 @@
-public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // TypeDefIndex: 7750
+public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // TypeDefIndex: 7751
 {
 	[CompilerGeneratedAttribute] 
 	private GameObject <Prefab>k__BackingField; 
@@ -162,7 +162,7 @@ public class WorkshopItemEditor : SingletonComponent<WorkshopItemEditor> // Type
 
 }
 
-private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7751
+private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7752
 {
 	public static readonly WorkshopItemEditor.<>c <>9; 
 	public static Func<Skinnable, bool> <>9__47_0; 
@@ -182,7 +182,7 @@ private sealed class WorkshopItemEditor.<>c // TypeDefIndex: 7751
 
 }
 
-private sealed class WorkshopItemEditor.<StartViewingItem>d__50 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7752
+private sealed class WorkshopItemEditor.<StartViewingItem>d__50 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7753
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -212,7 +212,7 @@ private sealed class WorkshopItemEditor.<StartViewingItem>d__50 : IEnumerator<ob
 
 }
 
-private sealed class WorkshopItemEditor.<StartEditingItem>d__51 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7753
+private sealed class WorkshopItemEditor.<StartEditingItem>d__51 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7754
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -242,7 +242,7 @@ private sealed class WorkshopItemEditor.<StartEditingItem>d__51 : IEnumerator<ob
 
 }
 
-private sealed class WorkshopItemEditor.<OpenItem>d__54 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7754
+private sealed class WorkshopItemEditor.<OpenItem>d__54 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7755
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -273,7 +273,7 @@ private sealed class WorkshopItemEditor.<OpenItem>d__54 : IEnumerator<object>, I
 
 }
 
-private sealed class WorkshopItemEditor.<DoDownloadModel>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7755
+private sealed class WorkshopItemEditor.<DoDownloadModel>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7756
 {
 	private int <>1__state; 
 	private object <>2__current; 

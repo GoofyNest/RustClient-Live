@@ -1,4 +1,4 @@
-public struct AABB // TypeDefIndex: 6585
+public struct AABB // TypeDefIndex: 6586
 {
 	public Vector3 position; 
 	public Vector3 extents; 

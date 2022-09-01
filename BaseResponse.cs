@@ -1,4 +1,4 @@
-internal class BaseResponse // TypeDefIndex: 6257
+internal class BaseResponse // TypeDefIndex: 6258
 {
 	public string Status; 
 	public string Reason; 

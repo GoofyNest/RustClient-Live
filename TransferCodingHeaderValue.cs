@@ -1,4 +1,4 @@
-public class TransferCodingHeaderValue : ICloneable // TypeDefIndex: 5808
+public class TransferCodingHeaderValue : ICloneable // TypeDefIndex: 5809
 {
 	internal string value; 
 	internal List<NameValueHeaderValue> parameters; 

@@ -1,4 +1,4 @@
-internal struct RequestPlayersForGameProgressCallback_t : ICallbackData // TypeDefIndex: 5349
+internal struct RequestPlayersForGameProgressCallback_t : ICallbackData // TypeDefIndex: 5350
 {
 	internal Result Result; 
 	internal ulong LSearchID; 
@@ -16,7 +16,7 @@ internal struct RequestPlayersForGameProgressCallback_t : ICallbackData // TypeD
 
 }
 
-internal struct RequestPlayersForGameResultCallback_t : ICallbackData // TypeDefIndex: 5350
+internal struct RequestPlayersForGameResultCallback_t : ICallbackData // TypeDefIndex: 5351
 {
 	internal Result Result; 
 	internal ulong LSearchID; 
@@ -42,7 +42,7 @@ internal struct RequestPlayersForGameResultCallback_t : ICallbackData // TypeDef
 
 }
 
-internal enum RequestPlayersForGameResultCallback_t.PlayerAcceptState_t // TypeDefIndex: 5351
+internal enum RequestPlayersForGameResultCallback_t.PlayerAcceptState_t // TypeDefIndex: 5352
 {
 	public int value__; 
 	public const RequestPlayersForGameResultCallback_t.PlayerAcceptState_t Unknown = 0;
@@ -51,7 +51,7 @@ internal enum RequestPlayersForGameResultCallback_t.PlayerAcceptState_t // TypeD
 
 }
 
-internal struct RequestPlayersForGameFinalResultCallback_t : ICallbackData // TypeDefIndex: 5352
+internal struct RequestPlayersForGameFinalResultCallback_t : ICallbackData // TypeDefIndex: 5353
 {
 	internal Result Result; 
 	internal ulong LSearchID; 

@@ -1,4 +1,4 @@
-public class LTBezier // TypeDefIndex: 5582
+public class LTBezier // TypeDefIndex: 5583
 {
 	public float length; 
 	private Vector3 a; 

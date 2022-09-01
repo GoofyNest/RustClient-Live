@@ -1,7 +1,7 @@
 public class PKCS7.ContentInfo // TypeDefIndex: 49
 {
 
-public class PKCS7.ContentInfo 
+public class PKCS7.ContentInfo
 	private string contentType; 
 	private ASN1 content; 
 
@@ -56,7 +56,7 @@ public class PKCS7.EncryptedData // TypeDefIndex: 50
 public class PKCS7.ContentInfo // TypeDefIndex: 1708
 {
 
-public class PKCS7.ContentInfo 
+public class PKCS7.ContentInfo
 	private string contentType; 
 	private ASN1 content; 
 

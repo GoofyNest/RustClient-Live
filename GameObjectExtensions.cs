@@ -1,4 +1,4 @@
-public static class GameObjectExtensions // TypeDefIndex: 6224
+public static class GameObjectExtensions // TypeDefIndex: 6225
 {
 
 	[ExtensionAttribute] 

@@ -1,4 +1,4 @@
-public enum PreserveReferencesHandling // TypeDefIndex: 5882
+public enum PreserveReferencesHandling // TypeDefIndex: 5883
 {
 	public int value__; 
 	public const PreserveReferencesHandling None = 0;

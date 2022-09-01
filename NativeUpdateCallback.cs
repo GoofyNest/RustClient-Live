@@ -1,7 +1,7 @@
 internal sealed class NativeUpdateCallback : MulticastDelegate // TypeDefIndex: 4520
 {
 
-internal sealed class NativeUpdateCallback : MulticastDelegate 
+internal sealed class NativeUpdateCallback : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

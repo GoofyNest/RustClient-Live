@@ -1,4 +1,4 @@
-public class VisualCarWheel : CarWheel // TypeDefIndex: 9779
+public class VisualCarWheel : CarWheel // TypeDefIndex: 9784
 {
 	public Transform visualWheel; 
 	public Transform visualWheelSteering; 

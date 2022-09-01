@@ -1,4 +1,4 @@
-public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 9965
+public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 9972
 {
 	[HeaderAttribute] 
 	public MonumentType Type; 
@@ -14,12 +14,6 @@ public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 996
 	public bool HasDungeonLink; 
 	[HideInInspector] 
 	public DungeonGridInfo DungeonEntrance; 
-	[HideInInspector] 
-	public float PreventBuildingRadius; 
-	[HideInInspector] 
-	public Vector3 PreventBuildingOrigin; 
-
-	private bool HasApproximatePreventBuildingRadius { get; }
 
 
 	protected override void Awake() { }
@@ -53,12 +47,6 @@ public class MonumentInfo : LandmarkInfo, IPrefabPreProcess // TypeDefIndex: 996
 	private bool DetermineHasDungeonLink() { }
 
 	private bool DetermineWantsDungeonLink() { }
-
-	public bool IsPointWithinApproximatePreventBuildingRadius(Vector3 worldPoint) { }
-
-	private bool get_HasApproximatePreventBuildingRadius() { }
-
-	private void CalculatePreventBuildingRadius(out Vector3 localSpaceCentre, out float radius) { }
 
 	public void .ctor() { }
 

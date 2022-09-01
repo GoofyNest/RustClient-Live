@@ -1,4 +1,4 @@
-public class ParticleIKFix : MonoBehaviour // TypeDefIndex: 9356
+public class ParticleIKFix : MonoBehaviour // TypeDefIndex: 9360
 {
 
 	public void .ctor() { }

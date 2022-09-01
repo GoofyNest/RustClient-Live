@@ -1,4 +1,4 @@
-public struct GameId // TypeDefIndex: 5550
+public struct GameId // TypeDefIndex: 5551
 {
 	public ulong Value; 
 

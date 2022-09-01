@@ -1,4 +1,4 @@
-public class HashSetConverter : JsonConverter // TypeDefIndex: 6102
+public class HashSetConverter : JsonConverter // TypeDefIndex: 6103
 {
 	public override bool CanWrite { get; }
 

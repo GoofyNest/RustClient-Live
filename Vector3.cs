@@ -65,6 +65,8 @@ public struct Vector3 : IEquatable<Vector3> // TypeDefIndex: 3467
 
 	public static Vector3 Scale(Vector3 a, Vector3 b) { }
 
+	public void Scale(Vector3 scale) { }
+
 	public static Vector3 Cross(Vector3 lhs, Vector3 rhs) { }
 
 	public override int GetHashCode() { }

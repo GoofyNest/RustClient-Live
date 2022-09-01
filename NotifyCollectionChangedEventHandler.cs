@@ -1,8 +1,8 @@
-public sealed class NotifyCollectionChangedEventHandler : MulticastDelegate // TypeDefIndex: 5861
+public sealed class NotifyCollectionChangedEventHandler : MulticastDelegate // TypeDefIndex: 5862
 {
 
 [PreserveAttribute] 
-public sealed class NotifyCollectionChangedEventHandler : MulticastDelegate 
+public sealed class NotifyCollectionChangedEventHandler : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

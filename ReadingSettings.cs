@@ -1,4 +1,4 @@
-public class ReadingSettings // TypeDefIndex: 7601
+public class ReadingSettings // TypeDefIndex: 7602
 {
 	private UnexpectedTrackChunksCountPolicy _unexpectedTrackChunksCountPolicy; 
 	private ExtraTrackChunkPolicy _extraTrackChunkPolicy; 

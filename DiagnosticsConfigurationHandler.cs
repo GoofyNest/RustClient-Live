@@ -2,7 +2,7 @@ public class DiagnosticsConfigurationHandler : IConfigurationSectionHandler // T
 {
 
 [ObsoleteAttribute] 
-public class DiagnosticsConfigurationHandler : IConfigurationSectionHandler 
+public class DiagnosticsConfigurationHandler : IConfigurationSectionHandler
 
 	public void .ctor() { }
 

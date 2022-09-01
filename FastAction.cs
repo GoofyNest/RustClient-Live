@@ -1,7 +1,7 @@
-public class FastAction // TypeDefIndex: 6737
+public class FastAction // TypeDefIndex: 6738
 {
 
-public class FastAction 
+public class FastAction
 	private LinkedList<Action> delegates; 
 	private Dictionary<Action, LinkedListNode<Action>> lookup; 
 

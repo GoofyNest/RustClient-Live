@@ -31,7 +31,7 @@ public class EventDataAttribute : Attribute // TypeDefIndex: 1515
 
 }
 
-public class AxisEventData : BaseEventData // TypeDefIndex: 5046
+public class AxisEventData : BaseEventData // TypeDefIndex: 5047
 {
 	[CompilerGeneratedAttribute] 
 	private Vector2 <moveVector>k__BackingField; 
@@ -58,7 +58,7 @@ public class AxisEventData : BaseEventData // TypeDefIndex: 5046
 
 }
 
-public abstract class AbstractEventData // TypeDefIndex: 5047
+public abstract class AbstractEventData // TypeDefIndex: 5048
 {
 	protected bool m_Used; 
 
@@ -75,7 +75,7 @@ public abstract class AbstractEventData // TypeDefIndex: 5047
 
 }
 
-public class BaseEventData : AbstractEventData // TypeDefIndex: 5048
+public class BaseEventData : AbstractEventData // TypeDefIndex: 5049
 {
 	private readonly EventSystem m_EventSystem; 
 
@@ -93,7 +93,7 @@ public class BaseEventData : AbstractEventData // TypeDefIndex: 5048
 
 }
 
-public class PointerEventData : BaseEventData // TypeDefIndex: 5049
+public class PointerEventData : BaseEventData // TypeDefIndex: 5050
 {
 	[CompilerGeneratedAttribute] 
 	private GameObject <pointerEnter>k__BackingField; 
@@ -294,7 +294,7 @@ public class PointerEventData : BaseEventData // TypeDefIndex: 5049
 
 }
 
-public enum PointerEventData.InputButton // TypeDefIndex: 5050
+public enum PointerEventData.InputButton // TypeDefIndex: 5051
 {
 	public int value__; 
 	public const PointerEventData.InputButton Left = 0;
@@ -303,7 +303,7 @@ public enum PointerEventData.InputButton // TypeDefIndex: 5050
 
 }
 
-public enum PointerEventData.FramePressState // TypeDefIndex: 5051
+public enum PointerEventData.FramePressState // TypeDefIndex: 5052
 {
 	public int value__; 
 	public const PointerEventData.FramePressState Pressed = 0;
@@ -313,7 +313,7 @@ public enum PointerEventData.FramePressState // TypeDefIndex: 5051
 
 }
 
-public class TimerAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6543
+public class TimerAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6544
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -375,7 +375,7 @@ public class TimerAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class HealthBelowAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6545
+public class HealthBelowAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6546
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -436,7 +436,7 @@ public class HealthBelowAIEventData : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class InRangeAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6546
+public class InRangeAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6547
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -497,7 +497,7 @@ public class InRangeAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class HungerAboveAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6547
+public class HungerAboveAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6548
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -558,7 +558,7 @@ public class HungerAboveAIEventData : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class TirednessAboveAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6548
+public class TirednessAboveAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6549
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -619,7 +619,7 @@ public class TirednessAboveAIEventData : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public class AmmoBelowAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6549
+public class AmmoBelowAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6550
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -680,7 +680,7 @@ public class AmmoBelowAIEventData : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class ThreatDetectedAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6550
+public class ThreatDetectedAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6551
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -741,7 +741,7 @@ public class ThreatDetectedAIEventData : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public class TargetDetectedAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6551
+public class TargetDetectedAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6552
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -802,7 +802,7 @@ public class TargetDetectedAIEventData : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public class ChanceAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6552
+public class ChanceAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6553
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -863,7 +863,7 @@ public class ChanceAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class TimeSinceThreatAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6553
+public class TimeSinceThreatAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6554
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -924,7 +924,7 @@ public class TimeSinceThreatAIEventData : IDisposable, Pool.IPooled, IProto // T
 
 }
 
-public class AggressionTimerAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6554
+public class AggressionTimerAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6555
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -985,7 +985,7 @@ public class AggressionTimerAIEventData : IDisposable, Pool.IPooled, IProto // T
 
 }
 
-public class InRangeOfHomeAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6556
+public class InRangeOfHomeAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6557
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1046,7 +1046,7 @@ public class InRangeOfHomeAIEventData : IDisposable, Pool.IPooled, IProto // Typ
 
 }
 
-internal struct ColorEventData // TypeDefIndex: 7701
+internal struct ColorEventData // TypeDefIndex: 7702
 {
 	[CompilerGeneratedAttribute] 
 	private float <Value>k__BackingField; 
@@ -1073,7 +1073,7 @@ internal struct ColorEventData // TypeDefIndex: 7701
 
 }
 
-internal struct EmptyEventData // TypeDefIndex: 7704
+internal struct EmptyEventData // TypeDefIndex: 7705
 {
 	[CompilerGeneratedAttribute] 
 	private int <Value>k__BackingField; 

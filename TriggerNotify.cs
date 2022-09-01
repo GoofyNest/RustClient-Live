@@ -1,4 +1,4 @@
-public class TriggerNotify : TriggerBase, IPrefabPreProcess // TypeDefIndex: 10031
+public class TriggerNotify : TriggerBase, IPrefabPreProcess // TypeDefIndex: 10038
 {
 	public GameObject notifyTarget; 
 	private INotifyTrigger toNotify; 

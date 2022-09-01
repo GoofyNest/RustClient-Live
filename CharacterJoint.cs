@@ -3,7 +3,7 @@ public class CharacterJoint : Joint // TypeDefIndex: 3930
 
 [NativeHeaderAttribute] 
 [NativeClassAttribute] 
-public class CharacterJoint : Joint 
+public class CharacterJoint : Joint
 	[ObsoleteAttribute] 
 	public Quaternion targetRotation; 
 	[ObsoleteAttribute] 

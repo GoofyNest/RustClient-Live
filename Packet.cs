@@ -1,4 +1,4 @@
-public struct Packet // TypeDefIndex: 6647
+public struct Packet // TypeDefIndex: 6648
 {
 	public long Position; 
 	public int Size; 

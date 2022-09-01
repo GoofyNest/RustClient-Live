@@ -1033,7 +1033,7 @@ public class FileWebResponse : WebResponse, ISerializable, ICloseEx // TypeDefIn
 
 }
 
-internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5402
+internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5403
 {
 	internal Result Result; 
 	internal ulong FileSize; 
@@ -1053,7 +1053,7 @@ internal struct FileDetailsResult_t : ICallbackData // TypeDefIndex: 5402
 
 }
 
-public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6465
+public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6466
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1117,7 +1117,7 @@ public class FileStorageCacheData : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public static class FileSystem // TypeDefIndex: 6659
+public static class FileSystem // TypeDefIndex: 6660
 {
 	public static bool LogDebug; 
 	public static bool LogTime; 
@@ -1169,7 +1169,7 @@ public static class FileSystem // TypeDefIndex: 6659
 
 }
 
-public abstract class FileSystemBackend // TypeDefIndex: 6660
+public abstract class FileSystemBackend // TypeDefIndex: 6661
 {
 	public bool isError; 
 	public string loadingError; 
@@ -1222,7 +1222,7 @@ public abstract class FileSystemBackend // TypeDefIndex: 6660
 
 }
 
-public class FileDialog : MonoBehaviour // TypeDefIndex: 7066
+public class FileDialog : MonoBehaviour // TypeDefIndex: 7067
 {
 	[HideInInspector] 
 	public string result; 
@@ -1299,7 +1299,7 @@ public class FileDialog : MonoBehaviour // TypeDefIndex: 7066
 
 }
 
-public enum FileDialog.FileDialogMode // TypeDefIndex: 7067
+public enum FileDialog.FileDialogMode // TypeDefIndex: 7068
 {
 	public int value__; 
 	public const FileDialog.FileDialogMode Open = 0;
@@ -1307,7 +1307,7 @@ public enum FileDialog.FileDialogMode // TypeDefIndex: 7067
 
 }
 
-private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7068
+private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7069
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1342,7 +1342,7 @@ private sealed class FileDialog.<Open>d__22 : IEnumerator<object>, IEnumerator, 
 
 }
 
-private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7069
+private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7070
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1376,7 +1376,7 @@ private sealed class FileDialog.<Save>d__23 : IEnumerator<object>, IEnumerator, 
 
 }
 
-private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex: 7070
+private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex: 7071
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 
@@ -1396,7 +1396,7 @@ private struct FileDialog.<SaveAsync>d__24 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-public class FileListElement : MonoBehaviour // TypeDefIndex: 7071
+public class FileListElement : MonoBehaviour // TypeDefIndex: 7072
 {
 	public Image icon; 
 	public Text elementName; 
@@ -1412,7 +1412,7 @@ public class FileListElement : MonoBehaviour // TypeDefIndex: 7071
 
 }
 
-internal static class FileUtilities // TypeDefIndex: 7615
+internal static class FileUtilities // TypeDefIndex: 7616
 {
 
 	private static extern SafeFileHandle CreateFile(string lpFileName, uint dwDesiredAccess, uint dwShareMode, IntPtr lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, IntPtr hTemplateFile) { }
@@ -1423,9 +1423,10 @@ internal static class FileUtilities // TypeDefIndex: 7615
 
 }
 
-public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 9370
+public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 9374
 {
 	public static bool ranInBackground; 
+	public static Coroutine warmupTask; 
 	private static bool run; 
 	public static string[] ExcludeFilter; 
 
@@ -1454,7 +1455,7 @@ public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 9370
 
 }
 
-private sealed class FileSystem_Warmup.<RunAsyncImpl>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9371
+private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9375
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1489,7 +1490,7 @@ private sealed class FileSystem_Warmup.<RunAsyncImpl>d__5 : IEnumerator<object>,
 
 }
 
-private sealed class FileSystem_Warmup.<RunImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9372
+private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9376
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1522,7 +1523,7 @@ private sealed class FileSystem_Warmup.<RunImpl>d__6 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class FileSystem_Warmup.<>c__DisplayClass9_0 // TypeDefIndex: 9373
+private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 9377
 {
 	public Nullable<bool> poolFilter; 
 
@@ -1533,27 +1534,27 @@ private sealed class FileSystem_Warmup.<>c__DisplayClass9_0 // TypeDefIndex: 937
 
 }
 
-private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 9374
+private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 9378
 {
 	public static readonly FileSystem_Warmup.<>c <>9; 
-	public static Func<GameManifest.PrefabProperties, string> <>9__9_0; 
-	public static Func<string, bool> <>9__9_1; 
-	public static Func<GameManifest.PrefabProperties, string> <>9__9_3; 
+	public static Func<GameManifest.PrefabProperties, string> <>9__10_0; 
+	public static Func<string, bool> <>9__10_1; 
+	public static Func<GameManifest.PrefabProperties, string> <>9__10_3; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal string <GetAssetList>b__9_0(GameManifest.PrefabProperties x) { }
+	internal string <GetAssetList>b__10_0(GameManifest.PrefabProperties x) { }
 
-	internal bool <GetAssetList>b__9_1(string x) { }
+	internal bool <GetAssetList>b__10_1(string x) { }
 
-	internal string <GetAssetList>b__9_3(GameManifest.PrefabProperties x) { }
+	internal string <GetAssetList>b__10_3(GameManifest.PrefabProperties x) { }
 
 }
 
-public class FileStorage : IDisposable // TypeDefIndex: 10718
+public class FileStorage : IDisposable // TypeDefIndex: 10729
 {
 	private Database db; 
 	private CRC32 crc; 
@@ -1593,7 +1594,7 @@ public class FileStorage : IDisposable // TypeDefIndex: 10718
 
 }
 
-private class FileStorage.CacheData // TypeDefIndex: 10719
+private class FileStorage.CacheData // TypeDefIndex: 10730
 {
 	public byte[] data; 
 	public uint entityID; 
@@ -1604,7 +1605,7 @@ private class FileStorage.CacheData // TypeDefIndex: 10719
 
 }
 
-public enum FileStorage.Type // TypeDefIndex: 10720
+public enum FileStorage.Type // TypeDefIndex: 10731
 {
 	public int value__; 
 	public const FileStorage.Type png = 0;
@@ -1613,7 +1614,7 @@ public enum FileStorage.Type // TypeDefIndex: 10720
 
 }
 
-private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 10721
+private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 10732
 {
 	public uint entityid; 
 	public uint numid; 
@@ -1626,7 +1627,7 @@ private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 10721
 
 }
 
-private sealed class FileStorage.<>c // TypeDefIndex: 10722
+private sealed class FileStorage.<>c // TypeDefIndex: 10733
 {
 	public static readonly FileStorage.<>c <>9; 
 	public static Func<KeyValuePair<uint, FileStorage.CacheData>, uint> <>9__14_1; 
@@ -1640,7 +1641,7 @@ private sealed class FileStorage.<>c // TypeDefIndex: 10722
 
 }
 
-public static class FileEx // TypeDefIndex: 11342
+public static class FileEx // TypeDefIndex: 11370
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }
@@ -1652,7 +1653,7 @@ public static class FileEx // TypeDefIndex: 11342
 
 }
 
-public class FileConVar : ConsoleSystem // TypeDefIndex: 11918
+public class FileConVar : ConsoleSystem // TypeDefIndex: 11946
 {
 	[ClientVar] 
 	public static bool debug { get; set; }

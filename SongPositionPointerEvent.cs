@@ -1,4 +1,4 @@
-public sealed class SongPositionPointerEvent : SystemCommonEvent // TypeDefIndex: 7563
+public sealed class SongPositionPointerEvent : SystemCommonEvent // TypeDefIndex: 7564
 {
 	private SevenBitNumber _lsb; 
 	private SevenBitNumber _msb; 

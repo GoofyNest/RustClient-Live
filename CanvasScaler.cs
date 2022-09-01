@@ -1,4 +1,4 @@
-public class CanvasScaler : UIBehaviour // TypeDefIndex: 4959
+public class CanvasScaler : UIBehaviour // TypeDefIndex: 4960
 {
 	[TooltipAttribute] 
 	[SerializeField] 
@@ -112,7 +112,7 @@ public class CanvasScaler : UIBehaviour // TypeDefIndex: 4959
 
 }
 
-public enum CanvasScaler.ScaleMode // TypeDefIndex: 4960
+public enum CanvasScaler.ScaleMode // TypeDefIndex: 4961
 {
 	public int value__; 
 	public const CanvasScaler.ScaleMode ConstantPixelSize = 0;
@@ -121,7 +121,7 @@ public enum CanvasScaler.ScaleMode // TypeDefIndex: 4960
 
 }
 
-public enum CanvasScaler.ScreenMatchMode // TypeDefIndex: 4961
+public enum CanvasScaler.ScreenMatchMode // TypeDefIndex: 4962
 {
 	public int value__; 
 	public const CanvasScaler.ScreenMatchMode MatchWidthOrHeight = 0;
@@ -130,7 +130,7 @@ public enum CanvasScaler.ScreenMatchMode // TypeDefIndex: 4961
 
 }
 
-public enum CanvasScaler.Unit // TypeDefIndex: 4962
+public enum CanvasScaler.Unit // TypeDefIndex: 4963
 {
 	public int value__; 
 	public const CanvasScaler.Unit Centimeters = 0;

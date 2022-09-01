@@ -1,4 +1,4 @@
-public struct InventoryRecipe : IEquatable<InventoryRecipe> // TypeDefIndex: 5246
+public struct InventoryRecipe : IEquatable<InventoryRecipe> // TypeDefIndex: 5247
 {
 	public InventoryDef Result; 
 	public InventoryRecipe.Ingredient[] Ingredients; 
@@ -17,7 +17,7 @@ public struct InventoryRecipe : IEquatable<InventoryRecipe> // TypeDefIndex: 524
 
 }
 
-public struct InventoryRecipe.Ingredient // TypeDefIndex: 5247
+public struct InventoryRecipe.Ingredient // TypeDefIndex: 5248
 {
 	public int DefinitionId; 
 	public InventoryDef Definition; 
@@ -28,7 +28,7 @@ public struct InventoryRecipe.Ingredient // TypeDefIndex: 5247
 
 }
 
-private sealed class InventoryRecipe.<>c // TypeDefIndex: 5248
+private sealed class InventoryRecipe.<>c // TypeDefIndex: 5249
 {
 	public static readonly InventoryRecipe.<>c <>9; 
 	public static Func<string, InventoryRecipe.Ingredient> <>9__4_0; 
@@ -45,7 +45,7 @@ private sealed class InventoryRecipe.<>c // TypeDefIndex: 5248
 
 }
 
-private sealed class InventoryRecipe.<>c__DisplayClass5_0 // TypeDefIndex: 5249
+private sealed class InventoryRecipe.<>c__DisplayClass5_0 // TypeDefIndex: 5250
 {
 	public InventoryDef inventoryDef; 
 

@@ -190,7 +190,7 @@ internal class EventPayload : IDictionary<string, object>, ICollection<KeyValueP
 {
 
 [DefaultMemberAttribute] 
-internal class EventPayload : IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>>, IEnumerable 
+internal class EventPayload : IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>>, IEnumerable
 	private List<string> m_names; 
 	private List<object> m_values; 
 
@@ -1121,7 +1121,7 @@ public class EventDescriptorCollection : ICollection, IEnumerable, IList // Type
 
 [DefaultMemberAttribute] 
 [ComVisibleAttribute] 
-public class EventDescriptorCollection : ICollection, IEnumerable, IList 
+public class EventDescriptorCollection : ICollection, IEnumerable, IList
 	private EventDescriptor[] events; 
 	private string[] namedSort; 
 	private IComparer comparer; 
@@ -1244,7 +1244,7 @@ public sealed class Event // TypeDefIndex: 4025
 
 [NativeHeaderAttribute] 
 [StaticAccessorAttribute] 
-public sealed class Event 
+public sealed class Event
 	internal IntPtr m_Ptr; 
 	private static Event s_Current; 
 	private static Event s_MasterEvent; 
@@ -1937,7 +1937,7 @@ internal class EventDebugger // TypeDefIndex: 4705
 
 }
 
-public enum EventHandle // TypeDefIndex: 5052
+public enum EventHandle // TypeDefIndex: 5053
 {
 	public int value__; 
 	public const EventHandle Unused = 0;
@@ -1945,7 +1945,7 @@ public enum EventHandle // TypeDefIndex: 5052
 
 }
 
-public class EventSystem : UIBehaviour // TypeDefIndex: 5071
+public class EventSystem : UIBehaviour // TypeDefIndex: 5072
 {
 	private List<BaseInputModule> m_SystemInputModules; 
 	private BaseInputModule m_CurrentInputModule; 
@@ -2038,7 +2038,7 @@ public class EventSystem : UIBehaviour // TypeDefIndex: 5071
 
 }
 
-public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IScrollHandler, IUpdateSelectedHandler, ISelectHandler, IDeselectHandler, IMoveHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 5072
+public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IScrollHandler, IUpdateSelectedHandler, ISelectHandler, IDeselectHandler, IMoveHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 5073
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
@@ -2098,14 +2098,14 @@ public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHan
 
 }
 
-public class EventTrigger.TriggerEvent : UnityEvent<BaseEventData> // TypeDefIndex: 5073
+public class EventTrigger.TriggerEvent : UnityEvent<BaseEventData> // TypeDefIndex: 5074
 {
 
 	public void .ctor() { }
 
 }
 
-public class EventTrigger.Entry // TypeDefIndex: 5074
+public class EventTrigger.Entry // TypeDefIndex: 5075
 {
 	public EventTriggerType eventID; 
 	public EventTrigger.TriggerEvent callback; 
@@ -2115,7 +2115,7 @@ public class EventTrigger.Entry // TypeDefIndex: 5074
 
 }
 
-public enum EventTriggerType // TypeDefIndex: 5075
+public enum EventTriggerType // TypeDefIndex: 5076
 {
 	public int value__; 
 	public const EventTriggerType PointerEnter = 0;
@@ -2138,7 +2138,7 @@ public enum EventTriggerType // TypeDefIndex: 5075
 
 }
 
-internal static class EventHandlerExtensions // TypeDefIndex: 7141
+internal static class EventHandlerExtensions // TypeDefIndex: 7142
 {
 
 	[ExtensionAttribute] 
@@ -2153,7 +2153,7 @@ internal static class EventHandlerExtensions // TypeDefIndex: 7141
 
 }
 
-public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7514
+public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7515
 {
 	internal readonly List<MidiEvent> _events; 
 	[CompilerGeneratedAttribute] 
@@ -2189,7 +2189,7 @@ public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiE
 
 }
 
-public sealed class EventTypesCollection // TypeDefIndex: 7530
+public sealed class EventTypesCollection // TypeDefIndex: 7531
 {
 	private readonly Dictionary<byte, Type> _types; 
 
@@ -2198,7 +2198,7 @@ public sealed class EventTypesCollection // TypeDefIndex: 7530
 
 }
 
-internal static class EventReaderFactory // TypeDefIndex: 7553
+internal static class EventReaderFactory // TypeDefIndex: 7554
 {
 	private static readonly IEventReader MetaEventReader; 
 	private static readonly IEventReader ChannelEventReader; 
@@ -2213,7 +2213,7 @@ internal static class EventReaderFactory // TypeDefIndex: 7553
 
 }
 
-public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 9816
+public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 9821
 {
 	[TooltipAttribute] 
 	public float minimumHoursBetween; 

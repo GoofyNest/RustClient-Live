@@ -1,4 +1,4 @@
-public enum MergeNullValueHandling // TypeDefIndex: 6043
+public enum MergeNullValueHandling // TypeDefIndex: 6044
 {
 	public int value__; 
 	public const MergeNullValueHandling Ignore = 0;

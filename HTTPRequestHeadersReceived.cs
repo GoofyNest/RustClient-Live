@@ -1,4 +1,4 @@
-internal struct HTTPRequestHeadersReceived_t : ICallbackData // TypeDefIndex: 5425
+internal struct HTTPRequestHeadersReceived_t : ICallbackData // TypeDefIndex: 5426
 {
 	internal uint Request; 
 	internal ulong ContextValue; 

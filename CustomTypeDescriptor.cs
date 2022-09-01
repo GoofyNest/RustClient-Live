@@ -1,11 +1,11 @@
 public abstract class CustomTypeDescriptor : ICustomTypeDescriptor // TypeDefIndex: 2681
 {
 
-public class ComponentConverter : ReferenceConverter 
+public class ComponentConverter : ReferenceConverter
 
-public class CultureInfoConverter : TypeConverter 
+public class CultureInfoConverter : TypeConverter
 
-public abstract class CustomTypeDescriptor : ICustomTypeDescriptor 
+public abstract class CustomTypeDescriptor : ICustomTypeDescriptor
 	private ICustomTypeDescriptor _parent; 
 
 

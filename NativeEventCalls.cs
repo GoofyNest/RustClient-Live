@@ -1,7 +1,7 @@
 internal static class NativeEventCalls // TypeDefIndex: 827
 {
 
-internal static class NativeEventCalls 
+internal static class NativeEventCalls
 
 	public static IntPtr CreateEvent_internal(bool manual, bool initial, string name, out int errorCode) { }
 

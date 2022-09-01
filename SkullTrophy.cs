@@ -1,4 +1,4 @@
-public class SkullTrophy : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6388
+public class SkullTrophy : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6389
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class SkullTrophy : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class SkullTrophy : StorageContainer // TypeDefIndex: 8795
+public class SkullTrophy : StorageContainer // TypeDefIndex: 8798
 {
 	public RustText NameText; 
 	public TextProOnACircle CircleModifier; 

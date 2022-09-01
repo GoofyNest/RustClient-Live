@@ -1,4 +1,4 @@
-public class Drone : RemoteControlEntity // TypeDefIndex: 8689
+public class Drone : RemoteControlEntity // TypeDefIndex: 8692
 {
 	[HeaderAttribute] 
 	public Rigidbody body; 
@@ -44,7 +44,7 @@ public class Drone : RemoteControlEntity // TypeDefIndex: 8689
 
 }
 
-private struct Drone.DroneInputState // TypeDefIndex: 8690
+private struct Drone.DroneInputState // TypeDefIndex: 8693
 {
 	public Vector3 movement; 
 	public float throttle; 

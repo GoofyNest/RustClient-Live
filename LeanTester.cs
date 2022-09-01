@@ -1,4 +1,4 @@
-public class LeanTester : MonoBehaviour // TypeDefIndex: 5575
+public class LeanTester : MonoBehaviour // TypeDefIndex: 5576
 {
 	public float timeout; 
 
@@ -12,7 +12,7 @@ public class LeanTester : MonoBehaviour // TypeDefIndex: 5575
 
 }
 
-private sealed class LeanTester.<timeoutCheck>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5576
+private sealed class LeanTester.<timeoutCheck>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5577
 {
 	private int <>1__state; 
 	private object <>2__current; 

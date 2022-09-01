@@ -1,4 +1,4 @@
-public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6293
+public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6294
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 629
 
 }
 
-public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo, IPrefabPreProcess // TypeDefIndex: 8492
+public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo, IPrefabPreProcess // TypeDefIndex: 8494
 {
 	protected Ragdoll ragdoll; 
 	internal PositionLerp positionLerp; 
@@ -73,7 +73,11 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 	private uint broadcastProtocol; 
 	private List<EntityLink> links; 
 	private bool linkedToNeighbours; 
-	private List<BaseEntity.ServerFileRequest> _pendingFileRequests; 
+	private const int MaxFileRequestsPerSecond = 20;
+	private static readonly Queue<BaseEntity.QueuedFileRequest> QueuedFileRequests; 
+	private static TimeAverageValueData _fileRequestCounter; 
+	private static Action _flushQueuedFileRequests; 
+	private List<BaseEntity.PendingFileRequest> _pendingFileRequests; 
 	private Action updateParentingAction; 
 	private BaseEntity addedToParentEntity; 
 	public ItemSkin itemSkin; 
@@ -287,6 +291,12 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 	public void RequestFileFromServer(uint crc, FileStorage.Type type, string responseFunction, uint part = 0) { }
 
 	public void RequestFileFromServer(IServerFileReceiver receiver, FileStorage.Type type, uint crc, uint part = 0, bool respondIfNotFound = False) { }
+
+	private static void EnqueueFileRequest(in BaseEntity.QueuedFileRequest request) { }
+
+	private static void RequestFileImpl(in BaseEntity.QueuedFileRequest request) { }
+
+	private static void FlushQueuedFileRequests() { }
 
 	[BaseEntity.RPC_Client] 
 	public void CL_ReceiveFileRequest(BaseEntity.RPCMessage msg) { }
@@ -844,7 +854,7 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 }
 
-public class BaseEntity.Menu : Attribute // TypeDefIndex: 8493
+public class BaseEntity.Menu : Attribute // TypeDefIndex: 8495
 {
 	public string TitleToken; 
 	public string TitleEnglish; 
@@ -863,7 +873,7 @@ public class BaseEntity.Menu : Attribute // TypeDefIndex: 8493
 
 }
 
-public struct BaseEntity.Menu.Option // TypeDefIndex: 8494
+public struct BaseEntity.Menu.Option // TypeDefIndex: 8496
 {
 	public Translate.Phrase name; 
 	public Translate.Phrase description; 
@@ -876,7 +886,7 @@ public struct BaseEntity.Menu.Option // TypeDefIndex: 8494
 
 }
 
-public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 8495
+public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 8497
 {
 	public string token; 
 	public string english; 
@@ -886,7 +896,7 @@ public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 8495
 
 }
 
-public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 8496
+public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 8498
 {
 	public string icon; 
 
@@ -895,7 +905,7 @@ public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 8496
 
 }
 
-public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 8497
+public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 8499
 {
 	public string functionName; 
 
@@ -904,20 +914,20 @@ public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 8497
 
 }
 
-public class BaseEntity.Menu.UsableWhileWounded : Attribute // TypeDefIndex: 8498
+public class BaseEntity.Menu.UsableWhileWounded : Attribute // TypeDefIndex: 8500
 {
 
 	public void .ctor() { }
 
 }
 
-public struct BaseEntity.MovementModify // TypeDefIndex: 8499
+public struct BaseEntity.MovementModify // TypeDefIndex: 8501
 {
 	public float drag; 
 
 }
 
-public enum BaseEntity.Flags // TypeDefIndex: 8500
+public enum BaseEntity.Flags // TypeDefIndex: 8502
 {
 	public int value__; 
 	public const BaseEntity.Flags Placeholder = 1;
@@ -943,7 +953,27 @@ public enum BaseEntity.Flags // TypeDefIndex: 8500
 
 }
 
-private struct BaseEntity.ServerFileRequest : IEquatable<BaseEntity.ServerFileRequest> // TypeDefIndex: 8501
+private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRequest> // TypeDefIndex: 8503
+{
+	public readonly BaseEntity Entity; 
+	public readonly FileStorage.Type Type; 
+	public readonly uint Part; 
+	public readonly uint Crc; 
+	public readonly uint ResponseFunction; 
+	public readonly Nullable<bool> RespondIfNotFound; 
+
+
+	public void .ctor(BaseEntity entity, FileStorage.Type type, uint part, uint crc, uint responseFunction, Nullable<bool> respondIfNotFound) { }
+
+	public bool Equals(BaseEntity.QueuedFileRequest other) { }
+
+	public override bool Equals(object obj) { }
+
+	public override int GetHashCode() { }
+
+}
+
+private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFileRequest> // TypeDefIndex: 8504
 {
 	public readonly FileStorage.Type Type; 
 	public readonly uint NumId; 
@@ -954,22 +984,18 @@ private struct BaseEntity.ServerFileRequest : IEquatable<BaseEntity.ServerFileRe
 
 	public void .ctor(FileStorage.Type type, uint numId, uint crc, IServerFileReceiver receiver) { }
 
-	public bool Equals(BaseEntity.ServerFileRequest other) { }
+	public bool Equals(BaseEntity.PendingFileRequest other) { }
 
 	public override bool Equals(object obj) { }
 
 	public override int GetHashCode() { }
 
-	public static bool op_Equality(BaseEntity.ServerFileRequest left, BaseEntity.ServerFileRequest right) { }
-
-	public static bool op_Inequality(BaseEntity.ServerFileRequest left, BaseEntity.ServerFileRequest right) { }
-
 }
 
-public class BaseEntity.Query.EntityTree // TypeDefIndex: 8503
+public class BaseEntity.Query.EntityTree // TypeDefIndex: 8506
 {
 
-public class BaseEntity.Query.EntityTree 
+public class BaseEntity.Query.EntityTree
 	private Grid<BaseEntity> Grid; 
 	private Grid<BasePlayer> PlayerGrid; 
 	private Grid<BaseEntity> BrainGrid; 
@@ -1003,14 +1029,14 @@ public class BaseEntity.Query.EntityTree
 
 }
 
-public class BaseEntity.RPC_Shared : Attribute // TypeDefIndex: 8504
+public class BaseEntity.RPC_Shared : Attribute // TypeDefIndex: 8507
 {
 
 	public void .ctor() { }
 
 }
 
-public struct BaseEntity.RPCMessage // TypeDefIndex: 8505
+public struct BaseEntity.RPCMessage // TypeDefIndex: 8508
 {
 	public Connection connection; 
 	public BasePlayer player; 
@@ -1018,14 +1044,14 @@ public struct BaseEntity.RPCMessage // TypeDefIndex: 8505
 
 }
 
-public class BaseEntity.RPC_Client : BaseEntity.RPC_Shared // TypeDefIndex: 8506
+public class BaseEntity.RPC_Client : BaseEntity.RPC_Shared // TypeDefIndex: 8509
 {
 
 	public void .ctor() { }
 
 }
 
-public enum BaseEntity.Signal // TypeDefIndex: 8507
+public enum BaseEntity.Signal // TypeDefIndex: 8510
 {
 	public int value__; 
 	public const BaseEntity.Signal Attack = 0;
@@ -1048,7 +1074,7 @@ public enum BaseEntity.Signal // TypeDefIndex: 8507
 
 }
 
-public enum BaseEntity.Slot // TypeDefIndex: 8508
+public enum BaseEntity.Slot // TypeDefIndex: 8511
 {
 	public int value__; 
 	public const BaseEntity.Slot Lock = 0;
@@ -1063,7 +1089,7 @@ public enum BaseEntity.Slot // TypeDefIndex: 8508
 
 }
 
-public enum BaseEntity.TraitFlag // TypeDefIndex: 8509
+public enum BaseEntity.TraitFlag // TypeDefIndex: 8512
 {
 	public int value__; 
 	public const BaseEntity.TraitFlag None = 0;
@@ -1077,10 +1103,10 @@ public enum BaseEntity.TraitFlag // TypeDefIndex: 8509
 
 }
 
-public enum BaseEntity.GiveItemReason // TypeDefIndex: 8511
+public enum BaseEntity.GiveItemReason // TypeDefIndex: 8514
 {
 
-public enum BaseEntity.GiveItemReason 
+public enum BaseEntity.GiveItemReason
 	public int value__; 
 	public const BaseEntity.GiveItemReason Generic = 0;
 	public const BaseEntity.GiveItemReason ResourceHarvested = 1;
@@ -1089,11 +1115,11 @@ public enum BaseEntity.GiveItemReason
 
 }
 
-private sealed class BaseEntity.<>c // TypeDefIndex: 8512
+private sealed class BaseEntity.<>c // TypeDefIndex: 8515
 {
 	public static readonly BaseEntity.<>c <>9; 
 	public static Comparison<Option> <>9__35_0; 
-	public static Predicate<BaseEntity.ServerFileRequest> <>9__93_0; 
+	public static Predicate<BaseEntity.PendingFileRequest> <>9__97_0; 
 
 
 	private static void .cctor() { }
@@ -1102,7 +1128,7 @@ private sealed class BaseEntity.<>c // TypeDefIndex: 8512
 
 	internal int <GetMenuItems>b__35_0(Option x, Option y) { }
 
-	internal bool <RequestFileFromServer>b__93_0(BaseEntity.ServerFileRequest r) { }
+	internal bool <RequestFileFromServer>b__97_0(BaseEntity.PendingFileRequest r) { }
 
 }
 

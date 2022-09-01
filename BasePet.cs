@@ -1,4 +1,4 @@
-public class BasePet : NPCPlayer // TypeDefIndex: 8335
+public class BasePet : NPCPlayer // TypeDefIndex: 8337
 {
 	private Option __menuOption_MenuDesignAI; 
 	[ServerVar] 
@@ -12,12 +12,12 @@ public class BasePet : NPCPlayer // TypeDefIndex: 8335
 	public float BaseAttackDamge; 
 	public DamageType AttackDamageType; 
 	[CompilerGeneratedAttribute] 
-	private BaseAIBrain<BasePet> <Brain>k__BackingField; 
+	private PetBrain <Brain>k__BackingField; 
 	public GameObjectRef mapMarkerPrefab; 
 	private BaseEntity _mapMarkerInstance; 
 
 	public override bool HasMenuOptions { get; }
-	public BaseAIBrain<BasePet> Brain { get; set; }
+	public PetBrain Brain { get; set; }
 
 
 	public override void GetMenuOptions(List<Option> list) { }
@@ -25,10 +25,10 @@ public class BasePet : NPCPlayer // TypeDefIndex: 8335
 	public override bool get_HasMenuOptions() { }
 
 	[CompilerGeneratedAttribute] 
-	public BaseAIBrain<BasePet> get_Brain() { }
+	public PetBrain get_Brain() { }
 
 	[CompilerGeneratedAttribute] 
-	protected void set_Brain(BaseAIBrain<BasePet> value) { }
+	protected void set_Brain(PetBrain value) { }
 
 	public override float StartHealth() { }
 

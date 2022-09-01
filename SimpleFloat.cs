@@ -1,4 +1,4 @@
-public class SimpleFloat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6351
+public class SimpleFloat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6352
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

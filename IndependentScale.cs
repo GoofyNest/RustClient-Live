@@ -1,4 +1,4 @@
-public class IndependentScale : MonoBehaviour, IClientComponent // TypeDefIndex: 10946
+public class IndependentScale : MonoBehaviour, IClientComponent // TypeDefIndex: 10958
 {
 	public Transform scaleParent; 
 	public Vector3 initialScale; 

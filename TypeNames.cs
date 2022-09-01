@@ -1,7 +1,7 @@
 internal abstract class TypeNames.ATypeName : TypeName, IEquatable<TypeName> // TypeDefIndex: 408
 {
 
-internal abstract class TypeNames.ATypeName : TypeName, IEquatable<TypeName> 
+internal abstract class TypeNames.ATypeName : TypeName, IEquatable<TypeName>
 	public abstract string DisplayName { get; }
 
 

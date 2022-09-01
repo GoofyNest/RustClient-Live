@@ -1,4 +1,4 @@
-internal struct FriendsEnumerateFollowingList_t : ICallbackData // TypeDefIndex: 5323
+internal struct FriendsEnumerateFollowingList_t : ICallbackData // TypeDefIndex: 5324
 {
 	internal Result Result; 
 	internal ulong[] GSteamID; 

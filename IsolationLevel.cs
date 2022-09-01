@@ -1,7 +1,7 @@
 public enum IsolationLevel // TypeDefIndex: 3981
 {
 
-public enum IsolationLevel 
+public enum IsolationLevel
 	public int value__; 
 	public const IsolationLevel Serializable = 0;
 	public const IsolationLevel RepeatableRead = 1;

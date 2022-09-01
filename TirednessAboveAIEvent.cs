@@ -1,13 +1,13 @@
-public class TirednessAboveAIEvent : BaseAIEvent // TypeDefIndex: 9420
+public class TirednessAboveAIEvent : BaseAIEvent // TypeDefIndex: 9424
 {
 
-internal interface IAISleep 
+internal interface IAISleep
 
-internal interface IAISenses 
+internal interface IAISenses
 
-internal interface IAIMounted 
+internal interface IAIMounted
 
-public class TirednessAboveAIEvent : BaseAIEvent 
+public class TirednessAboveAIEvent : BaseAIEvent
 	[CompilerGeneratedAttribute] 
 	private float <Value>k__BackingField; 
 

@@ -1,4 +1,4 @@
-internal struct UserFavoriteItemsListChanged_t : ICallbackData // TypeDefIndex: 5436
+internal struct UserFavoriteItemsListChanged_t : ICallbackData // TypeDefIndex: 5437
 {
 	internal PublishedFileId PublishedFileId; 
 	internal Result Result; 

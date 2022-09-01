@@ -1,4 +1,4 @@
-public class BenchmarkData // TypeDefIndex: 6178
+public class BenchmarkData // TypeDefIndex: 6179
 {
 	public static BenchmarkData Current; 
 	public Dictionary<string, float> Results; 
@@ -44,7 +44,7 @@ public class BenchmarkData // TypeDefIndex: 6178
 
 }
 
-private struct BenchmarkData.<Upload>d__13 : IAsyncStateMachine // TypeDefIndex: 6179
+private struct BenchmarkData.<Upload>d__13 : IAsyncStateMachine // TypeDefIndex: 6180
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 

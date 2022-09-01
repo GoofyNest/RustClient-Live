@@ -3,7 +3,7 @@ public sealed class NativeMatchesParallelForLengthAttribute : Attribute // TypeD
 
 [RequiredByNativeCodeAttribute] 
 [AttributeUsageAttribute] 
-public sealed class NativeMatchesParallelForLengthAttribute : Attribute 
+public sealed class NativeMatchesParallelForLengthAttribute : Attribute
 
 	public void .ctor() { }
 

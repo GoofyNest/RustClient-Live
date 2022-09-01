@@ -1,4 +1,4 @@
-public static class ProgressBarUI // TypeDefIndex: 11205
+public static class ProgressBarUI // TypeDefIndex: 11233
 {
 	private static Option option; 
 	private static Buttons.ConButton holdButton; 

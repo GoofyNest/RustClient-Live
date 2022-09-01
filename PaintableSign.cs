@@ -1,4 +1,4 @@
-public class PaintableSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6421
+public class PaintableSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6422
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

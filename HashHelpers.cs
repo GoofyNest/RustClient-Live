@@ -13,7 +13,7 @@ internal static class HashHelpers // TypeDefIndex: 1396
 {
 
 [FriendAccessAllowedAttribute] 
-internal static class HashHelpers 
+internal static class HashHelpers
 	public static readonly int[] primes; 
 	private static ConditionalWeakTable<object, SerializationInfo> s_SerializationInfoTable; 
 

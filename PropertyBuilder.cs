@@ -1,9 +1,9 @@
 public abstract class PropertyBuilder : PropertyInfo // TypeDefIndex: 611
 {
 
-public class ParameterBuilder 
+public class ParameterBuilder
 
-public abstract class PropertyBuilder : PropertyInfo 
+public abstract class PropertyBuilder : PropertyInfo
 	public override PropertyAttributes Attributes { get; }
 	public override bool CanRead { get; }
 	public override bool CanWrite { get; }

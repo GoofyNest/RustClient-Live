@@ -1,4 +1,4 @@
-public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 8489
+public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 8491
 {
 	private Option __menuOption_Menu_MountZipline; 
 	public Transform LineDeparturePoint; 
@@ -6,6 +6,7 @@ public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 8489
 	public Collider MountCollider; 
 	public BoxCollider[] BuildingBlocks; 
 	public BoxCollider[] PointBuildingBlocks; 
+	public SpawnableBoundsBlocker[] SpawnableBoundsBlockers; 
 	public GameObjectRef MountableRef; 
 	public float LineSlackAmount; 
 	public bool RegenLine; 
@@ -50,7 +51,7 @@ public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 8489
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <UpdateBuildingBlocks>g__SetUpBuildingBlock|24_0(BoxCollider longCollider, BoxCollider pointCollider, int startIndex, int endIndex) { }
+	private void <UpdateBuildingBlocks>g__SetUpBuildingBlock|25_0(BoxCollider longCollider, BoxCollider pointCollider, SpawnableBoundsBlocker spawnBlocker, int startIndex, int endIndex) { }
 
 }
 

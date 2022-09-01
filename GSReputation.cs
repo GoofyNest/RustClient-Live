@@ -1,4 +1,4 @@
-internal struct GSReputation_t : ICallbackData // TypeDefIndex: 5497
+internal struct GSReputation_t : ICallbackData // TypeDefIndex: 5498
 {
 	internal Result Result; 
 	internal uint ReputationScore; 

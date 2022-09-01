@@ -1,4 +1,4 @@
-internal struct ColorTween : ITweenValue // TypeDefIndex: 5039
+internal struct ColorTween : ITweenValue // TypeDefIndex: 5040
 {
 	private ColorTween.ColorTweenCallback m_Target; 
 	private Color m_StartColor; 
@@ -46,7 +46,7 @@ internal struct ColorTween : ITweenValue // TypeDefIndex: 5039
 
 }
 
-public enum ColorTween.ColorTweenMode // TypeDefIndex: 5040
+public enum ColorTween.ColorTweenMode // TypeDefIndex: 5041
 {
 	public int value__; 
 	public const ColorTween.ColorTweenMode All = 0;
@@ -55,14 +55,14 @@ public enum ColorTween.ColorTweenMode // TypeDefIndex: 5040
 
 }
 
-public class ColorTween.ColorTweenCallback : UnityEvent<Color> // TypeDefIndex: 5041
+public class ColorTween.ColorTweenCallback : UnityEvent<Color> // TypeDefIndex: 5042
 {
 
 	public void .ctor() { }
 
 }
 
-internal struct ColorTween : ITweenValue // TypeDefIndex: 6750
+internal struct ColorTween : ITweenValue // TypeDefIndex: 6751
 {
 	private ColorTween.ColorTweenCallback m_Target; 
 	private Color m_StartColor; 
@@ -110,7 +110,7 @@ internal struct ColorTween : ITweenValue // TypeDefIndex: 6750
 
 }
 
-public enum ColorTween.ColorTweenMode // TypeDefIndex: 6751
+public enum ColorTween.ColorTweenMode // TypeDefIndex: 6752
 {
 	public int value__; 
 	public const ColorTween.ColorTweenMode All = 0;
@@ -119,7 +119,7 @@ public enum ColorTween.ColorTweenMode // TypeDefIndex: 6751
 
 }
 
-public class ColorTween.ColorTweenCallback : UnityEvent<Color> // TypeDefIndex: 6752
+public class ColorTween.ColorTweenCallback : UnityEvent<Color> // TypeDefIndex: 6753
 {
 
 	public void .ctor() { }

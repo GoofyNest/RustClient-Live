@@ -1,4 +1,4 @@
-public struct Stat // TypeDefIndex: 5559
+public struct Stat // TypeDefIndex: 5560
 {
 	[CompilerGeneratedAttribute] 
 	private string <Name>k__BackingField; 

@@ -1,4 +1,4 @@
-public enum FrameType // TypeDefIndex: 6906
+public enum FrameType // TypeDefIndex: 6907
 {
 	public byte value__; 
 	public const FrameType Continuation = 0;

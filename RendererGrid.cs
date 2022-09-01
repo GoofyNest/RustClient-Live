@@ -1,9 +1,10 @@
-public class RendererGrid : SingletonComponent<RendererGrid>, IClientComponent // TypeDefIndex: 9918
+public class RendererGrid : SingletonComponent<RendererGrid>, IClientComponent // TypeDefIndex: 9925
 {
 	public static bool Paused; 
 	public GameObjectRef BatchPrefab; 
 	public float CellSize; 
 	public float MaxMilliseconds; 
+	public const float MinTimeBetweenRefreshes = 1;
 	private WorldSpaceGrid<RendererCell> grid; 
 	private Stopwatch watch; 
 
@@ -45,7 +46,7 @@ public class RendererGrid : SingletonComponent<RendererGrid>, IClientComponent /
 
 }
 
-private sealed class RendererGrid.<UpdateCoroutine>d__20 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9919
+private sealed class RendererGrid.<UpdateCoroutine>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9926
 {
 	private int <>1__state; 
 	private object <>2__current; 

@@ -1,4 +1,4 @@
-public struct RealTimeUntil // TypeDefIndex: 6167
+public struct RealTimeUntil // TypeDefIndex: 6168
 {
 	private float time; 
 
@@ -6,6 +6,8 @@ public struct RealTimeUntil // TypeDefIndex: 6167
 	public static float op_Implicit(RealTimeUntil ts) { }
 
 	public static RealTimeUntil op_Implicit(float ts) { }
+
+	public override string ToString() { }
 
 }
 

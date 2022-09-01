@@ -1,4 +1,4 @@
-public class SpawnGroup : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 10007
+public class SpawnGroup : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 10014
 {
 	[InspectorFlagsAttribute] 
 	public MonumentTier Tier; 
@@ -12,6 +12,7 @@ public class SpawnGroup : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 1
 	public bool temporary; 
 	public bool forceInitialSpawn; 
 	public bool preventDuplicates; 
+	public bool isSpawnerActive; 
 	public BoxCollider setFreeIfMovedBeyond; 
 
 
@@ -19,7 +20,7 @@ public class SpawnGroup : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 1
 
 }
 
-public class SpawnGroup.SpawnEntry // TypeDefIndex: 10008
+public class SpawnGroup.SpawnEntry // TypeDefIndex: 10015
 {
 	public GameObjectRef prefab; 
 	public int weight; 

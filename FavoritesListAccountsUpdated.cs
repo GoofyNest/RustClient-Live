@@ -1,4 +1,4 @@
-internal struct FavoritesListAccountsUpdated_t : ICallbackData // TypeDefIndex: 5346
+internal struct FavoritesListAccountsUpdated_t : ICallbackData // TypeDefIndex: 5347
 {
 	internal Result Result; 
 	public static int _datasize; 

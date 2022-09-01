@@ -1,4 +1,4 @@
-public class GenerateRoadMeshes : ProceduralComponent // TypeDefIndex: 10514
+public class GenerateRoadMeshes : ProceduralComponent // TypeDefIndex: 10525
 {
 	public const float NormalSmoothing = 0;
 	public const bool SnapToTerrain = True;

@@ -1,4 +1,4 @@
-public class CollectableEasterEgg : BaseEntity // TypeDefIndex: 8374
+public class CollectableEasterEgg : BaseEntity // TypeDefIndex: 8376
 {
 	private Option __menuOption_Menu_Pickup; 
 	public Transform artwork; 

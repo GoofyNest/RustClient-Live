@@ -1,4 +1,4 @@
-public class RCon // TypeDefIndex: 11986
+public class RCon // TypeDefIndex: 12014
 {
 	public static string Password; 
 	[ServerVar] 
@@ -47,7 +47,7 @@ public class RCon // TypeDefIndex: 11986
 
 }
 
-public struct RCon.Command // TypeDefIndex: 11987
+public struct RCon.Command // TypeDefIndex: 12015
 {
 	public IPAddress Ip; 
 	public int ConnectionId; 
@@ -57,7 +57,7 @@ public struct RCon.Command // TypeDefIndex: 11987
 
 }
 
-public enum RCon.LogType // TypeDefIndex: 11988
+public enum RCon.LogType // TypeDefIndex: 12016
 {
 	public int value__; 
 	public const RCon.LogType Generic = 0;
@@ -68,7 +68,7 @@ public enum RCon.LogType // TypeDefIndex: 11988
 
 }
 
-public struct RCon.Response // TypeDefIndex: 11989
+public struct RCon.Response // TypeDefIndex: 12017
 {
 	public string Message; 
 	public int Identifier; 
@@ -78,14 +78,14 @@ public struct RCon.Response // TypeDefIndex: 11989
 
 }
 
-internal struct RCon.BannedAddresses // TypeDefIndex: 11990
+internal struct RCon.BannedAddresses // TypeDefIndex: 12018
 {
 	public IPAddress addr; 
 	public float banTime; 
 
 }
 
-internal class RCon.RConClient // TypeDefIndex: 11991
+internal class RCon.RConClient // TypeDefIndex: 12019
 {
 	private Socket socket; 
 	private bool isAuthorised; 
@@ -115,7 +115,7 @@ internal class RCon.RConClient // TypeDefIndex: 11991
 
 }
 
-internal class RCon.RConListener // TypeDefIndex: 11992
+internal class RCon.RConListener // TypeDefIndex: 12020
 {
 	private TcpListener server; 
 	private List<RCon.RConClient> clients; 
@@ -135,7 +135,7 @@ internal class RCon.RConListener // TypeDefIndex: 11992
 
 }
 
-private sealed class RCon.RConListener.<>c // TypeDefIndex: 11993
+private sealed class RCon.RConListener.<>c // TypeDefIndex: 12021
 {
 	public static readonly RCon.RConListener.<>c <>9; 
 	public static Predicate<RCon.RConClient> <>9__7_0; 
@@ -149,7 +149,7 @@ private sealed class RCon.RConListener.<>c // TypeDefIndex: 11993
 
 }
 
-private sealed class RCon.<>c // TypeDefIndex: 11994
+private sealed class RCon.<>c // TypeDefIndex: 12022
 {
 	public static readonly RCon.<>c <>9; 
 	public static Action<IPAddress, int, string> <>9__11_0; 
@@ -166,7 +166,7 @@ private sealed class RCon.<>c // TypeDefIndex: 11994
 
 }
 
-private sealed class RCon.<>c__DisplayClass18_0 // TypeDefIndex: 11995
+private sealed class RCon.<>c__DisplayClass18_0 // TypeDefIndex: 12023
 {
 	public IPAddress addr; 
 
@@ -177,7 +177,7 @@ private sealed class RCon.<>c__DisplayClass18_0 // TypeDefIndex: 11995
 
 }
 
-private sealed class RCon.<>c__DisplayClass19_0 // TypeDefIndex: 11996
+private sealed class RCon.<>c__DisplayClass19_0 // TypeDefIndex: 12024
 {
 	public IPAddress addr; 
 

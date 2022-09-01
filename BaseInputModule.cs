@@ -1,4 +1,4 @@
-public abstract class BaseInputModule : UIBehaviour // TypeDefIndex: 5080
+public abstract class BaseInputModule : UIBehaviour // TypeDefIndex: 5081
 {
 	protected List<RaycastResult> m_RaycastResultCache; 
 	private AxisEventData m_AxisEventData; 

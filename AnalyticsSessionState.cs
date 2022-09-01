@@ -2,7 +2,7 @@ public enum AnalyticsSessionState // TypeDefIndex: 4747
 {
 
 [RequiredByNativeCodeAttribute] 
-public enum AnalyticsSessionState 
+public enum AnalyticsSessionState
 	public int value__; 
 	public const AnalyticsSessionState kSessionStopped = 0;
 	public const AnalyticsSessionState kSessionStarted = 1;

@@ -4,7 +4,7 @@ public class MeshCollider : Collider // TypeDefIndex: 3923
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
 [RequiredByNativeCodeAttribute] 
-public class MeshCollider : Collider 
+public class MeshCollider : Collider
 	public Mesh sharedMesh { get; set; }
 	public bool convex { get; set; }
 	public MeshColliderCookingOptions cookingOptions { get; set; }

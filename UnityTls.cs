@@ -48,7 +48,7 @@ public struct UnityTls.unitytls_errorstate // TypeDefIndex: 2459
 public struct UnityTls.unitytls_key_ref // TypeDefIndex: 2461
 {
 
-public struct UnityTls.unitytls_key_ref 
+public struct UnityTls.unitytls_key_ref
 	public ulong handle; 
 
 }
@@ -62,7 +62,7 @@ public struct UnityTls.unitytls_x509_ref // TypeDefIndex: 2462
 public struct UnityTls.unitytls_x509list_ref // TypeDefIndex: 2464
 {
 
-public struct UnityTls.unitytls_x509list_ref 
+public struct UnityTls.unitytls_x509list_ref
 	public ulong handle; 
 
 }
@@ -105,9 +105,9 @@ public sealed class UnityTls.unitytls_x509verify_callback : MulticastDelegate //
 public enum UnityTls.unitytls_ciphersuite // TypeDefIndex: 2469
 {
 
-public struct UnityTls.unitytls_x509name 
+public struct UnityTls.unitytls_x509name
 
-public enum UnityTls.unitytls_ciphersuite 
+public enum UnityTls.unitytls_ciphersuite
 	public uint value__; 
 	public const UnityTls.unitytls_ciphersuite UNITYTLS_CIPHERSUITE_INVALID = 16777215;
 

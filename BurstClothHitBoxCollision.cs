@@ -1,4 +1,4 @@
-public class BurstClothHitBoxCollision : BurstCloth, IClientComponent, IPrefabPreProcess // TypeDefIndex: 8674
+public class BurstClothHitBoxCollision : BurstCloth, IClientComponent, IPrefabPreProcess // TypeDefIndex: 8677
 {
 	[HeaderAttribute] 
 	public float GravityStrength; 

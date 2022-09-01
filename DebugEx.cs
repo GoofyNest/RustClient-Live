@@ -1,4 +1,4 @@
-public static class DebugEx // TypeDefIndex: 5598
+public static class DebugEx // TypeDefIndex: 5599
 {
 	private static float startTime; 
 

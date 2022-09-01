@@ -1,4 +1,4 @@
-internal struct GameConnectedChatJoin_t : ICallbackData // TypeDefIndex: 5316
+internal struct GameConnectedChatJoin_t : ICallbackData // TypeDefIndex: 5317
 {
 	internal ulong SteamIDClanChat; 
 	internal ulong SteamIDUser; 

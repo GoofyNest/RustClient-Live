@@ -1,4 +1,4 @@
-public class PowerCounter : IOEntity // TypeDefIndex: 8428
+public class PowerCounter : IOEntity // TypeDefIndex: 8430
 {
 	private Option __menuOption_Menu_SetTarget; 
 	private Option __menuOption_Menu_ShowCounter; 

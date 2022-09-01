@@ -1,4 +1,4 @@
-public class SubbandLayer1 : ASubband // TypeDefIndex: 7403
+public class SubbandLayer1 : ASubband // TypeDefIndex: 7404
 {
 	internal static readonly float[] TableFactor; 
 	internal static readonly float[] TableOffset; 

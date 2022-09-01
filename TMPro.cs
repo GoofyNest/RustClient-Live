@@ -1,4 +1,4 @@
-public static class TMPro_EventManager // TypeDefIndex: 6851
+public static class TMPro_EventManager // TypeDefIndex: 6852
 {
 	public static readonly FastAction<object, Compute_DT_EventArgs> COMPUTE_DT_EVENT; 
 	public static readonly FastAction<bool, Material> MATERIAL_PROPERTY_EVENT; 
@@ -45,7 +45,7 @@ public static class TMPro_EventManager // TypeDefIndex: 6851
 
 }
 
-public static class TMPro_ExtensionMethods // TypeDefIndex: 6853
+public static class TMPro_ExtensionMethods // TypeDefIndex: 6854
 {
 
 	[ExtensionAttribute] 

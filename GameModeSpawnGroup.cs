@@ -1,4 +1,4 @@
-public class GameModeSpawnGroup : SpawnGroup // TypeDefIndex: 9997
+public class GameModeSpawnGroup : SpawnGroup // TypeDefIndex: 10004
 {
 	public string[] gameModeTags; 
 

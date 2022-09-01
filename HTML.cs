@@ -1,4 +1,4 @@
-internal struct HTML_BrowserReady_t : ICallbackData // TypeDefIndex: 5451
+internal struct HTML_BrowserReady_t : ICallbackData // TypeDefIndex: 5452
 {
 	internal uint UnBrowserHandle; 
 	public static int _datasize; 
@@ -15,7 +15,7 @@ internal struct HTML_BrowserReady_t : ICallbackData // TypeDefIndex: 5451
 
 }
 
-internal struct HTML_NeedsPaint_t : ICallbackData // TypeDefIndex: 5452
+internal struct HTML_NeedsPaint_t : ICallbackData // TypeDefIndex: 5453
 {
 	internal uint UnBrowserHandle; 
 	internal string PBGRA; 
@@ -43,7 +43,7 @@ internal struct HTML_NeedsPaint_t : ICallbackData // TypeDefIndex: 5452
 
 }
 
-internal struct HTML_StartRequest_t : ICallbackData // TypeDefIndex: 5453
+internal struct HTML_StartRequest_t : ICallbackData // TypeDefIndex: 5454
 {
 	internal uint UnBrowserHandle; 
 	internal string PchURL; 
@@ -64,7 +64,7 @@ internal struct HTML_StartRequest_t : ICallbackData // TypeDefIndex: 5453
 
 }
 
-internal struct HTML_CloseBrowser_t : ICallbackData // TypeDefIndex: 5454
+internal struct HTML_CloseBrowser_t : ICallbackData // TypeDefIndex: 5455
 {
 	internal uint UnBrowserHandle; 
 	public static int _datasize; 
@@ -81,7 +81,7 @@ internal struct HTML_CloseBrowser_t : ICallbackData // TypeDefIndex: 5454
 
 }
 
-internal struct HTML_URLChanged_t : ICallbackData // TypeDefIndex: 5455
+internal struct HTML_URLChanged_t : ICallbackData // TypeDefIndex: 5456
 {
 	internal uint UnBrowserHandle; 
 	internal string PchURL; 
@@ -103,7 +103,7 @@ internal struct HTML_URLChanged_t : ICallbackData // TypeDefIndex: 5455
 
 }
 
-internal struct HTML_FinishedRequest_t : ICallbackData // TypeDefIndex: 5456
+internal struct HTML_FinishedRequest_t : ICallbackData // TypeDefIndex: 5457
 {
 	internal uint UnBrowserHandle; 
 	internal string PchURL; 
@@ -122,7 +122,7 @@ internal struct HTML_FinishedRequest_t : ICallbackData // TypeDefIndex: 5456
 
 }
 
-internal struct HTML_OpenLinkInNewTab_t : ICallbackData // TypeDefIndex: 5457
+internal struct HTML_OpenLinkInNewTab_t : ICallbackData // TypeDefIndex: 5458
 {
 	internal uint UnBrowserHandle; 
 	internal string PchURL; 
@@ -140,7 +140,7 @@ internal struct HTML_OpenLinkInNewTab_t : ICallbackData // TypeDefIndex: 5457
 
 }
 
-internal struct HTML_ChangedTitle_t : ICallbackData // TypeDefIndex: 5458
+internal struct HTML_ChangedTitle_t : ICallbackData // TypeDefIndex: 5459
 {
 	internal uint UnBrowserHandle; 
 	internal string PchTitle; 
@@ -158,7 +158,7 @@ internal struct HTML_ChangedTitle_t : ICallbackData // TypeDefIndex: 5458
 
 }
 
-internal struct HTML_SearchResults_t : ICallbackData // TypeDefIndex: 5459
+internal struct HTML_SearchResults_t : ICallbackData // TypeDefIndex: 5460
 {
 	internal uint UnBrowserHandle; 
 	internal uint UnResults; 
@@ -177,7 +177,7 @@ internal struct HTML_SearchResults_t : ICallbackData // TypeDefIndex: 5459
 
 }
 
-internal struct HTML_CanGoBackAndForward_t : ICallbackData // TypeDefIndex: 5460
+internal struct HTML_CanGoBackAndForward_t : ICallbackData // TypeDefIndex: 5461
 {
 	internal uint UnBrowserHandle; 
 	internal bool BCanGoBack; 
@@ -196,7 +196,7 @@ internal struct HTML_CanGoBackAndForward_t : ICallbackData // TypeDefIndex: 5460
 
 }
 
-internal struct HTML_HorizontalScroll_t : ICallbackData // TypeDefIndex: 5461
+internal struct HTML_HorizontalScroll_t : ICallbackData // TypeDefIndex: 5462
 {
 	internal uint UnBrowserHandle; 
 	internal uint UnScrollMax; 
@@ -218,7 +218,7 @@ internal struct HTML_HorizontalScroll_t : ICallbackData // TypeDefIndex: 5461
 
 }
 
-internal struct HTML_VerticalScroll_t : ICallbackData // TypeDefIndex: 5462
+internal struct HTML_VerticalScroll_t : ICallbackData // TypeDefIndex: 5463
 {
 	internal uint UnBrowserHandle; 
 	internal uint UnScrollMax; 
@@ -240,7 +240,7 @@ internal struct HTML_VerticalScroll_t : ICallbackData // TypeDefIndex: 5462
 
 }
 
-internal struct HTML_LinkAtPosition_t : ICallbackData // TypeDefIndex: 5463
+internal struct HTML_LinkAtPosition_t : ICallbackData // TypeDefIndex: 5464
 {
 	internal uint UnBrowserHandle; 
 	internal uint X; 
@@ -262,7 +262,7 @@ internal struct HTML_LinkAtPosition_t : ICallbackData // TypeDefIndex: 5463
 
 }
 
-internal struct HTML_JSAlert_t : ICallbackData // TypeDefIndex: 5464
+internal struct HTML_JSAlert_t : ICallbackData // TypeDefIndex: 5465
 {
 	internal uint UnBrowserHandle; 
 	internal string PchMessage; 
@@ -280,7 +280,7 @@ internal struct HTML_JSAlert_t : ICallbackData // TypeDefIndex: 5464
 
 }
 
-internal struct HTML_JSConfirm_t : ICallbackData // TypeDefIndex: 5465
+internal struct HTML_JSConfirm_t : ICallbackData // TypeDefIndex: 5466
 {
 	internal uint UnBrowserHandle; 
 	internal string PchMessage; 
@@ -298,7 +298,7 @@ internal struct HTML_JSConfirm_t : ICallbackData // TypeDefIndex: 5465
 
 }
 
-internal struct HTML_FileOpenDialog_t : ICallbackData // TypeDefIndex: 5466
+internal struct HTML_FileOpenDialog_t : ICallbackData // TypeDefIndex: 5467
 {
 	internal uint UnBrowserHandle; 
 	internal string PchTitle; 
@@ -317,7 +317,7 @@ internal struct HTML_FileOpenDialog_t : ICallbackData // TypeDefIndex: 5466
 
 }
 
-internal struct HTML_NewWindow_t : ICallbackData // TypeDefIndex: 5467
+internal struct HTML_NewWindow_t : ICallbackData // TypeDefIndex: 5468
 {
 	internal uint UnBrowserHandle; 
 	internal string PchURL; 
@@ -340,7 +340,7 @@ internal struct HTML_NewWindow_t : ICallbackData // TypeDefIndex: 5467
 
 }
 
-internal struct HTML_SetCursor_t : ICallbackData // TypeDefIndex: 5468
+internal struct HTML_SetCursor_t : ICallbackData // TypeDefIndex: 5469
 {
 	internal uint UnBrowserHandle; 
 	internal uint EMouseCursor; 
@@ -358,7 +358,7 @@ internal struct HTML_SetCursor_t : ICallbackData // TypeDefIndex: 5468
 
 }
 
-internal struct HTML_StatusText_t : ICallbackData // TypeDefIndex: 5469
+internal struct HTML_StatusText_t : ICallbackData // TypeDefIndex: 5470
 {
 	internal uint UnBrowserHandle; 
 	internal string PchMsg; 
@@ -376,7 +376,7 @@ internal struct HTML_StatusText_t : ICallbackData // TypeDefIndex: 5469
 
 }
 
-internal struct HTML_ShowToolTip_t : ICallbackData // TypeDefIndex: 5470
+internal struct HTML_ShowToolTip_t : ICallbackData // TypeDefIndex: 5471
 {
 	internal uint UnBrowserHandle; 
 	internal string PchMsg; 
@@ -394,7 +394,7 @@ internal struct HTML_ShowToolTip_t : ICallbackData // TypeDefIndex: 5470
 
 }
 
-internal struct HTML_UpdateToolTip_t : ICallbackData // TypeDefIndex: 5471
+internal struct HTML_UpdateToolTip_t : ICallbackData // TypeDefIndex: 5472
 {
 	internal uint UnBrowserHandle; 
 	internal string PchMsg; 
@@ -412,7 +412,7 @@ internal struct HTML_UpdateToolTip_t : ICallbackData // TypeDefIndex: 5471
 
 }
 
-internal struct HTML_HideToolTip_t : ICallbackData // TypeDefIndex: 5472
+internal struct HTML_HideToolTip_t : ICallbackData // TypeDefIndex: 5473
 {
 	internal uint UnBrowserHandle; 
 	public static int _datasize; 
@@ -429,7 +429,7 @@ internal struct HTML_HideToolTip_t : ICallbackData // TypeDefIndex: 5472
 
 }
 
-internal struct HTML_BrowserRestarted_t : ICallbackData // TypeDefIndex: 5473
+internal struct HTML_BrowserRestarted_t : ICallbackData // TypeDefIndex: 5474
 {
 	internal uint UnBrowserHandle; 
 	internal uint UnOldBrowserHandle; 

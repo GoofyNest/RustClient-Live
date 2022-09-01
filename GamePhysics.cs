@@ -1,4 +1,4 @@
-public static class GamePhysics // TypeDefIndex: 9258
+public static class GamePhysics // TypeDefIndex: 9262
 {
 	public const int BufferLength = 8192;
 	private static RaycastHit[] hitBuffer; 
@@ -11,6 +11,8 @@ public static class GamePhysics // TypeDefIndex: 9258
 	public static bool CheckCapsule(Vector3 start, Vector3 end, float radius, int layerMask = -5, QueryTriggerInteraction triggerInteraction = 0) { }
 
 	public static bool CheckOBB(OBB obb, int layerMask = -5, QueryTriggerInteraction triggerInteraction = 0) { }
+
+	public static bool CheckOBBAndEntity(OBB obb, int layerMask = -5, QueryTriggerInteraction triggerInteraction = 0, BaseEntity ignoreEntity) { }
 
 	public static bool CheckBounds(Bounds bounds, int layerMask = -5, QueryTriggerInteraction triggerInteraction = 0) { }
 
@@ -137,20 +139,20 @@ public static class GamePhysics // TypeDefIndex: 9258
 
 }
 
-private sealed class GamePhysics.<>c // TypeDefIndex: 9259
+private sealed class GamePhysics.<>c // TypeDefIndex: 9263
 {
 	public static readonly GamePhysics.<>c <>9; 
-	public static Comparison<RaycastHit> <>9__41_0; 
 	public static Comparison<RaycastHit> <>9__42_0; 
+	public static Comparison<RaycastHit> <>9__43_0; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal int <Sort>b__41_0(RaycastHit a, RaycastHit b) { }
-
 	internal int <Sort>b__42_0(RaycastHit a, RaycastHit b) { }
+
+	internal int <Sort>b__43_0(RaycastHit a, RaycastHit b) { }
 
 }
 

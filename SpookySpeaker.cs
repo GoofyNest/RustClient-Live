@@ -1,4 +1,4 @@
-public class SpookySpeaker : BaseCombatEntity // TypeDefIndex: 8453
+public class SpookySpeaker : BaseCombatEntity // TypeDefIndex: 8455
 {
 	private Option __menuOption_Menu_SoundOff; 
 	private Option __menuOption_Menu_SoundOn; 

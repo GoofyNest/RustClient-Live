@@ -1,9 +1,10 @@
-public class LODCell : Pool.IPooled // TypeDefIndex: 9928
+public class LODCell : Pool.IPooled // TypeDefIndex: 9935
 {
 	public Vector3 Position; 
 	public float Size; 
 	public float Distance; 
 	public float DistanceY; 
+	public float Timestamp; 
 	public EnvironmentType Environment; 
 	private ListHashSet<ILOD> members; 
 
@@ -13,6 +14,8 @@ public class LODCell : Pool.IPooled // TypeDefIndex: 9928
 	public int get_Count() { }
 
 	public void Initialize(Vector3 position, float size) { }
+
+	public bool NeedsRefresh() { }
 
 	public void ChangeLOD(bool force = False) { }
 

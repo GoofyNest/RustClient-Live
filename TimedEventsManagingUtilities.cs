@@ -1,4 +1,4 @@
-public static class TimedEventsManagingUtilities // TypeDefIndex: 7459
+public static class TimedEventsManagingUtilities // TypeDefIndex: 7460
 {
 
 	[IteratorStateMachineAttribute] 
@@ -11,7 +11,7 @@ public static class TimedEventsManagingUtilities // TypeDefIndex: 7459
 
 }
 
-private sealed class TimedEventsManagingUtilities.<>c // TypeDefIndex: 7460
+private sealed class TimedEventsManagingUtilities.<>c // TypeDefIndex: 7461
 {
 	public static readonly TimedEventsManagingUtilities.<>c <>9; 
 	public static Func<EventsCollection, int> <>9__26_0; 
@@ -25,7 +25,7 @@ private sealed class TimedEventsManagingUtilities.<>c // TypeDefIndex: 7460
 
 }
 
-private sealed class TimedEventsManagingUtilities.<GetTimedEventsLazy>d__26 : IEnumerable<Tuple<TimedEvent, int>>, IEnumerable, IEnumerator<Tuple<TimedEvent, int>>, IDisposable, IEnumerator // TypeDefIndex: 7461
+private sealed class TimedEventsManagingUtilities.<GetTimedEventsLazy>d__26 : IEnumerable<Tuple<TimedEvent, int>>, IEnumerable, IEnumerator<Tuple<TimedEvent, int>>, IDisposable, IEnumerator // TypeDefIndex: 7462
 {
 	private int <>1__state; 
 	private Tuple<TimedEvent, int> <>2__current; 
@@ -76,7 +76,7 @@ private sealed class TimedEventsManagingUtilities.<GetTimedEventsLazy>d__26 : IE
 
 }
 
-private sealed class TimedEventsManagingUtilities.<GetTimedEventsLazy>d__27 : IEnumerable<TimedEvent>, IEnumerable, IEnumerator<TimedEvent>, IDisposable, IEnumerator // TypeDefIndex: 7462
+private sealed class TimedEventsManagingUtilities.<GetTimedEventsLazy>d__27 : IEnumerable<TimedEvent>, IEnumerable, IEnumerator<TimedEvent>, IDisposable, IEnumerator // TypeDefIndex: 7463
 {
 	private int <>1__state; 
 	private TimedEvent <>2__current; 

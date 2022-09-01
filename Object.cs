@@ -139,8 +139,8 @@ public class Object // TypeDefIndex: 3535
 	[ExcludeFromDocsAttribute] 
 	public static void DestroyImmediate(Object obj) { }
 
-	[FreeFunctionAttribute] 
 	[TypeInferenceRuleAttribute] 
+	[FreeFunctionAttribute] 
 	public static Object[] FindObjectsOfType(Type type) { }
 
 	[FreeFunctionAttribute] 
@@ -242,7 +242,7 @@ public class Object // TypeDefIndex: 3535
 
 }
 
-public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8141
+public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8142
 {
 	private readonly IDictionary<string, Value> values; 
 
@@ -303,7 +303,7 @@ public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // T
 
 }
 
-private enum Object.ParsingState // TypeDefIndex: 8142
+private enum Object.ParsingState // TypeDefIndex: 8143
 {
 	public int value__; 
 	public const Object.ParsingState Object = 0;

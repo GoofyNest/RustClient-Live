@@ -1,4 +1,4 @@
-public class LensDirtinessRenderer : PostProcessEffectRenderer<LensDirtinessEffect> // TypeDefIndex: 10264
+public class LensDirtinessRenderer : PostProcessEffectRenderer<LensDirtinessEffect> // TypeDefIndex: 10271
 {
 	private int dataProperty; 
 	private Shader lensDirtinessShader; 
@@ -12,7 +12,7 @@ public class LensDirtinessRenderer : PostProcessEffectRenderer<LensDirtinessEffe
 
 }
 
-private enum LensDirtinessRenderer.Pass // TypeDefIndex: 10265
+private enum LensDirtinessRenderer.Pass // TypeDefIndex: 10272
 {
 	public int value__; 
 	public const LensDirtinessRenderer.Pass Threshold = 0;

@@ -1,4 +1,4 @@
-public class ReflectionAttributeProvider : IAttributeProvider // TypeDefIndex: 5979
+public class ReflectionAttributeProvider : IAttributeProvider // TypeDefIndex: 5980
 {
 	private readonly object _attributeProvider; 
 

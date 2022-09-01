@@ -1,4 +1,4 @@
-internal struct MarketEligibilityResponse_t : ICallbackData // TypeDefIndex: 5305
+internal struct MarketEligibilityResponse_t : ICallbackData // TypeDefIndex: 5306
 {
 	internal bool Allowed; 
 	internal MarketNotAllowedReasonFlags NotAllowedReason; 

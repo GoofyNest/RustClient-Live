@@ -7,7 +7,7 @@ public abstract class MD5 : HashAlgorithm // TypeDefIndex: 971
 
 }
 
-public class Md5 // TypeDefIndex: 4848
+public class Md5 // TypeDefIndex: 4849
 {
 
 	public static string Calculate(string input) { }

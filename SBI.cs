@@ -1,4 +1,4 @@
-public class SBI // TypeDefIndex: 7412
+public class SBI // TypeDefIndex: 7413
 {
 	internal int[] L; 
 	internal int[] S; 

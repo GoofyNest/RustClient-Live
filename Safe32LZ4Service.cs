@@ -1,4 +1,4 @@
-internal class Safe32LZ4Service : ILZ4Service // TypeDefIndex: 6986
+internal class Safe32LZ4Service : ILZ4Service // TypeDefIndex: 6987
 {
 
 	public int Encode(byte[] input, int inputOffset, int inputLength, byte[] output, int outputOffset, int outputLength) { }

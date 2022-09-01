@@ -3,7 +3,7 @@ public static class RemoteSettings // TypeDefIndex: 4741
 
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
-public static class RemoteSettings 
+public static class RemoteSettings
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private static RemoteSettings.UpdatedEventHandler Updated; 

@@ -1,4 +1,4 @@
-public abstract class Decay : PrefabAttribute, IServerComponent // TypeDefIndex: 9527
+public abstract class Decay : PrefabAttribute, IServerComponent // TypeDefIndex: 9531
 {
 
 	protected override Type GetIndexedType() { }
@@ -7,7 +7,7 @@ public abstract class Decay : PrefabAttribute, IServerComponent // TypeDefIndex:
 
 }
 
-public class Decay : ConsoleSystem // TypeDefIndex: 11901
+public class Decay : ConsoleSystem // TypeDefIndex: 11929
 {
 
 	public void .ctor() { }

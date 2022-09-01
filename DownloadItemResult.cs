@@ -1,4 +1,4 @@
-internal struct DownloadItemResult_t : ICallbackData // TypeDefIndex: 5435
+internal struct DownloadItemResult_t : ICallbackData // TypeDefIndex: 5436
 {
 	internal AppId AppID; 
 	internal PublishedFileId PublishedFileId; 

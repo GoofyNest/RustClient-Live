@@ -1,7 +1,7 @@
 internal static class WebRequestUtils // TypeDefIndex: 4124
 {
 
-internal static class WebRequestUtils 
+internal static class WebRequestUtils
 	private static Regex domainRegex; 
 
 

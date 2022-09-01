@@ -1,4 +1,4 @@
-internal struct GameConnectedFriendChatMsg_t : ICallbackData // TypeDefIndex: 5320
+internal struct GameConnectedFriendChatMsg_t : ICallbackData // TypeDefIndex: 5321
 {
 	internal ulong SteamIDUser; 
 	internal int MessageID; 

@@ -1,4 +1,4 @@
-public class BanditGuard : HumanNPC // TypeDefIndex: 8930
+public class BanditGuard : HumanNPC // TypeDefIndex: 8933
 {
 
 	public void .ctor() { }

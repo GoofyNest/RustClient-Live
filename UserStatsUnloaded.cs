@@ -1,4 +1,4 @@
-internal struct UserStatsUnloaded_t : ICallbackData // TypeDefIndex: 5393
+internal struct UserStatsUnloaded_t : ICallbackData // TypeDefIndex: 5394
 {
 	internal ulong SteamIDUser; 
 	public static int _datasize; 

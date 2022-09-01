@@ -1,8 +1,8 @@
-internal class FieldFilter : PathFilter // TypeDefIndex: 6084
+internal class FieldFilter : PathFilter // TypeDefIndex: 6085
 {
 
 [PreserveAttribute] 
-internal class FieldFilter : PathFilter 
+internal class FieldFilter : PathFilter
 
 	public void .ctor() { }
 

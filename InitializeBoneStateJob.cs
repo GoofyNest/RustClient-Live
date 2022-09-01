@@ -1,4 +1,4 @@
-internal struct InitializeBoneStateJob : IJobParallelForTransform // TypeDefIndex: 7318
+internal struct InitializeBoneStateJob : IJobParallelForTransform // TypeDefIndex: 7319
 {
 	[ReadOnlyAttribute] 
 	[NativeMatchesParallelForLengthAttribute] 

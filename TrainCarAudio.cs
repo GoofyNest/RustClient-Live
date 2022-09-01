@@ -1,5 +1,6 @@
-public class TrainCarAudio : MonoBehaviour // TypeDefIndex: 9767
+public class TrainCarAudio : MonoBehaviour // TypeDefIndex: 9772
 {
+	[HeaderAttribute] 
 	[SerializeField] 
 	private TrainCar trainCar; 
 	[SerializeField] 
@@ -29,9 +30,9 @@ public class TrainCarAudio : MonoBehaviour // TypeDefIndex: 9767
 	private float lastMovementChangeOneshot; 
 
 
-	public void UpdateTick() { }
+	public virtual void UpdateTick() { }
 
-	public void StopAll() { }
+	public virtual void StopAll() { }
 
 	private void StopMovementLoops() { }
 

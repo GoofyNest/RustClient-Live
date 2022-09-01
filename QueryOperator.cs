@@ -1,4 +1,4 @@
-internal enum QueryOperator // TypeDefIndex: 6091
+internal enum QueryOperator // TypeDefIndex: 6092
 {
 	public int value__; 
 	public const QueryOperator None = 0;

@@ -1,4 +1,4 @@
-public class TriggerSnowmobileAchievement : TriggerBase // TypeDefIndex: 10046
+public class TriggerSnowmobileAchievement : TriggerBase // TypeDefIndex: 10053
 {
 
 	public void .ctor() { }

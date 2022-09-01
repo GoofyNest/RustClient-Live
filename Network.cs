@@ -146,7 +146,7 @@ internal class NetRes // TypeDefIndex: 2921
 public class NetworkStream : Stream // TypeDefIndex: 3044
 {
 
-public class NetworkStream : Stream 
+public class NetworkStream : Stream
 	private Socket m_StreamSocket; 
 	private bool m_Readable; 
 	private bool m_Writeable; 
@@ -257,6 +257,7 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>..ctor
 	|-Queue<BaseEntity>..ctor
 	|-Queue<DeferredAction>..ctor
 	|-Queue<RCon.Command>..ctor
@@ -278,6 +279,8 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public void .ctor(int capacity) { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>..ctor
+	|
 	|-Queue<RCon.Command>..ctor
 	|
 	|-Queue<int>..ctor
@@ -298,6 +301,7 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public int get_Count() { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.get_Count
 	|-Queue<BaseEntity>.get_Count
 	|-Queue<DeferredAction>.get_Count
 	|-Queue<RCon.Command>.get_Count
@@ -320,6 +324,8 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private object System.Collections.ICollection.get_SyncRoot() { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Queue<RCon.Command>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Queue<int>.System.Collections.ICollection.get_SyncRoot
@@ -338,6 +344,7 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	public void Clear() { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.Clear
 	|-Queue<BaseEntity>.Clear
 	|-Queue<RCon.Command>.Clear
 	|-Queue<object>.Clear
@@ -352,6 +359,8 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 
 	private void System.Collections.ICollection.CopyTo(Array array, int index) { }
 	/* GenericInstMethod :
+	|
+	|-Queue<BaseEntity.QueuedFileRequest>.System.Collections.ICollection.CopyTo
 	|
 	|-Queue<RCon.Command>.System.Collections.ICollection.CopyTo
 	|
@@ -370,6 +379,8 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 
 	public void Enqueue(T item) { }
 	/* GenericInstMethod :
+	|
+	|-Queue<BaseEntity.QueuedFileRequest>.Enqueue
 	|
 	|-Queue<BaseEntity>.Enqueue
 	|-Queue<DeferredAction>.Enqueue
@@ -399,13 +410,16 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	/* GenericInstMethod :
 	|
 	|-Queue<string>.GetEnumerator
-	|-Queue<IntPtr>.GetEnumerator
 	|-Queue<object>.GetEnumerator
 	|-Queue<ulong>.GetEnumerator
+	|
+	|-Queue<BaseEntity.QueuedFileRequest>.GetEnumerator
 	|
 	|-Queue<RCon.Command>.GetEnumerator
 	|
 	|-Queue<int>.GetEnumerator
+	|
+	|-Queue<IntPtr>.GetEnumerator
 	|
 	|-Queue<AsyncGPUReadbackRequest>.GetEnumerator
 	|-Queue<EventDispatcher.EventRecord>.GetEnumerator
@@ -414,11 +428,14 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|
 	|-Queue<RCon.Command>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-Queue<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-Queue<IntPtr>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|
 	|-Queue<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Queue<ulong>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
@@ -429,11 +446,14 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerable.GetEnumerator
+	|
 	|-Queue<RCon.Command>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-Queue<int>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-Queue<IntPtr>.System.Collections.IEnumerable.GetEnumerator
+	|
 	|-Queue<object>.System.Collections.IEnumerable.GetEnumerator
 	|-Queue<ulong>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -443,6 +463,8 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 
 	public T Dequeue() { }
 	/* GenericInstMethod :
+	|
+	|-Queue<BaseEntity.QueuedFileRequest>.Dequeue
 	|
 	|-Queue<BaseEntity>.Dequeue
 	|-Queue<DeferredAction>.Dequeue
@@ -478,14 +500,34 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Queue<AsyncGPUReadbackRequest>.Peek
 	|-Queue<EventDispatcher.EventRecord>.Peek
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.Peek
+	|
 	|-Queue<RCon.Command>.Peek
 	|
 	|-Queue<int>.Peek
 	*/
 
+	public bool Contains(T item) { }
+	/* GenericInstMethod :
+	|
+	|-Queue<BaseEntity.QueuedFileRequest>.Contains
+	|
+	|-Queue<RCon.Command>.Contains
+	|
+	|-Queue<int>.Contains
+	|
+	|-Queue<IntPtr>.Contains
+	|-Queue<object>.Contains
+	|-Queue<ulong>.Contains
+	|
+	|-Queue<AsyncGPUReadbackRequest>.Contains
+	|-Queue<EventDispatcher.EventRecord>.Contains
+	*/
+
 	private void SetCapacity(int capacity) { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.SetCapacity
 	|-Queue<RCon.Command>.SetCapacity
 	|-Queue<int>.SetCapacity
 	|-Queue<IntPtr>.SetCapacity
@@ -498,6 +540,7 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	private void MoveNext(ref int index) { }
 	/* GenericInstMethod :
 	|
+	|-Queue<BaseEntity.QueuedFileRequest>.MoveNext
 	|-Queue<RCon.Command>.MoveNext
 	|-Queue<int>.MoveNext
 	|-Queue<IntPtr>.MoveNext
@@ -509,6 +552,8 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 
 	private void ThrowForEmptyQueue() { }
 	/* GenericInstMethod :
+	|
+	|-Queue<BaseEntity.QueuedFileRequest>.ThrowForEmptyQueue
 	|
 	|-Queue<RCon.Command>.ThrowForEmptyQueue
 	|
@@ -541,6 +586,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 	internal void .ctor(Queue<T> q) { }
 	/* GenericInstMethod :
 	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>..ctor
+	|
 	|-Queue.Enumerator<RCon.Command>..ctor
 	|
 	|-Queue.Enumerator<int>..ctor
@@ -555,6 +602,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 
 	public void Dispose() { }
 	/* GenericInstMethod :
+	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>.Dispose
 	|
 	|-Queue.Enumerator<RCon.Command>.Dispose
 	|
@@ -571,6 +620,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 
 	public bool MoveNext() { }
 	/* GenericInstMethod :
+	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>.MoveNext
 	|
 	|-Queue.Enumerator<RCon.Command>.MoveNext
 	|
@@ -594,6 +645,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 	|-Queue.Enumerator<string>.get_Current
 	|-Queue.Enumerator<object>.get_Current
 	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>.get_Current
+	|
 	|-Queue.Enumerator<RCon.Command>.get_Current
 	|
 	|-Queue.Enumerator<int>.get_Current
@@ -609,6 +662,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 
 	private void ThrowEnumerationNotStartedOrEnded() { }
 	/* GenericInstMethod :
+	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>.ThrowEnumerationNotStartedOrEnded
 	|
 	|-Queue.Enumerator<RCon.Command>.ThrowEnumerationNotStartedOrEnded
 	|
@@ -628,6 +683,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.get_Current
+	|
 	|-Queue.Enumerator<RCon.Command>.System.Collections.IEnumerator.get_Current
 	|
 	|-Queue.Enumerator<int>.System.Collections.IEnumerator.get_Current
@@ -645,6 +702,8 @@ public struct Queue.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // 
 
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
+	|
+	|-Queue.Enumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
 	|
 	|-Queue.Enumerator<RCon.Command>.System.Collections.IEnumerator.Reset
 	|
@@ -668,7 +727,7 @@ public sealed class ConnectionManagementElementCollection : ConfigurationElement
 
 [ConfigurationCollectionAttribute] 
 [DefaultMemberAttribute] 
-public sealed class ConnectionManagementElementCollection : ConfigurationElementCollection 
+public sealed class ConnectionManagementElementCollection : ConfigurationElementCollection
 
 	public void .ctor() { }
 
@@ -733,7 +792,7 @@ public enum ConnectionState // TypeDefIndex: 4173
 
 }
 
-public enum ConnectionState // TypeDefIndex: 5169
+public enum ConnectionState // TypeDefIndex: 5170
 {
 	public int value__; 
 	public const ConnectionState None = 0;
@@ -748,7 +807,7 @@ public enum ConnectionState // TypeDefIndex: 5169
 
 }
 
-internal enum NetConfigScope // TypeDefIndex: 5170
+internal enum NetConfigScope // TypeDefIndex: 5171
 {
 	public int value__; 
 	public const NetConfigScope Global = 1;
@@ -758,7 +817,7 @@ internal enum NetConfigScope // TypeDefIndex: 5170
 
 }
 
-internal enum NetConfigType // TypeDefIndex: 5171
+internal enum NetConfigType // TypeDefIndex: 5172
 {
 	public int value__; 
 	public const NetConfigType Int32 = 1;
@@ -769,7 +828,7 @@ internal enum NetConfigType // TypeDefIndex: 5171
 
 }
 
-internal enum NetConfig // TypeDefIndex: 5172
+internal enum NetConfig // TypeDefIndex: 5173
 {
 	public int value__; 
 	public const NetConfig Invalid = 0;
@@ -832,7 +891,7 @@ internal enum NetConfig // TypeDefIndex: 5172
 
 }
 
-internal enum NetConfigResult // TypeDefIndex: 5173
+internal enum NetConfigResult // TypeDefIndex: 5174
 {
 	public int value__; 
 	public const NetConfigResult BadValue = -1;
@@ -843,7 +902,7 @@ internal enum NetConfigResult // TypeDefIndex: 5173
 
 }
 
-public enum NetDebugOutput // TypeDefIndex: 5174
+public enum NetDebugOutput // TypeDefIndex: 5175
 {
 	public int value__; 
 	public const NetDebugOutput None = 0;
@@ -858,7 +917,7 @@ public enum NetDebugOutput // TypeDefIndex: 5174
 
 }
 
-public class ConnectionManager // TypeDefIndex: 5178
+public class ConnectionManager // TypeDefIndex: 5179
 {
 	[CompilerGeneratedAttribute] 
 	private IConnectionManager <Interface>k__BackingField; 
@@ -903,7 +962,7 @@ public class ConnectionManager // TypeDefIndex: 5178
 
 }
 
-internal sealed class NetDebugFunc : MulticastDelegate // TypeDefIndex: 5179
+internal sealed class NetDebugFunc : MulticastDelegate // TypeDefIndex: 5180
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -916,7 +975,7 @@ internal sealed class NetDebugFunc : MulticastDelegate // TypeDefIndex: 5179
 
 }
 
-internal struct NetKeyValue // TypeDefIndex: 5507
+internal struct NetKeyValue // TypeDefIndex: 5508
 {
 	internal NetConfig Value; 
 	internal NetConfigType DataType; 
@@ -927,7 +986,7 @@ internal struct NetKeyValue // TypeDefIndex: 5507
 
 }
 
-public struct NetIdentity // TypeDefIndex: 5508
+public struct NetIdentity // TypeDefIndex: 5509
 {
 	internal NetIdentity.IdentityType type; 
 	internal int size; 
@@ -939,7 +998,7 @@ public struct NetIdentity // TypeDefIndex: 5508
 
 }
 
-internal enum NetIdentity.IdentityType // TypeDefIndex: 5509
+internal enum NetIdentity.IdentityType // TypeDefIndex: 5510
 {
 	public int value__; 
 	public const NetIdentity.IdentityType Invalid = 0;
@@ -950,7 +1009,7 @@ internal enum NetIdentity.IdentityType // TypeDefIndex: 5509
 
 }
 
-public struct NetAddress // TypeDefIndex: 5510
+public struct NetAddress // TypeDefIndex: 5511
 {
 	internal NetAddress.IPV4 ip; 
 	internal ushort port; 
@@ -976,7 +1035,7 @@ public struct NetAddress // TypeDefIndex: 5510
 
 }
 
-internal struct NetAddress.IPV4 // TypeDefIndex: 5511
+internal struct NetAddress.IPV4 // TypeDefIndex: 5512
 {
 	internal ulong m_8zeros; 
 	internal ushort m_0000; 
@@ -988,7 +1047,7 @@ internal struct NetAddress.IPV4 // TypeDefIndex: 5511
 
 }
 
-internal struct NetMsg // TypeDefIndex: 5512
+internal struct NetMsg // TypeDefIndex: 5513
 {
 	internal IntPtr DataPtr; 
 	internal int DataSize; 
@@ -1010,7 +1069,7 @@ internal struct NetMsg // TypeDefIndex: 5512
 
 }
 
-public struct Connection : IEquatable<Connection> // TypeDefIndex: 5543
+public struct Connection : IEquatable<Connection> // TypeDefIndex: 5544
 {
 	[CompilerGeneratedAttribute] 
 	private uint <Id>k__BackingField; 
@@ -1051,7 +1110,7 @@ public struct Connection : IEquatable<Connection> // TypeDefIndex: 5543
 
 }
 
-public struct ConnectionInfo // TypeDefIndex: 5544
+public struct ConnectionInfo // TypeDefIndex: 5545
 {
 	internal NetIdentity identity; 
 	internal long userData; 
@@ -1075,7 +1134,7 @@ public struct ConnectionInfo // TypeDefIndex: 5544
 
 }
 
-public struct ConnectionLaneStatus // TypeDefIndex: 5545
+public struct ConnectionLaneStatus // TypeDefIndex: 5546
 {
 	internal int cbPendingUnreliable; 
 	internal int cbPendingReliable; 
@@ -1086,7 +1145,7 @@ public struct ConnectionLaneStatus // TypeDefIndex: 5545
 
 }
 
-public struct ConnectionStatus // TypeDefIndex: 5546
+public struct ConnectionStatus // TypeDefIndex: 5547
 {
 	internal ConnectionState state; 
 	internal int ping; 
@@ -1125,7 +1184,7 @@ public struct ConnectionStatus // TypeDefIndex: 5546
 
 }
 
-public class Connection // TypeDefIndex: 6682
+public class Connection // TypeDefIndex: 6683
 {
 	private static MemoryStream reusableStream; 
 	protected MemoryStream recordStream; 
@@ -1205,7 +1264,7 @@ public class Connection // TypeDefIndex: 6682
 
 }
 
-public enum Connection.State // TypeDefIndex: 6683
+public enum Connection.State // TypeDefIndex: 6684
 {
 	public int value__; 
 	public const Connection.State Unconnected = 0;
@@ -1217,13 +1276,13 @@ public enum Connection.State // TypeDefIndex: 6683
 
 }
 
-public struct Connection.Validation // TypeDefIndex: 6684
+public struct Connection.Validation // TypeDefIndex: 6685
 {
 	public uint entityUpdates; 
 
 }
 
-public class Connection.ClientInfo // TypeDefIndex: 6685
+public class Connection.ClientInfo // TypeDefIndex: 6686
 {
 	public Dictionary<string, string> info; 
 
@@ -1242,7 +1301,7 @@ public class Connection.ClientInfo // TypeDefIndex: 6685
 
 }
 
-public class NetRead : Stream // TypeDefIndex: 6695
+public class NetRead : Stream // TypeDefIndex: 6696
 {
 	private MemoryStream _stream; 
 	public byte[] Data; 
@@ -1375,7 +1434,7 @@ public class NetRead : Stream // TypeDefIndex: 6695
 
 }
 
-public class NetWrite : MemoryStream // TypeDefIndex: 6696
+public class NetWrite : MemoryStream // TypeDefIndex: 6697
 {
 	private static MemoryStream buffer; 
 	private BaseNetwork netwrite; 
@@ -1496,7 +1555,7 @@ public class NetWrite : MemoryStream // TypeDefIndex: 6696
 
 }
 
-public class Networkable : Pool.IPooled // TypeDefIndex: 6700
+public class Networkable : Pool.IPooled // TypeDefIndex: 6701
 {
 	public uint ID; 
 	[CompilerGeneratedAttribute] 
@@ -1552,7 +1611,7 @@ public class Networkable : Pool.IPooled // TypeDefIndex: 6700
 
 }
 
-public class QueuedStream : Stream // TypeDefIndex: 6916
+public class QueuedStream : Stream // TypeDefIndex: 6917
 {
 	private readonly Stream _stream; 
 	private readonly Queue<QueuedStream.WriteData> _queue; 
@@ -1606,7 +1665,7 @@ public class QueuedStream : Stream // TypeDefIndex: 6916
 
 }
 
-private class QueuedStream.WriteData // TypeDefIndex: 6917
+private class QueuedStream.WriteData // TypeDefIndex: 6918
 {
 	public readonly byte[] Buffer; 
 	public readonly int Offset; 
@@ -1620,7 +1679,7 @@ private class QueuedStream.WriteData // TypeDefIndex: 6917
 
 }
 
-private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 6918
+private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 6919
 {
 	private readonly object _state; 
 	[CompilerGeneratedAttribute] 
@@ -1660,7 +1719,7 @@ private class QueuedStream.QueuedWriteResult : IAsyncResult // TypeDefIndex: 691
 
 }
 
-private sealed class QueuedStream.<>c__DisplayClass27_0 // TypeDefIndex: 6919
+private sealed class QueuedStream.<>c__DisplayClass27_0 // TypeDefIndex: 6920
 {
 	public QueuedStream.WriteData queued; 
 	public QueuedStream <>4__this; 
@@ -1673,7 +1732,7 @@ private sealed class QueuedStream.<>c__DisplayClass27_0 // TypeDefIndex: 6919
 
 }
 
-public class NetGraph : SingletonComponent<NetGraph> // TypeDefIndex: 7075
+public class NetGraph : SingletonComponent<NetGraph> // TypeDefIndex: 7076
 {
 	public CanvasGroup group; 
 	public GameObject rootPanel; 
@@ -1692,7 +1751,7 @@ public class NetGraph : SingletonComponent<NetGraph> // TypeDefIndex: 7075
 
 }
 
-private sealed class NetGraph.<>c // TypeDefIndex: 7076
+private sealed class NetGraph.<>c // TypeDefIndex: 7077
 {
 	public static readonly NetGraph.<>c <>9; 
 	public static Func<KeyValuePair<string, Stats.Node>, long> <>9__6_0; 
@@ -1706,7 +1765,7 @@ private sealed class NetGraph.<>c // TypeDefIndex: 7076
 
 }
 
-public class NetGraphItem : MonoBehaviour // TypeDefIndex: 7077
+public class NetGraphItem : MonoBehaviour // TypeDefIndex: 7078
 {
 	public CanvasGroup group; 
 	public LayoutElement element; 
@@ -1723,7 +1782,7 @@ public class NetGraphItem : MonoBehaviour // TypeDefIndex: 7077
 
 }
 
-public class NetGraphRow : MonoBehaviour // TypeDefIndex: 7078
+public class NetGraphRow : MonoBehaviour // TypeDefIndex: 7079
 {
 	public CanvasGroup group; 
 	public Text countTotal; 
@@ -1745,7 +1804,7 @@ public class NetGraphRow : MonoBehaviour // TypeDefIndex: 7078
 
 }
 
-private sealed class NetGraphRow.<>c // TypeDefIndex: 7079
+private sealed class NetGraphRow.<>c // TypeDefIndex: 7080
 {
 	public static readonly NetGraphRow.<>c <>9; 
 	public static Func<KeyValuePair<string, Stats.Node>, long> <>9__10_0; 
@@ -1759,7 +1818,7 @@ private sealed class NetGraphRow.<>c // TypeDefIndex: 7079
 
 }
 
-internal sealed class NetProtect : INetProtect // TypeDefIndex: 7165
+internal sealed class NetProtect : INetProtect // TypeDefIndex: 7166
 {
 
 	public void .ctor(IntPtr Instance) { }
@@ -1770,7 +1829,7 @@ internal sealed class NetProtect : INetProtect // TypeDefIndex: 7165
 
 }
 
-public class Net // TypeDefIndex: 8228
+public class Net // TypeDefIndex: 8229
 {
 	[CompilerGeneratedAttribute] 
 	private static Client <cl>k__BackingField; 
@@ -1796,7 +1855,7 @@ public class Net // TypeDefIndex: 8228
 
 }
 
-public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 9285
+public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 9289
 {
 	public TextMeshProUGUI text; 
 
@@ -1811,7 +1870,7 @@ public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 9285
 
 }
 
-public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex: 10236
+public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex: 10243
 {
 	private MemoryStream buffer; 
 
@@ -1836,7 +1895,7 @@ public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex
 
 }
 
-public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 10237
+public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 10244
 {
 
 	protected override void EncryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
@@ -1847,7 +1906,7 @@ public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 10
 
 }
 
-public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 10238
+public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 10245
 {
 	public int startID; 
 	public int gridSize; 
@@ -1862,21 +1921,21 @@ public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 10238
 
 }
 
-public class ConnectionAuth : MonoBehaviour // TypeDefIndex: 10708
+public class ConnectionAuth : MonoBehaviour // TypeDefIndex: 10719
 {
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionQueue // TypeDefIndex: 10709
+public class ConnectionQueue // TypeDefIndex: 10720
 {
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefIndex: 11095
+public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefIndex: 11120
 {
 	public Text statusText; 
 	public GameObject disconnectButton; 
@@ -1912,7 +1971,7 @@ public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefI
 
 }
 
-private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // TypeDefIndex: 11096
+private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // TypeDefIndex: 11121
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -1929,7 +1988,7 @@ private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // Ty
 
 }
 
-private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // TypeDefIndex: 11097
+private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // TypeDefIndex: 11122
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -1943,7 +2002,7 @@ private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // T
 
 }
 
-public class NetworkSleep : MonoBehaviour // TypeDefIndex: 11318
+public class NetworkSleep : MonoBehaviour // TypeDefIndex: 11346
 {
 	public static int totalBehavioursDisabled; 
 	public static int totalCollidersDisabled; 
@@ -1959,7 +2018,7 @@ public class NetworkSleep : MonoBehaviour // TypeDefIndex: 11318
 
 }
 
-public static class NetworkWriteEx // TypeDefIndex: 11344
+public static class NetworkWriteEx // TypeDefIndex: 11372
 {
 
 	[ExtensionAttribute] 
@@ -1991,7 +2050,7 @@ public static class NetworkWriteEx // TypeDefIndex: 11344
 
 }
 
-public class NetworkedProperty<T> // TypeDefIndex: 11426
+public class NetworkedProperty<T> // TypeDefIndex: 11454
 {
 	private T val; 
 	private BaseEntity entity; 
@@ -2031,7 +2090,7 @@ public class NetworkedProperty<T> // TypeDefIndex: 11426
 
 }
 
-public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // TypeDefIndex: 11579
+public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // TypeDefIndex: 11607
 {
 	private readonly List<Variant> list; 
 
@@ -2059,7 +2118,7 @@ public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // T
 
 }
 
-public sealed class ProxyBoolean : Variant // TypeDefIndex: 11580
+public sealed class ProxyBoolean : Variant // TypeDefIndex: 11608
 {
 	private readonly bool value; 
 
@@ -2072,7 +2131,7 @@ public sealed class ProxyBoolean : Variant // TypeDefIndex: 11580
 
 }
 
-public sealed class ProxyNumber : Variant // TypeDefIndex: 11581
+public sealed class ProxyNumber : Variant // TypeDefIndex: 11609
 {
 	private static readonly char[] floatingPointCharacters; 
 	private readonly IConvertible value; 
@@ -2114,7 +2173,7 @@ public sealed class ProxyNumber : Variant // TypeDefIndex: 11581
 
 }
 
-public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Variant>>, IEnumerable // TypeDefIndex: 11582
+public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Variant>>, IEnumerable // TypeDefIndex: 11610
 {
 	public const string TypeHintKey = "@type";
 	private readonly Dictionary<string, Variant> dict; 
@@ -2150,7 +2209,7 @@ public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Vari
 
 }
 
-public sealed class ProxyString : Variant // TypeDefIndex: 11583
+public sealed class ProxyString : Variant // TypeDefIndex: 11611
 {
 	private readonly string value; 
 
@@ -2161,7 +2220,7 @@ public sealed class ProxyString : Variant // TypeDefIndex: 11583
 
 }
 
-public class ConnectionLimiter // TypeDefIndex: 11641
+public class ConnectionLimiter // TypeDefIndex: 11669
 {
 	private readonly object _sync; 
 	private readonly Dictionary<IPAddress, int> _addressCounts; 
@@ -2180,7 +2239,7 @@ public class ConnectionLimiter // TypeDefIndex: 11641
 
 }
 
-private sealed class ConnectionLimiter.<>c // TypeDefIndex: 11642
+private sealed class ConnectionLimiter.<>c // TypeDefIndex: 11670
 {
 	public static readonly ConnectionLimiter.<>c <>9; 
 	public static Func<KeyValuePair<IPAddress, int>, int> <>9__7_0; 
@@ -2194,18 +2253,18 @@ private sealed class ConnectionLimiter.<>c // TypeDefIndex: 11642
 
 }
 
-public static class NetworkPacketEx // TypeDefIndex: 11699
+public static class NetworkPacketEx // TypeDefIndex: 11727
 {
 
 [ExtensionAttribute] 
-public static class NetworkPacketEx 
+public static class NetworkPacketEx
 
 	[ExtensionAttribute] 
 	public static BasePlayer Player(Message v) { }
 
 }
 
-public class Net : ConsoleSystem // TypeDefIndex: 11943
+public class Net : ConsoleSystem // TypeDefIndex: 11971
 {
 	[ServerVar] 
 	public static bool visdebug; 
@@ -2223,7 +2282,7 @@ public class Net : ConsoleSystem // TypeDefIndex: 11943
 
 }
 
-public class Netgraph : ConsoleSystem // TypeDefIndex: 11944
+public class Netgraph : ConsoleSystem // TypeDefIndex: 11972
 {
 	[ClientVar] 
 	public static bool enabled; 

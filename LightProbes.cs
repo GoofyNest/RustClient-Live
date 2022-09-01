@@ -3,7 +3,7 @@ public sealed class LightProbes : Object // TypeDefIndex: 3392
 
 [NativeAsStructAttribute] 
 [NativeHeaderAttribute] 
-public sealed class LightProbes : Object 
+public sealed class LightProbes : Object
 
 	[FreeFunctionAttribute] 
 	public static void GetInterpolatedProbe(Vector3 position, Renderer renderer, out SphericalHarmonicsL2 probe) { }

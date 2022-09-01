@@ -1,4 +1,4 @@
-internal sealed class MotionBlurRenderer : PostProcessEffectRenderer<MotionBlur> // TypeDefIndex: 11789
+internal sealed class MotionBlurRenderer : PostProcessEffectRenderer<MotionBlur> // TypeDefIndex: 11817
 {
 
 	public override DepthTextureMode GetCameraFlags() { }
@@ -9,7 +9,7 @@ internal sealed class MotionBlurRenderer : PostProcessEffectRenderer<MotionBlur>
 
 }
 
-private enum MotionBlurRenderer.Pass // TypeDefIndex: 11790
+private enum MotionBlurRenderer.Pass // TypeDefIndex: 11818
 {
 	public int value__; 
 	public const MotionBlurRenderer.Pass VelocitySetup = 0;

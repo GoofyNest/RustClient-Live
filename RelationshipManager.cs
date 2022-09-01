@@ -1,4 +1,4 @@
-public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6359
+public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6360
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6360
+public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6361
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -129,7 +129,7 @@ public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPoo
 
 }
 
-public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6361
+public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6362
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -191,8 +191,10 @@ public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled
 
 }
 
-public class RelationshipManager : BaseEntity // TypeDefIndex: 8628
+public class RelationshipManager : BaseEntity // TypeDefIndex: 8631
 {
+	[ReplicatedVar] 
+	public static bool contacts; 
 	private const int MugshotResolution = 256;
 	private const int MugshotMaxFileSize = 65536;
 	private const float MugshotMaxDistance = 50;
@@ -246,7 +248,7 @@ public class RelationshipManager : BaseEntity // TypeDefIndex: 8628
 
 }
 
-public enum RelationshipManager.RelationshipType // TypeDefIndex: 8629
+public enum RelationshipManager.RelationshipType // TypeDefIndex: 8632
 {
 	public int value__; 
 	public const RelationshipManager.RelationshipType NONE = 0;
@@ -256,7 +258,7 @@ public enum RelationshipManager.RelationshipType // TypeDefIndex: 8629
 
 }
 
-public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerFileReceiver // TypeDefIndex: 8630
+public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerFileReceiver // TypeDefIndex: 8633
 {
 	public string displayName; 
 	public ulong player; 
@@ -291,7 +293,7 @@ public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerF
 
 }
 
-public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIndex: 8631
+public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIndex: 8634
 {
 	public bool dirty; 
 	public ulong ownerPlayer; 
@@ -308,20 +310,20 @@ public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIn
 
 }
 
-private sealed class RelationshipManager.<>c // TypeDefIndex: 8632
+private sealed class RelationshipManager.<>c // TypeDefIndex: 8635
 {
 	public static readonly RelationshipManager.<>c <>9; 
-	public static Func<ulong, ulong> <>9__10_0; 
-	public static Func<RelationshipManager.PlayerRelationshipInfo, ulong> <>9__10_1; 
+	public static Func<ulong, ulong> <>9__11_0; 
+	public static Func<RelationshipManager.PlayerRelationshipInfo, ulong> <>9__11_1; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal ulong <CLIENT_RecieveLocalRelationships>b__10_0(ulong r) { }
+	internal ulong <CLIENT_RecieveLocalRelationships>b__11_0(ulong r) { }
 
-	internal ulong <CLIENT_RecieveLocalRelationships>b__10_1(RelationshipManager.PlayerRelationshipInfo r) { }
+	internal ulong <CLIENT_RecieveLocalRelationships>b__11_1(RelationshipManager.PlayerRelationshipInfo r) { }
 
 }
 

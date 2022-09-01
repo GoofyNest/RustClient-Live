@@ -1,4 +1,4 @@
-internal class Lexer // TypeDefIndex: 5783
+internal class Lexer // TypeDefIndex: 5784
 {
 	private static readonly bool[] token_chars; 
 	private static readonly int last_token_char; 

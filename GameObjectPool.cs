@@ -1,4 +1,4 @@
-private sealed class GameObjectPool.<>c<T> // TypeDefIndex: 6602
+private sealed class GameObjectPool.<>c<T> // TypeDefIndex: 6603
 {
 	public static readonly GameObjectPool.<>c<T> <>9; 
 	public static Func<Transform, T> <>9__2_0; 

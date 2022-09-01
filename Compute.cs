@@ -1,4 +1,4 @@
-public enum Compute_DistanceTransform_EventTypes // TypeDefIndex: 6850
+public enum Compute_DistanceTransform_EventTypes // TypeDefIndex: 6851
 {
 	public int value__; 
 	public const Compute_DistanceTransform_EventTypes Processing = 0;
@@ -6,7 +6,7 @@ public enum Compute_DistanceTransform_EventTypes // TypeDefIndex: 6850
 
 }
 
-public class Compute_DT_EventArgs // TypeDefIndex: 6852
+public class Compute_DT_EventArgs // TypeDefIndex: 6853
 {
 	public Compute_DistanceTransform_EventTypes EventType; 
 	public float ProgressPercentage; 

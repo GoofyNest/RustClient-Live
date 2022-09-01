@@ -1,7 +1,7 @@
 public sealed class ExceptionDispatchInfo // TypeDefIndex: 1265
 {
 
-public sealed class ExceptionDispatchInfo 
+public sealed class ExceptionDispatchInfo
 	private Exception m_Exception; 
 	private object m_stackTrace; 
 

@@ -1,4 +1,4 @@
-public struct Lobby // TypeDefIndex: 5554
+public struct Lobby // TypeDefIndex: 5555
 {
 	[CompilerGeneratedAttribute] 
 	private SteamId <Id>k__BackingField; 

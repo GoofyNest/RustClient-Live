@@ -1,4 +1,4 @@
-internal struct P2PSessionRequest_t : ICallbackData // TypeDefIndex: 5404
+internal struct P2PSessionRequest_t : ICallbackData // TypeDefIndex: 5405
 {
 	internal ulong SteamIDRemote; 
 	public static int _datasize; 

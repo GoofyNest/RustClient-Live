@@ -1,4 +1,4 @@
-public enum ObjectCreationHandling // TypeDefIndex: 5892
+public enum ObjectCreationHandling // TypeDefIndex: 5893
 {
 	public int value__; 
 	public const ObjectCreationHandling Auto = 0;

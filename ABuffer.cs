@@ -1,4 +1,4 @@
-public abstract class ABuffer // TypeDefIndex: 7382
+public abstract class ABuffer // TypeDefIndex: 7383
 {
 	internal const int OBUFFERSIZE = 2304;
 	internal const int MAXCHANNELS = 2;

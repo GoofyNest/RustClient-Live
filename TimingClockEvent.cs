@@ -1,4 +1,4 @@
-public sealed class TimingClockEvent : SystemRealTimeEvent // TypeDefIndex: 7571
+public sealed class TimingClockEvent : SystemRealTimeEvent // TypeDefIndex: 7572
 {
 
 	public void .ctor() { }

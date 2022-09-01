@@ -1,4 +1,4 @@
-public static class Pool // TypeDefIndex: 4835
+public static class Pool // TypeDefIndex: 4836
 {
 	public static Dictionary<Type, Pool.ICollection> directory; 
 
@@ -6,7 +6,7 @@ public static class Pool // TypeDefIndex: 4835
 	public static void FreeList<T>(ref List<T> obj) { }
 	/* GenericInstMethod :
 	|
-	|-Pool.FreeList<BaseEntity.ServerFileRequest>
+	|-Pool.FreeList<BaseEntity.PendingFileRequest>
 	|
 	|-Pool.FreeList<BaseEntity>
 	|-Pool.FreeList<BaseNetworkable>
@@ -506,6 +506,7 @@ public static class Pool // TypeDefIndex: 4835
 	|-Pool.Free<List<int>>
 	|-Pool.Free<Stopwatch>
 	|-Pool.Free<object>
+	|-Pool.Free<StringBuilder>
 	|-Pool.Free<WaitForSecondsRealtimeEx>
 	|-Pool.Free<WaterDynamics.InstanceBatch>
 	*/
@@ -891,6 +892,7 @@ public static class Pool // TypeDefIndex: 4835
 	|-Pool.Get<List<TriggerBase>>
 	|-Pool.Get<Stopwatch>
 	|-Pool.Get<MemoryStream>
+	|-Pool.Get<StringBuilder>
 	|-Pool.Get<WaitForSecondsRealtimeEx>
 	|-Pool.Get<WaterDynamics.InstanceBatch>
 	|-Pool.Get<object>
@@ -899,7 +901,7 @@ public static class Pool // TypeDefIndex: 4835
 	public static List<T> GetList<T>() { }
 	/* GenericInstMethod :
 	|
-	|-Pool.GetList<BaseEntity.ServerFileRequest>
+	|-Pool.GetList<BaseEntity.PendingFileRequest>
 	|
 	|-Pool.GetList<BaseEntity>
 	|-Pool.GetList<BaseNetworkable>
@@ -1132,7 +1134,7 @@ public static class Pool // TypeDefIndex: 4835
 
 }
 
-public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4838
+public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4839
 {
 	public T[] buffer; 
 	[CompilerGeneratedAttribute] 
@@ -1249,7 +1251,7 @@ public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4838
 
 }
 
-public class Pool : ConsoleSystem // TypeDefIndex: 11951
+public class Pool : ConsoleSystem // TypeDefIndex: 11979
 {
 	[ServerVar] 
 	[ClientVar] 
@@ -1299,7 +1301,7 @@ public class Pool : ConsoleSystem // TypeDefIndex: 11951
 
 }
 
-private sealed class Pool.<>c // TypeDefIndex: 11952
+private sealed class Pool.<>c // TypeDefIndex: 11980
 {
 	public static readonly Pool.<>c <>9; 
 	public static Func<KeyValuePair<Type, Pool.ICollection>, long> <>9__4_0; 

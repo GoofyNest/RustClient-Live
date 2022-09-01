@@ -1,4 +1,4 @@
-public class RustInput : RustControl // TypeDefIndex: 7021
+public class RustInput : RustControl // TypeDefIndex: 7022
 {
 	public TMP_InputField InputField; 
 	public Image Background; 
@@ -48,7 +48,7 @@ public class RustInput : RustControl // TypeDefIndex: 7021
 
 }
 
-public class RustInput.ChangedEvent : UnityEvent<string> // TypeDefIndex: 7022
+public class RustInput.ChangedEvent : UnityEvent<string> // TypeDefIndex: 7023
 {
 
 	public void .ctor() { }

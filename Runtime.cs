@@ -17,7 +17,7 @@ public static class Runtime // TypeDefIndex: 4
 
 }
 
-public static class Runtime // TypeDefIndex: 7162
+public static class Runtime // TypeDefIndex: 7163
 {
 	private static readonly NativeClient.CallbackProgress nogc_AntiCheatProgress; 
 	private static readonly NativeClient.CallbackFinished nogc_AntiCheatEvent; 
@@ -85,7 +85,7 @@ public static class Runtime // TypeDefIndex: 7162
 
 }
 
-private sealed class Runtime.<>c__DisplayClass19_0 // TypeDefIndex: 7163
+private sealed class Runtime.<>c__DisplayClass19_0 // TypeDefIndex: 7164
 {
 	public EventHandler<LoadCompletedEventArgs> onCompleted; 
 

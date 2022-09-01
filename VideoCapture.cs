@@ -25,14 +25,14 @@ public class VideoCapture : IDisposable // TypeDefIndex: 3616
 
 	public void Dispose() { }
 
-	[NativeMethodAttribute] 
 	[NativeConditionalAttribute] 
+	[NativeMethodAttribute] 
 	private void Dispose_Internal() { }
 
 	protected override void Finalize() { }
 
-	[ThreadAndSerializationSafeAttribute] 
 	[NativeConditionalAttribute] 
+	[ThreadAndSerializationSafeAttribute] 
 	[NativeMethodAttribute] 
 	private void DisposeThreaded_Internal() { }
 

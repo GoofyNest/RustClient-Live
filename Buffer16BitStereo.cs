@@ -1,7 +1,7 @@
-public class Buffer16BitStereo : ABuffer // TypeDefIndex: 7377
+public class Buffer16BitStereo : ABuffer // TypeDefIndex: 7378
 {
 
-public class Buffer16BitStereo : ABuffer 
+public class Buffer16BitStereo : ABuffer
 	internal bool DoubleMonoToStereo; 
 	private const int OUTPUT_CHANNELS = 2;
 	private readonly byte[] _Buffer; 

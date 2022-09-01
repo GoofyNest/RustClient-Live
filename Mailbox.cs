@@ -1,4 +1,4 @@
-public class Mailbox : StorageContainer // TypeDefIndex: 8408
+public class Mailbox : StorageContainer // TypeDefIndex: 8410
 {
 	private Option __menuOption_Full; 
 	public string ownerPanel; 
@@ -36,8 +36,6 @@ public class Mailbox : StorageContainer // TypeDefIndex: 8408
 	public override bool ShouldShowLootMenus() { }
 
 	public void TrySubmit() { }
-
-	public override int GetMoveToSlotIndex(BasePlayer player, Item item) { }
 
 	public void .ctor() { }
 

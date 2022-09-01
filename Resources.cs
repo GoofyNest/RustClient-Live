@@ -59,8 +59,8 @@ public sealed class Resources // TypeDefIndex: 3490
 	|-Resources.LoadAll<object>
 	*/
 
-	[FreeFunctionAttribute] 
 	[TypeInferenceRuleAttribute] 
+	[FreeFunctionAttribute] 
 	public static Object GetBuiltinResource(Type type, string path) { }
 
 	public static T GetBuiltinResource<T>(string path) { }

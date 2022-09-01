@@ -1,7 +1,7 @@
 public enum TouchPhase // TypeDefIndex: 4070
 {
 
-public enum TouchPhase 
+public enum TouchPhase
 	public int value__; 
 	public const TouchPhase Began = 0;
 	public const TouchPhase Moved = 1;

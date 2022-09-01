@@ -1,4 +1,4 @@
-public class SideObjectParams // TypeDefIndex: 7241
+public class SideObjectParams // TypeDefIndex: 7242
 {
 	public bool[] soActive; 
 	public float[] soDistanceSideWays; 

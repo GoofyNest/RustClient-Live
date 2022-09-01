@@ -1,4 +1,4 @@
-public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6331
+public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6332
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 633
 
 }
 
-public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 8311
+public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 8312
 {
 	private Option __menuOption_Menu_AssignToFriend; 
 	private Option __menuOption_Menu_MaxAuth; 
@@ -134,10 +134,6 @@ public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex
 	public void ClientTick() { }
 
 	private void UpdateSounds(bool didTurn) { }
-
-	public override int GetMoveToContainerIndex(BasePlayer player, Item item) { }
-
-	public override int GetMoveToSlotIndex(BasePlayer player, Item item) { }
 
 	[BaseEntity.RPC_Client] 
 	public void CLIENT_ReceiveAimDir(BaseEntity.RPCMessage rpc) { }
@@ -272,20 +268,20 @@ public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private bool <Menu_AssignToFriend>b__46_0(ulong id) { }
+	private bool <Menu_AssignToFriend>b__44_0(ulong id) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_AssignToFriend>b__46_1(ulong id, string steamName) { }
+	private void <Menu_AssignToFriend>b__44_1(ulong id, string steamName) { }
 
 }
 
-public static class AutoTurret.TurretFlags // TypeDefIndex: 8312
+public static class AutoTurret.TurretFlags // TypeDefIndex: 8313
 {
 	public const BaseEntity.Flags Peacekeeper = 128;
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass106_0 // TypeDefIndex: 8313
+private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 8314
 {
 	public ulong id; 
 
@@ -296,7 +292,7 @@ private sealed class AutoTurret.<>c__DisplayClass106_0 // TypeDefIndex: 8313
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass107_0 // TypeDefIndex: 8314
+private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 8315
 {
 	public BasePlayer player; 
 

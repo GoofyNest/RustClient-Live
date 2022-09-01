@@ -103,17 +103,17 @@ internal class ArgumentCache : ISerializationCallbackReceiver // TypeDefIndex: 3
 	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
 	private Object m_ObjectArgument; 
-	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
+	[SerializeField] 
 	private string m_ObjectArgumentAssemblyTypeName; 
-	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
+	[FormerlySerializedAsAttribute] 
 	private int m_IntArgument; 
-	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
+	[SerializeField] 
 	private float m_FloatArgument; 
-	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
+	[FormerlySerializedAsAttribute] 
 	private string m_StringArgument; 
 	[SerializeField] 
 	private bool m_BoolArgument; 
@@ -148,7 +148,7 @@ internal class ArgumentCache : ISerializationCallbackReceiver // TypeDefIndex: 3
 
 }
 
-public static class ArgEx // TypeDefIndex: 11691
+public static class ArgEx // TypeDefIndex: 11719
 {
 
 	[ExtensionAttribute] 

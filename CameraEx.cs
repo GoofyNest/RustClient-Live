@@ -1,4 +1,4 @@
-public static class CameraEx // TypeDefIndex: 5612
+public static class CameraEx // TypeDefIndex: 5613
 {
 
 	[ExtensionAttribute] 
@@ -9,7 +9,7 @@ public static class CameraEx // TypeDefIndex: 5612
 
 }
 
-public class CameraEx : MonoBehaviour // TypeDefIndex: 11198
+public class CameraEx : MonoBehaviour // TypeDefIndex: 11226
 {
 	public bool overrideAmbientLight; 
 	public AmbientMode ambientMode; 

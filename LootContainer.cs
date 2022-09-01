@@ -1,9 +1,9 @@
-public class LootContainer : StorageContainer // TypeDefIndex: 9589
+public class LootContainer : StorageContainer // TypeDefIndex: 9594
 {
 
-public interface ISplashable 
+public interface ISplashable
 
-public class LootContainer : StorageContainer 
+public class LootContainer : StorageContainer
 	public bool destroyOnEmpty; 
 	public LootSpawn lootDefinition; 
 	public int maxDefinitionsToSpawn; 
@@ -36,7 +36,7 @@ public class LootContainer : StorageContainer
 
 }
 
-public enum LootContainer.spawnType // TypeDefIndex: 9590
+public enum LootContainer.spawnType // TypeDefIndex: 9595
 {
 	public int value__; 
 	public const LootContainer.spawnType GENERIC = 0;
@@ -48,7 +48,7 @@ public enum LootContainer.spawnType // TypeDefIndex: 9590
 
 }
 
-public struct LootContainer.LootSpawnSlot // TypeDefIndex: 9591
+public struct LootContainer.LootSpawnSlot // TypeDefIndex: 9596
 {
 	public LootSpawn definition; 
 	public int numberToSpawn; 

@@ -1,4 +1,4 @@
-public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement // TypeDefIndex: 4946
+public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement // TypeDefIndex: 4947
 {
 	protected TouchScreenKeyboard m_Keyboard; 
 	private static readonly char[] kSeparators; 
@@ -452,7 +452,7 @@ public class InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandle
 
 }
 
-public enum InputField.ContentType // TypeDefIndex: 4947
+public enum InputField.ContentType // TypeDefIndex: 4948
 {
 	public int value__; 
 	public const InputField.ContentType Standard = 0;
@@ -468,7 +468,7 @@ public enum InputField.ContentType // TypeDefIndex: 4947
 
 }
 
-public enum InputField.InputType // TypeDefIndex: 4948
+public enum InputField.InputType // TypeDefIndex: 4949
 {
 	public int value__; 
 	public const InputField.InputType Standard = 0;
@@ -477,7 +477,7 @@ public enum InputField.InputType // TypeDefIndex: 4948
 
 }
 
-public enum InputField.CharacterValidation // TypeDefIndex: 4949
+public enum InputField.CharacterValidation // TypeDefIndex: 4950
 {
 	public int value__; 
 	public const InputField.CharacterValidation None = 0;
@@ -489,7 +489,7 @@ public enum InputField.CharacterValidation // TypeDefIndex: 4949
 
 }
 
-public enum InputField.LineType // TypeDefIndex: 4950
+public enum InputField.LineType // TypeDefIndex: 4951
 {
 	public int value__; 
 	public const InputField.LineType SingleLine = 0;
@@ -498,7 +498,7 @@ public enum InputField.LineType // TypeDefIndex: 4950
 
 }
 
-public sealed class InputField.OnValidateInput : MulticastDelegate // TypeDefIndex: 4951
+public sealed class InputField.OnValidateInput : MulticastDelegate // TypeDefIndex: 4952
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -511,21 +511,21 @@ public sealed class InputField.OnValidateInput : MulticastDelegate // TypeDefInd
 
 }
 
-public class InputField.SubmitEvent : UnityEvent<string> // TypeDefIndex: 4952
+public class InputField.SubmitEvent : UnityEvent<string> // TypeDefIndex: 4953
 {
 
 	public void .ctor() { }
 
 }
 
-public class InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 4953
+public class InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 4954
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class InputField.<CaretBlink>d__159 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4955
+private sealed class InputField.<CaretBlink>d__159 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4956
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -554,7 +554,7 @@ private sealed class InputField.<CaretBlink>d__159 : IEnumerator<object>, IEnume
 
 }
 
-private sealed class InputField.<MouseDragOutsideRect>d__179 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4956
+private sealed class InputField.<MouseDragOutsideRect>d__179 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4957
 {
 	private int <>1__state; 
 	private object <>2__current; 

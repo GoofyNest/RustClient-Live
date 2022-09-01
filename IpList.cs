@@ -1,4 +1,4 @@
-public class IpList : Internet // TypeDefIndex: 5289
+public class IpList : Internet // TypeDefIndex: 5290
 {
 	public List<string> Ips; 
 	private bool wantsCancel; 
@@ -13,7 +13,7 @@ public class IpList : Internet // TypeDefIndex: 5289
 
 }
 
-private struct IpList.<RunQueryAsync>d__4 : IAsyncStateMachine // TypeDefIndex: 5290
+private struct IpList.<RunQueryAsync>d__4 : IAsyncStateMachine // TypeDefIndex: 5291
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<bool> <>t__builder; 

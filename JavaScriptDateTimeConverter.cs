@@ -1,4 +1,4 @@
-public class JavaScriptDateTimeConverter : DateTimeConverterBase // TypeDefIndex: 6110
+public class JavaScriptDateTimeConverter : DateTimeConverterBase // TypeDefIndex: 6111
 {
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }

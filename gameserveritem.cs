@@ -1,4 +1,4 @@
-internal struct gameserveritem_t // TypeDefIndex: 5504
+internal struct gameserveritem_t // TypeDefIndex: 5505
 {
 	internal servernetadr_t NetAdr; 
 	internal int Ping; 

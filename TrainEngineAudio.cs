@@ -1,4 +1,4 @@
-public class TrainEngineAudio : MonoBehaviour // TypeDefIndex: 9771
+public class TrainEngineAudio : TrainCarAudio // TypeDefIndex: 9776
 {
 	[SerializeField] 
 	private TrainEngine trainEngine; 
@@ -45,30 +45,6 @@ public class TrainEngineAudio : MonoBehaviour // TypeDefIndex: 9771
 	private SoundDefinition proximityAlertDef; 
 	private Sound proximityAlertSound; 
 	[SerializeField] 
-	private SoundDefinition movementStartDef; 
-	[SerializeField] 
-	private SoundDefinition movementStopDef; 
-	[SerializeField] 
-	private SoundDefinition movementLoopDef; 
-	[SerializeField] 
-	private AnimationCurve movementLoopGainCurve; 
-	[SerializeField] 
-	private float movementChangeOneshotDebounce; 
-	private Sound movementLoop; 
-	private SoundModulation.Modulator movementLoopGain; 
-	[SerializeField] 
-	private SoundDefinition turnLoopDef; 
-	private Sound turnLoop; 
-	[SerializeField] 
-	private SoundDefinition trackClatterLoopDef; 
-	[SerializeField] 
-	private AnimationCurve trackClatterGainCurve; 
-	[SerializeField] 
-	private AnimationCurve trackClatterPitchCurve; 
-	private Sound trackClatterLoop; 
-	private SoundModulation.Modulator trackClatterGain; 
-	private SoundModulation.Modulator trackClatterPitch; 
-	[SerializeField] 
 	private SoundDefinition damagedLoopDef; 
 	private Sound damagedLoop; 
 	[SerializeField] 
@@ -82,13 +58,12 @@ public class TrainEngineAudio : MonoBehaviour // TypeDefIndex: 9771
 	[SerializeField] 
 	private SoundPlayer brakeSound; 
 	private Nullable<VehicleEngineController.EngineState<TrainEngine>> engineState; 
-	private float lastMovementChangeOneshot; 
 	private Sound activeHorn; 
 
 
-	public void UpdateTick() { }
+	public override void UpdateTick() { }
 
-	public void StopAll() { }
+	public override void StopAll() { }
 
 	public void PlayDamageSounds() { }
 
@@ -110,10 +85,6 @@ public class TrainEngineAudio : MonoBehaviour // TypeDefIndex: 9771
 
 	public void SetHornState(bool on) { }
 
-	private void StopMovementLoops() { }
-
-	private void StopTurnLoops() { }
-
 	private void StopEngineSounds(bool withinEngineSoundDist) { }
 
 	private void StartEngineSounds(bool withinEngineSoundDist) { }
@@ -122,7 +93,7 @@ public class TrainEngineAudio : MonoBehaviour // TypeDefIndex: 9771
 
 }
 
-public class TrainEngineAudio.EngineReflection // TypeDefIndex: 9772
+public class TrainEngineAudio.EngineReflection // TypeDefIndex: 9777
 {
 	public Vector3 direction; 
 	public Vector3 offset; 

@@ -1,4 +1,4 @@
-internal enum UserUGCList // TypeDefIndex: 5160
+internal enum UserUGCList // TypeDefIndex: 5161
 {
 	public int value__; 
 	public const UserUGCList Published = 0;

@@ -4,7 +4,7 @@ public sealed class Cloth : Component // TypeDefIndex: 4516
 [RequireComponent] 
 [NativeHeaderAttribute] 
 [NativeClassAttribute] 
-public sealed class Cloth : Component 
+public sealed class Cloth : Component
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private float <useContinuousCollision>k__BackingField; 

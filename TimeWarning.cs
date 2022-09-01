@@ -1,4 +1,4 @@
-public sealed class TimeWarning : IDisposable // TypeDefIndex: 5595
+public sealed class TimeWarning : IDisposable // TypeDefIndex: 5596
 {
 
 	private void .ctor() { }

@@ -1,4 +1,4 @@
-internal struct LoadGoLispHandlers // TypeDefIndex: 7708
+internal struct LoadGoLispHandlers // TypeDefIndex: 7709
 {
 	[CompilerGeneratedAttribute] 
 	private string <GameId>k__BackingField; 

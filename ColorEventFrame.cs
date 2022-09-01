@@ -1,4 +1,4 @@
-internal struct ColorEventFrame // TypeDefIndex: 7702
+internal struct ColorEventFrame // TypeDefIndex: 7703
 {
 	[CompilerGeneratedAttribute] 
 	private ColorData <Color>k__BackingField; 

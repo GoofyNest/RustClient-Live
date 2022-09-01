@@ -2,7 +2,7 @@ public enum VideoRenderMode // TypeDefIndex: 4776
 {
 
 [RequiredByNativeCodeAttribute] 
-public enum VideoRenderMode 
+public enum VideoRenderMode
 	public int value__; 
 	public const VideoRenderMode CameraFarPlane = 0;
 	public const VideoRenderMode CameraNearPlane = 1;

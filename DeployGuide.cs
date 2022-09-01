@@ -1,7 +1,7 @@
-public class DeployGuide : BaseMonoBehaviour // TypeDefIndex: 9789
+public class DeployGuide : BaseMonoBehaviour // TypeDefIndex: 9794
 {
 
-public class DeployGuide : BaseMonoBehaviour 
+public class DeployGuide : BaseMonoBehaviour
 	public static DeployGuide current; 
 	private bool hidden; 
 	public bool isGoodPlacement; 

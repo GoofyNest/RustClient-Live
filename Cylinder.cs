@@ -1,4 +1,4 @@
-public struct Cylinder // TypeDefIndex: 6587
+public struct Cylinder // TypeDefIndex: 6588
 {
 	public Vector3 position; 
 	public float radius; 

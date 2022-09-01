@@ -1,4 +1,4 @@
-public class DiagnosticsTraceWriter : ITraceWriter // TypeDefIndex: 5974
+public class DiagnosticsTraceWriter : ITraceWriter // TypeDefIndex: 5975
 {
 	[CompilerGeneratedAttribute] 
 	private TraceLevel <LevelFilter>k__BackingField; 

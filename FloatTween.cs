@@ -1,4 +1,4 @@
-internal struct FloatTween : ITweenValue // TypeDefIndex: 5042
+internal struct FloatTween : ITweenValue // TypeDefIndex: 5043
 {
 	private FloatTween.FloatTweenCallback m_Target; 
 	private float m_StartValue; 
@@ -40,14 +40,14 @@ internal struct FloatTween : ITweenValue // TypeDefIndex: 5042
 
 }
 
-public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 5043
+public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 5044
 {
 
 	public void .ctor() { }
 
 }
 
-internal struct FloatTween : ITweenValue // TypeDefIndex: 6753
+internal struct FloatTween : ITweenValue // TypeDefIndex: 6754
 {
 	private FloatTween.FloatTweenCallback m_Target; 
 	private float m_StartValue; 
@@ -89,7 +89,7 @@ internal struct FloatTween : ITweenValue // TypeDefIndex: 6753
 
 }
 
-public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 6754
+public class FloatTween.FloatTweenCallback : UnityEvent<float> // TypeDefIndex: 6755
 {
 
 	public void .ctor() { }

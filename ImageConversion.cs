@@ -3,7 +3,7 @@ public static class ImageConversion // TypeDefIndex: 4068
 
 [NativeHeaderAttribute] 
 [ExtensionAttribute] 
-public static class ImageConversion 
+public static class ImageConversion
 
 	[ExtensionAttribute] 
 	[NativeMethodAttribute] 

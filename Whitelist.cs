@@ -1,4 +1,4 @@
-public class Whitelist : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6308
+public class Whitelist : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

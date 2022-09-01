@@ -1,4 +1,4 @@
-public class TriggeredEvent : MonoBehaviour // TypeDefIndex: 9817
+public class TriggeredEvent : MonoBehaviour // TypeDefIndex: 9822
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class WaypointSet : MonoBehaviour, IServerComponent // TypeDefIndex: 12136
+public class WaypointSet : MonoBehaviour, IServerComponent // TypeDefIndex: 12164
 {
 	[SerializeField] 
 	private List<WaypointSet.Waypoint> _points; 
@@ -21,7 +21,7 @@ public class WaypointSet : MonoBehaviour, IServerComponent // TypeDefIndex: 1213
 
 }
 
-public enum WaypointSet.NavModes // TypeDefIndex: 12137
+public enum WaypointSet.NavModes // TypeDefIndex: 12165
 {
 	public int value__; 
 	public const WaypointSet.NavModes Loop = 0;
@@ -29,7 +29,7 @@ public enum WaypointSet.NavModes // TypeDefIndex: 12137
 
 }
 
-public struct WaypointSet.Waypoint // TypeDefIndex: 12138
+public struct WaypointSet.Waypoint // TypeDefIndex: 12166
 {
 	public Transform Transform; 
 	public float WaitTime; 

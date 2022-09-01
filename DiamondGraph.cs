@@ -1,4 +1,4 @@
-public class DiamondGraph : UIPrimitiveBase // TypeDefIndex: 11711
+public class DiamondGraph : UIPrimitiveBase // TypeDefIndex: 11739
 {
 	[SerializeField] 
 	private float m_a; 

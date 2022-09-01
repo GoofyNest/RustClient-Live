@@ -1,4 +1,4 @@
-public class TriangleER // TypeDefIndex: 6876
+public class TriangleER // TypeDefIndex: 6877
 {
 	public PointER Vertex1; 
 	public PointER Vertex2; 

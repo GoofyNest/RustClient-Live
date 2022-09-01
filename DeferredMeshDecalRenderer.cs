@@ -1,4 +1,4 @@
-public class DeferredMeshDecalRenderer : MonoBehaviour // TypeDefIndex: 10669
+public class DeferredMeshDecalRenderer : MonoBehaviour // TypeDefIndex: 10680
 {
 	private Camera targetCamera; 
 	private const string commandBufferName = "DeferredMeshDecals";

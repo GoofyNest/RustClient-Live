@@ -1,4 +1,4 @@
-internal struct PartyBeaconID_t : IEquatable<PartyBeaconID_t>, IComparable<PartyBeaconID_t> // TypeDefIndex: 5520
+internal struct PartyBeaconID_t : IEquatable<PartyBeaconID_t>, IComparable<PartyBeaconID_t> // TypeDefIndex: 5521
 {
 	public ulong Value; 
 

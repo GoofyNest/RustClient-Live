@@ -1,4 +1,4 @@
-public struct IntegrityDescriptor // TypeDefIndex: 7143
+public struct IntegrityDescriptor // TypeDefIndex: 7144
 {
 	[CompilerGeneratedAttribute] 
 	private bool <Violated>k__BackingField; 

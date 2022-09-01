@@ -1,10 +1,10 @@
 public class SoapAttribute : Attribute // TypeDefIndex: 1210
 {
 
-internal class RemoteActivator : MarshalByRefObject 
+internal class RemoteActivator : MarshalByRefObject
 
 [ComVisibleAttribute] 
-public class SoapAttribute : Attribute 
+public class SoapAttribute : Attribute
 	private bool _useAttribute; 
 	protected string ProtXmlNamespace; 
 	protected object ReflectInfo; 

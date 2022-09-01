@@ -1,4 +1,4 @@
-public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11069
+public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11094
 {
 	public PlayerLifeStory life; 
 	public GameObject container; 
@@ -11,7 +11,6 @@ public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11069
 	public GameObject DistanceDivider; 
 	public Image WeaponImage; 
 	public LifeInfographic.DamageSetting[] DamageDisplays; 
-	public BaseEntity[] NpcDeathInfo; 
 	public bool ShowDebugData; 
 	private int triggerParam; 
 	private int closeState; 
@@ -48,7 +47,7 @@ public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11069
 
 }
 
-public struct LifeInfographic.DamageSetting // TypeDefIndex: 11070
+public struct LifeInfographic.DamageSetting // TypeDefIndex: 11095
 {
 	public DamageType ForType; 
 	public string Display; 
@@ -56,7 +55,7 @@ public struct LifeInfographic.DamageSetting // TypeDefIndex: 11070
 
 }
 
-private sealed class LifeInfographic.<Animate>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11071
+private sealed class LifeInfographic.<Animate>d__25 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11096
 {
 	private int <>1__state; 
 	private object <>2__current; 

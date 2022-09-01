@@ -4,7 +4,7 @@ public sealed class GameObject : Object // TypeDefIndex: 3515
 [UsedByNativeCodeAttribute] 
 [ExcludeFromPresetAttribute] 
 [NativeHeaderAttribute] 
-public sealed class GameObject : Object 
+public sealed class GameObject : Object
 	public Transform transform { get; }
 	public int layer { get; set; }
 	public bool activeSelf { get; }
@@ -29,6 +29,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponent<BaseMelee>
 	|-GameObject.GetComponent<BaseMeshPaintable>
 	|-GameObject.GetComponent<BaseMovement>
+	|-GameObject.GetComponent<BaseOven>
 	|-GameObject.GetComponent<BaseProjectile>
 	|-GameObject.GetComponent<BaseViewModel>
 	|-GameObject.GetComponent<BlueprintButton>
@@ -87,6 +88,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponent<IronSightOverride>
 	|-GameObject.GetComponent<ItemBlueprint>
 	|-GameObject.GetComponent<ItemDefinition>
+	|-GameObject.GetComponent<ItemIcon>
 	|-GameObject.GetComponent<ItemOptionButton>
 	|-GameObject.GetComponent<ItemPickupNotice>
 	|-GameObject.GetComponent<ItemStoreCartItem>
@@ -144,6 +146,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponent<ServerHistoryItem>
 	|-GameObject.GetComponent<ServerProjectile>
 	|-GameObject.GetComponent<SetupAppNotification>
+	|-GameObject.GetComponent<SleepingBag>
 	|-GameObject.GetComponent<SlotMachinePayoutWidget>
 	|-GameObject.GetComponent<Sound>
 	|-GameObject.GetComponent<SoundLightDialog>
@@ -360,6 +363,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponentsInChildren<ERSideObjectInstance>
 	|-GameObject.GetComponentsInChildren<ERSideObjectSection>
 	|-GameObject.GetComponentsInChildren<EffectRecycle>
+	|-GameObject.GetComponentsInChildren<LootPanel>
 	|-GameObject.GetComponentsInChildren<MeshFilter>
 	|-GameObject.GetComponentsInChildren<ParticleSystem>
 	|-GameObject.GetComponentsInChildren<Renderer>
@@ -400,6 +404,7 @@ public sealed class GameObject : Object
 	public bool TryGetComponent<T>(out T component) { }
 	/* GenericInstMethod :
 	|
+	|-GameObject.TryGetComponent<BaseEntity>
 	|-GameObject.TryGetComponent<ICustomMaterialReplacer>
 	|-GameObject.TryGetComponent<INotifyEntityTrigger>
 	|-GameObject.TryGetComponent<INotifyTrigger>

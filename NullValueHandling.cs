@@ -1,4 +1,4 @@
-public enum NullValueHandling // TypeDefIndex: 5908
+public enum NullValueHandling // TypeDefIndex: 5909
 {
 	public int value__; 
 	public const NullValueHandling Include = 0;

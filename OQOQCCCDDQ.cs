@@ -1,4 +1,4 @@
-public class OQOQCCCDDQ : MonoBehaviour // TypeDefIndex: 7270
+public class OQOQCCCDDQ : MonoBehaviour // TypeDefIndex: 7271
 {
 
 	public static void OQDCOQDQDO(ERCrossings scr, ref List<Vector3> meshVecs, ref List<Vector2> meshUVs, ref List<List<int>> triList, ref List<Material> materialList) { }

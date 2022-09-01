@@ -1,7 +1,7 @@
 internal class DigestHeaderParser // TypeDefIndex: 2992
 {
 
-internal class DigestHeaderParser 
+internal class DigestHeaderParser
 	private string header; 
 	private int length; 
 	private int pos; 

@@ -1,4 +1,4 @@
-public class SoundFollowCollider : MonoBehaviour, IClientComponent // TypeDefIndex: 9031
+public class SoundFollowCollider : MonoBehaviour, IClientComponent // TypeDefIndex: 9034
 {
 	public SoundDefinition soundDefinition; 
 	public Sound sound; 

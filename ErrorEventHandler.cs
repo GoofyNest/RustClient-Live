@@ -1,7 +1,7 @@
 public sealed class ErrorEventHandler : MulticastDelegate // TypeDefIndex: 2843
 {
 
-public sealed class ErrorEventHandler : MulticastDelegate 
+public sealed class ErrorEventHandler : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

@@ -1,7 +1,7 @@
 internal sealed class BaselineFunction : MulticastDelegate // TypeDefIndex: 4575
 {
 
-internal sealed class BaselineFunction : MulticastDelegate 
+internal sealed class BaselineFunction : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

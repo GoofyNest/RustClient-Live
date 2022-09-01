@@ -1,4 +1,4 @@
-public sealed class StateChangedEventArgs : EventArgs // TypeDefIndex: 7145
+public sealed class StateChangedEventArgs : EventArgs // TypeDefIndex: 7146
 {
 	[CompilerGeneratedAttribute] 
 	private string <Message>k__BackingField; 

@@ -1,4 +1,4 @@
-public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 8399
+public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 8401
 {
 	private Option __menuOption_MenuDesignAI; 
 	[HeaderAttribute] 
@@ -9,10 +9,10 @@ public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 8399
 	public float aimConeScale; 
 	public float lastDismountTime; 
 	[CompilerGeneratedAttribute] 
-	private BaseAIBrain<HumanNPC> <Brain>k__BackingField; 
+	private ScientistBrain <Brain>k__BackingField; 
 
 	public override bool HasMenuOptions { get; }
-	public BaseAIBrain<HumanNPC> Brain { get; set; }
+	public ScientistBrain Brain { get; set; }
 
 
 	public override void GetMenuOptions(List<Option> list) { }
@@ -26,10 +26,10 @@ public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 8399
 	public override float MaxHealth() { }
 
 	[CompilerGeneratedAttribute] 
-	public BaseAIBrain<HumanNPC> get_Brain() { }
+	public ScientistBrain get_Brain() { }
 
 	[CompilerGeneratedAttribute] 
-	private void set_Brain(BaseAIBrain<HumanNPC> value) { }
+	private void set_Brain(ScientistBrain value) { }
 
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.Description] 

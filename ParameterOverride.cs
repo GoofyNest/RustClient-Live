@@ -1,4 +1,4 @@
-public abstract class ParameterOverride // TypeDefIndex: 11820
+public abstract class ParameterOverride // TypeDefIndex: 11848
 {
 	public bool overrideState; 
 

@@ -1,4 +1,4 @@
-internal struct GSClientGroupStatus_t : ICallbackData // TypeDefIndex: 5496
+internal struct GSClientGroupStatus_t : ICallbackData // TypeDefIndex: 5497
 {
 	internal ulong SteamIDUser; 
 	internal ulong SteamIDGroup; 

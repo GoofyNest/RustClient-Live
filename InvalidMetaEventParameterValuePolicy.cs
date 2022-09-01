@@ -1,4 +1,4 @@
-public enum InvalidMetaEventParameterValuePolicy // TypeDefIndex: 7595
+public enum InvalidMetaEventParameterValuePolicy // TypeDefIndex: 7596
 {
 	public int value__; 
 	public const InvalidMetaEventParameterValuePolicy Abort = 0;

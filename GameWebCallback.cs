@@ -1,4 +1,4 @@
-internal struct GameWebCallback_t : ICallbackData // TypeDefIndex: 5303
+internal struct GameWebCallback_t : ICallbackData // TypeDefIndex: 5304
 {
 	internal byte[] URL; 
 	public static int _datasize; 

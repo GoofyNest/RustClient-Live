@@ -1,4 +1,4 @@
-public class ProceduralLift : BaseEntity // TypeDefIndex: 8432
+public class ProceduralLift : BaseEntity // TypeDefIndex: 8434
 {
 	private Option __menuOption_Menu_UseLift; 
 	public float movementSpeed; 
@@ -8,6 +8,10 @@ public class ProceduralLift : BaseEntity // TypeDefIndex: 8432
 	public GameObjectRef triggerPrefab; 
 	public string triggerBone; 
 	private int floorIndex; 
+	public SoundDefinition startSoundDef; 
+	public SoundDefinition stopSoundDef; 
+	public SoundDefinition movementLoopSoundDef; 
+	private Sound movementLoopSound; 
 
 	public override bool HasMenuOptions { get; }
 
@@ -39,6 +43,10 @@ public class ProceduralLift : BaseEntity // TypeDefIndex: 8432
 	private void OnFinishedMoving() { }
 
 	protected void Update() { }
+
+	public void StartMovementSounds() { }
+
+	public void StopMovementSounds() { }
 
 	public void .ctor() { }
 

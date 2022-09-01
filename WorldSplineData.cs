@@ -1,4 +1,4 @@
-public class WorldSplineData // TypeDefIndex: 11408
+public class WorldSplineData // TypeDefIndex: 11436
 {
 	public Vector3[] inputPoints; 
 	public Vector3[] inputTangents; 
@@ -23,8 +23,6 @@ public class WorldSplineData // TypeDefIndex: 11408
 
 	public Vector3 GetEndTangent() { }
 
-	public virtual Vector3 GetTangent(float distance) { }
-
 	public Vector3 GetPointCubicHermite(float distance) { }
 
 	public Vector3 GetTangentCubicHermite(float distance) { }
@@ -33,13 +31,15 @@ public class WorldSplineData // TypeDefIndex: 11408
 
 	public void SetDefaultTangents(WorldSpline worldSpline) { }
 
+	public bool DetectSplineProblems(WorldSpline worldSpline) { }
+
 	private void CreateLookupTable(WorldSpline worldSpline) { }
 
 	private void AddEntry(float distance, Vector3 pos) { }
 
 }
 
-public class WorldSplineData.LUTEntry // TypeDefIndex: 11409
+public class WorldSplineData.LUTEntry // TypeDefIndex: 11437
 {
 	public List<WorldSplineData.LUTEntry.LUTPoint> points; 
 
@@ -48,7 +48,7 @@ public class WorldSplineData.LUTEntry // TypeDefIndex: 11409
 
 }
 
-public struct WorldSplineData.LUTEntry.LUTPoint // TypeDefIndex: 11410
+public struct WorldSplineData.LUTEntry.LUTPoint // TypeDefIndex: 11438
 {
 	public float distance; 
 	public Vector3 pos; 

@@ -1,4 +1,4 @@
-internal class Grid.Node<T> // TypeDefIndex: 4830
+internal class Grid.Node<T> // TypeDefIndex: 4831
 {
 	public HashSet<T> Contents; 
 

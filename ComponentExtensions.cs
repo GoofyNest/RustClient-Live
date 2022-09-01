@@ -1,4 +1,4 @@
-public static class ComponentExtensions // TypeDefIndex: 6223
+public static class ComponentExtensions // TypeDefIndex: 6224
 {
 
 	[ExtensionAttribute] 
@@ -21,6 +21,7 @@ public static class ComponentExtensions // TypeDefIndex: 6223
 	public static void SetActive<T>(T obj, bool active) { }
 	/* GenericInstMethod :
 	|
+	|-ComponentExtensions.SetActive<MapView>
 	|-ComponentExtensions.SetActive<HttpImage>
 	|-ComponentExtensions.SetActive<RustImageButton>
 	|-ComponentExtensions.SetActive<RustLayout>

@@ -1,4 +1,4 @@
-public class HttpImage : MonoBehaviour // TypeDefIndex: 7044
+public class HttpImage : MonoBehaviour // TypeDefIndex: 7045
 {
 	public static Dictionary<string, UnityWebRequest> RequestCache; 
 	public static Dictionary<string, ValueTuple<Texture2D, Sprite>> TextureCache; 
@@ -9,7 +9,7 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7044
 	private Sprite loadingSprite; 
 	private Sprite missingSprite; 
 	public string Url; 
-	public bool PreserveAspectHeight; 
+	public bool AutosizeHeight; 
 	public bool GenerateMipmaps; 
 	public float MaxWidth; 
 	public float MaxHeight; 
@@ -47,7 +47,7 @@ public class HttpImage : MonoBehaviour // TypeDefIndex: 7044
 
 }
 
-private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7045
+private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7046
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -77,7 +77,7 @@ private sealed class HttpImage.<WaitForLoad>d__17 : IEnumerator<object>, IEnumer
 
 }
 
-private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7046
+private sealed class HttpImage.<StartAndWaitForLoad>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7047
 {
 	private int <>1__state; 
 	private object <>2__current; 

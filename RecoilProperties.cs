@@ -1,4 +1,4 @@
-public class RecoilProperties : ScriptableObject // TypeDefIndex: 10755
+public class RecoilProperties : ScriptableObject // TypeDefIndex: 10766
 {
 	public float recoilYawMin; 
 	public float recoilYawMax; 

@@ -1,7 +1,7 @@
 public abstract class FieldBuilder : FieldInfo // TypeDefIndex: 604
 {
 
-public abstract class FieldBuilder : FieldInfo 
+public abstract class FieldBuilder : FieldInfo
 	public override FieldAttributes Attributes { get; }
 	public override Type DeclaringType { get; }
 	public override Type FieldType { get; }

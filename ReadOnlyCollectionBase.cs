@@ -3,7 +3,7 @@ public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable // TypeD
 
 [ComVisibleAttribute] 
 [Serializable]
-public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable 
+public abstract class ReadOnlyCollectionBase : ICollection, IEnumerable
 	private ArrayList list; 
 
 	protected ArrayList InnerList { get; }

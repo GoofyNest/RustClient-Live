@@ -1,7 +1,7 @@
 internal static class ContractUtils // TypeDefIndex: 3252
 {
 
-internal static class ContractUtils 
+internal static class ContractUtils
 	[ExcludeFromCodeCoverageAttribute] 
 	public static Exception Unreachable { get; }
 

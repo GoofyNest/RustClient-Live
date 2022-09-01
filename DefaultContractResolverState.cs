@@ -1,4 +1,4 @@
-internal class DefaultContractResolverState // TypeDefIndex: 5990
+internal class DefaultContractResolverState // TypeDefIndex: 5991
 {
 	public Dictionary<ResolverContractKey, JsonContract> ContractCache; 
 	public PropertyNameTable NameTable; 

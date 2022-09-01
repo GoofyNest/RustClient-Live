@@ -1,4 +1,4 @@
-public sealed class ActiveSensingEvent : SystemRealTimeEvent // TypeDefIndex: 7566
+public sealed class ActiveSensingEvent : SystemRealTimeEvent // TypeDefIndex: 7567
 {
 
 	public void .ctor() { }

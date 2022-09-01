@@ -1,4 +1,4 @@
-public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
+public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6306
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
 
 }
 
-public class KeyLock : BaseLock // TypeDefIndex: 8401
+public class KeyLock : BaseLock // TypeDefIndex: 8403
 {
 	private Option __menuOption_Menu_CreateKey; 
 	private Option __menuOption_Menu_Lock; 

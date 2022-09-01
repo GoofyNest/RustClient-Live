@@ -1,4 +1,4 @@
-public class CustomDoorManipulator : DoorManipulator // TypeDefIndex: 8376
+public class CustomDoorManipulator : DoorManipulator // TypeDefIndex: 8378
 {
 	private Option __menuOption_Menu_Pair; 
 	private Option __menuOption_Menu_SetClose; 

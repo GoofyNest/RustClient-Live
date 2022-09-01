@@ -1,4 +1,4 @@
-public enum LogLevel // TypeDefIndex: 6903
+public enum LogLevel // TypeDefIndex: 6904
 {
 	public int value__; 
 	public const LogLevel Debug = 0;

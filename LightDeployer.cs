@@ -1,4 +1,4 @@
-public class LightDeployer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6374
+public class LightDeployer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6375
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

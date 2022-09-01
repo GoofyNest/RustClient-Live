@@ -1,4 +1,4 @@
-public enum LoadResult // TypeDefIndex: 7144
+public enum LoadResult // TypeDefIndex: 7145
 {
 	public int value__; 
 	public const LoadResult InitSuccess = 0;

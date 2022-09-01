@@ -1,4 +1,4 @@
-public class GrowableGeneProperties : ScriptableObject // TypeDefIndex: 9542
+public class GrowableGeneProperties : ScriptableObject // TypeDefIndex: 9546
 {
 	[ArrayIndexIsEnum] 
 	public GrowableGeneProperties.GeneWeight[] Weights; 
@@ -8,7 +8,7 @@ public class GrowableGeneProperties : ScriptableObject // TypeDefIndex: 9542
 
 }
 
-public struct GrowableGeneProperties.GeneWeight // TypeDefIndex: 9543
+public struct GrowableGeneProperties.GeneWeight // TypeDefIndex: 9547
 {
 	public float BaseWeight; 
 	public float[] SlotWeights; 

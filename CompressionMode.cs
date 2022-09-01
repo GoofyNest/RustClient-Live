@@ -6,7 +6,7 @@ public enum CompressionMode // TypeDefIndex: 2860
 
 }
 
-public enum CompressionMode // TypeDefIndex: 6957
+public enum CompressionMode // TypeDefIndex: 6958
 {
 	public int value__; 
 	public const CompressionMode Compress = 0;

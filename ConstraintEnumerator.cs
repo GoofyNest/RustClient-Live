@@ -1,7 +1,7 @@
 internal class ConstraintEnumerator // TypeDefIndex: 4177
 {
 
-internal class ConstraintEnumerator 
+internal class ConstraintEnumerator
 	private IEnumerator _tables; 
 	private IEnumerator _constraints; 
 	private Constraint _currentObject; 

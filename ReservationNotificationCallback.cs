@@ -1,4 +1,4 @@
-internal struct ReservationNotificationCallback_t : ICallbackData // TypeDefIndex: 5357
+internal struct ReservationNotificationCallback_t : ICallbackData // TypeDefIndex: 5358
 {
 	internal ulong BeaconID; 
 	internal ulong SteamIDJoiner; 

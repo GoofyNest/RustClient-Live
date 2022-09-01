@@ -1,4 +1,4 @@
-public class Button : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler // TypeDefIndex: 4905
+public class Button : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler // TypeDefIndex: 4906
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
@@ -24,14 +24,14 @@ public class Button : Selectable, IPointerClickHandler, IEventSystemHandler, ISu
 
 }
 
-public class Button.ButtonClickedEvent : UnityEvent // TypeDefIndex: 4906
+public class Button.ButtonClickedEvent : UnityEvent // TypeDefIndex: 4907
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class Button.<OnFinishSubmit>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4907
+private sealed class Button.<OnFinishSubmit>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4908
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -62,7 +62,7 @@ private sealed class Button.<OnFinishSubmit>d__9 : IEnumerator<object>, IEnumera
 
 }
 
-public enum BUTTON // TypeDefIndex: 10100
+public enum BUTTON // TypeDefIndex: 10107
 {
 	public int value__; 
 	public const BUTTON FORWARD = 2;

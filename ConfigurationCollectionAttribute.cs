@@ -2,7 +2,7 @@ public sealed class ConfigurationCollectionAttribute : Attribute // TypeDefIndex
 {
 
 [AttributeUsageAttribute] 
-public sealed class ConfigurationCollectionAttribute : Attribute 
+public sealed class ConfigurationCollectionAttribute : Attribute
 
 	public void .ctor(Type itemType) { }
 

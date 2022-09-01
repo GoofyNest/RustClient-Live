@@ -1,4 +1,4 @@
-public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 9764
+public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 9769
 {
 	[HeaderAttribute] 
 	[SerializeField] 
@@ -43,7 +43,7 @@ public class LocomotiveExtraVisuals : MonoBehaviour // TypeDefIndex: 9764
 
 }
 
-private enum LocomotiveExtraVisuals.NeedleType // TypeDefIndex: 9765
+private enum LocomotiveExtraVisuals.NeedleType // TypeDefIndex: 9770
 {
 	public int value__; 
 	public const LocomotiveExtraVisuals.NeedleType Speed = 0;

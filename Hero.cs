@@ -1,4 +1,4 @@
-public class Hero // TypeDefIndex: 6202
+public class Hero // TypeDefIndex: 6203
 {
 	[CompilerGeneratedAttribute] 
 	private string <Ident>k__BackingField; 
@@ -70,7 +70,7 @@ public class Hero // TypeDefIndex: 6202
 
 }
 
-public class Hero : ConsoleSystem // TypeDefIndex: 11930
+public class Hero : ConsoleSystem // TypeDefIndex: 11958
 {
 	[ClientVar] 
 	public static string ident; 
@@ -97,7 +97,7 @@ public class Hero : ConsoleSystem // TypeDefIndex: 11930
 
 }
 
-public class Hero : SingletonComponent<Hero> // TypeDefIndex: 12088
+public class Hero : SingletonComponent<Hero> // TypeDefIndex: 12116
 {
 	public CanvasGroup CanvasGroup; 
 	public Video VideoPlayer; 
@@ -130,7 +130,7 @@ public class Hero : SingletonComponent<Hero> // TypeDefIndex: 12088
 
 }
 
-private sealed class Hero.<>c // TypeDefIndex: 12089
+private sealed class Hero.<>c // TypeDefIndex: 12117
 {
 	public static readonly Hero.<>c <>9; 
 	public static Func<Hero, Guid> <>9__9_0; 
@@ -144,7 +144,7 @@ private sealed class Hero.<>c // TypeDefIndex: 12089
 
 }
 
-private struct Hero.<ShowAsync>d__10 : IAsyncStateMachine // TypeDefIndex: 12090
+private struct Hero.<ShowAsync>d__10 : IAsyncStateMachine // TypeDefIndex: 12118
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

@@ -1,4 +1,4 @@
-public class LootPanelReclaim : LootPanel // TypeDefIndex: 11035
+public class LootPanelReclaim : LootPanel // TypeDefIndex: 11049
 {
 	public int oldOverflow; 
 	public Text overflowText; 

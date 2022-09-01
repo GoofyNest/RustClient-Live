@@ -1,4 +1,4 @@
-public class StorageContainer : DecayEntity, IItemContainerEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 8457
+public class StorageContainer : DecayEntity, IItemContainerEntity, IIdealSlotEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 8459
 {
 	private Option __menuOption_Menu_Occupied; 
 	private Option __menuOption_Menu_OnFire; 
@@ -49,10 +49,6 @@ public class StorageContainer : DecayEntity, IItemContainerEntity, LootPanel.IHa
 	public override bool HasSlot(BaseEntity.Slot slot) { }
 
 	public bool OccupiedCheck(BasePlayer player) { }
-
-	public virtual int GetMoveToContainerIndex(BasePlayer player, Item item) { }
-
-	public virtual int GetMoveToSlotIndex(BasePlayer player, Item item) { }
 
 	public virtual bool ShouldShowLootMenus() { }
 

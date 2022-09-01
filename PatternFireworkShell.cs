@@ -1,4 +1,4 @@
-public class PatternFireworkShell : FireworkShell // TypeDefIndex: 8277
+public class PatternFireworkShell : FireworkShell // TypeDefIndex: 8278
 {
 	public GameObjectRef StarPrefab; 
 	public AnimationCurve StarCurve; 

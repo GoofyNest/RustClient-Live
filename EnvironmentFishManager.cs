@@ -1,4 +1,4 @@
-public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 8949
+public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 8952
 {
 	public EnvironmentFishManager.FishTypeInstance[] fishTypes; 
 	[ClientVar] 
@@ -37,7 +37,7 @@ public class EnvironmentFishManager : BaseMonoBehaviour, IClientComponent // Typ
 
 }
 
-public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 8950
+public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 8953
 {
 	public GameObjectRef prefab; 
 	public bool shouldSchool; 
@@ -60,7 +60,7 @@ public class EnvironmentFishManager.FishTypeInstance // TypeDefIndex: 8950
 
 }
 
-public class EnvironmentFishManager.EnvironmentFishWorkQueue : ObjectWorkQueue<EnvironmentFish> // TypeDefIndex: 8951
+public class EnvironmentFishManager.EnvironmentFishWorkQueue : ObjectWorkQueue<EnvironmentFish> // TypeDefIndex: 8954
 {
 
 	protected override void RunJob(EnvironmentFish entity) { }

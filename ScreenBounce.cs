@@ -1,4 +1,4 @@
-public class ScreenBounce : BaseScreenShake // TypeDefIndex: 9365
+public class ScreenBounce : BaseScreenShake // TypeDefIndex: 9369
 {
 	public AnimationCurve bounceScale; 
 	public AnimationCurve bounceSpeed; 

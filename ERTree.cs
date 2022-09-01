@@ -1,4 +1,4 @@
-public class ERTree // TypeDefIndex: 7283
+public class ERTree // TypeDefIndex: 7284
 {
 	public Color color; 
 	public float heightScale; 

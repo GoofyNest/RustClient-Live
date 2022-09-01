@@ -4,14 +4,14 @@ public sealed class DictationRecognizer // TypeDefIndex: 3596
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private DictationRecognizer.DictationHypothesisDelegate DictationHypothesis; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private DictationRecognizer.DictationResultDelegate DictationResult; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private DictationRecognizer.DictationCompletedDelegate DictationComplete; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private DictationRecognizer.DictationErrorHandler DictationError; 
 
 

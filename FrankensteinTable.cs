@@ -1,4 +1,4 @@
-public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
+public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6310
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class FrankensteinTable : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class FrankensteinTable : StorageContainer // TypeDefIndex: 8392
+public class FrankensteinTable : StorageContainer // TypeDefIndex: 8394
 {
 	private Option __menuOption_MenuSleepFrankenstein; 
 	private Option __menuOption_MenuWakeFrankenstein; 

@@ -1,4 +1,4 @@
-public static class PacketType // TypeDefIndex: 7332
+public static class PacketType // TypeDefIndex: 7333
 {
 	public const byte NEW_INCOMING_CONNECTION = 19;
 	public const byte CONNECTION_REQUEST_ACCEPTED = 16;

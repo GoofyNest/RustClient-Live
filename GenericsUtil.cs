@@ -1,4 +1,4 @@
-public static class GenericsUtil // TypeDefIndex: 4817
+public static class GenericsUtil // TypeDefIndex: 4818
 {
 
 	public static TDst Cast<TSrc, TDst>(TSrc obj) { }
@@ -248,7 +248,7 @@ public static class GenericsUtil // TypeDefIndex: 4817
 
 }
 
-private static class GenericsUtil.CastImpl<TSrc, TDst> // TypeDefIndex: 4818
+private static class GenericsUtil.CastImpl<TSrc, TDst> // TypeDefIndex: 4819
 {
 	[ThreadStaticAttribute] 
 	public static TSrc Value; 

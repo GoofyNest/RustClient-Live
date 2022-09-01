@@ -1,4 +1,4 @@
-internal enum PrimitiveTypeCode // TypeDefIndex: 5940
+internal enum PrimitiveTypeCode // TypeDefIndex: 5941
 {
 	public int value__; 
 	public const PrimitiveTypeCode Empty = 0;

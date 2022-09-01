@@ -1,4 +1,4 @@
-public struct RemotePlaySession // TypeDefIndex: 5555
+public struct RemotePlaySession // TypeDefIndex: 5556
 {
 	[CompilerGeneratedAttribute] 
 	private uint <Id>k__BackingField; 

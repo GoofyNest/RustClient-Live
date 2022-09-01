@@ -1,4 +1,4 @@
-public class OutputChannels // TypeDefIndex: 7394
+public class OutputChannels // TypeDefIndex: 7395
 {
 	internal const int BOTH_CHANNELS = 0;
 	internal const int LEFT_CHANNEL = 1;

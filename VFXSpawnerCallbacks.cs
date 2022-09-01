@@ -3,7 +3,7 @@ public abstract class VFXSpawnerCallbacks : ScriptableObject // TypeDefIndex: 47
 
 [RequiredByNativeCodeAttribute] 
 [Serializable]
-public abstract class VFXSpawnerCallbacks : ScriptableObject 
+public abstract class VFXSpawnerCallbacks : ScriptableObject
 
 	public abstract void OnPlay(VFXSpawnerState state, VFXExpressionValues vfxValues, VisualEffect vfxComponent);
 

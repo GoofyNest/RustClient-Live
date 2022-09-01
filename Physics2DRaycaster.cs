@@ -1,4 +1,4 @@
-public class Physics2DRaycaster : PhysicsRaycaster // TypeDefIndex: 5092
+public class Physics2DRaycaster : PhysicsRaycaster // TypeDefIndex: 5093
 {
 	private RaycastHit2D[] m_Hits; 
 

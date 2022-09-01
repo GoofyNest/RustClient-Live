@@ -1,4 +1,4 @@
-public class AspectRatioFitter : UIBehaviour, ILayoutSelfController, ILayoutController // TypeDefIndex: 4957
+public class AspectRatioFitter : UIBehaviour, ILayoutSelfController, ILayoutController // TypeDefIndex: 4958
 {
 	[SerializeField] 
 	private AspectRatioFitter.AspectMode m_AspectMode; 
@@ -47,7 +47,7 @@ public class AspectRatioFitter : UIBehaviour, ILayoutSelfController, ILayoutCont
 
 }
 
-public enum AspectRatioFitter.AspectMode // TypeDefIndex: 4958
+public enum AspectRatioFitter.AspectMode // TypeDefIndex: 4959
 {
 	public int value__; 
 	public const AspectRatioFitter.AspectMode None = 0;

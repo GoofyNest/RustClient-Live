@@ -1,4 +1,4 @@
-public class VoicemailDialog : MonoBehaviour // TypeDefIndex: 10900
+public class VoicemailDialog : MonoBehaviour // TypeDefIndex: 10911
 {
 	public GameObject RecordingRoot; 
 	public RustSlider RecordingProgress; 

@@ -1,4 +1,4 @@
-public class Planner : HeldEntity // TypeDefIndex: 8615
+public class Planner : HeldEntity // TypeDefIndex: 8618
 {
 	private Vector3 rotationOffset; 
 	private bool hasAppliedStartingRotation; 
@@ -51,7 +51,7 @@ public class Planner : HeldEntity // TypeDefIndex: 8615
 
 }
 
-public class Planner.Guide // TypeDefIndex: 8616
+public class Planner.Guide // TypeDefIndex: 8619
 {
 	public GameObject guideObject; 
 	public Construction.Target lastPlacement; 
@@ -93,7 +93,7 @@ public class Planner.Guide // TypeDefIndex: 8616
 
 }
 
-private enum Planner.Guide.PlacementState // TypeDefIndex: 8617
+private enum Planner.Guide.PlacementState // TypeDefIndex: 8620
 {
 	public int value__; 
 	public const Planner.Guide.PlacementState Invalid = 0;
@@ -102,7 +102,7 @@ private enum Planner.Guide.PlacementState // TypeDefIndex: 8617
 
 }
 
-private sealed class Planner.<>c__DisplayClass9_0 // TypeDefIndex: 8618
+private sealed class Planner.<>c__DisplayClass9_0 // TypeDefIndex: 8621
 {
 	public Construction construction; 
 	public Planner <>4__this; 

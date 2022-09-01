@@ -1,4 +1,4 @@
-public sealed class HttpContentHeaders : HttpHeaders // TypeDefIndex: 5772
+public sealed class HttpContentHeaders : HttpHeaders // TypeDefIndex: 5773
 {
 	private readonly HttpContent content; 
 

@@ -1,14 +1,14 @@
-public class SceneField // TypeDefIndex: 6163
+public class SceneField // TypeDefIndex: 6164
 {
 
-public static class SteamworksDataDummy 
+public static class SteamworksDataDummy
 
-internal class <Module> 
+internal class <Module>
 
-internal class <Module> 
+internal class <Module>
 
 [Serializable]
-public class SceneField 
+public class SceneField
 	[SerializeField] 
 	private Object sceneAsset; 
 	[SerializeField] 

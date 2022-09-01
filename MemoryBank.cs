@@ -1,4 +1,4 @@
-public class MemoryBank : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6555
+public class MemoryBank : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6556
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-internal struct ValidateAuthTicketResponse_t : ICallbackData // TypeDefIndex: 5299
+internal struct ValidateAuthTicketResponse_t : ICallbackData // TypeDefIndex: 5300
 {
 	internal ulong SteamID; 
 	internal AuthResponse AuthSessionResponse; 

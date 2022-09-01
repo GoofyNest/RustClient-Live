@@ -1,7 +1,7 @@
 public abstract class ConstructorBuilder : ConstructorInfo // TypeDefIndex: 600
 {
 
-public abstract class ConstructorBuilder : ConstructorInfo 
+public abstract class ConstructorBuilder : ConstructorInfo
 	public override MethodAttributes Attributes { get; }
 	public override Type DeclaringType { get; }
 	public override string Name { get; }

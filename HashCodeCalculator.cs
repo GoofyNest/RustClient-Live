@@ -1,4 +1,4 @@
-internal static class HashCodeCalculator // TypeDefIndex: 5766
+internal static class HashCodeCalculator // TypeDefIndex: 5767
 {
 
 	public static int Calculate<T>(ICollection<T> list) { }

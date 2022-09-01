@@ -1,4 +1,4 @@
-public enum ActionPriority // TypeDefIndex: 11308
+public enum ActionPriority // TypeDefIndex: 11336
 {
 	public int value__; 
 	public const ActionPriority Highest = 0;

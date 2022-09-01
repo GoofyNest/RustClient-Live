@@ -8885,7 +8885,7 @@ public class XmlMembersMapping : XmlMapping // TypeDefIndex: 2085
 {
 
 [DefaultMemberAttribute] 
-public class XmlMembersMapping : XmlMapping 
+public class XmlMembersMapping : XmlMapping
 	private bool _hasWrapperElement; 
 	private XmlMemberMapping[] _mapping; 
 
@@ -16179,10 +16179,10 @@ internal sealed class SqlXmlStreamWrapper : Stream // TypeDefIndex: 4360
 public static class XRDevice // TypeDefIndex: 4768
 {
 
-internal class <Module> 
+internal class <Module>
 
 [NativeConditionalAttribute] 
-public static class XRDevice 
+public static class XRDevice
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private static Action<string> deviceLoaded; 
@@ -16195,14 +16195,14 @@ public static class XRDevice
 
 }
 
-public sealed class XName : IEquatable<XName>, ISerializable // TypeDefIndex: 5815
+public sealed class XName : IEquatable<XName>, ISerializable // TypeDefIndex: 5816
 {
 
-internal class <Module> 
+internal class <Module>
 
 [KnownTypeAttribute] 
 [Serializable]
-public sealed class XName : IEquatable<XName>, ISerializable 
+public sealed class XName : IEquatable<XName>, ISerializable
 	private XNamespace ns; 
 	private string localName; 
 	private int hashCode; 
@@ -16243,7 +16243,7 @@ public sealed class XName : IEquatable<XName>, ISerializable
 
 }
 
-public sealed class XNamespace // TypeDefIndex: 5817
+public sealed class XNamespace // TypeDefIndex: 5818
 {
 	private static XHashtable<WeakReference> namespaces; 
 	private static WeakReference refNone; 
@@ -16298,7 +16298,7 @@ public sealed class XNamespace // TypeDefIndex: 5817
 
 }
 
-public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5822
+public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5823
 {
 	internal XContainer parent; 
 	internal object annotations; 
@@ -16362,7 +16362,7 @@ public abstract class XObject : IXmlLineInfo // TypeDefIndex: 5822
 
 }
 
-private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 5823
+private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 5824
 {
 	private int <>1__state; 
 	private T <>2__current; 
@@ -16432,14 +16432,14 @@ private sealed class XObject.<Annotations>d__16<T> : IEnumerable<T>, IEnumerable
 
 }
 
-internal class XObjectChangeAnnotation // TypeDefIndex: 5827
+internal class XObjectChangeAnnotation // TypeDefIndex: 5828
 {
 	internal EventHandler<XObjectChangeEventArgs> changing; 
 	internal EventHandler<XObjectChangeEventArgs> changed; 
 
 }
 
-public enum XObjectChange // TypeDefIndex: 5828
+public enum XObjectChange // TypeDefIndex: 5829
 {
 	public int value__; 
 	public const XObjectChange Add = 0;
@@ -16449,7 +16449,7 @@ public enum XObjectChange // TypeDefIndex: 5828
 
 }
 
-public class XObjectChangeEventArgs : EventArgs // TypeDefIndex: 5829
+public class XObjectChangeEventArgs : EventArgs // TypeDefIndex: 5830
 {
 	private XObjectChange objectChange; 
 	public static readonly XObjectChangeEventArgs Add; 
@@ -16464,7 +16464,7 @@ public class XObjectChangeEventArgs : EventArgs // TypeDefIndex: 5829
 
 }
 
-public abstract class XNode : XObject // TypeDefIndex: 5830
+public abstract class XNode : XObject // TypeDefIndex: 5831
 {
 	internal XNode next; 
 
@@ -16485,7 +16485,7 @@ public abstract class XNode : XObject // TypeDefIndex: 5830
 
 }
 
-public class XText : XNode // TypeDefIndex: 5831
+public class XText : XNode // TypeDefIndex: 5832
 {
 	internal string text; 
 
@@ -16511,7 +16511,7 @@ public class XText : XNode // TypeDefIndex: 5831
 
 }
 
-public class XCData : XText // TypeDefIndex: 5832
+public class XCData : XText // TypeDefIndex: 5833
 {
 	public override XmlNodeType NodeType { get; }
 
@@ -16528,7 +16528,7 @@ public class XCData : XText // TypeDefIndex: 5832
 
 }
 
-public abstract class XContainer : XNode // TypeDefIndex: 5833
+public abstract class XContainer : XNode // TypeDefIndex: 5834
 {
 	internal object content; 
 
@@ -16586,7 +16586,7 @@ public abstract class XContainer : XNode // TypeDefIndex: 5833
 
 }
 
-private sealed class XContainer.<Nodes>d__18 : IEnumerable<XNode>, IEnumerable, IEnumerator<XNode>, IDisposable, IEnumerator // TypeDefIndex: 5834
+private sealed class XContainer.<Nodes>d__18 : IEnumerable<XNode>, IEnumerable, IEnumerator<XNode>, IDisposable, IEnumerator // TypeDefIndex: 5835
 {
 	private int <>1__state; 
 	private XNode <>2__current; 
@@ -16623,7 +16623,7 @@ private sealed class XContainer.<Nodes>d__18 : IEnumerable<XNode>, IEnumerable, 
 
 }
 
-public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5836
+public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5837
 {
 	internal XName name; 
 	internal XAttribute lastAttr; 
@@ -16685,7 +16685,7 @@ public class XElement : XContainer, IXmlSerializable // TypeDefIndex: 5836
 
 }
 
-private sealed class XElement.<GetAttributes>d__105 : IEnumerable<XAttribute>, IEnumerable, IEnumerator<XAttribute>, IDisposable, IEnumerator // TypeDefIndex: 5837
+private sealed class XElement.<GetAttributes>d__105 : IEnumerable<XAttribute>, IEnumerable, IEnumerator<XAttribute>, IDisposable, IEnumerator // TypeDefIndex: 5838
 {
 	private int <>1__state; 
 	private XAttribute <>2__current; 
@@ -16724,7 +16724,7 @@ private sealed class XElement.<GetAttributes>d__105 : IEnumerable<XAttribute>, I
 
 }
 
-public class XDocument : XContainer // TypeDefIndex: 5843
+public class XDocument : XContainer // TypeDefIndex: 5844
 {
 	private XDeclaration declaration; 
 
@@ -16770,7 +16770,7 @@ public class XDocument : XContainer // TypeDefIndex: 5843
 
 }
 
-public class XComment : XNode // TypeDefIndex: 5844
+public class XComment : XNode // TypeDefIndex: 5845
 {
 	internal string value; 
 
@@ -16792,7 +16792,7 @@ public class XComment : XNode // TypeDefIndex: 5844
 
 }
 
-public class XProcessingInstruction : XNode // TypeDefIndex: 5845
+public class XProcessingInstruction : XNode // TypeDefIndex: 5846
 {
 	internal string target; 
 	internal string data; 
@@ -16820,7 +16820,7 @@ public class XProcessingInstruction : XNode // TypeDefIndex: 5845
 
 }
 
-public class XDeclaration // TypeDefIndex: 5846
+public class XDeclaration // TypeDefIndex: 5847
 {
 	private string version; 
 	private string encoding; 
@@ -16845,7 +16845,7 @@ public class XDeclaration // TypeDefIndex: 5846
 
 }
 
-public class XDocumentType : XNode // TypeDefIndex: 5847
+public class XDocumentType : XNode // TypeDefIndex: 5848
 {
 	private string name; 
 	private string publicId; 
@@ -16882,7 +16882,7 @@ public class XDocumentType : XNode // TypeDefIndex: 5847
 
 }
 
-public class XAttribute : XObject // TypeDefIndex: 5848
+public class XAttribute : XObject // TypeDefIndex: 5849
 {
 	internal XAttribute next; 
 	internal XName name; 
@@ -16914,14 +16914,14 @@ public class XAttribute : XObject // TypeDefIndex: 5848
 
 }
 
-public class XStreamingElement // TypeDefIndex: 5849
+public class XStreamingElement // TypeDefIndex: 5850
 {
 	internal XName name; 
 	internal object content; 
 
 }
 
-internal class XmlDocumentWrapper : XmlNodeWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6111
+internal class XmlDocumentWrapper : XmlNodeWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6112
 {
 	private readonly XmlDocument _document; 
 
@@ -16958,7 +16958,7 @@ internal class XmlDocumentWrapper : XmlNodeWrapper, IXmlDocument, IXmlNode // Ty
 
 }
 
-internal class XmlElementWrapper : XmlNodeWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6112
+internal class XmlElementWrapper : XmlNodeWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6113
 {
 	private readonly XmlElement _element; 
 
@@ -16975,7 +16975,7 @@ internal class XmlElementWrapper : XmlNodeWrapper, IXmlElement, IXmlNode // Type
 
 }
 
-internal class XmlDeclarationWrapper : XmlNodeWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6113
+internal class XmlDeclarationWrapper : XmlNodeWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6114
 {
 	private readonly XmlDeclaration _declaration; 
 
@@ -16994,7 +16994,7 @@ internal class XmlDeclarationWrapper : XmlNodeWrapper, IXmlDeclaration, IXmlNode
 
 }
 
-internal class XmlDocumentTypeWrapper : XmlNodeWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6114
+internal class XmlDocumentTypeWrapper : XmlNodeWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6115
 {
 	private readonly XmlDocumentType _documentType; 
 
@@ -17019,7 +17019,7 @@ internal class XmlDocumentTypeWrapper : XmlNodeWrapper, IXmlDocumentType, IXmlNo
 
 }
 
-internal class XmlNodeWrapper : IXmlNode // TypeDefIndex: 6115
+internal class XmlNodeWrapper : IXmlNode // TypeDefIndex: 6116
 {
 	private readonly XmlNode _node; 
 	private List<IXmlNode> _childNodes; 
@@ -17061,7 +17061,7 @@ internal class XmlNodeWrapper : IXmlNode // TypeDefIndex: 6115
 
 }
 
-internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6121
+internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode // TypeDefIndex: 6122
 {
 	[CompilerGeneratedAttribute] 
 	private XDeclaration <Declaration>k__BackingField; 
@@ -17091,7 +17091,7 @@ internal class XDeclarationWrapper : XObjectWrapper, IXmlDeclaration, IXmlNode /
 
 }
 
-internal class XDocumentTypeWrapper : XObjectWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6122
+internal class XDocumentTypeWrapper : XObjectWrapper, IXmlDocumentType, IXmlNode // TypeDefIndex: 6123
 {
 	private readonly XDocumentType _documentType; 
 
@@ -17116,7 +17116,7 @@ internal class XDocumentTypeWrapper : XObjectWrapper, IXmlDocumentType, IXmlNode
 
 }
 
-internal class XDocumentWrapper : XContainerWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6123
+internal class XDocumentWrapper : XContainerWrapper, IXmlDocument, IXmlNode // TypeDefIndex: 6124
 {
 	private XDocument Document { get; }
 	public override List<IXmlNode> ChildNodes { get; }
@@ -17159,7 +17159,7 @@ internal class XDocumentWrapper : XContainerWrapper, IXmlDocument, IXmlNode // T
 
 }
 
-internal class XTextWrapper : XObjectWrapper // TypeDefIndex: 6124
+internal class XTextWrapper : XObjectWrapper // TypeDefIndex: 6125
 {
 	private XText Text { get; }
 	public override string Value { get; }
@@ -17176,7 +17176,7 @@ internal class XTextWrapper : XObjectWrapper // TypeDefIndex: 6124
 
 }
 
-internal class XCommentWrapper : XObjectWrapper // TypeDefIndex: 6125
+internal class XCommentWrapper : XObjectWrapper // TypeDefIndex: 6126
 {
 	private XComment Text { get; }
 	public override string Value { get; }
@@ -17193,7 +17193,7 @@ internal class XCommentWrapper : XObjectWrapper // TypeDefIndex: 6125
 
 }
 
-internal class XProcessingInstructionWrapper : XObjectWrapper // TypeDefIndex: 6126
+internal class XProcessingInstructionWrapper : XObjectWrapper // TypeDefIndex: 6127
 {
 	private XProcessingInstruction ProcessingInstruction { get; }
 	public override string LocalName { get; }
@@ -17210,7 +17210,7 @@ internal class XProcessingInstructionWrapper : XObjectWrapper // TypeDefIndex: 6
 
 }
 
-internal class XContainerWrapper : XObjectWrapper // TypeDefIndex: 6127
+internal class XContainerWrapper : XObjectWrapper // TypeDefIndex: 6128
 {
 	private List<IXmlNode> _childNodes; 
 
@@ -17233,7 +17233,7 @@ internal class XContainerWrapper : XObjectWrapper // TypeDefIndex: 6127
 
 }
 
-internal class XObjectWrapper : IXmlNode // TypeDefIndex: 6128
+internal class XObjectWrapper : IXmlNode // TypeDefIndex: 6129
 {
 	private static readonly List<IXmlNode> EmptyChildNodes; 
 	private readonly XObject _xmlObject; 
@@ -17272,7 +17272,7 @@ internal class XObjectWrapper : IXmlNode // TypeDefIndex: 6128
 
 }
 
-internal class XAttributeWrapper : XObjectWrapper // TypeDefIndex: 6129
+internal class XAttributeWrapper : XObjectWrapper // TypeDefIndex: 6130
 {
 	private XAttribute Attribute { get; }
 	public override string Value { get; }
@@ -17295,7 +17295,7 @@ internal class XAttributeWrapper : XObjectWrapper // TypeDefIndex: 6129
 
 }
 
-internal class XElementWrapper : XContainerWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6130
+internal class XElementWrapper : XContainerWrapper, IXmlElement, IXmlNode // TypeDefIndex: 6131
 {
 	private List<IXmlNode> _attributes; 
 
@@ -17329,7 +17329,7 @@ internal class XElementWrapper : XContainerWrapper, IXmlElement, IXmlNode // Typ
 
 }
 
-public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6131
+public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6132
 {
 	[CompilerGeneratedAttribute] 
 	private string <DeserializeRootElementName>k__BackingField; 
@@ -17406,7 +17406,7 @@ public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6131
 
 }
 
-public class XORSwitch : IOEntity // TypeDefIndex: 9805
+public class XORSwitch : IOEntity // TypeDefIndex: 9810
 {
 	private int input1Amount; 
 	private int input2Amount; 

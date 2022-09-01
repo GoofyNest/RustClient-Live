@@ -4,11 +4,11 @@ public class VFXExpressionValues // TypeDefIndex: 4760
 [RequiredByNativeCodeAttribute] 
 [NativeTypeAttribute] 
 [StaticAccessorAttribute] 
-internal class VFXExpressionNoise 
+internal class VFXExpressionNoise
 
 [RequiredByNativeCodeAttribute] 
 [NativeTypeAttribute] 
-public class VFXExpressionValues 
+public class VFXExpressionValues
 	internal IntPtr m_Ptr; 
 
 

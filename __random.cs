@@ -1980,7 +1980,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<AdvancedChristmasLights.pointEntry>..ctor
 	|-Comparison<AlignedLineDrawer.LinePoint>..ctor
 	|-Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
-	|-Comparison<BaseEntity.ServerFileRequest>..ctor
+	|-Comparison<BaseEntity.PendingFileRequest>..ctor
 	|-Comparison<CardTableUI.KeycodeWithAction>..ctor
 	|-Comparison<Cassette.LoadRequest>..ctor
 	|-Comparison<Admin.PlayerInfo>..ctor
@@ -2222,7 +2222,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<UILineInfo>.Invoke
 	|-Comparison<WindZoneExManager.CurrentZoneEntry>.Invoke
 	|
-	|-Comparison<BaseEntity.ServerFileRequest>.Invoke
+	|-Comparison<BaseEntity.PendingFileRequest>.Invoke
 	|-Comparison<CardTableUI.KeycodeWithAction>.Invoke
 	|-Comparison<Demos.DemoInfo>.Invoke
 	|-Comparison<Output.Entry>.Invoke
@@ -2377,7 +2377,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|
 	|-Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry>.BeginInvoke
 	|
-	|-Comparison<BaseEntity.ServerFileRequest>.BeginInvoke
+	|-Comparison<BaseEntity.PendingFileRequest>.BeginInvoke
 	|
 	|-Comparison<CardTableUI.KeycodeWithAction>.BeginInvoke
 	|
@@ -2712,7 +2712,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<AdvancedChristmasLights.pointEntry>.EndInvoke
 	|-Comparison<AlignedLineDrawer.LinePoint>.EndInvoke
 	|-Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry>.EndInvoke
-	|-Comparison<BaseEntity.ServerFileRequest>.EndInvoke
+	|-Comparison<BaseEntity.PendingFileRequest>.EndInvoke
 	|-Comparison<CardTableUI.KeycodeWithAction>.EndInvoke
 	|-Comparison<Cassette.LoadRequest>.EndInvoke
 	|-Comparison<Admin.PlayerInfo>.EndInvoke
@@ -2889,7 +2889,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<AdvancedChristmasLights.pointEntry>..ctor
 	|-Predicate<AlignedLineDrawer.LinePoint>..ctor
 	|-Predicate<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
-	|-Predicate<BaseEntity.ServerFileRequest>..ctor
+	|-Predicate<BaseEntity.PendingFileRequest>..ctor
 	|-Predicate<CardTableUI.KeycodeWithAction>..ctor
 	|-Predicate<Cassette.LoadRequest>..ctor
 	|-Predicate<Admin.PlayerInfo>..ctor
@@ -3153,7 +3153,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<WindZoneExManager.CurrentZoneEntry>.Invoke
 	|-Predicate<WorldSplineData.LUTEntry.LUTPoint>.Invoke
 	|
-	|-Predicate<BaseEntity.ServerFileRequest>.Invoke
+	|-Predicate<BaseEntity.PendingFileRequest>.Invoke
 	|-Predicate<CardTableUI.KeycodeWithAction>.Invoke
 	|-Predicate<Demos.DemoInfo>.Invoke
 	|-Predicate<Output.Entry>.Invoke
@@ -3296,7 +3296,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|
 	|-Predicate<AtmosphereVolumeRenderer.CurrentVolumeEntry>.BeginInvoke
 	|
-	|-Predicate<BaseEntity.ServerFileRequest>.BeginInvoke
+	|-Predicate<BaseEntity.PendingFileRequest>.BeginInvoke
 	|
 	|-Predicate<CardTableUI.KeycodeWithAction>.BeginInvoke
 	|
@@ -3623,7 +3623,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<AdvancedChristmasLights.pointEntry>.EndInvoke
 	|-Predicate<AlignedLineDrawer.LinePoint>.EndInvoke
 	|-Predicate<AtmosphereVolumeRenderer.CurrentVolumeEntry>.EndInvoke
-	|-Predicate<BaseEntity.ServerFileRequest>.EndInvoke
+	|-Predicate<BaseEntity.PendingFileRequest>.EndInvoke
 	|-Predicate<CardTableUI.KeycodeWithAction>.EndInvoke
 	|-Predicate<Cassette.LoadRequest>.EndInvoke
 	|-Predicate<Admin.PlayerInfo>.EndInvoke
@@ -3802,6 +3802,7 @@ internal static class EmptyArray<T> // TypeDefIndex: 359
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
+	|-EmptyArray<BaseEntity.QueuedFileRequest>..cctor
 	|-EmptyArray<RCon.Command>..cctor
 	|-EmptyArray<NetKeyValue>..cctor
 	|-EmptyArray<bool>..cctor
@@ -5363,88 +5364,88 @@ public struct DictionaryEntry // TypeDefIndex: 1373
 [CLSCompliantAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
-public interface _Assembly 
+public interface _Assembly
 
 [InterfaceTypeAttribute] 
 [CLSCompliantAttribute] 
 [GuidAttribute] 
 [ComVisibleAttribute] 
-public interface _AssemblyName 
+public interface _AssemblyName
 
 [CLSCompliantAttribute] 
 [InterfaceTypeAttribute] 
 [ComVisibleAttribute] 
 [GuidAttribute] 
-public interface _ConstructorInfo 
+public interface _ConstructorInfo
 
 [ComVisibleAttribute] 
 [InterfaceTypeAttribute] 
 [GuidAttribute] 
 [CLSCompliantAttribute] 
-public interface _EventInfo 
+public interface _EventInfo
 
 [GuidAttribute] 
 [ComVisibleAttribute] 
 [CLSCompliantAttribute] 
 [InterfaceTypeAttribute] 
-public interface _Exception 
+public interface _Exception
 
 [ComVisibleAttribute] 
 [GuidAttribute] 
 [CLSCompliantAttribute] 
 [InterfaceTypeAttribute] 
-public interface _FieldInfo 
+public interface _FieldInfo
 
 [ComVisibleAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
 [CLSCompliantAttribute] 
-public interface _MemberInfo 
+public interface _MemberInfo
 
 [CLSCompliantAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
 [ComVisibleAttribute] 
-public interface _MethodBase 
+public interface _MethodBase
 
 [CLSCompliantAttribute] 
 [ComVisibleAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
-public interface _MethodInfo 
+public interface _MethodInfo
 
 [ComVisibleAttribute] 
 [CLSCompliantAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
-public interface _Module 
+public interface _Module
 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
 [ComVisibleAttribute] 
 [CLSCompliantAttribute] 
-public interface _ParameterInfo 
+public interface _ParameterInfo
 
 [CLSCompliantAttribute] 
 [ComVisibleAttribute] 
 [InterfaceTypeAttribute] 
 [GuidAttribute] 
-public interface _PropertyInfo 
+public interface _PropertyInfo
 
 [CLSCompliantAttribute] 
 [InterfaceTypeAttribute] 
 [GuidAttribute] 
 [ComVisibleAttribute] 
-public interface _Thread 
+public interface _Thread
 
 [ComVisibleAttribute] 
 [CLSCompliantAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
-public interface _Type 
+public interface _Type
 
 [Serializable]
-public struct DictionaryEntry 
+public struct DictionaryEntry
 	private object _key; 
 	private object _value; 
 
@@ -5663,7 +5664,7 @@ public class Collection<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerab
 [ComVisibleAttribute] 
 [DebuggerDisplayAttribute] 
 [Serializable]
-public class Collection<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IList, ICollection, IReadOnlyList<T>, IReadOnlyCollection<T> 
+public class Collection<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IList, ICollection, IReadOnlyList<T>, IReadOnlyCollection<T>
 	private IList<T> items; 
 	private object _syncRoot; 
 
@@ -6093,7 +6094,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>..ctor
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>..ctor
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>..ctor
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>..ctor
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>..ctor
 	|-ReadOnlyCollection<Cassette.LoadRequest>..ctor
 	|-ReadOnlyCollection<Admin.PlayerInfo>..ctor
@@ -6266,7 +6267,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.get_Count
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.get_Count
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Count
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.get_Count
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.get_Count
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.get_Count
 	|-ReadOnlyCollection<Cassette.LoadRequest>.get_Count
 	|-ReadOnlyCollection<Admin.PlayerInfo>.get_Count
@@ -6538,7 +6539,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.get_Item
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.get_Item
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.get_Item
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.get_Item
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.get_Item
 	|-ReadOnlyCollection<Demos.DemoInfo>.get_Item
 	|-ReadOnlyCollection<Output.Entry>.get_Item
@@ -6698,7 +6699,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.Contains
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.Contains
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.Contains
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.Contains
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.Contains
 	|-ReadOnlyCollection<Demos.DemoInfo>.Contains
 	|-ReadOnlyCollection<Output.Entry>.Contains
@@ -6835,7 +6836,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.CopyTo
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.CopyTo
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.CopyTo
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.CopyTo
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.CopyTo
 	|-ReadOnlyCollection<Cassette.LoadRequest>.CopyTo
 	|-ReadOnlyCollection<Admin.PlayerInfo>.CopyTo
@@ -7006,7 +7007,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.GetEnumerator
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.GetEnumerator
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.GetEnumerator
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.GetEnumerator
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.GetEnumerator
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.GetEnumerator
 	|-ReadOnlyCollection<Cassette.LoadRequest>.GetEnumerator
 	|-ReadOnlyCollection<Admin.PlayerInfo>.GetEnumerator
@@ -7241,7 +7242,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.IndexOf
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.IndexOf
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.IndexOf
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.IndexOf
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.IndexOf
 	|-ReadOnlyCollection<Demos.DemoInfo>.IndexOf
 	|-ReadOnlyCollection<Output.Entry>.IndexOf
@@ -7378,7 +7379,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -7611,7 +7612,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.Generic.IList<T>.get_Item
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.Generic.IList<T>.get_Item
@@ -7740,7 +7741,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.IList<T>.set_Item
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.set_Item
@@ -7909,7 +7910,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.Add
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.Add
@@ -8078,7 +8079,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.Clear
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.Clear
@@ -8247,7 +8248,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.IList<T>.Insert
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.Insert
@@ -8416,7 +8417,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.Remove
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.Remove
@@ -8585,7 +8586,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.IList<T>.RemoveAt
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.RemoveAt
@@ -8757,7 +8758,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IEnumerable.GetEnumerator
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -9089,7 +9090,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.ICollection.get_SyncRoot
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -9421,7 +9422,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.ICollection.CopyTo
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.ICollection.CopyTo
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.ICollection.CopyTo
 	|
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.CopyTo
 	|
@@ -9750,7 +9751,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsFixedSize
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.get_IsFixedSize
@@ -9919,7 +9920,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsReadOnly
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.get_IsReadOnly
@@ -10152,7 +10153,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.get_Item
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.IList.get_Item
@@ -10286,7 +10287,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.set_Item
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.set_Item
@@ -10455,7 +10456,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.Add
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Add
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Add
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.Add
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Add
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Add
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Add
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Add
@@ -10624,7 +10625,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Clear
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Clear
@@ -10850,7 +10851,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<UILineInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.IsCompatibleObject
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.IsCompatibleObject
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.IsCompatibleObject
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.IsCompatibleObject
 	|-ReadOnlyCollection<Demos.DemoInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<Output.Entry>.IsCompatibleObject
@@ -11056,7 +11057,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.Contains
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.IList.Contains
@@ -11255,7 +11256,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.IndexOf
 	|
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.IList.IndexOf
@@ -11390,7 +11391,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Insert
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Insert
@@ -11559,7 +11560,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Remove
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Remove
@@ -11728,7 +11729,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AdvancedChristmasLights.pointEntry>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.RemoveAt
-	|-ReadOnlyCollection<BaseEntity.ServerFileRequest>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.RemoveAt
@@ -12754,7 +12755,7 @@ public class ConcurrentQueue<T> : IEnumerable<T>, IEnumerable, ICollection, IRea
 [DebuggerTypeProxyAttribute] 
 [DebuggerDisplayAttribute] 
 [Serializable]
-public class ConcurrentQueue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T> 
+public class ConcurrentQueue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T>
 	private object _crossSegmentLock; 
 	private ConcurrentQueue.Segment<T> _tail; 
 	private ConcurrentQueue.Segment<T> _head; 
@@ -14245,6 +14246,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<object, ValueTuple<object, object>>..ctor
 	|-Dictionary<object, Vector3>..ctor
 	|-Dictionary<float, bool>..ctor
+	|-Dictionary<float, HashSet<ItemDefinition>>..ctor
 	|-Dictionary<float, Decimal>..ctor
 	|-Dictionary<float, double>..ctor
 	|-Dictionary<float, short>..ctor
@@ -14750,6 +14752,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<string, ItemDefinition>..ctor
 	|-Dictionary<string, SimpleCollator>..ctor
 	|-Dictionary<string, JToken>..ctor
+	|-Dictionary<string, List<PrefabData>>..ctor
 	|-Dictionary<string, int>..ctor
 	|-Dictionary<string, HeaderInfo>..ctor
 	|-Dictionary<string, HttpHeaders.HeaderBucket>..ctor
@@ -16796,6 +16799,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<string, XmlSqlBinaryReader.NamespaceDecl>.get_Values
 	|-Dictionary<string, Variant>.get_Values
 	|-Dictionary<string, GUIStyle>.get_Values
+	|-Dictionary<string, GameObject>.get_Values
 	|-Dictionary<Type, PostProcessBundle>.get_Values
 	|-Dictionary<uint, ArcadeEntity>.get_Values
 	|-Dictionary<uint, CommunityEntity.CachedTexture>.get_Values
@@ -17814,6 +17818,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<double, uint>.set_Item
 	|-Dictionary<double, ulong>.set_Item
 	|-Dictionary<float, bool>.set_Item
+	|-Dictionary<float, HashSet<ItemDefinition>>.set_Item
 	|-Dictionary<float, double>.set_Item
 	|-Dictionary<float, short>.set_Item
 	|-Dictionary<float, int>.set_Item
@@ -17978,6 +17983,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<string, List<IXmlNode>>.Add
 	|-Dictionary<string, List<PowerlineNode>>.Add
 	|-Dictionary<string, List<DemoShot>>.Add
+	|-Dictionary<string, List<PrefabData>>.Add
 	|-Dictionary<string, List<string>>.Add
 	|-Dictionary<string, PropertyDescriptor>.Add
 	|-Dictionary<string, DataColumn>.Add
@@ -23504,6 +23510,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<double, uint>.TryGetValue
 	|
 	|-Dictionary<double, object>.TryGetValue
+	|-Dictionary<float, HashSet<ItemDefinition>>.TryGetValue
 	|-Dictionary<float, object>.TryGetValue
 	|-Dictionary<float, WaitForSeconds>.TryGetValue
 	|
@@ -40640,7 +40647,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<AdvancedChristmasLights.pointEntry>.get_Default
 	|-Comparer<AlignedLineDrawer.LinePoint>.get_Default
 	|-Comparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Default
-	|-Comparer<BaseEntity.ServerFileRequest>.get_Default
+	|-Comparer<BaseEntity.PendingFileRequest>.get_Default
 	|-Comparer<CardTableUI.KeycodeWithAction>.get_Default
 	|-Comparer<Cassette.LoadRequest>.get_Default
 	|-Comparer<Admin.PlayerInfo>.get_Default
@@ -40817,7 +40824,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|
 	|-Comparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CreateComparer
 	|
-	|-Comparer<BaseEntity.ServerFileRequest>.CreateComparer
+	|-Comparer<BaseEntity.PendingFileRequest>.CreateComparer
 	|
 	|-Comparer<CardTableUI.KeycodeWithAction>.CreateComparer
 	|
@@ -41227,7 +41234,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<WindZoneExManager.CurrentZoneEntry>.System.Collections.IComparer.Compare
 	|-Comparer<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IComparer.Compare
 	|
-	|-Comparer<BaseEntity.ServerFileRequest>.System.Collections.IComparer.Compare
+	|-Comparer<BaseEntity.PendingFileRequest>.System.Collections.IComparer.Compare
 	|-Comparer<CardTableUI.KeycodeWithAction>.System.Collections.IComparer.Compare
 	|-Comparer<Demos.DemoInfo>.System.Collections.IComparer.Compare
 	|-Comparer<Output.Entry>.System.Collections.IComparer.Compare
@@ -41369,7 +41376,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<AdvancedChristmasLights.pointEntry>..ctor
 	|-Comparer<AlignedLineDrawer.LinePoint>..ctor
 	|-Comparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
-	|-Comparer<BaseEntity.ServerFileRequest>..ctor
+	|-Comparer<BaseEntity.PendingFileRequest>..ctor
 	|-Comparer<CardTableUI.KeycodeWithAction>..ctor
 	|-Comparer<Cassette.LoadRequest>..ctor
 	|-Comparer<Admin.PlayerInfo>..ctor
@@ -41697,7 +41704,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Compare
 	|
-	|-ObjectComparer<BaseEntity.ServerFileRequest>.Compare
+	|-ObjectComparer<BaseEntity.PendingFileRequest>.Compare
 	|
 	|-ObjectComparer<CardTableUI.KeycodeWithAction>.Compare
 	|
@@ -42036,7 +42043,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<AdvancedChristmasLights.pointEntry>.Equals
 	|-ObjectComparer<AlignedLineDrawer.LinePoint>.Equals
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Equals
-	|-ObjectComparer<BaseEntity.ServerFileRequest>.Equals
+	|-ObjectComparer<BaseEntity.PendingFileRequest>.Equals
 	|-ObjectComparer<CardTableUI.KeycodeWithAction>.Equals
 	|-ObjectComparer<Cassette.LoadRequest>.Equals
 	|-ObjectComparer<Admin.PlayerInfo>.Equals
@@ -42210,7 +42217,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<AdvancedChristmasLights.pointEntry>.GetHashCode
 	|-ObjectComparer<AlignedLineDrawer.LinePoint>.GetHashCode
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.GetHashCode
-	|-ObjectComparer<BaseEntity.ServerFileRequest>.GetHashCode
+	|-ObjectComparer<BaseEntity.PendingFileRequest>.GetHashCode
 	|-ObjectComparer<CardTableUI.KeycodeWithAction>.GetHashCode
 	|-ObjectComparer<Cassette.LoadRequest>.GetHashCode
 	|-ObjectComparer<Admin.PlayerInfo>.GetHashCode
@@ -42384,7 +42391,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<AdvancedChristmasLights.pointEntry>..ctor
 	|-ObjectComparer<AlignedLineDrawer.LinePoint>..ctor
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
-	|-ObjectComparer<BaseEntity.ServerFileRequest>..ctor
+	|-ObjectComparer<BaseEntity.PendingFileRequest>..ctor
 	|-ObjectComparer<CardTableUI.KeycodeWithAction>..ctor
 	|-ObjectComparer<Cassette.LoadRequest>..ctor
 	|-ObjectComparer<Admin.PlayerInfo>..ctor
@@ -42557,11 +42564,11 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer<T> // TypeDefIndex: 1468
 {
 
-internal sealed class Mscorlib_KeyedCollectionDebugView<K, T> 
+internal sealed class Mscorlib_KeyedCollectionDebugView<K, T>
 
 [TypeDependencyAttribute] 
 [Serializable]
-public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer<T> 
+public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer<T>
 	private static EqualityComparer<T> defaultComparer; 
 
 	public static EqualityComparer<T> Default { get; }
@@ -42576,7 +42583,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<AlignedLineDrawer.LinePoint>.get_Default
 	|-EqualityComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Default
 	|-EqualityComparer<AvatarCache.Entry>.get_Default
-	|-EqualityComparer<BaseEntity.ServerFileRequest>.get_Default
+	|-EqualityComparer<BaseEntity.PendingFileRequest>.get_Default
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>.get_Default
 	|-EqualityComparer<CameraMan.CameraState>.get_Default
 	|-EqualityComparer<CardTableUI.KeycodeWithAction>.get_Default
 	|-EqualityComparer<Cassette.LoadRequest>.get_Default
@@ -42610,6 +42618,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<TabbedPanel.Tab>.get_Default
 	|-EqualityComparer<Output.Entry>.get_Default
 	|-EqualityComparer<RCon.BannedAddresses>.get_Default
+	|-EqualityComparer<RCon.Command>.get_Default
 	|-EqualityComparer<SkeletonDefinition.Bone>.get_Default
 	|-EqualityComparer<Tick.Entry>.get_Default
 	|-EqualityComparer<RenderInfo.RendererInstance>.get_Default
@@ -42746,6 +42755,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<RaycastHit2D>.get_Default
 	|-EqualityComparer<RaycastHit>.get_Default
 	|-EqualityComparer<Rect>.get_Default
+	|-EqualityComparer<AsyncGPUReadbackRequest>.get_Default
 	|-EqualityComparer<RenderTargetIdentifier>.get_Default
 	|-EqualityComparer<Resolution>.get_Default
 	|-EqualityComparer<GlyphRect>.get_Default
@@ -42754,6 +42764,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Navigation>.get_Default
 	|-EqualityComparer<SpriteState>.get_Default
 	|-EqualityComparer<UICharInfo>.get_Default
+	|-EqualityComparer<EventDispatcher.EventRecord>.get_Default
 	|-EqualityComparer<FocusController.FocusedElement>.get_Default
 	|-EqualityComparer<StyleSheetCache.SheetHandleKey>.get_Default
 	|-EqualityComparer<UILineInfo>.get_Default
@@ -42780,7 +42791,9 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<AvatarCache.Entry>.CreateComparer
 	|
-	|-EqualityComparer<BaseEntity.ServerFileRequest>.CreateComparer
+	|-EqualityComparer<BaseEntity.PendingFileRequest>.CreateComparer
+	|
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>.CreateComparer
 	|
 	|-EqualityComparer<CameraMan.CameraState>.CreateComparer
 	|
@@ -42847,6 +42860,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Output.Entry>.CreateComparer
 	|
 	|-EqualityComparer<RCon.BannedAddresses>.CreateComparer
+	|
+	|-EqualityComparer<RCon.Command>.CreateComparer
 	|
 	|-EqualityComparer<SkeletonDefinition.Bone>.CreateComparer
 	|
@@ -43120,6 +43135,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<Rect>.CreateComparer
 	|
+	|-EqualityComparer<AsyncGPUReadbackRequest>.CreateComparer
+	|
 	|-EqualityComparer<RenderTargetIdentifier>.CreateComparer
 	|
 	|-EqualityComparer<Resolution>.CreateComparer
@@ -43135,6 +43152,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<SpriteState>.CreateComparer
 	|
 	|-EqualityComparer<UICharInfo>.CreateComparer
+	|
+	|-EqualityComparer<EventDispatcher.EventRecord>.CreateComparer
 	|
 	|-EqualityComparer<FocusController.FocusedElement>.CreateComparer
 	|
@@ -43249,14 +43268,17 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Color>.IndexOf
 	|-EqualityComparer<Quaternion>.IndexOf
 	|-EqualityComparer<Rect>.IndexOf
+	|-EqualityComparer<AsyncGPUReadbackRequest>.IndexOf
 	|-EqualityComparer<GlyphRect>.IndexOf
+	|-EqualityComparer<EventDispatcher.EventRecord>.IndexOf
 	|-EqualityComparer<FocusController.FocusedElement>.IndexOf
 	|-EqualityComparer<UILineInfo>.IndexOf
 	|-EqualityComparer<Vector4>.IndexOf
 	|-EqualityComparer<WindZoneExManager.CurrentZoneEntry>.IndexOf
 	|-EqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.IndexOf
 	|
-	|-EqualityComparer<BaseEntity.ServerFileRequest>.IndexOf
+	|-EqualityComparer<BaseEntity.PendingFileRequest>.IndexOf
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>.IndexOf
 	|-EqualityComparer<CameraMan.CameraState>.IndexOf
 	|-EqualityComparer<CardTableUI.KeycodeWithAction>.IndexOf
 	|-EqualityComparer<Demos.DemoInfo>.IndexOf
@@ -43285,6 +43307,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<Admin.ServerUGCInfo>.IndexOf
 	|-EqualityComparer<CapsuleParams>.IndexOf
+	|-EqualityComparer<RCon.Command>.IndexOf
 	|-EqualityComparer<SkeletonDefinition.Bone>.IndexOf
 	|-EqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.IndexOf
 	|-EqualityComparer<SteamNewsSource.Story>.IndexOf
@@ -43483,14 +43506,17 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Color>.LastIndexOf
 	|-EqualityComparer<Quaternion>.LastIndexOf
 	|-EqualityComparer<Rect>.LastIndexOf
+	|-EqualityComparer<AsyncGPUReadbackRequest>.LastIndexOf
 	|-EqualityComparer<GlyphRect>.LastIndexOf
+	|-EqualityComparer<EventDispatcher.EventRecord>.LastIndexOf
 	|-EqualityComparer<FocusController.FocusedElement>.LastIndexOf
 	|-EqualityComparer<UILineInfo>.LastIndexOf
 	|-EqualityComparer<Vector4>.LastIndexOf
 	|-EqualityComparer<WindZoneExManager.CurrentZoneEntry>.LastIndexOf
 	|-EqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.LastIndexOf
 	|
-	|-EqualityComparer<BaseEntity.ServerFileRequest>.LastIndexOf
+	|-EqualityComparer<BaseEntity.PendingFileRequest>.LastIndexOf
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>.LastIndexOf
 	|-EqualityComparer<CameraMan.CameraState>.LastIndexOf
 	|-EqualityComparer<CardTableUI.KeycodeWithAction>.LastIndexOf
 	|-EqualityComparer<Demos.DemoInfo>.LastIndexOf
@@ -43519,6 +43545,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<Admin.ServerUGCInfo>.LastIndexOf
 	|-EqualityComparer<CapsuleParams>.LastIndexOf
+	|-EqualityComparer<RCon.Command>.LastIndexOf
 	|-EqualityComparer<SkeletonDefinition.Bone>.LastIndexOf
 	|-EqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.LastIndexOf
 	|-EqualityComparer<SteamNewsSource.Story>.LastIndexOf
@@ -43717,14 +43744,17 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Color>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Quaternion>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Rect>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<AsyncGPUReadbackRequest>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<GlyphRect>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<EventDispatcher.EventRecord>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<FocusController.FocusedElement>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<UILineInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Vector4>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<WindZoneExManager.CurrentZoneEntry>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEqualityComparer.GetHashCode
 	|
-	|-EqualityComparer<BaseEntity.ServerFileRequest>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<BaseEntity.PendingFileRequest>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<CameraMan.CameraState>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<CardTableUI.KeycodeWithAction>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Demos.DemoInfo>.System.Collections.IEqualityComparer.GetHashCode
@@ -43753,6 +43783,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<Admin.ServerUGCInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<CapsuleParams>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<RCon.Command>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<SkeletonDefinition.Bone>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<SteamNewsSource.Story>.System.Collections.IEqualityComparer.GetHashCode
@@ -43948,14 +43979,17 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Color>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Quaternion>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Rect>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<AsyncGPUReadbackRequest>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<GlyphRect>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<EventDispatcher.EventRecord>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<FocusController.FocusedElement>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<UILineInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Vector4>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<WindZoneExManager.CurrentZoneEntry>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEqualityComparer.Equals
 	|
-	|-EqualityComparer<BaseEntity.ServerFileRequest>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<BaseEntity.PendingFileRequest>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<CameraMan.CameraState>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<CardTableUI.KeycodeWithAction>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Demos.DemoInfo>.System.Collections.IEqualityComparer.Equals
@@ -43984,6 +44018,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<Admin.ServerUGCInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<CapsuleParams>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<RCon.Command>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<SkeletonDefinition.Bone>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<SteamNewsSource.Story>.System.Collections.IEqualityComparer.Equals
@@ -44116,7 +44151,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<AlignedLineDrawer.LinePoint>..ctor
 	|-EqualityComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-EqualityComparer<AvatarCache.Entry>..ctor
-	|-EqualityComparer<BaseEntity.ServerFileRequest>..ctor
+	|-EqualityComparer<BaseEntity.PendingFileRequest>..ctor
+	|-EqualityComparer<BaseEntity.QueuedFileRequest>..ctor
 	|-EqualityComparer<CameraMan.CameraState>..ctor
 	|-EqualityComparer<CardTableUI.KeycodeWithAction>..ctor
 	|-EqualityComparer<Cassette.LoadRequest>..ctor
@@ -44150,6 +44186,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<TabbedPanel.Tab>..ctor
 	|-EqualityComparer<Output.Entry>..ctor
 	|-EqualityComparer<RCon.BannedAddresses>..ctor
+	|-EqualityComparer<RCon.Command>..ctor
 	|-EqualityComparer<SkeletonDefinition.Bone>..ctor
 	|-EqualityComparer<Tick.Entry>..ctor
 	|-EqualityComparer<RenderInfo.RendererInstance>..ctor
@@ -44287,6 +44324,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<RaycastHit2D>..ctor
 	|-EqualityComparer<RaycastHit>..ctor
 	|-EqualityComparer<Rect>..ctor
+	|-EqualityComparer<AsyncGPUReadbackRequest>..ctor
 	|-EqualityComparer<RenderTargetIdentifier>..ctor
 	|-EqualityComparer<Resolution>..ctor
 	|-EqualityComparer<GlyphRect>..ctor
@@ -44295,6 +44333,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Navigation>..ctor
 	|-EqualityComparer<SpriteState>..ctor
 	|-EqualityComparer<UICharInfo>..ctor
+	|-EqualityComparer<EventDispatcher.EventRecord>..ctor
 	|-EqualityComparer<FocusController.FocusedElement>..ctor
 	|-EqualityComparer<StyleSheetCache.SheetHandleKey>..ctor
 	|-EqualityComparer<UILineInfo>..ctor
@@ -44318,7 +44357,9 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	public override bool Equals(T x, T y) { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>.Equals
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>.Equals
+	|
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>.Equals
 	|
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>.Equals
 	|
@@ -44423,7 +44464,9 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	public override int GetHashCode(T obj) { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>.GetHashCode
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>.GetHashCode
+	|
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>.GetHashCode
 	|
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>.GetHashCode
 	|-GenericEqualityComparer<InvokeAction>.GetHashCode
@@ -44532,7 +44575,9 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	internal override int IndexOf(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>.IndexOf
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>.IndexOf
+	|
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>.IndexOf
 	|
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>.IndexOf
 	|
@@ -44639,7 +44684,9 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	internal override int LastIndexOf(T[] array, T value, int startIndex, int count) { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>.LastIndexOf
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>.LastIndexOf
+	|
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>.LastIndexOf
 	|
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>.LastIndexOf
 	|
@@ -44746,7 +44793,8 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	public override bool Equals(object obj) { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>.Equals
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>.Equals
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>.Equals
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>.Equals
 	|-GenericEqualityComparer<FoliageKey>.Equals
 	|-GenericEqualityComparer<InstancingKey>.Equals
@@ -44808,7 +44856,8 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	public override int GetHashCode() { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>.GetHashCode
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>.GetHashCode
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>.GetHashCode
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>.GetHashCode
 	|-GenericEqualityComparer<FoliageKey>.GetHashCode
 	|-GenericEqualityComparer<InstancingKey>.GetHashCode
@@ -44870,7 +44919,8 @@ internal class GenericEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex:
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-GenericEqualityComparer<BaseEntity.ServerFileRequest>..ctor
+	|-GenericEqualityComparer<BaseEntity.PendingFileRequest>..ctor
+	|-GenericEqualityComparer<BaseEntity.QueuedFileRequest>..ctor
 	|-GenericEqualityComparer<CommandBufferManager.CommandBufferEntry>..ctor
 	|-GenericEqualityComparer<FoliageKey>..ctor
 	|-GenericEqualityComparer<InstancingKey>..ctor
@@ -45012,12 +45062,16 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TickInterpolator.Segment>.Equals
 	|-ObjectEqualityComparer<NavMeshBuildMarkup>.Equals
 	|-ObjectEqualityComparer<BeforeRenderHelper.OrderBlock>.Equals
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>.Equals
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>.Equals
 	|-ObjectEqualityComparer<FocusController.FocusedElement>.Equals
 	|-ObjectEqualityComparer<UILineInfo>.Equals
 	|-ObjectEqualityComparer<WindZoneExManager.CurrentZoneEntry>.Equals
 	|-ObjectEqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.Equals
 	|
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>.Equals
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.Equals
+	|
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.Equals
 	|
 	|-ObjectEqualityComparer<CameraMan.CameraState>.Equals
 	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.Equals
@@ -45041,6 +45095,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.Equals
 	|-ObjectEqualityComparer<CapsuleParams>.Equals
+	|-ObjectEqualityComparer<RCon.Command>.Equals
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>.Equals
 	|-ObjectEqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.Equals
 	|-ObjectEqualityComparer<SteamNewsSource.Story>.Equals
@@ -45266,6 +45321,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TabbedPanel.Tab>.GetHashCode
 	|-ObjectEqualityComparer<Output.Entry>.GetHashCode
 	|-ObjectEqualityComparer<RCon.BannedAddresses>.GetHashCode
+	|-ObjectEqualityComparer<RCon.Command>.GetHashCode
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>.GetHashCode
 	|-ObjectEqualityComparer<Tick.Entry>.GetHashCode
 	|-ObjectEqualityComparer<WeightedStringList.Container>.GetHashCode
@@ -45329,18 +45385,22 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<NavMeshBuildMarkup>.GetHashCode
 	|-ObjectEqualityComparer<BeforeRenderHelper.OrderBlock>.GetHashCode
 	|-ObjectEqualityComparer<RaycastHit2D>.GetHashCode
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>.GetHashCode
 	|-ObjectEqualityComparer<Resolution>.GetHashCode
 	|-ObjectEqualityComparer<TreeInstance>.GetHashCode
 	|-ObjectEqualityComparer<Navigation>.GetHashCode
 	|-ObjectEqualityComparer<SpriteState>.GetHashCode
 	|-ObjectEqualityComparer<UICharInfo>.GetHashCode
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>.GetHashCode
 	|-ObjectEqualityComparer<FocusController.FocusedElement>.GetHashCode
 	|-ObjectEqualityComparer<UILineInfo>.GetHashCode
 	|-ObjectEqualityComparer<UnitySynchronizationContext.WorkRequest>.GetHashCode
 	|-ObjectEqualityComparer<WindZoneExManager.CurrentZoneEntry>.GetHashCode
 	|-ObjectEqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.GetHashCode
 	|
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>.GetHashCode
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.GetHashCode
+	|
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.GetHashCode
 	|
 	|-ObjectEqualityComparer<CommandBufferManager.CommandBufferEntry>.GetHashCode
 	|-ObjectEqualityComparer<InvokeAction>.GetHashCode
@@ -45557,12 +45617,16 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TickInterpolator.Segment>.IndexOf
 	|-ObjectEqualityComparer<NavMeshBuildMarkup>.IndexOf
 	|-ObjectEqualityComparer<BeforeRenderHelper.OrderBlock>.IndexOf
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>.IndexOf
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>.IndexOf
 	|-ObjectEqualityComparer<FocusController.FocusedElement>.IndexOf
 	|-ObjectEqualityComparer<UILineInfo>.IndexOf
 	|-ObjectEqualityComparer<WindZoneExManager.CurrentZoneEntry>.IndexOf
 	|-ObjectEqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.IndexOf
 	|
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>.IndexOf
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.IndexOf
+	|
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.IndexOf
 	|
 	|-ObjectEqualityComparer<CameraMan.CameraState>.IndexOf
 	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.IndexOf
@@ -45586,6 +45650,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.IndexOf
 	|-ObjectEqualityComparer<CapsuleParams>.IndexOf
+	|-ObjectEqualityComparer<RCon.Command>.IndexOf
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>.IndexOf
 	|-ObjectEqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.IndexOf
 	|-ObjectEqualityComparer<SteamNewsSource.Story>.IndexOf
@@ -45843,12 +45908,16 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TickInterpolator.Segment>.LastIndexOf
 	|-ObjectEqualityComparer<NavMeshBuildMarkup>.LastIndexOf
 	|-ObjectEqualityComparer<BeforeRenderHelper.OrderBlock>.LastIndexOf
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>.LastIndexOf
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>.LastIndexOf
 	|-ObjectEqualityComparer<FocusController.FocusedElement>.LastIndexOf
 	|-ObjectEqualityComparer<UILineInfo>.LastIndexOf
 	|-ObjectEqualityComparer<WindZoneExManager.CurrentZoneEntry>.LastIndexOf
 	|-ObjectEqualityComparer<WorldSplineData.LUTEntry.LUTPoint>.LastIndexOf
 	|
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>.LastIndexOf
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.LastIndexOf
+	|
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.LastIndexOf
 	|
 	|-ObjectEqualityComparer<CameraMan.CameraState>.LastIndexOf
 	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.LastIndexOf
@@ -45872,6 +45941,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.LastIndexOf
 	|-ObjectEqualityComparer<CapsuleParams>.LastIndexOf
+	|-ObjectEqualityComparer<RCon.Command>.LastIndexOf
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>.LastIndexOf
 	|-ObjectEqualityComparer<ReflectionProbeEx.CubemapSkyboxVertex>.LastIndexOf
 	|-ObjectEqualityComparer<SteamNewsSource.Story>.LastIndexOf
@@ -46077,7 +46147,8 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<AlignedLineDrawer.LinePoint>.Equals
 	|-ObjectEqualityComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Equals
 	|-ObjectEqualityComparer<AvatarCache.Entry>.Equals
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>.Equals
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.Equals
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.Equals
 	|-ObjectEqualityComparer<CameraMan.CameraState>.Equals
 	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.Equals
 	|-ObjectEqualityComparer<Cassette.LoadRequest>.Equals
@@ -46111,6 +46182,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TabbedPanel.Tab>.Equals
 	|-ObjectEqualityComparer<Output.Entry>.Equals
 	|-ObjectEqualityComparer<RCon.BannedAddresses>.Equals
+	|-ObjectEqualityComparer<RCon.Command>.Equals
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>.Equals
 	|-ObjectEqualityComparer<Tick.Entry>.Equals
 	|-ObjectEqualityComparer<RenderInfo.RendererInstance>.Equals
@@ -46247,6 +46319,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<RaycastHit2D>.Equals
 	|-ObjectEqualityComparer<RaycastHit>.Equals
 	|-ObjectEqualityComparer<Rect>.Equals
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>.Equals
 	|-ObjectEqualityComparer<RenderTargetIdentifier>.Equals
 	|-ObjectEqualityComparer<Resolution>.Equals
 	|-ObjectEqualityComparer<GlyphRect>.Equals
@@ -46255,6 +46328,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<Navigation>.Equals
 	|-ObjectEqualityComparer<SpriteState>.Equals
 	|-ObjectEqualityComparer<UICharInfo>.Equals
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>.Equals
 	|-ObjectEqualityComparer<FocusController.FocusedElement>.Equals
 	|-ObjectEqualityComparer<StyleSheetCache.SheetHandleKey>.Equals
 	|-ObjectEqualityComparer<UILineInfo>.Equals
@@ -46277,7 +46351,8 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<AlignedLineDrawer.LinePoint>.GetHashCode
 	|-ObjectEqualityComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.GetHashCode
 	|-ObjectEqualityComparer<AvatarCache.Entry>.GetHashCode
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>.GetHashCode
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.GetHashCode
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.GetHashCode
 	|-ObjectEqualityComparer<CameraMan.CameraState>.GetHashCode
 	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.GetHashCode
 	|-ObjectEqualityComparer<Cassette.LoadRequest>.GetHashCode
@@ -46311,6 +46386,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TabbedPanel.Tab>.GetHashCode
 	|-ObjectEqualityComparer<Output.Entry>.GetHashCode
 	|-ObjectEqualityComparer<RCon.BannedAddresses>.GetHashCode
+	|-ObjectEqualityComparer<RCon.Command>.GetHashCode
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>.GetHashCode
 	|-ObjectEqualityComparer<Tick.Entry>.GetHashCode
 	|-ObjectEqualityComparer<RenderInfo.RendererInstance>.GetHashCode
@@ -46447,6 +46523,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<RaycastHit2D>.GetHashCode
 	|-ObjectEqualityComparer<RaycastHit>.GetHashCode
 	|-ObjectEqualityComparer<Rect>.GetHashCode
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>.GetHashCode
 	|-ObjectEqualityComparer<RenderTargetIdentifier>.GetHashCode
 	|-ObjectEqualityComparer<Resolution>.GetHashCode
 	|-ObjectEqualityComparer<GlyphRect>.GetHashCode
@@ -46455,6 +46532,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<Navigation>.GetHashCode
 	|-ObjectEqualityComparer<SpriteState>.GetHashCode
 	|-ObjectEqualityComparer<UICharInfo>.GetHashCode
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>.GetHashCode
 	|-ObjectEqualityComparer<FocusController.FocusedElement>.GetHashCode
 	|-ObjectEqualityComparer<StyleSheetCache.SheetHandleKey>.GetHashCode
 	|-ObjectEqualityComparer<UILineInfo>.GetHashCode
@@ -46477,7 +46555,8 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<AlignedLineDrawer.LinePoint>..ctor
 	|-ObjectEqualityComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-ObjectEqualityComparer<AvatarCache.Entry>..ctor
-	|-ObjectEqualityComparer<BaseEntity.ServerFileRequest>..ctor
+	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>..ctor
+	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>..ctor
 	|-ObjectEqualityComparer<CameraMan.CameraState>..ctor
 	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>..ctor
 	|-ObjectEqualityComparer<Cassette.LoadRequest>..ctor
@@ -46511,6 +46590,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TabbedPanel.Tab>..ctor
 	|-ObjectEqualityComparer<Output.Entry>..ctor
 	|-ObjectEqualityComparer<RCon.BannedAddresses>..ctor
+	|-ObjectEqualityComparer<RCon.Command>..ctor
 	|-ObjectEqualityComparer<SkeletonDefinition.Bone>..ctor
 	|-ObjectEqualityComparer<Tick.Entry>..ctor
 	|-ObjectEqualityComparer<RenderInfo.RendererInstance>..ctor
@@ -46647,6 +46727,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<RaycastHit2D>..ctor
 	|-ObjectEqualityComparer<RaycastHit>..ctor
 	|-ObjectEqualityComparer<Rect>..ctor
+	|-ObjectEqualityComparer<AsyncGPUReadbackRequest>..ctor
 	|-ObjectEqualityComparer<RenderTargetIdentifier>..ctor
 	|-ObjectEqualityComparer<Resolution>..ctor
 	|-ObjectEqualityComparer<GlyphRect>..ctor
@@ -46655,6 +46736,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<Navigation>..ctor
 	|-ObjectEqualityComparer<SpriteState>..ctor
 	|-ObjectEqualityComparer<UICharInfo>..ctor
+	|-ObjectEqualityComparer<EventDispatcher.EventRecord>..ctor
 	|-ObjectEqualityComparer<FocusController.FocusedElement>..ctor
 	|-ObjectEqualityComparer<StyleSheetCache.SheetHandleKey>..ctor
 	|-ObjectEqualityComparer<UILineInfo>..ctor
@@ -46812,7 +46894,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BaseBulb>..ctor
 	|-List<BaseCollision>..ctor
 	|-List<BaseCombatEntity>..ctor
-	|-List<BaseEntity.ServerFileRequest>..ctor
+	|-List<BaseEntity.PendingFileRequest>..ctor
 	|-List<BaseEntity>..ctor
 	|-List<BaseGameMode>..ctor
 	|-List<BaseMelee.MaterialFX>..ctor
@@ -46839,6 +46921,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.PlayerInfo>..ctor
 	|-List<Admin.ServerConvarInfo>..ctor
 	|-List<Admin.ServerUGCInfo>..ctor
+	|-List<Chat.ChatChannel>..ctor
 	|-List<Chat.MuteEntry>..ctor
 	|-List<ConnectedSpeaker>..ctor
 	|-List<ConsoleSystem.Command>..ctor
@@ -47047,6 +47130,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<JsonSerializerInternalReader.CreatorPropertyContext>..ctor
 	|-List<SerializationCallback>..ctor
 	|-List<SerializationErrorCallback>..ctor
+	|-List<OvenItemIcon.OvenSlotConfig>..ctor
+	|-List<OvenItemIcon>..ctor
 	|-List<ParticleSystemContainer.ParticleSystemGroup>..ctor
 	|-List<PathFinder.Node>..ctor
 	|-List<PathFinder.Point>..ctor
@@ -47312,6 +47397,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Joint>..ctor
 	|-List<Material>..ctor
 	|-List<Mesh>..ctor
+	|-List<MeshRenderer>..ctor
 	|-List<PlayerEditorConnectionEvents.MessageTypeSubscribers>..ctor
 	|-List<PhysicMaterial>..ctor
 	|-List<RaycastHit2D>..ctor
@@ -47381,7 +47467,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>..ctor
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-List<BaseArcadeMachine.ScoreEntry>..ctor
-	|-List<BaseEntity.ServerFileRequest>..ctor
+	|-List<BaseEntity.PendingFileRequest>..ctor
 	|-List<BaseVehicle>..ctor
 	|-List<CardTableUI.KeycodeWithAction>..ctor
 	|-List<Cassette.LoadRequest>..ctor
@@ -47589,7 +47675,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|
-	|-List<BaseEntity.ServerFileRequest>..ctor
+	|-List<BaseEntity.PendingFileRequest>..ctor
 	|
 	|-List<CardTableUI.KeycodeWithAction>..ctor
 	|
@@ -47932,7 +48018,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.get_Capacity
 	|-List<AlignedLineDrawer.LinePoint>.get_Capacity
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Capacity
-	|-List<BaseEntity.ServerFileRequest>.get_Capacity
+	|-List<BaseEntity.PendingFileRequest>.get_Capacity
 	|-List<CardTableUI.KeycodeWithAction>.get_Capacity
 	|-List<Cassette.LoadRequest>.get_Capacity
 	|-List<Admin.PlayerInfo>.get_Capacity
@@ -48102,7 +48188,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.set_Capacity
 	|-List<AlignedLineDrawer.LinePoint>.set_Capacity
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.set_Capacity
-	|-List<BaseEntity.ServerFileRequest>.set_Capacity
+	|-List<BaseEntity.PendingFileRequest>.set_Capacity
 	|-List<CardTableUI.KeycodeWithAction>.set_Capacity
 	|-List<Cassette.LoadRequest>.set_Capacity
 	|-List<Admin.PlayerInfo>.set_Capacity
@@ -48284,7 +48370,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BaseArcadeMachine.ScoreEntry>.get_Count
 	|-List<BaseBulb>.get_Count
 	|-List<BaseCollision>.get_Count
-	|-List<BaseEntity.ServerFileRequest>.get_Count
+	|-List<BaseEntity.PendingFileRequest>.get_Count
 	|-List<BaseEntity>.get_Count
 	|-List<BaseMelee.MaterialFX>.get_Count
 	|-List<BaseMission.MissionInstance>.get_Count
@@ -48303,6 +48389,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.PlayerInfo>.get_Count
 	|-List<Admin.ServerConvarInfo>.get_Count
 	|-List<Admin.ServerUGCInfo>.get_Count
+	|-List<Chat.ChatChannel>.get_Count
 	|-List<Chat.MuteEntry>.get_Count
 	|-List<CoverageQueries.Query>.get_Count
 	|-List<CoverageQueryFlare>.get_Count
@@ -48808,7 +48895,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.System.Collections.IList.get_IsFixedSize
 	|-List<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsFixedSize
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsFixedSize
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.get_IsFixedSize
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsFixedSize
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsFixedSize
 	|-List<Cassette.LoadRequest>.System.Collections.IList.get_IsFixedSize
 	|-List<Admin.PlayerInfo>.System.Collections.IList.get_IsFixedSize
@@ -48976,7 +49063,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -49144,7 +49231,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.System.Collections.IList.get_IsReadOnly
 	|-List<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsReadOnly
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsReadOnly
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.get_IsReadOnly
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsReadOnly
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsReadOnly
 	|-List<Cassette.LoadRequest>.System.Collections.IList.get_IsReadOnly
 	|-List<Admin.PlayerInfo>.System.Collections.IList.get_IsReadOnly
@@ -49315,7 +49402,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.ICollection.get_SyncRoot
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -50066,7 +50153,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Rect>.get_Item
 	|-List<UILineInfo>.get_Item
 	|
-	|-List<BaseEntity.ServerFileRequest>.get_Item
+	|-List<BaseEntity.PendingFileRequest>.get_Item
 	|-List<CardTableUI.KeycodeWithAction>.get_Item
 	|-List<Demos.DemoInfo>.get_Item
 	|-List<MidiConvar.KnobBinding>.get_Item
@@ -50094,6 +50181,15 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SteamNewsSource.Story>.get_Item
 	|-List<InventoryItem.Amount>.get_Item
 	|-List<ViewModelDrawEvent>.get_Item
+	|
+	|-List<Chat.ChatChannel>.get_Item
+	|-List<ItemSlot>.get_Item
+	|-List<RegexOptions>.get_Item
+	|-List<uint>.get_Item
+	|-List<Color32>.get_Item
+	|-List<InventoryDefId>.get_Item
+	|-List<int>.get_Item
+	|-List<Int32Enum>.get_Item
 	|
 	|-List<CRedge>.get_Item
 	|-List<VectorData>.get_Item
@@ -50128,14 +50224,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Option>.get_Item
 	|-List<ERMeshCombineUtility.MeshInstance>.get_Item
 	|-List<RenderInfo.RendererInstance>.get_Item
-	|
-	|-List<ItemSlot>.get_Item
-	|-List<RegexOptions>.get_Item
-	|-List<uint>.get_Item
-	|-List<Color32>.get_Item
-	|-List<InventoryDefId>.get_Item
-	|-List<int>.get_Item
-	|-List<Int32Enum>.get_Item
 	|
 	|-List<MeshColliderInstance>.get_Item
 	|
@@ -50286,7 +50374,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<FocusController.FocusedElement>.set_Item
 	|-List<WindZoneExManager.CurrentZoneEntry>.set_Item
 	|
-	|-List<BaseEntity.ServerFileRequest>.set_Item
+	|-List<BaseEntity.PendingFileRequest>.set_Item
 	|
 	|-List<CardTableUI.KeycodeWithAction>.set_Item
 	|-List<ItemSkinDirectory.Skin>.set_Item
@@ -50534,7 +50622,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<UILineInfo>.IsCompatibleObject
 	|-List<WindZoneExManager.CurrentZoneEntry>.IsCompatibleObject
 	|
-	|-List<BaseEntity.ServerFileRequest>.IsCompatibleObject
+	|-List<BaseEntity.PendingFileRequest>.IsCompatibleObject
 	|-List<CardTableUI.KeycodeWithAction>.IsCompatibleObject
 	|-List<Demos.DemoInfo>.IsCompatibleObject
 	|-List<Output.Entry>.IsCompatibleObject
@@ -50738,7 +50826,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.get_Item
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.get_Item
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.get_Item
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.get_Item
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_Item
 	|-List<Demos.DemoInfo>.System.Collections.IList.get_Item
 	|-List<Output.Entry>.System.Collections.IList.get_Item
@@ -50876,7 +50964,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.set_Item
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.set_Item
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.set_Item
 	|
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.set_Item
 	|
@@ -51368,6 +51456,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SerializationCallback>.Add
 	|-List<SerializationErrorCallback>.Add
 	|-List<OutlineObject>.Add
+	|-List<OvenItemIcon>.Add
 	|-List<PaintableItem>.Add
 	|-List<PathFinder.Node>.Add
 	|-List<PathList.MeshObject>.Add
@@ -51631,6 +51720,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry>.Add
 	|
 	|-List<AIState>.Add
+	|-List<Chat.ChatChannel>.Add
 	|-List<ItemSlot>.Add
 	|-List<int>.Add
 	|-List<Int32Enum>.Add
@@ -51672,7 +51762,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<FocusController.FocusedElement>.Add
 	|-List<WindZoneExManager.CurrentZoneEntry>.Add
 	|
-	|-List<BaseEntity.ServerFileRequest>.Add
+	|-List<BaseEntity.PendingFileRequest>.Add
 	|
 	|-List<CardTableUI.KeycodeWithAction>.Add
 	|-List<ItemSkinDirectory.Skin>.Add
@@ -51868,7 +51958,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Add
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.Add
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Add
 	|
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Add
 	|
@@ -52196,7 +52286,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.AddRange
 	|-List<AlignedLineDrawer.LinePoint>.AddRange
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.AddRange
-	|-List<BaseEntity.ServerFileRequest>.AddRange
+	|-List<BaseEntity.PendingFileRequest>.AddRange
 	|-List<BasePathNode>.AddRange
 	|-List<CardTableUI.KeycodeWithAction>.AddRange
 	|-List<Cassette.LoadRequest>.AddRange
@@ -52399,7 +52489,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.AsReadOnly
 	|-List<AlignedLineDrawer.LinePoint>.AsReadOnly
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.AsReadOnly
-	|-List<BaseEntity.ServerFileRequest>.AsReadOnly
+	|-List<BaseEntity.PendingFileRequest>.AsReadOnly
 	|-List<CardTableUI.KeycodeWithAction>.AsReadOnly
 	|-List<Cassette.LoadRequest>.AsReadOnly
 	|-List<Admin.PlayerInfo>.AsReadOnly
@@ -52572,7 +52662,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BaseArcadeMachine.ScoreEntry>.Clear
 	|-List<BaseBulb>.Clear
 	|-List<BaseCollision>.Clear
-	|-List<BaseEntity.ServerFileRequest>.Clear
+	|-List<BaseEntity.PendingFileRequest>.Clear
 	|-List<BaseEntity>.Clear
 	|-List<BaseMeshPaintable>.Clear
 	|-List<BaseMission.MissionInstance>.Clear
@@ -52940,7 +53030,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EntityLink>.Contains
 	|-List<EnvironmentFish>.Contains
 	|-List<Item>.Contains
-	|-List<ItemContainer>.Contains
 	|-List<ItemDefinition>.Contains
 	|-List<LightLOD>.Contains
 	|-List<MapMarker>.Contains
@@ -53028,7 +53117,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.Contains
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.Contains
 	|
-	|-List<BaseEntity.ServerFileRequest>.Contains
+	|-List<BaseEntity.PendingFileRequest>.Contains
 	|-List<CardTableUI.KeycodeWithAction>.Contains
 	|-List<Demos.DemoInfo>.Contains
 	|-List<Output.Entry>.Contains
@@ -53226,7 +53315,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.Contains
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.Contains
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.Contains
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Contains
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Contains
 	|-List<Demos.DemoInfo>.System.Collections.IList.Contains
 	|-List<Output.Entry>.System.Collections.IList.Contains
@@ -53362,7 +53451,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.CopyTo
 	|-List<AlignedLineDrawer.LinePoint>.CopyTo
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
-	|-List<BaseEntity.ServerFileRequest>.CopyTo
+	|-List<BaseEntity.PendingFileRequest>.CopyTo
 	|-List<CardTableUI.KeycodeWithAction>.CopyTo
 	|-List<Cassette.LoadRequest>.CopyTo
 	|-List<Admin.PlayerInfo>.CopyTo
@@ -53536,7 +53625,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.ICollection.CopyTo
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.ICollection.CopyTo
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.ICollection.CopyTo
 	|
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.CopyTo
 	|
@@ -53862,7 +53951,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.CopyTo
 	|-List<AlignedLineDrawer.LinePoint>.CopyTo
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
-	|-List<BaseEntity.ServerFileRequest>.CopyTo
+	|-List<BaseEntity.PendingFileRequest>.CopyTo
 	|-List<CardTableUI.KeycodeWithAction>.CopyTo
 	|-List<Cassette.LoadRequest>.CopyTo
 	|-List<Admin.PlayerInfo>.CopyTo
@@ -54030,7 +54119,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.CopyTo
 	|-List<AlignedLineDrawer.LinePoint>.CopyTo
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
-	|-List<BaseEntity.ServerFileRequest>.CopyTo
+	|-List<BaseEntity.PendingFileRequest>.CopyTo
 	|-List<CardTableUI.KeycodeWithAction>.CopyTo
 	|-List<Cassette.LoadRequest>.CopyTo
 	|-List<Admin.PlayerInfo>.CopyTo
@@ -54203,7 +54292,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.EnsureCapacity
 	|-List<AlignedLineDrawer.LinePoint>.EnsureCapacity
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.EnsureCapacity
-	|-List<BaseEntity.ServerFileRequest>.EnsureCapacity
+	|-List<BaseEntity.PendingFileRequest>.EnsureCapacity
 	|-List<CardTableUI.KeycodeWithAction>.EnsureCapacity
 	|-List<Cassette.LoadRequest>.EnsureCapacity
 	|-List<Admin.PlayerInfo>.EnsureCapacity
@@ -54370,7 +54459,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Exists
 	|-List<AlignedLineDrawer.LinePoint>.Exists
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Exists
-	|-List<BaseEntity.ServerFileRequest>.Exists
+	|-List<BaseEntity.PendingFileRequest>.Exists
 	|-List<CardTableUI.KeycodeWithAction>.Exists
 	|-List<Cassette.LoadRequest>.Exists
 	|-List<Admin.PlayerInfo>.Exists
@@ -54630,7 +54719,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.Find
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.Find
 	|
-	|-List<BaseEntity.ServerFileRequest>.Find
+	|-List<BaseEntity.PendingFileRequest>.Find
 	|-List<CardTableUI.KeycodeWithAction>.Find
 	|-List<Demos.DemoInfo>.Find
 	|-List<Output.Entry>.Find
@@ -54827,7 +54916,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.FindAll
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.FindAll
 	|
-	|-List<BaseEntity.ServerFileRequest>.FindAll
+	|-List<BaseEntity.PendingFileRequest>.FindAll
 	|-List<CardTableUI.KeycodeWithAction>.FindAll
 	|-List<Demos.DemoInfo>.FindAll
 	|-List<Output.Entry>.FindAll
@@ -54943,7 +55032,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.FindIndex
 	|-List<AlignedLineDrawer.LinePoint>.FindIndex
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.FindIndex
-	|-List<BaseEntity.ServerFileRequest>.FindIndex
+	|-List<BaseEntity.PendingFileRequest>.FindIndex
 	|-List<CardTableUI.KeycodeWithAction>.FindIndex
 	|-List<Cassette.LoadRequest>.FindIndex
 	|-List<Admin.PlayerInfo>.FindIndex
@@ -55175,7 +55264,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.FindIndex
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.FindIndex
 	|
-	|-List<BaseEntity.ServerFileRequest>.FindIndex
+	|-List<BaseEntity.PendingFileRequest>.FindIndex
 	|-List<CardTableUI.KeycodeWithAction>.FindIndex
 	|-List<Demos.DemoInfo>.FindIndex
 	|-List<Output.Entry>.FindIndex
@@ -55406,6 +55495,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ItemDefinition>.GetEnumerator
 	|-List<ItemIcon>.GetEnumerator
 	|-List<ItemModConsumable.ConsumableEffect>.GetEnumerator
+	|-List<ItemPickupNotice>.GetEnumerator
 	|-List<Value>.GetEnumerator
 	|-List<KeyframeWidget>.GetEnumerator
 	|-List<LODComponent>.GetEnumerator
@@ -55432,6 +55522,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<JsonSerializerInternalReader.CreatorPropertyContext>.GetEnumerator
 	|-List<SerializationCallback>.GetEnumerator
 	|-List<OutlineObject>.GetEnumerator
+	|-List<OvenItemIcon>.GetEnumerator
 	|-List<PaintableItem>.GetEnumerator
 	|-List<PathFinder.Node>.GetEnumerator
 	|-List<PathFinder.Point>.GetEnumerator
@@ -55469,6 +55560,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlayerLifeStory.GenericStat>.GetEnumerator
 	|-List<PlayerLifeStory.WeaponStats>.GetEnumerator
 	|-List<PlayerTeam.TeamMember>.GetEnumerator
+	|-List<PrefabData>.GetEnumerator
 	|-List<RelationshipManager.PlayerRelationshipInfo>.GetEnumerator
 	|-List<RespawnInformation.SpawnOptions>.GetEnumerator
 	|-List<Tree>.GetEnumerator
@@ -55646,7 +55738,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MidiConvar.NoteBinding>.GetEnumerator
 	|-List<TransformSnapshot>.GetEnumerator
 	|-List<SkinnedMultiMesh.Part>.GetEnumerator
-	|-List<BaseEntity.ServerFileRequest>.GetEnumerator
+	|-List<BaseEntity.PendingFileRequest>.GetEnumerator
 	|-List<Demos.DemoInfo>.GetEnumerator
 	|-List<Output.Entry>.GetEnumerator
 	|-List<ItemSkinDirectory.Skin>.GetEnumerator
@@ -55850,7 +55942,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Demos.DemoInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Output.Entry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -56044,7 +56136,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.System.Collections.IEnumerable.GetEnumerator
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IEnumerable.GetEnumerator
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IEnumerable.GetEnumerator
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Demos.DemoInfo>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Output.Entry>.System.Collections.IEnumerable.GetEnumerator
@@ -56238,7 +56330,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.IndexOf
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.IndexOf
 	|
-	|-List<BaseEntity.ServerFileRequest>.IndexOf
+	|-List<BaseEntity.PendingFileRequest>.IndexOf
 	|-List<CardTableUI.KeycodeWithAction>.IndexOf
 	|-List<Demos.DemoInfo>.IndexOf
 	|-List<Output.Entry>.IndexOf
@@ -56270,14 +56362,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<TreeInstance>.IndexOf
 	|-List<ViewModelDrawEvent>.IndexOf
 	|
-	|-List<CRedge>.IndexOf
-	|-List<ProjectileWeaponMod.Modifier>.IndexOf
-	|-List<VectorData>.IndexOf
-	|-List<TrainCar.TrainCarSnapshot>.IndexOf
-	|-List<Resolution>.IndexOf
-	|-List<UICharInfo>.IndexOf
-	|-List<Vector3>.IndexOf
-	|
+	|-List<Chat.ChatChannel>.IndexOf
 	|-List<ERCell>.IndexOf
 	|-List<ERConnectionGUIStatus>.IndexOf
 	|-List<ERTerrainChange>.IndexOf
@@ -56312,6 +56397,14 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EventSystem>.IndexOf
 	|-List<Dropdown.OptionData>.IndexOf
 	|-List<Vector2i>.IndexOf
+	|
+	|-List<CRedge>.IndexOf
+	|-List<ProjectileWeaponMod.Modifier>.IndexOf
+	|-List<VectorData>.IndexOf
+	|-List<TrainCar.TrainCarSnapshot>.IndexOf
+	|-List<Resolution>.IndexOf
+	|-List<UICharInfo>.IndexOf
+	|-List<Vector3>.IndexOf
 	|
 	|-List<ERMeshCombineUtility.MeshInstance>.IndexOf
 	|-List<RenderInfo.RendererInstance>.IndexOf
@@ -56435,7 +56528,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.IndexOf
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.IndexOf
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.IndexOf
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.IndexOf
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.IndexOf
 	|-List<Demos.DemoInfo>.System.Collections.IList.IndexOf
 	|-List<Output.Entry>.System.Collections.IList.IndexOf
@@ -56597,7 +56690,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<FocusController.FocusedElement>.Insert
 	|-List<WindZoneExManager.CurrentZoneEntry>.Insert
 	|
-	|-List<BaseEntity.ServerFileRequest>.Insert
+	|-List<BaseEntity.PendingFileRequest>.Insert
 	|
 	|-List<BaseViewModel>.Insert
 	|-List<ERMarkerExt>.Insert
@@ -56806,7 +56899,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Insert
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.Insert
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Insert
 	|
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Insert
 	|
@@ -57135,7 +57228,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.InsertRange
 	|
-	|-List<BaseEntity.ServerFileRequest>.InsertRange
+	|-List<BaseEntity.PendingFileRequest>.InsertRange
 	|
 	|-List<CardTableUI.KeycodeWithAction>.InsertRange
 	|
@@ -57628,7 +57721,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.Remove
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.Remove
 	|
-	|-List<BaseEntity.ServerFileRequest>.Remove
+	|-List<BaseEntity.PendingFileRequest>.Remove
 	|-List<CardTableUI.KeycodeWithAction>.Remove
 	|-List<Demos.DemoInfo>.Remove
 	|-List<Output.Entry>.Remove
@@ -57790,7 +57883,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.System.Collections.IList.Remove
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.Remove
 	|
-	|-List<BaseEntity.ServerFileRequest>.System.Collections.IList.Remove
+	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Remove
 	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Remove
 	|-List<Demos.DemoInfo>.System.Collections.IList.Remove
 	|-List<Output.Entry>.System.Collections.IList.Remove
@@ -57955,7 +58048,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<FocusController.FocusedElement>.RemoveAll
 	|-List<WindZoneExManager.CurrentZoneEntry>.RemoveAll
 	|
-	|-List<BaseEntity.ServerFileRequest>.RemoveAll
+	|-List<BaseEntity.PendingFileRequest>.RemoveAll
 	|
 	|-List<CardTableUI.KeycodeWithAction>.RemoveAll
 	|-List<ItemSkinDirectory.Skin>.RemoveAll
@@ -58194,7 +58287,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<FocusController.FocusedElement>.RemoveAt
 	|-List<WindZoneExManager.CurrentZoneEntry>.RemoveAt
 	|
-	|-List<BaseEntity.ServerFileRequest>.RemoveAt
+	|-List<BaseEntity.PendingFileRequest>.RemoveAt
 	|
 	|-List<CardTableUI.KeycodeWithAction>.RemoveAt
 	|-List<ItemSkinDirectory.Skin>.RemoveAt
@@ -58434,7 +58527,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.RemoveRange
 	|-List<AlignedLineDrawer.LinePoint>.RemoveRange
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.RemoveRange
-	|-List<BaseEntity.ServerFileRequest>.RemoveRange
+	|-List<BaseEntity.PendingFileRequest>.RemoveRange
 	|-List<CardTableUI.KeycodeWithAction>.RemoveRange
 	|-List<Cassette.LoadRequest>.RemoveRange
 	|-List<Admin.PlayerInfo>.RemoveRange
@@ -58608,7 +58701,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Reverse
 	|-List<AlignedLineDrawer.LinePoint>.Reverse
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Reverse
-	|-List<BaseEntity.ServerFileRequest>.Reverse
+	|-List<BaseEntity.PendingFileRequest>.Reverse
 	|-List<CardTableUI.KeycodeWithAction>.Reverse
 	|-List<Cassette.LoadRequest>.Reverse
 	|-List<Admin.PlayerInfo>.Reverse
@@ -58781,7 +58874,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Reverse
 	|-List<AlignedLineDrawer.LinePoint>.Reverse
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Reverse
-	|-List<BaseEntity.ServerFileRequest>.Reverse
+	|-List<BaseEntity.PendingFileRequest>.Reverse
 	|-List<CardTableUI.KeycodeWithAction>.Reverse
 	|-List<Cassette.LoadRequest>.Reverse
 	|-List<Admin.PlayerInfo>.Reverse
@@ -58949,7 +59042,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Sort
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
-	|-List<BaseEntity.ServerFileRequest>.Sort
+	|-List<BaseEntity.PendingFileRequest>.Sort
 	|-List<CardTableUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
@@ -59117,7 +59210,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Sort
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
-	|-List<BaseEntity.ServerFileRequest>.Sort
+	|-List<BaseEntity.PendingFileRequest>.Sort
 	|-List<CardTableUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
@@ -59288,7 +59381,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Sort
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
-	|-List<BaseEntity.ServerFileRequest>.Sort
+	|-List<BaseEntity.PendingFileRequest>.Sort
 	|-List<CardTableUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
@@ -59456,7 +59549,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Sort
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
-	|-List<BaseEntity.ServerFileRequest>.Sort
+	|-List<BaseEntity.PendingFileRequest>.Sort
 	|-List<CardTableUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
@@ -59679,7 +59772,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Vector4>.ToArray
 	|-List<AlignedLineDrawer.LinePoint>.ToArray
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.ToArray
-	|-List<BaseEntity.ServerFileRequest>.ToArray
+	|-List<BaseEntity.PendingFileRequest>.ToArray
 	|-List<CardTableUI.KeycodeWithAction>.ToArray
 	|-List<Cassette.LoadRequest>.ToArray
 	|-List<Admin.PlayerInfo>.ToArray
@@ -59840,7 +59933,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.TrimExcess
 	|-List<AlignedLineDrawer.LinePoint>.TrimExcess
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.TrimExcess
-	|-List<BaseEntity.ServerFileRequest>.TrimExcess
+	|-List<BaseEntity.PendingFileRequest>.TrimExcess
 	|-List<CardTableUI.KeycodeWithAction>.TrimExcess
 	|-List<Cassette.LoadRequest>.TrimExcess
 	|-List<Admin.PlayerInfo>.TrimExcess
@@ -60008,7 +60101,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>..cctor
 	|-List<AlignedLineDrawer.LinePoint>..cctor
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>..cctor
-	|-List<BaseEntity.ServerFileRequest>..cctor
+	|-List<BaseEntity.PendingFileRequest>..cctor
 	|-List<CardTableUI.KeycodeWithAction>..cctor
 	|-List<Cassette.LoadRequest>..cctor
 	|-List<Admin.PlayerInfo>..cctor
@@ -60579,16 +60672,16 @@ private class OrderedDictionary.OrderedDictionaryKeyValueCollection : ICollectio
 public class LinkedList<T> : ICollection<T>, IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T>, ISerializable, IDeserializationCallback // TypeDefIndex: 3115
 {
 
-internal sealed class IDictionaryDebugView<K, V> 
+internal sealed class IDictionaryDebugView<K, V>
 
-internal sealed class DictionaryKeyCollectionDebugView<TKey, TValue> 
+internal sealed class DictionaryKeyCollectionDebugView<TKey, TValue>
 
-internal sealed class DictionaryValueCollectionDebugView<TKey, TValue> 
+internal sealed class DictionaryValueCollectionDebugView<TKey, TValue>
 
 [DebuggerTypeProxyAttribute] 
 [DebuggerDisplayAttribute] 
 [Serializable]
-public class LinkedList<T> : ICollection<T>, IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T>, ISerializable, IDeserializationCallback 
+public class LinkedList<T> : ICollection<T>, IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T>, ISerializable, IDeserializationCallback
 	internal LinkedListNode<T> head; 
 	internal int count; 
 	internal int version; 
@@ -60994,7 +61087,7 @@ public class SortedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollec
 [DefaultMemberAttribute] 
 [DebuggerTypeProxyAttribute] 
 [Serializable]
-public class SortedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary, ICollection, IReadOnlyDictionary<TKey, TValue>, IReadOnlyCollection<KeyValuePair<TKey, TValue>> 
+public class SortedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary, ICollection, IReadOnlyDictionary<TKey, TValue>, IReadOnlyCollection<KeyValuePair<TKey, TValue>>
 	private SortedDictionary.KeyCollection<TKey, TValue> _keys; 
 	private SortedDictionary.ValueCollection<TKey, TValue> _values; 
 	private TreeSet<KeyValuePair<TKey, TValue>> _set; 
@@ -61394,7 +61487,6 @@ public sealed class SortedDictionary.KeyCollection<TKey, TValue> : ICollection<T
 	/* GenericInstMethod :
 	|
 	|-SortedDictionary.KeyCollection<long, object>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
-	|
 	|-SortedDictionary.KeyCollection<object, object>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	*/
 
@@ -61402,7 +61494,6 @@ public sealed class SortedDictionary.KeyCollection<TKey, TValue> : ICollection<T
 	/* GenericInstMethod :
 	|
 	|-SortedDictionary.KeyCollection<long, object>.System.Collections.IEnumerable.GetEnumerator
-	|
 	|-SortedDictionary.KeyCollection<object, object>.System.Collections.IEnumerable.GetEnumerator
 	*/
 
@@ -61489,7 +61580,6 @@ public struct SortedDictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumera
 	/* GenericInstMethod :
 	|
 	|-SortedDictionary.KeyCollection.Enumerator<long, object>..ctor
-	|
 	|-SortedDictionary.KeyCollection.Enumerator<object, object>..ctor
 	*/
 
@@ -62456,7 +62546,6 @@ public class SortedSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, ICollec
 	/* GenericInstMethod :
 	|
 	|-SortedSet<KeyValuePair<long, object>>.GetEnumerator
-	|
 	|-SortedSet<KeyValuePair<object, object>>.GetEnumerator
 	|
 	|-SortedSet<object>.GetEnumerator
@@ -63001,7 +63090,7 @@ internal sealed class CacheDict<TKey, TValue> // TypeDefIndex: 3250
 {
 
 [DefaultMemberAttribute] 
-internal sealed class CacheDict<TKey, TValue> 
+internal sealed class CacheDict<TKey, TValue>
 	private readonly int _mask; 
 	private readonly CacheDict.Entry<TKey, TValue>[] _entries; 
 
@@ -63057,6 +63146,7 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<Impostor>..ctor
 	|-HashSet<ImpostorShadows>..ctor
 	|-HashSet<ItemBlueprint>..ctor
+	|-HashSet<ItemDefinition>..ctor
 	|-HashSet<LODComponent>..ctor
 	|-HashSet<ShoutcastStreamer>..ctor
 	|-HashSet<Connection>..ctor
@@ -63188,6 +63278,7 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<BaseEntity>.Contains
 	|-HashSet<BasePathNode>.Contains
 	|-HashSet<ItemBlueprint>.Contains
+	|-HashSet<ItemDefinition>.Contains
 	|-HashSet<ShoutcastStreamer>.Contains
 	|-HashSet<IPEndPoint>.Contains
 	|-HashSet<object>.Contains
@@ -63297,6 +63388,7 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<LODComponent>.GetEnumerator
 	|-HashSet<ShoutcastStreamer>.GetEnumerator
 	|-HashSet<string>.GetEnumerator
+	|-HashSet<ulong>.GetEnumerator
 	|-HashSet<Collider>.GetEnumerator
 	|-HashSet<GameObject>.GetEnumerator
 	|-HashSet<IClippable>.GetEnumerator
@@ -63311,8 +63403,6 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|
 	|-HashSet<uint>.GetEnumerator
 	|
-	|-HashSet<ulong>.GetEnumerator
-	|
 	|-HashSet<Connection>.GetEnumerator
 	|-HashSet<int>.GetEnumerator
 	|
@@ -63326,10 +63416,9 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-HashSet<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-HashSet<ulong>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-HashSet<uint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
-	|-HashSet<ulong>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-HashSet<Vector3>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
@@ -63341,10 +63430,9 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<int>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-HashSet<object>.System.Collections.IEnumerable.GetEnumerator
+	|-HashSet<ulong>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-HashSet<uint>.System.Collections.IEnumerable.GetEnumerator
-	|
-	|-HashSet<ulong>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-HashSet<Vector3>.System.Collections.IEnumerable.GetEnumerator
 	*/
@@ -63394,6 +63482,7 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<Impostor>.Add
 	|-HashSet<ImpostorShadows>.Add
 	|-HashSet<ItemBlueprint>.Add
+	|-HashSet<ItemDefinition>.Add
 	|-HashSet<LODComponent>.Add
 	|-HashSet<ShoutcastStreamer>.Add
 	|-HashSet<Connection>.Add
@@ -63973,6 +64062,7 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<ColliderData>.GetEnumerator
 	|-NativeArray<ColliderState>.GetEnumerator
 	|-NativeArray<byte>.GetEnumerator
+	|
 	|-NativeArray<int>.GetEnumerator
 	|-NativeArray<float>.GetEnumerator
 	|-NativeArray<uint>.GetEnumerator
@@ -63996,6 +64086,7 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<ColliderData>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<ColliderState>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<byte>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|
 	|-NativeArray<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<float>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<uint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -64019,6 +64110,7 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<ColliderData>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<ColliderState>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<byte>.System.Collections.IEnumerable.GetEnumerator
+	|
 	|-NativeArray<int>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<float>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<uint>.System.Collections.IEnumerable.GetEnumerator
@@ -64497,7 +64589,7 @@ public abstract class MouseCaptureEventBase<T> : PointerCaptureEventBase<T> // T
 public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent // TypeDefIndex: 4629
 {
 
-public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent 
+public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent
 	private string m_CommandName; 
 
 	protected string commandName { set; }
@@ -64857,7 +64949,7 @@ public abstract class FocusEventBase<T> : EventBase<T> // TypeDefIndex: 4651
 public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent // TypeDefIndex: 4662
 {
 
-public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent 
+public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private EventModifiers <modifiers>k__BackingField; 
@@ -66981,6 +67073,21 @@ public class ListDictionary<TKey, TVal> : IEnumerable<KeyValuePair<TKey, TVal>>,
 	|-ListDictionary<RendererKey, object>.Contains
 	*/
 
+	public bool ContainsKey(TKey key) { }
+	/* GenericInstMethod :
+	|
+	|-ListDictionary<FoliageKey, object>.ContainsKey
+	|-ListDictionary<object, object>.ContainsKey
+	|-ListDictionary<object, float>.ContainsKey
+	|-ListDictionary<uint, object>.ContainsKey
+	|-ListDictionary<ulong, object>.ContainsKey
+	|
+	|-ListDictionary<InstancingKey, object>.ContainsKey
+	|-ListDictionary<InvokeAction, float>.ContainsKey
+	|
+	|-ListDictionary<RendererKey, object>.ContainsKey
+	*/
+
 	public bool Remove(TKey key) { }
 	/* GenericInstMethod :
 	|
@@ -67232,7 +67339,7 @@ public class ListDictionary<TKey, TVal> : IEnumerable<KeyValuePair<TKey, TVal>>,
 
 }
 
-private sealed class ListDictionary.<GetEnumerator>d__23<TKey, TVal> : IEnumerator<KeyValuePair<TKey, TVal>>, IEnumerator, IDisposable // TypeDefIndex: 4807
+private sealed class ListDictionary.<GetEnumerator>d__24<TKey, TVal> : IEnumerator<KeyValuePair<TKey, TVal>>, IEnumerator, IDisposable // TypeDefIndex: 4807
 {
 	private int <>1__state; 
 	private KeyValuePair<TKey, TVal> <>2__current; 
@@ -67247,97 +67354,97 @@ private sealed class ListDictionary.<GetEnumerator>d__23<TKey, TVal> : IEnumerat
 	public void .ctor(int <>1__state) { }
 	/* GenericInstMethod :
 	|
-	|-ListDictionary.<GetEnumerator>d__23<FoliageKey, object>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<InstancingKey, object>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<InvokeAction, float>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<RendererKey, object>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<object, object>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<object, float>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<uint, object>..ctor
-	|-ListDictionary.<GetEnumerator>d__23<ulong, object>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<FoliageKey, object>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<InstancingKey, object>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<InvokeAction, float>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<RendererKey, object>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<object, object>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<object, float>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<uint, object>..ctor
+	|-ListDictionary.<GetEnumerator>d__24<ulong, object>..ctor
 	*/
 
 	[DebuggerHiddenAttribute] 
 	private void System.IDisposable.Dispose() { }
 	/* GenericInstMethod :
 	|
-	|-ListDictionary.<GetEnumerator>d__23<FoliageKey, object>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<InstancingKey, object>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<InvokeAction, float>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<RendererKey, object>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<object, object>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<object, float>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<uint, object>.System.IDisposable.Dispose
-	|-ListDictionary.<GetEnumerator>d__23<ulong, object>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<FoliageKey, object>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<InstancingKey, object>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<InvokeAction, float>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<RendererKey, object>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<object, object>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<object, float>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<uint, object>.System.IDisposable.Dispose
+	|-ListDictionary.<GetEnumerator>d__24<ulong, object>.System.IDisposable.Dispose
 	*/
 
 	private bool MoveNext() { }
 	/* GenericInstMethod :
 	|
-	|-ListDictionary.<GetEnumerator>d__23<FoliageKey, object>.MoveNext
-	|-ListDictionary.<GetEnumerator>d__23<object, object>.MoveNext
-	|-ListDictionary.<GetEnumerator>d__23<object, float>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<FoliageKey, object>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<object, object>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<object, float>.MoveNext
 	|
-	|-ListDictionary.<GetEnumerator>d__23<InstancingKey, object>.MoveNext
-	|-ListDictionary.<GetEnumerator>d__23<InvokeAction, float>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<InstancingKey, object>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<InvokeAction, float>.MoveNext
 	|
-	|-ListDictionary.<GetEnumerator>d__23<RendererKey, object>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<RendererKey, object>.MoveNext
 	|
-	|-ListDictionary.<GetEnumerator>d__23<uint, object>.MoveNext
-	|-ListDictionary.<GetEnumerator>d__23<ulong, object>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<uint, object>.MoveNext
+	|-ListDictionary.<GetEnumerator>d__24<ulong, object>.MoveNext
 	*/
 
 	[DebuggerHiddenAttribute] 
 	private KeyValuePair<TKey, TVal> System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-ListDictionary.<GetEnumerator>d__23<FoliageKey, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<object, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<object, float>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<uint, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<ulong, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<FoliageKey, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<object, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<object, float>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<uint, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<ulong, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
 	|
-	|-ListDictionary.<GetEnumerator>d__23<InstancingKey, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<InvokeAction, float>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<InstancingKey, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<InvokeAction, float>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
 	|
-	|-ListDictionary.<GetEnumerator>d__23<RendererKey, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<RendererKey, object>.System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<TKey,TVal>>.get_Current
 	*/
 
 	[DebuggerHiddenAttribute] 
 	private void System.Collections.IEnumerator.Reset() { }
 	/* GenericInstMethod :
 	|
-	|-ListDictionary.<GetEnumerator>d__23<FoliageKey, object>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<FoliageKey, object>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<InstancingKey, object>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<InstancingKey, object>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<InvokeAction, float>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<InvokeAction, float>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<RendererKey, object>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<RendererKey, object>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<object, object>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<object, object>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<object, float>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<object, float>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<uint, object>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<uint, object>.System.Collections.IEnumerator.Reset
 	|
-	|-ListDictionary.<GetEnumerator>d__23<ulong, object>.System.Collections.IEnumerator.Reset
+	|-ListDictionary.<GetEnumerator>d__24<ulong, object>.System.Collections.IEnumerator.Reset
 	*/
 
 	[DebuggerHiddenAttribute] 
 	private object System.Collections.IEnumerator.get_Current() { }
 	/* GenericInstMethod :
 	|
-	|-ListDictionary.<GetEnumerator>d__23<FoliageKey, object>.System.Collections.IEnumerator.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<object, object>.System.Collections.IEnumerator.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<object, float>.System.Collections.IEnumerator.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<uint, object>.System.Collections.IEnumerator.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<ulong, object>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<FoliageKey, object>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<object, object>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<object, float>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<uint, object>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<ulong, object>.System.Collections.IEnumerator.get_Current
 	|
-	|-ListDictionary.<GetEnumerator>d__23<InstancingKey, object>.System.Collections.IEnumerator.get_Current
-	|-ListDictionary.<GetEnumerator>d__23<InvokeAction, float>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<InstancingKey, object>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<InvokeAction, float>.System.Collections.IEnumerator.get_Current
 	|
-	|-ListDictionary.<GetEnumerator>d__23<RendererKey, object>.System.Collections.IEnumerator.get_Current
+	|-ListDictionary.<GetEnumerator>d__24<RendererKey, object>.System.Collections.IEnumerator.get_Current
 	*/
 
 }
@@ -67805,7 +67912,7 @@ public class MruDictionary<Key, Value> : IEnumerable<KeyValuePair<Key, Value>>, 
 
 }
 
-public class Grid<T> // TypeDefIndex: 4829
+public class Grid<T> // TypeDefIndex: 4830
 {
 	[CompilerGeneratedAttribute] 
 	private int <CellCount>k__BackingField; 
@@ -67902,7 +68009,7 @@ public class Grid<T> // TypeDefIndex: 4829
 
 }
 
-public class CircularBuffer<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4831
+public class CircularBuffer<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4832
 {
 	private readonly T[] _buffer; 
 	private int _start; 
@@ -68069,13 +68176,13 @@ public class CircularBuffer<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 48
 
 }
 
-internal static class Pool<T> // TypeDefIndex: 4839
+internal static class Pool<T> // TypeDefIndex: 4840
 {
 	public static Pool.PoolCollection<T> Collection; 
 
 }
 
-public static class DictionaryExtensions // TypeDefIndex: 4842
+public static class DictionaryExtensions // TypeDefIndex: 4843
 {
 
 	[ExtensionAttribute] 
@@ -68102,7 +68209,7 @@ public static class DictionaryExtensions // TypeDefIndex: 4842
 
 }
 
-internal static class ListPool<T> // TypeDefIndex: 5020
+internal static class ListPool<T> // TypeDefIndex: 5021
 {
 	private static readonly ObjectPool<List<T>> s_ListPool; 
 
@@ -68165,7 +68272,7 @@ internal static class ListPool<T> // TypeDefIndex: 5020
 
 }
 
-internal class ObjectPool<T> // TypeDefIndex: 5021
+internal class ObjectPool<T> // TypeDefIndex: 5022
 {
 	private readonly Stack<T> m_Stack; 
 	private readonly UnityAction<T> m_ActionOnGet; 
@@ -68230,7 +68337,7 @@ internal class ObjectPool<T> // TypeDefIndex: 5021
 
 }
 
-internal class IndexedSet<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5037
+internal class IndexedSet<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5038
 {
 	private readonly List<T> m_List; 
 	private Dictionary<T, int> m_Dictionary; 
@@ -68369,7 +68476,7 @@ internal class IndexedSet<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumer
 
 }
 
-internal class TweenRunner<T> // TypeDefIndex: 5044
+internal class TweenRunner<T> // TypeDefIndex: 5045
 {
 	protected MonoBehaviour m_CoroutineContainer; 
 	protected IEnumerator m_Tween; 
@@ -68415,7 +68522,7 @@ internal class TweenRunner<T> // TypeDefIndex: 5044
 
 }
 
-internal struct CallResult<T> : INotifyCompletion // TypeDefIndex: 5101
+internal struct CallResult<T> : INotifyCompletion // TypeDefIndex: 5102
 {
 	private SteamAPICall_t call; 
 	private ISteamUtils utils; 
@@ -68504,14 +68611,14 @@ internal struct CallResult<T> : INotifyCompletion // TypeDefIndex: 5101
 
 }
 
-internal struct MatchMakingKeyValuePair // TypeDefIndex: 5505
+internal struct MatchMakingKeyValuePair // TypeDefIndex: 5506
 {
 	internal string Key; 
 	internal string Value; 
 
 }
 
-public abstract class InvokeHandlerBase<T> : SingletonComponent<T> // TypeDefIndex: 5565
+public abstract class InvokeHandlerBase<T> : SingletonComponent<T> // TypeDefIndex: 5566
 {
 	protected ListDictionary<InvokeAction, float> curList; 
 	protected ListHashSet<InvokeAction> addList; 
@@ -68590,7 +68697,7 @@ public abstract class InvokeHandlerBase<T> : SingletonComponent<T> // TypeDefInd
 
 }
 
-public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 5590
+public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 5591
 {
 	public static ListHashSet<T> InstanceList; 
 
@@ -68677,7 +68784,7 @@ public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 5590
 
 }
 
-public class PriorityListComponent<T> : ListComponent<T> // TypeDefIndex: 5592
+public class PriorityListComponent<T> : ListComponent<T> // TypeDefIndex: 5593
 {
 	public static T Instance { get; }
 
@@ -68699,7 +68806,7 @@ public class PriorityListComponent<T> : ListComponent<T> // TypeDefIndex: 5592
 
 }
 
-public abstract class SingletonComponent<T> : SingletonComponent // TypeDefIndex: 5593
+public abstract class SingletonComponent<T> : SingletonComponent // TypeDefIndex: 5594
 {
 	public static T Instance; 
 
@@ -69041,7 +69148,7 @@ public abstract class SingletonComponent<T> : SingletonComponent // TypeDefIndex
 
 }
 
-internal sealed class ElementTryParser<T> : MulticastDelegate // TypeDefIndex: 5761
+internal sealed class ElementTryParser<T> : MulticastDelegate // TypeDefIndex: 5762
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -69082,7 +69189,7 @@ internal sealed class ElementTryParser<T> : MulticastDelegate // TypeDefIndex: 5
 
 }
 
-internal sealed class TryParseDelegate<T> : MulticastDelegate // TypeDefIndex: 5767
+internal sealed class TryParseDelegate<T> : MulticastDelegate // TypeDefIndex: 5768
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -69143,7 +69250,7 @@ internal sealed class TryParseDelegate<T> : MulticastDelegate // TypeDefIndex: 5
 
 }
 
-internal sealed class TryParseListDelegate<T> : MulticastDelegate // TypeDefIndex: 5768
+internal sealed class TryParseListDelegate<T> : MulticastDelegate // TypeDefIndex: 5769
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -69185,7 +69292,7 @@ internal sealed class TryParseListDelegate<T> : MulticastDelegate // TypeDefInde
 
 }
 
-public sealed class HttpHeaderValueCollection<T> : ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5774
+public sealed class HttpHeaderValueCollection<T> : ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5775
 {
 	private readonly List<T> list; 
 	private readonly HttpHeaders headers; 
@@ -69291,14 +69398,14 @@ public sealed class HttpHeaderValueCollection<T> : ICollection<T>, IEnumerable<T
 
 }
 
-public sealed class JsonDictionaryAttribute : JsonContainerAttribute // TypeDefIndex: 5873
+public sealed class JsonDictionaryAttribute : JsonContainerAttribute // TypeDefIndex: 5874
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ThreadSafeStore<TKey, TValue> // TypeDefIndex: 5938
+internal class ThreadSafeStore<TKey, TValue> // TypeDefIndex: 5939
 {
 	private readonly object _lock; 
 	private Dictionary<TKey, TValue> _store; 
@@ -69350,7 +69457,7 @@ internal class ThreadSafeStore<TKey, TValue> // TypeDefIndex: 5938
 
 }
 
-internal class BidirectionalDictionary<TFirst, TSecond> // TypeDefIndex: 5939
+internal class BidirectionalDictionary<TFirst, TSecond> // TypeDefIndex: 5940
 {
 	private readonly IDictionary<TFirst, TSecond> _firstToSecond; 
 	private readonly IDictionary<TSecond, TFirst> _secondToFirst; 
@@ -69404,7 +69511,7 @@ internal class BidirectionalDictionary<TFirst, TSecond> // TypeDefIndex: 5939
 
 }
 
-internal class CollectionWrapper<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IWrappedCollection, IList, ICollection // TypeDefIndex: 5948
+internal class CollectionWrapper<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IWrappedCollection, IList, ICollection // TypeDefIndex: 5949
 {
 	private readonly IList _list; 
 	private readonly ICollection<T> _genericCollection; 
@@ -69570,7 +69677,7 @@ internal class CollectionWrapper<T> : ICollection<T>, IEnumerable<T>, IEnumerabl
 
 }
 
-internal class DictionaryWrapper<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IWrappedDictionary, IDictionary, ICollection // TypeDefIndex: 5951
+internal class DictionaryWrapper<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IWrappedDictionary, IDictionary, ICollection // TypeDefIndex: 5952
 {
 	private readonly IDictionary _dictionary; 
 	private readonly IDictionary<TKey, TValue> _genericDictionary; 
@@ -69770,7 +69877,7 @@ internal class DictionaryWrapper<TKey, TValue> : IDictionary<TKey, TValue>, ICol
 
 }
 
-private struct DictionaryWrapper.DictionaryEnumerator<TKey, TValue, TEnumeratorKey, TEnumeratorValue> : IDictionaryEnumerator, IEnumerator // TypeDefIndex: 5952
+private struct DictionaryWrapper.DictionaryEnumerator<TKey, TValue, TEnumeratorKey, TEnumeratorValue> : IDictionaryEnumerator, IEnumerator // TypeDefIndex: 5953
 {
 	private readonly IEnumerator<KeyValuePair<TEnumeratorKey, TEnumeratorValue>> _e; 
 
@@ -69824,7 +69931,7 @@ private struct DictionaryWrapper.DictionaryEnumerator<TKey, TValue, TEnumeratorK
 
 }
 
-private sealed class DictionaryWrapper.<>c<TKey, TValue> // TypeDefIndex: 5953
+private sealed class DictionaryWrapper.<>c<TKey, TValue> // TypeDefIndex: 5954
 {
 	public static readonly DictionaryWrapper.<>c<TKey, TValue> <>9; 
 	public static Func<DictionaryEntry, KeyValuePair<TKey, TValue>> <>9__25_0; 
@@ -69850,7 +69957,7 @@ private sealed class DictionaryWrapper.<>c<TKey, TValue> // TypeDefIndex: 5953
 
 }
 
-internal sealed class Creator<T> : MulticastDelegate // TypeDefIndex: 5963
+internal sealed class Creator<T> : MulticastDelegate // TypeDefIndex: 5964
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -69879,7 +69986,7 @@ internal sealed class Creator<T> : MulticastDelegate // TypeDefIndex: 5963
 
 }
 
-public class JsonISerializableContract : JsonContainerContract // TypeDefIndex: 5983
+public class JsonISerializableContract : JsonContainerContract // TypeDefIndex: 5984
 {
 	[CompilerGeneratedAttribute] 
 	private ObjectConstructor<object> <ISerializableCreator>k__BackingField; 
@@ -69897,7 +70004,7 @@ public class JsonISerializableContract : JsonContainerContract // TypeDefIndex: 
 
 }
 
-public class JsonDictionaryContract : JsonContainerContract // TypeDefIndex: 6014
+public class JsonDictionaryContract : JsonContainerContract // TypeDefIndex: 6015
 {
 	[CompilerGeneratedAttribute] 
 	private Func<string, string> <DictionaryKeyResolver>k__BackingField; 
@@ -69982,7 +70089,7 @@ public class JsonDictionaryContract : JsonContainerContract // TypeDefIndex: 601
 
 }
 
-internal static class CachedAttributeGetter<T> // TypeDefIndex: 6032
+internal static class CachedAttributeGetter<T> // TypeDefIndex: 6033
 {
 	private static readonly ThreadSafeStore<object, T> TypeAttributeCache; 
 
@@ -70003,7 +70110,7 @@ internal static class CachedAttributeGetter<T> // TypeDefIndex: 6032
 
 }
 
-public sealed class ObjectConstructor<T> : MulticastDelegate // TypeDefIndex: 6035
+public sealed class ObjectConstructor<T> : MulticastDelegate // TypeDefIndex: 6036
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -70032,12 +70139,12 @@ public sealed class ObjectConstructor<T> : MulticastDelegate // TypeDefIndex: 60
 
 }
 
-public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 6059
+public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 6060
 {
 
 [PreserveAttribute] 
 [DefaultMemberAttribute] 
-public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable 
+public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable
 	public static readonly JEnumerable<T> Empty; 
 	private readonly IEnumerable<T> _enumerable; 
 
@@ -70088,7 +70195,7 @@ public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable
 
 }
 
-public abstract class CustomCreationConverter<T> : JsonConverter // TypeDefIndex: 6100
+public abstract class CustomCreationConverter<T> : JsonConverter // TypeDefIndex: 6101
 {
 	public override bool CanWrite { get; }
 
@@ -70131,7 +70238,7 @@ public abstract class CustomCreationConverter<T> : JsonConverter // TypeDefIndex
 
 }
 
-public class KeyValuePairConverter : JsonConverter // TypeDefIndex: 6103
+public class KeyValuePairConverter : JsonConverter // TypeDefIndex: 6104
 {
 	private static readonly ThreadSafeStore<Type, ReflectionObject> ReflectionObjectPerType; 
 
@@ -70150,7 +70257,7 @@ public class KeyValuePairConverter : JsonConverter // TypeDefIndex: 6103
 
 }
 
-public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 6219
+public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 6220
 {
 	private static ListHashSet<T> instanceList; 
 
@@ -70189,7 +70296,7 @@ public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 6219
 
 }
 
-public class Result<T> // TypeDefIndex: 6260
+public class Result<T> // TypeDefIndex: 6261
 {
 	public bool Running; 
 	public bool Success; 
@@ -70204,7 +70311,7 @@ public class Result<T> // TypeDefIndex: 6260
 
 }
 
-internal sealed class DefaultArrayPool<T> : ArrayPool<T> // TypeDefIndex: 6270
+internal sealed class DefaultArrayPool<T> : ArrayPool<T> // TypeDefIndex: 6271
 {
 	private static T[] s_emptyArray; 
 	private readonly DefaultArrayPool.Bucket<T>[] _buckets; 
@@ -70252,7 +70359,7 @@ internal sealed class DefaultArrayPool<T> : ArrayPool<T> // TypeDefIndex: 6270
 
 }
 
-public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6565
+public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6566
 {
 	protected Queue<T> queue; 
 	protected HashSet<T> containerTest; 
@@ -70346,7 +70453,7 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6565
 
 }
 
-public abstract class PersistentObjectWorkQueue<T> // TypeDefIndex: 6566
+public abstract class PersistentObjectWorkQueue<T> // TypeDefIndex: 6567
 {
 	protected List<T> workList; 
 	public string listName; 
@@ -70435,7 +70542,7 @@ public abstract class PersistentObjectWorkQueue<T> // TypeDefIndex: 6566
 
 }
 
-public class WorldSpaceGrid<T> // TypeDefIndex: 6567
+public class WorldSpaceGrid<T> // TypeDefIndex: 6568
 {
 	public T[] Cells; 
 	public float CellSize; 
@@ -70569,7 +70676,7 @@ public class WorldSpaceGrid<T> // TypeDefIndex: 6567
 
 }
 
-public class ObjectPool<T> // TypeDefIndex: 6600
+public class ObjectPool<T> // TypeDefIndex: 6601
 {
 	public List<T> list; 
 
@@ -70594,7 +70701,7 @@ public class ObjectPool<T> // TypeDefIndex: 6600
 
 }
 
-public class GameObjectPool<T> : ObjectPool<T> // TypeDefIndex: 6601
+public class GameObjectPool<T> : ObjectPool<T> // TypeDefIndex: 6602
 {
 	private GameObject poolRoot; 
 
@@ -70625,7 +70732,7 @@ public class GameObjectPool<T> : ObjectPool<T> // TypeDefIndex: 6601
 
 }
 
-public class TimeAverageValueLookup<T> // TypeDefIndex: 6690
+public class TimeAverageValueLookup<T> // TypeDefIndex: 6691
 {
 	public Dictionary<T, TimeAverageValue> dict; 
 
@@ -70662,13 +70769,13 @@ public class TimeAverageValueLookup<T> // TypeDefIndex: 6690
 
 }
 
-internal sealed class Pinnable<T> // TypeDefIndex: 6733
+internal sealed class Pinnable<T> // TypeDefIndex: 6734
 {
 	public T Data; 
 
 }
 
-internal class TweenRunner<T> // TypeDefIndex: 6755
+internal class TweenRunner<T> // TypeDefIndex: 6756
 {
 	protected MonoBehaviour m_CoroutineContainer; 
 	protected IEnumerator m_Tween; 
@@ -70687,7 +70794,7 @@ internal class TweenRunner<T> // TypeDefIndex: 6755
 
 }
 
-internal sealed class CircularBuffer<T> // TypeDefIndex: 7620
+internal sealed class CircularBuffer<T> // TypeDefIndex: 7621
 {
 	private readonly int _capacity; 
 	private readonly T[] _buffer; 
@@ -70771,7 +70878,7 @@ internal sealed class CircularBuffer<T> // TypeDefIndex: 7620
 
 }
 
-internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7629
+internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7630
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -70806,7 +70913,7 @@ internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7629
 
 }
 
-internal struct GameEvent<T> // TypeDefIndex: 7705
+internal struct GameEvent<T> // TypeDefIndex: 7706
 {
 	[CompilerGeneratedAttribute] 
 	private string <GameId>k__BackingField; 
@@ -70882,353 +70989,7 @@ internal struct GameEvent<T> // TypeDefIndex: 7705
 
 }
 
-public class BaseAIBrain<T> : EntityComponent<T>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 8490
-{
-	public bool UseQueuedMovementUpdates; 
-	public bool AllowedToSleep; 
-	public AIDesignSO DefaultDesignSO; 
-	public List<AIDesignSO> Designs; 
-	public AIDesign InstanceSpecificDesign; 
-	public float SenseRange; 
-	public float AttackRangeMultiplier; 
-	public float TargetLostRange; 
-	public float VisionCone; 
-	public bool CheckVisionCone; 
-	public bool CheckLOS; 
-	public bool IgnoreNonVisionSneakers; 
-	public float ListenRange; 
-	public EntityType SenseTypes; 
-	public bool HostileTargetsOnly; 
-	public bool IgnoreSafeZonePlayers; 
-	public int MaxGroupSize; 
-	public float MemoryDuration; 
-	public bool RefreshKnownLOS; 
-	[CompilerGeneratedAttribute] 
-	private BaseAIBrain.BasicAIState<T> <CurrentState>k__BackingField; 
-	public Vector3 mainInterestPoint; 
-	[CompilerGeneratedAttribute] 
-	private AIThinkMode <ThinkMode>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private float <Age>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AIBrainSenses <Senses>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePathFinder <PathFinder>k__BackingField; 
-	public bool UseAIDesign; 
-	[CompilerGeneratedAttribute] 
-	private AIEvents <Events>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private AIDesign <AIDesign>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePlayer <DesigningPlayer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private BasePlayer <OwningPlayer>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsGroupLeader>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private bool <IsGrouped>k__BackingField; 
-	[CompilerGeneratedAttribute] 
-	private IAIGroupable <GroupLeader>k__BackingField; 
-	public bool Pet; 
-	private List<IAIGroupable> groupMembers; 
-	[HeaderAttribute] 
-	public bool CanUseHealingItems; 
-	public float HealChance; 
-	public float HealBelowHealthFraction; 
-
-	public BaseAIBrain.BasicAIState<T> CurrentState { get; set; }
-	public AIThinkMode ThinkMode { get; set; }
-	public float Age { get; set; }
-	public AIBrainSenses Senses { get; set; }
-	public BasePathFinder PathFinder { get; set; }
-	public AIEvents Events { get; set; }
-	public AIDesign AIDesign { get; set; }
-	public BasePlayer DesigningPlayer { get; set; }
-	public BasePlayer OwningPlayer { get; set; }
-	public bool IsGroupLeader { get; set; }
-	public bool IsGrouped { get; set; }
-	public IAIGroupable GroupLeader { get; set; }
-
-
-	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.OnRpcMessage
-	|-BaseAIBrain<BaseFishNPC>.OnRpcMessage
-	|-BaseAIBrain<BasePet>.OnRpcMessage
-	|-BaseAIBrain<CH47HelicopterAIController>.OnRpcMessage
-	|-BaseAIBrain<HumanNPC>.OnRpcMessage
-	|-BaseAIBrain<ScarecrowNPC>.OnRpcMessage
-	|-BaseAIBrain<object>.OnRpcMessage
-	*/
-
-	public bool IsPet() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.IsPet
-	|-BaseAIBrain<BaseFishNPC>.IsPet
-	|-BaseAIBrain<BasePet>.IsPet
-	|-BaseAIBrain<CH47HelicopterAIController>.IsPet
-	|-BaseAIBrain<HumanNPC>.IsPet
-	|-BaseAIBrain<ScarecrowNPC>.IsPet
-	|-BaseAIBrain<object>.IsPet
-	*/
-
-	public void SetPetOwner(BasePlayer player) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.SetPetOwner
-	|-BaseAIBrain<BaseFishNPC>.SetPetOwner
-	|-BaseAIBrain<BasePet>.SetPetOwner
-	|-BaseAIBrain<CH47HelicopterAIController>.SetPetOwner
-	|-BaseAIBrain<HumanNPC>.SetPetOwner
-	|-BaseAIBrain<ScarecrowNPC>.SetPetOwner
-	|-BaseAIBrain<object>.SetPetOwner
-	*/
-
-	public bool IsOwnedBy(BasePlayer player) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.IsOwnedBy
-	|-BaseAIBrain<BaseFishNPC>.IsOwnedBy
-	|-BaseAIBrain<BasePet>.IsOwnedBy
-	|-BaseAIBrain<CH47HelicopterAIController>.IsOwnedBy
-	|-BaseAIBrain<HumanNPC>.IsOwnedBy
-	|-BaseAIBrain<ScarecrowNPC>.IsOwnedBy
-	|-BaseAIBrain<object>.IsOwnedBy
-	*/
-
-	public bool IssuePetCommand(PetCommandType cmd, int param, Nullable<Ray> ray) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.IssuePetCommand
-	|-BaseAIBrain<BaseFishNPC>.IssuePetCommand
-	|-BaseAIBrain<BasePet>.IssuePetCommand
-	|-BaseAIBrain<CH47HelicopterAIController>.IssuePetCommand
-	|-BaseAIBrain<HumanNPC>.IssuePetCommand
-	|-BaseAIBrain<ScarecrowNPC>.IssuePetCommand
-	|-BaseAIBrain<object>.IssuePetCommand
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public BaseAIBrain.BasicAIState<T> get_CurrentState() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_CurrentState
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_CurrentState(BaseAIBrain.BasicAIState<T> value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_CurrentState
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public AIThinkMode get_ThinkMode() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_ThinkMode
-	*/
-
-	[CompilerGeneratedAttribute] 
-	protected void set_ThinkMode(AIThinkMode value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_ThinkMode
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public float get_Age() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_Age
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_Age(float value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_Age
-	*/
-
-	public void ForceSetAge(float age) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.ForceSetAge
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public AIBrainSenses get_Senses() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_Senses
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_Senses(AIBrainSenses value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_Senses
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public BasePathFinder get_PathFinder() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_PathFinder
-	*/
-
-	[CompilerGeneratedAttribute] 
-	protected void set_PathFinder(BasePathFinder value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_PathFinder
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public AIEvents get_Events() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_Events
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_Events(AIEvents value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_Events
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public AIDesign get_AIDesign() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_AIDesign
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_AIDesign(AIDesign value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_AIDesign
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public BasePlayer get_DesigningPlayer() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_DesigningPlayer
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_DesigningPlayer(BasePlayer value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_DesigningPlayer
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public BasePlayer get_OwningPlayer() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_OwningPlayer
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_OwningPlayer(BasePlayer value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_OwningPlayer
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public bool get_IsGroupLeader() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_IsGroupLeader
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_IsGroupLeader(bool value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_IsGroupLeader
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public bool get_IsGrouped() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_IsGrouped
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_IsGrouped(bool value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_IsGrouped
-	*/
-
-	[CompilerGeneratedAttribute] 
-	public IAIGroupable get_GroupLeader() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.get_GroupLeader
-	*/
-
-	[CompilerGeneratedAttribute] 
-	private void set_GroupLeader(IAIGroupable value) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.set_GroupLeader
-	*/
-
-	private bool IAIDesign.CanPlayerDesignAI(BasePlayer player) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.IAIDesign.CanPlayerDesignAI
-	|-BaseAIBrain<BaseFishNPC>.IAIDesign.CanPlayerDesignAI
-	|-BaseAIBrain<BasePet>.IAIDesign.CanPlayerDesignAI
-	|-BaseAIBrain<CH47HelicopterAIController>.IAIDesign.CanPlayerDesignAI
-	|-BaseAIBrain<HumanNPC>.IAIDesign.CanPlayerDesignAI
-	|-BaseAIBrain<ScarecrowNPC>.IAIDesign.CanPlayerDesignAI
-	|-BaseAIBrain<object>.IAIDesign.CanPlayerDesignAI
-	*/
-
-	private bool PlayerCanDesignAI(BasePlayer player) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<object>.PlayerCanDesignAI
-	*/
-
-	public void EventTriggeredStateChange(int newStateContainerID, int sourceEventID) { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>.EventTriggeredStateChange
-	|-BaseAIBrain<BaseFishNPC>.EventTriggeredStateChange
-	|-BaseAIBrain<BasePet>.EventTriggeredStateChange
-	|-BaseAIBrain<CH47HelicopterAIController>.EventTriggeredStateChange
-	|-BaseAIBrain<HumanNPC>.EventTriggeredStateChange
-	|-BaseAIBrain<ScarecrowNPC>.EventTriggeredStateChange
-	|-BaseAIBrain<object>.EventTriggeredStateChange
-	*/
-
-	public void .ctor() { }
-	/* GenericInstMethod :
-	|
-	|-BaseAIBrain<BaseAnimalNPC>..ctor
-	|-BaseAIBrain<BaseFishNPC>..ctor
-	|-BaseAIBrain<BasePet>..ctor
-	|-BaseAIBrain<CH47HelicopterAIController>..ctor
-	|-BaseAIBrain<HumanNPC>..ctor
-	|-BaseAIBrain<ScarecrowNPC>..ctor
-	|-BaseAIBrain<object>..ctor
-	*/
-
-}
-
-public class BoneDictionary // TypeDefIndex: 9123
+public class BoneDictionary // TypeDefIndex: 9127
 {
 	public Transform transform; 
 	public Transform[] transforms; 
@@ -71256,7 +71017,7 @@ public class BoneDictionary // TypeDefIndex: 9123
 
 }
 
-public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 9150
+public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 9154
 {
 	public T component; 
 
@@ -71277,7 +71038,7 @@ public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 9150
 
 }
 
-public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 9229
+public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 9233
 {
 	[SerializeField] 
 	private AmplifyOcclusionEffect ssao; 
@@ -71591,7 +71352,7 @@ public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 922
 
 }
 
-public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 9563
+public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 9568
 {
 	protected T owner; 
 	public MetabolismAttribute calories; 
@@ -71635,10 +71396,10 @@ public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 95
 
 }
 
-public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 9620
+public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 9625
 {
 
-public abstract class BaseModifiers<T> : EntityComponent<T> 
+public abstract class BaseModifiers<T> : EntityComponent<T>
 	public List<Modifier> All; 
 	protected Dictionary<Modifier.ModifierType, float> totalValues; 
 	protected Dictionary<Modifier.ModifierType, float> modifierVariables; 
@@ -71758,7 +71519,7 @@ public abstract class BaseModifiers<T> : EntityComponent<T>
 
 }
 
-public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 9968
+public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 9975
 {
 	public T Component; 
 
@@ -71777,7 +71538,7 @@ public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 9968
 
 }
 
-public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 10410
+public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 10421
 {
 	internal T[] src; 
 	internal T[] dst; 
@@ -71863,7 +71624,7 @@ public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 10410
 
 }
 
-public static class RecipeDictionary // TypeDefIndex: 10753
+public static class RecipeDictionary // TypeDefIndex: 10764
 {
 	private static Dictionary<uint, Dictionary<int, List<Recipe>>> recipeListsDict; 
 
@@ -71880,7 +71641,7 @@ public static class RecipeDictionary // TypeDefIndex: 10753
 
 }
 
-public struct CachedTransform<T> // TypeDefIndex: 11295
+public struct CachedTransform<T> // TypeDefIndex: 11323
 {
 	public T component; 
 	public Vector3 position; 
@@ -71963,7 +71724,7 @@ public struct CachedTransform<T> // TypeDefIndex: 11295
 
 }
 
-public class NativeList<T> : Pool.IPooled // TypeDefIndex: 11389
+public class NativeList<T> : Pool.IPooled // TypeDefIndex: 11417
 {
 	private NativeArray<T> _array; 
 	private int _length; 
@@ -72057,7 +71818,7 @@ public class NativeList<T> : Pool.IPooled // TypeDefIndex: 11389
 
 }
 
-public class PooledList<T> // TypeDefIndex: 11395
+public class PooledList<T> // TypeDefIndex: 11423
 {
 	public List<T> data; 
 
@@ -72106,7 +71867,7 @@ public class PooledList<T> // TypeDefIndex: 11395
 
 }
 
-public class SimpleList<T> // TypeDefIndex: 11398
+public class SimpleList<T> // TypeDefIndex: 11426
 {
 	private const int defaultCapacity = 16;
 	private static readonly T[] emptyArray; 
@@ -72259,7 +72020,7 @@ public class SimpleList<T> // TypeDefIndex: 11398
 
 }
 
-public class TimeCachedValue<T> // TypeDefIndex: 11403
+public class TimeCachedValue<T> // TypeDefIndex: 11431
 {
 	public float refreshCooldown; 
 	public float refreshRandomRange; 
@@ -72290,7 +72051,7 @@ public class TimeCachedValue<T> // TypeDefIndex: 11403
 
 }
 
-public class ResourceRef<T> // TypeDefIndex: 11428
+public class ResourceRef<T> // TypeDefIndex: 11456
 {
 	public string guid; 
 	private T _cachedObject; 
@@ -72342,7 +72103,7 @@ public class ResourceRef<T> // TypeDefIndex: 11428
 
 }
 
-public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 11821
+public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 11849
 {
 	public T value; 
 
@@ -72609,7 +72370,7 @@ public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 11821
 
 }
 
-public class GenericLerp<T> : IDisposable // TypeDefIndex: 12116
+public class GenericLerp<T> : IDisposable // TypeDefIndex: 12144
 {
 	private Interpolator<T> interpolator; 
 	private IGenericLerpTarget<T> target; 
@@ -72732,7 +72493,7 @@ public class GenericLerp<T> : IDisposable // TypeDefIndex: 12116
 
 }
 
-public class Interpolator<T> // TypeDefIndex: 12118
+public class Interpolator<T> // TypeDefIndex: 12146
 {
 	public List<T> list; 
 	public T last; 

@@ -1,10 +1,9 @@
-public class TrainTrackSpline : WorldSpline // TypeDefIndex: 9773
+public class TrainTrackSpline : WorldSpline // TypeDefIndex: 9778
 {
 	[TooltipAttribute] 
 	public bool isStation; 
 	[TooltipAttribute] 
 	public bool aboveGroundSpawn; 
-	public bool useNewTangentCalc; 
 	public int hierarchy; 
 
 
@@ -12,7 +11,7 @@ public class TrainTrackSpline : WorldSpline // TypeDefIndex: 9773
 
 }
 
-public enum TrainTrackSpline.TrackSelection // TypeDefIndex: 9774
+public enum TrainTrackSpline.TrackSelection // TypeDefIndex: 9779
 {
 	public int value__; 
 	public const TrainTrackSpline.TrackSelection Default = 0;

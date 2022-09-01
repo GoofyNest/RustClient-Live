@@ -1,4 +1,4 @@
-public class TextMeshPro : TMP_Text, ILayoutElement // TypeDefIndex: 6866
+public class TextMeshPro : TMP_Text, ILayoutElement // TypeDefIndex: 6867
 {
 	[SerializeField] 
 	private bool m_hasFontAssetChanged; 

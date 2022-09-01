@@ -1,7 +1,7 @@
 internal struct RuntimeStructs.RemoteClass // TypeDefIndex: 13
 {
 
-internal struct RuntimeStructs.RemoteClass 
+internal struct RuntimeStructs.RemoteClass
 	internal IntPtr default_vtable; 
 	internal IntPtr xdomain_vtable; 
 	internal RuntimeStructs.MonoClass* proxy_class; 
@@ -13,7 +13,7 @@ internal struct RuntimeStructs.RemoteClass
 internal struct RuntimeStructs.GenericParamInfo // TypeDefIndex: 15
 {
 
-internal struct RuntimeStructs.GenericParamInfo 
+internal struct RuntimeStructs.GenericParamInfo
 	internal RuntimeStructs.MonoClass* pklass; 
 	internal IntPtr name; 
 	internal ushort flags; 

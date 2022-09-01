@@ -1,4 +1,4 @@
-internal struct servernetadr_t // TypeDefIndex: 5506
+internal struct servernetadr_t // TypeDefIndex: 5507
 {
 	internal ushort ConnectionPort; 
 	internal ushort QueryPort; 

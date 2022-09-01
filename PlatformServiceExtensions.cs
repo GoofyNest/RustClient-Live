@@ -1,16 +1,16 @@
-public static class PlatformServiceExtensions // TypeDefIndex: 6154
+public static class PlatformServiceExtensions // TypeDefIndex: 6155
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=52
 
-internal class <Module> 
+internal class <Module>
 
 [ExtensionAttribute] 
-public static class PlatformServiceExtensions 
+public static class PlatformServiceExtensions
 
 	[ExtensionAttribute] 
 	public static long AddPlayerStatInt(IPlatformService platform, string key, long amount) { }

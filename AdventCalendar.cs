@@ -1,4 +1,4 @@
-public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 8304
+public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 8305
 {
 	private Option __menuOption_Menu_OpenCalendar; 
 	public int startMonth; 
@@ -39,7 +39,7 @@ public class AdventCalendar : BaseCombatEntity // TypeDefIndex: 8304
 
 }
 
-public class AdventCalendar.DayReward // TypeDefIndex: 8305
+public class AdventCalendar.DayReward // TypeDefIndex: 8306
 {
 	public ItemAmount[] rewards; 
 

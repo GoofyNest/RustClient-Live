@@ -1,4 +1,4 @@
-public class BaseMelee : AttackEntity // TypeDefIndex: 8523
+public class BaseMelee : AttackEntity // TypeDefIndex: 8526
 {
 	[HeaderAttribute] 
 	public bool canThrowAsProjectile; 
@@ -76,7 +76,7 @@ public class BaseMelee : AttackEntity // TypeDefIndex: 8523
 
 }
 
-public class BaseMelee.MaterialFX // TypeDefIndex: 8524
+public class BaseMelee.MaterialFX // TypeDefIndex: 8527
 {
 	public string materialName; 
 	public GameObjectRef fx; 

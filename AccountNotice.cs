@@ -1,4 +1,4 @@
-public class AccountNotice // TypeDefIndex: 6203
+public class AccountNotice // TypeDefIndex: 6204
 {
 	[CompilerGeneratedAttribute] 
 	private int <NoticeId>k__BackingField; 

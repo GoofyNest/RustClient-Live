@@ -1,4 +1,4 @@
-public enum TextFilteringContext // TypeDefIndex: 5150
+public enum TextFilteringContext // TypeDefIndex: 5151
 {
 	public int value__; 
 	public const TextFilteringContext Unknown = 0;

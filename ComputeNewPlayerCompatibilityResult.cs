@@ -1,4 +1,4 @@
-internal struct ComputeNewPlayerCompatibilityResult_t : ICallbackData // TypeDefIndex: 5499
+internal struct ComputeNewPlayerCompatibilityResult_t : ICallbackData // TypeDefIndex: 5500
 {
 	internal Result Result; 
 	internal int CPlayersThatDontLikeCandidate; 

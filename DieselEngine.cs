@@ -1,4 +1,4 @@
-public class DieselEngine : StorageContainer // TypeDefIndex: 8380
+public class DieselEngine : StorageContainer // TypeDefIndex: 8382
 {
 	private Option __menuOption_Menu_EngineStartup; 
 	private Option __menuOption_Menu_NoFuel; 

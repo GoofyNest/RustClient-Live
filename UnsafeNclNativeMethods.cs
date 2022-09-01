@@ -1,7 +1,7 @@
 internal static class UnsafeNclNativeMethods.HttpApi // TypeDefIndex: 2981
 {
 
-internal static class UnsafeNclNativeMethods.HttpApi 
+internal static class UnsafeNclNativeMethods.HttpApi
 	private static string[] m_Strings; 
 
 

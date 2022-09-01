@@ -1,4 +1,4 @@
-public class SoundPlayer : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 9039
+public class SoundPlayer : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 9042
 {
 	public SoundDefinition soundDefinition; 
 	public bool playImmediately; 

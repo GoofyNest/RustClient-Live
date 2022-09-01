@@ -1,4 +1,4 @@
-public class Composter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6377
+public class Composter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6378
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class Composter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6377
 
 }
 
-public class Composter : StorageContainer // TypeDefIndex: 8684
+public class Composter : StorageContainer // TypeDefIndex: 8687
 {
 
 	public void .ctor() { }

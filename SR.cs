@@ -10,27 +10,27 @@ internal static class SR // TypeDefIndex: 3
 internal static class SR // TypeDefIndex: 1784
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132
 
-internal class <Module> 
+internal class <Module>
 
-internal static class SR 
+internal static class SR
 
 	internal static string GetString(string name, object[] args) { }
 
@@ -41,47 +41,47 @@ internal static class SR
 internal static class SR // TypeDefIndex: 2453
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=36
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=44
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=68 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=68
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=112 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=112
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=416 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=416
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=664 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=664
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=960 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=960
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1212 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1212
 
-internal class <Module> 
+internal class <Module>
 
-internal static class SR 
+internal static class SR
 
 	internal static string GetString(string name, object[] args) { }
 
@@ -98,7 +98,7 @@ internal static class SR
 internal static class SR // TypeDefIndex: 3188
 {
 
-internal static class SR 
+internal static class SR
 
 	internal static string GetString(string name) { }
 
@@ -109,7 +109,7 @@ internal static class SR
 internal static class SR // TypeDefIndex: 3962
 {
 
-internal static class SR 
+internal static class SR
 
 	internal static string Format(string resourceFormat, object p1) { }
 
@@ -118,7 +118,7 @@ internal static class SR
 internal static class SR // TypeDefIndex: 4164
 {
 
-internal static class SR 
+internal static class SR
 
 	internal static string GetString(string name) { }
 
@@ -132,7 +132,7 @@ internal static class SR
 
 }
 
-internal class SR // TypeDefIndex: 4895
+internal class SR // TypeDefIndex: 4896
 {
 	private static ResourceManager resourceMan; 
 	private static CultureInfo resourceCulture; 
@@ -154,14 +154,14 @@ internal class SR // TypeDefIndex: 4895
 
 }
 
-internal static class SR // TypeDefIndex: 6266
+internal static class SR // TypeDefIndex: 6267
 {
 
-internal class <Module> 
+internal class <Module>
 
-internal static class SR 
+internal static class SR
 
-internal static class SR 
+internal static class SR
 	private static ResourceManager s_resourceManager; 
 	[CompilerGeneratedAttribute] 
 	private static readonly Type <ResourceType>k__BackingField; 
@@ -184,7 +184,7 @@ internal static class SR
 
 }
 
-internal static class SR // TypeDefIndex: 6734
+internal static class SR // TypeDefIndex: 6735
 {
 	private static ResourceManager s_resourceManager; 
 	[CompilerGeneratedAttribute] 

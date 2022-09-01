@@ -1,4 +1,4 @@
-public sealed class LoadProgressEventArgs : LoadEventArgs // TypeDefIndex: 7152
+public sealed class LoadProgressEventArgs : LoadEventArgs // TypeDefIndex: 7153
 {
 	[CompilerGeneratedAttribute] 
 	private int <Progress>k__BackingField; 

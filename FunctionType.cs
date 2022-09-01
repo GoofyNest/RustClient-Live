@@ -1,7 +1,7 @@
-public enum FunctionType // TypeDefIndex: 4883
+public enum FunctionType // TypeDefIndex: 4884
 {
 
-public enum FunctionType 
+public enum FunctionType
 	public int value__; 
 	public const FunctionType Scalar = 0;
 	public const FunctionType Aggregate = 1;

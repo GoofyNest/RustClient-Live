@@ -1,10 +1,30 @@
-public class BaseGameMode : BaseEntity // TypeDefIndex: 8517
+public class BaseGameMode : BaseEntity // TypeDefIndex: 8520
 {
 	private GameMode gameModeScores; 
 	public string[] scoreColumns; 
+	[HeaderAttribute] 
+	public bool globalChat; 
+	public bool localChat; 
+	public bool teamSystem; 
+	public bool safeZone; 
+	public bool ingameMap; 
+	public bool compass; 
+	public bool contactSystem; 
+	public bool crawling; 
+	public bool rustPlus; 
+	public bool wipeBpsOnProtocol; 
+	public int maximumSleepingBags; 
+	public bool returnValidCombatlog; 
+	public bool missionSystem; 
+	public bool mlrs; 
 	public const BaseEntity.Flags Flag_Warmup = 128;
 	public const BaseEntity.Flags Flag_GameOver = 256;
 	public const BaseEntity.Flags Flag_WaitingForPlayers = 512;
+	[HeaderAttribute] 
+	public Translate.Phrase[] addedFeatures; 
+	public Translate.Phrase[] removedFeatures; 
+	public Translate.Phrase[] changedFeatures; 
+	public List<string> convars; 
 	[CompilerGeneratedAttribute] 
 	private static Action<BaseGameMode> GameModeChanged; 
 	public string shortname; 
@@ -23,7 +43,7 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 8517
 	private float warmupStartTime; 
 	private float matchStartTime; 
 	private float matchEndTime; 
-	public string[] gameModeTags; 
+	public List<string> gameModeTags; 
 	public BasePlayer.CameraMode deathCameraMode; 
 	public bool permanent; 
 	public bool limitTeamAuths; 
@@ -79,6 +99,12 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 8517
 	public bool IsTeamGame() { }
 
 	public bool KeepScores() { }
+
+	public int GetMaxBeds(BasePlayer player) { }
+
+	protected virtual void SetupTags() { }
+
+	protected void OnCreated_Vanilla() { }
 
 	[CompilerGeneratedAttribute] 
 	public static void add_GameModeChanged(Action<BaseGameMode> value) { }
@@ -149,7 +175,7 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 8517
 
 }
 
-public class BaseGameMode.GameModeTeam // TypeDefIndex: 8518
+public class BaseGameMode.GameModeTeam // TypeDefIndex: 8521
 {
 	public string name; 
 	public PlayerInventoryProperties[] teamloadouts; 

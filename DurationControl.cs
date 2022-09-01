@@ -1,4 +1,4 @@
-internal struct DurationControl_t : ICallbackData // TypeDefIndex: 5306
+internal struct DurationControl_t : ICallbackData // TypeDefIndex: 5307
 {
 	internal Result Result; 
 	internal AppId Appid; 
@@ -22,7 +22,7 @@ internal struct DurationControl_t : ICallbackData // TypeDefIndex: 5306
 
 }
 
-public struct DurationControl // TypeDefIndex: 5549
+public struct DurationControl // TypeDefIndex: 5550
 {
 	internal DurationControl_t _inner; 
 

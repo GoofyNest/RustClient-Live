@@ -1,4 +1,4 @@
-public class TerrainMargin // TypeDefIndex: 10423
+public class TerrainMargin // TypeDefIndex: 10434
 {
 	private static MaterialPropertyBlock materialPropertyBlock; 
 

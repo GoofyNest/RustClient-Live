@@ -1,7 +1,7 @@
 public abstract class ConfigurationSection : ConfigurationElement // TypeDefIndex: 1693
 {
 
-public abstract class ConfigurationSection : ConfigurationElement 
+public abstract class ConfigurationSection : ConfigurationElement
 
 	protected internal virtual void DeserializeSection(XmlReader reader) { }
 

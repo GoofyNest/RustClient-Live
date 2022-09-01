@@ -1,4 +1,4 @@
-internal struct UserAchievementStored_t : ICallbackData // TypeDefIndex: 5388
+internal struct UserAchievementStored_t : ICallbackData // TypeDefIndex: 5389
 {
 	internal ulong GameID; 
 	internal bool GroupAchievement; 

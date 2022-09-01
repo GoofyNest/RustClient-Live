@@ -1,4 +1,4 @@
-internal struct UserSubscribedItemsListChanged_t : ICallbackData // TypeDefIndex: 5447
+internal struct UserSubscribedItemsListChanged_t : ICallbackData // TypeDefIndex: 5448
 {
 	internal AppId AppID; 
 	public static int _datasize; 

@@ -1,4 +1,4 @@
-public class TimeAverageValue // TypeDefIndex: 6689
+public class TimeAverageValue // TypeDefIndex: 6690
 {
 	private TimeAverageValueData data; 
 

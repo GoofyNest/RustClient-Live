@@ -4099,7 +4099,7 @@ public class DataView : MarshalByValueComponent, IBindingList, IList, ICollectio
 [DefaultEventAttribute] 
 [DefaultPropertyAttribute] 
 [DefaultMemberAttribute] 
-public class DataView : MarshalByValueComponent, IBindingList, IList, ICollection, IEnumerable 
+public class DataView : MarshalByValueComponent, IBindingList, IList, ICollection, IEnumerable
 	private DataViewManager _dataViewManager; 
 	private DataTable _table; 
 	private bool _locked; 
@@ -5053,7 +5053,7 @@ public sealed class DataColumnMappingCollection : MarshalByRefObject // TypeDefI
 {
 
 [DefaultMemberAttribute] 
-public sealed class DataColumnMappingCollection : MarshalByRefObject 
+public sealed class DataColumnMappingCollection : MarshalByRefObject
 	private List<DataColumnMapping> _items; 
 
 	[BrowsableAttribute] 
@@ -5780,11 +5780,11 @@ public abstract class DbTransaction : MarshalByRefObject, IDisposable // TypeDef
 
 }
 
-public sealed class DataContractAttribute : Attribute // TypeDefIndex: 5705
+public sealed class DataContractAttribute : Attribute // TypeDefIndex: 5706
 {
 
 [AttributeUsageAttribute] 
-public sealed class DataContractAttribute : Attribute 
+public sealed class DataContractAttribute : Attribute
 	private bool isReference; 
 
 	public bool IsReference { get; }
@@ -5794,7 +5794,7 @@ public sealed class DataContractAttribute : Attribute
 
 }
 
-public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5706
+public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5707
 {
 	private string name; 
 	private int order; 
@@ -5817,7 +5817,7 @@ public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5706
 
 }
 
-public static class Database // TypeDefIndex: 6181
+public static class Database // TypeDefIndex: 6182
 {
 
 	public static void Insert(string parent, object contents, Action<bool> onFinished) { }
@@ -5836,7 +5836,7 @@ public static class Database // TypeDefIndex: 6181
 
 }
 
-private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6182
+private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6183
 {
 	public Action<bool> onFinished; 
 
@@ -5847,7 +5847,7 @@ private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6182
 
 }
 
-private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6183
+private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6184
 {
 	public Action<bool, string> onFinished; 
 
@@ -5858,7 +5858,7 @@ private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6183
 
 }
 
-private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6184
+private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6185
 {
 	public Action<bool> onFinished; 
 
@@ -5869,7 +5869,7 @@ private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6184
 
 }
 
-private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6185
+private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6186
 {
 	public Result<T> result; 
 	public Action<Result<T>> onFinished; 
@@ -5896,7 +5896,7 @@ private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6185
 
 }
 
-private sealed class Database.<>c__3<T> // TypeDefIndex: 6186
+private sealed class Database.<>c__3<T> // TypeDefIndex: 6187
 {
 	public static readonly Database.<>c__3<T> <>9; 
 	public static Func<QueryResponse, Result.Entry<T>> <>9__3_2; 
@@ -5922,7 +5922,7 @@ private sealed class Database.<>c__3<T> // TypeDefIndex: 6186
 
 }
 
-private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6187
+private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6188
 {
 	public Action<int> onResult; 
 
@@ -5933,7 +5933,7 @@ private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6187
 
 }
 
-private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6188
+private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6189
 {
 	public int count; 
 	public Database.<>c__DisplayClass4_0 CS$<>8__locals1; 
@@ -5945,10 +5945,10 @@ private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6188
 
 }
 
-public class Database // TypeDefIndex: 7356
+public class Database // TypeDefIndex: 7357
 {
 
-public class Database 
+public class Database
 	private IntPtr _connection; 
 	[CompilerGeneratedAttribute] 
 	private bool <IsConnectionOpen>k__BackingField; 
@@ -6124,13 +6124,13 @@ public class Database
 
 }
 
-private struct Database.<>c__DisplayClass19_0<T> // TypeDefIndex: 7357
+private struct Database.<>c__DisplayClass19_0<T> // TypeDefIndex: 7358
 {
 	public int type; 
 
 }
 
-private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 7358
+private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 7359
 {
 	private int <>1__state; 
 	private T <>2__current; 
@@ -6210,7 +6210,7 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 
 }
 
-internal static class DataTypesUtilities // TypeDefIndex: 7622
+internal static class DataTypesUtilities // TypeDefIndex: 7623
 {
 
 	public static ushort Combine(SevenBitNumber head, SevenBitNumber tail) { }
@@ -6237,7 +6237,7 @@ internal static class DataTypesUtilities // TypeDefIndex: 7622
 
 }
 
-internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7825
+internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7826
 {
 	public override bool IsBrowserDisplay { get; }
 	public override bool IsBrowserSave { get; }
@@ -6271,7 +6271,7 @@ internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7825
 
 }
 
-internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7826
+internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7827
 {
 	protected DbcsConvert convert; 
 
@@ -6284,7 +6284,7 @@ internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7826
 
 }
 
-internal class DbcsConvert // TypeDefIndex: 7827
+internal class DbcsConvert // TypeDefIndex: 7828
 {
 	public byte[] n2u; 
 	public byte[] u2n; 
@@ -6299,7 +6299,7 @@ internal class DbcsConvert // TypeDefIndex: 7827
 
 }
 
-public class Data : ConsoleSystem // TypeDefIndex: 11894
+public class Data : ConsoleSystem // TypeDefIndex: 11922
 {
 
 	[ServerVar] 

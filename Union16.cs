@@ -1,4 +1,4 @@
-public struct Union16 // TypeDefIndex: 4825
+public struct Union16 // TypeDefIndex: 4826
 {
 	public short i; 
 	public ushort u; 

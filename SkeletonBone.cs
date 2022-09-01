@@ -4,7 +4,7 @@ public struct SkeletonBone // TypeDefIndex: 4491
 [RequiredByNativeCodeAttribute] 
 [NativeTypeAttribute] 
 [NativeHeaderAttribute] 
-public struct SkeletonBone 
+public struct SkeletonBone
 	[NativeNameAttribute] 
 	public string name; 
 	[NativeNameAttribute] 

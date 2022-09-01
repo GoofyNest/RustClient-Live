@@ -1,4 +1,4 @@
-public struct Key // TypeDefIndex: 6283
+public struct Key // TypeDefIndex: 6284
 {
 	[CompilerGeneratedAttribute] 
 	private uint <Field>k__BackingField; 

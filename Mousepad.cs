@@ -1,7 +1,7 @@
-public enum Mousepad.EFFECT_TYPE // TypeDefIndex: 7663
+public enum Mousepad.EFFECT_TYPE // TypeDefIndex: 7664
 {
 
-public enum Mousepad.EFFECT_TYPE 
+public enum Mousepad.EFFECT_TYPE
 	public int value__; 
 	public const Mousepad.EFFECT_TYPE CHROMA_NONE = 0;
 	public const Mousepad.EFFECT_TYPE CHROMA_BREATHING = 1;
@@ -14,7 +14,7 @@ public enum Mousepad.EFFECT_TYPE
 
 }
 
-public struct Mousepad.STATIC_EFFECT_TYPE // TypeDefIndex: 7664
+public struct Mousepad.STATIC_EFFECT_TYPE // TypeDefIndex: 7665
 {
 	public int Color; 
 

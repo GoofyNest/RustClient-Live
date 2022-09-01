@@ -1,4 +1,4 @@
-public class QDQDOOQQDQODD // TypeDefIndex: 7194
+public class QDQDOOQQDQODD // TypeDefIndex: 7195
 {
 	public string roadTypeName; 
 	public double id; 

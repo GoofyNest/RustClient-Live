@@ -1,4 +1,4 @@
-public enum ERExitType // TypeDefIndex: 7206
+public enum ERExitType // TypeDefIndex: 7207
 {
 	public int value__; 
 	public const ERExitType RightExit = 0;

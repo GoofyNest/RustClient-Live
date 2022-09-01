@@ -1,4 +1,4 @@
-public class ContainerSourceLocalPlayer : ItemContainerSource // TypeDefIndex: 10848
+public class ContainerSourceLocalPlayer : ItemContainerSource // TypeDefIndex: 10859
 {
 	public PlayerInventory.Type type; 
 

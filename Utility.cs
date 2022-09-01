@@ -31,7 +31,7 @@ public class Utility.GPUBuffer<T> // TypeDefIndex: 4720
 
 }
 
-public static class Utility // TypeDefIndex: 5272
+public static class Utility // TypeDefIndex: 5273
 {
 	private static readonly byte[] readBuffer; 
 

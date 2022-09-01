@@ -1,4 +1,4 @@
-internal enum WorkshopFileAction // TypeDefIndex: 5155
+internal enum WorkshopFileAction // TypeDefIndex: 5156
 {
 	public int value__; 
 	public const WorkshopFileAction Played = 0;

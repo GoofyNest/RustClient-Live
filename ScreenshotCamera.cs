@@ -1,4 +1,4 @@
-public class ScreenshotCamera : RustCamera<ScreenshotCamera> // TypeDefIndex: 9233
+public class ScreenshotCamera : RustCamera<ScreenshotCamera> // TypeDefIndex: 9237
 {
 	public static List<ScreenshotCamera> activeScreenshotCameras; 
 

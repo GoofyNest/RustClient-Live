@@ -1,4 +1,4 @@
-public enum NoteStartDetectionPolicy // TypeDefIndex: 7449
+public enum NoteStartDetectionPolicy // TypeDefIndex: 7450
 {
 	public int value__; 
 	public const NoteStartDetectionPolicy FirstNoteOn = 0;

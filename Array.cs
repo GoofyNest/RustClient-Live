@@ -274,7 +274,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<AtmosphereVolumeRenderer.CurrentVolumeEntry>
 	|
-	|-Array.IndexOf<BaseEntity.ServerFileRequest>
+	|-Array.IndexOf<BaseEntity.PendingFileRequest>
+	|
+	|-Array.IndexOf<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.IndexOf<CardTableUI.KeycodeWithAction>
 	|
@@ -337,6 +339,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOf<Output.Entry>
 	|
 	|-Array.IndexOf<RCon.BannedAddresses>
+	|
+	|-Array.IndexOf<RCon.Command>
 	|
 	|-Array.IndexOf<SkeletonDefinition.Bone>
 	|
@@ -520,6 +524,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<long>
 	|
+	|-Array.IndexOf<IntPtr>
+	|
 	|-Array.IndexOf<sbyte>
 	|
 	|-Array.IndexOf<float>
@@ -562,6 +568,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<Rect>
 	|
+	|-Array.IndexOf<AsyncGPUReadbackRequest>
+	|
 	|-Array.IndexOf<RenderTargetIdentifier>
 	|
 	|-Array.IndexOf<Resolution>
@@ -571,6 +579,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOf<TreeInstance>
 	|
 	|-Array.IndexOf<UICharInfo>
+	|
+	|-Array.IndexOf<EventDispatcher.EventRecord>
 	|
 	|-Array.IndexOf<FocusController.FocusedElement>
 	|
@@ -681,7 +691,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Reverse<AtmosphereVolumeRenderer.CurrentVolumeEntry>
 	|
-	|-Array.Reverse<BaseEntity.ServerFileRequest>
+	|-Array.Reverse<BaseEntity.PendingFileRequest>
 	|
 	|-Array.Reverse<CardTableUI.KeycodeWithAction>
 	|
@@ -1075,7 +1085,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Sort<AtmosphereVolumeRenderer.CurrentVolumeEntry>
 	|
-	|-Array.Sort<BaseEntity.ServerFileRequest>
+	|-Array.Sort<BaseEntity.PendingFileRequest>
 	|
 	|-Array.Sort<CardTableUI.KeycodeWithAction>
 	|
@@ -1535,7 +1545,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<AlignedLineDrawer.LinePoint>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<AvatarCache.Entry>
-	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.PendingFileRequest>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.QueuedFileRequest>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CameraMan.CameraState>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CardTableUI.KeycodeWithAction>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Cassette.LoadRequest>
@@ -2254,7 +2265,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Add<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__ICollection_Add<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__ICollection_Add<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__ICollection_Add<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__ICollection_Add<CameraMan.CameraState>
 	|
@@ -3674,7 +3687,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__ICollection_Remove<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__ICollection_Remove<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__ICollection_Remove<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__ICollection_Remove<CameraMan.CameraState>
 	|
@@ -5094,7 +5109,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__ICollection_Contains<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__ICollection_Contains<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__ICollection_Contains<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__ICollection_Contains<CameraMan.CameraState>
 	|
@@ -6510,7 +6527,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<AlignedLineDrawer.LinePoint>
 	|-Array.InternalArray__ICollection_CopyTo<AtmosphereVolumeRenderer.CurrentVolumeEntry>
 	|-Array.InternalArray__ICollection_CopyTo<AvatarCache.Entry>
-	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.PendingFileRequest>
+	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.QueuedFileRequest>
 	|-Array.InternalArray__ICollection_CopyTo<CameraMan.CameraState>
 	|-Array.InternalArray__ICollection_CopyTo<CardTableUI.KeycodeWithAction>
 	|-Array.InternalArray__ICollection_CopyTo<Cassette.LoadRequest>
@@ -7227,7 +7245,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__IReadOnlyList_get_Item<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__IReadOnlyList_get_Item<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<CameraMan.CameraState>
 	|
@@ -8649,7 +8669,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__Insert<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__Insert<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__Insert<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__Insert<CameraMan.CameraState>
 	|
@@ -10071,7 +10093,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__IndexOf<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__IndexOf<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__IndexOf<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__IndexOf<CameraMan.CameraState>
 	|
@@ -11491,7 +11515,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__get_Item<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__get_Item<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__get_Item<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__get_Item<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__get_Item<CameraMan.CameraState>
 	|
@@ -12911,7 +12937,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<AvatarCache.Entry>
 	|
-	|-Array.InternalArray__set_Item<BaseEntity.ServerFileRequest>
+	|-Array.InternalArray__set_Item<BaseEntity.PendingFileRequest>
+	|
+	|-Array.InternalArray__set_Item<BaseEntity.QueuedFileRequest>
 	|
 	|-Array.InternalArray__set_Item<CameraMan.CameraState>
 	|
@@ -14425,6 +14453,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Empty<ParticleSystem>
 	|-Array.Empty<Renderer>
 	|-Array.Empty<Rigidbody>
+	|-Array.Empty<BaseEntity.QueuedFileRequest>
 	|-Array.Empty<RCon.Command>
 	|-Array.Empty<bool>
 	|-Array.Empty<char>
@@ -14511,14 +14540,17 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<BeforeRenderHelper.OrderBlock>
 	|-Array.IndexOfImpl<Color>
 	|-Array.IndexOfImpl<Rect>
+	|-Array.IndexOfImpl<AsyncGPUReadbackRequest>
 	|-Array.IndexOfImpl<GlyphRect>
+	|-Array.IndexOfImpl<EventDispatcher.EventRecord>
 	|-Array.IndexOfImpl<FocusController.FocusedElement>
 	|-Array.IndexOfImpl<UILineInfo>
 	|-Array.IndexOfImpl<Vector4>
 	|-Array.IndexOfImpl<WindZoneExManager.CurrentZoneEntry>
 	|-Array.IndexOfImpl<WorldSplineData.LUTEntry.LUTPoint>
 	|
-	|-Array.IndexOfImpl<BaseEntity.ServerFileRequest>
+	|-Array.IndexOfImpl<BaseEntity.PendingFileRequest>
+	|-Array.IndexOfImpl<BaseEntity.QueuedFileRequest>
 	|-Array.IndexOfImpl<CardTableUI.KeycodeWithAction>
 	|-Array.IndexOfImpl<Demos.DemoInfo>
 	|-Array.IndexOfImpl<Output.Entry>
@@ -14544,6 +14576,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOfImpl<Admin.ServerUGCInfo>
 	|-Array.IndexOfImpl<CapsuleParams>
+	|-Array.IndexOfImpl<RCon.Command>
 	|-Array.IndexOfImpl<SkeletonDefinition.Bone>
 	|-Array.IndexOfImpl<ReflectionProbeEx.CubemapSkyboxVertex>
 	|-Array.IndexOfImpl<SteamNewsSource.Story>
@@ -14636,6 +14669,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<uint>
 	|
 	|-Array.IndexOfImpl<long>
+	|-Array.IndexOfImpl<IntPtr>
 	|-Array.IndexOfImpl<object>
 	|-Array.IndexOfImpl<ulong>
 	|
@@ -14744,7 +14778,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<WindZoneExManager.CurrentZoneEntry>
 	|-Array.UnsafeLoad<WorldSplineData.LUTEntry.LUTPoint>
 	|
-	|-Array.UnsafeLoad<BaseEntity.ServerFileRequest>
+	|-Array.UnsafeLoad<BaseEntity.PendingFileRequest>
 	|-Array.UnsafeLoad<CardTableUI.KeycodeWithAction>
 	|-Array.UnsafeLoad<Demos.DemoInfo>
 	|-Array.UnsafeLoad<Output.Entry>
@@ -14927,7 +14961,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AlignedLineDrawer.LinePoint>..ctor
 	|-Array.InternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-Array.InternalEnumerator<AvatarCache.Entry>..ctor
-	|-Array.InternalEnumerator<BaseEntity.ServerFileRequest>..ctor
+	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>..ctor
+	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>..ctor
 	|-Array.InternalEnumerator<CameraMan.CameraState>..ctor
 	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>..ctor
 	|-Array.InternalEnumerator<Cassette.LoadRequest>..ctor
@@ -15640,7 +15675,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AlignedLineDrawer.LinePoint>.Dispose
 	|-Array.InternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Dispose
 	|-Array.InternalEnumerator<AvatarCache.Entry>.Dispose
-	|-Array.InternalEnumerator<BaseEntity.ServerFileRequest>.Dispose
+	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.Dispose
+	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.Dispose
 	|-Array.InternalEnumerator<CameraMan.CameraState>.Dispose
 	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.Dispose
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.Dispose
@@ -16353,7 +16389,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AlignedLineDrawer.LinePoint>.MoveNext
 	|-Array.InternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.MoveNext
 	|-Array.InternalEnumerator<AvatarCache.Entry>.MoveNext
-	|-Array.InternalEnumerator<BaseEntity.ServerFileRequest>.MoveNext
+	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.MoveNext
+	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.MoveNext
 	|-Array.InternalEnumerator<CameraMan.CameraState>.MoveNext
 	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.MoveNext
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.MoveNext
@@ -17070,7 +17107,9 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<AvatarCache.Entry>.get_Current
 	|
-	|-Array.InternalEnumerator<BaseEntity.ServerFileRequest>.get_Current
+	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.get_Current
+	|
+	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.get_Current
 	|
 	|-Array.InternalEnumerator<CameraMan.CameraState>.get_Current
 	|
@@ -18486,7 +18525,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<AlignedLineDrawer.LinePoint>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<AvatarCache.Entry>.System.Collections.IEnumerator.Reset
-	|-Array.InternalEnumerator<BaseEntity.ServerFileRequest>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.Reset
@@ -19203,7 +19243,9 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<AvatarCache.Entry>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.InternalEnumerator<BaseEntity.ServerFileRequest>.System.Collections.IEnumerator.get_Current
+	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.get_Current
 	|
@@ -20629,7 +20671,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AlignedLineDrawer.LinePoint>.Dispose
 	|-Array.EmptyInternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Dispose
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.Dispose
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>.Dispose
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.Dispose
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.Dispose
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.Dispose
 	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.Dispose
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.Dispose
@@ -21342,7 +21385,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AlignedLineDrawer.LinePoint>.MoveNext
 	|-Array.EmptyInternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.MoveNext
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.MoveNext
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>.MoveNext
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.MoveNext
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.MoveNext
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.MoveNext
 	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.MoveNext
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.MoveNext
@@ -22059,7 +22103,9 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>.get_Current
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.get_Current
 	|
@@ -23836,7 +23882,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WindZoneExManager.CurrentZoneEntry>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Demos.DemoInfo>.System.Collections.IEnumerator.get_Current
@@ -24223,7 +24270,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AlignedLineDrawer.LinePoint>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>.System.Collections.IEnumerator.Reset
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.Reset
@@ -24936,7 +24984,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AlignedLineDrawer.LinePoint>..ctor
 	|-Array.EmptyInternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>..ctor
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>..ctor
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>..ctor
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>..ctor
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>..ctor
 	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>..ctor
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>..ctor
@@ -25649,7 +25698,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<AlignedLineDrawer.LinePoint>..cctor
 	|-Array.EmptyInternalEnumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>..cctor
 	|-Array.EmptyInternalEnumerator<AvatarCache.Entry>..cctor
-	|-Array.EmptyInternalEnumerator<BaseEntity.ServerFileRequest>..cctor
+	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>..cctor
+	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>..cctor
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>..cctor
 	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>..cctor
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>..cctor
@@ -26973,7 +27023,7 @@ public sealed class BitArray : ICollection, IEnumerable, ICloneable // TypeDefIn
 [DefaultMemberAttribute] 
 [ComVisibleAttribute] 
 [Serializable]
-public sealed class BitArray : ICollection, IEnumerable, ICloneable 
+public sealed class BitArray : ICollection, IEnumerable, ICloneable
 	private int[] m_array; 
 	private int m_length; 
 	private int _version; 
@@ -27053,7 +27103,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.Sort
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Sort
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Sort
 	|
@@ -27391,7 +27441,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.BinarySearch
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.BinarySearch
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.BinarySearch
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.BinarySearch
 	|
@@ -27729,7 +27779,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.Sort
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Sort
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Sort
 	|
@@ -28127,7 +28177,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WindZoneExManager.CurrentZoneEntry>.InternalBinarySearch
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.InternalBinarySearch
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.InternalBinarySearch
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.InternalBinarySearch
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.InternalBinarySearch
 	|-ArraySortHelper<Demos.DemoInfo>.InternalBinarySearch
 	|-ArraySortHelper<Output.Entry>.InternalBinarySearch
@@ -28296,7 +28346,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<FocusController.FocusedElement>.SwapIfGreater
 	|-ArraySortHelper<WindZoneExManager.CurrentZoneEntry>.SwapIfGreater
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.SwapIfGreater
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.SwapIfGreater
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.SwapIfGreater
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.SwapIfGreater
@@ -28523,7 +28573,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<FocusController.FocusedElement>.Swap
 	|-ArraySortHelper<WindZoneExManager.CurrentZoneEntry>.Swap
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.Swap
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Swap
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Swap
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.Swap
@@ -28723,7 +28773,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.IntrospectiveSort
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.IntrospectiveSort
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.IntrospectiveSort
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.IntrospectiveSort
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.IntrospectiveSort
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.IntrospectiveSort
 	|-ArraySortHelper<Cassette.LoadRequest>.IntrospectiveSort
 	|-ArraySortHelper<Admin.PlayerInfo>.IntrospectiveSort
@@ -28896,7 +28946,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.IntroSort
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.IntroSort
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.IntroSort
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.IntroSort
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.IntroSort
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.IntroSort
 	|-ArraySortHelper<Cassette.LoadRequest>.IntroSort
 	|-ArraySortHelper<Admin.PlayerInfo>.IntroSort
@@ -29131,7 +29181,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WindZoneExManager.CurrentZoneEntry>.PickPivotAndPartition
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.PickPivotAndPartition
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.PickPivotAndPartition
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.PickPivotAndPartition
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.PickPivotAndPartition
 	|-ArraySortHelper<Demos.DemoInfo>.PickPivotAndPartition
 	|-ArraySortHelper<Output.Entry>.PickPivotAndPartition
@@ -29272,7 +29322,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.Heapsort
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.Heapsort
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Heapsort
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.Heapsort
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Heapsort
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Heapsort
 	|-ArraySortHelper<Cassette.LoadRequest>.Heapsort
 	|-ArraySortHelper<Admin.PlayerInfo>.Heapsort
@@ -29471,7 +29521,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<FocusController.FocusedElement>.DownHeap
 	|-ArraySortHelper<WindZoneExManager.CurrentZoneEntry>.DownHeap
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.DownHeap
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.DownHeap
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.DownHeap
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.DownHeap
@@ -29698,7 +29748,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<FocusController.FocusedElement>.InsertionSort
 	|-ArraySortHelper<WindZoneExManager.CurrentZoneEntry>.InsertionSort
 	|
-	|-ArraySortHelper<BaseEntity.ServerFileRequest>.InsertionSort
+	|-ArraySortHelper<BaseEntity.PendingFileRequest>.InsertionSort
 	|
 	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.InsertionSort
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.InsertionSort
@@ -30056,34 +30106,34 @@ internal class ArraySubsetEnumerator : IEnumerator // TypeDefIndex: 2661
 
 }
 
-internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6078
+internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6079
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6080
-{
-
-[PreserveAttribute] 
-internal class ArrayMultipleIndexFilter : PathFilter 
-
-	public void .ctor() { }
-
-}
-
-internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6082
+internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6081
 {
 
 [PreserveAttribute] 
-internal class ArraySliceFilter : PathFilter 
+internal class ArrayMultipleIndexFilter : PathFilter
 
 	public void .ctor() { }
 
 }
 
-public abstract class ArrayPool<T> // TypeDefIndex: 6267
+internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6083
+{
+
+[PreserveAttribute] 
+internal class ArraySliceFilter : PathFilter
+
+	public void .ctor() { }
+
+}
+
+public abstract class ArrayPool<T> // TypeDefIndex: 6268
 {
 	private static ArrayPool<T> s_sharedInstance; 
 
@@ -30132,7 +30182,7 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6267
 
 }
 
-internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6268
+internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6269
 {
 	internal static readonly ArrayPoolEventSource Log; 
 
@@ -30152,7 +30202,7 @@ internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6268
 
 }
 
-internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6269
+internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6270
 {
 	public int value__; 
 	public const ArrayPoolEventSource.BufferAllocatedReason Pooled = 0;
@@ -30161,10 +30211,10 @@ internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6269
 
 }
 
-public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6560
+public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6561
 {
 
-public class ArrayIndexIsEnum : PropertyAttribute 
+public class ArrayIndexIsEnum : PropertyAttribute
 	public Type enumType; 
 
 
@@ -30172,7 +30222,7 @@ public class ArrayIndexIsEnum : PropertyAttribute
 
 }
 
-public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6561
+public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6562
 {
 	public float min; 
 	public float max; 
@@ -30182,7 +30232,7 @@ public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6561
 
 }
 
-public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8140
+public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8141
 {
 	private readonly List<Value> values; 
 
@@ -30218,7 +30268,7 @@ public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8140
 
 }
 
-public static class Arrays // TypeDefIndex: 8225
+public static class Arrays // TypeDefIndex: 8226
 {
 	public static ushort[] flushes; 
 	public static readonly ushort[] unique5; 
@@ -30232,7 +30282,7 @@ public static class Arrays // TypeDefIndex: 8225
 
 }
 
-public static class ArrayEx // TypeDefIndex: 11338
+public static class ArrayEx // TypeDefIndex: 11366
 {
 
 	public static T[] New<T>(int length) { }

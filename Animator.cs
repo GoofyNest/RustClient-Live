@@ -130,6 +130,8 @@ public class Animator : Behaviour // TypeDefIndex: 4487
 	[FreeFunctionAttribute] 
 	public void Play(int stateNameHash, int layer, float normalizedTime) { }
 
+	public void Play(int stateNameHash, int layer) { }
+
 	public void Play(int stateNameHash) { }
 
 	public AnimatorCullingMode get_cullingMode() { }

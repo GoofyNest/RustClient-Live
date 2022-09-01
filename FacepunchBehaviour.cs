@@ -1,9 +1,9 @@
-public abstract class FacepunchBehaviour : MonoBehaviour // TypeDefIndex: 5564
+public abstract class FacepunchBehaviour : MonoBehaviour // TypeDefIndex: 5565
 {
 
-internal class <Module> 
+internal class <Module>
 
-public abstract class FacepunchBehaviour : MonoBehaviour 
+public abstract class FacepunchBehaviour : MonoBehaviour
 
 	public void Invoke(Action action, float time) { }
 

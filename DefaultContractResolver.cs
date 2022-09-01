@@ -1,4 +1,4 @@
-public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5991
+public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5992
 {
 	private static readonly IContractResolver _instance; 
 	private static readonly JsonConverter[] BuiltInConverters; 
@@ -132,15 +132,15 @@ public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5991
 
 }
 
-private sealed class DefaultContractResolver.<>c // TypeDefIndex: 5994
+private sealed class DefaultContractResolver.<>c // TypeDefIndex: 5995
 {
 
 [CompilerGeneratedAttribute] 
-private sealed class DefaultContractResolver.EnumerableDictionaryWrapper.<GetEnumerator>d__2<TEnumeratorKey, TEnumeratorValue> 
+private sealed class DefaultContractResolver.EnumerableDictionaryWrapper.<GetEnumerator>d__2<TEnumeratorKey, TEnumeratorValue>
 
 [CompilerGeneratedAttribute] 
 [Serializable]
-private sealed class DefaultContractResolver.<>c 
+private sealed class DefaultContractResolver.<>c
 	public static readonly DefaultContractResolver.<>c <>9; 
 	public static Func<MemberInfo, bool> <>9__30_0; 
 	public static Func<MemberInfo, bool> <>9__30_1; 
@@ -168,7 +168,7 @@ private sealed class DefaultContractResolver.<>c
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefIndex: 5995
+private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefIndex: 5996
 {
 	public Func<object, object> getExtensionDataDictionary; 
 	public MemberInfo member; 
@@ -178,7 +178,7 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefIndex: 5996
+private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefIndex: 5997
 {
 	public Action<object, object> setExtensionDataDictionary; 
 	public Func<object> createExtensionDataDictionary; 
@@ -192,7 +192,7 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefIndex: 5997
+private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefIndex: 5998
 {
 	public ObjectConstructor<object> createEnumerableWrapper; 
 	public DefaultContractResolver.<>c__DisplayClass34_0 CS$<>8__locals2; 
@@ -204,7 +204,7 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefIndex: 5998
+private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefIndex: 5999
 {
 	public MethodCall<object, object> shouldSerializeCall; 
 
@@ -215,7 +215,7 @@ private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefIndex: 5999
+private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefIndex: 6000
 {
 	public Func<object, object> specifiedPropertyGet; 
 

@@ -1,4 +1,4 @@
-public class BradleyAPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
+public class BradleyAPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6343
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -68,7 +68,7 @@ public class BradleyAPC : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 
 }
 
-public class BradleyAPC : BaseCombatEntity // TypeDefIndex: 8536
+public class BradleyAPC : BaseCombatEntity // TypeDefIndex: 8539
 {
 	[HeaderAttribute] 
 	public BlendedLoopEngineSound engineSound; 
@@ -204,7 +204,7 @@ public class BradleyAPC : BaseCombatEntity // TypeDefIndex: 8536
 
 }
 
-public class BradleyAPC.TargetInfo : Pool.IPooled // TypeDefIndex: 8537
+public class BradleyAPC.TargetInfo : Pool.IPooled // TypeDefIndex: 8540
 {
 	public float damageReceivedFrom; 
 	public BaseEntity entity; 

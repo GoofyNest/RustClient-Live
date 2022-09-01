@@ -1,4 +1,4 @@
-internal sealed class InfTree // TypeDefIndex: 6952
+internal sealed class InfTree // TypeDefIndex: 6953
 {
 	internal static readonly int[] fixed_tl; 
 	internal static readonly int[] fixed_td; 

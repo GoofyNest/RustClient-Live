@@ -6,16 +6,16 @@ public class SceneManager // TypeDefIndex: 3656
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private static UnityAction<Scene> sceneUnloaded; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static UnityAction<Scene, Scene> activeSceneChanged; 
 
 	public static int sceneCount { get; }
 
 
-	[NativeHeaderAttribute] 
 	[NativeMethodAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeHeaderAttribute] 
 	public static int get_sceneCount() { }
 
 	[StaticAccessorAttribute] 
@@ -24,12 +24,12 @@ public class SceneManager // TypeDefIndex: 3656
 	[StaticAccessorAttribute] 
 	public static Scene GetSceneByName(string name) { }
 
-	[NativeThrowsAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeThrowsAttribute] 
 	public static Scene GetSceneAt(int index) { }
 
-	[NativeThrowsAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeThrowsAttribute] 
 	public static Scene CreateScene(string sceneName, CreateSceneParameters parameters) { }
 
 	[NativeThrowsAttribute] 
@@ -40,8 +40,8 @@ public class SceneManager // TypeDefIndex: 3656
 	[StaticAccessorAttribute] 
 	private static AsyncOperation LoadSceneAsyncNameIndexInternal(string sceneName, int sceneBuildIndex, LoadSceneParameters parameters, bool mustCompleteNextFrame) { }
 
-	[NativeThrowsAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeThrowsAttribute] 
 	public static void MoveGameObjectToScene(GameObject go, Scene scene) { }
 
 	[CompilerGeneratedAttribute] 

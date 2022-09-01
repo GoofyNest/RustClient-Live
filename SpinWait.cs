@@ -1,7 +1,7 @@
 public struct SpinWait // TypeDefIndex: 764
 {
 
-public struct SpinWait 
+public struct SpinWait
 	private int m_count; 
 
 	public bool NextSpinWillYield { get; }

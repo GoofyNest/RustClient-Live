@@ -1,4 +1,4 @@
-public class MediaTypeHeaderValue : ICloneable // TypeDefIndex: 5784
+public class MediaTypeHeaderValue : ICloneable // TypeDefIndex: 5785
 {
 	internal List<NameValueHeaderValue> parameters; 
 	internal string media_type; 
@@ -38,7 +38,7 @@ public class MediaTypeHeaderValue : ICloneable // TypeDefIndex: 5784
 
 }
 
-private sealed class MediaTypeHeaderValue.<>c // TypeDefIndex: 5785
+private sealed class MediaTypeHeaderValue.<>c // TypeDefIndex: 5786
 {
 	public static readonly MediaTypeHeaderValue.<>c <>9; 
 	public static Predicate<NameValueHeaderValue> <>9__6_0; 

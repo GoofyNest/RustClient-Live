@@ -1,4 +1,4 @@
-internal struct GetOPFSettingsResult_t : ICallbackData // TypeDefIndex: 5481
+internal struct GetOPFSettingsResult_t : ICallbackData // TypeDefIndex: 5482
 {
 	internal Result Result; 
 	internal AppId VideoAppID; 

@@ -6,11 +6,11 @@ public static class RenderPipelineManager // TypeDefIndex: 3851
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private static RenderPipeline <currentPipeline>k__BackingField; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static Action<ScriptableRenderContext, Camera[]> beginFrameRendering; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Action<ScriptableRenderContext, Camera> beginCameraRendering; 
 
 	public static RenderPipeline currentPipeline { get; set; }

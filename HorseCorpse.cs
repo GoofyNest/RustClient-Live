@@ -1,4 +1,4 @@
-public class HorseCorpse : LootableCorpse // TypeDefIndex: 8961
+public class HorseCorpse : LootableCorpse // TypeDefIndex: 8964
 {
 	public int breedIndex; 
 	public Translate.Phrase lootPanelTitle; 

@@ -1,4 +1,4 @@
-public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6321
+public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class ResearchTable : StorageContainer // TypeDefIndex: 8634
+public class ResearchTable : StorageContainer // TypeDefIndex: 8637
 {
 	public float researchFinishedTime; 
 	public float researchCostFraction; 
@@ -76,8 +76,6 @@ public class ResearchTable : StorageContainer // TypeDefIndex: 8634
 	public override void ResetState() { }
 
 	public void TryResearch() { }
-
-	public override int GetMoveToSlotIndex(BasePlayer player, Item item) { }
 
 	public bool IsResearching() { }
 

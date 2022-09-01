@@ -1,4 +1,4 @@
-public struct TimeSince // TypeDefIndex: 6164
+public struct TimeSince // TypeDefIndex: 6165
 {
 	private float time; 
 
@@ -6,6 +6,8 @@ public struct TimeSince // TypeDefIndex: 6164
 	public static float op_Implicit(TimeSince ts) { }
 
 	public static TimeSince op_Implicit(float ts) { }
+
+	public override string ToString() { }
 
 }
 

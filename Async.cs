@@ -262,7 +262,7 @@ public struct AsyncVoidMethodBuilder // TypeDefIndex: 1273
 	|
 	|-AsyncVoidMethodBuilder.Start<ItemStore.<RefreshList>d__17>
 	|
-	|-AsyncVoidMethodBuilder.Start<LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|56_0>d>
+	|-AsyncVoidMethodBuilder.Start<LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d>
 	|
 	|-AsyncVoidMethodBuilder.Start<SteamPlatform.<LoadAvatarFromSteamAsync>d__1>
 	|
@@ -337,8 +337,8 @@ public struct AsyncVoidMethodBuilder // TypeDefIndex: 1273
 	|
 	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<Nullable<InventoryPurchaseResult>>, ItemStore.<Checkout>d__24>
 	|
-	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<object>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|56_0>d>
-	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<string>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|56_0>d>
+	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<object>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d>
+	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<string>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d>
 	|
 	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<object>, ReportBug.<SendReport>d__29>
 	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<string>, ReportBug.<SendReport>d__29>
@@ -1967,7 +1967,7 @@ public static class AsyncGPUReadback // TypeDefIndex: 3803
 
 }
 
-public class AsyncTextureLoad : CustomYieldInstruction // TypeDefIndex: 6627
+public class AsyncTextureLoad : CustomYieldInstruction // TypeDefIndex: 6628
 {
 	private IntPtr buffer; 
 	private int size; 
@@ -2017,7 +2017,7 @@ public class AsyncTextureLoad : CustomYieldInstruction // TypeDefIndex: 6627
 
 }
 
-public sealed class AsyncMethodBuilderAttribute : Attribute // TypeDefIndex: 7091
+public sealed class AsyncMethodBuilderAttribute : Attribute // TypeDefIndex: 7092
 {
 	[CompilerGeneratedAttribute] 
 	private readonly Type <BuilderType>k__BackingField; 
@@ -2027,7 +2027,7 @@ public sealed class AsyncMethodBuilderAttribute : Attribute // TypeDefIndex: 709
 
 }
 
-public struct AsyncValueTaskMethodBuilder // TypeDefIndex: 7092
+public struct AsyncValueTaskMethodBuilder // TypeDefIndex: 7093
 {
 	private AsyncTaskMethodBuilder _methodBuilder; 
 	private bool _haveResult; 
@@ -2093,7 +2093,7 @@ public struct AsyncValueTaskMethodBuilder // TypeDefIndex: 7092
 
 }
 
-public struct AsyncValueTaskMethodBuilder<TResult> // TypeDefIndex: 7093
+public struct AsyncValueTaskMethodBuilder<TResult> // TypeDefIndex: 7094
 {
 	private AsyncTaskMethodBuilder<TResult> _methodBuilder; 
 	private TResult _result; 
@@ -2123,7 +2123,6 @@ public struct AsyncValueTaskMethodBuilder<TResult> // TypeDefIndex: 7093
 	/* GenericInstMethod :
 	|
 	|-AsyncValueTaskMethodBuilder<bool>.SetStateMachine
-	|
 	|-AsyncValueTaskMethodBuilder<object>.SetStateMachine
 	*/
 
@@ -2162,7 +2161,7 @@ public struct AsyncValueTaskMethodBuilder<TResult> // TypeDefIndex: 7093
 
 }
 
-public class AsyncTerrainNavMeshBake : CustomYieldInstruction // TypeDefIndex: 10313
+public class AsyncTerrainNavMeshBake : CustomYieldInstruction // TypeDefIndex: 10324
 {
 	private List<int> indices; 
 	private List<Vector3> vertices; 

@@ -1,4 +1,4 @@
-public class LTSeq // TypeDefIndex: 5574
+public class LTSeq // TypeDefIndex: 5575
 {
 	public LTSeq previous; 
 	public LTSeq current; 

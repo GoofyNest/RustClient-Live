@@ -1,7 +1,7 @@
 public class PKCS8.PrivateKeyInfo // TypeDefIndex: 72
 {
 
-public class PKCS8.PrivateKeyInfo 
+public class PKCS8.PrivateKeyInfo
 	private int _version; 
 	private string _algorithm; 
 	private byte[] _key; 
@@ -60,7 +60,7 @@ public class PKCS8.EncryptedPrivateKeyInfo // TypeDefIndex: 73
 public class PKCS8.PrivateKeyInfo // TypeDefIndex: 1759
 {
 
-public class PKCS8.PrivateKeyInfo 
+public class PKCS8.PrivateKeyInfo
 	private int _version; 
 	private string _algorithm; 
 	private byte[] _key; 

@@ -89,8 +89,8 @@ public enum GraphicsFormat // TypeDefIndex: 3902
 	[EditorBrowsableAttribute] 
 	public const GraphicsFormat RGB_DXT1_SRGB = 96;
 	public const GraphicsFormat RGBA_DXT1_SRGB = 96;
-	[ObsoleteAttribute] 
 	[EditorBrowsableAttribute] 
+	[ObsoleteAttribute] 
 	public const GraphicsFormat RGB_DXT1_UNorm = 97;
 	public const GraphicsFormat RGBA_DXT1_UNorm = 97;
 	public const GraphicsFormat RGBA_DXT3_SRGB = 98;

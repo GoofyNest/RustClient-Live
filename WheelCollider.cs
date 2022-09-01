@@ -3,7 +3,7 @@ public class WheelCollider : Collider // TypeDefIndex: 4772
 
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
-public class WheelCollider : Collider 
+public class WheelCollider : Collider
 	public float radius { get; }
 	public float suspensionDistance { get; }
 	public float motorTorque { get; set; }

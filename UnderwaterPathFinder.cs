@@ -1,4 +1,4 @@
-public class UnderwaterPathFinder : BasePathFinder // TypeDefIndex: 8967
+public class UnderwaterPathFinder : BasePathFinder // TypeDefIndex: 8970
 {
 	private BaseEntity npc; 
 

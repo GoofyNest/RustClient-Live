@@ -1,7 +1,7 @@
 public sealed class UploadValuesCompletedEventHandler : MulticastDelegate // TypeDefIndex: 2972
 {
 
-public sealed class UploadValuesCompletedEventHandler : MulticastDelegate 
+public sealed class UploadValuesCompletedEventHandler : MulticastDelegate
 
 	public void .ctor(object object, IntPtr method) { }
 

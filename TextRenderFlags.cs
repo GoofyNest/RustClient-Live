@@ -1,4 +1,4 @@
-public enum TextRenderFlags // TypeDefIndex: 6829
+public enum TextRenderFlags // TypeDefIndex: 6830
 {
 	public int value__; 
 	public const TextRenderFlags DontRender = 0;

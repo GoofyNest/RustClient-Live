@@ -5,7 +5,7 @@ public static class InputTracking // TypeDefIndex: 4137
 [NativeHeaderAttribute] 
 [NativeConditionalAttribute] 
 [StaticAccessorAttribute] 
-public static class InputTracking 
+public static class InputTracking
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private static Action<XRNodeState> trackingAcquired; 

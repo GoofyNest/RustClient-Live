@@ -1,4 +1,4 @@
-internal struct DeleteItemResult_t : ICallbackData // TypeDefIndex: 5446
+internal struct DeleteItemResult_t : ICallbackData // TypeDefIndex: 5447
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 

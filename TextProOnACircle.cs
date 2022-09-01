@@ -1,10 +1,10 @@
-public class TextProOnACircle : TextProOnACurve // TypeDefIndex: 7121
+public class TextProOnACircle : TextProOnACurve // TypeDefIndex: 7122
 {
 
-internal class <Module> 
+internal class <Module>
 
 [ExecuteInEditMode] 
-public class TextProOnACircle : TextProOnACurve 
+public class TextProOnACircle : TextProOnACurve
 	[SerializeField] 
 	[TooltipAttribute] 
 	private float m_radius; 

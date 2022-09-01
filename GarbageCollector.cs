@@ -1,7 +1,7 @@
 public static class GarbageCollector // TypeDefIndex: 3650
 {
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Action<GarbageCollector.Mode> GCModeChanged; 
 
 	public static GarbageCollector.Mode GCMode { get; set; }

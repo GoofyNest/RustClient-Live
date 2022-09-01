@@ -18,6 +18,8 @@ public static class RuntimeHelpers // TypeDefIndex: 1317
 	public static bool IsReferenceOrContainsReferences<T>() { }
 	/* GenericInstMethod :
 	|
+	|-RuntimeHelpers.IsReferenceOrContainsReferences<BaseEntity.QueuedFileRequest>
+	|
 	|-RuntimeHelpers.IsReferenceOrContainsReferences<RCon.Command>
 	|
 	|-RuntimeHelpers.IsReferenceOrContainsReferences<Connection>

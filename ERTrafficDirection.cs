@@ -1,4 +1,4 @@
-public enum ERTrafficDirection // TypeDefIndex: 7210
+public enum ERTrafficDirection // TypeDefIndex: 7211
 {
 	public int value__; 
 	public const ERTrafficDirection LHT = 0;

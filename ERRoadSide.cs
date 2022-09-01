@@ -1,4 +1,4 @@
-public enum ERRoadSide // TypeDefIndex: 7190
+public enum ERRoadSide // TypeDefIndex: 7191
 {
 	public int value__; 
 	public const ERRoadSide Left = 0;

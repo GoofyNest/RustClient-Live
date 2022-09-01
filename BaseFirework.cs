@@ -1,4 +1,4 @@
-public class BaseFirework : BaseCombatEntity, IIgniteable // TypeDefIndex: 8271
+public class BaseFirework : BaseCombatEntity, IIgniteable // TypeDefIndex: 8272
 {
 	public float fuseLength; 
 	public float activityLength; 

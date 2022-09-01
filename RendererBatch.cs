@@ -1,7 +1,7 @@
-public class RendererBatch : MonoBehaviour, IClientComponent // TypeDefIndex: 9915
+public class RendererBatch : MonoBehaviour, IClientComponent // TypeDefIndex: 9922
 {
 
-public class RendererBatch : MonoBehaviour, IClientComponent 
+public class RendererBatch : MonoBehaviour, IClientComponent
 	[CompilerGeneratedAttribute] 
 	private Transform <BatchTransform>k__BackingField; 
 	[CompilerGeneratedAttribute] 

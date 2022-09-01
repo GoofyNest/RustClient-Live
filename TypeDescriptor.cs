@@ -134,7 +134,7 @@ private sealed class TypeDescriptor.FilterCacheItem // TypeDefIndex: 2760
 private sealed class TypeDescriptor.MemberDescriptorComparer : IComparer // TypeDefIndex: 2762
 {
 
-private sealed class TypeDescriptor.MemberDescriptorComparer : IComparer 
+private sealed class TypeDescriptor.MemberDescriptorComparer : IComparer
 	public static readonly TypeDescriptor.MemberDescriptorComparer Instance; 
 
 

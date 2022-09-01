@@ -1,4 +1,4 @@
-internal struct LeaderboardScoreUploaded_t : ICallbackData // TypeDefIndex: 5391
+internal struct LeaderboardScoreUploaded_t : ICallbackData // TypeDefIndex: 5392
 {
 	internal byte Success; 
 	internal ulong SteamLeaderboard; 

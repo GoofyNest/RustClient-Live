@@ -173,7 +173,7 @@ public enum Environment.SpecialFolderOption // TypeDefIndex: 342
 
 }
 
-public class Environment : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6298
+public class Environment : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6299
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

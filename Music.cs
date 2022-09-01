@@ -1,4 +1,4 @@
-public class Music : ConsoleSystem // TypeDefIndex: 11942
+public class Music : ConsoleSystem // TypeDefIndex: 11970
 {
 	[ClientVar] 
 	public static bool enabled; 

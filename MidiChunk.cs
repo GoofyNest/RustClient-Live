@@ -1,4 +1,4 @@
-public abstract class MidiChunk // TypeDefIndex: 7510
+public abstract class MidiChunk // TypeDefIndex: 7511
 {
 	[CompilerGeneratedAttribute] 
 	private readonly string <ChunkId>k__BackingField; 

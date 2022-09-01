@@ -2,7 +2,7 @@ public class MemberExpression : Expression // TypeDefIndex: 3247
 {
 
 [DebuggerTypeProxyAttribute] 
-public class MemberExpression : Expression 
+public class MemberExpression : Expression
 	[CompilerGeneratedAttribute] 
 	private readonly Expression <Expression>k__BackingField; 
 

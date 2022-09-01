@@ -1,4 +1,4 @@
-internal class ReflectionMethodsCache // TypeDefIndex: 5022
+internal class ReflectionMethodsCache // TypeDefIndex: 5023
 {
 	public ReflectionMethodsCache.Raycast3DCallback raycast3D; 
 	public ReflectionMethodsCache.RaycastAllCallback raycast3DAll; 
@@ -19,7 +19,7 @@ internal class ReflectionMethodsCache // TypeDefIndex: 5022
 
 }
 
-public sealed class ReflectionMethodsCache.Raycast3DCallback : MulticastDelegate // TypeDefIndex: 5023
+public sealed class ReflectionMethodsCache.Raycast3DCallback : MulticastDelegate // TypeDefIndex: 5024
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -32,7 +32,7 @@ public sealed class ReflectionMethodsCache.Raycast3DCallback : MulticastDelegate
 
 }
 
-public sealed class ReflectionMethodsCache.Raycast2DCallback : MulticastDelegate // TypeDefIndex: 5024
+public sealed class ReflectionMethodsCache.Raycast2DCallback : MulticastDelegate // TypeDefIndex: 5025
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -45,7 +45,7 @@ public sealed class ReflectionMethodsCache.Raycast2DCallback : MulticastDelegate
 
 }
 
-public sealed class ReflectionMethodsCache.RaycastAllCallback : MulticastDelegate // TypeDefIndex: 5025
+public sealed class ReflectionMethodsCache.RaycastAllCallback : MulticastDelegate // TypeDefIndex: 5026
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -58,7 +58,7 @@ public sealed class ReflectionMethodsCache.RaycastAllCallback : MulticastDelegat
 
 }
 
-public sealed class ReflectionMethodsCache.GetRayIntersectionAllCallback : MulticastDelegate // TypeDefIndex: 5026
+public sealed class ReflectionMethodsCache.GetRayIntersectionAllCallback : MulticastDelegate // TypeDefIndex: 5027
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -71,7 +71,7 @@ public sealed class ReflectionMethodsCache.GetRayIntersectionAllCallback : Multi
 
 }
 
-public sealed class ReflectionMethodsCache.GetRayIntersectionAllNonAllocCallback : MulticastDelegate // TypeDefIndex: 5027
+public sealed class ReflectionMethodsCache.GetRayIntersectionAllNonAllocCallback : MulticastDelegate // TypeDefIndex: 5028
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -84,7 +84,7 @@ public sealed class ReflectionMethodsCache.GetRayIntersectionAllNonAllocCallback
 
 }
 
-public sealed class ReflectionMethodsCache.GetRaycastNonAllocCallback : MulticastDelegate // TypeDefIndex: 5028
+public sealed class ReflectionMethodsCache.GetRaycastNonAllocCallback : MulticastDelegate // TypeDefIndex: 5029
 {
 
 	public void .ctor(object object, IntPtr method) { }

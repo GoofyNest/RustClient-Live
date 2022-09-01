@@ -1,4 +1,4 @@
-public enum HostValidationResult // TypeDefIndex: 7142
+public enum HostValidationResult // TypeDefIndex: 7143
 {
 	public int value__; 
 	public const HostValidationResult ServerHostValidationSuccess = 0;

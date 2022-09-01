@@ -1,4 +1,4 @@
-public class FrankensteinTableVisuals : MonoBehaviour // TypeDefIndex: 8695
+public class FrankensteinTableVisuals : MonoBehaviour // TypeDefIndex: 8698
 {
 	public GameObject FXReady; 
 	public GameObject FXNotReady; 
@@ -36,7 +36,7 @@ public class FrankensteinTableVisuals : MonoBehaviour // TypeDefIndex: 8695
 
 }
 
-private sealed class FrankensteinTableVisuals.<Wake>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 8696
+private sealed class FrankensteinTableVisuals.<Wake>d__15 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 8699
 {
 	private int <>1__state; 
 	private object <>2__current; 

@@ -1,4 +1,4 @@
-public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6336
+public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6337
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6336
 
 }
 
-public class Spawnable : MonoBehaviour, IServerComponent // TypeDefIndex: 9995
+public class Spawnable : MonoBehaviour, IServerComponent // TypeDefIndex: 10002
 {
 	[ReadOnlyAttribute] 
 	public SpawnPopulation Population; 

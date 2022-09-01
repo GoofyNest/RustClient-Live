@@ -1,4 +1,4 @@
-public enum UnknownChannelEventPolicy // TypeDefIndex: 7607
+public enum UnknownChannelEventPolicy // TypeDefIndex: 7608
 {
 	public int value__; 
 	public const UnknownChannelEventPolicy Abort = 0;

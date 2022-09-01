@@ -1,4 +1,4 @@
-public class DepthOfFieldDeprecated : PostEffectsBase // TypeDefIndex: 8181
+public class DepthOfFieldDeprecated : PostEffectsBase // TypeDefIndex: 8182
 {
 	private static int SMOOTH_DOWNSAMPLE_PASS; 
 	private static float BOKEH_EXTRA_BLUR; 
@@ -81,7 +81,7 @@ public class DepthOfFieldDeprecated : PostEffectsBase // TypeDefIndex: 8181
 
 }
 
-public enum DepthOfFieldDeprecated.Dof34QualitySetting // TypeDefIndex: 8182
+public enum DepthOfFieldDeprecated.Dof34QualitySetting // TypeDefIndex: 8183
 {
 	public int value__; 
 	public const DepthOfFieldDeprecated.Dof34QualitySetting OnlyBackground = 1;
@@ -89,7 +89,7 @@ public enum DepthOfFieldDeprecated.Dof34QualitySetting // TypeDefIndex: 8182
 
 }
 
-public enum DepthOfFieldDeprecated.DofResolution // TypeDefIndex: 8183
+public enum DepthOfFieldDeprecated.DofResolution // TypeDefIndex: 8184
 {
 	public int value__; 
 	public const DepthOfFieldDeprecated.DofResolution High = 2;
@@ -98,7 +98,7 @@ public enum DepthOfFieldDeprecated.DofResolution // TypeDefIndex: 8183
 
 }
 
-public enum DepthOfFieldDeprecated.DofBlurriness // TypeDefIndex: 8184
+public enum DepthOfFieldDeprecated.DofBlurriness // TypeDefIndex: 8185
 {
 	public int value__; 
 	public const DepthOfFieldDeprecated.DofBlurriness Low = 1;
@@ -107,7 +107,7 @@ public enum DepthOfFieldDeprecated.DofBlurriness // TypeDefIndex: 8184
 
 }
 
-public enum DepthOfFieldDeprecated.BokehDestination // TypeDefIndex: 8185
+public enum DepthOfFieldDeprecated.BokehDestination // TypeDefIndex: 8186
 {
 	public int value__; 
 	public const DepthOfFieldDeprecated.BokehDestination Background = 1;

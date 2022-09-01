@@ -1,4 +1,4 @@
-public class LTSpline // TypeDefIndex: 5584
+public class LTSpline // TypeDefIndex: 5585
 {
 	public static int DISTANCE_COUNT; 
 	public static int SUBLINE_COUNT; 

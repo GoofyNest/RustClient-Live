@@ -2,7 +2,7 @@ public class WebException : InvalidOperationException, ISerializable // TypeDefI
 {
 
 [Serializable]
-public class WebException : InvalidOperationException, ISerializable 
+public class WebException : InvalidOperationException, ISerializable
 	private WebExceptionStatus m_Status; 
 	private WebResponse m_Response; 
 	private WebExceptionInternalStatus m_InternalStatus; 

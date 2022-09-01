@@ -1,4 +1,4 @@
-public class SwapRPG : MonoBehaviour // TypeDefIndex: 11444
+public class SwapRPG : MonoBehaviour // TypeDefIndex: 11472
 {
 	public GameObject[] rpgModels; 
 	private string curAmmoType; 
@@ -14,7 +14,7 @@ public class SwapRPG : MonoBehaviour // TypeDefIndex: 11444
 
 }
 
-public enum SwapRPG.RPGType // TypeDefIndex: 11445
+public enum SwapRPG.RPGType // TypeDefIndex: 11473
 {
 	public int value__; 
 	public const SwapRPG.RPGType One = 0;

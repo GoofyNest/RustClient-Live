@@ -1,4 +1,4 @@
-public class Report // TypeDefIndex: 6189
+public class Report // TypeDefIndex: 6190
 {
 	[CompilerGeneratedAttribute] 
 	private string <release>k__BackingField; 
@@ -61,7 +61,7 @@ public class Report // TypeDefIndex: 6189
 
 }
 
-public class Report.StackTrace // TypeDefIndex: 6190
+public class Report.StackTrace // TypeDefIndex: 6191
 {
 	[CompilerGeneratedAttribute] 
 	private Report.StackTrace.StackFrame[] <frames>k__BackingField; 
@@ -81,7 +81,7 @@ public class Report.StackTrace // TypeDefIndex: 6190
 
 }
 
-public class Report.StackTrace.StackFrame // TypeDefIndex: 6191
+public class Report.StackTrace.StackFrame // TypeDefIndex: 6192
 {
 	[CompilerGeneratedAttribute] 
 	private int <colno>k__BackingField; 
@@ -157,7 +157,7 @@ public class Report.StackTrace.StackFrame // TypeDefIndex: 6191
 
 }
 
-private sealed class Report.StackTrace.<>c // TypeDefIndex: 6192
+private sealed class Report.StackTrace.<>c // TypeDefIndex: 6193
 {
 	public static readonly Report.StackTrace.<>c <>9; 
 	public static Func<StackFrame, Report.StackTrace.StackFrame> <>9__4_0; 
@@ -174,7 +174,7 @@ private sealed class Report.StackTrace.<>c // TypeDefIndex: 6192
 
 }
 
-public enum ReportType // TypeDefIndex: 6243
+public enum ReportType // TypeDefIndex: 6244
 {
 	public int value__; 
 	public const ReportType General = 0;
@@ -188,7 +188,7 @@ public enum ReportType // TypeDefIndex: 6243
 
 }
 
-public class ReportBug : UIDialog // TypeDefIndex: 12039
+public class ReportBug : UIDialog // TypeDefIndex: 12067
 {
 	public GameObject GetInformation; 
 	public GameObject Finished; 
@@ -240,7 +240,7 @@ public class ReportBug : UIDialog // TypeDefIndex: 12039
 
 }
 
-public static class ReportBug.Phrases // TypeDefIndex: 12040
+public static class ReportBug.Phrases // TypeDefIndex: 12068
 {
 	public static Translate.Phrase Initializing; 
 	public static Translate.Phrase SendingReport; 
@@ -251,7 +251,7 @@ public static class ReportBug.Phrases // TypeDefIndex: 12040
 
 }
 
-private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12041
+private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12069
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -280,7 +280,7 @@ private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, I
 
 }
 
-private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 12042
+private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 12070
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -296,7 +296,7 @@ private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-public class ReportPlayer : UIDialog // TypeDefIndex: 12043
+public class ReportPlayer : UIDialog // TypeDefIndex: 12071
 {
 	public GameObject FindPlayer; 
 	public GameObject GetInformation; 
@@ -335,7 +335,7 @@ public class ReportPlayer : UIDialog // TypeDefIndex: 12043
 
 }
 
-public static class ReportPlayer.Phrases // TypeDefIndex: 12044
+public static class ReportPlayer.Phrases // TypeDefIndex: 12072
 {
 	public static Translate.Phrase Initializing; 
 	public static Translate.Phrase SendingReport; 
@@ -346,7 +346,7 @@ public static class ReportPlayer.Phrases // TypeDefIndex: 12044
 
 }
 
-private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 12045
+private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 12073
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 

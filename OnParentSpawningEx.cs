@@ -1,4 +1,4 @@
-public static class OnParentSpawningEx // TypeDefIndex: 9907
+public static class OnParentSpawningEx // TypeDefIndex: 9914
 {
 
 	[ExtensionAttribute] 

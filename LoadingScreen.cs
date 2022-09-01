@@ -1,4 +1,4 @@
-public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 11117
+public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 11142
 {
 	[CompilerGeneratedAttribute] 
 	private static bool <WantsSkip>k__BackingField; 
@@ -19,6 +19,11 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 	public RustText serverMap; 
 	public RustLayout serverTagsSection; 
 	public ServerBrowserTagList serverTags; 
+	public RectTransform demoInfo; 
+	public RustText demoName; 
+	public RustText demoLength; 
+	public RustText demoDate; 
+	public RustText demoMap; 
 	public RawImage backgroundImage; 
 	public Texture2D defaultBackground; 
 	public GameObject pingWarning; 
@@ -88,6 +93,8 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 
 	public void UpdateServerInfo(Nullable<ServerInfo> server, Dictionary<string, string> serverRules) { }
 
+	public void UpdateDemoInfo(Reader demoReader) { }
+
 	private void LoadBackgroundImage() { }
 
 	private void FreeBackgroundImage() { }
@@ -98,11 +105,11 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 
 	[AsyncStateMachineAttribute] 
 	[CompilerGeneratedAttribute] 
-	private void <ChooseBackgroundImage>g__PreloadBackgroundImage|56_0(string url) { }
+	private void <ChooseBackgroundImage>g__PreloadBackgroundImage|62_0(string url) { }
 
 }
 
-private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|56_0>d : IAsyncStateMachine // TypeDefIndex: 11118
+private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d : IAsyncStateMachine // TypeDefIndex: 11143
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 

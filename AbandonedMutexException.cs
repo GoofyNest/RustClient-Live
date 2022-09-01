@@ -3,7 +3,7 @@ public class AbandonedMutexException : SystemException // TypeDefIndex: 773
 
 [ComVisibleAttribute] 
 [Serializable]
-public class AbandonedMutexException : SystemException 
+public class AbandonedMutexException : SystemException
 	private int m_MutexIndex; 
 	private Mutex m_Mutex; 
 

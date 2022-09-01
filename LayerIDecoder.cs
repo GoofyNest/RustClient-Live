@@ -1,4 +1,4 @@
-public class LayerIDecoder : IFrameDecoder // TypeDefIndex: 7400
+public class LayerIDecoder : IFrameDecoder // TypeDefIndex: 7401
 {
 	protected ABuffer Buffer; 
 	protected readonly Crc16 CRC; 

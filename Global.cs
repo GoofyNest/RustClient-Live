@@ -1,18 +1,18 @@
-public static class Global // TypeDefIndex: 6621
+public static class Global // TypeDefIndex: 6622
 {
 	public static Func<string, GameObject> LoadPrefab; 
 	public static Func<string, GameObject> FindPrefab; 
 	public static Func<string, GameObject> CreatePrefab; 
 	public static Action OpenMainMenu; 
-	private static MonoBehaviour _runner; 
+	private static FacepunchBehaviour _runner; 
 	[CompilerGeneratedAttribute] 
 	private static int <LaunchCountThisVersion>k__BackingField; 
 
-	public static MonoBehaviour Runner { get; }
+	public static FacepunchBehaviour Runner { get; }
 	public static int LaunchCountThisVersion { get; set; }
 
 
-	public static MonoBehaviour get_Runner() { }
+	public static FacepunchBehaviour get_Runner() { }
 
 	[CompilerGeneratedAttribute] 
 	public static int get_LaunchCountThisVersion() { }
@@ -24,7 +24,7 @@ public static class Global // TypeDefIndex: 6621
 
 }
 
-public class Global : ConsoleSystem // TypeDefIndex: 11922
+public class Global : ConsoleSystem // TypeDefIndex: 11950
 {
 	private static int _developer; 
 	[ServerVar] 
@@ -48,6 +48,8 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 	[ServerVar] 
 	[ClientVar] 
 	public static bool asyncWarmup; 
+	[ClientVar] 
+	public static int asyncLoadingPreset; 
 	private static int _censornudity; 
 	private static bool _censorsigns; 
 	[ClientVar] 
@@ -59,6 +61,8 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 	public static bool limitFlashing; 
 	[ClientVar] 
 	public static bool showItemCountsOnPickup; 
+	[ClientVar] 
+	public static bool useSingleItemPickupNotice; 
 	[ClientVar] 
 	public static bool showItemPickupNotices; 
 	[ClientVar] 
@@ -74,6 +78,7 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 	public static bool streamermode; 
 	[ClientVar] 
 	public static bool richPresence; 
+	private static float _consoleScale; 
 
 	[ServerVar] 
 	[ClientVar] 
@@ -90,11 +95,15 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 	public static bool showBlood { get; set; }
 	[ClientVar] 
 	public static string language { get; set; }
+	[ClientVar] 
+	public static float consoleScale { get; set; }
 
 
 	public static void set_developer(int value) { }
 
 	public static int get_developer() { }
+
+	public static void ApplyAsyncLoadingPreset() { }
 
 	public static int get_censornudity() { }
 
@@ -195,6 +204,10 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 
 	public static void set_language(string value) { }
 
+	public static float get_consoleScale() { }
+
+	public static void set_consoleScale(float value) { }
+
 	[ServerVar] 
 	[ClientVar] 
 	public static void version(ConsoleSystem.Arg arg) { }
@@ -223,23 +236,23 @@ public class Global : ConsoleSystem // TypeDefIndex: 11922
 
 }
 
-private sealed class Global.<>c // TypeDefIndex: 11923
+private sealed class Global.<>c // TypeDefIndex: 11951
 {
 	public static readonly Global.<>c <>9; 
-	public static Func<KeyValuePair<Type, long>, long> <>9__45_0; 
-	public static Func<Collider, bool> <>9__47_0; 
-	public static Func<Collider, bool> <>9__47_1; 
+	public static Func<KeyValuePair<Type, long>, long> <>9__48_0; 
+	public static Func<Collider, bool> <>9__50_0; 
+	public static Func<Collider, bool> <>9__50_1; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal long <objects>b__45_0(KeyValuePair<Type, long> x) { }
+	internal long <objects>b__48_0(KeyValuePair<Type, long> x) { }
 
-	internal bool <colliders>b__47_0(Collider x) { }
+	internal bool <colliders>b__50_0(Collider x) { }
 
-	internal bool <colliders>b__47_1(Collider x) { }
+	internal bool <colliders>b__50_1(Collider x) { }
 
 }
 

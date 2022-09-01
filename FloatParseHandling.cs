@@ -1,4 +1,4 @@
-public enum FloatParseHandling // TypeDefIndex: 5869
+public enum FloatParseHandling // TypeDefIndex: 5870
 {
 	public int value__; 
 	public const FloatParseHandling Double = 0;

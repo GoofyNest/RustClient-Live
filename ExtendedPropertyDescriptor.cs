@@ -1,7 +1,7 @@
 internal sealed class ExtendedPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 2707
 {
 
-internal sealed class ExtendedPropertyDescriptor : PropertyDescriptor 
+internal sealed class ExtendedPropertyDescriptor : PropertyDescriptor
 	private readonly ReflectPropertyDescriptor extenderInfo; 
 	private readonly IExtenderProvider provider; 
 

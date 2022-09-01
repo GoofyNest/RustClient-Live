@@ -1,4 +1,4 @@
-public class ProductHeaderValue : ICloneable // TypeDefIndex: 5801
+public class ProductHeaderValue : ICloneable // TypeDefIndex: 5802
 {
 	[CompilerGeneratedAttribute] 
 	private string <Name>k__BackingField; 

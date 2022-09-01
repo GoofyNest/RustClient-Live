@@ -1,4 +1,4 @@
-public class SEScreenSpaceShadows : MonoBehaviour // TypeDefIndex: 11522
+public class SEScreenSpaceShadows : MonoBehaviour // TypeDefIndex: 11550
 {
 	private CommandBuffer blendShadowsCommandBuffer; 
 	private CommandBuffer renderShadowsCommandBuffer; 

@@ -1,4 +1,4 @@
-public enum AuthResponse // TypeDefIndex: 5138
+public enum AuthResponse // TypeDefIndex: 5139
 {
 	public int value__; 
 	public const AuthResponse OK = 0;
@@ -14,18 +14,18 @@ public enum AuthResponse // TypeDefIndex: 5138
 
 }
 
-public enum AuthResponse // TypeDefIndex: 5683
+public enum AuthResponse // TypeDefIndex: 5684
 {
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=76
 
-private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 
+private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024
 
-internal class <Module> 
+internal class <Module>
 
-public enum AuthResponse 
+public enum AuthResponse
 	public int value__; 
 	public const AuthResponse Invalid = 0;
 	public const AuthResponse TimedOut = 1;

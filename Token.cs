@@ -1,4 +1,4 @@
-internal struct Token // TypeDefIndex: 5781
+internal struct Token // TypeDefIndex: 5782
 {
 	public static readonly Token Empty; 
 	private readonly Token.Type type; 
@@ -36,7 +36,7 @@ internal struct Token // TypeDefIndex: 5781
 
 }
 
-public enum Token.Type // TypeDefIndex: 5782
+public enum Token.Type // TypeDefIndex: 5783
 {
 	public int value__; 
 	public const Token.Type Error = 0;

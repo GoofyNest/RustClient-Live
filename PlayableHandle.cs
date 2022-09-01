@@ -45,8 +45,8 @@ public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3870
 	[VisibleToOtherModulesAttribute] 
 	internal bool IsValid() { }
 
-	[VisibleToOtherModulesAttribute] 
 	[FreeFunctionAttribute] 
+	[VisibleToOtherModulesAttribute] 
 	internal Type GetPlayableType() { }
 
 	private static void .cctor() { }

@@ -1,10 +1,11 @@
-public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefIndex: 9933
+public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefIndex: 9940
 {
 	public static bool Paused; 
 	public float CellSize; 
 	public float MaxMilliseconds; 
 	public const float MaxRefreshDistance = 500;
 	public static float TreeMeshDistance; 
+	public const float MinTimeBetweenRefreshes = 1;
 	private bool treeRefreshRequest; 
 	private Vector3 treeRefreshPosition; 
 	private List<TreeLOD> treeQueue; 
@@ -51,7 +52,7 @@ public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefI
 
 }
 
-private sealed class LODGrid.<UpdateCoroutine>d__25 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9934
+private sealed class LODGrid.<UpdateCoroutine>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9941
 {
 	private int <>1__state; 
 	private object <>2__current; 

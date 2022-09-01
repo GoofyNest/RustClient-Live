@@ -1,4 +1,4 @@
-internal class GAStore // TypeDefIndex: 5669
+internal class GAStore // TypeDefIndex: 5670
 {
 	private static readonly GAStore _instance; 
 	private string dbPath; 

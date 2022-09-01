@@ -1,4 +1,4 @@
-internal static class NativeNetProtect // TypeDefIndex: 7154
+internal static class NativeNetProtect // TypeDefIndex: 7155
 {
 	private static IntPtr Instance; 
 

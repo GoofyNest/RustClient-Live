@@ -1,4 +1,4 @@
-internal struct LeaderboardFindResult_t : ICallbackData // TypeDefIndex: 5389
+internal struct LeaderboardFindResult_t : ICallbackData // TypeDefIndex: 5390
 {
 	internal ulong SteamLeaderboard; 
 	internal byte LeaderboardFound; 

@@ -1,4 +1,4 @@
-public class ElectricalHeater : IOEntity // TypeDefIndex: 8705
+public class ElectricalHeater : IOEntity // TypeDefIndex: 8708
 {
 	public float fadeDuration; 
 	public Light sourceLight; 

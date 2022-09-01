@@ -1,4 +1,4 @@
-public static class QuaternionEx // TypeDefIndex: 11701
+public static class QuaternionEx // TypeDefIndex: 11729
 {
 
 	[ExtensionAttribute] 

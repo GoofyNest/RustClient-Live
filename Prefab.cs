@@ -1,4 +1,4 @@
-public class Prefab : IComparable<Prefab> // TypeDefIndex: 9969
+public class Prefab : IComparable<Prefab> // TypeDefIndex: 9976
 {
 	public uint ID; 
 	public string Name; 
@@ -31,6 +31,8 @@ public class Prefab : IComparable<Prefab> // TypeDefIndex: 9969
 	public void ApplyTerrainPlacements(Vector3 pos, Quaternion rot, Vector3 scale) { }
 
 	public bool ApplyWaterChecks(Vector3 pos, Quaternion rot, Vector3 scale) { }
+
+	public bool ApplyBoundsChecks(Vector3 pos, Quaternion rot, Vector3 scale, LayerMask rejectOnLayer) { }
 
 	public void ApplyDecorComponents(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }
 

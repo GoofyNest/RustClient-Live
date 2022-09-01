@@ -1,4 +1,4 @@
-public struct Interpolator.Segment<T> // TypeDefIndex: 12119
+public struct Interpolator.Segment<T> // TypeDefIndex: 12147
 {
 	public T tick; 
 	public T prev; 

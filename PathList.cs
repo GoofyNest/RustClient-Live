@@ -39,7 +39,7 @@ private class PathList.PathListComparer : IComparer // TypeDefIndex: 2946
 
 }
 
-public class PathList // TypeDefIndex: 10291
+public class PathList // TypeDefIndex: 10302
 {
 	private static Quaternion rot90; 
 	private static Quaternion rot180; 
@@ -112,7 +112,7 @@ public class PathList // TypeDefIndex: 10291
 
 }
 
-public enum PathList.Side // TypeDefIndex: 10292
+public enum PathList.Side // TypeDefIndex: 10303
 {
 	public int value__; 
 	public const PathList.Side Both = 0;
@@ -122,7 +122,7 @@ public enum PathList.Side // TypeDefIndex: 10292
 
 }
 
-public enum PathList.Placement // TypeDefIndex: 10293
+public enum PathList.Placement // TypeDefIndex: 10304
 {
 	public int value__; 
 	public const PathList.Placement Center = 0;
@@ -130,7 +130,7 @@ public enum PathList.Placement // TypeDefIndex: 10293
 
 }
 
-public enum PathList.Alignment // TypeDefIndex: 10294
+public enum PathList.Alignment // TypeDefIndex: 10305
 {
 	public int value__; 
 	public const PathList.Alignment None = 0;
@@ -140,7 +140,7 @@ public enum PathList.Alignment // TypeDefIndex: 10294
 
 }
 
-public class PathList.BasicObject // TypeDefIndex: 10295
+public class PathList.BasicObject // TypeDefIndex: 10306
 {
 	public string Folder; 
 	public SpawnFilter Filter; 
@@ -154,7 +154,7 @@ public class PathList.BasicObject // TypeDefIndex: 10295
 
 }
 
-public class PathList.SideObject // TypeDefIndex: 10296
+public class PathList.SideObject // TypeDefIndex: 10307
 {
 	public string Folder; 
 	public SpawnFilter Filter; 
@@ -169,7 +169,7 @@ public class PathList.SideObject // TypeDefIndex: 10296
 
 }
 
-public class PathList.PathObject // TypeDefIndex: 10297
+public class PathList.PathObject // TypeDefIndex: 10308
 {
 	public string Folder; 
 	public SpawnFilter Filter; 
@@ -183,7 +183,7 @@ public class PathList.PathObject // TypeDefIndex: 10297
 
 }
 
-public class PathList.BridgeObject // TypeDefIndex: 10298
+public class PathList.BridgeObject // TypeDefIndex: 10309
 {
 	public string Folder; 
 	public float Distance; 
@@ -193,7 +193,7 @@ public class PathList.BridgeObject // TypeDefIndex: 10298
 
 }
 
-public class PathList.MeshObject // TypeDefIndex: 10299
+public class PathList.MeshObject // TypeDefIndex: 10310
 {
 	public Vector3 Position; 
 	public Mesh[] Meshes; 
@@ -203,7 +203,7 @@ public class PathList.MeshObject // TypeDefIndex: 10299
 
 }
 
-private sealed class PathList.<>c__DisplayClass47_0 // TypeDefIndex: 10300
+private sealed class PathList.<>c__DisplayClass47_0 // TypeDefIndex: 10311
 {
 	public TerrainHeightMap heightmap; 
 	public Line prev_line; 
@@ -220,7 +220,7 @@ private sealed class PathList.<>c__DisplayClass47_0 // TypeDefIndex: 10300
 
 }
 
-private sealed class PathList.<>c__DisplayClass47_1 // TypeDefIndex: 10301
+private sealed class PathList.<>c__DisplayClass47_1 // TypeDefIndex: 10312
 {
 	public float yn; 
 	public Line next_line; 
@@ -235,7 +235,7 @@ private sealed class PathList.<>c__DisplayClass47_1 // TypeDefIndex: 10301
 
 }
 
-private sealed class PathList.<>c__DisplayClass48_0 // TypeDefIndex: 10302
+private sealed class PathList.<>c__DisplayClass48_0 // TypeDefIndex: 10313
 {
 	public TerrainSplatMap splatmap; 
 	public float outerPadding; 
@@ -247,7 +247,7 @@ private sealed class PathList.<>c__DisplayClass48_0 // TypeDefIndex: 10302
 
 }
 
-private sealed class PathList.<>c__DisplayClass48_1 // TypeDefIndex: 10303
+private sealed class PathList.<>c__DisplayClass48_1 // TypeDefIndex: 10314
 {
 	public float yn; 
 	public Ray ray; 
@@ -262,7 +262,7 @@ private sealed class PathList.<>c__DisplayClass48_1 // TypeDefIndex: 10303
 
 }
 
-private sealed class PathList.<>c__DisplayClass49_0 // TypeDefIndex: 10304
+private sealed class PathList.<>c__DisplayClass49_0 // TypeDefIndex: 10315
 {
 	public TerrainTopologyMap topomap; 
 	public float outerPadding; 
@@ -274,7 +274,7 @@ private sealed class PathList.<>c__DisplayClass49_0 // TypeDefIndex: 10304
 
 }
 
-private sealed class PathList.<>c__DisplayClass49_1 // TypeDefIndex: 10305
+private sealed class PathList.<>c__DisplayClass49_1 // TypeDefIndex: 10316
 {
 	public float yn; 
 	public Ray ray; 
@@ -289,7 +289,7 @@ private sealed class PathList.<>c__DisplayClass49_1 // TypeDefIndex: 10305
 
 }
 
-private sealed class PathList.<>c__DisplayClass50_0 // TypeDefIndex: 10306
+private sealed class PathList.<>c__DisplayClass50_0 // TypeDefIndex: 10317
 {
 	public TerrainPlacementMap placementmap; 
 	public float radius; 
@@ -299,7 +299,7 @@ private sealed class PathList.<>c__DisplayClass50_0 // TypeDefIndex: 10306
 
 }
 
-private sealed class PathList.<>c__DisplayClass50_1 // TypeDefIndex: 10307
+private sealed class PathList.<>c__DisplayClass50_1 // TypeDefIndex: 10318
 {
 	public float yn; 
 	public Ray ray; 

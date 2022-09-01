@@ -26,7 +26,7 @@ internal struct Variant // TypeDefIndex: 418
 
 }
 
-public abstract class Variant : IConvertible // TypeDefIndex: 11584
+public abstract class Variant : IConvertible // TypeDefIndex: 11612
 {
 	protected static readonly IFormatProvider FormatProvider; 
 

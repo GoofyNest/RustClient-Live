@@ -1,4 +1,4 @@
-internal struct NamespaceResolver // TypeDefIndex: 5839
+internal struct NamespaceResolver // TypeDefIndex: 5840
 {
 	private int scope; 
 	private NamespaceResolver.NamespaceDeclaration declaration; 
@@ -17,7 +17,7 @@ internal struct NamespaceResolver // TypeDefIndex: 5839
 
 }
 
-private class NamespaceResolver.NamespaceDeclaration // TypeDefIndex: 5840
+private class NamespaceResolver.NamespaceDeclaration // TypeDefIndex: 5841
 {
 	public string prefix; 
 	public XNamespace ns; 

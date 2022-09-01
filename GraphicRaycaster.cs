@@ -1,4 +1,4 @@
-public class GraphicRaycaster : BaseRaycaster // TypeDefIndex: 4931
+public class GraphicRaycaster : BaseRaycaster // TypeDefIndex: 4932
 {
 	protected const int kNoEventMaskSet = -1;
 	[FormerlySerializedAsAttribute] 
@@ -47,7 +47,7 @@ public class GraphicRaycaster : BaseRaycaster // TypeDefIndex: 4931
 
 }
 
-public enum GraphicRaycaster.BlockingObjects // TypeDefIndex: 4932
+public enum GraphicRaycaster.BlockingObjects // TypeDefIndex: 4933
 {
 	public int value__; 
 	public const GraphicRaycaster.BlockingObjects None = 0;
@@ -57,7 +57,7 @@ public enum GraphicRaycaster.BlockingObjects // TypeDefIndex: 4932
 
 }
 
-private sealed class GraphicRaycaster.<>c // TypeDefIndex: 4933
+private sealed class GraphicRaycaster.<>c // TypeDefIndex: 4934
 {
 	public static readonly GraphicRaycaster.<>c <>9; 
 	public static Comparison<Graphic> <>9__24_0; 

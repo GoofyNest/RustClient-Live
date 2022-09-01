@@ -1,4 +1,4 @@
-public struct Option // TypeDefIndex: 7027
+public struct Option // TypeDefIndex: 7028
 {
 	public Icons Icon; 
 	public string Value; 
@@ -14,7 +14,7 @@ public struct Option // TypeDefIndex: 7027
 
 }
 
-public struct Option // TypeDefIndex: 11670
+public struct Option // TypeDefIndex: 11698
 {
 	public string title; 
 	public string desc; 

@@ -1,6 +1,7 @@
-public class LootPanel : MonoBehaviour // TypeDefIndex: 11025
+public class LootPanel : MonoBehaviour // TypeDefIndex: 11039
 {
 	public Text Title; 
+	public RustText TitleText; 
 	public bool hideInvalidIcons; 
 	[TooltipAttribute] 
 	public CanvasGroup canvasGroup; 
@@ -31,6 +32,8 @@ public class LootPanel : MonoBehaviour // TypeDefIndex: 11025
 	*/
 
 	public BaseEntity GetContainerEntity() { }
+
+	public virtual void OnOpened() { }
 
 	protected virtual void Awake() { }
 

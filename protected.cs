@@ -88,7 +88,7 @@ protected abstract class TypeConverter.SimplePropertyDescriptor : PropertyDescri
 
 }
 
-protected internal class Dropdown.DropdownItem : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, ICancelHandler // TypeDefIndex: 4922
+protected internal class Dropdown.DropdownItem : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, ICancelHandler // TypeDefIndex: 4923
 {
 	[SerializeField] 
 	private Text m_Text; 
@@ -129,7 +129,7 @@ protected internal class Dropdown.DropdownItem : MonoBehaviour, IPointerEnterHan
 
 }
 
-protected enum InputField.EditState // TypeDefIndex: 4954
+protected enum InputField.EditState // TypeDefIndex: 4955
 {
 	public int value__; 
 	public const InputField.EditState Continue = 0;
@@ -137,7 +137,7 @@ protected enum InputField.EditState // TypeDefIndex: 4954
 
 }
 
-protected enum Selectable.SelectionState // TypeDefIndex: 5005
+protected enum Selectable.SelectionState // TypeDefIndex: 5006
 {
 	public int value__; 
 	public const Selectable.SelectionState Normal = 0;
@@ -148,7 +148,7 @@ protected enum Selectable.SelectionState // TypeDefIndex: 5005
 
 }
 
-protected class PointerInputModule.ButtonState // TypeDefIndex: 5082
+protected class PointerInputModule.ButtonState // TypeDefIndex: 5083
 {
 	private PointerEventData.InputButton m_Button; 
 	private PointerInputModule.MouseButtonEventData m_EventData; 
@@ -169,7 +169,7 @@ protected class PointerInputModule.ButtonState // TypeDefIndex: 5082
 
 }
 
-protected class PointerInputModule.MouseState // TypeDefIndex: 5083
+protected class PointerInputModule.MouseState // TypeDefIndex: 5084
 {
 	private List<PointerInputModule.ButtonState> m_TrackedButtons; 
 
@@ -186,7 +186,7 @@ protected class PointerInputModule.MouseState // TypeDefIndex: 5083
 
 }
 
-protected internal enum JsonReader.State // TypeDefIndex: 5903
+protected internal enum JsonReader.State // TypeDefIndex: 5904
 {
 	public int value__; 
 	public const JsonReader.State Start = 0;
@@ -205,7 +205,7 @@ protected internal enum JsonReader.State // TypeDefIndex: 5903
 
 }
 
-protected enum TMP_InputField.EditState // TypeDefIndex: 6794
+protected enum TMP_InputField.EditState // TypeDefIndex: 6795
 {
 	public int value__; 
 	public const TMP_InputField.EditState Continue = 0;
@@ -213,7 +213,7 @@ protected enum TMP_InputField.EditState // TypeDefIndex: 6794
 
 }
 
-protected struct TMP_Text.UnicodeChar // TypeDefIndex: 6838
+protected struct TMP_Text.UnicodeChar // TypeDefIndex: 6839
 {
 	public int unicode; 
 	public int stringIndex; 
@@ -221,7 +221,7 @@ protected struct TMP_Text.UnicodeChar // TypeDefIndex: 6838
 
 }
 
-protected static class AnimalAnimation.Params // TypeDefIndex: 9114
+protected static class AnimalAnimation.Params // TypeDefIndex: 9117
 {
 	public static int WalkSpeed; 
 	public static int Sleeping; 
@@ -231,7 +231,7 @@ protected static class AnimalAnimation.Params // TypeDefIndex: 9114
 
 }
 
-protected class ViewShake.ShakeParameters // TypeDefIndex: 9252
+protected class ViewShake.ShakeParameters // TypeDefIndex: 9256
 {
 	public float endTime; 
 	public float duration; 
@@ -247,7 +247,7 @@ protected class ViewShake.ShakeParameters // TypeDefIndex: 9252
 
 }
 
-protected struct BaseFootstepEffect.GroundInfo // TypeDefIndex: 9327
+protected struct BaseFootstepEffect.GroundInfo // TypeDefIndex: 9331
 {
 	public string surface; 
 	public Vector3 position; 
@@ -262,7 +262,7 @@ protected struct BaseFootstepEffect.GroundInfo // TypeDefIndex: 9327
 
 }
 
-protected enum VehicleChassisVisuals.ExtensionMode<T> // TypeDefIndex: 9783
+protected enum VehicleChassisVisuals.ExtensionMode<T> // TypeDefIndex: 9788
 {
 	public int value__; 
 	public const VehicleChassisVisuals.ExtensionMode<T> RestingIsMinExtension = 0;

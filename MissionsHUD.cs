@@ -1,4 +1,4 @@
-public class MissionsHUD : SingletonComponent<MissionsHUD> // TypeDefIndex: 11180
+public class MissionsHUD : SingletonComponent<MissionsHUD> // TypeDefIndex: 11208
 {
 	public SoundDefinition listComplete; 
 	public SoundDefinition itemComplete; 
@@ -51,7 +51,7 @@ public class MissionsHUD : SingletonComponent<MissionsHUD> // TypeDefIndex: 1118
 
 }
 
-private sealed class MissionsHUD.<Think>d__19 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11181
+private sealed class MissionsHUD.<Think>d__19 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11209
 {
 	private int <>1__state; 
 	private object <>2__current; 

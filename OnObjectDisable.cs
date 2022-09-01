@@ -1,4 +1,4 @@
-internal class OnObjectDisable : MonoBehaviour // TypeDefIndex: 6631
+internal class OnObjectDisable : MonoBehaviour // TypeDefIndex: 6632
 {
 	public UnityEvent Action; 
 

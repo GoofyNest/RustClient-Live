@@ -4,7 +4,7 @@ public class PlayableDirector : Behaviour // TypeDefIndex: 4518
 [RequiredByNativeCodeAttribute] 
 [NativeHeaderAttribute] 
 [NativeHeaderAttribute] 
-public class PlayableDirector : Behaviour 
+public class PlayableDirector : Behaviour
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private Action<PlayableDirector> played; 

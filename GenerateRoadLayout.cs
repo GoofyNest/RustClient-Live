@@ -1,4 +1,4 @@
-public class GenerateRoadLayout : ProceduralComponent // TypeDefIndex: 10505
+public class GenerateRoadLayout : ProceduralComponent // TypeDefIndex: 10516
 {
 	public InfrastructureType RoadType; 
 	public const float RoadWidth = 10;
@@ -21,7 +21,7 @@ public class GenerateRoadLayout : ProceduralComponent // TypeDefIndex: 10505
 
 }
 
-private class GenerateRoadLayout.PathNode // TypeDefIndex: 10506
+private class GenerateRoadLayout.PathNode // TypeDefIndex: 10517
 {
 	public MonumentInfo monument; 
 	public TerrainPathConnect target; 
@@ -32,7 +32,7 @@ private class GenerateRoadLayout.PathNode // TypeDefIndex: 10506
 
 }
 
-private class GenerateRoadLayout.PathSegment // TypeDefIndex: 10507
+private class GenerateRoadLayout.PathSegment // TypeDefIndex: 10518
 {
 	public PathFinder.Node start; 
 	public PathFinder.Node end; 
@@ -44,7 +44,7 @@ private class GenerateRoadLayout.PathSegment // TypeDefIndex: 10507
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_0 // TypeDefIndex: 10508
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_0 // TypeDefIndex: 10519
 {
 	public GenerateRoadLayout.PathSegment segment; 
 
@@ -57,7 +57,7 @@ private sealed class GenerateRoadLayout.<>c__DisplayClass14_0 // TypeDefIndex: 1
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_1 // TypeDefIndex: 10509
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_1 // TypeDefIndex: 10520
 {
 	public GenerateRoadLayout.PathNode node; 
 
@@ -70,7 +70,7 @@ private sealed class GenerateRoadLayout.<>c__DisplayClass14_1 // TypeDefIndex: 1
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_2 // TypeDefIndex: 10510
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_2 // TypeDefIndex: 10521
 {
 	public GenerateRoadLayout.PathNode node; 
 
@@ -83,7 +83,7 @@ private sealed class GenerateRoadLayout.<>c__DisplayClass14_2 // TypeDefIndex: 1
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_3 // TypeDefIndex: 10511
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_3 // TypeDefIndex: 10522
 {
 	public GenerateRoadLayout.PathNode node; 
 
@@ -96,7 +96,7 @@ private sealed class GenerateRoadLayout.<>c__DisplayClass14_3 // TypeDefIndex: 1
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_4 // TypeDefIndex: 10512
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_4 // TypeDefIndex: 10523
 {
 	public GenerateRoadLayout.PathNode target; 
 
@@ -107,7 +107,7 @@ private sealed class GenerateRoadLayout.<>c__DisplayClass14_4 // TypeDefIndex: 1
 
 }
 
-private sealed class GenerateRoadLayout.<>c // TypeDefIndex: 10513
+private sealed class GenerateRoadLayout.<>c // TypeDefIndex: 10524
 {
 	public static readonly GenerateRoadLayout.<>c <>9; 
 	public static Func<GenerateRoadLayout.PathNode, PathFinder.Point> <>9__14_0; 

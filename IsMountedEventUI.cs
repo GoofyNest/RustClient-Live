@@ -1,4 +1,4 @@
-public class IsMountedEventUI : BaseEventUI // TypeDefIndex: 10801
+public class IsMountedEventUI : BaseEventUI // TypeDefIndex: 10812
 {
 
 	public void .ctor() { }

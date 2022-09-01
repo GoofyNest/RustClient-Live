@@ -1,4 +1,4 @@
-public struct float2 : IEquatable<float2>, IFormattable // TypeDefIndex: 7101
+public struct float2 : IEquatable<float2>, IFormattable // TypeDefIndex: 7102
 {
 	public float x; 
 	public float y; 

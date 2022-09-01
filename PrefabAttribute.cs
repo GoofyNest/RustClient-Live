@@ -1,4 +1,4 @@
-public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11326
+public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11354
 {
 	public Vector3 worldPosition; 
 	public Quaternion worldRotation; 
@@ -46,7 +46,7 @@ public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // Type
 
 }
 
-public class PrefabAttribute.AttributeCollection // TypeDefIndex: 11327
+public class PrefabAttribute.AttributeCollection // TypeDefIndex: 11355
 {
 	private Dictionary<Type, List<PrefabAttribute>> attributes; 
 	private Dictionary<Type, object> cache; 
@@ -66,7 +66,7 @@ public class PrefabAttribute.AttributeCollection // TypeDefIndex: 11327
 
 }
 
-public class PrefabAttribute.Library // TypeDefIndex: 11328
+public class PrefabAttribute.Library // TypeDefIndex: 11356
 {
 	public bool clientside; 
 	public bool serverside; 
@@ -100,6 +100,7 @@ public class PrefabAttribute.Library // TypeDefIndex: 11328
 	/* GenericInstMethod :
 	|
 	|-PrefabAttribute.Library.FindAll<AttractionPoint>
+	|-PrefabAttribute.Library.FindAll<BoundsCheck>
 	|-PrefabAttribute.Library.FindAll<ConditionalModel>
 	|-PrefabAttribute.Library.FindAll<DecalComponent>
 	|-PrefabAttribute.Library.FindAll<DecorComponent>

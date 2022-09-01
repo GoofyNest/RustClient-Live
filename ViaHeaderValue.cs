@@ -1,4 +1,4 @@
-public class ViaHeaderValue : ICloneable // TypeDefIndex: 5810
+public class ViaHeaderValue : ICloneable // TypeDefIndex: 5811
 {
 	[CompilerGeneratedAttribute] 
 	private string <Comment>k__BackingField; 

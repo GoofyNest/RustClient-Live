@@ -1,4 +1,4 @@
-public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapshot>, ILerpInfo, ITrainCollidable, IPrefabPreProcess // TypeDefIndex: 8467
+public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapshot>, ILerpInfo, ITrainCollidable, IPrefabPreProcess // TypeDefIndex: 8469
 {
 	private Option __menuOption_Menu_Uncouple; 
 	private GenericLerp<TrainCar.TrainCarSnapshot> animInterp; 
@@ -163,7 +163,7 @@ public class TrainCar : BaseVehicle, IGenericLerpTarget<TrainCar.TrainCarSnapsho
 
 }
 
-public struct TrainCar.TrainCarSnapshot : ISnapshot<TrainCar.TrainCarSnapshot> // TypeDefIndex: 8468
+public struct TrainCar.TrainCarSnapshot : ISnapshot<TrainCar.TrainCarSnapshot> // TypeDefIndex: 8470
 {
 	[CompilerGeneratedAttribute] 
 	private float <Time>k__BackingField; 
@@ -189,11 +189,12 @@ public struct TrainCar.TrainCarSnapshot : ISnapshot<TrainCar.TrainCarSnapshot> /
 
 }
 
-public enum TrainCar.TrainCarType // TypeDefIndex: 8469
+public enum TrainCar.TrainCarType // TypeDefIndex: 8471
 {
 	public int value__; 
 	public const TrainCar.TrainCarType Wagon = 0;
 	public const TrainCar.TrainCarType Engine = 1;
+	public const TrainCar.TrainCarType Other = 2;
 
 }
 

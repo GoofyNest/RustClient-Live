@@ -1,4 +1,4 @@
-public class Candle : BaseCombatEntity, ISplashable, IIgniteable // TypeDefIndex: 8366
+public class Candle : BaseCombatEntity, ISplashable, IIgniteable // TypeDefIndex: 8368
 {
 	private Option __menuOption_Menu_Extinguish; 
 	private Option __menuOption_Menu_Ignite; 

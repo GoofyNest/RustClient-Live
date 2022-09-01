@@ -1,4 +1,4 @@
-public class SkeletonRagdoll : Skeleton // TypeDefIndex: 7352
+public class SkeletonRagdoll : Skeleton // TypeDefIndex: 7353
 {
 
 	public void .ctor() { }

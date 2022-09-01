@@ -1,4 +1,4 @@
-public class MeshGroup : PooledList<MeshInstance> // TypeDefIndex: 9161
+public class MeshGroup : PooledList<MeshInstance> // TypeDefIndex: 9165
 {
 
 	public void .ctor() { }

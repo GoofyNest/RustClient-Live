@@ -1,4 +1,4 @@
-public class SleepingBagClusterMapMarker : MonoBehaviour // TypeDefIndex: 10959
+public class SleepingBagClusterMapMarker : MonoBehaviour // TypeDefIndex: 10971
 {
 	public TextMeshProUGUI CountText; 
 	public List<SleepingBagButton> SleepingBagButtons; 

@@ -1,4 +1,4 @@
-public class PieShape : Graphic // TypeDefIndex: 11197
+public class PieShape : Graphic // TypeDefIndex: 11225
 {
 	[RangeAttribute] 
 	public float outerSize; 

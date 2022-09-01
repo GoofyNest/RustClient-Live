@@ -1,4 +1,4 @@
-public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5239
+public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5240
 {
 	internal InventoryDefId _id; 
 	internal Dictionary<string, string> _properties; 
@@ -79,7 +79,7 @@ public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5239
 
 }
 
-private sealed class InventoryDef.<>c // TypeDefIndex: 5240
+private sealed class InventoryDef.<>c // TypeDefIndex: 5241
 {
 	public static readonly InventoryDef.<>c <>9; 
 	public static Func<InventoryDef, InventoryRecipe[]> <>9__44_0; 

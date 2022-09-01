@@ -32,7 +32,7 @@ internal enum ExceptionArgument // TypeDefIndex: 309
 
 }
 
-internal enum ExceptionArgument // TypeDefIndex: 6727
+internal enum ExceptionArgument // TypeDefIndex: 6728
 {
 	public int value__; 
 	public const ExceptionArgument length = 0;
@@ -53,7 +53,7 @@ internal enum ExceptionArgument // TypeDefIndex: 6727
 
 }
 
-internal enum ExceptionArgument // TypeDefIndex: 7084
+internal enum ExceptionArgument // TypeDefIndex: 7085
 {
 	public int value__; 
 	public const ExceptionArgument task = 0;

@@ -1,7 +1,7 @@
 internal enum Aggregate // TypeDefIndex: 4241
 {
 
-internal enum Aggregate 
+internal enum Aggregate
 	public int value__; 
 	public const Aggregate None = -1;
 	public const Aggregate Sum = 30;

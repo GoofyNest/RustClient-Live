@@ -1,4 +1,4 @@
-public enum DropChance // TypeDefIndex: 7736
+public enum DropChance // TypeDefIndex: 7737
 {
 	public int value__; 
 	public const DropChance Never = 0;

@@ -1,4 +1,4 @@
-public class SurveyCrater : BaseCombatEntity // TypeDefIndex: 8461
+public class SurveyCrater : BaseCombatEntity // TypeDefIndex: 8463
 {
 	private Option __menuOption_Menu_AnalysisComplete; 
 	private ResourceDispenser resourceDispenser; 

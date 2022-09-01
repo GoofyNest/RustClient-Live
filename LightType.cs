@@ -13,7 +13,7 @@ public enum LightType // TypeDefIndex: 3414
 public enum LightType // TypeDefIndex: 3876
 {
 
-public enum LightType 
+public enum LightType
 	public byte value__; 
 	public const LightType Directional = 0;
 	public const LightType Point = 1;

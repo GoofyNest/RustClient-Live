@@ -1,4 +1,4 @@
-public enum StateChangeType // TypeDefIndex: 7153
+public enum StateChangeType // TypeDefIndex: 7154
 {
 	public int value__; 
 	public const StateChangeType Connection = 0;

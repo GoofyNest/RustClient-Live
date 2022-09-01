@@ -1,4 +1,4 @@
-internal class Fisheye : PostEffectsBase // TypeDefIndex: 8188
+internal class Fisheye : PostEffectsBase // TypeDefIndex: 8189
 {
 	public float strengthX; 
 	public float strengthY; 

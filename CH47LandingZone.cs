@@ -1,4 +1,4 @@
-public class CH47LandingZone : MonoBehaviour // TypeDefIndex: 9716
+public class CH47LandingZone : MonoBehaviour // TypeDefIndex: 9721
 {
 	public float lastDropTime; 
 	private static List<CH47LandingZone> landingZones; 

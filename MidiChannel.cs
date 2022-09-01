@@ -1,7 +1,7 @@
-public enum MidiChannel // TypeDefIndex: 7640
+public enum MidiChannel // TypeDefIndex: 7641
 {
 
-public enum MidiChannel 
+public enum MidiChannel
 	public int value__; 
 	public const MidiChannel Ch1 = 0;
 	public const MidiChannel Ch2 = 1;

@@ -1,4 +1,4 @@
-public class TimeBasedSoundSpread : SoundModifier // TypeDefIndex: 9046
+public class TimeBasedSoundSpread : SoundModifier // TypeDefIndex: 9049
 {
 	public AnimationCurve spreadCurve; 
 	public AnimationCurve wanderIntensityCurve; 

@@ -1,4 +1,4 @@
-public enum CommentHandling // TypeDefIndex: 6036
+public enum CommentHandling // TypeDefIndex: 6037
 {
 	public int value__; 
 	public const CommentHandling Ignore = 0;

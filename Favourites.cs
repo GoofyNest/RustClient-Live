@@ -1,4 +1,4 @@
-public class Favourites : Base // TypeDefIndex: 5285
+public class Favourites : Base // TypeDefIndex: 5286
 {
 
 	internal override void LaunchQuery() { }

@@ -1,4 +1,4 @@
-internal class ISteamScreenshots : SteamInterface // TypeDefIndex: 5129
+internal class ISteamScreenshots : SteamInterface // TypeDefIndex: 5130
 {
 
 	internal void .ctor(bool IsGameServer) { }

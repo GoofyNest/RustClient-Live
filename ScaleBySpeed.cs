@@ -1,4 +1,4 @@
-public class ScaleBySpeed : MonoBehaviour // TypeDefIndex: 9232
+public class ScaleBySpeed : MonoBehaviour // TypeDefIndex: 9236
 {
 	public float minScale; 
 	public float maxScale; 

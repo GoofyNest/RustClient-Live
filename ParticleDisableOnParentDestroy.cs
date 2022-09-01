@@ -1,4 +1,4 @@
-public class ParticleDisableOnParentDestroy : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 9210
+public class ParticleDisableOnParentDestroy : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 9214
 {
 	public float destroyAfterSeconds; 
 

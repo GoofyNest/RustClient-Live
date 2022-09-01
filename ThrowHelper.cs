@@ -41,7 +41,7 @@ internal static class ThrowHelper // TypeDefIndex: 124
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<AdvancedChristmasLights.pointEntry>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<AlignedLineDrawer.LinePoint>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<AtmosphereVolumeRenderer.CurrentVolumeEntry>
-	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<BaseEntity.ServerFileRequest>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<BaseEntity.PendingFileRequest>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<CardTableUI.KeycodeWithAction>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<Cassette.LoadRequest>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<Admin.PlayerInfo>
@@ -209,10 +209,10 @@ internal static class ThrowHelper // TypeDefIndex: 124
 
 }
 
-internal static class ThrowHelper // TypeDefIndex: 6726
+internal static class ThrowHelper // TypeDefIndex: 6727
 {
 
-internal static class ThrowHelper 
+internal static class ThrowHelper
 
 	internal static void ThrowArrayTypeMismatchException() { }
 
@@ -236,7 +236,7 @@ internal static class ThrowHelper
 
 }
 
-internal static class ThrowHelper // TypeDefIndex: 7083
+internal static class ThrowHelper // TypeDefIndex: 7084
 {
 
 	internal static void ThrowArgumentNullException(ExceptionArgument argument) { }

@@ -1,4 +1,4 @@
-public class RightClickReceiver : MonoBehaviour, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 11275
+public class RightClickReceiver : MonoBehaviour, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 11303
 {
 	public UnityEvent ClickReceiver; 
 

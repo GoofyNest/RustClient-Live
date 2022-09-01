@@ -1,4 +1,4 @@
-internal class DeflaterPending : PendingBuffer // TypeDefIndex: 5662
+internal class DeflaterPending : PendingBuffer // TypeDefIndex: 5663
 {
 
 	public void .ctor() { }
