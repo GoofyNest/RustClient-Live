@@ -5,6 +5,7 @@ public static class ObjectEx // TypeDefIndex: 11373
 	public static bool IsUnityNull<T>(T obj) { }
 	/* GenericInstMethod :
 	|
+	|-ObjectEx.IsUnityNull<IConversationProvider>
 	|-ObjectEx.IsUnityNull<IImageReceiver>
 	|-ObjectEx.IsUnityNull<IServerFileReceiver>
 	|-ObjectEx.IsUnityNull<ISoundBudgetedUpdate>
