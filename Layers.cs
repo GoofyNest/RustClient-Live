@@ -29,7 +29,7 @@ public static class Layers // TypeDefIndex: 6615
 	public const int HABGroundEffect = 1218511105;
 	public const int AILineOfSight = 1218519297;
 	public const int DismountCheck = 1486946561;
-	public const int AIPlacement = 278986753;
+	public const int AIPlacement = 295763969;
 	public const int WheelRay = 1235321089;
 	public const int Water = 16;
 	public const int Sprays = 2;
