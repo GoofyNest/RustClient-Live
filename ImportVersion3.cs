@@ -1,4 +1,4 @@
-internal class ImportVersion3 : SingletonComponent<ImportVersion3> // TypeDefIndex: 7778
+internal class ImportVersion3 : SingletonComponent<ImportVersion3> // TypeDefIndex: 7750
 {
 
 	[IteratorStateMachineAttribute] 
@@ -11,7 +11,7 @@ internal class ImportVersion3 : SingletonComponent<ImportVersion3> // TypeDefInd
 
 }
 
-private sealed class ImportVersion3.<DoImport>d__0 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7779
+private sealed class ImportVersion3.<DoImport>d__0 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7751
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -42,7 +42,7 @@ private sealed class ImportVersion3.<DoImport>d__0 : IEnumerator<object>, IEnume
 
 }
 
-private sealed class ImportVersion3.<DownloadFromWorkshop>d__1 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7780
+private sealed class ImportVersion3.<DownloadFromWorkshop>d__1 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7752
 {
 	private int <>1__state; 
 	private object <>2__current; 

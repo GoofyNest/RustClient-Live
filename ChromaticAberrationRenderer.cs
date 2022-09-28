@@ -1,4 +1,4 @@
-internal sealed class ChromaticAberrationRenderer : PostProcessEffectRenderer<ChromaticAberration> // TypeDefIndex: 11796
+internal sealed class ChromaticAberrationRenderer : PostProcessEffectRenderer<ChromaticAberration> // TypeDefIndex: 13464
 {
 	private Texture2D m_InternalSpectralLut; 
 

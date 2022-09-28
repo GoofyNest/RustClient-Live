@@ -1,4 +1,4 @@
-internal struct BoneState // TypeDefIndex: 7316
+internal struct BoneState // TypeDefIndex: 7288
 {
 	public float3 Position; 
 	public quaternion Rotation; 

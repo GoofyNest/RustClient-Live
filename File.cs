@@ -1412,7 +1412,7 @@ public class FileListElement : MonoBehaviour // TypeDefIndex: 7072
 
 }
 
-internal static class FileUtilities // TypeDefIndex: 7616
+internal static class FileUtilities // TypeDefIndex: 7588
 {
 
 	private static extern SafeFileHandle CreateFile(string lpFileName, uint dwDesiredAccess, uint dwShareMode, IntPtr lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, IntPtr hTemplateFile) { }
@@ -1423,7 +1423,400 @@ internal static class FileUtilities // TypeDefIndex: 7616
 
 }
 
-public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 9374
+public struct FileMetadata // TypeDefIndex: 8347
+{
+	[CompilerGeneratedAttribute] 
+	private uint <FileSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <MD5Hash>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Filename>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <UnencryptedDataSizeBytes>k__BackingField; 
+
+	public uint FileSizeBytes { get; set; }
+	public Utf8String MD5Hash { get; set; }
+	public Utf8String Filename { get; set; }
+	public uint UnencryptedDataSizeBytes { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public uint get_FileSizeBytes() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_FileSizeBytes(uint value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_MD5Hash() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_MD5Hash(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Filename() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Filename(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public uint get_UnencryptedDataSizeBytes() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_UnencryptedDataSizeBytes(uint value) { }
+
+	internal void Set(ref FileMetadataInternal other) { }
+
+}
+
+internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8348
+{
+	private int m_ApiVersion; 
+	private uint m_FileSizeBytes; 
+	private IntPtr m_MD5Hash; 
+	private IntPtr m_Filename; 
+	private uint m_UnencryptedDataSizeBytes; 
+
+	public uint FileSizeBytes { get; set; }
+	public Utf8String MD5Hash { get; set; }
+	public Utf8String Filename { get; set; }
+	public uint UnencryptedDataSizeBytes { get; set; }
+
+
+	public uint get_FileSizeBytes() { }
+
+	public void set_FileSizeBytes(uint value) { }
+
+	public Utf8String get_MD5Hash() { }
+
+	public void set_MD5Hash(Utf8String value) { }
+
+	public Utf8String get_Filename() { }
+
+	public void set_Filename(Utf8String value) { }
+
+	public uint get_UnencryptedDataSizeBytes() { }
+
+	public void set_UnencryptedDataSizeBytes(uint value) { }
+
+	public void Set(ref FileMetadata other) { }
+
+	public void Set(ref Nullable<FileMetadata> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out FileMetadata output) { }
+
+}
+
+public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8349
+{
+	[CompilerGeneratedAttribute] 
+	private object <ClientData>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Filename>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <BytesTransferred>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <TotalFileSizeBytes>k__BackingField; 
+
+	public object ClientData { get; set; }
+	public ProductUserId LocalUserId { get; set; }
+	public Utf8String Filename { get; set; }
+	public uint BytesTransferred { get; set; }
+	public uint TotalFileSizeBytes { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public object get_ClientData() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ClientData(object value) { }
+
+	[CompilerGeneratedAttribute] 
+	public ProductUserId get_LocalUserId() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_LocalUserId(ProductUserId value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Filename() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Filename(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public uint get_BytesTransferred() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_BytesTransferred(uint value) { }
+
+	[CompilerGeneratedAttribute] 
+	public uint get_TotalFileSizeBytes() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_TotalFileSizeBytes(uint value) { }
+
+	public Nullable<Result> GetResultCode() { }
+
+	internal void Set(ref FileTransferProgressCallbackInfoInternal other) { }
+
+}
+
+internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8350
+{
+	private IntPtr m_ClientData; 
+	private IntPtr m_LocalUserId; 
+	private IntPtr m_Filename; 
+	private uint m_BytesTransferred; 
+	private uint m_TotalFileSizeBytes; 
+
+	public object ClientData { get; set; }
+	public IntPtr ClientDataAddress { get; }
+	public ProductUserId LocalUserId { get; set; }
+	public Utf8String Filename { get; set; }
+	public uint BytesTransferred { get; set; }
+	public uint TotalFileSizeBytes { get; set; }
+
+
+	public object get_ClientData() { }
+
+	public void set_ClientData(object value) { }
+
+	public IntPtr get_ClientDataAddress() { }
+
+	public ProductUserId get_LocalUserId() { }
+
+	public void set_LocalUserId(ProductUserId value) { }
+
+	public Utf8String get_Filename() { }
+
+	public void set_Filename(Utf8String value) { }
+
+	public uint get_BytesTransferred() { }
+
+	public void set_BytesTransferred(uint value) { }
+
+	public uint get_TotalFileSizeBytes() { }
+
+	public void set_TotalFileSizeBytes(uint value) { }
+
+	public void Set(ref FileTransferProgressCallbackInfo other) { }
+
+	public void Set(ref Nullable<FileTransferProgressCallbackInfo> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out FileTransferProgressCallbackInfo output) { }
+
+}
+
+public struct FileMetadata // TypeDefIndex: 8840
+{
+	[CompilerGeneratedAttribute] 
+	private uint <FileSizeBytes>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <MD5Hash>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Filename>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Nullable<DateTimeOffset> <LastModifiedTime>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <UnencryptedDataSizeBytes>k__BackingField; 
+
+	public uint FileSizeBytes { get; set; }
+	public Utf8String MD5Hash { get; set; }
+	public Utf8String Filename { get; set; }
+	public Nullable<DateTimeOffset> LastModifiedTime { get; set; }
+	public uint UnencryptedDataSizeBytes { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public uint get_FileSizeBytes() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_FileSizeBytes(uint value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_MD5Hash() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_MD5Hash(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Filename() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Filename(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Nullable<DateTimeOffset> get_LastModifiedTime() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_LastModifiedTime(Nullable<DateTimeOffset> value) { }
+
+	[CompilerGeneratedAttribute] 
+	public uint get_UnencryptedDataSizeBytes() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_UnencryptedDataSizeBytes(uint value) { }
+
+	internal void Set(ref FileMetadataInternal other) { }
+
+}
+
+internal struct FileMetadataInternal : IGettable<FileMetadata>, ISettable<FileMetadata>, IDisposable // TypeDefIndex: 8841
+{
+	private int m_ApiVersion; 
+	private uint m_FileSizeBytes; 
+	private IntPtr m_MD5Hash; 
+	private IntPtr m_Filename; 
+	private long m_LastModifiedTime; 
+	private uint m_UnencryptedDataSizeBytes; 
+
+	public uint FileSizeBytes { get; set; }
+	public Utf8String MD5Hash { get; set; }
+	public Utf8String Filename { get; set; }
+	public Nullable<DateTimeOffset> LastModifiedTime { get; set; }
+	public uint UnencryptedDataSizeBytes { get; set; }
+
+
+	public uint get_FileSizeBytes() { }
+
+	public void set_FileSizeBytes(uint value) { }
+
+	public Utf8String get_MD5Hash() { }
+
+	public void set_MD5Hash(Utf8String value) { }
+
+	public Utf8String get_Filename() { }
+
+	public void set_Filename(Utf8String value) { }
+
+	public Nullable<DateTimeOffset> get_LastModifiedTime() { }
+
+	public void set_LastModifiedTime(Nullable<DateTimeOffset> value) { }
+
+	public uint get_UnencryptedDataSizeBytes() { }
+
+	public void set_UnencryptedDataSizeBytes(uint value) { }
+
+	public void Set(ref FileMetadata other) { }
+
+	public void Set(ref Nullable<FileMetadata> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out FileMetadata output) { }
+
+}
+
+public struct FileTransferProgressCallbackInfo : ICallbackInfo // TypeDefIndex: 8842
+{
+	[CompilerGeneratedAttribute] 
+	private object <ClientData>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private ProductUserId <LocalUserId>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Filename>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <BytesTransferred>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private uint <TotalFileSizeBytes>k__BackingField; 
+
+	public object ClientData { get; set; }
+	public ProductUserId LocalUserId { get; set; }
+	public Utf8String Filename { get; set; }
+	public uint BytesTransferred { get; set; }
+	public uint TotalFileSizeBytes { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public object get_ClientData() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ClientData(object value) { }
+
+	[CompilerGeneratedAttribute] 
+	public ProductUserId get_LocalUserId() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_LocalUserId(ProductUserId value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Filename() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Filename(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public uint get_BytesTransferred() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_BytesTransferred(uint value) { }
+
+	[CompilerGeneratedAttribute] 
+	public uint get_TotalFileSizeBytes() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_TotalFileSizeBytes(uint value) { }
+
+	public Nullable<Result> GetResultCode() { }
+
+	internal void Set(ref FileTransferProgressCallbackInfoInternal other) { }
+
+}
+
+internal struct FileTransferProgressCallbackInfoInternal : ICallbackInfoInternal, IGettable<FileTransferProgressCallbackInfo>, ISettable<FileTransferProgressCallbackInfo>, IDisposable // TypeDefIndex: 8843
+{
+	private IntPtr m_ClientData; 
+	private IntPtr m_LocalUserId; 
+	private IntPtr m_Filename; 
+	private uint m_BytesTransferred; 
+	private uint m_TotalFileSizeBytes; 
+
+	public object ClientData { get; set; }
+	public IntPtr ClientDataAddress { get; }
+	public ProductUserId LocalUserId { get; set; }
+	public Utf8String Filename { get; set; }
+	public uint BytesTransferred { get; set; }
+	public uint TotalFileSizeBytes { get; set; }
+
+
+	public object get_ClientData() { }
+
+	public void set_ClientData(object value) { }
+
+	public IntPtr get_ClientDataAddress() { }
+
+	public ProductUserId get_LocalUserId() { }
+
+	public void set_LocalUserId(ProductUserId value) { }
+
+	public Utf8String get_Filename() { }
+
+	public void set_Filename(Utf8String value) { }
+
+	public uint get_BytesTransferred() { }
+
+	public void set_BytesTransferred(uint value) { }
+
+	public uint get_TotalFileSizeBytes() { }
+
+	public void set_TotalFileSizeBytes(uint value) { }
+
+	public void Set(ref FileTransferProgressCallbackInfo other) { }
+
+	public void Set(ref Nullable<FileTransferProgressCallbackInfo> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out FileTransferProgressCallbackInfo output) { }
+
+}
+
+public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 11042
 {
 	public static bool ranInBackground; 
 	public static Coroutine warmupTask; 
@@ -1455,7 +1848,7 @@ public class FileSystem_Warmup : MonoBehaviour // TypeDefIndex: 9374
 
 }
 
-private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9375
+private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11043
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1490,7 +1883,7 @@ private sealed class FileSystem_Warmup.<RunAsyncImpl>d__6 : IEnumerator<object>,
 
 }
 
-private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9376
+private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11044
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1523,7 +1916,7 @@ private sealed class FileSystem_Warmup.<RunImpl>d__7 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 9377
+private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 11045
 {
 	public Nullable<bool> poolFilter; 
 
@@ -1534,7 +1927,7 @@ private sealed class FileSystem_Warmup.<>c__DisplayClass10_0 // TypeDefIndex: 93
 
 }
 
-private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 9378
+private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11046
 {
 	public static readonly FileSystem_Warmup.<>c <>9; 
 	public static Func<GameManifest.PrefabProperties, string> <>9__10_0; 
@@ -1554,7 +1947,7 @@ private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 9378
 
 }
 
-public class FileStorage : IDisposable // TypeDefIndex: 10729
+public class FileStorage : IDisposable // TypeDefIndex: 12397
 {
 	private Database db; 
 	private CRC32 crc; 
@@ -1594,7 +1987,7 @@ public class FileStorage : IDisposable // TypeDefIndex: 10729
 
 }
 
-private class FileStorage.CacheData // TypeDefIndex: 10730
+private class FileStorage.CacheData // TypeDefIndex: 12398
 {
 	public byte[] data; 
 	public uint entityID; 
@@ -1605,7 +1998,7 @@ private class FileStorage.CacheData // TypeDefIndex: 10730
 
 }
 
-public enum FileStorage.Type // TypeDefIndex: 10731
+public enum FileStorage.Type // TypeDefIndex: 12399
 {
 	public int value__; 
 	public const FileStorage.Type png = 0;
@@ -1614,7 +2007,7 @@ public enum FileStorage.Type // TypeDefIndex: 10731
 
 }
 
-private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 10732
+private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12400
 {
 	public uint entityid; 
 	public uint numid; 
@@ -1627,7 +2020,7 @@ private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 10732
 
 }
 
-private sealed class FileStorage.<>c // TypeDefIndex: 10733
+private sealed class FileStorage.<>c // TypeDefIndex: 12401
 {
 	public static readonly FileStorage.<>c <>9; 
 	public static Func<KeyValuePair<uint, FileStorage.CacheData>, uint> <>9__14_1; 
@@ -1641,7 +2034,7 @@ private sealed class FileStorage.<>c // TypeDefIndex: 10733
 
 }
 
-public static class FileEx // TypeDefIndex: 11370
+public static class FileEx // TypeDefIndex: 13038
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }
@@ -1653,7 +2046,7 @@ public static class FileEx // TypeDefIndex: 11370
 
 }
 
-public class FileConVar : ConsoleSystem // TypeDefIndex: 11946
+public class FileConVar : ConsoleSystem // TypeDefIndex: 13614
 {
 	[ClientVar] 
 	public static bool debug { get; set; }

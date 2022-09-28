@@ -1,4 +1,4 @@
-public class MiniCopterAnimation : MonoBehaviour // TypeDefIndex: 8294
+public class MiniCopterAnimation : MonoBehaviour // TypeDefIndex: 9963
 {
 
 	public void UpdateRotorSpeed(float newSpeed) { }

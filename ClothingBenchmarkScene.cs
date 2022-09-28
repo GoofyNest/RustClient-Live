@@ -1,4 +1,4 @@
-public class ClothingBenchmarkScene : BenchmarkScene // TypeDefIndex: 8250
+public class ClothingBenchmarkScene : BenchmarkScene // TypeDefIndex: 9919
 {
 	public GameObjectRef PlayerModelPrefab; 
 	public bool ChangeClothingEveryFrame; 
@@ -16,7 +16,7 @@ public class ClothingBenchmarkScene : BenchmarkScene // TypeDefIndex: 8250
 
 }
 
-private sealed class ClothingBenchmarkScene.<>c // TypeDefIndex: 8251
+private sealed class ClothingBenchmarkScene.<>c // TypeDefIndex: 9920
 {
 	public static readonly ClothingBenchmarkScene.<>c <>9; 
 	public static Func<ItemDefinition, ItemModWearable> <>9__4_0; 

@@ -1,4 +1,4 @@
-internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDefIndex: 7496
+internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDefIndex: 7468
 {
 	[CompilerGeneratedAttribute] 
 	private MetricTempoMapValuesCache.AccumulatedMicroseconds[] <Microseconds>k__BackingField; 
@@ -44,7 +44,7 @@ internal sealed class MetricTempoMapValuesCache : ITempoMapValuesCache // TypeDe
 
 }
 
-internal sealed class MetricTempoMapValuesCache.AccumulatedMicroseconds // TypeDefIndex: 7497
+internal sealed class MetricTempoMapValuesCache.AccumulatedMicroseconds // TypeDefIndex: 7469
 {
 	[CompilerGeneratedAttribute] 
 	private readonly long <Time>k__BackingField; 

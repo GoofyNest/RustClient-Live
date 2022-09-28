@@ -14,6 +14,60 @@ public sealed class Activator // TypeDefIndex: 163
 	public static T CreateInstance<T>() { }
 	/* GenericInstMethod :
 	|
+	|-Activator.CreateInstance<LogPlayerUseWeaponDataInternal>
+	|
+	|-Activator.CreateInstance<QuatInternal>
+	|
+	|-Activator.CreateInstance<Vec3fInternal>
+	|
+	|-Activator.CreateInstance<AccountFeatureRestrictedInfoInternal>
+	|
+	|-Activator.CreateInstance<CredentialsInternal>
+	|
+	|-Activator.CreateInstance<IOSCredentialsInternal>
+	|
+	|-Activator.CreateInstance<IOSCredentialsSystemAuthCredentialsOptionsInternal>
+	|
+	|-Activator.CreateInstance<IdTokenInternal>
+	|
+	|-Activator.CreateInstance<PinGrantInfoInternal>
+	|
+	|-Activator.CreateInstance<TokenInternal>
+	|
+	|-Activator.CreateInstance<CredentialsInternal>
+	|
+	|-Activator.CreateInstance<IdTokenInternal>
+	|
+	|-Activator.CreateInstance<UserLoginInfoInternal>
+	|
+	|-Activator.CreateInstance<OptionsInternal>
+	|
+	|-Activator.CreateInstance<AttributeDataInternal>
+	|
+	|-Activator.CreateInstance<LocalRTCOptionsInternal>
+	|
+	|-Activator.CreateInstance<ModIdentifierInternal>
+	|
+	|-Activator.CreateInstance<SocketIdInternal>
+	|
+	|-Activator.CreateInstance<AndroidInitializeOptionsSystemInitializeOptionsInternal>
+	|
+	|-Activator.CreateInstance<InitializeThreadAffinityInternal>
+	|
+	|-Activator.CreateInstance<RTCOptionsInternal>
+	|
+	|-Activator.CreateInstance<WindowsRTCOptionsInternal>
+	|
+	|-Activator.CreateInstance<WindowsRTCOptionsPlatformSpecificOptionsInternal>
+	|
+	|-Activator.CreateInstance<AudioBufferInternal>
+	|
+	|-Activator.CreateInstance<AttributeDataInternal>
+	|
+	|-Activator.CreateInstance<SessionDetailsInfoInternal>
+	|
+	|-Activator.CreateInstance<SessionDetailsSettingsInternal>
+	|
 	|-Activator.CreateInstance<MagnetCrane.MagnetCraneSnapshot>
 	|
 	|-Activator.CreateInstance<bool>

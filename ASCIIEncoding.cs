@@ -12,22 +12,22 @@ public class ASCIIEncoding : Encoding // TypeDefIndex: 432
 
 	public override int GetByteCount(string chars) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public override int GetByteCount(char* chars, int count) { }
 
 	public override int GetBytes(string chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }

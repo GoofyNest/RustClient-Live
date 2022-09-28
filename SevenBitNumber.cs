@@ -1,4 +1,4 @@
-public struct SevenBitNumber : IComparable<SevenBitNumber>, IConvertible // TypeDefIndex: 7626
+public struct SevenBitNumber : IComparable<SevenBitNumber>, IConvertible // TypeDefIndex: 7598
 {
 	public static readonly SevenBitNumber MinValue; 
 	public static readonly SevenBitNumber MaxValue; 
@@ -58,7 +58,7 @@ public struct SevenBitNumber : IComparable<SevenBitNumber>, IConvertible // Type
 
 }
 
-private sealed class SevenBitNumber.<>c // TypeDefIndex: 7627
+private sealed class SevenBitNumber.<>c // TypeDefIndex: 7599
 {
 	public static readonly SevenBitNumber.<>c <>9; 
 

@@ -1,4 +1,4 @@
-public class ChildrenScreenshot : MonoBehaviour // TypeDefIndex: 11324
+public class ChildrenScreenshot : MonoBehaviour // TypeDefIndex: 12992
 {
 	public Vector3 offsetAngle; 
 	public int width; 

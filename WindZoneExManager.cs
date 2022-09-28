@@ -1,4 +1,4 @@
-public class WindZoneExManager : MonoBehaviour // TypeDefIndex: 10711
+public class WindZoneExManager : MonoBehaviour // TypeDefIndex: 12379
 {
 	public float maxAccumMain; 
 	public float maxAccumTurbulence; 
@@ -43,7 +43,7 @@ public class WindZoneExManager : MonoBehaviour // TypeDefIndex: 10711
 
 }
 
-private enum WindZoneExManager.TestMode // TypeDefIndex: 10712
+private enum WindZoneExManager.TestMode // TypeDefIndex: 12380
 {
 	public int value__; 
 	public const WindZoneExManager.TestMode Disabled = 0;
@@ -51,7 +51,7 @@ private enum WindZoneExManager.TestMode // TypeDefIndex: 10712
 
 }
 
-private struct WindZoneExManager.CurrentZoneEntry // TypeDefIndex: 10713
+private struct WindZoneExManager.CurrentZoneEntry // TypeDefIndex: 12381
 {
 	public WindZoneEx zone; 
 	public float distanceSqr; 
@@ -61,7 +61,7 @@ private struct WindZoneExManager.CurrentZoneEntry // TypeDefIndex: 10713
 
 }
 
-private sealed class WindZoneExManager.<>c // TypeDefIndex: 10714
+private sealed class WindZoneExManager.<>c // TypeDefIndex: 12382
 {
 	public static readonly WindZoneExManager.<>c <>9; 
 	public static Comparison<WindZoneExManager.CurrentZoneEntry> <>9__22_0; 

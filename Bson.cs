@@ -1007,7 +1007,7 @@ public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6912
 
 }
 
-public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7298
+public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7270
 {
 
 	public void .ctor() { }

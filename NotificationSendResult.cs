@@ -1,4 +1,4 @@
-public enum NotificationSendResult // TypeDefIndex: 11672
+public enum NotificationSendResult // TypeDefIndex: 13340
 {
 	public int value__; 
 	public const NotificationSendResult Failed = 0;

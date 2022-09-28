@@ -1,4 +1,4 @@
-public class rottest : MonoBehaviour // TypeDefIndex: 8860
+public class rottest : MonoBehaviour // TypeDefIndex: 10529
 {
 	public Transform turretBase; 
 	public Vector3 aimDir; 

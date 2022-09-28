@@ -1,4 +1,4 @@
-public class IconSkin : MonoBehaviour, IItemIconChanged, IClientComponent // TypeDefIndex: 9195
+public class IconSkin : MonoBehaviour, IItemIconChanged, IClientComponent // TypeDefIndex: 10863
 {
 	public Image icon; 
 	public Text text; 

@@ -1,4 +1,4 @@
-public struct MeshInstance // TypeDefIndex: 9166
+public struct MeshInstance // TypeDefIndex: 10835
 {
 	public Vector3 position; 
 	public Quaternion rotation; 

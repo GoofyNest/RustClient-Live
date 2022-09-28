@@ -1,4 +1,4 @@
-public class HelicopterTurret : MonoBehaviour // TypeDefIndex: 9604
+public class HelicopterTurret : MonoBehaviour // TypeDefIndex: 11272
 {
 	public PatrolHelicopterAI _heliAI; 
 	public float fireRate; 

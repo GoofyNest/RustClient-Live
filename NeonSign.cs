@@ -125,7 +125,7 @@ public class NeonSign.Lights : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class NeonSign : Signage // TypeDefIndex: 8426
+public class NeonSign : Signage // TypeDefIndex: 10095
 {
 	private Option __menuOption_SwitchToFastSpeed; 
 	private Option __menuOption_SwitchToMediumSpeed; 

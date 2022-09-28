@@ -32,8 +32,8 @@ public class UTF7Encoding : Encoding // TypeDefIndex: 469
 	[ComVisibleAttribute] 
 	public override int GetByteCount(string s) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public override int GetByteCount(char* chars, int count) { }
 
 	[ComVisibleAttribute] 
@@ -41,8 +41,8 @@ public class UTF7Encoding : Encoding // TypeDefIndex: 469
 
 	public override int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount) { }
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
@@ -53,8 +53,8 @@ public class UTF7Encoding : Encoding // TypeDefIndex: 469
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }
 
-	[CLSCompliantAttribute] 
 	[ComVisibleAttribute] 
+	[CLSCompliantAttribute] 
 	public override int GetChars(byte* bytes, int byteCount, char* chars, int charCount) { }
 
 	[ComVisibleAttribute] 

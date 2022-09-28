@@ -1,4 +1,4 @@
-public class PreventBuildingMonumentTag : MonoBehaviour // TypeDefIndex: 9855
+public class PreventBuildingMonumentTag : MonoBehaviour // TypeDefIndex: 11523
 {
 	public MonumentInfo AttachedMonument; 
 

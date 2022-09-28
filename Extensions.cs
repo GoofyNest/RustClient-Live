@@ -140,7 +140,7 @@ private sealed class Extensions.<>c__13<T, U>
 
 }
 
-public static class Extensions // TypeDefIndex: 8138
+public static class Extensions // TypeDefIndex: 8111
 {
 
 	[ExtensionAttribute] 
@@ -155,7 +155,18 @@ public static class Extensions // TypeDefIndex: 8138
 
 }
 
-public static class Extensions // TypeDefIndex: 11596
+public static class Extensions // TypeDefIndex: 8221
+{
+
+	[ExtensionAttribute] 
+	public static bool IsOperationComplete(Result result) { }
+
+	[ExtensionAttribute] 
+	public static string ToHexString(byte[] byteArray) { }
+
+}
+
+public static class Extensions // TypeDefIndex: 13264
 {
 
 	[ExtensionAttribute] 

@@ -126,7 +126,7 @@ public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class MarketTerminal : StorageContainer // TypeDefIndex: 8411
+public class MarketTerminal : StorageContainer // TypeDefIndex: 10080
 {
 	private Option __menuOption_Menu_RequestOpenMarket; 
 	private ulong _currentlyDisplayedUserId; 
@@ -188,7 +188,7 @@ public class MarketTerminal : StorageContainer // TypeDefIndex: 8411
 
 }
 
-private sealed class MarketTerminal.<>c // TypeDefIndex: 8412
+private sealed class MarketTerminal.<>c // TypeDefIndex: 10081
 {
 	public static readonly MarketTerminal.<>c <>9; 
 	public static Func<Item, int> <>9__27_0; 

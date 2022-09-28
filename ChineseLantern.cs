@@ -1,4 +1,4 @@
-public class ChineseLantern : BaseFuelLightSource // TypeDefIndex: 8757
+public class ChineseLantern : BaseFuelLightSource // TypeDefIndex: 10426
 {
 	public Transform pivotRotator; 
 	public float swaySpeed; 

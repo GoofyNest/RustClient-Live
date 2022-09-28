@@ -1,4 +1,4 @@
-public class ToolsHUDUI : MonoBehaviour // TypeDefIndex: 11264
+public class ToolsHUDUI : MonoBehaviour // TypeDefIndex: 12932
 {
 	[SerializeField] 
 	private GameObject prefab; 

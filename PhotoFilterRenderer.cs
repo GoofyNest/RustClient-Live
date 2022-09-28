@@ -1,4 +1,4 @@
-public class PhotoFilterRenderer : PostProcessEffectRenderer<PhotoFilter> // TypeDefIndex: 10274
+public class PhotoFilterRenderer : PostProcessEffectRenderer<PhotoFilter> // TypeDefIndex: 11942
 {
 	private int rgbProperty; 
 	private int densityProperty; 

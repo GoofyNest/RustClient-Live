@@ -1,4 +1,4 @@
-public class BaseHelicopter : BaseCombatEntity // TypeDefIndex: 8522
+public class BaseHelicopter : BaseCombatEntity // TypeDefIndex: 10191
 {
 	public BaseHelicopter.weakspot[] weakspots; 
 	public GameObject rotorPivot; 
@@ -90,7 +90,7 @@ public class BaseHelicopter : BaseCombatEntity // TypeDefIndex: 8522
 
 }
 
-public class BaseHelicopter.weakspot // TypeDefIndex: 8523
+public class BaseHelicopter.weakspot // TypeDefIndex: 10192
 {
 	public BaseHelicopter body; 
 	public string[] bonenames; 

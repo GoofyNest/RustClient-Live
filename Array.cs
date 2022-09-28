@@ -326,6 +326,18 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<EntityRef<object>>
 	|
+	|-Array.IndexOf<PlayerStatInfoInternal>
+	|
+	|-Array.IndexOf<StatThresholdsInternal>
+	|
+	|-Array.IndexOf<ItemOwnershipInternal>
+	|
+	|-Array.IndexOf<ModIdentifierInternal>
+	|
+	|-Array.IndexOf<DataRecordInternal>
+	|
+	|-Array.IndexOf<ParticipantMetadataInternal>
+	|
 	|-Array.IndexOf<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.IndexOf<BurstCloth.Chain>
@@ -741,6 +753,18 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Reverse<EntityRef<object>>
 	|
+	|-Array.Reverse<PlayerStatInfoInternal>
+	|
+	|-Array.Reverse<StatThresholdsInternal>
+	|
+	|-Array.Reverse<ItemOwnershipInternal>
+	|
+	|-Array.Reverse<ModIdentifierInternal>
+	|
+	|-Array.Reverse<DataRecordInternal>
+	|
+	|-Array.Reverse<ParticipantMetadataInternal>
+	|
 	|-Array.Reverse<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.Reverse<BurstCloth.Chain>
@@ -1134,6 +1158,18 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<EngineDamageOverTime.RecentDamage>
 	|
 	|-Array.Sort<EntityRef<object>>
+	|
+	|-Array.Sort<PlayerStatInfoInternal>
+	|
+	|-Array.Sort<StatThresholdsInternal>
+	|
+	|-Array.Sort<ItemOwnershipInternal>
+	|
+	|-Array.Sort<ModIdentifierInternal>
+	|
+	|-Array.Sort<DataRecordInternal>
+	|
+	|-Array.Sort<ParticipantMetadataInternal>
 	|
 	|-Array.Sort<ExpandedLifeStats.GenericStatDisplay>
 	|
@@ -1576,6 +1612,32 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<EngineDamageOverTime.RecentDamage>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<EntityRef>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<EntityRef<object>>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<PlayerStatInfo>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<PlayerStatInfoInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<StatThresholds>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<StatThresholdsInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<LogEventParamPair>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<LogEventParamPairInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<RegisterEventParamDef>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<RegisterEventParamDefInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<CheckoutEntry>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<CheckoutEntryInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<ItemOwnership>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<ItemOwnershipInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<Helper.Allocation>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<Helper.PinnedBuffer>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<UserScoresQueryStatInfo>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<UserScoresQueryStatInfoInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<ModIdentifier>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<ModIdentifierInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<DataRecord>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<DataRecordInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<PresenceModificationDataRecordId>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<PresenceModificationDataRecordIdInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<ParticipantMetadata>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<ParticipantMetadataInternal>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<IngestData>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<IngestDataInternal>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<ExpandedLifeStats.GenericStatDisplay>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<BurstCloth.Chain>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CapsuleParams>
@@ -1818,6 +1880,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<long, ushort>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<long, uint>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<long, ulong>>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<IntPtr, object>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>
@@ -2003,6 +2067,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<long, ushort>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<long, uint>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<long, ulong>>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<IntPtr, object>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, CameraMan.CameraState>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>
@@ -2326,6 +2392,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<EntityRef>
 	|
 	|-Array.InternalArray__ICollection_Add<EntityRef<object>>
+	|
+	|-Array.InternalArray__ICollection_Add<PlayerStatInfo>
+	|
+	|-Array.InternalArray__ICollection_Add<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<StatThresholds>
+	|
+	|-Array.InternalArray__ICollection_Add<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<LogEventParamPair>
+	|
+	|-Array.InternalArray__ICollection_Add<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__ICollection_Add<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<CheckoutEntry>
+	|
+	|-Array.InternalArray__ICollection_Add<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<ItemOwnership>
+	|
+	|-Array.InternalArray__ICollection_Add<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<Helper.Allocation>
+	|
+	|-Array.InternalArray__ICollection_Add<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__ICollection_Add<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__ICollection_Add<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<ModIdentifier>
+	|
+	|-Array.InternalArray__ICollection_Add<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<DataRecord>
+	|
+	|-Array.InternalArray__ICollection_Add<DataRecordInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__ICollection_Add<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<ParticipantMetadata>
+	|
+	|-Array.InternalArray__ICollection_Add<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__ICollection_Add<IngestData>
+	|
+	|-Array.InternalArray__ICollection_Add<IngestDataInternal>
 	|
 	|-Array.InternalArray__ICollection_Add<ExpandedLifeStats.GenericStatDisplay>
 	|
@@ -2811,6 +2929,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Add<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__ICollection_Add<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__ICollection_Add<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__ICollection_Add<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__ICollection_Add<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -3180,6 +3302,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__ICollection_Add<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__ICollection_Add<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__ICollection_Add<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__ICollection_Add<KeyValuePair<IntPtr, object>>
 	|
@@ -3749,6 +3875,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<EntityRef<object>>
 	|
+	|-Array.InternalArray__ICollection_Remove<PlayerStatInfo>
+	|
+	|-Array.InternalArray__ICollection_Remove<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<StatThresholds>
+	|
+	|-Array.InternalArray__ICollection_Remove<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<LogEventParamPair>
+	|
+	|-Array.InternalArray__ICollection_Remove<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__ICollection_Remove<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<CheckoutEntry>
+	|
+	|-Array.InternalArray__ICollection_Remove<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<ItemOwnership>
+	|
+	|-Array.InternalArray__ICollection_Remove<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<Helper.Allocation>
+	|
+	|-Array.InternalArray__ICollection_Remove<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__ICollection_Remove<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__ICollection_Remove<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<ModIdentifier>
+	|
+	|-Array.InternalArray__ICollection_Remove<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<DataRecord>
+	|
+	|-Array.InternalArray__ICollection_Remove<DataRecordInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__ICollection_Remove<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<ParticipantMetadata>
+	|
+	|-Array.InternalArray__ICollection_Remove<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__ICollection_Remove<IngestData>
+	|
+	|-Array.InternalArray__ICollection_Remove<IngestDataInternal>
+	|
 	|-Array.InternalArray__ICollection_Remove<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.InternalArray__ICollection_Remove<BurstCloth.Chain>
@@ -4233,6 +4411,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__ICollection_Remove<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__ICollection_Remove<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__ICollection_Remove<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__ICollection_Remove<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -4602,6 +4784,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Remove<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__ICollection_Remove<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__ICollection_Remove<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__ICollection_Remove<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__ICollection_Remove<KeyValuePair<IntPtr, object>>
 	|
@@ -5171,6 +5357,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<EntityRef<object>>
 	|
+	|-Array.InternalArray__ICollection_Contains<PlayerStatInfo>
+	|
+	|-Array.InternalArray__ICollection_Contains<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<StatThresholds>
+	|
+	|-Array.InternalArray__ICollection_Contains<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<LogEventParamPair>
+	|
+	|-Array.InternalArray__ICollection_Contains<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__ICollection_Contains<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<CheckoutEntry>
+	|
+	|-Array.InternalArray__ICollection_Contains<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<ItemOwnership>
+	|
+	|-Array.InternalArray__ICollection_Contains<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<Helper.Allocation>
+	|
+	|-Array.InternalArray__ICollection_Contains<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__ICollection_Contains<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__ICollection_Contains<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<ModIdentifier>
+	|
+	|-Array.InternalArray__ICollection_Contains<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<DataRecord>
+	|
+	|-Array.InternalArray__ICollection_Contains<DataRecordInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__ICollection_Contains<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<ParticipantMetadata>
+	|
+	|-Array.InternalArray__ICollection_Contains<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__ICollection_Contains<IngestData>
+	|
+	|-Array.InternalArray__ICollection_Contains<IngestDataInternal>
+	|
 	|-Array.InternalArray__ICollection_Contains<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.InternalArray__ICollection_Contains<BurstCloth.Chain>
@@ -5655,6 +5893,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__ICollection_Contains<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__ICollection_Contains<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__ICollection_Contains<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__ICollection_Contains<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -6024,6 +6266,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Contains<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__ICollection_Contains<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__ICollection_Contains<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__ICollection_Contains<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__ICollection_Contains<KeyValuePair<IntPtr, object>>
 	|
@@ -6558,6 +6804,32 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<EngineDamageOverTime.RecentDamage>
 	|-Array.InternalArray__ICollection_CopyTo<EntityRef>
 	|-Array.InternalArray__ICollection_CopyTo<EntityRef<object>>
+	|-Array.InternalArray__ICollection_CopyTo<PlayerStatInfo>
+	|-Array.InternalArray__ICollection_CopyTo<PlayerStatInfoInternal>
+	|-Array.InternalArray__ICollection_CopyTo<StatThresholds>
+	|-Array.InternalArray__ICollection_CopyTo<StatThresholdsInternal>
+	|-Array.InternalArray__ICollection_CopyTo<LogEventParamPair>
+	|-Array.InternalArray__ICollection_CopyTo<LogEventParamPairInternal>
+	|-Array.InternalArray__ICollection_CopyTo<RegisterEventParamDef>
+	|-Array.InternalArray__ICollection_CopyTo<RegisterEventParamDefInternal>
+	|-Array.InternalArray__ICollection_CopyTo<CheckoutEntry>
+	|-Array.InternalArray__ICollection_CopyTo<CheckoutEntryInternal>
+	|-Array.InternalArray__ICollection_CopyTo<ItemOwnership>
+	|-Array.InternalArray__ICollection_CopyTo<ItemOwnershipInternal>
+	|-Array.InternalArray__ICollection_CopyTo<Helper.Allocation>
+	|-Array.InternalArray__ICollection_CopyTo<Helper.PinnedBuffer>
+	|-Array.InternalArray__ICollection_CopyTo<UserScoresQueryStatInfo>
+	|-Array.InternalArray__ICollection_CopyTo<UserScoresQueryStatInfoInternal>
+	|-Array.InternalArray__ICollection_CopyTo<ModIdentifier>
+	|-Array.InternalArray__ICollection_CopyTo<ModIdentifierInternal>
+	|-Array.InternalArray__ICollection_CopyTo<DataRecord>
+	|-Array.InternalArray__ICollection_CopyTo<DataRecordInternal>
+	|-Array.InternalArray__ICollection_CopyTo<PresenceModificationDataRecordId>
+	|-Array.InternalArray__ICollection_CopyTo<PresenceModificationDataRecordIdInternal>
+	|-Array.InternalArray__ICollection_CopyTo<ParticipantMetadata>
+	|-Array.InternalArray__ICollection_CopyTo<ParticipantMetadataInternal>
+	|-Array.InternalArray__ICollection_CopyTo<IngestData>
+	|-Array.InternalArray__ICollection_CopyTo<IngestDataInternal>
 	|-Array.InternalArray__ICollection_CopyTo<ExpandedLifeStats.GenericStatDisplay>
 	|-Array.InternalArray__ICollection_CopyTo<BurstCloth.Chain>
 	|-Array.InternalArray__ICollection_CopyTo<CapsuleParams>
@@ -6800,6 +7072,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<long, ushort>>
 	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<long, uint>>
 	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<long, ulong>>
+	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
 	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<IntPtr, object>>
 	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<object, CameraMan.CameraState>>
 	|-Array.InternalArray__ICollection_CopyTo<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>
@@ -6985,6 +7259,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<long, ushort>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<long, uint>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<long, ulong>>
+	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<IntPtr, Helper.Allocation>>
+	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<IntPtr, object>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, CameraMan.CameraState>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, PlayerModelHair.RendererMaterials>>
@@ -7306,6 +7582,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<EntityRef>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<EntityRef<object>>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<PlayerStatInfo>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<StatThresholds>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<LogEventParamPair>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<CheckoutEntry>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<ItemOwnership>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<Helper.Allocation>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<ModIdentifier>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<DataRecord>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<DataRecordInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<ParticipantMetadata>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<IngestData>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<IngestDataInternal>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<ExpandedLifeStats.GenericStatDisplay>
 	|
@@ -7791,6 +8119,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -8160,6 +8492,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<IntPtr, object>>
 	|
@@ -8731,6 +9067,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<EntityRef<object>>
 	|
+	|-Array.InternalArray__Insert<PlayerStatInfo>
+	|
+	|-Array.InternalArray__Insert<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__Insert<StatThresholds>
+	|
+	|-Array.InternalArray__Insert<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__Insert<LogEventParamPair>
+	|
+	|-Array.InternalArray__Insert<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__Insert<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__Insert<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__Insert<CheckoutEntry>
+	|
+	|-Array.InternalArray__Insert<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__Insert<ItemOwnership>
+	|
+	|-Array.InternalArray__Insert<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__Insert<Helper.Allocation>
+	|
+	|-Array.InternalArray__Insert<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__Insert<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__Insert<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__Insert<ModIdentifier>
+	|
+	|-Array.InternalArray__Insert<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__Insert<DataRecord>
+	|
+	|-Array.InternalArray__Insert<DataRecordInternal>
+	|
+	|-Array.InternalArray__Insert<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__Insert<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__Insert<ParticipantMetadata>
+	|
+	|-Array.InternalArray__Insert<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__Insert<IngestData>
+	|
+	|-Array.InternalArray__Insert<IngestDataInternal>
+	|
 	|-Array.InternalArray__Insert<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.InternalArray__Insert<BurstCloth.Chain>
@@ -9215,6 +9603,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__Insert<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__Insert<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__Insert<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__Insert<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -9584,6 +9976,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__Insert<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__Insert<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__Insert<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__Insert<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__Insert<KeyValuePair<IntPtr, object>>
 	|
@@ -10155,6 +10551,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<EntityRef<object>>
 	|
+	|-Array.InternalArray__IndexOf<PlayerStatInfo>
+	|
+	|-Array.InternalArray__IndexOf<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__IndexOf<StatThresholds>
+	|
+	|-Array.InternalArray__IndexOf<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__IndexOf<LogEventParamPair>
+	|
+	|-Array.InternalArray__IndexOf<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__IndexOf<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__IndexOf<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__IndexOf<CheckoutEntry>
+	|
+	|-Array.InternalArray__IndexOf<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__IndexOf<ItemOwnership>
+	|
+	|-Array.InternalArray__IndexOf<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__IndexOf<Helper.Allocation>
+	|
+	|-Array.InternalArray__IndexOf<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__IndexOf<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__IndexOf<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__IndexOf<ModIdentifier>
+	|
+	|-Array.InternalArray__IndexOf<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__IndexOf<DataRecord>
+	|
+	|-Array.InternalArray__IndexOf<DataRecordInternal>
+	|
+	|-Array.InternalArray__IndexOf<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__IndexOf<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__IndexOf<ParticipantMetadata>
+	|
+	|-Array.InternalArray__IndexOf<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__IndexOf<IngestData>
+	|
+	|-Array.InternalArray__IndexOf<IngestDataInternal>
+	|
 	|-Array.InternalArray__IndexOf<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.InternalArray__IndexOf<BurstCloth.Chain>
@@ -10639,6 +11087,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__IndexOf<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__IndexOf<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__IndexOf<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__IndexOf<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -11008,6 +11460,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IndexOf<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__IndexOf<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__IndexOf<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__IndexOf<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__IndexOf<KeyValuePair<IntPtr, object>>
 	|
@@ -11577,6 +12033,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__get_Item<EntityRef<object>>
 	|
+	|-Array.InternalArray__get_Item<PlayerStatInfo>
+	|
+	|-Array.InternalArray__get_Item<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__get_Item<StatThresholds>
+	|
+	|-Array.InternalArray__get_Item<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__get_Item<LogEventParamPair>
+	|
+	|-Array.InternalArray__get_Item<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__get_Item<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__get_Item<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__get_Item<CheckoutEntry>
+	|
+	|-Array.InternalArray__get_Item<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__get_Item<ItemOwnership>
+	|
+	|-Array.InternalArray__get_Item<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__get_Item<Helper.Allocation>
+	|
+	|-Array.InternalArray__get_Item<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__get_Item<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__get_Item<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__get_Item<ModIdentifier>
+	|
+	|-Array.InternalArray__get_Item<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__get_Item<DataRecord>
+	|
+	|-Array.InternalArray__get_Item<DataRecordInternal>
+	|
+	|-Array.InternalArray__get_Item<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__get_Item<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__get_Item<ParticipantMetadata>
+	|
+	|-Array.InternalArray__get_Item<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__get_Item<IngestData>
+	|
+	|-Array.InternalArray__get_Item<IngestDataInternal>
+	|
 	|-Array.InternalArray__get_Item<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.InternalArray__get_Item<BurstCloth.Chain>
@@ -12061,6 +12569,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__get_Item<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__get_Item<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__get_Item<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__get_Item<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__get_Item<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -12430,6 +12942,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__get_Item<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__get_Item<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__get_Item<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__get_Item<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__get_Item<KeyValuePair<IntPtr, object>>
 	|
@@ -12999,6 +13515,58 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<EntityRef<object>>
 	|
+	|-Array.InternalArray__set_Item<PlayerStatInfo>
+	|
+	|-Array.InternalArray__set_Item<PlayerStatInfoInternal>
+	|
+	|-Array.InternalArray__set_Item<StatThresholds>
+	|
+	|-Array.InternalArray__set_Item<StatThresholdsInternal>
+	|
+	|-Array.InternalArray__set_Item<LogEventParamPair>
+	|
+	|-Array.InternalArray__set_Item<LogEventParamPairInternal>
+	|
+	|-Array.InternalArray__set_Item<RegisterEventParamDef>
+	|
+	|-Array.InternalArray__set_Item<RegisterEventParamDefInternal>
+	|
+	|-Array.InternalArray__set_Item<CheckoutEntry>
+	|
+	|-Array.InternalArray__set_Item<CheckoutEntryInternal>
+	|
+	|-Array.InternalArray__set_Item<ItemOwnership>
+	|
+	|-Array.InternalArray__set_Item<ItemOwnershipInternal>
+	|
+	|-Array.InternalArray__set_Item<Helper.Allocation>
+	|
+	|-Array.InternalArray__set_Item<Helper.PinnedBuffer>
+	|
+	|-Array.InternalArray__set_Item<UserScoresQueryStatInfo>
+	|
+	|-Array.InternalArray__set_Item<UserScoresQueryStatInfoInternal>
+	|
+	|-Array.InternalArray__set_Item<ModIdentifier>
+	|
+	|-Array.InternalArray__set_Item<ModIdentifierInternal>
+	|
+	|-Array.InternalArray__set_Item<DataRecord>
+	|
+	|-Array.InternalArray__set_Item<DataRecordInternal>
+	|
+	|-Array.InternalArray__set_Item<PresenceModificationDataRecordId>
+	|
+	|-Array.InternalArray__set_Item<PresenceModificationDataRecordIdInternal>
+	|
+	|-Array.InternalArray__set_Item<ParticipantMetadata>
+	|
+	|-Array.InternalArray__set_Item<ParticipantMetadataInternal>
+	|
+	|-Array.InternalArray__set_Item<IngestData>
+	|
+	|-Array.InternalArray__set_Item<IngestDataInternal>
+	|
 	|-Array.InternalArray__set_Item<ExpandedLifeStats.GenericStatDisplay>
 	|
 	|-Array.InternalArray__set_Item<BurstCloth.Chain>
@@ -13483,6 +14051,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<Dictionary.Entry<long, ulong>>
 	|
+	|-Array.InternalArray__set_Item<Dictionary.Entry<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__set_Item<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>
+	|
 	|-Array.InternalArray__set_Item<Dictionary.Entry<IntPtr, object>>
 	|
 	|-Array.InternalArray__set_Item<Dictionary.Entry<object, CameraMan.CameraState>>
@@ -13852,6 +14424,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__set_Item<KeyValuePair<long, uint>>
 	|
 	|-Array.InternalArray__set_Item<KeyValuePair<long, ulong>>
+	|
+	|-Array.InternalArray__set_Item<KeyValuePair<IntPtr, Helper.Allocation>>
+	|
+	|-Array.InternalArray__set_Item<KeyValuePair<IntPtr, Helper.PinnedBuffer>>
 	|
 	|-Array.InternalArray__set_Item<KeyValuePair<IntPtr, object>>
 	|
@@ -14446,6 +15022,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Empty<DataRow>
 	|-Array.Empty<DataTable>
 	|-Array.Empty<IndexField>
+	|-Array.Empty<Delegate>
 	|-Array.Empty<Behaviour>
 	|-Array.Empty<Collider>
 	|-Array.Empty<GUILayoutOption>
@@ -14487,6 +15064,11 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<Admin.ServerConvarInfo>
 	|-Array.IndexOfImpl<Chat.MuteEntry>
 	|-Array.IndexOfImpl<ERChildsSO>
+	|-Array.IndexOfImpl<PlayerStatInfoInternal>
+	|-Array.IndexOfImpl<StatThresholdsInternal>
+	|-Array.IndexOfImpl<ItemOwnershipInternal>
+	|-Array.IndexOfImpl<DataRecordInternal>
+	|-Array.IndexOfImpl<ParticipantMetadataInternal>
 	|-Array.IndexOfImpl<ExpandedLifeStats.GenericStatDisplay>
 	|-Array.IndexOfImpl<LocalClock.TimedEvent>
 	|-Array.IndexOfImpl<MapView.MapMarkerCluster>
@@ -14624,8 +15206,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<DemoShotFloatKeyframe>
 	|-Array.IndexOfImpl<Vector2>
 	|
-	|-Array.IndexOfImpl<BoneData>
-	|
+	|-Array.IndexOfImpl<ModIdentifierInternal>
 	|-Array.IndexOfImpl<Tick.Entry>
 	|-Array.IndexOfImpl<Gibbable.OverrideMesh>
 	|-Array.IndexOfImpl<MeshInstance>
@@ -14634,6 +15215,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<PlaceMonumentsRailside.SpawnInfo>
 	|-Array.IndexOfImpl<PlaceMonumentsRoadside.SpawnInfo>
 	|-Array.IndexOfImpl<SubsurfaceProfileTexture.SubsurfaceProfileEntry>
+	|
+	|-Array.IndexOfImpl<BoneData>
 	|
 	|-Array.IndexOfImpl<FoliageGridMeshData.FoliageVertex>
 	|
@@ -14719,6 +15302,11 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<Admin.ServerConvarInfo>
 	|-Array.UnsafeLoad<Chat.MuteEntry>
 	|-Array.UnsafeLoad<ERChildsSO>
+	|-Array.UnsafeLoad<PlayerStatInfoInternal>
+	|-Array.UnsafeLoad<StatThresholdsInternal>
+	|-Array.UnsafeLoad<ItemOwnershipInternal>
+	|-Array.UnsafeLoad<DataRecordInternal>
+	|-Array.UnsafeLoad<ParticipantMetadataInternal>
 	|-Array.UnsafeLoad<ExpandedLifeStats.GenericStatDisplay>
 	|-Array.UnsafeLoad<LocalClock.TimedEvent>
 	|-Array.UnsafeLoad<MapView.MapMarkerCluster>
@@ -14851,8 +15439,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<DemoShotFloatKeyframe>
 	|-Array.UnsafeLoad<Vector2>
 	|
-	|-Array.UnsafeLoad<BoneData>
-	|
+	|-Array.UnsafeLoad<ModIdentifierInternal>
 	|-Array.UnsafeLoad<Tick.Entry>
 	|-Array.UnsafeLoad<Gibbable.OverrideMesh>
 	|-Array.UnsafeLoad<MeshInstance>
@@ -14861,6 +15448,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<PlaceMonumentsRailside.SpawnInfo>
 	|-Array.UnsafeLoad<PlaceMonumentsRoadside.SpawnInfo>
 	|-Array.UnsafeLoad<SubsurfaceProfileTexture.SubsurfaceProfileEntry>
+	|
+	|-Array.UnsafeLoad<BoneData>
 	|
 	|-Array.UnsafeLoad<FoliageGridMeshData.FoliageVertex>
 	|
@@ -14992,6 +15581,32 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<EngineDamageOverTime.RecentDamage>..ctor
 	|-Array.InternalEnumerator<EntityRef>..ctor
 	|-Array.InternalEnumerator<EntityRef<object>>..ctor
+	|-Array.InternalEnumerator<PlayerStatInfo>..ctor
+	|-Array.InternalEnumerator<PlayerStatInfoInternal>..ctor
+	|-Array.InternalEnumerator<StatThresholds>..ctor
+	|-Array.InternalEnumerator<StatThresholdsInternal>..ctor
+	|-Array.InternalEnumerator<LogEventParamPair>..ctor
+	|-Array.InternalEnumerator<LogEventParamPairInternal>..ctor
+	|-Array.InternalEnumerator<RegisterEventParamDef>..ctor
+	|-Array.InternalEnumerator<RegisterEventParamDefInternal>..ctor
+	|-Array.InternalEnumerator<CheckoutEntry>..ctor
+	|-Array.InternalEnumerator<CheckoutEntryInternal>..ctor
+	|-Array.InternalEnumerator<ItemOwnership>..ctor
+	|-Array.InternalEnumerator<ItemOwnershipInternal>..ctor
+	|-Array.InternalEnumerator<Helper.Allocation>..ctor
+	|-Array.InternalEnumerator<Helper.PinnedBuffer>..ctor
+	|-Array.InternalEnumerator<UserScoresQueryStatInfo>..ctor
+	|-Array.InternalEnumerator<UserScoresQueryStatInfoInternal>..ctor
+	|-Array.InternalEnumerator<ModIdentifier>..ctor
+	|-Array.InternalEnumerator<ModIdentifierInternal>..ctor
+	|-Array.InternalEnumerator<DataRecord>..ctor
+	|-Array.InternalEnumerator<DataRecordInternal>..ctor
+	|-Array.InternalEnumerator<PresenceModificationDataRecordId>..ctor
+	|-Array.InternalEnumerator<PresenceModificationDataRecordIdInternal>..ctor
+	|-Array.InternalEnumerator<ParticipantMetadata>..ctor
+	|-Array.InternalEnumerator<ParticipantMetadataInternal>..ctor
+	|-Array.InternalEnumerator<IngestData>..ctor
+	|-Array.InternalEnumerator<IngestDataInternal>..ctor
 	|-Array.InternalEnumerator<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-Array.InternalEnumerator<BurstCloth.Chain>..ctor
 	|-Array.InternalEnumerator<CapsuleParams>..ctor
@@ -15234,6 +15849,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ushort>>..ctor
 	|-Array.InternalEnumerator<Dictionary.Entry<long, uint>>..ctor
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ulong>>..ctor
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>..ctor
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>..ctor
 	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, object>>..ctor
 	|-Array.InternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>..ctor
 	|-Array.InternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>..ctor
@@ -15419,6 +16036,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<long, ushort>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<long, uint>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<long, ulong>>..ctor
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>..ctor
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<IntPtr, object>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>..ctor
@@ -15706,6 +16325,32 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<EngineDamageOverTime.RecentDamage>.Dispose
 	|-Array.InternalEnumerator<EntityRef>.Dispose
 	|-Array.InternalEnumerator<EntityRef<object>>.Dispose
+	|-Array.InternalEnumerator<PlayerStatInfo>.Dispose
+	|-Array.InternalEnumerator<PlayerStatInfoInternal>.Dispose
+	|-Array.InternalEnumerator<StatThresholds>.Dispose
+	|-Array.InternalEnumerator<StatThresholdsInternal>.Dispose
+	|-Array.InternalEnumerator<LogEventParamPair>.Dispose
+	|-Array.InternalEnumerator<LogEventParamPairInternal>.Dispose
+	|-Array.InternalEnumerator<RegisterEventParamDef>.Dispose
+	|-Array.InternalEnumerator<RegisterEventParamDefInternal>.Dispose
+	|-Array.InternalEnumerator<CheckoutEntry>.Dispose
+	|-Array.InternalEnumerator<CheckoutEntryInternal>.Dispose
+	|-Array.InternalEnumerator<ItemOwnership>.Dispose
+	|-Array.InternalEnumerator<ItemOwnershipInternal>.Dispose
+	|-Array.InternalEnumerator<Helper.Allocation>.Dispose
+	|-Array.InternalEnumerator<Helper.PinnedBuffer>.Dispose
+	|-Array.InternalEnumerator<UserScoresQueryStatInfo>.Dispose
+	|-Array.InternalEnumerator<UserScoresQueryStatInfoInternal>.Dispose
+	|-Array.InternalEnumerator<ModIdentifier>.Dispose
+	|-Array.InternalEnumerator<ModIdentifierInternal>.Dispose
+	|-Array.InternalEnumerator<DataRecord>.Dispose
+	|-Array.InternalEnumerator<DataRecordInternal>.Dispose
+	|-Array.InternalEnumerator<PresenceModificationDataRecordId>.Dispose
+	|-Array.InternalEnumerator<PresenceModificationDataRecordIdInternal>.Dispose
+	|-Array.InternalEnumerator<ParticipantMetadata>.Dispose
+	|-Array.InternalEnumerator<ParticipantMetadataInternal>.Dispose
+	|-Array.InternalEnumerator<IngestData>.Dispose
+	|-Array.InternalEnumerator<IngestDataInternal>.Dispose
 	|-Array.InternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.Dispose
 	|-Array.InternalEnumerator<BurstCloth.Chain>.Dispose
 	|-Array.InternalEnumerator<CapsuleParams>.Dispose
@@ -15948,6 +16593,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ushort>>.Dispose
 	|-Array.InternalEnumerator<Dictionary.Entry<long, uint>>.Dispose
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ulong>>.Dispose
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.Dispose
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.Dispose
 	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, object>>.Dispose
 	|-Array.InternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.Dispose
 	|-Array.InternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.Dispose
@@ -16133,6 +16780,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<long, ushort>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<long, uint>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<long, ulong>>.Dispose
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.Dispose
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<IntPtr, object>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.Dispose
@@ -16420,6 +17069,32 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<EngineDamageOverTime.RecentDamage>.MoveNext
 	|-Array.InternalEnumerator<EntityRef>.MoveNext
 	|-Array.InternalEnumerator<EntityRef<object>>.MoveNext
+	|-Array.InternalEnumerator<PlayerStatInfo>.MoveNext
+	|-Array.InternalEnumerator<PlayerStatInfoInternal>.MoveNext
+	|-Array.InternalEnumerator<StatThresholds>.MoveNext
+	|-Array.InternalEnumerator<StatThresholdsInternal>.MoveNext
+	|-Array.InternalEnumerator<LogEventParamPair>.MoveNext
+	|-Array.InternalEnumerator<LogEventParamPairInternal>.MoveNext
+	|-Array.InternalEnumerator<RegisterEventParamDef>.MoveNext
+	|-Array.InternalEnumerator<RegisterEventParamDefInternal>.MoveNext
+	|-Array.InternalEnumerator<CheckoutEntry>.MoveNext
+	|-Array.InternalEnumerator<CheckoutEntryInternal>.MoveNext
+	|-Array.InternalEnumerator<ItemOwnership>.MoveNext
+	|-Array.InternalEnumerator<ItemOwnershipInternal>.MoveNext
+	|-Array.InternalEnumerator<Helper.Allocation>.MoveNext
+	|-Array.InternalEnumerator<Helper.PinnedBuffer>.MoveNext
+	|-Array.InternalEnumerator<UserScoresQueryStatInfo>.MoveNext
+	|-Array.InternalEnumerator<UserScoresQueryStatInfoInternal>.MoveNext
+	|-Array.InternalEnumerator<ModIdentifier>.MoveNext
+	|-Array.InternalEnumerator<ModIdentifierInternal>.MoveNext
+	|-Array.InternalEnumerator<DataRecord>.MoveNext
+	|-Array.InternalEnumerator<DataRecordInternal>.MoveNext
+	|-Array.InternalEnumerator<PresenceModificationDataRecordId>.MoveNext
+	|-Array.InternalEnumerator<PresenceModificationDataRecordIdInternal>.MoveNext
+	|-Array.InternalEnumerator<ParticipantMetadata>.MoveNext
+	|-Array.InternalEnumerator<ParticipantMetadataInternal>.MoveNext
+	|-Array.InternalEnumerator<IngestData>.MoveNext
+	|-Array.InternalEnumerator<IngestDataInternal>.MoveNext
 	|-Array.InternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.MoveNext
 	|-Array.InternalEnumerator<BurstCloth.Chain>.MoveNext
 	|-Array.InternalEnumerator<CapsuleParams>.MoveNext
@@ -16662,6 +17337,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ushort>>.MoveNext
 	|-Array.InternalEnumerator<Dictionary.Entry<long, uint>>.MoveNext
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ulong>>.MoveNext
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.MoveNext
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.MoveNext
 	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, object>>.MoveNext
 	|-Array.InternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.MoveNext
 	|-Array.InternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.MoveNext
@@ -16847,6 +17524,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<long, ushort>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<long, uint>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<long, ulong>>.MoveNext
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.MoveNext
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<IntPtr, object>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.MoveNext
@@ -17168,6 +17847,58 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<EntityRef>.get_Current
 	|
 	|-Array.InternalEnumerator<EntityRef<object>>.get_Current
+	|
+	|-Array.InternalEnumerator<PlayerStatInfo>.get_Current
+	|
+	|-Array.InternalEnumerator<PlayerStatInfoInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<StatThresholds>.get_Current
+	|
+	|-Array.InternalEnumerator<StatThresholdsInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<LogEventParamPair>.get_Current
+	|
+	|-Array.InternalEnumerator<LogEventParamPairInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<RegisterEventParamDef>.get_Current
+	|
+	|-Array.InternalEnumerator<RegisterEventParamDefInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<CheckoutEntry>.get_Current
+	|
+	|-Array.InternalEnumerator<CheckoutEntryInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<ItemOwnership>.get_Current
+	|
+	|-Array.InternalEnumerator<ItemOwnershipInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<Helper.Allocation>.get_Current
+	|
+	|-Array.InternalEnumerator<Helper.PinnedBuffer>.get_Current
+	|
+	|-Array.InternalEnumerator<UserScoresQueryStatInfo>.get_Current
+	|
+	|-Array.InternalEnumerator<UserScoresQueryStatInfoInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<ModIdentifier>.get_Current
+	|
+	|-Array.InternalEnumerator<ModIdentifierInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<DataRecord>.get_Current
+	|
+	|-Array.InternalEnumerator<DataRecordInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<PresenceModificationDataRecordId>.get_Current
+	|
+	|-Array.InternalEnumerator<PresenceModificationDataRecordIdInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<ParticipantMetadata>.get_Current
+	|
+	|-Array.InternalEnumerator<ParticipantMetadataInternal>.get_Current
+	|
+	|-Array.InternalEnumerator<IngestData>.get_Current
+	|
+	|-Array.InternalEnumerator<IngestDataInternal>.get_Current
 	|
 	|-Array.InternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.get_Current
 	|
@@ -17653,6 +18384,10 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ulong>>.get_Current
 	|
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.get_Current
+	|
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.get_Current
+	|
 	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, object>>.get_Current
 	|
 	|-Array.InternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.get_Current
@@ -18022,6 +18757,10 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<long, uint>>.get_Current
 	|
 	|-Array.InternalEnumerator<KeyValuePair<long, ulong>>.get_Current
+	|
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.get_Current
+	|
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.get_Current
 	|
 	|-Array.InternalEnumerator<KeyValuePair<IntPtr, object>>.get_Current
 	|
@@ -18556,6 +19295,32 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<EngineDamageOverTime.RecentDamage>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<EntityRef>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<EntityRef<object>>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<PlayerStatInfo>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<PlayerStatInfoInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<StatThresholds>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<StatThresholdsInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<LogEventParamPair>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<LogEventParamPairInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<RegisterEventParamDef>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<RegisterEventParamDefInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<CheckoutEntry>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<CheckoutEntryInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<ItemOwnership>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<ItemOwnershipInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<UserScoresQueryStatInfo>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<UserScoresQueryStatInfoInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<ModIdentifier>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<ModIdentifierInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<DataRecord>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<DataRecordInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<PresenceModificationDataRecordId>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<PresenceModificationDataRecordIdInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<ParticipantMetadata>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<ParticipantMetadataInternal>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<IngestData>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<IngestDataInternal>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<BurstCloth.Chain>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CapsuleParams>.System.Collections.IEnumerator.Reset
@@ -18798,6 +19563,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ushort>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Dictionary.Entry<long, uint>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ulong>>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, object>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.System.Collections.IEnumerator.Reset
@@ -18983,6 +19750,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<long, ushort>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<long, uint>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<long, ulong>>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<IntPtr, object>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.System.Collections.IEnumerator.Reset
@@ -19304,6 +20073,58 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<EntityRef>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<EntityRef<object>>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<PlayerStatInfo>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<PlayerStatInfoInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<StatThresholds>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<StatThresholdsInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<LogEventParamPair>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<LogEventParamPairInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<RegisterEventParamDef>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<RegisterEventParamDefInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<CheckoutEntry>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<CheckoutEntryInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<ItemOwnership>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<ItemOwnershipInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<UserScoresQueryStatInfo>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<UserScoresQueryStatInfoInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<ModIdentifier>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<ModIdentifierInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<DataRecord>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<DataRecordInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<PresenceModificationDataRecordId>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<PresenceModificationDataRecordIdInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<ParticipantMetadata>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<ParticipantMetadataInternal>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<IngestData>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<IngestDataInternal>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerator.get_Current
 	|
@@ -19789,6 +20610,10 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<Dictionary.Entry<long, ulong>>.System.Collections.IEnumerator.get_Current
 	|
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.get_Current
+	|
 	|-Array.InternalEnumerator<Dictionary.Entry<IntPtr, object>>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.System.Collections.IEnumerator.get_Current
@@ -20158,6 +20983,10 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<long, uint>>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<KeyValuePair<long, ulong>>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<KeyValuePair<IntPtr, object>>.System.Collections.IEnumerator.get_Current
 	|
@@ -20702,6 +21531,32 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<EngineDamageOverTime.RecentDamage>.Dispose
 	|-Array.EmptyInternalEnumerator<EntityRef>.Dispose
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>.Dispose
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>.Dispose
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<StatThresholds>.Dispose
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>.Dispose
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>.Dispose
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>.Dispose
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<ItemOwnership>.Dispose
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>.Dispose
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>.Dispose
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>.Dispose
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<ModIdentifier>.Dispose
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<DataRecord>.Dispose
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>.Dispose
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>.Dispose
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>.Dispose
+	|-Array.EmptyInternalEnumerator<IngestData>.Dispose
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>.Dispose
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.Dispose
 	|-Array.EmptyInternalEnumerator<BurstCloth.Chain>.Dispose
 	|-Array.EmptyInternalEnumerator<CapsuleParams>.Dispose
@@ -20944,6 +21799,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ushort>>.Dispose
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, uint>>.Dispose
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>.Dispose
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.Dispose
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.Dispose
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>.Dispose
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.Dispose
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.Dispose
@@ -21129,6 +21986,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ushort>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>.Dispose
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.Dispose
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.Dispose
@@ -21416,6 +22275,32 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<EngineDamageOverTime.RecentDamage>.MoveNext
 	|-Array.EmptyInternalEnumerator<EntityRef>.MoveNext
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>.MoveNext
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>.MoveNext
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<StatThresholds>.MoveNext
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>.MoveNext
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>.MoveNext
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>.MoveNext
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<ItemOwnership>.MoveNext
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>.MoveNext
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>.MoveNext
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>.MoveNext
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<ModIdentifier>.MoveNext
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<DataRecord>.MoveNext
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>.MoveNext
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>.MoveNext
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>.MoveNext
+	|-Array.EmptyInternalEnumerator<IngestData>.MoveNext
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>.MoveNext
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.MoveNext
 	|-Array.EmptyInternalEnumerator<BurstCloth.Chain>.MoveNext
 	|-Array.EmptyInternalEnumerator<CapsuleParams>.MoveNext
@@ -21658,6 +22543,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ushort>>.MoveNext
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, uint>>.MoveNext
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>.MoveNext
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.MoveNext
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.MoveNext
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>.MoveNext
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.MoveNext
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.MoveNext
@@ -21843,6 +22730,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ushort>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>.MoveNext
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.MoveNext
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.MoveNext
@@ -22164,6 +23053,58 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<EntityRef>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<StatThresholds>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ItemOwnership>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ModIdentifier>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<DataRecord>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<IngestData>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.get_Current
 	|
@@ -22649,6 +23590,10 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>.get_Current
 	|
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.get_Current
+	|
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.get_Current
@@ -23018,6 +23963,10 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>.get_Current
 	|
@@ -23523,6 +24472,15 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Admin.ServerConvarInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Chat.MuteEntry>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ERChildsSO>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ColliderState>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<GrowableGeneProperties.GeneWeight>.System.Collections.IEnumerator.get_Current
@@ -23582,6 +24540,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ushort>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, uint>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, InputActionSetHandle_t>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, InputAnalogActionHandle_t>>.System.Collections.IEnumerator.get_Current
@@ -23677,6 +24636,17 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<ERLane>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<EntityRef>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<StatThresholds>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<ItemOwnership>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<DataRecord>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<IngestData>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<RCon.BannedAddresses>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<WeightedStringList.Container>.System.Collections.IEnumerator.get_Current
@@ -23786,6 +24756,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ushort>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, InputActionSetHandle_t>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, InputAnalogActionHandle_t>>.System.Collections.IEnumerator.get_Current
@@ -23934,6 +24905,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<XPathNodeRef, XPathNodeRef>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<StringFormatCache.Key2, object>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<Decimal, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<ulong, Chat.MuteEntry>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<RBTree.Node<int>>.System.Collections.IEnumerator.get_Current
@@ -23952,6 +24924,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Matrix4x4>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<Admin.ServerUGCInfo>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<ModIdentifier>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CapsuleParams>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<BoneState>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<RCon.Command>.System.Collections.IEnumerator.get_Current
@@ -23966,6 +24939,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<XPathNodeRef, XPathNodeRef>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<StringFormatCache.Key2, object>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<ulong, Chat.MuteEntry>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<InstancingKey, int>>.System.Collections.IEnumerator.get_Current
@@ -24046,6 +25020,9 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<ERTerrainChange>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<NormalPairs>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<EngineDamageOverTime.RecentDamage>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<BurstCloth.Chain>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<FloatConditions.Condition>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<FoliageKey>.System.Collections.IEnumerator.get_Current
@@ -24134,24 +25111,10 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<XmlTextWriter.TagInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ContactPoint2D>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<BoneData>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<NVidiaReflex.NvReflex_FrameReport>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<ColliderData>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<bool, Decimal>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, bool>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, short>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, int>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, float>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, ushort>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, uint>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<short, Decimal>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<int, Decimal>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<float, Decimal>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<ushort, Decimal>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Dictionary.Entry<uint, Decimal>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Keyframe>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<WaterGerstner.PrecomputedWave>.System.Collections.IEnumerator.get_Current
-	|
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Tick.Entry>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Gibbable.OverrideMesh>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<MeshInstance>.System.Collections.IEnumerator.get_Current
@@ -24178,6 +25141,24 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<MaterialReference>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<UIDeathScreen.RespawnColourScheme>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<GlyphMarshallingStruct>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<BoneData>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<ColliderData>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<bool, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, bool>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, short>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, int>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, float>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, ushort>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<Decimal, uint>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<short, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<int, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<float, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<ushort, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<uint, Decimal>>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Keyframe>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<WaterGerstner.PrecomputedWave>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<FoliageGridMeshData.FoliageVertex>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Touch>.System.Collections.IEnumerator.get_Current
@@ -24218,8 +25199,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<MeshRendererInstance>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Set.Slot<ServerInfo>>.System.Collections.IEnumerator.get_Current
-	|
-	|-Array.EmptyInternalEnumerator<NVidiaReflex.NvReflex_FrameReport>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<ReflectionProbeEx.CubemapFaceMatrices>.System.Collections.IEnumerator.get_Current
 	|
@@ -24301,6 +25280,32 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<EngineDamageOverTime.RecentDamage>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<EntityRef>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<StatThresholds>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<ItemOwnership>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<ModIdentifier>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<DataRecord>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<IngestData>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<BurstCloth.Chain>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CapsuleParams>.System.Collections.IEnumerator.Reset
@@ -24543,6 +25548,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ushort>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, uint>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>.System.Collections.IEnumerator.Reset
@@ -24728,6 +25735,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ushort>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>.System.Collections.IEnumerator.Reset
@@ -25015,6 +26024,32 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<EngineDamageOverTime.RecentDamage>..ctor
 	|-Array.EmptyInternalEnumerator<EntityRef>..ctor
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>..ctor
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>..ctor
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>..ctor
+	|-Array.EmptyInternalEnumerator<StatThresholds>..ctor
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>..ctor
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>..ctor
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>..ctor
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>..ctor
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>..ctor
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>..ctor
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>..ctor
+	|-Array.EmptyInternalEnumerator<ItemOwnership>..ctor
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>..ctor
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>..ctor
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>..ctor
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>..ctor
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>..ctor
+	|-Array.EmptyInternalEnumerator<ModIdentifier>..ctor
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>..ctor
+	|-Array.EmptyInternalEnumerator<DataRecord>..ctor
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>..ctor
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>..ctor
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>..ctor
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>..ctor
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>..ctor
+	|-Array.EmptyInternalEnumerator<IngestData>..ctor
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>..ctor
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-Array.EmptyInternalEnumerator<BurstCloth.Chain>..ctor
 	|-Array.EmptyInternalEnumerator<CapsuleParams>..ctor
@@ -25257,6 +26292,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ushort>>..ctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, uint>>..ctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>..ctor
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>..ctor
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>..ctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>..ctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>..ctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>..ctor
@@ -25442,6 +26479,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ushort>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>..ctor
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>..ctor
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>..ctor
@@ -25729,6 +26768,32 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<EngineDamageOverTime.RecentDamage>..cctor
 	|-Array.EmptyInternalEnumerator<EntityRef>..cctor
 	|-Array.EmptyInternalEnumerator<EntityRef<object>>..cctor
+	|-Array.EmptyInternalEnumerator<PlayerStatInfo>..cctor
+	|-Array.EmptyInternalEnumerator<PlayerStatInfoInternal>..cctor
+	|-Array.EmptyInternalEnumerator<StatThresholds>..cctor
+	|-Array.EmptyInternalEnumerator<StatThresholdsInternal>..cctor
+	|-Array.EmptyInternalEnumerator<LogEventParamPair>..cctor
+	|-Array.EmptyInternalEnumerator<LogEventParamPairInternal>..cctor
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDef>..cctor
+	|-Array.EmptyInternalEnumerator<RegisterEventParamDefInternal>..cctor
+	|-Array.EmptyInternalEnumerator<CheckoutEntry>..cctor
+	|-Array.EmptyInternalEnumerator<CheckoutEntryInternal>..cctor
+	|-Array.EmptyInternalEnumerator<ItemOwnership>..cctor
+	|-Array.EmptyInternalEnumerator<ItemOwnershipInternal>..cctor
+	|-Array.EmptyInternalEnumerator<Helper.Allocation>..cctor
+	|-Array.EmptyInternalEnumerator<Helper.PinnedBuffer>..cctor
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfo>..cctor
+	|-Array.EmptyInternalEnumerator<UserScoresQueryStatInfoInternal>..cctor
+	|-Array.EmptyInternalEnumerator<ModIdentifier>..cctor
+	|-Array.EmptyInternalEnumerator<ModIdentifierInternal>..cctor
+	|-Array.EmptyInternalEnumerator<DataRecord>..cctor
+	|-Array.EmptyInternalEnumerator<DataRecordInternal>..cctor
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordId>..cctor
+	|-Array.EmptyInternalEnumerator<PresenceModificationDataRecordIdInternal>..cctor
+	|-Array.EmptyInternalEnumerator<ParticipantMetadata>..cctor
+	|-Array.EmptyInternalEnumerator<ParticipantMetadataInternal>..cctor
+	|-Array.EmptyInternalEnumerator<IngestData>..cctor
+	|-Array.EmptyInternalEnumerator<IngestDataInternal>..cctor
 	|-Array.EmptyInternalEnumerator<ExpandedLifeStats.GenericStatDisplay>..cctor
 	|-Array.EmptyInternalEnumerator<BurstCloth.Chain>..cctor
 	|-Array.EmptyInternalEnumerator<CapsuleParams>..cctor
@@ -25971,6 +27036,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ushort>>..cctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, uint>>..cctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<long, ulong>>..cctor
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.Allocation>>..cctor
+	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, Helper.PinnedBuffer>>..cctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<IntPtr, object>>..cctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, CameraMan.CameraState>>..cctor
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<object, PlayerModelHair.RendererMaterials>>..cctor
@@ -26156,6 +27223,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ushort>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, uint>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<long, ulong>>..cctor
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.Allocation>>..cctor
+	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, Helper.PinnedBuffer>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<IntPtr, object>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, CameraMan.CameraState>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, PlayerModelHair.RendererMaterials>>..cctor
@@ -27153,6 +28222,18 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<EntityRef<object>>.Sort
 	|
+	|-ArraySortHelper<PlayerStatInfoInternal>.Sort
+	|
+	|-ArraySortHelper<StatThresholdsInternal>.Sort
+	|
+	|-ArraySortHelper<ItemOwnershipInternal>.Sort
+	|
+	|-ArraySortHelper<ModIdentifierInternal>.Sort
+	|
+	|-ArraySortHelper<DataRecordInternal>.Sort
+	|
+	|-ArraySortHelper<ParticipantMetadataInternal>.Sort
+	|
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.Sort
 	|
 	|-ArraySortHelper<BurstCloth.Chain>.Sort
@@ -27490,6 +28571,18 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<EngineDamageOverTime.RecentDamage>.BinarySearch
 	|
 	|-ArraySortHelper<EntityRef<object>>.BinarySearch
+	|
+	|-ArraySortHelper<PlayerStatInfoInternal>.BinarySearch
+	|
+	|-ArraySortHelper<StatThresholdsInternal>.BinarySearch
+	|
+	|-ArraySortHelper<ItemOwnershipInternal>.BinarySearch
+	|
+	|-ArraySortHelper<ModIdentifierInternal>.BinarySearch
+	|
+	|-ArraySortHelper<DataRecordInternal>.BinarySearch
+	|
+	|-ArraySortHelper<ParticipantMetadataInternal>.BinarySearch
 	|
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.BinarySearch
 	|
@@ -27829,6 +28922,18 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<EntityRef<object>>.Sort
 	|
+	|-ArraySortHelper<PlayerStatInfoInternal>.Sort
+	|
+	|-ArraySortHelper<StatThresholdsInternal>.Sort
+	|
+	|-ArraySortHelper<ItemOwnershipInternal>.Sort
+	|
+	|-ArraySortHelper<ModIdentifierInternal>.Sort
+	|
+	|-ArraySortHelper<DataRecordInternal>.Sort
+	|
+	|-ArraySortHelper<ParticipantMetadataInternal>.Sort
+	|
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.Sort
 	|
 	|-ArraySortHelper<BurstCloth.Chain>.Sort
@@ -28117,6 +29222,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<Admin.ServerConvarInfo>.InternalBinarySearch
 	|-ArraySortHelper<Chat.MuteEntry>.InternalBinarySearch
 	|-ArraySortHelper<ERChildsSO>.InternalBinarySearch
+	|-ArraySortHelper<PlayerStatInfoInternal>.InternalBinarySearch
+	|-ArraySortHelper<StatThresholdsInternal>.InternalBinarySearch
+	|-ArraySortHelper<ItemOwnershipInternal>.InternalBinarySearch
+	|-ArraySortHelper<DataRecordInternal>.InternalBinarySearch
+	|-ArraySortHelper<ParticipantMetadataInternal>.InternalBinarySearch
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.InternalBinarySearch
 	|-ArraySortHelper<LocalClock.TimedEvent>.InternalBinarySearch
 	|-ArraySortHelper<MapView.MapMarkerCluster>.InternalBinarySearch
@@ -28250,8 +29360,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<DemoShotFloatKeyframe>.InternalBinarySearch
 	|-ArraySortHelper<Vector2>.InternalBinarySearch
 	|
-	|-ArraySortHelper<BoneData>.InternalBinarySearch
-	|
+	|-ArraySortHelper<ModIdentifierInternal>.InternalBinarySearch
 	|-ArraySortHelper<Tick.Entry>.InternalBinarySearch
 	|-ArraySortHelper<Gibbable.OverrideMesh>.InternalBinarySearch
 	|-ArraySortHelper<MeshInstance>.InternalBinarySearch
@@ -28260,6 +29369,8 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<PlaceMonumentsRailside.SpawnInfo>.InternalBinarySearch
 	|-ArraySortHelper<PlaceMonumentsRoadside.SpawnInfo>.InternalBinarySearch
 	|-ArraySortHelper<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.InternalBinarySearch
+	|
+	|-ArraySortHelper<BoneData>.InternalBinarySearch
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.InternalBinarySearch
 	|
@@ -28319,6 +29430,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.SwapIfGreater
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.SwapIfGreater
 	|-ArraySortHelper<ERChildsSO>.SwapIfGreater
+	|-ArraySortHelper<PlayerStatInfoInternal>.SwapIfGreater
+	|-ArraySortHelper<StatThresholdsInternal>.SwapIfGreater
+	|-ArraySortHelper<ItemOwnershipInternal>.SwapIfGreater
+	|-ArraySortHelper<DataRecordInternal>.SwapIfGreater
+	|-ArraySortHelper<ParticipantMetadataInternal>.SwapIfGreater
 	|-ArraySortHelper<TickRenderer.Tick>.SwapIfGreater
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.SwapIfGreater
@@ -28432,6 +29548,9 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<DemoShotFloatKeyframe>.SwapIfGreater
 	|-ArraySortHelper<Vector2>.SwapIfGreater
 	|
+	|-ArraySortHelper<ModIdentifierInternal>.SwapIfGreater
+	|-ArraySortHelper<Gibbable.OverrideMesh>.SwapIfGreater
+	|
 	|-ArraySortHelper<BurstCloth.Chain>.SwapIfGreater
 	|-ArraySortHelper<FoliageKey>.SwapIfGreater
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.SwapIfGreater
@@ -28461,8 +29580,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.SwapIfGreater
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.SwapIfGreater
-	|
-	|-ArraySortHelper<Gibbable.OverrideMesh>.SwapIfGreater
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.SwapIfGreater
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.SwapIfGreater
@@ -28546,6 +29663,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.Swap
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.Swap
 	|-ArraySortHelper<ERChildsSO>.Swap
+	|-ArraySortHelper<PlayerStatInfoInternal>.Swap
+	|-ArraySortHelper<StatThresholdsInternal>.Swap
+	|-ArraySortHelper<ItemOwnershipInternal>.Swap
+	|-ArraySortHelper<DataRecordInternal>.Swap
+	|-ArraySortHelper<ParticipantMetadataInternal>.Swap
 	|-ArraySortHelper<TickRenderer.Tick>.Swap
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Swap
@@ -28659,6 +29781,9 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<DemoShotFloatKeyframe>.Swap
 	|-ArraySortHelper<Vector2>.Swap
 	|
+	|-ArraySortHelper<ModIdentifierInternal>.Swap
+	|-ArraySortHelper<Gibbable.OverrideMesh>.Swap
+	|
 	|-ArraySortHelper<BurstCloth.Chain>.Swap
 	|-ArraySortHelper<FoliageKey>.Swap
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.Swap
@@ -28688,8 +29813,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.Swap
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.Swap
-	|
-	|-ArraySortHelper<Gibbable.OverrideMesh>.Swap
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.Swap
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.Swap
@@ -28798,6 +29921,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<NormalPairs>.IntrospectiveSort
 	|-ArraySortHelper<EngineDamageOverTime.RecentDamage>.IntrospectiveSort
 	|-ArraySortHelper<EntityRef<object>>.IntrospectiveSort
+	|-ArraySortHelper<PlayerStatInfoInternal>.IntrospectiveSort
+	|-ArraySortHelper<StatThresholdsInternal>.IntrospectiveSort
+	|-ArraySortHelper<ItemOwnershipInternal>.IntrospectiveSort
+	|-ArraySortHelper<ModIdentifierInternal>.IntrospectiveSort
+	|-ArraySortHelper<DataRecordInternal>.IntrospectiveSort
+	|-ArraySortHelper<ParticipantMetadataInternal>.IntrospectiveSort
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.IntrospectiveSort
 	|-ArraySortHelper<BurstCloth.Chain>.IntrospectiveSort
 	|-ArraySortHelper<CapsuleParams>.IntrospectiveSort
@@ -28971,6 +30100,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<NormalPairs>.IntroSort
 	|-ArraySortHelper<EngineDamageOverTime.RecentDamage>.IntroSort
 	|-ArraySortHelper<EntityRef<object>>.IntroSort
+	|-ArraySortHelper<PlayerStatInfoInternal>.IntroSort
+	|-ArraySortHelper<StatThresholdsInternal>.IntroSort
+	|-ArraySortHelper<ItemOwnershipInternal>.IntroSort
+	|-ArraySortHelper<ModIdentifierInternal>.IntroSort
+	|-ArraySortHelper<DataRecordInternal>.IntroSort
+	|-ArraySortHelper<ParticipantMetadataInternal>.IntroSort
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.IntroSort
 	|-ArraySortHelper<BurstCloth.Chain>.IntroSort
 	|-ArraySortHelper<CapsuleParams>.IntroSort
@@ -29121,6 +30256,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<Admin.ServerConvarInfo>.PickPivotAndPartition
 	|-ArraySortHelper<Chat.MuteEntry>.PickPivotAndPartition
 	|-ArraySortHelper<ERChildsSO>.PickPivotAndPartition
+	|-ArraySortHelper<PlayerStatInfoInternal>.PickPivotAndPartition
+	|-ArraySortHelper<StatThresholdsInternal>.PickPivotAndPartition
+	|-ArraySortHelper<ItemOwnershipInternal>.PickPivotAndPartition
+	|-ArraySortHelper<DataRecordInternal>.PickPivotAndPartition
+	|-ArraySortHelper<ParticipantMetadataInternal>.PickPivotAndPartition
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.PickPivotAndPartition
 	|-ArraySortHelper<LocalClock.TimedEvent>.PickPivotAndPartition
 	|-ArraySortHelper<MapView.MapMarkerCluster>.PickPivotAndPartition
@@ -29254,8 +30394,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<DemoShotFloatKeyframe>.PickPivotAndPartition
 	|-ArraySortHelper<Vector2>.PickPivotAndPartition
 	|
-	|-ArraySortHelper<BoneData>.PickPivotAndPartition
-	|
+	|-ArraySortHelper<ModIdentifierInternal>.PickPivotAndPartition
 	|-ArraySortHelper<Tick.Entry>.PickPivotAndPartition
 	|-ArraySortHelper<Gibbable.OverrideMesh>.PickPivotAndPartition
 	|-ArraySortHelper<MeshInstance>.PickPivotAndPartition
@@ -29264,6 +30403,8 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<PlaceMonumentsRailside.SpawnInfo>.PickPivotAndPartition
 	|-ArraySortHelper<PlaceMonumentsRoadside.SpawnInfo>.PickPivotAndPartition
 	|-ArraySortHelper<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.PickPivotAndPartition
+	|
+	|-ArraySortHelper<BoneData>.PickPivotAndPartition
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.PickPivotAndPartition
 	|
@@ -29347,6 +30488,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<NormalPairs>.Heapsort
 	|-ArraySortHelper<EngineDamageOverTime.RecentDamage>.Heapsort
 	|-ArraySortHelper<EntityRef<object>>.Heapsort
+	|-ArraySortHelper<PlayerStatInfoInternal>.Heapsort
+	|-ArraySortHelper<StatThresholdsInternal>.Heapsort
+	|-ArraySortHelper<ItemOwnershipInternal>.Heapsort
+	|-ArraySortHelper<ModIdentifierInternal>.Heapsort
+	|-ArraySortHelper<DataRecordInternal>.Heapsort
+	|-ArraySortHelper<ParticipantMetadataInternal>.Heapsort
 	|-ArraySortHelper<ExpandedLifeStats.GenericStatDisplay>.Heapsort
 	|-ArraySortHelper<BurstCloth.Chain>.Heapsort
 	|-ArraySortHelper<CapsuleParams>.Heapsort
@@ -29494,6 +30641,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.DownHeap
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.DownHeap
 	|-ArraySortHelper<ERChildsSO>.DownHeap
+	|-ArraySortHelper<PlayerStatInfoInternal>.DownHeap
+	|-ArraySortHelper<StatThresholdsInternal>.DownHeap
+	|-ArraySortHelper<ItemOwnershipInternal>.DownHeap
+	|-ArraySortHelper<DataRecordInternal>.DownHeap
+	|-ArraySortHelper<ParticipantMetadataInternal>.DownHeap
 	|-ArraySortHelper<TickRenderer.Tick>.DownHeap
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.DownHeap
@@ -29607,6 +30759,9 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<DemoShotFloatKeyframe>.DownHeap
 	|-ArraySortHelper<Vector2>.DownHeap
 	|
+	|-ArraySortHelper<ModIdentifierInternal>.DownHeap
+	|-ArraySortHelper<Gibbable.OverrideMesh>.DownHeap
+	|
 	|-ArraySortHelper<BurstCloth.Chain>.DownHeap
 	|-ArraySortHelper<FoliageKey>.DownHeap
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.DownHeap
@@ -29636,8 +30791,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.DownHeap
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.DownHeap
-	|
-	|-ArraySortHelper<Gibbable.OverrideMesh>.DownHeap
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.DownHeap
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.DownHeap
@@ -29721,6 +30874,11 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AdvancedChristmasLights.pointEntry>.InsertionSort
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.InsertionSort
 	|-ArraySortHelper<ERChildsSO>.InsertionSort
+	|-ArraySortHelper<PlayerStatInfoInternal>.InsertionSort
+	|-ArraySortHelper<StatThresholdsInternal>.InsertionSort
+	|-ArraySortHelper<ItemOwnershipInternal>.InsertionSort
+	|-ArraySortHelper<DataRecordInternal>.InsertionSort
+	|-ArraySortHelper<ParticipantMetadataInternal>.InsertionSort
 	|-ArraySortHelper<TickRenderer.Tick>.InsertionSort
 	|
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.InsertionSort
@@ -29834,6 +30992,9 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<DemoShotFloatKeyframe>.InsertionSort
 	|-ArraySortHelper<Vector2>.InsertionSort
 	|
+	|-ArraySortHelper<ModIdentifierInternal>.InsertionSort
+	|-ArraySortHelper<Gibbable.OverrideMesh>.InsertionSort
+	|
 	|-ArraySortHelper<BurstCloth.Chain>.InsertionSort
 	|-ArraySortHelper<FoliageKey>.InsertionSort
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.InsertionSort
@@ -29863,8 +31024,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.InsertionSort
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.InsertionSort
-	|
-	|-ArraySortHelper<Gibbable.OverrideMesh>.InsertionSort
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.InsertionSort
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.InsertionSort
@@ -30232,7 +31391,7 @@ public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6562
 
 }
 
-public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8141
+public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8114
 {
 	private readonly List<Value> values; 
 
@@ -30268,7 +31427,7 @@ public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8141
 
 }
 
-public static class Arrays // TypeDefIndex: 8226
+public static class Arrays // TypeDefIndex: 8199
 {
 	public static ushort[] flushes; 
 	public static readonly ushort[] unique5; 
@@ -30282,7 +31441,7 @@ public static class Arrays // TypeDefIndex: 8226
 
 }
 
-public static class ArrayEx // TypeDefIndex: 11366
+public static class ArrayEx // TypeDefIndex: 13034
 {
 
 	public static T[] New<T>(int length) { }

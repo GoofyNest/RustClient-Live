@@ -1,4 +1,4 @@
-public static class Output // TypeDefIndex: 12012
+public static class Output // TypeDefIndex: 13680
 {
 	[CompilerGeneratedAttribute] 
 	private static Action<string, string, LogType> OnMessage; 
@@ -20,7 +20,7 @@ public static class Output // TypeDefIndex: 12012
 
 }
 
-public struct Output.Entry // TypeDefIndex: 12013
+public struct Output.Entry // TypeDefIndex: 13681
 {
 	public string Message; 
 	public string Stacktrace; 

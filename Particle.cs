@@ -1,4 +1,4 @@
-public class Particle : ConsoleSystem // TypeDefIndex: 11975
+public class Particle : ConsoleSystem // TypeDefIndex: 13643
 {
 	private static float m_quality; 
 	[ClientVar] 

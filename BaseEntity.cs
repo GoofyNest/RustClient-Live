@@ -63,7 +63,7 @@ public class BaseEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 629
 
 }
 
-public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo, IPrefabPreProcess // TypeDefIndex: 8494
+public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo, IPrefabPreProcess // TypeDefIndex: 10163
 {
 	protected Ragdoll ragdoll; 
 	internal PositionLerp positionLerp; 
@@ -854,7 +854,7 @@ public class BaseEntity : BaseNetworkable, IProvider, IPosLerpTarget, ILerpInfo,
 
 }
 
-public class BaseEntity.Menu : Attribute // TypeDefIndex: 8495
+public class BaseEntity.Menu : Attribute // TypeDefIndex: 10164
 {
 	public string TitleToken; 
 	public string TitleEnglish; 
@@ -873,7 +873,7 @@ public class BaseEntity.Menu : Attribute // TypeDefIndex: 8495
 
 }
 
-public struct BaseEntity.Menu.Option // TypeDefIndex: 8496
+public struct BaseEntity.Menu.Option // TypeDefIndex: 10165
 {
 	public Translate.Phrase name; 
 	public Translate.Phrase description; 
@@ -886,7 +886,7 @@ public struct BaseEntity.Menu.Option // TypeDefIndex: 8496
 
 }
 
-public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 8497
+public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 10166
 {
 	public string token; 
 	public string english; 
@@ -896,7 +896,7 @@ public class BaseEntity.Menu.Description : Attribute // TypeDefIndex: 8497
 
 }
 
-public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 8498
+public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 10167
 {
 	public string icon; 
 
@@ -905,7 +905,7 @@ public class BaseEntity.Menu.Icon : Attribute // TypeDefIndex: 8498
 
 }
 
-public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 8499
+public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 10168
 {
 	public string functionName; 
 
@@ -914,20 +914,20 @@ public class BaseEntity.Menu.ShowIf : Attribute // TypeDefIndex: 8499
 
 }
 
-public class BaseEntity.Menu.UsableWhileWounded : Attribute // TypeDefIndex: 8500
+public class BaseEntity.Menu.UsableWhileWounded : Attribute // TypeDefIndex: 10169
 {
 
 	public void .ctor() { }
 
 }
 
-public struct BaseEntity.MovementModify // TypeDefIndex: 8501
+public struct BaseEntity.MovementModify // TypeDefIndex: 10170
 {
 	public float drag; 
 
 }
 
-public enum BaseEntity.Flags // TypeDefIndex: 8502
+public enum BaseEntity.Flags // TypeDefIndex: 10171
 {
 	public int value__; 
 	public const BaseEntity.Flags Placeholder = 1;
@@ -953,7 +953,7 @@ public enum BaseEntity.Flags // TypeDefIndex: 8502
 
 }
 
-private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRequest> // TypeDefIndex: 8503
+private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRequest> // TypeDefIndex: 10172
 {
 	public readonly BaseEntity Entity; 
 	public readonly FileStorage.Type Type; 
@@ -973,7 +973,7 @@ private struct BaseEntity.QueuedFileRequest : IEquatable<BaseEntity.QueuedFileRe
 
 }
 
-private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFileRequest> // TypeDefIndex: 8504
+private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFileRequest> // TypeDefIndex: 10173
 {
 	public readonly FileStorage.Type Type; 
 	public readonly uint NumId; 
@@ -992,7 +992,7 @@ private struct BaseEntity.PendingFileRequest : IEquatable<BaseEntity.PendingFile
 
 }
 
-public class BaseEntity.Query.EntityTree // TypeDefIndex: 8506
+public class BaseEntity.Query.EntityTree // TypeDefIndex: 10175
 {
 
 public class BaseEntity.Query.EntityTree
@@ -1029,14 +1029,14 @@ public class BaseEntity.Query.EntityTree
 
 }
 
-public class BaseEntity.RPC_Shared : Attribute // TypeDefIndex: 8507
+public class BaseEntity.RPC_Shared : Attribute // TypeDefIndex: 10176
 {
 
 	public void .ctor() { }
 
 }
 
-public struct BaseEntity.RPCMessage // TypeDefIndex: 8508
+public struct BaseEntity.RPCMessage // TypeDefIndex: 10177
 {
 	public Connection connection; 
 	public BasePlayer player; 
@@ -1044,14 +1044,14 @@ public struct BaseEntity.RPCMessage // TypeDefIndex: 8508
 
 }
 
-public class BaseEntity.RPC_Client : BaseEntity.RPC_Shared // TypeDefIndex: 8509
+public class BaseEntity.RPC_Client : BaseEntity.RPC_Shared // TypeDefIndex: 10178
 {
 
 	public void .ctor() { }
 
 }
 
-public enum BaseEntity.Signal // TypeDefIndex: 8510
+public enum BaseEntity.Signal // TypeDefIndex: 10179
 {
 	public int value__; 
 	public const BaseEntity.Signal Attack = 0;
@@ -1074,7 +1074,7 @@ public enum BaseEntity.Signal // TypeDefIndex: 8510
 
 }
 
-public enum BaseEntity.Slot // TypeDefIndex: 8511
+public enum BaseEntity.Slot // TypeDefIndex: 10180
 {
 	public int value__; 
 	public const BaseEntity.Slot Lock = 0;
@@ -1089,7 +1089,7 @@ public enum BaseEntity.Slot // TypeDefIndex: 8511
 
 }
 
-public enum BaseEntity.TraitFlag // TypeDefIndex: 8512
+public enum BaseEntity.TraitFlag // TypeDefIndex: 10181
 {
 	public int value__; 
 	public const BaseEntity.TraitFlag None = 0;
@@ -1103,7 +1103,7 @@ public enum BaseEntity.TraitFlag // TypeDefIndex: 8512
 
 }
 
-public enum BaseEntity.GiveItemReason // TypeDefIndex: 8514
+public enum BaseEntity.GiveItemReason // TypeDefIndex: 10183
 {
 
 public enum BaseEntity.GiveItemReason
@@ -1115,7 +1115,7 @@ public enum BaseEntity.GiveItemReason
 
 }
 
-private sealed class BaseEntity.<>c // TypeDefIndex: 8515
+private sealed class BaseEntity.<>c // TypeDefIndex: 10184
 {
 	public static readonly BaseEntity.<>c <>9; 
 	public static Comparison<Option> <>9__35_0; 

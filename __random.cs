@@ -1502,9 +1502,7 @@ public sealed class Action<T1, T2> : MulticastDelegate // TypeDefIndex: 152
 	|
 	|-Action<SellOrderEntry, int>.Invoke
 	|-Action<object, int>.Invoke
-	|-Action<object, Int32Enum>.Invoke
 	|-Action<string, int>.Invoke
-	|-Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent>.Invoke
 	|
 	|-Action<AppId, PublishedFileId>.Invoke
 	|
@@ -1543,6 +1541,9 @@ public sealed class Action<T1, T2> : MulticastDelegate // TypeDefIndex: 152
 	|
 	|-Action<int, long>.Invoke
 	|-Action<uint, object>.Invoke
+	|
+	|-Action<object, Int32Enum>.Invoke
+	|-Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent>.Invoke
 	|
 	|-Action<float, object>.Invoke
 	|
@@ -1815,6 +1816,7 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	|-Func<AsyncCallback, object, IAsyncResult>..ctor
 	|-Func<Stream, IAsyncResult, int>..ctor
 	|-Func<Stream, IAsyncResult, VoidTaskResult>..ctor
+	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>..ctor
 	|-Func<int, IntPtr, bool>..ctor
 	|-Func<object, long, object>..ctor
 	|-Func<object, object, int>..ctor
@@ -1835,6 +1837,8 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	|-Func<Camera, Vector2, Matrix4x4>.Invoke
 	|-Func<object, Vector2, Matrix4x4>.Invoke
 	|
+	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>.Invoke
+	|
 	|-Func<object, long, object>.Invoke
 	|
 	|-Func<object, object, int>.Invoke
@@ -1844,6 +1848,8 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 
 	public virtual IAsyncResult BeginInvoke(T1 arg1, T2 arg2, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
+	|
+	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>.BeginInvoke
 	|
 	|-Func<int, IntPtr, bool>.BeginInvoke
 	|
@@ -1859,13 +1865,14 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	public virtual TResult EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
+	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>.EndInvoke
+	|-Func<object, object, int>.EndInvoke
+	|
 	|-Func<int, IntPtr, bool>.EndInvoke
 	|-Func<object, object, VoidTaskResult>.EndInvoke
 	|
 	|-Func<object, long, object>.EndInvoke
 	|-Func<object, object, object>.EndInvoke
-	|
-	|-Func<object, object, int>.EndInvoke
 	|
 	|-Func<object, Vector2, Matrix4x4>.EndInvoke
 	*/
@@ -2007,6 +2014,12 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<NormalPairs>..ctor
 	|-Comparison<EngineDamageOverTime.RecentDamage>..ctor
 	|-Comparison<EntityRef<object>>..ctor
+	|-Comparison<PlayerStatInfoInternal>..ctor
+	|-Comparison<StatThresholdsInternal>..ctor
+	|-Comparison<ItemOwnershipInternal>..ctor
+	|-Comparison<ModIdentifierInternal>..ctor
+	|-Comparison<DataRecordInternal>..ctor
+	|-Comparison<ParticipantMetadataInternal>..ctor
 	|-Comparison<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-Comparison<BurstCloth.Chain>..ctor
 	|-Comparison<CapsuleParams>..ctor
@@ -2169,6 +2182,11 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<Admin.ServerConvarInfo>.Invoke
 	|-Comparison<Chat.MuteEntry>.Invoke
 	|-Comparison<ERChildsSO>.Invoke
+	|-Comparison<PlayerStatInfoInternal>.Invoke
+	|-Comparison<StatThresholdsInternal>.Invoke
+	|-Comparison<ItemOwnershipInternal>.Invoke
+	|-Comparison<DataRecordInternal>.Invoke
+	|-Comparison<ParticipantMetadataInternal>.Invoke
 	|-Comparison<ExpandedLifeStats.GenericStatDisplay>.Invoke
 	|-Comparison<LocalClock.TimedEvent>.Invoke
 	|-Comparison<MapView.MapMarkerCluster>.Invoke
@@ -2295,8 +2313,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<DemoShotFloatKeyframe>.Invoke
 	|-Comparison<Vector2>.Invoke
 	|
-	|-Comparison<BoneData>.Invoke
-	|
+	|-Comparison<ModIdentifierInternal>.Invoke
 	|-Comparison<Tick.Entry>.Invoke
 	|-Comparison<Gibbable.OverrideMesh>.Invoke
 	|-Comparison<MeshInstance>.Invoke
@@ -2305,6 +2322,8 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<PlaceMonumentsRailside.SpawnInfo>.Invoke
 	|-Comparison<PlaceMonumentsRoadside.SpawnInfo>.Invoke
 	|-Comparison<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Invoke
+	|
+	|-Comparison<BoneData>.Invoke
 	|
 	|-Comparison<FoliageGridMeshData.FoliageVertex>.Invoke
 	|
@@ -2426,6 +2445,18 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<EngineDamageOverTime.RecentDamage>.BeginInvoke
 	|
 	|-Comparison<EntityRef<object>>.BeginInvoke
+	|
+	|-Comparison<PlayerStatInfoInternal>.BeginInvoke
+	|
+	|-Comparison<StatThresholdsInternal>.BeginInvoke
+	|
+	|-Comparison<ItemOwnershipInternal>.BeginInvoke
+	|
+	|-Comparison<ModIdentifierInternal>.BeginInvoke
+	|
+	|-Comparison<DataRecordInternal>.BeginInvoke
+	|
+	|-Comparison<ParticipantMetadataInternal>.BeginInvoke
 	|
 	|-Comparison<ExpandedLifeStats.GenericStatDisplay>.BeginInvoke
 	|
@@ -2737,6 +2768,12 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<NormalPairs>.EndInvoke
 	|-Comparison<EngineDamageOverTime.RecentDamage>.EndInvoke
 	|-Comparison<EntityRef<object>>.EndInvoke
+	|-Comparison<PlayerStatInfoInternal>.EndInvoke
+	|-Comparison<StatThresholdsInternal>.EndInvoke
+	|-Comparison<ItemOwnershipInternal>.EndInvoke
+	|-Comparison<ModIdentifierInternal>.EndInvoke
+	|-Comparison<DataRecordInternal>.EndInvoke
+	|-Comparison<ParticipantMetadataInternal>.EndInvoke
 	|-Comparison<ExpandedLifeStats.GenericStatDisplay>.EndInvoke
 	|-Comparison<BurstCloth.Chain>.EndInvoke
 	|-Comparison<CapsuleParams>.EndInvoke
@@ -2914,6 +2951,12 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<NormalPairs>..ctor
 	|-Predicate<EngineDamageOverTime.RecentDamage>..ctor
 	|-Predicate<EntityRef<object>>..ctor
+	|-Predicate<PlayerStatInfoInternal>..ctor
+	|-Predicate<StatThresholdsInternal>..ctor
+	|-Predicate<ItemOwnershipInternal>..ctor
+	|-Predicate<ModIdentifierInternal>..ctor
+	|-Predicate<DataRecordInternal>..ctor
+	|-Predicate<ParticipantMetadataInternal>..ctor
 	|-Predicate<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-Predicate<BurstCloth.Chain>..ctor
 	|-Predicate<CapsuleParams>..ctor
@@ -3094,6 +3137,11 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<Admin.ServerConvarInfo>.Invoke
 	|-Predicate<Chat.MuteEntry>.Invoke
 	|-Predicate<ERChildsSO>.Invoke
+	|-Predicate<PlayerStatInfoInternal>.Invoke
+	|-Predicate<StatThresholdsInternal>.Invoke
+	|-Predicate<ItemOwnershipInternal>.Invoke
+	|-Predicate<DataRecordInternal>.Invoke
+	|-Predicate<ParticipantMetadataInternal>.Invoke
 	|-Predicate<ExpandedLifeStats.GenericStatDisplay>.Invoke
 	|-Predicate<LocalClock.TimedEvent>.Invoke
 	|-Predicate<MapView.MapMarkerCluster>.Invoke
@@ -3223,8 +3271,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<DemoShotFloatKeyframe>.Invoke
 	|-Predicate<Vector2>.Invoke
 	|
-	|-Predicate<BoneData>.Invoke
-	|
+	|-Predicate<ModIdentifierInternal>.Invoke
 	|-Predicate<Tick.Entry>.Invoke
 	|-Predicate<Gibbable.OverrideMesh>.Invoke
 	|-Predicate<MeshInstance>.Invoke
@@ -3233,6 +3280,8 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<PlaceMonumentsRailside.SpawnInfo>.Invoke
 	|-Predicate<PlaceMonumentsRoadside.SpawnInfo>.Invoke
 	|-Predicate<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Invoke
+	|
+	|-Predicate<BoneData>.Invoke
 	|
 	|-Predicate<FoliageGridMeshData.FoliageVertex>.Invoke
 	|
@@ -3345,6 +3394,18 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<EngineDamageOverTime.RecentDamage>.BeginInvoke
 	|
 	|-Predicate<EntityRef<object>>.BeginInvoke
+	|
+	|-Predicate<PlayerStatInfoInternal>.BeginInvoke
+	|
+	|-Predicate<StatThresholdsInternal>.BeginInvoke
+	|
+	|-Predicate<ItemOwnershipInternal>.BeginInvoke
+	|
+	|-Predicate<ModIdentifierInternal>.BeginInvoke
+	|
+	|-Predicate<DataRecordInternal>.BeginInvoke
+	|
+	|-Predicate<ParticipantMetadataInternal>.BeginInvoke
 	|
 	|-Predicate<ExpandedLifeStats.GenericStatDisplay>.BeginInvoke
 	|
@@ -3648,6 +3709,12 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<NormalPairs>.EndInvoke
 	|-Predicate<EngineDamageOverTime.RecentDamage>.EndInvoke
 	|-Predicate<EntityRef<object>>.EndInvoke
+	|-Predicate<PlayerStatInfoInternal>.EndInvoke
+	|-Predicate<StatThresholdsInternal>.EndInvoke
+	|-Predicate<ItemOwnershipInternal>.EndInvoke
+	|-Predicate<ModIdentifierInternal>.EndInvoke
+	|-Predicate<DataRecordInternal>.EndInvoke
+	|-Predicate<ParticipantMetadataInternal>.EndInvoke
 	|-Predicate<ExpandedLifeStats.GenericStatDisplay>.EndInvoke
 	|-Predicate<BurstCloth.Chain>.EndInvoke
 	|-Predicate<CapsuleParams>.EndInvoke
@@ -3844,6 +3911,198 @@ public struct Nullable<T> // TypeDefIndex: 380
 	public void .ctor(T value) { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>..ctor
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>..ctor
+	|-Nullable<GetAchievementDefinitionCountOptions>..ctor
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>..ctor
+	|-Nullable<AddNotifyMessageToPeerOptions>..ctor
+	|-Nullable<AddNotifyMessageToServerOptions>..ctor
+	|-Nullable<AddNotifyPeerActionRequiredOptions>..ctor
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>..ctor
+	|-Nullable<EndSessionOptions>..ctor
+	|-Nullable<AddNotifyClientActionRequiredOptions>..ctor
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>..ctor
+	|-Nullable<AddNotifyMessageToClientOptions>..ctor
+	|-Nullable<EndSessionOptions>..ctor
+	|-Nullable<AddNotifyLoginStatusChangedOptions>..ctor
+	|-Nullable<CopyUserAuthTokenOptions>..ctor
+	|-Nullable<AddNotifyAuthExpirationOptions>..ctor
+	|-Nullable<AddNotifyLoginStatusChangedOptions>..ctor
+	|-Nullable<DeleteDeviceIdOptions>..ctor
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>..ctor
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>..ctor
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>..ctor
+	|-Nullable<TransactionGetEntitlementsCountOptions>..ctor
+	|-Nullable<AddNotifyFriendsUpdateOptions>..ctor
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>..ctor
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>..ctor
+	|-Nullable<QueryAgeGateOptions>..ctor
+	|-Nullable<GetLeaderboardDefinitionCountOptions>..ctor
+	|-Nullable<GetLeaderboardRecordCountOptions>..ctor
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>..ctor
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>..ctor
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>..ctor
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>..ctor
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>..ctor
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>..ctor
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>..ctor
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>..ctor
+	|-Nullable<LobbyDetailsCopyInfoOptions>..ctor
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>..ctor
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>..ctor
+	|-Nullable<LobbyDetailsGetMemberCountOptions>..ctor
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>..ctor
+	|-Nullable<LobbySearchGetSearchResultCountOptions>..ctor
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>..ctor
+	|-Nullable<GetNATTypeOptions>..ctor
+	|-Nullable<GetPacketQueueInfoOptions>..ctor
+	|-Nullable<GetPortRangeOptions>..ctor
+	|-Nullable<GetRelayControlOptions>..ctor
+	|-Nullable<QueryNATTypeOptions>..ctor
+	|-Nullable<GetDesktopCrossplayStatusOptions>..ctor
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>..ctor
+	|-Nullable<AddNotifyOnPresenceChangedOptions>..ctor
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>..ctor
+	|-Nullable<GetAudioInputDevicesCountOptions>..ctor
+	|-Nullable<GetAudioOutputDevicesCountOptions>..ctor
+	|-Nullable<ActiveSessionCopyInfoOptions>..ctor
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>..ctor
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>..ctor
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>..ctor
+	|-Nullable<AddNotifySessionInviteReceivedOptions>..ctor
+	|-Nullable<SessionDetailsCopyInfoOptions>..ctor
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>..ctor
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>..ctor
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>..ctor
+	|-Nullable<SessionSearchGetSearchResultCountOptions>..ctor
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>..ctor
+	|-Nullable<GetToggleFriendsKeyOptions>..ctor
+	|-Nullable<IsSocialOverlayPausedOptions>..ctor
+	|-Nullable<PauseSocialOverlayOptions>..ctor
+	|-Nullable<FrameType>..ctor
+	|-Nullable<bool>..ctor
+	|-Nullable<byte>..ctor
+	|-Nullable<ByteEnum>..ctor
+	|-Nullable<sbyte>..ctor
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>..ctor
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>..ctor
+	|-Nullable<GetPlayerAchievementCountOptions>..ctor
+	|-Nullable<GetUnlockedAchievementCountOptions>..ctor
+	|-Nullable<AddExternalIntegrityCatalogOptions>..ctor
+	|-Nullable<SetGameSessionIdOptions>..ctor
+	|-Nullable<AccountFeatureRestrictedInfo>..ctor
+	|-Nullable<CopyIdTokenOptions>..ctor
+	|-Nullable<DeletePersistentAuthOptions>..ctor
+	|-Nullable<LogoutOptions>..ctor
+	|-Nullable<CopyIdTokenOptions>..ctor
+	|-Nullable<CopyProductUserInfoOptions>..ctor
+	|-Nullable<CreateDeviceIdOptions>..ctor
+	|-Nullable<CreateUserOptions>..ctor
+	|-Nullable<GetProductUserExternalAccountCountOptions>..ctor
+	|-Nullable<UnlinkAccountOptions>..ctor
+	|-Nullable<UserLoginInfo>..ctor
+	|-Nullable<CheckoutEntry>..ctor
+	|-Nullable<GetEntitlementsCountOptions>..ctor
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>..ctor
+	|-Nullable<GetOfferCountOptions>..ctor
+	|-Nullable<GetTransactionCountOptions>..ctor
+	|-Nullable<GetFriendsCountOptions>..ctor
+	|-Nullable<QueryFriendsOptions>..ctor
+	|-Nullable<GetPermissionsCountOptions>..ctor
+	|-Nullable<QueryPermissionsOptions>..ctor
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>..ctor
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>..ctor
+	|-Nullable<GetLeaderboardUserScoreCountOptions>..ctor
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>..ctor
+	|-Nullable<GetInviteCountOptions>..ctor
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>..ctor
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>..ctor
+	|-Nullable<LobbyModificationRemoveAttributeOptions>..ctor
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>..ctor
+	|-Nullable<LobbyModificationSetBucketIdOptions>..ctor
+	|-Nullable<LobbySearchFindOptions>..ctor
+	|-Nullable<LobbySearchSetLobbyIdOptions>..ctor
+	|-Nullable<LobbySearchSetTargetUserIdOptions>..ctor
+	|-Nullable<QueryInvitesOptions>..ctor
+	|-Nullable<UpdateLobbyOptions>..ctor
+	|-Nullable<SocketId>..ctor
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>..ctor
+	|-Nullable<DeleteCacheOptions>..ctor
+	|-Nullable<GetFileMetadataCountOptions>..ctor
+	|-Nullable<QueryFileListOptions>..ctor
+	|-Nullable<CreatePresenceModificationOptions>..ctor
+	|-Nullable<PresenceModificationDataRecordId>..ctor
+	|-Nullable<PresenceModificationDeleteDataOptions>..ctor
+	|-Nullable<PresenceModificationSetDataOptions>..ctor
+	|-Nullable<PresenceModificationSetJoinInfoOptions>..ctor
+	|-Nullable<PresenceModificationSetRawRichTextOptions>..ctor
+	|-Nullable<BeginSnapshotOptions>..ctor
+	|-Nullable<DeleteSnapshotOptions>..ctor
+	|-Nullable<AudioDevicesChangedCallbackInfo>..ctor
+	|-Nullable<RegisterPlatformAudioUserOptions>..ctor
+	|-Nullable<UnregisterPlatformAudioUserOptions>..ctor
+	|-Nullable<GetPlayerSanctionCountOptions>..ctor
+	|-Nullable<CopyActiveSessionHandleOptions>..ctor
+	|-Nullable<CopySessionHandleByInviteIdOptions>..ctor
+	|-Nullable<CopySessionHandleForPresenceOptions>..ctor
+	|-Nullable<DestroySessionOptions>..ctor
+	|-Nullable<DumpSessionStateOptions>..ctor
+	|-Nullable<EndSessionOptions>..ctor
+	|-Nullable<GetInviteCountOptions>..ctor
+	|-Nullable<QueryInvitesOptions>..ctor
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>..ctor
+	|-Nullable<SessionModificationRemoveAttributeOptions>..ctor
+	|-Nullable<SessionModificationSetBucketIdOptions>..ctor
+	|-Nullable<SessionModificationSetHostAddressOptions>..ctor
+	|-Nullable<SessionSearchFindOptions>..ctor
+	|-Nullable<SessionSearchSetSessionIdOptions>..ctor
+	|-Nullable<SessionSearchSetTargetUserIdOptions>..ctor
+	|-Nullable<StartSessionOptions>..ctor
+	|-Nullable<UpdateSessionModificationOptions>..ctor
+	|-Nullable<UpdateSessionOptions>..ctor
+	|-Nullable<GetStatCountOptions>..ctor
+	|-Nullable<DeleteCacheOptions>..ctor
+	|-Nullable<GetFileMetadataCountOptions>..ctor
+	|-Nullable<GetFriendsExclusiveInputOptions>..ctor
+	|-Nullable<GetFriendsVisibleOptions>..ctor
+	|-Nullable<HideFriendsOptions>..ctor
+	|-Nullable<ShowFriendsOptions>..ctor
+	|-Nullable<DataKey>..ctor
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>..ctor
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>..ctor
+	|-Nullable<GetProtectMessageOutputLengthOptions>..ctor
+	|-Nullable<PollStatusOptions>..ctor
+	|-Nullable<LogGameRoundEndOptions>..ctor
+	|-Nullable<GetProtectMessageOutputLengthOptions>..ctor
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>..ctor
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>..ctor
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>..ctor
+	|-Nullable<CreateLobbySearchOptions>..ctor
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>..ctor
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>..ctor
+	|-Nullable<LobbyModificationSetMaxMembersOptions>..ctor
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>..ctor
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>..ctor
+	|-Nullable<LobbySearchSetMaxResultsOptions>..ctor
+	|-Nullable<SetPortRangeOptions>..ctor
+	|-Nullable<SetRelayControlOptions>..ctor
+	|-Nullable<PresenceModificationSetStatusOptions>..ctor
+	|-Nullable<EndSnapshotOptions>..ctor
+	|-Nullable<SubmitSnapshotOptions>..ctor
+	|-Nullable<GetAudioInputDeviceByIndexOptions>..ctor
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>..ctor
+	|-Nullable<Result>..ctor
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>..ctor
+	|-Nullable<CreateSessionSearchOptions>..ctor
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>..ctor
+	|-Nullable<SessionModificationSetMaxPlayersOptions>..ctor
+	|-Nullable<SessionModificationSetPermissionLevelOptions>..ctor
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>..ctor
+	|-Nullable<SessionSearchSetMaxResultsOptions>..ctor
+	|-Nullable<SetDisplayPreferenceOptions>..ctor
+	|-Nullable<SetToggleFriendsKeyOptions>..ctor
 	|-Nullable<FileStorage.Type>..ctor
 	|-Nullable<InstrumentKeyController.AnimationSlot>..ctor
 	|-Nullable<MapLayer>..ctor
@@ -3870,32 +4129,427 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<PostProcessLayer.ScalingMode>..ctor
 	|-Nullable<VehicleEngineController.EngineState<TrainEngine>>..ctor
 	|
-	|-Nullable<FrameType>..ctor
-	|-Nullable<bool>..ctor
-	|-Nullable<byte>..ctor
-	|-Nullable<ByteEnum>..ctor
-	|-Nullable<sbyte>..ctor
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>..ctor
+	|-Nullable<CopyPlayerAchievementByIndexOptions>..ctor
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>..ctor
+	|-Nullable<QueryDefinitionsOptions>..ctor
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>..ctor
+	|-Nullable<OnMessageToServerCallbackInfo>..ctor
+	|-Nullable<ProtectMessageOptions>..ctor
+	|-Nullable<UnprotectMessageOptions>..ctor
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>..ctor
+	|-Nullable<LoginStatusChangedCallbackInfo>..ctor
+	|-Nullable<VerifyIdTokenOptions>..ctor
+	|-Nullable<GetExternalAccountMappingsOptions>..ctor
+	|-Nullable<GetProductUserIdMappingOptions>..ctor
+	|-Nullable<LoginStatusChangedCallbackInfo>..ctor
+	|-Nullable<QueryExternalAccountMappingsOptions>..ctor
+	|-Nullable<QueryProductUserIdMappingsOptions>..ctor
+	|-Nullable<TransferDeviceIdAccountOptions>..ctor
+	|-Nullable<VerifyIdTokenOptions>..ctor
+	|-Nullable<CatalogRelease>..ctor
+	|-Nullable<CheckoutOptions>..ctor
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>..ctor
+	|-Nullable<CopyItemImageInfoByIndexOptions>..ctor
+	|-Nullable<CopyItemReleaseByIndexOptions>..ctor
+	|-Nullable<CopyOfferImageInfoByIndexOptions>..ctor
+	|-Nullable<CopyOfferItemByIndexOptions>..ctor
+	|-Nullable<KeyImageInfo>..ctor
+	|-Nullable<QueryEntitlementsOptions>..ctor
+	|-Nullable<QueryOwnershipOptions>..ctor
+	|-Nullable<QueryOwnershipTokenOptions>..ctor
+	|-Nullable<Options>..ctor
+	|-Nullable<CreateUserOptions>..ctor
+	|-Nullable<LeaderboardRecord>..ctor
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>..ctor
+	|-Nullable<KickMemberOptions>..ctor
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>..ctor
+	|-Nullable<PromoteMemberOptions>..ctor
+	|-Nullable<SendInviteOptions>..ctor
+	|-Nullable<LogMessage>..ctor
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>..ctor
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>..ctor
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>..ctor
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>..ctor
+	|-Nullable<CloseConnectionsOptions>..ctor
+	|-Nullable<DuplicateFileOptions>..ctor
+	|-Nullable<PresenceChangedCallbackInfo>..ctor
+	|-Nullable<SetParticipantHardMuteOptions>..ctor
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>..ctor
+	|-Nullable<SetAudioInputSettingsOptions>..ctor
+	|-Nullable<SetAudioOutputSettingsOptions>..ctor
+	|-Nullable<UpdateReceivingVolumeOptions>..ctor
+	|-Nullable<UpdateSendingOptions>..ctor
+	|-Nullable<UpdateSendingVolumeOptions>..ctor
+	|-Nullable<JoinSessionAcceptedCallbackInfo>..ctor
+	|-Nullable<SendInviteOptions>..ctor
+	|-Nullable<SessionDetailsSettings>..ctor
+	|-Nullable<IngestStatOptions>..ctor
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>..ctor
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>..ctor
+	|-Nullable<CopyExternalUserInfoByIndexOptions>..ctor
+	|-Nullable<QueryUserInfoByExternalAccountOptions>..ctor
 	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>..ctor
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>..ctor
+	|-Nullable<PlayerStatInfo>..ctor
+	|-Nullable<QueryPlayerAchievementsOptions>..ctor
+	|-Nullable<StatThresholds>..ctor
+	|-Nullable<UnlockAchievementsOptions>..ctor
+	|-Nullable<BeginSessionOptions>..ctor
+	|-Nullable<ReceiveMessageFromServerOptions>..ctor
+	|-Nullable<RegisterEventParamDef>..ctor
+	|-Nullable<IdToken>..ctor
+	|-Nullable<QueryIdTokenOptions>..ctor
+	|-Nullable<AuthExpirationCallbackInfo>..ctor
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>..ctor
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>..ctor
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>..ctor
+	|-Nullable<Credentials>..ctor
+	|-Nullable<IdToken>..ctor
+	|-Nullable<LinkAccountOptions>..ctor
+	|-Nullable<SendCustomInviteOptions>..ctor
+	|-Nullable<SetCustomInviteOptions>..ctor
+	|-Nullable<CopyEntitlementByIdOptions>..ctor
+	|-Nullable<CopyEntitlementByIndexOptions>..ctor
+	|-Nullable<CopyItemByIdOptions>..ctor
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>..ctor
+	|-Nullable<CopyOfferByIdOptions>..ctor
+	|-Nullable<CopyOfferByIndexOptions>..ctor
+	|-Nullable<CopyTransactionByIdOptions>..ctor
+	|-Nullable<CopyTransactionByIndexOptions>..ctor
+	|-Nullable<GetEntitlementsByNameCountOptions>..ctor
+	|-Nullable<GetItemImageInfoCountOptions>..ctor
+	|-Nullable<GetItemReleaseCountOptions>..ctor
+	|-Nullable<GetOfferImageInfoCountOptions>..ctor
+	|-Nullable<GetOfferItemCountOptions>..ctor
+	|-Nullable<ItemOwnership>..ctor
+	|-Nullable<QueryOffersOptions>..ctor
+	|-Nullable<RedeemEntitlementsOptions>..ctor
+	|-Nullable<AcceptInviteOptions>..ctor
+	|-Nullable<GetFriendAtIndexOptions>..ctor
+	|-Nullable<GetStatusOptions>..ctor
+	|-Nullable<RejectInviteOptions>..ctor
+	|-Nullable<SendInviteOptions>..ctor
+	|-Nullable<SteamOptions>..ctor
+	|-Nullable<CopyPermissionByIndexOptions>..ctor
+	|-Nullable<GetPermissionByKeyOptions>..ctor
+	|-Nullable<PermissionStatus>..ctor
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>..ctor
+	|-Nullable<RequestPermissionsOptions>..ctor
+	|-Nullable<UpdateParentEmailOptions>..ctor
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>..ctor
+	|-Nullable<LeaderboardUserScore>..ctor
+	|-Nullable<QueryLeaderboardRanksOptions>..ctor
+	|-Nullable<UserScoresQueryStatInfo>..ctor
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>..ctor
+	|-Nullable<CopyLobbyDetailsHandleOptions>..ctor
+	|-Nullable<DestroyLobbyOptions>..ctor
+	|-Nullable<GetInviteIdByIndexOptions>..ctor
+	|-Nullable<GetRTCRoomNameOptions>..ctor
+	|-Nullable<IsRTCRoomConnectedOptions>..ctor
+	|-Nullable<LeaveLobbyOptions>..ctor
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>..ctor
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>..ctor
+	|-Nullable<LobbySearchRemoveParameterOptions>..ctor
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>..ctor
+	|-Nullable<RejectInviteOptions>..ctor
+	|-Nullable<UpdateLobbyModificationOptions>..ctor
+	|-Nullable<CopyModInfoOptions>..ctor
+	|-Nullable<EnumerateModsOptions>..ctor
+	|-Nullable<ModInfo>..ctor
+	|-Nullable<GetNextReceivedPacketSizeOptions>..ctor
+	|-Nullable<ReceivePacketOptions>..ctor
+	|-Nullable<ClientCredentials>..ctor
+	|-Nullable<WindowsRTCOptions>..ctor
+	|-Nullable<CopyFileMetadataAtIndexOptions>..ctor
+	|-Nullable<CopyFileMetadataByFilenameOptions>..ctor
+	|-Nullable<DeleteFileOptions>..ctor
+	|-Nullable<QueryFileOptions>..ctor
+	|-Nullable<CopyPresenceOptions>..ctor
+	|-Nullable<DataRecord>..ctor
+	|-Nullable<GetJoinInfoOptions>..ctor
+	|-Nullable<HasPresenceOptions>..ctor
+	|-Nullable<QueryPresenceOptions>..ctor
+	|-Nullable<SetPresenceOptions>..ctor
+	|-Nullable<AddNotifyDisconnectedOptions>..ctor
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>..ctor
+	|-Nullable<LeaveRoomOptions>..ctor
+	|-Nullable<ParticipantMetadata>..ctor
+	|-Nullable<SetSettingOptions>..ctor
+	|-Nullable<CopyUserTokenByUserIdOptions>..ctor
+	|-Nullable<KickOptions>..ctor
+	|-Nullable<UserToken>..ctor
+	|-Nullable<AddNotifyAudioBeforeSendOptions>..ctor
+	|-Nullable<AddNotifyAudioInputStateOptions>..ctor
+	|-Nullable<AddNotifyAudioOutputStateOptions>..ctor
+	|-Nullable<AddNotifyParticipantUpdatedOptions>..ctor
+	|-Nullable<AudioBuffer>..ctor
+	|-Nullable<CopyPlayerSanctionByIndexOptions>..ctor
+	|-Nullable<QueryActivePlayerSanctionsOptions>..ctor
+	|-Nullable<GetInviteIdByIndexOptions>..ctor
+	|-Nullable<IsUserInSessionOptions>..ctor
+	|-Nullable<RegisterPlayersOptions>..ctor
+	|-Nullable<RejectInviteOptions>..ctor
+	|-Nullable<SessionSearchRemoveParameterOptions>..ctor
+	|-Nullable<UnregisterPlayersOptions>..ctor
+	|-Nullable<CopyStatByIndexOptions>..ctor
+	|-Nullable<CopyStatByNameOptions>..ctor
+	|-Nullable<IngestData>..ctor
+	|-Nullable<CopyFileMetadataAtIndexOptions>..ctor
+	|-Nullable<CopyFileMetadataByFilenameOptions>..ctor
+	|-Nullable<QueryFileListOptions>..ctor
+	|-Nullable<QueryFileOptions>..ctor
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>..ctor
+	|-Nullable<ShowBlockPlayerOptions>..ctor
+	|-Nullable<ShowReportPlayerOptions>..ctor
+	|-Nullable<CopyUserInfoOptions>..ctor
+	|-Nullable<GetExternalUserInfoCountOptions>..ctor
+	|-Nullable<QueryUserInfoByDisplayNameOptions>..ctor
+	|-Nullable<QueryUserInfoOptions>..ctor
 	|-Nullable<ImageStorageEntity.ImageRequest>..ctor
 	|-Nullable<StreamingContext>..ctor
 	|
+	|-Nullable<Definition>..ctor
+	|-Nullable<VerifyUserAuthOptions>..ctor
+	|-Nullable<ActiveSessionInfo>..ctor
+	|
+	|-Nullable<DefinitionInternal>..ctor
+	|
+	|-Nullable<DefinitionV2>..ctor
+	|-Nullable<PlayerAchievement>..ctor
+	|-Nullable<Token>..ctor
+	|-Nullable<CatalogItem>..ctor
+	|-Nullable<Attribute>..ctor
+	|-Nullable<LobbyModificationAddAttributeOptions>..ctor
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>..ctor
+	|-Nullable<LobbySearchSetParameterOptions>..ctor
+	|-Nullable<SessionDetailsAttribute>..ctor
+	|-Nullable<SessionModificationAddAttributeOptions>..ctor
+	|-Nullable<SessionSearchSetParameterOptions>..ctor
+	|
+	|-Nullable<DefinitionV2Internal>..ctor
+	|-Nullable<TokenInternal>..ctor
+	|-Nullable<CatalogItemInternal>..ctor
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>..ctor
+	|-Nullable<IOSCredentials>..ctor
+	|-Nullable<LobbyDetailsInfo>..ctor
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>..ctor
+	|-Nullable<OnPeerConnectionEstablishedInfo>..ctor
+	|-Nullable<OnRemoteConnectionClosedInfo>..ctor
+	|-Nullable<ReadFileDataCallbackInfo>..ctor
+	|-Nullable<JoinRoomOptions>..ctor
+	|-Nullable<AudioBeforeSendCallbackInfo>..ctor
+	|-Nullable<ReadFileDataCallbackInfo>..ctor
+	|-Nullable<UserInfoData>..ctor
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>..ctor
+	|-Nullable<DeletePersistentAuthCallbackInfo>..ctor
+	|-Nullable<VerifyUserAuthCallbackInfo>..ctor
+	|-Nullable<CreateDeviceIdCallbackInfo>..ctor
+	|-Nullable<DeleteDeviceIdCallbackInfo>..ctor
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>..ctor
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>..ctor
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>..ctor
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>..ctor
+	|-Nullable<LobbySearchFindCallbackInfo>..ctor
+	|-Nullable<SocketIdInternal>..ctor
+	|-Nullable<SubmitSnapshotCallbackInfo>..ctor
+	|-Nullable<KickCompleteCallbackInfo>..ctor
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>..ctor
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>..ctor
+	|-Nullable<DestroySessionCallbackInfo>..ctor
+	|-Nullable<EndSessionCallbackInfo>..ctor
+	|-Nullable<JoinSessionCallbackInfo>..ctor
+	|-Nullable<RejectInviteCallbackInfo>..ctor
+	|-Nullable<SendInviteCallbackInfo>..ctor
+	|-Nullable<SessionSearchFindCallbackInfo>..ctor
+	|-Nullable<StartSessionCallbackInfo>..ctor
+	|-Nullable<Image>..ctor
+	|-Nullable<SteamInventoryRequestPricesResult_t>..ctor
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>..ctor
+	|-Nullable<ReceiveMessageFromPeerOptions>..ctor
+	|-Nullable<ReceiveMessageFromClientOptions>..ctor
+	|-Nullable<LinkAccountOptions>..ctor
+	|-Nullable<LogoutCallbackInfo>..ctor
+	|-Nullable<CreateUserCallbackInfo>..ctor
+	|-Nullable<LinkAccountCallbackInfo>..ctor
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>..ctor
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>..ctor
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>..ctor
+	|-Nullable<UnlinkAccountCallbackInfo>..ctor
+	|-Nullable<QueryEntitlementsCallbackInfo>..ctor
+	|-Nullable<QueryOffersCallbackInfo>..ctor
+	|-Nullable<QueryFriendsCallbackInfo>..ctor
+	|-Nullable<RequestPermissionsCallbackInfo>..ctor
+	|-Nullable<UpdateParentEmailCallbackInfo>..ctor
+	|-Nullable<CreateLobbyCallbackInfo>..ctor
+	|-Nullable<DestroyLobbyCallbackInfo>..ctor
+	|-Nullable<JoinLobbyByIdCallbackInfo>..ctor
+	|-Nullable<JoinLobbyCallbackInfo>..ctor
+	|-Nullable<KickMemberCallbackInfo>..ctor
+	|-Nullable<LeaveLobbyCallbackInfo>..ctor
+	|-Nullable<PromoteMemberCallbackInfo>..ctor
+	|-Nullable<QueryInvitesCallbackInfo>..ctor
+	|-Nullable<RejectInviteCallbackInfo>..ctor
+	|-Nullable<SendInviteCallbackInfo>..ctor
+	|-Nullable<UpdateLobbyCallbackInfo>..ctor
+	|-Nullable<BeginPlayerSessionOptionsAccountId>..ctor
+	|-Nullable<EndPlayerSessionOptions>..ctor
+	|-Nullable<EndPlayerSessionOptionsAccountId>..ctor
+	|-Nullable<OnQueryNATTypeCompleteInfo>..ctor
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>..ctor
+	|-Nullable<DeleteCacheCallbackInfo>..ctor
+	|-Nullable<DeleteFileCallbackInfo>..ctor
+	|-Nullable<DuplicateFileCallbackInfo>..ctor
+	|-Nullable<QueryFileCallbackInfo>..ctor
+	|-Nullable<SetPresenceCallbackInfo>..ctor
+	|-Nullable<AddProgressionOptions>..ctor
+	|-Nullable<DeleteSnapshotCallbackInfo>..ctor
+	|-Nullable<AudioInputDeviceInfo>..ctor
+	|-Nullable<AudioOutputDeviceInfo>..ctor
+	|-Nullable<QueryInvitesCallbackInfo>..ctor
+	|-Nullable<UnregisterPlayersCallbackInfo>..ctor
+	|-Nullable<DeleteCacheCallbackInfo>..ctor
+	|-Nullable<QueryFileCallbackInfo>..ctor
+	|-Nullable<HideFriendsCallbackInfo>..ctor
+	|-Nullable<ShowFriendsCallbackInfo>..ctor
 	|-Nullable<JsonPosition>..ctor
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>..ctor
-	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>..ctor
+	|-Nullable<RegisterEventOptions>..ctor
+	|-Nullable<BeginSessionOptions>..ctor
+	|-Nullable<ProtectMessageOptions>..ctor
+	|-Nullable<UnprotectMessageOptions>..ctor
+	|-Nullable<QueryIdTokenCallbackInfo>..ctor
+	|-Nullable<LoginCallbackInfo>..ctor
+	|-Nullable<SendCustomInviteCallbackInfo>..ctor
+	|-Nullable<CheckoutCallbackInfo>..ctor
+	|-Nullable<QueryOwnershipCallbackInfo>..ctor
+	|-Nullable<QueryOwnershipTokenCallbackInfo>..ctor
+	|-Nullable<RedeemEntitlementsCallbackInfo>..ctor
+	|-Nullable<AcceptInviteCallbackInfo>..ctor
+	|-Nullable<RejectInviteCallbackInfo>..ctor
+	|-Nullable<SendInviteCallbackInfo>..ctor
+	|-Nullable<QueryAgeGateCallbackInfo>..ctor
+	|-Nullable<HardMuteMemberCallbackInfo>..ctor
+	|-Nullable<EnumerateModsCallbackInfo>..ctor
+	|-Nullable<QueryFileListCallbackInfo>..ctor
+	|-Nullable<ReadFileCallbackInfo>..ctor
+	|-Nullable<WriteFileCallbackInfo>..ctor
+	|-Nullable<QueryPresenceCallbackInfo>..ctor
+	|-Nullable<DisconnectedCallbackInfo>..ctor
+	|-Nullable<JoinRoomCallbackInfo>..ctor
+	|-Nullable<LeaveRoomCallbackInfo>..ctor
+	|-Nullable<PlayerSanction>..ctor
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>..ctor
+	|-Nullable<RegisterPlayersCallbackInfo>..ctor
+	|-Nullable<UpdateSessionCallbackInfo>..ctor
+	|-Nullable<IngestStatCompleteCallbackInfo>..ctor
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>..ctor
+	|-Nullable<FileMetadata>..ctor
+	|-Nullable<QueryFileListCallbackInfo>..ctor
+	|-Nullable<ReadFileCallbackInfo>..ctor
+	|-Nullable<OnShowBlockPlayerCallbackInfo>..ctor
+	|-Nullable<OnShowReportPlayerCallbackInfo>..ctor
+	|-Nullable<ExternalUserInfo>..ctor
+	|-Nullable<QueryUserInfoCallbackInfo>..ctor
 	|-Nullable<Option>..ctor
 	|
-	|-Nullable<ServerInfo>..ctor
+	|-Nullable<PlayerAchievementInternal>..ctor
+	|-Nullable<InfoInternal>..ctor
 	|
+	|-Nullable<UnlockedAchievement>..ctor
+	|-Nullable<LogGameRoundStartOptions>..ctor
+	|-Nullable<OnClientActionRequiredCallbackInfo>..ctor
+	|-Nullable<OnMessageToClientCallbackInfo>..ctor
+	|-Nullable<PinGrantInfo>..ctor
+	|-Nullable<FinalizeInviteOptions>..ctor
+	|-Nullable<OnFriendsUpdateInfo>..ctor
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>..ctor
+	|-Nullable<HardMuteMemberOptions>..ctor
+	|-Nullable<JoinLobbyByIdOptions>..ctor
+	|-Nullable<JoinLobbyOptions>..ctor
+	|-Nullable<LobbyInviteReceivedCallbackInfo>..ctor
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>..ctor
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>..ctor
+	|-Nullable<AcceptConnectionOptions>..ctor
+	|-Nullable<ClearPacketQueueOptions>..ctor
+	|-Nullable<CloseConnectionOptions>..ctor
+	|-Nullable<FileTransferProgressCallbackInfo>..ctor
+	|-Nullable<WriteFileDataCallbackInfo>..ctor
+	|-Nullable<BlockParticipantOptions>..ctor
+	|-Nullable<SetRoomSettingOptions>..ctor
+	|-Nullable<QueryJoinRoomTokenOptions>..ctor
+	|-Nullable<AudioInputStateCallbackInfo>..ctor
+	|-Nullable<AudioOutputStateCallbackInfo>..ctor
+	|-Nullable<UpdateParticipantVolumeOptions>..ctor
+	|-Nullable<UpdateReceivingOptions>..ctor
+	|-Nullable<JoinSessionOptions>..ctor
+	|-Nullable<SessionInviteReceivedCallbackInfo>..ctor
+	|-Nullable<FileTransferProgressCallbackInfo>..ctor
+	|
+	|-Nullable<UnlockedAchievementInternal>..ctor
+	|-Nullable<LogPlayerUseAbilityOptions>..ctor
+	|-Nullable<IdTokenInternal>..ctor
+	|-Nullable<IdTokenInternal>..ctor
+	|-Nullable<PermissionStatusInternal>..ctor
+	|-Nullable<LeaderboardUserScoreInternal>..ctor
+	|-Nullable<AttributeInternal>..ctor
+	|-Nullable<ModInfoInternal>..ctor
+	|-Nullable<UserTokenInternal>..ctor
+	|-Nullable<AudioInputDeviceInfoInternal>..ctor
+	|-Nullable<AudioOutputDeviceInfoInternal>..ctor
+	|-Nullable<SessionDetailsAttributeInternal>..ctor
 	|-Nullable<CreateItemResult_t>..ctor
 	|-Nullable<InventoryPurchaseResult>..ctor
 	|-Nullable<SteamInventoryStartPurchaseResult_t>..ctor
 	|-Nullable<ResultPage>..ctor
 	|-Nullable<Ray>..ctor
 	|
-	|-Nullable<Image>..ctor
-	|-Nullable<SteamInventoryRequestPricesResult_t>..ctor
+	|-Nullable<RegisterPeerOptions>..ctor
 	|
+	|-Nullable<UnregisterPeerOptions>..ctor
+	|-Nullable<LogPlayerDespawnOptions>..ctor
+	|-Nullable<UnregisterClientOptions>..ctor
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>..ctor
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>..ctor
+	|-Nullable<LocalRTCOptions>..ctor
+	|-Nullable<PageQuery>..ctor
+	|-Nullable<GetDesktopCrossplayStatusInfo>..ctor
+	|-Nullable<RTCOptions>..ctor
+	|-Nullable<CopyUserTokenByIndexOptions>..ctor
+	|-Nullable<CopySessionHandleByUiEventIdOptions>..ctor
+	|-Nullable<PrePresentOptions>..ctor
+	|-Nullable<ReportKeyEventOptions>..ctor
+	|-Nullable<InventoryResult>..ctor
+	|-Nullable<SteamId>..ctor
+	|-Nullable<DateTime>..ctor
+	|-Nullable<long>..ctor
+	|-Nullable<IntPtr>..ctor
+	|-Nullable<TimeSpan>..ctor
+	|-Nullable<ulong>..ctor
+	|-Nullable<ValueTuple<RgbColor, float>>..ctor
+	|-Nullable<ValueTuple<Int32Enum, float>>..ctor
+	|
+	|-Nullable<LogEventOptions>..ctor
+	|
+	|-Nullable<LogEventParamPair>..ctor
+	|-Nullable<LogEventParamPairParamValue>..ctor
+	|
+	|-Nullable<LogPlayerReviveOptions>..ctor
+	|-Nullable<LogPlayerSpawnOptions>..ctor
+	|-Nullable<Quat>..ctor
+	|-Nullable<QuatInternal>..ctor
+	|-Nullable<SetClientDetailsOptions>..ctor
+	|-Nullable<SetClientNetworkStateOptions>..ctor
+	|-Nullable<AccountFeatureRestrictedInfoInternal>..ctor
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>..ctor
+	|-Nullable<SetPacketQueueSizeOptions>..ctor
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>..ctor
+	|-Nullable<AcknowledgeEventIdOptions>..ctor
 	|-Nullable<SetUserItemVoteResult_t>..ctor
 	|-Nullable<SubmitItemUpdateResult_t>..ctor
 	|-Nullable<DateTimeOffset>..ctor
@@ -3904,18 +4558,141 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Color>..ctor
 	|-Nullable<Rect>..ctor
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>..ctor
+	|-Nullable<LogPlayerTakeDamageOptions>..ctor
 	|
+	|-Nullable<LogPlayerTickOptions>..ctor
+	|-Nullable<UserInfoDataInternal>..ctor
+	|
+	|-Nullable<LogPlayerUseWeaponData>..ctor
+	|-Nullable<QueryLeaderboardDefinitionsOptions>..ctor
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>..ctor
+	|
+	|-Nullable<Vec3f>..ctor
+	|-Nullable<Vec3fInternal>..ctor
+	|-Nullable<PageResult>..ctor
+	|-Nullable<Token>..ctor
+	|-Nullable<Vector3>..ctor
+	|
+	|-Nullable<RegisterClientOptions>..ctor
+	|
+	|-Nullable<Credentials>..ctor
+	|-Nullable<LoginOptions>..ctor
+	|-Nullable<CustomInviteRejectedCallbackInfo>..ctor
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>..ctor
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>..ctor
+	|-Nullable<Entitlement>..ctor
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>..ctor
+	|-Nullable<LobbyInviteRejectedCallbackInfo>..ctor
+	|-Nullable<ModIdentifier>..ctor
+	|-Nullable<OnIncomingConnectionRequestInfo>..ctor
+	|-Nullable<OnIncomingPacketQueueFullInfo>..ctor
+	|-Nullable<OnPeerConnectionInterruptedInfo>..ctor
+	|-Nullable<ReadFileOptions>..ctor
+	|-Nullable<WriteFileOptions>..ctor
+	|-Nullable<JoinGameAcceptedCallbackInfo>..ctor
+	|-Nullable<ParticipantUpdatedCallbackInfo>..ctor
+	|-Nullable<SendAudioOptions>..ctor
+	|-Nullable<SendPlayerBehaviorReportOptions>..ctor
+	|-Nullable<SessionInviteAcceptedCallbackInfo>..ctor
+	|-Nullable<ReadFileOptions>..ctor
+	|
+	|-Nullable<IOSLoginOptions>..ctor
+	|-Nullable<AttributeData>..ctor
+	|-Nullable<CreateLobbyOptions>..ctor
+	|-Nullable<InstallModOptions>..ctor
+	|-Nullable<AttributeData>..ctor
+	|-Nullable<Stat>..ctor
+	|
+	|-Nullable<LinkAccountCallbackInfo>..ctor
+	|-Nullable<InstallModCallbackInfo>..ctor
+	|-Nullable<UninstallModCallbackInfo>..ctor
+	|-Nullable<UpdateModCallbackInfo>..ctor
+	|-Nullable<Info>..ctor
+	|
+	|-Nullable<LoginCallbackInfo>..ctor
+	|-Nullable<VerifyIdTokenCallbackInfo>..ctor
+	|
+	|-Nullable<LoginOptions>..ctor
+	|-Nullable<ExternalAccountInfo>..ctor
+	|-Nullable<UninstallModOptions>..ctor
+	|-Nullable<UpdateModOptions>..ctor
+	|-Nullable<ParticipantStatusChangedCallbackInfo>..ctor
+	|-Nullable<AudioBeforeRenderCallbackInfo>..ctor
+	|-Nullable<CreateSessionModificationOptions>..ctor
+	|-Nullable<SessionDetailsInfo>..ctor
+	|
+	|-Nullable<PinGrantInfoInternal>..ctor
+	|-Nullable<CatalogReleaseInternal>..ctor
+	|-Nullable<FileMetadataInternal>..ctor
+	|-Nullable<PlayerSanctionInternal>..ctor
+	|-Nullable<ActiveSessionInfoInternal>..ctor
+	|-Nullable<SessionDetailsInfoInternal>..ctor
+	|-Nullable<SessionDetailsSettingsInternal>..ctor
+	|-Nullable<StatInternal>..ctor
+	|-Nullable<RenderTargetIdentifier>..ctor
+	|
+	|-Nullable<ExternalAccountInfoInternal>..ctor
+	|-Nullable<EntitlementInternal>..ctor
+	|-Nullable<DefinitionInternal>..ctor
+	|-Nullable<ModIdentifierInternal>..ctor
+	|-Nullable<PacketQueueInfo>..ctor
+	|-Nullable<InitializeThreadAffinity>..ctor
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>..ctor
+	|
+	|-Nullable<CatalogOffer>..ctor
+	|
+	|-Nullable<CatalogOfferInternal>..ctor
+	|
+	|-Nullable<KeyImageInfoInternal>..ctor
+	|-Nullable<LeaderboardRecordInternal>..ctor
+	|-Nullable<AttributeDataInternal>..ctor
+	|-Nullable<AudioBufferInternal>..ctor
+	|-Nullable<AttributeDataInternal>..ctor
+	|-Nullable<FileMetadataInternal>..ctor
+	|-Nullable<ExternalUserInfoInternal>..ctor
 	|-Nullable<Friend.FriendGameInfo>..ctor
 	|
-	|-Nullable<InventoryResult>..ctor
-	|-Nullable<SteamId>..ctor
-	|-Nullable<DateTime>..ctor
-	|-Nullable<long>..ctor
-	|-Nullable<TimeSpan>..ctor
-	|-Nullable<ulong>..ctor
-	|-Nullable<ValueTuple<RgbColor, float>>..ctor
-	|-Nullable<ValueTuple<Int32Enum, float>>..ctor
+	|-Nullable<CreateUserCallbackInfo>..ctor
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>..ctor
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>..ctor
+	|-Nullable<UpdateSendingCallbackInfo>..ctor
+	|-Nullable<UpdateSendingVolumeCallbackInfo>..ctor
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>..ctor
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>..ctor
+	|-Nullable<BlockParticipantCallbackInfo>..ctor
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>..ctor
+	|-Nullable<UpdateReceivingCallbackInfo>..ctor
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>..ctor
+	|
+	|-Nullable<Definition>..ctor
+	|-Nullable<QueryLeaderboardUserScoresOptions>..ctor
+	|-Nullable<SendPacketOptions>..ctor
+	|-Nullable<QueryStatsOptions>..ctor
+	|
+	|-Nullable<AttributeDataValue>..ctor
+	|-Nullable<AttributeDataValue>..ctor
+	|
+	|-Nullable<LobbyDetailsInfoInternal>..ctor
+	|
+	|-Nullable<BeginPlayerSessionOptions>..ctor
+	|-Nullable<FileMetadata>..ctor
+	|
+	|-Nullable<AndroidInitializeOptions>..ctor
+	|
+	|-Nullable<InitializeOptions>..ctor
+	|
+	|-Nullable<Options>..ctor
+	|
+	|-Nullable<WindowsOptions>..ctor
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>..ctor
+	|
+	|-Nullable<ServerInfo>..ctor
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>..ctor
 	|
 	|-Nullable<Item>..ctor
 	|
@@ -3923,16 +4700,9 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<short>..ctor
 	|-Nullable<ushort>..ctor
 	|
-	|-Nullable<DataKey>..ctor
-	|
 	|-Nullable<double>..ctor
 	|
-	|-Nullable<Token>..ctor
-	|-Nullable<Vector3>..ctor
-	|
 	|-Nullable<float>..ctor
-	|
-	|-Nullable<RenderTargetIdentifier>..ctor
 	|
 	|-Nullable<Vector2>..ctor
 	*/
@@ -3940,6 +4710,198 @@ public struct Nullable<T> // TypeDefIndex: 380
 	public bool get_HasValue() { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.get_HasValue
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.get_HasValue
+	|-Nullable<GetAchievementDefinitionCountOptions>.get_HasValue
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.get_HasValue
+	|-Nullable<AddNotifyMessageToPeerOptions>.get_HasValue
+	|-Nullable<AddNotifyMessageToServerOptions>.get_HasValue
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.get_HasValue
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.get_HasValue
+	|-Nullable<EndSessionOptions>.get_HasValue
+	|-Nullable<AddNotifyClientActionRequiredOptions>.get_HasValue
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.get_HasValue
+	|-Nullable<AddNotifyMessageToClientOptions>.get_HasValue
+	|-Nullable<EndSessionOptions>.get_HasValue
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.get_HasValue
+	|-Nullable<CopyUserAuthTokenOptions>.get_HasValue
+	|-Nullable<AddNotifyAuthExpirationOptions>.get_HasValue
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.get_HasValue
+	|-Nullable<DeleteDeviceIdOptions>.get_HasValue
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.get_HasValue
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.get_HasValue
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.get_HasValue
+	|-Nullable<TransactionGetEntitlementsCountOptions>.get_HasValue
+	|-Nullable<AddNotifyFriendsUpdateOptions>.get_HasValue
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.get_HasValue
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.get_HasValue
+	|-Nullable<QueryAgeGateOptions>.get_HasValue
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.get_HasValue
+	|-Nullable<GetLeaderboardRecordCountOptions>.get_HasValue
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.get_HasValue
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.get_HasValue
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.get_HasValue
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.get_HasValue
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.get_HasValue
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.get_HasValue
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.get_HasValue
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.get_HasValue
+	|-Nullable<LobbyDetailsCopyInfoOptions>.get_HasValue
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.get_HasValue
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.get_HasValue
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.get_HasValue
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.get_HasValue
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.get_HasValue
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.get_HasValue
+	|-Nullable<GetNATTypeOptions>.get_HasValue
+	|-Nullable<GetPacketQueueInfoOptions>.get_HasValue
+	|-Nullable<GetPortRangeOptions>.get_HasValue
+	|-Nullable<GetRelayControlOptions>.get_HasValue
+	|-Nullable<QueryNATTypeOptions>.get_HasValue
+	|-Nullable<GetDesktopCrossplayStatusOptions>.get_HasValue
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.get_HasValue
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.get_HasValue
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.get_HasValue
+	|-Nullable<GetAudioInputDevicesCountOptions>.get_HasValue
+	|-Nullable<GetAudioOutputDevicesCountOptions>.get_HasValue
+	|-Nullable<ActiveSessionCopyInfoOptions>.get_HasValue
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.get_HasValue
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.get_HasValue
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.get_HasValue
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.get_HasValue
+	|-Nullable<SessionDetailsCopyInfoOptions>.get_HasValue
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.get_HasValue
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.get_HasValue
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.get_HasValue
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.get_HasValue
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.get_HasValue
+	|-Nullable<GetToggleFriendsKeyOptions>.get_HasValue
+	|-Nullable<IsSocialOverlayPausedOptions>.get_HasValue
+	|-Nullable<PauseSocialOverlayOptions>.get_HasValue
+	|-Nullable<FrameType>.get_HasValue
+	|-Nullable<bool>.get_HasValue
+	|-Nullable<byte>.get_HasValue
+	|-Nullable<ByteEnum>.get_HasValue
+	|-Nullable<sbyte>.get_HasValue
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.get_HasValue
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.get_HasValue
+	|-Nullable<GetPlayerAchievementCountOptions>.get_HasValue
+	|-Nullable<GetUnlockedAchievementCountOptions>.get_HasValue
+	|-Nullable<AddExternalIntegrityCatalogOptions>.get_HasValue
+	|-Nullable<SetGameSessionIdOptions>.get_HasValue
+	|-Nullable<AccountFeatureRestrictedInfo>.get_HasValue
+	|-Nullable<CopyIdTokenOptions>.get_HasValue
+	|-Nullable<DeletePersistentAuthOptions>.get_HasValue
+	|-Nullable<LogoutOptions>.get_HasValue
+	|-Nullable<CopyIdTokenOptions>.get_HasValue
+	|-Nullable<CopyProductUserInfoOptions>.get_HasValue
+	|-Nullable<CreateDeviceIdOptions>.get_HasValue
+	|-Nullable<CreateUserOptions>.get_HasValue
+	|-Nullable<GetProductUserExternalAccountCountOptions>.get_HasValue
+	|-Nullable<UnlinkAccountOptions>.get_HasValue
+	|-Nullable<UserLoginInfo>.get_HasValue
+	|-Nullable<CheckoutEntry>.get_HasValue
+	|-Nullable<GetEntitlementsCountOptions>.get_HasValue
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.get_HasValue
+	|-Nullable<GetOfferCountOptions>.get_HasValue
+	|-Nullable<GetTransactionCountOptions>.get_HasValue
+	|-Nullable<GetFriendsCountOptions>.get_HasValue
+	|-Nullable<QueryFriendsOptions>.get_HasValue
+	|-Nullable<GetPermissionsCountOptions>.get_HasValue
+	|-Nullable<QueryPermissionsOptions>.get_HasValue
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.get_HasValue
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.get_HasValue
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.get_HasValue
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.get_HasValue
+	|-Nullable<GetInviteCountOptions>.get_HasValue
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.get_HasValue
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.get_HasValue
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.get_HasValue
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.get_HasValue
+	|-Nullable<LobbyModificationSetBucketIdOptions>.get_HasValue
+	|-Nullable<LobbySearchFindOptions>.get_HasValue
+	|-Nullable<LobbySearchSetLobbyIdOptions>.get_HasValue
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.get_HasValue
+	|-Nullable<QueryInvitesOptions>.get_HasValue
+	|-Nullable<UpdateLobbyOptions>.get_HasValue
+	|-Nullable<SocketId>.get_HasValue
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.get_HasValue
+	|-Nullable<DeleteCacheOptions>.get_HasValue
+	|-Nullable<GetFileMetadataCountOptions>.get_HasValue
+	|-Nullable<QueryFileListOptions>.get_HasValue
+	|-Nullable<CreatePresenceModificationOptions>.get_HasValue
+	|-Nullable<PresenceModificationDataRecordId>.get_HasValue
+	|-Nullable<PresenceModificationDeleteDataOptions>.get_HasValue
+	|-Nullable<PresenceModificationSetDataOptions>.get_HasValue
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.get_HasValue
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.get_HasValue
+	|-Nullable<BeginSnapshotOptions>.get_HasValue
+	|-Nullable<DeleteSnapshotOptions>.get_HasValue
+	|-Nullable<AudioDevicesChangedCallbackInfo>.get_HasValue
+	|-Nullable<RegisterPlatformAudioUserOptions>.get_HasValue
+	|-Nullable<UnregisterPlatformAudioUserOptions>.get_HasValue
+	|-Nullable<GetPlayerSanctionCountOptions>.get_HasValue
+	|-Nullable<CopyActiveSessionHandleOptions>.get_HasValue
+	|-Nullable<CopySessionHandleByInviteIdOptions>.get_HasValue
+	|-Nullable<CopySessionHandleForPresenceOptions>.get_HasValue
+	|-Nullable<DestroySessionOptions>.get_HasValue
+	|-Nullable<DumpSessionStateOptions>.get_HasValue
+	|-Nullable<EndSessionOptions>.get_HasValue
+	|-Nullable<GetInviteCountOptions>.get_HasValue
+	|-Nullable<QueryInvitesOptions>.get_HasValue
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.get_HasValue
+	|-Nullable<SessionModificationRemoveAttributeOptions>.get_HasValue
+	|-Nullable<SessionModificationSetBucketIdOptions>.get_HasValue
+	|-Nullable<SessionModificationSetHostAddressOptions>.get_HasValue
+	|-Nullable<SessionSearchFindOptions>.get_HasValue
+	|-Nullable<SessionSearchSetSessionIdOptions>.get_HasValue
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.get_HasValue
+	|-Nullable<StartSessionOptions>.get_HasValue
+	|-Nullable<UpdateSessionModificationOptions>.get_HasValue
+	|-Nullable<UpdateSessionOptions>.get_HasValue
+	|-Nullable<GetStatCountOptions>.get_HasValue
+	|-Nullable<DeleteCacheOptions>.get_HasValue
+	|-Nullable<GetFileMetadataCountOptions>.get_HasValue
+	|-Nullable<GetFriendsExclusiveInputOptions>.get_HasValue
+	|-Nullable<GetFriendsVisibleOptions>.get_HasValue
+	|-Nullable<HideFriendsOptions>.get_HasValue
+	|-Nullable<ShowFriendsOptions>.get_HasValue
+	|-Nullable<DataKey>.get_HasValue
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.get_HasValue
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.get_HasValue
+	|-Nullable<GetProtectMessageOutputLengthOptions>.get_HasValue
+	|-Nullable<PollStatusOptions>.get_HasValue
+	|-Nullable<LogGameRoundEndOptions>.get_HasValue
+	|-Nullable<GetProtectMessageOutputLengthOptions>.get_HasValue
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.get_HasValue
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.get_HasValue
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.get_HasValue
+	|-Nullable<CreateLobbySearchOptions>.get_HasValue
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.get_HasValue
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.get_HasValue
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.get_HasValue
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.get_HasValue
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.get_HasValue
+	|-Nullable<LobbySearchSetMaxResultsOptions>.get_HasValue
+	|-Nullable<SetPortRangeOptions>.get_HasValue
+	|-Nullable<SetRelayControlOptions>.get_HasValue
+	|-Nullable<PresenceModificationSetStatusOptions>.get_HasValue
+	|-Nullable<EndSnapshotOptions>.get_HasValue
+	|-Nullable<SubmitSnapshotOptions>.get_HasValue
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.get_HasValue
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.get_HasValue
+	|-Nullable<Result>.get_HasValue
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.get_HasValue
+	|-Nullable<CreateSessionSearchOptions>.get_HasValue
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.get_HasValue
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.get_HasValue
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.get_HasValue
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.get_HasValue
+	|-Nullable<SessionSearchSetMaxResultsOptions>.get_HasValue
+	|-Nullable<SetDisplayPreferenceOptions>.get_HasValue
+	|-Nullable<SetToggleFriendsKeyOptions>.get_HasValue
 	|-Nullable<FileStorage.Type>.get_HasValue
 	|-Nullable<InstrumentKeyController.AnimationSlot>.get_HasValue
 	|-Nullable<MapLayer>.get_HasValue
@@ -3975,32 +4937,429 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<PostProcessLayer.ScalingMode>.get_HasValue
 	|-Nullable<VehicleEngineController.EngineState<TrainEngine>>.get_HasValue
 	|
-	|-Nullable<FrameType>.get_HasValue
-	|-Nullable<bool>.get_HasValue
-	|-Nullable<byte>.get_HasValue
-	|-Nullable<ByteEnum>.get_HasValue
-	|-Nullable<sbyte>.get_HasValue
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.get_HasValue
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.get_HasValue
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.get_HasValue
+	|-Nullable<QueryDefinitionsOptions>.get_HasValue
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.get_HasValue
+	|-Nullable<OnMessageToServerCallbackInfo>.get_HasValue
+	|-Nullable<ProtectMessageOptions>.get_HasValue
+	|-Nullable<UnprotectMessageOptions>.get_HasValue
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.get_HasValue
+	|-Nullable<LoginStatusChangedCallbackInfo>.get_HasValue
+	|-Nullable<VerifyIdTokenOptions>.get_HasValue
+	|-Nullable<GetExternalAccountMappingsOptions>.get_HasValue
+	|-Nullable<GetProductUserIdMappingOptions>.get_HasValue
+	|-Nullable<LoginStatusChangedCallbackInfo>.get_HasValue
+	|-Nullable<QueryExternalAccountMappingsOptions>.get_HasValue
+	|-Nullable<QueryProductUserIdMappingsOptions>.get_HasValue
+	|-Nullable<TransferDeviceIdAccountOptions>.get_HasValue
+	|-Nullable<VerifyIdTokenOptions>.get_HasValue
+	|-Nullable<CatalogRelease>.get_HasValue
+	|-Nullable<CheckoutOptions>.get_HasValue
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.get_HasValue
+	|-Nullable<CopyItemImageInfoByIndexOptions>.get_HasValue
+	|-Nullable<CopyItemReleaseByIndexOptions>.get_HasValue
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.get_HasValue
+	|-Nullable<CopyOfferItemByIndexOptions>.get_HasValue
+	|-Nullable<KeyImageInfo>.get_HasValue
+	|-Nullable<QueryEntitlementsOptions>.get_HasValue
+	|-Nullable<QueryOwnershipOptions>.get_HasValue
+	|-Nullable<QueryOwnershipTokenOptions>.get_HasValue
+	|-Nullable<Options>.get_HasValue
+	|-Nullable<CreateUserOptions>.get_HasValue
+	|-Nullable<LeaderboardRecord>.get_HasValue
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.get_HasValue
+	|-Nullable<KickMemberOptions>.get_HasValue
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.get_HasValue
+	|-Nullable<PromoteMemberOptions>.get_HasValue
+	|-Nullable<SendInviteOptions>.get_HasValue
+	|-Nullable<LogMessage>.get_HasValue
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.get_HasValue
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.get_HasValue
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.get_HasValue
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.get_HasValue
+	|-Nullable<CloseConnectionsOptions>.get_HasValue
+	|-Nullable<DuplicateFileOptions>.get_HasValue
+	|-Nullable<PresenceChangedCallbackInfo>.get_HasValue
+	|-Nullable<SetParticipantHardMuteOptions>.get_HasValue
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.get_HasValue
+	|-Nullable<SetAudioInputSettingsOptions>.get_HasValue
+	|-Nullable<SetAudioOutputSettingsOptions>.get_HasValue
+	|-Nullable<UpdateReceivingVolumeOptions>.get_HasValue
+	|-Nullable<UpdateSendingOptions>.get_HasValue
+	|-Nullable<UpdateSendingVolumeOptions>.get_HasValue
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.get_HasValue
+	|-Nullable<SendInviteOptions>.get_HasValue
+	|-Nullable<SessionDetailsSettings>.get_HasValue
+	|-Nullable<IngestStatOptions>.get_HasValue
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.get_HasValue
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.get_HasValue
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.get_HasValue
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.get_HasValue
 	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.get_HasValue
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.get_HasValue
+	|-Nullable<PlayerStatInfo>.get_HasValue
+	|-Nullable<QueryPlayerAchievementsOptions>.get_HasValue
+	|-Nullable<StatThresholds>.get_HasValue
+	|-Nullable<UnlockAchievementsOptions>.get_HasValue
+	|-Nullable<BeginSessionOptions>.get_HasValue
+	|-Nullable<ReceiveMessageFromServerOptions>.get_HasValue
+	|-Nullable<RegisterEventParamDef>.get_HasValue
+	|-Nullable<IdToken>.get_HasValue
+	|-Nullable<QueryIdTokenOptions>.get_HasValue
+	|-Nullable<AuthExpirationCallbackInfo>.get_HasValue
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.get_HasValue
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.get_HasValue
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.get_HasValue
+	|-Nullable<Credentials>.get_HasValue
+	|-Nullable<IdToken>.get_HasValue
+	|-Nullable<LinkAccountOptions>.get_HasValue
+	|-Nullable<SendCustomInviteOptions>.get_HasValue
+	|-Nullable<SetCustomInviteOptions>.get_HasValue
+	|-Nullable<CopyEntitlementByIdOptions>.get_HasValue
+	|-Nullable<CopyEntitlementByIndexOptions>.get_HasValue
+	|-Nullable<CopyItemByIdOptions>.get_HasValue
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.get_HasValue
+	|-Nullable<CopyOfferByIdOptions>.get_HasValue
+	|-Nullable<CopyOfferByIndexOptions>.get_HasValue
+	|-Nullable<CopyTransactionByIdOptions>.get_HasValue
+	|-Nullable<CopyTransactionByIndexOptions>.get_HasValue
+	|-Nullable<GetEntitlementsByNameCountOptions>.get_HasValue
+	|-Nullable<GetItemImageInfoCountOptions>.get_HasValue
+	|-Nullable<GetItemReleaseCountOptions>.get_HasValue
+	|-Nullable<GetOfferImageInfoCountOptions>.get_HasValue
+	|-Nullable<GetOfferItemCountOptions>.get_HasValue
+	|-Nullable<ItemOwnership>.get_HasValue
+	|-Nullable<QueryOffersOptions>.get_HasValue
+	|-Nullable<RedeemEntitlementsOptions>.get_HasValue
+	|-Nullable<AcceptInviteOptions>.get_HasValue
+	|-Nullable<GetFriendAtIndexOptions>.get_HasValue
+	|-Nullable<GetStatusOptions>.get_HasValue
+	|-Nullable<RejectInviteOptions>.get_HasValue
+	|-Nullable<SendInviteOptions>.get_HasValue
+	|-Nullable<SteamOptions>.get_HasValue
+	|-Nullable<CopyPermissionByIndexOptions>.get_HasValue
+	|-Nullable<GetPermissionByKeyOptions>.get_HasValue
+	|-Nullable<PermissionStatus>.get_HasValue
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.get_HasValue
+	|-Nullable<RequestPermissionsOptions>.get_HasValue
+	|-Nullable<UpdateParentEmailOptions>.get_HasValue
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.get_HasValue
+	|-Nullable<LeaderboardUserScore>.get_HasValue
+	|-Nullable<QueryLeaderboardRanksOptions>.get_HasValue
+	|-Nullable<UserScoresQueryStatInfo>.get_HasValue
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.get_HasValue
+	|-Nullable<CopyLobbyDetailsHandleOptions>.get_HasValue
+	|-Nullable<DestroyLobbyOptions>.get_HasValue
+	|-Nullable<GetInviteIdByIndexOptions>.get_HasValue
+	|-Nullable<GetRTCRoomNameOptions>.get_HasValue
+	|-Nullable<IsRTCRoomConnectedOptions>.get_HasValue
+	|-Nullable<LeaveLobbyOptions>.get_HasValue
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.get_HasValue
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.get_HasValue
+	|-Nullable<LobbySearchRemoveParameterOptions>.get_HasValue
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.get_HasValue
+	|-Nullable<RejectInviteOptions>.get_HasValue
+	|-Nullable<UpdateLobbyModificationOptions>.get_HasValue
+	|-Nullable<CopyModInfoOptions>.get_HasValue
+	|-Nullable<EnumerateModsOptions>.get_HasValue
+	|-Nullable<ModInfo>.get_HasValue
+	|-Nullable<GetNextReceivedPacketSizeOptions>.get_HasValue
+	|-Nullable<ReceivePacketOptions>.get_HasValue
+	|-Nullable<ClientCredentials>.get_HasValue
+	|-Nullable<WindowsRTCOptions>.get_HasValue
+	|-Nullable<CopyFileMetadataAtIndexOptions>.get_HasValue
+	|-Nullable<CopyFileMetadataByFilenameOptions>.get_HasValue
+	|-Nullable<DeleteFileOptions>.get_HasValue
+	|-Nullable<QueryFileOptions>.get_HasValue
+	|-Nullable<CopyPresenceOptions>.get_HasValue
+	|-Nullable<DataRecord>.get_HasValue
+	|-Nullable<GetJoinInfoOptions>.get_HasValue
+	|-Nullable<HasPresenceOptions>.get_HasValue
+	|-Nullable<QueryPresenceOptions>.get_HasValue
+	|-Nullable<SetPresenceOptions>.get_HasValue
+	|-Nullable<AddNotifyDisconnectedOptions>.get_HasValue
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.get_HasValue
+	|-Nullable<LeaveRoomOptions>.get_HasValue
+	|-Nullable<ParticipantMetadata>.get_HasValue
+	|-Nullable<SetSettingOptions>.get_HasValue
+	|-Nullable<CopyUserTokenByUserIdOptions>.get_HasValue
+	|-Nullable<KickOptions>.get_HasValue
+	|-Nullable<UserToken>.get_HasValue
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.get_HasValue
+	|-Nullable<AddNotifyAudioInputStateOptions>.get_HasValue
+	|-Nullable<AddNotifyAudioOutputStateOptions>.get_HasValue
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.get_HasValue
+	|-Nullable<AudioBuffer>.get_HasValue
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.get_HasValue
+	|-Nullable<QueryActivePlayerSanctionsOptions>.get_HasValue
+	|-Nullable<GetInviteIdByIndexOptions>.get_HasValue
+	|-Nullable<IsUserInSessionOptions>.get_HasValue
+	|-Nullable<RegisterPlayersOptions>.get_HasValue
+	|-Nullable<RejectInviteOptions>.get_HasValue
+	|-Nullable<SessionSearchRemoveParameterOptions>.get_HasValue
+	|-Nullable<UnregisterPlayersOptions>.get_HasValue
+	|-Nullable<CopyStatByIndexOptions>.get_HasValue
+	|-Nullable<CopyStatByNameOptions>.get_HasValue
+	|-Nullable<IngestData>.get_HasValue
+	|-Nullable<CopyFileMetadataAtIndexOptions>.get_HasValue
+	|-Nullable<CopyFileMetadataByFilenameOptions>.get_HasValue
+	|-Nullable<QueryFileListOptions>.get_HasValue
+	|-Nullable<QueryFileOptions>.get_HasValue
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.get_HasValue
+	|-Nullable<ShowBlockPlayerOptions>.get_HasValue
+	|-Nullable<ShowReportPlayerOptions>.get_HasValue
+	|-Nullable<CopyUserInfoOptions>.get_HasValue
+	|-Nullable<GetExternalUserInfoCountOptions>.get_HasValue
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.get_HasValue
+	|-Nullable<QueryUserInfoOptions>.get_HasValue
 	|-Nullable<ImageStorageEntity.ImageRequest>.get_HasValue
 	|-Nullable<StreamingContext>.get_HasValue
 	|
+	|-Nullable<Definition>.get_HasValue
+	|-Nullable<VerifyUserAuthOptions>.get_HasValue
+	|-Nullable<ActiveSessionInfo>.get_HasValue
+	|
+	|-Nullable<DefinitionInternal>.get_HasValue
+	|
+	|-Nullable<DefinitionV2>.get_HasValue
+	|-Nullable<PlayerAchievement>.get_HasValue
+	|-Nullable<Token>.get_HasValue
+	|-Nullable<CatalogItem>.get_HasValue
+	|-Nullable<Attribute>.get_HasValue
+	|-Nullable<LobbyModificationAddAttributeOptions>.get_HasValue
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.get_HasValue
+	|-Nullable<LobbySearchSetParameterOptions>.get_HasValue
+	|-Nullable<SessionDetailsAttribute>.get_HasValue
+	|-Nullable<SessionModificationAddAttributeOptions>.get_HasValue
+	|-Nullable<SessionSearchSetParameterOptions>.get_HasValue
+	|
+	|-Nullable<DefinitionV2Internal>.get_HasValue
+	|-Nullable<TokenInternal>.get_HasValue
+	|-Nullable<CatalogItemInternal>.get_HasValue
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.get_HasValue
+	|-Nullable<IOSCredentials>.get_HasValue
+	|-Nullable<LobbyDetailsInfo>.get_HasValue
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.get_HasValue
+	|-Nullable<OnPeerConnectionEstablishedInfo>.get_HasValue
+	|-Nullable<OnRemoteConnectionClosedInfo>.get_HasValue
+	|-Nullable<ReadFileDataCallbackInfo>.get_HasValue
+	|-Nullable<JoinRoomOptions>.get_HasValue
+	|-Nullable<AudioBeforeSendCallbackInfo>.get_HasValue
+	|-Nullable<ReadFileDataCallbackInfo>.get_HasValue
+	|-Nullable<UserInfoData>.get_HasValue
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.get_HasValue
+	|-Nullable<DeletePersistentAuthCallbackInfo>.get_HasValue
+	|-Nullable<VerifyUserAuthCallbackInfo>.get_HasValue
+	|-Nullable<CreateDeviceIdCallbackInfo>.get_HasValue
+	|-Nullable<DeleteDeviceIdCallbackInfo>.get_HasValue
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.get_HasValue
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.get_HasValue
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.get_HasValue
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.get_HasValue
+	|-Nullable<LobbySearchFindCallbackInfo>.get_HasValue
+	|-Nullable<SocketIdInternal>.get_HasValue
+	|-Nullable<SubmitSnapshotCallbackInfo>.get_HasValue
+	|-Nullable<KickCompleteCallbackInfo>.get_HasValue
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.get_HasValue
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.get_HasValue
+	|-Nullable<DestroySessionCallbackInfo>.get_HasValue
+	|-Nullable<EndSessionCallbackInfo>.get_HasValue
+	|-Nullable<JoinSessionCallbackInfo>.get_HasValue
+	|-Nullable<RejectInviteCallbackInfo>.get_HasValue
+	|-Nullable<SendInviteCallbackInfo>.get_HasValue
+	|-Nullable<SessionSearchFindCallbackInfo>.get_HasValue
+	|-Nullable<StartSessionCallbackInfo>.get_HasValue
+	|-Nullable<Image>.get_HasValue
+	|-Nullable<SteamInventoryRequestPricesResult_t>.get_HasValue
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.get_HasValue
+	|-Nullable<ReceiveMessageFromPeerOptions>.get_HasValue
+	|-Nullable<ReceiveMessageFromClientOptions>.get_HasValue
+	|-Nullable<LinkAccountOptions>.get_HasValue
+	|-Nullable<LogoutCallbackInfo>.get_HasValue
+	|-Nullable<CreateUserCallbackInfo>.get_HasValue
+	|-Nullable<LinkAccountCallbackInfo>.get_HasValue
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.get_HasValue
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.get_HasValue
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.get_HasValue
+	|-Nullable<UnlinkAccountCallbackInfo>.get_HasValue
+	|-Nullable<QueryEntitlementsCallbackInfo>.get_HasValue
+	|-Nullable<QueryOffersCallbackInfo>.get_HasValue
+	|-Nullable<QueryFriendsCallbackInfo>.get_HasValue
+	|-Nullable<RequestPermissionsCallbackInfo>.get_HasValue
+	|-Nullable<UpdateParentEmailCallbackInfo>.get_HasValue
+	|-Nullable<CreateLobbyCallbackInfo>.get_HasValue
+	|-Nullable<DestroyLobbyCallbackInfo>.get_HasValue
+	|-Nullable<JoinLobbyByIdCallbackInfo>.get_HasValue
+	|-Nullable<JoinLobbyCallbackInfo>.get_HasValue
+	|-Nullable<KickMemberCallbackInfo>.get_HasValue
+	|-Nullable<LeaveLobbyCallbackInfo>.get_HasValue
+	|-Nullable<PromoteMemberCallbackInfo>.get_HasValue
+	|-Nullable<QueryInvitesCallbackInfo>.get_HasValue
+	|-Nullable<RejectInviteCallbackInfo>.get_HasValue
+	|-Nullable<SendInviteCallbackInfo>.get_HasValue
+	|-Nullable<UpdateLobbyCallbackInfo>.get_HasValue
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.get_HasValue
+	|-Nullable<EndPlayerSessionOptions>.get_HasValue
+	|-Nullable<EndPlayerSessionOptionsAccountId>.get_HasValue
+	|-Nullable<OnQueryNATTypeCompleteInfo>.get_HasValue
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.get_HasValue
+	|-Nullable<DeleteCacheCallbackInfo>.get_HasValue
+	|-Nullable<DeleteFileCallbackInfo>.get_HasValue
+	|-Nullable<DuplicateFileCallbackInfo>.get_HasValue
+	|-Nullable<QueryFileCallbackInfo>.get_HasValue
+	|-Nullable<SetPresenceCallbackInfo>.get_HasValue
+	|-Nullable<AddProgressionOptions>.get_HasValue
+	|-Nullable<DeleteSnapshotCallbackInfo>.get_HasValue
+	|-Nullable<AudioInputDeviceInfo>.get_HasValue
+	|-Nullable<AudioOutputDeviceInfo>.get_HasValue
+	|-Nullable<QueryInvitesCallbackInfo>.get_HasValue
+	|-Nullable<UnregisterPlayersCallbackInfo>.get_HasValue
+	|-Nullable<DeleteCacheCallbackInfo>.get_HasValue
+	|-Nullable<QueryFileCallbackInfo>.get_HasValue
+	|-Nullable<HideFriendsCallbackInfo>.get_HasValue
+	|-Nullable<ShowFriendsCallbackInfo>.get_HasValue
 	|-Nullable<JsonPosition>.get_HasValue
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.get_HasValue
-	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.get_HasValue
+	|-Nullable<RegisterEventOptions>.get_HasValue
+	|-Nullable<BeginSessionOptions>.get_HasValue
+	|-Nullable<ProtectMessageOptions>.get_HasValue
+	|-Nullable<UnprotectMessageOptions>.get_HasValue
+	|-Nullable<QueryIdTokenCallbackInfo>.get_HasValue
+	|-Nullable<LoginCallbackInfo>.get_HasValue
+	|-Nullable<SendCustomInviteCallbackInfo>.get_HasValue
+	|-Nullable<CheckoutCallbackInfo>.get_HasValue
+	|-Nullable<QueryOwnershipCallbackInfo>.get_HasValue
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.get_HasValue
+	|-Nullable<RedeemEntitlementsCallbackInfo>.get_HasValue
+	|-Nullable<AcceptInviteCallbackInfo>.get_HasValue
+	|-Nullable<RejectInviteCallbackInfo>.get_HasValue
+	|-Nullable<SendInviteCallbackInfo>.get_HasValue
+	|-Nullable<QueryAgeGateCallbackInfo>.get_HasValue
+	|-Nullable<HardMuteMemberCallbackInfo>.get_HasValue
+	|-Nullable<EnumerateModsCallbackInfo>.get_HasValue
+	|-Nullable<QueryFileListCallbackInfo>.get_HasValue
+	|-Nullable<ReadFileCallbackInfo>.get_HasValue
+	|-Nullable<WriteFileCallbackInfo>.get_HasValue
+	|-Nullable<QueryPresenceCallbackInfo>.get_HasValue
+	|-Nullable<DisconnectedCallbackInfo>.get_HasValue
+	|-Nullable<JoinRoomCallbackInfo>.get_HasValue
+	|-Nullable<LeaveRoomCallbackInfo>.get_HasValue
+	|-Nullable<PlayerSanction>.get_HasValue
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.get_HasValue
+	|-Nullable<RegisterPlayersCallbackInfo>.get_HasValue
+	|-Nullable<UpdateSessionCallbackInfo>.get_HasValue
+	|-Nullable<IngestStatCompleteCallbackInfo>.get_HasValue
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.get_HasValue
+	|-Nullable<FileMetadata>.get_HasValue
+	|-Nullable<QueryFileListCallbackInfo>.get_HasValue
+	|-Nullable<ReadFileCallbackInfo>.get_HasValue
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.get_HasValue
+	|-Nullable<OnShowReportPlayerCallbackInfo>.get_HasValue
+	|-Nullable<ExternalUserInfo>.get_HasValue
+	|-Nullable<QueryUserInfoCallbackInfo>.get_HasValue
 	|-Nullable<Option>.get_HasValue
 	|
-	|-Nullable<ServerInfo>.get_HasValue
+	|-Nullable<PlayerAchievementInternal>.get_HasValue
+	|-Nullable<InfoInternal>.get_HasValue
 	|
+	|-Nullable<UnlockedAchievement>.get_HasValue
+	|-Nullable<LogGameRoundStartOptions>.get_HasValue
+	|-Nullable<OnClientActionRequiredCallbackInfo>.get_HasValue
+	|-Nullable<OnMessageToClientCallbackInfo>.get_HasValue
+	|-Nullable<PinGrantInfo>.get_HasValue
+	|-Nullable<FinalizeInviteOptions>.get_HasValue
+	|-Nullable<OnFriendsUpdateInfo>.get_HasValue
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.get_HasValue
+	|-Nullable<HardMuteMemberOptions>.get_HasValue
+	|-Nullable<JoinLobbyByIdOptions>.get_HasValue
+	|-Nullable<JoinLobbyOptions>.get_HasValue
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.get_HasValue
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.get_HasValue
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.get_HasValue
+	|-Nullable<AcceptConnectionOptions>.get_HasValue
+	|-Nullable<ClearPacketQueueOptions>.get_HasValue
+	|-Nullable<CloseConnectionOptions>.get_HasValue
+	|-Nullable<FileTransferProgressCallbackInfo>.get_HasValue
+	|-Nullable<WriteFileDataCallbackInfo>.get_HasValue
+	|-Nullable<BlockParticipantOptions>.get_HasValue
+	|-Nullable<SetRoomSettingOptions>.get_HasValue
+	|-Nullable<QueryJoinRoomTokenOptions>.get_HasValue
+	|-Nullable<AudioInputStateCallbackInfo>.get_HasValue
+	|-Nullable<AudioOutputStateCallbackInfo>.get_HasValue
+	|-Nullable<UpdateParticipantVolumeOptions>.get_HasValue
+	|-Nullable<UpdateReceivingOptions>.get_HasValue
+	|-Nullable<JoinSessionOptions>.get_HasValue
+	|-Nullable<SessionInviteReceivedCallbackInfo>.get_HasValue
+	|-Nullable<FileTransferProgressCallbackInfo>.get_HasValue
+	|
+	|-Nullable<UnlockedAchievementInternal>.get_HasValue
+	|-Nullable<LogPlayerUseAbilityOptions>.get_HasValue
+	|-Nullable<IdTokenInternal>.get_HasValue
+	|-Nullable<IdTokenInternal>.get_HasValue
+	|-Nullable<PermissionStatusInternal>.get_HasValue
+	|-Nullable<LeaderboardUserScoreInternal>.get_HasValue
+	|-Nullable<AttributeInternal>.get_HasValue
+	|-Nullable<ModInfoInternal>.get_HasValue
+	|-Nullable<UserTokenInternal>.get_HasValue
+	|-Nullable<AudioInputDeviceInfoInternal>.get_HasValue
+	|-Nullable<AudioOutputDeviceInfoInternal>.get_HasValue
+	|-Nullable<SessionDetailsAttributeInternal>.get_HasValue
 	|-Nullable<CreateItemResult_t>.get_HasValue
 	|-Nullable<InventoryPurchaseResult>.get_HasValue
 	|-Nullable<SteamInventoryStartPurchaseResult_t>.get_HasValue
 	|-Nullable<ResultPage>.get_HasValue
 	|-Nullable<Ray>.get_HasValue
 	|
-	|-Nullable<Image>.get_HasValue
-	|-Nullable<SteamInventoryRequestPricesResult_t>.get_HasValue
+	|-Nullable<RegisterPeerOptions>.get_HasValue
 	|
+	|-Nullable<UnregisterPeerOptions>.get_HasValue
+	|-Nullable<LogPlayerDespawnOptions>.get_HasValue
+	|-Nullable<UnregisterClientOptions>.get_HasValue
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.get_HasValue
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.get_HasValue
+	|-Nullable<LocalRTCOptions>.get_HasValue
+	|-Nullable<PageQuery>.get_HasValue
+	|-Nullable<GetDesktopCrossplayStatusInfo>.get_HasValue
+	|-Nullable<RTCOptions>.get_HasValue
+	|-Nullable<CopyUserTokenByIndexOptions>.get_HasValue
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.get_HasValue
+	|-Nullable<PrePresentOptions>.get_HasValue
+	|-Nullable<ReportKeyEventOptions>.get_HasValue
+	|-Nullable<InventoryResult>.get_HasValue
+	|-Nullable<SteamId>.get_HasValue
+	|-Nullable<DateTime>.get_HasValue
+	|-Nullable<double>.get_HasValue
+	|-Nullable<long>.get_HasValue
+	|-Nullable<IntPtr>.get_HasValue
+	|-Nullable<TimeSpan>.get_HasValue
+	|-Nullable<ulong>.get_HasValue
+	|-Nullable<ValueTuple<RgbColor, float>>.get_HasValue
+	|-Nullable<ValueTuple<Int32Enum, float>>.get_HasValue
+	|-Nullable<Vector2>.get_HasValue
+	|
+	|-Nullable<LogEventOptions>.get_HasValue
+	|
+	|-Nullable<LogEventParamPair>.get_HasValue
+	|-Nullable<LogEventParamPairParamValue>.get_HasValue
+	|
+	|-Nullable<LogPlayerReviveOptions>.get_HasValue
+	|-Nullable<LogPlayerSpawnOptions>.get_HasValue
+	|-Nullable<Quat>.get_HasValue
+	|-Nullable<QuatInternal>.get_HasValue
+	|-Nullable<SetClientDetailsOptions>.get_HasValue
+	|-Nullable<SetClientNetworkStateOptions>.get_HasValue
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.get_HasValue
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.get_HasValue
+	|-Nullable<SetPacketQueueSizeOptions>.get_HasValue
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.get_HasValue
+	|-Nullable<AcknowledgeEventIdOptions>.get_HasValue
 	|-Nullable<SetUserItemVoteResult_t>.get_HasValue
 	|-Nullable<SubmitItemUpdateResult_t>.get_HasValue
 	|-Nullable<DateTimeOffset>.get_HasValue
@@ -4009,44 +5368,1273 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Color>.get_HasValue
 	|-Nullable<Rect>.get_HasValue
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>.get_HasValue
+	|-Nullable<LogPlayerTakeDamageOptions>.get_HasValue
 	|
+	|-Nullable<LogPlayerTickOptions>.get_HasValue
+	|-Nullable<UserInfoDataInternal>.get_HasValue
+	|
+	|-Nullable<LogPlayerUseWeaponData>.get_HasValue
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.get_HasValue
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.get_HasValue
+	|
+	|-Nullable<Vec3f>.get_HasValue
+	|-Nullable<Vec3fInternal>.get_HasValue
+	|-Nullable<PageResult>.get_HasValue
+	|-Nullable<Token>.get_HasValue
+	|-Nullable<Vector3>.get_HasValue
+	|
+	|-Nullable<RegisterClientOptions>.get_HasValue
+	|
+	|-Nullable<Credentials>.get_HasValue
+	|-Nullable<LoginOptions>.get_HasValue
+	|-Nullable<CustomInviteRejectedCallbackInfo>.get_HasValue
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.get_HasValue
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.get_HasValue
+	|-Nullable<Entitlement>.get_HasValue
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.get_HasValue
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.get_HasValue
+	|-Nullable<ModIdentifier>.get_HasValue
+	|-Nullable<OnIncomingConnectionRequestInfo>.get_HasValue
+	|-Nullable<OnIncomingPacketQueueFullInfo>.get_HasValue
+	|-Nullable<OnPeerConnectionInterruptedInfo>.get_HasValue
+	|-Nullable<ReadFileOptions>.get_HasValue
+	|-Nullable<WriteFileOptions>.get_HasValue
+	|-Nullable<JoinGameAcceptedCallbackInfo>.get_HasValue
+	|-Nullable<ParticipantUpdatedCallbackInfo>.get_HasValue
+	|-Nullable<SendAudioOptions>.get_HasValue
+	|-Nullable<SendPlayerBehaviorReportOptions>.get_HasValue
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.get_HasValue
+	|-Nullable<ReadFileOptions>.get_HasValue
+	|
+	|-Nullable<IOSLoginOptions>.get_HasValue
+	|-Nullable<AttributeData>.get_HasValue
+	|-Nullable<CreateLobbyOptions>.get_HasValue
+	|-Nullable<InstallModOptions>.get_HasValue
+	|-Nullable<AttributeData>.get_HasValue
+	|-Nullable<Stat>.get_HasValue
+	|
+	|-Nullable<LinkAccountCallbackInfo>.get_HasValue
+	|-Nullable<InstallModCallbackInfo>.get_HasValue
+	|-Nullable<UninstallModCallbackInfo>.get_HasValue
+	|-Nullable<UpdateModCallbackInfo>.get_HasValue
+	|-Nullable<Info>.get_HasValue
+	|
+	|-Nullable<LoginCallbackInfo>.get_HasValue
+	|-Nullable<VerifyIdTokenCallbackInfo>.get_HasValue
+	|
+	|-Nullable<LoginOptions>.get_HasValue
+	|-Nullable<ExternalAccountInfo>.get_HasValue
+	|-Nullable<UninstallModOptions>.get_HasValue
+	|-Nullable<UpdateModOptions>.get_HasValue
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.get_HasValue
+	|-Nullable<AudioBeforeRenderCallbackInfo>.get_HasValue
+	|-Nullable<CreateSessionModificationOptions>.get_HasValue
+	|-Nullable<SessionDetailsInfo>.get_HasValue
+	|
+	|-Nullable<PinGrantInfoInternal>.get_HasValue
+	|-Nullable<CatalogReleaseInternal>.get_HasValue
+	|-Nullable<FileMetadataInternal>.get_HasValue
+	|-Nullable<PlayerSanctionInternal>.get_HasValue
+	|-Nullable<ActiveSessionInfoInternal>.get_HasValue
+	|-Nullable<SessionDetailsInfoInternal>.get_HasValue
+	|-Nullable<SessionDetailsSettingsInternal>.get_HasValue
+	|-Nullable<StatInternal>.get_HasValue
+	|-Nullable<RenderTargetIdentifier>.get_HasValue
+	|
+	|-Nullable<ExternalAccountInfoInternal>.get_HasValue
+	|-Nullable<EntitlementInternal>.get_HasValue
+	|-Nullable<DefinitionInternal>.get_HasValue
+	|-Nullable<ModIdentifierInternal>.get_HasValue
+	|-Nullable<PacketQueueInfo>.get_HasValue
+	|-Nullable<InitializeThreadAffinity>.get_HasValue
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.get_HasValue
+	|
+	|-Nullable<CatalogOffer>.get_HasValue
+	|
+	|-Nullable<CatalogOfferInternal>.get_HasValue
+	|
+	|-Nullable<KeyImageInfoInternal>.get_HasValue
+	|-Nullable<LeaderboardRecordInternal>.get_HasValue
+	|-Nullable<AttributeDataInternal>.get_HasValue
+	|-Nullable<AudioBufferInternal>.get_HasValue
+	|-Nullable<AttributeDataInternal>.get_HasValue
+	|-Nullable<FileMetadataInternal>.get_HasValue
+	|-Nullable<ExternalUserInfoInternal>.get_HasValue
 	|-Nullable<Friend.FriendGameInfo>.get_HasValue
 	|
-	|-Nullable<InventoryResult>.get_HasValue
-	|-Nullable<SteamId>.get_HasValue
-	|-Nullable<DateTime>.get_HasValue
-	|-Nullable<double>.get_HasValue
-	|-Nullable<long>.get_HasValue
-	|-Nullable<TimeSpan>.get_HasValue
-	|-Nullable<ulong>.get_HasValue
-	|-Nullable<ValueTuple<RgbColor, float>>.get_HasValue
-	|-Nullable<ValueTuple<Int32Enum, float>>.get_HasValue
-	|-Nullable<Vector2>.get_HasValue
+	|-Nullable<CreateUserCallbackInfo>.get_HasValue
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.get_HasValue
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.get_HasValue
+	|-Nullable<UpdateSendingCallbackInfo>.get_HasValue
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.get_HasValue
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.get_HasValue
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.get_HasValue
+	|-Nullable<BlockParticipantCallbackInfo>.get_HasValue
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.get_HasValue
+	|-Nullable<UpdateReceivingCallbackInfo>.get_HasValue
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.get_HasValue
+	|
+	|-Nullable<Definition>.get_HasValue
+	|-Nullable<QueryLeaderboardUserScoresOptions>.get_HasValue
+	|-Nullable<SendPacketOptions>.get_HasValue
+	|-Nullable<QueryStatsOptions>.get_HasValue
+	|
+	|-Nullable<AttributeDataValue>.get_HasValue
+	|-Nullable<AttributeDataValue>.get_HasValue
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.get_HasValue
+	|
+	|-Nullable<BeginPlayerSessionOptions>.get_HasValue
+	|-Nullable<FileMetadata>.get_HasValue
+	|
+	|-Nullable<AndroidInitializeOptions>.get_HasValue
+	|
+	|-Nullable<InitializeOptions>.get_HasValue
+	|
+	|-Nullable<Options>.get_HasValue
+	|
+	|-Nullable<WindowsOptions>.get_HasValue
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.get_HasValue
+	|
+	|-Nullable<ServerInfo>.get_HasValue
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>.get_HasValue
 	|
 	|-Nullable<Item>.get_HasValue
 	|
 	|-Nullable<char>.get_HasValue
 	|-Nullable<short>.get_HasValue
 	|-Nullable<ushort>.get_HasValue
-	|
-	|-Nullable<DataKey>.get_HasValue
-	|
-	|-Nullable<Token>.get_HasValue
-	|-Nullable<Vector3>.get_HasValue
-	|
-	|-Nullable<RenderTargetIdentifier>.get_HasValue
 	*/
 
 	public T get_Value() { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.get_Value
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.get_Value
+	|
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.get_Value
+	|
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.get_Value
+	|
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.get_Value
+	|
+	|-Nullable<Definition>.get_Value
+	|
+	|-Nullable<DefinitionV2>.get_Value
+	|
+	|-Nullable<GetPlayerAchievementCountOptions>.get_Value
+	|
+	|-Nullable<GetUnlockedAchievementCountOptions>.get_Value
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.get_Value
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.get_Value
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<PlayerAchievement>.get_Value
+	|
+	|-Nullable<PlayerStatInfo>.get_Value
+	|
+	|-Nullable<QueryDefinitionsOptions>.get_Value
+	|
+	|-Nullable<QueryPlayerAchievementsOptions>.get_Value
+	|
+	|-Nullable<StatThresholds>.get_Value
+	|
+	|-Nullable<UnlockAchievementsOptions>.get_Value
+	|
+	|-Nullable<UnlockedAchievement>.get_Value
+	|
+	|-Nullable<AddExternalIntegrityCatalogOptions>.get_Value
+	|
+	|-Nullable<BeginSessionOptions>.get_Value
+	|
+	|-Nullable<GetProtectMessageOutputLengthOptions>.get_Value
+	|
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.get_Value
+	|
+	|-Nullable<OnMessageToServerCallbackInfo>.get_Value
+	|
+	|-Nullable<PollStatusOptions>.get_Value
+	|
+	|-Nullable<ProtectMessageOptions>.get_Value
+	|
+	|-Nullable<ReceiveMessageFromPeerOptions>.get_Value
+	|
+	|-Nullable<ReceiveMessageFromServerOptions>.get_Value
+	|
+	|-Nullable<RegisterPeerOptions>.get_Value
+	|
+	|-Nullable<UnprotectMessageOptions>.get_Value
+	|
+	|-Nullable<UnregisterPeerOptions>.get_Value
+	|
+	|-Nullable<LogEventOptions>.get_Value
+	|
+	|-Nullable<LogEventParamPair>.get_Value
+	|
+	|-Nullable<LogEventParamPairParamValue>.get_Value
+	|
+	|-Nullable<LogGameRoundEndOptions>.get_Value
+	|
+	|-Nullable<LogGameRoundStartOptions>.get_Value
+	|
+	|-Nullable<LogPlayerDespawnOptions>.get_Value
+	|
+	|-Nullable<LogPlayerReviveOptions>.get_Value
+	|
+	|-Nullable<LogPlayerSpawnOptions>.get_Value
+	|
+	|-Nullable<LogPlayerTakeDamageOptions>.get_Value
+	|
+	|-Nullable<LogPlayerTickOptions>.get_Value
+	|
+	|-Nullable<LogPlayerUseAbilityOptions>.get_Value
+	|
+	|-Nullable<LogPlayerUseWeaponData>.get_Value
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.get_Value
+	|
+	|-Nullable<OnClientActionRequiredCallbackInfo>.get_Value
+	|
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<OnMessageToClientCallbackInfo>.get_Value
+	|
+	|-Nullable<Quat>.get_Value
+	|
+	|-Nullable<RegisterEventOptions>.get_Value
+	|
+	|-Nullable<RegisterEventParamDef>.get_Value
+	|
+	|-Nullable<SetClientDetailsOptions>.get_Value
+	|
+	|-Nullable<SetGameSessionIdOptions>.get_Value
+	|
+	|-Nullable<Vec3f>.get_Value
+	|
+	|-Nullable<BeginSessionOptions>.get_Value
+	|
+	|-Nullable<GetProtectMessageOutputLengthOptions>.get_Value
+	|
+	|-Nullable<ProtectMessageOptions>.get_Value
+	|
+	|-Nullable<ReceiveMessageFromClientOptions>.get_Value
+	|
+	|-Nullable<RegisterClientOptions>.get_Value
+	|
+	|-Nullable<SetClientNetworkStateOptions>.get_Value
+	|
+	|-Nullable<UnprotectMessageOptions>.get_Value
+	|
+	|-Nullable<UnregisterClientOptions>.get_Value
+	|
+	|-Nullable<AccountFeatureRestrictedInfo>.get_Value
+	|
+	|-Nullable<CopyIdTokenOptions>.get_Value
+	|
+	|-Nullable<Credentials>.get_Value
+	|
+	|-Nullable<DeletePersistentAuthCallbackInfo>.get_Value
+	|
+	|-Nullable<DeletePersistentAuthOptions>.get_Value
+	|
+	|-Nullable<IOSCredentials>.get_Value
+	|
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.get_Value
+	|
+	|-Nullable<IOSLoginOptions>.get_Value
+	|
+	|-Nullable<IdToken>.get_Value
+	|
+	|-Nullable<LinkAccountCallbackInfo>.get_Value
+	|
+	|-Nullable<LinkAccountOptions>.get_Value
+	|
+	|-Nullable<LoginCallbackInfo>.get_Value
+	|
+	|-Nullable<LoginOptions>.get_Value
+	|
+	|-Nullable<LoginStatusChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<LogoutCallbackInfo>.get_Value
+	|
+	|-Nullable<LogoutOptions>.get_Value
+	|
+	|-Nullable<PinGrantInfo>.get_Value
+	|
+	|-Nullable<QueryIdTokenCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryIdTokenOptions>.get_Value
+	|
+	|-Nullable<Token>.get_Value
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.get_Value
+	|
+	|-Nullable<VerifyIdTokenOptions>.get_Value
+	|
+	|-Nullable<VerifyUserAuthCallbackInfo>.get_Value
+	|
+	|-Nullable<VerifyUserAuthOptions>.get_Value
+	|
+	|-Nullable<AuthExpirationCallbackInfo>.get_Value
+	|
+	|-Nullable<CopyIdTokenOptions>.get_Value
+	|
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.get_Value
+	|
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.get_Value
+	|
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyProductUserInfoOptions>.get_Value
+	|
+	|-Nullable<CreateDeviceIdCallbackInfo>.get_Value
+	|
+	|-Nullable<CreateDeviceIdOptions>.get_Value
+	|
+	|-Nullable<CreateUserCallbackInfo>.get_Value
+	|
+	|-Nullable<CreateUserOptions>.get_Value
+	|
+	|-Nullable<Credentials>.get_Value
+	|
+	|-Nullable<DeleteDeviceIdCallbackInfo>.get_Value
+	|
+	|-Nullable<ExternalAccountInfo>.get_Value
+	|
+	|-Nullable<GetExternalAccountMappingsOptions>.get_Value
+	|
+	|-Nullable<GetProductUserExternalAccountCountOptions>.get_Value
+	|
+	|-Nullable<GetProductUserIdMappingOptions>.get_Value
+	|
+	|-Nullable<IdToken>.get_Value
+	|
+	|-Nullable<LinkAccountCallbackInfo>.get_Value
+	|
+	|-Nullable<LinkAccountOptions>.get_Value
+	|
+	|-Nullable<LoginCallbackInfo>.get_Value
+	|
+	|-Nullable<LoginOptions>.get_Value
+	|
+	|-Nullable<LoginStatusChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryExternalAccountMappingsOptions>.get_Value
+	|
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryProductUserIdMappingsOptions>.get_Value
+	|
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.get_Value
+	|
+	|-Nullable<TransferDeviceIdAccountOptions>.get_Value
+	|
+	|-Nullable<UnlinkAccountCallbackInfo>.get_Value
+	|
+	|-Nullable<UnlinkAccountOptions>.get_Value
+	|
+	|-Nullable<UserLoginInfo>.get_Value
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.get_Value
+	|
+	|-Nullable<VerifyIdTokenOptions>.get_Value
+	|
+	|-Nullable<CustomInviteRejectedCallbackInfo>.get_Value
+	|
+	|-Nullable<FinalizeInviteOptions>.get_Value
+	|
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.get_Value
+	|
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<SendCustomInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<SendCustomInviteOptions>.get_Value
+	|
+	|-Nullable<SetCustomInviteOptions>.get_Value
+	|
+	|-Nullable<CatalogItem>.get_Value
+	|
+	|-Nullable<CatalogOffer>.get_Value
+	|
+	|-Nullable<CatalogRelease>.get_Value
+	|
+	|-Nullable<CheckoutCallbackInfo>.get_Value
+	|
+	|-Nullable<CheckoutEntry>.get_Value
+	|
+	|-Nullable<CheckoutOptions>.get_Value
+	|
+	|-Nullable<CopyEntitlementByIdOptions>.get_Value
+	|
+	|-Nullable<CopyEntitlementByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.get_Value
+	|
+	|-Nullable<CopyItemByIdOptions>.get_Value
+	|
+	|-Nullable<CopyItemImageInfoByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyItemReleaseByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyOfferByIdOptions>.get_Value
+	|
+	|-Nullable<CopyOfferByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyOfferItemByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyTransactionByIdOptions>.get_Value
+	|
+	|-Nullable<CopyTransactionByIndexOptions>.get_Value
+	|
+	|-Nullable<Entitlement>.get_Value
+	|
+	|-Nullable<GetEntitlementsByNameCountOptions>.get_Value
+	|
+	|-Nullable<GetEntitlementsCountOptions>.get_Value
+	|
+	|-Nullable<GetItemImageInfoCountOptions>.get_Value
+	|
+	|-Nullable<GetItemReleaseCountOptions>.get_Value
+	|
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.get_Value
+	|
+	|-Nullable<GetOfferCountOptions>.get_Value
+	|
+	|-Nullable<GetOfferImageInfoCountOptions>.get_Value
+	|
+	|-Nullable<GetOfferItemCountOptions>.get_Value
+	|
+	|-Nullable<GetTransactionCountOptions>.get_Value
+	|
+	|-Nullable<ItemOwnership>.get_Value
+	|
+	|-Nullable<KeyImageInfo>.get_Value
+	|
+	|-Nullable<QueryEntitlementsCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryEntitlementsOptions>.get_Value
+	|
+	|-Nullable<QueryOffersCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryOffersOptions>.get_Value
+	|
+	|-Nullable<QueryOwnershipCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryOwnershipOptions>.get_Value
+	|
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryOwnershipTokenOptions>.get_Value
+	|
+	|-Nullable<RedeemEntitlementsCallbackInfo>.get_Value
+	|
+	|-Nullable<RedeemEntitlementsOptions>.get_Value
+	|
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.get_Value
+	|
+	|-Nullable<AcceptInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<AcceptInviteOptions>.get_Value
+	|
+	|-Nullable<GetFriendAtIndexOptions>.get_Value
+	|
+	|-Nullable<GetFriendsCountOptions>.get_Value
+	|
+	|-Nullable<GetStatusOptions>.get_Value
+	|
+	|-Nullable<OnFriendsUpdateInfo>.get_Value
+	|
+	|-Nullable<QueryFriendsCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryFriendsOptions>.get_Value
+	|
+	|-Nullable<RejectInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<RejectInviteOptions>.get_Value
+	|
+	|-Nullable<SendInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<SendInviteOptions>.get_Value
+	|
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.get_Value
+	|
+	|-Nullable<Options>.get_Value
+	|
+	|-Nullable<SteamOptions>.get_Value
+	|
+	|-Nullable<CopyPermissionByIndexOptions>.get_Value
+	|
+	|-Nullable<CreateUserCallbackInfo>.get_Value
+	|
+	|-Nullable<CreateUserOptions>.get_Value
+	|
+	|-Nullable<GetPermissionByKeyOptions>.get_Value
+	|
+	|-Nullable<GetPermissionsCountOptions>.get_Value
+	|
+	|-Nullable<PermissionStatus>.get_Value
+	|
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryAgeGateCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryPermissionsOptions>.get_Value
+	|
+	|-Nullable<RequestPermissionsCallbackInfo>.get_Value
+	|
+	|-Nullable<RequestPermissionsOptions>.get_Value
+	|
+	|-Nullable<UpdateParentEmailCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateParentEmailOptions>.get_Value
+	|
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.get_Value
+	|
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.get_Value
+	|
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.get_Value
+	|
+	|-Nullable<Definition>.get_Value
+	|
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.get_Value
+	|
+	|-Nullable<LeaderboardRecord>.get_Value
+	|
+	|-Nullable<LeaderboardUserScore>.get_Value
+	|
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.get_Value
+	|
+	|-Nullable<QueryLeaderboardRanksOptions>.get_Value
+	|
+	|-Nullable<QueryLeaderboardUserScoresOptions>.get_Value
+	|
+	|-Nullable<UserScoresQueryStatInfo>.get_Value
+	|
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.get_Value
+	|
+	|-Nullable<Attribute>.get_Value
+	|
+	|-Nullable<AttributeData>.get_Value
+	|
+	|-Nullable<AttributeDataValue>.get_Value
+	|
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.get_Value
+	|
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.get_Value
+	|
+	|-Nullable<CopyLobbyDetailsHandleOptions>.get_Value
+	|
+	|-Nullable<CreateLobbyCallbackInfo>.get_Value
+	|
+	|-Nullable<CreateLobbyOptions>.get_Value
+	|
+	|-Nullable<CreateLobbySearchOptions>.get_Value
+	|
+	|-Nullable<DestroyLobbyCallbackInfo>.get_Value
+	|
+	|-Nullable<DestroyLobbyOptions>.get_Value
+	|
+	|-Nullable<GetInviteCountOptions>.get_Value
+	|
+	|-Nullable<GetInviteIdByIndexOptions>.get_Value
+	|
+	|-Nullable<GetRTCRoomNameOptions>.get_Value
+	|
+	|-Nullable<HardMuteMemberCallbackInfo>.get_Value
+	|
+	|-Nullable<HardMuteMemberOptions>.get_Value
+	|
+	|-Nullable<IsRTCRoomConnectedOptions>.get_Value
+	|
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinLobbyByIdCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinLobbyByIdOptions>.get_Value
+	|
+	|-Nullable<JoinLobbyCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinLobbyOptions>.get_Value
+	|
+	|-Nullable<KickMemberCallbackInfo>.get_Value
+	|
+	|-Nullable<KickMemberOptions>.get_Value
+	|
+	|-Nullable<LeaveLobbyCallbackInfo>.get_Value
+	|
+	|-Nullable<LeaveLobbyOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsInfo>.get_Value
+	|
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.get_Value
+	|
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.get_Value
+	|
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<LobbyModificationAddAttributeOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationSetBucketIdOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.get_Value
+	|
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.get_Value
+	|
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.get_Value
+	|
+	|-Nullable<LobbySearchFindCallbackInfo>.get_Value
+	|
+	|-Nullable<LobbySearchFindOptions>.get_Value
+	|
+	|-Nullable<LobbySearchRemoveParameterOptions>.get_Value
+	|
+	|-Nullable<LobbySearchSetLobbyIdOptions>.get_Value
+	|
+	|-Nullable<LobbySearchSetMaxResultsOptions>.get_Value
+	|
+	|-Nullable<LobbySearchSetParameterOptions>.get_Value
+	|
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.get_Value
+	|
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<LocalRTCOptions>.get_Value
+	|
+	|-Nullable<PromoteMemberCallbackInfo>.get_Value
+	|
+	|-Nullable<PromoteMemberOptions>.get_Value
+	|
+	|-Nullable<QueryInvitesCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryInvitesOptions>.get_Value
+	|
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<RejectInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<RejectInviteOptions>.get_Value
+	|
+	|-Nullable<SendInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<SendInviteOptions>.get_Value
+	|
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateLobbyCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateLobbyModificationOptions>.get_Value
+	|
+	|-Nullable<UpdateLobbyOptions>.get_Value
+	|
+	|-Nullable<LogMessage>.get_Value
+	|
+	|-Nullable<BeginPlayerSessionOptions>.get_Value
+	|
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.get_Value
+	|
+	|-Nullable<EndPlayerSessionOptions>.get_Value
+	|
+	|-Nullable<EndPlayerSessionOptionsAccountId>.get_Value
+	|
+	|-Nullable<CopyModInfoOptions>.get_Value
+	|
+	|-Nullable<EnumerateModsCallbackInfo>.get_Value
+	|
+	|-Nullable<EnumerateModsOptions>.get_Value
+	|
+	|-Nullable<InstallModCallbackInfo>.get_Value
+	|
+	|-Nullable<InstallModOptions>.get_Value
+	|
+	|-Nullable<ModIdentifier>.get_Value
+	|
+	|-Nullable<ModInfo>.get_Value
+	|
+	|-Nullable<UninstallModCallbackInfo>.get_Value
+	|
+	|-Nullable<UninstallModOptions>.get_Value
+	|
+	|-Nullable<UpdateModCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateModOptions>.get_Value
+	|
+	|-Nullable<AcceptConnectionOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.get_Value
+	|
+	|-Nullable<ClearPacketQueueOptions>.get_Value
+	|
+	|-Nullable<CloseConnectionOptions>.get_Value
+	|
+	|-Nullable<CloseConnectionsOptions>.get_Value
+	|
+	|-Nullable<GetNextReceivedPacketSizeOptions>.get_Value
+	|
+	|-Nullable<OnIncomingConnectionRequestInfo>.get_Value
+	|
+	|-Nullable<OnIncomingPacketQueueFullInfo>.get_Value
+	|
+	|-Nullable<OnPeerConnectionEstablishedInfo>.get_Value
+	|
+	|-Nullable<OnPeerConnectionInterruptedInfo>.get_Value
+	|
+	|-Nullable<OnQueryNATTypeCompleteInfo>.get_Value
+	|
+	|-Nullable<OnRemoteConnectionClosedInfo>.get_Value
+	|
+	|-Nullable<PacketQueueInfo>.get_Value
+	|
+	|-Nullable<ReceivePacketOptions>.get_Value
+	|
+	|-Nullable<SendPacketOptions>.get_Value
+	|
+	|-Nullable<SetPacketQueueSizeOptions>.get_Value
+	|
+	|-Nullable<SetPortRangeOptions>.get_Value
+	|
+	|-Nullable<SetRelayControlOptions>.get_Value
+	|
+	|-Nullable<SocketId>.get_Value
+	|
+	|-Nullable<PageQuery>.get_Value
+	|
+	|-Nullable<PageResult>.get_Value
+	|
+	|-Nullable<AndroidInitializeOptions>.get_Value
+	|
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.get_Value
+	|
+	|-Nullable<ClientCredentials>.get_Value
+	|
+	|-Nullable<GetDesktopCrossplayStatusInfo>.get_Value
+	|
+	|-Nullable<InitializeOptions>.get_Value
+	|
+	|-Nullable<InitializeThreadAffinity>.get_Value
+	|
+	|-Nullable<Options>.get_Value
+	|
+	|-Nullable<RTCOptions>.get_Value
+	|
+	|-Nullable<WindowsOptions>.get_Value
+	|
+	|-Nullable<WindowsRTCOptions>.get_Value
+	|
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.get_Value
+	|
+	|-Nullable<CopyFileMetadataAtIndexOptions>.get_Value
+	|
+	|-Nullable<CopyFileMetadataByFilenameOptions>.get_Value
+	|
+	|-Nullable<DeleteCacheCallbackInfo>.get_Value
+	|
+	|-Nullable<DeleteCacheOptions>.get_Value
+	|
+	|-Nullable<DeleteFileCallbackInfo>.get_Value
+	|
+	|-Nullable<DeleteFileOptions>.get_Value
+	|
+	|-Nullable<DuplicateFileCallbackInfo>.get_Value
+	|
+	|-Nullable<DuplicateFileOptions>.get_Value
+	|
+	|-Nullable<FileMetadata>.get_Value
+	|
+	|-Nullable<FileTransferProgressCallbackInfo>.get_Value
+	|
+	|-Nullable<GetFileMetadataCountOptions>.get_Value
+	|
+	|-Nullable<QueryFileCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryFileListCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryFileListOptions>.get_Value
+	|
+	|-Nullable<QueryFileOptions>.get_Value
+	|
+	|-Nullable<ReadFileCallbackInfo>.get_Value
+	|
+	|-Nullable<ReadFileDataCallbackInfo>.get_Value
+	|
+	|-Nullable<ReadFileOptions>.get_Value
+	|
+	|-Nullable<WriteFileCallbackInfo>.get_Value
+	|
+	|-Nullable<WriteFileDataCallbackInfo>.get_Value
+	|
+	|-Nullable<WriteFileOptions>.get_Value
+	|
+	|-Nullable<CopyPresenceOptions>.get_Value
+	|
+	|-Nullable<CreatePresenceModificationOptions>.get_Value
+	|
+	|-Nullable<DataRecord>.get_Value
+	|
+	|-Nullable<GetJoinInfoOptions>.get_Value
+	|
+	|-Nullable<HasPresenceOptions>.get_Value
+	|
+	|-Nullable<Info>.get_Value
+	|
+	|-Nullable<JoinGameAcceptedCallbackInfo>.get_Value
+	|
+	|-Nullable<PresenceChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<PresenceModificationDataRecordId>.get_Value
+	|
+	|-Nullable<PresenceModificationDeleteDataOptions>.get_Value
+	|
+	|-Nullable<PresenceModificationSetDataOptions>.get_Value
+	|
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.get_Value
+	|
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.get_Value
+	|
+	|-Nullable<PresenceModificationSetStatusOptions>.get_Value
+	|
+	|-Nullable<QueryPresenceCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryPresenceOptions>.get_Value
+	|
+	|-Nullable<SetPresenceCallbackInfo>.get_Value
+	|
+	|-Nullable<SetPresenceOptions>.get_Value
+	|
+	|-Nullable<AddProgressionOptions>.get_Value
+	|
+	|-Nullable<BeginSnapshotOptions>.get_Value
+	|
+	|-Nullable<DeleteSnapshotCallbackInfo>.get_Value
+	|
+	|-Nullable<DeleteSnapshotOptions>.get_Value
+	|
+	|-Nullable<EndSnapshotOptions>.get_Value
+	|
+	|-Nullable<SubmitSnapshotCallbackInfo>.get_Value
+	|
+	|-Nullable<SubmitSnapshotOptions>.get_Value
+	|
+	|-Nullable<AddNotifyDisconnectedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.get_Value
+	|
+	|-Nullable<BlockParticipantCallbackInfo>.get_Value
+	|
+	|-Nullable<BlockParticipantOptions>.get_Value
+	|
+	|-Nullable<DisconnectedCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinRoomCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinRoomOptions>.get_Value
+	|
+	|-Nullable<LeaveRoomCallbackInfo>.get_Value
+	|
+	|-Nullable<LeaveRoomOptions>.get_Value
+	|
+	|-Nullable<ParticipantMetadata>.get_Value
+	|
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<SetRoomSettingOptions>.get_Value
+	|
+	|-Nullable<SetSettingOptions>.get_Value
+	|
+	|-Nullable<CopyUserTokenByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyUserTokenByUserIdOptions>.get_Value
+	|
+	|-Nullable<KickCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<KickOptions>.get_Value
+	|
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryJoinRoomTokenOptions>.get_Value
+	|
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<SetParticipantHardMuteOptions>.get_Value
+	|
+	|-Nullable<UserToken>.get_Value
+	|
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.get_Value
+	|
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.get_Value
+	|
+	|-Nullable<AddNotifyAudioInputStateOptions>.get_Value
+	|
+	|-Nullable<AddNotifyAudioOutputStateOptions>.get_Value
+	|
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.get_Value
+	|
+	|-Nullable<AudioBeforeRenderCallbackInfo>.get_Value
+	|
+	|-Nullable<AudioBeforeSendCallbackInfo>.get_Value
+	|
+	|-Nullable<AudioBuffer>.get_Value
+	|
+	|-Nullable<AudioDevicesChangedCallbackInfo>.get_Value
+	|
+	|-Nullable<AudioInputDeviceInfo>.get_Value
+	|
+	|-Nullable<AudioInputStateCallbackInfo>.get_Value
+	|
+	|-Nullable<AudioOutputDeviceInfo>.get_Value
+	|
+	|-Nullable<AudioOutputStateCallbackInfo>.get_Value
+	|
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.get_Value
+	|
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.get_Value
+	|
+	|-Nullable<ParticipantUpdatedCallbackInfo>.get_Value
+	|
+	|-Nullable<RegisterPlatformAudioUserOptions>.get_Value
+	|
+	|-Nullable<SendAudioOptions>.get_Value
+	|
+	|-Nullable<SetAudioInputSettingsOptions>.get_Value
+	|
+	|-Nullable<SetAudioOutputSettingsOptions>.get_Value
+	|
+	|-Nullable<UnregisterPlatformAudioUserOptions>.get_Value
+	|
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateParticipantVolumeOptions>.get_Value
+	|
+	|-Nullable<UpdateReceivingCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateReceivingOptions>.get_Value
+	|
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateReceivingVolumeOptions>.get_Value
+	|
+	|-Nullable<UpdateSendingCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateSendingOptions>.get_Value
+	|
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateSendingVolumeOptions>.get_Value
+	|
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<SendPlayerBehaviorReportOptions>.get_Value
+	|
+	|-Nullable<Result>.get_Value
 	|-Nullable<FileStorage.Type>.get_Value
 	|-Nullable<InstrumentKeyController.AnimationSlot>.get_Value
 	|-Nullable<MapLayer>.get_Value
 	|-Nullable<RemoteStoragePublishedFileVisibility>.get_Value
 	|-Nullable<VehicleEngineController.EngineState<TrainEngine>>.get_Value
 	|-Nullable<Int32Enum>.get_Value
+	|
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.get_Value
+	|
+	|-Nullable<GetPlayerSanctionCountOptions>.get_Value
+	|
+	|-Nullable<PlayerSanction>.get_Value
+	|
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryActivePlayerSanctionsOptions>.get_Value
+	|
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.get_Value
+	|
+	|-Nullable<ActiveSessionInfo>.get_Value
+	|
+	|-Nullable<AttributeData>.get_Value
+	|
+	|-Nullable<AttributeDataValue>.get_Value
+	|
+	|-Nullable<CopyActiveSessionHandleOptions>.get_Value
+	|
+	|-Nullable<CopySessionHandleByInviteIdOptions>.get_Value
+	|
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.get_Value
+	|
+	|-Nullable<CopySessionHandleForPresenceOptions>.get_Value
+	|
+	|-Nullable<CreateSessionModificationOptions>.get_Value
+	|
+	|-Nullable<CreateSessionSearchOptions>.get_Value
+	|
+	|-Nullable<DestroySessionCallbackInfo>.get_Value
+	|
+	|-Nullable<DestroySessionOptions>.get_Value
+	|
+	|-Nullable<DumpSessionStateOptions>.get_Value
+	|
+	|-Nullable<EndSessionCallbackInfo>.get_Value
+	|
+	|-Nullable<EndSessionOptions>.get_Value
+	|
+	|-Nullable<GetInviteCountOptions>.get_Value
+	|
+	|-Nullable<GetInviteIdByIndexOptions>.get_Value
+	|
+	|-Nullable<IsUserInSessionOptions>.get_Value
+	|
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinSessionCallbackInfo>.get_Value
+	|
+	|-Nullable<JoinSessionOptions>.get_Value
+	|
+	|-Nullable<QueryInvitesCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryInvitesOptions>.get_Value
+	|
+	|-Nullable<RegisterPlayersCallbackInfo>.get_Value
+	|
+	|-Nullable<RegisterPlayersOptions>.get_Value
+	|
+	|-Nullable<RejectInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<RejectInviteOptions>.get_Value
+	|
+	|-Nullable<SendInviteCallbackInfo>.get_Value
+	|
+	|-Nullable<SendInviteOptions>.get_Value
+	|
+	|-Nullable<SessionDetailsAttribute>.get_Value
+	|
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.get_Value
+	|
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.get_Value
+	|
+	|-Nullable<SessionDetailsInfo>.get_Value
+	|
+	|-Nullable<SessionDetailsSettings>.get_Value
+	|
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.get_Value
+	|
+	|-Nullable<SessionInviteReceivedCallbackInfo>.get_Value
+	|
+	|-Nullable<SessionModificationAddAttributeOptions>.get_Value
+	|
+	|-Nullable<SessionModificationRemoveAttributeOptions>.get_Value
+	|
+	|-Nullable<SessionModificationSetBucketIdOptions>.get_Value
+	|
+	|-Nullable<SessionModificationSetHostAddressOptions>.get_Value
+	|
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.get_Value
+	|
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.get_Value
+	|
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.get_Value
+	|
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.get_Value
+	|
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.get_Value
+	|
+	|-Nullable<SessionSearchFindCallbackInfo>.get_Value
+	|
+	|-Nullable<SessionSearchFindOptions>.get_Value
+	|
+	|-Nullable<SessionSearchRemoveParameterOptions>.get_Value
+	|
+	|-Nullable<SessionSearchSetMaxResultsOptions>.get_Value
+	|
+	|-Nullable<SessionSearchSetParameterOptions>.get_Value
+	|
+	|-Nullable<SessionSearchSetSessionIdOptions>.get_Value
+	|
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.get_Value
+	|
+	|-Nullable<StartSessionCallbackInfo>.get_Value
+	|
+	|-Nullable<StartSessionOptions>.get_Value
+	|
+	|-Nullable<UnregisterPlayersCallbackInfo>.get_Value
+	|
+	|-Nullable<UnregisterPlayersOptions>.get_Value
+	|
+	|-Nullable<UpdateSessionCallbackInfo>.get_Value
+	|
+	|-Nullable<UpdateSessionModificationOptions>.get_Value
+	|
+	|-Nullable<UpdateSessionOptions>.get_Value
+	|
+	|-Nullable<CopyStatByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyStatByNameOptions>.get_Value
+	|
+	|-Nullable<GetStatCountOptions>.get_Value
+	|
+	|-Nullable<IngestData>.get_Value
+	|
+	|-Nullable<IngestStatCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<IngestStatOptions>.get_Value
+	|
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryStatsOptions>.get_Value
+	|
+	|-Nullable<Stat>.get_Value
+	|
+	|-Nullable<CopyFileMetadataAtIndexOptions>.get_Value
+	|
+	|-Nullable<CopyFileMetadataByFilenameOptions>.get_Value
+	|
+	|-Nullable<DeleteCacheCallbackInfo>.get_Value
+	|
+	|-Nullable<DeleteCacheOptions>.get_Value
+	|
+	|-Nullable<FileMetadata>.get_Value
+	|
+	|-Nullable<FileTransferProgressCallbackInfo>.get_Value
+	|
+	|-Nullable<GetFileMetadataCountOptions>.get_Value
+	|
+	|-Nullable<QueryFileCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryFileListCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryFileListOptions>.get_Value
+	|
+	|-Nullable<QueryFileOptions>.get_Value
+	|
+	|-Nullable<ReadFileCallbackInfo>.get_Value
+	|
+	|-Nullable<ReadFileDataCallbackInfo>.get_Value
+	|
+	|-Nullable<ReadFileOptions>.get_Value
+	|
+	|-Nullable<AcknowledgeEventIdOptions>.get_Value
+	|
+	|-Nullable<GetFriendsExclusiveInputOptions>.get_Value
+	|
+	|-Nullable<GetFriendsVisibleOptions>.get_Value
+	|
+	|-Nullable<HideFriendsCallbackInfo>.get_Value
+	|
+	|-Nullable<HideFriendsOptions>.get_Value
+	|
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.get_Value
+	|
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.get_Value
+	|
+	|-Nullable<OnShowReportPlayerCallbackInfo>.get_Value
+	|
+	|-Nullable<PauseSocialOverlayOptions>.get_Value
+	|
+	|-Nullable<PrePresentOptions>.get_Value
+	|
+	|-Nullable<ReportKeyEventOptions>.get_Value
+	|
+	|-Nullable<SetDisplayPreferenceOptions>.get_Value
+	|
+	|-Nullable<SetToggleFriendsKeyOptions>.get_Value
+	|
+	|-Nullable<ShowBlockPlayerOptions>.get_Value
+	|
+	|-Nullable<ShowFriendsCallbackInfo>.get_Value
+	|
+	|-Nullable<ShowFriendsOptions>.get_Value
+	|
+	|-Nullable<ShowReportPlayerOptions>.get_Value
+	|
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.get_Value
+	|
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.get_Value
+	|
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.get_Value
+	|
+	|-Nullable<CopyUserInfoOptions>.get_Value
+	|
+	|-Nullable<ExternalUserInfo>.get_Value
+	|
+	|-Nullable<GetExternalUserInfoCountOptions>.get_Value
+	|
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.get_Value
+	|
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.get_Value
+	|
+	|-Nullable<QueryUserInfoCallbackInfo>.get_Value
+	|
+	|-Nullable<QueryUserInfoOptions>.get_Value
+	|
+	|-Nullable<UserInfoData>.get_Value
 	|
 	|-Nullable<FrameType>.get_Value
 	|-Nullable<ByteEnum>.get_Value
@@ -4114,6 +6702,224 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<Vector3>.get_Value
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.get_Value
+	|
+	|-Nullable<DefinitionInternal>.get_Value
+	|
+	|-Nullable<DefinitionV2Internal>.get_Value
+	|
+	|-Nullable<GetAchievementDefinitionCountOptions>.get_Value
+	|
+	|-Nullable<PlayerAchievementInternal>.get_Value
+	|
+	|-Nullable<UnlockedAchievementInternal>.get_Value
+	|
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyMessageToPeerOptions>.get_Value
+	|
+	|-Nullable<AddNotifyMessageToServerOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.get_Value
+	|
+	|-Nullable<EndSessionOptions>.get_Value
+	|
+	|-Nullable<QuatInternal>.get_Value
+	|
+	|-Nullable<Vec3fInternal>.get_Value
+	|
+	|-Nullable<AddNotifyClientActionRequiredOptions>.get_Value
+	|
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyMessageToClientOptions>.get_Value
+	|
+	|-Nullable<EndSessionOptions>.get_Value
+	|
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.get_Value
+	|
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.get_Value
+	|
+	|-Nullable<CopyUserAuthTokenOptions>.get_Value
+	|
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.get_Value
+	|
+	|-Nullable<IdTokenInternal>.get_Value
+	|
+	|-Nullable<PinGrantInfoInternal>.get_Value
+	|
+	|-Nullable<TokenInternal>.get_Value
+	|
+	|-Nullable<AddNotifyAuthExpirationOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.get_Value
+	|
+	|-Nullable<DeleteDeviceIdOptions>.get_Value
+	|
+	|-Nullable<ExternalAccountInfoInternal>.get_Value
+	|
+	|-Nullable<IdTokenInternal>.get_Value
+	|
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.get_Value
+	|
+	|-Nullable<CatalogItemInternal>.get_Value
+	|
+	|-Nullable<CatalogOfferInternal>.get_Value
+	|
+	|-Nullable<CatalogReleaseInternal>.get_Value
+	|
+	|-Nullable<EntitlementInternal>.get_Value
+	|
+	|-Nullable<KeyImageInfoInternal>.get_Value
+	|
+	|-Nullable<TransactionGetEntitlementsCountOptions>.get_Value
+	|
+	|-Nullable<AddNotifyFriendsUpdateOptions>.get_Value
+	|
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.get_Value
+	|
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.get_Value
+	|
+	|-Nullable<PermissionStatusInternal>.get_Value
+	|
+	|-Nullable<QueryAgeGateOptions>.get_Value
+	|
+	|-Nullable<DefinitionInternal>.get_Value
+	|
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.get_Value
+	|
+	|-Nullable<GetLeaderboardRecordCountOptions>.get_Value
+	|
+	|-Nullable<LeaderboardRecordInternal>.get_Value
+	|
+	|-Nullable<LeaderboardUserScoreInternal>.get_Value
+	|
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.get_Value
+	|
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.get_Value
+	|
+	|-Nullable<AttributeDataInternal>.get_Value
+	|
+	|-Nullable<AttributeInternal>.get_Value
+	|
+	|-Nullable<LobbyDetailsCopyInfoOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.get_Value
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.get_Value
+	|
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.get_Value
+	|
+	|-Nullable<ModIdentifierInternal>.get_Value
+	|
+	|-Nullable<ModInfoInternal>.get_Value
+	|
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.get_Value
+	|
+	|-Nullable<GetNATTypeOptions>.get_Value
+	|
+	|-Nullable<GetPacketQueueInfoOptions>.get_Value
+	|
+	|-Nullable<GetPortRangeOptions>.get_Value
+	|
+	|-Nullable<GetRelayControlOptions>.get_Value
+	|
+	|-Nullable<QueryNATTypeOptions>.get_Value
+	|
+	|-Nullable<SocketIdInternal>.get_Value
+	|
+	|-Nullable<GetDesktopCrossplayStatusOptions>.get_Value
+	|
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.get_Value
+	|
+	|-Nullable<FileMetadataInternal>.get_Value
+	|
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.get_Value
+	|
+	|-Nullable<InfoInternal>.get_Value
+	|
+	|-Nullable<UserTokenInternal>.get_Value
+	|
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.get_Value
+	|
+	|-Nullable<AudioBufferInternal>.get_Value
+	|
+	|-Nullable<AudioInputDeviceInfoInternal>.get_Value
+	|
+	|-Nullable<AudioOutputDeviceInfoInternal>.get_Value
+	|
+	|-Nullable<GetAudioInputDevicesCountOptions>.get_Value
+	|
+	|-Nullable<GetAudioOutputDevicesCountOptions>.get_Value
+	|
+	|-Nullable<PlayerSanctionInternal>.get_Value
+	|
+	|-Nullable<ActiveSessionCopyInfoOptions>.get_Value
+	|
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.get_Value
+	|
+	|-Nullable<ActiveSessionInfoInternal>.get_Value
+	|
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.get_Value
+	|
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.get_Value
+	|
+	|-Nullable<AttributeDataInternal>.get_Value
+	|
+	|-Nullable<SessionDetailsAttributeInternal>.get_Value
+	|
+	|-Nullable<SessionDetailsCopyInfoOptions>.get_Value
+	|
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.get_Value
+	|
+	|-Nullable<SessionDetailsInfoInternal>.get_Value
+	|
+	|-Nullable<SessionDetailsSettingsInternal>.get_Value
+	|
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.get_Value
+	|
+	|-Nullable<StatInternal>.get_Value
+	|
+	|-Nullable<FileMetadataInternal>.get_Value
+	|
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.get_Value
+	|
+	|-Nullable<GetToggleFriendsKeyOptions>.get_Value
+	|
+	|-Nullable<IsSocialOverlayPausedOptions>.get_Value
+	|
+	|-Nullable<ExternalUserInfoInternal>.get_Value
+	|
+	|-Nullable<UserInfoDataInternal>.get_Value
+	|
 	|-Nullable<ImageStorageEntity.ImageRequest>.get_Value
 	|
 	|-Nullable<JsonPosition>.get_Value
@@ -4134,6 +6940,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<int>.get_Value
 	|
+	|-Nullable<IntPtr>.get_Value
+	|
 	|-Nullable<StreamingContext>.get_Value
 	|
 	|-Nullable<sbyte>.get_Value
@@ -4147,6 +6955,1338 @@ public struct Nullable<T> // TypeDefIndex: 380
 
 	public override bool Equals(object other) { }
 	/* GenericInstMethod :
+	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.Equals
+	|
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.Equals
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.Equals
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.Equals
+	|
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.Equals
+	|
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.Equals
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.Equals
+	|
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.Equals
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.Equals
+	|
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.Equals
+	|
+	|-Nullable<Definition>.Equals
+	|
+	|-Nullable<DefinitionInternal>.Equals
+	|
+	|-Nullable<DefinitionV2>.Equals
+	|
+	|-Nullable<DefinitionV2Internal>.Equals
+	|
+	|-Nullable<GetAchievementDefinitionCountOptions>.Equals
+	|
+	|-Nullable<GetPlayerAchievementCountOptions>.Equals
+	|
+	|-Nullable<GetUnlockedAchievementCountOptions>.Equals
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.Equals
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.Equals
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<PlayerAchievement>.Equals
+	|
+	|-Nullable<PlayerAchievementInternal>.Equals
+	|
+	|-Nullable<PlayerStatInfo>.Equals
+	|
+	|-Nullable<QueryDefinitionsOptions>.Equals
+	|
+	|-Nullable<QueryPlayerAchievementsOptions>.Equals
+	|
+	|-Nullable<StatThresholds>.Equals
+	|
+	|-Nullable<UnlockAchievementsOptions>.Equals
+	|
+	|-Nullable<UnlockedAchievement>.Equals
+	|
+	|-Nullable<UnlockedAchievementInternal>.Equals
+	|
+	|-Nullable<AddExternalIntegrityCatalogOptions>.Equals
+	|
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.Equals
+	|
+	|-Nullable<AddNotifyMessageToPeerOptions>.Equals
+	|
+	|-Nullable<AddNotifyMessageToServerOptions>.Equals
+	|
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.Equals
+	|
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.Equals
+	|
+	|-Nullable<BeginSessionOptions>.Equals
+	|
+	|-Nullable<EndSessionOptions>.Equals
+	|
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Equals
+	|
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.Equals
+	|
+	|-Nullable<OnMessageToServerCallbackInfo>.Equals
+	|
+	|-Nullable<PollStatusOptions>.Equals
+	|
+	|-Nullable<ProtectMessageOptions>.Equals
+	|
+	|-Nullable<ReceiveMessageFromPeerOptions>.Equals
+	|
+	|-Nullable<ReceiveMessageFromServerOptions>.Equals
+	|
+	|-Nullable<RegisterPeerOptions>.Equals
+	|
+	|-Nullable<UnprotectMessageOptions>.Equals
+	|
+	|-Nullable<UnregisterPeerOptions>.Equals
+	|
+	|-Nullable<LogEventOptions>.Equals
+	|
+	|-Nullable<LogEventParamPair>.Equals
+	|
+	|-Nullable<LogEventParamPairParamValue>.Equals
+	|
+	|-Nullable<LogGameRoundEndOptions>.Equals
+	|
+	|-Nullable<LogGameRoundStartOptions>.Equals
+	|
+	|-Nullable<LogPlayerDespawnOptions>.Equals
+	|
+	|-Nullable<LogPlayerReviveOptions>.Equals
+	|
+	|-Nullable<LogPlayerSpawnOptions>.Equals
+	|
+	|-Nullable<LogPlayerTakeDamageOptions>.Equals
+	|
+	|-Nullable<LogPlayerTickOptions>.Equals
+	|
+	|-Nullable<LogPlayerUseAbilityOptions>.Equals
+	|
+	|-Nullable<LogPlayerUseWeaponData>.Equals
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.Equals
+	|
+	|-Nullable<OnClientActionRequiredCallbackInfo>.Equals
+	|
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.Equals
+	|
+	|-Nullable<OnMessageToClientCallbackInfo>.Equals
+	|
+	|-Nullable<Quat>.Equals
+	|
+	|-Nullable<QuatInternal>.Equals
+	|
+	|-Nullable<RegisterEventOptions>.Equals
+	|
+	|-Nullable<RegisterEventParamDef>.Equals
+	|
+	|-Nullable<SetClientDetailsOptions>.Equals
+	|
+	|-Nullable<SetGameSessionIdOptions>.Equals
+	|
+	|-Nullable<Vec3f>.Equals
+	|
+	|-Nullable<Vec3fInternal>.Equals
+	|
+	|-Nullable<AddNotifyClientActionRequiredOptions>.Equals
+	|
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.Equals
+	|
+	|-Nullable<AddNotifyMessageToClientOptions>.Equals
+	|
+	|-Nullable<BeginSessionOptions>.Equals
+	|
+	|-Nullable<EndSessionOptions>.Equals
+	|
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Equals
+	|
+	|-Nullable<ProtectMessageOptions>.Equals
+	|
+	|-Nullable<ReceiveMessageFromClientOptions>.Equals
+	|
+	|-Nullable<RegisterClientOptions>.Equals
+	|
+	|-Nullable<SetClientNetworkStateOptions>.Equals
+	|
+	|-Nullable<UnprotectMessageOptions>.Equals
+	|
+	|-Nullable<UnregisterClientOptions>.Equals
+	|
+	|-Nullable<AccountFeatureRestrictedInfo>.Equals
+	|
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.Equals
+	|
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Equals
+	|
+	|-Nullable<CopyIdTokenOptions>.Equals
+	|
+	|-Nullable<CopyUserAuthTokenOptions>.Equals
+	|
+	|-Nullable<Credentials>.Equals
+	|
+	|-Nullable<DeletePersistentAuthCallbackInfo>.Equals
+	|
+	|-Nullable<DeletePersistentAuthOptions>.Equals
+	|
+	|-Nullable<IOSCredentials>.Equals
+	|
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.Equals
+	|
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.Equals
+	|
+	|-Nullable<IOSLoginOptions>.Equals
+	|
+	|-Nullable<IdToken>.Equals
+	|
+	|-Nullable<IdTokenInternal>.Equals
+	|
+	|-Nullable<LinkAccountCallbackInfo>.Equals
+	|
+	|-Nullable<LinkAccountOptions>.Equals
+	|
+	|-Nullable<LoginCallbackInfo>.Equals
+	|
+	|-Nullable<LoginOptions>.Equals
+	|
+	|-Nullable<LoginStatusChangedCallbackInfo>.Equals
+	|
+	|-Nullable<LogoutCallbackInfo>.Equals
+	|
+	|-Nullable<LogoutOptions>.Equals
+	|
+	|-Nullable<PinGrantInfo>.Equals
+	|
+	|-Nullable<PinGrantInfoInternal>.Equals
+	|
+	|-Nullable<QueryIdTokenCallbackInfo>.Equals
+	|
+	|-Nullable<QueryIdTokenOptions>.Equals
+	|
+	|-Nullable<Token>.Equals
+	|
+	|-Nullable<TokenInternal>.Equals
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.Equals
+	|
+	|-Nullable<VerifyIdTokenOptions>.Equals
+	|
+	|-Nullable<VerifyUserAuthCallbackInfo>.Equals
+	|
+	|-Nullable<VerifyUserAuthOptions>.Equals
+	|
+	|-Nullable<AddNotifyAuthExpirationOptions>.Equals
+	|
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Equals
+	|
+	|-Nullable<AuthExpirationCallbackInfo>.Equals
+	|
+	|-Nullable<CopyIdTokenOptions>.Equals
+	|
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.Equals
+	|
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.Equals
+	|
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.Equals
+	|
+	|-Nullable<CopyProductUserInfoOptions>.Equals
+	|
+	|-Nullable<CreateDeviceIdCallbackInfo>.Equals
+	|
+	|-Nullable<CreateDeviceIdOptions>.Equals
+	|
+	|-Nullable<CreateUserCallbackInfo>.Equals
+	|
+	|-Nullable<CreateUserOptions>.Equals
+	|
+	|-Nullable<Credentials>.Equals
+	|
+	|-Nullable<DeleteDeviceIdCallbackInfo>.Equals
+	|
+	|-Nullable<DeleteDeviceIdOptions>.Equals
+	|
+	|-Nullable<ExternalAccountInfo>.Equals
+	|
+	|-Nullable<ExternalAccountInfoInternal>.Equals
+	|
+	|-Nullable<GetExternalAccountMappingsOptions>.Equals
+	|
+	|-Nullable<GetProductUserExternalAccountCountOptions>.Equals
+	|
+	|-Nullable<GetProductUserIdMappingOptions>.Equals
+	|
+	|-Nullable<IdToken>.Equals
+	|
+	|-Nullable<IdTokenInternal>.Equals
+	|
+	|-Nullable<LinkAccountCallbackInfo>.Equals
+	|
+	|-Nullable<LinkAccountOptions>.Equals
+	|
+	|-Nullable<LoginCallbackInfo>.Equals
+	|
+	|-Nullable<LoginOptions>.Equals
+	|
+	|-Nullable<LoginStatusChangedCallbackInfo>.Equals
+	|
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.Equals
+	|
+	|-Nullable<QueryExternalAccountMappingsOptions>.Equals
+	|
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.Equals
+	|
+	|-Nullable<QueryProductUserIdMappingsOptions>.Equals
+	|
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.Equals
+	|
+	|-Nullable<TransferDeviceIdAccountOptions>.Equals
+	|
+	|-Nullable<UnlinkAccountCallbackInfo>.Equals
+	|
+	|-Nullable<UnlinkAccountOptions>.Equals
+	|
+	|-Nullable<UserLoginInfo>.Equals
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.Equals
+	|
+	|-Nullable<VerifyIdTokenOptions>.Equals
+	|
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.Equals
+	|
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.Equals
+	|
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.Equals
+	|
+	|-Nullable<CustomInviteRejectedCallbackInfo>.Equals
+	|
+	|-Nullable<FinalizeInviteOptions>.Equals
+	|
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.Equals
+	|
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<SendCustomInviteCallbackInfo>.Equals
+	|
+	|-Nullable<SendCustomInviteOptions>.Equals
+	|
+	|-Nullable<SetCustomInviteOptions>.Equals
+	|
+	|-Nullable<CatalogItem>.Equals
+	|
+	|-Nullable<CatalogItemInternal>.Equals
+	|
+	|-Nullable<CatalogOffer>.Equals
+	|
+	|-Nullable<CatalogOfferInternal>.Equals
+	|
+	|-Nullable<CatalogRelease>.Equals
+	|
+	|-Nullable<CatalogReleaseInternal>.Equals
+	|
+	|-Nullable<CheckoutCallbackInfo>.Equals
+	|
+	|-Nullable<CheckoutEntry>.Equals
+	|
+	|-Nullable<CheckoutOptions>.Equals
+	|
+	|-Nullable<CopyEntitlementByIdOptions>.Equals
+	|
+	|-Nullable<CopyEntitlementByIndexOptions>.Equals
+	|
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.Equals
+	|
+	|-Nullable<CopyItemByIdOptions>.Equals
+	|
+	|-Nullable<CopyItemImageInfoByIndexOptions>.Equals
+	|
+	|-Nullable<CopyItemReleaseByIndexOptions>.Equals
+	|
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.Equals
+	|
+	|-Nullable<CopyOfferByIdOptions>.Equals
+	|
+	|-Nullable<CopyOfferByIndexOptions>.Equals
+	|
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.Equals
+	|
+	|-Nullable<CopyOfferItemByIndexOptions>.Equals
+	|
+	|-Nullable<CopyTransactionByIdOptions>.Equals
+	|
+	|-Nullable<CopyTransactionByIndexOptions>.Equals
+	|
+	|-Nullable<Entitlement>.Equals
+	|
+	|-Nullable<EntitlementInternal>.Equals
+	|
+	|-Nullable<GetEntitlementsByNameCountOptions>.Equals
+	|
+	|-Nullable<GetEntitlementsCountOptions>.Equals
+	|
+	|-Nullable<GetItemImageInfoCountOptions>.Equals
+	|
+	|-Nullable<GetItemReleaseCountOptions>.Equals
+	|
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.Equals
+	|
+	|-Nullable<GetOfferCountOptions>.Equals
+	|
+	|-Nullable<GetOfferImageInfoCountOptions>.Equals
+	|
+	|-Nullable<GetOfferItemCountOptions>.Equals
+	|
+	|-Nullable<GetTransactionCountOptions>.Equals
+	|
+	|-Nullable<ItemOwnership>.Equals
+	|
+	|-Nullable<KeyImageInfo>.Equals
+	|
+	|-Nullable<KeyImageInfoInternal>.Equals
+	|
+	|-Nullable<QueryEntitlementsCallbackInfo>.Equals
+	|
+	|-Nullable<QueryEntitlementsOptions>.Equals
+	|
+	|-Nullable<QueryOffersCallbackInfo>.Equals
+	|
+	|-Nullable<QueryOffersOptions>.Equals
+	|
+	|-Nullable<QueryOwnershipCallbackInfo>.Equals
+	|
+	|-Nullable<QueryOwnershipOptions>.Equals
+	|
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.Equals
+	|
+	|-Nullable<QueryOwnershipTokenOptions>.Equals
+	|
+	|-Nullable<RedeemEntitlementsCallbackInfo>.Equals
+	|
+	|-Nullable<RedeemEntitlementsOptions>.Equals
+	|
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.Equals
+	|
+	|-Nullable<TransactionGetEntitlementsCountOptions>.Equals
+	|
+	|-Nullable<AcceptInviteCallbackInfo>.Equals
+	|
+	|-Nullable<AcceptInviteOptions>.Equals
+	|
+	|-Nullable<AddNotifyFriendsUpdateOptions>.Equals
+	|
+	|-Nullable<GetFriendAtIndexOptions>.Equals
+	|
+	|-Nullable<GetFriendsCountOptions>.Equals
+	|
+	|-Nullable<GetStatusOptions>.Equals
+	|
+	|-Nullable<OnFriendsUpdateInfo>.Equals
+	|
+	|-Nullable<QueryFriendsCallbackInfo>.Equals
+	|
+	|-Nullable<QueryFriendsOptions>.Equals
+	|
+	|-Nullable<RejectInviteCallbackInfo>.Equals
+	|
+	|-Nullable<RejectInviteOptions>.Equals
+	|
+	|-Nullable<SendInviteCallbackInfo>.Equals
+	|
+	|-Nullable<SendInviteOptions>.Equals
+	|
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.Equals
+	|
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.Equals
+	|
+	|-Nullable<Options>.Equals
+	|
+	|-Nullable<SteamOptions>.Equals
+	|
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.Equals
+	|
+	|-Nullable<CopyPermissionByIndexOptions>.Equals
+	|
+	|-Nullable<CreateUserCallbackInfo>.Equals
+	|
+	|-Nullable<CreateUserOptions>.Equals
+	|
+	|-Nullable<GetPermissionByKeyOptions>.Equals
+	|
+	|-Nullable<GetPermissionsCountOptions>.Equals
+	|
+	|-Nullable<PermissionStatus>.Equals
+	|
+	|-Nullable<PermissionStatusInternal>.Equals
+	|
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<QueryAgeGateCallbackInfo>.Equals
+	|
+	|-Nullable<QueryAgeGateOptions>.Equals
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.Equals
+	|
+	|-Nullable<QueryPermissionsOptions>.Equals
+	|
+	|-Nullable<RequestPermissionsCallbackInfo>.Equals
+	|
+	|-Nullable<RequestPermissionsOptions>.Equals
+	|
+	|-Nullable<UpdateParentEmailCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateParentEmailOptions>.Equals
+	|
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.Equals
+	|
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.Equals
+	|
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.Equals
+	|
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.Equals
+	|
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.Equals
+	|
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.Equals
+	|
+	|-Nullable<Definition>.Equals
+	|
+	|-Nullable<DefinitionInternal>.Equals
+	|
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.Equals
+	|
+	|-Nullable<GetLeaderboardRecordCountOptions>.Equals
+	|
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.Equals
+	|
+	|-Nullable<LeaderboardRecord>.Equals
+	|
+	|-Nullable<LeaderboardRecordInternal>.Equals
+	|
+	|-Nullable<LeaderboardUserScore>.Equals
+	|
+	|-Nullable<LeaderboardUserScoreInternal>.Equals
+	|
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.Equals
+	|
+	|-Nullable<QueryLeaderboardRanksOptions>.Equals
+	|
+	|-Nullable<QueryLeaderboardUserScoresOptions>.Equals
+	|
+	|-Nullable<UserScoresQueryStatInfo>.Equals
+	|
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.Equals
+	|
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.Equals
+	|
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.Equals
+	|
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.Equals
+	|
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.Equals
+	|
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.Equals
+	|
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.Equals
+	|
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.Equals
+	|
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.Equals
+	|
+	|-Nullable<Attribute>.Equals
+	|
+	|-Nullable<AttributeData>.Equals
+	|
+	|-Nullable<AttributeDataInternal>.Equals
+	|
+	|-Nullable<AttributeDataValue>.Equals
+	|
+	|-Nullable<AttributeInternal>.Equals
+	|
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.Equals
+	|
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.Equals
+	|
+	|-Nullable<CopyLobbyDetailsHandleOptions>.Equals
+	|
+	|-Nullable<CreateLobbyCallbackInfo>.Equals
+	|
+	|-Nullable<CreateLobbyOptions>.Equals
+	|
+	|-Nullable<CreateLobbySearchOptions>.Equals
+	|
+	|-Nullable<DestroyLobbyCallbackInfo>.Equals
+	|
+	|-Nullable<DestroyLobbyOptions>.Equals
+	|
+	|-Nullable<GetInviteCountOptions>.Equals
+	|
+	|-Nullable<GetInviteIdByIndexOptions>.Equals
+	|
+	|-Nullable<GetRTCRoomNameOptions>.Equals
+	|
+	|-Nullable<HardMuteMemberCallbackInfo>.Equals
+	|
+	|-Nullable<HardMuteMemberOptions>.Equals
+	|
+	|-Nullable<IsRTCRoomConnectedOptions>.Equals
+	|
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.Equals
+	|
+	|-Nullable<JoinLobbyByIdCallbackInfo>.Equals
+	|
+	|-Nullable<JoinLobbyByIdOptions>.Equals
+	|
+	|-Nullable<JoinLobbyCallbackInfo>.Equals
+	|
+	|-Nullable<JoinLobbyOptions>.Equals
+	|
+	|-Nullable<KickMemberCallbackInfo>.Equals
+	|
+	|-Nullable<KickMemberOptions>.Equals
+	|
+	|-Nullable<LeaveLobbyCallbackInfo>.Equals
+	|
+	|-Nullable<LeaveLobbyOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsCopyInfoOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.Equals
+	|
+	|-Nullable<LobbyDetailsInfo>.Equals
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.Equals
+	|
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.Equals
+	|
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.Equals
+	|
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<LobbyModificationAddAttributeOptions>.Equals
+	|
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.Equals
+	|
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.Equals
+	|
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.Equals
+	|
+	|-Nullable<LobbyModificationSetBucketIdOptions>.Equals
+	|
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.Equals
+	|
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.Equals
+	|
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.Equals
+	|
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.Equals
+	|
+	|-Nullable<LobbySearchFindCallbackInfo>.Equals
+	|
+	|-Nullable<LobbySearchFindOptions>.Equals
+	|
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.Equals
+	|
+	|-Nullable<LobbySearchRemoveParameterOptions>.Equals
+	|
+	|-Nullable<LobbySearchSetLobbyIdOptions>.Equals
+	|
+	|-Nullable<LobbySearchSetMaxResultsOptions>.Equals
+	|
+	|-Nullable<LobbySearchSetParameterOptions>.Equals
+	|
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.Equals
+	|
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<LocalRTCOptions>.Equals
+	|
+	|-Nullable<PromoteMemberCallbackInfo>.Equals
+	|
+	|-Nullable<PromoteMemberOptions>.Equals
+	|
+	|-Nullable<QueryInvitesCallbackInfo>.Equals
+	|
+	|-Nullable<QueryInvitesOptions>.Equals
+	|
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.Equals
+	|
+	|-Nullable<RejectInviteCallbackInfo>.Equals
+	|
+	|-Nullable<RejectInviteOptions>.Equals
+	|
+	|-Nullable<SendInviteCallbackInfo>.Equals
+	|
+	|-Nullable<SendInviteOptions>.Equals
+	|
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateLobbyCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateLobbyModificationOptions>.Equals
+	|
+	|-Nullable<UpdateLobbyOptions>.Equals
+	|
+	|-Nullable<LogMessage>.Equals
+	|
+	|-Nullable<BeginPlayerSessionOptions>.Equals
+	|
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.Equals
+	|
+	|-Nullable<EndPlayerSessionOptions>.Equals
+	|
+	|-Nullable<EndPlayerSessionOptionsAccountId>.Equals
+	|
+	|-Nullable<CopyModInfoOptions>.Equals
+	|
+	|-Nullable<EnumerateModsCallbackInfo>.Equals
+	|
+	|-Nullable<EnumerateModsOptions>.Equals
+	|
+	|-Nullable<InstallModCallbackInfo>.Equals
+	|
+	|-Nullable<InstallModOptions>.Equals
+	|
+	|-Nullable<ModIdentifier>.Equals
+	|
+	|-Nullable<ModIdentifierInternal>.Equals
+	|
+	|-Nullable<ModInfo>.Equals
+	|
+	|-Nullable<ModInfoInternal>.Equals
+	|
+	|-Nullable<UninstallModCallbackInfo>.Equals
+	|
+	|-Nullable<UninstallModOptions>.Equals
+	|
+	|-Nullable<UpdateModCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateModOptions>.Equals
+	|
+	|-Nullable<AcceptConnectionOptions>.Equals
+	|
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.Equals
+	|
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.Equals
+	|
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.Equals
+	|
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.Equals
+	|
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.Equals
+	|
+	|-Nullable<ClearPacketQueueOptions>.Equals
+	|
+	|-Nullable<CloseConnectionOptions>.Equals
+	|
+	|-Nullable<CloseConnectionsOptions>.Equals
+	|
+	|-Nullable<GetNATTypeOptions>.Equals
+	|
+	|-Nullable<GetNextReceivedPacketSizeOptions>.Equals
+	|
+	|-Nullable<GetPacketQueueInfoOptions>.Equals
+	|
+	|-Nullable<GetPortRangeOptions>.Equals
+	|
+	|-Nullable<GetRelayControlOptions>.Equals
+	|
+	|-Nullable<OnIncomingConnectionRequestInfo>.Equals
+	|
+	|-Nullable<OnIncomingPacketQueueFullInfo>.Equals
+	|
+	|-Nullable<OnPeerConnectionEstablishedInfo>.Equals
+	|
+	|-Nullable<OnPeerConnectionInterruptedInfo>.Equals
+	|
+	|-Nullable<OnQueryNATTypeCompleteInfo>.Equals
+	|
+	|-Nullable<OnRemoteConnectionClosedInfo>.Equals
+	|
+	|-Nullable<PacketQueueInfo>.Equals
+	|
+	|-Nullable<QueryNATTypeOptions>.Equals
+	|
+	|-Nullable<ReceivePacketOptions>.Equals
+	|
+	|-Nullable<SendPacketOptions>.Equals
+	|
+	|-Nullable<SetPacketQueueSizeOptions>.Equals
+	|
+	|-Nullable<SetPortRangeOptions>.Equals
+	|
+	|-Nullable<SetRelayControlOptions>.Equals
+	|
+	|-Nullable<SocketId>.Equals
+	|
+	|-Nullable<SocketIdInternal>.Equals
+	|
+	|-Nullable<PageQuery>.Equals
+	|
+	|-Nullable<PageResult>.Equals
+	|
+	|-Nullable<AndroidInitializeOptions>.Equals
+	|
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.Equals
+	|
+	|-Nullable<ClientCredentials>.Equals
+	|
+	|-Nullable<GetDesktopCrossplayStatusInfo>.Equals
+	|
+	|-Nullable<GetDesktopCrossplayStatusOptions>.Equals
+	|
+	|-Nullable<InitializeOptions>.Equals
+	|
+	|-Nullable<InitializeThreadAffinity>.Equals
+	|
+	|-Nullable<Options>.Equals
+	|
+	|-Nullable<RTCOptions>.Equals
+	|
+	|-Nullable<WindowsOptions>.Equals
+	|
+	|-Nullable<WindowsRTCOptions>.Equals
+	|
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.Equals
+	|
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.Equals
+	|
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Equals
+	|
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Equals
+	|
+	|-Nullable<DeleteCacheCallbackInfo>.Equals
+	|
+	|-Nullable<DeleteCacheOptions>.Equals
+	|
+	|-Nullable<DeleteFileCallbackInfo>.Equals
+	|
+	|-Nullable<DeleteFileOptions>.Equals
+	|
+	|-Nullable<DuplicateFileCallbackInfo>.Equals
+	|
+	|-Nullable<DuplicateFileOptions>.Equals
+	|
+	|-Nullable<FileMetadata>.Equals
+	|
+	|-Nullable<FileMetadataInternal>.Equals
+	|
+	|-Nullable<FileTransferProgressCallbackInfo>.Equals
+	|
+	|-Nullable<GetFileMetadataCountOptions>.Equals
+	|
+	|-Nullable<QueryFileCallbackInfo>.Equals
+	|
+	|-Nullable<QueryFileListCallbackInfo>.Equals
+	|
+	|-Nullable<QueryFileListOptions>.Equals
+	|
+	|-Nullable<QueryFileOptions>.Equals
+	|
+	|-Nullable<ReadFileCallbackInfo>.Equals
+	|
+	|-Nullable<ReadFileDataCallbackInfo>.Equals
+	|
+	|-Nullable<ReadFileOptions>.Equals
+	|
+	|-Nullable<WriteFileCallbackInfo>.Equals
+	|
+	|-Nullable<WriteFileDataCallbackInfo>.Equals
+	|
+	|-Nullable<WriteFileOptions>.Equals
+	|
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.Equals
+	|
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.Equals
+	|
+	|-Nullable<CopyPresenceOptions>.Equals
+	|
+	|-Nullable<CreatePresenceModificationOptions>.Equals
+	|
+	|-Nullable<DataRecord>.Equals
+	|
+	|-Nullable<GetJoinInfoOptions>.Equals
+	|
+	|-Nullable<HasPresenceOptions>.Equals
+	|
+	|-Nullable<Info>.Equals
+	|
+	|-Nullable<InfoInternal>.Equals
+	|
+	|-Nullable<JoinGameAcceptedCallbackInfo>.Equals
+	|
+	|-Nullable<PresenceChangedCallbackInfo>.Equals
+	|
+	|-Nullable<PresenceModificationDataRecordId>.Equals
+	|
+	|-Nullable<PresenceModificationDeleteDataOptions>.Equals
+	|
+	|-Nullable<PresenceModificationSetDataOptions>.Equals
+	|
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.Equals
+	|
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.Equals
+	|
+	|-Nullable<PresenceModificationSetStatusOptions>.Equals
+	|
+	|-Nullable<QueryPresenceCallbackInfo>.Equals
+	|
+	|-Nullable<QueryPresenceOptions>.Equals
+	|
+	|-Nullable<SetPresenceCallbackInfo>.Equals
+	|
+	|-Nullable<SetPresenceOptions>.Equals
+	|
+	|-Nullable<AddProgressionOptions>.Equals
+	|
+	|-Nullable<BeginSnapshotOptions>.Equals
+	|
+	|-Nullable<DeleteSnapshotCallbackInfo>.Equals
+	|
+	|-Nullable<DeleteSnapshotOptions>.Equals
+	|
+	|-Nullable<EndSnapshotOptions>.Equals
+	|
+	|-Nullable<SubmitSnapshotCallbackInfo>.Equals
+	|
+	|-Nullable<SubmitSnapshotOptions>.Equals
+	|
+	|-Nullable<AddNotifyDisconnectedOptions>.Equals
+	|
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.Equals
+	|
+	|-Nullable<BlockParticipantCallbackInfo>.Equals
+	|
+	|-Nullable<BlockParticipantOptions>.Equals
+	|
+	|-Nullable<DisconnectedCallbackInfo>.Equals
+	|
+	|-Nullable<JoinRoomCallbackInfo>.Equals
+	|
+	|-Nullable<JoinRoomOptions>.Equals
+	|
+	|-Nullable<LeaveRoomCallbackInfo>.Equals
+	|
+	|-Nullable<LeaveRoomOptions>.Equals
+	|
+	|-Nullable<ParticipantMetadata>.Equals
+	|
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.Equals
+	|
+	|-Nullable<SetRoomSettingOptions>.Equals
+	|
+	|-Nullable<SetSettingOptions>.Equals
+	|
+	|-Nullable<CopyUserTokenByIndexOptions>.Equals
+	|
+	|-Nullable<CopyUserTokenByUserIdOptions>.Equals
+	|
+	|-Nullable<KickCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<KickOptions>.Equals
+	|
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<QueryJoinRoomTokenOptions>.Equals
+	|
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<SetParticipantHardMuteOptions>.Equals
+	|
+	|-Nullable<UserToken>.Equals
+	|
+	|-Nullable<UserTokenInternal>.Equals
+	|
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.Equals
+	|
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.Equals
+	|
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.Equals
+	|
+	|-Nullable<AddNotifyAudioInputStateOptions>.Equals
+	|
+	|-Nullable<AddNotifyAudioOutputStateOptions>.Equals
+	|
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.Equals
+	|
+	|-Nullable<AudioBeforeRenderCallbackInfo>.Equals
+	|
+	|-Nullable<AudioBeforeSendCallbackInfo>.Equals
+	|
+	|-Nullable<AudioBuffer>.Equals
+	|
+	|-Nullable<AudioBufferInternal>.Equals
+	|
+	|-Nullable<AudioDevicesChangedCallbackInfo>.Equals
+	|
+	|-Nullable<AudioInputDeviceInfo>.Equals
+	|
+	|-Nullable<AudioInputDeviceInfoInternal>.Equals
+	|
+	|-Nullable<AudioInputStateCallbackInfo>.Equals
+	|
+	|-Nullable<AudioOutputDeviceInfo>.Equals
+	|
+	|-Nullable<AudioOutputDeviceInfoInternal>.Equals
+	|
+	|-Nullable<AudioOutputStateCallbackInfo>.Equals
+	|
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.Equals
+	|
+	|-Nullable<GetAudioInputDevicesCountOptions>.Equals
+	|
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.Equals
+	|
+	|-Nullable<GetAudioOutputDevicesCountOptions>.Equals
+	|
+	|-Nullable<ParticipantUpdatedCallbackInfo>.Equals
+	|
+	|-Nullable<RegisterPlatformAudioUserOptions>.Equals
+	|
+	|-Nullable<SendAudioOptions>.Equals
+	|
+	|-Nullable<SetAudioInputSettingsOptions>.Equals
+	|
+	|-Nullable<SetAudioOutputSettingsOptions>.Equals
+	|
+	|-Nullable<UnregisterPlatformAudioUserOptions>.Equals
+	|
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateParticipantVolumeOptions>.Equals
+	|
+	|-Nullable<UpdateReceivingCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateReceivingOptions>.Equals
+	|
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateReceivingVolumeOptions>.Equals
+	|
+	|-Nullable<UpdateSendingCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateSendingOptions>.Equals
+	|
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateSendingVolumeOptions>.Equals
+	|
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<SendPlayerBehaviorReportOptions>.Equals
+	|
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.Equals
+	|
+	|-Nullable<GetPlayerSanctionCountOptions>.Equals
+	|
+	|-Nullable<PlayerSanction>.Equals
+	|
+	|-Nullable<PlayerSanctionInternal>.Equals
+	|
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.Equals
+	|
+	|-Nullable<QueryActivePlayerSanctionsOptions>.Equals
+	|
+	|-Nullable<ActiveSessionCopyInfoOptions>.Equals
+	|
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.Equals
+	|
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.Equals
+	|
+	|-Nullable<ActiveSessionInfo>.Equals
+	|
+	|-Nullable<ActiveSessionInfoInternal>.Equals
+	|
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.Equals
+	|
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.Equals
+	|
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.Equals
+	|
+	|-Nullable<AttributeData>.Equals
+	|
+	|-Nullable<AttributeDataInternal>.Equals
+	|
+	|-Nullable<AttributeDataValue>.Equals
+	|
+	|-Nullable<CopyActiveSessionHandleOptions>.Equals
+	|
+	|-Nullable<CopySessionHandleByInviteIdOptions>.Equals
+	|
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.Equals
+	|
+	|-Nullable<CopySessionHandleForPresenceOptions>.Equals
+	|
+	|-Nullable<CreateSessionModificationOptions>.Equals
+	|
+	|-Nullable<CreateSessionSearchOptions>.Equals
+	|
+	|-Nullable<DestroySessionCallbackInfo>.Equals
+	|
+	|-Nullable<DestroySessionOptions>.Equals
+	|
+	|-Nullable<DumpSessionStateOptions>.Equals
+	|
+	|-Nullable<EndSessionCallbackInfo>.Equals
+	|
+	|-Nullable<EndSessionOptions>.Equals
+	|
+	|-Nullable<GetInviteCountOptions>.Equals
+	|
+	|-Nullable<GetInviteIdByIndexOptions>.Equals
+	|
+	|-Nullable<IsUserInSessionOptions>.Equals
+	|
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.Equals
+	|
+	|-Nullable<JoinSessionCallbackInfo>.Equals
+	|
+	|-Nullable<JoinSessionOptions>.Equals
+	|
+	|-Nullable<QueryInvitesCallbackInfo>.Equals
+	|
+	|-Nullable<QueryInvitesOptions>.Equals
+	|
+	|-Nullable<RegisterPlayersCallbackInfo>.Equals
+	|
+	|-Nullable<RegisterPlayersOptions>.Equals
+	|
+	|-Nullable<RejectInviteCallbackInfo>.Equals
+	|
+	|-Nullable<RejectInviteOptions>.Equals
+	|
+	|-Nullable<SendInviteCallbackInfo>.Equals
+	|
+	|-Nullable<SendInviteOptions>.Equals
+	|
+	|-Nullable<SessionDetailsAttribute>.Equals
+	|
+	|-Nullable<SessionDetailsAttributeInternal>.Equals
+	|
+	|-Nullable<SessionDetailsCopyInfoOptions>.Equals
+	|
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.Equals
+	|
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.Equals
+	|
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.Equals
+	|
+	|-Nullable<SessionDetailsInfo>.Equals
+	|
+	|-Nullable<SessionDetailsInfoInternal>.Equals
+	|
+	|-Nullable<SessionDetailsSettings>.Equals
+	|
+	|-Nullable<SessionDetailsSettingsInternal>.Equals
+	|
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.Equals
+	|
+	|-Nullable<SessionInviteReceivedCallbackInfo>.Equals
+	|
+	|-Nullable<SessionModificationAddAttributeOptions>.Equals
+	|
+	|-Nullable<SessionModificationRemoveAttributeOptions>.Equals
+	|
+	|-Nullable<SessionModificationSetBucketIdOptions>.Equals
+	|
+	|-Nullable<SessionModificationSetHostAddressOptions>.Equals
+	|
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.Equals
+	|
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.Equals
+	|
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.Equals
+	|
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.Equals
+	|
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.Equals
+	|
+	|-Nullable<SessionSearchFindCallbackInfo>.Equals
+	|
+	|-Nullable<SessionSearchFindOptions>.Equals
+	|
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.Equals
+	|
+	|-Nullable<SessionSearchRemoveParameterOptions>.Equals
+	|
+	|-Nullable<SessionSearchSetMaxResultsOptions>.Equals
+	|
+	|-Nullable<SessionSearchSetParameterOptions>.Equals
+	|
+	|-Nullable<SessionSearchSetSessionIdOptions>.Equals
+	|
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.Equals
+	|
+	|-Nullable<StartSessionCallbackInfo>.Equals
+	|
+	|-Nullable<StartSessionOptions>.Equals
+	|
+	|-Nullable<UnregisterPlayersCallbackInfo>.Equals
+	|
+	|-Nullable<UnregisterPlayersOptions>.Equals
+	|
+	|-Nullable<UpdateSessionCallbackInfo>.Equals
+	|
+	|-Nullable<UpdateSessionModificationOptions>.Equals
+	|
+	|-Nullable<UpdateSessionOptions>.Equals
+	|
+	|-Nullable<CopyStatByIndexOptions>.Equals
+	|
+	|-Nullable<CopyStatByNameOptions>.Equals
+	|
+	|-Nullable<GetStatCountOptions>.Equals
+	|
+	|-Nullable<IngestData>.Equals
+	|
+	|-Nullable<IngestStatCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<IngestStatOptions>.Equals
+	|
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.Equals
+	|
+	|-Nullable<QueryStatsOptions>.Equals
+	|
+	|-Nullable<Stat>.Equals
+	|
+	|-Nullable<StatInternal>.Equals
+	|
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Equals
+	|
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Equals
+	|
+	|-Nullable<DeleteCacheCallbackInfo>.Equals
+	|
+	|-Nullable<DeleteCacheOptions>.Equals
+	|
+	|-Nullable<FileMetadata>.Equals
+	|
+	|-Nullable<FileMetadataInternal>.Equals
+	|
+	|-Nullable<FileTransferProgressCallbackInfo>.Equals
+	|
+	|-Nullable<GetFileMetadataCountOptions>.Equals
+	|
+	|-Nullable<QueryFileCallbackInfo>.Equals
+	|
+	|-Nullable<QueryFileListCallbackInfo>.Equals
+	|
+	|-Nullable<QueryFileListOptions>.Equals
+	|
+	|-Nullable<QueryFileOptions>.Equals
+	|
+	|-Nullable<ReadFileCallbackInfo>.Equals
+	|
+	|-Nullable<ReadFileDataCallbackInfo>.Equals
+	|
+	|-Nullable<ReadFileOptions>.Equals
+	|
+	|-Nullable<AcknowledgeEventIdOptions>.Equals
+	|
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.Equals
+	|
+	|-Nullable<GetFriendsExclusiveInputOptions>.Equals
+	|
+	|-Nullable<GetFriendsVisibleOptions>.Equals
+	|
+	|-Nullable<GetToggleFriendsKeyOptions>.Equals
+	|
+	|-Nullable<HideFriendsCallbackInfo>.Equals
+	|
+	|-Nullable<HideFriendsOptions>.Equals
+	|
+	|-Nullable<IsSocialOverlayPausedOptions>.Equals
+	|
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.Equals
+	|
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.Equals
+	|
+	|-Nullable<OnShowReportPlayerCallbackInfo>.Equals
+	|
+	|-Nullable<PauseSocialOverlayOptions>.Equals
+	|
+	|-Nullable<PrePresentOptions>.Equals
+	|
+	|-Nullable<ReportKeyEventOptions>.Equals
+	|
+	|-Nullable<SetDisplayPreferenceOptions>.Equals
+	|
+	|-Nullable<SetToggleFriendsKeyOptions>.Equals
+	|
+	|-Nullable<ShowBlockPlayerOptions>.Equals
+	|
+	|-Nullable<ShowFriendsCallbackInfo>.Equals
+	|
+	|-Nullable<ShowFriendsOptions>.Equals
+	|
+	|-Nullable<ShowReportPlayerOptions>.Equals
+	|
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.Equals
+	|
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.Equals
+	|
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.Equals
+	|
+	|-Nullable<CopyUserInfoOptions>.Equals
+	|
+	|-Nullable<ExternalUserInfo>.Equals
+	|
+	|-Nullable<ExternalUserInfoInternal>.Equals
+	|
+	|-Nullable<GetExternalUserInfoCountOptions>.Equals
+	|
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.Equals
+	|
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.Equals
+	|
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.Equals
+	|
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.Equals
+	|
+	|-Nullable<QueryUserInfoCallbackInfo>.Equals
+	|
+	|-Nullable<QueryUserInfoOptions>.Equals
+	|
+	|-Nullable<UserInfoData>.Equals
+	|
+	|-Nullable<UserInfoDataInternal>.Equals
 	|
 	|-Nullable<ImageStorageEntity.ImageRequest>.Equals
 	|
@@ -4213,6 +8353,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Int32Enum>.Equals
 	|
 	|-Nullable<long>.Equals
+	|
+	|-Nullable<IntPtr>.Equals
 	|
 	|-Nullable<Token>.Equals
 	|
@@ -4248,36 +8390,744 @@ public struct Nullable<T> // TypeDefIndex: 380
 	private bool Equals(Nullable<T> other) { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.Equals
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.Equals
+	|-Nullable<GetAchievementDefinitionCountOptions>.Equals
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.Equals
+	|-Nullable<AddNotifyMessageToPeerOptions>.Equals
+	|-Nullable<AddNotifyMessageToServerOptions>.Equals
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.Equals
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.Equals
+	|-Nullable<EndSessionOptions>.Equals
+	|-Nullable<AddNotifyClientActionRequiredOptions>.Equals
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.Equals
+	|-Nullable<AddNotifyMessageToClientOptions>.Equals
+	|-Nullable<EndSessionOptions>.Equals
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Equals
+	|-Nullable<CopyUserAuthTokenOptions>.Equals
+	|-Nullable<AddNotifyAuthExpirationOptions>.Equals
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Equals
+	|-Nullable<DeleteDeviceIdOptions>.Equals
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.Equals
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.Equals
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.Equals
+	|-Nullable<TransactionGetEntitlementsCountOptions>.Equals
+	|-Nullable<AddNotifyFriendsUpdateOptions>.Equals
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.Equals
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.Equals
+	|-Nullable<QueryAgeGateOptions>.Equals
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.Equals
+	|-Nullable<GetLeaderboardRecordCountOptions>.Equals
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.Equals
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.Equals
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.Equals
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.Equals
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.Equals
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.Equals
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.Equals
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.Equals
+	|-Nullable<LobbyDetailsCopyInfoOptions>.Equals
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.Equals
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.Equals
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.Equals
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.Equals
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.Equals
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.Equals
+	|-Nullable<GetNATTypeOptions>.Equals
+	|-Nullable<GetPacketQueueInfoOptions>.Equals
+	|-Nullable<GetPortRangeOptions>.Equals
+	|-Nullable<GetRelayControlOptions>.Equals
+	|-Nullable<QueryNATTypeOptions>.Equals
+	|-Nullable<GetDesktopCrossplayStatusOptions>.Equals
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.Equals
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.Equals
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.Equals
+	|-Nullable<GetAudioInputDevicesCountOptions>.Equals
+	|-Nullable<GetAudioOutputDevicesCountOptions>.Equals
+	|-Nullable<ActiveSessionCopyInfoOptions>.Equals
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.Equals
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.Equals
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.Equals
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.Equals
+	|-Nullable<SessionDetailsCopyInfoOptions>.Equals
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.Equals
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.Equals
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.Equals
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.Equals
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.Equals
+	|-Nullable<GetToggleFriendsKeyOptions>.Equals
+	|-Nullable<IsSocialOverlayPausedOptions>.Equals
+	|-Nullable<PauseSocialOverlayOptions>.Equals
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.Equals
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.Equals
+	|-Nullable<GetPlayerAchievementCountOptions>.Equals
+	|-Nullable<GetUnlockedAchievementCountOptions>.Equals
+	|-Nullable<AddExternalIntegrityCatalogOptions>.Equals
+	|-Nullable<SetGameSessionIdOptions>.Equals
+	|-Nullable<AccountFeatureRestrictedInfo>.Equals
+	|-Nullable<CopyIdTokenOptions>.Equals
+	|-Nullable<DeletePersistentAuthOptions>.Equals
+	|-Nullable<LogoutOptions>.Equals
+	|-Nullable<CopyIdTokenOptions>.Equals
+	|-Nullable<CopyProductUserInfoOptions>.Equals
+	|-Nullable<CreateDeviceIdOptions>.Equals
+	|-Nullable<CreateUserOptions>.Equals
+	|-Nullable<GetProductUserExternalAccountCountOptions>.Equals
+	|-Nullable<UnlinkAccountOptions>.Equals
+	|-Nullable<UserLoginInfo>.Equals
+	|-Nullable<CheckoutEntry>.Equals
+	|-Nullable<GetEntitlementsCountOptions>.Equals
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.Equals
+	|-Nullable<GetOfferCountOptions>.Equals
+	|-Nullable<GetTransactionCountOptions>.Equals
+	|-Nullable<GetFriendsCountOptions>.Equals
+	|-Nullable<QueryFriendsOptions>.Equals
+	|-Nullable<GetPermissionsCountOptions>.Equals
+	|-Nullable<QueryPermissionsOptions>.Equals
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.Equals
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.Equals
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.Equals
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.Equals
+	|-Nullable<GetInviteCountOptions>.Equals
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.Equals
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.Equals
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.Equals
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.Equals
+	|-Nullable<LobbyModificationSetBucketIdOptions>.Equals
+	|-Nullable<LobbySearchFindOptions>.Equals
+	|-Nullable<LobbySearchSetLobbyIdOptions>.Equals
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.Equals
+	|-Nullable<QueryInvitesOptions>.Equals
+	|-Nullable<UpdateLobbyOptions>.Equals
+	|-Nullable<SocketId>.Equals
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.Equals
+	|-Nullable<DeleteCacheOptions>.Equals
+	|-Nullable<GetFileMetadataCountOptions>.Equals
+	|-Nullable<QueryFileListOptions>.Equals
+	|-Nullable<CreatePresenceModificationOptions>.Equals
+	|-Nullable<PresenceModificationDataRecordId>.Equals
+	|-Nullable<PresenceModificationDeleteDataOptions>.Equals
+	|-Nullable<PresenceModificationSetDataOptions>.Equals
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.Equals
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.Equals
+	|-Nullable<BeginSnapshotOptions>.Equals
+	|-Nullable<DeleteSnapshotOptions>.Equals
+	|-Nullable<AudioDevicesChangedCallbackInfo>.Equals
+	|-Nullable<RegisterPlatformAudioUserOptions>.Equals
+	|-Nullable<UnregisterPlatformAudioUserOptions>.Equals
+	|-Nullable<GetPlayerSanctionCountOptions>.Equals
+	|-Nullable<CopyActiveSessionHandleOptions>.Equals
+	|-Nullable<CopySessionHandleByInviteIdOptions>.Equals
+	|-Nullable<CopySessionHandleForPresenceOptions>.Equals
+	|-Nullable<DestroySessionOptions>.Equals
+	|-Nullable<DumpSessionStateOptions>.Equals
+	|-Nullable<EndSessionOptions>.Equals
+	|-Nullable<GetInviteCountOptions>.Equals
+	|-Nullable<QueryInvitesOptions>.Equals
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.Equals
+	|-Nullable<SessionModificationRemoveAttributeOptions>.Equals
+	|-Nullable<SessionModificationSetBucketIdOptions>.Equals
+	|-Nullable<SessionModificationSetHostAddressOptions>.Equals
+	|-Nullable<SessionSearchFindOptions>.Equals
+	|-Nullable<SessionSearchSetSessionIdOptions>.Equals
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.Equals
+	|-Nullable<StartSessionOptions>.Equals
+	|-Nullable<UpdateSessionModificationOptions>.Equals
+	|-Nullable<UpdateSessionOptions>.Equals
+	|-Nullable<GetStatCountOptions>.Equals
+	|-Nullable<DeleteCacheOptions>.Equals
+	|-Nullable<GetFileMetadataCountOptions>.Equals
+	|-Nullable<GetFriendsExclusiveInputOptions>.Equals
+	|-Nullable<GetFriendsVisibleOptions>.Equals
+	|-Nullable<HideFriendsOptions>.Equals
+	|-Nullable<ShowFriendsOptions>.Equals
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.Equals
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.Equals
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Equals
+	|-Nullable<PollStatusOptions>.Equals
+	|-Nullable<LogGameRoundEndOptions>.Equals
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Equals
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.Equals
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.Equals
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.Equals
+	|-Nullable<CreateLobbySearchOptions>.Equals
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.Equals
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.Equals
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.Equals
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.Equals
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.Equals
+	|-Nullable<LobbySearchSetMaxResultsOptions>.Equals
+	|-Nullable<SetRelayControlOptions>.Equals
+	|-Nullable<PresenceModificationSetStatusOptions>.Equals
+	|-Nullable<EndSnapshotOptions>.Equals
+	|-Nullable<SubmitSnapshotOptions>.Equals
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.Equals
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.Equals
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.Equals
+	|-Nullable<CreateSessionSearchOptions>.Equals
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.Equals
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.Equals
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.Equals
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.Equals
+	|-Nullable<SessionSearchSetMaxResultsOptions>.Equals
+	|-Nullable<SetDisplayPreferenceOptions>.Equals
+	|-Nullable<SetToggleFriendsKeyOptions>.Equals
+	|-Nullable<EncryptedAppTicketResponse_t>.Equals
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.Equals
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.Equals
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.Equals
+	|-Nullable<QueryDefinitionsOptions>.Equals
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.Equals
+	|-Nullable<OnMessageToServerCallbackInfo>.Equals
+	|-Nullable<ProtectMessageOptions>.Equals
+	|-Nullable<UnprotectMessageOptions>.Equals
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.Equals
+	|-Nullable<LoginStatusChangedCallbackInfo>.Equals
+	|-Nullable<VerifyIdTokenOptions>.Equals
+	|-Nullable<GetExternalAccountMappingsOptions>.Equals
+	|-Nullable<GetProductUserIdMappingOptions>.Equals
+	|-Nullable<LoginStatusChangedCallbackInfo>.Equals
+	|-Nullable<QueryExternalAccountMappingsOptions>.Equals
+	|-Nullable<QueryProductUserIdMappingsOptions>.Equals
+	|-Nullable<TransferDeviceIdAccountOptions>.Equals
+	|-Nullable<VerifyIdTokenOptions>.Equals
+	|-Nullable<CatalogRelease>.Equals
+	|-Nullable<CheckoutOptions>.Equals
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.Equals
+	|-Nullable<CopyItemImageInfoByIndexOptions>.Equals
+	|-Nullable<CopyItemReleaseByIndexOptions>.Equals
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.Equals
+	|-Nullable<CopyOfferItemByIndexOptions>.Equals
+	|-Nullable<KeyImageInfo>.Equals
+	|-Nullable<QueryEntitlementsOptions>.Equals
+	|-Nullable<QueryOwnershipOptions>.Equals
+	|-Nullable<QueryOwnershipTokenOptions>.Equals
+	|-Nullable<Options>.Equals
+	|-Nullable<CreateUserOptions>.Equals
+	|-Nullable<LeaderboardRecord>.Equals
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.Equals
+	|-Nullable<KickMemberOptions>.Equals
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.Equals
+	|-Nullable<PromoteMemberOptions>.Equals
+	|-Nullable<SendInviteOptions>.Equals
+	|-Nullable<LogMessage>.Equals
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.Equals
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.Equals
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.Equals
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.Equals
+	|-Nullable<CloseConnectionsOptions>.Equals
+	|-Nullable<DuplicateFileOptions>.Equals
+	|-Nullable<PresenceChangedCallbackInfo>.Equals
+	|-Nullable<SetParticipantHardMuteOptions>.Equals
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.Equals
+	|-Nullable<SetAudioInputSettingsOptions>.Equals
+	|-Nullable<SetAudioOutputSettingsOptions>.Equals
+	|-Nullable<UpdateReceivingVolumeOptions>.Equals
+	|-Nullable<UpdateSendingOptions>.Equals
+	|-Nullable<UpdateSendingVolumeOptions>.Equals
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.Equals
+	|-Nullable<SendInviteOptions>.Equals
+	|-Nullable<SessionDetailsSettings>.Equals
+	|-Nullable<IngestStatOptions>.Equals
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.Equals
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.Equals
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.Equals
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.Equals
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.Equals
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.Equals
+	|-Nullable<PlayerStatInfo>.Equals
+	|-Nullable<QueryPlayerAchievementsOptions>.Equals
+	|-Nullable<StatThresholds>.Equals
+	|-Nullable<UnlockAchievementsOptions>.Equals
+	|-Nullable<BeginSessionOptions>.Equals
+	|-Nullable<ReceiveMessageFromServerOptions>.Equals
+	|-Nullable<RegisterEventParamDef>.Equals
+	|-Nullable<IdToken>.Equals
+	|-Nullable<QueryIdTokenOptions>.Equals
+	|-Nullable<AuthExpirationCallbackInfo>.Equals
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.Equals
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.Equals
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.Equals
+	|-Nullable<Credentials>.Equals
+	|-Nullable<IdToken>.Equals
+	|-Nullable<LinkAccountOptions>.Equals
+	|-Nullable<SendCustomInviteOptions>.Equals
+	|-Nullable<SetCustomInviteOptions>.Equals
+	|-Nullable<CopyEntitlementByIdOptions>.Equals
+	|-Nullable<CopyEntitlementByIndexOptions>.Equals
+	|-Nullable<CopyItemByIdOptions>.Equals
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.Equals
+	|-Nullable<CopyOfferByIdOptions>.Equals
+	|-Nullable<CopyOfferByIndexOptions>.Equals
+	|-Nullable<CopyTransactionByIdOptions>.Equals
+	|-Nullable<CopyTransactionByIndexOptions>.Equals
+	|-Nullable<GetEntitlementsByNameCountOptions>.Equals
+	|-Nullable<GetItemImageInfoCountOptions>.Equals
+	|-Nullable<GetItemReleaseCountOptions>.Equals
+	|-Nullable<GetOfferImageInfoCountOptions>.Equals
+	|-Nullable<GetOfferItemCountOptions>.Equals
+	|-Nullable<ItemOwnership>.Equals
+	|-Nullable<QueryOffersOptions>.Equals
+	|-Nullable<RedeemEntitlementsOptions>.Equals
+	|-Nullable<AcceptInviteOptions>.Equals
+	|-Nullable<GetFriendAtIndexOptions>.Equals
+	|-Nullable<GetStatusOptions>.Equals
+	|-Nullable<RejectInviteOptions>.Equals
+	|-Nullable<SendInviteOptions>.Equals
+	|-Nullable<SteamOptions>.Equals
+	|-Nullable<CopyPermissionByIndexOptions>.Equals
+	|-Nullable<GetPermissionByKeyOptions>.Equals
+	|-Nullable<PermissionStatus>.Equals
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.Equals
+	|-Nullable<RequestPermissionsOptions>.Equals
+	|-Nullable<UpdateParentEmailOptions>.Equals
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.Equals
+	|-Nullable<LeaderboardUserScore>.Equals
+	|-Nullable<QueryLeaderboardRanksOptions>.Equals
+	|-Nullable<UserScoresQueryStatInfo>.Equals
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.Equals
+	|-Nullable<CopyLobbyDetailsHandleOptions>.Equals
+	|-Nullable<DestroyLobbyOptions>.Equals
+	|-Nullable<GetInviteIdByIndexOptions>.Equals
+	|-Nullable<GetRTCRoomNameOptions>.Equals
+	|-Nullable<IsRTCRoomConnectedOptions>.Equals
+	|-Nullable<LeaveLobbyOptions>.Equals
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.Equals
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.Equals
+	|-Nullable<LobbySearchRemoveParameterOptions>.Equals
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.Equals
+	|-Nullable<RejectInviteOptions>.Equals
+	|-Nullable<UpdateLobbyModificationOptions>.Equals
+	|-Nullable<CopyModInfoOptions>.Equals
+	|-Nullable<EnumerateModsOptions>.Equals
+	|-Nullable<ModInfo>.Equals
+	|-Nullable<GetNextReceivedPacketSizeOptions>.Equals
+	|-Nullable<ReceivePacketOptions>.Equals
+	|-Nullable<ClientCredentials>.Equals
+	|-Nullable<WindowsRTCOptions>.Equals
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Equals
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Equals
+	|-Nullable<DeleteFileOptions>.Equals
+	|-Nullable<QueryFileOptions>.Equals
+	|-Nullable<CopyPresenceOptions>.Equals
+	|-Nullable<DataRecord>.Equals
+	|-Nullable<GetJoinInfoOptions>.Equals
+	|-Nullable<HasPresenceOptions>.Equals
+	|-Nullable<QueryPresenceOptions>.Equals
+	|-Nullable<SetPresenceOptions>.Equals
+	|-Nullable<AddNotifyDisconnectedOptions>.Equals
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.Equals
+	|-Nullable<LeaveRoomOptions>.Equals
+	|-Nullable<ParticipantMetadata>.Equals
+	|-Nullable<SetSettingOptions>.Equals
+	|-Nullable<CopyUserTokenByUserIdOptions>.Equals
+	|-Nullable<KickOptions>.Equals
+	|-Nullable<UserToken>.Equals
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.Equals
+	|-Nullable<AddNotifyAudioInputStateOptions>.Equals
+	|-Nullable<AddNotifyAudioOutputStateOptions>.Equals
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.Equals
+	|-Nullable<AudioBuffer>.Equals
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.Equals
+	|-Nullable<QueryActivePlayerSanctionsOptions>.Equals
+	|-Nullable<GetInviteIdByIndexOptions>.Equals
+	|-Nullable<IsUserInSessionOptions>.Equals
+	|-Nullable<RegisterPlayersOptions>.Equals
+	|-Nullable<RejectInviteOptions>.Equals
+	|-Nullable<SessionSearchRemoveParameterOptions>.Equals
+	|-Nullable<UnregisterPlayersOptions>.Equals
+	|-Nullable<CopyStatByIndexOptions>.Equals
+	|-Nullable<CopyStatByNameOptions>.Equals
+	|-Nullable<IngestData>.Equals
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Equals
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Equals
+	|-Nullable<QueryFileListOptions>.Equals
+	|-Nullable<QueryFileOptions>.Equals
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.Equals
+	|-Nullable<ShowBlockPlayerOptions>.Equals
+	|-Nullable<ShowReportPlayerOptions>.Equals
+	|-Nullable<CopyUserInfoOptions>.Equals
+	|-Nullable<GetExternalUserInfoCountOptions>.Equals
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.Equals
+	|-Nullable<QueryUserInfoOptions>.Equals
 	|-Nullable<ImageStorageEntity.ImageRequest>.Equals
 	|
+	|-Nullable<Definition>.Equals
+	|-Nullable<VerifyUserAuthOptions>.Equals
+	|-Nullable<ActiveSessionInfo>.Equals
+	|
+	|-Nullable<DefinitionInternal>.Equals
+	|
+	|-Nullable<DefinitionV2>.Equals
+	|-Nullable<PlayerAchievement>.Equals
+	|-Nullable<Token>.Equals
+	|-Nullable<CatalogItem>.Equals
+	|-Nullable<Attribute>.Equals
+	|-Nullable<LobbyModificationAddAttributeOptions>.Equals
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.Equals
+	|-Nullable<LobbySearchSetParameterOptions>.Equals
+	|-Nullable<SessionDetailsAttribute>.Equals
+	|-Nullable<SessionModificationAddAttributeOptions>.Equals
+	|-Nullable<SessionSearchSetParameterOptions>.Equals
+	|
+	|-Nullable<DefinitionV2Internal>.Equals
+	|-Nullable<TokenInternal>.Equals
+	|-Nullable<CatalogItemInternal>.Equals
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.Equals
+	|-Nullable<IOSCredentials>.Equals
+	|-Nullable<LobbyDetailsInfo>.Equals
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.Equals
+	|-Nullable<OnPeerConnectionEstablishedInfo>.Equals
+	|-Nullable<OnRemoteConnectionClosedInfo>.Equals
+	|-Nullable<ReadFileDataCallbackInfo>.Equals
+	|-Nullable<JoinRoomOptions>.Equals
+	|-Nullable<AudioBeforeSendCallbackInfo>.Equals
+	|-Nullable<ReadFileDataCallbackInfo>.Equals
+	|-Nullable<UserInfoData>.Equals
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.Equals
+	|-Nullable<DeletePersistentAuthCallbackInfo>.Equals
+	|-Nullable<VerifyUserAuthCallbackInfo>.Equals
+	|-Nullable<CreateDeviceIdCallbackInfo>.Equals
+	|-Nullable<DeleteDeviceIdCallbackInfo>.Equals
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.Equals
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.Equals
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.Equals
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.Equals
+	|-Nullable<LobbySearchFindCallbackInfo>.Equals
+	|-Nullable<SocketIdInternal>.Equals
+	|-Nullable<SubmitSnapshotCallbackInfo>.Equals
+	|-Nullable<KickCompleteCallbackInfo>.Equals
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.Equals
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.Equals
+	|-Nullable<DestroySessionCallbackInfo>.Equals
+	|-Nullable<EndSessionCallbackInfo>.Equals
+	|-Nullable<JoinSessionCallbackInfo>.Equals
+	|-Nullable<RejectInviteCallbackInfo>.Equals
+	|-Nullable<SendInviteCallbackInfo>.Equals
+	|-Nullable<SessionSearchFindCallbackInfo>.Equals
+	|-Nullable<StartSessionCallbackInfo>.Equals
+	|-Nullable<Image>.Equals
+	|-Nullable<SteamInventoryRequestPricesResult_t>.Equals
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.Equals
+	|-Nullable<ReceiveMessageFromPeerOptions>.Equals
+	|-Nullable<ReceiveMessageFromClientOptions>.Equals
+	|-Nullable<LinkAccountOptions>.Equals
+	|-Nullable<LogoutCallbackInfo>.Equals
+	|-Nullable<CreateUserCallbackInfo>.Equals
+	|-Nullable<LinkAccountCallbackInfo>.Equals
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.Equals
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.Equals
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.Equals
+	|-Nullable<UnlinkAccountCallbackInfo>.Equals
+	|-Nullable<QueryEntitlementsCallbackInfo>.Equals
+	|-Nullable<QueryOffersCallbackInfo>.Equals
+	|-Nullable<QueryFriendsCallbackInfo>.Equals
+	|-Nullable<RequestPermissionsCallbackInfo>.Equals
+	|-Nullable<UpdateParentEmailCallbackInfo>.Equals
+	|-Nullable<CreateLobbyCallbackInfo>.Equals
+	|-Nullable<DestroyLobbyCallbackInfo>.Equals
+	|-Nullable<JoinLobbyByIdCallbackInfo>.Equals
+	|-Nullable<JoinLobbyCallbackInfo>.Equals
+	|-Nullable<KickMemberCallbackInfo>.Equals
+	|-Nullable<LeaveLobbyCallbackInfo>.Equals
+	|-Nullable<PromoteMemberCallbackInfo>.Equals
+	|-Nullable<QueryInvitesCallbackInfo>.Equals
+	|-Nullable<RejectInviteCallbackInfo>.Equals
+	|-Nullable<SendInviteCallbackInfo>.Equals
+	|-Nullable<UpdateLobbyCallbackInfo>.Equals
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.Equals
+	|-Nullable<EndPlayerSessionOptions>.Equals
+	|-Nullable<EndPlayerSessionOptionsAccountId>.Equals
+	|-Nullable<OnQueryNATTypeCompleteInfo>.Equals
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.Equals
+	|-Nullable<DeleteCacheCallbackInfo>.Equals
+	|-Nullable<DeleteFileCallbackInfo>.Equals
+	|-Nullable<DuplicateFileCallbackInfo>.Equals
+	|-Nullable<QueryFileCallbackInfo>.Equals
+	|-Nullable<SetPresenceCallbackInfo>.Equals
+	|-Nullable<AddProgressionOptions>.Equals
+	|-Nullable<DeleteSnapshotCallbackInfo>.Equals
+	|-Nullable<AudioInputDeviceInfo>.Equals
+	|-Nullable<AudioOutputDeviceInfo>.Equals
+	|-Nullable<QueryInvitesCallbackInfo>.Equals
+	|-Nullable<UnregisterPlayersCallbackInfo>.Equals
+	|-Nullable<DeleteCacheCallbackInfo>.Equals
+	|-Nullable<QueryFileCallbackInfo>.Equals
+	|-Nullable<HideFriendsCallbackInfo>.Equals
+	|-Nullable<ShowFriendsCallbackInfo>.Equals
 	|-Nullable<JsonPosition>.Equals
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.Equals
-	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.Equals
+	|-Nullable<RegisterEventOptions>.Equals
+	|-Nullable<BeginSessionOptions>.Equals
+	|-Nullable<ProtectMessageOptions>.Equals
+	|-Nullable<UnprotectMessageOptions>.Equals
+	|-Nullable<QueryIdTokenCallbackInfo>.Equals
+	|-Nullable<LoginCallbackInfo>.Equals
+	|-Nullable<SendCustomInviteCallbackInfo>.Equals
+	|-Nullable<CheckoutCallbackInfo>.Equals
+	|-Nullable<QueryOwnershipCallbackInfo>.Equals
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.Equals
+	|-Nullable<RedeemEntitlementsCallbackInfo>.Equals
+	|-Nullable<AcceptInviteCallbackInfo>.Equals
+	|-Nullable<RejectInviteCallbackInfo>.Equals
+	|-Nullable<SendInviteCallbackInfo>.Equals
+	|-Nullable<QueryAgeGateCallbackInfo>.Equals
+	|-Nullable<HardMuteMemberCallbackInfo>.Equals
+	|-Nullable<EnumerateModsCallbackInfo>.Equals
+	|-Nullable<QueryFileListCallbackInfo>.Equals
+	|-Nullable<ReadFileCallbackInfo>.Equals
+	|-Nullable<WriteFileCallbackInfo>.Equals
+	|-Nullable<QueryPresenceCallbackInfo>.Equals
+	|-Nullable<DisconnectedCallbackInfo>.Equals
+	|-Nullable<JoinRoomCallbackInfo>.Equals
+	|-Nullable<LeaveRoomCallbackInfo>.Equals
+	|-Nullable<PlayerSanction>.Equals
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.Equals
+	|-Nullable<RegisterPlayersCallbackInfo>.Equals
+	|-Nullable<UpdateSessionCallbackInfo>.Equals
+	|-Nullable<IngestStatCompleteCallbackInfo>.Equals
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.Equals
+	|-Nullable<FileMetadata>.Equals
+	|-Nullable<QueryFileListCallbackInfo>.Equals
+	|-Nullable<ReadFileCallbackInfo>.Equals
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.Equals
+	|-Nullable<OnShowReportPlayerCallbackInfo>.Equals
+	|-Nullable<ExternalUserInfo>.Equals
+	|-Nullable<QueryUserInfoCallbackInfo>.Equals
 	|-Nullable<Option>.Equals
 	|
-	|-Nullable<ServerInfo>.Equals
+	|-Nullable<PlayerAchievementInternal>.Equals
+	|-Nullable<InfoInternal>.Equals
 	|
+	|-Nullable<UnlockedAchievement>.Equals
+	|-Nullable<LogGameRoundStartOptions>.Equals
+	|-Nullable<OnClientActionRequiredCallbackInfo>.Equals
+	|-Nullable<OnMessageToClientCallbackInfo>.Equals
+	|-Nullable<PinGrantInfo>.Equals
+	|-Nullable<FinalizeInviteOptions>.Equals
+	|-Nullable<OnFriendsUpdateInfo>.Equals
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.Equals
+	|-Nullable<HardMuteMemberOptions>.Equals
+	|-Nullable<JoinLobbyByIdOptions>.Equals
+	|-Nullable<JoinLobbyOptions>.Equals
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.Equals
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.Equals
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.Equals
+	|-Nullable<AcceptConnectionOptions>.Equals
+	|-Nullable<ClearPacketQueueOptions>.Equals
+	|-Nullable<CloseConnectionOptions>.Equals
+	|-Nullable<FileTransferProgressCallbackInfo>.Equals
+	|-Nullable<WriteFileDataCallbackInfo>.Equals
+	|-Nullable<BlockParticipantOptions>.Equals
+	|-Nullable<SetRoomSettingOptions>.Equals
+	|-Nullable<QueryJoinRoomTokenOptions>.Equals
+	|-Nullable<AudioInputStateCallbackInfo>.Equals
+	|-Nullable<AudioOutputStateCallbackInfo>.Equals
+	|-Nullable<UpdateParticipantVolumeOptions>.Equals
+	|-Nullable<UpdateReceivingOptions>.Equals
+	|-Nullable<JoinSessionOptions>.Equals
+	|-Nullable<SessionInviteReceivedCallbackInfo>.Equals
+	|-Nullable<FileTransferProgressCallbackInfo>.Equals
+	|
+	|-Nullable<UnlockedAchievementInternal>.Equals
+	|-Nullable<LogPlayerUseAbilityOptions>.Equals
+	|-Nullable<IdTokenInternal>.Equals
+	|-Nullable<IdTokenInternal>.Equals
+	|-Nullable<PermissionStatusInternal>.Equals
+	|-Nullable<LeaderboardUserScoreInternal>.Equals
+	|-Nullable<AttributeInternal>.Equals
+	|-Nullable<ModInfoInternal>.Equals
+	|-Nullable<UserTokenInternal>.Equals
+	|-Nullable<AudioInputDeviceInfoInternal>.Equals
+	|-Nullable<AudioOutputDeviceInfoInternal>.Equals
+	|-Nullable<SessionDetailsAttributeInternal>.Equals
 	|-Nullable<CreateItemResult_t>.Equals
 	|-Nullable<InventoryPurchaseResult>.Equals
 	|-Nullable<SteamInventoryStartPurchaseResult_t>.Equals
 	|-Nullable<ResultPage>.Equals
 	|
-	|-Nullable<EncryptedAppTicketResponse_t>.Equals
+	|-Nullable<RegisterPeerOptions>.Equals
 	|
-	|-Nullable<Image>.Equals
-	|-Nullable<SteamInventoryRequestPricesResult_t>.Equals
+	|-Nullable<UnregisterPeerOptions>.Equals
+	|-Nullable<LogPlayerDespawnOptions>.Equals
+	|-Nullable<UnregisterClientOptions>.Equals
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.Equals
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.Equals
+	|-Nullable<RTCOptions>.Equals
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.Equals
+	|-Nullable<PrePresentOptions>.Equals
+	|-Nullable<ReportKeyEventOptions>.Equals
+	|-Nullable<SteamId>.Equals
 	|
+	|-Nullable<LogEventOptions>.Equals
+	|
+	|-Nullable<LogEventParamPair>.Equals
+	|-Nullable<LogEventParamPairParamValue>.Equals
+	|
+	|-Nullable<LogPlayerReviveOptions>.Equals
+	|-Nullable<LogPlayerSpawnOptions>.Equals
+	|-Nullable<SetClientDetailsOptions>.Equals
+	|-Nullable<SetClientNetworkStateOptions>.Equals
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.Equals
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.Equals
+	|-Nullable<SetPacketQueueSizeOptions>.Equals
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.Equals
+	|-Nullable<AcknowledgeEventIdOptions>.Equals
 	|-Nullable<SetUserItemVoteResult_t>.Equals
 	|-Nullable<SubmitItemUpdateResult_t>.Equals
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>.Equals
+	|-Nullable<LogPlayerTakeDamageOptions>.Equals
 	|
+	|-Nullable<LogPlayerTickOptions>.Equals
+	|-Nullable<UserInfoDataInternal>.Equals
+	|
+	|-Nullable<LogPlayerUseWeaponData>.Equals
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.Equals
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.Equals
+	|
+	|-Nullable<Quat>.Equals
+	|-Nullable<QuatInternal>.Equals
+	|
+	|-Nullable<Vec3f>.Equals
+	|-Nullable<Vec3fInternal>.Equals
+	|-Nullable<PageResult>.Equals
+	|-Nullable<Token>.Equals
+	|
+	|-Nullable<RegisterClientOptions>.Equals
+	|
+	|-Nullable<Credentials>.Equals
+	|-Nullable<LoginOptions>.Equals
+	|-Nullable<CustomInviteRejectedCallbackInfo>.Equals
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.Equals
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.Equals
+	|-Nullable<Entitlement>.Equals
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.Equals
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.Equals
+	|-Nullable<ModIdentifier>.Equals
+	|-Nullable<OnIncomingConnectionRequestInfo>.Equals
+	|-Nullable<OnIncomingPacketQueueFullInfo>.Equals
+	|-Nullable<OnPeerConnectionInterruptedInfo>.Equals
+	|-Nullable<ReadFileOptions>.Equals
+	|-Nullable<WriteFileOptions>.Equals
+	|-Nullable<JoinGameAcceptedCallbackInfo>.Equals
+	|-Nullable<ParticipantUpdatedCallbackInfo>.Equals
+	|-Nullable<SendAudioOptions>.Equals
+	|-Nullable<SendPlayerBehaviorReportOptions>.Equals
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.Equals
+	|-Nullable<ReadFileOptions>.Equals
+	|
+	|-Nullable<IOSLoginOptions>.Equals
+	|-Nullable<AttributeData>.Equals
+	|-Nullable<CreateLobbyOptions>.Equals
+	|-Nullable<InstallModOptions>.Equals
+	|-Nullable<AttributeData>.Equals
+	|-Nullable<Stat>.Equals
+	|
+	|-Nullable<LinkAccountCallbackInfo>.Equals
+	|-Nullable<InstallModCallbackInfo>.Equals
+	|-Nullable<UninstallModCallbackInfo>.Equals
+	|-Nullable<UpdateModCallbackInfo>.Equals
+	|-Nullable<Info>.Equals
+	|
+	|-Nullable<LoginCallbackInfo>.Equals
+	|-Nullable<VerifyIdTokenCallbackInfo>.Equals
+	|
+	|-Nullable<LoginOptions>.Equals
+	|-Nullable<ExternalAccountInfo>.Equals
+	|-Nullable<UninstallModOptions>.Equals
+	|-Nullable<UpdateModOptions>.Equals
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.Equals
+	|-Nullable<AudioBeforeRenderCallbackInfo>.Equals
+	|-Nullable<CreateSessionModificationOptions>.Equals
+	|-Nullable<SessionDetailsInfo>.Equals
+	|
+	|-Nullable<PinGrantInfoInternal>.Equals
+	|-Nullable<CatalogReleaseInternal>.Equals
+	|-Nullable<FileMetadataInternal>.Equals
+	|-Nullable<PlayerSanctionInternal>.Equals
+	|-Nullable<ActiveSessionInfoInternal>.Equals
+	|-Nullable<SessionDetailsInfoInternal>.Equals
+	|-Nullable<SessionDetailsSettingsInternal>.Equals
+	|-Nullable<StatInternal>.Equals
+	|
+	|-Nullable<ExternalAccountInfoInternal>.Equals
+	|-Nullable<EntitlementInternal>.Equals
+	|-Nullable<DefinitionInternal>.Equals
+	|-Nullable<ModIdentifierInternal>.Equals
+	|-Nullable<PacketQueueInfo>.Equals
+	|-Nullable<InitializeThreadAffinity>.Equals
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.Equals
+	|
+	|-Nullable<CatalogOffer>.Equals
+	|
+	|-Nullable<CatalogOfferInternal>.Equals
+	|
+	|-Nullable<KeyImageInfoInternal>.Equals
+	|-Nullable<LeaderboardRecordInternal>.Equals
+	|-Nullable<AttributeDataInternal>.Equals
+	|-Nullable<AudioBufferInternal>.Equals
+	|-Nullable<AttributeDataInternal>.Equals
+	|-Nullable<FileMetadataInternal>.Equals
+	|-Nullable<ExternalUserInfoInternal>.Equals
 	|-Nullable<Friend.FriendGameInfo>.Equals
 	|
+	|-Nullable<CreateUserCallbackInfo>.Equals
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.Equals
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.Equals
+	|-Nullable<UpdateSendingCallbackInfo>.Equals
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.Equals
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.Equals
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.Equals
+	|-Nullable<BlockParticipantCallbackInfo>.Equals
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.Equals
+	|-Nullable<UpdateReceivingCallbackInfo>.Equals
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.Equals
+	|
+	|-Nullable<Definition>.Equals
+	|-Nullable<QueryLeaderboardUserScoresOptions>.Equals
+	|-Nullable<SendPacketOptions>.Equals
+	|-Nullable<QueryStatsOptions>.Equals
+	|
+	|-Nullable<AttributeDataValue>.Equals
+	|-Nullable<AttributeDataValue>.Equals
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.Equals
+	|
+	|-Nullable<LocalRTCOptions>.Equals
+	|-Nullable<PageQuery>.Equals
+	|-Nullable<GetDesktopCrossplayStatusInfo>.Equals
+	|-Nullable<CopyUserTokenByIndexOptions>.Equals
 	|-Nullable<InventoryResult>.Equals
 	|
-	|-Nullable<SteamId>.Equals
+	|-Nullable<BeginPlayerSessionOptions>.Equals
+	|-Nullable<FileMetadata>.Equals
+	|
+	|-Nullable<SetPortRangeOptions>.Equals
+	|
+	|-Nullable<AndroidInitializeOptions>.Equals
+	|
+	|-Nullable<InitializeOptions>.Equals
+	|
+	|-Nullable<Options>.Equals
+	|
+	|-Nullable<WindowsOptions>.Equals
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.Equals
+	|
+	|-Nullable<ServerInfo>.Equals
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>.Equals
 	|
 	|-Nullable<Item>.Equals
 	|
@@ -4309,7 +9159,7 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<long>.Equals
 	|
-	|-Nullable<Token>.Equals
+	|-Nullable<IntPtr>.Equals
 	|
 	|-Nullable<StreamingContext>.Equals
 	|
@@ -4343,36 +9193,742 @@ public struct Nullable<T> // TypeDefIndex: 380
 	public override int GetHashCode() { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.GetHashCode
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.GetHashCode
+	|-Nullable<GetAchievementDefinitionCountOptions>.GetHashCode
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.GetHashCode
+	|-Nullable<AddNotifyMessageToPeerOptions>.GetHashCode
+	|-Nullable<AddNotifyMessageToServerOptions>.GetHashCode
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.GetHashCode
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.GetHashCode
+	|-Nullable<EndSessionOptions>.GetHashCode
+	|-Nullable<AddNotifyClientActionRequiredOptions>.GetHashCode
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.GetHashCode
+	|-Nullable<AddNotifyMessageToClientOptions>.GetHashCode
+	|-Nullable<EndSessionOptions>.GetHashCode
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.GetHashCode
+	|-Nullable<CopyUserAuthTokenOptions>.GetHashCode
+	|-Nullable<AddNotifyAuthExpirationOptions>.GetHashCode
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.GetHashCode
+	|-Nullable<DeleteDeviceIdOptions>.GetHashCode
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.GetHashCode
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.GetHashCode
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.GetHashCode
+	|-Nullable<TransactionGetEntitlementsCountOptions>.GetHashCode
+	|-Nullable<AddNotifyFriendsUpdateOptions>.GetHashCode
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.GetHashCode
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.GetHashCode
+	|-Nullable<QueryAgeGateOptions>.GetHashCode
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.GetHashCode
+	|-Nullable<GetLeaderboardRecordCountOptions>.GetHashCode
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.GetHashCode
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.GetHashCode
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.GetHashCode
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.GetHashCode
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.GetHashCode
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.GetHashCode
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.GetHashCode
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.GetHashCode
+	|-Nullable<LobbyDetailsCopyInfoOptions>.GetHashCode
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.GetHashCode
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.GetHashCode
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.GetHashCode
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.GetHashCode
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.GetHashCode
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.GetHashCode
+	|-Nullable<GetNATTypeOptions>.GetHashCode
+	|-Nullable<GetPacketQueueInfoOptions>.GetHashCode
+	|-Nullable<GetPortRangeOptions>.GetHashCode
+	|-Nullable<GetRelayControlOptions>.GetHashCode
+	|-Nullable<QueryNATTypeOptions>.GetHashCode
+	|-Nullable<GetDesktopCrossplayStatusOptions>.GetHashCode
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.GetHashCode
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.GetHashCode
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.GetHashCode
+	|-Nullable<GetAudioInputDevicesCountOptions>.GetHashCode
+	|-Nullable<GetAudioOutputDevicesCountOptions>.GetHashCode
+	|-Nullable<ActiveSessionCopyInfoOptions>.GetHashCode
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.GetHashCode
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.GetHashCode
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.GetHashCode
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.GetHashCode
+	|-Nullable<SessionDetailsCopyInfoOptions>.GetHashCode
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.GetHashCode
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.GetHashCode
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.GetHashCode
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.GetHashCode
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.GetHashCode
+	|-Nullable<GetToggleFriendsKeyOptions>.GetHashCode
+	|-Nullable<IsSocialOverlayPausedOptions>.GetHashCode
+	|-Nullable<PauseSocialOverlayOptions>.GetHashCode
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.GetHashCode
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.GetHashCode
+	|-Nullable<GetPlayerAchievementCountOptions>.GetHashCode
+	|-Nullable<GetUnlockedAchievementCountOptions>.GetHashCode
+	|-Nullable<AddExternalIntegrityCatalogOptions>.GetHashCode
+	|-Nullable<SetGameSessionIdOptions>.GetHashCode
+	|-Nullable<AccountFeatureRestrictedInfo>.GetHashCode
+	|-Nullable<CopyIdTokenOptions>.GetHashCode
+	|-Nullable<DeletePersistentAuthOptions>.GetHashCode
+	|-Nullable<LogoutOptions>.GetHashCode
+	|-Nullable<CopyIdTokenOptions>.GetHashCode
+	|-Nullable<CopyProductUserInfoOptions>.GetHashCode
+	|-Nullable<CreateDeviceIdOptions>.GetHashCode
+	|-Nullable<CreateUserOptions>.GetHashCode
+	|-Nullable<GetProductUserExternalAccountCountOptions>.GetHashCode
+	|-Nullable<UnlinkAccountOptions>.GetHashCode
+	|-Nullable<UserLoginInfo>.GetHashCode
+	|-Nullable<CheckoutEntry>.GetHashCode
+	|-Nullable<GetEntitlementsCountOptions>.GetHashCode
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.GetHashCode
+	|-Nullable<GetOfferCountOptions>.GetHashCode
+	|-Nullable<GetTransactionCountOptions>.GetHashCode
+	|-Nullable<GetFriendsCountOptions>.GetHashCode
+	|-Nullable<QueryFriendsOptions>.GetHashCode
+	|-Nullable<GetPermissionsCountOptions>.GetHashCode
+	|-Nullable<QueryPermissionsOptions>.GetHashCode
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.GetHashCode
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.GetHashCode
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.GetHashCode
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.GetHashCode
+	|-Nullable<GetInviteCountOptions>.GetHashCode
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.GetHashCode
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.GetHashCode
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.GetHashCode
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.GetHashCode
+	|-Nullable<LobbyModificationSetBucketIdOptions>.GetHashCode
+	|-Nullable<LobbySearchFindOptions>.GetHashCode
+	|-Nullable<LobbySearchSetLobbyIdOptions>.GetHashCode
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.GetHashCode
+	|-Nullable<QueryInvitesOptions>.GetHashCode
+	|-Nullable<UpdateLobbyOptions>.GetHashCode
+	|-Nullable<SocketId>.GetHashCode
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.GetHashCode
+	|-Nullable<DeleteCacheOptions>.GetHashCode
+	|-Nullable<GetFileMetadataCountOptions>.GetHashCode
+	|-Nullable<QueryFileListOptions>.GetHashCode
+	|-Nullable<CreatePresenceModificationOptions>.GetHashCode
+	|-Nullable<PresenceModificationDataRecordId>.GetHashCode
+	|-Nullable<PresenceModificationDeleteDataOptions>.GetHashCode
+	|-Nullable<PresenceModificationSetDataOptions>.GetHashCode
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.GetHashCode
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.GetHashCode
+	|-Nullable<BeginSnapshotOptions>.GetHashCode
+	|-Nullable<DeleteSnapshotOptions>.GetHashCode
+	|-Nullable<AudioDevicesChangedCallbackInfo>.GetHashCode
+	|-Nullable<RegisterPlatformAudioUserOptions>.GetHashCode
+	|-Nullable<UnregisterPlatformAudioUserOptions>.GetHashCode
+	|-Nullable<GetPlayerSanctionCountOptions>.GetHashCode
+	|-Nullable<CopyActiveSessionHandleOptions>.GetHashCode
+	|-Nullable<CopySessionHandleByInviteIdOptions>.GetHashCode
+	|-Nullable<CopySessionHandleForPresenceOptions>.GetHashCode
+	|-Nullable<DestroySessionOptions>.GetHashCode
+	|-Nullable<DumpSessionStateOptions>.GetHashCode
+	|-Nullable<EndSessionOptions>.GetHashCode
+	|-Nullable<GetInviteCountOptions>.GetHashCode
+	|-Nullable<QueryInvitesOptions>.GetHashCode
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.GetHashCode
+	|-Nullable<SessionModificationRemoveAttributeOptions>.GetHashCode
+	|-Nullable<SessionModificationSetBucketIdOptions>.GetHashCode
+	|-Nullable<SessionModificationSetHostAddressOptions>.GetHashCode
+	|-Nullable<SessionSearchFindOptions>.GetHashCode
+	|-Nullable<SessionSearchSetSessionIdOptions>.GetHashCode
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.GetHashCode
+	|-Nullable<StartSessionOptions>.GetHashCode
+	|-Nullable<UpdateSessionModificationOptions>.GetHashCode
+	|-Nullable<UpdateSessionOptions>.GetHashCode
+	|-Nullable<GetStatCountOptions>.GetHashCode
+	|-Nullable<DeleteCacheOptions>.GetHashCode
+	|-Nullable<GetFileMetadataCountOptions>.GetHashCode
+	|-Nullable<GetFriendsExclusiveInputOptions>.GetHashCode
+	|-Nullable<GetFriendsVisibleOptions>.GetHashCode
+	|-Nullable<HideFriendsOptions>.GetHashCode
+	|-Nullable<ShowFriendsOptions>.GetHashCode
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.GetHashCode
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.GetHashCode
+	|-Nullable<GetProtectMessageOutputLengthOptions>.GetHashCode
+	|-Nullable<PollStatusOptions>.GetHashCode
+	|-Nullable<LogGameRoundEndOptions>.GetHashCode
+	|-Nullable<GetProtectMessageOutputLengthOptions>.GetHashCode
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.GetHashCode
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.GetHashCode
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.GetHashCode
+	|-Nullable<CreateLobbySearchOptions>.GetHashCode
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.GetHashCode
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.GetHashCode
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.GetHashCode
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.GetHashCode
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.GetHashCode
+	|-Nullable<LobbySearchSetMaxResultsOptions>.GetHashCode
+	|-Nullable<SetPortRangeOptions>.GetHashCode
+	|-Nullable<SetRelayControlOptions>.GetHashCode
+	|-Nullable<PresenceModificationSetStatusOptions>.GetHashCode
+	|-Nullable<EndSnapshotOptions>.GetHashCode
+	|-Nullable<SubmitSnapshotOptions>.GetHashCode
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.GetHashCode
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.GetHashCode
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.GetHashCode
+	|-Nullable<CreateSessionSearchOptions>.GetHashCode
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.GetHashCode
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.GetHashCode
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.GetHashCode
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.GetHashCode
+	|-Nullable<SessionSearchSetMaxResultsOptions>.GetHashCode
+	|-Nullable<SetDisplayPreferenceOptions>.GetHashCode
+	|-Nullable<SetToggleFriendsKeyOptions>.GetHashCode
+	|-Nullable<EncryptedAppTicketResponse_t>.GetHashCode
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.GetHashCode
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.GetHashCode
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.GetHashCode
+	|-Nullable<QueryDefinitionsOptions>.GetHashCode
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.GetHashCode
+	|-Nullable<OnMessageToServerCallbackInfo>.GetHashCode
+	|-Nullable<ProtectMessageOptions>.GetHashCode
+	|-Nullable<UnprotectMessageOptions>.GetHashCode
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.GetHashCode
+	|-Nullable<LoginStatusChangedCallbackInfo>.GetHashCode
+	|-Nullable<VerifyIdTokenOptions>.GetHashCode
+	|-Nullable<GetExternalAccountMappingsOptions>.GetHashCode
+	|-Nullable<GetProductUserIdMappingOptions>.GetHashCode
+	|-Nullable<LoginStatusChangedCallbackInfo>.GetHashCode
+	|-Nullable<QueryExternalAccountMappingsOptions>.GetHashCode
+	|-Nullable<QueryProductUserIdMappingsOptions>.GetHashCode
+	|-Nullable<TransferDeviceIdAccountOptions>.GetHashCode
+	|-Nullable<VerifyIdTokenOptions>.GetHashCode
+	|-Nullable<CatalogRelease>.GetHashCode
+	|-Nullable<CheckoutOptions>.GetHashCode
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.GetHashCode
+	|-Nullable<CopyItemImageInfoByIndexOptions>.GetHashCode
+	|-Nullable<CopyItemReleaseByIndexOptions>.GetHashCode
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.GetHashCode
+	|-Nullable<CopyOfferItemByIndexOptions>.GetHashCode
+	|-Nullable<KeyImageInfo>.GetHashCode
+	|-Nullable<QueryEntitlementsOptions>.GetHashCode
+	|-Nullable<QueryOwnershipOptions>.GetHashCode
+	|-Nullable<QueryOwnershipTokenOptions>.GetHashCode
+	|-Nullable<Options>.GetHashCode
+	|-Nullable<CreateUserOptions>.GetHashCode
+	|-Nullable<LeaderboardRecord>.GetHashCode
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.GetHashCode
+	|-Nullable<KickMemberOptions>.GetHashCode
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.GetHashCode
+	|-Nullable<PromoteMemberOptions>.GetHashCode
+	|-Nullable<SendInviteOptions>.GetHashCode
+	|-Nullable<LogMessage>.GetHashCode
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.GetHashCode
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.GetHashCode
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.GetHashCode
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.GetHashCode
+	|-Nullable<CloseConnectionsOptions>.GetHashCode
+	|-Nullable<DuplicateFileOptions>.GetHashCode
+	|-Nullable<PresenceChangedCallbackInfo>.GetHashCode
+	|-Nullable<SetParticipantHardMuteOptions>.GetHashCode
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.GetHashCode
+	|-Nullable<SetAudioInputSettingsOptions>.GetHashCode
+	|-Nullable<SetAudioOutputSettingsOptions>.GetHashCode
+	|-Nullable<UpdateReceivingVolumeOptions>.GetHashCode
+	|-Nullable<UpdateSendingOptions>.GetHashCode
+	|-Nullable<UpdateSendingVolumeOptions>.GetHashCode
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.GetHashCode
+	|-Nullable<SendInviteOptions>.GetHashCode
+	|-Nullable<SessionDetailsSettings>.GetHashCode
+	|-Nullable<IngestStatOptions>.GetHashCode
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.GetHashCode
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.GetHashCode
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.GetHashCode
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.GetHashCode
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.GetHashCode
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.GetHashCode
+	|-Nullable<PlayerStatInfo>.GetHashCode
+	|-Nullable<QueryPlayerAchievementsOptions>.GetHashCode
+	|-Nullable<StatThresholds>.GetHashCode
+	|-Nullable<UnlockAchievementsOptions>.GetHashCode
+	|-Nullable<BeginSessionOptions>.GetHashCode
+	|-Nullable<ReceiveMessageFromServerOptions>.GetHashCode
+	|-Nullable<RegisterEventParamDef>.GetHashCode
+	|-Nullable<IdToken>.GetHashCode
+	|-Nullable<QueryIdTokenOptions>.GetHashCode
+	|-Nullable<AuthExpirationCallbackInfo>.GetHashCode
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.GetHashCode
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.GetHashCode
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.GetHashCode
+	|-Nullable<Credentials>.GetHashCode
+	|-Nullable<IdToken>.GetHashCode
+	|-Nullable<LinkAccountOptions>.GetHashCode
+	|-Nullable<SendCustomInviteOptions>.GetHashCode
+	|-Nullable<SetCustomInviteOptions>.GetHashCode
+	|-Nullable<CopyEntitlementByIdOptions>.GetHashCode
+	|-Nullable<CopyEntitlementByIndexOptions>.GetHashCode
+	|-Nullable<CopyItemByIdOptions>.GetHashCode
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.GetHashCode
+	|-Nullable<CopyOfferByIdOptions>.GetHashCode
+	|-Nullable<CopyOfferByIndexOptions>.GetHashCode
+	|-Nullable<CopyTransactionByIdOptions>.GetHashCode
+	|-Nullable<CopyTransactionByIndexOptions>.GetHashCode
+	|-Nullable<GetEntitlementsByNameCountOptions>.GetHashCode
+	|-Nullable<GetItemImageInfoCountOptions>.GetHashCode
+	|-Nullable<GetItemReleaseCountOptions>.GetHashCode
+	|-Nullable<GetOfferImageInfoCountOptions>.GetHashCode
+	|-Nullable<GetOfferItemCountOptions>.GetHashCode
+	|-Nullable<ItemOwnership>.GetHashCode
+	|-Nullable<QueryOffersOptions>.GetHashCode
+	|-Nullable<RedeemEntitlementsOptions>.GetHashCode
+	|-Nullable<AcceptInviteOptions>.GetHashCode
+	|-Nullable<GetFriendAtIndexOptions>.GetHashCode
+	|-Nullable<GetStatusOptions>.GetHashCode
+	|-Nullable<RejectInviteOptions>.GetHashCode
+	|-Nullable<SendInviteOptions>.GetHashCode
+	|-Nullable<SteamOptions>.GetHashCode
+	|-Nullable<CopyPermissionByIndexOptions>.GetHashCode
+	|-Nullable<GetPermissionByKeyOptions>.GetHashCode
+	|-Nullable<PermissionStatus>.GetHashCode
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.GetHashCode
+	|-Nullable<RequestPermissionsOptions>.GetHashCode
+	|-Nullable<UpdateParentEmailOptions>.GetHashCode
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.GetHashCode
+	|-Nullable<LeaderboardUserScore>.GetHashCode
+	|-Nullable<QueryLeaderboardRanksOptions>.GetHashCode
+	|-Nullable<UserScoresQueryStatInfo>.GetHashCode
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.GetHashCode
+	|-Nullable<CopyLobbyDetailsHandleOptions>.GetHashCode
+	|-Nullable<DestroyLobbyOptions>.GetHashCode
+	|-Nullable<GetInviteIdByIndexOptions>.GetHashCode
+	|-Nullable<GetRTCRoomNameOptions>.GetHashCode
+	|-Nullable<IsRTCRoomConnectedOptions>.GetHashCode
+	|-Nullable<LeaveLobbyOptions>.GetHashCode
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.GetHashCode
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.GetHashCode
+	|-Nullable<LobbySearchRemoveParameterOptions>.GetHashCode
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.GetHashCode
+	|-Nullable<RejectInviteOptions>.GetHashCode
+	|-Nullable<UpdateLobbyModificationOptions>.GetHashCode
+	|-Nullable<CopyModInfoOptions>.GetHashCode
+	|-Nullable<EnumerateModsOptions>.GetHashCode
+	|-Nullable<ModInfo>.GetHashCode
+	|-Nullable<GetNextReceivedPacketSizeOptions>.GetHashCode
+	|-Nullable<ReceivePacketOptions>.GetHashCode
+	|-Nullable<ClientCredentials>.GetHashCode
+	|-Nullable<WindowsRTCOptions>.GetHashCode
+	|-Nullable<CopyFileMetadataAtIndexOptions>.GetHashCode
+	|-Nullable<CopyFileMetadataByFilenameOptions>.GetHashCode
+	|-Nullable<DeleteFileOptions>.GetHashCode
+	|-Nullable<QueryFileOptions>.GetHashCode
+	|-Nullable<CopyPresenceOptions>.GetHashCode
+	|-Nullable<DataRecord>.GetHashCode
+	|-Nullable<GetJoinInfoOptions>.GetHashCode
+	|-Nullable<HasPresenceOptions>.GetHashCode
+	|-Nullable<QueryPresenceOptions>.GetHashCode
+	|-Nullable<SetPresenceOptions>.GetHashCode
+	|-Nullable<AddNotifyDisconnectedOptions>.GetHashCode
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.GetHashCode
+	|-Nullable<LeaveRoomOptions>.GetHashCode
+	|-Nullable<ParticipantMetadata>.GetHashCode
+	|-Nullable<SetSettingOptions>.GetHashCode
+	|-Nullable<CopyUserTokenByUserIdOptions>.GetHashCode
+	|-Nullable<KickOptions>.GetHashCode
+	|-Nullable<UserToken>.GetHashCode
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.GetHashCode
+	|-Nullable<AddNotifyAudioInputStateOptions>.GetHashCode
+	|-Nullable<AddNotifyAudioOutputStateOptions>.GetHashCode
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.GetHashCode
+	|-Nullable<AudioBuffer>.GetHashCode
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.GetHashCode
+	|-Nullable<QueryActivePlayerSanctionsOptions>.GetHashCode
+	|-Nullable<GetInviteIdByIndexOptions>.GetHashCode
+	|-Nullable<IsUserInSessionOptions>.GetHashCode
+	|-Nullable<RegisterPlayersOptions>.GetHashCode
+	|-Nullable<RejectInviteOptions>.GetHashCode
+	|-Nullable<SessionSearchRemoveParameterOptions>.GetHashCode
+	|-Nullable<UnregisterPlayersOptions>.GetHashCode
+	|-Nullable<CopyStatByIndexOptions>.GetHashCode
+	|-Nullable<CopyStatByNameOptions>.GetHashCode
+	|-Nullable<IngestData>.GetHashCode
+	|-Nullable<CopyFileMetadataAtIndexOptions>.GetHashCode
+	|-Nullable<CopyFileMetadataByFilenameOptions>.GetHashCode
+	|-Nullable<QueryFileListOptions>.GetHashCode
+	|-Nullable<QueryFileOptions>.GetHashCode
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.GetHashCode
+	|-Nullable<ShowBlockPlayerOptions>.GetHashCode
+	|-Nullable<ShowReportPlayerOptions>.GetHashCode
+	|-Nullable<CopyUserInfoOptions>.GetHashCode
+	|-Nullable<GetExternalUserInfoCountOptions>.GetHashCode
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.GetHashCode
+	|-Nullable<QueryUserInfoOptions>.GetHashCode
 	|-Nullable<ImageStorageEntity.ImageRequest>.GetHashCode
 	|
+	|-Nullable<Definition>.GetHashCode
+	|-Nullable<VerifyUserAuthOptions>.GetHashCode
+	|-Nullable<ActiveSessionInfo>.GetHashCode
+	|
+	|-Nullable<DefinitionInternal>.GetHashCode
+	|
+	|-Nullable<DefinitionV2>.GetHashCode
+	|-Nullable<PlayerAchievement>.GetHashCode
+	|-Nullable<Token>.GetHashCode
+	|-Nullable<CatalogItem>.GetHashCode
+	|-Nullable<Attribute>.GetHashCode
+	|-Nullable<LobbyModificationAddAttributeOptions>.GetHashCode
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.GetHashCode
+	|-Nullable<LobbySearchSetParameterOptions>.GetHashCode
+	|-Nullable<SessionDetailsAttribute>.GetHashCode
+	|-Nullable<SessionModificationAddAttributeOptions>.GetHashCode
+	|-Nullable<SessionSearchSetParameterOptions>.GetHashCode
+	|
+	|-Nullable<DefinitionV2Internal>.GetHashCode
+	|-Nullable<TokenInternal>.GetHashCode
+	|-Nullable<CatalogItemInternal>.GetHashCode
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.GetHashCode
+	|-Nullable<IOSCredentials>.GetHashCode
+	|-Nullable<LobbyDetailsInfo>.GetHashCode
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.GetHashCode
+	|-Nullable<OnPeerConnectionEstablishedInfo>.GetHashCode
+	|-Nullable<OnRemoteConnectionClosedInfo>.GetHashCode
+	|-Nullable<ReadFileDataCallbackInfo>.GetHashCode
+	|-Nullable<JoinRoomOptions>.GetHashCode
+	|-Nullable<AudioBeforeSendCallbackInfo>.GetHashCode
+	|-Nullable<ReadFileDataCallbackInfo>.GetHashCode
+	|-Nullable<UserInfoData>.GetHashCode
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.GetHashCode
+	|-Nullable<DeletePersistentAuthCallbackInfo>.GetHashCode
+	|-Nullable<VerifyUserAuthCallbackInfo>.GetHashCode
+	|-Nullable<CreateDeviceIdCallbackInfo>.GetHashCode
+	|-Nullable<DeleteDeviceIdCallbackInfo>.GetHashCode
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.GetHashCode
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.GetHashCode
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.GetHashCode
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.GetHashCode
+	|-Nullable<LobbySearchFindCallbackInfo>.GetHashCode
+	|-Nullable<SocketIdInternal>.GetHashCode
+	|-Nullable<SubmitSnapshotCallbackInfo>.GetHashCode
+	|-Nullable<KickCompleteCallbackInfo>.GetHashCode
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.GetHashCode
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.GetHashCode
+	|-Nullable<DestroySessionCallbackInfo>.GetHashCode
+	|-Nullable<EndSessionCallbackInfo>.GetHashCode
+	|-Nullable<JoinSessionCallbackInfo>.GetHashCode
+	|-Nullable<RejectInviteCallbackInfo>.GetHashCode
+	|-Nullable<SendInviteCallbackInfo>.GetHashCode
+	|-Nullable<SessionSearchFindCallbackInfo>.GetHashCode
+	|-Nullable<StartSessionCallbackInfo>.GetHashCode
+	|-Nullable<Image>.GetHashCode
+	|-Nullable<SteamInventoryRequestPricesResult_t>.GetHashCode
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.GetHashCode
+	|-Nullable<ReceiveMessageFromPeerOptions>.GetHashCode
+	|-Nullable<ReceiveMessageFromClientOptions>.GetHashCode
+	|-Nullable<LinkAccountOptions>.GetHashCode
+	|-Nullable<LogoutCallbackInfo>.GetHashCode
+	|-Nullable<CreateUserCallbackInfo>.GetHashCode
+	|-Nullable<LinkAccountCallbackInfo>.GetHashCode
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.GetHashCode
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.GetHashCode
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.GetHashCode
+	|-Nullable<UnlinkAccountCallbackInfo>.GetHashCode
+	|-Nullable<QueryEntitlementsCallbackInfo>.GetHashCode
+	|-Nullable<QueryOffersCallbackInfo>.GetHashCode
+	|-Nullable<QueryFriendsCallbackInfo>.GetHashCode
+	|-Nullable<RequestPermissionsCallbackInfo>.GetHashCode
+	|-Nullable<UpdateParentEmailCallbackInfo>.GetHashCode
+	|-Nullable<CreateLobbyCallbackInfo>.GetHashCode
+	|-Nullable<DestroyLobbyCallbackInfo>.GetHashCode
+	|-Nullable<JoinLobbyByIdCallbackInfo>.GetHashCode
+	|-Nullable<JoinLobbyCallbackInfo>.GetHashCode
+	|-Nullable<KickMemberCallbackInfo>.GetHashCode
+	|-Nullable<LeaveLobbyCallbackInfo>.GetHashCode
+	|-Nullable<PromoteMemberCallbackInfo>.GetHashCode
+	|-Nullable<QueryInvitesCallbackInfo>.GetHashCode
+	|-Nullable<RejectInviteCallbackInfo>.GetHashCode
+	|-Nullable<SendInviteCallbackInfo>.GetHashCode
+	|-Nullable<UpdateLobbyCallbackInfo>.GetHashCode
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.GetHashCode
+	|-Nullable<EndPlayerSessionOptions>.GetHashCode
+	|-Nullable<EndPlayerSessionOptionsAccountId>.GetHashCode
+	|-Nullable<OnQueryNATTypeCompleteInfo>.GetHashCode
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.GetHashCode
+	|-Nullable<DeleteCacheCallbackInfo>.GetHashCode
+	|-Nullable<DeleteFileCallbackInfo>.GetHashCode
+	|-Nullable<DuplicateFileCallbackInfo>.GetHashCode
+	|-Nullable<QueryFileCallbackInfo>.GetHashCode
+	|-Nullable<SetPresenceCallbackInfo>.GetHashCode
+	|-Nullable<AddProgressionOptions>.GetHashCode
+	|-Nullable<DeleteSnapshotCallbackInfo>.GetHashCode
+	|-Nullable<AudioInputDeviceInfo>.GetHashCode
+	|-Nullable<AudioOutputDeviceInfo>.GetHashCode
+	|-Nullable<QueryInvitesCallbackInfo>.GetHashCode
+	|-Nullable<UnregisterPlayersCallbackInfo>.GetHashCode
+	|-Nullable<DeleteCacheCallbackInfo>.GetHashCode
+	|-Nullable<QueryFileCallbackInfo>.GetHashCode
+	|-Nullable<HideFriendsCallbackInfo>.GetHashCode
+	|-Nullable<ShowFriendsCallbackInfo>.GetHashCode
 	|-Nullable<JsonPosition>.GetHashCode
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.GetHashCode
-	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.GetHashCode
+	|-Nullable<RegisterEventOptions>.GetHashCode
+	|-Nullable<BeginSessionOptions>.GetHashCode
+	|-Nullable<ProtectMessageOptions>.GetHashCode
+	|-Nullable<UnprotectMessageOptions>.GetHashCode
+	|-Nullable<QueryIdTokenCallbackInfo>.GetHashCode
+	|-Nullable<LoginCallbackInfo>.GetHashCode
+	|-Nullable<SendCustomInviteCallbackInfo>.GetHashCode
+	|-Nullable<CheckoutCallbackInfo>.GetHashCode
+	|-Nullable<QueryOwnershipCallbackInfo>.GetHashCode
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.GetHashCode
+	|-Nullable<RedeemEntitlementsCallbackInfo>.GetHashCode
+	|-Nullable<AcceptInviteCallbackInfo>.GetHashCode
+	|-Nullable<RejectInviteCallbackInfo>.GetHashCode
+	|-Nullable<SendInviteCallbackInfo>.GetHashCode
+	|-Nullable<QueryAgeGateCallbackInfo>.GetHashCode
+	|-Nullable<HardMuteMemberCallbackInfo>.GetHashCode
+	|-Nullable<EnumerateModsCallbackInfo>.GetHashCode
+	|-Nullable<QueryFileListCallbackInfo>.GetHashCode
+	|-Nullable<ReadFileCallbackInfo>.GetHashCode
+	|-Nullable<WriteFileCallbackInfo>.GetHashCode
+	|-Nullable<QueryPresenceCallbackInfo>.GetHashCode
+	|-Nullable<DisconnectedCallbackInfo>.GetHashCode
+	|-Nullable<JoinRoomCallbackInfo>.GetHashCode
+	|-Nullable<LeaveRoomCallbackInfo>.GetHashCode
+	|-Nullable<PlayerSanction>.GetHashCode
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.GetHashCode
+	|-Nullable<RegisterPlayersCallbackInfo>.GetHashCode
+	|-Nullable<UpdateSessionCallbackInfo>.GetHashCode
+	|-Nullable<IngestStatCompleteCallbackInfo>.GetHashCode
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.GetHashCode
+	|-Nullable<FileMetadata>.GetHashCode
+	|-Nullable<QueryFileListCallbackInfo>.GetHashCode
+	|-Nullable<ReadFileCallbackInfo>.GetHashCode
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.GetHashCode
+	|-Nullable<OnShowReportPlayerCallbackInfo>.GetHashCode
+	|-Nullable<ExternalUserInfo>.GetHashCode
+	|-Nullable<QueryUserInfoCallbackInfo>.GetHashCode
 	|-Nullable<Option>.GetHashCode
 	|
-	|-Nullable<ServerInfo>.GetHashCode
+	|-Nullable<PlayerAchievementInternal>.GetHashCode
+	|-Nullable<InfoInternal>.GetHashCode
 	|
+	|-Nullable<UnlockedAchievement>.GetHashCode
+	|-Nullable<LogGameRoundStartOptions>.GetHashCode
+	|-Nullable<OnClientActionRequiredCallbackInfo>.GetHashCode
+	|-Nullable<OnMessageToClientCallbackInfo>.GetHashCode
+	|-Nullable<PinGrantInfo>.GetHashCode
+	|-Nullable<FinalizeInviteOptions>.GetHashCode
+	|-Nullable<OnFriendsUpdateInfo>.GetHashCode
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.GetHashCode
+	|-Nullable<HardMuteMemberOptions>.GetHashCode
+	|-Nullable<JoinLobbyByIdOptions>.GetHashCode
+	|-Nullable<JoinLobbyOptions>.GetHashCode
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.GetHashCode
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.GetHashCode
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.GetHashCode
+	|-Nullable<AcceptConnectionOptions>.GetHashCode
+	|-Nullable<ClearPacketQueueOptions>.GetHashCode
+	|-Nullable<CloseConnectionOptions>.GetHashCode
+	|-Nullable<FileTransferProgressCallbackInfo>.GetHashCode
+	|-Nullable<WriteFileDataCallbackInfo>.GetHashCode
+	|-Nullable<BlockParticipantOptions>.GetHashCode
+	|-Nullable<SetRoomSettingOptions>.GetHashCode
+	|-Nullable<QueryJoinRoomTokenOptions>.GetHashCode
+	|-Nullable<AudioInputStateCallbackInfo>.GetHashCode
+	|-Nullable<AudioOutputStateCallbackInfo>.GetHashCode
+	|-Nullable<UpdateParticipantVolumeOptions>.GetHashCode
+	|-Nullable<UpdateReceivingOptions>.GetHashCode
+	|-Nullable<JoinSessionOptions>.GetHashCode
+	|-Nullable<SessionInviteReceivedCallbackInfo>.GetHashCode
+	|-Nullable<FileTransferProgressCallbackInfo>.GetHashCode
+	|
+	|-Nullable<UnlockedAchievementInternal>.GetHashCode
+	|-Nullable<LogPlayerUseAbilityOptions>.GetHashCode
+	|-Nullable<IdTokenInternal>.GetHashCode
+	|-Nullable<IdTokenInternal>.GetHashCode
+	|-Nullable<PermissionStatusInternal>.GetHashCode
+	|-Nullable<LeaderboardUserScoreInternal>.GetHashCode
+	|-Nullable<AttributeInternal>.GetHashCode
+	|-Nullable<ModInfoInternal>.GetHashCode
+	|-Nullable<UserTokenInternal>.GetHashCode
+	|-Nullable<AudioInputDeviceInfoInternal>.GetHashCode
+	|-Nullable<AudioOutputDeviceInfoInternal>.GetHashCode
+	|-Nullable<SessionDetailsAttributeInternal>.GetHashCode
 	|-Nullable<CreateItemResult_t>.GetHashCode
 	|-Nullable<InventoryPurchaseResult>.GetHashCode
 	|-Nullable<SteamInventoryStartPurchaseResult_t>.GetHashCode
 	|-Nullable<ResultPage>.GetHashCode
 	|-Nullable<Ray>.GetHashCode
 	|
-	|-Nullable<EncryptedAppTicketResponse_t>.GetHashCode
+	|-Nullable<RegisterPeerOptions>.GetHashCode
 	|
-	|-Nullable<Image>.GetHashCode
-	|-Nullable<SteamInventoryRequestPricesResult_t>.GetHashCode
+	|-Nullable<UnregisterPeerOptions>.GetHashCode
+	|-Nullable<LogPlayerDespawnOptions>.GetHashCode
+	|-Nullable<UnregisterClientOptions>.GetHashCode
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.GetHashCode
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.GetHashCode
+	|-Nullable<LocalRTCOptions>.GetHashCode
+	|-Nullable<PageQuery>.GetHashCode
+	|-Nullable<GetDesktopCrossplayStatusInfo>.GetHashCode
+	|-Nullable<RTCOptions>.GetHashCode
+	|-Nullable<CopyUserTokenByIndexOptions>.GetHashCode
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.GetHashCode
+	|-Nullable<PrePresentOptions>.GetHashCode
+	|-Nullable<ReportKeyEventOptions>.GetHashCode
+	|-Nullable<InventoryResult>.GetHashCode
+	|-Nullable<SteamId>.GetHashCode
 	|
+	|-Nullable<LogEventOptions>.GetHashCode
+	|
+	|-Nullable<LogEventParamPair>.GetHashCode
+	|-Nullable<LogEventParamPairParamValue>.GetHashCode
+	|
+	|-Nullable<LogPlayerReviveOptions>.GetHashCode
+	|-Nullable<LogPlayerSpawnOptions>.GetHashCode
+	|-Nullable<Quat>.GetHashCode
+	|-Nullable<QuatInternal>.GetHashCode
+	|-Nullable<SetClientDetailsOptions>.GetHashCode
+	|-Nullable<SetClientNetworkStateOptions>.GetHashCode
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.GetHashCode
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.GetHashCode
+	|-Nullable<SetPacketQueueSizeOptions>.GetHashCode
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.GetHashCode
+	|-Nullable<AcknowledgeEventIdOptions>.GetHashCode
 	|-Nullable<SetUserItemVoteResult_t>.GetHashCode
 	|-Nullable<SubmitItemUpdateResult_t>.GetHashCode
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>.GetHashCode
+	|-Nullable<LogPlayerTakeDamageOptions>.GetHashCode
 	|
+	|-Nullable<LogPlayerTickOptions>.GetHashCode
+	|-Nullable<UserInfoDataInternal>.GetHashCode
+	|
+	|-Nullable<LogPlayerUseWeaponData>.GetHashCode
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.GetHashCode
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.GetHashCode
+	|
+	|-Nullable<Vec3f>.GetHashCode
+	|-Nullable<Vec3fInternal>.GetHashCode
+	|-Nullable<PageResult>.GetHashCode
+	|-Nullable<Token>.GetHashCode
+	|
+	|-Nullable<RegisterClientOptions>.GetHashCode
+	|
+	|-Nullable<Credentials>.GetHashCode
+	|-Nullable<LoginOptions>.GetHashCode
+	|-Nullable<CustomInviteRejectedCallbackInfo>.GetHashCode
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.GetHashCode
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.GetHashCode
+	|-Nullable<Entitlement>.GetHashCode
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.GetHashCode
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.GetHashCode
+	|-Nullable<ModIdentifier>.GetHashCode
+	|-Nullable<OnIncomingConnectionRequestInfo>.GetHashCode
+	|-Nullable<OnIncomingPacketQueueFullInfo>.GetHashCode
+	|-Nullable<OnPeerConnectionInterruptedInfo>.GetHashCode
+	|-Nullable<ReadFileOptions>.GetHashCode
+	|-Nullable<WriteFileOptions>.GetHashCode
+	|-Nullable<JoinGameAcceptedCallbackInfo>.GetHashCode
+	|-Nullable<ParticipantUpdatedCallbackInfo>.GetHashCode
+	|-Nullable<SendAudioOptions>.GetHashCode
+	|-Nullable<SendPlayerBehaviorReportOptions>.GetHashCode
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.GetHashCode
+	|-Nullable<ReadFileOptions>.GetHashCode
+	|
+	|-Nullable<IOSLoginOptions>.GetHashCode
+	|-Nullable<AttributeData>.GetHashCode
+	|-Nullable<CreateLobbyOptions>.GetHashCode
+	|-Nullable<InstallModOptions>.GetHashCode
+	|-Nullable<AttributeData>.GetHashCode
+	|-Nullable<Stat>.GetHashCode
+	|
+	|-Nullable<LinkAccountCallbackInfo>.GetHashCode
+	|-Nullable<InstallModCallbackInfo>.GetHashCode
+	|-Nullable<UninstallModCallbackInfo>.GetHashCode
+	|-Nullable<UpdateModCallbackInfo>.GetHashCode
+	|-Nullable<Info>.GetHashCode
+	|
+	|-Nullable<LoginCallbackInfo>.GetHashCode
+	|-Nullable<VerifyIdTokenCallbackInfo>.GetHashCode
+	|
+	|-Nullable<LoginOptions>.GetHashCode
+	|-Nullable<ExternalAccountInfo>.GetHashCode
+	|-Nullable<UninstallModOptions>.GetHashCode
+	|-Nullable<UpdateModOptions>.GetHashCode
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.GetHashCode
+	|-Nullable<AudioBeforeRenderCallbackInfo>.GetHashCode
+	|-Nullable<CreateSessionModificationOptions>.GetHashCode
+	|-Nullable<SessionDetailsInfo>.GetHashCode
+	|
+	|-Nullable<PinGrantInfoInternal>.GetHashCode
+	|-Nullable<CatalogReleaseInternal>.GetHashCode
+	|-Nullable<FileMetadataInternal>.GetHashCode
+	|-Nullable<PlayerSanctionInternal>.GetHashCode
+	|-Nullable<ActiveSessionInfoInternal>.GetHashCode
+	|-Nullable<SessionDetailsInfoInternal>.GetHashCode
+	|-Nullable<SessionDetailsSettingsInternal>.GetHashCode
+	|-Nullable<StatInternal>.GetHashCode
+	|
+	|-Nullable<ExternalAccountInfoInternal>.GetHashCode
+	|-Nullable<EntitlementInternal>.GetHashCode
+	|-Nullable<DefinitionInternal>.GetHashCode
+	|-Nullable<ModIdentifierInternal>.GetHashCode
+	|-Nullable<PacketQueueInfo>.GetHashCode
+	|-Nullable<InitializeThreadAffinity>.GetHashCode
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.GetHashCode
+	|
+	|-Nullable<CatalogOffer>.GetHashCode
+	|
+	|-Nullable<CatalogOfferInternal>.GetHashCode
+	|
+	|-Nullable<KeyImageInfoInternal>.GetHashCode
+	|-Nullable<LeaderboardRecordInternal>.GetHashCode
+	|-Nullable<AttributeDataInternal>.GetHashCode
+	|-Nullable<AudioBufferInternal>.GetHashCode
+	|-Nullable<AttributeDataInternal>.GetHashCode
+	|-Nullable<FileMetadataInternal>.GetHashCode
+	|-Nullable<ExternalUserInfoInternal>.GetHashCode
 	|-Nullable<Friend.FriendGameInfo>.GetHashCode
 	|
-	|-Nullable<InventoryResult>.GetHashCode
-	|-Nullable<SteamId>.GetHashCode
+	|-Nullable<CreateUserCallbackInfo>.GetHashCode
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.GetHashCode
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.GetHashCode
+	|-Nullable<UpdateSendingCallbackInfo>.GetHashCode
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.GetHashCode
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.GetHashCode
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.GetHashCode
+	|-Nullable<BlockParticipantCallbackInfo>.GetHashCode
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.GetHashCode
+	|-Nullable<UpdateReceivingCallbackInfo>.GetHashCode
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.GetHashCode
+	|
+	|-Nullable<Definition>.GetHashCode
+	|-Nullable<QueryLeaderboardUserScoresOptions>.GetHashCode
+	|-Nullable<SendPacketOptions>.GetHashCode
+	|-Nullable<QueryStatsOptions>.GetHashCode
+	|
+	|-Nullable<AttributeDataValue>.GetHashCode
+	|-Nullable<AttributeDataValue>.GetHashCode
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.GetHashCode
+	|
+	|-Nullable<BeginPlayerSessionOptions>.GetHashCode
+	|-Nullable<FileMetadata>.GetHashCode
+	|
+	|-Nullable<AndroidInitializeOptions>.GetHashCode
+	|
+	|-Nullable<InitializeOptions>.GetHashCode
+	|
+	|-Nullable<Options>.GetHashCode
+	|
+	|-Nullable<WindowsOptions>.GetHashCode
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.GetHashCode
+	|
+	|-Nullable<ServerInfo>.GetHashCode
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>.GetHashCode
 	|
 	|-Nullable<Item>.GetHashCode
 	|
@@ -4406,7 +9962,7 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<long>.GetHashCode
 	|-Nullable<TimeSpan>.GetHashCode
 	|
-	|-Nullable<Token>.GetHashCode
+	|-Nullable<IntPtr>.GetHashCode
 	|
 	|-Nullable<StreamingContext>.GetHashCode
 	|
@@ -4462,35 +10018,236 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<TrainEngine.TrainMovementState>.GetValueOrDefault
 	|-Nullable<PostProcessLayer.ScalingMode>.GetValueOrDefault
 	|-Nullable<VehicleEngineController.EngineState<TrainEngine>>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetProtectMessageOutputLengthOptions>.GetValueOrDefault
+	|-Nullable<PollStatusOptions>.GetValueOrDefault
+	|-Nullable<LogGameRoundEndOptions>.GetValueOrDefault
+	|-Nullable<GetProtectMessageOutputLengthOptions>.GetValueOrDefault
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.GetValueOrDefault
+	|-Nullable<CreateLobbySearchOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetMaxResultsOptions>.GetValueOrDefault
+	|-Nullable<SetPortRangeOptions>.GetValueOrDefault
+	|-Nullable<SetRelayControlOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetStatusOptions>.GetValueOrDefault
+	|-Nullable<EndSnapshotOptions>.GetValueOrDefault
+	|-Nullable<SubmitSnapshotOptions>.GetValueOrDefault
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.GetValueOrDefault
+	|-Nullable<CreateSessionSearchOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetMaxResultsOptions>.GetValueOrDefault
+	|-Nullable<SetDisplayPreferenceOptions>.GetValueOrDefault
+	|-Nullable<SetToggleFriendsKeyOptions>.GetValueOrDefault
 	|-Nullable<EncryptedAppTicketResponse_t>.GetValueOrDefault
 	|-Nullable<Int32Enum>.GetValueOrDefault
 	|
 	|-Nullable<JsonPosition>.GetValueOrDefault
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReceiveMessageFromPeerOptions>.GetValueOrDefault
+	|-Nullable<ReceiveMessageFromClientOptions>.GetValueOrDefault
+	|-Nullable<LinkAccountOptions>.GetValueOrDefault
+	|-Nullable<LogoutCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateUserCallbackInfo>.GetValueOrDefault
+	|-Nullable<LinkAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.GetValueOrDefault
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<UnlinkAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryEntitlementsCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryOffersCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFriendsCallbackInfo>.GetValueOrDefault
+	|-Nullable<RequestPermissionsCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateParentEmailCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<DestroyLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinLobbyByIdCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<KickMemberCallbackInfo>.GetValueOrDefault
+	|-Nullable<LeaveLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<PromoteMemberCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryInvitesCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.GetValueOrDefault
+	|-Nullable<EndPlayerSessionOptions>.GetValueOrDefault
+	|-Nullable<EndPlayerSessionOptionsAccountId>.GetValueOrDefault
+	|-Nullable<OnQueryNATTypeCompleteInfo>.GetValueOrDefault
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.GetValueOrDefault
+	|-Nullable<DeleteCacheCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeleteFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<DuplicateFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<SetPresenceCallbackInfo>.GetValueOrDefault
+	|-Nullable<AddProgressionOptions>.GetValueOrDefault
+	|-Nullable<DeleteSnapshotCallbackInfo>.GetValueOrDefault
+	|-Nullable<AudioInputDeviceInfo>.GetValueOrDefault
+	|-Nullable<AudioOutputDeviceInfo>.GetValueOrDefault
+	|-Nullable<QueryInvitesCallbackInfo>.GetValueOrDefault
+	|-Nullable<UnregisterPlayersCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeleteCacheCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<HideFriendsCallbackInfo>.GetValueOrDefault
+	|-Nullable<ShowFriendsCallbackInfo>.GetValueOrDefault
 	|
 	|-Nullable<SetUserItemVoteResult_t>.GetValueOrDefault
 	|-Nullable<DateTimeOffset>.GetValueOrDefault
 	|-Nullable<Decimal>.GetValueOrDefault
 	|-Nullable<Guid>.GetValueOrDefault
 	|-Nullable<Color>.GetValueOrDefault
+	|-Nullable<LogPlayerReviveOptions>.GetValueOrDefault
+	|-Nullable<LogPlayerSpawnOptions>.GetValueOrDefault
+	|-Nullable<Quat>.GetValueOrDefault
+	|-Nullable<QuatInternal>.GetValueOrDefault
+	|-Nullable<SetClientDetailsOptions>.GetValueOrDefault
+	|-Nullable<SetClientNetworkStateOptions>.GetValueOrDefault
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.GetValueOrDefault
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.GetValueOrDefault
+	|-Nullable<SetPacketQueueSizeOptions>.GetValueOrDefault
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.GetValueOrDefault
+	|-Nullable<AcknowledgeEventIdOptions>.GetValueOrDefault
 	|-Nullable<SubmitItemUpdateResult_t>.GetValueOrDefault
 	|-Nullable<Rect>.GetValueOrDefault
 	|
 	|-Nullable<SteamInventoryRequestPricesResult_t>.GetValueOrDefault
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeletePersistentAuthCallbackInfo>.GetValueOrDefault
+	|-Nullable<VerifyUserAuthCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateDeviceIdCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeleteDeviceIdCallbackInfo>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.GetValueOrDefault
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<LobbySearchFindCallbackInfo>.GetValueOrDefault
+	|-Nullable<SocketIdInternal>.GetValueOrDefault
+	|-Nullable<SubmitSnapshotCallbackInfo>.GetValueOrDefault
+	|-Nullable<KickCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<DestroySessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<EndSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SessionSearchFindCallbackInfo>.GetValueOrDefault
+	|-Nullable<StartSessionCallbackInfo>.GetValueOrDefault
 	|-Nullable<Image>.GetValueOrDefault
 	|
 	|-Nullable<Friend.FriendGameInfo>.GetValueOrDefault
+	|-Nullable<KeyImageInfoInternal>.GetValueOrDefault
+	|-Nullable<LeaderboardRecordInternal>.GetValueOrDefault
+	|-Nullable<AttributeDataInternal>.GetValueOrDefault
+	|-Nullable<AudioBufferInternal>.GetValueOrDefault
+	|-Nullable<AttributeDataInternal>.GetValueOrDefault
+	|-Nullable<FileMetadataInternal>.GetValueOrDefault
+	|-Nullable<ExternalUserInfoInternal>.GetValueOrDefault
 	|
 	|-Nullable<InventoryResult>.GetValueOrDefault
 	|-Nullable<DateTime>.GetValueOrDefault
 	|-Nullable<long>.GetValueOrDefault
 	|-Nullable<TimeSpan>.GetValueOrDefault
 	|-Nullable<ulong>.GetValueOrDefault
+	|-Nullable<UnregisterPeerOptions>.GetValueOrDefault
+	|-Nullable<LogPlayerDespawnOptions>.GetValueOrDefault
+	|-Nullable<UnregisterClientOptions>.GetValueOrDefault
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.GetValueOrDefault
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.GetValueOrDefault
+	|-Nullable<LocalRTCOptions>.GetValueOrDefault
+	|-Nullable<PageQuery>.GetValueOrDefault
+	|-Nullable<GetDesktopCrossplayStatusInfo>.GetValueOrDefault
+	|-Nullable<RTCOptions>.GetValueOrDefault
+	|-Nullable<CopyUserTokenByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.GetValueOrDefault
+	|-Nullable<PrePresentOptions>.GetValueOrDefault
+	|-Nullable<ReportKeyEventOptions>.GetValueOrDefault
 	|-Nullable<SteamId>.GetValueOrDefault
+	|-Nullable<IntPtr>.GetValueOrDefault
 	|-Nullable<ValueTuple<Int32Enum, float>>.GetValueOrDefault
 	|
 	|-Nullable<bool>.GetValueOrDefault
 	|-Nullable<byte>.GetValueOrDefault
 	|-Nullable<sbyte>.GetValueOrDefault
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.GetValueOrDefault
+	|-Nullable<GetAchievementDefinitionCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyMessageToPeerOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyMessageToServerOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<EndSessionOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyClientActionRequiredOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyMessageToClientOptions>.GetValueOrDefault
+	|-Nullable<EndSessionOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<CopyUserAuthTokenOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAuthExpirationOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<DeleteDeviceIdOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.GetValueOrDefault
+	|-Nullable<TransactionGetEntitlementsCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyFriendsUpdateOptions>.GetValueOrDefault
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.GetValueOrDefault
+	|-Nullable<QueryAgeGateOptions>.GetValueOrDefault
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.GetValueOrDefault
+	|-Nullable<GetLeaderboardRecordCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyInfoOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.GetValueOrDefault
+	|-Nullable<GetNATTypeOptions>.GetValueOrDefault
+	|-Nullable<GetPacketQueueInfoOptions>.GetValueOrDefault
+	|-Nullable<GetPortRangeOptions>.GetValueOrDefault
+	|-Nullable<GetRelayControlOptions>.GetValueOrDefault
+	|-Nullable<QueryNATTypeOptions>.GetValueOrDefault
+	|-Nullable<GetDesktopCrossplayStatusOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.GetValueOrDefault
+	|-Nullable<GetAudioInputDevicesCountOptions>.GetValueOrDefault
+	|-Nullable<GetAudioOutputDevicesCountOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionCopyInfoOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsCopyInfoOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.GetValueOrDefault
+	|-Nullable<GetToggleFriendsKeyOptions>.GetValueOrDefault
+	|-Nullable<IsSocialOverlayPausedOptions>.GetValueOrDefault
+	|-Nullable<PauseSocialOverlayOptions>.GetValueOrDefault
 	|-Nullable<ByteEnum>.GetValueOrDefault
 	|
 	|-Nullable<char>.GetValueOrDefault
@@ -4500,32 +10257,533 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<double>.GetValueOrDefault
 	|
 	|-Nullable<StreamingContext>.GetValueOrDefault
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.GetValueOrDefault
+	|-Nullable<PlayerStatInfo>.GetValueOrDefault
+	|-Nullable<QueryPlayerAchievementsOptions>.GetValueOrDefault
+	|-Nullable<StatThresholds>.GetValueOrDefault
+	|-Nullable<UnlockAchievementsOptions>.GetValueOrDefault
+	|-Nullable<BeginSessionOptions>.GetValueOrDefault
+	|-Nullable<ReceiveMessageFromServerOptions>.GetValueOrDefault
+	|-Nullable<RegisterEventParamDef>.GetValueOrDefault
+	|-Nullable<IdToken>.GetValueOrDefault
+	|-Nullable<QueryIdTokenOptions>.GetValueOrDefault
+	|-Nullable<AuthExpirationCallbackInfo>.GetValueOrDefault
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.GetValueOrDefault
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.GetValueOrDefault
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.GetValueOrDefault
+	|-Nullable<Credentials>.GetValueOrDefault
+	|-Nullable<IdToken>.GetValueOrDefault
+	|-Nullable<LinkAccountOptions>.GetValueOrDefault
+	|-Nullable<SendCustomInviteOptions>.GetValueOrDefault
+	|-Nullable<SetCustomInviteOptions>.GetValueOrDefault
+	|-Nullable<CopyEntitlementByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyEntitlementByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyItemByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyTransactionByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyTransactionByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetEntitlementsByNameCountOptions>.GetValueOrDefault
+	|-Nullable<GetItemImageInfoCountOptions>.GetValueOrDefault
+	|-Nullable<GetItemReleaseCountOptions>.GetValueOrDefault
+	|-Nullable<GetOfferImageInfoCountOptions>.GetValueOrDefault
+	|-Nullable<GetOfferItemCountOptions>.GetValueOrDefault
+	|-Nullable<ItemOwnership>.GetValueOrDefault
+	|-Nullable<QueryOffersOptions>.GetValueOrDefault
+	|-Nullable<RedeemEntitlementsOptions>.GetValueOrDefault
+	|-Nullable<AcceptInviteOptions>.GetValueOrDefault
+	|-Nullable<GetFriendAtIndexOptions>.GetValueOrDefault
+	|-Nullable<GetStatusOptions>.GetValueOrDefault
+	|-Nullable<RejectInviteOptions>.GetValueOrDefault
+	|-Nullable<SendInviteOptions>.GetValueOrDefault
+	|-Nullable<SteamOptions>.GetValueOrDefault
+	|-Nullable<CopyPermissionByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetPermissionByKeyOptions>.GetValueOrDefault
+	|-Nullable<PermissionStatus>.GetValueOrDefault
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RequestPermissionsOptions>.GetValueOrDefault
+	|-Nullable<UpdateParentEmailOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.GetValueOrDefault
+	|-Nullable<LeaderboardUserScore>.GetValueOrDefault
+	|-Nullable<QueryLeaderboardRanksOptions>.GetValueOrDefault
+	|-Nullable<UserScoresQueryStatInfo>.GetValueOrDefault
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.GetValueOrDefault
+	|-Nullable<CopyLobbyDetailsHandleOptions>.GetValueOrDefault
+	|-Nullable<DestroyLobbyOptions>.GetValueOrDefault
+	|-Nullable<GetInviteIdByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetRTCRoomNameOptions>.GetValueOrDefault
+	|-Nullable<IsRTCRoomConnectedOptions>.GetValueOrDefault
+	|-Nullable<LeaveLobbyOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchRemoveParameterOptions>.GetValueOrDefault
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteOptions>.GetValueOrDefault
+	|-Nullable<UpdateLobbyModificationOptions>.GetValueOrDefault
+	|-Nullable<CopyModInfoOptions>.GetValueOrDefault
+	|-Nullable<EnumerateModsOptions>.GetValueOrDefault
+	|-Nullable<ModInfo>.GetValueOrDefault
+	|-Nullable<GetNextReceivedPacketSizeOptions>.GetValueOrDefault
+	|-Nullable<ReceivePacketOptions>.GetValueOrDefault
+	|-Nullable<ClientCredentials>.GetValueOrDefault
+	|-Nullable<WindowsRTCOptions>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataAtIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataByFilenameOptions>.GetValueOrDefault
+	|-Nullable<DeleteFileOptions>.GetValueOrDefault
+	|-Nullable<QueryFileOptions>.GetValueOrDefault
+	|-Nullable<CopyPresenceOptions>.GetValueOrDefault
+	|-Nullable<DataRecord>.GetValueOrDefault
+	|-Nullable<GetJoinInfoOptions>.GetValueOrDefault
+	|-Nullable<HasPresenceOptions>.GetValueOrDefault
+	|-Nullable<QueryPresenceOptions>.GetValueOrDefault
+	|-Nullable<SetPresenceOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyDisconnectedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<LeaveRoomOptions>.GetValueOrDefault
+	|-Nullable<ParticipantMetadata>.GetValueOrDefault
+	|-Nullable<SetSettingOptions>.GetValueOrDefault
+	|-Nullable<CopyUserTokenByUserIdOptions>.GetValueOrDefault
+	|-Nullable<KickOptions>.GetValueOrDefault
+	|-Nullable<UserToken>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioInputStateOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioOutputStateOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.GetValueOrDefault
+	|-Nullable<AudioBuffer>.GetValueOrDefault
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.GetValueOrDefault
+	|-Nullable<QueryActivePlayerSanctionsOptions>.GetValueOrDefault
+	|-Nullable<GetInviteIdByIndexOptions>.GetValueOrDefault
+	|-Nullable<IsUserInSessionOptions>.GetValueOrDefault
+	|-Nullable<RegisterPlayersOptions>.GetValueOrDefault
+	|-Nullable<RejectInviteOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchRemoveParameterOptions>.GetValueOrDefault
+	|-Nullable<UnregisterPlayersOptions>.GetValueOrDefault
+	|-Nullable<CopyStatByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyStatByNameOptions>.GetValueOrDefault
+	|-Nullable<IngestData>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataAtIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataByFilenameOptions>.GetValueOrDefault
+	|-Nullable<QueryFileListOptions>.GetValueOrDefault
+	|-Nullable<QueryFileOptions>.GetValueOrDefault
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ShowBlockPlayerOptions>.GetValueOrDefault
+	|-Nullable<ShowReportPlayerOptions>.GetValueOrDefault
+	|-Nullable<CopyUserInfoOptions>.GetValueOrDefault
+	|-Nullable<GetExternalUserInfoCountOptions>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.GetValueOrDefault
+	|-Nullable<QueryUserInfoOptions>.GetValueOrDefault
 	|-Nullable<ImageStorageEntity.ImageRequest>.GetValueOrDefault
 	|
 	|-Nullable<float>.GetValueOrDefault
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<GetPlayerAchievementCountOptions>.GetValueOrDefault
+	|-Nullable<GetUnlockedAchievementCountOptions>.GetValueOrDefault
+	|-Nullable<AddExternalIntegrityCatalogOptions>.GetValueOrDefault
+	|-Nullable<SetGameSessionIdOptions>.GetValueOrDefault
+	|-Nullable<AccountFeatureRestrictedInfo>.GetValueOrDefault
+	|-Nullable<CopyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<DeletePersistentAuthOptions>.GetValueOrDefault
+	|-Nullable<LogoutOptions>.GetValueOrDefault
+	|-Nullable<CopyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<CopyProductUserInfoOptions>.GetValueOrDefault
+	|-Nullable<CreateDeviceIdOptions>.GetValueOrDefault
+	|-Nullable<CreateUserOptions>.GetValueOrDefault
+	|-Nullable<GetProductUserExternalAccountCountOptions>.GetValueOrDefault
+	|-Nullable<UnlinkAccountOptions>.GetValueOrDefault
+	|-Nullable<UserLoginInfo>.GetValueOrDefault
+	|-Nullable<CheckoutEntry>.GetValueOrDefault
+	|-Nullable<GetEntitlementsCountOptions>.GetValueOrDefault
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.GetValueOrDefault
+	|-Nullable<GetOfferCountOptions>.GetValueOrDefault
+	|-Nullable<GetTransactionCountOptions>.GetValueOrDefault
+	|-Nullable<GetFriendsCountOptions>.GetValueOrDefault
+	|-Nullable<QueryFriendsOptions>.GetValueOrDefault
+	|-Nullable<GetPermissionsCountOptions>.GetValueOrDefault
+	|-Nullable<QueryPermissionsOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.GetValueOrDefault
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.GetValueOrDefault
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.GetValueOrDefault
+	|-Nullable<GetInviteCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetBucketIdOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchFindOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetLobbyIdOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.GetValueOrDefault
+	|-Nullable<QueryInvitesOptions>.GetValueOrDefault
+	|-Nullable<UpdateLobbyOptions>.GetValueOrDefault
+	|-Nullable<SocketId>.GetValueOrDefault
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.GetValueOrDefault
+	|-Nullable<DeleteCacheOptions>.GetValueOrDefault
+	|-Nullable<GetFileMetadataCountOptions>.GetValueOrDefault
+	|-Nullable<QueryFileListOptions>.GetValueOrDefault
+	|-Nullable<CreatePresenceModificationOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationDataRecordId>.GetValueOrDefault
+	|-Nullable<PresenceModificationDeleteDataOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetDataOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.GetValueOrDefault
+	|-Nullable<BeginSnapshotOptions>.GetValueOrDefault
+	|-Nullable<DeleteSnapshotOptions>.GetValueOrDefault
+	|-Nullable<AudioDevicesChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RegisterPlatformAudioUserOptions>.GetValueOrDefault
+	|-Nullable<UnregisterPlatformAudioUserOptions>.GetValueOrDefault
+	|-Nullable<GetPlayerSanctionCountOptions>.GetValueOrDefault
+	|-Nullable<CopyActiveSessionHandleOptions>.GetValueOrDefault
+	|-Nullable<CopySessionHandleByInviteIdOptions>.GetValueOrDefault
+	|-Nullable<CopySessionHandleForPresenceOptions>.GetValueOrDefault
+	|-Nullable<DestroySessionOptions>.GetValueOrDefault
+	|-Nullable<DumpSessionStateOptions>.GetValueOrDefault
+	|-Nullable<EndSessionOptions>.GetValueOrDefault
+	|-Nullable<GetInviteCountOptions>.GetValueOrDefault
+	|-Nullable<QueryInvitesOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationRemoveAttributeOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetBucketIdOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetHostAddressOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchFindOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetSessionIdOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.GetValueOrDefault
+	|-Nullable<StartSessionOptions>.GetValueOrDefault
+	|-Nullable<UpdateSessionModificationOptions>.GetValueOrDefault
+	|-Nullable<UpdateSessionOptions>.GetValueOrDefault
+	|-Nullable<GetStatCountOptions>.GetValueOrDefault
+	|-Nullable<DeleteCacheOptions>.GetValueOrDefault
+	|-Nullable<GetFileMetadataCountOptions>.GetValueOrDefault
+	|-Nullable<GetFriendsExclusiveInputOptions>.GetValueOrDefault
+	|-Nullable<GetFriendsVisibleOptions>.GetValueOrDefault
+	|-Nullable<HideFriendsOptions>.GetValueOrDefault
+	|-Nullable<ShowFriendsOptions>.GetValueOrDefault
+	|-Nullable<DataKey>.GetValueOrDefault
 	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.GetValueOrDefault
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryDefinitionsOptions>.GetValueOrDefault
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnMessageToServerCallbackInfo>.GetValueOrDefault
+	|-Nullable<ProtectMessageOptions>.GetValueOrDefault
+	|-Nullable<UnprotectMessageOptions>.GetValueOrDefault
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<LoginStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<VerifyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<GetExternalAccountMappingsOptions>.GetValueOrDefault
+	|-Nullable<GetProductUserIdMappingOptions>.GetValueOrDefault
+	|-Nullable<LoginStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryExternalAccountMappingsOptions>.GetValueOrDefault
+	|-Nullable<QueryProductUserIdMappingsOptions>.GetValueOrDefault
+	|-Nullable<TransferDeviceIdAccountOptions>.GetValueOrDefault
+	|-Nullable<VerifyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<CatalogRelease>.GetValueOrDefault
+	|-Nullable<CheckoutOptions>.GetValueOrDefault
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyItemImageInfoByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyItemReleaseByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferItemByIndexOptions>.GetValueOrDefault
+	|-Nullable<KeyImageInfo>.GetValueOrDefault
+	|-Nullable<QueryEntitlementsOptions>.GetValueOrDefault
+	|-Nullable<QueryOwnershipOptions>.GetValueOrDefault
+	|-Nullable<QueryOwnershipTokenOptions>.GetValueOrDefault
+	|-Nullable<Options>.GetValueOrDefault
+	|-Nullable<CreateUserOptions>.GetValueOrDefault
+	|-Nullable<LeaderboardRecord>.GetValueOrDefault
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<KickMemberOptions>.GetValueOrDefault
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<PromoteMemberOptions>.GetValueOrDefault
+	|-Nullable<SendInviteOptions>.GetValueOrDefault
+	|-Nullable<LogMessage>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.GetValueOrDefault
+	|-Nullable<CloseConnectionsOptions>.GetValueOrDefault
+	|-Nullable<DuplicateFileOptions>.GetValueOrDefault
+	|-Nullable<PresenceChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<SetParticipantHardMuteOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.GetValueOrDefault
+	|-Nullable<SetAudioInputSettingsOptions>.GetValueOrDefault
+	|-Nullable<SetAudioOutputSettingsOptions>.GetValueOrDefault
+	|-Nullable<UpdateReceivingVolumeOptions>.GetValueOrDefault
+	|-Nullable<UpdateSendingOptions>.GetValueOrDefault
+	|-Nullable<UpdateSendingVolumeOptions>.GetValueOrDefault
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsSettings>.GetValueOrDefault
+	|-Nullable<IngestStatOptions>.GetValueOrDefault
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.GetValueOrDefault
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.GetValueOrDefault
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.GetValueOrDefault
+	|
+	|-Nullable<Definition>.GetValueOrDefault
+	|-Nullable<VerifyUserAuthOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionInfo>.GetValueOrDefault
+	|
+	|-Nullable<DefinitionInternal>.GetValueOrDefault
+	|
+	|-Nullable<DefinitionV2>.GetValueOrDefault
+	|-Nullable<PlayerAchievement>.GetValueOrDefault
+	|-Nullable<Token>.GetValueOrDefault
+	|-Nullable<CatalogItem>.GetValueOrDefault
+	|-Nullable<Attribute>.GetValueOrDefault
+	|-Nullable<LobbyModificationAddAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetParameterOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsAttribute>.GetValueOrDefault
+	|-Nullable<SessionModificationAddAttributeOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetParameterOptions>.GetValueOrDefault
+	|
+	|-Nullable<DefinitionV2Internal>.GetValueOrDefault
+	|-Nullable<TokenInternal>.GetValueOrDefault
+	|-Nullable<CatalogItemInternal>.GetValueOrDefault
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.GetValueOrDefault
+	|-Nullable<IOSCredentials>.GetValueOrDefault
+	|-Nullable<LobbyDetailsInfo>.GetValueOrDefault
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnPeerConnectionEstablishedInfo>.GetValueOrDefault
+	|-Nullable<OnRemoteConnectionClosedInfo>.GetValueOrDefault
+	|-Nullable<ReadFileDataCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinRoomOptions>.GetValueOrDefault
+	|-Nullable<AudioBeforeSendCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileDataCallbackInfo>.GetValueOrDefault
+	|-Nullable<UserInfoData>.GetValueOrDefault
+	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<RegisterEventOptions>.GetValueOrDefault
+	|-Nullable<BeginSessionOptions>.GetValueOrDefault
+	|-Nullable<ProtectMessageOptions>.GetValueOrDefault
+	|-Nullable<UnprotectMessageOptions>.GetValueOrDefault
+	|-Nullable<QueryIdTokenCallbackInfo>.GetValueOrDefault
+	|-Nullable<LoginCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendCustomInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<CheckoutCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryOwnershipCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.GetValueOrDefault
+	|-Nullable<RedeemEntitlementsCallbackInfo>.GetValueOrDefault
+	|-Nullable<AcceptInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryAgeGateCallbackInfo>.GetValueOrDefault
+	|-Nullable<HardMuteMemberCallbackInfo>.GetValueOrDefault
+	|-Nullable<EnumerateModsCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFileListCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<WriteFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryPresenceCallbackInfo>.GetValueOrDefault
+	|-Nullable<DisconnectedCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinRoomCallbackInfo>.GetValueOrDefault
+	|-Nullable<LeaveRoomCallbackInfo>.GetValueOrDefault
+	|-Nullable<PlayerSanction>.GetValueOrDefault
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.GetValueOrDefault
+	|-Nullable<RegisterPlayersCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<IngestStatCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<FileMetadata>.GetValueOrDefault
+	|-Nullable<QueryFileListCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnShowReportPlayerCallbackInfo>.GetValueOrDefault
+	|-Nullable<ExternalUserInfo>.GetValueOrDefault
+	|-Nullable<QueryUserInfoCallbackInfo>.GetValueOrDefault
 	|-Nullable<Option>.GetValueOrDefault
 	|
-	|-Nullable<ServerInfo>.GetValueOrDefault
+	|-Nullable<PlayerAchievementInternal>.GetValueOrDefault
+	|-Nullable<InfoInternal>.GetValueOrDefault
 	|
+	|-Nullable<UnlockedAchievement>.GetValueOrDefault
+	|-Nullable<LogGameRoundStartOptions>.GetValueOrDefault
+	|-Nullable<OnClientActionRequiredCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnMessageToClientCallbackInfo>.GetValueOrDefault
+	|-Nullable<PinGrantInfo>.GetValueOrDefault
+	|-Nullable<FinalizeInviteOptions>.GetValueOrDefault
+	|-Nullable<OnFriendsUpdateInfo>.GetValueOrDefault
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.GetValueOrDefault
+	|-Nullable<HardMuteMemberOptions>.GetValueOrDefault
+	|-Nullable<JoinLobbyByIdOptions>.GetValueOrDefault
+	|-Nullable<JoinLobbyOptions>.GetValueOrDefault
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<AcceptConnectionOptions>.GetValueOrDefault
+	|-Nullable<ClearPacketQueueOptions>.GetValueOrDefault
+	|-Nullable<CloseConnectionOptions>.GetValueOrDefault
+	|-Nullable<FileTransferProgressCallbackInfo>.GetValueOrDefault
+	|-Nullable<WriteFileDataCallbackInfo>.GetValueOrDefault
+	|-Nullable<BlockParticipantOptions>.GetValueOrDefault
+	|-Nullable<SetRoomSettingOptions>.GetValueOrDefault
+	|-Nullable<QueryJoinRoomTokenOptions>.GetValueOrDefault
+	|-Nullable<AudioInputStateCallbackInfo>.GetValueOrDefault
+	|-Nullable<AudioOutputStateCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateParticipantVolumeOptions>.GetValueOrDefault
+	|-Nullable<UpdateReceivingOptions>.GetValueOrDefault
+	|-Nullable<JoinSessionOptions>.GetValueOrDefault
+	|-Nullable<SessionInviteReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<FileTransferProgressCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<UnlockedAchievementInternal>.GetValueOrDefault
+	|-Nullable<LogPlayerUseAbilityOptions>.GetValueOrDefault
+	|-Nullable<IdTokenInternal>.GetValueOrDefault
+	|-Nullable<IdTokenInternal>.GetValueOrDefault
+	|-Nullable<PermissionStatusInternal>.GetValueOrDefault
+	|-Nullable<LeaderboardUserScoreInternal>.GetValueOrDefault
+	|-Nullable<AttributeInternal>.GetValueOrDefault
+	|-Nullable<ModInfoInternal>.GetValueOrDefault
+	|-Nullable<UserTokenInternal>.GetValueOrDefault
+	|-Nullable<AudioInputDeviceInfoInternal>.GetValueOrDefault
+	|-Nullable<AudioOutputDeviceInfoInternal>.GetValueOrDefault
+	|-Nullable<SessionDetailsAttributeInternal>.GetValueOrDefault
 	|-Nullable<CreateItemResult_t>.GetValueOrDefault
 	|-Nullable<InventoryPurchaseResult>.GetValueOrDefault
 	|-Nullable<SteamInventoryStartPurchaseResult_t>.GetValueOrDefault
 	|-Nullable<ResultPage>.GetValueOrDefault
 	|-Nullable<Ray>.GetValueOrDefault
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>.GetValueOrDefault
+	|-Nullable<RegisterPeerOptions>.GetValueOrDefault
 	|
-	|-Nullable<Item>.GetValueOrDefault
+	|-Nullable<LogEventOptions>.GetValueOrDefault
 	|
-	|-Nullable<DataKey>.GetValueOrDefault
+	|-Nullable<LogEventParamPair>.GetValueOrDefault
+	|-Nullable<LogEventParamPairParamValue>.GetValueOrDefault
 	|
+	|-Nullable<LogPlayerTakeDamageOptions>.GetValueOrDefault
+	|
+	|-Nullable<LogPlayerTickOptions>.GetValueOrDefault
+	|-Nullable<UserInfoDataInternal>.GetValueOrDefault
+	|
+	|-Nullable<LogPlayerUseWeaponData>.GetValueOrDefault
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.GetValueOrDefault
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.GetValueOrDefault
+	|
+	|-Nullable<Vec3f>.GetValueOrDefault
+	|-Nullable<Vec3fInternal>.GetValueOrDefault
+	|-Nullable<PageResult>.GetValueOrDefault
 	|-Nullable<Token>.GetValueOrDefault
 	|-Nullable<Vector3>.GetValueOrDefault
 	|
+	|-Nullable<RegisterClientOptions>.GetValueOrDefault
+	|
+	|-Nullable<Credentials>.GetValueOrDefault
+	|-Nullable<LoginOptions>.GetValueOrDefault
+	|-Nullable<CustomInviteRejectedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<Entitlement>.GetValueOrDefault
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ModIdentifier>.GetValueOrDefault
+	|-Nullable<OnIncomingConnectionRequestInfo>.GetValueOrDefault
+	|-Nullable<OnIncomingPacketQueueFullInfo>.GetValueOrDefault
+	|-Nullable<OnPeerConnectionInterruptedInfo>.GetValueOrDefault
+	|-Nullable<ReadFileOptions>.GetValueOrDefault
+	|-Nullable<WriteFileOptions>.GetValueOrDefault
+	|-Nullable<JoinGameAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ParticipantUpdatedCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendAudioOptions>.GetValueOrDefault
+	|-Nullable<SendPlayerBehaviorReportOptions>.GetValueOrDefault
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileOptions>.GetValueOrDefault
+	|
+	|-Nullable<IOSLoginOptions>.GetValueOrDefault
+	|-Nullable<AttributeData>.GetValueOrDefault
+	|-Nullable<CreateLobbyOptions>.GetValueOrDefault
+	|-Nullable<InstallModOptions>.GetValueOrDefault
+	|-Nullable<AttributeData>.GetValueOrDefault
+	|-Nullable<Stat>.GetValueOrDefault
+	|
+	|-Nullable<LinkAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<InstallModCallbackInfo>.GetValueOrDefault
+	|-Nullable<UninstallModCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateModCallbackInfo>.GetValueOrDefault
+	|-Nullable<Info>.GetValueOrDefault
+	|
+	|-Nullable<LoginCallbackInfo>.GetValueOrDefault
+	|-Nullable<VerifyIdTokenCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<LoginOptions>.GetValueOrDefault
+	|-Nullable<ExternalAccountInfo>.GetValueOrDefault
+	|-Nullable<UninstallModOptions>.GetValueOrDefault
+	|-Nullable<UpdateModOptions>.GetValueOrDefault
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<AudioBeforeRenderCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateSessionModificationOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsInfo>.GetValueOrDefault
+	|
+	|-Nullable<PinGrantInfoInternal>.GetValueOrDefault
+	|-Nullable<CatalogReleaseInternal>.GetValueOrDefault
+	|-Nullable<FileMetadataInternal>.GetValueOrDefault
+	|-Nullable<PlayerSanctionInternal>.GetValueOrDefault
+	|-Nullable<ActiveSessionInfoInternal>.GetValueOrDefault
+	|-Nullable<SessionDetailsInfoInternal>.GetValueOrDefault
+	|-Nullable<SessionDetailsSettingsInternal>.GetValueOrDefault
+	|-Nullable<StatInternal>.GetValueOrDefault
 	|-Nullable<RenderTargetIdentifier>.GetValueOrDefault
+	|
+	|-Nullable<ExternalAccountInfoInternal>.GetValueOrDefault
+	|-Nullable<EntitlementInternal>.GetValueOrDefault
+	|-Nullable<DefinitionInternal>.GetValueOrDefault
+	|-Nullable<ModIdentifierInternal>.GetValueOrDefault
+	|-Nullable<PacketQueueInfo>.GetValueOrDefault
+	|-Nullable<InitializeThreadAffinity>.GetValueOrDefault
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<CatalogOffer>.GetValueOrDefault
+	|
+	|-Nullable<CatalogOfferInternal>.GetValueOrDefault
+	|
+	|-Nullable<CreateUserCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateSendingCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.GetValueOrDefault
+	|-Nullable<BlockParticipantCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateReceivingCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<Definition>.GetValueOrDefault
+	|-Nullable<QueryLeaderboardUserScoresOptions>.GetValueOrDefault
+	|-Nullable<SendPacketOptions>.GetValueOrDefault
+	|-Nullable<QueryStatsOptions>.GetValueOrDefault
+	|
+	|-Nullable<AttributeDataValue>.GetValueOrDefault
+	|-Nullable<AttributeDataValue>.GetValueOrDefault
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.GetValueOrDefault
+	|
+	|-Nullable<BeginPlayerSessionOptions>.GetValueOrDefault
+	|-Nullable<FileMetadata>.GetValueOrDefault
+	|
+	|-Nullable<AndroidInitializeOptions>.GetValueOrDefault
+	|
+	|-Nullable<InitializeOptions>.GetValueOrDefault
+	|
+	|-Nullable<Options>.GetValueOrDefault
+	|
+	|-Nullable<WindowsOptions>.GetValueOrDefault
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.GetValueOrDefault
+	|
+	|-Nullable<ServerInfo>.GetValueOrDefault
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>.GetValueOrDefault
+	|
+	|-Nullable<Item>.GetValueOrDefault
 	|
 	|-Nullable<Vector2>.GetValueOrDefault
 	*/
@@ -4538,31 +10796,621 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<ObjectCreationHandling>.GetValueOrDefault
 	|-Nullable<ReferenceLoopHandling>.GetValueOrDefault
 	|-Nullable<Required>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetProtectMessageOutputLengthOptions>.GetValueOrDefault
+	|-Nullable<PollStatusOptions>.GetValueOrDefault
+	|-Nullable<LogGameRoundEndOptions>.GetValueOrDefault
+	|-Nullable<GetProtectMessageOutputLengthOptions>.GetValueOrDefault
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.GetValueOrDefault
+	|-Nullable<CreateLobbySearchOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetMaxResultsOptions>.GetValueOrDefault
+	|-Nullable<SetPortRangeOptions>.GetValueOrDefault
+	|-Nullable<SetRelayControlOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetStatusOptions>.GetValueOrDefault
+	|-Nullable<EndSnapshotOptions>.GetValueOrDefault
+	|-Nullable<SubmitSnapshotOptions>.GetValueOrDefault
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.GetValueOrDefault
+	|-Nullable<CreateSessionSearchOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetMaxResultsOptions>.GetValueOrDefault
+	|-Nullable<SetDisplayPreferenceOptions>.GetValueOrDefault
+	|-Nullable<SetToggleFriendsKeyOptions>.GetValueOrDefault
 	|-Nullable<EncryptedAppTicketResponse_t>.GetValueOrDefault
 	|-Nullable<int>.GetValueOrDefault
 	|-Nullable<Int32Enum>.GetValueOrDefault
 	|-Nullable<uint>.GetValueOrDefault
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.GetValueOrDefault
+	|-Nullable<GetAchievementDefinitionCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyMessageToPeerOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyMessageToServerOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<EndSessionOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyClientActionRequiredOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyMessageToClientOptions>.GetValueOrDefault
+	|-Nullable<EndSessionOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<CopyUserAuthTokenOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAuthExpirationOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<DeleteDeviceIdOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.GetValueOrDefault
+	|-Nullable<TransactionGetEntitlementsCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyFriendsUpdateOptions>.GetValueOrDefault
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.GetValueOrDefault
+	|-Nullable<QueryAgeGateOptions>.GetValueOrDefault
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.GetValueOrDefault
+	|-Nullable<GetLeaderboardRecordCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyInfoOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.GetValueOrDefault
+	|-Nullable<GetNATTypeOptions>.GetValueOrDefault
+	|-Nullable<GetPacketQueueInfoOptions>.GetValueOrDefault
+	|-Nullable<GetPortRangeOptions>.GetValueOrDefault
+	|-Nullable<GetRelayControlOptions>.GetValueOrDefault
+	|-Nullable<QueryNATTypeOptions>.GetValueOrDefault
+	|-Nullable<GetDesktopCrossplayStatusOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.GetValueOrDefault
+	|-Nullable<GetAudioInputDevicesCountOptions>.GetValueOrDefault
+	|-Nullable<GetAudioOutputDevicesCountOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionCopyInfoOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsCopyInfoOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.GetValueOrDefault
+	|-Nullable<GetToggleFriendsKeyOptions>.GetValueOrDefault
+	|-Nullable<IsSocialOverlayPausedOptions>.GetValueOrDefault
+	|-Nullable<PauseSocialOverlayOptions>.GetValueOrDefault
+	|-Nullable<bool>.GetValueOrDefault
+	|-Nullable<byte>.GetValueOrDefault
+	|-Nullable<ByteEnum>.GetValueOrDefault
+	|-Nullable<sbyte>.GetValueOrDefault
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<GetPlayerAchievementCountOptions>.GetValueOrDefault
+	|-Nullable<GetUnlockedAchievementCountOptions>.GetValueOrDefault
+	|-Nullable<AddExternalIntegrityCatalogOptions>.GetValueOrDefault
+	|-Nullable<SetGameSessionIdOptions>.GetValueOrDefault
+	|-Nullable<AccountFeatureRestrictedInfo>.GetValueOrDefault
+	|-Nullable<CopyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<DeletePersistentAuthOptions>.GetValueOrDefault
+	|-Nullable<LogoutOptions>.GetValueOrDefault
+	|-Nullable<CopyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<CopyProductUserInfoOptions>.GetValueOrDefault
+	|-Nullable<CreateDeviceIdOptions>.GetValueOrDefault
+	|-Nullable<CreateUserOptions>.GetValueOrDefault
+	|-Nullable<GetProductUserExternalAccountCountOptions>.GetValueOrDefault
+	|-Nullable<UnlinkAccountOptions>.GetValueOrDefault
+	|-Nullable<UserLoginInfo>.GetValueOrDefault
+	|-Nullable<CheckoutEntry>.GetValueOrDefault
+	|-Nullable<GetEntitlementsCountOptions>.GetValueOrDefault
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.GetValueOrDefault
+	|-Nullable<GetOfferCountOptions>.GetValueOrDefault
+	|-Nullable<GetTransactionCountOptions>.GetValueOrDefault
+	|-Nullable<GetFriendsCountOptions>.GetValueOrDefault
+	|-Nullable<QueryFriendsOptions>.GetValueOrDefault
+	|-Nullable<GetPermissionsCountOptions>.GetValueOrDefault
+	|-Nullable<QueryPermissionsOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.GetValueOrDefault
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.GetValueOrDefault
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.GetValueOrDefault
+	|-Nullable<GetInviteCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationSetBucketIdOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchFindOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetLobbyIdOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.GetValueOrDefault
+	|-Nullable<QueryInvitesOptions>.GetValueOrDefault
+	|-Nullable<UpdateLobbyOptions>.GetValueOrDefault
+	|-Nullable<SocketId>.GetValueOrDefault
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.GetValueOrDefault
+	|-Nullable<DeleteCacheOptions>.GetValueOrDefault
+	|-Nullable<GetFileMetadataCountOptions>.GetValueOrDefault
+	|-Nullable<QueryFileListOptions>.GetValueOrDefault
+	|-Nullable<CreatePresenceModificationOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationDataRecordId>.GetValueOrDefault
+	|-Nullable<PresenceModificationDeleteDataOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetDataOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.GetValueOrDefault
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.GetValueOrDefault
+	|-Nullable<BeginSnapshotOptions>.GetValueOrDefault
+	|-Nullable<DeleteSnapshotOptions>.GetValueOrDefault
+	|-Nullable<AudioDevicesChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RegisterPlatformAudioUserOptions>.GetValueOrDefault
+	|-Nullable<UnregisterPlatformAudioUserOptions>.GetValueOrDefault
+	|-Nullable<GetPlayerSanctionCountOptions>.GetValueOrDefault
+	|-Nullable<CopyActiveSessionHandleOptions>.GetValueOrDefault
+	|-Nullable<CopySessionHandleByInviteIdOptions>.GetValueOrDefault
+	|-Nullable<CopySessionHandleForPresenceOptions>.GetValueOrDefault
+	|-Nullable<DestroySessionOptions>.GetValueOrDefault
+	|-Nullable<DumpSessionStateOptions>.GetValueOrDefault
+	|-Nullable<EndSessionOptions>.GetValueOrDefault
+	|-Nullable<GetInviteCountOptions>.GetValueOrDefault
+	|-Nullable<QueryInvitesOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationRemoveAttributeOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetBucketIdOptions>.GetValueOrDefault
+	|-Nullable<SessionModificationSetHostAddressOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchFindOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetSessionIdOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.GetValueOrDefault
+	|-Nullable<StartSessionOptions>.GetValueOrDefault
+	|-Nullable<UpdateSessionModificationOptions>.GetValueOrDefault
+	|-Nullable<UpdateSessionOptions>.GetValueOrDefault
+	|-Nullable<GetStatCountOptions>.GetValueOrDefault
+	|-Nullable<DeleteCacheOptions>.GetValueOrDefault
+	|-Nullable<GetFileMetadataCountOptions>.GetValueOrDefault
+	|-Nullable<GetFriendsExclusiveInputOptions>.GetValueOrDefault
+	|-Nullable<GetFriendsVisibleOptions>.GetValueOrDefault
+	|-Nullable<HideFriendsOptions>.GetValueOrDefault
+	|-Nullable<ShowFriendsOptions>.GetValueOrDefault
+	|-Nullable<DataKey>.GetValueOrDefault
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.GetValueOrDefault
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryDefinitionsOptions>.GetValueOrDefault
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnMessageToServerCallbackInfo>.GetValueOrDefault
+	|-Nullable<ProtectMessageOptions>.GetValueOrDefault
+	|-Nullable<UnprotectMessageOptions>.GetValueOrDefault
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<LoginStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<VerifyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<GetExternalAccountMappingsOptions>.GetValueOrDefault
+	|-Nullable<GetProductUserIdMappingOptions>.GetValueOrDefault
+	|-Nullable<LoginStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryExternalAccountMappingsOptions>.GetValueOrDefault
+	|-Nullable<QueryProductUserIdMappingsOptions>.GetValueOrDefault
+	|-Nullable<TransferDeviceIdAccountOptions>.GetValueOrDefault
+	|-Nullable<VerifyIdTokenOptions>.GetValueOrDefault
+	|-Nullable<CatalogRelease>.GetValueOrDefault
+	|-Nullable<CheckoutOptions>.GetValueOrDefault
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyItemImageInfoByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyItemReleaseByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferItemByIndexOptions>.GetValueOrDefault
+	|-Nullable<KeyImageInfo>.GetValueOrDefault
+	|-Nullable<QueryEntitlementsOptions>.GetValueOrDefault
+	|-Nullable<QueryOwnershipOptions>.GetValueOrDefault
+	|-Nullable<QueryOwnershipTokenOptions>.GetValueOrDefault
+	|-Nullable<Options>.GetValueOrDefault
+	|-Nullable<CreateUserOptions>.GetValueOrDefault
+	|-Nullable<LeaderboardRecord>.GetValueOrDefault
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<KickMemberOptions>.GetValueOrDefault
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<PromoteMemberOptions>.GetValueOrDefault
+	|-Nullable<SendInviteOptions>.GetValueOrDefault
+	|-Nullable<LogMessage>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.GetValueOrDefault
+	|-Nullable<CloseConnectionsOptions>.GetValueOrDefault
+	|-Nullable<DuplicateFileOptions>.GetValueOrDefault
+	|-Nullable<PresenceChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<SetParticipantHardMuteOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.GetValueOrDefault
+	|-Nullable<SetAudioInputSettingsOptions>.GetValueOrDefault
+	|-Nullable<SetAudioOutputSettingsOptions>.GetValueOrDefault
+	|-Nullable<UpdateReceivingVolumeOptions>.GetValueOrDefault
+	|-Nullable<UpdateSendingOptions>.GetValueOrDefault
+	|-Nullable<UpdateSendingVolumeOptions>.GetValueOrDefault
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsSettings>.GetValueOrDefault
+	|-Nullable<IngestStatOptions>.GetValueOrDefault
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.GetValueOrDefault
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.GetValueOrDefault
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.GetValueOrDefault
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.GetValueOrDefault
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.GetValueOrDefault
+	|-Nullable<PlayerStatInfo>.GetValueOrDefault
+	|-Nullable<QueryPlayerAchievementsOptions>.GetValueOrDefault
+	|-Nullable<StatThresholds>.GetValueOrDefault
+	|-Nullable<UnlockAchievementsOptions>.GetValueOrDefault
+	|-Nullable<BeginSessionOptions>.GetValueOrDefault
+	|-Nullable<ReceiveMessageFromServerOptions>.GetValueOrDefault
+	|-Nullable<RegisterEventParamDef>.GetValueOrDefault
+	|-Nullable<IdToken>.GetValueOrDefault
+	|-Nullable<QueryIdTokenOptions>.GetValueOrDefault
+	|-Nullable<AuthExpirationCallbackInfo>.GetValueOrDefault
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.GetValueOrDefault
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.GetValueOrDefault
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.GetValueOrDefault
+	|-Nullable<Credentials>.GetValueOrDefault
+	|-Nullable<IdToken>.GetValueOrDefault
+	|-Nullable<LinkAccountOptions>.GetValueOrDefault
+	|-Nullable<SendCustomInviteOptions>.GetValueOrDefault
+	|-Nullable<SetCustomInviteOptions>.GetValueOrDefault
+	|-Nullable<CopyEntitlementByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyEntitlementByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyItemByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyOfferByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyTransactionByIdOptions>.GetValueOrDefault
+	|-Nullable<CopyTransactionByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetEntitlementsByNameCountOptions>.GetValueOrDefault
+	|-Nullable<GetItemImageInfoCountOptions>.GetValueOrDefault
+	|-Nullable<GetItemReleaseCountOptions>.GetValueOrDefault
+	|-Nullable<GetOfferImageInfoCountOptions>.GetValueOrDefault
+	|-Nullable<GetOfferItemCountOptions>.GetValueOrDefault
+	|-Nullable<ItemOwnership>.GetValueOrDefault
+	|-Nullable<QueryOffersOptions>.GetValueOrDefault
+	|-Nullable<RedeemEntitlementsOptions>.GetValueOrDefault
+	|-Nullable<AcceptInviteOptions>.GetValueOrDefault
+	|-Nullable<GetFriendAtIndexOptions>.GetValueOrDefault
+	|-Nullable<GetStatusOptions>.GetValueOrDefault
+	|-Nullable<RejectInviteOptions>.GetValueOrDefault
+	|-Nullable<SendInviteOptions>.GetValueOrDefault
+	|-Nullable<SteamOptions>.GetValueOrDefault
+	|-Nullable<CopyPermissionByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetPermissionByKeyOptions>.GetValueOrDefault
+	|-Nullable<PermissionStatus>.GetValueOrDefault
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RequestPermissionsOptions>.GetValueOrDefault
+	|-Nullable<UpdateParentEmailOptions>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.GetValueOrDefault
+	|-Nullable<LeaderboardUserScore>.GetValueOrDefault
+	|-Nullable<QueryLeaderboardRanksOptions>.GetValueOrDefault
+	|-Nullable<UserScoresQueryStatInfo>.GetValueOrDefault
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.GetValueOrDefault
+	|-Nullable<CopyLobbyDetailsHandleOptions>.GetValueOrDefault
+	|-Nullable<DestroyLobbyOptions>.GetValueOrDefault
+	|-Nullable<GetInviteIdByIndexOptions>.GetValueOrDefault
+	|-Nullable<GetRTCRoomNameOptions>.GetValueOrDefault
+	|-Nullable<IsRTCRoomConnectedOptions>.GetValueOrDefault
+	|-Nullable<LeaveLobbyOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.GetValueOrDefault
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchRemoveParameterOptions>.GetValueOrDefault
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteOptions>.GetValueOrDefault
+	|-Nullable<UpdateLobbyModificationOptions>.GetValueOrDefault
+	|-Nullable<CopyModInfoOptions>.GetValueOrDefault
+	|-Nullable<EnumerateModsOptions>.GetValueOrDefault
+	|-Nullable<ModInfo>.GetValueOrDefault
+	|-Nullable<GetNextReceivedPacketSizeOptions>.GetValueOrDefault
+	|-Nullable<ReceivePacketOptions>.GetValueOrDefault
+	|-Nullable<ClientCredentials>.GetValueOrDefault
+	|-Nullable<WindowsRTCOptions>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataAtIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataByFilenameOptions>.GetValueOrDefault
+	|-Nullable<DeleteFileOptions>.GetValueOrDefault
+	|-Nullable<QueryFileOptions>.GetValueOrDefault
+	|-Nullable<CopyPresenceOptions>.GetValueOrDefault
+	|-Nullable<DataRecord>.GetValueOrDefault
+	|-Nullable<GetJoinInfoOptions>.GetValueOrDefault
+	|-Nullable<HasPresenceOptions>.GetValueOrDefault
+	|-Nullable<QueryPresenceOptions>.GetValueOrDefault
+	|-Nullable<SetPresenceOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyDisconnectedOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.GetValueOrDefault
+	|-Nullable<LeaveRoomOptions>.GetValueOrDefault
+	|-Nullable<ParticipantMetadata>.GetValueOrDefault
+	|-Nullable<SetSettingOptions>.GetValueOrDefault
+	|-Nullable<CopyUserTokenByUserIdOptions>.GetValueOrDefault
+	|-Nullable<KickOptions>.GetValueOrDefault
+	|-Nullable<UserToken>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioInputStateOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyAudioOutputStateOptions>.GetValueOrDefault
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.GetValueOrDefault
+	|-Nullable<AudioBuffer>.GetValueOrDefault
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.GetValueOrDefault
+	|-Nullable<QueryActivePlayerSanctionsOptions>.GetValueOrDefault
+	|-Nullable<GetInviteIdByIndexOptions>.GetValueOrDefault
+	|-Nullable<IsUserInSessionOptions>.GetValueOrDefault
+	|-Nullable<RegisterPlayersOptions>.GetValueOrDefault
+	|-Nullable<RejectInviteOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchRemoveParameterOptions>.GetValueOrDefault
+	|-Nullable<UnregisterPlayersOptions>.GetValueOrDefault
+	|-Nullable<CopyStatByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyStatByNameOptions>.GetValueOrDefault
+	|-Nullable<IngestData>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataAtIndexOptions>.GetValueOrDefault
+	|-Nullable<CopyFileMetadataByFilenameOptions>.GetValueOrDefault
+	|-Nullable<QueryFileListOptions>.GetValueOrDefault
+	|-Nullable<QueryFileOptions>.GetValueOrDefault
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ShowBlockPlayerOptions>.GetValueOrDefault
+	|-Nullable<ShowReportPlayerOptions>.GetValueOrDefault
+	|-Nullable<CopyUserInfoOptions>.GetValueOrDefault
+	|-Nullable<GetExternalUserInfoCountOptions>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.GetValueOrDefault
+	|-Nullable<QueryUserInfoOptions>.GetValueOrDefault
 	|-Nullable<ImageStorageEntity.ImageRequest>.GetValueOrDefault
 	|-Nullable<StreamingContext>.GetValueOrDefault
 	|
+	|-Nullable<Definition>.GetValueOrDefault
+	|-Nullable<VerifyUserAuthOptions>.GetValueOrDefault
+	|-Nullable<ActiveSessionInfo>.GetValueOrDefault
+	|
+	|-Nullable<DefinitionInternal>.GetValueOrDefault
+	|
+	|-Nullable<DefinitionV2>.GetValueOrDefault
+	|-Nullable<PlayerAchievement>.GetValueOrDefault
+	|-Nullable<Token>.GetValueOrDefault
+	|-Nullable<CatalogItem>.GetValueOrDefault
+	|-Nullable<Attribute>.GetValueOrDefault
+	|-Nullable<LobbyModificationAddAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.GetValueOrDefault
+	|-Nullable<LobbySearchSetParameterOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsAttribute>.GetValueOrDefault
+	|-Nullable<SessionModificationAddAttributeOptions>.GetValueOrDefault
+	|-Nullable<SessionSearchSetParameterOptions>.GetValueOrDefault
+	|
+	|-Nullable<DefinitionV2Internal>.GetValueOrDefault
+	|-Nullable<TokenInternal>.GetValueOrDefault
+	|-Nullable<CatalogItemInternal>.GetValueOrDefault
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.GetValueOrDefault
+	|-Nullable<IOSCredentials>.GetValueOrDefault
+	|-Nullable<LobbyDetailsInfo>.GetValueOrDefault
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnPeerConnectionEstablishedInfo>.GetValueOrDefault
+	|-Nullable<OnRemoteConnectionClosedInfo>.GetValueOrDefault
+	|-Nullable<ReadFileDataCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinRoomOptions>.GetValueOrDefault
+	|-Nullable<AudioBeforeSendCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileDataCallbackInfo>.GetValueOrDefault
+	|-Nullable<UserInfoData>.GetValueOrDefault
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeletePersistentAuthCallbackInfo>.GetValueOrDefault
+	|-Nullable<VerifyUserAuthCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateDeviceIdCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeleteDeviceIdCallbackInfo>.GetValueOrDefault
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.GetValueOrDefault
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<LobbySearchFindCallbackInfo>.GetValueOrDefault
+	|-Nullable<SocketIdInternal>.GetValueOrDefault
+	|-Nullable<SubmitSnapshotCallbackInfo>.GetValueOrDefault
+	|-Nullable<KickCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<DestroySessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<EndSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SessionSearchFindCallbackInfo>.GetValueOrDefault
+	|-Nullable<StartSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<Image>.GetValueOrDefault
+	|-Nullable<SteamInventoryRequestPricesResult_t>.GetValueOrDefault
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReceiveMessageFromPeerOptions>.GetValueOrDefault
+	|-Nullable<ReceiveMessageFromClientOptions>.GetValueOrDefault
+	|-Nullable<LinkAccountOptions>.GetValueOrDefault
+	|-Nullable<LogoutCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateUserCallbackInfo>.GetValueOrDefault
+	|-Nullable<LinkAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.GetValueOrDefault
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<UnlinkAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryEntitlementsCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryOffersCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFriendsCallbackInfo>.GetValueOrDefault
+	|-Nullable<RequestPermissionsCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateParentEmailCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<DestroyLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinLobbyByIdCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<KickMemberCallbackInfo>.GetValueOrDefault
+	|-Nullable<LeaveLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<PromoteMemberCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryInvitesCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateLobbyCallbackInfo>.GetValueOrDefault
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.GetValueOrDefault
+	|-Nullable<EndPlayerSessionOptions>.GetValueOrDefault
+	|-Nullable<EndPlayerSessionOptionsAccountId>.GetValueOrDefault
+	|-Nullable<OnQueryNATTypeCompleteInfo>.GetValueOrDefault
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.GetValueOrDefault
+	|-Nullable<DeleteCacheCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeleteFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<DuplicateFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<SetPresenceCallbackInfo>.GetValueOrDefault
+	|-Nullable<AddProgressionOptions>.GetValueOrDefault
+	|-Nullable<DeleteSnapshotCallbackInfo>.GetValueOrDefault
+	|-Nullable<AudioInputDeviceInfo>.GetValueOrDefault
+	|-Nullable<AudioOutputDeviceInfo>.GetValueOrDefault
+	|-Nullable<QueryInvitesCallbackInfo>.GetValueOrDefault
+	|-Nullable<UnregisterPlayersCallbackInfo>.GetValueOrDefault
+	|-Nullable<DeleteCacheCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<HideFriendsCallbackInfo>.GetValueOrDefault
+	|-Nullable<ShowFriendsCallbackInfo>.GetValueOrDefault
 	|-Nullable<JsonPosition>.GetValueOrDefault
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.GetValueOrDefault
-	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<RegisterEventOptions>.GetValueOrDefault
+	|-Nullable<BeginSessionOptions>.GetValueOrDefault
+	|-Nullable<ProtectMessageOptions>.GetValueOrDefault
+	|-Nullable<UnprotectMessageOptions>.GetValueOrDefault
+	|-Nullable<QueryIdTokenCallbackInfo>.GetValueOrDefault
+	|-Nullable<LoginCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendCustomInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<CheckoutCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryOwnershipCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.GetValueOrDefault
+	|-Nullable<RedeemEntitlementsCallbackInfo>.GetValueOrDefault
+	|-Nullable<AcceptInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<RejectInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendInviteCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryAgeGateCallbackInfo>.GetValueOrDefault
+	|-Nullable<HardMuteMemberCallbackInfo>.GetValueOrDefault
+	|-Nullable<EnumerateModsCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryFileListCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<WriteFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryPresenceCallbackInfo>.GetValueOrDefault
+	|-Nullable<DisconnectedCallbackInfo>.GetValueOrDefault
+	|-Nullable<JoinRoomCallbackInfo>.GetValueOrDefault
+	|-Nullable<LeaveRoomCallbackInfo>.GetValueOrDefault
+	|-Nullable<PlayerSanction>.GetValueOrDefault
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.GetValueOrDefault
+	|-Nullable<RegisterPlayersCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateSessionCallbackInfo>.GetValueOrDefault
+	|-Nullable<IngestStatCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<FileMetadata>.GetValueOrDefault
+	|-Nullable<QueryFileListCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnShowReportPlayerCallbackInfo>.GetValueOrDefault
+	|-Nullable<ExternalUserInfo>.GetValueOrDefault
+	|-Nullable<QueryUserInfoCallbackInfo>.GetValueOrDefault
 	|-Nullable<Option>.GetValueOrDefault
 	|
-	|-Nullable<ServerInfo>.GetValueOrDefault
+	|-Nullable<PlayerAchievementInternal>.GetValueOrDefault
+	|-Nullable<InfoInternal>.GetValueOrDefault
 	|
+	|-Nullable<UnlockedAchievement>.GetValueOrDefault
+	|-Nullable<LogGameRoundStartOptions>.GetValueOrDefault
+	|-Nullable<OnClientActionRequiredCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnMessageToClientCallbackInfo>.GetValueOrDefault
+	|-Nullable<PinGrantInfo>.GetValueOrDefault
+	|-Nullable<FinalizeInviteOptions>.GetValueOrDefault
+	|-Nullable<OnFriendsUpdateInfo>.GetValueOrDefault
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.GetValueOrDefault
+	|-Nullable<HardMuteMemberOptions>.GetValueOrDefault
+	|-Nullable<JoinLobbyByIdOptions>.GetValueOrDefault
+	|-Nullable<JoinLobbyOptions>.GetValueOrDefault
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<AcceptConnectionOptions>.GetValueOrDefault
+	|-Nullable<ClearPacketQueueOptions>.GetValueOrDefault
+	|-Nullable<CloseConnectionOptions>.GetValueOrDefault
+	|-Nullable<FileTransferProgressCallbackInfo>.GetValueOrDefault
+	|-Nullable<WriteFileDataCallbackInfo>.GetValueOrDefault
+	|-Nullable<BlockParticipantOptions>.GetValueOrDefault
+	|-Nullable<SetRoomSettingOptions>.GetValueOrDefault
+	|-Nullable<QueryJoinRoomTokenOptions>.GetValueOrDefault
+	|-Nullable<AudioInputStateCallbackInfo>.GetValueOrDefault
+	|-Nullable<AudioOutputStateCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateParticipantVolumeOptions>.GetValueOrDefault
+	|-Nullable<UpdateReceivingOptions>.GetValueOrDefault
+	|-Nullable<JoinSessionOptions>.GetValueOrDefault
+	|-Nullable<SessionInviteReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<FileTransferProgressCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<UnlockedAchievementInternal>.GetValueOrDefault
+	|-Nullable<LogPlayerUseAbilityOptions>.GetValueOrDefault
+	|-Nullable<IdTokenInternal>.GetValueOrDefault
+	|-Nullable<IdTokenInternal>.GetValueOrDefault
+	|-Nullable<PermissionStatusInternal>.GetValueOrDefault
+	|-Nullable<LeaderboardUserScoreInternal>.GetValueOrDefault
+	|-Nullable<AttributeInternal>.GetValueOrDefault
+	|-Nullable<ModInfoInternal>.GetValueOrDefault
+	|-Nullable<UserTokenInternal>.GetValueOrDefault
+	|-Nullable<AudioInputDeviceInfoInternal>.GetValueOrDefault
+	|-Nullable<AudioOutputDeviceInfoInternal>.GetValueOrDefault
+	|-Nullable<SessionDetailsAttributeInternal>.GetValueOrDefault
 	|-Nullable<CreateItemResult_t>.GetValueOrDefault
 	|-Nullable<InventoryPurchaseResult>.GetValueOrDefault
 	|-Nullable<SteamInventoryStartPurchaseResult_t>.GetValueOrDefault
 	|-Nullable<ResultPage>.GetValueOrDefault
 	|-Nullable<Ray>.GetValueOrDefault
 	|
-	|-Nullable<Image>.GetValueOrDefault
-	|-Nullable<SteamInventoryRequestPricesResult_t>.GetValueOrDefault
+	|-Nullable<RegisterPeerOptions>.GetValueOrDefault
 	|
+	|-Nullable<UnregisterPeerOptions>.GetValueOrDefault
+	|-Nullable<LogPlayerDespawnOptions>.GetValueOrDefault
+	|-Nullable<UnregisterClientOptions>.GetValueOrDefault
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.GetValueOrDefault
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.GetValueOrDefault
+	|-Nullable<LocalRTCOptions>.GetValueOrDefault
+	|-Nullable<PageQuery>.GetValueOrDefault
+	|-Nullable<GetDesktopCrossplayStatusInfo>.GetValueOrDefault
+	|-Nullable<RTCOptions>.GetValueOrDefault
+	|-Nullable<CopyUserTokenByIndexOptions>.GetValueOrDefault
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.GetValueOrDefault
+	|-Nullable<PrePresentOptions>.GetValueOrDefault
+	|-Nullable<ReportKeyEventOptions>.GetValueOrDefault
+	|-Nullable<InventoryResult>.GetValueOrDefault
+	|-Nullable<SteamId>.GetValueOrDefault
+	|-Nullable<DateTime>.GetValueOrDefault
+	|-Nullable<long>.GetValueOrDefault
+	|-Nullable<IntPtr>.GetValueOrDefault
+	|-Nullable<TimeSpan>.GetValueOrDefault
+	|-Nullable<ulong>.GetValueOrDefault
+	|-Nullable<ValueTuple<Int32Enum, float>>.GetValueOrDefault
+	|
+	|-Nullable<LogEventOptions>.GetValueOrDefault
+	|
+	|-Nullable<LogEventParamPair>.GetValueOrDefault
+	|-Nullable<LogEventParamPairParamValue>.GetValueOrDefault
+	|
+	|-Nullable<LogPlayerReviveOptions>.GetValueOrDefault
+	|-Nullable<LogPlayerSpawnOptions>.GetValueOrDefault
+	|-Nullable<Quat>.GetValueOrDefault
+	|-Nullable<QuatInternal>.GetValueOrDefault
+	|-Nullable<SetClientDetailsOptions>.GetValueOrDefault
+	|-Nullable<SetClientNetworkStateOptions>.GetValueOrDefault
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.GetValueOrDefault
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.GetValueOrDefault
+	|-Nullable<SetPacketQueueSizeOptions>.GetValueOrDefault
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.GetValueOrDefault
+	|-Nullable<AcknowledgeEventIdOptions>.GetValueOrDefault
 	|-Nullable<SetUserItemVoteResult_t>.GetValueOrDefault
 	|-Nullable<SubmitItemUpdateResult_t>.GetValueOrDefault
 	|-Nullable<DateTimeOffset>.GetValueOrDefault
@@ -4571,45 +11419,1489 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Color>.GetValueOrDefault
 	|-Nullable<Rect>.GetValueOrDefault
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>.GetValueOrDefault
+	|-Nullable<LogPlayerTakeDamageOptions>.GetValueOrDefault
 	|
+	|-Nullable<LogPlayerTickOptions>.GetValueOrDefault
+	|-Nullable<UserInfoDataInternal>.GetValueOrDefault
+	|
+	|-Nullable<LogPlayerUseWeaponData>.GetValueOrDefault
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.GetValueOrDefault
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.GetValueOrDefault
+	|
+	|-Nullable<Vec3f>.GetValueOrDefault
+	|-Nullable<Vec3fInternal>.GetValueOrDefault
+	|-Nullable<PageResult>.GetValueOrDefault
+	|-Nullable<Token>.GetValueOrDefault
+	|-Nullable<Vector3>.GetValueOrDefault
+	|
+	|-Nullable<RegisterClientOptions>.GetValueOrDefault
+	|
+	|-Nullable<Credentials>.GetValueOrDefault
+	|-Nullable<LoginOptions>.GetValueOrDefault
+	|-Nullable<CustomInviteRejectedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.GetValueOrDefault
+	|-Nullable<Entitlement>.GetValueOrDefault
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ModIdentifier>.GetValueOrDefault
+	|-Nullable<OnIncomingConnectionRequestInfo>.GetValueOrDefault
+	|-Nullable<OnIncomingPacketQueueFullInfo>.GetValueOrDefault
+	|-Nullable<OnPeerConnectionInterruptedInfo>.GetValueOrDefault
+	|-Nullable<ReadFileOptions>.GetValueOrDefault
+	|-Nullable<WriteFileOptions>.GetValueOrDefault
+	|-Nullable<JoinGameAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ParticipantUpdatedCallbackInfo>.GetValueOrDefault
+	|-Nullable<SendAudioOptions>.GetValueOrDefault
+	|-Nullable<SendPlayerBehaviorReportOptions>.GetValueOrDefault
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.GetValueOrDefault
+	|-Nullable<ReadFileOptions>.GetValueOrDefault
+	|
+	|-Nullable<IOSLoginOptions>.GetValueOrDefault
+	|-Nullable<AttributeData>.GetValueOrDefault
+	|-Nullable<CreateLobbyOptions>.GetValueOrDefault
+	|-Nullable<InstallModOptions>.GetValueOrDefault
+	|-Nullable<AttributeData>.GetValueOrDefault
+	|-Nullable<Stat>.GetValueOrDefault
+	|
+	|-Nullable<LinkAccountCallbackInfo>.GetValueOrDefault
+	|-Nullable<InstallModCallbackInfo>.GetValueOrDefault
+	|-Nullable<UninstallModCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateModCallbackInfo>.GetValueOrDefault
+	|-Nullable<Info>.GetValueOrDefault
+	|
+	|-Nullable<LoginCallbackInfo>.GetValueOrDefault
+	|-Nullable<VerifyIdTokenCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<LoginOptions>.GetValueOrDefault
+	|-Nullable<ExternalAccountInfo>.GetValueOrDefault
+	|-Nullable<UninstallModOptions>.GetValueOrDefault
+	|-Nullable<UpdateModOptions>.GetValueOrDefault
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.GetValueOrDefault
+	|-Nullable<AudioBeforeRenderCallbackInfo>.GetValueOrDefault
+	|-Nullable<CreateSessionModificationOptions>.GetValueOrDefault
+	|-Nullable<SessionDetailsInfo>.GetValueOrDefault
+	|
+	|-Nullable<PinGrantInfoInternal>.GetValueOrDefault
+	|-Nullable<CatalogReleaseInternal>.GetValueOrDefault
+	|-Nullable<FileMetadataInternal>.GetValueOrDefault
+	|-Nullable<PlayerSanctionInternal>.GetValueOrDefault
+	|-Nullable<ActiveSessionInfoInternal>.GetValueOrDefault
+	|-Nullable<SessionDetailsInfoInternal>.GetValueOrDefault
+	|-Nullable<SessionDetailsSettingsInternal>.GetValueOrDefault
+	|-Nullable<StatInternal>.GetValueOrDefault
+	|-Nullable<RenderTargetIdentifier>.GetValueOrDefault
+	|
+	|-Nullable<ExternalAccountInfoInternal>.GetValueOrDefault
+	|-Nullable<EntitlementInternal>.GetValueOrDefault
+	|-Nullable<DefinitionInternal>.GetValueOrDefault
+	|-Nullable<ModIdentifierInternal>.GetValueOrDefault
+	|-Nullable<PacketQueueInfo>.GetValueOrDefault
+	|-Nullable<InitializeThreadAffinity>.GetValueOrDefault
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<CatalogOffer>.GetValueOrDefault
+	|
+	|-Nullable<CatalogOfferInternal>.GetValueOrDefault
+	|
+	|-Nullable<KeyImageInfoInternal>.GetValueOrDefault
+	|-Nullable<LeaderboardRecordInternal>.GetValueOrDefault
+	|-Nullable<AttributeDataInternal>.GetValueOrDefault
+	|-Nullable<AudioBufferInternal>.GetValueOrDefault
+	|-Nullable<AttributeDataInternal>.GetValueOrDefault
+	|-Nullable<FileMetadataInternal>.GetValueOrDefault
+	|-Nullable<ExternalUserInfoInternal>.GetValueOrDefault
 	|-Nullable<Friend.FriendGameInfo>.GetValueOrDefault
 	|
-	|-Nullable<InventoryResult>.GetValueOrDefault
-	|-Nullable<SteamId>.GetValueOrDefault
-	|-Nullable<DateTime>.GetValueOrDefault
-	|-Nullable<long>.GetValueOrDefault
-	|-Nullable<TimeSpan>.GetValueOrDefault
-	|-Nullable<ulong>.GetValueOrDefault
-	|-Nullable<ValueTuple<Int32Enum, float>>.GetValueOrDefault
+	|-Nullable<CreateUserCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateSendingCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.GetValueOrDefault
+	|-Nullable<BlockParticipantCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.GetValueOrDefault
+	|-Nullable<UpdateReceivingCallbackInfo>.GetValueOrDefault
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.GetValueOrDefault
+	|
+	|-Nullable<Definition>.GetValueOrDefault
+	|-Nullable<QueryLeaderboardUserScoresOptions>.GetValueOrDefault
+	|-Nullable<SendPacketOptions>.GetValueOrDefault
+	|-Nullable<QueryStatsOptions>.GetValueOrDefault
+	|
+	|-Nullable<AttributeDataValue>.GetValueOrDefault
+	|-Nullable<AttributeDataValue>.GetValueOrDefault
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.GetValueOrDefault
+	|
+	|-Nullable<BeginPlayerSessionOptions>.GetValueOrDefault
+	|-Nullable<FileMetadata>.GetValueOrDefault
+	|
+	|-Nullable<AndroidInitializeOptions>.GetValueOrDefault
+	|
+	|-Nullable<InitializeOptions>.GetValueOrDefault
+	|
+	|-Nullable<Options>.GetValueOrDefault
+	|
+	|-Nullable<WindowsOptions>.GetValueOrDefault
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.GetValueOrDefault
+	|
+	|-Nullable<ServerInfo>.GetValueOrDefault
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>.GetValueOrDefault
 	|
 	|-Nullable<Item>.GetValueOrDefault
-	|
-	|-Nullable<bool>.GetValueOrDefault
-	|-Nullable<byte>.GetValueOrDefault
-	|-Nullable<ByteEnum>.GetValueOrDefault
-	|-Nullable<sbyte>.GetValueOrDefault
 	|
 	|-Nullable<char>.GetValueOrDefault
 	|-Nullable<short>.GetValueOrDefault
 	|-Nullable<ushort>.GetValueOrDefault
 	|
-	|-Nullable<DataKey>.GetValueOrDefault
-	|
 	|-Nullable<double>.GetValueOrDefault
 	|
-	|-Nullable<Token>.GetValueOrDefault
-	|-Nullable<Vector3>.GetValueOrDefault
-	|
 	|-Nullable<float>.GetValueOrDefault
-	|
-	|-Nullable<RenderTargetIdentifier>.GetValueOrDefault
 	|
 	|-Nullable<Vector2>.GetValueOrDefault
 	*/
 
 	public override string ToString() { }
 	/* GenericInstMethod :
+	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.ToString
+	|
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.ToString
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.ToString
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.ToString
+	|
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.ToString
+	|
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.ToString
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.ToString
+	|
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.ToString
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.ToString
+	|
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.ToString
+	|
+	|-Nullable<Definition>.ToString
+	|
+	|-Nullable<DefinitionInternal>.ToString
+	|
+	|-Nullable<DefinitionV2>.ToString
+	|
+	|-Nullable<DefinitionV2Internal>.ToString
+	|
+	|-Nullable<GetAchievementDefinitionCountOptions>.ToString
+	|
+	|-Nullable<GetPlayerAchievementCountOptions>.ToString
+	|
+	|-Nullable<GetUnlockedAchievementCountOptions>.ToString
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.ToString
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.ToString
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<PlayerAchievement>.ToString
+	|
+	|-Nullable<PlayerAchievementInternal>.ToString
+	|
+	|-Nullable<PlayerStatInfo>.ToString
+	|
+	|-Nullable<QueryDefinitionsOptions>.ToString
+	|
+	|-Nullable<QueryPlayerAchievementsOptions>.ToString
+	|
+	|-Nullable<StatThresholds>.ToString
+	|
+	|-Nullable<UnlockAchievementsOptions>.ToString
+	|
+	|-Nullable<UnlockedAchievement>.ToString
+	|
+	|-Nullable<UnlockedAchievementInternal>.ToString
+	|
+	|-Nullable<AddExternalIntegrityCatalogOptions>.ToString
+	|
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.ToString
+	|
+	|-Nullable<AddNotifyMessageToPeerOptions>.ToString
+	|
+	|-Nullable<AddNotifyMessageToServerOptions>.ToString
+	|
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.ToString
+	|
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.ToString
+	|
+	|-Nullable<BeginSessionOptions>.ToString
+	|
+	|-Nullable<EndSessionOptions>.ToString
+	|
+	|-Nullable<GetProtectMessageOutputLengthOptions>.ToString
+	|
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.ToString
+	|
+	|-Nullable<OnMessageToServerCallbackInfo>.ToString
+	|
+	|-Nullable<PollStatusOptions>.ToString
+	|
+	|-Nullable<ProtectMessageOptions>.ToString
+	|
+	|-Nullable<ReceiveMessageFromPeerOptions>.ToString
+	|
+	|-Nullable<ReceiveMessageFromServerOptions>.ToString
+	|
+	|-Nullable<RegisterPeerOptions>.ToString
+	|
+	|-Nullable<UnprotectMessageOptions>.ToString
+	|
+	|-Nullable<UnregisterPeerOptions>.ToString
+	|
+	|-Nullable<LogEventOptions>.ToString
+	|
+	|-Nullable<LogEventParamPair>.ToString
+	|
+	|-Nullable<LogEventParamPairParamValue>.ToString
+	|
+	|-Nullable<LogGameRoundEndOptions>.ToString
+	|
+	|-Nullable<LogGameRoundStartOptions>.ToString
+	|
+	|-Nullable<LogPlayerDespawnOptions>.ToString
+	|
+	|-Nullable<LogPlayerReviveOptions>.ToString
+	|
+	|-Nullable<LogPlayerSpawnOptions>.ToString
+	|
+	|-Nullable<LogPlayerTakeDamageOptions>.ToString
+	|
+	|-Nullable<LogPlayerTickOptions>.ToString
+	|
+	|-Nullable<LogPlayerUseAbilityOptions>.ToString
+	|
+	|-Nullable<LogPlayerUseWeaponData>.ToString
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.ToString
+	|
+	|-Nullable<OnClientActionRequiredCallbackInfo>.ToString
+	|
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.ToString
+	|
+	|-Nullable<OnMessageToClientCallbackInfo>.ToString
+	|
+	|-Nullable<Quat>.ToString
+	|
+	|-Nullable<QuatInternal>.ToString
+	|
+	|-Nullable<RegisterEventOptions>.ToString
+	|
+	|-Nullable<RegisterEventParamDef>.ToString
+	|
+	|-Nullable<SetClientDetailsOptions>.ToString
+	|
+	|-Nullable<SetGameSessionIdOptions>.ToString
+	|
+	|-Nullable<Vec3f>.ToString
+	|
+	|-Nullable<Vec3fInternal>.ToString
+	|
+	|-Nullable<AddNotifyClientActionRequiredOptions>.ToString
+	|
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.ToString
+	|
+	|-Nullable<AddNotifyMessageToClientOptions>.ToString
+	|
+	|-Nullable<BeginSessionOptions>.ToString
+	|
+	|-Nullable<EndSessionOptions>.ToString
+	|
+	|-Nullable<GetProtectMessageOutputLengthOptions>.ToString
+	|
+	|-Nullable<ProtectMessageOptions>.ToString
+	|
+	|-Nullable<ReceiveMessageFromClientOptions>.ToString
+	|
+	|-Nullable<RegisterClientOptions>.ToString
+	|
+	|-Nullable<SetClientNetworkStateOptions>.ToString
+	|
+	|-Nullable<UnprotectMessageOptions>.ToString
+	|
+	|-Nullable<UnregisterClientOptions>.ToString
+	|
+	|-Nullable<AccountFeatureRestrictedInfo>.ToString
+	|
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.ToString
+	|
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.ToString
+	|
+	|-Nullable<CopyIdTokenOptions>.ToString
+	|
+	|-Nullable<CopyUserAuthTokenOptions>.ToString
+	|
+	|-Nullable<Credentials>.ToString
+	|
+	|-Nullable<DeletePersistentAuthCallbackInfo>.ToString
+	|
+	|-Nullable<DeletePersistentAuthOptions>.ToString
+	|
+	|-Nullable<IOSCredentials>.ToString
+	|
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.ToString
+	|
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.ToString
+	|
+	|-Nullable<IOSLoginOptions>.ToString
+	|
+	|-Nullable<IdToken>.ToString
+	|
+	|-Nullable<IdTokenInternal>.ToString
+	|
+	|-Nullable<LinkAccountCallbackInfo>.ToString
+	|
+	|-Nullable<LinkAccountOptions>.ToString
+	|
+	|-Nullable<LoginCallbackInfo>.ToString
+	|
+	|-Nullable<LoginOptions>.ToString
+	|
+	|-Nullable<LoginStatusChangedCallbackInfo>.ToString
+	|
+	|-Nullable<LogoutCallbackInfo>.ToString
+	|
+	|-Nullable<LogoutOptions>.ToString
+	|
+	|-Nullable<PinGrantInfo>.ToString
+	|
+	|-Nullable<PinGrantInfoInternal>.ToString
+	|
+	|-Nullable<QueryIdTokenCallbackInfo>.ToString
+	|
+	|-Nullable<QueryIdTokenOptions>.ToString
+	|
+	|-Nullable<Token>.ToString
+	|
+	|-Nullable<TokenInternal>.ToString
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.ToString
+	|
+	|-Nullable<VerifyIdTokenOptions>.ToString
+	|
+	|-Nullable<VerifyUserAuthCallbackInfo>.ToString
+	|
+	|-Nullable<VerifyUserAuthOptions>.ToString
+	|
+	|-Nullable<AddNotifyAuthExpirationOptions>.ToString
+	|
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.ToString
+	|
+	|-Nullable<AuthExpirationCallbackInfo>.ToString
+	|
+	|-Nullable<CopyIdTokenOptions>.ToString
+	|
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.ToString
+	|
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.ToString
+	|
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.ToString
+	|
+	|-Nullable<CopyProductUserInfoOptions>.ToString
+	|
+	|-Nullable<CreateDeviceIdCallbackInfo>.ToString
+	|
+	|-Nullable<CreateDeviceIdOptions>.ToString
+	|
+	|-Nullable<CreateUserCallbackInfo>.ToString
+	|
+	|-Nullable<CreateUserOptions>.ToString
+	|
+	|-Nullable<Credentials>.ToString
+	|
+	|-Nullable<DeleteDeviceIdCallbackInfo>.ToString
+	|
+	|-Nullable<DeleteDeviceIdOptions>.ToString
+	|
+	|-Nullable<ExternalAccountInfo>.ToString
+	|
+	|-Nullable<ExternalAccountInfoInternal>.ToString
+	|
+	|-Nullable<GetExternalAccountMappingsOptions>.ToString
+	|
+	|-Nullable<GetProductUserExternalAccountCountOptions>.ToString
+	|
+	|-Nullable<GetProductUserIdMappingOptions>.ToString
+	|
+	|-Nullable<IdToken>.ToString
+	|
+	|-Nullable<IdTokenInternal>.ToString
+	|
+	|-Nullable<LinkAccountCallbackInfo>.ToString
+	|
+	|-Nullable<LinkAccountOptions>.ToString
+	|
+	|-Nullable<LoginCallbackInfo>.ToString
+	|
+	|-Nullable<LoginOptions>.ToString
+	|
+	|-Nullable<LoginStatusChangedCallbackInfo>.ToString
+	|
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.ToString
+	|
+	|-Nullable<QueryExternalAccountMappingsOptions>.ToString
+	|
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.ToString
+	|
+	|-Nullable<QueryProductUserIdMappingsOptions>.ToString
+	|
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.ToString
+	|
+	|-Nullable<TransferDeviceIdAccountOptions>.ToString
+	|
+	|-Nullable<UnlinkAccountCallbackInfo>.ToString
+	|
+	|-Nullable<UnlinkAccountOptions>.ToString
+	|
+	|-Nullable<UserLoginInfo>.ToString
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.ToString
+	|
+	|-Nullable<VerifyIdTokenOptions>.ToString
+	|
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.ToString
+	|
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.ToString
+	|
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.ToString
+	|
+	|-Nullable<CustomInviteRejectedCallbackInfo>.ToString
+	|
+	|-Nullable<FinalizeInviteOptions>.ToString
+	|
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.ToString
+	|
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<SendCustomInviteCallbackInfo>.ToString
+	|
+	|-Nullable<SendCustomInviteOptions>.ToString
+	|
+	|-Nullable<SetCustomInviteOptions>.ToString
+	|
+	|-Nullable<CatalogItem>.ToString
+	|
+	|-Nullable<CatalogItemInternal>.ToString
+	|
+	|-Nullable<CatalogOffer>.ToString
+	|
+	|-Nullable<CatalogOfferInternal>.ToString
+	|
+	|-Nullable<CatalogRelease>.ToString
+	|
+	|-Nullable<CatalogReleaseInternal>.ToString
+	|
+	|-Nullable<CheckoutCallbackInfo>.ToString
+	|
+	|-Nullable<CheckoutEntry>.ToString
+	|
+	|-Nullable<CheckoutOptions>.ToString
+	|
+	|-Nullable<CopyEntitlementByIdOptions>.ToString
+	|
+	|-Nullable<CopyEntitlementByIndexOptions>.ToString
+	|
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.ToString
+	|
+	|-Nullable<CopyItemByIdOptions>.ToString
+	|
+	|-Nullable<CopyItemImageInfoByIndexOptions>.ToString
+	|
+	|-Nullable<CopyItemReleaseByIndexOptions>.ToString
+	|
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.ToString
+	|
+	|-Nullable<CopyOfferByIdOptions>.ToString
+	|
+	|-Nullable<CopyOfferByIndexOptions>.ToString
+	|
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.ToString
+	|
+	|-Nullable<CopyOfferItemByIndexOptions>.ToString
+	|
+	|-Nullable<CopyTransactionByIdOptions>.ToString
+	|
+	|-Nullable<CopyTransactionByIndexOptions>.ToString
+	|
+	|-Nullable<Entitlement>.ToString
+	|
+	|-Nullable<EntitlementInternal>.ToString
+	|
+	|-Nullable<GetEntitlementsByNameCountOptions>.ToString
+	|
+	|-Nullable<GetEntitlementsCountOptions>.ToString
+	|
+	|-Nullable<GetItemImageInfoCountOptions>.ToString
+	|
+	|-Nullable<GetItemReleaseCountOptions>.ToString
+	|
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.ToString
+	|
+	|-Nullable<GetOfferCountOptions>.ToString
+	|
+	|-Nullable<GetOfferImageInfoCountOptions>.ToString
+	|
+	|-Nullable<GetOfferItemCountOptions>.ToString
+	|
+	|-Nullable<GetTransactionCountOptions>.ToString
+	|
+	|-Nullable<ItemOwnership>.ToString
+	|
+	|-Nullable<KeyImageInfo>.ToString
+	|
+	|-Nullable<KeyImageInfoInternal>.ToString
+	|
+	|-Nullable<QueryEntitlementsCallbackInfo>.ToString
+	|
+	|-Nullable<QueryEntitlementsOptions>.ToString
+	|
+	|-Nullable<QueryOffersCallbackInfo>.ToString
+	|
+	|-Nullable<QueryOffersOptions>.ToString
+	|
+	|-Nullable<QueryOwnershipCallbackInfo>.ToString
+	|
+	|-Nullable<QueryOwnershipOptions>.ToString
+	|
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.ToString
+	|
+	|-Nullable<QueryOwnershipTokenOptions>.ToString
+	|
+	|-Nullable<RedeemEntitlementsCallbackInfo>.ToString
+	|
+	|-Nullable<RedeemEntitlementsOptions>.ToString
+	|
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.ToString
+	|
+	|-Nullable<TransactionGetEntitlementsCountOptions>.ToString
+	|
+	|-Nullable<AcceptInviteCallbackInfo>.ToString
+	|
+	|-Nullable<AcceptInviteOptions>.ToString
+	|
+	|-Nullable<AddNotifyFriendsUpdateOptions>.ToString
+	|
+	|-Nullable<GetFriendAtIndexOptions>.ToString
+	|
+	|-Nullable<GetFriendsCountOptions>.ToString
+	|
+	|-Nullable<GetStatusOptions>.ToString
+	|
+	|-Nullable<OnFriendsUpdateInfo>.ToString
+	|
+	|-Nullable<QueryFriendsCallbackInfo>.ToString
+	|
+	|-Nullable<QueryFriendsOptions>.ToString
+	|
+	|-Nullable<RejectInviteCallbackInfo>.ToString
+	|
+	|-Nullable<RejectInviteOptions>.ToString
+	|
+	|-Nullable<SendInviteCallbackInfo>.ToString
+	|
+	|-Nullable<SendInviteOptions>.ToString
+	|
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.ToString
+	|
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.ToString
+	|
+	|-Nullable<Options>.ToString
+	|
+	|-Nullable<SteamOptions>.ToString
+	|
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.ToString
+	|
+	|-Nullable<CopyPermissionByIndexOptions>.ToString
+	|
+	|-Nullable<CreateUserCallbackInfo>.ToString
+	|
+	|-Nullable<CreateUserOptions>.ToString
+	|
+	|-Nullable<GetPermissionByKeyOptions>.ToString
+	|
+	|-Nullable<GetPermissionsCountOptions>.ToString
+	|
+	|-Nullable<PermissionStatus>.ToString
+	|
+	|-Nullable<PermissionStatusInternal>.ToString
+	|
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<QueryAgeGateCallbackInfo>.ToString
+	|
+	|-Nullable<QueryAgeGateOptions>.ToString
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.ToString
+	|
+	|-Nullable<QueryPermissionsOptions>.ToString
+	|
+	|-Nullable<RequestPermissionsCallbackInfo>.ToString
+	|
+	|-Nullable<RequestPermissionsOptions>.ToString
+	|
+	|-Nullable<UpdateParentEmailCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateParentEmailOptions>.ToString
+	|
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.ToString
+	|
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.ToString
+	|
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.ToString
+	|
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.ToString
+	|
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.ToString
+	|
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.ToString
+	|
+	|-Nullable<Definition>.ToString
+	|
+	|-Nullable<DefinitionInternal>.ToString
+	|
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.ToString
+	|
+	|-Nullable<GetLeaderboardRecordCountOptions>.ToString
+	|
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.ToString
+	|
+	|-Nullable<LeaderboardRecord>.ToString
+	|
+	|-Nullable<LeaderboardRecordInternal>.ToString
+	|
+	|-Nullable<LeaderboardUserScore>.ToString
+	|
+	|-Nullable<LeaderboardUserScoreInternal>.ToString
+	|
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.ToString
+	|
+	|-Nullable<QueryLeaderboardRanksOptions>.ToString
+	|
+	|-Nullable<QueryLeaderboardUserScoresOptions>.ToString
+	|
+	|-Nullable<UserScoresQueryStatInfo>.ToString
+	|
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.ToString
+	|
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.ToString
+	|
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.ToString
+	|
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.ToString
+	|
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.ToString
+	|
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.ToString
+	|
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.ToString
+	|
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.ToString
+	|
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.ToString
+	|
+	|-Nullable<Attribute>.ToString
+	|
+	|-Nullable<AttributeData>.ToString
+	|
+	|-Nullable<AttributeDataInternal>.ToString
+	|
+	|-Nullable<AttributeDataValue>.ToString
+	|
+	|-Nullable<AttributeInternal>.ToString
+	|
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.ToString
+	|
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.ToString
+	|
+	|-Nullable<CopyLobbyDetailsHandleOptions>.ToString
+	|
+	|-Nullable<CreateLobbyCallbackInfo>.ToString
+	|
+	|-Nullable<CreateLobbyOptions>.ToString
+	|
+	|-Nullable<CreateLobbySearchOptions>.ToString
+	|
+	|-Nullable<DestroyLobbyCallbackInfo>.ToString
+	|
+	|-Nullable<DestroyLobbyOptions>.ToString
+	|
+	|-Nullable<GetInviteCountOptions>.ToString
+	|
+	|-Nullable<GetInviteIdByIndexOptions>.ToString
+	|
+	|-Nullable<GetRTCRoomNameOptions>.ToString
+	|
+	|-Nullable<HardMuteMemberCallbackInfo>.ToString
+	|
+	|-Nullable<HardMuteMemberOptions>.ToString
+	|
+	|-Nullable<IsRTCRoomConnectedOptions>.ToString
+	|
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.ToString
+	|
+	|-Nullable<JoinLobbyByIdCallbackInfo>.ToString
+	|
+	|-Nullable<JoinLobbyByIdOptions>.ToString
+	|
+	|-Nullable<JoinLobbyCallbackInfo>.ToString
+	|
+	|-Nullable<JoinLobbyOptions>.ToString
+	|
+	|-Nullable<KickMemberCallbackInfo>.ToString
+	|
+	|-Nullable<KickMemberOptions>.ToString
+	|
+	|-Nullable<LeaveLobbyCallbackInfo>.ToString
+	|
+	|-Nullable<LeaveLobbyOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsCopyInfoOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.ToString
+	|
+	|-Nullable<LobbyDetailsInfo>.ToString
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.ToString
+	|
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.ToString
+	|
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.ToString
+	|
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<LobbyModificationAddAttributeOptions>.ToString
+	|
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.ToString
+	|
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.ToString
+	|
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.ToString
+	|
+	|-Nullable<LobbyModificationSetBucketIdOptions>.ToString
+	|
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.ToString
+	|
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.ToString
+	|
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.ToString
+	|
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.ToString
+	|
+	|-Nullable<LobbySearchFindCallbackInfo>.ToString
+	|
+	|-Nullable<LobbySearchFindOptions>.ToString
+	|
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.ToString
+	|
+	|-Nullable<LobbySearchRemoveParameterOptions>.ToString
+	|
+	|-Nullable<LobbySearchSetLobbyIdOptions>.ToString
+	|
+	|-Nullable<LobbySearchSetMaxResultsOptions>.ToString
+	|
+	|-Nullable<LobbySearchSetParameterOptions>.ToString
+	|
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.ToString
+	|
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<LocalRTCOptions>.ToString
+	|
+	|-Nullable<PromoteMemberCallbackInfo>.ToString
+	|
+	|-Nullable<PromoteMemberOptions>.ToString
+	|
+	|-Nullable<QueryInvitesCallbackInfo>.ToString
+	|
+	|-Nullable<QueryInvitesOptions>.ToString
+	|
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.ToString
+	|
+	|-Nullable<RejectInviteCallbackInfo>.ToString
+	|
+	|-Nullable<RejectInviteOptions>.ToString
+	|
+	|-Nullable<SendInviteCallbackInfo>.ToString
+	|
+	|-Nullable<SendInviteOptions>.ToString
+	|
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateLobbyCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateLobbyModificationOptions>.ToString
+	|
+	|-Nullable<UpdateLobbyOptions>.ToString
+	|
+	|-Nullable<LogMessage>.ToString
+	|
+	|-Nullable<BeginPlayerSessionOptions>.ToString
+	|
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.ToString
+	|
+	|-Nullable<EndPlayerSessionOptions>.ToString
+	|
+	|-Nullable<EndPlayerSessionOptionsAccountId>.ToString
+	|
+	|-Nullable<CopyModInfoOptions>.ToString
+	|
+	|-Nullable<EnumerateModsCallbackInfo>.ToString
+	|
+	|-Nullable<EnumerateModsOptions>.ToString
+	|
+	|-Nullable<InstallModCallbackInfo>.ToString
+	|
+	|-Nullable<InstallModOptions>.ToString
+	|
+	|-Nullable<ModIdentifier>.ToString
+	|
+	|-Nullable<ModIdentifierInternal>.ToString
+	|
+	|-Nullable<ModInfo>.ToString
+	|
+	|-Nullable<ModInfoInternal>.ToString
+	|
+	|-Nullable<UninstallModCallbackInfo>.ToString
+	|
+	|-Nullable<UninstallModOptions>.ToString
+	|
+	|-Nullable<UpdateModCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateModOptions>.ToString
+	|
+	|-Nullable<AcceptConnectionOptions>.ToString
+	|
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.ToString
+	|
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.ToString
+	|
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.ToString
+	|
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.ToString
+	|
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.ToString
+	|
+	|-Nullable<ClearPacketQueueOptions>.ToString
+	|
+	|-Nullable<CloseConnectionOptions>.ToString
+	|
+	|-Nullable<CloseConnectionsOptions>.ToString
+	|
+	|-Nullable<GetNATTypeOptions>.ToString
+	|
+	|-Nullable<GetNextReceivedPacketSizeOptions>.ToString
+	|
+	|-Nullable<GetPacketQueueInfoOptions>.ToString
+	|
+	|-Nullable<GetPortRangeOptions>.ToString
+	|
+	|-Nullable<GetRelayControlOptions>.ToString
+	|
+	|-Nullable<OnIncomingConnectionRequestInfo>.ToString
+	|
+	|-Nullable<OnIncomingPacketQueueFullInfo>.ToString
+	|
+	|-Nullable<OnPeerConnectionEstablishedInfo>.ToString
+	|
+	|-Nullable<OnPeerConnectionInterruptedInfo>.ToString
+	|
+	|-Nullable<OnQueryNATTypeCompleteInfo>.ToString
+	|
+	|-Nullable<OnRemoteConnectionClosedInfo>.ToString
+	|
+	|-Nullable<PacketQueueInfo>.ToString
+	|
+	|-Nullable<QueryNATTypeOptions>.ToString
+	|
+	|-Nullable<ReceivePacketOptions>.ToString
+	|
+	|-Nullable<SendPacketOptions>.ToString
+	|
+	|-Nullable<SetPacketQueueSizeOptions>.ToString
+	|
+	|-Nullable<SetPortRangeOptions>.ToString
+	|
+	|-Nullable<SetRelayControlOptions>.ToString
+	|
+	|-Nullable<SocketId>.ToString
+	|
+	|-Nullable<SocketIdInternal>.ToString
+	|
+	|-Nullable<PageQuery>.ToString
+	|
+	|-Nullable<PageResult>.ToString
+	|
+	|-Nullable<AndroidInitializeOptions>.ToString
+	|
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.ToString
+	|
+	|-Nullable<ClientCredentials>.ToString
+	|
+	|-Nullable<GetDesktopCrossplayStatusInfo>.ToString
+	|
+	|-Nullable<GetDesktopCrossplayStatusOptions>.ToString
+	|
+	|-Nullable<InitializeOptions>.ToString
+	|
+	|-Nullable<InitializeThreadAffinity>.ToString
+	|
+	|-Nullable<Options>.ToString
+	|
+	|-Nullable<RTCOptions>.ToString
+	|
+	|-Nullable<WindowsOptions>.ToString
+	|
+	|-Nullable<WindowsRTCOptions>.ToString
+	|
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.ToString
+	|
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.ToString
+	|
+	|-Nullable<CopyFileMetadataAtIndexOptions>.ToString
+	|
+	|-Nullable<CopyFileMetadataByFilenameOptions>.ToString
+	|
+	|-Nullable<DeleteCacheCallbackInfo>.ToString
+	|
+	|-Nullable<DeleteCacheOptions>.ToString
+	|
+	|-Nullable<DeleteFileCallbackInfo>.ToString
+	|
+	|-Nullable<DeleteFileOptions>.ToString
+	|
+	|-Nullable<DuplicateFileCallbackInfo>.ToString
+	|
+	|-Nullable<DuplicateFileOptions>.ToString
+	|
+	|-Nullable<FileMetadata>.ToString
+	|
+	|-Nullable<FileMetadataInternal>.ToString
+	|
+	|-Nullable<FileTransferProgressCallbackInfo>.ToString
+	|
+	|-Nullable<GetFileMetadataCountOptions>.ToString
+	|
+	|-Nullable<QueryFileCallbackInfo>.ToString
+	|
+	|-Nullable<QueryFileListCallbackInfo>.ToString
+	|
+	|-Nullable<QueryFileListOptions>.ToString
+	|
+	|-Nullable<QueryFileOptions>.ToString
+	|
+	|-Nullable<ReadFileCallbackInfo>.ToString
+	|
+	|-Nullable<ReadFileDataCallbackInfo>.ToString
+	|
+	|-Nullable<ReadFileOptions>.ToString
+	|
+	|-Nullable<WriteFileCallbackInfo>.ToString
+	|
+	|-Nullable<WriteFileDataCallbackInfo>.ToString
+	|
+	|-Nullable<WriteFileOptions>.ToString
+	|
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.ToString
+	|
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.ToString
+	|
+	|-Nullable<CopyPresenceOptions>.ToString
+	|
+	|-Nullable<CreatePresenceModificationOptions>.ToString
+	|
+	|-Nullable<DataRecord>.ToString
+	|
+	|-Nullable<GetJoinInfoOptions>.ToString
+	|
+	|-Nullable<HasPresenceOptions>.ToString
+	|
+	|-Nullable<Info>.ToString
+	|
+	|-Nullable<InfoInternal>.ToString
+	|
+	|-Nullable<JoinGameAcceptedCallbackInfo>.ToString
+	|
+	|-Nullable<PresenceChangedCallbackInfo>.ToString
+	|
+	|-Nullable<PresenceModificationDataRecordId>.ToString
+	|
+	|-Nullable<PresenceModificationDeleteDataOptions>.ToString
+	|
+	|-Nullable<PresenceModificationSetDataOptions>.ToString
+	|
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.ToString
+	|
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.ToString
+	|
+	|-Nullable<PresenceModificationSetStatusOptions>.ToString
+	|
+	|-Nullable<QueryPresenceCallbackInfo>.ToString
+	|
+	|-Nullable<QueryPresenceOptions>.ToString
+	|
+	|-Nullable<SetPresenceCallbackInfo>.ToString
+	|
+	|-Nullable<SetPresenceOptions>.ToString
+	|
+	|-Nullable<AddProgressionOptions>.ToString
+	|
+	|-Nullable<BeginSnapshotOptions>.ToString
+	|
+	|-Nullable<DeleteSnapshotCallbackInfo>.ToString
+	|
+	|-Nullable<DeleteSnapshotOptions>.ToString
+	|
+	|-Nullable<EndSnapshotOptions>.ToString
+	|
+	|-Nullable<SubmitSnapshotCallbackInfo>.ToString
+	|
+	|-Nullable<SubmitSnapshotOptions>.ToString
+	|
+	|-Nullable<AddNotifyDisconnectedOptions>.ToString
+	|
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.ToString
+	|
+	|-Nullable<BlockParticipantCallbackInfo>.ToString
+	|
+	|-Nullable<BlockParticipantOptions>.ToString
+	|
+	|-Nullable<DisconnectedCallbackInfo>.ToString
+	|
+	|-Nullable<JoinRoomCallbackInfo>.ToString
+	|
+	|-Nullable<JoinRoomOptions>.ToString
+	|
+	|-Nullable<LeaveRoomCallbackInfo>.ToString
+	|
+	|-Nullable<LeaveRoomOptions>.ToString
+	|
+	|-Nullable<ParticipantMetadata>.ToString
+	|
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.ToString
+	|
+	|-Nullable<SetRoomSettingOptions>.ToString
+	|
+	|-Nullable<SetSettingOptions>.ToString
+	|
+	|-Nullable<CopyUserTokenByIndexOptions>.ToString
+	|
+	|-Nullable<CopyUserTokenByUserIdOptions>.ToString
+	|
+	|-Nullable<KickCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<KickOptions>.ToString
+	|
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<QueryJoinRoomTokenOptions>.ToString
+	|
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<SetParticipantHardMuteOptions>.ToString
+	|
+	|-Nullable<UserToken>.ToString
+	|
+	|-Nullable<UserTokenInternal>.ToString
+	|
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.ToString
+	|
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.ToString
+	|
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.ToString
+	|
+	|-Nullable<AddNotifyAudioInputStateOptions>.ToString
+	|
+	|-Nullable<AddNotifyAudioOutputStateOptions>.ToString
+	|
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.ToString
+	|
+	|-Nullable<AudioBeforeRenderCallbackInfo>.ToString
+	|
+	|-Nullable<AudioBeforeSendCallbackInfo>.ToString
+	|
+	|-Nullable<AudioBuffer>.ToString
+	|
+	|-Nullable<AudioBufferInternal>.ToString
+	|
+	|-Nullable<AudioDevicesChangedCallbackInfo>.ToString
+	|
+	|-Nullable<AudioInputDeviceInfo>.ToString
+	|
+	|-Nullable<AudioInputDeviceInfoInternal>.ToString
+	|
+	|-Nullable<AudioInputStateCallbackInfo>.ToString
+	|
+	|-Nullable<AudioOutputDeviceInfo>.ToString
+	|
+	|-Nullable<AudioOutputDeviceInfoInternal>.ToString
+	|
+	|-Nullable<AudioOutputStateCallbackInfo>.ToString
+	|
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.ToString
+	|
+	|-Nullable<GetAudioInputDevicesCountOptions>.ToString
+	|
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.ToString
+	|
+	|-Nullable<GetAudioOutputDevicesCountOptions>.ToString
+	|
+	|-Nullable<ParticipantUpdatedCallbackInfo>.ToString
+	|
+	|-Nullable<RegisterPlatformAudioUserOptions>.ToString
+	|
+	|-Nullable<SendAudioOptions>.ToString
+	|
+	|-Nullable<SetAudioInputSettingsOptions>.ToString
+	|
+	|-Nullable<SetAudioOutputSettingsOptions>.ToString
+	|
+	|-Nullable<UnregisterPlatformAudioUserOptions>.ToString
+	|
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateParticipantVolumeOptions>.ToString
+	|
+	|-Nullable<UpdateReceivingCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateReceivingOptions>.ToString
+	|
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateReceivingVolumeOptions>.ToString
+	|
+	|-Nullable<UpdateSendingCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateSendingOptions>.ToString
+	|
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateSendingVolumeOptions>.ToString
+	|
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<SendPlayerBehaviorReportOptions>.ToString
+	|
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.ToString
+	|
+	|-Nullable<GetPlayerSanctionCountOptions>.ToString
+	|
+	|-Nullable<PlayerSanction>.ToString
+	|
+	|-Nullable<PlayerSanctionInternal>.ToString
+	|
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.ToString
+	|
+	|-Nullable<QueryActivePlayerSanctionsOptions>.ToString
+	|
+	|-Nullable<ActiveSessionCopyInfoOptions>.ToString
+	|
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.ToString
+	|
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.ToString
+	|
+	|-Nullable<ActiveSessionInfo>.ToString
+	|
+	|-Nullable<ActiveSessionInfoInternal>.ToString
+	|
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.ToString
+	|
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.ToString
+	|
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.ToString
+	|
+	|-Nullable<AttributeData>.ToString
+	|
+	|-Nullable<AttributeDataInternal>.ToString
+	|
+	|-Nullable<AttributeDataValue>.ToString
+	|
+	|-Nullable<CopyActiveSessionHandleOptions>.ToString
+	|
+	|-Nullable<CopySessionHandleByInviteIdOptions>.ToString
+	|
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.ToString
+	|
+	|-Nullable<CopySessionHandleForPresenceOptions>.ToString
+	|
+	|-Nullable<CreateSessionModificationOptions>.ToString
+	|
+	|-Nullable<CreateSessionSearchOptions>.ToString
+	|
+	|-Nullable<DestroySessionCallbackInfo>.ToString
+	|
+	|-Nullable<DestroySessionOptions>.ToString
+	|
+	|-Nullable<DumpSessionStateOptions>.ToString
+	|
+	|-Nullable<EndSessionCallbackInfo>.ToString
+	|
+	|-Nullable<EndSessionOptions>.ToString
+	|
+	|-Nullable<GetInviteCountOptions>.ToString
+	|
+	|-Nullable<GetInviteIdByIndexOptions>.ToString
+	|
+	|-Nullable<IsUserInSessionOptions>.ToString
+	|
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.ToString
+	|
+	|-Nullable<JoinSessionCallbackInfo>.ToString
+	|
+	|-Nullable<JoinSessionOptions>.ToString
+	|
+	|-Nullable<QueryInvitesCallbackInfo>.ToString
+	|
+	|-Nullable<QueryInvitesOptions>.ToString
+	|
+	|-Nullable<RegisterPlayersCallbackInfo>.ToString
+	|
+	|-Nullable<RegisterPlayersOptions>.ToString
+	|
+	|-Nullable<RejectInviteCallbackInfo>.ToString
+	|
+	|-Nullable<RejectInviteOptions>.ToString
+	|
+	|-Nullable<SendInviteCallbackInfo>.ToString
+	|
+	|-Nullable<SendInviteOptions>.ToString
+	|
+	|-Nullable<SessionDetailsAttribute>.ToString
+	|
+	|-Nullable<SessionDetailsAttributeInternal>.ToString
+	|
+	|-Nullable<SessionDetailsCopyInfoOptions>.ToString
+	|
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.ToString
+	|
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.ToString
+	|
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.ToString
+	|
+	|-Nullable<SessionDetailsInfo>.ToString
+	|
+	|-Nullable<SessionDetailsInfoInternal>.ToString
+	|
+	|-Nullable<SessionDetailsSettings>.ToString
+	|
+	|-Nullable<SessionDetailsSettingsInternal>.ToString
+	|
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.ToString
+	|
+	|-Nullable<SessionInviteReceivedCallbackInfo>.ToString
+	|
+	|-Nullable<SessionModificationAddAttributeOptions>.ToString
+	|
+	|-Nullable<SessionModificationRemoveAttributeOptions>.ToString
+	|
+	|-Nullable<SessionModificationSetBucketIdOptions>.ToString
+	|
+	|-Nullable<SessionModificationSetHostAddressOptions>.ToString
+	|
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.ToString
+	|
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.ToString
+	|
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.ToString
+	|
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.ToString
+	|
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.ToString
+	|
+	|-Nullable<SessionSearchFindCallbackInfo>.ToString
+	|
+	|-Nullable<SessionSearchFindOptions>.ToString
+	|
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.ToString
+	|
+	|-Nullable<SessionSearchRemoveParameterOptions>.ToString
+	|
+	|-Nullable<SessionSearchSetMaxResultsOptions>.ToString
+	|
+	|-Nullable<SessionSearchSetParameterOptions>.ToString
+	|
+	|-Nullable<SessionSearchSetSessionIdOptions>.ToString
+	|
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.ToString
+	|
+	|-Nullable<StartSessionCallbackInfo>.ToString
+	|
+	|-Nullable<StartSessionOptions>.ToString
+	|
+	|-Nullable<UnregisterPlayersCallbackInfo>.ToString
+	|
+	|-Nullable<UnregisterPlayersOptions>.ToString
+	|
+	|-Nullable<UpdateSessionCallbackInfo>.ToString
+	|
+	|-Nullable<UpdateSessionModificationOptions>.ToString
+	|
+	|-Nullable<UpdateSessionOptions>.ToString
+	|
+	|-Nullable<CopyStatByIndexOptions>.ToString
+	|
+	|-Nullable<CopyStatByNameOptions>.ToString
+	|
+	|-Nullable<GetStatCountOptions>.ToString
+	|
+	|-Nullable<IngestData>.ToString
+	|
+	|-Nullable<IngestStatCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<IngestStatOptions>.ToString
+	|
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.ToString
+	|
+	|-Nullable<QueryStatsOptions>.ToString
+	|
+	|-Nullable<Stat>.ToString
+	|
+	|-Nullable<StatInternal>.ToString
+	|
+	|-Nullable<CopyFileMetadataAtIndexOptions>.ToString
+	|
+	|-Nullable<CopyFileMetadataByFilenameOptions>.ToString
+	|
+	|-Nullable<DeleteCacheCallbackInfo>.ToString
+	|
+	|-Nullable<DeleteCacheOptions>.ToString
+	|
+	|-Nullable<FileMetadata>.ToString
+	|
+	|-Nullable<FileMetadataInternal>.ToString
+	|
+	|-Nullable<FileTransferProgressCallbackInfo>.ToString
+	|
+	|-Nullable<GetFileMetadataCountOptions>.ToString
+	|
+	|-Nullable<QueryFileCallbackInfo>.ToString
+	|
+	|-Nullable<QueryFileListCallbackInfo>.ToString
+	|
+	|-Nullable<QueryFileListOptions>.ToString
+	|
+	|-Nullable<QueryFileOptions>.ToString
+	|
+	|-Nullable<ReadFileCallbackInfo>.ToString
+	|
+	|-Nullable<ReadFileDataCallbackInfo>.ToString
+	|
+	|-Nullable<ReadFileOptions>.ToString
+	|
+	|-Nullable<AcknowledgeEventIdOptions>.ToString
+	|
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.ToString
+	|
+	|-Nullable<GetFriendsExclusiveInputOptions>.ToString
+	|
+	|-Nullable<GetFriendsVisibleOptions>.ToString
+	|
+	|-Nullable<GetToggleFriendsKeyOptions>.ToString
+	|
+	|-Nullable<HideFriendsCallbackInfo>.ToString
+	|
+	|-Nullable<HideFriendsOptions>.ToString
+	|
+	|-Nullable<IsSocialOverlayPausedOptions>.ToString
+	|
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.ToString
+	|
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.ToString
+	|
+	|-Nullable<OnShowReportPlayerCallbackInfo>.ToString
+	|
+	|-Nullable<PauseSocialOverlayOptions>.ToString
+	|
+	|-Nullable<PrePresentOptions>.ToString
+	|
+	|-Nullable<ReportKeyEventOptions>.ToString
+	|
+	|-Nullable<SetDisplayPreferenceOptions>.ToString
+	|
+	|-Nullable<SetToggleFriendsKeyOptions>.ToString
+	|
+	|-Nullable<ShowBlockPlayerOptions>.ToString
+	|
+	|-Nullable<ShowFriendsCallbackInfo>.ToString
+	|
+	|-Nullable<ShowFriendsOptions>.ToString
+	|
+	|-Nullable<ShowReportPlayerOptions>.ToString
+	|
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.ToString
+	|
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.ToString
+	|
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.ToString
+	|
+	|-Nullable<CopyUserInfoOptions>.ToString
+	|
+	|-Nullable<ExternalUserInfo>.ToString
+	|
+	|-Nullable<ExternalUserInfoInternal>.ToString
+	|
+	|-Nullable<GetExternalUserInfoCountOptions>.ToString
+	|
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.ToString
+	|
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.ToString
+	|
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.ToString
+	|
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.ToString
+	|
+	|-Nullable<QueryUserInfoCallbackInfo>.ToString
+	|
+	|-Nullable<QueryUserInfoOptions>.ToString
+	|
+	|-Nullable<UserInfoData>.ToString
+	|
+	|-Nullable<UserInfoDataInternal>.ToString
 	|
 	|-Nullable<ImageStorageEntity.ImageRequest>.ToString
 	|
@@ -4677,6 +12969,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<long>.ToString
 	|
+	|-Nullable<IntPtr>.ToString
+	|
 	|-Nullable<Token>.ToString
 	|
 	|-Nullable<StreamingContext>.ToString
@@ -4711,6 +13005,486 @@ public struct Nullable<T> // TypeDefIndex: 380
 	private static object Box(Nullable<T> o) { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.Box
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.Box
+	|-Nullable<GetAchievementDefinitionCountOptions>.Box
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.Box
+	|-Nullable<AddNotifyMessageToPeerOptions>.Box
+	|-Nullable<AddNotifyMessageToServerOptions>.Box
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.Box
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.Box
+	|-Nullable<EndSessionOptions>.Box
+	|-Nullable<AddNotifyClientActionRequiredOptions>.Box
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.Box
+	|-Nullable<AddNotifyMessageToClientOptions>.Box
+	|-Nullable<EndSessionOptions>.Box
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Box
+	|-Nullable<CopyUserAuthTokenOptions>.Box
+	|-Nullable<AddNotifyAuthExpirationOptions>.Box
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Box
+	|-Nullable<DeleteDeviceIdOptions>.Box
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.Box
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.Box
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.Box
+	|-Nullable<TransactionGetEntitlementsCountOptions>.Box
+	|-Nullable<AddNotifyFriendsUpdateOptions>.Box
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.Box
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.Box
+	|-Nullable<QueryAgeGateOptions>.Box
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.Box
+	|-Nullable<GetLeaderboardRecordCountOptions>.Box
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.Box
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.Box
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.Box
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.Box
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.Box
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.Box
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.Box
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.Box
+	|-Nullable<LobbyDetailsCopyInfoOptions>.Box
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.Box
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.Box
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.Box
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.Box
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.Box
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.Box
+	|-Nullable<GetNATTypeOptions>.Box
+	|-Nullable<GetPacketQueueInfoOptions>.Box
+	|-Nullable<GetPortRangeOptions>.Box
+	|-Nullable<GetRelayControlOptions>.Box
+	|-Nullable<QueryNATTypeOptions>.Box
+	|-Nullable<GetDesktopCrossplayStatusOptions>.Box
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.Box
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.Box
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.Box
+	|-Nullable<GetAudioInputDevicesCountOptions>.Box
+	|-Nullable<GetAudioOutputDevicesCountOptions>.Box
+	|-Nullable<ActiveSessionCopyInfoOptions>.Box
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.Box
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.Box
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.Box
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.Box
+	|-Nullable<SessionDetailsCopyInfoOptions>.Box
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.Box
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.Box
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.Box
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.Box
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.Box
+	|-Nullable<GetToggleFriendsKeyOptions>.Box
+	|-Nullable<IsSocialOverlayPausedOptions>.Box
+	|-Nullable<PauseSocialOverlayOptions>.Box
+	|-Nullable<bool>.Box
+	|-Nullable<byte>.Box
+	|-Nullable<ByteEnum>.Box
+	|-Nullable<sbyte>.Box
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.Box
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.Box
+	|-Nullable<GetPlayerAchievementCountOptions>.Box
+	|-Nullable<GetUnlockedAchievementCountOptions>.Box
+	|-Nullable<AddExternalIntegrityCatalogOptions>.Box
+	|-Nullable<UnregisterPeerOptions>.Box
+	|-Nullable<LogPlayerDespawnOptions>.Box
+	|-Nullable<SetGameSessionIdOptions>.Box
+	|-Nullable<UnregisterClientOptions>.Box
+	|-Nullable<AccountFeatureRestrictedInfo>.Box
+	|-Nullable<CopyIdTokenOptions>.Box
+	|-Nullable<DeletePersistentAuthOptions>.Box
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.Box
+	|-Nullable<LogoutOptions>.Box
+	|-Nullable<CopyIdTokenOptions>.Box
+	|-Nullable<CopyProductUserInfoOptions>.Box
+	|-Nullable<CreateDeviceIdOptions>.Box
+	|-Nullable<CreateUserOptions>.Box
+	|-Nullable<GetProductUserExternalAccountCountOptions>.Box
+	|-Nullable<UnlinkAccountOptions>.Box
+	|-Nullable<UserLoginInfo>.Box
+	|-Nullable<CheckoutEntry>.Box
+	|-Nullable<GetEntitlementsCountOptions>.Box
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.Box
+	|-Nullable<GetOfferCountOptions>.Box
+	|-Nullable<GetTransactionCountOptions>.Box
+	|-Nullable<GetFriendsCountOptions>.Box
+	|-Nullable<QueryFriendsOptions>.Box
+	|-Nullable<GetPermissionsCountOptions>.Box
+	|-Nullable<QueryPermissionsOptions>.Box
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.Box
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.Box
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.Box
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.Box
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.Box
+	|-Nullable<GetInviteCountOptions>.Box
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.Box
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.Box
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.Box
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.Box
+	|-Nullable<LobbyModificationSetBucketIdOptions>.Box
+	|-Nullable<LobbySearchFindOptions>.Box
+	|-Nullable<LobbySearchSetLobbyIdOptions>.Box
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.Box
+	|-Nullable<QueryInvitesOptions>.Box
+	|-Nullable<UpdateLobbyOptions>.Box
+	|-Nullable<SocketId>.Box
+	|-Nullable<RTCOptions>.Box
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.Box
+	|-Nullable<DeleteCacheOptions>.Box
+	|-Nullable<GetFileMetadataCountOptions>.Box
+	|-Nullable<QueryFileListOptions>.Box
+	|-Nullable<CreatePresenceModificationOptions>.Box
+	|-Nullable<PresenceModificationDataRecordId>.Box
+	|-Nullable<PresenceModificationDeleteDataOptions>.Box
+	|-Nullable<PresenceModificationSetDataOptions>.Box
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.Box
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.Box
+	|-Nullable<BeginSnapshotOptions>.Box
+	|-Nullable<DeleteSnapshotOptions>.Box
+	|-Nullable<AudioDevicesChangedCallbackInfo>.Box
+	|-Nullable<RegisterPlatformAudioUserOptions>.Box
+	|-Nullable<UnregisterPlatformAudioUserOptions>.Box
+	|-Nullable<GetPlayerSanctionCountOptions>.Box
+	|-Nullable<CopyActiveSessionHandleOptions>.Box
+	|-Nullable<CopySessionHandleByInviteIdOptions>.Box
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.Box
+	|-Nullable<CopySessionHandleForPresenceOptions>.Box
+	|-Nullable<DestroySessionOptions>.Box
+	|-Nullable<DumpSessionStateOptions>.Box
+	|-Nullable<EndSessionOptions>.Box
+	|-Nullable<GetInviteCountOptions>.Box
+	|-Nullable<QueryInvitesOptions>.Box
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.Box
+	|-Nullable<SessionModificationRemoveAttributeOptions>.Box
+	|-Nullable<SessionModificationSetBucketIdOptions>.Box
+	|-Nullable<SessionModificationSetHostAddressOptions>.Box
+	|-Nullable<SessionSearchFindOptions>.Box
+	|-Nullable<SessionSearchSetSessionIdOptions>.Box
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.Box
+	|-Nullable<StartSessionOptions>.Box
+	|-Nullable<UpdateSessionModificationOptions>.Box
+	|-Nullable<UpdateSessionOptions>.Box
+	|-Nullable<GetStatCountOptions>.Box
+	|-Nullable<DeleteCacheOptions>.Box
+	|-Nullable<GetFileMetadataCountOptions>.Box
+	|-Nullable<GetFriendsExclusiveInputOptions>.Box
+	|-Nullable<GetFriendsVisibleOptions>.Box
+	|-Nullable<HideFriendsOptions>.Box
+	|-Nullable<PrePresentOptions>.Box
+	|-Nullable<ReportKeyEventOptions>.Box
+	|-Nullable<ShowFriendsOptions>.Box
+	|-Nullable<SteamId>.Box
+	|-Nullable<DataKey>.Box
+	|-Nullable<DateTime>.Box
+	|-Nullable<TimeSpan>.Box
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.Box
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.Box
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Box
+	|-Nullable<PollStatusOptions>.Box
+	|-Nullable<LogGameRoundEndOptions>.Box
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Box
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.Box
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.Box
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.Box
+	|-Nullable<CreateLobbySearchOptions>.Box
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.Box
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.Box
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.Box
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.Box
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.Box
+	|-Nullable<LobbySearchSetMaxResultsOptions>.Box
+	|-Nullable<SetRelayControlOptions>.Box
+	|-Nullable<PresenceModificationSetStatusOptions>.Box
+	|-Nullable<EndSnapshotOptions>.Box
+	|-Nullable<SubmitSnapshotOptions>.Box
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.Box
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.Box
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.Box
+	|-Nullable<CreateSessionSearchOptions>.Box
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.Box
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.Box
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.Box
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.Box
+	|-Nullable<SessionSearchSetMaxResultsOptions>.Box
+	|-Nullable<SetDisplayPreferenceOptions>.Box
+	|-Nullable<SetToggleFriendsKeyOptions>.Box
+	|-Nullable<EncryptedAppTicketResponse_t>.Box
+	|-Nullable<int>.Box
+	|-Nullable<Int32Enum>.Box
+	|-Nullable<uint>.Box
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.Box
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.Box
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.Box
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.Box
+	|-Nullable<QueryDefinitionsOptions>.Box
+	|-Nullable<UnlockedAchievementInternal>.Box
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.Box
+	|-Nullable<OnMessageToServerCallbackInfo>.Box
+	|-Nullable<ProtectMessageOptions>.Box
+	|-Nullable<ReceiveMessageFromPeerOptions>.Box
+	|-Nullable<UnprotectMessageOptions>.Box
+	|-Nullable<LogEventOptions>.Box
+	|-Nullable<LogPlayerUseAbilityOptions>.Box
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.Box
+	|-Nullable<ReceiveMessageFromClientOptions>.Box
+	|-Nullable<IdTokenInternal>.Box
+	|-Nullable<LinkAccountOptions>.Box
+	|-Nullable<LoginStatusChangedCallbackInfo>.Box
+	|-Nullable<LogoutCallbackInfo>.Box
+	|-Nullable<VerifyIdTokenOptions>.Box
+	|-Nullable<CreateUserCallbackInfo>.Box
+	|-Nullable<GetExternalAccountMappingsOptions>.Box
+	|-Nullable<GetProductUserIdMappingOptions>.Box
+	|-Nullable<IdTokenInternal>.Box
+	|-Nullable<LinkAccountCallbackInfo>.Box
+	|-Nullable<LoginStatusChangedCallbackInfo>.Box
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.Box
+	|-Nullable<QueryExternalAccountMappingsOptions>.Box
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.Box
+	|-Nullable<QueryProductUserIdMappingsOptions>.Box
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.Box
+	|-Nullable<TransferDeviceIdAccountOptions>.Box
+	|-Nullable<UnlinkAccountCallbackInfo>.Box
+	|-Nullable<VerifyIdTokenOptions>.Box
+	|-Nullable<CatalogRelease>.Box
+	|-Nullable<CheckoutOptions>.Box
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.Box
+	|-Nullable<CopyItemImageInfoByIndexOptions>.Box
+	|-Nullable<CopyItemReleaseByIndexOptions>.Box
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.Box
+	|-Nullable<CopyOfferItemByIndexOptions>.Box
+	|-Nullable<KeyImageInfo>.Box
+	|-Nullable<QueryEntitlementsCallbackInfo>.Box
+	|-Nullable<QueryEntitlementsOptions>.Box
+	|-Nullable<QueryOffersCallbackInfo>.Box
+	|-Nullable<QueryOwnershipOptions>.Box
+	|-Nullable<QueryOwnershipTokenOptions>.Box
+	|-Nullable<QueryFriendsCallbackInfo>.Box
+	|-Nullable<Options>.Box
+	|-Nullable<CreateUserOptions>.Box
+	|-Nullable<PermissionStatusInternal>.Box
+	|-Nullable<RequestPermissionsCallbackInfo>.Box
+	|-Nullable<UpdateParentEmailCallbackInfo>.Box
+	|-Nullable<LeaderboardRecord>.Box
+	|-Nullable<LeaderboardUserScoreInternal>.Box
+	|-Nullable<AttributeInternal>.Box
+	|-Nullable<CreateLobbyCallbackInfo>.Box
+	|-Nullable<DestroyLobbyCallbackInfo>.Box
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.Box
+	|-Nullable<JoinLobbyByIdCallbackInfo>.Box
+	|-Nullable<JoinLobbyCallbackInfo>.Box
+	|-Nullable<KickMemberCallbackInfo>.Box
+	|-Nullable<KickMemberOptions>.Box
+	|-Nullable<LeaveLobbyCallbackInfo>.Box
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.Box
+	|-Nullable<PromoteMemberCallbackInfo>.Box
+	|-Nullable<PromoteMemberOptions>.Box
+	|-Nullable<QueryInvitesCallbackInfo>.Box
+	|-Nullable<RejectInviteCallbackInfo>.Box
+	|-Nullable<SendInviteCallbackInfo>.Box
+	|-Nullable<SendInviteOptions>.Box
+	|-Nullable<UpdateLobbyCallbackInfo>.Box
+	|-Nullable<LogMessage>.Box
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.Box
+	|-Nullable<EndPlayerSessionOptions>.Box
+	|-Nullable<EndPlayerSessionOptionsAccountId>.Box
+	|-Nullable<ModInfoInternal>.Box
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.Box
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.Box
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.Box
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.Box
+	|-Nullable<CloseConnectionsOptions>.Box
+	|-Nullable<OnQueryNATTypeCompleteInfo>.Box
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.Box
+	|-Nullable<DeleteCacheCallbackInfo>.Box
+	|-Nullable<DeleteFileCallbackInfo>.Box
+	|-Nullable<DuplicateFileCallbackInfo>.Box
+	|-Nullable<DuplicateFileOptions>.Box
+	|-Nullable<QueryFileCallbackInfo>.Box
+	|-Nullable<PresenceChangedCallbackInfo>.Box
+	|-Nullable<SetPresenceCallbackInfo>.Box
+	|-Nullable<AddProgressionOptions>.Box
+	|-Nullable<DeleteSnapshotCallbackInfo>.Box
+	|-Nullable<SetParticipantHardMuteOptions>.Box
+	|-Nullable<UserTokenInternal>.Box
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.Box
+	|-Nullable<AudioInputDeviceInfo>.Box
+	|-Nullable<AudioInputDeviceInfoInternal>.Box
+	|-Nullable<AudioOutputDeviceInfo>.Box
+	|-Nullable<AudioOutputDeviceInfoInternal>.Box
+	|-Nullable<SetAudioInputSettingsOptions>.Box
+	|-Nullable<SetAudioOutputSettingsOptions>.Box
+	|-Nullable<UpdateReceivingVolumeOptions>.Box
+	|-Nullable<UpdateSendingOptions>.Box
+	|-Nullable<UpdateSendingVolumeOptions>.Box
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.Box
+	|-Nullable<QueryInvitesCallbackInfo>.Box
+	|-Nullable<SendInviteOptions>.Box
+	|-Nullable<SessionDetailsAttributeInternal>.Box
+	|-Nullable<SessionDetailsSettings>.Box
+	|-Nullable<UnregisterPlayersCallbackInfo>.Box
+	|-Nullable<IngestStatOptions>.Box
+	|-Nullable<DeleteCacheCallbackInfo>.Box
+	|-Nullable<QueryFileCallbackInfo>.Box
+	|-Nullable<HideFriendsCallbackInfo>.Box
+	|-Nullable<ShowFriendsCallbackInfo>.Box
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.Box
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.Box
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.Box
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.Box
+	|-Nullable<JsonPosition>.Box
+	|-Nullable<CreateItemResult_t>.Box
+	|-Nullable<InventoryPurchaseResult>.Box
+	|-Nullable<SteamInventoryStartPurchaseResult_t>.Box
+	|-Nullable<ResultPage>.Box
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.Box
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.Box
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.Box
+	|-Nullable<PlayerStatInfo>.Box
+	|-Nullable<QueryPlayerAchievementsOptions>.Box
+	|-Nullable<StatThresholds>.Box
+	|-Nullable<UnlockAchievementsOptions>.Box
+	|-Nullable<BeginSessionOptions>.Box
+	|-Nullable<ReceiveMessageFromServerOptions>.Box
+	|-Nullable<LogPlayerReviveOptions>.Box
+	|-Nullable<LogPlayerSpawnOptions>.Box
+	|-Nullable<RegisterEventParamDef>.Box
+	|-Nullable<SetClientDetailsOptions>.Box
+	|-Nullable<SetClientNetworkStateOptions>.Box
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.Box
+	|-Nullable<DeletePersistentAuthCallbackInfo>.Box
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.Box
+	|-Nullable<IdToken>.Box
+	|-Nullable<QueryIdTokenOptions>.Box
+	|-Nullable<VerifyUserAuthCallbackInfo>.Box
+	|-Nullable<AuthExpirationCallbackInfo>.Box
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.Box
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.Box
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.Box
+	|-Nullable<CreateDeviceIdCallbackInfo>.Box
+	|-Nullable<Credentials>.Box
+	|-Nullable<DeleteDeviceIdCallbackInfo>.Box
+	|-Nullable<IdToken>.Box
+	|-Nullable<LinkAccountOptions>.Box
+	|-Nullable<SendCustomInviteOptions>.Box
+	|-Nullable<SetCustomInviteOptions>.Box
+	|-Nullable<CopyEntitlementByIdOptions>.Box
+	|-Nullable<CopyEntitlementByIndexOptions>.Box
+	|-Nullable<CopyItemByIdOptions>.Box
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.Box
+	|-Nullable<CopyOfferByIdOptions>.Box
+	|-Nullable<CopyOfferByIndexOptions>.Box
+	|-Nullable<CopyTransactionByIdOptions>.Box
+	|-Nullable<CopyTransactionByIndexOptions>.Box
+	|-Nullable<GetEntitlementsByNameCountOptions>.Box
+	|-Nullable<GetItemImageInfoCountOptions>.Box
+	|-Nullable<GetItemReleaseCountOptions>.Box
+	|-Nullable<GetOfferImageInfoCountOptions>.Box
+	|-Nullable<GetOfferItemCountOptions>.Box
+	|-Nullable<ItemOwnership>.Box
+	|-Nullable<QueryOffersOptions>.Box
+	|-Nullable<RedeemEntitlementsOptions>.Box
+	|-Nullable<AcceptInviteOptions>.Box
+	|-Nullable<GetFriendAtIndexOptions>.Box
+	|-Nullable<GetStatusOptions>.Box
+	|-Nullable<RejectInviteOptions>.Box
+	|-Nullable<SendInviteOptions>.Box
+	|-Nullable<SteamOptions>.Box
+	|-Nullable<CopyPermissionByIndexOptions>.Box
+	|-Nullable<GetPermissionByKeyOptions>.Box
+	|-Nullable<PermissionStatus>.Box
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.Box
+	|-Nullable<RequestPermissionsOptions>.Box
+	|-Nullable<UpdateParentEmailOptions>.Box
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.Box
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.Box
+	|-Nullable<LeaderboardUserScore>.Box
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.Box
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.Box
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.Box
+	|-Nullable<QueryLeaderboardRanksOptions>.Box
+	|-Nullable<UserScoresQueryStatInfo>.Box
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.Box
+	|-Nullable<CopyLobbyDetailsHandleOptions>.Box
+	|-Nullable<DestroyLobbyOptions>.Box
+	|-Nullable<GetInviteIdByIndexOptions>.Box
+	|-Nullable<GetRTCRoomNameOptions>.Box
+	|-Nullable<IsRTCRoomConnectedOptions>.Box
+	|-Nullable<LeaveLobbyOptions>.Box
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.Box
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.Box
+	|-Nullable<LobbySearchFindCallbackInfo>.Box
+	|-Nullable<LobbySearchRemoveParameterOptions>.Box
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.Box
+	|-Nullable<RejectInviteOptions>.Box
+	|-Nullable<UpdateLobbyModificationOptions>.Box
+	|-Nullable<CopyModInfoOptions>.Box
+	|-Nullable<EnumerateModsOptions>.Box
+	|-Nullable<ModInfo>.Box
+	|-Nullable<GetNextReceivedPacketSizeOptions>.Box
+	|-Nullable<ReceivePacketOptions>.Box
+	|-Nullable<SetPacketQueueSizeOptions>.Box
+	|-Nullable<SocketIdInternal>.Box
+	|-Nullable<ClientCredentials>.Box
+	|-Nullable<WindowsRTCOptions>.Box
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.Box
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Box
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Box
+	|-Nullable<DeleteFileOptions>.Box
+	|-Nullable<QueryFileOptions>.Box
+	|-Nullable<CopyPresenceOptions>.Box
+	|-Nullable<DataRecord>.Box
+	|-Nullable<GetJoinInfoOptions>.Box
+	|-Nullable<HasPresenceOptions>.Box
+	|-Nullable<QueryPresenceOptions>.Box
+	|-Nullable<SetPresenceOptions>.Box
+	|-Nullable<SubmitSnapshotCallbackInfo>.Box
+	|-Nullable<AddNotifyDisconnectedOptions>.Box
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.Box
+	|-Nullable<LeaveRoomOptions>.Box
+	|-Nullable<ParticipantMetadata>.Box
+	|-Nullable<SetSettingOptions>.Box
+	|-Nullable<CopyUserTokenByUserIdOptions>.Box
+	|-Nullable<KickCompleteCallbackInfo>.Box
+	|-Nullable<KickOptions>.Box
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.Box
+	|-Nullable<UserToken>.Box
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.Box
+	|-Nullable<AddNotifyAudioInputStateOptions>.Box
+	|-Nullable<AddNotifyAudioOutputStateOptions>.Box
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.Box
+	|-Nullable<AudioBuffer>.Box
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.Box
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.Box
+	|-Nullable<QueryActivePlayerSanctionsOptions>.Box
+	|-Nullable<DestroySessionCallbackInfo>.Box
+	|-Nullable<EndSessionCallbackInfo>.Box
+	|-Nullable<GetInviteIdByIndexOptions>.Box
+	|-Nullable<IsUserInSessionOptions>.Box
+	|-Nullable<JoinSessionCallbackInfo>.Box
+	|-Nullable<RegisterPlayersOptions>.Box
+	|-Nullable<RejectInviteCallbackInfo>.Box
+	|-Nullable<RejectInviteOptions>.Box
+	|-Nullable<SendInviteCallbackInfo>.Box
+	|-Nullable<SessionSearchFindCallbackInfo>.Box
+	|-Nullable<SessionSearchRemoveParameterOptions>.Box
+	|-Nullable<StartSessionCallbackInfo>.Box
+	|-Nullable<UnregisterPlayersOptions>.Box
+	|-Nullable<CopyStatByIndexOptions>.Box
+	|-Nullable<CopyStatByNameOptions>.Box
+	|-Nullable<IngestData>.Box
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Box
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Box
+	|-Nullable<QueryFileListOptions>.Box
+	|-Nullable<QueryFileOptions>.Box
+	|-Nullable<AcknowledgeEventIdOptions>.Box
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.Box
+	|-Nullable<ShowBlockPlayerOptions>.Box
+	|-Nullable<ShowReportPlayerOptions>.Box
+	|-Nullable<CopyUserInfoOptions>.Box
+	|-Nullable<GetExternalUserInfoCountOptions>.Box
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.Box
+	|-Nullable<QueryUserInfoOptions>.Box
 	|-Nullable<ImageStorageEntity.ImageRequest>.Box
 	|-Nullable<Image>.Box
 	|-Nullable<SetUserItemVoteResult_t>.Box
@@ -4719,62 +13493,263 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<DateTimeOffset>.Box
 	|-Nullable<StreamingContext>.Box
 	|
-	|-Nullable<JsonPosition>.Box
-	|-Nullable<CreateItemResult_t>.Box
-	|-Nullable<InventoryPurchaseResult>.Box
-	|-Nullable<SteamInventoryStartPurchaseResult_t>.Box
-	|-Nullable<ResultPage>.Box
+	|-Nullable<Definition>.Box
+	|-Nullable<DefinitionV2Internal>.Box
+	|-Nullable<TokenInternal>.Box
+	|-Nullable<VerifyUserAuthOptions>.Box
+	|-Nullable<VerifyIdTokenCallbackInfo>.Box
+	|-Nullable<CatalogItemInternal>.Box
+	|-Nullable<ActiveSessionInfo>.Box
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.Box
+	|-Nullable<DefinitionInternal>.Box
+	|-Nullable<LoginCallbackInfo>.Box
+	|-Nullable<VerifyIdTokenCallbackInfo>.Box
 	|
+	|-Nullable<DefinitionV2>.Box
+	|-Nullable<PlayerAchievement>.Box
+	|-Nullable<PlayerAchievementInternal>.Box
+	|-Nullable<Token>.Box
+	|-Nullable<CatalogItem>.Box
+	|-Nullable<Attribute>.Box
+	|-Nullable<LobbyModificationAddAttributeOptions>.Box
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.Box
+	|-Nullable<LobbySearchSetParameterOptions>.Box
+	|-Nullable<InfoInternal>.Box
+	|-Nullable<SessionDetailsAttribute>.Box
+	|-Nullable<SessionModificationAddAttributeOptions>.Box
+	|-Nullable<SessionSearchSetParameterOptions>.Box
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.Box
+	|-Nullable<RegisterPeerOptions>.Box
+	|-Nullable<IOSCredentials>.Box
+	|-Nullable<ExternalAccountInfoInternal>.Box
+	|-Nullable<EntitlementInternal>.Box
+	|-Nullable<QueryPermissionsCallbackInfo>.Box
+	|-Nullable<DefinitionInternal>.Box
+	|-Nullable<LobbyDetailsInfo>.Box
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.Box
+	|-Nullable<ModIdentifierInternal>.Box
+	|-Nullable<OnPeerConnectionEstablishedInfo>.Box
+	|-Nullable<OnRemoteConnectionClosedInfo>.Box
+	|-Nullable<PacketQueueInfo>.Box
+	|-Nullable<InitializeThreadAffinity>.Box
+	|-Nullable<ReadFileDataCallbackInfo>.Box
+	|-Nullable<BlockParticipantCallbackInfo>.Box
+	|-Nullable<JoinRoomOptions>.Box
+	|-Nullable<AudioBeforeSendCallbackInfo>.Box
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.Box
+	|-Nullable<UpdateReceivingCallbackInfo>.Box
+	|-Nullable<ReadFileDataCallbackInfo>.Box
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.Box
+	|-Nullable<UserInfoData>.Box
+	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.Box
+	|-Nullable<UnlockedAchievement>.Box
+	|-Nullable<LogGameRoundStartOptions>.Box
+	|-Nullable<OnClientActionRequiredCallbackInfo>.Box
+	|-Nullable<OnMessageToClientCallbackInfo>.Box
+	|-Nullable<RegisterEventOptions>.Box
+	|-Nullable<BeginSessionOptions>.Box
+	|-Nullable<ProtectMessageOptions>.Box
+	|-Nullable<RegisterClientOptions>.Box
+	|-Nullable<UnprotectMessageOptions>.Box
+	|-Nullable<PinGrantInfo>.Box
+	|-Nullable<QueryIdTokenCallbackInfo>.Box
+	|-Nullable<LoginCallbackInfo>.Box
+	|-Nullable<FinalizeInviteOptions>.Box
+	|-Nullable<SendCustomInviteCallbackInfo>.Box
+	|-Nullable<CheckoutCallbackInfo>.Box
+	|-Nullable<KeyImageInfoInternal>.Box
+	|-Nullable<QueryOwnershipCallbackInfo>.Box
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.Box
+	|-Nullable<RedeemEntitlementsCallbackInfo>.Box
+	|-Nullable<AcceptInviteCallbackInfo>.Box
+	|-Nullable<OnFriendsUpdateInfo>.Box
+	|-Nullable<RejectInviteCallbackInfo>.Box
+	|-Nullable<SendInviteCallbackInfo>.Box
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.Box
+	|-Nullable<QueryAgeGateCallbackInfo>.Box
+	|-Nullable<LeaderboardRecordInternal>.Box
+	|-Nullable<AttributeDataInternal>.Box
+	|-Nullable<HardMuteMemberCallbackInfo>.Box
+	|-Nullable<HardMuteMemberOptions>.Box
+	|-Nullable<JoinLobbyByIdOptions>.Box
+	|-Nullable<JoinLobbyOptions>.Box
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.Box
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.Box
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.Box
+	|-Nullable<EnumerateModsCallbackInfo>.Box
+	|-Nullable<AcceptConnectionOptions>.Box
+	|-Nullable<ClearPacketQueueOptions>.Box
+	|-Nullable<CloseConnectionOptions>.Box
+	|-Nullable<FileTransferProgressCallbackInfo>.Box
+	|-Nullable<QueryFileListCallbackInfo>.Box
+	|-Nullable<ReadFileCallbackInfo>.Box
+	|-Nullable<WriteFileCallbackInfo>.Box
+	|-Nullable<WriteFileDataCallbackInfo>.Box
+	|-Nullable<QueryPresenceCallbackInfo>.Box
+	|-Nullable<BlockParticipantOptions>.Box
+	|-Nullable<DisconnectedCallbackInfo>.Box
+	|-Nullable<JoinRoomCallbackInfo>.Box
+	|-Nullable<LeaveRoomCallbackInfo>.Box
+	|-Nullable<SetRoomSettingOptions>.Box
+	|-Nullable<QueryJoinRoomTokenOptions>.Box
+	|-Nullable<AudioBufferInternal>.Box
+	|-Nullable<AudioInputStateCallbackInfo>.Box
+	|-Nullable<AudioOutputStateCallbackInfo>.Box
+	|-Nullable<UpdateParticipantVolumeOptions>.Box
+	|-Nullable<UpdateReceivingOptions>.Box
+	|-Nullable<PlayerSanction>.Box
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.Box
+	|-Nullable<AttributeDataInternal>.Box
+	|-Nullable<JoinSessionOptions>.Box
+	|-Nullable<RegisterPlayersCallbackInfo>.Box
+	|-Nullable<SessionInviteReceivedCallbackInfo>.Box
+	|-Nullable<UpdateSessionCallbackInfo>.Box
+	|-Nullable<IngestStatCompleteCallbackInfo>.Box
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.Box
+	|-Nullable<FileMetadata>.Box
+	|-Nullable<FileMetadataInternal>.Box
+	|-Nullable<FileTransferProgressCallbackInfo>.Box
+	|-Nullable<QueryFileListCallbackInfo>.Box
+	|-Nullable<ReadFileCallbackInfo>.Box
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.Box
+	|-Nullable<OnShowReportPlayerCallbackInfo>.Box
+	|-Nullable<ExternalUserInfo>.Box
+	|-Nullable<ExternalUserInfoInternal>.Box
+	|-Nullable<QueryUserInfoCallbackInfo>.Box
 	|-Nullable<Option>.Box
 	|-Nullable<SteamUGCQueryCompleted_t>.Box
 	|-Nullable<Friend.FriendGameInfo>.Box
 	|
-	|-Nullable<ServerInfo>.Box
+	|-Nullable<LogEventParamPair>.Box
+	|-Nullable<LogEventParamPairParamValue>.Box
 	|
-	|-Nullable<EncryptedAppTicketResponse_t>.Box
-	|-Nullable<int>.Box
-	|-Nullable<Int32Enum>.Box
-	|-Nullable<uint>.Box
+	|-Nullable<LogPlayerTakeDamageOptions>.Box
 	|
-	|-Nullable<InventoryResult>.Box
-	|-Nullable<ValueTuple<Int32Enum, float>>.Box
+	|-Nullable<LogPlayerTickOptions>.Box
+	|-Nullable<LogPlayerUseWeaponData>.Box
+	|-Nullable<LoginOptions>.Box
+	|-Nullable<ExternalAccountInfo>.Box
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.Box
+	|-Nullable<AttributeDataValue>.Box
+	|-Nullable<BeginPlayerSessionOptions>.Box
+	|-Nullable<UninstallModOptions>.Box
+	|-Nullable<UpdateModOptions>.Box
+	|-Nullable<FileMetadata>.Box
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.Box
+	|-Nullable<AudioBeforeRenderCallbackInfo>.Box
+	|-Nullable<AttributeDataValue>.Box
+	|-Nullable<CreateSessionModificationOptions>.Box
+	|-Nullable<SessionDetailsInfo>.Box
+	|-Nullable<UserInfoDataInternal>.Box
 	|
-	|-Nullable<SteamId>.Box
-	|-Nullable<DataKey>.Box
-	|-Nullable<DateTime>.Box
-	|-Nullable<TimeSpan>.Box
+	|-Nullable<LogPlayerUseWeaponOptions>.Box
+	|-Nullable<IOSLoginOptions>.Box
+	|-Nullable<AttributeData>.Box
+	|-Nullable<CreateLobbyOptions>.Box
+	|-Nullable<LobbyDetailsInfoInternal>.Box
+	|-Nullable<InstallModOptions>.Box
+	|-Nullable<AttributeData>.Box
+	|-Nullable<Stat>.Box
 	|
-	|-Nullable<Item>.Box
-	|
-	|-Nullable<bool>.Box
-	|-Nullable<byte>.Box
-	|-Nullable<ByteEnum>.Box
-	|-Nullable<sbyte>.Box
-	|
-	|-Nullable<char>.Box
-	|-Nullable<short>.Box
-	|-Nullable<ushort>.Box
-	|
+	|-Nullable<Quat>.Box
+	|-Nullable<QuatInternal>.Box
 	|-Nullable<Decimal>.Box
 	|-Nullable<Guid>.Box
 	|-Nullable<Color>.Box
 	|-Nullable<Rect>.Box
 	|
+	|-Nullable<Vec3f>.Box
+	|-Nullable<Vec3fInternal>.Box
+	|-Nullable<PageResult>.Box
+	|-Nullable<Token>.Box
+	|-Nullable<Vector3>.Box
+	|
+	|-Nullable<Credentials>.Box
+	|-Nullable<PinGrantInfoInternal>.Box
+	|-Nullable<LoginOptions>.Box
+	|-Nullable<CustomInviteRejectedCallbackInfo>.Box
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.Box
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.Box
+	|-Nullable<CatalogReleaseInternal>.Box
+	|-Nullable<Entitlement>.Box
+	|-Nullable<CreateUserCallbackInfo>.Box
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.Box
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.Box
+	|-Nullable<ModIdentifier>.Box
+	|-Nullable<OnIncomingConnectionRequestInfo>.Box
+	|-Nullable<OnIncomingPacketQueueFullInfo>.Box
+	|-Nullable<OnPeerConnectionInterruptedInfo>.Box
+	|-Nullable<FileMetadataInternal>.Box
+	|-Nullable<ReadFileOptions>.Box
+	|-Nullable<WriteFileOptions>.Box
+	|-Nullable<JoinGameAcceptedCallbackInfo>.Box
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.Box
+	|-Nullable<ParticipantUpdatedCallbackInfo>.Box
+	|-Nullable<SendAudioOptions>.Box
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.Box
+	|-Nullable<UpdateSendingCallbackInfo>.Box
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.Box
+	|-Nullable<SendPlayerBehaviorReportOptions>.Box
+	|-Nullable<PlayerSanctionInternal>.Box
+	|-Nullable<ActiveSessionInfoInternal>.Box
+	|-Nullable<SessionDetailsInfoInternal>.Box
+	|-Nullable<SessionDetailsSettingsInternal>.Box
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.Box
+	|-Nullable<StatInternal>.Box
+	|-Nullable<ReadFileOptions>.Box
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.Box
+	|-Nullable<RenderTargetIdentifier>.Box
+	|
+	|-Nullable<LinkAccountCallbackInfo>.Box
+	|-Nullable<Definition>.Box
+	|-Nullable<QueryLeaderboardUserScoresOptions>.Box
+	|-Nullable<InstallModCallbackInfo>.Box
+	|-Nullable<UninstallModCallbackInfo>.Box
+	|-Nullable<UpdateModCallbackInfo>.Box
+	|-Nullable<SendPacketOptions>.Box
+	|-Nullable<Info>.Box
+	|-Nullable<QueryStatsOptions>.Box
+	|
+	|-Nullable<CatalogOffer>.Box
+	|-Nullable<CatalogOfferInternal>.Box
+	|
+	|-Nullable<LocalRTCOptions>.Box
+	|-Nullable<PageQuery>.Box
+	|-Nullable<GetDesktopCrossplayStatusInfo>.Box
+	|-Nullable<CopyUserTokenByIndexOptions>.Box
+	|-Nullable<InventoryResult>.Box
+	|-Nullable<ValueTuple<Int32Enum, float>>.Box
+	|
+	|-Nullable<SetPortRangeOptions>.Box
+	|
+	|-Nullable<AndroidInitializeOptions>.Box
+	|-Nullable<WindowsOptions>.Box
+	|
+	|-Nullable<InitializeOptions>.Box
+	|
+	|-Nullable<Options>.Box
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.Box
+	|
+	|-Nullable<ServerInfo>.Box
+	|
+	|-Nullable<Item>.Box
+	|
+	|-Nullable<char>.Box
+	|-Nullable<short>.Box
+	|-Nullable<ushort>.Box
+	|
 	|-Nullable<double>.Box
 	|
 	|-Nullable<long>.Box
+	|-Nullable<IntPtr>.Box
 	|-Nullable<ulong>.Box
-	|
-	|-Nullable<Token>.Box
-	|-Nullable<Vector3>.Box
 	|
 	|-Nullable<float>.Box
 	|
 	|-Nullable<Ray>.Box
-	|
-	|-Nullable<RenderTargetIdentifier>.Box
 	|
 	|-Nullable<Vector2>.Box
 	*/
@@ -4782,41 +13757,754 @@ public struct Nullable<T> // TypeDefIndex: 380
 	private static Nullable<T> Unbox(object o) { }
 	/* GenericInstMethod :
 	|
+	|-Nullable<AddNotifyAchievementsUnlockedOptions>.Unbox
+	|-Nullable<AddNotifyAchievementsUnlockedV2Options>.Unbox
+	|-Nullable<GetAchievementDefinitionCountOptions>.Unbox
+	|-Nullable<AddNotifyClientIntegrityViolatedOptions>.Unbox
+	|-Nullable<AddNotifyMessageToPeerOptions>.Unbox
+	|-Nullable<AddNotifyMessageToServerOptions>.Unbox
+	|-Nullable<AddNotifyPeerActionRequiredOptions>.Unbox
+	|-Nullable<AddNotifyPeerAuthStatusChangedOptions>.Unbox
+	|-Nullable<EndSessionOptions>.Unbox
+	|-Nullable<AddNotifyClientActionRequiredOptions>.Unbox
+	|-Nullable<AddNotifyClientAuthStatusChangedOptions>.Unbox
+	|-Nullable<AddNotifyMessageToClientOptions>.Unbox
+	|-Nullable<EndSessionOptions>.Unbox
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Unbox
+	|-Nullable<CopyUserAuthTokenOptions>.Unbox
+	|-Nullable<AddNotifyAuthExpirationOptions>.Unbox
+	|-Nullable<AddNotifyLoginStatusChangedOptions>.Unbox
+	|-Nullable<DeleteDeviceIdOptions>.Unbox
+	|-Nullable<AddNotifyCustomInviteAcceptedOptions>.Unbox
+	|-Nullable<AddNotifyCustomInviteReceivedOptions>.Unbox
+	|-Nullable<AddNotifyCustomInviteRejectedOptions>.Unbox
+	|-Nullable<TransactionGetEntitlementsCountOptions>.Unbox
+	|-Nullable<AddNotifyFriendsUpdateOptions>.Unbox
+	|-Nullable<CreateIntegratedPlatformOptionsContainerOptions>.Unbox
+	|-Nullable<AddNotifyPermissionsUpdateReceivedOptions>.Unbox
+	|-Nullable<QueryAgeGateOptions>.Unbox
+	|-Nullable<GetLeaderboardDefinitionCountOptions>.Unbox
+	|-Nullable<GetLeaderboardRecordCountOptions>.Unbox
+	|-Nullable<AddNotifyJoinLobbyAcceptedOptions>.Unbox
+	|-Nullable<AddNotifyLobbyInviteAcceptedOptions>.Unbox
+	|-Nullable<AddNotifyLobbyInviteReceivedOptions>.Unbox
+	|-Nullable<AddNotifyLobbyInviteRejectedOptions>.Unbox
+	|-Nullable<AddNotifyLobbyMemberStatusReceivedOptions>.Unbox
+	|-Nullable<AddNotifyLobbyMemberUpdateReceivedOptions>.Unbox
+	|-Nullable<AddNotifyLobbyUpdateReceivedOptions>.Unbox
+	|-Nullable<AddNotifySendLobbyNativeInviteRequestedOptions>.Unbox
+	|-Nullable<LobbyDetailsCopyInfoOptions>.Unbox
+	|-Nullable<LobbyDetailsGetAttributeCountOptions>.Unbox
+	|-Nullable<LobbyDetailsGetLobbyOwnerOptions>.Unbox
+	|-Nullable<LobbyDetailsGetMemberCountOptions>.Unbox
+	|-Nullable<LobbyModificationSetInvitesAllowedOptions>.Unbox
+	|-Nullable<LobbySearchGetSearchResultCountOptions>.Unbox
+	|-Nullable<AddNotifyIncomingPacketQueueFullOptions>.Unbox
+	|-Nullable<GetNATTypeOptions>.Unbox
+	|-Nullable<GetPacketQueueInfoOptions>.Unbox
+	|-Nullable<GetPortRangeOptions>.Unbox
+	|-Nullable<GetRelayControlOptions>.Unbox
+	|-Nullable<QueryNATTypeOptions>.Unbox
+	|-Nullable<GetDesktopCrossplayStatusOptions>.Unbox
+	|-Nullable<AddNotifyJoinGameAcceptedOptions>.Unbox
+	|-Nullable<AddNotifyOnPresenceChangedOptions>.Unbox
+	|-Nullable<AddNotifyAudioDevicesChangedOptions>.Unbox
+	|-Nullable<GetAudioInputDevicesCountOptions>.Unbox
+	|-Nullable<GetAudioOutputDevicesCountOptions>.Unbox
+	|-Nullable<ActiveSessionCopyInfoOptions>.Unbox
+	|-Nullable<ActiveSessionGetRegisteredPlayerCountOptions>.Unbox
+	|-Nullable<AddNotifyJoinSessionAcceptedOptions>.Unbox
+	|-Nullable<AddNotifySessionInviteAcceptedOptions>.Unbox
+	|-Nullable<AddNotifySessionInviteReceivedOptions>.Unbox
+	|-Nullable<SessionDetailsCopyInfoOptions>.Unbox
+	|-Nullable<SessionDetailsGetSessionAttributeCountOptions>.Unbox
+	|-Nullable<SessionModificationSetInvitesAllowedOptions>.Unbox
+	|-Nullable<SessionModificationSetJoinInProgressAllowedOptions>.Unbox
+	|-Nullable<SessionSearchGetSearchResultCountOptions>.Unbox
+	|-Nullable<AddNotifyDisplaySettingsUpdatedOptions>.Unbox
+	|-Nullable<GetToggleFriendsKeyOptions>.Unbox
+	|-Nullable<IsSocialOverlayPausedOptions>.Unbox
+	|-Nullable<PauseSocialOverlayOptions>.Unbox
+	|
+	|-Nullable<CopyAchievementDefinitionByAchievementIdOptions>.Unbox
+	|-Nullable<CopyAchievementDefinitionV2ByAchievementIdOptions>.Unbox
+	|-Nullable<GetPlayerAchievementCountOptions>.Unbox
+	|-Nullable<GetUnlockedAchievementCountOptions>.Unbox
+	|-Nullable<AddExternalIntegrityCatalogOptions>.Unbox
+	|-Nullable<SetGameSessionIdOptions>.Unbox
+	|-Nullable<AccountFeatureRestrictedInfo>.Unbox
+	|-Nullable<CopyIdTokenOptions>.Unbox
+	|-Nullable<DeletePersistentAuthOptions>.Unbox
+	|-Nullable<LogoutOptions>.Unbox
+	|-Nullable<CopyIdTokenOptions>.Unbox
+	|-Nullable<CopyProductUserInfoOptions>.Unbox
+	|-Nullable<CreateDeviceIdOptions>.Unbox
+	|-Nullable<CreateUserOptions>.Unbox
+	|-Nullable<GetProductUserExternalAccountCountOptions>.Unbox
+	|-Nullable<UnlinkAccountOptions>.Unbox
+	|-Nullable<UserLoginInfo>.Unbox
+	|-Nullable<CheckoutEntry>.Unbox
+	|-Nullable<GetEntitlementsCountOptions>.Unbox
+	|-Nullable<GetLastRedeemedEntitlementsCountOptions>.Unbox
+	|-Nullable<GetOfferCountOptions>.Unbox
+	|-Nullable<GetTransactionCountOptions>.Unbox
+	|-Nullable<GetFriendsCountOptions>.Unbox
+	|-Nullable<QueryFriendsOptions>.Unbox
+	|-Nullable<GetPermissionsCountOptions>.Unbox
+	|-Nullable<QueryPermissionsOptions>.Unbox
+	|-Nullable<CopyLeaderboardDefinitionByLeaderboardIdOptions>.Unbox
+	|-Nullable<CopyLeaderboardRecordByUserIdOptions>.Unbox
+	|-Nullable<GetLeaderboardUserScoreCountOptions>.Unbox
+	|-Nullable<CopyLobbyDetailsHandleByInviteIdOptions>.Unbox
+	|-Nullable<GetInviteCountOptions>.Unbox
+	|-Nullable<LobbyDetailsCopyAttributeByKeyOptions>.Unbox
+	|-Nullable<LobbyDetailsGetMemberAttributeCountOptions>.Unbox
+	|-Nullable<LobbyModificationRemoveAttributeOptions>.Unbox
+	|-Nullable<LobbyModificationRemoveMemberAttributeOptions>.Unbox
+	|-Nullable<LobbyModificationSetBucketIdOptions>.Unbox
+	|-Nullable<LobbySearchFindOptions>.Unbox
+	|-Nullable<LobbySearchSetLobbyIdOptions>.Unbox
+	|-Nullable<LobbySearchSetTargetUserIdOptions>.Unbox
+	|-Nullable<QueryInvitesOptions>.Unbox
+	|-Nullable<UpdateLobbyOptions>.Unbox
+	|-Nullable<SocketId>.Unbox
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptions>.Unbox
+	|-Nullable<DeleteCacheOptions>.Unbox
+	|-Nullable<GetFileMetadataCountOptions>.Unbox
+	|-Nullable<QueryFileListOptions>.Unbox
+	|-Nullable<CreatePresenceModificationOptions>.Unbox
+	|-Nullable<PresenceModificationDataRecordId>.Unbox
+	|-Nullable<PresenceModificationDeleteDataOptions>.Unbox
+	|-Nullable<PresenceModificationSetDataOptions>.Unbox
+	|-Nullable<PresenceModificationSetJoinInfoOptions>.Unbox
+	|-Nullable<PresenceModificationSetRawRichTextOptions>.Unbox
+	|-Nullable<BeginSnapshotOptions>.Unbox
+	|-Nullable<DeleteSnapshotOptions>.Unbox
+	|-Nullable<AudioDevicesChangedCallbackInfo>.Unbox
+	|-Nullable<RegisterPlatformAudioUserOptions>.Unbox
+	|-Nullable<UnregisterPlatformAudioUserOptions>.Unbox
+	|-Nullable<GetPlayerSanctionCountOptions>.Unbox
+	|-Nullable<CopyActiveSessionHandleOptions>.Unbox
+	|-Nullable<CopySessionHandleByInviteIdOptions>.Unbox
+	|-Nullable<CopySessionHandleForPresenceOptions>.Unbox
+	|-Nullable<DestroySessionOptions>.Unbox
+	|-Nullable<DumpSessionStateOptions>.Unbox
+	|-Nullable<EndSessionOptions>.Unbox
+	|-Nullable<GetInviteCountOptions>.Unbox
+	|-Nullable<QueryInvitesOptions>.Unbox
+	|-Nullable<SessionDetailsCopySessionAttributeByKeyOptions>.Unbox
+	|-Nullable<SessionModificationRemoveAttributeOptions>.Unbox
+	|-Nullable<SessionModificationSetBucketIdOptions>.Unbox
+	|-Nullable<SessionModificationSetHostAddressOptions>.Unbox
+	|-Nullable<SessionSearchFindOptions>.Unbox
+	|-Nullable<SessionSearchSetSessionIdOptions>.Unbox
+	|-Nullable<SessionSearchSetTargetUserIdOptions>.Unbox
+	|-Nullable<StartSessionOptions>.Unbox
+	|-Nullable<UpdateSessionModificationOptions>.Unbox
+	|-Nullable<UpdateSessionOptions>.Unbox
+	|-Nullable<GetStatCountOptions>.Unbox
+	|-Nullable<DeleteCacheOptions>.Unbox
+	|-Nullable<GetFileMetadataCountOptions>.Unbox
+	|-Nullable<GetFriendsExclusiveInputOptions>.Unbox
+	|-Nullable<GetFriendsVisibleOptions>.Unbox
+	|-Nullable<HideFriendsOptions>.Unbox
+	|-Nullable<ShowFriendsOptions>.Unbox
+	|-Nullable<DataKey>.Unbox
+	|
+	|-Nullable<CopyAchievementDefinitionByIndexOptions>.Unbox
+	|-Nullable<CopyAchievementDefinitionV2ByIndexOptions>.Unbox
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Unbox
+	|-Nullable<PollStatusOptions>.Unbox
+	|-Nullable<LogGameRoundEndOptions>.Unbox
+	|-Nullable<GetProtectMessageOutputLengthOptions>.Unbox
+	|-Nullable<TransactionCopyEntitlementByIndexOptions>.Unbox
+	|-Nullable<CopyLeaderboardDefinitionByIndexOptions>.Unbox
+	|-Nullable<CopyLeaderboardRecordByIndexOptions>.Unbox
+	|-Nullable<CreateLobbySearchOptions>.Unbox
+	|-Nullable<LobbyDetailsCopyAttributeByIndexOptions>.Unbox
+	|-Nullable<LobbyDetailsGetMemberByIndexOptions>.Unbox
+	|-Nullable<LobbyModificationSetMaxMembersOptions>.Unbox
+	|-Nullable<LobbyModificationSetPermissionLevelOptions>.Unbox
+	|-Nullable<LobbySearchCopySearchResultByIndexOptions>.Unbox
+	|-Nullable<LobbySearchSetMaxResultsOptions>.Unbox
+	|-Nullable<SetRelayControlOptions>.Unbox
+	|-Nullable<PresenceModificationSetStatusOptions>.Unbox
+	|-Nullable<EndSnapshotOptions>.Unbox
+	|-Nullable<SubmitSnapshotOptions>.Unbox
+	|-Nullable<GetAudioInputDeviceByIndexOptions>.Unbox
+	|-Nullable<GetAudioOutputDeviceByIndexOptions>.Unbox
+	|-Nullable<ActiveSessionGetRegisteredPlayerByIndexOptions>.Unbox
+	|-Nullable<CreateSessionSearchOptions>.Unbox
+	|-Nullable<SessionDetailsCopySessionAttributeByIndexOptions>.Unbox
+	|-Nullable<SessionModificationSetMaxPlayersOptions>.Unbox
+	|-Nullable<SessionModificationSetPermissionLevelOptions>.Unbox
+	|-Nullable<SessionSearchCopySearchResultByIndexOptions>.Unbox
+	|-Nullable<SessionSearchSetMaxResultsOptions>.Unbox
+	|-Nullable<SetDisplayPreferenceOptions>.Unbox
+	|-Nullable<SetToggleFriendsKeyOptions>.Unbox
+	|-Nullable<EncryptedAppTicketResponse_t>.Unbox
+	|
+	|-Nullable<CopyPlayerAchievementByAchievementIdOptions>.Unbox
+	|-Nullable<CopyPlayerAchievementByIndexOptions>.Unbox
+	|-Nullable<OnAchievementsUnlockedCallbackInfo>.Unbox
+	|-Nullable<QueryDefinitionsOptions>.Unbox
+	|-Nullable<OnClientIntegrityViolatedCallbackInfo>.Unbox
+	|-Nullable<OnMessageToServerCallbackInfo>.Unbox
+	|-Nullable<ProtectMessageOptions>.Unbox
+	|-Nullable<UnprotectMessageOptions>.Unbox
+	|-Nullable<OnClientAuthStatusChangedCallbackInfo>.Unbox
+	|-Nullable<LoginStatusChangedCallbackInfo>.Unbox
+	|-Nullable<VerifyIdTokenOptions>.Unbox
+	|-Nullable<GetExternalAccountMappingsOptions>.Unbox
+	|-Nullable<GetProductUserIdMappingOptions>.Unbox
+	|-Nullable<LoginStatusChangedCallbackInfo>.Unbox
+	|-Nullable<QueryExternalAccountMappingsOptions>.Unbox
+	|-Nullable<QueryProductUserIdMappingsOptions>.Unbox
+	|-Nullable<TransferDeviceIdAccountOptions>.Unbox
+	|-Nullable<VerifyIdTokenOptions>.Unbox
+	|-Nullable<CatalogRelease>.Unbox
+	|-Nullable<CheckoutOptions>.Unbox
+	|-Nullable<CopyEntitlementByNameAndIndexOptions>.Unbox
+	|-Nullable<CopyItemImageInfoByIndexOptions>.Unbox
+	|-Nullable<CopyItemReleaseByIndexOptions>.Unbox
+	|-Nullable<CopyOfferImageInfoByIndexOptions>.Unbox
+	|-Nullable<CopyOfferItemByIndexOptions>.Unbox
+	|-Nullable<KeyImageInfo>.Unbox
+	|-Nullable<QueryEntitlementsOptions>.Unbox
+	|-Nullable<QueryOwnershipOptions>.Unbox
+	|-Nullable<QueryOwnershipTokenOptions>.Unbox
+	|-Nullable<Options>.Unbox
+	|-Nullable<CreateUserOptions>.Unbox
+	|-Nullable<LeaderboardRecord>.Unbox
+	|-Nullable<JoinLobbyAcceptedCallbackInfo>.Unbox
+	|-Nullable<KickMemberOptions>.Unbox
+	|-Nullable<LobbyMemberUpdateReceivedCallbackInfo>.Unbox
+	|-Nullable<PromoteMemberOptions>.Unbox
+	|-Nullable<SendInviteOptions>.Unbox
+	|-Nullable<LogMessage>.Unbox
+	|-Nullable<AddNotifyPeerConnectionClosedOptions>.Unbox
+	|-Nullable<AddNotifyPeerConnectionEstablishedOptions>.Unbox
+	|-Nullable<AddNotifyPeerConnectionInterruptedOptions>.Unbox
+	|-Nullable<AddNotifyPeerConnectionRequestOptions>.Unbox
+	|-Nullable<CloseConnectionsOptions>.Unbox
+	|-Nullable<DuplicateFileOptions>.Unbox
+	|-Nullable<PresenceChangedCallbackInfo>.Unbox
+	|-Nullable<SetParticipantHardMuteOptions>.Unbox
+	|-Nullable<AddNotifyAudioBeforeRenderOptions>.Unbox
+	|-Nullable<SetAudioInputSettingsOptions>.Unbox
+	|-Nullable<SetAudioOutputSettingsOptions>.Unbox
+	|-Nullable<UpdateReceivingVolumeOptions>.Unbox
+	|-Nullable<UpdateSendingOptions>.Unbox
+	|-Nullable<UpdateSendingVolumeOptions>.Unbox
+	|-Nullable<JoinSessionAcceptedCallbackInfo>.Unbox
+	|-Nullable<SendInviteOptions>.Unbox
+	|-Nullable<SessionDetailsSettings>.Unbox
+	|-Nullable<IngestStatOptions>.Unbox
+	|-Nullable<CopyExternalUserInfoByAccountIdOptions>.Unbox
+	|-Nullable<CopyExternalUserInfoByAccountTypeOptions>.Unbox
+	|-Nullable<CopyExternalUserInfoByIndexOptions>.Unbox
+	|-Nullable<QueryUserInfoByExternalAccountOptions>.Unbox
+	|
+	|-Nullable<CopyUnlockedAchievementByAchievementIdOptions>.Unbox
+	|-Nullable<CopyUnlockedAchievementByIndexOptions>.Unbox
+	|-Nullable<PlayerStatInfo>.Unbox
+	|-Nullable<QueryPlayerAchievementsOptions>.Unbox
+	|-Nullable<StatThresholds>.Unbox
+	|-Nullable<UnlockAchievementsOptions>.Unbox
+	|-Nullable<BeginSessionOptions>.Unbox
+	|-Nullable<ReceiveMessageFromServerOptions>.Unbox
+	|-Nullable<RegisterEventParamDef>.Unbox
+	|-Nullable<IdToken>.Unbox
+	|-Nullable<QueryIdTokenOptions>.Unbox
+	|-Nullable<AuthExpirationCallbackInfo>.Unbox
+	|-Nullable<CopyProductUserExternalAccountByAccountIdOptions>.Unbox
+	|-Nullable<CopyProductUserExternalAccountByAccountTypeOptions>.Unbox
+	|-Nullable<CopyProductUserExternalAccountByIndexOptions>.Unbox
+	|-Nullable<Credentials>.Unbox
+	|-Nullable<IdToken>.Unbox
+	|-Nullable<LinkAccountOptions>.Unbox
+	|-Nullable<SendCustomInviteOptions>.Unbox
+	|-Nullable<SetCustomInviteOptions>.Unbox
+	|-Nullable<CopyEntitlementByIdOptions>.Unbox
+	|-Nullable<CopyEntitlementByIndexOptions>.Unbox
+	|-Nullable<CopyItemByIdOptions>.Unbox
+	|-Nullable<CopyLastRedeemedEntitlementByIndexOptions>.Unbox
+	|-Nullable<CopyOfferByIdOptions>.Unbox
+	|-Nullable<CopyOfferByIndexOptions>.Unbox
+	|-Nullable<CopyTransactionByIdOptions>.Unbox
+	|-Nullable<CopyTransactionByIndexOptions>.Unbox
+	|-Nullable<GetEntitlementsByNameCountOptions>.Unbox
+	|-Nullable<GetItemImageInfoCountOptions>.Unbox
+	|-Nullable<GetItemReleaseCountOptions>.Unbox
+	|-Nullable<GetOfferImageInfoCountOptions>.Unbox
+	|-Nullable<GetOfferItemCountOptions>.Unbox
+	|-Nullable<ItemOwnership>.Unbox
+	|-Nullable<QueryOffersOptions>.Unbox
+	|-Nullable<RedeemEntitlementsOptions>.Unbox
+	|-Nullable<AcceptInviteOptions>.Unbox
+	|-Nullable<GetFriendAtIndexOptions>.Unbox
+	|-Nullable<GetStatusOptions>.Unbox
+	|-Nullable<RejectInviteOptions>.Unbox
+	|-Nullable<SendInviteOptions>.Unbox
+	|-Nullable<SteamOptions>.Unbox
+	|-Nullable<CopyPermissionByIndexOptions>.Unbox
+	|-Nullable<GetPermissionByKeyOptions>.Unbox
+	|-Nullable<PermissionStatus>.Unbox
+	|-Nullable<PermissionsUpdateReceivedCallbackInfo>.Unbox
+	|-Nullable<RequestPermissionsOptions>.Unbox
+	|-Nullable<UpdateParentEmailOptions>.Unbox
+	|-Nullable<CopyLeaderboardUserScoreByUserIdOptions>.Unbox
+	|-Nullable<LeaderboardUserScore>.Unbox
+	|-Nullable<QueryLeaderboardRanksOptions>.Unbox
+	|-Nullable<UserScoresQueryStatInfo>.Unbox
+	|-Nullable<AddNotifyRTCRoomConnectionChangedOptions>.Unbox
+	|-Nullable<CopyLobbyDetailsHandleOptions>.Unbox
+	|-Nullable<DestroyLobbyOptions>.Unbox
+	|-Nullable<GetInviteIdByIndexOptions>.Unbox
+	|-Nullable<GetRTCRoomNameOptions>.Unbox
+	|-Nullable<IsRTCRoomConnectedOptions>.Unbox
+	|-Nullable<LeaveLobbyOptions>.Unbox
+	|-Nullable<LobbyDetailsCopyMemberAttributeByIndexOptions>.Unbox
+	|-Nullable<LobbyDetailsCopyMemberAttributeByKeyOptions>.Unbox
+	|-Nullable<LobbySearchRemoveParameterOptions>.Unbox
+	|-Nullable<LobbyUpdateReceivedCallbackInfo>.Unbox
+	|-Nullable<RejectInviteOptions>.Unbox
+	|-Nullable<UpdateLobbyModificationOptions>.Unbox
+	|-Nullable<CopyModInfoOptions>.Unbox
+	|-Nullable<EnumerateModsOptions>.Unbox
+	|-Nullable<ModInfo>.Unbox
+	|-Nullable<GetNextReceivedPacketSizeOptions>.Unbox
+	|-Nullable<ReceivePacketOptions>.Unbox
+	|-Nullable<ClientCredentials>.Unbox
+	|-Nullable<WindowsRTCOptions>.Unbox
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Unbox
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Unbox
+	|-Nullable<DeleteFileOptions>.Unbox
+	|-Nullable<QueryFileOptions>.Unbox
+	|-Nullable<CopyPresenceOptions>.Unbox
+	|-Nullable<DataRecord>.Unbox
+	|-Nullable<GetJoinInfoOptions>.Unbox
+	|-Nullable<HasPresenceOptions>.Unbox
+	|-Nullable<QueryPresenceOptions>.Unbox
+	|-Nullable<SetPresenceOptions>.Unbox
+	|-Nullable<AddNotifyDisconnectedOptions>.Unbox
+	|-Nullable<AddNotifyParticipantStatusChangedOptions>.Unbox
+	|-Nullable<LeaveRoomOptions>.Unbox
+	|-Nullable<ParticipantMetadata>.Unbox
+	|-Nullable<SetSettingOptions>.Unbox
+	|-Nullable<CopyUserTokenByUserIdOptions>.Unbox
+	|-Nullable<KickOptions>.Unbox
+	|-Nullable<UserToken>.Unbox
+	|-Nullable<AddNotifyAudioBeforeSendOptions>.Unbox
+	|-Nullable<AddNotifyAudioInputStateOptions>.Unbox
+	|-Nullable<AddNotifyAudioOutputStateOptions>.Unbox
+	|-Nullable<AddNotifyParticipantUpdatedOptions>.Unbox
+	|-Nullable<AudioBuffer>.Unbox
+	|-Nullable<CopyPlayerSanctionByIndexOptions>.Unbox
+	|-Nullable<QueryActivePlayerSanctionsOptions>.Unbox
+	|-Nullable<GetInviteIdByIndexOptions>.Unbox
+	|-Nullable<IsUserInSessionOptions>.Unbox
+	|-Nullable<RegisterPlayersOptions>.Unbox
+	|-Nullable<RejectInviteOptions>.Unbox
+	|-Nullable<SessionSearchRemoveParameterOptions>.Unbox
+	|-Nullable<UnregisterPlayersOptions>.Unbox
+	|-Nullable<CopyStatByIndexOptions>.Unbox
+	|-Nullable<CopyStatByNameOptions>.Unbox
+	|-Nullable<IngestData>.Unbox
+	|-Nullable<CopyFileMetadataAtIndexOptions>.Unbox
+	|-Nullable<CopyFileMetadataByFilenameOptions>.Unbox
+	|-Nullable<QueryFileListOptions>.Unbox
+	|-Nullable<QueryFileOptions>.Unbox
+	|-Nullable<OnDisplaySettingsUpdatedCallbackInfo>.Unbox
+	|-Nullable<ShowBlockPlayerOptions>.Unbox
+	|-Nullable<ShowReportPlayerOptions>.Unbox
+	|-Nullable<CopyUserInfoOptions>.Unbox
+	|-Nullable<GetExternalUserInfoCountOptions>.Unbox
+	|-Nullable<QueryUserInfoByDisplayNameOptions>.Unbox
+	|-Nullable<QueryUserInfoOptions>.Unbox
 	|-Nullable<ImageStorageEntity.ImageRequest>.Unbox
 	|-Nullable<StreamingContext>.Unbox
 	|
+	|-Nullable<Definition>.Unbox
+	|-Nullable<VerifyUserAuthOptions>.Unbox
+	|-Nullable<ActiveSessionInfo>.Unbox
+	|
+	|-Nullable<DefinitionInternal>.Unbox
+	|
+	|-Nullable<DefinitionV2>.Unbox
+	|-Nullable<PlayerAchievement>.Unbox
+	|-Nullable<Token>.Unbox
+	|-Nullable<CatalogItem>.Unbox
+	|-Nullable<Attribute>.Unbox
+	|-Nullable<LobbyModificationAddAttributeOptions>.Unbox
+	|-Nullable<LobbyModificationAddMemberAttributeOptions>.Unbox
+	|-Nullable<LobbySearchSetParameterOptions>.Unbox
+	|-Nullable<SessionDetailsAttribute>.Unbox
+	|-Nullable<SessionModificationAddAttributeOptions>.Unbox
+	|-Nullable<SessionSearchSetParameterOptions>.Unbox
+	|
+	|-Nullable<DefinitionV2Internal>.Unbox
+	|-Nullable<TokenInternal>.Unbox
+	|-Nullable<CatalogItemInternal>.Unbox
+	|
+	|-Nullable<OnAchievementsUnlockedCallbackV2Info>.Unbox
+	|-Nullable<IOSCredentials>.Unbox
+	|-Nullable<LobbyDetailsInfo>.Unbox
+	|-Nullable<SendLobbyNativeInviteRequestedCallbackInfo>.Unbox
+	|-Nullable<OnPeerConnectionEstablishedInfo>.Unbox
+	|-Nullable<OnRemoteConnectionClosedInfo>.Unbox
+	|-Nullable<ReadFileDataCallbackInfo>.Unbox
+	|-Nullable<JoinRoomOptions>.Unbox
+	|-Nullable<AudioBeforeSendCallbackInfo>.Unbox
+	|-Nullable<ReadFileDataCallbackInfo>.Unbox
+	|-Nullable<UserInfoData>.Unbox
+	|
+	|-Nullable<OnQueryDefinitionsCompleteCallbackInfo>.Unbox
+	|-Nullable<DeletePersistentAuthCallbackInfo>.Unbox
+	|-Nullable<VerifyUserAuthCallbackInfo>.Unbox
+	|-Nullable<CreateDeviceIdCallbackInfo>.Unbox
+	|-Nullable<DeleteDeviceIdCallbackInfo>.Unbox
+	|-Nullable<CopyLeaderboardUserScoreByIndexOptions>.Unbox
+	|-Nullable<OnQueryLeaderboardDefinitionsCompleteCallbackInfo>.Unbox
+	|-Nullable<OnQueryLeaderboardRanksCompleteCallbackInfo>.Unbox
+	|-Nullable<OnQueryLeaderboardUserScoresCompleteCallbackInfo>.Unbox
+	|-Nullable<LobbySearchFindCallbackInfo>.Unbox
+	|-Nullable<SocketIdInternal>.Unbox
+	|-Nullable<SubmitSnapshotCallbackInfo>.Unbox
+	|-Nullable<KickCompleteCallbackInfo>.Unbox
+	|-Nullable<SetParticipantHardMuteCompleteCallbackInfo>.Unbox
+	|-Nullable<SendPlayerBehaviorReportCompleteCallbackInfo>.Unbox
+	|-Nullable<DestroySessionCallbackInfo>.Unbox
+	|-Nullable<EndSessionCallbackInfo>.Unbox
+	|-Nullable<JoinSessionCallbackInfo>.Unbox
+	|-Nullable<RejectInviteCallbackInfo>.Unbox
+	|-Nullable<SendInviteCallbackInfo>.Unbox
+	|-Nullable<SessionSearchFindCallbackInfo>.Unbox
+	|-Nullable<StartSessionCallbackInfo>.Unbox
+	|-Nullable<Image>.Unbox
+	|-Nullable<SteamInventoryRequestPricesResult_t>.Unbox
+	|
+	|-Nullable<OnQueryPlayerAchievementsCompleteCallbackInfo>.Unbox
+	|-Nullable<ReceiveMessageFromPeerOptions>.Unbox
+	|-Nullable<ReceiveMessageFromClientOptions>.Unbox
+	|-Nullable<LinkAccountOptions>.Unbox
+	|-Nullable<LogoutCallbackInfo>.Unbox
+	|-Nullable<CreateUserCallbackInfo>.Unbox
+	|-Nullable<LinkAccountCallbackInfo>.Unbox
+	|-Nullable<QueryExternalAccountMappingsCallbackInfo>.Unbox
+	|-Nullable<QueryProductUserIdMappingsCallbackInfo>.Unbox
+	|-Nullable<TransferDeviceIdAccountCallbackInfo>.Unbox
+	|-Nullable<UnlinkAccountCallbackInfo>.Unbox
+	|-Nullable<QueryEntitlementsCallbackInfo>.Unbox
+	|-Nullable<QueryOffersCallbackInfo>.Unbox
+	|-Nullable<QueryFriendsCallbackInfo>.Unbox
+	|-Nullable<RequestPermissionsCallbackInfo>.Unbox
+	|-Nullable<UpdateParentEmailCallbackInfo>.Unbox
+	|-Nullable<CreateLobbyCallbackInfo>.Unbox
+	|-Nullable<DestroyLobbyCallbackInfo>.Unbox
+	|-Nullable<JoinLobbyByIdCallbackInfo>.Unbox
+	|-Nullable<JoinLobbyCallbackInfo>.Unbox
+	|-Nullable<KickMemberCallbackInfo>.Unbox
+	|-Nullable<LeaveLobbyCallbackInfo>.Unbox
+	|-Nullable<PromoteMemberCallbackInfo>.Unbox
+	|-Nullable<QueryInvitesCallbackInfo>.Unbox
+	|-Nullable<RejectInviteCallbackInfo>.Unbox
+	|-Nullable<SendInviteCallbackInfo>.Unbox
+	|-Nullable<UpdateLobbyCallbackInfo>.Unbox
+	|-Nullable<BeginPlayerSessionOptionsAccountId>.Unbox
+	|-Nullable<EndPlayerSessionOptions>.Unbox
+	|-Nullable<EndPlayerSessionOptionsAccountId>.Unbox
+	|-Nullable<OnQueryNATTypeCompleteInfo>.Unbox
+	|-Nullable<AndroidInitializeOptionsSystemInitializeOptions>.Unbox
+	|-Nullable<DeleteCacheCallbackInfo>.Unbox
+	|-Nullable<DeleteFileCallbackInfo>.Unbox
+	|-Nullable<DuplicateFileCallbackInfo>.Unbox
+	|-Nullable<QueryFileCallbackInfo>.Unbox
+	|-Nullable<SetPresenceCallbackInfo>.Unbox
+	|-Nullable<AddProgressionOptions>.Unbox
+	|-Nullable<DeleteSnapshotCallbackInfo>.Unbox
+	|-Nullable<AudioInputDeviceInfo>.Unbox
+	|-Nullable<AudioOutputDeviceInfo>.Unbox
+	|-Nullable<QueryInvitesCallbackInfo>.Unbox
+	|-Nullable<UnregisterPlayersCallbackInfo>.Unbox
+	|-Nullable<DeleteCacheCallbackInfo>.Unbox
+	|-Nullable<QueryFileCallbackInfo>.Unbox
+	|-Nullable<HideFriendsCallbackInfo>.Unbox
+	|-Nullable<ShowFriendsCallbackInfo>.Unbox
 	|-Nullable<JsonPosition>.Unbox
 	|
-	|-Nullable<PieMenu.MenuOption.ColorMode>.Unbox
-	|
+	|-Nullable<OnUnlockAchievementsCompleteCallbackInfo>.Unbox
+	|-Nullable<RegisterEventOptions>.Unbox
+	|-Nullable<BeginSessionOptions>.Unbox
+	|-Nullable<ProtectMessageOptions>.Unbox
+	|-Nullable<UnprotectMessageOptions>.Unbox
+	|-Nullable<QueryIdTokenCallbackInfo>.Unbox
+	|-Nullable<LoginCallbackInfo>.Unbox
+	|-Nullable<SendCustomInviteCallbackInfo>.Unbox
+	|-Nullable<CheckoutCallbackInfo>.Unbox
+	|-Nullable<QueryOwnershipCallbackInfo>.Unbox
+	|-Nullable<QueryOwnershipTokenCallbackInfo>.Unbox
+	|-Nullable<RedeemEntitlementsCallbackInfo>.Unbox
+	|-Nullable<AcceptInviteCallbackInfo>.Unbox
+	|-Nullable<RejectInviteCallbackInfo>.Unbox
+	|-Nullable<SendInviteCallbackInfo>.Unbox
+	|-Nullable<QueryAgeGateCallbackInfo>.Unbox
+	|-Nullable<HardMuteMemberCallbackInfo>.Unbox
+	|-Nullable<EnumerateModsCallbackInfo>.Unbox
+	|-Nullable<QueryFileListCallbackInfo>.Unbox
+	|-Nullable<ReadFileCallbackInfo>.Unbox
+	|-Nullable<WriteFileCallbackInfo>.Unbox
+	|-Nullable<QueryPresenceCallbackInfo>.Unbox
+	|-Nullable<DisconnectedCallbackInfo>.Unbox
+	|-Nullable<JoinRoomCallbackInfo>.Unbox
+	|-Nullable<LeaveRoomCallbackInfo>.Unbox
+	|-Nullable<PlayerSanction>.Unbox
+	|-Nullable<QueryActivePlayerSanctionsCallbackInfo>.Unbox
+	|-Nullable<RegisterPlayersCallbackInfo>.Unbox
+	|-Nullable<UpdateSessionCallbackInfo>.Unbox
+	|-Nullable<IngestStatCompleteCallbackInfo>.Unbox
+	|-Nullable<OnQueryStatsCompleteCallbackInfo>.Unbox
+	|-Nullable<FileMetadata>.Unbox
+	|-Nullable<QueryFileListCallbackInfo>.Unbox
+	|-Nullable<ReadFileCallbackInfo>.Unbox
+	|-Nullable<OnShowBlockPlayerCallbackInfo>.Unbox
+	|-Nullable<OnShowReportPlayerCallbackInfo>.Unbox
+	|-Nullable<ExternalUserInfo>.Unbox
+	|-Nullable<QueryUserInfoCallbackInfo>.Unbox
 	|-Nullable<Option>.Unbox
 	|
-	|-Nullable<ServerInfo>.Unbox
+	|-Nullable<PlayerAchievementInternal>.Unbox
+	|-Nullable<InfoInternal>.Unbox
 	|
+	|-Nullable<UnlockedAchievement>.Unbox
+	|-Nullable<LogGameRoundStartOptions>.Unbox
+	|-Nullable<OnClientActionRequiredCallbackInfo>.Unbox
+	|-Nullable<OnMessageToClientCallbackInfo>.Unbox
+	|-Nullable<PinGrantInfo>.Unbox
+	|-Nullable<FinalizeInviteOptions>.Unbox
+	|-Nullable<OnFriendsUpdateInfo>.Unbox
+	|-Nullable<IntegratedPlatformOptionsContainerAddOptions>.Unbox
+	|-Nullable<HardMuteMemberOptions>.Unbox
+	|-Nullable<JoinLobbyByIdOptions>.Unbox
+	|-Nullable<JoinLobbyOptions>.Unbox
+	|-Nullable<LobbyInviteReceivedCallbackInfo>.Unbox
+	|-Nullable<LobbyMemberStatusReceivedCallbackInfo>.Unbox
+	|-Nullable<RTCRoomConnectionChangedCallbackInfo>.Unbox
+	|-Nullable<AcceptConnectionOptions>.Unbox
+	|-Nullable<ClearPacketQueueOptions>.Unbox
+	|-Nullable<CloseConnectionOptions>.Unbox
+	|-Nullable<FileTransferProgressCallbackInfo>.Unbox
+	|-Nullable<WriteFileDataCallbackInfo>.Unbox
+	|-Nullable<BlockParticipantOptions>.Unbox
+	|-Nullable<SetRoomSettingOptions>.Unbox
+	|-Nullable<QueryJoinRoomTokenOptions>.Unbox
+	|-Nullable<AudioInputStateCallbackInfo>.Unbox
+	|-Nullable<AudioOutputStateCallbackInfo>.Unbox
+	|-Nullable<UpdateParticipantVolumeOptions>.Unbox
+	|-Nullable<UpdateReceivingOptions>.Unbox
+	|-Nullable<JoinSessionOptions>.Unbox
+	|-Nullable<SessionInviteReceivedCallbackInfo>.Unbox
+	|-Nullable<FileTransferProgressCallbackInfo>.Unbox
+	|
+	|-Nullable<UnlockedAchievementInternal>.Unbox
+	|-Nullable<LogPlayerUseAbilityOptions>.Unbox
+	|-Nullable<IdTokenInternal>.Unbox
+	|-Nullable<IdTokenInternal>.Unbox
+	|-Nullable<PermissionStatusInternal>.Unbox
+	|-Nullable<LeaderboardUserScoreInternal>.Unbox
+	|-Nullable<AttributeInternal>.Unbox
+	|-Nullable<ModInfoInternal>.Unbox
+	|-Nullable<UserTokenInternal>.Unbox
+	|-Nullable<AudioInputDeviceInfoInternal>.Unbox
+	|-Nullable<AudioOutputDeviceInfoInternal>.Unbox
+	|-Nullable<SessionDetailsAttributeInternal>.Unbox
 	|-Nullable<CreateItemResult_t>.Unbox
 	|-Nullable<InventoryPurchaseResult>.Unbox
 	|-Nullable<SteamInventoryStartPurchaseResult_t>.Unbox
 	|-Nullable<ResultPage>.Unbox
 	|
-	|-Nullable<EncryptedAppTicketResponse_t>.Unbox
+	|-Nullable<RegisterPeerOptions>.Unbox
 	|
-	|-Nullable<Image>.Unbox
-	|-Nullable<SteamInventoryRequestPricesResult_t>.Unbox
+	|-Nullable<UnregisterPeerOptions>.Unbox
+	|-Nullable<LogPlayerDespawnOptions>.Unbox
+	|-Nullable<UnregisterClientOptions>.Unbox
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptions>.Unbox
+	|-Nullable<CopyLobbyDetailsHandleByUiEventIdOptions>.Unbox
+	|-Nullable<RTCOptions>.Unbox
+	|-Nullable<CopySessionHandleByUiEventIdOptions>.Unbox
+	|-Nullable<PrePresentOptions>.Unbox
+	|-Nullable<ReportKeyEventOptions>.Unbox
+	|-Nullable<SteamId>.Unbox
+	|-Nullable<DateTime>.Unbox
+	|-Nullable<TimeSpan>.Unbox
 	|
+	|-Nullable<LogEventOptions>.Unbox
+	|
+	|-Nullable<LogEventParamPair>.Unbox
+	|-Nullable<LogEventParamPairParamValue>.Unbox
+	|
+	|-Nullable<LogPlayerReviveOptions>.Unbox
+	|-Nullable<LogPlayerSpawnOptions>.Unbox
+	|-Nullable<SetClientDetailsOptions>.Unbox
+	|-Nullable<SetClientNetworkStateOptions>.Unbox
+	|-Nullable<AccountFeatureRestrictedInfoInternal>.Unbox
+	|-Nullable<IOSCredentialsSystemAuthCredentialsOptionsInternal>.Unbox
+	|-Nullable<SetPacketQueueSizeOptions>.Unbox
+	|-Nullable<WindowsRTCOptionsPlatformSpecificOptionsInternal>.Unbox
+	|-Nullable<AcknowledgeEventIdOptions>.Unbox
 	|-Nullable<SetUserItemVoteResult_t>.Unbox
 	|-Nullable<SubmitItemUpdateResult_t>.Unbox
 	|-Nullable<DateTimeOffset>.Unbox
 	|
-	|-Nullable<SteamUGCQueryCompleted_t>.Unbox
+	|-Nullable<LogPlayerTakeDamageOptions>.Unbox
 	|
+	|-Nullable<LogPlayerTickOptions>.Unbox
+	|-Nullable<UserInfoDataInternal>.Unbox
+	|
+	|-Nullable<LogPlayerUseWeaponData>.Unbox
+	|-Nullable<QueryLeaderboardDefinitionsOptions>.Unbox
+	|
+	|-Nullable<LogPlayerUseWeaponOptions>.Unbox
+	|
+	|-Nullable<Quat>.Unbox
+	|-Nullable<QuatInternal>.Unbox
+	|-Nullable<Color>.Unbox
+	|-Nullable<Rect>.Unbox
+	|
+	|-Nullable<Vec3f>.Unbox
+	|-Nullable<Vec3fInternal>.Unbox
+	|-Nullable<PageResult>.Unbox
+	|-Nullable<Token>.Unbox
+	|-Nullable<Vector3>.Unbox
+	|
+	|-Nullable<RegisterClientOptions>.Unbox
+	|
+	|-Nullable<Credentials>.Unbox
+	|-Nullable<LoginOptions>.Unbox
+	|-Nullable<CustomInviteRejectedCallbackInfo>.Unbox
+	|-Nullable<OnCustomInviteAcceptedCallbackInfo>.Unbox
+	|-Nullable<OnCustomInviteReceivedCallbackInfo>.Unbox
+	|-Nullable<Entitlement>.Unbox
+	|-Nullable<LobbyInviteAcceptedCallbackInfo>.Unbox
+	|-Nullable<LobbyInviteRejectedCallbackInfo>.Unbox
+	|-Nullable<ModIdentifier>.Unbox
+	|-Nullable<OnIncomingConnectionRequestInfo>.Unbox
+	|-Nullable<OnIncomingPacketQueueFullInfo>.Unbox
+	|-Nullable<OnPeerConnectionInterruptedInfo>.Unbox
+	|-Nullable<ReadFileOptions>.Unbox
+	|-Nullable<WriteFileOptions>.Unbox
+	|-Nullable<JoinGameAcceptedCallbackInfo>.Unbox
+	|-Nullable<ParticipantUpdatedCallbackInfo>.Unbox
+	|-Nullable<SendAudioOptions>.Unbox
+	|-Nullable<SendPlayerBehaviorReportOptions>.Unbox
+	|-Nullable<SessionInviteAcceptedCallbackInfo>.Unbox
+	|-Nullable<ReadFileOptions>.Unbox
+	|
+	|-Nullable<IOSLoginOptions>.Unbox
+	|-Nullable<AttributeData>.Unbox
+	|-Nullable<CreateLobbyOptions>.Unbox
+	|-Nullable<InstallModOptions>.Unbox
+	|-Nullable<AttributeData>.Unbox
+	|-Nullable<Stat>.Unbox
+	|
+	|-Nullable<LinkAccountCallbackInfo>.Unbox
+	|-Nullable<InstallModCallbackInfo>.Unbox
+	|-Nullable<UninstallModCallbackInfo>.Unbox
+	|-Nullable<UpdateModCallbackInfo>.Unbox
+	|-Nullable<Info>.Unbox
+	|
+	|-Nullable<LoginCallbackInfo>.Unbox
+	|-Nullable<VerifyIdTokenCallbackInfo>.Unbox
+	|
+	|-Nullable<LoginOptions>.Unbox
+	|-Nullable<ExternalAccountInfo>.Unbox
+	|-Nullable<UninstallModOptions>.Unbox
+	|-Nullable<UpdateModOptions>.Unbox
+	|-Nullable<ParticipantStatusChangedCallbackInfo>.Unbox
+	|-Nullable<AudioBeforeRenderCallbackInfo>.Unbox
+	|-Nullable<CreateSessionModificationOptions>.Unbox
+	|-Nullable<SessionDetailsInfo>.Unbox
+	|
+	|-Nullable<PinGrantInfoInternal>.Unbox
+	|-Nullable<CatalogReleaseInternal>.Unbox
+	|-Nullable<FileMetadataInternal>.Unbox
+	|-Nullable<PlayerSanctionInternal>.Unbox
+	|-Nullable<ActiveSessionInfoInternal>.Unbox
+	|-Nullable<SessionDetailsInfoInternal>.Unbox
+	|-Nullable<SessionDetailsSettingsInternal>.Unbox
+	|-Nullable<StatInternal>.Unbox
+	|-Nullable<RenderTargetIdentifier>.Unbox
+	|
+	|-Nullable<ExternalAccountInfoInternal>.Unbox
+	|-Nullable<EntitlementInternal>.Unbox
+	|-Nullable<DefinitionInternal>.Unbox
+	|-Nullable<ModIdentifierInternal>.Unbox
+	|-Nullable<PacketQueueInfo>.Unbox
+	|-Nullable<InitializeThreadAffinity>.Unbox
+	|
+	|-Nullable<VerifyIdTokenCallbackInfo>.Unbox
+	|
+	|-Nullable<CatalogOffer>.Unbox
+	|
+	|-Nullable<CatalogOfferInternal>.Unbox
+	|
+	|-Nullable<KeyImageInfoInternal>.Unbox
+	|-Nullable<LeaderboardRecordInternal>.Unbox
+	|-Nullable<AttributeDataInternal>.Unbox
+	|-Nullable<AudioBufferInternal>.Unbox
+	|-Nullable<AttributeDataInternal>.Unbox
+	|-Nullable<FileMetadataInternal>.Unbox
+	|-Nullable<ExternalUserInfoInternal>.Unbox
 	|-Nullable<Friend.FriendGameInfo>.Unbox
 	|
+	|-Nullable<CreateUserCallbackInfo>.Unbox
+	|-Nullable<QueryJoinRoomTokenCompleteCallbackInfo>.Unbox
+	|-Nullable<UpdateReceivingVolumeCallbackInfo>.Unbox
+	|-Nullable<UpdateSendingCallbackInfo>.Unbox
+	|-Nullable<UpdateSendingVolumeCallbackInfo>.Unbox
+	|-Nullable<QueryUserInfoByDisplayNameCallbackInfo>.Unbox
+	|
+	|-Nullable<QueryPermissionsCallbackInfo>.Unbox
+	|-Nullable<BlockParticipantCallbackInfo>.Unbox
+	|-Nullable<UpdateParticipantVolumeCallbackInfo>.Unbox
+	|-Nullable<UpdateReceivingCallbackInfo>.Unbox
+	|-Nullable<QueryUserInfoByExternalAccountCallbackInfo>.Unbox
+	|
+	|-Nullable<Definition>.Unbox
+	|-Nullable<QueryLeaderboardUserScoresOptions>.Unbox
+	|-Nullable<SendPacketOptions>.Unbox
+	|-Nullable<QueryStatsOptions>.Unbox
+	|
+	|-Nullable<AttributeDataValue>.Unbox
+	|-Nullable<AttributeDataValue>.Unbox
+	|
+	|-Nullable<LobbyDetailsInfoInternal>.Unbox
+	|
+	|-Nullable<LocalRTCOptions>.Unbox
+	|-Nullable<PageQuery>.Unbox
+	|-Nullable<GetDesktopCrossplayStatusInfo>.Unbox
+	|-Nullable<CopyUserTokenByIndexOptions>.Unbox
 	|-Nullable<InventoryResult>.Unbox
 	|-Nullable<ValueTuple<Int32Enum, float>>.Unbox
 	|
-	|-Nullable<SteamId>.Unbox
-	|-Nullable<DateTime>.Unbox
-	|-Nullable<TimeSpan>.Unbox
+	|-Nullable<BeginPlayerSessionOptions>.Unbox
+	|-Nullable<FileMetadata>.Unbox
+	|
+	|-Nullable<SetPortRangeOptions>.Unbox
+	|
+	|-Nullable<AndroidInitializeOptions>.Unbox
+	|
+	|-Nullable<InitializeOptions>.Unbox
+	|
+	|-Nullable<Options>.Unbox
+	|
+	|-Nullable<WindowsOptions>.Unbox
+	|
+	|-Nullable<PieMenu.MenuOption.ColorMode>.Unbox
+	|
+	|-Nullable<ServerInfo>.Unbox
+	|
+	|-Nullable<SteamUGCQueryCompleted_t>.Unbox
 	|
 	|-Nullable<Item>.Unbox
 	|
@@ -4829,8 +14517,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<short>.Unbox
 	|-Nullable<ushort>.Unbox
 	|
-	|-Nullable<DataKey>.Unbox
-	|
 	|-Nullable<Decimal>.Unbox
 	|-Nullable<Guid>.Unbox
 	|
@@ -4841,19 +14527,12 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<uint>.Unbox
 	|
 	|-Nullable<long>.Unbox
+	|-Nullable<IntPtr>.Unbox
 	|-Nullable<ulong>.Unbox
-	|
-	|-Nullable<Token>.Unbox
-	|-Nullable<Vector3>.Unbox
 	|
 	|-Nullable<float>.Unbox
 	|
-	|-Nullable<Color>.Unbox
-	|-Nullable<Rect>.Unbox
-	|
 	|-Nullable<Ray>.Unbox
-	|
-	|-Nullable<RenderTargetIdentifier>.Unbox
 	|
 	|-Nullable<Vector2>.Unbox
 	*/
@@ -5360,88 +15039,88 @@ public sealed class ConditionalWeakTable<TKey, TValue> // TypeDefIndex: 1315
 public struct DictionaryEntry // TypeDefIndex: 1373
 {
 
-[ComVisibleAttribute] 
 [CLSCompliantAttribute] 
 [GuidAttribute] 
 [InterfaceTypeAttribute] 
+[ComVisibleAttribute] 
 public interface _Assembly
 
-[InterfaceTypeAttribute] 
-[CLSCompliantAttribute] 
 [GuidAttribute] 
 [ComVisibleAttribute] 
+[InterfaceTypeAttribute] 
+[CLSCompliantAttribute] 
 public interface _AssemblyName
 
-[CLSCompliantAttribute] 
 [InterfaceTypeAttribute] 
 [ComVisibleAttribute] 
 [GuidAttribute] 
+[CLSCompliantAttribute] 
 public interface _ConstructorInfo
 
-[ComVisibleAttribute] 
 [InterfaceTypeAttribute] 
+[ComVisibleAttribute] 
 [GuidAttribute] 
 [CLSCompliantAttribute] 
 public interface _EventInfo
 
 [GuidAttribute] 
+[InterfaceTypeAttribute] 
 [ComVisibleAttribute] 
 [CLSCompliantAttribute] 
-[InterfaceTypeAttribute] 
 public interface _Exception
 
-[ComVisibleAttribute] 
+[InterfaceTypeAttribute] 
 [GuidAttribute] 
 [CLSCompliantAttribute] 
-[InterfaceTypeAttribute] 
+[ComVisibleAttribute] 
 public interface _FieldInfo
 
-[ComVisibleAttribute] 
-[GuidAttribute] 
 [InterfaceTypeAttribute] 
+[GuidAttribute] 
+[ComVisibleAttribute] 
 [CLSCompliantAttribute] 
 public interface _MemberInfo
 
-[CLSCompliantAttribute] 
-[GuidAttribute] 
-[InterfaceTypeAttribute] 
 [ComVisibleAttribute] 
+[InterfaceTypeAttribute] 
+[GuidAttribute] 
+[CLSCompliantAttribute] 
 public interface _MethodBase
 
-[CLSCompliantAttribute] 
 [ComVisibleAttribute] 
-[GuidAttribute] 
 [InterfaceTypeAttribute] 
+[GuidAttribute] 
+[CLSCompliantAttribute] 
 public interface _MethodInfo
 
-[ComVisibleAttribute] 
-[CLSCompliantAttribute] 
-[GuidAttribute] 
 [InterfaceTypeAttribute] 
+[ComVisibleAttribute] 
+[GuidAttribute] 
+[CLSCompliantAttribute] 
 public interface _Module
 
-[GuidAttribute] 
 [InterfaceTypeAttribute] 
-[ComVisibleAttribute] 
+[GuidAttribute] 
 [CLSCompliantAttribute] 
+[ComVisibleAttribute] 
 public interface _ParameterInfo
 
+[GuidAttribute] 
 [CLSCompliantAttribute] 
 [ComVisibleAttribute] 
 [InterfaceTypeAttribute] 
-[GuidAttribute] 
 public interface _PropertyInfo
 
-[CLSCompliantAttribute] 
-[InterfaceTypeAttribute] 
 [GuidAttribute] 
 [ComVisibleAttribute] 
+[CLSCompliantAttribute] 
+[InterfaceTypeAttribute] 
 public interface _Thread
 
-[ComVisibleAttribute] 
 [CLSCompliantAttribute] 
-[GuidAttribute] 
+[ComVisibleAttribute] 
 [InterfaceTypeAttribute] 
+[GuidAttribute] 
 public interface _Type
 
 [Serializable]
@@ -5659,10 +15338,10 @@ private class ListDictionaryInternal.DictionaryNode // TypeDefIndex: 1412
 public class Collection<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IList, ICollection, IReadOnlyList<T>, IReadOnlyCollection<T> // TypeDefIndex: 1426
 {
 
-[DefaultMemberAttribute] 
-[DebuggerTypeProxyAttribute] 
 [ComVisibleAttribute] 
 [DebuggerDisplayAttribute] 
+[DefaultMemberAttribute] 
+[DebuggerTypeProxyAttribute] 
 [Serializable]
 public class Collection<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IList, ICollection, IReadOnlyList<T>, IReadOnlyCollection<T>
 	private IList<T> items; 
@@ -6119,6 +15798,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>..ctor
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>..ctor
 	|-ReadOnlyCollection<EntityRef<object>>..ctor
+	|-ReadOnlyCollection<PlayerStatInfoInternal>..ctor
+	|-ReadOnlyCollection<StatThresholdsInternal>..ctor
+	|-ReadOnlyCollection<ItemOwnershipInternal>..ctor
+	|-ReadOnlyCollection<ModIdentifierInternal>..ctor
+	|-ReadOnlyCollection<DataRecordInternal>..ctor
+	|-ReadOnlyCollection<ParticipantMetadataInternal>..ctor
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-ReadOnlyCollection<BurstCloth.Chain>..ctor
 	|-ReadOnlyCollection<CapsuleParams>..ctor
@@ -6292,6 +15977,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.get_Count
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.get_Count
 	|-ReadOnlyCollection<EntityRef<object>>.get_Count
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.get_Count
+	|-ReadOnlyCollection<StatThresholdsInternal>.get_Count
+	|-ReadOnlyCollection<ItemOwnershipInternal>.get_Count
+	|-ReadOnlyCollection<ModIdentifierInternal>.get_Count
+	|-ReadOnlyCollection<DataRecordInternal>.get_Count
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.get_Count
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.get_Count
 	|-ReadOnlyCollection<BurstCloth.Chain>.get_Count
 	|-ReadOnlyCollection<CapsuleParams>.get_Count
@@ -6478,6 +16169,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.get_Item
 	|-ReadOnlyCollection<Chat.MuteEntry>.get_Item
 	|-ReadOnlyCollection<ERChildsSO>.get_Item
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.get_Item
+	|-ReadOnlyCollection<StatThresholdsInternal>.get_Item
+	|-ReadOnlyCollection<ItemOwnershipInternal>.get_Item
+	|-ReadOnlyCollection<DataRecordInternal>.get_Item
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.get_Item
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.get_Item
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.get_Item
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.get_Item
@@ -6590,8 +16286,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<ERVSData>.get_Item
 	|-ReadOnlyCollection<SqliteKeyReader.KeyInfo>.get_Item
 	|
-	|-ReadOnlyCollection<BoneData>.get_Item
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.get_Item
 	|-ReadOnlyCollection<Tick.Entry>.get_Item
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.get_Item
 	|-ReadOnlyCollection<MeshInstance>.get_Item
@@ -6600,6 +16295,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.get_Item
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.get_Item
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.get_Item
+	|
+	|-ReadOnlyCollection<BoneData>.get_Item
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.get_Item
 	|
@@ -6638,6 +16335,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.Contains
 	|-ReadOnlyCollection<Chat.MuteEntry>.Contains
 	|-ReadOnlyCollection<ERChildsSO>.Contains
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.Contains
+	|-ReadOnlyCollection<StatThresholdsInternal>.Contains
+	|-ReadOnlyCollection<ItemOwnershipInternal>.Contains
+	|-ReadOnlyCollection<DataRecordInternal>.Contains
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.Contains
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.Contains
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.Contains
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.Contains
@@ -6769,8 +16471,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<DemoShotFloatKeyframe>.Contains
 	|-ReadOnlyCollection<Vector2>.Contains
 	|
-	|-ReadOnlyCollection<BoneData>.Contains
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.Contains
 	|-ReadOnlyCollection<Tick.Entry>.Contains
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.Contains
 	|-ReadOnlyCollection<MeshInstance>.Contains
@@ -6779,6 +16480,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.Contains
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.Contains
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Contains
+	|
+	|-ReadOnlyCollection<BoneData>.Contains
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.Contains
 	|
@@ -6861,6 +16564,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.CopyTo
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.CopyTo
 	|-ReadOnlyCollection<EntityRef<object>>.CopyTo
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.CopyTo
+	|-ReadOnlyCollection<StatThresholdsInternal>.CopyTo
+	|-ReadOnlyCollection<ItemOwnershipInternal>.CopyTo
+	|-ReadOnlyCollection<ModIdentifierInternal>.CopyTo
+	|-ReadOnlyCollection<DataRecordInternal>.CopyTo
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.CopyTo
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.CopyTo
 	|-ReadOnlyCollection<BurstCloth.Chain>.CopyTo
 	|-ReadOnlyCollection<CapsuleParams>.CopyTo
@@ -7032,6 +16741,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.GetEnumerator
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.GetEnumerator
 	|-ReadOnlyCollection<EntityRef<object>>.GetEnumerator
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.GetEnumerator
+	|-ReadOnlyCollection<StatThresholdsInternal>.GetEnumerator
+	|-ReadOnlyCollection<ItemOwnershipInternal>.GetEnumerator
+	|-ReadOnlyCollection<ModIdentifierInternal>.GetEnumerator
+	|-ReadOnlyCollection<DataRecordInternal>.GetEnumerator
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.GetEnumerator
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.GetEnumerator
 	|-ReadOnlyCollection<BurstCloth.Chain>.GetEnumerator
 	|-ReadOnlyCollection<CapsuleParams>.GetEnumerator
@@ -7181,6 +16896,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.IndexOf
 	|-ReadOnlyCollection<Chat.MuteEntry>.IndexOf
 	|-ReadOnlyCollection<ERChildsSO>.IndexOf
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.IndexOf
+	|-ReadOnlyCollection<StatThresholdsInternal>.IndexOf
+	|-ReadOnlyCollection<ItemOwnershipInternal>.IndexOf
+	|-ReadOnlyCollection<DataRecordInternal>.IndexOf
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.IndexOf
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.IndexOf
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.IndexOf
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.IndexOf
@@ -7312,8 +17032,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<DemoShotFloatKeyframe>.IndexOf
 	|-ReadOnlyCollection<Vector2>.IndexOf
 	|
-	|-ReadOnlyCollection<BoneData>.IndexOf
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.IndexOf
 	|-ReadOnlyCollection<Tick.Entry>.IndexOf
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.IndexOf
 	|-ReadOnlyCollection<MeshInstance>.IndexOf
@@ -7322,6 +17041,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.IndexOf
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.IndexOf
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.IndexOf
+	|
+	|-ReadOnlyCollection<BoneData>.IndexOf
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.IndexOf
 	|
@@ -7404,6 +17125,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -7551,6 +17278,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Chat.MuteEntry>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<ERChildsSO>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.System.Collections.Generic.IList<T>.get_Item
@@ -7696,8 +17428,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<ERVSData>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<SqliteKeyReader.KeyInfo>.System.Collections.Generic.IList<T>.get_Item
 	|
-	|-ReadOnlyCollection<BoneData>.System.Collections.Generic.IList<T>.get_Item
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Tick.Entry>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<MeshInstance>.System.Collections.Generic.IList<T>.get_Item
@@ -7706,6 +17437,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.Generic.IList<T>.get_Item
+	|
+	|-ReadOnlyCollection<BoneData>.System.Collections.Generic.IList<T>.get_Item
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.System.Collections.Generic.IList<T>.get_Item
 	|
@@ -7766,6 +17499,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.IList<T>.set_Item
@@ -7935,6 +17674,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.ICollection<T>.Add
@@ -8104,6 +17849,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.ICollection<T>.Clear
@@ -8273,6 +18024,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.IList<T>.Insert
@@ -8442,6 +18199,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.ICollection<T>.Remove
@@ -8611,6 +18374,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.IList<T>.RemoveAt
@@ -8807,6 +18576,18 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -9140,6 +18921,18 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.ICollection.get_SyncRoot
@@ -9472,6 +19265,18 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.ICollection.CopyTo
 	|
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.ICollection.CopyTo
+	|
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.ICollection.CopyTo
 	|
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.ICollection.CopyTo
@@ -9776,6 +19581,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.get_IsFixedSize
@@ -9945,6 +19756,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.get_IsReadOnly
@@ -10092,6 +19909,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Chat.MuteEntry>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<ERChildsSO>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.System.Collections.IList.get_Item
@@ -10224,8 +20046,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<ERVSData>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<SqliteKeyReader.KeyInfo>.System.Collections.IList.get_Item
 	|
-	|-ReadOnlyCollection<BoneData>.System.Collections.IList.get_Item
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Tick.Entry>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<MeshInstance>.System.Collections.IList.get_Item
@@ -10234,6 +20055,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.get_Item
+	|
+	|-ReadOnlyCollection<BoneData>.System.Collections.IList.get_Item
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.get_Item
 	|
@@ -10312,6 +20135,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.set_Item
@@ -10481,6 +20310,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.Add
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.Add
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.Add
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.Add
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.Add
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.Add
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.Add
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.Add
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.Add
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Add
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.Add
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.Add
@@ -10650,6 +20485,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.Clear
@@ -10797,6 +20638,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<Chat.MuteEntry>.IsCompatibleObject
 	|-ReadOnlyCollection<ERChildsSO>.IsCompatibleObject
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.IsCompatibleObject
+	|-ReadOnlyCollection<StatThresholdsInternal>.IsCompatibleObject
+	|-ReadOnlyCollection<ItemOwnershipInternal>.IsCompatibleObject
+	|-ReadOnlyCollection<DataRecordInternal>.IsCompatibleObject
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.IsCompatibleObject
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.IsCompatibleObject
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.IsCompatibleObject
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.IsCompatibleObject
@@ -10922,8 +20768,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<ERVSData>.IsCompatibleObject
 	|-ReadOnlyCollection<SqliteKeyReader.KeyInfo>.IsCompatibleObject
 	|
-	|-ReadOnlyCollection<BoneData>.IsCompatibleObject
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.IsCompatibleObject
 	|-ReadOnlyCollection<Tick.Entry>.IsCompatibleObject
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.IsCompatibleObject
 	|-ReadOnlyCollection<MeshInstance>.IsCompatibleObject
@@ -10932,6 +20777,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.IsCompatibleObject
+	|
+	|-ReadOnlyCollection<BoneData>.IsCompatibleObject
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.IsCompatibleObject
 	|
@@ -10996,6 +20843,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Chat.MuteEntry>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<ERChildsSO>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.System.Collections.IList.Contains
@@ -11129,8 +20981,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<DemoShotFloatKeyframe>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Vector2>.System.Collections.IList.Contains
 	|
-	|-ReadOnlyCollection<BoneData>.System.Collections.IList.Contains
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Tick.Entry>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<MeshInstance>.System.Collections.IList.Contains
@@ -11139,6 +20990,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.Contains
+	|
+	|-ReadOnlyCollection<BoneData>.System.Collections.IList.Contains
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.Contains
 	|
@@ -11195,6 +21048,11 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Chat.MuteEntry>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<ERChildsSO>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<LocalClock.TimedEvent>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<MapView.MapMarkerCluster>.System.Collections.IList.IndexOf
@@ -11328,8 +21186,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<DemoShotFloatKeyframe>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Vector2>.System.Collections.IList.IndexOf
 	|
-	|-ReadOnlyCollection<BoneData>.System.Collections.IList.IndexOf
-	|
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Tick.Entry>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Gibbable.OverrideMesh>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<MeshInstance>.System.Collections.IList.IndexOf
@@ -11338,6 +21195,8 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.IndexOf
+	|
+	|-ReadOnlyCollection<BoneData>.System.Collections.IList.IndexOf
 	|
 	|-ReadOnlyCollection<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.IndexOf
 	|
@@ -11416,6 +21275,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.Insert
@@ -11585,6 +21450,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.Remove
@@ -11754,6 +21625,12 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<NormalPairs>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<EngineDamageOverTime.RecentDamage>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<EntityRef<object>>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<PlayerStatInfoInternal>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<StatThresholdsInternal>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<ItemOwnershipInternal>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<ModIdentifierInternal>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<DataRecordInternal>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<ParticipantMetadataInternal>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<BurstCloth.Chain>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.RemoveAt
@@ -12752,8 +22629,8 @@ private sealed class ConcurrentDictionary.<GetEnumerator>d__32<TKey, TValue> : I
 public class ConcurrentQueue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T> // TypeDefIndex: 1436
 {
 
-[DebuggerTypeProxyAttribute] 
 [DebuggerDisplayAttribute] 
+[DebuggerTypeProxyAttribute] 
 [Serializable]
 public class ConcurrentQueue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyCollection<T>
 	private object _crossSegmentLock; 
@@ -13141,11 +23018,15 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<long, long>..ctor
 	|-KeyValuePair<long, ulong>..ctor
+	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>..ctor
 	|-KeyValuePair<ulong, long>..ctor
 	|-KeyValuePair<ulong, ulong>..ctor
 	|
 	|-KeyValuePair<long, float>..ctor
 	|-KeyValuePair<ulong, float>..ctor
+	|
+	|-KeyValuePair<IntPtr, Helper.Allocation>..ctor
+	|-KeyValuePair<ulong, Chat.MuteEntry>..ctor
 	|
 	|-KeyValuePair<object, CameraMan.CameraState>..ctor
 	|
@@ -13209,8 +23090,6 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<ulong, AvatarCache.Entry>..ctor
 	|
-	|-KeyValuePair<ulong, Chat.MuteEntry>..ctor
-	|
 	|-KeyValuePair<ulong, Dispatch.ResultCallback>..ctor
 	|
 	|-KeyValuePair<ViewModelDrawEvent, int>..ctor
@@ -13226,6 +23105,7 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<MusicTheme.PositionedClip, MusicManager.ClipPlaybackData>.get_Key
 	|-KeyValuePair<JsonProperty, JsonSerializerInternalReader.PropertyPresence>.get_Key
 	|-KeyValuePair<SoundDefinition, List<Sound>>.get_Key
+	|-KeyValuePair<IntPtr, Helper.DelegateHolder>.get_Key
 	|-KeyValuePair<IPAddress, int>.get_Key
 	|-KeyValuePair<string, CameraMan.CameraState>.get_Key
 	|-KeyValuePair<string, Input.Button>.get_Key
@@ -13279,6 +23159,8 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<long, ushort>.get_Key
 	|-KeyValuePair<long, uint>.get_Key
 	|-KeyValuePair<long, ulong>.get_Key
+	|-KeyValuePair<IntPtr, Helper.Allocation>.get_Key
+	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>.get_Key
 	|-KeyValuePair<IntPtr, object>.get_Key
 	|-KeyValuePair<object, CameraMan.CameraState>.get_Key
 	|-KeyValuePair<object, PlayerModelHair.RendererMaterials>.get_Key
@@ -13504,6 +23386,8 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<int, GameObject>.get_Value
 	|-KeyValuePair<int, CommandBuffer>.get_Value
 	|-KeyValuePair<int, Panel>.get_Value
+	|-KeyValuePair<IntPtr, Helper.DelegateHolder>.get_Value
+	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>.get_Value
 	|-KeyValuePair<string, Input.Button>.get_Value
 	|-KeyValuePair<string, JSONNode>.get_Value
 	|-KeyValuePair<string, Value>.get_Value
@@ -13752,6 +23636,7 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<int, ViewModelDrawEvent>.get_Value
 	|
+	|-KeyValuePair<IntPtr, Helper.Allocation>.get_Value
 	|-KeyValuePair<object, PlayerModelHair.RendererMaterials>.get_Value
 	|-KeyValuePair<ulong, Chat.MuteEntry>.get_Value
 	|
@@ -13958,12 +23843,16 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<long, long>.ToString
 	|-KeyValuePair<long, ulong>.ToString
+	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>.ToString
 	|-KeyValuePair<ulong, long>.ToString
 	|-KeyValuePair<ulong, ulong>.ToString
 	|
 	|-KeyValuePair<long, float>.ToString
 	|-KeyValuePair<ulong, float>.ToString
 	|-KeyValuePair<ulong, TimeSince>.ToString
+	|
+	|-KeyValuePair<IntPtr, Helper.Allocation>.ToString
+	|-KeyValuePair<ulong, Chat.MuteEntry>.ToString
 	|
 	|-KeyValuePair<object, CameraMan.CameraState>.ToString
 	|
@@ -14016,8 +23905,6 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<float, object>.ToString
 	|
 	|-KeyValuePair<float, float>.ToString
-	|
-	|-KeyValuePair<ulong, Chat.MuteEntry>.ToString
 	|
 	|-KeyValuePair<ViewModelDrawEvent, int>.ToString
 	*/
@@ -14220,6 +24107,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ulong>..ctor
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>..ctor
 	|-Dictionary<long, TMP_MaterialManager.FallbackMaterial>..ctor
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary<IntPtr, Helper.DelegateHolder>..ctor
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<IPAddress, int>..ctor
 	|-Dictionary<IPEndPoint, int>..ctor
@@ -14260,6 +24150,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<float, WaitForSeconds>..ctor
 	|-Dictionary<string, CameraMan.CameraState>..ctor
 	|-Dictionary<string, ConsoleSystem.Command>..ctor
+	|-Dictionary<string, Helper.DelegateHolder>..ctor
 	|-Dictionary<string, JSONNode>..ctor
 	|-Dictionary<string, Value>..ctor
 	|-Dictionary<string, ReflectionMember>..ctor
@@ -14530,6 +24421,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>..ctor
 	|-Dictionary<long, uint>..ctor
 	|-Dictionary<long, ulong>..ctor
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<object, CameraMan.CameraState>..ctor
@@ -14715,6 +24608,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>..ctor
 	|-Dictionary<long, uint>..ctor
 	|-Dictionary<long, ulong>..ctor
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<object, CameraMan.CameraState>..ctor
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>..ctor
@@ -15010,6 +24905,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>..ctor
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary<IntPtr, object>..ctor
 	|
 	|-Dictionary<object, CameraMan.CameraState>..ctor
@@ -15262,6 +25161,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>..ctor
 	|-Dictionary<long, uint>..ctor
 	|-Dictionary<long, ulong>..ctor
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<object, CameraMan.CameraState>..ctor
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>..ctor
@@ -15534,6 +25435,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>..ctor
 	|
 	|-Dictionary<long, ulong>..ctor
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|
 	|-Dictionary<IntPtr, object>..ctor
 	|
@@ -15883,6 +25788,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>..ctor
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>..ctor
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary<IntPtr, object>..ctor
 	|
 	|-Dictionary<object, CameraMan.CameraState>..ctor
@@ -16136,6 +26045,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Comparer
 	|-Dictionary<long, uint>.get_Comparer
 	|-Dictionary<long, ulong>.get_Comparer
+	|-Dictionary<IntPtr, Helper.Allocation>.get_Comparer
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Comparer
 	|-Dictionary<IntPtr, object>.get_Comparer
 	|-Dictionary<object, CameraMan.CameraState>.get_Comparer
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.get_Comparer
@@ -16318,6 +26229,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Count
 	|-Dictionary<long, uint>.get_Count
 	|-Dictionary<long, ulong>.get_Count
+	|-Dictionary<IntPtr, Helper.Allocation>.get_Count
+	|-Dictionary<IntPtr, Helper.DelegateHolder>.get_Count
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Count
 	|-Dictionary<IntPtr, object>.get_Count
 	|-Dictionary<IPEndPoint, int>.get_Count
 	|-Dictionary<object, CameraMan.CameraState>.get_Count
@@ -16527,6 +26441,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Keys
 	|-Dictionary<long, uint>.get_Keys
 	|-Dictionary<long, ulong>.get_Keys
+	|-Dictionary<IntPtr, Helper.Allocation>.get_Keys
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Keys
 	|-Dictionary<IntPtr, object>.get_Keys
 	|-Dictionary<object, CameraMan.CameraState>.get_Keys
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.get_Keys
@@ -16707,6 +26623,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, uint>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, ulong>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
@@ -16904,6 +26822,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Values
 	|-Dictionary<long, uint>.get_Values
 	|-Dictionary<long, ulong>.get_Values
+	|-Dictionary<IntPtr, Helper.Allocation>.get_Values
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Values
 	|-Dictionary<IntPtr, object>.get_Values
 	|-Dictionary<object, CameraMan.CameraState>.get_Values
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.get_Values
@@ -17082,6 +27002,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, uint>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, ulong>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
@@ -17245,6 +27167,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, SqliteFunction.AggregateData>.get_Item
 	|-Dictionary<long, object>.get_Item
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Item
 	|
 	|-Dictionary<string, bool>.get_Item
 	|-Dictionary<VehicleChassisVisuals.ClientWheelData<ModularCar>, bool>.get_Item
@@ -17451,6 +27375,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.get_Item
 	|
 	|-Dictionary<long, ulong>.get_Item
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.get_Item
 	|
 	|-Dictionary<IntPtr, object>.get_Item
 	|
@@ -17671,6 +27597,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.set_Item
 	|-Dictionary<long, uint>.set_Item
 	|-Dictionary<long, ulong>.set_Item
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.set_Item
 	|-Dictionary<IntPtr, object>.set_Item
 	|-Dictionary<IPAddress, int>.set_Item
 	|-Dictionary<object, InputActionSetHandle_t>.set_Item
@@ -17839,6 +27766,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.set_Item
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.set_Item
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.set_Item
 	|-Dictionary<ulong, Chat.MuteEntry>.set_Item
 	|
@@ -17954,6 +27882,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ulong>.Add
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.Add
 	|-Dictionary<long, TMP_MaterialManager.FallbackMaterial>.Add
+	|-Dictionary<IntPtr, Helper.DelegateHolder>.Add
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Add
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>.Add
 	|-Dictionary<IntPtr, object>.Add
 	|-Dictionary<IPAddress, int>.Add
@@ -17973,6 +27903,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<object, uint>.Add
 	|-Dictionary<object, ulong>.Add
 	|-Dictionary<string, ConsoleSystem.Command>.Add
+	|-Dictionary<string, Helper.DelegateHolder>.Add
 	|-Dictionary<string, JSONNode>.Add
 	|-Dictionary<string, ItemDefinition>.Add
 	|-Dictionary<string, AIDesign>.Add
@@ -18190,6 +28121,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.Add
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.Add
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.Add
 	|-Dictionary<ulong, Chat.MuteEntry>.Add
 	|-Dictionary<Renderer, PlayerModelHair.RendererMaterials>.Add
@@ -18382,6 +28314,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<long, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
@@ -18401,10 +28334,11 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<object, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<ulong, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
-	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|
+	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
 	|-Dictionary<object, Vector3>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
@@ -18630,14 +28564,16 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<object, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<ulong, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
-	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|
+	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
 	|-Dictionary<object, Vector3>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
@@ -18869,14 +28805,16 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<object, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<ulong, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
-	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|
+	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
 	|-Dictionary<object, Vector3>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
@@ -19021,6 +28959,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.Clear
 	|-Dictionary<long, ulong>.Clear
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.Clear
+	|-Dictionary<IntPtr, Helper.Allocation>.Clear
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Clear
 	|-Dictionary<IntPtr, object>.Clear
 	|-Dictionary<IPAddress, int>.Clear
 	|-Dictionary<object, CameraMan.CameraState>.Clear
@@ -19221,6 +29161,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.ContainsKey
 	|-Dictionary<long, ulong>.ContainsKey
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.ContainsKey
+	|-Dictionary<IntPtr, Helper.Allocation>.ContainsKey
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.ContainsKey
 	|-Dictionary<IntPtr, object>.ContainsKey
 	|-Dictionary<object, CameraMan.CameraState>.ContainsKey
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.ContainsKey
@@ -19570,6 +29512,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<ushort, bool>.ContainsValue
 	|
 	|-Dictionary<int, FoliageKey>.ContainsValue
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.ContainsValue
 	|-Dictionary<object, InputActionSetHandle_t>.ContainsValue
 	|-Dictionary<object, InputAnalogActionHandle_t>.ContainsValue
 	|-Dictionary<object, InputDigitalActionHandle_t>.ContainsValue
@@ -19593,6 +29536,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.ContainsValue
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.ContainsValue
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.ContainsValue
 	|-Dictionary<ulong, Chat.MuteEntry>.ContainsValue
 	|
@@ -19797,6 +29741,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.CopyTo
 	|
 	|-Dictionary<long, ulong>.CopyTo
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.CopyTo
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.CopyTo
 	|
 	|-Dictionary<IntPtr, object>.CopyTo
 	|
@@ -20045,6 +29993,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.GetEnumerator
 	|-Dictionary<long, uint>.GetEnumerator
 	|-Dictionary<long, ulong>.GetEnumerator
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary<IntPtr, object>.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.GetEnumerator
@@ -20128,6 +30077,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.GetEnumerator
+	|-Dictionary<IntPtr, Helper.Allocation>.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.GetEnumerator
 	|
@@ -20235,6 +30185,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, uint>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, ulong>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
@@ -20291,6 +30242,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|
@@ -20575,6 +30527,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.GetObjectData
 	|
 	|-Dictionary<long, ulong>.GetObjectData
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.GetObjectData
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.GetObjectData
 	|
 	|-Dictionary<IntPtr, object>.GetObjectData
 	|
@@ -20924,6 +30880,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.FindEntry
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.FindEntry
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.FindEntry
+	|
 	|-Dictionary<IntPtr, object>.FindEntry
 	|
 	|-Dictionary<object, CameraMan.CameraState>.FindEntry
@@ -21272,6 +31232,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.Initialize
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.Initialize
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Initialize
+	|
 	|-Dictionary<IntPtr, object>.Initialize
 	|
 	|-Dictionary<object, CameraMan.CameraState>.Initialize
@@ -21619,6 +31583,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.TryInsert
 	|
 	|-Dictionary<long, ulong>.TryInsert
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.TryInsert
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.TryInsert
 	|
 	|-Dictionary<IntPtr, object>.TryInsert
 	|
@@ -21969,6 +31937,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.OnDeserialization
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.OnDeserialization
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.OnDeserialization
+	|
 	|-Dictionary<IntPtr, object>.OnDeserialization
 	|
 	|-Dictionary<object, CameraMan.CameraState>.OnDeserialization
@@ -22316,6 +32288,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.Resize
 	|
 	|-Dictionary<long, ulong>.Resize
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.Resize
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Resize
 	|
 	|-Dictionary<IntPtr, object>.Resize
 	|
@@ -22665,6 +32641,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.Resize
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.Resize
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Resize
+	|
 	|-Dictionary<IntPtr, object>.Resize
 	|
 	|-Dictionary<object, CameraMan.CameraState>.Resize
@@ -22829,6 +32809,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<DataRow, DataRowView>.Remove
 	|-Dictionary<IPEndPoint, Task<Dictionary<string, string>>>.Remove
 	|-Dictionary<object, object>.Remove
+	|-Dictionary<string, Helper.DelegateHolder>.Remove
 	|-Dictionary<string, JToken>.Remove
 	|-Dictionary<string, List<Connection>>.Remove
 	|-Dictionary<string, List<PrefabData>>.Remove
@@ -23060,8 +33041,13 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.Remove
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.Remove
+	|
+	|-Dictionary<IntPtr, Helper.DelegateHolder>.Remove
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>.Remove
 	|-Dictionary<IntPtr, object>.Remove
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Remove
 	|
 	|-Dictionary<IPAddress, int>.Remove
 	|-Dictionary<object, int>.Remove
@@ -23269,11 +33255,13 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, object>.TryGetValue
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.TryGetValue
 	|-Dictionary<long, TMP_MaterialManager.FallbackMaterial>.TryGetValue
+	|-Dictionary<IntPtr, Helper.DelegateHolder>.TryGetValue
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>.TryGetValue
 	|-Dictionary<IntPtr, object>.TryGetValue
 	|-Dictionary<IPEndPoint, Task<Dictionary<string, string>>>.TryGetValue
 	|-Dictionary<object, object>.TryGetValue
 	|-Dictionary<string, ConsoleSystem.Command>.TryGetValue
+	|-Dictionary<string, Helper.DelegateHolder>.TryGetValue
 	|-Dictionary<string, ItemDefinition>.TryGetValue
 	|-Dictionary<string, SimpleCollator>.TryGetValue
 	|-Dictionary<string, JToken>.TryGetValue
@@ -23453,6 +33441,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, double>.TryGetValue
 	|-Dictionary<long, long>.TryGetValue
 	|-Dictionary<long, ulong>.TryGetValue
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.TryGetValue
 	|-Dictionary<object, InputActionSetHandle_t>.TryGetValue
 	|-Dictionary<object, InputAnalogActionHandle_t>.TryGetValue
 	|-Dictionary<object, InputDigitalActionHandle_t>.TryGetValue
@@ -23558,6 +33547,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<ulong, short>.TryGetValue
 	|-Dictionary<ulong, ushort>.TryGetValue
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.TryGetValue
+	|-Dictionary<ulong, Chat.MuteEntry>.TryGetValue
+	|
 	|-Dictionary<object, CameraMan.CameraState>.TryGetValue
 	|-Dictionary<string, CameraMan.CameraState>.TryGetValue
 	|
@@ -23577,8 +33569,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<float, uint>.TryGetValue
 	|
 	|-Dictionary<ulong, AvatarCache.Entry>.TryGetValue
-	|
-	|-Dictionary<ulong, Chat.MuteEntry>.TryGetValue
 	|
 	|-Dictionary<ulong, TimeSince>.TryGetValue
 	|
@@ -23630,6 +33620,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.TryAdd
 	|-Dictionary<long, uint>.TryAdd
 	|-Dictionary<long, ulong>.TryAdd
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.TryAdd
 	|-Dictionary<IntPtr, object>.TryAdd
 	|-Dictionary<object, InputActionSetHandle_t>.TryAdd
 	|-Dictionary<object, InputAnalogActionHandle_t>.TryAdd
@@ -23771,6 +33762,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.TryAdd
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.TryAdd
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.TryAdd
 	|-Dictionary<ulong, Chat.MuteEntry>.TryAdd
 	|
@@ -23878,6 +33870,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, uint>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
@@ -24056,6 +34050,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, uint>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
@@ -24329,6 +34325,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.System.Collections.ICollection.CopyTo
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
+	|
 	|-Dictionary<IntPtr, object>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.ICollection.CopyTo
@@ -24524,6 +34524,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, uint>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, ulong>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<IntPtr, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.IEnumerable.GetEnumerator
@@ -24580,6 +34581,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -24865,6 +34867,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Dictionary<IntPtr, object>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.ICollection.get_SyncRoot
@@ -25119,6 +35125,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, uint>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_IsReadOnly
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_IsReadOnly
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.get_IsReadOnly
@@ -25297,6 +35305,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, uint>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Keys
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_Keys
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.get_Keys
@@ -25475,6 +35485,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, uint>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Values
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_Values
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Values
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_Values
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_Values
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.get_Values
@@ -25736,6 +35748,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, long>.System.Collections.IDictionary.get_Item
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Item
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, long>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, ulong>.System.Collections.IDictionary.get_Item
 	|
@@ -25750,6 +35763,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, float>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, float>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, TimeSince>.System.Collections.IDictionary.get_Item
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_Item
+	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.get_Item
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_Item
 	|
@@ -25801,8 +35817,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<float, object>.System.Collections.IDictionary.get_Item
 	|
 	|-Dictionary<float, float>.System.Collections.IDictionary.get_Item
-	|
-	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.get_Item
 	|
 	|-Dictionary<StyleSheetCache.SheetHandleKey, int>.System.Collections.IDictionary.get_Item
 	|
@@ -26002,6 +36016,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.System.Collections.IDictionary.set_Item
 	|
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.set_Item
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.set_Item
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.set_Item
 	|
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.set_Item
 	|
@@ -26350,6 +36368,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.IsCompatibleKey
 	|
 	|-Dictionary<long, ulong>.IsCompatibleKey
+	|
+	|-Dictionary<IntPtr, Helper.Allocation>.IsCompatibleKey
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.IsCompatibleKey
 	|
 	|-Dictionary<IntPtr, object>.IsCompatibleKey
 	|
@@ -26700,6 +36722,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.Add
 	|
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.Add
+	|
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.Add
+	|
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.Add
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.Add
@@ -26870,6 +36896,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, uint>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.Contains
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.Contains
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.Contains
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.Contains
 	|-Dictionary<ulong, AvatarCache.Entry>.System.Collections.IDictionary.Contains
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.Contains
@@ -27083,6 +37111,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, uint>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.GetEnumerator
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.IDictionary.GetEnumerator
@@ -27139,6 +37168,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.System.Collections.IDictionary.GetEnumerator
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.GetEnumerator
 	|
@@ -27245,6 +37275,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, uint>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.Remove
+	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.Remove
+	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.Remove
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.Remove
 	|-Dictionary<ulong, AvatarCache.Entry>.System.Collections.IDictionary.Remove
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.Remove
@@ -27483,6 +37515,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, ushort>..ctor
 	|-Dictionary.Enumerator<long, uint>..ctor
 	|-Dictionary.Enumerator<long, ulong>..ctor
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary.Enumerator<IntPtr, object>..ctor
 	|-Dictionary.Enumerator<object, InputActionSetHandle_t>..ctor
 	|-Dictionary.Enumerator<object, InputAnalogActionHandle_t>..ctor
@@ -27539,6 +37572,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<XPathNodeRef, XPathNodeRef>..ctor
 	|-Dictionary.Enumerator<StringFormatCache.Key2, object>..ctor
 	|-Dictionary.Enumerator<Decimal, Decimal>..ctor
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>..ctor
 	|-Dictionary.Enumerator<object, PlayerModelHair.RendererMaterials>..ctor
 	|-Dictionary.Enumerator<ulong, Chat.MuteEntry>..ctor
 	|
@@ -27874,6 +37908,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<long, ulong>.MoveNext
 	|
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.MoveNext
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.MoveNext
+	|
 	|-Dictionary.Enumerator<IntPtr, object>.MoveNext
 	|
 	|-Dictionary.Enumerator<object, CameraMan.CameraState>.MoveNext
@@ -28122,6 +38160,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, ushort>.get_Current
 	|-Dictionary.Enumerator<long, uint>.get_Current
 	|-Dictionary.Enumerator<long, ulong>.get_Current
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.Enumerator<IntPtr, object>.get_Current
 	|-Dictionary.Enumerator<object, InputActionSetHandle_t>.get_Current
 	|-Dictionary.Enumerator<object, InputAnalogActionHandle_t>.get_Current
@@ -28205,6 +38244,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<XPathNodeRef, XPathNodeRef>.get_Current
 	|-Dictionary.Enumerator<StringFormatCache.Key2, object>.get_Current
 	|-Dictionary.Enumerator<Decimal, Decimal>.get_Current
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.get_Current
 	|-Dictionary.Enumerator<object, PlayerModelHair.RendererMaterials>.get_Current
 	|-Dictionary.Enumerator<ulong, Chat.MuteEntry>.get_Current
 	|
@@ -28390,6 +38430,8 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, ushort>.Dispose
 	|-Dictionary.Enumerator<long, uint>.Dispose
 	|-Dictionary.Enumerator<long, ulong>.Dispose
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.Dispose
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.Enumerator<IntPtr, object>.Dispose
 	|-Dictionary.Enumerator<object, CameraMan.CameraState>.Dispose
 	|-Dictionary.Enumerator<object, PlayerModelHair.RendererMaterials>.Dispose
@@ -28695,6 +38737,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IEnumerator.get_Current
 	|
@@ -29044,6 +39090,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IEnumerator.Reset
 	|
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.Enumerator<object, CameraMan.CameraState>.System.Collections.IEnumerator.Reset
@@ -29391,6 +39441,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IDictionaryEnumerator.get_Entry
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Entry
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
@@ -29740,6 +39794,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IDictionaryEnumerator.get_Key
 	|
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Key
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Key
+	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IDictionaryEnumerator.get_Key
 	|
 	|-Dictionary.Enumerator<object, CameraMan.CameraState>.System.Collections.IDictionaryEnumerator.get_Key
@@ -30087,6 +40145,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IDictionaryEnumerator.get_Value
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IDictionaryEnumerator.get_Value
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Value
+	|
+	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Value
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IDictionaryEnumerator.get_Value
 	|
@@ -30447,6 +40509,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<long, ulong>..ctor
 	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>..ctor
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary.KeyCollection<IntPtr, object>..ctor
 	|
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>..ctor
@@ -30633,6 +40699,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.GetEnumerator
 	|-Dictionary.KeyCollection<long, uint>.GetEnumerator
 	|-Dictionary.KeyCollection<long, ulong>.GetEnumerator
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.GetEnumerator
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary.KeyCollection<IntPtr, object>.GetEnumerator
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.GetEnumerator
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.GetEnumerator
@@ -30985,6 +41053,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<long, ulong>.CopyTo
 	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.CopyTo
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.CopyTo
+	|
 	|-Dictionary.KeyCollection<IntPtr, object>.CopyTo
 	|
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.CopyTo
@@ -31239,6 +41311,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.get_Count
 	|-Dictionary.KeyCollection<long, uint>.get_Count
 	|-Dictionary.KeyCollection<long, ulong>.get_Count
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.get_Count
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.get_Count
 	|-Dictionary.KeyCollection<IntPtr, object>.get_Count
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.get_Count
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.get_Count
@@ -31417,6 +41491,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
@@ -31688,6 +41764,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.Add
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Add
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Add
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Add
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Add
 	|
@@ -32037,6 +42117,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Clear
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Clear
+	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TKey>.Clear
@@ -32254,6 +42338,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Contains
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Contains
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TKey>.Contains
@@ -32567,6 +42653,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Remove
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Remove
+	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TKey>.Remove
@@ -32748,6 +42838,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
@@ -32932,6 +43024,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.IEnumerable.GetEnumerator
@@ -33283,6 +43377,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.ICollection.CopyTo
 	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
+	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.ICollection.CopyTo
@@ -33631,6 +43729,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.ICollection.get_SyncRoot
@@ -33825,6 +43927,8 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, ushort>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, uint>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>..ctor
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>..ctor
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>..ctor
 	|-Dictionary.KeyCollection.Enumerator<object, PlayerModelHair.RendererMaterials>..ctor
@@ -34081,6 +44185,8 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, ushort>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.Dispose
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.Dispose
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.Dispose
@@ -34359,6 +44465,10 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.MoveNext
 	|
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.MoveNext
+	|
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.MoveNext
+	|
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.MoveNext
 	|
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>.MoveNext
@@ -34540,6 +44650,8 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, ushort>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.get_Current
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.get_Current
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.get_Current
@@ -34905,6 +45017,10 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.get_Current
 	|
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
+	|
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>.System.Collections.IEnumerator.get_Current
@@ -35252,6 +45368,10 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.Reset
 	|
@@ -35612,6 +45732,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<long, ulong>..ctor
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>..ctor
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary.ValueCollection<IntPtr, object>..ctor
 	|
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>..ctor
@@ -35821,6 +45945,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, long>.GetEnumerator
 	|-Dictionary.ValueCollection<long, object>.GetEnumerator
 	|-Dictionary.ValueCollection<long, ulong>.GetEnumerator
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary.ValueCollection<IntPtr, object>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.GetEnumerator
@@ -35962,6 +46087,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.GetEnumerator
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.GetEnumerator
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.GetEnumerator
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.GetEnumerator
 	|
@@ -36160,6 +46286,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.CopyTo
 	|
 	|-Dictionary.ValueCollection<long, ulong>.CopyTo
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.CopyTo
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.CopyTo
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.CopyTo
 	|
@@ -36415,6 +46545,8 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, ushort>.get_Count
 	|-Dictionary.ValueCollection<long, uint>.get_Count
 	|-Dictionary.ValueCollection<long, ulong>.get_Count
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.get_Count
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.get_Count
 	|-Dictionary.ValueCollection<IntPtr, object>.get_Count
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.get_Count
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.get_Count
@@ -36592,6 +46724,8 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, ushort>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
@@ -36863,6 +46997,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.Add
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Add
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Add
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Add
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Add
 	|
@@ -37212,6 +47350,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Remove
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Remove
+	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TValue>.Remove
@@ -37560,6 +47702,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Clear
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Clear
+	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TValue>.Clear
@@ -37787,6 +47933,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, ushort>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Contains
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<TValue>.Contains
@@ -37891,6 +48038,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<TValue>.Contains
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<TValue>.Contains
 	|
@@ -38003,6 +48151,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, long>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<long, object>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
@@ -38078,6 +48227,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|
@@ -38188,6 +48338,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, long>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<long, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.System.Collections.IEnumerable.GetEnumerator
@@ -38263,6 +48414,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.IEnumerable.GetEnumerator
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -38461,6 +48613,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.ICollection.CopyTo
 	|
@@ -38810,6 +48966,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.System.Collections.ICollection.get_SyncRoot
@@ -39082,6 +49242,7 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, long>..ctor
 	|-Dictionary.ValueCollection.Enumerator<long, object>..ctor
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>..ctor
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>..ctor
 	|-Dictionary.ValueCollection.Enumerator<object, InputActionSetHandle_t>..ctor
 	|-Dictionary.ValueCollection.Enumerator<object, InputAnalogActionHandle_t>..ctor
@@ -39157,6 +49318,7 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<int, ViewModelDrawEvent>..ctor
 	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>..ctor
 	|-Dictionary.ValueCollection.Enumerator<object, PlayerModelHair.RendererMaterials>..ctor
 	|-Dictionary.ValueCollection.Enumerator<ulong, Chat.MuteEntry>..ctor
 	|
@@ -39263,6 +49425,8 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, ushort>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, uint>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.Dispose
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.Dispose
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<object, CameraMan.CameraState>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.Dispose
@@ -39551,6 +49715,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.MoveNext
 	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.MoveNext
+	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.MoveNext
+	|
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.MoveNext
 	|
 	|-Dictionary.ValueCollection.Enumerator<object, CameraMan.CameraState>.MoveNext
@@ -39765,6 +49933,7 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, long>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<long, object>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.get_Current
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<object, InputActionSetHandle_t>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<object, InputAnalogActionHandle_t>.get_Current
@@ -39914,6 +50083,7 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<int, ViewModelDrawEvent>.get_Current
 	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<ulong, Chat.MuteEntry>.get_Current
 	|
@@ -40112,6 +50282,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, uint>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.get_Current
 	|
@@ -40461,6 +50635,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.Reset
 	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.ValueCollection.Enumerator<object, CameraMan.CameraState>.System.Collections.IEnumerator.Reset
@@ -40672,6 +50850,12 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<NormalPairs>.get_Default
 	|-Comparer<EngineDamageOverTime.RecentDamage>.get_Default
 	|-Comparer<EntityRef<object>>.get_Default
+	|-Comparer<PlayerStatInfoInternal>.get_Default
+	|-Comparer<StatThresholdsInternal>.get_Default
+	|-Comparer<ItemOwnershipInternal>.get_Default
+	|-Comparer<ModIdentifierInternal>.get_Default
+	|-Comparer<DataRecordInternal>.get_Default
+	|-Comparer<ParticipantMetadataInternal>.get_Default
 	|-Comparer<ExpandedLifeStats.GenericStatDisplay>.get_Default
 	|-Comparer<BurstCloth.Chain>.get_Default
 	|-Comparer<CapsuleParams>.get_Default
@@ -40873,6 +51057,18 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<EngineDamageOverTime.RecentDamage>.CreateComparer
 	|
 	|-Comparer<EntityRef<object>>.CreateComparer
+	|
+	|-Comparer<PlayerStatInfoInternal>.CreateComparer
+	|
+	|-Comparer<StatThresholdsInternal>.CreateComparer
+	|
+	|-Comparer<ItemOwnershipInternal>.CreateComparer
+	|
+	|-Comparer<ModIdentifierInternal>.CreateComparer
+	|
+	|-Comparer<DataRecordInternal>.CreateComparer
+	|
+	|-Comparer<ParticipantMetadataInternal>.CreateComparer
 	|
 	|-Comparer<ExpandedLifeStats.GenericStatDisplay>.CreateComparer
 	|
@@ -41172,6 +51368,11 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<Admin.ServerConvarInfo>.System.Collections.IComparer.Compare
 	|-Comparer<Chat.MuteEntry>.System.Collections.IComparer.Compare
 	|-Comparer<ERChildsSO>.System.Collections.IComparer.Compare
+	|-Comparer<PlayerStatInfoInternal>.System.Collections.IComparer.Compare
+	|-Comparer<StatThresholdsInternal>.System.Collections.IComparer.Compare
+	|-Comparer<ItemOwnershipInternal>.System.Collections.IComparer.Compare
+	|-Comparer<DataRecordInternal>.System.Collections.IComparer.Compare
+	|-Comparer<ParticipantMetadataInternal>.System.Collections.IComparer.Compare
 	|-Comparer<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IComparer.Compare
 	|-Comparer<LocalClock.TimedEvent>.System.Collections.IComparer.Compare
 	|-Comparer<MapView.MapMarkerCluster>.System.Collections.IComparer.Compare
@@ -41307,8 +51508,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<DemoShotFloatKeyframe>.System.Collections.IComparer.Compare
 	|-Comparer<Vector2>.System.Collections.IComparer.Compare
 	|
-	|-Comparer<BoneData>.System.Collections.IComparer.Compare
-	|
+	|-Comparer<ModIdentifierInternal>.System.Collections.IComparer.Compare
 	|-Comparer<Tick.Entry>.System.Collections.IComparer.Compare
 	|-Comparer<Gibbable.OverrideMesh>.System.Collections.IComparer.Compare
 	|-Comparer<MeshInstance>.System.Collections.IComparer.Compare
@@ -41317,6 +51517,8 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IComparer.Compare
 	|-Comparer<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IComparer.Compare
 	|-Comparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IComparer.Compare
+	|
+	|-Comparer<BoneData>.System.Collections.IComparer.Compare
 	|
 	|-Comparer<FoliageGridMeshData.FoliageVertex>.System.Collections.IComparer.Compare
 	|
@@ -41401,6 +51603,12 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<NormalPairs>..ctor
 	|-Comparer<EngineDamageOverTime.RecentDamage>..ctor
 	|-Comparer<EntityRef<object>>..ctor
+	|-Comparer<PlayerStatInfoInternal>..ctor
+	|-Comparer<StatThresholdsInternal>..ctor
+	|-Comparer<ItemOwnershipInternal>..ctor
+	|-Comparer<ModIdentifierInternal>..ctor
+	|-Comparer<DataRecordInternal>..ctor
+	|-Comparer<ParticipantMetadataInternal>..ctor
 	|-Comparer<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-Comparer<BurstCloth.Chain>..ctor
 	|-Comparer<CapsuleParams>..ctor
@@ -41754,6 +51962,18 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|
 	|-ObjectComparer<EntityRef<object>>.Compare
 	|
+	|-ObjectComparer<PlayerStatInfoInternal>.Compare
+	|
+	|-ObjectComparer<StatThresholdsInternal>.Compare
+	|
+	|-ObjectComparer<ItemOwnershipInternal>.Compare
+	|
+	|-ObjectComparer<ModIdentifierInternal>.Compare
+	|
+	|-ObjectComparer<DataRecordInternal>.Compare
+	|
+	|-ObjectComparer<ParticipantMetadataInternal>.Compare
+	|
 	|-ObjectComparer<ExpandedLifeStats.GenericStatDisplay>.Compare
 	|
 	|-ObjectComparer<BurstCloth.Chain>.Compare
@@ -42068,6 +52288,12 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<NormalPairs>.Equals
 	|-ObjectComparer<EngineDamageOverTime.RecentDamage>.Equals
 	|-ObjectComparer<EntityRef<object>>.Equals
+	|-ObjectComparer<PlayerStatInfoInternal>.Equals
+	|-ObjectComparer<StatThresholdsInternal>.Equals
+	|-ObjectComparer<ItemOwnershipInternal>.Equals
+	|-ObjectComparer<ModIdentifierInternal>.Equals
+	|-ObjectComparer<DataRecordInternal>.Equals
+	|-ObjectComparer<ParticipantMetadataInternal>.Equals
 	|-ObjectComparer<ExpandedLifeStats.GenericStatDisplay>.Equals
 	|-ObjectComparer<BurstCloth.Chain>.Equals
 	|-ObjectComparer<CapsuleParams>.Equals
@@ -42242,6 +52468,12 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<NormalPairs>.GetHashCode
 	|-ObjectComparer<EngineDamageOverTime.RecentDamage>.GetHashCode
 	|-ObjectComparer<EntityRef<object>>.GetHashCode
+	|-ObjectComparer<PlayerStatInfoInternal>.GetHashCode
+	|-ObjectComparer<StatThresholdsInternal>.GetHashCode
+	|-ObjectComparer<ItemOwnershipInternal>.GetHashCode
+	|-ObjectComparer<ModIdentifierInternal>.GetHashCode
+	|-ObjectComparer<DataRecordInternal>.GetHashCode
+	|-ObjectComparer<ParticipantMetadataInternal>.GetHashCode
 	|-ObjectComparer<ExpandedLifeStats.GenericStatDisplay>.GetHashCode
 	|-ObjectComparer<BurstCloth.Chain>.GetHashCode
 	|-ObjectComparer<CapsuleParams>.GetHashCode
@@ -42416,6 +52648,12 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<NormalPairs>..ctor
 	|-ObjectComparer<EngineDamageOverTime.RecentDamage>..ctor
 	|-ObjectComparer<EntityRef<object>>..ctor
+	|-ObjectComparer<PlayerStatInfoInternal>..ctor
+	|-ObjectComparer<StatThresholdsInternal>..ctor
+	|-ObjectComparer<ItemOwnershipInternal>..ctor
+	|-ObjectComparer<ModIdentifierInternal>..ctor
+	|-ObjectComparer<DataRecordInternal>..ctor
+	|-ObjectComparer<ParticipantMetadataInternal>..ctor
 	|-ObjectComparer<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-ObjectComparer<BurstCloth.Chain>..ctor
 	|-ObjectComparer<CapsuleParams>..ctor
@@ -42611,6 +52849,14 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<NormalPairs>.get_Default
 	|-EqualityComparer<EngineDamageOverTime.RecentDamage>.get_Default
 	|-EqualityComparer<EntityRef<object>>.get_Default
+	|-EqualityComparer<PlayerStatInfoInternal>.get_Default
+	|-EqualityComparer<StatThresholdsInternal>.get_Default
+	|-EqualityComparer<ItemOwnershipInternal>.get_Default
+	|-EqualityComparer<Helper.Allocation>.get_Default
+	|-EqualityComparer<Helper.PinnedBuffer>.get_Default
+	|-EqualityComparer<ModIdentifierInternal>.get_Default
+	|-EqualityComparer<DataRecordInternal>.get_Default
+	|-EqualityComparer<ParticipantMetadataInternal>.get_Default
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>.get_Default
 	|-EqualityComparer<BurstCloth.Chain>.get_Default
 	|-EqualityComparer<CapsuleParams>.get_Default
@@ -42846,6 +53092,22 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<EngineDamageOverTime.RecentDamage>.CreateComparer
 	|
 	|-EqualityComparer<EntityRef<object>>.CreateComparer
+	|
+	|-EqualityComparer<PlayerStatInfoInternal>.CreateComparer
+	|
+	|-EqualityComparer<StatThresholdsInternal>.CreateComparer
+	|
+	|-EqualityComparer<ItemOwnershipInternal>.CreateComparer
+	|
+	|-EqualityComparer<Helper.Allocation>.CreateComparer
+	|
+	|-EqualityComparer<Helper.PinnedBuffer>.CreateComparer
+	|
+	|-EqualityComparer<ModIdentifierInternal>.CreateComparer
+	|
+	|-EqualityComparer<DataRecordInternal>.CreateComparer
+	|
+	|-EqualityComparer<ParticipantMetadataInternal>.CreateComparer
 	|
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>.CreateComparer
 	|
@@ -43203,6 +53465,12 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Admin.ServerConvarInfo>.IndexOf
 	|-EqualityComparer<Chat.MuteEntry>.IndexOf
 	|-EqualityComparer<ERChildsSO>.IndexOf
+	|-EqualityComparer<PlayerStatInfoInternal>.IndexOf
+	|-EqualityComparer<StatThresholdsInternal>.IndexOf
+	|-EqualityComparer<ItemOwnershipInternal>.IndexOf
+	|-EqualityComparer<Helper.Allocation>.IndexOf
+	|-EqualityComparer<DataRecordInternal>.IndexOf
+	|-EqualityComparer<ParticipantMetadataInternal>.IndexOf
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>.IndexOf
 	|-EqualityComparer<LocalClock.TimedEvent>.IndexOf
 	|-EqualityComparer<MapView.MapMarkerCluster>.IndexOf
@@ -43330,6 +53598,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<ERConnectionGUIStatus>.IndexOf
 	|-EqualityComparer<ERTerrainChange>.IndexOf
 	|-EqualityComparer<NormalPairs>.IndexOf
+	|-EqualityComparer<Helper.PinnedBuffer>.IndexOf
 	|-EqualityComparer<BurstCloth.Chain>.IndexOf
 	|-EqualityComparer<FoliageKey>.IndexOf
 	|-EqualityComparer<MeshRendererLookup.LookupEntry>.IndexOf
@@ -43365,8 +53634,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<DemoShotFloatKeyframe>.IndexOf
 	|-EqualityComparer<Vector2>.IndexOf
 	|
-	|-EqualityComparer<BoneData>.IndexOf
-	|
+	|-EqualityComparer<ModIdentifierInternal>.IndexOf
 	|-EqualityComparer<Tick.Entry>.IndexOf
 	|-EqualityComparer<Gibbable.OverrideMesh>.IndexOf
 	|-EqualityComparer<MeshInstance>.IndexOf
@@ -43375,6 +53643,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<PlaceMonumentsRailside.SpawnInfo>.IndexOf
 	|-EqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.IndexOf
 	|-EqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.IndexOf
+	|
+	|-EqualityComparer<BoneData>.IndexOf
 	|
 	|-EqualityComparer<FoliageGridMeshData.FoliageVertex>.IndexOf
 	|
@@ -43441,6 +53711,12 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Admin.ServerConvarInfo>.LastIndexOf
 	|-EqualityComparer<Chat.MuteEntry>.LastIndexOf
 	|-EqualityComparer<ERChildsSO>.LastIndexOf
+	|-EqualityComparer<PlayerStatInfoInternal>.LastIndexOf
+	|-EqualityComparer<StatThresholdsInternal>.LastIndexOf
+	|-EqualityComparer<ItemOwnershipInternal>.LastIndexOf
+	|-EqualityComparer<Helper.Allocation>.LastIndexOf
+	|-EqualityComparer<DataRecordInternal>.LastIndexOf
+	|-EqualityComparer<ParticipantMetadataInternal>.LastIndexOf
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>.LastIndexOf
 	|-EqualityComparer<LocalClock.TimedEvent>.LastIndexOf
 	|-EqualityComparer<MapView.MapMarkerCluster>.LastIndexOf
@@ -43568,6 +53844,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<ERConnectionGUIStatus>.LastIndexOf
 	|-EqualityComparer<ERTerrainChange>.LastIndexOf
 	|-EqualityComparer<NormalPairs>.LastIndexOf
+	|-EqualityComparer<Helper.PinnedBuffer>.LastIndexOf
 	|-EqualityComparer<BurstCloth.Chain>.LastIndexOf
 	|-EqualityComparer<FoliageKey>.LastIndexOf
 	|-EqualityComparer<MeshRendererLookup.LookupEntry>.LastIndexOf
@@ -43603,8 +53880,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<DemoShotFloatKeyframe>.LastIndexOf
 	|-EqualityComparer<Vector2>.LastIndexOf
 	|
-	|-EqualityComparer<BoneData>.LastIndexOf
-	|
+	|-EqualityComparer<ModIdentifierInternal>.LastIndexOf
 	|-EqualityComparer<Tick.Entry>.LastIndexOf
 	|-EqualityComparer<Gibbable.OverrideMesh>.LastIndexOf
 	|-EqualityComparer<MeshInstance>.LastIndexOf
@@ -43613,6 +53889,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<PlaceMonumentsRailside.SpawnInfo>.LastIndexOf
 	|-EqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.LastIndexOf
 	|-EqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.LastIndexOf
+	|
+	|-EqualityComparer<BoneData>.LastIndexOf
 	|
 	|-EqualityComparer<FoliageGridMeshData.FoliageVertex>.LastIndexOf
 	|
@@ -43679,6 +53957,12 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Admin.ServerConvarInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Chat.MuteEntry>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<ERChildsSO>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<PlayerStatInfoInternal>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<StatThresholdsInternal>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<ItemOwnershipInternal>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<Helper.Allocation>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<DataRecordInternal>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<ParticipantMetadataInternal>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<LocalClock.TimedEvent>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<MapView.MapMarkerCluster>.System.Collections.IEqualityComparer.GetHashCode
@@ -43806,6 +54090,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<ERConnectionGUIStatus>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<ERTerrainChange>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<NormalPairs>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<Helper.PinnedBuffer>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<BurstCloth.Chain>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<FoliageKey>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<MeshRendererLookup.LookupEntry>.System.Collections.IEqualityComparer.GetHashCode
@@ -43844,8 +54129,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<DemoShotFloatKeyframe>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Vector2>.System.Collections.IEqualityComparer.GetHashCode
 	|
-	|-EqualityComparer<BoneData>.System.Collections.IEqualityComparer.GetHashCode
-	|
+	|-EqualityComparer<ModIdentifierInternal>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Tick.Entry>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Gibbable.OverrideMesh>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<MeshInstance>.System.Collections.IEqualityComparer.GetHashCode
@@ -43854,6 +54138,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IEqualityComparer.GetHashCode
+	|
+	|-EqualityComparer<BoneData>.System.Collections.IEqualityComparer.GetHashCode
 	|
 	|-EqualityComparer<FoliageGridMeshData.FoliageVertex>.System.Collections.IEqualityComparer.GetHashCode
 	|
@@ -43914,6 +54200,12 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<Admin.ServerConvarInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Chat.MuteEntry>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<ERChildsSO>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<PlayerStatInfoInternal>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<StatThresholdsInternal>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<ItemOwnershipInternal>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<Helper.Allocation>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<DataRecordInternal>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<ParticipantMetadataInternal>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<LocalClock.TimedEvent>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<MapView.MapMarkerCluster>.System.Collections.IEqualityComparer.Equals
@@ -44041,6 +54333,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<ERConnectionGUIStatus>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<ERTerrainChange>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<NormalPairs>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<Helper.PinnedBuffer>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<BurstCloth.Chain>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<FoliageKey>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<MeshRendererLookup.LookupEntry>.System.Collections.IEqualityComparer.Equals
@@ -44076,8 +54369,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<DemoShotFloatKeyframe>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Vector2>.System.Collections.IEqualityComparer.Equals
 	|
-	|-EqualityComparer<BoneData>.System.Collections.IEqualityComparer.Equals
-	|
+	|-EqualityComparer<ModIdentifierInternal>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Tick.Entry>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Gibbable.OverrideMesh>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<MeshInstance>.System.Collections.IEqualityComparer.Equals
@@ -44086,6 +54378,8 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IEqualityComparer.Equals
+	|
+	|-EqualityComparer<BoneData>.System.Collections.IEqualityComparer.Equals
 	|
 	|-EqualityComparer<FoliageGridMeshData.FoliageVertex>.System.Collections.IEqualityComparer.Equals
 	|
@@ -44179,6 +54473,14 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<NormalPairs>..ctor
 	|-EqualityComparer<EngineDamageOverTime.RecentDamage>..ctor
 	|-EqualityComparer<EntityRef<object>>..ctor
+	|-EqualityComparer<PlayerStatInfoInternal>..ctor
+	|-EqualityComparer<StatThresholdsInternal>..ctor
+	|-EqualityComparer<ItemOwnershipInternal>..ctor
+	|-EqualityComparer<Helper.Allocation>..ctor
+	|-EqualityComparer<Helper.PinnedBuffer>..ctor
+	|-EqualityComparer<ModIdentifierInternal>..ctor
+	|-EqualityComparer<DataRecordInternal>..ctor
+	|-EqualityComparer<ParticipantMetadataInternal>..ctor
 	|-EqualityComparer<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-EqualityComparer<BurstCloth.Chain>..ctor
 	|-EqualityComparer<CapsuleParams>..ctor
@@ -45012,6 +55314,12 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<Admin.ServerConvarInfo>.Equals
 	|-ObjectEqualityComparer<Chat.MuteEntry>.Equals
 	|-ObjectEqualityComparer<ERChildsSO>.Equals
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>.Equals
+	|-ObjectEqualityComparer<StatThresholdsInternal>.Equals
+	|-ObjectEqualityComparer<ItemOwnershipInternal>.Equals
+	|-ObjectEqualityComparer<Helper.Allocation>.Equals
+	|-ObjectEqualityComparer<DataRecordInternal>.Equals
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>.Equals
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>.Equals
 	|-ObjectEqualityComparer<LocalClock.TimedEvent>.Equals
 	|-ObjectEqualityComparer<MapView.MapMarkerCluster>.Equals
@@ -45114,6 +55422,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<ERConnectionGUIStatus>.Equals
 	|-ObjectEqualityComparer<ERTerrainChange>.Equals
 	|-ObjectEqualityComparer<NormalPairs>.Equals
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>.Equals
 	|-ObjectEqualityComparer<BurstCloth.Chain>.Equals
 	|-ObjectEqualityComparer<MeshRendererLookup.LookupEntry>.Equals
 	|-ObjectEqualityComparer<Achievement>.Equals
@@ -45136,8 +55445,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<EngineDamageOverTime.RecentDamage>.Equals
 	|-ObjectEqualityComparer<DemoShotFloatKeyframe>.Equals
 	|
-	|-ObjectEqualityComparer<BoneData>.Equals
-	|
+	|-ObjectEqualityComparer<ModIdentifierInternal>.Equals
 	|-ObjectEqualityComparer<Tick.Entry>.Equals
 	|-ObjectEqualityComparer<Gibbable.OverrideMesh>.Equals
 	|-ObjectEqualityComparer<MeshInstance>.Equals
@@ -45146,6 +55454,8 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<PlaceMonumentsRailside.SpawnInfo>.Equals
 	|-ObjectEqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.Equals
 	|-ObjectEqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Equals
+	|
+	|-ObjectEqualityComparer<BoneData>.Equals
 	|
 	|-ObjectEqualityComparer<FoliageGridMeshData.FoliageVertex>.Equals
 	|
@@ -45316,6 +55626,13 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<ERChildsSO>.GetHashCode
 	|-ObjectEqualityComparer<ERLane>.GetHashCode
 	|-ObjectEqualityComparer<EntityRef<object>>.GetHashCode
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>.GetHashCode
+	|-ObjectEqualityComparer<StatThresholdsInternal>.GetHashCode
+	|-ObjectEqualityComparer<ItemOwnershipInternal>.GetHashCode
+	|-ObjectEqualityComparer<Helper.Allocation>.GetHashCode
+	|-ObjectEqualityComparer<ModIdentifierInternal>.GetHashCode
+	|-ObjectEqualityComparer<DataRecordInternal>.GetHashCode
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>.GetHashCode
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>.GetHashCode
 	|-ObjectEqualityComparer<CapsuleParams>.GetHashCode
 	|-ObjectEqualityComparer<TabbedPanel.Tab>.GetHashCode
@@ -45430,6 +55747,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<ERConnectionGUIStatus>.GetHashCode
 	|-ObjectEqualityComparer<ERTerrainChange>.GetHashCode
 	|-ObjectEqualityComparer<NormalPairs>.GetHashCode
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>.GetHashCode
 	|-ObjectEqualityComparer<BurstCloth.Chain>.GetHashCode
 	|-ObjectEqualityComparer<MeshRendererLookup.LookupEntry>.GetHashCode
 	|-ObjectEqualityComparer<Achievement>.GetHashCode
@@ -45567,6 +55885,12 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<Admin.ServerConvarInfo>.IndexOf
 	|-ObjectEqualityComparer<Chat.MuteEntry>.IndexOf
 	|-ObjectEqualityComparer<ERChildsSO>.IndexOf
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>.IndexOf
+	|-ObjectEqualityComparer<StatThresholdsInternal>.IndexOf
+	|-ObjectEqualityComparer<ItemOwnershipInternal>.IndexOf
+	|-ObjectEqualityComparer<Helper.Allocation>.IndexOf
+	|-ObjectEqualityComparer<DataRecordInternal>.IndexOf
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>.IndexOf
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>.IndexOf
 	|-ObjectEqualityComparer<LocalClock.TimedEvent>.IndexOf
 	|-ObjectEqualityComparer<MapView.MapMarkerCluster>.IndexOf
@@ -45669,6 +55993,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<ERConnectionGUIStatus>.IndexOf
 	|-ObjectEqualityComparer<ERTerrainChange>.IndexOf
 	|-ObjectEqualityComparer<NormalPairs>.IndexOf
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>.IndexOf
 	|-ObjectEqualityComparer<BurstCloth.Chain>.IndexOf
 	|-ObjectEqualityComparer<MeshRendererLookup.LookupEntry>.IndexOf
 	|-ObjectEqualityComparer<Achievement>.IndexOf
@@ -45691,8 +56016,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<EngineDamageOverTime.RecentDamage>.IndexOf
 	|-ObjectEqualityComparer<DemoShotFloatKeyframe>.IndexOf
 	|
-	|-ObjectEqualityComparer<BoneData>.IndexOf
-	|
+	|-ObjectEqualityComparer<ModIdentifierInternal>.IndexOf
 	|-ObjectEqualityComparer<Tick.Entry>.IndexOf
 	|-ObjectEqualityComparer<Gibbable.OverrideMesh>.IndexOf
 	|-ObjectEqualityComparer<MeshInstance>.IndexOf
@@ -45701,6 +56025,8 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<PlaceMonumentsRailside.SpawnInfo>.IndexOf
 	|-ObjectEqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.IndexOf
 	|-ObjectEqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.IndexOf
+	|
+	|-ObjectEqualityComparer<BoneData>.IndexOf
 	|
 	|-ObjectEqualityComparer<FoliageGridMeshData.FoliageVertex>.IndexOf
 	|
@@ -45858,6 +56184,12 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<Admin.ServerConvarInfo>.LastIndexOf
 	|-ObjectEqualityComparer<Chat.MuteEntry>.LastIndexOf
 	|-ObjectEqualityComparer<ERChildsSO>.LastIndexOf
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>.LastIndexOf
+	|-ObjectEqualityComparer<StatThresholdsInternal>.LastIndexOf
+	|-ObjectEqualityComparer<ItemOwnershipInternal>.LastIndexOf
+	|-ObjectEqualityComparer<Helper.Allocation>.LastIndexOf
+	|-ObjectEqualityComparer<DataRecordInternal>.LastIndexOf
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>.LastIndexOf
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>.LastIndexOf
 	|-ObjectEqualityComparer<LocalClock.TimedEvent>.LastIndexOf
 	|-ObjectEqualityComparer<MapView.MapMarkerCluster>.LastIndexOf
@@ -45960,6 +56292,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<ERConnectionGUIStatus>.LastIndexOf
 	|-ObjectEqualityComparer<ERTerrainChange>.LastIndexOf
 	|-ObjectEqualityComparer<NormalPairs>.LastIndexOf
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>.LastIndexOf
 	|-ObjectEqualityComparer<BurstCloth.Chain>.LastIndexOf
 	|-ObjectEqualityComparer<MeshRendererLookup.LookupEntry>.LastIndexOf
 	|-ObjectEqualityComparer<Achievement>.LastIndexOf
@@ -45982,8 +56315,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<EngineDamageOverTime.RecentDamage>.LastIndexOf
 	|-ObjectEqualityComparer<DemoShotFloatKeyframe>.LastIndexOf
 	|
-	|-ObjectEqualityComparer<BoneData>.LastIndexOf
-	|
+	|-ObjectEqualityComparer<ModIdentifierInternal>.LastIndexOf
 	|-ObjectEqualityComparer<Tick.Entry>.LastIndexOf
 	|-ObjectEqualityComparer<Gibbable.OverrideMesh>.LastIndexOf
 	|-ObjectEqualityComparer<MeshInstance>.LastIndexOf
@@ -45992,6 +56324,8 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<PlaceMonumentsRailside.SpawnInfo>.LastIndexOf
 	|-ObjectEqualityComparer<PlaceMonumentsRoadside.SpawnInfo>.LastIndexOf
 	|-ObjectEqualityComparer<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.LastIndexOf
+	|
+	|-ObjectEqualityComparer<BoneData>.LastIndexOf
 	|
 	|-ObjectEqualityComparer<FoliageGridMeshData.FoliageVertex>.LastIndexOf
 	|
@@ -46175,6 +56509,14 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<NormalPairs>.Equals
 	|-ObjectEqualityComparer<EngineDamageOverTime.RecentDamage>.Equals
 	|-ObjectEqualityComparer<EntityRef<object>>.Equals
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>.Equals
+	|-ObjectEqualityComparer<StatThresholdsInternal>.Equals
+	|-ObjectEqualityComparer<ItemOwnershipInternal>.Equals
+	|-ObjectEqualityComparer<Helper.Allocation>.Equals
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>.Equals
+	|-ObjectEqualityComparer<ModIdentifierInternal>.Equals
+	|-ObjectEqualityComparer<DataRecordInternal>.Equals
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>.Equals
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>.Equals
 	|-ObjectEqualityComparer<BurstCloth.Chain>.Equals
 	|-ObjectEqualityComparer<CapsuleParams>.Equals
@@ -46379,6 +56721,14 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<NormalPairs>.GetHashCode
 	|-ObjectEqualityComparer<EngineDamageOverTime.RecentDamage>.GetHashCode
 	|-ObjectEqualityComparer<EntityRef<object>>.GetHashCode
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>.GetHashCode
+	|-ObjectEqualityComparer<StatThresholdsInternal>.GetHashCode
+	|-ObjectEqualityComparer<ItemOwnershipInternal>.GetHashCode
+	|-ObjectEqualityComparer<Helper.Allocation>.GetHashCode
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>.GetHashCode
+	|-ObjectEqualityComparer<ModIdentifierInternal>.GetHashCode
+	|-ObjectEqualityComparer<DataRecordInternal>.GetHashCode
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>.GetHashCode
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>.GetHashCode
 	|-ObjectEqualityComparer<BurstCloth.Chain>.GetHashCode
 	|-ObjectEqualityComparer<CapsuleParams>.GetHashCode
@@ -46583,6 +56933,14 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<NormalPairs>..ctor
 	|-ObjectEqualityComparer<EngineDamageOverTime.RecentDamage>..ctor
 	|-ObjectEqualityComparer<EntityRef<object>>..ctor
+	|-ObjectEqualityComparer<PlayerStatInfoInternal>..ctor
+	|-ObjectEqualityComparer<StatThresholdsInternal>..ctor
+	|-ObjectEqualityComparer<ItemOwnershipInternal>..ctor
+	|-ObjectEqualityComparer<Helper.Allocation>..ctor
+	|-ObjectEqualityComparer<Helper.PinnedBuffer>..ctor
+	|-ObjectEqualityComparer<ModIdentifierInternal>..ctor
+	|-ObjectEqualityComparer<DataRecordInternal>..ctor
+	|-ObjectEqualityComparer<ParticipantMetadataInternal>..ctor
 	|-ObjectEqualityComparer<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-ObjectEqualityComparer<BurstCloth.Chain>..ctor
 	|-ObjectEqualityComparer<CapsuleParams>..ctor
@@ -47010,6 +57368,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EntityLink>..ctor
 	|-List<EntityRef<LootContainer>>..ctor
 	|-List<EntityRef<object>>..ctor
+	|-List<PlayerStatInfoInternal>..ctor
+	|-List<StatThresholdsInternal>..ctor
+	|-List<ItemOwnershipInternal>..ctor
+	|-List<ModIdentifierInternal>..ctor
+	|-List<DataRecordInternal>..ctor
+	|-List<ParticipantMetadataInternal>..ctor
 	|-List<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-List<BurstCloth.Chain>..ctor
 	|-List<BurstCloth>..ctor
@@ -47495,6 +57859,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>..ctor
 	|-List<EntityLink>..ctor
 	|-List<EntityRef<object>>..ctor
+	|-List<PlayerStatInfoInternal>..ctor
+	|-List<StatThresholdsInternal>..ctor
+	|-List<ItemOwnershipInternal>..ctor
+	|-List<ModIdentifierInternal>..ctor
+	|-List<DataRecordInternal>..ctor
+	|-List<ParticipantMetadataInternal>..ctor
 	|-List<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-List<BurstCloth.Chain>..ctor
 	|-List<CapsuleParams>..ctor
@@ -47744,6 +58114,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>..ctor
 	|
 	|-List<EntityRef<object>>..ctor
+	|
+	|-List<PlayerStatInfoInternal>..ctor
+	|
+	|-List<StatThresholdsInternal>..ctor
+	|
+	|-List<ItemOwnershipInternal>..ctor
+	|
+	|-List<ModIdentifierInternal>..ctor
+	|
+	|-List<DataRecordInternal>..ctor
+	|
+	|-List<ParticipantMetadataInternal>..ctor
 	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|
@@ -48043,6 +58425,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.get_Capacity
 	|-List<EngineDamageOverTime.RecentDamage>.get_Capacity
 	|-List<EntityRef<object>>.get_Capacity
+	|-List<PlayerStatInfoInternal>.get_Capacity
+	|-List<StatThresholdsInternal>.get_Capacity
+	|-List<ItemOwnershipInternal>.get_Capacity
+	|-List<ModIdentifierInternal>.get_Capacity
+	|-List<DataRecordInternal>.get_Capacity
+	|-List<ParticipantMetadataInternal>.get_Capacity
 	|-List<ExpandedLifeStats.GenericStatDisplay>.get_Capacity
 	|-List<BurstCloth.Chain>.get_Capacity
 	|-List<CapsuleParams>.get_Capacity
@@ -48213,6 +58601,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.set_Capacity
 	|-List<EngineDamageOverTime.RecentDamage>.set_Capacity
 	|-List<EntityRef<object>>.set_Capacity
+	|-List<PlayerStatInfoInternal>.set_Capacity
+	|-List<StatThresholdsInternal>.set_Capacity
+	|-List<ItemOwnershipInternal>.set_Capacity
+	|-List<ModIdentifierInternal>.set_Capacity
+	|-List<DataRecordInternal>.set_Capacity
+	|-List<ParticipantMetadataInternal>.set_Capacity
 	|-List<ExpandedLifeStats.GenericStatDisplay>.set_Capacity
 	|-List<BurstCloth.Chain>.set_Capacity
 	|-List<CapsuleParams>.set_Capacity
@@ -48459,6 +58853,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EntityRef<object>>.get_Count
 	|-List<EnvironmentFish>.get_Count
 	|-List<EnvironmentVolume>.get_Count
+	|-List<PlayerStatInfoInternal>.get_Count
+	|-List<StatThresholdsInternal>.get_Count
+	|-List<ItemOwnershipInternal>.get_Count
+	|-List<ModIdentifierInternal>.get_Count
+	|-List<DataRecordInternal>.get_Count
+	|-List<ParticipantMetadataInternal>.get_Count
 	|-List<ExpandedLifeStats.GenericStatDisplay>.get_Count
 	|-List<BurstCloth.Chain>.get_Count
 	|-List<CapsuleParams>.get_Count
@@ -48920,6 +59320,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.System.Collections.IList.get_IsFixedSize
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.IList.get_IsFixedSize
 	|-List<EntityRef<object>>.System.Collections.IList.get_IsFixedSize
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.get_IsFixedSize
+	|-List<StatThresholdsInternal>.System.Collections.IList.get_IsFixedSize
+	|-List<ItemOwnershipInternal>.System.Collections.IList.get_IsFixedSize
+	|-List<ModIdentifierInternal>.System.Collections.IList.get_IsFixedSize
+	|-List<DataRecordInternal>.System.Collections.IList.get_IsFixedSize
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.get_IsFixedSize
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.get_IsFixedSize
 	|-List<BurstCloth.Chain>.System.Collections.IList.get_IsFixedSize
 	|-List<CapsuleParams>.System.Collections.IList.get_IsFixedSize
@@ -49088,6 +59494,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<EntityRef<object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<PlayerStatInfoInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<StatThresholdsInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<ItemOwnershipInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<ModIdentifierInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<DataRecordInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<ParticipantMetadataInternal>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<BurstCloth.Chain>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<CapsuleParams>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -49256,6 +59668,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.System.Collections.IList.get_IsReadOnly
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.IList.get_IsReadOnly
 	|-List<EntityRef<object>>.System.Collections.IList.get_IsReadOnly
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.get_IsReadOnly
+	|-List<StatThresholdsInternal>.System.Collections.IList.get_IsReadOnly
+	|-List<ItemOwnershipInternal>.System.Collections.IList.get_IsReadOnly
+	|-List<ModIdentifierInternal>.System.Collections.IList.get_IsReadOnly
+	|-List<DataRecordInternal>.System.Collections.IList.get_IsReadOnly
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.get_IsReadOnly
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.get_IsReadOnly
 	|-List<BurstCloth.Chain>.System.Collections.IList.get_IsReadOnly
 	|-List<CapsuleParams>.System.Collections.IList.get_IsReadOnly
@@ -49451,6 +59869,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-List<EntityRef<object>>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-List<PlayerStatInfoInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-List<StatThresholdsInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-List<ItemOwnershipInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-List<ModIdentifierInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-List<DataRecordInternal>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-List<ParticipantMetadataInternal>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -50093,6 +60523,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<UnitySynchronizationContext.WorkRequest>.get_Item
 	|-List<Admin.ServerConvarInfo>.get_Item
 	|-List<ERChildsSO>.get_Item
+	|-List<PlayerStatInfoInternal>.get_Item
+	|-List<StatThresholdsInternal>.get_Item
+	|-List<ItemOwnershipInternal>.get_Item
+	|-List<DataRecordInternal>.get_Item
+	|-List<ParticipantMetadataInternal>.get_Item
 	|-List<ExpandedLifeStats.GenericStatDisplay>.get_Item
 	|-List<MapView.MapMarkerCluster>.get_Item
 	|-List<TimelineEvent>.get_Item
@@ -50218,6 +60653,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.get_Item
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.get_Item
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.get_Item
+	|-List<ModIdentifierInternal>.get_Item
 	|-List<PetCommandList.PetCommandDesc>.get_Item
 	|-List<PlaceMonumentsOffshore.SpawnInfo>.get_Item
 	|
@@ -50272,6 +60708,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.set_Item
 	|-List<AlignedLineDrawer.LinePoint>.set_Item
 	|-List<ERChildsSO>.set_Item
+	|-List<PlayerStatInfoInternal>.set_Item
+	|-List<StatThresholdsInternal>.set_Item
+	|-List<ItemOwnershipInternal>.set_Item
+	|-List<DataRecordInternal>.set_Item
+	|-List<ParticipantMetadataInternal>.set_Item
 	|-List<TickRenderer.Tick>.set_Item
 	|
 	|-List<AmbienceEmitter>.set_Item
@@ -50459,6 +60900,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.set_Item
 	|-List<Vector2>.set_Item
 	|
+	|-List<ModIdentifierInternal>.set_Item
+	|-List<Gibbable.OverrideMesh>.set_Item
+	|
 	|-List<BurstCloth.Chain>.set_Item
 	|-List<MeshRendererLookup.LookupEntry>.set_Item
 	|-List<Achievement>.set_Item
@@ -50487,8 +60931,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.set_Item
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.set_Item
-	|
-	|-List<Gibbable.OverrideMesh>.set_Item
 	|
 	|-List<LocalClock.TimedEvent>.set_Item
 	|-List<SynchronizedClock.TimedEvent>.set_Item
@@ -50570,6 +61012,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.IsCompatibleObject
 	|-List<Chat.MuteEntry>.IsCompatibleObject
 	|-List<ERChildsSO>.IsCompatibleObject
+	|-List<PlayerStatInfoInternal>.IsCompatibleObject
+	|-List<StatThresholdsInternal>.IsCompatibleObject
+	|-List<ItemOwnershipInternal>.IsCompatibleObject
+	|-List<DataRecordInternal>.IsCompatibleObject
+	|-List<ParticipantMetadataInternal>.IsCompatibleObject
 	|-List<ExpandedLifeStats.GenericStatDisplay>.IsCompatibleObject
 	|-List<LocalClock.TimedEvent>.IsCompatibleObject
 	|-List<MapView.MapMarkerCluster>.IsCompatibleObject
@@ -50693,8 +61140,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ERVSData>.IsCompatibleObject
 	|-List<SqliteKeyReader.KeyInfo>.IsCompatibleObject
 	|
-	|-List<BoneData>.IsCompatibleObject
-	|
+	|-List<ModIdentifierInternal>.IsCompatibleObject
 	|-List<Tick.Entry>.IsCompatibleObject
 	|-List<Gibbable.OverrideMesh>.IsCompatibleObject
 	|-List<MeshInstance>.IsCompatibleObject
@@ -50703,6 +61149,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.IsCompatibleObject
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.IsCompatibleObject
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.IsCompatibleObject
+	|
+	|-List<BoneData>.IsCompatibleObject
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.IsCompatibleObject
 	|
@@ -50767,6 +61215,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.System.Collections.IList.get_Item
 	|-List<Chat.MuteEntry>.System.Collections.IList.get_Item
 	|-List<ERChildsSO>.System.Collections.IList.get_Item
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.get_Item
+	|-List<StatThresholdsInternal>.System.Collections.IList.get_Item
+	|-List<ItemOwnershipInternal>.System.Collections.IList.get_Item
+	|-List<DataRecordInternal>.System.Collections.IList.get_Item
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.get_Item
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.get_Item
 	|-List<LocalClock.TimedEvent>.System.Collections.IList.get_Item
 	|-List<MapView.MapMarkerCluster>.System.Collections.IList.get_Item
@@ -50897,8 +61350,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ERVSData>.System.Collections.IList.get_Item
 	|-List<SqliteKeyReader.KeyInfo>.System.Collections.IList.get_Item
 	|
-	|-List<BoneData>.System.Collections.IList.get_Item
-	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.get_Item
 	|-List<Tick.Entry>.System.Collections.IList.get_Item
 	|-List<Gibbable.OverrideMesh>.System.Collections.IList.get_Item
 	|-List<MeshInstance>.System.Collections.IList.get_Item
@@ -50907,6 +61359,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.get_Item
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.get_Item
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.get_Item
+	|
+	|-List<BoneData>.System.Collections.IList.get_Item
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.get_Item
 	|
@@ -51013,6 +61467,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.IList.set_Item
 	|
 	|-List<EntityRef<object>>.System.Collections.IList.set_Item
+	|
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.set_Item
+	|
+	|-List<StatThresholdsInternal>.System.Collections.IList.set_Item
+	|
+	|-List<ItemOwnershipInternal>.System.Collections.IList.set_Item
+	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.set_Item
+	|
+	|-List<DataRecordInternal>.System.Collections.IList.set_Item
+	|
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.set_Item
 	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.set_Item
 	|
@@ -51731,6 +62197,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Add
 	|-List<AlignedLineDrawer.LinePoint>.Add
 	|-List<ERChildsSO>.Add
+	|-List<PlayerStatInfoInternal>.Add
+	|-List<StatThresholdsInternal>.Add
+	|-List<ItemOwnershipInternal>.Add
+	|-List<DataRecordInternal>.Add
+	|-List<ParticipantMetadataInternal>.Add
 	|-List<TickRenderer.Tick>.Add
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Add
@@ -51848,6 +62319,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.Add
 	|-List<Vector2>.Add
 	|
+	|-List<ModIdentifierInternal>.Add
+	|-List<Gibbable.OverrideMesh>.Add
+	|
 	|-List<BurstCloth.Chain>.Add
 	|-List<MeshRendererLookup.LookupEntry>.Add
 	|-List<Achievement>.Add
@@ -51879,8 +62353,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.Add
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Add
-	|
-	|-List<Gibbable.OverrideMesh>.Add
 	|
 	|-List<LocalClock.TimedEvent>.Add
 	|-List<SynchronizedClock.TimedEvent>.Add
@@ -52007,6 +62479,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.IList.Add
 	|
 	|-List<EntityRef<object>>.System.Collections.IList.Add
+	|
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.Add
+	|
+	|-List<StatThresholdsInternal>.System.Collections.IList.Add
+	|
+	|-List<ItemOwnershipInternal>.System.Collections.IList.Add
+	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.Add
+	|
+	|-List<DataRecordInternal>.System.Collections.IList.Add
+	|
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.Add
 	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Add
 	|
@@ -52314,6 +62798,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<tPoint>.AddRange
 	|-List<EngineDamageOverTime.RecentDamage>.AddRange
 	|-List<EntityRef<object>>.AddRange
+	|-List<PlayerStatInfoInternal>.AddRange
+	|-List<StatThresholdsInternal>.AddRange
+	|-List<ItemOwnershipInternal>.AddRange
+	|-List<ModIdentifierInternal>.AddRange
+	|-List<DataRecordInternal>.AddRange
+	|-List<ParticipantMetadataInternal>.AddRange
 	|-List<ExpandedLifeStats.GenericStatDisplay>.AddRange
 	|-List<BurstCloth.Chain>.AddRange
 	|-List<CapsuleParams>.AddRange
@@ -52514,6 +63004,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.AsReadOnly
 	|-List<EngineDamageOverTime.RecentDamage>.AsReadOnly
 	|-List<EntityRef<object>>.AsReadOnly
+	|-List<PlayerStatInfoInternal>.AsReadOnly
+	|-List<StatThresholdsInternal>.AsReadOnly
+	|-List<ItemOwnershipInternal>.AsReadOnly
+	|-List<ModIdentifierInternal>.AsReadOnly
+	|-List<DataRecordInternal>.AsReadOnly
+	|-List<ParticipantMetadataInternal>.AsReadOnly
 	|-List<ExpandedLifeStats.GenericStatDisplay>.AsReadOnly
 	|-List<BurstCloth.Chain>.AsReadOnly
 	|-List<CapsuleParams>.AsReadOnly
@@ -52724,6 +63220,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EntityLink>.Clear
 	|-List<EntityRef<object>>.Clear
 	|-List<EnvironmentFish>.Clear
+	|-List<PlayerStatInfoInternal>.Clear
+	|-List<StatThresholdsInternal>.Clear
+	|-List<ItemOwnershipInternal>.Clear
+	|-List<ModIdentifierInternal>.Clear
+	|-List<DataRecordInternal>.Clear
+	|-List<ParticipantMetadataInternal>.Clear
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Clear
 	|-List<BurstCloth.Chain>.Clear
 	|-List<CapsuleParams>.Clear
@@ -53001,6 +63503,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.Contains
 	|-List<Chat.MuteEntry>.Contains
 	|-List<ERChildsSO>.Contains
+	|-List<PlayerStatInfoInternal>.Contains
+	|-List<StatThresholdsInternal>.Contains
+	|-List<ItemOwnershipInternal>.Contains
+	|-List<DataRecordInternal>.Contains
+	|-List<ParticipantMetadataInternal>.Contains
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Contains
 	|-List<LocalClock.TimedEvent>.Contains
 	|-List<MapView.MapMarkerCluster>.Contains
@@ -53187,8 +63694,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.Contains
 	|-List<Vector2>.Contains
 	|
-	|-List<BoneData>.Contains
-	|
+	|-List<ModIdentifierInternal>.Contains
 	|-List<Tick.Entry>.Contains
 	|-List<Gibbable.OverrideMesh>.Contains
 	|-List<MeshInstance>.Contains
@@ -53197,6 +63703,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.Contains
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.Contains
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Contains
+	|
+	|-List<BoneData>.Contains
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Contains
 	|
@@ -53256,6 +63764,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.System.Collections.IList.Contains
 	|-List<Chat.MuteEntry>.System.Collections.IList.Contains
 	|-List<ERChildsSO>.System.Collections.IList.Contains
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.Contains
+	|-List<StatThresholdsInternal>.System.Collections.IList.Contains
+	|-List<ItemOwnershipInternal>.System.Collections.IList.Contains
+	|-List<DataRecordInternal>.System.Collections.IList.Contains
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.Contains
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Contains
 	|-List<LocalClock.TimedEvent>.System.Collections.IList.Contains
 	|-List<MapView.MapMarkerCluster>.System.Collections.IList.Contains
@@ -53387,8 +63900,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.System.Collections.IList.Contains
 	|-List<Vector2>.System.Collections.IList.Contains
 	|
-	|-List<BoneData>.System.Collections.IList.Contains
-	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.Contains
 	|-List<Tick.Entry>.System.Collections.IList.Contains
 	|-List<Gibbable.OverrideMesh>.System.Collections.IList.Contains
 	|-List<MeshInstance>.System.Collections.IList.Contains
@@ -53397,6 +63909,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.Contains
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.Contains
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.Contains
+	|
+	|-List<BoneData>.System.Collections.IList.Contains
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.Contains
 	|
@@ -53476,6 +63990,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.CopyTo
 	|-List<EngineDamageOverTime.RecentDamage>.CopyTo
 	|-List<EntityRef<object>>.CopyTo
+	|-List<PlayerStatInfoInternal>.CopyTo
+	|-List<StatThresholdsInternal>.CopyTo
+	|-List<ItemOwnershipInternal>.CopyTo
+	|-List<ModIdentifierInternal>.CopyTo
+	|-List<DataRecordInternal>.CopyTo
+	|-List<ParticipantMetadataInternal>.CopyTo
 	|-List<ExpandedLifeStats.GenericStatDisplay>.CopyTo
 	|-List<BurstCloth.Chain>.CopyTo
 	|-List<CapsuleParams>.CopyTo
@@ -53674,6 +64194,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.ICollection.CopyTo
 	|
 	|-List<EntityRef<object>>.System.Collections.ICollection.CopyTo
+	|
+	|-List<PlayerStatInfoInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-List<StatThresholdsInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-List<ItemOwnershipInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-List<ModIdentifierInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-List<DataRecordInternal>.System.Collections.ICollection.CopyTo
+	|
+	|-List<ParticipantMetadataInternal>.System.Collections.ICollection.CopyTo
 	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.ICollection.CopyTo
 	|
@@ -53976,6 +64508,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.CopyTo
 	|-List<EngineDamageOverTime.RecentDamage>.CopyTo
 	|-List<EntityRef<object>>.CopyTo
+	|-List<PlayerStatInfoInternal>.CopyTo
+	|-List<StatThresholdsInternal>.CopyTo
+	|-List<ItemOwnershipInternal>.CopyTo
+	|-List<ModIdentifierInternal>.CopyTo
+	|-List<DataRecordInternal>.CopyTo
+	|-List<ParticipantMetadataInternal>.CopyTo
 	|-List<ExpandedLifeStats.GenericStatDisplay>.CopyTo
 	|-List<BurstCloth.Chain>.CopyTo
 	|-List<CapsuleParams>.CopyTo
@@ -54144,6 +64682,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.CopyTo
 	|-List<EngineDamageOverTime.RecentDamage>.CopyTo
 	|-List<EntityRef<object>>.CopyTo
+	|-List<PlayerStatInfoInternal>.CopyTo
+	|-List<StatThresholdsInternal>.CopyTo
+	|-List<ItemOwnershipInternal>.CopyTo
+	|-List<ModIdentifierInternal>.CopyTo
+	|-List<DataRecordInternal>.CopyTo
+	|-List<ParticipantMetadataInternal>.CopyTo
 	|-List<ExpandedLifeStats.GenericStatDisplay>.CopyTo
 	|-List<BurstCloth.Chain>.CopyTo
 	|-List<CapsuleParams>.CopyTo
@@ -54317,6 +64861,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.EnsureCapacity
 	|-List<EngineDamageOverTime.RecentDamage>.EnsureCapacity
 	|-List<EntityRef<object>>.EnsureCapacity
+	|-List<PlayerStatInfoInternal>.EnsureCapacity
+	|-List<StatThresholdsInternal>.EnsureCapacity
+	|-List<ItemOwnershipInternal>.EnsureCapacity
+	|-List<ModIdentifierInternal>.EnsureCapacity
+	|-List<DataRecordInternal>.EnsureCapacity
+	|-List<ParticipantMetadataInternal>.EnsureCapacity
 	|-List<ExpandedLifeStats.GenericStatDisplay>.EnsureCapacity
 	|-List<BurstCloth.Chain>.EnsureCapacity
 	|-List<CapsuleParams>.EnsureCapacity
@@ -54484,6 +65034,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Exists
 	|-List<EngineDamageOverTime.RecentDamage>.Exists
 	|-List<EntityRef<object>>.Exists
+	|-List<PlayerStatInfoInternal>.Exists
+	|-List<StatThresholdsInternal>.Exists
+	|-List<ItemOwnershipInternal>.Exists
+	|-List<ModIdentifierInternal>.Exists
+	|-List<DataRecordInternal>.Exists
+	|-List<ParticipantMetadataInternal>.Exists
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Exists
 	|-List<BurstCloth.Chain>.Exists
 	|-List<CapsuleParams>.Exists
@@ -54660,6 +65216,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.Find
 	|-List<Chat.MuteEntry>.Find
 	|-List<ERChildsSO>.Find
+	|-List<PlayerStatInfoInternal>.Find
+	|-List<StatThresholdsInternal>.Find
+	|-List<ItemOwnershipInternal>.Find
+	|-List<DataRecordInternal>.Find
+	|-List<ParticipantMetadataInternal>.Find
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Find
 	|-List<LocalClock.TimedEvent>.Find
 	|-List<MapView.MapMarkerCluster>.Find
@@ -54774,8 +65335,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.Find
 	|-List<Vector2>.Find
 	|
-	|-List<BoneData>.Find
-	|
+	|-List<ModIdentifierInternal>.Find
 	|-List<Tick.Entry>.Find
 	|-List<Gibbable.OverrideMesh>.Find
 	|-List<MeshInstance>.Find
@@ -54784,6 +65344,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.Find
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.Find
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Find
+	|
+	|-List<BoneData>.Find
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Find
 	|
@@ -54857,6 +65419,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.FindAll
 	|-List<Chat.MuteEntry>.FindAll
 	|-List<ERChildsSO>.FindAll
+	|-List<PlayerStatInfoInternal>.FindAll
+	|-List<StatThresholdsInternal>.FindAll
+	|-List<ItemOwnershipInternal>.FindAll
+	|-List<DataRecordInternal>.FindAll
+	|-List<ParticipantMetadataInternal>.FindAll
 	|-List<ExpandedLifeStats.GenericStatDisplay>.FindAll
 	|-List<LocalClock.TimedEvent>.FindAll
 	|-List<MapView.MapMarkerCluster>.FindAll
@@ -54971,8 +65538,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.FindAll
 	|-List<Vector2>.FindAll
 	|
-	|-List<BoneData>.FindAll
-	|
+	|-List<ModIdentifierInternal>.FindAll
 	|-List<Tick.Entry>.FindAll
 	|-List<Gibbable.OverrideMesh>.FindAll
 	|-List<MeshInstance>.FindAll
@@ -54981,6 +65547,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.FindAll
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.FindAll
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.FindAll
+	|
+	|-List<BoneData>.FindAll
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.FindAll
 	|
@@ -55057,6 +65625,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.FindIndex
 	|-List<EngineDamageOverTime.RecentDamage>.FindIndex
 	|-List<EntityRef<object>>.FindIndex
+	|-List<PlayerStatInfoInternal>.FindIndex
+	|-List<StatThresholdsInternal>.FindIndex
+	|-List<ItemOwnershipInternal>.FindIndex
+	|-List<ModIdentifierInternal>.FindIndex
+	|-List<DataRecordInternal>.FindIndex
+	|-List<ParticipantMetadataInternal>.FindIndex
 	|-List<ExpandedLifeStats.GenericStatDisplay>.FindIndex
 	|-List<BurstCloth.Chain>.FindIndex
 	|-List<CapsuleParams>.FindIndex
@@ -55205,6 +65779,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.FindIndex
 	|-List<Chat.MuteEntry>.FindIndex
 	|-List<ERChildsSO>.FindIndex
+	|-List<PlayerStatInfoInternal>.FindIndex
+	|-List<StatThresholdsInternal>.FindIndex
+	|-List<ItemOwnershipInternal>.FindIndex
+	|-List<DataRecordInternal>.FindIndex
+	|-List<ParticipantMetadataInternal>.FindIndex
 	|-List<ExpandedLifeStats.GenericStatDisplay>.FindIndex
 	|-List<LocalClock.TimedEvent>.FindIndex
 	|-List<MapView.MapMarkerCluster>.FindIndex
@@ -55334,8 +65913,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.FindIndex
 	|-List<Vector2>.FindIndex
 	|
-	|-List<BoneData>.FindIndex
-	|
+	|-List<ModIdentifierInternal>.FindIndex
 	|-List<Tick.Entry>.FindIndex
 	|-List<Gibbable.OverrideMesh>.FindIndex
 	|-List<MeshInstance>.FindIndex
@@ -55344,6 +65922,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.FindIndex
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.FindIndex
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.FindIndex
+	|
+	|-List<BoneData>.FindIndex
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.FindIndex
 	|
@@ -55721,6 +66301,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Cassette.LoadRequest>.GetEnumerator
 	|-List<Admin.ServerConvarInfo>.GetEnumerator
 	|-List<ERChildsSO>.GetEnumerator
+	|-List<PlayerStatInfoInternal>.GetEnumerator
+	|-List<StatThresholdsInternal>.GetEnumerator
+	|-List<ItemOwnershipInternal>.GetEnumerator
+	|-List<DataRecordInternal>.GetEnumerator
+	|-List<ParticipantMetadataInternal>.GetEnumerator
 	|-List<LocalClock.TimedEvent>.GetEnumerator
 	|-List<TimelineEvent>.GetEnumerator
 	|-List<InventoryRecipe.Ingredient>.GetEnumerator
@@ -55819,6 +66404,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsOffshore.SpawnInfo>.GetEnumerator
 	|-List<PlaceMonumentsRailside.SpawnInfo>.GetEnumerator
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.GetEnumerator
+	|-List<ModIdentifierInternal>.GetEnumerator
 	|-List<Tick.Entry>.GetEnumerator
 	|-List<Gibbable.OverrideMesh>.GetEnumerator
 	|-List<MeshInstance>.GetEnumerator
@@ -55883,6 +66469,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Chat.MuteEntry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<ERChildsSO>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<PlayerStatInfoInternal>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<StatThresholdsInternal>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<ItemOwnershipInternal>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<DataRecordInternal>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<ParticipantMetadataInternal>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<LocalClock.TimedEvent>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<MapView.MapMarkerCluster>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -56016,8 +66607,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ERVSData>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<SqliteKeyReader.KeyInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
-	|-List<BoneData>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
+	|-List<ModIdentifierInternal>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Tick.Entry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Gibbable.OverrideMesh>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<MeshInstance>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -56026,6 +66616,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|
+	|-List<BoneData>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
@@ -56077,6 +66669,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Chat.MuteEntry>.System.Collections.IEnumerable.GetEnumerator
 	|-List<ERChildsSO>.System.Collections.IEnumerable.GetEnumerator
+	|-List<PlayerStatInfoInternal>.System.Collections.IEnumerable.GetEnumerator
+	|-List<StatThresholdsInternal>.System.Collections.IEnumerable.GetEnumerator
+	|-List<ItemOwnershipInternal>.System.Collections.IEnumerable.GetEnumerator
+	|-List<DataRecordInternal>.System.Collections.IEnumerable.GetEnumerator
+	|-List<ParticipantMetadataInternal>.System.Collections.IEnumerable.GetEnumerator
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerable.GetEnumerator
 	|-List<LocalClock.TimedEvent>.System.Collections.IEnumerable.GetEnumerator
 	|-List<MapView.MapMarkerCluster>.System.Collections.IEnumerable.GetEnumerator
@@ -56210,8 +66807,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ERVSData>.System.Collections.IEnumerable.GetEnumerator
 	|-List<SqliteKeyReader.KeyInfo>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-List<BoneData>.System.Collections.IEnumerable.GetEnumerator
-	|
+	|-List<ModIdentifierInternal>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Tick.Entry>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Gibbable.OverrideMesh>.System.Collections.IEnumerable.GetEnumerator
 	|-List<MeshInstance>.System.Collections.IEnumerable.GetEnumerator
@@ -56220,6 +66816,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IEnumerable.GetEnumerator
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IEnumerable.GetEnumerator
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-List<BoneData>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -56271,6 +66869,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.IndexOf
 	|-List<Chat.MuteEntry>.IndexOf
 	|-List<ERChildsSO>.IndexOf
+	|-List<PlayerStatInfoInternal>.IndexOf
+	|-List<StatThresholdsInternal>.IndexOf
+	|-List<ItemOwnershipInternal>.IndexOf
+	|-List<DataRecordInternal>.IndexOf
+	|-List<ParticipantMetadataInternal>.IndexOf
 	|-List<ExpandedLifeStats.GenericStatDisplay>.IndexOf
 	|-List<LocalClock.TimedEvent>.IndexOf
 	|-List<MapView.MapMarkerCluster>.IndexOf
@@ -56421,8 +67024,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.IndexOf
 	|-List<Vector2>.IndexOf
 	|
-	|-List<BoneData>.IndexOf
-	|
+	|-List<ModIdentifierInternal>.IndexOf
 	|-List<Tick.Entry>.IndexOf
 	|-List<Gibbable.OverrideMesh>.IndexOf
 	|-List<MeshInstance>.IndexOf
@@ -56431,6 +67033,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.IndexOf
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.IndexOf
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.IndexOf
+	|
+	|-List<BoneData>.IndexOf
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.IndexOf
 	|
@@ -56469,6 +67073,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.System.Collections.IList.IndexOf
 	|-List<Chat.MuteEntry>.System.Collections.IList.IndexOf
 	|-List<ERChildsSO>.System.Collections.IList.IndexOf
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.IndexOf
+	|-List<StatThresholdsInternal>.System.Collections.IList.IndexOf
+	|-List<ItemOwnershipInternal>.System.Collections.IList.IndexOf
+	|-List<DataRecordInternal>.System.Collections.IList.IndexOf
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.IndexOf
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.IndexOf
 	|-List<LocalClock.TimedEvent>.System.Collections.IList.IndexOf
 	|-List<MapView.MapMarkerCluster>.System.Collections.IList.IndexOf
@@ -56600,8 +67209,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.System.Collections.IList.IndexOf
 	|-List<Vector2>.System.Collections.IList.IndexOf
 	|
-	|-List<BoneData>.System.Collections.IList.IndexOf
-	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.IndexOf
 	|-List<Tick.Entry>.System.Collections.IList.IndexOf
 	|-List<Gibbable.OverrideMesh>.System.Collections.IList.IndexOf
 	|-List<MeshInstance>.System.Collections.IList.IndexOf
@@ -56610,6 +67218,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.IndexOf
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.IndexOf
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.IndexOf
+	|
+	|-List<BoneData>.System.Collections.IList.IndexOf
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.IndexOf
 	|
@@ -56664,6 +67274,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.Insert
 	|-List<AlignedLineDrawer.LinePoint>.Insert
 	|-List<ERChildsSO>.Insert
+	|-List<PlayerStatInfoInternal>.Insert
+	|-List<StatThresholdsInternal>.Insert
+	|-List<ItemOwnershipInternal>.Insert
+	|-List<DataRecordInternal>.Insert
+	|-List<ParticipantMetadataInternal>.Insert
 	|-List<TickRenderer.Tick>.Insert
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Insert
@@ -56787,6 +67402,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.Insert
 	|-List<Vector2>.Insert
 	|
+	|-List<ModIdentifierInternal>.Insert
+	|-List<Gibbable.OverrideMesh>.Insert
+	|
 	|-List<BurstCloth.Chain>.Insert
 	|-List<MeshRendererLookup.LookupEntry>.Insert
 	|-List<Achievement>.Insert
@@ -56816,8 +67434,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.Insert
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Insert
-	|
-	|-List<Gibbable.OverrideMesh>.Insert
 	|
 	|-List<LocalClock.TimedEvent>.Insert
 	|-List<SynchronizedClock.TimedEvent>.Insert
@@ -56948,6 +67564,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<EngineDamageOverTime.RecentDamage>.System.Collections.IList.Insert
 	|
 	|-List<EntityRef<object>>.System.Collections.IList.Insert
+	|
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.Insert
+	|
+	|-List<StatThresholdsInternal>.System.Collections.IList.Insert
+	|
+	|-List<ItemOwnershipInternal>.System.Collections.IList.Insert
+	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.Insert
+	|
+	|-List<DataRecordInternal>.System.Collections.IList.Insert
+	|
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.Insert
 	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Insert
 	|
@@ -57283,6 +67911,18 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<EntityRef<object>>.InsertRange
 	|
+	|-List<PlayerStatInfoInternal>.InsertRange
+	|
+	|-List<StatThresholdsInternal>.InsertRange
+	|
+	|-List<ItemOwnershipInternal>.InsertRange
+	|
+	|-List<ModIdentifierInternal>.InsertRange
+	|
+	|-List<DataRecordInternal>.InsertRange
+	|
+	|-List<ParticipantMetadataInternal>.InsertRange
+	|
 	|-List<ExpandedLifeStats.GenericStatDisplay>.InsertRange
 	|
 	|-List<BurstCloth.Chain>.InsertRange
@@ -57559,6 +68199,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.Remove
 	|-List<Chat.MuteEntry>.Remove
 	|-List<ERChildsSO>.Remove
+	|-List<PlayerStatInfoInternal>.Remove
+	|-List<StatThresholdsInternal>.Remove
+	|-List<ItemOwnershipInternal>.Remove
+	|-List<DataRecordInternal>.Remove
+	|-List<ParticipantMetadataInternal>.Remove
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Remove
 	|-List<LocalClock.TimedEvent>.Remove
 	|-List<MapView.MapMarkerCluster>.Remove
@@ -57776,8 +68421,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.Remove
 	|-List<Vector2>.Remove
 	|
-	|-List<BoneData>.Remove
-	|
+	|-List<ModIdentifierInternal>.Remove
 	|-List<Tick.Entry>.Remove
 	|-List<Gibbable.OverrideMesh>.Remove
 	|-List<MeshInstance>.Remove
@@ -57786,6 +68430,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.Remove
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.Remove
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.Remove
+	|
+	|-List<BoneData>.Remove
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Remove
 	|
@@ -57824,6 +68470,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Admin.ServerConvarInfo>.System.Collections.IList.Remove
 	|-List<Chat.MuteEntry>.System.Collections.IList.Remove
 	|-List<ERChildsSO>.System.Collections.IList.Remove
+	|-List<PlayerStatInfoInternal>.System.Collections.IList.Remove
+	|-List<StatThresholdsInternal>.System.Collections.IList.Remove
+	|-List<ItemOwnershipInternal>.System.Collections.IList.Remove
+	|-List<DataRecordInternal>.System.Collections.IList.Remove
+	|-List<ParticipantMetadataInternal>.System.Collections.IList.Remove
 	|-List<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IList.Remove
 	|-List<LocalClock.TimedEvent>.System.Collections.IList.Remove
 	|-List<MapView.MapMarkerCluster>.System.Collections.IList.Remove
@@ -57953,8 +68604,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.System.Collections.IList.Remove
 	|-List<Vector2>.System.Collections.IList.Remove
 	|
-	|-List<BoneData>.System.Collections.IList.Remove
-	|
+	|-List<ModIdentifierInternal>.System.Collections.IList.Remove
 	|-List<Tick.Entry>.System.Collections.IList.Remove
 	|-List<Gibbable.OverrideMesh>.System.Collections.IList.Remove
 	|-List<MeshInstance>.System.Collections.IList.Remove
@@ -57963,6 +68613,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IList.Remove
 	|-List<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IList.Remove
 	|-List<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IList.Remove
+	|
+	|-List<BoneData>.System.Collections.IList.Remove
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.System.Collections.IList.Remove
 	|
@@ -58022,6 +68674,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.RemoveAll
 	|-List<AlignedLineDrawer.LinePoint>.RemoveAll
 	|-List<ERChildsSO>.RemoveAll
+	|-List<PlayerStatInfoInternal>.RemoveAll
+	|-List<StatThresholdsInternal>.RemoveAll
+	|-List<ItemOwnershipInternal>.RemoveAll
+	|-List<DataRecordInternal>.RemoveAll
+	|-List<ParticipantMetadataInternal>.RemoveAll
 	|-List<TickRenderer.Tick>.RemoveAll
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.RemoveAll
@@ -58133,6 +68790,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.RemoveAll
 	|-List<Vector2>.RemoveAll
 	|
+	|-List<ModIdentifierInternal>.RemoveAll
+	|-List<Gibbable.OverrideMesh>.RemoveAll
+	|
 	|-List<BurstCloth.Chain>.RemoveAll
 	|-List<MeshRendererLookup.LookupEntry>.RemoveAll
 	|-List<Achievement>.RemoveAll
@@ -58180,8 +68840,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.RemoveAll
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.RemoveAll
-	|
-	|-List<Gibbable.OverrideMesh>.RemoveAll
 	|
 	|-List<LocalClock.TimedEvent>.RemoveAll
 	|-List<SynchronizedClock.TimedEvent>.RemoveAll
@@ -58260,6 +68918,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AdvancedChristmasLights.pointEntry>.RemoveAt
 	|-List<AlignedLineDrawer.LinePoint>.RemoveAt
 	|-List<ERChildsSO>.RemoveAt
+	|-List<PlayerStatInfoInternal>.RemoveAt
+	|-List<StatThresholdsInternal>.RemoveAt
+	|-List<ItemOwnershipInternal>.RemoveAt
+	|-List<DataRecordInternal>.RemoveAt
+	|-List<ParticipantMetadataInternal>.RemoveAt
 	|-List<TickRenderer.Tick>.RemoveAt
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.RemoveAt
@@ -58430,6 +69093,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DemoShotFloatKeyframe>.RemoveAt
 	|-List<Vector2>.RemoveAt
 	|
+	|-List<ModIdentifierInternal>.RemoveAt
+	|-List<Gibbable.OverrideMesh>.RemoveAt
+	|
 	|-List<CapsuleParams>.RemoveAt
 	|-List<SteamNewsSource.Story>.RemoveAt
 	|-List<ViewModelDrawEvent>.RemoveAt
@@ -58454,8 +69120,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.RemoveAt
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.RemoveAt
-	|
-	|-List<Gibbable.OverrideMesh>.RemoveAt
 	|
 	|-List<LocalClock.TimedEvent>.RemoveAt
 	|-List<SynchronizedClock.TimedEvent>.RemoveAt
@@ -58553,6 +69217,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.RemoveRange
 	|-List<EngineDamageOverTime.RecentDamage>.RemoveRange
 	|-List<EntityRef<object>>.RemoveRange
+	|-List<PlayerStatInfoInternal>.RemoveRange
+	|-List<StatThresholdsInternal>.RemoveRange
+	|-List<ItemOwnershipInternal>.RemoveRange
+	|-List<ModIdentifierInternal>.RemoveRange
+	|-List<DataRecordInternal>.RemoveRange
+	|-List<ParticipantMetadataInternal>.RemoveRange
 	|-List<ExpandedLifeStats.GenericStatDisplay>.RemoveRange
 	|-List<BurstCloth.Chain>.RemoveRange
 	|-List<CapsuleParams>.RemoveRange
@@ -58727,6 +69397,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Reverse
 	|-List<EngineDamageOverTime.RecentDamage>.Reverse
 	|-List<EntityRef<object>>.Reverse
+	|-List<PlayerStatInfoInternal>.Reverse
+	|-List<StatThresholdsInternal>.Reverse
+	|-List<ItemOwnershipInternal>.Reverse
+	|-List<ModIdentifierInternal>.Reverse
+	|-List<DataRecordInternal>.Reverse
+	|-List<ParticipantMetadataInternal>.Reverse
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Reverse
 	|-List<BurstCloth.Chain>.Reverse
 	|-List<CapsuleParams>.Reverse
@@ -58899,6 +69575,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Reverse
 	|-List<EngineDamageOverTime.RecentDamage>.Reverse
 	|-List<EntityRef<object>>.Reverse
+	|-List<PlayerStatInfoInternal>.Reverse
+	|-List<StatThresholdsInternal>.Reverse
+	|-List<ItemOwnershipInternal>.Reverse
+	|-List<ModIdentifierInternal>.Reverse
+	|-List<DataRecordInternal>.Reverse
+	|-List<ParticipantMetadataInternal>.Reverse
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Reverse
 	|-List<BurstCloth.Chain>.Reverse
 	|-List<CapsuleParams>.Reverse
@@ -59067,6 +69749,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Sort
 	|-List<EngineDamageOverTime.RecentDamage>.Sort
 	|-List<EntityRef<object>>.Sort
+	|-List<PlayerStatInfoInternal>.Sort
+	|-List<StatThresholdsInternal>.Sort
+	|-List<ItemOwnershipInternal>.Sort
+	|-List<ModIdentifierInternal>.Sort
+	|-List<DataRecordInternal>.Sort
+	|-List<ParticipantMetadataInternal>.Sort
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Sort
 	|-List<BurstCloth.Chain>.Sort
 	|-List<CapsuleParams>.Sort
@@ -59235,6 +69923,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Sort
 	|-List<EngineDamageOverTime.RecentDamage>.Sort
 	|-List<EntityRef<object>>.Sort
+	|-List<PlayerStatInfoInternal>.Sort
+	|-List<StatThresholdsInternal>.Sort
+	|-List<ItemOwnershipInternal>.Sort
+	|-List<ModIdentifierInternal>.Sort
+	|-List<DataRecordInternal>.Sort
+	|-List<ParticipantMetadataInternal>.Sort
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Sort
 	|-List<BurstCloth.Chain>.Sort
 	|-List<CapsuleParams>.Sort
@@ -59406,6 +70100,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Sort
 	|-List<EngineDamageOverTime.RecentDamage>.Sort
 	|-List<EntityRef<object>>.Sort
+	|-List<PlayerStatInfoInternal>.Sort
+	|-List<StatThresholdsInternal>.Sort
+	|-List<ItemOwnershipInternal>.Sort
+	|-List<ModIdentifierInternal>.Sort
+	|-List<DataRecordInternal>.Sort
+	|-List<ParticipantMetadataInternal>.Sort
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Sort
 	|-List<BurstCloth.Chain>.Sort
 	|-List<CapsuleParams>.Sort
@@ -59576,6 +70276,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.Sort
 	|-List<EngineDamageOverTime.RecentDamage>.Sort
 	|-List<EntityRef<object>>.Sort
+	|-List<PlayerStatInfoInternal>.Sort
+	|-List<StatThresholdsInternal>.Sort
+	|-List<ItemOwnershipInternal>.Sort
+	|-List<ModIdentifierInternal>.Sort
+	|-List<DataRecordInternal>.Sort
+	|-List<ParticipantMetadataInternal>.Sort
 	|-List<ExpandedLifeStats.GenericStatDisplay>.Sort
 	|-List<BurstCloth.Chain>.Sort
 	|-List<CapsuleParams>.Sort
@@ -59795,6 +70501,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.ToArray
 	|-List<EngineDamageOverTime.RecentDamage>.ToArray
 	|-List<EntityRef<object>>.ToArray
+	|-List<PlayerStatInfoInternal>.ToArray
+	|-List<StatThresholdsInternal>.ToArray
+	|-List<ItemOwnershipInternal>.ToArray
+	|-List<ModIdentifierInternal>.ToArray
+	|-List<DataRecordInternal>.ToArray
+	|-List<ParticipantMetadataInternal>.ToArray
 	|-List<ExpandedLifeStats.GenericStatDisplay>.ToArray
 	|-List<BurstCloth.Chain>.ToArray
 	|-List<CapsuleParams>.ToArray
@@ -59958,6 +70670,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>.TrimExcess
 	|-List<EngineDamageOverTime.RecentDamage>.TrimExcess
 	|-List<EntityRef<object>>.TrimExcess
+	|-List<PlayerStatInfoInternal>.TrimExcess
+	|-List<StatThresholdsInternal>.TrimExcess
+	|-List<ItemOwnershipInternal>.TrimExcess
+	|-List<ModIdentifierInternal>.TrimExcess
+	|-List<DataRecordInternal>.TrimExcess
+	|-List<ParticipantMetadataInternal>.TrimExcess
 	|-List<ExpandedLifeStats.GenericStatDisplay>.TrimExcess
 	|-List<BurstCloth.Chain>.TrimExcess
 	|-List<CapsuleParams>.TrimExcess
@@ -60126,6 +70844,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<NormalPairs>..cctor
 	|-List<EngineDamageOverTime.RecentDamage>..cctor
 	|-List<EntityRef<object>>..cctor
+	|-List<PlayerStatInfoInternal>..cctor
+	|-List<StatThresholdsInternal>..cctor
+	|-List<ItemOwnershipInternal>..cctor
+	|-List<ModIdentifierInternal>..cctor
+	|-List<DataRecordInternal>..cctor
+	|-List<ParticipantMetadataInternal>..cctor
 	|-List<ExpandedLifeStats.GenericStatDisplay>..cctor
 	|-List<BurstCloth.Chain>..cctor
 	|-List<CapsuleParams>..cctor
@@ -60844,6 +71568,7 @@ public class LinkedList<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IColle
 	|-LinkedList<object>.GetEnumerator
 	|
 	|-LinkedList<KeyValuePair<object, object>>.GetEnumerator
+	|
 	|-LinkedList<KeyValuePair<uint, object>>.GetEnumerator
 	*/
 
@@ -63402,7 +74127,6 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|-HashSet<object>.GetEnumerator
 	|
 	|-HashSet<uint>.GetEnumerator
-	|
 	|-HashSet<Connection>.GetEnumerator
 	|-HashSet<int>.GetEnumerator
 	|
@@ -63414,11 +74138,10 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|
 	|-HashSet<Connection>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-HashSet<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-HashSet<uint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-HashSet<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-HashSet<ulong>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
-	|-HashSet<uint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-HashSet<Vector3>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
@@ -63428,11 +74151,10 @@ public class HashSet<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnly
 	|
 	|-HashSet<Connection>.System.Collections.IEnumerable.GetEnumerator
 	|-HashSet<int>.System.Collections.IEnumerable.GetEnumerator
+	|-HashSet<uint>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-HashSet<object>.System.Collections.IEnumerable.GetEnumerator
 	|-HashSet<ulong>.System.Collections.IEnumerable.GetEnumerator
-	|
-	|-HashSet<uint>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-HashSet<Vector3>.System.Collections.IEnumerable.GetEnumerator
 	*/
@@ -64062,12 +74784,12 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<ColliderData>.GetEnumerator
 	|-NativeArray<ColliderState>.GetEnumerator
 	|-NativeArray<byte>.GetEnumerator
-	|
 	|-NativeArray<int>.GetEnumerator
 	|-NativeArray<float>.GetEnumerator
 	|-NativeArray<uint>.GetEnumerator
 	|-NativeArray<JobHandle>.GetEnumerator
 	|-NativeArray<float3>.GetEnumerator
+	|
 	|-NativeArray<half2>.GetEnumerator
 	|-NativeArray<Color32>.GetEnumerator
 	|-NativeArray<LightDataGI>.GetEnumerator
@@ -64086,12 +74808,12 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<ColliderData>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<ColliderState>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<byte>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
 	|-NativeArray<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<float>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<uint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<JobHandle>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<float3>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|
 	|-NativeArray<half2>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<Color32>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<LightDataGI>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -64110,12 +74832,12 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<ColliderData>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<ColliderState>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<byte>.System.Collections.IEnumerable.GetEnumerator
-	|
 	|-NativeArray<int>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<float>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<uint>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<JobHandle>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<float3>.System.Collections.IEnumerable.GetEnumerator
+	|
 	|-NativeArray<half2>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<Color32>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<LightDataGI>.System.Collections.IEnumerable.GetEnumerator
@@ -70794,7 +81516,7 @@ internal class TweenRunner<T> // TypeDefIndex: 6756
 
 }
 
-internal sealed class CircularBuffer<T> // TypeDefIndex: 7621
+internal sealed class CircularBuffer<T> // TypeDefIndex: 7593
 {
 	private readonly int _capacity; 
 	private readonly T[] _buffer; 
@@ -70878,7 +81600,7 @@ internal sealed class CircularBuffer<T> // TypeDefIndex: 7621
 
 }
 
-internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7630
+internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7602
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -70913,7 +81635,7 @@ internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7630
 
 }
 
-internal struct GameEvent<T> // TypeDefIndex: 7706
+internal struct GameEvent<T> // TypeDefIndex: 7678
 {
 	[CompilerGeneratedAttribute] 
 	private string <GameId>k__BackingField; 
@@ -70989,7 +81711,7 @@ internal struct GameEvent<T> // TypeDefIndex: 7706
 
 }
 
-public class BoneDictionary // TypeDefIndex: 9127
+public class BoneDictionary // TypeDefIndex: 10796
 {
 	public Transform transform; 
 	public Transform[] transforms; 
@@ -71017,7 +81739,7 @@ public class BoneDictionary // TypeDefIndex: 9127
 
 }
 
-public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 9154
+public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10823
 {
 	public T component; 
 
@@ -71038,7 +81760,7 @@ public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 9154
 
 }
 
-public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 9233
+public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 10901
 {
 	[SerializeField] 
 	private AmplifyOcclusionEffect ssao; 
@@ -71352,7 +82074,7 @@ public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 923
 
 }
 
-public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 9568
+public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11236
 {
 	protected T owner; 
 	public MetabolismAttribute calories; 
@@ -71396,7 +82118,7 @@ public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 95
 
 }
 
-public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 9625
+public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 11293
 {
 
 public abstract class BaseModifiers<T> : EntityComponent<T>
@@ -71519,7 +82241,7 @@ public abstract class BaseModifiers<T> : EntityComponent<T>
 
 }
 
-public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 9975
+public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11643
 {
 	public T Component; 
 
@@ -71538,7 +82260,7 @@ public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 9975
 
 }
 
-public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 10421
+public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12089
 {
 	internal T[] src; 
 	internal T[] dst; 
@@ -71624,7 +82346,7 @@ public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 10421
 
 }
 
-public static class RecipeDictionary // TypeDefIndex: 10764
+public static class RecipeDictionary // TypeDefIndex: 12432
 {
 	private static Dictionary<uint, Dictionary<int, List<Recipe>>> recipeListsDict; 
 
@@ -71641,7 +82363,7 @@ public static class RecipeDictionary // TypeDefIndex: 10764
 
 }
 
-public struct CachedTransform<T> // TypeDefIndex: 11323
+public struct CachedTransform<T> // TypeDefIndex: 12991
 {
 	public T component; 
 	public Vector3 position; 
@@ -71724,7 +82446,7 @@ public struct CachedTransform<T> // TypeDefIndex: 11323
 
 }
 
-public class NativeList<T> : Pool.IPooled // TypeDefIndex: 11417
+public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13085
 {
 	private NativeArray<T> _array; 
 	private int _length; 
@@ -71818,7 +82540,7 @@ public class NativeList<T> : Pool.IPooled // TypeDefIndex: 11417
 
 }
 
-public class PooledList<T> // TypeDefIndex: 11423
+public class PooledList<T> // TypeDefIndex: 13091
 {
 	public List<T> data; 
 
@@ -71867,7 +82589,7 @@ public class PooledList<T> // TypeDefIndex: 11423
 
 }
 
-public class SimpleList<T> // TypeDefIndex: 11426
+public class SimpleList<T> // TypeDefIndex: 13094
 {
 	private const int defaultCapacity = 16;
 	private static readonly T[] emptyArray; 
@@ -72020,7 +82742,7 @@ public class SimpleList<T> // TypeDefIndex: 11426
 
 }
 
-public class TimeCachedValue<T> // TypeDefIndex: 11431
+public class TimeCachedValue<T> // TypeDefIndex: 13099
 {
 	public float refreshCooldown; 
 	public float refreshRandomRange; 
@@ -72051,7 +82773,7 @@ public class TimeCachedValue<T> // TypeDefIndex: 11431
 
 }
 
-public class ResourceRef<T> // TypeDefIndex: 11456
+public class ResourceRef<T> // TypeDefIndex: 13124
 {
 	public string guid; 
 	private T _cachedObject; 
@@ -72103,7 +82825,7 @@ public class ResourceRef<T> // TypeDefIndex: 11456
 
 }
 
-public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 11849
+public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13517
 {
 	public T value; 
 
@@ -72370,7 +83092,7 @@ public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 11849
 
 }
 
-public class GenericLerp<T> : IDisposable // TypeDefIndex: 12144
+public class GenericLerp<T> : IDisposable // TypeDefIndex: 13812
 {
 	private Interpolator<T> interpolator; 
 	private IGenericLerpTarget<T> target; 
@@ -72493,7 +83215,7 @@ public class GenericLerp<T> : IDisposable // TypeDefIndex: 12144
 
 }
 
-public class Interpolator<T> // TypeDefIndex: 12146
+public class Interpolator<T> // TypeDefIndex: 13814
 {
 	public List<T> list; 
 	public T last; 

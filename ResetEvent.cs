@@ -1,4 +1,4 @@
-public sealed class ResetEvent : SystemRealTimeEvent // TypeDefIndex: 7569
+public sealed class ResetEvent : SystemRealTimeEvent // TypeDefIndex: 7541
 {
 
 	public void .ctor() { }

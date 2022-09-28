@@ -1,4 +1,4 @@
-public class TriggerVehicleDrag : TriggerBase, IServerComponent // TypeDefIndex: 9250
+public class TriggerVehicleDrag : TriggerBase, IServerComponent // TypeDefIndex: 10918
 {
 	[TooltipAttribute] 
 	public Transform losEyes; 

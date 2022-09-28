@@ -1,4 +1,4 @@
-internal sealed class CodeTable : IDisposable // TypeDefIndex: 7825
+internal sealed class CodeTable : IDisposable // TypeDefIndex: 7797
 {
 	private Stream stream; 
 

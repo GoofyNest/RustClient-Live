@@ -1,4 +1,4 @@
-public enum RgbColor // TypeDefIndex: 10715
+public enum RgbColor // TypeDefIndex: 12383
 {
 	public int value__; 
 	public const RgbColor Default = 0;

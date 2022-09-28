@@ -1,4 +1,4 @@
-public sealed class Vignette : PostProcessEffectSettings // TypeDefIndex: 11839
+public sealed class Vignette : PostProcessEffectSettings // TypeDefIndex: 13507
 {
 	[TooltipAttribute] 
 	public VignetteModeParameter mode; 

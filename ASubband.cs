@@ -1,4 +1,4 @@
-public abstract class ASubband // TypeDefIndex: 7399
+public abstract class ASubband // TypeDefIndex: 7371
 {
 	internal static readonly float[] ScaleFactors; 
 

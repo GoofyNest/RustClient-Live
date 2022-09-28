@@ -1,4 +1,4 @@
-public class PointEntity : BaseEntity // TypeDefIndex: 9675
+public class PointEntity : BaseEntity // TypeDefIndex: 11343
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class RFBroadcaster : IOEntity, IRFObject // TypeDefIndex: 8439
+public class RFBroadcaster : IOEntity, IRFObject // TypeDefIndex: 10108
 {
 	private Option __menuOption_Menu_SetFreqency; 
 	public int frequency; 

@@ -385,7 +385,7 @@ public class CardTable.CardList : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class CardTable : BaseVehicle // TypeDefIndex: 8369
+public class CardTable : BaseVehicle // TypeDefIndex: 10038
 {
 	private Option __menuOption_Menu_Open; 
 	private Option __menuOption_Menu_Play; 
@@ -529,7 +529,7 @@ public class CardTable : BaseVehicle // TypeDefIndex: 8369
 
 }
 
-public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 8370
+public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIndex: 10039
 {
 	public int chipValue; 
 	public GameObject[] chips; 
@@ -541,14 +541,14 @@ public class CardTable.ChipStack : IComparable<CardTable.ChipStack> // TypeDefIn
 
 }
 
-public enum CardTable.CardGameOption // TypeDefIndex: 8371
+public enum CardTable.CardGameOption // TypeDefIndex: 10040
 {
 	public int value__; 
 	public const CardTable.CardGameOption TexasHoldEm = 0;
 
 }
 
-public class CardTable.PlayerStorageInfo // TypeDefIndex: 8372
+public class CardTable.PlayerStorageInfo // TypeDefIndex: 10041
 {
 	public Transform storagePos; 
 

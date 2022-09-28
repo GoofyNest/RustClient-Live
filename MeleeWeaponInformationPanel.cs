@@ -1,4 +1,4 @@
-public class MeleeWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 11053
+public class MeleeWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12721
 {
 	public ItemStatValue damageDisplay; 
 	public ItemStatValue attackRateDisplay; 

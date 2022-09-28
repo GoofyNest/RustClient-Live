@@ -1,4 +1,4 @@
-public class NewsParagraph : MonoBehaviour, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 11150
+public class NewsParagraph : MonoBehaviour, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12818
 {
 	public RustText Text; 
 	public List<string> Links; 

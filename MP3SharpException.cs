@@ -1,4 +1,4 @@
-public class MP3SharpException : Exception // TypeDefIndex: 7379
+public class MP3SharpException : Exception // TypeDefIndex: 7351
 {
 
 	internal void .ctor() { }

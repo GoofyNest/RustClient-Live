@@ -1661,7 +1661,412 @@ public class PlayerDetectedAIEventData : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public class PlayerIdleAnimationRandomiser : StateMachineBehaviour // TypeDefIndex: 8271
+public struct PlayerSanction // TypeDefIndex: 8581
+{
+	[CompilerGeneratedAttribute] 
+	private long <TimePlaced>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Action>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private long <TimeExpires>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <ReferenceId>k__BackingField; 
+
+	public long TimePlaced { get; set; }
+	public Utf8String Action { get; set; }
+	public long TimeExpires { get; set; }
+	public Utf8String ReferenceId { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public long get_TimePlaced() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_TimePlaced(long value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Action() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Action(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public long get_TimeExpires() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_TimeExpires(long value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_ReferenceId() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ReferenceId(Utf8String value) { }
+
+	internal void Set(ref PlayerSanctionInternal other) { }
+
+}
+
+internal struct PlayerSanctionInternal : IGettable<PlayerSanction>, ISettable<PlayerSanction>, IDisposable // TypeDefIndex: 8582
+{
+	private int m_ApiVersion; 
+	private long m_TimePlaced; 
+	private IntPtr m_Action; 
+	private long m_TimeExpires; 
+	private IntPtr m_ReferenceId; 
+
+	public long TimePlaced { get; set; }
+	public Utf8String Action { get; set; }
+	public long TimeExpires { get; set; }
+	public Utf8String ReferenceId { get; set; }
+
+
+	public long get_TimePlaced() { }
+
+	public void set_TimePlaced(long value) { }
+
+	public Utf8String get_Action() { }
+
+	public void set_Action(Utf8String value) { }
+
+	public long get_TimeExpires() { }
+
+	public void set_TimeExpires(long value) { }
+
+	public Utf8String get_ReferenceId() { }
+
+	public void set_ReferenceId(Utf8String value) { }
+
+	public void Set(ref PlayerSanction other) { }
+
+	public void Set(ref Nullable<PlayerSanction> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out PlayerSanction output) { }
+
+}
+
+public enum PlayerReportsCategory // TypeDefIndex: 8590
+{
+	public int value__; 
+	public const PlayerReportsCategory Invalid = 0;
+	public const PlayerReportsCategory Cheating = 1;
+	public const PlayerReportsCategory Exploiting = 2;
+	public const PlayerReportsCategory OffensiveProfile = 3;
+	public const PlayerReportsCategory VerbalAbuse = 4;
+	public const PlayerReportsCategory Scamming = 5;
+	public const PlayerReportsCategory Spamming = 6;
+	public const PlayerReportsCategory Other = 7;
+
+}
+
+public sealed class PlayerDataStorageFileTransferRequest : Handle // TypeDefIndex: 8866
+{
+
+	public void .ctor() { }
+
+	public void .ctor(IntPtr innerHandle) { }
+
+	public Result CancelRequest() { }
+
+	public Result GetFileRequestState() { }
+
+	public Result GetFilename(out Utf8String outStringBuffer) { }
+
+	public void Release() { }
+
+}
+
+public sealed class PlayerDataStorageInterface : Handle // TypeDefIndex: 8867
+{
+	public const int CopyfilemetadataatindexoptionsApiLatest = 1;
+	public const int CopyfilemetadatabyfilenameoptionsApiLatest = 1;
+	public const int DeletecacheoptionsApiLatest = 1;
+	public const int DeletefileoptionsApiLatest = 1;
+	public const int DuplicatefileoptionsApiLatest = 1;
+	public const int FileMaxSizeBytes = 67108864;
+	public const int FilemetadataApiLatest = 3;
+	public const int FilenameMaxLengthBytes = 64;
+	public const int GetfilemetadatacountoptionsApiLatest = 1;
+	public const int QueryfilelistoptionsApiLatest = 1;
+	public const int QueryfileoptionsApiLatest = 1;
+	public const int ReadfileoptionsApiLatest = 1;
+	public const int WritefileoptionsApiLatest = 1;
+
+
+	public void .ctor() { }
+
+	public void .ctor(IntPtr innerHandle) { }
+
+	public Result CopyFileMetadataAtIndex(ref CopyFileMetadataAtIndexOptions copyFileMetadataOptions, out Nullable<FileMetadata> outMetadata) { }
+
+	public Result CopyFileMetadataByFilename(ref CopyFileMetadataByFilenameOptions copyFileMetadataOptions, out Nullable<FileMetadata> outMetadata) { }
+
+	public Result DeleteCache(ref DeleteCacheOptions options, object clientData, OnDeleteCacheCompleteCallback completionCallback) { }
+
+	public void DeleteFile(ref DeleteFileOptions deleteOptions, object clientData, OnDeleteFileCompleteCallback completionCallback) { }
+
+	public void DuplicateFile(ref DuplicateFileOptions duplicateOptions, object clientData, OnDuplicateFileCompleteCallback completionCallback) { }
+
+	public Result GetFileMetadataCount(ref GetFileMetadataCountOptions getFileMetadataCountOptions, out int outFileMetadataCount) { }
+
+	public void QueryFile(ref QueryFileOptions queryFileOptions, object clientData, OnQueryFileCompleteCallback completionCallback) { }
+
+	public void QueryFileList(ref QueryFileListOptions queryFileListOptions, object clientData, OnQueryFileListCompleteCallback completionCallback) { }
+
+	public PlayerDataStorageFileTransferRequest ReadFile(ref ReadFileOptions readOptions, object clientData, OnReadFileCompleteCallback completionCallback) { }
+
+	public PlayerDataStorageFileTransferRequest WriteFile(ref WriteFileOptions writeOptions, object clientData, OnWriteFileCompleteCallback completionCallback) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnDeleteCacheCompleteCallbackInternalImplementation(ref DeleteCacheCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnDeleteFileCompleteCallbackInternalImplementation(ref DeleteFileCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnDuplicateFileCompleteCallbackInternalImplementation(ref DuplicateFileCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnFileTransferProgressCallbackInternalImplementation(ref FileTransferProgressCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnQueryFileCompleteCallbackInternalImplementation(ref QueryFileCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnQueryFileListCompleteCallbackInternalImplementation(ref QueryFileListCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnReadFileCompleteCallbackInternalImplementation(ref ReadFileCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static ReadResult OnReadFileDataCallbackInternalImplementation(ref ReadFileDataCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnWriteFileCompleteCallbackInternalImplementation(ref WriteFileCallbackInfoInternal data) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static WriteResult OnWriteFileDataCallbackInternalImplementation(ref WriteFileDataCallbackInfoInternal data, IntPtr outDataBuffer, ref uint outDataWritten) { }
+
+}
+
+public struct PlayerAchievement // TypeDefIndex: 9895
+{
+	[CompilerGeneratedAttribute] 
+	private Utf8String <AchievementId>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private double <Progress>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Nullable<DateTimeOffset> <UnlockTime>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private PlayerStatInfo[] <StatInfo>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <DisplayName>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Description>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <IconURL>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <FlavorText>k__BackingField; 
+
+	public Utf8String AchievementId { get; set; }
+	public double Progress { get; set; }
+	public Nullable<DateTimeOffset> UnlockTime { get; set; }
+	public PlayerStatInfo[] StatInfo { get; set; }
+	public Utf8String DisplayName { get; set; }
+	public Utf8String Description { get; set; }
+	public Utf8String IconURL { get; set; }
+	public Utf8String FlavorText { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_AchievementId() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_AchievementId(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public double get_Progress() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Progress(double value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Nullable<DateTimeOffset> get_UnlockTime() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_UnlockTime(Nullable<DateTimeOffset> value) { }
+
+	[CompilerGeneratedAttribute] 
+	public PlayerStatInfo[] get_StatInfo() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_StatInfo(PlayerStatInfo[] value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_DisplayName() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_DisplayName(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Description() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Description(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_IconURL() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_IconURL(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_FlavorText() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_FlavorText(Utf8String value) { }
+
+	internal void Set(ref PlayerAchievementInternal other) { }
+
+}
+
+internal struct PlayerAchievementInternal : IGettable<PlayerAchievement>, ISettable<PlayerAchievement>, IDisposable // TypeDefIndex: 9896
+{
+	private int m_ApiVersion; 
+	private IntPtr m_AchievementId; 
+	private double m_Progress; 
+	private long m_UnlockTime; 
+	private int m_StatInfoCount; 
+	private IntPtr m_StatInfo; 
+	private IntPtr m_DisplayName; 
+	private IntPtr m_Description; 
+	private IntPtr m_IconURL; 
+	private IntPtr m_FlavorText; 
+
+	public Utf8String AchievementId { get; set; }
+	public double Progress { get; set; }
+	public Nullable<DateTimeOffset> UnlockTime { get; set; }
+	public PlayerStatInfo[] StatInfo { get; set; }
+	public Utf8String DisplayName { get; set; }
+	public Utf8String Description { get; set; }
+	public Utf8String IconURL { get; set; }
+	public Utf8String FlavorText { get; set; }
+
+
+	public Utf8String get_AchievementId() { }
+
+	public void set_AchievementId(Utf8String value) { }
+
+	public double get_Progress() { }
+
+	public void set_Progress(double value) { }
+
+	public Nullable<DateTimeOffset> get_UnlockTime() { }
+
+	public void set_UnlockTime(Nullable<DateTimeOffset> value) { }
+
+	public PlayerStatInfo[] get_StatInfo() { }
+
+	public void set_StatInfo(PlayerStatInfo[] value) { }
+
+	public Utf8String get_DisplayName() { }
+
+	public void set_DisplayName(Utf8String value) { }
+
+	public Utf8String get_Description() { }
+
+	public void set_Description(Utf8String value) { }
+
+	public Utf8String get_IconURL() { }
+
+	public void set_IconURL(Utf8String value) { }
+
+	public Utf8String get_FlavorText() { }
+
+	public void set_FlavorText(Utf8String value) { }
+
+	public void Set(ref PlayerAchievement other) { }
+
+	public void Set(ref Nullable<PlayerAchievement> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out PlayerAchievement output) { }
+
+}
+
+public struct PlayerStatInfo // TypeDefIndex: 9897
+{
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Name>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private int <CurrentValue>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private int <ThresholdValue>k__BackingField; 
+
+	public Utf8String Name { get; set; }
+	public int CurrentValue { get; set; }
+	public int ThresholdValue { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Name() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Name(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public int get_CurrentValue() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_CurrentValue(int value) { }
+
+	[CompilerGeneratedAttribute] 
+	public int get_ThresholdValue() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ThresholdValue(int value) { }
+
+	internal void Set(ref PlayerStatInfoInternal other) { }
+
+}
+
+internal struct PlayerStatInfoInternal : IGettable<PlayerStatInfo>, ISettable<PlayerStatInfo>, IDisposable // TypeDefIndex: 9898
+{
+	private int m_ApiVersion; 
+	private IntPtr m_Name; 
+	private int m_CurrentValue; 
+	private int m_ThresholdValue; 
+
+	public Utf8String Name { get; set; }
+	public int CurrentValue { get; set; }
+	public int ThresholdValue { get; set; }
+
+
+	public Utf8String get_Name() { }
+
+	public void set_Name(Utf8String value) { }
+
+	public int get_CurrentValue() { }
+
+	public void set_CurrentValue(int value) { }
+
+	public int get_ThresholdValue() { }
+
+	public void set_ThresholdValue(int value) { }
+
+	public void Set(ref PlayerStatInfo other) { }
+
+	public void Set(ref Nullable<PlayerStatInfo> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out PlayerStatInfo output) { }
+
+}
+
+public class PlayerIdleAnimationRandomiser : StateMachineBehaviour // TypeDefIndex: 9940
 {
 	public int MaxValue; 
 	public static int Param_Random; 
@@ -1676,7 +2081,7 @@ public class PlayerIdleAnimationRandomiser : StateMachineBehaviour // TypeDefInd
 
 }
 
-public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotEntity // TypeDefIndex: 8338
+public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotEntity // TypeDefIndex: 10007
 {
 	private Option __menuOption_Climb; 
 	private Option __menuOption_Drink; 
@@ -2612,7 +3017,7 @@ public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotE
 
 }
 
-public enum BasePlayer.CameraMode // TypeDefIndex: 8339
+public enum BasePlayer.CameraMode // TypeDefIndex: 10008
 {
 	public int value__; 
 	public const BasePlayer.CameraMode FirstPerson = 0;
@@ -2624,7 +3029,7 @@ public enum BasePlayer.CameraMode // TypeDefIndex: 8339
 
 }
 
-public enum BasePlayer.PlayerFlags // TypeDefIndex: 8340
+public enum BasePlayer.PlayerFlags // TypeDefIndex: 10009
 {
 	public int value__; 
 	public const BasePlayer.PlayerFlags Unused1 = 1;
@@ -2652,7 +3057,7 @@ public enum BasePlayer.PlayerFlags // TypeDefIndex: 8340
 
 }
 
-public enum BasePlayer.MapNoteType // TypeDefIndex: 8341
+public enum BasePlayer.MapNoteType // TypeDefIndex: 10010
 {
 	public int value__; 
 	public const BasePlayer.MapNoteType Death = 0;
@@ -2660,7 +3065,7 @@ public enum BasePlayer.MapNoteType // TypeDefIndex: 8341
 
 }
 
-public enum BasePlayer.TimeCategory // TypeDefIndex: 8342
+public enum BasePlayer.TimeCategory // TypeDefIndex: 10011
 {
 	public int value__; 
 	public const BasePlayer.TimeCategory Wilderness = 1;
@@ -2673,7 +3078,7 @@ public enum BasePlayer.TimeCategory // TypeDefIndex: 8342
 
 }
 
-public struct BasePlayer.CapsuleColliderInfo // TypeDefIndex: 8343
+public struct BasePlayer.CapsuleColliderInfo // TypeDefIndex: 10012
 {
 	public float height; 
 	public float radius; 
@@ -2684,7 +3089,7 @@ public struct BasePlayer.CapsuleColliderInfo // TypeDefIndex: 8343
 
 }
 
-private sealed class BasePlayer.<>c // TypeDefIndex: 8344
+private sealed class BasePlayer.<>c // TypeDefIndex: 10013
 {
 	public static readonly BasePlayer.<>c <>9; 
 	public static Func<PlayerTeam.TeamMember, ulong> <>9__103_0; 
@@ -2704,7 +3109,7 @@ private sealed class BasePlayer.<>c // TypeDefIndex: 8344
 
 }
 
-private sealed class BasePlayer.<FinishedLoadingRoutine>d__161 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 8345
+private sealed class BasePlayer.<FinishedLoadingRoutine>d__161 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10014
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -2733,7 +3138,7 @@ private sealed class BasePlayer.<FinishedLoadingRoutine>d__161 : IEnumerator<obj
 
 }
 
-private sealed class BasePlayer.<>c__DisplayClass210_0 // TypeDefIndex: 8346
+private sealed class BasePlayer.<>c__DisplayClass210_0 // TypeDefIndex: 10015
 {
 	public GestureConfig g; 
 	public BasePlayer <>4__this; 
@@ -2745,7 +3150,7 @@ private sealed class BasePlayer.<>c__DisplayClass210_0 // TypeDefIndex: 8346
 
 }
 
-private sealed class BasePlayer.<>c__DisplayClass304_0 // TypeDefIndex: 8347
+private sealed class BasePlayer.<>c__DisplayClass304_0 // TypeDefIndex: 10016
 {
 	public uint index; 
 
@@ -2756,7 +3161,7 @@ private sealed class BasePlayer.<>c__DisplayClass304_0 // TypeDefIndex: 8347
 
 }
 
-private sealed class BasePlayer.<>c__DisplayClass306_0 // TypeDefIndex: 8348
+private sealed class BasePlayer.<>c__DisplayClass306_0 // TypeDefIndex: 10017
 {
 	public PetCommandList.PetCommandDesc desc; 
 	public BasePlayer <>4__this; 
@@ -2768,7 +3173,7 @@ private sealed class BasePlayer.<>c__DisplayClass306_0 // TypeDefIndex: 8348
 
 }
 
-public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 8623
+public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10292
 {
 	public ItemContainer containerMain; 
 	public ItemContainer containerBelt; 
@@ -2818,7 +3223,7 @@ public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 8623
 
 }
 
-public enum PlayerInventory.Type // TypeDefIndex: 8624
+public enum PlayerInventory.Type // TypeDefIndex: 10293
 {
 	public int value__; 
 	public const PlayerInventory.Type Main = 0;
@@ -2827,7 +3232,7 @@ public enum PlayerInventory.Type // TypeDefIndex: 8624
 
 }
 
-public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 8625
+public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10294
 {
 	public BaseEntity entitySource; 
 	public Item itemSource; 
@@ -2856,7 +3261,7 @@ public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 8625
 
 }
 
-public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 8626
+public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 10295
 {
 	public const float HotThreshold = 40;
 	public const float ColdThreshold = 5;
@@ -2903,7 +3308,7 @@ public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 8626
 
 }
 
-public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 8627
+public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10296
 {
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -2919,7 +3324,7 @@ public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 8627
 
 }
 
-public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 8706
+public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10375
 {
 	public BaseDetector myDetector; 
 
@@ -2928,7 +3333,7 @@ public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 8706
 
 }
 
-public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 9217
+public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10885
 {
 	public HairType type; 
 	private Dictionary<Renderer, PlayerModelHair.RendererMaterials> materials; 
@@ -2952,7 +3357,7 @@ public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 9217
 
 }
 
-public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 9218
+public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10886
 {
 	public string[] names; 
 	public Material[] original; 
@@ -2963,7 +3368,7 @@ public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 9218
 
 }
 
-public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 9220
+public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10888
 {
 	[InspectorFlagsAttribute] 
 	public HairCapMask hairCapMask; 
@@ -2975,7 +3380,7 @@ public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 9220
 
 }
 
-public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 9221
+public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10889
 {
 	public PlayerModelSkin.SkinMaterialType MaterialType; 
 	public Renderer SkinRenderer; 
@@ -2989,7 +3394,7 @@ public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex:
 
 }
 
-public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 9222
+public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10890
 {
 	public int value__; 
 	public const PlayerModelSkin.SkinMaterialType HEAD = 0;
@@ -2998,7 +3403,7 @@ public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 9222
 
 }
 
-public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 9411
+public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11079
 {
 	[CompilerGeneratedAttribute] 
 	private float <Range>k__BackingField; 
@@ -3016,7 +3421,7 @@ public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 9411
 
 }
 
-public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 9649
+public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11317
 {
 	private BasePlayer player; 
 
@@ -3045,7 +3450,7 @@ public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 9649
 
 }
 
-public class PlayerBelt // TypeDefIndex: 9650
+public class PlayerBelt // TypeDefIndex: 11318
 {
 	public static int SelectedSlot; 
 	protected BasePlayer player; 
@@ -3075,7 +3480,7 @@ public class PlayerBelt // TypeDefIndex: 9650
 
 }
 
-public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 9651
+public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 11319
 {
 	public SteamInventory steamInventory; 
 	private int[] craftableItems; 
@@ -3095,7 +3500,7 @@ public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 965
 
 }
 
-public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 9652
+public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11320
 {
 	public static readonly Vector3 EyeOffset; 
 	public static readonly Vector3 DuckOffset; 
@@ -3223,7 +3628,7 @@ public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 9652
 
 }
 
-public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 9653
+public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11321
 {
 	public InputState state; 
 	public bool hadInputBuffer; 
@@ -3305,7 +3710,7 @@ public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 9653
 
 }
 
-public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // TypeDefIndex: 9654
+public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // TypeDefIndex: 11322
 {
 	public static float pm_uplimit; 
 	public static float pm_downlimit; 
@@ -3723,7 +4128,7 @@ public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // Ty
 
 }
 
-public enum PlayerModel.MountPoses // TypeDefIndex: 9655
+public enum PlayerModel.MountPoses // TypeDefIndex: 11323
 {
 	public int value__; 
 	public const PlayerModel.MountPoses Chair = 0;
@@ -3759,7 +4164,7 @@ public enum PlayerModel.MountPoses // TypeDefIndex: 9655
 
 }
 
-public enum PlayerModel.ReactionDir // TypeDefIndex: 9656
+public enum PlayerModel.ReactionDir // TypeDefIndex: 11324
 {
 	public int value__; 
 	public const PlayerModel.ReactionDir North = 0;
@@ -3769,7 +4174,7 @@ public enum PlayerModel.ReactionDir // TypeDefIndex: 9656
 
 }
 
-private sealed class PlayerModel.<>c // TypeDefIndex: 9657
+private sealed class PlayerModel.<>c // TypeDefIndex: 11325
 {
 	public static readonly PlayerModel.<>c <>9; 
 	public static Func<Wearable, bool> <>9__199_0; 
@@ -3789,7 +4194,7 @@ private sealed class PlayerModel.<>c // TypeDefIndex: 9657
 
 }
 
-private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9658
+private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11326
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -3818,7 +4223,7 @@ private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<objec
 
 }
 
-private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 9659
+private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11327
 {
 	public string strName; 
 
@@ -3829,7 +4234,7 @@ private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 9659
 
 }
 
-private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 9660
+private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11328
 {
 	public string strName; 
 
@@ -3840,7 +4245,7 @@ private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 9660
 
 }
 
-public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // TypeDefIndex: 9661
+public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // TypeDefIndex: 11329
 {
 	public PlayerModelCinematicList.PlayerModelCinematicAnimation[] Animations; 
 
@@ -3853,7 +4258,7 @@ public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // Typ
 
 }
 
-public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefIndex: 9662
+public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefIndex: 11330
 {
 	public string StateName; 
 	public string ClipName; 
@@ -3861,7 +4266,7 @@ public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefI
 
 }
 
-public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 9663
+public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 11331
 {
 	private PlayerModel playerModel; 
 
@@ -3872,7 +4277,7 @@ public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 9
 
 }
 
-public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 9664
+public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11332
 {
 	public CanvasGroup canvasGroup; 
 	public Text text; 
@@ -3899,7 +4304,7 @@ public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 9664
 
 }
 
-public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 9666
+public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 11334
 {
 	internal static byte[] readBuffer; 
 	internal static byte[] readBufferUncompressed; 
@@ -3930,7 +4335,7 @@ public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 
 
 }
 
-public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 9667
+public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 11335
 {
 	public VoiceProcessor voiceProcessor; 
 	private float nextSpeechFakeChange; 
@@ -3964,7 +4369,7 @@ public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 9
 
 }
 
-public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 9673
+public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11341
 {
 	public const float WaterLevelHead = 0,75;
 	public const float WaterLevelNeck = 0,65;
@@ -4103,7 +4508,7 @@ public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 9673
 
 }
 
-public class PlayerCorpse : LootableCorpse // TypeDefIndex: 9674
+public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11342
 {
 	public Buoyancy buoyancy; 
 	public const BaseEntity.Flags Flag_Buoyant = 16384;
@@ -4130,7 +4535,7 @@ public class PlayerCorpse : LootableCorpse // TypeDefIndex: 9674
 
 }
 
-public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 10759
+public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12427
 {
 	public string niceName; 
 	public int order; 
@@ -4144,7 +4549,7 @@ public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 10759
 
 }
 
-public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 10760
+public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12428
 {
 	public ulong skinOverride; 
 
@@ -4153,7 +4558,7 @@ public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDef
 
 }
 
-public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 10817
+public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12485
 {
 
 	public override void Init(AIEventType eventType, BaseStateUI stateUI) { }
@@ -4166,7 +4571,7 @@ public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 10817
 
 }
 
-public class Player : ConsoleSystem // TypeDefIndex: 11977
+public class Player : ConsoleSystem // TypeDefIndex: 13645
 {
 	[ServerVar] 
 	public static int tickrate_cl; 
@@ -4219,7 +4624,7 @@ public class Player : ConsoleSystem // TypeDefIndex: 11977
 
 }
 
-public class PlayerCull : ConsoleSystem // TypeDefIndex: 11978
+public class PlayerCull : ConsoleSystem // TypeDefIndex: 13646
 {
 	private static bool _enabled; 
 	[ClientVar] 
@@ -4249,7 +4654,7 @@ public class PlayerCull : ConsoleSystem // TypeDefIndex: 11978
 
 }
 
-public enum PlayerMenuAnimation.Layers // TypeDefIndex: 12175
+public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13843
 {
 
 public enum PlayerMenuAnimation.Layers

@@ -1,4 +1,4 @@
-public sealed class KernelSizeParameter : ParameterOverride<KernelSize> // TypeDefIndex: 11805
+public sealed class KernelSizeParameter : ParameterOverride<KernelSize> // TypeDefIndex: 13473
 {
 
 	public void .ctor() { }

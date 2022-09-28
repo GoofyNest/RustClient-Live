@@ -1,4 +1,4 @@
-public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 8456
+public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 10125
 {
 	private Option __menuOption_Menu_WaterClear; 
 
@@ -23,7 +23,7 @@ public class SprayCanSpray : DecayEntity, ISplashable // TypeDefIndex: 8456
 
 }
 
-public class SprayCanSpray_Freehand : SprayCanSpray // TypeDefIndex: 8652
+public class SprayCanSpray_Freehand : SprayCanSpray // TypeDefIndex: 10321
 {
 	public AlignedLineDrawer LineDrawer; 
 	public List<AlignedLineDrawer.LinePoint> LinePoints; 
@@ -70,7 +70,7 @@ public class SprayCanSpray_Freehand : SprayCanSpray // TypeDefIndex: 8652
 
 }
 
-public class SprayCanSpray_Decal : SprayCanSpray, ICustomMaterialReplacer, IPropRenderNotify, INotifyLOD // TypeDefIndex: 8886
+public class SprayCanSpray_Decal : SprayCanSpray, ICustomMaterialReplacer, IPropRenderNotify, INotifyLOD // TypeDefIndex: 10555
 {
 	public DeferredDecal DecalComponent; 
 	public GameObject IconPreviewRoot; 

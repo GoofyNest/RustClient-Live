@@ -1,4 +1,4 @@
-public sealed class WaveformMonitor : Monitor // TypeDefIndex: 11847
+public sealed class WaveformMonitor : Monitor // TypeDefIndex: 13515
 {
 	public float exposure; 
 	public int height; 

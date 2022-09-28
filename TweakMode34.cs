@@ -1,4 +1,4 @@
-public enum TweakMode34 // TypeDefIndex: 8159
+public enum TweakMode34 // TypeDefIndex: 8132
 {
 	public int value__; 
 	public const TweakMode34 Basic = 0;

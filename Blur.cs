@@ -1,4 +1,4 @@
-public class Blur : MonoBehaviour, IImageEffect // TypeDefIndex: 8166
+public class Blur : MonoBehaviour, IImageEffect // TypeDefIndex: 8139
 {
 	public int iterations; 
 	public float blurSpread; 

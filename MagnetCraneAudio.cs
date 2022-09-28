@@ -1,4 +1,4 @@
-public class MagnetCraneAudio : MonoBehaviour // TypeDefIndex: 9736
+public class MagnetCraneAudio : MonoBehaviour // TypeDefIndex: 11404
 {
 	public MagnetCrane crane; 
 	[HeaderAttribute] 

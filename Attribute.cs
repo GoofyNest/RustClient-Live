@@ -246,3 +246,356 @@ internal class AttributeHelperEngine // TypeDefIndex: 3492
 
 }
 
+public enum AttributeType // TypeDefIndex: 8235
+{
+	public int value__; 
+	public const AttributeType Boolean = 0;
+	public const AttributeType Int64 = 1;
+	public const AttributeType Double = 2;
+	public const AttributeType String = 3;
+
+}
+
+public struct AttributeData // TypeDefIndex: 8420
+{
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Key>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private AttributeDataValue <Value>k__BackingField; 
+
+	public Utf8String Key { get; set; }
+	public AttributeDataValue Value { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Key() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Key(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public AttributeDataValue get_Value() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Value(AttributeDataValue value) { }
+
+	internal void Set(ref AttributeDataInternal other) { }
+
+}
+
+internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<AttributeData>, IDisposable // TypeDefIndex: 8421
+{
+	private int m_ApiVersion; 
+	private IntPtr m_Key; 
+	private AttributeDataValueInternal m_Value; 
+
+	public Utf8String Key { get; set; }
+	public AttributeDataValue Value { get; set; }
+
+
+	public Utf8String get_Key() { }
+
+	public void set_Key(Utf8String value) { }
+
+	public AttributeDataValue get_Value() { }
+
+	public void set_Value(AttributeDataValue value) { }
+
+	public void Set(ref AttributeData other) { }
+
+	public void Set(ref Nullable<AttributeData> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out AttributeData output) { }
+
+}
+
+public struct AttributeDataValue // TypeDefIndex: 8422
+{
+	private Nullable<long> m_AsInt64; 
+	private Nullable<double> m_AsDouble; 
+	private Nullable<bool> m_AsBool; 
+	private Utf8String m_AsUtf8; 
+	private AttributeType m_ValueType; 
+
+	public Nullable<long> AsInt64 { get; set; }
+	public Nullable<double> AsDouble { get; set; }
+	public Nullable<bool> AsBool { get; set; }
+	public Utf8String AsUtf8 { get; set; }
+	public AttributeType ValueType { get; set; }
+
+
+	public Nullable<long> get_AsInt64() { }
+
+	public void set_AsInt64(Nullable<long> value) { }
+
+	public Nullable<double> get_AsDouble() { }
+
+	public void set_AsDouble(Nullable<double> value) { }
+
+	public Nullable<bool> get_AsBool() { }
+
+	public void set_AsBool(Nullable<bool> value) { }
+
+	public Utf8String get_AsUtf8() { }
+
+	public void set_AsUtf8(Utf8String value) { }
+
+	public AttributeType get_ValueType() { }
+
+	private void set_ValueType(AttributeType value) { }
+
+	public static AttributeDataValue op_Implicit(long value) { }
+
+	public static AttributeDataValue op_Implicit(double value) { }
+
+	public static AttributeDataValue op_Implicit(bool value) { }
+
+	public static AttributeDataValue op_Implicit(Utf8String value) { }
+
+	public static AttributeDataValue op_Implicit(string value) { }
+
+	internal void Set(ref AttributeDataValueInternal other) { }
+
+}
+
+internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISettable<AttributeDataValue>, IDisposable // TypeDefIndex: 8423
+{
+	private long m_AsInt64; 
+	private double m_AsDouble; 
+	private int m_AsBool; 
+	private IntPtr m_AsUtf8; 
+	private AttributeType m_ValueType; 
+
+	public Nullable<long> AsInt64 { get; set; }
+	public Nullable<double> AsDouble { get; set; }
+	public Nullable<bool> AsBool { get; set; }
+	public Utf8String AsUtf8 { get; set; }
+
+
+	public Nullable<long> get_AsInt64() { }
+
+	public void set_AsInt64(Nullable<long> value) { }
+
+	public Nullable<double> get_AsDouble() { }
+
+	public void set_AsDouble(Nullable<double> value) { }
+
+	public Nullable<bool> get_AsBool() { }
+
+	public void set_AsBool(Nullable<bool> value) { }
+
+	public Utf8String get_AsUtf8() { }
+
+	public void set_AsUtf8(Utf8String value) { }
+
+	public void Set(ref AttributeDataValue other) { }
+
+	public void Set(ref Nullable<AttributeDataValue> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out AttributeDataValue output) { }
+
+}
+
+public struct Attribute // TypeDefIndex: 9033
+{
+	[CompilerGeneratedAttribute] 
+	private Nullable<AttributeData> <Data>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private LobbyAttributeVisibility <Visibility>k__BackingField; 
+
+	public Nullable<AttributeData> Data { get; set; }
+	public LobbyAttributeVisibility Visibility { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public Nullable<AttributeData> get_Data() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Data(Nullable<AttributeData> value) { }
+
+	[CompilerGeneratedAttribute] 
+	public LobbyAttributeVisibility get_Visibility() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Visibility(LobbyAttributeVisibility value) { }
+
+	internal void Set(ref AttributeInternal other) { }
+
+}
+
+internal struct AttributeInternal : IGettable<Attribute>, ISettable<Attribute>, IDisposable // TypeDefIndex: 9034
+{
+	private int m_ApiVersion; 
+	private IntPtr m_Data; 
+	private LobbyAttributeVisibility m_Visibility; 
+
+	public Nullable<AttributeData> Data { get; set; }
+	public LobbyAttributeVisibility Visibility { get; set; }
+
+
+	public Nullable<AttributeData> get_Data() { }
+
+	public void set_Data(Nullable<AttributeData> value) { }
+
+	public LobbyAttributeVisibility get_Visibility() { }
+
+	public void set_Visibility(LobbyAttributeVisibility value) { }
+
+	public void Set(ref Attribute other) { }
+
+	public void Set(ref Nullable<Attribute> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out Attribute output) { }
+
+}
+
+public struct AttributeData // TypeDefIndex: 9035
+{
+	[CompilerGeneratedAttribute] 
+	private Utf8String <Key>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private AttributeDataValue <Value>k__BackingField; 
+
+	public Utf8String Key { get; set; }
+	public AttributeDataValue Value { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_Key() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Key(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public AttributeDataValue get_Value() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Value(AttributeDataValue value) { }
+
+	internal void Set(ref AttributeDataInternal other) { }
+
+}
+
+internal struct AttributeDataInternal : IGettable<AttributeData>, ISettable<AttributeData>, IDisposable // TypeDefIndex: 9036
+{
+	private int m_ApiVersion; 
+	private IntPtr m_Key; 
+	private AttributeDataValueInternal m_Value; 
+
+	public Utf8String Key { get; set; }
+	public AttributeDataValue Value { get; set; }
+
+
+	public Utf8String get_Key() { }
+
+	public void set_Key(Utf8String value) { }
+
+	public AttributeDataValue get_Value() { }
+
+	public void set_Value(AttributeDataValue value) { }
+
+	public void Set(ref AttributeData other) { }
+
+	public void Set(ref Nullable<AttributeData> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out AttributeData output) { }
+
+}
+
+public struct AttributeDataValue // TypeDefIndex: 9037
+{
+	private Nullable<long> m_AsInt64; 
+	private Nullable<double> m_AsDouble; 
+	private Nullable<bool> m_AsBool; 
+	private Utf8String m_AsUtf8; 
+	private AttributeType m_ValueType; 
+
+	public Nullable<long> AsInt64 { get; set; }
+	public Nullable<double> AsDouble { get; set; }
+	public Nullable<bool> AsBool { get; set; }
+	public Utf8String AsUtf8 { get; set; }
+	public AttributeType ValueType { get; set; }
+
+
+	public Nullable<long> get_AsInt64() { }
+
+	public void set_AsInt64(Nullable<long> value) { }
+
+	public Nullable<double> get_AsDouble() { }
+
+	public void set_AsDouble(Nullable<double> value) { }
+
+	public Nullable<bool> get_AsBool() { }
+
+	public void set_AsBool(Nullable<bool> value) { }
+
+	public Utf8String get_AsUtf8() { }
+
+	public void set_AsUtf8(Utf8String value) { }
+
+	public AttributeType get_ValueType() { }
+
+	private void set_ValueType(AttributeType value) { }
+
+	public static AttributeDataValue op_Implicit(long value) { }
+
+	public static AttributeDataValue op_Implicit(double value) { }
+
+	public static AttributeDataValue op_Implicit(bool value) { }
+
+	public static AttributeDataValue op_Implicit(Utf8String value) { }
+
+	public static AttributeDataValue op_Implicit(string value) { }
+
+	internal void Set(ref AttributeDataValueInternal other) { }
+
+}
+
+internal struct AttributeDataValueInternal : IGettable<AttributeDataValue>, ISettable<AttributeDataValue>, IDisposable // TypeDefIndex: 9038
+{
+	private long m_AsInt64; 
+	private double m_AsDouble; 
+	private int m_AsBool; 
+	private IntPtr m_AsUtf8; 
+	private AttributeType m_ValueType; 
+
+	public Nullable<long> AsInt64 { get; set; }
+	public Nullable<double> AsDouble { get; set; }
+	public Nullable<bool> AsBool { get; set; }
+	public Utf8String AsUtf8 { get; set; }
+
+
+	public Nullable<long> get_AsInt64() { }
+
+	public void set_AsInt64(Nullable<long> value) { }
+
+	public Nullable<double> get_AsDouble() { }
+
+	public void set_AsDouble(Nullable<double> value) { }
+
+	public Nullable<bool> get_AsBool() { }
+
+	public void set_AsBool(Nullable<bool> value) { }
+
+	public Utf8String get_AsUtf8() { }
+
+	public void set_AsUtf8(Utf8String value) { }
+
+	public void Set(ref AttributeDataValue other) { }
+
+	public void Set(ref Nullable<AttributeDataValue> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out AttributeDataValue output) { }
+
+}
+

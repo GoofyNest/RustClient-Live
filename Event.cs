@@ -28,9 +28,6 @@ public sealed class EventHandler<TEventArgs> : MulticastDelegate // TypeDefIndex
 	public void .ctor(object object, IntPtr method) { }
 	/* GenericInstMethod :
 	|
-	|-EventHandler<LoadCompletedEventArgs>..ctor
-	|-EventHandler<LoadProgressEventArgs>..ctor
-	|-EventHandler<StateChangedEventArgs>..ctor
 	|-EventHandler<RowUpdatingEventArgs>..ctor
 	|-EventHandler<object>..ctor
 	*/
@@ -2138,22 +2135,7 @@ public enum EventTriggerType // TypeDefIndex: 5076
 
 }
 
-internal static class EventHandlerExtensions // TypeDefIndex: 7142
-{
-
-	[ExtensionAttribute] 
-	public static void Raise<T>(EventHandler<T> eventHandler, object sender, T eventArgs) { }
-	/* GenericInstMethod :
-	|
-	|-EventHandlerExtensions.Raise<LoadCompletedEventArgs>
-	|-EventHandlerExtensions.Raise<LoadProgressEventArgs>
-	|-EventHandlerExtensions.Raise<StateChangedEventArgs>
-	|-EventHandlerExtensions.Raise<object>
-	*/
-
-}
-
-public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7515
+public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7487
 {
 	internal readonly List<MidiEvent> _events; 
 	[CompilerGeneratedAttribute] 
@@ -2189,7 +2171,7 @@ public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiE
 
 }
 
-public sealed class EventTypesCollection // TypeDefIndex: 7531
+public sealed class EventTypesCollection // TypeDefIndex: 7503
 {
 	private readonly Dictionary<byte, Type> _types; 
 
@@ -2198,7 +2180,7 @@ public sealed class EventTypesCollection // TypeDefIndex: 7531
 
 }
 
-internal static class EventReaderFactory // TypeDefIndex: 7554
+internal static class EventReaderFactory // TypeDefIndex: 7526
 {
 	private static readonly IEventReader MetaEventReader; 
 	private static readonly IEventReader ChannelEventReader; 
@@ -2213,7 +2195,7 @@ internal static class EventReaderFactory // TypeDefIndex: 7554
 
 }
 
-public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 9821
+public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11489
 {
 	[TooltipAttribute] 
 	public float minimumHoursBetween; 

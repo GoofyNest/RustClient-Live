@@ -1,4 +1,4 @@
-public class ElectricSwitch : IOEntity // TypeDefIndex: 8388
+public class ElectricSwitch : IOEntity // TypeDefIndex: 10057
 {
 	private Option __menuOption_Menu_Toggle; 
 	private Option __menuOption_Menu_TurnOff; 

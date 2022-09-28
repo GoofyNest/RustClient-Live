@@ -1,4 +1,4 @@
-public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 8334
+public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10003
 {
 	private Option __menuOption_SwitchOff; 
 	private Option __menuOption_SwitchOn; 
@@ -58,7 +58,7 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 8334
 
 }
 
-public enum BaseOven.TemperatureType // TypeDefIndex: 8335
+public enum BaseOven.TemperatureType // TypeDefIndex: 10004
 {
 	public int value__; 
 	public const BaseOven.TemperatureType Normal = 0;
@@ -69,7 +69,7 @@ public enum BaseOven.TemperatureType // TypeDefIndex: 8335
 
 }
 
-private sealed class BaseOven.<>c // TypeDefIndex: 8336
+private sealed class BaseOven.<>c // TypeDefIndex: 10005
 {
 	public static readonly BaseOven.<>c <>9; 
 	public static Func<GameObject, BaseOven> <>9__27_0; 

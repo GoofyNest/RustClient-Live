@@ -36,8 +36,8 @@ public static class Interlocked // TypeDefIndex: 824
 
 	public static double CompareExchange(ref double location1, double value, double comparand) { }
 
-	[ComVisibleAttribute] 
 	[ReliabilityContractAttribute] 
+	[ComVisibleAttribute] 
 	public static T CompareExchange<T>(ref T location1, T value, T comparand) { }
 	/* GenericInstMethod :
 	|
@@ -51,8 +51,8 @@ public static class Interlocked // TypeDefIndex: 824
 
 	public static double Exchange(ref double location1, double value) { }
 
-	[ComVisibleAttribute] 
 	[ReliabilityContractAttribute] 
+	[ComVisibleAttribute] 
 	public static T Exchange<T>(ref T location1, T value) { }
 	/* GenericInstMethod :
 	|

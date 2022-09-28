@@ -1,4 +1,4 @@
-public class DecalRecycle : BasePrefab, IClientComponent, IEffectRecycle, IOnParentDestroying // TypeDefIndex: 9178
+public class DecalRecycle : BasePrefab, IClientComponent, IEffectRecycle, IOnParentDestroying // TypeDefIndex: 10847
 {
 	public float LifeTime; 
 	private Action recycleAction; 

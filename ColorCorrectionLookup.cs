@@ -1,4 +1,4 @@
-public class ColorCorrectionLookup : PostEffectsBase // TypeDefIndex: 8173
+public class ColorCorrectionLookup : PostEffectsBase // TypeDefIndex: 8146
 {
 	public Shader shader; 
 	private Material material; 

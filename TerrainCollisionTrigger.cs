@@ -1,4 +1,4 @@
-public class TerrainCollisionTrigger : EnvironmentVolumeTrigger // TypeDefIndex: 10397
+public class TerrainCollisionTrigger : EnvironmentVolumeTrigger // TypeDefIndex: 12065
 {
 
 	protected void OnTriggerEnter(Collider other) { }

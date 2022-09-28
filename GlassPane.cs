@@ -1,4 +1,4 @@
-public class GlassPane : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 9740
+public class GlassPane : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 11408
 {
 	public Renderer glassRendereer; 
 	[SerializeField] 

@@ -1,4 +1,4 @@
-public class ODQDQDQDQO : MonoBehaviour // TypeDefIndex: 7178
+public class ODQDQDQDQO : MonoBehaviour // TypeDefIndex: 7150
 {
 
 	public static Vector3 OODOQDOODO(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4, bool flag) { }

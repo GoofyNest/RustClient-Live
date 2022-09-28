@@ -1,4 +1,4 @@
-public abstract class BaseEditorExAttribute : PropertyAttribute // TypeDefIndex: 8017
+public abstract class BaseEditorExAttribute : PropertyAttribute // TypeDefIndex: 7990
 {
 	public string isTrue; 
 	public string isFalse; 

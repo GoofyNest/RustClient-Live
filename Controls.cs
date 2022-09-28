@@ -1,4 +1,4 @@
-public static class Controls // TypeDefIndex: 12045
+public static class Controls // TypeDefIndex: 13713
 {
 	public static float labelWidth; 
 

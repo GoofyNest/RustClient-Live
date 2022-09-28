@@ -1,4 +1,4 @@
-public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 10833
+public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 12501
 {
 	public SoundDefinition listComplete; 
 	public SoundDefinition itemComplete; 
@@ -42,7 +42,7 @@ public class Achievements : SingletonComponent<Achievements> // TypeDefIndex: 10
 
 }
 
-private sealed class Achievements.<Think>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10834
+private sealed class Achievements.<Think>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12502
 {
 	private int <>1__state; 
 	private object <>2__current; 

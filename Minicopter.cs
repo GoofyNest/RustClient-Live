@@ -63,7 +63,7 @@ public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 
 }
 
-public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 8293
+public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 9962
 {
 	[HeaderAttribute] 
 	public GameObjectRef fuelStoragePrefab; 

@@ -1,4 +1,4 @@
-public class TriggerWorkbench : TriggerBase // TypeDefIndex: 10058
+public class TriggerWorkbench : TriggerBase // TypeDefIndex: 11726
 {
 	public Workbench parentBench; 
 

@@ -1,4 +1,4 @@
-public class BasePrefab : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11322
+public class BasePrefab : BaseMonoBehaviour, IPrefabPreProcess // TypeDefIndex: 12990
 {
 	[HideInInspector] 
 	public uint prefabID; 

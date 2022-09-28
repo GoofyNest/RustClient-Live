@@ -1,4 +1,4 @@
-public abstract class WeatherEffectSting : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 10081
+public abstract class WeatherEffectSting : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 11749
 {
 	public float frequency; 
 	public float variance; 

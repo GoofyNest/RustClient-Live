@@ -1,4 +1,4 @@
-public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 10999
+public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 12667
 {
 	public GameObject queueContainer; 
 	public GameObject queueItemPrefab; 
@@ -31,7 +31,7 @@ public class CraftingQueue : SingletonComponent<CraftingQueue> // TypeDefIndex: 
 
 }
 
-private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 11000
+private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 12668
 {
 	public int taskid; 
 	public Func<CraftingQueueIcon, bool> <>9__0; 
@@ -43,7 +43,7 @@ private sealed class CraftingQueue.<>c__DisplayClass6_0 // TypeDefIndex: 11000
 
 }
 
-private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 11001
+private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 12669
 {
 	public int taskid; 
 	public Func<CraftingQueueIcon, bool> <>9__0; 
@@ -55,7 +55,7 @@ private sealed class CraftingQueue.<>c__DisplayClass9_0 // TypeDefIndex: 11001
 
 }
 
-private sealed class CraftingQueue.<>c__DisplayClass10_0 // TypeDefIndex: 11002
+private sealed class CraftingQueue.<>c__DisplayClass10_0 // TypeDefIndex: 12670
 {
 	public int taskid; 
 	public Func<CraftingQueueIcon, bool> <>9__0; 

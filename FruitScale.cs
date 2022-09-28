@@ -1,4 +1,4 @@
-public class FruitScale : MonoBehaviour, IClientComponent // TypeDefIndex: 9641
+public class FruitScale : MonoBehaviour, IClientComponent // TypeDefIndex: 11309
 {
 
 	public void SetProgress(float progress) { }

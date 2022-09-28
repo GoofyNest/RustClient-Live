@@ -1,4 +1,4 @@
-public static class MurmurHash // TypeDefIndex: 11415
+public static class MurmurHash // TypeDefIndex: 13083
 {
 	private const uint seed = 1337;
 

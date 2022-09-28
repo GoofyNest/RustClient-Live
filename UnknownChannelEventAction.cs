@@ -1,4 +1,4 @@
-public sealed class UnknownChannelEventAction // TypeDefIndex: 7605
+public sealed class UnknownChannelEventAction // TypeDefIndex: 7577
 {
 	public static readonly UnknownChannelEventAction Abort; 
 	[CompilerGeneratedAttribute] 

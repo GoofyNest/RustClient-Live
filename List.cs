@@ -18,6 +18,11 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Admin.ServerConvarInfo>..ctor
 	|-List.Enumerator<Chat.MuteEntry>..ctor
 	|-List.Enumerator<ERChildsSO>..ctor
+	|-List.Enumerator<PlayerStatInfoInternal>..ctor
+	|-List.Enumerator<StatThresholdsInternal>..ctor
+	|-List.Enumerator<ItemOwnershipInternal>..ctor
+	|-List.Enumerator<DataRecordInternal>..ctor
+	|-List.Enumerator<ParticipantMetadataInternal>..ctor
 	|-List.Enumerator<ExpandedLifeStats.GenericStatDisplay>..ctor
 	|-List.Enumerator<LocalClock.TimedEvent>..ctor
 	|-List.Enumerator<MapView.MapMarkerCluster>..ctor
@@ -150,8 +155,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ERVSData>..ctor
 	|-List.Enumerator<SqliteKeyReader.KeyInfo>..ctor
 	|
-	|-List.Enumerator<BoneData>..ctor
-	|
+	|-List.Enumerator<ModIdentifierInternal>..ctor
 	|-List.Enumerator<Tick.Entry>..ctor
 	|-List.Enumerator<Gibbable.OverrideMesh>..ctor
 	|-List.Enumerator<MeshInstance>..ctor
@@ -160,6 +164,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlaceMonumentsRailside.SpawnInfo>..ctor
 	|-List.Enumerator<PlaceMonumentsRoadside.SpawnInfo>..ctor
 	|-List.Enumerator<SubsurfaceProfileTexture.SubsurfaceProfileEntry>..ctor
+	|
+	|-List.Enumerator<BoneData>..ctor
 	|
 	|-List.Enumerator<FoliageGridMeshData.FoliageVertex>..ctor
 	|
@@ -290,6 +296,12 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<EngineDamageOverTime.RecentDamage>.Dispose
 	|-List.Enumerator<EntityRef<LootContainer>>.Dispose
 	|-List.Enumerator<EntityRef<object>>.Dispose
+	|-List.Enumerator<PlayerStatInfoInternal>.Dispose
+	|-List.Enumerator<StatThresholdsInternal>.Dispose
+	|-List.Enumerator<ItemOwnershipInternal>.Dispose
+	|-List.Enumerator<ModIdentifierInternal>.Dispose
+	|-List.Enumerator<DataRecordInternal>.Dispose
+	|-List.Enumerator<ParticipantMetadataInternal>.Dispose
 	|-List.Enumerator<ExpandedLifeStats.GenericStatDisplay>.Dispose
 	|-List.Enumerator<BurstCloth.Chain>.Dispose
 	|-List.Enumerator<BurstCloth>.Dispose
@@ -943,6 +955,11 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<AdvancedChristmasLights.pointEntry>.MoveNext
 	|-List.Enumerator<AlignedLineDrawer.LinePoint>.MoveNext
 	|-List.Enumerator<ERChildsSO>.MoveNext
+	|-List.Enumerator<PlayerStatInfoInternal>.MoveNext
+	|-List.Enumerator<StatThresholdsInternal>.MoveNext
+	|-List.Enumerator<ItemOwnershipInternal>.MoveNext
+	|-List.Enumerator<DataRecordInternal>.MoveNext
+	|-List.Enumerator<ParticipantMetadataInternal>.MoveNext
 	|-List.Enumerator<TickRenderer.Tick>.MoveNext
 	|
 	|-List.Enumerator<AtmosphereVolumeRenderer.CurrentVolumeEntry>.MoveNext
@@ -1059,6 +1076,9 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<DemoShotFloatKeyframe>.MoveNext
 	|-List.Enumerator<Vector2>.MoveNext
 	|
+	|-List.Enumerator<ModIdentifierInternal>.MoveNext
+	|-List.Enumerator<Gibbable.OverrideMesh>.MoveNext
+	|
 	|-List.Enumerator<BurstCloth.Chain>.MoveNext
 	|-List.Enumerator<MeshRendererLookup.LookupEntry>.MoveNext
 	|-List.Enumerator<Achievement>.MoveNext
@@ -1088,8 +1108,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<BeforeRenderHelper.OrderBlock>.MoveNext
 	|
 	|-List.Enumerator<FoliageGridMeshData.FoliageVertex>.MoveNext
-	|
-	|-List.Enumerator<Gibbable.OverrideMesh>.MoveNext
 	|
 	|-List.Enumerator<LocalClock.TimedEvent>.MoveNext
 	|-List.Enumerator<SynchronizedClock.TimedEvent>.MoveNext
@@ -1156,6 +1174,11 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Admin.ServerConvarInfo>.MoveNextRare
 	|-List.Enumerator<Chat.MuteEntry>.MoveNextRare
 	|-List.Enumerator<ERChildsSO>.MoveNextRare
+	|-List.Enumerator<PlayerStatInfoInternal>.MoveNextRare
+	|-List.Enumerator<StatThresholdsInternal>.MoveNextRare
+	|-List.Enumerator<ItemOwnershipInternal>.MoveNextRare
+	|-List.Enumerator<DataRecordInternal>.MoveNextRare
+	|-List.Enumerator<ParticipantMetadataInternal>.MoveNextRare
 	|-List.Enumerator<ExpandedLifeStats.GenericStatDisplay>.MoveNextRare
 	|-List.Enumerator<LocalClock.TimedEvent>.MoveNextRare
 	|-List.Enumerator<MapView.MapMarkerCluster>.MoveNextRare
@@ -1288,8 +1311,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ERVSData>.MoveNextRare
 	|-List.Enumerator<SqliteKeyReader.KeyInfo>.MoveNextRare
 	|
-	|-List.Enumerator<BoneData>.MoveNextRare
-	|
+	|-List.Enumerator<ModIdentifierInternal>.MoveNextRare
 	|-List.Enumerator<Tick.Entry>.MoveNextRare
 	|-List.Enumerator<Gibbable.OverrideMesh>.MoveNextRare
 	|-List.Enumerator<MeshInstance>.MoveNextRare
@@ -1298,6 +1320,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlaceMonumentsRailside.SpawnInfo>.MoveNextRare
 	|-List.Enumerator<PlaceMonumentsRoadside.SpawnInfo>.MoveNextRare
 	|-List.Enumerator<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.MoveNextRare
+	|
+	|-List.Enumerator<BoneData>.MoveNextRare
 	|
 	|-List.Enumerator<FoliageGridMeshData.FoliageVertex>.MoveNextRare
 	|
@@ -1656,6 +1680,11 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Cassette.LoadRequest>.get_Current
 	|-List.Enumerator<Admin.ServerConvarInfo>.get_Current
 	|-List.Enumerator<ERChildsSO>.get_Current
+	|-List.Enumerator<PlayerStatInfoInternal>.get_Current
+	|-List.Enumerator<StatThresholdsInternal>.get_Current
+	|-List.Enumerator<ItemOwnershipInternal>.get_Current
+	|-List.Enumerator<DataRecordInternal>.get_Current
+	|-List.Enumerator<ParticipantMetadataInternal>.get_Current
 	|-List.Enumerator<LocalClock.TimedEvent>.get_Current
 	|-List.Enumerator<TimelineEvent>.get_Current
 	|-List.Enumerator<InventoryRecipe.Ingredient>.get_Current
@@ -1754,6 +1783,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlaceMonumentsOffshore.SpawnInfo>.get_Current
 	|-List.Enumerator<PlaceMonumentsRailside.SpawnInfo>.get_Current
 	|-List.Enumerator<PlaceMonumentsRoadside.SpawnInfo>.get_Current
+	|-List.Enumerator<ModIdentifierInternal>.get_Current
 	|-List.Enumerator<Tick.Entry>.get_Current
 	|-List.Enumerator<Gibbable.OverrideMesh>.get_Current
 	|-List.Enumerator<MeshInstance>.get_Current
@@ -1826,6 +1856,11 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Admin.ServerConvarInfo>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Chat.MuteEntry>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<ERChildsSO>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<PlayerStatInfoInternal>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<StatThresholdsInternal>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<ItemOwnershipInternal>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<DataRecordInternal>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<ParticipantMetadataInternal>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<LocalClock.TimedEvent>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<MapView.MapMarkerCluster>.System.Collections.IEnumerator.get_Current
@@ -1958,8 +1993,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<double>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Vector2>.System.Collections.IEnumerator.get_Current
 	|
-	|-List.Enumerator<BoneData>.System.Collections.IEnumerator.get_Current
-	|
+	|-List.Enumerator<ModIdentifierInternal>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Tick.Entry>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Gibbable.OverrideMesh>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<MeshInstance>.System.Collections.IEnumerator.get_Current
@@ -1968,6 +2002,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IEnumerator.get_Current
+	|
+	|-List.Enumerator<BoneData>.System.Collections.IEnumerator.get_Current
 	|
 	|-List.Enumerator<FoliageGridMeshData.FoliageVertex>.System.Collections.IEnumerator.get_Current
 	|
@@ -2022,6 +2058,11 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Admin.ServerConvarInfo>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Chat.MuteEntry>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<ERChildsSO>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<PlayerStatInfoInternal>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<StatThresholdsInternal>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<ItemOwnershipInternal>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<DataRecordInternal>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<ParticipantMetadataInternal>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<ExpandedLifeStats.GenericStatDisplay>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<LocalClock.TimedEvent>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<MapView.MapMarkerCluster>.System.Collections.IEnumerator.Reset
@@ -2154,8 +2195,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ERVSData>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<SqliteKeyReader.KeyInfo>.System.Collections.IEnumerator.Reset
 	|
-	|-List.Enumerator<BoneData>.System.Collections.IEnumerator.Reset
-	|
+	|-List.Enumerator<ModIdentifierInternal>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Tick.Entry>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Gibbable.OverrideMesh>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<MeshInstance>.System.Collections.IEnumerator.Reset
@@ -2164,6 +2204,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<PlaceMonumentsRailside.SpawnInfo>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<PlaceMonumentsRoadside.SpawnInfo>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<SubsurfaceProfileTexture.SubsurfaceProfileEntry>.System.Collections.IEnumerator.Reset
+	|
+	|-List.Enumerator<BoneData>.System.Collections.IEnumerator.Reset
 	|
 	|-List.Enumerator<FoliageGridMeshData.FoliageVertex>.System.Collections.IEnumerator.Reset
 	|

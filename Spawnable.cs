@@ -59,7 +59,7 @@ public class Spawnable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6337
 
 }
 
-public class Spawnable : MonoBehaviour, IServerComponent // TypeDefIndex: 10002
+public class Spawnable : MonoBehaviour, IServerComponent // TypeDefIndex: 11670
 {
 	[ReadOnlyAttribute] 
 	public SpawnPopulation Population; 

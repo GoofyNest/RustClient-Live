@@ -1,4 +1,4 @@
-public class SoundFadeHQAudioFilter : MonoBehaviour, IClientComponent // TypeDefIndex: 9033
+public class SoundFadeHQAudioFilter : MonoBehaviour, IClientComponent // TypeDefIndex: 10702
 {
 	private SoundFade fade; 
 

@@ -22,8 +22,8 @@ public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 
 	public override int GetByteCount(string s) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public override int GetByteCount(char* chars, int count) { }
 
 	public override int GetBytes(string s, int charIndex, int charCount, byte[] bytes, int byteIndex) { }
@@ -36,8 +36,8 @@ public class UnicodeEncoding : Encoding // TypeDefIndex: 465
 
 	public override int GetCharCount(byte[] bytes, int index, int count) { }
 
-	[CLSCompliantAttribute] 
 	[ComVisibleAttribute] 
+	[CLSCompliantAttribute] 
 	public override int GetCharCount(byte* bytes, int count) { }
 
 	public override int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex) { }

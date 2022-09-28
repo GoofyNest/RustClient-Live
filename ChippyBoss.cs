@@ -1,4 +1,4 @@
-public class ChippyBoss : SpriteArcadeEntity // TypeDefIndex: 8769
+public class ChippyBoss : SpriteArcadeEntity // TypeDefIndex: 10438
 {
 	public Vector2 roamDistance; 
 	public float animationSpeed; 
@@ -36,7 +36,7 @@ public class ChippyBoss : SpriteArcadeEntity // TypeDefIndex: 8769
 
 }
 
-public class ChippyBoss.BossDamagePoint // TypeDefIndex: 8770
+public class ChippyBoss.BossDamagePoint // TypeDefIndex: 10439
 {
 	public BoxCollider hitBox; 
 	public float health; 

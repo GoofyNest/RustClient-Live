@@ -1,4 +1,4 @@
-public abstract class CardGameController : IDisposable // TypeDefIndex: 12032
+public abstract class CardGameController : IDisposable // TypeDefIndex: 13700
 {
 	[CompilerGeneratedAttribute] 
 	private CardGameController.CardGameState <State>k__BackingField; 
@@ -146,7 +146,7 @@ public abstract class CardGameController : IDisposable // TypeDefIndex: 12032
 
 }
 
-public enum CardGameController.CardGameState // TypeDefIndex: 12033
+public enum CardGameController.CardGameState // TypeDefIndex: 13701
 {
 	public int value__; 
 	public const CardGameController.CardGameState NotPlaying = 0;
@@ -155,7 +155,7 @@ public enum CardGameController.CardGameState // TypeDefIndex: 12033
 
 }
 
-private sealed class CardGameController.<>c__DisplayClass44_0 // TypeDefIndex: 12034
+private sealed class CardGameController.<>c__DisplayClass44_0 // TypeDefIndex: 13702
 {
 	public BasePlayer player; 
 
@@ -166,7 +166,7 @@ private sealed class CardGameController.<>c__DisplayClass44_0 // TypeDefIndex: 1
 
 }
 
-private sealed class CardGameController.<>c__DisplayClass48_0 // TypeDefIndex: 12035
+private sealed class CardGameController.<>c__DisplayClass48_0 // TypeDefIndex: 13703
 {
 	public ulong userID; 
 

@@ -1,4 +1,4 @@
-public class TimedRemoval : MonoBehaviour // TypeDefIndex: 9247
+public class TimedRemoval : MonoBehaviour // TypeDefIndex: 10915
 {
 	public Object objectToDestroy; 
 	public float removeDelay; 

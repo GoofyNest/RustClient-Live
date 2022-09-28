@@ -1,4 +1,4 @@
-public class EyeBlink : MonoBehaviour // TypeDefIndex: 9348
+public class EyeBlink : MonoBehaviour // TypeDefIndex: 11016
 {
 	public Transform LeftEye; 
 	public Transform LeftEyelid; 

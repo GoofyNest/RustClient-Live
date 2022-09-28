@@ -1,4 +1,4 @@
-public class SceneToPrefab : MonoBehaviour, IEditorComponent // TypeDefIndex: 9996
+public class SceneToPrefab : MonoBehaviour, IEditorComponent // TypeDefIndex: 11664
 {
 	public bool flattenHierarchy; 
 	public GameObject outputPrefab; 

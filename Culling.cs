@@ -1,4 +1,4 @@
-public class Culling : ConsoleSystem // TypeDefIndex: 11921
+public class Culling : ConsoleSystem // TypeDefIndex: 13589
 {
 	[ClientVar] 
 	public static float entityUpdateRate; 

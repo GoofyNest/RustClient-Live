@@ -1,4 +1,4 @@
-public class TriggerParent : TriggerBase, IServerComponent // TypeDefIndex: 10042
+public class TriggerParent : TriggerBase, IServerComponent // TypeDefIndex: 11710
 {
 	[TooltipAttribute] 
 	[SerializeField] 

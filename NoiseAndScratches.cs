@@ -1,4 +1,4 @@
-public class NoiseAndScratches : MonoBehaviour // TypeDefIndex: 8196
+public class NoiseAndScratches : MonoBehaviour // TypeDefIndex: 8169
 {
 	public bool monochrome; 
 	private bool rgbFallback; 

@@ -19,7 +19,7 @@ public static class TransformEx // TypeDefIndex: 5616
 
 }
 
-public static class TransformEx // TypeDefIndex: 11732
+public static class TransformEx // TypeDefIndex: 13400
 {
 
 	[ExtensionAttribute] 
@@ -113,7 +113,7 @@ public static class TransformEx // TypeDefIndex: 11732
 
 }
 
-private sealed class TransformEx.<>c__DisplayClass7_0 // TypeDefIndex: 11733
+private sealed class TransformEx.<>c__DisplayClass7_0 // TypeDefIndex: 13401
 {
 	public string strTag; 
 

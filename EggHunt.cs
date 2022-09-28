@@ -122,7 +122,7 @@ public class EggHunt.EggHunter : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class EggAmmoRepresentation : MonoBehaviour, IInventoryChanged, IClientComponent // TypeDefIndex: 8782
+public class EggAmmoRepresentation : MonoBehaviour, IInventoryChanged, IClientComponent // TypeDefIndex: 10451
 {
 	public GameObject[] eggAmmo; 
 
@@ -137,7 +137,7 @@ public class EggAmmoRepresentation : MonoBehaviour, IInventoryChanged, IClientCo
 
 }
 
-public class EggSwap : MonoBehaviour // TypeDefIndex: 8783
+public class EggSwap : MonoBehaviour // TypeDefIndex: 10452
 {
 	public Renderer[] eggRenderers; 
 
@@ -150,7 +150,7 @@ public class EggSwap : MonoBehaviour // TypeDefIndex: 8783
 
 }
 
-public class EggHuntEvent : BaseHuntEvent // TypeDefIndex: 8784
+public class EggHuntEvent : BaseHuntEvent // TypeDefIndex: 10453
 {
 	public float warmupTime; 
 	public float cooldownTime; 
@@ -185,7 +185,7 @@ public class EggHuntEvent : BaseHuntEvent // TypeDefIndex: 8784
 
 }
 
-public class EggHuntEvent.EggHunter // TypeDefIndex: 8785
+public class EggHuntEvent.EggHunter // TypeDefIndex: 10454
 {
 	public ulong userid; 
 	public string displayName; 
@@ -196,7 +196,7 @@ public class EggHuntEvent.EggHunter // TypeDefIndex: 8785
 
 }
 
-public class EggHuntNote : MonoBehaviour, IClientComponent // TypeDefIndex: 8791
+public class EggHuntNote : MonoBehaviour, IClientComponent // TypeDefIndex: 10460
 {
 	public CanvasGroup mainGroup; 
 	public CanvasGroup timerGroup; 

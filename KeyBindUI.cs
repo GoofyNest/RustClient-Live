@@ -1,4 +1,4 @@
-public class KeyBindUI : MonoBehaviour // TypeDefIndex: 11160
+public class KeyBindUI : MonoBehaviour // TypeDefIndex: 12828
 {
 	public GameObject blockingCanvas; 
 	public Button btnA; 

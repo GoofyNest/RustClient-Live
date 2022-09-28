@@ -1,4 +1,4 @@
-public static class PokerLib // TypeDefIndex: 8227
+public static class PokerLib // TypeDefIndex: 8200
 {
 	public const int CLUB = 32768;
 	public const int DIAMOND = 16384;
@@ -27,7 +27,7 @@ public static class PokerLib // TypeDefIndex: 8227
 
 }
 
-public enum PokerLib.PokerResult // TypeDefIndex: 8228
+public enum PokerLib.PokerResult // TypeDefIndex: 8201
 {
 	public int value__; 
 	public const PokerLib.PokerResult RoyalFlush = 0;

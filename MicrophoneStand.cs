@@ -60,7 +60,7 @@ public class MicrophoneStand : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class MicrophoneStand : BaseMountable // TypeDefIndex: 8608
+public class MicrophoneStand : BaseMountable // TypeDefIndex: 10277
 {
 	public VoiceProcessor VoiceProcessor; 
 	public AudioSource VoiceSource; 
@@ -105,7 +105,7 @@ public class MicrophoneStand : BaseMountable // TypeDefIndex: 8608
 
 }
 
-public enum MicrophoneStand.SpeechMode // TypeDefIndex: 8609
+public enum MicrophoneStand.SpeechMode // TypeDefIndex: 10278
 {
 	public int value__; 
 	public const MicrophoneStand.SpeechMode Normal = 0;

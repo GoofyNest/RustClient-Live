@@ -1,4 +1,4 @@
-public class HideIfAiming : MonoBehaviour, IEffect // TypeDefIndex: 8905
+public class HideIfAiming : MonoBehaviour, IEffect // TypeDefIndex: 10574
 {
 	public ParticleSystem[] systems; 
 

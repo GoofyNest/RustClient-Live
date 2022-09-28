@@ -1,4 +1,4 @@
-public class SendMessageToEntityOnAnimationFinish : StateMachineBehaviour // TypeDefIndex: 10718
+public class SendMessageToEntityOnAnimationFinish : StateMachineBehaviour // TypeDefIndex: 12386
 {
 	public string messageToSendToEntity; 
 	public float repeatRate; 

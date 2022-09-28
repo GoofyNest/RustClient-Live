@@ -1,4 +1,4 @@
-public class ByteMap // TypeDefIndex: 10288
+public class ByteMap // TypeDefIndex: 11956
 {
 	[SerializeField] 
 	private int size; 

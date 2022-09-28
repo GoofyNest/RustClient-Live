@@ -1,9 +1,9 @@
 public class Stack : ICollection, IEnumerable, ICloneable // TypeDefIndex: 1423
 {
 
-[DebuggerDisplayAttribute] 
-[DebuggerTypeProxyAttribute] 
 [ComVisibleAttribute] 
+[DebuggerTypeProxyAttribute] 
+[DebuggerDisplayAttribute] 
 [Serializable]
 public class Stack : ICollection, IEnumerable, ICloneable
 	private object[] _array; 

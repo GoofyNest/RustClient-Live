@@ -1,4 +1,4 @@
-public class CompoundBowWeapon : BowWeapon // TypeDefIndex: 8564
+public class CompoundBowWeapon : BowWeapon // TypeDefIndex: 10233
 {
 	public float stringHoldDurationMax; 
 	public float stringBonusDamage; 

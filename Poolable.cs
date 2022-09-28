@@ -1,4 +1,4 @@
-public class Poolable : MonoBehaviour, IClientComponent, IPrefabPostProcess // TypeDefIndex: 11446
+public class Poolable : MonoBehaviour, IClientComponent, IPrefabPostProcess // TypeDefIndex: 13114
 {
 	[HideInInspector] 
 	public uint prefabID; 

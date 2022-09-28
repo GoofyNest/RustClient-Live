@@ -1,4 +1,4 @@
-public class SelectedContact : SingletonComponent<SelectedContact> // TypeDefIndex: 10981
+public class SelectedContact : SingletonComponent<SelectedContact> // TypeDefIndex: 12649
 {
 	public RustText nameText; 
 	public RustText seenText; 

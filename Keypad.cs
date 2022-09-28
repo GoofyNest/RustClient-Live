@@ -1,4 +1,4 @@
-public enum Keypad.EFFECT_TYPE // TypeDefIndex: 7667
+public enum Keypad.EFFECT_TYPE // TypeDefIndex: 7639
 {
 
 public enum Keypad.EFFECT_TYPE
@@ -14,7 +14,7 @@ public enum Keypad.EFFECT_TYPE
 
 }
 
-public struct Keypad.STATIC_EFFECT_TYPE // TypeDefIndex: 7668
+public struct Keypad.STATIC_EFFECT_TYPE // TypeDefIndex: 7640
 {
 	public int Color; 
 

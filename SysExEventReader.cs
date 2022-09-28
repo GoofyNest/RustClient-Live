@@ -1,4 +1,4 @@
-internal sealed class SysExEventReader : IEventReader // TypeDefIndex: 7557
+internal sealed class SysExEventReader : IEventReader // TypeDefIndex: 7529
 {
 
 	public MidiEvent Read(MidiReader reader, ReadingSettings settings, byte currentStatusByte) { }

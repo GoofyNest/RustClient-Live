@@ -1,4 +1,4 @@
-public class WorkshopViewmodelControls : MonoBehaviour // TypeDefIndex: 7748
+public class WorkshopViewmodelControls : MonoBehaviour // TypeDefIndex: 7720
 {
 	public Toggle Enabled; 
 	public Toggle Ironsights; 

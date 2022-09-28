@@ -1,4 +1,4 @@
-public class FlameJet : MonoBehaviour // TypeDefIndex: 8901
+public class FlameJet : MonoBehaviour // TypeDefIndex: 10570
 {
 	public LineRenderer line; 
 	public float tesselation; 

@@ -516,6 +516,8 @@ public struct AsyncTaskMethodBuilder // TypeDefIndex: 1274
 	|
 	|-AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter, Client.<Connect>d__37>
 	|
+	|-AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter, EAC.<OnJoinServer>d__16>
+	|
 	|-AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter, Account.<ReadAllNotices>d__7>
 	|
 	|-AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter, SteamPlatform.<InventoryDropAsync>d__26>
@@ -1131,6 +1133,8 @@ public struct AsyncTaskMethodBuilder<TResult> // TypeDefIndex: 1275
 	|-AsyncTaskMethodBuilder<VoidTaskResult>.AwaitUnsafeOnCompleted<TaskAwaiter, Benchmarking.<RunSingleSceneAsync>d__8>
 	|
 	|-AsyncTaskMethodBuilder<VoidTaskResult>.AwaitUnsafeOnCompleted<TaskAwaiter, Client.<Connect>d__37>
+	|
+	|-AsyncTaskMethodBuilder<VoidTaskResult>.AwaitUnsafeOnCompleted<TaskAwaiter, EAC.<OnJoinServer>d__16>
 	|
 	|-AsyncTaskMethodBuilder<VoidTaskResult>.AwaitUnsafeOnCompleted<TaskAwaiter, Account.<ReadAllNotices>d__7>
 	|
@@ -2161,7 +2165,7 @@ public struct AsyncValueTaskMethodBuilder<TResult> // TypeDefIndex: 7094
 
 }
 
-public class AsyncTerrainNavMeshBake : CustomYieldInstruction // TypeDefIndex: 10324
+public class AsyncTerrainNavMeshBake : CustomYieldInstruction // TypeDefIndex: 11992
 {
 	private List<int> indices; 
 	private List<Vector3> vertices; 

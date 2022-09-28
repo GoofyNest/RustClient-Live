@@ -1,4 +1,4 @@
-internal sealed class VignetteRenderer : PostProcessEffectRenderer<Vignette> // TypeDefIndex: 11840
+internal sealed class VignetteRenderer : PostProcessEffectRenderer<Vignette> // TypeDefIndex: 13508
 {
 
 	public override void Render(PostProcessRenderContext context) { }

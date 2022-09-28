@@ -1,4 +1,4 @@
-public class WaterPurifier : LiquidContainer // TypeDefIndex: 9526
+public class WaterPurifier : LiquidContainer // TypeDefIndex: 11194
 {
 	public GameObjectRef storagePrefab; 
 	public Transform storagePrefabAnchor; 
@@ -14,7 +14,7 @@ public class WaterPurifier : LiquidContainer // TypeDefIndex: 9526
 
 }
 
-public static class WaterPurifier.WaterPurifierFlags // TypeDefIndex: 9527
+public static class WaterPurifier.WaterPurifierFlags // TypeDefIndex: 11195
 {
 	public const BaseEntity.Flags Boiling = 128;
 

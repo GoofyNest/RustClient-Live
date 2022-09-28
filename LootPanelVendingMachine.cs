@@ -1,4 +1,4 @@
-public class LootPanelVendingMachine : LootPanel, IVendingMachineInterface // TypeDefIndex: 8735
+public class LootPanelVendingMachine : LootPanel, IVendingMachineInterface // TypeDefIndex: 10404
 {
 	public GameObjectRef sellOrderPrefab; 
 	public GameObject sellOrderContainer; 

@@ -1,4 +1,4 @@
-public class WearableHairCap : MonoBehaviour // TypeDefIndex: 9259
+public class WearableHairCap : MonoBehaviour // TypeDefIndex: 10927
 {
 	public HairType Type; 
 	[ColorUsageAttribute] 

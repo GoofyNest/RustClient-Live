@@ -1,4 +1,4 @@
-public class InAttackRangeEventUI : BaseEventUI // TypeDefIndex: 10809
+public class InAttackRangeEventUI : BaseEventUI // TypeDefIndex: 12477
 {
 
 	public void .ctor() { }

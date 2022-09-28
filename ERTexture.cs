@@ -1,4 +1,4 @@
-public class ERTexture // TypeDefIndex: 7226
+public class ERTexture // TypeDefIndex: 7198
 {
 	public Texture2D texture; 
 	public float roadWidth; 

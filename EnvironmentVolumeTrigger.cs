@@ -1,4 +1,4 @@
-public class EnvironmentVolumeTrigger : MonoBehaviour // TypeDefIndex: 9872
+public class EnvironmentVolumeTrigger : MonoBehaviour // TypeDefIndex: 11540
 {
 	[CompilerGeneratedAttribute] 
 	private EnvironmentVolume <volume>k__BackingField; 

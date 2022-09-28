@@ -1,4 +1,4 @@
-public class SetupAppNotification : UIDialog // TypeDefIndex: 10920
+public class SetupAppNotification : UIDialog // TypeDefIndex: 12588
 {
 	public RustInput titleInput; 
 	public RustInput bodyInput; 

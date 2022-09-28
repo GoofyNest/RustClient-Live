@@ -13,8 +13,8 @@ public abstract class ConstructorInfo : MethodBase, _ConstructorInfo // TypeDefI
 
 	public override MemberTypes get_MemberType() { }
 
-	[DebuggerStepThroughAttribute] 
 	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute] 
 	public object Invoke(object[] parameters) { }
 
 	public abstract object Invoke(BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture);

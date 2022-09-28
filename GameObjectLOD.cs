@@ -1,4 +1,4 @@
-public class GameObjectLOD : LODComponent // TypeDefIndex: 9933
+public class GameObjectLOD : LODComponent // TypeDefIndex: 11601
 {
 	public float Distance; 
 	public GameObject TargetGameObject; 

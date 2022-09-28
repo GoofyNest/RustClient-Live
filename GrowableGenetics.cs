@@ -1,11 +1,11 @@
-public static class GrowableGenetics // TypeDefIndex: 9549
+public static class GrowableGenetics // TypeDefIndex: 11217
 {
 	public const int GeneSlotCount = 6;
 	public const float CrossBreedingRadius = 1,5;
 
 }
 
-public enum GrowableGenetics.GeneType // TypeDefIndex: 9550
+public enum GrowableGenetics.GeneType // TypeDefIndex: 11218
 {
 	public int value__; 
 	public const GrowableGenetics.GeneType Empty = 0;

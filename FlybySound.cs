@@ -1,4 +1,4 @@
-public class FlybySound : MonoBehaviour, IClientComponent // TypeDefIndex: 8994
+public class FlybySound : MonoBehaviour, IClientComponent // TypeDefIndex: 10663
 {
 	public SoundDefinition flybySound; 
 	public float flybySoundDistance; 

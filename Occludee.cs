@@ -1,4 +1,4 @@
-public class Occludee : MonoBehaviour // TypeDefIndex: 11535
+public class Occludee : MonoBehaviour // TypeDefIndex: 13203
 {
 	public float minTimeVisible; 
 	public bool isStatic; 

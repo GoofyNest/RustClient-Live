@@ -1,4 +1,4 @@
-public class WorkshopInterface : SingletonComponent<WorkshopInterface> // TypeDefIndex: 7750
+public class WorkshopInterface : SingletonComponent<WorkshopInterface> // TypeDefIndex: 7722
 {
 	internal WorkshopItemEditor Editor { get; }
 

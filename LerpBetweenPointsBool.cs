@@ -1,4 +1,4 @@
-public class LerpBetweenPointsBool : MonoBehaviour, IClientComponent // TypeDefIndex: 9506
+public class LerpBetweenPointsBool : MonoBehaviour, IClientComponent // TypeDefIndex: 11174
 {
 	public Vector3 offsetPosLocal; 
 	public float speed; 

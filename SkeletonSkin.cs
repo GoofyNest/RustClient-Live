@@ -1,4 +1,4 @@
-public class SkeletonSkin : MonoBehaviour // TypeDefIndex: 7354
+public class SkeletonSkin : MonoBehaviour // TypeDefIndex: 7326
 {
 	public SkinnedMeshRenderer SkinnedMeshRenderer; 
 	public SkeletonDefinition SkeletonDefinition; 

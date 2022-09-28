@@ -1,4 +1,4 @@
-public abstract class MeshBatch : MonoBehaviour // TypeDefIndex: 11412
+public abstract class MeshBatch : MonoBehaviour // TypeDefIndex: 13080
 {
 	[CompilerGeneratedAttribute] 
 	private bool <NeedsRefresh>k__BackingField; 

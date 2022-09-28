@@ -1,4 +1,4 @@
-public class HudElement : MonoBehaviour // TypeDefIndex: 10945
+public class HudElement : MonoBehaviour // TypeDefIndex: 12613
 {
 	public Text[] ValueText; 
 	public Image[] FilledImage; 

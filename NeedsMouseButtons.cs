@@ -1,4 +1,4 @@
-public class NeedsMouseButtons : ListComponent<NeedsMouseButtons> // TypeDefIndex: 8016
+public class NeedsMouseButtons : ListComponent<NeedsMouseButtons> // TypeDefIndex: 7989
 {
 
 	public static bool AnyActive() { }

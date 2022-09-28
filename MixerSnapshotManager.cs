@@ -1,4 +1,4 @@
-public class MixerSnapshotManager : SingletonComponent<MixerSnapshotManager>, IClientComponent // TypeDefIndex: 9000
+public class MixerSnapshotManager : SingletonComponent<MixerSnapshotManager>, IClientComponent // TypeDefIndex: 10669
 {
 	public AudioMixerSnapshot defaultSnapshot; 
 	public AudioMixerSnapshot underwaterSnapshot; 

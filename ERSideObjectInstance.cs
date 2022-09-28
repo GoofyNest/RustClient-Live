@@ -1,4 +1,4 @@
-public class ERSideObjectInstance : MonoBehaviour // TypeDefIndex: 7282
+public class ERSideObjectInstance : MonoBehaviour // TypeDefIndex: 7254
 {
 	[HideInInspector] 
 	public SideObject so; 

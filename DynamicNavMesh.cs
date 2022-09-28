@@ -1,4 +1,4 @@
-public class DynamicNavMesh : SingletonComponent<DynamicNavMesh>, IServerComponent // TypeDefIndex: 8960
+public class DynamicNavMesh : SingletonComponent<DynamicNavMesh>, IServerComponent // TypeDefIndex: 10629
 {
 	public int NavMeshAgentTypeIndex; 
 	[TooltipAttribute] 

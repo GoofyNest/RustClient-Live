@@ -1,4 +1,4 @@
-public abstract class BaseSpawnPoint : MonoBehaviour, IServerComponent // TypeDefIndex: 10003
+public abstract class BaseSpawnPoint : MonoBehaviour, IServerComponent // TypeDefIndex: 11671
 {
 
 	protected void .ctor() { }

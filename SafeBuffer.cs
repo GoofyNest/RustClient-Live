@@ -3,8 +3,8 @@ public abstract class SafeBuffer : SafeHandleZeroOrMinusOneIsInvalid // TypeDefI
 	private bool inited; 
 
 
-	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute] 
 	public void AcquirePointer(ref byte* pointer) { }
 
 	[ReliabilityContractAttribute] 

@@ -1,4 +1,4 @@
-public class OOQOQOODQC : MonoBehaviour // TypeDefIndex: 7169
+public class OOQOQOODQC : MonoBehaviour // TypeDefIndex: 7141
 {
 
 	public static void OCDCCCCCCQ(ERCrossings scr, QDOQDSQOOQDDD corner, List<List<Vector3>> sourceVecs, List<List<Vector2>> sourceUVs, List<List<int>> sourceTris, ref List<Vector3> vecs, ref List<Vector2> uvs, ref List<List<int>> triList, int triArrayElement, int leftrightroad, bool hardEdge) { }

@@ -101,8 +101,8 @@ private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=11614
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=21252
 
-[ComVisibleAttribute] 
 [ObsoleteAttribute] 
+[ComVisibleAttribute] 
 [Serializable]
 public sealed class UnmanagedMarshal
 

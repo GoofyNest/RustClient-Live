@@ -1,4 +1,4 @@
-public class StateFinishedEventUI : BaseEventUI // TypeDefIndex: 10820
+public class StateFinishedEventUI : BaseEventUI // TypeDefIndex: 12488
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-internal struct UpdateTransformsJob : IJobParallelForTransform // TypeDefIndex: 7322
+internal struct UpdateTransformsJob : IJobParallelForTransform // TypeDefIndex: 7294
 {
 	[ReadOnlyAttribute] 
 	[NativeMatchesParallelForLengthAttribute] 

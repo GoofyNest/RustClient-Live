@@ -1,4 +1,4 @@
-public enum ERDirectionType // TypeDefIndex: 7246
+public enum ERDirectionType // TypeDefIndex: 7218
 {
 	public int value__; 
 	public const ERDirectionType Straight = 0;

@@ -1,4 +1,4 @@
-internal sealed class NotesBuilder // TypeDefIndex: 7441
+internal sealed class NotesBuilder // TypeDefIndex: 7413
 {
 	private readonly NoteDetectionSettings _noteDetectionSettings; 
 
@@ -15,7 +15,7 @@ internal sealed class NotesBuilder // TypeDefIndex: 7441
 
 }
 
-private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7442
+private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7414
 {
 	[CompilerGeneratedAttribute] 
 	private readonly TimedEvent <NoteOnTimedEvent>k__BackingField; 
@@ -44,7 +44,7 @@ private class NotesBuilder.NoteDescriptor // TypeDefIndex: 7442
 
 }
 
-private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefIndex: 7443
+private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefIndex: 7415
 {
 	private readonly NoteStartDetectionPolicy _noteStartDetectionPolicy; 
 	private readonly Stack<LinkedListNode<TDescriptor>> _nodesStack; 
@@ -83,14 +83,14 @@ private abstract class NotesBuilder.NoteOnsHolderBase<TDescriptor> // TypeDefInd
 
 }
 
-private sealed class NotesBuilder.NoteOnsHolder : NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor> // TypeDefIndex: 7444
+private sealed class NotesBuilder.NoteOnsHolder : NotesBuilder.NoteOnsHolderBase<NotesBuilder.NoteDescriptor> // TypeDefIndex: 7416
 {
 
 	public void .ctor(NoteStartDetectionPolicy noteStartDetectionPolicy) { }
 
 }
 
-private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7445
+private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7417
 {
 	private int <>1__state; 
 	private Note <>2__current; 
@@ -141,7 +141,7 @@ private sealed class NotesBuilder.<GetNotesLazy>d__7 : IEnumerable<Note>, IEnume
 
 }
 
-private sealed class NotesBuilder.<GetNotesLazy>d__8 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7446
+private sealed class NotesBuilder.<GetNotesLazy>d__8 : IEnumerable<Note>, IEnumerable, IEnumerator<Note>, IDisposable, IEnumerator // TypeDefIndex: 7418
 {
 	private int <>1__state; 
 	private Note <>2__current; 

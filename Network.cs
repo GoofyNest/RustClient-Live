@@ -410,6 +410,7 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	/* GenericInstMethod :
 	|
 	|-Queue<string>.GetEnumerator
+	|-Queue<IntPtr>.GetEnumerator
 	|-Queue<object>.GetEnumerator
 	|-Queue<ulong>.GetEnumerator
 	|
@@ -418,8 +419,6 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Queue<RCon.Command>.GetEnumerator
 	|
 	|-Queue<int>.GetEnumerator
-	|
-	|-Queue<IntPtr>.GetEnumerator
 	|
 	|-Queue<AsyncGPUReadbackRequest>.GetEnumerator
 	|-Queue<EventDispatcher.EventRecord>.GetEnumerator
@@ -435,7 +434,6 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Queue<int>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-Queue<IntPtr>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
 	|-Queue<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Queue<ulong>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
@@ -453,7 +451,6 @@ public class Queue<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Queue<int>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-Queue<IntPtr>.System.Collections.IEnumerable.GetEnumerator
-	|
 	|-Queue<object>.System.Collections.IEnumerable.GetEnumerator
 	|-Queue<ulong>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -1240,6 +1237,8 @@ public class Connection // TypeDefIndex: 6683
 
 	public void RecordPacket(Stream stream) { }
 
+	public string IPAddressWithoutPort() { }
+
 	public virtual void OnDisconnected() { }
 
 	public bool get_isAuthenticated() { }
@@ -1303,11 +1302,12 @@ public class Connection.ClientInfo // TypeDefIndex: 6686
 
 public class NetRead : Stream // TypeDefIndex: 6696
 {
-	private MemoryStream _stream; 
+	public const int MaxPacketSize = 6291456;
+	public const int MaxBufferSize = 8388608;
 	public byte[] Data; 
 	public long _length; 
 	public long _position; 
-	private const int bufferSize = 1048576;
+	private const int bufferSize = 8388608;
 	private static byte[] byteBuffer; 
 	private static char[] charBuffer; 
 
@@ -1319,8 +1319,6 @@ public class NetRead : Stream // TypeDefIndex: 6696
 	public override bool CanSeek { get; }
 
 
-	public MemoryStream GetStreamForDecryption() { }
-
 	public bool Start(IntPtr data, int length) { }
 
 	public int get_Unread() { }
@@ -1331,7 +1329,7 @@ public class NetRead : Stream // TypeDefIndex: 6696
 
 	private string StringInternal(int maxLength, bool allowNewLine) { }
 
-	public string StringRaw(uint maxLength = 1048576) { }
+	public string StringRaw(uint maxLength = 8388608) { }
 
 	public bool TemporaryBytesWithSize(out byte[] buffer, out int size) { }
 
@@ -1818,18 +1816,7 @@ private sealed class NetGraphRow.<>c // TypeDefIndex: 7080
 
 }
 
-internal sealed class NetProtect : INetProtect // TypeDefIndex: 7166
-{
-
-	public void .ctor(IntPtr Instance) { }
-
-	public bool ProtectMessage(MemoryStream Input, long InputOffset, MemoryStream Output, long OutputOffset) { }
-
-	public bool UnprotectMessage(MemoryStream Input, long InputOffset, MemoryStream Output, long OutputOffset) { }
-
-}
-
-public class Net // TypeDefIndex: 8229
+public class Net // TypeDefIndex: 8202
 {
 	[CompilerGeneratedAttribute] 
 	private static Client <cl>k__BackingField; 
@@ -1855,7 +1842,50 @@ public class Net // TypeDefIndex: 8229
 
 }
 
-public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 9289
+public enum ConnectionClosedReason // TypeDefIndex: 8908
+{
+	public int value__; 
+	public const ConnectionClosedReason Unknown = 0;
+	public const ConnectionClosedReason ClosedByLocalUser = 1;
+	public const ConnectionClosedReason ClosedByPeer = 2;
+	public const ConnectionClosedReason TimedOut = 3;
+	public const ConnectionClosedReason TooManyConnections = 4;
+	public const ConnectionClosedReason InvalidMessage = 5;
+	public const ConnectionClosedReason InvalidData = 6;
+	public const ConnectionClosedReason ConnectionFailed = 7;
+	public const ConnectionClosedReason ConnectionClosed = 8;
+	public const ConnectionClosedReason NegotiationFailed = 9;
+	public const ConnectionClosedReason UnexpectedError = 10;
+
+}
+
+public enum ConnectionEstablishedType // TypeDefIndex: 8909
+{
+	public int value__; 
+	public const ConnectionEstablishedType NewConnection = 0;
+	public const ConnectionEstablishedType Reconnection = 1;
+
+}
+
+public enum NetworkConnectionType // TypeDefIndex: 8921
+{
+	public int value__; 
+	public const NetworkConnectionType NoConnection = 0;
+	public const NetworkConnectionType DirectConnection = 1;
+	public const NetworkConnectionType RelayedConnection = 2;
+
+}
+
+public enum NetworkStatus // TypeDefIndex: 9830
+{
+	public int value__; 
+	public const NetworkStatus Disabled = 0;
+	public const NetworkStatus Offline = 1;
+	public const NetworkStatus Online = 2;
+
+}
+
+public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 10957
 {
 	public TextMeshProUGUI text; 
 
@@ -1870,43 +1900,43 @@ public class NetworkInfoGeneralText : MonoBehaviour // TypeDefIndex: 9289
 
 }
 
-public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex: 10243
+public abstract class NetworkCryptography : INetworkCryptocraphy // TypeDefIndex: 11911
 {
-	private MemoryStream buffer; 
+	private byte[] buffer; 
 
 
-	public MemoryStream EncryptCopy(Connection connection, MemoryStream stream, int offset) { }
+	public ArraySegment<byte> EncryptCopy(Connection connection, ArraySegment<byte> data) { }
 
-	public MemoryStream DecryptCopy(Connection connection, MemoryStream stream, int offset) { }
+	public ArraySegment<byte> DecryptCopy(Connection connection, ArraySegment<byte> data) { }
 
-	public void Encrypt(Connection connection, MemoryStream stream, int offset) { }
+	public void Encrypt(Connection connection, ref ArraySegment<byte> data) { }
 
-	public void Decrypt(Connection connection, MemoryStream stream, int offset) { }
+	public void Decrypt(Connection connection, ref ArraySegment<byte> data) { }
 
 	public bool IsEnabledIncoming(Connection connection) { }
 
 	public bool IsEnabledOutgoing(Connection connection) { }
 
-	protected abstract void EncryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset);
+	protected abstract void EncryptionHandler(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst);
 
-	protected abstract void DecryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset);
+	protected abstract void DecryptionHandler(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst);
 
 	protected void .ctor() { }
 
 }
 
-public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 10244
+public class NetworkCryptographyClient : NetworkCryptography // TypeDefIndex: 11912
 {
 
-	protected override void EncryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
+	protected override void EncryptionHandler(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst) { }
 
-	protected override void DecryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
+	protected override void DecryptionHandler(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst) { }
 
 	public void .ctor() { }
 
 }
 
-public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 10245
+public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 11913
 {
 	public int startID; 
 	public int gridSize; 
@@ -1921,21 +1951,21 @@ public class NetworkVisibilityGrid : MonoBehaviour // TypeDefIndex: 10245
 
 }
 
-public class ConnectionAuth : MonoBehaviour // TypeDefIndex: 10719
+public class ConnectionAuth : MonoBehaviour // TypeDefIndex: 12387
 {
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionQueue // TypeDefIndex: 10720
+public class ConnectionQueue // TypeDefIndex: 12388
 {
 
 	public void .ctor() { }
 
 }
 
-public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefIndex: 11120
+public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefIndex: 12788
 {
 	public Text statusText; 
 	public GameObject disconnectButton; 
@@ -1971,7 +2001,7 @@ public class ConnectionScreen : SingletonComponent<ConnectionScreen> // TypeDefI
 
 }
 
-private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // TypeDefIndex: 11121
+private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // TypeDefIndex: 12789
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -1988,7 +2018,7 @@ private struct ConnectionScreen.<LoadServerInfo>d__13 : IAsyncStateMachine // Ty
 
 }
 
-private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // TypeDefIndex: 11122
+private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // TypeDefIndex: 12790
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -2002,7 +2032,7 @@ private struct ConnectionScreen.<LoadServerRules>d__14 : IAsyncStateMachine // T
 
 }
 
-public class NetworkSleep : MonoBehaviour // TypeDefIndex: 11346
+public class NetworkSleep : MonoBehaviour // TypeDefIndex: 13014
 {
 	public static int totalBehavioursDisabled; 
 	public static int totalCollidersDisabled; 
@@ -2018,7 +2048,7 @@ public class NetworkSleep : MonoBehaviour // TypeDefIndex: 11346
 
 }
 
-public static class NetworkWriteEx // TypeDefIndex: 11372
+public static class NetworkWriteEx // TypeDefIndex: 13040
 {
 
 	[ExtensionAttribute] 
@@ -2050,7 +2080,7 @@ public static class NetworkWriteEx // TypeDefIndex: 11372
 
 }
 
-public class NetworkedProperty<T> // TypeDefIndex: 11454
+public class NetworkedProperty<T> // TypeDefIndex: 13122
 {
 	private T val; 
 	private BaseEntity entity; 
@@ -2090,7 +2120,7 @@ public class NetworkedProperty<T> // TypeDefIndex: 11454
 
 }
 
-public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // TypeDefIndex: 11607
+public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // TypeDefIndex: 13275
 {
 	private readonly List<Variant> list; 
 
@@ -2118,7 +2148,7 @@ public sealed class ProxyArray : Variant, IEnumerable<Variant>, IEnumerable // T
 
 }
 
-public sealed class ProxyBoolean : Variant // TypeDefIndex: 11608
+public sealed class ProxyBoolean : Variant // TypeDefIndex: 13276
 {
 	private readonly bool value; 
 
@@ -2131,7 +2161,7 @@ public sealed class ProxyBoolean : Variant // TypeDefIndex: 11608
 
 }
 
-public sealed class ProxyNumber : Variant // TypeDefIndex: 11609
+public sealed class ProxyNumber : Variant // TypeDefIndex: 13277
 {
 	private static readonly char[] floatingPointCharacters; 
 	private readonly IConvertible value; 
@@ -2173,7 +2203,7 @@ public sealed class ProxyNumber : Variant // TypeDefIndex: 11609
 
 }
 
-public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Variant>>, IEnumerable // TypeDefIndex: 11610
+public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Variant>>, IEnumerable // TypeDefIndex: 13278
 {
 	public const string TypeHintKey = "@type";
 	private readonly Dictionary<string, Variant> dict; 
@@ -2209,7 +2239,7 @@ public sealed class ProxyObject : Variant, IEnumerable<KeyValuePair<string, Vari
 
 }
 
-public sealed class ProxyString : Variant // TypeDefIndex: 11611
+public sealed class ProxyString : Variant // TypeDefIndex: 13279
 {
 	private readonly string value; 
 
@@ -2220,7 +2250,7 @@ public sealed class ProxyString : Variant // TypeDefIndex: 11611
 
 }
 
-public class ConnectionLimiter // TypeDefIndex: 11669
+public class ConnectionLimiter // TypeDefIndex: 13337
 {
 	private readonly object _sync; 
 	private readonly Dictionary<IPAddress, int> _addressCounts; 
@@ -2239,7 +2269,7 @@ public class ConnectionLimiter // TypeDefIndex: 11669
 
 }
 
-private sealed class ConnectionLimiter.<>c // TypeDefIndex: 11670
+private sealed class ConnectionLimiter.<>c // TypeDefIndex: 13338
 {
 	public static readonly ConnectionLimiter.<>c <>9; 
 	public static Func<KeyValuePair<IPAddress, int>, int> <>9__7_0; 
@@ -2253,7 +2283,7 @@ private sealed class ConnectionLimiter.<>c // TypeDefIndex: 11670
 
 }
 
-public static class NetworkPacketEx // TypeDefIndex: 11727
+public static class NetworkPacketEx // TypeDefIndex: 13395
 {
 
 [ExtensionAttribute] 
@@ -2264,7 +2294,7 @@ public static class NetworkPacketEx
 
 }
 
-public class Net : ConsoleSystem // TypeDefIndex: 11971
+public class Net : ConsoleSystem // TypeDefIndex: 13639
 {
 	[ServerVar] 
 	public static bool visdebug; 
@@ -2282,7 +2312,7 @@ public class Net : ConsoleSystem // TypeDefIndex: 11971
 
 }
 
-public class Netgraph : ConsoleSystem // TypeDefIndex: 11972
+public class Netgraph : ConsoleSystem // TypeDefIndex: 13640
 {
 	[ClientVar] 
 	public static bool enabled; 

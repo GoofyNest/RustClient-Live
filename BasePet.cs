@@ -1,4 +1,4 @@
-public class BasePet : NPCPlayer // TypeDefIndex: 8337
+public class BasePet : NPCPlayer // TypeDefIndex: 10006
 {
 	private Option __menuOption_MenuDesignAI; 
 	[ServerVar] 

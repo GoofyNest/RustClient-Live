@@ -1,4 +1,4 @@
-public class TirednessAboveEventUI : BaseEventUI // TypeDefIndex: 10826
+public class TirednessAboveEventUI : BaseEventUI // TypeDefIndex: 12494
 {
 
 	public override AIEventData Save() { }

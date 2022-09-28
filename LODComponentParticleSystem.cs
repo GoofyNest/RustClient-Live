@@ -1,4 +1,4 @@
-public abstract class LODComponentParticleSystem : LODComponent // TypeDefIndex: 9939
+public abstract class LODComponentParticleSystem : LODComponent // TypeDefIndex: 11607
 {
 	[TooltipAttribute] 
 	public bool playOnShow; 

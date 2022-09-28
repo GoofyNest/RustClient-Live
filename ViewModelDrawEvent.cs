@@ -1,4 +1,4 @@
-public struct ViewModelDrawEvent : IEquatable<ViewModelDrawEvent> // TypeDefIndex: 11476
+public struct ViewModelDrawEvent : IEquatable<ViewModelDrawEvent> // TypeDefIndex: 13144
 {
 	public ViewModelRenderer viewModelRenderer; 
 	public Renderer renderer; 

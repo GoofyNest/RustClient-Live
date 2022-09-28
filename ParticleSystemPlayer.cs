@@ -1,4 +1,4 @@
-public class ParticleSystemPlayer : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 11353
+public class ParticleSystemPlayer : MonoBehaviour, IOnParentDestroying // TypeDefIndex: 13021
 {
 
 	protected void OnEnable() { }

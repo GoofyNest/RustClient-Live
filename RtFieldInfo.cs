@@ -9,8 +9,8 @@ internal abstract class RtFieldInfo : RuntimeFieldInfo // TypeDefIndex: 578
 	[DebuggerHiddenAttribute] 
 	internal void UnsafeSetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture) { }
 
-	[DebuggerStepThroughAttribute] 
 	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute] 
 	public override void SetValueDirect(TypedReference obj, object value) { }
 
 	protected void .ctor() { }

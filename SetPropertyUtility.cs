@@ -100,7 +100,7 @@ internal static class SetPropertyUtility // TypeDefIndex: 6798
 
 }
 
-internal static class SetPropertyUtility // TypeDefIndex: 11757
+internal static class SetPropertyUtility // TypeDefIndex: 13425
 {
 
 	public static bool SetColor(ref Color currentValue, Color newValue) { }

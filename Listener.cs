@@ -1,4 +1,4 @@
-public class Listener // TypeDefIndex: 7339
+public class Listener // TypeDefIndex: 7311
 {
 
 public class Listener
@@ -26,7 +26,7 @@ public class Listener
 
 }
 
-private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7340
+private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7312
 {
 	public string requiredPath; 
 	public Listener <>4__this; 
@@ -38,7 +38,7 @@ private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7340
 
 }
 
-private sealed class Listener.<>c__DisplayClass10_1 // TypeDefIndex: 7341
+private sealed class Listener.<>c__DisplayClass10_1 // TypeDefIndex: 7313
 {
 	public int id; 
 	public IWebSocketConnection socket; 
@@ -56,7 +56,7 @@ private sealed class Listener.<>c__DisplayClass10_1 // TypeDefIndex: 7341
 
 }
 
-private sealed class Listener.<>c // TypeDefIndex: 7342
+private sealed class Listener.<>c // TypeDefIndex: 7314
 {
 	public static readonly Listener.<>c <>9; 
 	public static Action<Exception> <>9__10_4; 

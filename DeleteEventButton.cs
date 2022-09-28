@@ -1,4 +1,4 @@
-public class DeleteEventButton : MonoBehaviour, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 10804
+public class DeleteEventButton : MonoBehaviour, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 12472
 {
 
 	public void OnPointerDown(PointerEventData eventData) { }

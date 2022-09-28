@@ -12,8 +12,8 @@ public struct IntPtr : ISerializable // TypeDefIndex: 369
 	[ReliabilityContractAttribute] 
 	public void .ctor(long value) { }
 
-	[CLSCompliantAttribute] 
 	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute] 
 	public void .ctor(void* value) { }
 
 	private void .ctor(SerializationInfo info, StreamingContext context) { }
@@ -30,8 +30,8 @@ public struct IntPtr : ISerializable // TypeDefIndex: 369
 	[ReliabilityContractAttribute] 
 	public long ToInt64() { }
 
-	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute] 
 	public void* ToPointer() { }
 
 	public override string ToString() { }
@@ -60,6 +60,9 @@ public struct IntPtr : ISerializable // TypeDefIndex: 369
 
 	[CLSCompliantAttribute] 
 	public static void* op_Explicit(IntPtr value) { }
+
+	[ReliabilityContractAttribute] 
+	public static IntPtr Add(IntPtr pointer, int offset) { }
 
 	[ReliabilityContractAttribute] 
 	internal bool IsNull() { }

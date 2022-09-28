@@ -1,4 +1,4 @@
-internal static class ThrowIfTimeArgument // TypeDefIndex: 7504
+internal static class ThrowIfTimeArgument // TypeDefIndex: 7476
 {
 
 	internal static void IsNegative(string parameterName, long time) { }

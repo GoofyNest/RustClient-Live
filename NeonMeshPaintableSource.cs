@@ -1,4 +1,4 @@
-public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 8837
+public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 10506
 {
 	public NeonSign neonSign; 
 	public float editorEmissionScale; 
@@ -20,7 +20,7 @@ public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 8837
 
 }
 
-private struct NeonMeshPaintableSource.<>c__DisplayClass8_0 // TypeDefIndex: 8838
+private struct NeonMeshPaintableSource.<>c__DisplayClass8_0 // TypeDefIndex: 10507
 {
 	public int width; 
 	public Color32[] pixels; 

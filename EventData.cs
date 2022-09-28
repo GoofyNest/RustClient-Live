@@ -1046,7 +1046,7 @@ public class InRangeOfHomeAIEventData : IDisposable, Pool.IPooled, IProto // Typ
 
 }
 
-internal struct ColorEventData // TypeDefIndex: 7702
+internal struct ColorEventData // TypeDefIndex: 7674
 {
 	[CompilerGeneratedAttribute] 
 	private float <Value>k__BackingField; 
@@ -1073,7 +1073,7 @@ internal struct ColorEventData // TypeDefIndex: 7702
 
 }
 
-internal struct EmptyEventData // TypeDefIndex: 7705
+internal struct EmptyEventData // TypeDefIndex: 7677
 {
 	[CompilerGeneratedAttribute] 
 	private int <Value>k__BackingField; 

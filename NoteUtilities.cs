@@ -1,4 +1,4 @@
-public static class NoteUtilities // TypeDefIndex: 7436
+public static class NoteUtilities // TypeDefIndex: 7408
 {
 
 	public static NoteName GetNoteName(SevenBitNumber noteNumber) { }

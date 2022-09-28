@@ -1,4 +1,4 @@
-public class CCTV_RC : PoweredRemoteControlEntity // TypeDefIndex: 8374
+public class CCTV_RC : PoweredRemoteControlEntity // TypeDefIndex: 10043
 {
 	private Option __menuOption_Menu_SetDir; 
 	public Transform pivotOrigin; 

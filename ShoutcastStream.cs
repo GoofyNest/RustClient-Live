@@ -1,4 +1,4 @@
-public class ShoutcastStream : IDisposable // TypeDefIndex: 12006
+public class ShoutcastStream : IDisposable // TypeDefIndex: 13674
 {
 	private static HttpClient client; 
 	[CompilerGeneratedAttribute] 
@@ -103,7 +103,7 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 12006
 
 }
 
-private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 12007
+private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 13675
 {
 	public Stream stream; 
 
@@ -114,7 +114,7 @@ private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 1200
 
 }
 
-private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeDefIndex: 12008
+private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeDefIndex: 13676
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -132,7 +132,7 @@ private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeD
 
 }
 
-private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // TypeDefIndex: 12009
+private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // TypeDefIndex: 13677
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<bool> <>t__builder; 
@@ -148,7 +148,7 @@ private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // Type
 
 }
 
-private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // TypeDefIndex: 12010
+private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // TypeDefIndex: 13678
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<bool> <>t__builder; 
@@ -164,7 +164,7 @@ private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // Type
 
 }
 
-private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // TypeDefIndex: 12011
+private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // TypeDefIndex: 13679
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

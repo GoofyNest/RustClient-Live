@@ -546,3 +546,205 @@ internal class AndroidJNISafe // TypeDefIndex: 4475
 
 }
 
+public static class AndroidBindings // TypeDefIndex: 8234
+{
+
+	internal static extern Result EOS_Initialize(ref AndroidInitializeOptionsInternal options) { }
+
+}
+
+public struct AndroidInitializeOptions // TypeDefIndex: 9812
+{
+	[CompilerGeneratedAttribute] 
+	private IntPtr <AllocateMemoryFunction>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private IntPtr <ReallocateMemoryFunction>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private IntPtr <ReleaseMemoryFunction>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <ProductName>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <ProductVersion>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private IntPtr <Reserved>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Nullable<AndroidInitializeOptionsSystemInitializeOptions> <SystemInitializeOptions>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Nullable<InitializeThreadAffinity> <OverrideThreadAffinity>k__BackingField; 
+
+	public IntPtr AllocateMemoryFunction { get; set; }
+	public IntPtr ReallocateMemoryFunction { get; set; }
+	public IntPtr ReleaseMemoryFunction { get; set; }
+	public Utf8String ProductName { get; set; }
+	public Utf8String ProductVersion { get; set; }
+	public IntPtr Reserved { get; set; }
+	public Nullable<AndroidInitializeOptionsSystemInitializeOptions> SystemInitializeOptions { get; set; }
+	public Nullable<InitializeThreadAffinity> OverrideThreadAffinity { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public IntPtr get_AllocateMemoryFunction() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_AllocateMemoryFunction(IntPtr value) { }
+
+	[CompilerGeneratedAttribute] 
+	public IntPtr get_ReallocateMemoryFunction() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ReallocateMemoryFunction(IntPtr value) { }
+
+	[CompilerGeneratedAttribute] 
+	public IntPtr get_ReleaseMemoryFunction() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ReleaseMemoryFunction(IntPtr value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_ProductName() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ProductName(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_ProductVersion() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_ProductVersion(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public IntPtr get_Reserved() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Reserved(IntPtr value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Nullable<AndroidInitializeOptionsSystemInitializeOptions> get_SystemInitializeOptions() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_SystemInitializeOptions(Nullable<AndroidInitializeOptionsSystemInitializeOptions> value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Nullable<InitializeThreadAffinity> get_OverrideThreadAffinity() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_OverrideThreadAffinity(Nullable<InitializeThreadAffinity> value) { }
+
+}
+
+internal struct AndroidInitializeOptionsInternal : ISettable<AndroidInitializeOptions>, IDisposable // TypeDefIndex: 9813
+{
+	private int m_ApiVersion; 
+	private IntPtr m_AllocateMemoryFunction; 
+	private IntPtr m_ReallocateMemoryFunction; 
+	private IntPtr m_ReleaseMemoryFunction; 
+	private IntPtr m_ProductName; 
+	private IntPtr m_ProductVersion; 
+	private IntPtr m_Reserved; 
+	private IntPtr m_SystemInitializeOptions; 
+	private IntPtr m_OverrideThreadAffinity; 
+
+	public IntPtr AllocateMemoryFunction { set; }
+	public IntPtr ReallocateMemoryFunction { set; }
+	public IntPtr ReleaseMemoryFunction { set; }
+	public Utf8String ProductName { set; }
+	public Utf8String ProductVersion { set; }
+	public IntPtr Reserved { set; }
+	public Nullable<AndroidInitializeOptionsSystemInitializeOptions> SystemInitializeOptions { set; }
+	public Nullable<InitializeThreadAffinity> OverrideThreadAffinity { set; }
+
+
+	public void set_AllocateMemoryFunction(IntPtr value) { }
+
+	public void set_ReallocateMemoryFunction(IntPtr value) { }
+
+	public void set_ReleaseMemoryFunction(IntPtr value) { }
+
+	public void set_ProductName(Utf8String value) { }
+
+	public void set_ProductVersion(Utf8String value) { }
+
+	public void set_Reserved(IntPtr value) { }
+
+	public void set_SystemInitializeOptions(Nullable<AndroidInitializeOptionsSystemInitializeOptions> value) { }
+
+	public void set_OverrideThreadAffinity(Nullable<InitializeThreadAffinity> value) { }
+
+	public void Set(ref AndroidInitializeOptions other) { }
+
+	public void Set(ref Nullable<AndroidInitializeOptions> other) { }
+
+	public void Dispose() { }
+
+}
+
+public struct AndroidInitializeOptionsSystemInitializeOptions // TypeDefIndex: 9814
+{
+	[CompilerGeneratedAttribute] 
+	private IntPtr <Reserved>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <OptionalInternalDirectory>k__BackingField; 
+	[CompilerGeneratedAttribute] 
+	private Utf8String <OptionalExternalDirectory>k__BackingField; 
+
+	public IntPtr Reserved { get; set; }
+	public Utf8String OptionalInternalDirectory { get; set; }
+	public Utf8String OptionalExternalDirectory { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public IntPtr get_Reserved() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_Reserved(IntPtr value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_OptionalInternalDirectory() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_OptionalInternalDirectory(Utf8String value) { }
+
+	[CompilerGeneratedAttribute] 
+	public Utf8String get_OptionalExternalDirectory() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_OptionalExternalDirectory(Utf8String value) { }
+
+	internal void Set(ref AndroidInitializeOptionsSystemInitializeOptionsInternal other) { }
+
+}
+
+internal struct AndroidInitializeOptionsSystemInitializeOptionsInternal : IGettable<AndroidInitializeOptionsSystemInitializeOptions>, ISettable<AndroidInitializeOptionsSystemInitializeOptions>, IDisposable // TypeDefIndex: 9815
+{
+	private int m_ApiVersion; 
+	private IntPtr m_Reserved; 
+	private IntPtr m_OptionalInternalDirectory; 
+	private IntPtr m_OptionalExternalDirectory; 
+
+	public IntPtr Reserved { get; set; }
+	public Utf8String OptionalInternalDirectory { get; set; }
+	public Utf8String OptionalExternalDirectory { get; set; }
+
+
+	public IntPtr get_Reserved() { }
+
+	public void set_Reserved(IntPtr value) { }
+
+	public Utf8String get_OptionalInternalDirectory() { }
+
+	public void set_OptionalInternalDirectory(Utf8String value) { }
+
+	public Utf8String get_OptionalExternalDirectory() { }
+
+	public void set_OptionalExternalDirectory(Utf8String value) { }
+
+	public void Set(ref AndroidInitializeOptionsSystemInitializeOptions other) { }
+
+	public void Set(ref Nullable<AndroidInitializeOptionsSystemInitializeOptions> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out AndroidInitializeOptionsSystemInitializeOptions output) { }
+
+}
+

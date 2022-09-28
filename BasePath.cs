@@ -1,4 +1,4 @@
-public class BasePath : MonoBehaviour // TypeDefIndex: 8861
+public class BasePath : MonoBehaviour // TypeDefIndex: 10530
 {
 	public List<BasePathNode> nodes; 
 	public List<PathInterestNode> interestZones; 

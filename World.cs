@@ -1,4 +1,4 @@
-public static class World // TypeDefIndex: 10326
+public static class World // TypeDefIndex: 11994
 {
 	[CompilerGeneratedAttribute] 
 	private static uint <Seed>k__BackingField; 
@@ -174,7 +174,7 @@ public static class World // TypeDefIndex: 10326
 
 }
 
-private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 10327
+private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 11995
 {
 	public Regex regex1; 
 	public Regex regex2; 
@@ -186,7 +186,7 @@ private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 10327
 
 }
 
-private sealed class World.<>c // TypeDefIndex: 10328
+private sealed class World.<>c // TypeDefIndex: 11996
 {
 	public static readonly World.<>c <>9; 
 	public static Func<PathData, PathList> <>9__65_0; 
@@ -200,7 +200,7 @@ private sealed class World.<>c // TypeDefIndex: 10328
 
 }
 
-private sealed class World.<SpawnAsync>d__68 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10329
+private sealed class World.<SpawnAsync>d__68 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11997
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -236,7 +236,7 @@ private sealed class World.<SpawnAsync>d__68 : IEnumerator<object>, IEnumerator,
 
 }
 
-private sealed class World.<Spawn>d__69 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10330
+private sealed class World.<Spawn>d__69 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11998
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -268,7 +268,7 @@ private sealed class World.<Spawn>d__69 : IEnumerator<object>, IEnumerator, IDis
 
 }
 
-public class World : ConsoleSystem // TypeDefIndex: 12003
+public class World : ConsoleSystem // TypeDefIndex: 13671
 {
 	[ServerVar] 
 	[ClientVar] 

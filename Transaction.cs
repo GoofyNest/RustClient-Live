@@ -72,3 +72,23 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3983
 
 }
 
+public sealed class Transaction : Handle // TypeDefIndex: 9470
+{
+	public const int TransactionCopyentitlementbyindexApiLatest = 1;
+	public const int TransactionGetentitlementscountApiLatest = 1;
+
+
+	public void .ctor() { }
+
+	public void .ctor(IntPtr innerHandle) { }
+
+	public Result CopyEntitlementByIndex(ref TransactionCopyEntitlementByIndexOptions options, out Nullable<Entitlement> outEntitlement) { }
+
+	public uint GetEntitlementsCount(ref TransactionGetEntitlementsCountOptions options) { }
+
+	public Result GetTransactionId(out Utf8String outBuffer) { }
+
+	public void Release() { }
+
+}
+

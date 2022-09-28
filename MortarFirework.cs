@@ -1,4 +1,4 @@
-public class MortarFirework : RepeatingFirework // TypeDefIndex: 8274
+public class MortarFirework : RepeatingFirework // TypeDefIndex: 9943
 {
 	public GameObjectRef[] shellTypes; 
 	public Transform emissionPoint; 

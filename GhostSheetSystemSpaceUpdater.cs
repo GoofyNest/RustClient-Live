@@ -1,4 +1,4 @@
-public class GhostSheetSystemSpaceUpdater : MonoBehaviour, IClientComponent // TypeDefIndex: 8678
+public class GhostSheetSystemSpaceUpdater : MonoBehaviour, IClientComponent // TypeDefIndex: 10347
 {
 	private EZSoftBone[] ezSoftBones; 
 	private BasePlayer player; 

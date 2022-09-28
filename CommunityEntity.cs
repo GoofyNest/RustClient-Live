@@ -1,4 +1,4 @@
-public class CommunityEntity : PointEntity // TypeDefIndex: 8554
+public class CommunityEntity : PointEntity // TypeDefIndex: 10223
 {
 	private static Dictionary<uint, List<MaskableGraphic>> requestingTextureImages; 
 	private static Dictionary<uint, CommunityEntity.CachedTexture> _textureCache; 
@@ -66,7 +66,7 @@ public class CommunityEntity : PointEntity // TypeDefIndex: 8554
 
 }
 
-private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 8555
+private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 10224
 {
 	public string command; 
 	public int endTime; 
@@ -87,7 +87,7 @@ private class CommunityEntity.Countdown : MonoBehaviour // TypeDefIndex: 8555
 
 }
 
-private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 8556
+private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 10225
 {
 	public float duration; 
 
@@ -100,7 +100,7 @@ private class CommunityEntity.FadeOut : MonoBehaviour // TypeDefIndex: 8556
 
 }
 
-private class CommunityEntity.CachedTexture // TypeDefIndex: 8557
+private class CommunityEntity.CachedTexture // TypeDefIndex: 10226
 {
 	public Texture2D Texture; 
 	public Sprite Sprite; 
@@ -112,7 +112,7 @@ private class CommunityEntity.CachedTexture // TypeDefIndex: 8557
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_0 // TypeDefIndex: 8558
+private sealed class CommunityEntity.<>c__DisplayClass19_0 // TypeDefIndex: 10227
 {
 	public Image c; 
 
@@ -121,7 +121,7 @@ private sealed class CommunityEntity.<>c__DisplayClass19_0 // TypeDefIndex: 8558
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 8559
+private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 10228
 {
 	public ulong requestedSkin; 
 	public CommunityEntity.<>c__DisplayClass19_0 CS$<>8__locals1; 
@@ -135,7 +135,7 @@ private sealed class CommunityEntity.<>c__DisplayClass19_1 // TypeDefIndex: 8559
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 8560
+private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 10229
 {
 	public string cmd; 
 
@@ -146,7 +146,7 @@ private sealed class CommunityEntity.<>c__DisplayClass19_2 // TypeDefIndex: 8560
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 8561
+private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 10230
 {
 	public string pnlName; 
 	public CommunityEntity <>4__this; 
@@ -158,7 +158,7 @@ private sealed class CommunityEntity.<>c__DisplayClass19_3 // TypeDefIndex: 8561
 
 }
 
-private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 8562
+private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 10231
 {
 	public string cmd; 
 
@@ -169,7 +169,7 @@ private sealed class CommunityEntity.<>c__DisplayClass19_4 // TypeDefIndex: 8562
 
 }
 
-private sealed class CommunityEntity.<LoadTextureFromWWW>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 8563
+private sealed class CommunityEntity.<LoadTextureFromWWW>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10232
 {
 	private int <>1__state; 
 	private object <>2__current; 

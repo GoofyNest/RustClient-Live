@@ -1,4 +1,4 @@
-public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11094
+public class LifeInfographic : MonoBehaviour // TypeDefIndex: 12762
 {
 	public PlayerLifeStory life; 
 	public GameObject container; 
@@ -47,7 +47,7 @@ public class LifeInfographic : MonoBehaviour // TypeDefIndex: 11094
 
 }
 
-public struct LifeInfographic.DamageSetting // TypeDefIndex: 11095
+public struct LifeInfographic.DamageSetting // TypeDefIndex: 12763
 {
 	public DamageType ForType; 
 	public string Display; 
@@ -55,7 +55,7 @@ public struct LifeInfographic.DamageSetting // TypeDefIndex: 11095
 
 }
 
-private sealed class LifeInfographic.<Animate>d__25 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11096
+private sealed class LifeInfographic.<Animate>d__25 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12764
 {
 	private int <>1__state; 
 	private object <>2__current; 

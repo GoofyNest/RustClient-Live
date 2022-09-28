@@ -1,4 +1,4 @@
-public class Zombie : BaseAnimalNPC // TypeDefIndex: 8947
+public class Zombie : BaseAnimalNPC // TypeDefIndex: 10616
 {
 	[ServerVar] 
 	public static float Population; 

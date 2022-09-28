@@ -36,20 +36,20 @@ public abstract class Decoder // TypeDefIndex: 433
 
 	public virtual int GetChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, bool flush) { }
 
-	[CLSCompliantAttribute] 
 	[ComVisibleAttribute] 
+	[CLSCompliantAttribute] 
 	public virtual int GetChars(byte* bytes, int byteCount, char* chars, int charCount, bool flush) { }
 
 	[ComVisibleAttribute] 
 	public virtual void Convert(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed) { }
 
-	[ComVisibleAttribute] 
 	[CLSCompliantAttribute] 
+	[ComVisibleAttribute] 
 	public virtual void Convert(byte* bytes, int byteCount, char* chars, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed) { }
 
 }
 
-public class Decoder // TypeDefIndex: 7389
+public class Decoder // TypeDefIndex: 7361
 {
 	private static readonly Decoder.Params DecoderDefaultParams; 
 	private Equalizer _Equalizer; 
@@ -87,7 +87,7 @@ public class Decoder // TypeDefIndex: 7389
 
 }
 
-public class Decoder.Params : ICloneable // TypeDefIndex: 7390
+public class Decoder.Params : ICloneable // TypeDefIndex: 7362
 {
 	private OutputChannels _OutputChannels; 
 	private readonly Equalizer _Equalizer; 
@@ -103,7 +103,7 @@ public class Decoder.Params : ICloneable // TypeDefIndex: 7390
 
 }
 
-public sealed class Decoder : IDisposable // TypeDefIndex: 11592
+public sealed class Decoder : IDisposable // TypeDefIndex: 13260
 {
 	private const string whiteSpace = " \t\n\r";
 	private const string wordBreak = " \t\n\r{}[],:\"";
@@ -145,7 +145,7 @@ public sealed class Decoder : IDisposable // TypeDefIndex: 11592
 
 }
 
-private enum Decoder.Token // TypeDefIndex: 11593
+private enum Decoder.Token // TypeDefIndex: 13261
 {
 	public int value__; 
 	public const Decoder.Token None = 0;

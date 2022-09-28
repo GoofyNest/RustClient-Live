@@ -1,4 +1,4 @@
-public class TriggerHurtEx : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 10724
+public class TriggerHurtEx : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 12392
 {
 	public float repeatRate; 
 	[HeaderAttribute] 
@@ -24,7 +24,7 @@ public class TriggerHurtEx : TriggerBase, IServerComponent, IHurtTrigger // Type
 
 }
 
-public enum TriggerHurtEx.HurtType // TypeDefIndex: 10725
+public enum TriggerHurtEx.HurtType // TypeDefIndex: 12393
 {
 	public int value__; 
 	public const TriggerHurtEx.HurtType Simple = 0;

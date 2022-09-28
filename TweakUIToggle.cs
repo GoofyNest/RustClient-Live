@@ -1,4 +1,4 @@
-public class TweakUIToggle : TweakUIBase // TypeDefIndex: 11173
+public class TweakUIToggle : TweakUIBase // TypeDefIndex: 12841
 {
 	public Toggle toggleControl; 
 	public bool inverse; 

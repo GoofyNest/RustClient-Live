@@ -31,18 +31,18 @@ public abstract class PropertyInfo : MemberInfo, _PropertyInfo // TypeDefIndex: 
 
 	public abstract MethodInfo GetSetMethod(bool nonPublic);
 
-	[DebuggerHiddenAttribute] 
 	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute] 
 	public virtual object GetValue(object obj, object[] index) { }
 
-	[DebuggerStepThroughAttribute] 
 	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute] 
 	public object GetValue(object obj) { }
 
 	public abstract object GetValue(object obj, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture);
 
-	[DebuggerHiddenAttribute] 
 	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute] 
 	public virtual void SetValue(object obj, object value, object[] index) { }
 
 	public abstract void SetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture);

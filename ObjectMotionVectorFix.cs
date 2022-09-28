@@ -1,4 +1,4 @@
-public class ObjectMotionVectorFix : MonoBehaviour // TypeDefIndex: 10698
+public class ObjectMotionVectorFix : MonoBehaviour // TypeDefIndex: 12366
 {
 	private Renderer renderer; 
 	private static Queue<Renderer> restoreQueue; 

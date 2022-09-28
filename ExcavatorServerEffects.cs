@@ -1,4 +1,4 @@
-public class ExcavatorServerEffects : MonoBehaviour // TypeDefIndex: 9636
+public class ExcavatorServerEffects : MonoBehaviour // TypeDefIndex: 11304
 {
 	public static ExcavatorServerEffects instance; 
 	public TriggerBase[] miningTriggers; 

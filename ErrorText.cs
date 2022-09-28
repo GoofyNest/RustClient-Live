@@ -1,4 +1,4 @@
-public class ErrorText : MonoBehaviour // TypeDefIndex: 10933
+public class ErrorText : MonoBehaviour // TypeDefIndex: 12601
 {
 	public TextMeshProUGUI text; 
 	public int maxLength; 

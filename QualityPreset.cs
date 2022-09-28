@@ -1,4 +1,4 @@
-public enum QualityPreset // TypeDefIndex: 11588
+public enum QualityPreset // TypeDefIndex: 13256
 {
 	public int value__; 
 	public const QualityPreset Low = 0;

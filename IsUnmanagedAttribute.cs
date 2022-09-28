@@ -19,14 +19,14 @@ internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 6902
 
 }
 
-internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 7306
+internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 7278
 {
 
 	public void .ctor() { }
 
 }
 
-internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 8249
+internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 9918
 {
 
 	public void .ctor() { }

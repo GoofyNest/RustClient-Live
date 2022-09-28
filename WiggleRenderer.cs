@@ -1,4 +1,4 @@
-public class WiggleRenderer : PostProcessEffectRenderer<Wiggle> // TypeDefIndex: 10282
+public class WiggleRenderer : PostProcessEffectRenderer<Wiggle> // TypeDefIndex: 11950
 {
 	private int timerProperty; 
 	private int scaleProperty; 

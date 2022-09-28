@@ -126,8 +126,8 @@ public class X509Certificate : IDeserializationCallback, ISerializable, IDisposa
 	[ComVisibleAttribute] 
 	public override bool Equals(object obj) { }
 
-	[ComVisibleAttribute] 
 	[MonoTODOAttribute] 
+	[ComVisibleAttribute] 
 	public virtual void Import(byte[] rawData, string password, X509KeyStorageFlags keyStorageFlags) { }
 
 	[MonoTODOAttribute] 

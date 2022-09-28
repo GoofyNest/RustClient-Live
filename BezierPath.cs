@@ -1,4 +1,4 @@
-public class BezierPath // TypeDefIndex: 11760
+public class BezierPath // TypeDefIndex: 13428
 {
 	public int SegmentsPerCurve; 
 	public float MINIMUM_SQR_DISTANCE; 

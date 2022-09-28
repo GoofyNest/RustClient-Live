@@ -1,4 +1,4 @@
-public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 8961
+public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 10630
 {
 	public int NavMeshAgentTypeIndex; 
 	[TooltipAttribute] 

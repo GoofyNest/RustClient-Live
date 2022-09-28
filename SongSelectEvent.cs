@@ -1,4 +1,4 @@
-public sealed class SongSelectEvent : SystemCommonEvent // TypeDefIndex: 7565
+public sealed class SongSelectEvent : SystemCommonEvent // TypeDefIndex: 7537
 {
 	[CompilerGeneratedAttribute] 
 	private SevenBitNumber <Number>k__BackingField; 

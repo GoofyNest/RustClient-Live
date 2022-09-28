@@ -1,31 +1,29 @@
-public static class EAC // TypeDefIndex: 9189
+public static class EAC // TypeDefIndex: 10858
 {
 	public static bool isLoading; 
 	public static string lastError; 
-	private static byte[] _lastTicket; 
+	public static string steamTicket; 
+	public static ProductUserId LocalUserId; 
+	public static AntiCheatClientInterface Interface; 
 
-	private static bool IsEacEnabled { get; }
 	public static bool IsEncryptionSupported { get; }
 
 
-	private static bool get_IsEacEnabled() { }
-
 	public static bool get_IsEncryptionSupported() { }
 
-	public static void Encrypt(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
+	public static void Encrypt(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst) { }
 
-	public static void Decrypt(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset) { }
+	public static void Decrypt(Connection connection, ArraySegment<byte> src, ref ArraySegment<byte> dst) { }
 
-	private static void OnLaunchProgress(object sender, LoadProgressEventArgs eventArgs) { }
+	private static void SendToServer(ref OnMessageToServerCallbackInfo data) { }
 
-	private static void OnLaunchCompleted(object sender, LoadCompletedEventArgs eventArgs) { }
+	private static void LoginCallback(ref LoginCallbackInfo data) { }
 
-	private static void OnStateChanged(object sender, StateChangedEventArgs eventArgs) { }
+	private static void CreateUserCallback(ref CreateUserCallbackInfo data) { }
 
-	private static void SendToServer(byte[] message, int messageLength) { }
+	private static void AuthExpirationCallback(ref AuthExpirationCallbackInfo data) { }
 
-	[IteratorStateMachineAttribute] 
-	public static IEnumerator DoStartup() { }
+	public static void DoStartup() { }
 
 	public static void DoShutdown() { }
 
@@ -42,39 +40,12 @@ public static class EAC // TypeDefIndex: 9189
 
 }
 
-private sealed class EAC.<DoStartup>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 9190
-{
-	private int <>1__state; 
-	private object <>2__current; 
-
-	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
-	private object System.Collections.IEnumerator.Current { get; }
-
-
-	[DebuggerHiddenAttribute] 
-	public void .ctor(int <>1__state) { }
-
-	[DebuggerHiddenAttribute] 
-	private void System.IDisposable.Dispose() { }
-
-	private bool MoveNext() { }
-
-	[DebuggerHiddenAttribute] 
-	private object System.Collections.Generic.IEnumerator<System.Object>.get_Current() { }
-
-	[DebuggerHiddenAttribute] 
-	private void System.Collections.IEnumerator.Reset() { }
-
-	[DebuggerHiddenAttribute] 
-	private object System.Collections.IEnumerator.get_Current() { }
-
-}
-
-private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 9191
+private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 10859
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
 	private TaskAwaiter<byte[]> <>u__1; 
+	private TaskAwaiter <>u__2; 
 
 
 	private void MoveNext() { }

@@ -1,4 +1,4 @@
-internal static class BurstExtensions // TypeDefIndex: 7314
+internal static class BurstExtensions // TypeDefIndex: 7286
 {
 
 	[ExtensionAttribute] 

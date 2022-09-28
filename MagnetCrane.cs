@@ -1,4 +1,4 @@
-public class MagnetCrane : GroundVehicle, IGenericLerpTarget<MagnetCrane.MagnetCraneSnapshot>, ILerpInfo // TypeDefIndex: 8408
+public class MagnetCrane : GroundVehicle, IGenericLerpTarget<MagnetCrane.MagnetCraneSnapshot>, ILerpInfo // TypeDefIndex: 10077
 {
 	private Option __menuOption_Menu_FuelStorage; 
 	private GenericLerp<MagnetCrane.MagnetCraneSnapshot> animInterp; 
@@ -123,7 +123,7 @@ public class MagnetCrane : GroundVehicle, IGenericLerpTarget<MagnetCrane.MagnetC
 
 }
 
-public struct MagnetCrane.MagnetCraneSnapshot : ISnapshot<MagnetCrane.MagnetCraneSnapshot> // TypeDefIndex: 8409
+public struct MagnetCrane.MagnetCraneSnapshot : ISnapshot<MagnetCrane.MagnetCraneSnapshot> // TypeDefIndex: 10078
 {
 	[CompilerGeneratedAttribute] 
 	private float <Time>k__BackingField; 

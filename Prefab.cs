@@ -1,4 +1,4 @@
-public class Prefab : IComparable<Prefab> // TypeDefIndex: 9976
+public class Prefab : IComparable<Prefab> // TypeDefIndex: 11644
 {
 	public uint ID; 
 	public string Name; 

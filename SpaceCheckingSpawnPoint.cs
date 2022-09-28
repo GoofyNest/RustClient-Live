@@ -1,4 +1,4 @@
-public class SpaceCheckingSpawnPoint : GenericSpawnPoint // TypeDefIndex: 10013
+public class SpaceCheckingSpawnPoint : GenericSpawnPoint // TypeDefIndex: 11681
 {
 	public bool useCustomBoundsCheckMask; 
 	public LayerMask customBoundsCheckMask; 

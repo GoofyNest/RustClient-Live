@@ -1,4 +1,4 @@
-public enum BlendModeType // TypeDefIndex: 10262
+public enum BlendModeType // TypeDefIndex: 11930
 {
 	public int value__; 
 	public const BlendModeType Screen = 0;

@@ -1,4 +1,4 @@
-public class TriggerHurt : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 10032
+public class TriggerHurt : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 11700
 {
 
 public class TriggerHurt : TriggerBase, IServerComponent, IHurtTrigger

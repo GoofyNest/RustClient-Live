@@ -1,4 +1,4 @@
-public class GenerateRoadTerrain : ProceduralComponent // TypeDefIndex: 10528
+public class GenerateRoadTerrain : ProceduralComponent // TypeDefIndex: 12196
 {
 	public const int SmoothenLoops = 2;
 	public const int SmoothenIterations = 8;
@@ -12,7 +12,7 @@ public class GenerateRoadTerrain : ProceduralComponent // TypeDefIndex: 10528
 
 }
 
-private sealed class GenerateRoadTerrain.<>c__DisplayClass4_0 // TypeDefIndex: 10529
+private sealed class GenerateRoadTerrain.<>c__DisplayClass4_0 // TypeDefIndex: 12197
 {
 	public TerrainTopologyMap topologymap; 
 
@@ -21,7 +21,7 @@ private sealed class GenerateRoadTerrain.<>c__DisplayClass4_0 // TypeDefIndex: 1
 
 }
 
-private sealed class GenerateRoadTerrain.<>c__DisplayClass4_1 // TypeDefIndex: 10530
+private sealed class GenerateRoadTerrain.<>c__DisplayClass4_1 // TypeDefIndex: 12198
 {
 	public PathInterpolator path; 
 	public GenerateRoadTerrain.<>c__DisplayClass4_0 CS$<>8__locals1; 

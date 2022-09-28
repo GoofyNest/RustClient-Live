@@ -1,4 +1,4 @@
-public sealed class NormalSysExEvent : SysExEvent // TypeDefIndex: 7561
+public sealed class NormalSysExEvent : SysExEvent // TypeDefIndex: 7533
 {
 
 	public void .ctor() { }

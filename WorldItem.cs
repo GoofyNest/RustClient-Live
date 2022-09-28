@@ -59,7 +59,7 @@ public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
 
 }
 
-public class WorldItem : BaseEntity // TypeDefIndex: 8670
+public class WorldItem : BaseEntity // TypeDefIndex: 10339
 {
 	[HeaderAttribute] 
 	public bool allowPickup; 

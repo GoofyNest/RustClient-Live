@@ -1,4 +1,4 @@
-public sealed class SubpixelMorphologicalAntialiasing // TypeDefIndex: 11832
+public sealed class SubpixelMorphologicalAntialiasing // TypeDefIndex: 13500
 {
 	[TooltipAttribute] 
 	public SubpixelMorphologicalAntialiasing.Quality quality; 
@@ -12,7 +12,7 @@ public sealed class SubpixelMorphologicalAntialiasing // TypeDefIndex: 11832
 
 }
 
-private enum SubpixelMorphologicalAntialiasing.Pass // TypeDefIndex: 11833
+private enum SubpixelMorphologicalAntialiasing.Pass // TypeDefIndex: 13501
 {
 	public int value__; 
 	public const SubpixelMorphologicalAntialiasing.Pass EdgeDetection = 0;
@@ -21,7 +21,7 @@ private enum SubpixelMorphologicalAntialiasing.Pass // TypeDefIndex: 11833
 
 }
 
-public enum SubpixelMorphologicalAntialiasing.Quality // TypeDefIndex: 11834
+public enum SubpixelMorphologicalAntialiasing.Quality // TypeDefIndex: 13502
 {
 	public int value__; 
 	public const SubpixelMorphologicalAntialiasing.Quality Low = 0;

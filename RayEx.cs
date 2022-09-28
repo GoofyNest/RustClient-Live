@@ -1,4 +1,4 @@
-public static class RayEx // TypeDefIndex: 11730
+public static class RayEx // TypeDefIndex: 13398
 {
 
 	[ExtensionAttribute] 

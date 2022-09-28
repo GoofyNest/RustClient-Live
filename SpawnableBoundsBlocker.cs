@@ -1,4 +1,4 @@
-public class SpawnableBoundsBlocker : MonoBehaviour // TypeDefIndex: 10287
+public class SpawnableBoundsBlocker : MonoBehaviour // TypeDefIndex: 11955
 {
 	public BoundsCheck.BlockType BlockType; 
 	public BoxCollider BoxCollider; 

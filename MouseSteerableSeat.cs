@@ -1,4 +1,4 @@
-public class MouseSteerableSeat : BaseVehicleSeat // TypeDefIndex: 9760
+public class MouseSteerableSeat : BaseVehicleSeat // TypeDefIndex: 11428
 {
 	[SerializeField] 
 	private bool supportsMouseSteer; 

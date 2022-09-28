@@ -1,4 +1,4 @@
-public class DecalBlood : DecalRecycle // TypeDefIndex: 9175
+public class DecalBlood : DecalRecycle // TypeDefIndex: 10844
 {
 
 	protected override void OnEnable() { }

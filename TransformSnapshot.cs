@@ -1,4 +1,4 @@
-public struct TransformSnapshot : ISnapshot<TransformSnapshot> // TypeDefIndex: 12148
+public struct TransformSnapshot : ISnapshot<TransformSnapshot> // TypeDefIndex: 13816
 {
 	[CompilerGeneratedAttribute] 
 	private float <Time>k__BackingField; 

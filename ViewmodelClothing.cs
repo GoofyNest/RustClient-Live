@@ -1,4 +1,4 @@
-public class ViewmodelClothing : MonoBehaviour // TypeDefIndex: 11558
+public class ViewmodelClothing : MonoBehaviour // TypeDefIndex: 13226
 {
 	public SkeletonSkin[] SkeletonSkins; 
 
@@ -11,7 +11,7 @@ public class ViewmodelClothing : MonoBehaviour // TypeDefIndex: 11558
 
 }
 
-private sealed class ViewmodelClothing.<>c__DisplayClass1_0 // TypeDefIndex: 11559
+private sealed class ViewmodelClothing.<>c__DisplayClass1_0 // TypeDefIndex: 13227
 {
 	public Item item; 
 	public Func<ItemSkinDirectory.Skin, bool> <>9__0; 

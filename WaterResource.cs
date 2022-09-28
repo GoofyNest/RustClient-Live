@@ -1,4 +1,4 @@
-public class WaterResource // TypeDefIndex: 10063
+public class WaterResource // TypeDefIndex: 11731
 {
 
 	public static ItemDefinition GetAtPoint(Vector3 pos) { }

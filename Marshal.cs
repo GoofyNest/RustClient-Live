@@ -112,6 +112,90 @@ public static class Marshal // TypeDefIndex: 1355
 	public static void StructureToPtr<T>(T structure, IntPtr ptr, bool fDeleteOld) { }
 	/* GenericInstMethod :
 	|
+	|-Marshal.StructureToPtr<PlayerStatInfoInternal>
+	|
+	|-Marshal.StructureToPtr<StatThresholdsInternal>
+	|
+	|-Marshal.StructureToPtr<LogEventParamPairInternal>
+	|
+	|-Marshal.StructureToPtr<LogPlayerUseWeaponDataInternal>
+	|
+	|-Marshal.StructureToPtr<QuatInternal>
+	|
+	|-Marshal.StructureToPtr<RegisterEventParamDefInternal>
+	|
+	|-Marshal.StructureToPtr<Vec3fInternal>
+	|
+	|-Marshal.StructureToPtr<AccountFeatureRestrictedInfoInternal>
+	|
+	|-Marshal.StructureToPtr<CredentialsInternal>
+	|
+	|-Marshal.StructureToPtr<IOSCredentialsInternal>
+	|
+	|-Marshal.StructureToPtr<IOSCredentialsSystemAuthCredentialsOptionsInternal>
+	|
+	|-Marshal.StructureToPtr<IdTokenInternal>
+	|
+	|-Marshal.StructureToPtr<PinGrantInfoInternal>
+	|
+	|-Marshal.StructureToPtr<TokenInternal>
+	|
+	|-Marshal.StructureToPtr<CredentialsInternal>
+	|
+	|-Marshal.StructureToPtr<IdTokenInternal>
+	|
+	|-Marshal.StructureToPtr<UserLoginInfoInternal>
+	|
+	|-Marshal.StructureToPtr<CheckoutEntryInternal>
+	|
+	|-Marshal.StructureToPtr<ItemOwnershipInternal>
+	|
+	|-Marshal.StructureToPtr<OptionsInternal>
+	|
+	|-Marshal.StructureToPtr<UserScoresQueryStatInfoInternal>
+	|
+	|-Marshal.StructureToPtr<AttributeDataInternal>
+	|
+	|-Marshal.StructureToPtr<LocalRTCOptionsInternal>
+	|
+	|-Marshal.StructureToPtr<ModIdentifierInternal>
+	|
+	|-Marshal.StructureToPtr<SocketIdInternal>
+	|
+	|-Marshal.StructureToPtr<AndroidInitializeOptionsSystemInitializeOptionsInternal>
+	|
+	|-Marshal.StructureToPtr<InitializeThreadAffinityInternal>
+	|
+	|-Marshal.StructureToPtr<RTCOptionsInternal>
+	|
+	|-Marshal.StructureToPtr<WindowsRTCOptionsInternal>
+	|
+	|-Marshal.StructureToPtr<WindowsRTCOptionsPlatformSpecificOptionsInternal>
+	|
+	|-Marshal.StructureToPtr<DataRecordInternal>
+	|
+	|-Marshal.StructureToPtr<PresenceModificationDataRecordIdInternal>
+	|
+	|-Marshal.StructureToPtr<ParticipantMetadataInternal>
+	|
+	|-Marshal.StructureToPtr<AudioBufferInternal>
+	|
+	|-Marshal.StructureToPtr<AttributeDataInternal>
+	|
+	|-Marshal.StructureToPtr<SessionDetailsInfoInternal>
+	|
+	|-Marshal.StructureToPtr<SessionDetailsSettingsInternal>
+	|
+	|-Marshal.StructureToPtr<IngestDataInternal>
+	|
+	|-Marshal.StructureToPtr<short>
+	|
+	|-Marshal.StructureToPtr<int>
+	|
+	|-Marshal.StructureToPtr<IntPtr>
+	|
+	|-Marshal.StructureToPtr<Nullable<byte>>
+	|
 	|-Marshal.StructureToPtr<object>
 	*/
 
@@ -125,6 +209,8 @@ public static class Marshal // TypeDefIndex: 1355
 	|-Marshal.UnsafeAddrOfPinnedArrayElement<object>
 	*/
 
+	public static void WriteByte(IntPtr ptr, int ofs, byte val) { }
+
 	public static void WriteInt16(IntPtr ptr, int ofs, short val) { }
 
 	private static IntPtr GetFunctionPointerForDelegateInternal(Delegate d) { }
@@ -132,6 +218,11 @@ public static class Marshal // TypeDefIndex: 1355
 	public static IntPtr GetFunctionPointerForDelegate<TDelegate>(TDelegate d) { }
 	/* GenericInstMethod :
 	|
+	|-Marshal.GetFunctionPointerForDelegate<OnFileTransferProgressCallbackInternal>
+	|-Marshal.GetFunctionPointerForDelegate<OnReadFileDataCallbackInternal>
+	|-Marshal.GetFunctionPointerForDelegate<OnWriteFileDataCallbackInternal>
+	|-Marshal.GetFunctionPointerForDelegate<OnFileTransferProgressCallbackInternal>
+	|-Marshal.GetFunctionPointerForDelegate<OnReadFileDataCallbackInternal>
 	|-Marshal.GetFunctionPointerForDelegate<BufferManager.FreeFn>
 	|-Marshal.GetFunctionPointerForDelegate<object>
 	|-Marshal.GetFunctionPointerForDelegate<OSSpecificSynchronizationContext.InvocationEntryDelegate>

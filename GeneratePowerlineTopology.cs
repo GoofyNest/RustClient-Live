@@ -1,4 +1,4 @@
-public class GeneratePowerlineTopology : ProceduralComponent // TypeDefIndex: 10493
+public class GeneratePowerlineTopology : ProceduralComponent // TypeDefIndex: 12161
 {
 
 	public override void Process(uint seed) { }

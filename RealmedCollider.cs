@@ -1,4 +1,4 @@
-public class RealmedCollider : BasePrefab // TypeDefIndex: 9992
+public class RealmedCollider : BasePrefab // TypeDefIndex: 11660
 {
 	public Collider ServerCollider; 
 	public Collider ClientCollider; 

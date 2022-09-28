@@ -1,4 +1,4 @@
-public class HealthBelowAIEvent : BaseAIEvent // TypeDefIndex: 9400
+public class HealthBelowAIEvent : BaseAIEvent // TypeDefIndex: 11068
 {
 	[CompilerGeneratedAttribute] 
 	private float <HealthFraction>k__BackingField; 

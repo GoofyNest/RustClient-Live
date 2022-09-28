@@ -1,4 +1,4 @@
-public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 11168
+public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12836
 {
 	public Button Left; 
 	public Button Right; 
@@ -27,7 +27,7 @@ public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 11168
 
 }
 
-public class TweakUIDropdown.NameValue // TypeDefIndex: 11169
+public class TweakUIDropdown.NameValue // TypeDefIndex: 12837
 {
 	public string value; 
 	public Color imageColor; 

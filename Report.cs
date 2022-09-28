@@ -188,7 +188,65 @@ public enum ReportType // TypeDefIndex: 6244
 
 }
 
-public class ReportBug : UIDialog // TypeDefIndex: 12067
+public struct ReportKeyEventOptions // TypeDefIndex: 8324
+{
+	[CompilerGeneratedAttribute] 
+	private IntPtr <PlatformSpecificInputData>k__BackingField; 
+
+	public IntPtr PlatformSpecificInputData { get; set; }
+
+
+	[CompilerGeneratedAttribute] 
+	public IntPtr get_PlatformSpecificInputData() { }
+
+	[CompilerGeneratedAttribute] 
+	public void set_PlatformSpecificInputData(IntPtr value) { }
+
+	internal void Set(ref ReportKeyEventOptionsInternal other) { }
+
+}
+
+internal struct ReportKeyEventOptionsInternal : IGettable<ReportKeyEventOptions>, ISettable<ReportKeyEventOptions>, IDisposable // TypeDefIndex: 8325
+{
+	private int m_ApiVersion; 
+	private IntPtr m_PlatformSpecificInputData; 
+
+	public IntPtr PlatformSpecificInputData { get; set; }
+
+
+	public IntPtr get_PlatformSpecificInputData() { }
+
+	public void set_PlatformSpecificInputData(IntPtr value) { }
+
+	public void Set(ref ReportKeyEventOptions other) { }
+
+	public void Set(ref Nullable<ReportKeyEventOptions> other) { }
+
+	public void Dispose() { }
+
+	public void Get(out ReportKeyEventOptions output) { }
+
+}
+
+public sealed class ReportsInterface : Handle // TypeDefIndex: 8591
+{
+	public const int ReportcontextMaxLength = 4096;
+	public const int ReportmessageMaxLength = 512;
+	public const int SendplayerbehaviorreportApiLatest = 2;
+
+
+	public void .ctor() { }
+
+	public void .ctor(IntPtr innerHandle) { }
+
+	public void SendPlayerBehaviorReport(ref SendPlayerBehaviorReportOptions options, object clientData, OnSendPlayerBehaviorReportCompleteCallback completionDelegate) { }
+
+	[MonoPInvokeCallbackAttribute] 
+	internal static void OnSendPlayerBehaviorReportCompleteCallbackInternalImplementation(ref SendPlayerBehaviorReportCompleteCallbackInfoInternal data) { }
+
+}
+
+public class ReportBug : UIDialog // TypeDefIndex: 13735
 {
 	public GameObject GetInformation; 
 	public GameObject Finished; 
@@ -240,7 +298,7 @@ public class ReportBug : UIDialog // TypeDefIndex: 12067
 
 }
 
-public static class ReportBug.Phrases // TypeDefIndex: 12068
+public static class ReportBug.Phrases // TypeDefIndex: 13736
 {
 	public static Translate.Phrase Initializing; 
 	public static Translate.Phrase SendingReport; 
@@ -251,7 +309,7 @@ public static class ReportBug.Phrases // TypeDefIndex: 12068
 
 }
 
-private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12069
+private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13737
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -280,7 +338,7 @@ private sealed class ReportBug.<CaptureScreenshot>d__21 : IEnumerator<object>, I
 
 }
 
-private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 12070
+private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex: 13738
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -296,7 +354,7 @@ private struct ReportBug.<SendReport>d__29 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-public class ReportPlayer : UIDialog // TypeDefIndex: 12071
+public class ReportPlayer : UIDialog // TypeDefIndex: 13739
 {
 	public GameObject FindPlayer; 
 	public GameObject GetInformation; 
@@ -335,7 +393,7 @@ public class ReportPlayer : UIDialog // TypeDefIndex: 12071
 
 }
 
-public static class ReportPlayer.Phrases // TypeDefIndex: 12072
+public static class ReportPlayer.Phrases // TypeDefIndex: 13740
 {
 	public static Translate.Phrase Initializing; 
 	public static Translate.Phrase SendingReport; 
@@ -346,7 +404,7 @@ public static class ReportPlayer.Phrases // TypeDefIndex: 12072
 
 }
 
-private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 12073
+private struct ReportPlayer.<SendReport>d__21 : IAsyncStateMachine // TypeDefIndex: 13741
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 

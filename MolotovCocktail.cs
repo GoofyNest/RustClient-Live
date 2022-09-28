@@ -1,4 +1,4 @@
-public class MolotovCocktail : GrenadeWeapon // TypeDefIndex: 9474
+public class MolotovCocktail : GrenadeWeapon // TypeDefIndex: 11142
 {
 
 	public void SetIgniteObjectsState(bool wantsOn) { }

@@ -52,8 +52,8 @@ public abstract class MethodBase : MemberInfo, _MethodBase // TypeDefIndex: 539
 
 	public virtual bool get_IsSecurityCritical() { }
 
-	[DebuggerHiddenAttribute] 
 	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute] 
 	public object Invoke(object obj, object[] parameters) { }
 
 	public bool get_IsPublic() { }

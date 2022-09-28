@@ -1,4 +1,4 @@
-public abstract class MidiEvent // TypeDefIndex: 7518
+public abstract class MidiEvent // TypeDefIndex: 7490
 {
 	internal long _deltaTime; 
 	[CompilerGeneratedAttribute] 

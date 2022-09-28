@@ -1,4 +1,4 @@
-public sealed class InvalidChunkSizeException : MidiException // TypeDefIndex: 7574
+public sealed class InvalidChunkSizeException : MidiException // TypeDefIndex: 7546
 {
 	[CompilerGeneratedAttribute] 
 	private readonly string <ChunkId>k__BackingField; 

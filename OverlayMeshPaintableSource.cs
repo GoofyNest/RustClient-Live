@@ -1,4 +1,4 @@
-public class OverlayMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 9211
+public class OverlayMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 10879
 {
 	private static readonly Memoized<string, string> STPrefixed; 
 	public string baseTextureName; 
@@ -13,7 +13,7 @@ public class OverlayMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 9
 
 }
 
-private sealed class OverlayMeshPaintableSource.<>c // TypeDefIndex: 9212
+private sealed class OverlayMeshPaintableSource.<>c // TypeDefIndex: 10880
 {
 	public static readonly OverlayMeshPaintableSource.<>c <>9; 
 

@@ -1,4 +1,4 @@
-public class ResourceEntity : BaseEntity // TypeDefIndex: 9680
+public class ResourceEntity : BaseEntity // TypeDefIndex: 11348
 {
 	[FormerlySerializedAsAttribute] 
 	public float startHealth; 

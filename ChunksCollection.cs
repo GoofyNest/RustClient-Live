@@ -1,4 +1,4 @@
-public sealed class ChunksCollection : ICollection<MidiChunk>, IEnumerable<MidiChunk>, IEnumerable // TypeDefIndex: 7514
+public sealed class ChunksCollection : ICollection<MidiChunk>, IEnumerable<MidiChunk>, IEnumerable // TypeDefIndex: 7486
 {
 	private readonly List<MidiChunk> _chunks; 
 	[CompilerGeneratedAttribute] 

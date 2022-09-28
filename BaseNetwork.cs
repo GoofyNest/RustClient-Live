@@ -93,7 +93,7 @@ public abstract class BaseNetwork // TypeDefIndex: 6680
 
 	public void Decrypt(Connection connection, NetRead read) { }
 
-	public void Encrypt(Connection connection, ref MemoryStream stream) { }
+	public ArraySegment<byte> Encrypt(Connection connection, MemoryStream stream) { }
 
 	public void Record(Connection connection, Stream stream) { }
 
@@ -120,7 +120,7 @@ public enum BaseNetwork.StatTypeLong // TypeDefIndex: 6681
 
 }
 
-public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, IEntity, NetworkHandler // TypeDefIndex: 9478
+public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, IEntity, NetworkHandler // TypeDefIndex: 11146
 {
 	[CompilerGeneratedAttribute] 
 	private bool <JustCreated>k__BackingField; 
@@ -269,7 +269,7 @@ public abstract class BaseNetworkable : BaseMonoBehaviour, IPrefabPostProcess, I
 
 }
 
-public struct BaseNetworkable.SaveInfo // TypeDefIndex: 9479
+public struct BaseNetworkable.SaveInfo // TypeDefIndex: 11147
 {
 	public Entity msg; 
 	public bool forDisk; 
@@ -280,14 +280,14 @@ public struct BaseNetworkable.SaveInfo // TypeDefIndex: 9479
 
 }
 
-public struct BaseNetworkable.LoadInfo // TypeDefIndex: 9480
+public struct BaseNetworkable.LoadInfo // TypeDefIndex: 11148
 {
 	public Entity msg; 
 	public bool fromDisk; 
 
 }
 
-public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // TypeDefIndex: 9481
+public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // TypeDefIndex: 11149
 {
 	protected override Manager visibilityManager { get; }
 
@@ -298,7 +298,7 @@ public class BaseNetworkable.EntityRealmClient : BaseNetworkable.EntityRealm // 
 
 }
 
-public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>, IEnumerable // TypeDefIndex: 9482
+public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>, IEnumerable // TypeDefIndex: 11150
 {
 	private ListDictionary<uint, BaseNetworkable> entityList; 
 
@@ -334,7 +334,7 @@ public abstract class BaseNetworkable.EntityRealm : IEnumerable<BaseNetworkable>
 
 }
 
-public enum BaseNetworkable.DestroyMode // TypeDefIndex: 9483
+public enum BaseNetworkable.DestroyMode // TypeDefIndex: 11151
 {
 	public byte value__; 
 	public const BaseNetworkable.DestroyMode None = 0;
@@ -342,7 +342,7 @@ public enum BaseNetworkable.DestroyMode // TypeDefIndex: 9483
 
 }
 
-public static class BaseNetworkableEx // TypeDefIndex: 9484
+public static class BaseNetworkableEx // TypeDefIndex: 11152
 {
 
 	[ExtensionAttribute] 

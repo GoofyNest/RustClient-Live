@@ -425,8 +425,8 @@ internal class MonoCMethod : RuntimeConstructorInfo // TypeDefIndex: 584
 
 	public object InternalInvoke(object obj, object[] parameters) { }
 
-	[DebuggerHiddenAttribute] 
 	[DebuggerStepThroughAttribute] 
+	[DebuggerHiddenAttribute] 
 	public override object Invoke(BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture) { }
 
 	public override RuntimeMethodHandle get_MethodHandle() { }
@@ -1458,16 +1458,7 @@ private sealed class Mono.<>c // TypeDefIndex: 6229
 
 }
 
-internal class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 7140
-{
-
-internal class MonoPInvokeCallbackAttribute : Attribute
-
-	public void .ctor() { }
-
-}
-
-public abstract class MonoEncoding : Encoding // TypeDefIndex: 7374
+public abstract class MonoEncoding : Encoding // TypeDefIndex: 7346
 {
 	private readonly int win_code_page; 
 
@@ -1498,7 +1489,7 @@ public abstract class MonoEncoding : Encoding // TypeDefIndex: 7374
 
 }
 
-public abstract class MonoEncoder : Encoder // TypeDefIndex: 7375
+public abstract class MonoEncoder : Encoder // TypeDefIndex: 7347
 {
 	private MonoEncoding encoding; 
 
@@ -1516,6 +1507,13 @@ public abstract class MonoEncoder : Encoder // TypeDefIndex: 7375
 	public override int GetBytes(char* chars, int charCount, byte* bytes, int byteCount, bool flush) { }
 
 	public void HandleFallback(char* chars, ref int charIndex, ref int charCount, byte* bytes, ref int byteIndex, ref int byteCount) { }
+
+}
+
+internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8232
+{
+
+	public void .ctor(Type type) { }
 
 }
 

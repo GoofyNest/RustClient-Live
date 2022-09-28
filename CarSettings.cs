@@ -1,4 +1,4 @@
-public class CarSettings // TypeDefIndex: 9709
+public class CarSettings // TypeDefIndex: 11377
 {
 	[HeaderAttribute] 
 	[RangeAttribute] 

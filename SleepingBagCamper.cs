@@ -59,7 +59,7 @@ public class SleepingBagCamper : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class SleepingBagCamper : SleepingBag // TypeDefIndex: 8642
+public class SleepingBagCamper : SleepingBag // TypeDefIndex: 10311
 {
 	public EntityRef<BaseVehicleSeat> AssociatedSeat; 
 

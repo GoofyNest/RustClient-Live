@@ -60,7 +60,7 @@ private sealed class CircularBuffer.<GetEnumerator>d__26<T> : IEnumerator<T>, IE
 
 }
 
-private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 7622
+private sealed class CircularBuffer.<GetItems>d__15<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IDisposable, IEnumerator // TypeDefIndex: 7594
 {
 	private int <>1__state; 
 	private T <>2__current; 

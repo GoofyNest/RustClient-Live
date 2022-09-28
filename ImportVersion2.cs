@@ -1,4 +1,4 @@
-internal class ImportVersion2 : SingletonComponent<ImportVersion2> // TypeDefIndex: 7773
+internal class ImportVersion2 : SingletonComponent<ImportVersion2> // TypeDefIndex: 7745
 {
 	private AssetBundle Bundle; 
 
@@ -22,7 +22,7 @@ internal class ImportVersion2 : SingletonComponent<ImportVersion2> // TypeDefInd
 
 }
 
-private sealed class ImportVersion2.<DoImport>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7774
+private sealed class ImportVersion2.<DoImport>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7746
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -53,7 +53,7 @@ private sealed class ImportVersion2.<DoImport>d__2 : IEnumerator<object>, IEnume
 
 }
 
-private sealed class ImportVersion2.<>c__DisplayClass3_0 // TypeDefIndex: 7775
+private sealed class ImportVersion2.<>c__DisplayClass3_0 // TypeDefIndex: 7747
 {
 	public AssetBundleCreateRequest request; 
 
@@ -64,7 +64,7 @@ private sealed class ImportVersion2.<>c__DisplayClass3_0 // TypeDefIndex: 7775
 
 }
 
-private sealed class ImportVersion2.<LoadItem>d__3 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7776
+private sealed class ImportVersion2.<LoadItem>d__3 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7748
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -98,7 +98,7 @@ private sealed class ImportVersion2.<LoadItem>d__3 : IEnumerator<object>, IEnume
 
 }
 
-private sealed class ImportVersion2.<ProcessMaterial>d__4 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7777
+private sealed class ImportVersion2.<ProcessMaterial>d__4 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7749
 {
 	private int <>1__state; 
 	private object <>2__current; 

@@ -1,4 +1,4 @@
-public class EnableDisableEvent : MonoBehaviour // TypeDefIndex: 12125
+public class EnableDisableEvent : MonoBehaviour // TypeDefIndex: 13793
 {
 	[SerializeField] 
 	private UnityEvent enableEvent; 

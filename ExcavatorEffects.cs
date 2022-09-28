@@ -1,4 +1,4 @@
-public class ExcavatorEffects : MonoBehaviour // TypeDefIndex: 9633
+public class ExcavatorEffects : MonoBehaviour // TypeDefIndex: 11301
 {
 	public static ExcavatorEffects instance; 
 	public ParticleSystemContainer[] miningParticles; 

@@ -59,7 +59,7 @@ public class SpinnerWheel : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class SpinnerWheel : Signage // TypeDefIndex: 8454
+public class SpinnerWheel : Signage // TypeDefIndex: 10123
 {
 	private Option __menuOption_Menu_LockSpin; 
 	private Option __menuOption_Menu_Spin; 

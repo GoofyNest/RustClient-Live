@@ -29,7 +29,7 @@ public sealed class ReadOnlyAttribute : Attribute // TypeDefIndex: 3315
 
 }
 
-public class ReadOnlyAttribute : PropertyAttribute // TypeDefIndex: 8020
+public class ReadOnlyAttribute : PropertyAttribute // TypeDefIndex: 7993
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class sedanAnimation : MonoBehaviour // TypeDefIndex: 8299
+public class sedanAnimation : MonoBehaviour // TypeDefIndex: 9968
 {
 	public Transform[] frontAxles; 
 	public Transform FL_shock; 

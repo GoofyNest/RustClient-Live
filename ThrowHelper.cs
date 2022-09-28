@@ -66,6 +66,12 @@ internal static class ThrowHelper // TypeDefIndex: 124
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<NormalPairs>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<EngineDamageOverTime.RecentDamage>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<EntityRef<object>>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<PlayerStatInfoInternal>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<StatThresholdsInternal>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<ItemOwnershipInternal>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<ModIdentifierInternal>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<DataRecordInternal>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<ParticipantMetadataInternal>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<ExpandedLifeStats.GenericStatDisplay>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<BurstCloth.Chain>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<CapsuleParams>

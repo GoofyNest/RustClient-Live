@@ -38,8 +38,8 @@ public abstract class FieldInfo : MemberInfo, _FieldInfo // TypeDefIndex: 568
 
 	public abstract void SetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture);
 
-	[DebuggerStepThroughAttribute] 
 	[DebuggerHiddenAttribute] 
+	[DebuggerStepThroughAttribute] 
 	public void SetValue(object obj, object value) { }
 
 	private static FieldInfo internal_from_handle_type(IntPtr field_handle, IntPtr type_handle) { }

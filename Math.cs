@@ -68,8 +68,8 @@ public static class Math // TypeDefIndex: 266
 
 	public static double Abs(double value) { }
 
-	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute] 
 	public static sbyte Max(sbyte val1, sbyte val2) { }
 
 	[ReliabilityContractAttribute] 
@@ -78,15 +78,15 @@ public static class Math // TypeDefIndex: 266
 	[ReliabilityContractAttribute] 
 	public static short Max(short val1, short val2) { }
 
-	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute] 
 	public static ushort Max(ushort val1, ushort val2) { }
 
 	[ReliabilityContractAttribute] 
 	public static int Max(int val1, int val2) { }
 
-	[CLSCompliantAttribute] 
 	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute] 
 	public static uint Max(uint val1, uint val2) { }
 
 	[ReliabilityContractAttribute] 
@@ -115,22 +115,22 @@ public static class Math // TypeDefIndex: 266
 	[ReliabilityContractAttribute] 
 	public static short Min(short val1, short val2) { }
 
-	[CLSCompliantAttribute] 
 	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute] 
 	public static ushort Min(ushort val1, ushort val2) { }
 
 	[ReliabilityContractAttribute] 
 	public static int Min(int val1, int val2) { }
 
-	[CLSCompliantAttribute] 
 	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute] 
 	public static uint Min(uint val1, uint val2) { }
 
 	[ReliabilityContractAttribute] 
 	public static long Min(long val1, long val2) { }
 
-	[CLSCompliantAttribute] 
 	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute] 
 	public static ulong Min(ulong val1, ulong val2) { }
 
 	[ReliabilityContractAttribute] 

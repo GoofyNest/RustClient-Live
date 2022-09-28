@@ -1,4 +1,4 @@
-public class FireworkShell : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 8273
+public class FireworkShell : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 9942
 {
 	public float fuseLengthMin; 
 	public float fuseLengthMax; 

@@ -1,4 +1,4 @@
-public class SubmarineDuo : BaseSubmarine // TypeDefIndex: 8460
+public class SubmarineDuo : BaseSubmarine // TypeDefIndex: 10129
 {
 	private Option __menuOption_Menu_SwapSeats; 
 	[HeaderAttribute] 
@@ -73,7 +73,7 @@ public class SubmarineDuo : BaseSubmarine // TypeDefIndex: 8460
 
 }
 
-private enum SubmarineDuo.FlagState // TypeDefIndex: 8461
+private enum SubmarineDuo.FlagState // TypeDefIndex: 10130
 {
 	public int value__; 
 	public const SubmarineDuo.FlagState Down = 0;
@@ -83,7 +83,7 @@ private enum SubmarineDuo.FlagState // TypeDefIndex: 8461
 
 }
 
-private enum SubmarineDuo.TorpedoDoorState // TypeDefIndex: 8462
+private enum SubmarineDuo.TorpedoDoorState // TypeDefIndex: 10131
 {
 	public int value__; 
 	public const SubmarineDuo.TorpedoDoorState Closed = 0;

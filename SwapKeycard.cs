@@ -1,4 +1,4 @@
-public class SwapKeycard : MonoBehaviour // TypeDefIndex: 11471
+public class SwapKeycard : MonoBehaviour // TypeDefIndex: 13139
 {
 	public GameObject[] accessLevels; 
 
