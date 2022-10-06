@@ -1,4 +1,4 @@
-internal struct RegisterPeerOptionsInternal : ISettable<RegisterPeerOptions>, IDisposable // TypeDefIndex: 9807
+internal struct RegisterPeerOptionsInternal : ISettable<RegisterPeerOptions>, IDisposable // TypeDefIndex: 9841
 {
 	private int m_ApiVersion; 
 	private IntPtr m_PeerHandle; 

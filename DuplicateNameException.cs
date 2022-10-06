@@ -1,4 +1,4 @@
-public class DuplicateNameException : DataException // TypeDefIndex: 4194
+public class DuplicateNameException : DataException // TypeDefIndex: 4197
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

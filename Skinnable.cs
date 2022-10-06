@@ -1,4 +1,4 @@
-public class Skinnable : ScriptableObject // TypeDefIndex: 7688
+public class Skinnable : ScriptableObject // TypeDefIndex: 7722
 {
 
 [CreateAssetMenuAttribute] 
@@ -30,7 +30,7 @@ public class Skinnable : ScriptableObject
 
 }
 
-public class Skinnable.Group // TypeDefIndex: 7689
+public class Skinnable.Group // TypeDefIndex: 7723
 {
 	public string Name; 
 	public Material Material; 
@@ -41,7 +41,7 @@ public class Skinnable.Group // TypeDefIndex: 7689
 
 }
 
-private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7690
+private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7724
 {
 	public string itemType; 
 
@@ -52,7 +52,7 @@ private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7690
 
 }
 
-private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7691
+private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7725
 {
 	public string entityName; 
 

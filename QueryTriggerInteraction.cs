@@ -1,4 +1,4 @@
-public enum QueryTriggerInteraction // TypeDefIndex: 3916
+public enum QueryTriggerInteraction // TypeDefIndex: 3919
 {
 	public int value__; 
 	public const QueryTriggerInteraction UseGlobal = 0;

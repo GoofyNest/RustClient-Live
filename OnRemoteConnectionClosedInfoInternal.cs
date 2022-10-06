@@ -1,4 +1,4 @@
-internal struct OnRemoteConnectionClosedInfoInternal : ICallbackInfoInternal, IGettable<OnRemoteConnectionClosedInfo>, ISettable<OnRemoteConnectionClosedInfo>, IDisposable // TypeDefIndex: 8945
+internal struct OnRemoteConnectionClosedInfoInternal : ICallbackInfoInternal, IGettable<OnRemoteConnectionClosedInfo>, ISettable<OnRemoteConnectionClosedInfo>, IDisposable // TypeDefIndex: 8979
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

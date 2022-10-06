@@ -1,4 +1,4 @@
-internal sealed class SetPresenceCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8820
+internal sealed class SetPresenceCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8854
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public sealed class Terrain : Behaviour // TypeDefIndex: 4088
+public sealed class Terrain : Behaviour // TypeDefIndex: 4091
 {
 
 [RequireComponent] 
@@ -91,7 +91,7 @@ public sealed class Terrain : Behaviour
 
 }
 
-public enum Terrain.MaterialType // TypeDefIndex: 4089
+public enum Terrain.MaterialType // TypeDefIndex: 4092
 {
 	public int value__; 
 	public const Terrain.MaterialType BuiltInStandard = 0;
@@ -101,7 +101,7 @@ public enum Terrain.MaterialType // TypeDefIndex: 4089
 
 }
 
-public class Terrain : ConsoleSystem // TypeDefIndex: 13659
+public class Terrain : ConsoleSystem // TypeDefIndex: 13702
 {
 	[ClientVar] 
 	public static float quality; 

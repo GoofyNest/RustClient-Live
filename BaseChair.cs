@@ -1,4 +1,4 @@
-public class BaseChair : BaseMountable // TypeDefIndex: 11367
+public class BaseChair : BaseMountable // TypeDefIndex: 11405
 {
 
 	public void .ctor() { }

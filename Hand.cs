@@ -1,4 +1,4 @@
-public struct Hand : IEquatable<Hand> // TypeDefIndex: 4146
+public struct Hand : IEquatable<Hand> // TypeDefIndex: 4149
 {
 	private ulong m_DeviceId; 
 	private uint m_FeatureIndex; 

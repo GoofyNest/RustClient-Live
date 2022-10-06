@@ -1,4 +1,4 @@
-public static class TempoMapManagingUtilities // TypeDefIndex: 7428
+public static class TempoMapManagingUtilities // TypeDefIndex: 7462
 {
 
 	[ExtensionAttribute] 
@@ -9,7 +9,7 @@ public static class TempoMapManagingUtilities // TypeDefIndex: 7428
 
 }
 
-private sealed class TempoMapManagingUtilities.<>c // TypeDefIndex: 7429
+private sealed class TempoMapManagingUtilities.<>c // TypeDefIndex: 7463
 {
 	public static readonly TempoMapManagingUtilities.<>c <>9; 
 	public static Func<TrackChunk, bool> <>9__3_0; 

@@ -1,7 +1,7 @@
-internal class InvokableCall : BaseInvokableCall // TypeDefIndex: 3628
+internal class InvokableCall : BaseInvokableCall // TypeDefIndex: 3630
 {
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private UnityAction Delegate; 
 
 

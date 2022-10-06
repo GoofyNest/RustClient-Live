@@ -1,4 +1,4 @@
-public class UniqueConstraint : Constraint // TypeDefIndex: 4311
+public class UniqueConstraint : Constraint // TypeDefIndex: 4314
 {
 	private DataKey _key; 
 	private Index _constraintIndex; 

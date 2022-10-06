@@ -1,4 +1,4 @@
-public enum RuntimeInitializeLoadType // TypeDefIndex: 3521
+public enum RuntimeInitializeLoadType // TypeDefIndex: 3523
 {
 	public int value__; 
 	public const RuntimeInitializeLoadType AfterSceneLoad = 0;

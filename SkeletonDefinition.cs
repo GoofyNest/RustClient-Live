@@ -1,4 +1,4 @@
-public class SkeletonDefinition : ScriptableObject // TypeDefIndex: 7320
+public class SkeletonDefinition : ScriptableObject // TypeDefIndex: 7354
 {
 	public GameObject SourceObject; 
 	public SkeletonDefinition.Bone[] Bones; 
@@ -11,7 +11,7 @@ public class SkeletonDefinition : ScriptableObject // TypeDefIndex: 7320
 
 }
 
-public struct SkeletonDefinition.Bone // TypeDefIndex: 7321
+public struct SkeletonDefinition.Bone // TypeDefIndex: 7355
 {
 	public int Id; 
 	public int Depth; 
@@ -22,7 +22,7 @@ public struct SkeletonDefinition.Bone // TypeDefIndex: 7321
 
 }
 
-public struct SkeletonDefinition.RagdollSettings // TypeDefIndex: 7322
+public struct SkeletonDefinition.RagdollSettings // TypeDefIndex: 7356
 {
 	public int Pelvis; 
 	public int Head; 
@@ -37,7 +37,7 @@ public struct SkeletonDefinition.RagdollSettings // TypeDefIndex: 7322
 
 }
 
-public struct SkeletonDefinition.RagdollSettings.BodySide // TypeDefIndex: 7323
+public struct SkeletonDefinition.RagdollSettings.BodySide // TypeDefIndex: 7357
 {
 	public int Hip; 
 	public int Knee; 
@@ -47,7 +47,7 @@ public struct SkeletonDefinition.RagdollSettings.BodySide // TypeDefIndex: 7323
 
 }
 
-private sealed class SkeletonDefinition.<>c__DisplayClass3_0 // TypeDefIndex: 7324
+private sealed class SkeletonDefinition.<>c__DisplayClass3_0 // TypeDefIndex: 7358
 {
 	public string name; 
 

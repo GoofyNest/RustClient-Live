@@ -1,4 +1,4 @@
-public class ExecuteCommandEvent : CommandEventBase<ExecuteCommandEvent> // TypeDefIndex: 4631
+public class ExecuteCommandEvent : CommandEventBase<ExecuteCommandEvent> // TypeDefIndex: 4634
 {
 
 	public void .ctor() { }

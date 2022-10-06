@@ -1,4 +1,4 @@
-public sealed class OnCreateUserCallback : MulticastDelegate // TypeDefIndex: 9292
+public sealed class OnCreateUserCallback : MulticastDelegate // TypeDefIndex: 9326
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ public sealed class OnCreateUserCallback : MulticastDelegate // TypeDefIndex: 92
 
 }
 
-public sealed class OnCreateUserCallback : MulticastDelegate // TypeDefIndex: 9559
+public sealed class OnCreateUserCallback : MulticastDelegate // TypeDefIndex: 9593
 {
 
 	public void .ctor(object object, IntPtr method) { }

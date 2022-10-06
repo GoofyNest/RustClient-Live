@@ -1,4 +1,4 @@
-public class UnityWebRequest : IDisposable // TypeDefIndex: 4128
+public class UnityWebRequest : IDisposable // TypeDefIndex: 4131
 {
 	internal IntPtr m_Ptr; 
 	internal DownloadHandler m_DownloadHandler; 
@@ -187,7 +187,7 @@ public class UnityWebRequest : IDisposable // TypeDefIndex: 4128
 
 }
 
-internal enum UnityWebRequest.UnityWebRequestMethod // TypeDefIndex: 4129
+internal enum UnityWebRequest.UnityWebRequestMethod // TypeDefIndex: 4132
 {
 	public int value__; 
 	public const UnityWebRequest.UnityWebRequestMethod Get = 0;
@@ -198,7 +198,7 @@ internal enum UnityWebRequest.UnityWebRequestMethod // TypeDefIndex: 4129
 
 }
 
-internal enum UnityWebRequest.UnityWebRequestError // TypeDefIndex: 4130
+internal enum UnityWebRequest.UnityWebRequestError // TypeDefIndex: 4133
 {
 	public int value__; 
 	public const UnityWebRequest.UnityWebRequestError OK = 0;

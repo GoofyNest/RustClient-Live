@@ -1,4 +1,4 @@
-public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9775
+public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9809
 {
 	public const int AddexternalintegritycatalogApiLatest = 1;
 	public const int AddnotifyclientintegrityviolatedApiLatest = 1;

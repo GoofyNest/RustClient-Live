@@ -1,4 +1,4 @@
-internal struct LobbyInvite_t : ICallbackData // TypeDefIndex: 5337
+internal struct LobbyInvite_t : ICallbackData // TypeDefIndex: 5340
 {
 	internal ulong SteamIDUser; 
 	internal ulong SteamIDLobby; 

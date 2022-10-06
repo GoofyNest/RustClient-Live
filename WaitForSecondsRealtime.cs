@@ -1,4 +1,4 @@
-public class WaitForSecondsRealtime : CustomYieldInstruction // TypeDefIndex: 3541
+public class WaitForSecondsRealtime : CustomYieldInstruction // TypeDefIndex: 3543
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

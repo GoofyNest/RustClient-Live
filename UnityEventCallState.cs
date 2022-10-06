@@ -1,4 +1,4 @@
-public enum UnityEventCallState // TypeDefIndex: 3634
+public enum UnityEventCallState // TypeDefIndex: 3636
 {
 	public int value__; 
 	public const UnityEventCallState Off = 0;

@@ -1,4 +1,4 @@
-internal struct OnPeerConnectionInterruptedInfoInternal : ICallbackInfoInternal, IGettable<OnPeerConnectionInterruptedInfo>, ISettable<OnPeerConnectionInterruptedInfo>, IDisposable // TypeDefIndex: 8937
+internal struct OnPeerConnectionInterruptedInfoInternal : ICallbackInfoInternal, IGettable<OnPeerConnectionInterruptedInfo>, ISettable<OnPeerConnectionInterruptedInfo>, IDisposable // TypeDefIndex: 8971
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

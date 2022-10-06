@@ -1,4 +1,4 @@
-internal struct CreateSessionSearchOptionsInternal : ISettable<CreateSessionSearchOptions>, IDisposable // TypeDefIndex: 8435
+internal struct CreateSessionSearchOptionsInternal : ISettable<CreateSessionSearchOptions>, IDisposable // TypeDefIndex: 8469
 {
 	private int m_ApiVersion; 
 	private uint m_MaxSearchResults; 

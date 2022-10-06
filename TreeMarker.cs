@@ -1,4 +1,4 @@
-public class TreeMarker : BaseEntity // TypeDefIndex: 9939
+public class TreeMarker : BaseEntity // TypeDefIndex: 9973
 {
 	public GameObjectRef hitEffect; 
 	public SoundDefinition hitEffectSound; 

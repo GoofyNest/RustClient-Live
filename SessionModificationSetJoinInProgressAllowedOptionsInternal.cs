@@ -1,4 +1,4 @@
-internal struct SessionModificationSetJoinInProgressAllowedOptionsInternal : ISettable<SessionModificationSetJoinInProgressAllowedOptions>, IDisposable // TypeDefIndex: 8534
+internal struct SessionModificationSetJoinInProgressAllowedOptionsInternal : ISettable<SessionModificationSetJoinInProgressAllowedOptions>, IDisposable // TypeDefIndex: 8568
 {
 	private int m_ApiVersion; 
 	private int m_AllowJoinInProgress; 

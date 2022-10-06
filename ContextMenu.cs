@@ -1,4 +1,4 @@
-public sealed class ContextMenu : Attribute // TypeDefIndex: 3497
+public sealed class ContextMenu : Attribute // TypeDefIndex: 3499
 {
 	public readonly string menuItem; 
 	public readonly bool validate; 

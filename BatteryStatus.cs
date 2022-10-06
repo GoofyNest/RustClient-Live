@@ -1,4 +1,4 @@
-public enum BatteryStatus // TypeDefIndex: 3553
+public enum BatteryStatus // TypeDefIndex: 3555
 {
 	public int value__; 
 	public const BatteryStatus Unknown = 0;

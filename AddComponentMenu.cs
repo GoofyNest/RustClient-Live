@@ -1,4 +1,4 @@
-public sealed class AddComponentMenu : Attribute // TypeDefIndex: 3495
+public sealed class AddComponentMenu : Attribute // TypeDefIndex: 3497
 {
 	private string m_AddComponentMenu; 
 	private int m_Ordering; 

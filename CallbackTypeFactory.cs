@@ -1,4 +1,4 @@
-internal static class CallbackTypeFactory // TypeDefIndex: 5115
+internal static class CallbackTypeFactory // TypeDefIndex: 5118
 {
 	internal static Dictionary<CallbackType, Type> All; 
 

@@ -1,4 +1,4 @@
-internal enum WorkshopFileType // TypeDefIndex: 5154
+internal enum WorkshopFileType // TypeDefIndex: 5157
 {
 	public int value__; 
 	public const WorkshopFileType First = 0;

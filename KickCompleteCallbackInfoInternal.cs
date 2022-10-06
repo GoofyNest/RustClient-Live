@@ -1,4 +1,4 @@
-internal struct KickCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<KickCompleteCallbackInfo>, ISettable<KickCompleteCallbackInfo>, IDisposable // TypeDefIndex: 8695
+internal struct KickCompleteCallbackInfoInternal : ICallbackInfoInternal, IGettable<KickCompleteCallbackInfo>, ISettable<KickCompleteCallbackInfo>, IDisposable // TypeDefIndex: 8729
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

@@ -1,4 +1,4 @@
-public static class IJobParallelForTransformExtensions // TypeDefIndex: 3586
+public static class IJobParallelForTransformExtensions // TypeDefIndex: 3588
 {
 
 	[ExtensionAttribute] 
@@ -12,7 +12,7 @@ public static class IJobParallelForTransformExtensions // TypeDefIndex: 3586
 
 }
 
-internal struct IJobParallelForTransformExtensions.TransformParallelForLoopStruct<T> // TypeDefIndex: 3587
+internal struct IJobParallelForTransformExtensions.TransformParallelForLoopStruct<T> // TypeDefIndex: 3589
 {
 	public static IntPtr jobReflectionData; 
 
@@ -39,7 +39,7 @@ internal struct IJobParallelForTransformExtensions.TransformParallelForLoopStruc
 
 }
 
-public sealed class IJobParallelForTransformExtensions.TransformParallelForLoopStruct.ExecuteJobFunction<T> : MulticastDelegate // TypeDefIndex: 3588
+public sealed class IJobParallelForTransformExtensions.TransformParallelForLoopStruct.ExecuteJobFunction<T> : MulticastDelegate // TypeDefIndex: 3590
 {
 
 	public void .ctor(object object, IntPtr method) { }

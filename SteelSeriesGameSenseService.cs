@@ -1,4 +1,4 @@
-public class SteelSeriesGameSenseService : RestRgbService // TypeDefIndex: 7666
+public class SteelSeriesGameSenseService : RestRgbService // TypeDefIndex: 7700
 {
 	private const string GameId = "RUST";
 	private const string StaticColorEvent = "STATIC_COLOR";
@@ -46,7 +46,7 @@ public class SteelSeriesGameSenseService : RestRgbService // TypeDefIndex: 7666
 
 }
 
-private struct SteelSeriesGameSenseService.<Initialize>d__10 : IAsyncStateMachine // TypeDefIndex: 7667
+private struct SteelSeriesGameSenseService.<Initialize>d__10 : IAsyncStateMachine // TypeDefIndex: 7701
 {
 	public int <>1__state; 
 	public AsyncValueTaskMethodBuilder<bool> <>t__builder; 
@@ -62,7 +62,7 @@ private struct SteelSeriesGameSenseService.<Initialize>d__10 : IAsyncStateMachin
 
 }
 
-private struct SteelSeriesGameSenseService.<Shutdown>d__11 : IAsyncStateMachine // TypeDefIndex: 7668
+private struct SteelSeriesGameSenseService.<Shutdown>d__11 : IAsyncStateMachine // TypeDefIndex: 7702
 {
 	public int <>1__state; 
 	public AsyncValueTaskMethodBuilder <>t__builder; 
@@ -77,7 +77,7 @@ private struct SteelSeriesGameSenseService.<Shutdown>d__11 : IAsyncStateMachine 
 
 }
 
-private struct SteelSeriesGameSenseService.<SendHeartbeat>d__12 : IAsyncStateMachine // TypeDefIndex: 7669
+private struct SteelSeriesGameSenseService.<SendHeartbeat>d__12 : IAsyncStateMachine // TypeDefIndex: 7703
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -92,7 +92,7 @@ private struct SteelSeriesGameSenseService.<SendHeartbeat>d__12 : IAsyncStateMac
 
 }
 
-private struct SteelSeriesGameSenseService.<SendStaticColor>d__13 : IAsyncStateMachine // TypeDefIndex: 7670
+private struct SteelSeriesGameSenseService.<SendStaticColor>d__13 : IAsyncStateMachine // TypeDefIndex: 7704
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -108,7 +108,7 @@ private struct SteelSeriesGameSenseService.<SendStaticColor>d__13 : IAsyncStateM
 
 }
 
-private struct SteelSeriesGameSenseService.<SendPulseColor>d__14 : IAsyncStateMachine // TypeDefIndex: 7671
+private struct SteelSeriesGameSenseService.<SendPulseColor>d__14 : IAsyncStateMachine // TypeDefIndex: 7705
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -125,7 +125,7 @@ private struct SteelSeriesGameSenseService.<SendPulseColor>d__14 : IAsyncStateMa
 
 }
 
-private struct SteelSeriesGameSenseService.<SendEvent>d__15 : IAsyncStateMachine // TypeDefIndex: 7672
+private struct SteelSeriesGameSenseService.<SendEvent>d__15 : IAsyncStateMachine // TypeDefIndex: 7706
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

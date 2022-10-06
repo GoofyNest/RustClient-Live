@@ -1,4 +1,4 @@
-public class TextEditor // TypeDefIndex: 4061
+public class TextEditor // TypeDefIndex: 4064
 {
 	public TouchScreenKeyboard keyboardOnScreen; 
 	public int controlID; 
@@ -230,7 +230,7 @@ public class TextEditor // TypeDefIndex: 4061
 
 }
 
-public enum TextEditor.DblClickSnapping // TypeDefIndex: 4062
+public enum TextEditor.DblClickSnapping // TypeDefIndex: 4065
 {
 	public byte value__; 
 	public const TextEditor.DblClickSnapping WORDS = 0;
@@ -238,7 +238,7 @@ public enum TextEditor.DblClickSnapping // TypeDefIndex: 4062
 
 }
 
-private enum TextEditor.CharacterType // TypeDefIndex: 4063
+private enum TextEditor.CharacterType // TypeDefIndex: 4066
 {
 	public int value__; 
 	public const TextEditor.CharacterType LetterLike = 0;
@@ -248,7 +248,7 @@ private enum TextEditor.CharacterType // TypeDefIndex: 4063
 
 }
 
-private enum TextEditor.Direction // TypeDefIndex: 4064
+private enum TextEditor.Direction // TypeDefIndex: 4067
 {
 	public int value__; 
 	public const TextEditor.Direction Forward = 0;
@@ -256,7 +256,7 @@ private enum TextEditor.Direction // TypeDefIndex: 4064
 
 }
 
-private enum TextEditor.TextEditOp // TypeDefIndex: 4065
+private enum TextEditor.TextEditOp // TypeDefIndex: 4068
 {
 	public int value__; 
 	public const TextEditor.TextEditOp MoveLeft = 0;

@@ -1,4 +1,4 @@
-public class BaseSaddle : BaseMountable // TypeDefIndex: 11368
+public class BaseSaddle : BaseMountable // TypeDefIndex: 11406
 {
 	public BaseRidableAnimal animal; 
 

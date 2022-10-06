@@ -1,4 +1,4 @@
-internal struct GetInviteIdByIndexOptionsInternal : ISettable<GetInviteIdByIndexOptions>, IDisposable // TypeDefIndex: 8449
+internal struct GetInviteIdByIndexOptionsInternal : ISettable<GetInviteIdByIndexOptions>, IDisposable // TypeDefIndex: 8483
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -20,7 +20,7 @@ internal struct GetInviteIdByIndexOptionsInternal : ISettable<GetInviteIdByIndex
 
 }
 
-internal struct GetInviteIdByIndexOptionsInternal : ISettable<GetInviteIdByIndexOptions>, IDisposable // TypeDefIndex: 9058
+internal struct GetInviteIdByIndexOptionsInternal : ISettable<GetInviteIdByIndexOptions>, IDisposable // TypeDefIndex: 9092
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

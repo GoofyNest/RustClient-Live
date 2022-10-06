@@ -307,6 +307,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<BurstCloth>.Dispose
 	|-List.Enumerator<CapsuleParams>.Dispose
 	|-List.Enumerator<BoneData>.Dispose
+	|-List.Enumerator<FlexElement>.Dispose
+	|-List.Enumerator<IFlexNode>.Dispose
 	|-List.Enumerator<TabbedPanel.Tab>.Dispose
 	|-List.Enumerator<Input.Button>.Dispose
 	|-List.Enumerator<Output.Entry>.Dispose
@@ -511,6 +513,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<byte>.Dispose
 	|-List.Enumerator<char>.Dispose
 	|-List.Enumerator<DictionaryEntry>.Dispose
+	|-List.Enumerator<HashSet<string>>.Dispose
 	|-List.Enumerator<KeyValuePair<HairCapMask, Renderer>>.Dispose
 	|-List.Enumerator<KeyValuePair<DateTime, object>>.Dispose
 	|-List.Enumerator<KeyValuePair<int, object>>.Dispose
@@ -721,6 +724,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SideObject>.MoveNext
 	|-List.Enumerator<tPoint>.MoveNext
 	|-List.Enumerator<BurstCloth>.MoveNext
+	|-List.Enumerator<FlexElement>.MoveNext
+	|-List.Enumerator<IFlexNode>.MoveNext
 	|-List.Enumerator<Input.Button>.MoveNext
 	|-List.Enumerator<RCon.RConClient>.MoveNext
 	|-List.Enumerator<SkeletonSkin>.MoveNext
@@ -850,6 +855,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SteamClass>.MoveNext
 	|-List.Enumerator<Action>.MoveNext
 	|-List.Enumerator<Action<IntPtr>>.MoveNext
+	|-List.Enumerator<HashSet<string>>.MoveNext
 	|-List.Enumerator<List<int>>.MoveNext
 	|-List.Enumerator<DataColumn>.MoveNext
 	|-List.Enumerator<DataRelation>.MoveNext
@@ -1424,6 +1430,8 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<tPoint>.get_Current
 	|-List.Enumerator<BurstCloth.Chain>.get_Current
 	|-List.Enumerator<BurstCloth>.get_Current
+	|-List.Enumerator<FlexElement>.get_Current
+	|-List.Enumerator<IFlexNode>.get_Current
 	|-List.Enumerator<Input.Button>.get_Current
 	|-List.Enumerator<RCon.RConClient>.get_Current
 	|-List.Enumerator<SkeletonSkin>.get_Current
@@ -1554,6 +1562,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SteamClass>.get_Current
 	|-List.Enumerator<Action>.get_Current
 	|-List.Enumerator<Action<IntPtr>>.get_Current
+	|-List.Enumerator<HashSet<string>>.get_Current
 	|-List.Enumerator<List<int>>.get_Current
 	|-List.Enumerator<DataColumn>.get_Current
 	|-List.Enumerator<DataRelation>.get_Current
@@ -2250,7 +2259,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 
 }
 
-public static class List // TypeDefIndex: 4844
+public static class List // TypeDefIndex: 4847
 {
 
 	[ExtensionAttribute] 

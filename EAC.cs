@@ -1,4 +1,4 @@
-public static class EAC // TypeDefIndex: 10858
+public static class EAC // TypeDefIndex: 10894
 {
 	public static bool isLoading; 
 	public static string lastError; 
@@ -40,7 +40,7 @@ public static class EAC // TypeDefIndex: 10858
 
 }
 
-private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 10859
+private struct EAC.<OnJoinServer>d__16 : IAsyncStateMachine // TypeDefIndex: 10895
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

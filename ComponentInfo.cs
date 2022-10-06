@@ -1,4 +1,4 @@
-public abstract class ComponentInfo : MonoBehaviour // TypeDefIndex: 10824
+public abstract class ComponentInfo : MonoBehaviour // TypeDefIndex: 10860
 {
 
 	public abstract void Setup();

@@ -1,4 +1,4 @@
-public enum UgcType // TypeDefIndex: 5160
+public enum UgcType // TypeDefIndex: 5163
 {
 	public int value__; 
 	public const UgcType Items = 0;
@@ -18,7 +18,7 @@ public enum UgcType // TypeDefIndex: 5160
 
 }
 
-public enum UGCType // TypeDefIndex: 11191
+public enum UGCType // TypeDefIndex: 11229
 {
 
 public enum UGCType

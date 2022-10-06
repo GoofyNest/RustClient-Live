@@ -1,4 +1,4 @@
-public class DragReceiver : MonoBehaviour, IDropHandler, IEventSystemHandler // TypeDefIndex: 12682
+public class DragReceiver : MonoBehaviour, IDropHandler, IEventSystemHandler // TypeDefIndex: 12723
 {
 	public DragReceiver.TriggerEvent onEndDrag; 
 
@@ -9,7 +9,7 @@ public class DragReceiver : MonoBehaviour, IDropHandler, IEventSystemHandler // 
 
 }
 
-public class DragReceiver.TriggerEvent : UnityEvent<BaseEventData> // TypeDefIndex: 12683
+public class DragReceiver.TriggerEvent : UnityEvent<BaseEventData> // TypeDefIndex: 12724
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class AdminExistingSellOrder : MonoBehaviour // TypeDefIndex: 10400
+public class AdminExistingSellOrder : MonoBehaviour // TypeDefIndex: 10436
 {
 	public VirtualItemIcon MerchandiseIcon; 
 	public VirtualItemIcon CurrencyIcon; 
@@ -14,8 +14,10 @@ public class AdminExistingSellOrder : MonoBehaviour // TypeDefIndex: 10400
 
 }
 
-public class AdminUI : MonoBehaviour // TypeDefIndex: 12503
+public class AdminUI : MonoBehaviour // TypeDefIndex: 12543
 {
+	public bool AllowInDemo; 
+
 
 	public bool IsVisible() { }
 
@@ -27,7 +29,7 @@ public class AdminUI : MonoBehaviour // TypeDefIndex: 12503
 
 }
 
-public class Admin : ConsoleSystem // TypeDefIndex: 13567
+public class Admin : ConsoleSystem // TypeDefIndex: 13610
 {
 	[ClientVar] 
 	public static float admintime; 
@@ -104,6 +106,12 @@ public class Admin : ConsoleSystem // TypeDefIndex: 13567
 
 	[ServerVar] 
 	public static void skipqueue(ConsoleSystem.Arg arg) { }
+
+	[ServerVar] 
+	public static void skipqueueid(ConsoleSystem.Arg arg) { }
+
+	[ServerVar] 
+	public static void removeskipqueue(ConsoleSystem.Arg arg) { }
 
 	[ServerVar] 
 	public static void players(ConsoleSystem.Arg arg) { }
@@ -193,7 +201,7 @@ public class Admin : ConsoleSystem // TypeDefIndex: 13567
 
 }
 
-public struct Admin.PlayerInfo // TypeDefIndex: 13568
+public struct Admin.PlayerInfo // TypeDefIndex: 13611
 {
 	public string SteamID; 
 	public string OwnerSteamID; 
@@ -208,7 +216,7 @@ public struct Admin.PlayerInfo // TypeDefIndex: 13568
 
 }
 
-public struct Admin.ServerInfoOutput // TypeDefIndex: 13569
+public struct Admin.ServerInfoOutput // TypeDefIndex: 13612
 {
 	public string Hostname; 
 	public int MaxPlayers; 
@@ -231,7 +239,7 @@ public struct Admin.ServerInfoOutput // TypeDefIndex: 13569
 
 }
 
-public struct Admin.ServerConvarInfo // TypeDefIndex: 13570
+public struct Admin.ServerConvarInfo // TypeDefIndex: 13613
 {
 	public string FullName; 
 	public string Value; 
@@ -239,7 +247,7 @@ public struct Admin.ServerConvarInfo // TypeDefIndex: 13570
 
 }
 
-public struct Admin.ServerUGCInfo // TypeDefIndex: 13571
+public struct Admin.ServerUGCInfo // TypeDefIndex: 13614
 {
 	public uint entityId; 
 	public uint[] crcs; 

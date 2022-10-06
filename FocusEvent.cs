@@ -1,4 +1,4 @@
-public class FocusEvent : FocusEventBase<FocusEvent> // TypeDefIndex: 4655
+public class FocusEvent : FocusEventBase<FocusEvent> // TypeDefIndex: 4658
 {
 
 	protected internal override void PreDispatch(IPanel panel) { }

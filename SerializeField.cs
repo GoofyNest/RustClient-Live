@@ -1,4 +1,4 @@
-public sealed class SerializeField : Attribute // TypeDefIndex: 3545
+public sealed class SerializeField : Attribute // TypeDefIndex: 3547
 {
 
 [RequiredByNativeCodeAttribute] 

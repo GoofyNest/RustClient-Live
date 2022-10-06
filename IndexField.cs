@@ -1,4 +1,4 @@
-internal struct IndexField // TypeDefIndex: 4299
+internal struct IndexField // TypeDefIndex: 4302
 {
 	public readonly DataColumn Column; 
 	public readonly bool IsDescending; 

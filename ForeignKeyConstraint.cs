@@ -1,4 +1,4 @@
-public class ForeignKeyConstraint : Constraint // TypeDefIndex: 4268
+public class ForeignKeyConstraint : Constraint // TypeDefIndex: 4271
 {
 	internal Rule _deleteRule; 
 	internal Rule _updateRule; 

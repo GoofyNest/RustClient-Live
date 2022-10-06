@@ -1,4 +1,4 @@
-public sealed class HttpResponseHeaders : HttpHeaders // TypeDefIndex: 5781
+public sealed class HttpResponseHeaders : HttpHeaders // TypeDefIndex: 5784
 {
 
 	internal void .ctor() { }

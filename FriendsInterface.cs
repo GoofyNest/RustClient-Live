@@ -1,4 +1,4 @@
-public sealed class FriendsInterface : Handle // TypeDefIndex: 9341
+public sealed class FriendsInterface : Handle // TypeDefIndex: 9375
 {
 	public const int AcceptinviteApiLatest = 1;
 	public const int AddnotifyfriendsupdateApiLatest = 1;

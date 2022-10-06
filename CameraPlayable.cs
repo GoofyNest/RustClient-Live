@@ -1,4 +1,4 @@
-public struct CameraPlayable : IEquatable<CameraPlayable> // TypeDefIndex: 3891
+public struct CameraPlayable : IEquatable<CameraPlayable> // TypeDefIndex: 3894
 {
 	private PlayableHandle m_Handle; 
 

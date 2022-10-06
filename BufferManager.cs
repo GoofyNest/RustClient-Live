@@ -1,4 +1,4 @@
-internal static class BufferManager // TypeDefIndex: 5176
+internal static class BufferManager // TypeDefIndex: 5179
 {
 	private static readonly Stack<BufferManager.ReferenceCounter> ReferenceCounterPool; 
 	private static readonly Dictionary<int, Stack<IntPtr>> BufferPools; 
@@ -28,7 +28,7 @@ internal static class BufferManager // TypeDefIndex: 5176
 
 }
 
-private sealed class BufferManager.ReferenceCounter // TypeDefIndex: 5177
+private sealed class BufferManager.ReferenceCounter // TypeDefIndex: 5180
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <Pointer>k__BackingField; 
@@ -57,7 +57,7 @@ private sealed class BufferManager.ReferenceCounter // TypeDefIndex: 5177
 
 }
 
-private sealed class BufferManager.FreeFn : MulticastDelegate // TypeDefIndex: 5178
+private sealed class BufferManager.FreeFn : MulticastDelegate // TypeDefIndex: 5181
 {
 
 	public void .ctor(object object, IntPtr method) { }

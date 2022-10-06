@@ -1,4 +1,4 @@
-public struct InventoryDefId : IEquatable<InventoryDefId>, IComparable<InventoryDefId> // TypeDefIndex: 5539
+public struct InventoryDefId : IEquatable<InventoryDefId>, IComparable<InventoryDefId> // TypeDefIndex: 5542
 {
 	public int Value; 
 

@@ -1,4 +1,4 @@
-public sealed class UnknownChunk : MidiChunk // TypeDefIndex: 7485
+public sealed class UnknownChunk : MidiChunk // TypeDefIndex: 7519
 {
 	[CompilerGeneratedAttribute] 
 	private byte[] <Data>k__BackingField; 

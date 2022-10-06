@@ -1,4 +1,4 @@
-internal struct CopyLastRedeemedEntitlementByIndexOptionsInternal : ISettable<CopyLastRedeemedEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9398
+internal struct CopyLastRedeemedEntitlementByIndexOptionsInternal : ISettable<CopyLastRedeemedEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9432
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

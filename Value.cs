@@ -1,4 +1,4 @@
-public class Value // TypeDefIndex: 8113
+public class Value // TypeDefIndex: 8147
 {
 	[CompilerGeneratedAttribute] 
 	private ValueType <Type>k__BackingField; 

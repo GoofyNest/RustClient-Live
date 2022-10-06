@@ -1,4 +1,4 @@
-internal struct MicroTxnAuthorizationResponse_t : ICallbackData // TypeDefIndex: 5301
+internal struct MicroTxnAuthorizationResponse_t : ICallbackData // TypeDefIndex: 5304
 {
 	internal uint AppID; 
 	internal ulong OrderID; 

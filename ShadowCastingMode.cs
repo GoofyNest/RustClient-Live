@@ -1,4 +1,4 @@
-public enum ShadowCastingMode // TypeDefIndex: 3821
+public enum ShadowCastingMode // TypeDefIndex: 3823
 {
 	public int value__; 
 	public const ShadowCastingMode Off = 0;

@@ -1,4 +1,4 @@
-public class EyeController : MonoBehaviour // TypeDefIndex: 11017
+public class EyeController : MonoBehaviour // TypeDefIndex: 11055
 {
 	public const float MaxLookDot = 0,8;
 	public bool debug; 

@@ -1,4 +1,4 @@
-public sealed class MergeFailedEventHandler : MulticastDelegate // TypeDefIndex: 4276
+public sealed class MergeFailedEventHandler : MulticastDelegate // TypeDefIndex: 4279
 {
 
 	public void .ctor(object object, IntPtr method) { }

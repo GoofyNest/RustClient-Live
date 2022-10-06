@@ -1,4 +1,4 @@
-internal sealed class OnQueryActivePlayerSanctionsCallbackInternal : MulticastDelegate // TypeDefIndex: 8580
+internal sealed class OnQueryActivePlayerSanctionsCallbackInternal : MulticastDelegate // TypeDefIndex: 8614
 {
 
 	public void .ctor(object object, IntPtr method) { }

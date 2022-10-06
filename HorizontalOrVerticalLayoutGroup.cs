@@ -1,4 +1,4 @@
-public abstract class HorizontalOrVerticalLayoutGroup : LayoutGroup // TypeDefIndex: 4971
+public abstract class HorizontalOrVerticalLayoutGroup : LayoutGroup // TypeDefIndex: 4974
 {
 	[SerializeField] 
 	protected float m_Spacing; 

@@ -1,4 +1,4 @@
-public class OwnerInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6335
+public class OwnerInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6338
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

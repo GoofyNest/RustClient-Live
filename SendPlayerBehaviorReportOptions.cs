@@ -1,4 +1,4 @@
-public struct SendPlayerBehaviorReportOptions // TypeDefIndex: 8594
+public struct SendPlayerBehaviorReportOptions // TypeDefIndex: 8628
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <ReporterUserId>k__BackingField; 

@@ -1,4 +1,4 @@
-public class FloatConditions // TypeDefIndex: 13061
+public class FloatConditions // TypeDefIndex: 13104
 {
 	public FloatConditions.Condition[] conditions; 
 
@@ -9,7 +9,7 @@ public class FloatConditions // TypeDefIndex: 13061
 
 }
 
-public struct FloatConditions.Condition // TypeDefIndex: 13062
+public struct FloatConditions.Condition // TypeDefIndex: 13105
 {
 	public FloatConditions.Condition.Types type; 
 	public float value; 
@@ -19,7 +19,7 @@ public struct FloatConditions.Condition // TypeDefIndex: 13062
 
 }
 
-public enum FloatConditions.Condition.Types // TypeDefIndex: 13063
+public enum FloatConditions.Condition.Types // TypeDefIndex: 13106
 {
 	public int value__; 
 	public const FloatConditions.Condition.Types Equal = 0;

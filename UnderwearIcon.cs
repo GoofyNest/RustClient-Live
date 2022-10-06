@@ -1,4 +1,4 @@
-public class UnderwearIcon : MonoBehaviour, IClientComponent // TypeDefIndex: 10919
+public class UnderwearIcon : MonoBehaviour, IClientComponent // TypeDefIndex: 10955
 {
 	public Image icon; 
 	public Action onChanged; 

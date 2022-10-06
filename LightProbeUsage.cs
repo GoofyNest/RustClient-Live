@@ -1,4 +1,4 @@
-public enum LightProbeUsage // TypeDefIndex: 3831
+public enum LightProbeUsage // TypeDefIndex: 3833
 {
 	public int value__; 
 	public const LightProbeUsage Off = 0;

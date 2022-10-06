@@ -1,4 +1,4 @@
-internal sealed class ExpressionParser // TypeDefIndex: 4251
+internal sealed class ExpressionParser // TypeDefIndex: 4254
 {
 	private static readonly ExpressionParser.ReservedWords[] s_reservedwords; 
 	private char _escape; 
@@ -72,7 +72,7 @@ internal sealed class ExpressionParser // TypeDefIndex: 4251
 
 }
 
-private struct ExpressionParser.ReservedWords // TypeDefIndex: 4252
+private struct ExpressionParser.ReservedWords // TypeDefIndex: 4255
 {
 	internal readonly string _word; 
 	internal readonly Tokens _token; 

@@ -1,4 +1,4 @@
-public class CreateEffect : MonoBehaviour // TypeDefIndex: 11512
+public class CreateEffect : MonoBehaviour // TypeDefIndex: 11550
 {
 	public GameObjectRef EffectToCreate; 
 

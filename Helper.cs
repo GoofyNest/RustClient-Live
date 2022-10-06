@@ -1,4 +1,4 @@
-public sealed class Helper // TypeDefIndex: 8213
+public sealed class Helper // TypeDefIndex: 8247
 {
 	private static Dictionary<IntPtr, Helper.Allocation> s_Allocations; 
 	private static Dictionary<IntPtr, Helper.PinnedBuffer> s_PinnedBuffers; 
@@ -2937,7 +2937,7 @@ public sealed class Helper // TypeDefIndex: 8213
 
 }
 
-private struct Helper.Allocation // TypeDefIndex: 8214
+private struct Helper.Allocation // TypeDefIndex: 8248
 {
 	[CompilerGeneratedAttribute] 
 	private int <Size>k__BackingField; 
@@ -2973,7 +2973,7 @@ private struct Helper.Allocation // TypeDefIndex: 8214
 
 }
 
-private struct Helper.PinnedBuffer // TypeDefIndex: 8215
+private struct Helper.PinnedBuffer // TypeDefIndex: 8249
 {
 	[CompilerGeneratedAttribute] 
 	private GCHandle <Handle>k__BackingField; 
@@ -3000,7 +3000,7 @@ private struct Helper.PinnedBuffer // TypeDefIndex: 8215
 
 }
 
-private class Helper.DelegateHolder // TypeDefIndex: 8216
+private class Helper.DelegateHolder // TypeDefIndex: 8250
 {
 	[CompilerGeneratedAttribute] 
 	private Delegate <Public>k__BackingField; 
@@ -3045,7 +3045,7 @@ private class Helper.DelegateHolder // TypeDefIndex: 8216
 
 }
 
-private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8217
+private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8251
 {
 	public static readonly Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> <>9; 
 	public static Func<Delegate, bool> <>9__3_0; 
@@ -3087,7 +3087,7 @@ private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackIn
 
 }
 
-private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8218
+private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8252
 {
 	public ulong notificationId; 
 
@@ -3098,7 +3098,7 @@ private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8218
 
 }
 
-private sealed class Helper.<>c // TypeDefIndex: 8219
+private sealed class Helper.<>c // TypeDefIndex: 8253
 {
 	public static readonly Helper.<>c <>9; 
 	public static Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int> <>9__63_0; 

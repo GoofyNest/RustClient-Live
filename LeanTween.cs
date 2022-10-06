@@ -1,4 +1,4 @@
-public class LeanTween : MonoBehaviour // TypeDefIndex: 5581
+public class LeanTween : MonoBehaviour // TypeDefIndex: 5584
 {
 	public static bool throwErrors; 
 	public static float tau; 

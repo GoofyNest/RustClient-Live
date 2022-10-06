@@ -1,4 +1,4 @@
-public class SelectionBaseAttribute : Attribute // TypeDefIndex: 3526
+public class SelectionBaseAttribute : Attribute // TypeDefIndex: 3528
 {
 
 	public void .ctor() { }

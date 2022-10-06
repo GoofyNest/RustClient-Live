@@ -1,4 +1,4 @@
-public struct IOSCredentialsSystemAuthCredentialsOptions // TypeDefIndex: 9670
+public struct IOSCredentialsSystemAuthCredentialsOptions // TypeDefIndex: 9704
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <PresentationContextProviding>k__BackingField; 

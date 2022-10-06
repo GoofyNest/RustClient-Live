@@ -1,4 +1,4 @@
-public sealed class CreateAssetMenuAttribute : Attribute // TypeDefIndex: 3496
+public sealed class CreateAssetMenuAttribute : Attribute // TypeDefIndex: 3498
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

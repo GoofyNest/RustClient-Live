@@ -1,4 +1,4 @@
-internal static class BufferUtils // TypeDefIndex: 5959
+internal static class BufferUtils // TypeDefIndex: 5962
 {
 
 [PreserveAttribute] 

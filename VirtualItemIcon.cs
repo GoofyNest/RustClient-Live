@@ -1,4 +1,4 @@
-public class VirtualItemIcon : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12758
+public class VirtualItemIcon : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12799
 {
 	public ItemDefinition itemDef; 
 	public int itemAmount; 
@@ -41,7 +41,7 @@ public class VirtualItemIcon : MonoBehaviour, IPointerEnterHandler, IEventSystem
 
 }
 
-private sealed class VirtualItemIcon.<>c__DisplayClass17_0 // TypeDefIndex: 12759
+private sealed class VirtualItemIcon.<>c__DisplayClass17_0 // TypeDefIndex: 12800
 {
 	public ulong skin; 
 

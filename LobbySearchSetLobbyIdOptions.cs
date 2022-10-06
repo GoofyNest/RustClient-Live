@@ -1,4 +1,4 @@
-public struct LobbySearchSetLobbyIdOptions // TypeDefIndex: 9152
+public struct LobbySearchSetLobbyIdOptions // TypeDefIndex: 9186
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <LobbyId>k__BackingField; 

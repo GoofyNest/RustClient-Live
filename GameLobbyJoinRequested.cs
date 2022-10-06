@@ -1,4 +1,4 @@
-internal struct GameLobbyJoinRequested_t : ICallbackData // TypeDefIndex: 5311
+internal struct GameLobbyJoinRequested_t : ICallbackData // TypeDefIndex: 5314
 {
 	internal ulong SteamIDLobby; 
 	internal ulong SteamIDFriend; 

@@ -1,4 +1,4 @@
-public class LeanTest // TypeDefIndex: 5578
+public class LeanTest // TypeDefIndex: 5581
 {
 	public static int expected; 
 	private static int tests; 

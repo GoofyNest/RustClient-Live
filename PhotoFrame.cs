@@ -1,4 +1,4 @@
-public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6385
+public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6388
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 638
 
 }
 
-public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10098
+public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10132
 {
 	private Option __menuOption_Menu_ChangeText; 
 	private Option __menuOption_Menu_LockSign; 

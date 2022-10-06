@@ -1,4 +1,4 @@
-public sealed class TransactionCompletedEventHandler : MulticastDelegate // TypeDefIndex: 3975
+public sealed class TransactionCompletedEventHandler : MulticastDelegate // TypeDefIndex: 3978
 {
 
 	public void .ctor(object object, IntPtr method) { }

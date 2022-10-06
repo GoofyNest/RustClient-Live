@@ -1,13 +1,13 @@
 public class Logger : ILogger, ILogHandler // TypeDefIndex: 3458
 {
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private ILogHandler <logHandler>k__BackingField; 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private bool <logEnabled>k__BackingField; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private LogType <filterLogType>k__BackingField; 
 
 	public ILogHandler logHandler { get; set; }

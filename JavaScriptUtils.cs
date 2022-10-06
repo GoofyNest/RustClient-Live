@@ -1,4 +1,4 @@
-internal static class JavaScriptUtils // TypeDefIndex: 5960
+internal static class JavaScriptUtils // TypeDefIndex: 5963
 {
 	internal static readonly bool[] SingleQuoteCharEscapeFlags; 
 	internal static readonly bool[] DoubleQuoteCharEscapeFlags; 

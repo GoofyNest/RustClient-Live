@@ -1,4 +1,4 @@
-internal struct GetPlayerSanctionCountOptionsInternal : ISettable<GetPlayerSanctionCountOptions>, IDisposable // TypeDefIndex: 8578
+internal struct GetPlayerSanctionCountOptionsInternal : ISettable<GetPlayerSanctionCountOptions>, IDisposable // TypeDefIndex: 8612
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

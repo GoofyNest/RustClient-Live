@@ -1,4 +1,4 @@
-public class ERSurfaceScript : MonoBehaviour // TypeDefIndex: 7140
+public class ERSurfaceScript : MonoBehaviour // TypeDefIndex: 7174
 {
 
 [AddComponentMenu] 

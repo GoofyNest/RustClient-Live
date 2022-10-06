@@ -1,4 +1,4 @@
-public sealed class OnAudioDevicesChangedCallback : MulticastDelegate // TypeDefIndex: 8636
+public sealed class OnAudioDevicesChangedCallback : MulticastDelegate // TypeDefIndex: 8670
 {
 
 	public void .ctor(object object, IntPtr method) { }

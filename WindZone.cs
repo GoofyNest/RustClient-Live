@@ -1,4 +1,4 @@
-public class WindZone : Component // TypeDefIndex: 4790
+public class WindZone : Component // TypeDefIndex: 4793
 {
 	public WindZoneMode mode { get; }
 	public float radius { get; }

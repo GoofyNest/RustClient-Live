@@ -1,4 +1,4 @@
-public struct Eyes : IEquatable<Eyes> // TypeDefIndex: 4147
+public struct Eyes : IEquatable<Eyes> // TypeDefIndex: 4150
 {
 	private ulong m_DeviceId; 
 	private uint m_FeatureIndex; 

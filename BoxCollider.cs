@@ -1,4 +1,4 @@
-public class BoxCollider : Collider // TypeDefIndex: 3925
+public class BoxCollider : Collider // TypeDefIndex: 3928
 {
 	public Vector3 center { get; set; }
 	public Vector3 size { get; set; }

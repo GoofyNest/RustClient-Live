@@ -1,4 +1,4 @@
-public class OQOQQODODO : MonoBehaviour // TypeDefIndex: 7240
+public class OQOQQODODO : MonoBehaviour // TypeDefIndex: 7274
 {
 
 	public static void OQQQQQODDO(ERCrossings scr, ref float firstSegmentDistance) { }

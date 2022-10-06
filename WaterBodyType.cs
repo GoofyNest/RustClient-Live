@@ -1,4 +1,4 @@
-public enum WaterBodyType // TypeDefIndex: 12303
+public enum WaterBodyType // TypeDefIndex: 12341
 {
 	public int value__; 
 	public const WaterBodyType Ocean = 1;

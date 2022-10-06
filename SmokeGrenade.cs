@@ -1,4 +1,4 @@
-public class SmokeGrenade : TimedExplosive // TypeDefIndex: 11280
+public class SmokeGrenade : TimedExplosive // TypeDefIndex: 11318
 {
 	public float smokeDuration; 
 	public GameObjectRef smokeEffectPrefab; 

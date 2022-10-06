@@ -1,4 +1,4 @@
-internal class PersistentCallGroup // TypeDefIndex: 3636
+internal class PersistentCallGroup // TypeDefIndex: 3638
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 

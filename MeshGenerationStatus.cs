@@ -1,4 +1,4 @@
-public enum MeshGenerationStatus // TypeDefIndex: 4157
+public enum MeshGenerationStatus // TypeDefIndex: 4160
 {
 	public int value__; 
 	public const MeshGenerationStatus Success = 0;

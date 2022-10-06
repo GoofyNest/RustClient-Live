@@ -532,7 +532,7 @@ internal class BinaryFacetsChecker : FacetsChecker // TypeDefIndex: 2255
 
 }
 
-internal class BinaryNode : ExpressionNode // TypeDefIndex: 4243
+internal class BinaryNode : ExpressionNode // TypeDefIndex: 4246
 {
 	internal int _op; 
 	internal ExpressionNode _left; 
@@ -587,7 +587,7 @@ internal class BinaryNode : ExpressionNode // TypeDefIndex: 4243
 
 }
 
-private enum BinaryNode.DataTypePrecedence // TypeDefIndex: 4244
+private enum BinaryNode.DataTypePrecedence // TypeDefIndex: 4247
 {
 	public int value__; 
 	public const BinaryNode.DataTypePrecedence SqlDateTime = 25;
@@ -627,7 +627,7 @@ private enum BinaryNode.DataTypePrecedence // TypeDefIndex: 4244
 
 }
 
-public class BinaryConverter : JsonConverter // TypeDefIndex: 6100
+public class BinaryConverter : JsonConverter // TypeDefIndex: 6103
 {
 
 [PreserveAttribute] 
@@ -651,7 +651,7 @@ public class BinaryConverter : JsonConverter
 
 }
 
-public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6105
+public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6108
 {
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }
@@ -664,7 +664,7 @@ public class BsonObjectIdConverter : JsonConverter // TypeDefIndex: 6105
 
 }
 
-internal enum BsonBinaryType // TypeDefIndex: 6133
+internal enum BsonBinaryType // TypeDefIndex: 6136
 {
 	public byte value__; 
 	public const BsonBinaryType Binary = 0;
@@ -679,7 +679,7 @@ internal enum BsonBinaryType // TypeDefIndex: 6133
 
 }
 
-internal class BsonBinaryWriter // TypeDefIndex: 6134
+internal class BsonBinaryWriter // TypeDefIndex: 6137
 {
 	private static readonly Encoding Encoding; 
 
@@ -688,7 +688,7 @@ internal class BsonBinaryWriter // TypeDefIndex: 6134
 
 }
 
-public class BsonReader : JsonReader // TypeDefIndex: 6135
+public class BsonReader : JsonReader // TypeDefIndex: 6138
 {
 	private static readonly byte[] SeqRange1; 
 	private static readonly byte[] SeqRange2; 
@@ -758,7 +758,7 @@ public class BsonReader : JsonReader // TypeDefIndex: 6135
 
 }
 
-private enum BsonReader.BsonReaderState // TypeDefIndex: 6136
+private enum BsonReader.BsonReaderState // TypeDefIndex: 6139
 {
 	public int value__; 
 	public const BsonReader.BsonReaderState Normal = 0;
@@ -773,7 +773,7 @@ private enum BsonReader.BsonReaderState // TypeDefIndex: 6136
 
 }
 
-private class BsonReader.ContainerContext // TypeDefIndex: 6137
+private class BsonReader.ContainerContext // TypeDefIndex: 6140
 {
 	public readonly BsonType Type; 
 	public int Length; 
@@ -784,7 +784,7 @@ private class BsonReader.ContainerContext // TypeDefIndex: 6137
 
 }
 
-internal abstract class BsonToken // TypeDefIndex: 6138
+internal abstract class BsonToken // TypeDefIndex: 6141
 {
 	[CompilerGeneratedAttribute] 
 	private BsonToken <Parent>k__BackingField; 
@@ -802,7 +802,7 @@ internal abstract class BsonToken // TypeDefIndex: 6138
 
 }
 
-internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable // TypeDefIndex: 6139
+internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable // TypeDefIndex: 6142
 {
 	private readonly List<BsonProperty> _children; 
 
@@ -821,7 +821,7 @@ internal class BsonObject : BsonToken, IEnumerable<BsonProperty>, IEnumerable //
 
 }
 
-internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // TypeDefIndex: 6140
+internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // TypeDefIndex: 6143
 {
 	private readonly List<BsonToken> _children; 
 
@@ -840,7 +840,7 @@ internal class BsonArray : BsonToken, IEnumerable<BsonToken>, IEnumerable // Typ
 
 }
 
-internal class BsonValue : BsonToken // TypeDefIndex: 6141
+internal class BsonValue : BsonToken // TypeDefIndex: 6144
 {
 	private readonly object _value; 
 	private readonly BsonType _type; 
@@ -854,7 +854,7 @@ internal class BsonValue : BsonToken // TypeDefIndex: 6141
 
 }
 
-internal class BsonString : BsonValue // TypeDefIndex: 6142
+internal class BsonString : BsonValue // TypeDefIndex: 6145
 {
 	[CompilerGeneratedAttribute] 
 	private bool <IncludeLength>k__BackingField; 
@@ -869,7 +869,7 @@ internal class BsonString : BsonValue // TypeDefIndex: 6142
 
 }
 
-internal class BsonRegex : BsonToken // TypeDefIndex: 6144
+internal class BsonRegex : BsonToken // TypeDefIndex: 6147
 {
 
 [PreserveAttribute] 
@@ -896,7 +896,7 @@ internal class BsonRegex : BsonToken
 
 }
 
-internal class BsonProperty // TypeDefIndex: 6145
+internal class BsonProperty // TypeDefIndex: 6148
 {
 	[CompilerGeneratedAttribute] 
 	private BsonString <Name>k__BackingField; 
@@ -917,7 +917,7 @@ internal class BsonProperty // TypeDefIndex: 6145
 
 }
 
-internal enum BsonType // TypeDefIndex: 6146
+internal enum BsonType // TypeDefIndex: 6149
 {
 	public sbyte value__; 
 	public const BsonType Number = 1;
@@ -943,7 +943,7 @@ internal enum BsonType // TypeDefIndex: 6146
 
 }
 
-public class BsonWriter : JsonWriter // TypeDefIndex: 6147
+public class BsonWriter : JsonWriter // TypeDefIndex: 6150
 {
 	private BsonToken _root; 
 	private BsonToken _parent; 
@@ -960,7 +960,7 @@ public class BsonWriter : JsonWriter // TypeDefIndex: 6147
 
 }
 
-public class BsonObjectId // TypeDefIndex: 6148
+public class BsonObjectId // TypeDefIndex: 6151
 {
 	[CompilerGeneratedAttribute] 
 	private byte[] <Value>k__BackingField; 
@@ -978,7 +978,7 @@ public class BsonObjectId // TypeDefIndex: 6148
 
 }
 
-public static class BinaryReaderExtensions // TypeDefIndex: 6222
+public static class BinaryReaderExtensions // TypeDefIndex: 6225
 {
 
 	[ExtensionAttribute] 
@@ -986,7 +986,7 @@ public static class BinaryReaderExtensions // TypeDefIndex: 6222
 
 }
 
-public static class BinaryWriterExtensions // TypeDefIndex: 6223
+public static class BinaryWriterExtensions // TypeDefIndex: 6226
 {
 
 	[ExtensionAttribute] 
@@ -994,7 +994,7 @@ public static class BinaryWriterExtensions // TypeDefIndex: 6223
 
 }
 
-public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6912
+public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6944
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1007,7 +1007,7 @@ public sealed class BinaryDataHandler : MulticastDelegate // TypeDefIndex: 6912
 
 }
 
-public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7270
+public class BinaryWriterEx : BinaryWriter // TypeDefIndex: 7304
 {
 
 	public void .ctor() { }

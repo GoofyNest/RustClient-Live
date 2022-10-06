@@ -1,4 +1,4 @@
-public struct IntegratedPlatformOptionsContainerAddOptions // TypeDefIndex: 9329
+public struct IntegratedPlatformOptionsContainerAddOptions // TypeDefIndex: 9363
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<Options> <Options>k__BackingField; 

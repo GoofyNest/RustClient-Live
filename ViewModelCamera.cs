@@ -1,4 +1,4 @@
-public class ViewModelCamera : MonoBehaviour // TypeDefIndex: 13142
+public class ViewModelCamera : MonoBehaviour // TypeDefIndex: 13185
 {
 	private readonly int _PreviousVP; 
 	private readonly int _NonJitteredVP; 

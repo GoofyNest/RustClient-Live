@@ -78,8 +78,8 @@ public sealed class QualitySettings : Object // TypeDefIndex: 3395
 	[NativeNameAttribute] 
 	public static void SetQualityLevel(int index, bool applyExpensiveChanges) { }
 
-	[StaticAccessorAttribute] 
 	[NativeNameAttribute] 
+	[StaticAccessorAttribute] 
 	public static ColorSpace get_activeColorSpace() { }
 
 }

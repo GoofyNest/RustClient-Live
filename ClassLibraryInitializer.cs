@@ -1,4 +1,4 @@
-internal static class ClassLibraryInitializer // TypeDefIndex: 3507
+internal static class ClassLibraryInitializer // TypeDefIndex: 3509
 {
 
 	[RequiredByNativeCodeAttribute] 

@@ -1,4 +1,4 @@
-public static class ScreenCapture // TypeDefIndex: 4558
+public static class ScreenCapture // TypeDefIndex: 4561
 {
 
 [NativeHeaderAttribute] 
@@ -10,7 +10,7 @@ public static class ScreenCapture
 
 }
 
-public enum ScreenCapture.StereoScreenCaptureMode // TypeDefIndex: 4559
+public enum ScreenCapture.StereoScreenCaptureMode // TypeDefIndex: 4562
 {
 	public int value__; 
 	public const ScreenCapture.StereoScreenCaptureMode LeftEye = 1;

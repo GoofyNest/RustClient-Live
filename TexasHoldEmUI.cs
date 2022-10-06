@@ -1,4 +1,4 @@
-public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDefIndex: 12564
+public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDefIndex: 12604
 {
 	[SerializeField] 
 	private Image[] holeCardImages; 
@@ -78,7 +78,7 @@ public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDe
 
 }
 
-private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 12565
+private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 12605
 {
 	public static readonly TexasHoldEmUI.<>c <>9; 
 	public static Predicate<CardTableUI.KeycodeWithAction> <>9__30_0; 

@@ -1,4 +1,4 @@
-public struct Quat // TypeDefIndex: 9751
+public struct Quat // TypeDefIndex: 9785
 {
 	[CompilerGeneratedAttribute] 
 	private float <w>k__BackingField; 

@@ -1,4 +1,4 @@
-public enum RenderMode // TypeDefIndex: 4734
+public enum RenderMode // TypeDefIndex: 4737
 {
 	public int value__; 
 	public const RenderMode ScreenSpaceOverlay = 0;

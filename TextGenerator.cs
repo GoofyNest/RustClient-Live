@@ -1,4 +1,4 @@
-public sealed class TextGenerator : IDisposable // TypeDefIndex: 3952
+public sealed class TextGenerator : IDisposable // TypeDefIndex: 3955
 {
 	internal IntPtr m_Ptr; 
 	private string m_LastString; 

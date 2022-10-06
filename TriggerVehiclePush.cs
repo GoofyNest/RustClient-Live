@@ -1,4 +1,4 @@
-public class TriggerVehiclePush : TriggerBase, IServerComponent // TypeDefIndex: 9961
+public class TriggerVehiclePush : TriggerBase, IServerComponent // TypeDefIndex: 9995
 {
 	public BaseEntity thisEntity; 
 	public float maxPushVelocity; 

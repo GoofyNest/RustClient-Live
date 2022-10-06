@@ -1,4 +1,4 @@
-public class LocalNetwork : Base // TypeDefIndex: 5292
+public class LocalNetwork : Base // TypeDefIndex: 5295
 {
 
 	internal override void LaunchQuery() { }

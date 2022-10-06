@@ -1,4 +1,4 @@
-public abstract class PointerInputModule : BaseInputModule // TypeDefIndex: 5082
+public abstract class PointerInputModule : BaseInputModule // TypeDefIndex: 5085
 {
 	public const int kMouseLeftId = -1;
 	public const int kMouseRightId = -2;
@@ -42,7 +42,7 @@ public abstract class PointerInputModule : BaseInputModule // TypeDefIndex: 5082
 
 }
 
-public class PointerInputModule.MouseButtonEventData // TypeDefIndex: 5085
+public class PointerInputModule.MouseButtonEventData // TypeDefIndex: 5088
 {
 	public PointerEventData.FramePressState buttonState; 
 	public PointerEventData buttonData; 

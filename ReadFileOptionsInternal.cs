@@ -1,4 +1,4 @@
-internal struct ReadFileOptionsInternal : ISettable<ReadFileOptions>, IDisposable // TypeDefIndex: 8378
+internal struct ReadFileOptionsInternal : ISettable<ReadFileOptions>, IDisposable // TypeDefIndex: 8412
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -34,7 +34,7 @@ internal struct ReadFileOptionsInternal : ISettable<ReadFileOptions>, IDisposabl
 
 }
 
-internal struct ReadFileOptionsInternal : ISettable<ReadFileOptions>, IDisposable // TypeDefIndex: 8881
+internal struct ReadFileOptionsInternal : ISettable<ReadFileOptions>, IDisposable // TypeDefIndex: 8915
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

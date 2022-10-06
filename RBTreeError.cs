@@ -1,4 +1,4 @@
-internal enum RBTreeError // TypeDefIndex: 4284
+internal enum RBTreeError // TypeDefIndex: 4287
 {
 	public int value__; 
 	public const RBTreeError InvalidPageSize = 1;

@@ -1,4 +1,4 @@
-public struct ParticleSystemNativeArray4 // TypeDefIndex: 4549
+public struct ParticleSystemNativeArray4 // TypeDefIndex: 4552
 {
 	public NativeArray<float> x; 
 	public NativeArray<float> y; 

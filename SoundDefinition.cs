@@ -1,4 +1,4 @@
-public class SoundDefinition : ScriptableObject // TypeDefIndex: 10698
+public class SoundDefinition : ScriptableObject // TypeDefIndex: 10734
 {
 	public GameObjectRef template; 
 	[HorizontalAttribute] 
@@ -56,7 +56,7 @@ public class SoundDefinition : ScriptableObject // TypeDefIndex: 10698
 
 }
 
-public class SoundDefinition.DistanceAudioClipList // TypeDefIndex: 10699
+public class SoundDefinition.DistanceAudioClipList // TypeDefIndex: 10735
 {
 	public int distance; 
 	[HorizontalAttribute] 

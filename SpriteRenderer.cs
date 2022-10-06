@@ -1,4 +1,4 @@
-public sealed class SpriteRenderer : Renderer // TypeDefIndex: 3571
+public sealed class SpriteRenderer : Renderer // TypeDefIndex: 3573
 {
 	public Sprite sprite { get; set; }
 	public Color color { get; set; }

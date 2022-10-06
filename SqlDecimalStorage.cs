@@ -1,4 +1,4 @@
-internal sealed class SqlDecimalStorage : DataStorage // TypeDefIndex: 4417
+internal sealed class SqlDecimalStorage : DataStorage // TypeDefIndex: 4420
 {
 	private SqlDecimal[] _values; 
 

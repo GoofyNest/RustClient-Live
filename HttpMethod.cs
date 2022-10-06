@@ -1,4 +1,4 @@
-public class HttpMethod : IEquatable<HttpMethod> // TypeDefIndex: 5753
+public class HttpMethod : IEquatable<HttpMethod> // TypeDefIndex: 5756
 {
 	private static readonly HttpMethod delete_method; 
 	private static readonly HttpMethod get_method; 

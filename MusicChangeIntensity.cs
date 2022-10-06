@@ -1,4 +1,4 @@
-public class MusicChangeIntensity : MonoBehaviour // TypeDefIndex: 10671
+public class MusicChangeIntensity : MonoBehaviour // TypeDefIndex: 10707
 {
 	public float raiseTo; 
 	public List<MusicChangeIntensity.DistanceIntensity> distanceIntensities; 
@@ -16,7 +16,7 @@ public class MusicChangeIntensity : MonoBehaviour // TypeDefIndex: 10671
 
 }
 
-public class MusicChangeIntensity.DistanceIntensity // TypeDefIndex: 10672
+public class MusicChangeIntensity.DistanceIntensity // TypeDefIndex: 10708
 {
 	public float distance; 
 	public float raiseTo; 

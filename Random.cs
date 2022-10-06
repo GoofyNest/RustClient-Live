@@ -28,7 +28,7 @@ public class Random // TypeDefIndex: 288
 
 }
 
-public sealed class Random // TypeDefIndex: 3487
+public sealed class Random // TypeDefIndex: 3489
 {
 	[StaticAccessorAttribute] 
 	public static Random.State state { get; set; }
@@ -39,8 +39,8 @@ public sealed class Random // TypeDefIndex: 3487
 	public static Quaternion rotation { get; }
 
 
-	[NativeMethodAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeMethodAttribute] 
 	public static void InitState(int seed) { }
 
 	public static Random.State get_state() { }
@@ -89,7 +89,7 @@ public sealed class Random // TypeDefIndex: 3487
 
 }
 
-public struct Random.State // TypeDefIndex: 3488
+public struct Random.State // TypeDefIndex: 3490
 {
 	[SerializeField] 
 	private int s0; 

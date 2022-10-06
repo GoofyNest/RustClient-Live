@@ -1,12 +1,10 @@
-public class DynamicMouseCursor : MonoBehaviour // TypeDefIndex: 12599
+public class DynamicMouseCursor : MonoBehaviour // TypeDefIndex: 12639
 {
 	public Texture2D RegularCursor; 
 	public Vector2 RegularCursorPos; 
 	public Texture2D HoverCursor; 
 	public Vector2 HoverCursorPos; 
 	private Texture2D current; 
-	private PointerEventData pointer; 
-	private List<RaycastResult> results; 
 
 
 	private void LateUpdate() { }

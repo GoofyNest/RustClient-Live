@@ -1,4 +1,4 @@
-public class MissionPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6452
+public class MissionPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6456
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class MissionPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class MissionPoint : MonoBehaviour // TypeDefIndex: 11889
+public class MissionPoint : MonoBehaviour // TypeDefIndex: 11927
 {
 	public bool dropToGround; 
 	public const int COUNT = 8;
@@ -92,7 +92,7 @@ public class MissionPoint : MonoBehaviour // TypeDefIndex: 11889
 
 }
 
-public enum MissionPoint.MissionPointEnum // TypeDefIndex: 11890
+public enum MissionPoint.MissionPointEnum // TypeDefIndex: 11928
 {
 	public int value__; 
 	public const MissionPoint.MissionPointEnum EasyMonument = 1;

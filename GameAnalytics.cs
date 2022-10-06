@@ -1,4 +1,4 @@
-internal static class GameAnalytics // TypeDefIndex: 5621
+internal static class GameAnalytics // TypeDefIndex: 5624
 {
 	private static bool _endThread; 
 
@@ -35,7 +35,7 @@ internal static class GameAnalytics // TypeDefIndex: 5621
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass7_0 // TypeDefIndex: 5622
+private sealed class GameAnalytics.<>c__DisplayClass7_0 // TypeDefIndex: 5625
 {
 	public string build; 
 
@@ -46,7 +46,7 @@ private sealed class GameAnalytics.<>c__DisplayClass7_0 // TypeDefIndex: 5622
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass8_0 // TypeDefIndex: 5623
+private sealed class GameAnalytics.<>c__DisplayClass8_0 // TypeDefIndex: 5626
 {
 	public string sdkGameEngineVersion; 
 
@@ -57,7 +57,7 @@ private sealed class GameAnalytics.<>c__DisplayClass8_0 // TypeDefIndex: 5623
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass9_0 // TypeDefIndex: 5624
+private sealed class GameAnalytics.<>c__DisplayClass9_0 // TypeDefIndex: 5627
 {
 	public string gameEngineVersion; 
 
@@ -68,7 +68,7 @@ private sealed class GameAnalytics.<>c__DisplayClass9_0 // TypeDefIndex: 5624
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass10_0 // TypeDefIndex: 5625
+private sealed class GameAnalytics.<>c__DisplayClass10_0 // TypeDefIndex: 5628
 {
 	public string uId; 
 
@@ -79,7 +79,7 @@ private sealed class GameAnalytics.<>c__DisplayClass10_0 // TypeDefIndex: 5625
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass11_0 // TypeDefIndex: 5626
+private sealed class GameAnalytics.<>c__DisplayClass11_0 // TypeDefIndex: 5629
 {
 	public string gameKey; 
 	public string gameSecret; 
@@ -91,7 +91,7 @@ private sealed class GameAnalytics.<>c__DisplayClass11_0 // TypeDefIndex: 5626
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass12_0 // TypeDefIndex: 5627
+private sealed class GameAnalytics.<>c__DisplayClass12_0 // TypeDefIndex: 5630
 {
 	public string currency; 
 	public int amount; 
@@ -106,7 +106,7 @@ private sealed class GameAnalytics.<>c__DisplayClass12_0 // TypeDefIndex: 5627
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass20_0 // TypeDefIndex: 5628
+private sealed class GameAnalytics.<>c__DisplayClass20_0 // TypeDefIndex: 5631
 {
 	public string eventId; 
 	public IDictionary<string, object> fields; 
@@ -118,7 +118,7 @@ private sealed class GameAnalytics.<>c__DisplayClass20_0 // TypeDefIndex: 5628
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass21_0 // TypeDefIndex: 5629
+private sealed class GameAnalytics.<>c__DisplayClass21_0 // TypeDefIndex: 5632
 {
 	public string eventId; 
 	public double value; 
@@ -130,7 +130,7 @@ private sealed class GameAnalytics.<>c__DisplayClass21_0 // TypeDefIndex: 5629
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass25_0 // TypeDefIndex: 5630
+private sealed class GameAnalytics.<>c__DisplayClass25_0 // TypeDefIndex: 5633
 {
 	public string dimension; 
 
@@ -141,7 +141,7 @@ private sealed class GameAnalytics.<>c__DisplayClass25_0 // TypeDefIndex: 5630
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass26_0 // TypeDefIndex: 5631
+private sealed class GameAnalytics.<>c__DisplayClass26_0 // TypeDefIndex: 5634
 {
 	public string dimension; 
 
@@ -152,7 +152,7 @@ private sealed class GameAnalytics.<>c__DisplayClass26_0 // TypeDefIndex: 5631
 
 }
 
-private sealed class GameAnalytics.<>c__DisplayClass27_0 // TypeDefIndex: 5632
+private sealed class GameAnalytics.<>c__DisplayClass27_0 // TypeDefIndex: 5635
 {
 	public string dimension; 
 
@@ -163,7 +163,7 @@ private sealed class GameAnalytics.<>c__DisplayClass27_0 // TypeDefIndex: 5632
 
 }
 
-private sealed class GameAnalytics.<>c // TypeDefIndex: 5633
+private sealed class GameAnalytics.<>c // TypeDefIndex: 5636
 {
 	public static readonly GameAnalytics.<>c <>9; 
 	public static Action <>9__35_0; 

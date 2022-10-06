@@ -1,4 +1,4 @@
-public sealed class OnAchievementsUnlockedCallbackV2 : MulticastDelegate // TypeDefIndex: 9879
+public sealed class OnAchievementsUnlockedCallbackV2 : MulticastDelegate // TypeDefIndex: 9913
 {
 
 	public void .ctor(object object, IntPtr method) { }

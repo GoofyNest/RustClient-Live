@@ -1,4 +1,4 @@
-public struct UgcAdditionalPreview // TypeDefIndex: 5561
+public struct UgcAdditionalPreview // TypeDefIndex: 5564
 {
 	[CompilerGeneratedAttribute] 
 	private string <UrlOrVideoID>k__BackingField; 

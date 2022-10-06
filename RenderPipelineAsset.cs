@@ -1,4 +1,4 @@
-public abstract class RenderPipelineAsset : ScriptableObject // TypeDefIndex: 3850
+public abstract class RenderPipelineAsset : ScriptableObject // TypeDefIndex: 3852
 {
 	public virtual string[] renderingLayerMaskNames { get; }
 	public virtual Material defaultMaterial { get; }

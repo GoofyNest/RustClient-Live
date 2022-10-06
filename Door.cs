@@ -1,4 +1,4 @@
-public class Door : AnimatedBuildingBlock, INotifyTrigger // TypeDefIndex: 10052
+public class Door : AnimatedBuildingBlock, INotifyTrigger // TypeDefIndex: 10086
 {
 	private Option __menuOption_Menu_CloseDoor; 
 	private Option __menuOption_Menu_KnockDoor; 

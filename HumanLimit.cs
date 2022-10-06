@@ -1,4 +1,4 @@
-public struct HumanLimit // TypeDefIndex: 4492
+public struct HumanLimit // TypeDefIndex: 4495
 {
 	private Vector3 m_Min; 
 	private Vector3 m_Max; 

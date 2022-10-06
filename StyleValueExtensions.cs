@@ -1,4 +1,4 @@
-internal static class StyleValueExtensions // TypeDefIndex: 4718
+internal static class StyleValueExtensions // TypeDefIndex: 4721
 {
 
 	[ExtensionAttribute] 

@@ -1,4 +1,4 @@
-internal struct SetToggleFriendsKeyOptionsInternal : ISettable<SetToggleFriendsKeyOptions>, IDisposable // TypeDefIndex: 8329
+internal struct SetToggleFriendsKeyOptionsInternal : ISettable<SetToggleFriendsKeyOptions>, IDisposable // TypeDefIndex: 8363
 {
 	private int m_ApiVersion; 
 	private KeyCombination m_KeyCombination; 

@@ -1,4 +1,4 @@
-public sealed class IntegratedPlatformInterface // TypeDefIndex: 9326
+public sealed class IntegratedPlatformInterface // TypeDefIndex: 9360
 {
 	public const int CreateintegratedplatformoptionscontainerApiLatest = 1;
 	public static readonly Utf8String IptSteam; 

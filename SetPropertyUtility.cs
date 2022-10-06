@@ -1,4 +1,4 @@
-internal static class SetPropertyUtility // TypeDefIndex: 5007
+internal static class SetPropertyUtility // TypeDefIndex: 5010
 {
 
 	public static bool SetColor(ref Color currentValue, Color newValue) { }
@@ -50,7 +50,7 @@ internal static class SetPropertyUtility // TypeDefIndex: 5007
 
 }
 
-internal static class SetPropertyUtility // TypeDefIndex: 6798
+internal static class SetPropertyUtility // TypeDefIndex: 6732
 {
 
 	public static bool SetColor(ref Color currentValue, Color newValue) { }
@@ -100,7 +100,7 @@ internal static class SetPropertyUtility // TypeDefIndex: 6798
 
 }
 
-internal static class SetPropertyUtility // TypeDefIndex: 13425
+internal static class SetPropertyUtility // TypeDefIndex: 13468
 {
 
 	public static bool SetColor(ref Color currentValue, Color newValue) { }

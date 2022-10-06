@@ -1,4 +1,4 @@
-public struct InventoryItem : IEquatable<InventoryItem> // TypeDefIndex: 5242
+public struct InventoryItem : IEquatable<InventoryItem> // TypeDefIndex: 5245
 {
 	internal InventoryItemId _id; 
 	internal InventoryDefId _def; 
@@ -49,14 +49,14 @@ public struct InventoryItem : IEquatable<InventoryItem> // TypeDefIndex: 5242
 
 }
 
-public struct InventoryItem.Amount // TypeDefIndex: 5243
+public struct InventoryItem.Amount // TypeDefIndex: 5246
 {
 	public InventoryItem Item; 
 	public int Quantity; 
 
 }
 
-private struct InventoryItem.<ConsumeAsync>d__21 : IAsyncStateMachine // TypeDefIndex: 5244
+private struct InventoryItem.<ConsumeAsync>d__21 : IAsyncStateMachine // TypeDefIndex: 5247
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -72,7 +72,7 @@ private struct InventoryItem.<ConsumeAsync>d__21 : IAsyncStateMachine // TypeDef
 
 }
 
-private struct InventoryItem.<SplitStackAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5245
+private struct InventoryItem.<SplitStackAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5248
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -88,7 +88,7 @@ private struct InventoryItem.<SplitStackAsync>d__22 : IAsyncStateMachine // Type
 
 }
 
-private struct InventoryItem.<AddAsync>d__23 : IAsyncStateMachine // TypeDefIndex: 5246
+private struct InventoryItem.<AddAsync>d__23 : IAsyncStateMachine // TypeDefIndex: 5249
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 

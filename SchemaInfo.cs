@@ -99,7 +99,7 @@ internal class SchemaInfo : IDtdInfo // TypeDefIndex: 2280
 
 }
 
-internal struct SchemaInfo // TypeDefIndex: 4379
+internal struct SchemaInfo // TypeDefIndex: 4382
 {
 	public string name; 
 	public string typeName; 

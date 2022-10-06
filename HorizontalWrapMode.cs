@@ -1,4 +1,4 @@
-public enum HorizontalWrapMode // TypeDefIndex: 3954
+public enum HorizontalWrapMode // TypeDefIndex: 3957
 {
 	public int value__; 
 	public const HorizontalWrapMode Wrap = 0;

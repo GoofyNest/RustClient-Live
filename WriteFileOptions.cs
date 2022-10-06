@@ -1,4 +1,4 @@
-public struct WriteFileOptions // TypeDefIndex: 8887
+public struct WriteFileOptions // TypeDefIndex: 8921
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

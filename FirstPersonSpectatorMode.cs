@@ -1,4 +1,4 @@
-public static class FirstPersonSpectatorMode // TypeDefIndex: 10860
+public static class FirstPersonSpectatorMode // TypeDefIndex: 10896
 {
 	private static ViewModel createdViewmodel; 
 	private static BaseViewModel createdViewmodelInstance; 
@@ -7,6 +7,8 @@ public static class FirstPersonSpectatorMode // TypeDefIndex: 10860
 	private static bool wasParented; 
 	private static Item lastHeldItem; 
 	private static TimeUntil reloadEnds; 
+	private static float duckTarget; 
+	private static TimeSince timeOnCurrentPlayer; 
 
 
 	public static void Apply(Camera cam, BaseEntity target) { }

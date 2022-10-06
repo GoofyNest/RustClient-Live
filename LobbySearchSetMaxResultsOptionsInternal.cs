@@ -1,4 +1,4 @@
-internal struct LobbySearchSetMaxResultsOptionsInternal : ISettable<LobbySearchSetMaxResultsOptions>, IDisposable // TypeDefIndex: 9155
+internal struct LobbySearchSetMaxResultsOptionsInternal : ISettable<LobbySearchSetMaxResultsOptions>, IDisposable // TypeDefIndex: 9189
 {
 	private int m_ApiVersion; 
 	private uint m_MaxResults; 

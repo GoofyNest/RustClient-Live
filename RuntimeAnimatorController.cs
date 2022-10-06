@@ -1,4 +1,4 @@
-public class RuntimeAnimatorController : Object // TypeDefIndex: 4495
+public class RuntimeAnimatorController : Object // TypeDefIndex: 4498
 {
 
 	protected void .ctor() { }

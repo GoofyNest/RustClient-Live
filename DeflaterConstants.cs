@@ -1,4 +1,4 @@
-internal class DeflaterConstants // TypeDefIndex: 5658
+internal class DeflaterConstants // TypeDefIndex: 5661
 {
 	public static bool DEBUGGING; 
 	public static int MAX_BLOCK_SIZE; 

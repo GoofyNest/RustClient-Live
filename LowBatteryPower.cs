@@ -1,4 +1,4 @@
-internal struct LowBatteryPower_t : ICallbackData // TypeDefIndex: 5329
+internal struct LowBatteryPower_t : ICallbackData // TypeDefIndex: 5332
 {
 	internal byte MinutesBatteryLeft; 
 	public static int _datasize; 

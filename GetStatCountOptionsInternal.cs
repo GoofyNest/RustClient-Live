@@ -1,4 +1,4 @@
-internal struct GetStatCountOptionsInternal : ISettable<GetStatCountOptions>, IDisposable // TypeDefIndex: 8387
+internal struct GetStatCountOptionsInternal : ISettable<GetStatCountOptions>, IDisposable // TypeDefIndex: 8421
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

@@ -1,4 +1,4 @@
-public enum FormatUsage // TypeDefIndex: 3900
+public enum FormatUsage // TypeDefIndex: 3903
 {
 	public int value__; 
 	public const FormatUsage Sample = 0;

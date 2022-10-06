@@ -106,7 +106,7 @@ public struct Quaternion : IEquatable<Quaternion> // TypeDefIndex: 3468
 
 }
 
-public struct quaternion : IEquatable<quaternion>, IFormattable // TypeDefIndex: 7113
+public struct quaternion : IEquatable<quaternion>, IFormattable // TypeDefIndex: 7147
 {
 
 [Serializable]

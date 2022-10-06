@@ -1,4 +1,4 @@
-internal class FieldFilter : PathFilter // TypeDefIndex: 6085
+internal class FieldFilter : PathFilter // TypeDefIndex: 6088
 {
 
 [PreserveAttribute] 

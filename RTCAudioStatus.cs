@@ -1,4 +1,4 @@
-public enum RTCAudioStatus // TypeDefIndex: 8659
+public enum RTCAudioStatus // TypeDefIndex: 8693
 {
 	public int value__; 
 	public const RTCAudioStatus Unsupported = 0;

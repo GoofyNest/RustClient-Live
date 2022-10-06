@@ -1,4 +1,4 @@
-internal struct NativeInputEventBuffer // TypeDefIndex: 4521
+internal struct NativeInputEventBuffer // TypeDefIndex: 4524
 {
 	public void* eventBuffer; 
 	public int eventCount; 

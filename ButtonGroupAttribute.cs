@@ -1,4 +1,4 @@
-public class ButtonGroupAttribute : Attribute // TypeDefIndex: 7054
+public class ButtonGroupAttribute : Attribute // TypeDefIndex: 7088
 {
 
 	public void .ctor() { }

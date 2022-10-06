@@ -1,4 +1,4 @@
-public class UnityAPICompatibilityVersionAttribute : Attribute // TypeDefIndex: 3533
+public class UnityAPICompatibilityVersionAttribute : Attribute // TypeDefIndex: 3535
 {
 	private string _version; 
 	private string[] _configurationAssembliesHashes; 

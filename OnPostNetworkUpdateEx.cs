@@ -1,4 +1,4 @@
-public static class OnPostNetworkUpdateEx // TypeDefIndex: 11584
+public static class OnPostNetworkUpdateEx // TypeDefIndex: 11622
 {
 
 	[ExtensionAttribute] 

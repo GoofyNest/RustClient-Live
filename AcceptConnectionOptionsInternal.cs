@@ -1,4 +1,4 @@
-internal struct AcceptConnectionOptionsInternal : ISettable<AcceptConnectionOptions>, IDisposable // TypeDefIndex: 8891
+internal struct AcceptConnectionOptionsInternal : ISettable<AcceptConnectionOptions>, IDisposable // TypeDefIndex: 8925
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

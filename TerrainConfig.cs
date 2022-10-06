@@ -1,4 +1,4 @@
-public class TerrainConfig : ScriptableObject // TypeDefIndex: 11988
+public class TerrainConfig : ScriptableObject // TypeDefIndex: 12026
 {
 	public bool CastShadows; 
 	public LayerMask GroundMask; 
@@ -61,7 +61,7 @@ public class TerrainConfig : ScriptableObject // TypeDefIndex: 11988
 
 }
 
-public class TerrainConfig.SplatOverlay // TypeDefIndex: 11989
+public class TerrainConfig.SplatOverlay // TypeDefIndex: 12027
 {
 	public Color Color; 
 	[RangeAttribute] 
@@ -78,7 +78,7 @@ public class TerrainConfig.SplatOverlay // TypeDefIndex: 11989
 
 }
 
-public class TerrainConfig.SplatType // TypeDefIndex: 11990
+public class TerrainConfig.SplatType // TypeDefIndex: 12028
 {
 	public string Name; 
 	[FormerlySerializedAsAttribute] 
@@ -105,7 +105,7 @@ public class TerrainConfig.SplatType // TypeDefIndex: 11990
 
 }
 
-public enum TerrainConfig.GroundType // TypeDefIndex: 11991
+public enum TerrainConfig.GroundType // TypeDefIndex: 12029
 {
 	public int value__; 
 	public const TerrainConfig.GroundType None = 0;

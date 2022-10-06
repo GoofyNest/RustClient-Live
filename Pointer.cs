@@ -14,7 +14,7 @@ public sealed class Pointer : ISerializable // TypeDefIndex: 546
 
 }
 
-public class PointER // TypeDefIndex: 6875
+public class PointER // TypeDefIndex: 6907
 {
 	public float x; 
 	public float y; 

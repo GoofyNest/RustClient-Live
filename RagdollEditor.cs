@@ -1,4 +1,4 @@
-public class RagdollEditor : SingletonComponent<RagdollEditor> // TypeDefIndex: 13134
+public class RagdollEditor : SingletonComponent<RagdollEditor> // TypeDefIndex: 13177
 {
 	private Vector3 view; 
 	private Rigidbody grabbedRigid; 

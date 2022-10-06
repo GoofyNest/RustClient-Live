@@ -1,4 +1,4 @@
-public class WorldSerialization // TypeDefIndex: 7760
+public class WorldSerialization // TypeDefIndex: 7794
 {
 	public const uint CurrentVersion = 9;
 	[CompilerGeneratedAttribute] 
@@ -53,7 +53,7 @@ public class WorldSerialization // TypeDefIndex: 7760
 
 }
 
-private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7761
+private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7795
 {
 	public string category; 
 
@@ -64,7 +64,7 @@ private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7
 
 }
 
-private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7762
+private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7796
 {
 	public string name; 
 

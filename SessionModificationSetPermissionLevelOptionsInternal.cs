@@ -1,4 +1,4 @@
-internal struct SessionModificationSetPermissionLevelOptionsInternal : ISettable<SessionModificationSetPermissionLevelOptions>, IDisposable // TypeDefIndex: 8538
+internal struct SessionModificationSetPermissionLevelOptionsInternal : ISettable<SessionModificationSetPermissionLevelOptions>, IDisposable // TypeDefIndex: 8572
 {
 	private int m_ApiVersion; 
 	private OnlineSessionPermissionLevel m_PermissionLevel; 

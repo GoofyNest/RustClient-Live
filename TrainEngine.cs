@@ -1,4 +1,4 @@
-public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6395
+public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6398
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class TrainEngine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIndex: 10143
+public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIndex: 10177
 {
 	private Option __menuOption_Menu_FuelStorage; 
 	private int clientFuelAmount; 
@@ -188,6 +188,8 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 
 	public override bool MountMenuVisible(BasePlayer player) { }
 
+	public override GameObjectRef GetImpactEffect(HitInfo info) { }
+
 	protected override void ClientFlagsChanged(BaseEntity.Flags old, BaseEntity.Flags next) { }
 
 	protected override void OnLifeStateChanged() { }
@@ -266,7 +268,7 @@ public class TrainEngine : TrainCar, IEngineControllerUser, IEntity // TypeDefIn
 
 }
 
-private enum TrainEngine.TrainMovementState // TypeDefIndex: 10144
+private enum TrainEngine.TrainMovementState // TypeDefIndex: 10178
 {
 	public int value__; 
 	public const TrainEngine.TrainMovementState Stationary = 0;
@@ -275,7 +277,7 @@ private enum TrainEngine.TrainMovementState // TypeDefIndex: 10144
 
 }
 
-private enum TrainEngine.LeverStyle // TypeDefIndex: 10145
+private enum TrainEngine.LeverStyle // TypeDefIndex: 10179
 {
 	public int value__; 
 	public const TrainEngine.LeverStyle WorkCart = 0;
@@ -283,7 +285,7 @@ private enum TrainEngine.LeverStyle // TypeDefIndex: 10145
 
 }
 
-public enum TrainEngine.EngineSpeeds // TypeDefIndex: 10146
+public enum TrainEngine.EngineSpeeds // TypeDefIndex: 10180
 {
 	public int value__; 
 	public const TrainEngine.EngineSpeeds Rev_Hi = 0;

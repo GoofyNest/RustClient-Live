@@ -1,4 +1,4 @@
-public struct SetPresenceCallbackInfo : ICallbackInfo // TypeDefIndex: 8817
+public struct SetPresenceCallbackInfo : ICallbackInfo // TypeDefIndex: 8851
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

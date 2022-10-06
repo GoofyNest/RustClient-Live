@@ -1,4 +1,4 @@
-public class FishNavigator : BaseNavigator // TypeDefIndex: 10624
+public class FishNavigator : BaseNavigator // TypeDefIndex: 10660
 {
 
 	public void .ctor() { }

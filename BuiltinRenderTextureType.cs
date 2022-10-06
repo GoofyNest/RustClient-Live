@@ -1,4 +1,4 @@
-public enum BuiltinRenderTextureType // TypeDefIndex: 3820
+public enum BuiltinRenderTextureType // TypeDefIndex: 3822
 {
 	public int value__; 
 	public const BuiltinRenderTextureType PropertyName = -4;

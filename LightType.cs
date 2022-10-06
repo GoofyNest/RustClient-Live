@@ -10,7 +10,7 @@ public enum LightType // TypeDefIndex: 3414
 
 }
 
-public enum LightType // TypeDefIndex: 3876
+public enum LightType // TypeDefIndex: 3879
 {
 
 public enum LightType

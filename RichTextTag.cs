@@ -1,4 +1,4 @@
-internal enum RichTextTag // TypeDefIndex: 6815
+internal enum RichTextTag // TypeDefIndex: 6749
 {
 	public uint value__; 
 	public const RichTextTag BOLD = 66;

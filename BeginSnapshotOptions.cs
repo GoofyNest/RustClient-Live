@@ -1,4 +1,4 @@
-public struct BeginSnapshotOptions // TypeDefIndex: 8756
+public struct BeginSnapshotOptions // TypeDefIndex: 8790
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

@@ -1,4 +1,4 @@
-public class ZiplineAudio : MonoBehaviour // TypeDefIndex: 10342
+public class ZiplineAudio : MonoBehaviour // TypeDefIndex: 10378
 {
 	public ZiplineMountable zipline; 
 	public SoundDefinition movementLoopDef; 

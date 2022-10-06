@@ -1,4 +1,4 @@
-internal class LineInfoAnnotation // TypeDefIndex: 5826
+internal class LineInfoAnnotation // TypeDefIndex: 5829
 {
 	internal int lineNumber; 
 	internal int linePosition; 

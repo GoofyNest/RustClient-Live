@@ -1,4 +1,4 @@
-public class Twirl : ImageEffectBase // TypeDefIndex: 8189
+public class Twirl : ImageEffectBase // TypeDefIndex: 8223
 {
 	public Vector2 radius; 
 	public float angle; 

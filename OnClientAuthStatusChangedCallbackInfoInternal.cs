@@ -1,4 +1,4 @@
-internal struct OnClientAuthStatusChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnClientAuthStatusChangedCallbackInfo>, ISettable<OnClientAuthStatusChangedCallbackInfo>, IDisposable // TypeDefIndex: 9748
+internal struct OnClientAuthStatusChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<OnClientAuthStatusChangedCallbackInfo>, ISettable<OnClientAuthStatusChangedCallbackInfo>, IDisposable // TypeDefIndex: 9782
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_ClientHandle; 

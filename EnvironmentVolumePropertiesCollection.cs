@@ -1,4 +1,4 @@
-public class EnvironmentVolumePropertiesCollection : ScriptableObject // TypeDefIndex: 12350
+public class EnvironmentVolumePropertiesCollection : ScriptableObject // TypeDefIndex: 12388
 {
 	public float TransitionSpeed; 
 	[HorizontalAttribute] 
@@ -20,7 +20,7 @@ public class EnvironmentVolumePropertiesCollection : ScriptableObject // TypeDef
 
 }
 
-public class EnvironmentVolumePropertiesCollection.EnvironmentMultiplier // TypeDefIndex: 12351
+public class EnvironmentVolumePropertiesCollection.EnvironmentMultiplier // TypeDefIndex: 12389
 {
 	public EnvironmentType Type; 
 	public float Multiplier; 
@@ -30,7 +30,7 @@ public class EnvironmentVolumePropertiesCollection.EnvironmentMultiplier // Type
 
 }
 
-public class EnvironmentVolumePropertiesCollection.OceanParameters // TypeDefIndex: 12352
+public class EnvironmentVolumePropertiesCollection.OceanParameters // TypeDefIndex: 12390
 {
 	public AnimationCurve TransitionCurve; 
 	[RangeAttribute] 

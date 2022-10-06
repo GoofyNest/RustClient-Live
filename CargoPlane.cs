@@ -1,4 +1,4 @@
-public class CargoPlane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6429
+public class CargoPlane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6432
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -64,7 +64,7 @@ public class CargoPlane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 642
 
 }
 
-public class CargoPlane : BaseEntity // TypeDefIndex: 11488
+public class CargoPlane : BaseEntity // TypeDefIndex: 11526
 {
 	public GameObjectRef prefabDrop; 
 	public SpawnFilter filter; 

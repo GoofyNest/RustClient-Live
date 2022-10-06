@@ -1,4 +1,4 @@
-public class PathSequence : PrefabAttribute // TypeDefIndex: 12043
+public class PathSequence : PrefabAttribute // TypeDefIndex: 12081
 {
 
 	protected override Type GetIndexedType() { }

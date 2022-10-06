@@ -1,4 +1,4 @@
-internal abstract class AutoIncrementValue // TypeDefIndex: 4182
+internal abstract class AutoIncrementValue // TypeDefIndex: 4185
 {
 	[CompilerGeneratedAttribute] 
 	private bool <Auto>k__BackingField; 

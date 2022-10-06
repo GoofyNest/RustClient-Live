@@ -1,4 +1,4 @@
-public class NoNullAllowedException : DataException // TypeDefIndex: 4197
+public class NoNullAllowedException : DataException // TypeDefIndex: 4200
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

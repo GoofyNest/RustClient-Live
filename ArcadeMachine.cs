@@ -1,4 +1,4 @@
-public class ArcadeMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6365
+public class ArcadeMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6368
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -67,7 +67,7 @@ public class ArcadeMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class ArcadeMachine.ScoreEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6366
+public class ArcadeMachine.ScoreEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6369
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

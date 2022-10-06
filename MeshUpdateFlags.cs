@@ -1,4 +1,4 @@
-public enum MeshUpdateFlags // TypeDefIndex: 3805
+public enum MeshUpdateFlags // TypeDefIndex: 3807
 {
 	public int value__; 
 	public const MeshUpdateFlags Default = 0;

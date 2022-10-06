@@ -1,4 +1,4 @@
-public class ITilemap // TypeDefIndex: 4565
+public class ITilemap // TypeDefIndex: 4568
 {
 
 [NativeHeaderAttribute] 

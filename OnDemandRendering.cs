@@ -1,4 +1,4 @@
-public class OnDemandRendering // TypeDefIndex: 3840
+public class OnDemandRendering // TypeDefIndex: 3842
 {
 	private static int m_RenderFrameInterval; 
 

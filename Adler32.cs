@@ -1,4 +1,4 @@
-internal sealed class Adler32 // TypeDefIndex: 5666
+internal sealed class Adler32 // TypeDefIndex: 5669
 {
 	private static readonly uint BASE; 
 	private uint checksum; 

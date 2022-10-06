@@ -1,4 +1,4 @@
-internal struct CopySessionHandleByInviteIdOptionsInternal : ISettable<CopySessionHandleByInviteIdOptions>, IDisposable // TypeDefIndex: 8427
+internal struct CopySessionHandleByInviteIdOptionsInternal : ISettable<CopySessionHandleByInviteIdOptions>, IDisposable // TypeDefIndex: 8461
 {
 	private int m_ApiVersion; 
 	private IntPtr m_InviteId; 

@@ -1,4 +1,4 @@
-internal struct NativeListData // TypeDefIndex: 4554
+internal struct NativeListData // TypeDefIndex: 4557
 {
 	public void* system; 
 	public int length; 

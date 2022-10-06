@@ -1,4 +1,4 @@
-internal struct MusicPlayerRemoteWillActivate_t : ICallbackData // TypeDefIndex: 5411
+internal struct MusicPlayerRemoteWillActivate_t : ICallbackData // TypeDefIndex: 5414
 {
 	public static int _datasize; 
 
@@ -14,7 +14,7 @@ internal struct MusicPlayerRemoteWillActivate_t : ICallbackData // TypeDefIndex:
 
 }
 
-internal struct MusicPlayerRemoteWillDeactivate_t : ICallbackData // TypeDefIndex: 5412
+internal struct MusicPlayerRemoteWillDeactivate_t : ICallbackData // TypeDefIndex: 5415
 {
 	public static int _datasize; 
 
@@ -30,7 +30,7 @@ internal struct MusicPlayerRemoteWillDeactivate_t : ICallbackData // TypeDefInde
 
 }
 
-internal struct MusicPlayerRemoteToFront_t : ICallbackData // TypeDefIndex: 5413
+internal struct MusicPlayerRemoteToFront_t : ICallbackData // TypeDefIndex: 5416
 {
 	public static int _datasize; 
 
@@ -46,7 +46,7 @@ internal struct MusicPlayerRemoteToFront_t : ICallbackData // TypeDefIndex: 5413
 
 }
 
-internal struct MusicPlayerWillQuit_t : ICallbackData // TypeDefIndex: 5414
+internal struct MusicPlayerWillQuit_t : ICallbackData // TypeDefIndex: 5417
 {
 	public static int _datasize; 
 
@@ -62,7 +62,7 @@ internal struct MusicPlayerWillQuit_t : ICallbackData // TypeDefIndex: 5414
 
 }
 
-internal struct MusicPlayerWantsPlay_t : ICallbackData // TypeDefIndex: 5415
+internal struct MusicPlayerWantsPlay_t : ICallbackData // TypeDefIndex: 5418
 {
 	public static int _datasize; 
 
@@ -78,7 +78,7 @@ internal struct MusicPlayerWantsPlay_t : ICallbackData // TypeDefIndex: 5415
 
 }
 
-internal struct MusicPlayerWantsPause_t : ICallbackData // TypeDefIndex: 5416
+internal struct MusicPlayerWantsPause_t : ICallbackData // TypeDefIndex: 5419
 {
 	public static int _datasize; 
 
@@ -94,7 +94,7 @@ internal struct MusicPlayerWantsPause_t : ICallbackData // TypeDefIndex: 5416
 
 }
 
-internal struct MusicPlayerWantsPlayPrevious_t : ICallbackData // TypeDefIndex: 5417
+internal struct MusicPlayerWantsPlayPrevious_t : ICallbackData // TypeDefIndex: 5420
 {
 	public static int _datasize; 
 
@@ -110,7 +110,7 @@ internal struct MusicPlayerWantsPlayPrevious_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct MusicPlayerWantsPlayNext_t : ICallbackData // TypeDefIndex: 5418
+internal struct MusicPlayerWantsPlayNext_t : ICallbackData // TypeDefIndex: 5421
 {
 	public static int _datasize; 
 
@@ -126,7 +126,7 @@ internal struct MusicPlayerWantsPlayNext_t : ICallbackData // TypeDefIndex: 5418
 
 }
 
-internal struct MusicPlayerWantsShuffled_t : ICallbackData // TypeDefIndex: 5419
+internal struct MusicPlayerWantsShuffled_t : ICallbackData // TypeDefIndex: 5422
 {
 	internal bool Shuffled; 
 	public static int _datasize; 
@@ -143,7 +143,7 @@ internal struct MusicPlayerWantsShuffled_t : ICallbackData // TypeDefIndex: 5419
 
 }
 
-internal struct MusicPlayerWantsLooped_t : ICallbackData // TypeDefIndex: 5420
+internal struct MusicPlayerWantsLooped_t : ICallbackData // TypeDefIndex: 5423
 {
 	internal bool Looped; 
 	public static int _datasize; 
@@ -160,7 +160,7 @@ internal struct MusicPlayerWantsLooped_t : ICallbackData // TypeDefIndex: 5420
 
 }
 
-internal struct MusicPlayerWantsVolume_t : ICallbackData // TypeDefIndex: 5421
+internal struct MusicPlayerWantsVolume_t : ICallbackData // TypeDefIndex: 5424
 {
 	internal float NewVolume; 
 	public static int _datasize; 
@@ -177,7 +177,7 @@ internal struct MusicPlayerWantsVolume_t : ICallbackData // TypeDefIndex: 5421
 
 }
 
-internal struct MusicPlayerSelectsQueueEntry_t : ICallbackData // TypeDefIndex: 5422
+internal struct MusicPlayerSelectsQueueEntry_t : ICallbackData // TypeDefIndex: 5425
 {
 	internal int NID; 
 	public static int _datasize; 
@@ -194,7 +194,7 @@ internal struct MusicPlayerSelectsQueueEntry_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct MusicPlayerSelectsPlaylistEntry_t : ICallbackData // TypeDefIndex: 5423
+internal struct MusicPlayerSelectsPlaylistEntry_t : ICallbackData // TypeDefIndex: 5426
 {
 	internal int NID; 
 	public static int _datasize; 
@@ -211,7 +211,7 @@ internal struct MusicPlayerSelectsPlaylistEntry_t : ICallbackData // TypeDefInde
 
 }
 
-internal struct MusicPlayerWantsPlayingRepeatStatus_t : ICallbackData // TypeDefIndex: 5424
+internal struct MusicPlayerWantsPlayingRepeatStatus_t : ICallbackData // TypeDefIndex: 5427
 {
 	internal int PlayingRepeatStatus; 
 	public static int _datasize; 

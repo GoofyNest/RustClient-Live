@@ -1,4 +1,4 @@
-public class ERPrefabInstance : MonoBehaviour // TypeDefIndex: 7262
+public class ERPrefabInstance : MonoBehaviour // TypeDefIndex: 7296
 {
 	public SideObject so; 
 	public GameObject prefab; 

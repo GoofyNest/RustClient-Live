@@ -1,4 +1,4 @@
-public class DepthOfFieldEffectRenderer : PostProcessEffectRenderer<DepthOfFieldEffect> // TypeDefIndex: 11923
+public class DepthOfFieldEffectRenderer : PostProcessEffectRenderer<DepthOfFieldEffect> // TypeDefIndex: 11961
 {
 	private float focalDistance01; 
 	private float internalBlurWidth; 

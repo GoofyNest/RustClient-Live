@@ -1,4 +1,4 @@
-public class Collision2D // TypeDefIndex: 4082
+public class Collision2D // TypeDefIndex: 4085
 {
 	internal int m_Collider; 
 	internal int m_OtherCollider; 

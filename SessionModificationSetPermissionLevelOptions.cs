@@ -1,4 +1,4 @@
-public struct SessionModificationSetPermissionLevelOptions // TypeDefIndex: 8537
+public struct SessionModificationSetPermissionLevelOptions // TypeDefIndex: 8571
 {
 	[CompilerGeneratedAttribute] 
 	private OnlineSessionPermissionLevel <PermissionLevel>k__BackingField; 

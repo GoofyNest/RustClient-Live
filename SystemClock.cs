@@ -1,4 +1,4 @@
-internal class SystemClock // TypeDefIndex: 3557
+internal class SystemClock // TypeDefIndex: 3559
 {
 	private static readonly DateTime s_Epoch; 
 

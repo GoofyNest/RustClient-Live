@@ -1,4 +1,4 @@
-internal class ScriptableRuntimeReflectionSystemWrapper // TypeDefIndex: 3898
+internal class ScriptableRuntimeReflectionSystemWrapper // TypeDefIndex: 3901
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

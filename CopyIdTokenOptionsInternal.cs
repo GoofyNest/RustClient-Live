@@ -1,4 +1,4 @@
-internal struct CopyIdTokenOptionsInternal : ISettable<CopyIdTokenOptions>, IDisposable // TypeDefIndex: 9512
+internal struct CopyIdTokenOptionsInternal : ISettable<CopyIdTokenOptions>, IDisposable // TypeDefIndex: 9546
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -16,7 +16,7 @@ internal struct CopyIdTokenOptionsInternal : ISettable<CopyIdTokenOptions>, IDis
 
 }
 
-internal struct CopyIdTokenOptionsInternal : ISettable<CopyIdTokenOptions>, IDisposable // TypeDefIndex: 9609
+internal struct CopyIdTokenOptionsInternal : ISettable<CopyIdTokenOptions>, IDisposable // TypeDefIndex: 9643
 {
 	private int m_ApiVersion; 
 	private IntPtr m_AccountId; 

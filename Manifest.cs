@@ -162,7 +162,7 @@ public enum ManifestEnvelope.ManifestFormats // TypeDefIndex: 1628
 
 }
 
-public static class Manifest // TypeDefIndex: 6200
+public static class Manifest // TypeDefIndex: 6203
 {
 	[CompilerGeneratedAttribute] 
 	private static DateTime <LastDownloaded>k__BackingField; 
@@ -196,7 +196,7 @@ public static class Manifest // TypeDefIndex: 6200
 
 }
 
-private sealed class Manifest.<>c // TypeDefIndex: 6201
+private sealed class Manifest.<>c // TypeDefIndex: 6204
 {
 	public static readonly Manifest.<>c <>9; 
 	public static Action<string> <>9__9_0; 
@@ -210,7 +210,7 @@ private sealed class Manifest.<>c // TypeDefIndex: 6201
 
 }
 
-private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6202
+private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6205
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -239,7 +239,7 @@ private sealed class Manifest.<UpdateManifest>d__9 : IEnumerator<object>, IEnume
 
 }
 
-public class Manifest // TypeDefIndex: 6245
+public class Manifest // TypeDefIndex: 6248
 {
 	public Manifest.NewsInfo News; 
 	public Manifest.ServersInfo Servers; 
@@ -261,7 +261,7 @@ public class Manifest // TypeDefIndex: 6245
 
 }
 
-public class Manifest.Administrator // TypeDefIndex: 6246
+public class Manifest.Administrator // TypeDefIndex: 6249
 {
 	public string UserId; 
 	public string Level; 
@@ -271,7 +271,7 @@ public class Manifest.Administrator // TypeDefIndex: 6246
 
 }
 
-public class Manifest.NewsInfo // TypeDefIndex: 6247
+public class Manifest.NewsInfo // TypeDefIndex: 6250
 {
 	public Manifest.NewsInfo.BlogInfo[] Blogs; 
 
@@ -280,7 +280,7 @@ public class Manifest.NewsInfo // TypeDefIndex: 6247
 
 }
 
-public class Manifest.NewsInfo.BlogInfo // TypeDefIndex: 6248
+public class Manifest.NewsInfo.BlogInfo // TypeDefIndex: 6251
 {
 	public DateTime Date; 
 	public string ShortName; 
@@ -295,7 +295,7 @@ public class Manifest.NewsInfo.BlogInfo // TypeDefIndex: 6248
 
 }
 
-public class Manifest.ServersInfo // TypeDefIndex: 6249
+public class Manifest.ServersInfo // TypeDefIndex: 6252
 {
 	public Manifest.ServerDesc[] Official; 
 	public string[] Banned; 
@@ -307,7 +307,7 @@ public class Manifest.ServersInfo // TypeDefIndex: 6249
 
 }
 
-public class Manifest.ServerDesc // TypeDefIndex: 6250
+public class Manifest.ServerDesc // TypeDefIndex: 6253
 {
 	public string Address; 
 	public int Port; 
@@ -317,7 +317,7 @@ public class Manifest.ServerDesc // TypeDefIndex: 6250
 
 }
 
-public class Manifest // TypeDefIndex: 13635
+public class Manifest // TypeDefIndex: 13678
 {
 
 	[ClientVar] 

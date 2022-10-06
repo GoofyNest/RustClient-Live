@@ -1,4 +1,4 @@
-public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
+public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6325
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class ResearchTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class ResearchTable : StorageContainer // TypeDefIndex: 10306
+public class ResearchTable : StorageContainer // TypeDefIndex: 10341
 {
 	public float researchFinishedTime; 
 	public float researchCostFraction; 
@@ -85,13 +85,21 @@ public class ResearchTable : StorageContainer // TypeDefIndex: 10306
 
 	public int ScrapForResearch(Item item) { }
 
-	public static int ScrapForResearch(ItemDefinition info) { }
+	public static int ScrapForResearch(ItemDefinition info, ResearchTable.ResearchType type) { }
 
 	public bool IsItemResearchable(Item item) { }
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 
 	public void .ctor() { }
+
+}
+
+public enum ResearchTable.ResearchType // TypeDefIndex: 10342
+{
+	public int value__; 
+	public const ResearchTable.ResearchType ResearchTable = 0;
+	public const ResearchTable.ResearchType TechTree = 1;
 
 }
 

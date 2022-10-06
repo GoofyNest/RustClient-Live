@@ -1,4 +1,4 @@
-public class PhotoFilter : PostProcessEffectSettings // TypeDefIndex: 11941
+public class PhotoFilter : PostProcessEffectSettings // TypeDefIndex: 11979
 {
 	public ColorParameter color; 
 	[RangeAttribute] 

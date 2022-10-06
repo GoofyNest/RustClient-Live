@@ -1,4 +1,4 @@
-public class SolarPanel : IOEntity // TypeDefIndex: 10384
+public class SolarPanel : IOEntity // TypeDefIndex: 10420
 {
 	public Transform sunSampler; 
 	private const int tickrateSeconds = 60;

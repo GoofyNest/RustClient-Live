@@ -1,4 +1,4 @@
-public struct RenderTargetIdentifier : IEquatable<RenderTargetIdentifier> // TypeDefIndex: 3824
+public struct RenderTargetIdentifier : IEquatable<RenderTargetIdentifier> // TypeDefIndex: 3826
 {
 	private BuiltinRenderTextureType m_Type; 
 	private int m_NameID; 

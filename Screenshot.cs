@@ -1,16 +1,18 @@
-public struct Screenshot // TypeDefIndex: 5557
+public struct Screenshot // TypeDefIndex: 5560
 {
 	internal ScreenshotHandle Value; 
 
 }
 
-public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 13028
+public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 13071
 {
 	public string screenshotPath; 
 	public int sizeMultiplier; 
 	public static bool TakingScreenshot; 
 	private bool takingScreenshot; 
 	private string savePathName; 
+
+	private static float dofblur { get; set; }
 
 
 	[ClientVar] 
@@ -31,13 +33,17 @@ public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 13028
 	[IteratorStateMachineAttribute] 
 	public static IEnumerator GetScreen(Camera camera, int resolutionX, int resolutionY, Action<Texture2D> finishedCallback, Action renderCallback, bool updateCamera = False) { }
 
+	private static float get_dofblur() { }
+
+	private static void set_dofblur(float value) { }
+
 	public void .ctor() { }
 
 	private static void .cctor() { }
 
 }
 
-private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13029
+private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13072
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -74,7 +80,7 @@ private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class Screenshot.<GetScreen>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13030
+private sealed class Screenshot.<GetScreen>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13073
 {
 	private int <>1__state; 
 	private object <>2__current; 

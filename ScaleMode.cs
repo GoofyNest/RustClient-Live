@@ -1,4 +1,4 @@
-public enum ScaleMode // TypeDefIndex: 4036
+public enum ScaleMode // TypeDefIndex: 4039
 {
 	public int value__; 
 	public const ScaleMode StretchToFill = 0;

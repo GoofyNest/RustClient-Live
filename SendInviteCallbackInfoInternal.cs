@@ -1,4 +1,4 @@
-internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendInviteCallbackInfo>, ISettable<SendInviteCallbackInfo>, IDisposable // TypeDefIndex: 8499
+internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendInviteCallbackInfo>, ISettable<SendInviteCallbackInfo>, IDisposable // TypeDefIndex: 8533
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 
@@ -28,7 +28,7 @@ internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettabl
 
 }
 
-internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendInviteCallbackInfo>, ISettable<SendInviteCallbackInfo>, IDisposable // TypeDefIndex: 9221
+internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendInviteCallbackInfo>, ISettable<SendInviteCallbackInfo>, IDisposable // TypeDefIndex: 9255
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 
@@ -64,7 +64,7 @@ internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettabl
 
 }
 
-internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendInviteCallbackInfo>, ISettable<SendInviteCallbackInfo>, IDisposable // TypeDefIndex: 9370
+internal struct SendInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<SendInviteCallbackInfo>, ISettable<SendInviteCallbackInfo>, IDisposable // TypeDefIndex: 9404
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

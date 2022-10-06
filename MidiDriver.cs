@@ -1,4 +1,4 @@
-public class MidiDriver // TypeDefIndex: 7615
+public class MidiDriver // TypeDefIndex: 7649
 {
 	private MidiDriver.ChannelState[] _channelArray; 
 	private int _lastFrame; 
@@ -61,7 +61,7 @@ public class MidiDriver // TypeDefIndex: 7615
 
 }
 
-private class MidiDriver.ChannelState // TypeDefIndex: 7616
+private class MidiDriver.ChannelState // TypeDefIndex: 7650
 {
 	public float[] _noteArray; 
 	public Dictionary<int, float> _knobMap; 
@@ -71,7 +71,7 @@ private class MidiDriver.ChannelState // TypeDefIndex: 7616
 
 }
 
-public sealed class MidiDriver.NoteOnDelegate : MulticastDelegate // TypeDefIndex: 7617
+public sealed class MidiDriver.NoteOnDelegate : MulticastDelegate // TypeDefIndex: 7651
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -84,7 +84,7 @@ public sealed class MidiDriver.NoteOnDelegate : MulticastDelegate // TypeDefInde
 
 }
 
-public sealed class MidiDriver.NoteOffDelegate : MulticastDelegate // TypeDefIndex: 7618
+public sealed class MidiDriver.NoteOffDelegate : MulticastDelegate // TypeDefIndex: 7652
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -97,7 +97,7 @@ public sealed class MidiDriver.NoteOffDelegate : MulticastDelegate // TypeDefInd
 
 }
 
-public sealed class MidiDriver.KnobDelegate : MulticastDelegate // TypeDefIndex: 7619
+public sealed class MidiDriver.KnobDelegate : MulticastDelegate // TypeDefIndex: 7653
 {
 
 	public void .ctor(object object, IntPtr method) { }

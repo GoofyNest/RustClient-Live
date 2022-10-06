@@ -1,4 +1,4 @@
-internal struct IOSLoginOptionsInternal : ISettable<IOSLoginOptions>, IDisposable // TypeDefIndex: 9673
+internal struct IOSLoginOptionsInternal : ISettable<IOSLoginOptions>, IDisposable // TypeDefIndex: 9707
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Credentials; 

@@ -1,4 +1,4 @@
-public enum AntiCheatCommonClientAction // TypeDefIndex: 9705
+public enum AntiCheatCommonClientAction // TypeDefIndex: 9739
 {
 	public int value__; 
 	public const AntiCheatCommonClientAction Invalid = 0;

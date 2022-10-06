@@ -1,13 +1,5 @@
-public class RustUiTest : MonoBehaviour // TypeDefIndex: 6999
+public class RustUiTest : MonoBehaviour // TypeDefIndex: 7032
 {
-
-private struct <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=128
-
-private struct <PrivateImplementationDetails>{4136EF42-BA0E-48C1-8B0C-A481CDC84FC8}.__StaticArrayInitTypeSize=256
-
-internal class <Module>
-
-public class RustUiTest : MonoBehaviour
 	private static readonly Option[] enumOptions; 
 	private static readonly Option[] enumOptionsJustIcons; 
 	private static readonly Option[] enumOptionsWithIcons; 
@@ -21,7 +13,7 @@ public class RustUiTest : MonoBehaviour
 
 }
 
-private sealed class RustUiTest.<>c__DisplayClass3_0 // TypeDefIndex: 7000
+private sealed class RustUiTest.<>c__DisplayClass3_0 // TypeDefIndex: 7033
 {
 	public RustButton file; 
 
@@ -32,7 +24,7 @@ private sealed class RustUiTest.<>c__DisplayClass3_0 // TypeDefIndex: 7000
 
 }
 
-private sealed class RustUiTest.<>c // TypeDefIndex: 7001
+private sealed class RustUiTest.<>c // TypeDefIndex: 7034
 {
 	public static readonly RustUiTest.<>c <>9; 
 	public static UnityAction <>9__3_0; 

@@ -1,4 +1,4 @@
-internal class ObjectGUIState : IDisposable // TypeDefIndex: 4057
+internal class ObjectGUIState : IDisposable // TypeDefIndex: 4060
 {
 	internal IntPtr m_Ptr; 
 

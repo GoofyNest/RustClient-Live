@@ -1,4 +1,4 @@
-public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6360
+public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6363
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class RelationshipManager : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6361
+public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6364
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -129,7 +129,7 @@ public class RelationshipManager.PlayerRelationshipInfo : IDisposable, Pool.IPoo
 
 }
 
-public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6362
+public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6365
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -191,7 +191,7 @@ public class RelationshipManager.PlayerRelationships : IDisposable, Pool.IPooled
 
 }
 
-public class RelationshipManager : BaseEntity // TypeDefIndex: 10300
+public class RelationshipManager : BaseEntity // TypeDefIndex: 10335
 {
 	[ReplicatedVar] 
 	public static bool contacts; 
@@ -248,7 +248,7 @@ public class RelationshipManager : BaseEntity // TypeDefIndex: 10300
 
 }
 
-public enum RelationshipManager.RelationshipType // TypeDefIndex: 10301
+public enum RelationshipManager.RelationshipType // TypeDefIndex: 10336
 {
 	public int value__; 
 	public const RelationshipManager.RelationshipType NONE = 0;
@@ -258,7 +258,7 @@ public enum RelationshipManager.RelationshipType // TypeDefIndex: 10301
 
 }
 
-public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerFileReceiver // TypeDefIndex: 10302
+public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerFileReceiver // TypeDefIndex: 10337
 {
 	public string displayName; 
 	public ulong player; 
@@ -293,7 +293,7 @@ public class RelationshipManager.PlayerRelationshipInfo : Pool.IPooled, IServerF
 
 }
 
-public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIndex: 10303
+public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIndex: 10338
 {
 	public bool dirty; 
 	public ulong ownerPlayer; 
@@ -310,7 +310,7 @@ public class RelationshipManager.PlayerRelationships : Pool.IPooled // TypeDefIn
 
 }
 
-private sealed class RelationshipManager.<>c // TypeDefIndex: 10304
+private sealed class RelationshipManager.<>c // TypeDefIndex: 10339
 {
 	public static readonly RelationshipManager.<>c <>9; 
 	public static Func<ulong, ulong> <>9__11_0; 

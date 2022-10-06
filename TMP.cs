@@ -1,4 +1,4 @@
-public class TMP_Asset : ScriptableObject // TypeDefIndex: 6744
+public class TMP_Asset : ScriptableObject // TypeDefIndex: 6678
 {
 	public int hashCode; 
 	public Material material; 
@@ -9,7 +9,7 @@ public class TMP_Asset : ScriptableObject // TypeDefIndex: 6744
 
 }
 
-public class TMP_Character : TMP_TextElement // TypeDefIndex: 6745
+public class TMP_Character : TMP_TextElement // TypeDefIndex: 6679
 {
 
 	public void .ctor() { }
@@ -20,7 +20,7 @@ public class TMP_Character : TMP_TextElement // TypeDefIndex: 6745
 
 }
 
-public struct TMP_Vertex // TypeDefIndex: 6746
+public struct TMP_Vertex // TypeDefIndex: 6680
 {
 	public Vector3 position; 
 	public Vector2 uv; 
@@ -30,7 +30,7 @@ public struct TMP_Vertex // TypeDefIndex: 6746
 
 }
 
-public struct TMP_CharacterInfo // TypeDefIndex: 6747
+public struct TMP_CharacterInfo // TypeDefIndex: 6681
 {
 	public char character; 
 	public int index; 
@@ -69,7 +69,7 @@ public struct TMP_CharacterInfo // TypeDefIndex: 6747
 
 }
 
-public class TMP_ColorGradient : ScriptableObject // TypeDefIndex: 6749
+public class TMP_ColorGradient : ScriptableObject // TypeDefIndex: 6683
 {
 	public ColorMode colorMode; 
 	public Color topLeft; 
@@ -90,7 +90,7 @@ public class TMP_ColorGradient : ScriptableObject // TypeDefIndex: 6749
 
 }
 
-public static class TMP_DefaultControls // TypeDefIndex: 6758
+public static class TMP_DefaultControls // TypeDefIndex: 6692
 {
 	private const float kWidth = 160;
 	private const float kThickHeight = 30;
@@ -125,7 +125,7 @@ public static class TMP_DefaultControls // TypeDefIndex: 6758
 
 }
 
-public struct TMP_DefaultControls.Resources // TypeDefIndex: 6759
+public struct TMP_DefaultControls.Resources // TypeDefIndex: 6693
 {
 	public Sprite standard; 
 	public Sprite background; 
@@ -137,7 +137,7 @@ public struct TMP_DefaultControls.Resources // TypeDefIndex: 6759
 
 }
 
-public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6761
+public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6695
 {
 	[SerializeField] 
 	private string m_Version; 
@@ -373,7 +373,7 @@ public class TMP_FontAsset : TMP_Asset // TypeDefIndex: 6761
 
 }
 
-private sealed class TMP_FontAsset.<>c // TypeDefIndex: 6762
+private sealed class TMP_FontAsset.<>c // TypeDefIndex: 6696
 {
 	public static readonly TMP_FontAsset.<>c <>9; 
 	public static Func<TMP_Character, uint> <>9__100_0; 
@@ -390,7 +390,7 @@ private sealed class TMP_FontAsset.<>c // TypeDefIndex: 6762
 
 }
 
-public class TMP_Glyph : TMP_TextElement_Legacy // TypeDefIndex: 6764
+public class TMP_Glyph : TMP_TextElement_Legacy // TypeDefIndex: 6698
 {
 
 	public static TMP_Glyph Clone(TMP_Glyph source) { }
@@ -399,14 +399,14 @@ public class TMP_Glyph : TMP_TextElement_Legacy // TypeDefIndex: 6764
 
 }
 
-public struct TMP_FontWeightPair // TypeDefIndex: 6766
+public struct TMP_FontWeightPair // TypeDefIndex: 6700
 {
 	public TMP_FontAsset regularTypeface; 
 	public TMP_FontAsset italicTypeface; 
 
 }
 
-public static class TMP_FontUtilities // TypeDefIndex: 6775
+public static class TMP_FontUtilities // TypeDefIndex: 6709
 {
 	private static List<int> k_searchedFontAssets; 
 
@@ -421,7 +421,7 @@ public static class TMP_FontUtilities // TypeDefIndex: 6775
 
 }
 
-public class TMP_FontAssetUtilities // TypeDefIndex: 6776
+public class TMP_FontAssetUtilities // TypeDefIndex: 6710
 {
 	private static readonly TMP_FontAssetUtilities s_Instance; 
 	private static List<int> k_SearchedFontAssets; 
@@ -448,7 +448,7 @@ public class TMP_FontAssetUtilities // TypeDefIndex: 6776
 
 }
 
-public class TMP_FontFeatureTable // TypeDefIndex: 6777
+public class TMP_FontFeatureTable // TypeDefIndex: 6711
 {
 	[SerializeField] 
 	internal List<TMP_GlyphPairAdjustmentRecord> m_GlyphPairAdjustmentRecords; 
@@ -467,7 +467,7 @@ public class TMP_FontFeatureTable // TypeDefIndex: 6777
 
 }
 
-private sealed class TMP_FontFeatureTable.<>c // TypeDefIndex: 6778
+private sealed class TMP_FontFeatureTable.<>c // TypeDefIndex: 6712
 {
 	public static readonly TMP_FontFeatureTable.<>c <>9; 
 	public static Func<TMP_GlyphPairAdjustmentRecord, uint> <>9__6_0; 
@@ -484,7 +484,7 @@ private sealed class TMP_FontFeatureTable.<>c // TypeDefIndex: 6778
 
 }
 
-public struct TMP_GlyphValueRecord // TypeDefIndex: 6780
+public struct TMP_GlyphValueRecord // TypeDefIndex: 6714
 {
 	[SerializeField] 
 	private float m_XPlacement; 
@@ -527,7 +527,7 @@ public struct TMP_GlyphValueRecord // TypeDefIndex: 6780
 
 }
 
-public struct TMP_GlyphAdjustmentRecord // TypeDefIndex: 6781
+public struct TMP_GlyphAdjustmentRecord // TypeDefIndex: 6715
 {
 	[SerializeField] 
 	private uint m_GlyphIndex; 
@@ -552,7 +552,7 @@ public struct TMP_GlyphAdjustmentRecord // TypeDefIndex: 6781
 
 }
 
-public class TMP_GlyphPairAdjustmentRecord // TypeDefIndex: 6782
+public class TMP_GlyphPairAdjustmentRecord // TypeDefIndex: 6716
 {
 	[SerializeField] 
 	private TMP_GlyphAdjustmentRecord m_FirstAdjustmentRecord; 
@@ -584,7 +584,7 @@ public class TMP_GlyphPairAdjustmentRecord // TypeDefIndex: 6782
 
 }
 
-public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement, IScrollHandler // TypeDefIndex: 6784
+public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, ICanvasElement, ILayoutElement, IScrollHandler // TypeDefIndex: 6718
 {
 	protected TouchScreenKeyboard m_SoftKeyboard; 
 	private static readonly char[] kSeparators; 
@@ -1233,7 +1233,7 @@ public class TMP_InputField : Selectable, IUpdateSelectedHandler, IEventSystemHa
 
 }
 
-public enum TMP_InputField.ContentType // TypeDefIndex: 6785
+public enum TMP_InputField.ContentType // TypeDefIndex: 6719
 {
 	public int value__; 
 	public const TMP_InputField.ContentType Standard = 0;
@@ -1249,7 +1249,7 @@ public enum TMP_InputField.ContentType // TypeDefIndex: 6785
 
 }
 
-public enum TMP_InputField.InputType // TypeDefIndex: 6786
+public enum TMP_InputField.InputType // TypeDefIndex: 6720
 {
 	public int value__; 
 	public const TMP_InputField.InputType Standard = 0;
@@ -1258,7 +1258,7 @@ public enum TMP_InputField.InputType // TypeDefIndex: 6786
 
 }
 
-public enum TMP_InputField.CharacterValidation // TypeDefIndex: 6787
+public enum TMP_InputField.CharacterValidation // TypeDefIndex: 6721
 {
 	public int value__; 
 	public const TMP_InputField.CharacterValidation None = 0;
@@ -1273,7 +1273,7 @@ public enum TMP_InputField.CharacterValidation // TypeDefIndex: 6787
 
 }
 
-public enum TMP_InputField.LineType // TypeDefIndex: 6788
+public enum TMP_InputField.LineType // TypeDefIndex: 6722
 {
 	public int value__; 
 	public const TMP_InputField.LineType SingleLine = 0;
@@ -1282,7 +1282,7 @@ public enum TMP_InputField.LineType // TypeDefIndex: 6788
 
 }
 
-public sealed class TMP_InputField.OnValidateInput : MulticastDelegate // TypeDefIndex: 6789
+public sealed class TMP_InputField.OnValidateInput : MulticastDelegate // TypeDefIndex: 6723
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1295,42 +1295,42 @@ public sealed class TMP_InputField.OnValidateInput : MulticastDelegate // TypeDe
 
 }
 
-public class TMP_InputField.SubmitEvent : UnityEvent<string> // TypeDefIndex: 6790
+public class TMP_InputField.SubmitEvent : UnityEvent<string> // TypeDefIndex: 6724
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 6791
+public class TMP_InputField.OnChangeEvent : UnityEvent<string> // TypeDefIndex: 6725
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.SelectionEvent : UnityEvent<string> // TypeDefIndex: 6792
+public class TMP_InputField.SelectionEvent : UnityEvent<string> // TypeDefIndex: 6726
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.TextSelectionEvent : UnityEvent<string, int, int> // TypeDefIndex: 6793
+public class TMP_InputField.TextSelectionEvent : UnityEvent<string, int, int> // TypeDefIndex: 6727
 {
 
 	public void .ctor() { }
 
 }
 
-public class TMP_InputField.TouchScreenKeyboardEvent : UnityEvent<TouchScreenKeyboard.Status> // TypeDefIndex: 6794
+public class TMP_InputField.TouchScreenKeyboardEvent : UnityEvent<TouchScreenKeyboard.Status> // TypeDefIndex: 6728
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class TMP_InputField.<CaretBlink>d__267 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6796
+private sealed class TMP_InputField.<CaretBlink>d__267 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6730
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1359,7 +1359,7 @@ private sealed class TMP_InputField.<CaretBlink>d__267 : IEnumerator<object>, IE
 
 }
 
-private sealed class TMP_InputField.<MouseDragOutsideRect>d__285 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6797
+private sealed class TMP_InputField.<MouseDragOutsideRect>d__285 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6731
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -1389,7 +1389,7 @@ private sealed class TMP_InputField.<MouseDragOutsideRect>d__285 : IEnumerator<o
 
 }
 
-public abstract class TMP_InputValidator : ScriptableObject // TypeDefIndex: 6799
+public abstract class TMP_InputValidator : ScriptableObject // TypeDefIndex: 6733
 {
 
 	public abstract char Validate(ref string text, ref int pos, char ch);
@@ -1398,7 +1398,7 @@ public abstract class TMP_InputValidator : ScriptableObject // TypeDefIndex: 679
 
 }
 
-public struct TMP_LineInfo // TypeDefIndex: 6800
+public struct TMP_LineInfo // TypeDefIndex: 6734
 {
 	internal int controlCharacterCount; 
 	public int characterCount; 
@@ -1423,7 +1423,7 @@ public struct TMP_LineInfo // TypeDefIndex: 6800
 
 }
 
-internal static class TMP_ListPool<T> // TypeDefIndex: 6801
+internal static class TMP_ListPool<T> // TypeDefIndex: 6735
 {
 	private static readonly TMP_ObjectPool<List<T>> s_ListPool; 
 
@@ -1454,7 +1454,7 @@ internal static class TMP_ListPool<T> // TypeDefIndex: 6801
 
 }
 
-private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6802
+private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6736
 {
 	public static readonly TMP_ListPool.<>c<T> <>9; 
 
@@ -1479,7 +1479,7 @@ private sealed class TMP_ListPool.<>c<T> // TypeDefIndex: 6802
 
 }
 
-public static class TMP_MaterialManager // TypeDefIndex: 6803
+public static class TMP_MaterialManager // TypeDefIndex: 6737
 {
 	private static List<TMP_MaterialManager.MaskingMaterial> m_materialList; 
 	private static Dictionary<long, TMP_MaterialManager.FallbackMaterial> m_fallbackMaterials; 
@@ -1530,7 +1530,7 @@ public static class TMP_MaterialManager // TypeDefIndex: 6803
 
 }
 
-private class TMP_MaterialManager.FallbackMaterial // TypeDefIndex: 6804
+private class TMP_MaterialManager.FallbackMaterial // TypeDefIndex: 6738
 {
 	public int baseID; 
 	public Material baseMaterial; 
@@ -1543,7 +1543,7 @@ private class TMP_MaterialManager.FallbackMaterial // TypeDefIndex: 6804
 
 }
 
-private class TMP_MaterialManager.MaskingMaterial // TypeDefIndex: 6805
+private class TMP_MaterialManager.MaskingMaterial // TypeDefIndex: 6739
 {
 	public Material baseMaterial; 
 	public Material stencilMaterial; 
@@ -1555,7 +1555,7 @@ private class TMP_MaterialManager.MaskingMaterial // TypeDefIndex: 6805
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass10_0 // TypeDefIndex: 6806
+private sealed class TMP_MaterialManager.<>c__DisplayClass10_0 // TypeDefIndex: 6740
 {
 	public Material stencilMaterial; 
 
@@ -1566,7 +1566,7 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass10_0 // TypeDefIndex: 
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass12_0 // TypeDefIndex: 6807
+private sealed class TMP_MaterialManager.<>c__DisplayClass12_0 // TypeDefIndex: 6741
 {
 	public Material stencilMaterial; 
 
@@ -1577,7 +1577,7 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass12_0 // TypeDefIndex: 
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass13_0 // TypeDefIndex: 6808
+private sealed class TMP_MaterialManager.<>c__DisplayClass13_0 // TypeDefIndex: 6742
 {
 	public Material stencilMaterial; 
 
@@ -1588,7 +1588,7 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass13_0 // TypeDefIndex: 
 
 }
 
-private sealed class TMP_MaterialManager.<>c__DisplayClass14_0 // TypeDefIndex: 6809
+private sealed class TMP_MaterialManager.<>c__DisplayClass14_0 // TypeDefIndex: 6743
 {
 	public Material baseMaterial; 
 
@@ -1599,7 +1599,7 @@ private sealed class TMP_MaterialManager.<>c__DisplayClass14_0 // TypeDefIndex: 
 
 }
 
-public struct TMP_MeshInfo // TypeDefIndex: 6811
+public struct TMP_MeshInfo // TypeDefIndex: 6745
 {
 	private static readonly Color32 s_DefaultColor; 
 	private static readonly Vector3 s_DefaultNormal; 
@@ -1644,7 +1644,7 @@ public struct TMP_MeshInfo // TypeDefIndex: 6811
 
 }
 
-internal class TMP_ObjectPool<T> // TypeDefIndex: 6812
+internal class TMP_ObjectPool<T> // TypeDefIndex: 6746
 {
 	private readonly Stack<T> m_Stack; 
 	private readonly UnityAction<T> m_ActionOnGet; 
@@ -1703,7 +1703,7 @@ internal class TMP_ObjectPool<T> // TypeDefIndex: 6812
 
 }
 
-public struct TMP_FontStyleStack // TypeDefIndex: 6813
+public struct TMP_FontStyleStack // TypeDefIndex: 6747
 {
 	public byte bold; 
 	public byte italic; 
@@ -1725,7 +1725,7 @@ public struct TMP_FontStyleStack // TypeDefIndex: 6813
 
 }
 
-public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6814
+public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6748
 {
 	public T[] m_ItemStack; 
 	public int m_Index; 
@@ -1899,7 +1899,7 @@ public struct TMP_RichTextTagStack<T> // TypeDefIndex: 6814
 
 }
 
-public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, IEventSystemHandler, ISelectHandler, IDeselectHandler // TypeDefIndex: 6819
+public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, IEventSystemHandler, ISelectHandler, IDeselectHandler // TypeDefIndex: 6753
 {
 	public bool isSelected; 
 
@@ -1914,7 +1914,7 @@ public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, IE
 
 }
 
-public class TMP_SelectionCaret : MaskableGraphic // TypeDefIndex: 6820
+public class TMP_SelectionCaret : MaskableGraphic // TypeDefIndex: 6754
 {
 
 	public override void Cull(Rect clipRect, bool validRect) { }
@@ -1923,7 +1923,7 @@ public class TMP_SelectionCaret : MaskableGraphic // TypeDefIndex: 6820
 
 }
 
-public class TMP_Settings : ScriptableObject // TypeDefIndex: 6821
+public class TMP_Settings : ScriptableObject // TypeDefIndex: 6755
 {
 	private static TMP_Settings s_Instance; 
 	[SerializeField] 
@@ -2068,7 +2068,7 @@ public class TMP_Settings : ScriptableObject // TypeDefIndex: 6821
 
 }
 
-public class TMP_Settings.LineBreakingTable // TypeDefIndex: 6822
+public class TMP_Settings.LineBreakingTable // TypeDefIndex: 6756
 {
 	public Dictionary<int, char> leadingCharacters; 
 	public Dictionary<int, char> followingCharacters; 
@@ -2078,7 +2078,7 @@ public class TMP_Settings.LineBreakingTable // TypeDefIndex: 6822
 
 }
 
-public class TMP_SubMesh : MonoBehaviour // TypeDefIndex: 6824
+public class TMP_SubMesh : MonoBehaviour // TypeDefIndex: 6758
 {
 	[SerializeField] 
 	private TMP_FontAsset m_fontAsset; 
@@ -2181,7 +2181,7 @@ public class TMP_SubMesh : MonoBehaviour // TypeDefIndex: 6824
 
 }
 
-public class TMP_SubMeshUI : MaskableGraphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 6825
+public class TMP_SubMeshUI : MaskableGraphic, IClippable, IMaskable, IMaterialModifier // TypeDefIndex: 6759
 {
 	[SerializeField] 
 	private TMP_FontAsset m_fontAsset; 
@@ -2312,7 +2312,7 @@ public class TMP_SubMeshUI : MaskableGraphic, IClippable, IMaskable, IMaterialMo
 
 }
 
-public enum TMP_TextElementType // TypeDefIndex: 6831
+public enum TMP_TextElementType // TypeDefIndex: 6765
 {
 	public int value__; 
 	public const TMP_TextElementType Character = 0;
@@ -2320,7 +2320,7 @@ public enum TMP_TextElementType // TypeDefIndex: 6831
 
 }
 
-public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6838
+public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6772
 {
 	[SerializeField] 
 	[TextAreaAttribute] 
@@ -3156,7 +3156,7 @@ public abstract class TMP_Text : MaskableGraphic // TypeDefIndex: 6838
 
 }
 
-public class TMP_TextElement // TypeDefIndex: 6841
+public class TMP_TextElement // TypeDefIndex: 6775
 {
 	[SerializeField] 
 	protected TextElementType m_ElementType; 
@@ -3197,7 +3197,7 @@ public class TMP_TextElement // TypeDefIndex: 6841
 
 }
 
-public class TMP_TextElement_Legacy // TypeDefIndex: 6842
+public class TMP_TextElement_Legacy // TypeDefIndex: 6776
 {
 	public int id; 
 	public float x; 
@@ -3214,7 +3214,7 @@ public class TMP_TextElement_Legacy // TypeDefIndex: 6842
 
 }
 
-public class TMP_TextInfo // TypeDefIndex: 6843
+public class TMP_TextInfo // TypeDefIndex: 6777
 {
 	private static Vector2 k_InfinityVectorPositive; 
 	private static Vector2 k_InfinityVectorNegative; 
@@ -3283,7 +3283,7 @@ public class TMP_TextInfo // TypeDefIndex: 6843
 
 }
 
-public class TMP_TextParsingUtilities // TypeDefIndex: 6844
+public class TMP_TextParsingUtilities // TypeDefIndex: 6778
 {
 	private static readonly TMP_TextParsingUtilities s_Instance; 
 	private const string k_LookupStringL = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[-]^_`abcdefghijklmnopqrstuvwxyz{|}~-";
@@ -3316,7 +3316,7 @@ public class TMP_TextParsingUtilities // TypeDefIndex: 6844
 
 }
 
-public static class TMP_TextUtilities // TypeDefIndex: 6847
+public static class TMP_TextUtilities // TypeDefIndex: 6781
 {
 	private static Vector3[] m_rectWorldCorners; 
 	private const string k_lookupStringL = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[-]^_`abcdefghijklmnopqrstuvwxyz{|}~-";
@@ -3371,7 +3371,7 @@ public static class TMP_TextUtilities // TypeDefIndex: 6847
 
 }
 
-private struct TMP_TextUtilities.LineSegment // TypeDefIndex: 6848
+private struct TMP_TextUtilities.LineSegment // TypeDefIndex: 6782
 {
 	public Vector3 Point1; 
 	public Vector3 Point2; 
@@ -3381,7 +3381,7 @@ private struct TMP_TextUtilities.LineSegment // TypeDefIndex: 6848
 
 }
 
-public class TMP_UpdateManager // TypeDefIndex: 6849
+public class TMP_UpdateManager // TypeDefIndex: 6783
 {
 	private static TMP_UpdateManager s_Instance; 
 	private readonly List<TMP_Text> m_LayoutRebuildQueue; 
@@ -3428,7 +3428,7 @@ public class TMP_UpdateManager // TypeDefIndex: 6849
 
 }
 
-public class TMP_UpdateRegistry // TypeDefIndex: 6850
+public class TMP_UpdateRegistry // TypeDefIndex: 6784
 {
 	private static TMP_UpdateRegistry s_Instance; 
 	private readonly List<ICanvasElement> m_LayoutRebuildQueue; 
@@ -3463,7 +3463,7 @@ public class TMP_UpdateRegistry // TypeDefIndex: 6850
 
 }
 
-public static class TMP_Math // TypeDefIndex: 6855
+public static class TMP_Math // TypeDefIndex: 6789
 {
 	public const float FLOAT_MAX = 32767;
 	public const float FLOAT_MIN = -32767;
@@ -3481,7 +3481,7 @@ public static class TMP_Math // TypeDefIndex: 6855
 
 }
 
-public enum TMP_VertexDataUpdateFlags // TypeDefIndex: 6856
+public enum TMP_VertexDataUpdateFlags // TypeDefIndex: 6790
 {
 	public int value__; 
 	public const TMP_VertexDataUpdateFlags None = 0;
@@ -3494,7 +3494,7 @@ public enum TMP_VertexDataUpdateFlags // TypeDefIndex: 6856
 
 }
 
-public struct TMP_PageInfo // TypeDefIndex: 6858
+public struct TMP_PageInfo // TypeDefIndex: 6792
 {
 	public int firstCharacterIndex; 
 	public int lastCharacterIndex; 
@@ -3504,7 +3504,7 @@ public struct TMP_PageInfo // TypeDefIndex: 6858
 
 }
 
-public struct TMP_LinkInfo // TypeDefIndex: 6859
+public struct TMP_LinkInfo // TypeDefIndex: 6793
 {
 	public TMP_Text textComponent; 
 	public int hashCode; 
@@ -3523,7 +3523,7 @@ public struct TMP_LinkInfo // TypeDefIndex: 6859
 
 }
 
-public struct TMP_WordInfo // TypeDefIndex: 6860
+public struct TMP_WordInfo // TypeDefIndex: 6794
 {
 	public TMP_Text textComponent; 
 	public int firstCharacterIndex; 
@@ -3535,7 +3535,7 @@ public struct TMP_WordInfo // TypeDefIndex: 6860
 
 }
 
-public struct TMP_SpriteInfo // TypeDefIndex: 6861
+public struct TMP_SpriteInfo // TypeDefIndex: 6795
 {
 	public int spriteIndex; 
 	public int characterIndex; 

@@ -1,4 +1,4 @@
-public class ChildrenFromScene : MonoBehaviour // TypeDefIndex: 12510
+public class ChildrenFromScene : MonoBehaviour // TypeDefIndex: 12550
 {
 	public string SceneName; 
 	public bool StartChildrenDisabled; 
@@ -11,7 +11,7 @@ public class ChildrenFromScene : MonoBehaviour // TypeDefIndex: 12510
 
 }
 
-private sealed class ChildrenFromScene.<Start>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12511
+private sealed class ChildrenFromScene.<Start>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12551
 {
 	private int <>1__state; 
 	private object <>2__current; 

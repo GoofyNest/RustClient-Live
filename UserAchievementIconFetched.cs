@@ -1,4 +1,4 @@
-internal struct UserAchievementIconFetched_t : ICallbackData // TypeDefIndex: 5395
+internal struct UserAchievementIconFetched_t : ICallbackData // TypeDefIndex: 5398
 {
 	internal GameId GameID; 
 	internal byte[] AchievementName; 

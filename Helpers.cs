@@ -1,4 +1,4 @@
-internal static class Helpers // TypeDefIndex: 5255
+internal static class Helpers // TypeDefIndex: 5258
 {
 	private static byte[][] BufferPool; 
 	private static int BufferPoolIndex; 
@@ -14,7 +14,7 @@ internal static class Helpers // TypeDefIndex: 5255
 
 }
 
-internal struct Helpers.Memory : IDisposable // TypeDefIndex: 5256
+internal struct Helpers.Memory : IDisposable // TypeDefIndex: 5259
 {
 	private static readonly Queue<IntPtr> BufferBag; 
 	[CompilerGeneratedAttribute] 

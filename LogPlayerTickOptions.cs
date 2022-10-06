@@ -1,4 +1,4 @@
-public struct LogPlayerTickOptions // TypeDefIndex: 9737
+public struct LogPlayerTickOptions // TypeDefIndex: 9771
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <PlayerHandle>k__BackingField; 

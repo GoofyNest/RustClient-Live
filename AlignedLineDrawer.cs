@@ -1,4 +1,4 @@
-public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex: 10547
+public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex: 10583
 {
 	public MeshFilter Filter; 
 	public MeshRenderer Renderer; 
@@ -59,14 +59,14 @@ public class AlignedLineDrawer : MonoBehaviour, IClientComponent // TypeDefIndex
 
 }
 
-public struct AlignedLineDrawer.LinePoint // TypeDefIndex: 10548
+public struct AlignedLineDrawer.LinePoint // TypeDefIndex: 10584
 {
 	public Vector3 LocalPosition; 
 	public Vector3 WorldNormal; 
 
 }
 
-public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDrawer> // TypeDefIndex: 10549
+public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDrawer> // TypeDefIndex: 10585
 {
 
 	protected override void RunJob(AlignedLineDrawer entity) { }
@@ -77,7 +77,7 @@ public class AlignedLineDrawer.LineDrawerQueue : ObjectWorkQueue<AlignedLineDraw
 
 }
 
-private struct AlignedLineDrawer.<>c__DisplayClass24_0 // TypeDefIndex: 10550
+private struct AlignedLineDrawer.<>c__DisplayClass24_0 // TypeDefIndex: 10586
 {
 	public List<Vector3> verts; 
 	public AlignedLineDrawer <>4__this; 

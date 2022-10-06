@@ -1,4 +1,4 @@
-public enum ShaderPropertyType // TypeDefIndex: 3857
+public enum ShaderPropertyType // TypeDefIndex: 3859
 {
 	public int value__; 
 	public const ShaderPropertyType Color = 0;

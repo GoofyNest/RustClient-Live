@@ -1,4 +1,4 @@
-public class ControllerColliderHit // TypeDefIndex: 3914
+public class ControllerColliderHit // TypeDefIndex: 3917
 {
 	internal CharacterController m_Controller; 
 	internal Collider m_Collider; 

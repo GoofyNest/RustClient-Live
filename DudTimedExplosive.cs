@@ -1,4 +1,4 @@
-public class DudTimedExplosive : TimedExplosive, IIgniteable, ISplashable // TypeDefIndex: 10055
+public class DudTimedExplosive : TimedExplosive, IIgniteable, ISplashable // TypeDefIndex: 10089
 {
 	private Option __menuOption_Menu_Pickup; 
 	public GameObjectRef fizzleEffect; 

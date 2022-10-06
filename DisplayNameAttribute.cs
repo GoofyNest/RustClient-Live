@@ -25,7 +25,7 @@ public class DisplayNameAttribute : Attribute // TypeDefIndex: 2696
 
 }
 
-public sealed class DisplayNameAttribute : Attribute // TypeDefIndex: 13441
+public sealed class DisplayNameAttribute : Attribute // TypeDefIndex: 13484
 {
 	public readonly string displayName; 
 

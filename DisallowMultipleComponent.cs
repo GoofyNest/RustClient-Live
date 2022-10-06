@@ -1,4 +1,4 @@
-public sealed class DisallowMultipleComponent : Attribute // TypeDefIndex: 3493
+public sealed class DisallowMultipleComponent : Attribute // TypeDefIndex: 3495
 {
 
 	public void .ctor() { }

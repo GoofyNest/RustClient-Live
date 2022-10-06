@@ -1,4 +1,4 @@
-public class ERConnectionParent : MonoBehaviour // TypeDefIndex: 7222
+public class ERConnectionParent : MonoBehaviour // TypeDefIndex: 7256
 {
 
 	public void .ctor() { }

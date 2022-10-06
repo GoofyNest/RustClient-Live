@@ -1,4 +1,4 @@
-public class ExcludeFromPresetAttribute : Attribute // TypeDefIndex: 3504
+public class ExcludeFromPresetAttribute : Attribute // TypeDefIndex: 3506
 {
 
 [UsedByNativeCodeAttribute] 

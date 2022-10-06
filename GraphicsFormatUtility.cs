@@ -1,4 +1,4 @@
-public class GraphicsFormatUtility // TypeDefIndex: 3903
+public class GraphicsFormatUtility // TypeDefIndex: 3906
 {
 
 	[FreeFunctionAttribute] 

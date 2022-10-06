@@ -1,4 +1,4 @@
-public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7034
+public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7068
 {
 	public bool IsLocalized; 
 	public string Token; 
@@ -29,7 +29,7 @@ public class RustText : TextMeshProUGUI, ILocalize // TypeDefIndex: 7034
 
 	public void SetText(string str) { }
 
-	public void DoAutoSize() { }
+	public virtual void DoAutoSize() { }
 
 	public override void Rebuild(CanvasUpdate update) { }
 

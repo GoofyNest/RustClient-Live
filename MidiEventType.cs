@@ -1,4 +1,4 @@
-public enum MidiEventType // TypeDefIndex: 7491
+public enum MidiEventType // TypeDefIndex: 7525
 {
 	public byte value__; 
 	public const MidiEventType NormalSysEx = 0;

@@ -1,4 +1,65 @@
-public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10003
+public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6443
+{
+	public bool ShouldPool; 
+	private bool _disposed; 
+	public float cookSpeed; 
+
+
+	public static void ResetToPool(BaseOven instance) { }
+
+	public void ResetToPool() { }
+
+	public virtual void Dispose() { }
+
+	public virtual void EnterPool() { }
+
+	public virtual void LeavePool() { }
+
+	public void CopyTo(BaseOven instance) { }
+
+	public BaseOven Copy() { }
+
+	public static BaseOven Deserialize(Stream stream) { }
+
+	public static BaseOven DeserializeLengthDelimited(Stream stream) { }
+
+	public static BaseOven DeserializeLength(Stream stream, int length) { }
+
+	public static BaseOven Deserialize(byte[] buffer) { }
+
+	public void FromProto(Stream stream, bool isDelta = False) { }
+
+	public virtual void WriteToStream(Stream stream) { }
+
+	public virtual void WriteToStreamDelta(Stream stream, BaseOven previous) { }
+
+	public virtual void ReadFromStream(Stream stream, int size, bool isDelta = False) { }
+
+	public static BaseOven Deserialize(byte[] buffer, BaseOven instance, bool isDelta = False) { }
+
+	public static BaseOven Deserialize(Stream stream, BaseOven instance, bool isDelta) { }
+
+	public static BaseOven DeserializeLengthDelimited(Stream stream, BaseOven instance, bool isDelta) { }
+
+	public static BaseOven DeserializeLength(Stream stream, int length, BaseOven instance, bool isDelta) { }
+
+	public static void SerializeDelta(Stream stream, BaseOven instance, BaseOven previous) { }
+
+	public static void Serialize(Stream stream, BaseOven instance) { }
+
+	public byte[] ToProtoBytes() { }
+
+	public void ToProto(Stream stream) { }
+
+	public static byte[] SerializeToBytes(BaseOven instance) { }
+
+	public static void SerializeLengthDelimited(Stream stream, BaseOven instance) { }
+
+	public void .ctor() { }
+
+}
+
+public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10037
 {
 	private Option __menuOption_SwitchOff; 
 	private Option __menuOption_SwitchOn; 
@@ -15,6 +76,7 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10003
 	public int fuelSlots; 
 	public int inputSlots; 
 	public int outputSlots; 
+	private float cookSpeedClient; 
 
 	public override bool HasMenuOptions { get; }
 	private float cookingTemperature { get; }
@@ -25,6 +87,8 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10003
 	public override bool get_HasMenuOptions() { }
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
+
+	public float GetSmeltingSpeed() { }
 
 	private float get_cookingTemperature() { }
 
@@ -42,6 +106,8 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10003
 
 	public override bool HasSlot(BaseEntity.Slot slot) { }
 
+	public override void Load(BaseNetworkable.LoadInfo info) { }
+
 	[BaseEntity.Menu] 
 	[BaseEntity.Menu.ShowIf] 
 	public void SwitchOn(BasePlayer player) { }
@@ -58,7 +124,7 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10003
 
 }
 
-public enum BaseOven.TemperatureType // TypeDefIndex: 10004
+public enum BaseOven.TemperatureType // TypeDefIndex: 10038
 {
 	public int value__; 
 	public const BaseOven.TemperatureType Normal = 0;
@@ -69,23 +135,23 @@ public enum BaseOven.TemperatureType // TypeDefIndex: 10004
 
 }
 
-private sealed class BaseOven.<>c // TypeDefIndex: 10005
+private sealed class BaseOven.<>c // TypeDefIndex: 10039
 {
 	public static readonly BaseOven.<>c <>9; 
-	public static Func<GameObject, BaseOven> <>9__27_0; 
-	public static Func<BaseOven, bool> <>9__27_1; 
-	public static Func<BaseOven, float> <>9__27_2; 
+	public static Func<GameObject, BaseOven> <>9__28_0; 
+	public static Func<BaseOven, bool> <>9__28_1; 
+	public static Func<BaseOven, float> <>9__28_2; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal BaseOven <BuildMaterialOutputCache>b__27_0(GameObject x) { }
+	internal BaseOven <BuildMaterialOutputCache>b__28_0(GameObject x) { }
 
-	internal bool <BuildMaterialOutputCache>b__27_1(BaseOven x) { }
+	internal bool <BuildMaterialOutputCache>b__28_1(BaseOven x) { }
 
-	internal float <BuildMaterialOutputCache>b__27_2(BaseOven x) { }
+	internal float <BuildMaterialOutputCache>b__28_2(BaseOven x) { }
 
 }
 

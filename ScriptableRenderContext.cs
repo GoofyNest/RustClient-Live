@@ -1,4 +1,4 @@
-public struct ScriptableRenderContext : IEquatable<ScriptableRenderContext> // TypeDefIndex: 3852
+public struct ScriptableRenderContext : IEquatable<ScriptableRenderContext> // TypeDefIndex: 3854
 {
 	private IntPtr m_Ptr; 
 

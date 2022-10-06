@@ -1,4 +1,4 @@
-internal struct StoreAuthURLResponse_t : ICallbackData // TypeDefIndex: 5305
+internal struct StoreAuthURLResponse_t : ICallbackData // TypeDefIndex: 5308
 {
 	internal byte[] URL; 
 	public static int _datasize; 

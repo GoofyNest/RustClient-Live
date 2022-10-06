@@ -1,4 +1,4 @@
-public enum FriendsStatus // TypeDefIndex: 9342
+public enum FriendsStatus // TypeDefIndex: 9376
 {
 	public int value__; 
 	public const FriendsStatus NotFriends = 0;

@@ -1,4 +1,4 @@
-public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6392
+public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6395
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6392
 
 }
 
-public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 11108
+public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 11146
 {
 	public static Dictionary<string, string> ValidStations; 
 	public static Dictionary<string, string> ServerValidStations; 
@@ -92,7 +92,7 @@ public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 
 
 	public static void LoadStations() { }
 
-	private static string GetStationData() { }
+	private static Dictionary<string, string> GetStationData() { }
 
 	private static bool IsStationValid(string url) { }
 

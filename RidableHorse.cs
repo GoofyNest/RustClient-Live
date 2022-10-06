@@ -1,4 +1,4 @@
-public class RidableHorse : BaseRidableAnimal // TypeDefIndex: 10307
+public class RidableHorse : BaseRidableAnimal // TypeDefIndex: 10343
 {
 	[ServerVar] 
 	public static float Population; 

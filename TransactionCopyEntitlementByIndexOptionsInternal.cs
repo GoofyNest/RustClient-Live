@@ -1,4 +1,4 @@
-internal struct TransactionCopyEntitlementByIndexOptionsInternal : ISettable<TransactionCopyEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9472
+internal struct TransactionCopyEntitlementByIndexOptionsInternal : ISettable<TransactionCopyEntitlementByIndexOptions>, IDisposable // TypeDefIndex: 9506
 {
 	private int m_ApiVersion; 
 	private uint m_EntitlementIndex; 

@@ -8,8 +8,8 @@ public struct ProfilerMarker // TypeDefIndex: 3296
 
 	public ProfilerMarker.AutoScope Auto() { }
 
-	[ThreadSafeAttribute] 
 	[NativeConditionalAttribute] 
+	[ThreadSafeAttribute] 
 	internal static IntPtr Internal_Create(string name, ushort flags) { }
 
 	[ThreadSafeAttribute] 

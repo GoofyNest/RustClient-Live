@@ -1,4 +1,4 @@
-public struct TransformAccess // TypeDefIndex: 3589
+public struct TransformAccess // TypeDefIndex: 3591
 {
 	private IntPtr hierarchy; 
 	private int index; 

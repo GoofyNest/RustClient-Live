@@ -1,4 +1,4 @@
-public enum BlendMode // TypeDefIndex: 3810
+public enum BlendMode // TypeDefIndex: 3812
 {
 	public int value__; 
 	public const BlendMode Zero = 0;

@@ -1,4 +1,4 @@
-public struct CatalogOffer // TypeDefIndex: 9375
+public struct CatalogOffer // TypeDefIndex: 9409
 {
 	[CompilerGeneratedAttribute] 
 	private int <ServerIndex>k__BackingField; 

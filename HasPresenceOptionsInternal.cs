@@ -1,4 +1,4 @@
-internal struct HasPresenceOptionsInternal : ISettable<HasPresenceOptions>, IDisposable // TypeDefIndex: 8786
+internal struct HasPresenceOptionsInternal : ISettable<HasPresenceOptions>, IDisposable // TypeDefIndex: 8820
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

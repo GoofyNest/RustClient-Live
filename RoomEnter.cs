@@ -1,4 +1,4 @@
-public enum RoomEnter // TypeDefIndex: 5141
+public enum RoomEnter // TypeDefIndex: 5144
 {
 	public int value__; 
 	public const RoomEnter Success = 1;

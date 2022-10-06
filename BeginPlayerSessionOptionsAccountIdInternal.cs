@@ -1,4 +1,4 @@
-internal struct BeginPlayerSessionOptionsAccountIdInternal : IGettable<BeginPlayerSessionOptionsAccountId>, ISettable<BeginPlayerSessionOptionsAccountId>, IDisposable // TypeDefIndex: 9000
+internal struct BeginPlayerSessionOptionsAccountIdInternal : IGettable<BeginPlayerSessionOptionsAccountId>, ISettable<BeginPlayerSessionOptionsAccountId>, IDisposable // TypeDefIndex: 9034
 {
 	private MetricsAccountIdType m_AccountIdType; 
 	private IntPtr m_Epic; 

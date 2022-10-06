@@ -1,4 +1,4 @@
-public class RandomUsernames // TypeDefIndex: 8211
+public class RandomUsernames // TypeDefIndex: 8245
 {
 	private static string[] All; 
 
@@ -13,7 +13,7 @@ public class RandomUsernames // TypeDefIndex: 8211
 
 }
 
-private class RandomUsernames.DataFile // TypeDefIndex: 8212
+private class RandomUsernames.DataFile // TypeDefIndex: 8246
 {
 	public string[] RandomUsernames; 
 

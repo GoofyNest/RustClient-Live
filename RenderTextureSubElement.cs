@@ -1,4 +1,4 @@
-public enum RenderTextureSubElement // TypeDefIndex: 3838
+public enum RenderTextureSubElement // TypeDefIndex: 3840
 {
 	public int value__; 
 	public const RenderTextureSubElement Color = 0;

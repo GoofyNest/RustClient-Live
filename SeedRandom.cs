@@ -1,4 +1,4 @@
-public class SeedRandom // TypeDefIndex: 6593
+public class SeedRandom // TypeDefIndex: 6597
 {
 	public uint Seed; 
 

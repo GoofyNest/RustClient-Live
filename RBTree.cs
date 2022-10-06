@@ -1,4 +1,4 @@
-private enum RBTree.NodeColor<K> // TypeDefIndex: 4287
+private enum RBTree.NodeColor<K> // TypeDefIndex: 4290
 {
 	public int value__; 
 	public const RBTree.NodeColor<K> red = 0;
@@ -6,7 +6,7 @@ private enum RBTree.NodeColor<K> // TypeDefIndex: 4287
 
 }
 
-private struct RBTree.Node<K> // TypeDefIndex: 4288
+private struct RBTree.Node<K> // TypeDefIndex: 4291
 {
 	internal int _selfId; 
 	internal int _leftId; 
@@ -19,7 +19,7 @@ private struct RBTree.Node<K> // TypeDefIndex: 4288
 
 }
 
-private struct RBTree.NodePath<K> // TypeDefIndex: 4289
+private struct RBTree.NodePath<K> // TypeDefIndex: 4292
 {
 	internal readonly int _nodeID; 
 	internal readonly int _mainTreeNodeID; 
@@ -34,7 +34,7 @@ private struct RBTree.NodePath<K> // TypeDefIndex: 4289
 
 }
 
-private sealed class RBTree.TreePage<K> // TypeDefIndex: 4290
+private sealed class RBTree.TreePage<K> // TypeDefIndex: 4293
 {
 	internal readonly RBTree.Node<K>[] _slots; 
 	internal readonly int[] _slotMap; 
@@ -91,7 +91,7 @@ private sealed class RBTree.TreePage<K> // TypeDefIndex: 4290
 
 }
 
-internal struct RBTree.RBTreeEnumerator<K> : IEnumerator<K>, IDisposable, IEnumerator // TypeDefIndex: 4291
+internal struct RBTree.RBTreeEnumerator<K> : IEnumerator<K>, IDisposable, IEnumerator // TypeDefIndex: 4294
 {
 	private readonly RBTree<K> _tree; 
 	private readonly int _version; 

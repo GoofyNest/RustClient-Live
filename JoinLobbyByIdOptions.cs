@@ -1,4 +1,4 @@
-public struct JoinLobbyByIdOptions // TypeDefIndex: 9071
+public struct JoinLobbyByIdOptions // TypeDefIndex: 9105
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <LobbyId>k__BackingField; 

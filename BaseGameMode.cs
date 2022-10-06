@@ -1,4 +1,4 @@
-public class BaseGameMode : BaseEntity // TypeDefIndex: 10189
+public class BaseGameMode : BaseEntity // TypeDefIndex: 10223
 {
 	private GameMode gameModeScores; 
 	public string[] scoreColumns; 
@@ -104,6 +104,8 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10189
 
 	protected virtual void SetupTags() { }
 
+	public virtual BaseGameMode.ResearchCostResult GetScrapCostForResearch(ItemDefinition item, ResearchTable.ResearchType researchType) { }
+
 	protected void OnCreated_Vanilla() { }
 
 	[CompilerGeneratedAttribute] 
@@ -175,7 +177,14 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10189
 
 }
 
-public class BaseGameMode.GameModeTeam // TypeDefIndex: 10190
+public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10224
+{
+	public Nullable<float> Scale; 
+	public Nullable<int> Amount; 
+
+}
+
+public class BaseGameMode.GameModeTeam // TypeDefIndex: 10225
 {
 	public string name; 
 	public PlayerInventoryProperties[] teamloadouts; 

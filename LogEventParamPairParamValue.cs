@@ -1,4 +1,4 @@
-public struct LogEventParamPairParamValue // TypeDefIndex: 9723
+public struct LogEventParamPairParamValue // TypeDefIndex: 9757
 {
 	private AntiCheatCommonEventParamType m_ParamValueType; 
 	private Nullable<IntPtr> m_ClientHandle; 

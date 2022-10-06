@@ -1,4 +1,4 @@
-internal static class BigNumber // TypeDefIndex: 3966
+internal static class BigNumber // TypeDefIndex: 3969
 {
 
 	internal static bool TryValidateParseStyleInteger(NumberStyles style, out ArgumentException e) { }
@@ -23,7 +23,7 @@ internal static class BigNumber // TypeDefIndex: 3966
 
 }
 
-private struct BigNumber.BigNumberBuffer // TypeDefIndex: 3967
+private struct BigNumber.BigNumberBuffer // TypeDefIndex: 3970
 {
 	public StringBuilder digits; 
 	public int precision; 

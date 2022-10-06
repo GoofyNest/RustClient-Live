@@ -1,4 +1,4 @@
-public static class PlatformServiceExtensions // TypeDefIndex: 6155
+public static class PlatformServiceExtensions // TypeDefIndex: 6158
 {
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12

@@ -1,4 +1,4 @@
-internal struct CopySessionHandleForPresenceOptionsInternal : ISettable<CopySessionHandleForPresenceOptions>, IDisposable // TypeDefIndex: 8431
+internal struct CopySessionHandleForPresenceOptionsInternal : ISettable<CopySessionHandleForPresenceOptions>, IDisposable // TypeDefIndex: 8465
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

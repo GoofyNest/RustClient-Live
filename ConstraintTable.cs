@@ -1,4 +1,4 @@
-internal sealed class ConstraintTable // TypeDefIndex: 4317
+internal sealed class ConstraintTable // TypeDefIndex: 4320
 {
 	public DataTable table; 
 	public XmlSchemaIdentityConstraint constraint; 

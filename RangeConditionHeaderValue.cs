@@ -1,4 +1,4 @@
-public class RangeConditionHeaderValue : ICloneable // TypeDefIndex: 5804
+public class RangeConditionHeaderValue : ICloneable // TypeDefIndex: 5807
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<DateTimeOffset> <Date>k__BackingField; 

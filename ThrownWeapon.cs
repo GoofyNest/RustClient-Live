@@ -1,4 +1,4 @@
-public class ThrownWeapon : AttackEntity // TypeDefIndex: 10326
+public class ThrownWeapon : AttackEntity // TypeDefIndex: 10362
 {
 	[HeaderAttribute] 
 	public GameObjectRef prefabToThrow; 
@@ -10,7 +10,7 @@ public class ThrownWeapon : AttackEntity // TypeDefIndex: 10326
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player, Vector3 direction) { }
 
 	public override void OnInput() { }
 

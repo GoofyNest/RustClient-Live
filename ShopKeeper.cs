@@ -1,4 +1,4 @@
-public class ShopKeeper : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6382
+public class ShopKeeper : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6385
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

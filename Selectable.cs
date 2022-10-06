@@ -1,4 +1,4 @@
-public class Selectable : UIBehaviour, IMoveHandler, IEventSystemHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler // TypeDefIndex: 5004
+public class Selectable : UIBehaviour, IMoveHandler, IEventSystemHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler // TypeDefIndex: 5007
 {
 	private static Selectable[] s_Selectables; 
 	private static int s_SelectableCount; 
@@ -186,7 +186,7 @@ public class Selectable : UIBehaviour, IMoveHandler, IEventSystemHandler, IPoint
 
 }
 
-public enum Selectable.Transition // TypeDefIndex: 5005
+public enum Selectable.Transition // TypeDefIndex: 5008
 {
 	public int value__; 
 	public const Selectable.Transition None = 0;

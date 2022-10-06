@@ -1,4 +1,4 @@
-internal enum MarketNotAllowedReasonFlags // TypeDefIndex: 5143
+internal enum MarketNotAllowedReasonFlags // TypeDefIndex: 5146
 {
 	public int value__; 
 	public const MarketNotAllowedReasonFlags None = 0;

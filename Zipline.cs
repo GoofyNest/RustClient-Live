@@ -1,4 +1,4 @@
-public class Zipline : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6435
+public class Zipline : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6438
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

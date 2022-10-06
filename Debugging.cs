@@ -1,4 +1,4 @@
-public class Debugging : ConsoleSystem // TypeDefIndex: 13592
+public class Debugging : ConsoleSystem // TypeDefIndex: 13635
 {
 	[ServerVar] 
 	[ClientVar] 
@@ -48,6 +48,8 @@ public class Debugging : ConsoleSystem // TypeDefIndex: 13592
 	public static bool oninventorychanged; 
 	[ClientVar] 
 	public static string fakeSpeechPlayer; 
+	[ClientVar] 
+	public static bool showWorldInfoInPerformanceReadout; 
 
 	[ServerVar] 
 	[ClientVar] 
@@ -129,20 +131,28 @@ public class Debugging : ConsoleSystem // TypeDefIndex: 13592
 
 	public static void set_skyreflection(bool value) { }
 
+	[ClientVar] 
+	public static void PrintDebugWorldInfo(ConsoleSystem.Arg arg) { }
+
+	[ClientVar] 
+	public static void CopyDebugWorldInfo(ConsoleSystem.Arg arg) { }
+
+	private static string DebugPrintout() { }
+
 	public void .ctor() { }
 
 	private static void .cctor() { }
 
 }
 
-public struct Debugging.EntityInfo // TypeDefIndex: 13593
+public struct Debugging.EntityInfo // TypeDefIndex: 13636
 {
 	public string name; 
 	public uint netId; 
 
 }
 
-private sealed class Debugging.<>c__DisplayClass40_0 // TypeDefIndex: 13594
+private sealed class Debugging.<>c__DisplayClass40_0 // TypeDefIndex: 13637
 {
 	public Vector3 position; 
 	public float radius; 
@@ -154,7 +164,7 @@ private sealed class Debugging.<>c__DisplayClass40_0 // TypeDefIndex: 13594
 
 }
 
-private sealed class Debugging.<>c // TypeDefIndex: 13595
+private sealed class Debugging.<>c // TypeDefIndex: 13638
 {
 	public static readonly Debugging.<>c <>9; 
 	public static Func<BaseNetworkable, uint> <>9__40_1; 

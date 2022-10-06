@@ -1,4 +1,4 @@
-internal class PersistentCall // TypeDefIndex: 3635
+internal class PersistentCall // TypeDefIndex: 3637
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
@@ -6,8 +6,8 @@ internal class PersistentCall // TypeDefIndex: 3635
 	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
 	private string m_MethodName; 
-	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
+	[SerializeField] 
 	private PersistentListenerMode m_Mode; 
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 

@@ -1,4 +1,4 @@
-public class Sign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6320
+public class Sign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6323
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

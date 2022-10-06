@@ -1,4 +1,4 @@
-public struct QueryProductUserIdMappingsOptions // TypeDefIndex: 9585
+public struct QueryProductUserIdMappingsOptions // TypeDefIndex: 9619
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

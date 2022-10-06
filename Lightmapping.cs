@@ -1,4 +1,4 @@
-public static class Lightmapping // TypeDefIndex: 3888
+public static class Lightmapping // TypeDefIndex: 3891
 {
 	[RequiredByNativeCodeAttribute] 
 	private static readonly Lightmapping.RequestLightsDelegate s_DefaultDelegate; 
@@ -22,7 +22,7 @@ public static class Lightmapping // TypeDefIndex: 3888
 
 }
 
-public sealed class Lightmapping.RequestLightsDelegate : MulticastDelegate // TypeDefIndex: 3889
+public sealed class Lightmapping.RequestLightsDelegate : MulticastDelegate // TypeDefIndex: 3892
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -35,7 +35,7 @@ public sealed class Lightmapping.RequestLightsDelegate : MulticastDelegate // Ty
 
 }
 
-private sealed class Lightmapping.<>c // TypeDefIndex: 3890
+private sealed class Lightmapping.<>c // TypeDefIndex: 3893
 {
 	public static readonly Lightmapping.<>c <>9; 
 

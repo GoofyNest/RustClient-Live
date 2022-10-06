@@ -1,4 +1,4 @@
-public struct ERChildsSO // TypeDefIndex: 7219
+public struct ERChildsSO // TypeDefIndex: 7253
 {
 	public double id; 
 	public float startOffset; 

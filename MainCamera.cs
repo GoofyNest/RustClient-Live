@@ -1,4 +1,4 @@
-public class MainCamera : RustCamera<MainCamera> // TypeDefIndex: 10872
+public class MainCamera : RustCamera<MainCamera> // TypeDefIndex: 10908
 {
 	public static Camera mainCamera; 
 	public static Transform mainCameraTransform; 

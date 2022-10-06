@@ -1,4 +1,4 @@
-public static class LZ4Codec // TypeDefIndex: 6712
+public static class LZ4Codec // TypeDefIndex: 6880
 {
 
 public static class LZ4Codec
@@ -84,7 +84,7 @@ public static class LZ4Codec
 
 }
 
-private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6713
+private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6881
 {
 	public byte* src_base; 
 	public byte* nextToUpdate; 
@@ -96,7 +96,7 @@ private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6713
 
 }
 
-public static class LZ4Codec // TypeDefIndex: 6982
+public static class LZ4Codec // TypeDefIndex: 7014
 {
 
 private struct <PrivateImplementationDetails>{510A9A0A-2EB8-4C1C-AA23-D4ACD845FEA7}.__StaticArrayInitTypeSize=68
@@ -216,7 +216,7 @@ public static class LZ4Codec
 
 }
 
-private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6983
+private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 7015
 {
 	public byte[] src; 
 	public int src_base; 
@@ -235,7 +235,7 @@ private class LZ4Codec.LZ4HC_Data_Structure // TypeDefIndex: 6983
 
 }
 
-public static class LZ4Codec // TypeDefIndex: 6990
+public static class LZ4Codec // TypeDefIndex: 7022
 {
 	private static readonly ILZ4Service Encoder; 
 	private static readonly ILZ4Service EncoderHC; 

@@ -1,4 +1,4 @@
-public class RawImage : MaskableGraphic // TypeDefIndex: 4993
+public class RawImage : MaskableGraphic // TypeDefIndex: 4996
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 

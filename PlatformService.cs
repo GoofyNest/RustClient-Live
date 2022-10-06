@@ -1,4 +1,4 @@
-public static class PlatformService // TypeDefIndex: 6156
+public static class PlatformService // TypeDefIndex: 6159
 {
 	public static readonly IPlatformService Instance; 
 

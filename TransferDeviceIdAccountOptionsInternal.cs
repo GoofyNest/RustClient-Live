@@ -1,4 +1,4 @@
-internal struct TransferDeviceIdAccountOptionsInternal : ISettable<TransferDeviceIdAccountOptions>, IDisposable // TypeDefIndex: 9590
+internal struct TransferDeviceIdAccountOptionsInternal : ISettable<TransferDeviceIdAccountOptions>, IDisposable // TypeDefIndex: 9624
 {
 	private int m_ApiVersion; 
 	private IntPtr m_PrimaryLocalUserId; 

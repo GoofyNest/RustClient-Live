@@ -1,4 +1,4 @@
-public class GameModeSoftcore : GameModeVanilla // TypeDefIndex: 11560
+public class GameModeSoftcore : GameModeVanilla // TypeDefIndex: 11598
 {
 	public GameObjectRef reclaimManagerPrefab; 
 	public GameObjectRef reclaimBackpackPrefab; 

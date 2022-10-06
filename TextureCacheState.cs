@@ -1,4 +1,4 @@
-internal enum TextureCacheState // TypeDefIndex: 12115
+internal enum TextureCacheState // TypeDefIndex: 12153
 {
 	public int value__; 
 	public const TextureCacheState Skipped = 0;

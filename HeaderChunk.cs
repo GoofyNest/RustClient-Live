@@ -1,4 +1,4 @@
-internal sealed class HeaderChunk : MidiChunk // TypeDefIndex: 7481
+internal sealed class HeaderChunk : MidiChunk // TypeDefIndex: 7515
 {
 	[CompilerGeneratedAttribute] 
 	private ushort <FileFormat>k__BackingField; 

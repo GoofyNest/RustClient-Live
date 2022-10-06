@@ -1,4 +1,4 @@
-internal enum StylePropertyID // TypeDefIndex: 4727
+internal enum StylePropertyID // TypeDefIndex: 4730
 {
 	public int value__; 
 	public const StylePropertyID Unknown = -1;

@@ -1,4 +1,4 @@
-public enum ReflectionProbeClearFlags // TypeDefIndex: 3826
+public enum ReflectionProbeClearFlags // TypeDefIndex: 3828
 {
 	public int value__; 
 	public const ReflectionProbeClearFlags Skybox = 1;

@@ -1,4 +1,4 @@
-public class RendererInfo : ComponentInfo<Renderer> // TypeDefIndex: 10842
+public class RendererInfo : ComponentInfo<Renderer> // TypeDefIndex: 10878
 {
 	public ShadowCastingMode shadows; 
 	public Material material; 

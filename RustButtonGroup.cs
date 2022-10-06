@@ -1,4 +1,4 @@
-public class RustButtonGroup : RustControl // TypeDefIndex: 7015
+public class RustButtonGroup : RustControl // TypeDefIndex: 7048
 {
 	public Option[] Options; 
 	public string ButtonStyle; 
@@ -26,14 +26,14 @@ public class RustButtonGroup : RustControl // TypeDefIndex: 7015
 
 }
 
-public class RustButtonGroup.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7016
+public class RustButtonGroup.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7049
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class RustButtonGroup.<>c__DisplayClass12_0 // TypeDefIndex: 7017
+private sealed class RustButtonGroup.<>c__DisplayClass12_0 // TypeDefIndex: 7050
 {
 	public int buttonNumber; 
 	public RustButtonGroup <>4__this; 

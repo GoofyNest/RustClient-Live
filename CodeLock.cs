@@ -1,4 +1,4 @@
-public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6307
+public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6310
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6307
 
 }
 
-public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6308
+public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -125,7 +125,7 @@ public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class CodeLock : BaseLock // TypeDefIndex: 10044
+public class CodeLock : BaseLock // TypeDefIndex: 10078
 {
 	private Option __menuOption_Menu_ChangeGuestCode; 
 	private Option __menuOption_Menu_ChangeLockCode; 

@@ -1,4 +1,4 @@
-public class TreadEffects : MonoBehaviour // TypeDefIndex: 10538
+public class TreadEffects : MonoBehaviour // TypeDefIndex: 10574
 {
 	public ParticleSystem[] rearTreadDirt; 
 	public ParticleSystem[] rearTreadSmoke; 

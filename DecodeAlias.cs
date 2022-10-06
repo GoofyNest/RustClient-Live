@@ -1,4 +1,4 @@
-public class DecodeAlias : Attribute // TypeDefIndex: 13270
+public class DecodeAlias : Attribute // TypeDefIndex: 13313
 {
 	[CompilerGeneratedAttribute] 
 	private string[] <Names>k__BackingField; 

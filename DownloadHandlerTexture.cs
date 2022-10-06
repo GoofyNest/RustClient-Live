@@ -1,4 +1,4 @@
-public sealed class DownloadHandlerTexture : DownloadHandler // TypeDefIndex: 4753
+public sealed class DownloadHandlerTexture : DownloadHandler // TypeDefIndex: 4756
 {
 	private Texture2D mTexture; 
 	private bool mHasTexture; 

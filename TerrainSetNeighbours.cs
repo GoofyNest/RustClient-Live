@@ -1,4 +1,4 @@
-public class TerrainSetNeighbours : MonoBehaviour // TypeDefIndex: 13282
+public class TerrainSetNeighbours : MonoBehaviour // TypeDefIndex: 13325
 {
 	[SerializeField] 
 	private Terrain leftTerrain; 

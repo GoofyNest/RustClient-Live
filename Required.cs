@@ -1,4 +1,4 @@
-public enum Required // TypeDefIndex: 5882
+public enum Required // TypeDefIndex: 5885
 {
 	public int value__; 
 	public const Required Default = 0;

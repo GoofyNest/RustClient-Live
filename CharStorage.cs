@@ -1,4 +1,4 @@
-internal sealed class CharStorage : DataStorage // TypeDefIndex: 4368
+internal sealed class CharStorage : DataStorage // TypeDefIndex: 4371
 {
 	private char[] _values; 
 

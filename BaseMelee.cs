@@ -1,4 +1,4 @@
-public class BaseMelee : AttackEntity // TypeDefIndex: 10195
+public class BaseMelee : AttackEntity // TypeDefIndex: 10230
 {
 	[HeaderAttribute] 
 	public bool canThrowAsProjectile; 
@@ -30,7 +30,7 @@ public class BaseMelee : AttackEntity // TypeDefIndex: 10195
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player, Vector3 direction) { }
 
 	internal void DoThrow() { }
 
@@ -76,7 +76,7 @@ public class BaseMelee : AttackEntity // TypeDefIndex: 10195
 
 }
 
-public class BaseMelee.MaterialFX // TypeDefIndex: 10196
+public class BaseMelee.MaterialFX // TypeDefIndex: 10231
 {
 	public string materialName; 
 	public GameObjectRef fx; 

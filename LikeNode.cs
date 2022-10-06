@@ -1,4 +1,4 @@
-internal sealed class LikeNode : BinaryNode // TypeDefIndex: 4245
+internal sealed class LikeNode : BinaryNode // TypeDefIndex: 4248
 {
 	private int _kind; 
 	private string _pattern; 

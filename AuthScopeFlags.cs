@@ -1,4 +1,4 @@
-public enum AuthScopeFlags // TypeDefIndex: 9606
+public enum AuthScopeFlags // TypeDefIndex: 9640
 {
 	public int value__; 
 	public const AuthScopeFlags NoFlags = 0;

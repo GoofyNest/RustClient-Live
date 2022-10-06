@@ -1,4 +1,4 @@
-internal struct IPCountry_t : ICallbackData // TypeDefIndex: 5328
+internal struct IPCountry_t : ICallbackData // TypeDefIndex: 5331
 {
 	public static int _datasize; 
 

@@ -1,4 +1,4 @@
-public sealed class RequireComponent : Attribute // TypeDefIndex: 3494
+public sealed class RequireComponent : Attribute // TypeDefIndex: 3496
 {
 	public Type m_Type0; 
 	public Type m_Type1; 

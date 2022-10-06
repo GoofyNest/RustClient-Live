@@ -1,4 +1,4 @@
-public enum GraphicsDeviceType // TypeDefIndex: 3822
+public enum GraphicsDeviceType // TypeDefIndex: 3824
 {
 	public int value__; 
 	[ObsoleteAttribute] 

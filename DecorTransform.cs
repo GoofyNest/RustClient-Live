@@ -1,4 +1,4 @@
-public class DecorTransform : DecorComponent // TypeDefIndex: 12010
+public class DecorTransform : DecorComponent // TypeDefIndex: 12048
 {
 	public Vector3 Position; 
 	public Vector3 Rotation; 

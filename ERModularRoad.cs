@@ -1,4 +1,4 @@
-public class ERModularRoad : MonoBehaviour // TypeDefIndex: 7151
+public class ERModularRoad : MonoBehaviour // TypeDefIndex: 7185
 {
 	public ERModularBase baseScript; 
 	public string roadName; 

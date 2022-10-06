@@ -1,4 +1,4 @@
-internal sealed class ColumnTypeConverter : TypeConverter // TypeDefIndex: 4168
+internal sealed class ColumnTypeConverter : TypeConverter // TypeDefIndex: 4171
 {
 	private static readonly Type[] s_types; 
 

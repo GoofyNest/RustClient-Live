@@ -1,4 +1,4 @@
-public class UnityWebRequestAsyncOperation : AsyncOperation // TypeDefIndex: 4127
+public class UnityWebRequestAsyncOperation : AsyncOperation // TypeDefIndex: 4130
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 

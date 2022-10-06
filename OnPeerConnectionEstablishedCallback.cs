@@ -1,4 +1,4 @@
-public sealed class OnPeerConnectionEstablishedCallback : MulticastDelegate // TypeDefIndex: 8930
+public sealed class OnPeerConnectionEstablishedCallback : MulticastDelegate // TypeDefIndex: 8964
 {
 
 	public void .ctor(object object, IntPtr method) { }

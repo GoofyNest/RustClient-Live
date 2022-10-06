@@ -1,4 +1,4 @@
-public struct SendAudioOptions // TypeDefIndex: 8662
+public struct SendAudioOptions // TypeDefIndex: 8696
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

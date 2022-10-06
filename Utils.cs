@@ -37,7 +37,7 @@ internal static class Utils // TypeDefIndex: 1002
 
 }
 
-public static class Utils // TypeDefIndex: 13245
+public static class Utils // TypeDefIndex: 13288
 {
 	private static Utils.FloatPackingPrecision ms_FloatPackingPrecision; 
 	private const int kFloatPackingHighMinShaderLevel = 35;
@@ -126,7 +126,7 @@ public static class Utils // TypeDefIndex: 13245
 
 }
 
-public enum Utils.FloatPackingPrecision // TypeDefIndex: 13246
+public enum Utils.FloatPackingPrecision // TypeDefIndex: 13289
 {
 	public int value__; 
 	public const Utils.FloatPackingPrecision High = 64;

@@ -1,4 +1,4 @@
-public class CamelCasePropertyNamesContractResolver : DefaultContractResolver // TypeDefIndex: 5989
+public class CamelCasePropertyNamesContractResolver : DefaultContractResolver // TypeDefIndex: 5992
 {
 
 	public void .ctor() { }

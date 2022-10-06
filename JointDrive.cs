@@ -1,4 +1,4 @@
-public struct JointDrive // TypeDefIndex: 3912
+public struct JointDrive // TypeDefIndex: 3915
 {
 	private float m_PositionSpring; 
 	private float m_PositionDamper; 

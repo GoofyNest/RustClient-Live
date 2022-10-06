@@ -1,4 +1,4 @@
-public sealed class PointerCancelEvent : PointerEventBase<PointerCancelEvent> // TypeDefIndex: 4695
+public sealed class PointerCancelEvent : PointerEventBase<PointerCancelEvent> // TypeDefIndex: 4698
 {
 
 	protected override void Init() { }

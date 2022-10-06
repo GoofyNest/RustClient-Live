@@ -1,4 +1,4 @@
-public struct SphericalHarmonicsL2 : IEquatable<SphericalHarmonicsL2> // TypeDefIndex: 3842
+public struct SphericalHarmonicsL2 : IEquatable<SphericalHarmonicsL2> // TypeDefIndex: 3844
 {
 	private float shr0; 
 	private float shr1; 

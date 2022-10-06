@@ -1,4 +1,4 @@
-public class WebSocketHttpRequest // TypeDefIndex: 6931
+public class WebSocketHttpRequest // TypeDefIndex: 6963
 {
 	[CompilerGeneratedAttribute] 
 	private string <Method>k__BackingField; 

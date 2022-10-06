@@ -1,4 +1,4 @@
-public class FontData : ISerializationCallbackReceiver // TypeDefIndex: 4929
+public class FontData : ISerializationCallbackReceiver // TypeDefIndex: 4932
 {
 	[SerializeField] 
 	[FormerlySerializedAsAttribute] 

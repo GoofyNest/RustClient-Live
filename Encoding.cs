@@ -756,602 +756,602 @@ internal static class EncodingTable // TypeDefIndex: 736
 
 }
 
-public class ENCshift_jis : CP932 // TypeDefIndex: 7772
+public class ENCshift_jis : CP932 // TypeDefIndex: 7806
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_2022_jp : CP50220 // TypeDefIndex: 7780
+public class ENCiso_2022_jp : CP50220 // TypeDefIndex: 7814
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCeuc_jp : CP51932 // TypeDefIndex: 7784
+public class ENCeuc_jp : CP51932 // TypeDefIndex: 7818
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCgb2312 : CP936 // TypeDefIndex: 7787
+internal class ENCgb2312 : CP936 // TypeDefIndex: 7821
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCuhc : CP949 // TypeDefIndex: 7792
+internal class ENCuhc : CP949 // TypeDefIndex: 7826
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCeuc_kr : CP51949 // TypeDefIndex: 7793
+internal class ENCeuc_kr : CP51949 // TypeDefIndex: 7827
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCbig5 : CP950 // TypeDefIndex: 7796
+internal class ENCbig5 : CP950 // TypeDefIndex: 7830
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ENCgb18030 : GB18030Encoding // TypeDefIndex: 7801
+internal class ENCgb18030 : GB18030Encoding // TypeDefIndex: 7835
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1254 : CP1254 // TypeDefIndex: 7814
+public class ENCwindows_1254 : CP1254 // TypeDefIndex: 7848
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1255 : CP1255 // TypeDefIndex: 7816
+public class ENCwindows_1255 : CP1255 // TypeDefIndex: 7850
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1256 : CP1256 // TypeDefIndex: 7818
+public class ENCwindows_1256 : CP1256 // TypeDefIndex: 7852
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_6 : CP28596 // TypeDefIndex: 7820
+public class ENCiso_8859_6 : CP28596 // TypeDefIndex: 7854
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_8 : CP28598 // TypeDefIndex: 7822
+public class ENCiso_8859_8 : CP28598 // TypeDefIndex: 7856
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_9 : CP28599 // TypeDefIndex: 7824
+public class ENCiso_8859_9 : CP28599 // TypeDefIndex: 7858
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_38598 : CP38598 // TypeDefIndex: 7826
+public class ENCwindows_38598 : CP38598 // TypeDefIndex: 7860
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1251 : CP1251 // TypeDefIndex: 7832
+public class ENCwindows_1251 : CP1251 // TypeDefIndex: 7866
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1257 : CP1257 // TypeDefIndex: 7834
+public class ENCwindows_1257 : CP1257 // TypeDefIndex: 7868
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1258 : CP1258 // TypeDefIndex: 7836
+public class ENCwindows_1258 : CP1258 // TypeDefIndex: 7870
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCkoi8_r : CP20866 // TypeDefIndex: 7838
+public class ENCkoi8_r : CP20866 // TypeDefIndex: 7872
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCkoi8_u : CP21866 // TypeDefIndex: 7840
+public class ENCkoi8_u : CP21866 // TypeDefIndex: 7874
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_4 : CP28594 // TypeDefIndex: 7842
+public class ENCiso_8859_4 : CP28594 // TypeDefIndex: 7876
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_5 : CP28595 // TypeDefIndex: 7844
+public class ENCiso_8859_5 : CP28595 // TypeDefIndex: 7878
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_de : CP57002 // TypeDefIndex: 7856
+public class ENCx_iscii_de : CP57002 // TypeDefIndex: 7890
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_be : CP57003 // TypeDefIndex: 7857
+public class ENCx_iscii_be : CP57003 // TypeDefIndex: 7891
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_ta : CP57004 // TypeDefIndex: 7858
+public class ENCx_iscii_ta : CP57004 // TypeDefIndex: 7892
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_te : CP57005 // TypeDefIndex: 7859
+public class ENCx_iscii_te : CP57005 // TypeDefIndex: 7893
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_as : CP57006 // TypeDefIndex: 7860
+public class ENCx_iscii_as : CP57006 // TypeDefIndex: 7894
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_or : CP57007 // TypeDefIndex: 7861
+public class ENCx_iscii_or : CP57007 // TypeDefIndex: 7895
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_ka : CP57008 // TypeDefIndex: 7862
+public class ENCx_iscii_ka : CP57008 // TypeDefIndex: 7896
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_ma : CP57009 // TypeDefIndex: 7863
+public class ENCx_iscii_ma : CP57009 // TypeDefIndex: 7897
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_gu : CP57010 // TypeDefIndex: 7864
+public class ENCx_iscii_gu : CP57010 // TypeDefIndex: 7898
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_iscii_pa : CP57011 // TypeDefIndex: 7865
+public class ENCx_iscii_pa : CP57011 // TypeDefIndex: 7899
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_874 : CP874 // TypeDefIndex: 7867
+public class ENCwindows_874 : CP874 // TypeDefIndex: 7901
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm866 : CP866 // TypeDefIndex: 7873
+public class ENCibm866 : CP866 // TypeDefIndex: 7907
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1026 : CP1026 // TypeDefIndex: 7875
+public class ENCibm1026 : CP1026 // TypeDefIndex: 7909
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm869 : CP869 // TypeDefIndex: 7877
+public class ENCibm869 : CP869 // TypeDefIndex: 7911
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm870 : CP870 // TypeDefIndex: 7879
+public class ENCibm870 : CP870 // TypeDefIndex: 7913
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm875 : CP875 // TypeDefIndex: 7881
+public class ENCibm875 : CP875 // TypeDefIndex: 7915
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1047 : CP1047 // TypeDefIndex: 7883
+public class ENCibm1047 : CP1047 // TypeDefIndex: 7917
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01140 : CP1140 // TypeDefIndex: 7885
+public class ENCibm01140 : CP1140 // TypeDefIndex: 7919
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01141 : CP1141 // TypeDefIndex: 7887
+public class ENCibm01141 : CP1141 // TypeDefIndex: 7921
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01142 : CP1142 // TypeDefIndex: 7889
+public class ENCibm01142 : CP1142 // TypeDefIndex: 7923
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm01143 : CP1143 // TypeDefIndex: 7891
+public class ENCibm01143 : CP1143 // TypeDefIndex: 7925
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1144 : CP1144 // TypeDefIndex: 7893
+public class ENCibm1144 : CP1144 // TypeDefIndex: 7927
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1145 : CP1145 // TypeDefIndex: 7895
+public class ENCibm1145 : CP1145 // TypeDefIndex: 7929
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1146 : CP1146 // TypeDefIndex: 7897
+public class ENCibm1146 : CP1146 // TypeDefIndex: 7931
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1147 : CP1147 // TypeDefIndex: 7899
+public class ENCibm1147 : CP1147 // TypeDefIndex: 7933
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1148 : CP1148 // TypeDefIndex: 7901
+public class ENCibm1148 : CP1148 // TypeDefIndex: 7935
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1149 : CP1149 // TypeDefIndex: 7903
+public class ENCibm1149 : CP1149 // TypeDefIndex: 7937
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm273 : CP20273 // TypeDefIndex: 7905
+public class ENCibm273 : CP20273 // TypeDefIndex: 7939
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm277 : CP20277 // TypeDefIndex: 7907
+public class ENCibm277 : CP20277 // TypeDefIndex: 7941
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm278 : CP20278 // TypeDefIndex: 7909
+public class ENCibm278 : CP20278 // TypeDefIndex: 7943
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm280 : CP20280 // TypeDefIndex: 7911
+public class ENCibm280 : CP20280 // TypeDefIndex: 7945
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm284 : CP20284 // TypeDefIndex: 7913
+public class ENCibm284 : CP20284 // TypeDefIndex: 7947
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm285 : CP20285 // TypeDefIndex: 7915
+public class ENCibm285 : CP20285 // TypeDefIndex: 7949
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm290 : CP20290 // TypeDefIndex: 7917
+public class ENCibm290 : CP20290 // TypeDefIndex: 7951
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm297 : CP20297 // TypeDefIndex: 7919
+public class ENCibm297 : CP20297 // TypeDefIndex: 7953
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm420 : CP20420 // TypeDefIndex: 7921
+public class ENCibm420 : CP20420 // TypeDefIndex: 7955
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm424 : CP20424 // TypeDefIndex: 7923
+public class ENCibm424 : CP20424 // TypeDefIndex: 7957
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm871 : CP20871 // TypeDefIndex: 7925
+public class ENCibm871 : CP20871 // TypeDefIndex: 7959
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm1025 : CP21025 // TypeDefIndex: 7927
+public class ENCibm1025 : CP21025 // TypeDefIndex: 7961
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm037 : CP37 // TypeDefIndex: 7929
+public class ENCibm037 : CP37 // TypeDefIndex: 7963
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm500 : CP500 // TypeDefIndex: 7931
+public class ENCibm500 : CP500 // TypeDefIndex: 7965
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCasmo_708 : CP708 // TypeDefIndex: 7933
+public class ENCasmo_708 : CP708 // TypeDefIndex: 7967
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm852 : CP852 // TypeDefIndex: 7935
+public class ENCibm852 : CP852 // TypeDefIndex: 7969
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm855 : CP855 // TypeDefIndex: 7937
+public class ENCibm855 : CP855 // TypeDefIndex: 7971
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm857 : CP857 // TypeDefIndex: 7939
+public class ENCibm857 : CP857 // TypeDefIndex: 7973
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm00858 : CP858 // TypeDefIndex: 7941
+public class ENCibm00858 : CP858 // TypeDefIndex: 7975
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm862 : CP862 // TypeDefIndex: 7943
+public class ENCibm862 : CP862 // TypeDefIndex: 7977
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm864 : CP864 // TypeDefIndex: 7945
+public class ENCibm864 : CP864 // TypeDefIndex: 7979
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCmacintosh : CP10000 // TypeDefIndex: 7951
+public class ENCmacintosh : CP10000 // TypeDefIndex: 7985
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCx_mac_icelandic : CP10079 // TypeDefIndex: 7953
+public class ENCx_mac_icelandic : CP10079 // TypeDefIndex: 7987
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1250 : CP1250 // TypeDefIndex: 7955
+public class ENCwindows_1250 : CP1250 // TypeDefIndex: 7989
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1252 : CP1252 // TypeDefIndex: 7957
+public class ENCwindows_1252 : CP1252 // TypeDefIndex: 7991
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCwindows_1253 : CP1253 // TypeDefIndex: 7959
+public class ENCwindows_1253 : CP1253 // TypeDefIndex: 7993
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_2 : CP28592 // TypeDefIndex: 7961
+public class ENCiso_8859_2 : CP28592 // TypeDefIndex: 7995
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_3 : CP28593 // TypeDefIndex: 7963
+public class ENCiso_8859_3 : CP28593 // TypeDefIndex: 7997
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_7 : CP28597 // TypeDefIndex: 7965
+public class ENCiso_8859_7 : CP28597 // TypeDefIndex: 7999
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCiso_8859_15 : CP28605 // TypeDefIndex: 7967
+public class ENCiso_8859_15 : CP28605 // TypeDefIndex: 8001
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm437 : CP437 // TypeDefIndex: 7969
+public class ENCibm437 : CP437 // TypeDefIndex: 8003
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm850 : CP850 // TypeDefIndex: 7971
+public class ENCibm850 : CP850 // TypeDefIndex: 8005
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm860 : CP860 // TypeDefIndex: 7973
+public class ENCibm860 : CP860 // TypeDefIndex: 8007
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm861 : CP861 // TypeDefIndex: 7975
+public class ENCibm861 : CP861 // TypeDefIndex: 8009
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm863 : CP863 // TypeDefIndex: 7977
+public class ENCibm863 : CP863 // TypeDefIndex: 8011
 {
 
 	public void .ctor() { }
 
 }
 
-public class ENCibm865 : CP865 // TypeDefIndex: 7979
+public class ENCibm865 : CP865 // TypeDefIndex: 8013
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class Encoder // TypeDefIndex: 13263
+public sealed class Encoder // TypeDefIndex: 13306
 {
 	private static readonly Type includeAttrType; 
 	private static readonly Type excludeAttrType; 

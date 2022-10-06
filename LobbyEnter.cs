@@ -1,4 +1,4 @@
-internal struct LobbyEnter_t : ICallbackData // TypeDefIndex: 5338
+internal struct LobbyEnter_t : ICallbackData // TypeDefIndex: 5341
 {
 	internal ulong SteamIDLobby; 
 	internal uint GfChatPermissions; 

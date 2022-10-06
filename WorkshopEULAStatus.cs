@@ -1,4 +1,4 @@
-internal struct WorkshopEULAStatus_t : ICallbackData // TypeDefIndex: 5449
+internal struct WorkshopEULAStatus_t : ICallbackData // TypeDefIndex: 5452
 {
 	internal Result Result; 
 	internal AppId AppID; 

@@ -1,4 +1,4 @@
-internal sealed class BaselineFunction : MulticastDelegate // TypeDefIndex: 4575
+internal sealed class BaselineFunction : MulticastDelegate // TypeDefIndex: 4578
 {
 
 internal sealed class BaselineFunction : MulticastDelegate

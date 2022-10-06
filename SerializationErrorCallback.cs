@@ -1,4 +1,4 @@
-public sealed class SerializationErrorCallback : MulticastDelegate // TypeDefIndex: 6009
+public sealed class SerializationErrorCallback : MulticastDelegate // TypeDefIndex: 6012
 {
 
 	public void .ctor(object object, IntPtr method) { }

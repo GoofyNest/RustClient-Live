@@ -1,4 +1,4 @@
-public struct Friend // TypeDefIndex: 5237
+public struct Friend // TypeDefIndex: 5240
 {
 	public SteamId Id; 
 
@@ -37,7 +37,7 @@ public struct Friend // TypeDefIndex: 5237
 
 }
 
-public struct Friend.FriendGameInfo // TypeDefIndex: 5238
+public struct Friend.FriendGameInfo // TypeDefIndex: 5241
 {
 	internal ulong GameID; 
 	internal uint GameIP; 
@@ -54,7 +54,7 @@ public struct Friend.FriendGameInfo // TypeDefIndex: 5238
 
 }
 
-private struct Friend.<RequestInfoAsync>d__13 : IAsyncStateMachine // TypeDefIndex: 5239
+private struct Friend.<RequestInfoAsync>d__13 : IAsyncStateMachine // TypeDefIndex: 5242
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

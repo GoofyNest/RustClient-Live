@@ -1,4 +1,4 @@
-public class Collision // TypeDefIndex: 3915
+public class Collision // TypeDefIndex: 3918
 {
 	internal Vector3 m_Impulse; 
 	internal Vector3 m_RelativeVelocity; 

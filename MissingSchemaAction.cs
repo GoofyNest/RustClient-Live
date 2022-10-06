@@ -1,4 +1,4 @@
-public enum MissingSchemaAction // TypeDefIndex: 4279
+public enum MissingSchemaAction // TypeDefIndex: 4282
 {
 	public int value__; 
 	public const MissingSchemaAction Add = 1;

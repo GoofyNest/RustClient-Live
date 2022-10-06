@@ -1,4 +1,4 @@
-public class MoveOverTime : MonoBehaviour // TypeDefIndex: 11901
+public class MoveOverTime : MonoBehaviour // TypeDefIndex: 11939
 {
 	[RangeAttribute] 
 	public float speed; 

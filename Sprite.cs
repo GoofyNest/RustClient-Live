@@ -1,4 +1,4 @@
-public sealed class Sprite : Object // TypeDefIndex: 3574
+public sealed class Sprite : Object // TypeDefIndex: 3576
 {
 	public Bounds bounds { get; }
 	public Rect rect { get; }

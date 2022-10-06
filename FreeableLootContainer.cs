@@ -1,4 +1,4 @@
-public class FreeableLootContainer : LootContainer // TypeDefIndex: 10064
+public class FreeableLootContainer : LootContainer // TypeDefIndex: 10098
 {
 	private Option __menuOption_Menu_FreeCrate; 
 	private const BaseEntity.Flags tiedDown = 65536;

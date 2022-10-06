@@ -1,4 +1,4 @@
-public enum ParticleSystemGradientMode // TypeDefIndex: 4540
+public enum ParticleSystemGradientMode // TypeDefIndex: 4543
 {
 	public int value__; 
 	public const ParticleSystemGradientMode Color = 0;

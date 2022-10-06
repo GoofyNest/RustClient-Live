@@ -1,4 +1,4 @@
-internal struct CopyAchievementDefinitionV2ByAchievementIdOptionsInternal : ISettable<CopyAchievementDefinitionV2ByAchievementIdOptions>, IDisposable // TypeDefIndex: 9854
+internal struct CopyAchievementDefinitionV2ByAchievementIdOptionsInternal : ISettable<CopyAchievementDefinitionV2ByAchievementIdOptions>, IDisposable // TypeDefIndex: 9888
 {
 	private int m_ApiVersion; 
 	private IntPtr m_AchievementId; 

@@ -1,4 +1,4 @@
-public enum StencilOp // TypeDefIndex: 3813
+public enum StencilOp // TypeDefIndex: 3815
 {
 	public int value__; 
 	public const StencilOp Keep = 0;

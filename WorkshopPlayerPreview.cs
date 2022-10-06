@@ -1,4 +1,4 @@
-internal class WorkshopPlayerPreview : MonoBehaviour // TypeDefIndex: 7741
+internal class WorkshopPlayerPreview : MonoBehaviour // TypeDefIndex: 7775
 {
 	internal GameObject Instance; 
 

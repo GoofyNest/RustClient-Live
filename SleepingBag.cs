@@ -1,4 +1,4 @@
-public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6317
+public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6320
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class SleepingBag : DecayEntity // TypeDefIndex: 10117
+public class SleepingBag : DecayEntity // TypeDefIndex: 10151
 {
 	private Option __menuOption_Menu_AssignToFriend; 
 	private Option __menuOption_Menu_CloseDoor; 

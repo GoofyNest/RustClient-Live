@@ -1,4 +1,4 @@
-internal struct OnIncomingConnectionRequestInfoInternal : ICallbackInfoInternal, IGettable<OnIncomingConnectionRequestInfo>, ISettable<OnIncomingConnectionRequestInfo>, IDisposable // TypeDefIndex: 8925
+internal struct OnIncomingConnectionRequestInfoInternal : ICallbackInfoInternal, IGettable<OnIncomingConnectionRequestInfo>, ISettable<OnIncomingConnectionRequestInfo>, IDisposable // TypeDefIndex: 8959
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

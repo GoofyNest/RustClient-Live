@@ -1,4 +1,4 @@
-public struct SetAudioOutputSettingsOptions // TypeDefIndex: 8666
+public struct SetAudioOutputSettingsOptions // TypeDefIndex: 8700
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

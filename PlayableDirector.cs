@@ -1,20 +1,33 @@
-public class PlayableDirector : Behaviour // TypeDefIndex: 4518
+public class PlayableDirector : Behaviour // TypeDefIndex: 4521
 {
 
+[NativeHeaderAttribute] 
 [RequiredByNativeCodeAttribute] 
 [NativeHeaderAttribute] 
-[NativeHeaderAttribute] 
 public class PlayableDirector : Behaviour
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private Action<PlayableDirector> played; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private Action<PlayableDirector> paused; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private Action<PlayableDirector> stopped; 
 
+	public PlayState state { get; }
+	public double time { set; }
+
+
+	public PlayState get_state() { }
+
+	public void set_time(double value) { }
+
+	public void Evaluate() { }
+
+	public void Play() { }
+
+	private PlayState GetPlayState() { }
 
 	[RequiredByNativeCodeAttribute] 
 	private void SendOnPlayableDirectorPlay() { }

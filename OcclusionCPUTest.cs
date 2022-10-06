@@ -1,4 +1,4 @@
-public class OcclusionCPUTest // TypeDefIndex: 13204
+public class OcclusionCPUTest // TypeDefIndex: 13247
 {
 
 	private static float DistanceToPlane(Vector4 vPlane, Vector4 vPoint) { }

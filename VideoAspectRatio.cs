@@ -1,4 +1,4 @@
-public enum VideoAspectRatio // TypeDefIndex: 4778
+public enum VideoAspectRatio // TypeDefIndex: 4781
 {
 	public int value__; 
 	public const VideoAspectRatio NoScaling = 0;

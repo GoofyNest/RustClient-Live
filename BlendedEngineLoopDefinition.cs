@@ -1,4 +1,4 @@
-public class BlendedEngineLoopDefinition : ScriptableObject // TypeDefIndex: 10653
+public class BlendedEngineLoopDefinition : ScriptableObject // TypeDefIndex: 10689
 {
 	public BlendedEngineLoopDefinition.EngineLoopDefinition[] engineLoops; 
 	public float minRPM; 
@@ -11,7 +11,7 @@ public class BlendedEngineLoopDefinition : ScriptableObject // TypeDefIndex: 106
 
 }
 
-public class BlendedEngineLoopDefinition.EngineLoopDefinition // TypeDefIndex: 10654
+public class BlendedEngineLoopDefinition.EngineLoopDefinition // TypeDefIndex: 10690
 {
 	public SoundDefinition soundDefinition; 
 	public float RPM; 

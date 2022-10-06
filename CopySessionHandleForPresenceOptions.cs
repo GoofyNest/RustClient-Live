@@ -1,4 +1,4 @@
-public struct CopySessionHandleForPresenceOptions // TypeDefIndex: 8430
+public struct CopySessionHandleForPresenceOptions // TypeDefIndex: 8464
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

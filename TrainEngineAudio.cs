@@ -1,4 +1,4 @@
-public class TrainEngineAudio : TrainCarAudio // TypeDefIndex: 11444
+public class TrainEngineAudio : TrainCarAudio // TypeDefIndex: 11482
 {
 	[SerializeField] 
 	private TrainEngine trainEngine; 
@@ -56,6 +56,10 @@ public class TrainEngineAudio : TrainCarAudio // TypeDefIndex: 11444
 	[SerializeField] 
 	private SoundDefinition unloadableEndDef; 
 	[SerializeField] 
+	private GameObject bellObject; 
+	[SerializeField] 
+	private SoundDefinition bellRingDef; 
+	[SerializeField] 
 	private SoundPlayer brakeSound; 
 	private Nullable<VehicleEngineController.EngineState<TrainEngine>> engineState; 
 	private Sound activeHorn; 
@@ -77,6 +81,8 @@ public class TrainEngineAudio : TrainCarAudio // TypeDefIndex: 11444
 
 	public void PlayUnLinedUpToUnloadBeep() { }
 
+	public void PlayBellDing() { }
+
 	public void SetForEngineState(VehicleEngineController.EngineState<TrainEngine> newState) { }
 
 	public void PlayLightsToggleSound() { }
@@ -93,7 +99,7 @@ public class TrainEngineAudio : TrainCarAudio // TypeDefIndex: 11444
 
 }
 
-public class TrainEngineAudio.EngineReflection // TypeDefIndex: 11445
+public class TrainEngineAudio.EngineReflection // TypeDefIndex: 11483
 {
 	public Vector3 direction; 
 	public Vector3 offset; 

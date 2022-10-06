@@ -1,10 +1,10 @@
 public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 {
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent> reflectionProbeChanged; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static Action<Cubemap> defaultReflectionSet; 
 
 	[NativeNameAttribute] 
@@ -93,8 +93,8 @@ public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 
 	private int ScheduleRender(ReflectionProbeTimeSlicingMode timeSlicingMode, RenderTexture targetTexture) { }
 
-	[FreeFunctionAttribute] 
 	[NativeHeaderAttribute] 
+	[FreeFunctionAttribute] 
 	public static bool BlendCubemap(Texture src, Texture dst, float blend, RenderTexture target) { }
 
 	[RequiredByNativeCodeAttribute] 

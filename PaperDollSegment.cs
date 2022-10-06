@@ -1,4 +1,4 @@
-public class PaperDollSegment : BaseMonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12732
+public class PaperDollSegment : BaseMonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12773
 {
 	public static HitArea selectedAreas; 
 	[InspectorFlagsAttribute] 

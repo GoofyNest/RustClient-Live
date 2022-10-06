@@ -1,4 +1,4 @@
-public struct SessionSearchFindCallbackInfo : ICallbackInfo // TypeDefIndex: 8542
+public struct SessionSearchFindCallbackInfo : ICallbackInfo // TypeDefIndex: 8576
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

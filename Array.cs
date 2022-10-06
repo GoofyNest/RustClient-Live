@@ -28,6 +28,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	public static void Resize<T>(ref T[] array, int newSize) { }
 	/* GenericInstMethod :
 	|
+	|-Array.Resize<FlexElement.ChildSizingParameters>
+	|
 	|-Array.Resize<FoliageKey>
 	|
 	|-Array.Resize<InstancingKey>
@@ -1645,6 +1647,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<BoneState>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<ColliderData>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<ColliderState>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<FlexElement.ChildSizingParameters>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<FlexTransition.Definition>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<TabbedPanel.Tab>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Output.Entry>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<RCon.BannedAddresses>
@@ -2458,6 +2462,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<ColliderData>
 	|
 	|-Array.InternalArray__ICollection_Add<ColliderState>
+	|
+	|-Array.InternalArray__ICollection_Add<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__ICollection_Add<FlexTransition.Definition>
 	|
 	|-Array.InternalArray__ICollection_Add<TabbedPanel.Tab>
 	|
@@ -3941,6 +3949,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<ColliderState>
 	|
+	|-Array.InternalArray__ICollection_Remove<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__ICollection_Remove<FlexTransition.Definition>
+	|
 	|-Array.InternalArray__ICollection_Remove<TabbedPanel.Tab>
 	|
 	|-Array.InternalArray__ICollection_Remove<Output.Entry>
@@ -5423,6 +5435,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<ColliderState>
 	|
+	|-Array.InternalArray__ICollection_Contains<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__ICollection_Contains<FlexTransition.Definition>
+	|
 	|-Array.InternalArray__ICollection_Contains<TabbedPanel.Tab>
 	|
 	|-Array.InternalArray__ICollection_Contains<Output.Entry>
@@ -6837,6 +6853,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<BoneState>
 	|-Array.InternalArray__ICollection_CopyTo<ColliderData>
 	|-Array.InternalArray__ICollection_CopyTo<ColliderState>
+	|-Array.InternalArray__ICollection_CopyTo<FlexElement.ChildSizingParameters>
+	|-Array.InternalArray__ICollection_CopyTo<FlexTransition.Definition>
 	|-Array.InternalArray__ICollection_CopyTo<TabbedPanel.Tab>
 	|-Array.InternalArray__ICollection_CopyTo<Output.Entry>
 	|-Array.InternalArray__ICollection_CopyTo<RCon.BannedAddresses>
@@ -7648,6 +7666,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<ColliderData>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<ColliderState>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<FlexTransition.Definition>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<TabbedPanel.Tab>
 	|
@@ -9133,6 +9155,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<ColliderState>
 	|
+	|-Array.InternalArray__Insert<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__Insert<FlexTransition.Definition>
+	|
 	|-Array.InternalArray__Insert<TabbedPanel.Tab>
 	|
 	|-Array.InternalArray__Insert<Output.Entry>
@@ -10617,6 +10643,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<ColliderState>
 	|
+	|-Array.InternalArray__IndexOf<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__IndexOf<FlexTransition.Definition>
+	|
 	|-Array.InternalArray__IndexOf<TabbedPanel.Tab>
 	|
 	|-Array.InternalArray__IndexOf<Output.Entry>
@@ -12098,6 +12128,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__get_Item<ColliderData>
 	|
 	|-Array.InternalArray__get_Item<ColliderState>
+	|
+	|-Array.InternalArray__get_Item<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__get_Item<FlexTransition.Definition>
 	|
 	|-Array.InternalArray__get_Item<TabbedPanel.Tab>
 	|
@@ -13581,6 +13615,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<ColliderState>
 	|
+	|-Array.InternalArray__set_Item<FlexElement.ChildSizingParameters>
+	|
+	|-Array.InternalArray__set_Item<FlexTransition.Definition>
+	|
 	|-Array.InternalArray__set_Item<TabbedPanel.Tab>
 	|
 	|-Array.InternalArray__set_Item<Output.Entry>
@@ -15014,7 +15052,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	/* GenericInstMethod :
 	|
 	|-Array.Empty<EZSoftBone.BoneChain>
-	|-Array.Empty<ServerBrowserTag>
+	|-Array.Empty<FlexElement.ChildSizingParameters>
 	|-Array.Empty<NetKeyValue>
 	|-Array.Empty<byte>
 	|-Array.Empty<DataColumn>
@@ -15614,6 +15652,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BoneState>..ctor
 	|-Array.InternalEnumerator<ColliderData>..ctor
 	|-Array.InternalEnumerator<ColliderState>..ctor
+	|-Array.InternalEnumerator<FlexElement.ChildSizingParameters>..ctor
+	|-Array.InternalEnumerator<FlexTransition.Definition>..ctor
 	|-Array.InternalEnumerator<TabbedPanel.Tab>..ctor
 	|-Array.InternalEnumerator<Output.Entry>..ctor
 	|-Array.InternalEnumerator<RCon.BannedAddresses>..ctor
@@ -16358,6 +16398,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BoneState>.Dispose
 	|-Array.InternalEnumerator<ColliderData>.Dispose
 	|-Array.InternalEnumerator<ColliderState>.Dispose
+	|-Array.InternalEnumerator<FlexElement.ChildSizingParameters>.Dispose
+	|-Array.InternalEnumerator<FlexTransition.Definition>.Dispose
 	|-Array.InternalEnumerator<TabbedPanel.Tab>.Dispose
 	|-Array.InternalEnumerator<Output.Entry>.Dispose
 	|-Array.InternalEnumerator<RCon.BannedAddresses>.Dispose
@@ -17102,6 +17144,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BoneState>.MoveNext
 	|-Array.InternalEnumerator<ColliderData>.MoveNext
 	|-Array.InternalEnumerator<ColliderState>.MoveNext
+	|-Array.InternalEnumerator<FlexElement.ChildSizingParameters>.MoveNext
+	|-Array.InternalEnumerator<FlexTransition.Definition>.MoveNext
 	|-Array.InternalEnumerator<TabbedPanel.Tab>.MoveNext
 	|-Array.InternalEnumerator<Output.Entry>.MoveNext
 	|-Array.InternalEnumerator<RCon.BannedAddresses>.MoveNext
@@ -17913,6 +17957,10 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<ColliderData>.get_Current
 	|
 	|-Array.InternalEnumerator<ColliderState>.get_Current
+	|
+	|-Array.InternalEnumerator<FlexElement.ChildSizingParameters>.get_Current
+	|
+	|-Array.InternalEnumerator<FlexTransition.Definition>.get_Current
 	|
 	|-Array.InternalEnumerator<TabbedPanel.Tab>.get_Current
 	|
@@ -19328,6 +19376,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BoneState>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<ColliderData>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<ColliderState>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<FlexElement.ChildSizingParameters>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<FlexTransition.Definition>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<TabbedPanel.Tab>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Output.Entry>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<RCon.BannedAddresses>.System.Collections.IEnumerator.Reset
@@ -20139,6 +20189,10 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<ColliderData>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<ColliderState>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<FlexElement.ChildSizingParameters>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<FlexTransition.Definition>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<TabbedPanel.Tab>.System.Collections.IEnumerator.get_Current
 	|
@@ -21564,6 +21618,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BoneState>.Dispose
 	|-Array.EmptyInternalEnumerator<ColliderData>.Dispose
 	|-Array.EmptyInternalEnumerator<ColliderState>.Dispose
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>.Dispose
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.Dispose
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>.Dispose
 	|-Array.EmptyInternalEnumerator<Output.Entry>.Dispose
 	|-Array.EmptyInternalEnumerator<RCon.BannedAddresses>.Dispose
@@ -22308,6 +22364,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BoneState>.MoveNext
 	|-Array.EmptyInternalEnumerator<ColliderData>.MoveNext
 	|-Array.EmptyInternalEnumerator<ColliderState>.MoveNext
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>.MoveNext
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.MoveNext
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>.MoveNext
 	|-Array.EmptyInternalEnumerator<Output.Entry>.MoveNext
 	|-Array.EmptyInternalEnumerator<RCon.BannedAddresses>.MoveNext
@@ -23119,6 +23177,10 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<ColliderData>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<ColliderState>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>.get_Current
 	|
@@ -24918,6 +24980,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<WaterDynamics.InstanceData>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Gibbable.GibMesh>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<EventSource.EventMetadata>.System.Collections.IEnumerator.get_Current
@@ -25160,9 +25223,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Keyframe>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<WaterGerstner.PrecomputedWave>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<FoliageGridMeshData.FoliageVertex>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Touch>.System.Collections.IEnumerator.get_Current
-	|
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CodePointIndexer.TableRange>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<DemoShotQuaternionKeyframe>.System.Collections.IEnumerator.get_Current
@@ -25184,6 +25245,9 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<SqlDecimal>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<TMP_PageInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<GradientColorKey>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<FoliageGridMeshData.FoliageVertex>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Touch>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<FourBitNumber>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<SevenBitNumber>.System.Collections.IEnumerator.get_Current
@@ -25313,6 +25377,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BoneState>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<ColliderData>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<ColliderState>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Output.Entry>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<RCon.BannedAddresses>.System.Collections.IEnumerator.Reset
@@ -26057,6 +26123,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BoneState>..ctor
 	|-Array.EmptyInternalEnumerator<ColliderData>..ctor
 	|-Array.EmptyInternalEnumerator<ColliderState>..ctor
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>..ctor
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>..ctor
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>..ctor
 	|-Array.EmptyInternalEnumerator<Output.Entry>..ctor
 	|-Array.EmptyInternalEnumerator<RCon.BannedAddresses>..ctor
@@ -26801,6 +26869,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BoneState>..cctor
 	|-Array.EmptyInternalEnumerator<ColliderData>..cctor
 	|-Array.EmptyInternalEnumerator<ColliderState>..cctor
+	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>..cctor
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>..cctor
 	|-Array.EmptyInternalEnumerator<TabbedPanel.Tab>..cctor
 	|-Array.EmptyInternalEnumerator<Output.Entry>..cctor
 	|-Array.EmptyInternalEnumerator<RCon.BannedAddresses>..cctor
@@ -31265,14 +31335,14 @@ internal class ArraySubsetEnumerator : IEnumerator // TypeDefIndex: 2661
 
 }
 
-internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6079
+internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6082
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6081
+internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6084
 {
 
 [PreserveAttribute] 
@@ -31282,7 +31352,7 @@ internal class ArrayMultipleIndexFilter : PathFilter
 
 }
 
-internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6083
+internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6086
 {
 
 [PreserveAttribute] 
@@ -31292,7 +31362,7 @@ internal class ArraySliceFilter : PathFilter
 
 }
 
-public abstract class ArrayPool<T> // TypeDefIndex: 6268
+public abstract class ArrayPool<T> // TypeDefIndex: 6271
 {
 	private static ArrayPool<T> s_sharedInstance; 
 
@@ -31341,7 +31411,7 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6268
 
 }
 
-internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6269
+internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6272
 {
 	internal static readonly ArrayPoolEventSource Log; 
 
@@ -31361,7 +31431,7 @@ internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6269
 
 }
 
-internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6270
+internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6273
 {
 	public int value__; 
 	public const ArrayPoolEventSource.BufferAllocatedReason Pooled = 0;
@@ -31370,7 +31440,7 @@ internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6270
 
 }
 
-public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6561
+public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6565
 {
 
 public class ArrayIndexIsEnum : PropertyAttribute
@@ -31381,7 +31451,7 @@ public class ArrayIndexIsEnum : PropertyAttribute
 
 }
 
-public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6562
+public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6566
 {
 	public float min; 
 	public float max; 
@@ -31391,7 +31461,7 @@ public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6562
 
 }
 
-public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8114
+public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8148
 {
 	private readonly List<Value> values; 
 
@@ -31427,7 +31497,7 @@ public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8114
 
 }
 
-public static class Arrays // TypeDefIndex: 8199
+public static class Arrays // TypeDefIndex: 8233
 {
 	public static ushort[] flushes; 
 	public static readonly ushort[] unique5; 
@@ -31441,7 +31511,7 @@ public static class Arrays // TypeDefIndex: 8199
 
 }
 
-public static class ArrayEx // TypeDefIndex: 13034
+public static class ArrayEx // TypeDefIndex: 13077
 {
 
 	public static T[] New<T>(int length) { }

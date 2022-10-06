@@ -1,4 +1,4 @@
-public enum MappingType // TypeDefIndex: 4274
+public enum MappingType // TypeDefIndex: 4277
 {
 	public int value__; 
 	public const MappingType Element = 1;

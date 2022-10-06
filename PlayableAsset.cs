@@ -1,4 +1,4 @@
-public abstract class PlayableAsset : ScriptableObject // TypeDefIndex: 3865
+public abstract class PlayableAsset : ScriptableObject // TypeDefIndex: 3867
 {
 	public virtual double duration { get; }
 	public virtual IEnumerable<PlayableBinding> outputs { get; }

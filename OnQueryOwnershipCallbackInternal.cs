@@ -1,4 +1,4 @@
-internal sealed class OnQueryOwnershipCallbackInternal : MulticastDelegate // TypeDefIndex: 9444
+internal sealed class OnQueryOwnershipCallbackInternal : MulticastDelegate // TypeDefIndex: 9478
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-internal enum TreeAccessMethod // TypeDefIndex: 4285
+internal enum TreeAccessMethod // TypeDefIndex: 4288
 {
 	public int value__; 
 	public const TreeAccessMethod KEY_SEARCH_AND_INDEX = 1;

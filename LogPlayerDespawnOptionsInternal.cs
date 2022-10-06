@@ -1,4 +1,4 @@
-internal struct LogPlayerDespawnOptionsInternal : ISettable<LogPlayerDespawnOptions>, IDisposable // TypeDefIndex: 9730
+internal struct LogPlayerDespawnOptionsInternal : ISettable<LogPlayerDespawnOptions>, IDisposable // TypeDefIndex: 9764
 {
 	private int m_ApiVersion; 
 	private IntPtr m_DespawnedPlayerHandle; 

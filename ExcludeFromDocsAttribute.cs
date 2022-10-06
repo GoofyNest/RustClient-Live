@@ -1,4 +1,4 @@
-public class ExcludeFromDocsAttribute : Attribute // TypeDefIndex: 3801
+public class ExcludeFromDocsAttribute : Attribute // TypeDefIndex: 3803
 {
 
 	public void .ctor() { }

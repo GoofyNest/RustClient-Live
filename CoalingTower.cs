@@ -1,4 +1,4 @@
-public class CoalingTower : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6439
+public class CoalingTower : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6442
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class CoalingTower : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class CoalingTower : IOEntity // TypeDefIndex: 9952
+public class CoalingTower : IOEntity // TypeDefIndex: 9986
 {
 	private static MaterialPropertyBlock materialPB; 
 	private static int emissionColorID; 
@@ -312,7 +312,7 @@ public class CoalingTower : IOEntity // TypeDefIndex: 9952
 
 }
 
-public enum CoalingTower.ActionAttemptStatus // TypeDefIndex: 9953
+public enum CoalingTower.ActionAttemptStatus // TypeDefIndex: 9987
 {
 	public int value__; 
 	public const CoalingTower.ActionAttemptStatus NoError = 0;

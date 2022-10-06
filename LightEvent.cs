@@ -1,4 +1,4 @@
-public enum LightEvent // TypeDefIndex: 3818
+public enum LightEvent // TypeDefIndex: 3820
 {
 	public int value__; 
 	public const LightEvent BeforeShadowMap = 0;

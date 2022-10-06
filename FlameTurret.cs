@@ -1,4 +1,4 @@
-public class FlameTurret : StorageContainer // TypeDefIndex: 10241
+public class FlameTurret : StorageContainer // TypeDefIndex: 10276
 {
 	public Transform upper; 
 	public Vector3 aimDir; 

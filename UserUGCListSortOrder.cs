@@ -1,4 +1,4 @@
-internal enum UserUGCListSortOrder // TypeDefIndex: 5162
+internal enum UserUGCListSortOrder // TypeDefIndex: 5165
 {
 	public int value__; 
 	public const UserUGCListSortOrder CreationOrderDesc = 0;

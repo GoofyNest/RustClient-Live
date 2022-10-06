@@ -1,4 +1,4 @@
-public sealed class Adler // TypeDefIndex: 6963
+public sealed class Adler // TypeDefIndex: 6995
 {
 	private static readonly uint BASE; 
 	private static readonly int NMAX; 

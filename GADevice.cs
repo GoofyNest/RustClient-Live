@@ -1,4 +1,4 @@
-internal static class GADevice // TypeDefIndex: 5676
+internal static class GADevice // TypeDefIndex: 5679
 {
 	private static readonly string _buildPlatform; 
 	private static readonly string _deviceModel; 

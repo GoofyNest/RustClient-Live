@@ -1,4 +1,4 @@
-public class StringContent : ByteArrayContent // TypeDefIndex: 5758
+public class StringContent : ByteArrayContent // TypeDefIndex: 5761
 {
 
 	public void .ctor(string content, Encoding encoding, string mediaType) { }

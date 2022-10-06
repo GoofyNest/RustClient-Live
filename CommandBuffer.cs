@@ -1,4 +1,4 @@
-public class CommandBuffer : IDisposable // TypeDefIndex: 3841
+public class CommandBuffer : IDisposable // TypeDefIndex: 3843
 {
 	internal IntPtr m_Ptr; 
 

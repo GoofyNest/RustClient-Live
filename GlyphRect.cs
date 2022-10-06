@@ -1,4 +1,4 @@
-public struct GlyphRect : IEquatable<GlyphRect> // TypeDefIndex: 4110
+public struct GlyphRect : IEquatable<GlyphRect> // TypeDefIndex: 4113
 {
 	[NativeNameAttribute] 
 	[SerializeField] 

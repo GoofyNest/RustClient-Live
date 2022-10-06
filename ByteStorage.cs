@@ -1,4 +1,4 @@
-internal sealed class ByteStorage : DataStorage // TypeDefIndex: 4367
+internal sealed class ByteStorage : DataStorage // TypeDefIndex: 4370
 {
 	private byte[] _values; 
 

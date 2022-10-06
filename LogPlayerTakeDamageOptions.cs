@@ -1,4 +1,4 @@
-public struct LogPlayerTakeDamageOptions // TypeDefIndex: 9735
+public struct LogPlayerTakeDamageOptions // TypeDefIndex: 9769
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <VictimPlayerHandle>k__BackingField; 

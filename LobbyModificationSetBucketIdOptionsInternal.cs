@@ -1,4 +1,4 @@
-internal struct LobbyModificationSetBucketIdOptionsInternal : ISettable<LobbyModificationSetBucketIdOptions>, IDisposable // TypeDefIndex: 9131
+internal struct LobbyModificationSetBucketIdOptionsInternal : ISettable<LobbyModificationSetBucketIdOptions>, IDisposable // TypeDefIndex: 9165
 {
 	private int m_ApiVersion; 
 	private IntPtr m_BucketId; 

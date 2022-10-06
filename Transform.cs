@@ -1,4 +1,4 @@
-public class Transform : Component, IEnumerable // TypeDefIndex: 3569
+public class Transform : Component, IEnumerable // TypeDefIndex: 3571
 {
 	public Vector3 position { get; set; }
 	public Vector3 localPosition { get; set; }
@@ -209,7 +209,7 @@ public class Transform : Component, IEnumerable // TypeDefIndex: 3569
 
 }
 
-private class Transform.Enumerator : IEnumerator // TypeDefIndex: 3570
+private class Transform.Enumerator : IEnumerator // TypeDefIndex: 3572
 {
 	private Transform outer; 
 	private int currentIndex; 

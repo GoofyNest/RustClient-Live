@@ -1,4 +1,4 @@
-public sealed class ParticleSystem : Component // TypeDefIndex: 4527
+public sealed class ParticleSystem : Component // TypeDefIndex: 4530
 {
 
 [NativeHeaderAttribute] 
@@ -160,7 +160,7 @@ public sealed class ParticleSystem : Component
 
 }
 
-public struct ParticleSystem.MainModule // TypeDefIndex: 4528
+public struct ParticleSystem.MainModule // TypeDefIndex: 4531
 {
 	internal ParticleSystem m_ParticleSystem; 
 
@@ -273,7 +273,7 @@ public struct ParticleSystem.MainModule // TypeDefIndex: 4528
 
 }
 
-public struct ParticleSystem.EmissionModule // TypeDefIndex: 4529
+public struct ParticleSystem.EmissionModule // TypeDefIndex: 4532
 {
 	internal ParticleSystem m_ParticleSystem; 
 
@@ -322,7 +322,7 @@ public struct ParticleSystem.EmissionModule // TypeDefIndex: 4529
 
 }
 
-public struct ParticleSystem.ShapeModule // TypeDefIndex: 4530
+public struct ParticleSystem.ShapeModule // TypeDefIndex: 4533
 {
 	internal ParticleSystem m_ParticleSystem; 
 
@@ -386,7 +386,7 @@ public struct ParticleSystem.ShapeModule // TypeDefIndex: 4530
 
 }
 
-public struct ParticleSystem.Particle // TypeDefIndex: 4531
+public struct ParticleSystem.Particle // TypeDefIndex: 4534
 {
 	private Vector3 m_Position; 
 	private Vector3 m_Velocity; 
@@ -441,7 +441,7 @@ public struct ParticleSystem.Particle // TypeDefIndex: 4531
 
 }
 
-public struct ParticleSystem.Burst // TypeDefIndex: 4532
+public struct ParticleSystem.Burst // TypeDefIndex: 4535
 {
 	private float m_Time; 
 	private ParticleSystem.MinMaxCurve m_Count; 
@@ -456,7 +456,7 @@ public struct ParticleSystem.Burst // TypeDefIndex: 4532
 
 }
 
-public struct ParticleSystem.MinMaxCurve // TypeDefIndex: 4533
+public struct ParticleSystem.MinMaxCurve // TypeDefIndex: 4536
 {
 	[SerializeField] 
 	private ParticleSystemCurveMode m_Mode; 
@@ -495,7 +495,7 @@ public struct ParticleSystem.MinMaxCurve // TypeDefIndex: 4533
 
 }
 
-public struct ParticleSystem.MinMaxGradient // TypeDefIndex: 4534
+public struct ParticleSystem.MinMaxGradient // TypeDefIndex: 4537
 {
 	[SerializeField] 
 	private ParticleSystemGradientMode m_Mode; 
@@ -531,7 +531,7 @@ public struct ParticleSystem.MinMaxGradient // TypeDefIndex: 4534
 
 }
 
-public struct ParticleSystem.EmitParams // TypeDefIndex: 4535
+public struct ParticleSystem.EmitParams // TypeDefIndex: 4538
 {
 	[NativeNameAttribute] 
 	private ParticleSystem.Particle m_Particle; 
@@ -571,7 +571,7 @@ public struct ParticleSystem.EmitParams // TypeDefIndex: 4535
 
 }
 
-public struct ParticleSystem.ColorOverLifetimeModule // TypeDefIndex: 4536
+public struct ParticleSystem.ColorOverLifetimeModule // TypeDefIndex: 4539
 {
 	internal ParticleSystem m_ParticleSystem; 
 
@@ -586,7 +586,7 @@ public struct ParticleSystem.ColorOverLifetimeModule // TypeDefIndex: 4536
 
 }
 
-public struct ParticleSystem.CollisionModule // TypeDefIndex: 4537
+public struct ParticleSystem.CollisionModule // TypeDefIndex: 4540
 {
 	internal ParticleSystem m_ParticleSystem; 
 

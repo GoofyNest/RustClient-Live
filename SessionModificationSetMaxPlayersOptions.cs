@@ -1,4 +1,4 @@
-public struct SessionModificationSetMaxPlayersOptions // TypeDefIndex: 8535
+public struct SessionModificationSetMaxPlayersOptions // TypeDefIndex: 8569
 {
 	[CompilerGeneratedAttribute] 
 	private uint <MaxPlayers>k__BackingField; 

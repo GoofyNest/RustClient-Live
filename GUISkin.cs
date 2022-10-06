@@ -1,4 +1,4 @@
-public sealed class GUISkin : ScriptableObject // TypeDefIndex: 4044
+public sealed class GUISkin : ScriptableObject // TypeDefIndex: 4047
 {
 	[SerializeField] 
 	private Font m_Font; 
@@ -201,7 +201,7 @@ public sealed class GUISkin : ScriptableObject // TypeDefIndex: 4044
 
 }
 
-internal sealed class GUISkin.SkinChangedDelegate : MulticastDelegate // TypeDefIndex: 4045
+internal sealed class GUISkin.SkinChangedDelegate : MulticastDelegate // TypeDefIndex: 4048
 {
 
 	public void .ctor(object object, IntPtr method) { }

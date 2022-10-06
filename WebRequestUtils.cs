@@ -1,4 +1,4 @@
-internal static class WebRequestUtils // TypeDefIndex: 4124
+internal static class WebRequestUtils // TypeDefIndex: 4127
 {
 
 internal static class WebRequestUtils

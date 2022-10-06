@@ -1,4 +1,4 @@
-public class LadderMinMountHeight : MonoBehaviour // TypeDefIndex: 9960
+public class LadderMinMountHeight : MonoBehaviour // TypeDefIndex: 9994
 {
 
 	private void Start() { }

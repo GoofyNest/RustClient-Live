@@ -1,4 +1,4 @@
-internal struct QueryPermissionsOptionsInternal : ISettable<QueryPermissionsOptions>, IDisposable // TypeDefIndex: 9315
+internal struct QueryPermissionsOptionsInternal : ISettable<QueryPermissionsOptions>, IDisposable // TypeDefIndex: 9349
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

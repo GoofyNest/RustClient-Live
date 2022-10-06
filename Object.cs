@@ -27,7 +27,7 @@ public class Object // TypeDefIndex: 383
 
 }
 
-public class Object // TypeDefIndex: 3535
+public class Object // TypeDefIndex: 3537
 {
 	private IntPtr m_CachedPtr; 
 	internal static int OffsetOfInstanceIDInCPlusPlusObject; 
@@ -84,6 +84,7 @@ public class Object // TypeDefIndex: 3535
 	|-Object.Instantiate<Mesh>
 	|-Object.Instantiate<ParticleSystem>
 	|-Object.Instantiate<PostProcessEffectSettings>
+	|-Object.Instantiate<PostProcessProfile>
 	|-Object.Instantiate<Texture2D>
 	|-Object.Instantiate<Transform>
 	|-Object.Instantiate<Dropdown.DropdownItem>
@@ -139,8 +140,8 @@ public class Object // TypeDefIndex: 3535
 	[ExcludeFromDocsAttribute] 
 	public static void DestroyImmediate(Object obj) { }
 
-	[TypeInferenceRuleAttribute] 
 	[FreeFunctionAttribute] 
+	[TypeInferenceRuleAttribute] 
 	public static Object[] FindObjectsOfType(Type type) { }
 
 	[FreeFunctionAttribute] 
@@ -228,8 +229,8 @@ public class Object // TypeDefIndex: 3535
 	[FreeFunctionAttribute] 
 	private static void SetName(Object obj, string name) { }
 
-	[VisibleToOtherModulesAttribute] 
 	[FreeFunctionAttribute] 
+	[VisibleToOtherModulesAttribute] 
 	internal static Object FindObjectFromInstanceID(int instanceID) { }
 
 	public void .ctor() { }
@@ -242,7 +243,7 @@ public class Object // TypeDefIndex: 3535
 
 }
 
-public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8115
+public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8149
 {
 	private readonly IDictionary<string, Value> values; 
 
@@ -303,7 +304,7 @@ public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // T
 
 }
 
-private enum Object.ParsingState // TypeDefIndex: 8116
+private enum Object.ParsingState // TypeDefIndex: 8150
 {
 	public int value__; 
 	public const Object.ParsingState Object = 0;

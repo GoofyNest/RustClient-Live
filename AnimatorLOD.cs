@@ -1,4 +1,4 @@
-public class AnimatorLOD : LODComponent // TypeDefIndex: 11587
+public class AnimatorLOD : LODComponent // TypeDefIndex: 11625
 {
 	public float Distance; 
 	private Animator animator; 

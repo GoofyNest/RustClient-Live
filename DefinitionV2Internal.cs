@@ -1,4 +1,4 @@
-internal struct DefinitionV2Internal : IGettable<DefinitionV2>, ISettable<DefinitionV2>, IDisposable // TypeDefIndex: 9868
+internal struct DefinitionV2Internal : IGettable<DefinitionV2>, ISettable<DefinitionV2>, IDisposable // TypeDefIndex: 9902
 {
 	private int m_ApiVersion; 
 	private IntPtr m_AchievementId; 

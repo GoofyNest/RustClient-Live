@@ -1,4 +1,4 @@
-public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 10161
+public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAIDesign, IAIGroupable, IAIEventListener // TypeDefIndex: 10195
 {
 	public bool UseQueuedMovementUpdates; 
 	public bool AllowedToSleep; 
@@ -160,7 +160,7 @@ public class BaseAIBrain : EntityComponent<BaseEntity>, IPet, IAISleepable, IAID
 
 }
 
-public class BaseAIBrain.BasicAIState // TypeDefIndex: 10162
+public class BaseAIBrain.BasicAIState // TypeDefIndex: 10196
 {
 
 	public void .ctor() { }

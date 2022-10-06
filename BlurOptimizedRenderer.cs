@@ -1,4 +1,4 @@
-public class BlurOptimizedRenderer : PostProcessEffectRenderer<BlurOptimized> // TypeDefIndex: 11918
+public class BlurOptimizedRenderer : PostProcessEffectRenderer<BlurOptimized> // TypeDefIndex: 11956
 {
 	private int dataProperty; 
 	private Shader blurShader; 

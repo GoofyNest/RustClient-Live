@@ -1,4 +1,4 @@
-public enum LoginStatus // TypeDefIndex: 8244
+public enum LoginStatus // TypeDefIndex: 8278
 {
 	public int value__; 
 	public const LoginStatus NotLoggedIn = 0;

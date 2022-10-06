@@ -1,4 +1,4 @@
-internal struct LeaveLobbyCallbackInfoInternal : ICallbackInfoInternal, IGettable<LeaveLobbyCallbackInfo>, ISettable<LeaveLobbyCallbackInfo>, IDisposable // TypeDefIndex: 9082
+internal struct LeaveLobbyCallbackInfoInternal : ICallbackInfoInternal, IGettable<LeaveLobbyCallbackInfo>, ISettable<LeaveLobbyCallbackInfo>, IDisposable // TypeDefIndex: 9116
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

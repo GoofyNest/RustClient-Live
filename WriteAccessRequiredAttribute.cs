@@ -1,8 +1,8 @@
 public class WriteAccessRequiredAttribute : Attribute // TypeDefIndex: 3335
 {
 
-[AttributeUsageAttribute] 
 [RequiredByNativeCodeAttribute] 
+[AttributeUsageAttribute] 
 [ObsoleteAttribute] 
 public sealed class NativeContainerNeedsThreadIndexAttribute : Attribute
 

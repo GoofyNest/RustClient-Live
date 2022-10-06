@@ -1,4 +1,4 @@
-public class Skin // TypeDefIndex: 7701
+public class Skin // TypeDefIndex: 7735
 {
 	private string manifestName; 
 	private string manifestContent; 
@@ -79,7 +79,7 @@ public class Skin // TypeDefIndex: 7701
 
 }
 
-public class Skin.Manifest // TypeDefIndex: 7702
+public class Skin.Manifest // TypeDefIndex: 7736
 {
 	[CompilerGeneratedAttribute] 
 	private int <Version>k__BackingField; 
@@ -133,7 +133,7 @@ public class Skin.Manifest // TypeDefIndex: 7702
 
 }
 
-public class Skin.Manifest.Group // TypeDefIndex: 7703
+public class Skin.Manifest.Group // TypeDefIndex: 7737
 {
 	[CompilerGeneratedAttribute] 
 	private Dictionary<string, string> <Textures>k__BackingField; 
@@ -169,7 +169,7 @@ public class Skin.Manifest.Group // TypeDefIndex: 7703
 
 }
 
-public class Skin.Manifest.ColorEntry // TypeDefIndex: 7704
+public class Skin.Manifest.ColorEntry // TypeDefIndex: 7738
 {
 	[CompilerGeneratedAttribute] 
 	private float <r>k__BackingField; 
@@ -205,7 +205,7 @@ public class Skin.Manifest.ColorEntry // TypeDefIndex: 7704
 
 }
 
-private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7705
+private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7739
 {
 	public InventoryDef[] definitions; 
 	public string downloadUrl; 
@@ -218,7 +218,7 @@ private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7705
 
 }
 
-private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7706
+private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7740
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -254,7 +254,7 @@ private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, ID
 
 }
 
-private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7707
+private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7741
 {
 	private int <>1__state; 
 	private object <>2__current; 

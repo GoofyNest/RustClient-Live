@@ -1,4 +1,4 @@
-public class Decal : ConsoleSystem // TypeDefIndex: 13596
+public class Decal : ConsoleSystem // TypeDefIndex: 13639
 {
 	[ClientVar] 
 	public static bool cache; 

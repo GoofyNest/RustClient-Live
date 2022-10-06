@@ -1,4 +1,4 @@
-public enum FFTWindow // TypeDefIndex: 4001
+public enum FFTWindow // TypeDefIndex: 4004
 {
 	public int value__; 
 	public const FFTWindow Rectangular = 0;

@@ -1,4 +1,4 @@
-public sealed class SqlChars : INullable, IXmlSerializable, ISerializable // TypeDefIndex: 4342
+public sealed class SqlChars : INullable, IXmlSerializable, ISerializable // TypeDefIndex: 4345
 {
 	internal char[] _rgchBuf; 
 	private long _lCurLen; 

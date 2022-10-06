@@ -88,7 +88,7 @@ public class PlayerPrefs // TypeDefIndex: 3477
 
 }
 
-internal struct PlayerLoopSystemInternal // TypeDefIndex: 3662
+internal struct PlayerLoopSystemInternal // TypeDefIndex: 3664
 {
 	public Type type; 
 	public PlayerLoopSystem.UpdateFunction updateDelegate; 
@@ -98,7 +98,7 @@ internal struct PlayerLoopSystemInternal // TypeDefIndex: 3662
 
 }
 
-public struct PlayerLoopSystem // TypeDefIndex: 3663
+public struct PlayerLoopSystem // TypeDefIndex: 3665
 {
 	public Type type; 
 	public PlayerLoopSystem[] subSystemList; 
@@ -108,7 +108,7 @@ public struct PlayerLoopSystem // TypeDefIndex: 3663
 
 }
 
-public sealed class PlayerLoopSystem.UpdateFunction : MulticastDelegate // TypeDefIndex: 3664
+public sealed class PlayerLoopSystem.UpdateFunction : MulticastDelegate // TypeDefIndex: 3666
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -121,7 +121,7 @@ public sealed class PlayerLoopSystem.UpdateFunction : MulticastDelegate // TypeD
 
 }
 
-public class PlayerConnection : ScriptableObject // TypeDefIndex: 3789
+public class PlayerConnection : ScriptableObject // TypeDefIndex: 3791
 {
 	internal static IPlayerEditorConnectionNative connectionNative; 
 	[SerializeField] 
@@ -178,7 +178,7 @@ public class PlayerConnection : ScriptableObject // TypeDefIndex: 3789
 
 }
 
-private sealed class PlayerConnection.<>c__DisplayClass12_0 // TypeDefIndex: 3790
+private sealed class PlayerConnection.<>c__DisplayClass12_0 // TypeDefIndex: 3792
 {
 	public Guid messageId; 
 
@@ -189,7 +189,7 @@ private sealed class PlayerConnection.<>c__DisplayClass12_0 // TypeDefIndex: 379
 
 }
 
-private sealed class PlayerConnection.<>c__DisplayClass13_0 // TypeDefIndex: 3791
+private sealed class PlayerConnection.<>c__DisplayClass13_0 // TypeDefIndex: 3793
 {
 	public Guid messageId; 
 
@@ -200,7 +200,7 @@ private sealed class PlayerConnection.<>c__DisplayClass13_0 // TypeDefIndex: 379
 
 }
 
-private sealed class PlayerConnection.<>c__DisplayClass20_0 // TypeDefIndex: 3792
+private sealed class PlayerConnection.<>c__DisplayClass20_0 // TypeDefIndex: 3794
 {
 	public bool msgReceived; 
 
@@ -211,7 +211,7 @@ private sealed class PlayerConnection.<>c__DisplayClass20_0 // TypeDefIndex: 379
 
 }
 
-internal class PlayerEditorConnectionEvents // TypeDefIndex: 3793
+internal class PlayerEditorConnectionEvents // TypeDefIndex: 3795
 {
 	[SerializeField] 
 	public List<PlayerEditorConnectionEvents.MessageTypeSubscribers> messageTypeSubscribers; 
@@ -231,21 +231,21 @@ internal class PlayerEditorConnectionEvents // TypeDefIndex: 3793
 
 }
 
-public class PlayerEditorConnectionEvents.MessageEvent : UnityEvent<MessageEventArgs> // TypeDefIndex: 3794
+public class PlayerEditorConnectionEvents.MessageEvent : UnityEvent<MessageEventArgs> // TypeDefIndex: 3796
 {
 
 	public void .ctor() { }
 
 }
 
-public class PlayerEditorConnectionEvents.ConnectionChangeEvent : UnityEvent<int> // TypeDefIndex: 3795
+public class PlayerEditorConnectionEvents.ConnectionChangeEvent : UnityEvent<int> // TypeDefIndex: 3797
 {
 
 	public void .ctor() { }
 
 }
 
-public class PlayerEditorConnectionEvents.MessageTypeSubscribers // TypeDefIndex: 3796
+public class PlayerEditorConnectionEvents.MessageTypeSubscribers // TypeDefIndex: 3798
 {
 	[SerializeField] 
 	private string m_messageTypeId; 
@@ -263,7 +263,7 @@ public class PlayerEditorConnectionEvents.MessageTypeSubscribers // TypeDefIndex
 
 }
 
-private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass6_0 // TypeDefIndex: 3797
+private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass6_0 // TypeDefIndex: 3799
 {
 	public Guid messageId; 
 
@@ -274,7 +274,7 @@ private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass6_0 // TypeDe
 
 }
 
-private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass7_0 // TypeDefIndex: 3798
+private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass7_0 // TypeDefIndex: 3800
 {
 	public Guid messageId; 
 
@@ -285,7 +285,7 @@ private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass7_0 // TypeDe
 
 }
 
-private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass8_0 // TypeDefIndex: 3799
+private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass8_0 // TypeDefIndex: 3801
 {
 	public Guid messageId; 
 
@@ -296,7 +296,7 @@ private sealed class PlayerEditorConnectionEvents.<>c__DisplayClass8_0 // TypeDe
 
 }
 
-public struct PlayerItemRecipe : IEquatable<PlayerItemRecipe> // TypeDefIndex: 5699
+public struct PlayerItemRecipe : IEquatable<PlayerItemRecipe> // TypeDefIndex: 5702
 {
 	[CompilerGeneratedAttribute] 
 	private readonly IReadOnlyList<PlayerItemRecipe.Ingredient> <Ingredients>k__BackingField; 
@@ -327,7 +327,7 @@ public struct PlayerItemRecipe : IEquatable<PlayerItemRecipe> // TypeDefIndex: 5
 
 }
 
-public struct PlayerItemRecipe.Ingredient : IEquatable<PlayerItemRecipe.Ingredient> // TypeDefIndex: 5700
+public struct PlayerItemRecipe.Ingredient : IEquatable<PlayerItemRecipe.Ingredient> // TypeDefIndex: 5703
 {
 	[CompilerGeneratedAttribute] 
 	private readonly int <DefinitionId>k__BackingField; 
@@ -358,7 +358,7 @@ public struct PlayerItemRecipe.Ingredient : IEquatable<PlayerItemRecipe.Ingredie
 
 }
 
-private sealed class PlayerItemRecipe.<>c // TypeDefIndex: 5701
+private sealed class PlayerItemRecipe.<>c // TypeDefIndex: 5704
 {
 	public static readonly PlayerItemRecipe.<>c <>9; 
 	public static Func<PlayerItemRecipe.Ingredient, int> <>9__10_0; 
@@ -372,7 +372,7 @@ private sealed class PlayerItemRecipe.<>c // TypeDefIndex: 5701
 
 }
 
-public static class PlayerItemExtensions // TypeDefIndex: 6157
+public static class PlayerItemExtensions // TypeDefIndex: 6160
 {
 
 	[ExtensionAttribute] 
@@ -380,7 +380,7 @@ public static class PlayerItemExtensions // TypeDefIndex: 6157
 
 }
 
-public struct PlayerInfo // TypeDefIndex: 6251
+public struct PlayerInfo // TypeDefIndex: 6254
 {
 	[CompilerGeneratedAttribute] 
 	private string <Name>k__BackingField; 
@@ -405,7 +405,7 @@ public struct PlayerInfo // TypeDefIndex: 6251
 
 }
 
-public class PlayerTick : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6278
+public class PlayerTick : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6281
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -472,7 +472,7 @@ public class PlayerTick : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 627
 
 }
 
-public class BasePlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6444
+public class BasePlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -553,7 +553,7 @@ public class BasePlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 644
 
 }
 
-public class PlayerTeam : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6445
+public class PlayerTeam : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6449
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -619,7 +619,7 @@ public class PlayerTeam : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 644
 
 }
 
-public class PlayerTeam.TeamMember : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6446
+public class PlayerTeam.TeamMember : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6450
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -685,7 +685,7 @@ public class PlayerTeam.TeamMember : IDisposable, Pool.IPooled, IProto // TypeDe
 
 }
 
-public class PlayerMetabolism : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6447
+public class PlayerMetabolism : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6451
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -759,7 +759,7 @@ public class PlayerMetabolism : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class PlayerModifiers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
+public class PlayerModifiers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6452
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -820,7 +820,7 @@ public class PlayerModifiers : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class PlayerInventory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6455
+public class PlayerInventory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6459
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -883,7 +883,7 @@ public class PlayerInventory : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class PlayerLifeStory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6457
+public class PlayerLifeStory : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6461
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -964,7 +964,7 @@ public class PlayerLifeStory : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class PlayerLifeStory.DeathInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6458
+public class PlayerLifeStory.DeathInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6462
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1030,7 +1030,7 @@ public class PlayerLifeStory.DeathInfo : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public class PlayerLifeStory.WeaponStats : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6459
+public class PlayerLifeStory.WeaponStats : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6463
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1093,7 +1093,7 @@ public class PlayerLifeStory.WeaponStats : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class PlayerLifeStory.GenericStat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6460
+public class PlayerLifeStory.GenericStat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6464
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1155,7 +1155,7 @@ public class PlayerLifeStory.GenericStat : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class PlayerState : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6463
+public class PlayerState : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6467
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1219,7 +1219,7 @@ public class PlayerState : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public class PlayerNameID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6464
+public class PlayerNameID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6468
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1281,7 +1281,7 @@ public class PlayerNameID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class PlayerUpdateLoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6479
+public class PlayerUpdateLoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6483
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1344,7 +1344,7 @@ public class PlayerUpdateLoot : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class PlayerAttack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6485
+public class PlayerAttack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6489
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1406,7 +1406,7 @@ public class PlayerAttack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class PlayerProjectileAttack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6486
+public class PlayerProjectileAttack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6490
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1470,7 +1470,7 @@ public class PlayerProjectileAttack : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class PlayerProjectileRicochet : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6487
+public class PlayerProjectileRicochet : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6491
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1536,7 +1536,7 @@ public class PlayerProjectileRicochet : IDisposable, Pool.IPooled, IProto // Typ
 
 }
 
-public class PlayerProjectileUpdate : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6488
+public class PlayerProjectileUpdate : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6492
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1600,7 +1600,7 @@ public class PlayerProjectileUpdate : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class PlayerDetectedAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6545
+public class PlayerDetectedAIEventData : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6549
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1661,7 +1661,7 @@ public class PlayerDetectedAIEventData : IDisposable, Pool.IPooled, IProto // Ty
 
 }
 
-public struct PlayerSanction // TypeDefIndex: 8581
+public struct PlayerSanction // TypeDefIndex: 8615
 {
 	[CompilerGeneratedAttribute] 
 	private long <TimePlaced>k__BackingField; 
@@ -1706,7 +1706,7 @@ public struct PlayerSanction // TypeDefIndex: 8581
 
 }
 
-internal struct PlayerSanctionInternal : IGettable<PlayerSanction>, ISettable<PlayerSanction>, IDisposable // TypeDefIndex: 8582
+internal struct PlayerSanctionInternal : IGettable<PlayerSanction>, ISettable<PlayerSanction>, IDisposable // TypeDefIndex: 8616
 {
 	private int m_ApiVersion; 
 	private long m_TimePlaced; 
@@ -1746,7 +1746,7 @@ internal struct PlayerSanctionInternal : IGettable<PlayerSanction>, ISettable<Pl
 
 }
 
-public enum PlayerReportsCategory // TypeDefIndex: 8590
+public enum PlayerReportsCategory // TypeDefIndex: 8624
 {
 	public int value__; 
 	public const PlayerReportsCategory Invalid = 0;
@@ -1760,7 +1760,7 @@ public enum PlayerReportsCategory // TypeDefIndex: 8590
 
 }
 
-public sealed class PlayerDataStorageFileTransferRequest : Handle // TypeDefIndex: 8866
+public sealed class PlayerDataStorageFileTransferRequest : Handle // TypeDefIndex: 8900
 {
 
 	public void .ctor() { }
@@ -1777,7 +1777,7 @@ public sealed class PlayerDataStorageFileTransferRequest : Handle // TypeDefInde
 
 }
 
-public sealed class PlayerDataStorageInterface : Handle // TypeDefIndex: 8867
+public sealed class PlayerDataStorageInterface : Handle // TypeDefIndex: 8901
 {
 	public const int CopyfilemetadataatindexoptionsApiLatest = 1;
 	public const int CopyfilemetadatabyfilenameoptionsApiLatest = 1;
@@ -1850,7 +1850,7 @@ public sealed class PlayerDataStorageInterface : Handle // TypeDefIndex: 8867
 
 }
 
-public struct PlayerAchievement // TypeDefIndex: 9895
+public struct PlayerAchievement // TypeDefIndex: 9929
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <AchievementId>k__BackingField; 
@@ -1931,7 +1931,7 @@ public struct PlayerAchievement // TypeDefIndex: 9895
 
 }
 
-internal struct PlayerAchievementInternal : IGettable<PlayerAchievement>, ISettable<PlayerAchievement>, IDisposable // TypeDefIndex: 9896
+internal struct PlayerAchievementInternal : IGettable<PlayerAchievement>, ISettable<PlayerAchievement>, IDisposable // TypeDefIndex: 9930
 {
 	private int m_ApiVersion; 
 	private IntPtr m_AchievementId; 
@@ -1996,7 +1996,7 @@ internal struct PlayerAchievementInternal : IGettable<PlayerAchievement>, ISetta
 
 }
 
-public struct PlayerStatInfo // TypeDefIndex: 9897
+public struct PlayerStatInfo // TypeDefIndex: 9931
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Name>k__BackingField; 
@@ -2032,7 +2032,7 @@ public struct PlayerStatInfo // TypeDefIndex: 9897
 
 }
 
-internal struct PlayerStatInfoInternal : IGettable<PlayerStatInfo>, ISettable<PlayerStatInfo>, IDisposable // TypeDefIndex: 9898
+internal struct PlayerStatInfoInternal : IGettable<PlayerStatInfo>, ISettable<PlayerStatInfo>, IDisposable // TypeDefIndex: 9932
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Name; 
@@ -2066,7 +2066,7 @@ internal struct PlayerStatInfoInternal : IGettable<PlayerStatInfo>, ISettable<Pl
 
 }
 
-public class PlayerIdleAnimationRandomiser : StateMachineBehaviour // TypeDefIndex: 9940
+public class PlayerIdleAnimationRandomiser : StateMachineBehaviour // TypeDefIndex: 9974
 {
 	public int MaxValue; 
 	public static int Param_Random; 
@@ -2081,7 +2081,7 @@ public class PlayerIdleAnimationRandomiser : StateMachineBehaviour // TypeDefInd
 
 }
 
-public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotEntity // TypeDefIndex: 10007
+public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotEntity // TypeDefIndex: 10041
 {
 	private Option __menuOption_Climb; 
 	private Option __menuOption_Drink; 
@@ -2877,9 +2877,9 @@ public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotE
 
 	public Vector3 GetMountVelocity() { }
 
-	public override Vector3 GetInheritedProjectileVelocity() { }
+	public override Vector3 GetInheritedProjectileVelocity(Vector3 direction) { }
 
-	public override Vector3 GetInheritedThrowVelocity() { }
+	public override Vector3 GetInheritedThrowVelocity(Vector3 direction) { }
 
 	public override Vector3 GetInheritedDropVelocity() { }
 
@@ -3017,7 +3017,7 @@ public class BasePlayer : BaseCombatEntity, LootPanel.IHasLootPanel, IIdealSlotE
 
 }
 
-public enum BasePlayer.CameraMode // TypeDefIndex: 10008
+public enum BasePlayer.CameraMode // TypeDefIndex: 10042
 {
 	public int value__; 
 	public const BasePlayer.CameraMode FirstPerson = 0;
@@ -3029,7 +3029,7 @@ public enum BasePlayer.CameraMode // TypeDefIndex: 10008
 
 }
 
-public enum BasePlayer.PlayerFlags // TypeDefIndex: 10009
+public enum BasePlayer.PlayerFlags // TypeDefIndex: 10043
 {
 	public int value__; 
 	public const BasePlayer.PlayerFlags Unused1 = 1;
@@ -3057,7 +3057,7 @@ public enum BasePlayer.PlayerFlags // TypeDefIndex: 10009
 
 }
 
-public enum BasePlayer.MapNoteType // TypeDefIndex: 10010
+public enum BasePlayer.MapNoteType // TypeDefIndex: 10044
 {
 	public int value__; 
 	public const BasePlayer.MapNoteType Death = 0;
@@ -3065,7 +3065,7 @@ public enum BasePlayer.MapNoteType // TypeDefIndex: 10010
 
 }
 
-public enum BasePlayer.TimeCategory // TypeDefIndex: 10011
+public enum BasePlayer.TimeCategory // TypeDefIndex: 10045
 {
 	public int value__; 
 	public const BasePlayer.TimeCategory Wilderness = 1;
@@ -3078,7 +3078,7 @@ public enum BasePlayer.TimeCategory // TypeDefIndex: 10011
 
 }
 
-public struct BasePlayer.CapsuleColliderInfo // TypeDefIndex: 10012
+public struct BasePlayer.CapsuleColliderInfo // TypeDefIndex: 10046
 {
 	public float height; 
 	public float radius; 
@@ -3089,7 +3089,7 @@ public struct BasePlayer.CapsuleColliderInfo // TypeDefIndex: 10012
 
 }
 
-private sealed class BasePlayer.<>c // TypeDefIndex: 10013
+private sealed class BasePlayer.<>c // TypeDefIndex: 10047
 {
 	public static readonly BasePlayer.<>c <>9; 
 	public static Func<PlayerTeam.TeamMember, ulong> <>9__103_0; 
@@ -3109,7 +3109,7 @@ private sealed class BasePlayer.<>c // TypeDefIndex: 10013
 
 }
 
-private sealed class BasePlayer.<FinishedLoadingRoutine>d__161 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10014
+private sealed class BasePlayer.<FinishedLoadingRoutine>d__161 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10048
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -3138,7 +3138,7 @@ private sealed class BasePlayer.<FinishedLoadingRoutine>d__161 : IEnumerator<obj
 
 }
 
-private sealed class BasePlayer.<>c__DisplayClass210_0 // TypeDefIndex: 10015
+private sealed class BasePlayer.<>c__DisplayClass210_0 // TypeDefIndex: 10049
 {
 	public GestureConfig g; 
 	public BasePlayer <>4__this; 
@@ -3150,7 +3150,7 @@ private sealed class BasePlayer.<>c__DisplayClass210_0 // TypeDefIndex: 10015
 
 }
 
-private sealed class BasePlayer.<>c__DisplayClass304_0 // TypeDefIndex: 10016
+private sealed class BasePlayer.<>c__DisplayClass304_0 // TypeDefIndex: 10050
 {
 	public uint index; 
 
@@ -3161,7 +3161,7 @@ private sealed class BasePlayer.<>c__DisplayClass304_0 // TypeDefIndex: 10016
 
 }
 
-private sealed class BasePlayer.<>c__DisplayClass306_0 // TypeDefIndex: 10017
+private sealed class BasePlayer.<>c__DisplayClass306_0 // TypeDefIndex: 10051
 {
 	public PetCommandList.PetCommandDesc desc; 
 	public BasePlayer <>4__this; 
@@ -3173,7 +3173,7 @@ private sealed class BasePlayer.<>c__DisplayClass306_0 // TypeDefIndex: 10017
 
 }
 
-public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10292
+public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10327
 {
 	public ItemContainer containerMain; 
 	public ItemContainer containerBelt; 
@@ -3223,7 +3223,7 @@ public class PlayerInventory : EntityComponent<BasePlayer> // TypeDefIndex: 1029
 
 }
 
-public enum PlayerInventory.Type // TypeDefIndex: 10293
+public enum PlayerInventory.Type // TypeDefIndex: 10328
 {
 	public int value__; 
 	public const PlayerInventory.Type Main = 0;
@@ -3232,7 +3232,7 @@ public enum PlayerInventory.Type // TypeDefIndex: 10293
 
 }
 
-public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10294
+public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10329
 {
 	public BaseEntity entitySource; 
 	public Item itemSource; 
@@ -3261,7 +3261,7 @@ public class PlayerLoot : EntityComponent<BasePlayer> // TypeDefIndex: 10294
 
 }
 
-public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 10295
+public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 10330
 {
 	public const float HotThreshold = 40;
 	public const float ColdThreshold = 5;
@@ -3308,7 +3308,7 @@ public class PlayerMetabolism : BaseMetabolism<BasePlayer> // TypeDefIndex: 1029
 
 }
 
-public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10296
+public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10331
 {
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -3324,7 +3324,7 @@ public class PlayerModifiers : BaseModifiers<BasePlayer> // TypeDefIndex: 10296
 
 }
 
-public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10375
+public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10411
 {
 	public BaseDetector myDetector; 
 
@@ -3333,7 +3333,7 @@ public class PlayerDetectionTrigger : TriggerBase // TypeDefIndex: 10375
 
 }
 
-public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10885
+public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10921
 {
 	public HairType type; 
 	private Dictionary<Renderer, PlayerModelHair.RendererMaterials> materials; 
@@ -3357,7 +3357,7 @@ public class PlayerModelHair : MonoBehaviour // TypeDefIndex: 10885
 
 }
 
-public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10886
+public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10922
 {
 	public string[] names; 
 	public Material[] original; 
@@ -3368,7 +3368,7 @@ public struct PlayerModelHair.RendererMaterials // TypeDefIndex: 10886
 
 }
 
-public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10888
+public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10924
 {
 	[InspectorFlagsAttribute] 
 	public HairCapMask hairCapMask; 
@@ -3380,7 +3380,7 @@ public class PlayerModelHairCap : MonoBehaviour // TypeDefIndex: 10888
 
 }
 
-public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10889
+public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 10925
 {
 	public PlayerModelSkin.SkinMaterialType MaterialType; 
 	public Renderer SkinRenderer; 
@@ -3394,7 +3394,7 @@ public class PlayerModelSkin : MonoBehaviour, IPrefabPreProcess // TypeDefIndex:
 
 }
 
-public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10890
+public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10926
 {
 	public int value__; 
 	public const PlayerModelSkin.SkinMaterialType HEAD = 0;
@@ -3403,7 +3403,7 @@ public enum PlayerModelSkin.SkinMaterialType // TypeDefIndex: 10890
 
 }
 
-public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11079
+public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11117
 {
 	[CompilerGeneratedAttribute] 
 	private float <Range>k__BackingField; 
@@ -3421,7 +3421,7 @@ public class PlayerDetectedAIEvent : BaseAIEvent // TypeDefIndex: 11079
 
 }
 
-public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11317
+public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11355
 {
 	private BasePlayer player; 
 
@@ -3450,7 +3450,7 @@ public class PlayerAnimationEvents : MonoBehaviour // TypeDefIndex: 11317
 
 }
 
-public class PlayerBelt // TypeDefIndex: 11318
+public class PlayerBelt // TypeDefIndex: 11356
 {
 	public static int SelectedSlot; 
 	protected BasePlayer player; 
@@ -3480,7 +3480,7 @@ public class PlayerBelt // TypeDefIndex: 11318
 
 }
 
-public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 11319
+public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 11357
 {
 	public SteamInventory steamInventory; 
 	private int[] craftableItems; 
@@ -3500,7 +3500,7 @@ public class PlayerBlueprints : EntityComponent<BasePlayer> // TypeDefIndex: 113
 
 }
 
-public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11320
+public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11358
 {
 	public static readonly Vector3 EyeOffset; 
 	public static readonly Vector3 DuckOffset; 
@@ -3592,7 +3592,7 @@ public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11320
 
 	private void DoInEyeCamera(Camera cam) { }
 
-	private void DoThirdPersonCamera(Camera cam) { }
+	public void DoThirdPersonCamera(Camera cam) { }
 
 	private void DoDeathCamera(Camera cam) { }
 
@@ -3628,7 +3628,7 @@ public class PlayerEyes : EntityComponent<BasePlayer> // TypeDefIndex: 11320
 
 }
 
-public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11321
+public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11359
 {
 	public InputState state; 
 	public bool hadInputBuffer; 
@@ -3710,7 +3710,7 @@ public class PlayerInput : EntityComponent<BasePlayer> // TypeDefIndex: 11321
 
 }
 
-public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // TypeDefIndex: 11322
+public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // TypeDefIndex: 11360
 {
 	public static float pm_uplimit; 
 	public static float pm_downlimit; 
@@ -4128,7 +4128,7 @@ public class PlayerModel : ListComponent<PlayerModel>, IOnParentDestroying // Ty
 
 }
 
-public enum PlayerModel.MountPoses // TypeDefIndex: 11323
+public enum PlayerModel.MountPoses // TypeDefIndex: 11361
 {
 	public int value__; 
 	public const PlayerModel.MountPoses Chair = 0;
@@ -4164,7 +4164,7 @@ public enum PlayerModel.MountPoses // TypeDefIndex: 11323
 
 }
 
-public enum PlayerModel.ReactionDir // TypeDefIndex: 11324
+public enum PlayerModel.ReactionDir // TypeDefIndex: 11362
 {
 	public int value__; 
 	public const PlayerModel.ReactionDir North = 0;
@@ -4174,7 +4174,7 @@ public enum PlayerModel.ReactionDir // TypeDefIndex: 11324
 
 }
 
-private sealed class PlayerModel.<>c // TypeDefIndex: 11325
+private sealed class PlayerModel.<>c // TypeDefIndex: 11363
 {
 	public static readonly PlayerModel.<>c <>9; 
 	public static Func<Wearable, bool> <>9__199_0; 
@@ -4194,7 +4194,7 @@ private sealed class PlayerModel.<>c // TypeDefIndex: 11325
 
 }
 
-private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11326
+private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11364
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -4223,7 +4223,7 @@ private sealed class PlayerModel.<FadeOutGestureLayer>d__244 : IEnumerator<objec
 
 }
 
-private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11327
+private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11365
 {
 	public string strName; 
 
@@ -4234,7 +4234,7 @@ private sealed class PlayerModel.<>c__DisplayClass256_0 // TypeDefIndex: 11327
 
 }
 
-private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11328
+private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11366
 {
 	public string strName; 
 
@@ -4245,7 +4245,7 @@ private sealed class PlayerModel.<>c__DisplayClass257_0 // TypeDefIndex: 11328
 
 }
 
-public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // TypeDefIndex: 11329
+public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // TypeDefIndex: 11367
 {
 	public PlayerModelCinematicList.PlayerModelCinematicAnimation[] Animations; 
 
@@ -4258,7 +4258,7 @@ public class PlayerModelCinematicList : PrefabAttribute, IClientComponent // Typ
 
 }
 
-public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefIndex: 11330
+public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefIndex: 11368
 {
 	public string StateName; 
 	public string ClipName; 
@@ -4266,7 +4266,7 @@ public struct PlayerModelCinematicList.PlayerModelCinematicAnimation // TypeDefI
 
 }
 
-public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 11331
+public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 11369
 {
 	private PlayerModel playerModel; 
 
@@ -4277,7 +4277,7 @@ public class PlayerModelReactionEnded : StateMachineBehaviour // TypeDefIndex: 1
 
 }
 
-public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11332
+public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11370
 {
 	public CanvasGroup canvasGroup; 
 	public Text text; 
@@ -4304,7 +4304,7 @@ public class PlayerNameTag : MonoBehaviour // TypeDefIndex: 11332
 
 }
 
-public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 11334
+public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 11372
 {
 	internal static byte[] readBuffer; 
 	internal static byte[] readBufferUncompressed; 
@@ -4335,7 +4335,7 @@ public class PlayerVoiceRecorder : EntityComponent<BasePlayer> // TypeDefIndex: 
 
 }
 
-public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 11335
+public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 11373
 {
 	public VoiceProcessor voiceProcessor; 
 	private float nextSpeechFakeChange; 
@@ -4369,7 +4369,7 @@ public class PlayerVoiceSpeaker : EntityComponent<BasePlayer> // TypeDefIndex: 1
 
 }
 
-public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11341
+public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11379
 {
 	public const float WaterLevelHead = 0,75;
 	public const float WaterLevelNeck = 0,65;
@@ -4508,7 +4508,7 @@ public class PlayerWalkMovement : BaseMovement // TypeDefIndex: 11341
 
 }
 
-public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11342
+public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11380
 {
 	public Buoyancy buoyancy; 
 	public const BaseEntity.Flags Flag_Buoyant = 16384;
@@ -4535,7 +4535,7 @@ public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11342
 
 }
 
-public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12427
+public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12465
 {
 	public string niceName; 
 	public int order; 
@@ -4549,7 +4549,7 @@ public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12427
 
 }
 
-public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12428
+public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12466
 {
 	public ulong skinOverride; 
 
@@ -4558,7 +4558,7 @@ public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDef
 
 }
 
-public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12485
+public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12525
 {
 
 	public override void Init(AIEventType eventType, BaseStateUI stateUI) { }
@@ -4571,7 +4571,7 @@ public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12485
 
 }
 
-public class Player : ConsoleSystem // TypeDefIndex: 13645
+public class Player : ConsoleSystem // TypeDefIndex: 13688
 {
 	[ServerVar] 
 	public static int tickrate_cl; 
@@ -4624,7 +4624,7 @@ public class Player : ConsoleSystem // TypeDefIndex: 13645
 
 }
 
-public class PlayerCull : ConsoleSystem // TypeDefIndex: 13646
+public class PlayerCull : ConsoleSystem // TypeDefIndex: 13689
 {
 	private static bool _enabled; 
 	[ClientVar] 
@@ -4654,7 +4654,7 @@ public class PlayerCull : ConsoleSystem // TypeDefIndex: 13646
 
 }
 
-public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13843
+public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13886
 {
 
 public enum PlayerMenuAnimation.Layers

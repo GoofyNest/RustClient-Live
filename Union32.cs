@@ -1,4 +1,4 @@
-public struct Union32 // TypeDefIndex: 4827
+public struct Union32 // TypeDefIndex: 4830
 {
 	public int i; 
 	public uint u; 

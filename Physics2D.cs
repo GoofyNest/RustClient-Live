@@ -1,4 +1,4 @@
-public class Physics2D // TypeDefIndex: 4080
+public class Physics2D // TypeDefIndex: 4083
 {
 	private static List<Rigidbody2D> m_LastDisabledRigidbody2D; 
 

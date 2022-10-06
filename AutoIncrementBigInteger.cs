@@ -1,4 +1,4 @@
-internal sealed class AutoIncrementBigInteger : AutoIncrementValue // TypeDefIndex: 4184
+internal sealed class AutoIncrementBigInteger : AutoIncrementValue // TypeDefIndex: 4187
 {
 	private BigInteger _current; 
 	private long _seed; 

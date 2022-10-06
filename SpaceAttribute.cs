@@ -1,4 +1,4 @@
-public class SpaceAttribute : PropertyAttribute // TypeDefIndex: 3480
+public class SpaceAttribute : PropertyAttribute // TypeDefIndex: 3481
 {
 	public readonly float height; 
 

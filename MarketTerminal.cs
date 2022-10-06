@@ -1,4 +1,4 @@
-public class MarketTerminal : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6397
+public class MarketTerminal : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6400
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class MarketTerminal : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6398
+public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6401
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -126,7 +126,7 @@ public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class MarketTerminal : StorageContainer // TypeDefIndex: 10080
+public class MarketTerminal : StorageContainer // TypeDefIndex: 10114
 {
 	private Option __menuOption_Menu_RequestOpenMarket; 
 	private ulong _currentlyDisplayedUserId; 
@@ -188,7 +188,7 @@ public class MarketTerminal : StorageContainer // TypeDefIndex: 10080
 
 }
 
-private sealed class MarketTerminal.<>c // TypeDefIndex: 10081
+private sealed class MarketTerminal.<>c // TypeDefIndex: 10115
 {
 	public static readonly MarketTerminal.<>c <>9; 
 	public static Func<Item, int> <>9__27_0; 

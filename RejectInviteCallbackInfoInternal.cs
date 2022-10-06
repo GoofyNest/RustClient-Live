@@ -1,4 +1,4 @@
-internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<RejectInviteCallbackInfo>, ISettable<RejectInviteCallbackInfo>, IDisposable // TypeDefIndex: 8495
+internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<RejectInviteCallbackInfo>, ISettable<RejectInviteCallbackInfo>, IDisposable // TypeDefIndex: 8529
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 
@@ -28,7 +28,7 @@ internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGetta
 
 }
 
-internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<RejectInviteCallbackInfo>, ISettable<RejectInviteCallbackInfo>, IDisposable // TypeDefIndex: 9217
+internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<RejectInviteCallbackInfo>, ISettable<RejectInviteCallbackInfo>, IDisposable // TypeDefIndex: 9251
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 
@@ -64,7 +64,7 @@ internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGetta
 
 }
 
-internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<RejectInviteCallbackInfo>, ISettable<RejectInviteCallbackInfo>, IDisposable // TypeDefIndex: 9366
+internal struct RejectInviteCallbackInfoInternal : ICallbackInfoInternal, IGettable<RejectInviteCallbackInfo>, ISettable<RejectInviteCallbackInfo>, IDisposable // TypeDefIndex: 9400
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

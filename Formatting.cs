@@ -6,7 +6,7 @@ public enum Formatting // TypeDefIndex: 1907
 
 }
 
-public enum Formatting // TypeDefIndex: 5871
+public enum Formatting // TypeDefIndex: 5874
 {
 	public int value__; 
 	public const Formatting None = 0;

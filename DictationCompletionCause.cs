@@ -1,4 +1,4 @@
-public enum DictationCompletionCause // TypeDefIndex: 3604
+public enum DictationCompletionCause // TypeDefIndex: 3606
 {
 	public int value__; 
 	public const DictationCompletionCause Complete = 0;

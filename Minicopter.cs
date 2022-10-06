@@ -1,4 +1,4 @@
-public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6348
+public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6351
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 634
 
 }
 
-public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 9962
+public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 9996
 {
 	[HeaderAttribute] 
 	public GameObjectRef fuelStoragePrefab; 
@@ -167,6 +167,10 @@ public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity 
 	public override bool MountMenuVisible(BasePlayer player) { }
 
 	protected override bool CanPushNow(BasePlayer pusher) { }
+
+	public override float InheritedVelocityScale() { }
+
+	public override bool InheritedVelocityDirection() { }
 
 	public override void GetMenuOptions(List<Option> list) { }
 

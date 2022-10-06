@@ -1,4 +1,4 @@
-public enum RenderBufferLoadAction // TypeDefIndex: 3808
+public enum RenderBufferLoadAction // TypeDefIndex: 3810
 {
 	public int value__; 
 	public const RenderBufferLoadAction Load = 0;

@@ -1,4 +1,4 @@
-public class ScrapTransportHelicopterWheelEffects : MonoBehaviour, IServerComponent // TypeDefIndex: 9966
+public class ScrapTransportHelicopterWheelEffects : MonoBehaviour, IServerComponent // TypeDefIndex: 10000
 {
 	public WheelCollider wheelCollider; 
 	public GameObjectRef impactEffect; 

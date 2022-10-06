@@ -1,4 +1,4 @@
-internal struct GameOverlayActivated_t : ICallbackData // TypeDefIndex: 5309
+internal struct GameOverlayActivated_t : ICallbackData // TypeDefIndex: 5312
 {
 	internal byte Active; 
 	public static int _datasize; 

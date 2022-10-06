@@ -1,4 +1,4 @@
-public enum SpriteMeshType // TypeDefIndex: 3572
+public enum SpriteMeshType // TypeDefIndex: 3574
 {
 	public int value__; 
 	public const SpriteMeshType FullRect = 0;

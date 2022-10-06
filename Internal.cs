@@ -20,7 +20,7 @@ internal struct Internal_DrawTextureArguments // TypeDefIndex: 3394
 
 }
 
-internal static class Internal_SubsystemInstances // TypeDefIndex: 3942
+internal static class Internal_SubsystemInstances // TypeDefIndex: 3945
 {
 	internal static List<ISubsystem> s_IntegratedSubsystemInstances; 
 	internal static List<ISubsystem> s_StandaloneSubsystemInstances; 
@@ -41,7 +41,7 @@ internal static class Internal_SubsystemInstances // TypeDefIndex: 3942
 
 }
 
-internal static class Internal_SubsystemDescriptors // TypeDefIndex: 3943
+internal static class Internal_SubsystemDescriptors // TypeDefIndex: 3946
 {
 	internal static List<ISubsystemDescriptorImpl> s_IntegratedSubsystemDescriptors; 
 	internal static List<ISubsystemDescriptor> s_StandaloneSubsystemDescriptors; 

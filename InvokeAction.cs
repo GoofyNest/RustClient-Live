@@ -1,4 +1,4 @@
-public struct InvokeAction : IEquatable<InvokeAction> // TypeDefIndex: 5569
+public struct InvokeAction : IEquatable<InvokeAction> // TypeDefIndex: 5572
 {
 	public Behaviour sender; 
 	public Action action; 

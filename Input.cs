@@ -1,4 +1,4 @@
-public class Input // TypeDefIndex: 4075
+public class Input // TypeDefIndex: 4078
 {
 	[NativeThrowsAttribute] 
 	public static bool anyKey { get; }
@@ -94,7 +94,7 @@ public class Input // TypeDefIndex: 4075
 
 }
 
-public static class Input // TypeDefIndex: 6668
+public static class Input // TypeDefIndex: 6836
 {
 
 public static class Input
@@ -147,7 +147,7 @@ public static class Input
 
 }
 
-public class Input.Button // TypeDefIndex: 6669
+public class Input.Button // TypeDefIndex: 6837
 {
 	public string Name; 
 	public Func<bool> TestFunction; 
@@ -170,7 +170,7 @@ public class Input.Button // TypeDefIndex: 6669
 
 }
 
-private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6670
+private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6838
 {
 	public string name; 
 
@@ -181,7 +181,7 @@ private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6670
 
 }
 
-private sealed class Input.<>c // TypeDefIndex: 6671
+private sealed class Input.<>c // TypeDefIndex: 6839
 {
 	public static readonly Input.<>c <>9; 
 	public static Func<Input.Button, bool> <>9__15_0; 
@@ -212,7 +212,7 @@ private sealed class Input.<>c // TypeDefIndex: 6671
 
 }
 
-private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6672
+private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6840
 {
 	public string bind; 
 
@@ -223,7 +223,7 @@ private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6672
 
 }
 
-private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6673
+private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6841
 {
 	public string bind; 
 
@@ -234,7 +234,7 @@ private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6673
 
 }
 
-private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6674
+private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6842
 {
 	public string bind; 
 
@@ -245,7 +245,7 @@ private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6674
 
 }
 
-public class Input : ConsoleSystem // TypeDefIndex: 13628
+public class Input : ConsoleSystem // TypeDefIndex: 13671
 {
 	[ClientVar] 
 	public static bool flipy; 

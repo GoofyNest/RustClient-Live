@@ -1,4 +1,4 @@
-public abstract class PlayableBehaviour : IPlayableBehaviour, ICloneable // TypeDefIndex: 3866
+public abstract class PlayableBehaviour : IPlayableBehaviour, ICloneable // TypeDefIndex: 3868
 {
 
 	public void .ctor() { }

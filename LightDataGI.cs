@@ -1,4 +1,4 @@
-public struct LightDataGI // TypeDefIndex: 3886
+public struct LightDataGI // TypeDefIndex: 3889
 {
 	public int instanceID; 
 	public LinearColor color; 

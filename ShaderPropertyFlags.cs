@@ -1,4 +1,4 @@
-public enum ShaderPropertyFlags // TypeDefIndex: 3858
+public enum ShaderPropertyFlags // TypeDefIndex: 3860
 {
 	public int value__; 
 	public const ShaderPropertyFlags None = 0;

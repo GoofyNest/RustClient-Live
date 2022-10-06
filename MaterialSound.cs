@@ -1,4 +1,4 @@
-public class MaterialSound : ScriptableObject // TypeDefIndex: 11872
+public class MaterialSound : ScriptableObject // TypeDefIndex: 11910
 {
 	public SoundDefinition DefaultSound; 
 	public MaterialSound.Entry[] Entries; 
@@ -8,7 +8,7 @@ public class MaterialSound : ScriptableObject // TypeDefIndex: 11872
 
 }
 
-public class MaterialSound.Entry // TypeDefIndex: 11873
+public class MaterialSound.Entry // TypeDefIndex: 11911
 {
 	public PhysicMaterial Material; 
 	public SoundDefinition Sound; 

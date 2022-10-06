@@ -1,4 +1,4 @@
-public class CapsuleCollider : Collider // TypeDefIndex: 3924
+public class CapsuleCollider : Collider // TypeDefIndex: 3927
 {
 	public Vector3 center { get; set; }
 	public float radius { get; set; }

@@ -1,4 +1,4 @@
-internal struct CopyStatByNameOptionsInternal : ISettable<CopyStatByNameOptions>, IDisposable // TypeDefIndex: 8385
+internal struct CopyStatByNameOptionsInternal : ISettable<CopyStatByNameOptions>, IDisposable // TypeDefIndex: 8419
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

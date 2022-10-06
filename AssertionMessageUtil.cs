@@ -1,4 +1,4 @@
-internal class AssertionMessageUtil // TypeDefIndex: 3906
+internal class AssertionMessageUtil // TypeDefIndex: 3909
 {
 
 	public static string GetMessage(string failureMessage) { }

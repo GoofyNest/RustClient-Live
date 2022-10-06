@@ -1,4 +1,4 @@
-public enum FontStyle // TypeDefIndex: 3949
+public enum FontStyle // TypeDefIndex: 3952
 {
 
 public enum FontStyle

@@ -1,4 +1,4 @@
-public static class FrameTypeExtensions // TypeDefIndex: 6908
+public static class FrameTypeExtensions // TypeDefIndex: 6940
 {
 
 	[ExtensionAttribute] 

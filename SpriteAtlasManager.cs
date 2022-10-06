@@ -1,4 +1,4 @@
-public class SpriteAtlasManager // TypeDefIndex: 3578
+public class SpriteAtlasManager // TypeDefIndex: 3580
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

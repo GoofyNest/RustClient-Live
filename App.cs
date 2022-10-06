@@ -232,25 +232,26 @@ internal class AppDomainLevelActivator : IActivator // TypeDefIndex: 1203
 
 public class Application // TypeDefIndex: 3354
 {
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Application.LowMemoryCallback lowMemory; 
 	private static Application.LogCallback s_LogCallbackHandler; 
 	private static Application.LogCallback s_LogCallbackHandlerThreaded; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static Action<bool> focusChanged; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private static Action<string> deepLinkActivated; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Func<bool> wantsToQuit; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Action quitting; 
 
 	public static bool isPlaying { get; }
+	public static bool isFocused { get; }
 	public static string dataPath { get; }
 	public static string streamingAssetsPath { get; }
 	[SecurityCriticalAttribute] 
@@ -280,6 +281,9 @@ public class Application // TypeDefIndex: 3354
 
 	[FreeFunctionAttribute] 
 	public static bool get_isPlaying() { }
+
+	[FreeFunctionAttribute] 
+	public static bool get_isFocused() { }
 
 	[FreeFunctionAttribute] 
 	public static string get_dataPath() { }
@@ -391,7 +395,7 @@ public sealed class Application.LogCallback : MulticastDelegate // TypeDefIndex:
 
 }
 
-public struct AppId // TypeDefIndex: 5236
+public struct AppId // TypeDefIndex: 5239
 {
 	public uint Value; 
 
@@ -406,7 +410,7 @@ public struct AppId // TypeDefIndex: 5236
 
 }
 
-internal struct AppResumingFromSuspend_t : ICallbackData // TypeDefIndex: 5334
+internal struct AppResumingFromSuspend_t : ICallbackData // TypeDefIndex: 5337
 {
 	public static int _datasize; 
 
@@ -422,7 +426,7 @@ internal struct AppResumingFromSuspend_t : ICallbackData // TypeDefIndex: 5334
 
 }
 
-internal struct AppProofOfPurchaseKeyResponse_t : ICallbackData // TypeDefIndex: 5402
+internal struct AppProofOfPurchaseKeyResponse_t : ICallbackData // TypeDefIndex: 5405
 {
 	internal Result Result; 
 	internal uint AppID; 
@@ -442,7 +446,7 @@ internal struct AppProofOfPurchaseKeyResponse_t : ICallbackData // TypeDefIndex:
 
 }
 
-public static class Application // TypeDefIndex: 6177
+public static class Application // TypeDefIndex: 6180
 {
 	private static MonoBehaviour _controller; 
 	public static Manifest Manifest; 
@@ -466,7 +470,7 @@ public static class Application // TypeDefIndex: 6177
 
 }
 
-internal class ApplicationControllerMonobehaviour : MonoBehaviour // TypeDefIndex: 6218
+internal class ApplicationControllerMonobehaviour : MonoBehaviour // TypeDefIndex: 6221
 {
 
 	public void OnApplicationQuit() { }
@@ -477,7 +481,7 @@ internal class ApplicationControllerMonobehaviour : MonoBehaviour // TypeDefInde
 
 }
 
-public struct AppInfo // TypeDefIndex: 6241
+public struct AppInfo // TypeDefIndex: 6244
 {
 	[CompilerGeneratedAttribute] 
 	private string <Image>k__BackingField; 
@@ -547,7 +551,7 @@ public struct AppInfo // TypeDefIndex: 6241
 
 }
 
-public class Approval : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6477
+public class Approval : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6481
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -620,7 +624,7 @@ public class Approval : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6477
 
 }
 
-public class AppRequest : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6512
+public class AppRequest : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6516
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -696,7 +700,7 @@ public class AppRequest : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 651
 
 }
 
-public class AppMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6513
+public class AppMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6517
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -758,7 +762,7 @@ public class AppMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 651
 
 }
 
-public class AppResponse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6514
+public class AppResponse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6518
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -829,7 +833,7 @@ public class AppResponse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class AppBroadcast : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6515
+public class AppBroadcast : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6519
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -892,7 +896,7 @@ public class AppBroadcast : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class AppEmpty : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6516
+public class AppEmpty : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6520
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -952,7 +956,7 @@ public class AppEmpty : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6516
 
 }
 
-public class AppSendMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6517
+public class AppSendMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6521
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1013,7 +1017,7 @@ public class AppSendMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppSetEntityValue : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6518
+public class AppSetEntityValue : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1074,7 +1078,7 @@ public class AppSetEntityValue : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class AppPromoteToLeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6519
+public class AppPromoteToLeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6523
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1135,7 +1139,7 @@ public class AppPromoteToLeader : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class AppSuccess : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6520
+public class AppSuccess : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6524
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1195,7 +1199,7 @@ public class AppSuccess : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 652
 
 }
 
-public class AppError : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6521
+public class AppError : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6525
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1256,7 +1260,7 @@ public class AppError : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6521
 
 }
 
-public class AppFlag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
+public class AppFlag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6526
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1317,7 +1321,7 @@ public class AppFlag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6522
 
 }
 
-public class AppInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6523
+public class AppInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6527
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1389,7 +1393,7 @@ public class AppInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6523
 
 }
 
-public class AppTime : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6524
+public class AppTime : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6528
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1454,7 +1458,7 @@ public class AppTime : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6524
 
 }
 
-public class AppMap : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6525
+public class AppMap : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6529
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1520,7 +1524,7 @@ public class AppMap : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6525
 
 }
 
-public class AppMap.Monument : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6526
+public class AppMap.Monument : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6530
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1583,7 +1587,7 @@ public class AppMap.Monument : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class AppEntityInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6527
+public class AppEntityInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6531
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1645,7 +1649,7 @@ public class AppEntityInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class AppEntityPayload : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6528
+public class AppEntityPayload : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6532
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1710,7 +1714,7 @@ public class AppEntityPayload : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class AppEntityPayload.Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6529
+public class AppEntityPayload.Item : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6533
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1773,7 +1777,7 @@ public class AppEntityPayload.Item : IDisposable, Pool.IPooled, IProto // TypeDe
 
 }
 
-public class AppTeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6530
+public class AppTeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6534
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1837,7 +1841,7 @@ public class AppTeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class AppTeamInfo.Member : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6531
+public class AppTeamInfo.Member : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6535
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1905,7 +1909,7 @@ public class AppTeamInfo.Member : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public class AppTeamInfo.Note : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6532
+public class AppTeamInfo.Note : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6536
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -1968,7 +1972,7 @@ public class AppTeamInfo.Note : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class AppChatMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6533
+public class AppChatMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6537
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2033,7 +2037,7 @@ public class AppChatMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppTeamChat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6534
+public class AppTeamChat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6538
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2094,7 +2098,7 @@ public class AppTeamChat : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 65
 
 }
 
-public class AppMarker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6535
+public class AppMarker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6539
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2167,7 +2171,7 @@ public class AppMarker : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6535
 
 }
 
-public class AppMarker.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6536
+public class AppMarker.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6540
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2236,7 +2240,7 @@ public class AppMarker.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public class AppMapMarkers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6537
+public class AppMapMarkers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6541
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2297,7 +2301,7 @@ public class AppMapMarkers : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class AppTeamChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6538
+public class AppTeamChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6542
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2359,7 +2363,7 @@ public class AppTeamChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppTeamMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6539
+public class AppTeamMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6543
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2420,7 +2424,7 @@ public class AppTeamMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class AppEntityChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6540
+public class AppEntityChanged : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6544
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -2482,7 +2486,7 @@ public class AppEntityChanged : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public enum AppEntityType // TypeDefIndex: 6558
+public enum AppEntityType // TypeDefIndex: 6562
 {
 	public int value__; 
 	public const AppEntityType Switch = 1;
@@ -2491,7 +2495,7 @@ public enum AppEntityType // TypeDefIndex: 6558
 
 }
 
-public enum AppMarkerType // TypeDefIndex: 6559
+public enum AppMarkerType // TypeDefIndex: 6563
 {
 	public int value__; 
 	public const AppMarkerType Undefined = 0;
@@ -2506,7 +2510,7 @@ public enum AppMarkerType // TypeDefIndex: 6559
 
 }
 
-public static class Application // TypeDefIndex: 6614
+public static class Application // TypeDefIndex: 6618
 {
 	public static bool isQuitting; 
 	public static bool isLoading; 
@@ -2528,7 +2532,7 @@ public static class Application // TypeDefIndex: 6614
 
 }
 
-public enum AppCategory // TypeDefIndex: 7645
+public enum AppCategory // TypeDefIndex: 7679
 {
 	public int value__; 
 	public const AppCategory Invalid = 0;
@@ -2537,7 +2541,7 @@ public enum AppCategory // TypeDefIndex: 7645
 
 }
 
-public static class Approved // TypeDefIndex: 7695
+public static class Approved // TypeDefIndex: 7729
 {
 	private static Dictionary<ulong, ApprovedSkinInfo> _all; 
 
@@ -3112,6 +3116,16 @@ public static class Approved // TypeDefIndex: 7695
 
 	private static void Add_2022() { }
 
+	private static void Add_October_04_2022_STREAMERSKINS() { }
+
+	private static void Add_September_28_2022() { }
+
+	private static void Add_September_22_2022() { }
+
+	private static void Add_September_15_2022() { }
+
+	private static void Add_September_08_2022() { }
+
 	private static void Add_September_01_2022() { }
 
 	private static void Add_August_25_2022() { }
@@ -3208,7 +3222,7 @@ public static class Approved // TypeDefIndex: 7695
 
 }
 
-public class ApprovedSkinInfo // TypeDefIndex: 7711
+public class ApprovedSkinInfo // TypeDefIndex: 7745
 {
 	[CompilerGeneratedAttribute] 
 	private ulong <InventoryId>k__BackingField; 
@@ -3330,7 +3344,7 @@ public class ApprovedSkinInfo // TypeDefIndex: 7711
 
 }
 
-private sealed class ApprovedSkinInfo.<>c__DisplayClass44_0 // TypeDefIndex: 7712
+private sealed class ApprovedSkinInfo.<>c__DisplayClass44_0 // TypeDefIndex: 7746
 {
 	public string ItemName; 
 
@@ -3341,7 +3355,7 @@ private sealed class ApprovedSkinInfo.<>c__DisplayClass44_0 // TypeDefIndex: 771
 
 }
 
-public enum ApplicationStatus // TypeDefIndex: 9818
+public enum ApplicationStatus // TypeDefIndex: 9852
 {
 	public int value__; 
 	public const ApplicationStatus BackgroundConstrained = 0;
@@ -3351,7 +3365,7 @@ public enum ApplicationStatus // TypeDefIndex: 9818
 
 }
 
-public abstract class AppIOEntity : IOEntity // TypeDefIndex: 9976
+public abstract class AppIOEntity : IOEntity // TypeDefIndex: 10010
 {
 	private Option __menuOption_Menu_Pair; 
 
@@ -3376,7 +3390,7 @@ public abstract class AppIOEntity : IOEntity // TypeDefIndex: 9976
 
 }
 
-public class ApplyTerrainAnchors : MonoBehaviour // TypeDefIndex: 12051
+public class ApplyTerrainAnchors : MonoBehaviour // TypeDefIndex: 12089
 {
 
 	protected void Awake() { }
@@ -3385,7 +3399,7 @@ public class ApplyTerrainAnchors : MonoBehaviour // TypeDefIndex: 12051
 
 }
 
-public class ApplyTerrainModifiers : MonoBehaviour // TypeDefIndex: 12252
+public class ApplyTerrainModifiers : MonoBehaviour // TypeDefIndex: 12290
 {
 
 	protected void Awake() { }
@@ -3394,7 +3408,7 @@ public class ApplyTerrainModifiers : MonoBehaviour // TypeDefIndex: 12252
 
 }
 
-public class ApplyTweakUIChanges : MonoBehaviour // TypeDefIndex: 12827
+public class ApplyTweakUIChanges : MonoBehaviour // TypeDefIndex: 12868
 {
 	public Button ApplyButton; 
 	public TweakUIBase[] Options; 
@@ -3412,7 +3426,7 @@ public class ApplyTweakUIChanges : MonoBehaviour // TypeDefIndex: 12827
 
 }
 
-public class App : ConsoleSystem // TypeDefIndex: 13574
+public class App : ConsoleSystem // TypeDefIndex: 13617
 {
 	[ServerVar] 
 	public static string listenip; 

@@ -1,4 +1,4 @@
-public enum TypeAffinity // TypeDefIndex: 4872
+public enum TypeAffinity // TypeDefIndex: 4875
 {
 	public int value__; 
 	public const TypeAffinity Uninitialized = 0;

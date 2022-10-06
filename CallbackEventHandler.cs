@@ -1,4 +1,4 @@
-public abstract class CallbackEventHandler : IEventHandler // TypeDefIndex: 4650
+public abstract class CallbackEventHandler : IEventHandler // TypeDefIndex: 4653
 {
 	private EventCallbackRegistry m_CallbackRegistry; 
 

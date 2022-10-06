@@ -23,7 +23,7 @@ public class DefaultValueAttribute : Attribute // TypeDefIndex: 2687
 
 }
 
-public class DefaultValueAttribute : Attribute // TypeDefIndex: 3800
+public class DefaultValueAttribute : Attribute // TypeDefIndex: 3802
 {
 	private object DefaultValue; 
 

@@ -1,4 +1,4 @@
-internal struct ElementWriter // TypeDefIndex: 5839
+internal struct ElementWriter // TypeDefIndex: 5842
 {
 	private XmlWriter writer; 
 	private NamespaceResolver resolver; 

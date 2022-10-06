@@ -1,4 +1,4 @@
-public class GUIUtility // TypeDefIndex: 4051
+public class GUIUtility // TypeDefIndex: 4054
 {
 	[VisibleToOtherModulesAttribute] 
 	internal static int s_SkinMode; 

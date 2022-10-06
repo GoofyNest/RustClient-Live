@@ -1,4 +1,4 @@
-public class VisualStorageContainer : LootContainer // TypeDefIndex: 11287
+public class VisualStorageContainer : LootContainer // TypeDefIndex: 11325
 {
 	public VisualStorageContainerNode[] displayNodes; 
 	public VisualStorageContainer.DisplayModel[] displayModels; 
@@ -18,7 +18,7 @@ public class VisualStorageContainer : LootContainer // TypeDefIndex: 11287
 
 }
 
-public class VisualStorageContainer.DisplayModel // TypeDefIndex: 11288
+public class VisualStorageContainer.DisplayModel // TypeDefIndex: 11326
 {
 	public GameObject displayModel; 
 	public ItemDefinition def; 

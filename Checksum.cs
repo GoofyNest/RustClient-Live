@@ -1,4 +1,4 @@
-public class Checksum // TypeDefIndex: 4816
+public class Checksum // TypeDefIndex: 4819
 {
 	private List<byte> values; 
 

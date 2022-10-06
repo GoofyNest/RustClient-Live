@@ -1,4 +1,4 @@
-public sealed class UnityAction : MulticastDelegate // TypeDefIndex: 3639
+public sealed class UnityAction : MulticastDelegate // TypeDefIndex: 3641
 {
 
 	public void .ctor(object object, IntPtr method) { }

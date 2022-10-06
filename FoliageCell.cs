@@ -1,4 +1,4 @@
-public class FoliageCell // TypeDefIndex: 11541
+public class FoliageCell // TypeDefIndex: 11579
 {
 	private static readonly ListHashSet<FoliagePlacement> EmptyPlacements; 
 	public Vector3 position; 
@@ -43,7 +43,7 @@ public class FoliageCell // TypeDefIndex: 11541
 
 }
 
-private sealed class FoliageCell.<InitAsync>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11542
+private sealed class FoliageCell.<InitAsync>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11580
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -73,7 +73,7 @@ private sealed class FoliageCell.<InitAsync>d__11 : IEnumerator<object>, IEnumer
 
 }
 
-private sealed class FoliageCell.<RefreshAsync>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11543
+private sealed class FoliageCell.<RefreshAsync>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11581
 {
 	private int <>1__state; 
 	private object <>2__current; 

@@ -1,4 +1,4 @@
-internal class ISteamVideo : SteamInterface // TypeDefIndex: 5135
+internal class ISteamVideo : SteamInterface // TypeDefIndex: 5138
 {
 
 	internal void .ctor(bool IsGameServer) { }

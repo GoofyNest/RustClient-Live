@@ -1,4 +1,4 @@
-public sealed class SessionSearch : Handle // TypeDefIndex: 8539
+public sealed class SessionSearch : Handle // TypeDefIndex: 8573
 {
 	public const int SessionsearchCopysearchresultbyindexApiLatest = 1;
 	public const int SessionsearchFindApiLatest = 2;

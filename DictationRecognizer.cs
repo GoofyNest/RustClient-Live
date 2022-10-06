@@ -1,8 +1,8 @@
-public sealed class DictationRecognizer // TypeDefIndex: 3596
+public sealed class DictationRecognizer // TypeDefIndex: 3598
 {
 	private IntPtr m_Recognizer; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private DictationRecognizer.DictationHypothesisDelegate DictationHypothesis; 
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -10,8 +10,8 @@ public sealed class DictationRecognizer // TypeDefIndex: 3596
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
 	private DictationRecognizer.DictationCompletedDelegate DictationComplete; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private DictationRecognizer.DictationErrorHandler DictationError; 
 
 
@@ -29,7 +29,7 @@ public sealed class DictationRecognizer // TypeDefIndex: 3596
 
 }
 
-public sealed class DictationRecognizer.DictationHypothesisDelegate : MulticastDelegate // TypeDefIndex: 3597
+public sealed class DictationRecognizer.DictationHypothesisDelegate : MulticastDelegate // TypeDefIndex: 3599
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -42,7 +42,7 @@ public sealed class DictationRecognizer.DictationHypothesisDelegate : MulticastD
 
 }
 
-public sealed class DictationRecognizer.DictationResultDelegate : MulticastDelegate // TypeDefIndex: 3598
+public sealed class DictationRecognizer.DictationResultDelegate : MulticastDelegate // TypeDefIndex: 3600
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -55,7 +55,7 @@ public sealed class DictationRecognizer.DictationResultDelegate : MulticastDeleg
 
 }
 
-public sealed class DictationRecognizer.DictationCompletedDelegate : MulticastDelegate // TypeDefIndex: 3599
+public sealed class DictationRecognizer.DictationCompletedDelegate : MulticastDelegate // TypeDefIndex: 3601
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -68,7 +68,7 @@ public sealed class DictationRecognizer.DictationCompletedDelegate : MulticastDe
 
 }
 
-public sealed class DictationRecognizer.DictationErrorHandler : MulticastDelegate // TypeDefIndex: 3600
+public sealed class DictationRecognizer.DictationErrorHandler : MulticastDelegate // TypeDefIndex: 3602
 {
 
 	public void .ctor(object object, IntPtr method) { }

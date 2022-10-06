@@ -1,4 +1,4 @@
-public enum LoadOptions // TypeDefIndex: 5842
+public enum LoadOptions // TypeDefIndex: 5845
 {
 	public int value__; 
 	public const LoadOptions None = 0;

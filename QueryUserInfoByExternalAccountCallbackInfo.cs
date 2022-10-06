@@ -1,4 +1,4 @@
-public struct QueryUserInfoByExternalAccountCallbackInfo : ICallbackInfo // TypeDefIndex: 8275
+public struct QueryUserInfoByExternalAccountCallbackInfo : ICallbackInfo // TypeDefIndex: 8309
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

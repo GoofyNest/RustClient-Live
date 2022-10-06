@@ -1,4 +1,4 @@
-public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10070
+public class HumanNPC : NPCPlayer, IAISenses, IAIAttack // TypeDefIndex: 10104
 {
 	private Option __menuOption_MenuDesignAI; 
 	[HeaderAttribute] 

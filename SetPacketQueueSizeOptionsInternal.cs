@@ -1,4 +1,4 @@
-internal struct SetPacketQueueSizeOptionsInternal : ISettable<SetPacketQueueSizeOptions>, IDisposable // TypeDefIndex: 8958
+internal struct SetPacketQueueSizeOptionsInternal : ISettable<SetPacketQueueSizeOptions>, IDisposable // TypeDefIndex: 8992
 {
 	private int m_ApiVersion; 
 	private ulong m_IncomingPacketQueueMaxSizeBytes; 

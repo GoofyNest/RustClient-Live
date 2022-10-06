@@ -40,8 +40,8 @@ public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 	[FreeFunctionAttribute] 
 	private void SetKeys(Keyframe[] keys) { }
 
-	[NativeThrowsAttribute] 
 	[FreeFunctionAttribute] 
+	[NativeThrowsAttribute] 
 	private Keyframe GetKey(int index) { }
 
 	[FreeFunctionAttribute] 
@@ -76,7 +76,7 @@ public class AnimationCurve : IEquatable<AnimationCurve> // TypeDefIndex: 3353
 
 }
 
-public sealed class AnimationClip : Motion // TypeDefIndex: 4479
+public sealed class AnimationClip : Motion // TypeDefIndex: 4482
 {
 	[NativePropertyAttribute] 
 	public float length { get; }
@@ -91,7 +91,7 @@ public sealed class AnimationClip : Motion // TypeDefIndex: 4479
 
 }
 
-internal enum AnimationEventSource // TypeDefIndex: 4496
+internal enum AnimationEventSource // TypeDefIndex: 4499
 {
 	public int value__; 
 	public const AnimationEventSource NoSource = 0;
@@ -100,7 +100,7 @@ internal enum AnimationEventSource // TypeDefIndex: 4496
 
 }
 
-public sealed class AnimationEvent // TypeDefIndex: 4497
+public sealed class AnimationEvent // TypeDefIndex: 4500
 {
 	internal float m_Time; 
 	internal string m_FunctionName; 
@@ -134,7 +134,7 @@ public sealed class AnimationEvent // TypeDefIndex: 4497
 
 }
 
-public sealed class Animation : Behaviour, IEnumerable // TypeDefIndex: 4499
+public sealed class Animation : Behaviour, IEnumerable // TypeDefIndex: 4502
 {
 	public bool isPlaying { get; }
 	public AnimationState Item { get; }
@@ -177,7 +177,7 @@ public sealed class Animation : Behaviour, IEnumerable // TypeDefIndex: 4499
 
 }
 
-private sealed class Animation.Enumerator : IEnumerator // TypeDefIndex: 4500
+private sealed class Animation.Enumerator : IEnumerator // TypeDefIndex: 4503
 {
 	private Animation m_Outer; 
 	private int m_CurrentIndex; 
@@ -195,7 +195,7 @@ private sealed class Animation.Enumerator : IEnumerator // TypeDefIndex: 4500
 
 }
 
-public sealed class AnimationState : TrackedReference // TypeDefIndex: 4501
+public sealed class AnimationState : TrackedReference // TypeDefIndex: 4504
 {
 	public float time { set; }
 	public float speed { get; set; }
@@ -218,7 +218,7 @@ public sealed class AnimationState : TrackedReference // TypeDefIndex: 4501
 
 }
 
-public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable> // TypeDefIndex: 4503
+public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable> // TypeDefIndex: 4506
 {
 
 [NativeHeaderAttribute] 
@@ -235,13 +235,13 @@ public struct AnimationClipPlayable : IEquatable<AnimationClipPlayable>
 
 }
 
-public struct AnimationHumanStream // TypeDefIndex: 4504
+public struct AnimationHumanStream // TypeDefIndex: 4507
 {
 	private IntPtr stream; 
 
 }
 
-public struct AnimationLayerMixerPlayable : IEquatable<AnimationLayerMixerPlayable> // TypeDefIndex: 4505
+public struct AnimationLayerMixerPlayable : IEquatable<AnimationLayerMixerPlayable> // TypeDefIndex: 4508
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationLayerMixerPlayable m_NullPlayable; 
@@ -257,7 +257,7 @@ public struct AnimationLayerMixerPlayable : IEquatable<AnimationLayerMixerPlayab
 
 }
 
-public struct AnimationMixerPlayable : IEquatable<AnimationMixerPlayable> // TypeDefIndex: 4506
+public struct AnimationMixerPlayable : IEquatable<AnimationMixerPlayable> // TypeDefIndex: 4509
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationMixerPlayable m_NullPlayable; 
@@ -273,7 +273,7 @@ public struct AnimationMixerPlayable : IEquatable<AnimationMixerPlayable> // Typ
 
 }
 
-internal struct AnimationMotionXToDeltaPlayable : IEquatable<AnimationMotionXToDeltaPlayable> // TypeDefIndex: 4507
+internal struct AnimationMotionXToDeltaPlayable : IEquatable<AnimationMotionXToDeltaPlayable> // TypeDefIndex: 4510
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationMotionXToDeltaPlayable m_NullPlayable; 
@@ -289,7 +289,7 @@ internal struct AnimationMotionXToDeltaPlayable : IEquatable<AnimationMotionXToD
 
 }
 
-internal struct AnimationOffsetPlayable : IEquatable<AnimationOffsetPlayable> // TypeDefIndex: 4508
+internal struct AnimationOffsetPlayable : IEquatable<AnimationOffsetPlayable> // TypeDefIndex: 4511
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationOffsetPlayable m_NullPlayable; 
@@ -305,13 +305,13 @@ internal struct AnimationOffsetPlayable : IEquatable<AnimationOffsetPlayable> //
 
 }
 
-public struct AnimationPlayableOutput // TypeDefIndex: 4509
+public struct AnimationPlayableOutput // TypeDefIndex: 4512
 {
 	private PlayableOutputHandle m_Handle; 
 
 }
 
-internal struct AnimationPosePlayable : IEquatable<AnimationPosePlayable> // TypeDefIndex: 4510
+internal struct AnimationPosePlayable : IEquatable<AnimationPosePlayable> // TypeDefIndex: 4513
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationPosePlayable m_NullPlayable; 
@@ -327,7 +327,7 @@ internal struct AnimationPosePlayable : IEquatable<AnimationPosePlayable> // Typ
 
 }
 
-internal struct AnimationRemoveScalePlayable : IEquatable<AnimationRemoveScalePlayable> // TypeDefIndex: 4511
+internal struct AnimationRemoveScalePlayable : IEquatable<AnimationRemoveScalePlayable> // TypeDefIndex: 4514
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationRemoveScalePlayable m_NullPlayable; 
@@ -343,7 +343,7 @@ internal struct AnimationRemoveScalePlayable : IEquatable<AnimationRemoveScalePl
 
 }
 
-public struct AnimationScriptPlayable : IEquatable<AnimationScriptPlayable> // TypeDefIndex: 4512
+public struct AnimationScriptPlayable : IEquatable<AnimationScriptPlayable> // TypeDefIndex: 4515
 {
 	private PlayableHandle m_Handle; 
 	private static readonly AnimationScriptPlayable m_NullPlayable; 
@@ -359,7 +359,7 @@ public struct AnimationScriptPlayable : IEquatable<AnimationScriptPlayable> // T
 
 }
 
-public struct AnimationStream // TypeDefIndex: 4513
+public struct AnimationStream // TypeDefIndex: 4516
 {
 	private uint m_AnimatorBindingsVersion; 
 	private IntPtr constant; 
@@ -371,7 +371,7 @@ public struct AnimationStream // TypeDefIndex: 4513
 
 }
 
-public class AnimationTriggers // TypeDefIndex: 4905
+public class AnimationTriggers // TypeDefIndex: 4908
 {
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=104
@@ -434,7 +434,7 @@ public class AnimationTriggers
 
 }
 
-public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10455
+public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10491
 {
 	public Animator animator; 
 
@@ -447,7 +447,7 @@ public class AnimationFlagHandler : MonoBehaviour // TypeDefIndex: 10455
 
 }
 
-public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10793
+public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10829
 {
 	public GameObject targetObject; 
 
@@ -458,7 +458,7 @@ public class AnimationEventForward : MonoBehaviour // TypeDefIndex: 10793
 
 }
 
-public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 10997
+public class AnimationEvents : BaseMonoBehaviour // TypeDefIndex: 11035
 {
 	public Transform rootObject; 
 	public HeldEntity targetEntity; 

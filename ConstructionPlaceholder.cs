@@ -1,4 +1,4 @@
-public class ConstructionPlaceholder : PrefabAttribute, IPrefabPreProcess // TypeDefIndex: 10730
+public class ConstructionPlaceholder : PrefabAttribute, IPrefabPreProcess // TypeDefIndex: 10766
 {
 	public Mesh mesh; 
 	public Material material; 

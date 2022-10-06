@@ -1,4 +1,4 @@
-internal class ScanFilter : PathFilter // TypeDefIndex: 6098
+internal class ScanFilter : PathFilter // TypeDefIndex: 6101
 {
 
 [PreserveAttribute] 

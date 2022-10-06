@@ -1,4 +1,4 @@
-internal sealed class OnRequestPermissionsCallbackInternal : MulticastDelegate // TypeDefIndex: 9301
+internal sealed class OnRequestPermissionsCallbackInternal : MulticastDelegate // TypeDefIndex: 9335
 {
 
 	public void .ctor(object object, IntPtr method) { }

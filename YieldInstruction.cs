@@ -1,4 +1,4 @@
-public class YieldInstruction // TypeDefIndex: 3543
+public class YieldInstruction // TypeDefIndex: 3545
 {
 
 	public void .ctor() { }

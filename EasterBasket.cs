@@ -1,4 +1,4 @@
-public class EasterBasket : AttackEntity // TypeDefIndex: 10239
+public class EasterBasket : AttackEntity // TypeDefIndex: 10274
 {
 	public GameObjectRef eggProjectile; 
 	public ItemDefinition ammoType; 
@@ -10,7 +10,7 @@ public class EasterBasket : AttackEntity // TypeDefIndex: 10239
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
 
-	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player, Vector3 direction) { }
 
 	public Item GetAmmo() { }
 

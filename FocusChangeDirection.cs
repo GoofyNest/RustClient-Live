@@ -1,4 +1,4 @@
-public class FocusChangeDirection // TypeDefIndex: 4587
+public class FocusChangeDirection // TypeDefIndex: 4590
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

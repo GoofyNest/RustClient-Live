@@ -1,4 +1,4 @@
-public struct PhraseRecognizedEventArgs // TypeDefIndex: 3606
+public struct PhraseRecognizedEventArgs // TypeDefIndex: 3608
 {
 	public readonly ConfidenceLevel confidence; 
 	public readonly SemanticMeaning[] semanticMeanings; 

@@ -1,4 +1,4 @@
-public enum RigidbodyInterpolation // TypeDefIndex: 3913
+public enum RigidbodyInterpolation // TypeDefIndex: 3916
 {
 	public int value__; 
 	public const RigidbodyInterpolation None = 0;

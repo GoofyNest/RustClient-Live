@@ -1,4 +1,4 @@
-public enum UserControllerType // TypeDefIndex: 9007
+public enum UserControllerType // TypeDefIndex: 9041
 {
 	public int value__; 
 	public const UserControllerType Unknown = 0;

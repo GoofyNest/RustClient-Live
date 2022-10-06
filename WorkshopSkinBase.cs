@@ -1,4 +1,4 @@
-public class WorkshopSkinBase : WorkshopBase // TypeDefIndex: 7693
+public class WorkshopSkinBase : WorkshopBase // TypeDefIndex: 7727
 {
 	public static string[] itemName; 
 	[HeaderAttribute] 
@@ -16,7 +16,7 @@ public class WorkshopSkinBase : WorkshopBase // TypeDefIndex: 7693
 
 }
 
-public enum WorkshopSkinBase.SkinType // TypeDefIndex: 7694
+public enum WorkshopSkinBase.SkinType // TypeDefIndex: 7728
 {
 	public int value__; 
 	public const WorkshopSkinBase.SkinType TShirt = 0;

@@ -1,4 +1,4 @@
-internal struct UpdateSessionOptionsInternal : ISettable<UpdateSessionOptions>, IDisposable // TypeDefIndex: 8574
+internal struct UpdateSessionOptionsInternal : ISettable<UpdateSessionOptions>, IDisposable // TypeDefIndex: 8608
 {
 	private int m_ApiVersion; 
 	private IntPtr m_SessionModificationHandle; 

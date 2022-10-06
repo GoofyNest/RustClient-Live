@@ -1,4 +1,4 @@
-internal enum DispatchMode // TypeDefIndex: 4581
+internal enum DispatchMode // TypeDefIndex: 4584
 {
 	public int value__; 
 	public const DispatchMode Default = 1;

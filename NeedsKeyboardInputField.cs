@@ -1,4 +1,4 @@
-public class NeedsKeyboardInputField : NeedsKeyboard // TypeDefIndex: 7988
+public class NeedsKeyboardInputField : NeedsKeyboard // TypeDefIndex: 8022
 {
 	private InputField TargetInputField; 
 	private TMP_InputField TargetTmProInputField; 

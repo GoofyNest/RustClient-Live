@@ -1,4 +1,4 @@
-public sealed class Coroutine : YieldInstruction // TypeDefIndex: 3509
+public sealed class Coroutine : YieldInstruction // TypeDefIndex: 3511
 {
 	internal IntPtr m_Ptr; 
 

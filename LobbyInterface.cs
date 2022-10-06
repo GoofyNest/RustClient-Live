@@ -1,4 +1,4 @@
-public sealed class LobbyInterface : Handle // TypeDefIndex: 9109
+public sealed class LobbyInterface : Handle // TypeDefIndex: 9143
 {
 	public const int AddnotifyjoinlobbyacceptedApiLatest = 1;
 	public const int AddnotifylobbyinviteacceptedApiLatest = 1;

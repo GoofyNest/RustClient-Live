@@ -1,4 +1,4 @@
-internal struct OnIncomingPacketQueueFullInfoInternal : ICallbackInfoInternal, IGettable<OnIncomingPacketQueueFullInfo>, ISettable<OnIncomingPacketQueueFullInfo>, IDisposable // TypeDefIndex: 8929
+internal struct OnIncomingPacketQueueFullInfoInternal : ICallbackInfoInternal, IGettable<OnIncomingPacketQueueFullInfo>, ISettable<OnIncomingPacketQueueFullInfo>, IDisposable // TypeDefIndex: 8963
 {
 	private IntPtr m_ClientData; 
 	private ulong m_PacketQueueMaxSizeBytes; 

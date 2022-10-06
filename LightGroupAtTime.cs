@@ -1,4 +1,4 @@
-public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10868
+public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10904
 {
 	public float IntensityOverride; 
 	public AnimationCurve IntensityScaleOverTime; 
@@ -31,6 +31,7 @@ public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10868
 	private readonly int DistanceFlaresPerFrame; 
 	public static LightGroupAtTime.LightGroupWorkQueue WorkQueue; 
 	private IOEntity cachedPowerEnt; 
+	private TimeSince lastPowerLookup; 
 
 
 	private void Clear() { }
@@ -53,7 +54,7 @@ public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10868
 
 }
 
-public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 10869
+public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 10905
 {
 
 	protected override void RunJob(LightGroupAtTime entity) { }

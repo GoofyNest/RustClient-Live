@@ -1,4 +1,4 @@
-internal sealed class SingleStorage : DataStorage // TypeDefIndex: 4429
+internal sealed class SingleStorage : DataStorage // TypeDefIndex: 4432
 {
 	private float[] _values; 
 

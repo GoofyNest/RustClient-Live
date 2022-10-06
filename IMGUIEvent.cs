@@ -1,4 +1,4 @@
-public class IMGUIEvent : EventBase<IMGUIEvent> // TypeDefIndex: 4702
+public class IMGUIEvent : EventBase<IMGUIEvent> // TypeDefIndex: 4705
 {
 
 	public static IMGUIEvent GetPooled(Event systemEvent) { }

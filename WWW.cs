@@ -1,4 +1,4 @@
-public class WWW : CustomYieldInstruction, IDisposable // TypeDefIndex: 4755
+public class WWW : CustomYieldInstruction, IDisposable // TypeDefIndex: 4758
 {
 
 [ObsoleteAttribute] 

@@ -1,4 +1,4 @@
-public enum ContextType // TypeDefIndex: 4596
+public enum ContextType // TypeDefIndex: 4599
 {
 	public int value__; 
 	public const ContextType Player = 0;

@@ -1,4 +1,4 @@
-public class FleckLog // TypeDefIndex: 6905
+public class FleckLog // TypeDefIndex: 6937
 {
 	public static LogLevel Level; 
 	public static Action<LogLevel, string, Exception> LogAction; 
@@ -12,7 +12,7 @@ public class FleckLog // TypeDefIndex: 6905
 
 }
 
-private sealed class FleckLog.<>c // TypeDefIndex: 6906
+private sealed class FleckLog.<>c // TypeDefIndex: 6938
 {
 	public static readonly FleckLog.<>c <>9; 
 

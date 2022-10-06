@@ -7,7 +7,7 @@ internal static class Res // TypeDefIndex: 2035
 
 }
 
-internal static class Res // TypeDefIndex: 5851
+internal static class Res // TypeDefIndex: 5854
 {
 
 	public static string GetString(string name) { }

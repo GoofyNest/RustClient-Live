@@ -1,4 +1,4 @@
-public struct LobbyModificationAddMemberAttributeOptions // TypeDefIndex: 9124
+public struct LobbyModificationAddMemberAttributeOptions // TypeDefIndex: 9158
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<AttributeData> <Attribute>k__BackingField; 

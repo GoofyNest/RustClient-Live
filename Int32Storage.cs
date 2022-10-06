@@ -1,4 +1,4 @@
-internal sealed class Int32Storage : DataStorage // TypeDefIndex: 4404
+internal sealed class Int32Storage : DataStorage // TypeDefIndex: 4407
 {
 	private int[] _values; 
 

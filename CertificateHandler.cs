@@ -1,4 +1,4 @@
-public class CertificateHandler : IDisposable // TypeDefIndex: 4131
+public class CertificateHandler : IDisposable // TypeDefIndex: 4134
 {
 	internal IntPtr m_Ptr; 
 

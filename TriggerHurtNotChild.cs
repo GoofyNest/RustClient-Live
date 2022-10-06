@@ -1,4 +1,4 @@
-public class TriggerHurtNotChild : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 11701
+public class TriggerHurtNotChild : TriggerBase, IServerComponent, IHurtTrigger // TypeDefIndex: 11739
 {
 	public float DamagePerSecond; 
 	public float DamageTickRate; 

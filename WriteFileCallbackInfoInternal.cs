@@ -1,4 +1,4 @@
-internal struct WriteFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<WriteFileCallbackInfo>, ISettable<WriteFileCallbackInfo>, IDisposable // TypeDefIndex: 8884
+internal struct WriteFileCallbackInfoInternal : ICallbackInfoInternal, IGettable<WriteFileCallbackInfo>, ISettable<WriteFileCallbackInfo>, IDisposable // TypeDefIndex: 8918
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

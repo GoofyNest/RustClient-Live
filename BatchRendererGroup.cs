@@ -1,4 +1,4 @@
-public class BatchRendererGroup // TypeDefIndex: 3846
+public class BatchRendererGroup // TypeDefIndex: 3848
 {
 	private IntPtr m_GroupHandle; 
 	private BatchRendererGroup.OnPerformCulling m_PerformCulling; 
@@ -9,7 +9,7 @@ public class BatchRendererGroup // TypeDefIndex: 3846
 
 }
 
-public sealed class BatchRendererGroup.OnPerformCulling : MulticastDelegate // TypeDefIndex: 3847
+public sealed class BatchRendererGroup.OnPerformCulling : MulticastDelegate // TypeDefIndex: 3849
 {
 
 	public void .ctor(object object, IntPtr method) { }

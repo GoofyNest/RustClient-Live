@@ -1,4 +1,4 @@
-public class ArcadeEntity : BaseMonoBehaviour // TypeDefIndex: 10431
+public class ArcadeEntity : BaseMonoBehaviour // TypeDefIndex: 10467
 {
 	public uint id; 
 	public uint spriteID; 

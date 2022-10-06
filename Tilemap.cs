@@ -1,4 +1,4 @@
-public sealed class Tilemap : GridLayout // TypeDefIndex: 4569
+public sealed class Tilemap : GridLayout // TypeDefIndex: 4572
 {
 
 	[NativeMethodAttribute] 

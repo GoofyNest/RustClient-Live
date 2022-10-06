@@ -1,4 +1,4 @@
-internal sealed class ExprException // TypeDefIndex: 4258
+internal sealed class ExprException // TypeDefIndex: 4261
 {
 
 	private static OverflowException _Overflow(string error) { }

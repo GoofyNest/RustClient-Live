@@ -1,4 +1,4 @@
-internal static class PointerDeviceState // TypeDefIndex: 4685
+internal static class PointerDeviceState // TypeDefIndex: 4688
 {
 	private static Vector2[] m_Positions; 
 	private static IPanel[] m_Panels; 

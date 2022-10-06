@@ -1,4 +1,4 @@
-public class SoundModifier : MonoBehaviour // TypeDefIndex: 10706
+public class SoundModifier : MonoBehaviour // TypeDefIndex: 10742
 {
 	[HideInInspector] 
 	public Sound sound; 

@@ -1,4 +1,4 @@
-public enum SpeechSystemStatus // TypeDefIndex: 3602
+public enum SpeechSystemStatus // TypeDefIndex: 3604
 {
 	public int value__; 
 	public const SpeechSystemStatus Stopped = 0;

@@ -1,4 +1,4 @@
-public class HttpRequestMessage : IDisposable // TypeDefIndex: 5755
+public class HttpRequestMessage : IDisposable // TypeDefIndex: 5758
 {
 	private HttpRequestHeaders headers; 
 	private HttpMethod method; 

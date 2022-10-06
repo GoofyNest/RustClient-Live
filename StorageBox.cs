@@ -1,4 +1,4 @@
-public class StorageBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6312
+public class StorageBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6315
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-internal sealed class FunctionNode : ExpressionNode // TypeDefIndex: 4259
+internal sealed class FunctionNode : ExpressionNode // TypeDefIndex: 4262
 {
 	internal readonly string _name; 
 	internal readonly int _info; 

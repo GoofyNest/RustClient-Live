@@ -1,4 +1,4 @@
-public sealed class OnJoinGameAcceptedCallback : MulticastDelegate // TypeDefIndex: 8791
+public sealed class OnJoinGameAcceptedCallback : MulticastDelegate // TypeDefIndex: 8825
 {
 
 	public void .ctor(object object, IntPtr method) { }

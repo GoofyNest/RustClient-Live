@@ -6,7 +6,7 @@ internal enum SerializationFormat // TypeDefIndex: 2083
 
 }
 
-public enum SerializationFormat // TypeDefIndex: 4220
+public enum SerializationFormat // TypeDefIndex: 4223
 {
 	public int value__; 
 	public const SerializationFormat Xml = 0;

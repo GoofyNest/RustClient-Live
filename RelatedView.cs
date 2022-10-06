@@ -1,4 +1,4 @@
-internal sealed class RelatedView : DataView, IFilter // TypeDefIndex: 4293
+internal sealed class RelatedView : DataView, IFilter // TypeDefIndex: 4296
 {
 	private readonly Nullable<DataKey> _parentKey; 
 	private readonly DataKey _childKey; 

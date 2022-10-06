@@ -1,7 +1,7 @@
-public class Behaviour : Component // TypeDefIndex: 3505
+public class Behaviour : Component // TypeDefIndex: 3507
 {
-	[NativePropertyAttribute] 
 	[RequiredByNativeCodeAttribute] 
+	[NativePropertyAttribute] 
 	public bool enabled { get; set; }
 	[NativePropertyAttribute] 
 	public bool isActiveAndEnabled { get; }

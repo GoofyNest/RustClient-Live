@@ -1260,7 +1260,7 @@ internal class DateTimeFacetsChecker : FacetsChecker // TypeDefIndex: 2251
 
 }
 
-internal sealed class DateTimeOffsetStorage : DataStorage // TypeDefIndex: 4384
+internal sealed class DateTimeOffsetStorage : DataStorage // TypeDefIndex: 4387
 {
 
 internal sealed class DateTimeOffsetStorage : DataStorage
@@ -1300,7 +1300,7 @@ internal sealed class DateTimeOffsetStorage : DataStorage
 
 }
 
-internal sealed class DateTimeStorage : DataStorage // TypeDefIndex: 4385
+internal sealed class DateTimeStorage : DataStorage // TypeDefIndex: 4388
 {
 	private static readonly DateTime s_defaultValue; 
 	private DateTime[] _values; 
@@ -1338,7 +1338,7 @@ internal sealed class DateTimeStorage : DataStorage // TypeDefIndex: 4385
 
 }
 
-public enum DateTimeZoneHandling // TypeDefIndex: 5868
+public enum DateTimeZoneHandling // TypeDefIndex: 5871
 {
 	public int value__; 
 	public const DateTimeZoneHandling Local = 0;
@@ -1348,7 +1348,7 @@ public enum DateTimeZoneHandling // TypeDefIndex: 5868
 
 }
 
-internal struct DateTimeParser // TypeDefIndex: 5917
+internal struct DateTimeParser // TypeDefIndex: 5920
 {
 	public int Year; 
 	public int Month; 
@@ -1398,7 +1398,7 @@ internal struct DateTimeParser // TypeDefIndex: 5917
 
 }
 
-internal static class DateTimeUtils // TypeDefIndex: 5950
+internal static class DateTimeUtils // TypeDefIndex: 5953
 {
 	internal static readonly long InitialJavaScriptDateTicks; 
 	private static readonly int[] DaysToMonth365; 
@@ -1474,7 +1474,7 @@ internal static class DateTimeUtils // TypeDefIndex: 5950
 
 }
 
-public abstract class DateTimeConverterBase : JsonConverter // TypeDefIndex: 6102
+public abstract class DateTimeConverterBase : JsonConverter // TypeDefIndex: 6105
 {
 
 	public override bool CanConvert(Type objectType) { }

@@ -1,4 +1,4 @@
-public struct FourBitNumber : IComparable<FourBitNumber>, IConvertible // TypeDefIndex: 7596
+public struct FourBitNumber : IComparable<FourBitNumber>, IConvertible // TypeDefIndex: 7630
 {
 	public static readonly FourBitNumber MinValue; 
 	public static readonly FourBitNumber MaxValue; 
@@ -58,7 +58,7 @@ public struct FourBitNumber : IComparable<FourBitNumber>, IConvertible // TypeDe
 
 }
 
-private sealed class FourBitNumber.<>c // TypeDefIndex: 7597
+private sealed class FourBitNumber.<>c // TypeDefIndex: 7631
 {
 	public static readonly FourBitNumber.<>c <>9; 
 

@@ -1,4 +1,4 @@
-public class MouseDownEvent : MouseEventBase<MouseDownEvent> // TypeDefIndex: 4671
+public class MouseDownEvent : MouseEventBase<MouseDownEvent> // TypeDefIndex: 4674
 {
 
 	private static MouseDownEvent MakeFromPointerEvent(IPointerEvent pointerEvent) { }

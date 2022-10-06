@@ -1,4 +1,4 @@
-public sealed class UnexpectedRunningStatusException : MidiException // TypeDefIndex: 7553
+public sealed class UnexpectedRunningStatusException : MidiException // TypeDefIndex: 7587
 {
 
 	internal void .ctor() { }

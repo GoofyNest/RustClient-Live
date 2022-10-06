@@ -1,4 +1,4 @@
-public class LevelInfo : SingletonComponent<LevelInfo> // TypeDefIndex: 11636
+public class LevelInfo : SingletonComponent<LevelInfo> // TypeDefIndex: 11674
 {
 	public string shortName; 
 	public string displayName; 

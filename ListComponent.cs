@@ -1,4 +1,4 @@
-public abstract class ListComponent : FacepunchBehaviour // TypeDefIndex: 5592
+public abstract class ListComponent : FacepunchBehaviour // TypeDefIndex: 5595
 {
 
 	public abstract void Setup();
@@ -13,7 +13,7 @@ public abstract class ListComponent : FacepunchBehaviour // TypeDefIndex: 5592
 
 }
 
-public abstract class ListComponent : MonoBehaviour // TypeDefIndex: 6221
+public abstract class ListComponent : MonoBehaviour // TypeDefIndex: 6224
 {
 
 	public abstract void Setup();

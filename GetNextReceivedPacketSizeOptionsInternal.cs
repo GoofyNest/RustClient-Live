@@ -1,4 +1,4 @@
-internal struct GetNextReceivedPacketSizeOptionsInternal : ISettable<GetNextReceivedPacketSizeOptions>, IDisposable // TypeDefIndex: 8913
+internal struct GetNextReceivedPacketSizeOptionsInternal : ISettable<GetNextReceivedPacketSizeOptions>, IDisposable // TypeDefIndex: 8947
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-public struct JoinLobbyOptions // TypeDefIndex: 9075
+public struct JoinLobbyOptions // TypeDefIndex: 9109
 {
 	[CompilerGeneratedAttribute] 
 	private LobbyDetails <LobbyDetailsHandle>k__BackingField; 

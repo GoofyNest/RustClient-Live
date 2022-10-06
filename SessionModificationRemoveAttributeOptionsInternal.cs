@@ -1,4 +1,4 @@
-internal struct SessionModificationRemoveAttributeOptionsInternal : ISettable<SessionModificationRemoveAttributeOptions>, IDisposable // TypeDefIndex: 8526
+internal struct SessionModificationRemoveAttributeOptionsInternal : ISettable<SessionModificationRemoveAttributeOptions>, IDisposable // TypeDefIndex: 8560
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Key; 

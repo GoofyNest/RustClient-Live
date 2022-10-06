@@ -1,4 +1,4 @@
-public class SubbandLayer2 : ASubband // TypeDefIndex: 7379
+public class SubbandLayer2 : ASubband // TypeDefIndex: 7413
 {
 	internal static readonly float[] Grouping5Bits; 
 	internal static readonly float[] Grouping7Bits; 

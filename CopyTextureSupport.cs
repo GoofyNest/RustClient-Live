@@ -1,4 +1,4 @@
-public enum CopyTextureSupport // TypeDefIndex: 3835
+public enum CopyTextureSupport // TypeDefIndex: 3837
 {
 	public int value__; 
 	public const CopyTextureSupport None = 0;

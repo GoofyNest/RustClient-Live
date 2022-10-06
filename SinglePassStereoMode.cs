@@ -1,4 +1,4 @@
-public enum SinglePassStereoMode // TypeDefIndex: 3836
+public enum SinglePassStereoMode // TypeDefIndex: 3838
 {
 	public int value__; 
 	public const SinglePassStereoMode None = 0;

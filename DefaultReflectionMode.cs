@@ -1,4 +1,4 @@
-public enum DefaultReflectionMode // TypeDefIndex: 3815
+public enum DefaultReflectionMode // TypeDefIndex: 3817
 {
 	public int value__; 
 	public const DefaultReflectionMode Skybox = 0;

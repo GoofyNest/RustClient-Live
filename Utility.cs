@@ -1,4 +1,4 @@
-internal class Utility // TypeDefIndex: 4719
+internal class Utility // TypeDefIndex: 4722
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -25,13 +25,13 @@ internal class Utility // TypeDefIndex: 4719
 
 }
 
-public class Utility.GPUBuffer<T> // TypeDefIndex: 4720
+public class Utility.GPUBuffer<T> // TypeDefIndex: 4723
 {
 	private IntPtr buffer; 
 
 }
 
-public static class Utility // TypeDefIndex: 5273
+public static class Utility // TypeDefIndex: 5276
 {
 	private static readonly byte[] readBuffer; 
 

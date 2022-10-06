@@ -1,4 +1,4 @@
-public struct half2 : IEquatable<half2>, IFormattable // TypeDefIndex: 7109
+public struct half2 : IEquatable<half2>, IFormattable // TypeDefIndex: 7143
 {
 	public half x; 
 	public half y; 

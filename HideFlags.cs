@@ -1,4 +1,4 @@
-public enum HideFlags // TypeDefIndex: 3534
+public enum HideFlags // TypeDefIndex: 3536
 {
 	public int value__; 
 	public const HideFlags None = 0;

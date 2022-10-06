@@ -1,4 +1,4 @@
-public abstract class CustomYieldInstruction : IEnumerator // TypeDefIndex: 3511
+public abstract class CustomYieldInstruction : IEnumerator // TypeDefIndex: 3513
 {
 	public abstract bool keepWaiting { get; }
 	public object Current { get; }

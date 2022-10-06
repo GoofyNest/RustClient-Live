@@ -1,4 +1,4 @@
-public enum BloomScreenBlendMode // TypeDefIndex: 8134
+public enum BloomScreenBlendMode // TypeDefIndex: 8168
 {
 	public int value__; 
 	public const BloomScreenBlendMode Screen = 0;

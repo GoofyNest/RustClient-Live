@@ -1,4 +1,4 @@
-internal struct SetPortRangeOptionsInternal : ISettable<SetPortRangeOptions>, IDisposable // TypeDefIndex: 8960
+internal struct SetPortRangeOptionsInternal : ISettable<SetPortRangeOptions>, IDisposable // TypeDefIndex: 8994
 {
 	private int m_ApiVersion; 
 	private ushort m_Port; 

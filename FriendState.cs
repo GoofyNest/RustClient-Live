@@ -1,4 +1,4 @@
-public enum FriendState // TypeDefIndex: 5147
+public enum FriendState // TypeDefIndex: 5150
 {
 	public int value__; 
 	public const FriendState Offline = 0;

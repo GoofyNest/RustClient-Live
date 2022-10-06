@@ -1,4 +1,4 @@
-public static class TerrainUtility // TypeDefIndex: 4099
+public static class TerrainUtility // TypeDefIndex: 4102
 {
 
 	internal static bool HasValidTerrains() { }
@@ -12,7 +12,7 @@ public static class TerrainUtility // TypeDefIndex: 4099
 
 }
 
-public class TerrainUtility.TerrainMap // TypeDefIndex: 4100
+public class TerrainUtility.TerrainMap // TypeDefIndex: 4103
 {
 	private Vector3 m_patchSize; 
 	public TerrainUtility.TerrainMap.ErrorCode m_errorCode; 
@@ -37,7 +37,7 @@ public class TerrainUtility.TerrainMap // TypeDefIndex: 4100
 
 }
 
-public sealed class TerrainUtility.TerrainMap.TerrainFilter : MulticastDelegate // TypeDefIndex: 4101
+public sealed class TerrainUtility.TerrainMap.TerrainFilter : MulticastDelegate // TypeDefIndex: 4104
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -50,7 +50,7 @@ public sealed class TerrainUtility.TerrainMap.TerrainFilter : MulticastDelegate 
 
 }
 
-public struct TerrainUtility.TerrainMap.TileCoord // TypeDefIndex: 4102
+public struct TerrainUtility.TerrainMap.TileCoord // TypeDefIndex: 4105
 {
 	public readonly int tileX; 
 	public readonly int tileZ; 
@@ -60,7 +60,7 @@ public struct TerrainUtility.TerrainMap.TileCoord // TypeDefIndex: 4102
 
 }
 
-public enum TerrainUtility.TerrainMap.ErrorCode // TypeDefIndex: 4103
+public enum TerrainUtility.TerrainMap.ErrorCode // TypeDefIndex: 4106
 {
 	public int value__; 
 	public const TerrainUtility.TerrainMap.ErrorCode OK = 0;
@@ -70,7 +70,7 @@ public enum TerrainUtility.TerrainMap.ErrorCode // TypeDefIndex: 4103
 
 }
 
-private sealed class TerrainUtility.TerrainMap.<>c__DisplayClass4_0 // TypeDefIndex: 4104
+private sealed class TerrainUtility.TerrainMap.<>c__DisplayClass4_0 // TypeDefIndex: 4107
 {
 	public int groupID; 
 
@@ -81,14 +81,14 @@ private sealed class TerrainUtility.TerrainMap.<>c__DisplayClass4_0 // TypeDefIn
 
 }
 
-public class TerrainUtility.TerrainGroups : Dictionary<int, TerrainUtility.TerrainMap> // TypeDefIndex: 4105
+public class TerrainUtility.TerrainGroups : Dictionary<int, TerrainUtility.TerrainMap> // TypeDefIndex: 4108
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class TerrainUtility.<>c__DisplayClass4_0 // TypeDefIndex: 4106
+private sealed class TerrainUtility.<>c__DisplayClass4_0 // TypeDefIndex: 4109
 {
 	public bool onlyAutoConnectedTerrains; 
 
@@ -97,7 +97,7 @@ private sealed class TerrainUtility.<>c__DisplayClass4_0 // TypeDefIndex: 4106
 
 }
 
-private sealed class TerrainUtility.<>c__DisplayClass4_1 // TypeDefIndex: 4107
+private sealed class TerrainUtility.<>c__DisplayClass4_1 // TypeDefIndex: 4110
 {
 	public Terrain t; 
 	public TerrainUtility.<>c__DisplayClass4_0 CS$<>8__locals1; 

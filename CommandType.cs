@@ -1,4 +1,4 @@
-public enum CommandType // TypeDefIndex: 4170
+public enum CommandType // TypeDefIndex: 4173
 {
 	public int value__; 
 	public const CommandType Text = 1;

@@ -1,4 +1,4 @@
-public enum NotifyCollectionChangedAction // TypeDefIndex: 5860
+public enum NotifyCollectionChangedAction // TypeDefIndex: 5863
 {
 
 [PreserveAttribute] 

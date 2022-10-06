@@ -1,4 +1,4 @@
-public class LTBezierPath // TypeDefIndex: 5584
+public class LTBezierPath // TypeDefIndex: 5587
 {
 	public Vector3[] pts; 
 	public float length; 

@@ -1,4 +1,4 @@
-internal class GUIStateObjects // TypeDefIndex: 4046
+internal class GUIStateObjects // TypeDefIndex: 4049
 {
 	private static Dictionary<int, object> s_StateCache; 
 

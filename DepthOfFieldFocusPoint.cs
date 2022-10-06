@@ -1,4 +1,4 @@
-public class DepthOfFieldFocusPoint : ListComponent<DepthOfFieldFocusPoint> // TypeDefIndex: 6634
+public class DepthOfFieldFocusPoint : ListComponent<DepthOfFieldFocusPoint> // TypeDefIndex: 6638
 {
 	private Renderer cachedRenderer; 
 

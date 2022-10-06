@@ -1,4 +1,4 @@
-public static class StringEx // TypeDefIndex: 6609
+public static class StringEx // TypeDefIndex: 6613
 {
 	private static readonly Regex regexNumeric; 
 	private static readonly Regex regexAlphaNumeric; 
@@ -43,7 +43,7 @@ public static class StringEx // TypeDefIndex: 6609
 
 }
 
-private sealed class StringEx.<SplitToLines>d__9 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6610
+private sealed class StringEx.<SplitToLines>d__9 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6614
 {
 	private int <>1__state; 
 	private string <>2__current; 
@@ -83,7 +83,7 @@ private sealed class StringEx.<SplitToLines>d__9 : IEnumerable<string>, IEnumera
 
 }
 
-private sealed class StringEx.<SplitToChunks>d__10 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6611
+private sealed class StringEx.<SplitToChunks>d__10 : IEnumerable<string>, IEnumerable, IEnumerator<string>, IEnumerator, IDisposable // TypeDefIndex: 6615
 {
 	private int <>1__state; 
 	private string <>2__current; 

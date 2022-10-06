@@ -1,4 +1,4 @@
-public enum BuiltinShaderMode // TypeDefIndex: 3833
+public enum BuiltinShaderMode // TypeDefIndex: 3835
 {
 	public int value__; 
 	public const BuiltinShaderMode Disabled = 0;

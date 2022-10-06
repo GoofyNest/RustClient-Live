@@ -1,4 +1,4 @@
-internal class ISteamMatchmaking : SteamInterface // TypeDefIndex: 5120
+internal class ISteamMatchmaking : SteamInterface // TypeDefIndex: 5123
 {
 
 	internal void .ctor(bool IsGameServer) { }

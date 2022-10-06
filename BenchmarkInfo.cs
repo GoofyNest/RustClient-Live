@@ -1,4 +1,4 @@
-public class BenchmarkInfo : SingletonComponent<BenchmarkInfo> // TypeDefIndex: 10795
+public class BenchmarkInfo : SingletonComponent<BenchmarkInfo> // TypeDefIndex: 10831
 {
 	public static string BenchmarkTitle; 
 	public static string BenchmarkSubtitle; 

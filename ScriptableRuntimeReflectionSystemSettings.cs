@@ -1,4 +1,4 @@
-public static class ScriptableRuntimeReflectionSystemSettings // TypeDefIndex: 3897
+public static class ScriptableRuntimeReflectionSystemSettings // TypeDefIndex: 3900
 {
 	private static ScriptableRuntimeReflectionSystemWrapper s_Instance; 
 
@@ -12,8 +12,8 @@ public static class ScriptableRuntimeReflectionSystemSettings // TypeDefIndex: 3
 	[RequiredByNativeCodeAttribute] 
 	private static ScriptableRuntimeReflectionSystemWrapper get_Internal_ScriptableRuntimeReflectionSystemSettings_instance() { }
 
-	[RuntimeInitializeOnLoadMethodAttribute] 
 	[StaticAccessorAttribute] 
+	[RuntimeInitializeOnLoadMethodAttribute] 
 	private static void ScriptingDirtyReflectionSystemInstance() { }
 
 	private static void .cctor() { }

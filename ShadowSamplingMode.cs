@@ -1,4 +1,4 @@
-public enum ShadowSamplingMode // TypeDefIndex: 3830
+public enum ShadowSamplingMode // TypeDefIndex: 3832
 {
 	public int value__; 
 	public const ShadowSamplingMode CompareDepths = 0;

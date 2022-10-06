@@ -1,4 +1,4 @@
-public class ObjectFlasher : BaseMonoBehaviour // TypeDefIndex: 13015
+public class ObjectFlasher : BaseMonoBehaviour // TypeDefIndex: 13058
 {
 	public GameObject enabledObj; 
 	public GameObject disabledObj; 

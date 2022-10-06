@@ -1,4 +1,4 @@
-internal struct FriendRichPresenceUpdate_t : ICallbackData // TypeDefIndex: 5314
+internal struct FriendRichPresenceUpdate_t : ICallbackData // TypeDefIndex: 5317
 {
 	internal ulong SteamIDFriend; 
 	internal AppId AppID; 

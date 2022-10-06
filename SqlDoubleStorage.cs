@@ -1,4 +1,4 @@
-internal sealed class SqlDoubleStorage : DataStorage // TypeDefIndex: 4418
+internal sealed class SqlDoubleStorage : DataStorage // TypeDefIndex: 4421
 {
 	private SqlDouble[] _values; 
 

@@ -1,4 +1,4 @@
-public sealed class InvalidMidiTimeCodeComponentException : MidiException // TypeDefIndex: 7548
+public sealed class InvalidMidiTimeCodeComponentException : MidiException // TypeDefIndex: 7582
 {
 	[CompilerGeneratedAttribute] 
 	private readonly byte <MidiTimeCodeComponent>k__BackingField; 

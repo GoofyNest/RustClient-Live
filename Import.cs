@@ -1,4 +1,4 @@
-public static class Import // TypeDefIndex: 7764
+public static class Import // TypeDefIndex: 7798
 {
 
 public static class Import
@@ -19,7 +19,7 @@ public static class Import
 
 }
 
-private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7765
+private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7799
 {
 	public string[] columnNames; 
 
@@ -32,7 +32,7 @@ private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7765
 
 }
 
-private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7766
+private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7800
 {
 	public int i; 
 	public Import.<>c__DisplayClass0_0<T> CS$<>8__locals1; 
@@ -53,7 +53,7 @@ private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7766
 
 }
 
-private sealed class Import.<>c // TypeDefIndex: 7767
+private sealed class Import.<>c // TypeDefIndex: 7801
 {
 	public static readonly Import.<>c <>9; 
 	public static Func<Match, string> <>9__2_0; 

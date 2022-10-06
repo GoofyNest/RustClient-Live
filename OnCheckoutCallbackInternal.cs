@@ -1,4 +1,4 @@
-internal sealed class OnCheckoutCallbackInternal : MulticastDelegate // TypeDefIndex: 9438
+internal sealed class OnCheckoutCallbackInternal : MulticastDelegate // TypeDefIndex: 9472
 {
 
 	public void .ctor(object object, IntPtr method) { }

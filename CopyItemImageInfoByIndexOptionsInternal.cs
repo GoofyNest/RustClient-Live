@@ -1,4 +1,4 @@
-internal struct CopyItemImageInfoByIndexOptionsInternal : ISettable<CopyItemImageInfoByIndexOptions>, IDisposable // TypeDefIndex: 9394
+internal struct CopyItemImageInfoByIndexOptionsInternal : ISettable<CopyItemImageInfoByIndexOptions>, IDisposable // TypeDefIndex: 9428
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-public class GameMode : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6400
+public class GameMode : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6403
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class GameMode : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6400
 
 }
 
-public class GameMode.TeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6401
+public class GameMode.TeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6404
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -122,7 +122,7 @@ public class GameMode.TeamInfo : IDisposable, Pool.IPooled, IProto // TypeDefInd
 
 }
 
-public class GameMode.ScoreColumn : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6402
+public class GameMode.ScoreColumn : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6405
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -183,7 +183,7 @@ public class GameMode.ScoreColumn : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class GameMode.PlayerScore : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6403
+public class GameMode.PlayerScore : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6406
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -247,7 +247,7 @@ public class GameMode.PlayerScore : IDisposable, Pool.IPooled, IProto // TypeDef
 
 }
 
-public class gamemode : ConsoleSystem // TypeDefIndex: 13616
+public class gamemode : ConsoleSystem // TypeDefIndex: 13659
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class UnityEvent : UnityEventBase // TypeDefIndex: 3640
+public class UnityEvent : UnityEventBase // TypeDefIndex: 3642
 {
 	private object[] m_InvokeArray; 
 

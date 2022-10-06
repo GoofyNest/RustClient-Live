@@ -1,4 +1,4 @@
-public struct Scene // TypeDefIndex: 3655
+public struct Scene // TypeDefIndex: 3657
 {
 	[SerializeField] 
 	private int m_Handle; 

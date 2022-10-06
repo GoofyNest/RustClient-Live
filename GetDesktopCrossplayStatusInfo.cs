@@ -1,4 +1,4 @@
-public struct GetDesktopCrossplayStatusInfo // TypeDefIndex: 9822
+public struct GetDesktopCrossplayStatusInfo // TypeDefIndex: 9856
 {
 	[CompilerGeneratedAttribute] 
 	private DesktopCrossplayStatus <Status>k__BackingField; 

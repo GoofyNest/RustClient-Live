@@ -1,4 +1,4 @@
-public static class InputTracking // TypeDefIndex: 4137
+public static class InputTracking // TypeDefIndex: 4140
 {
 
 [RequiredByNativeCodeAttribute] 
@@ -27,7 +27,7 @@ public static class InputTracking
 
 }
 
-private enum InputTracking.TrackingStateEventType // TypeDefIndex: 4138
+private enum InputTracking.TrackingStateEventType // TypeDefIndex: 4141
 {
 	public int value__; 
 	public const InputTracking.TrackingStateEventType NodeAdded = 0;

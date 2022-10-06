@@ -1,4 +1,4 @@
-public class MusicTheme : ScriptableObject // TypeDefIndex: 10679
+public class MusicTheme : ScriptableObject // TypeDefIndex: 10715
 {
 	[HeaderAttribute] 
 	public float tempo; 
@@ -54,7 +54,7 @@ public class MusicTheme : ScriptableObject // TypeDefIndex: 10679
 
 }
 
-public class MusicTheme.Layer // TypeDefIndex: 10680
+public class MusicTheme.Layer // TypeDefIndex: 10716
 {
 	public string name; 
 
@@ -63,7 +63,7 @@ public class MusicTheme.Layer // TypeDefIndex: 10680
 
 }
 
-public class MusicTheme.PositionedClip // TypeDefIndex: 10681
+public class MusicTheme.PositionedClip // TypeDefIndex: 10717
 {
 	public MusicTheme theme; 
 	public MusicClip musicClip; 
@@ -96,7 +96,7 @@ public class MusicTheme.PositionedClip // TypeDefIndex: 10681
 
 }
 
-public class MusicTheme.ValueRange // TypeDefIndex: 10682
+public class MusicTheme.ValueRange // TypeDefIndex: 10718
 {
 	public float min; 
 	public float max; 

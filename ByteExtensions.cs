@@ -1,4 +1,4 @@
-public static class ByteExtensions // TypeDefIndex: 4842
+public static class ByteExtensions // TypeDefIndex: 4845
 {
 
 	[ExtensionAttribute] 

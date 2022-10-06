@@ -1,4 +1,4 @@
-public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6499
+public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6503
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class WorldMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public enum WorldMessage.MessageType // TypeDefIndex: 6500
+public enum WorldMessage.MessageType // TypeDefIndex: 6504
 {
 	public int value__; 
 	public const WorldMessage.MessageType Request = 1;

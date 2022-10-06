@@ -1,4 +1,4 @@
-internal class ISteamUGC : SteamInterface // TypeDefIndex: 5131
+internal class ISteamUGC : SteamInterface // TypeDefIndex: 5134
 {
 
 	internal void .ctor(bool IsGameServer) { }

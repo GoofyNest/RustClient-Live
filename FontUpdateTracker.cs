@@ -1,4 +1,4 @@
-public static class FontUpdateTracker // TypeDefIndex: 4930
+public static class FontUpdateTracker // TypeDefIndex: 4933
 {
 	private static Dictionary<Font, HashSet<Text>> m_Tracked; 
 

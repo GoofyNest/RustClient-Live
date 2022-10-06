@@ -95,7 +95,7 @@ public struct Color : IEquatable<Color> // TypeDefIndex: 3460
 
 }
 
-public struct Color // TypeDefIndex: 5553
+public struct Color // TypeDefIndex: 5556
 {
 	public byte r; 
 	public byte g; 

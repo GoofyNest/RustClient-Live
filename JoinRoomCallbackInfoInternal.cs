@@ -1,4 +1,4 @@
-internal struct JoinRoomCallbackInfoInternal : ICallbackInfoInternal, IGettable<JoinRoomCallbackInfo>, ISettable<JoinRoomCallbackInfo>, IDisposable // TypeDefIndex: 8726
+internal struct JoinRoomCallbackInfoInternal : ICallbackInfoInternal, IGettable<JoinRoomCallbackInfo>, ISettable<JoinRoomCallbackInfo>, IDisposable // TypeDefIndex: 8760
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

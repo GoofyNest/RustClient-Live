@@ -1,4 +1,4 @@
-public class Lift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6339
+public class Lift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class Lift : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6339
 
 }
 
-public class Lift : AnimatedBuildingBlock // TypeDefIndex: 10074
+public class Lift : AnimatedBuildingBlock // TypeDefIndex: 10108
 {
 	private Option __menuOption_Menu_UseLift; 
 	public GameObjectRef triggerPrefab; 

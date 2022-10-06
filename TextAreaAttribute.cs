@@ -1,4 +1,4 @@
-public sealed class TextAreaAttribute : PropertyAttribute // TypeDefIndex: 3483
+public sealed class TextAreaAttribute : PropertyAttribute // TypeDefIndex: 3485
 {
 	public readonly int minLines; 
 	public readonly int maxLines; 

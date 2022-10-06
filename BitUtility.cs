@@ -1,4 +1,4 @@
-public class BitUtility // TypeDefIndex: 4820
+public class BitUtility // TypeDefIndex: 4823
 {
 	private const float float2byte = 255;
 	private const float byte2float = 0,003921569;

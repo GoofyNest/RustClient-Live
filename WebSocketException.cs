@@ -1,4 +1,4 @@
-public class WebSocketException : Exception // TypeDefIndex: 6930
+public class WebSocketException : Exception // TypeDefIndex: 6962
 {
 	[CompilerGeneratedAttribute] 
 	private ushort <StatusCode>k__BackingField; 

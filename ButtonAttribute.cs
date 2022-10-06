@@ -1,4 +1,4 @@
-public class ButtonAttribute : BaseEditorExAttribute // TypeDefIndex: 7991
+public class ButtonAttribute : BaseEditorExAttribute // TypeDefIndex: 8025
 {
 	public string Label; 
 

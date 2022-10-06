@@ -1,4 +1,4 @@
-public class TerrainAnchorGenerator : MonoBehaviour, IEditorComponent // TypeDefIndex: 12055
+public class TerrainAnchorGenerator : MonoBehaviour, IEditorComponent // TypeDefIndex: 12093
 {
 	public float PlacementRadius; 
 	public float PlacementPadding; 

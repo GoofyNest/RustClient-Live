@@ -1,4 +1,4 @@
-internal struct ModIdentifierInternal : IGettable<ModIdentifier>, ISettable<ModIdentifier>, IDisposable // TypeDefIndex: 8977
+internal struct ModIdentifierInternal : IGettable<ModIdentifier>, ISettable<ModIdentifier>, IDisposable // TypeDefIndex: 9011
 {
 	private int m_ApiVersion; 
 	private IntPtr m_NamespaceId; 

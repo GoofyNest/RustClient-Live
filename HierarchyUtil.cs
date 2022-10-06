@@ -1,4 +1,4 @@
-public static class HierarchyUtil // TypeDefIndex: 13077
+public static class HierarchyUtil // TypeDefIndex: 13120
 {
 	public static Dictionary<string, GameObject> rootDict; 
 

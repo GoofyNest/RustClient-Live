@@ -1,4 +1,4 @@
-public class Spawn : ConsoleSystem // TypeDefIndex: 13653
+public class Spawn : ConsoleSystem // TypeDefIndex: 13696
 {
 	[ServerVar] 
 	public static float min_rate; 

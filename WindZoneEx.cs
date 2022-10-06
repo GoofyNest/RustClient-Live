@@ -1,4 +1,4 @@
-public class WindZoneEx : MonoBehaviour // TypeDefIndex: 12378
+public class WindZoneEx : MonoBehaviour // TypeDefIndex: 12416
 {
 	private WindZone windZone; 
 

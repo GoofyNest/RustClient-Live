@@ -1,4 +1,4 @@
-public sealed class TicksPerQuarterNoteTimeDivision : TimeDivision // TypeDefIndex: 7585
+public sealed class TicksPerQuarterNoteTimeDivision : TimeDivision // TypeDefIndex: 7619
 {
 	[CompilerGeneratedAttribute] 
 	private readonly short <TicksPerQuarterNote>k__BackingField; 

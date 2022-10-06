@@ -1,4 +1,4 @@
-public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12468
+public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12508
 {
 	public Dropdown DropdownInputMemorySlot; 
 	public Transform PrefabAddNewEvent; 
@@ -81,7 +81,7 @@ public class BaseStateUI : MonoBehaviour // TypeDefIndex: 12468
 
 }
 
-private sealed class BaseStateUI.<ScrollToBottom>d__43 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12469
+private sealed class BaseStateUI.<ScrollToBottom>d__43 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12509
 {
 	private int <>1__state; 
 	private object <>2__current; 

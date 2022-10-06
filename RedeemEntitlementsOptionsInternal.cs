@@ -1,4 +1,4 @@
-internal struct RedeemEntitlementsOptionsInternal : ISettable<RedeemEntitlementsOptions>, IDisposable // TypeDefIndex: 9469
+internal struct RedeemEntitlementsOptionsInternal : ISettable<RedeemEntitlementsOptions>, IDisposable // TypeDefIndex: 9503
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

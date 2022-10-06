@@ -1,4 +1,4 @@
-internal sealed class SqlInt16Storage : DataStorage // TypeDefIndex: 4420
+internal sealed class SqlInt16Storage : DataStorage // TypeDefIndex: 4423
 {
 	private SqlInt16[] _values; 
 

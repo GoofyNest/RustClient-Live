@@ -1,4 +1,4 @@
-public class MovedFromAttribute : Attribute // TypeDefIndex: 3654
+public class MovedFromAttribute : Attribute // TypeDefIndex: 3656
 {
 	internal MovedFromAttributeData data; 
 

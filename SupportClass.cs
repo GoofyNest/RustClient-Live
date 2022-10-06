@@ -1,4 +1,4 @@
-public class SupportClass // TypeDefIndex: 7354
+public class SupportClass // TypeDefIndex: 7388
 {
 
 	internal static int URShift(int number, int bits) { }

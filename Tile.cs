@@ -1,4 +1,4 @@
-public class Tile : TileBase // TypeDefIndex: 4566
+public class Tile : TileBase // TypeDefIndex: 4569
 {
 	[SerializeField] 
 	private Sprite m_Sprite; 
@@ -51,7 +51,7 @@ public class Tile : TileBase // TypeDefIndex: 4566
 
 }
 
-public enum Tile.ColliderType // TypeDefIndex: 4567
+public enum Tile.ColliderType // TypeDefIndex: 4570
 {
 	public int value__; 
 	public const Tile.ColliderType None = 0;

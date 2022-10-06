@@ -1,4 +1,4 @@
-public class IntegratedSubsystem : ISubsystem // TypeDefIndex: 3946
+public class IntegratedSubsystem : ISubsystem // TypeDefIndex: 3949
 {
 
 [NativeTypeAttribute] 

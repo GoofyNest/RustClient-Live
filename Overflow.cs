@@ -1,4 +1,4 @@
-public enum Overflow // TypeDefIndex: 4605
+public enum Overflow // TypeDefIndex: 4608
 {
 	public int value__; 
 	public const Overflow Visible = 0;

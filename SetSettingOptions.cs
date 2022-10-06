@@ -1,4 +1,4 @@
-public struct SetSettingOptions // TypeDefIndex: 8752
+public struct SetSettingOptions // TypeDefIndex: 8786
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <SettingName>k__BackingField; 

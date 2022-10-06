@@ -1,4 +1,4 @@
-internal static class BigIntegerCalculator // TypeDefIndex: 3965
+internal static class BigIntegerCalculator // TypeDefIndex: 3968
 {
 	private static int ReducerThreshold; 
 	private static int SquareThreshold; 

@@ -1,4 +1,4 @@
-public static class WebUtil // TypeDefIndex: 6231
+public static class WebUtil // TypeDefIndex: 6234
 {
 
 	internal static void Get(string url, Action<string> result) { }
@@ -28,7 +28,7 @@ public static class WebUtil // TypeDefIndex: 6231
 
 }
 
-private class WebUtil.AcceptAllCertificates : CertificateHandler // TypeDefIndex: 6232
+private class WebUtil.AcceptAllCertificates : CertificateHandler // TypeDefIndex: 6235
 {
 
 	protected override bool ValidateCertificate(byte[] certificateData) { }
@@ -37,7 +37,7 @@ private class WebUtil.AcceptAllCertificates : CertificateHandler // TypeDefIndex
 
 }
 
-private sealed class WebUtil.<DownloadStringCoroutine>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6233
+private sealed class WebUtil.<DownloadStringCoroutine>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6236
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -67,7 +67,7 @@ private sealed class WebUtil.<DownloadStringCoroutine>d__2 : IEnumerator<object>
 
 }
 
-private struct WebUtil.<DownloadFileTemp>d__3 : IAsyncStateMachine // TypeDefIndex: 6234
+private struct WebUtil.<DownloadFileTemp>d__3 : IAsyncStateMachine // TypeDefIndex: 6237
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 
@@ -86,7 +86,7 @@ private struct WebUtil.<DownloadFileTemp>d__3 : IAsyncStateMachine // TypeDefInd
 
 }
 
-private struct WebUtil.<PostAsync>d__6 : IAsyncStateMachine // TypeDefIndex: 6235
+private struct WebUtil.<PostAsync>d__6 : IAsyncStateMachine // TypeDefIndex: 6238
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 
@@ -104,7 +104,7 @@ private struct WebUtil.<PostAsync>d__6 : IAsyncStateMachine // TypeDefIndex: 623
 
 }
 
-private struct WebUtil.<PostDataAsync>d__8 : IAsyncStateMachine // TypeDefIndex: 6236
+private struct WebUtil.<PostDataAsync>d__8 : IAsyncStateMachine // TypeDefIndex: 6239
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 
@@ -123,7 +123,7 @@ private struct WebUtil.<PostDataAsync>d__8 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-private sealed class WebUtil.<PostValuesCoroutine>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6237
+private sealed class WebUtil.<PostValuesCoroutine>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 6240
 {
 	private int <>1__state; 
 	private object <>2__current; 

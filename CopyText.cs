@@ -1,4 +1,4 @@
-public class CopyText : MonoBehaviour // TypeDefIndex: 12521
+public class CopyText : MonoBehaviour // TypeDefIndex: 12561
 {
 	public RustText TargetText; 
 

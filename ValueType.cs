@@ -17,7 +17,7 @@ public abstract class ValueType // TypeDefIndex: 417
 
 }
 
-internal enum ValueType // TypeDefIndex: 4249
+internal enum ValueType // TypeDefIndex: 4252
 {
 	public int value__; 
 	public const ValueType Unknown = -1;
@@ -32,7 +32,7 @@ internal enum ValueType // TypeDefIndex: 4249
 
 }
 
-public enum ValueType // TypeDefIndex: 8112
+public enum ValueType // TypeDefIndex: 8146
 {
 	public int value__; 
 	public const ValueType String = 0;

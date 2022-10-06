@@ -1,4 +1,4 @@
-internal struct ClearPacketQueueOptionsInternal : ISettable<ClearPacketQueueOptions>, IDisposable // TypeDefIndex: 8903
+internal struct ClearPacketQueueOptionsInternal : ISettable<ClearPacketQueueOptions>, IDisposable // TypeDefIndex: 8937
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

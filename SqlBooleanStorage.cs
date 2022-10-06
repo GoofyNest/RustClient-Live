@@ -1,4 +1,4 @@
-internal sealed class SqlBooleanStorage : DataStorage // TypeDefIndex: 4426
+internal sealed class SqlBooleanStorage : DataStorage // TypeDefIndex: 4429
 {
 	private SqlBoolean[] _values; 
 

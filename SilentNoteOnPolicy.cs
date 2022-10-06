@@ -1,4 +1,4 @@
-public enum SilentNoteOnPolicy // TypeDefIndex: 7575
+public enum SilentNoteOnPolicy // TypeDefIndex: 7609
 {
 	public byte value__; 
 	public const SilentNoteOnPolicy NoteOff = 0;

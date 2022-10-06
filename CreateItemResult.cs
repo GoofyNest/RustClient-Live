@@ -1,4 +1,4 @@
-internal struct CreateItemResult_t : ICallbackData // TypeDefIndex: 5433
+internal struct CreateItemResult_t : ICallbackData // TypeDefIndex: 5436
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 

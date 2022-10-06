@@ -1,4 +1,4 @@
-public static class StackTraceUtility // TypeDefIndex: 3527
+public static class StackTraceUtility // TypeDefIndex: 3529
 {
 	private static string projectFolder; 
 

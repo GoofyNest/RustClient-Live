@@ -1,4 +1,4 @@
-public class ModelState : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6275
+public class ModelState : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6278
 {
 
 public class ModelState : IDisposable, Pool.IPooled, IProto
@@ -142,7 +142,7 @@ public class ModelState : IDisposable, Pool.IPooled, IProto
 
 }
 
-public enum ModelState.Flag // TypeDefIndex: 6276
+public enum ModelState.Flag // TypeDefIndex: 6279
 {
 	public int value__; 
 	public const ModelState.Flag Ducked = 1;

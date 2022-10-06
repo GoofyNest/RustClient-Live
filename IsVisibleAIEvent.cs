@@ -1,4 +1,4 @@
-public class IsVisibleAIEvent : BaseAIEvent // TypeDefIndex: 11075
+public class IsVisibleAIEvent : BaseAIEvent // TypeDefIndex: 11113
 {
 
 	public void .ctor() { }

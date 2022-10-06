@@ -1,4 +1,4 @@
-public class ScaleRenderer : MonoBehaviour // TypeDefIndex: 11033
+public class ScaleRenderer : MonoBehaviour // TypeDefIndex: 11071
 {
 	public bool useRandomScale; 
 	public float scaleMin; 

@@ -1,4 +1,4 @@
-public class TriggerAnalytic : TriggerBase, IServerComponent // TypeDefIndex: 11692
+public class TriggerAnalytic : TriggerBase, IServerComponent // TypeDefIndex: 11730
 {
 	public string AnalyticMessage; 
 	public float Timeout; 

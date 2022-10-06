@@ -1,4 +1,4 @@
-public class DemoHeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6465
+public class DemoHeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6469
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -70,7 +70,7 @@ public class DemoHeader : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 646
 
 }
 
-public class DemoShot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6467
+public class DemoShot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6471
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -142,7 +142,7 @@ public class DemoShot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6467
 
 }
 
-public class DemoShotVectorTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6468
+public class DemoShotVectorTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6472
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -204,7 +204,7 @@ public class DemoShotVectorTrack : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public struct DemoShotVectorKeyframe : IProto // TypeDefIndex: 6469
+public struct DemoShotVectorKeyframe : IProto // TypeDefIndex: 6473
 {
 	public float keyframeTime; 
 	public Vector3 keyFrameValue; 
@@ -254,7 +254,7 @@ public struct DemoShotVectorKeyframe : IProto // TypeDefIndex: 6469
 
 }
 
-public class DemoShotFloatTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6470
+public class DemoShotFloatTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6474
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -316,7 +316,7 @@ public class DemoShotFloatTrack : IDisposable, Pool.IPooled, IProto // TypeDefIn
 
 }
 
-public struct DemoShotFloatKeyframe : IProto // TypeDefIndex: 6471
+public struct DemoShotFloatKeyframe : IProto // TypeDefIndex: 6475
 {
 	public float keyframeTime; 
 	public float keyFrameValue; 
@@ -366,7 +366,7 @@ public struct DemoShotFloatKeyframe : IProto // TypeDefIndex: 6471
 
 }
 
-public class DemoShotQuaternionTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6472
+public class DemoShotQuaternionTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6476
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -428,7 +428,7 @@ public class DemoShotQuaternionTrack : IDisposable, Pool.IPooled, IProto // Type
 
 }
 
-public struct DemoShotQuaternionKeyframe : IProto // TypeDefIndex: 6473
+public struct DemoShotQuaternionKeyframe : IProto // TypeDefIndex: 6477
 {
 	public float keyframeTime; 
 	public float keyFrameValueX; 
@@ -481,7 +481,7 @@ public struct DemoShotQuaternionKeyframe : IProto // TypeDefIndex: 6473
 
 }
 
-public class DemoShotParentTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6474
+public class DemoShotParentTrack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6478
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -543,7 +543,7 @@ public class DemoShotParentTrack : IDisposable, Pool.IPooled, IProto // TypeDefI
 
 }
 
-public struct DemoShotParentKeyframe : IProto // TypeDefIndex: 6475
+public struct DemoShotParentKeyframe : IProto // TypeDefIndex: 6479
 {
 	public float keyframeTime; 
 	public uint keyFrameParentId; 
@@ -594,7 +594,7 @@ public struct DemoShotParentKeyframe : IProto // TypeDefIndex: 6475
 
 }
 
-public class DemoClient : Client, IDisposable // TypeDefIndex: 6693
+public class DemoClient : Client, IDisposable // TypeDefIndex: 6861
 {
 	protected Reader demoFile; 
 
@@ -620,7 +620,7 @@ public class DemoClient : Client, IDisposable // TypeDefIndex: 6693
 
 }
 
-public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10851
+public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10887
 {
 	[CompilerGeneratedAttribute] 
 	private DemoShot <CurrentShot>k__BackingField; 
@@ -691,7 +691,7 @@ public class DemoShotPlayback : MonoBehaviour // TypeDefIndex: 10851
 
 }
 
-public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefIndex: 10852
+public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefIndex: 10888
 {
 	private DemoShot recordingShot; 
 	private float lastKeyframe; 
@@ -771,7 +771,7 @@ public class DemoShotRecorder : SingletonComponent<DemoShotRecorder> // TypeDefI
 
 }
 
-public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10853
+public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10889
 {
 	public bool Countdown; 
 	public bool PauseOnSave; 
@@ -781,7 +781,7 @@ public struct DemoShotRecorder.RecorderSettings // TypeDefIndex: 10853
 
 }
 
-private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10854
+private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10890
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -814,7 +814,7 @@ private sealed class DemoShotRecorder.<StartRecording>d__23 : IEnumerator<object
 
 }
 
-public static class DemoShotHelpers // TypeDefIndex: 10855
+public static class DemoShotHelpers // TypeDefIndex: 10891
 {
 
 	[ExtensionAttribute] 
@@ -846,7 +846,39 @@ public static class DemoShotHelpers // TypeDefIndex: 10855
 
 }
 
-public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex: 12533
+public class DemoTimelineController : MonoBehaviour // TypeDefIndex: 12496
+{
+	public PlayableDirector Director; 
+
+
+	private void Reset() { }
+
+	private void Update() { }
+
+	public void .ctor() { }
+
+}
+
+public class DemoTrackBehaviour : PlayableBehaviour // TypeDefIndex: 12497
+{
+	public string DemoName; 
+
+	private bool IsValid { get; }
+
+
+	public override void ProcessFrame(Playable playable, FrameData info, object playerData) { }
+
+	public override void OnBehaviourPlay(Playable playable, FrameData info) { }
+
+	public override void OnBehaviourPause(Playable playable, FrameData info) { }
+
+	private bool get_IsValid() { }
+
+	public void .ctor() { }
+
+}
+
+public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex: 12573
 {
 	public GameObject Root; 
 
@@ -859,7 +891,7 @@ public class DemoPlaybackUI : SingletonComponent<DemoPlaybackUI> // TypeDefIndex
 
 }
 
-public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12534
+public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12574
 {
 	public RustSlider DemoProgress; 
 	public RustText DemoName; 
@@ -911,7 +943,7 @@ public class DemoPlaybackWidget : MonoBehaviour // TypeDefIndex: 12534
 
 }
 
-private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12535
+private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12575
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -939,7 +971,7 @@ private sealed class DemoPlaybackWidget.<WaitAndPause>d__28 : IEnumerator<object
 
 }
 
-public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12536
+public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12576
 {
 	public CanvasGroup Canvas; 
 	public static bool ToggleHide; 
@@ -953,7 +985,7 @@ public class DemoRootFade : MonoBehaviour // TypeDefIndex: 12536
 
 }
 
-public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12537
+public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHandler // TypeDefIndex: 12577
 {
 	public bool FireEventOnClicked; 
 
@@ -968,7 +1000,7 @@ public class DemoShotButton : RustButton, IPointerClickHandler, IEventSystemHand
 
 }
 
-public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12538
+public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12578
 {
 	public RustButton PlayButton; 
 	public Sprite DragSprite; 
@@ -1011,7 +1043,7 @@ public class DemoShotEntry : MonoBehaviour, IDraggable // TypeDefIndex: 12538
 
 }
 
-public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12539
+public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12579
 {
 	public RustButton FolderName; 
 	public Transform ChildRoot; 
@@ -1064,7 +1096,7 @@ public class DemoShotListFolderWidget : MonoBehaviour // TypeDefIndex: 12539
 
 }
 
-public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12540
+public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12580
 {
 
 	public void OnDroppedValue(object data) { }
@@ -1073,7 +1105,7 @@ public class DemoShotListRootFolder : MonoBehaviour // TypeDefIndex: 12540
 
 }
 
-public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // TypeDefIndex: 12541
+public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // TypeDefIndex: 12581
 {
 	public GameObjectRef ShotListEntry; 
 	public GameObjectRef FolderEntry; 
@@ -1124,7 +1156,7 @@ public class DemoShotListWidget : SingletonComponent<DemoShotListWidget> // Type
 
 }
 
-public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12542
+public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12582
 {
 	public RustInput NameInput; 
 	public GameObject RecordingRoot; 
@@ -1167,7 +1199,7 @@ public class DemoShotRecordWidget : MonoBehaviour // TypeDefIndex: 12542
 
 }
 
-public class DemoText : MonoBehaviour // TypeDefIndex: 12543
+public class DemoText : MonoBehaviour // TypeDefIndex: 12583
 {
 	public RustText TimeText; 
 	public RustText TotalSecondText; 
@@ -1187,7 +1219,7 @@ public class DemoText : MonoBehaviour // TypeDefIndex: 12543
 
 }
 
-public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12548
+public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12588
 {
 	public RustInput Input; 
 	public GameObject RecordingUnderlay; 
@@ -1213,7 +1245,7 @@ public class DemoRecorder : SingletonComponent<DemoRecorder> // TypeDefIndex: 12
 
 }
 
-public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // TypeDefIndex: 12549
+public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // TypeDefIndex: 12589
 {
 	public RustText RecordingLabel; 
 	public RustText ProgressLabel; 
@@ -1238,7 +1270,7 @@ public class DemoRecorderProgress : SingletonComponent<DemoRecorderProgress> // 
 
 }
 
-public class DemoItem : RustButton // TypeDefIndex: 12791
+public class DemoItem : RustButton // TypeDefIndex: 12832
 {
 	public Demos demos; 
 	public int itemId; 
@@ -1255,7 +1287,7 @@ public class DemoItem : RustButton // TypeDefIndex: 12791
 
 }
 
-public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // TypeDefIndex: 12792
+public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // TypeDefIndex: 12833
 {
 	public VirtualScroll virtualScroll; 
 	public GameObject deletePopup; 
@@ -1297,7 +1329,7 @@ public class Demos : SingletonComponent<Demos>, VirtualScroll.IDataSource // Typ
 
 }
 
-private struct Demos.DemoInfo // TypeDefIndex: 12793
+private struct Demos.DemoInfo // TypeDefIndex: 12834
 {
 	public string path; 
 	public string name; 
@@ -1309,7 +1341,7 @@ private struct Demos.DemoInfo // TypeDefIndex: 12793
 
 }
 
-private sealed class Demos.<>c // TypeDefIndex: 12794
+private sealed class Demos.<>c // TypeDefIndex: 12835
 {
 	public static readonly Demos.<>c <>9; 
 	public static Func<Demos.DemoInfo, string> <>9__14_0; 
@@ -1341,7 +1373,7 @@ private sealed class Demos.<>c // TypeDefIndex: 12794
 
 }
 
-private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12795
+private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12836
 {
 	public Demos.DemoInfo demoInfo; 
 
@@ -1352,7 +1384,7 @@ private sealed class Demos.<>c__DisplayClass17_0 // TypeDefIndex: 12795
 
 }
 
-public class Demo : ConsoleSystem // TypeDefIndex: 13599
+public class Demo : ConsoleSystem // TypeDefIndex: 13642
 {
 	public static uint Version; 
 	private static bool _hud; 
@@ -1365,6 +1397,8 @@ public class Demo : ConsoleSystem // TypeDefIndex: 13599
 	public static bool compressShotKeyframes; 
 	[ClientVar] 
 	public static bool showLocalPlayerNameTag; 
+	[ClientVar] 
+	public static bool showCommunityUI; 
 
 	[ClientVar] 
 	public static bool hud { get; set; }
@@ -1431,7 +1465,7 @@ public class Demo : ConsoleSystem // TypeDefIndex: 13599
 
 }
 
-public class Demo.Header : DemoHeader, IDemoHeader // TypeDefIndex: 13600
+public class Demo.Header : DemoHeader, IDemoHeader // TypeDefIndex: 13643
 {
 	private long Network.IDemoHeader.Length { get; set; }
 

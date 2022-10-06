@@ -1,4 +1,4 @@
-public class BaseProjectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6319
+public class BaseProjectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class BaseProjectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class Attack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6484
+public class Attack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6488
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -130,7 +130,7 @@ public class Attack : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6484
 
 }
 
-public class ProjectileShoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6489
+public class ProjectileShoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6493
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -192,7 +192,7 @@ public class ProjectileShoot : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class ProjectileShoot.Projectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6490
+public class ProjectileShoot.Projectile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6494
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -256,7 +256,7 @@ public class ProjectileShoot.Projectile : IDisposable, Pool.IPooled, IProto // T
 
 }
 
-public class BaseProjectile : AttackEntity // TypeDefIndex: 10201
+public class BaseProjectile : AttackEntity // TypeDefIndex: 10236
 {
 	[HeaderAttribute] 
 	public float NoiseRadius; 
@@ -333,7 +333,7 @@ public class BaseProjectile : AttackEntity // TypeDefIndex: 10201
 
 	public RecoilProperties get_recoilProperties() { }
 
-	public override Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public override Vector3 GetInheritedVelocity(BasePlayer player, Vector3 direction) { }
 
 	public virtual float GetDamageScale(bool getMax = False) { }
 
@@ -447,7 +447,7 @@ public class BaseProjectile : AttackEntity // TypeDefIndex: 10201
 
 }
 
-public class BaseProjectile.Magazine // TypeDefIndex: 10202
+public class BaseProjectile.Magazine // TypeDefIndex: 10237
 {
 	public BaseProjectile.Magazine.Definition definition; 
 	public int capacity; 
@@ -468,7 +468,7 @@ public class BaseProjectile.Magazine // TypeDefIndex: 10202
 
 }
 
-public struct BaseProjectile.Magazine.Definition // TypeDefIndex: 10203
+public struct BaseProjectile.Magazine.Definition // TypeDefIndex: 10238
 {
 	[TooltipAttribute] 
 	public int builtInSize; 
@@ -478,7 +478,7 @@ public struct BaseProjectile.Magazine.Definition // TypeDefIndex: 10203
 
 }
 
-private sealed class BaseProjectile.<>c // TypeDefIndex: 10204
+private sealed class BaseProjectile.<>c // TypeDefIndex: 10239
 {
 	public static readonly BaseProjectile.<>c <>9; 
 	public static Func<ProjectileWeaponMod, ProjectileWeaponMod.Modifier> <>9__63_0; 
@@ -612,7 +612,7 @@ private sealed class BaseProjectile.<>c // TypeDefIndex: 10204
 
 }
 
-private sealed class BaseProjectile.<>c__DisplayClass84_0 // TypeDefIndex: 10205
+private sealed class BaseProjectile.<>c__DisplayClass84_0 // TypeDefIndex: 10240
 {
 	public BaseProjectile <>4__this; 
 	public ItemDefinition ammoType; 
@@ -624,7 +624,7 @@ private sealed class BaseProjectile.<>c__DisplayClass84_0 // TypeDefIndex: 10205
 
 }
 
-public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10894
+public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10930
 {
 	public const float moveDeltaTime = 0,03125;
 	public const float lifeTime = 8;
@@ -682,8 +682,8 @@ public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10894
 	public float maxDistance; 
 	public Projectile.Modifier modifier; 
 	public bool invisible; 
-	private Vector3 currentVelocity; 
-	private Vector3 currentPosition; 
+	internal Vector3 currentVelocity; 
+	internal Vector3 currentPosition; 
 	private float traveledDistance; 
 	private float traveledTime; 
 	private float launchTime; 
@@ -770,7 +770,7 @@ public class Projectile : BaseMonoBehaviour // TypeDefIndex: 10894
 
 }
 
-public struct Projectile.Modifier // TypeDefIndex: 10895
+public struct Projectile.Modifier // TypeDefIndex: 10931
 {
 	public float damageScale; 
 	public float damageOffset; 
@@ -783,7 +783,7 @@ public struct Projectile.Modifier // TypeDefIndex: 10895
 
 }
 
-public class ProjectileTestSpawner : MonoBehaviour // TypeDefIndex: 10994
+public class ProjectileTestSpawner : MonoBehaviour // TypeDefIndex: 11032
 {
 	public Projectile TargetProjectile; 
 	public float RepeatTime; 
@@ -794,14 +794,14 @@ public class ProjectileTestSpawner : MonoBehaviour // TypeDefIndex: 10994
 
 }
 
-public class AttackTickAIEvent : BaseAIEvent // TypeDefIndex: 11062
+public class AttackTickAIEvent : BaseAIEvent // TypeDefIndex: 11100
 {
 
 	public void .ctor() { }
 
 }
 
-public class AttackedAIEvent : BaseAIEvent // TypeDefIndex: 11063
+public class AttackedAIEvent : BaseAIEvent // TypeDefIndex: 11101
 {
 	protected float lastExecuteTime; 
 	private BaseCombatEntity combatEntity; 
@@ -811,7 +811,7 @@ public class AttackedAIEvent : BaseAIEvent // TypeDefIndex: 11063
 
 }
 
-public class AttackEntity : HeldEntity // TypeDefIndex: 11131
+public class AttackEntity : HeldEntity // TypeDefIndex: 11169
 {
 	[HeaderAttribute] 
 	public float deployDelay; 
@@ -849,7 +849,7 @@ public class AttackEntity : HeldEntity // TypeDefIndex: 11131
 	public float NextAttackTime { get; }
 
 
-	public virtual Vector3 GetInheritedVelocity(BasePlayer player) { }
+	public virtual Vector3 GetInheritedVelocity(BasePlayer player, Vector3 direction) { }
 
 	public float get_NextAttackTime() { }
 
@@ -893,7 +893,7 @@ public class AttackEntity : HeldEntity // TypeDefIndex: 11131
 
 }
 
-public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11298
+public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11336
 {
 	[HeaderAttribute] 
 	public GameObjectRef defaultSilencerEffect; 
@@ -948,7 +948,7 @@ public class ProjectileWeaponMod : BaseEntity // TypeDefIndex: 11298
 
 }
 
-public struct ProjectileWeaponMod.Modifier // TypeDefIndex: 11299
+public struct ProjectileWeaponMod.Modifier // TypeDefIndex: 11337
 {
 	public bool enabled; 
 	[TooltipAttribute] 
@@ -958,7 +958,7 @@ public struct ProjectileWeaponMod.Modifier // TypeDefIndex: 11299
 
 }
 
-private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11300
+private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11338
 {
 	public static readonly ProjectileWeaponMod.<>c <>9; 
 	public static Func<ProjectileWeaponMod, bool> <>9__27_0; 
@@ -978,21 +978,21 @@ private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11300
 
 }
 
-public class AttackTickEventUI : BaseEventUI // TypeDefIndex: 12465
+public class AttackTickEventUI : BaseEventUI // TypeDefIndex: 12505
 {
 
 	public void .ctor() { }
 
 }
 
-public class AttackedEventUI : BaseEventUI // TypeDefIndex: 12466
+public class AttackedEventUI : BaseEventUI // TypeDefIndex: 12506
 {
 
 	public void .ctor() { }
 
 }
 
-public class ProjectileWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12733
+public class ProjectileWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12774
 {
 	public ItemStatValue damageDisplay; 
 	public ItemStatValue recoilDisplay; 

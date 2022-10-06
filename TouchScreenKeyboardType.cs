@@ -1,4 +1,4 @@
-public enum TouchScreenKeyboardType // TypeDefIndex: 3562
+public enum TouchScreenKeyboardType // TypeDefIndex: 3564
 {
 	public int value__; 
 	public const TouchScreenKeyboardType Default = 0;

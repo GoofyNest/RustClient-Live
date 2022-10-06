@@ -1,4 +1,4 @@
-public static class IParticleSystemJobExtensions // TypeDefIndex: 4547
+public static class IParticleSystemJobExtensions // TypeDefIndex: 4550
 {
 
 	[ExtensionAttribute] 

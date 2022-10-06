@@ -1,4 +1,4 @@
-public struct RaycastHit // TypeDefIndex: 3919
+public struct RaycastHit // TypeDefIndex: 3922
 {
 	[NativeNameAttribute] 
 	internal Vector3 m_Point; 

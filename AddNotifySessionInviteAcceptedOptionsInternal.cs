@@ -1,4 +1,4 @@
-internal struct AddNotifySessionInviteAcceptedOptionsInternal : ISettable<AddNotifySessionInviteAcceptedOptions>, IDisposable // TypeDefIndex: 8417
+internal struct AddNotifySessionInviteAcceptedOptionsInternal : ISettable<AddNotifySessionInviteAcceptedOptions>, IDisposable // TypeDefIndex: 8451
 {
 
 internal struct AddNotifySessionInviteAcceptedOptionsInternal : ISettable<AddNotifySessionInviteAcceptedOptions>, IDisposable

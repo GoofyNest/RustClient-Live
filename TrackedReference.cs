@@ -1,4 +1,4 @@
-public class TrackedReference // TypeDefIndex: 3530
+public class TrackedReference // TypeDefIndex: 3532
 {
 	internal IntPtr m_Ptr; 
 

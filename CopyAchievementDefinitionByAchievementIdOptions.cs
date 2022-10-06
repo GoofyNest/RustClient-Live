@@ -1,4 +1,4 @@
-public struct CopyAchievementDefinitionByAchievementIdOptions // TypeDefIndex: 9849
+public struct CopyAchievementDefinitionByAchievementIdOptions // TypeDefIndex: 9883
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <AchievementId>k__BackingField; 

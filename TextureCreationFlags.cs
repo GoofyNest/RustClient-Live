@@ -1,4 +1,4 @@
-public enum TextureCreationFlags // TypeDefIndex: 3899
+public enum TextureCreationFlags // TypeDefIndex: 3902
 {
 	public int value__; 
 	public const TextureCreationFlags None = 0;

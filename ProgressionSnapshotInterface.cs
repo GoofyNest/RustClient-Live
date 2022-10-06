@@ -1,4 +1,4 @@
-public sealed class ProgressionSnapshotInterface : Handle // TypeDefIndex: 8768
+public sealed class ProgressionSnapshotInterface : Handle // TypeDefIndex: 8802
 {
 	public const int AddprogressionApiLatest = 1;
 	public const int BeginsnapshotApiLatest = 1;

@@ -1,4 +1,4 @@
-public static class StringExtensions // TypeDefIndex: 4847
+public static class StringExtensions // TypeDefIndex: 4850
 {
 	private static readonly Regex regexSplitQuotes; 
 	private static char[] spaceOrQuote; 
@@ -50,7 +50,7 @@ public static class StringExtensions // TypeDefIndex: 4847
 
 }
 
-private sealed class StringExtensions.<>c // TypeDefIndex: 4848
+private sealed class StringExtensions.<>c // TypeDefIndex: 4851
 {
 	public static readonly StringExtensions.<>c <>9; 
 	public static Func<char, bool> <>9__15_0; 
@@ -64,7 +64,7 @@ private sealed class StringExtensions.<>c // TypeDefIndex: 4848
 
 }
 
-public static class StringExtensions // TypeDefIndex: 5605
+public static class StringExtensions // TypeDefIndex: 5608
 {
 
 	[ExtensionAttribute] 

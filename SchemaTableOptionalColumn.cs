@@ -1,4 +1,4 @@
-public static class SchemaTableOptionalColumn // TypeDefIndex: 4428
+public static class SchemaTableOptionalColumn // TypeDefIndex: 4431
 {
 	public static readonly string ProviderSpecificDataType; 
 	public static readonly string IsAutoIncrement; 

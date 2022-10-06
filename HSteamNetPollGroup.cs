@@ -1,4 +1,4 @@
-internal struct HSteamNetPollGroup : IEquatable<HSteamNetPollGroup>, IComparable<HSteamNetPollGroup> // TypeDefIndex: 5542
+internal struct HSteamNetPollGroup : IEquatable<HSteamNetPollGroup>, IComparable<HSteamNetPollGroup> // TypeDefIndex: 5545
 {
 	public uint Value; 
 

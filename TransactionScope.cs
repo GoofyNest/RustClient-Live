@@ -1,4 +1,4 @@
-public sealed class TransactionScope // TypeDefIndex: 3989
+public sealed class TransactionScope // TypeDefIndex: 3992
 {
 	private static TransactionOptions defaultOptions; 
 	private bool completed; 

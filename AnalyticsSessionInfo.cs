@@ -1,4 +1,4 @@
-public static class AnalyticsSessionInfo // TypeDefIndex: 4748
+public static class AnalyticsSessionInfo // TypeDefIndex: 4751
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -16,7 +16,7 @@ public static class AnalyticsSessionInfo // TypeDefIndex: 4748
 
 }
 
-public sealed class AnalyticsSessionInfo.SessionStateChanged : MulticastDelegate // TypeDefIndex: 4749
+public sealed class AnalyticsSessionInfo.SessionStateChanged : MulticastDelegate // TypeDefIndex: 4752
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -29,7 +29,7 @@ public sealed class AnalyticsSessionInfo.SessionStateChanged : MulticastDelegate
 
 }
 
-public sealed class AnalyticsSessionInfo.IdentityTokenChanged : MulticastDelegate // TypeDefIndex: 4750
+public sealed class AnalyticsSessionInfo.IdentityTokenChanged : MulticastDelegate // TypeDefIndex: 4753
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public class ResourceDispenser : EntityComponent<BaseEntity>, IServerComponent // TypeDefIndex: 11176
+public class ResourceDispenser : EntityComponent<BaseEntity>, IServerComponent // TypeDefIndex: 11214
 {
 	public ResourceDispenser.GatherType gatherType; 
 	public List<ItemAmount> containedItems; 
@@ -11,7 +11,7 @@ public class ResourceDispenser : EntityComponent<BaseEntity>, IServerComponent /
 
 }
 
-public enum ResourceDispenser.GatherType // TypeDefIndex: 11177
+public enum ResourceDispenser.GatherType // TypeDefIndex: 11215
 {
 	public int value__; 
 	public const ResourceDispenser.GatherType Tree = 0;
@@ -22,7 +22,7 @@ public enum ResourceDispenser.GatherType // TypeDefIndex: 11177
 
 }
 
-public class ResourceDispenser.GatherPropertyEntry // TypeDefIndex: 11178
+public class ResourceDispenser.GatherPropertyEntry // TypeDefIndex: 11216
 {
 	public float gatherDamage; 
 	public float destroyFraction; 
@@ -33,7 +33,7 @@ public class ResourceDispenser.GatherPropertyEntry // TypeDefIndex: 11178
 
 }
 
-public class ResourceDispenser.GatherProperties // TypeDefIndex: 11179
+public class ResourceDispenser.GatherProperties // TypeDefIndex: 11217
 {
 	public ResourceDispenser.GatherPropertyEntry Tree; 
 	public ResourceDispenser.GatherPropertyEntry Ore; 

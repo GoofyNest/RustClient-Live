@@ -1,4 +1,4 @@
-internal class Utf8StringToNative : ICustomMarshaler // TypeDefIndex: 5271
+internal class Utf8StringToNative : ICustomMarshaler // TypeDefIndex: 5274
 {
 
 	public IntPtr MarshalManagedToNative(object managedObj) { }

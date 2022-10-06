@@ -1,4 +1,4 @@
-public enum CameraEvent // TypeDefIndex: 3816
+public enum CameraEvent // TypeDefIndex: 3818
 {
 	public int value__; 
 	public const CameraEvent BeforeDepthTexture = 0;

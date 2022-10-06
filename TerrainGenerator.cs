@@ -1,4 +1,4 @@
-public class TerrainGenerator : SingletonComponent<TerrainGenerator> // TypeDefIndex: 12247
+public class TerrainGenerator : SingletonComponent<TerrainGenerator> // TypeDefIndex: 12285
 {
 	public TerrainConfig config; 
 	private const float HeightMapRes = 1;

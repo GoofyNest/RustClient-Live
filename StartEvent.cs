@@ -1,4 +1,4 @@
-public sealed class StartEvent : SystemRealTimeEvent // TypeDefIndex: 7542
+public sealed class StartEvent : SystemRealTimeEvent // TypeDefIndex: 7576
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class PropertyChangingEventArgs : EventArgs // TypeDefIndex: 5863
+public class PropertyChangingEventArgs : EventArgs // TypeDefIndex: 5866
 {
 	[CompilerGeneratedAttribute] 
 	private string <PropertyName>k__BackingField; 

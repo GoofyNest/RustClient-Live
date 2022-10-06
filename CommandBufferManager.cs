@@ -1,4 +1,4 @@
-public class CommandBufferManager : MonoBehaviour // TypeDefIndex: 12324
+public class CommandBufferManager : MonoBehaviour // TypeDefIndex: 12362
 {
 	private Camera _targetCamera; 
 	private Dictionary<int, CommandBufferManager.CommandBufferEntry> commandBuffers; 
@@ -44,7 +44,7 @@ public class CommandBufferManager : MonoBehaviour // TypeDefIndex: 12324
 
 }
 
-private struct CommandBufferManager.CommandBufferEntry : IEquatable<CommandBufferManager.CommandBufferEntry> // TypeDefIndex: 12325
+private struct CommandBufferManager.CommandBufferEntry : IEquatable<CommandBufferManager.CommandBufferEntry> // TypeDefIndex: 12363
 {
 	public CommandBuffer buffer; 
 	public List<KeyValuePair<int, Action<CommandBuffer>>> orderedFill; 
@@ -62,7 +62,7 @@ private struct CommandBufferManager.CommandBufferEntry : IEquatable<CommandBuffe
 
 }
 
-private sealed class CommandBufferManager.CommandBufferEntry.<>c__DisplayClass3_0 // TypeDefIndex: 12326
+private sealed class CommandBufferManager.CommandBufferEntry.<>c__DisplayClass3_0 // TypeDefIndex: 12364
 {
 	public int orderId; 
 

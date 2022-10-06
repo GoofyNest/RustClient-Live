@@ -1,4 +1,4 @@
-internal class APIUpdaterRuntimeHelpers // TypeDefIndex: 3575
+internal class APIUpdaterRuntimeHelpers // TypeDefIndex: 3577
 {
 
 	[RequiredByNativeCodeAttribute] 

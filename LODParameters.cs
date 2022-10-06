@@ -1,4 +1,4 @@
-public struct LODParameters : IEquatable<LODParameters> // TypeDefIndex: 3848
+public struct LODParameters : IEquatable<LODParameters> // TypeDefIndex: 3850
 {
 	private int m_IsOrthographic; 
 	private Vector3 m_CameraPosition; 

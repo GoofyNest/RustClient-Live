@@ -1,4 +1,4 @@
-internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegate // TypeDefIndex: 4305
+internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegate // TypeDefIndex: 4308
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -41,7 +41,7 @@ internal sealed class Listeners.Action<TElem, T1, T2, T3, T4> : MulticastDelegat
 
 }
 
-internal sealed class Listeners.Func<TElem, T1, TResult> : MulticastDelegate // TypeDefIndex: 4306
+internal sealed class Listeners.Func<TElem, T1, TResult> : MulticastDelegate // TypeDefIndex: 4309
 {
 
 	public void .ctor(object object, IntPtr method) { }

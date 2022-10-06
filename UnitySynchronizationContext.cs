@@ -1,4 +1,4 @@
-internal sealed class UnitySynchronizationContext : SynchronizationContext // TypeDefIndex: 3536
+internal sealed class UnitySynchronizationContext : SynchronizationContext // TypeDefIndex: 3538
 {
 	private readonly List<UnitySynchronizationContext.WorkRequest> m_AsyncWorkQueue; 
 	private readonly List<UnitySynchronizationContext.WorkRequest> m_CurrentFrameWork; 
@@ -35,7 +35,7 @@ internal sealed class UnitySynchronizationContext : SynchronizationContext // Ty
 
 }
 
-private struct UnitySynchronizationContext.WorkRequest // TypeDefIndex: 3537
+private struct UnitySynchronizationContext.WorkRequest // TypeDefIndex: 3539
 {
 	private readonly SendOrPostCallback m_DelagateCallback; 
 	private readonly object m_DelagateState; 

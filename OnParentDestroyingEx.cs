@@ -1,4 +1,4 @@
-public static class OnParentDestroyingEx // TypeDefIndex: 11580
+public static class OnParentDestroyingEx // TypeDefIndex: 11618
 {
 
 	[ExtensionAttribute] 

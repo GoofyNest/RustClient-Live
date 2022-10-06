@@ -1,4 +1,4 @@
-public struct CopyFileMetadataByFilenameOptions // TypeDefIndex: 8341
+public struct CopyFileMetadataByFilenameOptions // TypeDefIndex: 8375
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 
@@ -23,7 +23,7 @@ public struct CopyFileMetadataByFilenameOptions // TypeDefIndex: 8341
 
 }
 
-public struct CopyFileMetadataByFilenameOptions // TypeDefIndex: 8826
+public struct CopyFileMetadataByFilenameOptions // TypeDefIndex: 8860
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

@@ -1,4 +1,4 @@
-internal static class FleckRuntime // TypeDefIndex: 6935
+internal static class FleckRuntime // TypeDefIndex: 6967
 {
 
 	public static bool IsRunningOnMono() { }

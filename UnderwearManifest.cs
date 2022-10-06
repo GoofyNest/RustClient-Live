@@ -1,4 +1,4 @@
-public class UnderwearManifest : ScriptableObject // TypeDefIndex: 12453
+public class UnderwearManifest : ScriptableObject // TypeDefIndex: 12491
 {
 	public static UnderwearManifest instance; 
 	public List<Underwear> underwears; 

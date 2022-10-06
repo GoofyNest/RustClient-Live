@@ -1,4 +1,4 @@
-public sealed class DetailPrototype // TypeDefIndex: 4091
+public sealed class DetailPrototype // TypeDefIndex: 4094
 {
 
 [UsedByNativeCodeAttribute] 

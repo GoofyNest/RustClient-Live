@@ -1,4 +1,4 @@
-internal class PropertyNameUtils // TypeDefIndex: 3485
+internal class PropertyNameUtils // TypeDefIndex: 3487
 {
 
 	[FreeFunctionAttribute] 

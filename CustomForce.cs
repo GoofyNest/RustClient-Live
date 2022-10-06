@@ -1,4 +1,4 @@
-public sealed class CustomForce : MulticastDelegate // TypeDefIndex: 7128
+public sealed class CustomForce : MulticastDelegate // TypeDefIndex: 7162
 {
 
 	public void .ctor(object object, IntPtr method) { }

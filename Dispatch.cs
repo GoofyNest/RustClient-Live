@@ -1,4 +1,4 @@
-public static class Dispatch // TypeDefIndex: 5105
+public static class Dispatch // TypeDefIndex: 5108
 {
 	public static Action<CallbackType, string, bool> OnDebugCallback; 
 	public static Action<Exception> OnException; 
@@ -185,7 +185,7 @@ public static class Dispatch // TypeDefIndex: 5105
 
 }
 
-internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5106
+internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5109
 {
 	public HSteamUser m_hSteamUser; 
 	public CallbackType Type; 
@@ -194,21 +194,21 @@ internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5106
 
 }
 
-private struct Dispatch.ResultCallback // TypeDefIndex: 5107
+private struct Dispatch.ResultCallback // TypeDefIndex: 5110
 {
 	public Action continuation; 
 	public bool server; 
 
 }
 
-private struct Dispatch.Callback // TypeDefIndex: 5108
+private struct Dispatch.Callback // TypeDefIndex: 5111
 {
 	public Action<IntPtr> action; 
 	public bool server; 
 
 }
 
-private sealed class Dispatch.<>c // TypeDefIndex: 5109
+private sealed class Dispatch.<>c // TypeDefIndex: 5112
 {
 	public static readonly Dispatch.<>c <>9; 
 	public static Func<FieldInfo, int> <>9__20_0; 
@@ -234,7 +234,7 @@ private sealed class Dispatch.<>c // TypeDefIndex: 5109
 
 }
 
-private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5110
+private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5113
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -248,7 +248,7 @@ private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIn
 
 }
 
-private sealed class Dispatch.<>c__DisplayClass29_0<T> // TypeDefIndex: 5111
+private sealed class Dispatch.<>c__DisplayClass29_0<T> // TypeDefIndex: 5114
 {
 	public Action<T> p; 
 

@@ -1,4 +1,4 @@
-public enum CatalogLocation // TypeDefIndex: 4364
+public enum CatalogLocation // TypeDefIndex: 4367
 {
 	public int value__; 
 	public const CatalogLocation Start = 1;

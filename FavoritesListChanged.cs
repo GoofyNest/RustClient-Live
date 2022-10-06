@@ -1,4 +1,4 @@
-internal struct FavoritesListChanged_t : ICallbackData // TypeDefIndex: 5336
+internal struct FavoritesListChanged_t : ICallbackData // TypeDefIndex: 5339
 {
 	internal uint IP; 
 	internal uint QueryPort; 

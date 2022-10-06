@@ -1,4 +1,4 @@
-public sealed class StateChangeEventHandler : MulticastDelegate // TypeDefIndex: 4309
+public sealed class StateChangeEventHandler : MulticastDelegate // TypeDefIndex: 4312
 {
 
 	public void .ctor(object object, IntPtr method) { }

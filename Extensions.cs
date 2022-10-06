@@ -1,4 +1,4 @@
-public static class Extensions // TypeDefIndex: 6048
+public static class Extensions // TypeDefIndex: 6051
 {
 
 	[ExtensionAttribute] 
@@ -20,6 +20,13 @@ public static class Extensions // TypeDefIndex: 6048
 	*/
 
 	[ExtensionAttribute] 
+	internal static IEnumerable<U> Convert<T, U>(IEnumerable<T> source) { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.Convert<object, object>
+	*/
+
+	[ExtensionAttribute] 
 	internal static U Convert<T, U>(T token) { }
 	/* GenericInstMethod :
 	|
@@ -30,7 +37,7 @@ public static class Extensions // TypeDefIndex: 6048
 
 }
 
-private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6049
+private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6052
 {
 	public static readonly Extensions.<>c__0<T> <>9; 
 
@@ -49,7 +56,7 @@ private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6049
 
 }
 
-private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6050
+private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6053
 {
 	public static readonly Extensions.<>c__1<T> <>9; 
 
@@ -68,7 +75,7 @@ private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6050
 
 }
 
-private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6051
+private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6054
 {
 	public static readonly Extensions.<>c__2<T> <>9; 
 
@@ -87,7 +94,7 @@ private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6051
 
 }
 
-private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6052
+private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6055
 {
 	public static readonly Extensions.<>c__3<T> <>9; 
 
@@ -106,7 +113,7 @@ private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6052
 
 }
 
-private sealed class Extensions.<>c // TypeDefIndex: 6053
+private sealed class Extensions.<>c // TypeDefIndex: 6056
 {
 	public static readonly Extensions.<>c <>9; 
 
@@ -117,7 +124,7 @@ private sealed class Extensions.<>c // TypeDefIndex: 6053
 
 }
 
-private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6055
+private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6058
 {
 
 [CompilerGeneratedAttribute] 
@@ -140,7 +147,83 @@ private sealed class Extensions.<>c__13<T, U>
 
 }
 
-public static class Extensions // TypeDefIndex: 8111
+private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerable, IEnumerator<U>, IDisposable, IEnumerator // TypeDefIndex: 6059
+{
+	private int <>1__state; 
+	private U <>2__current; 
+	private int <>l__initialThreadId; 
+	private IEnumerable<T> source; 
+	public IEnumerable<T> <>3__source; 
+	private IEnumerator<T> <>7__wrap1; 
+
+	private U System.Collections.Generic.IEnumerator<U>.Current { get; }
+	private object System.Collections.IEnumerator.Current { get; }
+
+
+	[DebuggerHiddenAttribute] 
+	public void .ctor(int <>1__state) { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>..ctor
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private void System.IDisposable.Dispose() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.System.IDisposable.Dispose
+	*/
+
+	private bool MoveNext() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.MoveNext
+	*/
+
+	private void <>m__Finally1() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.<>m__Finally1
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private U System.Collections.Generic.IEnumerator<U>.get_Current() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.System.Collections.Generic.IEnumerator<U>.get_Current
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private void System.Collections.IEnumerator.Reset() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.System.Collections.IEnumerator.Reset
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private object System.Collections.IEnumerator.get_Current() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.System.Collections.IEnumerator.get_Current
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator<U> System.Collections.Generic.IEnumerable<U>.GetEnumerator() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.System.Collections.Generic.IEnumerable<U>.GetEnumerator
+	*/
+
+	[DebuggerHiddenAttribute] 
+	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
+	/* GenericInstMethod :
+	|
+	|-Extensions.<Convert>d__14<object, object>.System.Collections.IEnumerable.GetEnumerator
+	*/
+
+}
+
+public static class Extensions // TypeDefIndex: 8145
 {
 
 	[ExtensionAttribute] 
@@ -155,7 +238,7 @@ public static class Extensions // TypeDefIndex: 8111
 
 }
 
-public static class Extensions // TypeDefIndex: 8221
+public static class Extensions // TypeDefIndex: 8255
 {
 
 	[ExtensionAttribute] 
@@ -166,7 +249,7 @@ public static class Extensions // TypeDefIndex: 8221
 
 }
 
-public static class Extensions // TypeDefIndex: 13264
+public static class Extensions // TypeDefIndex: 13307
 {
 
 	[ExtensionAttribute] 

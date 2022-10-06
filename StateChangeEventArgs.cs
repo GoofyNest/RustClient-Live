@@ -1,4 +1,4 @@
-public sealed class StateChangeEventArgs : EventArgs // TypeDefIndex: 4308
+public sealed class StateChangeEventArgs : EventArgs // TypeDefIndex: 4311
 {
 	private ConnectionState _originalState; 
 	private ConnectionState _currentState; 

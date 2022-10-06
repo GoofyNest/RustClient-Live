@@ -1,4 +1,4 @@
-public sealed class TerrainLayer : Object // TypeDefIndex: 4095
+public sealed class TerrainLayer : Object // TypeDefIndex: 4098
 {
 	public Texture2D diffuseTexture { get; }
 

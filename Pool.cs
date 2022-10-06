@@ -1,4 +1,4 @@
-public static class Pool // TypeDefIndex: 4836
+public static class Pool // TypeDefIndex: 4839
 {
 	public static Dictionary<Type, Pool.ICollection> directory; 
 
@@ -115,6 +115,7 @@ public static class Pool // TypeDefIndex: 4836
 	|-Pool.FreeList<RelationshipManager.PlayerRelationshipInfo>
 	|-Pool.FreeList<RendererBatch>
 	|-Pool.FreeList<ItemModEngineItem>
+	|-Pool.FreeList<RustButton>
 	|-Pool.FreeList<ServerAdminUGCEntry>
 	|-Pool.FreeList<ServerAdminUGCEntryPattern>
 	|-Pool.FreeList<ShoutcastStreamer>
@@ -279,6 +280,7 @@ public static class Pool // TypeDefIndex: 4836
 	|-Pool.Free<BaseEntity>
 	|-Pool.Free<BaseNPC>
 	|-Pool.Free<BaseNetworkable>
+	|-Pool.Free<BaseOven>
 	|-Pool.Free<BasePlayer>
 	|-Pool.Free<BaseProjectile>
 	|-Pool.Free<BaseResource>
@@ -595,6 +597,7 @@ public static class Pool // TypeDefIndex: 4836
 	|-Pool.Get<BaseEntity>
 	|-Pool.Get<BaseNPC>
 	|-Pool.Get<BaseNetworkable>
+	|-Pool.Get<BaseOven>
 	|-Pool.Get<BasePlayer>
 	|-Pool.Get<BaseProjectile>
 	|-Pool.Get<BaseResource>
@@ -1010,6 +1013,7 @@ public static class Pool // TypeDefIndex: 4836
 	|-Pool.GetList<RelationshipManager.PlayerRelationshipInfo>
 	|-Pool.GetList<RendererBatch>
 	|-Pool.GetList<ItemModEngineItem>
+	|-Pool.GetList<RustButton>
 	|-Pool.GetList<ServerAdminUGCEntry>
 	|-Pool.GetList<ServerAdminUGCEntryPattern>
 	|-Pool.GetList<ShoutcastStreamer>
@@ -1134,7 +1138,7 @@ public static class Pool // TypeDefIndex: 4836
 
 }
 
-public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4839
+public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4842
 {
 	public T[] buffer; 
 	[CompilerGeneratedAttribute] 
@@ -1251,7 +1255,7 @@ public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4839
 
 }
 
-public class Pool : ConsoleSystem // TypeDefIndex: 13647
+public class Pool : ConsoleSystem // TypeDefIndex: 13690
 {
 	[ServerVar] 
 	[ClientVar] 
@@ -1301,7 +1305,7 @@ public class Pool : ConsoleSystem // TypeDefIndex: 13647
 
 }
 
-private sealed class Pool.<>c // TypeDefIndex: 13648
+private sealed class Pool.<>c // TypeDefIndex: 13691
 {
 	public static readonly Pool.<>c <>9; 
 	public static Func<KeyValuePair<Type, Pool.ICollection>, long> <>9__4_0; 

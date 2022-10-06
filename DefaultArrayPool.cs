@@ -1,4 +1,4 @@
-private sealed class DefaultArrayPool.Bucket<T> // TypeDefIndex: 6272
+private sealed class DefaultArrayPool.Bucket<T> // TypeDefIndex: 6275
 {
 	internal readonly int _bufferLength; 
 	private readonly T[][] _buffers; 

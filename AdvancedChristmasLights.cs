@@ -1,4 +1,4 @@
-public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 9971
+public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 10005
 {
 	private Option __menuOption_Menu_Lightmode_Chasing; 
 	private Option __menuOption_Menu_Lightmode_Fade; 
@@ -100,14 +100,14 @@ public class AdvancedChristmasLights : IOEntity // TypeDefIndex: 9971
 
 }
 
-public struct AdvancedChristmasLights.pointEntry // TypeDefIndex: 9972
+public struct AdvancedChristmasLights.pointEntry // TypeDefIndex: 10006
 {
 	public Vector3 point; 
 	public Vector3 normal; 
 
 }
 
-public enum AdvancedChristmasLights.AnimationType // TypeDefIndex: 9973
+public enum AdvancedChristmasLights.AnimationType // TypeDefIndex: 10007
 {
 	public int value__; 
 	public const AdvancedChristmasLights.AnimationType ON = 1;

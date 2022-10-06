@@ -1,4 +1,4 @@
-public class WorkshopView : MonoBehaviour // TypeDefIndex: 7742
+public class WorkshopView : MonoBehaviour // TypeDefIndex: 7776
 {
 	public TextMeshProUGUI Title; 
 	public TextMeshProUGUI AuthorName; 

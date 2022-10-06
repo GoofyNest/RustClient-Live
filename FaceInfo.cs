@@ -1,4 +1,4 @@
-public struct FaceInfo // TypeDefIndex: 4109
+public struct FaceInfo // TypeDefIndex: 4112
 {
 
 [UsedByNativeCodeAttribute] 
@@ -153,7 +153,7 @@ public struct FaceInfo
 
 }
 
-public class FaceInfo_Legacy // TypeDefIndex: 6763
+public class FaceInfo_Legacy // TypeDefIndex: 6697
 {
 	public string Name; 
 	public float PointSize; 

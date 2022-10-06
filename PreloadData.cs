@@ -1,4 +1,4 @@
-internal class PreloadData : Object // TypeDefIndex: 3552
+internal class PreloadData : Object // TypeDefIndex: 3554
 {
 
 	[RequiredByNativeCodeAttribute] 

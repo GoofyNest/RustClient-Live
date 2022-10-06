@@ -1,4 +1,4 @@
-public class Horse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6367
+public class Horse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6370
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -64,7 +64,7 @@ public class Horse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6367
 
 }
 
-public class Horse : BaseAnimalNPC // TypeDefIndex: 10599
+public class Horse : BaseAnimalNPC // TypeDefIndex: 10635
 {
 	[ServerVar] 
 	public static float Population; 

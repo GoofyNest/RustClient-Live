@@ -1,4 +1,4 @@
-public class VFXExpressionValues // TypeDefIndex: 4760
+public class VFXExpressionValues // TypeDefIndex: 4763
 {
 
 [RequiredByNativeCodeAttribute] 

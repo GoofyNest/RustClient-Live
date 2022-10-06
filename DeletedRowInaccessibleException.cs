@@ -1,4 +1,4 @@
-public class DeletedRowInaccessibleException : DataException // TypeDefIndex: 4193
+public class DeletedRowInaccessibleException : DataException // TypeDefIndex: 4196
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

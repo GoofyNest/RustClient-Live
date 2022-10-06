@@ -1,4 +1,4 @@
-private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7479
+private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7513
 {
 	public long maxTime; 
 
@@ -23,7 +23,7 @@ private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 74
 
 }
 
-private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7480
+private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7514
 {
 	public static readonly ValueLine.<>c<TValue> <>9; 
 	public static Func<ValueChange<TValue>, TValue> <>9__16_1; 

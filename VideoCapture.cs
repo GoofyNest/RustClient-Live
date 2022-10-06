@@ -1,4 +1,4 @@
-public class VideoCapture : IDisposable // TypeDefIndex: 3616
+public class VideoCapture : IDisposable // TypeDefIndex: 3618
 {
 	internal IntPtr m_NativePtr; 
 	private static readonly long HR_SUCCESS; 
@@ -31,16 +31,16 @@ public class VideoCapture : IDisposable // TypeDefIndex: 3616
 
 	protected override void Finalize() { }
 
-	[NativeConditionalAttribute] 
-	[ThreadAndSerializationSafeAttribute] 
 	[NativeMethodAttribute] 
+	[ThreadAndSerializationSafeAttribute] 
+	[NativeConditionalAttribute] 
 	private void DisposeThreaded_Internal() { }
 
 	private static void .cctor() { }
 
 }
 
-public enum VideoCapture.CaptureResultType // TypeDefIndex: 3617
+public enum VideoCapture.CaptureResultType // TypeDefIndex: 3619
 {
 	public int value__; 
 	public const VideoCapture.CaptureResultType Success = 0;
@@ -48,14 +48,14 @@ public enum VideoCapture.CaptureResultType // TypeDefIndex: 3617
 
 }
 
-public struct VideoCapture.VideoCaptureResult // TypeDefIndex: 3618
+public struct VideoCapture.VideoCaptureResult // TypeDefIndex: 3620
 {
 	public VideoCapture.CaptureResultType resultType; 
 	public long hResult; 
 
 }
 
-public sealed class VideoCapture.OnVideoCaptureResourceCreatedCallback : MulticastDelegate // TypeDefIndex: 3619
+public sealed class VideoCapture.OnVideoCaptureResourceCreatedCallback : MulticastDelegate // TypeDefIndex: 3621
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -68,7 +68,7 @@ public sealed class VideoCapture.OnVideoCaptureResourceCreatedCallback : Multica
 
 }
 
-public sealed class VideoCapture.OnVideoModeStartedCallback : MulticastDelegate // TypeDefIndex: 3620
+public sealed class VideoCapture.OnVideoModeStartedCallback : MulticastDelegate // TypeDefIndex: 3622
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -81,7 +81,7 @@ public sealed class VideoCapture.OnVideoModeStartedCallback : MulticastDelegate 
 
 }
 
-public sealed class VideoCapture.OnVideoModeStoppedCallback : MulticastDelegate // TypeDefIndex: 3621
+public sealed class VideoCapture.OnVideoModeStoppedCallback : MulticastDelegate // TypeDefIndex: 3623
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -94,7 +94,7 @@ public sealed class VideoCapture.OnVideoModeStoppedCallback : MulticastDelegate 
 
 }
 
-public sealed class VideoCapture.OnStartedRecordingVideoCallback : MulticastDelegate // TypeDefIndex: 3622
+public sealed class VideoCapture.OnStartedRecordingVideoCallback : MulticastDelegate // TypeDefIndex: 3624
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -107,7 +107,7 @@ public sealed class VideoCapture.OnStartedRecordingVideoCallback : MulticastDele
 
 }
 
-public sealed class VideoCapture.OnStoppedRecordingVideoCallback : MulticastDelegate // TypeDefIndex: 3623
+public sealed class VideoCapture.OnStoppedRecordingVideoCallback : MulticastDelegate // TypeDefIndex: 3625
 {
 
 	public void .ctor(object object, IntPtr method) { }

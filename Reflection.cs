@@ -1,10 +1,5 @@
-public class Reflection : ConsoleSystem // TypeDefIndex: 13650
+public class Reflection : ConsoleSystem // TypeDefIndex: 13693
 {
-	[ClientVar] 
-	public static bool interiors; 
-	[ClientVar] 
-	public static bool forests; 
-
 	[ClientVar] 
 	public static int resolution { get; set; }
 	[ClientVar] 
@@ -30,8 +25,6 @@ public class Reflection : ConsoleSystem // TypeDefIndex: 13650
 	private static int TimeSlicingToInt(ReflectionProbeTimeSlicingMode mode) { }
 
 	public void .ctor() { }
-
-	private static void .cctor() { }
 
 }
 

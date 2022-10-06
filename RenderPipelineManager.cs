@@ -1,10 +1,10 @@
-public static class RenderPipelineManager // TypeDefIndex: 3851
+public static class RenderPipelineManager // TypeDefIndex: 3853
 {
 	private static RenderPipelineAsset s_CurrentPipelineAsset; 
 	private static Camera[] s_Cameras; 
 	private static int s_CameraCapacity; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static RenderPipeline <currentPipeline>k__BackingField; 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 

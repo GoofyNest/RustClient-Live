@@ -1,4 +1,4 @@
-public struct SqlDateTime : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4343
+public struct SqlDateTime : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4346
 {
 	private bool m_fNotNull; 
 	private int m_day; 

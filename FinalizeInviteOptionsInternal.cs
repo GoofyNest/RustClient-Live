@@ -1,4 +1,4 @@
-internal struct FinalizeInviteOptionsInternal : ISettable<FinalizeInviteOptions>, IDisposable // TypeDefIndex: 9485
+internal struct FinalizeInviteOptionsInternal : ISettable<FinalizeInviteOptions>, IDisposable // TypeDefIndex: 9519
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

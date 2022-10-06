@@ -1,4 +1,4 @@
-public class VendingMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6340
+public class VendingMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6343
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class VendingMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class VendingMachine.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6341
+public class VendingMachine.SellOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6344
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -132,7 +132,7 @@ public class VendingMachine.SellOrder : IDisposable, Pool.IPooled, IProto // Typ
 
 }
 
-public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
+public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6345
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -193,7 +193,7 @@ public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IPro
 
 }
 
-public class VendingMachine : StorageContainer // TypeDefIndex: 10155
+public class VendingMachine : StorageContainer // TypeDefIndex: 10189
 {
 	private Option __menuOption_Menu_BroadcastOff; 
 	private Option __menuOption_Menu_BroadcastOn; 
@@ -302,7 +302,7 @@ public class VendingMachine : StorageContainer // TypeDefIndex: 10155
 
 }
 
-public static class VendingMachine.VendingMachineFlags // TypeDefIndex: 10156
+public static class VendingMachine.VendingMachineFlags // TypeDefIndex: 10190
 {
 	public const BaseEntity.Flags EmptyInv = 128;
 	public const BaseEntity.Flags IsVending = 256;

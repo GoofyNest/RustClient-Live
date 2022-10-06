@@ -1,4 +1,4 @@
-internal sealed class UnhandledExceptionHandler // TypeDefIndex: 3531
+internal sealed class UnhandledExceptionHandler // TypeDefIndex: 3533
 {
 
 	[RequiredByNativeCodeAttribute] 
@@ -6,7 +6,7 @@ internal sealed class UnhandledExceptionHandler // TypeDefIndex: 3531
 
 }
 
-private sealed class UnhandledExceptionHandler.<>c // TypeDefIndex: 3532
+private sealed class UnhandledExceptionHandler.<>c // TypeDefIndex: 3534
 {
 	public static readonly UnhandledExceptionHandler.<>c <>9; 
 	public static UnhandledExceptionEventHandler <>9__0_0; 

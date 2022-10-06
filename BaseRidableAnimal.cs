@@ -1,4 +1,4 @@
-public class BaseRidableAnimal : BaseVehicle // TypeDefIndex: 10018
+public class BaseRidableAnimal : BaseVehicle // TypeDefIndex: 10052
 {
 	private Option __menuOption_Menu_Claim; 
 	private Option __menuOption_Menu_Lead; 
@@ -13,7 +13,7 @@ public class BaseRidableAnimal : BaseVehicle // TypeDefIndex: 10018
 	public string lootPanelName; 
 	public bool needsBuildingPrivilegeToUse; 
 	public bool isLootable; 
-	protected ItemContainer inventory; 
+	public ItemContainer inventory; 
 	public const BaseEntity.Flags Flag_ForSale = 256;
 	private Vector3 lastMoveDirection; 
 	public GameObjectRef saddlePrefab; 
@@ -181,7 +181,7 @@ public class BaseRidableAnimal : BaseVehicle // TypeDefIndex: 10018
 
 }
 
-public enum BaseRidableAnimal.RunState // TypeDefIndex: 10019
+public enum BaseRidableAnimal.RunState // TypeDefIndex: 10053
 {
 	public int value__; 
 	public const BaseRidableAnimal.RunState stopped = 1;

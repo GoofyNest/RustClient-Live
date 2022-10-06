@@ -1,4 +1,4 @@
-internal class PropertyNameTable // TypeDefIndex: 5920
+internal class PropertyNameTable // TypeDefIndex: 5923
 {
 	private static readonly int HashCodeRandomizer; 
 	private int _count; 
@@ -22,7 +22,7 @@ internal class PropertyNameTable // TypeDefIndex: 5920
 
 }
 
-private class PropertyNameTable.Entry // TypeDefIndex: 5921
+private class PropertyNameTable.Entry // TypeDefIndex: 5924
 {
 	internal readonly string Value; 
 	internal readonly int HashCode; 

@@ -1,4 +1,4 @@
-internal static class CollectionUtils // TypeDefIndex: 5962
+internal static class CollectionUtils // TypeDefIndex: 5965
 {
 
 	public static bool IsNullOrEmpty<T>(ICollection<T> collection) { }

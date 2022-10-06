@@ -1,4 +1,4 @@
-internal sealed class Select // TypeDefIndex: 4297
+internal sealed class Select // TypeDefIndex: 4300
 {
 	private readonly DataTable _table; 
 	private readonly IndexField[] _indexFields; 
@@ -63,7 +63,7 @@ internal sealed class Select // TypeDefIndex: 4297
 
 }
 
-private sealed class Select.ColumnInfo // TypeDefIndex: 4298
+private sealed class Select.ColumnInfo // TypeDefIndex: 4301
 {
 	public bool flag; 
 	public bool equalsOperator; 

@@ -1,4 +1,4 @@
-internal struct HTTPRequestCompleted_t : ICallbackData // TypeDefIndex: 5425
+internal struct HTTPRequestCompleted_t : ICallbackData // TypeDefIndex: 5428
 {
 	internal uint Request; 
 	internal ulong ContextValue; 

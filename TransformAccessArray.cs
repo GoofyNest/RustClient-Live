@@ -1,4 +1,4 @@
-public struct TransformAccessArray : IDisposable // TypeDefIndex: 3590
+public struct TransformAccessArray : IDisposable // TypeDefIndex: 3592
 {
 	private IntPtr m_TransformArray; 
 

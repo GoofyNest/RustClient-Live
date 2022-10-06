@@ -1,4 +1,4 @@
-private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 4799
+private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 4802
 {
 	public int Count { get; }
 
@@ -48,7 +48,7 @@ private sealed class ImmutableStack.EmptyStack<T> : IImmutableStack<T>, IEnumera
 
 }
 
-private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4800
+private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4803
 {
 	private int <>1__state; 
 	private T <>2__current; 
@@ -100,7 +100,7 @@ private sealed class ImmutableStack.EmptyStack.<GetEnumerator>d__5<T> : IEnumera
 
 }
 
-private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4801
+private sealed class ImmutableStack.<GetEnumerator>d__13<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4804
 {
 	private int <>1__state; 
 	private T <>2__current; 

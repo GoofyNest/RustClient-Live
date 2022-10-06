@@ -1,4 +1,4 @@
-public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // TypeDefIndex: 8190
+public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // TypeDefIndex: 8224
 {
 	public VignetteAndChromaticAberration.AberrationMode mode; 
 	public float intensity; 
@@ -26,7 +26,7 @@ public class VignetteAndChromaticAberration : PostEffectsBase, IImageEffect // T
 
 }
 
-public enum VignetteAndChromaticAberration.AberrationMode // TypeDefIndex: 8191
+public enum VignetteAndChromaticAberration.AberrationMode // TypeDefIndex: 8225
 {
 	public int value__; 
 	public const VignetteAndChromaticAberration.AberrationMode Simple = 0;

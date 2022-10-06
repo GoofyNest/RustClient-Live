@@ -1,4 +1,4 @@
-public class Physics // TypeDefIndex: 3934
+public class Physics // TypeDefIndex: 3937
 {
 	public static Vector3 gravity { get; }
 	public static bool queriesHitBackfaces { get; set; }
@@ -225,7 +225,7 @@ public class Physics // TypeDefIndex: 3934
 
 }
 
-public class Physics : ConsoleSystem // TypeDefIndex: 13644
+public class Physics : ConsoleSystem // TypeDefIndex: 13687
 {
 	[ClientVar] 
 	public static int ragdollmode; 

@@ -15,7 +15,7 @@ internal abstract class Base64Encoder // TypeDefIndex: 1813
 
 }
 
-internal class Base64Encoder // TypeDefIndex: 5918
+internal class Base64Encoder // TypeDefIndex: 5921
 {
 	private readonly char[] _charsLine; 
 	private readonly TextWriter _writer; 

@@ -1,4 +1,4 @@
-public sealed class OnRegisterPlayersCallback : MulticastDelegate // TypeDefIndex: 8468
+public sealed class OnRegisterPlayersCallback : MulticastDelegate // TypeDefIndex: 8502
 {
 
 	public void .ctor(object object, IntPtr method) { }

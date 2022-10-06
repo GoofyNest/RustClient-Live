@@ -1,4 +1,4 @@
-public class DownloadHandler : IDisposable // TypeDefIndex: 4132
+public class DownloadHandler : IDisposable // TypeDefIndex: 4135
 {
 	[VisibleToOtherModulesAttribute] 
 	internal IntPtr m_Ptr; 

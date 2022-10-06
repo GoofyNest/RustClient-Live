@@ -1,11 +1,14 @@
-public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12836
+public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12877
 {
-	public Button Left; 
-	public Button Right; 
-	public TextMeshProUGUI Current; 
+	public RustText Current; 
 	public Image BackgroundImage; 
+	public RustButton Opener; 
+	public RectTransform Dropdown; 
+	public RectTransform DropdownContainer; 
+	public GameObject DropdownItemPrefab; 
 	public TweakUIDropdown.NameValue[] nameValues; 
 	public bool assignImageColor; 
+	public UnityEvent onValueChanged; 
 	public int currentValue; 
 
 
@@ -13,9 +16,13 @@ public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12836
 
 	protected void OnEnable() { }
 
+	public void UpdateDropdownOptions() { }
+
 	public void OnValueChanged() { }
 
-	public void ChangeValue(int change) { }
+	public void OnDropdownOpen() { }
+
+	public void ChangeValue(int index) { }
 
 	protected override void SetConvarValue() { }
 
@@ -27,7 +34,7 @@ public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12836
 
 }
 
-public class TweakUIDropdown.NameValue // TypeDefIndex: 12837
+public class TweakUIDropdown.NameValue // TypeDefIndex: 12878
 {
 	public string value; 
 	public Color imageColor; 
@@ -35,6 +42,18 @@ public class TweakUIDropdown.NameValue // TypeDefIndex: 12837
 
 
 	public void .ctor() { }
+
+}
+
+private sealed class TweakUIDropdown.<>c__DisplayClass13_0 // TypeDefIndex: 12879
+{
+	public int itemIndex; 
+	public TweakUIDropdown <>4__this; 
+
+
+	public void .ctor() { }
+
+	internal void <UpdateDropdownOptions>b__0() { }
 
 }
 

@@ -1,4 +1,4 @@
-public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13022
+public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13065
 {
 	public Vector3 worldPosition; 
 	public Quaternion worldRotation; 
@@ -46,7 +46,7 @@ public abstract class PrefabAttribute : MonoBehaviour, IPrefabPreProcess // Type
 
 }
 
-public class PrefabAttribute.AttributeCollection // TypeDefIndex: 13023
+public class PrefabAttribute.AttributeCollection // TypeDefIndex: 13066
 {
 	private Dictionary<Type, List<PrefabAttribute>> attributes; 
 	private Dictionary<Type, object> cache; 
@@ -66,7 +66,7 @@ public class PrefabAttribute.AttributeCollection // TypeDefIndex: 13023
 
 }
 
-public class PrefabAttribute.Library // TypeDefIndex: 13024
+public class PrefabAttribute.Library // TypeDefIndex: 13067
 {
 	public bool clientside; 
 	public bool serverside; 

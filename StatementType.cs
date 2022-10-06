@@ -1,4 +1,4 @@
-public enum StatementType // TypeDefIndex: 4310
+public enum StatementType // TypeDefIndex: 4313
 {
 	public int value__; 
 	public const StatementType Select = 0;

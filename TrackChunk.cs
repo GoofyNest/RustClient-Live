@@ -1,4 +1,4 @@
-public sealed class TrackChunk : MidiChunk // TypeDefIndex: 7484
+public sealed class TrackChunk : MidiChunk // TypeDefIndex: 7518
 {
 	[CompilerGeneratedAttribute] 
 	private readonly EventsCollection <Events>k__BackingField; 

@@ -1,4 +1,4 @@
-public class Grass : ConsoleSystem // TypeDefIndex: 13622
+public class Grass : ConsoleSystem // TypeDefIndex: 13665
 {
 	[ClientVar] 
 	public static bool displacement; 

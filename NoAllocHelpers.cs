@@ -1,4 +1,4 @@
-internal sealed class NoAllocHelpers // TypeDefIndex: 3519
+internal sealed class NoAllocHelpers // TypeDefIndex: 3521
 {
 
 	public static void ResizeList<T>(List<T> list, int size) { }

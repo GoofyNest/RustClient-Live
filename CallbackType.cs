@@ -1,4 +1,4 @@
-public enum CallbackType // TypeDefIndex: 5114
+public enum CallbackType // TypeDefIndex: 5117
 {
 	public int value__; 
 	public const CallbackType SteamServersConnected = 101;

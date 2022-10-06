@@ -1,4 +1,4 @@
-internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9285
+internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9319
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -24,7 +24,7 @@ internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDispo
 
 }
 
-internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9528
+internal struct CreateUserOptionsInternal : ISettable<CreateUserOptions>, IDisposable // TypeDefIndex: 9562
 {
 	private int m_ApiVersion; 
 	private IntPtr m_ContinuanceToken; 

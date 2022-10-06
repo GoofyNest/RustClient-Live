@@ -1,4 +1,4 @@
-public struct RangeInt // TypeDefIndex: 3520
+public struct RangeInt // TypeDefIndex: 3522
 {
 	public int start; 
 	public int length; 

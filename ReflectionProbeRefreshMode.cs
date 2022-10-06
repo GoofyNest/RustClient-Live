@@ -1,4 +1,4 @@
-public enum ReflectionProbeRefreshMode // TypeDefIndex: 3828
+public enum ReflectionProbeRefreshMode // TypeDefIndex: 3830
 {
 	public int value__; 
 	public const ReflectionProbeRefreshMode OnAwake = 0;

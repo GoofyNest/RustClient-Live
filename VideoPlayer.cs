@@ -1,4 +1,4 @@
-public sealed class VideoPlayer : Behaviour // TypeDefIndex: 4783
+public sealed class VideoPlayer : Behaviour // TypeDefIndex: 4786
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -85,7 +85,7 @@ public sealed class VideoPlayer : Behaviour // TypeDefIndex: 4783
 
 }
 
-public sealed class VideoPlayer.EventHandler : MulticastDelegate // TypeDefIndex: 4784
+public sealed class VideoPlayer.EventHandler : MulticastDelegate // TypeDefIndex: 4787
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -98,7 +98,7 @@ public sealed class VideoPlayer.EventHandler : MulticastDelegate // TypeDefIndex
 
 }
 
-public sealed class VideoPlayer.ErrorEventHandler : MulticastDelegate // TypeDefIndex: 4785
+public sealed class VideoPlayer.ErrorEventHandler : MulticastDelegate // TypeDefIndex: 4788
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -111,7 +111,7 @@ public sealed class VideoPlayer.ErrorEventHandler : MulticastDelegate // TypeDef
 
 }
 
-public sealed class VideoPlayer.FrameReadyEventHandler : MulticastDelegate // TypeDefIndex: 4786
+public sealed class VideoPlayer.FrameReadyEventHandler : MulticastDelegate // TypeDefIndex: 4789
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -124,7 +124,7 @@ public sealed class VideoPlayer.FrameReadyEventHandler : MulticastDelegate // Ty
 
 }
 
-public sealed class VideoPlayer.TimeEventHandler : MulticastDelegate // TypeDefIndex: 4787
+public sealed class VideoPlayer.TimeEventHandler : MulticastDelegate // TypeDefIndex: 4790
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public class FogMachine : StorageContainer // TypeDefIndex: 9950
+public class FogMachine : StorageContainer // TypeDefIndex: 9984
 {
 	public const BaseEntity.Flags FogFieldOn = 65536;
 	public const BaseEntity.Flags MotionMode = 32768;

@@ -1,4 +1,4 @@
-public struct Line // TypeDefIndex: 6589
+public struct Line // TypeDefIndex: 6593
 {
 	public Vector3 point0; 
 	public Vector3 point1; 

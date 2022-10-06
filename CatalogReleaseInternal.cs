@@ -1,4 +1,4 @@
-internal struct CatalogReleaseInternal : IGettable<CatalogRelease>, ISettable<CatalogRelease>, IDisposable // TypeDefIndex: 9378
+internal struct CatalogReleaseInternal : IGettable<CatalogRelease>, ISettable<CatalogRelease>, IDisposable // TypeDefIndex: 9412
 {
 	private int m_ApiVersion; 
 	private uint m_CompatibleAppIdCount; 

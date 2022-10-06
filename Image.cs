@@ -1,4 +1,4 @@
-public class Image : MaskableGraphic, ISerializationCallbackReceiver, ILayoutElement, ICanvasRaycastFilter // TypeDefIndex: 4939
+public class Image : MaskableGraphic, ISerializationCallbackReceiver, ILayoutElement, ICanvasRaycastFilter // TypeDefIndex: 4942
 {
 	protected static Material s_ETC1DefaultUI; 
 	[FormerlySerializedAsAttribute] 
@@ -214,7 +214,7 @@ public class Image : MaskableGraphic, ISerializationCallbackReceiver, ILayoutEle
 
 }
 
-public enum Image.Type // TypeDefIndex: 4940
+public enum Image.Type // TypeDefIndex: 4943
 {
 	public int value__; 
 	public const Image.Type Simple = 0;
@@ -224,7 +224,7 @@ public enum Image.Type // TypeDefIndex: 4940
 
 }
 
-public enum Image.FillMethod // TypeDefIndex: 4941
+public enum Image.FillMethod // TypeDefIndex: 4944
 {
 	public int value__; 
 	public const Image.FillMethod Horizontal = 0;
@@ -235,7 +235,7 @@ public enum Image.FillMethod // TypeDefIndex: 4941
 
 }
 
-public enum Image.OriginHorizontal // TypeDefIndex: 4942
+public enum Image.OriginHorizontal // TypeDefIndex: 4945
 {
 	public int value__; 
 	public const Image.OriginHorizontal Left = 0;
@@ -243,7 +243,7 @@ public enum Image.OriginHorizontal // TypeDefIndex: 4942
 
 }
 
-public enum Image.OriginVertical // TypeDefIndex: 4943
+public enum Image.OriginVertical // TypeDefIndex: 4946
 {
 	public int value__; 
 	public const Image.OriginVertical Bottom = 0;
@@ -251,7 +251,7 @@ public enum Image.OriginVertical // TypeDefIndex: 4943
 
 }
 
-public enum Image.Origin90 // TypeDefIndex: 4944
+public enum Image.Origin90 // TypeDefIndex: 4947
 {
 	public int value__; 
 	public const Image.Origin90 BottomLeft = 0;
@@ -261,7 +261,7 @@ public enum Image.Origin90 // TypeDefIndex: 4944
 
 }
 
-public enum Image.Origin180 // TypeDefIndex: 4945
+public enum Image.Origin180 // TypeDefIndex: 4948
 {
 	public int value__; 
 	public const Image.Origin180 Bottom = 0;
@@ -271,7 +271,7 @@ public enum Image.Origin180 // TypeDefIndex: 4945
 
 }
 
-public enum Image.Origin360 // TypeDefIndex: 4946
+public enum Image.Origin360 // TypeDefIndex: 4949
 {
 	public int value__; 
 	public const Image.Origin360 Bottom = 0;
@@ -281,7 +281,7 @@ public enum Image.Origin360 // TypeDefIndex: 4946
 
 }
 
-public struct Image // TypeDefIndex: 5552
+public struct Image // TypeDefIndex: 5555
 {
 	public uint Width; 
 	public uint Height; 

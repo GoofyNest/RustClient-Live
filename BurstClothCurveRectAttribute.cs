@@ -1,4 +1,4 @@
-public class BurstClothCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7279
+public class BurstClothCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7313
 {
 	public readonly Rect Rect; 
 	public readonly Color Color; 

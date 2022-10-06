@@ -1,4 +1,4 @@
-public class TextAsset : Object // TypeDefIndex: 3529
+public class TextAsset : Object // TypeDefIndex: 3531
 {
 	public string text { get; }
 	public byte[] bytes { get; }

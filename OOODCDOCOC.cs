@@ -1,4 +1,4 @@
-public class OOODCDOCOC : MonoBehaviour // TypeDefIndex: 7238
+public class OOODCDOCOC : MonoBehaviour // TypeDefIndex: 7272
 {
 
 	public static void OCCCOOOCDO(ERCrossingPrefabs scr, ERModularBase baseScript) { }

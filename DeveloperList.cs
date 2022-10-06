@@ -1,4 +1,4 @@
-public static class DeveloperList // TypeDefIndex: 10976
+public static class DeveloperList // TypeDefIndex: 11014
 {
 
 	public static bool Contains(string steamid) { }
@@ -9,7 +9,7 @@ public static class DeveloperList // TypeDefIndex: 10976
 
 }
 
-private sealed class DeveloperList.<>c__DisplayClass0_0 // TypeDefIndex: 10977
+private sealed class DeveloperList.<>c__DisplayClass0_0 // TypeDefIndex: 11015
 {
 	public string steamid; 
 

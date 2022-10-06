@@ -1,4 +1,4 @@
-public enum AmbientMode // TypeDefIndex: 3814
+public enum AmbientMode // TypeDefIndex: 3816
 {
 	public int value__; 
 	public const AmbientMode Skybox = 0;
@@ -8,7 +8,7 @@ public enum AmbientMode // TypeDefIndex: 3814
 
 }
 
-public class AmbienceDefinition : ScriptableObject // TypeDefIndex: 10641
+public class AmbienceDefinition : ScriptableObject // TypeDefIndex: 10677
 {
 	[HeaderAttribute] 
 	public List<SoundDefinition> sounds; 
@@ -34,7 +34,7 @@ public class AmbienceDefinition : ScriptableObject // TypeDefIndex: 10641
 
 }
 
-public class AmbienceDefinition.ValueRange // TypeDefIndex: 10642
+public class AmbienceDefinition.ValueRange // TypeDefIndex: 10678
 {
 	public float min; 
 	public float max; 
@@ -44,7 +44,7 @@ public class AmbienceDefinition.ValueRange // TypeDefIndex: 10642
 
 }
 
-public class AmbienceDefinitionList : ScriptableObject // TypeDefIndex: 10643
+public class AmbienceDefinitionList : ScriptableObject // TypeDefIndex: 10679
 {
 	public List<AmbienceDefinition> defs; 
 
@@ -53,7 +53,7 @@ public class AmbienceDefinitionList : ScriptableObject // TypeDefIndex: 10643
 
 }
 
-public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<AmbienceEmitter> // TypeDefIndex: 10644
+public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<AmbienceEmitter> // TypeDefIndex: 10680
 {
 	public AmbienceDefinitionList baseAmbience; 
 	public AmbienceDefinitionList stings; 
@@ -158,7 +158,7 @@ public class AmbienceEmitter : MonoBehaviour, IClientComponent, IComparable<Ambi
 
 }
 
-public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 10645
+public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 10681
 {
 	public float maxDistance; 
 	public float stingRadius; 
@@ -178,7 +178,7 @@ public class AmbienceLocalStings : MonoBehaviour // TypeDefIndex: 10645
 
 }
 
-public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientComponent // TypeDefIndex: 10646
+public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientComponent // TypeDefIndex: 10682
 {
 	public List<AmbienceManager.EmitterTypeLimit> localEmitterLimits; 
 	public AmbienceManager.EmitterTypeLimit catchallEmitterLimit; 
@@ -253,7 +253,7 @@ public class AmbienceManager : SingletonComponent<AmbienceManager>, IClientCompo
 
 }
 
-public class AmbienceManager.EmitterTypeLimit // TypeDefIndex: 10647
+public class AmbienceManager.EmitterTypeLimit // TypeDefIndex: 10683
 {
 	public List<AmbienceDefinitionList> ambience; 
 	public int limit; 
@@ -264,7 +264,7 @@ public class AmbienceManager.EmitterTypeLimit // TypeDefIndex: 10647
 
 }
 
-public class AmbienceManager.AmbienceGroup // TypeDefIndex: 10648
+public class AmbienceManager.AmbienceGroup // TypeDefIndex: 10684
 {
 	public AmbienceDefinitionList ambienceDefinition; 
 	public HashSet<AmbienceEmitter> emitters; 
@@ -280,7 +280,7 @@ public class AmbienceManager.AmbienceGroup // TypeDefIndex: 10648
 
 }
 
-public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefIndex: 10649
+public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefIndex: 10685
 {
 	public int baseEmitterCount; 
 	public int baseEmitterDistance; 
@@ -295,7 +295,7 @@ public class AmbienceSpawnEmitters : MonoBehaviour, IClientComponent // TypeDefI
 
 }
 
-public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 10650
+public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 10686
 {
 	public AmbienceDefinitionList baseAmbience; 
 	public AmbienceDefinitionList stings; 
@@ -318,7 +318,7 @@ public class AmbienceZone : TriggerBase, IClientComponentEx // TypeDefIndex: 106
 
 }
 
-public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 12989
+public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13032
 {
 	public bool isDynamic; 
 	public float enabledRadius; 
@@ -364,7 +364,7 @@ public class AmbientLightLOD : FacepunchBehaviour, ILOD, IClientComponent // Typ
 
 }
 
-public enum AmbientOcclusionMode // TypeDefIndex: 13448
+public enum AmbientOcclusionMode // TypeDefIndex: 13491
 {
 	public int value__; 
 	public const AmbientOcclusionMode ScalableAmbientObscurance = 0;
@@ -372,7 +372,7 @@ public enum AmbientOcclusionMode // TypeDefIndex: 13448
 
 }
 
-public enum AmbientOcclusionQuality // TypeDefIndex: 13449
+public enum AmbientOcclusionQuality // TypeDefIndex: 13492
 {
 	public int value__; 
 	public const AmbientOcclusionQuality Lowest = 0;
@@ -383,21 +383,21 @@ public enum AmbientOcclusionQuality // TypeDefIndex: 13449
 
 }
 
-public sealed class AmbientOcclusionModeParameter : ParameterOverride<AmbientOcclusionMode> // TypeDefIndex: 13450
+public sealed class AmbientOcclusionModeParameter : ParameterOverride<AmbientOcclusionMode> // TypeDefIndex: 13493
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class AmbientOcclusionQualityParameter : ParameterOverride<AmbientOcclusionQuality> // TypeDefIndex: 13451
+public sealed class AmbientOcclusionQualityParameter : ParameterOverride<AmbientOcclusionQuality> // TypeDefIndex: 13494
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex: 13452
+public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex: 13495
 {
 	[TooltipAttribute] 
 	public AmbientOcclusionModeParameter mode; 
@@ -433,7 +433,7 @@ public sealed class AmbientOcclusion : PostProcessEffectSettings // TypeDefIndex
 
 }
 
-internal sealed class AmbientOcclusionRenderer : PostProcessEffectRenderer<AmbientOcclusion> // TypeDefIndex: 13454
+internal sealed class AmbientOcclusionRenderer : PostProcessEffectRenderer<AmbientOcclusion> // TypeDefIndex: 13497
 {
 	private IAmbientOcclusionMethod[] m_Methods; 
 

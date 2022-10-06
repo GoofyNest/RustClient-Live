@@ -1,4 +1,4 @@
-public static class ProtocolParser // TypeDefIndex: 6281
+public static class ProtocolParser // TypeDefIndex: 6284
 {
 	private static byte[] staticBuffer; 
 

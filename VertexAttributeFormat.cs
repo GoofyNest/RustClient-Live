@@ -1,4 +1,4 @@
-public enum VertexAttributeFormat // TypeDefIndex: 3806
+public enum VertexAttributeFormat // TypeDefIndex: 3808
 {
 	public int value__; 
 	public const VertexAttributeFormat Float32 = 0;

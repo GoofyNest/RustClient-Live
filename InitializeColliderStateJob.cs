@@ -1,4 +1,4 @@
-internal struct InitializeColliderStateJob : IJobParallelForTransform // TypeDefIndex: 7292
+internal struct InitializeColliderStateJob : IJobParallelForTransform // TypeDefIndex: 7326
 {
 	[ReadOnlyAttribute] 
 	[NativeMatchesParallelForLengthAttribute] 

@@ -1,4 +1,4 @@
-internal abstract class ExpressionNode // TypeDefIndex: 4248
+internal abstract class ExpressionNode // TypeDefIndex: 4251
 {
 	private DataTable _table; 
 

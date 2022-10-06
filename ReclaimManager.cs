@@ -1,4 +1,4 @@
-public class ReclaimManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6404
+public class ReclaimManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6407
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class ReclaimManager : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class ReclaimManager.ReclaimInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6405
+public class ReclaimManager.ReclaimInfo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6408
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -124,7 +124,7 @@ public class ReclaimManager.ReclaimInfo : IDisposable, Pool.IPooled, IProto // T
 
 }
 
-public class ReclaimManager : BaseEntity // TypeDefIndex: 11561
+public class ReclaimManager : BaseEntity // TypeDefIndex: 11599
 {
 	private const int defaultReclaims = 128;
 	private const int reclaimSlotCount = 40;

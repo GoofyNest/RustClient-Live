@@ -1,4 +1,4 @@
-public class MetaData // TypeDefIndex: 3583
+public class MetaData // TypeDefIndex: 3585
 {
 	public string content; 
 	public string platform; 

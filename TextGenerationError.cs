@@ -1,4 +1,4 @@
-internal enum TextGenerationError // TypeDefIndex: 3950
+internal enum TextGenerationError // TypeDefIndex: 3953
 {
 	public int value__; 
 	public const TextGenerationError None = 0;

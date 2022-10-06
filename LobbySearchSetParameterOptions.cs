@@ -1,4 +1,4 @@
-public struct LobbySearchSetParameterOptions // TypeDefIndex: 9156
+public struct LobbySearchSetParameterOptions // TypeDefIndex: 9190
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<AttributeData> <Parameter>k__BackingField; 

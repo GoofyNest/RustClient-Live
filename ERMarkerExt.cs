@@ -1,4 +1,4 @@
-public class ERMarkerExt : ScriptableObject // TypeDefIndex: 7235
+public class ERMarkerExt : ScriptableObject // TypeDefIndex: 7269
 {
 	public bool activeSplineNode; 
 	public float leftIndent; 

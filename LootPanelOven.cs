@@ -1,4 +1,4 @@
-public class LootPanelOven : LootPanel // TypeDefIndex: 12716
+public class LootPanelOven : LootPanel // TypeDefIndex: 12757
 {
 	private OvenLootPanel ovenPanel; 
 
@@ -15,6 +15,8 @@ public class LootPanelOven : LootPanel // TypeDefIndex: 12716
 	public override void OnOpened() { }
 
 	public override void Update() { }
+
+	private void IncreaseCookTime(float amount) { }
 
 	public BaseOven GetBaseOven() { }
 

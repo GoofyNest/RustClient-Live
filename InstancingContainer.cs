@@ -1,4 +1,4 @@
-public class InstancingContainer // TypeDefIndex: 13053
+public class InstancingContainer // TypeDefIndex: 13096
 {
 	private int capacity; 
 	private ListDictionary<InstancingKey, InstancingBuffer> buffers; 

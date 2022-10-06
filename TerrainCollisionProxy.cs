@@ -1,4 +1,4 @@
-public class TerrainCollisionProxy : MonoBehaviour, IServerComponent // TypeDefIndex: 12064
+public class TerrainCollisionProxy : MonoBehaviour, IServerComponent // TypeDefIndex: 12102
 {
 	public WheelCollider[] colliders; 
 

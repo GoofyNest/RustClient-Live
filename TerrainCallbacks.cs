@@ -1,4 +1,4 @@
-public static class TerrainCallbacks // TypeDefIndex: 4096
+public static class TerrainCallbacks // TypeDefIndex: 4099
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -16,7 +16,7 @@ public static class TerrainCallbacks // TypeDefIndex: 4096
 
 }
 
-public sealed class TerrainCallbacks.HeightmapChangedCallback : MulticastDelegate // TypeDefIndex: 4097
+public sealed class TerrainCallbacks.HeightmapChangedCallback : MulticastDelegate // TypeDefIndex: 4100
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -29,7 +29,7 @@ public sealed class TerrainCallbacks.HeightmapChangedCallback : MulticastDelegat
 
 }
 
-public sealed class TerrainCallbacks.TextureChangedCallback : MulticastDelegate // TypeDefIndex: 4098
+public sealed class TerrainCallbacks.TextureChangedCallback : MulticastDelegate // TypeDefIndex: 4101
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public enum AvatarIKGoal // TypeDefIndex: 4480
+public enum AvatarIKGoal // TypeDefIndex: 4483
 {
 	public int value__; 
 	public const AvatarIKGoal LeftFoot = 0;

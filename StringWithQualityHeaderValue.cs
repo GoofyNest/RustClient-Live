@@ -1,4 +1,4 @@
-public class StringWithQualityHeaderValue : ICloneable // TypeDefIndex: 5808
+public class StringWithQualityHeaderValue : ICloneable // TypeDefIndex: 5811
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<double> <Quality>k__BackingField; 

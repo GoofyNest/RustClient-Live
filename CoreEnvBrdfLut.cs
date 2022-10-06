@@ -1,4 +1,4 @@
-public class CoreEnvBrdfLut // TypeDefIndex: 12331
+public class CoreEnvBrdfLut // TypeDefIndex: 12369
 {
 	private static Texture2D runtimeEnvBrdfLut; 
 

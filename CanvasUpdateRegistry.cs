@@ -1,4 +1,4 @@
-public class CanvasUpdateRegistry // TypeDefIndex: 4911
+public class CanvasUpdateRegistry // TypeDefIndex: 4914
 {
 	private static CanvasUpdateRegistry s_Instance; 
 	private bool m_PerformingLayoutUpdate; 

@@ -1,4 +1,4 @@
-public struct QueryPlayerAchievementsOptions // TypeDefIndex: 9901
+public struct QueryPlayerAchievementsOptions // TypeDefIndex: 9935
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <TargetUserId>k__BackingField; 

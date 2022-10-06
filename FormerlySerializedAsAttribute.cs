@@ -1,4 +1,4 @@
-public class FormerlySerializedAsAttribute : Attribute // TypeDefIndex: 3649
+public class FormerlySerializedAsAttribute : Attribute // TypeDefIndex: 3651
 {
 	private string m_oldName; 
 
