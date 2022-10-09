@@ -1480,7 +1480,7 @@ public class AudioInterceptComponent : MonoBehaviour // TypeDefIndex: 11165
 
 }
 
-public class Audio : ConsoleSystem // TypeDefIndex: 13618
+public class Audio : ConsoleSystem // TypeDefIndex: 13620
 {
 	[ClientVar] 
 	public static float master; 

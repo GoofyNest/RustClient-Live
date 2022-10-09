@@ -1,4 +1,4 @@
-public class MemorySlotUI : MonoBehaviour // TypeDefIndex: 12522
+public class MemorySlotUI : MonoBehaviour // TypeDefIndex: 12524
 {
 	public RustText Label; 
 

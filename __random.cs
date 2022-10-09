@@ -82294,7 +82294,7 @@ public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11681
 
 }
 
-public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12127
+public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12129
 {
 	internal T[] src; 
 	internal T[] dst; 
@@ -82380,7 +82380,7 @@ public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12127
 
 }
 
-public static class RecipeDictionary // TypeDefIndex: 12470
+public static class RecipeDictionary // TypeDefIndex: 12472
 {
 	private static Dictionary<uint, Dictionary<int, List<Recipe>>> recipeListsDict; 
 
@@ -82397,7 +82397,7 @@ public static class RecipeDictionary // TypeDefIndex: 12470
 
 }
 
-public struct CachedTransform<T> // TypeDefIndex: 13034
+public struct CachedTransform<T> // TypeDefIndex: 13036
 {
 	public T component; 
 	public Vector3 position; 
@@ -82480,7 +82480,7 @@ public struct CachedTransform<T> // TypeDefIndex: 13034
 
 }
 
-public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13128
+public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13130
 {
 	private NativeArray<T> _array; 
 	private int _length; 
@@ -82574,7 +82574,7 @@ public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13128
 
 }
 
-public class PooledList<T> // TypeDefIndex: 13134
+public class PooledList<T> // TypeDefIndex: 13136
 {
 	public List<T> data; 
 
@@ -82623,7 +82623,7 @@ public class PooledList<T> // TypeDefIndex: 13134
 
 }
 
-public class SimpleList<T> // TypeDefIndex: 13137
+public class SimpleList<T> // TypeDefIndex: 13139
 {
 	private const int defaultCapacity = 16;
 	private static readonly T[] emptyArray; 
@@ -82776,7 +82776,7 @@ public class SimpleList<T> // TypeDefIndex: 13137
 
 }
 
-public class TimeCachedValue<T> // TypeDefIndex: 13142
+public class TimeCachedValue<T> // TypeDefIndex: 13144
 {
 	public float refreshCooldown; 
 	public float refreshRandomRange; 
@@ -82807,7 +82807,7 @@ public class TimeCachedValue<T> // TypeDefIndex: 13142
 
 }
 
-public class ResourceRef<T> // TypeDefIndex: 13167
+public class ResourceRef<T> // TypeDefIndex: 13169
 {
 	public string guid; 
 	private T _cachedObject; 
@@ -82859,7 +82859,7 @@ public class ResourceRef<T> // TypeDefIndex: 13167
 
 }
 
-public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13560
+public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13562
 {
 	public T value; 
 
@@ -83126,7 +83126,7 @@ public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13560
 
 }
 
-public class GenericLerp<T> : IDisposable // TypeDefIndex: 13855
+public class GenericLerp<T> : IDisposable // TypeDefIndex: 13857
 {
 	private Interpolator<T> interpolator; 
 	private IGenericLerpTarget<T> target; 
@@ -83249,7 +83249,7 @@ public class GenericLerp<T> : IDisposable // TypeDefIndex: 13855
 
 }
 
-public class Interpolator<T> // TypeDefIndex: 13857
+public class Interpolator<T> // TypeDefIndex: 13859
 {
 	public List<T> list; 
 	public T last; 

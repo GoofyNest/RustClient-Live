@@ -1,4 +1,4 @@
-public class SwapArrows : MonoBehaviour, IClientComponent // TypeDefIndex: 13180
+public class SwapArrows : MonoBehaviour, IClientComponent // TypeDefIndex: 13182
 {
 	public GameObject[] arrowModels; 
 	private string curAmmoType; 
@@ -21,7 +21,7 @@ public class SwapArrows : MonoBehaviour, IClientComponent // TypeDefIndex: 13180
 
 }
 
-public enum SwapArrows.ArrowType // TypeDefIndex: 13181
+public enum SwapArrows.ArrowType // TypeDefIndex: 13183
 {
 	public int value__; 
 	public const SwapArrows.ArrowType One = 0;

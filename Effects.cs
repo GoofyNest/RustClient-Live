@@ -451,7 +451,7 @@ public class EffectRecycleLite : BasePrefab, IClientComponent, IEffectRecycle, I
 
 }
 
-public class Effects : ConsoleSystem // TypeDefIndex: 13645
+public class Effects : ConsoleSystem // TypeDefIndex: 13647
 {
 	private static int _antialiasing; 
 	[ClientVar] 
@@ -511,7 +511,7 @@ public class Effects : ConsoleSystem // TypeDefIndex: 13645
 
 }
 
-public enum Effects.AntiAliasingType // TypeDefIndex: 13646
+public enum Effects.AntiAliasingType // TypeDefIndex: 13648
 {
 	public int value__; 
 	public const Effects.AntiAliasingType None = 0;

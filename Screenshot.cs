@@ -4,7 +4,7 @@ public struct Screenshot // TypeDefIndex: 5560
 
 }
 
-public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 13071
+public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 13073
 {
 	public string screenshotPath; 
 	public int sizeMultiplier; 
@@ -43,7 +43,7 @@ public class Screenshot : SingletonComponent<Screenshot> // TypeDefIndex: 13071
 
 }
 
-private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13072
+private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13074
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -80,7 +80,7 @@ private sealed class Screenshot.<SaveScreenshot>d__9 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class Screenshot.<GetScreen>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13073
+private sealed class Screenshot.<GetScreen>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13075
 {
 	private int <>1__state; 
 	private object <>2__current; 

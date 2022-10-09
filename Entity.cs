@@ -880,7 +880,7 @@ public struct EntityRef<T> // TypeDefIndex: 11246
 
 }
 
-public class EntityHUDRender : MonoBehaviour // TypeDefIndex: 12640
+public class EntityHUDRender : MonoBehaviour // TypeDefIndex: 12642
 {
 	internal BaseEntity cachedEntity; 
 
@@ -891,7 +891,7 @@ public class EntityHUDRender : MonoBehaviour // TypeDefIndex: 12640
 
 }
 
-public class Entity : ConsoleSystem // TypeDefIndex: 13647
+public class Entity : ConsoleSystem // TypeDefIndex: 13649
 {
 
 	[ClientVar] 
@@ -951,7 +951,7 @@ public class Entity : ConsoleSystem // TypeDefIndex: 13647
 
 }
 
-private struct Entity.EntityInfo // TypeDefIndex: 13648
+private struct Entity.EntityInfo // TypeDefIndex: 13650
 {
 	public BaseNetworkable entity; 
 	public uint entityID; 
@@ -964,7 +964,7 @@ private struct Entity.EntityInfo // TypeDefIndex: 13648
 
 }
 
-private sealed class Entity.<>c__DisplayClass3_0 // TypeDefIndex: 13649
+private sealed class Entity.<>c__DisplayClass3_0 // TypeDefIndex: 13651
 {
 	public string filter; 
 
@@ -975,7 +975,7 @@ private sealed class Entity.<>c__DisplayClass3_0 // TypeDefIndex: 13649
 
 }
 
-private sealed class Entity.<>c__DisplayClass4_0 // TypeDefIndex: 13650
+private sealed class Entity.<>c__DisplayClass4_0 // TypeDefIndex: 13652
 {
 	public uint filter; 
 
@@ -986,7 +986,7 @@ private sealed class Entity.<>c__DisplayClass4_0 // TypeDefIndex: 13650
 
 }
 
-private sealed class Entity.<>c__DisplayClass5_0 // TypeDefIndex: 13651
+private sealed class Entity.<>c__DisplayClass5_0 // TypeDefIndex: 13653
 {
 	public uint filter; 
 
@@ -997,7 +997,7 @@ private sealed class Entity.<>c__DisplayClass5_0 // TypeDefIndex: 13651
 
 }
 
-private sealed class Entity.<>c__DisplayClass6_0 // TypeDefIndex: 13652
+private sealed class Entity.<>c__DisplayClass6_0 // TypeDefIndex: 13654
 {
 	public uint filter; 
 
@@ -1008,7 +1008,7 @@ private sealed class Entity.<>c__DisplayClass6_0 // TypeDefIndex: 13652
 
 }
 
-private sealed class Entity.<>c__DisplayClass7_0 // TypeDefIndex: 13653
+private sealed class Entity.<>c__DisplayClass7_0 // TypeDefIndex: 13655
 {
 	public string filter; 
 
@@ -1019,7 +1019,7 @@ private sealed class Entity.<>c__DisplayClass7_0 // TypeDefIndex: 13653
 
 }
 
-private sealed class Entity.<>c__DisplayClass8_0 // TypeDefIndex: 13654
+private sealed class Entity.<>c__DisplayClass8_0 // TypeDefIndex: 13656
 {
 	public BasePlayer player; 
 	public uint filter; 
@@ -1031,7 +1031,7 @@ private sealed class Entity.<>c__DisplayClass8_0 // TypeDefIndex: 13654
 
 }
 
-private sealed class Entity.<>c__DisplayClass9_0 // TypeDefIndex: 13655
+private sealed class Entity.<>c__DisplayClass9_0 // TypeDefIndex: 13657
 {
 	public uint filter; 
 

@@ -3149,7 +3149,7 @@ public static class ConsoleNetwork // TypeDefIndex: 11079
 
 }
 
-public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12554
+public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12556
 {
 	public RustText text; 
 	public InputField outputField; 
@@ -3214,7 +3214,7 @@ public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12554
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12555
+private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12557
 {
 	public Button btn; 
 	public ConsoleUI <>4__this; 
@@ -3226,7 +3226,7 @@ private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12555
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12556
+private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12558
 {
 	public string str; 
 
@@ -3237,7 +3237,7 @@ private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12556
 
 }
 
-private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12557
+private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12559
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -3267,7 +3267,7 @@ private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumer
 
 }
 
-public class ConsoleInput // TypeDefIndex: 13416
+public class ConsoleInput // TypeDefIndex: 13418
 {
 	[CompilerGeneratedAttribute] 
 	private Action<string> OnInputText; 
@@ -3305,7 +3305,7 @@ public class ConsoleInput // TypeDefIndex: 13416
 
 }
 
-public class ConsoleWindow // TypeDefIndex: 13417
+public class ConsoleWindow // TypeDefIndex: 13419
 {
 	private TextWriter oldOutput; 
 	private const int STD_INPUT_HANDLE = -10;
@@ -3332,7 +3332,7 @@ public class ConsoleWindow // TypeDefIndex: 13417
 
 }
 
-public class Console : ConsoleSystem // TypeDefIndex: 13629
+public class Console : ConsoleSystem // TypeDefIndex: 13631
 {
 	[ClientVar] 
 	[HelpAttribute] 

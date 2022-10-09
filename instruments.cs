@@ -1,4 +1,4 @@
-public class instruments : ConsoleSystem // TypeDefIndex: 13672
+public class instruments : ConsoleSystem // TypeDefIndex: 13674
 {
 	public const string InstrumentsFolder = "instruments";
 	private static bool _debugMidi; 

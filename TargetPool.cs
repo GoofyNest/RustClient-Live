@@ -1,4 +1,4 @@
-internal class TargetPool // TypeDefIndex: 13607
+internal class TargetPool // TypeDefIndex: 13609
 {
 	private readonly List<int> m_Pool; 
 	private int m_Current; 

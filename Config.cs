@@ -5,7 +5,7 @@ public static class Config // TypeDefIndex: 8254
 
 }
 
-public class Config : ScriptableObject // TypeDefIndex: 13273
+public class Config : ScriptableObject // TypeDefIndex: 13275
 {
 	public int geometryLayerID; 
 	public string geometryTag; 

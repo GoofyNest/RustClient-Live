@@ -1,4 +1,4 @@
-public class MenuBackgroundVideo : SingletonComponent<MenuBackgroundVideo> // TypeDefIndex: 12855
+public class MenuBackgroundVideo : SingletonComponent<MenuBackgroundVideo> // TypeDefIndex: 12857
 {
 	private string[] videos; 
 	private int index; 
@@ -22,7 +22,7 @@ public class MenuBackgroundVideo : SingletonComponent<MenuBackgroundVideo> // Ty
 
 }
 
-private sealed class MenuBackgroundVideo.<>c // TypeDefIndex: 12856
+private sealed class MenuBackgroundVideo.<>c // TypeDefIndex: 12858
 {
 	public static readonly MenuBackgroundVideo.<>c <>9; 
 	public static Func<string, bool> <>9__5_0; 
@@ -42,7 +42,7 @@ private sealed class MenuBackgroundVideo.<>c // TypeDefIndex: 12856
 
 }
 
-private sealed class MenuBackgroundVideo.<ReadyVideo>d__8 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12857
+private sealed class MenuBackgroundVideo.<ReadyVideo>d__8 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12859
 {
 	private int <>1__state; 
 	private object <>2__current; 

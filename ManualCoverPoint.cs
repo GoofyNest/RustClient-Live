@@ -1,4 +1,4 @@
-public class ManualCoverPoint : FacepunchBehaviour // TypeDefIndex: 13867
+public class ManualCoverPoint : FacepunchBehaviour // TypeDefIndex: 13869
 {
 	public bool IsDynamic; 
 	public float Score; 

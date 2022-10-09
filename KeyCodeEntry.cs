@@ -1,4 +1,4 @@
-public class KeyCodeEntry : UIDialog // TypeDefIndex: 12613
+public class KeyCodeEntry : UIDialog // TypeDefIndex: 12615
 {
 	public Text textDisplay; 
 	public Action<string> onCodeEntered; 
@@ -40,7 +40,7 @@ public class KeyCodeEntry : UIDialog // TypeDefIndex: 12613
 
 }
 
-private sealed class KeyCodeEntry.<ProcessLastNumberInput>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12614
+private sealed class KeyCodeEntry.<ProcessLastNumberInput>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12616
 {
 	private int <>1__state; 
 	private object <>2__current; 

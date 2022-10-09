@@ -1,4 +1,4 @@
-public class SkinSetCollection : ScriptableObject // TypeDefIndex: 12476
+public class SkinSetCollection : ScriptableObject // TypeDefIndex: 12478
 {
 	public SkinSet[] Skins; 
 

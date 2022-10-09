@@ -775,7 +775,7 @@ public struct InstrumentKeyController.IKNoteTarget // TypeDefIndex: 11270
 
 }
 
-public abstract class InstrumentTip : BaseTip // TypeDefIndex: 13344
+public abstract class InstrumentTip : BaseTip // TypeDefIndex: 13346
 {
 	public InstrumentKeyController Instrument { get; }
 

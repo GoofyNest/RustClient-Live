@@ -1,4 +1,4 @@
-public class WaterRadialMesh // TypeDefIndex: 12334
+public class WaterRadialMesh // TypeDefIndex: 12336
 {
 	private const float AlignmentGranularity = 1;
 	private const float MaxHorizontalDisplacement = 1;

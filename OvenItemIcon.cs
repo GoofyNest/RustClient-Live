@@ -1,4 +1,4 @@
-public class OvenItemIcon : MonoBehaviour // TypeDefIndex: 12766
+public class OvenItemIcon : MonoBehaviour // TypeDefIndex: 12768
 {
 	public ItemIcon ItemIcon; 
 	public RustText ItemLabel; 
@@ -24,7 +24,7 @@ public class OvenItemIcon : MonoBehaviour // TypeDefIndex: 12766
 
 }
 
-public class OvenItemIcon.OvenSlotConfig // TypeDefIndex: 12767
+public class OvenItemIcon.OvenSlotConfig // TypeDefIndex: 12769
 {
 	public OvenSlotType Type; 
 	public Sprite BackgroundImage; 

@@ -1,4 +1,4 @@
-public enum ColorBlindnessType // TypeDefIndex: 13574
+public enum ColorBlindnessType // TypeDefIndex: 13576
 {
 	public int value__; 
 	public const ColorBlindnessType Deuteranopia = 0;

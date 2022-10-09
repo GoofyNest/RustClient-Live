@@ -1,4 +1,4 @@
-public static class TerrainPlacementEx // TypeDefIndex: 12312
+public static class TerrainPlacementEx // TypeDefIndex: 12314
 {
 
 	[ExtensionAttribute] 

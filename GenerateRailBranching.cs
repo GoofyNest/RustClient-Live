@@ -1,4 +1,4 @@
-public class GenerateRailBranching : ProceduralComponent // TypeDefIndex: 12200
+public class GenerateRailBranching : ProceduralComponent // TypeDefIndex: 12202
 {
 	public const float Width = 4;
 	public const float InnerPadding = 1;
@@ -24,7 +24,7 @@ public class GenerateRailBranching : ProceduralComponent // TypeDefIndex: 12200
 
 }
 
-private sealed class GenerateRailBranching.<>c__DisplayClass11_0 // TypeDefIndex: 12201
+private sealed class GenerateRailBranching.<>c__DisplayClass11_0 // TypeDefIndex: 12203
 {
 	public PathList rail; 
 

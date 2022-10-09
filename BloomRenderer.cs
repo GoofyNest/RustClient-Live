@@ -1,4 +1,4 @@
-internal sealed class BloomRenderer : PostProcessEffectRenderer<Bloom> // TypeDefIndex: 13503
+internal sealed class BloomRenderer : PostProcessEffectRenderer<Bloom> // TypeDefIndex: 13505
 {
 	private BloomRenderer.Level[] m_Pyramid; 
 	private const int k_MaxPyramidSize = 16;
@@ -12,7 +12,7 @@ internal sealed class BloomRenderer : PostProcessEffectRenderer<Bloom> // TypeDe
 
 }
 
-private enum BloomRenderer.Pass // TypeDefIndex: 13504
+private enum BloomRenderer.Pass // TypeDefIndex: 13506
 {
 	public int value__; 
 	public const BloomRenderer.Pass Prefilter13 = 0;
@@ -27,7 +27,7 @@ private enum BloomRenderer.Pass // TypeDefIndex: 13504
 
 }
 
-private struct BloomRenderer.Level // TypeDefIndex: 13505
+private struct BloomRenderer.Level // TypeDefIndex: 13507
 {
 	internal int down; 
 	internal int up; 

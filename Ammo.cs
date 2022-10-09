@@ -34,7 +34,7 @@ public class AmmoBelowAIEvent : BaseAIEvent // TypeDefIndex: 11098
 
 }
 
-public class AmmoBelowEventUI : BaseEventUI // TypeDefIndex: 12503
+public class AmmoBelowEventUI : BaseEventUI // TypeDefIndex: 12505
 {
 
 	public override AIEventData Save() { }
@@ -45,7 +45,7 @@ public class AmmoBelowEventUI : BaseEventUI // TypeDefIndex: 12503
 
 }
 
-public class AmmoInformationPanel : ItemInformationPanel // TypeDefIndex: 12700
+public class AmmoInformationPanel : ItemInformationPanel // TypeDefIndex: 12702
 {
 	public ItemStatValue damageDisplay; 
 	public ItemStatValue velocityDisplay; 

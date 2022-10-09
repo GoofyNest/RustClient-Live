@@ -1,4 +1,4 @@
-public enum DeferredDecalQueue // TypeDefIndex: 12367
+public enum DeferredDecalQueue // TypeDefIndex: 12369
 {
 	public int value__; 
 	public const DeferredDecalQueue Background = 0;

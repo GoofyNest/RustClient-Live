@@ -3,7 +3,6 @@ public static class Layers // TypeDefIndex: 6619
 	public const int Terrain = 8388608;
 	public const int World = 65536;
 	public const int Ragdolls = 512;
-	public const int Debris = 67108864;
 	public const int Construction = 2097152;
 	public const int ConstructionSocket = 4194304;
 	public const int Craters = 1;

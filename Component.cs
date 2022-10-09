@@ -366,6 +366,7 @@ public class Component : Object // TypeDefIndex: 3510
 	|-Component.TryGetComponent<Renderer>
 	|-Component.TryGetComponent<ViewModel>
 	|-Component.TryGetComponent<WaterBody>
+	|-Component.TryGetComponent<WearableEyeViewAdjustment>
 	|-Component.TryGetComponent<v_chainsaw>
 	*/
 

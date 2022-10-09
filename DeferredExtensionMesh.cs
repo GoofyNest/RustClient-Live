@@ -1,4 +1,4 @@
-public class DeferredExtensionMesh : MonoBehaviour // TypeDefIndex: 12375
+public class DeferredExtensionMesh : MonoBehaviour // TypeDefIndex: 12377
 {
 	public SubsurfaceProfile subsurfaceProfile; 
 	private bool isVisible; 
@@ -34,7 +34,7 @@ public class DeferredExtensionMesh : MonoBehaviour // TypeDefIndex: 12375
 
 }
 
-public struct DeferredExtensionMesh.MaterialLink // TypeDefIndex: 12376
+public struct DeferredExtensionMesh.MaterialLink // TypeDefIndex: 12378
 {
 	public Material material; 
 	public int submeshIndex; 

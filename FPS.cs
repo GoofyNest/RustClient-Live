@@ -1,4 +1,4 @@
-public class FPS : ConsoleSystem // TypeDefIndex: 13658
+public class FPS : ConsoleSystem // TypeDefIndex: 13660
 {
 	[ClientVar] 
 	public static bool limitInBackground; 

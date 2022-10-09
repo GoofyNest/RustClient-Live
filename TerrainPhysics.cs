@@ -1,4 +1,4 @@
-public class TerrainPhysics : TerrainExtension // TypeDefIndex: 12146
+public class TerrainPhysics : TerrainExtension // TypeDefIndex: 12148
 {
 	private TerrainSplatMap splat; 
 	private PhysicMaterial[] materials; 

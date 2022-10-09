@@ -978,21 +978,21 @@ private sealed class ProjectileWeaponMod.<>c // TypeDefIndex: 11338
 
 }
 
-public class AttackTickEventUI : BaseEventUI // TypeDefIndex: 12505
+public class AttackTickEventUI : BaseEventUI // TypeDefIndex: 12507
 {
 
 	public void .ctor() { }
 
 }
 
-public class AttackedEventUI : BaseEventUI // TypeDefIndex: 12506
+public class AttackedEventUI : BaseEventUI // TypeDefIndex: 12508
 {
 
 	public void .ctor() { }
 
 }
 
-public class ProjectileWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12774
+public class ProjectileWeaponInformationPanel : ItemInformationPanel // TypeDefIndex: 12776
 {
 	public ItemStatValue damageDisplay; 
 	public ItemStatValue recoilDisplay; 

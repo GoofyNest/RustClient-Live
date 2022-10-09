@@ -1,4 +1,4 @@
-public abstract class Graph : MonoBehaviour // TypeDefIndex: 12652
+public abstract class Graph : MonoBehaviour // TypeDefIndex: 12654
 {
 	public Material Material; 
 	public int Resolution; 

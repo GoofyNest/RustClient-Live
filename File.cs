@@ -1947,7 +1947,7 @@ private sealed class FileSystem_Warmup.<>c // TypeDefIndex: 11084
 
 }
 
-public class FileStorage : IDisposable // TypeDefIndex: 12435
+public class FileStorage : IDisposable // TypeDefIndex: 12437
 {
 	private Database db; 
 	private CRC32 crc; 
@@ -1987,7 +1987,7 @@ public class FileStorage : IDisposable // TypeDefIndex: 12435
 
 }
 
-private class FileStorage.CacheData // TypeDefIndex: 12436
+private class FileStorage.CacheData // TypeDefIndex: 12438
 {
 	public byte[] data; 
 	public uint entityID; 
@@ -1998,7 +1998,7 @@ private class FileStorage.CacheData // TypeDefIndex: 12436
 
 }
 
-public enum FileStorage.Type // TypeDefIndex: 12437
+public enum FileStorage.Type // TypeDefIndex: 12439
 {
 	public int value__; 
 	public const FileStorage.Type png = 0;
@@ -2007,7 +2007,7 @@ public enum FileStorage.Type // TypeDefIndex: 12437
 
 }
 
-private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12438
+private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12440
 {
 	public uint entityid; 
 	public uint numid; 
@@ -2020,7 +2020,7 @@ private sealed class FileStorage.<>c__DisplayClass14_0 // TypeDefIndex: 12438
 
 }
 
-private sealed class FileStorage.<>c // TypeDefIndex: 12439
+private sealed class FileStorage.<>c // TypeDefIndex: 12441
 {
 	public static readonly FileStorage.<>c <>9; 
 	public static Func<KeyValuePair<uint, FileStorage.CacheData>, uint> <>9__14_1; 
@@ -2034,7 +2034,7 @@ private sealed class FileStorage.<>c // TypeDefIndex: 12439
 
 }
 
-public static class FileEx // TypeDefIndex: 13081
+public static class FileEx // TypeDefIndex: 13083
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }
@@ -2046,7 +2046,7 @@ public static class FileEx // TypeDefIndex: 13081
 
 }
 
-public class FileConVar : ConsoleSystem // TypeDefIndex: 13657
+public class FileConVar : ConsoleSystem // TypeDefIndex: 13659
 {
 	[ClientVar] 
 	public static bool debug { get; set; }

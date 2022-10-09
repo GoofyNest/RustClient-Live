@@ -1,4 +1,4 @@
-public class DeferredDecalSystem // TypeDefIndex: 12368
+public class DeferredDecalSystem // TypeDefIndex: 12370
 {
 	internal static bool IsDirty; 
 	internal const int QueueSize = 2;

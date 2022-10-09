@@ -1,4 +1,4 @@
-public static class CollisionEx // TypeDefIndex: 13432
+public static class CollisionEx // TypeDefIndex: 13434
 {
 
 	[ExtensionAttribute] 

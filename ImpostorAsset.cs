@@ -1,4 +1,4 @@
-public class ImpostorAsset : ScriptableObject // TypeDefIndex: 12394
+public class ImpostorAsset : ScriptableObject // TypeDefIndex: 12396
 {
 	public ImpostorAsset.TextureEntry[] textures; 
 	public Vector2 size; 
@@ -12,7 +12,7 @@ public class ImpostorAsset : ScriptableObject // TypeDefIndex: 12394
 
 }
 
-public class ImpostorAsset.TextureEntry // TypeDefIndex: 12395
+public class ImpostorAsset.TextureEntry // TypeDefIndex: 12397
 {
 	public string name; 
 	public Texture2D texture; 

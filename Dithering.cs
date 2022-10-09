@@ -1,4 +1,4 @@
-internal sealed class Dithering // TypeDefIndex: 13520
+internal sealed class Dithering // TypeDefIndex: 13522
 {
 	private int m_NoiseTextureIndex; 
 

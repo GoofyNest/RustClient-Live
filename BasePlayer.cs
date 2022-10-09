@@ -4535,7 +4535,7 @@ public class PlayerCorpse : LootableCorpse // TypeDefIndex: 11380
 
 }
 
-public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12465
+public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12467
 {
 	public string niceName; 
 	public int order; 
@@ -4549,7 +4549,7 @@ public class PlayerInventoryProperties : ScriptableObject // TypeDefIndex: 12465
 
 }
 
-public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12466
+public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDefIndex: 12468
 {
 	public ulong skinOverride; 
 
@@ -4558,7 +4558,7 @@ public class PlayerInventoryProperties.ItemAmountSkinned : ItemAmount // TypeDef
 
 }
 
-public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12525
+public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12527
 {
 
 	public override void Init(AIEventType eventType, BaseStateUI stateUI) { }
@@ -4571,7 +4571,7 @@ public class PlayerDetectedEventUI : BaseEventUI // TypeDefIndex: 12525
 
 }
 
-public class Player : ConsoleSystem // TypeDefIndex: 13688
+public class Player : ConsoleSystem // TypeDefIndex: 13690
 {
 	[ServerVar] 
 	public static int tickrate_cl; 
@@ -4624,7 +4624,7 @@ public class Player : ConsoleSystem // TypeDefIndex: 13688
 
 }
 
-public class PlayerCull : ConsoleSystem // TypeDefIndex: 13689
+public class PlayerCull : ConsoleSystem // TypeDefIndex: 13691
 {
 	private static bool _enabled; 
 	[ClientVar] 
@@ -4654,7 +4654,7 @@ public class PlayerCull : ConsoleSystem // TypeDefIndex: 13689
 
 }
 
-public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13886
+public enum PlayerMenuAnimation.Layers // TypeDefIndex: 13888
 {
 
 public enum PlayerMenuAnimation.Layers

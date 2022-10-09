@@ -699,7 +699,7 @@ public class BuildingManager.Building // TypeDefIndex: 11537
 
 }
 
-public class BuildingGrade : ScriptableObject // TypeDefIndex: 12433
+public class BuildingGrade : ScriptableObject // TypeDefIndex: 12435
 {
 	public BuildingGrade.Enum type; 
 	public float baseHealth; 
@@ -713,7 +713,7 @@ public class BuildingGrade : ScriptableObject // TypeDefIndex: 12433
 
 }
 
-public enum BuildingGrade.Enum // TypeDefIndex: 12434
+public enum BuildingGrade.Enum // TypeDefIndex: 12436
 {
 	public int value__; 
 	public const BuildingGrade.Enum None = -1;

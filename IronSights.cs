@@ -1,4 +1,4 @@
-public class IronSights : MonoBehaviour // TypeDefIndex: 13175
+public class IronSights : MonoBehaviour // TypeDefIndex: 13177
 {
 	public bool Enabled; 
 	[HeaderAttribute] 

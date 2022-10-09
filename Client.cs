@@ -869,14 +869,14 @@ public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11538
 
 }
 
-public static class Client // TypeDefIndex: 13385
+public static class Client // TypeDefIndex: 13387
 {
 	public const byte Default = 0;
 	public const byte Tick = 1;
 
 }
 
-public class Client : ConsoleSystem // TypeDefIndex: 13627
+public class Client : ConsoleSystem // TypeDefIndex: 13629
 {
 	public static string anticheatid; 
 	public static string anticheatkey; 
@@ -1046,7 +1046,7 @@ public class Client : ConsoleSystem // TypeDefIndex: 13627
 
 }
 
-public enum Client.CameraSensorType // TypeDefIndex: 13628
+public enum Client.CameraSensorType // TypeDefIndex: 13630
 {
 	public int value__; 
 	public const Client.CameraSensorType _8Mm = 0;
@@ -1065,7 +1065,7 @@ public enum Client.CameraSensorType // TypeDefIndex: 13628
 
 }
 
-public static class Client // TypeDefIndex: 13774
+public static class Client // TypeDefIndex: 13776
 {
 	public const float UseDistance = 2;
 	private static Scene _entityScene; 
