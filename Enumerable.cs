@@ -4731,7 +4731,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	public static TAccumulate Aggregate<TSource, TAccumulate>(IEnumerable<TSource> source, TAccumulate seed, Func<TAccumulate, TSource, TAccumulate> func) { }
 	/* GenericInstMethod :
 	|
-	|-Enumerable.Aggregate<KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>
+	|-Enumerable.Aggregate<KeyValuePair<long, Helper.PinnedBuffer>, int>
 	|
 	|-Enumerable.Aggregate<object, object>
 	*/

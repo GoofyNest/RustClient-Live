@@ -1815,7 +1815,7 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	|-Func<AsyncCallback, object, IAsyncResult>..ctor
 	|-Func<Stream, IAsyncResult, int>..ctor
 	|-Func<Stream, IAsyncResult, VoidTaskResult>..ctor
-	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>..ctor
+	|-Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int>..ctor
 	|-Func<int, IntPtr, bool>..ctor
 	|-Func<object, long, object>..ctor
 	|-Func<object, object, int>..ctor
@@ -1836,7 +1836,7 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	|-Func<Camera, Vector2, Matrix4x4>.Invoke
 	|-Func<object, Vector2, Matrix4x4>.Invoke
 	|
-	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>.Invoke
+	|-Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int>.Invoke
 	|
 	|-Func<object, long, object>.Invoke
 	|
@@ -1848,7 +1848,7 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	public virtual IAsyncResult BeginInvoke(T1 arg1, T2 arg2, AsyncCallback callback, object object) { }
 	/* GenericInstMethod :
 	|
-	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>.BeginInvoke
+	|-Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int>.BeginInvoke
 	|
 	|-Func<int, IntPtr, bool>.BeginInvoke
 	|
@@ -1864,7 +1864,7 @@ public sealed class Func<T1, T2, TResult> : MulticastDelegate // TypeDefIndex: 1
 	public virtual TResult EndInvoke(IAsyncResult result) { }
 	/* GenericInstMethod :
 	|
-	|-Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int>.EndInvoke
+	|-Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int>.EndInvoke
 	|-Func<object, object, int>.EndInvoke
 	|
 	|-Func<int, IntPtr, bool>.EndInvoke
@@ -22997,6 +22997,15 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<int, ViewModelDrawEvent>..ctor
 	|
+	|-KeyValuePair<long, Helper.Allocation>..ctor
+	|-KeyValuePair<ulong, Chat.MuteEntry>..ctor
+	|
+	|-KeyValuePair<long, Helper.PinnedBuffer>..ctor
+	|-KeyValuePair<long, long>..ctor
+	|-KeyValuePair<long, ulong>..ctor
+	|-KeyValuePair<ulong, long>..ctor
+	|-KeyValuePair<ulong, ulong>..ctor
+	|
 	|-KeyValuePair<long, bool>..ctor
 	|-KeyValuePair<ulong, bool>..ctor
 	|
@@ -23018,17 +23027,8 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<ulong, TimeSince>..ctor
 	|-KeyValuePair<StyleSheetCache.SheetHandleKey, int>..ctor
 	|
-	|-KeyValuePair<long, long>..ctor
-	|-KeyValuePair<long, ulong>..ctor
-	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>..ctor
-	|-KeyValuePair<ulong, long>..ctor
-	|-KeyValuePair<ulong, ulong>..ctor
-	|
 	|-KeyValuePair<long, float>..ctor
 	|-KeyValuePair<ulong, float>..ctor
-	|
-	|-KeyValuePair<IntPtr, Helper.Allocation>..ctor
-	|-KeyValuePair<ulong, Chat.MuteEntry>..ctor
 	|
 	|-KeyValuePair<object, CameraMan.CameraState>..ctor
 	|
@@ -23150,6 +23150,8 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<FoliageKey, object>.get_Key
 	|-KeyValuePair<DateTime, object>.get_Key
 	|-KeyValuePair<DateTime, TimeType>.get_Key
+	|-KeyValuePair<long, Helper.Allocation>.get_Key
+	|-KeyValuePair<long, Helper.PinnedBuffer>.get_Key
 	|-KeyValuePair<long, bool>.get_Key
 	|-KeyValuePair<long, Decimal>.get_Key
 	|-KeyValuePair<long, double>.get_Key
@@ -23161,8 +23163,6 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<long, ushort>.get_Key
 	|-KeyValuePair<long, uint>.get_Key
 	|-KeyValuePair<long, ulong>.get_Key
-	|-KeyValuePair<IntPtr, Helper.Allocation>.get_Key
-	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>.get_Key
 	|-KeyValuePair<IntPtr, object>.get_Key
 	|-KeyValuePair<object, CameraMan.CameraState>.get_Key
 	|-KeyValuePair<object, PlayerModelHair.RendererMaterials>.get_Key
@@ -23388,8 +23388,8 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<int, GameObject>.get_Value
 	|-KeyValuePair<int, CommandBuffer>.get_Value
 	|-KeyValuePair<int, Panel>.get_Value
+	|-KeyValuePair<long, Helper.PinnedBuffer>.get_Value
 	|-KeyValuePair<IntPtr, Helper.DelegateHolder>.get_Value
-	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>.get_Value
 	|-KeyValuePair<string, Input.Button>.get_Value
 	|-KeyValuePair<string, JSONNode>.get_Value
 	|-KeyValuePair<string, Value>.get_Value
@@ -23638,7 +23638,7 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<int, ViewModelDrawEvent>.get_Value
 	|
-	|-KeyValuePair<IntPtr, Helper.Allocation>.get_Value
+	|-KeyValuePair<long, Helper.Allocation>.get_Value
 	|-KeyValuePair<object, PlayerModelHair.RendererMaterials>.get_Value
 	|-KeyValuePair<ulong, Chat.MuteEntry>.get_Value
 	|
@@ -23827,6 +23827,15 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<int, ViewModelDrawEvent>.ToString
 	|
+	|-KeyValuePair<long, Helper.Allocation>.ToString
+	|-KeyValuePair<ulong, Chat.MuteEntry>.ToString
+	|
+	|-KeyValuePair<long, Helper.PinnedBuffer>.ToString
+	|-KeyValuePair<long, long>.ToString
+	|-KeyValuePair<long, ulong>.ToString
+	|-KeyValuePair<ulong, long>.ToString
+	|-KeyValuePair<ulong, ulong>.ToString
+	|
 	|-KeyValuePair<long, bool>.ToString
 	|-KeyValuePair<ulong, bool>.ToString
 	|
@@ -23843,18 +23852,9 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<ulong, short>.ToString
 	|-KeyValuePair<ulong, ushort>.ToString
 	|
-	|-KeyValuePair<long, long>.ToString
-	|-KeyValuePair<long, ulong>.ToString
-	|-KeyValuePair<IntPtr, Helper.PinnedBuffer>.ToString
-	|-KeyValuePair<ulong, long>.ToString
-	|-KeyValuePair<ulong, ulong>.ToString
-	|
 	|-KeyValuePair<long, float>.ToString
 	|-KeyValuePair<ulong, float>.ToString
 	|-KeyValuePair<ulong, TimeSince>.ToString
-	|
-	|-KeyValuePair<IntPtr, Helper.Allocation>.ToString
-	|-KeyValuePair<ulong, Chat.MuteEntry>.ToString
 	|
 	|-KeyValuePair<object, CameraMan.CameraState>.ToString
 	|
@@ -24096,6 +24096,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>..ctor
 	|-Dictionary<Int32Enum, object>..ctor
 	|-Dictionary<Int32Enum, float>..ctor
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary<long, bool>..ctor
 	|-Dictionary<long, Decimal>..ctor
 	|-Dictionary<long, double>..ctor
@@ -24109,9 +24111,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ulong>..ctor
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>..ctor
 	|-Dictionary<long, TMP_MaterialManager.FallbackMaterial>..ctor
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
 	|-Dictionary<IntPtr, Helper.DelegateHolder>..ctor
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<IPAddress, int>..ctor
 	|-Dictionary<IPEndPoint, int>..ctor
@@ -24412,6 +24412,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>..ctor
 	|-Dictionary<Int32Enum, object>..ctor
 	|-Dictionary<Int32Enum, float>..ctor
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary<long, bool>..ctor
 	|-Dictionary<long, Decimal>..ctor
 	|-Dictionary<long, double>..ctor
@@ -24423,8 +24425,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>..ctor
 	|-Dictionary<long, uint>..ctor
 	|-Dictionary<long, ulong>..ctor
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<object, CameraMan.CameraState>..ctor
@@ -24599,6 +24599,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>..ctor
 	|-Dictionary<Int32Enum, object>..ctor
 	|-Dictionary<Int32Enum, float>..ctor
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary<long, bool>..ctor
 	|-Dictionary<long, Decimal>..ctor
 	|-Dictionary<long, double>..ctor
@@ -24610,8 +24612,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>..ctor
 	|-Dictionary<long, uint>..ctor
 	|-Dictionary<long, ulong>..ctor
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<object, CameraMan.CameraState>..ctor
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>..ctor
@@ -24885,6 +24885,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>..ctor
 	|
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary<long, bool>..ctor
 	|
 	|-Dictionary<long, Decimal>..ctor
@@ -24906,10 +24910,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>..ctor
 	|
 	|-Dictionary<long, ulong>..ctor
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|
 	|-Dictionary<IntPtr, object>..ctor
 	|
@@ -25152,6 +25152,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>..ctor
 	|-Dictionary<Int32Enum, object>..ctor
 	|-Dictionary<Int32Enum, float>..ctor
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary<long, bool>..ctor
 	|-Dictionary<long, Decimal>..ctor
 	|-Dictionary<long, double>..ctor
@@ -25163,8 +25165,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>..ctor
 	|-Dictionary<long, uint>..ctor
 	|-Dictionary<long, ulong>..ctor
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary<IntPtr, object>..ctor
 	|-Dictionary<object, CameraMan.CameraState>..ctor
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>..ctor
@@ -25416,6 +25416,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>..ctor
 	|
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary<long, bool>..ctor
 	|
 	|-Dictionary<long, Decimal>..ctor
@@ -25437,10 +25441,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>..ctor
 	|
 	|-Dictionary<long, ulong>..ctor
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|
 	|-Dictionary<IntPtr, object>..ctor
 	|
@@ -25768,6 +25768,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>..ctor
 	|
+	|-Dictionary<long, Helper.Allocation>..ctor
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary<long, bool>..ctor
 	|
 	|-Dictionary<long, Decimal>..ctor
@@ -25789,10 +25793,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>..ctor
 	|
 	|-Dictionary<long, ulong>..ctor
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>..ctor
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>..ctor
 	|
 	|-Dictionary<IntPtr, object>..ctor
 	|
@@ -26036,6 +26036,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.get_Comparer
 	|-Dictionary<Int32Enum, object>.get_Comparer
 	|-Dictionary<Int32Enum, float>.get_Comparer
+	|-Dictionary<long, Helper.Allocation>.get_Comparer
+	|-Dictionary<long, Helper.PinnedBuffer>.get_Comparer
 	|-Dictionary<long, bool>.get_Comparer
 	|-Dictionary<long, Decimal>.get_Comparer
 	|-Dictionary<long, double>.get_Comparer
@@ -26047,8 +26049,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Comparer
 	|-Dictionary<long, uint>.get_Comparer
 	|-Dictionary<long, ulong>.get_Comparer
-	|-Dictionary<IntPtr, Helper.Allocation>.get_Comparer
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Comparer
 	|-Dictionary<IntPtr, object>.get_Comparer
 	|-Dictionary<object, CameraMan.CameraState>.get_Comparer
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.get_Comparer
@@ -26220,6 +26220,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.get_Count
 	|-Dictionary<Int32Enum, object>.get_Count
 	|-Dictionary<Int32Enum, float>.get_Count
+	|-Dictionary<long, Helper.Allocation>.get_Count
+	|-Dictionary<long, Helper.PinnedBuffer>.get_Count
 	|-Dictionary<long, bool>.get_Count
 	|-Dictionary<long, Decimal>.get_Count
 	|-Dictionary<long, double>.get_Count
@@ -26231,9 +26233,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Count
 	|-Dictionary<long, uint>.get_Count
 	|-Dictionary<long, ulong>.get_Count
-	|-Dictionary<IntPtr, Helper.Allocation>.get_Count
 	|-Dictionary<IntPtr, Helper.DelegateHolder>.get_Count
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Count
 	|-Dictionary<IntPtr, object>.get_Count
 	|-Dictionary<IPEndPoint, int>.get_Count
 	|-Dictionary<object, CameraMan.CameraState>.get_Count
@@ -26432,6 +26432,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.get_Keys
 	|-Dictionary<Int32Enum, object>.get_Keys
 	|-Dictionary<Int32Enum, float>.get_Keys
+	|-Dictionary<long, Helper.Allocation>.get_Keys
+	|-Dictionary<long, Helper.PinnedBuffer>.get_Keys
 	|-Dictionary<long, bool>.get_Keys
 	|-Dictionary<long, Decimal>.get_Keys
 	|-Dictionary<long, double>.get_Keys
@@ -26443,8 +26445,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Keys
 	|-Dictionary<long, uint>.get_Keys
 	|-Dictionary<long, ulong>.get_Keys
-	|-Dictionary<IntPtr, Helper.Allocation>.get_Keys
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Keys
 	|-Dictionary<IntPtr, object>.get_Keys
 	|-Dictionary<object, CameraMan.CameraState>.get_Keys
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.get_Keys
@@ -26614,6 +26614,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<Int32Enum, object>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<Int32Enum, float>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, bool>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, Decimal>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, double>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
@@ -26625,8 +26627,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, uint>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<long, ulong>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys
@@ -26813,6 +26813,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.get_Values
 	|-Dictionary<Int32Enum, object>.get_Values
 	|-Dictionary<Int32Enum, float>.get_Values
+	|-Dictionary<long, Helper.Allocation>.get_Values
+	|-Dictionary<long, Helper.PinnedBuffer>.get_Values
 	|-Dictionary<long, bool>.get_Values
 	|-Dictionary<long, Decimal>.get_Values
 	|-Dictionary<long, double>.get_Values
@@ -26824,8 +26826,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.get_Values
 	|-Dictionary<long, uint>.get_Values
 	|-Dictionary<long, ulong>.get_Values
-	|-Dictionary<IntPtr, Helper.Allocation>.get_Values
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Values
 	|-Dictionary<IntPtr, object>.get_Values
 	|-Dictionary<object, CameraMan.CameraState>.get_Values
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.get_Values
@@ -26993,6 +26993,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<Int32Enum, object>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<Int32Enum, float>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, bool>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, Decimal>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, double>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
@@ -27004,8 +27006,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, uint>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<long, ulong>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IDictionary<TKey,TValue>.get_Values
@@ -27168,10 +27168,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, float>.get_Item
 	|
+	|-Dictionary<long, Helper.PinnedBuffer>.get_Item
+	|
 	|-Dictionary<long, SqliteFunction.AggregateData>.get_Item
 	|-Dictionary<long, object>.get_Item
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.get_Item
 	|
 	|-Dictionary<string, bool>.get_Item
 	|-Dictionary<VehicleChassisVisuals.ClientWheelData<ModularCar>, bool>.get_Item
@@ -27359,6 +27359,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.get_Item
 	|
+	|-Dictionary<long, Helper.Allocation>.get_Item
+	|
 	|-Dictionary<long, bool>.get_Item
 	|
 	|-Dictionary<long, Decimal>.get_Item
@@ -27378,8 +27380,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.get_Item
 	|
 	|-Dictionary<long, ulong>.get_Item
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.get_Item
 	|
 	|-Dictionary<IntPtr, object>.get_Item
 	|
@@ -27591,6 +27591,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, KeyCode[]>.set_Item
 	|-Dictionary<int, Mesh>.set_Item
 	|-Dictionary<Int32Enum, object>.set_Item
+	|-Dictionary<long, Helper.PinnedBuffer>.set_Item
 	|-Dictionary<long, SqliteFunction.AggregateData>.set_Item
 	|-Dictionary<long, bool>.set_Item
 	|-Dictionary<long, short>.set_Item
@@ -27600,7 +27601,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.set_Item
 	|-Dictionary<long, uint>.set_Item
 	|-Dictionary<long, ulong>.set_Item
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.set_Item
 	|-Dictionary<IntPtr, object>.set_Item
 	|-Dictionary<IPAddress, int>.set_Item
 	|-Dictionary<object, InputActionSetHandle_t>.set_Item
@@ -27769,7 +27769,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.set_Item
 	|
-	|-Dictionary<IntPtr, Helper.Allocation>.set_Item
+	|-Dictionary<long, Helper.Allocation>.set_Item
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.set_Item
 	|-Dictionary<ulong, Chat.MuteEntry>.set_Item
 	|
@@ -27875,6 +27875,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, Sprite>.Add
 	|-Dictionary<int, Texture2D>.Add
 	|-Dictionary<Int32Enum, object>.Add
+	|-Dictionary<long, Helper.PinnedBuffer>.Add
 	|-Dictionary<long, bool>.Add
 	|-Dictionary<long, short>.Add
 	|-Dictionary<long, int>.Add
@@ -27886,7 +27887,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.Add
 	|-Dictionary<long, TMP_MaterialManager.FallbackMaterial>.Add
 	|-Dictionary<IntPtr, Helper.DelegateHolder>.Add
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Add
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>.Add
 	|-Dictionary<IntPtr, object>.Add
 	|-Dictionary<IPAddress, int>.Add
@@ -28124,7 +28124,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.Add
 	|
-	|-Dictionary<IntPtr, Helper.Allocation>.Add
+	|-Dictionary<long, Helper.Allocation>.Add
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.Add
 	|-Dictionary<ulong, Chat.MuteEntry>.Add
 	|-Dictionary<Renderer, PlayerModelHair.RendererMaterials>.Add
@@ -28290,6 +28290,29 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<long, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<long, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<object, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<ulong, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<ulong, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<ulong, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<ValueTuple<Int32Enum, int>, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<TerrainUtility.TerrainMap.TileCoord, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<StyleSheetCache.SheetHandleKey, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|-Dictionary<Vector2i, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+	|
 	|-Dictionary<long, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<object, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<object, byte>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
@@ -28314,32 +28337,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<ulong, short>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<ulong, ushort>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
-	|-Dictionary<long, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<long, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<ulong, long>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<ulong, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<ulong, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<ValueTuple<Int32Enum, int>, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<TerrainUtility.TerrainMap.TileCoord, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<StyleSheetCache.SheetHandleKey, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<Vector2i, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|
 	|-Dictionary<long, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<object, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|-Dictionary<ulong, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
-	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
 	|
@@ -28524,6 +28524,15 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+	|
 	|-Dictionary<long, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, byte>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
@@ -28566,15 +28575,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<object, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|-Dictionary<ulong, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
-	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
 	|
@@ -28761,6 +28761,15 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+	|
 	|-Dictionary<long, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, byte>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
@@ -28807,15 +28816,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<object, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|-Dictionary<ulong, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
-	|-Dictionary<object, InputDigitalActionHandle_t>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
 	|
@@ -28950,6 +28950,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.Clear
 	|-Dictionary<Int32Enum, object>.Clear
 	|-Dictionary<Int32Enum, float>.Clear
+	|-Dictionary<long, Helper.Allocation>.Clear
+	|-Dictionary<long, Helper.PinnedBuffer>.Clear
 	|-Dictionary<long, bool>.Clear
 	|-Dictionary<long, Decimal>.Clear
 	|-Dictionary<long, double>.Clear
@@ -28962,8 +28964,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.Clear
 	|-Dictionary<long, ulong>.Clear
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.Clear
-	|-Dictionary<IntPtr, Helper.Allocation>.Clear
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Clear
 	|-Dictionary<IntPtr, object>.Clear
 	|-Dictionary<IPAddress, int>.Clear
 	|-Dictionary<object, CameraMan.CameraState>.Clear
@@ -29152,6 +29152,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.ContainsKey
 	|-Dictionary<Int32Enum, object>.ContainsKey
 	|-Dictionary<Int32Enum, float>.ContainsKey
+	|-Dictionary<long, Helper.Allocation>.ContainsKey
+	|-Dictionary<long, Helper.PinnedBuffer>.ContainsKey
 	|-Dictionary<long, SqliteFunction.AggregateData>.ContainsKey
 	|-Dictionary<long, bool>.ContainsKey
 	|-Dictionary<long, Decimal>.ContainsKey
@@ -29165,8 +29167,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.ContainsKey
 	|-Dictionary<long, ulong>.ContainsKey
 	|-Dictionary<long, TMP_GlyphPairAdjustmentRecord>.ContainsKey
-	|-Dictionary<IntPtr, Helper.Allocation>.ContainsKey
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.ContainsKey
 	|-Dictionary<IntPtr, object>.ContainsKey
 	|-Dictionary<object, CameraMan.CameraState>.ContainsKey
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.ContainsKey
@@ -29516,7 +29516,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<ushort, bool>.ContainsValue
 	|
 	|-Dictionary<int, FoliageKey>.ContainsValue
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.ContainsValue
+	|-Dictionary<long, Helper.PinnedBuffer>.ContainsValue
 	|-Dictionary<object, InputActionSetHandle_t>.ContainsValue
 	|-Dictionary<object, InputAnalogActionHandle_t>.ContainsValue
 	|-Dictionary<object, InputDigitalActionHandle_t>.ContainsValue
@@ -29540,7 +29540,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.ContainsValue
 	|
-	|-Dictionary<IntPtr, Helper.Allocation>.ContainsValue
+	|-Dictionary<long, Helper.Allocation>.ContainsValue
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.ContainsValue
 	|-Dictionary<ulong, Chat.MuteEntry>.ContainsValue
 	|
@@ -29724,6 +29724,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.CopyTo
 	|
+	|-Dictionary<long, Helper.Allocation>.CopyTo
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.CopyTo
+	|
 	|-Dictionary<long, bool>.CopyTo
 	|
 	|-Dictionary<long, Decimal>.CopyTo
@@ -29745,10 +29749,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.CopyTo
 	|
 	|-Dictionary<long, ulong>.CopyTo
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.CopyTo
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.CopyTo
 	|
 	|-Dictionary<IntPtr, object>.CopyTo
 	|
@@ -29987,6 +29987,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, object>.GetEnumerator
 	|-Dictionary<int, ulong>.GetEnumerator
 	|-Dictionary<Int32Enum, object>.GetEnumerator
+	|-Dictionary<long, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary<long, bool>.GetEnumerator
 	|-Dictionary<long, double>.GetEnumerator
 	|-Dictionary<long, short>.GetEnumerator
@@ -29997,7 +29998,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.GetEnumerator
 	|-Dictionary<long, uint>.GetEnumerator
 	|-Dictionary<long, ulong>.GetEnumerator
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary<IntPtr, object>.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.GetEnumerator
@@ -30081,7 +30081,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.GetEnumerator
-	|-Dictionary<IntPtr, Helper.Allocation>.GetEnumerator
+	|-Dictionary<long, Helper.Allocation>.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.GetEnumerator
 	|
@@ -30179,6 +30179,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ulong>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<int, TerrainUtility.TerrainMap>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<Int32Enum, object>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, bool>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, double>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, short>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
@@ -30189,7 +30190,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, uint>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<long, ulong>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
@@ -30246,7 +30246,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
 	|
@@ -30510,6 +30510,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.GetObjectData
 	|
+	|-Dictionary<long, Helper.Allocation>.GetObjectData
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.GetObjectData
+	|
 	|-Dictionary<long, bool>.GetObjectData
 	|
 	|-Dictionary<long, Decimal>.GetObjectData
@@ -30531,10 +30535,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.GetObjectData
 	|
 	|-Dictionary<long, ulong>.GetObjectData
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.GetObjectData
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.GetObjectData
 	|
 	|-Dictionary<IntPtr, object>.GetObjectData
 	|
@@ -30862,6 +30862,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.FindEntry
 	|
+	|-Dictionary<long, Helper.Allocation>.FindEntry
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.FindEntry
+	|
 	|-Dictionary<long, bool>.FindEntry
 	|
 	|-Dictionary<long, Decimal>.FindEntry
@@ -30883,10 +30887,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.FindEntry
 	|
 	|-Dictionary<long, ulong>.FindEntry
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.FindEntry
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.FindEntry
 	|
 	|-Dictionary<IntPtr, object>.FindEntry
 	|
@@ -31214,6 +31214,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.Initialize
 	|
+	|-Dictionary<long, Helper.Allocation>.Initialize
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.Initialize
+	|
 	|-Dictionary<long, bool>.Initialize
 	|
 	|-Dictionary<long, Decimal>.Initialize
@@ -31235,10 +31239,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.Initialize
 	|
 	|-Dictionary<long, ulong>.Initialize
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.Initialize
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Initialize
 	|
 	|-Dictionary<IntPtr, object>.Initialize
 	|
@@ -31566,6 +31566,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.TryInsert
 	|
+	|-Dictionary<long, Helper.Allocation>.TryInsert
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.TryInsert
+	|
 	|-Dictionary<long, bool>.TryInsert
 	|
 	|-Dictionary<long, Decimal>.TryInsert
@@ -31587,10 +31591,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.TryInsert
 	|
 	|-Dictionary<long, ulong>.TryInsert
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.TryInsert
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.TryInsert
 	|
 	|-Dictionary<IntPtr, object>.TryInsert
 	|
@@ -31919,6 +31919,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.OnDeserialization
 	|
+	|-Dictionary<long, Helper.Allocation>.OnDeserialization
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.OnDeserialization
+	|
 	|-Dictionary<long, bool>.OnDeserialization
 	|
 	|-Dictionary<long, Decimal>.OnDeserialization
@@ -31940,10 +31944,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.OnDeserialization
 	|
 	|-Dictionary<long, ulong>.OnDeserialization
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.OnDeserialization
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.OnDeserialization
 	|
 	|-Dictionary<IntPtr, object>.OnDeserialization
 	|
@@ -32271,6 +32271,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.Resize
 	|
+	|-Dictionary<long, Helper.Allocation>.Resize
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.Resize
+	|
 	|-Dictionary<long, bool>.Resize
 	|
 	|-Dictionary<long, Decimal>.Resize
@@ -32292,10 +32296,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.Resize
 	|
 	|-Dictionary<long, ulong>.Resize
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.Resize
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Resize
 	|
 	|-Dictionary<IntPtr, object>.Resize
 	|
@@ -32623,6 +32623,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.Resize
 	|
+	|-Dictionary<long, Helper.Allocation>.Resize
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.Resize
+	|
 	|-Dictionary<long, bool>.Resize
 	|
 	|-Dictionary<long, Decimal>.Resize
@@ -32644,10 +32648,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.Resize
 	|
 	|-Dictionary<long, ulong>.Resize
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.Resize
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Resize
 	|
 	|-Dictionary<IntPtr, object>.Resize
 	|
@@ -33021,6 +33021,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, object>.Remove
 	|
+	|-Dictionary<long, Helper.Allocation>.Remove
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.Remove
+	|
 	|-Dictionary<long, SqliteFunction.AggregateData>.Remove
 	|-Dictionary<long, object>.Remove
 	|-Dictionary<long, TMP_MaterialManager.FallbackMaterial>.Remove
@@ -33045,13 +33049,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<long, ulong>.Remove
 	|
-	|-Dictionary<IntPtr, Helper.Allocation>.Remove
-	|
 	|-Dictionary<IntPtr, Helper.DelegateHolder>.Remove
 	|-Dictionary<IntPtr, BufferManager.ReferenceCounter>.Remove
 	|-Dictionary<IntPtr, object>.Remove
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.Remove
 	|
 	|-Dictionary<IPAddress, int>.Remove
 	|-Dictionary<object, int>.Remove
@@ -33442,10 +33442,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, double>.TryGetValue
 	|-Dictionary<int, long>.TryGetValue
 	|-Dictionary<int, ulong>.TryGetValue
+	|-Dictionary<long, Helper.PinnedBuffer>.TryGetValue
 	|-Dictionary<long, double>.TryGetValue
 	|-Dictionary<long, long>.TryGetValue
 	|-Dictionary<long, ulong>.TryGetValue
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.TryGetValue
 	|-Dictionary<object, InputActionSetHandle_t>.TryGetValue
 	|-Dictionary<object, InputAnalogActionHandle_t>.TryGetValue
 	|-Dictionary<object, InputDigitalActionHandle_t>.TryGetValue
@@ -33535,6 +33535,9 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.TryGetValue
 	|
+	|-Dictionary<long, Helper.Allocation>.TryGetValue
+	|-Dictionary<ulong, Chat.MuteEntry>.TryGetValue
+	|
 	|-Dictionary<long, bool>.TryGetValue
 	|-Dictionary<object, bool>.TryGetValue
 	|-Dictionary<object, byte>.TryGetValue
@@ -33550,9 +33553,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<object, ushort>.TryGetValue
 	|-Dictionary<ulong, short>.TryGetValue
 	|-Dictionary<ulong, ushort>.TryGetValue
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.TryGetValue
-	|-Dictionary<ulong, Chat.MuteEntry>.TryGetValue
 	|
 	|-Dictionary<object, CameraMan.CameraState>.TryGetValue
 	|-Dictionary<string, CameraMan.CameraState>.TryGetValue
@@ -33616,6 +33616,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, uint>.TryAdd
 	|-Dictionary<int, ulong>.TryAdd
 	|-Dictionary<Int32Enum, object>.TryAdd
+	|-Dictionary<long, Helper.PinnedBuffer>.TryAdd
 	|-Dictionary<long, bool>.TryAdd
 	|-Dictionary<long, short>.TryAdd
 	|-Dictionary<long, int>.TryAdd
@@ -33624,7 +33625,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.TryAdd
 	|-Dictionary<long, uint>.TryAdd
 	|-Dictionary<long, ulong>.TryAdd
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.TryAdd
 	|-Dictionary<IntPtr, object>.TryAdd
 	|-Dictionary<object, InputActionSetHandle_t>.TryAdd
 	|-Dictionary<object, InputAnalogActionHandle_t>.TryAdd
@@ -33766,7 +33766,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.TryAdd
 	|
-	|-Dictionary<IntPtr, Helper.Allocation>.TryAdd
+	|-Dictionary<long, Helper.Allocation>.TryAdd
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.TryAdd
 	|-Dictionary<ulong, Chat.MuteEntry>.TryAdd
 	|
@@ -33863,6 +33863,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<Int32Enum, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<Int32Enum, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, Decimal>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, double>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
@@ -33874,8 +33876,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, uint>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly
@@ -34043,6 +34043,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<Int32Enum, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<Int32Enum, float>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
+	|-Dictionary<long, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, bool>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, Decimal>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, double>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
@@ -34054,8 +34056,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, uint>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<long, ulong>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<IntPtr, object>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.CopyTo
@@ -34307,6 +34307,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.System.Collections.ICollection.CopyTo
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
+	|
 	|-Dictionary<long, bool>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary<long, Decimal>.System.Collections.ICollection.CopyTo
@@ -34328,10 +34332,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary<long, ulong>.System.Collections.ICollection.CopyTo
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.ICollection.CopyTo
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary<IntPtr, object>.System.Collections.ICollection.CopyTo
 	|
@@ -34518,6 +34518,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ulong>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<int, TerrainUtility.TerrainMap>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<Int32Enum, object>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, bool>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, double>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, short>.System.Collections.IEnumerable.GetEnumerator
@@ -34528,7 +34529,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, uint>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<long, ulong>.System.Collections.IEnumerable.GetEnumerator
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<IntPtr, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.IEnumerable.GetEnumerator
@@ -34585,7 +34585,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.System.Collections.IEnumerable.GetEnumerator
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -34849,6 +34849,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Dictionary<long, bool>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary<long, Decimal>.System.Collections.ICollection.get_SyncRoot
@@ -34870,10 +34874,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary<long, ulong>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary<IntPtr, object>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -35118,6 +35118,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<Int32Enum, object>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<Int32Enum, float>.System.Collections.IDictionary.get_IsReadOnly
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.get_IsReadOnly
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, bool>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, double>.System.Collections.IDictionary.get_IsReadOnly
@@ -35129,8 +35131,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, uint>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_IsReadOnly
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_IsReadOnly
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_IsReadOnly
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.get_IsReadOnly
@@ -35298,6 +35298,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<Int32Enum, object>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<Int32Enum, float>.System.Collections.IDictionary.get_Keys
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.get_Keys
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, bool>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, double>.System.Collections.IDictionary.get_Keys
@@ -35309,8 +35311,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, uint>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Keys
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_Keys
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_Keys
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.get_Keys
@@ -35478,6 +35478,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.IDictionary.get_Values
 	|-Dictionary<Int32Enum, object>.System.Collections.IDictionary.get_Values
 	|-Dictionary<Int32Enum, float>.System.Collections.IDictionary.get_Values
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.get_Values
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, bool>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, double>.System.Collections.IDictionary.get_Values
@@ -35489,8 +35491,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, uint>.System.Collections.IDictionary.get_Values
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Values
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_Values
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Values
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_Values
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_Values
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.get_Values
@@ -35734,6 +35734,15 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<int, ViewModelDrawEvent>.System.Collections.IDictionary.get_Item
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.get_Item
+	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.get_Item
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Item
+	|-Dictionary<long, long>.System.Collections.IDictionary.get_Item
+	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Item
+	|-Dictionary<ulong, long>.System.Collections.IDictionary.get_Item
+	|-Dictionary<ulong, ulong>.System.Collections.IDictionary.get_Item
+	|
 	|-Dictionary<long, bool>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, bool>.System.Collections.IDictionary.get_Item
 	|
@@ -35750,12 +35759,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<ulong, short>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, ushort>.System.Collections.IDictionary.get_Item
 	|
-	|-Dictionary<long, long>.System.Collections.IDictionary.get_Item
-	|-Dictionary<long, ulong>.System.Collections.IDictionary.get_Item
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.get_Item
-	|-Dictionary<ulong, long>.System.Collections.IDictionary.get_Item
-	|-Dictionary<ulong, ulong>.System.Collections.IDictionary.get_Item
-	|
 	|-Dictionary<long, object>.System.Collections.IDictionary.get_Item
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, object>.System.Collections.IDictionary.get_Item
@@ -35767,9 +35770,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, float>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, float>.System.Collections.IDictionary.get_Item
 	|-Dictionary<ulong, TimeSince>.System.Collections.IDictionary.get_Item
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.get_Item
-	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.get_Item
 	|
 	|-Dictionary<object, CameraMan.CameraState>.System.Collections.IDictionary.get_Item
 	|
@@ -35999,6 +35999,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.System.Collections.IDictionary.set_Item
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.set_Item
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.set_Item
+	|
 	|-Dictionary<long, bool>.System.Collections.IDictionary.set_Item
 	|
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.set_Item
@@ -36020,10 +36024,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.System.Collections.IDictionary.set_Item
 	|
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.set_Item
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.set_Item
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.set_Item
 	|
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.set_Item
 	|
@@ -36351,6 +36351,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.IsCompatibleKey
 	|
+	|-Dictionary<long, Helper.Allocation>.IsCompatibleKey
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.IsCompatibleKey
+	|
 	|-Dictionary<long, bool>.IsCompatibleKey
 	|
 	|-Dictionary<long, Decimal>.IsCompatibleKey
@@ -36372,10 +36376,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.IsCompatibleKey
 	|
 	|-Dictionary<long, ulong>.IsCompatibleKey
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.IsCompatibleKey
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.IsCompatibleKey
 	|
 	|-Dictionary<IntPtr, object>.IsCompatibleKey
 	|
@@ -36704,6 +36704,10 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|
 	|-Dictionary<Int32Enum, float>.System.Collections.IDictionary.Add
 	|
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.Add
+	|
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.Add
+	|
 	|-Dictionary<long, bool>.System.Collections.IDictionary.Add
 	|
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.Add
@@ -36725,10 +36729,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, uint>.System.Collections.IDictionary.Add
 	|
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.Add
-	|
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.Add
-	|
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.Add
 	|
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.Add
 	|
@@ -36889,6 +36889,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	/* GenericInstMethod :
 	|
 	|-Dictionary<FoliageKey, int>.System.Collections.IDictionary.Contains
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.Contains
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, bool>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, double>.System.Collections.IDictionary.Contains
@@ -36900,8 +36902,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, uint>.System.Collections.IDictionary.Contains
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.Contains
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.Contains
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.Contains
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.Contains
 	|-Dictionary<ulong, AvatarCache.Entry>.System.Collections.IDictionary.Contains
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.Contains
@@ -37105,6 +37105,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<int, ulong>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<int, TerrainUtility.TerrainMap>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<Int32Enum, object>.System.Collections.IDictionary.GetEnumerator
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, bool>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, double>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, short>.System.Collections.IDictionary.GetEnumerator
@@ -37115,7 +37116,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, uint>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.GetEnumerator
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<object, InputActionSetHandle_t>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<object, InputAnalogActionHandle_t>.System.Collections.IDictionary.GetEnumerator
@@ -37172,7 +37172,7 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<XPathNodeRef, XPathNodeRef>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<StringFormatCache.Key2, object>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<Decimal, Decimal>.System.Collections.IDictionary.GetEnumerator
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.GetEnumerator
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<object, PlayerModelHair.RendererMaterials>.System.Collections.IDictionary.GetEnumerator
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.GetEnumerator
 	|
@@ -37268,6 +37268,8 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	/* GenericInstMethod :
 	|
 	|-Dictionary<FoliageKey, int>.System.Collections.IDictionary.Remove
+	|-Dictionary<long, Helper.Allocation>.System.Collections.IDictionary.Remove
+	|-Dictionary<long, Helper.PinnedBuffer>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, bool>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, Decimal>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, double>.System.Collections.IDictionary.Remove
@@ -37279,8 +37281,6 @@ public class Dictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<K
 	|-Dictionary<long, ushort>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, uint>.System.Collections.IDictionary.Remove
 	|-Dictionary<long, ulong>.System.Collections.IDictionary.Remove
-	|-Dictionary<IntPtr, Helper.Allocation>.System.Collections.IDictionary.Remove
-	|-Dictionary<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionary.Remove
 	|-Dictionary<IntPtr, object>.System.Collections.IDictionary.Remove
 	|-Dictionary<ulong, AvatarCache.Entry>.System.Collections.IDictionary.Remove
 	|-Dictionary<ulong, Chat.MuteEntry>.System.Collections.IDictionary.Remove
@@ -37509,6 +37509,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<int, object>..ctor
 	|-Dictionary.Enumerator<int, ulong>..ctor
 	|-Dictionary.Enumerator<Int32Enum, object>..ctor
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary.Enumerator<long, bool>..ctor
 	|-Dictionary.Enumerator<long, double>..ctor
 	|-Dictionary.Enumerator<long, short>..ctor
@@ -37519,7 +37520,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, ushort>..ctor
 	|-Dictionary.Enumerator<long, uint>..ctor
 	|-Dictionary.Enumerator<long, ulong>..ctor
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary.Enumerator<IntPtr, object>..ctor
 	|-Dictionary.Enumerator<object, InputActionSetHandle_t>..ctor
 	|-Dictionary.Enumerator<object, InputAnalogActionHandle_t>..ctor
@@ -37576,7 +37576,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<XPathNodeRef, XPathNodeRef>..ctor
 	|-Dictionary.Enumerator<StringFormatCache.Key2, object>..ctor
 	|-Dictionary.Enumerator<Decimal, Decimal>..ctor
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary.Enumerator<long, Helper.Allocation>..ctor
 	|-Dictionary.Enumerator<object, PlayerModelHair.RendererMaterials>..ctor
 	|-Dictionary.Enumerator<ulong, Chat.MuteEntry>..ctor
 	|
@@ -37890,6 +37890,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<Int32Enum, float>.MoveNext
 	|
+	|-Dictionary.Enumerator<long, Helper.Allocation>.MoveNext
+	|
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.MoveNext
+	|
 	|-Dictionary.Enumerator<long, bool>.MoveNext
 	|
 	|-Dictionary.Enumerator<long, Decimal>.MoveNext
@@ -37911,10 +37915,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.MoveNext
 	|
 	|-Dictionary.Enumerator<long, ulong>.MoveNext
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.MoveNext
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.MoveNext
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.MoveNext
 	|
@@ -38154,6 +38154,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<int, object>.get_Current
 	|-Dictionary.Enumerator<int, ulong>.get_Current
 	|-Dictionary.Enumerator<Int32Enum, object>.get_Current
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.Enumerator<long, bool>.get_Current
 	|-Dictionary.Enumerator<long, double>.get_Current
 	|-Dictionary.Enumerator<long, short>.get_Current
@@ -38164,7 +38165,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, ushort>.get_Current
 	|-Dictionary.Enumerator<long, uint>.get_Current
 	|-Dictionary.Enumerator<long, ulong>.get_Current
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.Enumerator<IntPtr, object>.get_Current
 	|-Dictionary.Enumerator<object, InputActionSetHandle_t>.get_Current
 	|-Dictionary.Enumerator<object, InputAnalogActionHandle_t>.get_Current
@@ -38248,7 +38248,7 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<XPathNodeRef, XPathNodeRef>.get_Current
 	|-Dictionary.Enumerator<StringFormatCache.Key2, object>.get_Current
 	|-Dictionary.Enumerator<Decimal, Decimal>.get_Current
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.get_Current
+	|-Dictionary.Enumerator<long, Helper.Allocation>.get_Current
 	|-Dictionary.Enumerator<object, PlayerModelHair.RendererMaterials>.get_Current
 	|-Dictionary.Enumerator<ulong, Chat.MuteEntry>.get_Current
 	|
@@ -38423,6 +38423,8 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<int, ViewModelDrawEvent>.Dispose
 	|-Dictionary.Enumerator<Int32Enum, object>.Dispose
 	|-Dictionary.Enumerator<Int32Enum, float>.Dispose
+	|-Dictionary.Enumerator<long, Helper.Allocation>.Dispose
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.Enumerator<long, bool>.Dispose
 	|-Dictionary.Enumerator<long, Decimal>.Dispose
 	|-Dictionary.Enumerator<long, double>.Dispose
@@ -38434,8 +38436,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, ushort>.Dispose
 	|-Dictionary.Enumerator<long, uint>.Dispose
 	|-Dictionary.Enumerator<long, ulong>.Dispose
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.Dispose
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.Enumerator<IntPtr, object>.Dispose
 	|-Dictionary.Enumerator<object, CameraMan.CameraState>.Dispose
 	|-Dictionary.Enumerator<object, PlayerModelHair.RendererMaterials>.Dispose
@@ -38720,6 +38720,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<Int32Enum, float>.System.Collections.IEnumerator.get_Current
 	|
+	|-Dictionary.Enumerator<long, Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
+	|
 	|-Dictionary.Enumerator<long, bool>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.Enumerator<long, Decimal>.System.Collections.IEnumerator.get_Current
@@ -38741,10 +38745,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IEnumerator.get_Current
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.get_Current
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IEnumerator.get_Current
 	|
@@ -39072,6 +39072,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<Int32Enum, float>.System.Collections.IEnumerator.Reset
 	|
+	|-Dictionary.Enumerator<long, Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|
 	|-Dictionary.Enumerator<long, bool>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.Enumerator<long, Decimal>.System.Collections.IEnumerator.Reset
@@ -39093,10 +39097,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IEnumerator.Reset
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.Reset
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IEnumerator.Reset
 	|
@@ -39424,6 +39424,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<Int32Enum, float>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
+	|-Dictionary.Enumerator<long, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Entry
+	|
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Entry
+	|
 	|-Dictionary.Enumerator<long, bool>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
 	|-Dictionary.Enumerator<long, Decimal>.System.Collections.IDictionaryEnumerator.get_Entry
@@ -39445,10 +39449,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IDictionaryEnumerator.get_Entry
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Entry
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IDictionaryEnumerator.get_Entry
 	|
@@ -39776,6 +39776,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<Int32Enum, float>.System.Collections.IDictionaryEnumerator.get_Key
 	|
+	|-Dictionary.Enumerator<long, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Key
+	|
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Key
+	|
 	|-Dictionary.Enumerator<long, bool>.System.Collections.IDictionaryEnumerator.get_Key
 	|
 	|-Dictionary.Enumerator<long, Decimal>.System.Collections.IDictionaryEnumerator.get_Key
@@ -39797,10 +39801,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IDictionaryEnumerator.get_Key
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IDictionaryEnumerator.get_Key
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Key
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Key
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IDictionaryEnumerator.get_Key
 	|
@@ -40128,6 +40128,10 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|
 	|-Dictionary.Enumerator<Int32Enum, float>.System.Collections.IDictionaryEnumerator.get_Value
 	|
+	|-Dictionary.Enumerator<long, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Value
+	|
+	|-Dictionary.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Value
+	|
 	|-Dictionary.Enumerator<long, bool>.System.Collections.IDictionaryEnumerator.get_Value
 	|
 	|-Dictionary.Enumerator<long, Decimal>.System.Collections.IDictionaryEnumerator.get_Value
@@ -40149,10 +40153,6 @@ public struct Dictionary.Enumerator<TKey, TValue> : IEnumerator<KeyValuePair<TKe
 	|-Dictionary.Enumerator<long, uint>.System.Collections.IDictionaryEnumerator.get_Value
 	|
 	|-Dictionary.Enumerator<long, ulong>.System.Collections.IDictionaryEnumerator.get_Value
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IDictionaryEnumerator.get_Value
-	|
-	|-Dictionary.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IDictionaryEnumerator.get_Value
 	|
 	|-Dictionary.Enumerator<IntPtr, object>.System.Collections.IDictionaryEnumerator.get_Value
 	|
@@ -40491,6 +40491,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>..ctor
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>..ctor
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary.KeyCollection<long, bool>..ctor
 	|
 	|-Dictionary.KeyCollection<long, Decimal>..ctor
@@ -40512,10 +40516,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>..ctor
 	|
 	|-Dictionary.KeyCollection<long, ulong>..ctor
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>..ctor
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>..ctor
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>..ctor
 	|
@@ -40692,6 +40692,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<double, ushort>.GetEnumerator
 	|-Dictionary.KeyCollection<double, uint>.GetEnumerator
 	|-Dictionary.KeyCollection<double, ulong>.GetEnumerator
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.GetEnumerator
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary.KeyCollection<long, bool>.GetEnumerator
 	|-Dictionary.KeyCollection<long, Decimal>.GetEnumerator
 	|-Dictionary.KeyCollection<long, double>.GetEnumerator
@@ -40703,8 +40705,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.GetEnumerator
 	|-Dictionary.KeyCollection<long, uint>.GetEnumerator
 	|-Dictionary.KeyCollection<long, ulong>.GetEnumerator
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.GetEnumerator
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary.KeyCollection<IntPtr, object>.GetEnumerator
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.GetEnumerator
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.GetEnumerator
@@ -41035,6 +41035,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>.CopyTo
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.CopyTo
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.CopyTo
+	|
 	|-Dictionary.KeyCollection<long, bool>.CopyTo
 	|
 	|-Dictionary.KeyCollection<long, Decimal>.CopyTo
@@ -41056,10 +41060,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.CopyTo
 	|
 	|-Dictionary.KeyCollection<long, ulong>.CopyTo
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.CopyTo
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.CopyTo
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.CopyTo
 	|
@@ -41304,6 +41304,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<int, ViewModelDrawEvent>.get_Count
 	|-Dictionary.KeyCollection<Int32Enum, object>.get_Count
 	|-Dictionary.KeyCollection<Int32Enum, float>.get_Count
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.get_Count
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.get_Count
 	|-Dictionary.KeyCollection<long, bool>.get_Count
 	|-Dictionary.KeyCollection<long, Decimal>.get_Count
 	|-Dictionary.KeyCollection<long, double>.get_Count
@@ -41315,8 +41317,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.get_Count
 	|-Dictionary.KeyCollection<long, uint>.get_Count
 	|-Dictionary.KeyCollection<long, ulong>.get_Count
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.get_Count
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.get_Count
 	|-Dictionary.KeyCollection<IntPtr, object>.get_Count
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.get_Count
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.get_Count
@@ -41484,6 +41484,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<Int32Enum, object>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, double>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
@@ -41495,8 +41497,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TKey>.get_IsReadOnly
@@ -41747,6 +41747,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TKey>.Add
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Add
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Add
+	|
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.Generic.ICollection<TKey>.Add
 	|
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.Generic.ICollection<TKey>.Add
@@ -41768,10 +41772,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.Add
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Add
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Add
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Add
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Add
 	|
@@ -42099,6 +42099,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Clear
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Clear
+	|
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.Generic.ICollection<TKey>.Clear
@@ -42120,10 +42124,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Clear
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Clear
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Clear
 	|
@@ -42331,6 +42331,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<Int32Enum, object>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TKey>.Contains
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Contains
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, double>.System.Collections.Generic.ICollection<TKey>.Contains
@@ -42342,8 +42344,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Contains
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Contains
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TKey>.Contains
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TKey>.Contains
@@ -42635,6 +42635,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Remove
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Remove
+	|
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.Generic.ICollection<TKey>.Remove
@@ -42656,10 +42660,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.ICollection<TKey>.Remove
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TKey>.Remove
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.ICollection<TKey>.Remove
 	|
@@ -42831,6 +42831,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<double, ushort>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<double, uint>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<double, ulong>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, double>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
@@ -42842,8 +42844,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IEnumerable<TKey>.GetEnumerator
@@ -43017,6 +43017,8 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<double, ushort>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<double, uint>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<double, ulong>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, double>.System.Collections.IEnumerable.GetEnumerator
@@ -43028,8 +43030,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, ushort>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.IEnumerable.GetEnumerator
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<object, CameraMan.CameraState>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.KeyCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.IEnumerable.GetEnumerator
@@ -43359,6 +43359,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.ICollection.CopyTo
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
+	|
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.ICollection.CopyTo
@@ -43380,10 +43384,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.ICollection.CopyTo
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.CopyTo
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.ICollection.CopyTo
 	|
@@ -43711,6 +43711,10 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|
 	|-Dictionary.KeyCollection<Int32Enum, float>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-Dictionary.KeyCollection<long, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-Dictionary.KeyCollection<long, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Dictionary.KeyCollection<long, bool>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.KeyCollection<long, Decimal>.System.Collections.ICollection.get_SyncRoot
@@ -43732,10 +43736,6 @@ public sealed class Dictionary.KeyCollection<TKey, TValue> : ICollection<TKey>, 
 	|-Dictionary.KeyCollection<long, uint>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.KeyCollection<long, ulong>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-Dictionary.KeyCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.KeyCollection<IntPtr, object>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -43920,6 +43920,8 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<double, ushort>..ctor
 	|-Dictionary.KeyCollection.Enumerator<double, uint>..ctor
 	|-Dictionary.KeyCollection.Enumerator<double, ulong>..ctor
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.Allocation>..ctor
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, bool>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, Decimal>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, double>..ctor
@@ -43931,8 +43933,6 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, ushort>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, uint>..ctor
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>..ctor
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>..ctor
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>..ctor
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>..ctor
 	|-Dictionary.KeyCollection.Enumerator<object, PlayerModelHair.RendererMaterials>..ctor
@@ -44178,6 +44178,8 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<int, ViewModelDrawEvent>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<Int32Enum, object>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<Int32Enum, float>.Dispose
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.Allocation>.Dispose
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, bool>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, Decimal>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, double>.Dispose
@@ -44189,8 +44191,6 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, ushort>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.Dispose
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.Dispose
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>.Dispose
 	|-Dictionary.KeyCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.Dispose
@@ -44447,6 +44447,10 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|
 	|-Dictionary.KeyCollection.Enumerator<Int32Enum, float>.MoveNext
 	|
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.Allocation>.MoveNext
+	|
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.PinnedBuffer>.MoveNext
+	|
 	|-Dictionary.KeyCollection.Enumerator<long, bool>.MoveNext
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, Decimal>.MoveNext
@@ -44468,10 +44472,6 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.MoveNext
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.MoveNext
-	|
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.MoveNext
-	|
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.MoveNext
 	|
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.MoveNext
 	|
@@ -44643,6 +44643,8 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<Type, PostProcessAttribute>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<TerrainUtility.TerrainMap.TileCoord, Terrain>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<FoliageKey, int>.get_Current
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.Allocation>.get_Current
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, bool>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, Decimal>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, double>.get_Current
@@ -44654,8 +44656,6 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, ushort>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.get_Current
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.get_Current
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<object, CameraMan.CameraState>.get_Current
 	|-Dictionary.KeyCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.get_Current
@@ -44999,6 +44999,10 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|
 	|-Dictionary.KeyCollection.Enumerator<Int32Enum, float>.System.Collections.IEnumerator.get_Current
 	|
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
+	|
 	|-Dictionary.KeyCollection.Enumerator<long, bool>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, Decimal>.System.Collections.IEnumerator.get_Current
@@ -45020,10 +45024,6 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.get_Current
-	|
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.get_Current
-	|
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.get_Current
 	|
@@ -45351,6 +45351,10 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|
 	|-Dictionary.KeyCollection.Enumerator<Int32Enum, float>.System.Collections.IEnumerator.Reset
 	|
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.KeyCollection.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|
 	|-Dictionary.KeyCollection.Enumerator<long, bool>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, Decimal>.System.Collections.IEnumerator.Reset
@@ -45372,10 +45376,6 @@ public struct Dictionary.KeyCollection.Enumerator<TKey, TValue> : IEnumerator<TK
 	|-Dictionary.KeyCollection.Enumerator<long, uint>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.KeyCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.Reset
-	|
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.Reset
-	|
-	|-Dictionary.KeyCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.KeyCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.Reset
 	|
@@ -45714,6 +45714,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>..ctor
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>..ctor
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>..ctor
+	|
 	|-Dictionary.ValueCollection<long, bool>..ctor
 	|
 	|-Dictionary.ValueCollection<long, Decimal>..ctor
@@ -45735,10 +45739,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>..ctor
 	|
 	|-Dictionary.ValueCollection<long, ulong>..ctor
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>..ctor
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>..ctor
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>..ctor
 	|
@@ -45945,11 +45945,11 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<int, object>.GetEnumerator
 	|-Dictionary.ValueCollection<int, ulong>.GetEnumerator
 	|-Dictionary.ValueCollection<Int32Enum, object>.GetEnumerator
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary.ValueCollection<long, double>.GetEnumerator
 	|-Dictionary.ValueCollection<long, long>.GetEnumerator
 	|-Dictionary.ValueCollection<long, object>.GetEnumerator
 	|-Dictionary.ValueCollection<long, ulong>.GetEnumerator
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.GetEnumerator
 	|-Dictionary.ValueCollection<IntPtr, object>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.GetEnumerator
@@ -46091,7 +46091,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.GetEnumerator
 	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.GetEnumerator
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.GetEnumerator
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.GetEnumerator
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.GetEnumerator
 	|
@@ -46269,6 +46269,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>.CopyTo
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.CopyTo
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.CopyTo
+	|
 	|-Dictionary.ValueCollection<long, bool>.CopyTo
 	|
 	|-Dictionary.ValueCollection<long, Decimal>.CopyTo
@@ -46290,10 +46294,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.CopyTo
 	|
 	|-Dictionary.ValueCollection<long, ulong>.CopyTo
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.CopyTo
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.CopyTo
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.CopyTo
 	|
@@ -46538,6 +46538,8 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.get_Count
 	|-Dictionary.ValueCollection<Int32Enum, object>.get_Count
 	|-Dictionary.ValueCollection<Int32Enum, float>.get_Count
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.get_Count
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.get_Count
 	|-Dictionary.ValueCollection<long, bool>.get_Count
 	|-Dictionary.ValueCollection<long, Decimal>.get_Count
 	|-Dictionary.ValueCollection<long, double>.get_Count
@@ -46549,8 +46551,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, ushort>.get_Count
 	|-Dictionary.ValueCollection<long, uint>.get_Count
 	|-Dictionary.ValueCollection<long, ulong>.get_Count
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.get_Count
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.get_Count
 	|-Dictionary.ValueCollection<IntPtr, object>.get_Count
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.get_Count
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.get_Count
@@ -46717,6 +46717,8 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<Int32Enum, object>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, Decimal>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, double>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
@@ -46728,8 +46730,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, ushort>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<object, CameraMan.CameraState>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TValue>.get_IsReadOnly
@@ -46980,6 +46980,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TValue>.Add
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Add
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Add
+	|
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.Generic.ICollection<TValue>.Add
 	|
 	|-Dictionary.ValueCollection<long, Decimal>.System.Collections.Generic.ICollection<TValue>.Add
@@ -47001,10 +47005,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.Add
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Add
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Add
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Add
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Add
 	|
@@ -47332,6 +47332,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Remove
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Remove
+	|
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
 	|-Dictionary.ValueCollection<long, Decimal>.System.Collections.Generic.ICollection<TValue>.Remove
@@ -47353,10 +47357,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Remove
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Remove
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Remove
 	|
@@ -47684,6 +47684,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Clear
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Clear
+	|
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
 	|-Dictionary.ValueCollection<long, Decimal>.System.Collections.Generic.ICollection<TValue>.Clear
@@ -47705,10 +47709,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Clear
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Clear
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Clear
 	|
@@ -47929,6 +47929,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<int, uint>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<int, ulong>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<Int32Enum, object>.System.Collections.Generic.ICollection<TValue>.Contains
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, short>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, int>.System.Collections.Generic.ICollection<TValue>.Contains
@@ -47937,7 +47938,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, ushort>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.ICollection<TValue>.Contains
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.System.Collections.Generic.ICollection<TValue>.Contains
@@ -48042,7 +48042,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.Generic.ICollection<TValue>.Contains
 	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Contains
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.ICollection<TValue>.Contains
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.System.Collections.Generic.ICollection<TValue>.Contains
 	|
@@ -48151,11 +48151,11 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<int, object>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<int, ulong>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<Int32Enum, object>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<long, double>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<long, long>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<long, object>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
@@ -48231,7 +48231,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.System.Collections.Generic.IEnumerable<TValue>.GetEnumerator
 	|
@@ -48338,11 +48338,11 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<int, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<int, ulong>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<Int32Enum, object>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<long, double>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<long, long>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<long, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.IEnumerable.GetEnumerator
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputActionSetHandle_t>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<object, InputAnalogActionHandle_t>.System.Collections.IEnumerable.GetEnumerator
@@ -48418,7 +48418,7 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<int, ViewModelDrawEvent>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<object, PlayerModelHair.RendererMaterials>.System.Collections.IEnumerable.GetEnumerator
 	|-Dictionary.ValueCollection<ulong, Chat.MuteEntry>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -48596,6 +48596,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>.System.Collections.ICollection.CopyTo
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.ICollection.CopyTo
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
+	|
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.ValueCollection<long, Decimal>.System.Collections.ICollection.CopyTo
@@ -48617,10 +48621,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.ICollection.CopyTo
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.CopyTo
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.CopyTo
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.ICollection.CopyTo
 	|
@@ -48948,6 +48948,10 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|
 	|-Dictionary.ValueCollection<Int32Enum, float>.System.Collections.ICollection.get_SyncRoot
 	|
+	|-Dictionary.ValueCollection<long, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
+	|
+	|-Dictionary.ValueCollection<long, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
+	|
 	|-Dictionary.ValueCollection<long, bool>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.ValueCollection<long, Decimal>.System.Collections.ICollection.get_SyncRoot
@@ -48969,10 +48973,6 @@ public sealed class Dictionary.ValueCollection<TKey, TValue> : ICollection<TValu
 	|-Dictionary.ValueCollection<long, uint>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.ValueCollection<long, ulong>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.Allocation>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-Dictionary.ValueCollection<IntPtr, Helper.PinnedBuffer>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-Dictionary.ValueCollection<IntPtr, object>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -49242,11 +49242,11 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<int, object>..ctor
 	|-Dictionary.ValueCollection.Enumerator<int, ulong>..ctor
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, object>..ctor
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.PinnedBuffer>..ctor
 	|-Dictionary.ValueCollection.Enumerator<long, double>..ctor
 	|-Dictionary.ValueCollection.Enumerator<long, long>..ctor
 	|-Dictionary.ValueCollection.Enumerator<long, object>..ctor
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>..ctor
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>..ctor
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>..ctor
 	|-Dictionary.ValueCollection.Enumerator<object, InputActionSetHandle_t>..ctor
 	|-Dictionary.ValueCollection.Enumerator<object, InputAnalogActionHandle_t>..ctor
@@ -49322,7 +49322,7 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<int, ViewModelDrawEvent>..ctor
 	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>..ctor
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.Allocation>..ctor
 	|-Dictionary.ValueCollection.Enumerator<object, PlayerModelHair.RendererMaterials>..ctor
 	|-Dictionary.ValueCollection.Enumerator<ulong, Chat.MuteEntry>..ctor
 	|
@@ -49418,6 +49418,8 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<int, ViewModelDrawEvent>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, object>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, float>.Dispose
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.Allocation>.Dispose
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, bool>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, Decimal>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, double>.Dispose
@@ -49429,8 +49431,6 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, ushort>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, uint>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.Dispose
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.Dispose
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<object, CameraMan.CameraState>.Dispose
 	|-Dictionary.ValueCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.Dispose
@@ -49697,6 +49697,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, float>.MoveNext
 	|
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.Allocation>.MoveNext
+	|
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.PinnedBuffer>.MoveNext
+	|
 	|-Dictionary.ValueCollection.Enumerator<long, bool>.MoveNext
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, Decimal>.MoveNext
@@ -49718,10 +49722,6 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, uint>.MoveNext
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.MoveNext
-	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.MoveNext
-	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.MoveNext
 	|
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.MoveNext
 	|
@@ -49934,10 +49934,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<int, object>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<int, ulong>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, object>.get_Current
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<long, long>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<long, object>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.get_Current
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<object, InputActionSetHandle_t>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<object, InputAnalogActionHandle_t>.get_Current
@@ -50087,7 +50087,7 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<int, ViewModelDrawEvent>.get_Current
 	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.get_Current
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.Allocation>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<object, PlayerModelHair.RendererMaterials>.get_Current
 	|-Dictionary.ValueCollection.Enumerator<ulong, Chat.MuteEntry>.get_Current
 	|
@@ -50265,6 +50265,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, float>.System.Collections.IEnumerator.get_Current
 	|
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.Allocation>.System.Collections.IEnumerator.get_Current
+	|
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
+	|
 	|-Dictionary.ValueCollection.Enumerator<long, bool>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, Decimal>.System.Collections.IEnumerator.get_Current
@@ -50286,10 +50290,6 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, uint>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.get_Current
-	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.get_Current
-	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.get_Current
 	|
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.get_Current
 	|
@@ -50617,6 +50617,10 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|
 	|-Dictionary.ValueCollection.Enumerator<Int32Enum, float>.System.Collections.IEnumerator.Reset
 	|
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.Allocation>.System.Collections.IEnumerator.Reset
+	|
+	|-Dictionary.ValueCollection.Enumerator<long, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
+	|
 	|-Dictionary.ValueCollection.Enumerator<long, bool>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, Decimal>.System.Collections.IEnumerator.Reset
@@ -50638,10 +50642,6 @@ public struct Dictionary.ValueCollection.Enumerator<TKey, TValue> : IEnumerator<
 	|-Dictionary.ValueCollection.Enumerator<long, uint>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.ValueCollection.Enumerator<long, ulong>.System.Collections.IEnumerator.Reset
-	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.Allocation>.System.Collections.IEnumerator.Reset
-	|
-	|-Dictionary.ValueCollection.Enumerator<IntPtr, Helper.PinnedBuffer>.System.Collections.IEnumerator.Reset
 	|
 	|-Dictionary.ValueCollection.Enumerator<IntPtr, object>.System.Collections.IEnumerator.Reset
 	|

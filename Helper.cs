@@ -1,7 +1,7 @@
 public sealed class Helper // TypeDefIndex: 8247
 {
-	private static Dictionary<IntPtr, Helper.Allocation> s_Allocations; 
-	private static Dictionary<IntPtr, Helper.PinnedBuffer> s_PinnedBuffers; 
+	private static Dictionary<long, Helper.Allocation> s_Allocations; 
+	private static Dictionary<long, Helper.PinnedBuffer> s_PinnedBuffers; 
 	private static Dictionary<IntPtr, Helper.DelegateHolder> s_Callbacks; 
 	private static Dictionary<string, Helper.DelegateHolder> s_StaticCallbacks; 
 	private static long s_LastClientDataId; 
@@ -1410,116 +1410,16 @@ public sealed class Helper // TypeDefIndex: 8247
 	/* GenericInstMethod :
 	|
 	|-Helper.Dispose<AddNotifyAchievementsUnlockedOptionsInternal>
+	|
 	|-Helper.Dispose<AddNotifyAchievementsUnlockedV2OptionsInternal>
-	|-Helper.Dispose<CopyAchievementDefinitionByIndexOptionsInternal>
-	|-Helper.Dispose<CopyAchievementDefinitionV2ByIndexOptionsInternal>
-	|-Helper.Dispose<GetAchievementDefinitionCountOptionsInternal>
-	|-Helper.Dispose<AddNotifyClientIntegrityViolatedOptionsInternal>
-	|-Helper.Dispose<AddNotifyMessageToPeerOptionsInternal>
-	|-Helper.Dispose<AddNotifyMessageToServerOptionsInternal>
-	|-Helper.Dispose<AddNotifyPeerActionRequiredOptionsInternal>
-	|-Helper.Dispose<AddNotifyPeerAuthStatusChangedOptionsInternal>
-	|-Helper.Dispose<EndSessionOptionsInternal>
-	|-Helper.Dispose<GetProtectMessageOutputLengthOptionsInternal>
-	|-Helper.Dispose<PollStatusOptionsInternal>
-	|-Helper.Dispose<LogGameRoundEndOptionsInternal>
-	|-Helper.Dispose<QuatInternal>
-	|-Helper.Dispose<Vec3fInternal>
-	|-Helper.Dispose<AddNotifyClientActionRequiredOptionsInternal>
-	|-Helper.Dispose<AddNotifyClientAuthStatusChangedOptionsInternal>
-	|-Helper.Dispose<AddNotifyMessageToClientOptionsInternal>
-	|-Helper.Dispose<EndSessionOptionsInternal>
-	|-Helper.Dispose<GetProtectMessageOutputLengthOptionsInternal>
-	|-Helper.Dispose<AddNotifyLoginStatusChangedOptionsInternal>
-	|-Helper.Dispose<CopyUserAuthTokenOptionsInternal>
-	|-Helper.Dispose<AddNotifyAuthExpirationOptionsInternal>
-	|-Helper.Dispose<AddNotifyLoginStatusChangedOptionsInternal>
-	|-Helper.Dispose<DeleteDeviceIdOptionsInternal>
-	|-Helper.Dispose<AddNotifyCustomInviteAcceptedOptionsInternal>
-	|-Helper.Dispose<AddNotifyCustomInviteReceivedOptionsInternal>
-	|-Helper.Dispose<AddNotifyCustomInviteRejectedOptionsInternal>
-	|-Helper.Dispose<TransactionCopyEntitlementByIndexOptionsInternal>
-	|-Helper.Dispose<TransactionGetEntitlementsCountOptionsInternal>
-	|-Helper.Dispose<AddNotifyFriendsUpdateOptionsInternal>
-	|-Helper.Dispose<CreateIntegratedPlatformOptionsContainerOptionsInternal>
-	|-Helper.Dispose<AddNotifyPermissionsUpdateReceivedOptionsInternal>
-	|-Helper.Dispose<QueryAgeGateOptionsInternal>
-	|-Helper.Dispose<CopyLeaderboardDefinitionByIndexOptionsInternal>
-	|-Helper.Dispose<CopyLeaderboardRecordByIndexOptionsInternal>
-	|-Helper.Dispose<GetLeaderboardDefinitionCountOptionsInternal>
-	|-Helper.Dispose<GetLeaderboardRecordCountOptionsInternal>
-	|-Helper.Dispose<AddNotifyJoinLobbyAcceptedOptionsInternal>
-	|-Helper.Dispose<AddNotifyLobbyInviteAcceptedOptionsInternal>
-	|-Helper.Dispose<AddNotifyLobbyInviteReceivedOptionsInternal>
-	|-Helper.Dispose<AddNotifyLobbyInviteRejectedOptionsInternal>
-	|-Helper.Dispose<AddNotifyLobbyMemberStatusReceivedOptionsInternal>
-	|-Helper.Dispose<AddNotifyLobbyMemberUpdateReceivedOptionsInternal>
-	|-Helper.Dispose<AddNotifyLobbyUpdateReceivedOptionsInternal>
-	|-Helper.Dispose<AddNotifySendLobbyNativeInviteRequestedOptionsInternal>
-	|-Helper.Dispose<CopyLobbyDetailsHandleByUiEventIdOptionsInternal>
-	|-Helper.Dispose<CreateLobbySearchOptionsInternal>
-	|-Helper.Dispose<LobbyDetailsCopyAttributeByIndexOptionsInternal>
-	|-Helper.Dispose<LobbyDetailsCopyInfoOptionsInternal>
-	|-Helper.Dispose<LobbyDetailsGetAttributeCountOptionsInternal>
-	|-Helper.Dispose<LobbyDetailsGetLobbyOwnerOptionsInternal>
-	|-Helper.Dispose<LobbyDetailsGetMemberByIndexOptionsInternal>
-	|-Helper.Dispose<LobbyDetailsGetMemberCountOptionsInternal>
-	|-Helper.Dispose<LobbyModificationSetInvitesAllowedOptionsInternal>
-	|-Helper.Dispose<LobbyModificationSetMaxMembersOptionsInternal>
-	|-Helper.Dispose<LobbyModificationSetPermissionLevelOptionsInternal>
-	|-Helper.Dispose<LobbySearchCopySearchResultByIndexOptionsInternal>
-	|-Helper.Dispose<LobbySearchGetSearchResultCountOptionsInternal>
-	|-Helper.Dispose<LobbySearchSetMaxResultsOptionsInternal>
-	|-Helper.Dispose<AddNotifyIncomingPacketQueueFullOptionsInternal>
-	|-Helper.Dispose<GetNATTypeOptionsInternal>
-	|-Helper.Dispose<GetPacketQueueInfoOptionsInternal>
-	|-Helper.Dispose<GetPortRangeOptionsInternal>
-	|-Helper.Dispose<GetRelayControlOptionsInternal>
-	|-Helper.Dispose<QueryNATTypeOptionsInternal>
-	|-Helper.Dispose<SetPacketQueueSizeOptionsInternal>
-	|-Helper.Dispose<SetPortRangeOptionsInternal>
-	|-Helper.Dispose<SetRelayControlOptionsInternal>
-	|-Helper.Dispose<GetDesktopCrossplayStatusOptionsInternal>
-	|-Helper.Dispose<AddNotifyJoinGameAcceptedOptionsInternal>
-	|-Helper.Dispose<AddNotifyOnPresenceChangedOptionsInternal>
-	|-Helper.Dispose<PresenceModificationSetStatusOptionsInternal>
-	|-Helper.Dispose<EndSnapshotOptionsInternal>
-	|-Helper.Dispose<SubmitSnapshotOptionsInternal>
-	|-Helper.Dispose<CopyUserTokenByIndexOptionsInternal>
-	|-Helper.Dispose<AddNotifyAudioDevicesChangedOptionsInternal>
-	|-Helper.Dispose<GetAudioInputDeviceByIndexOptionsInternal>
-	|-Helper.Dispose<GetAudioInputDevicesCountOptionsInternal>
-	|-Helper.Dispose<GetAudioOutputDeviceByIndexOptionsInternal>
-	|-Helper.Dispose<GetAudioOutputDevicesCountOptionsInternal>
-	|-Helper.Dispose<ActiveSessionCopyInfoOptionsInternal>
-	|-Helper.Dispose<ActiveSessionGetRegisteredPlayerByIndexOptionsInternal>
-	|-Helper.Dispose<ActiveSessionGetRegisteredPlayerCountOptionsInternal>
-	|-Helper.Dispose<AddNotifyJoinSessionAcceptedOptionsInternal>
-	|-Helper.Dispose<AddNotifySessionInviteAcceptedOptionsInternal>
-	|-Helper.Dispose<AddNotifySessionInviteReceivedOptionsInternal>
-	|-Helper.Dispose<CopySessionHandleByUiEventIdOptionsInternal>
-	|-Helper.Dispose<CreateSessionSearchOptionsInternal>
-	|-Helper.Dispose<SessionDetailsCopyInfoOptionsInternal>
-	|-Helper.Dispose<SessionDetailsCopySessionAttributeByIndexOptionsInternal>
-	|-Helper.Dispose<SessionDetailsGetSessionAttributeCountOptionsInternal>
-	|-Helper.Dispose<SessionModificationSetInvitesAllowedOptionsInternal>
-	|-Helper.Dispose<SessionModificationSetJoinInProgressAllowedOptionsInternal>
-	|-Helper.Dispose<SessionModificationSetMaxPlayersOptionsInternal>
-	|-Helper.Dispose<SessionModificationSetPermissionLevelOptionsInternal>
-	|-Helper.Dispose<SessionSearchCopySearchResultByIndexOptionsInternal>
-	|-Helper.Dispose<SessionSearchGetSearchResultCountOptionsInternal>
-	|-Helper.Dispose<SessionSearchSetMaxResultsOptionsInternal>
-	|-Helper.Dispose<AcknowledgeEventIdOptionsInternal>
-	|-Helper.Dispose<AddNotifyDisplaySettingsUpdatedOptionsInternal>
-	|-Helper.Dispose<GetToggleFriendsKeyOptionsInternal>
-	|-Helper.Dispose<IsSocialOverlayPausedOptionsInternal>
-	|-Helper.Dispose<PauseSocialOverlayOptionsInternal>
-	|-Helper.Dispose<SetDisplayPreferenceOptionsInternal>
-	|-Helper.Dispose<SetToggleFriendsKeyOptionsInternal>
 	|
 	|-Helper.Dispose<CopyAchievementDefinitionByAchievementIdOptionsInternal>
 	|
+	|-Helper.Dispose<CopyAchievementDefinitionByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<CopyAchievementDefinitionV2ByAchievementIdOptionsInternal>
+	|
+	|-Helper.Dispose<CopyAchievementDefinitionV2ByIndexOptionsInternal>
 	|
 	|-Helper.Dispose<CopyPlayerAchievementByAchievementIdOptionsInternal>
 	|
@@ -1528,6 +1428,8 @@ public sealed class Helper // TypeDefIndex: 8247
 	|-Helper.Dispose<CopyUnlockedAchievementByAchievementIdOptionsInternal>
 	|
 	|-Helper.Dispose<CopyUnlockedAchievementByIndexOptionsInternal>
+	|
+	|-Helper.Dispose<GetAchievementDefinitionCountOptionsInternal>
 	|
 	|-Helper.Dispose<GetPlayerAchievementCountOptionsInternal>
 	|
@@ -1541,7 +1443,23 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<AddExternalIntegrityCatalogOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyClientIntegrityViolatedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyMessageToPeerOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyMessageToServerOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyPeerActionRequiredOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyPeerAuthStatusChangedOptionsInternal>
+	|
 	|-Helper.Dispose<BeginSessionOptionsInternal>
+	|
+	|-Helper.Dispose<EndSessionOptionsInternal>
+	|
+	|-Helper.Dispose<GetProtectMessageOutputLengthOptionsInternal>
+	|
+	|-Helper.Dispose<PollStatusOptionsInternal>
 	|
 	|-Helper.Dispose<ProtectMessageOptionsInternal>
 	|
@@ -1559,6 +1477,8 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<LogEventParamPairParamValueInternal>
 	|
+	|-Helper.Dispose<LogGameRoundEndOptionsInternal>
+	|
 	|-Helper.Dispose<LogGameRoundStartOptionsInternal>
 	|
 	|-Helper.Dispose<LogPlayerDespawnOptionsInternal>
@@ -1575,13 +1495,27 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<LogPlayerUseWeaponOptionsInternal>
 	|
+	|-Helper.Dispose<QuatInternal>
+	|
 	|-Helper.Dispose<RegisterEventOptionsInternal>
 	|
 	|-Helper.Dispose<SetClientDetailsOptionsInternal>
 	|
 	|-Helper.Dispose<SetGameSessionIdOptionsInternal>
 	|
+	|-Helper.Dispose<Vec3fInternal>
+	|
+	|-Helper.Dispose<AddNotifyClientActionRequiredOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyClientAuthStatusChangedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyMessageToClientOptionsInternal>
+	|
 	|-Helper.Dispose<BeginSessionOptionsInternal>
+	|
+	|-Helper.Dispose<EndSessionOptionsInternal>
+	|
+	|-Helper.Dispose<GetProtectMessageOutputLengthOptionsInternal>
 	|
 	|-Helper.Dispose<ProtectMessageOptionsInternal>
 	|
@@ -1595,7 +1529,11 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<UnregisterClientOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyLoginStatusChangedOptionsInternal>
+	|
 	|-Helper.Dispose<CopyIdTokenOptionsInternal>
+	|
+	|-Helper.Dispose<CopyUserAuthTokenOptionsInternal>
 	|
 	|-Helper.Dispose<DeletePersistentAuthOptionsInternal>
 	|
@@ -1613,6 +1551,10 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<VerifyUserAuthOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyAuthExpirationOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLoginStatusChangedOptionsInternal>
+	|
 	|-Helper.Dispose<CopyIdTokenOptionsInternal>
 	|
 	|-Helper.Dispose<CopyProductUserExternalAccountByAccountIdOptionsInternal>
@@ -1626,6 +1568,8 @@ public sealed class Helper // TypeDefIndex: 8247
 	|-Helper.Dispose<CreateDeviceIdOptionsInternal>
 	|
 	|-Helper.Dispose<CreateUserOptionsInternal>
+	|
+	|-Helper.Dispose<DeleteDeviceIdOptionsInternal>
 	|
 	|-Helper.Dispose<GetExternalAccountMappingsOptionsInternal>
 	|
@@ -1646,6 +1590,12 @@ public sealed class Helper // TypeDefIndex: 8247
 	|-Helper.Dispose<UnlinkAccountOptionsInternal>
 	|
 	|-Helper.Dispose<VerifyIdTokenOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyCustomInviteAcceptedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyCustomInviteReceivedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyCustomInviteRejectedOptionsInternal>
 	|
 	|-Helper.Dispose<FinalizeInviteOptionsInternal>
 	|
@@ -1709,7 +1659,13 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<RedeemEntitlementsOptionsInternal>
 	|
+	|-Helper.Dispose<TransactionCopyEntitlementByIndexOptionsInternal>
+	|
+	|-Helper.Dispose<TransactionGetEntitlementsCountOptionsInternal>
+	|
 	|-Helper.Dispose<AcceptInviteOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyFriendsUpdateOptionsInternal>
 	|
 	|-Helper.Dispose<GetFriendAtIndexOptionsInternal>
 	|
@@ -1723,7 +1679,11 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<SendInviteOptionsInternal>
 	|
+	|-Helper.Dispose<CreateIntegratedPlatformOptionsContainerOptionsInternal>
+	|
 	|-Helper.Dispose<IntegratedPlatformOptionsContainerAddOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyPermissionsUpdateReceivedOptionsInternal>
 	|
 	|-Helper.Dispose<CopyPermissionByIndexOptionsInternal>
 	|
@@ -1733,19 +1693,29 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<GetPermissionsCountOptionsInternal>
 	|
+	|-Helper.Dispose<QueryAgeGateOptionsInternal>
+	|
 	|-Helper.Dispose<QueryPermissionsOptionsInternal>
 	|
 	|-Helper.Dispose<RequestPermissionsOptionsInternal>
 	|
 	|-Helper.Dispose<UpdateParentEmailOptionsInternal>
 	|
+	|-Helper.Dispose<CopyLeaderboardDefinitionByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<CopyLeaderboardDefinitionByLeaderboardIdOptionsInternal>
+	|
+	|-Helper.Dispose<CopyLeaderboardRecordByIndexOptionsInternal>
 	|
 	|-Helper.Dispose<CopyLeaderboardRecordByUserIdOptionsInternal>
 	|
 	|-Helper.Dispose<CopyLeaderboardUserScoreByIndexOptionsInternal>
 	|
 	|-Helper.Dispose<CopyLeaderboardUserScoreByUserIdOptionsInternal>
+	|
+	|-Helper.Dispose<GetLeaderboardDefinitionCountOptionsInternal>
+	|
+	|-Helper.Dispose<GetLeaderboardRecordCountOptionsInternal>
 	|
 	|-Helper.Dispose<GetLeaderboardUserScoreCountOptionsInternal>
 	|
@@ -1755,15 +1725,35 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<QueryLeaderboardUserScoresOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyJoinLobbyAcceptedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLobbyInviteAcceptedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLobbyInviteReceivedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLobbyInviteRejectedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLobbyMemberStatusReceivedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLobbyMemberUpdateReceivedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyLobbyUpdateReceivedOptionsInternal>
+	|
 	|-Helper.Dispose<AddNotifyRTCRoomConnectionChangedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifySendLobbyNativeInviteRequestedOptionsInternal>
 	|
 	|-Helper.Dispose<AttributeDataValueInternal>
 	|
 	|-Helper.Dispose<CopyLobbyDetailsHandleByInviteIdOptionsInternal>
 	|
+	|-Helper.Dispose<CopyLobbyDetailsHandleByUiEventIdOptionsInternal>
+	|
 	|-Helper.Dispose<CopyLobbyDetailsHandleOptionsInternal>
 	|
 	|-Helper.Dispose<CreateLobbyOptionsInternal>
+	|
+	|-Helper.Dispose<CreateLobbySearchOptionsInternal>
 	|
 	|-Helper.Dispose<DestroyLobbyOptionsInternal>
 	|
@@ -1785,13 +1775,25 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<LeaveLobbyOptionsInternal>
 	|
+	|-Helper.Dispose<LobbyDetailsCopyAttributeByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<LobbyDetailsCopyAttributeByKeyOptionsInternal>
+	|
+	|-Helper.Dispose<LobbyDetailsCopyInfoOptionsInternal>
 	|
 	|-Helper.Dispose<LobbyDetailsCopyMemberAttributeByIndexOptionsInternal>
 	|
 	|-Helper.Dispose<LobbyDetailsCopyMemberAttributeByKeyOptionsInternal>
 	|
+	|-Helper.Dispose<LobbyDetailsGetAttributeCountOptionsInternal>
+	|
+	|-Helper.Dispose<LobbyDetailsGetLobbyOwnerOptionsInternal>
+	|
 	|-Helper.Dispose<LobbyDetailsGetMemberAttributeCountOptionsInternal>
+	|
+	|-Helper.Dispose<LobbyDetailsGetMemberByIndexOptionsInternal>
+	|
+	|-Helper.Dispose<LobbyDetailsGetMemberCountOptionsInternal>
 	|
 	|-Helper.Dispose<LobbyModificationAddAttributeOptionsInternal>
 	|
@@ -1803,11 +1805,23 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<LobbyModificationSetBucketIdOptionsInternal>
 	|
+	|-Helper.Dispose<LobbyModificationSetInvitesAllowedOptionsInternal>
+	|
+	|-Helper.Dispose<LobbyModificationSetMaxMembersOptionsInternal>
+	|
+	|-Helper.Dispose<LobbyModificationSetPermissionLevelOptionsInternal>
+	|
+	|-Helper.Dispose<LobbySearchCopySearchResultByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<LobbySearchFindOptionsInternal>
+	|
+	|-Helper.Dispose<LobbySearchGetSearchResultCountOptionsInternal>
 	|
 	|-Helper.Dispose<LobbySearchRemoveParameterOptionsInternal>
 	|
 	|-Helper.Dispose<LobbySearchSetLobbyIdOptionsInternal>
+	|
+	|-Helper.Dispose<LobbySearchSetMaxResultsOptionsInternal>
 	|
 	|-Helper.Dispose<LobbySearchSetParameterOptionsInternal>
 	|
@@ -1845,6 +1859,8 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<AcceptConnectionOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyIncomingPacketQueueFullOptionsInternal>
+	|
 	|-Helper.Dispose<AddNotifyPeerConnectionClosedOptionsInternal>
 	|
 	|-Helper.Dispose<AddNotifyPeerConnectionEstablishedOptionsInternal>
@@ -1859,15 +1875,33 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<CloseConnectionsOptionsInternal>
 	|
+	|-Helper.Dispose<GetNATTypeOptionsInternal>
+	|
 	|-Helper.Dispose<GetNextReceivedPacketSizeOptionsInternal>
+	|
+	|-Helper.Dispose<GetPacketQueueInfoOptionsInternal>
+	|
+	|-Helper.Dispose<GetPortRangeOptionsInternal>
+	|
+	|-Helper.Dispose<GetRelayControlOptionsInternal>
+	|
+	|-Helper.Dispose<QueryNATTypeOptionsInternal>
 	|
 	|-Helper.Dispose<ReceivePacketOptionsInternal>
 	|
 	|-Helper.Dispose<SendPacketOptionsInternal>
 	|
+	|-Helper.Dispose<SetPacketQueueSizeOptionsInternal>
+	|
+	|-Helper.Dispose<SetPortRangeOptionsInternal>
+	|
+	|-Helper.Dispose<SetRelayControlOptionsInternal>
+	|
 	|-Helper.Dispose<AndroidInitializeOptionsInternal>
 	|
 	|-Helper.Dispose<ClientCredentialsInternal>
+	|
+	|-Helper.Dispose<GetDesktopCrossplayStatusOptionsInternal>
 	|
 	|-Helper.Dispose<InitializeOptionsInternal>
 	|
@@ -1895,6 +1929,10 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<WriteFileOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyJoinGameAcceptedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyOnPresenceChangedOptionsInternal>
+	|
 	|-Helper.Dispose<CopyPresenceOptionsInternal>
 	|
 	|-Helper.Dispose<CreatePresenceModificationOptionsInternal>
@@ -1911,6 +1949,8 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<PresenceModificationSetRawRichTextOptionsInternal>
 	|
+	|-Helper.Dispose<PresenceModificationSetStatusOptionsInternal>
+	|
 	|-Helper.Dispose<QueryPresenceOptionsInternal>
 	|
 	|-Helper.Dispose<SetPresenceOptionsInternal>
@@ -1920,6 +1960,10 @@ public sealed class Helper // TypeDefIndex: 8247
 	|-Helper.Dispose<BeginSnapshotOptionsInternal>
 	|
 	|-Helper.Dispose<DeleteSnapshotOptionsInternal>
+	|
+	|-Helper.Dispose<EndSnapshotOptionsInternal>
+	|
+	|-Helper.Dispose<SubmitSnapshotOptionsInternal>
 	|
 	|-Helper.Dispose<AddNotifyDisconnectedOptionsInternal>
 	|
@@ -1935,6 +1979,8 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<SetSettingOptionsInternal>
 	|
+	|-Helper.Dispose<CopyUserTokenByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<CopyUserTokenByUserIdOptionsInternal>
 	|
 	|-Helper.Dispose<KickOptionsInternal>
@@ -1947,11 +1993,21 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<AddNotifyAudioBeforeSendOptionsInternal>
 	|
+	|-Helper.Dispose<AddNotifyAudioDevicesChangedOptionsInternal>
+	|
 	|-Helper.Dispose<AddNotifyAudioInputStateOptionsInternal>
 	|
 	|-Helper.Dispose<AddNotifyAudioOutputStateOptionsInternal>
 	|
 	|-Helper.Dispose<AddNotifyParticipantUpdatedOptionsInternal>
+	|
+	|-Helper.Dispose<GetAudioInputDeviceByIndexOptionsInternal>
+	|
+	|-Helper.Dispose<GetAudioInputDevicesCountOptionsInternal>
+	|
+	|-Helper.Dispose<GetAudioOutputDeviceByIndexOptionsInternal>
+	|
+	|-Helper.Dispose<GetAudioOutputDevicesCountOptionsInternal>
 	|
 	|-Helper.Dispose<RegisterPlatformAudioUserOptionsInternal>
 	|
@@ -1981,15 +2037,31 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<QueryActivePlayerSanctionsOptionsInternal>
 	|
+	|-Helper.Dispose<ActiveSessionCopyInfoOptionsInternal>
+	|
+	|-Helper.Dispose<ActiveSessionGetRegisteredPlayerByIndexOptionsInternal>
+	|
+	|-Helper.Dispose<ActiveSessionGetRegisteredPlayerCountOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyJoinSessionAcceptedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifySessionInviteAcceptedOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifySessionInviteReceivedOptionsInternal>
+	|
 	|-Helper.Dispose<AttributeDataValueInternal>
 	|
 	|-Helper.Dispose<CopyActiveSessionHandleOptionsInternal>
 	|
 	|-Helper.Dispose<CopySessionHandleByInviteIdOptionsInternal>
 	|
+	|-Helper.Dispose<CopySessionHandleByUiEventIdOptionsInternal>
+	|
 	|-Helper.Dispose<CopySessionHandleForPresenceOptionsInternal>
 	|
 	|-Helper.Dispose<CreateSessionModificationOptionsInternal>
+	|
+	|-Helper.Dispose<CreateSessionSearchOptionsInternal>
 	|
 	|-Helper.Dispose<DestroySessionOptionsInternal>
 	|
@@ -2013,7 +2085,13 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<SendInviteOptionsInternal>
 	|
+	|-Helper.Dispose<SessionDetailsCopyInfoOptionsInternal>
+	|
+	|-Helper.Dispose<SessionDetailsCopySessionAttributeByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<SessionDetailsCopySessionAttributeByKeyOptionsInternal>
+	|
+	|-Helper.Dispose<SessionDetailsGetSessionAttributeCountOptionsInternal>
 	|
 	|-Helper.Dispose<SessionModificationAddAttributeOptionsInternal>
 	|
@@ -2023,9 +2101,23 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<SessionModificationSetHostAddressOptionsInternal>
 	|
+	|-Helper.Dispose<SessionModificationSetInvitesAllowedOptionsInternal>
+	|
+	|-Helper.Dispose<SessionModificationSetJoinInProgressAllowedOptionsInternal>
+	|
+	|-Helper.Dispose<SessionModificationSetMaxPlayersOptionsInternal>
+	|
+	|-Helper.Dispose<SessionModificationSetPermissionLevelOptionsInternal>
+	|
+	|-Helper.Dispose<SessionSearchCopySearchResultByIndexOptionsInternal>
+	|
 	|-Helper.Dispose<SessionSearchFindOptionsInternal>
 	|
+	|-Helper.Dispose<SessionSearchGetSearchResultCountOptionsInternal>
+	|
 	|-Helper.Dispose<SessionSearchRemoveParameterOptionsInternal>
+	|
+	|-Helper.Dispose<SessionSearchSetMaxResultsOptionsInternal>
 	|
 	|-Helper.Dispose<SessionSearchSetParameterOptionsInternal>
 	|
@@ -2065,11 +2157,25 @@ public sealed class Helper // TypeDefIndex: 8247
 	|
 	|-Helper.Dispose<ReadFileOptionsInternal>
 	|
+	|-Helper.Dispose<AcknowledgeEventIdOptionsInternal>
+	|
+	|-Helper.Dispose<AddNotifyDisplaySettingsUpdatedOptionsInternal>
+	|
 	|-Helper.Dispose<GetFriendsExclusiveInputOptionsInternal>
 	|
 	|-Helper.Dispose<GetFriendsVisibleOptionsInternal>
 	|
+	|-Helper.Dispose<GetToggleFriendsKeyOptionsInternal>
+	|
 	|-Helper.Dispose<HideFriendsOptionsInternal>
+	|
+	|-Helper.Dispose<IsSocialOverlayPausedOptionsInternal>
+	|
+	|-Helper.Dispose<PauseSocialOverlayOptionsInternal>
+	|
+	|-Helper.Dispose<SetDisplayPreferenceOptionsInternal>
+	|
+	|-Helper.Dispose<SetToggleFriendsKeyOptionsInternal>
 	|
 	|-Helper.Dispose<ShowBlockPlayerOptionsInternal>
 	|
@@ -3101,14 +3207,14 @@ private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8252
 private sealed class Helper.<>c // TypeDefIndex: 8253
 {
 	public static readonly Helper.<>c <>9; 
-	public static Func<int, KeyValuePair<IntPtr, Helper.PinnedBuffer>, int> <>9__63_0; 
+	public static Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int> <>9__63_0; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal int <GetAllocationCount>b__63_0(int acc, KeyValuePair<IntPtr, Helper.PinnedBuffer> x) { }
+	internal int <GetAllocationCount>b__63_0(int acc, KeyValuePair<long, Helper.PinnedBuffer> x) { }
 
 }
 
