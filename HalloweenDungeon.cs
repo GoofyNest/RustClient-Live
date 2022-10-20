@@ -6,6 +6,7 @@ public class HalloweenDungeon : BasePortal // TypeDefIndex: 10552
 	public static float population; 
 	public float lifetime; 
 	private float secondsUsed; 
+	private float timeAlive; 
 	public AnimationCurve radiationCurve; 
 	public Translate.Phrase collapsePhrase; 
 	public Translate.Phrase mountPhrase; 
