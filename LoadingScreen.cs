@@ -1,4 +1,4 @@
-public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 12853
+public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 12864
 {
 	[CompilerGeneratedAttribute] 
 	private static bool <WantsSkip>k__BackingField; 
@@ -34,6 +34,7 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 	public float pingDiffFactorToShowWarning; 
 	[TooltipAttribute] 
 	public int requiredPingSampleCount; 
+	public GameObject blackout; 
 	private string _backgroundImagePath; 
 	private Texture2D _backgroundImage; 
 	private string _pingWarningTextTemplate; 
@@ -68,6 +69,8 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 	public static void Show(bool hideCancel = False) { }
 
 	public static void Hide() { }
+
+	public void SetBlackout(bool wants) { }
 
 	public static void ShowPerformanceWarning() { }
 
@@ -105,11 +108,11 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 
 	[AsyncStateMachineAttribute] 
 	[CompilerGeneratedAttribute] 
-	private void <ChooseBackgroundImage>g__PreloadBackgroundImage|62_0(string url) { }
+	private void <ChooseBackgroundImage>g__PreloadBackgroundImage|64_0(string url) { }
 
 }
 
-private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d : IAsyncStateMachine // TypeDefIndex: 12854
+private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d : IAsyncStateMachine // TypeDefIndex: 12865
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 

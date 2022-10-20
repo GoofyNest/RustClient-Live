@@ -1,4 +1,4 @@
-public class AdaptMeshToTerrain : MonoBehaviour // TypeDefIndex: 12356
+public class AdaptMeshToTerrain : MonoBehaviour // TypeDefIndex: 12366
 {
 	public LayerMask LayerMask; 
 	public float RayHeight; 

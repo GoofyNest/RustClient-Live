@@ -1,4 +1,4 @@
-public class ConvarToggleChildren : MonoBehaviour // TypeDefIndex: 12562
+public class ConvarToggleChildren : MonoBehaviour // TypeDefIndex: 12572
 {
 	public string ConvarName; 
 	public string ConvarEnabled; 

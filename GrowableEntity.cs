@@ -76,7 +76,7 @@ public class GrowableEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class GrowableEntity : BaseCombatEntity, IInstanceDataReceiver // TypeDefIndex: 10100
+public class GrowableEntity : BaseCombatEntity, IInstanceDataReceiver // TypeDefIndex: 10101
 {
 	private Option __menuOption_MenuClone; 
 	private Option __menuOption_MenuPick; 

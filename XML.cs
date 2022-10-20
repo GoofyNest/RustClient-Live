@@ -17406,7 +17406,7 @@ public class XmlNodeConverter : JsonConverter // TypeDefIndex: 6135
 
 }
 
-public class XORSwitch : IOEntity // TypeDefIndex: 11516
+public class XORSwitch : IOEntity // TypeDefIndex: 11525
 {
 	private int input1Amount; 
 	private int input2Amount; 

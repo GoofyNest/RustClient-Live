@@ -6354,7 +6354,7 @@ internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord
 
 }
 
-public class Data : ConsoleSystem // TypeDefIndex: 13635
+public class Data : ConsoleSystem // TypeDefIndex: 13646
 {
 
 	[ServerVar] 

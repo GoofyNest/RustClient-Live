@@ -70,7 +70,7 @@ public enum DepthOfField.BlurSampleCount // TypeDefIndex: 8188
 
 }
 
-public sealed class DepthOfField : PostProcessEffectSettings // TypeDefIndex: 13519
+public sealed class DepthOfField : PostProcessEffectSettings // TypeDefIndex: 13530
 {
 	[MinAttribute] 
 	[TooltipAttribute] 

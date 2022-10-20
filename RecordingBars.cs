@@ -1,4 +1,4 @@
-public class RecordingBars : MonoBehaviour // TypeDefIndex: 12948
+public class RecordingBars : MonoBehaviour // TypeDefIndex: 12959
 {
 	public Image BorderImage; 
 

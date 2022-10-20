@@ -1,4 +1,4 @@
-public class RandomRendererEnable : MonoBehaviour // TypeDefIndex: 10494
+public class RandomRendererEnable : MonoBehaviour // TypeDefIndex: 10496
 {
 	public Renderer[] randoms; 
 	[CompilerGeneratedAttribute] 

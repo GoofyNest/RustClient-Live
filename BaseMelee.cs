@@ -1,4 +1,4 @@
-public class BaseMelee : AttackEntity // TypeDefIndex: 10230
+public class BaseMelee : AttackEntity // TypeDefIndex: 10231
 {
 	[HeaderAttribute] 
 	public bool canThrowAsProjectile; 
@@ -70,13 +70,13 @@ public class BaseMelee : AttackEntity // TypeDefIndex: 10230
 
 	public override bool CanBeUsedInWater() { }
 
-	public string GetStrikeEffectPath(string materialName) { }
+	public virtual string GetStrikeEffectPath(string materialName) { }
 
 	public void .ctor() { }
 
 }
 
-public class BaseMelee.MaterialFX // TypeDefIndex: 10231
+public class BaseMelee.MaterialFX // TypeDefIndex: 10232
 {
 	public string materialName; 
 	public GameObjectRef fx; 

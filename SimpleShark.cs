@@ -1,4 +1,4 @@
-public class SimpleShark : BaseCombatEntity // TypeDefIndex: 10633
+public class SimpleShark : BaseCombatEntity // TypeDefIndex: 10640
 {
 	public Vector3 destination; 
 	public float minSpeed; 

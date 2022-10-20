@@ -1,4 +1,4 @@
-public class TriggerNoSpray : TriggerBase // TypeDefIndex: 11743
+public class TriggerNoSpray : TriggerBase // TypeDefIndex: 11752
 {
 	public BoxCollider TriggerCollider; 
 	private OBB cachedBounds; 

@@ -1,4 +1,4 @@
-public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12118
+public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12128
 {
 	public Texture2D HeightTexture; 
 	public Texture2D NormalTexture; 
@@ -103,7 +103,7 @@ public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12118
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 12119
+private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 12129
 {
 	public float[,] heights; 
 	public TerrainHeightMap <>4__this; 
@@ -115,7 +115,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 1211
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 12120
+private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 12130
 {
 	public Color32[] heights; 
 	public TerrainHeightMap <>4__this; 
@@ -127,7 +127,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 1212
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 12121
+private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 12131
 {
 	public int normalres; 
 	public Color32[] normals; 
@@ -140,7 +140,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 1212
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 12122
+private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 12132
 {
 	public TerrainHeightMap <>4__this; 
 	public float height; 
@@ -153,7 +153,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 12123
+private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 12133
 {
 	public TerrainHeightMap <>4__this; 
 	public float height; 
@@ -166,7 +166,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 12124
+private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 12134
 {
 	public TerrainHeightMap <>4__this; 
 	public float height; 
@@ -179,7 +179,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 12125
+private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 12135
 {
 	public TerrainHeightMap <>4__this; 
 	public float delta; 

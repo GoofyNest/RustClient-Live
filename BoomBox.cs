@@ -60,7 +60,7 @@ public class BoomBox : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6395
 
 }
 
-public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 11146
+public class BoomBox : EntityComponent<BaseEntity>, INotifyLOD // TypeDefIndex: 11155
 {
 	public static Dictionary<string, string> ValidStations; 
 	public static Dictionary<string, string> ServerValidStations; 

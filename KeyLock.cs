@@ -59,7 +59,7 @@ public class KeyLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
 
 }
 
-public class KeyLock : BaseLock // TypeDefIndex: 10106
+public class KeyLock : BaseLock // TypeDefIndex: 10107
 {
 	private Option __menuOption_Menu_CreateKey; 
 	private Option __menuOption_Menu_Lock; 

@@ -1,4 +1,4 @@
-public class HolsterPaddleInput : BaseTip // TypeDefIndex: 13350
+public class HolsterPaddleInput : BaseTip // TypeDefIndex: 13361
 {
 	public static Translate.Phrase Phrase; 
 	[CompilerGeneratedAttribute] 

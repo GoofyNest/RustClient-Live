@@ -1,4 +1,4 @@
-public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 10666
+public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 10673
 {
 	public int NavMeshAgentTypeIndex; 
 	[TooltipAttribute] 
@@ -18,6 +18,7 @@ public class MonumentNavMesh : FacepunchBehaviour, IServerComponent // TypeDefIn
 	public LayerMask LayerMask; 
 	public NavMeshCollectGeometry NavMeshCollectGeometry; 
 	public bool forceCollectTerrain; 
+	public bool shouldNotifyAIZones; 
 	public Transform CustomNavMeshRoot; 
 
 

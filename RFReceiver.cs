@@ -1,4 +1,4 @@
-public class RFReceiver : IOEntity, IRFObject // TypeDefIndex: 10143
+public class RFReceiver : IOEntity, IRFObject // TypeDefIndex: 10144
 {
 	private Option __menuOption_Menu_SetFreqency; 
 	public int frequency; 

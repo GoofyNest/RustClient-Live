@@ -14,6 +14,7 @@ public static class Pool // TypeDefIndex: 4839
 	|-Pool.FreeList<BaseVehicle>
 	|-Pool.FreeList<BaseVehicleModule>
 	|-Pool.FreeList<BuildingBlock>
+	|-Pool.FreeList<BurstClothCollider>
 	|-Pool.FreeList<CollectableEasterEgg>
 	|-Pool.FreeList<DecalRecycle>
 	|-Pool.FreeList<DroppedItem>
@@ -912,6 +913,7 @@ public static class Pool // TypeDefIndex: 4839
 	|-Pool.GetList<BaseVehicle>
 	|-Pool.GetList<BaseVehicleModule>
 	|-Pool.GetList<BuildingBlock>
+	|-Pool.GetList<BurstClothCollider>
 	|-Pool.GetList<CollectableEasterEgg>
 	|-Pool.GetList<DecalRecycle>
 	|-Pool.GetList<DroppedItem>
@@ -1255,7 +1257,7 @@ public class Pool.PoolCollection<T> : Pool.ICollection // TypeDefIndex: 4842
 
 }
 
-public class Pool : ConsoleSystem // TypeDefIndex: 13692
+public class Pool : ConsoleSystem // TypeDefIndex: 13703
 {
 	[ServerVar] 
 	[ClientVar] 
@@ -1305,7 +1307,7 @@ public class Pool : ConsoleSystem // TypeDefIndex: 13692
 
 }
 
-private sealed class Pool.<>c // TypeDefIndex: 13693
+private sealed class Pool.<>c // TypeDefIndex: 13704
 {
 	public static readonly Pool.<>c <>9; 
 	public static Func<KeyValuePair<Type, Pool.ICollection>, long> <>9__4_0; 

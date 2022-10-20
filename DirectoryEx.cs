@@ -1,4 +1,4 @@
-public static class DirectoryEx // TypeDefIndex: 13082
+public static class DirectoryEx // TypeDefIndex: 13093
 {
 
 	public static void Backup(DirectoryInfo parent, string[] names) { }

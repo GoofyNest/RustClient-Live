@@ -1,4 +1,4 @@
-public class KeyframeView : MonoBehaviour // TypeDefIndex: 12586
+public class KeyframeView : MonoBehaviour // TypeDefIndex: 12596
 {
 	public ScrollRect Scroller; 
 	public GameObjectRef KeyframePrefab; 
@@ -31,7 +31,7 @@ public class KeyframeView : MonoBehaviour // TypeDefIndex: 12586
 
 }
 
-public struct KeyframeView.UIKeyframeValue // TypeDefIndex: 12587
+public struct KeyframeView.UIKeyframeValue // TypeDefIndex: 12597
 {
 	public float time; 
 	public string visibleValue; 
@@ -40,7 +40,7 @@ public struct KeyframeView.UIKeyframeValue // TypeDefIndex: 12587
 
 }
 
-public enum KeyframeView.UIKeyframeValue.KeyframeValueType // TypeDefIndex: 12588
+public enum KeyframeView.UIKeyframeValue.KeyframeValueType // TypeDefIndex: 12598
 {
 	public int value__; 
 	public const KeyframeView.UIKeyframeValue.KeyframeValueType Vector3 = 0;

@@ -1,4 +1,4 @@
-public class AmplifyOcclusionEffect : AmplifyOcclusionBase // TypeDefIndex: 13213
+public class AmplifyOcclusionEffect : AmplifyOcclusionBase // TypeDefIndex: 13224
 {
 
 	public void .ctor() { }

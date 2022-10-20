@@ -1,4 +1,4 @@
-public class SlidingProgressDoor : ProgressDoor // TypeDefIndex: 11520
+public class SlidingProgressDoor : ProgressDoor // TypeDefIndex: 11529
 {
 	public Vector3 openPosition; 
 	public Vector3 closedPosition; 

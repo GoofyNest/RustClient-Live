@@ -249,7 +249,7 @@ public static class Extensions // TypeDefIndex: 8255
 
 }
 
-public static class Extensions // TypeDefIndex: 13309
+public static class Extensions // TypeDefIndex: 13320
 {
 
 	[ExtensionAttribute] 

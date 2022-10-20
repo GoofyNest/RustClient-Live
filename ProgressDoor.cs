@@ -1,4 +1,4 @@
-public class ProgressDoor : IOEntity // TypeDefIndex: 11519
+public class ProgressDoor : IOEntity // TypeDefIndex: 11528
 {
 	public float storedEnergy; 
 	public float energyForOpen; 

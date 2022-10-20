@@ -1,4 +1,4 @@
-public class PaintableItem : MonoBehaviour // TypeDefIndex: 11307
+public class PaintableItem : MonoBehaviour // TypeDefIndex: 11316
 {
 	public MeshPaintableSource PaintableSource; 
 	public uint LoadedCrc; 

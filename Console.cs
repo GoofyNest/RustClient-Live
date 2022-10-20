@@ -1216,13 +1216,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_188(string str) { }
 
-	internal void <.cctor>b__2_189(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_189() { }
 
-	internal void <.cctor>b__2_190(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_190(string str) { }
 
-	internal string <.cctor>b__2_191() { }
+	internal void <.cctor>b__2_191(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_192(string str) { }
+	internal void <.cctor>b__2_192(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_193() { }
 
@@ -1232,13 +1232,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_196(string str) { }
 
-	internal void <.cctor>b__2_197(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_197() { }
 
-	internal void <.cctor>b__2_198(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_198(string str) { }
 
-	internal string <.cctor>b__2_199() { }
+	internal void <.cctor>b__2_199(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_200(string str) { }
+	internal void <.cctor>b__2_200(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_201() { }
 
@@ -1260,15 +1260,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_210(string str) { }
 
-	internal void <.cctor>b__2_211(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_211() { }
 
-	internal void <.cctor>b__2_212(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_212(string str) { }
 
 	internal void <.cctor>b__2_213(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_214() { }
+	internal void <.cctor>b__2_214(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_215(string str) { }
+	internal void <.cctor>b__2_215(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_216() { }
 
@@ -1278,15 +1278,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_219(string str) { }
 
-	internal void <.cctor>b__2_220(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_220() { }
 
-	internal string <.cctor>b__2_221() { }
+	internal void <.cctor>b__2_221(string str) { }
 
-	internal void <.cctor>b__2_222(string str) { }
+	internal void <.cctor>b__2_222(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_223(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_223() { }
 
-	internal void <.cctor>b__2_224(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_224(string str) { }
 
 	internal void <.cctor>b__2_225(ConsoleSystem.Arg arg) { }
 
@@ -1296,9 +1296,9 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_228(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_229() { }
+	internal void <.cctor>b__2_229(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_230(string str) { }
+	internal void <.cctor>b__2_230(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_231() { }
 
@@ -1340,11 +1340,11 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_250(string str) { }
 
-	internal void <.cctor>b__2_251(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_251() { }
 
-	internal string <.cctor>b__2_252() { }
+	internal void <.cctor>b__2_252(string str) { }
 
-	internal void <.cctor>b__2_253(string str) { }
+	internal void <.cctor>b__2_253(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_254() { }
 
@@ -1354,15 +1354,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_257(string str) { }
 
-	internal void <.cctor>b__2_258(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_258() { }
 
-	internal void <.cctor>b__2_259(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_259(string str) { }
 
 	internal void <.cctor>b__2_260(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_261() { }
+	internal void <.cctor>b__2_261(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_262(string str) { }
+	internal void <.cctor>b__2_262(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_263() { }
 
@@ -1372,13 +1372,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_266(string str) { }
 
-	internal void <.cctor>b__2_267(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_267() { }
 
-	internal void <.cctor>b__2_268(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_268(string str) { }
 
-	internal string <.cctor>b__2_269() { }
+	internal void <.cctor>b__2_269(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_270(string str) { }
+	internal void <.cctor>b__2_270(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_271() { }
 
@@ -1424,17 +1424,17 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_292(string str) { }
 
-	internal void <.cctor>b__2_293(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_293() { }
 
-	internal void <.cctor>b__2_294(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_294(string str) { }
 
-	internal string <.cctor>b__2_295() { }
+	internal void <.cctor>b__2_295(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_296(string str) { }
+	internal void <.cctor>b__2_296(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_297(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_297() { }
 
-	internal void <.cctor>b__2_298(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_298(string str) { }
 
 	internal void <.cctor>b__2_299(ConsoleSystem.Arg arg) { }
 
@@ -1442,49 +1442,49 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_301(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_302() { }
+	internal void <.cctor>b__2_302(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_303(string str) { }
+	internal void <.cctor>b__2_303(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_304(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_304() { }
 
-	internal void <.cctor>b__2_305(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_305(string str) { }
 
 	internal void <.cctor>b__2_306(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_307() { }
+	internal void <.cctor>b__2_307(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_308(string str) { }
+	internal void <.cctor>b__2_308(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_309(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_309() { }
 
-	internal string <.cctor>b__2_310() { }
+	internal void <.cctor>b__2_310(string str) { }
 
-	internal void <.cctor>b__2_311(string str) { }
+	internal void <.cctor>b__2_311(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_312(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_312() { }
 
-	internal string <.cctor>b__2_313() { }
+	internal void <.cctor>b__2_313(string str) { }
 
-	internal void <.cctor>b__2_314(string str) { }
+	internal void <.cctor>b__2_314(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_315(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_315() { }
 
-	internal string <.cctor>b__2_316() { }
+	internal void <.cctor>b__2_316(string str) { }
 
-	internal void <.cctor>b__2_317(string str) { }
+	internal void <.cctor>b__2_317(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_318(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_318() { }
 
-	internal void <.cctor>b__2_319(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_319(string str) { }
 
 	internal string <.cctor>b__2_320() { }
 
 	internal void <.cctor>b__2_321(string str) { }
 
-	internal string <.cctor>b__2_322() { }
+	internal void <.cctor>b__2_322(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_323(string str) { }
+	internal void <.cctor>b__2_323(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_324() { }
 
@@ -1522,55 +1522,55 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_341(string str) { }
 
-	internal void <.cctor>b__2_342(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_342() { }
 
-	internal void <.cctor>b__2_343(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_343(string str) { }
 
-	internal void <.cctor>b__2_344(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_344() { }
 
-	internal void <.cctor>b__2_345(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_345(string str) { }
 
 	internal void <.cctor>b__2_346(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_347(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_348() { }
+	internal void <.cctor>b__2_348(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_349(string str) { }
+	internal void <.cctor>b__2_349(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_350() { }
+	internal void <.cctor>b__2_350(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_351(string str) { }
+	internal void <.cctor>b__2_351(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_352() { }
 
 	internal void <.cctor>b__2_353(string str) { }
 
-	internal void <.cctor>b__2_354(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_354() { }
 
-	internal void <.cctor>b__2_355(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_355(string str) { }
 
 	internal string <.cctor>b__2_356() { }
 
 	internal void <.cctor>b__2_357(string str) { }
 
-	internal string <.cctor>b__2_358() { }
+	internal void <.cctor>b__2_358(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_359(string str) { }
+	internal void <.cctor>b__2_359(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_360() { }
 
 	internal void <.cctor>b__2_361(string str) { }
 
-	internal void <.cctor>b__2_362(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_362() { }
 
-	internal string <.cctor>b__2_363() { }
+	internal void <.cctor>b__2_363(string str) { }
 
-	internal void <.cctor>b__2_364(string str) { }
+	internal string <.cctor>b__2_364() { }
 
-	internal string <.cctor>b__2_365() { }
+	internal void <.cctor>b__2_365(string str) { }
 
-	internal void <.cctor>b__2_366(string str) { }
+	internal void <.cctor>b__2_366(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_367() { }
 
@@ -1580,25 +1580,25 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_370(string str) { }
 
-	internal void <.cctor>b__2_371(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_371() { }
 
-	internal void <.cctor>b__2_372(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_372(string str) { }
 
-	internal void <.cctor>b__2_373(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_373() { }
 
-	internal void <.cctor>b__2_374(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_374(string str) { }
 
 	internal void <.cctor>b__2_375(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_376(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_377() { }
+	internal void <.cctor>b__2_377(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_378(string str) { }
+	internal void <.cctor>b__2_378(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_379() { }
+	internal void <.cctor>b__2_379(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_380(string str) { }
+	internal void <.cctor>b__2_380(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_381() { }
 
@@ -1616,19 +1616,19 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_388(string str) { }
 
-	internal void <.cctor>b__2_389(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_389() { }
 
-	internal void <.cctor>b__2_390(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_390(string str) { }
 
-	internal void <.cctor>b__2_391(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_391() { }
 
-	internal void <.cctor>b__2_392(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_392(string str) { }
 
 	internal void <.cctor>b__2_393(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_394() { }
+	internal void <.cctor>b__2_394(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_395(string str) { }
+	internal void <.cctor>b__2_395(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_396(ConsoleSystem.Arg arg) { }
 
@@ -1638,33 +1638,33 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_399(string str) { }
 
-	internal string <.cctor>b__2_400() { }
+	internal void <.cctor>b__2_400(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_401(string str) { }
+	internal void <.cctor>b__2_401(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_402() { }
 
 	internal void <.cctor>b__2_403(string str) { }
 
-	internal void <.cctor>b__2_404(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_404() { }
 
-	internal string <.cctor>b__2_405() { }
+	internal void <.cctor>b__2_405(string str) { }
 
-	internal void <.cctor>b__2_406(string str) { }
+	internal string <.cctor>b__2_406() { }
 
-	internal string <.cctor>b__2_407() { }
+	internal void <.cctor>b__2_407(string str) { }
 
-	internal void <.cctor>b__2_408(string str) { }
+	internal void <.cctor>b__2_408(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_409(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_409() { }
 
-	internal void <.cctor>b__2_410(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_410(string str) { }
 
-	internal void <.cctor>b__2_411(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_411() { }
 
-	internal string <.cctor>b__2_412() { }
+	internal void <.cctor>b__2_412(string str) { }
 
-	internal void <.cctor>b__2_413(string str) { }
+	internal void <.cctor>b__2_413(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_414(ConsoleSystem.Arg arg) { }
 
@@ -1674,29 +1674,29 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_417(string str) { }
 
-	internal string <.cctor>b__2_418() { }
+	internal void <.cctor>b__2_418(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_419(string str) { }
+	internal void <.cctor>b__2_419(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_420(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_420() { }
 
-	internal string <.cctor>b__2_421() { }
+	internal void <.cctor>b__2_421(string str) { }
 
-	internal void <.cctor>b__2_422(string str) { }
+	internal string <.cctor>b__2_422() { }
 
-	internal string <.cctor>b__2_423() { }
+	internal void <.cctor>b__2_423(string str) { }
 
-	internal void <.cctor>b__2_424(string str) { }
+	internal void <.cctor>b__2_424(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_425(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_425() { }
 
-	internal string <.cctor>b__2_426() { }
+	internal void <.cctor>b__2_426(string str) { }
 
-	internal void <.cctor>b__2_427(string str) { }
+	internal string <.cctor>b__2_427() { }
 
-	internal string <.cctor>b__2_428() { }
+	internal void <.cctor>b__2_428(string str) { }
 
-	internal void <.cctor>b__2_429(string str) { }
+	internal void <.cctor>b__2_429(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_430() { }
 
@@ -1706,23 +1706,23 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_433(string str) { }
 
-	internal void <.cctor>b__2_434(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_434() { }
 
-	internal string <.cctor>b__2_435() { }
+	internal void <.cctor>b__2_435(string str) { }
 
-	internal void <.cctor>b__2_436(string str) { }
+	internal string <.cctor>b__2_436() { }
 
-	internal string <.cctor>b__2_437() { }
+	internal void <.cctor>b__2_437(string str) { }
 
-	internal void <.cctor>b__2_438(string str) { }
+	internal void <.cctor>b__2_438(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_439(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_439() { }
 
-	internal void <.cctor>b__2_440(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_440(string str) { }
 
-	internal void <.cctor>b__2_441(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_441() { }
 
-	internal void <.cctor>b__2_442(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_442(string str) { }
 
 	internal void <.cctor>b__2_443(ConsoleSystem.Arg arg) { }
 
@@ -1732,17 +1732,17 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_446(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_447() { }
+	internal void <.cctor>b__2_447(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_448(string str) { }
+	internal void <.cctor>b__2_448(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_449() { }
+	internal void <.cctor>b__2_449(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_450(string str) { }
+	internal void <.cctor>b__2_450(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_451(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_451() { }
 
-	internal void <.cctor>b__2_452(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_452(string str) { }
 
 	internal string <.cctor>b__2_453() { }
 
@@ -1756,23 +1756,23 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_458(string str) { }
 
-	internal string <.cctor>b__2_459() { }
+	internal void <.cctor>b__2_459(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_460(string str) { }
+	internal void <.cctor>b__2_460(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_461() { }
 
 	internal void <.cctor>b__2_462(string str) { }
 
-	internal void <.cctor>b__2_463(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_463() { }
 
-	internal string <.cctor>b__2_464() { }
+	internal void <.cctor>b__2_464(string str) { }
 
-	internal void <.cctor>b__2_465(string str) { }
+	internal string <.cctor>b__2_465() { }
 
-	internal string <.cctor>b__2_466() { }
+	internal void <.cctor>b__2_466(string str) { }
 
-	internal void <.cctor>b__2_467(string str) { }
+	internal void <.cctor>b__2_467(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_468() { }
 
@@ -1814,13 +1814,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_487(string str) { }
 
-	internal void <.cctor>b__2_488(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_488() { }
 
-	internal void <.cctor>b__2_489(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_489(string str) { }
 
-	internal void <.cctor>b__2_490(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_490() { }
 
-	internal void <.cctor>b__2_491(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_491(string str) { }
 
 	internal void <.cctor>b__2_492(ConsoleSystem.Arg arg) { }
 
@@ -1842,13 +1842,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_501(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_502() { }
+	internal void <.cctor>b__2_502(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_503(string str) { }
+	internal void <.cctor>b__2_503(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_504() { }
+	internal void <.cctor>b__2_504(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_505(string str) { }
+	internal void <.cctor>b__2_505(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_506() { }
 
@@ -1878,25 +1878,25 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_519(string str) { }
 
-	internal void <.cctor>b__2_520(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_520() { }
 
-	internal string <.cctor>b__2_521() { }
+	internal void <.cctor>b__2_521(string str) { }
 
-	internal void <.cctor>b__2_522(string str) { }
+	internal string <.cctor>b__2_522() { }
 
-	internal string <.cctor>b__2_523() { }
+	internal void <.cctor>b__2_523(string str) { }
 
-	internal void <.cctor>b__2_524(string str) { }
+	internal void <.cctor>b__2_524(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_525(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_525() { }
 
-	internal string <.cctor>b__2_526() { }
+	internal void <.cctor>b__2_526(string str) { }
 
-	internal void <.cctor>b__2_527(string str) { }
+	internal string <.cctor>b__2_527() { }
 
-	internal string <.cctor>b__2_528() { }
+	internal void <.cctor>b__2_528(string str) { }
 
-	internal void <.cctor>b__2_529(string str) { }
+	internal void <.cctor>b__2_529(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_530() { }
 
@@ -1906,15 +1906,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_533(string str) { }
 
-	internal void <.cctor>b__2_534(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_534() { }
 
-	internal string <.cctor>b__2_535() { }
+	internal void <.cctor>b__2_535(string str) { }
 
-	internal void <.cctor>b__2_536(string str) { }
+	internal string <.cctor>b__2_536() { }
 
-	internal string <.cctor>b__2_537() { }
+	internal void <.cctor>b__2_537(string str) { }
 
-	internal void <.cctor>b__2_538(string str) { }
+	internal void <.cctor>b__2_538(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_539() { }
 
@@ -1928,19 +1928,19 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_544(string str) { }
 
-	internal void <.cctor>b__2_545(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_545() { }
 
-	internal string <.cctor>b__2_546() { }
+	internal void <.cctor>b__2_546(string str) { }
 
-	internal void <.cctor>b__2_547(string str) { }
+	internal string <.cctor>b__2_547() { }
 
-	internal string <.cctor>b__2_548() { }
+	internal void <.cctor>b__2_548(string str) { }
 
-	internal void <.cctor>b__2_549(string str) { }
+	internal void <.cctor>b__2_549(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_550(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_550() { }
 
-	internal void <.cctor>b__2_551(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_551(string str) { }
 
 	internal string <.cctor>b__2_552() { }
 
@@ -1948,13 +1948,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_554(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_555() { }
+	internal void <.cctor>b__2_555(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_556(string str) { }
+	internal string <.cctor>b__2_556() { }
 
-	internal string <.cctor>b__2_557() { }
+	internal void <.cctor>b__2_557(string str) { }
 
-	internal void <.cctor>b__2_558(string str) { }
+	internal void <.cctor>b__2_558(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_559() { }
 
@@ -1964,33 +1964,33 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_562(string str) { }
 
-	internal void <.cctor>b__2_563(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_563() { }
 
-	internal string <.cctor>b__2_564() { }
+	internal void <.cctor>b__2_564(string str) { }
 
-	internal void <.cctor>b__2_565(string str) { }
+	internal string <.cctor>b__2_565() { }
 
-	internal string <.cctor>b__2_566() { }
+	internal void <.cctor>b__2_566(string str) { }
 
-	internal void <.cctor>b__2_567(string str) { }
+	internal void <.cctor>b__2_567(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_568() { }
 
 	internal void <.cctor>b__2_569(string str) { }
 
-	internal void <.cctor>b__2_570(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_570() { }
 
-	internal void <.cctor>b__2_571(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_571(string str) { }
 
-	internal void <.cctor>b__2_572(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_572() { }
 
-	internal string <.cctor>b__2_573() { }
+	internal void <.cctor>b__2_573(string str) { }
 
-	internal void <.cctor>b__2_574(string str) { }
+	internal void <.cctor>b__2_574(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_575() { }
+	internal void <.cctor>b__2_575(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_576(string str) { }
+	internal void <.cctor>b__2_576(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_577() { }
 
@@ -2012,43 +2012,43 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_586(string str) { }
 
-	internal void <.cctor>b__2_587(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_587() { }
 
-	internal string <.cctor>b__2_588() { }
+	internal void <.cctor>b__2_588(string str) { }
 
-	internal void <.cctor>b__2_589(string str) { }
+	internal string <.cctor>b__2_589() { }
 
-	internal void <.cctor>b__2_590(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_590(string str) { }
 
 	internal void <.cctor>b__2_591(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_592(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_592() { }
 
-	internal void <.cctor>b__2_593(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_593(string str) { }
 
-	internal string <.cctor>b__2_594() { }
+	internal void <.cctor>b__2_594(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_595(string str) { }
+	internal void <.cctor>b__2_595(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_596() { }
+	internal void <.cctor>b__2_596(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_597(string str) { }
+	internal void <.cctor>b__2_597(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_598(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_598() { }
 
-	internal string <.cctor>b__2_599() { }
+	internal void <.cctor>b__2_599(string str) { }
 
-	internal void <.cctor>b__2_600(string str) { }
+	internal string <.cctor>b__2_600() { }
 
-	internal void <.cctor>b__2_601(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_601(string str) { }
 
-	internal string <.cctor>b__2_602() { }
+	internal void <.cctor>b__2_602(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_603(string str) { }
+	internal string <.cctor>b__2_603() { }
 
-	internal string <.cctor>b__2_604() { }
+	internal void <.cctor>b__2_604(string str) { }
 
-	internal void <.cctor>b__2_605(string str) { }
+	internal void <.cctor>b__2_605(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_606() { }
 
@@ -2098,27 +2098,27 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_629(string str) { }
 
-	internal void <.cctor>b__2_630(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_630() { }
 
-	internal void <.cctor>b__2_631(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_631(string str) { }
 
 	internal string <.cctor>b__2_632() { }
 
 	internal void <.cctor>b__2_633(string str) { }
 
-	internal string <.cctor>b__2_634() { }
+	internal void <.cctor>b__2_634(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_635(string str) { }
+	internal void <.cctor>b__2_635(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_636(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_636() { }
 
-	internal string <.cctor>b__2_637() { }
+	internal void <.cctor>b__2_637(string str) { }
 
-	internal void <.cctor>b__2_638(string str) { }
+	internal string <.cctor>b__2_638() { }
 
-	internal string <.cctor>b__2_639() { }
+	internal void <.cctor>b__2_639(string str) { }
 
-	internal void <.cctor>b__2_640(string str) { }
+	internal void <.cctor>b__2_640(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_641() { }
 
@@ -2180,31 +2180,31 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_670(string str) { }
 
-	internal void <.cctor>b__2_671(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_671() { }
 
-	internal void <.cctor>b__2_672(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_672(string str) { }
 
-	internal void <.cctor>b__2_673(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_673() { }
 
-	internal string <.cctor>b__2_674() { }
+	internal void <.cctor>b__2_674(string str) { }
 
-	internal void <.cctor>b__2_675(string str) { }
+	internal void <.cctor>b__2_675(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_676(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_677() { }
+	internal void <.cctor>b__2_677(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_678(string str) { }
+	internal string <.cctor>b__2_678() { }
 
-	internal void <.cctor>b__2_679(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_679(string str) { }
 
-	internal string <.cctor>b__2_680() { }
+	internal void <.cctor>b__2_680(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_681(string str) { }
+	internal string <.cctor>b__2_681() { }
 
-	internal string <.cctor>b__2_682() { }
+	internal void <.cctor>b__2_682(string str) { }
 
-	internal void <.cctor>b__2_683(string str) { }
+	internal void <.cctor>b__2_683(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_684() { }
 
@@ -2270,15 +2270,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_715(string str) { }
 
-	internal void <.cctor>b__2_716(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_716() { }
 
-	internal string <.cctor>b__2_717() { }
+	internal void <.cctor>b__2_717(string str) { }
 
-	internal void <.cctor>b__2_718(string str) { }
+	internal string <.cctor>b__2_718() { }
 
-	internal string <.cctor>b__2_719() { }
+	internal void <.cctor>b__2_719(string str) { }
 
-	internal void <.cctor>b__2_720(string str) { }
+	internal void <.cctor>b__2_720(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_721() { }
 
@@ -2288,15 +2288,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_724(string str) { }
 
-	internal void <.cctor>b__2_725(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_725() { }
 
-	internal string <.cctor>b__2_726() { }
+	internal void <.cctor>b__2_726(string str) { }
 
-	internal void <.cctor>b__2_727(string str) { }
+	internal string <.cctor>b__2_727() { }
 
-	internal string <.cctor>b__2_728() { }
+	internal void <.cctor>b__2_728(string str) { }
 
-	internal void <.cctor>b__2_729(string str) { }
+	internal void <.cctor>b__2_729(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_730() { }
 
@@ -2322,17 +2322,17 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_741(string str) { }
 
-	internal void <.cctor>b__2_742(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_742() { }
 
-	internal void <.cctor>b__2_743(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_743(string str) { }
 
 	internal string <.cctor>b__2_744() { }
 
 	internal void <.cctor>b__2_745(string str) { }
 
-	internal string <.cctor>b__2_746() { }
+	internal void <.cctor>b__2_746(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_747(string str) { }
+	internal void <.cctor>b__2_747(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_748() { }
 
@@ -2354,25 +2354,25 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_757(string str) { }
 
-	internal void <.cctor>b__2_758(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_758() { }
 
-	internal void <.cctor>b__2_759(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_759(string str) { }
 
 	internal string <.cctor>b__2_760() { }
 
 	internal void <.cctor>b__2_761(string str) { }
 
-	internal string <.cctor>b__2_762() { }
+	internal void <.cctor>b__2_762(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_763(string str) { }
+	internal void <.cctor>b__2_763(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_764(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_764() { }
 
-	internal void <.cctor>b__2_765(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_765(string str) { }
 
-	internal void <.cctor>b__2_766(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_766() { }
 
-	internal void <.cctor>b__2_767(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_767(string str) { }
 
 	internal void <.cctor>b__2_768(ConsoleSystem.Arg arg) { }
 
@@ -2380,33 +2380,33 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_770(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_771() { }
+	internal void <.cctor>b__2_771(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_772(string str) { }
+	internal void <.cctor>b__2_772(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_773(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_774(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_775(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_775() { }
 
-	internal void <.cctor>b__2_776(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_776(string str) { }
 
 	internal void <.cctor>b__2_777(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_778(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_779() { }
+	internal void <.cctor>b__2_779(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_780(string str) { }
+	internal void <.cctor>b__2_780(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_781(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_782(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_783(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_783() { }
 
-	internal void <.cctor>b__2_784(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_784(string str) { }
 
 	internal void <.cctor>b__2_785(ConsoleSystem.Arg arg) { }
 
@@ -2416,13 +2416,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_788(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_789() { }
+	internal void <.cctor>b__2_789(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_790(string str) { }
+	internal void <.cctor>b__2_790(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_791() { }
+	internal void <.cctor>b__2_791(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_792(string str) { }
+	internal void <.cctor>b__2_792(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_793() { }
 
@@ -2464,33 +2464,33 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_812(string str) { }
 
-	internal void <.cctor>b__2_813(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_813() { }
 
-	internal void <.cctor>b__2_814(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_814(string str) { }
 
-	internal void <.cctor>b__2_815(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_815() { }
 
-	internal void <.cctor>b__2_816(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_816(string str) { }
 
 	internal void <.cctor>b__2_817(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_818() { }
+	internal void <.cctor>b__2_818(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_819(string str) { }
+	internal void <.cctor>b__2_819(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_820() { }
+	internal void <.cctor>b__2_820(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_821(string str) { }
+	internal void <.cctor>b__2_821(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_822(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_822() { }
 
-	internal string <.cctor>b__2_823() { }
+	internal void <.cctor>b__2_823(string str) { }
 
-	internal void <.cctor>b__2_824(string str) { }
+	internal string <.cctor>b__2_824() { }
 
-	internal string <.cctor>b__2_825() { }
+	internal void <.cctor>b__2_825(string str) { }
 
-	internal void <.cctor>b__2_826(string str) { }
+	internal void <.cctor>b__2_826(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_827() { }
 
@@ -2512,23 +2512,23 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_836(string str) { }
 
-	internal void <.cctor>b__2_837(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_837() { }
 
-	internal void <.cctor>b__2_838(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_838(string str) { }
 
-	internal void <.cctor>b__2_839(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_839() { }
 
-	internal void <.cctor>b__2_840(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_840(string str) { }
 
 	internal void <.cctor>b__2_841(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_842() { }
+	internal void <.cctor>b__2_842(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_843(string str) { }
+	internal void <.cctor>b__2_843(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_844() { }
+	internal void <.cctor>b__2_844(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_845(string str) { }
+	internal void <.cctor>b__2_845(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_846() { }
 
@@ -2554,19 +2554,19 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_857(string str) { }
 
-	internal void <.cctor>b__2_858(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_858() { }
 
-	internal void <.cctor>b__2_859(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_859(string str) { }
 
-	internal void <.cctor>b__2_860(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_860() { }
 
-	internal string <.cctor>b__2_861() { }
+	internal void <.cctor>b__2_861(string str) { }
 
-	internal void <.cctor>b__2_862(string str) { }
+	internal void <.cctor>b__2_862(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_863() { }
+	internal void <.cctor>b__2_863(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_864(string str) { }
+	internal void <.cctor>b__2_864(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_865() { }
 
@@ -2580,29 +2580,29 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_870(string str) { }
 
-	internal void <.cctor>b__2_871(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_871() { }
 
-	internal string <.cctor>b__2_872() { }
+	internal void <.cctor>b__2_872(string str) { }
 
-	internal void <.cctor>b__2_873(string str) { }
+	internal string <.cctor>b__2_873() { }
 
-	internal string <.cctor>b__2_874() { }
+	internal void <.cctor>b__2_874(string str) { }
 
-	internal void <.cctor>b__2_875(string str) { }
+	internal void <.cctor>b__2_875(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_876() { }
 
 	internal void <.cctor>b__2_877(string str) { }
 
-	internal void <.cctor>b__2_878(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_878() { }
 
-	internal string <.cctor>b__2_879() { }
+	internal void <.cctor>b__2_879(string str) { }
 
-	internal void <.cctor>b__2_880(string str) { }
+	internal string <.cctor>b__2_880() { }
 
-	internal string <.cctor>b__2_881() { }
+	internal void <.cctor>b__2_881(string str) { }
 
-	internal void <.cctor>b__2_882(string str) { }
+	internal void <.cctor>b__2_882(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_883() { }
 
@@ -2636,47 +2636,47 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_898(string str) { }
 
-	internal void <.cctor>b__2_899(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_899() { }
 
-	internal void <.cctor>b__2_900(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_900(string str) { }
 
-	internal void <.cctor>b__2_901(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_901() { }
 
-	internal string <.cctor>b__2_902() { }
+	internal void <.cctor>b__2_902(string str) { }
 
-	internal void <.cctor>b__2_903(string str) { }
+	internal void <.cctor>b__2_903(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_904() { }
+	internal void <.cctor>b__2_904(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_905(string str) { }
+	internal void <.cctor>b__2_905(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_906(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_906() { }
 
-	internal string <.cctor>b__2_907() { }
+	internal void <.cctor>b__2_907(string str) { }
 
-	internal void <.cctor>b__2_908(string str) { }
+	internal string <.cctor>b__2_908() { }
 
-	internal string <.cctor>b__2_909() { }
+	internal void <.cctor>b__2_909(string str) { }
 
-	internal void <.cctor>b__2_910(string str) { }
+	internal void <.cctor>b__2_910(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_911(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_911() { }
 
-	internal void <.cctor>b__2_912(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_912(string str) { }
 
-	internal void <.cctor>b__2_913(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_913() { }
 
-	internal void <.cctor>b__2_914(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_914(string str) { }
 
 	internal void <.cctor>b__2_915(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_916() { }
+	internal void <.cctor>b__2_916(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_917(string str) { }
+	internal void <.cctor>b__2_917(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_918() { }
+	internal void <.cctor>b__2_918(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_919(string str) { }
+	internal void <.cctor>b__2_919(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_920() { }
 
@@ -2714,9 +2714,9 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_937(string str) { }
 
-	internal void <.cctor>b__2_938(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_938() { }
 
-	internal void <.cctor>b__2_939(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_939(string str) { }
 
 	internal string <.cctor>b__2_940() { }
 
@@ -2724,13 +2724,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_942(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_943() { }
+	internal void <.cctor>b__2_943(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_944(string str) { }
+	internal string <.cctor>b__2_944() { }
 
-	internal string <.cctor>b__2_945() { }
+	internal void <.cctor>b__2_945(string str) { }
 
-	internal void <.cctor>b__2_946(string str) { }
+	internal void <.cctor>b__2_946(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_947() { }
 
@@ -2844,15 +2844,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1002(string str) { }
 
-	internal void <.cctor>b__2_1003(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1003() { }
 
-	internal string <.cctor>b__2_1004() { }
+	internal void <.cctor>b__2_1004(string str) { }
 
-	internal void <.cctor>b__2_1005(string str) { }
+	internal string <.cctor>b__2_1005() { }
 
-	internal string <.cctor>b__2_1006() { }
+	internal void <.cctor>b__2_1006(string str) { }
 
-	internal void <.cctor>b__2_1007(string str) { }
+	internal void <.cctor>b__2_1007(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1008() { }
 
@@ -2862,49 +2862,49 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1011(string str) { }
 
-	internal void <.cctor>b__2_1012(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1012() { }
 
-	internal void <.cctor>b__2_1013(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1013(string str) { }
 
 	internal string <.cctor>b__2_1014() { }
 
 	internal void <.cctor>b__2_1015(string str) { }
 
-	internal string <.cctor>b__2_1016() { }
+	internal void <.cctor>b__2_1016(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1017(string str) { }
+	internal void <.cctor>b__2_1017(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1018() { }
 
 	internal void <.cctor>b__2_1019(string str) { }
 
-	internal void <.cctor>b__2_1020(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1020() { }
 
-	internal string <.cctor>b__2_1021() { }
+	internal void <.cctor>b__2_1021(string str) { }
 
-	internal void <.cctor>b__2_1022(string str) { }
+	internal string <.cctor>b__2_1022() { }
 
-	internal void <.cctor>b__2_1023(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1023(string str) { }
 
 	internal void <.cctor>b__2_1024(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1025(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1025() { }
 
-	internal void <.cctor>b__2_1026(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1026(string str) { }
 
-	internal string <.cctor>b__2_1027() { }
+	internal void <.cctor>b__2_1027(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1028(string str) { }
+	internal void <.cctor>b__2_1028(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_1029(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_1030() { }
+	internal void <.cctor>b__2_1030(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1031(string str) { }
+	internal string <.cctor>b__2_1031() { }
 
-	internal string <.cctor>b__2_1032() { }
+	internal void <.cctor>b__2_1032(string str) { }
 
-	internal void <.cctor>b__2_1033(string str) { }
+	internal void <.cctor>b__2_1033(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1034() { }
 
@@ -2946,17 +2946,17 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1053(string str) { }
 
-	internal void <.cctor>b__2_1054(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1054() { }
 
-	internal void <.cctor>b__2_1055(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1055(string str) { }
 
 	internal string <.cctor>b__2_1056() { }
 
 	internal void <.cctor>b__2_1057(string str) { }
 
-	internal string <.cctor>b__2_1058() { }
+	internal void <.cctor>b__2_1058(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1059(string str) { }
+	internal void <.cctor>b__2_1059(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1060() { }
 
@@ -2970,15 +2970,15 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1065(string str) { }
 
-	internal void <.cctor>b__2_1066(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1066() { }
 
-	internal void <.cctor>b__2_1067(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1067(string str) { }
 
-	internal void <.cctor>b__2_1068(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1068() { }
 
-	internal string <.cctor>b__2_1069() { }
+	internal void <.cctor>b__2_1069(string str) { }
 
-	internal void <.cctor>b__2_1070(string str) { }
+	internal void <.cctor>b__2_1070(ConsoleSystem.Arg arg) { }
 
 	internal void <.cctor>b__2_1071(ConsoleSystem.Arg arg) { }
 
@@ -2988,19 +2988,19 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1074(string str) { }
 
-	internal string <.cctor>b__2_1075() { }
+	internal void <.cctor>b__2_1075(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1076(string str) { }
+	internal void <.cctor>b__2_1076(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1077(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1077() { }
 
-	internal string <.cctor>b__2_1078() { }
+	internal void <.cctor>b__2_1078(string str) { }
 
-	internal void <.cctor>b__2_1079(string str) { }
+	internal string <.cctor>b__2_1079() { }
 
-	internal string <.cctor>b__2_1080() { }
+	internal void <.cctor>b__2_1080(string str) { }
 
-	internal void <.cctor>b__2_1081(string str) { }
+	internal void <.cctor>b__2_1081(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1082() { }
 
@@ -3010,13 +3010,13 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1085(string str) { }
 
-	internal void <.cctor>b__2_1086(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1086() { }
 
-	internal void <.cctor>b__2_1087(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1087(string str) { }
 
-	internal void <.cctor>b__2_1088(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1088() { }
 
-	internal void <.cctor>b__2_1089(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1089(string str) { }
 
 	internal void <.cctor>b__2_1090(ConsoleSystem.Arg arg) { }
 
@@ -3030,25 +3030,25 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1095(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_1096() { }
+	internal void <.cctor>b__2_1096(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1097(string str) { }
+	internal void <.cctor>b__2_1097(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_1098() { }
+	internal void <.cctor>b__2_1098(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1099(string str) { }
+	internal void <.cctor>b__2_1099(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1100(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1100() { }
 
-	internal void <.cctor>b__2_1101(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1101(string str) { }
 
 	internal string <.cctor>b__2_1102() { }
 
 	internal void <.cctor>b__2_1103(string str) { }
 
-	internal string <.cctor>b__2_1104() { }
+	internal void <.cctor>b__2_1104(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1105(string str) { }
+	internal void <.cctor>b__2_1105(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1106() { }
 
@@ -3074,35 +3074,35 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1117(string str) { }
 
-	internal void <.cctor>b__2_1118(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1118() { }
 
-	internal void <.cctor>b__2_1119(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1119(string str) { }
 
 	internal string <.cctor>b__2_1120() { }
 
 	internal void <.cctor>b__2_1121(string str) { }
 
-	internal string <.cctor>b__2_1122() { }
+	internal void <.cctor>b__2_1122(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1123(string str) { }
+	internal void <.cctor>b__2_1123(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1124() { }
 
 	internal void <.cctor>b__2_1125(string str) { }
 
-	internal void <.cctor>b__2_1126(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1126() { }
 
-	internal void <.cctor>b__2_1127(ConsoleSystem.Arg arg) { }
+	internal void <.cctor>b__2_1127(string str) { }
 
-	internal void <.cctor>b__2_1128(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1128() { }
 
-	internal string <.cctor>b__2_1129() { }
+	internal void <.cctor>b__2_1129(string str) { }
 
-	internal void <.cctor>b__2_1130(string str) { }
+	internal void <.cctor>b__2_1130(ConsoleSystem.Arg arg) { }
 
-	internal string <.cctor>b__2_1131() { }
+	internal void <.cctor>b__2_1131(ConsoleSystem.Arg arg) { }
 
-	internal void <.cctor>b__2_1132(string str) { }
+	internal void <.cctor>b__2_1132(ConsoleSystem.Arg arg) { }
 
 	internal string <.cctor>b__2_1133() { }
 
@@ -3132,11 +3132,19 @@ private sealed class ConsoleGen.<>c // TypeDefIndex: 10004
 
 	internal void <.cctor>b__2_1146(string str) { }
 
-	internal void <.cctor>b__2_1147(ConsoleSystem.Arg arg) { }
+	internal string <.cctor>b__2_1147() { }
+
+	internal void <.cctor>b__2_1148(string str) { }
+
+	internal string <.cctor>b__2_1149() { }
+
+	internal void <.cctor>b__2_1150(string str) { }
+
+	internal void <.cctor>b__2_1151(ConsoleSystem.Arg arg) { }
 
 }
 
-public static class ConsoleNetwork // TypeDefIndex: 11079
+public static class ConsoleNetwork // TypeDefIndex: 11088
 {
 
 	internal static void Init() { }
@@ -3149,7 +3157,7 @@ public static class ConsoleNetwork // TypeDefIndex: 11079
 
 }
 
-public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12556
+public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12566
 {
 	public RustText text; 
 	public InputField outputField; 
@@ -3214,7 +3222,7 @@ public class ConsoleUI : SingletonComponent<ConsoleUI> // TypeDefIndex: 12556
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12557
+private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12567
 {
 	public Button btn; 
 	public ConsoleUI <>4__this; 
@@ -3226,7 +3234,7 @@ private sealed class ConsoleUI.<>c__DisplayClass16_0 // TypeDefIndex: 12557
 
 }
 
-private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12558
+private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12568
 {
 	public string str; 
 
@@ -3237,7 +3245,7 @@ private sealed class ConsoleUI.<>c__DisplayClass22_0 // TypeDefIndex: 12558
 
 }
 
-private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12559
+private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12569
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -3267,7 +3275,7 @@ private sealed class ConsoleUI.<SetSelected>d__31 : IEnumerator<object>, IEnumer
 
 }
 
-public class ConsoleInput // TypeDefIndex: 13418
+public class ConsoleInput // TypeDefIndex: 13429
 {
 	[CompilerGeneratedAttribute] 
 	private Action<string> OnInputText; 
@@ -3305,7 +3313,7 @@ public class ConsoleInput // TypeDefIndex: 13418
 
 }
 
-public class ConsoleWindow // TypeDefIndex: 13419
+public class ConsoleWindow // TypeDefIndex: 13430
 {
 	private TextWriter oldOutput; 
 	private const int STD_INPUT_HANDLE = -10;
@@ -3332,7 +3340,7 @@ public class ConsoleWindow // TypeDefIndex: 13419
 
 }
 
-public class Console : ConsoleSystem // TypeDefIndex: 13631
+public class Console : ConsoleSystem // TypeDefIndex: 13642
 {
 	[ClientVar] 
 	[HelpAttribute] 

@@ -1,4 +1,4 @@
-public class DistanceFlareLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13042
+public class DistanceFlareLOD : FacepunchBehaviour, ILOD, IClientComponent // TypeDefIndex: 13053
 {
 	public bool isDynamic; 
 	public float minEnabledDistance; 

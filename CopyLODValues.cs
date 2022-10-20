@@ -1,4 +1,4 @@
-public class CopyLODValues : MonoBehaviour, IEditorComponent // TypeDefIndex: 11637
+public class CopyLODValues : MonoBehaviour, IEditorComponent // TypeDefIndex: 11646
 {
 	[SerializeField] 
 	private LODGroup source; 

@@ -1,4 +1,4 @@
-public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12126
+public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12136
 {
 	internal int res; 
 
@@ -6,6 +6,8 @@ public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12126
 	public void ApplyFilter(float normX, float normZ, float radius, float fade, Action<int, int, float> action) { }
 
 	public void ForEach(Vector3 worldPos, float radius, Action<int, int> action) { }
+
+	public void ForEach(float normX, float normZ, float normRadius, Action<int, int> action) { }
 
 	public void ForEachParallel(Vector3 v0, Vector3 v1, Vector3 v2, Action<int, int> action) { }
 
@@ -39,7 +41,7 @@ public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12126
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass4_0 // TypeDefIndex: 12127
+private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12137
 {
 	public Vector2i base_min; 
 	public Vector2i base_count; 
@@ -56,7 +58,7 @@ private sealed class TerrainMap.<>c__DisplayClass4_0 // TypeDefIndex: 12127
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass9_0 // TypeDefIndex: 12128
+private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12138
 {
 	public Vector2i base_min; 
 	public Vector2i size_y; 

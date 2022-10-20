@@ -1,4 +1,4 @@
-public class LODManager : SingletonComponent<LODManager> // TypeDefIndex: 11648
+public class LODManager : SingletonComponent<LODManager> // TypeDefIndex: 11657
 {
 	public float MaxMilliseconds; 
 	private ListHashSet<ILOD> members; 

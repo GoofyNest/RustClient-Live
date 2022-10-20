@@ -71,7 +71,7 @@ public static class Performance // TypeDefIndex: 6212
 
 }
 
-public class Performance : SingletonComponent<Performance> // TypeDefIndex: 11027
+public class Performance : SingletonComponent<Performance> // TypeDefIndex: 11036
 {
 	public static Performance.Tick current; 
 	public static Performance.Tick report; 
@@ -101,7 +101,7 @@ public class Performance : SingletonComponent<Performance> // TypeDefIndex: 1102
 
 }
 
-public struct Performance.Tick // TypeDefIndex: 11028
+public struct Performance.Tick // TypeDefIndex: 11037
 {
 	public int frameID; 
 	public int frameRate; 
@@ -119,7 +119,7 @@ public struct Performance.Tick // TypeDefIndex: 11028
 
 }
 
-private struct Performance.LagSpike // TypeDefIndex: 11029
+private struct Performance.LagSpike // TypeDefIndex: 11038
 {
 	public int Index; 
 	public int Time; 

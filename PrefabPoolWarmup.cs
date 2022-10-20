@@ -1,4 +1,4 @@
-public class PrefabPoolWarmup // TypeDefIndex: 13163
+public class PrefabPoolWarmup // TypeDefIndex: 13174
 {
 
 	public static void Run() { }
@@ -14,7 +14,7 @@ public class PrefabPoolWarmup // TypeDefIndex: 13163
 
 }
 
-private sealed class PrefabPoolWarmup.<Run>d__1 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13164
+private sealed class PrefabPoolWarmup.<Run>d__1 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13175
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -48,7 +48,7 @@ private sealed class PrefabPoolWarmup.<Run>d__1 : IEnumerator<object>, IEnumerat
 
 }
 
-private sealed class PrefabPoolWarmup.<>c // TypeDefIndex: 13165
+private sealed class PrefabPoolWarmup.<>c // TypeDefIndex: 13176
 {
 	public static readonly PrefabPoolWarmup.<>c <>9; 
 	public static Func<GameManifest.PrefabProperties, bool> <>9__2_0; 

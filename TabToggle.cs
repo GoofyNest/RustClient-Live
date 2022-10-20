@@ -1,4 +1,4 @@
-public class TabToggle : MonoBehaviour // TypeDefIndex: 12968
+public class TabToggle : MonoBehaviour // TypeDefIndex: 12979
 {
 	public Transform TabHolder; 
 	public Transform ContentHolder; 
@@ -18,7 +18,7 @@ public class TabToggle : MonoBehaviour // TypeDefIndex: 12968
 
 }
 
-private sealed class TabToggle.<>c__DisplayClass4_0 // TypeDefIndex: 12969
+private sealed class TabToggle.<>c__DisplayClass4_0 // TypeDefIndex: 12980
 {
 	public Button c; 
 	public TabToggle <>4__this; 
@@ -30,7 +30,7 @@ private sealed class TabToggle.<>c__DisplayClass4_0 // TypeDefIndex: 12969
 
 }
 
-private sealed class TabToggle.<>c__DisplayClass6_0 // TypeDefIndex: 12970
+private sealed class TabToggle.<>c__DisplayClass6_0 // TypeDefIndex: 12981
 {
 	public GameObject go; 
 

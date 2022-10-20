@@ -1,4 +1,4 @@
-public class QueryVis : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 10932
+public class QueryVis : BaseMonoBehaviour, IClientComponent, IOnParentDestroying // TypeDefIndex: 10941
 {
 	public Collider checkCollider; 
 	private CoverageQueries.Query query; 

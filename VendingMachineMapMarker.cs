@@ -1,4 +1,4 @@
-public class VendingMachineMapMarker : MapMarker // TypeDefIndex: 11324
+public class VendingMachineMapMarker : MapMarker // TypeDefIndex: 11333
 {
 	public string markerShopName; 
 	public VendingMachine server_vendingMachine; 

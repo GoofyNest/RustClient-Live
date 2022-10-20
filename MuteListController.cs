@@ -1,4 +1,4 @@
-public class MuteListController : UIDialog // TypeDefIndex: 13777
+public class MuteListController : UIDialog // TypeDefIndex: 13788
 {
 	public RectTransform ListParent; 
 	public GameObjectRef UserWidget; 
@@ -17,7 +17,7 @@ public class MuteListController : UIDialog // TypeDefIndex: 13777
 
 }
 
-private sealed class MuteListController.<>c // TypeDefIndex: 13778
+private sealed class MuteListController.<>c // TypeDefIndex: 13789
 {
 	public static readonly MuteListController.<>c <>9; 
 	public static Func<ulong, bool> <>9__3_0; 
@@ -31,7 +31,7 @@ private sealed class MuteListController.<>c // TypeDefIndex: 13778
 
 }
 
-private sealed class MuteListController.<>c__DisplayClass4_0 // TypeDefIndex: 13779
+private sealed class MuteListController.<>c__DisplayClass4_0 // TypeDefIndex: 13790
 {
 	public Chat.MuteEntry muteEntry; 
 	public MuteListController <>4__this; 

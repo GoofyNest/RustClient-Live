@@ -518,6 +518,7 @@ public class Component : Object // TypeDefIndex: 3510
 	|-Component.GetComponentsInChildren<RustText>
 	|-Component.GetComponentsInChildren<TimelineMarker>
 	|-Component.GetComponentsInChildren<Sound>
+	|-Component.GetComponentsInChildren<SpawnGroup>
 	|-Component.GetComponentsInChildren<TMP_SubMesh>
 	|-Component.GetComponentsInChildren<TMP_SubMeshUI>
 	|-Component.GetComponentsInChildren<NavMeshModifier>
@@ -540,6 +541,7 @@ public class Component : Object // TypeDefIndex: 3510
 	public void GetComponentsInChildren<T>(List<T> results) { }
 	/* GenericInstMethod :
 	|
+	|-Component.GetComponentsInChildren<BurstClothCollider>
 	|-Component.GetComponentsInChildren<HitboxDefinition>
 	|-Component.GetComponentsInChildren<ServerAdminUGCEntry>
 	|-Component.GetComponentsInChildren<ServerAdminUGCEntryPattern>
@@ -565,6 +567,7 @@ public class Component : Object // TypeDefIndex: 3510
 	|-Component.GetComponentInParent<BaseMountable>
 	|-Component.GetComponentInParent<BaseNetworkable>
 	|-Component.GetComponentInParent<BaseVehicleModule>
+	|-Component.GetComponentInParent<BaseViewModel>
 	|-Component.GetComponentInParent<ChangeSignText>
 	|-Component.GetComponentInParent<DeployableBoomBox>
 	|-Component.GetComponentInParent<Skeleton>

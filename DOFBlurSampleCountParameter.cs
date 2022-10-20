@@ -1,4 +1,4 @@
-public class DOFBlurSampleCountParameter : ParameterOverride<DOFBlurSampleCount> // TypeDefIndex: 11961
+public class DOFBlurSampleCountParameter : ParameterOverride<DOFBlurSampleCount> // TypeDefIndex: 11971
 {
 
 	public void .ctor() { }

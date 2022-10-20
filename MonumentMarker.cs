@@ -1,4 +1,4 @@
-public class MonumentMarker : MonoBehaviour // TypeDefIndex: 12680
+public class MonumentMarker : MonoBehaviour // TypeDefIndex: 12690
 {
 	public Text text; 
 	public Image imageBackground; 

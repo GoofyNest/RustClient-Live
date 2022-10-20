@@ -1,4 +1,4 @@
-public class FireSpot : BaseEntity // TypeDefIndex: 11248
+public class FireSpot : BaseEntity // TypeDefIndex: 11257
 {
 	public GameObject flameEffect; 
 

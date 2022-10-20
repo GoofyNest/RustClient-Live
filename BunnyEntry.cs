@@ -1,4 +1,4 @@
-public class BunnyEntry : MonoBehaviour // TypeDefIndex: 10495
+public class BunnyEntry : MonoBehaviour // TypeDefIndex: 10497
 {
 	public Text nameText; 
 	public Text amountText; 

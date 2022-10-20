@@ -1,4 +1,4 @@
-public class CustomTimerSwitch : TimerSwitch // TypeDefIndex: 10082
+public class CustomTimerSwitch : TimerSwitch // TypeDefIndex: 10083
 {
 	private Option __menuOption_Menu_SetTime; 
 	public GameObjectRef timerPanelPrefab; 

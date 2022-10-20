@@ -1,4 +1,4 @@
-public class WaterDepthTester : MonoBehaviour // TypeDefIndex: 10671
+public class WaterDepthTester : MonoBehaviour // TypeDefIndex: 10678
 {
 
 	private void Update() { }

@@ -1,4 +1,4 @@
-public class ArticulatedOccludee : BaseMonoBehaviour // TypeDefIndex: 10981
+public class ArticulatedOccludee : BaseMonoBehaviour // TypeDefIndex: 10990
 {
 	private const float UpdateBoundsFadeStart = 20;
 	private const float UpdateBoundsFadeLength = 1000;

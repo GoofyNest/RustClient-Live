@@ -1,4 +1,4 @@
-public class CH47Helicopter : BaseHelicopterVehicle // TypeDefIndex: 11425
+public class CH47Helicopter : BaseHelicopterVehicle // TypeDefIndex: 11434
 {
 	public GameObjectRef mapMarkerEntityPrefab; 
 

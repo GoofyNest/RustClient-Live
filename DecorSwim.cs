@@ -1,4 +1,4 @@
-public class DecorSwim : DecorComponent // TypeDefIndex: 12049
+public class DecorSwim : DecorComponent // TypeDefIndex: 12059
 {
 
 	public override void Apply(ref Vector3 pos, ref Quaternion rot, ref Vector3 scale) { }

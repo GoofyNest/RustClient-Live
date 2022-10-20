@@ -1,4 +1,4 @@
-public sealed class FastApproximateAntialiasing // TypeDefIndex: 13523
+public sealed class FastApproximateAntialiasing // TypeDefIndex: 13534
 {
 	[FormerlySerializedAsAttribute] 
 	[TooltipAttribute] 

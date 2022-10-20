@@ -1,4 +1,4 @@
-public static class LevelManager // TypeDefIndex: 11675
+public static class LevelManager // TypeDefIndex: 11684
 {
 	public static string CurrentLevelName; 
 
@@ -18,7 +18,7 @@ public static class LevelManager // TypeDefIndex: 11675
 
 }
 
-private sealed class LevelManager.<LoadLevelAsync>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11676
+private sealed class LevelManager.<LoadLevelAsync>d__5 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11685
 {
 	private int <>1__state; 
 	private object <>2__current; 

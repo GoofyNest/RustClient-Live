@@ -1,4 +1,4 @@
-public class MapMarkerExplosion : MapMarker // TypeDefIndex: 10580
+public class MapMarkerExplosion : MapMarker // TypeDefIndex: 10587
 {
 
 	public void .ctor() { }

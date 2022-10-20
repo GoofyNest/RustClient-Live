@@ -1,4 +1,4 @@
-public class HitchTrough : StorageContainer // TypeDefIndex: 10405
+public class HitchTrough : StorageContainer // TypeDefIndex: 10407
 {
 	public HitchTrough.HitchSpot[] hitchSpots; 
 	public float caloriesToDecaySeconds; 
@@ -10,7 +10,7 @@ public class HitchTrough : StorageContainer // TypeDefIndex: 10405
 
 }
 
-public class HitchTrough.HitchSpot // TypeDefIndex: 10406
+public class HitchTrough.HitchSpot // TypeDefIndex: 10408
 {
 	public HitchTrough owner; 
 	public Transform spot; 

@@ -1,4 +1,4 @@
-public class TriggerWetness : TriggerBase // TypeDefIndex: 11763
+public class TriggerWetness : TriggerBase // TypeDefIndex: 11772
 {
 	public float Wetness; 
 	public SphereCollider TargetCollider; 

@@ -1,4 +1,4 @@
-public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13250
+public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13261
 {
 	public OcclusionCulling.DebugSettings debugSettings; 
 	private Material debugMipMat; 
@@ -218,7 +218,7 @@ public class OcclusionCulling : MonoBehaviour // TypeDefIndex: 13250
 
 }
 
-public class OcclusionCulling.BufferSet // TypeDefIndex: 13251
+public class OcclusionCulling.BufferSet // TypeDefIndex: 13262
 {
 	public ComputeBuffer inputBuffer; 
 	public ComputeBuffer resultBuffer; 
@@ -261,7 +261,7 @@ public class OcclusionCulling.BufferSet // TypeDefIndex: 13251
 
 }
 
-public enum OcclusionCulling.DebugFilter // TypeDefIndex: 13252
+public enum OcclusionCulling.DebugFilter // TypeDefIndex: 13263
 {
 	public int value__; 
 	public const OcclusionCulling.DebugFilter Off = 0;
@@ -272,7 +272,7 @@ public enum OcclusionCulling.DebugFilter // TypeDefIndex: 13252
 
 }
 
-public enum OcclusionCulling.DebugMask // TypeDefIndex: 13253
+public enum OcclusionCulling.DebugMask // TypeDefIndex: 13264
 {
 	public int value__; 
 	public const OcclusionCulling.DebugMask Off = 0;
@@ -283,7 +283,7 @@ public enum OcclusionCulling.DebugMask // TypeDefIndex: 13253
 
 }
 
-public class OcclusionCulling.DebugSettings // TypeDefIndex: 13254
+public class OcclusionCulling.DebugSettings // TypeDefIndex: 13265
 {
 	public bool log; 
 	public bool showAllVisible; 
@@ -301,7 +301,7 @@ public class OcclusionCulling.DebugSettings // TypeDefIndex: 13254
 
 }
 
-public class OcclusionCulling.HashedPoolValue // TypeDefIndex: 13255
+public class OcclusionCulling.HashedPoolValue // TypeDefIndex: 13266
 {
 	public ulong hashedPoolKey; 
 	public int hashedPoolIndex; 
@@ -311,7 +311,7 @@ public class OcclusionCulling.HashedPoolValue // TypeDefIndex: 13255
 
 }
 
-public class OcclusionCulling.HashedPool<ValueType> // TypeDefIndex: 13256
+public class OcclusionCulling.HashedPool<ValueType> // TypeDefIndex: 13267
 {
 	private int granularity; 
 	private Dictionary<ulong, ValueType> dict; 
@@ -393,7 +393,7 @@ public class OcclusionCulling.HashedPool<ValueType> // TypeDefIndex: 13256
 
 }
 
-public class OcclusionCulling.SimpleList<T> // TypeDefIndex: 13257
+public class OcclusionCulling.SimpleList<T> // TypeDefIndex: 13268
 {
 	private const int defaultCapacity = 16;
 	private static readonly T[] emptyArray; 
@@ -526,7 +526,7 @@ public class OcclusionCulling.SimpleList<T> // TypeDefIndex: 13257
 
 }
 
-public class OcclusionCulling.SmartListValue // TypeDefIndex: 13258
+public class OcclusionCulling.SmartListValue // TypeDefIndex: 13269
 {
 	public int hashedListIndex; 
 
@@ -535,7 +535,7 @@ public class OcclusionCulling.SmartListValue // TypeDefIndex: 13258
 
 }
 
-public class OcclusionCulling.SmartList // TypeDefIndex: 13259
+public class OcclusionCulling.SmartList // TypeDefIndex: 13270
 {
 	private const int defaultCapacity = 16;
 	private static readonly OccludeeState[] emptyList; 
@@ -583,7 +583,7 @@ public class OcclusionCulling.SmartList // TypeDefIndex: 13259
 
 }
 
-public class OcclusionCulling.Cell : OcclusionCulling.HashedPoolValue // TypeDefIndex: 13260
+public class OcclusionCulling.Cell : OcclusionCulling.HashedPoolValue // TypeDefIndex: 13271
 {
 	public int x; 
 	public int y; 
@@ -603,7 +603,7 @@ public class OcclusionCulling.Cell : OcclusionCulling.HashedPoolValue // TypeDef
 
 }
 
-public struct OcclusionCulling.Sphere // TypeDefIndex: 13261
+public struct OcclusionCulling.Sphere // TypeDefIndex: 13272
 {
 	public Vector3 position; 
 	public float radius; 
@@ -615,7 +615,7 @@ public struct OcclusionCulling.Sphere // TypeDefIndex: 13261
 
 }
 
-public sealed class OcclusionCulling.OnVisibilityChanged : MulticastDelegate // TypeDefIndex: 13262
+public sealed class OcclusionCulling.OnVisibilityChanged : MulticastDelegate // TypeDefIndex: 13273
 {
 
 	public void .ctor(object object, IntPtr method) { }

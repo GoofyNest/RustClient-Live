@@ -1,4 +1,4 @@
-public class GranularAudioClip : MonoBehaviour // TypeDefIndex: 10702
+public class GranularAudioClip : MonoBehaviour // TypeDefIndex: 10709
 {
 	public AudioClip sourceClip; 
 	private float[] sourceAudioData; 
@@ -37,7 +37,7 @@ public class GranularAudioClip : MonoBehaviour // TypeDefIndex: 10702
 
 }
 
-public class GranularAudioClip.Grain // TypeDefIndex: 10703
+public class GranularAudioClip.Grain // TypeDefIndex: 10710
 {
 	private float[] sourceData; 
 	private int sourceDataLength; 

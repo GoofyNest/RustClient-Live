@@ -1,4 +1,4 @@
-public class InRangeOfHomeEventUI : BaseEventUI // TypeDefIndex: 12521
+public class InRangeOfHomeEventUI : BaseEventUI // TypeDefIndex: 12531
 {
 
 	public override AIEventData Save() { }

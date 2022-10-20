@@ -1,4 +1,4 @@
-public class SynchronizedClock // TypeDefIndex: 13140
+public class SynchronizedClock // TypeDefIndex: 13151
 {
 	public List<SynchronizedClock.TimedEvent> events; 
 
@@ -15,7 +15,7 @@ public class SynchronizedClock // TypeDefIndex: 13140
 
 }
 
-public struct SynchronizedClock.TimedEvent // TypeDefIndex: 13141
+public struct SynchronizedClock.TimedEvent // TypeDefIndex: 13152
 {
 	public float time; 
 	public float delta; 

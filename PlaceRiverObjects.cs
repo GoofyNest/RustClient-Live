@@ -1,4 +1,4 @@
-public class PlaceRiverObjects : ProceduralComponent // TypeDefIndex: 12277
+public class PlaceRiverObjects : ProceduralComponent // TypeDefIndex: 12287
 {
 	public PathList.BasicObject[] Start; 
 	public PathList.BasicObject[] End; 

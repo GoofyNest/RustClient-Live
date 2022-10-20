@@ -1,4 +1,4 @@
-public class BaseMission : BaseScriptableObject // TypeDefIndex: 11915
+public class BaseMission : BaseScriptableObject // TypeDefIndex: 11924
 {
 	public string shortname; 
 	public Translate.Phrase missionName; 
@@ -34,7 +34,7 @@ public class BaseMission : BaseScriptableObject // TypeDefIndex: 11915
 
 }
 
-public class BaseMission.MissionDependancy // TypeDefIndex: 11916
+public class BaseMission.MissionDependancy // TypeDefIndex: 11925
 {
 	public string targetMissionShortname; 
 	public BaseMission.MissionStatus targetMissionDesiredStatus; 
@@ -49,7 +49,7 @@ public class BaseMission.MissionDependancy // TypeDefIndex: 11916
 
 }
 
-public enum BaseMission.MissionStatus // TypeDefIndex: 11917
+public enum BaseMission.MissionStatus // TypeDefIndex: 11926
 {
 	public int value__; 
 	public const BaseMission.MissionStatus Default = 0;
@@ -60,7 +60,7 @@ public enum BaseMission.MissionStatus // TypeDefIndex: 11917
 
 }
 
-public enum BaseMission.MissionEventType // TypeDefIndex: 11918
+public enum BaseMission.MissionEventType // TypeDefIndex: 11927
 {
 	public int value__; 
 	public const BaseMission.MissionEventType CUSTOM = 0;
@@ -72,7 +72,7 @@ public enum BaseMission.MissionEventType // TypeDefIndex: 11918
 
 }
 
-public class BaseMission.MissionObjectiveEntry // TypeDefIndex: 11919
+public class BaseMission.MissionObjectiveEntry // TypeDefIndex: 11928
 {
 	public Translate.Phrase description; 
 	public int[] startAfterCompletedObjectives; 
@@ -87,7 +87,7 @@ public class BaseMission.MissionObjectiveEntry // TypeDefIndex: 11919
 
 }
 
-public class BaseMission.MissionInstance : Pool.IPooled // TypeDefIndex: 11920
+public class BaseMission.MissionInstance : Pool.IPooled // TypeDefIndex: 11929
 {
 	private BaseEntity _cachedProviderEntity; 
 	private BaseMission _cachedMission; 
@@ -119,7 +119,7 @@ public class BaseMission.MissionInstance : Pool.IPooled // TypeDefIndex: 11920
 
 }
 
-public class BaseMission.MissionInstance.ObjectiveStatus // TypeDefIndex: 11921
+public class BaseMission.MissionInstance.ObjectiveStatus // TypeDefIndex: 11930
 {
 	public bool started; 
 	public bool completed; 
@@ -132,7 +132,7 @@ public class BaseMission.MissionInstance.ObjectiveStatus // TypeDefIndex: 11921
 
 }
 
-public enum BaseMission.MissionInstance.ObjectiveType // TypeDefIndex: 11922
+public enum BaseMission.MissionInstance.ObjectiveType // TypeDefIndex: 11931
 {
 	public int value__; 
 	public const BaseMission.MissionInstance.ObjectiveType MOVE = 0;
@@ -140,13 +140,14 @@ public enum BaseMission.MissionInstance.ObjectiveType // TypeDefIndex: 11922
 
 }
 
-public class BaseMission.PositionGenerator // TypeDefIndex: 11923
+public class BaseMission.PositionGenerator // TypeDefIndex: 11932
 {
 	public string identifier; 
 	public float minDistForMovePoint; 
 	public float maxDistForMovePoint; 
 	public bool centerOnProvider; 
 	public bool centerOnPlayer; 
+	public string centerOnPositionIdentifier; 
 	public BaseMission.PositionGenerator.PositionType positionType; 
 	[HeaderAttribute] 
 	[InspectorFlagsAttribute] 
@@ -157,26 +158,30 @@ public class BaseMission.PositionGenerator // TypeDefIndex: 11923
 	public WorldPositionGenerator worldPositionGenerator; 
 
 
+	public bool IsDependant() { }
+
 	public string GetIdentifier() { }
 
 	public void .ctor() { }
 
 }
 
-public enum BaseMission.PositionGenerator.PositionType // TypeDefIndex: 11924
+public enum BaseMission.PositionGenerator.PositionType // TypeDefIndex: 11933
 {
 	public int value__; 
 	public const BaseMission.PositionGenerator.PositionType MissionPoint = 0;
 	public const BaseMission.PositionGenerator.PositionType WorldPositionGenerator = 1;
+	public const BaseMission.PositionGenerator.PositionType DungeonPoint = 2;
 
 }
 
-public class BaseMission.MissionEntityEntry // TypeDefIndex: 11925
+public class BaseMission.MissionEntityEntry // TypeDefIndex: 11934
 {
 	public GameObjectRef entityRef; 
 	public string spawnPositionToUse; 
 	public bool cleanupOnMissionFailed; 
 	public bool cleanupOnMissionSuccess; 
+	public string entityIdentifier; 
 
 
 	public void .ctor() { }

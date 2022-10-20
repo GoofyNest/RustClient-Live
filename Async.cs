@@ -262,7 +262,7 @@ public struct AsyncVoidMethodBuilder // TypeDefIndex: 1273
 	|
 	|-AsyncVoidMethodBuilder.Start<ItemStore.<RefreshList>d__17>
 	|
-	|-AsyncVoidMethodBuilder.Start<LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d>
+	|-AsyncVoidMethodBuilder.Start<LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d>
 	|
 	|-AsyncVoidMethodBuilder.Start<SteamPlatform.<LoadAvatarFromSteamAsync>d__1>
 	|
@@ -337,8 +337,8 @@ public struct AsyncVoidMethodBuilder // TypeDefIndex: 1273
 	|
 	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<Nullable<InventoryPurchaseResult>>, ItemStore.<Checkout>d__24>
 	|
-	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<object>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d>
-	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<string>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|62_0>d>
+	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<object>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d>
+	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<string>, LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d>
 	|
 	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<object>, ReportBug.<SendReport>d__29>
 	|-AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TaskAwaiter<string>, ReportBug.<SendReport>d__29>
@@ -2166,7 +2166,7 @@ public struct AsyncValueTaskMethodBuilder<TResult> // TypeDefIndex: 7128
 
 }
 
-public class AsyncTerrainNavMeshBake : CustomYieldInstruction // TypeDefIndex: 12032
+public class AsyncTerrainNavMeshBake : CustomYieldInstruction // TypeDefIndex: 12042
 {
 	private List<int> indices; 
 	private List<Vector3> vertices; 

@@ -1,4 +1,4 @@
-public class PlacementTest : MonoBehaviour // TypeDefIndex: 10520
+public class PlacementTest : MonoBehaviour // TypeDefIndex: 10522
 {
 	public MeshCollider myMeshCollider; 
 	public Transform testTransform; 

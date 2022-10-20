@@ -1,4 +1,4 @@
-internal class UVTextureAnimator : MonoBehaviour // TypeDefIndex: 13214
+internal class UVTextureAnimator : MonoBehaviour // TypeDefIndex: 13225
 {
 	public int Rows; 
 	public int Columns; 
@@ -40,7 +40,7 @@ internal class UVTextureAnimator : MonoBehaviour // TypeDefIndex: 13214
 
 }
 
-private sealed class UVTextureAnimator.<UpdateCorutine>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13215
+private sealed class UVTextureAnimator.<UpdateCorutine>d__21 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13226
 {
 	private int <>1__state; 
 	private object <>2__current; 

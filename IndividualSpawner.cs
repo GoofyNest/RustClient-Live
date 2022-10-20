@@ -1,4 +1,4 @@
-public class IndividualSpawner : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 11714
+public class IndividualSpawner : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 11723
 {
 	public GameObjectRef entityPrefab; 
 	public float respawnDelayMin; 

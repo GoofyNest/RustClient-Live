@@ -1,4 +1,4 @@
-public class BlendTexture : ProcessedTexture // TypeDefIndex: 13093
+public class BlendTexture : ProcessedTexture // TypeDefIndex: 13104
 {
 
 	public void .ctor(int width, int height, bool linear = True) { }

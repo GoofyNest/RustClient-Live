@@ -1,4 +1,4 @@
-public class SimpleBuildingBlock : StabilityEntity // TypeDefIndex: 11194
+public class SimpleBuildingBlock : StabilityEntity // TypeDefIndex: 11203
 {
 
 	public void .ctor() { }

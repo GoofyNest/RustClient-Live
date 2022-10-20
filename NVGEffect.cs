@@ -1,4 +1,4 @@
-public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 10386
+public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 10388
 {
 	public NVGEffect.ColorCorrectionParams ColorCorrection1; 
 	public NVGEffect.ColorCorrectionParams ColorCorrection2; 
@@ -32,7 +32,7 @@ public class NVGEffect : PostEffectsBase, IImageEffect // TypeDefIndex: 10386
 
 }
 
-public struct NVGEffect.ColorCorrectionParams // TypeDefIndex: 10387
+public struct NVGEffect.ColorCorrectionParams // TypeDefIndex: 10389
 {
 	public float saturation; 
 	public AnimationCurve redChannel; 
@@ -41,7 +41,7 @@ public struct NVGEffect.ColorCorrectionParams // TypeDefIndex: 10387
 
 }
 
-public struct NVGEffect.NoiseAndGrainParams // TypeDefIndex: 10388
+public struct NVGEffect.NoiseAndGrainParams // TypeDefIndex: 10390
 {
 	public float intensityMultiplier; 
 	public float generalIntensity; 

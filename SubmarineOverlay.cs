@@ -1,4 +1,4 @@
-public class SubmarineOverlay : MonoBehaviour // TypeDefIndex: 10844
+public class SubmarineOverlay : MonoBehaviour // TypeDefIndex: 10851
 {
 	public PostProcessVolume postProcessVolume; 
 

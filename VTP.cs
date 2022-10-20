@@ -1,4 +1,4 @@
-public class VTP : MonoBehaviour // TypeDefIndex: 13264
+public class VTP : MonoBehaviour // TypeDefIndex: 13275
 {
 
 	public static Color getSingleVertexColorAtHit(Transform transform, RaycastHit hit) { }

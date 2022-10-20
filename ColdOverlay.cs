@@ -1,4 +1,4 @@
-public class ColdOverlay : MonoBehaviour // TypeDefIndex: 10836
+public class ColdOverlay : MonoBehaviour // TypeDefIndex: 10843
 {
 	public PostProcessVolume postProcessVolume; 
 	public float smoothTime; 

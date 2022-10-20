@@ -1,4 +1,4 @@
-public class TriggerBanditZone : TriggerBase // TypeDefIndex: 11731
+public class TriggerBanditZone : TriggerBase // TypeDefIndex: 11740
 {
 
 	public float GetBanditZoneLevel(Vector3 pos) { }

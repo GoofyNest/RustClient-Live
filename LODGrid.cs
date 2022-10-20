@@ -1,4 +1,4 @@
-public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefIndex: 11646
+public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefIndex: 11655
 {
 	public static bool Paused; 
 	public float CellSize; 
@@ -52,7 +52,7 @@ public class LODGrid : SingletonComponent<LODGrid>, IClientComponent // TypeDefI
 
 }
 
-private sealed class LODGrid.<UpdateCoroutine>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11647
+private sealed class LODGrid.<UpdateCoroutine>d__26 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11656
 {
 	private int <>1__state; 
 	private object <>2__current; 

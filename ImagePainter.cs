@@ -1,4 +1,4 @@
-public class ImagePainter : MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IInitializePotentialDragHandler // TypeDefIndex: 12666
+public class ImagePainter : MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IInitializePotentialDragHandler // TypeDefIndex: 12676
 {
 	public ImagePainter.OnDrawingEvent onDrawing; 
 	public MonoBehaviour redirectRightClick; 
@@ -34,14 +34,14 @@ public class ImagePainter : MonoBehaviour, IPointerDownHandler, IEventSystemHand
 
 }
 
-public class ImagePainter.OnDrawingEvent : UnityEvent<Vector2, Brush> // TypeDefIndex: 12667
+public class ImagePainter.OnDrawingEvent : UnityEvent<Vector2, Brush> // TypeDefIndex: 12677
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ImagePainter.PointerState // TypeDefIndex: 12668
+internal class ImagePainter.PointerState // TypeDefIndex: 12678
 {
 	public Vector2 lastPos; 
 	public bool isDown; 

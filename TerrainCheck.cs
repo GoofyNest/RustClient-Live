@@ -1,4 +1,4 @@
-public class TerrainCheck : PrefabAttribute // TypeDefIndex: 12096
+public class TerrainCheck : PrefabAttribute // TypeDefIndex: 12106
 {
 	public bool Rotate; 
 	public float Extents; 

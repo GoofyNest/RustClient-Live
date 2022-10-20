@@ -1,4 +1,4 @@
-public class Monument : TerrainPlacement // TypeDefIndex: 12302
+public class Monument : TerrainPlacement // TypeDefIndex: 12312
 {
 	public float Radius; 
 	public float Fade; 
@@ -22,7 +22,7 @@ public class Monument : TerrainPlacement // TypeDefIndex: 12302
 
 }
 
-private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12303
+private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12313
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -38,7 +38,7 @@ private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12303
 
 }
 
-private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12304
+private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12314
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -60,7 +60,7 @@ private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12304
 
 }
 
-private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12305
+private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12315
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -73,7 +73,7 @@ private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12305
 
 }
 
-private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12306
+private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12316
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -90,7 +90,7 @@ private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12306
 
 }
 
-private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12307
+private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12317
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 

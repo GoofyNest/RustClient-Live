@@ -1,4 +1,4 @@
-public class MissionEntity : BaseMonoBehaviour, IOnParentDestroying // TypeDefIndex: 11926
+public class MissionEntity : BaseMonoBehaviour, IOnParentDestroying // TypeDefIndex: 11935
 {
 	public bool cleanupOnMissionSuccess; 
 	public bool cleanupOnMissionFailed; 

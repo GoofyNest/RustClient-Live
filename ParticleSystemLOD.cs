@@ -1,4 +1,4 @@
-public class ParticleSystemLOD : LODComponentParticleSystem // TypeDefIndex: 11662
+public class ParticleSystemLOD : LODComponentParticleSystem // TypeDefIndex: 11671
 {
 	[HorizontalAttribute] 
 	public ParticleSystemLOD.State[] States; 
@@ -12,7 +12,7 @@ public class ParticleSystemLOD : LODComponentParticleSystem // TypeDefIndex: 116
 
 }
 
-public class ParticleSystemLOD.State // TypeDefIndex: 11663
+public class ParticleSystemLOD.State // TypeDefIndex: 11672
 {
 	public float distance; 
 	[RangeAttribute] 

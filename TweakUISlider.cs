@@ -1,4 +1,4 @@
-public class TweakUISlider : TweakUIBase // TypeDefIndex: 12884
+public class TweakUISlider : TweakUIBase // TypeDefIndex: 12895
 {
 	public Slider sliderControl; 
 	public TextMeshProUGUI textControl; 

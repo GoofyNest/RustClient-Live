@@ -1,4 +1,4 @@
-public enum KernelSize // TypeDefIndex: 13517
+public enum KernelSize // TypeDefIndex: 13528
 {
 	public int value__; 
 	public const KernelSize Small = 0;

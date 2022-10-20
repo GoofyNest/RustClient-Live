@@ -1,4 +1,4 @@
-public class GameContentList : MonoBehaviour // TypeDefIndex: 11018
+public class GameContentList : MonoBehaviour // TypeDefIndex: 11027
 {
 	public GameContentList.ResourceType resourceType; 
 	public List<Object> foundObjects; 
@@ -8,7 +8,7 @@ public class GameContentList : MonoBehaviour // TypeDefIndex: 11018
 
 }
 
-public enum GameContentList.ResourceType // TypeDefIndex: 11019
+public enum GameContentList.ResourceType // TypeDefIndex: 11028
 {
 	public int value__; 
 	public const GameContentList.ResourceType Audio = 0;

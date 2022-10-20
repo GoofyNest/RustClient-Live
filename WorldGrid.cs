@@ -1,4 +1,4 @@
-public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // TypeDefIndex: 11797
+public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // TypeDefIndex: 11806
 {
 	public static bool Paused; 
 	public float CellSize; 
@@ -38,7 +38,7 @@ public class WorldGrid : SingletonComponent<WorldGrid>, IClientComponent // Type
 
 }
 
-private sealed class WorldGrid.<UpdateCoroutine>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11798
+private sealed class WorldGrid.<UpdateCoroutine>d__17 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11807
 {
 	private int <>1__state; 
 	private object <>2__current; 

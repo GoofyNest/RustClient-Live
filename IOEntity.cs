@@ -264,7 +264,7 @@ public class IOEntity.IOConnection.LinePointList : IDisposable, Pool.IPooled, IP
 
 }
 
-public class IOEntity : DecayEntity // TypeDefIndex: 10294
+public class IOEntity : DecayEntity // TypeDefIndex: 10295
 {
 	[HeaderAttribute] 
 	public Transform debugOrigin; 
@@ -288,6 +288,7 @@ public class IOEntity : DecayEntity // TypeDefIndex: 10294
 	public virtual bool IsGravitySource { get; }
 	protected virtual float LiquidPassthroughGravityThreshold { get; }
 	protected virtual bool DisregardGravityRestrictionsOnLiquid { get; }
+	public virtual bool BlockIOInformationDisplay { get; }
 
 
 	public override bool OnRpcMessage(BasePlayer player, uint rpc, Message msg) { }
@@ -347,13 +348,15 @@ public class IOEntity : DecayEntity // TypeDefIndex: 10294
 
 	protected override void DoClientDestroy() { }
 
+	public virtual bool get_BlockIOInformationDisplay() { }
+
 	public void .ctor() { }
 
 	private static void .cctor() { }
 
 }
 
-public enum IOEntity.IOType // TypeDefIndex: 10295
+public enum IOEntity.IOType // TypeDefIndex: 10296
 {
 	public int value__; 
 	public const IOEntity.IOType Electric = 0;
@@ -363,7 +366,7 @@ public enum IOEntity.IOType // TypeDefIndex: 10295
 
 }
 
-public class IOEntity.IORef // TypeDefIndex: 10296
+public class IOEntity.IORef // TypeDefIndex: 10297
 {
 	public EntityRef entityRef; 
 	public IOEntity ioEnt; 
@@ -383,7 +386,7 @@ public class IOEntity.IORef // TypeDefIndex: 10296
 
 }
 
-public class IOEntity.IOSlot // TypeDefIndex: 10297
+public class IOEntity.IOSlot // TypeDefIndex: 10298
 {
 	public string niceName; 
 	public IOEntity.IOType type; 

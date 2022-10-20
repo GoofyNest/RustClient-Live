@@ -121,6 +121,7 @@ public sealed class GameObject : Object
 	|-GameObject.GetComponent<Poolable>
 	|-GameObject.GetComponent<PowerLineWireConnectionHelper>
 	|-GameObject.GetComponent<PrefabParameters>
+	|-GameObject.GetComponent<ProceduralDungeonCell>
 	|-GameObject.GetComponent<Projectile>
 	|-GameObject.GetComponent<ProjectileWeaponMod>
 	|-GameObject.GetComponent<QuickCraftButton>

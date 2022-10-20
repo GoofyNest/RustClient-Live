@@ -1,4 +1,4 @@
-public sealed class PropertySheetFactory // TypeDefIndex: 13603
+public sealed class PropertySheetFactory // TypeDefIndex: 13614
 {
 	private readonly Dictionary<Shader, PropertySheet> m_Sheets; 
 

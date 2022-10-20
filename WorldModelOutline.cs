@@ -1,4 +1,4 @@
-public class WorldModelOutline : OutlineObject // TypeDefIndex: 11809
+public class WorldModelOutline : OutlineObject // TypeDefIndex: 11818
 {
 	private CoverageQueries.Query query; 
 	private const float coverageRadius = 0,06;

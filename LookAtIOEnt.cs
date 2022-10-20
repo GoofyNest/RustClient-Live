@@ -1,4 +1,4 @@
-public class LookAtIOEnt : MonoBehaviour // TypeDefIndex: 12813
+public class LookAtIOEnt : MonoBehaviour // TypeDefIndex: 12824
 {
 	public Text objectTitle; 
 	public RectTransform slotToolTip; 
@@ -74,7 +74,7 @@ public class LookAtIOEnt : MonoBehaviour // TypeDefIndex: 12813
 
 }
 
-public struct LookAtIOEnt.HandleSet // TypeDefIndex: 12814
+public struct LookAtIOEnt.HandleSet // TypeDefIndex: 12825
 {
 	public IOEntity.IOType ForIO; 
 	public GameObjectRef handlePrefab; 

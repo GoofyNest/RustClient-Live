@@ -1,4 +1,4 @@
-public class GenerateBiome : ProceduralComponent // TypeDefIndex: 12165
+public class GenerateBiome : ProceduralComponent // TypeDefIndex: 12175
 {
 
 	public static extern void Native_GenerateBiome(byte[] map, int res, Vector3 pos, Vector3 size, uint seed, float lootAngle, float biomeAngle, short[] heightmap, int heightres) { }

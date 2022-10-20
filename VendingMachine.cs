@@ -193,7 +193,7 @@ public class VendingMachine.SellOrderContainer : IDisposable, Pool.IPooled, IPro
 
 }
 
-public class VendingMachine : StorageContainer // TypeDefIndex: 10189
+public class VendingMachine : StorageContainer // TypeDefIndex: 10190
 {
 	private Option __menuOption_Menu_BroadcastOff; 
 	private Option __menuOption_Menu_BroadcastOn; 
@@ -302,7 +302,7 @@ public class VendingMachine : StorageContainer // TypeDefIndex: 10189
 
 }
 
-public static class VendingMachine.VendingMachineFlags // TypeDefIndex: 10190
+public static class VendingMachine.VendingMachineFlags // TypeDefIndex: 10191
 {
 	public const BaseEntity.Flags EmptyInv = 128;
 	public const BaseEntity.Flags IsVending = 256;

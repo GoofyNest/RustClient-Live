@@ -1,4 +1,4 @@
-public class TennisArcadeGame : BaseArcadeGame // TypeDefIndex: 10483
+public class TennisArcadeGame : BaseArcadeGame // TypeDefIndex: 10485
 {
 	public ArcadeEntity paddle1; 
 	public ArcadeEntity paddle2; 

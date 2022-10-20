@@ -1,4 +1,4 @@
-public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12204
+public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12214
 {
 	public const float Width = 4;
 	public const float InnerPadding = 1;
@@ -22,7 +22,7 @@ public class GenerateRailLayout : ProceduralComponent // TypeDefIndex: 12204
 
 }
 
-private class GenerateRailLayout.PathNode // TypeDefIndex: 12205
+private class GenerateRailLayout.PathNode // TypeDefIndex: 12215
 {
 	public MonumentInfo monument; 
 	public TerrainPathConnect target; 
@@ -33,7 +33,7 @@ private class GenerateRailLayout.PathNode // TypeDefIndex: 12205
 
 }
 
-private class GenerateRailLayout.PathSegment // TypeDefIndex: 12206
+private class GenerateRailLayout.PathSegment // TypeDefIndex: 12216
 {
 	public PathFinder.Node start; 
 	public PathFinder.Node end; 
@@ -45,7 +45,7 @@ private class GenerateRailLayout.PathSegment // TypeDefIndex: 12206
 
 }
 
-private sealed class GenerateRailLayout.<>c__DisplayClass13_0 // TypeDefIndex: 12207
+private sealed class GenerateRailLayout.<>c__DisplayClass13_0 // TypeDefIndex: 12217
 {
 	public PathList rail; 
 

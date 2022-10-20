@@ -1,4 +1,4 @@
-public enum flamethrowerState // TypeDefIndex: 13203
+public enum flamethrowerState // TypeDefIndex: 13214
 {
 	public int value__; 
 	public const flamethrowerState OFF = 0;

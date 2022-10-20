@@ -1,4 +1,4 @@
-public class StripRig : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11725
+public class StripRig : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 11734
 {
 	public Transform root; 
 	public bool fromClient; 

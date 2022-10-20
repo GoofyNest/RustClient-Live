@@ -88,7 +88,7 @@ public struct Info // TypeDefIndex: 8821
 
 }
 
-public struct Info // TypeDefIndex: 13410
+public struct Info // TypeDefIndex: 13421
 {
 	public string action; 
 	public string icon; 

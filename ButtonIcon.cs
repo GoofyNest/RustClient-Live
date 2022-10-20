@@ -1,4 +1,4 @@
-public class ButtonIcon : RustButton // TypeDefIndex: 12573
+public class ButtonIcon : RustButton // TypeDefIndex: 12583
 {
 	public Image Image; 
 

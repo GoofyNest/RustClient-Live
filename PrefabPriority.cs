@@ -1,4 +1,4 @@
-public enum PrefabPriority // TypeDefIndex: 11685
+public enum PrefabPriority // TypeDefIndex: 11694
 {
 	public int value__; 
 	public const PrefabPriority Lowest = 0;

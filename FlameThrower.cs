@@ -1,4 +1,4 @@
-public class FlameThrower : AttackEntity // TypeDefIndex: 10275
+public class FlameThrower : AttackEntity // TypeDefIndex: 10276
 {
 	[HeaderAttribute] 
 	public int maxAmmo; 

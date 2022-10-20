@@ -1,4 +1,4 @@
-public class FirecrackerRepeater : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 10463
+public class FirecrackerRepeater : BaseMonoBehaviour, IClientComponent // TypeDefIndex: 10465
 {
 	public GameObjectRef singleExplosionEffect; 
 	public Transform[] parts; 

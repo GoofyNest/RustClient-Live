@@ -1,4 +1,4 @@
-public class EnvironmentVolumeProperties : ScriptableObject // TypeDefIndex: 12389
+public class EnvironmentVolumeProperties : ScriptableObject // TypeDefIndex: 12399
 {
 
 	public void .ctor() { }

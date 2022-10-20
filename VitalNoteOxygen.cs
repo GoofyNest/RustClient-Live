@@ -1,4 +1,4 @@
-public class VitalNoteOxygen : MonoBehaviour, IClientComponent, IVitalNotice // TypeDefIndex: 13024
+public class VitalNoteOxygen : MonoBehaviour, IClientComponent, IVitalNotice // TypeDefIndex: 13035
 {
 	[SerializeField] 
 	private float refreshTime; 

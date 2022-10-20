@@ -1,4 +1,4 @@
-public static class TextureFormatUtilities // TypeDefIndex: 13610
+public static class TextureFormatUtilities // TypeDefIndex: 13621
 {
 	private static Dictionary<int, RenderTextureFormat> s_FormatAliasMap; 
 	private static Dictionary<int, bool> s_SupportedRenderTextureFormats; 

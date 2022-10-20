@@ -1,4 +1,4 @@
-public class BaseGameMode : BaseEntity // TypeDefIndex: 10223
+public class BaseGameMode : BaseEntity // TypeDefIndex: 10224
 {
 	private GameMode gameModeScores; 
 	public string[] scoreColumns; 
@@ -52,6 +52,7 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10223
 	public bool allowBleeding; 
 	public bool allowTemperature; 
 	public bool quickRespawn; 
+	public bool quickDeploy; 
 	public float respawnDelayOverride; 
 	public float startHealthOverride; 
 	public float autoHealDelay; 
@@ -177,14 +178,14 @@ public class BaseGameMode : BaseEntity // TypeDefIndex: 10223
 
 }
 
-public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10224
+public struct BaseGameMode.ResearchCostResult // TypeDefIndex: 10225
 {
 	public Nullable<float> Scale; 
 	public Nullable<int> Amount; 
 
 }
 
-public class BaseGameMode.GameModeTeam // TypeDefIndex: 10225
+public class BaseGameMode.GameModeTeam // TypeDefIndex: 10226
 {
 	public string name; 
 	public PlayerInventoryProperties[] teamloadouts; 

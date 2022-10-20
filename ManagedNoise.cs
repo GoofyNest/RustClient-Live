@@ -1,4 +1,4 @@
-public static class ManagedNoise // TypeDefIndex: 12006
+public static class ManagedNoise // TypeDefIndex: 12016
 {
 	private static readonly int[] hash; 
 	private const int hashMask = 255;

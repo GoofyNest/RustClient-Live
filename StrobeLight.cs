@@ -1,4 +1,4 @@
-public class StrobeLight : BaseCombatEntity // TypeDefIndex: 9985
+public class StrobeLight : IOEntity // TypeDefIndex: 9985
 {
 	public float frequency; 
 	public MeshRenderer lightMesh; 
@@ -20,6 +20,7 @@ public class StrobeLight : BaseCombatEntity // TypeDefIndex: 9985
 	private Option __menuOption_Menu_TurnOff; 
 	private Option __menuOption_Menu_TurnOn; 
 
+	public override bool BlockIOInformationDisplay { get; }
 	public override bool HasMenuOptions { get; }
 
 
@@ -70,6 +71,8 @@ public class StrobeLight : BaseCombatEntity // TypeDefIndex: 9985
 	public void Menu_StrobeFast(BasePlayer player) { }
 
 	public bool Menu_StrobeFast_ShowIf(BasePlayer player) { }
+
+	public override bool get_BlockIOInformationDisplay() { }
 
 	public override void GetMenuOptions(List<Option> list) { }
 

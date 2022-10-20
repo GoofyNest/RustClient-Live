@@ -32,7 +32,7 @@ public enum BlurOptimized.BlurType // TypeDefIndex: 8175
 
 }
 
-public class BlurOptimized : PostProcessEffectSettings // TypeDefIndex: 11957
+public class BlurOptimized : PostProcessEffectSettings // TypeDefIndex: 11967
 {
 	[RangeAttribute] 
 	public FixedIntParameter downsample; 

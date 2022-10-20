@@ -267,7 +267,7 @@ public sealed class InstrumentNameEvent : BaseTextEvent // TypeDefIndex: 7544
 
 }
 
-public class InstrumentTool : HeldEntity // TypeDefIndex: 10293
+public class InstrumentTool : HeldEntity // TypeDefIndex: 10294
 {
 	public InstrumentKeyController KeyController; 
 	public SoundDefinition DeploySound; 
@@ -318,7 +318,7 @@ public class InstrumentTool : HeldEntity // TypeDefIndex: 10293
 
 }
 
-public class InstrumentStateBehaviour : StateMachineBehaviour // TypeDefIndex: 10450
+public class InstrumentStateBehaviour : StateMachineBehaviour // TypeDefIndex: 10452
 {
 	private static readonly int[] targetState; 
 	private static readonly int[] states; 
@@ -335,7 +335,7 @@ public class InstrumentStateBehaviour : StateMachineBehaviour // TypeDefIndex: 1
 
 }
 
-public class InstrumentViewmodel : MonoBehaviour // TypeDefIndex: 10451
+public class InstrumentViewmodel : MonoBehaviour // TypeDefIndex: 10453
 {
 	public Animator ViewAnimator; 
 	public bool UpdateA; 
@@ -367,7 +367,7 @@ public class InstrumentViewmodel : MonoBehaviour // TypeDefIndex: 10451
 
 }
 
-public class InstrumentToolGuitar : InstrumentTool // TypeDefIndex: 11177
+public class InstrumentToolGuitar : InstrumentTool // TypeDefIndex: 11186
 {
 	public Transform InUseAligner; 
 	public Transform DeployAligner; 
@@ -394,7 +394,7 @@ public class InstrumentToolGuitar : InstrumentTool // TypeDefIndex: 11177
 
 }
 
-public class InstrumentDebugInput : MonoBehaviour // TypeDefIndex: 11259
+public class InstrumentDebugInput : MonoBehaviour // TypeDefIndex: 11268
 {
 
 public interface IIdealSlotEntity
@@ -411,7 +411,7 @@ public class InstrumentDebugInput : MonoBehaviour
 
 }
 
-public class InstrumentIKController : MonoBehaviour // TypeDefIndex: 11260
+public class InstrumentIKController : MonoBehaviour // TypeDefIndex: 11269
 {
 	public Vector3 HitRotationVector; 
 	public Transform[] LeftHandIkTargets; 
@@ -465,14 +465,14 @@ public class InstrumentIKController : MonoBehaviour // TypeDefIndex: 11260
 
 }
 
-public class InstrumentIKTargetAttribute : PropertyAttribute // TypeDefIndex: 11261
+public class InstrumentIKTargetAttribute : PropertyAttribute // TypeDefIndex: 11270
 {
 
 	public void .ctor() { }
 
 }
 
-public class InstrumentKeyController : MonoBehaviour // TypeDefIndex: 11262
+public class InstrumentKeyController : MonoBehaviour // TypeDefIndex: 11271
 {
 	public static readonly int PlayingNoteParam; 
 	public static readonly int AnimationSlot1; 
@@ -671,7 +671,7 @@ public class InstrumentKeyController : MonoBehaviour // TypeDefIndex: 11262
 
 }
 
-public struct InstrumentKeyController.NoteBinding // TypeDefIndex: 11263
+public struct InstrumentKeyController.NoteBinding // TypeDefIndex: 11272
 {
 	private Sound playingSound; 
 	private float startedPlayingNote; 
@@ -711,7 +711,7 @@ public struct InstrumentKeyController.NoteBinding // TypeDefIndex: 11263
 
 }
 
-public enum InstrumentKeyController.IKType // TypeDefIndex: 11264
+public enum InstrumentKeyController.IKType // TypeDefIndex: 11273
 {
 	public int value__; 
 	public const InstrumentKeyController.IKType LeftHand = 0;
@@ -720,7 +720,7 @@ public enum InstrumentKeyController.IKType // TypeDefIndex: 11264
 
 }
 
-public enum InstrumentKeyController.NoteType // TypeDefIndex: 11265
+public enum InstrumentKeyController.NoteType // TypeDefIndex: 11274
 {
 	public int value__; 
 	public const InstrumentKeyController.NoteType Regular = 0;
@@ -728,7 +728,7 @@ public enum InstrumentKeyController.NoteType // TypeDefIndex: 11265
 
 }
 
-public enum InstrumentKeyController.InstrumentType // TypeDefIndex: 11266
+public enum InstrumentKeyController.InstrumentType // TypeDefIndex: 11275
 {
 	public int value__; 
 	public const InstrumentKeyController.InstrumentType Note = 0;
@@ -736,7 +736,7 @@ public enum InstrumentKeyController.InstrumentType // TypeDefIndex: 11266
 
 }
 
-public enum InstrumentKeyController.AnimationSlot // TypeDefIndex: 11267
+public enum InstrumentKeyController.AnimationSlot // TypeDefIndex: 11276
 {
 	public int value__; 
 	public const InstrumentKeyController.AnimationSlot None = 0;
@@ -750,7 +750,7 @@ public enum InstrumentKeyController.AnimationSlot // TypeDefIndex: 11267
 
 }
 
-public struct InstrumentKeyController.KeySet // TypeDefIndex: 11268
+public struct InstrumentKeyController.KeySet // TypeDefIndex: 11277
 {
 	public Notes Note; 
 	public InstrumentKeyController.NoteType NoteType; 
@@ -761,21 +761,21 @@ public struct InstrumentKeyController.KeySet // TypeDefIndex: 11268
 
 }
 
-public struct InstrumentKeyController.NoteOverride // TypeDefIndex: 11269
+public struct InstrumentKeyController.NoteOverride // TypeDefIndex: 11278
 {
 	public bool Override; 
 	public InstrumentKeyController.KeySet Note; 
 
 }
 
-public struct InstrumentKeyController.IKNoteTarget // TypeDefIndex: 11270
+public struct InstrumentKeyController.IKNoteTarget // TypeDefIndex: 11279
 {
 	public InstrumentKeyController.IKType TargetType; 
 	public int IkIndex; 
 
 }
 
-public abstract class InstrumentTip : BaseTip // TypeDefIndex: 13346
+public abstract class InstrumentTip : BaseTip // TypeDefIndex: 13357
 {
 	public InstrumentKeyController Instrument { get; }
 

@@ -1,7 +1,7 @@
-public class FogMachine : StorageContainer // TypeDefIndex: 9984
+public class FogMachine : ContainerIOEntity // TypeDefIndex: 9984
 {
-	public const BaseEntity.Flags FogFieldOn = 65536;
-	public const BaseEntity.Flags MotionMode = 32768;
+	public const BaseEntity.Flags FogFieldOn = 262144;
+	public const BaseEntity.Flags MotionMode = 131072;
 	public const BaseEntity.Flags Emitting = 16384;
 	public const BaseEntity.Flags Flag_HasJuice = 2048;
 	public float fogLength; 
@@ -11,6 +11,7 @@ public class FogMachine : StorageContainer // TypeDefIndex: 9984
 	private Option __menuOption_Menu_MotionOn; 
 	private Option __menuOption_Menu_TurnOn; 
 
+	public override bool BlockIOInformationDisplay { get; }
 	public override bool HasMenuOptions { get; }
 
 
@@ -51,6 +52,8 @@ public class FogMachine : StorageContainer // TypeDefIndex: 9984
 	public void Menu_MotionOff(BasePlayer player) { }
 
 	public bool Menu_MotionOff_ShowIf(BasePlayer player) { }
+
+	public override bool get_BlockIOInformationDisplay() { }
 
 	public override void GetMenuOptions(List<Option> list) { }
 

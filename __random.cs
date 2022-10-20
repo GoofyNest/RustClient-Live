@@ -57307,6 +57307,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DungeonGridInfo>..ctor
 	|-List<DungeonNavmesh>..ctor
 	|-List<DungeonVolume>..ctor
+	|-List<DynamicDungeon>..ctor
 	|-List<EZSoftBone.Bone>..ctor
 	|-List<EZSoftBone.BoneChain>..ctor
 	|-List<CRedge>..ctor
@@ -57404,6 +57405,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ICommandCenterListener>..ctor
 	|-List<JSONNode>..ctor
 	|-List<Option>..ctor
+	|-List<GameObjectRef>..ctor
 	|-List<GameStat.Stat>..ctor
 	|-List<GenerateDungeonBase.DungeonSegment>..ctor
 	|-List<GenerateDungeonGrid.PathLink>..ctor
@@ -57524,6 +57526,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PowerlineNode>..ctor
 	|-List<PrefabAttribute>..ctor
 	|-List<Prefab<MonumentInfo>>..ctor
+	|-List<ProceduralDungeonCell>..ctor
 	|-List<ProceduralObject>..ctor
 	|-List<Projectile>..ctor
 	|-List<ProjectileWeaponMod.Modifier>..ctor
@@ -58987,6 +58990,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PowerLineWireConnectionDef>.get_Count
 	|-List<PowerLineWireSpan>.get_Count
 	|-List<Prefab>.get_Count
+	|-List<ProceduralDungeonCell>.get_Count
 	|-List<ProceduralObject>.get_Count
 	|-List<ProjectileWeaponMod.Modifier>.get_Count
 	|-List<AIEventData>.get_Count
@@ -60315,6 +60319,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PowerLineWireConnectionDef>.get_Item
 	|-List<PowerLineWireSpan>.get_Item
 	|-List<Prefab>.get_Item
+	|-List<ProceduralDungeonCell>.get_Item
 	|-List<ProceduralObject>.get_Item
 	|-List<AIEventData>.get_Item
 	|-List<AIStateContainer>.get_Item
@@ -61809,6 +61814,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<DungeonBaseLink>.Add
 	|-List<DungeonGridCell>.Add
 	|-List<DungeonGridInfo>.Add
+	|-List<DynamicDungeon>.Add
 	|-List<EZSoftBone.Bone>.Add
 	|-List<EZSoftBone.BoneChain>.Add
 	|-List<ERBlendVecs>.Add
@@ -61954,6 +61960,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PowerlineNode>.Add
 	|-List<Prefab>.Add
 	|-List<PrefabAttribute>.Add
+	|-List<ProceduralDungeonCell>.Add
 	|-List<ProceduralObject>.Add
 	|-List<Projectile>.Add
 	|-List<AIEventData>.Add
@@ -63328,6 +63335,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<PowerLineWireConnection>.Clear
 	|-List<PowerLineWireConnectionDef>.Clear
 	|-List<PowerLineWireSpan>.Clear
+	|-List<ProceduralDungeonCell>.Clear
 	|-List<ProceduralObject>.Clear
 	|-List<Projectile>.Clear
 	|-List<ProjectileWeaponMod.Modifier>.Clear
@@ -63554,6 +63562,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<CinematicEntity>.Contains
 	|-List<CullingVolume>.Contains
 	|-List<DungeonBaseLink>.Contains
+	|-List<DynamicDungeon>.Contains
 	|-List<EngineAudioClip.EngineCycle>.Contains
 	|-List<EntityLink>.Contains
 	|-List<EnvironmentFish>.Contains
@@ -66019,6 +66028,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BlendedSoundLoops.Loop>.GetEnumerator
 	|-List<BoneRetarget>.GetEnumerator
 	|-List<BuildingBlock>.GetEnumerator
+	|-List<BurstClothCollider>.GetEnumerator
 	|-List<CH47DropZone>.GetEnumerator
 	|-List<CH47LandingZone>.GetEnumerator
 	|-List<CinematicEntity>.GetEnumerator
@@ -66067,6 +66077,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<FruitScale>.GetEnumerator
 	|-List<ICommandCenterListener>.GetEnumerator
 	|-List<JSONNode>.GetEnumerator
+	|-List<GameObjectRef>.GetEnumerator
 	|-List<GenerateDungeonBase.DungeonSegment>.GetEnumerator
 	|-List<GenerateDungeonGrid.PathLink>.GetEnumerator
 	|-List<GenerateDungeonGrid.PathLinkSegment>.GetEnumerator
@@ -68260,6 +68271,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<CoalingTower>.Remove
 	|-List<ConnectedSpeaker>.Remove
 	|-List<DecorSpawn>.Remove
+	|-List<DynamicDungeon>.Remove
 	|-List<ERCell>.Remove
 	|-List<ERConnectionGUIStatus>.Remove
 	|-List<ERTerrainChange>.Remove
@@ -81740,7 +81752,7 @@ internal struct GameEvent<T> // TypeDefIndex: 7712
 
 }
 
-public class BoneDictionary // TypeDefIndex: 10832
+public class BoneDictionary // TypeDefIndex: 10839
 {
 	public Transform transform; 
 	public Transform[] transforms; 
@@ -81768,7 +81780,7 @@ public class BoneDictionary // TypeDefIndex: 10832
 
 }
 
-public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10859
+public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10866
 {
 	public T component; 
 
@@ -81789,7 +81801,7 @@ public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10859
 
 }
 
-public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 10937
+public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 10946
 {
 	[SerializeField] 
 	private AmplifyOcclusionEffect ssao; 
@@ -81859,6 +81871,7 @@ public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 109
 	public Camera localCamera { get; set; }
 	public static float AtmosphereBrightnessOverride { get; }
 	private bool updateSkyParameters { get; }
+	private bool wasJustLoading { get; }
 	public static SphericalHarmonicsL2[] LightProbe { get; }
 	public PostProcessLayer PostProcessLayer { get; }
 	public float ActualDeptOfFieldFocalLength { get; }
@@ -81891,6 +81904,12 @@ public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 109
 	/* GenericInstMethod :
 	|
 	|-RustCamera<object>.get_updateSkyParameters
+	*/
+
+	private bool get_wasJustLoading() { }
+	/* GenericInstMethod :
+	|
+	|-RustCamera<object>.get_wasJustLoading
 	*/
 
 	public static SphericalHarmonicsL2[] get_LightProbe() { }
@@ -82108,7 +82127,7 @@ public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 109
 
 }
 
-public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11274
+public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11283
 {
 	protected T owner; 
 	public MetabolismAttribute calories; 
@@ -82152,7 +82171,7 @@ public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11
 
 }
 
-public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 11331
+public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 11340
 {
 
 public abstract class BaseModifiers<T> : EntityComponent<T>
@@ -82275,7 +82294,7 @@ public abstract class BaseModifiers<T> : EntityComponent<T>
 
 }
 
-public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11681
+public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11690
 {
 	public T Component; 
 
@@ -82294,7 +82313,7 @@ public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11681
 
 }
 
-public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12129
+public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12139
 {
 	internal T[] src; 
 	internal T[] dst; 
@@ -82380,7 +82399,7 @@ public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12129
 
 }
 
-public static class RecipeDictionary // TypeDefIndex: 12472
+public static class RecipeDictionary // TypeDefIndex: 12482
 {
 	private static Dictionary<uint, Dictionary<int, List<Recipe>>> recipeListsDict; 
 
@@ -82397,7 +82416,7 @@ public static class RecipeDictionary // TypeDefIndex: 12472
 
 }
 
-public struct CachedTransform<T> // TypeDefIndex: 13036
+public struct CachedTransform<T> // TypeDefIndex: 13047
 {
 	public T component; 
 	public Vector3 position; 
@@ -82480,7 +82499,7 @@ public struct CachedTransform<T> // TypeDefIndex: 13036
 
 }
 
-public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13130
+public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13141
 {
 	private NativeArray<T> _array; 
 	private int _length; 
@@ -82574,7 +82593,7 @@ public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13130
 
 }
 
-public class PooledList<T> // TypeDefIndex: 13136
+public class PooledList<T> // TypeDefIndex: 13147
 {
 	public List<T> data; 
 
@@ -82623,7 +82642,7 @@ public class PooledList<T> // TypeDefIndex: 13136
 
 }
 
-public class SimpleList<T> // TypeDefIndex: 13139
+public class SimpleList<T> // TypeDefIndex: 13150
 {
 	private const int defaultCapacity = 16;
 	private static readonly T[] emptyArray; 
@@ -82776,7 +82795,7 @@ public class SimpleList<T> // TypeDefIndex: 13139
 
 }
 
-public class TimeCachedValue<T> // TypeDefIndex: 13144
+public class TimeCachedValue<T> // TypeDefIndex: 13155
 {
 	public float refreshCooldown; 
 	public float refreshRandomRange; 
@@ -82807,7 +82826,7 @@ public class TimeCachedValue<T> // TypeDefIndex: 13144
 
 }
 
-public class ResourceRef<T> // TypeDefIndex: 13169
+public class ResourceRef<T> // TypeDefIndex: 13180
 {
 	public string guid; 
 	private T _cachedObject; 
@@ -82859,7 +82878,7 @@ public class ResourceRef<T> // TypeDefIndex: 13169
 
 }
 
-public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13562
+public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13573
 {
 	public T value; 
 
@@ -83126,7 +83145,7 @@ public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13562
 
 }
 
-public class GenericLerp<T> : IDisposable // TypeDefIndex: 13857
+public class GenericLerp<T> : IDisposable // TypeDefIndex: 13868
 {
 	private Interpolator<T> interpolator; 
 	private IGenericLerpTarget<T> target; 
@@ -83249,7 +83268,7 @@ public class GenericLerp<T> : IDisposable // TypeDefIndex: 13857
 
 }
 
-public class Interpolator<T> // TypeDefIndex: 13859
+public class Interpolator<T> // TypeDefIndex: 13870
 {
 	public List<T> list; 
 	public T last; 

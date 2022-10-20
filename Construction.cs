@@ -1,4 +1,4 @@
-public class Construction : PrefabAttribute // TypeDefIndex: 10760
+public class Construction : PrefabAttribute // TypeDefIndex: 10767
 {
 	public static string lastPlacementError; 
 	public BaseEntity.Menu.Option info; 
@@ -60,7 +60,7 @@ public class Construction : PrefabAttribute // TypeDefIndex: 10760
 
 }
 
-public struct Construction.Target // TypeDefIndex: 10761
+public struct Construction.Target // TypeDefIndex: 10768
 {
 	public bool valid; 
 	public Ray ray; 
@@ -80,7 +80,7 @@ public struct Construction.Target // TypeDefIndex: 10761
 
 }
 
-public class Construction.Placement // TypeDefIndex: 10762
+public class Construction.Placement // TypeDefIndex: 10769
 {
 	public Vector3 position; 
 	public Quaternion rotation; 
@@ -90,7 +90,7 @@ public class Construction.Placement // TypeDefIndex: 10762
 
 }
 
-public class Construction.Grade // TypeDefIndex: 10763
+public class Construction.Grade // TypeDefIndex: 10770
 {
 	public BuildingGrade grade; 
 	public float maxHealth; 
@@ -108,7 +108,7 @@ public class Construction.Grade // TypeDefIndex: 10763
 
 }
 
-private sealed class Construction.<>c // TypeDefIndex: 10764
+private sealed class Construction.<>c // TypeDefIndex: 10771
 {
 	public static readonly Construction.<>c <>9; 
 	public static Func<ConstructionGrade, bool> <>9__34_0; 
@@ -125,7 +125,7 @@ private sealed class Construction.<>c // TypeDefIndex: 10764
 
 }
 
-public class Construction_SleepingBag : Construction // TypeDefIndex: 10771
+public class Construction_SleepingBag : Construction // TypeDefIndex: 10778
 {
 	public static bool ShowSleepingBagProximityWarning; 
 

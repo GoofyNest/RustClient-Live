@@ -1,8 +1,9 @@
-public class TorchWeapon : BaseMelee // TypeDefIndex: 10364
+public class TorchWeapon : BaseMelee // TypeDefIndex: 10365
 {
 	public float fuelTickAmount; 
 	[HeaderAttribute] 
 	public AnimatorOverrideController LitHoldAnimationOverride; 
+	public GameObjectRef litStrikeFX; 
 	private bool specVmWasOn; 
 	private TimeUntil blockVmUpdates; 
 
@@ -20,6 +21,8 @@ public class TorchWeapon : BaseMelee // TypeDefIndex: 10364
 	public override AnimatorOverrideController GetHoldAnimations() { }
 
 	public override void ProcessSpectatorViewmodel(ViewModel vm) { }
+
+	public override string GetStrikeEffectPath(string materialName) { }
 
 	public void .ctor() { }
 

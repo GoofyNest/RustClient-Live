@@ -1,4 +1,4 @@
-public class Recipe : ScriptableObject // TypeDefIndex: 12470
+public class Recipe : ScriptableObject // TypeDefIndex: 12480
 {
 	[HeaderAttribute] 
 	public ItemDefinition ProducedItem; 
@@ -31,7 +31,7 @@ public class Recipe : ScriptableObject // TypeDefIndex: 12470
 
 }
 
-public struct Recipe.RecipeIngredient // TypeDefIndex: 12471
+public struct Recipe.RecipeIngredient // TypeDefIndex: 12481
 {
 	public ItemDefinition Ingredient; 
 	public int Count; 

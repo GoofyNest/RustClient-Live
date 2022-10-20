@@ -1,4 +1,4 @@
-public class Brush // TypeDefIndex: 13328
+public class Brush // TypeDefIndex: 13339
 {
 	public float spacing; 
 	public Vector2 brushSize; 

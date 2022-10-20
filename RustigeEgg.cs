@@ -1,4 +1,4 @@
-public class RustigeEgg : BaseCombatEntity // TypeDefIndex: 10145
+public class RustigeEgg : BaseCombatEntity // TypeDefIndex: 10146
 {
 	private Option __menuOption_Menu_Close; 
 	private Option __menuOption_Menu_Open; 

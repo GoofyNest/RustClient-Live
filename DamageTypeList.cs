@@ -1,4 +1,4 @@
-public class DamageTypeList // TypeDefIndex: 13768
+public class DamageTypeList // TypeDefIndex: 13779
 {
 	public float[] types; 
 

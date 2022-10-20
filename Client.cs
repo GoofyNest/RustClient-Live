@@ -398,7 +398,7 @@ internal struct ClientCredentialsInternal : IGettable<ClientCredentials>, ISetta
 
 }
 
-public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 10592
+public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 10599
 {
 	public RendererLOD _lod; 
 	public LineRenderer _line; 
@@ -454,7 +454,7 @@ public class ClientIOLine : BaseMonoBehaviour // TypeDefIndex: 10592
 
 }
 
-public class Client : SingletonComponent<Client>, IClientCallback // TypeDefIndex: 10852
+public class Client : SingletonComponent<Client>, IClientCallback // TypeDefIndex: 10859
 {
 	public static Translate.Phrase loading_loading; 
 	public static Translate.Phrase loading_connecting; 
@@ -683,7 +683,7 @@ public class Client : SingletonComponent<Client>, IClientCallback // TypeDefInde
 
 }
 
-private enum Client.ConnectionProtocol // TypeDefIndex: 10853
+private enum Client.ConnectionProtocol // TypeDefIndex: 10860
 {
 	public int value__; 
 	public const Client.ConnectionProtocol Raknet = 0;
@@ -691,7 +691,7 @@ private enum Client.ConnectionProtocol // TypeDefIndex: 10853
 
 }
 
-public enum Client.ProcessAccessFlags // TypeDefIndex: 10854
+public enum Client.ProcessAccessFlags // TypeDefIndex: 10861
 {
 	public uint value__; 
 	public const Client.ProcessAccessFlags Terminate = 1;
@@ -699,7 +699,7 @@ public enum Client.ProcessAccessFlags // TypeDefIndex: 10854
 
 }
 
-private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 10855
+private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 10862
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -720,7 +720,7 @@ private struct Client.<Connect>d__37 : IAsyncStateMachine // TypeDefIndex: 10855
 
 }
 
-private sealed class Client.<>c // TypeDefIndex: 10856
+private sealed class Client.<>c // TypeDefIndex: 10863
 {
 	public static readonly Client.<>c <>9; 
 	public static Func<ConsoleSystem.Command, bool> <>9__39_0; 
@@ -737,7 +737,7 @@ private sealed class Client.<>c // TypeDefIndex: 10856
 
 }
 
-private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10857
+private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10864
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -770,7 +770,7 @@ private sealed class Client.<DoClientConnected>d__39 : IEnumerator<object>, IEnu
 
 }
 
-private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10858
+private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10865
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -813,7 +813,7 @@ private sealed class Client.<StartPlayingDemoInternal>d__78 : IEnumerator<object
 
 }
 
-public struct ClientPerformanceReport // TypeDefIndex: 11002
+public struct ClientPerformanceReport // TypeDefIndex: 11011
 {
 	public int request_id; 
 	public string user_id; 
@@ -834,7 +834,7 @@ public struct ClientPerformanceReport // TypeDefIndex: 11002
 
 }
 
-public class ClientFrametimeReport // TypeDefIndex: 11016
+public class ClientFrametimeReport // TypeDefIndex: 11025
 {
 	public int request_id; 
 	public int start_frame; 
@@ -845,7 +845,7 @@ public class ClientFrametimeReport // TypeDefIndex: 11016
 
 }
 
-public class ClientFrametimeRequest // TypeDefIndex: 11017
+public class ClientFrametimeRequest // TypeDefIndex: 11026
 {
 	public int request_id; 
 	public int start_frame; 
@@ -856,7 +856,7 @@ public class ClientFrametimeRequest // TypeDefIndex: 11017
 
 }
 
-public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11538
+public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11547
 {
 
 	public void Cycle() { }
@@ -869,14 +869,14 @@ public class ClientBuildingManager : BuildingManager // TypeDefIndex: 11538
 
 }
 
-public static class Client // TypeDefIndex: 13387
+public static class Client // TypeDefIndex: 13398
 {
 	public const byte Default = 0;
 	public const byte Tick = 1;
 
 }
 
-public class Client : ConsoleSystem // TypeDefIndex: 13629
+public class Client : ConsoleSystem // TypeDefIndex: 13640
 {
 	public static string anticheatid; 
 	public static string anticheatkey; 
@@ -942,6 +942,8 @@ public class Client : ConsoleSystem // TypeDefIndex: 13629
 	public static int RockSkin; 
 	[ClientVar] 
 	public static int UnderwearSkin; 
+	[ClientVar] 
+	public static int TorchSkin; 
 
 	[ClientVar] 
 	public static float maxreceivetime { get; set; }
@@ -1046,7 +1048,7 @@ public class Client : ConsoleSystem // TypeDefIndex: 13629
 
 }
 
-public enum Client.CameraSensorType // TypeDefIndex: 13630
+public enum Client.CameraSensorType // TypeDefIndex: 13641
 {
 	public int value__; 
 	public const Client.CameraSensorType _8Mm = 0;
@@ -1065,7 +1067,7 @@ public enum Client.CameraSensorType // TypeDefIndex: 13630
 
 }
 
-public static class Client // TypeDefIndex: 13776
+public static class Client // TypeDefIndex: 13787
 {
 	public const float UseDistance = 2;
 	private static Scene _entityScene; 

@@ -1,4 +1,4 @@
-public class FootstepEffects : BaseFootstepEffect // TypeDefIndex: 11058
+public class FootstepEffects : BaseFootstepEffect // TypeDefIndex: 11067
 {
 	public Transform leftFoot; 
 	public Transform rightFoot; 

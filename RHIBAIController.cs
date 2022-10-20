@@ -1,4 +1,4 @@
-public class RHIBAIController : FacepunchBehaviour // TypeDefIndex: 11414
+public class RHIBAIController : FacepunchBehaviour // TypeDefIndex: 11423
 {
 	public List<Vector3> nodes; 
 

@@ -1,4 +1,4 @@
-public class RCMenu : ComputerMenu // TypeDefIndex: 10395
+public class RCMenu : ComputerMenu // TypeDefIndex: 10397
 {
 	public Image backgroundOpaque; 
 	public InputField newBookmarkEntryField; 
@@ -72,7 +72,7 @@ public class RCMenu : ComputerMenu // TypeDefIndex: 10395
 
 }
 
-private sealed class RCMenu.<RefreshLODs>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10396
+private sealed class RCMenu.<RefreshLODs>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 10398
 {
 	private int <>1__state; 
 	private object <>2__current; 

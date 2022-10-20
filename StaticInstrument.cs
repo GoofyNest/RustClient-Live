@@ -1,4 +1,4 @@
-public class StaticInstrument : BaseMountable // TypeDefIndex: 10360
+public class StaticInstrument : BaseMountable // TypeDefIndex: 10361
 {
 	public AnimatorOverrideController AnimatorOverride; 
 	public bool ShowDeployAnimation; 

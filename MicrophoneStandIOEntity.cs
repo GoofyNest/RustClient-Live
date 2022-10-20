@@ -1,4 +1,4 @@
-public class MicrophoneStandIOEntity : IOEntity, IAudioConnectionSource // TypeDefIndex: 11158
+public class MicrophoneStandIOEntity : IOEntity, IAudioConnectionSource // TypeDefIndex: 11167
 {
 	public int PowerCost; 
 	public TriggerBase InstrumentTrigger; 

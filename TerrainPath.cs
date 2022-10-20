@@ -1,4 +1,4 @@
-public class TerrainPath : TerrainExtension // TypeDefIndex: 12146
+public class TerrainPath : TerrainExtension // TypeDefIndex: 12156
 {
 	internal List<PathList> Roads; 
 	internal List<PathList> Rails; 

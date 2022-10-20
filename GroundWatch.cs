@@ -1,4 +1,4 @@
-public class GroundWatch : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 11608
+public class GroundWatch : BaseMonoBehaviour, IServerComponent // TypeDefIndex: 11617
 {
 	public Vector3 groundPosition; 
 	public LayerMask layers; 

@@ -1,4 +1,4 @@
-public class Hierarchy : ConsoleSystem // TypeDefIndex: 13672
+public class Hierarchy : ConsoleSystem // TypeDefIndex: 13683
 {
 
 	public void .ctor() { }

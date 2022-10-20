@@ -1,4 +1,4 @@
-public class TechTreeSelectedNodeUI : MonoBehaviour // TypeDefIndex: 12637
+public class TechTreeSelectedNodeUI : MonoBehaviour // TypeDefIndex: 12647
 {
 	public RustText selectedTitle; 
 	public RawImage selectedIcon; 
