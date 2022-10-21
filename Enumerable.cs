@@ -12339,7 +12339,7 @@ internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // 
 
 }
 
-public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5711
+public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5712
 {
 	private string value; 
 
@@ -12350,7 +12350,7 @@ public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5711
 
 }
 
-internal static class EnumUtils // TypeDefIndex: 5958
+internal static class EnumUtils // TypeDefIndex: 5959
 {
 	private static readonly ThreadSafeStore<Type, BidirectionalDictionary<string, string>> EnumMemberNamesPerType; 
 
@@ -12369,7 +12369,7 @@ internal static class EnumUtils // TypeDefIndex: 5958
 
 }
 
-private sealed class EnumUtils.<>c // TypeDefIndex: 5959
+private sealed class EnumUtils.<>c // TypeDefIndex: 5960
 {
 	public static readonly EnumUtils.<>c <>9; 
 	public static Func<EnumMemberAttribute, string> <>9__1_0; 
@@ -12386,7 +12386,7 @@ private sealed class EnumUtils.<>c // TypeDefIndex: 5959
 
 }
 
-private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5960
+private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5961
 {
 	public static readonly EnumUtils.<>c__2<T> <>9; 
 
@@ -12397,7 +12397,7 @@ private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5960
 
 }
 
-public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9001
+public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9002
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 
@@ -12444,7 +12444,7 @@ public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9001
 
 }
 
-internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGettable<EnumerateModsCallbackInfo>, ISettable<EnumerateModsCallbackInfo>, IDisposable // TypeDefIndex: 9002
+internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGettable<EnumerateModsCallbackInfo>, ISettable<EnumerateModsCallbackInfo>, IDisposable // TypeDefIndex: 9003
 {
 	private Result m_ResultCode; 
 	private IntPtr m_LocalUserId; 
@@ -12486,7 +12486,7 @@ internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGett
 
 }
 
-public struct EnumerateModsOptions // TypeDefIndex: 9003
+public struct EnumerateModsOptions // TypeDefIndex: 9004
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 
@@ -12511,7 +12511,7 @@ public struct EnumerateModsOptions // TypeDefIndex: 9003
 
 }
 
-internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, IDisposable // TypeDefIndex: 9004
+internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, IDisposable // TypeDefIndex: 9005
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -12533,7 +12533,7 @@ internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, 
 
 }
 
-public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12525
+public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12527
 {
 	public object Value; 
 	public RustText TextValue; 
@@ -12548,7 +12548,7 @@ public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12525
 
 }
 
-public class EnumListUI : MonoBehaviour // TypeDefIndex: 12526
+public class EnumListUI : MonoBehaviour // TypeDefIndex: 12528
 {
 	public Transform PrefabItem; 
 	public Transform Container; 

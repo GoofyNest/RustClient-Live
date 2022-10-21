@@ -1,4 +1,4 @@
-public struct CreateDeviceIdCallbackInfo : ICallbackInfo // TypeDefIndex: 9555
+public struct CreateDeviceIdCallbackInfo : ICallbackInfo // TypeDefIndex: 9556
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

@@ -1,4 +1,4 @@
-public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12136
+public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12138
 {
 	internal int res; 
 
@@ -41,7 +41,7 @@ public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12136
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12137
+private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12139
 {
 	public Vector2i base_min; 
 	public Vector2i base_count; 
@@ -58,7 +58,7 @@ private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12137
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12138
+private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12140
 {
 	public Vector2i base_min; 
 	public Vector2i size_y; 

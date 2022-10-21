@@ -1,4 +1,4 @@
-internal struct CatalogItemInternal : IGettable<CatalogItem>, ISettable<CatalogItem>, IDisposable // TypeDefIndex: 9408
+internal struct CatalogItemInternal : IGettable<CatalogItem>, ISettable<CatalogItem>, IDisposable // TypeDefIndex: 9409
 {
 	private int m_ApiVersion; 
 	private IntPtr m_CatalogNamespace; 

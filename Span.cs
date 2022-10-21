@@ -217,7 +217,7 @@ private class SpanningTree.Edge<T> : IMinHeapNode<SpanningTree.Edge<T>> // TypeD
 
 }
 
-public struct Span<T> // TypeDefIndex: 6898
+public struct Span<T> // TypeDefIndex: 6899
 {
 	private readonly Pinnable<T> _pinnable; 
 	private readonly IntPtr _byteOffset; 
@@ -389,7 +389,7 @@ public struct Span<T> // TypeDefIndex: 6898
 
 }
 
-internal static class SpanHelpers // TypeDefIndex: 6900
+internal static class SpanHelpers // TypeDefIndex: 6901
 {
 
 [ExtensionAttribute] 
@@ -426,7 +426,7 @@ internal static class SpanHelpers
 
 }
 
-public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 6901
+public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 6902
 {
 	public static readonly bool IsReferenceOrContainsReferences; 
 	public static readonly T[] EmptyArray; 
@@ -453,7 +453,7 @@ public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 6901
 
 }
 
-internal struct SpanWriter // TypeDefIndex: 6957
+internal struct SpanWriter // TypeDefIndex: 6958
 {
 	private readonly Span<byte> _data; 
 	[CompilerGeneratedAttribute] 

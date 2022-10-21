@@ -1,4 +1,4 @@
-public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11673
+public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11675
 {
 	public RendererLOD.State[] States; 
 	private RendererBatch meshBatch; 
@@ -31,7 +31,7 @@ public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11673
 
 }
 
-public class RendererLOD.State // TypeDefIndex: 11674
+public class RendererLOD.State // TypeDefIndex: 11676
 {
 	public float distance; 
 	public Renderer renderer; 

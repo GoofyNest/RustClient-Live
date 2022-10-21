@@ -1,4 +1,4 @@
-public class ErrorEventArgs : EventArgs // TypeDefIndex: 5990
+public class ErrorEventArgs : EventArgs // TypeDefIndex: 5991
 {
 	[CompilerGeneratedAttribute] 
 	private object <CurrentObject>k__BackingField; 

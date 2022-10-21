@@ -1,4 +1,4 @@
-public class RustPlatformHooks : IPlatformHooks // TypeDefIndex: 12435
+public class RustPlatformHooks : IPlatformHooks // TypeDefIndex: 12437
 {
 	public static readonly RustPlatformHooks Instance; 
 

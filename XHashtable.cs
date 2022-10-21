@@ -1,4 +1,4 @@
-public sealed class XHashtable.ExtractKeyDelegate<TValue> : MulticastDelegate // TypeDefIndex: 5823
+public sealed class XHashtable.ExtractKeyDelegate<TValue> : MulticastDelegate // TypeDefIndex: 5824
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -29,7 +29,7 @@ public sealed class XHashtable.ExtractKeyDelegate<TValue> : MulticastDelegate //
 
 }
 
-private sealed class XHashtable.XHashtableState<TValue> // TypeDefIndex: 5824
+private sealed class XHashtable.XHashtableState<TValue> // TypeDefIndex: 5825
 {
 	private int[] buckets; 
 	private XHashtable.XHashtableState.Entry<TValue>[] entries; 
@@ -75,7 +75,7 @@ private sealed class XHashtable.XHashtableState<TValue> // TypeDefIndex: 5824
 
 }
 
-private struct XHashtable.XHashtableState.Entry<TValue> // TypeDefIndex: 5825
+private struct XHashtable.XHashtableState.Entry<TValue> // TypeDefIndex: 5826
 {
 	public TValue Value; 
 	public int HashCode; 

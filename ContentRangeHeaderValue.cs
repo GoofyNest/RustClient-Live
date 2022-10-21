@@ -1,4 +1,4 @@
-public class ContentRangeHeaderValue : ICloneable // TypeDefIndex: 5768
+public class ContentRangeHeaderValue : ICloneable // TypeDefIndex: 5769
 {
 	private string unit; 
 	[CompilerGeneratedAttribute] 

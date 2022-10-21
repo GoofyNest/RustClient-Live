@@ -1,4 +1,4 @@
-public class TerrainTreeBatch : MonoBehaviour // TypeDefIndex: 12167
+public class TerrainTreeBatch : MonoBehaviour // TypeDefIndex: 12169
 {
 
 	public void .ctor() { }

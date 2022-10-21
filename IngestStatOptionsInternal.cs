@@ -1,4 +1,4 @@
-internal struct IngestStatOptionsInternal : ISettable<IngestStatOptions>, IDisposable // TypeDefIndex: 8427
+internal struct IngestStatOptionsInternal : ISettable<IngestStatOptions>, IDisposable // TypeDefIndex: 8428
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

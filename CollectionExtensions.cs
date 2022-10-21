@@ -21,7 +21,7 @@ public static class CollectionExtensions
 
 }
 
-internal static class CollectionExtensions // TypeDefIndex: 5764
+internal static class CollectionExtensions // TypeDefIndex: 5765
 {
 
 	[ExtensionAttribute] 

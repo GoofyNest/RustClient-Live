@@ -1,4 +1,4 @@
-internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7750
+internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7751
 {
 	private static int StaticRefresh; 
 	public WorkshopItemButton ButtonPrefab; 
@@ -49,7 +49,7 @@ internal class WorkshopItemList : MonoBehaviour // TypeDefIndex: 7750
 
 }
 
-private sealed class WorkshopItemList.<>c // TypeDefIndex: 7751
+private sealed class WorkshopItemList.<>c // TypeDefIndex: 7752
 {
 	public static readonly WorkshopItemList.<>c <>9; 
 	public static Func<Skinnable, bool> <>9__17_0; 
@@ -72,7 +72,7 @@ private sealed class WorkshopItemList.<>c // TypeDefIndex: 7751
 
 }
 
-private struct WorkshopItemList.<Refresh>d__26 : IAsyncStateMachine // TypeDefIndex: 7752
+private struct WorkshopItemList.<Refresh>d__26 : IAsyncStateMachine // TypeDefIndex: 7753
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

@@ -1,4 +1,4 @@
-public struct QueryProductUserIdMappingsCallbackInfo : ICallbackInfo // TypeDefIndex: 9617
+public struct QueryProductUserIdMappingsCallbackInfo : ICallbackInfo // TypeDefIndex: 9618
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

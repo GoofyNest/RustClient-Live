@@ -1,4 +1,4 @@
-internal class BaseUriAnnotation // TypeDefIndex: 5828
+internal class BaseUriAnnotation // TypeDefIndex: 5829
 {
 	internal string baseUri; 
 

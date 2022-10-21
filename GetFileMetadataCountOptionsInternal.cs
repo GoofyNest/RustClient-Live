@@ -1,4 +1,4 @@
-internal struct GetFileMetadataCountOptionsInternal : ISettable<GetFileMetadataCountOptions>, IDisposable // TypeDefIndex: 8386
+internal struct GetFileMetadataCountOptionsInternal : ISettable<GetFileMetadataCountOptions>, IDisposable // TypeDefIndex: 8387
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -16,7 +16,7 @@ internal struct GetFileMetadataCountOptionsInternal : ISettable<GetFileMetadataC
 
 }
 
-internal struct GetFileMetadataCountOptionsInternal : ISettable<GetFileMetadataCountOptions>, IDisposable // TypeDefIndex: 8879
+internal struct GetFileMetadataCountOptionsInternal : ISettable<GetFileMetadataCountOptions>, IDisposable // TypeDefIndex: 8880
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

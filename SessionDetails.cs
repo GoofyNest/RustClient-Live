@@ -1,4 +1,4 @@
-public sealed class SessionDetails : Handle // TypeDefIndex: 8537
+public sealed class SessionDetails : Handle // TypeDefIndex: 8538
 {
 	public const int SessiondetailsAttributeApiLatest = 1;
 	public const int SessiondetailsCopyinfoApiLatest = 1;

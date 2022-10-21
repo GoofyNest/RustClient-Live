@@ -1,4 +1,4 @@
-public sealed class StatsInterface : Handle // TypeDefIndex: 8438
+public sealed class StatsInterface : Handle // TypeDefIndex: 8439
 {
 	public const int CopystatbyindexApiLatest = 1;
 	public const int CopystatbynameApiLatest = 1;

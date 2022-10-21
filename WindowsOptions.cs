@@ -1,4 +1,4 @@
-public struct WindowsOptions // TypeDefIndex: 9872
+public struct WindowsOptions // TypeDefIndex: 9873
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <Reserved>k__BackingField; 

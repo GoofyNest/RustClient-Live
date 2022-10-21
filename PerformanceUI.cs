@@ -1,4 +1,4 @@
-public class PerformanceUI : MonoBehaviour // TypeDefIndex: 6214
+public class PerformanceUI : MonoBehaviour // TypeDefIndex: 6215
 {
 	public LayoutElement[] rainbow; 
 	public Text info; 

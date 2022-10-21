@@ -1,4 +1,4 @@
-public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7554
+public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7555
 {
 	private SmpteData _smpteData; 
 
@@ -48,7 +48,7 @@ public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7554
 
 }
 
-private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 7555
+private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 7556
 {
 	public SmpteOffsetEvent <>4__this; 
 	public ReadingSettings settings; 

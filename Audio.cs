@@ -558,7 +558,7 @@ public sealed class AudioSampleProvider.SampleFramesHandler : MulticastDelegate 
 
 }
 
-public class AudioEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6420
+public class AudioEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6421
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -622,7 +622,7 @@ public class AudioEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public struct AudioBeforeRenderCallbackInfo : ICallbackInfo // TypeDefIndex: 8642
+public struct AudioBeforeRenderCallbackInfo : ICallbackInfo // TypeDefIndex: 8643
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 
@@ -678,7 +678,7 @@ public struct AudioBeforeRenderCallbackInfo : ICallbackInfo // TypeDefIndex: 864
 
 }
 
-internal struct AudioBeforeRenderCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioBeforeRenderCallbackInfo>, ISettable<AudioBeforeRenderCallbackInfo>, IDisposable // TypeDefIndex: 8643
+internal struct AudioBeforeRenderCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioBeforeRenderCallbackInfo>, ISettable<AudioBeforeRenderCallbackInfo>, IDisposable // TypeDefIndex: 8644
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 
@@ -726,7 +726,7 @@ internal struct AudioBeforeRenderCallbackInfoInternal : ICallbackInfoInternal, I
 
 }
 
-public struct AudioBeforeSendCallbackInfo : ICallbackInfo // TypeDefIndex: 8644
+public struct AudioBeforeSendCallbackInfo : ICallbackInfo // TypeDefIndex: 8645
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 
@@ -773,7 +773,7 @@ public struct AudioBeforeSendCallbackInfo : ICallbackInfo // TypeDefIndex: 8644
 
 }
 
-internal struct AudioBeforeSendCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioBeforeSendCallbackInfo>, ISettable<AudioBeforeSendCallbackInfo>, IDisposable // TypeDefIndex: 8645
+internal struct AudioBeforeSendCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioBeforeSendCallbackInfo>, ISettable<AudioBeforeSendCallbackInfo>, IDisposable // TypeDefIndex: 8646
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 
@@ -815,7 +815,7 @@ internal struct AudioBeforeSendCallbackInfoInternal : ICallbackInfoInternal, IGe
 
 }
 
-public struct AudioBuffer // TypeDefIndex: 8646
+public struct AudioBuffer // TypeDefIndex: 8647
 {
 	[CompilerGeneratedAttribute] 
 	private short[] <Frames>k__BackingField; 
@@ -851,7 +851,7 @@ public struct AudioBuffer // TypeDefIndex: 8646
 
 }
 
-internal struct AudioBufferInternal : IGettable<AudioBuffer>, ISettable<AudioBuffer>, IDisposable // TypeDefIndex: 8647
+internal struct AudioBufferInternal : IGettable<AudioBuffer>, ISettable<AudioBuffer>, IDisposable // TypeDefIndex: 8648
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Frames; 
@@ -886,7 +886,7 @@ internal struct AudioBufferInternal : IGettable<AudioBuffer>, ISettable<AudioBuf
 
 }
 
-public struct AudioDevicesChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 8648
+public struct AudioDevicesChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 8649
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 
@@ -906,7 +906,7 @@ public struct AudioDevicesChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 8
 
 }
 
-internal struct AudioDevicesChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioDevicesChangedCallbackInfo>, ISettable<AudioDevicesChangedCallbackInfo>, IDisposable // TypeDefIndex: 8649
+internal struct AudioDevicesChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioDevicesChangedCallbackInfo>, ISettable<AudioDevicesChangedCallbackInfo>, IDisposable // TypeDefIndex: 8650
 {
 	private IntPtr m_ClientData; 
 
@@ -930,7 +930,7 @@ internal struct AudioDevicesChangedCallbackInfoInternal : ICallbackInfoInternal,
 
 }
 
-public struct AudioInputDeviceInfo // TypeDefIndex: 8650
+public struct AudioInputDeviceInfo // TypeDefIndex: 8651
 {
 	[CompilerGeneratedAttribute] 
 	private bool <DefaultDevice>k__BackingField; 
@@ -966,7 +966,7 @@ public struct AudioInputDeviceInfo // TypeDefIndex: 8650
 
 }
 
-internal struct AudioInputDeviceInfoInternal : IGettable<AudioInputDeviceInfo>, ISettable<AudioInputDeviceInfo>, IDisposable // TypeDefIndex: 8651
+internal struct AudioInputDeviceInfoInternal : IGettable<AudioInputDeviceInfo>, ISettable<AudioInputDeviceInfo>, IDisposable // TypeDefIndex: 8652
 {
 	private int m_ApiVersion; 
 	private int m_DefaultDevice; 
@@ -1000,7 +1000,7 @@ internal struct AudioInputDeviceInfoInternal : IGettable<AudioInputDeviceInfo>, 
 
 }
 
-public struct AudioInputStateCallbackInfo : ICallbackInfo // TypeDefIndex: 8652
+public struct AudioInputStateCallbackInfo : ICallbackInfo // TypeDefIndex: 8653
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 
@@ -1047,7 +1047,7 @@ public struct AudioInputStateCallbackInfo : ICallbackInfo // TypeDefIndex: 8652
 
 }
 
-internal struct AudioInputStateCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioInputStateCallbackInfo>, ISettable<AudioInputStateCallbackInfo>, IDisposable // TypeDefIndex: 8653
+internal struct AudioInputStateCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioInputStateCallbackInfo>, ISettable<AudioInputStateCallbackInfo>, IDisposable // TypeDefIndex: 8654
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 
@@ -1089,7 +1089,7 @@ internal struct AudioInputStateCallbackInfoInternal : ICallbackInfoInternal, IGe
 
 }
 
-public struct AudioOutputDeviceInfo // TypeDefIndex: 8654
+public struct AudioOutputDeviceInfo // TypeDefIndex: 8655
 {
 	[CompilerGeneratedAttribute] 
 	private bool <DefaultDevice>k__BackingField; 
@@ -1125,7 +1125,7 @@ public struct AudioOutputDeviceInfo // TypeDefIndex: 8654
 
 }
 
-internal struct AudioOutputDeviceInfoInternal : IGettable<AudioOutputDeviceInfo>, ISettable<AudioOutputDeviceInfo>, IDisposable // TypeDefIndex: 8655
+internal struct AudioOutputDeviceInfoInternal : IGettable<AudioOutputDeviceInfo>, ISettable<AudioOutputDeviceInfo>, IDisposable // TypeDefIndex: 8656
 {
 	private int m_ApiVersion; 
 	private int m_DefaultDevice; 
@@ -1159,7 +1159,7 @@ internal struct AudioOutputDeviceInfoInternal : IGettable<AudioOutputDeviceInfo>
 
 }
 
-public struct AudioOutputStateCallbackInfo : ICallbackInfo // TypeDefIndex: 8656
+public struct AudioOutputStateCallbackInfo : ICallbackInfo // TypeDefIndex: 8657
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 
@@ -1206,7 +1206,7 @@ public struct AudioOutputStateCallbackInfo : ICallbackInfo // TypeDefIndex: 8656
 
 }
 
-internal struct AudioOutputStateCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioOutputStateCallbackInfo>, ISettable<AudioOutputStateCallbackInfo>, IDisposable // TypeDefIndex: 8657
+internal struct AudioOutputStateCallbackInfoInternal : ICallbackInfoInternal, IGettable<AudioOutputStateCallbackInfo>, ISettable<AudioOutputStateCallbackInfo>, IDisposable // TypeDefIndex: 8658
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 
@@ -1248,7 +1248,7 @@ internal struct AudioOutputStateCallbackInfoInternal : ICallbackInfoInternal, IG
 
 }
 
-public class AudioVisualisationEntity : IOEntity // TypeDefIndex: 10011
+public class AudioVisualisationEntity : IOEntity // TypeDefIndex: 10012
 {
 	private Option __menuOption_ChangeLightSettings; 
 	private EntityRef<BaseEntity> connectedTo; 
@@ -1353,7 +1353,7 @@ public class AudioVisualisationEntity : IOEntity // TypeDefIndex: 10011
 
 }
 
-public enum AudioVisualisationEntity.LightColour // TypeDefIndex: 10012
+public enum AudioVisualisationEntity.LightColour // TypeDefIndex: 10013
 {
 	public int value__; 
 	public const AudioVisualisationEntity.LightColour Red = 0;
@@ -1364,7 +1364,7 @@ public enum AudioVisualisationEntity.LightColour // TypeDefIndex: 10012
 
 }
 
-public enum AudioVisualisationEntity.VolumeSensitivity // TypeDefIndex: 10013
+public enum AudioVisualisationEntity.VolumeSensitivity // TypeDefIndex: 10014
 {
 	public int value__; 
 	public const AudioVisualisationEntity.VolumeSensitivity Small = 0;
@@ -1373,7 +1373,7 @@ public enum AudioVisualisationEntity.VolumeSensitivity // TypeDefIndex: 10013
 
 }
 
-public enum AudioVisualisationEntity.Speed // TypeDefIndex: 10014
+public enum AudioVisualisationEntity.Speed // TypeDefIndex: 10015
 {
 	public int value__; 
 	public const AudioVisualisationEntity.Speed Low = 0;
@@ -1382,14 +1382,14 @@ public enum AudioVisualisationEntity.Speed // TypeDefIndex: 10014
 
 }
 
-public class AudioAlarm : IOEntity // TypeDefIndex: 10409
+public class AudioAlarm : IOEntity // TypeDefIndex: 10410
 {
 
 	public void .ctor() { }
 
 }
 
-public class AudioSettings : MonoBehaviour // TypeDefIndex: 10837
+public class AudioSettings : MonoBehaviour // TypeDefIndex: 10838
 {
 	public AudioMixer mixer; 
 
@@ -1402,7 +1402,7 @@ public class AudioSettings : MonoBehaviour // TypeDefIndex: 10837
 
 }
 
-public class AudioVisualisationEntityLight : AudioVisualisationEntity // TypeDefIndex: 11153
+public class AudioVisualisationEntityLight : AudioVisualisationEntity // TypeDefIndex: 11155
 {
 	public Light TargetLight; 
 	public Light SecondaryLight; 
@@ -1453,7 +1453,7 @@ public class AudioVisualisationEntityLight : AudioVisualisationEntity // TypeDef
 
 }
 
-public struct AudioVisualisationEntityLight.LightColourSet // TypeDefIndex: 11154
+public struct AudioVisualisationEntityLight.LightColourSet // TypeDefIndex: 11156
 {
 	[ColorUsageAttribute] 
 	public Color LightColor; 
@@ -1464,7 +1464,7 @@ public struct AudioVisualisationEntityLight.LightColourSet // TypeDefIndex: 1115
 
 }
 
-public class AudioInterceptComponent : MonoBehaviour // TypeDefIndex: 11174
+public class AudioInterceptComponent : MonoBehaviour // TypeDefIndex: 11176
 {
 	public OggEncoder Encoder; 
 	private float[] strippedData; 
@@ -1480,7 +1480,7 @@ public class AudioInterceptComponent : MonoBehaviour // TypeDefIndex: 11174
 
 }
 
-public class Audio : ConsoleSystem // TypeDefIndex: 13631
+public class Audio : ConsoleSystem // TypeDefIndex: 13633
 {
 	[ClientVar] 
 	public static float master; 

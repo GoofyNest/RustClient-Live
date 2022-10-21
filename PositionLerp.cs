@@ -1,4 +1,4 @@
-public class PositionLerp : IDisposable // TypeDefIndex: 10938
+public class PositionLerp : IDisposable // TypeDefIndex: 10939
 {
 	private static ListHashSet<PositionLerp> InstanceList; 
 	public static bool DebugLog; 

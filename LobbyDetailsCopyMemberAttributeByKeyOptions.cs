@@ -1,4 +1,4 @@
-public struct LobbyDetailsCopyMemberAttributeByKeyOptions // TypeDefIndex: 9129
+public struct LobbyDetailsCopyMemberAttributeByKeyOptions // TypeDefIndex: 9130
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <TargetUserId>k__BackingField; 

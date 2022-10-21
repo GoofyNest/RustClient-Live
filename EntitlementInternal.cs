@@ -1,4 +1,4 @@
-internal struct EntitlementInternal : IGettable<Entitlement>, ISettable<Entitlement>, IDisposable // TypeDefIndex: 9448
+internal struct EntitlementInternal : IGettable<Entitlement>, ISettable<Entitlement>, IDisposable // TypeDefIndex: 9449
 {
 	private int m_ApiVersion; 
 	private IntPtr m_EntitlementName; 

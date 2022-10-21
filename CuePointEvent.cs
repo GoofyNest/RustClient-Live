@@ -1,4 +1,4 @@
-public sealed class CuePointEvent : BaseTextEvent // TypeDefIndex: 7541
+public sealed class CuePointEvent : BaseTextEvent // TypeDefIndex: 7542
 {
 
 	public void .ctor() { }

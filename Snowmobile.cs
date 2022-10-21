@@ -1,4 +1,4 @@
-public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6427
+public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6428
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -65,7 +65,7 @@ public class Snowmobile : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 642
 
 }
 
-public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<Snowmobile>, IPrefabPreProcess // TypeDefIndex: 10157
+public class Snowmobile : GroundVehicle, VehicleChassisVisuals.IClientWheelUser<Snowmobile>, IPrefabPreProcess // TypeDefIndex: 10158
 {
 	private Option __menuOption_Menu_FuelStorage; 
 	private Option __menuOption_Menu_ItemStorage; 

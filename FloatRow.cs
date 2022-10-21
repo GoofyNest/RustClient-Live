@@ -1,4 +1,4 @@
-public class FloatRow : MaterialRow // TypeDefIndex: 7764
+public class FloatRow : MaterialRow // TypeDefIndex: 7765
 {
 	public Button Reset; 
 	public Slider Slider; 

@@ -1,4 +1,4 @@
-public struct SetRoomSettingOptions // TypeDefIndex: 8784
+public struct SetRoomSettingOptions // TypeDefIndex: 8785
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

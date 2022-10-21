@@ -1,4 +1,4 @@
-public class TrainWagonLootData : ScriptableObject // TypeDefIndex: 11495
+public class TrainWagonLootData : ScriptableObject // TypeDefIndex: 11497
 {
 	[SerializeField] 
 	private TrainWagonLootData.LootOption[] oreOptions; 
@@ -25,7 +25,7 @@ public class TrainWagonLootData : ScriptableObject // TypeDefIndex: 11495
 
 }
 
-public class TrainWagonLootData.LootOption // TypeDefIndex: 11496
+public class TrainWagonLootData.LootOption // TypeDefIndex: 11498
 {
 	public bool showsFX; 
 	public ItemDefinition lootItem; 

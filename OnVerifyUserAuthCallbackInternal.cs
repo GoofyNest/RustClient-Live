@@ -1,4 +1,4 @@
-internal sealed class OnVerifyUserAuthCallbackInternal : MulticastDelegate // TypeDefIndex: 9685
+internal sealed class OnVerifyUserAuthCallbackInternal : MulticastDelegate // TypeDefIndex: 9686
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClientComponent // TypeDefIndex: 11477
+public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClientComponent // TypeDefIndex: 11479
 {
 	[SerializeField] 
 	private Animator animator; 
@@ -68,7 +68,7 @@ public class SnowmobileChassisVisuals : VehicleChassisVisuals<Snowmobile>, IClie
 
 }
 
-private class SnowmobileChassisVisuals.TreadRenderer // TypeDefIndex: 11478
+private class SnowmobileChassisVisuals.TreadRenderer // TypeDefIndex: 11480
 {
 	public Renderer renderer; 
 	public int materialIndex; 

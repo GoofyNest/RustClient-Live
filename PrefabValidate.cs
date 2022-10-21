@@ -1,4 +1,4 @@
-public class PrefabValidate : MonoBehaviour // TypeDefIndex: 11040
+public class PrefabValidate : MonoBehaviour // TypeDefIndex: 11042
 {
 
 	public void .ctor() { }

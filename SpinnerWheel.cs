@@ -1,4 +1,4 @@
-public class SpinnerWheel : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6341
+public class SpinnerWheel : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6342
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class SpinnerWheel : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6
 
 }
 
-public class SpinnerWheel : Signage // TypeDefIndex: 10158
+public class SpinnerWheel : Signage // TypeDefIndex: 10159
 {
 	private Option __menuOption_Menu_LockSpin; 
 	private Option __menuOption_Menu_Spin; 

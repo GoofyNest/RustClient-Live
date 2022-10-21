@@ -1,4 +1,4 @@
-public class WaterSystem : MonoBehaviour // TypeDefIndex: 12355
+public class WaterSystem : MonoBehaviour // TypeDefIndex: 12357
 {
 	public WaterQuality Quality; 
 	public bool ShowDebug; 
@@ -265,7 +265,7 @@ public class WaterSystem : MonoBehaviour // TypeDefIndex: 12355
 
 }
 
-public class WaterSystem.SimulationSettings // TypeDefIndex: 12356
+public class WaterSystem.SimulationSettings // TypeDefIndex: 12358
 {
 	public Vector3 Wind; 
 	public int SolverResolution; 
@@ -293,7 +293,7 @@ public class WaterSystem.SimulationSettings // TypeDefIndex: 12356
 
 }
 
-public class WaterSystem.RenderingSettings // TypeDefIndex: 12357
+public class WaterSystem.RenderingSettings // TypeDefIndex: 12359
 {
 	public float MaxDisplacementDistance; 
 	public WaterSystem.RenderingSettings.SkyProbe SkyReflections; 
@@ -305,7 +305,7 @@ public class WaterSystem.RenderingSettings // TypeDefIndex: 12357
 
 }
 
-public class WaterSystem.RenderingSettings.SkyProbe // TypeDefIndex: 12358
+public class WaterSystem.RenderingSettings.SkyProbe // TypeDefIndex: 12360
 {
 	public float ProbeUpdateInterval; 
 	public bool TimeSlicing; 
@@ -315,7 +315,7 @@ public class WaterSystem.RenderingSettings.SkyProbe // TypeDefIndex: 12358
 
 }
 
-public class WaterSystem.RenderingSettings.SSR // TypeDefIndex: 12359
+public class WaterSystem.RenderingSettings.SSR // TypeDefIndex: 12361
 {
 	public float FresnelCutoff; 
 	public float ThicknessMin; 
@@ -328,7 +328,7 @@ public class WaterSystem.RenderingSettings.SSR // TypeDefIndex: 12359
 
 }
 
-public class WaterSystem.RenderingSettings.Caustics // TypeDefIndex: 12360
+public class WaterSystem.RenderingSettings.Caustics // TypeDefIndex: 12362
 {
 	public float FrameRate; 
 	public Texture2D[] FramesShallow; 
@@ -339,7 +339,7 @@ public class WaterSystem.RenderingSettings.Caustics // TypeDefIndex: 12360
 
 }
 
-private enum WaterSystem.NativePathState // TypeDefIndex: 12361
+private enum WaterSystem.NativePathState // TypeDefIndex: 12363
 {
 	public int value__; 
 	public const WaterSystem.NativePathState Initializing = 0;

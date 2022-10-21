@@ -1,4 +1,4 @@
-public class DevBotSpawner : FacepunchBehaviour // TypeDefIndex: 11012
+public class DevBotSpawner : FacepunchBehaviour // TypeDefIndex: 11014
 {
 	public GameObjectRef bot; 
 	public Transform waypointParent; 

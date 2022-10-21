@@ -1,4 +1,4 @@
-public class ERSOMarkerExt : ScriptableObject // TypeDefIndex: 7244
+public class ERSOMarkerExt : ScriptableObject // TypeDefIndex: 7245
 {
 	public SideObject sideObject; 
 	public double id; 

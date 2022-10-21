@@ -1,4 +1,4 @@
-public class ProtocolBufferException : Exception // TypeDefIndex: 6285
+public class ProtocolBufferException : Exception // TypeDefIndex: 6286
 {
 
 	public void .ctor(string message) { }

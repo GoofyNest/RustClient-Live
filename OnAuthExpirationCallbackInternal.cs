@@ -1,4 +1,4 @@
-internal sealed class OnAuthExpirationCallbackInternal : MulticastDelegate // TypeDefIndex: 9590
+internal sealed class OnAuthExpirationCallbackInternal : MulticastDelegate // TypeDefIndex: 9591
 {
 
 	public void .ctor(object object, IntPtr method) { }

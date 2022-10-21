@@ -1,4 +1,4 @@
-public struct CopyOfferItemByIndexOptions // TypeDefIndex: 9439
+public struct CopyOfferItemByIndexOptions // TypeDefIndex: 9440
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 

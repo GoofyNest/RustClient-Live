@@ -1,4 +1,4 @@
-public class ScaleTrailRenderer : ScaleRenderer // TypeDefIndex: 11081
+public class ScaleTrailRenderer : ScaleRenderer // TypeDefIndex: 11083
 {
 	private TrailRenderer trailRenderer; 
 	private float startWidth; 

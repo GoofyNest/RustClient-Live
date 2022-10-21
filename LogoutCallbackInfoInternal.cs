@@ -1,4 +1,4 @@
-internal struct LogoutCallbackInfoInternal : ICallbackInfoInternal, IGettable<LogoutCallbackInfo>, ISettable<LogoutCallbackInfo>, IDisposable // TypeDefIndex: 9667
+internal struct LogoutCallbackInfoInternal : ICallbackInfoInternal, IGettable<LogoutCallbackInfo>, ISettable<LogoutCallbackInfo>, IDisposable // TypeDefIndex: 9668
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

@@ -145,14 +145,14 @@ public class Graphics // TypeDefIndex: 3389
 
 }
 
-public static class Graphics // TypeDefIndex: 8227
+public static class Graphics // TypeDefIndex: 8228
 {
 
 	public static extern IntPtr GetRenderEventFunc() { }
 
 }
 
-public static class Graphics.BufferReadback // TypeDefIndex: 8228
+public static class Graphics.BufferReadback // TypeDefIndex: 8229
 {
 
 	public static extern IntPtr CreateForTexture(IntPtr tex, uint width, uint height, uint format) { }
@@ -175,7 +175,7 @@ public static class Graphics.BufferReadback // TypeDefIndex: 8228
 
 }
 
-public class Graphics : ConsoleSystem // TypeDefIndex: 13676
+public class Graphics : ConsoleSystem // TypeDefIndex: 13678
 {
 	private const float MinShadowDistance = 100;
 	private const float MaxShadowDistance2Split = 600;
@@ -427,7 +427,7 @@ public class Graphics : ConsoleSystem // TypeDefIndex: 13676
 
 }
 
-private sealed class Graphics.<>c // TypeDefIndex: 13677
+private sealed class Graphics.<>c // TypeDefIndex: 13679
 {
 	public static readonly Graphics.<>c <>9; 
 	public static Func<Resolution, Vector2Int> <>9__60_0; 

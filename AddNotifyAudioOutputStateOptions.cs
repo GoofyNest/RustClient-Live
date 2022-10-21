@@ -1,4 +1,4 @@
-public struct AddNotifyAudioOutputStateOptions // TypeDefIndex: 8638
+public struct AddNotifyAudioOutputStateOptions // TypeDefIndex: 8639
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

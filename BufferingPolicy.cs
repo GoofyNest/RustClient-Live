@@ -1,4 +1,4 @@
-public enum BufferingPolicy // TypeDefIndex: 7596
+public enum BufferingPolicy // TypeDefIndex: 7597
 {
 	public int value__; 
 	public const BufferingPolicy UseFixedSizeBuffer = 0;

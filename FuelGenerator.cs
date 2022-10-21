@@ -1,4 +1,4 @@
-public class FuelGenerator : ContainerIOEntity // TypeDefIndex: 10100
+public class FuelGenerator : ContainerIOEntity // TypeDefIndex: 10101
 {
 	private Option __menuOption_Menu_TurnOff; 
 	private Option __menuOption_Menu_TurnOn; 

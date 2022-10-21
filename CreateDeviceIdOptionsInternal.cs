@@ -1,4 +1,4 @@
-internal struct CreateDeviceIdOptionsInternal : ISettable<CreateDeviceIdOptions>, IDisposable // TypeDefIndex: 9558
+internal struct CreateDeviceIdOptionsInternal : ISettable<CreateDeviceIdOptions>, IDisposable // TypeDefIndex: 9559
 {
 	private int m_ApiVersion; 
 	private IntPtr m_DeviceModel; 

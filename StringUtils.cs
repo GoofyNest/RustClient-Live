@@ -1,4 +1,4 @@
-internal static class StringUtils // TypeDefIndex: 5973
+internal static class StringUtils // TypeDefIndex: 5974
 {
 
 	[ExtensionAttribute] 
@@ -44,7 +44,7 @@ internal static class StringUtils // TypeDefIndex: 5973
 
 }
 
-private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex: 5974
+private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex: 5975
 {
 	public Func<TSource, string> valueSelector; 
 	public string testValue; 

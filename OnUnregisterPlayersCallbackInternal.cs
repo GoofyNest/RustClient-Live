@@ -1,4 +1,4 @@
-internal sealed class OnUnregisterPlayersCallbackInternal : MulticastDelegate // TypeDefIndex: 8515
+internal sealed class OnUnregisterPlayersCallbackInternal : MulticastDelegate // TypeDefIndex: 8516
 {
 
 	public void .ctor(object object, IntPtr method) { }

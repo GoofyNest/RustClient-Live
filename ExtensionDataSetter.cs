@@ -1,4 +1,4 @@
-public sealed class ExtensionDataSetter : MulticastDelegate // TypeDefIndex: 6013
+public sealed class ExtensionDataSetter : MulticastDelegate // TypeDefIndex: 6014
 {
 
 	public void .ctor(object object, IntPtr method) { }

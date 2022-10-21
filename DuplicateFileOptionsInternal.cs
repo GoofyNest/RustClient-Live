@@ -1,4 +1,4 @@
-internal struct DuplicateFileOptionsInternal : ISettable<DuplicateFileOptions>, IDisposable // TypeDefIndex: 8873
+internal struct DuplicateFileOptionsInternal : ISettable<DuplicateFileOptions>, IDisposable // TypeDefIndex: 8874
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-public struct SessionSearchSetSessionIdOptions // TypeDefIndex: 8590
+public struct SessionSearchSetSessionIdOptions // TypeDefIndex: 8591
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <SessionId>k__BackingField; 

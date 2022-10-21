@@ -92,7 +92,7 @@ private struct Base.<RunQueryAsync>d__15 : IAsyncStateMachine // TypeDefIndex: 5
 
 }
 
-public class Base // TypeDefIndex: 6258
+public class Base // TypeDefIndex: 6259
 {
 	public string Parent; 
 	public Auth Auth; 

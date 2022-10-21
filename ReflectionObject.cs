@@ -1,4 +1,4 @@
-internal class ReflectionObject // TypeDefIndex: 5936
+internal class ReflectionObject // TypeDefIndex: 5937
 {
 	[CompilerGeneratedAttribute] 
 	private ObjectConstructor<object> <Creator>k__BackingField; 
@@ -33,7 +33,7 @@ internal class ReflectionObject // TypeDefIndex: 5936
 
 }
 
-private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 5937
+private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 5938
 {
 	public Func<object> ctor; 
 
@@ -44,7 +44,7 @@ private sealed class ReflectionObject.<>c__DisplayClass13_0 // TypeDefIndex: 593
 
 }
 
-private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 5938
+private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 5939
 {
 	public MethodCall<object, object> call; 
 
@@ -55,7 +55,7 @@ private sealed class ReflectionObject.<>c__DisplayClass13_1 // TypeDefIndex: 593
 
 }
 
-private sealed class ReflectionObject.<>c__DisplayClass13_2 // TypeDefIndex: 5939
+private sealed class ReflectionObject.<>c__DisplayClass13_2 // TypeDefIndex: 5940
 {
 	public MethodCall<object, object> call; 
 

@@ -1,4 +1,4 @@
-internal class DeflaterOutputStream : Stream // TypeDefIndex: 5668
+internal class DeflaterOutputStream : Stream // TypeDefIndex: 5669
 {
 	protected byte[] buf; 
 	protected Deflater def; 

@@ -1,4 +1,4 @@
-public enum ERDecalPosition // TypeDefIndex: 7215
+public enum ERDecalPosition // TypeDefIndex: 7216
 {
 	public int value__; 
 	public const ERDecalPosition Start = 0;

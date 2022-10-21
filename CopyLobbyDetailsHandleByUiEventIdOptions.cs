@@ -1,4 +1,4 @@
-public struct CopyLobbyDetailsHandleByUiEventIdOptions // TypeDefIndex: 9075
+public struct CopyLobbyDetailsHandleByUiEventIdOptions // TypeDefIndex: 9076
 {
 	[CompilerGeneratedAttribute] 
 	private ulong <UiEventId>k__BackingField; 

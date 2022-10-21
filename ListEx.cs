@@ -1,4 +1,4 @@
-public static class ListEx // TypeDefIndex: 6574
+public static class ListEx // TypeDefIndex: 6575
 {
 
 	[ExtensionAttribute] 
@@ -66,7 +66,7 @@ public static class ListEx // TypeDefIndex: 6574
 
 }
 
-private sealed class ListEx.<>c // TypeDefIndex: 6575
+private sealed class ListEx.<>c // TypeDefIndex: 6576
 {
 	public static readonly ListEx.<>c <>9; 
 	public static Func<double, double> <>9__7_0; 

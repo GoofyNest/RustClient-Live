@@ -1,4 +1,4 @@
-public class ResourceExtractor : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6327
+public class ResourceExtractor : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6328
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

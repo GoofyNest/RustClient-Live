@@ -1,4 +1,4 @@
-public class Photo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6387
+public class Photo : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6388
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

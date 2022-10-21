@@ -1,4 +1,4 @@
-public struct CloseConnectionsOptions // TypeDefIndex: 8940
+public struct CloseConnectionsOptions // TypeDefIndex: 8941
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

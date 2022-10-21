@@ -1,4 +1,4 @@
-public sealed class ChannelPrefixEvent : MetaEvent // TypeDefIndex: 7539
+public sealed class ChannelPrefixEvent : MetaEvent // TypeDefIndex: 7540
 {
 	[CompilerGeneratedAttribute] 
 	private byte <Channel>k__BackingField; 

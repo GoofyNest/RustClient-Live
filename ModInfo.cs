@@ -1,4 +1,4 @@
-public struct ModInfo // TypeDefIndex: 9012
+public struct ModInfo // TypeDefIndex: 9013
 {
 	[CompilerGeneratedAttribute] 
 	private ModIdentifier[] <Mods>k__BackingField; 

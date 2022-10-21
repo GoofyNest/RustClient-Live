@@ -1,4 +1,4 @@
-public static class LocalPlayer // TypeDefIndex: 11384
+public static class LocalPlayer // TypeDefIndex: 11386
 {
 	[CompilerGeneratedAttribute] 
 	private static BasePlayer <Entity>k__BackingField; 
@@ -108,7 +108,7 @@ public static class LocalPlayer // TypeDefIndex: 11384
 
 }
 
-public class LocalPlayer.ItemBlueprintComparer : IComparer<ItemBlueprint> // TypeDefIndex: 11385
+public class LocalPlayer.ItemBlueprintComparer : IComparer<ItemBlueprint> // TypeDefIndex: 11387
 {
 
 	public int Compare(ItemBlueprint a, ItemBlueprint b) { }
@@ -117,7 +117,7 @@ public class LocalPlayer.ItemBlueprintComparer : IComparer<ItemBlueprint> // Typ
 
 }
 
-private sealed class LocalPlayer.<>c__DisplayClass40_0 // TypeDefIndex: 11386
+private sealed class LocalPlayer.<>c__DisplayClass40_0 // TypeDefIndex: 11388
 {
 	public int id; 
 

@@ -1,4 +1,4 @@
-public class ExcavatorArm : BaseEntity // TypeDefIndex: 10096
+public class ExcavatorArm : BaseEntity // TypeDefIndex: 10097
 {
 	private Option __menuOption_Menu_TargetHQM; 
 	private Option __menuOption_Menu_TargetMetal; 

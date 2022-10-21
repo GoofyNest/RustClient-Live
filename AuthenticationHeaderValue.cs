@@ -1,4 +1,4 @@
-public class AuthenticationHeaderValue : ICloneable // TypeDefIndex: 5762
+public class AuthenticationHeaderValue : ICloneable // TypeDefIndex: 5763
 {
 	[CompilerGeneratedAttribute] 
 	private string <Parameter>k__BackingField; 

@@ -1,4 +1,4 @@
-public enum InvalidChunkSizePolicy // TypeDefIndex: 7601
+public enum InvalidChunkSizePolicy // TypeDefIndex: 7602
 {
 	public byte value__; 
 	public const InvalidChunkSizePolicy Abort = 0;

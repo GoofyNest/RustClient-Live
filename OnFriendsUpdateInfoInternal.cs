@@ -1,4 +1,4 @@
-internal struct OnFriendsUpdateInfoInternal : ICallbackInfoInternal, IGettable<OnFriendsUpdateInfo>, ISettable<OnFriendsUpdateInfo>, IDisposable // TypeDefIndex: 9388
+internal struct OnFriendsUpdateInfoInternal : ICallbackInfoInternal, IGettable<OnFriendsUpdateInfo>, ISettable<OnFriendsUpdateInfo>, IDisposable // TypeDefIndex: 9389
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

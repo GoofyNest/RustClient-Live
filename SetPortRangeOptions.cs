@@ -1,4 +1,4 @@
-public struct SetPortRangeOptions // TypeDefIndex: 8993
+public struct SetPortRangeOptions // TypeDefIndex: 8994
 {
 	[CompilerGeneratedAttribute] 
 	private ushort <Port>k__BackingField; 

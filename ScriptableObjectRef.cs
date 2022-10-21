@@ -1,4 +1,4 @@
-public class ScriptableObjectRef : ResourceRef<ScriptableObject> // TypeDefIndex: 13181
+public class ScriptableObjectRef : ResourceRef<ScriptableObject> // TypeDefIndex: 13183
 {
 
 	public void .ctor() { }

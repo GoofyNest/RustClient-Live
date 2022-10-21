@@ -1,4 +1,4 @@
-public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 8528
+public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 8529
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 
@@ -27,7 +27,7 @@ public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 8528
 
 }
 
-public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9250
+public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9251
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 
@@ -65,7 +65,7 @@ public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9250
 
 }
 
-public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9399
+public struct RejectInviteCallbackInfo : ICallbackInfo // TypeDefIndex: 9400
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

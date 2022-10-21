@@ -1,4 +1,4 @@
-public class MuzzleFlash_Flamelet : MonoBehaviour // TypeDefIndex: 11071
+public class MuzzleFlash_Flamelet : MonoBehaviour // TypeDefIndex: 11073
 {
 	public ParticleSystem flameletParticle; 
 
@@ -9,7 +9,7 @@ public class MuzzleFlash_Flamelet : MonoBehaviour // TypeDefIndex: 11071
 
 }
 
-public class Muzzleflash_AlphaRandom : MonoBehaviour // TypeDefIndex: 11072
+public class Muzzleflash_AlphaRandom : MonoBehaviour // TypeDefIndex: 11074
 {
 	public ParticleSystem[] muzzleflashParticles; 
 	private Gradient grad; 

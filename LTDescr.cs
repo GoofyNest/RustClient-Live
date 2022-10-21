@@ -1,4 +1,4 @@
-public class LTDescr // TypeDefIndex: 5573
+public class LTDescr // TypeDefIndex: 5574
 {
 	public bool toggle; 
 	public bool useEstimatedTime; 
@@ -772,7 +772,7 @@ public class LTDescr // TypeDefIndex: 5573
 
 }
 
-public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex: 5574
+public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex: 5575
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -785,7 +785,7 @@ public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex
 
 }
 
-public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefIndex: 5575
+public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefIndex: 5576
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -798,7 +798,7 @@ public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefI
 
 }
 
-private sealed class LTDescr.<>c // TypeDefIndex: 5576
+private sealed class LTDescr.<>c // TypeDefIndex: 5577
 {
 	public static readonly LTDescr.<>c <>9; 
 	public static LTDescr.ActionMethodDelegate <>9__110_0; 

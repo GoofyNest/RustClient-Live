@@ -1,4 +1,4 @@
-public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // TypeDefIndex: 10032
+public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // TypeDefIndex: 10033
 {
 	private Option __menuOption_Menu_Push; 
 	protected bool clientInEditMode; 
@@ -133,7 +133,7 @@ public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // T
 
 }
 
-private sealed class BaseModularVehicle.<>c__DisplayClass64_0 // TypeDefIndex: 10033
+private sealed class BaseModularVehicle.<>c__DisplayClass64_0 // TypeDefIndex: 10034
 {
 	public BaseModularVehicle <>4__this; 
 	public BaseVehicleModule module; 

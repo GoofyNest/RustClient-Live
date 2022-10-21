@@ -1,4 +1,4 @@
-internal struct PromoteMemberCallbackInfoInternal : ICallbackInfoInternal, IGettable<PromoteMemberCallbackInfo>, ISettable<PromoteMemberCallbackInfo>, IDisposable // TypeDefIndex: 9241
+internal struct PromoteMemberCallbackInfoInternal : ICallbackInfoInternal, IGettable<PromoteMemberCallbackInfo>, ISettable<PromoteMemberCallbackInfo>, IDisposable // TypeDefIndex: 9242
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

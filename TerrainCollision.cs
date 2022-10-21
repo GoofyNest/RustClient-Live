@@ -1,4 +1,4 @@
-public class TerrainCollision : TerrainExtension // TypeDefIndex: 12113
+public class TerrainCollision : TerrainExtension // TypeDefIndex: 12115
 {
 	private ListDictionary<Collider, List<Collider>> ignoredColliders; 
 	private TerrainCollider terrainCollider; 

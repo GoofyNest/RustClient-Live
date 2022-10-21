@@ -1,4 +1,4 @@
-public static class Extensions // TypeDefIndex: 6051
+public static class Extensions // TypeDefIndex: 6052
 {
 
 	[ExtensionAttribute] 
@@ -37,7 +37,7 @@ public static class Extensions // TypeDefIndex: 6051
 
 }
 
-private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6052
+private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6053
 {
 	public static readonly Extensions.<>c__0<T> <>9; 
 
@@ -56,7 +56,7 @@ private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6052
 
 }
 
-private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6053
+private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6054
 {
 	public static readonly Extensions.<>c__1<T> <>9; 
 
@@ -75,7 +75,7 @@ private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6053
 
 }
 
-private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6054
+private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6055
 {
 	public static readonly Extensions.<>c__2<T> <>9; 
 
@@ -94,7 +94,7 @@ private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6054
 
 }
 
-private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6055
+private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6056
 {
 	public static readonly Extensions.<>c__3<T> <>9; 
 
@@ -113,7 +113,7 @@ private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6055
 
 }
 
-private sealed class Extensions.<>c // TypeDefIndex: 6056
+private sealed class Extensions.<>c // TypeDefIndex: 6057
 {
 	public static readonly Extensions.<>c <>9; 
 
@@ -124,7 +124,7 @@ private sealed class Extensions.<>c // TypeDefIndex: 6056
 
 }
 
-private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6058
+private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6059
 {
 
 [CompilerGeneratedAttribute] 
@@ -147,7 +147,7 @@ private sealed class Extensions.<>c__13<T, U>
 
 }
 
-private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerable, IEnumerator<U>, IDisposable, IEnumerator // TypeDefIndex: 6059
+private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerable, IEnumerator<U>, IDisposable, IEnumerator // TypeDefIndex: 6060
 {
 	private int <>1__state; 
 	private U <>2__current; 
@@ -223,7 +223,7 @@ private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerab
 
 }
 
-public static class Extensions // TypeDefIndex: 8145
+public static class Extensions // TypeDefIndex: 8146
 {
 
 	[ExtensionAttribute] 
@@ -238,7 +238,7 @@ public static class Extensions // TypeDefIndex: 8145
 
 }
 
-public static class Extensions // TypeDefIndex: 8255
+public static class Extensions // TypeDefIndex: 8256
 {
 
 	[ExtensionAttribute] 
@@ -249,7 +249,7 @@ public static class Extensions // TypeDefIndex: 8255
 
 }
 
-public static class Extensions // TypeDefIndex: 13320
+public static class Extensions // TypeDefIndex: 13322
 {
 
 	[ExtensionAttribute] 

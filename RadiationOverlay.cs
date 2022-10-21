@@ -1,4 +1,4 @@
-public class RadiationOverlay : MonoBehaviour // TypeDefIndex: 10849
+public class RadiationOverlay : MonoBehaviour // TypeDefIndex: 10850
 {
 	public SoundDefinition[] geigerSounds; 
 	public PostProcessVolume postProcessVolume; 

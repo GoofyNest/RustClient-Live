@@ -1,4 +1,4 @@
-public class ConditionalModel : PrefabAttribute // TypeDefIndex: 10766
+public class ConditionalModel : PrefabAttribute // TypeDefIndex: 10767
 {
 	public GameObjectRef prefab; 
 	public bool onClient; 

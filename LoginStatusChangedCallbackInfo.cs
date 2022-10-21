@@ -1,4 +1,4 @@
-public struct LoginStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 9587
+public struct LoginStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 9588
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 
@@ -45,7 +45,7 @@ public struct LoginStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 95
 
 }
 
-public struct LoginStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 9664
+public struct LoginStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 9665
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 

@@ -1,4 +1,4 @@
-public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6308
+public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6308
 
 }
 
-public class WorldItem : BaseEntity // TypeDefIndex: 10376
+public class WorldItem : BaseEntity // TypeDefIndex: 10377
 {
 	[HeaderAttribute] 
 	public bool allowPickup; 

@@ -1,4 +1,4 @@
-public struct UserScoresQueryStatInfo // TypeDefIndex: 9310
+public struct UserScoresQueryStatInfo // TypeDefIndex: 9311
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <StatName>k__BackingField; 

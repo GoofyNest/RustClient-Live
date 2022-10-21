@@ -1,4 +1,4 @@
-public class ErrorContext // TypeDefIndex: 6006
+public class ErrorContext // TypeDefIndex: 6007
 {
 	[CompilerGeneratedAttribute] 
 	private bool <Traced>k__BackingField; 

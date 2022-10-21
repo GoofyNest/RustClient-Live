@@ -1,4 +1,4 @@
-public class ZoomImage : MonoBehaviour, IScrollHandler, IEventSystemHandler // TypeDefIndex: 12649
+public class ZoomImage : MonoBehaviour, IScrollHandler, IEventSystemHandler // TypeDefIndex: 12651
 {
 	[SerializeField] 
 	private float _minimumScale; 

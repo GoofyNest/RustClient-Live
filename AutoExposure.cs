@@ -1,4 +1,4 @@
-public sealed class AutoExposure : PostProcessEffectSettings // TypeDefIndex: 13513
+public sealed class AutoExposure : PostProcessEffectSettings // TypeDefIndex: 13515
 {
 	[MinMaxAttribute] 
 	[DisplayNameAttribute] 

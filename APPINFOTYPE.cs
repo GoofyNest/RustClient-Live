@@ -1,4 +1,4 @@
-public struct APPINFOTYPE // TypeDefIndex: 7680
+public struct APPINFOTYPE // TypeDefIndex: 7681
 {
 	public string Title; 
 	public string Description; 

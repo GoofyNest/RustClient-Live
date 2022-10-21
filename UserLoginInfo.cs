@@ -1,4 +1,4 @@
-public struct UserLoginInfo // TypeDefIndex: 9629
+public struct UserLoginInfo // TypeDefIndex: 9630
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <DisplayName>k__BackingField; 

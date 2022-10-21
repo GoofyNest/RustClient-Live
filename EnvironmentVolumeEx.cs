@@ -1,4 +1,4 @@
-public static class EnvironmentVolumeEx // TypeDefIndex: 11584
+public static class EnvironmentVolumeEx // TypeDefIndex: 11586
 {
 
 	[ExtensionAttribute] 
@@ -21,7 +21,7 @@ public static class EnvironmentVolumeEx // TypeDefIndex: 11584
 
 }
 
-private sealed class EnvironmentVolumeEx.<>c__DisplayClass2_0 // TypeDefIndex: 11585
+private sealed class EnvironmentVolumeEx.<>c__DisplayClass2_0 // TypeDefIndex: 11587
 {
 	public float max; 
 	public bool fail; 
@@ -33,7 +33,7 @@ private sealed class EnvironmentVolumeEx.<>c__DisplayClass2_0 // TypeDefIndex: 1
 
 }
 
-private sealed class EnvironmentVolumeEx.<>c__DisplayClass4_0 // TypeDefIndex: 11586
+private sealed class EnvironmentVolumeEx.<>c__DisplayClass4_0 // TypeDefIndex: 11588
 {
 	public float min; 
 	public bool fail; 

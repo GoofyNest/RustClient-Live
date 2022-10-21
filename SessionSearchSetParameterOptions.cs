@@ -1,4 +1,4 @@
-public struct SessionSearchSetParameterOptions // TypeDefIndex: 8588
+public struct SessionSearchSetParameterOptions // TypeDefIndex: 8589
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<AttributeData> <Parameter>k__BackingField; 

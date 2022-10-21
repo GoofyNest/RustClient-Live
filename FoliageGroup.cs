@@ -1,4 +1,4 @@
-public class FoliageGroup : Pool.IPooled // TypeDefIndex: 11593
+public class FoliageGroup : Pool.IPooled // TypeDefIndex: 11595
 {
 	public float LOD; 
 	public bool NeedsRefresh; 
@@ -79,7 +79,7 @@ public class FoliageGroup : Pool.IPooled // TypeDefIndex: 11593
 
 }
 
-private sealed class FoliageGroup.<UpdateDataAsync>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11594
+private sealed class FoliageGroup.<UpdateDataAsync>d__33 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11596
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -109,7 +109,7 @@ private sealed class FoliageGroup.<UpdateDataAsync>d__33 : IEnumerator<object>, 
 
 }
 
-private sealed class FoliageGroup.<RefreshBatchesAsync>d__35 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11595
+private sealed class FoliageGroup.<RefreshBatchesAsync>d__35 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11597
 {
 	private int <>1__state; 
 	private object <>2__current; 

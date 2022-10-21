@@ -1,4 +1,4 @@
-public enum MetadataPropertyHandling // TypeDefIndex: 5883
+public enum MetadataPropertyHandling // TypeDefIndex: 5884
 {
 	public int value__; 
 	public const MetadataPropertyHandling Default = 0;

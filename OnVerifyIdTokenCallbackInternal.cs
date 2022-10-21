@@ -1,4 +1,4 @@
-internal sealed class OnVerifyIdTokenCallbackInternal : MulticastDelegate // TypeDefIndex: 9612
+internal sealed class OnVerifyIdTokenCallbackInternal : MulticastDelegate // TypeDefIndex: 9613
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ internal sealed class OnVerifyIdTokenCallbackInternal : MulticastDelegate // Typ
 
 }
 
-internal sealed class OnVerifyIdTokenCallbackInternal : MulticastDelegate // TypeDefIndex: 9683
+internal sealed class OnVerifyIdTokenCallbackInternal : MulticastDelegate // TypeDefIndex: 9684
 {
 
 	public void .ctor(object object, IntPtr method) { }

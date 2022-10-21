@@ -1,4 +1,4 @@
-public class LookAt : MonoBehaviour, IClientComponent // TypeDefIndex: 10914
+public class LookAt : MonoBehaviour, IClientComponent // TypeDefIndex: 10915
 {
 	public Transform target; 
 

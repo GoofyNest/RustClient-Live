@@ -1,4 +1,4 @@
-public class ODDCQDDCDD : MonoBehaviour // TypeDefIndex: 7259
+public class ODDCQDDCDD : MonoBehaviour // TypeDefIndex: 7260
 {
 
 	public static void ODQQCQOODQ(List<ERRoundaboutElement> connections, List<Vector3> mainLeftPoints, ref List<Vector3> meshVecs, ref List<Vector2> meshUVs, ref List<int> fullTris) { }
@@ -21,7 +21,7 @@ public class ODDCQDDCDD : MonoBehaviour // TypeDefIndex: 7259
 
 }
 
-public class ODDCQDDCDD.OOCOCQCQOQ // TypeDefIndex: 7260
+public class ODDCQDDCDD.OOCOCQCQOQ // TypeDefIndex: 7261
 {
 	public int start; 
 	public int end; 

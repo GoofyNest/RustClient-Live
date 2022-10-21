@@ -1,4 +1,4 @@
-internal struct QueryInvitesOptionsInternal : ISettable<QueryInvitesOptions>, IDisposable // TypeDefIndex: 8523
+internal struct QueryInvitesOptionsInternal : ISettable<QueryInvitesOptions>, IDisposable // TypeDefIndex: 8524
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -16,7 +16,7 @@ internal struct QueryInvitesOptionsInternal : ISettable<QueryInvitesOptions>, ID
 
 }
 
-internal struct QueryInvitesOptionsInternal : ISettable<QueryInvitesOptions>, IDisposable // TypeDefIndex: 9247
+internal struct QueryInvitesOptionsInternal : ISettable<QueryInvitesOptions>, IDisposable // TypeDefIndex: 9248
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

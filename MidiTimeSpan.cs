@@ -1,4 +1,4 @@
-public sealed class MidiTimeSpan : ITimeSpan, IComparable, IComparable<MidiTimeSpan>, IEquatable<MidiTimeSpan> // TypeDefIndex: 7500
+public sealed class MidiTimeSpan : ITimeSpan, IComparable, IComparable<MidiTimeSpan>, IEquatable<MidiTimeSpan> // TypeDefIndex: 7501
 {
 	[CompilerGeneratedAttribute] 
 	private readonly long <TimeSpan>k__BackingField; 

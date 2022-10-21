@@ -1,4 +1,4 @@
-public class ColorRow : MaterialRow // TypeDefIndex: 7763
+public class ColorRow : MaterialRow // TypeDefIndex: 7764
 {
 	public Button Reset; 
 	public Slider Red; 

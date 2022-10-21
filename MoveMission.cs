@@ -1,4 +1,4 @@
-public class MoveMission : BaseMission // TypeDefIndex: 11941
+public class MoveMission : BaseMission // TypeDefIndex: 11943
 {
 	public float minDistForMovePoint; 
 	public float maxDistForMovePoint; 

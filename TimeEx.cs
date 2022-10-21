@@ -1,4 +1,4 @@
-public static class TimeEx // TypeDefIndex: 6860
+public static class TimeEx // TypeDefIndex: 6861
 {
 	private static Stopwatch stopwatch; 
 

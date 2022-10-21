@@ -1,4 +1,4 @@
-public class MotionBlur : ImageEffectBase // TypeDefIndex: 8201
+public class MotionBlur : ImageEffectBase // TypeDefIndex: 8202
 {
 	public float blurAmount; 
 	public bool extraBlur; 
@@ -15,7 +15,7 @@ public class MotionBlur : ImageEffectBase // TypeDefIndex: 8201
 
 }
 
-public sealed class MotionBlur : PostProcessEffectSettings // TypeDefIndex: 13540
+public sealed class MotionBlur : PostProcessEffectSettings // TypeDefIndex: 13542
 {
 	[RangeAttribute] 
 	[TooltipAttribute] 

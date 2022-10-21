@@ -1,4 +1,4 @@
-public class NeonSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6396
+public class NeonSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6397
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class NeonSign : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6396
 
 }
 
-public class NeonSign.Lights : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6397
+public class NeonSign.Lights : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6398
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -125,7 +125,7 @@ public class NeonSign.Lights : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class NeonSign : Signage // TypeDefIndex: 10130
+public class NeonSign : Signage // TypeDefIndex: 10131
 {
 	private Option __menuOption_SwitchToFastSpeed; 
 	private Option __menuOption_SwitchToMediumSpeed; 

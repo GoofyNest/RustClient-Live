@@ -1,4 +1,4 @@
-internal struct KeyImageInfoInternal : IGettable<KeyImageInfo>, ISettable<KeyImageInfo>, IDisposable // TypeDefIndex: 9470
+internal struct KeyImageInfoInternal : IGettable<KeyImageInfo>, ISettable<KeyImageInfo>, IDisposable // TypeDefIndex: 9471
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Type; 

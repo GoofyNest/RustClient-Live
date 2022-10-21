@@ -1,4 +1,4 @@
-public class Reflection : ConsoleSystem // TypeDefIndex: 13706
+public class Reflection : ConsoleSystem // TypeDefIndex: 13708
 {
 	[ClientVar] 
 	public static int resolution { get; set; }

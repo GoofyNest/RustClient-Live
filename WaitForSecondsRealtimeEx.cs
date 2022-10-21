@@ -1,4 +1,4 @@
-public class WaitForSecondsRealtimeEx : CustomYieldInstruction, Pool.IPooled // TypeDefIndex: 6172
+public class WaitForSecondsRealtimeEx : CustomYieldInstruction, Pool.IPooled // TypeDefIndex: 6173
 {
 	private bool _isInPool; 
 	private float _waitUntilTime; 

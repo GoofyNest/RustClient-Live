@@ -1,4 +1,4 @@
-public class ISO2022JPEncoding : MonoEncoding // TypeDefIndex: 7810
+public class ISO2022JPEncoding : MonoEncoding // TypeDefIndex: 7811
 {
 	private readonly bool allow_1byte_kana; 
 	private readonly bool allow_shift_io; 

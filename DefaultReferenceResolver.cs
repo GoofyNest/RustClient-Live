@@ -1,4 +1,4 @@
-internal class DefaultReferenceResolver : IReferenceResolver // TypeDefIndex: 5991
+internal class DefaultReferenceResolver : IReferenceResolver // TypeDefIndex: 5992
 {
 	private int _referenceCount; 
 

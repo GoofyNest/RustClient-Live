@@ -1,4 +1,4 @@
-public class GestureCollection : ScriptableObject // TypeDefIndex: 11809
+public class GestureCollection : ScriptableObject // TypeDefIndex: 11811
 {
 	public GestureConfig[] AllGestures; 
 	public float GestureVmInDuration; 

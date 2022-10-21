@@ -1,4 +1,4 @@
-public class PrefabPreProcess : IPrefabProcessor // TypeDefIndex: 11696
+public class PrefabPreProcess : IPrefabProcessor // TypeDefIndex: 11698
 {
 	public static Type[] clientsideOnlyTypes; 
 	public static Type[] serversideOnlyTypes; 
@@ -79,7 +79,7 @@ public class PrefabPreProcess : IPrefabProcessor // TypeDefIndex: 11696
 
 }
 
-private sealed class PrefabPreProcess.<>c__DisplayClass8_0 // TypeDefIndex: 11697
+private sealed class PrefabPreProcess.<>c__DisplayClass8_0 // TypeDefIndex: 11699
 {
 	public PrefabPreProcess <>4__this; 
 	public GameObject go; 

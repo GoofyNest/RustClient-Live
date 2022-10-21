@@ -1,4 +1,4 @@
-public struct DeleteFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8866
+public struct DeleteFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8867
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

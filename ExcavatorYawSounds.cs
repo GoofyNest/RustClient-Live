@@ -1,4 +1,4 @@
-public class ExcavatorYawSounds : MonoBehaviour, IClientComponent // TypeDefIndex: 11352
+public class ExcavatorYawSounds : MonoBehaviour, IClientComponent // TypeDefIndex: 11354
 {
 	public SoundPlayer[] miningStartClunks; 
 

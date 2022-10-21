@@ -1,4 +1,4 @@
-public enum TextureParameterDefault // TypeDefIndex: 13582
+public enum TextureParameterDefault // TypeDefIndex: 13584
 {
 	public int value__; 
 	public const TextureParameterDefault None = 0;

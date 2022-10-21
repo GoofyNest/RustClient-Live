@@ -1,4 +1,4 @@
-internal sealed class OnQueryPlayerAchievementsCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 9922
+internal sealed class OnQueryPlayerAchievementsCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 9923
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-public class AlignedLineDrawerDecal : AlignedLineDrawer, INotifyLOD // TypeDefIndex: 10594
+public class AlignedLineDrawerDecal : AlignedLineDrawer, INotifyLOD // TypeDefIndex: 10595
 {
 	public DeferredDecal decalComponent; 
 	private static Dictionary<Color, Material> colouredVariants; 

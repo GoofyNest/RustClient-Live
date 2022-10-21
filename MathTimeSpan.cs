@@ -1,4 +1,4 @@
-public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7498
+public sealed class MathTimeSpan : ITimeSpan, IComparable // TypeDefIndex: 7499
 {
 	private static readonly Dictionary<TimeSpanMode, Tuple<string, string>> ModeStrings; 
 	[CompilerGeneratedAttribute] 

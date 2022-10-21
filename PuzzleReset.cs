@@ -1,4 +1,4 @@
-public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6362
+public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6363
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class PuzzleReset : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class PuzzleReset : FacepunchBehaviour // TypeDefIndex: 11530
+public class PuzzleReset : FacepunchBehaviour // TypeDefIndex: 11532
 {
 	public SpawnGroup[] respawnGroups; 
 	public IOEntity[] resetEnts; 

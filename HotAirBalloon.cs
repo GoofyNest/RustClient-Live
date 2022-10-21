@@ -1,4 +1,4 @@
-public class HotAirBalloon : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6348
+public class HotAirBalloon : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6349
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class HotAirBalloon : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 
 
 }
 
-public class HotAirBalloon : BaseCombatEntity // TypeDefIndex: 10104
+public class HotAirBalloon : BaseCombatEntity // TypeDefIndex: 10105
 {
 	private Option __menuOption_Menu_BurnOff; 
 	private Option __menuOption_Menu_BurnOn; 

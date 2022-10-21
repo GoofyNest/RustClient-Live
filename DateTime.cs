@@ -1338,7 +1338,7 @@ internal sealed class DateTimeStorage : DataStorage // TypeDefIndex: 4388
 
 }
 
-public enum DateTimeZoneHandling // TypeDefIndex: 5871
+public enum DateTimeZoneHandling // TypeDefIndex: 5872
 {
 	public int value__; 
 	public const DateTimeZoneHandling Local = 0;
@@ -1348,7 +1348,7 @@ public enum DateTimeZoneHandling // TypeDefIndex: 5871
 
 }
 
-internal struct DateTimeParser // TypeDefIndex: 5920
+internal struct DateTimeParser // TypeDefIndex: 5921
 {
 	public int Year; 
 	public int Month; 
@@ -1398,7 +1398,7 @@ internal struct DateTimeParser // TypeDefIndex: 5920
 
 }
 
-internal static class DateTimeUtils // TypeDefIndex: 5953
+internal static class DateTimeUtils // TypeDefIndex: 5954
 {
 	internal static readonly long InitialJavaScriptDateTicks; 
 	private static readonly int[] DaysToMonth365; 
@@ -1474,7 +1474,7 @@ internal static class DateTimeUtils // TypeDefIndex: 5953
 
 }
 
-public abstract class DateTimeConverterBase : JsonConverter // TypeDefIndex: 6105
+public abstract class DateTimeConverterBase : JsonConverter // TypeDefIndex: 6106
 {
 
 	public override bool CanConvert(Type objectType) { }

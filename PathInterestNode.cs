@@ -1,4 +1,4 @@
-public class PathInterestNode : MonoBehaviour // TypeDefIndex: 10577
+public class PathInterestNode : MonoBehaviour // TypeDefIndex: 10578
 {
 	[CompilerGeneratedAttribute] 
 	private float <NextVisitTime>k__BackingField; 

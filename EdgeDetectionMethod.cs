@@ -1,4 +1,4 @@
-public enum EdgeDetectionMethod // TypeDefIndex: 13311
+public enum EdgeDetectionMethod // TypeDefIndex: 13313
 {
 	public int value__; 
 	public const EdgeDetectionMethod Luma = 1;

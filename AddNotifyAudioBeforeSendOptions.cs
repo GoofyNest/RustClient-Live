@@ -1,4 +1,4 @@
-public struct AddNotifyAudioBeforeSendOptions // TypeDefIndex: 8632
+public struct AddNotifyAudioBeforeSendOptions // TypeDefIndex: 8633
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

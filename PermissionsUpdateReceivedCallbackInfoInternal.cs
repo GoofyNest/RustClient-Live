@@ -1,4 +1,4 @@
-internal struct PermissionsUpdateReceivedCallbackInfoInternal : ICallbackInfoInternal, IGettable<PermissionsUpdateReceivedCallbackInfo>, ISettable<PermissionsUpdateReceivedCallbackInfo>, IDisposable // TypeDefIndex: 9341
+internal struct PermissionsUpdateReceivedCallbackInfoInternal : ICallbackInfoInternal, IGettable<PermissionsUpdateReceivedCallbackInfo>, ISettable<PermissionsUpdateReceivedCallbackInfo>, IDisposable // TypeDefIndex: 9342
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

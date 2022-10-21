@@ -1,4 +1,4 @@
-public class Remove : Base // TypeDefIndex: 6260
+public class Remove : Base // TypeDefIndex: 6261
 {
 	public string Id; 
 

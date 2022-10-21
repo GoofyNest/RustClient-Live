@@ -1,4 +1,4 @@
-public sealed class TitleStorageInterface : Handle // TypeDefIndex: 8415
+public sealed class TitleStorageInterface : Handle // TypeDefIndex: 8416
 {
 	public const int CopyfilemetadataatindexoptionsApiLatest = 1;
 	public const int CopyfilemetadatabyfilenameoptionsApiLatest = 1;

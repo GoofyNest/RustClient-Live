@@ -243,7 +243,7 @@ public class Object // TypeDefIndex: 3537
 
 }
 
-public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8149
+public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // TypeDefIndex: 8150
 {
 	private readonly IDictionary<string, Value> values; 
 
@@ -304,7 +304,7 @@ public class Object : IEnumerable<KeyValuePair<string, Value>>, IEnumerable // T
 
 }
 
-private enum Object.ParsingState // TypeDefIndex: 8150
+private enum Object.ParsingState // TypeDefIndex: 8151
 {
 	public int value__; 
 	public const Object.ParsingState Object = 0;

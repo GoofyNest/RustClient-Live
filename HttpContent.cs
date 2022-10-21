@@ -1,4 +1,4 @@
-public abstract class HttpContent : IDisposable // TypeDefIndex: 5748
+public abstract class HttpContent : IDisposable // TypeDefIndex: 5749
 {
 	private HttpContent.FixedMemoryStream buffer; 
 	private Stream stream; 
@@ -51,7 +51,7 @@ public abstract class HttpContent : IDisposable // TypeDefIndex: 5748
 
 }
 
-private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefIndex: 5749
+private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefIndex: 5750
 {
 	private readonly long maxSize; 
 
@@ -66,7 +66,7 @@ private sealed class HttpContent.FixedMemoryStream : MemoryStream // TypeDefInde
 
 }
 
-private struct HttpContent.<CreateContentReadStreamAsync>d__12 : IAsyncStateMachine // TypeDefIndex: 5750
+private struct HttpContent.<CreateContentReadStreamAsync>d__12 : IAsyncStateMachine // TypeDefIndex: 5751
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Stream> <>t__builder; 
@@ -81,7 +81,7 @@ private struct HttpContent.<CreateContentReadStreamAsync>d__12 : IAsyncStateMach
 
 }
 
-private struct HttpContent.<LoadIntoBufferAsync>d__17 : IAsyncStateMachine // TypeDefIndex: 5751
+private struct HttpContent.<LoadIntoBufferAsync>d__17 : IAsyncStateMachine // TypeDefIndex: 5752
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -97,7 +97,7 @@ private struct HttpContent.<LoadIntoBufferAsync>d__17 : IAsyncStateMachine // Ty
 
 }
 
-private struct HttpContent.<ReadAsStreamAsync>d__18 : IAsyncStateMachine // TypeDefIndex: 5752
+private struct HttpContent.<ReadAsStreamAsync>d__18 : IAsyncStateMachine // TypeDefIndex: 5753
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Stream> <>t__builder; 
@@ -112,7 +112,7 @@ private struct HttpContent.<ReadAsStreamAsync>d__18 : IAsyncStateMachine // Type
 
 }
 
-private struct HttpContent.<ReadAsStringAsync>d__20 : IAsyncStateMachine // TypeDefIndex: 5753
+private struct HttpContent.<ReadAsStringAsync>d__20 : IAsyncStateMachine // TypeDefIndex: 5754
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 

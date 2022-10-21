@@ -1,4 +1,4 @@
-public struct QueryOwnershipCallbackInfo : ICallbackInfo // TypeDefIndex: 9492
+public struct QueryOwnershipCallbackInfo : ICallbackInfo // TypeDefIndex: 9493
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

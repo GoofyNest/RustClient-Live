@@ -1,4 +1,4 @@
-internal struct UnlinkAccountOptionsInternal : ISettable<UnlinkAccountOptions>, IDisposable // TypeDefIndex: 9628
+internal struct UnlinkAccountOptionsInternal : ISettable<UnlinkAccountOptions>, IDisposable // TypeDefIndex: 9629
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

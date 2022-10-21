@@ -1,4 +1,4 @@
-public class BaseFuelLightSource : BaseOven // TypeDefIndex: 11228
+public class BaseFuelLightSource : BaseOven // TypeDefIndex: 11230
 {
 
 	public void .ctor() { }

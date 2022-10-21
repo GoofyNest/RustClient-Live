@@ -1,4 +1,4 @@
-public sealed class OnQueryExternalAccountMappingsCallback : MulticastDelegate // TypeDefIndex: 9603
+public sealed class OnQueryExternalAccountMappingsCallback : MulticastDelegate // TypeDefIndex: 9604
 {
 
 	public void .ctor(object object, IntPtr method) { }

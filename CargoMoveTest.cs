@@ -1,4 +1,4 @@
-public class CargoMoveTest : FacepunchBehaviour // TypeDefIndex: 9990
+public class CargoMoveTest : FacepunchBehaviour // TypeDefIndex: 9991
 {
 	public int targetNodeIndex; 
 	private float currentThrottle; 

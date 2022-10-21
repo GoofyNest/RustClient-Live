@@ -346,7 +346,7 @@ public sealed class Mesh : Object // TypeDefIndex: 3442
 
 }
 
-public static class Mesh // TypeDefIndex: 5610
+public static class Mesh // TypeDefIndex: 5611
 {
 
 	[ExtensionAttribute] 
@@ -354,7 +354,7 @@ public static class Mesh // TypeDefIndex: 5610
 
 }
 
-public struct Mesh_Extents // TypeDefIndex: 6797
+public struct Mesh_Extents // TypeDefIndex: 6798
 {
 	public Vector2 min; 
 	public Vector2 max; 
@@ -366,7 +366,7 @@ public struct Mesh_Extents // TypeDefIndex: 6797
 
 }
 
-public class Mesh : ConsoleSystem // TypeDefIndex: 13693
+public class Mesh : ConsoleSystem // TypeDefIndex: 13695
 {
 	private static float m_quality; 
 

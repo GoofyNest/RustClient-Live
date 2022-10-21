@@ -1,4 +1,4 @@
-public class Indexer // TypeDefIndex: 6646
+public class Indexer // TypeDefIndex: 6647
 {
 	private List<Indexer.Keyframe> keyframes; 
 	private long LastPacketTime; 
@@ -39,7 +39,7 @@ public class Indexer // TypeDefIndex: 6646
 
 }
 
-public class Indexer.Entity // TypeDefIndex: 6647
+public class Indexer.Entity // TypeDefIndex: 6648
 {
 	public Entity Init; 
 	public Entity Data; 
@@ -57,7 +57,7 @@ public class Indexer.Entity // TypeDefIndex: 6647
 
 }
 
-public class Indexer.Keyframe // TypeDefIndex: 6648
+public class Indexer.Keyframe // TypeDefIndex: 6649
 {
 	public long Position; 
 	public Indexer.Entity[] Entities; 
@@ -73,7 +73,7 @@ public class Indexer.Keyframe // TypeDefIndex: 6648
 
 }
 
-private sealed class Indexer.Keyframe.<>c // TypeDefIndex: 6649
+private sealed class Indexer.Keyframe.<>c // TypeDefIndex: 6650
 {
 	public static readonly Indexer.Keyframe.<>c <>9; 
 	public static Func<Indexer.Entity, uint> <>9__4_0; 
@@ -90,7 +90,7 @@ private sealed class Indexer.Keyframe.<>c // TypeDefIndex: 6649
 
 }
 
-private sealed class Indexer.<>c // TypeDefIndex: 6650
+private sealed class Indexer.<>c // TypeDefIndex: 6651
 {
 	public static readonly Indexer.<>c <>9; 
 	public static Func<KeyValuePair<uint, Indexer.Entity>, Indexer.Entity> <>9__21_0; 

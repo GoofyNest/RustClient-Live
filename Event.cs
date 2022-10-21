@@ -2135,7 +2135,7 @@ public enum EventTriggerType // TypeDefIndex: 5079
 
 }
 
-public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7521
+public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7522
 {
 	internal readonly List<MidiEvent> _events; 
 	[CompilerGeneratedAttribute] 
@@ -2171,7 +2171,7 @@ public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiE
 
 }
 
-public sealed class EventTypesCollection // TypeDefIndex: 7537
+public sealed class EventTypesCollection // TypeDefIndex: 7538
 {
 	private readonly Dictionary<byte, Type> _types; 
 
@@ -2180,7 +2180,7 @@ public sealed class EventTypesCollection // TypeDefIndex: 7537
 
 }
 
-internal static class EventReaderFactory // TypeDefIndex: 7560
+internal static class EventReaderFactory // TypeDefIndex: 7561
 {
 	private static readonly IEventReader MetaEventReader; 
 	private static readonly IEventReader ChannelEventReader; 
@@ -2195,7 +2195,7 @@ internal static class EventReaderFactory // TypeDefIndex: 7560
 
 }
 
-public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11536
+public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11538
 {
 	[TooltipAttribute] 
 	public float minimumHoursBetween; 

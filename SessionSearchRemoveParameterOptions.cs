@@ -1,4 +1,4 @@
-public struct SessionSearchRemoveParameterOptions // TypeDefIndex: 8584
+public struct SessionSearchRemoveParameterOptions // TypeDefIndex: 8585
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Key>k__BackingField; 

@@ -1,4 +1,4 @@
-public class Loot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6317
+public class Loot : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6318
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

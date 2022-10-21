@@ -1,4 +1,4 @@
-public class BlurOptimized : PostEffectsBase, IImageEffect // TypeDefIndex: 8174
+public class BlurOptimized : PostEffectsBase, IImageEffect // TypeDefIndex: 8175
 {
 	[RangeAttribute] 
 	public int downsample; 
@@ -24,7 +24,7 @@ public class BlurOptimized : PostEffectsBase, IImageEffect // TypeDefIndex: 8174
 
 }
 
-public enum BlurOptimized.BlurType // TypeDefIndex: 8175
+public enum BlurOptimized.BlurType // TypeDefIndex: 8176
 {
 	public int value__; 
 	public const BlurOptimized.BlurType StandardGauss = 0;
@@ -32,7 +32,7 @@ public enum BlurOptimized.BlurType // TypeDefIndex: 8175
 
 }
 
-public class BlurOptimized : PostProcessEffectSettings // TypeDefIndex: 11967
+public class BlurOptimized : PostProcessEffectSettings // TypeDefIndex: 11969
 {
 	[RangeAttribute] 
 	public FixedIntParameter downsample; 

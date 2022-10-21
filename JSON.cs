@@ -19,7 +19,7 @@ public static class JsonUtility
 
 }
 
-internal enum JSONNodeType // TypeDefIndex: 5641
+internal enum JSONNodeType // TypeDefIndex: 5642
 {
 	public int value__; 
 	public const JSONNodeType Array = 1;
@@ -33,7 +33,7 @@ internal enum JSONNodeType // TypeDefIndex: 5641
 
 }
 
-internal enum JSONTextMode // TypeDefIndex: 5642
+internal enum JSONTextMode // TypeDefIndex: 5643
 {
 	public int value__; 
 	public const JSONTextMode Compact = 0;
@@ -41,7 +41,7 @@ internal enum JSONTextMode // TypeDefIndex: 5642
 
 }
 
-internal abstract class JSONNode // TypeDefIndex: 5643
+internal abstract class JSONNode // TypeDefIndex: 5644
 {
 	public static bool forceASCII; 
 	public static bool longAsString; 
@@ -146,7 +146,7 @@ internal abstract class JSONNode // TypeDefIndex: 5643
 
 }
 
-public struct JSONNode.Enumerator // TypeDefIndex: 5644
+public struct JSONNode.Enumerator // TypeDefIndex: 5645
 {
 	private JSONNode.Enumerator.Type type; 
 	private Dictionary.Enumerator<string, JSONNode> m_Object; 
@@ -165,7 +165,7 @@ public struct JSONNode.Enumerator // TypeDefIndex: 5644
 
 }
 
-private enum JSONNode.Enumerator.Type // TypeDefIndex: 5645
+private enum JSONNode.Enumerator.Type // TypeDefIndex: 5646
 {
 	public int value__; 
 	public const JSONNode.Enumerator.Type None = 0;
@@ -174,7 +174,7 @@ private enum JSONNode.Enumerator.Type // TypeDefIndex: 5645
 
 }
 
-private sealed class JSONNode.<get_Children>d__40 : IEnumerable<JSONNode>, IEnumerable, IEnumerator<JSONNode>, IDisposable, IEnumerator // TypeDefIndex: 5646
+private sealed class JSONNode.<get_Children>d__40 : IEnumerable<JSONNode>, IEnumerable, IEnumerator<JSONNode>, IDisposable, IEnumerator // TypeDefIndex: 5647
 {
 	private int <>1__state; 
 	private JSONNode <>2__current; 
@@ -209,7 +209,7 @@ private sealed class JSONNode.<get_Children>d__40 : IEnumerable<JSONNode>, IEnum
 
 }
 
-internal class JSONArray : JSONNode // TypeDefIndex: 5647
+internal class JSONArray : JSONNode // TypeDefIndex: 5648
 {
 	private List<JSONNode> m_List; 
 	private bool inline; 
@@ -246,7 +246,7 @@ internal class JSONArray : JSONNode // TypeDefIndex: 5647
 
 }
 
-private sealed class JSONArray.<get_Children>d__22 : IEnumerable<JSONNode>, IEnumerable, IEnumerator<JSONNode>, IDisposable, IEnumerator // TypeDefIndex: 5648
+private sealed class JSONArray.<get_Children>d__22 : IEnumerable<JSONNode>, IEnumerable, IEnumerator<JSONNode>, IDisposable, IEnumerator // TypeDefIndex: 5649
 {
 	private int <>1__state; 
 	private JSONNode <>2__current; 
@@ -285,7 +285,7 @@ private sealed class JSONArray.<get_Children>d__22 : IEnumerable<JSONNode>, IEnu
 
 }
 
-internal class JSONObject : JSONNode // TypeDefIndex: 5649
+internal class JSONObject : JSONNode // TypeDefIndex: 5650
 {
 	private Dictionary<string, JSONNode> m_Dict; 
 	private bool inline; 
@@ -319,7 +319,7 @@ internal class JSONObject : JSONNode // TypeDefIndex: 5649
 
 }
 
-private sealed class JSONObject.<get_Children>d__23 : IEnumerable<JSONNode>, IEnumerable, IEnumerator<JSONNode>, IDisposable, IEnumerator // TypeDefIndex: 5650
+private sealed class JSONObject.<get_Children>d__23 : IEnumerable<JSONNode>, IEnumerable, IEnumerator<JSONNode>, IDisposable, IEnumerator // TypeDefIndex: 5651
 {
 	private int <>1__state; 
 	private JSONNode <>2__current; 
@@ -358,7 +358,7 @@ private sealed class JSONObject.<get_Children>d__23 : IEnumerable<JSONNode>, IEn
 
 }
 
-internal class JSONString : JSONNode // TypeDefIndex: 5651
+internal class JSONString : JSONNode // TypeDefIndex: 5652
 {
 	private string m_Data; 
 
@@ -381,7 +381,7 @@ internal class JSONString : JSONNode // TypeDefIndex: 5651
 
 }
 
-internal class JSONNumber : JSONNode // TypeDefIndex: 5652
+internal class JSONNumber : JSONNode // TypeDefIndex: 5653
 {
 	private double m_Data; 
 
@@ -415,7 +415,7 @@ internal class JSONNumber : JSONNode // TypeDefIndex: 5652
 
 }
 
-internal class JSONBool : JSONNode // TypeDefIndex: 5653
+internal class JSONBool : JSONNode // TypeDefIndex: 5654
 {
 	private bool m_Data; 
 
@@ -444,7 +444,7 @@ internal class JSONBool : JSONNode // TypeDefIndex: 5653
 
 }
 
-internal class JSONNull : JSONNode // TypeDefIndex: 5654
+internal class JSONNull : JSONNode // TypeDefIndex: 5655
 {
 	private static JSONNull m_StaticInstance; 
 	public static bool reuseSameInstance; 
@@ -475,7 +475,7 @@ internal class JSONNull : JSONNode // TypeDefIndex: 5654
 
 }
 
-internal class JSONLazyCreator : JSONNode // TypeDefIndex: 5655
+internal class JSONLazyCreator : JSONNode // TypeDefIndex: 5656
 {
 	private JSONNode m_Node; 
 	private string m_Key; 
@@ -539,21 +539,21 @@ internal class JSONLazyCreator : JSONNode // TypeDefIndex: 5655
 
 }
 
-internal static class JSON // TypeDefIndex: 5656
+internal static class JSON // TypeDefIndex: 5657
 {
 
 	public static JSONNode Parse(string aJSON) { }
 
 }
 
-public sealed class JsonConstructorAttribute : Attribute // TypeDefIndex: 5876
+public sealed class JsonConstructorAttribute : Attribute // TypeDefIndex: 5877
 {
 
 	public void .ctor() { }
 
 }
 
-public class JsonException : Exception // TypeDefIndex: 5878
+public class JsonException : Exception // TypeDefIndex: 5879
 {
 
 	public void .ctor() { }
@@ -566,7 +566,7 @@ public class JsonException : Exception // TypeDefIndex: 5878
 
 }
 
-public class JsonExtensionDataAttribute : Attribute // TypeDefIndex: 5879
+public class JsonExtensionDataAttribute : Attribute // TypeDefIndex: 5880
 {
 	[CompilerGeneratedAttribute] 
 	private bool <WriteData>k__BackingField; 
@@ -593,7 +593,7 @@ public class JsonExtensionDataAttribute : Attribute // TypeDefIndex: 5879
 
 }
 
-internal enum JsonContainerType // TypeDefIndex: 5880
+internal enum JsonContainerType // TypeDefIndex: 5881
 {
 	public int value__; 
 	public const JsonContainerType None = 0;
@@ -603,7 +603,7 @@ internal enum JsonContainerType // TypeDefIndex: 5880
 
 }
 
-internal struct JsonPosition // TypeDefIndex: 5881
+internal struct JsonPosition // TypeDefIndex: 5882
 {
 	private static readonly char[] SpecialCharacters; 
 	internal JsonContainerType Type; 
@@ -628,21 +628,21 @@ internal struct JsonPosition // TypeDefIndex: 5881
 
 }
 
-public sealed class JsonRequiredAttribute : Attribute // TypeDefIndex: 5882
+public sealed class JsonRequiredAttribute : Attribute // TypeDefIndex: 5883
 {
 
 	public void .ctor() { }
 
 }
 
-public sealed class JsonArrayAttribute : JsonContainerAttribute // TypeDefIndex: 5888
+public sealed class JsonArrayAttribute : JsonContainerAttribute // TypeDefIndex: 5889
 {
 
 	public void .ctor() { }
 
 }
 
-public abstract class JsonContainerAttribute : Attribute // TypeDefIndex: 5889
+public abstract class JsonContainerAttribute : Attribute // TypeDefIndex: 5890
 {
 	[CompilerGeneratedAttribute] 
 	private Type <ItemConverterType>k__BackingField; 
@@ -667,7 +667,7 @@ public abstract class JsonContainerAttribute : Attribute // TypeDefIndex: 5889
 
 }
 
-public sealed class JsonConverterAttribute : Attribute // TypeDefIndex: 5891
+public sealed class JsonConverterAttribute : Attribute // TypeDefIndex: 5892
 {
 	private readonly Type _converterType; 
 	[CompilerGeneratedAttribute] 
@@ -686,7 +686,7 @@ public sealed class JsonConverterAttribute : Attribute // TypeDefIndex: 5891
 
 }
 
-public sealed class JsonObjectAttribute : JsonContainerAttribute // TypeDefIndex: 5892
+public sealed class JsonObjectAttribute : JsonContainerAttribute // TypeDefIndex: 5893
 {
 	private MemberSerialization _memberSerialization; 
 	internal Nullable<Required> _itemRequired; 
@@ -700,7 +700,7 @@ public sealed class JsonObjectAttribute : JsonContainerAttribute // TypeDefIndex
 
 }
 
-public class JsonSerializerSettings // TypeDefIndex: 5893
+public class JsonSerializerSettings // TypeDefIndex: 5894
 {
 	internal static readonly StreamingContext DefaultContext; 
 	internal static readonly CultureInfo DefaultCulture; 
@@ -815,14 +815,14 @@ public class JsonSerializerSettings // TypeDefIndex: 5893
 
 }
 
-private sealed class JsonSerializerSettings.<>c__DisplayClass90_0 // TypeDefIndex: 5894
+private sealed class JsonSerializerSettings.<>c__DisplayClass90_0 // TypeDefIndex: 5895
 {
 
 	public void .ctor() { }
 
 }
 
-public class JsonTextReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5898
+public class JsonTextReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5899
 {
 	private readonly TextReader _reader; 
 	private char[] _chars; 
@@ -960,7 +960,7 @@ public class JsonTextReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5898
 
 }
 
-public sealed class JsonPropertyAttribute : Attribute // TypeDefIndex: 5899
+public sealed class JsonPropertyAttribute : Attribute // TypeDefIndex: 5900
 {
 	internal Nullable<NullValueHandling> _nullValueHandling; 
 	internal Nullable<DefaultValueHandling> _defaultValueHandling; 
@@ -1003,14 +1003,14 @@ public sealed class JsonPropertyAttribute : Attribute // TypeDefIndex: 5899
 
 }
 
-public sealed class JsonIgnoreAttribute : Attribute // TypeDefIndex: 5900
+public sealed class JsonIgnoreAttribute : Attribute // TypeDefIndex: 5901
 {
 
 	public void .ctor() { }
 
 }
 
-public class JsonTextWriter : JsonWriter // TypeDefIndex: 5901
+public class JsonTextWriter : JsonWriter // TypeDefIndex: 5902
 {
 	private readonly TextWriter _writer; 
 	private Base64Encoder _base64Encoder; 
@@ -1127,7 +1127,7 @@ public class JsonTextWriter : JsonWriter // TypeDefIndex: 5901
 
 }
 
-public class JsonWriterException : JsonException // TypeDefIndex: 5902
+public class JsonWriterException : JsonException // TypeDefIndex: 5903
 {
 	[CompilerGeneratedAttribute] 
 	private string <Path>k__BackingField; 
@@ -1150,7 +1150,7 @@ public class JsonWriterException : JsonException // TypeDefIndex: 5902
 
 }
 
-public class JsonReaderException : JsonException // TypeDefIndex: 5903
+public class JsonReaderException : JsonException // TypeDefIndex: 5904
 {
 	[CompilerGeneratedAttribute] 
 	private int <LineNumber>k__BackingField; 
@@ -1187,7 +1187,7 @@ public class JsonReaderException : JsonException // TypeDefIndex: 5903
 
 }
 
-public abstract class JsonConverter // TypeDefIndex: 5904
+public abstract class JsonConverter // TypeDefIndex: 5905
 {
 	public virtual bool CanRead { get; }
 	public virtual bool CanWrite { get; }
@@ -1207,14 +1207,14 @@ public abstract class JsonConverter // TypeDefIndex: 5904
 
 }
 
-public class JsonConverterCollection : Collection<JsonConverter> // TypeDefIndex: 5905
+public class JsonConverterCollection : Collection<JsonConverter> // TypeDefIndex: 5906
 {
 
 	public void .ctor() { }
 
 }
 
-public abstract class JsonReader : IDisposable // TypeDefIndex: 5906
+public abstract class JsonReader : IDisposable // TypeDefIndex: 5907
 {
 	private JsonToken _tokenType; 
 	private object _value; 
@@ -1382,7 +1382,7 @@ public abstract class JsonReader : IDisposable // TypeDefIndex: 5906
 
 }
 
-public static class JsonConvert // TypeDefIndex: 5908
+public static class JsonConvert // TypeDefIndex: 5909
 {
 	[CompilerGeneratedAttribute] 
 	private static Func<JsonSerializerSettings> <DefaultSettings>k__BackingField; 
@@ -1496,7 +1496,7 @@ public static class JsonConvert // TypeDefIndex: 5908
 
 }
 
-public class JsonSerializationException : JsonException // TypeDefIndex: 5909
+public class JsonSerializationException : JsonException // TypeDefIndex: 5910
 {
 
 	public void .ctor() { }
@@ -1515,7 +1515,7 @@ public class JsonSerializationException : JsonException // TypeDefIndex: 5909
 
 }
 
-public class JsonSerializer // TypeDefIndex: 5910
+public class JsonSerializer // TypeDefIndex: 5911
 {
 	internal TypeNameHandling _typeNameHandling; 
 	internal FormatterAssemblyStyle _typeNameAssemblyFormat; 
@@ -1680,7 +1680,7 @@ public class JsonSerializer // TypeDefIndex: 5910
 
 }
 
-public enum JsonToken // TypeDefIndex: 5915
+public enum JsonToken // TypeDefIndex: 5916
 {
 	public int value__; 
 	public const JsonToken None = 0;
@@ -1704,7 +1704,7 @@ public enum JsonToken // TypeDefIndex: 5915
 
 }
 
-public abstract class JsonWriter : IDisposable // TypeDefIndex: 5916
+public abstract class JsonWriter : IDisposable // TypeDefIndex: 5917
 {
 	private static readonly JsonWriter.State[][] StateArray; 
 	internal static readonly JsonWriter.State[][] StateArrayTempate; 
@@ -1957,7 +1957,7 @@ public abstract class JsonWriter : IDisposable // TypeDefIndex: 5916
 
 }
 
-internal enum JsonWriter.State // TypeDefIndex: 5917
+internal enum JsonWriter.State // TypeDefIndex: 5918
 {
 	public int value__; 
 	public const JsonWriter.State Start = 0;
@@ -1973,7 +1973,7 @@ internal enum JsonWriter.State // TypeDefIndex: 5917
 
 }
 
-internal static class JsonTokenUtils // TypeDefIndex: 5922
+internal static class JsonTokenUtils // TypeDefIndex: 5923
 {
 
 	internal static bool IsEndToken(JsonToken token) { }
@@ -1984,7 +1984,7 @@ internal static class JsonTokenUtils // TypeDefIndex: 5922
 
 }
 
-public class JsonContainerContract : JsonContract // TypeDefIndex: 5981
+public class JsonContainerContract : JsonContract // TypeDefIndex: 5982
 {
 	private JsonContract _itemContract; 
 	private JsonContract _finalItemContract; 
@@ -2039,7 +2039,7 @@ public class JsonContainerContract : JsonContract // TypeDefIndex: 5981
 
 }
 
-internal class TraceJsonReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5984
+internal class TraceJsonReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5985
 {
 	private readonly JsonReader _innerReader; 
 	private readonly JsonTextWriter _textWriter; 
@@ -2096,7 +2096,7 @@ internal class TraceJsonReader : JsonReader, IJsonLineInfo // TypeDefIndex: 5984
 
 }
 
-internal class TraceJsonWriter : JsonWriter // TypeDefIndex: 5985
+internal class TraceJsonWriter : JsonWriter // TypeDefIndex: 5986
 {
 	private readonly JsonWriter _innerWriter; 
 	private readonly JsonTextWriter _textWriter; 
@@ -2181,7 +2181,7 @@ internal class TraceJsonWriter : JsonWriter // TypeDefIndex: 5985
 
 }
 
-internal class JsonFormatterConverter : IFormatterConverter // TypeDefIndex: 5986
+internal class JsonFormatterConverter : IFormatterConverter // TypeDefIndex: 5987
 {
 	private readonly JsonSerializerInternalReader _reader; 
 	private readonly JsonISerializableContract _contract; 
@@ -2219,14 +2219,14 @@ internal class JsonFormatterConverter : IFormatterConverter // TypeDefIndex: 598
 
 }
 
-public class JsonLinqContract : JsonContract // TypeDefIndex: 5988
+public class JsonLinqContract : JsonContract // TypeDefIndex: 5989
 {
 
 	public void .ctor(Type underlyingType) { }
 
 }
 
-public class JsonPrimitiveContract : JsonContract // TypeDefIndex: 5989
+public class JsonPrimitiveContract : JsonContract // TypeDefIndex: 5990
 {
 	[CompilerGeneratedAttribute] 
 	private PrimitiveTypeCode <TypeCode>k__BackingField; 
@@ -2247,7 +2247,7 @@ public class JsonPrimitiveContract : JsonContract // TypeDefIndex: 5989
 
 }
 
-public class JsonArrayContract : JsonContainerContract // TypeDefIndex: 6009
+public class JsonArrayContract : JsonContainerContract // TypeDefIndex: 6010
 {
 	[CompilerGeneratedAttribute] 
 	private Type <CollectionItemType>k__BackingField; 
@@ -2332,7 +2332,7 @@ public class JsonArrayContract : JsonContainerContract // TypeDefIndex: 6009
 
 }
 
-internal enum JsonContractType // TypeDefIndex: 6010
+internal enum JsonContractType // TypeDefIndex: 6011
 {
 	public int value__; 
 	public const JsonContractType None = 0;
@@ -2347,7 +2347,7 @@ internal enum JsonContractType // TypeDefIndex: 6010
 
 }
 
-public abstract class JsonContract // TypeDefIndex: 6015
+public abstract class JsonContract // TypeDefIndex: 6016
 {
 	internal bool IsNullable; 
 	internal bool IsConvertable; 
@@ -2459,7 +2459,7 @@ public abstract class JsonContract // TypeDefIndex: 6015
 
 }
 
-private sealed class JsonContract.<>c__DisplayClass73_0 // TypeDefIndex: 6016
+private sealed class JsonContract.<>c__DisplayClass73_0 // TypeDefIndex: 6017
 {
 	public MethodInfo callbackMethodInfo; 
 
@@ -2470,7 +2470,7 @@ private sealed class JsonContract.<>c__DisplayClass73_0 // TypeDefIndex: 6016
 
 }
 
-private sealed class JsonContract.<>c__DisplayClass74_0 // TypeDefIndex: 6017
+private sealed class JsonContract.<>c__DisplayClass74_0 // TypeDefIndex: 6018
 {
 	public MethodInfo callbackMethodInfo; 
 
@@ -2481,7 +2481,7 @@ private sealed class JsonContract.<>c__DisplayClass74_0 // TypeDefIndex: 6017
 
 }
 
-public class JsonProperty // TypeDefIndex: 6019
+public class JsonProperty // TypeDefIndex: 6020
 {
 	internal Nullable<Required> _required; 
 	internal bool _hasExplicitDefaultValue; 
@@ -2749,7 +2749,7 @@ public class JsonProperty // TypeDefIndex: 6019
 
 }
 
-public class JsonPropertyCollection : KeyedCollection<string, JsonProperty> // TypeDefIndex: 6020
+public class JsonPropertyCollection : KeyedCollection<string, JsonProperty> // TypeDefIndex: 6021
 {
 	private readonly Type _type; 
 	private readonly List<JsonProperty> _list; 
@@ -2769,7 +2769,7 @@ public class JsonPropertyCollection : KeyedCollection<string, JsonProperty> // T
 
 }
 
-public class JsonObjectContract : JsonContainerContract // TypeDefIndex: 6022
+public class JsonObjectContract : JsonContainerContract // TypeDefIndex: 6023
 {
 	[CompilerGeneratedAttribute] 
 	private MemberSerialization <MemberSerialization>k__BackingField; 
@@ -2856,7 +2856,7 @@ public class JsonObjectContract : JsonContainerContract // TypeDefIndex: 6022
 
 }
 
-internal abstract class JsonSerializerInternalBase // TypeDefIndex: 6023
+internal abstract class JsonSerializerInternalBase // TypeDefIndex: 6024
 {
 	private ErrorContext _currentErrorContext; 
 	private BidirectionalDictionary<string, object> _mappings; 
@@ -2879,7 +2879,7 @@ internal abstract class JsonSerializerInternalBase // TypeDefIndex: 6023
 
 }
 
-private class JsonSerializerInternalBase.ReferenceEqualsEqualityComparer : IEqualityComparer<object> // TypeDefIndex: 6024
+private class JsonSerializerInternalBase.ReferenceEqualsEqualityComparer : IEqualityComparer<object> // TypeDefIndex: 6025
 {
 
 	private bool System.Collections.Generic.IEqualityComparer<System.Object>.Equals(object x, object y) { }
@@ -2890,7 +2890,7 @@ private class JsonSerializerInternalBase.ReferenceEqualsEqualityComparer : IEqua
 
 }
 
-internal class JsonSerializerInternalReader : JsonSerializerInternalBase // TypeDefIndex: 6025
+internal class JsonSerializerInternalReader : JsonSerializerInternalBase // TypeDefIndex: 6026
 {
 
 	public void .ctor(JsonSerializer serializer) { }
@@ -2989,7 +2989,7 @@ internal class JsonSerializerInternalReader : JsonSerializerInternalBase // Type
 
 }
 
-internal enum JsonSerializerInternalReader.PropertyPresence // TypeDefIndex: 6026
+internal enum JsonSerializerInternalReader.PropertyPresence // TypeDefIndex: 6027
 {
 	public int value__; 
 	public const JsonSerializerInternalReader.PropertyPresence None = 0;
@@ -2998,7 +2998,7 @@ internal enum JsonSerializerInternalReader.PropertyPresence // TypeDefIndex: 602
 
 }
 
-internal class JsonSerializerInternalReader.CreatorPropertyContext // TypeDefIndex: 6027
+internal class JsonSerializerInternalReader.CreatorPropertyContext // TypeDefIndex: 6028
 {
 	public string Name; 
 	public JsonProperty Property; 
@@ -3012,7 +3012,7 @@ internal class JsonSerializerInternalReader.CreatorPropertyContext // TypeDefInd
 
 }
 
-private sealed class JsonSerializerInternalReader.<>c__DisplayClass36_0 // TypeDefIndex: 6028
+private sealed class JsonSerializerInternalReader.<>c__DisplayClass36_0 // TypeDefIndex: 6029
 {
 	public JsonProperty property; 
 
@@ -3023,7 +3023,7 @@ private sealed class JsonSerializerInternalReader.<>c__DisplayClass36_0 // TypeD
 
 }
 
-private sealed class JsonSerializerInternalReader.<>c // TypeDefIndex: 6029
+private sealed class JsonSerializerInternalReader.<>c // TypeDefIndex: 6030
 {
 	public static readonly JsonSerializerInternalReader.<>c <>9; 
 	public static Func<JsonProperty, string> <>9__36_0; 
@@ -3046,7 +3046,7 @@ private sealed class JsonSerializerInternalReader.<>c // TypeDefIndex: 6029
 
 }
 
-internal class JsonSerializerInternalWriter : JsonSerializerInternalBase // TypeDefIndex: 6030
+internal class JsonSerializerInternalWriter : JsonSerializerInternalBase // TypeDefIndex: 6031
 {
 	private Type _rootType; 
 	private int _rootLevel; 
@@ -3127,7 +3127,7 @@ internal class JsonSerializerInternalWriter : JsonSerializerInternalBase // Type
 
 }
 
-internal class JsonSerializerProxy : JsonSerializer // TypeDefIndex: 6031
+internal class JsonSerializerProxy : JsonSerializer // TypeDefIndex: 6032
 {
 	private readonly JsonSerializerInternalReader _serializerReader; 
 	private readonly JsonSerializerInternalWriter _serializerWriter; 
@@ -3224,14 +3224,14 @@ internal class JsonSerializerProxy : JsonSerializer // TypeDefIndex: 6031
 
 }
 
-public class JsonStringContract : JsonPrimitiveContract // TypeDefIndex: 6032
+public class JsonStringContract : JsonPrimitiveContract // TypeDefIndex: 6033
 {
 
 	public void .ctor(Type underlyingType) { }
 
 }
 
-internal static class JsonTypeReflector // TypeDefIndex: 6033
+internal static class JsonTypeReflector // TypeDefIndex: 6034
 {
 	private static Nullable<bool> _fullyTrusted; 
 	private static readonly ThreadSafeStore<Type, Func<object[], JsonConverter>> JsonConverterCreatorCache; 
@@ -3303,7 +3303,7 @@ internal static class JsonTypeReflector // TypeDefIndex: 6033
 
 }
 
-private sealed class JsonTypeReflector.<>c__DisplayClass18_0 // TypeDefIndex: 6034
+private sealed class JsonTypeReflector.<>c__DisplayClass18_0 // TypeDefIndex: 6035
 {
 	public Type converterType; 
 	public Func<object> defaultConstructor; 
@@ -3315,7 +3315,7 @@ private sealed class JsonTypeReflector.<>c__DisplayClass18_0 // TypeDefIndex: 60
 
 }
 
-private sealed class JsonTypeReflector.<>c // TypeDefIndex: 6035
+private sealed class JsonTypeReflector.<>c // TypeDefIndex: 6036
 {
 	public static readonly JsonTypeReflector.<>c <>9; 
 	public static Func<object, Type> <>9__18_1; 
@@ -3329,7 +3329,7 @@ private sealed class JsonTypeReflector.<>c // TypeDefIndex: 6035
 
 }
 
-public class JPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 6042
+public class JPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 6043
 {
 	public override Type ComponentType { get; }
 	public override bool IsReadOnly { get; }
@@ -3357,7 +3357,7 @@ public class JPropertyDescriptor : PropertyDescriptor // TypeDefIndex: 6042
 
 }
 
-internal class JPropertyKeyedCollection : Collection<JToken> // TypeDefIndex: 6043
+internal class JPropertyKeyedCollection : Collection<JToken> // TypeDefIndex: 6044
 {
 	private static readonly IEqualityComparer<string> Comparer; 
 	private Dictionary<string, JToken> _dictionary; 
@@ -3397,7 +3397,7 @@ internal class JPropertyKeyedCollection : Collection<JToken> // TypeDefIndex: 60
 
 }
 
-public class JsonLoadSettings // TypeDefIndex: 6044
+public class JsonLoadSettings // TypeDefIndex: 6045
 {
 	private CommentHandling _commentHandling; 
 	private LineInfoHandling _lineInfoHandling; 
@@ -3414,14 +3414,14 @@ public class JsonLoadSettings // TypeDefIndex: 6044
 
 }
 
-public class JsonMergeSettings // TypeDefIndex: 6045
+public class JsonMergeSettings // TypeDefIndex: 6046
 {
 
 	public void .ctor() { }
 
 }
 
-public class JTokenEqualityComparer : IEqualityComparer<JToken> // TypeDefIndex: 6050
+public class JTokenEqualityComparer : IEqualityComparer<JToken> // TypeDefIndex: 6051
 {
 
 [PreserveAttribute] 
@@ -3435,7 +3435,7 @@ public class JTokenEqualityComparer : IEqualityComparer<JToken>
 
 }
 
-public class JConstructor : JContainer // TypeDefIndex: 6060
+public class JConstructor : JContainer // TypeDefIndex: 6061
 {
 	private string _name; 
 	private readonly List<JToken> _values; 
@@ -3471,7 +3471,7 @@ public class JConstructor : JContainer // TypeDefIndex: 6060
 
 }
 
-public abstract class JContainer : JToken, IList<JToken>, ICollection<JToken>, IEnumerable<JToken>, IEnumerable, IBindingList, IList, ICollection // TypeDefIndex: 6061
+public abstract class JContainer : JToken, IList<JToken>, ICollection<JToken>, IEnumerable<JToken>, IEnumerable, IBindingList, IList, ICollection // TypeDefIndex: 6062
 {
 	internal ListChangedEventHandler _listChanged; 
 	private object _syncRoot; 
@@ -3614,7 +3614,7 @@ public abstract class JContainer : JToken, IList<JToken>, ICollection<JToken>, I
 
 }
 
-public class JObject : JContainer, IDictionary<string, JToken>, ICollection<KeyValuePair<string, JToken>>, IEnumerable<KeyValuePair<string, JToken>>, IEnumerable, ICustomTypeDescriptor, INotifyPropertyChanging // TypeDefIndex: 6064
+public class JObject : JContainer, IDictionary<string, JToken>, ICollection<KeyValuePair<string, JToken>>, IEnumerable<KeyValuePair<string, JToken>>, IEnumerable, ICustomTypeDescriptor, INotifyPropertyChanging // TypeDefIndex: 6065
 {
 	private readonly JPropertyKeyedCollection _properties; 
 	[CompilerGeneratedAttribute] 
@@ -3708,7 +3708,7 @@ public class JObject : JContainer, IDictionary<string, JToken>, ICollection<KeyV
 
 }
 
-private sealed class JObject.<>c // TypeDefIndex: 6065
+private sealed class JObject.<>c // TypeDefIndex: 6066
 {
 	public static readonly JObject.<>c <>9; 
 
@@ -3719,7 +3719,7 @@ private sealed class JObject.<>c // TypeDefIndex: 6065
 
 }
 
-private sealed class JObject.<GetEnumerator>d__58 : IEnumerator<KeyValuePair<string, JToken>>, IDisposable, IEnumerator // TypeDefIndex: 6066
+private sealed class JObject.<GetEnumerator>d__58 : IEnumerator<KeyValuePair<string, JToken>>, IDisposable, IEnumerator // TypeDefIndex: 6067
 {
 	private int <>1__state; 
 	private KeyValuePair<string, JToken> <>2__current; 
@@ -3751,7 +3751,7 @@ private sealed class JObject.<GetEnumerator>d__58 : IEnumerator<KeyValuePair<str
 
 }
 
-public class JArray : JContainer, IList<JToken>, ICollection<JToken>, IEnumerable<JToken>, IEnumerable // TypeDefIndex: 6067
+public class JArray : JContainer, IList<JToken>, ICollection<JToken>, IEnumerable<JToken>, IEnumerable // TypeDefIndex: 6068
 {
 	private readonly List<JToken> _values; 
 
@@ -3811,7 +3811,7 @@ public class JArray : JContainer, IList<JToken>, ICollection<JToken>, IEnumerabl
 
 }
 
-public class JTokenReader : JsonReader, IJsonLineInfo // TypeDefIndex: 6068
+public class JTokenReader : JsonReader, IJsonLineInfo // TypeDefIndex: 6069
 {
 	private readonly JToken _root; 
 	private string _initialPath; 
@@ -3854,7 +3854,7 @@ public class JTokenReader : JsonReader, IJsonLineInfo // TypeDefIndex: 6068
 
 }
 
-public class JTokenWriter : JsonWriter // TypeDefIndex: 6069
+public class JTokenWriter : JsonWriter // TypeDefIndex: 6070
 {
 	private JContainer _token; 
 	private JContainer _parent; 
@@ -3946,7 +3946,7 @@ public class JTokenWriter : JsonWriter // TypeDefIndex: 6069
 
 }
 
-public abstract class JToken : IJEnumerable<JToken>, IEnumerable<JToken>, IEnumerable, IJsonLineInfo, ICloneable // TypeDefIndex: 6070
+public abstract class JToken : IJEnumerable<JToken>, IEnumerable<JToken>, IEnumerable, IJsonLineInfo, ICloneable // TypeDefIndex: 6071
 {
 	private JContainer _parent; 
 	private JToken _previous; 
@@ -4170,7 +4170,7 @@ public abstract class JToken : IJEnumerable<JToken>, IEnumerable<JToken>, IEnume
 
 }
 
-private class JToken.LineInfoAnnotation // TypeDefIndex: 6071
+private class JToken.LineInfoAnnotation // TypeDefIndex: 6072
 {
 	internal readonly int LineNumber; 
 	internal readonly int LinePosition; 
@@ -4180,7 +4180,7 @@ private class JToken.LineInfoAnnotation // TypeDefIndex: 6071
 
 }
 
-public class JProperty : JContainer // TypeDefIndex: 6077
+public class JProperty : JContainer // TypeDefIndex: 6078
 {
 
 [CompilerGeneratedAttribute] 
@@ -4253,7 +4253,7 @@ public class JProperty : JContainer
 
 }
 
-private class JProperty.JPropertyList : IList<JToken>, ICollection<JToken>, IEnumerable<JToken>, IEnumerable // TypeDefIndex: 6078
+private class JProperty.JPropertyList : IList<JToken>, ICollection<JToken>, IEnumerable<JToken>, IEnumerable // TypeDefIndex: 6079
 {
 	internal JToken _token; 
 
@@ -4294,7 +4294,7 @@ private class JProperty.JPropertyList : IList<JToken>, ICollection<JToken>, IEnu
 
 }
 
-private sealed class JProperty.JPropertyList.<GetEnumerator>d__1 : IEnumerator<JToken>, IDisposable, IEnumerator // TypeDefIndex: 6079
+private sealed class JProperty.JPropertyList.<GetEnumerator>d__1 : IEnumerator<JToken>, IDisposable, IEnumerator // TypeDefIndex: 6080
 {
 	private int <>1__state; 
 	private JToken <>2__current; 
@@ -4323,7 +4323,7 @@ private sealed class JProperty.JPropertyList.<GetEnumerator>d__1 : IEnumerator<J
 
 }
 
-public enum JTokenType // TypeDefIndex: 6080
+public enum JTokenType // TypeDefIndex: 6081
 {
 	public int value__; 
 	public const JTokenType None = 0;
@@ -4347,7 +4347,7 @@ public enum JTokenType // TypeDefIndex: 6080
 
 }
 
-public class JValue : JToken, IFormattable, IComparable, IConvertible // TypeDefIndex: 6081
+public class JValue : JToken, IFormattable, IComparable, IConvertible // TypeDefIndex: 6082
 {
 	private JTokenType _valueType; 
 	private object _value; 
@@ -4441,7 +4441,7 @@ public class JValue : JToken, IFormattable, IComparable, IConvertible // TypeDef
 
 }
 
-public static class JSON // TypeDefIndex: 13330
+public static class JSON // TypeDefIndex: 13332
 {
 	private static readonly Type includeAttrType; 
 	private static readonly Type excludeAttrType; 

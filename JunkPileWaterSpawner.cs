@@ -1,4 +1,4 @@
-public class JunkPileWaterSpawner : SpawnGroup // TypeDefIndex: 10508
+public class JunkPileWaterSpawner : SpawnGroup // TypeDefIndex: 10509
 {
 	public BaseEntity attachToParent; 
 

@@ -1,4 +1,4 @@
-public class NeighbourSocket : Socket_Base // TypeDefIndex: 10802
+public class NeighbourSocket : Socket_Base // TypeDefIndex: 10803
 {
 
 	private void OnDrawGizmosSelected() { }

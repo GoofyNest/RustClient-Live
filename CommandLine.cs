@@ -25,7 +25,7 @@ public static class CommandLine // TypeDefIndex: 4838
 
 }
 
-public static class CommandLine // TypeDefIndex: 6242
+public static class CommandLine // TypeDefIndex: 6243
 {
 	private static bool initialized; 
 	private static string commandline; 

@@ -1,4 +1,4 @@
-internal struct StringReference // TypeDefIndex: 5940
+internal struct StringReference // TypeDefIndex: 5941
 {
 	private readonly char[] _chars; 
 	private readonly int _startIndex; 

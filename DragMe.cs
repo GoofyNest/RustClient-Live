@@ -1,4 +1,4 @@
-public class DragMe : MonoBehaviour, IBeginDragHandler, IEventSystemHandler, IDragHandler, IEndDragHandler // TypeDefIndex: 13019
+public class DragMe : MonoBehaviour, IBeginDragHandler, IEventSystemHandler, IDragHandler, IEndDragHandler // TypeDefIndex: 13021
 {
 	public static DragMe dragging; 
 	public static GameObject dragIcon; 

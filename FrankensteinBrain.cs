@@ -1,4 +1,4 @@
-public class FrankensteinBrain : PetBrain // TypeDefIndex: 10654
+public class FrankensteinBrain : PetBrain // TypeDefIndex: 10655
 {
 
 	public void .ctor() { }

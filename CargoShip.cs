@@ -1,4 +1,4 @@
-public class CargoShip : BaseEntity // TypeDefIndex: 9991
+public class CargoShip : BaseEntity // TypeDefIndex: 9992
 {
 	public int targetNodeIndex; 
 	public GameObject wakeParent; 

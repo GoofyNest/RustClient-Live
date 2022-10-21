@@ -1,4 +1,4 @@
-public class Magazine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6321
+public class Magazine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-public struct RejectInviteOptions // TypeDefIndex: 8530
+public struct RejectInviteOptions // TypeDefIndex: 8531
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 
@@ -23,7 +23,7 @@ public struct RejectInviteOptions // TypeDefIndex: 8530
 
 }
 
-public struct RejectInviteOptions // TypeDefIndex: 9252
+public struct RejectInviteOptions // TypeDefIndex: 9253
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <InviteId>k__BackingField; 
@@ -48,7 +48,7 @@ public struct RejectInviteOptions // TypeDefIndex: 9252
 
 }
 
-public struct RejectInviteOptions // TypeDefIndex: 9401
+public struct RejectInviteOptions // TypeDefIndex: 9402
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 

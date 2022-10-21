@@ -1,4 +1,4 @@
-public class Crane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6417
+public class Crane : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6418
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-public sealed class OnAudioInputStateCallback : MulticastDelegate // TypeDefIndex: 8672
+public sealed class OnAudioInputStateCallback : MulticastDelegate // TypeDefIndex: 8673
 {
 
 	public void .ctor(object object, IntPtr method) { }

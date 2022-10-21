@@ -378,6 +378,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<InvokeAction>
 	|
+	|-Array.IndexOf<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.IndexOf<ItemSkinDirectory.Skin>
 	|
 	|-Array.IndexOf<KeyframeView.UIKeyframeValue>
@@ -803,6 +805,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Reverse<InvokeAction>
 	|
+	|-Array.Reverse<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.Reverse<ItemSkinDirectory.Skin>
 	|
 	|-Array.Reverse<KeyframeView.UIKeyframeValue>
@@ -1212,6 +1216,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<InstancingKey>
 	|
 	|-Array.Sort<InvokeAction>
+	|
+	|-Array.Sort<InvokeHandlerBase.InvokeTiming<object>>
 	|
 	|-Array.Sort<ItemSkinDirectory.Skin>
 	|
@@ -1674,6 +1680,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<InstancingKey>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<InstrumentKeyController.NoteBinding>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<InvokeAction>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<InvokeHandlerBase.InvokeTiming<object>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<ItemSkinDirectory.Skin>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Kayak.PlayerAnimationState>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyframeView.UIKeyframeValue>
@@ -2516,6 +2523,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<InstrumentKeyController.NoteBinding>
 	|
 	|-Array.InternalArray__ICollection_Add<InvokeAction>
+	|
+	|-Array.InternalArray__ICollection_Add<InvokeHandlerBase.InvokeTiming<object>>
 	|
 	|-Array.InternalArray__ICollection_Add<ItemSkinDirectory.Skin>
 	|
@@ -4003,6 +4012,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<InvokeAction>
 	|
+	|-Array.InternalArray__ICollection_Remove<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.InternalArray__ICollection_Remove<ItemSkinDirectory.Skin>
 	|
 	|-Array.InternalArray__ICollection_Remove<Kayak.PlayerAnimationState>
@@ -5489,6 +5500,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<InvokeAction>
 	|
+	|-Array.InternalArray__ICollection_Contains<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.InternalArray__ICollection_Contains<ItemSkinDirectory.Skin>
 	|
 	|-Array.InternalArray__ICollection_Contains<Kayak.PlayerAnimationState>
@@ -6880,6 +6893,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<InstancingKey>
 	|-Array.InternalArray__ICollection_CopyTo<InstrumentKeyController.NoteBinding>
 	|-Array.InternalArray__ICollection_CopyTo<InvokeAction>
+	|-Array.InternalArray__ICollection_CopyTo<InvokeHandlerBase.InvokeTiming<object>>
 	|-Array.InternalArray__ICollection_CopyTo<ItemSkinDirectory.Skin>
 	|-Array.InternalArray__ICollection_CopyTo<Kayak.PlayerAnimationState>
 	|-Array.InternalArray__ICollection_CopyTo<KeyframeView.UIKeyframeValue>
@@ -7720,6 +7734,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<InstrumentKeyController.NoteBinding>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<InvokeAction>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<InvokeHandlerBase.InvokeTiming<object>>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<ItemSkinDirectory.Skin>
 	|
@@ -9209,6 +9225,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<InvokeAction>
 	|
+	|-Array.InternalArray__Insert<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.InternalArray__Insert<ItemSkinDirectory.Skin>
 	|
 	|-Array.InternalArray__Insert<Kayak.PlayerAnimationState>
@@ -10697,6 +10715,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<InvokeAction>
 	|
+	|-Array.InternalArray__IndexOf<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.InternalArray__IndexOf<ItemSkinDirectory.Skin>
 	|
 	|-Array.InternalArray__IndexOf<Kayak.PlayerAnimationState>
@@ -12182,6 +12202,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__get_Item<InstrumentKeyController.NoteBinding>
 	|
 	|-Array.InternalArray__get_Item<InvokeAction>
+	|
+	|-Array.InternalArray__get_Item<InvokeHandlerBase.InvokeTiming<object>>
 	|
 	|-Array.InternalArray__get_Item<ItemSkinDirectory.Skin>
 	|
@@ -13669,6 +13691,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<InvokeAction>
 	|
+	|-Array.InternalArray__set_Item<InvokeHandlerBase.InvokeTiming<object>>
+	|
 	|-Array.InternalArray__set_Item<ItemSkinDirectory.Skin>
 	|
 	|-Array.InternalArray__set_Item<Kayak.PlayerAnimationState>
@@ -15133,6 +15157,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<WeightedStringList.Container>
 	|-Array.IndexOfImpl<GameStat.Stat>
 	|-Array.IndexOfImpl<ImageStorageEntity.ImageRequest>
+	|-Array.IndexOfImpl<InvokeHandlerBase.InvokeTiming<object>>
 	|-Array.IndexOfImpl<MagnetCrane.MagnetCraneSnapshot>
 	|-Array.IndexOfImpl<ParticleSystemContainer.ParticleSystemGroup>
 	|-Array.IndexOfImpl<PlayerItemRecipe>
@@ -15371,6 +15396,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<WeightedStringList.Container>
 	|-Array.UnsafeLoad<GameStat.Stat>
 	|-Array.UnsafeLoad<ImageStorageEntity.ImageRequest>
+	|-Array.UnsafeLoad<InvokeHandlerBase.InvokeTiming<object>>
 	|-Array.UnsafeLoad<MagnetCrane.MagnetCraneSnapshot>
 	|-Array.UnsafeLoad<ParticleSystemContainer.ParticleSystemGroup>
 	|-Array.UnsafeLoad<PlayerItemRecipe>
@@ -15679,6 +15705,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<InstancingKey>..ctor
 	|-Array.InternalEnumerator<InstrumentKeyController.NoteBinding>..ctor
 	|-Array.InternalEnumerator<InvokeAction>..ctor
+	|-Array.InternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>..ctor
 	|-Array.InternalEnumerator<ItemSkinDirectory.Skin>..ctor
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>..ctor
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>..ctor
@@ -16425,6 +16452,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<InstancingKey>.Dispose
 	|-Array.InternalEnumerator<InstrumentKeyController.NoteBinding>.Dispose
 	|-Array.InternalEnumerator<InvokeAction>.Dispose
+	|-Array.InternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.Dispose
 	|-Array.InternalEnumerator<ItemSkinDirectory.Skin>.Dispose
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>.Dispose
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.Dispose
@@ -17171,6 +17199,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<InstancingKey>.MoveNext
 	|-Array.InternalEnumerator<InstrumentKeyController.NoteBinding>.MoveNext
 	|-Array.InternalEnumerator<InvokeAction>.MoveNext
+	|-Array.InternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.MoveNext
 	|-Array.InternalEnumerator<ItemSkinDirectory.Skin>.MoveNext
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>.MoveNext
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.MoveNext
@@ -18011,6 +18040,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<InstrumentKeyController.NoteBinding>.get_Current
 	|
 	|-Array.InternalEnumerator<InvokeAction>.get_Current
+	|
+	|-Array.InternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.get_Current
 	|
 	|-Array.InternalEnumerator<ItemSkinDirectory.Skin>.get_Current
 	|
@@ -19403,6 +19434,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<InstancingKey>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<InstrumentKeyController.NoteBinding>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<InvokeAction>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<ItemSkinDirectory.Skin>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.System.Collections.IEnumerator.Reset
@@ -20243,6 +20275,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<InstrumentKeyController.NoteBinding>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<InvokeAction>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<ItemSkinDirectory.Skin>.System.Collections.IEnumerator.get_Current
 	|
@@ -21645,6 +21679,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<InstancingKey>.Dispose
 	|-Array.EmptyInternalEnumerator<InstrumentKeyController.NoteBinding>.Dispose
 	|-Array.EmptyInternalEnumerator<InvokeAction>.Dispose
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.Dispose
 	|-Array.EmptyInternalEnumerator<ItemSkinDirectory.Skin>.Dispose
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.Dispose
@@ -22391,6 +22426,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<InstancingKey>.MoveNext
 	|-Array.EmptyInternalEnumerator<InstrumentKeyController.NoteBinding>.MoveNext
 	|-Array.EmptyInternalEnumerator<InvokeAction>.MoveNext
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.MoveNext
 	|-Array.EmptyInternalEnumerator<ItemSkinDirectory.Skin>.MoveNext
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.MoveNext
@@ -23231,6 +23267,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<InstrumentKeyController.NoteBinding>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<InvokeAction>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<ItemSkinDirectory.Skin>.get_Current
 	|
@@ -24716,6 +24754,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<GameManifest.PooledString>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<GameStat.Stat>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ImageStorageEntity.ImageRequest>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<LootContainer.LootSpawnSlot>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<XPathNodeRef>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<MagnetCrane.MagnetCraneSnapshot>.System.Collections.IEnumerator.get_Current
@@ -25404,6 +25443,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<InstancingKey>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<InstrumentKeyController.NoteBinding>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<InvokeAction>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<ItemSkinDirectory.Skin>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.System.Collections.IEnumerator.Reset
@@ -26150,6 +26190,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<InstancingKey>..ctor
 	|-Array.EmptyInternalEnumerator<InstrumentKeyController.NoteBinding>..ctor
 	|-Array.EmptyInternalEnumerator<InvokeAction>..ctor
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>..ctor
 	|-Array.EmptyInternalEnumerator<ItemSkinDirectory.Skin>..ctor
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>..ctor
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>..ctor
@@ -26896,6 +26937,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<InstancingKey>..cctor
 	|-Array.EmptyInternalEnumerator<InstrumentKeyController.NoteBinding>..cctor
 	|-Array.EmptyInternalEnumerator<InvokeAction>..cctor
+	|-Array.EmptyInternalEnumerator<InvokeHandlerBase.InvokeTiming<object>>..cctor
 	|-Array.EmptyInternalEnumerator<ItemSkinDirectory.Skin>..cctor
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>..cctor
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>..cctor
@@ -28344,6 +28386,8 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<InvokeAction>.Sort
 	|
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.Sort
+	|
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.Sort
 	|
 	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.Sort
@@ -28693,6 +28737,8 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<InstancingKey>.BinarySearch
 	|
 	|-ArraySortHelper<InvokeAction>.BinarySearch
+	|
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.BinarySearch
 	|
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.BinarySearch
 	|
@@ -29044,6 +29090,8 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<InvokeAction>.Sort
 	|
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.Sort
+	|
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.Sort
 	|
 	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.Sort
@@ -29323,6 +29371,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WeightedStringList.Container>.InternalBinarySearch
 	|-ArraySortHelper<GameStat.Stat>.InternalBinarySearch
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.InternalBinarySearch
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.InternalBinarySearch
 	|-ArraySortHelper<MagnetCrane.MagnetCraneSnapshot>.InternalBinarySearch
 	|-ArraySortHelper<ParticleSystemContainer.ParticleSystemGroup>.InternalBinarySearch
 	|-ArraySortHelper<PlayerItemRecipe>.InternalBinarySearch
@@ -29517,6 +29566,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<RCon.BannedAddresses>.SwapIfGreater
 	|-ArraySortHelper<GameStat.Stat>.SwapIfGreater
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.SwapIfGreater
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.SwapIfGreater
 	|-ArraySortHelper<ParticleSystemContainer.ParticleSystemGroup>.SwapIfGreater
 	|-ArraySortHelper<PlayerItemRecipe>.SwapIfGreater
 	|-ArraySortHelper<ReflectionProbeEx.RenderListEntry>.SwapIfGreater
@@ -29750,6 +29800,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<RCon.BannedAddresses>.Swap
 	|-ArraySortHelper<GameStat.Stat>.Swap
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.Swap
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.Swap
 	|-ArraySortHelper<ParticleSystemContainer.ParticleSystemGroup>.Swap
 	|-ArraySortHelper<PlayerItemRecipe>.Swap
 	|-ArraySortHelper<ReflectionProbeEx.RenderListEntry>.Swap
@@ -30017,6 +30068,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.IntrospectiveSort
 	|-ArraySortHelper<InstancingKey>.IntrospectiveSort
 	|-ArraySortHelper<InvokeAction>.IntrospectiveSort
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.IntrospectiveSort
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.IntrospectiveSort
 	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.IntrospectiveSort
 	|-ArraySortHelper<LocalClock.TimedEvent>.IntrospectiveSort
@@ -30196,6 +30248,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.IntroSort
 	|-ArraySortHelper<InstancingKey>.IntroSort
 	|-ArraySortHelper<InvokeAction>.IntroSort
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.IntroSort
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.IntroSort
 	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.IntroSort
 	|-ArraySortHelper<LocalClock.TimedEvent>.IntroSort
@@ -30357,6 +30410,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WeightedStringList.Container>.PickPivotAndPartition
 	|-ArraySortHelper<GameStat.Stat>.PickPivotAndPartition
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.PickPivotAndPartition
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.PickPivotAndPartition
 	|-ArraySortHelper<MagnetCrane.MagnetCraneSnapshot>.PickPivotAndPartition
 	|-ArraySortHelper<ParticleSystemContainer.ParticleSystemGroup>.PickPivotAndPartition
 	|-ArraySortHelper<PlayerItemRecipe>.PickPivotAndPartition
@@ -30584,6 +30638,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.Heapsort
 	|-ArraySortHelper<InstancingKey>.Heapsort
 	|-ArraySortHelper<InvokeAction>.Heapsort
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.Heapsort
 	|-ArraySortHelper<ItemSkinDirectory.Skin>.Heapsort
 	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.Heapsort
 	|-ArraySortHelper<LocalClock.TimedEvent>.Heapsort
@@ -30728,6 +30783,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<RCon.BannedAddresses>.DownHeap
 	|-ArraySortHelper<GameStat.Stat>.DownHeap
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.DownHeap
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.DownHeap
 	|-ArraySortHelper<ParticleSystemContainer.ParticleSystemGroup>.DownHeap
 	|-ArraySortHelper<PlayerItemRecipe>.DownHeap
 	|-ArraySortHelper<ReflectionProbeEx.RenderListEntry>.DownHeap
@@ -30961,6 +31017,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<RCon.BannedAddresses>.InsertionSort
 	|-ArraySortHelper<GameStat.Stat>.InsertionSort
 	|-ArraySortHelper<ImageStorageEntity.ImageRequest>.InsertionSort
+	|-ArraySortHelper<InvokeHandlerBase.InvokeTiming<object>>.InsertionSort
 	|-ArraySortHelper<ParticleSystemContainer.ParticleSystemGroup>.InsertionSort
 	|-ArraySortHelper<PlayerItemRecipe>.InsertionSort
 	|-ArraySortHelper<ReflectionProbeEx.RenderListEntry>.InsertionSort
@@ -31335,14 +31392,14 @@ internal class ArraySubsetEnumerator : IEnumerator // TypeDefIndex: 2661
 
 }
 
-internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6082
+internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6083
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6084
+internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6085
 {
 
 [PreserveAttribute] 
@@ -31352,7 +31409,7 @@ internal class ArrayMultipleIndexFilter : PathFilter
 
 }
 
-internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6086
+internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6087
 {
 
 [PreserveAttribute] 
@@ -31362,7 +31419,7 @@ internal class ArraySliceFilter : PathFilter
 
 }
 
-public abstract class ArrayPool<T> // TypeDefIndex: 6271
+public abstract class ArrayPool<T> // TypeDefIndex: 6272
 {
 	private static ArrayPool<T> s_sharedInstance; 
 
@@ -31411,7 +31468,7 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6271
 
 }
 
-internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6272
+internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6273
 {
 	internal static readonly ArrayPoolEventSource Log; 
 
@@ -31431,7 +31488,7 @@ internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6272
 
 }
 
-internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6273
+internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6274
 {
 	public int value__; 
 	public const ArrayPoolEventSource.BufferAllocatedReason Pooled = 0;
@@ -31440,7 +31497,7 @@ internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6273
 
 }
 
-public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6565
+public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6566
 {
 
 public class ArrayIndexIsEnum : PropertyAttribute
@@ -31451,7 +31508,7 @@ public class ArrayIndexIsEnum : PropertyAttribute
 
 }
 
-public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6566
+public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6567
 {
 	public float min; 
 	public float max; 
@@ -31461,7 +31518,7 @@ public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6566
 
 }
 
-public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8148
+public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8149
 {
 	private readonly List<Value> values; 
 
@@ -31497,7 +31554,7 @@ public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8148
 
 }
 
-public static class Arrays // TypeDefIndex: 8233
+public static class Arrays // TypeDefIndex: 8234
 {
 	public static ushort[] flushes; 
 	public static readonly ushort[] unique5; 
@@ -31511,7 +31568,7 @@ public static class Arrays // TypeDefIndex: 8233
 
 }
 
-public static class ArrayEx // TypeDefIndex: 13090
+public static class ArrayEx // TypeDefIndex: 13092
 {
 
 	public static T[] New<T>(int length) { }

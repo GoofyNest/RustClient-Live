@@ -1,4 +1,4 @@
-public class CH47AIBrain : BaseAIBrain // TypeDefIndex: 11432
+public class CH47AIBrain : BaseAIBrain // TypeDefIndex: 11434
 {
 
 	public void .ctor() { }

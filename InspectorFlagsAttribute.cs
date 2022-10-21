@@ -1,11 +1,11 @@
-public class InspectorFlagsAttribute : PropertyAttribute // TypeDefIndex: 6217
+public class InspectorFlagsAttribute : PropertyAttribute // TypeDefIndex: 6218
 {
 
 	public void .ctor() { }
 
 }
 
-public class InspectorFlagsAttribute : PropertyAttribute // TypeDefIndex: 6579
+public class InspectorFlagsAttribute : PropertyAttribute // TypeDefIndex: 6580
 {
 
 	public void .ctor() { }

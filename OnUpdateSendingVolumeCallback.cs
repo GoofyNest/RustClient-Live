@@ -1,4 +1,4 @@
-public sealed class OnUpdateSendingVolumeCallback : MulticastDelegate // TypeDefIndex: 8686
+public sealed class OnUpdateSendingVolumeCallback : MulticastDelegate // TypeDefIndex: 8687
 {
 
 	public void .ctor(object object, IntPtr method) { }

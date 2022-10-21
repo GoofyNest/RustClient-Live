@@ -5780,7 +5780,7 @@ public abstract class DbTransaction : MarshalByRefObject, IDisposable // TypeDef
 
 }
 
-public sealed class DataContractAttribute : Attribute // TypeDefIndex: 5709
+public sealed class DataContractAttribute : Attribute // TypeDefIndex: 5710
 {
 
 [AttributeUsageAttribute] 
@@ -5794,7 +5794,7 @@ public sealed class DataContractAttribute : Attribute
 
 }
 
-public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5710
+public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5711
 {
 	private string name; 
 	private int order; 
@@ -5817,7 +5817,7 @@ public sealed class DataMemberAttribute : Attribute // TypeDefIndex: 5710
 
 }
 
-public static class Database // TypeDefIndex: 6185
+public static class Database // TypeDefIndex: 6186
 {
 
 	public static void Insert(string parent, object contents, Action<bool> onFinished) { }
@@ -5836,7 +5836,7 @@ public static class Database // TypeDefIndex: 6185
 
 }
 
-private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6186
+private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6187
 {
 	public Action<bool> onFinished; 
 
@@ -5847,7 +5847,7 @@ private sealed class Database.<>c__DisplayClass0_0 // TypeDefIndex: 6186
 
 }
 
-private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6187
+private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6188
 {
 	public Action<bool, string> onFinished; 
 
@@ -5858,7 +5858,7 @@ private sealed class Database.<>c__DisplayClass1_0 // TypeDefIndex: 6187
 
 }
 
-private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6188
+private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6189
 {
 	public Action<bool> onFinished; 
 
@@ -5869,7 +5869,7 @@ private sealed class Database.<>c__DisplayClass2_0 // TypeDefIndex: 6188
 
 }
 
-private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6189
+private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6190
 {
 	public Result<T> result; 
 	public Action<Result<T>> onFinished; 
@@ -5896,7 +5896,7 @@ private sealed class Database.<>c__DisplayClass3_0<T> // TypeDefIndex: 6189
 
 }
 
-private sealed class Database.<>c__3<T> // TypeDefIndex: 6190
+private sealed class Database.<>c__3<T> // TypeDefIndex: 6191
 {
 	public static readonly Database.<>c__3<T> <>9; 
 	public static Func<QueryResponse, Result.Entry<T>> <>9__3_2; 
@@ -5922,7 +5922,7 @@ private sealed class Database.<>c__3<T> // TypeDefIndex: 6190
 
 }
 
-private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6191
+private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6192
 {
 	public Action<int> onResult; 
 
@@ -5933,7 +5933,7 @@ private sealed class Database.<>c__DisplayClass4_0 // TypeDefIndex: 6191
 
 }
 
-private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6192
+private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6193
 {
 	public int count; 
 	public Database.<>c__DisplayClass4_0 CS$<>8__locals1; 
@@ -5945,7 +5945,7 @@ private sealed class Database.<>c__DisplayClass4_1 // TypeDefIndex: 6192
 
 }
 
-public class Database // TypeDefIndex: 7363
+public class Database // TypeDefIndex: 7364
 {
 
 public class Database
@@ -6124,13 +6124,13 @@ public class Database
 
 }
 
-private struct Database.<>c__DisplayClass19_0<T> // TypeDefIndex: 7364
+private struct Database.<>c__DisplayClass19_0<T> // TypeDefIndex: 7365
 {
 	public int type; 
 
 }
 
-private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 7365
+private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable<T>, IEnumerable, IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 7366
 {
 	private int <>1__state; 
 	private T <>2__current; 
@@ -6210,7 +6210,7 @@ private sealed class Database.<ExecuteAndReadQueryResults>d__32<T> : IEnumerable
 
 }
 
-internal static class DataTypesUtilities // TypeDefIndex: 7629
+internal static class DataTypesUtilities // TypeDefIndex: 7630
 {
 
 	public static ushort Combine(SevenBitNumber head, SevenBitNumber tail) { }
@@ -6237,7 +6237,7 @@ internal static class DataTypesUtilities // TypeDefIndex: 7629
 
 }
 
-internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7832
+internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7833
 {
 	public override bool IsBrowserDisplay { get; }
 	public override bool IsBrowserSave { get; }
@@ -6271,7 +6271,7 @@ internal abstract class DbcsEncoding : MonoEncoding // TypeDefIndex: 7832
 
 }
 
-internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7833
+internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7834
 {
 	protected DbcsConvert convert; 
 
@@ -6284,7 +6284,7 @@ internal abstract class DbcsEncoding.DbcsDecoder : Decoder // TypeDefIndex: 7833
 
 }
 
-internal class DbcsConvert // TypeDefIndex: 7834
+internal class DbcsConvert // TypeDefIndex: 7835
 {
 	public byte[] n2u; 
 	public byte[] u2n; 
@@ -6299,7 +6299,7 @@ internal class DbcsConvert // TypeDefIndex: 7834
 
 }
 
-public struct DataRecord // TypeDefIndex: 8815
+public struct DataRecord // TypeDefIndex: 8816
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Key>k__BackingField; 
@@ -6326,7 +6326,7 @@ public struct DataRecord // TypeDefIndex: 8815
 
 }
 
-internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord>, IDisposable // TypeDefIndex: 8816
+internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord>, IDisposable // TypeDefIndex: 8817
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Key; 
@@ -6354,7 +6354,7 @@ internal struct DataRecordInternal : IGettable<DataRecord>, ISettable<DataRecord
 
 }
 
-public class Data : ConsoleSystem // TypeDefIndex: 13646
+public class Data : ConsoleSystem // TypeDefIndex: 13648
 {
 
 	[ServerVar] 

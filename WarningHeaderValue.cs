@@ -1,4 +1,4 @@
-public class WarningHeaderValue : ICloneable // TypeDefIndex: 5815
+public class WarningHeaderValue : ICloneable // TypeDefIndex: 5816
 {
 	[CompilerGeneratedAttribute] 
 	private string <Agent>k__BackingField; 

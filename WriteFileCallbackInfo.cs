@@ -1,4 +1,4 @@
-public struct WriteFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8917
+public struct WriteFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8918
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

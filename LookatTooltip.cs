@@ -1,4 +1,4 @@
-public class LookatTooltip : MonoBehaviour // TypeDefIndex: 12829
+public class LookatTooltip : MonoBehaviour // TypeDefIndex: 12831
 {
 	public static bool Enabled; 
 	public BaseEntity currentlyLookingAt; 
@@ -6,6 +6,7 @@ public class LookatTooltip : MonoBehaviour // TypeDefIndex: 12829
 	public Image icon; 
 	public CanvasGroup canvasGroup; 
 	public CanvasGroup infoGroup; 
+	public CanvasGroup minimiseGroup; 
 	private int lastInfoHash; 
 
 
@@ -14,6 +15,8 @@ public class LookatTooltip : MonoBehaviour // TypeDefIndex: 12829
 	private void Update() { }
 
 	private void UpdateLookingAtHud(BaseEntity ent) { }
+
+	private void UpdateADS() { }
 
 	public bool HasChanged(BaseEntity ent) { }
 

@@ -1,4 +1,4 @@
-public struct QueryInvitesOptions // TypeDefIndex: 8522
+public struct QueryInvitesOptions // TypeDefIndex: 8523
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 
@@ -14,7 +14,7 @@ public struct QueryInvitesOptions // TypeDefIndex: 8522
 
 }
 
-public struct QueryInvitesOptions // TypeDefIndex: 9246
+public struct QueryInvitesOptions // TypeDefIndex: 9247
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

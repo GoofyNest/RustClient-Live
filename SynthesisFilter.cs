@@ -1,4 +1,4 @@
-public class SynthesisFilter // TypeDefIndex: 7404
+public class SynthesisFilter // TypeDefIndex: 7405
 {
 	private const double MY_PI = 3,14159265358979;
 	private static readonly float Cos164; 

@@ -1,4 +1,4 @@
-internal enum DeflateStrategy // TypeDefIndex: 5662
+internal enum DeflateStrategy // TypeDefIndex: 5663
 {
 	public int value__; 
 	public const DeflateStrategy Default = 0;

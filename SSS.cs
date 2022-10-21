@@ -1,4 +1,4 @@
-public class SSS : ConsoleSystem // TypeDefIndex: 13710
+public class SSS : ConsoleSystem // TypeDefIndex: 13712
 {
 	[ClientVar] 
 	public static bool enabled; 

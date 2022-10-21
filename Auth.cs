@@ -1,4 +1,4 @@
-public class Auth // TypeDefIndex: 6245
+public class Auth // TypeDefIndex: 6246
 {
 	public string Type; 
 	public string Id; 

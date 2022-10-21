@@ -1,4 +1,4 @@
-public static class Feedback // TypeDefIndex: 6198
+public static class Feedback // TypeDefIndex: 6199
 {
 
 	[AsyncStateMachineAttribute] 
@@ -6,7 +6,7 @@ public static class Feedback // TypeDefIndex: 6198
 
 }
 
-private struct Feedback.<Report>d__0 : IAsyncStateMachine // TypeDefIndex: 6199
+private struct Feedback.<Report>d__0 : IAsyncStateMachine // TypeDefIndex: 6200
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 
@@ -23,7 +23,7 @@ private struct Feedback.<Report>d__0 : IAsyncStateMachine // TypeDefIndex: 6199
 
 }
 
-public struct Feedback // TypeDefIndex: 6246
+public struct Feedback // TypeDefIndex: 6247
 {
 	public string Subject; 
 	public string Message; 

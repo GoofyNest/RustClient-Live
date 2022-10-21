@@ -1,4 +1,4 @@
-public class LootPanelLocker : LootPanel // TypeDefIndex: 12767
+public class LootPanelLocker : LootPanel // TypeDefIndex: 12769
 {
 	public GameObject[] controls; 
 

@@ -11,7 +11,7 @@ public enum WriteState // TypeDefIndex: 1934
 
 }
 
-public enum WriteState // TypeDefIndex: 5918
+public enum WriteState // TypeDefIndex: 5919
 {
 	public int value__; 
 	public const WriteState Error = 0;

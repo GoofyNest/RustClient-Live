@@ -90,6 +90,7 @@ internal static class ThrowHelper // TypeDefIndex: 124
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<IconSkinPicker.SkinButtonSetup>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<ImageStorageEntity.ImageRequest>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<InvokeAction>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<InvokeHandlerBase.InvokeTiming<object>>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<ItemSkinDirectory.Skin>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyframeView.UIKeyframeValue>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<LocalClock.TimedEvent>
@@ -215,7 +216,7 @@ internal static class ThrowHelper // TypeDefIndex: 124
 
 }
 
-internal static class ThrowHelper // TypeDefIndex: 6895
+internal static class ThrowHelper // TypeDefIndex: 6896
 {
 
 internal static class ThrowHelper
@@ -242,7 +243,7 @@ internal static class ThrowHelper
 
 }
 
-internal static class ThrowHelper // TypeDefIndex: 7118
+internal static class ThrowHelper // TypeDefIndex: 7119
 {
 
 	internal static void ThrowArgumentNullException(ExceptionArgument argument) { }

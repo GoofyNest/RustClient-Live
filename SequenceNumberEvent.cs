@@ -1,4 +1,4 @@
-public sealed class SequenceNumberEvent : MetaEvent // TypeDefIndex: 7550
+public sealed class SequenceNumberEvent : MetaEvent // TypeDefIndex: 7551
 {
 	[CompilerGeneratedAttribute] 
 	private ushort <Number>k__BackingField; 

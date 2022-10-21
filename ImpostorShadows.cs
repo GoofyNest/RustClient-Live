@@ -1,4 +1,4 @@
-public class ImpostorShadows : MonoBehaviour // TypeDefIndex: 12411
+public class ImpostorShadows : MonoBehaviour // TypeDefIndex: 12413
 {
 	private Light light; 
 

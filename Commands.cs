@@ -1,4 +1,4 @@
-public class Commands : ConsoleSystem // TypeDefIndex: 6930
+public class Commands : ConsoleSystem // TypeDefIndex: 6931
 {
 
 	[ClientVar] 
@@ -13,7 +13,7 @@ public class Commands : ConsoleSystem // TypeDefIndex: 6930
 
 }
 
-private sealed class Commands.<>c__DisplayClass0_0 // TypeDefIndex: 6931
+private sealed class Commands.<>c__DisplayClass0_0 // TypeDefIndex: 6932
 {
 	public string str; 
 

@@ -1,4 +1,4 @@
-public sealed class SmpteTimeDivision : TimeDivision // TypeDefIndex: 7618
+public sealed class SmpteTimeDivision : TimeDivision // TypeDefIndex: 7619
 {
 	[CompilerGeneratedAttribute] 
 	private readonly SmpteFormat <Format>k__BackingField; 

@@ -1,4 +1,4 @@
-public sealed class PropertyChangingEventHandler : MulticastDelegate // TypeDefIndex: 5867
+public sealed class PropertyChangingEventHandler : MulticastDelegate // TypeDefIndex: 5868
 {
 
 	public void .ctor(object object, IntPtr method) { }

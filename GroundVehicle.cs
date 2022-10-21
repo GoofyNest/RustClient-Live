@@ -1,4 +1,4 @@
-public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 11430
+public abstract class GroundVehicle : BaseVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 11432
 {
 	[HeaderAttribute] 
 	[SerializeField] 

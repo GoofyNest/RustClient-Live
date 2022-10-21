@@ -1,4 +1,4 @@
-public class TriggerPlayerTimer : TriggerBase // TypeDefIndex: 11763
+public class TriggerPlayerTimer : TriggerBase // TypeDefIndex: 11765
 {
 	public BaseEntity TargetEntity; 
 	public float DamageAmount; 

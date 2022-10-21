@@ -1,4 +1,4 @@
-public struct UnlockedAchievement // TypeDefIndex: 9941
+public struct UnlockedAchievement // TypeDefIndex: 9942
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <AchievementId>k__BackingField; 

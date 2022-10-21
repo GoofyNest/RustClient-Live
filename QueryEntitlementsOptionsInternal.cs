@@ -1,4 +1,4 @@
-internal struct QueryEntitlementsOptionsInternal : ISettable<QueryEntitlementsOptions>, IDisposable // TypeDefIndex: 9487
+internal struct QueryEntitlementsOptionsInternal : ISettable<QueryEntitlementsOptions>, IDisposable // TypeDefIndex: 9488
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 6628
+public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 6629
 {
 	public bool HideLowLods; 
 	public bool HideUnskinnable; 
@@ -12,6 +12,7 @@ public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 662
 	public float FieldOfView; 
 	public Vector3 LookDirection; 
 	public Vector3 UpDirection; 
+	public GameObject[] HideDuringRender; 
 
 
 	public void DebugAlign() { }
@@ -38,7 +39,7 @@ public class PropRenderer : MonoBehaviour, IClientComponent // TypeDefIndex: 662
 
 }
 
-public sealed class PropRenderer.LightIntensityScale : MulticastDelegate // TypeDefIndex: 6629
+public sealed class PropRenderer.LightIntensityScale : MulticastDelegate // TypeDefIndex: 6630
 {
 
 	public void .ctor(object object, IntPtr method) { }

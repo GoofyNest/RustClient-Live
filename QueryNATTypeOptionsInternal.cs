@@ -1,4 +1,4 @@
-internal struct QueryNATTypeOptionsInternal : ISettable<QueryNATTypeOptions>, IDisposable // TypeDefIndex: 8985
+internal struct QueryNATTypeOptionsInternal : ISettable<QueryNATTypeOptions>, IDisposable // TypeDefIndex: 8986
 {
 
 internal struct QueryNATTypeOptionsInternal : ISettable<QueryNATTypeOptions>, IDisposable

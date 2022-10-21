@@ -1,4 +1,4 @@
-public class LootSpawn : ScriptableObject // TypeDefIndex: 12471
+public class LootSpawn : ScriptableObject // TypeDefIndex: 12473
 {
 	public ItemAmountRanged[] items; 
 	public LootSpawn.Entry[] subSpawn; 
@@ -8,7 +8,7 @@ public class LootSpawn : ScriptableObject // TypeDefIndex: 12471
 
 }
 
-public struct LootSpawn.Entry // TypeDefIndex: 12472
+public struct LootSpawn.Entry // TypeDefIndex: 12474
 {
 	[TooltipAttribute] 
 	public int extraSpawns; 

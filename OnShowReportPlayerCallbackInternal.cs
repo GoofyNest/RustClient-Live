@@ -1,4 +1,4 @@
-internal sealed class OnShowReportPlayerCallbackInternal : MulticastDelegate // TypeDefIndex: 8351
+internal sealed class OnShowReportPlayerCallbackInternal : MulticastDelegate // TypeDefIndex: 8352
 {
 
 	public void .ctor(object object, IntPtr method) { }

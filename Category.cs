@@ -1,4 +1,4 @@
-public enum Category // TypeDefIndex: 7744
+public enum Category // TypeDefIndex: 7745
 {
 	public int value__; 
 	public const Category Shirt = 0;

@@ -1,4 +1,4 @@
-public class RegexConverter : JsonConverter // TypeDefIndex: 6109
+public class RegexConverter : JsonConverter // TypeDefIndex: 6110
 {
 
 	public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { }

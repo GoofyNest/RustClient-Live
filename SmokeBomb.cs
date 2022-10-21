@@ -1,4 +1,4 @@
-public class SmokeBomb : TimedExplosive // TypeDefIndex: 11326
+public class SmokeBomb : TimedExplosive // TypeDefIndex: 11328
 {
 
 	public void .ctor() { }

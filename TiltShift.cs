@@ -1,4 +1,4 @@
-internal class TiltShift : PostEffectsBase // TypeDefIndex: 8216
+internal class TiltShift : PostEffectsBase // TypeDefIndex: 8217
 {
 	public TiltShift.TiltShiftMode mode; 
 	public TiltShift.TiltShiftQuality quality; 
@@ -20,7 +20,7 @@ internal class TiltShift : PostEffectsBase // TypeDefIndex: 8216
 
 }
 
-public enum TiltShift.TiltShiftMode // TypeDefIndex: 8217
+public enum TiltShift.TiltShiftMode // TypeDefIndex: 8218
 {
 	public int value__; 
 	public const TiltShift.TiltShiftMode TiltShiftMode = 0;
@@ -28,7 +28,7 @@ public enum TiltShift.TiltShiftMode // TypeDefIndex: 8217
 
 }
 
-public enum TiltShift.TiltShiftQuality // TypeDefIndex: 8218
+public enum TiltShift.TiltShiftQuality // TypeDefIndex: 8219
 {
 	public int value__; 
 	public const TiltShift.TiltShiftQuality Preview = 0;

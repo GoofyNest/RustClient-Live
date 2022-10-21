@@ -1,4 +1,4 @@
-internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9632
+internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9633
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 
@@ -88,7 +88,7 @@ internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGett
 
 }
 
-internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9695
+internal struct VerifyIdTokenCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyIdTokenCallbackInfo>, ISettable<VerifyIdTokenCallbackInfo>, IDisposable // TypeDefIndex: 9696
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

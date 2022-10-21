@@ -1,4 +1,4 @@
-public class BradleyMoveTest : MonoBehaviour // TypeDefIndex: 10575
+public class BradleyMoveTest : MonoBehaviour // TypeDefIndex: 10576
 {
 	public WheelCollider[] leftWheels; 
 	public WheelCollider[] rightWheels; 

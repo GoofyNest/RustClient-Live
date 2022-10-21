@@ -1,4 +1,4 @@
-internal static class MathUtilities // TypeDefIndex: 7634
+internal static class MathUtilities // TypeDefIndex: 7635
 {
 
 	public static T GetLastElementBelowThreshold<T>(T[] elements, long keyThreshold, Func<T, long> keySelector) { }

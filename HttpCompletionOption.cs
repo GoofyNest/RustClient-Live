@@ -1,4 +1,4 @@
-public enum HttpCompletionOption // TypeDefIndex: 5747
+public enum HttpCompletionOption // TypeDefIndex: 5748
 {
 	public int value__; 
 	public const HttpCompletionOption ResponseContentRead = 0;

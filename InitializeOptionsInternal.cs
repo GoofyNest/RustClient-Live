@@ -1,4 +1,4 @@
-internal struct InitializeOptionsInternal : ISettable<InitializeOptions>, IDisposable // TypeDefIndex: 9861
+internal struct InitializeOptionsInternal : ISettable<InitializeOptions>, IDisposable // TypeDefIndex: 9862
 {
 	private int m_ApiVersion; 
 	private IntPtr m_AllocateMemoryFunction; 

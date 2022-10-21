@@ -1,4 +1,4 @@
-public class PlaceMonumentsRoadside : ProceduralComponent // TypeDefIndex: 12279
+public class PlaceMonumentsRoadside : ProceduralComponent // TypeDefIndex: 12281
 {
 	public SpawnFilter Filter; 
 	public string ResourceFolder; 
@@ -28,7 +28,7 @@ public class PlaceMonumentsRoadside : ProceduralComponent // TypeDefIndex: 12279
 
 }
 
-private struct PlaceMonumentsRoadside.SpawnInfo // TypeDefIndex: 12280
+private struct PlaceMonumentsRoadside.SpawnInfo // TypeDefIndex: 12282
 {
 	public Prefab<MonumentInfo> prefab; 
 	public Vector3 position; 
@@ -37,7 +37,7 @@ private struct PlaceMonumentsRoadside.SpawnInfo // TypeDefIndex: 12280
 
 }
 
-private class PlaceMonumentsRoadside.SpawnInfoGroup // TypeDefIndex: 12281
+private class PlaceMonumentsRoadside.SpawnInfoGroup // TypeDefIndex: 12283
 {
 	public bool processed; 
 	public Prefab<MonumentInfo> prefab; 
@@ -48,7 +48,7 @@ private class PlaceMonumentsRoadside.SpawnInfoGroup // TypeDefIndex: 12281
 
 }
 
-private struct PlaceMonumentsRoadside.DistanceInfo // TypeDefIndex: 12282
+private struct PlaceMonumentsRoadside.DistanceInfo // TypeDefIndex: 12284
 {
 	public float minDistanceSameType; 
 	public float maxDistanceSameType; 
@@ -57,7 +57,7 @@ private struct PlaceMonumentsRoadside.DistanceInfo // TypeDefIndex: 12282
 
 }
 
-public enum PlaceMonumentsRoadside.DistanceMode // TypeDefIndex: 12283
+public enum PlaceMonumentsRoadside.DistanceMode // TypeDefIndex: 12285
 {
 	public int value__; 
 	public const PlaceMonumentsRoadside.DistanceMode Any = 0;
@@ -66,7 +66,7 @@ public enum PlaceMonumentsRoadside.DistanceMode // TypeDefIndex: 12283
 
 }
 
-public enum PlaceMonumentsRoadside.RoadMode // TypeDefIndex: 12284
+public enum PlaceMonumentsRoadside.RoadMode // TypeDefIndex: 12286
 {
 	public int value__; 
 	public const PlaceMonumentsRoadside.RoadMode SideRoadOrRingRoad = 0;
@@ -77,7 +77,7 @@ public enum PlaceMonumentsRoadside.RoadMode // TypeDefIndex: 12284
 
 }
 
-private sealed class PlaceMonumentsRoadside.<>c // TypeDefIndex: 12285
+private sealed class PlaceMonumentsRoadside.<>c // TypeDefIndex: 12287
 {
 	public static readonly PlaceMonumentsRoadside.<>c <>9; 
 	public static Func<string, string> <>9__17_0; 

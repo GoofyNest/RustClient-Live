@@ -1,4 +1,4 @@
-public class PowerLineWireSpan : MonoBehaviour // TypeDefIndex: 12100
+public class PowerLineWireSpan : MonoBehaviour // TypeDefIndex: 12102
 {
 	public GameObjectRef wirePrefab; 
 	public Transform start; 

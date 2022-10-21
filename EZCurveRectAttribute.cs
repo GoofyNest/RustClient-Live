@@ -1,4 +1,4 @@
-public class EZCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7160
+public class EZCurveRectAttribute : PropertyAttribute // TypeDefIndex: 7161
 {
 
 public class EZCurveRectAttribute : PropertyAttribute

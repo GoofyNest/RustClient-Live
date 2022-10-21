@@ -1,4 +1,4 @@
-public class MapEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6324
+public class MapEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6325
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class MapEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6324
 
 }
 
-public class MapEntity : HeldEntity // TypeDefIndex: 10309
+public class MapEntity : HeldEntity // TypeDefIndex: 10310
 {
 	public uint[] fogImages; 
 	public uint[] paintImages; 

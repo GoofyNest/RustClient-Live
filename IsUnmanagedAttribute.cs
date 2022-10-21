@@ -5,28 +5,28 @@ internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 4796
 
 }
 
-internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 6845
+internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 6846
 {
 
 	public void .ctor() { }
 
 }
 
-internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 6934
+internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 6935
 {
 
 	public void .ctor() { }
 
 }
 
-internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 7312
+internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 7313
 {
 
 	public void .ctor() { }
 
 }
 
-internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 9952
+internal sealed class IsUnmanagedAttribute : Attribute // TypeDefIndex: 9953
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class AlternateAttack : StateMachineBehaviour // TypeDefIndex: 13183
+public class AlternateAttack : StateMachineBehaviour // TypeDefIndex: 13185
 {
 	public bool random; 
 	public bool dontIncrement; 

@@ -1,4 +1,4 @@
-public class HurtPunch : MonoBehaviour // TypeDefIndex: 10847
+public class HurtPunch : MonoBehaviour // TypeDefIndex: 10848
 {
 	public PostProcessVolume postProcessVolume; 
 	public static float punchHurtDuration; 

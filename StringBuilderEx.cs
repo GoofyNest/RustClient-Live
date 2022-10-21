@@ -1,4 +1,4 @@
-public static class StringBuilderEx // TypeDefIndex: 6576
+public static class StringBuilderEx // TypeDefIndex: 6577
 {
 
 	[ExtensionAttribute] 

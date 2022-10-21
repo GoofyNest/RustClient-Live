@@ -1,4 +1,4 @@
-public struct CopyIdTokenOptions // TypeDefIndex: 9545
+public struct CopyIdTokenOptions // TypeDefIndex: 9546
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 
@@ -14,7 +14,7 @@ public struct CopyIdTokenOptions // TypeDefIndex: 9545
 
 }
 
-public struct CopyIdTokenOptions // TypeDefIndex: 9642
+public struct CopyIdTokenOptions // TypeDefIndex: 9643
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <AccountId>k__BackingField; 

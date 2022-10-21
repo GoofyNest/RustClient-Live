@@ -1,4 +1,4 @@
-public struct ParticipantUpdatedCallbackInfo : ICallbackInfo // TypeDefIndex: 8688
+public struct ParticipantUpdatedCallbackInfo : ICallbackInfo // TypeDefIndex: 8689
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 

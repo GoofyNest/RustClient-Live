@@ -1,4 +1,4 @@
-public class AnimatedBuildingBlock : StabilityEntity // TypeDefIndex: 11200
+public class AnimatedBuildingBlock : StabilityEntity // TypeDefIndex: 11202
 {
 	private bool animatorNeedsInitializing; 
 	private bool animatorIsOpen; 

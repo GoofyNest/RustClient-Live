@@ -1,4 +1,4 @@
-internal class DeflaterEngine : DeflaterConstants // TypeDefIndex: 5663
+internal class DeflaterEngine : DeflaterConstants // TypeDefIndex: 5664
 {
 	private static int TOO_FAR; 
 	private int ins_h; 

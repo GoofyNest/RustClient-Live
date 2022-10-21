@@ -1,4 +1,4 @@
-public enum AntiCheatCommonPlayerMovementState // TypeDefIndex: 9749
+public enum AntiCheatCommonPlayerMovementState // TypeDefIndex: 9750
 {
 	public int value__; 
 	public const AntiCheatCommonPlayerMovementState None = 0;

@@ -1437,14 +1437,14 @@ internal class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 5260
 
 }
 
-internal static class Mono // TypeDefIndex: 6231
+internal static class Mono // TypeDefIndex: 6232
 {
 
 	internal static void FixHttpsValidation() { }
 
 }
 
-private sealed class Mono.<>c // TypeDefIndex: 6232
+private sealed class Mono.<>c // TypeDefIndex: 6233
 {
 	public static readonly Mono.<>c <>9; 
 	public static RemoteCertificateValidationCallback <>9__0_0; 
@@ -1458,7 +1458,7 @@ private sealed class Mono.<>c // TypeDefIndex: 6232
 
 }
 
-public abstract class MonoEncoding : Encoding // TypeDefIndex: 7380
+public abstract class MonoEncoding : Encoding // TypeDefIndex: 7381
 {
 	private readonly int win_code_page; 
 
@@ -1489,7 +1489,7 @@ public abstract class MonoEncoding : Encoding // TypeDefIndex: 7380
 
 }
 
-public abstract class MonoEncoder : Encoder // TypeDefIndex: 7381
+public abstract class MonoEncoder : Encoder // TypeDefIndex: 7382
 {
 	private MonoEncoding encoding; 
 
@@ -1510,7 +1510,7 @@ public abstract class MonoEncoder : Encoder // TypeDefIndex: 7381
 
 }
 
-internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8266
+internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8267
 {
 
 	public void .ctor(Type type) { }

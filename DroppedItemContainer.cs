@@ -1,4 +1,4 @@
-public class DroppedItemContainer : BaseCombatEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10089
+public class DroppedItemContainer : BaseCombatEntity, LootPanel.IHasLootPanel, IContainerSounds // TypeDefIndex: 10090
 {
 	private Option __menuOption_Menu_Open; 
 	public string lootPanelName; 

@@ -1,4 +1,4 @@
-public class HudMenuInput : ListComponent<HudMenuInput> // TypeDefIndex: 8018
+public class HudMenuInput : ListComponent<HudMenuInput> // TypeDefIndex: 8019
 {
 	private InputField inputField; 
 	private RustInput rustInput; 

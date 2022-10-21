@@ -1,4 +1,4 @@
-public struct PresenceModificationSetRawRichTextOptions // TypeDefIndex: 8843
+public struct PresenceModificationSetRawRichTextOptions // TypeDefIndex: 8844
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <RichText>k__BackingField; 

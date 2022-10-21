@@ -1,4 +1,4 @@
-public struct DeleteFileOptions // TypeDefIndex: 8868
+public struct DeleteFileOptions // TypeDefIndex: 8869
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

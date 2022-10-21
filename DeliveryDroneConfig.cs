@@ -1,4 +1,4 @@
-public class DeliveryDroneConfig : BaseScriptableObject // TypeDefIndex: 10510
+public class DeliveryDroneConfig : BaseScriptableObject // TypeDefIndex: 10511
 {
 	public Vector3 vendingMachineOffset; 
 	public float maxDistanceFromVendingMachine; 

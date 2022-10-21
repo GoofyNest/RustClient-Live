@@ -1,4 +1,4 @@
-public class SprayList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6436
+public class SprayList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6437
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

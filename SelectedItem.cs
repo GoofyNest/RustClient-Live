@@ -1,4 +1,4 @@
-public class SelectedItem : SingletonComponent<SelectedItem>, IInventoryChanged // TypeDefIndex: 12795
+public class SelectedItem : SingletonComponent<SelectedItem>, IInventoryChanged // TypeDefIndex: 12797
 {
 	public Image icon; 
 	public Image iconSplitter; 

@@ -1,4 +1,4 @@
-public struct LobbySearchSetTargetUserIdOptions // TypeDefIndex: 9192
+public struct LobbySearchSetTargetUserIdOptions // TypeDefIndex: 9193
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <TargetUserId>k__BackingField; 

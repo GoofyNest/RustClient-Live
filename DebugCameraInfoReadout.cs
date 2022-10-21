@@ -1,4 +1,4 @@
-public class DebugCameraInfoReadout : SingletonComponent<DebugCameraInfoReadout> // TypeDefIndex: 12584
+public class DebugCameraInfoReadout : SingletonComponent<DebugCameraInfoReadout> // TypeDefIndex: 12586
 {
 	public RustText ReadoutText; 
 	private StringBuilder builder; 

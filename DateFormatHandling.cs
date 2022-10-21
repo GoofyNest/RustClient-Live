@@ -1,4 +1,4 @@
-public enum DateFormatHandling // TypeDefIndex: 5869
+public enum DateFormatHandling // TypeDefIndex: 5870
 {
 	public int value__; 
 	public const DateFormatHandling IsoDateFormat = 0;

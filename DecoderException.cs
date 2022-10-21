@@ -1,4 +1,4 @@
-public class DecoderException : MP3SharpException // TypeDefIndex: 7397
+public class DecoderException : MP3SharpException // TypeDefIndex: 7398
 {
 	private int _ErrorCode; 
 

@@ -1,4 +1,4 @@
-internal struct UserLoginInfoInternal : IGettable<UserLoginInfo>, ISettable<UserLoginInfo>, IDisposable // TypeDefIndex: 9630
+internal struct UserLoginInfoInternal : IGettable<UserLoginInfo>, ISettable<UserLoginInfo>, IDisposable // TypeDefIndex: 9631
 {
 	private int m_ApiVersion; 
 	private IntPtr m_DisplayName; 

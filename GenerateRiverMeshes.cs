@@ -1,4 +1,4 @@
-public class GenerateRiverMeshes : ProceduralComponent // TypeDefIndex: 12229
+public class GenerateRiverMeshes : ProceduralComponent // TypeDefIndex: 12231
 {
 	public const float NormalSmoothing = 0,1;
 	public const bool SnapToTerrain = True;

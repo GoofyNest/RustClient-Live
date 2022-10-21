@@ -1,4 +1,4 @@
-public abstract class ProceduralComponent : MonoBehaviour // TypeDefIndex: 12173
+public abstract class ProceduralComponent : MonoBehaviour // TypeDefIndex: 12175
 {
 	[InspectorFlagsAttribute] 
 	public ProceduralComponent.Realm Mode; 
@@ -17,7 +17,7 @@ public abstract class ProceduralComponent : MonoBehaviour // TypeDefIndex: 12173
 
 }
 
-public enum ProceduralComponent.Realm // TypeDefIndex: 12174
+public enum ProceduralComponent.Realm // TypeDefIndex: 12176
 {
 	public int value__; 
 	public const ProceduralComponent.Realm Client = 1;

@@ -1,4 +1,4 @@
-public static class Parallel // TypeDefIndex: 5603
+public static class Parallel // TypeDefIndex: 5604
 {
 	public static int MaxThreads; 
 
@@ -30,7 +30,7 @@ public static class Parallel // TypeDefIndex: 5603
 
 }
 
-private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5604
+private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5605
 {
 	public Action<T> action; 
 	public IList<T> data; 
@@ -50,7 +50,7 @@ private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5604
 
 }
 
-private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5605
+private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5606
 {
 	public int chunk_size; 
 	public int toExclusive; 
@@ -63,7 +63,7 @@ private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5605
 
 }
 
-private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5606
+private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5607
 {
 	public Action<int, int> action; 
 	public int threads; 
@@ -75,7 +75,7 @@ private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5606
 
 }
 
-private sealed class Parallel.<Coroutine>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5607
+private sealed class Parallel.<Coroutine>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5608
 {
 	private int <>1__state; 
 	private object <>2__current; 

@@ -1,4 +1,4 @@
-public enum ReferenceLoopHandling // TypeDefIndex: 5913
+public enum ReferenceLoopHandling // TypeDefIndex: 5914
 {
 	public int value__; 
 	public const ReferenceLoopHandling Error = 0;

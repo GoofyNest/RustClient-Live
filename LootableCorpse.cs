@@ -1,4 +1,4 @@
-public class LootableCorpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6304
+public class LootableCorpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class LootableCorpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class LootableCorpse.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6305
+public class LootableCorpse.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6306
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -123,7 +123,7 @@ public class LootableCorpse.Private : IDisposable, Pool.IPooled, IProto // TypeD
 
 }
 
-public class LootableCorpse : BaseCorpse, LootPanel.IHasLootPanel // TypeDefIndex: 10111
+public class LootableCorpse : BaseCorpse, LootPanel.IHasLootPanel // TypeDefIndex: 10112
 {
 	private Option __menuOption_Menu_Open; 
 	public string lootPanelName; 

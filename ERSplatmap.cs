@@ -1,4 +1,4 @@
-public struct ERSplatmap // TypeDefIndex: 7289
+public struct ERSplatmap // TypeDefIndex: 7290
 {
 	public int x; 
 	public int y; 

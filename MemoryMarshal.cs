@@ -1,4 +1,4 @@
-public static class MemoryMarshal // TypeDefIndex: 6904
+public static class MemoryMarshal // TypeDefIndex: 6905
 {
 
 	public static ref T GetReference<T>(Span<T> span) { }

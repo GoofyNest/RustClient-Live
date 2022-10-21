@@ -1,4 +1,4 @@
-internal struct QueryJoinRoomTokenOptionsInternal : ISettable<QueryJoinRoomTokenOptions>, IDisposable // TypeDefIndex: 8741
+internal struct QueryJoinRoomTokenOptionsInternal : ISettable<QueryJoinRoomTokenOptions>, IDisposable // TypeDefIndex: 8742
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

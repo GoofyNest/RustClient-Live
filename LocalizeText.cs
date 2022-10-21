@@ -1,4 +1,4 @@
-public class LocalizeText : MonoBehaviour, IClientComponent, ILocalize // TypeDefIndex: 13024
+public class LocalizeText : MonoBehaviour, IClientComponent, ILocalize // TypeDefIndex: 13026
 {
 	public string token; 
 	[TextAreaAttribute] 
@@ -37,7 +37,7 @@ public class LocalizeText : MonoBehaviour, IClientComponent, ILocalize // TypeDe
 
 }
 
-public enum LocalizeText.SpecialMode // TypeDefIndex: 13025
+public enum LocalizeText.SpecialMode // TypeDefIndex: 13027
 {
 	public int value__; 
 	public const LocalizeText.SpecialMode None = 0;

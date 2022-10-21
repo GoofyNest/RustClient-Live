@@ -1,4 +1,4 @@
-internal static class InternalConstants // TypeDefIndex: 6993
+internal static class InternalConstants // TypeDefIndex: 6994
 {
 	internal static readonly int MAX_BITS; 
 	internal static readonly int BL_CODES; 

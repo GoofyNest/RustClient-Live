@@ -49,6 +49,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WeightedStringList.Container>..ctor
 	|-List.Enumerator<GameStat.Stat>..ctor
 	|-List.Enumerator<ImageStorageEntity.ImageRequest>..ctor
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>..ctor
 	|-List.Enumerator<MagnetCrane.MagnetCraneSnapshot>..ctor
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>..ctor
 	|-List.Enumerator<PlayerItemRecipe>..ctor
@@ -358,6 +359,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ImageStorageEntity.ImageRequest>.Dispose
 	|-List.Enumerator<InstrumentKeyController>.Dispose
 	|-List.Enumerator<InvokeAction>.Dispose
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>.Dispose
 	|-List.Enumerator<Item>.Dispose
 	|-List.Enumerator<ItemAmount>.Dispose
 	|-List.Enumerator<ItemBlueprint>.Dispose
@@ -983,6 +985,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<RCon.BannedAddresses>.MoveNext
 	|-List.Enumerator<GameStat.Stat>.MoveNext
 	|-List.Enumerator<ImageStorageEntity.ImageRequest>.MoveNext
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>.MoveNext
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>.MoveNext
 	|-List.Enumerator<PlayerItemRecipe>.MoveNext
 	|-List.Enumerator<ReflectionProbeEx.RenderListEntry>.MoveNext
@@ -1215,6 +1218,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WeightedStringList.Container>.MoveNextRare
 	|-List.Enumerator<GameStat.Stat>.MoveNextRare
 	|-List.Enumerator<ImageStorageEntity.ImageRequest>.MoveNextRare
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>.MoveNextRare
 	|-List.Enumerator<MagnetCrane.MagnetCraneSnapshot>.MoveNextRare
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>.MoveNextRare
 	|-List.Enumerator<PlayerItemRecipe>.MoveNextRare
@@ -1757,6 +1761,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<RCon.BannedAddresses>.get_Current
 	|-List.Enumerator<WeightedStringList.Container>.get_Current
 	|-List.Enumerator<GameStat.Stat>.get_Current
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>.get_Current
 	|-List.Enumerator<MagnetCrane.MagnetCraneSnapshot>.get_Current
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>.get_Current
 	|-List.Enumerator<PlayerItemRecipe>.get_Current
@@ -1902,6 +1907,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WeightedStringList.Container>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<GameStat.Stat>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<ImageStorageEntity.ImageRequest>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<MagnetCrane.MagnetCraneSnapshot>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<PlayerItemRecipe>.System.Collections.IEnumerator.get_Current
@@ -2104,6 +2110,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WeightedStringList.Container>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<GameStat.Stat>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<ImageStorageEntity.ImageRequest>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<InvokeHandlerBase.InvokeTiming<object>>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<MagnetCrane.MagnetCraneSnapshot>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<ParticleSystemContainer.ParticleSystemGroup>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<PlayerItemRecipe>.System.Collections.IEnumerator.Reset

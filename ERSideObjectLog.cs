@@ -1,4 +1,4 @@
-public class ERSideObjectLog : MonoBehaviour // TypeDefIndex: 7233
+public class ERSideObjectLog : MonoBehaviour // TypeDefIndex: 7234
 {
 	public List<SideObjectLog> QOQDQOOQDDQOOQ; 
 	public List<int> ints; 

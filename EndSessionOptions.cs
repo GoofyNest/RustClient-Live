@@ -1,4 +1,4 @@
-public struct EndSessionOptions // TypeDefIndex: 8478
+public struct EndSessionOptions // TypeDefIndex: 8479
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <SessionName>k__BackingField; 

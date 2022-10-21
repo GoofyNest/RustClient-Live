@@ -1,4 +1,4 @@
-public class OQCDCDQCCD : MonoBehaviour // TypeDefIndex: 7271
+public class OQCDCDQCCD : MonoBehaviour // TypeDefIndex: 7272
 {
 
 	public static void OQQODODQCQ(ERCrossingPrefabs scr, Vector3[] meshVecs, ref Vector3[] surfaceMeshVecs) { }

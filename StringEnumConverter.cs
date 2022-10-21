@@ -1,4 +1,4 @@
-public class StringEnumConverter : JsonConverter // TypeDefIndex: 6110
+public class StringEnumConverter : JsonConverter // TypeDefIndex: 6111
 {
 	[CompilerGeneratedAttribute] 
 	private bool <CamelCaseText>k__BackingField; 

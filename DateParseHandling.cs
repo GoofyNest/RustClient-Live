@@ -1,4 +1,4 @@
-public enum DateParseHandling // TypeDefIndex: 5870
+public enum DateParseHandling // TypeDefIndex: 5871
 {
 	public int value__; 
 	public const DateParseHandling None = 0;

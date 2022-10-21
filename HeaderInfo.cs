@@ -11,7 +11,7 @@ internal class HeaderInfo // TypeDefIndex: 2915
 
 }
 
-internal abstract class HeaderInfo // TypeDefIndex: 5773
+internal abstract class HeaderInfo // TypeDefIndex: 5774
 {
 	public bool AllowsMany; 
 	public readonly HttpHeaderKind HeaderKind; 
@@ -86,7 +86,7 @@ internal abstract class HeaderInfo // TypeDefIndex: 5773
 
 }
 
-private class HeaderInfo.HeaderTypeInfo<T, U> : HeaderInfo // TypeDefIndex: 5774
+private class HeaderInfo.HeaderTypeInfo<T, U> : HeaderInfo // TypeDefIndex: 5775
 {
 	private readonly TryParseDelegate<T> parser; 
 
@@ -150,7 +150,7 @@ private class HeaderInfo.HeaderTypeInfo<T, U> : HeaderInfo // TypeDefIndex: 5774
 
 }
 
-private class HeaderInfo.CollectionHeaderTypeInfo<T, U> : HeaderInfo.HeaderTypeInfo<T, U> // TypeDefIndex: 5775
+private class HeaderInfo.CollectionHeaderTypeInfo<T, U> : HeaderInfo.HeaderTypeInfo<T, U> // TypeDefIndex: 5776
 {
 	private readonly int minimalCount; 
 	private readonly string separator; 

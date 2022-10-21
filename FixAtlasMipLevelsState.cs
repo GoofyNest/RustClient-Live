@@ -1,4 +1,4 @@
-internal enum FixAtlasMipLevelsState // TypeDefIndex: 12166
+internal enum FixAtlasMipLevelsState // TypeDefIndex: 12168
 {
 	public int value__; 
 	public const FixAtlasMipLevelsState Skipped = 0;

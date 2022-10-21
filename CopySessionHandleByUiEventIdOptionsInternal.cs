@@ -1,4 +1,4 @@
-internal struct CopySessionHandleByUiEventIdOptionsInternal : ISettable<CopySessionHandleByUiEventIdOptions>, IDisposable // TypeDefIndex: 8463
+internal struct CopySessionHandleByUiEventIdOptionsInternal : ISettable<CopySessionHandleByUiEventIdOptions>, IDisposable // TypeDefIndex: 8464
 {
 	private int m_ApiVersion; 
 	private ulong m_UiEventId; 

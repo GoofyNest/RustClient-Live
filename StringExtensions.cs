@@ -64,7 +64,7 @@ private sealed class StringExtensions.<>c // TypeDefIndex: 4851
 
 }
 
-public static class StringExtensions // TypeDefIndex: 5608
+public static class StringExtensions // TypeDefIndex: 5609
 {
 
 	[ExtensionAttribute] 

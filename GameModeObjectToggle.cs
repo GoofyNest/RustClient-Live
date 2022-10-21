@@ -1,4 +1,4 @@
-public class GameModeObjectToggle : BaseMonoBehaviour // TypeDefIndex: 11604
+public class GameModeObjectToggle : BaseMonoBehaviour // TypeDefIndex: 11606
 {
 	public string[] gameModeTags; 
 	public string[] tagsToDisable; 

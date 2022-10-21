@@ -1,4 +1,4 @@
-public enum MetricsAccountIdType // TypeDefIndex: 9039
+public enum MetricsAccountIdType // TypeDefIndex: 9040
 {
 	public int value__; 
 	public const MetricsAccountIdType Epic = 0;

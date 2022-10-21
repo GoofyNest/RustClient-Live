@@ -1,4 +1,4 @@
-public class HttpRequestException : Exception // TypeDefIndex: 5757
+public class HttpRequestException : Exception // TypeDefIndex: 5758
 {
 
 	public void .ctor() { }

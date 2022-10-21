@@ -1,4 +1,4 @@
-internal struct ExternalAccountInfoInternal : IGettable<ExternalAccountInfo>, ISettable<ExternalAccountInfo>, IDisposable // TypeDefIndex: 9570
+internal struct ExternalAccountInfoInternal : IGettable<ExternalAccountInfo>, ISettable<ExternalAccountInfo>, IDisposable // TypeDefIndex: 9571
 {
 	private int m_ApiVersion; 
 	private IntPtr m_ProductUserId; 

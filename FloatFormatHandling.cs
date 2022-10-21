@@ -1,4 +1,4 @@
-public enum FloatFormatHandling // TypeDefIndex: 5872
+public enum FloatFormatHandling // TypeDefIndex: 5873
 {
 	public int value__; 
 	public const FloatFormatHandling String = 0;

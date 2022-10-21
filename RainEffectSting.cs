@@ -1,4 +1,4 @@
-public class RainEffectSting : WeatherEffectSting // TypeDefIndex: 11799
+public class RainEffectSting : WeatherEffectSting // TypeDefIndex: 11801
 {
 
 	protected override float GetCurrentIntensity() { }

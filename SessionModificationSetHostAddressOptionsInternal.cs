@@ -1,4 +1,4 @@
-internal struct SessionModificationSetHostAddressOptionsInternal : ISettable<SessionModificationSetHostAddressOptions>, IDisposable // TypeDefIndex: 8564
+internal struct SessionModificationSetHostAddressOptionsInternal : ISettable<SessionModificationSetHostAddressOptions>, IDisposable // TypeDefIndex: 8565
 {
 	private int m_ApiVersion; 
 	private IntPtr m_HostAddress; 

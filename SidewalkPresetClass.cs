@@ -1,4 +1,4 @@
-public class SidewalkPresetClass // TypeDefIndex: 7262
+public class SidewalkPresetClass // TypeDefIndex: 7263
 {
 	public string presetName; 
 	public double id; 

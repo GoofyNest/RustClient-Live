@@ -1,4 +1,4 @@
-public class RgbEffects : SingletonComponent<RgbEffects> // TypeDefIndex: 12434
+public class RgbEffects : SingletonComponent<RgbEffects> // TypeDefIndex: 12436
 {
 	[ClientVar] 
 	public static bool Enabled; 

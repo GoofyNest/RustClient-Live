@@ -1,4 +1,4 @@
-public class GranuleInfo // TypeDefIndex: 7417
+public class GranuleInfo // TypeDefIndex: 7418
 {
 	internal int BigValues; 
 	internal int BlockType; 

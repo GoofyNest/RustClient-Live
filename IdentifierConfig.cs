@@ -1,4 +1,4 @@
-public class IdentifierConfig : UIDialog // TypeDefIndex: 10393
+public class IdentifierConfig : UIDialog // TypeDefIndex: 10394
 {
 	private IRemoteControllable rc; 
 	public InputField input; 

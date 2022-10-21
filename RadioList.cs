@@ -1,4 +1,4 @@
-public class RadioList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6510
+public class RadioList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6511
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

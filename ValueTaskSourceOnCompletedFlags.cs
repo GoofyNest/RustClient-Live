@@ -1,4 +1,4 @@
-public enum ValueTaskSourceOnCompletedFlags // TypeDefIndex: 7122
+public enum ValueTaskSourceOnCompletedFlags // TypeDefIndex: 7123
 {
 	public int value__; 
 	public const ValueTaskSourceOnCompletedFlags None = 0;

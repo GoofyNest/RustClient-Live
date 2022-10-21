@@ -1,4 +1,4 @@
-public class InvokeHandlerFixedTime : InvokeHandlerBase<InvokeHandlerFixedTime> // TypeDefIndex: 5571
+public class InvokeHandlerFixedTime : InvokeHandlerBase<InvokeHandlerFixedTime> // TypeDefIndex: 5572
 {
 
 	protected override float GetTime() { }

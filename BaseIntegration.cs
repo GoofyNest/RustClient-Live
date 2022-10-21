@@ -1,4 +1,4 @@
-public abstract class BaseIntegration // TypeDefIndex: 6181
+public abstract class BaseIntegration // TypeDefIndex: 6182
 {
 	public abstract string PublicKey { get; }
 	public virtual string Bucket { get; }

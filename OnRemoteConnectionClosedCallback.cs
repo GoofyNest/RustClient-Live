@@ -1,4 +1,4 @@
-public sealed class OnRemoteConnectionClosedCallback : MulticastDelegate // TypeDefIndex: 8976
+public sealed class OnRemoteConnectionClosedCallback : MulticastDelegate // TypeDefIndex: 8977
 {
 
 	public void .ctor(object object, IntPtr method) { }

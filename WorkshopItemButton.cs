@@ -1,4 +1,4 @@
-internal class WorkshopItemButton : MonoBehaviour // TypeDefIndex: 7749
+internal class WorkshopItemButton : MonoBehaviour // TypeDefIndex: 7750
 {
 	public TextMeshProUGUI Name; 
 	public TextMeshProUGUI Description; 

@@ -1,4 +1,4 @@
-public class PaintedItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6433
+public class PaintedItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6434
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-public struct LobbyDetailsInfo // TypeDefIndex: 9141
+public struct LobbyDetailsInfo // TypeDefIndex: 9142
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <LobbyId>k__BackingField; 

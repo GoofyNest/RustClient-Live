@@ -1,4 +1,4 @@
-public struct MaterialPropertyDesc // TypeDefIndex: 12414
+public struct MaterialPropertyDesc // TypeDefIndex: 12416
 {
 	public int nameID; 
 	public Type type; 

@@ -1,4 +1,4 @@
-public class SubmarineSonar : FacepunchBehaviour // TypeDefIndex: 13427
+public class SubmarineSonar : FacepunchBehaviour // TypeDefIndex: 13429
 {
 	[SerializeField] 
 	private float range; 
@@ -52,7 +52,7 @@ public class SubmarineSonar : FacepunchBehaviour // TypeDefIndex: 13427
 
 }
 
-private struct SubmarineSonar.SonarBlip : IComparable<SubmarineSonar.SonarBlip> // TypeDefIndex: 13428
+private struct SubmarineSonar.SonarBlip : IComparable<SubmarineSonar.SonarBlip> // TypeDefIndex: 13430
 {
 	public readonly Color colour; 
 	public readonly float dist; 

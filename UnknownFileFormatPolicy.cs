@@ -1,4 +1,4 @@
-public enum UnknownFileFormatPolicy // TypeDefIndex: 7616
+public enum UnknownFileFormatPolicy // TypeDefIndex: 7617
 {
 	public int value__; 
 	public const UnknownFileFormatPolicy Ignore = 0;

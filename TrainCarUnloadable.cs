@@ -1,4 +1,4 @@
-public class TrainCarUnloadable : TrainCar // TypeDefIndex: 10176
+public class TrainCarUnloadable : TrainCar // TypeDefIndex: 10177
 {
 	private Option __menuOption_Menu_Open; 
 	[HeaderAttribute] 
@@ -93,7 +93,7 @@ public class TrainCarUnloadable : TrainCar // TypeDefIndex: 10176
 
 }
 
-public enum TrainCarUnloadable.WagonType // TypeDefIndex: 10177
+public enum TrainCarUnloadable.WagonType // TypeDefIndex: 10178
 {
 	public int value__; 
 	public const TrainCarUnloadable.WagonType Ore = 0;

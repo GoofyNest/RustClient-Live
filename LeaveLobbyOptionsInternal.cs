@@ -1,4 +1,4 @@
-internal struct LeaveLobbyOptionsInternal : ISettable<LeaveLobbyOptions>, IDisposable // TypeDefIndex: 9118
+internal struct LeaveLobbyOptionsInternal : ISettable<LeaveLobbyOptions>, IDisposable // TypeDefIndex: 9119
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

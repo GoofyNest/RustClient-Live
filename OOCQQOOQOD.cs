@@ -1,4 +1,4 @@
-public class OOCQQOOQOD : MonoBehaviour // TypeDefIndex: 7270
+public class OOCQQOOQOD : MonoBehaviour // TypeDefIndex: 7271
 {
 
 	public static void OOQCQDDOOC(ERModularBase baseScript, ERCrossingPrefabs scr, int connectionSegment, ERModularRoad road, int startend) { }

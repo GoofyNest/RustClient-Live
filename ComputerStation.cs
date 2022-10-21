@@ -1,4 +1,4 @@
-public class ComputerStation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6380
+public class ComputerStation : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6381
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class ComputerStation : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class ComputerStation : BaseMountable // TypeDefIndex: 10270
+public class ComputerStation : BaseMountable // TypeDefIndex: 10271
 {
 	[HeaderAttribute] 
 	public GameObjectRef menuPrefab; 

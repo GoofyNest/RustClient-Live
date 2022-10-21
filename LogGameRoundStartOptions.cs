@@ -1,4 +1,4 @@
-public struct LogGameRoundStartOptions // TypeDefIndex: 9761
+public struct LogGameRoundStartOptions // TypeDefIndex: 9762
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <SessionIdentifier>k__BackingField; 

@@ -1,4 +1,4 @@
-public class BurstClothHitBoxCollision : BurstCloth, IClientComponent, IPrefabPreProcess // TypeDefIndex: 10384
+public class BurstClothHitBoxCollision : BurstCloth, IClientComponent, IPrefabPreProcess // TypeDefIndex: 10385
 {
 	[HeaderAttribute] 
 	public bool UseLocalGravity; 

@@ -127,7 +127,7 @@ public enum Result // TypeDefIndex: 5139
 
 }
 
-public class Result.Entry<T> // TypeDefIndex: 6265
+public class Result.Entry<T> // TypeDefIndex: 6266
 {
 	public T Content; 
 	public string Id; 
@@ -146,7 +146,7 @@ public class Result.Entry<T> // TypeDefIndex: 6265
 
 }
 
-public enum Result // TypeDefIndex: 8284
+public enum Result // TypeDefIndex: 8285
 {
 	public int value__; 
 	public const Result Success = 0;

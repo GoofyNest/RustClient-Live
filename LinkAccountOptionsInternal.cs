@@ -1,4 +1,4 @@
-internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9582
+internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9583
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -20,7 +20,7 @@ internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDis
 
 }
 
-internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9658
+internal struct LinkAccountOptionsInternal : ISettable<LinkAccountOptions>, IDisposable // TypeDefIndex: 9659
 {
 	private int m_ApiVersion; 
 	private LinkAccountFlags m_LinkAccountFlags; 

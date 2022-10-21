@@ -1,4 +1,4 @@
-public struct DumpSessionStateOptions // TypeDefIndex: 8474
+public struct DumpSessionStateOptions // TypeDefIndex: 8475
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <SessionName>k__BackingField; 

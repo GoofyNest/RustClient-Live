@@ -1,4 +1,4 @@
-internal struct CopyLeaderboardUserScoreByIndexOptionsInternal : ISettable<CopyLeaderboardUserScoreByIndexOptions>, IDisposable // TypeDefIndex: 9275
+internal struct CopyLeaderboardUserScoreByIndexOptionsInternal : ISettable<CopyLeaderboardUserScoreByIndexOptions>, IDisposable // TypeDefIndex: 9276
 {
 	private int m_ApiVersion; 
 	private uint m_LeaderboardUserScoreIndex; 

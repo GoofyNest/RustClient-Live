@@ -1,4 +1,4 @@
-public struct FlexPadding // TypeDefIndex: 6824
+public struct FlexPadding // TypeDefIndex: 6825
 {
 	public float left; 
 	public float right; 

@@ -1,4 +1,4 @@
-internal struct SessionSearchFindCallbackInfoInternal : ICallbackInfoInternal, IGettable<SessionSearchFindCallbackInfo>, ISettable<SessionSearchFindCallbackInfo>, IDisposable // TypeDefIndex: 8577
+internal struct SessionSearchFindCallbackInfoInternal : ICallbackInfoInternal, IGettable<SessionSearchFindCallbackInfo>, ISettable<SessionSearchFindCallbackInfo>, IDisposable // TypeDefIndex: 8578
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

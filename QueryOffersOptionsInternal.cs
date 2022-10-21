@@ -1,4 +1,4 @@
-internal struct QueryOffersOptionsInternal : ISettable<QueryOffersOptions>, IDisposable // TypeDefIndex: 9491
+internal struct QueryOffersOptionsInternal : ISettable<QueryOffersOptions>, IDisposable // TypeDefIndex: 9492
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

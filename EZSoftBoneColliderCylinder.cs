@@ -1,4 +1,4 @@
-public class EZSoftBoneColliderCylinder : EZSoftBoneColliderBase // TypeDefIndex: 7170
+public class EZSoftBoneColliderCylinder : EZSoftBoneColliderBase // TypeDefIndex: 7171
 {
 	[SerializeField] 
 	private float m_Margin; 

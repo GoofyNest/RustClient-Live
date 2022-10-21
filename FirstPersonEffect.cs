@@ -1,4 +1,4 @@
-public class FirstPersonEffect : MonoBehaviour, IEffect, IPrefabPreProcess // TypeDefIndex: 11066
+public class FirstPersonEffect : MonoBehaviour, IEffect, IPrefabPreProcess // TypeDefIndex: 11068
 {
 	public bool isGunShot; 
 	[HideInInspector] 

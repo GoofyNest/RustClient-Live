@@ -154,7 +154,7 @@ internal class SR // TypeDefIndex: 4899
 
 }
 
-internal static class SR // TypeDefIndex: 6270
+internal static class SR // TypeDefIndex: 6271
 {
 
 internal class <Module>
@@ -184,7 +184,7 @@ internal static class SR
 
 }
 
-internal static class SR // TypeDefIndex: 6903
+internal static class SR // TypeDefIndex: 6904
 {
 	private static ResourceManager s_resourceManager; 
 	[CompilerGeneratedAttribute] 

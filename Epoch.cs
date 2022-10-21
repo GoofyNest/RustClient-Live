@@ -13,7 +13,7 @@ internal static class Epoch // TypeDefIndex: 5257
 
 }
 
-public static class Epoch // TypeDefIndex: 6241
+public static class Epoch // TypeDefIndex: 6242
 {
 	private static readonly DateTime epoch; 
 

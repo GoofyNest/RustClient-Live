@@ -1,4 +1,4 @@
-public struct GetJoinInfoOptions // TypeDefIndex: 8817
+public struct GetJoinInfoOptions // TypeDefIndex: 8818
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 

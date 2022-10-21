@@ -1,4 +1,4 @@
-public struct EndSessionCallbackInfo : ICallbackInfo // TypeDefIndex: 8476
+public struct EndSessionCallbackInfo : ICallbackInfo // TypeDefIndex: 8477
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

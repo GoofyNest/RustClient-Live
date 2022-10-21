@@ -1,4 +1,4 @@
-internal struct RedeemEntitlementsCallbackInfoInternal : ICallbackInfoInternal, IGettable<RedeemEntitlementsCallbackInfo>, ISettable<RedeemEntitlementsCallbackInfo>, IDisposable // TypeDefIndex: 9501
+internal struct RedeemEntitlementsCallbackInfoInternal : ICallbackInfoInternal, IGettable<RedeemEntitlementsCallbackInfo>, ISettable<RedeemEntitlementsCallbackInfo>, IDisposable // TypeDefIndex: 9502
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

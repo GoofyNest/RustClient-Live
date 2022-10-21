@@ -1,4 +1,4 @@
-public class Bloom : PostEffectsBase // TypeDefIndex: 8159
+public class Bloom : PostEffectsBase // TypeDefIndex: 8160
 {
 	public Bloom.TweakMode tweakMode; 
 	public Bloom.BloomScreenBlendMode screenBlendMode; 
@@ -50,7 +50,7 @@ public class Bloom : PostEffectsBase // TypeDefIndex: 8159
 
 }
 
-public enum Bloom.LensFlareStyle // TypeDefIndex: 8160
+public enum Bloom.LensFlareStyle // TypeDefIndex: 8161
 {
 	public int value__; 
 	public const Bloom.LensFlareStyle Ghosting = 0;
@@ -59,7 +59,7 @@ public enum Bloom.LensFlareStyle // TypeDefIndex: 8160
 
 }
 
-public enum Bloom.TweakMode // TypeDefIndex: 8161
+public enum Bloom.TweakMode // TypeDefIndex: 8162
 {
 	public int value__; 
 	public const Bloom.TweakMode Basic = 0;
@@ -67,7 +67,7 @@ public enum Bloom.TweakMode // TypeDefIndex: 8161
 
 }
 
-public enum Bloom.HDRBloomMode // TypeDefIndex: 8162
+public enum Bloom.HDRBloomMode // TypeDefIndex: 8163
 {
 	public int value__; 
 	public const Bloom.HDRBloomMode Auto = 0;
@@ -76,7 +76,7 @@ public enum Bloom.HDRBloomMode // TypeDefIndex: 8162
 
 }
 
-public enum Bloom.BloomScreenBlendMode // TypeDefIndex: 8163
+public enum Bloom.BloomScreenBlendMode // TypeDefIndex: 8164
 {
 	public int value__; 
 	public const Bloom.BloomScreenBlendMode Screen = 0;
@@ -84,7 +84,7 @@ public enum Bloom.BloomScreenBlendMode // TypeDefIndex: 8163
 
 }
 
-public enum Bloom.BloomQuality // TypeDefIndex: 8164
+public enum Bloom.BloomQuality // TypeDefIndex: 8165
 {
 	public int value__; 
 	public const Bloom.BloomQuality Cheap = 0;
@@ -92,7 +92,7 @@ public enum Bloom.BloomQuality // TypeDefIndex: 8164
 
 }
 
-public sealed class Bloom : PostProcessEffectSettings // TypeDefIndex: 13515
+public sealed class Bloom : PostProcessEffectSettings // TypeDefIndex: 13517
 {
 	[MinAttribute] 
 	[TooltipAttribute] 

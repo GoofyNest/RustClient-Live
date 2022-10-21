@@ -1,4 +1,4 @@
-public class DeployVolumeEntityBounds : DeployVolume // TypeDefIndex: 11566
+public class DeployVolumeEntityBounds : DeployVolume // TypeDefIndex: 11568
 {
 	private Bounds bounds; 
 

@@ -1,4 +1,4 @@
-internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9279
+internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9280
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LeaderboardId; 
@@ -44,7 +44,7 @@ internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition
 
 }
 
-internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9900
+internal struct DefinitionInternal : IGettable<Definition>, ISettable<Definition>, IDisposable // TypeDefIndex: 9901
 {
 	private int m_ApiVersion; 
 	private IntPtr m_AchievementId; 

@@ -1,4 +1,4 @@
-internal struct EndPlayerSessionOptionsInternal : ISettable<EndPlayerSessionOptions>, IDisposable // TypeDefIndex: 9036
+internal struct EndPlayerSessionOptionsInternal : ISettable<EndPlayerSessionOptions>, IDisposable // TypeDefIndex: 9037
 {
 	private int m_ApiVersion; 
 	private EndPlayerSessionOptionsAccountIdInternal m_AccountId; 

@@ -1,4 +1,4 @@
-public class ElectricGenerator : IOEntity // TypeDefIndex: 11518
+public class ElectricGenerator : IOEntity // TypeDefIndex: 11520
 {
 	public float electricAmount; 
 

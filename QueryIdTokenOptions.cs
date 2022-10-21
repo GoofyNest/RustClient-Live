@@ -1,4 +1,4 @@
-public struct QueryIdTokenOptions // TypeDefIndex: 9690
+public struct QueryIdTokenOptions // TypeDefIndex: 9691
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 

@@ -1,4 +1,4 @@
-internal struct VerifyUserAuthCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyUserAuthCallbackInfo>, ISettable<VerifyUserAuthCallbackInfo>, IDisposable // TypeDefIndex: 9699
+internal struct VerifyUserAuthCallbackInfoInternal : ICallbackInfoInternal, IGettable<VerifyUserAuthCallbackInfo>, ISettable<VerifyUserAuthCallbackInfo>, IDisposable // TypeDefIndex: 9700
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

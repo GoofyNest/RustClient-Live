@@ -1,4 +1,4 @@
-public class HitNumber : MonoBehaviour // TypeDefIndex: 10455
+public class HitNumber : MonoBehaviour // TypeDefIndex: 10456
 {
 	public HitNumber.HitType hitType; 
 
@@ -11,7 +11,7 @@ public class HitNumber : MonoBehaviour // TypeDefIndex: 10455
 
 }
 
-public enum HitNumber.HitType // TypeDefIndex: 10456
+public enum HitNumber.HitType // TypeDefIndex: 10457
 {
 	public int value__; 
 	public const HitNumber.HitType Yellow = 0;

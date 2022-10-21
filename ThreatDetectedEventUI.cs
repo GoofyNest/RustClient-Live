@@ -1,4 +1,4 @@
-public class ThreatDetectedEventUI : BaseEventUI // TypeDefIndex: 12543
+public class ThreatDetectedEventUI : BaseEventUI // TypeDefIndex: 12545
 {
 
 	public override AIEventData Save() { }

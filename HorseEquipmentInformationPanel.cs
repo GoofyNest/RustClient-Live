@@ -1,4 +1,4 @@
-public class HorseEquipmentInformationPanel : ItemInformationPanel // TypeDefIndex: 12741
+public class HorseEquipmentInformationPanel : ItemInformationPanel // TypeDefIndex: 12743
 {
 	public ItemTextValue horseProtectionDisplay; 
 	public ItemTextValue riderProtectionDisplay; 

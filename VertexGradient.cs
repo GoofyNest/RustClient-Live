@@ -1,4 +1,4 @@
-public struct VertexGradient // TypeDefIndex: 6791
+public struct VertexGradient // TypeDefIndex: 6792
 {
 	public Color topLeft; 
 	public Color topRight; 

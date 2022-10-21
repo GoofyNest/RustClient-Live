@@ -1,4 +1,4 @@
-public static class TerrainBiome // TypeDefIndex: 7788
+public static class TerrainBiome // TypeDefIndex: 7789
 {
 
 public static class TerrainBiome
@@ -24,7 +24,7 @@ public static class TerrainBiome
 
 }
 
-public enum TerrainBiome.Enum // TypeDefIndex: 7789
+public enum TerrainBiome.Enum // TypeDefIndex: 7790
 {
 	public int value__; 
 	public const TerrainBiome.Enum Arid = 1;

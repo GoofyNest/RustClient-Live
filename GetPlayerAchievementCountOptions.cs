@@ -1,4 +1,4 @@
-public struct GetPlayerAchievementCountOptions // TypeDefIndex: 9905
+public struct GetPlayerAchievementCountOptions // TypeDefIndex: 9906
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <UserId>k__BackingField; 

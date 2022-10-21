@@ -1,4 +1,4 @@
-public class ReskinEffect : MonoBehaviour // TypeDefIndex: 10596
+public class ReskinEffect : MonoBehaviour // TypeDefIndex: 10597
 {
 	public ParticleSystem TargetSystem; 
 

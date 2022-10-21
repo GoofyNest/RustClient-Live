@@ -1,4 +1,4 @@
-internal struct LoginStatusChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<LoginStatusChangedCallbackInfo>, ISettable<LoginStatusChangedCallbackInfo>, IDisposable // TypeDefIndex: 9588
+internal struct LoginStatusChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<LoginStatusChangedCallbackInfo>, ISettable<LoginStatusChangedCallbackInfo>, IDisposable // TypeDefIndex: 9589
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 
@@ -40,7 +40,7 @@ internal struct LoginStatusChangedCallbackInfoInternal : ICallbackInfoInternal, 
 
 }
 
-internal struct LoginStatusChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<LoginStatusChangedCallbackInfo>, ISettable<LoginStatusChangedCallbackInfo>, IDisposable // TypeDefIndex: 9665
+internal struct LoginStatusChangedCallbackInfoInternal : ICallbackInfoInternal, IGettable<LoginStatusChangedCallbackInfo>, ISettable<LoginStatusChangedCallbackInfo>, IDisposable // TypeDefIndex: 9666
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

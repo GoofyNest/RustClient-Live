@@ -1,4 +1,4 @@
-public struct CopyLeaderboardDefinitionByLeaderboardIdOptions // TypeDefIndex: 9268
+public struct CopyLeaderboardDefinitionByLeaderboardIdOptions // TypeDefIndex: 9269
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <LeaderboardId>k__BackingField; 

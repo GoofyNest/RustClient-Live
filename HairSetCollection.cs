@@ -1,4 +1,4 @@
-public class HairSetCollection : ScriptableObject // TypeDefIndex: 12464
+public class HairSetCollection : ScriptableObject // TypeDefIndex: 12466
 {
 	public HairSetCollection.HairSetEntry[] Head; 
 	public HairSetCollection.HairSetEntry[] Eyebrow; 
@@ -19,7 +19,7 @@ public class HairSetCollection : ScriptableObject // TypeDefIndex: 12464
 
 }
 
-public struct HairSetCollection.HairSetEntry // TypeDefIndex: 12465
+public struct HairSetCollection.HairSetEntry // TypeDefIndex: 12467
 {
 	public HairSet HairSet; 
 	public GameObjectRef HairPrefab; 

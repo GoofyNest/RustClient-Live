@@ -1,4 +1,4 @@
-public class ElectricalBranch : IOEntity // TypeDefIndex: 10091
+public class ElectricalBranch : IOEntity // TypeDefIndex: 10092
 {
 	private Option __menuOption_Menu_SetBranch; 
 	public int branchAmount; 

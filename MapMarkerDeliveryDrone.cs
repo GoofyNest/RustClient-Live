@@ -1,4 +1,4 @@
-public class MapMarkerDeliveryDrone : MapMarker // TypeDefIndex: 10511
+public class MapMarkerDeliveryDrone : MapMarker // TypeDefIndex: 10512
 {
 	private RectTransform _rectTransform; 
 

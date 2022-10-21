@@ -1,4 +1,4 @@
-public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 12418
+public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 12420
 {
 	private static readonly uint[,] qualitySamples; 
 	private static Vector4[] sampleData; 
@@ -201,7 +201,7 @@ public class ReflectionProbeEx : MonoBehaviour // TypeDefIndex: 12418
 
 }
 
-private struct ReflectionProbeEx.CubemapSkyboxVertex // TypeDefIndex: 12419
+private struct ReflectionProbeEx.CubemapSkyboxVertex // TypeDefIndex: 12421
 {
 	public float x; 
 	public float y; 
@@ -213,7 +213,7 @@ private struct ReflectionProbeEx.CubemapSkyboxVertex // TypeDefIndex: 12419
 
 }
 
-private struct ReflectionProbeEx.CubemapFaceMatrices // TypeDefIndex: 12420
+private struct ReflectionProbeEx.CubemapFaceMatrices // TypeDefIndex: 12422
 {
 	public Matrix4x4 worldToView; 
 	public Matrix4x4 viewToWorld; 
@@ -223,7 +223,7 @@ private struct ReflectionProbeEx.CubemapFaceMatrices // TypeDefIndex: 12420
 
 }
 
-public enum ReflectionProbeEx.ConvolutionQuality // TypeDefIndex: 12421
+public enum ReflectionProbeEx.ConvolutionQuality // TypeDefIndex: 12423
 {
 	public int value__; 
 	public const ReflectionProbeEx.ConvolutionQuality Lowest = 0;
@@ -234,7 +234,7 @@ public enum ReflectionProbeEx.ConvolutionQuality // TypeDefIndex: 12421
 
 }
 
-public struct ReflectionProbeEx.RenderListEntry // TypeDefIndex: 12422
+public struct ReflectionProbeEx.RenderListEntry // TypeDefIndex: 12424
 {
 	public Renderer renderer; 
 	public bool alwaysEnabled; 
@@ -244,7 +244,7 @@ public struct ReflectionProbeEx.RenderListEntry // TypeDefIndex: 12422
 
 }
 
-private enum ReflectionProbeEx.TimeSlicingState // TypeDefIndex: 12423
+private enum ReflectionProbeEx.TimeSlicingState // TypeDefIndex: 12425
 {
 	public int value__; 
 	public const ReflectionProbeEx.TimeSlicingState Shadow = 0;

@@ -14,7 +14,7 @@ public enum AuthResponse // TypeDefIndex: 5142
 
 }
 
-public enum AuthResponse // TypeDefIndex: 5687
+public enum AuthResponse // TypeDefIndex: 5688
 {
 
 private struct <PrivateImplementationDetails>.__StaticArrayInitTypeSize=40

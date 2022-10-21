@@ -1,4 +1,4 @@
-public struct ERVSData // TypeDefIndex: 7227
+public struct ERVSData // TypeDefIndex: 7228
 {
 	public Vector3 position; 
 	public bool active; 

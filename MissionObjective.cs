@@ -1,11 +1,11 @@
-public class MissionObjective : ScriptableObject // TypeDefIndex: 11943
+public class MissionObjective : ScriptableObject // TypeDefIndex: 11945
 {
 
 	public void .ctor() { }
 
 }
 
-public class MissionObjective_AcquireItem : MissionObjective // TypeDefIndex: 11944
+public class MissionObjective_AcquireItem : MissionObjective // TypeDefIndex: 11946
 {
 	public string itemShortname; 
 	public int targetItemAmount; 
@@ -15,7 +15,7 @@ public class MissionObjective_AcquireItem : MissionObjective // TypeDefIndex: 11
 
 }
 
-public class MissionObjective_FreeCrate : MissionObjective // TypeDefIndex: 11945
+public class MissionObjective_FreeCrate : MissionObjective // TypeDefIndex: 11947
 {
 	public int targetAmount; 
 
@@ -24,7 +24,7 @@ public class MissionObjective_FreeCrate : MissionObjective // TypeDefIndex: 1194
 
 }
 
-public class MissionObjective_Harvest : MissionObjective // TypeDefIndex: 11946
+public class MissionObjective_Harvest : MissionObjective // TypeDefIndex: 11948
 {
 	public string[] itemShortnames; 
 	public int targetItemAmount; 
@@ -34,7 +34,7 @@ public class MissionObjective_Harvest : MissionObjective // TypeDefIndex: 11946
 
 }
 
-public class MissionObjective_KillEntity : MissionObjective // TypeDefIndex: 11947
+public class MissionObjective_KillEntity : MissionObjective // TypeDefIndex: 11949
 {
 	public string[] targetPrefabIDs; 
 	public int numToKill; 
@@ -45,7 +45,7 @@ public class MissionObjective_KillEntity : MissionObjective // TypeDefIndex: 119
 
 }
 
-public class MissionObjective_Move : MissionObjective // TypeDefIndex: 11948
+public class MissionObjective_Move : MissionObjective // TypeDefIndex: 11950
 {
 	public string positionName; 
 	public float distForCompletion; 
@@ -56,7 +56,7 @@ public class MissionObjective_Move : MissionObjective // TypeDefIndex: 11948
 
 }
 
-public class MissionObjective_SpeakWith : MissionObjective // TypeDefIndex: 11949
+public class MissionObjective_SpeakWith : MissionObjective // TypeDefIndex: 11951
 {
 	public ItemAmount[] requiredReturnItems; 
 	public bool destroyReturnItems; 

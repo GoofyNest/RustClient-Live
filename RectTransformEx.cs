@@ -1,4 +1,4 @@
-public static class RectTransformEx // TypeDefIndex: 7036
+public static class RectTransformEx // TypeDefIndex: 7037
 {
 
 	[ExtensionAttribute] 

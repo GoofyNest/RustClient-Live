@@ -1,4 +1,4 @@
-public enum CompressionStrategy // TypeDefIndex: 6989
+public enum CompressionStrategy // TypeDefIndex: 6990
 {
 	public int value__; 
 	public const CompressionStrategy Default = 0;

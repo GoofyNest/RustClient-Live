@@ -1,7 +1,10 @@
-public class FPS : ConsoleSystem // TypeDefIndex: 13671
+public class FPS : ConsoleSystem // TypeDefIndex: 13673
 {
+	private static int _limit; 
 	[ClientVar] 
 	public static bool limitInBackground; 
+	[ClientVar] 
+	public static bool limitInMenu; 
 	public const int CappedFrameRateWhileInBackground = 15;
 	private static int m_graph; 
 
@@ -21,6 +24,8 @@ public class FPS : ConsoleSystem // TypeDefIndex: 13671
 	public static void set_graph(int value) { }
 
 	public void .ctor() { }
+
+	private static void .cctor() { }
 
 }
 

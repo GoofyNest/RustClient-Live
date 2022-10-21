@@ -1,4 +1,4 @@
-internal struct CopyPlayerSanctionByIndexOptionsInternal : ISettable<CopyPlayerSanctionByIndexOptions>, IDisposable // TypeDefIndex: 8610
+internal struct CopyPlayerSanctionByIndexOptionsInternal : ISettable<CopyPlayerSanctionByIndexOptions>, IDisposable // TypeDefIndex: 8611
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

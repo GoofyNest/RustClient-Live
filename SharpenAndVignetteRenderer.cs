@@ -1,4 +1,4 @@
-public class SharpenAndVignetteRenderer : PostProcessEffectRenderer<SharpenAndVignette> // TypeDefIndex: 11998
+public class SharpenAndVignetteRenderer : PostProcessEffectRenderer<SharpenAndVignette> // TypeDefIndex: 12000
 {
 	private Shader sharpenAndVigenetteShader; 
 

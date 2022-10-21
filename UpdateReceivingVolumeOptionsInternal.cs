@@ -1,4 +1,4 @@
-internal struct UpdateReceivingVolumeOptionsInternal : ISettable<UpdateReceivingVolumeOptions>, IDisposable // TypeDefIndex: 8715
+internal struct UpdateReceivingVolumeOptionsInternal : ISettable<UpdateReceivingVolumeOptions>, IDisposable // TypeDefIndex: 8716
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

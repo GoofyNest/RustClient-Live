@@ -1,4 +1,4 @@
-public class TextBuffer // TypeDefIndex: 6600
+public class TextBuffer // TypeDefIndex: 6601
 {
 	private Queue<string> buffer; 
 	private StringBuilder builder; 

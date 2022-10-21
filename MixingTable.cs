@@ -1,4 +1,4 @@
-public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6390
+public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6391
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class MixingTable : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class MixingTable : StorageContainer // TypeDefIndex: 10117
+public class MixingTable : StorageContainer // TypeDefIndex: 10118
 {
 	private Option __menuOption_Menu_TurnOff; 
 	private Option __menuOption_Menu_TurnOn; 

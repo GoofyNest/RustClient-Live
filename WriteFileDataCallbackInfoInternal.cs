@@ -1,4 +1,4 @@
-internal struct WriteFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<WriteFileDataCallbackInfo>, ISettable<WriteFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8920
+internal struct WriteFileDataCallbackInfoInternal : ICallbackInfoInternal, IGettable<WriteFileDataCallbackInfo>, ISettable<WriteFileDataCallbackInfo>, IDisposable // TypeDefIndex: 8921
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

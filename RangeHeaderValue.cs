@@ -1,4 +1,4 @@
-public class RangeHeaderValue : ICloneable // TypeDefIndex: 5808
+public class RangeHeaderValue : ICloneable // TypeDefIndex: 5809
 {
 	private List<RangeItemHeaderValue> ranges; 
 	private string unit; 

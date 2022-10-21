@@ -1,4 +1,4 @@
-public class TimerSwitch : IOEntity // TypeDefIndex: 10172
+public class TimerSwitch : IOEntity // TypeDefIndex: 10173
 {
 	private Option __menuOption_Menu_TurnOn; 
 	public float timerLength; 

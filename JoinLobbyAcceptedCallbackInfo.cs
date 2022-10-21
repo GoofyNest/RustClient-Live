@@ -1,4 +1,4 @@
-public struct JoinLobbyAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 9101
+public struct JoinLobbyAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 9102
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 

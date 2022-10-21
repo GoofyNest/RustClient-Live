@@ -1,4 +1,4 @@
-public class TechTreeLine : TechTreeWidget // TypeDefIndex: 12646
+public class TechTreeLine : TechTreeWidget // TypeDefIndex: 12648
 {
 	public RawImage center; 
 	public RawImage topLeft; 

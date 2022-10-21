@@ -1,4 +1,4 @@
-public struct UpdateParticipantVolumeOptions // TypeDefIndex: 8706
+public struct UpdateParticipantVolumeOptions // TypeDefIndex: 8707
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

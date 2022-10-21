@@ -1,4 +1,4 @@
-public class QDOODOQQDQODD // TypeDefIndex: 7188
+public class QDOODOQQDQODD // TypeDefIndex: 7189
 {
 	public Vector3 centerPoint; 
 	public Vector3 tmpCenterPoint; 

@@ -1,4 +1,4 @@
-internal class QueryResponse // TypeDefIndex: 6263
+internal class QueryResponse // TypeDefIndex: 6264
 {
 	public string Content; 
 	public string Id; 

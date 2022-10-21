@@ -1,4 +1,4 @@
-public class FlexTransition : MonoBehaviour // TypeDefIndex: 6826
+public class FlexTransition : MonoBehaviour // TypeDefIndex: 6827
 {
 	public FlexTransition.Definition[] Transitions; 
 	private readonly List<int> _pendingIds; 
@@ -21,7 +21,7 @@ public class FlexTransition : MonoBehaviour // TypeDefIndex: 6826
 
 }
 
-public enum FlexTransition.TransitionProperty // TypeDefIndex: 6827
+public enum FlexTransition.TransitionProperty // TypeDefIndex: 6828
 {
 	public int value__; 
 	public const FlexTransition.TransitionProperty PaddingLeft = 0;
@@ -42,7 +42,7 @@ public enum FlexTransition.TransitionProperty // TypeDefIndex: 6827
 
 }
 
-public struct FlexTransition.Definition // TypeDefIndex: 6828
+public struct FlexTransition.Definition // TypeDefIndex: 6829
 {
 	public FlexTransition.TransitionProperty Property; 
 	public Object Object; 
@@ -56,7 +56,7 @@ public struct FlexTransition.Definition // TypeDefIndex: 6828
 
 }
 
-private sealed class FlexTransition.<>c__DisplayClass9_0 // TypeDefIndex: 6829
+private sealed class FlexTransition.<>c__DisplayClass9_0 // TypeDefIndex: 6830
 {
 	public Image image; 
 	public Color startValue; 
@@ -69,7 +69,7 @@ private sealed class FlexTransition.<>c__DisplayClass9_0 // TypeDefIndex: 6829
 
 }
 
-private sealed class FlexTransition.<>c__DisplayClass9_1 // TypeDefIndex: 6830
+private sealed class FlexTransition.<>c__DisplayClass9_1 // TypeDefIndex: 6831
 {
 	public TMP_Text text; 
 	public Color startValue; 
@@ -82,7 +82,7 @@ private sealed class FlexTransition.<>c__DisplayClass9_1 // TypeDefIndex: 6830
 
 }
 
-private sealed class FlexTransition.<>c__DisplayClass9_2 // TypeDefIndex: 6831
+private sealed class FlexTransition.<>c__DisplayClass9_2 // TypeDefIndex: 6832
 {
 	public FlexElement element; 
 	public FlexTransition.TransitionProperty property; 
@@ -94,7 +94,7 @@ private sealed class FlexTransition.<>c__DisplayClass9_2 // TypeDefIndex: 6831
 
 }
 
-private sealed class FlexTransition.<>c // TypeDefIndex: 6832
+private sealed class FlexTransition.<>c // TypeDefIndex: 6833
 {
 	public static readonly FlexTransition.<>c <>9; 
 	public static Action<float, object> <>9__9_0; 

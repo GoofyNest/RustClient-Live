@@ -1,4 +1,4 @@
-public struct LobbyModificationSetMaxMembersOptions // TypeDefIndex: 9168
+public struct LobbyModificationSetMaxMembersOptions // TypeDefIndex: 9169
 {
 	[CompilerGeneratedAttribute] 
 	private uint <MaxMembers>k__BackingField; 

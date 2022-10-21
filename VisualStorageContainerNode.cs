@@ -1,4 +1,4 @@
-public class VisualStorageContainerNode : MonoBehaviour // TypeDefIndex: 11336
+public class VisualStorageContainerNode : MonoBehaviour // TypeDefIndex: 11338
 {
 
 	private void Start() { }

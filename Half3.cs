@@ -1,4 +1,4 @@
-public struct Half3 : IProto // TypeDefIndex: 6480
+public struct Half3 : IProto // TypeDefIndex: 6481
 {
 	public uint x; 
 	public uint y; 
@@ -49,7 +49,7 @@ public struct Half3 : IProto // TypeDefIndex: 6480
 
 }
 
-public struct Half3 // TypeDefIndex: 13168
+public struct Half3 // TypeDefIndex: 13170
 {
 	public ushort x; 
 	public ushort y; 
