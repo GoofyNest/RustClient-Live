@@ -1,4 +1,4 @@
-public enum StereoTargetEyeMask // TypeDefIndex: 3411
+public enum StereoTargetEyeMask // TypeDefIndex: 3412
 {
 	public int value__; 
 	public const StereoTargetEyeMask None = 0;

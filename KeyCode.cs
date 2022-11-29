@@ -1,4 +1,4 @@
-public enum KeyCode // TypeDefIndex: 3455
+public enum KeyCode // TypeDefIndex: 3456
 {
 	public int value__; 
 	public const KeyCode None = 0;

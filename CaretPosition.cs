@@ -1,4 +1,4 @@
-public enum CaretPosition // TypeDefIndex: 6780
+public enum CaretPosition // TypeDefIndex: 6784
 {
 	public int value__; 
 	public const CaretPosition None = 0;

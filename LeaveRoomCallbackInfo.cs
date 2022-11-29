@@ -1,4 +1,4 @@
-public struct LeaveRoomCallbackInfo : ICallbackInfo // TypeDefIndex: 8765
+public struct LeaveRoomCallbackInfo : ICallbackInfo // TypeDefIndex: 8774
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

@@ -1,4 +1,4 @@
-public class FocusInEvent : FocusEventBase<FocusInEvent> // TypeDefIndex: 4657
+public class FocusInEvent : FocusEventBase<FocusInEvent> // TypeDefIndex: 4659
 {
 
 	protected override void Init() { }

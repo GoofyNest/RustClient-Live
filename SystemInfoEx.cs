@@ -1,4 +1,4 @@
-public static class SystemInfoEx // TypeDefIndex: 11011
+public static class SystemInfoEx // TypeDefIndex: 11024
 {
 	private static bool[] supportedRenderTextureFormats; 
 

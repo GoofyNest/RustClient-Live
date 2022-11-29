@@ -1,4 +1,4 @@
-public class PhotoCapture : IDisposable // TypeDefIndex: 3609
+public class PhotoCapture : IDisposable // TypeDefIndex: 3610
 {
 	internal IntPtr m_NativePtr; 
 	private static readonly long HR_SUCCESS; 
@@ -25,14 +25,14 @@ public class PhotoCapture : IDisposable // TypeDefIndex: 3609
 
 	public void Dispose() { }
 
-	[NativeConditionalAttribute] 
 	[NativeNameAttribute] 
+	[NativeConditionalAttribute] 
 	private void Dispose_Internal() { }
 
 	protected override void Finalize() { }
 
-	[NativeNameAttribute] 
 	[NativeConditionalAttribute] 
+	[NativeNameAttribute] 
 	[ThreadAndSerializationSafeAttribute] 
 	private void DisposeThreaded_Internal() { }
 
@@ -40,7 +40,7 @@ public class PhotoCapture : IDisposable // TypeDefIndex: 3609
 
 }
 
-public enum PhotoCapture.CaptureResultType // TypeDefIndex: 3610
+public enum PhotoCapture.CaptureResultType // TypeDefIndex: 3611
 {
 	public int value__; 
 	public const PhotoCapture.CaptureResultType Success = 0;
@@ -48,14 +48,14 @@ public enum PhotoCapture.CaptureResultType // TypeDefIndex: 3610
 
 }
 
-public struct PhotoCapture.PhotoCaptureResult // TypeDefIndex: 3611
+public struct PhotoCapture.PhotoCaptureResult // TypeDefIndex: 3612
 {
 	public PhotoCapture.CaptureResultType resultType; 
 	public long hResult; 
 
 }
 
-public sealed class PhotoCapture.OnCaptureResourceCreatedCallback : MulticastDelegate // TypeDefIndex: 3612
+public sealed class PhotoCapture.OnCaptureResourceCreatedCallback : MulticastDelegate // TypeDefIndex: 3613
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -68,7 +68,7 @@ public sealed class PhotoCapture.OnCaptureResourceCreatedCallback : MulticastDel
 
 }
 
-public sealed class PhotoCapture.OnPhotoModeStartedCallback : MulticastDelegate // TypeDefIndex: 3613
+public sealed class PhotoCapture.OnPhotoModeStartedCallback : MulticastDelegate // TypeDefIndex: 3614
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -81,7 +81,7 @@ public sealed class PhotoCapture.OnPhotoModeStartedCallback : MulticastDelegate 
 
 }
 
-public sealed class PhotoCapture.OnPhotoModeStoppedCallback : MulticastDelegate // TypeDefIndex: 3614
+public sealed class PhotoCapture.OnPhotoModeStoppedCallback : MulticastDelegate // TypeDefIndex: 3615
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -94,7 +94,7 @@ public sealed class PhotoCapture.OnPhotoModeStoppedCallback : MulticastDelegate 
 
 }
 
-public sealed class PhotoCapture.OnCapturedToDiskCallback : MulticastDelegate // TypeDefIndex: 3615
+public sealed class PhotoCapture.OnCapturedToDiskCallback : MulticastDelegate // TypeDefIndex: 3616
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -107,7 +107,7 @@ public sealed class PhotoCapture.OnCapturedToDiskCallback : MulticastDelegate //
 
 }
 
-public sealed class PhotoCapture.OnCapturedToMemoryCallback : MulticastDelegate // TypeDefIndex: 3616
+public sealed class PhotoCapture.OnCapturedToMemoryCallback : MulticastDelegate // TypeDefIndex: 3617
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-internal sealed class OnSetParticipantHardMuteCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8738
+internal sealed class OnSetParticipantHardMuteCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8747
 {
 
 	public void .ctor(object object, IntPtr method) { }

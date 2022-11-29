@@ -1,4 +1,4 @@
-public struct KeyImageInfo // TypeDefIndex: 9470
+public struct KeyImageInfo // TypeDefIndex: 9479
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Type>k__BackingField; 

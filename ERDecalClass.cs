@@ -1,4 +1,4 @@
-public class ERDecalClass // TypeDefIndex: 7223
+public class ERDecalClass // TypeDefIndex: 7227
 {
 	public int id; 
 	public ERDecalType type; 

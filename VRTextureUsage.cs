@@ -1,4 +1,4 @@
-public enum VRTextureUsage // TypeDefIndex: 3429
+public enum VRTextureUsage // TypeDefIndex: 3430
 {
 	public int value__; 
 	public const VRTextureUsage None = 0;

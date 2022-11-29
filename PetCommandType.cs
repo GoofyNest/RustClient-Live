@@ -1,4 +1,4 @@
-public enum PetCommandType // TypeDefIndex: 11151
+public enum PetCommandType // TypeDefIndex: 11165
 {
 
 public interface IAIGroupable

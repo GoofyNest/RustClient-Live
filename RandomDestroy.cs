@@ -1,4 +1,4 @@
-public class RandomDestroy : MonoBehaviour // TypeDefIndex: 12083
+public class RandomDestroy : MonoBehaviour // TypeDefIndex: 12103
 {
 	public uint Seed; 
 	public float Probability; 

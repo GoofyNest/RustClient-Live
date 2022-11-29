@@ -1,4 +1,4 @@
-public class ExcavatorOutputPile : StorageContainer // TypeDefIndex: 11352
+public class ExcavatorOutputPile : StorageContainer // TypeDefIndex: 11366
 {
 
 	public void .ctor() { }

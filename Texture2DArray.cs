@@ -1,4 +1,4 @@
-public sealed class Texture2DArray : Texture // TypeDefIndex: 3448
+public sealed class Texture2DArray : Texture // TypeDefIndex: 3449
 {
 	public static int allSlices { get; }
 	public int depth { get; }

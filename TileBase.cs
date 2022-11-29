@@ -1,4 +1,4 @@
-public abstract class TileBase : ScriptableObject // TypeDefIndex: 4571
+public abstract class TileBase : ScriptableObject // TypeDefIndex: 4573
 {
 
 	[RequiredByNativeCodeAttribute] 

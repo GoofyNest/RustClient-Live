@@ -1,4 +1,4 @@
-internal class MouseCaptureDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4668
+internal class MouseCaptureDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4670
 {
 
 	public bool CanDispatchEvent(EventBase evt) { }
@@ -9,7 +9,7 @@ internal class MouseCaptureDispatchingStrategy : IEventDispatchingStrategy // Ty
 
 }
 
-private enum MouseCaptureDispatchingStrategy.EventBehavior // TypeDefIndex: 4669
+private enum MouseCaptureDispatchingStrategy.EventBehavior // TypeDefIndex: 4671
 {
 	public int value__; 
 	public const MouseCaptureDispatchingStrategy.EventBehavior None = 0;

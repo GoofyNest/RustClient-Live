@@ -1,4 +1,4 @@
-public class GeneratePowerlineLayout : ProceduralComponent // TypeDefIndex: 12206
+public class GeneratePowerlineLayout : ProceduralComponent // TypeDefIndex: 12226
 {
 	private const int MaxDepth = 100000;
 
@@ -9,7 +9,7 @@ public class GeneratePowerlineLayout : ProceduralComponent // TypeDefIndex: 1220
 
 }
 
-private class GeneratePowerlineLayout.PathNode // TypeDefIndex: 12207
+private class GeneratePowerlineLayout.PathNode // TypeDefIndex: 12227
 {
 	public MonumentInfo monument; 
 	public PathFinder.Node node; 
@@ -19,7 +19,7 @@ private class GeneratePowerlineLayout.PathNode // TypeDefIndex: 12207
 
 }
 
-private class GeneratePowerlineLayout.PathSegment // TypeDefIndex: 12208
+private class GeneratePowerlineLayout.PathSegment // TypeDefIndex: 12228
 {
 	public PathFinder.Node start; 
 	public PathFinder.Node end; 
@@ -29,44 +29,44 @@ private class GeneratePowerlineLayout.PathSegment // TypeDefIndex: 12208
 
 }
 
-private sealed class GeneratePowerlineLayout.<>c__DisplayClass3_0 // TypeDefIndex: 12209
+private sealed class GeneratePowerlineLayout.<>c__DisplayClass3_0 // TypeDefIndex: 12229
 {
 	public GeneratePowerlineLayout.PathSegment segment; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__4(GeneratePowerlineLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GeneratePowerlineLayout.<>c__DisplayClass3_1 // TypeDefIndex: 12210
+private sealed class GeneratePowerlineLayout.<>c__DisplayClass3_1 // TypeDefIndex: 12230
 {
 	public GeneratePowerlineLayout.PathNode copy; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__2(GeneratePowerlineLayout.PathNode x) { }
+	internal bool <Process>
 
-	internal bool <Process>b__3(GeneratePowerlineLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GeneratePowerlineLayout.<>c__DisplayClass3_2 // TypeDefIndex: 12211
+private sealed class GeneratePowerlineLayout.<>c__DisplayClass3_2 // TypeDefIndex: 12231
 {
 	public GeneratePowerlineLayout.PathNode copy; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__5(GeneratePowerlineLayout.PathNode x) { }
+	internal bool <Process>
 
-	internal bool <Process>b__6(GeneratePowerlineLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GeneratePowerlineLayout.<>c // TypeDefIndex: 12212
+private sealed class GeneratePowerlineLayout.<>c // TypeDefIndex: 12232
 {
 	public static readonly GeneratePowerlineLayout.<>c <>9; 
 	public static Func<GeneratePowerlineLayout.PathNode, PathFinder.Point> <>9__3_0; 
@@ -77,9 +77,9 @@ private sealed class GeneratePowerlineLayout.<>c // TypeDefIndex: 12212
 
 	public void .ctor() { }
 
-	internal PathFinder.Point <Process>b__3_0(GeneratePowerlineLayout.PathNode x) { }
+	internal PathFinder.Point <Process>
 
-	internal PathFinder.Point <Process>b__3_1(GeneratePowerlineLayout.PathNode x) { }
+	internal PathFinder.Point <Process>
 
 }
 

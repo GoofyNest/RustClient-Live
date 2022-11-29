@@ -1,4 +1,4 @@
-public class PingPongRotate : MonoBehaviour // TypeDefIndex: 11007
+public class PingPongRotate : MonoBehaviour // TypeDefIndex: 11020
 {
 	public Vector3 rotationSpeed; 
 	public Vector3 offset; 

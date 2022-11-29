@@ -1,4 +1,4 @@
-public enum AngularFalloffType // TypeDefIndex: 3882
+public enum AngularFalloffType // TypeDefIndex: 3884
 {
 	public byte value__; 
 	public const AngularFalloffType LUT = 0;

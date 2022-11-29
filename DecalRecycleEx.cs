@@ -1,4 +1,4 @@
-public static class DecalRecycleEx // TypeDefIndex: 10892
+public static class DecalRecycleEx // TypeDefIndex: 10903
 {
 
 	[ExtensionAttribute] 

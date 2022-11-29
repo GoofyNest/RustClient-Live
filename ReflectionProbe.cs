@@ -1,7 +1,7 @@
 public sealed class ReflectionProbe : Behaviour // TypeDefIndex: 3368
 {
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Action<ReflectionProbe, ReflectionProbe.ReflectionProbeEvent> reflectionProbeChanged; 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 

@@ -1,4 +1,4 @@
-public struct SqlDecimal : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4347
+public struct SqlDecimal : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4349
 {
 	internal byte _bStatus; 
 	internal byte _bLen; 

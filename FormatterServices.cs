@@ -56,7 +56,7 @@ private sealed class FormatterServices.<>c__DisplayClass9_0 // TypeDefIndex: 102
 
 	public void .ctor() { }
 
-	internal MemberInfo[] <GetSerializableMembers>b__0(MemberHolder _) { }
+	internal MemberInfo[] <GetSerializableMembers>
 
 }
 

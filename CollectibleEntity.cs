@@ -1,4 +1,4 @@
-public class CollectibleEntity : BaseEntity, IPrefabPreProcess // TypeDefIndex: 10259
+public class CollectibleEntity : BaseEntity, IPrefabPreProcess // TypeDefIndex: 10270
 {
 	public Translate.Phrase itemName; 
 	public ItemAmount[] itemList; 
@@ -17,7 +17,7 @@ public class CollectibleEntity : BaseEntity, IPrefabPreProcess // TypeDefIndex: 
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <GetMenuItems>b__6_0(BasePlayer ply) { }
+	private void <GetMenuItems>
 
 }
 

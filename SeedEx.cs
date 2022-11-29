@@ -1,4 +1,4 @@
-public static class SeedEx // TypeDefIndex: 6597
+public static class SeedEx // TypeDefIndex: 6601
 {
 
 	[ExtensionAttribute] 

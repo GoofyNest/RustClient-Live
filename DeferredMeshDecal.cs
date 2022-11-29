@@ -1,4 +1,4 @@
-public class DeferredMeshDecal : MonoBehaviour, IClientComponent // TypeDefIndex: 12396
+public class DeferredMeshDecal : MonoBehaviour, IClientComponent // TypeDefIndex: 12416
 {
 	private bool isVisible; 
 	private Renderer renderer; 
@@ -28,7 +28,7 @@ public class DeferredMeshDecal : MonoBehaviour, IClientComponent // TypeDefIndex
 
 }
 
-public class DeferredMeshDecal.MaterialReplacement // TypeDefIndex: 12397
+public class DeferredMeshDecal.MaterialReplacement // TypeDefIndex: 12417
 {
 	public Material reference; 
 	public Material material; 
@@ -46,7 +46,7 @@ public class DeferredMeshDecal.MaterialReplacement // TypeDefIndex: 12397
 
 }
 
-public struct DeferredMeshDecal.MaterialLink // TypeDefIndex: 12398
+public struct DeferredMeshDecal.MaterialLink // TypeDefIndex: 12418
 {
 	public DeferredMeshDecal.MaterialReplacement replacement; 
 	public int submeshIndex; 
@@ -56,7 +56,7 @@ public struct DeferredMeshDecal.MaterialLink // TypeDefIndex: 12398
 
 }
 
-public class DeferredMeshDecal.InstanceData // TypeDefIndex: 12399
+public class DeferredMeshDecal.InstanceData // TypeDefIndex: 12419
 {
 	private Transform transform; 
 	private Material material; 

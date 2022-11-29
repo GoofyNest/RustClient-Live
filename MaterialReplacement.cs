@@ -1,4 +1,4 @@
-public class MaterialReplacement : MonoBehaviour // TypeDefIndex: 6590
+public class MaterialReplacement : MonoBehaviour // TypeDefIndex: 6594
 {
 	private bool initialized; 
 	public Material[] Default; 

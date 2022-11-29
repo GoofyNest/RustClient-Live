@@ -1,4 +1,4 @@
-public class WorldAnchor : Component // TypeDefIndex: 4772
+public class WorldAnchor : Component // TypeDefIndex: 4774
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -10,7 +10,7 @@ public class WorldAnchor : Component // TypeDefIndex: 4772
 
 }
 
-public sealed class WorldAnchor.OnTrackingChangedDelegate : MulticastDelegate // TypeDefIndex: 4773
+public sealed class WorldAnchor.OnTrackingChangedDelegate : MulticastDelegate // TypeDefIndex: 4775
 {
 
 	public void .ctor(object object, IntPtr method) { }

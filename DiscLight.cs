@@ -1,4 +1,4 @@
-public struct DiscLight // TypeDefIndex: 3888
+public struct DiscLight // TypeDefIndex: 3890
 {
 	public int instanceID; 
 	public bool shadow; 

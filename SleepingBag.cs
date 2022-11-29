@@ -1,4 +1,4 @@
-public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6321
+public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6323
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class SleepingBag : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class SleepingBag : DecayEntity // TypeDefIndex: 10153
+public class SleepingBag : DecayEntity // TypeDefIndex: 10164
 {
 	private Option __menuOption_Menu_AssignToFriend; 
 	private Option __menuOption_Menu_CloseDoor; 
@@ -148,7 +148,7 @@ public class SleepingBag : DecayEntity // TypeDefIndex: 10153
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_AssignToFriend>b__30_0(ulong id, string steamName) { }
+	private void <Menu_AssignToFriend>
 
 }
 

@@ -1,4 +1,4 @@
-public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7555
+public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7561
 {
 	private SmpteData _smpteData; 
 
@@ -48,7 +48,7 @@ public sealed class SmpteOffsetEvent : MetaEvent // TypeDefIndex: 7555
 
 }
 
-private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 7556
+private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 7562
 {
 	public SmpteOffsetEvent <>4__this; 
 	public ReadingSettings settings; 
@@ -56,7 +56,7 @@ private sealed class SmpteOffsetEvent.<>c__DisplayClass22_0 // TypeDefIndex: 755
 
 	public void .ctor() { }
 
-	internal byte <ReadContent>b__0(byte value, string propertyName, byte max) { }
+	internal byte <ReadContent>
 
 }
 

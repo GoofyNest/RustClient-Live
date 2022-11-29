@@ -1,4 +1,4 @@
-public class RenderTexture : Texture // TypeDefIndex: 3450
+public class RenderTexture : Texture // TypeDefIndex: 3451
 {
 	public override int width { get; set; }
 	public override int height { get; set; }

@@ -1,4 +1,4 @@
-public struct QueryActivePlayerSanctionsCallbackInfo : ICallbackInfo // TypeDefIndex: 8618
+public struct QueryActivePlayerSanctionsCallbackInfo : ICallbackInfo // TypeDefIndex: 8627
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

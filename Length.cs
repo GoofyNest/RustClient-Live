@@ -1,4 +1,4 @@
-public struct Length : IEquatable<Length> // TypeDefIndex: 4712
+public struct Length : IEquatable<Length> // TypeDefIndex: 4714
 {
 	private float m_Value; 
 	private LengthUnit m_Unit; 

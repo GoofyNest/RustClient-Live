@@ -1,4 +1,4 @@
-public class RustOption : RustControl // TypeDefIndex: 7061
+public class RustOption : RustControl // TypeDefIndex: 7065
 {
 	public RustButton Left; 
 	public RustButton Right; 
@@ -30,7 +30,7 @@ public class RustOption : RustControl // TypeDefIndex: 7061
 
 }
 
-public class RustOption.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7062
+public class RustOption.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7066
 {
 
 	public void .ctor() { }

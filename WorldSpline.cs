@@ -1,4 +1,4 @@
-public class WorldSpline : MonoBehaviour // TypeDefIndex: 13161
+public class WorldSpline : MonoBehaviour // TypeDefIndex: 13199
 {
 	public int dataIndex; 
 	public Vector3[] points; 

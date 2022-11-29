@@ -1,4 +1,4 @@
-internal struct PageResultInternal : IGettable<PageResult>, ISettable<PageResult>, IDisposable // TypeDefIndex: 8283
+internal struct PageResultInternal : IGettable<PageResult>, ISettable<PageResult>, IDisposable // TypeDefIndex: 8292
 {
 	private int m_StartIndex; 
 	private int m_Count; 

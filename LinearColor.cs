@@ -1,4 +1,4 @@
-public struct LinearColor // TypeDefIndex: 3883
+public struct LinearColor // TypeDefIndex: 3885
 {
 	private float m_red; 
 	private float m_green; 

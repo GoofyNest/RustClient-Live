@@ -1,4 +1,4 @@
-internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, IDisposable // TypeDefIndex: 8532
+internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, IDisposable // TypeDefIndex: 8541
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -20,7 +20,7 @@ internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, ID
 
 }
 
-internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, IDisposable // TypeDefIndex: 9254
+internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, IDisposable // TypeDefIndex: 9263
 {
 	private int m_ApiVersion; 
 	private IntPtr m_InviteId; 
@@ -42,7 +42,7 @@ internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, ID
 
 }
 
-internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, IDisposable // TypeDefIndex: 9403
+internal struct RejectInviteOptionsInternal : ISettable<RejectInviteOptions>, IDisposable // TypeDefIndex: 9412
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

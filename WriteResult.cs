@@ -1,4 +1,4 @@
-public enum WriteResult // TypeDefIndex: 8924
+public enum WriteResult // TypeDefIndex: 8933
 {
 	public int value__; 
 	public const WriteResult ContinueWriting = 1;

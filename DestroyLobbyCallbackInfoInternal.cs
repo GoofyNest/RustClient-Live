@@ -1,4 +1,4 @@
-internal struct DestroyLobbyCallbackInfoInternal : ICallbackInfoInternal, IGettable<DestroyLobbyCallbackInfo>, ISettable<DestroyLobbyCallbackInfo>, IDisposable // TypeDefIndex: 9087
+internal struct DestroyLobbyCallbackInfoInternal : ICallbackInfoInternal, IGettable<DestroyLobbyCallbackInfo>, ISettable<DestroyLobbyCallbackInfo>, IDisposable // TypeDefIndex: 9096
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

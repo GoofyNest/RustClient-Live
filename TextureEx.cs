@@ -1,4 +1,4 @@
-public static class TextureEx // TypeDefIndex: 5610
+public static class TextureEx // TypeDefIndex: 5612
 {
 	private static Color32[] buffer; 
 

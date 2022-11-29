@@ -1,4 +1,4 @@
-public struct Color32 // TypeDefIndex: 3461
+public struct Color32 // TypeDefIndex: 3462
 {
 	[IgnoreAttribute] 
 	private int rgba; 

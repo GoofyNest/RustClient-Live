@@ -1,4 +1,4 @@
-public enum PropagationPhase // TypeDefIndex: 4659
+public enum PropagationPhase // TypeDefIndex: 4661
 {
 	public int value__; 
 	public const PropagationPhase None = 0;

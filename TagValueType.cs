@@ -1,4 +1,4 @@
-public enum TagValueType // TypeDefIndex: 6751
+public enum TagValueType // TypeDefIndex: 6755
 {
 	public int value__; 
 	public const TagValueType None = 0;

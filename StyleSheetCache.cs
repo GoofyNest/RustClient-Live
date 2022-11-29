@@ -1,4 +1,4 @@
-internal static class StyleSheetCache // TypeDefIndex: 4726
+internal static class StyleSheetCache // TypeDefIndex: 4728
 {
 	private static StyleSheetCache.SheetHandleKeyComparer s_Comparer; 
 	private static Dictionary<StyleSheetCache.SheetHandleKey, int> s_EnumToIntCache; 
@@ -14,14 +14,14 @@ internal static class StyleSheetCache // TypeDefIndex: 4726
 
 }
 
-private struct StyleSheetCache.SheetHandleKey // TypeDefIndex: 4727
+private struct StyleSheetCache.SheetHandleKey // TypeDefIndex: 4729
 {
 	public readonly int sheetInstanceID; 
 	public readonly int index; 
 
 }
 
-private class StyleSheetCache.SheetHandleKeyComparer : IEqualityComparer<StyleSheetCache.SheetHandleKey> // TypeDefIndex: 4728
+private class StyleSheetCache.SheetHandleKeyComparer : IEqualityComparer<StyleSheetCache.SheetHandleKey> // TypeDefIndex: 4730
 {
 
 	public bool Equals(StyleSheetCache.SheetHandleKey x, StyleSheetCache.SheetHandleKey y) { }

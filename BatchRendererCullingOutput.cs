@@ -1,4 +1,4 @@
-internal struct BatchRendererCullingOutput // TypeDefIndex: 3847
+internal struct BatchRendererCullingOutput // TypeDefIndex: 3848
 {
 	public JobHandle cullingJobsFence; 
 	public Plane* cullingPlanes; 

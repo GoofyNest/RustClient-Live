@@ -1,4 +1,4 @@
-public static class CollectionEx // TypeDefIndex: 13094
+public static class CollectionEx // TypeDefIndex: 13133
 {
 
 	[ExtensionAttribute] 

@@ -43,7 +43,7 @@ internal static class Unsafe // TypeDefIndex: 1318
 
 }
 
-public static class Unsafe // TypeDefIndex: 6670
+public static class Unsafe // TypeDefIndex: 6674
 {
 
 public static class Unsafe

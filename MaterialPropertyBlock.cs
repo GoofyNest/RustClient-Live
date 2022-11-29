@@ -1,4 +1,4 @@
-public sealed class MaterialPropertyBlock // TypeDefIndex: 3402
+public sealed class MaterialPropertyBlock // TypeDefIndex: 3403
 {
 	internal IntPtr m_Ptr; 
 

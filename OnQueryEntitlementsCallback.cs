@@ -1,4 +1,4 @@
-public sealed class OnQueryEntitlementsCallback : MulticastDelegate // TypeDefIndex: 9474
+public sealed class OnQueryEntitlementsCallback : MulticastDelegate // TypeDefIndex: 9483
 {
 
 	public void .ctor(object object, IntPtr method) { }

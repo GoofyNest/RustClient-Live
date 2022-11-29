@@ -1,4 +1,4 @@
-internal enum EGALoggerMessageType // TypeDefIndex: 5624
+internal enum EGALoggerMessageType // TypeDefIndex: 5626
 {
 
 internal class <Module>

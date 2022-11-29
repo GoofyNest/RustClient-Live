@@ -1,4 +1,4 @@
-public sealed class ConstraintCollection : InternalDataCollectionBase // TypeDefIndex: 4178
+public sealed class ConstraintCollection : InternalDataCollectionBase // TypeDefIndex: 4180
 {
 	private readonly DataTable _table; 
 	private readonly ArrayList _list; 

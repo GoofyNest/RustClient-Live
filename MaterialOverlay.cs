@@ -1,4 +1,4 @@
-public class MaterialOverlay : MonoBehaviour // TypeDefIndex: 11822
+public class MaterialOverlay : MonoBehaviour // TypeDefIndex: 11842
 {
 	public Material material; 
 

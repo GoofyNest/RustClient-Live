@@ -1,4 +1,4 @@
-public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12130
+public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12150
 {
 	public Texture2D HeightTexture; 
 	public Texture2D NormalTexture; 
@@ -103,7 +103,7 @@ public class TerrainHeightMap : TerrainMap<short> // TypeDefIndex: 12130
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 12131
+private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 12151
 {
 	public float[,] heights; 
 	public TerrainHeightMap <>4__this; 
@@ -111,11 +111,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass4_0 // TypeDefIndex: 1213
 
 	public void .ctor() { }
 
-	internal void <ApplyToTerrain>b__0(int z) { }
+	internal void <ApplyToTerrain>
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 12132
+private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 12152
 {
 	public Color32[] heights; 
 	public TerrainHeightMap <>4__this; 
@@ -123,11 +123,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass5_0 // TypeDefIndex: 1213
 
 	public void .ctor() { }
 
-	internal void <GenerateTextures>b__0(int z) { }
+	internal void <GenerateTextures>
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 12133
+private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 12153
 {
 	public int normalres; 
 	public Color32[] normals; 
@@ -136,11 +136,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass5_1 // TypeDefIndex: 1213
 
 	public void .ctor() { }
 
-	internal void <GenerateTextures>b__1(int z) { }
+	internal void <GenerateTextures>
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 12134
+private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 12154
 {
 	public TerrainHeightMap <>4__this; 
 	public float height; 
@@ -149,11 +149,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass43_0 // TypeDefIndex: 121
 
 	public void .ctor() { }
 
-	internal void <SetHeight>b__0(int x, int z, float lerp) { }
+	internal void <SetHeight>
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 12135
+private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 12155
 {
 	public TerrainHeightMap <>4__this; 
 	public float height; 
@@ -162,11 +162,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass45_0 // TypeDefIndex: 121
 
 	public void .ctor() { }
 
-	internal void <LowerHeight>b__0(int x, int z, float lerp) { }
+	internal void <LowerHeight>
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 12136
+private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 12156
 {
 	public TerrainHeightMap <>4__this; 
 	public float height; 
@@ -175,11 +175,11 @@ private sealed class TerrainHeightMap.<>c__DisplayClass47_0 // TypeDefIndex: 121
 
 	public void .ctor() { }
 
-	internal void <RaiseHeight>b__0(int x, int z, float lerp) { }
+	internal void <RaiseHeight>
 
 }
 
-private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 12137
+private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 12157
 {
 	public TerrainHeightMap <>4__this; 
 	public float delta; 
@@ -187,7 +187,7 @@ private sealed class TerrainHeightMap.<>c__DisplayClass49_0 // TypeDefIndex: 121
 
 	public void .ctor() { }
 
-	internal void <AddHeight>b__0(int x, int z, float lerp) { }
+	internal void <AddHeight>
 
 }
 

@@ -1,4 +1,4 @@
-public static class Dispatch // TypeDefIndex: 5108
+public static class Dispatch // TypeDefIndex: 5110
 {
 	public static Action<CallbackType, string, bool> OnDebugCallback; 
 	public static Action<Exception> OnException; 
@@ -185,7 +185,7 @@ public static class Dispatch // TypeDefIndex: 5108
 
 }
 
-internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5109
+internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5111
 {
 	public HSteamUser m_hSteamUser; 
 	public CallbackType Type; 
@@ -194,21 +194,21 @@ internal struct Dispatch.CallbackMsg_t // TypeDefIndex: 5109
 
 }
 
-private struct Dispatch.ResultCallback // TypeDefIndex: 5110
+private struct Dispatch.ResultCallback // TypeDefIndex: 5112
 {
 	public Action continuation; 
 	public bool server; 
 
 }
 
-private struct Dispatch.Callback // TypeDefIndex: 5111
+private struct Dispatch.Callback // TypeDefIndex: 5113
 {
 	public Action<IntPtr> action; 
 	public bool server; 
 
 }
 
-private sealed class Dispatch.<>c // TypeDefIndex: 5112
+private sealed class Dispatch.<>c // TypeDefIndex: 5114
 {
 	public static readonly Dispatch.<>c <>9; 
 	public static Func<FieldInfo, int> <>9__20_0; 
@@ -222,19 +222,19 @@ private sealed class Dispatch.<>c // TypeDefIndex: 5112
 
 	public void .ctor() { }
 
-	internal int <CallbackToString>b__20_0(FieldInfo x) { }
+	internal int <CallbackToString>
 
-	internal bool <ShutdownClient>b__31_3(Dispatch.Callback x) { }
+	internal bool <ShutdownClient>
 
-	internal bool <ShutdownClient>b__31_0(KeyValuePair<ulong, Dispatch.ResultCallback> x) { }
+	internal bool <ShutdownClient>
 
-	internal ulong <ShutdownClient>b__31_1(KeyValuePair<ulong, Dispatch.ResultCallback> x) { }
+	internal ulong <ShutdownClient>
 
-	internal Dispatch.ResultCallback <ShutdownClient>b__31_2(KeyValuePair<ulong, Dispatch.ResultCallback> x) { }
+	internal Dispatch.ResultCallback <ShutdownClient>
 
 }
 
-private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5113
+private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIndex: 5115
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -248,7 +248,7 @@ private struct Dispatch.<LoopClientAsync>d__22 : IAsyncStateMachine // TypeDefIn
 
 }
 
-private sealed class Dispatch.<>c__DisplayClass29_0<T> // TypeDefIndex: 5114
+private sealed class Dispatch.<>c__DisplayClass29_0<T> // TypeDefIndex: 5116
 {
 	public Action<T> p; 
 
@@ -256,178 +256,178 @@ private sealed class Dispatch.<>c__DisplayClass29_0<T> // TypeDefIndex: 5114
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ActiveBeaconsUpdated_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<AvailableBeaconLocationsUpdated_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<ClientGameServerDeny_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<DownloadItemResult_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<DurationControl_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<FriendRichPresenceUpdate_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameConnectedClanChatMsg_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameConnectedFriendChatMsg_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameLobbyJoinRequested_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameOverlayActivated_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameRichPresenceJoinRequested_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameServerChangeRequested_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GameWebCallback_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GamepadTextInputDismissed_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<GetAuthSessionTicketResponse_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<IPCountry_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<ItemInstalled_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LicensesUpdated_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyChatMsg_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyChatUpdate_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyCreated_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyDataUpdate_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyEnter_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyGameCreated_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LobbyInvite_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<LowBatteryPower_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<MicroTxnAuthorizationResponse_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<OverlayBrowserProtocolNavigation_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<P2PSessionConnectFail_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<P2PSessionRequest_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<PersonaStateChange_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<PlaybackStatusHasChanged_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<RemoteStoragePublishedFileSubscribed_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<RemoteStoragePublishedFileUnsubscribed_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<ScreenshotReady_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<ScreenshotRequested_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamInventoryDefinitionUpdate_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamInventoryFullUpdate_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamNetConnectionStatusChangedCallback_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamNetworkingFakeIPResult_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamParentalSettingsChanged_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamRelayNetworkStatus_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamRemotePlaySessionConnected_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamRemotePlaySessionDisconnected_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamServerConnectFailure_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamServersConnected_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamServersDisconnected_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<SteamShutdown_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<UserAchievementIconFetched_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<UserAchievementStored_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<UserStatsReceived_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<UserStatsStored_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<UserStatsUnloaded_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<ValidateAuthTicketResponse_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<VolumeHasChanged_t>..ctor
-	|-Dispatch.<>c__DisplayClass29_0<object>..ctor
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
+	|-Dispatch.<>c
 	*/
 
-	internal void <Install>b__0(IntPtr x) { }
+	internal void <Install>
 	/* GenericInstMethod :
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ActiveBeaconsUpdated_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<AvailableBeaconLocationsUpdated_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ClientGameServerDeny_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<DownloadItemResult_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<DurationControl_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<FriendRichPresenceUpdate_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameConnectedClanChatMsg_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameConnectedFriendChatMsg_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameLobbyJoinRequested_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameOverlayActivated_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameRichPresenceJoinRequested_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameServerChangeRequested_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GameWebCallback_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GamepadTextInputDismissed_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<GetAuthSessionTicketResponse_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<IPCountry_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ItemInstalled_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LicensesUpdated_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyChatMsg_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyChatUpdate_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyCreated_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyDataUpdate_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyEnter_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyGameCreated_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LobbyInvite_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<LowBatteryPower_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<MicroTxnAuthorizationResponse_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<OverlayBrowserProtocolNavigation_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<P2PSessionConnectFail_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<P2PSessionRequest_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<PersonaStateChange_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<PlaybackStatusHasChanged_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<RemoteStoragePublishedFileSubscribed_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<RemoteStoragePublishedFileUnsubscribed_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ScreenshotReady_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ScreenshotRequested_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamInventoryDefinitionUpdate_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamInventoryFullUpdate_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamNetConnectionStatusChangedCallback_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamNetworkingFakeIPResult_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamParentalSettingsChanged_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamRelayNetworkStatus_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamRemotePlaySessionConnected_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamRemotePlaySessionDisconnected_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamServerConnectFailure_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamServersConnected_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamServersDisconnected_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<SteamShutdown_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<UserAchievementIconFetched_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<UserAchievementStored_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<UserStatsReceived_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<UserStatsStored_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<UserStatsUnloaded_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<ValidateAuthTicketResponse_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<VolumeHasChanged_t>.<Install>b__0
+	|-Dispatch.<>c
 	|
-	|-Dispatch.<>c__DisplayClass29_0<object>.<Install>b__0
+	|-Dispatch.<>c
 	*/
 
 }

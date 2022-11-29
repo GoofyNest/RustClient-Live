@@ -1,4 +1,4 @@
-public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12892
+public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12920
 {
 	public RustText Current; 
 	public Image BackgroundImage; 
@@ -34,7 +34,7 @@ public class TweakUIDropdown : TweakUIBase // TypeDefIndex: 12892
 
 }
 
-public class TweakUIDropdown.NameValue // TypeDefIndex: 12893
+public class TweakUIDropdown.NameValue // TypeDefIndex: 12921
 {
 	public string value; 
 	public Color imageColor; 
@@ -45,7 +45,7 @@ public class TweakUIDropdown.NameValue // TypeDefIndex: 12893
 
 }
 
-private sealed class TweakUIDropdown.<>c__DisplayClass13_0 // TypeDefIndex: 12894
+private sealed class TweakUIDropdown.<>c__DisplayClass13_0 // TypeDefIndex: 12922
 {
 	public int itemIndex; 
 	public TweakUIDropdown <>4__this; 
@@ -53,7 +53,7 @@ private sealed class TweakUIDropdown.<>c__DisplayClass13_0 // TypeDefIndex: 1289
 
 	public void .ctor() { }
 
-	internal void <UpdateDropdownOptions>b__0() { }
+	internal void <UpdateDropdownOptions>
 
 }
 

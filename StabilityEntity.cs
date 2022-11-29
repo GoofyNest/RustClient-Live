@@ -1,4 +1,4 @@
-public class StabilityEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6338
+public class StabilityEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6340
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class StabilityEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex
 
 }
 
-public class StabilityEntity : DecayEntity // TypeDefIndex: 11404
+public class StabilityEntity : DecayEntity // TypeDefIndex: 11418
 {
 	public bool grounded; 
 	public float cachedStability; 

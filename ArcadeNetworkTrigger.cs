@@ -1,4 +1,4 @@
-public class ArcadeNetworkTrigger : TriggerBase // TypeDefIndex: 10472
+public class ArcadeNetworkTrigger : TriggerBase // TypeDefIndex: 10483
 {
 
 	internal override GameObject InterestedInObject(GameObject obj) { }

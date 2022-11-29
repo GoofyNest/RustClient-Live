@@ -1,4 +1,4 @@
-public struct LobbyDetailsCopyAttributeByKeyOptions // TypeDefIndex: 9124
+public struct LobbyDetailsCopyAttributeByKeyOptions // TypeDefIndex: 9133
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <AttrKey>k__BackingField; 

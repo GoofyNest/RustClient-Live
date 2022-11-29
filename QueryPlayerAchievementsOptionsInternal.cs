@@ -1,4 +1,4 @@
-internal struct QueryPlayerAchievementsOptionsInternal : ISettable<QueryPlayerAchievementsOptions>, IDisposable // TypeDefIndex: 9937
+internal struct QueryPlayerAchievementsOptionsInternal : ISettable<QueryPlayerAchievementsOptions>, IDisposable // TypeDefIndex: 9946
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

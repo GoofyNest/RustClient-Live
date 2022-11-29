@@ -1,4 +1,4 @@
-internal class RuntimePanel : Panel // TypeDefIndex: 4605
+internal class RuntimePanel : Panel // TypeDefIndex: 4607
 {
 	internal RenderTexture targetTexture; 
 

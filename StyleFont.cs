@@ -1,4 +1,4 @@
-public struct StyleFont : IStyleValue<Font>, IEquatable<StyleFont> // TypeDefIndex: 4716
+public struct StyleFont : IStyleValue<Font>, IEquatable<StyleFont> // TypeDefIndex: 4718
 {
 	private StyleKeyword m_Keyword; 
 	private Font m_Value; 

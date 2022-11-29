@@ -1,4 +1,4 @@
-public enum MapLayer // TypeDefIndex: 12685
+public enum MapLayer // TypeDefIndex: 12713
 {
 	public int value__; 
 	public const MapLayer Overworld = -1;

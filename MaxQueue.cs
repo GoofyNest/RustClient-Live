@@ -1,4 +1,4 @@
-public class MaxQueue // TypeDefIndex: 4814
+public class MaxQueue // TypeDefIndex: 4816
 {
 	private Deque<int> data; 
 	private Deque<int> max; 

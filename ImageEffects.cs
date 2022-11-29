@@ -1,4 +1,4 @@
-public class ImageEffects // TypeDefIndex: 8201
+public class ImageEffects // TypeDefIndex: 8210
 {
 
 	public static void RenderDistortion(Material material, RenderTexture source, RenderTexture destination, float angle, Vector2 center, Vector2 radius) { }

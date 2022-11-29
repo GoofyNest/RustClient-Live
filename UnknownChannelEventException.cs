@@ -1,4 +1,4 @@
-public sealed class UnknownChannelEventException : MidiException // TypeDefIndex: 7590
+public sealed class UnknownChannelEventException : MidiException // TypeDefIndex: 7596
 {
 	[CompilerGeneratedAttribute] 
 	private readonly FourBitNumber <Channel>k__BackingField; 

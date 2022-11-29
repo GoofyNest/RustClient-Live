@@ -1,4 +1,4 @@
-public class CardTableSeat : BaseChair // TypeDefIndex: 11304
+public class CardTableSeat : BaseChair // TypeDefIndex: 11318
 {
 	public Transform CardsMesh; 
 	private CardTable table; 
@@ -13,6 +13,8 @@ public class CardTableSeat : BaseChair // TypeDefIndex: 11304
 	protected override void ClientOnPlayerDismounted(BasePlayer player) { }
 
 	public override void UpdatePlayerModel(BasePlayer player) { }
+
+	public override void PostLateUpdatePlayer(BasePlayer player) { }
 
 	private void UpdateCardPosition(BasePlayer forPlayer) { }
 

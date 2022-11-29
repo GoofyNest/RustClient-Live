@@ -1,4 +1,4 @@
-public class ERPoint // TypeDefIndex: 7192
+public class ERPoint // TypeDefIndex: 7196
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

@@ -1,4 +1,4 @@
-public struct KerningPairKey // TypeDefIndex: 6702
+public struct KerningPairKey // TypeDefIndex: 6706
 {
 	public uint ascii_Left; 
 	public uint ascii_Right; 
@@ -9,7 +9,7 @@ public struct KerningPairKey // TypeDefIndex: 6702
 
 }
 
-public class KerningPair // TypeDefIndex: 6704
+public class KerningPair // TypeDefIndex: 6708
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
@@ -60,7 +60,7 @@ public class KerningPair // TypeDefIndex: 6704
 
 }
 
-public class KerningTable // TypeDefIndex: 6705
+public class KerningTable // TypeDefIndex: 6709
 {
 	public List<KerningPair> kerningPairs; 
 
@@ -81,7 +81,7 @@ public class KerningTable // TypeDefIndex: 6705
 
 }
 
-private sealed class KerningTable.<>c__DisplayClass3_0 // TypeDefIndex: 6706
+private sealed class KerningTable.<>c__DisplayClass3_0 // TypeDefIndex: 6710
 {
 	public uint first; 
 	public uint second; 
@@ -89,11 +89,11 @@ private sealed class KerningTable.<>c__DisplayClass3_0 // TypeDefIndex: 6706
 
 	public void .ctor() { }
 
-	internal bool <AddKerningPair>b__0(KerningPair item) { }
+	internal bool <AddKerningPair>
 
 }
 
-private sealed class KerningTable.<>c__DisplayClass4_0 // TypeDefIndex: 6707
+private sealed class KerningTable.<>c__DisplayClass4_0 // TypeDefIndex: 6711
 {
 	public uint first; 
 	public uint second; 
@@ -101,11 +101,11 @@ private sealed class KerningTable.<>c__DisplayClass4_0 // TypeDefIndex: 6707
 
 	public void .ctor() { }
 
-	internal bool <AddGlyphPairAdjustmentRecord>b__0(KerningPair item) { }
+	internal bool <AddGlyphPairAdjustmentRecord>
 
 }
 
-private sealed class KerningTable.<>c__DisplayClass5_0 // TypeDefIndex: 6708
+private sealed class KerningTable.<>c__DisplayClass5_0 // TypeDefIndex: 6712
 {
 	public int left; 
 	public int right; 
@@ -113,11 +113,11 @@ private sealed class KerningTable.<>c__DisplayClass5_0 // TypeDefIndex: 6708
 
 	public void .ctor() { }
 
-	internal bool <RemoveKerningPair>b__0(KerningPair item) { }
+	internal bool <RemoveKerningPair>
 
 }
 
-private sealed class KerningTable.<>c // TypeDefIndex: 6709
+private sealed class KerningTable.<>c // TypeDefIndex: 6713
 {
 	public static readonly KerningTable.<>c <>9; 
 	public static Func<KerningPair, uint> <>9__7_0; 
@@ -128,9 +128,9 @@ private sealed class KerningTable.<>c // TypeDefIndex: 6709
 
 	public void .ctor() { }
 
-	internal uint <SortKerningPairs>b__7_0(KerningPair s) { }
+	internal uint <SortKerningPairs>
 
-	internal uint <SortKerningPairs>b__7_1(KerningPair s) { }
+	internal uint <SortKerningPairs>
 
 }
 

@@ -1,4 +1,4 @@
-public struct RectangleLight // TypeDefIndex: 3887
+public struct RectangleLight // TypeDefIndex: 3889
 {
 	public int instanceID; 
 	public bool shadow; 

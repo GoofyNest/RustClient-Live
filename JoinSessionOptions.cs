@@ -1,4 +1,4 @@
-public struct JoinSessionOptions // TypeDefIndex: 8491
+public struct JoinSessionOptions // TypeDefIndex: 8500
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <SessionName>k__BackingField; 

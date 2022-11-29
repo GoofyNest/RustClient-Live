@@ -1,4 +1,4 @@
-public struct ListHashSet.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4812
+public struct ListHashSet.Enumerator<T> : IEnumerator<T>, IEnumerator, IDisposable // TypeDefIndex: 4814
 {
 	private readonly BufferList<T> list; 
 	private int index; 

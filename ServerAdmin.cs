@@ -1,4 +1,4 @@
-public class ServerAdminConvarInfo : MonoBehaviour // TypeDefIndex: 13827
+public class ServerAdminConvarInfo : MonoBehaviour // TypeDefIndex: 13875
 {
 	public RustText InfoName; 
 	public RustText InfoValue; 
@@ -14,7 +14,7 @@ public class ServerAdminConvarInfo : MonoBehaviour // TypeDefIndex: 13827
 
 }
 
-public class ServerAdminPlayerEntry : MonoBehaviour // TypeDefIndex: 13828
+public class ServerAdminPlayerEntry : MonoBehaviour // TypeDefIndex: 13876
 {
 	public RustText PlayerName; 
 	public RustText Ping; 
@@ -41,7 +41,7 @@ public class ServerAdminPlayerEntry : MonoBehaviour // TypeDefIndex: 13828
 
 }
 
-public class ServerAdminPlayerId : MonoBehaviour // TypeDefIndex: 13829
+public class ServerAdminPlayerId : MonoBehaviour // TypeDefIndex: 13877
 {
 	public RustText PlayerName; 
 	public RustText PlayerId; 
@@ -53,7 +53,7 @@ public class ServerAdminPlayerId : MonoBehaviour // TypeDefIndex: 13829
 
 }
 
-public class ServerAdminPlayerInfo : MonoBehaviour // TypeDefIndex: 13830
+public class ServerAdminPlayerInfo : MonoBehaviour // TypeDefIndex: 13878
 {
 	public RustText PlayerName; 
 	public RustText SteamID; 
@@ -89,7 +89,7 @@ public class ServerAdminPlayerInfo : MonoBehaviour // TypeDefIndex: 13830
 
 }
 
-public class ServerAdminServerInfo : MonoBehaviour // TypeDefIndex: 13831
+public class ServerAdminServerInfo : MonoBehaviour // TypeDefIndex: 13879
 {
 	public RustText InfoName; 
 	public RustText InfoValue; 
@@ -101,7 +101,7 @@ public class ServerAdminServerInfo : MonoBehaviour // TypeDefIndex: 13831
 
 }
 
-public class ServerAdminUGCEntry : MonoBehaviour // TypeDefIndex: 13832
+public class ServerAdminUGCEntry : MonoBehaviour // TypeDefIndex: 13880
 {
 	protected Admin.ServerUGCInfo cachedInfo; 
 	private Action<byte[]> receivedCallback; 
@@ -123,7 +123,7 @@ public class ServerAdminUGCEntry : MonoBehaviour // TypeDefIndex: 13832
 
 }
 
-public class ServerAdminUGCEntryAudio : ServerAdminUGCEntry // TypeDefIndex: 13833
+public class ServerAdminUGCEntryAudio : ServerAdminUGCEntry // TypeDefIndex: 13881
 {
 	public AudioSource AudioSpeaker; 
 	public RustText DurationText; 
@@ -143,14 +143,14 @@ public class ServerAdminUGCEntryAudio : ServerAdminUGCEntry // TypeDefIndex: 138
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <OnVisible>b__5_0(byte[] bytes) { }
+	private void <OnVisible>
 
 	[CompilerGeneratedAttribute] 
-	private void <OnVisible>b__5_1(AudioClip clip, bool b) { }
+	private void <OnVisible>
 
 }
 
-public class ServerAdminUGCEntryImage : ServerAdminUGCEntry // TypeDefIndex: 13834
+public class ServerAdminUGCEntryImage : ServerAdminUGCEntry // TypeDefIndex: 13882
 {
 	public RawImage Image; 
 	public RectTransform Backing; 
@@ -173,11 +173,11 @@ public class ServerAdminUGCEntryImage : ServerAdminUGCEntry // TypeDefIndex: 138
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <GetDataForCurrentIndex>b__7_0(byte[] bytes) { }
+	private void <GetDataForCurrentIndex>
 
 }
 
-public class ServerAdminUGCEntryPattern : ServerAdminUGCEntry // TypeDefIndex: 13835
+public class ServerAdminUGCEntryPattern : ServerAdminUGCEntry // TypeDefIndex: 13883
 {
 	public GameObjectRef StarPrefab; 
 	public RectTransform StarRoot; 
@@ -195,7 +195,7 @@ public class ServerAdminUGCEntryPattern : ServerAdminUGCEntry // TypeDefIndex: 1
 
 }
 
-public class ServerAdminUGCEntryStub : MonoBehaviour // TypeDefIndex: 13836
+public class ServerAdminUGCEntryStub : MonoBehaviour // TypeDefIndex: 13884
 {
 	public ServerAdminUGCEntryAudio AudioWidget; 
 	public ServerAdminUGCEntryImage ImageWidget; 
@@ -214,7 +214,7 @@ public class ServerAdminUGCEntryStub : MonoBehaviour // TypeDefIndex: 13836
 
 }
 
-public class ServerAdminUI : SingletonComponent<ServerAdminUI> // TypeDefIndex: 13837
+public class ServerAdminUI : SingletonComponent<ServerAdminUI> // TypeDefIndex: 13885
 {
 	public GameObjectRef PlayerEntry; 
 	public RectTransform PlayerInfoParent; 
@@ -313,11 +313,11 @@ public class ServerAdminUI : SingletonComponent<ServerAdminUI> // TypeDefIndex: 
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private GameObjectRef <PopulateConvarInfo>b__38_0(Admin.ServerConvarInfo convarInfo) { }
+	private GameObjectRef <PopulateConvarInfo>
 
 }
 
-private class ServerAdminUI.UGCDataSource : VirtualScroll.IDataSource // TypeDefIndex: 13838
+private class ServerAdminUI.UGCDataSource : VirtualScroll.IDataSource // TypeDefIndex: 13886
 {
 	private List<Admin.ServerUGCInfo> rawInfo; 
 	private List<Admin.ServerUGCInfo> filteredInfo; 
@@ -338,7 +338,7 @@ private class ServerAdminUI.UGCDataSource : VirtualScroll.IDataSource // TypeDef
 
 }
 
-private sealed class ServerAdminUI.<>c__DisplayClass33_0 // TypeDefIndex: 13839
+private sealed class ServerAdminUI.<>c__DisplayClass33_0 // TypeDefIndex: 13887
 {
 	public ServerAdminUI <>4__this; 
 	public string oldSelectedPlayer; 
@@ -347,27 +347,27 @@ private sealed class ServerAdminUI.<>c__DisplayClass33_0 // TypeDefIndex: 13839
 
 	public void .ctor() { }
 
-	internal GameObjectRef <PopulatePlayerInfo>b__0(Admin.PlayerInfo playerInfo) { }
+	internal GameObjectRef <PopulatePlayerInfo>
 
-	internal void <PopulatePlayerInfo>b__1(Admin.PlayerInfo playerInfo, ServerAdminPlayerEntry entry) { }
+	internal void <PopulatePlayerInfo>
 
-	internal void <PopulatePlayerInfo>b__3() { }
+	internal void <PopulatePlayerInfo>
 
 }
 
-private sealed class ServerAdminUI.<>c__DisplayClass33_1 // TypeDefIndex: 13840
+private sealed class ServerAdminUI.<>c__DisplayClass33_1 // TypeDefIndex: 13888
 {
 	public Admin.PlayerInfo playerInfo; 
-	public ServerAdminUI.<>c__DisplayClass33_0 CS$<>8__locals1; 
+	public ServerAdminUI.<>c
 
 
 	public void .ctor() { }
 
-	internal void <PopulatePlayerInfo>b__2() { }
+	internal void <PopulatePlayerInfo>
 
 }
 
-private sealed class ServerAdminUI.<>c // TypeDefIndex: 13841
+private sealed class ServerAdminUI.<>c // TypeDefIndex: 13889
 {
 	public static readonly ServerAdminUI.<>c <>9; 
 	public static Action<Admin.ServerConvarInfo, ServerAdminConvarInfo> <>9__38_1; 
@@ -377,7 +377,7 @@ private sealed class ServerAdminUI.<>c // TypeDefIndex: 13841
 
 	public void .ctor() { }
 
-	internal void <PopulateConvarInfo>b__38_1(Admin.ServerConvarInfo convarInfo, ServerAdminConvarInfo adminConvarInfo) { }
+	internal void <PopulateConvarInfo>
 
 }
 

@@ -1,4 +1,4 @@
-public class MemoryTraceWriter : ITraceWriter // TypeDefIndex: 5983
+public class MemoryTraceWriter : ITraceWriter // TypeDefIndex: 5985
 {
 	private readonly Queue<string> _traceMessages; 
 	[CompilerGeneratedAttribute] 

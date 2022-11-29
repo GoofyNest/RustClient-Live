@@ -1,4 +1,4 @@
-public class ReplicatedVar : ConsoleVar // TypeDefIndex: 6929
+public class ReplicatedVar : ConsoleVar // TypeDefIndex: 6933
 {
 
 	public void .ctor() { }

@@ -86,7 +86,7 @@ private sealed class ActivityFilter.<>c__DisplayClass11_0 // TypeDefIndex: 1616
 
 	public void .ctor() { }
 
-	internal void <GetActivityDyingDelegate>b__0(Guid oldActivity) { }
+	internal void <GetActivityDyingDelegate>
 
 }
 
@@ -97,7 +97,7 @@ private sealed class ActivityFilter.<>c__DisplayClass13_0 // TypeDefIndex: 1617
 
 	public void .ctor() { }
 
-	internal int <TrimActiveActivityStore>b__0(KeyValuePair<Guid, int> x, KeyValuePair<Guid, int> y) { }
+	internal int <TrimActiveActivityStore>
 
 }
 

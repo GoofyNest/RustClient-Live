@@ -1,4 +1,4 @@
-public static class TimeSpanEx // TypeDefIndex: 13105
+public static class TimeSpanEx // TypeDefIndex: 13144
 {
 
 	[ExtensionAttribute] 

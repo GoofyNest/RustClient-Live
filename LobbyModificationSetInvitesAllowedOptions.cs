@@ -1,4 +1,4 @@
-public struct LobbyModificationSetInvitesAllowedOptions // TypeDefIndex: 9167
+public struct LobbyModificationSetInvitesAllowedOptions // TypeDefIndex: 9176
 {
 	[CompilerGeneratedAttribute] 
 	private bool <InvitesAllowed>k__BackingField; 

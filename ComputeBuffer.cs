@@ -1,4 +1,4 @@
-public sealed class ComputeBuffer : IDisposable // TypeDefIndex: 3551
+public sealed class ComputeBuffer : IDisposable // TypeDefIndex: 3552
 {
 	internal IntPtr m_Ptr; 
 

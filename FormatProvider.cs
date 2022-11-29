@@ -1,4 +1,4 @@
-internal class FormatProvider // TypeDefIndex: 3973
+internal class FormatProvider // TypeDefIndex: 3975
 {
 
 	internal static string FormatBigInteger(int precision, int scale, bool sign, string format, NumberFormatInfo numberFormatInfo, char[] digits, int startIndex) { }
@@ -7,7 +7,7 @@ internal class FormatProvider // TypeDefIndex: 3973
 
 }
 
-private class FormatProvider.Number // TypeDefIndex: 3974
+private class FormatProvider.Number // TypeDefIndex: 3976
 {
 	private static string[] s_posCurrencyFormats; 
 	private static string[] s_negCurrencyFormats; 
@@ -61,7 +61,7 @@ private class FormatProvider.Number // TypeDefIndex: 3974
 
 }
 
-internal struct FormatProvider.Number.NumberBuffer // TypeDefIndex: 3975
+internal struct FormatProvider.Number.NumberBuffer // TypeDefIndex: 3977
 {
 	public int precision; 
 	public int scale; 

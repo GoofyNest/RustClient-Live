@@ -1,4 +1,4 @@
-public struct TreeInstance // TypeDefIndex: 4095
+public struct TreeInstance // TypeDefIndex: 4097
 {
 	public Vector3 position; 
 	public float widthScale; 

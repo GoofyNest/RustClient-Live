@@ -1,4 +1,4 @@
-public struct PropertyName : IEquatable<PropertyName> // TypeDefIndex: 3488
+public struct PropertyName : IEquatable<PropertyName> // TypeDefIndex: 3489
 {
 	internal int id; 
 

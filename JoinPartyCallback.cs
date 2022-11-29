@@ -1,4 +1,4 @@
-internal struct JoinPartyCallback_t : ICallbackData // TypeDefIndex: 5359
+internal struct JoinPartyCallback_t : ICallbackData // TypeDefIndex: 5361
 {
 	internal Result Result; 
 	internal ulong BeaconID; 

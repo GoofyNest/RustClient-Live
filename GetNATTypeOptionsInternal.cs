@@ -1,4 +1,4 @@
-internal struct GetNATTypeOptionsInternal : ISettable<GetNATTypeOptions>, IDisposable // TypeDefIndex: 8946
+internal struct GetNATTypeOptionsInternal : ISettable<GetNATTypeOptions>, IDisposable // TypeDefIndex: 8955
 {
 
 internal struct GetNATTypeOptionsInternal : ISettable<GetNATTypeOptions>, IDisposable

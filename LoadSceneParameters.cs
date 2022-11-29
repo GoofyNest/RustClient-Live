@@ -1,4 +1,4 @@
-public struct LoadSceneParameters // TypeDefIndex: 3661
+public struct LoadSceneParameters // TypeDefIndex: 3662
 {
 	[SerializeField] 
 	private LoadSceneMode m_LoadSceneMode; 

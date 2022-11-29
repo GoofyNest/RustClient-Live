@@ -1,4 +1,4 @@
-private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7514
+private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 7520
 {
 	public long maxTime; 
 
@@ -6,24 +6,24 @@ private sealed class ValueLine.<>c__DisplayClass16_0<TValue> // TypeDefIndex: 75
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-ValueLine.<>c__DisplayClass16_0<object>..ctor
+	|-ValueLine.<>c
 	*/
 
-	internal bool <Reverse>b__0(ValueChange<TValue> c) { }
+	internal bool <Reverse>
 	/* GenericInstMethod :
 	|
-	|-ValueLine.<>c__DisplayClass16_0<object>.<Reverse>b__0
+	|-ValueLine.<>c
 	*/
 
-	internal long <Reverse>b__2(ValueChange<TValue> c) { }
+	internal long <Reverse>
 	/* GenericInstMethod :
 	|
-	|-ValueLine.<>c__DisplayClass16_0<object>.<Reverse>b__2
+	|-ValueLine.<>c
 	*/
 
 }
 
-private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7515
+private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7521
 {
 	public static readonly ValueLine.<>c<TValue> <>9; 
 	public static Func<ValueChange<TValue>, TValue> <>9__16_1; 
@@ -42,16 +42,16 @@ private sealed class ValueLine.<>c<TValue> // TypeDefIndex: 7515
 	|-ValueLine.<>c<object>..ctor
 	*/
 
-	internal TValue <Reverse>b__16_1(ValueChange<TValue> c) { }
+	internal TValue <Reverse>
 	/* GenericInstMethod :
 	|
-	|-ValueLine.<>c<object>.<Reverse>b__16_1
+	|-ValueLine.<>c<object>.<Reverse>
 	*/
 
-	internal ValueChange<TValue> <Reverse>b__16_3(TValue v, long t) { }
+	internal ValueChange<TValue> <Reverse>
 	/* GenericInstMethod :
 	|
-	|-ValueLine.<>c<object>.<Reverse>b__16_3
+	|-ValueLine.<>c<object>.<Reverse>
 	*/
 
 }

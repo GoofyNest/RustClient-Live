@@ -1,11 +1,15 @@
-public class PlayingCard // TypeDefIndex: 13766
+public class PlayingCard // TypeDefIndex: 13814
 {
+	public readonly bool IsUnknownCard; 
 	public readonly Suit Suit; 
 	public readonly Rank Rank; 
 	public static PlayingCard[] cards; 
+	public static PlayingCard unknownCard; 
 
 
 	private void .ctor(Suit suit, Rank rank) { }
+
+	private void .ctor() { }
 
 	public static PlayingCard GetCard(Suit suit, Rank rank) { }
 
@@ -17,9 +21,9 @@ public class PlayingCard // TypeDefIndex: 13766
 
 	public static int GetIndex(Suit suit, Rank rank) { }
 
-	public int GetEvaluationValue() { }
+	public int GetPokerEvaluationValue() { }
 
-	private int GetSuitCode() { }
+	private int GetPokerSuitCode() { }
 
 	private static PlayingCard[] GenerateAllCards() { }
 

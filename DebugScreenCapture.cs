@@ -1,4 +1,4 @@
-public struct DebugScreenCapture // TypeDefIndex: 3583
+public struct DebugScreenCapture // TypeDefIndex: 3584
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -6,11 +6,11 @@ public struct DebugScreenCapture // TypeDefIndex: 3583
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private TextureFormat <imageFormat>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private int <width>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private int <height>k__BackingField; 
 
 	public NativeArray<byte> rawImageDataReference { set; }

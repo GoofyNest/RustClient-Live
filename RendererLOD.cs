@@ -1,10 +1,11 @@
-public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11675
+public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11693
 {
 	public RendererLOD.State[] States; 
 	private RendererBatch meshBatch; 
 	private int curlod; 
 	private bool force; 
 	private bool isSmall; 
+	private bool isBeingForcedOff; 
 
 
 	protected override void InitLOD() { }
@@ -16,6 +17,8 @@ public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11675
 	protected override void Show() { }
 
 	protected override void Hide() { }
+
+	protected override void PrepareForForceVisible() { }
 
 	protected override void Hide(bool shadowsVisible) { }
 
@@ -31,7 +34,7 @@ public class RendererLOD : LODComponent, IBatchingHandler // TypeDefIndex: 11675
 
 }
 
-public class RendererLOD.State // TypeDefIndex: 11676
+public class RendererLOD.State // TypeDefIndex: 11694
 {
 	public float distance; 
 	public Renderer renderer; 

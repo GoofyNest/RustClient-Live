@@ -1,4 +1,4 @@
-public class VectorConverter : JsonConverter // TypeDefIndex: 6112
+public class VectorConverter : JsonConverter // TypeDefIndex: 6114
 {
 	private static readonly Type V2; 
 	private static readonly Type V3; 

@@ -1,4 +1,4 @@
-internal enum EGAHTTPApiResponse // TypeDefIndex: 5677
+internal enum EGAHTTPApiResponse // TypeDefIndex: 5679
 {
 	public int value__; 
 	public const EGAHTTPApiResponse NoResponse = 0;

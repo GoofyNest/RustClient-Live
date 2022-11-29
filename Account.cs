@@ -1,4 +1,4 @@
-public static class Account // TypeDefIndex: 6177
+public static class Account // TypeDefIndex: 6179
 {
 	public static RealTimeSince LastUpdated; 
 	public static int UnreadNotices; 
@@ -19,7 +19,7 @@ public static class Account // TypeDefIndex: 6177
 
 }
 
-public class Account.AccountJson // TypeDefIndex: 6178
+public class Account.AccountJson // TypeDefIndex: 6180
 {
 	[CompilerGeneratedAttribute] 
 	private string <SteamId>k__BackingField; 
@@ -55,7 +55,7 @@ public class Account.AccountJson // TypeDefIndex: 6178
 
 }
 
-private struct Account.<Refresh>d__6 : IAsyncStateMachine // TypeDefIndex: 6179
+private struct Account.<Refresh>d__6 : IAsyncStateMachine // TypeDefIndex: 6181
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -71,7 +71,7 @@ private struct Account.<Refresh>d__6 : IAsyncStateMachine // TypeDefIndex: 6179
 
 }
 
-private struct Account.<ReadAllNotices>d__7 : IAsyncStateMachine // TypeDefIndex: 6180
+private struct Account.<ReadAllNotices>d__7 : IAsyncStateMachine // TypeDefIndex: 6182
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

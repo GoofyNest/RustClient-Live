@@ -19,7 +19,7 @@ internal sealed class TypeInformation // TypeDefIndex: 1111
 
 }
 
-internal class TypeInformation // TypeDefIndex: 5946
+internal class TypeInformation // TypeDefIndex: 5948
 {
 	[CompilerGeneratedAttribute] 
 	private Type <Type>k__BackingField; 

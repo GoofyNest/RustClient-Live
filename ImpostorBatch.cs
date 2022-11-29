@@ -1,4 +1,4 @@
-public class ImpostorBatch // TypeDefIndex: 12411
+public class ImpostorBatch // TypeDefIndex: 12431
 {
 	[CompilerGeneratedAttribute] 
 	private Mesh <Mesh>k__BackingField; 
@@ -6,10 +6,10 @@ public class ImpostorBatch // TypeDefIndex: 12411
 	private Material <Material>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private ComputeBuffer <PositionBuffer>k__BackingField; 
-	public NativeList<Vector4> Positions; 
+	public FPNativeList<Vector4> Positions; 
 	[CompilerGeneratedAttribute] 
 	private ComputeBuffer <ArgsBuffer>k__BackingField; 
-	private NativeList<uint> args; 
+	private FPNativeList<uint> args; 
 	[CompilerGeneratedAttribute] 
 	private bool <IsDirty>k__BackingField; 
 	private Queue<int> recycle; 

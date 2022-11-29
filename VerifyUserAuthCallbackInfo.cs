@@ -1,4 +1,4 @@
-public struct VerifyUserAuthCallbackInfo : ICallbackInfo // TypeDefIndex: 9699
+public struct VerifyUserAuthCallbackInfo : ICallbackInfo // TypeDefIndex: 9708
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

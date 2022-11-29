@@ -1,4 +1,4 @@
-public class LayoutRebuilder : ICanvasElement // TypeDefIndex: 4983
+public class LayoutRebuilder : ICanvasElement // TypeDefIndex: 4985
 {
 	private RectTransform m_ToRebuild; 
 	private int m_CachedHashFromTransform; 
@@ -49,7 +49,7 @@ public class LayoutRebuilder : ICanvasElement // TypeDefIndex: 4983
 
 }
 
-private sealed class LayoutRebuilder.<>c // TypeDefIndex: 4984
+private sealed class LayoutRebuilder.<>c // TypeDefIndex: 4986
 {
 	public static readonly LayoutRebuilder.<>c <>9; 
 	public static Predicate<Component> <>9__10_0; 
@@ -63,17 +63,17 @@ private sealed class LayoutRebuilder.<>c // TypeDefIndex: 4984
 
 	public void .ctor() { }
 
-	internal void <.cctor>b__5_0(LayoutRebuilder x) { }
+	internal void <.cctor>
 
-	internal bool <StripDisabledBehavioursFromList>b__10_0(Component e) { }
+	internal bool <StripDisabledBehavioursFromList>
 
-	internal void <Rebuild>b__12_0(Component e) { }
+	internal void <Rebuild>
 
-	internal void <Rebuild>b__12_1(Component e) { }
+	internal void <Rebuild>
 
-	internal void <Rebuild>b__12_2(Component e) { }
+	internal void <Rebuild>
 
-	internal void <Rebuild>b__12_3(Component e) { }
+	internal void <Rebuild>
 
 }
 

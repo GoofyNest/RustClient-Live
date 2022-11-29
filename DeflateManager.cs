@@ -1,4 +1,4 @@
-internal sealed class DeflateManager // TypeDefIndex: 6976
+internal sealed class DeflateManager // TypeDefIndex: 6980
 {
 	private static readonly int MEM_LEVEL_MAX; 
 	private static readonly int MEM_LEVEL_DEFAULT; 
@@ -152,7 +152,7 @@ internal sealed class DeflateManager // TypeDefIndex: 6976
 
 }
 
-internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDefIndex: 6977
+internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDefIndex: 6981
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -165,7 +165,7 @@ internal sealed class DeflateManager.CompressFunc : MulticastDelegate // TypeDef
 
 }
 
-internal class DeflateManager.Config // TypeDefIndex: 6978
+internal class DeflateManager.Config // TypeDefIndex: 6982
 {
 	internal int GoodLength; 
 	internal int MaxLazy; 

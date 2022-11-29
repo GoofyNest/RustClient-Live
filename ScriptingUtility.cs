@@ -1,4 +1,4 @@
-internal class ScriptingUtility // TypeDefIndex: 3526
+internal class ScriptingUtility // TypeDefIndex: 3527
 {
 
 	[RequiredByNativeCodeAttribute] 
@@ -6,7 +6,7 @@ internal class ScriptingUtility // TypeDefIndex: 3526
 
 }
 
-private struct ScriptingUtility.TestClass // TypeDefIndex: 3527
+private struct ScriptingUtility.TestClass // TypeDefIndex: 3528
 {
 	public int value; 
 

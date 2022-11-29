@@ -1,4 +1,4 @@
-public struct CreateSceneParameters // TypeDefIndex: 3662
+public struct CreateSceneParameters // TypeDefIndex: 3663
 {
 	[SerializeField] 
 	private LocalPhysicsMode m_LocalPhysicsMode; 

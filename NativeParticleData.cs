@@ -1,4 +1,4 @@
-internal struct NativeParticleData // TypeDefIndex: 4554
+internal struct NativeParticleData // TypeDefIndex: 4556
 {
 	internal int count; 
 	internal NativeParticleData.Array3 positions; 
@@ -15,7 +15,7 @@ internal struct NativeParticleData // TypeDefIndex: 4554
 
 }
 
-internal struct NativeParticleData.Array3 // TypeDefIndex: 4555
+internal struct NativeParticleData.Array3 // TypeDefIndex: 4557
 {
 	internal float* x; 
 	internal float* y; 
@@ -23,7 +23,7 @@ internal struct NativeParticleData.Array3 // TypeDefIndex: 4555
 
 }
 
-internal struct NativeParticleData.Array4 // TypeDefIndex: 4556
+internal struct NativeParticleData.Array4 // TypeDefIndex: 4558
 {
 	internal float* x; 
 	internal float* y; 

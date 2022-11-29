@@ -1,4 +1,4 @@
-public class Slider : Selectable, IDragHandler, IEventSystemHandler, IInitializePotentialDragHandler, ICanvasElement // TypeDefIndex: 5011
+public class Slider : Selectable, IDragHandler, IEventSystemHandler, IInitializePotentialDragHandler, ICanvasElement // TypeDefIndex: 5013
 {
 	[SerializeField] 
 	private RectTransform m_FillRect; 
@@ -137,7 +137,7 @@ public class Slider : Selectable, IDragHandler, IEventSystemHandler, IInitialize
 
 }
 
-public enum Slider.Direction // TypeDefIndex: 5012
+public enum Slider.Direction // TypeDefIndex: 5014
 {
 	public int value__; 
 	public const Slider.Direction LeftToRight = 0;
@@ -147,14 +147,14 @@ public enum Slider.Direction // TypeDefIndex: 5012
 
 }
 
-public class Slider.SliderEvent : UnityEvent<float> // TypeDefIndex: 5013
+public class Slider.SliderEvent : UnityEvent<float> // TypeDefIndex: 5015
 {
 
 	public void .ctor() { }
 
 }
 
-private enum Slider.Axis // TypeDefIndex: 5014
+private enum Slider.Axis // TypeDefIndex: 5016
 {
 	public int value__; 
 	public const Slider.Axis Horizontal = 0;

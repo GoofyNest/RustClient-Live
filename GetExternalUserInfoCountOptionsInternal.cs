@@ -1,4 +1,4 @@
-internal struct GetExternalUserInfoCountOptionsInternal : ISettable<GetExternalUserInfoCountOptions>, IDisposable // TypeDefIndex: 8299
+internal struct GetExternalUserInfoCountOptionsInternal : ISettable<GetExternalUserInfoCountOptions>, IDisposable // TypeDefIndex: 8308
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-internal sealed class AggregateNode : ExpressionNode // TypeDefIndex: 4245
+internal sealed class AggregateNode : ExpressionNode // TypeDefIndex: 4247
 {
 	private readonly AggregateType _type; 
 	private readonly Aggregate _aggregate; 

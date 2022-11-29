@@ -1,4 +1,4 @@
-public enum ParticleSystemCollisionQuality // TypeDefIndex: 4541
+public enum ParticleSystemCollisionQuality // TypeDefIndex: 4543
 {
 	public int value__; 
 	public const ParticleSystemCollisionQuality High = 0;

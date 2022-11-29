@@ -1,4 +1,4 @@
-public sealed class Screen // TypeDefIndex: 3386
+public sealed class Screen // TypeDefIndex: 3387
 {
 	public static int width { get; }
 	public static int height { get; }

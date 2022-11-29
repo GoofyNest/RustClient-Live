@@ -1,4 +1,4 @@
-public static class Vis // TypeDefIndex: 11777
+public static class Vis // TypeDefIndex: 11797
 {
 	private static int colCount; 
 	private static Collider[] colBuffer; 
@@ -82,7 +82,7 @@ public static class Vis // TypeDefIndex: 11777
 
 }
 
-public class Vis : ConsoleSystem // TypeDefIndex: 13723
+public class Vis : ConsoleSystem // TypeDefIndex: 13761
 {
 	[ClientVar] 
 	[HelpAttribute] 

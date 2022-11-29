@@ -1,4 +1,4 @@
-public class NameValueHeaderValue : ICloneable // TypeDefIndex: 5792
+public class NameValueHeaderValue : ICloneable // TypeDefIndex: 5794
 {
 	internal string value; 
 	[CompilerGeneratedAttribute] 

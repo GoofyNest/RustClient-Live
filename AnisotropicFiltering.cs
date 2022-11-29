@@ -1,4 +1,4 @@
-public enum AnisotropicFiltering // TypeDefIndex: 3421
+public enum AnisotropicFiltering // TypeDefIndex: 3422
 {
 	public int value__; 
 	public const AnisotropicFiltering Disable = 0;

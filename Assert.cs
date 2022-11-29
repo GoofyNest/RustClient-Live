@@ -1,4 +1,4 @@
-public static class Assert // TypeDefIndex: 3907
+public static class Assert // TypeDefIndex: 3909
 {
 	[ObsoleteAttribute] 
 	public static bool raiseExceptions; 

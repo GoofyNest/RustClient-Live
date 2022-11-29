@@ -1,4 +1,4 @@
-public static class World // TypeDefIndex: 12046
+public static class World // TypeDefIndex: 12066
 {
 	[CompilerGeneratedAttribute] 
 	private static uint <Seed>k__BackingField; 
@@ -178,7 +178,7 @@ public static class World // TypeDefIndex: 12046
 
 }
 
-private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 12047
+private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 12067
 {
 	public Regex regex1; 
 	public Regex regex2; 
@@ -186,11 +186,11 @@ private sealed class World.<>c__DisplayClass53_0 // TypeDefIndex: 12047
 
 	public void .ctor() { }
 
-	internal bool <CleanupOldFiles>b__0(string path) { }
+	internal bool <CleanupOldFiles>
 
 }
 
-private sealed class World.<>c // TypeDefIndex: 12048
+private sealed class World.<>c // TypeDefIndex: 12068
 {
 	public static readonly World.<>c <>9; 
 	public static Func<PathData, PathList> <>9__67_0; 
@@ -200,11 +200,11 @@ private sealed class World.<>c // TypeDefIndex: 12048
 
 	public void .ctor() { }
 
-	internal PathList <GetPaths>b__67_0(PathData p) { }
+	internal PathList <GetPaths>
 
 }
 
-private sealed class World.<SpawnAsync>d__70 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12049
+private sealed class World.<SpawnAsync>d__70 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12069
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -240,7 +240,7 @@ private sealed class World.<SpawnAsync>d__70 : IEnumerator<object>, IEnumerator,
 
 }
 
-private sealed class World.<Spawn>d__71 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12050
+private sealed class World.<Spawn>d__71 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12070
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -272,7 +272,7 @@ private sealed class World.<Spawn>d__71 : IEnumerator<object>, IEnumerator, IDis
 
 }
 
-public class World : ConsoleSystem // TypeDefIndex: 13729
+public class World : ConsoleSystem // TypeDefIndex: 13767
 {
 	[ServerVar] 
 	[ClientVar] 

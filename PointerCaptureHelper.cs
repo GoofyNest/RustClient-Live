@@ -1,4 +1,4 @@
-public static class PointerCaptureHelper // TypeDefIndex: 4606
+public static class PointerCaptureHelper // TypeDefIndex: 4608
 {
 
 	private static PointerDispatchState GetStateFor(IEventHandler handler) { }

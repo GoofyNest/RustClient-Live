@@ -1,4 +1,4 @@
-internal class ISteamUserStats : SteamInterface // TypeDefIndex: 5136
+internal class ISteamUserStats : SteamInterface // TypeDefIndex: 5138
 {
 
 	internal void .ctor(bool IsGameServer) { }

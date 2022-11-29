@@ -247,7 +247,7 @@ private sealed class Stream.SynchronousAsyncResult.<>c // TypeDefIndex: 643
 
 	public void .ctor() { }
 
-	internal ManualResetEvent <get_AsyncWaitHandle>b__12_0() { }
+	internal ManualResetEvent <get_AsyncWaitHandle>
 
 }
 
@@ -268,21 +268,21 @@ private sealed class Stream.<>c // TypeDefIndex: 644
 
 	public void .ctor() { }
 
-	internal SemaphoreSlim <EnsureAsyncActiveSemaphoreInitialized>b__4_0() { }
+	internal SemaphoreSlim <EnsureAsyncActiveSemaphoreInitialized>
 
-	internal int <BeginReadInternal>b__39_0(object <p0>) { }
+	internal int <BeginReadInternal>
 
-	internal IAsyncResult <BeginEndReadAsync>b__43_0(Stream stream, Stream.ReadWriteParameters args, AsyncCallback callback, object state) { }
+	internal IAsyncResult <BeginEndReadAsync>
 
-	internal int <BeginEndReadAsync>b__43_1(Stream stream, IAsyncResult asyncResult) { }
+	internal int <BeginEndReadAsync>
 
-	internal int <BeginWriteInternal>b__46_0(object <p0>) { }
+	internal int <BeginWriteInternal>
 
-	internal void <RunReadWriteTaskWhenReady>b__47_0(Task t, object state) { }
+	internal void <RunReadWriteTaskWhenReady>
 
-	internal IAsyncResult <BeginEndWriteAsync>b__53_0(Stream stream, Stream.ReadWriteParameters args, AsyncCallback callback, object state) { }
+	internal IAsyncResult <BeginEndWriteAsync>
 
-	internal VoidTaskResult <BeginEndWriteAsync>b__53_1(Stream stream, IAsyncResult asyncResult) { }
+	internal VoidTaskResult <BeginEndWriteAsync>
 
 }
 

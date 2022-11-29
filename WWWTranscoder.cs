@@ -1,4 +1,4 @@
-internal class WWWTranscoder // TypeDefIndex: 4129
+internal class WWWTranscoder // TypeDefIndex: 4131
 {
 	private static byte[] ucHexChars; 
 	private static byte[] lcHexChars; 

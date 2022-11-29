@@ -1,4 +1,4 @@
-public enum ComputeBufferType // TypeDefIndex: 3413
+public enum ComputeBufferType // TypeDefIndex: 3414
 {
 	public int value__; 
 	public const ComputeBufferType Default = 0;

@@ -1,4 +1,4 @@
-internal static class Utilities // TypeDefIndex: 6277
+internal static class Utilities // TypeDefIndex: 6279
 {
 
 	internal static int SelectBucketIndex(int bufferSize) { }

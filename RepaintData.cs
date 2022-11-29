@@ -1,4 +1,4 @@
-internal class RepaintData // TypeDefIndex: 4601
+internal class RepaintData // TypeDefIndex: 4603
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 

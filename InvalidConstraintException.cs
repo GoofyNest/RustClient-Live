@@ -1,4 +1,4 @@
-public class InvalidConstraintException : DataException // TypeDefIndex: 4199
+public class InvalidConstraintException : DataException // TypeDefIndex: 4201
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

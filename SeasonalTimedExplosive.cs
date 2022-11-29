@@ -1,4 +1,4 @@
-public class SeasonalTimedExplosive : TimedExplosive // TypeDefIndex: 11402
+public class SeasonalTimedExplosive : TimedExplosive // TypeDefIndex: 11416
 {
 	public RandomRendererEnable randomRenderer; 
 

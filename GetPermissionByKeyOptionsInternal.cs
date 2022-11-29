@@ -1,4 +1,4 @@
-internal struct GetPermissionByKeyOptionsInternal : ISettable<GetPermissionByKeyOptions>, IDisposable // TypeDefIndex: 9322
+internal struct GetPermissionByKeyOptionsInternal : ISettable<GetPermissionByKeyOptions>, IDisposable // TypeDefIndex: 9331
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-public class Sound : MonoBehaviour, IClientComponent, IOnParentDestroying, IComparable<Sound>, ISoundBudgetedUpdate // TypeDefIndex: 10739
+public class Sound : MonoBehaviour, IClientComponent, IOnParentDestroying, IComparable<Sound>, ISoundBudgetedUpdate // TypeDefIndex: 10750
 {
 	public static float volumeExponent; 
 	public SoundDefinition definition; 

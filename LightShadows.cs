@@ -1,4 +1,4 @@
-public enum LightShadows // TypeDefIndex: 3415
+public enum LightShadows // TypeDefIndex: 3416
 {
 	public int value__; 
 	public const LightShadows None = 0;

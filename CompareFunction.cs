@@ -1,4 +1,4 @@
-public enum CompareFunction // TypeDefIndex: 3813
+public enum CompareFunction // TypeDefIndex: 3814
 {
 	public int value__; 
 	public const CompareFunction Disabled = 0;

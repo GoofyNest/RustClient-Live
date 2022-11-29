@@ -1,4 +1,4 @@
-public class Glyph // TypeDefIndex: 4115
+public class Glyph // TypeDefIndex: 4117
 {
 	[NativeNameAttribute] 
 	[SerializeField] 

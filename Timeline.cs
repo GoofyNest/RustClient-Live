@@ -1,4 +1,4 @@
-public class Timeline : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7076
+public class Timeline : RustControl, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler // TypeDefIndex: 7080
 {
 	public int StartTime; 
 	public int EndTime; 
@@ -51,7 +51,7 @@ public class Timeline : RustControl, IPointerDownHandler, IEventSystemHandler, I
 
 }
 
-public class Timeline.ScrubEvent : UnityEvent<float> // TypeDefIndex: 7077
+public class Timeline.ScrubEvent : UnityEvent<float> // TypeDefIndex: 7081
 {
 
 	public void .ctor() { }

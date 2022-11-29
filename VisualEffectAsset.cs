@@ -1,4 +1,4 @@
-public class VisualEffectAsset : VisualEffectObject // TypeDefIndex: 4768
+public class VisualEffectAsset : VisualEffectObject // TypeDefIndex: 4770
 {
 
 [NativeHeaderAttribute] 

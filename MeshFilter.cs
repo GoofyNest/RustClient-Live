@@ -1,4 +1,4 @@
-public sealed class MeshFilter : Component // TypeDefIndex: 3409
+public sealed class MeshFilter : Component // TypeDefIndex: 3410
 {
 	public Mesh sharedMesh { get; set; }
 	public Mesh mesh { get; set; }

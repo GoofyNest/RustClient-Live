@@ -1,4 +1,4 @@
-internal struct OverlayBrowserProtocolNavigation_t : ICallbackData // TypeDefIndex: 5330
+internal struct OverlayBrowserProtocolNavigation_t : ICallbackData // TypeDefIndex: 5332
 {
 	internal byte[] RgchURI; 
 	public static int _datasize; 

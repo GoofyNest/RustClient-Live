@@ -1,4 +1,4 @@
-public class AnimatorOverrideController : RuntimeAnimatorController // TypeDefIndex: 4491
+public class AnimatorOverrideController : RuntimeAnimatorController // TypeDefIndex: 4493
 {
 	internal AnimatorOverrideController.OnOverrideControllerDirtyCallback OnOverrideControllerDirty; 
 
@@ -16,7 +16,7 @@ public class AnimatorOverrideController : RuntimeAnimatorController // TypeDefIn
 
 }
 
-internal sealed class AnimatorOverrideController.OnOverrideControllerDirtyCallback : MulticastDelegate // TypeDefIndex: 4492
+internal sealed class AnimatorOverrideController.OnOverrideControllerDirtyCallback : MulticastDelegate // TypeDefIndex: 4494
 {
 
 	public void .ctor(object object, IntPtr method) { }

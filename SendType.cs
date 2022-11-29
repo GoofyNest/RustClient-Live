@@ -1,4 +1,4 @@
-public enum SendType // TypeDefIndex: 5296
+public enum SendType // TypeDefIndex: 5298
 {
 	public int value__; 
 	public const SendType Unreliable = 0;

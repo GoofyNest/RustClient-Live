@@ -1,4 +1,4 @@
-public class PaintedItemStorageEntity : BaseEntity, IServerFileReceiver, IUGCBrowserEntity // TypeDefIndex: 10321
+public class PaintedItemStorageEntity : BaseEntity, IServerFileReceiver, IUGCBrowserEntity // TypeDefIndex: 10332
 {
 	private uint _currentImageCrc; 
 	public List<PaintableItem> Targets; 
@@ -39,7 +39,7 @@ public class PaintedItemStorageEntity : BaseEntity, IServerFileReceiver, IUGCBro
 
 }
 
-private sealed class PaintedItemStorageEntity.<>c // TypeDefIndex: 10322
+private sealed class PaintedItemStorageEntity.<>c // TypeDefIndex: 10333
 {
 	public static readonly PaintedItemStorageEntity.<>c <>9; 
 	public static Predicate<PaintableItem> <>9__16_0; 
@@ -49,7 +49,7 @@ private sealed class PaintedItemStorageEntity.<>c // TypeDefIndex: 10322
 
 	public void .ctor() { }
 
-	internal bool <RemoveInvalidTargets>b__16_0(PaintableItem t) { }
+	internal bool <RemoveInvalidTargets>
 
 }
 

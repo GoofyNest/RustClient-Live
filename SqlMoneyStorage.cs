@@ -1,4 +1,4 @@
-internal sealed class SqlMoneyStorage : DataStorage // TypeDefIndex: 4426
+internal sealed class SqlMoneyStorage : DataStorage // TypeDefIndex: 4428
 {
 	private SqlMoney[] _values; 
 

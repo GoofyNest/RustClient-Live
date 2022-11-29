@@ -1,4 +1,4 @@
-internal struct UninstallModCallbackInfoInternal : ICallbackInfoInternal, IGettable<UninstallModCallbackInfo>, ISettable<UninstallModCallbackInfo>, IDisposable // TypeDefIndex: 9025
+internal struct UninstallModCallbackInfoInternal : ICallbackInfoInternal, IGettable<UninstallModCallbackInfo>, ISettable<UninstallModCallbackInfo>, IDisposable // TypeDefIndex: 9034
 {
 	private Result m_ResultCode; 
 	private IntPtr m_LocalUserId; 

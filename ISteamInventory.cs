@@ -1,4 +1,4 @@
-internal class ISteamInventory : SteamInterface // TypeDefIndex: 5122
+internal class ISteamInventory : SteamInterface // TypeDefIndex: 5124
 {
 
 	internal void .ctor(bool IsGameServer) { }

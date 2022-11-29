@@ -1,4 +1,4 @@
-public enum RenderTextureFormat // TypeDefIndex: 3428
+public enum RenderTextureFormat // TypeDefIndex: 3429
 {
 	public int value__; 
 	public const RenderTextureFormat ARGB32 = 0;

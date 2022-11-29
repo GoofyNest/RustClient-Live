@@ -1,4 +1,4 @@
-public struct GradientColorKey // TypeDefIndex: 3462
+public struct GradientColorKey // TypeDefIndex: 3463
 {
 	public Color color; 
 	public float time; 

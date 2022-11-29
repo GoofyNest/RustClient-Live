@@ -1,4 +1,4 @@
-internal class SharpZipBaseException : Exception // TypeDefIndex: 5658
+internal class SharpZipBaseException : Exception // TypeDefIndex: 5660
 {
 
 	public void .ctor() { }

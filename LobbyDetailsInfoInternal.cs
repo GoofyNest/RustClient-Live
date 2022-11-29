@@ -1,4 +1,4 @@
-internal struct LobbyDetailsInfoInternal : IGettable<LobbyDetailsInfo>, ISettable<LobbyDetailsInfo>, IDisposable // TypeDefIndex: 9143
+internal struct LobbyDetailsInfoInternal : IGettable<LobbyDetailsInfo>, ISettable<LobbyDetailsInfo>, IDisposable // TypeDefIndex: 9152
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LobbyId; 

@@ -1,4 +1,4 @@
-public enum ConfidenceLevel // TypeDefIndex: 3603
+public enum ConfidenceLevel // TypeDefIndex: 3604
 {
 	public int value__; 
 	public const ConfidenceLevel High = 0;

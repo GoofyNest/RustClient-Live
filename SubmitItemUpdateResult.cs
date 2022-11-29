@@ -1,4 +1,4 @@
-internal struct SubmitItemUpdateResult_t : ICallbackData // TypeDefIndex: 5437
+internal struct SubmitItemUpdateResult_t : ICallbackData // TypeDefIndex: 5439
 {
 	internal Result Result; 
 	internal bool UserNeedsToAcceptWorkshopLegalAgreement; 

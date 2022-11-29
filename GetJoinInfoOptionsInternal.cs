@@ -1,4 +1,4 @@
-internal struct GetJoinInfoOptionsInternal : ISettable<GetJoinInfoOptions>, IDisposable // TypeDefIndex: 8819
+internal struct GetJoinInfoOptionsInternal : ISettable<GetJoinInfoOptions>, IDisposable // TypeDefIndex: 8828
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

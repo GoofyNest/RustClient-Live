@@ -1,4 +1,4 @@
-internal class CompositeExpression : QueryExpression // TypeDefIndex: 6098
+internal class CompositeExpression : QueryExpression // TypeDefIndex: 6100
 {
 	[CompilerGeneratedAttribute] 
 	private List<QueryExpression> <Expressions>k__BackingField; 

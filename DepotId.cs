@@ -1,4 +1,4 @@
-internal struct DepotId_t : IEquatable<DepotId_t>, IComparable<DepotId_t> // TypeDefIndex: 5521
+internal struct DepotId_t : IEquatable<DepotId_t>, IComparable<DepotId_t> // TypeDefIndex: 5523
 {
 	public uint Value; 
 

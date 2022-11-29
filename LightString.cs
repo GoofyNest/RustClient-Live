@@ -1,4 +1,4 @@
-public class LightString : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6377
+public class LightString : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6379
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class LightString : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 63
 
 }
 
-public class LightString.StringPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6378
+public class LightString.StringPoint : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6380
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

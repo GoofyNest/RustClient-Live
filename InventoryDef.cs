@@ -1,4 +1,4 @@
-public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5243
+public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5245
 {
 	internal InventoryDefId _id; 
 	internal Dictionary<string, string> _properties; 
@@ -7,7 +7,6 @@ public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5243
 	public int Id { get; }
 	public string Name { get; }
 	public string Description { get; }
-	public string IconUrl { get; }
 	public string IconUrlLarge { get; }
 	public string PriceCategory { get; }
 	public string Type { get; }
@@ -25,8 +24,6 @@ public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5243
 	public string get_Name() { }
 
 	public string get_Description() { }
-
-	public string get_IconUrl() { }
 
 	public string get_IconUrlLarge() { }
 
@@ -72,14 +69,14 @@ public class InventoryDef : IEquatable<InventoryDef> // TypeDefIndex: 5243
 	public bool Equals(InventoryDef p) { }
 
 	[CompilerGeneratedAttribute] 
-	private InventoryRecipe <GetRecipes>b__21_0(string x) { }
+	private InventoryRecipe <GetRecipes>
 
 	[CompilerGeneratedAttribute] 
-	private bool <GetRecipesContainingThis>b__44_3(InventoryRecipe x) { }
+	private bool <GetRecipesContainingThis>
 
 }
 
-private sealed class InventoryDef.<>c // TypeDefIndex: 5244
+private sealed class InventoryDef.<>c // TypeDefIndex: 5246
 {
 	public static readonly InventoryDef.<>c <>9; 
 	public static Func<InventoryDef, InventoryRecipe[]> <>9__44_0; 
@@ -91,11 +88,11 @@ private sealed class InventoryDef.<>c // TypeDefIndex: 5244
 
 	public void .ctor() { }
 
-	internal InventoryRecipe[] <GetRecipesContainingThis>b__44_0(InventoryDef x) { }
+	internal InventoryRecipe[] <GetRecipesContainingThis>
 
-	internal bool <GetRecipesContainingThis>b__44_1(InventoryRecipe[] x) { }
+	internal bool <GetRecipesContainingThis>
 
-	internal IEnumerable<InventoryRecipe> <GetRecipesContainingThis>b__44_2(InventoryRecipe[] x) { }
+	internal IEnumerable<InventoryRecipe> <GetRecipesContainingThis>
 
 }
 

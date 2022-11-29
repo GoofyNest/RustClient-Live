@@ -1,4 +1,4 @@
-public struct StyleColor : IStyleValue<Color>, IEquatable<StyleColor> // TypeDefIndex: 4713
+public struct StyleColor : IStyleValue<Color>, IEquatable<StyleColor> // TypeDefIndex: 4715
 {
 	private StyleKeyword m_Keyword; 
 	private Color m_Value; 

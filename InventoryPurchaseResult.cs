@@ -1,4 +1,4 @@
-public struct InventoryPurchaseResult // TypeDefIndex: 5557
+public struct InventoryPurchaseResult // TypeDefIndex: 5559
 {
 	public Result Result; 
 	public ulong OrderID; 

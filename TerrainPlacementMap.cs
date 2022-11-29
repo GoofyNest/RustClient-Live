@@ -1,4 +1,4 @@
-public class TerrainPlacementMap : TerrainMap<bool> // TypeDefIndex: 12142
+public class TerrainPlacementMap : TerrainMap<bool> // TypeDefIndex: 12162
 {
 	private bool isEnabled; 
 
@@ -36,7 +36,7 @@ public class TerrainPlacementMap : TerrainMap<bool> // TypeDefIndex: 12142
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <SetBlocked>b__15_0(int x, int z, float lerp) { }
+	private void <SetBlocked>
 
 }
 

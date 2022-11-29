@@ -1,4 +1,4 @@
-internal struct UnreadChatMessagesChanged_t : ICallbackData // TypeDefIndex: 5329
+internal struct UnreadChatMessagesChanged_t : ICallbackData // TypeDefIndex: 5331
 {
 	public static int _datasize; 
 

@@ -1,4 +1,4 @@
-public enum CaptureFlags // TypeDefIndex: 3584
+public enum CaptureFlags // TypeDefIndex: 3585
 {
 	public uint value__; 
 	public const CaptureFlags ManagedObjects = 1;

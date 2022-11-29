@@ -1,4 +1,4 @@
-public class QDOQDSQOOQDDD // TypeDefIndex: 7179
+public class QDOQDSQOOQDDD // TypeDefIndex: 7183
 {
 	public int crossingElementLeftIndex; 
 	public int crossingElementRightIndex; 

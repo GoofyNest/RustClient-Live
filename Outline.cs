@@ -1,4 +1,4 @@
-public class Outline : Shadow // TypeDefIndex: 5038
+public class Outline : Shadow // TypeDefIndex: 5040
 {
 
 	protected void .ctor() { }

@@ -1,4 +1,4 @@
-public class RowNotInTableException : DataException // TypeDefIndex: 4202
+public class RowNotInTableException : DataException // TypeDefIndex: 4204
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

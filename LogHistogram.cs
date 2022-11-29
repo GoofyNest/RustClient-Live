@@ -1,4 +1,4 @@
-internal sealed class LogHistogram // TypeDefIndex: 13613
+internal sealed class LogHistogram // TypeDefIndex: 13651
 {
 	public const int rangeMin = -9;
 	public const int rangeMax = 9;

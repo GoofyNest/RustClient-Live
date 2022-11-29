@@ -1,4 +1,4 @@
-internal struct TouchScreenKeyboard_InternalConstructorHelperArguments // TypeDefIndex: 3561
+internal struct TouchScreenKeyboard_InternalConstructorHelperArguments // TypeDefIndex: 3562
 {
 	public uint keyboardType; 
 	public uint autocorrection; 
@@ -9,7 +9,7 @@ internal struct TouchScreenKeyboard_InternalConstructorHelperArguments // TypeDe
 
 }
 
-public class TouchScreenKeyboard // TypeDefIndex: 3562
+public class TouchScreenKeyboard // TypeDefIndex: 3563
 {
 	internal IntPtr m_Ptr; 
 
@@ -83,7 +83,7 @@ public class TouchScreenKeyboard // TypeDefIndex: 3562
 
 }
 
-public enum TouchScreenKeyboard.Status // TypeDefIndex: 3563
+public enum TouchScreenKeyboard.Status // TypeDefIndex: 3564
 {
 	public int value__; 
 	public const TouchScreenKeyboard.Status Visible = 0;

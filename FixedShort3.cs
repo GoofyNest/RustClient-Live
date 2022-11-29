@@ -1,4 +1,4 @@
-public struct FixedShort3 // TypeDefIndex: 13167
+public struct FixedShort3 // TypeDefIndex: 13205
 {
 	private const int FracBits = 10;
 	private const float MaxFrac = 1024;

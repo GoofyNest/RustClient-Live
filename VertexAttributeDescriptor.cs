@@ -1,4 +1,4 @@
-public struct VertexAttributeDescriptor : IEquatable<VertexAttributeDescriptor> // TypeDefIndex: 3825
+public struct VertexAttributeDescriptor : IEquatable<VertexAttributeDescriptor> // TypeDefIndex: 3826
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -9,8 +9,8 @@ public struct VertexAttributeDescriptor : IEquatable<VertexAttributeDescriptor> 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
 	private int <dimension>k__BackingField; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private int <stream>k__BackingField; 
 
 	public VertexAttribute attribute { get; set; }

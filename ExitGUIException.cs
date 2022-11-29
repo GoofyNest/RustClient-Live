@@ -1,4 +1,4 @@
-public sealed class ExitGUIException : Exception // TypeDefIndex: 4055
+public sealed class ExitGUIException : Exception // TypeDefIndex: 4057
 {
 
 	public void .ctor() { }

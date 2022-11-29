@@ -1,4 +1,4 @@
-public class ArmorProperties : ScriptableObject // TypeDefIndex: 11700
+public class ArmorProperties : ScriptableObject // TypeDefIndex: 11718
 {
 	[InspectorFlagsAttribute] 
 	public HitArea area; 

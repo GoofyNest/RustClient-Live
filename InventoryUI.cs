@@ -1,4 +1,4 @@
-public class InventoryUI : MonoBehaviour // TypeDefIndex: 12817
+public class InventoryUI : MonoBehaviour // TypeDefIndex: 12845
 {
 	public GameObject ContactsButton; 
 

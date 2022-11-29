@@ -1,4 +1,4 @@
-public enum PlayMode // TypeDefIndex: 4501
+public enum PlayMode // TypeDefIndex: 4503
 {
 	public int value__; 
 	public const PlayMode StopSameLayer = 0;

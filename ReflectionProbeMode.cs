@@ -1,4 +1,4 @@
-public enum ReflectionProbeMode // TypeDefIndex: 3829
+public enum ReflectionProbeMode // TypeDefIndex: 3830
 {
 	public int value__; 
 	public const ReflectionProbeMode Baked = 0;

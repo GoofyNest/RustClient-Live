@@ -1,4 +1,4 @@
-internal static class ConvertUtils // TypeDefIndex: 5948
+internal static class ConvertUtils // TypeDefIndex: 5950
 {
 	private static readonly Dictionary<Type, PrimitiveTypeCode> TypeCodeMap; 
 	private static readonly TypeInformation[] PrimitiveTypeCodes; 
@@ -45,7 +45,7 @@ internal static class ConvertUtils // TypeDefIndex: 5948
 
 }
 
-internal struct ConvertUtils.TypeConvertKey // TypeDefIndex: 5949
+internal struct ConvertUtils.TypeConvertKey // TypeDefIndex: 5951
 {
 	private readonly Type _initialType; 
 	private readonly Type _targetType; 
@@ -68,7 +68,7 @@ internal struct ConvertUtils.TypeConvertKey // TypeDefIndex: 5949
 
 }
 
-internal enum ConvertUtils.ConvertResult // TypeDefIndex: 5950
+internal enum ConvertUtils.ConvertResult // TypeDefIndex: 5952
 {
 	public int value__; 
 	public const ConvertUtils.ConvertResult Success = 0;
@@ -78,14 +78,14 @@ internal enum ConvertUtils.ConvertResult // TypeDefIndex: 5950
 
 }
 
-private sealed class ConvertUtils.<>c__DisplayClass9_0 // TypeDefIndex: 5951
+private sealed class ConvertUtils.<>c__DisplayClass9_0 // TypeDefIndex: 5953
 {
 	public MethodCall<object, object> call; 
 
 
 	public void .ctor() { }
 
-	internal object <CreateCastConverter>b__0(object o) { }
+	internal object <CreateCastConverter>
 
 }
 

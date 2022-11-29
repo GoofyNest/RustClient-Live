@@ -1,4 +1,4 @@
-public enum MixedLightingMode // TypeDefIndex: 3418
+public enum MixedLightingMode // TypeDefIndex: 3419
 {
 	public int value__; 
 	public const MixedLightingMode IndirectOnly = 0;

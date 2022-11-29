@@ -42,7 +42,7 @@ internal static class ThrowHelper // TypeDefIndex: 124
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<AlignedLineDrawer.LinePoint>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<AtmosphereVolumeRenderer.CurrentVolumeEntry>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<BaseEntity.PendingFileRequest>
-	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<CardTableUI.KeycodeWithAction>
+	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<CardGameUI.KeycodeWithAction>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<Cassette.LoadRequest>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<Admin.PlayerInfo>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<Admin.ServerConvarInfo>
@@ -156,7 +156,6 @@ internal static class ThrowHelper // TypeDefIndex: 124
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyValuePair<Int32Enum, object>>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyValuePair<object, object>>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyValuePair<object, float>>
-	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyValuePair<object, Color>>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyValuePair<uint, object>>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<KeyValuePair<ulong, Dispatch.ResultCallback>>
 	|-ThrowHelper.IfNullAndNullsAreIllegalThenThrow<DateTime>
@@ -216,7 +215,7 @@ internal static class ThrowHelper // TypeDefIndex: 124
 
 }
 
-internal static class ThrowHelper // TypeDefIndex: 6896
+internal static class ThrowHelper // TypeDefIndex: 6900
 {
 
 internal static class ThrowHelper
@@ -243,7 +242,7 @@ internal static class ThrowHelper
 
 }
 
-internal static class ThrowHelper // TypeDefIndex: 7119
+internal static class ThrowHelper // TypeDefIndex: 7123
 {
 
 	internal static void ThrowArgumentNullException(ExceptionArgument argument) { }

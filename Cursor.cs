@@ -1,4 +1,4 @@
-public class Cursor // TypeDefIndex: 3454
+public class Cursor // TypeDefIndex: 3455
 {
 	public static bool visible { get; set; }
 	public static CursorLockMode lockState { get; set; }

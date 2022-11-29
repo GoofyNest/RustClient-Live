@@ -1,4 +1,4 @@
-public struct Vector2 : IEquatable<Vector2> // TypeDefIndex: 3470
+public struct Vector2 : IEquatable<Vector2> // TypeDefIndex: 3471
 {
 	public float x; 
 	public float y; 

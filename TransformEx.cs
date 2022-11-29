@@ -1,4 +1,4 @@
-public static class TransformEx // TypeDefIndex: 5620
+public static class TransformEx // TypeDefIndex: 5622
 {
 
 	[ExtensionAttribute] 
@@ -19,7 +19,7 @@ public static class TransformEx // TypeDefIndex: 5620
 
 }
 
-public static class TransformEx // TypeDefIndex: 13458
+public static class TransformEx // TypeDefIndex: 13496
 {
 
 	[ExtensionAttribute] 
@@ -113,14 +113,14 @@ public static class TransformEx // TypeDefIndex: 13458
 
 }
 
-private sealed class TransformEx.<>c__DisplayClass7_0 // TypeDefIndex: 13459
+private sealed class TransformEx.<>c__DisplayClass7_0 // TypeDefIndex: 13497
 {
 	public string strTag; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetChildrenWithTag>b__0(Transform x) { }
+	internal bool <GetChildrenWithTag>
 
 }
 

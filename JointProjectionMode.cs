@@ -1,4 +1,4 @@
-public enum JointProjectionMode // TypeDefIndex: 3913
+public enum JointProjectionMode // TypeDefIndex: 3915
 {
 	public int value__; 
 	public const JointProjectionMode None = 0;

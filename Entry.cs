@@ -1,4 +1,4 @@
-public class Entry // TypeDefIndex: 6258
+public class Entry // TypeDefIndex: 6260
 {
 	public int Rank; 
 	public float Score; 

@@ -1,4 +1,4 @@
-public struct PinGrantInfo // TypeDefIndex: 9687
+public struct PinGrantInfo // TypeDefIndex: 9696
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <UserCode>k__BackingField; 

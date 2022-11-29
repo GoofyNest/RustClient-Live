@@ -1,4 +1,4 @@
-public class MapInterface : SingletonComponent<MapInterface> // TypeDefIndex: 12686
+public class MapInterface : SingletonComponent<MapInterface> // TypeDefIndex: 12714
 {
 	public static bool IsOpen; 
 	public Image cameraPositon; 

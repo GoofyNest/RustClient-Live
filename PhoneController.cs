@@ -1,4 +1,4 @@
-public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 11171
+public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 11185
 {
 	public int PhoneNumber; 
 	public string PhoneName; 
@@ -206,13 +206,13 @@ public class PhoneController : EntityComponent<BaseEntity> // TypeDefIndex: 1117
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <ClientToggleVoicemail>b__3_0(AudioClip clip, bool success) { }
+	private void <ClientToggleVoicemail>
 
 	[CompilerGeneratedAttribute] 
-	private void <ClientReceiveAnsweringData>b__93_0(AudioClip clip, bool success) { }
+	private void <ClientReceiveAnsweringData>
 
 	[CompilerGeneratedAttribute] 
-	private void <ClientPlayAnsweringMessage>b__94_0(AudioClip clip, bool success) { }
+	private void <ClientPlayAnsweringMessage>
 
 }
 

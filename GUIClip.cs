@@ -1,4 +1,4 @@
-internal sealed class GUIClip // TypeDefIndex: 4036
+internal sealed class GUIClip // TypeDefIndex: 4038
 {
 	internal static Rect visibleRect { get; }
 
@@ -50,7 +50,7 @@ internal sealed class GUIClip // TypeDefIndex: 4036
 
 }
 
-internal struct GUIClip.ParentClipScope : IDisposable // TypeDefIndex: 4037
+internal struct GUIClip.ParentClipScope : IDisposable // TypeDefIndex: 4039
 {
 	private bool m_Disposed; 
 

@@ -1,4 +1,4 @@
-public class Animator : Behaviour // TypeDefIndex: 4490
+public class Animator : Behaviour // TypeDefIndex: 4492
 {
 	public bool isInitialized { get; }
 	public bool applyRootMotion { set; }

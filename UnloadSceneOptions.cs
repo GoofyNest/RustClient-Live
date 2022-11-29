@@ -1,4 +1,4 @@
-public enum UnloadSceneOptions // TypeDefIndex: 3663
+public enum UnloadSceneOptions // TypeDefIndex: 3664
 {
 	public int value__; 
 	public const UnloadSceneOptions None = 0;

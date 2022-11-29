@@ -27,7 +27,7 @@ private sealed class NtlmClient.<>c // TypeDefIndex: 2561
 
 	public void .ctor() { }
 
-	internal NtlmSession <Authenticate>b__1_0(HttpWebRequest x) { }
+	internal NtlmSession <Authenticate>
 
 }
 

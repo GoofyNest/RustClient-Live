@@ -1,4 +1,4 @@
-public class DiagnosticsConSys : ConsoleSystem // TypeDefIndex: 10993
+public class DiagnosticsConSys : ConsoleSystem // TypeDefIndex: 11005
 {
 
 	private static void DumpAnimators(string targetFolder) { }
@@ -37,7 +37,7 @@ public class DiagnosticsConSys : ConsoleSystem // TypeDefIndex: 10993
 
 }
 
-private sealed class DiagnosticsConSys.<>c // TypeDefIndex: 10994
+private sealed class DiagnosticsConSys.<>c // TypeDefIndex: 11006
 {
 	public static readonly DiagnosticsConSys.<>c <>9; 
 	public static Func<Animator, string> <>9__0_0; 
@@ -75,63 +75,63 @@ private sealed class DiagnosticsConSys.<>c // TypeDefIndex: 10994
 
 	public void .ctor() { }
 
-	internal string <DumpAnimators>b__0_0(Animator x) { }
+	internal string <DumpAnimators>
 
-	internal int <DumpAnimators>b__0_1(IGrouping<string, Animator> x) { }
+	internal int <DumpAnimators>
 
-	internal string <DumpAnimators>b__0_2(Animator x) { }
+	internal string <DumpAnimators>
 
-	internal int <DumpAnimators>b__0_3(IGrouping<string, Animator> x) { }
+	internal int <DumpAnimators>
 
-	internal uint <DumpEntities>b__1_0(BaseNetworkable x) { }
+	internal uint <DumpEntities>
 
-	internal int <DumpEntities>b__1_1(IGrouping<uint, BaseNetworkable> x) { }
+	internal int <DumpEntities>
 
-	internal string <DumpLODGroupTotals>b__3_0(LODGroup x) { }
+	internal string <DumpLODGroupTotals>
 
-	internal int <DumpLODGroupTotals>b__3_1(IGrouping<string, LODGroup> x) { }
+	internal int <DumpLODGroupTotals>
 
-	internal Type <DumpObjects>b__5_0(Object x) { }
+	internal Type <DumpObjects>
 
-	internal int <DumpObjects>b__5_1(IGrouping<Type, Object> x) { }
+	internal int <DumpObjects>
 
-	internal bool <DumpObjects>b__5_2(Object x) { }
+	internal bool <DumpObjects>
 
-	internal Type <DumpObjects>b__5_3(Object x) { }
+	internal Type <DumpObjects>
 
-	internal int <DumpObjects>b__5_4(IGrouping<Type, Object> x) { }
+	internal int <DumpObjects>
 
-	internal bool <DumpTotals>b__7_0(Collider x) { }
+	internal bool <DumpTotals>
 
-	internal string <DumpColliders>b__8_0(Collider x) { }
+	internal string <DumpColliders>
 
-	internal int <DumpColliders>b__8_1(IGrouping<string, Collider> x) { }
+	internal int <DumpColliders>
 
-	internal bool <DumpColliders>b__8_2(Collider x) { }
+	internal bool <DumpColliders>
 
-	internal bool <DumpColliders>b__8_3(Collider x) { }
+	internal bool <DumpColliders>
 
-	internal string <DumpRigidBodies>b__9_0(Rigidbody x) { }
+	internal string <DumpRigidBodies>
 
-	internal int <DumpRigidBodies>b__9_1(IGrouping<string, Rigidbody> x) { }
+	internal int <DumpRigidBodies>
 
-	internal bool <DumpRigidBodies>b__9_2(Rigidbody x) { }
+	internal bool <DumpRigidBodies>
 
-	internal bool <DumpRigidBodies>b__9_3(Rigidbody x) { }
+	internal bool <DumpRigidBodies>
 
-	internal bool <DumpRigidBodies>b__9_4(Rigidbody x) { }
+	internal bool <DumpRigidBodies>
 
-	internal string <DumpGameObjects>b__10_0(Transform x) { }
+	internal string <DumpGameObjects>
 
-	internal int <DumpGameObjects>b__10_1(IGrouping<string, Transform> x) { }
+	internal int <DumpGameObjects>
 
-	internal string <DumpGameObjects>b__10_2(Transform x) { }
+	internal string <DumpGameObjects>
 
-	internal KeyValuePair<Transform, int> <DumpGameObjects>b__10_3(IGrouping<string, Transform> x) { }
+	internal KeyValuePair<Transform, int> <DumpGameObjects>
 
-	internal int <DumpGameObjects>b__10_5(Transform y) { }
+	internal int <DumpGameObjects>
 
-	internal int <DumpGameObjects>b__10_4(KeyValuePair<Transform, int> x) { }
+	internal int <DumpGameObjects>
 
 }
 

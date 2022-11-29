@@ -1,4 +1,4 @@
-public class AddNewStateUIButton : MonoBehaviour // TypeDefIndex: 12514
+public class AddNewStateUIButton : MonoBehaviour // TypeDefIndex: 12536
 {
 	private UIAIDesignerScreen designerUI; 
 
@@ -13,7 +13,7 @@ public class AddNewStateUIButton : MonoBehaviour // TypeDefIndex: 12514
 
 }
 
-private sealed class AddNewStateUIButton.<>c // TypeDefIndex: 12515
+private sealed class AddNewStateUIButton.<>c // TypeDefIndex: 12537
 {
 	public static readonly AddNewStateUIButton.<>c <>9; 
 	public static Func<object, string> <>9__2_0; 
@@ -23,7 +23,7 @@ private sealed class AddNewStateUIButton.<>c // TypeDefIndex: 12515
 
 	public void .ctor() { }
 
-	internal string <Clicked>b__2_0(object v) { }
+	internal string <Clicked>
 
 }
 

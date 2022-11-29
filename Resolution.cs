@@ -1,4 +1,4 @@
-public struct Resolution // TypeDefIndex: 3393
+public struct Resolution // TypeDefIndex: 3394
 {
 	private int m_Width; 
 	private int m_Height; 

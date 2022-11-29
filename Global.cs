@@ -1,4 +1,4 @@
-public static class Global // TypeDefIndex: 6627
+public static class Global // TypeDefIndex: 6631
 {
 	public static Func<string, GameObject> LoadPrefab; 
 	public static Func<string, GameObject> FindPrefab; 
@@ -24,7 +24,7 @@ public static class Global // TypeDefIndex: 6627
 
 }
 
-public class Global : ConsoleSystem // TypeDefIndex: 13676
+public class Global : ConsoleSystem // TypeDefIndex: 13714
 {
 	private static int _developer; 
 	[ServerVar] 
@@ -238,7 +238,7 @@ public class Global : ConsoleSystem // TypeDefIndex: 13676
 
 }
 
-private sealed class Global.<>c // TypeDefIndex: 13677
+private sealed class Global.<>c // TypeDefIndex: 13715
 {
 	public static readonly Global.<>c <>9; 
 	public static Func<KeyValuePair<Type, long>, long> <>9__49_0; 
@@ -250,11 +250,11 @@ private sealed class Global.<>c // TypeDefIndex: 13677
 
 	public void .ctor() { }
 
-	internal long <objects>b__49_0(KeyValuePair<Type, long> x) { }
+	internal long <objects>
 
-	internal bool <colliders>b__51_0(Collider x) { }
+	internal bool <colliders>
 
-	internal bool <colliders>b__51_1(Collider x) { }
+	internal bool <colliders>
 
 }
 

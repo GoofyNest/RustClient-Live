@@ -1,4 +1,4 @@
-public class Menu : RustControl // TypeDefIndex: 7043
+public class Menu : RustControl // TypeDefIndex: 7047
 {
 	public bool AllowFiltering; 
 	public int MaxResults; 
@@ -29,18 +29,18 @@ public class Menu : RustControl // TypeDefIndex: 7043
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Awake>b__11_0(string x) { }
+	private void <Awake>
 
 }
 
-public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7044
+public class Menu.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7048
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7045
+private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7049
 {
 	public Option option; 
 	public Menu <>4__this; 
@@ -48,22 +48,22 @@ private sealed class Menu.<>c__DisplayClass12_0 // TypeDefIndex: 7045
 
 	public void .ctor() { }
 
-	internal void <Build>b__0() { }
+	internal void <Build>
 
 }
 
-private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7046
+private sealed class Menu.<>c__DisplayClass14_0 // TypeDefIndex: 7050
 {
 	public string searchString; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetOptions>b__1(Option x) { }
+	internal bool <GetOptions>
 
 }
 
-private sealed class Menu.<>c // TypeDefIndex: 7047
+private sealed class Menu.<>c // TypeDefIndex: 7051
 {
 	public static readonly Menu.<>c <>9; 
 	public static Func<Option, Option> <>9__14_0; 
@@ -73,7 +73,7 @@ private sealed class Menu.<>c // TypeDefIndex: 7047
 
 	public void .ctor() { }
 
-	internal Option <GetOptions>b__14_0(Option x) { }
+	internal Option <GetOptions>
 
 }
 

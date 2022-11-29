@@ -1,4 +1,4 @@
-public static class Extensions // TypeDefIndex: 6052
+public static class Extensions // TypeDefIndex: 6054
 {
 
 	[ExtensionAttribute] 
@@ -37,83 +37,83 @@ public static class Extensions // TypeDefIndex: 6052
 
 }
 
-private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6053
+private sealed class Extensions.<>c__0<T> // TypeDefIndex: 6055
 {
-	public static readonly Extensions.<>c__0<T> <>9; 
+	public static readonly Extensions.<>
 
 
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__0<object>..cctor
+	|-Extensions.<>
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__0<object>..ctor
+	|-Extensions.<>
 	*/
 
 }
 
-private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6054
+private sealed class Extensions.<>c__1<T> // TypeDefIndex: 6056
 {
-	public static readonly Extensions.<>c__1<T> <>9; 
+	public static readonly Extensions.<>
 
 
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__1<object>..cctor
+	|-Extensions.<>
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__1<object>..ctor
+	|-Extensions.<>
 	*/
 
 }
 
-private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6055
+private sealed class Extensions.<>c__2<T> // TypeDefIndex: 6057
 {
-	public static readonly Extensions.<>c__2<T> <>9; 
+	public static readonly Extensions.<>
 
 
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__2<object>..cctor
+	|-Extensions.<>
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__2<object>..ctor
+	|-Extensions.<>
 	*/
 
 }
 
-private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6056
+private sealed class Extensions.<>c__3<T> // TypeDefIndex: 6058
 {
-	public static readonly Extensions.<>c__3<T> <>9; 
+	public static readonly Extensions.<>
 
 
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__3<object>..cctor
+	|-Extensions.<>
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__3<object>..ctor
+	|-Extensions.<>
 	*/
 
 }
 
-private sealed class Extensions.<>c // TypeDefIndex: 6057
+private sealed class Extensions.<>c // TypeDefIndex: 6059
 {
 	public static readonly Extensions.<>c <>9; 
 
@@ -124,30 +124,30 @@ private sealed class Extensions.<>c // TypeDefIndex: 6057
 
 }
 
-private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6059
+private sealed class Extensions.<>c__13<T, U> // TypeDefIndex: 6061
 {
 
 [CompilerGeneratedAttribute] 
 [Serializable]
-private sealed class Extensions.<>c__13<T, U>
-	public static readonly Extensions.<>c__13<T, U> <>9; 
+private sealed class Extensions.<>
+	public static readonly Extensions.<>
 
 
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__13<object, object>..cctor
+	|-Extensions.<>
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Extensions.<>c__13<object, object>..ctor
+	|-Extensions.<>
 	*/
 
 }
 
-private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerable, IEnumerator<U>, IDisposable, IEnumerator // TypeDefIndex: 6060
+private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerable, IEnumerator<U>, IDisposable, IEnumerator // TypeDefIndex: 6062
 {
 	private int <>1__state; 
 	private U <>2__current; 
@@ -223,7 +223,7 @@ private sealed class Extensions.<Convert>d__14<T, U> : IEnumerable<U>, IEnumerab
 
 }
 
-public static class Extensions // TypeDefIndex: 8146
+public static class Extensions // TypeDefIndex: 8155
 {
 
 	[ExtensionAttribute] 
@@ -238,7 +238,7 @@ public static class Extensions // TypeDefIndex: 8146
 
 }
 
-public static class Extensions // TypeDefIndex: 8256
+public static class Extensions // TypeDefIndex: 8265
 {
 
 	[ExtensionAttribute] 
@@ -249,7 +249,7 @@ public static class Extensions // TypeDefIndex: 8256
 
 }
 
-public static class Extensions // TypeDefIndex: 13322
+public static class Extensions // TypeDefIndex: 13360
 {
 
 	[ExtensionAttribute] 

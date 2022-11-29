@@ -1,4 +1,4 @@
-internal sealed class SByteStorage : DataStorage // TypeDefIndex: 4413
+internal sealed class SByteStorage : DataStorage // TypeDefIndex: 4415
 {
 	private sbyte[] _values; 
 

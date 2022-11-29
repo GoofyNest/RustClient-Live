@@ -1,4 +1,4 @@
-public class Graphics // TypeDefIndex: 3389
+public class Graphics // TypeDefIndex: 3390
 {
 	internal static readonly int kMaxDrawMeshInstanceCount; 
 
@@ -30,8 +30,8 @@ public class Graphics // TypeDefIndex: 3389
 	[FreeFunctionAttribute] 
 	private static void Internal_DrawMeshNow2(Mesh mesh, int subsetIndex, Matrix4x4 matrix) { }
 
-	[VisibleToOtherModulesAttribute] 
 	[FreeFunctionAttribute] 
+	[VisibleToOtherModulesAttribute] 
 	internal static void Internal_DrawTexture(ref Internal_DrawTextureArguments args) { }
 
 	[FreeFunctionAttribute] 
@@ -145,14 +145,14 @@ public class Graphics // TypeDefIndex: 3389
 
 }
 
-public static class Graphics // TypeDefIndex: 8228
+public static class Graphics // TypeDefIndex: 8237
 {
 
 	public static extern IntPtr GetRenderEventFunc() { }
 
 }
 
-public static class Graphics.BufferReadback // TypeDefIndex: 8229
+public static class Graphics.BufferReadback // TypeDefIndex: 8238
 {
 
 	public static extern IntPtr CreateForTexture(IntPtr tex, uint width, uint height, uint format) { }
@@ -175,7 +175,7 @@ public static class Graphics.BufferReadback // TypeDefIndex: 8229
 
 }
 
-public class Graphics : ConsoleSystem // TypeDefIndex: 13678
+public class Graphics : ConsoleSystem // TypeDefIndex: 13716
 {
 	private const float MinShadowDistance = 100;
 	private const float MaxShadowDistance2Split = 600;
@@ -252,6 +252,8 @@ public class Graphics : ConsoleSystem // TypeDefIndex: 13678
 	[ClientVar] 
 	public static bool aggressiveShadowLod; 
 	private static bool _aggressiveShadowLodWearable; 
+	private static bool _hlod; 
+	public static TimeSince lastHlodChange; 
 
 	[ClientVar] 
 	public static int quality { get; set; }
@@ -297,6 +299,8 @@ public class Graphics : ConsoleSystem // TypeDefIndex: 13678
 	public static float renderScale { get; set; }
 	[ClientVar] 
 	public static bool aggressiveShadowLodWearable { get; set; }
+	[ClientVar] 
+	public static bool Hlod { get; set; }
 
 
 	public static int get_quality() { }
@@ -421,13 +425,20 @@ public class Graphics : ConsoleSystem // TypeDefIndex: 13678
 
 	public static void set_aggressiveShadowLodWearable(bool value) { }
 
+	public static bool get_Hlod() { }
+
+	public static void set_Hlod(bool value) { }
+
+	[ClientVar] 
+	public static void PrintLodQueues(ConsoleSystem.Arg arg) { }
+
 	public void .ctor() { }
 
 	private static void .cctor() { }
 
 }
 
-private sealed class Graphics.<>c // TypeDefIndex: 13679
+private sealed class Graphics.<>c // TypeDefIndex: 13717
 {
 	public static readonly Graphics.<>c <>9; 
 	public static Func<Resolution, Vector2Int> <>9__60_0; 
@@ -441,15 +452,15 @@ private sealed class Graphics.<>c // TypeDefIndex: 13679
 
 	public void .ctor() { }
 
-	internal Vector2Int <CacheResolutions>b__60_0(Resolution r) { }
+	internal Vector2Int <CacheResolutions>
 
-	internal Resolution <CacheResolutions>b__60_1(IGrouping<Vector2Int, Resolution> g) { }
+	internal Resolution <CacheResolutions>
 
-	internal int <CacheResolutions>b__60_4(Resolution r) { }
+	internal int <CacheResolutions>
 
-	internal int <CacheResolutions>b__60_2(Resolution r) { }
+	internal int <CacheResolutions>
 
-	internal int <CacheResolutions>b__60_3(Resolution r) { }
+	internal int <CacheResolutions>
 
 }
 

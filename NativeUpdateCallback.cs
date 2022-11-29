@@ -1,4 +1,4 @@
-internal sealed class NativeUpdateCallback : MulticastDelegate // TypeDefIndex: 4523
+internal sealed class NativeUpdateCallback : MulticastDelegate // TypeDefIndex: 4525
 {
 
 internal sealed class NativeUpdateCallback : MulticastDelegate

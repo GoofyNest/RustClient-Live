@@ -20,14 +20,14 @@ private sealed class IdentityFunction.<>c<TElement> // TypeDefIndex: 3223
 	|-IdentityFunction.<>c<Resolution>..ctor
 	*/
 
-	internal TElement <get_Instance>b__1_0(TElement x) { }
+	internal TElement <get_Instance>
 	/* GenericInstMethod :
 	|
-	|-IdentityFunction.<>c<InventoryItem>.<get_Instance>b__1_0
+	|-IdentityFunction.<>c<InventoryItem>.<get_Instance>
 	|
-	|-IdentityFunction.<>c<object>.<get_Instance>b__1_0
+	|-IdentityFunction.<>c<object>.<get_Instance>
 	|
-	|-IdentityFunction.<>c<Resolution>.<get_Instance>b__1_0
+	|-IdentityFunction.<>c<Resolution>.<get_Instance>
 	*/
 
 }

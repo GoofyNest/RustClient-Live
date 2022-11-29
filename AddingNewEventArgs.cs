@@ -1,4 +1,4 @@
-public class AddingNewEventArgs // TypeDefIndex: 5860
+public class AddingNewEventArgs // TypeDefIndex: 5862
 {
 
 [PreserveAttribute] 

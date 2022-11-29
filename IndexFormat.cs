@@ -1,4 +1,4 @@
-public enum IndexFormat // TypeDefIndex: 3806
+public enum IndexFormat // TypeDefIndex: 3807
 {
 	public int value__; 
 	public const IndexFormat UInt16 = 0;

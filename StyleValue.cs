@@ -1,4 +1,4 @@
-internal struct StyleValue // TypeDefIndex: 4729
+internal struct StyleValue // TypeDefIndex: 4731
 {
 	public StylePropertyID id; 
 	public StyleKeyword keyword; 

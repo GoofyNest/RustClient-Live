@@ -422,39 +422,39 @@ private sealed class Socket.<>c // TypeDefIndex: 3049
 
 	public void .ctor() { }
 
-	internal void <BeginSend>b__241_0(IOAsyncResult s) { }
+	internal void <BeginSend>
 
-	internal void <BeginSendTo>b__253_0(IOAsyncResult s) { }
+	internal void <BeginSendTo>
 
-	internal void <.cctor>b__309_0(IAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_1(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_2(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_3(IAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_4(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_5(IAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_6(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_7(IAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_8(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_9(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_10(IAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_11(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_12(IAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_13(IOAsyncResult ares) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__309_14(IAsyncResult ares) { }
+	internal void <.cctor>
 
 }
 
@@ -465,7 +465,7 @@ private sealed class Socket.<>c__DisplayClass242_0 // TypeDefIndex: 3050
 
 	public void .ctor() { }
 
-	internal void <BeginSendCallback>b__0(IOAsyncResult s) { }
+	internal void <BeginSendCallback>
 
 }
 
@@ -476,7 +476,7 @@ private sealed class Socket.<>c__DisplayClass254_0 // TypeDefIndex: 3051
 
 	public void .ctor() { }
 
-	internal void <BeginSendToCallback>b__0(IOAsyncResult s) { }
+	internal void <BeginSendToCallback>
 
 }
 
@@ -489,7 +489,7 @@ private sealed class Socket.<>c__DisplayClass298_0 // TypeDefIndex: 3052
 
 	public void .ctor() { }
 
-	internal void <QueueIOSelectorJob>b__0(Task t) { }
+	internal void <QueueIOSelectorJob>
 
 }
 
@@ -744,7 +744,7 @@ private sealed class SocketAsyncResult.<>c // TypeDefIndex: 3065
 
 	public void .ctor() { }
 
-	internal void <Complete>b__27_0(object state) { }
+	internal void <Complete>
 
 }
 
@@ -777,7 +777,7 @@ public sealed class SocketElement : ConfigurationElement // TypeDefIndex: 3180
 
 }
 
-public class SocketManager // TypeDefIndex: 5186
+public class SocketManager // TypeDefIndex: 5188
 {
 	[CompilerGeneratedAttribute] 
 	private ISocketManager <Interface>k__BackingField; 
@@ -827,7 +827,7 @@ public class SocketManager // TypeDefIndex: 5186
 
 }
 
-public struct Socket // TypeDefIndex: 5551
+public struct Socket // TypeDefIndex: 5553
 {
 	internal uint Id; 
 
@@ -840,7 +840,7 @@ public struct Socket // TypeDefIndex: 5551
 
 }
 
-public class SocketWrapper : ISocket // TypeDefIndex: 6955
+public class SocketWrapper : ISocket // TypeDefIndex: 6959
 {
 	private static readonly byte[] keepAliveValues; 
 	private readonly Socket _socket; 
@@ -891,7 +891,7 @@ public class SocketWrapper : ISocket // TypeDefIndex: 6955
 
 }
 
-private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6956
+private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6960
 {
 	public SslStream ssl; 
 	public X509Certificate2 certificate; 
@@ -902,17 +902,17 @@ private sealed class SocketWrapper.<>c__DisplayClass12_0 // TypeDefIndex: 6956
 
 	public void .ctor() { }
 
-	internal IAsyncResult <Authenticate>b__0(AsyncCallback cb, object s) { }
+	internal IAsyncResult <Authenticate>
 
-	internal void <Authenticate>b__1(Task t) { }
+	internal void <Authenticate>
 
-	internal void <Authenticate>b__2(Task t) { }
+	internal void <Authenticate>
 
-	internal void <Authenticate>b__3(Task t) { }
+	internal void <Authenticate>
 
 }
 
-private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6957
+private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6961
 {
 	public SocketWrapper <>4__this; 
 	public Action<ISocket> callback; 
@@ -921,17 +921,17 @@ private sealed class SocketWrapper.<>c__DisplayClass26_0 // TypeDefIndex: 6957
 
 	public void .ctor() { }
 
-	internal ISocket <Accept>b__0(IAsyncResult r) { }
+	internal ISocket <Accept>
 
-	internal void <Accept>b__1(Task<ISocket> t) { }
+	internal void <Accept>
 
-	internal void <Accept>b__2(Task t) { }
+	internal void <Accept>
 
-	internal void <Accept>b__3(Task<ISocket> t) { }
+	internal void <Accept>
 
 }
 
-public struct SocketId // TypeDefIndex: 8998
+public struct SocketId // TypeDefIndex: 9007
 {
 	[CompilerGeneratedAttribute] 
 	private string <SocketName>k__BackingField; 
@@ -949,7 +949,7 @@ public struct SocketId // TypeDefIndex: 8998
 
 }
 
-internal struct SocketIdInternal : IGettable<SocketId>, ISettable<SocketId>, IDisposable // TypeDefIndex: 8999
+internal struct SocketIdInternal : IGettable<SocketId>, ISettable<SocketId>, IDisposable // TypeDefIndex: 9008
 {
 	private int m_ApiVersion; 
 	private byte[] m_SocketName; 
@@ -971,7 +971,7 @@ internal struct SocketIdInternal : IGettable<SocketId>, ISettable<SocketId>, IDi
 
 }
 
-public class SocketHandle : PrefabAttribute // TypeDefIndex: 10804
+public class SocketHandle : PrefabAttribute // TypeDefIndex: 10815
 {
 
 	protected override Type GetIndexedType() { }
@@ -982,7 +982,7 @@ public class SocketHandle : PrefabAttribute // TypeDefIndex: 10804
 
 }
 
-public class SocketMod : PrefabAttribute // TypeDefIndex: 10805
+public class SocketMod : PrefabAttribute // TypeDefIndex: 10816
 {
 	public Socket_Base baseSocket; 
 	public Translate.Phrase FailedPhrase; 
@@ -998,7 +998,7 @@ public class SocketMod : PrefabAttribute // TypeDefIndex: 10805
 
 }
 
-public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 10806
+public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 10817
 {
 	public bool wantsAngle; 
 	public Vector3 worldNormal; 
@@ -1016,7 +1016,7 @@ public class SocketMod_AngleCheck : SocketMod // TypeDefIndex: 10806
 
 }
 
-public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 10807
+public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 10818
 {
 	public Bounds bounds; 
 	public LayerMask layerMask; 
@@ -1035,7 +1035,7 @@ public class SocketMod_AreaCheck : SocketMod // TypeDefIndex: 10807
 
 }
 
-public class SocketMod_Attraction : SocketMod // TypeDefIndex: 10808
+public class SocketMod_Attraction : SocketMod // TypeDefIndex: 10819
 {
 	public float outerRadius; 
 	public float innerRadius; 
@@ -1055,7 +1055,7 @@ public class SocketMod_Attraction : SocketMod // TypeDefIndex: 10808
 
 }
 
-public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 10809
+public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 10820
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1071,7 +1071,7 @@ public class SocketMod_BuildingBlock : SocketMod // TypeDefIndex: 10809
 
 }
 
-public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 10810
+public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 10821
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1088,18 +1088,18 @@ public class SocketMod_EntityCheck : SocketMod // TypeDefIndex: 10810
 
 }
 
-private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex: 10811
+private sealed class SocketMod_EntityCheck.<>c__DisplayClass6_0 // TypeDefIndex: 10822
 {
 	public BaseEntity ent; 
 
 
 	public void .ctor() { }
 
-	internal bool <DoCheck>b__0(BaseEntity x) { }
+	internal bool <DoCheck>
 
 }
 
-public class SocketMod_EntityType : SocketMod // TypeDefIndex: 10812
+public class SocketMod_EntityType : SocketMod // TypeDefIndex: 10823
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1116,7 +1116,7 @@ public class SocketMod_EntityType : SocketMod // TypeDefIndex: 10812
 
 }
 
-public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 10813
+public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 10824
 {
 	public float spotSize; 
 
@@ -1129,7 +1129,7 @@ public class SocketMod_HotSpot : SocketMod // TypeDefIndex: 10813
 
 }
 
-public class SocketMod_InWater : SocketMod // TypeDefIndex: 10814
+public class SocketMod_InWater : SocketMod // TypeDefIndex: 10825
 {
 	public bool wantsInWater; 
 	public static Translate.Phrase WantsWaterPhrase; 
@@ -1146,7 +1146,7 @@ public class SocketMod_InWater : SocketMod // TypeDefIndex: 10814
 
 }
 
-public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 10815
+public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 10826
 {
 	public PhysicMaterial[] ValidMaterials; 
 	private PhysicMaterial foundMaterial; 
@@ -1158,7 +1158,7 @@ public class SocketMod_PhysicMaterial : SocketMod // TypeDefIndex: 10815
 
 }
 
-public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 10816
+public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 10827
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1174,7 +1174,7 @@ public class SocketMod_PlantCheck : SocketMod // TypeDefIndex: 10816
 
 }
 
-public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 10817
+public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 10828
 {
 	public float sphereRadius; 
 	public LayerMask layerMask; 
@@ -1193,7 +1193,7 @@ public class SocketMod_SphereCheck : SocketMod // TypeDefIndex: 10817
 
 }
 
-public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 10818
+public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 10829
 {
 	public bool wantsInTerrain; 
 
@@ -1208,7 +1208,7 @@ public class SocketMod_TerrainCheck : SocketMod // TypeDefIndex: 10818
 
 }
 
-public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 10819
+public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 10830
 {
 	public float MinimumWaterDepth; 
 	public float MaximumWaterDepth; 
@@ -1225,7 +1225,7 @@ public class SocketMod_WaterDepth : SocketMod // TypeDefIndex: 10819
 
 }
 
-public class Socket_Base : PrefabAttribute // TypeDefIndex: 10820
+public class Socket_Base : PrefabAttribute // TypeDefIndex: 10831
 {
 	public bool male; 
 	public bool maleDummy; 
@@ -1263,7 +1263,7 @@ public class Socket_Base : PrefabAttribute // TypeDefIndex: 10820
 
 }
 
-public class Socket_Free : Socket_Base // TypeDefIndex: 10821
+public class Socket_Free : Socket_Base // TypeDefIndex: 10832
 {
 	public Vector3 idealPlacementNormal; 
 	public bool useTargetNormal; 
@@ -1280,7 +1280,7 @@ public class Socket_Free : Socket_Base // TypeDefIndex: 10821
 
 }
 
-public class Socket_Specific : Socket_Base // TypeDefIndex: 10822
+public class Socket_Specific : Socket_Base // TypeDefIndex: 10833
 {
 	public bool useFemaleRotation; 
 	public string targetSocketName; 
@@ -1296,7 +1296,7 @@ public class Socket_Specific : Socket_Base // TypeDefIndex: 10822
 
 }
 
-public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 10823
+public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 10834
 {
 	public int rotationDegrees; 
 	public int rotationOffset; 
@@ -1313,7 +1313,7 @@ public class Socket_Specific_Female : Socket_Base // TypeDefIndex: 10823
 
 }
 
-public class Socket_Terrain : Socket_Base // TypeDefIndex: 10824
+public class Socket_Terrain : Socket_Base // TypeDefIndex: 10835
 {
 	public float placementHeight; 
 	public bool alignToNormal; 

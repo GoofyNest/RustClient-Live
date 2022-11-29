@@ -1,4 +1,4 @@
-public class TakeDamage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6486
+public class TakeDamage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6490
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

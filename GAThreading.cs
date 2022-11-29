@@ -1,4 +1,4 @@
-internal class GAThreading // TypeDefIndex: 5672
+internal class GAThreading // TypeDefIndex: 5674
 {
 	private static bool endThread; 
 	private static DateTime threadDeadline; 

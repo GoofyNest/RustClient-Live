@@ -1,4 +1,4 @@
-internal class PendingBuffer // TypeDefIndex: 5668
+internal class PendingBuffer // TypeDefIndex: 5670
 {
 	protected byte[] buf; 
 	private int start; 

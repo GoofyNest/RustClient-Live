@@ -1,4 +1,4 @@
-internal struct GetAppDependenciesResult_t : ICallbackData // TypeDefIndex: 5449
+internal struct GetAppDependenciesResult_t : ICallbackData // TypeDefIndex: 5451
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 

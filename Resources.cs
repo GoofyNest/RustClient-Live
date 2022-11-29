@@ -1,4 +1,4 @@
-public sealed class Resources // TypeDefIndex: 3492
+public sealed class Resources // TypeDefIndex: 3493
 {
 
 	internal static T[] ConvertObjects<T>(Object[] rawObjects) { }
@@ -59,8 +59,8 @@ public sealed class Resources // TypeDefIndex: 3492
 	|-Resources.LoadAll<object>
 	*/
 
-	[TypeInferenceRuleAttribute] 
 	[FreeFunctionAttribute] 
+	[TypeInferenceRuleAttribute] 
 	public static Object GetBuiltinResource(Type type, string path) { }
 
 	public static T GetBuiltinResource<T>(string path) { }

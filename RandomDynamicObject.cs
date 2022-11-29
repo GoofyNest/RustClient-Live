@@ -1,4 +1,4 @@
-public class RandomDynamicObject : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 12084
+public class RandomDynamicObject : MonoBehaviour, IClientComponent, ILOD // TypeDefIndex: 12104
 {
 	public uint Seed; 
 	public float Distance; 

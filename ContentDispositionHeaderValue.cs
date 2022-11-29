@@ -1,4 +1,4 @@
-public class ContentDispositionHeaderValue : ICloneable // TypeDefIndex: 5768
+public class ContentDispositionHeaderValue : ICloneable // TypeDefIndex: 5770
 {
 	private string dispositionType; 
 	private List<NameValueHeaderValue> parameters; 

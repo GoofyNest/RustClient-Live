@@ -1,4 +1,4 @@
-public enum TextureWrapMode // TypeDefIndex: 3425
+public enum TextureWrapMode // TypeDefIndex: 3426
 {
 	public int value__; 
 	public const TextureWrapMode Repeat = 0;

@@ -1,4 +1,4 @@
-public sealed class Canvas : Behaviour // TypeDefIndex: 4739
+public sealed class Canvas : Behaviour // TypeDefIndex: 4741
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -86,7 +86,7 @@ public sealed class Canvas : Behaviour // TypeDefIndex: 4739
 
 }
 
-public sealed class Canvas.WillRenderCanvases : MulticastDelegate // TypeDefIndex: 4740
+public sealed class Canvas.WillRenderCanvases : MulticastDelegate // TypeDefIndex: 4742
 {
 
 	public void .ctor(object object, IntPtr method) { }

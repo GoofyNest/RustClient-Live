@@ -402,19 +402,19 @@ private sealed class SortedSet.<>c__DisplayClass52_0<T> // TypeDefIndex: 3146
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedSet.<>c__DisplayClass52_0<KeyValuePair<long, object>>..ctor
-	|-SortedSet.<>c__DisplayClass52_0<KeyValuePair<object, object>>..ctor
-	|-SortedSet.<>c__DisplayClass52_0<object>..ctor
+	|-SortedSet.<>c
+	|-SortedSet.<>c
+	|-SortedSet.<>c
 	*/
 
-	internal bool <CopyTo>b__0(SortedSet.Node<T> node) { }
+	internal bool <CopyTo>
 	/* GenericInstMethod :
 	|
-	|-SortedSet.<>c__DisplayClass52_0<KeyValuePair<long, object>>.<CopyTo>b__0
+	|-SortedSet.<>c
 	|
-	|-SortedSet.<>c__DisplayClass52_0<KeyValuePair<object, object>>.<CopyTo>b__0
+	|-SortedSet.<>c
 	|
-	|-SortedSet.<>c__DisplayClass52_0<object>.<CopyTo>b__0
+	|-SortedSet.<>c
 	*/
 
 }
@@ -427,9 +427,9 @@ private sealed class SortedSet.<>c__DisplayClass53_0<T> // TypeDefIndex: 3147
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedSet.<>c__DisplayClass53_0<KeyValuePair<long, object>>..ctor
-	|-SortedSet.<>c__DisplayClass53_0<KeyValuePair<object, object>>..ctor
-	|-SortedSet.<>c__DisplayClass53_0<object>..ctor
+	|-SortedSet.<>c
+	|-SortedSet.<>c
+	|-SortedSet.<>c
 	*/
 
 }
@@ -437,24 +437,24 @@ private sealed class SortedSet.<>c__DisplayClass53_0<T> // TypeDefIndex: 3147
 private sealed class SortedSet.<>c__DisplayClass53_1<T> // TypeDefIndex: 3148
 {
 	public object[] objects; 
-	public SortedSet.<>c__DisplayClass53_0<T> CS$<>8__locals1; 
+	public SortedSet.<>c
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedSet.<>c__DisplayClass53_1<KeyValuePair<long, object>>..ctor
-	|-SortedSet.<>c__DisplayClass53_1<KeyValuePair<object, object>>..ctor
-	|-SortedSet.<>c__DisplayClass53_1<object>..ctor
+	|-SortedSet.<>c
+	|-SortedSet.<>c
+	|-SortedSet.<>c
 	*/
 
-	internal bool <System.Collections.ICollection.CopyTo>b__0(SortedSet.Node<T> node) { }
+	internal bool <System.Collections.ICollection.CopyTo>
 	/* GenericInstMethod :
 	|
-	|-SortedSet.<>c__DisplayClass53_1<KeyValuePair<long, object>>.<System.Collections.ICollection.CopyTo>b__0
-	|-SortedSet.<>c__DisplayClass53_1<KeyValuePair<object, object>>.<System.Collections.ICollection.CopyTo>b__0
+	|-SortedSet.<>c
+	|-SortedSet.<>c
 	|
-	|-SortedSet.<>c__DisplayClass53_1<object>.<System.Collections.ICollection.CopyTo>b__0
+	|-SortedSet.<>c
 	*/
 
 }

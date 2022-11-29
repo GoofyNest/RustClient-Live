@@ -1,4 +1,4 @@
-public struct ClearPacketQueueOptions // TypeDefIndex: 8937
+public struct ClearPacketQueueOptions // TypeDefIndex: 8946
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

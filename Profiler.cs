@@ -1,4 +1,4 @@
-public sealed class Profiler // TypeDefIndex: 3582
+public sealed class Profiler // TypeDefIndex: 3583
 {
 
 	[ObsoleteAttribute] 

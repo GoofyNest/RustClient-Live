@@ -1,4 +1,4 @@
-public static class Base36Extensions // TypeDefIndex: 4844
+public static class Base36Extensions // TypeDefIndex: 4846
 {
 	private const string CharList = "0123456789abcdefghijklmnopqrstuvwxyz";
 	private static char[] CharArray; 

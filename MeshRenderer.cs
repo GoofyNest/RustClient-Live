@@ -1,4 +1,4 @@
-public class MeshRenderer : Renderer // TypeDefIndex: 3437
+public class MeshRenderer : Renderer // TypeDefIndex: 3438
 {
 
 	[RequiredByNativeCodeAttribute] 

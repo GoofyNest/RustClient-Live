@@ -1,4 +1,4 @@
-public enum CollisionDetectionMode // TypeDefIndex: 3920
+public enum CollisionDetectionMode // TypeDefIndex: 3922
 {
 	public int value__; 
 	public const CollisionDetectionMode Discrete = 0;

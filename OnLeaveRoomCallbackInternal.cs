@@ -1,4 +1,4 @@
-internal sealed class OnLeaveRoomCallbackInternal : MulticastDelegate // TypeDefIndex: 8776
+internal sealed class OnLeaveRoomCallbackInternal : MulticastDelegate // TypeDefIndex: 8785
 {
 
 	public void .ctor(object object, IntPtr method) { }

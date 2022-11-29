@@ -1,4 +1,4 @@
-internal sealed class Merger // TypeDefIndex: 4280
+internal sealed class Merger // TypeDefIndex: 4282
 {
 	private DataSet _dataSet; 
 	private DataTable _dataTable; 

@@ -1,4 +1,4 @@
-public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // TypeDefIndex: 11433
+public abstract class GroundVehicleAudio : MonoBehaviour, IClientComponent // TypeDefIndex: 11447
 {
 	[SerializeField] 
 	protected GroundVehicle groundVehicle; 

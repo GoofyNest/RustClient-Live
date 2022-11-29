@@ -1,4 +1,4 @@
-internal sealed class Index // TypeDefIndex: 4303
+internal sealed class Index // TypeDefIndex: 4305
 {
 	private readonly DataTable _table; 
 	internal readonly IndexField[] _indexFields; 
@@ -161,7 +161,7 @@ internal sealed class Index // TypeDefIndex: 4303
 
 }
 
-private sealed class Index.IndexTree : RBTree<int> // TypeDefIndex: 4304
+private sealed class Index.IndexTree : RBTree<int> // TypeDefIndex: 4306
 {
 	private readonly Index _index; 
 
@@ -174,7 +174,7 @@ private sealed class Index.IndexTree : RBTree<int> // TypeDefIndex: 4304
 
 }
 
-private sealed class Index.<>c // TypeDefIndex: 4305
+private sealed class Index.<>c // TypeDefIndex: 4307
 {
 	public static readonly Index.<>c <>9; 
 	public static Listeners.Func<DataViewListener, DataViewListener, bool> <>9__22_0; 
@@ -185,20 +185,20 @@ private sealed class Index.<>c // TypeDefIndex: 4305
 
 	public void .ctor() { }
 
-	internal bool <.ctor>b__22_0(DataViewListener listener) { }
+	internal bool <.ctor>
 
-	internal void <OnListChanged>b__85_0(DataViewListener listener, ListChangedEventArgs args, bool arg2, bool arg3) { }
+	internal void <OnListChanged>
 
 }
 
-private sealed class Index.<>c__DisplayClass86_0 // TypeDefIndex: 4306
+private sealed class Index.<>c__DisplayClass86_0 // TypeDefIndex: 4308
 {
 	public ListChangedType changedType; 
 
 
 	public void .ctor() { }
 
-	internal void <MaintainDataView>b__0(DataViewListener listener, ListChangedType type, DataRow row, bool track) { }
+	internal void <MaintainDataView>
 
 }
 

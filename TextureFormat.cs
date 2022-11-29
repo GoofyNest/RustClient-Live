@@ -1,4 +1,4 @@
-public enum TextureFormat // TypeDefIndex: 3426
+public enum TextureFormat // TypeDefIndex: 3427
 {
 	public int value__; 
 	public const TextureFormat Alpha8 = 1;

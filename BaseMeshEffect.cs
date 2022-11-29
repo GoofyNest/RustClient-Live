@@ -1,4 +1,4 @@
-public abstract class BaseMeshEffect : UIBehaviour, IMeshModifier // TypeDefIndex: 5035
+public abstract class BaseMeshEffect : UIBehaviour, IMeshModifier // TypeDefIndex: 5037
 {
 	private Graphic m_Graphic; 
 

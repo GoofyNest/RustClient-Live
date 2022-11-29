@@ -1,4 +1,4 @@
-public abstract class Constraint // TypeDefIndex: 4177
+public abstract class Constraint // TypeDefIndex: 4179
 {
 	private string _schemaName; 
 	private bool _inCollection; 

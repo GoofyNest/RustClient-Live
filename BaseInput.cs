@@ -1,4 +1,4 @@
-public class BaseInput : UIBehaviour // TypeDefIndex: 5083
+public class BaseInput : UIBehaviour // TypeDefIndex: 5085
 {
 	public virtual string compositionString { get; }
 	public virtual IMECompositionMode imeCompositionMode { get; set; }

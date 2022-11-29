@@ -1,4 +1,4 @@
-public struct TexturePlayableOutput // TypeDefIndex: 3897
+public struct TexturePlayableOutput // TypeDefIndex: 3899
 {
 	private PlayableOutputHandle m_Handle; 
 

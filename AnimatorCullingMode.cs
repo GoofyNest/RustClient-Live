@@ -1,4 +1,4 @@
-public enum AnimatorCullingMode // TypeDefIndex: 4485
+public enum AnimatorCullingMode // TypeDefIndex: 4487
 {
 	public int value__; 
 	public const AnimatorCullingMode AlwaysAnimate = 0;

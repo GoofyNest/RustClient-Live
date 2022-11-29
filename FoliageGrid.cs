@@ -1,4 +1,4 @@
-public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // TypeDefIndex: 11593
+public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // TypeDefIndex: 11608
 {
 	public static bool Paused; 
 	public GameObjectRef BatchPrefab; 
@@ -63,7 +63,7 @@ public class FoliageGrid : SingletonComponent<FoliageGrid>, IClientComponent // 
 
 }
 
-private sealed class FoliageGrid.<UpdateCoroutine>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11594
+private sealed class FoliageGrid.<UpdateCoroutine>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11609
 {
 	private int <>1__state; 
 	private object <>2__current; 

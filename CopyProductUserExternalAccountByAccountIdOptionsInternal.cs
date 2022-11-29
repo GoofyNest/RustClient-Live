@@ -1,4 +1,4 @@
-internal struct CopyProductUserExternalAccountByAccountIdOptionsInternal : ISettable<CopyProductUserExternalAccountByAccountIdOptions>, IDisposable // TypeDefIndex: 9549
+internal struct CopyProductUserExternalAccountByAccountIdOptionsInternal : ISettable<CopyProductUserExternalAccountByAccountIdOptions>, IDisposable // TypeDefIndex: 9558
 {
 	private int m_ApiVersion; 
 	private IntPtr m_TargetUserId; 

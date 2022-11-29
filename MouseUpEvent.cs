@@ -1,4 +1,4 @@
-public class MouseUpEvent : MouseEventBase<MouseUpEvent> // TypeDefIndex: 4675
+public class MouseUpEvent : MouseEventBase<MouseUpEvent> // TypeDefIndex: 4677
 {
 
 	private static MouseUpEvent MakeFromPointerEvent(IPointerEvent pointerEvent) { }

@@ -1,4 +1,4 @@
-public sealed class ImageEffectTransformsToLDR : Attribute // TypeDefIndex: 3396
+public sealed class ImageEffectTransformsToLDR : Attribute // TypeDefIndex: 3397
 {
 
 	public void .ctor() { }

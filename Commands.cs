@@ -1,4 +1,4 @@
-public class Commands : ConsoleSystem // TypeDefIndex: 6931
+public class Commands : ConsoleSystem // TypeDefIndex: 6935
 {
 
 	[ClientVar] 
@@ -13,14 +13,14 @@ public class Commands : ConsoleSystem // TypeDefIndex: 6931
 
 }
 
-private sealed class Commands.<>c__DisplayClass0_0 // TypeDefIndex: 6932
+private sealed class Commands.<>c__DisplayClass0_0 // TypeDefIndex: 6936
 {
 	public string str; 
 
 
 	public void .ctor() { }
 
-	internal bool <Find>b__0(ConsoleSystem.Command x) { }
+	internal bool <Find>
 
 }
 

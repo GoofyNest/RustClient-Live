@@ -1,4 +1,4 @@
-public struct PresenceModificationSetDataOptions // TypeDefIndex: 8840
+public struct PresenceModificationSetDataOptions // TypeDefIndex: 8849
 {
 	[CompilerGeneratedAttribute] 
 	private DataRecord[] <Records>k__BackingField; 

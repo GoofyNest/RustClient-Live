@@ -1,4 +1,4 @@
-internal struct StringBuffer // TypeDefIndex: 5965
+internal struct StringBuffer // TypeDefIndex: 5967
 {
 	private char[] _buffer; 
 	private int _position; 

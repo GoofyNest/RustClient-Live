@@ -1,4 +1,4 @@
-public static class Os // TypeDefIndex: 5612
+public static class Os // TypeDefIndex: 5614
 {
 
 	public static void OpenFolder(string folder) { }
@@ -9,7 +9,7 @@ public static class Os // TypeDefIndex: 5612
 
 }
 
-internal struct Os.PROCESS_INFORMATION // TypeDefIndex: 5613
+internal struct Os.PROCESS_INFORMATION // TypeDefIndex: 5615
 {
 	public IntPtr hProcess; 
 	public IntPtr hThread; 
@@ -18,7 +18,7 @@ internal struct Os.PROCESS_INFORMATION // TypeDefIndex: 5613
 
 }
 
-private struct Os.STARTUPINFO // TypeDefIndex: 5614
+private struct Os.STARTUPINFO // TypeDefIndex: 5616
 {
 	public int cb; 
 	public IntPtr lpReserved; 
@@ -41,7 +41,7 @@ private struct Os.STARTUPINFO // TypeDefIndex: 5614
 
 }
 
-public struct Os.SECURITY_ATTRIBUTES // TypeDefIndex: 5615
+public struct Os.SECURITY_ATTRIBUTES // TypeDefIndex: 5617
 {
 	public int nLength; 
 	public IntPtr lpSecurityDescriptor; 

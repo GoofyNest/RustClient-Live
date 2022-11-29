@@ -1,4 +1,4 @@
-internal struct MovedFromAttributeData // TypeDefIndex: 3655
+internal struct MovedFromAttributeData // TypeDefIndex: 3656
 {
 	public string className; 
 	public string nameSpace; 

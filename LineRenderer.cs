@@ -1,4 +1,4 @@
-public sealed class LineRenderer : Renderer // TypeDefIndex: 3401
+public sealed class LineRenderer : Renderer // TypeDefIndex: 3402
 {
 	public Color startColor { set; }
 	public Color endColor { set; }

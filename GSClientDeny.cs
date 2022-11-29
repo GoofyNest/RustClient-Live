@@ -1,4 +1,4 @@
-internal struct GSClientDeny_t : ICallbackData // TypeDefIndex: 5495
+internal struct GSClientDeny_t : ICallbackData // TypeDefIndex: 5497
 {
 	internal ulong SteamID; 
 	internal DenyReason DenyReason; 

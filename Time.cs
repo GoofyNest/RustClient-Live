@@ -1,4 +1,4 @@
-public class Time // TypeDefIndex: 3560
+public class Time // TypeDefIndex: 3561
 {
 	[NativePropertyAttribute] 
 	public static float time { get; }
@@ -49,7 +49,7 @@ public class Time // TypeDefIndex: 3560
 
 }
 
-public class Time : ConsoleSystem // TypeDefIndex: 13719
+public class Time : ConsoleSystem // TypeDefIndex: 13757
 {
 
 	public void .ctor() { }

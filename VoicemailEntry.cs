@@ -1,4 +1,4 @@
-public class VoicemailEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6420
+public class VoicemailEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6424
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class VoicemailEntry : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class VoicemailEntry : MonoBehaviour // TypeDefIndex: 12634
+public class VoicemailEntry : MonoBehaviour // TypeDefIndex: 12662
 {
 	public GameObject PlayingRoot; 
 	public RustText DisplayName; 

@@ -1,4 +1,4 @@
-public class MeshCollider : Collider // TypeDefIndex: 3926
+public class MeshCollider : Collider // TypeDefIndex: 3928
 {
 
 [NativeHeaderAttribute] 

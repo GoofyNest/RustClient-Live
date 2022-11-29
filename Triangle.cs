@@ -1,4 +1,4 @@
-public struct Triangle // TypeDefIndex: 6600
+public struct Triangle // TypeDefIndex: 6604
 {
 	public Vector3 point0; 
 	public Vector3 point1; 
@@ -23,6 +23,8 @@ public struct Triangle // TypeDefIndex: 6600
 	public float Distance(Vector3 pos) { }
 
 	public float SqrDistance(Vector3 pos) { }
+
+	public float Area() { }
 
 }
 

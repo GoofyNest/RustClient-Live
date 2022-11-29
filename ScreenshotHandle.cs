@@ -1,4 +1,4 @@
-internal struct ScreenshotHandle : IEquatable<ScreenshotHandle>, IComparable<ScreenshotHandle> // TypeDefIndex: 5534
+internal struct ScreenshotHandle : IEquatable<ScreenshotHandle>, IComparable<ScreenshotHandle> // TypeDefIndex: 5536
 {
 	public uint Value; 
 

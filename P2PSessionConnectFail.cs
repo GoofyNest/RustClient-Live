@@ -1,4 +1,4 @@
-internal struct P2PSessionConnectFail_t : ICallbackData // TypeDefIndex: 5409
+internal struct P2PSessionConnectFail_t : ICallbackData // TypeDefIndex: 5411
 {
 	internal ulong SteamIDRemote; 
 	internal byte P2PSessionError; 

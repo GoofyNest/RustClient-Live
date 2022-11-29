@@ -1,4 +1,4 @@
-public enum RenderBufferStoreAction // TypeDefIndex: 3811
+public enum RenderBufferStoreAction // TypeDefIndex: 3812
 {
 	public int value__; 
 	public const RenderBufferStoreAction Store = 0;

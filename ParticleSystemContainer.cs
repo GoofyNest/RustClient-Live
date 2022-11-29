@@ -1,4 +1,4 @@
-public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13075
+public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeDefIndex: 13105
 {
 	public bool precached; 
 	[HideInInspector] 
@@ -19,7 +19,7 @@ public class ParticleSystemContainer : MonoBehaviour, IPrefabPreProcess // TypeD
 
 }
 
-public struct ParticleSystemContainer.ParticleSystemGroup // TypeDefIndex: 13076
+public struct ParticleSystemContainer.ParticleSystemGroup // TypeDefIndex: 13106
 {
 	public ParticleSystem system; 
 	public LODComponentParticleSystem[] lodComponents; 

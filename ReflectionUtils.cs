@@ -1,4 +1,4 @@
-internal static class ReflectionUtils // TypeDefIndex: 5970
+internal static class ReflectionUtils // TypeDefIndex: 5972
 {
 	public static readonly Type[] EmptyTypes; 
 
@@ -107,7 +107,7 @@ internal static class ReflectionUtils // TypeDefIndex: 5970
 
 }
 
-private sealed class ReflectionUtils.<>c // TypeDefIndex: 5971
+private sealed class ReflectionUtils.<>c // TypeDefIndex: 5973
 {
 	public static readonly ReflectionUtils.<>c <>9; 
 	public static Func<ConstructorInfo, bool> <>9__10_0; 
@@ -120,32 +120,32 @@ private sealed class ReflectionUtils.<>c // TypeDefIndex: 5971
 
 	public void .ctor() { }
 
-	internal bool <GetDefaultConstructor>b__10_0(ConstructorInfo c) { }
+	internal bool <GetDefaultConstructor>
 
-	internal string <GetFieldsAndProperties>b__29_0(MemberInfo m) { }
+	internal string <GetFieldsAndProperties>
 
-	internal Type <GetMemberInfoFromType>b__37_0(ParameterInfo p) { }
+	internal Type <GetMemberInfoFromType>
 
-	internal bool <GetChildPrivateFields>b__39_0(FieldInfo f) { }
+	internal bool <GetChildPrivateFields>
 
 }
 
-private sealed class ReflectionUtils.<>c__DisplayClass42_0 // TypeDefIndex: 5972
+private sealed class ReflectionUtils.<>c__DisplayClass42_0 // TypeDefIndex: 5974
 {
 	public PropertyInfo subTypeProperty; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetChildPrivateProperties>b__0(PropertyInfo p) { }
+	internal bool <GetChildPrivateProperties>
 
-	internal bool <GetChildPrivateProperties>b__1(PropertyInfo p) { }
+	internal bool <GetChildPrivateProperties>
 
-	internal bool <GetChildPrivateProperties>b__2(PropertyInfo p) { }
+	internal bool <GetChildPrivateProperties>
 
 }
 
-private sealed class ReflectionUtils.<>c__DisplayClass43_0 // TypeDefIndex: 5973
+private sealed class ReflectionUtils.<>c__DisplayClass43_0 // TypeDefIndex: 5975
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-internal struct CopyLobbyDetailsHandleOptionsInternal : ISettable<CopyLobbyDetailsHandleOptions>, IDisposable // TypeDefIndex: 9079
+internal struct CopyLobbyDetailsHandleOptionsInternal : ISettable<CopyLobbyDetailsHandleOptions>, IDisposable // TypeDefIndex: 9088
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LobbyId; 

@@ -1,4 +1,4 @@
-public class TextureRow : MaterialRow // TypeDefIndex: 7767
+public class TextureRow : MaterialRow // TypeDefIndex: 7773
 {
 	private string Filename; 
 	public bool IsNormalMap; 
@@ -55,11 +55,11 @@ public class TextureRow : MaterialRow // TypeDefIndex: 7767
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <StartWatching>b__26_0(object a, FileSystemEventArgs e) { }
+	private void <StartWatching>
 
 }
 
-private sealed class TextureRow.<BrowseForTexture>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7768
+private sealed class TextureRow.<BrowseForTexture>d__12 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7774
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -88,7 +88,7 @@ private sealed class TextureRow.<BrowseForTexture>d__12 : IEnumerator<object>, I
 
 }
 
-private sealed class TextureRow.<DoSaveFile>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7769
+private sealed class TextureRow.<DoSaveFile>d__22 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7775
 {
 	private int <>1__state; 
 	private object <>2__current; 

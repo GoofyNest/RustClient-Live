@@ -1,4 +1,4 @@
-public class PowerLineWire : MonoBehaviour // TypeDefIndex: 12098
+public class PowerLineWire : MonoBehaviour // TypeDefIndex: 12118
 {
 	public List<Transform> poles; 
 	public List<PowerLineWireConnectionDef> connections; 

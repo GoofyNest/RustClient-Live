@@ -1,4 +1,4 @@
-public class RunConsoleCommand : MonoBehaviour // TypeDefIndex: 13085
+public class RunConsoleCommand : MonoBehaviour // TypeDefIndex: 13123
 {
 
 	public void ClientRun(string command) { }

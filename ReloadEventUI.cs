@@ -1,4 +1,4 @@
-public class ReloadEventUI : BaseEventUI // TypeDefIndex: 12540
+public class ReloadEventUI : BaseEventUI // TypeDefIndex: 12562
 {
 
 	public void .ctor() { }

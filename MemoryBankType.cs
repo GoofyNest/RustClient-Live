@@ -1,4 +1,4 @@
-public enum MemoryBankType // TypeDefIndex: 11104
+public enum MemoryBankType // TypeDefIndex: 11118
 {
 	public int value__; 
 	public const MemoryBankType Entity = 0;

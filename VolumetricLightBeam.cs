@@ -1,4 +1,4 @@
-public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13308
+public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13346
 {
 	public bool colorFromLight; 
 	public ColorMode colorMode; 
@@ -181,7 +181,7 @@ public class VolumetricLightBeam : MonoBehaviour // TypeDefIndex: 13308
 
 }
 
-private sealed class VolumetricLightBeam.<CoPlaytimeUpdate>d__98 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13309
+private sealed class VolumetricLightBeam.<CoPlaytimeUpdate>d__98 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13347
 {
 	private int <>1__state; 
 	private object <>2__current; 

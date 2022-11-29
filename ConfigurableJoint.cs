@@ -1,4 +1,4 @@
-public class ConfigurableJoint : Joint // TypeDefIndex: 3934
+public class ConfigurableJoint : Joint // TypeDefIndex: 3936
 {
 	public JointProjectionMode projectionMode { set; }
 

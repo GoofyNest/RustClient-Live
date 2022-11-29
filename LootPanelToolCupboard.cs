@@ -1,4 +1,4 @@
-public class LootPanelToolCupboard : LootPanel // TypeDefIndex: 10430
+public class LootPanelToolCupboard : LootPanel // TypeDefIndex: 10441
 {
 	public List<VirtualItemIcon> costIcons; 
 	public Text costPerTimeText; 
@@ -23,7 +23,7 @@ public class LootPanelToolCupboard : LootPanel // TypeDefIndex: 10430
 
 }
 
-private sealed class LootPanelToolCupboard.<>c // TypeDefIndex: 10431
+private sealed class LootPanelToolCupboard.<>c // TypeDefIndex: 10442
 {
 	public static readonly LootPanelToolCupboard.<>c <>9; 
 	public static Func<Item, int> <>9__12_0; 
@@ -33,7 +33,7 @@ private sealed class LootPanelToolCupboard.<>c // TypeDefIndex: 10431
 
 	public void .ctor() { }
 
-	internal int <UpdateCosts>b__12_0(Item x) { }
+	internal int <UpdateCosts>
 
 }
 

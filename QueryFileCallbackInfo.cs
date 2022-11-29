@@ -1,4 +1,4 @@
-public struct QueryFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8400
+public struct QueryFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8409
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 
@@ -36,7 +36,7 @@ public struct QueryFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8400
 
 }
 
-public struct QueryFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8903
+public struct QueryFileCallbackInfo : ICallbackInfo // TypeDefIndex: 8912
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

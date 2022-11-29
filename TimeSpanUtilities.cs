@@ -1,4 +1,4 @@
-public static class TimeSpanUtilities // TypeDefIndex: 7507
+public static class TimeSpanUtilities // TypeDefIndex: 7513
 {
 	private static readonly Dictionary<TimeSpanType, Parsing<ITimeSpan>> Parsers; 
 	private static readonly Dictionary<TimeSpanType, ITimeSpan> MaximumTimeSpans; 
@@ -22,7 +22,7 @@ public static class TimeSpanUtilities // TypeDefIndex: 7507
 
 }
 
-private sealed class TimeSpanUtilities.<>c__DisplayClass12_0<TTimeSpan> // TypeDefIndex: 7508
+private sealed class TimeSpanUtilities.<>c__DisplayClass12_0<TTimeSpan> // TypeDefIndex: 7514
 {
 	public Parsing<TTimeSpan> parsing; 
 
@@ -30,13 +30,13 @@ private sealed class TimeSpanUtilities.<>c__DisplayClass12_0<TTimeSpan> // TypeD
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-TimeSpanUtilities.<>c__DisplayClass12_0<object>..ctor
+	|-TimeSpanUtilities.<>c
 	*/
 
-	internal ParsingResult <GetParsing>b__0(string input, out ITimeSpan timeSpan) { }
+	internal ParsingResult <GetParsing>
 	/* GenericInstMethod :
 	|
-	|-TimeSpanUtilities.<>c__DisplayClass12_0<object>.<GetParsing>b__0
+	|-TimeSpanUtilities.<>c
 	*/
 
 }

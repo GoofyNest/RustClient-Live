@@ -1,4 +1,4 @@
-internal static class NumericsHelpers // TypeDefIndex: 3972
+internal static class NumericsHelpers // TypeDefIndex: 3974
 {
 
 	public static double GetDoubleFromParts(int sign, int exp, ulong man) { }

@@ -1,4 +1,4 @@
-public class Input // TypeDefIndex: 4078
+public class Input // TypeDefIndex: 4080
 {
 	[NativeThrowsAttribute] 
 	public static bool anyKey { get; }
@@ -94,7 +94,7 @@ public class Input // TypeDefIndex: 4078
 
 }
 
-public static class Input // TypeDefIndex: 6837
+public static class Input // TypeDefIndex: 6841
 {
 
 public static class Input
@@ -147,7 +147,7 @@ public static class Input
 
 }
 
-public class Input.Button // TypeDefIndex: 6838
+public class Input.Button // TypeDefIndex: 6842
 {
 	public string Name; 
 	public Func<bool> TestFunction; 
@@ -170,18 +170,18 @@ public class Input.Button // TypeDefIndex: 6838
 
 }
 
-private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6839
+private sealed class Input.<>c__DisplayClass13_0 // TypeDefIndex: 6843
 {
 	public string name; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetButton>b__0(Input.Button x) { }
+	internal bool <GetButton>
 
 }
 
-private sealed class Input.<>c // TypeDefIndex: 6840
+private sealed class Input.<>c // TypeDefIndex: 6844
 {
 	public static readonly Input.<>c <>9; 
 	public static Func<Input.Button, bool> <>9__15_0; 
@@ -196,56 +196,56 @@ private sealed class Input.<>c // TypeDefIndex: 6840
 
 	public void .ctor() { }
 
-	internal bool <GetAllBinds>b__15_0(Input.Button x) { }
+	internal bool <GetAllBinds>
 
-	internal string <GetAllBinds>b__15_1(Input.Button x) { }
+	internal string <GetAllBinds>
 
-	internal string <GetAllButtons>b__16_0(Input.Button x) { }
+	internal string <GetAllButtons>
 
-	internal bool <GetPressedButtons>b__17_0(Input.Button x) { }
+	internal bool <GetPressedButtons>
 
-	internal string <GetPressedButtons>b__17_1(Input.Button x) { }
+	internal string <GetPressedButtons>
 
-	internal string <GetButtonsWithBind>b__18_1(Input.Button x) { }
+	internal string <GetButtonsWithBind>
 
-	internal string <.cctor>b__23_0(string s) { }
+	internal string <.cctor>
 
 }
 
-private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6841
+private sealed class Input.<>c__DisplayClass18_0 // TypeDefIndex: 6845
 {
 	public string bind; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetButtonsWithBind>b__0(Input.Button x) { }
+	internal bool <GetButtonsWithBind>
 
 }
 
-private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6842
+private sealed class Input.<>c__DisplayClass19_0 // TypeDefIndex: 6846
 {
 	public string bind; 
 
 
 	public void .ctor() { }
 
-	internal bool <IsBindInUse>b__0(Input.Button x) { }
+	internal bool <IsBindInUse>
 
 }
 
-private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6843
+private sealed class Input.<>c__DisplayClass21_0 // TypeDefIndex: 6847
 {
 	public string bind; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetButtonObjectWithBind>b__0(Input.Button x) { }
+	internal bool <GetButtonObjectWithBind>
 
 }
 
-public class Input : ConsoleSystem // TypeDefIndex: 13686
+public class Input : ConsoleSystem // TypeDefIndex: 13724
 {
 	[ClientVar] 
 	public static bool flipy; 

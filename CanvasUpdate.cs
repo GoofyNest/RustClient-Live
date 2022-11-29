@@ -1,4 +1,4 @@
-public enum CanvasUpdate // TypeDefIndex: 4912
+public enum CanvasUpdate // TypeDefIndex: 4914
 {
 	public int value__; 
 	public const CanvasUpdate Prelayout = 0;

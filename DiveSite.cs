@@ -1,4 +1,4 @@
-public class DiveSite : JunkPile // TypeDefIndex: 10489
+public class DiveSite : JunkPile // TypeDefIndex: 10500
 {
 	public Transform bobber; 
 

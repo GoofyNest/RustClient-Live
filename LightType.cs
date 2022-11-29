@@ -1,4 +1,4 @@
-public enum LightType // TypeDefIndex: 3414
+public enum LightType // TypeDefIndex: 3415
 {
 	public int value__; 
 	public const LightType Spot = 0;
@@ -10,7 +10,7 @@ public enum LightType // TypeDefIndex: 3414
 
 }
 
-public enum LightType // TypeDefIndex: 3879
+public enum LightType // TypeDefIndex: 3881
 {
 
 public enum LightType

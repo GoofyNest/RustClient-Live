@@ -1,4 +1,4 @@
-public class HideIfScoped : MonoBehaviour // TypeDefIndex: 10609
+public class HideIfScoped : MonoBehaviour // TypeDefIndex: 10620
 {
 	public Renderer[] renderers; 
 

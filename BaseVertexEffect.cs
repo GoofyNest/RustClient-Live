@@ -1,4 +1,4 @@
-public abstract class BaseVertexEffect // TypeDefIndex: 5034
+public abstract class BaseVertexEffect // TypeDefIndex: 5036
 {
 
 	[EditorBrowsableAttribute] 

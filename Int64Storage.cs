@@ -1,4 +1,4 @@
-internal sealed class Int64Storage : DataStorage // TypeDefIndex: 4408
+internal sealed class Int64Storage : DataStorage // TypeDefIndex: 4410
 {
 	private long[] _values; 
 

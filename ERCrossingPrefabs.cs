@@ -1,4 +1,4 @@
-public class ERCrossingPrefabs : MonoBehaviour // TypeDefIndex: 7187
+public class ERCrossingPrefabs : MonoBehaviour // TypeDefIndex: 7191
 {
 	public List<QDOODOQQDQODD> crossingElements; 
 	public List<QDOQDSQOOQDDD> sidewalkControlElements; 

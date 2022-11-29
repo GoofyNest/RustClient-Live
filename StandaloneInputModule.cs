@@ -1,4 +1,4 @@
-public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5089
+public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5091
 {
 	private float m_PrevActionTime; 
 	private Vector2 m_LastMoveVector; 
@@ -113,7 +113,7 @@ public class StandaloneInputModule : PointerInputModule // TypeDefIndex: 5089
 
 }
 
-public enum StandaloneInputModule.InputMode // TypeDefIndex: 5090
+public enum StandaloneInputModule.InputMode // TypeDefIndex: 5092
 {
 	public int value__; 
 	public const StandaloneInputModule.InputMode Mouse = 0;

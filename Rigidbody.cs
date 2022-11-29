@@ -1,4 +1,4 @@
-public class Rigidbody : Component // TypeDefIndex: 3923
+public class Rigidbody : Component // TypeDefIndex: 3925
 {
 	public Vector3 velocity { get; set; }
 	public Vector3 angularVelocity { set; }

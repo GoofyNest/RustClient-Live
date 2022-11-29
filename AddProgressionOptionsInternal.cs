@@ -1,4 +1,4 @@
-internal struct AddProgressionOptionsInternal : ISettable<AddProgressionOptions>, IDisposable // TypeDefIndex: 8790
+internal struct AddProgressionOptionsInternal : ISettable<AddProgressionOptions>, IDisposable // TypeDefIndex: 8799
 {
 	private int m_ApiVersion; 
 	private uint m_SnapshotId; 

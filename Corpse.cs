@@ -1,4 +1,4 @@
-public class Corpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6304
+public class Corpse : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6306
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

@@ -1,4 +1,4 @@
-public class ElectricWindmill : IOEntity // TypeDefIndex: 10451
+public class ElectricWindmill : IOEntity // TypeDefIndex: 10462
 {
 	public Animator animator; 
 	public int maxPowerGeneration; 

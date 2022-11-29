@@ -1,4 +1,4 @@
-internal class SliderState // TypeDefIndex: 4062
+internal class SliderState // TypeDefIndex: 4064
 {
 	public float dragStartPos; 
 	public float dragStartValue; 

@@ -1,4 +1,4 @@
-internal struct DownloadClanActivityCountsResult_t : ICallbackData // TypeDefIndex: 5322
+internal struct DownloadClanActivityCountsResult_t : ICallbackData // TypeDefIndex: 5324
 {
 	internal bool Success; 
 	public static int _datasize; 

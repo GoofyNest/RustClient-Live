@@ -1,4 +1,4 @@
-public sealed class LightProbes : Object // TypeDefIndex: 3392
+public sealed class LightProbes : Object // TypeDefIndex: 3393
 {
 
 [NativeHeaderAttribute] 

@@ -33,7 +33,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<InventoryRecipe.Ingredient>..ctor
 	|-List.Enumerator<InventoryRecipe>..ctor
 	|-List.Enumerator<SynchronizedClock.TimedEvent>..ctor
-	|-List.Enumerator<KeyValuePair<object, Color>>..ctor
 	|-List.Enumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-List.Enumerator<UnitySynchronizationContext.WorkRequest>..ctor
 	|
@@ -84,7 +83,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>..ctor
 	|
 	|-List.Enumerator<BaseEntity.PendingFileRequest>..ctor
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>..ctor
 	|-List.Enumerator<Demos.DemoInfo>..ctor
 	|-List.Enumerator<Output.Entry>..ctor
 	|-List.Enumerator<IconSkinPicker.SkinButtonSetup>..ctor
@@ -102,9 +100,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SpecialPurposeCamera.RenderEntry>..ctor
 	|-List.Enumerator<InventoryItem>..ctor
 	|
-	|-List.Enumerator<Admin.PlayerInfo>..ctor
-	|-List.Enumerator<PlaceMonuments.SpawnInfo>..ctor
-	|
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>..ctor
 	|-List.Enumerator<Admin.ServerUGCInfo>..ctor
 	|-List.Enumerator<CapsuleParams>..ctor
 	|-List.Enumerator<SkeletonDefinition.Bone>..ctor
@@ -114,6 +110,9 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<RenderTargetIdentifier>..ctor
 	|-List.Enumerator<TreeInstance>..ctor
 	|-List.Enumerator<ViewModelDrawEvent>..ctor
+	|
+	|-List.Enumerator<Admin.PlayerInfo>..ctor
+	|-List.Enumerator<PlaceMonuments.SpawnInfo>..ctor
 	|
 	|-List.Enumerator<CRedge>..ctor
 	|-List.Enumerator<ProjectileWeaponMod.Modifier>..ctor
@@ -238,7 +237,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<BurstClothCollider>.Dispose
 	|-List.Enumerator<CH47DropZone>.Dispose
 	|-List.Enumerator<CH47LandingZone>.Dispose
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>.Dispose
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>.Dispose
 	|-List.Enumerator<Cassette.LoadRequest>.Dispose
 	|-List.Enumerator<CinematicEntity>.Dispose
 	|-List.Enumerator<ClientIOLine>.Dispose
@@ -309,6 +308,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<BurstCloth>.Dispose
 	|-List.Enumerator<CapsuleParams>.Dispose
 	|-List.Enumerator<BoneData>.Dispose
+	|-List.Enumerator<PlayingCard>.Dispose
 	|-List.Enumerator<FlexElement>.Dispose
 	|-List.Enumerator<IFlexNode>.Dispose
 	|-List.Enumerator<TabbedPanel.Tab>.Dispose
@@ -369,7 +369,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<ItemModConsumable.ConsumableEffect>.Dispose
 	|-List.Enumerator<ItemPickupNotice>.Dispose
 	|-List.Enumerator<ItemSkinDirectory.Skin>.Dispose
-	|-List.Enumerator<ItemSlot>.Dispose
 	|-List.Enumerator<Value>.Dispose
 	|-List.Enumerator<KeyframeView.UIKeyframeValue>.Dispose
 	|-List.Enumerator<KeyframeWidget>.Dispose
@@ -430,7 +429,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<AIEventData>.Dispose
 	|-List.Enumerator<AIStateContainer>.Dispose
 	|-List.Enumerator<ArcadeGame.arcadeEnt>.Dispose
-	|-List.Enumerator<CardTable.WinnerBreakdown.Winner>.Dispose
+	|-List.Enumerator<CardGame.RoundResults.Result>.Dispose
 	|-List.Enumerator<DemoShot>.Dispose
 	|-List.Enumerator<DemoShotFloatKeyframe>.Dispose
 	|-List.Enumerator<DemoShotParentKeyframe>.Dispose
@@ -524,7 +523,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<KeyValuePair<Int32Enum, object>>.Dispose
 	|-List.Enumerator<KeyValuePair<object, object>>.Dispose
 	|-List.Enumerator<KeyValuePair<object, float>>.Dispose
-	|-List.Enumerator<KeyValuePair<object, Color>>.Dispose
 	|-List.Enumerator<KeyValuePair<uint, object>>.Dispose
 	|-List.Enumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>.Dispose
 	|-List.Enumerator<List<int>>.Dispose
@@ -642,6 +640,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<TrailRenderer>.Dispose
 	|-List.Enumerator<Transform>.Dispose
 	|-List.Enumerator<TreeInstance>.Dispose
+	|-List.Enumerator<Image>.Dispose
 	|-List.Enumerator<MaskableGraphic>.Dispose
 	|-List.Enumerator<UICharInfo>.Dispose
 	|-List.Enumerator<EventCallbackFunctorBase>.Dispose
@@ -729,6 +728,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SideObject>.MoveNext
 	|-List.Enumerator<tPoint>.MoveNext
 	|-List.Enumerator<BurstCloth>.MoveNext
+	|-List.Enumerator<PlayingCard>.MoveNext
 	|-List.Enumerator<FlexElement>.MoveNext
 	|-List.Enumerator<IFlexNode>.MoveNext
 	|-List.Enumerator<Input.Button>.MoveNext
@@ -808,7 +808,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<AIEventData>.MoveNext
 	|-List.Enumerator<AIStateContainer>.MoveNext
 	|-List.Enumerator<ArcadeGame.arcadeEnt>.MoveNext
-	|-List.Enumerator<CardTable.WinnerBreakdown.Winner>.MoveNext
+	|-List.Enumerator<CardGame.RoundResults.Result>.MoveNext
 	|-List.Enumerator<DemoShot>.MoveNext
 	|-List.Enumerator<EggHunt.EggHunter>.MoveNext
 	|-List.Enumerator<FileStorageCacheData>.MoveNext
@@ -940,6 +940,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Texture>.MoveNext
 	|-List.Enumerator<TrailRenderer>.MoveNext
 	|-List.Enumerator<Transform>.MoveNext
+	|-List.Enumerator<Image>.MoveNext
 	|-List.Enumerator<MaskableGraphic>.MoveNext
 	|-List.Enumerator<EventCallbackFunctorBase>.MoveNext
 	|-List.Enumerator<IEventDispatchingStrategy>.MoveNext
@@ -955,7 +956,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WeightedAudioClip>.MoveNext
 	|
 	|-List.Enumerator<AIState>.MoveNext
-	|-List.Enumerator<ItemSlot>.MoveNext
 	|-List.Enumerator<InventoryDefId>.MoveNext
 	|-List.Enumerator<int>.MoveNext
 	|-List.Enumerator<Int32Enum>.MoveNext
@@ -1003,12 +1003,10 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|
 	|-List.Enumerator<BaseEntity.PendingFileRequest>.MoveNext
 	|
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>.MoveNext
-	|-List.Enumerator<ItemSkinDirectory.Skin>.MoveNext
-	|-List.Enumerator<KeyframeView.UIKeyframeValue>.MoveNext
-	|-List.Enumerator<MidiConvar.KnobBinding>.MoveNext
-	|-List.Enumerator<MidiConvar.NoteBinding>.MoveNext
-	|-List.Enumerator<Option>.MoveNext
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>.MoveNext
+	|-List.Enumerator<CapsuleParams>.MoveNext
+	|-List.Enumerator<SteamNewsSource.Story>.MoveNext
+	|-List.Enumerator<ViewModelDrawEvent>.MoveNext
 	|
 	|-List.Enumerator<Cassette.LoadRequest>.MoveNext
 	|-List.Enumerator<Admin.ServerConvarInfo>.MoveNext
@@ -1017,7 +1015,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<MapView.SleepingBagCluster>.MoveNext
 	|-List.Enumerator<TimelineEvent>.MoveNext
 	|-List.Enumerator<InventoryRecipe>.MoveNext
-	|-List.Enumerator<KeyValuePair<object, Color>>.MoveNext
 	|-List.Enumerator<UnitySynchronizationContext.WorkRequest>.MoveNext
 	|
 	|-List.Enumerator<Admin.PlayerInfo>.MoveNext
@@ -1096,10 +1093,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<MeshRendererLookup.LookupEntry>.MoveNext
 	|-List.Enumerator<Achievement>.MoveNext
 	|
-	|-List.Enumerator<CapsuleParams>.MoveNext
-	|-List.Enumerator<SteamNewsSource.Story>.MoveNext
-	|-List.Enumerator<ViewModelDrawEvent>.MoveNext
-	|
 	|-List.Enumerator<BoneData>.MoveNext
 	|
 	|-List.Enumerator<SkeletonDefinition.Bone>.MoveNext
@@ -1121,6 +1114,12 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<BeforeRenderHelper.OrderBlock>.MoveNext
 	|
 	|-List.Enumerator<FoliageGridMeshData.FoliageVertex>.MoveNext
+	|
+	|-List.Enumerator<ItemSkinDirectory.Skin>.MoveNext
+	|-List.Enumerator<KeyframeView.UIKeyframeValue>.MoveNext
+	|-List.Enumerator<MidiConvar.KnobBinding>.MoveNext
+	|-List.Enumerator<MidiConvar.NoteBinding>.MoveNext
+	|-List.Enumerator<Option>.MoveNext
 	|
 	|-List.Enumerator<LocalClock.TimedEvent>.MoveNext
 	|-List.Enumerator<SynchronizedClock.TimedEvent>.MoveNext
@@ -1202,7 +1201,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<InventoryRecipe.Ingredient>.MoveNextRare
 	|-List.Enumerator<InventoryRecipe>.MoveNextRare
 	|-List.Enumerator<SynchronizedClock.TimedEvent>.MoveNextRare
-	|-List.Enumerator<KeyValuePair<object, Color>>.MoveNextRare
 	|-List.Enumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>.MoveNextRare
 	|-List.Enumerator<UnitySynchronizationContext.WorkRequest>.MoveNextRare
 	|
@@ -1253,7 +1251,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>.MoveNextRare
 	|
 	|-List.Enumerator<BaseEntity.PendingFileRequest>.MoveNextRare
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>.MoveNextRare
 	|-List.Enumerator<Demos.DemoInfo>.MoveNextRare
 	|-List.Enumerator<Output.Entry>.MoveNextRare
 	|-List.Enumerator<IconSkinPicker.SkinButtonSetup>.MoveNextRare
@@ -1271,9 +1268,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SpecialPurposeCamera.RenderEntry>.MoveNextRare
 	|-List.Enumerator<InventoryItem>.MoveNextRare
 	|
-	|-List.Enumerator<Admin.PlayerInfo>.MoveNextRare
-	|-List.Enumerator<PlaceMonuments.SpawnInfo>.MoveNextRare
-	|
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>.MoveNextRare
 	|-List.Enumerator<Admin.ServerUGCInfo>.MoveNextRare
 	|-List.Enumerator<CapsuleParams>.MoveNextRare
 	|-List.Enumerator<SkeletonDefinition.Bone>.MoveNextRare
@@ -1283,6 +1278,9 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<RenderTargetIdentifier>.MoveNextRare
 	|-List.Enumerator<TreeInstance>.MoveNextRare
 	|-List.Enumerator<ViewModelDrawEvent>.MoveNextRare
+	|
+	|-List.Enumerator<Admin.PlayerInfo>.MoveNextRare
+	|-List.Enumerator<PlaceMonuments.SpawnInfo>.MoveNextRare
 	|
 	|-List.Enumerator<CRedge>.MoveNextRare
 	|-List.Enumerator<ProjectileWeaponMod.Modifier>.MoveNextRare
@@ -1439,6 +1437,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<tPoint>.get_Current
 	|-List.Enumerator<BurstCloth.Chain>.get_Current
 	|-List.Enumerator<BurstCloth>.get_Current
+	|-List.Enumerator<PlayingCard>.get_Current
 	|-List.Enumerator<FlexElement>.get_Current
 	|-List.Enumerator<IFlexNode>.get_Current
 	|-List.Enumerator<Input.Button>.get_Current
@@ -1519,7 +1518,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<AIEventData>.get_Current
 	|-List.Enumerator<AIStateContainer>.get_Current
 	|-List.Enumerator<ArcadeGame.arcadeEnt>.get_Current
-	|-List.Enumerator<CardTable.WinnerBreakdown.Winner>.get_Current
+	|-List.Enumerator<CardGame.RoundResults.Result>.get_Current
 	|-List.Enumerator<DemoShot>.get_Current
 	|-List.Enumerator<EggHunt.EggHunter>.get_Current
 	|-List.Enumerator<FileStorageCacheData>.get_Current
@@ -1636,6 +1635,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Texture>.get_Current
 	|-List.Enumerator<TrailRenderer>.get_Current
 	|-List.Enumerator<Transform>.get_Current
+	|-List.Enumerator<Image>.get_Current
 	|-List.Enumerator<MaskableGraphic>.get_Current
 	|-List.Enumerator<EventCallbackFunctorBase>.get_Current
 	|-List.Enumerator<IEventDispatchingStrategy>.get_Current
@@ -1680,7 +1680,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WeakReference<EtwSession>>.get_Current
 	|
 	|-List.Enumerator<AIState>.get_Current
-	|-List.Enumerator<ItemSlot>.get_Current
 	|-List.Enumerator<uint>.get_Current
 	|-List.Enumerator<KeyCode>.get_Current
 	|-List.Enumerator<InventoryDefId>.get_Current
@@ -1709,29 +1708,10 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<InventoryRecipe.Ingredient>.get_Current
 	|-List.Enumerator<InventoryRecipe>.get_Current
 	|-List.Enumerator<SynchronizedClock.TimedEvent>.get_Current
-	|-List.Enumerator<KeyValuePair<object, Color>>.get_Current
 	|-List.Enumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Current
 	|-List.Enumerator<UnitySynchronizationContext.WorkRequest>.get_Current
 	|
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>.get_Current
-	|-List.Enumerator<IconSkinPicker.SkinButtonSetup>.get_Current
-	|-List.Enumerator<InvokeAction>.get_Current
-	|-List.Enumerator<KeyframeView.UIKeyframeValue>.get_Current
-	|-List.Enumerator<MidiConvar.KnobBinding>.get_Current
-	|-List.Enumerator<MidiConvar.NoteBinding>.get_Current
-	|-List.Enumerator<TransformSnapshot>.get_Current
-	|-List.Enumerator<SkinnedMultiMesh.Part>.get_Current
-	|-List.Enumerator<BaseEntity.PendingFileRequest>.get_Current
-	|-List.Enumerator<Demos.DemoInfo>.get_Current
-	|-List.Enumerator<Output.Entry>.get_Current
-	|-List.Enumerator<ItemSkinDirectory.Skin>.get_Current
-	|-List.Enumerator<WaypointSet.Waypoint>.get_Current
-	|-List.Enumerator<Option>.get_Current
-	|-List.Enumerator<SubmarineSonar.SonarBlip>.get_Current
-	|-List.Enumerator<SpawnIndividual>.get_Current
-	|-List.Enumerator<SpecialPurposeCamera.RenderEntry>.get_Current
-	|-List.Enumerator<InventoryItem>.get_Current
-	|
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>.get_Current
 	|-List.Enumerator<Admin.ServerUGCInfo>.get_Current
 	|-List.Enumerator<CapsuleParams>.get_Current
 	|-List.Enumerator<ViewModelDrawEvent>.get_Current
@@ -1798,6 +1778,24 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<Option>.get_Current
 	|-List.Enumerator<ERMeshCombineUtility.MeshInstance>.get_Current
 	|-List.Enumerator<RenderInfo.RendererInstance>.get_Current
+	|
+	|-List.Enumerator<IconSkinPicker.SkinButtonSetup>.get_Current
+	|-List.Enumerator<InvokeAction>.get_Current
+	|-List.Enumerator<KeyframeView.UIKeyframeValue>.get_Current
+	|-List.Enumerator<MidiConvar.KnobBinding>.get_Current
+	|-List.Enumerator<MidiConvar.NoteBinding>.get_Current
+	|-List.Enumerator<TransformSnapshot>.get_Current
+	|-List.Enumerator<SkinnedMultiMesh.Part>.get_Current
+	|-List.Enumerator<BaseEntity.PendingFileRequest>.get_Current
+	|-List.Enumerator<Demos.DemoInfo>.get_Current
+	|-List.Enumerator<Output.Entry>.get_Current
+	|-List.Enumerator<ItemSkinDirectory.Skin>.get_Current
+	|-List.Enumerator<WaypointSet.Waypoint>.get_Current
+	|-List.Enumerator<Option>.get_Current
+	|-List.Enumerator<SubmarineSonar.SonarBlip>.get_Current
+	|-List.Enumerator<SpawnIndividual>.get_Current
+	|-List.Enumerator<SpecialPurposeCamera.RenderEntry>.get_Current
+	|-List.Enumerator<InventoryItem>.get_Current
 	|
 	|-List.Enumerator<PetCommandList.PetCommandDesc>.get_Current
 	|-List.Enumerator<PlaceMonumentsOffshore.SpawnInfo>.get_Current
@@ -1891,7 +1889,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<InventoryRecipe.Ingredient>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<InventoryRecipe>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<SynchronizedClock.TimedEvent>.System.Collections.IEnumerator.get_Current
-	|-List.Enumerator<KeyValuePair<object, Color>>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<UnitySynchronizationContext.WorkRequest>.System.Collections.IEnumerator.get_Current
 	|
@@ -1942,7 +1939,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.get_Current
 	|
 	|-List.Enumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.get_Current
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Demos.DemoInfo>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Output.Entry>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<IconSkinPicker.SkinButtonSetup>.System.Collections.IEnumerator.get_Current
@@ -1960,9 +1956,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SpecialPurposeCamera.RenderEntry>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<InventoryItem>.System.Collections.IEnumerator.get_Current
 	|
-	|-List.Enumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.get_Current
-	|-List.Enumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.get_Current
-	|
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<Admin.ServerUGCInfo>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<CapsuleParams>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<SkeletonDefinition.Bone>.System.Collections.IEnumerator.get_Current
@@ -1972,6 +1966,9 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<RenderTargetIdentifier>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<TreeInstance>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<ViewModelDrawEvent>.System.Collections.IEnumerator.get_Current
+	|
+	|-List.Enumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.get_Current
+	|-List.Enumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.get_Current
 	|
 	|-List.Enumerator<CRedge>.System.Collections.IEnumerator.get_Current
 	|-List.Enumerator<ProjectileWeaponMod.Modifier>.System.Collections.IEnumerator.get_Current
@@ -2094,7 +2091,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<InventoryRecipe.Ingredient>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<InventoryRecipe>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<SynchronizedClock.TimedEvent>.System.Collections.IEnumerator.Reset
-	|-List.Enumerator<KeyValuePair<object, Color>>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<UnitySynchronizationContext.WorkRequest>.System.Collections.IEnumerator.Reset
 	|
@@ -2145,7 +2141,6 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerator.Reset
 	|
 	|-List.Enumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
-	|-List.Enumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Demos.DemoInfo>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Output.Entry>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<IconSkinPicker.SkinButtonSetup>.System.Collections.IEnumerator.Reset
@@ -2163,9 +2158,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<SpecialPurposeCamera.RenderEntry>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<InventoryItem>.System.Collections.IEnumerator.Reset
 	|
-	|-List.Enumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.Reset
-	|-List.Enumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.Reset
-	|
+	|-List.Enumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<Admin.ServerUGCInfo>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<CapsuleParams>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<SkeletonDefinition.Bone>.System.Collections.IEnumerator.Reset
@@ -2175,6 +2168,9 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 	|-List.Enumerator<RenderTargetIdentifier>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<TreeInstance>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<ViewModelDrawEvent>.System.Collections.IEnumerator.Reset
+	|
+	|-List.Enumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.Reset
+	|-List.Enumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.Reset
 	|
 	|-List.Enumerator<CRedge>.System.Collections.IEnumerator.Reset
 	|-List.Enumerator<ProjectileWeaponMod.Modifier>.System.Collections.IEnumerator.Reset
@@ -2272,7 +2268,7 @@ public struct List.Enumerator<T> : IEnumerator<T>, IDisposable, IEnumerator // T
 
 }
 
-public static class List // TypeDefIndex: 4847
+public static class List // TypeDefIndex: 4849
 {
 
 	[ExtensionAttribute] 

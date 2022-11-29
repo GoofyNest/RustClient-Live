@@ -1,4 +1,4 @@
-public enum RelayControl // TypeDefIndex: 8989
+public enum RelayControl // TypeDefIndex: 8998
 {
 	public int value__; 
 	public const RelayControl NoRelays = 0;

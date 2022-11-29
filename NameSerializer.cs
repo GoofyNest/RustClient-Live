@@ -1,4 +1,4 @@
-internal sealed class NameSerializer : IObjectReference, ISerializable // TypeDefIndex: 5821
+internal sealed class NameSerializer : IObjectReference, ISerializable // TypeDefIndex: 5823
 {
 	private string expandedName; 
 

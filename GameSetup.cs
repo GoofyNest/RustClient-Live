@@ -1,4 +1,4 @@
-public class GameSetup : MonoBehaviour // TypeDefIndex: 11611
+public class GameSetup : MonoBehaviour // TypeDefIndex: 11626
 {
 	public static bool RunOnce; 
 	public bool startServer; 
@@ -24,7 +24,7 @@ public class GameSetup : MonoBehaviour // TypeDefIndex: 11611
 
 }
 
-private sealed class GameSetup.<DoGameSetup>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11612
+private sealed class GameSetup.<DoGameSetup>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11627
 {
 	private int <>1__state; 
 	private object <>2__current; 

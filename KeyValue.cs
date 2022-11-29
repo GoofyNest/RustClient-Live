@@ -1,4 +1,4 @@
-public class KeyValue // TypeDefIndex: 6289
+public class KeyValue // TypeDefIndex: 6291
 {
 	[CompilerGeneratedAttribute] 
 	private Key <Key>k__BackingField; 

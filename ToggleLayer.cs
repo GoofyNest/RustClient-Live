@@ -1,4 +1,4 @@
-public class ToggleLayer : MonoBehaviour, IClientComponent // TypeDefIndex: 12886
+public class ToggleLayer : MonoBehaviour, IClientComponent // TypeDefIndex: 12914
 {
 	public Toggle toggleControl; 
 	public TextMeshProUGUI textControl; 

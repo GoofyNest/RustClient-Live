@@ -1,4 +1,4 @@
-public enum SpritePackingMode // TypeDefIndex: 3575
+public enum SpritePackingMode // TypeDefIndex: 3576
 {
 	public int value__; 
 	public const SpritePackingMode Tight = 0;

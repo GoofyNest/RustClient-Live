@@ -1,4 +1,4 @@
-public class SelectedBlueprint : SingletonComponent<SelectedBlueprint>, IInventoryChanged // TypeDefIndex: 12727
+public class SelectedBlueprint : SingletonComponent<SelectedBlueprint>, IInventoryChanged // TypeDefIndex: 12755
 {
 	public ItemBlueprint blueprint; 
 	public InputField craftAmountText; 
@@ -69,16 +69,16 @@ public class SelectedBlueprint : SingletonComponent<SelectedBlueprint>, IInvento
 
 }
 
-private sealed class SelectedBlueprint.<>c__DisplayClass30_0 // TypeDefIndex: 12728
+private sealed class SelectedBlueprint.<>c__DisplayClass30_0 // TypeDefIndex: 12756
 {
 	public int inventoryId; 
 
 
 	public void .ctor() { }
 
-	internal bool <StartCrafting>b__0(ItemSkinDirectory.Skin x) { }
+	internal bool <StartCrafting>
 
-	internal bool <StartCrafting>b__1(IPlayerItemDefinition x) { }
+	internal bool <StartCrafting>
 
 }
 

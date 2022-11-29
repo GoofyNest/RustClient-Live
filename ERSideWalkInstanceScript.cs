@@ -1,4 +1,4 @@
-public class ERSideWalkInstanceScript : MonoBehaviour // TypeDefIndex: 7229
+public class ERSideWalkInstanceScript : MonoBehaviour // TypeDefIndex: 7233
 {
 	public ERSideWalkInstance instance; 
 

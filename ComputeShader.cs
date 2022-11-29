@@ -1,8 +1,8 @@
-public sealed class ComputeShader : Object // TypeDefIndex: 3552
+public sealed class ComputeShader : Object // TypeDefIndex: 3553
 {
 
-	[NativeMethodAttribute] 
 	[RequiredByNativeCodeAttribute] 
+	[NativeMethodAttribute] 
 	public int FindKernel(string name) { }
 
 	[FreeFunctionAttribute] 

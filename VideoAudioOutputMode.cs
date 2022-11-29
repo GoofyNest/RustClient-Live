@@ -1,4 +1,4 @@
-public enum VideoAudioOutputMode // TypeDefIndex: 4785
+public enum VideoAudioOutputMode // TypeDefIndex: 4787
 {
 	public int value__; 
 	public const VideoAudioOutputMode None = 0;

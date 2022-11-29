@@ -1,4 +1,4 @@
-internal enum VisualTreeUpdatePhase // TypeDefIndex: 4620
+internal enum VisualTreeUpdatePhase // TypeDefIndex: 4622
 {
 	public int value__; 
 	public const VisualTreeUpdatePhase ViewData = 0;

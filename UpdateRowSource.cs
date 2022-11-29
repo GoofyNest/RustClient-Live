@@ -1,4 +1,4 @@
-public enum UpdateRowSource // TypeDefIndex: 4315
+public enum UpdateRowSource // TypeDefIndex: 4317
 {
 	public int value__; 
 	public const UpdateRowSource None = 0;

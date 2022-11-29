@@ -1,4 +1,4 @@
-public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3873
+public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3874
 {
 	internal IntPtr m_Handle; 
 	internal uint m_Version; 
@@ -6,6 +6,12 @@ public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3873
 
 	public static PlayableHandle Null { get; }
 
+
+	internal T GetObject<T>() { }
+	/* GenericInstMethod :
+	|
+	|-PlayableHandle.GetObject<object>
+	*/
 
 	[VisibleToOtherModulesAttribute] 
 	internal bool IsPlayableOfType<T>() { }
@@ -45,15 +51,32 @@ public struct PlayableHandle : IEquatable<PlayableHandle> // TypeDefIndex: 3873
 	[VisibleToOtherModulesAttribute] 
 	internal bool IsValid() { }
 
+	[VisibleToOtherModulesAttribute] 
+	[FreeFunctionAttribute] 
+	internal Type GetPlayableType() { }
+
 	[FreeFunctionAttribute] 
 	[VisibleToOtherModulesAttribute] 
-	internal Type GetPlayableType() { }
+	internal void SetScriptInstance(object scriptInstance) { }
+
+	[FreeFunctionAttribute] 
+	[VisibleToOtherModulesAttribute] 
+	internal void SetInputCount(int value) { }
+
+	[FreeFunctionAttribute] 
+	private object GetScriptInstance() { }
 
 	private static void .cctor() { }
 
 	private static bool IsValid_Injected(ref PlayableHandle _unity_self) { }
 
 	private static Type GetPlayableType_Injected(ref PlayableHandle _unity_self) { }
+
+	private static void SetScriptInstance_Injected(ref PlayableHandle _unity_self, object scriptInstance) { }
+
+	private static void SetInputCount_Injected(ref PlayableHandle _unity_self, int value) { }
+
+	private static object GetScriptInstance_Injected(ref PlayableHandle _unity_self) { }
 
 }
 

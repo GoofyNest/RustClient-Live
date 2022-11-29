@@ -1,4 +1,4 @@
-public abstract class RenderPipeline // TypeDefIndex: 3851
+public abstract class RenderPipeline // TypeDefIndex: 3852
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 

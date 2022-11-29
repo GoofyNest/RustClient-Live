@@ -1,4 +1,4 @@
-internal enum TempoMapLine // TypeDefIndex: 7462
+internal enum TempoMapLine // TypeDefIndex: 7468
 {
 	public int value__; 
 	public const TempoMapLine Tempo = 0;

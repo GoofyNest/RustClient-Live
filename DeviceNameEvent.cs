@@ -1,4 +1,4 @@
-public sealed class DeviceNameEvent : BaseTextEvent // TypeDefIndex: 7543
+public sealed class DeviceNameEvent : BaseTextEvent // TypeDefIndex: 7549
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public struct BatchVisibility // TypeDefIndex: 3845
+public struct BatchVisibility // TypeDefIndex: 3846
 {
 	public readonly int offset; 
 	public readonly int instancesCount; 

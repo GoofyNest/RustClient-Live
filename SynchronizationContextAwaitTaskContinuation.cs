@@ -26,7 +26,7 @@ private sealed class SynchronizationContextAwaitTaskContinuation.<>c // TypeDefI
 
 	public void .ctor() { }
 
-	internal void <.cctor>b__7_0(object state) { }
+	internal void <.cctor>
 
 }
 

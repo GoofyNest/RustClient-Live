@@ -1,4 +1,4 @@
-internal class GlobalJavaObjectRef // TypeDefIndex: 4468
+internal class GlobalJavaObjectRef // TypeDefIndex: 4470
 {
 	private bool m_disposed; 
 	protected IntPtr m_jobject; 

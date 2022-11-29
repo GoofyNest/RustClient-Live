@@ -1,4 +1,4 @@
-public sealed class GL // TypeDefIndex: 3390
+public sealed class GL // TypeDefIndex: 3391
 {
 	public static bool sRGBWrite { get; set; }
 

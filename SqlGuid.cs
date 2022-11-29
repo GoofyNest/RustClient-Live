@@ -1,4 +1,4 @@
-public struct SqlGuid : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4349
+public struct SqlGuid : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4351
 {
 	private static readonly int s_sizeOfGuid; 
 	private static readonly int[] s_rgiGuidOrder; 

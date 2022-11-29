@@ -1,4 +1,4 @@
-public class SubbandLayer2Stereo : SubbandLayer2 // TypeDefIndex: 7416
+public class SubbandLayer2Stereo : SubbandLayer2 // TypeDefIndex: 7422
 {
 	protected int Channel2Allocation; 
 	protected readonly float[] Channel2C; 

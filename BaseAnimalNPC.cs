@@ -1,4 +1,4 @@
-public class BaseAnimalNPC : BaseNpc, IAIAttack, IAITirednessAbove, IAISleep, IAIHungerAbove, IAISenses // TypeDefIndex: 10020
+public class BaseAnimalNPC : BaseNpc, IAIAttack, IAITirednessAbove, IAISleep, IAIHungerAbove, IAISenses // TypeDefIndex: 10029
 {
 	private Option __menuOption_MenuDesignAI; 
 	public string deathStatName; 

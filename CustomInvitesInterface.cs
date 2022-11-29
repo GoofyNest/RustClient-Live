@@ -1,4 +1,4 @@
-public sealed class CustomInvitesInterface : Handle // TypeDefIndex: 9518
+public sealed class CustomInvitesInterface : Handle // TypeDefIndex: 9527
 {
 	public const int AddnotifycustominviteacceptedApiLatest = 1;
 	public const int AddnotifycustominvitereceivedApiLatest = 1;

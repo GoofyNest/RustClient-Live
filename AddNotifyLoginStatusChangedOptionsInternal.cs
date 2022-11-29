@@ -1,4 +1,4 @@
-internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9542
+internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9551
 {
 
 internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable
@@ -13,7 +13,7 @@ internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotify
 
 }
 
-internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9639
+internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable // TypeDefIndex: 9648
 {
 
 internal struct AddNotifyLoginStatusChangedOptionsInternal : ISettable<AddNotifyLoginStatusChangedOptions>, IDisposable

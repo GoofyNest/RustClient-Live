@@ -1,4 +1,4 @@
-internal sealed class UnhandledExceptionHandler // TypeDefIndex: 3533
+internal sealed class UnhandledExceptionHandler // TypeDefIndex: 3534
 {
 
 	[RequiredByNativeCodeAttribute] 
@@ -6,7 +6,7 @@ internal sealed class UnhandledExceptionHandler // TypeDefIndex: 3533
 
 }
 
-private sealed class UnhandledExceptionHandler.<>c // TypeDefIndex: 3534
+private sealed class UnhandledExceptionHandler.<>c // TypeDefIndex: 3535
 {
 	public static readonly UnhandledExceptionHandler.<>c <>9; 
 	public static UnhandledExceptionEventHandler <>9__0_0; 
@@ -16,7 +16,7 @@ private sealed class UnhandledExceptionHandler.<>c // TypeDefIndex: 3534
 
 	public void .ctor() { }
 
-	internal void <RegisterUECatcher>b__0_0(object sender, UnhandledExceptionEventArgs e) { }
+	internal void <RegisterUECatcher>
 
 }
 

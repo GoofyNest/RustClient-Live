@@ -1,4 +1,4 @@
-internal sealed class OnDestroyLobbyCallbackInternal : MulticastDelegate // TypeDefIndex: 9202
+internal sealed class OnDestroyLobbyCallbackInternal : MulticastDelegate // TypeDefIndex: 9211
 {
 
 	public void .ctor(object object, IntPtr method) { }

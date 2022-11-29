@@ -35,6 +35,8 @@ public static class Math // TypeDefIndex: 266
 
 	public static double Round(double a) { }
 
+	public static double Round(double value, int digits) { }
+
 	public static double Round(double value, MidpointRounding mode) { }
 
 	public static double Round(double value, int digits, MidpointRounding mode) { }
@@ -92,8 +94,8 @@ public static class Math // TypeDefIndex: 266
 	[ReliabilityContractAttribute] 
 	public static long Max(long val1, long val2) { }
 
-	[CLSCompliantAttribute] 
 	[ReliabilityContractAttribute] 
+	[CLSCompliantAttribute] 
 	public static ulong Max(ulong val1, ulong val2) { }
 
 	[ReliabilityContractAttribute] 
@@ -115,8 +117,8 @@ public static class Math // TypeDefIndex: 266
 	[ReliabilityContractAttribute] 
 	public static short Min(short val1, short val2) { }
 
-	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute] 
 	public static ushort Min(ushort val1, ushort val2) { }
 
 	[ReliabilityContractAttribute] 
@@ -129,8 +131,8 @@ public static class Math // TypeDefIndex: 266
 	[ReliabilityContractAttribute] 
 	public static long Min(long val1, long val2) { }
 
-	[ReliabilityContractAttribute] 
 	[CLSCompliantAttribute] 
+	[ReliabilityContractAttribute] 
 	public static ulong Min(ulong val1, ulong val2) { }
 
 	[ReliabilityContractAttribute] 
@@ -156,7 +158,7 @@ public static class Math // TypeDefIndex: 266
 
 }
 
-public static class math // TypeDefIndex: 7135
+public static class math // TypeDefIndex: 7139
 {
 
 public static class math
@@ -297,7 +299,7 @@ public static class math
 
 }
 
-internal struct math.IntFloatUnion // TypeDefIndex: 7136
+internal struct math.IntFloatUnion // TypeDefIndex: 7140
 {
 	public int intValue; 
 	public float floatValue; 

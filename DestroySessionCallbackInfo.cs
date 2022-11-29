@@ -1,4 +1,4 @@
-public struct DestroySessionCallbackInfo : ICallbackInfo // TypeDefIndex: 8471
+public struct DestroySessionCallbackInfo : ICallbackInfo // TypeDefIndex: 8480
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

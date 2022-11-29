@@ -1,4 +1,4 @@
-internal sealed class Operators // TypeDefIndex: 4268
+internal sealed class Operators // TypeDefIndex: 4270
 {
 	private static readonly int[] s_priority; 
 	private static readonly string[] s_looks; 

@@ -1,4 +1,4 @@
-public class DeferredDecalRenderer : BaseCommandBuffer // TypeDefIndex: 12380
+public class DeferredDecalRenderer : BaseCommandBuffer // TypeDefIndex: 12400
 {
 	private static ListDictionary<InstancingKey, InstancingBuffer>[] DiffuseBuffer; 
 	private static ListDictionary<InstancingKey, InstancingBuffer>[] SpecularBuffer; 

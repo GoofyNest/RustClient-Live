@@ -1,4 +1,4 @@
-public struct DirectionalLight // TypeDefIndex: 3884
+public struct DirectionalLight // TypeDefIndex: 3886
 {
 	public int instanceID; 
 	public bool shadow; 

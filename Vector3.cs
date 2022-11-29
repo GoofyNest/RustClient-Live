@@ -1,4 +1,4 @@
-public struct Vector3 : IEquatable<Vector3> // TypeDefIndex: 3467
+public struct Vector3 : IEquatable<Vector3> // TypeDefIndex: 3468
 {
 	public const float kEpsilon = 1E-05;
 	public const float kEpsilonNormalSqrt = 1E-15;

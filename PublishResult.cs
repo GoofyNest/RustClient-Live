@@ -1,4 +1,4 @@
-public struct PublishResult // TypeDefIndex: 5280
+public struct PublishResult // TypeDefIndex: 5282
 {
 	public Result Result; 
 	public PublishedFileId FileId; 

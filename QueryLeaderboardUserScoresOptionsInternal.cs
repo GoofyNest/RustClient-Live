@@ -1,4 +1,4 @@
-internal struct QueryLeaderboardUserScoresOptionsInternal : ISettable<QueryLeaderboardUserScoresOptions>, IDisposable // TypeDefIndex: 9310
+internal struct QueryLeaderboardUserScoresOptionsInternal : ISettable<QueryLeaderboardUserScoresOptions>, IDisposable // TypeDefIndex: 9319
 {
 	private int m_ApiVersion; 
 	private IntPtr m_UserIds; 

@@ -1,4 +1,4 @@
-public struct GetOfferCountOptions // TypeDefIndex: 9460
+public struct GetOfferCountOptions // TypeDefIndex: 9469
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 

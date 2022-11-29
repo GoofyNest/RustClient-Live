@@ -1,4 +1,4 @@
-public class LootPanelCardTableTerminal : LootPanel // TypeDefIndex: 12764
+public class LootPanelCardTableTerminal : LootPanel // TypeDefIndex: 12792
 {
 	[SerializeField] 
 	private Text buyInInfoText; 
@@ -8,7 +8,7 @@ public class LootPanelCardTableTerminal : LootPanel // TypeDefIndex: 12764
 	private Translate.Phrase phraseMax; 
 
 
-	public CardTablePlayerStorage GetTerminal() { }
+	public CardGamePlayerStorage GetTerminal() { }
 
 	protected void OnEnable() { }
 

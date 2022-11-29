@@ -1,4 +1,4 @@
-public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 11663
+public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 11681
 {
 	public float Distance; 
 	private RendererBatch meshBatch; 
@@ -14,6 +14,8 @@ public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 11663
 
 	protected override void DisableLOD() { }
 
+	protected override bool IsLODHiding() { }
+
 	protected override void Show() { }
 
 	protected override void Hide() { }
@@ -21,6 +23,10 @@ public class MeshCull : LODComponent, IBatchingHandler // TypeDefIndex: 11663
 	protected override void SetLOD(int newlod) { }
 
 	protected override int GetLOD(float distance) { }
+
+	protected override void PrepareForForceVisible() { }
+
+	protected override bool ComputeCullingSphereBounds(out OcclusionCulling.Sphere sphereBounds) { }
 
 	public void .ctor() { }
 

@@ -1,4 +1,4 @@
-public class ExceptionReporter : MonoBehaviour // TypeDefIndex: 6198
+public class ExceptionReporter : MonoBehaviour // TypeDefIndex: 6200
 {
 	[CompilerGeneratedAttribute] 
 	private static bool <Disabled>k__BackingField; 

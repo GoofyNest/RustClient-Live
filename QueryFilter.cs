@@ -1,4 +1,4 @@
-internal class QueryFilter : PathFilter // TypeDefIndex: 6100
+internal class QueryFilter : PathFilter // TypeDefIndex: 6102
 {
 
 	public void .ctor() { }

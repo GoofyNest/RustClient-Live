@@ -1,4 +1,4 @@
-public abstract class Graphic : UIBehaviour, ICanvasElement // TypeDefIndex: 4934
+public abstract class Graphic : UIBehaviour, ICanvasElement // TypeDefIndex: 4936
 {
 	protected static Material s_DefaultUI; 
 	protected static Texture2D s_WhiteTexture; 

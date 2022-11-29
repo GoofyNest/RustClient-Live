@@ -1,4 +1,4 @@
-internal sealed class LogMessageFuncInternal : MulticastDelegate // TypeDefIndex: 9048
+internal sealed class LogMessageFuncInternal : MulticastDelegate // TypeDefIndex: 9057
 {
 
 	public void .ctor(object object, IntPtr method) { }

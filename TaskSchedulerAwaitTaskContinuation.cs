@@ -19,7 +19,7 @@ private sealed class TaskSchedulerAwaitTaskContinuation.<>c // TypeDefIndex: 880
 
 	public void .ctor() { }
 
-	internal void <Run>b__2_0(object state) { }
+	internal void <Run>
 
 }
 

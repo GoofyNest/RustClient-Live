@@ -1,4 +1,4 @@
-public enum LoadSceneMode // TypeDefIndex: 3659
+public enum LoadSceneMode // TypeDefIndex: 3660
 {
 	public int value__; 
 	public const LoadSceneMode Single = 0;

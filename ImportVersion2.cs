@@ -1,4 +1,4 @@
-internal class ImportVersion2 : SingletonComponent<ImportVersion2> // TypeDefIndex: 7780
+internal class ImportVersion2 : SingletonComponent<ImportVersion2> // TypeDefIndex: 7786
 {
 	private AssetBundle Bundle; 
 
@@ -22,7 +22,7 @@ internal class ImportVersion2 : SingletonComponent<ImportVersion2> // TypeDefInd
 
 }
 
-private sealed class ImportVersion2.<DoImport>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7781
+private sealed class ImportVersion2.<DoImport>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7787
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -53,23 +53,23 @@ private sealed class ImportVersion2.<DoImport>d__2 : IEnumerator<object>, IEnume
 
 }
 
-private sealed class ImportVersion2.<>c__DisplayClass3_0 // TypeDefIndex: 7782
+private sealed class ImportVersion2.<>c__DisplayClass3_0 // TypeDefIndex: 7788
 {
 	public AssetBundleCreateRequest request; 
 
 
 	public void .ctor() { }
 
-	internal bool <LoadItem>b__0() { }
+	internal bool <LoadItem>
 
 }
 
-private sealed class ImportVersion2.<LoadItem>d__3 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7783
+private sealed class ImportVersion2.<LoadItem>d__3 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7789
 {
 	private int <>1__state; 
 	private object <>2__current; 
 	public string BundleName; 
-	private ImportVersion2.<>c__DisplayClass3_0 <>8__1; 
+	private ImportVersion2.<>c
 	public ImportVersion2 <>4__this; 
 	public string Folder; 
 	public Skin skin; 
@@ -98,7 +98,7 @@ private sealed class ImportVersion2.<LoadItem>d__3 : IEnumerator<object>, IEnume
 
 }
 
-private sealed class ImportVersion2.<ProcessMaterial>d__4 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7784
+private sealed class ImportVersion2.<ProcessMaterial>d__4 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7790
 {
 	private int <>1__state; 
 	private object <>2__current; 

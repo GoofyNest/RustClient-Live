@@ -28,7 +28,7 @@ public class Random // TypeDefIndex: 288
 
 }
 
-public sealed class Random // TypeDefIndex: 3489
+public sealed class Random // TypeDefIndex: 3490
 {
 	[StaticAccessorAttribute] 
 	public static Random.State state { get; set; }
@@ -89,7 +89,7 @@ public sealed class Random // TypeDefIndex: 3489
 
 }
 
-public struct Random.State // TypeDefIndex: 3490
+public struct Random.State // TypeDefIndex: 3491
 {
 	[SerializeField] 
 	private int s0; 

@@ -1,4 +1,4 @@
-public struct InitializeOptions // TypeDefIndex: 9861
+public struct InitializeOptions // TypeDefIndex: 9870
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <AllocateMemoryFunction>k__BackingField; 

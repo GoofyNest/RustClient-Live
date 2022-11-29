@@ -1,4 +1,4 @@
-public static class KeyboardMidi // TypeDefIndex: 13865
+public static class KeyboardMidi // TypeDefIndex: 13913
 {
 	[ClientVar] 
 	public static string midikeymap; 
@@ -18,7 +18,7 @@ public static class KeyboardMidi // TypeDefIndex: 13865
 
 }
 
-private sealed class KeyboardMidi.<>c // TypeDefIndex: 13866
+private sealed class KeyboardMidi.<>c // TypeDefIndex: 13914
 {
 	public static readonly KeyboardMidi.<>c <>9; 
 	public static Func<string, KeyCode> <>9__4_0; 
@@ -29,9 +29,9 @@ private sealed class KeyboardMidi.<>c // TypeDefIndex: 13866
 
 	public void .ctor() { }
 
-	internal KeyCode <StringToKeycodeArray>b__4_0(string x) { }
+	internal KeyCode <StringToKeycodeArray>
 
-	internal bool <StringToKeycodeArray>b__4_1(KeyCode x) { }
+	internal bool <StringToKeycodeArray>
 
 }
 

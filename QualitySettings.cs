@@ -1,4 +1,4 @@
-public sealed class QualitySettings : Object // TypeDefIndex: 3395
+public sealed class QualitySettings : Object // TypeDefIndex: 3396
 {
 	public static int pixelLightCount { get; }
 	public static int shadowCascades { get; set; }
@@ -78,8 +78,8 @@ public sealed class QualitySettings : Object // TypeDefIndex: 3395
 	[NativeNameAttribute] 
 	public static void SetQualityLevel(int index, bool applyExpensiveChanges) { }
 
-	[NativeNameAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeNameAttribute] 
 	public static ColorSpace get_activeColorSpace() { }
 
 }

@@ -1,7 +1,7 @@
-public static class PhraseRecognitionSystem // TypeDefIndex: 3593
+public static class PhraseRecognitionSystem // TypeDefIndex: 3594
 {
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private static PhraseRecognitionSystem.ErrorDelegate OnError; 
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -16,7 +16,7 @@ public static class PhraseRecognitionSystem // TypeDefIndex: 3593
 
 }
 
-public sealed class PhraseRecognitionSystem.ErrorDelegate : MulticastDelegate // TypeDefIndex: 3594
+public sealed class PhraseRecognitionSystem.ErrorDelegate : MulticastDelegate // TypeDefIndex: 3595
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -29,7 +29,7 @@ public sealed class PhraseRecognitionSystem.ErrorDelegate : MulticastDelegate //
 
 }
 
-public sealed class PhraseRecognitionSystem.StatusDelegate : MulticastDelegate // TypeDefIndex: 3595
+public sealed class PhraseRecognitionSystem.StatusDelegate : MulticastDelegate // TypeDefIndex: 3596
 {
 
 	public void .ctor(object object, IntPtr method) { }

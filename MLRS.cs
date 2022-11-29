@@ -1,4 +1,4 @@
-public class MLRS : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6427
+public class MLRS : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6431
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class MLRS : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6427
 
 }
 
-public class MLRS : BaseMountable // TypeDefIndex: 10119
+public class MLRS : BaseMountable // TypeDefIndex: 10130
 {
 	private Option __menuOption_Menu_Cannot_Fire_Rockets; 
 	private Option __menuOption_Menu_Fire_Rockets; 
@@ -312,7 +312,7 @@ public class MLRS : BaseMountable // TypeDefIndex: 10119
 
 }
 
-public class MLRS.RocketTube // TypeDefIndex: 10120
+public class MLRS.RocketTube // TypeDefIndex: 10131
 {
 	public Vector3 firingOffset; 
 	public Transform hinge; 
@@ -323,7 +323,7 @@ public class MLRS.RocketTube // TypeDefIndex: 10120
 
 }
 
-private struct MLRS.TheoreticalProjectile // TypeDefIndex: 10121
+private struct MLRS.TheoreticalProjectile // TypeDefIndex: 10132
 {
 	public Vector3 pos; 
 	public Vector3 forward; 

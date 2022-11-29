@@ -1,4 +1,4 @@
-public class MovementSoundTrigger : TriggerBase, IClientComponentEx, ILOD // TypeDefIndex: 10714
+public class MovementSoundTrigger : TriggerBase, IClientComponentEx, ILOD // TypeDefIndex: 10725
 {
 	public SoundDefinition softSound; 
 	public SoundDefinition medSound; 

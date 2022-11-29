@@ -1,4 +1,4 @@
-internal class GALogger // TypeDefIndex: 5676
+internal class GALogger // TypeDefIndex: 5678
 {
 	private static readonly GALogger _instance; 
 

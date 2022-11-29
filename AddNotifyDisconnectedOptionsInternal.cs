@@ -1,4 +1,4 @@
-internal struct AddNotifyDisconnectedOptionsInternal : ISettable<AddNotifyDisconnectedOptions>, IDisposable // TypeDefIndex: 8751
+internal struct AddNotifyDisconnectedOptionsInternal : ISettable<AddNotifyDisconnectedOptions>, IDisposable // TypeDefIndex: 8760
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

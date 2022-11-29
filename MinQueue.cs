@@ -1,4 +1,4 @@
-public class MinQueue // TypeDefIndex: 4813
+public class MinQueue // TypeDefIndex: 4815
 {
 	private Deque<int> data; 
 	private Deque<int> min; 

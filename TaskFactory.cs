@@ -55,39 +55,39 @@ private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex:
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass35_0<PublishResult>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<bool>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<int>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<UdpReceiveResult>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<ServerInfo>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<Image>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<InventoryPurchaseResult>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<InventoryResult>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<Item>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<ResultPage>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<int>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<Int32Enum>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<object>..ctor
-	|-TaskFactory.<>c__DisplayClass35_0<VoidTaskResult>..ctor
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
-	internal void <FromAsyncImpl>b__0(IAsyncResult iar) { }
+	internal void <FromAsyncImpl>
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass35_0<PublishResult>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<bool>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<int>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<UdpReceiveResult>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<ServerInfo>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<Image>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<InventoryPurchaseResult>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<InventoryResult>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<Item>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<ResultPage>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<int>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<Nullable<Int32Enum>>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<object>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass35_0<VoidTaskResult>.<FromAsyncImpl>b__0
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
 }
@@ -95,45 +95,45 @@ private sealed class TaskFactory.<>c__DisplayClass35_0<TResult> // TypeDefIndex:
 private sealed class TaskFactory.<>c__DisplayClass35_1<TResult> // TypeDefIndex: 848
 {
 	public AtomicBoolean invoked; 
-	public TaskFactory.<>c__DisplayClass35_0<TResult> CS$<>8__locals1; 
+	public TaskFactory.<>c
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass35_1<PublishResult>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<bool>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<int>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<UdpReceiveResult>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<ServerInfo>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<Image>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<InventoryPurchaseResult>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<InventoryResult>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<Item>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<ResultPage>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<int>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<Int32Enum>>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<object>..ctor
-	|-TaskFactory.<>c__DisplayClass35_1<VoidTaskResult>..ctor
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
-	internal void <FromAsyncImpl>b__1(IAsyncResult iar) { }
+	internal void <FromAsyncImpl>
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass35_1<PublishResult>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<bool>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<int>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<UdpReceiveResult>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<ServerInfo>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<Image>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<InventoryPurchaseResult>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<InventoryResult>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<Item>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<ResultPage>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<int>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<Nullable<Int32Enum>>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<object>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass35_1<VoidTaskResult>.<FromAsyncImpl>b__1
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
 }
@@ -148,15 +148,15 @@ private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> //
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass41_0<int, object, int>..ctor
-	|-TaskFactory.<>c__DisplayClass41_0<object, object, object>..ctor
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
-	internal void <FromAsyncImpl>b__0(IAsyncResult iar) { }
+	internal void <FromAsyncImpl>
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass41_0<int, object, int>.<FromAsyncImpl>b__0
-	|-TaskFactory.<>c__DisplayClass41_0<object, object, object>.<FromAsyncImpl>b__0
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
 }
@@ -164,21 +164,21 @@ private sealed class TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> //
 private sealed class TaskFactory.<>c__DisplayClass41_1<TResult, TArg1, TArg2> // TypeDefIndex: 850
 {
 	public AtomicBoolean invoked; 
-	public TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2> CS$<>8__locals1; 
+	public TaskFactory.<>c
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass41_1<int, object, int>..ctor
-	|-TaskFactory.<>c__DisplayClass41_1<object, object, object>..ctor
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
-	internal void <FromAsyncImpl>b__1(IAsyncResult iar) { }
+	internal void <FromAsyncImpl>
 	/* GenericInstMethod :
 	|
-	|-TaskFactory.<>c__DisplayClass41_1<int, object, int>.<FromAsyncImpl>b__1
-	|-TaskFactory.<>c__DisplayClass41_1<object, object, object>.<FromAsyncImpl>b__1
+	|-TaskFactory.<>c
+	|-TaskFactory.<>c
 	*/
 
 }

@@ -1,4 +1,4 @@
-public enum LocalPhysicsMode // TypeDefIndex: 3660
+public enum LocalPhysicsMode // TypeDefIndex: 3661
 {
 	public int value__; 
 	public const LocalPhysicsMode None = 0;

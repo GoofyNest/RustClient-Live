@@ -1,4 +1,4 @@
-public class PushbackStream // TypeDefIndex: 7403
+public class PushbackStream // TypeDefIndex: 7409
 {
 	private readonly int _BackBufferSize; 
 	private readonly CircularByteBuffer _CircularByteBuffer; 

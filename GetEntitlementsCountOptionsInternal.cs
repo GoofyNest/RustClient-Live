@@ -1,4 +1,4 @@
-internal struct GetEntitlementsCountOptionsInternal : ISettable<GetEntitlementsCountOptions>, IDisposable // TypeDefIndex: 9453
+internal struct GetEntitlementsCountOptionsInternal : ISettable<GetEntitlementsCountOptions>, IDisposable // TypeDefIndex: 9462
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

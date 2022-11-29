@@ -1,4 +1,4 @@
-public class Gradient : IEquatable<Gradient> // TypeDefIndex: 3464
+public class Gradient : IEquatable<Gradient> // TypeDefIndex: 3465
 {
 	internal IntPtr m_Ptr; 
 

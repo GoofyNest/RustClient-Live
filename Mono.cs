@@ -1343,7 +1343,7 @@ private class MonoChunkStream.Chunk // TypeDefIndex: 3016
 
 }
 
-public class MonoBehaviour : Behaviour // TypeDefIndex: 3520
+public class MonoBehaviour : Behaviour // TypeDefIndex: 3521
 {
 	public bool useGUILayout { get; set; }
 
@@ -1416,7 +1416,7 @@ public class MonoBehaviour : Behaviour // TypeDefIndex: 3520
 
 }
 
-internal class MonoTODOAttribute : Attribute // TypeDefIndex: 3977
+internal class MonoTODOAttribute : Attribute // TypeDefIndex: 3979
 {
 
 [AttributeUsageAttribute] 
@@ -1430,21 +1430,21 @@ internal class MonoTODOAttribute : Attribute
 
 }
 
-internal class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 5260
+internal class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 5262
 {
 
 	public void .ctor() { }
 
 }
 
-internal static class Mono // TypeDefIndex: 6232
+internal static class Mono // TypeDefIndex: 6234
 {
 
 	internal static void FixHttpsValidation() { }
 
 }
 
-private sealed class Mono.<>c // TypeDefIndex: 6233
+private sealed class Mono.<>c // TypeDefIndex: 6235
 {
 	public static readonly Mono.<>c <>9; 
 	public static RemoteCertificateValidationCallback <>9__0_0; 
@@ -1454,11 +1454,11 @@ private sealed class Mono.<>c // TypeDefIndex: 6233
 
 	public void .ctor() { }
 
-	internal bool <FixHttpsValidation>b__0_0(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { }
+	internal bool <FixHttpsValidation>
 
 }
 
-public abstract class MonoEncoding : Encoding // TypeDefIndex: 7381
+public abstract class MonoEncoding : Encoding // TypeDefIndex: 7387
 {
 	private readonly int win_code_page; 
 
@@ -1489,7 +1489,7 @@ public abstract class MonoEncoding : Encoding // TypeDefIndex: 7381
 
 }
 
-public abstract class MonoEncoder : Encoder // TypeDefIndex: 7382
+public abstract class MonoEncoder : Encoder // TypeDefIndex: 7388
 {
 	private MonoEncoding encoding; 
 
@@ -1510,7 +1510,7 @@ public abstract class MonoEncoder : Encoder // TypeDefIndex: 7382
 
 }
 
-internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8267
+internal sealed class MonoPInvokeCallbackAttribute : Attribute // TypeDefIndex: 8276
 {
 
 	public void .ctor(Type type) { }

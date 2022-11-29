@@ -1,4 +1,4 @@
-public class LifeScale : BaseMonoBehaviour // TypeDefIndex: 11359
+public class LifeScale : BaseMonoBehaviour // TypeDefIndex: 11373
 {
 	private bool initialized; 
 	private Vector3 initialScale; 

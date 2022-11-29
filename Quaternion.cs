@@ -1,4 +1,4 @@
-public struct Quaternion : IEquatable<Quaternion> // TypeDefIndex: 3468
+public struct Quaternion : IEquatable<Quaternion> // TypeDefIndex: 3469
 {
 	public float x; 
 	public float y; 
@@ -106,7 +106,7 @@ public struct Quaternion : IEquatable<Quaternion> // TypeDefIndex: 3468
 
 }
 
-public struct quaternion : IEquatable<quaternion>, IFormattable // TypeDefIndex: 7148
+public struct quaternion : IEquatable<quaternion>, IFormattable // TypeDefIndex: 7152
 {
 
 [Serializable]

@@ -1,4 +1,4 @@
-public sealed class Font : Object // TypeDefIndex: 3962
+public sealed class Font : Object // TypeDefIndex: 3964
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -37,7 +37,7 @@ public sealed class Font : Object // TypeDefIndex: 3962
 
 }
 
-public sealed class Font.FontTextureRebuildCallback : MulticastDelegate // TypeDefIndex: 3963
+public sealed class Font.FontTextureRebuildCallback : MulticastDelegate // TypeDefIndex: 3965
 {
 
 	public void .ctor(object object, IntPtr method) { }

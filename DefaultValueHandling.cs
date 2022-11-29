@@ -1,4 +1,4 @@
-public enum DefaultValueHandling // TypeDefIndex: 5891
+public enum DefaultValueHandling // TypeDefIndex: 5893
 {
 	public int value__; 
 	public const DefaultValueHandling Include = 0;

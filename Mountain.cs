@@ -1,4 +1,4 @@
-public class Mountain : TerrainPlacement // TypeDefIndex: 12320
+public class Mountain : TerrainPlacement // TypeDefIndex: 12340
 {
 	public float Fade; 
 
@@ -21,7 +21,7 @@ public class Mountain : TerrainPlacement // TypeDefIndex: 12320
 
 }
 
-private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 12321
+private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 12341
 {
 	public Matrix4x4 worldToLocal; 
 	public Mountain <>4__this; 
@@ -31,11 +31,11 @@ private sealed class Mountain.<>c__DisplayClass2_0 // TypeDefIndex: 12321
 
 	public void .ctor() { }
 
-	internal void <ApplyHeight>b__0(int x, int z) { }
+	internal void <ApplyHeight>
 
 }
 
-private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 12322
+private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 12342
 {
 	public Matrix4x4 worldToLocal; 
 	public Mountain <>4__this; 
@@ -55,11 +55,11 @@ private sealed class Mountain.<>c__DisplayClass3_0 // TypeDefIndex: 12322
 
 	public void .ctor() { }
 
-	internal void <ApplySplat>b__0(int x, int z) { }
+	internal void <ApplySplat>
 
 }
 
-private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 12323
+private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 12343
 {
 	public Matrix4x4 worldToLocal; 
 	public Mountain <>4__this; 
@@ -74,11 +74,11 @@ private sealed class Mountain.<>c__DisplayClass5_0 // TypeDefIndex: 12323
 
 	public void .ctor() { }
 
-	internal void <ApplyBiome>b__0(int x, int z) { }
+	internal void <ApplyBiome>
 
 }
 
-private sealed class Mountain.<>c__DisplayClass6_0 // TypeDefIndex: 12324
+private sealed class Mountain.<>c__DisplayClass6_0 // TypeDefIndex: 12344
 {
 	public Matrix4x4 worldToLocal; 
 	public Mountain <>4__this; 
@@ -87,7 +87,7 @@ private sealed class Mountain.<>c__DisplayClass6_0 // TypeDefIndex: 12324
 
 	public void .ctor() { }
 
-	internal void <ApplyTopology>b__0(int x, int z) { }
+	internal void <ApplyTopology>
 
 }
 

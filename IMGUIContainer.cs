@@ -1,4 +1,4 @@
-public class IMGUIContainer : VisualElement // TypeDefIndex: 4594
+public class IMGUIContainer : VisualElement // TypeDefIndex: 4596
 {
 	private Action m_OnGUIHandler; 
 	private ObjectGUIState m_ObjectGUIState; 
@@ -74,7 +74,7 @@ public class IMGUIContainer : VisualElement // TypeDefIndex: 4594
 
 }
 
-private struct IMGUIContainer.GUIGlobals // TypeDefIndex: 4595
+private struct IMGUIContainer.GUIGlobals // TypeDefIndex: 4597
 {
 	public Matrix4x4 matrix; 
 	public Color color; 

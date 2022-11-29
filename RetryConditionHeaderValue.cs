@@ -1,4 +1,4 @@
-public class RetryConditionHeaderValue : ICloneable // TypeDefIndex: 5811
+public class RetryConditionHeaderValue : ICloneable // TypeDefIndex: 5813
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<DateTimeOffset> <Date>k__BackingField; 

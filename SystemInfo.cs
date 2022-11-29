@@ -1,4 +1,4 @@
-public sealed class SystemInfo // TypeDefIndex: 3558
+public sealed class SystemInfo // TypeDefIndex: 3559
 {
 	public static BatteryStatus batteryStatus { get; }
 	public static string operatingSystem { get; }

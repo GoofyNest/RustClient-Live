@@ -1,4 +1,4 @@
-public class Scrollbar : Selectable, IBeginDragHandler, IEventSystemHandler, IDragHandler, IInitializePotentialDragHandler, ICanvasElement // TypeDefIndex: 5002
+public class Scrollbar : Selectable, IBeginDragHandler, IEventSystemHandler, IDragHandler, IInitializePotentialDragHandler, ICanvasElement // TypeDefIndex: 5004
 {
 	[SerializeField] 
 	private RectTransform m_HandleRect; 
@@ -123,7 +123,7 @@ public class Scrollbar : Selectable, IBeginDragHandler, IEventSystemHandler, IDr
 
 }
 
-public enum Scrollbar.Direction // TypeDefIndex: 5003
+public enum Scrollbar.Direction // TypeDefIndex: 5005
 {
 	public int value__; 
 	public const Scrollbar.Direction LeftToRight = 0;
@@ -133,14 +133,14 @@ public enum Scrollbar.Direction // TypeDefIndex: 5003
 
 }
 
-public class Scrollbar.ScrollEvent : UnityEvent<float> // TypeDefIndex: 5004
+public class Scrollbar.ScrollEvent : UnityEvent<float> // TypeDefIndex: 5006
 {
 
 	public void .ctor() { }
 
 }
 
-private enum Scrollbar.Axis // TypeDefIndex: 5005
+private enum Scrollbar.Axis // TypeDefIndex: 5007
 {
 	public int value__; 
 	public const Scrollbar.Axis Horizontal = 0;
@@ -148,7 +148,7 @@ private enum Scrollbar.Axis // TypeDefIndex: 5005
 
 }
 
-private sealed class Scrollbar.<ClickRepeat>d__57 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5006
+private sealed class Scrollbar.<ClickRepeat>d__57 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5008
 {
 	private int <>1__state; 
 	private object <>2__current; 

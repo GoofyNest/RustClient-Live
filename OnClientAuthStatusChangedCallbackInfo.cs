@@ -1,4 +1,4 @@
-public struct OnClientAuthStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 9782
+public struct OnClientAuthStatusChangedCallbackInfo : ICallbackInfo // TypeDefIndex: 9791
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 

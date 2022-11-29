@@ -1,4 +1,4 @@
-public enum Priority // TypeDefIndex: 6868
+public enum Priority // TypeDefIndex: 6872
 {
 	public int value__; 
 	public const Priority Immediate = 0;

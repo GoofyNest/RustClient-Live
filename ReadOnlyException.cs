@@ -1,4 +1,4 @@
-public class ReadOnlyException : DataException // TypeDefIndex: 4201
+public class ReadOnlyException : DataException // TypeDefIndex: 4203
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

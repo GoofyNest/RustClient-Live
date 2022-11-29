@@ -1,4 +1,4 @@
-public class WaterBody : MonoBehaviour // TypeDefIndex: 12327
+public class WaterBody : MonoBehaviour // TypeDefIndex: 12347
 {
 	public WaterBodyType Type; 
 	public Renderer Renderer; 
@@ -101,7 +101,7 @@ public class WaterBody : MonoBehaviour // TypeDefIndex: 12327
 
 }
 
-public enum WaterBody.FishingTag // TypeDefIndex: 12328
+public enum WaterBody.FishingTag // TypeDefIndex: 12348
 {
 	public int value__; 
 	public const WaterBody.FishingTag MoonPool = 1;

@@ -77,7 +77,7 @@ private sealed class MSCompatUnicodeTable.<>c // TypeDefIndex: 36
 
 	public void .ctor() { }
 
-	internal int <BuildTailoringTables>b__17_0(Level2Map a, Level2Map b) { }
+	internal int <BuildTailoringTables>
 
 }
 

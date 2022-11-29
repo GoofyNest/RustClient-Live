@@ -1,4 +1,4 @@
-internal struct PresenceModificationDataRecordIdInternal : IGettable<PresenceModificationDataRecordId>, ISettable<PresenceModificationDataRecordId>, IDisposable // TypeDefIndex: 8837
+internal struct PresenceModificationDataRecordIdInternal : IGettable<PresenceModificationDataRecordId>, ISettable<PresenceModificationDataRecordId>, IDisposable // TypeDefIndex: 8846
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Key; 

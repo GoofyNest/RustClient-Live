@@ -1,4 +1,4 @@
-public sealed class EndOfTrackEvent : MetaEvent // TypeDefIndex: 7544
+public sealed class EndOfTrackEvent : MetaEvent // TypeDefIndex: 7550
 {
 
 	internal void .ctor() { }

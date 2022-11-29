@@ -1,4 +1,4 @@
-public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // TypeDefIndex: 10078
+public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // TypeDefIndex: 10089
 {
 	private Option __menuOption_Menu_ChangeText; 
 	private Option __menuOption_Menu_LockSign; 
@@ -111,7 +111,7 @@ public class CarvablePumpkin : BaseOven, ILOD, ISignage, IUGCBrowserEntity // Ty
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_ChangeText>b__21_0(int i, Texture2D x) { }
+	private void <Menu_ChangeText>
 
 }
 

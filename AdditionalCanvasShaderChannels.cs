@@ -1,4 +1,4 @@
-public enum AdditionalCanvasShaderChannels // TypeDefIndex: 4738
+public enum AdditionalCanvasShaderChannels // TypeDefIndex: 4740
 {
 	public int value__; 
 	public const AdditionalCanvasShaderChannels None = 0;

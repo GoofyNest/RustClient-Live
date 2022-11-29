@@ -1,4 +1,4 @@
-public static class PlaybackStats // TypeDefIndex: 6654
+public static class PlaybackStats // TypeDefIndex: 6658
 {
 	public static int Frames; 
 	public static int Packets; 

@@ -1,4 +1,4 @@
-public sealed class OnWriteFileDataCallback : MulticastDelegate // TypeDefIndex: 8899
+public sealed class OnWriteFileDataCallback : MulticastDelegate // TypeDefIndex: 8908
 {
 
 	public void .ctor(object object, IntPtr method) { }

@@ -1,4 +1,4 @@
-internal class PointerEventDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4689
+internal class PointerEventDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4691
 {
 
 	public bool CanDispatchEvent(EventBase evt) { }

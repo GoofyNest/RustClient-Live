@@ -1,4 +1,4 @@
-internal sealed class StreamWrapper : Stream // TypeDefIndex: 7644
+internal sealed class StreamWrapper : Stream // TypeDefIndex: 7650
 {
 	private readonly Stream _stream; 
 	private readonly CircularBuffer<byte> _buffer; 

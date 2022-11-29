@@ -1,4 +1,4 @@
-public class PieMenu : UIBehaviour // TypeDefIndex: 12944
+public class PieMenu : UIBehaviour // TypeDefIndex: 12972
 {
 	public static PieMenu Instance; 
 	public Image middleBox; 
@@ -75,7 +75,7 @@ public class PieMenu : UIBehaviour // TypeDefIndex: 12944
 
 }
 
-public class PieMenu.MenuOption // TypeDefIndex: 12945
+public class PieMenu.MenuOption // TypeDefIndex: 12973
 {
 	public string name; 
 	public string desc; 
@@ -95,14 +95,14 @@ public class PieMenu.MenuOption // TypeDefIndex: 12945
 
 }
 
-public struct PieMenu.MenuOption.ColorMode // TypeDefIndex: 12946
+public struct PieMenu.MenuOption.ColorMode // TypeDefIndex: 12974
 {
 	public PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption Mode; 
 	public Color CustomColor; 
 
 }
 
-public enum PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption // TypeDefIndex: 12947
+public enum PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption // TypeDefIndex: 12975
 {
 	public int value__; 
 	public const PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption CustomColor = 0;
@@ -110,7 +110,7 @@ public enum PieMenu.MenuOption.ColorMode.PieMenuSpriteColorOption // TypeDefInde
 
 }
 
-private sealed class PieMenu.<>c // TypeDefIndex: 12948
+private sealed class PieMenu.<>c // TypeDefIndex: 12976
 {
 	public static readonly PieMenu.<>c <>9; 
 	public static Func<PieMenu.MenuOption, int> <>9__43_0; 
@@ -121,9 +121,9 @@ private sealed class PieMenu.<>c // TypeDefIndex: 12948
 
 	public void .ctor() { }
 
-	internal int <Rebuild>b__43_0(PieMenu.MenuOption x) { }
+	internal int <Rebuild>
 
-	internal bool <Rebuild>b__43_1(PieMenu.MenuOption x) { }
+	internal bool <Rebuild>
 
 }
 

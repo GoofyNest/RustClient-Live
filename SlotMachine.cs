@@ -1,4 +1,4 @@
-public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6411
+public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6413
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -68,7 +68,7 @@ public class SlotMachine : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 64
 
 }
 
-public class SlotMachine : BaseMountable // TypeDefIndex: 10154
+public class SlotMachine : BaseMountable // TypeDefIndex: 10165
 {
 	private Option __menuOption_Menu_Deposit; 
 	private Option __menuOption_Menu_Spin; 
@@ -101,6 +101,7 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10154
 	private const BaseEntity.Flags HasScrapForSpin = 128;
 	private const BaseEntity.Flags IsSpinningFlag = 256;
 	public Material PayoutIconMaterial; 
+	public bool UseTimeOfDayAdjustedSprite; 
 	public MeshRenderer[] PulseRenderers; 
 	public float PulseSpeed; 
 	[ColorUsageAttribute] 
@@ -110,8 +111,6 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10154
 	[CompilerGeneratedAttribute] 
 	private int <CurrentMultiplier>k__BackingField; 
 	private TimeSince lastWin; 
-	[CompilerGeneratedAttribute] 
-	private static Material <instancedSpriteMaterial>k__BackingField; 
 	private Material instancedPulseMaterial; 
 	private TimeSince pulseTime; 
 	private float pulseFor; 
@@ -121,7 +120,6 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10154
 	public override bool HasMenuOptions { get; }
 	private bool IsSpinning { get; }
 	public int CurrentMultiplier { get; set; }
-	public static Material instancedSpriteMaterial { get; set; }
 
 
 	public override void GetMenuOptions(List<Option> list) { }
@@ -137,12 +135,6 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10154
 
 	[CompilerGeneratedAttribute] 
 	private void set_CurrentMultiplier(int value) { }
-
-	[CompilerGeneratedAttribute] 
-	public static Material get_instancedSpriteMaterial() { }
-
-	[CompilerGeneratedAttribute] 
-	private static void set_instancedSpriteMaterial(Material value) { }
 
 	protected override bool HideMenuItems(BasePlayer player) { }
 
@@ -165,8 +157,6 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10154
 	public bool Menu_Deposit_ShowIf(BasePlayer player) { }
 
 	protected override void ClientInit(Entity info) { }
-
-	private void UpdateSpriteMaterial() { }
 
 	private void UpdatePulse() { }
 
@@ -197,7 +187,7 @@ public class SlotMachine : BaseMountable // TypeDefIndex: 10154
 
 }
 
-public enum SlotMachine.SlotFaces // TypeDefIndex: 10155
+public enum SlotMachine.SlotFaces // TypeDefIndex: 10166
 {
 	public int value__; 
 	public const SlotMachine.SlotFaces Scrap = 0;

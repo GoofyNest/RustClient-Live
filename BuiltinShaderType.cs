@@ -1,4 +1,4 @@
-public enum BuiltinShaderType // TypeDefIndex: 3834
+public enum BuiltinShaderType // TypeDefIndex: 3835
 {
 	public int value__; 
 	public const BuiltinShaderType DeferredShading = 0;

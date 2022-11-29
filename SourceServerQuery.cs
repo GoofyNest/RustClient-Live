@@ -1,4 +1,4 @@
-internal static class SourceServerQuery // TypeDefIndex: 5262
+internal static class SourceServerQuery // TypeDefIndex: 5264
 {
 	private static readonly byte[] A2S_SERVERQUERY_GETCHALLENGE; 
 	private static readonly Dictionary<IPEndPoint, Task<Dictionary<string, string>>> PendingQueries; 
@@ -27,18 +27,18 @@ internal static class SourceServerQuery // TypeDefIndex: 5262
 
 }
 
-private sealed class SourceServerQuery.<>c__DisplayClass3_0 // TypeDefIndex: 5263
+private sealed class SourceServerQuery.<>c__DisplayClass3_0 // TypeDefIndex: 5265
 {
 	public IPEndPoint endpoint; 
 
 
 	public void .ctor() { }
 
-	internal Task<Dictionary<string, string>> <GetRules>b__0(Task<Dictionary<string, string>> t) { }
+	internal Task<Dictionary<string, string>> <GetRules>
 
 }
 
-private struct SourceServerQuery.<GetRulesImpl>d__4 : IAsyncStateMachine // TypeDefIndex: 5264
+private struct SourceServerQuery.<GetRulesImpl>d__4 : IAsyncStateMachine // TypeDefIndex: 5266
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder; 
@@ -54,7 +54,7 @@ private struct SourceServerQuery.<GetRulesImpl>d__4 : IAsyncStateMachine // Type
 
 }
 
-private struct SourceServerQuery.<GetRules>d__5 : IAsyncStateMachine // TypeDefIndex: 5265
+private struct SourceServerQuery.<GetRules>d__5 : IAsyncStateMachine // TypeDefIndex: 5267
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Dictionary<string, string>> <>t__builder; 
@@ -70,7 +70,7 @@ private struct SourceServerQuery.<GetRules>d__5 : IAsyncStateMachine // TypeDefI
 
 }
 
-private sealed class SourceServerQuery.<>c // TypeDefIndex: 5266
+private sealed class SourceServerQuery.<>c // TypeDefIndex: 5268
 {
 	public static readonly SourceServerQuery.<>c <>9; 
 	public static Func<byte[], bool> <>9__6_0; 
@@ -81,13 +81,13 @@ private sealed class SourceServerQuery.<>c // TypeDefIndex: 5266
 
 	public void .ctor() { }
 
-	internal bool <Receive>b__6_0(byte[] p) { }
+	internal bool <Receive>
 
-	internal int <Combine>b__9_0(byte[] a) { }
+	internal int <Combine>
 
 }
 
-private struct SourceServerQuery.<Receive>d__6 : IAsyncStateMachine // TypeDefIndex: 5267
+private struct SourceServerQuery.<Receive>d__6 : IAsyncStateMachine // TypeDefIndex: 5269
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<byte[]> <>t__builder; 
@@ -103,7 +103,7 @@ private struct SourceServerQuery.<Receive>d__6 : IAsyncStateMachine // TypeDefIn
 
 }
 
-private struct SourceServerQuery.<GetChallengeData>d__7 : IAsyncStateMachine // TypeDefIndex: 5268
+private struct SourceServerQuery.<GetChallengeData>d__7 : IAsyncStateMachine // TypeDefIndex: 5270
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<byte[]> <>t__builder; 
@@ -119,7 +119,7 @@ private struct SourceServerQuery.<GetChallengeData>d__7 : IAsyncStateMachine // 
 
 }
 
-private struct SourceServerQuery.<Send>d__8 : IAsyncStateMachine // TypeDefIndex: 5269
+private struct SourceServerQuery.<Send>d__8 : IAsyncStateMachine // TypeDefIndex: 5271
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

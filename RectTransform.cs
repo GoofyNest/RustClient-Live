@@ -1,4 +1,4 @@
-public sealed class RectTransform : Transform // TypeDefIndex: 3567
+public sealed class RectTransform : Transform // TypeDefIndex: 3568
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -92,7 +92,7 @@ public sealed class RectTransform : Transform // TypeDefIndex: 3567
 
 }
 
-public enum RectTransform.Edge // TypeDefIndex: 3568
+public enum RectTransform.Edge // TypeDefIndex: 3569
 {
 	public int value__; 
 	public const RectTransform.Edge Left = 0;
@@ -102,7 +102,7 @@ public enum RectTransform.Edge // TypeDefIndex: 3568
 
 }
 
-public enum RectTransform.Axis // TypeDefIndex: 3569
+public enum RectTransform.Axis // TypeDefIndex: 3570
 {
 	public int value__; 
 	public const RectTransform.Axis Horizontal = 0;
@@ -110,7 +110,7 @@ public enum RectTransform.Axis // TypeDefIndex: 3569
 
 }
 
-public sealed class RectTransform.ReapplyDrivenProperties : MulticastDelegate // TypeDefIndex: 3570
+public sealed class RectTransform.ReapplyDrivenProperties : MulticastDelegate // TypeDefIndex: 3571
 {
 
 	public void .ctor(object object, IntPtr method) { }

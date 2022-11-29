@@ -1,4 +1,4 @@
-public class WaterGerstner // TypeDefIndex: 12341
+public class WaterGerstner // TypeDefIndex: 12361
 {
 	public const int WaveCount = 6;
 
@@ -33,7 +33,7 @@ public class WaterGerstner // TypeDefIndex: 12341
 
 }
 
-public class WaterGerstner.WaveParams // TypeDefIndex: 12342
+public class WaterGerstner.WaveParams // TypeDefIndex: 12362
 {
 	[RangeAttribute] 
 	public float Angle; 
@@ -49,7 +49,7 @@ public class WaterGerstner.WaveParams // TypeDefIndex: 12342
 
 }
 
-public class WaterGerstner.ShoreWaveParams // TypeDefIndex: 12343
+public class WaterGerstner.ShoreWaveParams // TypeDefIndex: 12363
 {
 	[RangeAttribute] 
 	public float Steepness; 
@@ -68,7 +68,7 @@ public class WaterGerstner.ShoreWaveParams // TypeDefIndex: 12343
 
 }
 
-public struct WaterGerstner.PrecomputedWave // TypeDefIndex: 12344
+public struct WaterGerstner.PrecomputedWave // TypeDefIndex: 12364
 {
 	public float Angle; 
 	public Vector2 Direction; 
@@ -83,7 +83,7 @@ public struct WaterGerstner.PrecomputedWave // TypeDefIndex: 12344
 
 }
 
-public struct WaterGerstner.PrecomputedShoreWaves // TypeDefIndex: 12345
+public struct WaterGerstner.PrecomputedShoreWaves // TypeDefIndex: 12365
 {
 	public Vector2[] Directions; 
 	public float Steepness; 

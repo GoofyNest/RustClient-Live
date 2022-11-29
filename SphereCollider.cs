@@ -1,4 +1,4 @@
-public class SphereCollider : Collider // TypeDefIndex: 3929
+public class SphereCollider : Collider // TypeDefIndex: 3931
 {
 	public Vector3 center { get; set; }
 	public float radius { get; set; }

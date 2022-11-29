@@ -1,4 +1,4 @@
-public struct Editor // TypeDefIndex: 5278
+public struct Editor // TypeDefIndex: 5280
 {
 	private PublishedFileId fileId; 
 	private bool creatingNew; 
@@ -44,7 +44,7 @@ public struct Editor // TypeDefIndex: 5278
 
 }
 
-private struct Editor.<SubmitAsync>d__40 : IAsyncStateMachine // TypeDefIndex: 5279
+private struct Editor.<SubmitAsync>d__40 : IAsyncStateMachine // TypeDefIndex: 5281
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<PublishResult> <>t__builder; 
@@ -65,7 +65,7 @@ private struct Editor.<SubmitAsync>d__40 : IAsyncStateMachine // TypeDefIndex: 5
 
 }
 
-public class Editor : ConsoleSystem // TypeDefIndex: 13659
+public class Editor : ConsoleSystem // TypeDefIndex: 13697
 {
 
 	public void .ctor() { }

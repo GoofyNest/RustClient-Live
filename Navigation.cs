@@ -1,4 +1,4 @@
-public struct Navigation : IEquatable<Navigation> // TypeDefIndex: 4994
+public struct Navigation : IEquatable<Navigation> // TypeDefIndex: 4996
 {
 	[SerializeField] 
 	private Navigation.Mode m_Mode; 
@@ -45,7 +45,7 @@ public struct Navigation : IEquatable<Navigation> // TypeDefIndex: 4994
 
 }
 
-public enum Navigation.Mode // TypeDefIndex: 4995
+public enum Navigation.Mode // TypeDefIndex: 4997
 {
 	public int value__; 
 	public const Navigation.Mode None = 0;

@@ -1,4 +1,4 @@
-internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9587
+internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9596
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Credentials; 
@@ -20,7 +20,7 @@ internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // T
 
 }
 
-internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9664
+internal struct LoginOptionsInternal : ISettable<LoginOptions>, IDisposable // TypeDefIndex: 9673
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Credentials; 

@@ -1,4 +1,4 @@
-public struct FrameData // TypeDefIndex: 3861
+public struct FrameData // TypeDefIndex: 3862
 {
 	internal ulong m_FrameID; 
 	internal double m_DeltaTime; 
@@ -12,7 +12,7 @@ public struct FrameData // TypeDefIndex: 3861
 
 }
 
-internal enum FrameData.Flags // TypeDefIndex: 3862
+internal enum FrameData.Flags // TypeDefIndex: 3863
 {
 	public int value__; 
 	public const FrameData.Flags Evaluate = 1;

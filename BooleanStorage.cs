@@ -1,4 +1,4 @@
-internal sealed class BooleanStorage : DataStorage // TypeDefIndex: 4369
+internal sealed class BooleanStorage : DataStorage // TypeDefIndex: 4371
 {
 	private bool[] _values; 
 

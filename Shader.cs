@@ -1,4 +1,4 @@
-public sealed class Shader : Object // TypeDefIndex: 3405
+public sealed class Shader : Object // TypeDefIndex: 3406
 {
 	[NativePropertyAttribute] 
 	public static int globalMaximumLOD { get; set; }

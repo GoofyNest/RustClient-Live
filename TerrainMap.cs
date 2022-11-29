@@ -1,4 +1,4 @@
-public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12138
+public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12158
 {
 	internal int res; 
 
@@ -41,7 +41,7 @@ public abstract class TerrainMap : TerrainExtension // TypeDefIndex: 12138
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12139
+private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12159
 {
 	public Vector2i base_min; 
 	public Vector2i base_count; 
@@ -54,11 +54,11 @@ private sealed class TerrainMap.<>c__DisplayClass5_0 // TypeDefIndex: 12139
 
 	public void .ctor() { }
 
-	internal void <ForEachParallel>b__0(int thread_id, int thread_count) { }
+	internal void <ForEachParallel>
 
 }
 
-private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12140
+private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12160
 {
 	public Vector2i base_min; 
 	public Vector2i size_y; 
@@ -73,7 +73,7 @@ private sealed class TerrainMap.<>c__DisplayClass10_0 // TypeDefIndex: 12140
 
 	public void .ctor() { }
 
-	internal void <ForEachParallel>b__0(int thread_id, int thread_count) { }
+	internal void <ForEachParallel>
 
 }
 

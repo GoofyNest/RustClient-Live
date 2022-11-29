@@ -1,4 +1,4 @@
-public class RigidbodyLOD : LODComponent // TypeDefIndex: 11677
+public class RigidbodyLOD : LODComponent // TypeDefIndex: 11695
 {
 	public float Distance; 
 	private Rigidbody rigidbody; 

@@ -1,4 +1,4 @@
-internal struct KickOptionsInternal : ISettable<KickOptions>, IDisposable // TypeDefIndex: 8732
+internal struct KickOptionsInternal : ISettable<KickOptions>, IDisposable // TypeDefIndex: 8741
 {
 	private int m_ApiVersion; 
 	private IntPtr m_RoomName; 

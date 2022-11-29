@@ -1,4 +1,4 @@
-internal struct FriendsGroupID_t : IEquatable<FriendsGroupID_t>, IComparable<FriendsGroupID_t> // TypeDefIndex: 5528
+internal struct FriendsGroupID_t : IEquatable<FriendsGroupID_t>, IComparable<FriendsGroupID_t> // TypeDefIndex: 5530
 {
 	public short Value; 
 

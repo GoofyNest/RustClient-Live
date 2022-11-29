@@ -338,7 +338,7 @@ private sealed class BigInteger.Kernel // TypeDefIndex: 1766
 
 }
 
-public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, IEquatable<BigInteger> // TypeDefIndex: 3966
+public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, IEquatable<BigInteger> // TypeDefIndex: 3968
 {
 	internal readonly int _sign; 
 	internal readonly uint[] _bits; 
@@ -481,7 +481,7 @@ public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, I
 
 }
 
-private enum BigInteger.GetBytesMode // TypeDefIndex: 3967
+private enum BigInteger.GetBytesMode // TypeDefIndex: 3969
 {
 	public int value__; 
 	public const BigInteger.GetBytesMode AllocateArray = 0;

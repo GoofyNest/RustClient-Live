@@ -1,4 +1,4 @@
-public struct PhysicsScene : IEquatable<PhysicsScene> // TypeDefIndex: 3936
+public struct PhysicsScene : IEquatable<PhysicsScene> // TypeDefIndex: 3938
 {
 	private int m_Handle; 
 

@@ -1,4 +1,4 @@
-public class InternalDataCollectionBase : ICollection, IEnumerable // TypeDefIndex: 4170
+public class InternalDataCollectionBase : ICollection, IEnumerable // TypeDefIndex: 4172
 {
 	internal static readonly CollectionChangeEventArgs s_refreshEventArgs; 
 

@@ -1,4 +1,4 @@
-internal class YogaNode // TypeDefIndex: 4582
+internal class YogaNode // TypeDefIndex: 4584
 {
 	internal IntPtr _ygNode; 
 	private MeasureFunction _measureFunction; 

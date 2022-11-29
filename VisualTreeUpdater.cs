@@ -1,4 +1,4 @@
-internal sealed class VisualTreeUpdater // TypeDefIndex: 4621
+internal sealed class VisualTreeUpdater // TypeDefIndex: 4623
 {
 	private VisualTreeUpdater.UpdaterArray m_UpdaterArray; 
 
@@ -9,7 +9,7 @@ internal sealed class VisualTreeUpdater // TypeDefIndex: 4621
 
 }
 
-private class VisualTreeUpdater.UpdaterArray // TypeDefIndex: 4622
+private class VisualTreeUpdater.UpdaterArray // TypeDefIndex: 4624
 {
 	private IVisualTreeUpdater[] m_VisualTreeUpdaters; 
 

@@ -1,4 +1,4 @@
-public class UnityException : Exception // TypeDefIndex: 3530
+public class UnityException : Exception // TypeDefIndex: 3531
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class ERCrossings : MonoBehaviour // TypeDefIndex: 7177
+public class ERCrossings : MonoBehaviour // TypeDefIndex: 7181
 {
 	[SerializeField] 
 	public ERConnectionData cdata; 
@@ -236,7 +236,7 @@ public class ERCrossings : MonoBehaviour // TypeDefIndex: 7177
 
 }
 
-private sealed class ERCrossings.ᙃ // TypeDefIndex: 7178
+private sealed class ERCrossings.ᙃ // TypeDefIndex: 7182
 {
 	public static readonly ERCrossings.ᙃ <>9; 
 	public static Comparison<ERConnectionSibling> <>9__203_0; 
@@ -246,7 +246,7 @@ private sealed class ERCrossings.ᙃ // TypeDefIndex: 7178
 
 	public void .ctor() { }
 
-	internal int <OQDOOCDOCD>b__203_0(ERConnectionSibling x, ERConnectionSibling y) { }
+	internal int <OQDOOCDOCD>
 
 }
 

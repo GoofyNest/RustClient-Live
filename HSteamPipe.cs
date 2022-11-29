@@ -1,4 +1,4 @@
-internal struct HSteamPipe : IEquatable<HSteamPipe>, IComparable<HSteamPipe> // TypeDefIndex: 5526
+internal struct HSteamPipe : IEquatable<HSteamPipe>, IComparable<HSteamPipe> // TypeDefIndex: 5528
 {
 	public int Value; 
 

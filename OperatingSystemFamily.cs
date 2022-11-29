@@ -1,4 +1,4 @@
-public enum OperatingSystemFamily // TypeDefIndex: 3556
+public enum OperatingSystemFamily // TypeDefIndex: 3557
 {
 	public int value__; 
 	public const OperatingSystemFamily Other = 0;

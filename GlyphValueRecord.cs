@@ -1,4 +1,4 @@
-internal struct GlyphValueRecord // TypeDefIndex: 4116
+internal struct GlyphValueRecord // TypeDefIndex: 4118
 {
 	[NativeNameAttribute] 
 	[SerializeField] 
@@ -33,7 +33,7 @@ internal struct GlyphValueRecord // TypeDefIndex: 4116
 
 }
 
-public struct GlyphValueRecord_Legacy // TypeDefIndex: 6703
+public struct GlyphValueRecord_Legacy // TypeDefIndex: 6707
 {
 	public float xPlacement; 
 	public float yPlacement; 

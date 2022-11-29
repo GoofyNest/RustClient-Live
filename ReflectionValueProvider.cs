@@ -1,4 +1,4 @@
-public class ReflectionValueProvider : IValueProvider // TypeDefIndex: 6038
+public class ReflectionValueProvider : IValueProvider // TypeDefIndex: 6040
 {
 	private readonly MemberInfo _memberInfo; 
 

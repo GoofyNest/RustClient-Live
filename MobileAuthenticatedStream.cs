@@ -133,7 +133,7 @@ internal abstract class MobileAuthenticatedStream : AuthenticatedStream, IMonoSs
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <InnerWrite>b__67_0() { }
+	private void <InnerWrite>
 
 }
 
@@ -194,7 +194,7 @@ private sealed class MobileAuthenticatedStream.<>c__DisplayClass66_0 // TypeDefI
 
 	public void .ctor() { }
 
-	internal int <InnerRead>b__0() { }
+	internal int <InnerRead>
 
 }
 

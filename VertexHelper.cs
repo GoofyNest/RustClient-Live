@@ -1,4 +1,4 @@
-public class VertexHelper : IDisposable // TypeDefIndex: 5033
+public class VertexHelper : IDisposable // TypeDefIndex: 5035
 {
 	private List<Vector3> m_Positions; 
 	private List<Color32> m_Colors; 

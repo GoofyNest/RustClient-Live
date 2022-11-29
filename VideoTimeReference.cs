@@ -1,4 +1,4 @@
-public enum VideoTimeReference // TypeDefIndex: 4783
+public enum VideoTimeReference // TypeDefIndex: 4785
 {
 	public int value__; 
 	public const VideoTimeReference Freerun = 0;

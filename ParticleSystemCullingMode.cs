@@ -1,4 +1,4 @@
-public enum ParticleSystemCullingMode // TypeDefIndex: 4547
+public enum ParticleSystemCullingMode // TypeDefIndex: 4549
 {
 	public int value__; 
 	public const ParticleSystemCullingMode Automatic = 0;

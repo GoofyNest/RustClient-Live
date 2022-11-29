@@ -1,4 +1,4 @@
-internal sealed class ObjectStorage : DataStorage // TypeDefIndex: 4409
+internal sealed class ObjectStorage : DataStorage // TypeDefIndex: 4411
 {
 	private static readonly object s_defaultValue; 
 	private object[] _values; 
@@ -56,7 +56,7 @@ internal sealed class ObjectStorage : DataStorage // TypeDefIndex: 4409
 
 }
 
-private enum ObjectStorage.Families // TypeDefIndex: 4410
+private enum ObjectStorage.Families // TypeDefIndex: 4412
 {
 	public int value__; 
 	public const ObjectStorage.Families DATETIME = 0;
@@ -67,7 +67,7 @@ private enum ObjectStorage.Families // TypeDefIndex: 4410
 
 }
 
-private class ObjectStorage.TempAssemblyComparer : IEqualityComparer<KeyValuePair<Type, XmlRootAttribute>> // TypeDefIndex: 4411
+private class ObjectStorage.TempAssemblyComparer : IEqualityComparer<KeyValuePair<Type, XmlRootAttribute>> // TypeDefIndex: 4413
 {
 	internal static readonly IEqualityComparer<KeyValuePair<Type, XmlRootAttribute>> s_default; 
 

@@ -1,4 +1,4 @@
-public enum Rule // TypeDefIndex: 4298
+public enum Rule // TypeDefIndex: 4300
 {
 
 public enum Rule

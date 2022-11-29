@@ -1,4 +1,4 @@
-public struct VectorData : IProto // TypeDefIndex: 6295
+public struct VectorData : IProto // TypeDefIndex: 6297
 {
 	public float x; 
 	public float y; 

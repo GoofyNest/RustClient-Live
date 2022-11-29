@@ -1,4 +1,4 @@
-public struct FinalizeInviteOptions // TypeDefIndex: 9519
+public struct FinalizeInviteOptions // TypeDefIndex: 9528
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <TargetUserId>k__BackingField; 

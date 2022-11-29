@@ -1,4 +1,4 @@
-public class MouseLeaveEvent : MouseEventBase<MouseLeaveEvent> // TypeDefIndex: 4680
+public class MouseLeaveEvent : MouseEventBase<MouseLeaveEvent> // TypeDefIndex: 4682
 {
 
 	protected override void Init() { }

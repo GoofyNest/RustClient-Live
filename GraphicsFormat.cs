@@ -1,4 +1,4 @@
-public enum GraphicsFormat // TypeDefIndex: 3905
+public enum GraphicsFormat // TypeDefIndex: 3907
 {
 	public int value__; 
 	public const GraphicsFormat None = 0;

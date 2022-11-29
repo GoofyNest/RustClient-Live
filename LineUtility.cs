@@ -1,4 +1,4 @@
-public sealed class LineUtility // TypeDefIndex: 3438
+public sealed class LineUtility // TypeDefIndex: 3439
 {
 
 	public static void Simplify(List<Vector3> points, float tolerance, List<int> pointsToKeep) { }

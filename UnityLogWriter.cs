@@ -1,4 +1,4 @@
-internal class UnityLogWriter : TextWriter // TypeDefIndex: 3459
+internal class UnityLogWriter : TextWriter // TypeDefIndex: 3460
 {
 	public override Encoding Encoding { get; }
 

@@ -1,4 +1,4 @@
-internal static class StringUtils // TypeDefIndex: 5974
+internal static class StringUtils // TypeDefIndex: 5976
 {
 
 	[ExtensionAttribute] 
@@ -44,7 +44,7 @@ internal static class StringUtils // TypeDefIndex: 5974
 
 }
 
-private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex: 5975
+private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex: 5977
 {
 	public Func<TSource, string> valueSelector; 
 	public string testValue; 
@@ -53,19 +53,19 @@ private sealed class StringUtils.<>c__DisplayClass15_0<TSource> // TypeDefIndex:
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-StringUtils.<>c__DisplayClass15_0<object>..ctor
+	|-StringUtils.<>c
 	*/
 
-	internal bool <ForgivingCaseSensitiveFind>b__0(TSource s) { }
+	internal bool <ForgivingCaseSensitiveFind>
 	/* GenericInstMethod :
 	|
-	|-StringUtils.<>c__DisplayClass15_0<object>.<ForgivingCaseSensitiveFind>b__0
+	|-StringUtils.<>c
 	*/
 
-	internal bool <ForgivingCaseSensitiveFind>b__1(TSource s) { }
+	internal bool <ForgivingCaseSensitiveFind>
 	/* GenericInstMethod :
 	|
-	|-StringUtils.<>c__DisplayClass15_0<object>.<ForgivingCaseSensitiveFind>b__1
+	|-StringUtils.<>c
 	*/
 
 }

@@ -1,4 +1,4 @@
-public struct SqlBoolean : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4341
+public struct SqlBoolean : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4343
 {
 	private byte m_value; 
 	public static readonly SqlBoolean True; 

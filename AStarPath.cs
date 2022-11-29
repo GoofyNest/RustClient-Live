@@ -1,4 +1,4 @@
-public static class AStarPath // TypeDefIndex: 13895
+public static class AStarPath // TypeDefIndex: 13943
 {
 
 	private static float Heuristic(BasePathNode from, BasePathNode to) { }

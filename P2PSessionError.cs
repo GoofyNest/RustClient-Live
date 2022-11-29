@@ -1,4 +1,4 @@
-public enum P2PSessionError // TypeDefIndex: 5161
+public enum P2PSessionError // TypeDefIndex: 5163
 {
 	public int value__; 
 	public const P2PSessionError None = 0;

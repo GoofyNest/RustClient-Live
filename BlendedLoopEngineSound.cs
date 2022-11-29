@@ -1,4 +1,4 @@
-public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10699
+public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDefIndex: 10710
 {
 	public BlendedEngineLoopDefinition loopDefinition; 
 	public bool engineOn; 
@@ -26,7 +26,7 @@ public class BlendedLoopEngineSound : MonoBehaviour, IClientComponent // TypeDef
 
 }
 
-public class BlendedLoopEngineSound.EngineLoop // TypeDefIndex: 10700
+public class BlendedLoopEngineSound.EngineLoop // TypeDefIndex: 10711
 {
 	public BlendedEngineLoopDefinition.EngineLoopDefinition definition; 
 	public BlendedLoopEngineSound parent; 

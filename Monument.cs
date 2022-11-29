@@ -1,4 +1,4 @@
-public class Monument : TerrainPlacement // TypeDefIndex: 12314
+public class Monument : TerrainPlacement // TypeDefIndex: 12334
 {
 	public float Radius; 
 	public float Fade; 
@@ -22,7 +22,7 @@ public class Monument : TerrainPlacement // TypeDefIndex: 12314
 
 }
 
-private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12315
+private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12335
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -34,11 +34,11 @@ private sealed class Monument.<>c__DisplayClass3_0 // TypeDefIndex: 12315
 
 	public void .ctor() { }
 
-	internal void <ApplyHeight>b__0(int x, int z) { }
+	internal void <ApplyHeight>
 
 }
 
-private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12316
+private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12336
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -56,11 +56,11 @@ private sealed class Monument.<>c__DisplayClass4_0 // TypeDefIndex: 12316
 
 	public void .ctor() { }
 
-	internal void <ApplySplat>b__0(int x, int z) { }
+	internal void <ApplySplat>
 
 }
 
-private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12317
+private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12337
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -69,11 +69,11 @@ private sealed class Monument.<>c__DisplayClass5_0 // TypeDefIndex: 12317
 
 	public void .ctor() { }
 
-	internal void <ApplyAlpha>b__0(int x, int z) { }
+	internal void <ApplyAlpha>
 
 }
 
-private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12318
+private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12338
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -86,11 +86,11 @@ private sealed class Monument.<>c__DisplayClass6_0 // TypeDefIndex: 12318
 
 	public void .ctor() { }
 
-	internal void <ApplyBiome>b__0(int x, int z) { }
+	internal void <ApplyBiome>
 
 }
 
-private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12319
+private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12339
 {
 	public Matrix4x4 worldToLocal; 
 	public Monument <>4__this; 
@@ -99,7 +99,7 @@ private sealed class Monument.<>c__DisplayClass7_0 // TypeDefIndex: 12319
 
 	public void .ctor() { }
 
-	internal void <ApplyTopology>b__0(int x, int z) { }
+	internal void <ApplyTopology>
 
 }
 

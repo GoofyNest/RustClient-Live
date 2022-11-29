@@ -1,4 +1,4 @@
-public class MouseCaptureEvent : MouseCaptureEventBase<MouseCaptureEvent> // TypeDefIndex: 4629
+public class MouseCaptureEvent : MouseCaptureEventBase<MouseCaptureEvent> // TypeDefIndex: 4631
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public struct OnQueryLeaderboardRanksCompleteCallbackInfo : ICallbackInfo // TypeDefIndex: 9299
+public struct OnQueryLeaderboardRanksCompleteCallbackInfo : ICallbackInfo // TypeDefIndex: 9308
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

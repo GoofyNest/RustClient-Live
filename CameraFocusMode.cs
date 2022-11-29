@@ -1,4 +1,4 @@
-public enum CameraFocusMode // TypeDefIndex: 10524
+public enum CameraFocusMode // TypeDefIndex: 10535
 {
 	public int value__; 
 	public const CameraFocusMode Off = 0;

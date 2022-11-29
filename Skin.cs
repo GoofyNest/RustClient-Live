@@ -1,4 +1,4 @@
-public class Skin // TypeDefIndex: 7736
+public class Skin // TypeDefIndex: 7742
 {
 	private string manifestName; 
 	private string manifestContent; 
@@ -79,7 +79,7 @@ public class Skin // TypeDefIndex: 7736
 
 }
 
-public class Skin.Manifest // TypeDefIndex: 7737
+public class Skin.Manifest // TypeDefIndex: 7743
 {
 	[CompilerGeneratedAttribute] 
 	private int <Version>k__BackingField; 
@@ -133,7 +133,7 @@ public class Skin.Manifest // TypeDefIndex: 7737
 
 }
 
-public class Skin.Manifest.Group // TypeDefIndex: 7738
+public class Skin.Manifest.Group // TypeDefIndex: 7744
 {
 	[CompilerGeneratedAttribute] 
 	private Dictionary<string, string> <Textures>k__BackingField; 
@@ -169,7 +169,7 @@ public class Skin.Manifest.Group // TypeDefIndex: 7738
 
 }
 
-public class Skin.Manifest.ColorEntry // TypeDefIndex: 7739
+public class Skin.Manifest.ColorEntry // TypeDefIndex: 7745
 {
 	[CompilerGeneratedAttribute] 
 	private float <r>k__BackingField; 
@@ -205,7 +205,7 @@ public class Skin.Manifest.ColorEntry // TypeDefIndex: 7739
 
 }
 
-private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7740
+private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7746
 {
 	public InventoryDef[] definitions; 
 	public string downloadUrl; 
@@ -218,7 +218,7 @@ private sealed class Skin.<>c__DisplayClass10_0 // TypeDefIndex: 7740
 
 }
 
-private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7741
+private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7747
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -226,7 +226,7 @@ private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, ID
 	public Skin <>4__this; 
 	public ulong workshopId; 
 	public string directory; 
-	private Skin.<>c__DisplayClass10_0 <>8__1; 
+	private Skin.<>c
 	private AssetBundleRequest <textRequest>5__2; 
 	private UnityWebRequest <request>5__3; 
 	private AsyncTextureLoad <request>5__4; 
@@ -254,7 +254,7 @@ private sealed class Skin.<LoadIcon>d__10 : IEnumerator<object>, IEnumerator, ID
 
 }
 
-private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7742
+private sealed class Skin.<LoadAssets>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 7748
 {
 	private int <>1__state; 
 	private object <>2__current; 

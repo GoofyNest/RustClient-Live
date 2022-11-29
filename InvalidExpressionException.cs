@@ -1,4 +1,4 @@
-public class InvalidExpressionException : DataException // TypeDefIndex: 4258
+public class InvalidExpressionException : DataException // TypeDefIndex: 4260
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

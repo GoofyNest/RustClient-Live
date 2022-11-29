@@ -1,4 +1,4 @@
-public enum ParticleSystemStopBehavior // TypeDefIndex: 4546
+public enum ParticleSystemStopBehavior // TypeDefIndex: 4548
 {
 	public int value__; 
 	public const ParticleSystemStopBehavior StopEmittingAndClear = 0;

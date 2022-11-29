@@ -1,32 +1,28 @@
-public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDefIndex: 12618
+public class TexasHoldEmUI : MonoBehaviour, CardGameUI.ICardGameSubUI // TypeDefIndex: 12645
 {
 	[SerializeField] 
 	private Image[] holeCardImages; 
+	[SerializeField] 
+	private Image[] holeCardBackings; 
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
 	private Image[] communityCardImages; 
 	[SerializeField] 
+	private Image[] communityCardBackings; 
+	[SerializeField] 
 	private RustText potText; 
 	[SerializeField] 
-	private TexasHoldEmPlayerWidget[] playerWidgets; 
-	[SerializeField] 
-	private GameObject raiseRoot; 
-	[SerializeField] 
-	private Translate.Phrase phraseNotEnoughBuyIn; 
-	[SerializeField] 
-	private Translate.Phrase phraseTooMuchBuyIn; 
-	[SerializeField] 
-	private Translate.Phrase phraseYouWinTheRound; 
-	[SerializeField] 
-	private Translate.Phrase phraseRoundWinner; 
-	[SerializeField] 
-	private Translate.Phrase phraseRoundWinners; 
-	[SerializeField] 
-	private Translate.Phrase phraseScrapWon; 
-	[SerializeField] 
-	private Translate.Phrase phraseScrapReturned; 
+	private CardGamePlayerWidget[] playerWidgets; 
 	[SerializeField] 
 	private Translate.Phrase phraseWinningHand; 
+	[SerializeField] 
+	private Translate.Phrase foldPhrase; 
+	[SerializeField] 
+	private Translate.Phrase raisePhrase; 
+	[SerializeField] 
+	private Translate.Phrase checkPhrase; 
+	[SerializeField] 
+	private Translate.Phrase callPhrase; 
 	[SerializeField] 
 	private Translate.Phrase phraseRoyalFlush; 
 	[SerializeField] 
@@ -47,6 +43,16 @@ public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDe
 	private Translate.Phrase phrasePair; 
 	[SerializeField] 
 	private Translate.Phrase phraseHighCard; 
+	[SerializeField] 
+	private Translate.Phrase phraseRaiseAmount; 
+	[SerializeField] 
+	private Sprite dealerChip; 
+	[SerializeField] 
+	private Sprite smallBlindChip; 
+	[SerializeField] 
+	private Sprite bigBlindChip; 
+	[SerializeField] 
+	private Sprite noIcon; 
 	[CompilerGeneratedAttribute] 
 	private int <DynamicBetAmount>k__BackingField; 
 	private ulong lastActionId; 
@@ -62,33 +68,42 @@ public class TexasHoldEmUI : MonoBehaviour, CardTableUI.ICardGameSubUI // TypeDe
 	[CompilerGeneratedAttribute] 
 	private void set_DynamicBetAmount(int value) { }
 
-	public void UpdateInGameUI(CardTableUI ui, CardGameController game) { }
+	public void UpdateInGameUI(CardGameUI ui, CardGameController game) { }
 
-	public string GetSecondaryInfo(CardTableUI ui, CardGameController game, out CardTableUI.InfoTextUI.Attitude attitude) { }
+	public string GetSecondaryInfo(CardGameUI ui, CardGameController game, out CardGameUI.InfoTextUI.Attitude attitude) { }
 
-	public void UpdateInGameUI_NoPlayer(CardTableUI ui) { }
+	public void UpdateInGameUI_NoPlayer(CardGameUI ui) { }
 
-	private string GetWinnerNameFromID(ulong playerID) { }
-
-	private void PopulateCards(List<PlayingCard> cards, Image[] slots, CardTableUI ui) { }
-
-	public Translate.Phrase PokerResultToPhrase(PokerLib.PokerResult result) { }
+	public Translate.Phrase ResultToPhrase(PokerLib.PokerResult result) { }
 
 	public void .ctor() { }
 
 }
 
-private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 12619
+private enum TexasHoldEmUI.PlayerChipState // TypeDefIndex: 12646
+{
+	public int value__; 
+	public const TexasHoldEmUI.PlayerChipState None = 0;
+	public const TexasHoldEmUI.PlayerChipState Dealer = 1;
+	public const TexasHoldEmUI.PlayerChipState SmallBlind = 2;
+	public const TexasHoldEmUI.PlayerChipState BigBlind = 3;
+
+}
+
+private sealed class TexasHoldEmUI.<>c // TypeDefIndex: 12647
 {
 	public static readonly TexasHoldEmUI.<>c <>9; 
-	public static Predicate<CardTableUI.KeycodeWithAction> <>9__30_0; 
+	public static Predicate<CardGameUI.KeycodeWithAction> <>9__34_0; 
+	public static Predicate<CardGameUI.KeycodeWithAction> <>9__34_1; 
 
 
 	private static void .cctor() { }
 
 	public void .ctor() { }
 
-	internal bool <UpdateInGameUI>b__30_0(CardTableUI.KeycodeWithAction p) { }
+	internal bool <UpdateInGameUI>
+
+	internal bool <UpdateInGameUI>
 
 }
 

@@ -1,4 +1,4 @@
-internal class SetupCoroutine // TypeDefIndex: 3512
+internal class SetupCoroutine // TypeDefIndex: 3513
 {
 
 	[RequiredByNativeCodeAttribute] 

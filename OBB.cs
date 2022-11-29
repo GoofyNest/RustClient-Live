@@ -1,4 +1,4 @@
-public struct OBB // TypeDefIndex: 6596
+public struct OBB // TypeDefIndex: 6600
 {
 	public Quaternion rotation; 
 	public Vector3 position; 

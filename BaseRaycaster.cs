@@ -1,4 +1,4 @@
-public abstract class BaseRaycaster : UIBehaviour // TypeDefIndex: 5095
+public abstract class BaseRaycaster : UIBehaviour // TypeDefIndex: 5097
 {
 	private BaseRaycaster m_RootRaycaster; 
 

@@ -1,4 +1,4 @@
-public sealed class TemporalAntialiasing // TypeDefIndex: 13561
+public sealed class TemporalAntialiasing // TypeDefIndex: 13599
 {
 	[TooltipAttribute] 
 	[RangeAttribute] 
@@ -84,7 +84,7 @@ public sealed class TemporalAntialiasing // TypeDefIndex: 13561
 
 }
 
-private enum TemporalAntialiasing.Pass // TypeDefIndex: 13562
+private enum TemporalAntialiasing.Pass // TypeDefIndex: 13600
 {
 	public int value__; 
 	public const TemporalAntialiasing.Pass SolverDilate = 0;

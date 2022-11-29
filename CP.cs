@@ -1,4 +1,4 @@
-public class CP932 : MonoEncoding // TypeDefIndex: 7805
+public class CP932 : MonoEncoding // TypeDefIndex: 7814
 {
 	private const int SHIFTJIS_CODE_PAGE = 932;
 
@@ -49,7 +49,7 @@ public class CP932 : MonoEncoding // TypeDefIndex: 7805
 
 }
 
-internal sealed class CP932Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7806
+internal sealed class CP932Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7815
 {
 	private JISConvert convert; 
 	private int last_byte_count; 
@@ -68,7 +68,7 @@ internal sealed class CP932Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7
 
 }
 
-public class CP50220 : ISO2022JPEncoding // TypeDefIndex: 7808
+public class CP50220 : ISO2022JPEncoding // TypeDefIndex: 7817
 {
 	public override string EncodingName { get; }
 
@@ -79,7 +79,7 @@ public class CP50220 : ISO2022JPEncoding // TypeDefIndex: 7808
 
 }
 
-public class CP50221 : ISO2022JPEncoding // TypeDefIndex: 7809
+public class CP50221 : ISO2022JPEncoding // TypeDefIndex: 7818
 {
 	public override string EncodingName { get; }
 
@@ -90,7 +90,7 @@ public class CP50221 : ISO2022JPEncoding // TypeDefIndex: 7809
 
 }
 
-public class CP50222 : ISO2022JPEncoding // TypeDefIndex: 7810
+public class CP50222 : ISO2022JPEncoding // TypeDefIndex: 7819
 {
 	public override string EncodingName { get; }
 
@@ -101,7 +101,7 @@ public class CP50222 : ISO2022JPEncoding // TypeDefIndex: 7810
 
 }
 
-public class CP51932 : MonoEncoding // TypeDefIndex: 7816
+public class CP51932 : MonoEncoding // TypeDefIndex: 7825
 {
 	private const int EUC_JP_CODE_PAGE = 51932;
 
@@ -153,7 +153,7 @@ public class CP51932 : MonoEncoding // TypeDefIndex: 7816
 
 }
 
-public class CP51932Encoder : MonoEncoder // TypeDefIndex: 7817
+public class CP51932Encoder : MonoEncoder // TypeDefIndex: 7826
 {
 
 	public void .ctor(MonoEncoding encoding) { }
@@ -164,7 +164,7 @@ public class CP51932Encoder : MonoEncoder // TypeDefIndex: 7817
 
 }
 
-internal class CP51932Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7818
+internal class CP51932Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7827
 {
 	private int last_count; 
 	private int last_bytes; 
@@ -184,7 +184,7 @@ internal class CP51932Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7818
 
 }
 
-internal class CP936 : DbcsEncoding // TypeDefIndex: 7820
+internal class CP936 : DbcsEncoding // TypeDefIndex: 7829
 {
 	private const int GB2312_CODE_PAGE = 936;
 
@@ -230,7 +230,7 @@ internal class CP936 : DbcsEncoding // TypeDefIndex: 7820
 
 }
 
-internal sealed class CP936Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7821
+internal sealed class CP936Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7830
 {
 	private int last_byte_count; 
 	private int last_byte_bytes; 
@@ -248,7 +248,7 @@ internal sealed class CP936Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7
 
 }
 
-internal class CP949 : KoreanEncoding // TypeDefIndex: 7823
+internal class CP949 : KoreanEncoding // TypeDefIndex: 7832
 {
 	private const int UHC_CODE_PAGE = 949;
 
@@ -270,7 +270,7 @@ internal class CP949 : KoreanEncoding // TypeDefIndex: 7823
 
 }
 
-internal class CP51949 : KoreanEncoding // TypeDefIndex: 7824
+internal class CP51949 : KoreanEncoding // TypeDefIndex: 7833
 {
 	private const int EUCKR_CODE_PAGE = 51949;
 
@@ -292,7 +292,7 @@ internal class CP51949 : KoreanEncoding // TypeDefIndex: 7824
 
 }
 
-internal class CP950 : DbcsEncoding // TypeDefIndex: 7829
+internal class CP950 : DbcsEncoding // TypeDefIndex: 7838
 {
 	private const int BIG5_CODE_PAGE = 950;
 
@@ -324,7 +324,7 @@ internal class CP950 : DbcsEncoding // TypeDefIndex: 7829
 
 }
 
-private sealed class CP950.CP950Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7830
+private sealed class CP950.CP950Decoder : DbcsEncoding.DbcsDecoder // TypeDefIndex: 7839
 {
 	private int last_byte_count; 
 	private int last_byte_conv; 
@@ -342,14 +342,14 @@ private sealed class CP950.CP950Decoder : DbcsEncoding.DbcsDecoder // TypeDefInd
 
 }
 
-public class CP54936 : GB18030Encoding // TypeDefIndex: 7837
+public class CP54936 : GB18030Encoding // TypeDefIndex: 7846
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP1254 : ByteEncoding // TypeDefIndex: 7848
+public class CP1254 : ByteEncoding // TypeDefIndex: 7857
 {
 	private static readonly char[] ToChars; 
 
@@ -362,7 +362,7 @@ public class CP1254 : ByteEncoding // TypeDefIndex: 7848
 
 }
 
-public class CP1255 : ByteEncoding // TypeDefIndex: 7850
+public class CP1255 : ByteEncoding // TypeDefIndex: 7859
 {
 	private static readonly char[] ToChars; 
 
@@ -375,7 +375,7 @@ public class CP1255 : ByteEncoding // TypeDefIndex: 7850
 
 }
 
-public class CP1256 : ByteEncoding // TypeDefIndex: 7852
+public class CP1256 : ByteEncoding // TypeDefIndex: 7861
 {
 	private static readonly char[] ToChars; 
 
@@ -388,7 +388,7 @@ public class CP1256 : ByteEncoding // TypeDefIndex: 7852
 
 }
 
-public class CP28596 : ByteEncoding // TypeDefIndex: 7854
+public class CP28596 : ByteEncoding // TypeDefIndex: 7863
 {
 	private static readonly char[] ToChars; 
 
@@ -401,7 +401,7 @@ public class CP28596 : ByteEncoding // TypeDefIndex: 7854
 
 }
 
-public class CP28598 : ByteEncoding // TypeDefIndex: 7856
+public class CP28598 : ByteEncoding // TypeDefIndex: 7865
 {
 	private static readonly char[] ToChars; 
 
@@ -414,7 +414,7 @@ public class CP28598 : ByteEncoding // TypeDefIndex: 7856
 
 }
 
-public class CP28599 : ByteEncoding // TypeDefIndex: 7858
+public class CP28599 : ByteEncoding // TypeDefIndex: 7867
 {
 	private static readonly char[] ToChars; 
 
@@ -427,7 +427,7 @@ public class CP28599 : ByteEncoding // TypeDefIndex: 7858
 
 }
 
-public class CP38598 : ByteEncoding // TypeDefIndex: 7860
+public class CP38598 : ByteEncoding // TypeDefIndex: 7869
 {
 	private static readonly char[] ToChars; 
 
@@ -440,7 +440,7 @@ public class CP38598 : ByteEncoding // TypeDefIndex: 7860
 
 }
 
-public class CP1251 : ByteEncoding // TypeDefIndex: 7866
+public class CP1251 : ByteEncoding // TypeDefIndex: 7875
 {
 	private static readonly char[] ToChars; 
 
@@ -453,7 +453,7 @@ public class CP1251 : ByteEncoding // TypeDefIndex: 7866
 
 }
 
-public class CP1257 : ByteEncoding // TypeDefIndex: 7868
+public class CP1257 : ByteEncoding // TypeDefIndex: 7877
 {
 	private static readonly char[] ToChars; 
 
@@ -466,7 +466,7 @@ public class CP1257 : ByteEncoding // TypeDefIndex: 7868
 
 }
 
-public class CP1258 : ByteEncoding // TypeDefIndex: 7870
+public class CP1258 : ByteEncoding // TypeDefIndex: 7879
 {
 	private static readonly char[] ToChars; 
 
@@ -479,7 +479,7 @@ public class CP1258 : ByteEncoding // TypeDefIndex: 7870
 
 }
 
-public class CP20866 : ByteEncoding // TypeDefIndex: 7872
+public class CP20866 : ByteEncoding // TypeDefIndex: 7881
 {
 	private static readonly char[] ToChars; 
 
@@ -492,7 +492,7 @@ public class CP20866 : ByteEncoding // TypeDefIndex: 7872
 
 }
 
-public class CP21866 : ByteEncoding // TypeDefIndex: 7874
+public class CP21866 : ByteEncoding // TypeDefIndex: 7883
 {
 	private static readonly char[] ToChars; 
 
@@ -505,7 +505,7 @@ public class CP21866 : ByteEncoding // TypeDefIndex: 7874
 
 }
 
-public class CP28594 : ByteEncoding // TypeDefIndex: 7876
+public class CP28594 : ByteEncoding // TypeDefIndex: 7885
 {
 	private static readonly char[] ToChars; 
 
@@ -518,7 +518,7 @@ public class CP28594 : ByteEncoding // TypeDefIndex: 7876
 
 }
 
-public class CP28595 : ByteEncoding // TypeDefIndex: 7878
+public class CP28595 : ByteEncoding // TypeDefIndex: 7887
 {
 	private static readonly char[] ToChars; 
 
@@ -531,77 +531,77 @@ public class CP28595 : ByteEncoding // TypeDefIndex: 7878
 
 }
 
-public class CP57002 : ISCIIEncoding // TypeDefIndex: 7881
+public class CP57002 : ISCIIEncoding // TypeDefIndex: 7890
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57003 : ISCIIEncoding // TypeDefIndex: 7882
+public class CP57003 : ISCIIEncoding // TypeDefIndex: 7891
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57004 : ISCIIEncoding // TypeDefIndex: 7883
+public class CP57004 : ISCIIEncoding // TypeDefIndex: 7892
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57005 : ISCIIEncoding // TypeDefIndex: 7884
+public class CP57005 : ISCIIEncoding // TypeDefIndex: 7893
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57006 : ISCIIEncoding // TypeDefIndex: 7885
+public class CP57006 : ISCIIEncoding // TypeDefIndex: 7894
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57007 : ISCIIEncoding // TypeDefIndex: 7886
+public class CP57007 : ISCIIEncoding // TypeDefIndex: 7895
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57008 : ISCIIEncoding // TypeDefIndex: 7887
+public class CP57008 : ISCIIEncoding // TypeDefIndex: 7896
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57009 : ISCIIEncoding // TypeDefIndex: 7888
+public class CP57009 : ISCIIEncoding // TypeDefIndex: 7897
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57010 : ISCIIEncoding // TypeDefIndex: 7889
+public class CP57010 : ISCIIEncoding // TypeDefIndex: 7898
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP57011 : ISCIIEncoding // TypeDefIndex: 7890
+public class CP57011 : ISCIIEncoding // TypeDefIndex: 7899
 {
 
 	public void .ctor() { }
 
 }
 
-public class CP874 : ByteEncoding // TypeDefIndex: 7901
+public class CP874 : ByteEncoding // TypeDefIndex: 7910
 {
 	private static readonly char[] ToChars; 
 
@@ -614,7 +614,7 @@ public class CP874 : ByteEncoding // TypeDefIndex: 7901
 
 }
 
-public class CP866 : ByteEncoding // TypeDefIndex: 7907
+public class CP866 : ByteEncoding // TypeDefIndex: 7916
 {
 	private static readonly char[] ToChars; 
 
@@ -627,7 +627,7 @@ public class CP866 : ByteEncoding // TypeDefIndex: 7907
 
 }
 
-public class CP1026 : ByteEncoding // TypeDefIndex: 7909
+public class CP1026 : ByteEncoding // TypeDefIndex: 7918
 {
 	private static readonly char[] ToChars; 
 
@@ -640,7 +640,7 @@ public class CP1026 : ByteEncoding // TypeDefIndex: 7909
 
 }
 
-public class CP869 : ByteEncoding // TypeDefIndex: 7911
+public class CP869 : ByteEncoding // TypeDefIndex: 7920
 {
 	private static readonly char[] ToChars; 
 
@@ -653,7 +653,7 @@ public class CP869 : ByteEncoding // TypeDefIndex: 7911
 
 }
 
-public class CP870 : ByteEncoding // TypeDefIndex: 7913
+public class CP870 : ByteEncoding // TypeDefIndex: 7922
 {
 	private static readonly char[] ToChars; 
 
@@ -666,7 +666,7 @@ public class CP870 : ByteEncoding // TypeDefIndex: 7913
 
 }
 
-public class CP875 : ByteEncoding // TypeDefIndex: 7915
+public class CP875 : ByteEncoding // TypeDefIndex: 7924
 {
 	private static readonly char[] ToChars; 
 
@@ -679,7 +679,7 @@ public class CP875 : ByteEncoding // TypeDefIndex: 7915
 
 }
 
-public class CP1047 : ByteEncoding // TypeDefIndex: 7917
+public class CP1047 : ByteEncoding // TypeDefIndex: 7926
 {
 	private static readonly char[] ToChars; 
 
@@ -692,7 +692,7 @@ public class CP1047 : ByteEncoding // TypeDefIndex: 7917
 
 }
 
-public class CP1140 : ByteEncoding // TypeDefIndex: 7919
+public class CP1140 : ByteEncoding // TypeDefIndex: 7928
 {
 	private static readonly char[] ToChars; 
 
@@ -705,7 +705,7 @@ public class CP1140 : ByteEncoding // TypeDefIndex: 7919
 
 }
 
-public class CP1141 : ByteEncoding // TypeDefIndex: 7921
+public class CP1141 : ByteEncoding // TypeDefIndex: 7930
 {
 	private static readonly char[] ToChars; 
 
@@ -718,7 +718,7 @@ public class CP1141 : ByteEncoding // TypeDefIndex: 7921
 
 }
 
-public class CP1142 : ByteEncoding // TypeDefIndex: 7923
+public class CP1142 : ByteEncoding // TypeDefIndex: 7932
 {
 	private static readonly char[] ToChars; 
 
@@ -731,7 +731,7 @@ public class CP1142 : ByteEncoding // TypeDefIndex: 7923
 
 }
 
-public class CP1143 : ByteEncoding // TypeDefIndex: 7925
+public class CP1143 : ByteEncoding // TypeDefIndex: 7934
 {
 	private static readonly char[] ToChars; 
 
@@ -744,7 +744,7 @@ public class CP1143 : ByteEncoding // TypeDefIndex: 7925
 
 }
 
-public class CP1144 : ByteEncoding // TypeDefIndex: 7927
+public class CP1144 : ByteEncoding // TypeDefIndex: 7936
 {
 	private static readonly char[] ToChars; 
 
@@ -757,7 +757,7 @@ public class CP1144 : ByteEncoding // TypeDefIndex: 7927
 
 }
 
-public class CP1145 : ByteEncoding // TypeDefIndex: 7929
+public class CP1145 : ByteEncoding // TypeDefIndex: 7938
 {
 	private static readonly char[] ToChars; 
 
@@ -770,7 +770,7 @@ public class CP1145 : ByteEncoding // TypeDefIndex: 7929
 
 }
 
-public class CP1146 : ByteEncoding // TypeDefIndex: 7931
+public class CP1146 : ByteEncoding // TypeDefIndex: 7940
 {
 	private static readonly char[] ToChars; 
 
@@ -783,7 +783,7 @@ public class CP1146 : ByteEncoding // TypeDefIndex: 7931
 
 }
 
-public class CP1147 : ByteEncoding // TypeDefIndex: 7933
+public class CP1147 : ByteEncoding // TypeDefIndex: 7942
 {
 	private static readonly char[] ToChars; 
 
@@ -796,7 +796,7 @@ public class CP1147 : ByteEncoding // TypeDefIndex: 7933
 
 }
 
-public class CP1148 : ByteEncoding // TypeDefIndex: 7935
+public class CP1148 : ByteEncoding // TypeDefIndex: 7944
 {
 	private static readonly char[] ToChars; 
 
@@ -809,7 +809,7 @@ public class CP1148 : ByteEncoding // TypeDefIndex: 7935
 
 }
 
-public class CP1149 : ByteEncoding // TypeDefIndex: 7937
+public class CP1149 : ByteEncoding // TypeDefIndex: 7946
 {
 	private static readonly char[] ToChars; 
 
@@ -822,7 +822,7 @@ public class CP1149 : ByteEncoding // TypeDefIndex: 7937
 
 }
 
-public class CP20273 : ByteEncoding // TypeDefIndex: 7939
+public class CP20273 : ByteEncoding // TypeDefIndex: 7948
 {
 	private static readonly char[] ToChars; 
 
@@ -835,7 +835,7 @@ public class CP20273 : ByteEncoding // TypeDefIndex: 7939
 
 }
 
-public class CP20277 : ByteEncoding // TypeDefIndex: 7941
+public class CP20277 : ByteEncoding // TypeDefIndex: 7950
 {
 	private static readonly char[] ToChars; 
 
@@ -848,7 +848,7 @@ public class CP20277 : ByteEncoding // TypeDefIndex: 7941
 
 }
 
-public class CP20278 : ByteEncoding // TypeDefIndex: 7943
+public class CP20278 : ByteEncoding // TypeDefIndex: 7952
 {
 	private static readonly char[] ToChars; 
 
@@ -861,7 +861,7 @@ public class CP20278 : ByteEncoding // TypeDefIndex: 7943
 
 }
 
-public class CP20280 : ByteEncoding // TypeDefIndex: 7945
+public class CP20280 : ByteEncoding // TypeDefIndex: 7954
 {
 	private static readonly char[] ToChars; 
 
@@ -874,7 +874,7 @@ public class CP20280 : ByteEncoding // TypeDefIndex: 7945
 
 }
 
-public class CP20284 : ByteEncoding // TypeDefIndex: 7947
+public class CP20284 : ByteEncoding // TypeDefIndex: 7956
 {
 	private static readonly char[] ToChars; 
 
@@ -887,7 +887,7 @@ public class CP20284 : ByteEncoding // TypeDefIndex: 7947
 
 }
 
-public class CP20285 : ByteEncoding // TypeDefIndex: 7949
+public class CP20285 : ByteEncoding // TypeDefIndex: 7958
 {
 	private static readonly char[] ToChars; 
 
@@ -900,7 +900,7 @@ public class CP20285 : ByteEncoding // TypeDefIndex: 7949
 
 }
 
-public class CP20290 : ByteEncoding // TypeDefIndex: 7951
+public class CP20290 : ByteEncoding // TypeDefIndex: 7960
 {
 	private static readonly char[] ToChars; 
 
@@ -913,7 +913,7 @@ public class CP20290 : ByteEncoding // TypeDefIndex: 7951
 
 }
 
-public class CP20297 : ByteEncoding // TypeDefIndex: 7953
+public class CP20297 : ByteEncoding // TypeDefIndex: 7962
 {
 	private static readonly char[] ToChars; 
 
@@ -926,7 +926,7 @@ public class CP20297 : ByteEncoding // TypeDefIndex: 7953
 
 }
 
-public class CP20420 : ByteEncoding // TypeDefIndex: 7955
+public class CP20420 : ByteEncoding // TypeDefIndex: 7964
 {
 	private static readonly char[] ToChars; 
 
@@ -939,7 +939,7 @@ public class CP20420 : ByteEncoding // TypeDefIndex: 7955
 
 }
 
-public class CP20424 : ByteEncoding // TypeDefIndex: 7957
+public class CP20424 : ByteEncoding // TypeDefIndex: 7966
 {
 	private static readonly char[] ToChars; 
 
@@ -952,7 +952,7 @@ public class CP20424 : ByteEncoding // TypeDefIndex: 7957
 
 }
 
-public class CP20871 : ByteEncoding // TypeDefIndex: 7959
+public class CP20871 : ByteEncoding // TypeDefIndex: 7968
 {
 	private static readonly char[] ToChars; 
 
@@ -965,7 +965,7 @@ public class CP20871 : ByteEncoding // TypeDefIndex: 7959
 
 }
 
-public class CP21025 : ByteEncoding // TypeDefIndex: 7961
+public class CP21025 : ByteEncoding // TypeDefIndex: 7970
 {
 	private static readonly char[] ToChars; 
 
@@ -978,7 +978,7 @@ public class CP21025 : ByteEncoding // TypeDefIndex: 7961
 
 }
 
-public class CP37 : ByteEncoding // TypeDefIndex: 7963
+public class CP37 : ByteEncoding // TypeDefIndex: 7972
 {
 	private static readonly char[] ToChars; 
 
@@ -991,7 +991,7 @@ public class CP37 : ByteEncoding // TypeDefIndex: 7963
 
 }
 
-public class CP500 : ByteEncoding // TypeDefIndex: 7965
+public class CP500 : ByteEncoding // TypeDefIndex: 7974
 {
 	private static readonly char[] ToChars; 
 
@@ -1004,7 +1004,7 @@ public class CP500 : ByteEncoding // TypeDefIndex: 7965
 
 }
 
-public class CP708 : ByteEncoding // TypeDefIndex: 7967
+public class CP708 : ByteEncoding // TypeDefIndex: 7976
 {
 	private static readonly char[] ToChars; 
 
@@ -1017,7 +1017,7 @@ public class CP708 : ByteEncoding // TypeDefIndex: 7967
 
 }
 
-public class CP852 : ByteEncoding // TypeDefIndex: 7969
+public class CP852 : ByteEncoding // TypeDefIndex: 7978
 {
 	private static readonly char[] ToChars; 
 
@@ -1030,7 +1030,7 @@ public class CP852 : ByteEncoding // TypeDefIndex: 7969
 
 }
 
-public class CP855 : ByteEncoding // TypeDefIndex: 7971
+public class CP855 : ByteEncoding // TypeDefIndex: 7980
 {
 	private static readonly char[] ToChars; 
 
@@ -1043,7 +1043,7 @@ public class CP855 : ByteEncoding // TypeDefIndex: 7971
 
 }
 
-public class CP857 : ByteEncoding // TypeDefIndex: 7973
+public class CP857 : ByteEncoding // TypeDefIndex: 7982
 {
 	private static readonly char[] ToChars; 
 
@@ -1056,7 +1056,7 @@ public class CP857 : ByteEncoding // TypeDefIndex: 7973
 
 }
 
-public class CP858 : ByteEncoding // TypeDefIndex: 7975
+public class CP858 : ByteEncoding // TypeDefIndex: 7984
 {
 	private static readonly char[] ToChars; 
 
@@ -1069,7 +1069,7 @@ public class CP858 : ByteEncoding // TypeDefIndex: 7975
 
 }
 
-public class CP862 : ByteEncoding // TypeDefIndex: 7977
+public class CP862 : ByteEncoding // TypeDefIndex: 7986
 {
 	private static readonly char[] ToChars; 
 
@@ -1082,7 +1082,7 @@ public class CP862 : ByteEncoding // TypeDefIndex: 7977
 
 }
 
-public class CP864 : ByteEncoding // TypeDefIndex: 7979
+public class CP864 : ByteEncoding // TypeDefIndex: 7988
 {
 	private static readonly char[] ToChars; 
 
@@ -1095,7 +1095,7 @@ public class CP864 : ByteEncoding // TypeDefIndex: 7979
 
 }
 
-public class CP10000 : ByteEncoding // TypeDefIndex: 7985
+public class CP10000 : ByteEncoding // TypeDefIndex: 7994
 {
 	private static readonly char[] ToChars; 
 
@@ -1108,7 +1108,7 @@ public class CP10000 : ByteEncoding // TypeDefIndex: 7985
 
 }
 
-public class CP10079 : ByteEncoding // TypeDefIndex: 7987
+public class CP10079 : ByteEncoding // TypeDefIndex: 7996
 {
 	private static readonly char[] ToChars; 
 
@@ -1121,7 +1121,7 @@ public class CP10079 : ByteEncoding // TypeDefIndex: 7987
 
 }
 
-public class CP1250 : ByteEncoding // TypeDefIndex: 7989
+public class CP1250 : ByteEncoding // TypeDefIndex: 7998
 {
 	private static readonly char[] ToChars; 
 
@@ -1134,7 +1134,7 @@ public class CP1250 : ByteEncoding // TypeDefIndex: 7989
 
 }
 
-public class CP1252 : ByteEncoding // TypeDefIndex: 7991
+public class CP1252 : ByteEncoding // TypeDefIndex: 8000
 {
 	private static readonly char[] ToChars; 
 
@@ -1147,7 +1147,7 @@ public class CP1252 : ByteEncoding // TypeDefIndex: 7991
 
 }
 
-public class CP1253 : ByteEncoding // TypeDefIndex: 7993
+public class CP1253 : ByteEncoding // TypeDefIndex: 8002
 {
 	private static readonly char[] ToChars; 
 
@@ -1160,7 +1160,7 @@ public class CP1253 : ByteEncoding // TypeDefIndex: 7993
 
 }
 
-public class CP28592 : ByteEncoding // TypeDefIndex: 7995
+public class CP28592 : ByteEncoding // TypeDefIndex: 8004
 {
 	private static readonly char[] ToChars; 
 
@@ -1173,7 +1173,7 @@ public class CP28592 : ByteEncoding // TypeDefIndex: 7995
 
 }
 
-public class CP28593 : ByteEncoding // TypeDefIndex: 7997
+public class CP28593 : ByteEncoding // TypeDefIndex: 8006
 {
 	private static readonly char[] ToChars; 
 
@@ -1186,7 +1186,7 @@ public class CP28593 : ByteEncoding // TypeDefIndex: 7997
 
 }
 
-public class CP28597 : ByteEncoding // TypeDefIndex: 7999
+public class CP28597 : ByteEncoding // TypeDefIndex: 8008
 {
 	private static readonly char[] ToChars; 
 
@@ -1199,7 +1199,7 @@ public class CP28597 : ByteEncoding // TypeDefIndex: 7999
 
 }
 
-public class CP28605 : ByteEncoding // TypeDefIndex: 8001
+public class CP28605 : ByteEncoding // TypeDefIndex: 8010
 {
 	private static readonly char[] ToChars; 
 
@@ -1212,7 +1212,7 @@ public class CP28605 : ByteEncoding // TypeDefIndex: 8001
 
 }
 
-public class CP437 : ByteEncoding // TypeDefIndex: 8003
+public class CP437 : ByteEncoding // TypeDefIndex: 8012
 {
 	private static readonly char[] ToChars; 
 
@@ -1225,7 +1225,7 @@ public class CP437 : ByteEncoding // TypeDefIndex: 8003
 
 }
 
-public class CP850 : ByteEncoding // TypeDefIndex: 8005
+public class CP850 : ByteEncoding // TypeDefIndex: 8014
 {
 	private static readonly char[] ToChars; 
 
@@ -1238,7 +1238,7 @@ public class CP850 : ByteEncoding // TypeDefIndex: 8005
 
 }
 
-public class CP860 : ByteEncoding // TypeDefIndex: 8007
+public class CP860 : ByteEncoding // TypeDefIndex: 8016
 {
 	private static readonly char[] ToChars; 
 
@@ -1251,7 +1251,7 @@ public class CP860 : ByteEncoding // TypeDefIndex: 8007
 
 }
 
-public class CP861 : ByteEncoding // TypeDefIndex: 8009
+public class CP861 : ByteEncoding // TypeDefIndex: 8018
 {
 	private static readonly char[] ToChars; 
 
@@ -1264,7 +1264,7 @@ public class CP861 : ByteEncoding // TypeDefIndex: 8009
 
 }
 
-public class CP863 : ByteEncoding // TypeDefIndex: 8011
+public class CP863 : ByteEncoding // TypeDefIndex: 8020
 {
 	private static readonly char[] ToChars; 
 
@@ -1277,7 +1277,7 @@ public class CP863 : ByteEncoding // TypeDefIndex: 8011
 
 }
 
-public class CP865 : ByteEncoding // TypeDefIndex: 8013
+public class CP865 : ByteEncoding // TypeDefIndex: 8022
 {
 	private static readonly char[] ToChars; 
 

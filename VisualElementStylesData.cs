@@ -1,4 +1,4 @@
-internal class VisualElementStylesData // TypeDefIndex: 4731
+internal class VisualElementStylesData // TypeDefIndex: 4733
 {
 	private static StyleValuePropertyReader s_StyleValuePropertyReader; 
 	public static readonly VisualElementStylesData none; 

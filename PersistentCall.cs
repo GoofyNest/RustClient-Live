@@ -1,16 +1,16 @@
-internal class PersistentCall // TypeDefIndex: 3637
+internal class PersistentCall // TypeDefIndex: 3638
 {
-	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
+	[FormerlySerializedAsAttribute] 
 	private Object m_Target; 
-	[SerializeField] 
 	[FormerlySerializedAsAttribute] 
+	[SerializeField] 
 	private string m_MethodName; 
-	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
+	[FormerlySerializedAsAttribute] 
 	private PersistentListenerMode m_Mode; 
-	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
+	[FormerlySerializedAsAttribute] 
 	private ArgumentCache m_Arguments; 
 	[FormerlySerializedAsAttribute] 
 	[FormerlySerializedAsAttribute] 

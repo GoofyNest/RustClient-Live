@@ -24,7 +24,7 @@ private sealed class EtwSession.<>c__DisplayClass1_0 // TypeDefIndex: 1619
 
 	public void .ctor() { }
 
-	internal bool <RemoveEtwSession>b__0(WeakReference<EtwSession> wrEtwSession) { }
+	internal bool <RemoveEtwSession>
 
 }
 
@@ -38,7 +38,7 @@ private sealed class EtwSession.<>c // TypeDefIndex: 1620
 
 	public void .ctor() { }
 
-	internal bool <TrimGlobalList>b__2_0(WeakReference<EtwSession> wrEtwSession) { }
+	internal bool <TrimGlobalList>
 
 }
 

@@ -1,4 +1,4 @@
-public enum LODFadeMode // TypeDefIndex: 3439
+public enum LODFadeMode // TypeDefIndex: 3440
 {
 	public int value__; 
 	public const LODFadeMode None = 0;

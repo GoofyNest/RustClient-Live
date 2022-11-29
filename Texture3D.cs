@@ -1,4 +1,4 @@
-public sealed class Texture3D : Texture // TypeDefIndex: 3447
+public sealed class Texture3D : Texture // TypeDefIndex: 3448
 {
 	public int depth { get; }
 	public override bool isReadable { get; }

@@ -1,4 +1,4 @@
-public class Indexer // TypeDefIndex: 6647
+public class Indexer // TypeDefIndex: 6651
 {
 	private List<Indexer.Keyframe> keyframes; 
 	private long LastPacketTime; 
@@ -39,7 +39,7 @@ public class Indexer // TypeDefIndex: 6647
 
 }
 
-public class Indexer.Entity // TypeDefIndex: 6648
+public class Indexer.Entity // TypeDefIndex: 6652
 {
 	public Entity Init; 
 	public Entity Data; 
@@ -57,7 +57,7 @@ public class Indexer.Entity // TypeDefIndex: 6648
 
 }
 
-public class Indexer.Keyframe // TypeDefIndex: 6649
+public class Indexer.Keyframe // TypeDefIndex: 6653
 {
 	public long Position; 
 	public Indexer.Entity[] Entities; 
@@ -73,7 +73,7 @@ public class Indexer.Keyframe // TypeDefIndex: 6649
 
 }
 
-private sealed class Indexer.Keyframe.<>c // TypeDefIndex: 6650
+private sealed class Indexer.Keyframe.<>c // TypeDefIndex: 6654
 {
 	public static readonly Indexer.Keyframe.<>c <>9; 
 	public static Func<Indexer.Entity, uint> <>9__4_0; 
@@ -84,13 +84,13 @@ private sealed class Indexer.Keyframe.<>c // TypeDefIndex: 6650
 
 	public void .ctor() { }
 
-	internal uint <Init>b__4_0(Indexer.Entity x) { }
+	internal uint <Init>
 
-	internal Indexer.Entity <Init>b__4_1(Indexer.Entity x) { }
+	internal Indexer.Entity <Init>
 
 }
 
-private sealed class Indexer.<>c // TypeDefIndex: 6651
+private sealed class Indexer.<>c // TypeDefIndex: 6655
 {
 	public static readonly Indexer.<>c <>9; 
 	public static Func<KeyValuePair<uint, Indexer.Entity>, Indexer.Entity> <>9__21_0; 
@@ -100,7 +100,7 @@ private sealed class Indexer.<>c // TypeDefIndex: 6651
 
 	public void .ctor() { }
 
-	internal Indexer.Entity <TryCreateKeyframe>b__21_0(KeyValuePair<uint, Indexer.Entity> x) { }
+	internal Indexer.Entity <TryCreateKeyframe>
 
 }
 

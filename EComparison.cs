@@ -1,4 +1,4 @@
-internal enum EComparison // TypeDefIndex: 4357
+internal enum EComparison // TypeDefIndex: 4359
 {
 	public int value__; 
 	public const EComparison LT = 0;

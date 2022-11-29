@@ -1,4 +1,4 @@
-internal struct UserStatsReceived_t : ICallbackData // TypeDefIndex: 5390
+internal struct UserStatsReceived_t : ICallbackData // TypeDefIndex: 5392
 {
 	internal ulong GameID; 
 	internal Result Result; 

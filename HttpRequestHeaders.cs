@@ -1,4 +1,4 @@
-public sealed class HttpRequestHeaders : HttpHeaders // TypeDefIndex: 5783
+public sealed class HttpRequestHeaders : HttpHeaders // TypeDefIndex: 5785
 {
 	private Nullable<bool> expectContinue; 
 
@@ -31,7 +31,7 @@ public sealed class HttpRequestHeaders : HttpHeaders // TypeDefIndex: 5783
 
 }
 
-private sealed class HttpRequestHeaders.<>c // TypeDefIndex: 5784
+private sealed class HttpRequestHeaders.<>c // TypeDefIndex: 5786
 {
 	public static readonly HttpRequestHeaders.<>c <>9; 
 	public static Predicate<string> <>9__19_0; 
@@ -44,13 +44,13 @@ private sealed class HttpRequestHeaders.<>c // TypeDefIndex: 5784
 
 	public void .ctor() { }
 
-	internal bool <get_ConnectionClose>b__19_0(string l) { }
+	internal bool <get_ConnectionClose>
 
-	internal bool <get_ConnectionKeepAlive>b__22_0(string l) { }
+	internal bool <get_ConnectionKeepAlive>
 
-	internal bool <get_ExpectContinue>b__29_0(TransferCodingHeaderValue l) { }
+	internal bool <get_ExpectContinue>
 
-	internal bool <get_TransferEncodingChunked>b__71_0(TransferCodingHeaderValue l) { }
+	internal bool <get_TransferEncodingChunked>
 
 }
 

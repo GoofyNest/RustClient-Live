@@ -1,4 +1,4 @@
-public class AuthTicket : IDisposable // TypeDefIndex: 5107
+public class AuthTicket : IDisposable // TypeDefIndex: 5109
 {
 	public byte[] Data; 
 	public uint Handle; 

@@ -1,4 +1,4 @@
-public enum ColorSpace // TypeDefIndex: 3423
+public enum ColorSpace // TypeDefIndex: 3424
 {
 	public int value__; 
 	public const ColorSpace Uninitialized = -1;

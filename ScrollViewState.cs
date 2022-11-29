@@ -1,4 +1,4 @@
-internal class ScrollViewState // TypeDefIndex: 4061
+internal class ScrollViewState // TypeDefIndex: 4063
 {
 
 	[RequiredByNativeCodeAttribute] 

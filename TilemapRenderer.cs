@@ -1,4 +1,4 @@
-public sealed class TilemapRenderer : Renderer // TypeDefIndex: 4574
+public sealed class TilemapRenderer : Renderer // TypeDefIndex: 4576
 {
 
 	[RequiredByNativeCodeAttribute] 

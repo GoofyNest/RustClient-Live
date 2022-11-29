@@ -1,4 +1,4 @@
-public sealed class Texture2D : Texture // TypeDefIndex: 3445
+public sealed class Texture2D : Texture // TypeDefIndex: 3446
 {
 	public TextureFormat format { get; }
 	[StaticAccessorAttribute] 

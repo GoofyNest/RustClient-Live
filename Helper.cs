@@ -1,4 +1,4 @@
-public sealed class Helper // TypeDefIndex: 8248
+public sealed class Helper // TypeDefIndex: 8257
 {
 	private static Dictionary<long, Helper.Allocation> s_Allocations; 
 	private static Dictionary<long, Helper.PinnedBuffer> s_PinnedBuffers; 
@@ -1488,8 +1488,6 @@ public sealed class Helper // TypeDefIndex: 8248
 	|-Helper.Dispose<LogPlayerSpawnOptionsInternal>
 	|
 	|-Helper.Dispose<LogPlayerTakeDamageOptionsInternal>
-	|
-	|-Helper.Dispose<LogPlayerTickOptionsInternal>
 	|
 	|-Helper.Dispose<LogPlayerUseAbilityOptionsInternal>
 	|
@@ -3043,7 +3041,7 @@ public sealed class Helper // TypeDefIndex: 8248
 
 }
 
-private struct Helper.Allocation // TypeDefIndex: 8249
+private struct Helper.Allocation // TypeDefIndex: 8258
 {
 	[CompilerGeneratedAttribute] 
 	private int <Size>k__BackingField; 
@@ -3079,7 +3077,7 @@ private struct Helper.Allocation // TypeDefIndex: 8249
 
 }
 
-private struct Helper.PinnedBuffer // TypeDefIndex: 8250
+private struct Helper.PinnedBuffer // TypeDefIndex: 8259
 {
 	[CompilerGeneratedAttribute] 
 	private GCHandle <Handle>k__BackingField; 
@@ -3106,7 +3104,7 @@ private struct Helper.PinnedBuffer // TypeDefIndex: 8250
 
 }
 
-private class Helper.DelegateHolder // TypeDefIndex: 8251
+private class Helper.DelegateHolder // TypeDefIndex: 8260
 {
 	[CompilerGeneratedAttribute] 
 	private Delegate <Public>k__BackingField; 
@@ -3151,60 +3149,60 @@ private class Helper.DelegateHolder // TypeDefIndex: 8251
 
 }
 
-private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8252
+private sealed class Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> // TypeDefIndex: 8261
 {
-	public static readonly Helper.<>c__3<TCallbackInfoInternal, TCallback, TCallbackInfo> <>9; 
+	public static readonly Helper.<>
 	public static Func<Delegate, bool> <>9__3_0; 
 
 
 	private static void .cctor() { }
 	/* GenericInstMethod :
 	|
-	|-Helper.<>c__3<FileTransferProgressCallbackInfoInternal, object, FileTransferProgressCallbackInfo>..cctor
-	|-Helper.<>c__3<ReadFileDataCallbackInfoInternal, object, ReadFileDataCallbackInfo>..cctor
-	|-Helper.<>c__3<WriteFileDataCallbackInfoInternal, object, WriteFileDataCallbackInfo>..cctor
-	|-Helper.<>c__3<FileTransferProgressCallbackInfoInternal, object, FileTransferProgressCallbackInfo>..cctor
-	|-Helper.<>c__3<ReadFileDataCallbackInfoInternal, object, ReadFileDataCallbackInfo>..cctor
+	|-Helper.<>
+	|-Helper.<>
+	|-Helper.<>
+	|-Helper.<>
+	|-Helper.<>
 	*/
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Helper.<>c__3<FileTransferProgressCallbackInfoInternal, object, FileTransferProgressCallbackInfo>..ctor
-	|-Helper.<>c__3<ReadFileDataCallbackInfoInternal, object, ReadFileDataCallbackInfo>..ctor
-	|-Helper.<>c__3<WriteFileDataCallbackInfoInternal, object, WriteFileDataCallbackInfo>..ctor
-	|-Helper.<>c__3<FileTransferProgressCallbackInfoInternal, object, FileTransferProgressCallbackInfo>..ctor
-	|-Helper.<>c__3<ReadFileDataCallbackInfoInternal, object, ReadFileDataCallbackInfo>..ctor
+	|-Helper.<>
+	|-Helper.<>
+	|-Helper.<>
+	|-Helper.<>
+	|-Helper.<>
 	*/
 
-	internal bool <TryGetStructCallback>b__3_0(Delegate structDelegate) { }
+	internal bool <TryGetStructCallback>
 	/* GenericInstMethod :
 	|
-	|-Helper.<>c__3<FileTransferProgressCallbackInfoInternal, object, FileTransferProgressCallbackInfo>.<TryGetStructCallback>b__3_0
+	|-Helper.<>
 	|
-	|-Helper.<>c__3<ReadFileDataCallbackInfoInternal, object, ReadFileDataCallbackInfo>.<TryGetStructCallback>b__3_0
+	|-Helper.<>
 	|
-	|-Helper.<>c__3<WriteFileDataCallbackInfoInternal, object, WriteFileDataCallbackInfo>.<TryGetStructCallback>b__3_0
+	|-Helper.<>
 	|
-	|-Helper.<>c__3<FileTransferProgressCallbackInfoInternal, object, FileTransferProgressCallbackInfo>.<TryGetStructCallback>b__3_0
+	|-Helper.<>
 	|
-	|-Helper.<>c__3<ReadFileDataCallbackInfoInternal, object, ReadFileDataCallbackInfo>.<TryGetStructCallback>b__3_0
+	|-Helper.<>
 	*/
 
 }
 
-private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8253
+private sealed class Helper.<>c__DisplayClass4_0 // TypeDefIndex: 8262
 {
 	public ulong notificationId; 
 
 
 	public void .ctor() { }
 
-	internal bool <RemoveCallbackByNotificationId>b__0(KeyValuePair<IntPtr, Helper.DelegateHolder> pair) { }
+	internal bool <RemoveCallbackByNotificationId>
 
 }
 
-private sealed class Helper.<>c // TypeDefIndex: 8254
+private sealed class Helper.<>c // TypeDefIndex: 8263
 {
 	public static readonly Helper.<>c <>9; 
 	public static Func<int, KeyValuePair<long, Helper.PinnedBuffer>, int> <>9__63_0; 
@@ -3214,7 +3212,7 @@ private sealed class Helper.<>c // TypeDefIndex: 8254
 
 	public void .ctor() { }
 
-	internal int <GetAllocationCount>b__63_0(int acc, KeyValuePair<long, Helper.PinnedBuffer> x) { }
+	internal int <GetAllocationCount>
 
 }
 

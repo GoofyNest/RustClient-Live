@@ -1,4 +1,4 @@
-public enum NVSDK_NGX_PerfQuality_Value // TypeDefIndex: 8232
+public enum NVSDK_NGX_PerfQuality_Value // TypeDefIndex: 8241
 {
 	public int value__; 
 	public const NVSDK_NGX_PerfQuality_Value OFF = -1;

@@ -1,4 +1,4 @@
-internal struct QueryEntitlementsCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryEntitlementsCallbackInfo>, ISettable<QueryEntitlementsCallbackInfo>, IDisposable // TypeDefIndex: 9486
+internal struct QueryEntitlementsCallbackInfoInternal : ICallbackInfoInternal, IGettable<QueryEntitlementsCallbackInfo>, ISettable<QueryEntitlementsCallbackInfo>, IDisposable // TypeDefIndex: 9495
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

@@ -1,4 +1,4 @@
-public class DungeonNavmesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 10672
+public class DungeonNavmesh : FacepunchBehaviour, IServerComponent // TypeDefIndex: 10683
 {
 	public int NavMeshAgentTypeIndex; 
 	[TooltipAttribute] 
@@ -19,7 +19,7 @@ public class DungeonNavmesh : FacepunchBehaviour, IServerComponent // TypeDefInd
 
 }
 
-public class DungeonBaseInfo : LandmarkInfo // TypeDefIndex: 12066
+public class DungeonBaseInfo : LandmarkInfo // TypeDefIndex: 12086
 {
 	internal List<GameObject> Links; 
 	internal List<DungeonBaseFloor> Floors; 
@@ -38,11 +38,11 @@ public class DungeonBaseInfo : LandmarkInfo // TypeDefIndex: 12066
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private int <Add>b__4_0(DungeonBaseFloor l, DungeonBaseFloor r) { }
+	private int <Add>
 
 }
 
-public class DungeonBaseFloor // TypeDefIndex: 12067
+public class DungeonBaseFloor // TypeDefIndex: 12087
 {
 	public List<DungeonBaseLink> Links; 
 
@@ -55,7 +55,7 @@ public class DungeonBaseFloor // TypeDefIndex: 12067
 
 }
 
-public class DungeonBaseLandmarkInfo : LandmarkInfo // TypeDefIndex: 12068
+public class DungeonBaseLandmarkInfo : LandmarkInfo // TypeDefIndex: 12088
 {
 	private DungeonBaseLink baseLink; 
 	private Nullable<MapLayer> layer; 
@@ -71,7 +71,7 @@ public class DungeonBaseLandmarkInfo : LandmarkInfo // TypeDefIndex: 12068
 
 }
 
-public class DungeonBaseLink : MonoBehaviour // TypeDefIndex: 12069
+public class DungeonBaseLink : MonoBehaviour // TypeDefIndex: 12089
 {
 	public DungeonBaseLinkType Type; 
 	public int Cost; 
@@ -99,7 +99,7 @@ public class DungeonBaseLink : MonoBehaviour // TypeDefIndex: 12069
 
 }
 
-public enum DungeonBaseLinkType // TypeDefIndex: 12070
+public enum DungeonBaseLinkType // TypeDefIndex: 12090
 {
 	public int value__; 
 	public const DungeonBaseLinkType Room = 0;
@@ -108,7 +108,7 @@ public enum DungeonBaseLinkType // TypeDefIndex: 12070
 
 }
 
-public class DungeonBaseSocket : MonoBehaviour // TypeDefIndex: 12071
+public class DungeonBaseSocket : MonoBehaviour // TypeDefIndex: 12091
 {
 	public DungeonBaseSocketType Type; 
 	public bool Male; 
@@ -119,7 +119,7 @@ public class DungeonBaseSocket : MonoBehaviour // TypeDefIndex: 12071
 
 }
 
-public enum DungeonBaseSocketType // TypeDefIndex: 12072
+public enum DungeonBaseSocketType // TypeDefIndex: 12092
 {
 	public int value__; 
 	public const DungeonBaseSocketType Horizontal = 0;
@@ -128,7 +128,7 @@ public enum DungeonBaseSocketType // TypeDefIndex: 12072
 
 }
 
-public class DungeonBaseTransition : MonoBehaviour // TypeDefIndex: 12073
+public class DungeonBaseTransition : MonoBehaviour // TypeDefIndex: 12093
 {
 	public DungeonBaseSocketType Type; 
 	public DungeonBaseLinkType Neighbour1; 
@@ -139,7 +139,7 @@ public class DungeonBaseTransition : MonoBehaviour // TypeDefIndex: 12073
 
 }
 
-public class DungeonGridCell : MonoBehaviour // TypeDefIndex: 12074
+public class DungeonGridCell : MonoBehaviour // TypeDefIndex: 12094
 {
 	public DungeonGridConnectionType North; 
 	public DungeonGridConnectionType South; 
@@ -161,7 +161,7 @@ public class DungeonGridCell : MonoBehaviour // TypeDefIndex: 12074
 
 }
 
-public enum DungeonGridConnectionType // TypeDefIndex: 12075
+public enum DungeonGridConnectionType // TypeDefIndex: 12095
 {
 	public int value__; 
 	public const DungeonGridConnectionType None = 0;
@@ -169,7 +169,7 @@ public enum DungeonGridConnectionType // TypeDefIndex: 12075
 
 }
 
-public enum DungeonGridConnectionVariant // TypeDefIndex: 12076
+public enum DungeonGridConnectionVariant // TypeDefIndex: 12096
 {
 	public int value__; 
 	public const DungeonGridConnectionVariant A = 0;
@@ -177,7 +177,7 @@ public enum DungeonGridConnectionVariant // TypeDefIndex: 12076
 
 }
 
-public struct DungeonGridConnectionHash // TypeDefIndex: 12077
+public struct DungeonGridConnectionHash // TypeDefIndex: 12097
 {
 	public bool North; 
 	public bool South; 
@@ -191,7 +191,7 @@ public struct DungeonGridConnectionHash // TypeDefIndex: 12077
 
 }
 
-public class DungeonGridInfo : LandmarkInfo // TypeDefIndex: 12078
+public class DungeonGridInfo : LandmarkInfo // TypeDefIndex: 12098
 {
 	[HeaderAttribute] 
 	public int CellSize; 
@@ -216,7 +216,7 @@ public class DungeonGridInfo : LandmarkInfo // TypeDefIndex: 12078
 
 }
 
-public class DungeonGridLink : MonoBehaviour // TypeDefIndex: 12079
+public class DungeonGridLink : MonoBehaviour // TypeDefIndex: 12099
 {
 	public Transform UpSocket; 
 	public Transform DownSocket; 
@@ -232,7 +232,7 @@ public class DungeonGridLink : MonoBehaviour // TypeDefIndex: 12079
 
 }
 
-public enum DungeonGridLinkType // TypeDefIndex: 12080
+public enum DungeonGridLinkType // TypeDefIndex: 12100
 {
 	public int value__; 
 	public const DungeonGridLinkType Default = 0;
@@ -241,7 +241,7 @@ public enum DungeonGridLinkType // TypeDefIndex: 12080
 
 }
 
-public class DungeonVolume : MonoBehaviour // TypeDefIndex: 12081
+public class DungeonVolume : MonoBehaviour // TypeDefIndex: 12101
 {
 	public Bounds bounds; 
 

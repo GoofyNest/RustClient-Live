@@ -1,4 +1,4 @@
-internal struct GetProductUserIdMappingOptionsInternal : ISettable<GetProductUserIdMappingOptions>, IDisposable // TypeDefIndex: 9577
+internal struct GetProductUserIdMappingOptionsInternal : ISettable<GetProductUserIdMappingOptions>, IDisposable // TypeDefIndex: 9586
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-internal sealed class DoubleStorage : DataStorage // TypeDefIndex: 4405
+internal sealed class DoubleStorage : DataStorage // TypeDefIndex: 4407
 {
 	private double[] _values; 
 

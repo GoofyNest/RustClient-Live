@@ -1,4 +1,4 @@
-public class RustInput : RustControl // TypeDefIndex: 7057
+public class RustInput : RustControl // TypeDefIndex: 7061
 {
 	public TMP_InputField InputField; 
 	public Image Background; 
@@ -32,23 +32,23 @@ public class RustInput : RustControl // TypeDefIndex: 7057
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Awake>b__15_0(string x) { }
+	private void <Awake>
 
 	[CompilerGeneratedAttribute] 
-	private void <Awake>b__15_1(string x) { }
+	private void <Awake>
 
 	[CompilerGeneratedAttribute] 
-	private void <Awake>b__15_2(string x) { }
+	private void <Awake>
 
 	[CompilerGeneratedAttribute] 
-	private void <Awake>b__15_3(string x) { }
+	private void <Awake>
 
 	[CompilerGeneratedAttribute] 
-	private void <Awake>b__15_4(string x) { }
+	private void <Awake>
 
 }
 
-public class RustInput.ChangedEvent : UnityEvent<string> // TypeDefIndex: 7058
+public class RustInput.ChangedEvent : UnityEvent<string> // TypeDefIndex: 7062
 {
 
 	public void .ctor() { }

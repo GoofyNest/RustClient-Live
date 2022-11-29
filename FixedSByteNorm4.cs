@@ -1,4 +1,4 @@
-public struct FixedSByteNorm4 // TypeDefIndex: 13169
+public struct FixedSByteNorm4 // TypeDefIndex: 13207
 {
 	private const int FracBits = 7;
 	private const float MaxFrac = 128;

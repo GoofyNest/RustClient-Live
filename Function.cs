@@ -58,7 +58,7 @@ public enum Function.FunctionType // TypeDefIndex: 1793
 
 }
 
-internal sealed class Function // TypeDefIndex: 4264
+internal sealed class Function // TypeDefIndex: 4266
 {
 	internal readonly string _name; 
 	internal readonly FunctionId _id; 

@@ -1,4 +1,4 @@
-public sealed class OnCheckoutCallback : MulticastDelegate // TypeDefIndex: 9472
+public sealed class OnCheckoutCallback : MulticastDelegate // TypeDefIndex: 9481
 {
 
 	public void .ctor(object object, IntPtr method) { }

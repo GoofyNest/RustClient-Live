@@ -1,4 +1,4 @@
-public sealed class HelpURLAttribute : Attribute // TypeDefIndex: 3503
+public sealed class HelpURLAttribute : Attribute // TypeDefIndex: 3504
 {
 	internal readonly string m_Url; 
 

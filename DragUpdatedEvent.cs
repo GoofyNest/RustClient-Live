@@ -1,4 +1,4 @@
-public class DragUpdatedEvent : DragAndDropEventBase<DragUpdatedEvent> // TypeDefIndex: 4640
+public class DragUpdatedEvent : DragAndDropEventBase<DragUpdatedEvent> // TypeDefIndex: 4642
 {
 
 	public static DragUpdatedEvent GetPooled(Event systemEvent) { }

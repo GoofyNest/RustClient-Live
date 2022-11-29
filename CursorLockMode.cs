@@ -1,4 +1,4 @@
-public enum CursorLockMode // TypeDefIndex: 3453
+public enum CursorLockMode // TypeDefIndex: 3454
 {
 	public int value__; 
 	public const CursorLockMode None = 0;

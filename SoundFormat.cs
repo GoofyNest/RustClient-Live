@@ -1,4 +1,4 @@
-public enum SoundFormat // TypeDefIndex: 7388
+public enum SoundFormat // TypeDefIndex: 7394
 {
 	public int value__; 
 	public const SoundFormat Pcm16BitMono = 0;

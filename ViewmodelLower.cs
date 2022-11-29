@@ -1,4 +1,4 @@
-public class ViewmodelLower : MonoBehaviour // TypeDefIndex: 13212
+public class ViewmodelLower : MonoBehaviour // TypeDefIndex: 13250
 {
 	public bool lowerOnSprint; 
 	public bool lowerWhenCantAttack; 

@@ -1,4 +1,4 @@
-public struct ERConnectionGUIStatus // TypeDefIndex: 7194
+public struct ERConnectionGUIStatus // TypeDefIndex: 7198
 {
 	public int id; 
 	public bool favourite; 

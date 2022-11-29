@@ -1,4 +1,4 @@
-public class ColorSerialized // TypeDefIndex: 6293
+public class ColorSerialized // TypeDefIndex: 6295
 {
 
 	public static void ResetToPool(Color instance) { }

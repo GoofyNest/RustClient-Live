@@ -1,4 +1,4 @@
-public sealed class GraphicsSettings : Object // TypeDefIndex: 3841
+public sealed class GraphicsSettings : Object // TypeDefIndex: 3842
 {
 	public static bool lightsUseLinearIntensity { get; }
 	public static RenderPipelineAsset renderPipelineAsset { get; }

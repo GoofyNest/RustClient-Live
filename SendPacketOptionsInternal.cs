@@ -1,4 +1,4 @@
-internal struct SendPacketOptionsInternal : ISettable<SendPacketOptions>, IDisposable // TypeDefIndex: 8991
+internal struct SendPacketOptionsInternal : ISettable<SendPacketOptions>, IDisposable // TypeDefIndex: 9000
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

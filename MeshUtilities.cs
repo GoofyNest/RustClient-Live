@@ -1,4 +1,4 @@
-internal static class MeshUtilities // TypeDefIndex: 13614
+internal static class MeshUtilities // TypeDefIndex: 13652
 {
 	private static Dictionary<PrimitiveType, Mesh> s_Primitives; 
 	private static Dictionary<Type, PrimitiveType> s_ColliderPrimitives; 

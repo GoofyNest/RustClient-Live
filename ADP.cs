@@ -1,4 +1,4 @@
-internal static class ADP // TypeDefIndex: 4366
+internal static class ADP // TypeDefIndex: 4368
 {
 	private static readonly Type s_stackOverflowType; 
 	private static readonly Type s_outOfMemoryType; 

@@ -1,4 +1,4 @@
-public class LTDescr // TypeDefIndex: 5574
+public class LTDescr // TypeDefIndex: 5576
 {
 	public bool toggle; 
 	public bool useEstimatedTime; 
@@ -501,278 +501,278 @@ public class LTDescr // TypeDefIndex: 5574
 	public LTDescr setRecursive(bool useRecursion) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveX>b__71_0() { }
+	private void <setMoveX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveX>b__71_1() { }
+	private void <setMoveX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveY>b__72_0() { }
+	private void <setMoveY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveY>b__72_1() { }
+	private void <setMoveY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveZ>b__73_0() { }
+	private void <setMoveZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveZ>b__73_1() { }
+	private void <setMoveZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocalX>b__74_0() { }
+	private void <setMoveLocalX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocalX>b__74_1() { }
+	private void <setMoveLocalX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocalY>b__75_0() { }
+	private void <setMoveLocalY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocalY>b__75_1() { }
+	private void <setMoveLocalY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocalZ>b__76_0() { }
+	private void <setMoveLocalZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocalZ>b__76_1() { }
+	private void <setMoveLocalZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveCurved>b__78_0() { }
+	private void <setMoveCurved>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveCurvedLocal>b__79_0() { }
+	private void <setMoveCurvedLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveSpline>b__80_0() { }
+	private void <setMoveSpline>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveSplineLocal>b__81_0() { }
+	private void <setMoveSplineLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScaleX>b__82_0() { }
+	private void <setScaleX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScaleX>b__82_1() { }
+	private void <setScaleX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScaleY>b__83_0() { }
+	private void <setScaleY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScaleY>b__83_1() { }
+	private void <setScaleY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScaleZ>b__84_0() { }
+	private void <setScaleZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScaleZ>b__84_1() { }
+	private void <setScaleZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateX>b__85_0() { }
+	private void <setRotateX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateX>b__85_1() { }
+	private void <setRotateX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateY>b__86_0() { }
+	private void <setRotateY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateY>b__86_1() { }
+	private void <setRotateY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateZ>b__87_0() { }
+	private void <setRotateZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateZ>b__87_1() { }
+	private void <setRotateZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateAround>b__88_0() { }
+	private void <setRotateAround>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateAround>b__88_1() { }
+	private void <setRotateAround>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateAroundLocal>b__89_0() { }
+	private void <setRotateAroundLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateAroundLocal>b__89_1() { }
+	private void <setRotateAroundLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setAlpha>b__90_0() { }
+	private void <setAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setAlpha>b__90_2() { }
+	private void <setAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setAlpha>b__90_1() { }
+	private void <setAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setTextAlpha>b__91_0() { }
+	private void <setTextAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setTextAlpha>b__91_1() { }
+	private void <setTextAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setAlphaVertex>b__92_0() { }
+	private void <setAlphaVertex>
 
 	[CompilerGeneratedAttribute] 
-	private void <setAlphaVertex>b__92_1() { }
+	private void <setAlphaVertex>
 
 	[CompilerGeneratedAttribute] 
-	private void <setColor>b__93_0() { }
+	private void <setColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setColor>b__93_1() { }
+	private void <setColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCallbackColor>b__94_0() { }
+	private void <setCallbackColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCallbackColor>b__94_1() { }
+	private void <setCallbackColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setTextColor>b__95_0() { }
+	private void <setTextColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setTextColor>b__95_1() { }
+	private void <setTextColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasAlpha>b__96_0() { }
+	private void <setCanvasAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasAlpha>b__96_1() { }
+	private void <setCanvasAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasGroupAlpha>b__97_0() { }
+	private void <setCanvasGroupAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasGroupAlpha>b__97_1() { }
+	private void <setCanvasGroupAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasColor>b__98_0() { }
+	private void <setCanvasColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasColor>b__98_1() { }
+	private void <setCanvasColor>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMoveX>b__99_0() { }
+	private void <setCanvasMoveX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMoveX>b__99_1() { }
+	private void <setCanvasMoveX>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMoveY>b__100_0() { }
+	private void <setCanvasMoveY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMoveY>b__100_1() { }
+	private void <setCanvasMoveY>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMoveZ>b__101_0() { }
+	private void <setCanvasMoveZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMoveZ>b__101_1() { }
+	private void <setCanvasMoveZ>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasRotateAround>b__103_0() { }
+	private void <setCanvasRotateAround>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasRotateAroundLocal>b__104_0() { }
+	private void <setCanvasRotateAroundLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasPlaySprite>b__105_0() { }
+	private void <setCanvasPlaySprite>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasPlaySprite>b__105_1() { }
+	private void <setCanvasPlaySprite>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMove>b__106_0() { }
+	private void <setCanvasMove>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasMove>b__106_1() { }
+	private void <setCanvasMove>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasScale>b__107_0() { }
+	private void <setCanvasScale>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasScale>b__107_1() { }
+	private void <setCanvasScale>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasSizeDelta>b__108_0() { }
+	private void <setCanvasSizeDelta>
 
 	[CompilerGeneratedAttribute] 
-	private void <setCanvasSizeDelta>b__108_1() { }
+	private void <setCanvasSizeDelta>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMove>b__112_0() { }
+	private void <setMove>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMove>b__112_1() { }
+	private void <setMove>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocal>b__113_0() { }
+	private void <setMoveLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveLocal>b__113_1() { }
+	private void <setMoveLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveToTransform>b__114_0() { }
+	private void <setMoveToTransform>
 
 	[CompilerGeneratedAttribute] 
-	private void <setMoveToTransform>b__114_1() { }
+	private void <setMoveToTransform>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotate>b__115_0() { }
+	private void <setRotate>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotate>b__115_1() { }
+	private void <setRotate>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateLocal>b__116_0() { }
+	private void <setRotateLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setRotateLocal>b__116_1() { }
+	private void <setRotateLocal>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScale>b__117_0() { }
+	private void <setScale>
 
 	[CompilerGeneratedAttribute] 
-	private void <setScale>b__117_1() { }
+	private void <setScale>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIMove>b__118_0() { }
+	private void <setGUIMove>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIMove>b__118_1() { }
+	private void <setGUIMove>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIMoveMargin>b__119_0() { }
+	private void <setGUIMoveMargin>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIMoveMargin>b__119_1() { }
+	private void <setGUIMoveMargin>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIScale>b__120_0() { }
+	private void <setGUIScale>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIScale>b__120_1() { }
+	private void <setGUIScale>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIAlpha>b__121_0() { }
+	private void <setGUIAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIAlpha>b__121_1() { }
+	private void <setGUIAlpha>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIRotate>b__122_0() { }
+	private void <setGUIRotate>
 
 	[CompilerGeneratedAttribute] 
-	private void <setGUIRotate>b__122_1() { }
+	private void <setGUIRotate>
 
 	[CompilerGeneratedAttribute] 
-	private void <setDelayedSound>b__123_0() { }
+	private void <setDelayedSound>
 
 }
 
-public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex: 5575
+public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex: 5577
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -785,7 +785,7 @@ public sealed class LTDescr.EaseTypeDelegate : MulticastDelegate // TypeDefIndex
 
 }
 
-public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefIndex: 5576
+public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefIndex: 5578
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -798,7 +798,7 @@ public sealed class LTDescr.ActionMethodDelegate : MulticastDelegate // TypeDefI
 
 }
 
-private sealed class LTDescr.<>c // TypeDefIndex: 5577
+private sealed class LTDescr.<>c // TypeDefIndex: 5579
 {
 	public static readonly LTDescr.<>c <>9; 
 	public static LTDescr.ActionMethodDelegate <>9__110_0; 
@@ -809,9 +809,9 @@ private sealed class LTDescr.<>c // TypeDefIndex: 5577
 
 	public void .ctor() { }
 
-	internal void <setCallback>b__110_0() { }
+	internal void <setCallback>
 
-	internal void <setValue3>b__111_0() { }
+	internal void <setValue3>
 
 }
 

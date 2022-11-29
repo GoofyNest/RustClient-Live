@@ -1,4 +1,4 @@
-internal struct CreateBeaconCallback_t : ICallbackData // TypeDefIndex: 5360
+internal struct CreateBeaconCallback_t : ICallbackData // TypeDefIndex: 5362
 {
 	internal Result Result; 
 	internal ulong BeaconID; 

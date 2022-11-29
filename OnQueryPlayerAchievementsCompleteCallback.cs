@@ -1,4 +1,4 @@
-public sealed class OnQueryPlayerAchievementsCompleteCallback : MulticastDelegate // TypeDefIndex: 9922
+public sealed class OnQueryPlayerAchievementsCompleteCallback : MulticastDelegate // TypeDefIndex: 9931
 {
 
 	public void .ctor(object object, IntPtr method) { }

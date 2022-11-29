@@ -1,4 +1,4 @@
-public static class Parallel // TypeDefIndex: 5604
+public static class Parallel // TypeDefIndex: 5606
 {
 	public static int MaxThreads; 
 
@@ -30,7 +30,7 @@ public static class Parallel // TypeDefIndex: 5604
 
 }
 
-private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5605
+private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5607
 {
 	public Action<T> action; 
 	public IList<T> data; 
@@ -39,18 +39,18 @@ private sealed class Parallel.<>c__DisplayClass2_0<T> // TypeDefIndex: 5605
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Parallel.<>c__DisplayClass2_0<object>..ctor
+	|-Parallel.<>c
 	*/
 
-	internal void <ForEach>b__0(int i) { }
+	internal void <ForEach>
 	/* GenericInstMethod :
 	|
-	|-Parallel.<>c__DisplayClass2_0<object>.<ForEach>b__0
+	|-Parallel.<>c
 	*/
 
 }
 
-private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5606
+private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5608
 {
 	public int chunk_size; 
 	public int toExclusive; 
@@ -59,11 +59,11 @@ private sealed class Parallel.<>c__DisplayClass4_0 // TypeDefIndex: 5606
 
 	public void .ctor() { }
 
-	internal void <For>b__0(int thread_id) { }
+	internal void <For>
 
 }
 
-private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5607
+private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5609
 {
 	public Action<int, int> action; 
 	public int threads; 
@@ -71,11 +71,11 @@ private sealed class Parallel.<>c__DisplayClass6_0 // TypeDefIndex: 5607
 
 	public void .ctor() { }
 
-	internal void <Call>b__0(int thread_id) { }
+	internal void <Call>
 
 }
 
-private sealed class Parallel.<Coroutine>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5608
+private sealed class Parallel.<Coroutine>d__7 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 5610
 {
 	private int <>1__state; 
 	private object <>2__current; 

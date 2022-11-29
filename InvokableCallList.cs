@@ -1,4 +1,4 @@
-internal class InvokableCallList // TypeDefIndex: 3639
+internal class InvokableCallList // TypeDefIndex: 3640
 {
 	private readonly List<BaseInvokableCall> m_PersistentCalls; 
 	private readonly List<BaseInvokableCall> m_RuntimeCalls; 

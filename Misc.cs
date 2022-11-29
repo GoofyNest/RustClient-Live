@@ -1,4 +1,4 @@
-internal static class Misc // TypeDefIndex: 4993
+internal static class Misc // TypeDefIndex: 4995
 {
 
 	public static void Destroy(Object obj) { }

@@ -753,7 +753,7 @@ private sealed class EventProvider.<>c__DisplayClass44_0 // TypeDefIndex: 1604
 
 	public void .ctor() { }
 
-	internal void <GetSessions>b__0(int etwSessionId, long matchAllKeywords) { }
+	internal void <GetSessions>
 
 }
 
@@ -1236,7 +1236,7 @@ private sealed class EventHandlerList.ListEntry // TypeDefIndex: 2705
 
 }
 
-public sealed class Event // TypeDefIndex: 4028
+public sealed class Event // TypeDefIndex: 4030
 {
 
 [NativeHeaderAttribute] 
@@ -1398,7 +1398,7 @@ public sealed class Event
 
 }
 
-public enum EventType // TypeDefIndex: 4029
+public enum EventType // TypeDefIndex: 4031
 {
 	public int value__; 
 	public const EventType MouseDown = 0;
@@ -1462,7 +1462,7 @@ public enum EventType // TypeDefIndex: 4029
 
 }
 
-public enum EventModifiers // TypeDefIndex: 4030
+public enum EventModifiers // TypeDefIndex: 4032
 {
 	public int value__; 
 	public const EventModifiers None = 0;
@@ -1476,7 +1476,7 @@ public enum EventModifiers // TypeDefIndex: 4030
 
 }
 
-internal struct EventInterests // TypeDefIndex: 4032
+internal struct EventInterests // TypeDefIndex: 4034
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -1499,7 +1499,7 @@ internal struct EventInterests // TypeDefIndex: 4032
 
 }
 
-public struct EventDispatcherGate : IDisposable, IEquatable<EventDispatcherGate> // TypeDefIndex: 4585
+public struct EventDispatcherGate : IDisposable, IEquatable<EventDispatcherGate> // TypeDefIndex: 4587
 {
 	private readonly EventDispatcher m_Dispatcher; 
 
@@ -1516,7 +1516,7 @@ public struct EventDispatcherGate : IDisposable, IEquatable<EventDispatcherGate>
 
 }
 
-public sealed class EventDispatcher // TypeDefIndex: 4586
+public sealed class EventDispatcher // TypeDefIndex: 4588
 {
 	private List<IEventDispatchingStrategy> m_DispatchingStrategies; 
 	private static readonly ObjectPool<Queue<EventDispatcher.EventRecord>> k_EventQueuePool; 
@@ -1555,21 +1555,21 @@ public sealed class EventDispatcher // TypeDefIndex: 4586
 
 }
 
-private struct EventDispatcher.EventRecord // TypeDefIndex: 4587
+private struct EventDispatcher.EventRecord // TypeDefIndex: 4589
 {
 	public EventBase m_Event; 
 	public IPanel m_Panel; 
 
 }
 
-private struct EventDispatcher.DispatchContext // TypeDefIndex: 4588
+private struct EventDispatcher.DispatchContext // TypeDefIndex: 4590
 {
 	public uint m_GateCount; 
 	public Queue<EventDispatcher.EventRecord> m_Queue; 
 
 }
 
-public abstract class EventBase : IDisposable // TypeDefIndex: 4643
+public abstract class EventBase : IDisposable // TypeDefIndex: 4645
 {
 	private static long s_LastTypeId; 
 	private static ulong s_NextEventId; 
@@ -1778,7 +1778,7 @@ public abstract class EventBase : IDisposable // TypeDefIndex: 4643
 
 }
 
-internal enum EventBase.EventPropagation // TypeDefIndex: 4644
+internal enum EventBase.EventPropagation // TypeDefIndex: 4646
 {
 	public int value__; 
 	public const EventBase.EventPropagation None = 0;
@@ -1788,7 +1788,7 @@ internal enum EventBase.EventPropagation // TypeDefIndex: 4644
 
 }
 
-private enum EventBase.LifeCycleStatus // TypeDefIndex: 4645
+private enum EventBase.LifeCycleStatus // TypeDefIndex: 4647
 {
 	public int value__; 
 	public const EventBase.LifeCycleStatus None = 0;
@@ -1805,7 +1805,7 @@ private enum EventBase.LifeCycleStatus // TypeDefIndex: 4645
 
 }
 
-internal abstract class EventCallbackFunctorBase // TypeDefIndex: 4647
+internal abstract class EventCallbackFunctorBase // TypeDefIndex: 4649
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -1821,7 +1821,7 @@ internal abstract class EventCallbackFunctorBase // TypeDefIndex: 4647
 
 }
 
-internal class EventCallbackListPool // TypeDefIndex: 4649
+internal class EventCallbackListPool // TypeDefIndex: 4651
 {
 	private readonly Stack<EventCallbackList> m_Stack; 
 
@@ -1834,7 +1834,7 @@ internal class EventCallbackListPool // TypeDefIndex: 4649
 
 }
 
-internal class EventCallbackList // TypeDefIndex: 4650
+internal class EventCallbackList // TypeDefIndex: 4652
 {
 	private List<EventCallbackFunctorBase> m_List; 
 	[CompilerGeneratedAttribute] 
@@ -1876,7 +1876,7 @@ internal class EventCallbackList // TypeDefIndex: 4650
 
 }
 
-internal class EventCallbackRegistry // TypeDefIndex: 4651
+internal class EventCallbackRegistry // TypeDefIndex: 4653
 {
 	private static readonly EventCallbackListPool s_ListPool; 
 	private EventCallbackList m_Callbacks; 
@@ -1898,7 +1898,7 @@ internal class EventCallbackRegistry // TypeDefIndex: 4651
 
 }
 
-internal static class EventDispatchUtilities // TypeDefIndex: 4661
+internal static class EventDispatchUtilities // TypeDefIndex: 4663
 {
 
 	public static void PropagateEvent(EventBase evt) { }
@@ -1909,7 +1909,7 @@ internal static class EventDispatchUtilities // TypeDefIndex: 4661
 
 }
 
-internal struct EventDebuggerLogIMGUICall : IDisposable // TypeDefIndex: 4706
+internal struct EventDebuggerLogIMGUICall : IDisposable // TypeDefIndex: 4708
 {
 
 	public void .ctor(EventBase evt) { }
@@ -1918,7 +1918,7 @@ internal struct EventDebuggerLogIMGUICall : IDisposable // TypeDefIndex: 4706
 
 }
 
-internal struct EventDebuggerLogExecuteDefaultAction : IDisposable // TypeDefIndex: 4707
+internal struct EventDebuggerLogExecuteDefaultAction : IDisposable // TypeDefIndex: 4709
 {
 
 	public void .ctor(EventBase evt) { }
@@ -1927,14 +1927,14 @@ internal struct EventDebuggerLogExecuteDefaultAction : IDisposable // TypeDefInd
 
 }
 
-internal class EventDebugger // TypeDefIndex: 4708
+internal class EventDebugger // TypeDefIndex: 4710
 {
 
 	public static void LogPropagationPaths(EventBase evt, PropagationPaths paths) { }
 
 }
 
-public enum EventHandle // TypeDefIndex: 5056
+public enum EventHandle // TypeDefIndex: 5058
 {
 	public int value__; 
 	public const EventHandle Unused = 0;
@@ -1942,7 +1942,7 @@ public enum EventHandle // TypeDefIndex: 5056
 
 }
 
-public class EventSystem : UIBehaviour // TypeDefIndex: 5075
+public class EventSystem : UIBehaviour // TypeDefIndex: 5077
 {
 	private List<BaseInputModule> m_SystemInputModules; 
 	private BaseInputModule m_CurrentInputModule; 
@@ -2035,7 +2035,7 @@ public class EventSystem : UIBehaviour // TypeDefIndex: 5075
 
 }
 
-public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IScrollHandler, IUpdateSelectedHandler, ISelectHandler, IDeselectHandler, IMoveHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 5076
+public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IScrollHandler, IUpdateSelectedHandler, ISelectHandler, IDeselectHandler, IMoveHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 5078
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 
@@ -2095,14 +2095,14 @@ public class EventTrigger : MonoBehaviour, IPointerEnterHandler, IEventSystemHan
 
 }
 
-public class EventTrigger.TriggerEvent : UnityEvent<BaseEventData> // TypeDefIndex: 5077
+public class EventTrigger.TriggerEvent : UnityEvent<BaseEventData> // TypeDefIndex: 5079
 {
 
 	public void .ctor() { }
 
 }
 
-public class EventTrigger.Entry // TypeDefIndex: 5078
+public class EventTrigger.Entry // TypeDefIndex: 5080
 {
 	public EventTriggerType eventID; 
 	public EventTrigger.TriggerEvent callback; 
@@ -2112,7 +2112,7 @@ public class EventTrigger.Entry // TypeDefIndex: 5078
 
 }
 
-public enum EventTriggerType // TypeDefIndex: 5079
+public enum EventTriggerType // TypeDefIndex: 5081
 {
 	public int value__; 
 	public const EventTriggerType PointerEnter = 0;
@@ -2135,7 +2135,7 @@ public enum EventTriggerType // TypeDefIndex: 5079
 
 }
 
-public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7522
+public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiEvent>, IEnumerable // TypeDefIndex: 7528
 {
 	internal readonly List<MidiEvent> _events; 
 	[CompilerGeneratedAttribute] 
@@ -2171,7 +2171,7 @@ public sealed class EventsCollection : ICollection<MidiEvent>, IEnumerable<MidiE
 
 }
 
-public sealed class EventTypesCollection // TypeDefIndex: 7538
+public sealed class EventTypesCollection // TypeDefIndex: 7544
 {
 	private readonly Dictionary<byte, Type> _types; 
 
@@ -2180,7 +2180,7 @@ public sealed class EventTypesCollection // TypeDefIndex: 7538
 
 }
 
-internal static class EventReaderFactory // TypeDefIndex: 7561
+internal static class EventReaderFactory // TypeDefIndex: 7567
 {
 	private static readonly IEventReader MetaEventReader; 
 	private static readonly IEventReader ChannelEventReader; 
@@ -2195,7 +2195,7 @@ internal static class EventReaderFactory // TypeDefIndex: 7561
 
 }
 
-public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11538
+public class EventSchedule : BaseMonoBehaviour // TypeDefIndex: 11553
 {
 	[TooltipAttribute] 
 	public float minimumHoursBetween; 

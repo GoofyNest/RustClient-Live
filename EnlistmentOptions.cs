@@ -1,4 +1,4 @@
-public enum EnlistmentOptions // TypeDefIndex: 3980
+public enum EnlistmentOptions // TypeDefIndex: 3982
 {
 	public int value__; 
 	public const EnlistmentOptions None = 0;

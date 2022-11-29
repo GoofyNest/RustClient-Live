@@ -1,4 +1,4 @@
-public class FocusController // TypeDefIndex: 4592
+public class FocusController // TypeDefIndex: 4594
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -41,7 +41,7 @@ public class FocusController // TypeDefIndex: 4592
 
 }
 
-private struct FocusController.FocusedElement // TypeDefIndex: 4593
+private struct FocusController.FocusedElement // TypeDefIndex: 4595
 {
 	public VisualElement m_SubTreeRoot; 
 	public Focusable m_FocusedElement; 

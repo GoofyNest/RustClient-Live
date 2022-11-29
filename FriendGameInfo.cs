@@ -1,4 +1,4 @@
-internal struct FriendGameInfo_t // TypeDefIndex: 5517
+internal struct FriendGameInfo_t // TypeDefIndex: 5519
 {
 	internal GameId GameID; 
 	internal uint GameIP; 

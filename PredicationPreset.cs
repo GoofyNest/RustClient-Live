@@ -1,4 +1,4 @@
-public class PredicationPreset // TypeDefIndex: 13311
+public class PredicationPreset // TypeDefIndex: 13349
 {
 	[MinAttribute] 
 	public float Threshold; 

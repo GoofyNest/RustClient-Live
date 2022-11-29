@@ -1,4 +1,4 @@
-public class Buffer16BitStereo : ABuffer // TypeDefIndex: 7385
+public class Buffer16BitStereo : ABuffer // TypeDefIndex: 7391
 {
 
 public class Buffer16BitStereo : ABuffer

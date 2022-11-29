@@ -24,7 +24,7 @@ internal class CrossAppDomainSink : IMessageSink // TypeDefIndex: 1190
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <AsyncProcessMessage>b__10_0(object data) { }
+	private void <AsyncProcessMessage>
 
 }
 

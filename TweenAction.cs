@@ -1,4 +1,4 @@
-public enum TweenAction // TypeDefIndex: 5583
+public enum TweenAction // TypeDefIndex: 5585
 {
 	public int value__; 
 	public const TweenAction MOVE_X = 0;

@@ -1,4 +1,4 @@
-internal struct CopyLobbyDetailsHandleByUiEventIdOptionsInternal : ISettable<CopyLobbyDetailsHandleByUiEventIdOptions>, IDisposable // TypeDefIndex: 9077
+internal struct CopyLobbyDetailsHandleByUiEventIdOptionsInternal : ISettable<CopyLobbyDetailsHandleByUiEventIdOptions>, IDisposable // TypeDefIndex: 9086
 {
 	private int m_ApiVersion; 
 	private ulong m_UiEventId; 

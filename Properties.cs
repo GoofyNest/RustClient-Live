@@ -1,4 +1,4 @@
-public class Properties // TypeDefIndex: 7091
+public class Properties // TypeDefIndex: 7095
 {
 	private object Parent; 
 	private RectTransform Canvas; 
@@ -53,7 +53,7 @@ public class Properties // TypeDefIndex: 7091
 
 }
 
-private sealed class Properties.<>c__DisplayClass10_0 // TypeDefIndex: 7092
+private sealed class Properties.<>c__DisplayClass10_0 // TypeDefIndex: 7096
 {
 	public RustInput ctrl; 
 	public FieldInfo f; 
@@ -62,11 +62,11 @@ private sealed class Properties.<>c__DisplayClass10_0 // TypeDefIndex: 7092
 
 	public void .ctor() { }
 
-	internal void <CreateReadOnlyControl>b__0() { }
+	internal void <CreateReadOnlyControl>
 
 }
 
-private sealed class Properties.<>c__DisplayClass11_0 // TypeDefIndex: 7093
+private sealed class Properties.<>c__DisplayClass11_0 // TypeDefIndex: 7097
 {
 	public FieldInfo f; 
 	public Properties <>4__this; 
@@ -74,23 +74,23 @@ private sealed class Properties.<>c__DisplayClass11_0 // TypeDefIndex: 7093
 
 	public void .ctor() { }
 
-	internal void <CreateStringControl>b__1(Option x) { }
+	internal void <CreateStringControl>
 
 }
 
-private sealed class Properties.<>c__DisplayClass11_1 // TypeDefIndex: 7094
+private sealed class Properties.<>c__DisplayClass11_1 // TypeDefIndex: 7098
 {
 	public RustButtonGroup ctrl; 
-	public Properties.<>c__DisplayClass11_0 CS$<>8__locals1; 
+	public Properties.<>c
 
 
 	public void .ctor() { }
 
-	internal void <CreateStringControl>b__2() { }
+	internal void <CreateStringControl>
 
 }
 
-private sealed class Properties.<>c // TypeDefIndex: 7095
+private sealed class Properties.<>c // TypeDefIndex: 7099
 {
 	public static readonly Properties.<>c <>9; 
 	public static Func<OptionAttribute, Option> <>9__11_0; 
@@ -100,11 +100,11 @@ private sealed class Properties.<>c // TypeDefIndex: 7095
 
 	public void .ctor() { }
 
-	internal Option <CreateStringControl>b__11_0(OptionAttribute x) { }
+	internal Option <CreateStringControl>
 
 }
 
-private sealed class Properties.<>c__DisplayClass12_0 // TypeDefIndex: 7096
+private sealed class Properties.<>c__DisplayClass12_0 // TypeDefIndex: 7100
 {
 	public FieldInfo f; 
 	public Properties <>4__this; 
@@ -113,13 +113,13 @@ private sealed class Properties.<>c__DisplayClass12_0 // TypeDefIndex: 7096
 
 	public void .ctor() { }
 
-	internal void <CreateBooleanControl>b__0(bool x) { }
+	internal void <CreateBooleanControl>
 
-	internal void <CreateBooleanControl>b__1() { }
+	internal void <CreateBooleanControl>
 
 }
 
-private sealed class Properties.<>c__DisplayClass13_0 // TypeDefIndex: 7097
+private sealed class Properties.<>c__DisplayClass13_0 // TypeDefIndex: 7101
 {
 	public FieldInfo f; 
 	public Properties <>4__this; 
@@ -127,19 +127,19 @@ private sealed class Properties.<>c__DisplayClass13_0 // TypeDefIndex: 7097
 
 	public void .ctor() { }
 
-	internal void <CreateNumericControl>b__0(float x) { }
+	internal void <CreateNumericControl>
 
 }
 
-private sealed class Properties.<>c__DisplayClass13_1 // TypeDefIndex: 7098
+private sealed class Properties.<>c__DisplayClass13_1 // TypeDefIndex: 7102
 {
 	public RustSlider ctrl; 
-	public Properties.<>c__DisplayClass13_0 CS$<>8__locals1; 
+	public Properties.<>c
 
 
 	public void .ctor() { }
 
-	internal void <CreateNumericControl>b__1() { }
+	internal void <CreateNumericControl>
 
 }
 

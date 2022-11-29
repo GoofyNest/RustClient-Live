@@ -1,4 +1,4 @@
-public class ERTSidewalkTriangulation : MonoBehaviour // TypeDefIndex: 7304
+public class ERTSidewalkTriangulation : MonoBehaviour // TypeDefIndex: 7308
 {
 
 	public static void OQDCOQDQDO(ERCrossings scr, ref List<Vector3> meshVecs, ref List<Vector2> meshUVs, ref List<List<int>> triList, ref List<Material> materialList) { }

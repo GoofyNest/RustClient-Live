@@ -1,4 +1,4 @@
-internal struct GetInviteCountOptionsInternal : ISettable<GetInviteCountOptions>, IDisposable // TypeDefIndex: 8482
+internal struct GetInviteCountOptionsInternal : ISettable<GetInviteCountOptions>, IDisposable // TypeDefIndex: 8491
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -16,7 +16,7 @@ internal struct GetInviteCountOptionsInternal : ISettable<GetInviteCountOptions>
 
 }
 
-internal struct GetInviteCountOptionsInternal : ISettable<GetInviteCountOptions>, IDisposable // TypeDefIndex: 9091
+internal struct GetInviteCountOptionsInternal : ISettable<GetInviteCountOptions>, IDisposable // TypeDefIndex: 9100
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

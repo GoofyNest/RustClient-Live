@@ -1,4 +1,4 @@
-internal enum HttpHeaderKind // TypeDefIndex: 5778
+internal enum HttpHeaderKind // TypeDefIndex: 5780
 {
 	public int value__; 
 	public const HttpHeaderKind None = 0;

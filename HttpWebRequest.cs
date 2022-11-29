@@ -311,13 +311,13 @@ public class HttpWebRequest : WebRequest, ISerializable // TypeDefIndex: 3006
 	internal void set_ReuseConnection(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <SetWriteStream>b__258_0(SimpleAsyncResult result) { }
+	private void <SetWriteStream>
 
 	[CompilerGeneratedAttribute] 
-	private void <SetWriteStream>b__258_1(SimpleAsyncResult inner) { }
+	private void <SetWriteStream>
 
 	[CompilerGeneratedAttribute] 
-	private bool <SetWriteStreamInner>b__259_0(SimpleAsyncResult result) { }
+	private bool <SetWriteStreamInner>
 
 	[EditorBrowsableAttribute] 
 	[ObsoleteAttribute] 
@@ -370,7 +370,7 @@ private sealed class HttpWebRequest.<>c__DisplayClass238_0 // TypeDefIndex: 3009
 
 	public void .ctor() { }
 
-	internal void <BeginGetResponse>b__0(SimpleAsyncResult inner) { }
+	internal void <BeginGetResponse>
 
 }
 

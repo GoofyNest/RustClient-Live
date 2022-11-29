@@ -1,4 +1,4 @@
-internal struct ShowBlockPlayerOptionsInternal : ISettable<ShowBlockPlayerOptions>, IDisposable // TypeDefIndex: 8366
+internal struct ShowBlockPlayerOptionsInternal : ISettable<ShowBlockPlayerOptions>, IDisposable // TypeDefIndex: 8375
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

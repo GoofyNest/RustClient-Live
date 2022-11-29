@@ -1,4 +1,4 @@
-internal abstract class SqlStreamChars // TypeDefIndex: 4361
+internal abstract class SqlStreamChars // TypeDefIndex: 4363
 {
 	public abstract long Length { get; }
 	public abstract long Position { get; }

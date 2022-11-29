@@ -1,4 +1,4 @@
-internal struct LogEventParamPairParamValueInternal : IGettable<LogEventParamPairParamValue>, ISettable<LogEventParamPairParamValue>, IDisposable // TypeDefIndex: 9759
+internal struct LogEventParamPairParamValueInternal : IGettable<LogEventParamPairParamValue>, ISettable<LogEventParamPairParamValue>, IDisposable // TypeDefIndex: 9768
 {
 	private AntiCheatCommonEventParamType m_ParamValueType; 
 	private IntPtr m_ClientHandle; 

@@ -1,4 +1,4 @@
-public class SqlTypeException : SystemException // TypeDefIndex: 4358
+public class SqlTypeException : SystemException // TypeDefIndex: 4360
 {
 
 	public void .ctor() { }

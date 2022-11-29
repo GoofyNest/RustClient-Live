@@ -1,4 +1,4 @@
-internal struct GSStatsReceived_t : ICallbackData // TypeDefIndex: 5504
+internal struct GSStatsReceived_t : ICallbackData // TypeDefIndex: 5506
 {
 	internal Result Result; 
 	internal ulong SteamIDUser; 

@@ -1,4 +1,4 @@
-public class BaseResource : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6302
+public class BaseResource : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6304
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

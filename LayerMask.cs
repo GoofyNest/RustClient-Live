@@ -1,4 +1,4 @@
-public struct LayerMask // TypeDefIndex: 3518
+public struct LayerMask // TypeDefIndex: 3519
 {
 	[NativeNameAttribute] 
 	private int m_Mask; 
@@ -12,8 +12,8 @@ public struct LayerMask // TypeDefIndex: 3518
 
 	public int get_value() { }
 
-	[NativeMethodAttribute] 
 	[StaticAccessorAttribute] 
+	[NativeMethodAttribute] 
 	public static string LayerToName(int layer) { }
 
 	[NativeMethodAttribute] 

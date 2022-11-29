@@ -1,4 +1,4 @@
-public class ERBlendVecs // TypeDefIndex: 7188
+public class ERBlendVecs // TypeDefIndex: 7192
 {
 	public int verticeIndex; 
 	public int meshIndex; 

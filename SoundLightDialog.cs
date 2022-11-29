@@ -1,4 +1,4 @@
-public class SoundLightDialog : UIDialog // TypeDefIndex: 12640
+public class SoundLightDialog : UIDialog // TypeDefIndex: 12668
 {
 	public RustOption ColourOption; 
 	public RustOption VolumeOption; 

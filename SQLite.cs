@@ -1,4 +1,4 @@
-public sealed class SqliteConnection : DbConnection, ICloneable // TypeDefIndex: 4856
+public sealed class SqliteConnection : DbConnection, ICloneable // TypeDefIndex: 4858
 {
 
 internal class <Module>
@@ -115,7 +115,7 @@ public sealed class SqliteConnection : DbConnection, ICloneable
 
 }
 
-public sealed class SqliteFactory : DbProviderFactory, IServiceProvider // TypeDefIndex: 4857
+public sealed class SqliteFactory : DbProviderFactory, IServiceProvider // TypeDefIndex: 4859
 {
 	private static Type _dbProviderServicesType; 
 	private static object _sqliteServices; 
@@ -132,7 +132,7 @@ public sealed class SqliteFactory : DbProviderFactory, IServiceProvider // TypeD
 
 }
 
-internal class SQLite3 : SQLiteBase // TypeDefIndex: 4858
+internal class SQLite3 : SQLiteBase // TypeDefIndex: 4860
 {
 	protected SqliteConnectionHandle _sql; 
 	protected string _fileName; 
@@ -264,7 +264,7 @@ internal class SQLite3 : SQLiteBase // TypeDefIndex: 4858
 
 }
 
-internal class SQLite3_UTF16 : SQLite3 // TypeDefIndex: 4859
+internal class SQLite3_UTF16 : SQLite3 // TypeDefIndex: 4861
 {
 
 	internal void .ctor(SQLiteDateFormats fmt) { }
@@ -299,7 +299,7 @@ internal class SQLite3_UTF16 : SQLite3 // TypeDefIndex: 4859
 
 }
 
-internal abstract class SQLiteBase : SqliteConvert, IDisposable // TypeDefIndex: 4860
+internal abstract class SQLiteBase : SqliteConvert, IDisposable // TypeDefIndex: 4862
 {
 	internal static object _lock; 
 
@@ -435,7 +435,7 @@ internal abstract class SQLiteBase : SqliteConvert, IDisposable // TypeDefIndex:
 
 }
 
-internal enum SQLiteOpenFlagsEnum // TypeDefIndex: 4862
+internal enum SQLiteOpenFlagsEnum // TypeDefIndex: 4864
 {
 	public int value__; 
 	public const SQLiteOpenFlagsEnum None = 0;
@@ -450,7 +450,7 @@ internal enum SQLiteOpenFlagsEnum // TypeDefIndex: 4862
 
 }
 
-public sealed class SqliteCommand : DbCommand, ICloneable // TypeDefIndex: 4863
+public sealed class SqliteCommand : DbCommand, ICloneable // TypeDefIndex: 4865
 {
 	private string _commandText; 
 	private SqliteConnection _cnn; 
@@ -569,7 +569,7 @@ public sealed class SqliteCommand : DbCommand, ICloneable // TypeDefIndex: 4863
 
 }
 
-public sealed class SqliteCommandBuilder : DbCommandBuilder // TypeDefIndex: 4864
+public sealed class SqliteCommandBuilder : DbCommandBuilder // TypeDefIndex: 4866
 {
 	public SqliteDataAdapter DataAdapter { set; }
 	[BrowsableAttribute] 
@@ -629,7 +629,7 @@ public sealed class SqliteCommandBuilder : DbCommandBuilder // TypeDefIndex: 486
 
 }
 
-internal sealed class SQLiteUpdateCallback : MulticastDelegate // TypeDefIndex: 4865
+internal sealed class SQLiteUpdateCallback : MulticastDelegate // TypeDefIndex: 4867
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -642,7 +642,7 @@ internal sealed class SQLiteUpdateCallback : MulticastDelegate // TypeDefIndex: 
 
 }
 
-internal sealed class SQLiteCommitCallback : MulticastDelegate // TypeDefIndex: 4866
+internal sealed class SQLiteCommitCallback : MulticastDelegate // TypeDefIndex: 4868
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -655,7 +655,7 @@ internal sealed class SQLiteCommitCallback : MulticastDelegate // TypeDefIndex: 
 
 }
 
-internal sealed class SQLiteRollbackCallback : MulticastDelegate // TypeDefIndex: 4867
+internal sealed class SQLiteRollbackCallback : MulticastDelegate // TypeDefIndex: 4869
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -668,7 +668,7 @@ internal sealed class SQLiteRollbackCallback : MulticastDelegate // TypeDefIndex
 
 }
 
-public sealed class SQLiteCommitHandler : MulticastDelegate // TypeDefIndex: 4868
+public sealed class SQLiteCommitHandler : MulticastDelegate // TypeDefIndex: 4870
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -681,7 +681,7 @@ public sealed class SQLiteCommitHandler : MulticastDelegate // TypeDefIndex: 486
 
 }
 
-public sealed class SQLiteUpdateEventHandler : MulticastDelegate // TypeDefIndex: 4869
+public sealed class SQLiteUpdateEventHandler : MulticastDelegate // TypeDefIndex: 4871
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -694,7 +694,7 @@ public sealed class SQLiteUpdateEventHandler : MulticastDelegate // TypeDefIndex
 
 }
 
-internal static class SqliteConnectionPool // TypeDefIndex: 4872
+internal static class SqliteConnectionPool // TypeDefIndex: 4874
 {
 
 public class CommitEventArgs : EventArgs
@@ -714,7 +714,7 @@ internal static class SqliteConnectionPool
 
 }
 
-internal class SqliteConnectionPool.Pool // TypeDefIndex: 4873
+internal class SqliteConnectionPool.Pool // TypeDefIndex: 4875
 {
 	internal readonly Queue<WeakReference> Queue; 
 	internal int PoolVersion; 
@@ -725,7 +725,7 @@ internal class SqliteConnectionPool.Pool // TypeDefIndex: 4873
 
 }
 
-public abstract class SqliteConvert // TypeDefIndex: 4874
+public abstract class SqliteConvert // TypeDefIndex: 4876
 {
 	protected static readonly DateTime UnixEpoch; 
 	private static string[] _datetimeFormats; 
@@ -788,7 +788,7 @@ public abstract class SqliteConvert // TypeDefIndex: 4874
 
 }
 
-public enum SQLiteDateFormats // TypeDefIndex: 4876
+public enum SQLiteDateFormats // TypeDefIndex: 4878
 {
 	public int value__; 
 	public const SQLiteDateFormats Ticks = 0;
@@ -798,7 +798,7 @@ public enum SQLiteDateFormats // TypeDefIndex: 4876
 
 }
 
-internal class SQLiteType // TypeDefIndex: 4877
+internal class SQLiteType // TypeDefIndex: 4879
 {
 	internal DbType Type; 
 	internal TypeAffinity Affinity; 
@@ -808,7 +808,7 @@ internal class SQLiteType // TypeDefIndex: 4877
 
 }
 
-internal struct SQLiteTypeNames // TypeDefIndex: 4878
+internal struct SQLiteTypeNames // TypeDefIndex: 4880
 {
 	internal string typeName; 
 	internal DbType dataType; 
@@ -818,7 +818,7 @@ internal struct SQLiteTypeNames // TypeDefIndex: 4878
 
 }
 
-public sealed class SqliteDataAdapter : DbDataAdapter // TypeDefIndex: 4879
+public sealed class SqliteDataAdapter : DbDataAdapter // TypeDefIndex: 4881
 {
 	private static object _updatingEventPH; 
 	private static object _updatedEventPH; 
@@ -834,7 +834,7 @@ public sealed class SqliteDataAdapter : DbDataAdapter // TypeDefIndex: 4879
 
 }
 
-public sealed class SqliteDataReader : DbDataReader // TypeDefIndex: 4880
+public sealed class SqliteDataReader : DbDataReader // TypeDefIndex: 4882
 {
 	private SqliteCommand _command; 
 	private int _activeStatementIndex; 
@@ -911,7 +911,7 @@ public sealed class SqliteDataReader : DbDataReader // TypeDefIndex: 4880
 
 }
 
-internal class SQLiteEnlistment : IEnlistmentNotification // TypeDefIndex: 4881
+internal class SQLiteEnlistment : IEnlistmentNotification // TypeDefIndex: 4883
 {
 	internal SqliteTransaction _transaction; 
 	internal Transaction _scope; 
@@ -926,7 +926,7 @@ internal class SQLiteEnlistment : IEnlistmentNotification // TypeDefIndex: 4881
 
 }
 
-public sealed class SqliteException : DbException // TypeDefIndex: 4882
+public sealed class SqliteException : DbException // TypeDefIndex: 4884
 {
 	private SQLiteErrorCode _errorCode; 
 	private static string[] _errorMessages; 
@@ -944,7 +944,7 @@ public sealed class SqliteException : DbException // TypeDefIndex: 4882
 
 }
 
-public enum SQLiteErrorCode // TypeDefIndex: 4883
+public enum SQLiteErrorCode // TypeDefIndex: 4885
 {
 	public int value__; 
 	public const SQLiteErrorCode Ok = 0;
@@ -979,7 +979,7 @@ public enum SQLiteErrorCode // TypeDefIndex: 4883
 
 }
 
-public abstract class SqliteFunction // TypeDefIndex: 4884
+public abstract class SqliteFunction // TypeDefIndex: 4886
 {
 	internal SQLiteBase _base; 
 	private Dictionary<long, SqliteFunction.AggregateData> _contextDataList; 
@@ -1020,7 +1020,7 @@ public abstract class SqliteFunction // TypeDefIndex: 4884
 
 }
 
-private class SqliteFunction.AggregateData // TypeDefIndex: 4885
+private class SqliteFunction.AggregateData // TypeDefIndex: 4887
 {
 	internal int _count; 
 	internal object _data; 
@@ -1030,7 +1030,7 @@ private class SqliteFunction.AggregateData // TypeDefIndex: 4885
 
 }
 
-internal sealed class SQLiteCallback : MulticastDelegate // TypeDefIndex: 4888
+internal sealed class SQLiteCallback : MulticastDelegate // TypeDefIndex: 4890
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1043,7 +1043,7 @@ internal sealed class SQLiteCallback : MulticastDelegate // TypeDefIndex: 4888
 
 }
 
-internal sealed class SQLiteFinalCallback : MulticastDelegate // TypeDefIndex: 4889
+internal sealed class SQLiteFinalCallback : MulticastDelegate // TypeDefIndex: 4891
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1056,7 +1056,7 @@ internal sealed class SQLiteFinalCallback : MulticastDelegate // TypeDefIndex: 4
 
 }
 
-internal sealed class SQLiteCollation : MulticastDelegate // TypeDefIndex: 4890
+internal sealed class SQLiteCollation : MulticastDelegate // TypeDefIndex: 4892
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -1069,7 +1069,7 @@ internal sealed class SQLiteCollation : MulticastDelegate // TypeDefIndex: 4890
 
 }
 
-public sealed class SqliteFunctionAttribute : Attribute // TypeDefIndex: 4891
+public sealed class SqliteFunctionAttribute : Attribute // TypeDefIndex: 4893
 {
 	private string _name; 
 	private int _arguments; 
@@ -1089,7 +1089,7 @@ public sealed class SqliteFunctionAttribute : Attribute // TypeDefIndex: 4891
 
 }
 
-internal sealed class SqliteKeyReader : IDisposable // TypeDefIndex: 4892
+internal sealed class SqliteKeyReader : IDisposable // TypeDefIndex: 4894
 {
 	private SqliteKeyReader.KeyInfo[] _keyInfo; 
 	private SqliteStatement _stmt; 
@@ -1132,7 +1132,7 @@ internal sealed class SqliteKeyReader : IDisposable // TypeDefIndex: 4892
 
 }
 
-private struct SqliteKeyReader.KeyInfo // TypeDefIndex: 4893
+private struct SqliteKeyReader.KeyInfo // TypeDefIndex: 4895
 {
 	internal string databaseName; 
 	internal string tableName; 
@@ -1145,7 +1145,7 @@ private struct SqliteKeyReader.KeyInfo // TypeDefIndex: 4893
 
 }
 
-private sealed class SqliteKeyReader.KeyQuery : IDisposable // TypeDefIndex: 4894
+private sealed class SqliteKeyReader.KeyQuery : IDisposable // TypeDefIndex: 4896
 {
 	private SqliteCommand _command; 
 	internal SqliteDataReader _reader; 
@@ -1163,7 +1163,7 @@ private sealed class SqliteKeyReader.KeyQuery : IDisposable // TypeDefIndex: 489
 
 }
 
-public sealed class SqliteParameter : DbParameter, ICloneable // TypeDefIndex: 4895
+public sealed class SqliteParameter : DbParameter, ICloneable // TypeDefIndex: 4897
 {
 	internal int _dbType; 
 	private DataRowVersion _rowVersion; 
@@ -1237,7 +1237,7 @@ public sealed class SqliteParameter : DbParameter, ICloneable // TypeDefIndex: 4
 
 }
 
-public sealed class SqliteParameterCollection : DbParameterCollection // TypeDefIndex: 4896
+public sealed class SqliteParameterCollection : DbParameterCollection // TypeDefIndex: 4898
 {
 	private SqliteCommand _command; 
 	private List<SqliteParameter> _parameterList; 
@@ -1297,7 +1297,7 @@ public sealed class SqliteParameterCollection : DbParameterCollection // TypeDef
 
 }
 
-internal sealed class SqliteStatement : IDisposable // TypeDefIndex: 4897
+internal sealed class SqliteStatement : IDisposable // TypeDefIndex: 4899
 {
 	internal SQLiteBase _sql; 
 	internal string _sqlStatement; 
@@ -1327,7 +1327,7 @@ internal sealed class SqliteStatement : IDisposable // TypeDefIndex: 4897
 
 }
 
-public sealed class SqliteTransaction : DbTransaction // TypeDefIndex: 4898
+public sealed class SqliteTransaction : DbTransaction // TypeDefIndex: 4900
 {
 	internal SqliteConnection _cnn; 
 	internal long _version; 
@@ -1352,7 +1352,7 @@ public sealed class SqliteTransaction : DbTransaction // TypeDefIndex: 4898
 
 }
 
-internal class SqliteConnectionHandle : CriticalHandle // TypeDefIndex: 4901
+internal class SqliteConnectionHandle : CriticalHandle // TypeDefIndex: 4903
 {
 	public override bool IsInvalid { get; }
 
@@ -1371,7 +1371,7 @@ internal class SqliteConnectionHandle : CriticalHandle // TypeDefIndex: 4901
 
 }
 
-internal class SqliteStatementHandle : CriticalHandle // TypeDefIndex: 4902
+internal class SqliteStatementHandle : CriticalHandle // TypeDefIndex: 4904
 {
 	public override bool IsInvalid { get; }
 
@@ -1390,7 +1390,7 @@ internal class SqliteStatementHandle : CriticalHandle // TypeDefIndex: 4902
 
 }
 
-public class SqliteException : Exception // TypeDefIndex: 7368
+public class SqliteException : Exception // TypeDefIndex: 7372
 {
 
 	public void .ctor(string message) { }

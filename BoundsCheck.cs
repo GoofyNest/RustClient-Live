@@ -1,4 +1,4 @@
-public class BoundsCheck : PrefabAttribute // TypeDefIndex: 12004
+public class BoundsCheck : PrefabAttribute // TypeDefIndex: 12024
 {
 	public BoundsCheck.BlockType IsType; 
 
@@ -9,7 +9,7 @@ public class BoundsCheck : PrefabAttribute // TypeDefIndex: 12004
 
 }
 
-public enum BoundsCheck.BlockType // TypeDefIndex: 12005
+public enum BoundsCheck.BlockType // TypeDefIndex: 12025
 {
 	public int value__; 
 	public const BoundsCheck.BlockType Tree = 0;

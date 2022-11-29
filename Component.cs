@@ -41,7 +41,7 @@ public class Component : MarshalByRefObject, IComponent, IDisposable // TypeDefI
 
 }
 
-public class Component : Object // TypeDefIndex: 3510
+public class Component : Object // TypeDefIndex: 3511
 {
 	public Transform transform { get; }
 	public GameObject gameObject { get; }
@@ -364,6 +364,7 @@ public class Component : Object // TypeDefIndex: 3510
 	|-Component.TryGetComponent<MeshFilter>
 	|-Component.TryGetComponent<ParticleSystem>
 	|-Component.TryGetComponent<Renderer>
+	|-Component.TryGetComponent<Shadow>
 	|-Component.TryGetComponent<ViewModel>
 	|-Component.TryGetComponent<WaterBody>
 	|-Component.TryGetComponent<WearableEyeViewAdjustment>

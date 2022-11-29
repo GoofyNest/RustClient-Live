@@ -1,4 +1,4 @@
-public class PropertyCollection : Hashtable, ICloneable // TypeDefIndex: 4285
+public class PropertyCollection : Hashtable, ICloneable // TypeDefIndex: 4287
 {
 
 [Serializable]

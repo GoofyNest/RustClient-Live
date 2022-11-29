@@ -14,7 +14,7 @@ private sealed class CallbackHelpers.<>c__DisplayClass5_0 // TypeDefIndex: 2557
 
 	public void .ctor() { }
 
-	internal bool <MonoToPublic>b__0(object t, X509Certificate c, X509Chain ch, SslPolicyErrors e) { }
+	internal bool <MonoToPublic>
 
 }
 
@@ -25,7 +25,7 @@ private sealed class CallbackHelpers.<>c__DisplayClass8_0 // TypeDefIndex: 2558
 
 	public void .ctor() { }
 
-	internal X509Certificate <MonoToInternal>b__0(string t, X509CertificateCollection lc, X509Certificate rc, string[] ai) { }
+	internal X509Certificate <MonoToInternal>
 
 }
 

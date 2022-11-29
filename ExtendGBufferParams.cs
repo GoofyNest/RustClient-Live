@@ -1,4 +1,4 @@
-public struct ExtendGBufferParams // TypeDefIndex: 12386
+public struct ExtendGBufferParams // TypeDefIndex: 12406
 {
 	public bool enabled; 
 	public static ExtendGBufferParams Default; 

@@ -1,4 +1,4 @@
-public class ConditionalGibbable : MonoBehaviour // TypeDefIndex: 11560
+public class ConditionalGibbable : MonoBehaviour // TypeDefIndex: 11575
 {
 	[ReadOnlyAttribute] 
 	public int id; 

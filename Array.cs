@@ -280,7 +280,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<BaseEntity.QueuedFileRequest>
 	|
-	|-Array.IndexOf<CardTableUI.KeycodeWithAction>
+	|-Array.IndexOf<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.IndexOf<Cassette.LoadRequest>
 	|
@@ -510,8 +510,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOf<KeyValuePair<object, float>>
 	|
-	|-Array.IndexOf<KeyValuePair<object, Color>>
-	|
 	|-Array.IndexOf<KeyValuePair<uint, object>>
 	|
 	|-Array.IndexOf<KeyValuePair<ulong, Dispatch.ResultCallback>>
@@ -709,7 +707,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Reverse<BaseEntity.PendingFileRequest>
 	|
-	|-Array.Reverse<CardTableUI.KeycodeWithAction>
+	|-Array.Reverse<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.Reverse<Cassette.LoadRequest>
 	|
@@ -937,8 +935,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Reverse<KeyValuePair<object, float>>
 	|
-	|-Array.Reverse<KeyValuePair<object, Color>>
-	|
 	|-Array.Reverse<KeyValuePair<uint, object>>
 	|
 	|-Array.Reverse<KeyValuePair<ulong, Dispatch.ResultCallback>>
@@ -1117,7 +1113,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.Sort<BaseEntity.PendingFileRequest>
 	|
-	|-Array.Sort<CardTableUI.KeycodeWithAction>
+	|-Array.Sort<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.Sort<Cassette.LoadRequest>
 	|
@@ -1350,8 +1346,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.Sort<KeyValuePair<object, object>>
 	|
 	|-Array.Sort<KeyValuePair<object, float>>
-	|
-	|-Array.Sort<KeyValuePair<object, Color>>
 	|
 	|-Array.Sort<KeyValuePair<uint, object>>
 	|
@@ -1592,7 +1586,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.PendingFileRequest>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<BaseEntity.QueuedFileRequest>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CameraMan.CameraState>
-	|-Array.InternalArray__IEnumerable_GetEnumerator<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<CardGameUI.KeycodeWithAction>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Cassette.LoadRequest>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<CommandBufferManager.CommandBufferEntry>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Admin.PlayerInfo>
@@ -1685,6 +1679,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<Kayak.PlayerAnimationState>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyframeView.UIKeyframeValue>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<LifeInfographic.DamageSetting>
+	|-Array.InternalArray__IEnumerable_GetEnumerator<LightGroupAtTime.EmissiveCols>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<LocalClock.TimedEvent>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<LookAtIOEnt.HandleSet>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<LootContainer.LootSpawnSlot>
@@ -2101,7 +2096,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, uint>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, ulong>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, ValueTuple<object, object>>>
-	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, Color>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<object, Vector3>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<float, bool>>
 	|-Array.InternalArray__IEnumerable_GetEnumerator<KeyValuePair<float, Decimal>>
@@ -2348,7 +2342,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Add<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__ICollection_Add<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__ICollection_Add<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__ICollection_Add<Cassette.LoadRequest>
 	|
@@ -2533,6 +2527,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Add<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__ICollection_Add<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__ICollection_Add<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__ICollection_Add<LocalClock.TimedEvent>
 	|
@@ -3366,8 +3362,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Add<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__ICollection_Add<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__ICollection_Add<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__ICollection_Add<KeyValuePair<float, bool>>
@@ -3836,7 +3830,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__ICollection_Remove<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__ICollection_Remove<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__ICollection_Remove<Cassette.LoadRequest>
 	|
@@ -4021,6 +4015,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Remove<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__ICollection_Remove<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__ICollection_Remove<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__ICollection_Remove<LocalClock.TimedEvent>
 	|
@@ -4854,8 +4850,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Remove<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__ICollection_Remove<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__ICollection_Remove<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__ICollection_Remove<KeyValuePair<float, bool>>
@@ -5324,7 +5318,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__ICollection_Contains<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__ICollection_Contains<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__ICollection_Contains<Cassette.LoadRequest>
 	|
@@ -5509,6 +5503,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_Contains<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__ICollection_Contains<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__ICollection_Contains<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__ICollection_Contains<LocalClock.TimedEvent>
 	|
@@ -6342,8 +6338,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__ICollection_Contains<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__ICollection_Contains<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__ICollection_Contains<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__ICollection_Contains<KeyValuePair<float, bool>>
@@ -6805,7 +6799,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.PendingFileRequest>
 	|-Array.InternalArray__ICollection_CopyTo<BaseEntity.QueuedFileRequest>
 	|-Array.InternalArray__ICollection_CopyTo<CameraMan.CameraState>
-	|-Array.InternalArray__ICollection_CopyTo<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__ICollection_CopyTo<CardGameUI.KeycodeWithAction>
 	|-Array.InternalArray__ICollection_CopyTo<Cassette.LoadRequest>
 	|-Array.InternalArray__ICollection_CopyTo<CommandBufferManager.CommandBufferEntry>
 	|-Array.InternalArray__ICollection_CopyTo<Admin.PlayerInfo>
@@ -6898,6 +6892,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<Kayak.PlayerAnimationState>
 	|-Array.InternalArray__ICollection_CopyTo<KeyframeView.UIKeyframeValue>
 	|-Array.InternalArray__ICollection_CopyTo<LifeInfographic.DamageSetting>
+	|-Array.InternalArray__ICollection_CopyTo<LightGroupAtTime.EmissiveCols>
 	|-Array.InternalArray__ICollection_CopyTo<LocalClock.TimedEvent>
 	|-Array.InternalArray__ICollection_CopyTo<LookAtIOEnt.HandleSet>
 	|-Array.InternalArray__ICollection_CopyTo<LootContainer.LootSpawnSlot>
@@ -7314,7 +7309,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, uint>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, ulong>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, ValueTuple<object, object>>>
-	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, Color>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<object, Vector3>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<float, bool>>
 	|-Array.InternalArray__ICollection_CopyTo<KeyValuePair<float, Decimal>>
@@ -7559,7 +7553,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__IReadOnlyList_get_Item<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__IReadOnlyList_get_Item<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<Cassette.LoadRequest>
 	|
@@ -7744,6 +7738,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__IReadOnlyList_get_Item<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<LocalClock.TimedEvent>
 	|
@@ -8577,8 +8573,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__IReadOnlyList_get_Item<KeyValuePair<float, bool>>
@@ -9049,7 +9043,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__Insert<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__Insert<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__Insert<Cassette.LoadRequest>
 	|
@@ -9234,6 +9228,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__Insert<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__Insert<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__Insert<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__Insert<LocalClock.TimedEvent>
 	|
@@ -10067,8 +10063,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__Insert<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__Insert<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__Insert<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__Insert<KeyValuePair<float, bool>>
@@ -10539,7 +10533,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__IndexOf<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__IndexOf<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__IndexOf<Cassette.LoadRequest>
 	|
@@ -10724,6 +10718,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__IndexOf<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__IndexOf<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__IndexOf<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__IndexOf<LocalClock.TimedEvent>
 	|
@@ -11557,8 +11553,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__IndexOf<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__IndexOf<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__IndexOf<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__IndexOf<KeyValuePair<float, bool>>
@@ -12027,7 +12021,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__get_Item<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__get_Item<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__get_Item<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__get_Item<Cassette.LoadRequest>
 	|
@@ -12212,6 +12206,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__get_Item<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__get_Item<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__get_Item<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__get_Item<LocalClock.TimedEvent>
 	|
@@ -13045,8 +13041,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__get_Item<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__get_Item<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__get_Item<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__get_Item<KeyValuePair<float, bool>>
@@ -13515,7 +13509,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<CameraMan.CameraState>
 	|
-	|-Array.InternalArray__set_Item<CardTableUI.KeycodeWithAction>
+	|-Array.InternalArray__set_Item<CardGameUI.KeycodeWithAction>
 	|
 	|-Array.InternalArray__set_Item<Cassette.LoadRequest>
 	|
@@ -13700,6 +13694,8 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.InternalArray__set_Item<KeyframeView.UIKeyframeValue>
 	|
 	|-Array.InternalArray__set_Item<LifeInfographic.DamageSetting>
+	|
+	|-Array.InternalArray__set_Item<LightGroupAtTime.EmissiveCols>
 	|
 	|-Array.InternalArray__set_Item<LocalClock.TimedEvent>
 	|
@@ -14533,8 +14529,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.InternalArray__set_Item<KeyValuePair<object, ValueTuple<object, object>>>
 	|
-	|-Array.InternalArray__set_Item<KeyValuePair<object, Color>>
-	|
 	|-Array.InternalArray__set_Item<KeyValuePair<object, Vector3>>
 	|
 	|-Array.InternalArray__set_Item<KeyValuePair<float, bool>>
@@ -15141,7 +15135,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<InventoryRecipe.Ingredient>
 	|-Array.IndexOfImpl<InventoryRecipe>
 	|-Array.IndexOfImpl<SynchronizedClock.TimedEvent>
-	|-Array.IndexOfImpl<KeyValuePair<object, Color>>
 	|-Array.IndexOfImpl<KeyValuePair<ulong, Dispatch.ResultCallback>>
 	|-Array.IndexOfImpl<UnitySynchronizationContext.WorkRequest>
 	|
@@ -15196,7 +15189,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|
 	|-Array.IndexOfImpl<BaseEntity.PendingFileRequest>
 	|-Array.IndexOfImpl<BaseEntity.QueuedFileRequest>
-	|-Array.IndexOfImpl<CardTableUI.KeycodeWithAction>
 	|-Array.IndexOfImpl<Demos.DemoInfo>
 	|-Array.IndexOfImpl<Output.Entry>
 	|-Array.IndexOfImpl<IconSkinPicker.SkinButtonSetup>
@@ -15215,10 +15207,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<SpecialPurposeCamera.RenderEntry>
 	|-Array.IndexOfImpl<InventoryItem>
 	|
-	|-Array.IndexOfImpl<Admin.PlayerInfo>
-	|-Array.IndexOfImpl<PlaceMonuments.SpawnInfo>
-	|-Array.IndexOfImpl<Matrix4x4>
-	|
+	|-Array.IndexOfImpl<CardGameUI.KeycodeWithAction>
 	|-Array.IndexOfImpl<Admin.ServerUGCInfo>
 	|-Array.IndexOfImpl<CapsuleParams>
 	|-Array.IndexOfImpl<RCon.Command>
@@ -15229,6 +15218,10 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.IndexOfImpl<RenderTargetIdentifier>
 	|-Array.IndexOfImpl<TreeInstance>
 	|-Array.IndexOfImpl<ViewModelDrawEvent>
+	|
+	|-Array.IndexOfImpl<Admin.PlayerInfo>
+	|-Array.IndexOfImpl<PlaceMonuments.SpawnInfo>
+	|-Array.IndexOfImpl<Matrix4x4>
 	|
 	|-Array.IndexOfImpl<CRedge>
 	|-Array.IndexOfImpl<ProjectileWeaponMod.Modifier>
@@ -15380,7 +15373,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<InventoryRecipe.Ingredient>
 	|-Array.UnsafeLoad<InventoryRecipe>
 	|-Array.UnsafeLoad<SynchronizedClock.TimedEvent>
-	|-Array.UnsafeLoad<KeyValuePair<object, Color>>
 	|-Array.UnsafeLoad<KeyValuePair<ulong, Dispatch.ResultCallback>>
 	|-Array.UnsafeLoad<UnitySynchronizationContext.WorkRequest>
 	|
@@ -15431,7 +15423,6 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<WorldSplineData.LUTEntry.LUTPoint>
 	|
 	|-Array.UnsafeLoad<BaseEntity.PendingFileRequest>
-	|-Array.UnsafeLoad<CardTableUI.KeycodeWithAction>
 	|-Array.UnsafeLoad<Demos.DemoInfo>
 	|-Array.UnsafeLoad<Output.Entry>
 	|-Array.UnsafeLoad<IconSkinPicker.SkinButtonSetup>
@@ -15449,9 +15440,7 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<SpecialPurposeCamera.RenderEntry>
 	|-Array.UnsafeLoad<InventoryItem>
 	|
-	|-Array.UnsafeLoad<Admin.PlayerInfo>
-	|-Array.UnsafeLoad<PlaceMonuments.SpawnInfo>
-	|
+	|-Array.UnsafeLoad<CardGameUI.KeycodeWithAction>
 	|-Array.UnsafeLoad<Admin.ServerUGCInfo>
 	|-Array.UnsafeLoad<CapsuleParams>
 	|-Array.UnsafeLoad<SkeletonDefinition.Bone>
@@ -15461,6 +15450,9 @@ public abstract class Array : ICollection, IEnumerable, IList, IStructuralCompar
 	|-Array.UnsafeLoad<RenderTargetIdentifier>
 	|-Array.UnsafeLoad<TreeInstance>
 	|-Array.UnsafeLoad<ViewModelDrawEvent>
+	|
+	|-Array.UnsafeLoad<Admin.PlayerInfo>
+	|-Array.UnsafeLoad<PlaceMonuments.SpawnInfo>
 	|
 	|-Array.UnsafeLoad<CRedge>
 	|-Array.UnsafeLoad<ProjectileWeaponMod.Modifier>
@@ -15617,7 +15609,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>..ctor
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>..ctor
 	|-Array.InternalEnumerator<CameraMan.CameraState>..ctor
-	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>..ctor
+	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>..ctor
 	|-Array.InternalEnumerator<Cassette.LoadRequest>..ctor
 	|-Array.InternalEnumerator<CommandBufferManager.CommandBufferEntry>..ctor
 	|-Array.InternalEnumerator<Admin.PlayerInfo>..ctor
@@ -15710,6 +15702,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>..ctor
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>..ctor
 	|-Array.InternalEnumerator<LifeInfographic.DamageSetting>..ctor
+	|-Array.InternalEnumerator<LightGroupAtTime.EmissiveCols>..ctor
 	|-Array.InternalEnumerator<LocalClock.TimedEvent>..ctor
 	|-Array.InternalEnumerator<LookAtIOEnt.HandleSet>..ctor
 	|-Array.InternalEnumerator<LootContainer.LootSpawnSlot>..ctor
@@ -16126,7 +16119,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<object, uint>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<object, ulong>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>..ctor
-	|-Array.InternalEnumerator<KeyValuePair<object, Color>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<object, Vector3>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<float, bool>>..ctor
 	|-Array.InternalEnumerator<KeyValuePair<float, Decimal>>..ctor
@@ -16364,7 +16356,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.Dispose
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.Dispose
 	|-Array.InternalEnumerator<CameraMan.CameraState>.Dispose
-	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.Dispose
+	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.Dispose
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.Dispose
 	|-Array.InternalEnumerator<CommandBufferManager.CommandBufferEntry>.Dispose
 	|-Array.InternalEnumerator<Admin.PlayerInfo>.Dispose
@@ -16457,6 +16449,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>.Dispose
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.Dispose
 	|-Array.InternalEnumerator<LifeInfographic.DamageSetting>.Dispose
+	|-Array.InternalEnumerator<LightGroupAtTime.EmissiveCols>.Dispose
 	|-Array.InternalEnumerator<LocalClock.TimedEvent>.Dispose
 	|-Array.InternalEnumerator<LookAtIOEnt.HandleSet>.Dispose
 	|-Array.InternalEnumerator<LootContainer.LootSpawnSlot>.Dispose
@@ -16873,7 +16866,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<object, uint>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<object, ulong>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.Dispose
-	|-Array.InternalEnumerator<KeyValuePair<object, Color>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<object, Vector3>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<float, bool>>.Dispose
 	|-Array.InternalEnumerator<KeyValuePair<float, Decimal>>.Dispose
@@ -17111,7 +17103,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.MoveNext
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.MoveNext
 	|-Array.InternalEnumerator<CameraMan.CameraState>.MoveNext
-	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.MoveNext
+	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.MoveNext
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.MoveNext
 	|-Array.InternalEnumerator<CommandBufferManager.CommandBufferEntry>.MoveNext
 	|-Array.InternalEnumerator<Admin.PlayerInfo>.MoveNext
@@ -17204,6 +17196,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>.MoveNext
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.MoveNext
 	|-Array.InternalEnumerator<LifeInfographic.DamageSetting>.MoveNext
+	|-Array.InternalEnumerator<LightGroupAtTime.EmissiveCols>.MoveNext
 	|-Array.InternalEnumerator<LocalClock.TimedEvent>.MoveNext
 	|-Array.InternalEnumerator<LookAtIOEnt.HandleSet>.MoveNext
 	|-Array.InternalEnumerator<LootContainer.LootSpawnSlot>.MoveNext
@@ -17620,7 +17613,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<object, uint>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<object, ulong>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.MoveNext
-	|-Array.InternalEnumerator<KeyValuePair<object, Color>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<object, Vector3>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<float, bool>>.MoveNext
 	|-Array.InternalEnumerator<KeyValuePair<float, Decimal>>.MoveNext
@@ -17865,7 +17857,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<CameraMan.CameraState>.get_Current
 	|
-	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.get_Current
+	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.get_Current
 	|
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.get_Current
 	|
@@ -18050,6 +18042,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.get_Current
 	|
 	|-Array.InternalEnumerator<LifeInfographic.DamageSetting>.get_Current
+	|
+	|-Array.InternalEnumerator<LightGroupAtTime.EmissiveCols>.get_Current
 	|
 	|-Array.InternalEnumerator<LocalClock.TimedEvent>.get_Current
 	|
@@ -18883,8 +18877,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.get_Current
 	|
-	|-Array.InternalEnumerator<KeyValuePair<object, Color>>.get_Current
-	|
 	|-Array.InternalEnumerator<KeyValuePair<object, Vector3>>.get_Current
 	|
 	|-Array.InternalEnumerator<KeyValuePair<float, bool>>.get_Current
@@ -19346,7 +19338,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.Reset
-	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<CommandBufferManager.CommandBufferEntry>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.Reset
@@ -19439,6 +19431,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<Kayak.PlayerAnimationState>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<LifeInfographic.DamageSetting>.System.Collections.IEnumerator.Reset
+	|-Array.InternalEnumerator<LightGroupAtTime.EmissiveCols>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<LocalClock.TimedEvent>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<LookAtIOEnt.HandleSet>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<LootContainer.LootSpawnSlot>.System.Collections.IEnumerator.Reset
@@ -19855,7 +19848,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyValuePair<object, uint>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<object, ulong>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.System.Collections.IEnumerator.Reset
-	|-Array.InternalEnumerator<KeyValuePair<object, Color>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<object, Vector3>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<float, bool>>.System.Collections.IEnumerator.Reset
 	|-Array.InternalEnumerator<KeyValuePair<float, Decimal>>.System.Collections.IEnumerator.Reset
@@ -20100,7 +20092,7 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.InternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
+	|-Array.InternalEnumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.get_Current
 	|
@@ -20285,6 +20277,8 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|-Array.InternalEnumerator<KeyframeView.UIKeyframeValue>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<LifeInfographic.DamageSetting>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.InternalEnumerator<LightGroupAtTime.EmissiveCols>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<LocalClock.TimedEvent>.System.Collections.IEnumerator.get_Current
 	|
@@ -21118,8 +21112,6 @@ internal struct Array.InternalEnumerator<T> : IEnumerator<T>, IDisposable, IEnum
 	|
 	|-Array.InternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.InternalEnumerator<KeyValuePair<object, Color>>.System.Collections.IEnumerator.get_Current
-	|
 	|-Array.InternalEnumerator<KeyValuePair<object, Vector3>>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.InternalEnumerator<KeyValuePair<float, bool>>.System.Collections.IEnumerator.get_Current
@@ -21591,7 +21583,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.Dispose
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.Dispose
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.Dispose
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.Dispose
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.Dispose
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.Dispose
 	|-Array.EmptyInternalEnumerator<CommandBufferManager.CommandBufferEntry>.Dispose
 	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>.Dispose
@@ -21684,6 +21676,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.Dispose
 	|-Array.EmptyInternalEnumerator<LifeInfographic.DamageSetting>.Dispose
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>.Dispose
 	|-Array.EmptyInternalEnumerator<LocalClock.TimedEvent>.Dispose
 	|-Array.EmptyInternalEnumerator<LookAtIOEnt.HandleSet>.Dispose
 	|-Array.EmptyInternalEnumerator<LootContainer.LootSpawnSlot>.Dispose
@@ -22100,7 +22093,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, uint>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ulong>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.Dispose
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, bool>>.Dispose
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, Decimal>>.Dispose
@@ -22338,7 +22330,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.MoveNext
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.MoveNext
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.MoveNext
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.MoveNext
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.MoveNext
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.MoveNext
 	|-Array.EmptyInternalEnumerator<CommandBufferManager.CommandBufferEntry>.MoveNext
 	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>.MoveNext
@@ -22431,6 +22423,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.MoveNext
 	|-Array.EmptyInternalEnumerator<LifeInfographic.DamageSetting>.MoveNext
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>.MoveNext
 	|-Array.EmptyInternalEnumerator<LocalClock.TimedEvent>.MoveNext
 	|-Array.EmptyInternalEnumerator<LookAtIOEnt.HandleSet>.MoveNext
 	|-Array.EmptyInternalEnumerator<LootContainer.LootSpawnSlot>.MoveNext
@@ -22847,7 +22840,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, uint>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ulong>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.MoveNext
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, bool>>.MoveNext
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, Decimal>>.MoveNext
@@ -23092,7 +23084,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.get_Current
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.get_Current
 	|
@@ -23277,6 +23269,8 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<LifeInfographic.DamageSetting>.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<LocalClock.TimedEvent>.get_Current
 	|
@@ -24110,8 +24104,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>.get_Current
-	|
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, bool>>.get_Current
@@ -24703,7 +24695,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Decimal>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ResourceLocator>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<ulong, AvatarCache.Entry>>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEnumerator.get_Current
@@ -24957,7 +24948,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Demos.DemoInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Output.Entry>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<IconSkinPicker.SkinButtonSetup>.System.Collections.IEnumerator.get_Current
@@ -25018,13 +25008,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<SpriteState>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<WaterDynamics.InstanceData>.System.Collections.IEnumerator.get_Current
 	|
-	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Gibbable.GibMesh>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<EventSource.EventMetadata>.System.Collections.IEnumerator.get_Current
-	|-Array.EmptyInternalEnumerator<Matrix4x4>.System.Collections.IEnumerator.get_Current
-	|
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Admin.ServerUGCInfo>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ModIdentifier>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CapsuleParams>.System.Collections.IEnumerator.get_Current
@@ -25064,6 +25048,13 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<TreeInstance>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Navigation>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<ViewModelDrawEvent>.System.Collections.IEnumerator.get_Current
+	|
+	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<FlexTransition.Definition>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Gibbable.GibMesh>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<EventSource.EventMetadata>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<Matrix4x4>.System.Collections.IEnumerator.get_Current
 	|
 	|-Array.EmptyInternalEnumerator<DungeonGridConnectionHash>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<RealTimeSince>.System.Collections.IEnumerator.get_Current
@@ -25264,6 +25255,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|
 	|-Array.EmptyInternalEnumerator<FlexElement.ChildSizingParameters>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.System.Collections.IEnumerator.get_Current
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<CodePointIndexer.TableRange>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<DemoShotQuaternionKeyframe>.System.Collections.IEnumerator.get_Current
 	|-Array.EmptyInternalEnumerator<Dictionary.Entry<StyleSheetCache.SheetHandleKey, int>>.System.Collections.IEnumerator.get_Current
@@ -25355,7 +25347,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>.System.Collections.IEnumerator.Reset
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<CommandBufferManager.CommandBufferEntry>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>.System.Collections.IEnumerator.Reset
@@ -25448,6 +25440,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<LifeInfographic.DamageSetting>.System.Collections.IEnumerator.Reset
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<LocalClock.TimedEvent>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<LookAtIOEnt.HandleSet>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<LootContainer.LootSpawnSlot>.System.Collections.IEnumerator.Reset
@@ -25864,7 +25857,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, uint>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ulong>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>.System.Collections.IEnumerator.Reset
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, bool>>.System.Collections.IEnumerator.Reset
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, Decimal>>.System.Collections.IEnumerator.Reset
@@ -26102,7 +26094,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>..ctor
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>..ctor
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>..ctor
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>..ctor
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>..ctor
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>..ctor
 	|-Array.EmptyInternalEnumerator<CommandBufferManager.CommandBufferEntry>..ctor
 	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>..ctor
@@ -26195,6 +26187,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>..ctor
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>..ctor
 	|-Array.EmptyInternalEnumerator<LifeInfographic.DamageSetting>..ctor
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>..ctor
 	|-Array.EmptyInternalEnumerator<LocalClock.TimedEvent>..ctor
 	|-Array.EmptyInternalEnumerator<LookAtIOEnt.HandleSet>..ctor
 	|-Array.EmptyInternalEnumerator<LootContainer.LootSpawnSlot>..ctor
@@ -26611,7 +26604,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, uint>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ulong>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>..ctor
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, bool>>..ctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, Decimal>>..ctor
@@ -26849,7 +26841,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<BaseEntity.PendingFileRequest>..cctor
 	|-Array.EmptyInternalEnumerator<BaseEntity.QueuedFileRequest>..cctor
 	|-Array.EmptyInternalEnumerator<CameraMan.CameraState>..cctor
-	|-Array.EmptyInternalEnumerator<CardTableUI.KeycodeWithAction>..cctor
+	|-Array.EmptyInternalEnumerator<CardGameUI.KeycodeWithAction>..cctor
 	|-Array.EmptyInternalEnumerator<Cassette.LoadRequest>..cctor
 	|-Array.EmptyInternalEnumerator<CommandBufferManager.CommandBufferEntry>..cctor
 	|-Array.EmptyInternalEnumerator<Admin.PlayerInfo>..cctor
@@ -26942,6 +26934,7 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<Kayak.PlayerAnimationState>..cctor
 	|-Array.EmptyInternalEnumerator<KeyframeView.UIKeyframeValue>..cctor
 	|-Array.EmptyInternalEnumerator<LifeInfographic.DamageSetting>..cctor
+	|-Array.EmptyInternalEnumerator<LightGroupAtTime.EmissiveCols>..cctor
 	|-Array.EmptyInternalEnumerator<LocalClock.TimedEvent>..cctor
 	|-Array.EmptyInternalEnumerator<LookAtIOEnt.HandleSet>..cctor
 	|-Array.EmptyInternalEnumerator<LootContainer.LootSpawnSlot>..cctor
@@ -27358,7 +27351,6 @@ internal class Array.EmptyInternalEnumerator<T> : IEnumerator<T>, IDisposable, I
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, uint>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ulong>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, ValueTuple<object, object>>>..cctor
-	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Color>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<object, Vector3>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, bool>>..cctor
 	|-Array.EmptyInternalEnumerator<KeyValuePair<float, Decimal>>..cctor
@@ -28286,7 +28278,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Sort
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Sort
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.Sort
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.Sort
 	|
@@ -28522,8 +28514,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<KeyValuePair<object, float>>.Sort
 	|
-	|-ArraySortHelper<KeyValuePair<object, Color>>.Sort
-	|
 	|-ArraySortHelper<KeyValuePair<uint, object>>.Sort
 	|
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.Sort
@@ -28638,7 +28628,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.BinarySearch
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.BinarySearch
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.BinarySearch
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.BinarySearch
 	|
@@ -28874,8 +28864,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<KeyValuePair<object, float>>.BinarySearch
 	|
-	|-ArraySortHelper<KeyValuePair<object, Color>>.BinarySearch
-	|
 	|-ArraySortHelper<KeyValuePair<uint, object>>.BinarySearch
 	|
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.BinarySearch
@@ -28990,7 +28978,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Sort
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Sort
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.Sort
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.Sort
 	|
@@ -29226,8 +29214,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<KeyValuePair<object, float>>.Sort
 	|
-	|-ArraySortHelper<KeyValuePair<object, Color>>.Sort
-	|
 	|-ArraySortHelper<KeyValuePair<uint, object>>.Sort
 	|
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.Sort
@@ -29355,7 +29341,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<InventoryRecipe.Ingredient>.InternalBinarySearch
 	|-ArraySortHelper<InventoryRecipe>.InternalBinarySearch
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.InternalBinarySearch
-	|-ArraySortHelper<KeyValuePair<object, Color>>.InternalBinarySearch
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.InternalBinarySearch
 	|-ArraySortHelper<UnitySynchronizationContext.WorkRequest>.InternalBinarySearch
 	|
@@ -29407,7 +29392,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.InternalBinarySearch
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.InternalBinarySearch
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.InternalBinarySearch
 	|-ArraySortHelper<Demos.DemoInfo>.InternalBinarySearch
 	|-ArraySortHelper<Output.Entry>.InternalBinarySearch
 	|-ArraySortHelper<IconSkinPicker.SkinButtonSetup>.InternalBinarySearch
@@ -29426,10 +29410,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<SpecialPurposeCamera.RenderEntry>.InternalBinarySearch
 	|-ArraySortHelper<InventoryItem>.InternalBinarySearch
 	|
-	|-ArraySortHelper<Admin.PlayerInfo>.InternalBinarySearch
-	|-ArraySortHelper<PlaceMonuments.SpawnInfo>.InternalBinarySearch
-	|-ArraySortHelper<Matrix4x4>.InternalBinarySearch
-	|
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.InternalBinarySearch
 	|-ArraySortHelper<Admin.ServerUGCInfo>.InternalBinarySearch
 	|-ArraySortHelper<CapsuleParams>.InternalBinarySearch
 	|-ArraySortHelper<SkeletonDefinition.Bone>.InternalBinarySearch
@@ -29439,6 +29420,10 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<RenderTargetIdentifier>.InternalBinarySearch
 	|-ArraySortHelper<TreeInstance>.InternalBinarySearch
 	|-ArraySortHelper<ViewModelDrawEvent>.InternalBinarySearch
+	|
+	|-ArraySortHelper<Admin.PlayerInfo>.InternalBinarySearch
+	|-ArraySortHelper<PlaceMonuments.SpawnInfo>.InternalBinarySearch
+	|-ArraySortHelper<Matrix4x4>.InternalBinarySearch
 	|
 	|-ArraySortHelper<CRedge>.InternalBinarySearch
 	|-ArraySortHelper<ProjectileWeaponMod.Modifier>.InternalBinarySearch
@@ -29584,12 +29569,10 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.SwapIfGreater
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.SwapIfGreater
-	|-ArraySortHelper<ItemSkinDirectory.Skin>.SwapIfGreater
-	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.SwapIfGreater
-	|-ArraySortHelper<MidiConvar.KnobBinding>.SwapIfGreater
-	|-ArraySortHelper<MidiConvar.NoteBinding>.SwapIfGreater
-	|-ArraySortHelper<Option>.SwapIfGreater
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.SwapIfGreater
+	|-ArraySortHelper<CapsuleParams>.SwapIfGreater
+	|-ArraySortHelper<SteamNewsSource.Story>.SwapIfGreater
+	|-ArraySortHelper<ViewModelDrawEvent>.SwapIfGreater
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.SwapIfGreater
 	|-ArraySortHelper<Admin.ServerConvarInfo>.SwapIfGreater
@@ -29598,7 +29581,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MapView.SleepingBagCluster>.SwapIfGreater
 	|-ArraySortHelper<TimelineEvent>.SwapIfGreater
 	|-ArraySortHelper<InventoryRecipe>.SwapIfGreater
-	|-ArraySortHelper<KeyValuePair<object, Color>>.SwapIfGreater
 	|-ArraySortHelper<UnitySynchronizationContext.WorkRequest>.SwapIfGreater
 	|
 	|-ArraySortHelper<Admin.PlayerInfo>.SwapIfGreater
@@ -29676,10 +29658,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.SwapIfGreater
 	|-ArraySortHelper<Achievement>.SwapIfGreater
 	|
-	|-ArraySortHelper<CapsuleParams>.SwapIfGreater
-	|-ArraySortHelper<SteamNewsSource.Story>.SwapIfGreater
-	|-ArraySortHelper<ViewModelDrawEvent>.SwapIfGreater
-	|
 	|-ArraySortHelper<BoneData>.SwapIfGreater
 	|
 	|-ArraySortHelper<SkeletonDefinition.Bone>.SwapIfGreater
@@ -29700,6 +29678,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.SwapIfGreater
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.SwapIfGreater
+	|
+	|-ArraySortHelper<ItemSkinDirectory.Skin>.SwapIfGreater
+	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.SwapIfGreater
+	|-ArraySortHelper<MidiConvar.KnobBinding>.SwapIfGreater
+	|-ArraySortHelper<MidiConvar.NoteBinding>.SwapIfGreater
+	|-ArraySortHelper<Option>.SwapIfGreater
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.SwapIfGreater
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.SwapIfGreater
@@ -29818,12 +29802,10 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Swap
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Swap
-	|-ArraySortHelper<ItemSkinDirectory.Skin>.Swap
-	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.Swap
-	|-ArraySortHelper<MidiConvar.KnobBinding>.Swap
-	|-ArraySortHelper<MidiConvar.NoteBinding>.Swap
-	|-ArraySortHelper<Option>.Swap
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.Swap
+	|-ArraySortHelper<CapsuleParams>.Swap
+	|-ArraySortHelper<SteamNewsSource.Story>.Swap
+	|-ArraySortHelper<ViewModelDrawEvent>.Swap
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.Swap
 	|-ArraySortHelper<Admin.ServerConvarInfo>.Swap
@@ -29832,7 +29814,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MapView.SleepingBagCluster>.Swap
 	|-ArraySortHelper<TimelineEvent>.Swap
 	|-ArraySortHelper<InventoryRecipe>.Swap
-	|-ArraySortHelper<KeyValuePair<object, Color>>.Swap
 	|-ArraySortHelper<UnitySynchronizationContext.WorkRequest>.Swap
 	|
 	|-ArraySortHelper<Admin.PlayerInfo>.Swap
@@ -29910,10 +29891,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.Swap
 	|-ArraySortHelper<Achievement>.Swap
 	|
-	|-ArraySortHelper<CapsuleParams>.Swap
-	|-ArraySortHelper<SteamNewsSource.Story>.Swap
-	|-ArraySortHelper<ViewModelDrawEvent>.Swap
-	|
 	|-ArraySortHelper<BoneData>.Swap
 	|
 	|-ArraySortHelper<SkeletonDefinition.Bone>.Swap
@@ -29934,6 +29911,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.Swap
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.Swap
+	|
+	|-ArraySortHelper<ItemSkinDirectory.Skin>.Swap
+	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.Swap
+	|-ArraySortHelper<MidiConvar.KnobBinding>.Swap
+	|-ArraySortHelper<MidiConvar.NoteBinding>.Swap
+	|-ArraySortHelper<Option>.Swap
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.Swap
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.Swap
@@ -30018,7 +30001,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.IntrospectiveSort
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.IntrospectiveSort
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.IntrospectiveSort
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.IntrospectiveSort
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.IntrospectiveSort
 	|-ArraySortHelper<Cassette.LoadRequest>.IntrospectiveSort
 	|-ArraySortHelper<Admin.PlayerInfo>.IntrospectiveSort
 	|-ArraySortHelper<Admin.ServerConvarInfo>.IntrospectiveSort
@@ -30136,7 +30119,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<KeyValuePair<Int32Enum, object>>.IntrospectiveSort
 	|-ArraySortHelper<KeyValuePair<object, object>>.IntrospectiveSort
 	|-ArraySortHelper<KeyValuePair<object, float>>.IntrospectiveSort
-	|-ArraySortHelper<KeyValuePair<object, Color>>.IntrospectiveSort
 	|-ArraySortHelper<KeyValuePair<uint, object>>.IntrospectiveSort
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.IntrospectiveSort
 	|-ArraySortHelper<DateTime>.IntrospectiveSort
@@ -30198,7 +30180,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.IntroSort
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.IntroSort
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.IntroSort
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.IntroSort
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.IntroSort
 	|-ArraySortHelper<Cassette.LoadRequest>.IntroSort
 	|-ArraySortHelper<Admin.PlayerInfo>.IntroSort
 	|-ArraySortHelper<Admin.ServerConvarInfo>.IntroSort
@@ -30316,7 +30298,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<KeyValuePair<Int32Enum, object>>.IntroSort
 	|-ArraySortHelper<KeyValuePair<object, object>>.IntroSort
 	|-ArraySortHelper<KeyValuePair<object, float>>.IntroSort
-	|-ArraySortHelper<KeyValuePair<object, Color>>.IntroSort
 	|-ArraySortHelper<KeyValuePair<uint, object>>.IntroSort
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.IntroSort
 	|-ArraySortHelper<DateTime>.IntroSort
@@ -30394,7 +30375,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<InventoryRecipe.Ingredient>.PickPivotAndPartition
 	|-ArraySortHelper<InventoryRecipe>.PickPivotAndPartition
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.PickPivotAndPartition
-	|-ArraySortHelper<KeyValuePair<object, Color>>.PickPivotAndPartition
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.PickPivotAndPartition
 	|-ArraySortHelper<UnitySynchronizationContext.WorkRequest>.PickPivotAndPartition
 	|
@@ -30446,7 +30426,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<WorldSplineData.LUTEntry.LUTPoint>.PickPivotAndPartition
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.PickPivotAndPartition
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.PickPivotAndPartition
 	|-ArraySortHelper<Demos.DemoInfo>.PickPivotAndPartition
 	|-ArraySortHelper<Output.Entry>.PickPivotAndPartition
 	|-ArraySortHelper<IconSkinPicker.SkinButtonSetup>.PickPivotAndPartition
@@ -30465,10 +30444,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<SpecialPurposeCamera.RenderEntry>.PickPivotAndPartition
 	|-ArraySortHelper<InventoryItem>.PickPivotAndPartition
 	|
-	|-ArraySortHelper<Admin.PlayerInfo>.PickPivotAndPartition
-	|-ArraySortHelper<PlaceMonuments.SpawnInfo>.PickPivotAndPartition
-	|-ArraySortHelper<Matrix4x4>.PickPivotAndPartition
-	|
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.PickPivotAndPartition
 	|-ArraySortHelper<Admin.ServerUGCInfo>.PickPivotAndPartition
 	|-ArraySortHelper<CapsuleParams>.PickPivotAndPartition
 	|-ArraySortHelper<SkeletonDefinition.Bone>.PickPivotAndPartition
@@ -30478,6 +30454,10 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<RenderTargetIdentifier>.PickPivotAndPartition
 	|-ArraySortHelper<TreeInstance>.PickPivotAndPartition
 	|-ArraySortHelper<ViewModelDrawEvent>.PickPivotAndPartition
+	|
+	|-ArraySortHelper<Admin.PlayerInfo>.PickPivotAndPartition
+	|-ArraySortHelper<PlaceMonuments.SpawnInfo>.PickPivotAndPartition
+	|-ArraySortHelper<Matrix4x4>.PickPivotAndPartition
 	|
 	|-ArraySortHelper<CRedge>.PickPivotAndPartition
 	|-ArraySortHelper<ProjectileWeaponMod.Modifier>.PickPivotAndPartition
@@ -30588,7 +30568,7 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<AlignedLineDrawer.LinePoint>.Heapsort
 	|-ArraySortHelper<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Heapsort
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.Heapsort
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.Heapsort
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.Heapsort
 	|-ArraySortHelper<Cassette.LoadRequest>.Heapsort
 	|-ArraySortHelper<Admin.PlayerInfo>.Heapsort
 	|-ArraySortHelper<Admin.ServerConvarInfo>.Heapsort
@@ -30706,7 +30686,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<KeyValuePair<Int32Enum, object>>.Heapsort
 	|-ArraySortHelper<KeyValuePair<object, object>>.Heapsort
 	|-ArraySortHelper<KeyValuePair<object, float>>.Heapsort
-	|-ArraySortHelper<KeyValuePair<object, Color>>.Heapsort
 	|-ArraySortHelper<KeyValuePair<uint, object>>.Heapsort
 	|-ArraySortHelper<KeyValuePair<ulong, Dispatch.ResultCallback>>.Heapsort
 	|-ArraySortHelper<DateTime>.Heapsort
@@ -30801,12 +30780,10 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.DownHeap
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.DownHeap
-	|-ArraySortHelper<ItemSkinDirectory.Skin>.DownHeap
-	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.DownHeap
-	|-ArraySortHelper<MidiConvar.KnobBinding>.DownHeap
-	|-ArraySortHelper<MidiConvar.NoteBinding>.DownHeap
-	|-ArraySortHelper<Option>.DownHeap
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.DownHeap
+	|-ArraySortHelper<CapsuleParams>.DownHeap
+	|-ArraySortHelper<SteamNewsSource.Story>.DownHeap
+	|-ArraySortHelper<ViewModelDrawEvent>.DownHeap
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.DownHeap
 	|-ArraySortHelper<Admin.ServerConvarInfo>.DownHeap
@@ -30815,7 +30792,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MapView.SleepingBagCluster>.DownHeap
 	|-ArraySortHelper<TimelineEvent>.DownHeap
 	|-ArraySortHelper<InventoryRecipe>.DownHeap
-	|-ArraySortHelper<KeyValuePair<object, Color>>.DownHeap
 	|-ArraySortHelper<UnitySynchronizationContext.WorkRequest>.DownHeap
 	|
 	|-ArraySortHelper<Admin.PlayerInfo>.DownHeap
@@ -30893,10 +30869,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.DownHeap
 	|-ArraySortHelper<Achievement>.DownHeap
 	|
-	|-ArraySortHelper<CapsuleParams>.DownHeap
-	|-ArraySortHelper<SteamNewsSource.Story>.DownHeap
-	|-ArraySortHelper<ViewModelDrawEvent>.DownHeap
-	|
 	|-ArraySortHelper<BoneData>.DownHeap
 	|
 	|-ArraySortHelper<SkeletonDefinition.Bone>.DownHeap
@@ -30917,6 +30889,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.DownHeap
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.DownHeap
+	|
+	|-ArraySortHelper<ItemSkinDirectory.Skin>.DownHeap
+	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.DownHeap
+	|-ArraySortHelper<MidiConvar.KnobBinding>.DownHeap
+	|-ArraySortHelper<MidiConvar.NoteBinding>.DownHeap
+	|-ArraySortHelper<Option>.DownHeap
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.DownHeap
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.DownHeap
@@ -31035,12 +31013,10 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|
 	|-ArraySortHelper<BaseEntity.PendingFileRequest>.InsertionSort
 	|
-	|-ArraySortHelper<CardTableUI.KeycodeWithAction>.InsertionSort
-	|-ArraySortHelper<ItemSkinDirectory.Skin>.InsertionSort
-	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.InsertionSort
-	|-ArraySortHelper<MidiConvar.KnobBinding>.InsertionSort
-	|-ArraySortHelper<MidiConvar.NoteBinding>.InsertionSort
-	|-ArraySortHelper<Option>.InsertionSort
+	|-ArraySortHelper<CardGameUI.KeycodeWithAction>.InsertionSort
+	|-ArraySortHelper<CapsuleParams>.InsertionSort
+	|-ArraySortHelper<SteamNewsSource.Story>.InsertionSort
+	|-ArraySortHelper<ViewModelDrawEvent>.InsertionSort
 	|
 	|-ArraySortHelper<Cassette.LoadRequest>.InsertionSort
 	|-ArraySortHelper<Admin.ServerConvarInfo>.InsertionSort
@@ -31049,7 +31025,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MapView.SleepingBagCluster>.InsertionSort
 	|-ArraySortHelper<TimelineEvent>.InsertionSort
 	|-ArraySortHelper<InventoryRecipe>.InsertionSort
-	|-ArraySortHelper<KeyValuePair<object, Color>>.InsertionSort
 	|-ArraySortHelper<UnitySynchronizationContext.WorkRequest>.InsertionSort
 	|
 	|-ArraySortHelper<Admin.PlayerInfo>.InsertionSort
@@ -31127,10 +31102,6 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<MeshRendererLookup.LookupEntry>.InsertionSort
 	|-ArraySortHelper<Achievement>.InsertionSort
 	|
-	|-ArraySortHelper<CapsuleParams>.InsertionSort
-	|-ArraySortHelper<SteamNewsSource.Story>.InsertionSort
-	|-ArraySortHelper<ViewModelDrawEvent>.InsertionSort
-	|
 	|-ArraySortHelper<BoneData>.InsertionSort
 	|
 	|-ArraySortHelper<SkeletonDefinition.Bone>.InsertionSort
@@ -31151,6 +31122,12 @@ internal class ArraySortHelper<T> // TypeDefIndex: 1446
 	|-ArraySortHelper<BeforeRenderHelper.OrderBlock>.InsertionSort
 	|
 	|-ArraySortHelper<FoliageGridMeshData.FoliageVertex>.InsertionSort
+	|
+	|-ArraySortHelper<ItemSkinDirectory.Skin>.InsertionSort
+	|-ArraySortHelper<KeyframeView.UIKeyframeValue>.InsertionSort
+	|-ArraySortHelper<MidiConvar.KnobBinding>.InsertionSort
+	|-ArraySortHelper<MidiConvar.NoteBinding>.InsertionSort
+	|-ArraySortHelper<Option>.InsertionSort
 	|
 	|-ArraySortHelper<LocalClock.TimedEvent>.InsertionSort
 	|-ArraySortHelper<SynchronizedClock.TimedEvent>.InsertionSort
@@ -31392,14 +31369,14 @@ internal class ArraySubsetEnumerator : IEnumerator // TypeDefIndex: 2661
 
 }
 
-internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6083
+internal class ArrayIndexFilter : PathFilter // TypeDefIndex: 6085
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6085
+internal class ArrayMultipleIndexFilter : PathFilter // TypeDefIndex: 6087
 {
 
 [PreserveAttribute] 
@@ -31409,7 +31386,7 @@ internal class ArrayMultipleIndexFilter : PathFilter
 
 }
 
-internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6087
+internal class ArraySliceFilter : PathFilter // TypeDefIndex: 6089
 {
 
 [PreserveAttribute] 
@@ -31419,7 +31396,7 @@ internal class ArraySliceFilter : PathFilter
 
 }
 
-public abstract class ArrayPool<T> // TypeDefIndex: 6272
+public abstract class ArrayPool<T> // TypeDefIndex: 6274
 {
 	private static ArrayPool<T> s_sharedInstance; 
 
@@ -31468,7 +31445,7 @@ public abstract class ArrayPool<T> // TypeDefIndex: 6272
 
 }
 
-internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6273
+internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6275
 {
 	internal static readonly ArrayPoolEventSource Log; 
 
@@ -31488,7 +31465,7 @@ internal sealed class ArrayPoolEventSource : EventSource // TypeDefIndex: 6273
 
 }
 
-internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6274
+internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6276
 {
 	public int value__; 
 	public const ArrayPoolEventSource.BufferAllocatedReason Pooled = 0;
@@ -31497,7 +31474,7 @@ internal enum ArrayPoolEventSource.BufferAllocatedReason // TypeDefIndex: 6274
 
 }
 
-public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6566
+public class ArrayIndexIsEnum : PropertyAttribute // TypeDefIndex: 6570
 {
 
 public class ArrayIndexIsEnum : PropertyAttribute
@@ -31508,7 +31485,7 @@ public class ArrayIndexIsEnum : PropertyAttribute
 
 }
 
-public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6567
+public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6571
 {
 	public float min; 
 	public float max; 
@@ -31518,7 +31495,7 @@ public class ArrayIndexIsEnumRanged : ArrayIndexIsEnum // TypeDefIndex: 6567
 
 }
 
-public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8149
+public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8158
 {
 	private readonly List<Value> values; 
 
@@ -31554,7 +31531,7 @@ public class Array : IEnumerable<Value>, IEnumerable // TypeDefIndex: 8149
 
 }
 
-public static class Arrays // TypeDefIndex: 8234
+public static class Arrays // TypeDefIndex: 8243
 {
 	public static ushort[] flushes; 
 	public static readonly ushort[] unique5; 
@@ -31568,7 +31545,7 @@ public static class Arrays // TypeDefIndex: 8234
 
 }
 
-public static class ArrayEx // TypeDefIndex: 13092
+public static class ArrayEx // TypeDefIndex: 13131
 {
 
 	public static T[] New<T>(int length) { }

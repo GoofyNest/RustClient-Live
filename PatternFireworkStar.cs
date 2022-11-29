@@ -1,4 +1,4 @@
-public class PatternFireworkStar : MonoBehaviour, IClientComponent // TypeDefIndex: 9983
+public class PatternFireworkStar : MonoBehaviour, IClientComponent // TypeDefIndex: 9992
 {
 	public GameObject Pixel; 
 	public GameObject Explosion; 

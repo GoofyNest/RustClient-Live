@@ -47,7 +47,7 @@ private sealed class AwaitTaskContinuation.<>c // TypeDefIndex: 882
 
 	public void .ctor() { }
 
-	internal void <ThrowAsyncIfNecessary>b__17_0(object s) { }
+	internal void <ThrowAsyncIfNecessary>
 
 }
 

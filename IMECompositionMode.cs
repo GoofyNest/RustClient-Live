@@ -1,4 +1,4 @@
-public enum IMECompositionMode // TypeDefIndex: 4074
+public enum IMECompositionMode // TypeDefIndex: 4076
 {
 	public int value__; 
 	public const IMECompositionMode Auto = 0;

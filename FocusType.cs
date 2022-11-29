@@ -1,4 +1,4 @@
-public enum FocusType // TypeDefIndex: 4040
+public enum FocusType // TypeDefIndex: 4042
 {
 	public int value__; 
 	[ObsoleteAttribute] 

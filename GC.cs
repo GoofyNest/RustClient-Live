@@ -47,7 +47,7 @@ public static class GC // TypeDefIndex: 224
 
 }
 
-public class GC : ConsoleSystem // TypeDefIndex: 13675
+public class GC : ConsoleSystem // TypeDefIndex: 13713
 {
 	[ClientVar] 
 	public static bool buffer_enabled; 
@@ -102,12 +102,12 @@ public class GC : ConsoleSystem // TypeDefIndex: 13675
 
 }
 
-public class GC : MonoBehaviour, IClientComponent // TypeDefIndex: 13779
+public class GC : MonoBehaviour, IClientComponent // TypeDefIndex: 13827
 {
 	private static float gcTime; 
 	private static GarbageCollector.Mode gcMode; 
-	private int heapSize; 
-	private int heapBaseline; 
+	private long heapSize; 
+	private long heapBaseline; 
 	private int collectionCount; 
 
 	public static bool Enabled { get; }
@@ -123,10 +123,6 @@ public class GC : MonoBehaviour, IClientComponent // TypeDefIndex: 13779
 
 	private static void SetMode(GarbageCollector.Mode mode) { }
 
-	private static int GetTotalMemory() { }
-
-	private static int CollectionCount() { }
-
 	private void UpdateState() { }
 
 	protected void OnEnable() { }
@@ -134,6 +130,10 @@ public class GC : MonoBehaviour, IClientComponent // TypeDefIndex: 13779
 	protected void OnDisable() { }
 
 	protected void LateUpdate() { }
+
+	public static long GetTotalMemory() { }
+
+	public static int CollectionCount() { }
 
 	public void .ctor() { }
 

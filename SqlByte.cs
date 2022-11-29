@@ -1,4 +1,4 @@
-public struct SqlByte : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4342
+public struct SqlByte : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4344
 {
 	private bool m_fNotNull; 
 	private byte m_value; 

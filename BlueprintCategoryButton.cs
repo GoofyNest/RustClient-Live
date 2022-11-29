@@ -1,4 +1,4 @@
-public class BlueprintCategoryButton : MonoBehaviour, IInventoryChanged, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12718
+public class BlueprintCategoryButton : MonoBehaviour, IInventoryChanged, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler // TypeDefIndex: 12746
 {
 	public TextMeshProUGUI amountLabel; 
 	public ItemCategory Category; 

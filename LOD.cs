@@ -1,4 +1,4 @@
-public struct LOD // TypeDefIndex: 3440
+public struct LOD // TypeDefIndex: 3441
 {
 	public float screenRelativeTransitionHeight; 
 	public float fadeTransitionWidth; 

@@ -1,4 +1,4 @@
-internal class InheritedStylesData : IEquatable<InheritedStylesData> // TypeDefIndex: 4724
+internal class InheritedStylesData : IEquatable<InheritedStylesData> // TypeDefIndex: 4726
 {
 	public static readonly InheritedStylesData none; 
 	public StyleColor color; 

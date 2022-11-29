@@ -1,4 +1,4 @@
-public class GUI // TypeDefIndex: 4033
+public class GUI // TypeDefIndex: 4035
 {
 	private static int s_HotTextField; 
 	private static readonly int s_BoxHash; 
@@ -206,7 +206,7 @@ public class GUI // TypeDefIndex: 4033
 
 }
 
-public enum GUI.ToolbarButtonSize // TypeDefIndex: 4034
+public enum GUI.ToolbarButtonSize // TypeDefIndex: 4036
 {
 	public int value__; 
 	public const GUI.ToolbarButtonSize Fixed = 0;
@@ -214,7 +214,7 @@ public enum GUI.ToolbarButtonSize // TypeDefIndex: 4034
 
 }
 
-public sealed class GUI.WindowFunction : MulticastDelegate // TypeDefIndex: 4035
+public sealed class GUI.WindowFunction : MulticastDelegate // TypeDefIndex: 4037
 {
 
 	public void .ctor(object object, IntPtr method) { }

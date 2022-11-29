@@ -1,4 +1,4 @@
-public class MusicManager : SingletonComponent<MusicManager>, IClientComponent // TypeDefIndex: 10720
+public class MusicManager : SingletonComponent<MusicManager>, IClientComponent // TypeDefIndex: 10731
 {
 	public AudioMixerGroup mixerGroup; 
 	public List<MusicTheme> themes; 
@@ -105,7 +105,7 @@ public class MusicManager : SingletonComponent<MusicManager>, IClientComponent /
 
 }
 
-public class MusicManager.ClipPlaybackData // TypeDefIndex: 10721
+public class MusicManager.ClipPlaybackData // TypeDefIndex: 10732
 {
 	public AudioSource source; 
 	public MusicTheme.PositionedClip positionedClip; 
@@ -120,7 +120,7 @@ public class MusicManager.ClipPlaybackData // TypeDefIndex: 10721
 
 }
 
-private sealed class MusicManager.<>c // TypeDefIndex: 10722
+private sealed class MusicManager.<>c // TypeDefIndex: 10733
 {
 	public static readonly MusicManager.<>c <>9; 
 	public static Func<MusicTheme, float> <>9__60_0; 
@@ -130,7 +130,7 @@ private sealed class MusicManager.<>c // TypeDefIndex: 10722
 
 	public void .ctor() { }
 
-	internal float <ShuffleThemes>b__60_0(MusicTheme x) { }
+	internal float <ShuffleThemes>
 
 }
 

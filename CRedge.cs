@@ -1,4 +1,4 @@
-public struct CRedge // TypeDefIndex: 7241
+public struct CRedge // TypeDefIndex: 7245
 {
 	public int v1; 
 	public int v2; 

@@ -1,4 +1,4 @@
-public enum ComputeBufferMode // TypeDefIndex: 3388
+public enum ComputeBufferMode // TypeDefIndex: 3389
 {
 	public int value__; 
 	public const ComputeBufferMode Immutable = 0;

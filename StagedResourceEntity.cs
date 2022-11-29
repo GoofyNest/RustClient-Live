@@ -1,4 +1,4 @@
-public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10360
+public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10371
 {
 	public List<StagedResourceEntity.ResourceStage> stages; 
 	public int stage; 
@@ -30,7 +30,7 @@ public class StagedResourceEntity : ResourceEntity // TypeDefIndex: 10360
 
 }
 
-public class StagedResourceEntity.ResourceStage // TypeDefIndex: 10361
+public class StagedResourceEntity.ResourceStage // TypeDefIndex: 10372
 {
 	public float health; 
 	public GameObject instance; 

@@ -1,4 +1,4 @@
-public enum DeviceType // TypeDefIndex: 3557
+public enum DeviceType // TypeDefIndex: 3558
 {
 	public int value__; 
 	public const DeviceType Unknown = 0;

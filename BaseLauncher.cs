@@ -1,4 +1,4 @@
-public class BaseLauncher : BaseProjectile // TypeDefIndex: 10230
+public class BaseLauncher : BaseProjectile // TypeDefIndex: 10241
 {
 	private int lastSpectatorReloadAmmo; 
 	private TimeSince lastSpectatorAmmoInsert; 

@@ -1,4 +1,4 @@
-public enum LineInfoHandling // TypeDefIndex: 6042
+public enum LineInfoHandling // TypeDefIndex: 6044
 {
 	public int value__; 
 	public const LineInfoHandling Ignore = 0;

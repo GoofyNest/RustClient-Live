@@ -1,4 +1,4 @@
-public class ClothingBenchmarkScene : BenchmarkScene // TypeDefIndex: 9954
+public class ClothingBenchmarkScene : BenchmarkScene // TypeDefIndex: 9963
 {
 	public GameObjectRef PlayerModelPrefab; 
 	public bool ChangeClothingEveryFrame; 
@@ -16,7 +16,7 @@ public class ClothingBenchmarkScene : BenchmarkScene // TypeDefIndex: 9954
 
 }
 
-private sealed class ClothingBenchmarkScene.<>c // TypeDefIndex: 9955
+private sealed class ClothingBenchmarkScene.<>c // TypeDefIndex: 9964
 {
 	public static readonly ClothingBenchmarkScene.<>c <>9; 
 	public static Func<ItemDefinition, ItemModWearable> <>9__4_0; 
@@ -29,13 +29,13 @@ private sealed class ClothingBenchmarkScene.<>c // TypeDefIndex: 9955
 
 	public void .ctor() { }
 
-	internal ItemModWearable <StartBenchmark>b__4_0(ItemDefinition x) { }
+	internal ItemModWearable <StartBenchmark>
 
-	internal bool <StartBenchmark>b__4_1(ItemModWearable x) { }
+	internal bool <StartBenchmark>
 
-	internal Guid <StartBenchmark>b__4_2(ItemModWearable x) { }
+	internal Guid <StartBenchmark>
 
-	internal Guid <BenchmarkUpdate>b__5_0(ItemModWearable x) { }
+	internal Guid <BenchmarkUpdate>
 
 }
 

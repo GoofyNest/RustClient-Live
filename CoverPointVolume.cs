@@ -1,4 +1,4 @@
-public class CoverPointVolume : MonoBehaviour, IServerComponent // TypeDefIndex: 13880
+public class CoverPointVolume : MonoBehaviour, IServerComponent // TypeDefIndex: 13928
 {
 	public float DefaultCoverPointScore; 
 	public float CoverPointRayLength; 
@@ -31,7 +31,7 @@ public class CoverPointVolume : MonoBehaviour, IServerComponent // TypeDefIndex:
 
 }
 
-internal enum CoverPointVolume.CoverType // TypeDefIndex: 13881
+internal enum CoverPointVolume.CoverType // TypeDefIndex: 13929
 {
 	public int value__; 
 	public const CoverPointVolume.CoverType None = 0;

@@ -1,9 +1,9 @@
-public class CardTablePlayerStorage : StorageContainer // TypeDefIndex: 11303
+public class CardGamePlayerStorage : StorageContainer // TypeDefIndex: 11315
 {
 	private EntityRef cardTableRef; 
 
 
-	public CardTable GetCardTable() { }
+	public BaseCardGameEntity GetCardGameEntity() { }
 
 	public override void Load(BaseNetworkable.LoadInfo info) { }
 

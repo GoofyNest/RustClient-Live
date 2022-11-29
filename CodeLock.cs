@@ -1,4 +1,4 @@
-public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
+public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6313
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class CodeLock : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
 
 }
 
-public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6312
+public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6314
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -125,7 +125,7 @@ public class CodeLock.Private : IDisposable, Pool.IPooled, IProto // TypeDefInde
 
 }
 
-public class CodeLock : BaseLock // TypeDefIndex: 10080
+public class CodeLock : BaseLock // TypeDefIndex: 10091
 {
 	private Option __menuOption_Menu_ChangeGuestCode; 
 	private Option __menuOption_Menu_ChangeLockCode; 
@@ -194,13 +194,13 @@ public class CodeLock : BaseLock // TypeDefIndex: 10080
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_ChangeLockCode>b__23_0(string str) { }
+	private void <Menu_ChangeLockCode>
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_ChangeGuestCode>b__25_0(string str) { }
+	private void <Menu_ChangeGuestCode>
 
 	[CompilerGeneratedAttribute] 
-	private void <EnterUnlockCode>b__27_0(string str) { }
+	private void <EnterUnlockCode>
 
 }
 

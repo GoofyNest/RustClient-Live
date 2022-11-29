@@ -1,4 +1,4 @@
-public sealed class GUILayoutOption // TypeDefIndex: 4042
+public sealed class GUILayoutOption // TypeDefIndex: 4044
 {
 	internal GUILayoutOption.Type type; 
 	internal object value; 
@@ -8,7 +8,7 @@ public sealed class GUILayoutOption // TypeDefIndex: 4042
 
 }
 
-internal enum GUILayoutOption.Type // TypeDefIndex: 4043
+internal enum GUILayoutOption.Type // TypeDefIndex: 4045
 {
 	public int value__; 
 	public const GUILayoutOption.Type fixedWidth = 0;

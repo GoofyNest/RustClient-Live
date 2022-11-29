@@ -1,4 +1,4 @@
-public class PlaceMonumentsRailside : ProceduralComponent // TypeDefIndex: 12275
+public class PlaceMonumentsRailside : ProceduralComponent // TypeDefIndex: 12295
 {
 	public SpawnFilter Filter; 
 	public string ResourceFolder; 
@@ -29,7 +29,7 @@ public class PlaceMonumentsRailside : ProceduralComponent // TypeDefIndex: 12275
 
 }
 
-private struct PlaceMonumentsRailside.SpawnInfo // TypeDefIndex: 12276
+private struct PlaceMonumentsRailside.SpawnInfo // TypeDefIndex: 12296
 {
 	public Prefab<MonumentInfo> prefab; 
 	public Vector3 position; 
@@ -38,7 +38,7 @@ private struct PlaceMonumentsRailside.SpawnInfo // TypeDefIndex: 12276
 
 }
 
-private class PlaceMonumentsRailside.SpawnInfoGroup // TypeDefIndex: 12277
+private class PlaceMonumentsRailside.SpawnInfoGroup // TypeDefIndex: 12297
 {
 	public bool processed; 
 	public Prefab<MonumentInfo> prefab; 
@@ -49,7 +49,7 @@ private class PlaceMonumentsRailside.SpawnInfoGroup // TypeDefIndex: 12277
 
 }
 
-private struct PlaceMonumentsRailside.DistanceInfo // TypeDefIndex: 12278
+private struct PlaceMonumentsRailside.DistanceInfo // TypeDefIndex: 12298
 {
 	public float minDistanceSameType; 
 	public float maxDistanceSameType; 
@@ -58,7 +58,7 @@ private struct PlaceMonumentsRailside.DistanceInfo // TypeDefIndex: 12278
 
 }
 
-public enum PlaceMonumentsRailside.DistanceMode // TypeDefIndex: 12279
+public enum PlaceMonumentsRailside.DistanceMode // TypeDefIndex: 12299
 {
 	public int value__; 
 	public const PlaceMonumentsRailside.DistanceMode Any = 0;
@@ -67,7 +67,7 @@ public enum PlaceMonumentsRailside.DistanceMode // TypeDefIndex: 12279
 
 }
 
-private sealed class PlaceMonumentsRailside.<>c // TypeDefIndex: 12280
+private sealed class PlaceMonumentsRailside.<>c // TypeDefIndex: 12300
 {
 	public static readonly PlaceMonumentsRailside.<>c <>9; 
 	public static Func<string, string> <>9__17_0; 
@@ -77,7 +77,7 @@ private sealed class PlaceMonumentsRailside.<>c // TypeDefIndex: 12280
 
 	public void .ctor() { }
 
-	internal string <Process>b__17_0(string folder) { }
+	internal string <Process>
 
 }
 

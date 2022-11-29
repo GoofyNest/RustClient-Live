@@ -1,4 +1,4 @@
-public struct BoneWeight : IEquatable<BoneWeight> // TypeDefIndex: 3443
+public struct BoneWeight : IEquatable<BoneWeight> // TypeDefIndex: 3444
 {
 	[SerializeField] 
 	private float m_Weight0; 

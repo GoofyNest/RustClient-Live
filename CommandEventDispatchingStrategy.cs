@@ -1,4 +1,4 @@
-internal class CommandEventDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4630
+internal class CommandEventDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4632
 {
 
 	public bool CanDispatchEvent(EventBase evt) { }

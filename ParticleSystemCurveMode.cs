@@ -1,4 +1,4 @@
-public enum ParticleSystemCurveMode // TypeDefIndex: 4542
+public enum ParticleSystemCurveMode // TypeDefIndex: 4544
 {
 	public int value__; 
 	public const ParticleSystemCurveMode Constant = 0;

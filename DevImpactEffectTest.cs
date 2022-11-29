@@ -1,4 +1,4 @@
-public class DevImpactEffectTest : MonoBehaviour // TypeDefIndex: 11021
+public class DevImpactEffectTest : MonoBehaviour // TypeDefIndex: 11035
 {
 	private float timeNextFire; 
 	private int attackType; 

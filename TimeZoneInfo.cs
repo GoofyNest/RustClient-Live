@@ -338,7 +338,7 @@ private sealed class TimeZoneInfo.<>c // TypeDefIndex: 320
 
 	public void .ctor() { }
 
-	internal int <CreateLocalUnity>b__19_0(TimeZoneInfo.AdjustmentRule rule1, TimeZoneInfo.AdjustmentRule rule2) { }
+	internal int <CreateLocalUnity>
 
 }
 

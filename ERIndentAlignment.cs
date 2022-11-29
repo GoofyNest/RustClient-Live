@@ -1,4 +1,4 @@
-public enum ERIndentAlignment // TypeDefIndex: 7219
+public enum ERIndentAlignment // TypeDefIndex: 7223
 {
 	public int value__; 
 	public const ERIndentAlignment Road = 0;

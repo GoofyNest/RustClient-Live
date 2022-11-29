@@ -1,4 +1,4 @@
-public class Vector4Serialized // TypeDefIndex: 6292
+public class Vector4Serialized // TypeDefIndex: 6294
 {
 
 	public static void ResetToPool(Vector4 instance) { }

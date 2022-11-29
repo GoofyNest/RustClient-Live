@@ -1,4 +1,4 @@
-internal class BooleanQueryExpression : QueryExpression // TypeDefIndex: 6099
+internal class BooleanQueryExpression : QueryExpression // TypeDefIndex: 6101
 {
 
 	public void .ctor() { }

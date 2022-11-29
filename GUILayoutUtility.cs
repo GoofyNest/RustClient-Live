@@ -1,4 +1,4 @@
-public class GUILayoutUtility // TypeDefIndex: 4044
+public class GUILayoutUtility // TypeDefIndex: 4046
 {
 	private static readonly Dictionary<int, GUILayoutUtility.LayoutCache> s_StoredLayouts; 
 	private static readonly Dictionary<int, GUILayoutUtility.LayoutCache> s_StoredWindows; 
@@ -60,7 +60,7 @@ public class GUILayoutUtility // TypeDefIndex: 4044
 
 }
 
-internal sealed class GUILayoutUtility.LayoutCache // TypeDefIndex: 4045
+internal sealed class GUILayoutUtility.LayoutCache // TypeDefIndex: 4047
 {
 	[VisibleToOtherModulesAttribute] 
 	internal GUILayoutGroup topLevel; 

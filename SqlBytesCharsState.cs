@@ -1,4 +1,4 @@
-internal enum SqlBytesCharsState // TypeDefIndex: 4343
+internal enum SqlBytesCharsState // TypeDefIndex: 4345
 {
 	public int value__; 
 	public const SqlBytesCharsState Null = 0;

@@ -1,4 +1,4 @@
-internal struct RegisterEventOptionsInternal : ISettable<RegisterEventOptions>, IDisposable // TypeDefIndex: 9789
+internal struct RegisterEventOptionsInternal : ISettable<RegisterEventOptions>, IDisposable // TypeDefIndex: 9798
 {
 	private int m_ApiVersion; 
 	private uint m_EventId; 

@@ -1,4 +1,4 @@
-internal struct BeginSessionOptionsInternal : ISettable<BeginSessionOptions>, IDisposable // TypeDefIndex: 9717
+internal struct BeginSessionOptionsInternal : ISettable<BeginSessionOptions>, IDisposable // TypeDefIndex: 9726
 {
 	private int m_ApiVersion; 
 	private uint m_RegisterTimeoutSeconds; 
@@ -28,7 +28,7 @@ internal struct BeginSessionOptionsInternal : ISettable<BeginSessionOptions>, ID
 
 }
 
-internal struct BeginSessionOptionsInternal : ISettable<BeginSessionOptions>, IDisposable // TypeDefIndex: 9814
+internal struct BeginSessionOptionsInternal : ISettable<BeginSessionOptions>, IDisposable // TypeDefIndex: 9823
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

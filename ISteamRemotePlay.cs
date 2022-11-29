@@ -1,4 +1,4 @@
-internal class ISteamRemotePlay : SteamInterface // TypeDefIndex: 5131
+internal class ISteamRemotePlay : SteamInterface // TypeDefIndex: 5133
 {
 
 	internal void .ctor(bool IsGameServer) { }

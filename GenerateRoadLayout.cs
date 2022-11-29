@@ -1,4 +1,4 @@
-public class GenerateRoadLayout : ProceduralComponent // TypeDefIndex: 12236
+public class GenerateRoadLayout : ProceduralComponent // TypeDefIndex: 12256
 {
 	public InfrastructureType RoadType; 
 	public const float RoadWidth = 10;
@@ -21,7 +21,7 @@ public class GenerateRoadLayout : ProceduralComponent // TypeDefIndex: 12236
 
 }
 
-private class GenerateRoadLayout.PathNode // TypeDefIndex: 12237
+private class GenerateRoadLayout.PathNode // TypeDefIndex: 12257
 {
 	public MonumentInfo monument; 
 	public TerrainPathConnect target; 
@@ -32,7 +32,7 @@ private class GenerateRoadLayout.PathNode // TypeDefIndex: 12237
 
 }
 
-private class GenerateRoadLayout.PathSegment // TypeDefIndex: 12238
+private class GenerateRoadLayout.PathSegment // TypeDefIndex: 12258
 {
 	public PathFinder.Node start; 
 	public PathFinder.Node end; 
@@ -44,70 +44,70 @@ private class GenerateRoadLayout.PathSegment // TypeDefIndex: 12238
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_0 // TypeDefIndex: 12239
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_0 // TypeDefIndex: 12259
 {
 	public GenerateRoadLayout.PathSegment segment; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__7(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
-	internal bool <Process>b__10(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_1 // TypeDefIndex: 12240
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_1 // TypeDefIndex: 12260
 {
 	public GenerateRoadLayout.PathNode node; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__3(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
-	internal bool <Process>b__4(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_2 // TypeDefIndex: 12241
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_2 // TypeDefIndex: 12261
 {
 	public GenerateRoadLayout.PathNode node; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__5(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
-	internal bool <Process>b__6(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_3 // TypeDefIndex: 12242
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_3 // TypeDefIndex: 12262
 {
 	public GenerateRoadLayout.PathNode node; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__8(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
-	internal bool <Process>b__9(GenerateRoadLayout.PathNode x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GenerateRoadLayout.<>c__DisplayClass14_4 // TypeDefIndex: 12243
+private sealed class GenerateRoadLayout.<>c__DisplayClass14_4 // TypeDefIndex: 12263
 {
 	public GenerateRoadLayout.PathNode target; 
 
 
 	public void .ctor() { }
 
-	internal bool <Process>b__11(GenerateRoadLayout.PathSegment x) { }
+	internal bool <Process>
 
 }
 
-private sealed class GenerateRoadLayout.<>c // TypeDefIndex: 12244
+private sealed class GenerateRoadLayout.<>c // TypeDefIndex: 12264
 {
 	public static readonly GenerateRoadLayout.<>c <>9; 
 	public static Func<GenerateRoadLayout.PathNode, PathFinder.Point> <>9__14_0; 
@@ -119,11 +119,11 @@ private sealed class GenerateRoadLayout.<>c // TypeDefIndex: 12244
 
 	public void .ctor() { }
 
-	internal PathFinder.Point <Process>b__14_0(GenerateRoadLayout.PathNode x) { }
+	internal PathFinder.Point <Process>
 
-	internal PathFinder.Point <Process>b__14_1(GenerateRoadLayout.PathNode x) { }
+	internal PathFinder.Point <Process>
 
-	internal PathFinder.Point <Process>b__14_2(GenerateRoadLayout.PathNode x) { }
+	internal PathFinder.Point <Process>
 
 }
 

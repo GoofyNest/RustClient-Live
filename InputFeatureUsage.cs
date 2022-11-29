@@ -1,4 +1,4 @@
-public struct InputFeatureUsage : IEquatable<InputFeatureUsage> // TypeDefIndex: 4147
+public struct InputFeatureUsage : IEquatable<InputFeatureUsage> // TypeDefIndex: 4149
 {
 	internal string m_Name; 
 	[NativeNameAttribute] 

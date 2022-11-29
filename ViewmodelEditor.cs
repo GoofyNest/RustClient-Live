@@ -1,4 +1,4 @@
-public class ViewmodelEditor : SingletonComponent<ViewmodelEditor> // TypeDefIndex: 13209
+public class ViewmodelEditor : SingletonComponent<ViewmodelEditor> // TypeDefIndex: 13247
 {
 	private Vector3 view; 
 	private bool meleeHit; 
@@ -18,7 +18,7 @@ public class ViewmodelEditor : SingletonComponent<ViewmodelEditor> // TypeDefInd
 
 }
 
-private sealed class ViewmodelEditor.<>c // TypeDefIndex: 13210
+private sealed class ViewmodelEditor.<>c // TypeDefIndex: 13248
 {
 	public static readonly ViewmodelEditor.<>c <>9; 
 	public static Func<BaseViewModel, string> <>9__4_0; 
@@ -29,9 +29,9 @@ private sealed class ViewmodelEditor.<>c // TypeDefIndex: 13210
 
 	public void .ctor() { }
 
-	internal string <DrawWeaponSwitch>b__4_0(BaseViewModel x) { }
+	internal string <DrawWeaponSwitch>
 
-	internal string <DrawWeaponSwitch>b__4_1(BaseViewModel x) { }
+	internal string <DrawWeaponSwitch>
 
 }
 

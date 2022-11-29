@@ -1,4 +1,4 @@
-public class EOS // TypeDefIndex: 8018
+public class EOS // TypeDefIndex: 8027
 {
 
 internal class <Module>

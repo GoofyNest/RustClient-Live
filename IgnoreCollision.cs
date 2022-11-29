@@ -1,4 +1,4 @@
-public class IgnoreCollision : MonoBehaviour // TypeDefIndex: 13057
+public class IgnoreCollision : MonoBehaviour // TypeDefIndex: 13087
 {
 	public Collider collider; 
 

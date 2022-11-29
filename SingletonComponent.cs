@@ -1,4 +1,4 @@
-public abstract class SingletonComponent : FacepunchBehaviour // TypeDefIndex: 5599
+public abstract class SingletonComponent : FacepunchBehaviour // TypeDefIndex: 5601
 {
 
 	public abstract void SingletonSetup();

@@ -1,4 +1,4 @@
-public struct DeleteCacheOptions // TypeDefIndex: 8380
+public struct DeleteCacheOptions // TypeDefIndex: 8389
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 
@@ -14,7 +14,7 @@ public struct DeleteCacheOptions // TypeDefIndex: 8380
 
 }
 
-public struct DeleteCacheOptions // TypeDefIndex: 8865
+public struct DeleteCacheOptions // TypeDefIndex: 8874
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

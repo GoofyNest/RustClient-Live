@@ -1,4 +1,4 @@
-public class FleckLog // TypeDefIndex: 6938
+public class FleckLog // TypeDefIndex: 6942
 {
 	public static LogLevel Level; 
 	public static Action<LogLevel, string, Exception> LogAction; 
@@ -12,7 +12,7 @@ public class FleckLog // TypeDefIndex: 6938
 
 }
 
-private sealed class FleckLog.<>c // TypeDefIndex: 6939
+private sealed class FleckLog.<>c // TypeDefIndex: 6943
 {
 	public static readonly FleckLog.<>c <>9; 
 
@@ -21,7 +21,7 @@ private sealed class FleckLog.<>c // TypeDefIndex: 6939
 
 	public void .ctor() { }
 
-	internal void <.cctor>b__7_0(LogLevel level, string message, Exception ex) { }
+	internal void <.cctor>
 
 }
 

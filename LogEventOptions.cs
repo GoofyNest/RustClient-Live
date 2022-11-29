@@ -1,4 +1,4 @@
-public struct LogEventOptions // TypeDefIndex: 9754
+public struct LogEventOptions // TypeDefIndex: 9763
 {
 	[CompilerGeneratedAttribute] 
 	private IntPtr <ClientHandle>k__BackingField; 

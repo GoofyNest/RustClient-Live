@@ -1,4 +1,4 @@
-public class ERSideWalkVecs : MonoBehaviour // TypeDefIndex: 7267
+public class ERSideWalkVecs : MonoBehaviour // TypeDefIndex: 7271
 {
 	public static GameObject sidewalk; 
 

@@ -1,4 +1,4 @@
-public class DestroyInSeconds : MonoBehaviour // TypeDefIndex: 6223
+public class DestroyInSeconds : MonoBehaviour // TypeDefIndex: 6225
 {
 	public float TimeToDie; 
 	public float TimeToDieVariance; 

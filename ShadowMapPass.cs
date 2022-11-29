@@ -1,4 +1,4 @@
-public enum ShadowMapPass // TypeDefIndex: 3821
+public enum ShadowMapPass // TypeDefIndex: 3822
 {
 	public int value__; 
 	public const ShadowMapPass PointlightPositiveX = 1;

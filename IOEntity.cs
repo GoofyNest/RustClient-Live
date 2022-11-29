@@ -1,4 +1,4 @@
-public class IOEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6359
+public class IOEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6361
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -68,7 +68,7 @@ public class IOEntity : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6359
 
 }
 
-public class IOEntity.IOConnection : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6360
+public class IOEntity.IOConnection : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6362
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -135,7 +135,7 @@ public class IOEntity.IOConnection : IDisposable, Pool.IPooled, IProto // TypeDe
 
 }
 
-public class IOEntity.IOConnection.LineVec : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6361
+public class IOEntity.IOConnection.LineVec : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6363
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -196,7 +196,7 @@ public class IOEntity.IOConnection.LineVec : IDisposable, Pool.IPooled, IProto /
 
 }
 
-public class IOEntity.IOConnection.LinePointList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6362
+public class IOEntity.IOConnection.LinePointList : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6364
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -264,7 +264,7 @@ public class IOEntity.IOConnection.LinePointList : IDisposable, Pool.IPooled, IP
 
 }
 
-public class IOEntity : DecayEntity // TypeDefIndex: 10296
+public class IOEntity : DecayEntity // TypeDefIndex: 10307
 {
 	[HeaderAttribute] 
 	public Transform debugOrigin; 
@@ -311,6 +311,8 @@ public class IOEntity : DecayEntity // TypeDefIndex: 10296
 
 	public virtual int ConsumptionAmount() { }
 
+	public virtual bool ShouldDrainBattery(IOEntity battery) { }
+
 	public virtual int MaximalPowerOutput() { }
 
 	public virtual bool AllowDrainFrom(int outputSlot) { }
@@ -356,7 +358,7 @@ public class IOEntity : DecayEntity // TypeDefIndex: 10296
 
 }
 
-public enum IOEntity.IOType // TypeDefIndex: 10297
+public enum IOEntity.IOType // TypeDefIndex: 10308
 {
 	public int value__; 
 	public const IOEntity.IOType Electric = 0;
@@ -366,7 +368,7 @@ public enum IOEntity.IOType // TypeDefIndex: 10297
 
 }
 
-public class IOEntity.IORef // TypeDefIndex: 10298
+public class IOEntity.IORef // TypeDefIndex: 10309
 {
 	public EntityRef entityRef; 
 	public IOEntity ioEnt; 
@@ -386,7 +388,7 @@ public class IOEntity.IORef // TypeDefIndex: 10298
 
 }
 
-public class IOEntity.IOSlot // TypeDefIndex: 10299
+public class IOEntity.IOSlot // TypeDefIndex: 10310
 {
 	public string niceName; 
 	public IOEntity.IOType type; 

@@ -1,4 +1,4 @@
-internal class LowerResBlitTexture : Object // TypeDefIndex: 3553
+internal class LowerResBlitTexture : Object // TypeDefIndex: 3554
 {
 
 	[RequiredByNativeCodeAttribute] 

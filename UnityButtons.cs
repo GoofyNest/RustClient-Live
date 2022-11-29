@@ -1,4 +1,4 @@
-public static class UnityButtons // TypeDefIndex: 8242
+public static class UnityButtons // TypeDefIndex: 8251
 {
 	private static bool isRegistered; 
 
@@ -9,7 +9,7 @@ public static class UnityButtons // TypeDefIndex: 8242
 
 }
 
-private sealed class UnityButtons.<>c__DisplayClass1_0 // TypeDefIndex: 8243
+private sealed class UnityButtons.<>c__DisplayClass1_0 // TypeDefIndex: 8252
 {
 	public KeyCode localKey; 
 	public bool isFKey; 
@@ -18,11 +18,11 @@ private sealed class UnityButtons.<>c__DisplayClass1_0 // TypeDefIndex: 8243
 
 	public void .ctor() { }
 
-	internal bool <Register>b__0() { }
+	internal bool <Register>
 
 }
 
-private sealed class UnityButtons.<>c__DisplayClass1_1 // TypeDefIndex: 8244
+private sealed class UnityButtons.<>c__DisplayClass1_1 // TypeDefIndex: 8253
 {
 	public float lastWheelValue; 
 	public float wheelValue; 
@@ -30,13 +30,13 @@ private sealed class UnityButtons.<>c__DisplayClass1_1 // TypeDefIndex: 8244
 
 	public void .ctor() { }
 
-	internal bool <Register>b__1() { }
+	internal bool <Register>
 
-	internal void <Register>b__2() { }
+	internal void <Register>
 
 }
 
-private sealed class UnityButtons.<>c__DisplayClass1_2 // TypeDefIndex: 8245
+private sealed class UnityButtons.<>c__DisplayClass1_2 // TypeDefIndex: 8254
 {
 	public float lastWheelValue; 
 	public float wheelValue; 
@@ -44,9 +44,9 @@ private sealed class UnityButtons.<>c__DisplayClass1_2 // TypeDefIndex: 8245
 
 	public void .ctor() { }
 
-	internal bool <Register>b__3() { }
+	internal bool <Register>
 
-	internal void <Register>b__4() { }
+	internal void <Register>
 
 }
 

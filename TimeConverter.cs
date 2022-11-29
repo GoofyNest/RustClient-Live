@@ -1,4 +1,4 @@
-public static class TimeConverter // TypeDefIndex: 7488
+public static class TimeConverter // TypeDefIndex: 7494
 {
 
 	public static TTimeSpan ConvertTo<TTimeSpan>(long time, TempoMap tempoMap) { }

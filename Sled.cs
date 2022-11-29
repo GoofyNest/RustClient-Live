@@ -1,4 +1,4 @@
-public class Sled : BaseVehicle, INotifyTrigger // TypeDefIndex: 10547
+public class Sled : BaseVehicle, INotifyTrigger // TypeDefIndex: 10558
 {
 	private const BaseEntity.Flags BrakeOn = 128;
 	private const BaseEntity.Flags OnSnow = 256;

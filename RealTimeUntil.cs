@@ -1,4 +1,4 @@
-public struct RealTimeUntil // TypeDefIndex: 6172
+public struct RealTimeUntil // TypeDefIndex: 6174
 {
 	private float time; 
 

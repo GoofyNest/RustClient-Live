@@ -1,4 +1,4 @@
-public enum SendMethod // TypeDefIndex: 6867
+public enum SendMethod // TypeDefIndex: 6871
 {
 	public int value__; 
 	public const SendMethod Reliable = 0;

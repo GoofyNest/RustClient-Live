@@ -1,4 +1,4 @@
-public class WorkshopMainMenu : SingletonComponent<WorkshopMainMenu> // TypeDefIndex: 12928
+public class WorkshopMainMenu : SingletonComponent<WorkshopMainMenu> // TypeDefIndex: 12956
 {
 	public static Translate.Phrase loading_workshop; 
 	public static Translate.Phrase loading_workshop_setup; 
@@ -32,7 +32,7 @@ public class WorkshopMainMenu : SingletonComponent<WorkshopMainMenu> // TypeDefI
 
 }
 
-private sealed class WorkshopMainMenu.<CreateNewItemAsync>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12929
+private sealed class WorkshopMainMenu.<CreateNewItemAsync>d__6 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12957
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -61,7 +61,7 @@ private sealed class WorkshopMainMenu.<CreateNewItemAsync>d__6 : IEnumerator<obj
 
 }
 
-private sealed class WorkshopMainMenu.<>c // TypeDefIndex: 12930
+private sealed class WorkshopMainMenu.<>c // TypeDefIndex: 12958
 {
 	public static readonly WorkshopMainMenu.<>c <>9; 
 	public static Action<bool, string> <>9__9_0; 
@@ -71,11 +71,11 @@ private sealed class WorkshopMainMenu.<>c // TypeDefIndex: 12930
 
 	public void .ctor() { }
 
-	internal void <LoadEditor>b__9_0(bool o, string str) { }
+	internal void <LoadEditor>
 
 }
 
-private sealed class WorkshopMainMenu.<LoadEditor>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12931
+private sealed class WorkshopMainMenu.<LoadEditor>d__9 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12959
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -104,7 +104,7 @@ private sealed class WorkshopMainMenu.<LoadEditor>d__9 : IEnumerator<object>, IE
 
 }
 
-private sealed class WorkshopMainMenu.<StartEditingItemAsync>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12932
+private sealed class WorkshopMainMenu.<StartEditingItemAsync>d__10 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12960
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -134,7 +134,7 @@ private sealed class WorkshopMainMenu.<StartEditingItemAsync>d__10 : IEnumerator
 
 }
 
-private sealed class WorkshopMainMenu.<StartViewingItemAsync>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12933
+private sealed class WorkshopMainMenu.<StartViewingItemAsync>d__11 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12961
 {
 	private int <>1__state; 
 	private object <>2__current; 

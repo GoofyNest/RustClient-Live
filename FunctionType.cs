@@ -1,4 +1,4 @@
-public enum FunctionType // TypeDefIndex: 4887
+public enum FunctionType // TypeDefIndex: 4889
 {
 
 public enum FunctionType

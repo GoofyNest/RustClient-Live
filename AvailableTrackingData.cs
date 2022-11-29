@@ -1,4 +1,4 @@
-internal enum AvailableTrackingData // TypeDefIndex: 4143
+internal enum AvailableTrackingData // TypeDefIndex: 4145
 {
 	public int value__; 
 	public const AvailableTrackingData None = 0;

@@ -1,4 +1,4 @@
-internal struct ReceiveMessageFromServerOptionsInternal : ISettable<ReceiveMessageFromServerOptions>, IDisposable // TypeDefIndex: 9840
+internal struct ReceiveMessageFromServerOptionsInternal : ISettable<ReceiveMessageFromServerOptions>, IDisposable // TypeDefIndex: 9849
 {
 	private int m_ApiVersion; 
 	private uint m_DataLengthBytes; 

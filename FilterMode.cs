@@ -1,4 +1,4 @@
-public enum FilterMode // TypeDefIndex: 3424
+public enum FilterMode // TypeDefIndex: 3425
 {
 	public int value__; 
 	public const FilterMode Point = 0;

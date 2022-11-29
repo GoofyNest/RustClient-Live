@@ -1,4 +1,4 @@
-internal struct AddNotifyAudioInputStateOptionsInternal : ISettable<AddNotifyAudioInputStateOptions>, IDisposable // TypeDefIndex: 8638
+internal struct AddNotifyAudioInputStateOptionsInternal : ISettable<AddNotifyAudioInputStateOptions>, IDisposable // TypeDefIndex: 8647
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

@@ -1,4 +1,4 @@
-public class RectMask2D : UIBehaviour, IClipper, ICanvasRaycastFilter // TypeDefIndex: 4997
+public class RectMask2D : UIBehaviour, IClipper, ICanvasRaycastFilter // TypeDefIndex: 4999
 {
 	private readonly RectangularVertexClipper m_VertexClipper; 
 	private RectTransform m_RectTransform; 

@@ -1,4 +1,4 @@
-public sealed class CubemapArray : Texture // TypeDefIndex: 3449
+public sealed class CubemapArray : Texture // TypeDefIndex: 3450
 {
 	public override bool isReadable { get; }
 

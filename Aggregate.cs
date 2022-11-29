@@ -1,4 +1,4 @@
-internal enum Aggregate // TypeDefIndex: 4244
+internal enum Aggregate // TypeDefIndex: 4246
 {
 
 internal enum Aggregate

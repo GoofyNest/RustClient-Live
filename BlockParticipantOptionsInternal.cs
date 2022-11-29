@@ -1,4 +1,4 @@
-internal struct BlockParticipantOptionsInternal : ISettable<BlockParticipantOptions>, IDisposable // TypeDefIndex: 8757
+internal struct BlockParticipantOptionsInternal : ISettable<BlockParticipantOptions>, IDisposable // TypeDefIndex: 8766
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

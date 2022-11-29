@@ -1,4 +1,4 @@
-public static class StencilMaterial // TypeDefIndex: 5016
+public static class StencilMaterial // TypeDefIndex: 5018
 {
 	private static List<StencilMaterial.MatEntry> m_List; 
 
@@ -19,7 +19,7 @@ public static class StencilMaterial // TypeDefIndex: 5016
 
 }
 
-private class StencilMaterial.MatEntry // TypeDefIndex: 5017
+private class StencilMaterial.MatEntry // TypeDefIndex: 5019
 {
 	public Material baseMat; 
 	public Material customMat; 

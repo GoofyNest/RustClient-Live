@@ -1,4 +1,4 @@
-public enum StyleKeyword // TypeDefIndex: 4720
+public enum StyleKeyword // TypeDefIndex: 4722
 {
 	public int value__; 
 	public const StyleKeyword Undefined = 0;

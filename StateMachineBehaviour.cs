@@ -1,4 +1,4 @@
-public abstract class StateMachineBehaviour : ScriptableObject // TypeDefIndex: 4481
+public abstract class StateMachineBehaviour : ScriptableObject // TypeDefIndex: 4483
 {
 
 [AttributeUsageAttribute] 

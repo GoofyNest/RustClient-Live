@@ -1,4 +1,4 @@
-public class JRaw : JValue // TypeDefIndex: 6049
+public class JRaw : JValue // TypeDefIndex: 6051
 {
 
 	public void .ctor(JRaw other) { }

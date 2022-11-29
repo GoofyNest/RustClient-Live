@@ -1,4 +1,4 @@
-public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10912
+public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10923
 {
 	public float IntensityOverride; 
 	public AnimationCurve IntensityScaleOverTime; 
@@ -7,9 +7,10 @@ public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10912
 	public bool requiresPower; 
 	[TooltipAttribute] 
 	public Transform powerOverrideTransform; 
+	public LayerMask checkLayers; 
 	private List<KeyValuePair<Light, float>> lights; 
 	private List<KeyValuePair<AmbientLightLOD, float>> lightLODs; 
-	private List<KeyValuePair<Renderer, Color>> renderers; 
+	private List<KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>> renderers; 
 	private List<VolumetricLightBeam> beams; 
 	private List<CoverageQueryFlare> coverageQueryFlares; 
 	private List<DistanceFlareLOD> distanceFlares; 
@@ -54,7 +55,17 @@ public class LightGroupAtTime : FacepunchBehaviour // TypeDefIndex: 10912
 
 }
 
-public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 10913
+private struct LightGroupAtTime.EmissiveCols // TypeDefIndex: 10924
+{
+	public Color colour; 
+	public int matIndex; 
+
+
+	public void .ctor(Color colour, int matIndex) { }
+
+}
+
+public class LightGroupAtTime.LightGroupWorkQueue : PersistentObjectWorkQueue<LightGroupAtTime> // TypeDefIndex: 10925
 {
 
 	protected override void RunJob(LightGroupAtTime entity) { }

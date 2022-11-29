@@ -1,4 +1,4 @@
-public class DamageRenderer : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 11429
+public class DamageRenderer : MonoBehaviour, IClientComponent, IPrefabPreProcess // TypeDefIndex: 11443
 {
 	[SerializeField] 
 	private List<Material> damageShowingMats; 
@@ -38,11 +38,11 @@ public class DamageRenderer : MonoBehaviour, IClientComponent, IPrefabPreProcess
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private int[] <PreProcess>g__GetValidMatIndices|12_0(Renderer renderer, ref DamageRenderer.<>c__DisplayClass12_0 ) { }
+	private int[] <PreProcess>g__GetValidMatIndices|12_0(Renderer renderer, ref DamageRenderer.<>c
 
 }
 
-private struct DamageRenderer.DamageShowingRenderer // TypeDefIndex: 11430
+private struct DamageRenderer.DamageShowingRenderer // TypeDefIndex: 11444
 {
 	public Renderer renderer; 
 	public int[] indices; 
@@ -52,7 +52,7 @@ private struct DamageRenderer.DamageShowingRenderer // TypeDefIndex: 11430
 
 }
 
-private struct DamageRenderer.<>c__DisplayClass12_0 // TypeDefIndex: 11431
+private struct DamageRenderer.<>c__DisplayClass12_0 // TypeDefIndex: 11445
 {
 	public List<int> matList; 
 	public DamageRenderer <>4__this; 

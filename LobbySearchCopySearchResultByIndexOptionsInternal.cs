@@ -1,4 +1,4 @@
-internal struct LobbySearchCopySearchResultByIndexOptionsInternal : ISettable<LobbySearchCopySearchResultByIndexOptions>, IDisposable // TypeDefIndex: 9176
+internal struct LobbySearchCopySearchResultByIndexOptionsInternal : ISettable<LobbySearchCopySearchResultByIndexOptions>, IDisposable // TypeDefIndex: 9185
 {
 	private int m_ApiVersion; 
 	private uint m_LobbyIndex; 

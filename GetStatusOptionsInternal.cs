@@ -1,4 +1,4 @@
-internal struct GetStatusOptionsInternal : ISettable<GetStatusOptions>, IDisposable // TypeDefIndex: 9383
+internal struct GetStatusOptionsInternal : ISettable<GetStatusOptions>, IDisposable // TypeDefIndex: 9392
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

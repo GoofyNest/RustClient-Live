@@ -1,4 +1,4 @@
-public struct SendPacketOptions // TypeDefIndex: 8990
+public struct SendPacketOptions // TypeDefIndex: 8999
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

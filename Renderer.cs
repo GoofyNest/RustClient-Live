@@ -1,4 +1,4 @@
-public class Renderer : Component // TypeDefIndex: 3403
+public class Renderer : Component // TypeDefIndex: 3404
 {
 	[ObsoleteAttribute] 
 	public bool motionVectors { set; }
@@ -52,6 +52,9 @@ public class Renderer : Component // TypeDefIndex: 3403
 	internal void Internal_SetPropertyBlockMaterialIndex(MaterialPropertyBlock properties, int materialIndex) { }
 
 	[FreeFunctionAttribute] 
+	internal void Internal_GetPropertyBlockMaterialIndex(MaterialPropertyBlock dest, int materialIndex) { }
+
+	[FreeFunctionAttribute] 
 	public bool HasPropertyBlock() { }
 
 	public void SetPropertyBlock(MaterialPropertyBlock properties) { }
@@ -59,6 +62,8 @@ public class Renderer : Component // TypeDefIndex: 3403
 	public void SetPropertyBlock(MaterialPropertyBlock properties, int materialIndex) { }
 
 	public void GetPropertyBlock(MaterialPropertyBlock properties) { }
+
+	public void GetPropertyBlock(MaterialPropertyBlock properties, int materialIndex) { }
 
 	public bool get_enabled() { }
 

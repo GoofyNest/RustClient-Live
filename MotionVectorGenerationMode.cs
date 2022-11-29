@@ -1,4 +1,4 @@
-public enum MotionVectorGenerationMode // TypeDefIndex: 3435
+public enum MotionVectorGenerationMode // TypeDefIndex: 3436
 {
 
 public enum MotionVectorGenerationMode

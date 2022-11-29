@@ -1,4 +1,4 @@
-public sealed class RangeAttribute : PropertyAttribute // TypeDefIndex: 3483
+public sealed class RangeAttribute : PropertyAttribute // TypeDefIndex: 3484
 {
 	public readonly float min; 
 	public readonly float max; 

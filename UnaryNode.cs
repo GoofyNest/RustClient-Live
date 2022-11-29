@@ -1,4 +1,4 @@
-internal sealed class UnaryNode : ExpressionNode // TypeDefIndex: 4269
+internal sealed class UnaryNode : ExpressionNode // TypeDefIndex: 4271
 {
 	internal readonly int _op; 
 	internal ExpressionNode _right; 

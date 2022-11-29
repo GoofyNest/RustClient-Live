@@ -1,4 +1,4 @@
-public struct Mathf // TypeDefIndex: 3469
+public struct Mathf // TypeDefIndex: 3470
 {
 	public static readonly float Epsilon; 
 

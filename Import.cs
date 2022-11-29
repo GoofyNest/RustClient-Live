@@ -1,5 +1,7 @@
-public static class Import // TypeDefIndex: 7799
+public static class Import // TypeDefIndex: 7808
 {
+
+internal class <Module>
 
 public static class Import
 	private static Regex regex; 
@@ -19,7 +21,7 @@ public static class Import
 
 }
 
-private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7800
+private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7809
 {
 	public string[] columnNames; 
 
@@ -27,33 +29,33 @@ private sealed class Import.<>c__DisplayClass0_0<T> // TypeDefIndex: 7800
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Import.<>c__DisplayClass0_0<object>..ctor
+	|-Import.<>c
 	*/
 
 }
 
-private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7801
+private sealed class Import.<>c__DisplayClass0_1<T> // TypeDefIndex: 7810
 {
 	public int i; 
-	public Import.<>c__DisplayClass0_0<T> CS$<>8__locals1; 
+	public Import.<>c
 	public Func<PropertyInfo, bool> <>9__0; 
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Import.<>c__DisplayClass0_1<object>..ctor
+	|-Import.<>c
 	*/
 
-	internal bool <FromUrl>b__0(PropertyInfo x) { }
+	internal bool <FromUrl>
 	/* GenericInstMethod :
 	|
-	|-Import.<>c__DisplayClass0_1<object>.<FromUrl>b__0
+	|-Import.<>c
 	*/
 
 }
 
-private sealed class Import.<>c // TypeDefIndex: 7802
+private sealed class Import.<>c // TypeDefIndex: 7811
 {
 	public static readonly Import.<>c <>9; 
 	public static Func<Match, string> <>9__2_0; 
@@ -64,9 +66,9 @@ private sealed class Import.<>c // TypeDefIndex: 7802
 
 	public void .ctor() { }
 
-	internal string <GetCSVColumns>b__2_0(Match x) { }
+	internal string <GetCSVColumns>
 
-	internal bool <MonoSecurityBullshitHack>b__3_0(object a, X509Certificate b, X509Chain c, SslPolicyErrors d) { }
+	internal bool <MonoSecurityBullshitHack>
 
 }
 

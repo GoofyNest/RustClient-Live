@@ -1,4 +1,4 @@
-public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5996
+public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5998
 {
 	private static readonly IContractResolver _instance; 
 	private static readonly JsonConverter[] BuiltInConverters; 
@@ -132,7 +132,7 @@ public class DefaultContractResolver : IContractResolver // TypeDefIndex: 5996
 
 }
 
-private sealed class DefaultContractResolver.<>c // TypeDefIndex: 5999
+private sealed class DefaultContractResolver.<>c // TypeDefIndex: 6001
 {
 
 [CompilerGeneratedAttribute] 
@@ -154,21 +154,21 @@ private sealed class DefaultContractResolver.<>c
 
 	public void .ctor() { }
 
-	internal bool <GetSerializableMembers>b__30_0(MemberInfo m) { }
+	internal bool <GetSerializableMembers>
 
-	internal bool <GetSerializableMembers>b__30_1(MemberInfo m) { }
+	internal bool <GetSerializableMembers>
 
-	internal IEnumerable<MemberInfo> <GetExtensionDataMemberForType>b__33_0(Type baseType) { }
+	internal IEnumerable<MemberInfo> <GetExtensionDataMemberForType>
 
-	internal bool <GetExtensionDataMemberForType>b__33_1(MemberInfo m) { }
+	internal bool <GetExtensionDataMemberForType>
 
-	internal bool <GetAttributeConstructor>b__36_0(ConstructorInfo c) { }
+	internal bool <GetAttributeConstructor>
 
-	internal int <CreateProperties>b__60_0(JsonProperty p) { }
+	internal int <CreateProperties>
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefIndex: 6000
+private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefIndex: 6002
 {
 	public Func<object, object> getExtensionDataDictionary; 
 	public MemberInfo member; 
@@ -178,51 +178,51 @@ private sealed class DefaultContractResolver.<>c__DisplayClass34_0 // TypeDefInd
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefIndex: 6001
+private sealed class DefaultContractResolver.<>c__DisplayClass34_1 // TypeDefIndex: 6003
 {
 	public Action<object, object> setExtensionDataDictionary; 
 	public Func<object> createExtensionDataDictionary; 
 	public MethodCall<object, object> setExtensionDataDictionaryValue; 
-	public DefaultContractResolver.<>c__DisplayClass34_0 CS$<>8__locals1; 
+	public DefaultContractResolver.<>c
 
 
 	public void .ctor() { }
 
-	internal void <SetExtensionDataDelegates>b__0(object o, string key, object value) { }
+	internal void <SetExtensionDataDelegates>
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefIndex: 6002
+private sealed class DefaultContractResolver.<>c__DisplayClass34_2 // TypeDefIndex: 6004
 {
 	public ObjectConstructor<object> createEnumerableWrapper; 
-	public DefaultContractResolver.<>c__DisplayClass34_0 CS$<>8__locals2; 
+	public DefaultContractResolver.<>c
 
 
 	public void .ctor() { }
 
-	internal IEnumerable<KeyValuePair<object, object>> <SetExtensionDataDelegates>b__1(object o) { }
+	internal IEnumerable<KeyValuePair<object, object>> <SetExtensionDataDelegates>
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefIndex: 6003
+private sealed class DefaultContractResolver.<>c__DisplayClass64_0 // TypeDefIndex: 6005
 {
 	public MethodCall<object, object> shouldSerializeCall; 
 
 
 	public void .ctor() { }
 
-	internal bool <CreateShouldSerializeTest>b__0(object o) { }
+	internal bool <CreateShouldSerializeTest>
 
 }
 
-private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefIndex: 6004
+private sealed class DefaultContractResolver.<>c__DisplayClass65_0 // TypeDefIndex: 6006
 {
 	public Func<object, object> specifiedPropertyGet; 
 
 
 	public void .ctor() { }
 
-	internal bool <SetIsSpecifiedActions>b__0(object o) { }
+	internal bool <SetIsSpecifiedActions>
 
 }
 

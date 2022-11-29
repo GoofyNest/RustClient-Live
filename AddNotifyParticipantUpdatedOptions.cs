@@ -1,4 +1,4 @@
-public struct AddNotifyParticipantUpdatedOptions // TypeDefIndex: 8641
+public struct AddNotifyParticipantUpdatedOptions // TypeDefIndex: 8650
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

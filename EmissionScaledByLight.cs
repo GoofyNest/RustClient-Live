@@ -1,4 +1,4 @@
-public class EmissionScaledByLight : MonoBehaviour, IClientComponent // TypeDefIndex: 11063
+public class EmissionScaledByLight : MonoBehaviour, IClientComponent // TypeDefIndex: 11077
 {
 	private Color emissionColor; 
 	public Renderer[] targetRenderers; 

@@ -1,4 +1,4 @@
-public sealed class WaitForSeconds : YieldInstruction // TypeDefIndex: 3542
+public sealed class WaitForSeconds : YieldInstruction // TypeDefIndex: 3543
 {
 	internal float m_Seconds; 
 

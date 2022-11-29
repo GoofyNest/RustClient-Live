@@ -1,4 +1,4 @@
-public enum ColorWriteMask // TypeDefIndex: 3814
+public enum ColorWriteMask // TypeDefIndex: 3815
 {
 	public int value__; 
 	public const ColorWriteMask Alpha = 1;

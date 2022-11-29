@@ -1,4 +1,4 @@
-public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6444
+public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6448
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class BaseOven : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6444
 
 }
 
-public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10038
+public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10050
 {
 	private Option __menuOption_SwitchOff; 
 	private Option __menuOption_SwitchOn; 
@@ -124,7 +124,7 @@ public class BaseOven : StorageContainer, ISplashable // TypeDefIndex: 10038
 
 }
 
-public enum BaseOven.TemperatureType // TypeDefIndex: 10039
+public enum BaseOven.TemperatureType // TypeDefIndex: 10051
 {
 	public int value__; 
 	public const BaseOven.TemperatureType Normal = 0;
@@ -135,7 +135,7 @@ public enum BaseOven.TemperatureType // TypeDefIndex: 10039
 
 }
 
-private sealed class BaseOven.<>c // TypeDefIndex: 10040
+private sealed class BaseOven.<>c // TypeDefIndex: 10052
 {
 	public static readonly BaseOven.<>c <>9; 
 	public static Func<GameObject, BaseOven> <>9__28_0; 
@@ -147,11 +147,11 @@ private sealed class BaseOven.<>c // TypeDefIndex: 10040
 
 	public void .ctor() { }
 
-	internal BaseOven <BuildMaterialOutputCache>b__28_0(GameObject x) { }
+	internal BaseOven <BuildMaterialOutputCache>
 
-	internal bool <BuildMaterialOutputCache>b__28_1(BaseOven x) { }
+	internal bool <BuildMaterialOutputCache>
 
-	internal float <BuildMaterialOutputCache>b__28_2(BaseOven x) { }
+	internal float <BuildMaterialOutputCache>
 
 }
 

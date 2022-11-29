@@ -1,4 +1,4 @@
-public struct SqlString : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4356
+public struct SqlString : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4358
 {
 	private string m_value; 
 	private CompareInfo m_cmpInfo; 

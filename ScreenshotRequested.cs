@@ -1,4 +1,4 @@
-internal struct ScreenshotRequested_t : ICallbackData // TypeDefIndex: 5411
+internal struct ScreenshotRequested_t : ICallbackData // TypeDefIndex: 5413
 {
 	public static int _datasize; 
 

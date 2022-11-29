@@ -1,4 +1,4 @@
-internal class BasicFieldNameLookup // TypeDefIndex: 4364
+internal class BasicFieldNameLookup // TypeDefIndex: 4366
 {
 	private readonly string[] _fieldNames; 
 

@@ -1,4 +1,4 @@
-public class RepairBench : StorageContainer // TypeDefIndex: 10342
+public class RepairBench : StorageContainer // TypeDefIndex: 10353
 {
 	public float maxConditionLostOnRepair; 
 	public GameObjectRef skinchangeEffect; 

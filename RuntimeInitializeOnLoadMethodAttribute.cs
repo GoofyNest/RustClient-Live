@@ -1,4 +1,4 @@
-public class RuntimeInitializeOnLoadMethodAttribute : PreserveAttribute // TypeDefIndex: 3524
+public class RuntimeInitializeOnLoadMethodAttribute : PreserveAttribute // TypeDefIndex: 3525
 {
 	private RuntimeInitializeLoadType m_LoadType; 
 

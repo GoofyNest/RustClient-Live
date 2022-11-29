@@ -1,4 +1,4 @@
-public sealed class RenderSettings : Object // TypeDefIndex: 3404
+public sealed class RenderSettings : Object // TypeDefIndex: 3405
 {
 	[NativePropertyAttribute] 
 	public static bool fog { get; }

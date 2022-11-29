@@ -1,4 +1,4 @@
-public class RadioPlaylist : ScriptableObject // TypeDefIndex: 11174
+public class RadioPlaylist : ScriptableObject // TypeDefIndex: 11188
 {
 	public string Url; 
 	public AudioClip[] Playlist; 

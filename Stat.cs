@@ -1,4 +1,4 @@
-public struct Stat // TypeDefIndex: 5563
+public struct Stat // TypeDefIndex: 5565
 {
 	[CompilerGeneratedAttribute] 
 	private string <Name>k__BackingField; 
@@ -27,7 +27,7 @@ public struct Stat // TypeDefIndex: 5563
 
 }
 
-public struct Stat // TypeDefIndex: 8437
+public struct Stat // TypeDefIndex: 8446
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Name>k__BackingField; 

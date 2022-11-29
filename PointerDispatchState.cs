@@ -1,4 +1,4 @@
-internal class PointerDispatchState // TypeDefIndex: 4607
+internal class PointerDispatchState // TypeDefIndex: 4609
 {
 	private IEventHandler[] m_PendingPointerCapture; 
 	private IEventHandler[] m_PointerCapture; 

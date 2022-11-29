@@ -72,9 +72,9 @@ private sealed class TextReader.<>c // TypeDefIndex: 654
 
 	public void .ctor() { }
 
-	internal string <.cctor>b__22_0(object state) { }
+	internal string <.cctor>
 
-	internal int <.cctor>b__22_1(object state) { }
+	internal int <.cctor>
 
 }
 

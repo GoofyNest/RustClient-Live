@@ -1,5 +1,6 @@
-public sealed class Utf8String // TypeDefIndex: 8268
+public sealed class Utf8String // TypeDefIndex: 8277
 {
+	public static Utf8String EmptyString; 
 	[CompilerGeneratedAttribute] 
 	private int <Length>k__BackingField; 
 	[CompilerGeneratedAttribute] 
@@ -56,6 +57,8 @@ public sealed class Utf8String // TypeDefIndex: 8268
 	public override string ToString() { }
 
 	public override int GetHashCode() { }
+
+	private static void .cctor() { }
 
 }
 

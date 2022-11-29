@@ -1,4 +1,4 @@
-public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 12866
+public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 12894
 {
 	[CompilerGeneratedAttribute] 
 	private static bool <WantsSkip>k__BackingField; 
@@ -112,7 +112,7 @@ public class LoadingScreen : SingletonComponent<LoadingScreen> // TypeDefIndex: 
 
 }
 
-private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d : IAsyncStateMachine // TypeDefIndex: 12867
+private struct LoadingScreen.<<ChooseBackgroundImage>g__PreloadBackgroundImage|64_0>d : IAsyncStateMachine // TypeDefIndex: 12895
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 

@@ -1,4 +1,4 @@
-public struct UpdateReceivingOptions // TypeDefIndex: 8711
+public struct UpdateReceivingOptions // TypeDefIndex: 8720
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

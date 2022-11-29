@@ -136,19 +136,19 @@ private sealed class TextWriter.<>c // TypeDefIndex: 658
 
 	public void .ctor() { }
 
-	internal void <.cctor>b__73_0(object state) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__73_1(object state) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__73_2(object state) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__73_3(object state) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__73_4(object state) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__73_5(object state) { }
+	internal void <.cctor>
 
-	internal void <.cctor>b__73_6(object state) { }
+	internal void <.cctor>
 
 }
 

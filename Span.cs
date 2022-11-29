@@ -103,7 +103,7 @@ public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 123
 
 }
 
-public class SpanningTree<T> // TypeDefIndex: 4816
+public class SpanningTree<T> // TypeDefIndex: 4818
 {
 	private List<SpanningTree.Node<T>> nodes; 
 	private List<SpanningTree.Edge<T>> edges; 
@@ -153,7 +153,7 @@ public class SpanningTree<T> // TypeDefIndex: 4816
 
 }
 
-private class SpanningTree.Node<T> // TypeDefIndex: 4817
+private class SpanningTree.Node<T> // TypeDefIndex: 4819
 {
 	public List<SpanningTree.Edge<T>> edges; 
 	public bool connected; 
@@ -167,7 +167,7 @@ private class SpanningTree.Node<T> // TypeDefIndex: 4817
 
 }
 
-private class SpanningTree.Edge<T> : IMinHeapNode<SpanningTree.Edge<T>> // TypeDefIndex: 4818
+private class SpanningTree.Edge<T> : IMinHeapNode<SpanningTree.Edge<T>> // TypeDefIndex: 4820
 {
 	public SpanningTree.Node<T> source; 
 	public SpanningTree.Node<T> target; 
@@ -217,7 +217,7 @@ private class SpanningTree.Edge<T> : IMinHeapNode<SpanningTree.Edge<T>> // TypeD
 
 }
 
-public struct Span<T> // TypeDefIndex: 6899
+public struct Span<T> // TypeDefIndex: 6903
 {
 	private readonly Pinnable<T> _pinnable; 
 	private readonly IntPtr _byteOffset; 
@@ -389,7 +389,7 @@ public struct Span<T> // TypeDefIndex: 6899
 
 }
 
-internal static class SpanHelpers // TypeDefIndex: 6901
+internal static class SpanHelpers // TypeDefIndex: 6905
 {
 
 [ExtensionAttribute] 
@@ -426,7 +426,7 @@ internal static class SpanHelpers
 
 }
 
-public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 6902
+public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 6906
 {
 	public static readonly bool IsReferenceOrContainsReferences; 
 	public static readonly T[] EmptyArray; 
@@ -453,7 +453,7 @@ public static class SpanHelpers.PerTypeValues<T> // TypeDefIndex: 6902
 
 }
 
-internal struct SpanWriter // TypeDefIndex: 6958
+internal struct SpanWriter // TypeDefIndex: 6962
 {
 	private readonly Span<byte> _data; 
 	[CompilerGeneratedAttribute] 

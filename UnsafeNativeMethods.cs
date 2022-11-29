@@ -100,7 +100,7 @@ internal struct UnsafeNativeMethods.ManifestEtw.TRACE_ENABLE_INFO // TypeDefInde
 
 }
 
-internal static class UnsafeNativeMethods // TypeDefIndex: 4900
+internal static class UnsafeNativeMethods // TypeDefIndex: 4902
 {
 	internal static readonly bool use_sqlite3_close_v2; 
 	internal static readonly bool use_sqlite3_open_v2; 

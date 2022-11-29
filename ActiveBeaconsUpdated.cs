@@ -1,4 +1,4 @@
-internal struct ActiveBeaconsUpdated_t : ICallbackData // TypeDefIndex: 5364
+internal struct ActiveBeaconsUpdated_t : ICallbackData // TypeDefIndex: 5366
 {
 	public static int _datasize; 
 

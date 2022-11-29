@@ -1,4 +1,4 @@
-public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6389
+public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6391
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -61,7 +61,7 @@ public class PhotoFrame : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 638
 
 }
 
-public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10134
+public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGCBrowserEntity // TypeDefIndex: 10145
 {
 	private Option __menuOption_Menu_ChangeText; 
 	private Option __menuOption_Menu_LockSign; 
@@ -169,7 +169,7 @@ public class PhotoFrame : StorageContainer, ILOD, IImageReceiver, ISignage, IUGC
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_ChangeText>b__20_0(int frame, Texture2D texture) { }
+	private void <Menu_ChangeText>
 
 }
 

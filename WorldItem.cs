@@ -1,4 +1,4 @@
-public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
+public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6311
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class WorldItem : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6309
 
 }
 
-public class WorldItem : BaseEntity // TypeDefIndex: 10377
+public class WorldItem : BaseEntity // TypeDefIndex: 10388
 {
 	[HeaderAttribute] 
 	public bool allowPickup; 
@@ -105,7 +105,7 @@ public class WorldItem : BaseEntity // TypeDefIndex: 10377
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <GetMenuItems>b__6_0(BasePlayer ply) { }
+	private void <GetMenuItems>
 
 }
 

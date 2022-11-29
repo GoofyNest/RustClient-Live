@@ -1,4 +1,4 @@
-public sealed class SqlBytes : INullable, IXmlSerializable, ISerializable // TypeDefIndex: 4344
+public sealed class SqlBytes : INullable, IXmlSerializable, ISerializable // TypeDefIndex: 4346
 {
 	internal byte[] _rgbBuf; 
 	private long _lCurLen; 

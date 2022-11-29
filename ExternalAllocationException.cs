@@ -1,4 +1,4 @@
-internal class ExternalAllocationException : AllocationException // TypeDefIndex: 8259
+internal class ExternalAllocationException : AllocationException // TypeDefIndex: 8268
 {
 
 	public void .ctor(IntPtr address, Type type) { }

@@ -1,4 +1,4 @@
-public class Mask : UIBehaviour, ICanvasRaycastFilter, IMaterialModifier // TypeDefIndex: 4988
+public class Mask : UIBehaviour, ICanvasRaycastFilter, IMaterialModifier // TypeDefIndex: 4990
 {
 	private RectTransform m_RectTransform; 
 	[SerializeField] 

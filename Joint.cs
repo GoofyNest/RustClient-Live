@@ -1,4 +1,4 @@
-public class Joint : Component // TypeDefIndex: 3930
+public class Joint : Component // TypeDefIndex: 3932
 {
 	public Rigidbody connectedBody { set; }
 	public Vector3 anchor { set; }

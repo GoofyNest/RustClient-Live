@@ -1,4 +1,4 @@
-public struct ContactPoint // TypeDefIndex: 3935
+public struct ContactPoint // TypeDefIndex: 3937
 {
 	internal Vector3 m_Point; 
 	internal Vector3 m_Normal; 

@@ -1,4 +1,4 @@
-public enum ReflectionProbeTimeSlicingMode // TypeDefIndex: 3831
+public enum ReflectionProbeTimeSlicingMode // TypeDefIndex: 3832
 {
 	public int value__; 
 	public const ReflectionProbeTimeSlicingMode AllFacesAtOnce = 0;

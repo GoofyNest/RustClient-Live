@@ -1,4 +1,4 @@
-public class HeaderAttribute : PropertyAttribute // TypeDefIndex: 3482
+public class HeaderAttribute : PropertyAttribute // TypeDefIndex: 3483
 {
 	public readonly string header; 
 

@@ -1,4 +1,4 @@
-internal sealed class SqlUdtStorage : DataStorage // TypeDefIndex: 4433
+internal sealed class SqlUdtStorage : DataStorage // TypeDefIndex: 4435
 {
 	private object[] _values; 
 	private readonly bool _implementsIXmlSerializable; 

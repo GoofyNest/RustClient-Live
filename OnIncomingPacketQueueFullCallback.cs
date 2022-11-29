@@ -1,4 +1,4 @@
-public sealed class OnIncomingPacketQueueFullCallback : MulticastDelegate // TypeDefIndex: 8961
+public sealed class OnIncomingPacketQueueFullCallback : MulticastDelegate // TypeDefIndex: 8970
 {
 
 	public void .ctor(object object, IntPtr method) { }

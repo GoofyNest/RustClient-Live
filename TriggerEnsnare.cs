@@ -1,4 +1,4 @@
-public class TriggerEnsnare : TriggerBase // TypeDefIndex: 11746
+public class TriggerEnsnare : TriggerBase // TypeDefIndex: 11766
 {
 	public bool blockHands; 
 

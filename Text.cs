@@ -1,4 +1,4 @@
-public class Text : MaskableGraphic, ILayoutElement // TypeDefIndex: 5018
+public class Text : MaskableGraphic, ILayoutElement // TypeDefIndex: 5020
 {
 	[SerializeField] 
 	private FontData m_FontData; 

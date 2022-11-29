@@ -1,4 +1,4 @@
-public struct Vector2Int : IEquatable<Vector2Int> // TypeDefIndex: 3471
+public struct Vector2Int : IEquatable<Vector2Int> // TypeDefIndex: 3472
 {
 	private int m_X; 
 	private int m_Y; 

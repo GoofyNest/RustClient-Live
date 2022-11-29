@@ -1,4 +1,4 @@
-public class JunkPile : BaseEntity // TypeDefIndex: 10301
+public class JunkPile : BaseEntity // TypeDefIndex: 10312
 {
 	public GameObjectRef sinkEffect; 
 	public SpawnGroup[] spawngroups; 

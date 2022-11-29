@@ -1,4 +1,4 @@
-internal sealed class SqlBinaryStorage : DataStorage // TypeDefIndex: 4415
+internal sealed class SqlBinaryStorage : DataStorage // TypeDefIndex: 4417
 {
 	private SqlBinary[] _values; 
 

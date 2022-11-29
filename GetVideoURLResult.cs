@@ -1,4 +1,4 @@
-internal struct GetVideoURLResult_t : ICallbackData // TypeDefIndex: 5484
+internal struct GetVideoURLResult_t : ICallbackData // TypeDefIndex: 5486
 {
 	internal Result Result; 
 	internal AppId VideoAppID; 

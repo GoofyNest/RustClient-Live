@@ -1,4 +1,4 @@
-public class WorldSerialization // TypeDefIndex: 7795
+public class WorldSerialization // TypeDefIndex: 7801
 {
 	public const uint CurrentVersion = 9;
 	[CompilerGeneratedAttribute] 
@@ -53,25 +53,25 @@ public class WorldSerialization // TypeDefIndex: 7795
 
 }
 
-private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7796
+private sealed class WorldSerialization.<>c__DisplayClass13_0 // TypeDefIndex: 7802
 {
 	public string category; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetPrefabs>b__0(PrefabData p) { }
+	internal bool <GetPrefabs>
 
 }
 
-private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7797
+private sealed class WorldSerialization.<>c__DisplayClass15_0 // TypeDefIndex: 7803
 {
 	public string name; 
 
 
 	public void .ctor() { }
 
-	internal bool <GetPaths>b__0(PathData p) { }
+	internal bool <GetPaths>
 
 }
 

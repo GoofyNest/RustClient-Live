@@ -1,4 +1,4 @@
-public class ERTerrain : MonoBehaviour // TypeDefIndex: 7287
+public class ERTerrain : MonoBehaviour // TypeDefIndex: 7291
 {
 	public List<Vector3> surfacevecs; 
 	public float[] tdataFloat; 

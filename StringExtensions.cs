@@ -1,4 +1,4 @@
-public static class StringExtensions // TypeDefIndex: 4850
+public static class StringExtensions // TypeDefIndex: 4852
 {
 	private static readonly Regex regexSplitQuotes; 
 	private static char[] spaceOrQuote; 
@@ -50,7 +50,7 @@ public static class StringExtensions // TypeDefIndex: 4850
 
 }
 
-private sealed class StringExtensions.<>c // TypeDefIndex: 4851
+private sealed class StringExtensions.<>c // TypeDefIndex: 4853
 {
 	public static readonly StringExtensions.<>c <>9; 
 	public static Func<char, bool> <>9__15_0; 
@@ -60,11 +60,11 @@ private sealed class StringExtensions.<>c // TypeDefIndex: 4851
 
 	public void .ctor() { }
 
-	internal bool <RemoveBadCharacters>b__15_0(char x) { }
+	internal bool <RemoveBadCharacters>
 
 }
 
-public static class StringExtensions // TypeDefIndex: 5609
+public static class StringExtensions // TypeDefIndex: 5611
 {
 
 	[ExtensionAttribute] 

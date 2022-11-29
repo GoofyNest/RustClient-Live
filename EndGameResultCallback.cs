@@ -1,4 +1,4 @@
-internal struct EndGameResultCallback_t : ICallbackData // TypeDefIndex: 5358
+internal struct EndGameResultCallback_t : ICallbackData // TypeDefIndex: 5360
 {
 	internal Result Result; 
 	internal ulong UllUniqueGameID; 

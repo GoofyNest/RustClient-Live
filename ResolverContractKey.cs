@@ -1,4 +1,4 @@
-internal struct ResolverContractKey // TypeDefIndex: 5994
+internal struct ResolverContractKey // TypeDefIndex: 5996
 {
 	private readonly Type _resolverType; 
 	private readonly Type _contractType; 

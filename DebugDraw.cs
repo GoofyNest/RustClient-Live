@@ -1,4 +1,4 @@
-public static class DebugDraw // TypeDefIndex: 6231
+public static class DebugDraw // TypeDefIndex: 6233
 {
 
 	public static void Point(Vector3 position, Color color, float scale = 1, float duration = 0, bool depthTest = True) { }

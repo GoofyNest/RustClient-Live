@@ -1,4 +1,4 @@
-internal class ISteamParentalSettings : SteamInterface // TypeDefIndex: 5129
+internal class ISteamParentalSettings : SteamInterface // TypeDefIndex: 5131
 {
 
 	internal void .ctor(bool IsGameServer) { }

@@ -1,4 +1,4 @@
-internal enum FriendFlags // TypeDefIndex: 5151
+internal enum FriendFlags // TypeDefIndex: 5153
 {
 	public int value__; 
 	public const FriendFlags None = 0;

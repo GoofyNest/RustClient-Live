@@ -66,7 +66,7 @@ private sealed class DefaultBinder.<>c // TypeDefIndex: 205
 
 	public void .ctor() { }
 
-	internal bool <SelectProperty>b__3_0(Type t) { }
+	internal bool <SelectProperty>
 
 }
 

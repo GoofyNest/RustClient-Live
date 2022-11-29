@@ -1,4 +1,4 @@
-public static class TempoMapManagingUtilities // TypeDefIndex: 7463
+public static class TempoMapManagingUtilities // TypeDefIndex: 7469
 {
 
 	[ExtensionAttribute] 
@@ -9,7 +9,7 @@ public static class TempoMapManagingUtilities // TypeDefIndex: 7463
 
 }
 
-private sealed class TempoMapManagingUtilities.<>c // TypeDefIndex: 7464
+private sealed class TempoMapManagingUtilities.<>c // TypeDefIndex: 7470
 {
 	public static readonly TempoMapManagingUtilities.<>c <>9; 
 	public static Func<TrackChunk, bool> <>9__3_0; 
@@ -21,11 +21,11 @@ private sealed class TempoMapManagingUtilities.<>c // TypeDefIndex: 7464
 
 	public void .ctor() { }
 
-	internal bool <GetTempoMap>b__3_0(TrackChunk c) { }
+	internal bool <GetTempoMap>
 
-	internal EventsCollection <GetTempoMap>b__3_1(TrackChunk c) { }
+	internal EventsCollection <GetTempoMap>
 
-	internal int <GetTempoMap>b__3_2(EventsCollection c) { }
+	internal int <GetTempoMap>
 
 }
 

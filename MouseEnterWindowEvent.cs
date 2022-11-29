@@ -1,4 +1,4 @@
-public class MouseEnterWindowEvent : MouseEventBase<MouseEnterWindowEvent> // TypeDefIndex: 4681
+public class MouseEnterWindowEvent : MouseEventBase<MouseEnterWindowEvent> // TypeDefIndex: 4683
 {
 
 	protected override void Init() { }

@@ -1,4 +1,4 @@
-public enum DrivenTransformProperties // TypeDefIndex: 3565
+public enum DrivenTransformProperties // TypeDefIndex: 3566
 {
 	public int value__; 
 	public const DrivenTransformProperties None = 0;

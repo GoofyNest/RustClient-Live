@@ -1,4 +1,4 @@
-public static class LayoutUtility // TypeDefIndex: 4985
+public static class LayoutUtility // TypeDefIndex: 4987
 {
 
 	public static float GetMinSize(RectTransform rect, int axis) { }
@@ -25,7 +25,7 @@ public static class LayoutUtility // TypeDefIndex: 4985
 
 }
 
-private sealed class LayoutUtility.<>c // TypeDefIndex: 4986
+private sealed class LayoutUtility.<>c // TypeDefIndex: 4988
 {
 	public static readonly LayoutUtility.<>c <>9; 
 	public static Func<ILayoutElement, float> <>9__3_0; 
@@ -42,21 +42,21 @@ private sealed class LayoutUtility.<>c // TypeDefIndex: 4986
 
 	public void .ctor() { }
 
-	internal float <GetMinWidth>b__3_0(ILayoutElement e) { }
+	internal float <GetMinWidth>
 
-	internal float <GetPreferredWidth>b__4_0(ILayoutElement e) { }
+	internal float <GetPreferredWidth>
 
-	internal float <GetPreferredWidth>b__4_1(ILayoutElement e) { }
+	internal float <GetPreferredWidth>
 
-	internal float <GetFlexibleWidth>b__5_0(ILayoutElement e) { }
+	internal float <GetFlexibleWidth>
 
-	internal float <GetMinHeight>b__6_0(ILayoutElement e) { }
+	internal float <GetMinHeight>
 
-	internal float <GetPreferredHeight>b__7_0(ILayoutElement e) { }
+	internal float <GetPreferredHeight>
 
-	internal float <GetPreferredHeight>b__7_1(ILayoutElement e) { }
+	internal float <GetPreferredHeight>
 
-	internal float <GetFlexibleHeight>b__8_0(ILayoutElement e) { }
+	internal float <GetFlexibleHeight>
 
 }
 

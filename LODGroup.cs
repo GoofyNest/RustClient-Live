@@ -1,4 +1,4 @@
-public class LODGroup : Component // TypeDefIndex: 3441
+public class LODGroup : Component // TypeDefIndex: 3442
 {
 	public Vector3 localReferencePoint { get; set; }
 	public float size { get; set; }

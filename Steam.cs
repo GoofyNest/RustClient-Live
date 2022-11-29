@@ -1,4 +1,4 @@
-internal static class SteamAPI // TypeDefIndex: 5115
+internal static class SteamAPI // TypeDefIndex: 5117
 {
 
 	internal static bool Init() { }
@@ -9,7 +9,7 @@ internal static class SteamAPI // TypeDefIndex: 5115
 
 }
 
-internal static class SteamAPI.Native // TypeDefIndex: 5116
+internal static class SteamAPI.Native // TypeDefIndex: 5118
 {
 
 	public static extern bool SteamAPI_Init() { }
@@ -20,7 +20,7 @@ internal static class SteamAPI.Native // TypeDefIndex: 5116
 
 }
 
-internal enum SteamItemFlags // TypeDefIndex: 5171
+internal enum SteamItemFlags // TypeDefIndex: 5173
 {
 	public int value__; 
 	public const SteamItemFlags NoTrade = 1;
@@ -29,7 +29,7 @@ internal enum SteamItemFlags // TypeDefIndex: 5171
 
 }
 
-public enum SteamNetworkingAvailability // TypeDefIndex: 5172
+public enum SteamNetworkingAvailability // TypeDefIndex: 5174
 {
 	public int value__; 
 	public const SteamNetworkingAvailability CannotTry = -102;
@@ -45,7 +45,7 @@ public enum SteamNetworkingAvailability // TypeDefIndex: 5172
 
 }
 
-public class SteamApps : SteamSharedClass<SteamApps> // TypeDefIndex: 5187
+public class SteamApps : SteamSharedClass<SteamApps> // TypeDefIndex: 5189
 {
 	internal static ISteamApps Internal { get; }
 	public static string GameLanguage { get; }
@@ -71,7 +71,7 @@ public class SteamApps : SteamSharedClass<SteamApps> // TypeDefIndex: 5187
 
 }
 
-public static class SteamClient // TypeDefIndex: 5188
+public static class SteamClient // TypeDefIndex: 5190
 {
 	private static bool initialized; 
 	private static readonly List<SteamClass> openInterfaces; 
@@ -139,7 +139,7 @@ public static class SteamClient // TypeDefIndex: 5188
 
 }
 
-public class SteamFriends : SteamClientClass<SteamFriends> // TypeDefIndex: 5189
+public class SteamFriends : SteamClientClass<SteamFriends> // TypeDefIndex: 5191
 {
 	private static Dictionary<string, string> richPresence; 
 	[CompilerGeneratedAttribute] 
@@ -205,7 +205,7 @@ public class SteamFriends : SteamClientClass<SteamFriends> // TypeDefIndex: 5189
 
 }
 
-private sealed class SteamFriends.<>c // TypeDefIndex: 5190
+private sealed class SteamFriends.<>c // TypeDefIndex: 5192
 {
 	public static readonly SteamFriends.<>c <>9; 
 	public static Action<PersonaStateChange_t> <>9__4_0; 
@@ -221,23 +221,23 @@ private sealed class SteamFriends.<>c // TypeDefIndex: 5190
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__4_0(PersonaStateChange_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_1(GameRichPresenceJoinRequested_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_2(GameOverlayActivated_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_3(GameServerChangeRequested_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_4(GameLobbyJoinRequested_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_5(FriendRichPresenceUpdate_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_6(OverlayBrowserProtocolNavigation_t x) { }
+	internal void <InstallEvents>
 
 }
 
-private sealed class SteamFriends.<GetFriendsWithFlag>d__34 : IEnumerable<Friend>, IEnumerable, IEnumerator<Friend>, IEnumerator, IDisposable // TypeDefIndex: 5191
+private sealed class SteamFriends.<GetFriendsWithFlag>d__34 : IEnumerable<Friend>, IEnumerable, IEnumerator<Friend>, IEnumerator, IDisposable // TypeDefIndex: 5193
 {
 	private int <>1__state; 
 	private Friend <>2__current; 
@@ -275,7 +275,7 @@ private sealed class SteamFriends.<GetFriendsWithFlag>d__34 : IEnumerable<Friend
 
 }
 
-private struct SteamFriends.<CacheUserInformationAsync>d__51 : IAsyncStateMachine // TypeDefIndex: 5192
+private struct SteamFriends.<CacheUserInformationAsync>d__51 : IAsyncStateMachine // TypeDefIndex: 5194
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -291,7 +291,7 @@ private struct SteamFriends.<CacheUserInformationAsync>d__51 : IAsyncStateMachin
 
 }
 
-private struct SteamFriends.<GetMediumAvatarAsync>d__53 : IAsyncStateMachine // TypeDefIndex: 5193
+private struct SteamFriends.<GetMediumAvatarAsync>d__53 : IAsyncStateMachine // TypeDefIndex: 5195
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<Image>> <>t__builder; 
@@ -306,7 +306,7 @@ private struct SteamFriends.<GetMediumAvatarAsync>d__53 : IAsyncStateMachine // 
 
 }
 
-public class SteamInput : SteamClientClass<SteamInput> // TypeDefIndex: 5194
+public class SteamInput : SteamClientClass<SteamInput> // TypeDefIndex: 5196
 {
 	private static readonly InputHandle_t[] queryArray; 
 	internal static Dictionary<string, InputDigitalActionHandle_t> DigitalHandles; 
@@ -322,7 +322,7 @@ public class SteamInput : SteamClientClass<SteamInput> // TypeDefIndex: 5194
 
 }
 
-public class SteamInventory : SteamSharedClass<SteamInventory> // TypeDefIndex: 5195
+public class SteamInventory : SteamSharedClass<SteamInventory> // TypeDefIndex: 5197
 {
 	[CompilerGeneratedAttribute] 
 	private static Action<InventoryResult> OnInventoryUpdated; 
@@ -415,7 +415,7 @@ public class SteamInventory : SteamSharedClass<SteamInventory> // TypeDefIndex: 
 
 }
 
-private sealed class SteamInventory.<>c // TypeDefIndex: 5196
+private sealed class SteamInventory.<>c // TypeDefIndex: 5198
 {
 	public static readonly SteamInventory.<>c <>9; 
 	public static Action<SteamInventoryFullUpdate_t> <>9__3_0; 
@@ -435,31 +435,31 @@ private sealed class SteamInventory.<>c // TypeDefIndex: 5196
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(SteamInventoryFullUpdate_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(SteamInventoryDefinitionUpdate_t x) { }
+	internal void <InstallEvents>
 
-	internal InventoryDef <GetDefinitionsWithPricesAsync>b__19_0(InventoryDefId x) { }
+	internal InventoryDef <GetDefinitionsWithPricesAsync>
 
-	internal InventoryDef <GetDefinitions>b__29_0(InventoryDefId x) { }
+	internal InventoryDef <GetDefinitions>
 
-	internal InventoryItemId <CraftItemAsync>b__33_0(InventoryItem x) { }
+	internal InventoryItemId <CraftItemAsync>
 
-	internal uint <CraftItemAsync>b__33_1(InventoryItem x) { }
+	internal uint <CraftItemAsync>
 
-	internal InventoryItemId <CraftItemAsync>b__34_0(InventoryItem.Amount x) { }
+	internal InventoryItemId <CraftItemAsync>
 
-	internal uint <CraftItemAsync>b__34_1(InventoryItem.Amount x) { }
+	internal uint <CraftItemAsync>
 
-	internal InventoryDefId <StartPurchaseAsync>b__39_0(InventoryDef x) { }
+	internal InventoryDefId <StartPurchaseAsync>
 
-	internal InventoryDefId <StartPurchaseAsync>b__39_1(IGrouping<InventoryDefId, InventoryDef> x) { }
+	internal InventoryDefId <StartPurchaseAsync>
 
-	internal uint <StartPurchaseAsync>b__39_2(IGrouping<InventoryDefId, InventoryDef> x) { }
+	internal uint <StartPurchaseAsync>
 
 }
 
-private struct SteamInventory.<GetDefinitionsWithPricesAsync>d__19 : IAsyncStateMachine // TypeDefIndex: 5197
+private struct SteamInventory.<GetDefinitionsWithPricesAsync>d__19 : IAsyncStateMachine // TypeDefIndex: 5199
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<InventoryDef[]> <>t__builder; 
@@ -473,7 +473,7 @@ private struct SteamInventory.<GetDefinitionsWithPricesAsync>d__19 : IAsyncState
 
 }
 
-private struct SteamInventory.<GetAllItemsAsync>d__31 : IAsyncStateMachine // TypeDefIndex: 5198
+private struct SteamInventory.<GetAllItemsAsync>d__31 : IAsyncStateMachine // TypeDefIndex: 5200
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -487,7 +487,7 @@ private struct SteamInventory.<GetAllItemsAsync>d__31 : IAsyncStateMachine // Ty
 
 }
 
-private struct SteamInventory.<CraftItemAsync>d__33 : IAsyncStateMachine // TypeDefIndex: 5199
+private struct SteamInventory.<CraftItemAsync>d__33 : IAsyncStateMachine // TypeDefIndex: 5201
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -503,7 +503,7 @@ private struct SteamInventory.<CraftItemAsync>d__33 : IAsyncStateMachine // Type
 
 }
 
-private struct SteamInventory.<CraftItemAsync>d__34 : IAsyncStateMachine // TypeDefIndex: 5200
+private struct SteamInventory.<CraftItemAsync>d__34 : IAsyncStateMachine // TypeDefIndex: 5202
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -519,7 +519,7 @@ private struct SteamInventory.<CraftItemAsync>d__34 : IAsyncStateMachine // Type
 
 }
 
-private struct SteamInventory.<GrantPromoItemsAsync>d__36 : IAsyncStateMachine // TypeDefIndex: 5201
+private struct SteamInventory.<GrantPromoItemsAsync>d__36 : IAsyncStateMachine // TypeDefIndex: 5203
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -533,7 +533,7 @@ private struct SteamInventory.<GrantPromoItemsAsync>d__36 : IAsyncStateMachine /
 
 }
 
-private struct SteamInventory.<TriggerItemDropAsync>d__37 : IAsyncStateMachine // TypeDefIndex: 5202
+private struct SteamInventory.<TriggerItemDropAsync>d__37 : IAsyncStateMachine // TypeDefIndex: 5204
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryResult>> <>t__builder; 
@@ -548,7 +548,7 @@ private struct SteamInventory.<TriggerItemDropAsync>d__37 : IAsyncStateMachine /
 
 }
 
-private struct SteamInventory.<StartPurchaseAsync>d__39 : IAsyncStateMachine // TypeDefIndex: 5203
+private struct SteamInventory.<StartPurchaseAsync>d__39 : IAsyncStateMachine // TypeDefIndex: 5205
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<InventoryPurchaseResult>> <>t__builder; 
@@ -563,7 +563,7 @@ private struct SteamInventory.<StartPurchaseAsync>d__39 : IAsyncStateMachine // 
 
 }
 
-public class SteamMatchmaking : SteamClientClass<SteamMatchmaking> // TypeDefIndex: 5204
+public class SteamMatchmaking : SteamClientClass<SteamMatchmaking> // TypeDefIndex: 5206
 {
 	[CompilerGeneratedAttribute] 
 	private static Action<Friend, Lobby> OnLobbyInvite; 
@@ -608,7 +608,7 @@ public class SteamMatchmaking : SteamClientClass<SteamMatchmaking> // TypeDefInd
 
 }
 
-private sealed class SteamMatchmaking.<>c // TypeDefIndex: 5205
+private sealed class SteamMatchmaking.<>c // TypeDefIndex: 5207
 {
 	public static readonly SteamMatchmaking.<>c <>9; 
 	public static Action<LobbyInvite_t> <>9__5_0; 
@@ -623,21 +623,21 @@ private sealed class SteamMatchmaking.<>c // TypeDefIndex: 5205
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__5_0(LobbyInvite_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__5_1(LobbyEnter_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__5_2(LobbyCreated_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__5_3(LobbyGameCreated_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__5_4(LobbyDataUpdate_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__5_5(LobbyChatUpdate_t x) { }
+	internal void <InstallEvents>
 
 }
 
-private sealed class SteamMatchmaking.<GetFavoriteServers>d__47 : IEnumerable<ServerInfo>, IEnumerable, IEnumerator<ServerInfo>, IEnumerator, IDisposable // TypeDefIndex: 5206
+private sealed class SteamMatchmaking.<GetFavoriteServers>d__47 : IEnumerable<ServerInfo>, IEnumerable, IEnumerator<ServerInfo>, IEnumerator, IDisposable // TypeDefIndex: 5208
 {
 	private int <>1__state; 
 	private ServerInfo <>2__current; 
@@ -674,7 +674,7 @@ private sealed class SteamMatchmaking.<GetFavoriteServers>d__47 : IEnumerable<Se
 
 }
 
-internal class SteamMatchmakingServers : SteamClientClass<SteamMatchmakingServers> // TypeDefIndex: 5207
+internal class SteamMatchmakingServers : SteamClientClass<SteamMatchmakingServers> // TypeDefIndex: 5209
 {
 	internal static ISteamMatchmakingServers Internal { get; }
 
@@ -687,7 +687,7 @@ internal class SteamMatchmakingServers : SteamClientClass<SteamMatchmakingServer
 
 }
 
-public class SteamMusic : SteamClientClass<SteamMusic> // TypeDefIndex: 5208
+public class SteamMusic : SteamClientClass<SteamMusic> // TypeDefIndex: 5210
 {
 	[CompilerGeneratedAttribute] 
 	private static Action OnPlaybackChanged; 
@@ -703,7 +703,7 @@ public class SteamMusic : SteamClientClass<SteamMusic> // TypeDefIndex: 5208
 
 }
 
-private sealed class SteamMusic.<>c // TypeDefIndex: 5209
+private sealed class SteamMusic.<>c // TypeDefIndex: 5211
 {
 	public static readonly SteamMusic.<>c <>9; 
 	public static Action<PlaybackStatusHasChanged_t> <>9__3_0; 
@@ -714,13 +714,13 @@ private sealed class SteamMusic.<>c // TypeDefIndex: 5209
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(PlaybackStatusHasChanged_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(VolumeHasChanged_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamNetworking : SteamSharedClass<SteamNetworking> // TypeDefIndex: 5210
+public class SteamNetworking : SteamSharedClass<SteamNetworking> // TypeDefIndex: 5212
 {
 	public static Action<SteamId> OnP2PSessionRequest; 
 	public static Action<SteamId, P2PSessionError> OnP2PConnectionFailed; 
@@ -734,7 +734,7 @@ public class SteamNetworking : SteamSharedClass<SteamNetworking> // TypeDefIndex
 
 }
 
-private sealed class SteamNetworking.<>c // TypeDefIndex: 5211
+private sealed class SteamNetworking.<>c // TypeDefIndex: 5213
 {
 	public static readonly SteamNetworking.<>c <>9; 
 	public static Action<P2PSessionRequest_t> <>9__3_0; 
@@ -745,13 +745,13 @@ private sealed class SteamNetworking.<>c // TypeDefIndex: 5211
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(P2PSessionRequest_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(P2PSessionConnectFail_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamNetworkingSockets : SteamSharedClass<SteamNetworkingSockets> // TypeDefIndex: 5212
+public class SteamNetworkingSockets : SteamSharedClass<SteamNetworkingSockets> // TypeDefIndex: 5214
 {
 	private static readonly Dictionary<uint, SocketManager> SocketInterfaces; 
 	private static readonly Dictionary<uint, ConnectionManager> ConnectionInterfaces; 
@@ -804,7 +804,7 @@ public class SteamNetworkingSockets : SteamSharedClass<SteamNetworkingSockets> /
 
 }
 
-public class SteamNetworkingUtils : SteamSharedClass<SteamNetworkingUtils> // TypeDefIndex: 5213
+public class SteamNetworkingUtils : SteamSharedClass<SteamNetworkingUtils> // TypeDefIndex: 5215
 {
 	[CompilerGeneratedAttribute] 
 	private static Action<NetDebugOutput, string> OnDebugOutput; 
@@ -818,7 +818,6 @@ public class SteamNetworkingUtils : SteamSharedClass<SteamNetworkingUtils> // Ty
 	public static SteamNetworkingAvailability Status { get; set; }
 	public static int ConnectionTimeout { get; set; }
 	public static int SendBufferSize { set; }
-	public static int AllowWithoutAuth { set; }
 	public static int Unencrypted { set; }
 	public static int DebugLevelAckRTT { get; set; }
 	public static int DebugLevelPacketDecode { get; set; }
@@ -854,8 +853,6 @@ public class SteamNetworkingUtils : SteamSharedClass<SteamNetworkingUtils> // Ty
 	public static void set_ConnectionTimeout(int value) { }
 
 	public static void set_SendBufferSize(int value) { }
-
-	public static void set_AllowWithoutAuth(int value) { }
 
 	public static void set_Unencrypted(int value) { }
 
@@ -906,14 +903,14 @@ public class SteamNetworkingUtils : SteamSharedClass<SteamNetworkingUtils> // Ty
 
 }
 
-private struct SteamNetworkingUtils.DebugMessage // TypeDefIndex: 5214
+private struct SteamNetworkingUtils.DebugMessage // TypeDefIndex: 5216
 {
 	public NetDebugOutput Type; 
 	public string Msg; 
 
 }
 
-private sealed class SteamNetworkingUtils.<>c // TypeDefIndex: 5215
+private sealed class SteamNetworkingUtils.<>c // TypeDefIndex: 5217
 {
 	public static readonly SteamNetworkingUtils.<>c <>9; 
 	public static Action<SteamRelayNetworkStatus_t> <>9__3_0; 
@@ -923,11 +920,11 @@ private sealed class SteamNetworkingUtils.<>c // TypeDefIndex: 5215
 
 	public void .ctor() { }
 
-	internal void <InstallCallbacks>b__3_0(SteamRelayNetworkStatus_t x) { }
+	internal void <InstallCallbacks>
 
 }
 
-public class SteamParental : SteamSharedClass<SteamParental> // TypeDefIndex: 5216
+public class SteamParental : SteamSharedClass<SteamParental> // TypeDefIndex: 5218
 {
 	[CompilerGeneratedAttribute] 
 	private static Action OnSettingsChanged; 
@@ -941,7 +938,7 @@ public class SteamParental : SteamSharedClass<SteamParental> // TypeDefIndex: 52
 
 }
 
-private sealed class SteamParental.<>c // TypeDefIndex: 5217
+private sealed class SteamParental.<>c // TypeDefIndex: 5219
 {
 	public static readonly SteamParental.<>c <>9; 
 	public static Action<SteamParentalSettingsChanged_t> <>9__3_0; 
@@ -951,11 +948,11 @@ private sealed class SteamParental.<>c // TypeDefIndex: 5217
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(SteamParentalSettingsChanged_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamParties : SteamClientClass<SteamParties> // TypeDefIndex: 5218
+public class SteamParties : SteamClientClass<SteamParties> // TypeDefIndex: 5220
 {
 	[CompilerGeneratedAttribute] 
 	private static Action OnBeaconLocationsUpdated; 
@@ -971,7 +968,7 @@ public class SteamParties : SteamClientClass<SteamParties> // TypeDefIndex: 5218
 
 }
 
-private sealed class SteamParties.<>c // TypeDefIndex: 5219
+private sealed class SteamParties.<>c // TypeDefIndex: 5221
 {
 	public static readonly SteamParties.<>c <>9; 
 	public static Action<AvailableBeaconLocationsUpdated_t> <>9__3_0; 
@@ -982,13 +979,13 @@ private sealed class SteamParties.<>c // TypeDefIndex: 5219
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(AvailableBeaconLocationsUpdated_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(ActiveBeaconsUpdated_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamRemotePlay : SteamClientClass<SteamRemotePlay> // TypeDefIndex: 5220
+public class SteamRemotePlay : SteamClientClass<SteamRemotePlay> // TypeDefIndex: 5222
 {
 	[CompilerGeneratedAttribute] 
 	private static Action<RemotePlaySession> OnSessionConnected; 
@@ -1004,7 +1001,7 @@ public class SteamRemotePlay : SteamClientClass<SteamRemotePlay> // TypeDefIndex
 
 }
 
-private sealed class SteamRemotePlay.<>c // TypeDefIndex: 5221
+private sealed class SteamRemotePlay.<>c // TypeDefIndex: 5223
 {
 	public static readonly SteamRemotePlay.<>c <>9; 
 	public static Action<SteamRemotePlaySessionConnected_t> <>9__3_0; 
@@ -1015,13 +1012,13 @@ private sealed class SteamRemotePlay.<>c // TypeDefIndex: 5221
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(SteamRemotePlaySessionConnected_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(SteamRemotePlaySessionDisconnected_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamRemoteStorage : SteamClientClass<SteamRemoteStorage> // TypeDefIndex: 5222
+public class SteamRemoteStorage : SteamClientClass<SteamRemoteStorage> // TypeDefIndex: 5224
 {
 
 	internal override void InitializeInterface(bool server) { }
@@ -1030,7 +1027,7 @@ public class SteamRemoteStorage : SteamClientClass<SteamRemoteStorage> // TypeDe
 
 }
 
-public class SteamScreenshots : SteamClientClass<SteamScreenshots> // TypeDefIndex: 5223
+public class SteamScreenshots : SteamClientClass<SteamScreenshots> // TypeDefIndex: 5225
 {
 	[CompilerGeneratedAttribute] 
 	private static Action OnScreenshotRequested; 
@@ -1054,7 +1051,7 @@ public class SteamScreenshots : SteamClientClass<SteamScreenshots> // TypeDefInd
 
 }
 
-private sealed class SteamScreenshots.<>c // TypeDefIndex: 5224
+private sealed class SteamScreenshots.<>c // TypeDefIndex: 5226
 {
 	public static readonly SteamScreenshots.<>c <>9; 
 	public static Action<ScreenshotRequested_t> <>9__3_0; 
@@ -1065,13 +1062,13 @@ private sealed class SteamScreenshots.<>c // TypeDefIndex: 5224
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(ScreenshotRequested_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(ScreenshotReady_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamUGC : SteamSharedClass<SteamUGC> // TypeDefIndex: 5225
+public class SteamUGC : SteamSharedClass<SteamUGC> // TypeDefIndex: 5227
 {
 	[CompilerGeneratedAttribute] 
 	private static Action<Result> OnDownloadItemResult; 
@@ -1100,7 +1097,7 @@ public class SteamUGC : SteamSharedClass<SteamUGC> // TypeDefIndex: 5225
 
 }
 
-private sealed class SteamUGC.<>c // TypeDefIndex: 5226
+private sealed class SteamUGC.<>c // TypeDefIndex: 5228
 {
 	public static readonly SteamUGC.<>c <>9; 
 	public static Action<DownloadItemResult_t> <>9__3_0; 
@@ -1113,17 +1110,17 @@ private sealed class SteamUGC.<>c // TypeDefIndex: 5226
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(DownloadItemResult_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(RemoteStoragePublishedFileSubscribed_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_2(RemoteStoragePublishedFileUnsubscribed_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_3(ItemInstalled_t x) { }
+	internal void <InstallEvents>
 
 }
 
-private struct SteamUGC.<QueryFileAsync>d__19 : IAsyncStateMachine // TypeDefIndex: 5227
+private struct SteamUGC.<QueryFileAsync>d__19 : IAsyncStateMachine // TypeDefIndex: 5229
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<Nullable<Item>> <>t__builder; 
@@ -1138,7 +1135,7 @@ private struct SteamUGC.<QueryFileAsync>d__19 : IAsyncStateMachine // TypeDefInd
 
 }
 
-public class SteamUser : SteamClientClass<SteamUser> // TypeDefIndex: 5228
+public class SteamUser : SteamClientClass<SteamUser> // TypeDefIndex: 5230
 {
 	private static Dictionary<string, string> richPresence; 
 	[CompilerGeneratedAttribute] 
@@ -1223,7 +1220,7 @@ public class SteamUser : SteamClientClass<SteamUser> // TypeDefIndex: 5228
 
 }
 
-private sealed class SteamUser.<>c // TypeDefIndex: 5229
+private sealed class SteamUser.<>c // TypeDefIndex: 5231
 {
 	public static readonly SteamUser.<>c <>9; 
 	public static Action<SteamServersConnected_t> <>9__4_0; 
@@ -1242,29 +1239,29 @@ private sealed class SteamUser.<>c // TypeDefIndex: 5229
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__4_0(SteamServersConnected_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_1(SteamServerConnectFailure_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_2(SteamServersDisconnected_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_3(ClientGameServerDeny_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_4(LicensesUpdated_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_5(ValidateAuthTicketResponse_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_6(MicroTxnAuthorizationResponse_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_7(GameWebCallback_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_8(GetAuthSessionTicketResponse_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__4_9(DurationControl_t x) { }
+	internal void <InstallEvents>
 
 }
 
-private sealed class SteamUser.<>c__DisplayClass54_0 // TypeDefIndex: 5230
+private sealed class SteamUser.<>c__DisplayClass54_0 // TypeDefIndex: 5232
 {
 	public AuthTicket ticket; 
 	public Result result; 
@@ -1276,12 +1273,12 @@ private sealed class SteamUser.<>c__DisplayClass54_0 // TypeDefIndex: 5230
 
 }
 
-private struct SteamUser.<GetAuthSessionTicketAsync>d__54 : IAsyncStateMachine // TypeDefIndex: 5231
+private struct SteamUser.<GetAuthSessionTicketAsync>d__54 : IAsyncStateMachine // TypeDefIndex: 5233
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<AuthTicket> <>t__builder; 
 	public double timeoutSeconds; 
-	private SteamUser.<>c__DisplayClass54_0 <>8__1; 
+	private SteamUser.<>c
 	private Stopwatch <stopwatch>5__2; 
 	private TaskAwaiter <>u__1; 
 
@@ -1293,7 +1290,7 @@ private struct SteamUser.<GetAuthSessionTicketAsync>d__54 : IAsyncStateMachine /
 
 }
 
-private struct SteamUser.<RequestEncryptedAppTicketAsync>d__71 : IAsyncStateMachine // TypeDefIndex: 5232
+private struct SteamUser.<RequestEncryptedAppTicketAsync>d__71 : IAsyncStateMachine // TypeDefIndex: 5234
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<byte[]> <>t__builder; 
@@ -1307,7 +1304,7 @@ private struct SteamUser.<RequestEncryptedAppTicketAsync>d__71 : IAsyncStateMach
 
 }
 
-public class SteamUserStats : SteamClientClass<SteamUserStats> // TypeDefIndex: 5233
+public class SteamUserStats : SteamClientClass<SteamUserStats> // TypeDefIndex: 5235
 {
 	[CompilerGeneratedAttribute] 
 	private static bool <StatsRecieved>k__BackingField; 
@@ -1363,7 +1360,7 @@ public class SteamUserStats : SteamClientClass<SteamUserStats> // TypeDefIndex: 
 
 }
 
-private sealed class SteamUserStats.<>c // TypeDefIndex: 5234
+private sealed class SteamUserStats.<>c // TypeDefIndex: 5236
 {
 	public static readonly SteamUserStats.<>c <>9; 
 	public static Action<UserStatsReceived_t> <>9__7_0; 
@@ -1377,19 +1374,19 @@ private sealed class SteamUserStats.<>c // TypeDefIndex: 5234
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__7_0(UserStatsReceived_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__7_1(UserStatsStored_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__7_2(UserAchievementStored_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__7_3(UserStatsUnloaded_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__7_4(UserAchievementIconFetched_t x) { }
+	internal void <InstallEvents>
 
 }
 
-private sealed class SteamUserStats.<get_Achievements>d__24 : IEnumerable<Achievement>, IEnumerable, IEnumerator<Achievement>, IEnumerator, IDisposable // TypeDefIndex: 5235
+private sealed class SteamUserStats.<get_Achievements>d__24 : IEnumerable<Achievement>, IEnumerable, IEnumerator<Achievement>, IEnumerator, IDisposable // TypeDefIndex: 5237
 {
 	private int <>1__state; 
 	private Achievement <>2__current; 
@@ -1425,7 +1422,7 @@ private sealed class SteamUserStats.<get_Achievements>d__24 : IEnumerable<Achiev
 
 }
 
-public class SteamUtils : SteamSharedClass<SteamUtils> // TypeDefIndex: 5236
+public class SteamUtils : SteamSharedClass<SteamUtils> // TypeDefIndex: 5238
 {
 	[CompilerGeneratedAttribute] 
 	private static Action OnIpCountryChanged; 
@@ -1468,7 +1465,7 @@ public class SteamUtils : SteamSharedClass<SteamUtils> // TypeDefIndex: 5236
 
 }
 
-private sealed class SteamUtils.<>c // TypeDefIndex: 5237
+private sealed class SteamUtils.<>c // TypeDefIndex: 5239
 {
 	public static readonly SteamUtils.<>c <>9; 
 	public static Action<IPCountry_t> <>9__3_0; 
@@ -1481,17 +1478,17 @@ private sealed class SteamUtils.<>c // TypeDefIndex: 5237
 
 	public void .ctor() { }
 
-	internal void <InstallEvents>b__3_0(IPCountry_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_1(LowBatteryPower_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_2(SteamShutdown_t x) { }
+	internal void <InstallEvents>
 
-	internal void <InstallEvents>b__3_3(GamepadTextInputDismissed_t x) { }
+	internal void <InstallEvents>
 
 }
 
-public class SteamVideo : SteamClientClass<SteamVideo> // TypeDefIndex: 5238
+public class SteamVideo : SteamClientClass<SteamVideo> // TypeDefIndex: 5240
 {
 
 	internal override void InitializeInterface(bool server) { }
@@ -1502,7 +1499,7 @@ public class SteamVideo : SteamClientClass<SteamVideo> // TypeDefIndex: 5238
 
 }
 
-public struct SteamId // TypeDefIndex: 5256
+public struct SteamId // TypeDefIndex: 5258
 {
 	public ulong Value; 
 
@@ -1519,7 +1516,7 @@ public struct SteamId // TypeDefIndex: 5256
 
 }
 
-internal abstract class SteamInterface // TypeDefIndex: 5270
+internal abstract class SteamInterface // TypeDefIndex: 5272
 {
 	public IntPtr Self; 
 	public IntPtr SelfGlobal; 
@@ -1552,7 +1549,7 @@ internal abstract class SteamInterface // TypeDefIndex: 5270
 
 }
 
-public abstract class SteamClass // TypeDefIndex: 5271
+public abstract class SteamClass // TypeDefIndex: 5273
 {
 
 	internal abstract void InitializeInterface(bool server);
@@ -1563,7 +1560,7 @@ public abstract class SteamClass // TypeDefIndex: 5271
 
 }
 
-public class SteamSharedClass<T> : SteamClass // TypeDefIndex: 5272
+public class SteamSharedClass<T> : SteamClass // TypeDefIndex: 5274
 {
 	internal static SteamInterface InterfaceClient; 
 	internal static SteamInterface InterfaceServer; 
@@ -1633,7 +1630,7 @@ public class SteamSharedClass<T> : SteamClass // TypeDefIndex: 5272
 
 }
 
-public class SteamClientClass<T> : SteamClass // TypeDefIndex: 5273
+public class SteamClientClass<T> : SteamClass // TypeDefIndex: 5275
 {
 	internal static SteamInterface Interface; 
 
@@ -1700,7 +1697,7 @@ public class SteamClientClass<T> : SteamClass // TypeDefIndex: 5273
 
 }
 
-internal struct SteamParamStringArray : IDisposable // TypeDefIndex: 5277
+internal struct SteamParamStringArray : IDisposable // TypeDefIndex: 5279
 {
 	public SteamParamStringArray_t Value; 
 	private IntPtr[] NativeStrings; 
@@ -1713,7 +1710,7 @@ internal struct SteamParamStringArray : IDisposable // TypeDefIndex: 5277
 
 }
 
-internal struct SteamServersConnected_t : ICallbackData // TypeDefIndex: 5297
+internal struct SteamServersConnected_t : ICallbackData // TypeDefIndex: 5299
 {
 	public static int _datasize; 
 
@@ -1729,7 +1726,7 @@ internal struct SteamServersConnected_t : ICallbackData // TypeDefIndex: 5297
 
 }
 
-internal struct SteamServerConnectFailure_t : ICallbackData // TypeDefIndex: 5298
+internal struct SteamServerConnectFailure_t : ICallbackData // TypeDefIndex: 5300
 {
 	internal Result Result; 
 	internal bool StillRetrying; 
@@ -1747,7 +1744,7 @@ internal struct SteamServerConnectFailure_t : ICallbackData // TypeDefIndex: 529
 
 }
 
-internal struct SteamServersDisconnected_t : ICallbackData // TypeDefIndex: 5299
+internal struct SteamServersDisconnected_t : ICallbackData // TypeDefIndex: 5301
 {
 	internal Result Result; 
 	public static int _datasize; 
@@ -1764,7 +1761,7 @@ internal struct SteamServersDisconnected_t : ICallbackData // TypeDefIndex: 5299
 
 }
 
-internal struct SteamAPICallCompleted_t : ICallbackData // TypeDefIndex: 5333
+internal struct SteamAPICallCompleted_t : ICallbackData // TypeDefIndex: 5335
 {
 	internal ulong AsyncCall; 
 	internal int Callback; 
@@ -1783,7 +1780,7 @@ internal struct SteamAPICallCompleted_t : ICallbackData // TypeDefIndex: 5333
 
 }
 
-internal struct SteamShutdown_t : ICallbackData // TypeDefIndex: 5334
+internal struct SteamShutdown_t : ICallbackData // TypeDefIndex: 5336
 {
 	public static int _datasize; 
 
@@ -1799,7 +1796,7 @@ internal struct SteamShutdown_t : ICallbackData // TypeDefIndex: 5334
 
 }
 
-internal struct SteamInputDeviceConnected_t : ICallbackData // TypeDefIndex: 5431
+internal struct SteamInputDeviceConnected_t : ICallbackData // TypeDefIndex: 5433
 {
 	internal ulong ConnectedDeviceHandle; 
 	public static int _datasize; 
@@ -1816,7 +1813,7 @@ internal struct SteamInputDeviceConnected_t : ICallbackData // TypeDefIndex: 543
 
 }
 
-internal struct SteamInputDeviceDisconnected_t : ICallbackData // TypeDefIndex: 5432
+internal struct SteamInputDeviceDisconnected_t : ICallbackData // TypeDefIndex: 5434
 {
 	internal ulong DisconnectedDeviceHandle; 
 	public static int _datasize; 
@@ -1833,7 +1830,7 @@ internal struct SteamInputDeviceDisconnected_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct SteamInputConfigurationLoaded_t : ICallbackData // TypeDefIndex: 5433
+internal struct SteamInputConfigurationLoaded_t : ICallbackData // TypeDefIndex: 5435
 {
 	internal AppId AppID; 
 	internal ulong DeviceHandle; 
@@ -1856,7 +1853,7 @@ internal struct SteamInputConfigurationLoaded_t : ICallbackData // TypeDefIndex:
 
 }
 
-internal struct SteamUGCQueryCompleted_t : ICallbackData // TypeDefIndex: 5434
+internal struct SteamUGCQueryCompleted_t : ICallbackData // TypeDefIndex: 5436
 {
 	internal ulong Handle; 
 	internal Result Result; 
@@ -1878,7 +1875,7 @@ internal struct SteamUGCQueryCompleted_t : ICallbackData // TypeDefIndex: 5434
 
 }
 
-internal struct SteamUGCRequestUGCDetailsResult_t : ICallbackData // TypeDefIndex: 5435
+internal struct SteamUGCRequestUGCDetailsResult_t : ICallbackData // TypeDefIndex: 5437
 {
 	internal SteamUGCDetails_t Details; 
 	internal bool CachedData; 
@@ -1896,7 +1893,7 @@ internal struct SteamUGCRequestUGCDetailsResult_t : ICallbackData // TypeDefInde
 
 }
 
-internal struct SteamAppInstalled_t : ICallbackData // TypeDefIndex: 5453
+internal struct SteamAppInstalled_t : ICallbackData // TypeDefIndex: 5455
 {
 	internal AppId AppID; 
 	internal int InstallFolderIndex; 
@@ -1914,7 +1911,7 @@ internal struct SteamAppInstalled_t : ICallbackData // TypeDefIndex: 5453
 
 }
 
-internal struct SteamAppUninstalled_t : ICallbackData // TypeDefIndex: 5454
+internal struct SteamAppUninstalled_t : ICallbackData // TypeDefIndex: 5456
 {
 	internal AppId AppID; 
 	internal int InstallFolderIndex; 
@@ -1932,7 +1929,7 @@ internal struct SteamAppUninstalled_t : ICallbackData // TypeDefIndex: 5454
 
 }
 
-internal struct SteamInventoryResultReady_t : ICallbackData // TypeDefIndex: 5478
+internal struct SteamInventoryResultReady_t : ICallbackData // TypeDefIndex: 5480
 {
 	internal int Handle; 
 	internal Result Result; 
@@ -1950,7 +1947,7 @@ internal struct SteamInventoryResultReady_t : ICallbackData // TypeDefIndex: 547
 
 }
 
-internal struct SteamInventoryFullUpdate_t : ICallbackData // TypeDefIndex: 5479
+internal struct SteamInventoryFullUpdate_t : ICallbackData // TypeDefIndex: 5481
 {
 	internal int Handle; 
 	public static int _datasize; 
@@ -1967,7 +1964,7 @@ internal struct SteamInventoryFullUpdate_t : ICallbackData // TypeDefIndex: 5479
 
 }
 
-internal struct SteamInventoryDefinitionUpdate_t : ICallbackData // TypeDefIndex: 5480
+internal struct SteamInventoryDefinitionUpdate_t : ICallbackData // TypeDefIndex: 5482
 {
 	public static int _datasize; 
 
@@ -1983,7 +1980,7 @@ internal struct SteamInventoryDefinitionUpdate_t : ICallbackData // TypeDefIndex
 
 }
 
-internal struct SteamInventoryEligiblePromoItemDefIDs_t : ICallbackData // TypeDefIndex: 5481
+internal struct SteamInventoryEligiblePromoItemDefIDs_t : ICallbackData // TypeDefIndex: 5483
 {
 	internal Result Result; 
 	internal ulong SteamID; 
@@ -2003,7 +2000,7 @@ internal struct SteamInventoryEligiblePromoItemDefIDs_t : ICallbackData // TypeD
 
 }
 
-internal struct SteamInventoryStartPurchaseResult_t : ICallbackData // TypeDefIndex: 5482
+internal struct SteamInventoryStartPurchaseResult_t : ICallbackData // TypeDefIndex: 5484
 {
 	internal Result Result; 
 	internal ulong OrderID; 
@@ -2022,7 +2019,7 @@ internal struct SteamInventoryStartPurchaseResult_t : ICallbackData // TypeDefIn
 
 }
 
-internal struct SteamInventoryRequestPricesResult_t : ICallbackData // TypeDefIndex: 5483
+internal struct SteamInventoryRequestPricesResult_t : ICallbackData // TypeDefIndex: 5485
 {
 	internal Result Result; 
 	internal byte[] Currency; 
@@ -2042,7 +2039,7 @@ internal struct SteamInventoryRequestPricesResult_t : ICallbackData // TypeDefIn
 
 }
 
-internal struct SteamParentalSettingsChanged_t : ICallbackData // TypeDefIndex: 5486
+internal struct SteamParentalSettingsChanged_t : ICallbackData // TypeDefIndex: 5488
 {
 	public static int _datasize; 
 
@@ -2058,24 +2055,7 @@ internal struct SteamParentalSettingsChanged_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct SteamRemotePlaySessionConnected_t : ICallbackData // TypeDefIndex: 5487
-{
-	internal uint SessionID; 
-	public static int _datasize; 
-
-	public int DataSize { get; }
-	public CallbackType CallbackType { get; }
-
-
-	public int get_DataSize() { }
-
-	public CallbackType get_CallbackType() { }
-
-	private static void .cctor() { }
-
-}
-
-internal struct SteamRemotePlaySessionDisconnected_t : ICallbackData // TypeDefIndex: 5488
+internal struct SteamRemotePlaySessionConnected_t : ICallbackData // TypeDefIndex: 5489
 {
 	internal uint SessionID; 
 	public static int _datasize; 
@@ -2092,7 +2072,24 @@ internal struct SteamRemotePlaySessionDisconnected_t : ICallbackData // TypeDefI
 
 }
 
-internal struct SteamNetworkingMessagesSessionRequest_t : ICallbackData // TypeDefIndex: 5489
+internal struct SteamRemotePlaySessionDisconnected_t : ICallbackData // TypeDefIndex: 5490
+{
+	internal uint SessionID; 
+	public static int _datasize; 
+
+	public int DataSize { get; }
+	public CallbackType CallbackType { get; }
+
+
+	public int get_DataSize() { }
+
+	public CallbackType get_CallbackType() { }
+
+	private static void .cctor() { }
+
+}
+
+internal struct SteamNetworkingMessagesSessionRequest_t : ICallbackData // TypeDefIndex: 5491
 {
 	internal NetIdentity DentityRemote; 
 	public static int _datasize; 
@@ -2109,7 +2106,7 @@ internal struct SteamNetworkingMessagesSessionRequest_t : ICallbackData // TypeD
 
 }
 
-internal struct SteamNetworkingMessagesSessionFailed_t : ICallbackData // TypeDefIndex: 5490
+internal struct SteamNetworkingMessagesSessionFailed_t : ICallbackData // TypeDefIndex: 5492
 {
 	internal ConnectionInfo Nfo; 
 	public static int _datasize; 
@@ -2126,7 +2123,7 @@ internal struct SteamNetworkingMessagesSessionFailed_t : ICallbackData // TypeDe
 
 }
 
-internal struct SteamNetConnectionStatusChangedCallback_t : ICallbackData // TypeDefIndex: 5491
+internal struct SteamNetConnectionStatusChangedCallback_t : ICallbackData // TypeDefIndex: 5493
 {
 	internal Connection Conn; 
 	internal ConnectionInfo Nfo; 
@@ -2145,7 +2142,7 @@ internal struct SteamNetConnectionStatusChangedCallback_t : ICallbackData // Typ
 
 }
 
-internal struct SteamNetAuthenticationStatus_t : ICallbackData // TypeDefIndex: 5492
+internal struct SteamNetAuthenticationStatus_t : ICallbackData // TypeDefIndex: 5494
 {
 	internal SteamNetworkingAvailability Avail; 
 	internal byte[] DebugMsg; 
@@ -2163,7 +2160,7 @@ internal struct SteamNetAuthenticationStatus_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct SteamRelayNetworkStatus_t : ICallbackData // TypeDefIndex: 5493
+internal struct SteamRelayNetworkStatus_t : ICallbackData // TypeDefIndex: 5495
 {
 	internal SteamNetworkingAvailability Avail; 
 	internal int PingMeasurementInProgress; 
@@ -2184,7 +2181,7 @@ internal struct SteamRelayNetworkStatus_t : ICallbackData // TypeDefIndex: 5493
 
 }
 
-internal struct SteamNetworkingFakeIPResult_t : ICallbackData // TypeDefIndex: 5506
+internal struct SteamNetworkingFakeIPResult_t : ICallbackData // TypeDefIndex: 5508
 {
 	internal Result Result; 
 	internal NetIdentity Dentity; 
@@ -2204,14 +2201,14 @@ internal struct SteamNetworkingFakeIPResult_t : ICallbackData // TypeDefIndex: 5
 
 }
 
-internal struct SteamParamStringArray_t // TypeDefIndex: 5518
+internal struct SteamParamStringArray_t // TypeDefIndex: 5520
 {
 	internal IntPtr Strings; 
 	internal int NumStrings; 
 
 }
 
-internal struct SteamUGCDetails_t // TypeDefIndex: 5519
+internal struct SteamUGCDetails_t // TypeDefIndex: 5521
 {
 	internal PublishedFileId PublishedFileId; 
 	internal Result Result; 
@@ -2249,7 +2246,7 @@ internal struct SteamUGCDetails_t // TypeDefIndex: 5519
 
 }
 
-internal struct SteamItemDetails_t // TypeDefIndex: 5520
+internal struct SteamItemDetails_t // TypeDefIndex: 5522
 {
 	internal InventoryItemId ItemId; 
 	internal InventoryDefId Definition; 
@@ -2258,7 +2255,7 @@ internal struct SteamItemDetails_t // TypeDefIndex: 5520
 
 }
 
-internal struct SteamAPICall_t : IEquatable<SteamAPICall_t>, IComparable<SteamAPICall_t> // TypeDefIndex: 5522
+internal struct SteamAPICall_t : IEquatable<SteamAPICall_t>, IComparable<SteamAPICall_t> // TypeDefIndex: 5524
 {
 	public ulong Value; 
 
@@ -2277,7 +2274,7 @@ internal struct SteamAPICall_t : IEquatable<SteamAPICall_t>, IComparable<SteamAP
 
 }
 
-internal struct SteamInventoryResult_t : IEquatable<SteamInventoryResult_t>, IComparable<SteamInventoryResult_t> // TypeDefIndex: 5543
+internal struct SteamInventoryResult_t : IEquatable<SteamInventoryResult_t>, IComparable<SteamInventoryResult_t> // TypeDefIndex: 5545
 {
 	public int Value; 
 
@@ -2296,7 +2293,7 @@ internal struct SteamInventoryResult_t : IEquatable<SteamInventoryResult_t>, ICo
 
 }
 
-internal struct SteamInventoryUpdateHandle_t : IEquatable<SteamInventoryUpdateHandle_t>, IComparable<SteamInventoryUpdateHandle_t> // TypeDefIndex: 5544
+internal struct SteamInventoryUpdateHandle_t : IEquatable<SteamInventoryUpdateHandle_t>, IComparable<SteamInventoryUpdateHandle_t> // TypeDefIndex: 5546
 {
 	public ulong Value; 
 
@@ -2315,7 +2312,7 @@ internal struct SteamInventoryUpdateHandle_t : IEquatable<SteamInventoryUpdateHa
 
 }
 
-internal struct SteamNetworkingPOPID : IEquatable<SteamNetworkingPOPID>, IComparable<SteamNetworkingPOPID> // TypeDefIndex: 5546
+internal struct SteamNetworkingPOPID : IEquatable<SteamNetworkingPOPID>, IComparable<SteamNetworkingPOPID> // TypeDefIndex: 5548
 {
 	public uint Value; 
 
@@ -2334,7 +2331,7 @@ internal struct SteamNetworkingPOPID : IEquatable<SteamNetworkingPOPID>, ICompar
 
 }
 
-public class SteamAchievement : IAchievement // TypeDefIndex: 5715
+public class SteamAchievement : IAchievement // TypeDefIndex: 5717
 {
 
 public class SteamAchievement : IAchievement
@@ -2354,7 +2351,7 @@ public class SteamAchievement : IAchievement
 
 }
 
-public class SteamAuthTicket : IAuthTicket, IDisposable // TypeDefIndex: 5716
+public class SteamAuthTicket : IAuthTicket, IDisposable // TypeDefIndex: 5718
 {
 	private readonly AuthTicket _ticket; 
 	[CompilerGeneratedAttribute] 
@@ -2378,7 +2375,7 @@ public class SteamAuthTicket : IAuthTicket, IDisposable // TypeDefIndex: 5716
 
 }
 
-public class SteamDownloadableContent : IDownloadableContent // TypeDefIndex: 5717
+public class SteamDownloadableContent : IDownloadableContent // TypeDefIndex: 5719
 {
 	[CompilerGeneratedAttribute] 
 	private readonly int <AppId>k__BackingField; 
@@ -2396,7 +2393,7 @@ public class SteamDownloadableContent : IDownloadableContent // TypeDefIndex: 57
 
 }
 
-public class SteamInventory : IPlayerInventory, IDisposable // TypeDefIndex: 5718
+public class SteamInventory : IPlayerInventory, IDisposable // TypeDefIndex: 5720
 {
 	[CompilerGeneratedAttribute] 
 	private readonly InventoryResult <Value>k__BackingField; 
@@ -2423,7 +2420,7 @@ public class SteamInventory : IPlayerInventory, IDisposable // TypeDefIndex: 571
 
 }
 
-private sealed class SteamInventory.<>c // TypeDefIndex: 5719
+private sealed class SteamInventory.<>c // TypeDefIndex: 5721
 {
 	public static readonly SteamInventory.<>c <>9; 
 	public static Func<InventoryItem, SteamItem> <>9__6_0; 
@@ -2433,11 +2430,11 @@ private sealed class SteamInventory.<>c // TypeDefIndex: 5719
 
 	public void .ctor() { }
 
-	internal SteamItem <.ctor>b__6_0(InventoryItem i) { }
+	internal SteamItem <.ctor>
 
 }
 
-public class SteamItem : IPlayerItem // TypeDefIndex: 5720
+public class SteamItem : IPlayerItem // TypeDefIndex: 5722
 {
 	public InventoryItem Value; 
 
@@ -2462,7 +2459,7 @@ public class SteamItem : IPlayerItem // TypeDefIndex: 5720
 
 }
 
-public class SteamItemDefinition : IPlayerItemDefinition, IEquatable<IPlayerItemDefinition> // TypeDefIndex: 5721
+public class SteamItemDefinition : IPlayerItemDefinition, IEquatable<IPlayerItemDefinition> // TypeDefIndex: 5723
 {
 	[CompilerGeneratedAttribute] 
 	private readonly InventoryDef <Value>k__BackingField; 
@@ -2529,7 +2526,7 @@ public class SteamItemDefinition : IPlayerItemDefinition, IEquatable<IPlayerItem
 
 }
 
-private sealed class SteamItemDefinition.<>c // TypeDefIndex: 5722
+private sealed class SteamItemDefinition.<>c // TypeDefIndex: 5724
 {
 	public static readonly SteamItemDefinition.<>c <>9; 
 	public static Func<InventoryRecipe.Ingredient, PlayerItemRecipe.Ingredient> <>9__33_0; 
@@ -2539,11 +2536,11 @@ private sealed class SteamItemDefinition.<>c // TypeDefIndex: 5722
 
 	public void .ctor() { }
 
-	internal PlayerItemRecipe.Ingredient <SteamToPlatformRecipe>b__33_0(InventoryRecipe.Ingredient i) { }
+	internal PlayerItemRecipe.Ingredient <SteamToPlatformRecipe>
 
 }
 
-public class SteamPlatform : IPlatformService // TypeDefIndex: 5723
+public class SteamPlatform : IPlatformService // TypeDefIndex: 5725
 {
 	private readonly AvatarCache _avatars; 
 	private readonly Dictionary<int, SteamDownloadableContent> _dlcCache; 
@@ -2756,11 +2753,11 @@ public class SteamPlatform : IPlatformService // TypeDefIndex: 5723
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private SteamPlayer <get_Friends>b__55_0(Friend f) { }
+	private SteamPlayer <get_Friends>
 
 }
 
-private struct SteamPlatform.<LoadAvatarFromSteamAsync>d__1 : IAsyncStateMachine // TypeDefIndex: 5724
+private struct SteamPlatform.<LoadAvatarFromSteamAsync>d__1 : IAsyncStateMachine // TypeDefIndex: 5726
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -2776,7 +2773,7 @@ private struct SteamPlatform.<LoadAvatarFromSteamAsync>d__1 : IAsyncStateMachine
 
 }
 
-private sealed class SteamPlatform.<>c // TypeDefIndex: 5725
+private sealed class SteamPlatform.<>c // TypeDefIndex: 5727
 {
 	public static readonly SteamPlatform.<>c <>9; 
 	public static Func<InventoryDef, SteamItemDefinition> <>9__13_0; 
@@ -2789,17 +2786,17 @@ private sealed class SteamPlatform.<>c // TypeDefIndex: 5725
 
 	public void .ctor() { }
 
-	internal SteamItemDefinition <OnDefinitionsUpdated>b__13_0(InventoryDef d) { }
+	internal SteamItemDefinition <OnDefinitionsUpdated>
 
-	internal InventoryItem <CraftItem>b__20_0(SteamItem i) { }
+	internal InventoryItem <CraftItem>
 
-	internal IPlayerItemDefinition <GetItemDefinitionsWithPrices>b__21_0(InventoryDef d) { }
+	internal IPlayerItemDefinition <GetItemDefinitionsWithPrices>
 
-	internal void <Initialize>b__97_0(Exception e) { }
+	internal void <Initialize>
 
 }
 
-private struct SteamPlatform.<RefreshAndGetItems>d__19 : IAsyncStateMachine // TypeDefIndex: 5726
+private struct SteamPlatform.<RefreshAndGetItems>d__19 : IAsyncStateMachine // TypeDefIndex: 5728
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<IPlayerInventory> <>t__builder; 
@@ -2813,7 +2810,7 @@ private struct SteamPlatform.<RefreshAndGetItems>d__19 : IAsyncStateMachine // T
 
 }
 
-private struct SteamPlatform.<CraftItem>d__20 : IAsyncStateMachine // TypeDefIndex: 5727
+private struct SteamPlatform.<CraftItem>d__20 : IAsyncStateMachine // TypeDefIndex: 5729
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<IPlayerInventory> <>t__builder; 
@@ -2829,7 +2826,7 @@ private struct SteamPlatform.<CraftItem>d__20 : IAsyncStateMachine // TypeDefInd
 
 }
 
-private struct SteamPlatform.<GetItemDefinitionsWithPrices>d__21 : IAsyncStateMachine // TypeDefIndex: 5728
+private struct SteamPlatform.<GetItemDefinitionsWithPrices>d__21 : IAsyncStateMachine // TypeDefIndex: 5730
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<List<IPlayerItemDefinition>> <>t__builder; 
@@ -2843,7 +2840,7 @@ private struct SteamPlatform.<GetItemDefinitionsWithPrices>d__21 : IAsyncStateMa
 
 }
 
-private struct SteamPlatform.<InventoryDropAsync>d__26 : IAsyncStateMachine // TypeDefIndex: 5729
+private struct SteamPlatform.<InventoryDropAsync>d__26 : IAsyncStateMachine // TypeDefIndex: 5731
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -2858,7 +2855,7 @@ private struct SteamPlatform.<InventoryDropAsync>d__26 : IAsyncStateMachine // T
 
 }
 
-private struct SteamPlatform.<GetAuthSessionTicketAsync>d__53 : IAsyncStateMachine // TypeDefIndex: 5730
+private struct SteamPlatform.<GetAuthSessionTicketAsync>d__53 : IAsyncStateMachine // TypeDefIndex: 5732
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<IAuthTicket> <>t__builder; 
@@ -2872,7 +2869,7 @@ private struct SteamPlatform.<GetAuthSessionTicketAsync>d__53 : IAsyncStateMachi
 
 }
 
-private struct SteamPlatform.<GetPlayerInformationAsync>d__57 : IAsyncStateMachine // TypeDefIndex: 5731
+private struct SteamPlatform.<GetPlayerInformationAsync>d__57 : IAsyncStateMachine // TypeDefIndex: 5733
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<IPlayerInfo> <>t__builder; 
@@ -2889,7 +2886,7 @@ private struct SteamPlatform.<GetPlayerInformationAsync>d__57 : IAsyncStateMachi
 
 }
 
-public class SteamPlayer : IPlayerInfo // TypeDefIndex: 5732
+public class SteamPlayer : IPlayerInfo // TypeDefIndex: 5734
 {
 	[CompilerGeneratedAttribute] 
 	private readonly Friend <Value>k__BackingField; 
@@ -2925,7 +2922,7 @@ public class SteamPlayer : IPlayerInfo // TypeDefIndex: 5732
 
 }
 
-public class SteamServerQuery : IServerQuery, IDisposable // TypeDefIndex: 5733
+public class SteamServerQuery : IServerQuery, IDisposable // TypeDefIndex: 5735
 {
 	[CompilerGeneratedAttribute] 
 	private readonly ServerQuerySet <QuerySet>k__BackingField; 
@@ -2969,7 +2966,7 @@ public class SteamServerQuery : IServerQuery, IDisposable // TypeDefIndex: 5733
 
 }
 
-private sealed class SteamServerQuery.<>c__DisplayClass13_0 // TypeDefIndex: 5734
+private sealed class SteamServerQuery.<>c__DisplayClass13_0 // TypeDefIndex: 5736
 {
 	public List<ServerInfo> serverList; 
 	public SteamServerQuery <>4__this; 
@@ -2977,11 +2974,11 @@ private sealed class SteamServerQuery.<>c__DisplayClass13_0 // TypeDefIndex: 573
 
 	public void .ctor() { }
 
-	internal void <.ctor>b__0() { }
+	internal void <.ctor>
 
 }
 
-public static class SteamUtil // TypeDefIndex: 5735
+public static class SteamUtil // TypeDefIndex: 5737
 {
 	private static string _betaNameFull; 
 	private static string _betaNameType; 
@@ -3000,7 +2997,7 @@ public static class SteamUtil // TypeDefIndex: 5735
 
 }
 
-public class SteamWorkshopContent : IWorkshopContent // TypeDefIndex: 5736
+public class SteamWorkshopContent : IWorkshopContent // TypeDefIndex: 5738
 {
 	[CompilerGeneratedAttribute] 
 	private readonly Item <Value>k__BackingField; 
@@ -3053,11 +3050,15 @@ public class SteamWorkshopContent : IWorkshopContent // TypeDefIndex: 5736
 
 }
 
-public static class SteamNetworking // TypeDefIndex: 7370
+public static class SteamNetworking // TypeDefIndex: 7374
 {
 
 [ConsoleSystem.Factory] 
 public static class SteamNetworking
+	[ClientVar] 
+	[ServerVar] 
+	public static bool steamnagleflush; 
+
 	[ClientVar] 
 	[ServerVar] 
 	public static int steamnetdebug { get; set; }
@@ -3136,9 +3137,11 @@ public static class SteamNetworking
 
 	public static void set_steamconnectiontimeout(int value) { }
 
+	private static void .cctor() { }
+
 }
 
-public class SteamNetworking.Client : Client, IConnectionManager // TypeDefIndex: 7371
+public class SteamNetworking.Client : Client, IConnectionManager // TypeDefIndex: 7375
 {
 	private ConnectionManager manager; 
 	private const int bufferSize = 32;
@@ -3151,6 +3154,8 @@ public class SteamNetworking.Client : Client, IConnectionManager // TypeDefIndex
 	public override void Cycle() { }
 
 	public override void Disconnect(string reason, bool sendReasonToServer) { }
+
+	public override void Flush() { }
 
 	public override void Send(SendInfo sendinfo, MemoryStream data) { }
 
@@ -3172,7 +3177,7 @@ public class SteamNetworking.Client : Client, IConnectionManager // TypeDefIndex
 
 }
 
-public class SteamNetworking.Server : Server, ISocketManager // TypeDefIndex: 7372
+public class SteamNetworking.Server : Server, ISocketManager // TypeDefIndex: 7376
 {
 	private SocketManager manager; 
 	private bool relay; 
@@ -3197,6 +3202,8 @@ public class SteamNetworking.Server : Server, ISocketManager // TypeDefIndex: 73
 
 	public override void Kick(Connection cn, string message, bool logfile) { }
 
+	public override void Flush(Connection cn) { }
+
 	public override void Cycle() { }
 
 	public override void SendUnconnected(uint netAddr, ushort netPort, byte[] data, int size) { }
@@ -3219,9 +3226,11 @@ public class SteamNetworking.Server : Server, ISocketManager // TypeDefIndex: 73
 
 	public override ulong GetStat(Connection connection, BaseNetwork.StatTypeLong type) { }
 
+	public override bool LimitConnectionsPerIP() { }
+
 }
 
-private sealed class SteamNetworking.Server.<>c // TypeDefIndex: 7373
+private sealed class SteamNetworking.Server.<>c // TypeDefIndex: 7377
 {
 	public static readonly SteamNetworking.Server.<>c <>9; 
 	public static Action<NetAddress> <>9__9_0; 
@@ -3231,11 +3240,11 @@ private sealed class SteamNetworking.Server.<>c // TypeDefIndex: 7373
 
 	public void .ctor() { }
 
-	internal void <Start>b__9_0(NetAddress fakeAddressCallback) { }
+	internal void <Start>
 
 }
 
-public struct SteamOptions // TypeDefIndex: 9368
+public struct SteamOptions // TypeDefIndex: 9377
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <OverrideLibraryPath>k__BackingField; 
@@ -3271,7 +3280,7 @@ public struct SteamOptions // TypeDefIndex: 9368
 
 }
 
-internal struct SteamOptionsInternal : IGettable<SteamOptions>, ISettable<SteamOptions>, IDisposable // TypeDefIndex: 9369
+internal struct SteamOptionsInternal : IGettable<SteamOptions>, ISettable<SteamOptions>, IDisposable // TypeDefIndex: 9378
 {
 	private int m_ApiVersion; 
 	private IntPtr m_OverrideLibraryPath; 
@@ -3305,7 +3314,7 @@ internal struct SteamOptionsInternal : IGettable<SteamOptions>, ISettable<SteamO
 
 }
 
-public class SteamInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10363
+public class SteamInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10374
 {
 	private IPlayerItem[] Items; 
 
@@ -3323,14 +3332,14 @@ public class SteamInventory : EntityComponent<BasePlayer> // TypeDefIndex: 10363
 
 }
 
-public class SteamInventoryGen : MonoBehaviour // TypeDefIndex: 11044
+public class SteamInventoryGen : MonoBehaviour // TypeDefIndex: 11058
 {
 
 	public void .ctor() { }
 
 }
 
-public class SteamDLCItem : ScriptableObject // TypeDefIndex: 12491
+public class SteamDLCItem : ScriptableObject // TypeDefIndex: 12511
 {
 	public int id; 
 	public Translate.Phrase dlcName; 
@@ -3346,7 +3355,7 @@ public class SteamDLCItem : ScriptableObject // TypeDefIndex: 12491
 
 }
 
-public class SteamInventoryCategory : ScriptableObject // TypeDefIndex: 12492
+public class SteamInventoryCategory : ScriptableObject // TypeDefIndex: 12512
 {
 	[HeaderAttribute] 
 	public bool canBeSoldToOtherUsers; 
@@ -3361,7 +3370,7 @@ public class SteamInventoryCategory : ScriptableObject // TypeDefIndex: 12492
 
 }
 
-public enum SteamInventoryCategory.Price // TypeDefIndex: 12493
+public enum SteamInventoryCategory.Price // TypeDefIndex: 12513
 {
 	public int value__; 
 	public const SteamInventoryCategory.Price CannotBuy = 0;
@@ -3411,7 +3420,7 @@ public enum SteamInventoryCategory.Price // TypeDefIndex: 12493
 
 }
 
-public enum SteamInventoryCategory.DropChance // TypeDefIndex: 12494
+public enum SteamInventoryCategory.DropChance // TypeDefIndex: 12514
 {
 	public int value__; 
 	public const SteamInventoryCategory.DropChance NeverDrop = 0;
@@ -3423,7 +3432,7 @@ public enum SteamInventoryCategory.DropChance // TypeDefIndex: 12494
 
 }
 
-public class SteamInventoryItem : ScriptableObject // TypeDefIndex: 12495
+public class SteamInventoryItem : ScriptableObject // TypeDefIndex: 12515
 {
 	public int id; 
 	public Sprite icon; 
@@ -3454,7 +3463,7 @@ public class SteamInventoryItem : ScriptableObject // TypeDefIndex: 12495
 
 }
 
-public enum SteamInventoryItem.Category // TypeDefIndex: 12496
+public enum SteamInventoryItem.Category // TypeDefIndex: 12516
 {
 	public int value__; 
 	public const SteamInventoryItem.Category None = 0;
@@ -3466,7 +3475,7 @@ public enum SteamInventoryItem.Category // TypeDefIndex: 12496
 
 }
 
-public enum SteamInventoryItem.SubCategory // TypeDefIndex: 12497
+public enum SteamInventoryItem.SubCategory // TypeDefIndex: 12517
 {
 	public int value__; 
 	public const SteamInventoryItem.SubCategory None = 0;
@@ -3484,7 +3493,7 @@ public enum SteamInventoryItem.SubCategory // TypeDefIndex: 12497
 
 }
 
-public class SteamClientWrapper : SingletonComponent<SteamClientWrapper> // TypeDefIndex: 12507
+public class SteamClientWrapper : SingletonComponent<SteamClientWrapper> // TypeDefIndex: 12527
 {
 
 	public Texture GetAvatarTexture(ulong steamid) { }
@@ -3509,7 +3518,7 @@ public class SteamClientWrapper : SingletonComponent<SteamClientWrapper> // Type
 
 }
 
-public enum SteamClientWrapper.RichPresenceState // TypeDefIndex: 12508
+public enum SteamClientWrapper.RichPresenceState // TypeDefIndex: 12528
 {
 	public int value__; 
 	public const SteamClientWrapper.RichPresenceState MainMenu = 0;
@@ -3518,7 +3527,7 @@ public enum SteamClientWrapper.RichPresenceState // TypeDefIndex: 12508
 
 }
 
-public static class SteamNewsSource // TypeDefIndex: 12880
+public static class SteamNewsSource // TypeDefIndex: 12908
 {
 	public static SteamNewsSource.Story[] Stories; 
 
@@ -3528,7 +3537,7 @@ public static class SteamNewsSource // TypeDefIndex: 12880
 
 }
 
-public struct SteamNewsSource.Story // TypeDefIndex: 12881
+public struct SteamNewsSource.Story // TypeDefIndex: 12909
 {
 	public string name; 
 	public string url; 
@@ -3538,7 +3547,7 @@ public struct SteamNewsSource.Story // TypeDefIndex: 12881
 
 }
 
-private sealed class SteamNewsSource.<GetStories>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12882
+private sealed class SteamNewsSource.<GetStories>d__2 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12910
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -3567,7 +3576,7 @@ private sealed class SteamNewsSource.<GetStories>d__2 : IEnumerator<object>, IEn
 
 }
 
-public class SteamFriendsList : MonoBehaviour // TypeDefIndex: 12971
+public class SteamFriendsList : MonoBehaviour // TypeDefIndex: 12999
 {
 	public RectTransform targetPanel; 
 	public SteamUserButton userButton; 
@@ -3606,47 +3615,47 @@ public class SteamFriendsList : MonoBehaviour // TypeDefIndex: 12971
 
 }
 
-public class SteamFriendsList.onFriendSelectedEvent : UnityEvent<ulong, string> // TypeDefIndex: 12972
+public class SteamFriendsList.onFriendSelectedEvent : UnityEvent<ulong, string> // TypeDefIndex: 13000
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class SteamFriendsList.<>c__DisplayClass15_0 // TypeDefIndex: 12973
-{
-	public IPlayerInfo f; 
-
-
-	public void .ctor() { }
-
-	internal bool <AddPlayer>b__0(IPlayerInfo x) { }
-
-}
-
-private sealed class SteamFriendsList.<>c__DisplayClass16_0 // TypeDefIndex: 12974
+private sealed class SteamFriendsList.<>c__DisplayClass15_0 // TypeDefIndex: 13001
 {
 	public IPlayerInfo f; 
 
 
 	public void .ctor() { }
 
-	internal bool <Priority>b__0(PlayerTeam.TeamMember p) { }
+	internal bool <AddPlayer>
 
 }
 
-private sealed class SteamFriendsList.<>c__DisplayClass17_0 // TypeDefIndex: 12975
+private sealed class SteamFriendsList.<>c__DisplayClass16_0 // TypeDefIndex: 13002
+{
+	public IPlayerInfo f; 
+
+
+	public void .ctor() { }
+
+	internal bool <Priority>
+
+}
+
+private sealed class SteamFriendsList.<>c__DisplayClass17_0 // TypeDefIndex: 13003
 {
 	public string name; 
 
 
 	public void .ctor() { }
 
-	internal bool <FilterSearch>b__0(IPlayerInfo x) { }
+	internal bool <FilterSearch>
 
 }
 
-private sealed class SteamFriendsList.<>c__DisplayClass18_0 // TypeDefIndex: 12976
+private sealed class SteamFriendsList.<>c__DisplayClass18_0 // TypeDefIndex: 13004
 {
 	public IPlayerInfo player; 
 	public SteamFriendsList <>4__this; 
@@ -3656,19 +3665,19 @@ private sealed class SteamFriendsList.<>c__DisplayClass18_0 // TypeDefIndex: 129
 
 }
 
-private sealed class SteamFriendsList.<>c__DisplayClass18_1 // TypeDefIndex: 12977
+private sealed class SteamFriendsList.<>c__DisplayClass18_1 // TypeDefIndex: 13005
 {
 	public ulong steamid; 
-	public SteamFriendsList.<>c__DisplayClass18_0 CS$<>8__locals1; 
+	public SteamFriendsList.<>c
 
 
 	public void .ctor() { }
 
-	internal void <AddToPanel>b__1() { }
+	internal void <AddToPanel>
 
 }
 
-private sealed class SteamFriendsList.<>c // TypeDefIndex: 12978
+private sealed class SteamFriendsList.<>c // TypeDefIndex: 13006
 {
 	public static readonly SteamFriendsList.<>c <>9; 
 	public static Func<IPlayerInfo, string> <>9__18_0; 
@@ -3678,11 +3687,11 @@ private sealed class SteamFriendsList.<>c // TypeDefIndex: 12978
 
 	public void .ctor() { }
 
-	internal string <AddToPanel>b__18_0(IPlayerInfo x) { }
+	internal string <AddToPanel>
 
 }
 
-public class SteamUserButton : MonoBehaviour // TypeDefIndex: 12979
+public class SteamUserButton : MonoBehaviour // TypeDefIndex: 13007
 {
 	public RustText steamName; 
 	public RustText steamInfo; 
@@ -3718,7 +3727,7 @@ public class SteamUserButton : MonoBehaviour // TypeDefIndex: 12979
 
 }
 
-private struct SteamUserButton.<UpdateFromUser>d__14 : IAsyncStateMachine // TypeDefIndex: 12980
+private struct SteamUserButton.<UpdateFromUser>d__14 : IAsyncStateMachine // TypeDefIndex: 13008
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -3737,7 +3746,7 @@ private struct SteamUserButton.<UpdateFromUser>d__14 : IAsyncStateMachine // Typ
 
 }
 
-public class Steam // TypeDefIndex: 13714
+public class Steam // TypeDefIndex: 13752
 {
 
 	[ClientVar] 
@@ -3750,7 +3759,7 @@ public class Steam // TypeDefIndex: 13714
 
 }
 
-private sealed class Steam.<>c // TypeDefIndex: 13715
+private sealed class Steam.<>c // TypeDefIndex: 13753
 {
 	public static readonly Steam.<>c <>9; 
 	public static Func<Achievement, <>f__AnonymousType0<string, string, bool>> <>9__0_0; 
@@ -3760,11 +3769,11 @@ private sealed class Steam.<>c // TypeDefIndex: 13715
 
 	public void .ctor() { }
 
-	internal <>f__AnonymousType0<string, string, bool> <achievements>b__0_0(Achievement x) { }
+	internal <>f__AnonymousType0<string, string, bool> <achievements>
 
 }
 
-public class SteamInventoryCrafting : MonoBehaviour // TypeDefIndex: 13800
+public class SteamInventoryCrafting : MonoBehaviour // TypeDefIndex: 13848
 {
 	public GameObject Container; 
 	public Button ConvertToItem; 
@@ -3837,7 +3846,7 @@ public class SteamInventoryCrafting : MonoBehaviour // TypeDefIndex: 13800
 
 }
 
-public class SteamInventoryCrafting.MarketPrice // TypeDefIndex: 13801
+public class SteamInventoryCrafting.MarketPrice // TypeDefIndex: 13849
 {
 	[CompilerGeneratedAttribute] 
 	private bool <success>k__BackingField; 
@@ -3882,7 +3891,7 @@ public class SteamInventoryCrafting.MarketPrice // TypeDefIndex: 13801
 
 }
 
-private sealed class SteamInventoryCrafting.<>c__DisplayClass20_0 // TypeDefIndex: 13802
+private sealed class SteamInventoryCrafting.<>c__DisplayClass20_0 // TypeDefIndex: 13850
 {
 	public IPlayerItemDefinition x; 
 	public SteamInventoryCrafting <>4__this; 
@@ -3890,11 +3899,11 @@ private sealed class SteamInventoryCrafting.<>c__DisplayClass20_0 // TypeDefInde
 
 	public void .ctor() { }
 
-	internal void <FillCraftingContainer>b__1() { }
+	internal void <FillCraftingContainer>
 
 }
 
-private sealed class SteamInventoryCrafting.<>c // TypeDefIndex: 13803
+private sealed class SteamInventoryCrafting.<>c // TypeDefIndex: 13851
 {
 	public static readonly SteamInventoryCrafting.<>c <>9; 
 	public static Func<IPlayerItemDefinition, bool> <>9__20_0; 
@@ -3921,56 +3930,56 @@ private sealed class SteamInventoryCrafting.<>c // TypeDefIndex: 13803
 
 	public void .ctor() { }
 
-	internal bool <FillCraftingContainer>b__20_0(IPlayerItemDefinition x) { }
+	internal bool <FillCraftingContainer>
 
-	internal bool <UpdateImpl>b__22_0(Toggle x) { }
+	internal bool <UpdateImpl>
 
-	internal SteamInventoryItem <UpdateImpl>b__22_1(Toggle x) { }
+	internal SteamInventoryItem <UpdateImpl>
 
-	internal bool <OnChanged>b__23_0(SteamInventoryItem x) { }
+	internal bool <OnChanged>
 
-	internal bool <OnChanged>b__23_1(SteamInventoryItem x) { }
+	internal bool <OnChanged>
 
-	internal bool <OnChanged>b__23_2(SteamInventoryItem x) { }
+	internal bool <OnChanged>
 
-	internal bool <OnChanged>b__23_3(SteamInventoryItem x) { }
+	internal bool <OnChanged>
 
-	internal bool <OnChanged>b__23_4(SteamInventoryItem x) { }
+	internal bool <OnChanged>
 
-	internal IEnumerable<PlayerItemRecipe> <OnChanged>b__23_5(SteamInventoryItem x) { }
+	internal IEnumerable<PlayerItemRecipe> <OnChanged>
 
-	internal IPlayerItemDefinition <OnChanged>b__23_6(PlayerItemRecipe x) { }
+	internal IPlayerItemDefinition <OnChanged>
 
-	internal bool <DoExchange>b__32_0(Toggle x) { }
+	internal bool <DoExchange>
 
-	internal SteamInventoryItem <DoExchange>b__32_1(Toggle x) { }
+	internal SteamInventoryItem <DoExchange>
 
-	internal bool <OnRefreshed>b__34_0(IPlayerItem x) { }
+	internal bool <OnRefreshed>
 
-	internal int <OnRefreshed>b__34_1(IPlayerItem x) { }
+	internal int <OnRefreshed>
 
-	internal bool <OnRefreshed>b__34_2(IPlayerItem x) { }
+	internal bool <OnRefreshed>
 
-	internal int <OnRefreshed>b__34_3(IPlayerItem x) { }
+	internal int <OnRefreshed>
 
-	internal bool <OnRefreshed>b__34_4(IPlayerItem x) { }
+	internal bool <OnRefreshed>
 
-	internal int <OnRefreshed>b__34_5(IPlayerItem x) { }
+	internal int <OnRefreshed>
 
 }
 
-private sealed class SteamInventoryCrafting.<>c__DisplayClass23_0 // TypeDefIndex: 13804
+private sealed class SteamInventoryCrafting.<>c__DisplayClass23_0 // TypeDefIndex: 13852
 {
 	public IPlayerItemDefinition itemType; 
 
 
 	public void .ctor() { }
 
-	internal bool <OnChanged>b__7(SteamInventoryItem x) { }
+	internal bool <OnChanged>
 
 }
 
-private struct SteamInventoryCrafting.<GetMarketPrice>d__29 : IAsyncStateMachine // TypeDefIndex: 13805
+private struct SteamInventoryCrafting.<GetMarketPrice>d__29 : IAsyncStateMachine // TypeDefIndex: 13853
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<SteamInventoryCrafting.MarketPrice> <>t__builder; 
@@ -3986,7 +3995,7 @@ private struct SteamInventoryCrafting.<GetMarketPrice>d__29 : IAsyncStateMachine
 
 }
 
-private struct SteamInventoryCrafting.<GetMarketPriceImpl>d__30 : IAsyncStateMachine // TypeDefIndex: 13806
+private struct SteamInventoryCrafting.<GetMarketPriceImpl>d__30 : IAsyncStateMachine // TypeDefIndex: 13854
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<SteamInventoryCrafting.MarketPrice> <>t__builder; 
@@ -4002,24 +4011,24 @@ private struct SteamInventoryCrafting.<GetMarketPriceImpl>d__30 : IAsyncStateMac
 
 }
 
-private sealed class SteamInventoryCrafting.<>c__DisplayClass31_0 // TypeDefIndex: 13807
+private sealed class SteamInventoryCrafting.<>c__DisplayClass31_0 // TypeDefIndex: 13855
 {
 	public Task<SteamInventoryCrafting.MarketPrice> task; 
 
 
 	public void .ctor() { }
 
-	internal bool <LoadMarketPrice>b__0() { }
+	internal bool <LoadMarketPrice>
 
 }
 
-private sealed class SteamInventoryCrafting.<LoadMarketPrice>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13808
+private sealed class SteamInventoryCrafting.<LoadMarketPrice>d__31 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 13856
 {
 	private int <>1__state; 
 	private object <>2__current; 
 	public SteamInventoryCrafting <>4__this; 
 	public IPlayerItemDefinition definition; 
-	private SteamInventoryCrafting.<>c__DisplayClass31_0 <>8__1; 
+	private SteamInventoryCrafting.<>c
 
 	private object System.Collections.Generic.IEnumerator<System.Object>.Current { get; }
 	private object System.Collections.IEnumerator.Current { get; }
@@ -4044,36 +4053,36 @@ private sealed class SteamInventoryCrafting.<LoadMarketPrice>d__31 : IEnumerator
 
 }
 
-private sealed class SteamInventoryCrafting.<>c__DisplayClass33_0 // TypeDefIndex: 13809
+private sealed class SteamInventoryCrafting.<>c__DisplayClass33_0 // TypeDefIndex: 13857
 {
 	public SteamInventoryItem[] selected; 
 
 
 	public void .ctor() { }
 
-	internal bool <ExchangeItems>b__0(IPlayerItem x) { }
+	internal bool <ExchangeItems>
 
 }
 
-private sealed class SteamInventoryCrafting.<>c__DisplayClass33_1 // TypeDefIndex: 13810
+private sealed class SteamInventoryCrafting.<>c__DisplayClass33_1 // TypeDefIndex: 13858
 {
 	public IPlayerItemDefinition targetItem; 
 
 
 	public void .ctor() { }
 
-	internal Task<IPlayerInventory> <ExchangeItems>b__1(SteamInventoryItem x) { }
+	internal Task<IPlayerInventory> <ExchangeItems>
 
 }
 
-private struct SteamInventoryCrafting.<ExchangeItems>d__33 : IAsyncStateMachine // TypeDefIndex: 13811
+private struct SteamInventoryCrafting.<ExchangeItems>d__33 : IAsyncStateMachine // TypeDefIndex: 13859
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
 	public SteamInventoryItem[] selected; 
 	public SteamInventoryCrafting <>4__this; 
-	private SteamInventoryCrafting.<>c__DisplayClass33_0 <>8__1; 
-	private SteamInventoryCrafting.<>c__DisplayClass33_1 <>8__2; 
+	private SteamInventoryCrafting.<>c
+	private SteamInventoryCrafting.<>c
 	private IPlayerInventory <result>5__2; 
 	private TaskAwaiter<IPlayerInventory> <>u__1; 
 	private TaskAwaiter <>u__2; 
@@ -4087,7 +4096,7 @@ private struct SteamInventoryCrafting.<ExchangeItems>d__33 : IAsyncStateMachine 
 
 }
 
-public class SteamInventoryCrateOpen : MonoBehaviour // TypeDefIndex: 13812
+public class SteamInventoryCrateOpen : MonoBehaviour // TypeDefIndex: 13860
 {
 	public TextMeshProUGUI Name; 
 	public TextMeshProUGUI Requirements; 
@@ -4114,18 +4123,18 @@ public class SteamInventoryCrateOpen : MonoBehaviour // TypeDefIndex: 13812
 
 }
 
-private sealed class SteamInventoryCrateOpen.<>c__DisplayClass10_0 // TypeDefIndex: 13813
+private sealed class SteamInventoryCrateOpen.<>c__DisplayClass10_0 // TypeDefIndex: 13861
 {
 	public InventoryRecipe.Ingredient i; 
 
 
 	public void .ctor() { }
 
-	internal bool <Open>b__1(InventoryItem x) { }
+	internal bool <Open>
 
 }
 
-private sealed class SteamInventoryCrateOpen.<>c // TypeDefIndex: 13814
+private sealed class SteamInventoryCrateOpen.<>c // TypeDefIndex: 13862
 {
 	public static readonly SteamInventoryCrateOpen.<>c <>9; 
 	public static Func<InventoryRecipe.Ingredient, string> <>9__10_0; 
@@ -4137,53 +4146,53 @@ private sealed class SteamInventoryCrateOpen.<>c // TypeDefIndex: 13814
 
 	public void .ctor() { }
 
-	internal string <Open>b__10_0(InventoryRecipe.Ingredient x) { }
+	internal string <Open>
 
-	internal int <Open>b__10_2(InventoryItem x) { }
+	internal int <Open>
 
-	internal int <DoCraftAsync>b__12_1(InventoryItem x) { }
+	internal int <DoCraftAsync>
 
 }
 
-private sealed class SteamInventoryCrateOpen.<>c__DisplayClass12_0 // TypeDefIndex: 13815
+private sealed class SteamInventoryCrateOpen.<>c__DisplayClass12_0 // TypeDefIndex: 13863
 {
 	public List<InventoryItem.Amount> items; 
 
 
 	public void .ctor() { }
 
-	internal bool <DoCraftAsync>b__2(InventoryItem x) { }
+	internal bool <DoCraftAsync>
 
 }
 
-private sealed class SteamInventoryCrateOpen.<>c__DisplayClass12_1 // TypeDefIndex: 13816
+private sealed class SteamInventoryCrateOpen.<>c__DisplayClass12_1 // TypeDefIndex: 13864
 {
 	public InventoryRecipe.Ingredient i; 
 
 
 	public void .ctor() { }
 
-	internal bool <DoCraftAsync>b__0(InventoryItem x) { }
+	internal bool <DoCraftAsync>
 
 }
 
-private sealed class SteamInventoryCrateOpen.<>c__DisplayClass12_2 // TypeDefIndex: 13817
+private sealed class SteamInventoryCrateOpen.<>c__DisplayClass12_2 // TypeDefIndex: 13865
 {
 	public InventoryItem x; 
 
 
 	public void .ctor() { }
 
-	internal bool <DoCraftAsync>b__3(InventoryItem.Amount y) { }
+	internal bool <DoCraftAsync>
 
 }
 
-private struct SteamInventoryCrateOpen.<DoCraftAsync>d__12 : IAsyncStateMachine // TypeDefIndex: 13818
+private struct SteamInventoryCrateOpen.<DoCraftAsync>d__12 : IAsyncStateMachine // TypeDefIndex: 13866
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
 	public SteamInventoryCrateOpen <>4__this; 
-	private SteamInventoryCrateOpen.<>c__DisplayClass12_0 <>8__1; 
+	private SteamInventoryCrateOpen.<>c
 	private Nullable<InventoryResult> <result>5__2; 
 	private TaskAwaiter<Nullable<InventoryResult>> <>u__1; 
 	private TaskAwaiter <>u__2; 
@@ -4196,7 +4205,7 @@ private struct SteamInventoryCrateOpen.<DoCraftAsync>d__12 : IAsyncStateMachine 
 
 }
 
-public class SteamInventoryIcon : MonoBehaviour // TypeDefIndex: 13819
+public class SteamInventoryIcon : MonoBehaviour // TypeDefIndex: 13867
 {
 
 	public void Setup(IPlayerItem item, ItemSkinDirectory.Skin skin) { }
@@ -4207,7 +4216,7 @@ public class SteamInventoryIcon : MonoBehaviour // TypeDefIndex: 13819
 
 }
 
-public class SteamInventoryItem : MonoBehaviour // TypeDefIndex: 13820
+public class SteamInventoryItem : MonoBehaviour // TypeDefIndex: 13868
 {
 	public IPlayerItem Item; 
 	public HttpImage Image; 
@@ -4219,7 +4228,7 @@ public class SteamInventoryItem : MonoBehaviour // TypeDefIndex: 13820
 
 }
 
-public class SteamInventoryManager : SingletonComponent<SteamInventoryManager> // TypeDefIndex: 13821
+public class SteamInventoryManager : SingletonComponent<SteamInventoryManager> // TypeDefIndex: 13869
 {
 	public GameObject inventoryItemPrefab; 
 	public GameObject inventoryCanvas; 
@@ -4243,7 +4252,7 @@ public class SteamInventoryManager : SingletonComponent<SteamInventoryManager> /
 
 }
 
-private sealed class SteamInventoryManager.<>c // TypeDefIndex: 13822
+private sealed class SteamInventoryManager.<>c // TypeDefIndex: 13870
 {
 	public static readonly SteamInventoryManager.<>c <>9; 
 	public static Func<IPlayerItem, DateTimeOffset> <>9__8_0; 
@@ -4257,19 +4266,19 @@ private sealed class SteamInventoryManager.<>c // TypeDefIndex: 13822
 
 	public void .ctor() { }
 
-	internal DateTimeOffset <Refresh>b__8_0(IPlayerItem x) { }
+	internal DateTimeOffset <Refresh>
 
-	internal bool <FixStacks>b__9_0(InventoryItem x) { }
+	internal bool <FixStacks>
 
-	internal bool <FixStacks>b__9_1(InventoryItem x) { }
+	internal bool <FixStacks>
 
-	internal bool <FixStacks>b__9_2(InventoryItem x) { }
+	internal bool <FixStacks>
 
-	internal InventoryDefId <FixStacks>b__9_3(InventoryItem x) { }
+	internal InventoryDefId <FixStacks>
 
 }
 
-private struct SteamInventoryManager.<Refresh>d__8 : IAsyncStateMachine // TypeDefIndex: 13823
+private struct SteamInventoryManager.<Refresh>d__8 : IAsyncStateMachine // TypeDefIndex: 13871
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -4289,7 +4298,7 @@ private struct SteamInventoryManager.<Refresh>d__8 : IAsyncStateMachine // TypeD
 
 }
 
-private struct SteamInventoryManager.<FixStacks>d__9 : IAsyncStateMachine // TypeDefIndex: 13824
+private struct SteamInventoryManager.<FixStacks>d__9 : IAsyncStateMachine // TypeDefIndex: 13872
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -4312,7 +4321,7 @@ private struct SteamInventoryManager.<FixStacks>d__9 : IAsyncStateMachine // Typ
 
 }
 
-public class SteamInventoryNewItem : MonoBehaviour // TypeDefIndex: 13825
+public class SteamInventoryNewItem : MonoBehaviour // TypeDefIndex: 13873
 {
 
 	[AsyncStateMachineAttribute] 
@@ -4322,7 +4331,7 @@ public class SteamInventoryNewItem : MonoBehaviour // TypeDefIndex: 13825
 
 }
 
-private struct SteamInventoryNewItem.<Open>d__0 : IAsyncStateMachine // TypeDefIndex: 13826
+private struct SteamInventoryNewItem.<Open>d__0 : IAsyncStateMachine // TypeDefIndex: 13874
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

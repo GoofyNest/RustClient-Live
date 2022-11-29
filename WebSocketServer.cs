@@ -1,4 +1,4 @@
-public class WebSocketServer : IDisposable // TypeDefIndex: 6965
+public class WebSocketServer : IDisposable // TypeDefIndex: 6969
 {
 	private readonly string _scheme; 
 	private readonly IPAddress _locationIP; 
@@ -72,14 +72,14 @@ public class WebSocketServer : IDisposable // TypeDefIndex: 6965
 	private void OnClientConnect(ISocket clientSocket) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <ListenForClients>b__35_0(Exception e) { }
+	private void <ListenForClients>
 
 	[CompilerGeneratedAttribute] 
-	private WebSocketHttpRequest <OnClientConnect>b__36_0(ArraySegment<byte> bytes) { }
+	private WebSocketHttpRequest <OnClientConnect>
 
 }
 
-private sealed class WebSocketServer.<>c // TypeDefIndex: 6966
+private sealed class WebSocketServer.<>c // TypeDefIndex: 6970
 {
 	public static readonly WebSocketServer.<>c <>9; 
 	public static Func<IWebSocketConnection, WebSocketHttpRequest, IHandler> <>9__36_1; 
@@ -90,9 +90,9 @@ private sealed class WebSocketServer.<>c // TypeDefIndex: 6966
 
 	public void .ctor() { }
 
-	internal IHandler <OnClientConnect>b__36_1(IWebSocketConnection c, WebSocketHttpRequest r) { }
+	internal IHandler <OnClientConnect>
 
-	internal void <OnClientConnect>b__36_2(Exception e) { }
+	internal void <OnClientConnect>
 
 }
 

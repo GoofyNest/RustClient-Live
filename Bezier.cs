@@ -1,4 +1,4 @@
-public static class Bezier // TypeDefIndex: 13166
+public static class Bezier // TypeDefIndex: 13204
 {
 	public static int ClientTesselationLevel { get; }
 

@@ -1,4 +1,4 @@
-internal sealed class TimeSpanStorage : DataStorage // TypeDefIndex: 4435
+internal sealed class TimeSpanStorage : DataStorage // TypeDefIndex: 4437
 {
 	private static readonly TimeSpan s_defaultValue; 
 	private TimeSpan[] _values; 

@@ -1,4 +1,4 @@
-public struct JoinGameAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 8824
+public struct JoinGameAcceptedCallbackInfo : ICallbackInfo // TypeDefIndex: 8833
 {
 	[CompilerGeneratedAttribute] 
 	private object <ClientData>k__BackingField; 

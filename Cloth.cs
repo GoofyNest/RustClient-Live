@@ -1,4 +1,4 @@
-public sealed class Cloth : Component // TypeDefIndex: 4519
+public sealed class Cloth : Component // TypeDefIndex: 4521
 {
 
 [RequireComponent] 

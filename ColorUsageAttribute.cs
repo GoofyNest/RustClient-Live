@@ -1,4 +1,4 @@
-public sealed class ColorUsageAttribute : PropertyAttribute // TypeDefIndex: 3486
+public sealed class ColorUsageAttribute : PropertyAttribute // TypeDefIndex: 3487
 {
 	public readonly bool showAlpha; 
 	public readonly bool hdr; 

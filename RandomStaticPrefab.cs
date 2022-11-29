@@ -1,4 +1,4 @@
-public class RandomStaticPrefab : MonoBehaviour // TypeDefIndex: 12087
+public class RandomStaticPrefab : MonoBehaviour // TypeDefIndex: 12107
 {
 	public uint Seed; 
 	public float Probability; 

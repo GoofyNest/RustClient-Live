@@ -1,4 +1,4 @@
-public struct Vector2b : IEquatable<Vector2b> // TypeDefIndex: 4824
+public struct Vector2b : IEquatable<Vector2b> // TypeDefIndex: 4826
 {
 	public static readonly Vector2b alltrue; 
 	public static readonly Vector2b allfalse; 

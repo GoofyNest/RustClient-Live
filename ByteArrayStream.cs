@@ -1,4 +1,4 @@
-public class ByteArrayStream : Stream // TypeDefIndex: 4837
+public class ByteArrayStream : Stream // TypeDefIndex: 4839
 {
 	private byte[] _data; 
 	private int _base; 

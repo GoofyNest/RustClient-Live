@@ -1,4 +1,4 @@
-public static class ColliderEx // TypeDefIndex: 13446
+public static class ColliderEx // TypeDefIndex: 13484
 {
 
 	[ExtensionAttribute] 
@@ -9,9 +9,6 @@ public static class ColliderEx // TypeDefIndex: 13446
 
 	[ExtensionAttribute] 
 	public static bool IsOnLayer(Collider col, int layer) { }
-
-	[ExtensionAttribute] 
-	public static Vector3 GetLocalCentre(Collider col) { }
 
 	[ExtensionAttribute] 
 	public static float GetRadius(Collider col, Vector3 transformScale) { }

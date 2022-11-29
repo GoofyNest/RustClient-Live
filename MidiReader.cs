@@ -1,4 +1,4 @@
-public sealed class MidiReader : IDisposable // TypeDefIndex: 7595
+public sealed class MidiReader : IDisposable // TypeDefIndex: 7601
 {
 	private static readonly byte[] EmptyByteArray; 
 	private readonly ReaderSettings _settings; 
@@ -70,7 +70,7 @@ public sealed class MidiReader : IDisposable // TypeDefIndex: 7595
 
 }
 
-private sealed class MidiReader.<>c // TypeDefIndex: 7596
+private sealed class MidiReader.<>c // TypeDefIndex: 7602
 {
 	public static readonly MidiReader.<>c <>9; 
 	public static Func<byte[], IEnumerable<byte>> <>9__22_0; 
@@ -80,7 +80,7 @@ private sealed class MidiReader.<>c // TypeDefIndex: 7596
 
 	public void .ctor() { }
 
-	internal IEnumerable<byte> <ReadBytes>b__22_0(byte[] bytes) { }
+	internal IEnumerable<byte> <ReadBytes>
 
 }
 

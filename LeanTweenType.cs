@@ -1,4 +1,4 @@
-public enum LeanTweenType // TypeDefIndex: 5584
+public enum LeanTweenType // TypeDefIndex: 5586
 {
 	public int value__; 
 	public const LeanTweenType notUsed = 0;

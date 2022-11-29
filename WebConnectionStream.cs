@@ -155,7 +155,7 @@ private sealed class WebConnectionStream.<>c__DisplayClass75_0 // TypeDefIndex: 
 
 	public void .ctor() { }
 
-	internal bool <SetHeadersAsync>b__0(SimpleAsyncResult r) { }
+	internal bool <SetHeadersAsync>
 
 }
 
@@ -167,7 +167,7 @@ private sealed class WebConnectionStream.<>c__DisplayClass76_0 // TypeDefIndex: 
 
 	public void .ctor() { }
 
-	internal void <SetHeadersAsync>b__0(IAsyncResult r) { }
+	internal void <SetHeadersAsync>
 
 }
 
@@ -182,9 +182,9 @@ private sealed class WebConnectionStream.<>c__DisplayClass80_0 // TypeDefIndex: 
 
 	public void .ctor() { }
 
-	internal void <WriteRequestAsync>b__0(SimpleAsyncResult inner) { }
+	internal void <WriteRequestAsync>
 
-	internal void <WriteRequestAsync>b__1(IAsyncResult r) { }
+	internal void <WriteRequestAsync>
 
 }
 

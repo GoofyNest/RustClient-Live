@@ -1,4 +1,4 @@
-public enum RenderTextureCreationFlags // TypeDefIndex: 3430
+public enum RenderTextureCreationFlags // TypeDefIndex: 3431
 {
 	public int value__; 
 	public const RenderTextureCreationFlags MipMap = 1;

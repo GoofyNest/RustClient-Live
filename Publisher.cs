@@ -1,4 +1,4 @@
-public class Publisher : MonoBehaviour // TypeDefIndex: 7770
+public class Publisher : MonoBehaviour // TypeDefIndex: 7776
 {
 	public InputField ChangeLog; 
 	public Button PublishButton; 
@@ -46,7 +46,7 @@ public class Publisher : MonoBehaviour // TypeDefIndex: 7770
 
 }
 
-private struct Publisher.<DoExport>d__15 : IAsyncStateMachine // TypeDefIndex: 7771
+private struct Publisher.<DoExport>d__15 : IAsyncStateMachine // TypeDefIndex: 7777
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -65,7 +65,7 @@ private struct Publisher.<DoExport>d__15 : IAsyncStateMachine // TypeDefIndex: 7
 
 }
 
-private struct Publisher.<ExportToFolder>d__16 : IAsyncStateMachine // TypeDefIndex: 7772
+private struct Publisher.<ExportToFolder>d__16 : IAsyncStateMachine // TypeDefIndex: 7778
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -89,7 +89,7 @@ private struct Publisher.<ExportToFolder>d__16 : IAsyncStateMachine // TypeDefIn
 
 }
 
-private struct Publisher.<PublishToSteam>d__18 : IAsyncStateMachine // TypeDefIndex: 7773
+private struct Publisher.<PublishToSteam>d__18 : IAsyncStateMachine // TypeDefIndex: 7779
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -106,7 +106,7 @@ private struct Publisher.<PublishToSteam>d__18 : IAsyncStateMachine // TypeDefIn
 
 }
 
-private struct Publisher.<ExportTexture>d__19 : IAsyncStateMachine // TypeDefIndex: 7774
+private struct Publisher.<ExportTexture>d__19 : IAsyncStateMachine // TypeDefIndex: 7780
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
@@ -128,7 +128,7 @@ private struct Publisher.<ExportTexture>d__19 : IAsyncStateMachine // TypeDefInd
 
 }
 
-private struct Publisher.<DoExport>d__21 : IAsyncStateMachine // TypeDefIndex: 7775
+private struct Publisher.<DoExport>d__21 : IAsyncStateMachine // TypeDefIndex: 7781
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

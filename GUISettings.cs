@@ -1,4 +1,4 @@
-public sealed class GUISettings // TypeDefIndex: 4046
+public sealed class GUISettings // TypeDefIndex: 4048
 {
 	[SerializeField] 
 	private bool m_DoubleClickSelectsWord; 

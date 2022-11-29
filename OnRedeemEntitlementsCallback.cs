@@ -1,4 +1,4 @@
-public sealed class OnRedeemEntitlementsCallback : MulticastDelegate // TypeDefIndex: 9482
+public sealed class OnRedeemEntitlementsCallback : MulticastDelegate // TypeDefIndex: 9491
 {
 
 	public void .ctor(object object, IntPtr method) { }

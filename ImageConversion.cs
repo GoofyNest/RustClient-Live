@@ -1,4 +1,4 @@
-public static class ImageConversion // TypeDefIndex: 4071
+public static class ImageConversion // TypeDefIndex: 4073
 {
 
 [NativeHeaderAttribute] 

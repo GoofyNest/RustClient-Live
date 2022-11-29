@@ -1,4 +1,4 @@
-public abstract class PropertyAttribute : Attribute // TypeDefIndex: 3478
+public abstract class PropertyAttribute : Attribute // TypeDefIndex: 3479
 {
 
 	protected void .ctor() { }

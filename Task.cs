@@ -41,36 +41,36 @@ private sealed class Task.<>c<TResult> // TypeDefIndex: 843
 	|-Task.<>c<VoidTaskResult>..ctor
 	*/
 
-	internal Task<TResult> <.cctor>b__64_0(Task<Task> completed) { }
+	internal Task<TResult> <.cctor>
 	/* GenericInstMethod :
 	|
-	|-Task.<>c<PublishResult>.<.cctor>b__64_0
+	|-Task.<>c<PublishResult>.<.cctor>
 	|
-	|-Task.<>c<bool>.<.cctor>b__64_0
+	|-Task.<>c<bool>.<.cctor>
 	|
-	|-Task.<>c<int>.<.cctor>b__64_0
+	|-Task.<>c<int>.<.cctor>
 	|
-	|-Task.<>c<UdpReceiveResult>.<.cctor>b__64_0
+	|-Task.<>c<UdpReceiveResult>.<.cctor>
 	|
-	|-Task.<>c<Nullable<ServerInfo>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<ServerInfo>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<Image>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<Image>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<InventoryPurchaseResult>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<InventoryPurchaseResult>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<InventoryResult>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<InventoryResult>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<Item>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<Item>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<ResultPage>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<ResultPage>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<int>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<int>>.<.cctor>
 	|
-	|-Task.<>c<Nullable<Int32Enum>>.<.cctor>b__64_0
+	|-Task.<>c<Nullable<Int32Enum>>.<.cctor>
 	|
-	|-Task.<>c<object>.<.cctor>b__64_0
+	|-Task.<>c<object>.<.cctor>
 	|
-	|-Task.<>c<VoidTaskResult>.<.cctor>b__64_0
+	|-Task.<>c<VoidTaskResult>.<.cctor>
 	*/
 
 }
@@ -599,7 +599,7 @@ private sealed class Task.<>c__DisplayClass178_0 // TypeDefIndex: 858
 
 	public void .ctor() { }
 
-	internal void <ExecuteSelfReplicating>b__0(object <p0>) { }
+	internal void <ExecuteSelfReplicating>
 
 }
 
@@ -614,15 +614,15 @@ private sealed class Task.<>c // TypeDefIndex: 859
 
 	public void .ctor() { }
 
-	internal void <Delay>b__276_0(object state) { }
+	internal void <Delay>
 
-	internal void <Delay>b__276_1(object state) { }
+	internal void <Delay>
 
-	internal Task.ContingentProperties <.cctor>b__295_0() { }
+	internal Task.ContingentProperties <.cctor>
 
-	internal bool <.cctor>b__295_1(Task t) { }
+	internal bool <.cctor>
 
-	internal bool <.cctor>b__295_2(object tc) { }
+	internal bool <.cctor>
 
 }
 

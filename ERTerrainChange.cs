@@ -1,4 +1,4 @@
-public struct ERTerrainChange // TypeDefIndex: 7242
+public struct ERTerrainChange // TypeDefIndex: 7246
 {
 	public int index; 
 	public int value; 

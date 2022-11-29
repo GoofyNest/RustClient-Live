@@ -1,4 +1,4 @@
-public enum AntiCheatCommonClientInput // TypeDefIndex: 9744
+public enum AntiCheatCommonClientInput // TypeDefIndex: 9753
 {
 	public int value__; 
 	public const AntiCheatCommonClientInput Unknown = 0;

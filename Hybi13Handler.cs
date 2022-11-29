@@ -1,4 +1,4 @@
-internal class Hybi13Handler : IHandler, IDisposable // TypeDefIndex: 6969
+internal class Hybi13Handler : IHandler, IDisposable // TypeDefIndex: 6973
 {
 	private static readonly Encoding UTF8; 
 	private static readonly SHA1 SHA1; 
@@ -44,7 +44,7 @@ internal class Hybi13Handler : IHandler, IDisposable // TypeDefIndex: 6969
 
 }
 
-private sealed class Hybi13Handler.<>c // TypeDefIndex: 6970
+private sealed class Hybi13Handler.<>c // TypeDefIndex: 6974
 {
 	public static readonly Hybi13Handler.<>c <>9; 
 
@@ -53,7 +53,7 @@ private sealed class Hybi13Handler.<>c // TypeDefIndex: 6970
 
 	public void .ctor() { }
 
-	internal StringBuilder <.cctor>b__28_0() { }
+	internal StringBuilder <.cctor>
 
 }
 

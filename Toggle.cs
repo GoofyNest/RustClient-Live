@@ -1,4 +1,4 @@
-public class Toggle : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler, ICanvasElement // TypeDefIndex: 5019
+public class Toggle : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler, ICanvasElement // TypeDefIndex: 5021
 {
 	public Toggle.ToggleTransition toggleTransition; 
 	public Graphic graphic; 
@@ -57,7 +57,7 @@ public class Toggle : Selectable, IPointerClickHandler, IEventSystemHandler, ISu
 
 }
 
-public enum Toggle.ToggleTransition // TypeDefIndex: 5020
+public enum Toggle.ToggleTransition // TypeDefIndex: 5022
 {
 	public int value__; 
 	public const Toggle.ToggleTransition None = 0;
@@ -65,7 +65,7 @@ public enum Toggle.ToggleTransition // TypeDefIndex: 5020
 
 }
 
-public class Toggle.ToggleEvent : UnityEvent<bool> // TypeDefIndex: 5021
+public class Toggle.ToggleEvent : UnityEvent<bool> // TypeDefIndex: 5023
 {
 
 	public void .ctor() { }

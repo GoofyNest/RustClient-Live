@@ -1,4 +1,4 @@
-public static class GarbageCollector // TypeDefIndex: 3652
+public static class GarbageCollector // TypeDefIndex: 3653
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -27,7 +27,7 @@ public static class GarbageCollector // TypeDefIndex: 3652
 
 }
 
-public enum GarbageCollector.Mode // TypeDefIndex: 3653
+public enum GarbageCollector.Mode // TypeDefIndex: 3654
 {
 	public int value__; 
 	public const GarbageCollector.Mode Disabled = 0;

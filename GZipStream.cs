@@ -59,7 +59,7 @@ public class GZipStream : Stream // TypeDefIndex: 2861
 
 }
 
-public class GZipStream : Stream // TypeDefIndex: 6979
+public class GZipStream : Stream // TypeDefIndex: 6983
 {
 	public Nullable<DateTime> LastModified; 
 	private int _headerByteCount; 

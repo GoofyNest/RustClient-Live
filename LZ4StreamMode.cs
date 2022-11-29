@@ -1,4 +1,4 @@
-public enum LZ4StreamMode // TypeDefIndex: 7018
+public enum LZ4StreamMode // TypeDefIndex: 7022
 {
 	public int value__; 
 	public const LZ4StreamMode Compress = 0;

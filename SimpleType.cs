@@ -1,4 +1,4 @@
-internal sealed class SimpleType : ISerializable // TypeDefIndex: 4310
+internal sealed class SimpleType : ISerializable // TypeDefIndex: 4312
 {
 	private string _baseType; 
 	private SimpleType _baseSimpleType; 

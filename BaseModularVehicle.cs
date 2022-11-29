@@ -1,4 +1,4 @@
-public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // TypeDefIndex: 10033
+public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // TypeDefIndex: 10045
 {
 	private Option __menuOption_Menu_Push; 
 	protected bool clientInEditMode; 
@@ -133,7 +133,7 @@ public abstract class BaseModularVehicle : GroundVehicle, IPrefabPreProcess // T
 
 }
 
-private sealed class BaseModularVehicle.<>c__DisplayClass64_0 // TypeDefIndex: 10034
+private sealed class BaseModularVehicle.<>c__DisplayClass64_0 // TypeDefIndex: 10046
 {
 	public BaseModularVehicle <>4__this; 
 	public BaseVehicleModule module; 
@@ -141,7 +141,7 @@ private sealed class BaseModularVehicle.<>c__DisplayClass64_0 // TypeDefIndex: 1
 
 	public void .ctor() { }
 
-	internal void <OnChildAdded>b__0() { }
+	internal void <OnChildAdded>
 
 }
 

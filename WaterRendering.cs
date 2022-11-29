@@ -1,4 +1,4 @@
-public class WaterRendering // TypeDefIndex: 12349
+public class WaterRendering // TypeDefIndex: 12369
 {
 	private WaterSystem water; 
 	private WaterSimulation simulation; 
@@ -106,7 +106,7 @@ public class WaterRendering // TypeDefIndex: 12349
 
 }
 
-private struct WaterRendering.RenderState // TypeDefIndex: 12350
+private struct WaterRendering.RenderState // TypeDefIndex: 12370
 {
 	public Camera camera; 
 	public int layer; 
@@ -119,7 +119,7 @@ private struct WaterRendering.RenderState // TypeDefIndex: 12350
 
 }
 
-private sealed class WaterRendering.<>c // TypeDefIndex: 12351
+private sealed class WaterRendering.<>c // TypeDefIndex: 12371
 {
 	public static readonly WaterRendering.<>c <>9; 
 	public static Comparison<WaterCullingVolume> <>9__62_0; 
@@ -129,7 +129,7 @@ private sealed class WaterRendering.<>c // TypeDefIndex: 12351
 
 	public void .ctor() { }
 
-	internal int <FindAndSortVisibleCullingVolumes>b__62_0(WaterCullingVolume x, WaterCullingVolume y) { }
+	internal int <FindAndSortVisibleCullingVolumes>
 
 }
 

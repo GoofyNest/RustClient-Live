@@ -1,4 +1,4 @@
-internal class SendMouseEvents // TypeDefIndex: 4079
+internal class SendMouseEvents // TypeDefIndex: 4081
 {
 	private static bool s_MouseUsed; 
 	private static readonly SendMouseEvents.HitInfo[] m_LastHit; 
@@ -19,7 +19,7 @@ internal class SendMouseEvents // TypeDefIndex: 4079
 
 }
 
-private struct SendMouseEvents.HitInfo // TypeDefIndex: 4080
+private struct SendMouseEvents.HitInfo // TypeDefIndex: 4082
 {
 	public GameObject target; 
 	public Camera camera; 

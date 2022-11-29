@@ -1,4 +1,4 @@
-public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6336
+public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6338
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class AutoTurret : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 633
 
 }
 
-public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 10016
+public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex: 10025
 {
 	private Option __menuOption_Menu_AssignToFriend; 
 	private Option __menuOption_Menu_MaxAuth; 
@@ -268,38 +268,38 @@ public class AutoTurret : ContainerIOEntity, IRemoteControllable // TypeDefIndex
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private bool <Menu_AssignToFriend>b__44_0(ulong id) { }
+	private bool <Menu_AssignToFriend>
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_AssignToFriend>b__44_1(ulong id, string steamName) { }
+	private void <Menu_AssignToFriend>
 
 }
 
-public static class AutoTurret.TurretFlags // TypeDefIndex: 10017
+public static class AutoTurret.TurretFlags // TypeDefIndex: 10026
 {
 	public const BaseEntity.Flags Peacekeeper = 128;
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10018
+private sealed class AutoTurret.<>c__DisplayClass104_0 // TypeDefIndex: 10027
 {
 	public ulong id; 
 
 
 	public void .ctor() { }
 
-	internal bool <IsAuthed>b__0(PlayerNameID x) { }
+	internal bool <IsAuthed>
 
 }
 
-private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 10019
+private sealed class AutoTurret.<>c__DisplayClass105_0 // TypeDefIndex: 10028
 {
 	public BasePlayer player; 
 
 
 	public void .ctor() { }
 
-	internal bool <IsAuthed>b__0(PlayerNameID x) { }
+	internal bool <IsAuthed>
 
 }
 

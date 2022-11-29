@@ -1,4 +1,4 @@
-public struct CopyUserTokenByUserIdOptions // TypeDefIndex: 8727
+public struct CopyUserTokenByUserIdOptions // TypeDefIndex: 8736
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <TargetUserId>k__BackingField; 

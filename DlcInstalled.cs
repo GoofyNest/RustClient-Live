@@ -1,4 +1,4 @@
-internal struct DlcInstalled_t : ICallbackData // TypeDefIndex: 5402
+internal struct DlcInstalled_t : ICallbackData // TypeDefIndex: 5404
 {
 	internal AppId AppID; 
 	public static int _datasize; 

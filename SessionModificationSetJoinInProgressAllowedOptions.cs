@@ -1,4 +1,4 @@
-public struct SessionModificationSetJoinInProgressAllowedOptions // TypeDefIndex: 8568
+public struct SessionModificationSetJoinInProgressAllowedOptions // TypeDefIndex: 8577
 {
 	[CompilerGeneratedAttribute] 
 	private bool <AllowJoinInProgress>k__BackingField; 

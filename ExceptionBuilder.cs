@@ -1,4 +1,4 @@
-internal static class ExceptionBuilder // TypeDefIndex: 4204
+internal static class ExceptionBuilder // TypeDefIndex: 4206
 {
 
 	private static void TraceException(string trace, Exception e) { }

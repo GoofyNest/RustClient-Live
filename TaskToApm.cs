@@ -49,7 +49,7 @@ private sealed class TaskToApm.<>c__DisplayClass3_0 // TypeDefIndex: 892
 
 	public void .ctor() { }
 
-	internal void <InvokeCallbackWhenTaskCompletes>b__0() { }
+	internal void <InvokeCallbackWhenTaskCompletes>
 
 }
 

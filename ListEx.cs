@@ -1,4 +1,4 @@
-public static class ListEx // TypeDefIndex: 6575
+public static class ListEx // TypeDefIndex: 6579
 {
 
 	[ExtensionAttribute] 
@@ -66,7 +66,7 @@ public static class ListEx // TypeDefIndex: 6575
 
 }
 
-private sealed class ListEx.<>c // TypeDefIndex: 6576
+private sealed class ListEx.<>c // TypeDefIndex: 6580
 {
 	public static readonly ListEx.<>c <>9; 
 	public static Func<double, double> <>9__7_0; 
@@ -76,7 +76,7 @@ private sealed class ListEx.<>c // TypeDefIndex: 6576
 
 	public void .ctor() { }
 
-	internal double <TruncatedAverage>b__7_0(double x) { }
+	internal double <TruncatedAverage>
 
 }
 

@@ -1,4 +1,4 @@
-public class ContentSizeFitter : UIBehaviour, ILayoutSelfController, ILayoutController // TypeDefIndex: 4967
+public class ContentSizeFitter : UIBehaviour, ILayoutSelfController, ILayoutController // TypeDefIndex: 4969
 {
 	[SerializeField] 
 	protected ContentSizeFitter.FitMode m_HorizontalFit; 
@@ -40,7 +40,7 @@ public class ContentSizeFitter : UIBehaviour, ILayoutSelfController, ILayoutCont
 
 }
 
-public enum ContentSizeFitter.FitMode // TypeDefIndex: 4968
+public enum ContentSizeFitter.FitMode // TypeDefIndex: 4970
 {
 	public int value__; 
 	public const ContentSizeFitter.FitMode Unconstrained = 0;

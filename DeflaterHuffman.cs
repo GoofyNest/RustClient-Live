@@ -1,4 +1,4 @@
-internal class DeflaterHuffman // TypeDefIndex: 5665
+internal class DeflaterHuffman // TypeDefIndex: 5667
 {
 	private static int BUFSIZE; 
 	private static int LITERAL_NUM; 
@@ -52,7 +52,7 @@ internal class DeflaterHuffman // TypeDefIndex: 5665
 
 }
 
-internal class DeflaterHuffman.Tree // TypeDefIndex: 5666
+internal class DeflaterHuffman.Tree // TypeDefIndex: 5668
 {
 	public short[] freqs; 
 	public byte[] length; 

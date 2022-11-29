@@ -1,4 +1,4 @@
-public class VisualizeTexelDensity : MonoBehaviour // TypeDefIndex: 13283
+public class VisualizeTexelDensity : MonoBehaviour // TypeDefIndex: 13321
 {
 	public Shader shader; 
 	public string shaderTag; 

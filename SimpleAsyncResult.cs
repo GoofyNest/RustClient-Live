@@ -69,7 +69,7 @@ private sealed class SimpleAsyncResult.<>c__DisplayClass9_0 // TypeDefIndex: 302
 
 	public void .ctor() { }
 
-	internal void <.ctor>b__0(SimpleAsyncResult result) { }
+	internal void <.ctor>
 
 }
 
@@ -82,9 +82,9 @@ private sealed class SimpleAsyncResult.<>c__DisplayClass11_0 // TypeDefIndex: 30
 
 	public void .ctor() { }
 
-	internal bool <RunWithLock>b__0(SimpleAsyncResult inner) { }
+	internal bool <RunWithLock>
 
-	internal void <RunWithLock>b__1(SimpleAsyncResult inner) { }
+	internal void <RunWithLock>
 
 }
 

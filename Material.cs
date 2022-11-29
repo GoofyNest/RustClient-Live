@@ -1,4 +1,4 @@
-public class Material : Object // TypeDefIndex: 3406
+public class Material : Object // TypeDefIndex: 3407
 {
 	public Shader shader { get; set; }
 	public Color color { get; set; }

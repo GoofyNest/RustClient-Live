@@ -1,4 +1,4 @@
-internal enum MessageType // TypeDefIndex: 6652
+internal enum MessageType // TypeDefIndex: 6656
 {
 	public byte value__; 
 	public const MessageType Welcome = 1;

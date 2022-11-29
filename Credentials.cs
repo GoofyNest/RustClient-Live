@@ -1,4 +1,4 @@
-public struct Credentials // TypeDefIndex: 9564
+public struct Credentials // TypeDefIndex: 9573
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Token>k__BackingField; 
@@ -25,7 +25,7 @@ public struct Credentials // TypeDefIndex: 9564
 
 }
 
-public struct Credentials // TypeDefIndex: 9647
+public struct Credentials // TypeDefIndex: 9656
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Id>k__BackingField; 

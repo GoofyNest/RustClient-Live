@@ -1,4 +1,4 @@
-public class TerrainHeightAdd : TerrainModifier // TypeDefIndex: 12306
+public class TerrainHeightAdd : TerrainModifier // TypeDefIndex: 12326
 {
 	public float Delta; 
 

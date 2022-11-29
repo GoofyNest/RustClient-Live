@@ -1,4 +1,4 @@
-internal struct JoinLobbyOptionsInternal : ISettable<JoinLobbyOptions>, IDisposable // TypeDefIndex: 9111
+internal struct JoinLobbyOptionsInternal : ISettable<JoinLobbyOptions>, IDisposable // TypeDefIndex: 9120
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LobbyDetailsHandle; 

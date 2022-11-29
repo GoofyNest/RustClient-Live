@@ -1,4 +1,4 @@
-internal static class PointerEventsHelper // TypeDefIndex: 4686
+internal static class PointerEventsHelper // TypeDefIndex: 4688
 {
 
 	internal static void SendEnterLeave<TLeaveEvent, TEnterEvent>(VisualElement previousTopElementUnderPointer, VisualElement currentTopElementUnderPointer, IPointerEvent triggerEvent, Vector2 position, int pointerId) { }

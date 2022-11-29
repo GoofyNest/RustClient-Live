@@ -1,4 +1,4 @@
-public struct TransactionOptions // TypeDefIndex: 3991
+public struct TransactionOptions // TypeDefIndex: 3993
 {
 	private IsolationLevel level; 
 	private TimeSpan timeout; 

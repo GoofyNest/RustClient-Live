@@ -1,4 +1,4 @@
-public sealed class VFXSpawnerState : IDisposable // TypeDefIndex: 4766
+public sealed class VFXSpawnerState : IDisposable // TypeDefIndex: 4768
 {
 	private IntPtr m_Ptr; 
 	private bool m_Owner; 

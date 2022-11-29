@@ -1,4 +1,4 @@
-public sealed class Cubemap : Texture // TypeDefIndex: 3446
+public sealed class Cubemap : Texture // TypeDefIndex: 3447
 {
 	public TextureFormat format { get; }
 	public override bool isReadable { get; }

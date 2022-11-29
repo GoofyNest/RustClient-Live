@@ -1,4 +1,4 @@
-internal struct GetAuthSessionTicketResponse_t : ICallbackData // TypeDefIndex: 5306
+internal struct GetAuthSessionTicketResponse_t : ICallbackData // TypeDefIndex: 5308
 {
 	internal uint AuthTicket; 
 	internal Result Result; 

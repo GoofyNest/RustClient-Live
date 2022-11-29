@@ -1,4 +1,4 @@
-public class TooltipAttribute : PropertyAttribute // TypeDefIndex: 3480
+public class TooltipAttribute : PropertyAttribute // TypeDefIndex: 3481
 {
 	public readonly string tooltip; 
 

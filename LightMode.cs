@@ -1,4 +1,4 @@
-public enum LightMode // TypeDefIndex: 3880
+public enum LightMode // TypeDefIndex: 3882
 {
 	public byte value__; 
 	public const LightMode Realtime = 0;

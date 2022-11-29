@@ -1,10 +1,10 @@
-public class Display // TypeDefIndex: 3383
+public class Display // TypeDefIndex: 3384
 {
 	internal IntPtr nativeDisplay; 
 	public static Display[] displays; 
 	private static Display _mainDisplay; 
-	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
+	[DebuggerBrowsableAttribute] 
 	private static Display.DisplaysUpdatedDelegate onDisplaysUpdated; 
 
 	public int renderingWidth { get; }
@@ -55,7 +55,7 @@ public class Display // TypeDefIndex: 3383
 
 }
 
-public sealed class Display.DisplaysUpdatedDelegate : MulticastDelegate // TypeDefIndex: 3384
+public sealed class Display.DisplaysUpdatedDelegate : MulticastDelegate // TypeDefIndex: 3385
 {
 
 	public void .ctor(object object, IntPtr method) { }

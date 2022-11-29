@@ -1,4 +1,4 @@
-public struct HumanBone // TypeDefIndex: 4496
+public struct HumanBone // TypeDefIndex: 4498
 {
 	private string m_BoneName; 
 	private string m_HumanName; 

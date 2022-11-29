@@ -1,4 +1,4 @@
-public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5742
+public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5744
 {
 	private static readonly TimeSpan TimeoutDefault; 
 	private Uri base_address; 
@@ -48,7 +48,7 @@ public class HttpClient : HttpMessageInvoker // TypeDefIndex: 5742
 
 }
 
-private struct HttpClient.<SendAsyncWorker>d__47 : IAsyncStateMachine // TypeDefIndex: 5743
+private struct HttpClient.<SendAsyncWorker>d__47 : IAsyncStateMachine // TypeDefIndex: 5745
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<HttpResponseMessage> <>t__builder; 
@@ -69,7 +69,7 @@ private struct HttpClient.<SendAsyncWorker>d__47 : IAsyncStateMachine // TypeDef
 
 }
 
-private struct HttpClient.<GetStringAsync>d__52 : IAsyncStateMachine // TypeDefIndex: 5744
+private struct HttpClient.<GetStringAsync>d__52 : IAsyncStateMachine // TypeDefIndex: 5746
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<string> <>t__builder; 

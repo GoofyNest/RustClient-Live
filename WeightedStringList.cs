@@ -1,4 +1,4 @@
-public class WeightedStringList // TypeDefIndex: 6219
+public class WeightedStringList // TypeDefIndex: 6221
 {
 	public List<WeightedStringList.Container> Objects; 
 	private float _total; 
@@ -16,14 +16,14 @@ public class WeightedStringList // TypeDefIndex: 6219
 
 }
 
-public struct WeightedStringList.Container // TypeDefIndex: 6220
+public struct WeightedStringList.Container // TypeDefIndex: 6222
 {
 	public float Weight; 
 	public string Object; 
 
 }
 
-private sealed class WeightedStringList.<>c // TypeDefIndex: 6221
+private sealed class WeightedStringList.<>c // TypeDefIndex: 6223
 {
 	public static readonly WeightedStringList.<>c <>9; 
 	public static Func<WeightedStringList.Container, float> <>9__3_0; 
@@ -33,7 +33,7 @@ private sealed class WeightedStringList.<>c // TypeDefIndex: 6221
 
 	public void .ctor() { }
 
-	internal float <get_Total>b__3_0(WeightedStringList.Container x) { }
+	internal float <get_Total>
 
 }
 

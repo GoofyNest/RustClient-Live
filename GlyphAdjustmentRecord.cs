@@ -1,4 +1,4 @@
-internal struct GlyphAdjustmentRecord // TypeDefIndex: 4117
+internal struct GlyphAdjustmentRecord // TypeDefIndex: 4119
 {
 	[NativeNameAttribute] 
 	[SerializeField] 

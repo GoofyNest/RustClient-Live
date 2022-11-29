@@ -1,4 +1,4 @@
-public static class BatchingToggleEx // TypeDefIndex: 11637
+public static class BatchingToggleEx // TypeDefIndex: 11652
 {
 
 	[ExtensionAttribute] 

@@ -1,4 +1,4 @@
-public class MarketTerminal : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6401
+public class MarketTerminal : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6403
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class MarketTerminal : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6402
+public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6404
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -126,7 +126,7 @@ public class MarketTerminal.PendingOrder : IDisposable, Pool.IPooled, IProto // 
 
 }
 
-public class MarketTerminal : StorageContainer // TypeDefIndex: 10116
+public class MarketTerminal : StorageContainer // TypeDefIndex: 10127
 {
 	private Option __menuOption_Menu_RequestOpenMarket; 
 	private ulong _currentlyDisplayedUserId; 
@@ -188,7 +188,7 @@ public class MarketTerminal : StorageContainer // TypeDefIndex: 10116
 
 }
 
-private sealed class MarketTerminal.<>c // TypeDefIndex: 10117
+private sealed class MarketTerminal.<>c // TypeDefIndex: 10128
 {
 	public static readonly MarketTerminal.<>c <>9; 
 	public static Func<Item, int> <>9__27_0; 
@@ -199,9 +199,9 @@ private sealed class MarketTerminal.<>c // TypeDefIndex: 10117
 
 	public void .ctor() { }
 
-	internal int <CanPlayerAffordOrderAndDeliveryFee>b__27_0(Item i) { }
+	internal int <CanPlayerAffordOrderAndDeliveryFee>
 
-	internal uint <HasPendingOrderFor>b__28_0(MarketTerminal.PendingOrder o) { }
+	internal uint <HasPendingOrderFor>
 
 }
 

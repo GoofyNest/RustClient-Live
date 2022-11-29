@@ -1,4 +1,4 @@
-public struct OnQueryDefinitionsCompleteCallbackInfo : ICallbackInfo // TypeDefIndex: 9920
+public struct OnQueryDefinitionsCompleteCallbackInfo : ICallbackInfo // TypeDefIndex: 9929
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 

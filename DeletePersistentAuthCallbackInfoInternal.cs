@@ -1,4 +1,4 @@
-internal struct DeletePersistentAuthCallbackInfoInternal : ICallbackInfoInternal, IGettable<DeletePersistentAuthCallbackInfo>, ISettable<DeletePersistentAuthCallbackInfo>, IDisposable // TypeDefIndex: 9650
+internal struct DeletePersistentAuthCallbackInfoInternal : ICallbackInfoInternal, IGettable<DeletePersistentAuthCallbackInfo>, ISettable<DeletePersistentAuthCallbackInfo>, IDisposable // TypeDefIndex: 9659
 {
 	private Result m_ResultCode; 
 	private IntPtr m_ClientData; 

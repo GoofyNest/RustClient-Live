@@ -1,4 +1,4 @@
-public class TransactionInformation // TypeDefIndex: 3989
+public class TransactionInformation // TypeDefIndex: 3991
 {
 	private string local_id; 
 	private Guid dtcId; 

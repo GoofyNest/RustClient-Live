@@ -1,4 +1,4 @@
-public struct CopyLobbyDetailsHandleOptions // TypeDefIndex: 9078
+public struct CopyLobbyDetailsHandleOptions // TypeDefIndex: 9087
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <LobbyId>k__BackingField; 

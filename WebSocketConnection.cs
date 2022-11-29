@@ -1,4 +1,4 @@
-public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6959
+public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6963
 {
 	[CompilerGeneratedAttribute] 
 	private ISocket <Socket>k__BackingField; 
@@ -131,7 +131,7 @@ public class WebSocketConnection : IWebSocketConnection // TypeDefIndex: 6959
 
 }
 
-private sealed class WebSocketConnection.<>c // TypeDefIndex: 6960
+private sealed class WebSocketConnection.<>c // TypeDefIndex: 6964
 {
 	public static readonly WebSocketConnection.<>c <>9; 
 	public static Action <>9__50_0; 
@@ -150,29 +150,29 @@ private sealed class WebSocketConnection.<>c // TypeDefIndex: 6960
 
 	public void .ctor() { }
 
-	internal void <.ctor>b__50_0() { }
+	internal void <.ctor>
 
-	internal void <.ctor>b__50_1() { }
+	internal void <.ctor>
 
-	internal void <.ctor>b__50_2(string x) { }
+	internal void <.ctor>
 
-	internal void <.ctor>b__50_3(Span<byte> x) { }
+	internal void <.ctor>
 
-	internal void <.ctor>b__50_4(Span<byte> x) { }
+	internal void <.ctor>
 
-	internal void <.ctor>b__50_5(Span<byte> x) { }
+	internal void <.ctor>
 
-	internal void <.ctor>b__50_6(Exception x) { }
+	internal void <.ctor>
 
-	internal void <Close>b__58_0(WebSocketConnection i, bool s) { }
+	internal void <Close>
 
-	internal void <CreateHandler>b__59_0(WebSocketConnection instance, bool success) { }
+	internal void <CreateHandler>
 
-	internal void <Receive>b__63_0(IAsyncResult result) { }
+	internal void <Receive>
 
 }
 
-private sealed class WebSocketConnection.<>c__DisplayClass65_0 // TypeDefIndex: 6961
+private sealed class WebSocketConnection.<>c__DisplayClass65_0 // TypeDefIndex: 6965
 {
 	public MemoryBuffer bytes; 
 	public Action<WebSocketConnection, bool> callback; 
@@ -180,7 +180,7 @@ private sealed class WebSocketConnection.<>c__DisplayClass65_0 // TypeDefIndex: 
 
 	public void .ctor() { }
 
-	internal void <SendBytes>b__0(IAsyncResult result) { }
+	internal void <SendBytes>
 
 }
 

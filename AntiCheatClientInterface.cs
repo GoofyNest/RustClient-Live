@@ -1,5 +1,6 @@
-public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9810
+public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9819
 {
+	private static byte[] PollStatusStaticBuffer; 
 	public const int AddexternalintegritycatalogApiLatest = 1;
 	public const int AddnotifyclientintegrityviolatedApiLatest = 1;
 	public const int AddnotifymessagetopeerApiLatest = 1;
@@ -81,6 +82,8 @@ public sealed class AntiCheatClientInterface : Handle // TypeDefIndex: 9810
 
 	[MonoPInvokeCallbackAttribute] 
 	internal static void OnPeerAuthStatusChangedCallbackInternalImplementation(ref OnClientAuthStatusChangedCallbackInfoInternal data) { }
+
+	private static void .cctor() { }
 
 }
 

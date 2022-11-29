@@ -1,4 +1,4 @@
-public struct BatchCullingContext // TypeDefIndex: 3846
+public struct BatchCullingContext // TypeDefIndex: 3847
 {
 	public readonly NativeArray<Plane> cullingPlanes; 
 	public NativeArray<BatchVisibility> batchVisibility; 

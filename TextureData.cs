@@ -1,4 +1,4 @@
-public struct TextureData // TypeDefIndex: 12045
+public struct TextureData // TypeDefIndex: 12065
 {
 	public int width; 
 	public int height; 

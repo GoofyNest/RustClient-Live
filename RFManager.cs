@@ -1,4 +1,4 @@
-public class RFManager // TypeDefIndex: 11535
+public class RFManager // TypeDefIndex: 11550
 {
 	public static Dictionary<int, List<IRFObject>> _listeners; 
 	public static Dictionary<int, List<IRFObject>> _broadcasters; 

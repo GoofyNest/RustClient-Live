@@ -1,4 +1,4 @@
-public struct LobbyDetailsGetMemberAttributeCountOptions // TypeDefIndex: 9136
+public struct LobbyDetailsGetMemberAttributeCountOptions // TypeDefIndex: 9145
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <TargetUserId>k__BackingField; 

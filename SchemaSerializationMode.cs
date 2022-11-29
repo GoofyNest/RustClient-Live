@@ -1,4 +1,4 @@
-public enum SchemaSerializationMode // TypeDefIndex: 4299
+public enum SchemaSerializationMode // TypeDefIndex: 4301
 {
 	public int value__; 
 	public const SchemaSerializationMode IncludeSchema = 1;

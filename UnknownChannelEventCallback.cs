@@ -1,4 +1,4 @@
-public sealed class UnknownChannelEventCallback : MulticastDelegate // TypeDefIndex: 7613
+public sealed class UnknownChannelEventCallback : MulticastDelegate // TypeDefIndex: 7619
 {
 
 	public void .ctor(object object, IntPtr method) { }

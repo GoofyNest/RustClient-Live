@@ -1,4 +1,4 @@
-internal struct ActiveSessionInfoInternal : IGettable<ActiveSessionInfo>, ISettable<ActiveSessionInfo>, IDisposable // TypeDefIndex: 8448
+internal struct ActiveSessionInfoInternal : IGettable<ActiveSessionInfo>, ISettable<ActiveSessionInfo>, IDisposable // TypeDefIndex: 8457
 {
 	private int m_ApiVersion; 
 	private IntPtr m_SessionName; 

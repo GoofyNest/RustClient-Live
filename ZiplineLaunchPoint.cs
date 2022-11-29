@@ -1,4 +1,4 @@
-public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 10196
+public class ZiplineLaunchPoint : BaseEntity // TypeDefIndex: 10207
 {
 	private Option __menuOption_Menu_MountZipline; 
 	public Transform LineDeparturePoint; 

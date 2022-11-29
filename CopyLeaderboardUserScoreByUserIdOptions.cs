@@ -1,4 +1,4 @@
-public struct CopyLeaderboardUserScoreByUserIdOptions // TypeDefIndex: 9277
+public struct CopyLeaderboardUserScoreByUserIdOptions // TypeDefIndex: 9286
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <UserId>k__BackingField; 

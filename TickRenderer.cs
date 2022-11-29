@@ -1,4 +1,4 @@
-public class TickRenderer : MaskableGraphic // TypeDefIndex: 7109
+public class TickRenderer : MaskableGraphic // TypeDefIndex: 7113
 {
 	public List<TickRenderer.Tick> Ticks; 
 	private static UIVertex[] quad; 
@@ -12,7 +12,7 @@ public class TickRenderer : MaskableGraphic // TypeDefIndex: 7109
 
 }
 
-public struct TickRenderer.Tick // TypeDefIndex: 7110
+public struct TickRenderer.Tick // TypeDefIndex: 7114
 {
 	public float Pos; 
 	public Color Color; 

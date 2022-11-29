@@ -1,4 +1,4 @@
-public enum ReflectionProbeUsage // TypeDefIndex: 3827
+public enum ReflectionProbeUsage // TypeDefIndex: 3828
 {
 	public int value__; 
 	public const ReflectionProbeUsage Off = 0;

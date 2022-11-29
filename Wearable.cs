@@ -1,4 +1,4 @@
-public class Wearable : MonoBehaviour, IItemSetup, IPrefabPreProcess // TypeDefIndex: 11782
+public class Wearable : MonoBehaviour, IItemSetup, IPrefabPreProcess // TypeDefIndex: 11802
 {
 	[InspectorFlagsAttribute] 
 	public Wearable.RemoveSkin removeSkin; 
@@ -72,7 +72,7 @@ public class Wearable : MonoBehaviour, IItemSetup, IPrefabPreProcess // TypeDefI
 
 }
 
-public enum Wearable.RemoveSkin // TypeDefIndex: 11783
+public enum Wearable.RemoveSkin // TypeDefIndex: 11803
 {
 	public int value__; 
 	public const Wearable.RemoveSkin Torso = 1;
@@ -83,7 +83,7 @@ public enum Wearable.RemoveSkin // TypeDefIndex: 11783
 
 }
 
-public enum Wearable.RemoveHair // TypeDefIndex: 11784
+public enum Wearable.RemoveHair // TypeDefIndex: 11804
 {
 	public int value__; 
 	public const Wearable.RemoveHair Head = 1;
@@ -94,7 +94,7 @@ public enum Wearable.RemoveHair // TypeDefIndex: 11784
 
 }
 
-public enum Wearable.DeformHair // TypeDefIndex: 11785
+public enum Wearable.DeformHair // TypeDefIndex: 11805
 {
 	public int value__; 
 	public const Wearable.DeformHair None = 0;
@@ -106,7 +106,7 @@ public enum Wearable.DeformHair // TypeDefIndex: 11785
 
 }
 
-public enum Wearable.OccupationSlots // TypeDefIndex: 11786
+public enum Wearable.OccupationSlots // TypeDefIndex: 11806
 {
 	public int value__; 
 	public const Wearable.OccupationSlots HeadTop = 1;
@@ -133,7 +133,7 @@ public enum Wearable.OccupationSlots // TypeDefIndex: 11786
 
 }
 
-private sealed class Wearable.<>c // TypeDefIndex: 11787
+private sealed class Wearable.<>c // TypeDefIndex: 11807
 {
 	public static readonly Wearable.<>c <>9; 
 	public static Func<Renderer, bool> <>9__39_0; 
@@ -146,13 +146,13 @@ private sealed class Wearable.<>c // TypeDefIndex: 11787
 
 	public void .ctor() { }
 
-	internal bool <CacheComponents>b__39_0(Renderer x) { }
+	internal bool <CacheComponents>
 
-	internal bool <CacheComponents>b__39_1(Renderer x) { }
+	internal bool <CacheComponents>
 
-	internal bool <CacheComponents>b__39_2(Renderer x) { }
+	internal bool <CacheComponents>
 
-	internal bool <CacheComponents>b__39_3(Renderer x) { }
+	internal bool <CacheComponents>
 
 }
 

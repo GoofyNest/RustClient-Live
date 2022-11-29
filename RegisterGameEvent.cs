@@ -1,4 +1,4 @@
-internal struct RegisterGameEvent // TypeDefIndex: 7717
+internal struct RegisterGameEvent // TypeDefIndex: 7723
 {
 	[CompilerGeneratedAttribute] 
 	private string <GameId>k__BackingField; 

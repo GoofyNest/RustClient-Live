@@ -1,4 +1,4 @@
-public enum FalloffType // TypeDefIndex: 3881
+public enum FalloffType // TypeDefIndex: 3883
 {
 	public byte value__; 
 	public const FalloffType InverseSquared = 0;

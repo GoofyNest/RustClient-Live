@@ -1,4 +1,4 @@
-public class GenericSpawner : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6319
+public class GenericSpawner : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6321
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -59,7 +59,7 @@ public class GenericSpawner : IDisposable, Pool.IPooled, IProto // TypeDefIndex:
 
 }
 
-public class GenericSpawner.SpawnedEnt : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6320
+public class GenericSpawner.SpawnedEnt : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6322
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

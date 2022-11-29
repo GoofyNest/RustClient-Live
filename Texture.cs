@@ -1,4 +1,4 @@
-public class Texture : Object // TypeDefIndex: 3444
+public class Texture : Object // TypeDefIndex: 3445
 {
 	public static readonly int GenerateAllMips; 
 
@@ -131,7 +131,7 @@ public class Texture : Object // TypeDefIndex: 3444
 
 }
 
-public static class Texture // TypeDefIndex: 5616
+public static class Texture // TypeDefIndex: 5618
 {
 
 	[ExtensionAttribute] 
@@ -151,7 +151,7 @@ public static class Texture // TypeDefIndex: 5616
 
 }
 
-public class Texture : ConsoleSystem // TypeDefIndex: 13718
+public class Texture : ConsoleSystem // TypeDefIndex: 13756
 {
 	[ClientVar] 
 	public static int streamingBudgetOverride; 

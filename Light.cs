@@ -1,4 +1,4 @@
-public sealed class Light : Behaviour // TypeDefIndex: 3408
+public sealed class Light : Behaviour // TypeDefIndex: 3409
 {
 	private int m_BakedIndex; 
 

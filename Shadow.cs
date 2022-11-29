@@ -1,4 +1,4 @@
-public class Shadow : BaseMeshEffect // TypeDefIndex: 5040
+public class Shadow : BaseMeshEffect // TypeDefIndex: 5042
 {
 	[SerializeField] 
 	private Color m_EffectColor; 

@@ -1,4 +1,4 @@
-public class IOEntityMovementChecker : FacepunchBehaviour // TypeDefIndex: 11528
+public class IOEntityMovementChecker : FacepunchBehaviour // TypeDefIndex: 11542
 {
 
 	public void .ctor() { }

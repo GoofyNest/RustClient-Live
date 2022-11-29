@@ -1,4 +1,4 @@
-public class Dropdown : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 4925
+public class Dropdown : Selectable, IPointerClickHandler, IEventSystemHandler, ISubmitHandler, ICancelHandler // TypeDefIndex: 4927
 {
 	[SerializeField] 
 	private RectTransform m_Template; 
@@ -150,7 +150,7 @@ public class Dropdown : Selectable, IPointerClickHandler, IEventSystemHandler, I
 
 }
 
-public class Dropdown.OptionData // TypeDefIndex: 4927
+public class Dropdown.OptionData // TypeDefIndex: 4929
 {
 	[SerializeField] 
 	private string m_Text; 
@@ -179,7 +179,7 @@ public class Dropdown.OptionData // TypeDefIndex: 4927
 
 }
 
-public class Dropdown.OptionDataList // TypeDefIndex: 4928
+public class Dropdown.OptionDataList // TypeDefIndex: 4930
 {
 	[SerializeField] 
 	private List<Dropdown.OptionData> m_Options; 
@@ -195,14 +195,14 @@ public class Dropdown.OptionDataList // TypeDefIndex: 4928
 
 }
 
-public class Dropdown.DropdownEvent : UnityEvent<int> // TypeDefIndex: 4929
+public class Dropdown.DropdownEvent : UnityEvent<int> // TypeDefIndex: 4931
 {
 
 	public void .ctor() { }
 
 }
 
-private sealed class Dropdown.<>c__DisplayClass62_0 // TypeDefIndex: 4930
+private sealed class Dropdown.<>c__DisplayClass62_0 // TypeDefIndex: 4932
 {
 	public Dropdown.DropdownItem item; 
 	public Dropdown <>4__this; 
@@ -210,11 +210,11 @@ private sealed class Dropdown.<>c__DisplayClass62_0 // TypeDefIndex: 4930
 
 	public void .ctor() { }
 
-	internal void <Show>b__0(bool x) { }
+	internal void <Show>
 
 }
 
-private sealed class Dropdown.<DelayedDestroyDropdownList>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4931
+private sealed class Dropdown.<DelayedDestroyDropdownList>d__74 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 4933
 {
 	private int <>1__state; 
 	private object <>2__current; 
@@ -244,7 +244,7 @@ private sealed class Dropdown.<DelayedDestroyDropdownList>d__74 : IEnumerator<ob
 
 }
 
-public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 7040
+public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler // TypeDefIndex: 7044
 {
 	public RustIcon Icon; 
 	public RustText Text; 
@@ -284,7 +284,7 @@ public class Dropdown : RustControl, IPointerDownHandler, IEventSystemHandler //
 
 }
 
-public class Dropdown.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7041
+public class Dropdown.ChangedEvent : UnityEvent<Option> // TypeDefIndex: 7045
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public class NameValueWithParametersHeaderValue : NameValueHeaderValue, ICloneable // TypeDefIndex: 5793
+public class NameValueWithParametersHeaderValue : NameValueHeaderValue, ICloneable // TypeDefIndex: 5795
 {
 	private List<NameValueHeaderValue> parameters; 
 

@@ -1,4 +1,4 @@
-public class ProductInfoHeaderValue : ICloneable // TypeDefIndex: 5807
+public class ProductInfoHeaderValue : ICloneable // TypeDefIndex: 5809
 {
 	[CompilerGeneratedAttribute] 
 	private string <Comment>k__BackingField; 

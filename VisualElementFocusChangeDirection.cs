@@ -1,4 +1,4 @@
-public class VisualElementFocusChangeDirection : FocusChangeDirection // TypeDefIndex: 4619
+public class VisualElementFocusChangeDirection : FocusChangeDirection // TypeDefIndex: 4621
 {
 	private static readonly VisualElementFocusChangeDirection s_Left; 
 	private static readonly VisualElementFocusChangeDirection s_Right; 

@@ -1,4 +1,4 @@
-public sealed class DownloadHandlerBuffer : DownloadHandler // TypeDefIndex: 4136
+public sealed class DownloadHandlerBuffer : DownloadHandler // TypeDefIndex: 4138
 {
 
 	private static IntPtr Create(DownloadHandlerBuffer obj) { }

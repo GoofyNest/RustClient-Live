@@ -1,4 +1,4 @@
-public enum PickingMode // TypeDefIndex: 4614
+public enum PickingMode // TypeDefIndex: 4616
 {
 	public int value__; 
 	public const PickingMode Position = 0;

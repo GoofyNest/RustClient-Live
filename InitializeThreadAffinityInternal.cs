@@ -1,4 +1,4 @@
-internal struct InitializeThreadAffinityInternal : IGettable<InitializeThreadAffinity>, ISettable<InitializeThreadAffinity>, IDisposable // TypeDefIndex: 9864
+internal struct InitializeThreadAffinityInternal : IGettable<InitializeThreadAffinity>, ISettable<InitializeThreadAffinity>, IDisposable // TypeDefIndex: 9873
 {
 	private int m_ApiVersion; 
 	private ulong m_NetworkWork; 

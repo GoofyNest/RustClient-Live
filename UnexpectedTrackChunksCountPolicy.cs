@@ -1,4 +1,4 @@
-public enum UnexpectedTrackChunksCountPolicy // TypeDefIndex: 7611
+public enum UnexpectedTrackChunksCountPolicy // TypeDefIndex: 7617
 {
 	public int value__; 
 	public const UnexpectedTrackChunksCountPolicy Ignore = 0;

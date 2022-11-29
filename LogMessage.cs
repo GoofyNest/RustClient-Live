@@ -1,4 +1,4 @@
-public struct LogMessage // TypeDefIndex: 9045
+public struct LogMessage // TypeDefIndex: 9054
 {
 	[CompilerGeneratedAttribute] 
 	private Utf8String <Category>k__BackingField; 

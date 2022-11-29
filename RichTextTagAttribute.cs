@@ -1,4 +1,4 @@
-public struct RichTextTagAttribute // TypeDefIndex: 6801
+public struct RichTextTagAttribute // TypeDefIndex: 6805
 {
 	public int nameHashCode; 
 	public int valueHashCode; 

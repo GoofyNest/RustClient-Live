@@ -102,7 +102,7 @@ internal class WebConnection // TypeDefIndex: 3027
 	internal void set_UnsafeAuthenticatedConnectionSharing(bool value) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <SendRequest>b__41_0(object o) { }
+	private void <SendRequest>
 
 }
 

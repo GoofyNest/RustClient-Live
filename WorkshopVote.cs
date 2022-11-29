@@ -1,4 +1,4 @@
-internal enum WorkshopVote // TypeDefIndex: 5158
+internal enum WorkshopVote // TypeDefIndex: 5160
 {
 	public int value__; 
 	public const WorkshopVote Unvoted = 0;

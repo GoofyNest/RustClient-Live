@@ -1,4 +1,4 @@
-internal struct SetDisplayPreferenceOptionsInternal : ISettable<SetDisplayPreferenceOptions>, IDisposable // TypeDefIndex: 8362
+internal struct SetDisplayPreferenceOptionsInternal : ISettable<SetDisplayPreferenceOptions>, IDisposable // TypeDefIndex: 8371
 {
 	private int m_ApiVersion; 
 	private NotificationLocation m_NotificationLocation; 

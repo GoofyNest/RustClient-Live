@@ -1,4 +1,4 @@
-public class TriggerMovement : TriggerBase, IClientComponent // TypeDefIndex: 10963
+public class TriggerMovement : TriggerBase, IClientComponent // TypeDefIndex: 10975
 {
 	[TooltipAttribute] 
 	public Transform losEyes; 

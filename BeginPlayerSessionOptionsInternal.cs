@@ -1,4 +1,4 @@
-internal struct BeginPlayerSessionOptionsInternal : ISettable<BeginPlayerSessionOptions>, IDisposable // TypeDefIndex: 9033
+internal struct BeginPlayerSessionOptionsInternal : ISettable<BeginPlayerSessionOptions>, IDisposable // TypeDefIndex: 9042
 {
 	private int m_ApiVersion; 
 	private BeginPlayerSessionOptionsAccountIdInternal m_AccountId; 

@@ -1,4 +1,4 @@
-public struct CopyUnlockedAchievementByIndexOptions // TypeDefIndex: 9898
+public struct CopyUnlockedAchievementByIndexOptions // TypeDefIndex: 9907
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <UserId>k__BackingField; 

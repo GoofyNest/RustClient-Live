@@ -1,4 +1,4 @@
-public abstract class RestRgbService : IRgbService // TypeDefIndex: 7686
+public abstract class RestRgbService : IRgbService // TypeDefIndex: 7692
 {
 	private readonly SemaphoreSlim _sema; 
 	private readonly Stopwatch _heartbeatTimer; 
@@ -136,7 +136,7 @@ public abstract class RestRgbService : IRgbService // TypeDefIndex: 7686
 
 }
 
-private struct RestRgbService.<Start>d__31 : IAsyncStateMachine // TypeDefIndex: 7687
+private struct RestRgbService.<Start>d__31 : IAsyncStateMachine // TypeDefIndex: 7693
 {
 	public int <>1__state; 
 	public AsyncValueTaskMethodBuilder <>t__builder; 
@@ -152,7 +152,7 @@ private struct RestRgbService.<Start>d__31 : IAsyncStateMachine // TypeDefIndex:
 
 }
 
-private struct RestRgbService.<Stop>d__32 : IAsyncStateMachine // TypeDefIndex: 7688
+private struct RestRgbService.<Stop>d__32 : IAsyncStateMachine // TypeDefIndex: 7694
 {
 	public int <>1__state; 
 	public AsyncValueTaskMethodBuilder <>t__builder; 
@@ -168,7 +168,7 @@ private struct RestRgbService.<Stop>d__32 : IAsyncStateMachine // TypeDefIndex: 
 
 }
 
-private struct RestRgbService.<Update>d__33 : IAsyncStateMachine // TypeDefIndex: 7689
+private struct RestRgbService.<Update>d__33 : IAsyncStateMachine // TypeDefIndex: 7695
 {
 	public int <>1__state; 
 	public AsyncValueTaskMethodBuilder <>t__builder; 
@@ -183,7 +183,7 @@ private struct RestRgbService.<Update>d__33 : IAsyncStateMachine // TypeDefIndex
 
 }
 
-private struct RestRgbService.<SendHeartbeatAndWait>d__34 : IAsyncStateMachine // TypeDefIndex: 7690
+private struct RestRgbService.<SendHeartbeatAndWait>d__34 : IAsyncStateMachine // TypeDefIndex: 7696
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -199,7 +199,7 @@ private struct RestRgbService.<SendHeartbeatAndWait>d__34 : IAsyncStateMachine /
 
 }
 
-private struct RestRgbService.<StaticColorImpl>d__36 : IAsyncStateMachine // TypeDefIndex: 7691
+private struct RestRgbService.<StaticColorImpl>d__36 : IAsyncStateMachine // TypeDefIndex: 7697
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -215,7 +215,7 @@ private struct RestRgbService.<StaticColorImpl>d__36 : IAsyncStateMachine // Typ
 
 }
 
-private struct RestRgbService.<PulseColorImpl>d__38 : IAsyncStateMachine // TypeDefIndex: 7692
+private struct RestRgbService.<PulseColorImpl>d__38 : IAsyncStateMachine // TypeDefIndex: 7698
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -232,7 +232,7 @@ private struct RestRgbService.<PulseColorImpl>d__38 : IAsyncStateMachine // Type
 
 }
 
-private struct RestRgbService.<EventImpl>d__40 : IAsyncStateMachine // TypeDefIndex: 7693
+private struct RestRgbService.<EventImpl>d__40 : IAsyncStateMachine // TypeDefIndex: 7699
 {
 	public int <>1__state; 
 	public AsyncVoidMethodBuilder <>t__builder; 
@@ -248,7 +248,7 @@ private struct RestRgbService.<EventImpl>d__40 : IAsyncStateMachine // TypeDefIn
 
 }
 
-private struct RestRgbService.<SendPost>d__42<T> : IAsyncStateMachine // TypeDefIndex: 7694
+private struct RestRgbService.<SendPost>d__42<T> : IAsyncStateMachine // TypeDefIndex: 7700
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<HttpResponseMessage> <>t__builder; 

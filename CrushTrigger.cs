@@ -1,4 +1,4 @@
-public class CrushTrigger : TriggerHurt // TypeDefIndex: 11428
+public class CrushTrigger : TriggerHurt // TypeDefIndex: 11442
 {
 	public bool includeNPCs; 
 	public bool requireCentreBelowPosition; 

@@ -1,4 +1,4 @@
-public class DoorAnimEvents : MonoBehaviour, IClientComponent // TypeDefIndex: 11045
+public class DoorAnimEvents : MonoBehaviour, IClientComponent // TypeDefIndex: 11059
 {
 	public GameObjectRef openStart; 
 	public GameObjectRef openEnd; 

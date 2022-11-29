@@ -1,8 +1,8 @@
-public abstract class PhraseRecognizer // TypeDefIndex: 3596
+public abstract class PhraseRecognizer // TypeDefIndex: 3597
 {
 	protected IntPtr m_Recognizer; 
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private PhraseRecognizer.PhraseRecognizedDelegate OnPhraseRecognized; 
 
 
@@ -14,7 +14,7 @@ public abstract class PhraseRecognizer // TypeDefIndex: 3596
 
 }
 
-public sealed class PhraseRecognizer.PhraseRecognizedDelegate : MulticastDelegate // TypeDefIndex: 3597
+public sealed class PhraseRecognizer.PhraseRecognizedDelegate : MulticastDelegate // TypeDefIndex: 3598
 {
 
 	public void .ctor(object object, IntPtr method) { }

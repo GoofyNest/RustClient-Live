@@ -1,4 +1,4 @@
-public sealed class WaitUntil : CustomYieldInstruction // TypeDefIndex: 3544
+public sealed class WaitUntil : CustomYieldInstruction // TypeDefIndex: 3545
 {
 	private Func<bool> m_Predicate; 
 

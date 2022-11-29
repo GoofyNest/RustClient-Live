@@ -1,4 +1,4 @@
-public struct FrustumPlanes // TypeDefIndex: 3465
+public struct FrustumPlanes // TypeDefIndex: 3466
 {
 	public float left; 
 	public float right; 

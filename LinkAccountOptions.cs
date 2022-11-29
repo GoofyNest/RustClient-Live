@@ -1,4 +1,4 @@
-public struct LinkAccountOptions // TypeDefIndex: 9582
+public struct LinkAccountOptions // TypeDefIndex: 9591
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 
@@ -23,7 +23,7 @@ public struct LinkAccountOptions // TypeDefIndex: 9582
 
 }
 
-public struct LinkAccountOptions // TypeDefIndex: 9658
+public struct LinkAccountOptions // TypeDefIndex: 9667
 {
 	[CompilerGeneratedAttribute] 
 	private LinkAccountFlags <LinkAccountFlags>k__BackingField; 

@@ -1,4 +1,4 @@
-public enum CapturePixelFormat // TypeDefIndex: 3626
+public enum CapturePixelFormat // TypeDefIndex: 3627
 {
 	public int value__; 
 	public const CapturePixelFormat BGRA32 = 0;

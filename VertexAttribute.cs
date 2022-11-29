@@ -1,4 +1,4 @@
-public enum VertexAttribute // TypeDefIndex: 3809
+public enum VertexAttribute // TypeDefIndex: 3810
 {
 	public int value__; 
 	public const VertexAttribute Position = 0;

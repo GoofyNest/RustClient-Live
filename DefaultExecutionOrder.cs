@@ -1,4 +1,4 @@
-public class DefaultExecutionOrder : Attribute // TypeDefIndex: 3504
+public class DefaultExecutionOrder : Attribute // TypeDefIndex: 3505
 {
 	private int m_Order; 
 

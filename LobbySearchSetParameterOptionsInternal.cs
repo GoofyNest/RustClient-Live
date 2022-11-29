@@ -1,4 +1,4 @@
-internal struct LobbySearchSetParameterOptionsInternal : ISettable<LobbySearchSetParameterOptions>, IDisposable // TypeDefIndex: 9192
+internal struct LobbySearchSetParameterOptionsInternal : ISettable<LobbySearchSetParameterOptions>, IDisposable // TypeDefIndex: 9201
 {
 	private int m_ApiVersion; 
 	private IntPtr m_Parameter; 

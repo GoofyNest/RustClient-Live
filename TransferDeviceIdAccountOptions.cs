@@ -1,4 +1,4 @@
-public struct TransferDeviceIdAccountOptions // TypeDefIndex: 9624
+public struct TransferDeviceIdAccountOptions // TypeDefIndex: 9633
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <PrimaryLocalUserId>k__BackingField; 

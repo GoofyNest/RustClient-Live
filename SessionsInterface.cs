@@ -1,4 +1,4 @@
-public sealed class SessionsInterface : Handle // TypeDefIndex: 8595
+public sealed class SessionsInterface : Handle // TypeDefIndex: 8604
 {
 	public const int AddnotifyjoinsessionacceptedApiLatest = 1;
 	public const int AddnotifysessioninviteacceptedApiLatest = 1;

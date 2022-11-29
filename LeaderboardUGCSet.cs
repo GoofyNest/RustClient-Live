@@ -1,4 +1,4 @@
-internal struct LeaderboardUGCSet_t : ICallbackData // TypeDefIndex: 5400
+internal struct LeaderboardUGCSet_t : ICallbackData // TypeDefIndex: 5402
 {
 	internal Result Result; 
 	internal ulong SteamLeaderboard; 

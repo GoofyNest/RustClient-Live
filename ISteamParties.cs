@@ -1,4 +1,4 @@
-internal class ISteamParties : SteamInterface // TypeDefIndex: 5130
+internal class ISteamParties : SteamInterface // TypeDefIndex: 5132
 {
 
 	internal void .ctor(bool IsGameServer) { }

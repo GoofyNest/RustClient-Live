@@ -1,4 +1,4 @@
-public class TexasHoldEmController : CardGameController // TypeDefIndex: 13767
+public class TexasHoldEmController : CardGameController // TypeDefIndex: 13815
 {
 	public List<PlayingCard> communityCards; 
 	public const int SMALL_BLIND = 5;
@@ -10,28 +10,27 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13767
 	private ulong <LastActionTarget>k__BackingField; 
 	[CompilerGeneratedAttribute] 
 	private int <LastActionValue>k__BackingField; 
-	public const int RAISE_INCREMENTS = 5;
 	[CompilerGeneratedAttribute] 
 	private int <BiggestRaiseThisTurn>k__BackingField; 
 	private int dealerIndex; 
-	private int activePlayerIndex; 
 
+	public override int MinPlayers { get; }
 	public override int MinBuyIn { get; }
 	public override int MaxBuyIn { get; }
-	public override int MinPlayers { get; }
+	public override int MinToPlay { get; }
 	public TexasHoldEmController.PokerInputOption LastAction { get; set; }
 	public ulong LastActionTarget { get; set; }
 	public int LastActionValue { get; set; }
 	public int BiggestRaiseThisTurn { get; set; }
 
 
+	public override int get_MinPlayers() { }
+
 	public override int get_MinBuyIn() { }
 
 	public override int get_MaxBuyIn() { }
 
-	public override int get_MinPlayers() { }
-
-	public void .ctor(CardTable owner) { }
+	public override int get_MinToPlay() { }
 
 	[CompilerGeneratedAttribute] 
 	public TexasHoldEmController.PokerInputOption get_LastAction() { }
@@ -57,13 +56,9 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13767
 	[CompilerGeneratedAttribute] 
 	private void set_BiggestRaiseThisTurn(int value) { }
 
-	public TexasHoldEmController.Playability GetPlayabilityStatus(CardPlayerData cpd) { }
+	public void .ctor(BaseCardGameEntity owner) { }
 
 	public int GetCurrentBet() { }
-
-	public override bool IsAllowedToPlay(CardPlayerData cpd) { }
-
-	public bool TryGetActivePlayer(out CardPlayerData activePlayer) { }
 
 	public bool TryGetDealer(out CardPlayerData dealer) { }
 
@@ -71,9 +66,7 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13767
 
 	public bool TryGetBigBlind(out CardPlayerData bigBlind) { }
 
-	public int GetFirstPlayerRelIndex(bool startOfRound) { }
-
-	private bool ToCardPlayerData(int relIndex, bool includeFolded, out CardPlayerData result) { }
+	protected override int GetFirstPlayerRelIndex(bool startOfRound) { }
 
 	public static ushort EvaluatePokerHand(List<PlayingCard> cards) { }
 
@@ -81,19 +74,19 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13767
 
 	public override List<PlayingCard> GetTableCards() { }
 
-	public override void Load(CardTable syncData) { }
+	public void InputsToList(int availableInputs, List<TexasHoldEmController.PokerInputOption> result) { }
 
-	public TexasHoldEmController.Playability GetLocalPlayerPlayabilityStatus() { }
+	protected override CardPlayerData GetNewCardPlayerData(int mountIndex) { }
 
-	protected override void SubGetAvailableInputs(ref List<CardTableUI.KeycodeWithAction> curAvailableInputs) { }
+	public override void Load(CardGame syncData) { }
 
-	private void OnInputFromUI(TexasHoldEmController.PokerInputOption input, int value = 0) { }
+	protected override void SubGetAvailableInputs(ref List<CardGameUI.KeycodeWithAction> curAvailableInputs) { }
 
 	public int GetCostOfInput(TexasHoldEmController.PokerInputOption option, CardPlayerData data) { }
 
-	public bool IsAPrimaryWinner(ulong playerId) { }
-
 	public bool IsAWinner(ulong playerId) { }
+
+	public bool IsAPrimaryWinner(ulong playerId) { }
 
 	public bool HasPrimaryWinners() { }
 
@@ -102,29 +95,29 @@ public class TexasHoldEmController : CardGameController // TypeDefIndex: 13767
 	public bool HasSecondaryWinners() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_3() { }
+	private void <SubGetAvailableInputs>
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_0() { }
+	private void <SubGetAvailableInputs>
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_1() { }
+	private void <SubGetAvailableInputs>
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_4() { }
+	private void <SubGetAvailableInputs>
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_5() { }
+	private void <SubGetAvailableInputs>
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_6() { }
+	private void <SubGetAvailableInputs>
 
 	[CompilerGeneratedAttribute] 
-	private void <SubGetAvailableInputs>b__46_2() { }
+	private void <SubGetAvailableInputs>
 
 }
 
-public enum TexasHoldEmController.PokerInputOption // TypeDefIndex: 13768
+public enum TexasHoldEmController.PokerInputOption // TypeDefIndex: 13816
 {
 	public int value__; 
 	public const TexasHoldEmController.PokerInputOption None = 0;
@@ -138,15 +131,12 @@ public enum TexasHoldEmController.PokerInputOption // TypeDefIndex: 13768
 
 }
 
-public enum TexasHoldEmController.Playability // TypeDefIndex: 13769
+public enum TexasHoldEmController.PokerRoundResult // TypeDefIndex: 13817
 {
 	public int value__; 
-	public const TexasHoldEmController.Playability OK = 0;
-	public const TexasHoldEmController.Playability NoPlayer = 1;
-	public const TexasHoldEmController.Playability NotEnoughBuyIn = 2;
-	public const TexasHoldEmController.Playability TooMuchBuyIn = 3;
-	public const TexasHoldEmController.Playability RanOutOfScrap = 4;
-	public const TexasHoldEmController.Playability Idle = 5;
+	public const TexasHoldEmController.PokerRoundResult Loss = 0;
+	public const TexasHoldEmController.PokerRoundResult PrimaryWinner = 1;
+	public const TexasHoldEmController.PokerRoundResult SecondaryWinner = 2;
 
 }
 

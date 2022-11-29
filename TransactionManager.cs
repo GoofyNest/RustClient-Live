@@ -1,4 +1,4 @@
-public static class TransactionManager // TypeDefIndex: 3990
+public static class TransactionManager // TypeDefIndex: 3992
 {
 	private static TimeSpan defaultTimeout; 
 	private static TimeSpan maxTimeout; 

@@ -1,4 +1,4 @@
-public enum CursorMode // TypeDefIndex: 3452
+public enum CursorMode // TypeDefIndex: 3453
 {
 	public int value__; 
 	public const CursorMode Auto = 0;

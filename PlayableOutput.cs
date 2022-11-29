@@ -1,4 +1,4 @@
-public struct PlayableOutput : IEquatable<PlayableOutput> // TypeDefIndex: 3874
+public struct PlayableOutput : IEquatable<PlayableOutput> // TypeDefIndex: 3875
 {
 	private PlayableOutputHandle m_Handle; 
 	private static readonly PlayableOutput m_NullPlayableOutput; 

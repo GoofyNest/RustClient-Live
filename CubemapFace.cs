@@ -1,4 +1,4 @@
-public enum CubemapFace // TypeDefIndex: 3427
+public enum CubemapFace // TypeDefIndex: 3428
 {
 	public int value__; 
 	public const CubemapFace Unknown = -1;

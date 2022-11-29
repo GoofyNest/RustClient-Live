@@ -1,4 +1,4 @@
-internal class CompositeLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6663
+internal class CompositeLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 6667
 {
 	private readonly List<LoadAssetsResult> _loads; 
 
@@ -23,7 +23,7 @@ internal class CompositeLoadAssetsResult : LoadAssetsResult // TypeDefIndex: 666
 
 }
 
-private sealed class CompositeLoadAssetsResult.<>c // TypeDefIndex: 6664
+private sealed class CompositeLoadAssetsResult.<>c // TypeDefIndex: 6668
 {
 	public static readonly CompositeLoadAssetsResult.<>c <>9; 
 	public static Func<LoadAssetsResult, int> <>9__3_0; 
@@ -35,11 +35,11 @@ private sealed class CompositeLoadAssetsResult.<>c // TypeDefIndex: 6664
 
 	public void .ctor() { }
 
-	internal int <get_TotalCount>b__3_0(LoadAssetsResult l) { }
+	internal int <get_TotalCount>
 
-	internal int <get_CompletedCount>b__5_0(LoadAssetsResult l) { }
+	internal int <get_CompletedCount>
 
-	internal bool <get_keepWaiting>b__8_0(LoadAssetsResult l) { }
+	internal bool <get_keepWaiting>
 
 }
 

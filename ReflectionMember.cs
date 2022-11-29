@@ -1,4 +1,4 @@
-internal class ReflectionMember // TypeDefIndex: 5936
+internal class ReflectionMember // TypeDefIndex: 5938
 {
 	[CompilerGeneratedAttribute] 
 	private Type <MemberType>k__BackingField; 

@@ -1,4 +1,4 @@
-internal sealed class BigIntegerStorage : DataStorage // TypeDefIndex: 4368
+internal sealed class BigIntegerStorage : DataStorage // TypeDefIndex: 4370
 {
 	private BigInteger[] _values; 
 

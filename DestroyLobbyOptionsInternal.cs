@@ -1,4 +1,4 @@
-internal struct DestroyLobbyOptionsInternal : ISettable<DestroyLobbyOptions>, IDisposable // TypeDefIndex: 9089
+internal struct DestroyLobbyOptionsInternal : ISettable<DestroyLobbyOptions>, IDisposable // TypeDefIndex: 9098
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 

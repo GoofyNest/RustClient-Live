@@ -1,4 +1,4 @@
-public static class Leaderboard // TypeDefIndex: 6201
+public static class Leaderboard // TypeDefIndex: 6203
 {
 
 	public static void Insert(string board, float score, bool OnlyIfLower = False, bool OnlyIfHigher = False, string extra = "", Action<string> result) { }
@@ -9,25 +9,25 @@ public static class Leaderboard // TypeDefIndex: 6201
 
 }
 
-private sealed class Leaderboard.<>c__DisplayClass1_0 // TypeDefIndex: 6202
+private sealed class Leaderboard.<>c__DisplayClass1_0 // TypeDefIndex: 6204
 {
 	public Action<Rank> result; 
 
 
 	public void .ctor() { }
 
-	internal void <GetRank>b__0(string txt) { }
+	internal void <GetRank>
 
 }
 
-private sealed class Leaderboard.<>c__DisplayClass2_0 // TypeDefIndex: 6203
+private sealed class Leaderboard.<>c__DisplayClass2_0 // TypeDefIndex: 6205
 {
 	public Action<Entry[]> result; 
 
 
 	public void .ctor() { }
 
-	internal void <GetPage>b__0(string txt) { }
+	internal void <GetPage>
 
 }
 

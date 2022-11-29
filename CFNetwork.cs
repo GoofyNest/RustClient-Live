@@ -101,7 +101,7 @@ private sealed class CFNetwork.<>c__DisplayClass13_0 // TypeDefIndex: 2529
 
 	public void .ctor() { }
 
-	internal void <ExecuteProxyAutoConfigurationURL>b__0(IntPtr client, IntPtr proxyList, IntPtr error) { }
+	internal void <ExecuteProxyAutoConfigurationURL>
 
 }
 

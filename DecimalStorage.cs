@@ -1,4 +1,4 @@
-internal sealed class DecimalStorage : DataStorage // TypeDefIndex: 4404
+internal sealed class DecimalStorage : DataStorage // TypeDefIndex: 4406
 {
 	private static readonly Decimal s_defaultValue; 
 	private Decimal[] _values; 

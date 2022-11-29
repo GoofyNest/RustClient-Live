@@ -1,4 +1,4 @@
-public class VisualElement : Focusable, ITransform, IResolvedStyle // TypeDefIndex: 4616
+public class VisualElement : Focusable, ITransform, IResolvedStyle // TypeDefIndex: 4618
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -174,7 +174,7 @@ public class VisualElement : Focusable, ITransform, IResolvedStyle // TypeDefInd
 
 }
 
-public struct VisualElement.Hierarchy // TypeDefIndex: 4617
+public struct VisualElement.Hierarchy // TypeDefIndex: 4619
 {
 	private readonly VisualElement m_Owner; 
 

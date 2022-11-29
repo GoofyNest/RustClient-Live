@@ -1,4 +1,4 @@
-internal enum VersionChangeType // TypeDefIndex: 4600
+internal enum VersionChangeType // TypeDefIndex: 4602
 {
 	public int value__; 
 	public const VersionChangeType Bindings = 1;

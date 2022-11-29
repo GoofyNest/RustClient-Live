@@ -1,4 +1,4 @@
-public static class ImageProcessing // TypeDefIndex: 12011
+public static class ImageProcessing // TypeDefIndex: 12031
 {
 	private static byte[] signaturePNG; 
 	private static byte[] signatureIHDR; 
@@ -30,7 +30,7 @@ public static class ImageProcessing // TypeDefIndex: 12011
 
 }
 
-private sealed class ImageProcessing.<>c__DisplayClass1_0 // TypeDefIndex: 12012
+private sealed class ImageProcessing.<>c__DisplayClass1_0 // TypeDefIndex: 12032
 {
 	public int len1; 
 	public int len2; 
@@ -42,11 +42,11 @@ private sealed class ImageProcessing.<>c__DisplayClass1_0 // TypeDefIndex: 12012
 
 	public void .ctor() { }
 
-	internal void <GaussianBlur2D>b__0(int x) { }
+	internal void <GaussianBlur2D>
 
 }
 
-private sealed class ImageProcessing.<>c__DisplayClass2_0 // TypeDefIndex: 12013
+private sealed class ImageProcessing.<>c__DisplayClass2_0 // TypeDefIndex: 12033
 {
 	public int len1; 
 	public int len2; 
@@ -57,11 +57,11 @@ private sealed class ImageProcessing.<>c__DisplayClass2_0 // TypeDefIndex: 12013
 
 	public void .ctor() { }
 
-	internal void <Average2D>b__0(int x) { }
+	internal void <Average2D>
 
 }
 
-private sealed class ImageProcessing.<>c__DisplayClass3_0 // TypeDefIndex: 12014
+private sealed class ImageProcessing.<>c__DisplayClass3_0 // TypeDefIndex: 12034
 {
 	public int len1; 
 	public int len2; 
@@ -73,11 +73,11 @@ private sealed class ImageProcessing.<>c__DisplayClass3_0 // TypeDefIndex: 12014
 
 	public void .ctor() { }
 
-	internal void <Average2D>b__0(int x) { }
+	internal void <Average2D>
 
 }
 
-private sealed class ImageProcessing.<>c__DisplayClass4_0 // TypeDefIndex: 12015
+private sealed class ImageProcessing.<>c__DisplayClass4_0 // TypeDefIndex: 12035
 {
 	public int srclen1; 
 	public int srclen2; 
@@ -88,11 +88,11 @@ private sealed class ImageProcessing.<>c__DisplayClass4_0 // TypeDefIndex: 12015
 
 	public void .ctor() { }
 
-	internal void <Upsample2D>b__0(int x) { }
+	internal void <Upsample2D>
 
 }
 
-private sealed class ImageProcessing.<>c__DisplayClass5_0 // TypeDefIndex: 12016
+private sealed class ImageProcessing.<>c__DisplayClass5_0 // TypeDefIndex: 12036
 {
 	public int srclen1; 
 	public int srclen2; 
@@ -105,11 +105,11 @@ private sealed class ImageProcessing.<>c__DisplayClass5_0 // TypeDefIndex: 12016
 
 	public void .ctor() { }
 
-	internal void <Upsample2D>b__0(int x) { }
+	internal void <Upsample2D>
 
 }
 
-private sealed class ImageProcessing.<>c__DisplayClass6_0 // TypeDefIndex: 12017
+private sealed class ImageProcessing.<>c__DisplayClass6_0 // TypeDefIndex: 12037
 {
 	public int radius; 
 	public int[] src; 
@@ -121,9 +121,9 @@ private sealed class ImageProcessing.<>c__DisplayClass6_0 // TypeDefIndex: 12017
 
 	public void .ctor() { }
 
-	internal void <Dilate2D>b__0(int x) { }
+	internal void <Dilate2D>
 
-	internal void <Dilate2D>b__1(int y) { }
+	internal void <Dilate2D>
 
 }
 

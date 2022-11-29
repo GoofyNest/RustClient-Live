@@ -1,4 +1,4 @@
-internal struct AddUGCDependencyResult_t : ICallbackData // TypeDefIndex: 5445
+internal struct AddUGCDependencyResult_t : ICallbackData // TypeDefIndex: 5447
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 

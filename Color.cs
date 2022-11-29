@@ -1,4 +1,4 @@
-public struct Color : IEquatable<Color> // TypeDefIndex: 3460
+public struct Color : IEquatable<Color> // TypeDefIndex: 3461
 {
 	public float r; 
 	public float g; 
@@ -95,7 +95,7 @@ public struct Color : IEquatable<Color> // TypeDefIndex: 3460
 
 }
 
-public struct Color // TypeDefIndex: 5556
+public struct Color // TypeDefIndex: 5558
 {
 	public byte r; 
 	public byte g; 

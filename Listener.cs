@@ -1,4 +1,4 @@
-public class Listener // TypeDefIndex: 7346
+public class Listener // TypeDefIndex: 7350
 {
 
 public class Listener
@@ -26,7 +26,7 @@ public class Listener
 
 }
 
-private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7347
+private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7351
 {
 	public string requiredPath; 
 	public Listener <>4__this; 
@@ -34,29 +34,29 @@ private sealed class Listener.<>c__DisplayClass10_0 // TypeDefIndex: 7347
 
 	public void .ctor() { }
 
-	internal void <Start>b__0(IWebSocketConnection socket) { }
+	internal void <Start>
 
 }
 
-private sealed class Listener.<>c__DisplayClass10_1 // TypeDefIndex: 7348
+private sealed class Listener.<>c__DisplayClass10_1 // TypeDefIndex: 7352
 {
 	public int id; 
 	public IWebSocketConnection socket; 
 	public IPAddress ipAddress; 
-	public Listener.<>c__DisplayClass10_0 CS$<>8__locals1; 
+	public Listener.<>c
 
 
 	public void .ctor() { }
 
-	internal void <Start>b__1() { }
+	internal void <Start>
 
-	internal void <Start>b__2() { }
+	internal void <Start>
 
-	internal void <Start>b__3(string s) { }
+	internal void <Start>
 
 }
 
-private sealed class Listener.<>c // TypeDefIndex: 7349
+private sealed class Listener.<>c // TypeDefIndex: 7353
 {
 	public static readonly Listener.<>c <>9; 
 	public static Action<Exception> <>9__10_4; 
@@ -66,7 +66,7 @@ private sealed class Listener.<>c // TypeDefIndex: 7349
 
 	public void .ctor() { }
 
-	internal void <Start>b__10_4(Exception e) { }
+	internal void <Start>
 
 }
 

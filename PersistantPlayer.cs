@@ -1,4 +1,4 @@
-public class PersistantPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6461
+public class PersistantPlayer : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6465
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

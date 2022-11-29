@@ -1,4 +1,4 @@
-internal struct AvailableBeaconLocationsUpdated_t : ICallbackData // TypeDefIndex: 5363
+internal struct AvailableBeaconLocationsUpdated_t : ICallbackData // TypeDefIndex: 5365
 {
 	public static int _datasize; 
 

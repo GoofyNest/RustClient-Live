@@ -1,4 +1,4 @@
-public class HttpClientHandler : HttpMessageHandler // TypeDefIndex: 5745
+public class HttpClientHandler : HttpMessageHandler // TypeDefIndex: 5747
 {
 	private static long groupCounter; 
 	private bool allowAutoRedirect; 
@@ -39,7 +39,7 @@ public class HttpClientHandler : HttpMessageHandler // TypeDefIndex: 5745
 
 }
 
-private sealed class HttpClientHandler.<>c // TypeDefIndex: 5746
+private sealed class HttpClientHandler.<>c // TypeDefIndex: 5748
 {
 	public static readonly HttpClientHandler.<>c <>9; 
 	public static Func<string, bool> <>9__61_0; 
@@ -50,13 +50,13 @@ private sealed class HttpClientHandler.<>c // TypeDefIndex: 5746
 
 	public void .ctor() { }
 
-	internal bool <CreateWebRequest>b__61_0(string l) { }
+	internal bool <CreateWebRequest>
 
-	internal void <SendAsync>b__64_0(object l) { }
+	internal void <SendAsync>
 
 }
 
-private struct HttpClientHandler.<SendAsync>d__64 : IAsyncStateMachine // TypeDefIndex: 5747
+private struct HttpClientHandler.<SendAsync>d__64 : IAsyncStateMachine // TypeDefIndex: 5749
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<HttpResponseMessage> <>t__builder; 

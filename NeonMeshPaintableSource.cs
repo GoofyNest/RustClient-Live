@@ -1,4 +1,4 @@
-public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 10545
+public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 10556
 {
 	public NeonSign neonSign; 
 	public float editorEmissionScale; 
@@ -16,11 +16,11 @@ public class NeonMeshPaintableSource : MeshPaintableSource // TypeDefIndex: 1054
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private Color <UpdateFrom>g__GetColorForRegion|8_0(int x, int y, int regionWidth, int regionHeight, ref NeonMeshPaintableSource.<>c__DisplayClass8_0 ) { }
+	private Color <UpdateFrom>g__GetColorForRegion|8_0(int x, int y, int regionWidth, int regionHeight, ref NeonMeshPaintableSource.<>c
 
 }
 
-private struct NeonMeshPaintableSource.<>c__DisplayClass8_0 // TypeDefIndex: 10546
+private struct NeonMeshPaintableSource.<>c__DisplayClass8_0 // TypeDefIndex: 10557
 {
 	public int width; 
 	public Color32[] pixels; 

@@ -1,4 +1,4 @@
-public struct SessionSearchCopySearchResultByIndexOptions // TypeDefIndex: 8575
+public struct SessionSearchCopySearchResultByIndexOptions // TypeDefIndex: 8584
 {
 	[CompilerGeneratedAttribute] 
 	private uint <SessionIndex>k__BackingField; 

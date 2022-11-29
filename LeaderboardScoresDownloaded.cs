@@ -1,4 +1,4 @@
-internal struct LeaderboardScoresDownloaded_t : ICallbackData // TypeDefIndex: 5394
+internal struct LeaderboardScoresDownloaded_t : ICallbackData // TypeDefIndex: 5396
 {
 	internal ulong SteamLeaderboard; 
 	internal ulong SteamLeaderboardEntries; 

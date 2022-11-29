@@ -1,4 +1,4 @@
-public struct JoinRoomOptions // TypeDefIndex: 8763
+public struct JoinRoomOptions // TypeDefIndex: 8772
 {
 	[CompilerGeneratedAttribute] 
 	private ProductUserId <LocalUserId>k__BackingField; 

@@ -1,4 +1,4 @@
-public enum TextAnchor // TypeDefIndex: 3956
+public enum TextAnchor // TypeDefIndex: 3958
 {
 	public int value__; 
 	public const TextAnchor UpperLeft = 0;

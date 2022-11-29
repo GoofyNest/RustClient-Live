@@ -1,4 +1,4 @@
-internal struct NewUrlLaunchParameters_t : ICallbackData // TypeDefIndex: 5404
+internal struct NewUrlLaunchParameters_t : ICallbackData // TypeDefIndex: 5406
 {
 	public static int _datasize; 
 

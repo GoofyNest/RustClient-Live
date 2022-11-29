@@ -1,4 +1,4 @@
-public class DiscoFloorColourLookups : PrefabAttribute, IClientComponent // TypeDefIndex: 11160
+public class DiscoFloorColourLookups : PrefabAttribute, IClientComponent // TypeDefIndex: 11174
 {
 	public float[] InOutLookup; 
 	public float[] RadialLookup; 

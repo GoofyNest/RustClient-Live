@@ -1,4 +1,4 @@
-internal class TimedBlock : IComparable<TimedBlock> // TypeDefIndex: 5639
+internal class TimedBlock : IComparable<TimedBlock> // TypeDefIndex: 5641
 {
 	public readonly DateTime deadline; 
 	public readonly Action block; 

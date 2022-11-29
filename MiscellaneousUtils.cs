@@ -1,4 +1,4 @@
-internal static class MiscellaneousUtils // TypeDefIndex: 5969
+internal static class MiscellaneousUtils // TypeDefIndex: 5971
 {
 
 	public static bool ValueEquals(object objA, object objB) { }

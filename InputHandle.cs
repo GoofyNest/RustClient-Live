@@ -1,4 +1,4 @@
-internal struct InputHandle_t : IEquatable<InputHandle_t>, IComparable<InputHandle_t> // TypeDefIndex: 5535
+internal struct InputHandle_t : IEquatable<InputHandle_t>, IComparable<InputHandle_t> // TypeDefIndex: 5537
 {
 	public ulong Value; 
 

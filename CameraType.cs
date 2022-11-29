@@ -1,4 +1,4 @@
-public enum CameraType // TypeDefIndex: 3412
+public enum CameraType // TypeDefIndex: 3413
 {
 	public int value__; 
 	public const CameraType Game = 1;

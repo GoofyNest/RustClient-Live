@@ -1,4 +1,4 @@
-public class ScriptableObject : Object // TypeDefIndex: 3525
+public class ScriptableObject : Object // TypeDefIndex: 3526
 {
 
 	public void .ctor() { }

@@ -1,4 +1,4 @@
-public enum ComparisonOp // TypeDefIndex: 8273
+public enum ComparisonOp // TypeDefIndex: 8282
 {
 	public int value__; 
 	public const ComparisonOp Equal = 0;

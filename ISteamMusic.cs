@@ -1,4 +1,4 @@
-internal class ISteamMusic : SteamInterface // TypeDefIndex: 5125
+internal class ISteamMusic : SteamInterface // TypeDefIndex: 5127
 {
 
 	internal void .ctor(bool IsGameServer) { }

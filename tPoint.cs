@@ -1,4 +1,4 @@
-public class tPoint // TypeDefIndex: 7292
+public class tPoint // TypeDefIndex: 7296
 {
 	public int x; 
 	public int z; 

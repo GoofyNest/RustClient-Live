@@ -1,4 +1,4 @@
-public sealed class VFXEventAttribute // TypeDefIndex: 4760
+public sealed class VFXEventAttribute // TypeDefIndex: 4762
 {
 
 [NativeTypeAttribute] 

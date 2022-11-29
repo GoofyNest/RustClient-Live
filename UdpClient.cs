@@ -45,10 +45,10 @@ public class UdpClient : IDisposable // TypeDefIndex: 3060
 	private void createClientSocket() { }
 
 	[CompilerGeneratedAttribute] 
-	private IAsyncResult <ReceiveAsync>b__64_0(AsyncCallback callback, object state) { }
+	private IAsyncResult <ReceiveAsync>
 
 	[CompilerGeneratedAttribute] 
-	private UdpReceiveResult <ReceiveAsync>b__64_1(IAsyncResult ar) { }
+	private UdpReceiveResult <ReceiveAsync>
 
 }
 

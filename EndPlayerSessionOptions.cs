@@ -1,4 +1,4 @@
-public struct EndPlayerSessionOptions // TypeDefIndex: 9036
+public struct EndPlayerSessionOptions // TypeDefIndex: 9045
 {
 	[CompilerGeneratedAttribute] 
 	private EndPlayerSessionOptionsAccountId <AccountId>k__BackingField; 

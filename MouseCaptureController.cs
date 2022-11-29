@@ -1,4 +1,4 @@
-public static class MouseCaptureController // TypeDefIndex: 4597
+public static class MouseCaptureController // TypeDefIndex: 4599
 {
 	private static bool m_IsMouseCapturedWarningEmitted; 
 	private static bool m_ReleaseMouseWarningEmitted; 

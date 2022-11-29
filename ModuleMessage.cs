@@ -1,4 +1,4 @@
-public class ModuleMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6496
+public class ModuleMessage : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6500
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

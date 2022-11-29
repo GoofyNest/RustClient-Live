@@ -67,7 +67,7 @@ private sealed class OSSpecificSynchronizationContext.<>c // TypeDefIndex: 798
 
 	public void .ctor() { }
 
-	internal OSSpecificSynchronizationContext <Get>b__3_0(object _osContext) { }
+	internal OSSpecificSynchronizationContext <Get>
 
 }
 

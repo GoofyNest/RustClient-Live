@@ -1,4 +1,4 @@
-public static class DefaultControls // TypeDefIndex: 4921
+public static class DefaultControls // TypeDefIndex: 4923
 {
 	private static DefaultControls.IFactoryControls m_CurrentFactory; 
 	private const float kWidth = 160;
@@ -54,7 +54,7 @@ public static class DefaultControls // TypeDefIndex: 4921
 
 }
 
-private class DefaultControls.DefaultRuntimeFactory : DefaultControls.IFactoryControls // TypeDefIndex: 4923
+private class DefaultControls.DefaultRuntimeFactory : DefaultControls.IFactoryControls // TypeDefIndex: 4925
 {
 	public static DefaultControls.IFactoryControls Default; 
 
@@ -67,7 +67,7 @@ private class DefaultControls.DefaultRuntimeFactory : DefaultControls.IFactoryCo
 
 }
 
-public struct DefaultControls.Resources // TypeDefIndex: 4924
+public struct DefaultControls.Resources // TypeDefIndex: 4926
 {
 	public Sprite standard; 
 	public Sprite background; 

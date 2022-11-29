@@ -1,4 +1,4 @@
-public class PropRendererDebug : MonoBehaviour // TypeDefIndex: 6631
+public class PropRendererDebug : MonoBehaviour // TypeDefIndex: 6635
 {
 
 	public void Update() { }

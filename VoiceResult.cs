@@ -1,4 +1,4 @@
-internal enum VoiceResult // TypeDefIndex: 5140
+internal enum VoiceResult // TypeDefIndex: 5142
 {
 	public int value__; 
 	public const VoiceResult OK = 0;

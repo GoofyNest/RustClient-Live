@@ -1,4 +1,4 @@
-public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 3479
+public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 3480
 {
 	public readonly string displayName; 
 
@@ -7,7 +7,7 @@ public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 3479
 
 }
 
-public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 13044
+public class InspectorNameAttribute : PropertyAttribute // TypeDefIndex: 13072
 {
 	public string name; 
 

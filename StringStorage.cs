@@ -1,4 +1,4 @@
-internal sealed class StringStorage : DataStorage // TypeDefIndex: 4434
+internal sealed class StringStorage : DataStorage // TypeDefIndex: 4436
 {
 	private string[] _values; 
 

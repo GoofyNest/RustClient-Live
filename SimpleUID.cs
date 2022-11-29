@@ -1,4 +1,4 @@
-public class SimpleUID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6355
+public class SimpleUID : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6357
 {
 	public bool ShouldPool; 
 	private bool _disposed; 

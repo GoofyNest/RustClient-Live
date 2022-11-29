@@ -1,4 +1,4 @@
-public abstract class Focusable : CallbackEventHandler // TypeDefIndex: 4589
+public abstract class Focusable : CallbackEventHandler // TypeDefIndex: 4591
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 

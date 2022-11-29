@@ -1,4 +1,4 @@
-internal struct PSNGameBootInviteResult_t : ICallbackData // TypeDefIndex: 5349
+internal struct PSNGameBootInviteResult_t : ICallbackData // TypeDefIndex: 5351
 {
 	internal bool GameBootInviteExists; 
 	internal ulong SteamIDLobby; 

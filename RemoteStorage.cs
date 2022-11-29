@@ -1,4 +1,4 @@
-internal enum RemoteStoragePublishedFileVisibility // TypeDefIndex: 5156
+internal enum RemoteStoragePublishedFileVisibility // TypeDefIndex: 5158
 {
 	public int value__; 
 	public const RemoteStoragePublishedFileVisibility Public = 0;
@@ -8,7 +8,7 @@ internal enum RemoteStoragePublishedFileVisibility // TypeDefIndex: 5156
 
 }
 
-internal struct RemoteStorageFileShareResult_t : ICallbackData // TypeDefIndex: 5365
+internal struct RemoteStorageFileShareResult_t : ICallbackData // TypeDefIndex: 5367
 {
 	internal Result Result; 
 	internal ulong File; 
@@ -27,7 +27,7 @@ internal struct RemoteStorageFileShareResult_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct RemoteStoragePublishFileResult_t : ICallbackData // TypeDefIndex: 5366
+internal struct RemoteStoragePublishFileResult_t : ICallbackData // TypeDefIndex: 5368
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -46,7 +46,7 @@ internal struct RemoteStoragePublishFileResult_t : ICallbackData // TypeDefIndex
 
 }
 
-internal struct RemoteStorageDeletePublishedFileResult_t : ICallbackData // TypeDefIndex: 5367
+internal struct RemoteStorageDeletePublishedFileResult_t : ICallbackData // TypeDefIndex: 5369
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -64,7 +64,7 @@ internal struct RemoteStorageDeletePublishedFileResult_t : ICallbackData // Type
 
 }
 
-internal struct RemoteStorageEnumerateUserPublishedFilesResult_t : ICallbackData // TypeDefIndex: 5368
+internal struct RemoteStorageEnumerateUserPublishedFilesResult_t : ICallbackData // TypeDefIndex: 5370
 {
 	internal Result Result; 
 	internal int ResultsReturned; 
@@ -84,7 +84,7 @@ internal struct RemoteStorageEnumerateUserPublishedFilesResult_t : ICallbackData
 
 }
 
-internal struct RemoteStorageSubscribePublishedFileResult_t : ICallbackData // TypeDefIndex: 5369
+internal struct RemoteStorageSubscribePublishedFileResult_t : ICallbackData // TypeDefIndex: 5371
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -102,7 +102,7 @@ internal struct RemoteStorageSubscribePublishedFileResult_t : ICallbackData // T
 
 }
 
-internal struct RemoteStorageEnumerateUserSubscribedFilesResult_t : ICallbackData // TypeDefIndex: 5370
+internal struct RemoteStorageEnumerateUserSubscribedFilesResult_t : ICallbackData // TypeDefIndex: 5372
 {
 	internal Result Result; 
 	internal int ResultsReturned; 
@@ -123,7 +123,7 @@ internal struct RemoteStorageEnumerateUserSubscribedFilesResult_t : ICallbackDat
 
 }
 
-internal struct RemoteStorageUnsubscribePublishedFileResult_t : ICallbackData // TypeDefIndex: 5371
+internal struct RemoteStorageUnsubscribePublishedFileResult_t : ICallbackData // TypeDefIndex: 5373
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -141,7 +141,7 @@ internal struct RemoteStorageUnsubscribePublishedFileResult_t : ICallbackData //
 
 }
 
-internal struct RemoteStorageUpdatePublishedFileResult_t : ICallbackData // TypeDefIndex: 5372
+internal struct RemoteStorageUpdatePublishedFileResult_t : ICallbackData // TypeDefIndex: 5374
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -160,7 +160,7 @@ internal struct RemoteStorageUpdatePublishedFileResult_t : ICallbackData // Type
 
 }
 
-internal struct RemoteStorageDownloadUGCResult_t : ICallbackData // TypeDefIndex: 5373
+internal struct RemoteStorageDownloadUGCResult_t : ICallbackData // TypeDefIndex: 5375
 {
 	internal Result Result; 
 	internal ulong File; 
@@ -182,7 +182,7 @@ internal struct RemoteStorageDownloadUGCResult_t : ICallbackData // TypeDefIndex
 
 }
 
-internal struct RemoteStorageGetPublishedFileDetailsResult_t : ICallbackData // TypeDefIndex: 5374
+internal struct RemoteStorageGetPublishedFileDetailsResult_t : ICallbackData // TypeDefIndex: 5376
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -219,7 +219,7 @@ internal struct RemoteStorageGetPublishedFileDetailsResult_t : ICallbackData // 
 
 }
 
-internal struct RemoteStorageEnumerateWorkshopFilesResult_t : ICallbackData // TypeDefIndex: 5375
+internal struct RemoteStorageEnumerateWorkshopFilesResult_t : ICallbackData // TypeDefIndex: 5377
 {
 	internal Result Result; 
 	internal int ResultsReturned; 
@@ -242,7 +242,7 @@ internal struct RemoteStorageEnumerateWorkshopFilesResult_t : ICallbackData // T
 
 }
 
-internal struct RemoteStorageGetPublishedItemVoteDetailsResult_t : ICallbackData // TypeDefIndex: 5376
+internal struct RemoteStorageGetPublishedItemVoteDetailsResult_t : ICallbackData // TypeDefIndex: 5378
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -264,7 +264,7 @@ internal struct RemoteStorageGetPublishedItemVoteDetailsResult_t : ICallbackData
 
 }
 
-internal struct RemoteStoragePublishedFileSubscribed_t : ICallbackData // TypeDefIndex: 5377
+internal struct RemoteStoragePublishedFileSubscribed_t : ICallbackData // TypeDefIndex: 5379
 {
 	internal PublishedFileId PublishedFileId; 
 	internal AppId AppID; 
@@ -282,7 +282,7 @@ internal struct RemoteStoragePublishedFileSubscribed_t : ICallbackData // TypeDe
 
 }
 
-internal struct RemoteStoragePublishedFileUnsubscribed_t : ICallbackData // TypeDefIndex: 5378
+internal struct RemoteStoragePublishedFileUnsubscribed_t : ICallbackData // TypeDefIndex: 5380
 {
 	internal PublishedFileId PublishedFileId; 
 	internal AppId AppID; 
@@ -300,7 +300,7 @@ internal struct RemoteStoragePublishedFileUnsubscribed_t : ICallbackData // Type
 
 }
 
-internal struct RemoteStoragePublishedFileDeleted_t : ICallbackData // TypeDefIndex: 5379
+internal struct RemoteStoragePublishedFileDeleted_t : ICallbackData // TypeDefIndex: 5381
 {
 	internal PublishedFileId PublishedFileId; 
 	internal AppId AppID; 
@@ -318,7 +318,7 @@ internal struct RemoteStoragePublishedFileDeleted_t : ICallbackData // TypeDefIn
 
 }
 
-internal struct RemoteStorageUpdateUserPublishedItemVoteResult_t : ICallbackData // TypeDefIndex: 5380
+internal struct RemoteStorageUpdateUserPublishedItemVoteResult_t : ICallbackData // TypeDefIndex: 5382
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -336,7 +336,7 @@ internal struct RemoteStorageUpdateUserPublishedItemVoteResult_t : ICallbackData
 
 }
 
-internal struct RemoteStorageUserVoteDetails_t : ICallbackData // TypeDefIndex: 5381
+internal struct RemoteStorageUserVoteDetails_t : ICallbackData // TypeDefIndex: 5383
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -355,7 +355,7 @@ internal struct RemoteStorageUserVoteDetails_t : ICallbackData // TypeDefIndex: 
 
 }
 
-internal struct RemoteStorageEnumerateUserSharedWorkshopFilesResult_t : ICallbackData // TypeDefIndex: 5382
+internal struct RemoteStorageEnumerateUserSharedWorkshopFilesResult_t : ICallbackData // TypeDefIndex: 5384
 {
 	internal Result Result; 
 	internal int ResultsReturned; 
@@ -375,7 +375,7 @@ internal struct RemoteStorageEnumerateUserSharedWorkshopFilesResult_t : ICallbac
 
 }
 
-internal struct RemoteStorageSetUserPublishedFileActionResult_t : ICallbackData // TypeDefIndex: 5383
+internal struct RemoteStorageSetUserPublishedFileActionResult_t : ICallbackData // TypeDefIndex: 5385
 {
 	internal Result Result; 
 	internal PublishedFileId PublishedFileId; 
@@ -394,7 +394,7 @@ internal struct RemoteStorageSetUserPublishedFileActionResult_t : ICallbackData 
 
 }
 
-internal struct RemoteStorageEnumeratePublishedFilesByUserActionResult_t : ICallbackData // TypeDefIndex: 5384
+internal struct RemoteStorageEnumeratePublishedFilesByUserActionResult_t : ICallbackData // TypeDefIndex: 5386
 {
 	internal Result Result; 
 	internal WorkshopFileAction Action; 
@@ -416,7 +416,7 @@ internal struct RemoteStorageEnumeratePublishedFilesByUserActionResult_t : ICall
 
 }
 
-internal struct RemoteStoragePublishFileProgress_t : ICallbackData // TypeDefIndex: 5385
+internal struct RemoteStoragePublishFileProgress_t : ICallbackData // TypeDefIndex: 5387
 {
 	internal double DPercentFile; 
 	internal bool Preview; 
@@ -434,7 +434,7 @@ internal struct RemoteStoragePublishFileProgress_t : ICallbackData // TypeDefInd
 
 }
 
-internal struct RemoteStoragePublishedFileUpdated_t : ICallbackData // TypeDefIndex: 5386
+internal struct RemoteStoragePublishedFileUpdated_t : ICallbackData // TypeDefIndex: 5388
 {
 	internal PublishedFileId PublishedFileId; 
 	internal AppId AppID; 
@@ -453,7 +453,7 @@ internal struct RemoteStoragePublishedFileUpdated_t : ICallbackData // TypeDefIn
 
 }
 
-internal struct RemoteStorageFileWriteAsyncComplete_t : ICallbackData // TypeDefIndex: 5387
+internal struct RemoteStorageFileWriteAsyncComplete_t : ICallbackData // TypeDefIndex: 5389
 {
 	internal Result Result; 
 	public static int _datasize; 
@@ -470,7 +470,7 @@ internal struct RemoteStorageFileWriteAsyncComplete_t : ICallbackData // TypeDef
 
 }
 
-internal struct RemoteStorageFileReadAsyncComplete_t : ICallbackData // TypeDefIndex: 5388
+internal struct RemoteStorageFileReadAsyncComplete_t : ICallbackData // TypeDefIndex: 5390
 {
 	internal ulong FileReadAsync; 
 	internal Result Result; 
@@ -490,7 +490,7 @@ internal struct RemoteStorageFileReadAsyncComplete_t : ICallbackData // TypeDefI
 
 }
 
-internal struct RemoteStorageLocalFileChange_t : ICallbackData // TypeDefIndex: 5389
+internal struct RemoteStorageLocalFileChange_t : ICallbackData // TypeDefIndex: 5391
 {
 	public static int _datasize; 
 

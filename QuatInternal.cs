@@ -1,4 +1,4 @@
-internal struct QuatInternal : IGettable<Quat>, ISettable<Quat>, IDisposable // TypeDefIndex: 9787
+internal struct QuatInternal : IGettable<Quat>, ISettable<Quat>, IDisposable // TypeDefIndex: 9796
 {
 	private float m_w; 
 	private float m_x; 

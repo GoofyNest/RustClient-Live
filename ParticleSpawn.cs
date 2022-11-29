@@ -1,4 +1,4 @@
-public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent // TypeDefIndex: 12089
+public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent // TypeDefIndex: 12109
 {
 	public GameObjectRef[] Prefabs; 
 	public int PatchCount; 
@@ -45,7 +45,7 @@ public class ParticleSpawn : SingletonComponent<ParticleSpawn>, IClientComponent
 
 }
 
-private sealed class ParticleSpawn.<UpdateCoroutine>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12090
+private sealed class ParticleSpawn.<UpdateCoroutine>d__18 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 12110
 {
 	private int <>1__state; 
 	private object <>2__current; 

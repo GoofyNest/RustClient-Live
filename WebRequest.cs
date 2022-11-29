@@ -122,10 +122,10 @@ public abstract class WebRequest : MarshalByRefObject, ISerializable // TypeDefI
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private Task<Stream> <GetRequestStreamAsync>b__78_0() { }
+	private Task<Stream> <GetRequestStreamAsync>
 
 	[CompilerGeneratedAttribute] 
-	private Task<WebResponse> <GetResponseAsync>b__79_0() { }
+	private Task<WebResponse> <GetResponseAsync>
 
 }
 
@@ -170,7 +170,7 @@ private sealed class WebRequest.<>c__DisplayClass78_0 // TypeDefIndex: 2909
 
 	public void .ctor() { }
 
-	internal Task<Stream> <GetRequestStreamAsync>b__1() { }
+	internal Task<Stream> <GetRequestStreamAsync>
 
 }
 
@@ -182,7 +182,7 @@ private sealed class WebRequest.<>c__DisplayClass79_0 // TypeDefIndex: 2910
 
 	public void .ctor() { }
 
-	internal Task<WebResponse> <GetResponseAsync>b__1() { }
+	internal Task<WebResponse> <GetResponseAsync>
 
 }
 

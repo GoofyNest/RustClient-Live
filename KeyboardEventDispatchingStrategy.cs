@@ -1,4 +1,4 @@
-internal class KeyboardEventDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4663
+internal class KeyboardEventDispatchingStrategy : IEventDispatchingStrategy // TypeDefIndex: 4665
 {
 
 	public bool CanDispatchEvent(EventBase evt) { }

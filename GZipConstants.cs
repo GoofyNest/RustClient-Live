@@ -1,4 +1,4 @@
-internal class GZipConstants // TypeDefIndex: 5659
+internal class GZipConstants // TypeDefIndex: 5661
 {
 	public static readonly int GZIP_MAGIC; 
 

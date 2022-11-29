@@ -1,4 +1,4 @@
-internal static class ManagedStreamHelpers // TypeDefIndex: 3519
+internal static class ManagedStreamHelpers // TypeDefIndex: 3520
 {
 
 	internal static void ValidateLoadFromStream(Stream stream) { }

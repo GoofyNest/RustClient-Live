@@ -4612,6 +4612,7 @@ public static class Enumerable // TypeDefIndex: 3198
 	|
 	|-Enumerable.Any<BaseEntity>
 	|-Enumerable.Any<CardPlayerData>
+	|-Enumerable.Any<PlayingCard>
 	|-Enumerable.Any<Manifest.Administrator>
 	|-Enumerable.Any<IPlayerInfo>
 	|-Enumerable.Any<IPlayerItem>
@@ -9875,80 +9876,80 @@ private sealed class Enumerable.<>c__DisplayClass6_0<TSource> // TypeDefIndex: 3
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Enumerable.<>c__DisplayClass6_0<Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<SkeletonDefinition.Bone>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<GameStat.Stat>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<ItemSkinDirectory.Skin>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<PlayerItemRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<PlayerItemRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<Option>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<ServerInfo>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<SkinnedMultiMesh.Part>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<InventoryItemId>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<char>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<object, object>>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<uint, object>>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<int>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<long>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<object>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<float>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<uint>..ctor
-	|-Enumerable.<>c__DisplayClass6_0<Resolution>..ctor
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	*/
 
-	internal bool <CombinePredicates>b__0(TSource x) { }
+	internal bool <CombinePredicates>
 	/* GenericInstMethod :
 	|
-	|-Enumerable.<>c__DisplayClass6_0<Debugging.EntityInfo>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<GameStat.Stat>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<PlayerItemRecipe>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<object, int>>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<object, object>>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<uint, object>>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<SkeletonDefinition.Bone>.<CombinePredicates>b__0
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<ItemSkinDirectory.Skin>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<Option>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<SkinnedMultiMesh.Part>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<InventoryItem>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<FourBitNumber>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<SevenBitNumber>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<PathFinder.Point>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<PlayerItemRecipe.Ingredient>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<InventoryItemId>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<ProjectileWeaponMod.Modifier>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<Resolution>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<ServerInfo>.<CombinePredicates>b__0
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<InventoryRecipe.Ingredient>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<InventoryRecipe>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<KeyValuePair<ulong, Dispatch.ResultCallback>>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<char>.<CombinePredicates>b__0
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<int>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<Int32Enum>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<uint>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<long>.<CombinePredicates>b__0
-	|-Enumerable.<>c__DisplayClass6_0<object>.<CombinePredicates>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	|
-	|-Enumerable.<>c__DisplayClass6_0<float>.<CombinePredicates>b__0
+	|-Enumerable.<>c
 	*/
 
 }
@@ -9962,820 +9963,820 @@ private sealed class Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult> 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, FourBitNumber, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, SevenBitNumber, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, int, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, int, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, FourBitNumber, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, SevenBitNumber, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, int, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, int, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Option, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, FourBitNumber, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, SevenBitNumber, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, ServerInfo, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, ServerInfo, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, FourBitNumber, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, SevenBitNumber, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, int, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, int, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe, PlayerItemRecipe, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, PlayerItemRecipe.Ingredient, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<DictionaryEntry, KeyValuePair<object, object>, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<DictionaryEntry, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<int, int, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<int, int, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<int, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Debugging.EntityInfo, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, PathFinder.Point, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, InventoryItem, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, InventoryRecipe, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, KeyValuePair<object, int>, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Int32Enum, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, long, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, float, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Resolution, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, FourBitNumber, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, SevenBitNumber, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, PlayerItemRecipe, PlayerItemRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, PlayerItemRecipe.Ingredient, PlayerItemRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, ProjectileWeaponMod.Modifier, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, Option, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItemId, InventoryItemId>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, InventoryItemId>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, uint>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryRecipe, PlayerItemRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryRecipe.Ingredient, PlayerItemRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryRecipe.Ingredient, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, int, FourBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, int, SevenBitNumber>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, int, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, Int32Enum, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Debugging.EntityInfo>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, PathFinder.Point>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, ProjectileWeaponMod.Modifier>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Option>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, InventoryItem>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, InventoryRecipe.Ingredient>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, InventoryRecipe>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, KeyValuePair<object, int>>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, int>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Int32Enum>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, long>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, object>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, float>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Resolution>..ctor
-	|-Enumerable.<>c__DisplayClass7_0<object, uint, uint>..ctor
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	*/
 
-	internal TResult <CombineSelectors>b__0(TSource x) { }
+	internal TResult <CombineSelectors>
 	/* GenericInstMethod :
 	|
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, FourBitNumber, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, SevenBitNumber, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, FourBitNumber, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, SevenBitNumber, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, FourBitNumber, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, SevenBitNumber, SevenBitNumber>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, int, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, int, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<BurstCloth.Chain, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, int, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, int, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe.Ingredient, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<int, int, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<int, int, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<int, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, int, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, int, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, Int32Enum, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, uint, uint>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Resolution, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<SkeletonDefinition.Bone, float, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<DictionaryEntry, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Resolution, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Resolution, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Resolution, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, object, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, object, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<PlayerItemRecipe, float, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<object, object>, float, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<KeyValuePair<uint, object>, float, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Option, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, FourBitNumber, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, SevenBitNumber, SevenBitNumber>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, object>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Resolution, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, int, int>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, float, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, PlayerItemRecipe, PlayerItemRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, PlayerItemRecipe.Ingredient, PlayerItemRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItemId, InventoryItemId>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Resolution, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Resolution, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Resolution, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Resolution, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, Option, Option>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Resolution>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, InventoryItem>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, object, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Achievement, float, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, float, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Friend, float, float>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, float, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryDefId, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, ServerInfo, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<ServerInfo, ServerInfo, object>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, FourBitNumber, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, SevenBitNumber, SevenBitNumber>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Resolution, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, int, FourBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, int, SevenBitNumber>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryItem, float, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe, PlayerItemRecipe, object>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, PathFinder.Point, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, PlayerItemRecipe.Ingredient, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, long, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, PathFinder.Point>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Int32Enum>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, long>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Debugging.EntityInfo, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, KeyValuePair<object, int>, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, ProjectileWeaponMod.Modifier, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Resolution, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Option, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, InventoryItem, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, InventoryRecipe, InventoryRecipe>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, InventoryRecipe.Ingredient, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, int, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, Int32Enum, Int32Enum>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<InventoryRecipe.Ingredient, float, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<DictionaryEntry, KeyValuePair<object, object>, object>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<Int32Enum, object, InventoryRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, ProjectileWeaponMod.Modifier, float>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, InventoryItemId>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, int>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, object>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryItem, uint>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryRecipe, PlayerItemRecipe>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryRecipe.Ingredient, PlayerItemRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, InventoryRecipe.Ingredient, object>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Debugging.EntityInfo>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, KeyValuePair<object, int>>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, object, ProjectileWeaponMod.Modifier>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Resolution>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, object, Option>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, InventoryItem>.<CombineSelectors>b__0
-	|
-	|-Enumerable.<>c__DisplayClass7_0<object, object, InventoryRecipe.Ingredient>.<CombineSelectors>b__0
-	|-Enumerable.<>c__DisplayClass7_0<object, object, InventoryRecipe>.<CombineSelectors>b__0
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
+	|
+	|-Enumerable.<>c
+	|-Enumerable.<>c
 	*/
 
 }
@@ -12339,7 +12340,7 @@ internal class EnumerableSorter<TElement, TKey> : EnumerableSorter<TElement> // 
 
 }
 
-public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5712
+public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5714
 {
 	private string value; 
 
@@ -12350,7 +12351,7 @@ public sealed class EnumMemberAttribute : Attribute // TypeDefIndex: 5712
 
 }
 
-internal static class EnumUtils // TypeDefIndex: 5959
+internal static class EnumUtils // TypeDefIndex: 5961
 {
 	private static readonly ThreadSafeStore<Type, BidirectionalDictionary<string, string>> EnumMemberNamesPerType; 
 
@@ -12369,7 +12370,7 @@ internal static class EnumUtils // TypeDefIndex: 5959
 
 }
 
-private sealed class EnumUtils.<>c // TypeDefIndex: 5960
+private sealed class EnumUtils.<>c // TypeDefIndex: 5962
 {
 	public static readonly EnumUtils.<>c <>9; 
 	public static Func<EnumMemberAttribute, string> <>9__1_0; 
@@ -12380,15 +12381,15 @@ private sealed class EnumUtils.<>c // TypeDefIndex: 5960
 
 	public void .ctor() { }
 
-	internal string <InitializeEnumType>b__1_0(EnumMemberAttribute a) { }
+	internal string <InitializeEnumType>
 
-	internal bool <GetValues>b__5_0(FieldInfo f) { }
+	internal bool <GetValues>
 
 }
 
-private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5961
+private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5963
 {
-	public static readonly EnumUtils.<>c__2<T> <>9; 
+	public static readonly EnumUtils.<>
 
 
 	private static void .cctor() { }
@@ -12397,7 +12398,7 @@ private sealed class EnumUtils.<>c__2<T> // TypeDefIndex: 5961
 
 }
 
-public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9002
+public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9011
 {
 	[CompilerGeneratedAttribute] 
 	private Result <ResultCode>k__BackingField; 
@@ -12444,7 +12445,7 @@ public struct EnumerateModsCallbackInfo : ICallbackInfo // TypeDefIndex: 9002
 
 }
 
-internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGettable<EnumerateModsCallbackInfo>, ISettable<EnumerateModsCallbackInfo>, IDisposable // TypeDefIndex: 9003
+internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGettable<EnumerateModsCallbackInfo>, ISettable<EnumerateModsCallbackInfo>, IDisposable // TypeDefIndex: 9012
 {
 	private Result m_ResultCode; 
 	private IntPtr m_LocalUserId; 
@@ -12486,7 +12487,7 @@ internal struct EnumerateModsCallbackInfoInternal : ICallbackInfoInternal, IGett
 
 }
 
-public struct EnumerateModsOptions // TypeDefIndex: 9004
+public struct EnumerateModsOptions // TypeDefIndex: 9013
 {
 	[CompilerGeneratedAttribute] 
 	private EpicAccountId <LocalUserId>k__BackingField; 
@@ -12511,7 +12512,7 @@ public struct EnumerateModsOptions // TypeDefIndex: 9004
 
 }
 
-internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, IDisposable // TypeDefIndex: 9005
+internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, IDisposable // TypeDefIndex: 9014
 {
 	private int m_ApiVersion; 
 	private IntPtr m_LocalUserId; 
@@ -12533,7 +12534,7 @@ internal struct EnumerateModsOptionsInternal : ISettable<EnumerateModsOptions>, 
 
 }
 
-public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12527
+public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12549
 {
 	public object Value; 
 	public RustText TextValue; 
@@ -12548,7 +12549,7 @@ public class EnumListItemUI : MonoBehaviour // TypeDefIndex: 12527
 
 }
 
-public class EnumListUI : MonoBehaviour // TypeDefIndex: 12528
+public class EnumListUI : MonoBehaviour // TypeDefIndex: 12550
 {
 	public Transform PrefabItem; 
 	public Transform Container; 

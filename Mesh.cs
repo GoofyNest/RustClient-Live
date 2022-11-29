@@ -1,4 +1,4 @@
-public sealed class Mesh : Object // TypeDefIndex: 3442
+public sealed class Mesh : Object // TypeDefIndex: 3443
 {
 	public int blendShapeCount { get; }
 	[NativeNameAttribute] 
@@ -346,7 +346,7 @@ public sealed class Mesh : Object // TypeDefIndex: 3442
 
 }
 
-public static class Mesh // TypeDefIndex: 5611
+public static class Mesh // TypeDefIndex: 5613
 {
 
 	[ExtensionAttribute] 
@@ -354,7 +354,7 @@ public static class Mesh // TypeDefIndex: 5611
 
 }
 
-public struct Mesh_Extents // TypeDefIndex: 6798
+public struct Mesh_Extents // TypeDefIndex: 6802
 {
 	public Vector2 min; 
 	public Vector2 max; 
@@ -366,7 +366,7 @@ public struct Mesh_Extents // TypeDefIndex: 6798
 
 }
 
-public class Mesh : ConsoleSystem // TypeDefIndex: 13695
+public class Mesh : ConsoleSystem // TypeDefIndex: 13733
 {
 	private static float m_quality; 
 

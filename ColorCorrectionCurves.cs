@@ -1,4 +1,4 @@
-public class ColorCorrectionCurves : PostEffectsBase, IImageEffect // TypeDefIndex: 8179
+public class ColorCorrectionCurves : PostEffectsBase, IImageEffect // TypeDefIndex: 8188
 {
 	public AnimationCurve redChannel; 
 	public AnimationCurve greenChannel; 
@@ -44,7 +44,7 @@ public class ColorCorrectionCurves : PostEffectsBase, IImageEffect // TypeDefInd
 
 }
 
-public enum ColorCorrectionCurves.ColorCorrectionMode // TypeDefIndex: 8180
+public enum ColorCorrectionCurves.ColorCorrectionMode // TypeDefIndex: 8189
 {
 	public int value__; 
 	public const ColorCorrectionCurves.ColorCorrectionMode Simple = 0;

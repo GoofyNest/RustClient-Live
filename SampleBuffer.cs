@@ -1,4 +1,4 @@
-public class SampleBuffer : ABuffer // TypeDefIndex: 7404
+public class SampleBuffer : ABuffer // TypeDefIndex: 7410
 {
 	private readonly short[] _Buffer; 
 	private readonly int[] _Bufferp; 

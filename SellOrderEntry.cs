@@ -1,4 +1,4 @@
-public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 10445
+public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 10456
 {
 	public VirtualItemIcon MerchandiseIcon; 
 	public VirtualItemIcon CurrencyIcon; 
@@ -59,11 +59,11 @@ public class SellOrderEntry : MonoBehaviour, IInventoryChanged // TypeDefIndex: 
 	public void .ctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private bool <CurrencyAvailable>b__30_0(Item x) { }
+	private bool <CurrencyAvailable>
 
 }
 
-private sealed class SellOrderEntry.<>c // TypeDefIndex: 10446
+private sealed class SellOrderEntry.<>c // TypeDefIndex: 10457
 {
 	public static readonly SellOrderEntry.<>c <>9; 
 	public static Func<Item, bool> <>9__30_1; 
@@ -74,9 +74,9 @@ private sealed class SellOrderEntry.<>c // TypeDefIndex: 10446
 
 	public void .ctor() { }
 
-	internal bool <CurrencyAvailable>b__30_1(Item x) { }
+	internal bool <CurrencyAvailable>
 
-	internal int <CurrencyAvailable>b__30_2(Item x) { }
+	internal int <CurrencyAvailable>
 
 }
 

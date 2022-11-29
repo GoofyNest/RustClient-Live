@@ -1,4 +1,4 @@
-internal class NativeInputSystem // TypeDefIndex: 4526
+internal class NativeInputSystem // TypeDefIndex: 4528
 {
 	public static NativeUpdateCallback onUpdate; 
 	public static Action<NativeInputUpdateType> onBeforeUpdate; 

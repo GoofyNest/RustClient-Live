@@ -1,4 +1,4 @@
-public struct NoticeData // TypeDefIndex: 6209
+public struct NoticeData // TypeDefIndex: 6211
 {
 	public string Type; 
 	public string SteamId; 

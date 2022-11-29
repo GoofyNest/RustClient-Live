@@ -1,4 +1,4 @@
-public enum AnalyticsSessionState // TypeDefIndex: 4750
+public enum AnalyticsSessionState // TypeDefIndex: 4752
 {
 
 [RequiredByNativeCodeAttribute] 

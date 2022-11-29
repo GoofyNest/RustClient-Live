@@ -1,4 +1,4 @@
-public class SyntaxErrorException : InvalidExpressionException // TypeDefIndex: 4260
+public class SyntaxErrorException : InvalidExpressionException // TypeDefIndex: 4262
 {
 
 	protected void .ctor(SerializationInfo info, StreamingContext context) { }

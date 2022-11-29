@@ -1,4 +1,4 @@
-public class Cassette : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6394
+public class Cassette : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6396
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -62,7 +62,7 @@ public class Cassette : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6394
 
 }
 
-public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10253
+public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10264
 {
 	private static List<Cassette.LoadRequest> loadQueue; 
 	private static bool isLoading; 
@@ -133,11 +133,11 @@ public class Cassette : BaseEntity, IUGCBrowserEntity // TypeDefIndex: 10253
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Client_ReceiveAudio>b__32_0(AudioClip clip, bool success) { }
+	private void <Client_ReceiveAudio>
 
 }
 
-private struct Cassette.LoadRequest // TypeDefIndex: 10254
+private struct Cassette.LoadRequest // TypeDefIndex: 10265
 {
 	public byte[] Data; 
 	public Action<AudioClip, bool> Callback; 
@@ -145,7 +145,7 @@ private struct Cassette.LoadRequest // TypeDefIndex: 10254
 
 }
 
-private sealed class Cassette.<>c__DisplayClass29_0 // TypeDefIndex: 10255
+private sealed class Cassette.<>c__DisplayClass29_0 // TypeDefIndex: 10266
 {
 	public Cassette <>4__this; 
 	public Action<AudioClip> onAudioReady; 
@@ -153,11 +153,11 @@ private sealed class Cassette.<>c__DisplayClass29_0 // TypeDefIndex: 10255
 
 	public void .ctor() { }
 
-	internal void <WriteNewAudio>b__0(AudioClip clip, bool success) { }
+	internal void <WriteNewAudio>
 
 }
 
-private sealed class Cassette.<>c__DisplayClass31_0 // TypeDefIndex: 10256
+private sealed class Cassette.<>c__DisplayClass31_0 // TypeDefIndex: 10267
 {
 	public Cassette <>4__this; 
 	public byte[] data; 
@@ -166,7 +166,7 @@ private sealed class Cassette.<>c__DisplayClass31_0 // TypeDefIndex: 10256
 
 	public void .ctor() { }
 
-	internal void <RequestFileUpdate>b__0(AudioClip clip, bool success) { }
+	internal void <RequestFileUpdate>
 
 }
 

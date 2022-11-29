@@ -1,4 +1,4 @@
-public class Skinnable : ScriptableObject // TypeDefIndex: 7723
+public class Skinnable : ScriptableObject // TypeDefIndex: 7729
 {
 
 [CreateAssetMenuAttribute] 
@@ -30,7 +30,7 @@ public class Skinnable : ScriptableObject
 
 }
 
-public class Skinnable.Group // TypeDefIndex: 7724
+public class Skinnable.Group // TypeDefIndex: 7730
 {
 	public string Name; 
 	public Material Material; 
@@ -41,25 +41,25 @@ public class Skinnable.Group // TypeDefIndex: 7724
 
 }
 
-private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7725
+private sealed class Skinnable.<>c__DisplayClass13_0 // TypeDefIndex: 7731
 {
 	public string itemType; 
 
 
 	public void .ctor() { }
 
-	internal bool <FindForItem>b__0(Skinnable x) { }
+	internal bool <FindForItem>
 
 }
 
-private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7726
+private sealed class Skinnable.<>c__DisplayClass14_0 // TypeDefIndex: 7732
 {
 	public string entityName; 
 
 
 	public void .ctor() { }
 
-	internal bool <FindForEntity>b__0(Skinnable x) { }
+	internal bool <FindForEntity>
 
 }
 

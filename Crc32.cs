@@ -1,4 +1,4 @@
-internal sealed class Crc32 // TypeDefIndex: 5671
+internal sealed class Crc32 // TypeDefIndex: 5673
 {
 	private static readonly uint CrcSeed; 
 	private static readonly uint[] CrcTable; 
@@ -19,7 +19,7 @@ internal sealed class Crc32 // TypeDefIndex: 5671
 
 }
 
-public class CRC32 // TypeDefIndex: 7001
+public class CRC32 // TypeDefIndex: 7005
 {
 	private uint dwPolynomial; 
 	private long _TotalBytesRead; 

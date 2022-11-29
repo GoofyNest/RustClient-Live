@@ -1,4 +1,4 @@
-public class MessageEventArgs // TypeDefIndex: 3790
+public class MessageEventArgs // TypeDefIndex: 3791
 {
 
 [RequiredByNativeCodeAttribute] 
@@ -116,8 +116,8 @@ public struct EarlyUpdate.TangoUpdate
 [RequiredByNativeCodeAttribute] 
 public struct EarlyUpdate.PerformanceAnalyticsUpdate
 
-[MovedFromAttribute] 
 [RequiredByNativeCodeAttribute] 
+[MovedFromAttribute] 
 public struct FixedUpdate
 
 [RequiredByNativeCodeAttribute] 
@@ -156,8 +156,8 @@ public struct FixedUpdate.ScriptRunDelayedFixedFrameRate
 [RequiredByNativeCodeAttribute] 
 public struct FixedUpdate.NewInputFixedUpdate
 
-[MovedFromAttribute] 
 [RequiredByNativeCodeAttribute] 
+[MovedFromAttribute] 
 public struct PreUpdate
 
 [RequiredByNativeCodeAttribute] 
@@ -203,8 +203,8 @@ public struct Update.ScriptRunDelayedDynamicFrameRate
 [RequiredByNativeCodeAttribute] 
 public struct Update.ScriptRunDelayedTasks
 
-[MovedFromAttribute] 
 [RequiredByNativeCodeAttribute] 
+[MovedFromAttribute] 
 public struct PreLateUpdate
 
 [RequiredByNativeCodeAttribute] 
@@ -243,8 +243,8 @@ public struct PreLateUpdate.ScriptRunBehaviourLateUpdate
 [RequiredByNativeCodeAttribute] 
 public struct PreLateUpdate.ConstraintManagerUpdate
 
-[RequiredByNativeCodeAttribute] 
 [MovedFromAttribute] 
+[RequiredByNativeCodeAttribute] 
 public struct PostLateUpdate
 
 [RequiredByNativeCodeAttribute] 

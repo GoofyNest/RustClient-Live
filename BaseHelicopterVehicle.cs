@@ -1,4 +1,4 @@
-public class BaseHelicopterVehicle : BaseVehicle // TypeDefIndex: 10030
+public class BaseHelicopterVehicle : BaseVehicle // TypeDefIndex: 10042
 {
 	private Option __menuOption_Menu_Push; 
 	[HeaderAttribute] 
@@ -57,7 +57,7 @@ public class BaseHelicopterVehicle : BaseVehicle // TypeDefIndex: 10030
 
 }
 
-public class BaseHelicopterVehicle.HelicopterInputState // TypeDefIndex: 10031
+public class BaseHelicopterVehicle.HelicopterInputState // TypeDefIndex: 10043
 {
 	public float throttle; 
 	public float roll; 

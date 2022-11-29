@@ -1,4 +1,4 @@
-public sealed class NotifyCollectionChangedEventHandler : MulticastDelegate // TypeDefIndex: 5866
+public sealed class NotifyCollectionChangedEventHandler : MulticastDelegate // TypeDefIndex: 5868
 {
 
 [PreserveAttribute] 

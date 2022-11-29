@@ -1,4 +1,4 @@
-public class RemoteConfigSettings // TypeDefIndex: 4746
+public class RemoteConfigSettings // TypeDefIndex: 4748
 {
 	internal IntPtr m_Ptr; 
 	[CompilerGeneratedAttribute] 

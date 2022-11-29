@@ -1,4 +1,4 @@
-public struct ERLane // TypeDefIndex: 7227
+public struct ERLane // TypeDefIndex: 7231
 {
 	public float position; 
 	public ERLaneDirection direction; 

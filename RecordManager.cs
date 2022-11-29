@@ -1,4 +1,4 @@
-internal sealed class RecordManager // TypeDefIndex: 4295
+internal sealed class RecordManager // TypeDefIndex: 4297
 {
 	private readonly DataTable _table; 
 	private int _lastFreeRecord; 

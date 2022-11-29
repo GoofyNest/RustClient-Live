@@ -1,4 +1,4 @@
-public class HttpResponseMessage : IDisposable // TypeDefIndex: 5760
+public class HttpResponseMessage : IDisposable // TypeDefIndex: 5762
 {
 	private HttpResponseHeaders headers; 
 	private string reasonPhrase; 

@@ -1,4 +1,4 @@
-public enum FogMode // TypeDefIndex: 3416
+public enum FogMode // TypeDefIndex: 3417
 {
 	public int value__; 
 	public const FogMode Linear = 1;

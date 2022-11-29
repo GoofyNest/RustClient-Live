@@ -1,4 +1,4 @@
-internal struct WindowsRTCOptionsPlatformSpecificOptionsInternal : IGettable<WindowsRTCOptionsPlatformSpecificOptions>, ISettable<WindowsRTCOptionsPlatformSpecificOptions>, IDisposable // TypeDefIndex: 9878
+internal struct WindowsRTCOptionsPlatformSpecificOptionsInternal : IGettable<WindowsRTCOptionsPlatformSpecificOptions>, ISettable<WindowsRTCOptionsPlatformSpecificOptions>, IDisposable // TypeDefIndex: 9887
 {
 	private int m_ApiVersion; 
 	private IntPtr m_XAudio29DllPath; 

@@ -1,4 +1,4 @@
-internal sealed class OnDeleteCacheCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8389
+internal sealed class OnDeleteCacheCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8398
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -11,7 +11,7 @@ internal sealed class OnDeleteCacheCompleteCallbackInternal : MulticastDelegate 
 
 }
 
-internal sealed class OnDeleteCacheCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8882
+internal sealed class OnDeleteCacheCompleteCallbackInternal : MulticastDelegate // TypeDefIndex: 8891
 {
 
 	public void .ctor(object object, IntPtr method) { }

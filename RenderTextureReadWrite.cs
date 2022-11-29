@@ -1,4 +1,4 @@
-public enum RenderTextureReadWrite // TypeDefIndex: 3431
+public enum RenderTextureReadWrite // TypeDefIndex: 3432
 {
 	public int value__; 
 	public const RenderTextureReadWrite Default = 0;

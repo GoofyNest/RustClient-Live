@@ -1,4 +1,4 @@
-public class Behaviour : Component // TypeDefIndex: 3507
+public class Behaviour : Component // TypeDefIndex: 3508
 {
 	[RequiredByNativeCodeAttribute] 
 	[NativePropertyAttribute] 

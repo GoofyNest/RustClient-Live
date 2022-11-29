@@ -1,4 +1,4 @@
-public class SkinnedMeshRenderer : Renderer // TypeDefIndex: 3436
+public class SkinnedMeshRenderer : Renderer // TypeDefIndex: 3437
 {
 	public bool updateWhenOffscreen { get; set; }
 	public Transform rootBone { get; set; }

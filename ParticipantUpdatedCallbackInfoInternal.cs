@@ -1,4 +1,4 @@
-internal struct ParticipantUpdatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<ParticipantUpdatedCallbackInfo>, ISettable<ParticipantUpdatedCallbackInfo>, IDisposable // TypeDefIndex: 8690
+internal struct ParticipantUpdatedCallbackInfoInternal : ICallbackInfoInternal, IGettable<ParticipantUpdatedCallbackInfo>, ISettable<ParticipantUpdatedCallbackInfo>, IDisposable // TypeDefIndex: 8699
 {
 	private IntPtr m_ClientData; 
 	private IntPtr m_LocalUserId; 

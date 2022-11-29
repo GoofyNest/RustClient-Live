@@ -1,4 +1,4 @@
-public sealed class ParticleSystemJobStruct.ExecuteJobFunction<T> : MulticastDelegate // TypeDefIndex: 4559
+public sealed class ParticleSystemJobStruct.ExecuteJobFunction<T> : MulticastDelegate // TypeDefIndex: 4561
 {
 
 	public void .ctor(object object, IntPtr method) { }

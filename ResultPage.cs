@@ -1,4 +1,4 @@
-public struct ResultPage : IDisposable // TypeDefIndex: 5285
+public struct ResultPage : IDisposable // TypeDefIndex: 5287
 {
 	internal UGCQueryHandle_t Handle; 
 	public int ResultCount; 
@@ -22,7 +22,7 @@ public struct ResultPage : IDisposable // TypeDefIndex: 5285
 
 }
 
-private sealed class ResultPage.<get_Entries>d__10 : IEnumerable<Item>, IEnumerable, IEnumerator<Item>, IEnumerator, IDisposable // TypeDefIndex: 5286
+private sealed class ResultPage.<get_Entries>d__10 : IEnumerable<Item>, IEnumerable, IEnumerator<Item>, IEnumerator, IDisposable // TypeDefIndex: 5288
 {
 	private int <>1__state; 
 	private Item <>2__current; 

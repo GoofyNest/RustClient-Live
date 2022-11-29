@@ -1,4 +1,4 @@
-public struct AnimatorClipInfo // TypeDefIndex: 4487
+public struct AnimatorClipInfo // TypeDefIndex: 4489
 {
 	private int m_ClipInstanceID; 
 	private float m_Weight; 

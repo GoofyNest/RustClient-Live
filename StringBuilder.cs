@@ -82,6 +82,8 @@ public sealed class StringBuilder : ISerializable // TypeDefIndex: 463
 
 	public StringBuilder Append(float value) { }
 
+	public StringBuilder Append(double value) { }
+
 	[CLSCompliantAttribute] 
 	public StringBuilder Append(uint value) { }
 

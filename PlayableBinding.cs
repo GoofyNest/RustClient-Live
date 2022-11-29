@@ -1,4 +1,4 @@
-public struct PlayableBinding // TypeDefIndex: 3869
+public struct PlayableBinding // TypeDefIndex: 3870
 {
 	private string m_StreamName; 
 	private Object m_SourceObject; 
@@ -12,7 +12,7 @@ public struct PlayableBinding // TypeDefIndex: 3869
 
 }
 
-internal sealed class PlayableBinding.CreateOutputMethod : MulticastDelegate // TypeDefIndex: 3870
+internal sealed class PlayableBinding.CreateOutputMethod : MulticastDelegate // TypeDefIndex: 3871
 {
 
 	public void .ctor(object object, IntPtr method) { }

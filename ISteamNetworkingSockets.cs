@@ -1,4 +1,4 @@
-internal class ISteamNetworkingSockets : SteamInterface // TypeDefIndex: 5127
+internal class ISteamNetworkingSockets : SteamInterface // TypeDefIndex: 5129
 {
 
 	internal void .ctor(bool IsGameServer) { }
@@ -34,6 +34,10 @@ internal class ISteamNetworkingSockets : SteamInterface // TypeDefIndex: 5127
 	private static extern void _SendMessages(IntPtr self, int nMessages, NetMsg** pMessages, long* pOutMessageNumberOrResult) { }
 
 	internal void SendMessages(int nMessages, NetMsg** pMessages, long* pOutMessageNumberOrResult) { }
+
+	private static extern Result _FlushMessagesOnConnection(IntPtr self, Connection hConn) { }
+
+	internal Result FlushMessagesOnConnection(Connection hConn) { }
 
 	private static extern int _ReceiveMessagesOnConnection(IntPtr self, Connection hConn, IntPtr ppOutMessages, int nMaxMessages) { }
 

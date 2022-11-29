@@ -1,4 +1,4 @@
-internal sealed class InflateBlocks // TypeDefIndex: 6980
+internal sealed class InflateBlocks // TypeDefIndex: 6984
 {
 	internal static readonly int[] border; 
 	private InflateBlocks.InflateBlockMode mode; 
@@ -37,7 +37,7 @@ internal sealed class InflateBlocks // TypeDefIndex: 6980
 
 }
 
-private enum InflateBlocks.InflateBlockMode // TypeDefIndex: 6981
+private enum InflateBlocks.InflateBlockMode // TypeDefIndex: 6985
 {
 	public int value__; 
 	public const InflateBlocks.InflateBlockMode TYPE = 0;

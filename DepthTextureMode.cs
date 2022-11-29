@@ -1,4 +1,4 @@
-public enum DepthTextureMode // TypeDefIndex: 3420
+public enum DepthTextureMode // TypeDefIndex: 3421
 {
 	public int value__; 
 	public const DepthTextureMode None = 0;

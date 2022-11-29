@@ -1,4 +1,4 @@
-public sealed class Projector : Behaviour // TypeDefIndex: 3407
+public sealed class Projector : Behaviour // TypeDefIndex: 3408
 {
 	public Material material { get; set; }
 

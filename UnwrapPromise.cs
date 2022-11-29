@@ -16,10 +16,10 @@ private sealed class UnwrapPromise.<>c<TResult> // TypeDefIndex: 869
 	|-UnwrapPromise.<>c<object>..ctor
 	*/
 
-	internal void <InvokeCoreAsync>b__8_0(object state) { }
+	internal void <InvokeCoreAsync>
 	/* GenericInstMethod :
 	|
-	|-UnwrapPromise.<>c<object>.<InvokeCoreAsync>b__8_0
+	|-UnwrapPromise.<>c<object>.<InvokeCoreAsync>
 	*/
 
 }

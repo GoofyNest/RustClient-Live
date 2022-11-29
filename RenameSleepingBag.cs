@@ -1,4 +1,4 @@
-public class RenameSleepingBag : UIDialog // TypeDefIndex: 12641
+public class RenameSleepingBag : UIDialog // TypeDefIndex: 12669
 {
 	public InputField input; 
 	public SleepingBag bag; 

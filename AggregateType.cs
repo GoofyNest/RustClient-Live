@@ -1,4 +1,4 @@
-internal enum AggregateType // TypeDefIndex: 4169
+internal enum AggregateType // TypeDefIndex: 4171
 {
 	public int value__; 
 	public const AggregateType None = 0;

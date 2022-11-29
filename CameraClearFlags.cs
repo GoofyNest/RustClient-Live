@@ -1,4 +1,4 @@
-public enum CameraClearFlags // TypeDefIndex: 3419
+public enum CameraClearFlags // TypeDefIndex: 3420
 {
 	public int value__; 
 	public const CameraClearFlags Skybox = 1;

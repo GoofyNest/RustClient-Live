@@ -1,4 +1,4 @@
-public static class StreamEx // TypeDefIndex: 13104
+public static class StreamEx // TypeDefIndex: 13143
 {
 	private static readonly byte[] StaticBuffer; 
 

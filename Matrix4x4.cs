@@ -1,4 +1,4 @@
-public struct Matrix4x4 : IEquatable<Matrix4x4> // TypeDefIndex: 3466
+public struct Matrix4x4 : IEquatable<Matrix4x4> // TypeDefIndex: 3467
 {
 	[NativeNameAttribute] 
 	public float m00; 

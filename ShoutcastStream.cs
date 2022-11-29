@@ -1,4 +1,4 @@
-public class ShoutcastStream : IDisposable // TypeDefIndex: 13732
+public class ShoutcastStream : IDisposable // TypeDefIndex: 13770
 {
 	private static HttpClient client; 
 	[CompilerGeneratedAttribute] 
@@ -103,23 +103,23 @@ public class ShoutcastStream : IDisposable // TypeDefIndex: 13732
 
 }
 
-private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 13733
+private sealed class ShoutcastStream.<>c__DisplayClass42_0 // TypeDefIndex: 13771
 {
 	public Stream stream; 
 
 
 	public void .ctor() { }
 
-	internal MP3Stream <ConnectAsync>b__0() { }
+	internal MP3Stream <ConnectAsync>
 
 }
 
-private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeDefIndex: 13734
+private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeDefIndex: 13772
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 
 	public ShoutcastStream <>4__this; 
-	private ShoutcastStream.<>c__DisplayClass42_0 <>8__1; 
+	private ShoutcastStream.<>c
 	private TaskAwaiter<HttpResponseMessage> <>u__1; 
 	private TaskAwaiter<Stream> <>u__2; 
 	private TaskAwaiter<MP3Stream> <>u__3; 
@@ -132,7 +132,7 @@ private struct ShoutcastStream.<ConnectAsync>d__42 : IAsyncStateMachine // TypeD
 
 }
 
-private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // TypeDefIndex: 13735
+private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // TypeDefIndex: 13773
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<bool> <>t__builder; 
@@ -148,7 +148,7 @@ private struct ShoutcastStream.<ReadDataAsync>d__43 : IAsyncStateMachine // Type
 
 }
 
-private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // TypeDefIndex: 13736
+private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // TypeDefIndex: 13774
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder<bool> <>t__builder; 
@@ -164,7 +164,7 @@ private struct ShoutcastStream.<ReadDataAsync>d__44 : IAsyncStateMachine // Type
 
 }
 
-private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // TypeDefIndex: 13737
+private struct ShoutcastStream.<ShutdownSafely>d__54 : IAsyncStateMachine // TypeDefIndex: 13775
 {
 	public int <>1__state; 
 	public AsyncTaskMethodBuilder <>t__builder; 

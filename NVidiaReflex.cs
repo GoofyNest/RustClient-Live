@@ -1,4 +1,4 @@
-public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11955
+public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11975
 {
 	private uint previousIntervalUs; 
 	private int previousMode; 
@@ -64,7 +64,7 @@ public class NVidiaReflex : MonoBehaviour // TypeDefIndex: 11955
 
 }
 
-public enum NVidiaReflex.Mode // TypeDefIndex: 11956
+public enum NVidiaReflex.Mode // TypeDefIndex: 11976
 {
 	public int value__; 
 	public const NVidiaReflex.Mode OFF = 0;
@@ -73,7 +73,7 @@ public enum NVidiaReflex.Mode // TypeDefIndex: 11956
 
 }
 
-public enum NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE // TypeDefIndex: 11957
+public enum NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE // TypeDefIndex: 11977
 {
 	public int value__; 
 	public const NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE SIMULATION_START = 0;
@@ -88,7 +88,7 @@ public enum NVidiaReflex.NvReflex_LATENCY_MARKER_TYPE // TypeDefIndex: 11957
 
 }
 
-public enum NVidiaReflex.NvReflex_Status // TypeDefIndex: 11958
+public enum NVidiaReflex.NvReflex_Status // TypeDefIndex: 11978
 {
 	public int value__; 
 	public const NVidiaReflex.NvReflex_Status NvReflex_OK = 0;
@@ -235,7 +235,7 @@ public enum NVidiaReflex.NvReflex_Status // TypeDefIndex: 11958
 
 }
 
-public struct NVidiaReflex.NvReflex_FrameReport // TypeDefIndex: 11959
+public struct NVidiaReflex.NvReflex_FrameReport // TypeDefIndex: 11979
 {
 	public ulong frameID; 
 	public ulong inputSampleTime; 
@@ -254,19 +254,19 @@ public struct NVidiaReflex.NvReflex_FrameReport // TypeDefIndex: 11959
 
 }
 
-public struct NVidiaReflex.NvReflex_LATENCY_RESULT_PARAMS // TypeDefIndex: 11960
+public struct NVidiaReflex.NvReflex_LATENCY_RESULT_PARAMS // TypeDefIndex: 11980
 {
 	public NVidiaReflex.NvReflex_FrameReport[] frameReport; 
 
 }
 
-public struct NVidiaReflex.NvReflex_GET_SLEEP_STATUS_PARAMS // TypeDefIndex: 11961
+public struct NVidiaReflex.NvReflex_GET_SLEEP_STATUS_PARAMS // TypeDefIndex: 11981
 {
 	public byte bLowLatencyMode; 
 
 }
 
-private sealed class NVidiaReflex.<SleepCoroutine>d__20 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11962
+private sealed class NVidiaReflex.<SleepCoroutine>d__20 : IEnumerator<object>, IEnumerator, IDisposable // TypeDefIndex: 11982
 {
 	private int <>1__state; 
 	private object <>2__current; 

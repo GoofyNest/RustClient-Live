@@ -1,4 +1,4 @@
-internal sealed class JISConvert // TypeDefIndex: 7843
+internal sealed class JISConvert // TypeDefIndex: 7852
 {
 	private const int JISX0208_To_Unicode = 1;
 	private const int JISX0212_To_Unicode = 2;

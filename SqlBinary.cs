@@ -1,4 +1,4 @@
-public struct SqlBinary : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4340
+public struct SqlBinary : INullable, IComparable, IXmlSerializable // TypeDefIndex: 4342
 {
 	private byte[] _value; 
 	public static readonly SqlBinary Null; 

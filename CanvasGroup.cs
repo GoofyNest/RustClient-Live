@@ -1,4 +1,4 @@
-public sealed class CanvasGroup : Behaviour, ICanvasRaycastFilter // TypeDefIndex: 4734
+public sealed class CanvasGroup : Behaviour, ICanvasRaycastFilter // TypeDefIndex: 4736
 {
 	[NativePropertyAttribute] 
 	public float alpha { get; set; }

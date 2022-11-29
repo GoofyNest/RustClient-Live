@@ -1,4 +1,4 @@
-public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6348
+public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6350
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -60,7 +60,7 @@ public class WaterWell : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6348
 
 }
 
-public class WaterWell : LiquidContainer // TypeDefIndex: 10193
+public class WaterWell : LiquidContainer // TypeDefIndex: 10204
 {
 	private Option __menuOption_Menu_Pump; 
 	public Animator animator; 

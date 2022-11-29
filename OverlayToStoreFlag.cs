@@ -1,4 +1,4 @@
-public enum OverlayToStoreFlag // TypeDefIndex: 5152
+public enum OverlayToStoreFlag // TypeDefIndex: 5154
 {
 	public int value__; 
 	public const OverlayToStoreFlag None = 0;

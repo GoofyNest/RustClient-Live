@@ -1,4 +1,4 @@
-public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6352
+public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 6354
 {
 	public bool ShouldPool; 
 	private bool _disposed; 
@@ -63,7 +63,7 @@ public class Minicopter : IDisposable, Pool.IPooled, IProto // TypeDefIndex: 635
 
 }
 
-public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 9997
+public class MiniCopter : BaseHelicopterVehicle, IEngineControllerUser, IEntity // TypeDefIndex: 10006
 {
 	[HeaderAttribute] 
 	public GameObjectRef fuelStoragePrefab; 

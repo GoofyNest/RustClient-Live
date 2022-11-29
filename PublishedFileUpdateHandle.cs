@@ -1,4 +1,4 @@
-internal struct PublishedFileUpdateHandle_t : IEquatable<PublishedFileUpdateHandle_t>, IComparable<PublishedFileUpdateHandle_t> // TypeDefIndex: 5531
+internal struct PublishedFileUpdateHandle_t : IEquatable<PublishedFileUpdateHandle_t>, IComparable<PublishedFileUpdateHandle_t> // TypeDefIndex: 5533
 {
 	public ulong Value; 
 

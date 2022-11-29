@@ -1,4 +1,4 @@
-public class HalloweenDungeon : BasePortal // TypeDefIndex: 10553
+public class HalloweenDungeon : BasePortal // TypeDefIndex: 10564
 {
 	public GameObjectRef dungeonPrefab; 
 	public EntityRef<ProceduralDynamicDungeon> dungeonInstance; 

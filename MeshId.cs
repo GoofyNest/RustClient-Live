@@ -1,4 +1,4 @@
-public struct MeshId : IEquatable<MeshId> // TypeDefIndex: 4159
+public struct MeshId : IEquatable<MeshId> // TypeDefIndex: 4161
 {
 	private static MeshId s_InvalidId; 
 	private ulong m_SubId1; 

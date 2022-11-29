@@ -1,4 +1,4 @@
-internal static class SQLResource // TypeDefIndex: 4338
+internal static class SQLResource // TypeDefIndex: 4340
 {
 	internal static string NullString { get; }
 	internal static string ArithOverflowMessage { get; }

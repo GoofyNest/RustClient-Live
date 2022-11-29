@@ -1987,7 +1987,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<AlignedLineDrawer.LinePoint>..ctor
 	|-Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-Comparison<BaseEntity.PendingFileRequest>..ctor
-	|-Comparison<CardTableUI.KeycodeWithAction>..ctor
+	|-Comparison<CardGameUI.KeycodeWithAction>..ctor
 	|-Comparison<Cassette.LoadRequest>..ctor
 	|-Comparison<Admin.PlayerInfo>..ctor
 	|-Comparison<Admin.ServerConvarInfo>..ctor
@@ -2112,7 +2112,6 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<KeyValuePair<Int32Enum, object>>..ctor
 	|-Comparison<KeyValuePair<object, object>>..ctor
 	|-Comparison<KeyValuePair<object, float>>..ctor
-	|-Comparison<KeyValuePair<object, Color>>..ctor
 	|-Comparison<KeyValuePair<uint, object>>..ctor
 	|-Comparison<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-Comparison<DateTime>..ctor
@@ -2197,7 +2196,6 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<InventoryRecipe.Ingredient>.Invoke
 	|-Comparison<InventoryRecipe>.Invoke
 	|-Comparison<SynchronizedClock.TimedEvent>.Invoke
-	|-Comparison<KeyValuePair<object, Color>>.Invoke
 	|-Comparison<KeyValuePair<ulong, Dispatch.ResultCallback>>.Invoke
 	|-Comparison<UnitySynchronizationContext.WorkRequest>.Invoke
 	|
@@ -2242,7 +2240,6 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<WindZoneExManager.CurrentZoneEntry>.Invoke
 	|
 	|-Comparison<BaseEntity.PendingFileRequest>.Invoke
-	|-Comparison<CardTableUI.KeycodeWithAction>.Invoke
 	|-Comparison<Demos.DemoInfo>.Invoke
 	|-Comparison<Output.Entry>.Invoke
 	|-Comparison<IconSkinPicker.SkinButtonSetup>.Invoke
@@ -2261,10 +2258,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<SpecialPurposeCamera.RenderEntry>.Invoke
 	|-Comparison<InventoryItem>.Invoke
 	|
-	|-Comparison<Admin.PlayerInfo>.Invoke
-	|-Comparison<PlaceMonuments.SpawnInfo>.Invoke
-	|-Comparison<Matrix4x4>.Invoke
-	|
+	|-Comparison<CardGameUI.KeycodeWithAction>.Invoke
 	|-Comparison<Admin.ServerUGCInfo>.Invoke
 	|-Comparison<CapsuleParams>.Invoke
 	|-Comparison<SkeletonDefinition.Bone>.Invoke
@@ -2274,6 +2268,10 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<RenderTargetIdentifier>.Invoke
 	|-Comparison<TreeInstance>.Invoke
 	|-Comparison<ViewModelDrawEvent>.Invoke
+	|
+	|-Comparison<Admin.PlayerInfo>.Invoke
+	|-Comparison<PlaceMonuments.SpawnInfo>.Invoke
+	|-Comparison<Matrix4x4>.Invoke
 	|
 	|-Comparison<CRedge>.Invoke
 	|-Comparison<ProjectileWeaponMod.Modifier>.Invoke
@@ -2399,7 +2397,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|
 	|-Comparison<BaseEntity.PendingFileRequest>.BeginInvoke
 	|
-	|-Comparison<CardTableUI.KeycodeWithAction>.BeginInvoke
+	|-Comparison<CardGameUI.KeycodeWithAction>.BeginInvoke
 	|
 	|-Comparison<Cassette.LoadRequest>.BeginInvoke
 	|
@@ -2635,8 +2633,6 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|
 	|-Comparison<KeyValuePair<object, float>>.BeginInvoke
 	|
-	|-Comparison<KeyValuePair<object, Color>>.BeginInvoke
-	|
 	|-Comparison<KeyValuePair<uint, object>>.BeginInvoke
 	|
 	|-Comparison<KeyValuePair<ulong, Dispatch.ResultCallback>>.BeginInvoke
@@ -2747,7 +2743,7 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<AlignedLineDrawer.LinePoint>.EndInvoke
 	|-Comparison<AtmosphereVolumeRenderer.CurrentVolumeEntry>.EndInvoke
 	|-Comparison<BaseEntity.PendingFileRequest>.EndInvoke
-	|-Comparison<CardTableUI.KeycodeWithAction>.EndInvoke
+	|-Comparison<CardGameUI.KeycodeWithAction>.EndInvoke
 	|-Comparison<Cassette.LoadRequest>.EndInvoke
 	|-Comparison<Admin.PlayerInfo>.EndInvoke
 	|-Comparison<Admin.ServerConvarInfo>.EndInvoke
@@ -2865,7 +2861,6 @@ public sealed class Comparison<T> : MulticastDelegate // TypeDefIndex: 160
 	|-Comparison<KeyValuePair<Int32Enum, object>>.EndInvoke
 	|-Comparison<KeyValuePair<object, object>>.EndInvoke
 	|-Comparison<KeyValuePair<object, float>>.EndInvoke
-	|-Comparison<KeyValuePair<object, Color>>.EndInvoke
 	|-Comparison<KeyValuePair<uint, object>>.EndInvoke
 	|-Comparison<KeyValuePair<ulong, Dispatch.ResultCallback>>.EndInvoke
 	|-Comparison<DateTime>.EndInvoke
@@ -2932,7 +2927,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-Predicate<BaseEntity.PendingFileRequest>..ctor
 	|-Predicate<BasePlayer>..ctor
-	|-Predicate<CardTableUI.KeycodeWithAction>..ctor
+	|-Predicate<CardGameUI.KeycodeWithAction>..ctor
 	|-Predicate<Cassette.LoadRequest>..ctor
 	|-Predicate<Admin.PlayerInfo>..ctor
 	|-Predicate<Admin.ServerConvarInfo>..ctor
@@ -3062,7 +3057,6 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<KeyValuePair<Int32Enum, object>>..ctor
 	|-Predicate<KeyValuePair<object, object>>..ctor
 	|-Predicate<KeyValuePair<object, float>>..ctor
-	|-Predicate<KeyValuePair<object, Color>>..ctor
 	|-Predicate<KeyValuePair<uint, object>>..ctor
 	|-Predicate<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-Predicate<DateTime>..ctor
@@ -3159,7 +3153,6 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<InventoryRecipe.Ingredient>.Invoke
 	|-Predicate<InventoryRecipe>.Invoke
 	|-Predicate<SynchronizedClock.TimedEvent>.Invoke
-	|-Predicate<KeyValuePair<object, Color>>.Invoke
 	|-Predicate<KeyValuePair<ulong, Dispatch.ResultCallback>>.Invoke
 	|-Predicate<UnitySynchronizationContext.WorkRequest>.Invoke
 	|
@@ -3210,7 +3203,6 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<WorldSplineData.LUTEntry.LUTPoint>.Invoke
 	|
 	|-Predicate<BaseEntity.PendingFileRequest>.Invoke
-	|-Predicate<CardTableUI.KeycodeWithAction>.Invoke
 	|-Predicate<Demos.DemoInfo>.Invoke
 	|-Predicate<Output.Entry>.Invoke
 	|-Predicate<IconSkinPicker.SkinButtonSetup>.Invoke
@@ -3228,9 +3220,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<SpecialPurposeCamera.RenderEntry>.Invoke
 	|-Predicate<InventoryItem>.Invoke
 	|
-	|-Predicate<Admin.PlayerInfo>.Invoke
-	|-Predicate<PlaceMonuments.SpawnInfo>.Invoke
-	|
+	|-Predicate<CardGameUI.KeycodeWithAction>.Invoke
 	|-Predicate<Admin.ServerUGCInfo>.Invoke
 	|-Predicate<CapsuleParams>.Invoke
 	|-Predicate<SkeletonDefinition.Bone>.Invoke
@@ -3240,6 +3230,9 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<RenderTargetIdentifier>.Invoke
 	|-Predicate<TreeInstance>.Invoke
 	|-Predicate<ViewModelDrawEvent>.Invoke
+	|
+	|-Predicate<Admin.PlayerInfo>.Invoke
+	|-Predicate<PlaceMonuments.SpawnInfo>.Invoke
 	|
 	|-Predicate<CRedge>.Invoke
 	|-Predicate<ProjectileWeaponMod.Modifier>.Invoke
@@ -3355,7 +3348,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|
 	|-Predicate<BaseEntity.PendingFileRequest>.BeginInvoke
 	|
-	|-Predicate<CardTableUI.KeycodeWithAction>.BeginInvoke
+	|-Predicate<CardGameUI.KeycodeWithAction>.BeginInvoke
 	|
 	|-Predicate<Cassette.LoadRequest>.BeginInvoke
 	|
@@ -3585,8 +3578,6 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|
 	|-Predicate<KeyValuePair<object, float>>.BeginInvoke
 	|
-	|-Predicate<KeyValuePair<object, Color>>.BeginInvoke
-	|
 	|-Predicate<KeyValuePair<uint, object>>.BeginInvoke
 	|
 	|-Predicate<KeyValuePair<ulong, Dispatch.ResultCallback>>.BeginInvoke
@@ -3695,7 +3686,7 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<AlignedLineDrawer.LinePoint>.EndInvoke
 	|-Predicate<AtmosphereVolumeRenderer.CurrentVolumeEntry>.EndInvoke
 	|-Predicate<BaseEntity.PendingFileRequest>.EndInvoke
-	|-Predicate<CardTableUI.KeycodeWithAction>.EndInvoke
+	|-Predicate<CardGameUI.KeycodeWithAction>.EndInvoke
 	|-Predicate<Cassette.LoadRequest>.EndInvoke
 	|-Predicate<Admin.PlayerInfo>.EndInvoke
 	|-Predicate<Admin.ServerConvarInfo>.EndInvoke
@@ -3810,7 +3801,6 @@ public sealed class Predicate<T> : MulticastDelegate // TypeDefIndex: 162
 	|-Predicate<KeyValuePair<Int32Enum, object>>.EndInvoke
 	|-Predicate<KeyValuePair<object, object>>.EndInvoke
 	|-Predicate<KeyValuePair<object, float>>.EndInvoke
-	|-Predicate<KeyValuePair<object, Color>>.EndInvoke
 	|-Predicate<KeyValuePair<uint, object>>.EndInvoke
 	|-Predicate<KeyValuePair<ulong, Dispatch.ResultCallback>>.EndInvoke
 	|-Predicate<DateTime>.EndInvoke
@@ -4572,9 +4562,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>..ctor
 	|
-	|-Nullable<LogPlayerTickOptions>..ctor
-	|-Nullable<UserInfoDataInternal>..ctor
-	|
 	|-Nullable<LogPlayerUseWeaponData>..ctor
 	|-Nullable<QueryLeaderboardDefinitionsOptions>..ctor
 	|
@@ -4699,6 +4686,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Options>..ctor
 	|
 	|-Nullable<WindowsOptions>..ctor
+	|
+	|-Nullable<UserInfoDataInternal>..ctor
 	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>..ctor
 	|
@@ -5382,9 +5371,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.get_HasValue
 	|
-	|-Nullable<LogPlayerTickOptions>.get_HasValue
-	|-Nullable<UserInfoDataInternal>.get_HasValue
-	|
 	|-Nullable<LogPlayerUseWeaponData>.get_HasValue
 	|-Nullable<QueryLeaderboardDefinitionsOptions>.get_HasValue
 	|
@@ -5510,6 +5496,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<WindowsOptions>.get_HasValue
 	|
+	|-Nullable<UserInfoDataInternal>.get_HasValue
+	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>.get_HasValue
 	|
 	|-Nullable<ServerInfo>.get_HasValue
@@ -5615,8 +5603,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<LogPlayerSpawnOptions>.get_Value
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.get_Value
-	|
-	|-Nullable<LogPlayerTickOptions>.get_Value
 	|
 	|-Nullable<LogPlayerUseAbilityOptions>.get_Value
 	|
@@ -7083,8 +7069,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<LogPlayerSpawnOptions>.Equals
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.Equals
-	|
-	|-Nullable<LogPlayerTickOptions>.Equals
 	|
 	|-Nullable<LogPlayerUseAbilityOptions>.Equals
 	|
@@ -8998,9 +8982,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.Equals
 	|
-	|-Nullable<LogPlayerTickOptions>.Equals
-	|-Nullable<UserInfoDataInternal>.Equals
-	|
 	|-Nullable<LogPlayerUseWeaponData>.Equals
 	|-Nullable<QueryLeaderboardDefinitionsOptions>.Equals
 	|
@@ -9134,6 +9115,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Options>.Equals
 	|
 	|-Nullable<WindowsOptions>.Equals
+	|
+	|-Nullable<UserInfoDataInternal>.Equals
 	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>.Equals
 	|
@@ -9810,9 +9793,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.GetHashCode
 	|
-	|-Nullable<LogPlayerTickOptions>.GetHashCode
-	|-Nullable<UserInfoDataInternal>.GetHashCode
-	|
 	|-Nullable<LogPlayerUseWeaponData>.GetHashCode
 	|-Nullable<QueryLeaderboardDefinitionsOptions>.GetHashCode
 	|
@@ -9935,6 +9915,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Options>.GetHashCode
 	|
 	|-Nullable<WindowsOptions>.GetHashCode
+	|
+	|-Nullable<UserInfoDataInternal>.GetHashCode
 	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>.GetHashCode
 	|
@@ -10670,9 +10652,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.GetValueOrDefault
 	|
-	|-Nullable<LogPlayerTickOptions>.GetValueOrDefault
-	|-Nullable<UserInfoDataInternal>.GetValueOrDefault
-	|
 	|-Nullable<LogPlayerUseWeaponData>.GetValueOrDefault
 	|-Nullable<QueryLeaderboardDefinitionsOptions>.GetValueOrDefault
 	|
@@ -10788,6 +10767,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Options>.GetValueOrDefault
 	|
 	|-Nullable<WindowsOptions>.GetValueOrDefault
+	|
+	|-Nullable<UserInfoDataInternal>.GetValueOrDefault
 	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>.GetValueOrDefault
 	|
@@ -11433,9 +11414,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.GetValueOrDefault
 	|
-	|-Nullable<LogPlayerTickOptions>.GetValueOrDefault
-	|-Nullable<UserInfoDataInternal>.GetValueOrDefault
-	|
 	|-Nullable<LogPlayerUseWeaponData>.GetValueOrDefault
 	|-Nullable<QueryLeaderboardDefinitionsOptions>.GetValueOrDefault
 	|
@@ -11560,6 +11538,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Options>.GetValueOrDefault
 	|
 	|-Nullable<WindowsOptions>.GetValueOrDefault
+	|
+	|-Nullable<UserInfoDataInternal>.GetValueOrDefault
 	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>.GetValueOrDefault
 	|
@@ -11698,8 +11678,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<LogPlayerSpawnOptions>.ToString
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.ToString
-	|
-	|-Nullable<LogPlayerTickOptions>.ToString
 	|
 	|-Nullable<LogPlayerUseAbilityOptions>.ToString
 	|
@@ -13639,7 +13617,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.Box
 	|
-	|-Nullable<LogPlayerTickOptions>.Box
 	|-Nullable<LogPlayerUseWeaponData>.Box
 	|-Nullable<LoginOptions>.Box
 	|-Nullable<ExternalAccountInfo>.Box
@@ -14370,9 +14347,6 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|
 	|-Nullable<LogPlayerTakeDamageOptions>.Unbox
 	|
-	|-Nullable<LogPlayerTickOptions>.Unbox
-	|-Nullable<UserInfoDataInternal>.Unbox
-	|
 	|-Nullable<LogPlayerUseWeaponData>.Unbox
 	|-Nullable<QueryLeaderboardDefinitionsOptions>.Unbox
 	|
@@ -14511,6 +14485,8 @@ public struct Nullable<T> // TypeDefIndex: 380
 	|-Nullable<Options>.Unbox
 	|
 	|-Nullable<WindowsOptions>.Unbox
+	|
+	|-Nullable<UserInfoDataInternal>.Unbox
 	|
 	|-Nullable<PieMenu.MenuOption.ColorMode>.Unbox
 	|
@@ -15786,7 +15762,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>..ctor
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>..ctor
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>..ctor
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>..ctor
 	|-ReadOnlyCollection<Cassette.LoadRequest>..ctor
 	|-ReadOnlyCollection<Admin.PlayerInfo>..ctor
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>..ctor
@@ -15900,7 +15876,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>..ctor
 	|-ReadOnlyCollection<KeyValuePair<object, object>>..ctor
 	|-ReadOnlyCollection<KeyValuePair<object, float>>..ctor
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>..ctor
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>..ctor
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-ReadOnlyCollection<DateTime>..ctor
@@ -15966,7 +15941,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.get_Count
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Count
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.get_Count
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.get_Count
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.get_Count
 	|-ReadOnlyCollection<Cassette.LoadRequest>.get_Count
 	|-ReadOnlyCollection<Admin.PlayerInfo>.get_Count
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.get_Count
@@ -16080,7 +16055,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.get_Count
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.get_Count
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.get_Count
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.get_Count
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.get_Count
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Count
 	|-ReadOnlyCollection<DateTime>.get_Count
@@ -16198,7 +16172,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.get_Item
 	|-ReadOnlyCollection<InventoryRecipe>.get_Item
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.get_Item
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.get_Item
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Item
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.get_Item
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.get_Item
@@ -16251,7 +16224,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.get_Item
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.get_Item
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.get_Item
 	|-ReadOnlyCollection<Demos.DemoInfo>.get_Item
 	|-ReadOnlyCollection<Output.Entry>.get_Item
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.get_Item
@@ -16269,9 +16241,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.get_Item
 	|-ReadOnlyCollection<InventoryItem>.get_Item
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.get_Item
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.get_Item
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.get_Item
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.get_Item
 	|-ReadOnlyCollection<CapsuleParams>.get_Item
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.get_Item
@@ -16281,6 +16251,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.get_Item
 	|-ReadOnlyCollection<TreeInstance>.get_Item
 	|-ReadOnlyCollection<ViewModelDrawEvent>.get_Item
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.get_Item
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.get_Item
 	|
 	|-ReadOnlyCollection<CRedge>.get_Item
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.get_Item
@@ -16365,7 +16338,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.Contains
 	|-ReadOnlyCollection<InventoryRecipe>.Contains
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.Contains
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.Contains
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.Contains
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.Contains
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.Contains
@@ -16418,7 +16390,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.Contains
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.Contains
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.Contains
 	|-ReadOnlyCollection<Demos.DemoInfo>.Contains
 	|-ReadOnlyCollection<Output.Entry>.Contains
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.Contains
@@ -16436,9 +16407,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.Contains
 	|-ReadOnlyCollection<InventoryItem>.Contains
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.Contains
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.Contains
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.Contains
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.Contains
 	|-ReadOnlyCollection<CapsuleParams>.Contains
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.Contains
@@ -16448,6 +16417,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.Contains
 	|-ReadOnlyCollection<TreeInstance>.Contains
 	|-ReadOnlyCollection<ViewModelDrawEvent>.Contains
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.Contains
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.Contains
 	|
 	|-ReadOnlyCollection<CRedge>.Contains
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.Contains
@@ -16556,7 +16528,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.CopyTo
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.CopyTo
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.CopyTo
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.CopyTo
 	|-ReadOnlyCollection<Cassette.LoadRequest>.CopyTo
 	|-ReadOnlyCollection<Admin.PlayerInfo>.CopyTo
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.CopyTo
@@ -16670,7 +16642,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.CopyTo
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.CopyTo
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.CopyTo
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.CopyTo
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.CopyTo
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.CopyTo
 	|-ReadOnlyCollection<DateTime>.CopyTo
@@ -16734,7 +16705,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.GetEnumerator
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.GetEnumerator
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.GetEnumerator
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.GetEnumerator
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.GetEnumerator
 	|-ReadOnlyCollection<Cassette.LoadRequest>.GetEnumerator
 	|-ReadOnlyCollection<Admin.PlayerInfo>.GetEnumerator
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.GetEnumerator
@@ -16848,7 +16819,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.GetEnumerator
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.GetEnumerator
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.GetEnumerator
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.GetEnumerator
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.GetEnumerator
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.GetEnumerator
 	|-ReadOnlyCollection<DateTime>.GetEnumerator
@@ -16929,7 +16899,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.IndexOf
 	|-ReadOnlyCollection<InventoryRecipe>.IndexOf
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.IndexOf
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.IndexOf
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.IndexOf
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.IndexOf
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.IndexOf
@@ -16982,7 +16951,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.IndexOf
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.IndexOf
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.IndexOf
 	|-ReadOnlyCollection<Demos.DemoInfo>.IndexOf
 	|-ReadOnlyCollection<Output.Entry>.IndexOf
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.IndexOf
@@ -17000,9 +16968,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.IndexOf
 	|-ReadOnlyCollection<InventoryItem>.IndexOf
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.IndexOf
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.IndexOf
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.IndexOf
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.IndexOf
 	|-ReadOnlyCollection<CapsuleParams>.IndexOf
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.IndexOf
@@ -17012,6 +16978,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.IndexOf
 	|-ReadOnlyCollection<TreeInstance>.IndexOf
 	|-ReadOnlyCollection<ViewModelDrawEvent>.IndexOf
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.IndexOf
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.IndexOf
 	|
 	|-ReadOnlyCollection<CRedge>.IndexOf
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.IndexOf
@@ -17120,7 +17089,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -17234,7 +17203,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -17313,7 +17281,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<InventoryRecipe>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.System.Collections.Generic.IList<T>.get_Item
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.System.Collections.Generic.IList<T>.get_Item
@@ -17366,7 +17333,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.Generic.IList<T>.get_Item
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.get_Item
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.System.Collections.Generic.IList<T>.get_Item
@@ -17384,9 +17350,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<InventoryItem>.System.Collections.Generic.IList<T>.get_Item
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.get_Item
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.Generic.IList<T>.get_Item
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.System.Collections.Generic.IList<T>.get_Item
@@ -17396,6 +17360,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<TreeInstance>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<ViewModelDrawEvent>.System.Collections.Generic.IList<T>.get_Item
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.get_Item
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.Generic.IList<T>.get_Item
 	|
 	|-ReadOnlyCollection<CRedge>.System.Collections.Generic.IList<T>.get_Item
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.System.Collections.Generic.IList<T>.get_Item
@@ -17496,7 +17463,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.set_Item
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.set_Item
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.IList<T>.set_Item
@@ -17610,7 +17577,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.IList<T>.set_Item
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.IList<T>.set_Item
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.IList<T>.set_Item
@@ -17672,7 +17638,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.Add
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Add
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.ICollection<T>.Add
@@ -17786,7 +17752,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.ICollection<T>.Add
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.ICollection<T>.Add
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.ICollection<T>.Add
@@ -17848,7 +17813,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.Clear
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Clear
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.ICollection<T>.Clear
@@ -17962,7 +17927,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.ICollection<T>.Clear
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.ICollection<T>.Clear
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.ICollection<T>.Clear
@@ -18024,7 +17988,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.Insert
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.Insert
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.IList<T>.Insert
@@ -18138,7 +18102,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.IList<T>.Insert
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.IList<T>.Insert
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.IList<T>.Insert
@@ -18200,7 +18163,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.Remove
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Remove
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.ICollection<T>.Remove
@@ -18314,7 +18277,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.ICollection<T>.Remove
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.ICollection<T>.Remove
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.ICollection<T>.Remove
@@ -18376,7 +18338,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.Generic.IList<T>.RemoveAt
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.RemoveAt
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.Generic.IList<T>.RemoveAt
@@ -18490,7 +18452,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.Generic.IList<T>.RemoveAt
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.IList<T>.RemoveAt
 	|-ReadOnlyCollection<DateTime>.System.Collections.Generic.IList<T>.RemoveAt
@@ -18556,7 +18517,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerable.GetEnumerator
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -18784,8 +18745,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IEnumerable.GetEnumerator
-	|
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEnumerable.GetEnumerator
@@ -18902,7 +18861,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.get_SyncRoot
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -19130,8 +19089,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.ICollection.get_SyncRoot
-	|
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.ICollection.get_SyncRoot
@@ -19248,7 +19205,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.ICollection.CopyTo
 	|
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.CopyTo
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.ICollection.CopyTo
 	|
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.ICollection.CopyTo
 	|
@@ -19476,8 +19433,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.ICollection.CopyTo
 	|
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.ICollection.CopyTo
-	|
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.ICollection.CopyTo
 	|
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.ICollection.CopyTo
@@ -19590,7 +19545,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsFixedSize
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsFixedSize
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.get_IsFixedSize
@@ -19704,7 +19659,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.get_IsFixedSize
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.get_IsFixedSize
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.get_IsFixedSize
@@ -19766,7 +19720,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsReadOnly
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsReadOnly
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.get_IsReadOnly
@@ -19880,7 +19834,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.get_IsReadOnly
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.get_IsReadOnly
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.get_IsReadOnly
@@ -19959,7 +19912,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<InventoryRecipe>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.System.Collections.IList.get_Item
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.get_Item
@@ -20012,7 +19964,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.get_Item
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.get_Item
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.get_Item
@@ -20030,9 +19981,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<InventoryItem>.System.Collections.IList.get_Item
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.get_Item
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.IList.get_Item
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.System.Collections.IList.get_Item
@@ -20042,6 +19991,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<TreeInstance>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<ViewModelDrawEvent>.System.Collections.IList.get_Item
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.get_Item
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.IList.get_Item
 	|
 	|-ReadOnlyCollection<CRedge>.System.Collections.IList.get_Item
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.System.Collections.IList.get_Item
@@ -20147,7 +20099,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.set_Item
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.set_Item
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.set_Item
@@ -20261,7 +20213,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.set_Item
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.set_Item
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.set_Item
@@ -20323,7 +20274,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Add
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Add
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Add
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Add
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.Add
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Add
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Add
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.Add
@@ -20437,7 +20388,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.Add
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.Add
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.Add
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.Add
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.Add
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Add
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.Add
@@ -20499,7 +20449,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Clear
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Clear
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.Clear
@@ -20613,7 +20563,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.Clear
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Clear
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.Clear
@@ -20692,7 +20641,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.IsCompatibleObject
 	|-ReadOnlyCollection<InventoryRecipe>.IsCompatibleObject
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.IsCompatibleObject
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.IsCompatibleObject
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.IsCompatibleObject
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.IsCompatibleObject
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.IsCompatibleObject
@@ -20738,7 +20686,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WindZoneExManager.CurrentZoneEntry>.IsCompatibleObject
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.IsCompatibleObject
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.IsCompatibleObject
 	|-ReadOnlyCollection<Demos.DemoInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<Output.Entry>.IsCompatibleObject
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.IsCompatibleObject
@@ -20756,9 +20703,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.IsCompatibleObject
 	|-ReadOnlyCollection<InventoryItem>.IsCompatibleObject
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.IsCompatibleObject
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.IsCompatibleObject
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.IsCompatibleObject
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.IsCompatibleObject
 	|-ReadOnlyCollection<CapsuleParams>.IsCompatibleObject
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.IsCompatibleObject
@@ -20768,6 +20713,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.IsCompatibleObject
 	|-ReadOnlyCollection<TreeInstance>.IsCompatibleObject
 	|-ReadOnlyCollection<ViewModelDrawEvent>.IsCompatibleObject
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.IsCompatibleObject
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.IsCompatibleObject
 	|
 	|-ReadOnlyCollection<CRedge>.IsCompatibleObject
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.IsCompatibleObject
@@ -20898,7 +20846,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<InventoryRecipe>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.System.Collections.IList.Contains
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.Contains
@@ -20951,7 +20898,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.Contains
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Contains
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.Contains
@@ -20969,9 +20915,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<InventoryItem>.System.Collections.IList.Contains
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Contains
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.IList.Contains
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.System.Collections.IList.Contains
@@ -20981,6 +20925,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<TreeInstance>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<ViewModelDrawEvent>.System.Collections.IList.Contains
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Contains
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.IList.Contains
 	|
 	|-ReadOnlyCollection<CRedge>.System.Collections.IList.Contains
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.System.Collections.IList.Contains
@@ -21104,7 +21051,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<InventoryRecipe.Ingredient>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<InventoryRecipe>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<SynchronizedClock.TimedEvent>.System.Collections.IList.IndexOf
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<CustomAttributeNamedArgument>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.IndexOf
@@ -21157,7 +21103,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.IndexOf
 	|
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.IndexOf
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Demos.DemoInfo>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Output.Entry>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.IndexOf
@@ -21175,9 +21120,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<InventoryItem>.System.Collections.IList.IndexOf
 	|
-	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.IndexOf
-	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.IList.IndexOf
-	|
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<Admin.ServerUGCInfo>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<CapsuleParams>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<SkeletonDefinition.Bone>.System.Collections.IList.IndexOf
@@ -21187,6 +21130,9 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<RenderTargetIdentifier>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<TreeInstance>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<ViewModelDrawEvent>.System.Collections.IList.IndexOf
+	|
+	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.IndexOf
+	|-ReadOnlyCollection<PlaceMonuments.SpawnInfo>.System.Collections.IList.IndexOf
 	|
 	|-ReadOnlyCollection<CRedge>.System.Collections.IList.IndexOf
 	|-ReadOnlyCollection<ProjectileWeaponMod.Modifier>.System.Collections.IList.IndexOf
@@ -21293,7 +21239,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Insert
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Insert
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.Insert
@@ -21407,7 +21353,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.Insert
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Insert
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.Insert
@@ -21469,7 +21414,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.Remove
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.Remove
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.Remove
@@ -21583,7 +21528,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.Remove
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Remove
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.Remove
@@ -21645,7 +21589,7 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<AlignedLineDrawer.LinePoint>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<BaseEntity.PendingFileRequest>.System.Collections.IList.RemoveAt
-	|-ReadOnlyCollection<CardTableUI.KeycodeWithAction>.System.Collections.IList.RemoveAt
+	|-ReadOnlyCollection<CardGameUI.KeycodeWithAction>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<Cassette.LoadRequest>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<Admin.PlayerInfo>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<Admin.ServerConvarInfo>.System.Collections.IList.RemoveAt
@@ -21759,7 +21703,6 @@ public class ReadOnlyCollection<T> : IList<T>, ICollection<T>, IEnumerable<T>, I
 	|-ReadOnlyCollection<KeyValuePair<Int32Enum, object>>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<object, object>>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<object, float>>.System.Collections.IList.RemoveAt
-	|-ReadOnlyCollection<KeyValuePair<object, Color>>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<uint, object>>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.RemoveAt
 	|-ReadOnlyCollection<DateTime>.System.Collections.IList.RemoveAt
@@ -23085,8 +23028,6 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<object, byte>..ctor
 	|
 	|-KeyValuePair<object, Decimal>..ctor
-	|-KeyValuePair<object, Color>..ctor
-	|-KeyValuePair<Renderer, Color>..ctor
 	|
 	|-KeyValuePair<object, double>..ctor
 	|
@@ -23108,6 +23049,7 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<string, IEnumerable<string>>..ctor
 	|-KeyValuePair<string, object>..ctor
 	|-KeyValuePair<Type, XmlRootAttribute>..ctor
+	|-KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>..ctor
 	|
 	|-KeyValuePair<object, ResourceLocator>..ctor
 	|-KeyValuePair<object, ValueTuple<object, object>>..ctor
@@ -23185,7 +23127,7 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<TerrainUtility.TerrainMap.TileCoord, Terrain>.get_Key
 	|-KeyValuePair<Light, float>.get_Key
 	|-KeyValuePair<Mesh, int>.get_Key
-	|-KeyValuePair<Renderer, Color>.get_Key
+	|-KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>.get_Key
 	|-KeyValuePair<Renderer, ShadowCastingMode>.get_Key
 	|-KeyValuePair<Texture2D, WaterDynamics.InstanceBatch>.get_Key
 	|-KeyValuePair<Transform, int>.get_Key
@@ -23227,7 +23169,6 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<object, uint>.get_Key
 	|-KeyValuePair<object, ulong>.get_Key
 	|-KeyValuePair<object, ValueTuple<object, object>>.get_Key
-	|-KeyValuePair<object, Color>.get_Key
 	|-KeyValuePair<object, Vector3>.get_Key
 	|-KeyValuePair<string, EventTags>.get_Key
 	|-KeyValuePair<string, object>.get_Key
@@ -23464,6 +23405,7 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<XmlQualifiedName, SchemaElementDecl>.get_Value
 	|-KeyValuePair<Camera, Dictionary<int, CommandBuffer>>.get_Value
 	|-KeyValuePair<Collider, List<Collider>>.get_Value
+	|-KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>.get_Value
 	|-KeyValuePair<MonitorType, Monitor>.get_Value
 	|-KeyValuePair<Texture2D, WaterDynamics.InstanceBatch>.get_Value
 	|-KeyValuePair<WaterCamera, WaterRuntime>.get_Value
@@ -23551,14 +23493,12 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|
 	|-KeyValuePair<int, CommandBufferManager.CommandBufferEntry>.get_Value
 	|-KeyValuePair<ulong, Dispatch.ResultCallback>.get_Value
-	|-KeyValuePair<Renderer, Color>.get_Value
 	|-KeyValuePair<double, Decimal>.get_Value
 	|-KeyValuePair<int, RendererKey>.get_Value
 	|-KeyValuePair<long, Decimal>.get_Value
 	|-KeyValuePair<object, Decimal>.get_Value
 	|-KeyValuePair<object, ResourceLocator>.get_Value
 	|-KeyValuePair<object, ValueTuple<object, object>>.get_Value
-	|-KeyValuePair<object, Color>.get_Value
 	|-KeyValuePair<ulong, AvatarCache.Entry>.get_Value
 	|-KeyValuePair<ulong, Decimal>.get_Value
 	|
@@ -23915,7 +23855,6 @@ public struct KeyValuePair<TKey, TValue> // TypeDefIndex: 1444
 	|-KeyValuePair<object, Decimal>.ToString
 	|-KeyValuePair<object, ResourceLocator>.ToString
 	|-KeyValuePair<object, ValueTuple<object, object>>.ToString
-	|-KeyValuePair<object, Color>.ToString
 	|
 	|-KeyValuePair<object, double>.ToString
 	|
@@ -50873,7 +50812,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<AlignedLineDrawer.LinePoint>.get_Default
 	|-Comparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Default
 	|-Comparer<BaseEntity.PendingFileRequest>.get_Default
-	|-Comparer<CardTableUI.KeycodeWithAction>.get_Default
+	|-Comparer<CardGameUI.KeycodeWithAction>.get_Default
 	|-Comparer<Cassette.LoadRequest>.get_Default
 	|-Comparer<Admin.PlayerInfo>.get_Default
 	|-Comparer<Admin.ServerConvarInfo>.get_Default
@@ -50992,7 +50931,6 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<KeyValuePair<long, object>>.get_Default
 	|-Comparer<KeyValuePair<object, object>>.get_Default
 	|-Comparer<KeyValuePair<object, float>>.get_Default
-	|-Comparer<KeyValuePair<object, Color>>.get_Default
 	|-Comparer<KeyValuePair<uint, object>>.get_Default
 	|-Comparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Default
 	|-Comparer<DateTime>.get_Default
@@ -51058,7 +50996,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|
 	|-Comparer<BaseEntity.PendingFileRequest>.CreateComparer
 	|
-	|-Comparer<CardTableUI.KeycodeWithAction>.CreateComparer
+	|-Comparer<CardGameUI.KeycodeWithAction>.CreateComparer
 	|
 	|-Comparer<Cassette.LoadRequest>.CreateComparer
 	|
@@ -51296,8 +51234,6 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|
 	|-Comparer<KeyValuePair<object, float>>.CreateComparer
 	|
-	|-Comparer<KeyValuePair<object, Color>>.CreateComparer
-	|
 	|-Comparer<KeyValuePair<uint, object>>.CreateComparer
 	|
 	|-Comparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.CreateComparer
@@ -51433,7 +51369,6 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<InventoryRecipe.Ingredient>.System.Collections.IComparer.Compare
 	|-Comparer<InventoryRecipe>.System.Collections.IComparer.Compare
 	|-Comparer<SynchronizedClock.TimedEvent>.System.Collections.IComparer.Compare
-	|-Comparer<KeyValuePair<object, Color>>.System.Collections.IComparer.Compare
 	|-Comparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IComparer.Compare
 	|-Comparer<UnitySynchronizationContext.WorkRequest>.System.Collections.IComparer.Compare
 	|
@@ -51487,7 +51422,6 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IComparer.Compare
 	|
 	|-Comparer<BaseEntity.PendingFileRequest>.System.Collections.IComparer.Compare
-	|-Comparer<CardTableUI.KeycodeWithAction>.System.Collections.IComparer.Compare
 	|-Comparer<Demos.DemoInfo>.System.Collections.IComparer.Compare
 	|-Comparer<Output.Entry>.System.Collections.IComparer.Compare
 	|-Comparer<IconSkinPicker.SkinButtonSetup>.System.Collections.IComparer.Compare
@@ -51506,10 +51440,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<SpecialPurposeCamera.RenderEntry>.System.Collections.IComparer.Compare
 	|-Comparer<InventoryItem>.System.Collections.IComparer.Compare
 	|
-	|-Comparer<Admin.PlayerInfo>.System.Collections.IComparer.Compare
-	|-Comparer<PlaceMonuments.SpawnInfo>.System.Collections.IComparer.Compare
-	|-Comparer<Matrix4x4>.System.Collections.IComparer.Compare
-	|
+	|-Comparer<CardGameUI.KeycodeWithAction>.System.Collections.IComparer.Compare
 	|-Comparer<Admin.ServerUGCInfo>.System.Collections.IComparer.Compare
 	|-Comparer<CapsuleParams>.System.Collections.IComparer.Compare
 	|-Comparer<SkeletonDefinition.Bone>.System.Collections.IComparer.Compare
@@ -51519,6 +51450,10 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<RenderTargetIdentifier>.System.Collections.IComparer.Compare
 	|-Comparer<TreeInstance>.System.Collections.IComparer.Compare
 	|-Comparer<ViewModelDrawEvent>.System.Collections.IComparer.Compare
+	|
+	|-Comparer<Admin.PlayerInfo>.System.Collections.IComparer.Compare
+	|-Comparer<PlaceMonuments.SpawnInfo>.System.Collections.IComparer.Compare
+	|-Comparer<Matrix4x4>.System.Collections.IComparer.Compare
 	|
 	|-Comparer<CRedge>.System.Collections.IComparer.Compare
 	|-Comparer<ProjectileWeaponMod.Modifier>.System.Collections.IComparer.Compare
@@ -51630,7 +51565,7 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<AlignedLineDrawer.LinePoint>..ctor
 	|-Comparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-Comparer<BaseEntity.PendingFileRequest>..ctor
-	|-Comparer<CardTableUI.KeycodeWithAction>..ctor
+	|-Comparer<CardGameUI.KeycodeWithAction>..ctor
 	|-Comparer<Cassette.LoadRequest>..ctor
 	|-Comparer<Admin.PlayerInfo>..ctor
 	|-Comparer<Admin.ServerConvarInfo>..ctor
@@ -51749,7 +51684,6 @@ public abstract class Comparer<T> : IComparer, IComparer<T> // TypeDefIndex: 146
 	|-Comparer<KeyValuePair<long, object>>..ctor
 	|-Comparer<KeyValuePair<object, object>>..ctor
 	|-Comparer<KeyValuePair<object, float>>..ctor
-	|-Comparer<KeyValuePair<object, Color>>..ctor
 	|-Comparer<KeyValuePair<uint, object>>..ctor
 	|-Comparer<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-Comparer<DateTime>..ctor
@@ -51966,7 +51900,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|
 	|-ObjectComparer<BaseEntity.PendingFileRequest>.Compare
 	|
-	|-ObjectComparer<CardTableUI.KeycodeWithAction>.Compare
+	|-ObjectComparer<CardGameUI.KeycodeWithAction>.Compare
 	|
 	|-ObjectComparer<Cassette.LoadRequest>.Compare
 	|
@@ -52204,8 +52138,6 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|
 	|-ObjectComparer<KeyValuePair<object, float>>.Compare
 	|
-	|-ObjectComparer<KeyValuePair<object, Color>>.Compare
-	|
 	|-ObjectComparer<KeyValuePair<uint, object>>.Compare
 	|
 	|-ObjectComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.Compare
@@ -52318,7 +52250,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<AlignedLineDrawer.LinePoint>.Equals
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Equals
 	|-ObjectComparer<BaseEntity.PendingFileRequest>.Equals
-	|-ObjectComparer<CardTableUI.KeycodeWithAction>.Equals
+	|-ObjectComparer<CardGameUI.KeycodeWithAction>.Equals
 	|-ObjectComparer<Cassette.LoadRequest>.Equals
 	|-ObjectComparer<Admin.PlayerInfo>.Equals
 	|-ObjectComparer<Admin.ServerConvarInfo>.Equals
@@ -52437,7 +52369,6 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<KeyValuePair<long, object>>.Equals
 	|-ObjectComparer<KeyValuePair<object, object>>.Equals
 	|-ObjectComparer<KeyValuePair<object, float>>.Equals
-	|-ObjectComparer<KeyValuePair<object, Color>>.Equals
 	|-ObjectComparer<KeyValuePair<uint, object>>.Equals
 	|-ObjectComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.Equals
 	|-ObjectComparer<DateTime>.Equals
@@ -52499,7 +52430,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<AlignedLineDrawer.LinePoint>.GetHashCode
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.GetHashCode
 	|-ObjectComparer<BaseEntity.PendingFileRequest>.GetHashCode
-	|-ObjectComparer<CardTableUI.KeycodeWithAction>.GetHashCode
+	|-ObjectComparer<CardGameUI.KeycodeWithAction>.GetHashCode
 	|-ObjectComparer<Cassette.LoadRequest>.GetHashCode
 	|-ObjectComparer<Admin.PlayerInfo>.GetHashCode
 	|-ObjectComparer<Admin.ServerConvarInfo>.GetHashCode
@@ -52618,7 +52549,6 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<KeyValuePair<long, object>>.GetHashCode
 	|-ObjectComparer<KeyValuePair<object, object>>.GetHashCode
 	|-ObjectComparer<KeyValuePair<object, float>>.GetHashCode
-	|-ObjectComparer<KeyValuePair<object, Color>>.GetHashCode
 	|-ObjectComparer<KeyValuePair<uint, object>>.GetHashCode
 	|-ObjectComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.GetHashCode
 	|-ObjectComparer<DateTime>.GetHashCode
@@ -52680,7 +52610,7 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<AlignedLineDrawer.LinePoint>..ctor
 	|-ObjectComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>..ctor
 	|-ObjectComparer<BaseEntity.PendingFileRequest>..ctor
-	|-ObjectComparer<CardTableUI.KeycodeWithAction>..ctor
+	|-ObjectComparer<CardGameUI.KeycodeWithAction>..ctor
 	|-ObjectComparer<Cassette.LoadRequest>..ctor
 	|-ObjectComparer<Admin.PlayerInfo>..ctor
 	|-ObjectComparer<Admin.ServerConvarInfo>..ctor
@@ -52799,7 +52729,6 @@ internal class ObjectComparer<T> : Comparer<T> // TypeDefIndex: 1465
 	|-ObjectComparer<KeyValuePair<long, object>>..ctor
 	|-ObjectComparer<KeyValuePair<object, object>>..ctor
 	|-ObjectComparer<KeyValuePair<object, float>>..ctor
-	|-ObjectComparer<KeyValuePair<object, Color>>..ctor
 	|-ObjectComparer<KeyValuePair<uint, object>>..ctor
 	|-ObjectComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-ObjectComparer<DateTime>..ctor
@@ -52881,7 +52810,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<BaseEntity.PendingFileRequest>.get_Default
 	|-EqualityComparer<BaseEntity.QueuedFileRequest>.get_Default
 	|-EqualityComparer<CameraMan.CameraState>.get_Default
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>.get_Default
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>.get_Default
 	|-EqualityComparer<Cassette.LoadRequest>.get_Default
 	|-EqualityComparer<CommandBufferManager.CommandBufferEntry>.get_Default
 	|-EqualityComparer<Admin.PlayerInfo>.get_Default
@@ -53017,7 +52946,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<KeyValuePair<Int32Enum, object>>.get_Default
 	|-EqualityComparer<KeyValuePair<object, object>>.get_Default
 	|-EqualityComparer<KeyValuePair<object, float>>.get_Default
-	|-EqualityComparer<KeyValuePair<object, Color>>.get_Default
 	|-EqualityComparer<KeyValuePair<uint, object>>.get_Default
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Default
 	|-EqualityComparer<DateTime>.get_Default
@@ -53101,7 +53029,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<CameraMan.CameraState>.CreateComparer
 	|
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>.CreateComparer
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>.CreateComparer
 	|
 	|-EqualityComparer<Cassette.LoadRequest>.CreateComparer
 	|
@@ -53373,8 +53301,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|
 	|-EqualityComparer<KeyValuePair<object, float>>.CreateComparer
 	|
-	|-EqualityComparer<KeyValuePair<object, Color>>.CreateComparer
-	|
 	|-EqualityComparer<KeyValuePair<uint, object>>.CreateComparer
 	|
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.CreateComparer
@@ -53543,7 +53469,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<InventoryRecipe>.IndexOf
 	|-EqualityComparer<StringFormatCache.Key2>.IndexOf
 	|-EqualityComparer<SynchronizedClock.TimedEvent>.IndexOf
-	|-EqualityComparer<KeyValuePair<object, Color>>.IndexOf
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.IndexOf
 	|-EqualityComparer<UnitySynchronizationContext.WorkRequest>.IndexOf
 	|
@@ -53609,7 +53534,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<BaseEntity.PendingFileRequest>.IndexOf
 	|-EqualityComparer<BaseEntity.QueuedFileRequest>.IndexOf
 	|-EqualityComparer<CameraMan.CameraState>.IndexOf
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>.IndexOf
 	|-EqualityComparer<Demos.DemoInfo>.IndexOf
 	|-EqualityComparer<Output.Entry>.IndexOf
 	|-EqualityComparer<IconSkinPicker.SkinButtonSetup>.IndexOf
@@ -53630,10 +53554,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<StringFormatCache.Key3>.IndexOf
 	|-EqualityComparer<SpriteState>.IndexOf
 	|
-	|-EqualityComparer<Admin.PlayerInfo>.IndexOf
-	|-EqualityComparer<PlaceMonuments.SpawnInfo>.IndexOf
-	|-EqualityComparer<Matrix4x4>.IndexOf
-	|
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>.IndexOf
 	|-EqualityComparer<Admin.ServerUGCInfo>.IndexOf
 	|-EqualityComparer<CapsuleParams>.IndexOf
 	|-EqualityComparer<RCon.Command>.IndexOf
@@ -53646,6 +53567,10 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<TreeInstance>.IndexOf
 	|-EqualityComparer<Navigation>.IndexOf
 	|-EqualityComparer<ViewModelDrawEvent>.IndexOf
+	|
+	|-EqualityComparer<Admin.PlayerInfo>.IndexOf
+	|-EqualityComparer<PlaceMonuments.SpawnInfo>.IndexOf
+	|-EqualityComparer<Matrix4x4>.IndexOf
 	|
 	|-EqualityComparer<CRedge>.IndexOf
 	|-EqualityComparer<ProjectileWeaponMod.Modifier>.IndexOf
@@ -53790,7 +53715,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<InventoryRecipe>.LastIndexOf
 	|-EqualityComparer<StringFormatCache.Key2>.LastIndexOf
 	|-EqualityComparer<SynchronizedClock.TimedEvent>.LastIndexOf
-	|-EqualityComparer<KeyValuePair<object, Color>>.LastIndexOf
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.LastIndexOf
 	|-EqualityComparer<UnitySynchronizationContext.WorkRequest>.LastIndexOf
 	|
@@ -53856,7 +53780,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<BaseEntity.PendingFileRequest>.LastIndexOf
 	|-EqualityComparer<BaseEntity.QueuedFileRequest>.LastIndexOf
 	|-EqualityComparer<CameraMan.CameraState>.LastIndexOf
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>.LastIndexOf
 	|-EqualityComparer<Demos.DemoInfo>.LastIndexOf
 	|-EqualityComparer<Output.Entry>.LastIndexOf
 	|-EqualityComparer<IconSkinPicker.SkinButtonSetup>.LastIndexOf
@@ -53877,10 +53800,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<StringFormatCache.Key3>.LastIndexOf
 	|-EqualityComparer<SpriteState>.LastIndexOf
 	|
-	|-EqualityComparer<Admin.PlayerInfo>.LastIndexOf
-	|-EqualityComparer<PlaceMonuments.SpawnInfo>.LastIndexOf
-	|-EqualityComparer<Matrix4x4>.LastIndexOf
-	|
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>.LastIndexOf
 	|-EqualityComparer<Admin.ServerUGCInfo>.LastIndexOf
 	|-EqualityComparer<CapsuleParams>.LastIndexOf
 	|-EqualityComparer<RCon.Command>.LastIndexOf
@@ -53893,6 +53813,10 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<TreeInstance>.LastIndexOf
 	|-EqualityComparer<Navigation>.LastIndexOf
 	|-EqualityComparer<ViewModelDrawEvent>.LastIndexOf
+	|
+	|-EqualityComparer<Admin.PlayerInfo>.LastIndexOf
+	|-EqualityComparer<PlaceMonuments.SpawnInfo>.LastIndexOf
+	|-EqualityComparer<Matrix4x4>.LastIndexOf
 	|
 	|-EqualityComparer<CRedge>.LastIndexOf
 	|-EqualityComparer<ProjectileWeaponMod.Modifier>.LastIndexOf
@@ -54037,7 +53961,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<InventoryRecipe>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<StringFormatCache.Key2>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<SynchronizedClock.TimedEvent>.System.Collections.IEqualityComparer.GetHashCode
-	|-EqualityComparer<KeyValuePair<object, Color>>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<UnitySynchronizationContext.WorkRequest>.System.Collections.IEqualityComparer.GetHashCode
 	|
@@ -54103,7 +54026,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<BaseEntity.PendingFileRequest>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<BaseEntity.QueuedFileRequest>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<CameraMan.CameraState>.System.Collections.IEqualityComparer.GetHashCode
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Demos.DemoInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Output.Entry>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<IconSkinPicker.SkinButtonSetup>.System.Collections.IEqualityComparer.GetHashCode
@@ -54124,10 +54046,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<StringFormatCache.Key3>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<SpriteState>.System.Collections.IEqualityComparer.GetHashCode
 	|
-	|-EqualityComparer<Admin.PlayerInfo>.System.Collections.IEqualityComparer.GetHashCode
-	|-EqualityComparer<PlaceMonuments.SpawnInfo>.System.Collections.IEqualityComparer.GetHashCode
-	|-EqualityComparer<Matrix4x4>.System.Collections.IEqualityComparer.GetHashCode
-	|
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Admin.ServerUGCInfo>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<CapsuleParams>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<RCon.Command>.System.Collections.IEqualityComparer.GetHashCode
@@ -54140,6 +54059,10 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<TreeInstance>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<Navigation>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<ViewModelDrawEvent>.System.Collections.IEqualityComparer.GetHashCode
+	|
+	|-EqualityComparer<Admin.PlayerInfo>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<PlaceMonuments.SpawnInfo>.System.Collections.IEqualityComparer.GetHashCode
+	|-EqualityComparer<Matrix4x4>.System.Collections.IEqualityComparer.GetHashCode
 	|
 	|-EqualityComparer<CRedge>.System.Collections.IEqualityComparer.GetHashCode
 	|-EqualityComparer<ProjectileWeaponMod.Modifier>.System.Collections.IEqualityComparer.GetHashCode
@@ -54281,7 +54204,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<InventoryRecipe>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<StringFormatCache.Key2>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<SynchronizedClock.TimedEvent>.System.Collections.IEqualityComparer.Equals
-	|-EqualityComparer<KeyValuePair<object, Color>>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<UnitySynchronizationContext.WorkRequest>.System.Collections.IEqualityComparer.Equals
 	|
@@ -54347,7 +54269,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<BaseEntity.PendingFileRequest>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<BaseEntity.QueuedFileRequest>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<CameraMan.CameraState>.System.Collections.IEqualityComparer.Equals
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Demos.DemoInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Output.Entry>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<IconSkinPicker.SkinButtonSetup>.System.Collections.IEqualityComparer.Equals
@@ -54368,10 +54289,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<StringFormatCache.Key3>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<SpriteState>.System.Collections.IEqualityComparer.Equals
 	|
-	|-EqualityComparer<Admin.PlayerInfo>.System.Collections.IEqualityComparer.Equals
-	|-EqualityComparer<PlaceMonuments.SpawnInfo>.System.Collections.IEqualityComparer.Equals
-	|-EqualityComparer<Matrix4x4>.System.Collections.IEqualityComparer.Equals
-	|
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Admin.ServerUGCInfo>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<CapsuleParams>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<RCon.Command>.System.Collections.IEqualityComparer.Equals
@@ -54384,6 +54302,10 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<TreeInstance>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<Navigation>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<ViewModelDrawEvent>.System.Collections.IEqualityComparer.Equals
+	|
+	|-EqualityComparer<Admin.PlayerInfo>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<PlaceMonuments.SpawnInfo>.System.Collections.IEqualityComparer.Equals
+	|-EqualityComparer<Matrix4x4>.System.Collections.IEqualityComparer.Equals
 	|
 	|-EqualityComparer<CRedge>.System.Collections.IEqualityComparer.Equals
 	|-EqualityComparer<ProjectileWeaponMod.Modifier>.System.Collections.IEqualityComparer.Equals
@@ -54512,7 +54434,7 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<BaseEntity.PendingFileRequest>..ctor
 	|-EqualityComparer<BaseEntity.QueuedFileRequest>..ctor
 	|-EqualityComparer<CameraMan.CameraState>..ctor
-	|-EqualityComparer<CardTableUI.KeycodeWithAction>..ctor
+	|-EqualityComparer<CardGameUI.KeycodeWithAction>..ctor
 	|-EqualityComparer<Cassette.LoadRequest>..ctor
 	|-EqualityComparer<CommandBufferManager.CommandBufferEntry>..ctor
 	|-EqualityComparer<Admin.PlayerInfo>..ctor
@@ -54648,7 +54570,6 @@ public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer
 	|-EqualityComparer<KeyValuePair<Int32Enum, object>>..ctor
 	|-EqualityComparer<KeyValuePair<object, object>>..ctor
 	|-EqualityComparer<KeyValuePair<object, float>>..ctor
-	|-EqualityComparer<KeyValuePair<object, Color>>..ctor
 	|-EqualityComparer<KeyValuePair<uint, object>>..ctor
 	|-EqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-EqualityComparer<DateTime>..ctor
@@ -55395,7 +55316,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TickRenderer.Tick>.Equals
 	|-ObjectEqualityComparer<InventoryRecipe.Ingredient>.Equals
 	|-ObjectEqualityComparer<SynchronizedClock.TimedEvent>.Equals
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>.Equals
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.Equals
 	|-ObjectEqualityComparer<UnitySynchronizationContext.WorkRequest>.Equals
 	|
@@ -55448,7 +55368,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.Equals
 	|
 	|-ObjectEqualityComparer<CameraMan.CameraState>.Equals
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.Equals
 	|-ObjectEqualityComparer<Demos.DemoInfo>.Equals
 	|-ObjectEqualityComparer<Output.Entry>.Equals
 	|-ObjectEqualityComparer<IconSkinPicker.SkinButtonSetup>.Equals
@@ -55464,9 +55383,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<SpawnIndividual>.Equals
 	|-ObjectEqualityComparer<SpriteState>.Equals
 	|
-	|-ObjectEqualityComparer<Admin.PlayerInfo>.Equals
-	|-ObjectEqualityComparer<PlaceMonuments.SpawnInfo>.Equals
-	|
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>.Equals
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.Equals
 	|-ObjectEqualityComparer<CapsuleParams>.Equals
 	|-ObjectEqualityComparer<RCon.Command>.Equals
@@ -55476,6 +55393,9 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<InventoryItem.Amount>.Equals
 	|-ObjectEqualityComparer<TreeInstance>.Equals
 	|-ObjectEqualityComparer<Navigation>.Equals
+	|
+	|-ObjectEqualityComparer<Admin.PlayerInfo>.Equals
+	|-ObjectEqualityComparer<PlaceMonuments.SpawnInfo>.Equals
 	|
 	|-ObjectEqualityComparer<CRedge>.Equals
 	|-ObjectEqualityComparer<ProjectileWeaponMod.Modifier>.Equals
@@ -55678,7 +55598,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<AtmosphereVolumeRenderer.CurrentVolumeEntry>.GetHashCode
 	|-ObjectEqualityComparer<AvatarCache.Entry>.GetHashCode
 	|-ObjectEqualityComparer<CameraMan.CameraState>.GetHashCode
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.GetHashCode
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>.GetHashCode
 	|-ObjectEqualityComparer<Cassette.LoadRequest>.GetHashCode
 	|-ObjectEqualityComparer<Admin.ServerConvarInfo>.GetHashCode
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.GetHashCode
@@ -55758,7 +55678,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<KeyValuePair<Int32Enum, object>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<object, object>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<object, float>>.GetHashCode
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<uint, object>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.GetHashCode
 	|-ObjectEqualityComparer<ResourceLocator>.GetHashCode
@@ -55968,7 +55887,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TickRenderer.Tick>.IndexOf
 	|-ObjectEqualityComparer<InventoryRecipe.Ingredient>.IndexOf
 	|-ObjectEqualityComparer<SynchronizedClock.TimedEvent>.IndexOf
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>.IndexOf
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.IndexOf
 	|-ObjectEqualityComparer<UnitySynchronizationContext.WorkRequest>.IndexOf
 	|
@@ -56021,7 +55939,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.IndexOf
 	|
 	|-ObjectEqualityComparer<CameraMan.CameraState>.IndexOf
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.IndexOf
 	|-ObjectEqualityComparer<Demos.DemoInfo>.IndexOf
 	|-ObjectEqualityComparer<Output.Entry>.IndexOf
 	|-ObjectEqualityComparer<IconSkinPicker.SkinButtonSetup>.IndexOf
@@ -56037,9 +55954,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<SpawnIndividual>.IndexOf
 	|-ObjectEqualityComparer<SpriteState>.IndexOf
 	|
-	|-ObjectEqualityComparer<Admin.PlayerInfo>.IndexOf
-	|-ObjectEqualityComparer<PlaceMonuments.SpawnInfo>.IndexOf
-	|
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>.IndexOf
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.IndexOf
 	|-ObjectEqualityComparer<CapsuleParams>.IndexOf
 	|-ObjectEqualityComparer<RCon.Command>.IndexOf
@@ -56049,6 +55964,9 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<InventoryItem.Amount>.IndexOf
 	|-ObjectEqualityComparer<TreeInstance>.IndexOf
 	|-ObjectEqualityComparer<Navigation>.IndexOf
+	|
+	|-ObjectEqualityComparer<Admin.PlayerInfo>.IndexOf
+	|-ObjectEqualityComparer<PlaceMonuments.SpawnInfo>.IndexOf
 	|
 	|-ObjectEqualityComparer<CRedge>.IndexOf
 	|-ObjectEqualityComparer<ProjectileWeaponMod.Modifier>.IndexOf
@@ -56268,7 +56186,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<TickRenderer.Tick>.LastIndexOf
 	|-ObjectEqualityComparer<InventoryRecipe.Ingredient>.LastIndexOf
 	|-ObjectEqualityComparer<SynchronizedClock.TimedEvent>.LastIndexOf
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>.LastIndexOf
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.LastIndexOf
 	|-ObjectEqualityComparer<UnitySynchronizationContext.WorkRequest>.LastIndexOf
 	|
@@ -56321,7 +56238,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.LastIndexOf
 	|
 	|-ObjectEqualityComparer<CameraMan.CameraState>.LastIndexOf
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.LastIndexOf
 	|-ObjectEqualityComparer<Demos.DemoInfo>.LastIndexOf
 	|-ObjectEqualityComparer<Output.Entry>.LastIndexOf
 	|-ObjectEqualityComparer<IconSkinPicker.SkinButtonSetup>.LastIndexOf
@@ -56337,9 +56253,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<SpawnIndividual>.LastIndexOf
 	|-ObjectEqualityComparer<SpriteState>.LastIndexOf
 	|
-	|-ObjectEqualityComparer<Admin.PlayerInfo>.LastIndexOf
-	|-ObjectEqualityComparer<PlaceMonuments.SpawnInfo>.LastIndexOf
-	|
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>.LastIndexOf
 	|-ObjectEqualityComparer<Admin.ServerUGCInfo>.LastIndexOf
 	|-ObjectEqualityComparer<CapsuleParams>.LastIndexOf
 	|-ObjectEqualityComparer<RCon.Command>.LastIndexOf
@@ -56349,6 +56263,9 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<InventoryItem.Amount>.LastIndexOf
 	|-ObjectEqualityComparer<TreeInstance>.LastIndexOf
 	|-ObjectEqualityComparer<Navigation>.LastIndexOf
+	|
+	|-ObjectEqualityComparer<Admin.PlayerInfo>.LastIndexOf
+	|-ObjectEqualityComparer<PlaceMonuments.SpawnInfo>.LastIndexOf
 	|
 	|-ObjectEqualityComparer<CRedge>.LastIndexOf
 	|-ObjectEqualityComparer<ProjectileWeaponMod.Modifier>.LastIndexOf
@@ -56553,7 +56470,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.Equals
 	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.Equals
 	|-ObjectEqualityComparer<CameraMan.CameraState>.Equals
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.Equals
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>.Equals
 	|-ObjectEqualityComparer<Cassette.LoadRequest>.Equals
 	|-ObjectEqualityComparer<CommandBufferManager.CommandBufferEntry>.Equals
 	|-ObjectEqualityComparer<Admin.PlayerInfo>.Equals
@@ -56689,7 +56606,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<KeyValuePair<Int32Enum, object>>.Equals
 	|-ObjectEqualityComparer<KeyValuePair<object, object>>.Equals
 	|-ObjectEqualityComparer<KeyValuePair<object, float>>.Equals
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>.Equals
 	|-ObjectEqualityComparer<KeyValuePair<uint, object>>.Equals
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.Equals
 	|-ObjectEqualityComparer<DateTime>.Equals
@@ -56766,7 +56682,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>.GetHashCode
 	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>.GetHashCode
 	|-ObjectEqualityComparer<CameraMan.CameraState>.GetHashCode
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>.GetHashCode
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>.GetHashCode
 	|-ObjectEqualityComparer<Cassette.LoadRequest>.GetHashCode
 	|-ObjectEqualityComparer<CommandBufferManager.CommandBufferEntry>.GetHashCode
 	|-ObjectEqualityComparer<Admin.PlayerInfo>.GetHashCode
@@ -56902,7 +56818,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<KeyValuePair<Int32Enum, object>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<object, object>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<object, float>>.GetHashCode
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<uint, object>>.GetHashCode
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>.GetHashCode
 	|-ObjectEqualityComparer<DateTime>.GetHashCode
@@ -56979,7 +56894,7 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<BaseEntity.PendingFileRequest>..ctor
 	|-ObjectEqualityComparer<BaseEntity.QueuedFileRequest>..ctor
 	|-ObjectEqualityComparer<CameraMan.CameraState>..ctor
-	|-ObjectEqualityComparer<CardTableUI.KeycodeWithAction>..ctor
+	|-ObjectEqualityComparer<CardGameUI.KeycodeWithAction>..ctor
 	|-ObjectEqualityComparer<Cassette.LoadRequest>..ctor
 	|-ObjectEqualityComparer<CommandBufferManager.CommandBufferEntry>..ctor
 	|-ObjectEqualityComparer<Admin.PlayerInfo>..ctor
@@ -57115,7 +57030,6 @@ internal class ObjectEqualityComparer<T> : EqualityComparer<T> // TypeDefIndex: 
 	|-ObjectEqualityComparer<KeyValuePair<Int32Enum, object>>..ctor
 	|-ObjectEqualityComparer<KeyValuePair<object, object>>..ctor
 	|-ObjectEqualityComparer<KeyValuePair<object, float>>..ctor
-	|-ObjectEqualityComparer<KeyValuePair<object, Color>>..ctor
 	|-ObjectEqualityComparer<KeyValuePair<uint, object>>..ctor
 	|-ObjectEqualityComparer<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-ObjectEqualityComparer<DateTime>..ctor
@@ -57342,7 +57256,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BradleyAPC.TargetInfo>..ctor
 	|-List<CH47DropZone>..ctor
 	|-List<CH47LandingZone>..ctor
-	|-List<CardTableUI.KeycodeWithAction>..ctor
+	|-List<CardGameUI.KeycodeWithAction>..ctor
 	|-List<Cassette.LoadRequest>..ctor
 	|-List<CinematicEntity>..ctor
 	|-List<ClientIOLine>..ctor
@@ -57697,11 +57611,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>..ctor
 	|-List<KeyValuePair<object, object>>..ctor
 	|-List<KeyValuePair<object, float>>..ctor
-	|-List<KeyValuePair<object, Color>>..ctor
 	|-List<KeyValuePair<uint, object>>..ctor
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-List<KeyValuePair<Light, float>>..ctor
-	|-List<KeyValuePair<Renderer, Color>>..ctor
+	|-List<KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>>..ctor
 	|-List<List<tPoint>>..ctor
 	|-List<List<SoundModulation.Modulator>>..ctor
 	|-List<List<List<Vector2>>>..ctor
@@ -57912,7 +57825,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BaseArcadeMachine.ScoreEntry>..ctor
 	|-List<BaseEntity.PendingFileRequest>..ctor
 	|-List<BaseVehicle>..ctor
-	|-List<CardTableUI.KeycodeWithAction>..ctor
+	|-List<CardGameUI.KeycodeWithAction>..ctor
 	|-List<Cassette.LoadRequest>..ctor
 	|-List<Admin.PlayerInfo>..ctor
 	|-List<Admin.ServerConvarInfo>..ctor
@@ -57948,6 +57861,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BurstCloth.Chain>..ctor
 	|-List<CapsuleParams>..ctor
 	|-List<BoneData>..ctor
+	|-List<PlayingCard>..ctor
 	|-List<TabbedPanel.Tab>..ctor
 	|-List<Output.Entry>..ctor
 	|-List<RCon.BannedAddresses>..ctor
@@ -58038,7 +57952,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>..ctor
 	|-List<KeyValuePair<object, object>>..ctor
 	|-List<KeyValuePair<object, float>>..ctor
-	|-List<KeyValuePair<object, Color>>..ctor
 	|-List<KeyValuePair<uint, object>>..ctor
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
 	|-List<DataTable>..ctor
@@ -58148,7 +58061,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Selectable>..ctor
 	|-List<EventCallbackFunctorBase>..ctor
 	|
-	|-List<CardTableUI.KeycodeWithAction>..ctor
+	|-List<CardGameUI.KeycodeWithAction>..ctor
 	|
 	|-List<Cassette.LoadRequest>..ctor
 	|
@@ -58376,8 +58289,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<KeyValuePair<object, float>>..ctor
 	|
-	|-List<KeyValuePair<object, Color>>..ctor
-	|
 	|-List<KeyValuePair<uint, object>>..ctor
 	|
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>..ctor
@@ -58484,7 +58395,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.get_Capacity
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Capacity
 	|-List<BaseEntity.PendingFileRequest>.get_Capacity
-	|-List<CardTableUI.KeycodeWithAction>.get_Capacity
+	|-List<CardGameUI.KeycodeWithAction>.get_Capacity
 	|-List<Cassette.LoadRequest>.get_Capacity
 	|-List<Admin.PlayerInfo>.get_Capacity
 	|-List<Admin.ServerConvarInfo>.get_Capacity
@@ -58598,7 +58509,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.get_Capacity
 	|-List<KeyValuePair<object, object>>.get_Capacity
 	|-List<KeyValuePair<object, float>>.get_Capacity
-	|-List<KeyValuePair<object, Color>>.get_Capacity
 	|-List<KeyValuePair<uint, object>>.get_Capacity
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Capacity
 	|-List<DateTime>.get_Capacity
@@ -58661,7 +58571,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.set_Capacity
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.set_Capacity
 	|-List<BaseEntity.PendingFileRequest>.set_Capacity
-	|-List<CardTableUI.KeycodeWithAction>.set_Capacity
+	|-List<CardGameUI.KeycodeWithAction>.set_Capacity
 	|-List<Cassette.LoadRequest>.set_Capacity
 	|-List<Admin.PlayerInfo>.set_Capacity
 	|-List<Admin.ServerConvarInfo>.set_Capacity
@@ -58775,7 +58685,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.set_Capacity
 	|-List<KeyValuePair<object, object>>.set_Capacity
 	|-List<KeyValuePair<object, float>>.set_Capacity
-	|-List<KeyValuePair<object, Color>>.set_Capacity
 	|-List<KeyValuePair<uint, object>>.set_Capacity
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.set_Capacity
 	|-List<DateTime>.set_Capacity
@@ -58862,7 +58771,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BaseVehicleModule>.get_Count
 	|-List<BaseViewModel>.get_Count
 	|-List<BuildingBlock>.get_Count
-	|-List<CardTableUI.KeycodeWithAction>.get_Count
+	|-List<CardGameUI.KeycodeWithAction>.get_Count
 	|-List<Cassette.LoadRequest>.get_Count
 	|-List<CollectableEasterEgg>.get_Count
 	|-List<CompassMissionMarker>.get_Count
@@ -58949,6 +58858,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BurstCloth.Chain>.get_Count
 	|-List<CapsuleParams>.get_Count
 	|-List<BoneData>.get_Count
+	|-List<BlackjackController.BlackjackInputOption>.get_Count
 	|-List<PlayingCard>.get_Count
 	|-List<FlexElement>.get_Count
 	|-List<IFlexNode>.get_Count
@@ -59080,8 +58990,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ArcadeGame.arcadeEnt>.get_Count
 	|-List<ArcadeMachine.ScoreEntry>.get_Count
 	|-List<BaseVehicle.MountPoint>.get_Count
-	|-List<CardTable.CardPlayer>.get_Count
-	|-List<CardTable.WinnerBreakdown.Winner>.get_Count
+	|-List<CardGame.BlackjackCardPlayer>.get_Count
+	|-List<CardGame.CardPlayer>.get_Count
+	|-List<CardGame.RoundResults.Result>.get_Count
 	|-List<ClientReady.ClientInfo>.get_Count
 	|-List<DemoShot>.get_Count
 	|-List<DemoShotFloatKeyframe>.get_Count
@@ -59199,11 +59110,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.get_Count
 	|-List<KeyValuePair<object, object>>.get_Count
 	|-List<KeyValuePair<object, float>>.get_Count
-	|-List<KeyValuePair<object, Color>>.get_Count
 	|-List<KeyValuePair<uint, object>>.get_Count
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Count
 	|-List<KeyValuePair<Light, float>>.get_Count
-	|-List<KeyValuePair<Renderer, Color>>.get_Count
+	|-List<KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>>.get_Count
 	|-List<List<SoundModulation.Modulator>>.get_Count
 	|-List<List<int>>.get_Count
 	|-List<List<Vector2>>.get_Count
@@ -59387,7 +59297,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsFixedSize
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsFixedSize
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsFixedSize
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsFixedSize
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.get_IsFixedSize
 	|-List<Cassette.LoadRequest>.System.Collections.IList.get_IsFixedSize
 	|-List<Admin.PlayerInfo>.System.Collections.IList.get_IsFixedSize
 	|-List<Admin.ServerConvarInfo>.System.Collections.IList.get_IsFixedSize
@@ -59502,7 +59412,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.System.Collections.IList.get_IsFixedSize
 	|-List<KeyValuePair<object, object>>.System.Collections.IList.get_IsFixedSize
 	|-List<KeyValuePair<object, float>>.System.Collections.IList.get_IsFixedSize
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.get_IsFixedSize
 	|-List<KeyValuePair<uint, object>>.System.Collections.IList.get_IsFixedSize
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.get_IsFixedSize
 	|-List<DateTime>.System.Collections.IList.get_IsFixedSize
@@ -59562,7 +59471,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<Cassette.LoadRequest>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<Admin.PlayerInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<Admin.ServerConvarInfo>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -59677,7 +59586,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<KeyValuePair<object, object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<KeyValuePair<object, float>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
-	|-List<KeyValuePair<object, Color>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<KeyValuePair<uint, object>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
 	|-List<DateTime>.System.Collections.Generic.ICollection<T>.get_IsReadOnly
@@ -59737,7 +59645,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.System.Collections.IList.get_IsReadOnly
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.System.Collections.IList.get_IsReadOnly
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.get_IsReadOnly
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_IsReadOnly
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.get_IsReadOnly
 	|-List<Cassette.LoadRequest>.System.Collections.IList.get_IsReadOnly
 	|-List<Admin.PlayerInfo>.System.Collections.IList.get_IsReadOnly
 	|-List<Admin.ServerConvarInfo>.System.Collections.IList.get_IsReadOnly
@@ -59852,7 +59760,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.System.Collections.IList.get_IsReadOnly
 	|-List<KeyValuePair<object, object>>.System.Collections.IList.get_IsReadOnly
 	|-List<KeyValuePair<object, float>>.System.Collections.IList.get_IsReadOnly
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.get_IsReadOnly
 	|-List<KeyValuePair<uint, object>>.System.Collections.IList.get_IsReadOnly
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.get_IsReadOnly
 	|-List<DateTime>.System.Collections.IList.get_IsReadOnly
@@ -59916,7 +59823,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.ICollection.get_SyncRoot
 	|
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.get_SyncRoot
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-List<Cassette.LoadRequest>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -60146,8 +60053,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<object, object>>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-List<KeyValuePair<object, float>>.System.Collections.ICollection.get_SyncRoot
-	|
-	|-List<KeyValuePair<object, Color>>.System.Collections.ICollection.get_SyncRoot
 	|
 	|-List<KeyValuePair<uint, object>>.System.Collections.ICollection.get_SyncRoot
 	|
@@ -60413,8 +60318,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ArcadeGame.arcadeEnt>.get_Item
 	|-List<ArcadeMachine.ScoreEntry>.get_Item
 	|-List<BaseVehicle.MountPoint>.get_Item
-	|-List<CardTable.CardPlayer>.get_Item
-	|-List<CardTable.WinnerBreakdown.Winner>.get_Item
+	|-List<CardGame.BlackjackCardPlayer>.get_Item
+	|-List<CardGame.CardPlayer>.get_Item
+	|-List<CardGame.RoundResults.Result>.get_Item
 	|-List<ClientReady.ClientInfo>.get_Item
 	|-List<EggHunt.EggHunter>.get_Item
 	|-List<Entity>.get_Item
@@ -60618,7 +60524,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MapView.SleepingBagCluster>.get_Item
 	|-List<JsonPosition>.get_Item
 	|-List<SynchronizedClock.TimedEvent>.get_Item
-	|-List<KeyValuePair<Renderer, Color>>.get_Item
 	|-List<UnitySynchronizationContext.WorkRequest>.get_Item
 	|-List<Admin.ServerConvarInfo>.get_Item
 	|-List<ERChildsSO>.get_Item
@@ -60633,7 +60538,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<TickRenderer.Tick>.get_Item
 	|-List<InventoryRecipe.Ingredient>.get_Item
 	|-List<InventoryRecipe>.get_Item
-	|-List<KeyValuePair<object, Color>>.get_Item
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.get_Item
 	|
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.get_Item
@@ -60649,6 +60553,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<int, Action<CommandBuffer>>>.get_Item
 	|-List<KeyValuePair<int, string>>.get_Item
 	|-List<KeyValuePair<Light, float>>.get_Item
+	|-List<KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>>.get_Item
 	|-List<ValueTuple<string, AssetBundleRequest>>.get_Item
 	|-List<RangePositionInfo>.get_Item
 	|-List<XmlSchemaObjectTable.XmlSchemaObjectEntry>.get_Item
@@ -60689,7 +60594,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<UILineInfo>.get_Item
 	|
 	|-List<BaseEntity.PendingFileRequest>.get_Item
-	|-List<CardTableUI.KeycodeWithAction>.get_Item
 	|-List<Demos.DemoInfo>.get_Item
 	|-List<MidiConvar.KnobBinding>.get_Item
 	|-List<MidiConvar.NoteBinding>.get_Item
@@ -60707,6 +60611,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.get_Item
 	|-List<InventoryItem>.get_Item
 	|
+	|-List<CardGameUI.KeycodeWithAction>.get_Item
 	|-List<Admin.ServerUGCInfo>.get_Item
 	|-List<ReflectionProbeEx.CubemapSkyboxVertex>.get_Item
 	|-List<RenderTargetIdentifier>.get_Item
@@ -60718,6 +60623,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ViewModelDrawEvent>.get_Item
 	|
 	|-List<Chat.ChatChannel>.get_Item
+	|-List<BlackjackController.BlackjackInputOption>.get_Item
 	|-List<ItemSlot>.get_Item
 	|-List<RegexOptions>.get_Item
 	|-List<uint>.get_Item
@@ -60834,8 +60740,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ArcadeGame.arcadeEnt>.set_Item
 	|-List<ArcadeMachine.ScoreEntry>.set_Item
 	|-List<BaseVehicle.MountPoint>.set_Item
-	|-List<CardTable.CardPlayer>.set_Item
-	|-List<CardTable.WinnerBreakdown.Winner>.set_Item
+	|-List<CardGame.BlackjackCardPlayer>.set_Item
+	|-List<CardGame.CardPlayer>.set_Item
+	|-List<CardGame.RoundResults.Result>.set_Item
 	|-List<ClientReady.ClientInfo>.set_Item
 	|-List<EggHunt.EggHunter>.set_Item
 	|-List<Entity>.set_Item
@@ -60919,12 +60826,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.set_Item
 	|
-	|-List<CardTableUI.KeycodeWithAction>.set_Item
-	|-List<ItemSkinDirectory.Skin>.set_Item
-	|-List<KeyframeView.UIKeyframeValue>.set_Item
-	|-List<MidiConvar.KnobBinding>.set_Item
-	|-List<MidiConvar.NoteBinding>.set_Item
-	|-List<Option>.set_Item
+	|-List<CardGameUI.KeycodeWithAction>.set_Item
+	|-List<CapsuleParams>.set_Item
+	|-List<SteamNewsSource.Story>.set_Item
+	|-List<ViewModelDrawEvent>.set_Item
 	|
 	|-List<Cassette.LoadRequest>.set_Item
 	|-List<Admin.ServerConvarInfo>.set_Item
@@ -60933,7 +60838,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MapView.SleepingBagCluster>.set_Item
 	|-List<TimelineEvent>.set_Item
 	|-List<InventoryRecipe>.set_Item
-	|-List<KeyValuePair<object, Color>>.set_Item
 	|-List<UnitySynchronizationContext.WorkRequest>.set_Item
 	|
 	|-List<Admin.PlayerInfo>.set_Item
@@ -61009,10 +60913,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MeshRendererLookup.LookupEntry>.set_Item
 	|-List<Achievement>.set_Item
 	|
-	|-List<CapsuleParams>.set_Item
-	|-List<SteamNewsSource.Story>.set_Item
-	|-List<ViewModelDrawEvent>.set_Item
-	|
 	|-List<BoneData>.set_Item
 	|
 	|-List<SkeletonDefinition.Bone>.set_Item
@@ -61033,6 +60933,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.set_Item
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.set_Item
+	|
+	|-List<ItemSkinDirectory.Skin>.set_Item
+	|-List<KeyframeView.UIKeyframeValue>.set_Item
+	|-List<MidiConvar.KnobBinding>.set_Item
+	|-List<MidiConvar.NoteBinding>.set_Item
+	|-List<Option>.set_Item
 	|
 	|-List<LocalClock.TimedEvent>.set_Item
 	|-List<SynchronizedClock.TimedEvent>.set_Item
@@ -61129,7 +61035,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.IsCompatibleObject
 	|-List<InventoryRecipe>.IsCompatibleObject
 	|-List<SynchronizedClock.TimedEvent>.IsCompatibleObject
-	|-List<KeyValuePair<object, Color>>.IsCompatibleObject
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.IsCompatibleObject
 	|-List<UnitySynchronizationContext.WorkRequest>.IsCompatibleObject
 	|
@@ -61173,7 +61078,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WindZoneExManager.CurrentZoneEntry>.IsCompatibleObject
 	|
 	|-List<BaseEntity.PendingFileRequest>.IsCompatibleObject
-	|-List<CardTableUI.KeycodeWithAction>.IsCompatibleObject
 	|-List<Demos.DemoInfo>.IsCompatibleObject
 	|-List<Output.Entry>.IsCompatibleObject
 	|-List<IconSkinPicker.SkinButtonSetup>.IsCompatibleObject
@@ -61191,9 +61095,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.IsCompatibleObject
 	|-List<InventoryItem>.IsCompatibleObject
 	|
-	|-List<Admin.PlayerInfo>.IsCompatibleObject
-	|-List<PlaceMonuments.SpawnInfo>.IsCompatibleObject
-	|
+	|-List<CardGameUI.KeycodeWithAction>.IsCompatibleObject
 	|-List<Admin.ServerUGCInfo>.IsCompatibleObject
 	|-List<CapsuleParams>.IsCompatibleObject
 	|-List<SkeletonDefinition.Bone>.IsCompatibleObject
@@ -61203,6 +61105,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.IsCompatibleObject
 	|-List<TreeInstance>.IsCompatibleObject
 	|-List<ViewModelDrawEvent>.IsCompatibleObject
+	|
+	|-List<Admin.PlayerInfo>.IsCompatibleObject
+	|-List<PlaceMonuments.SpawnInfo>.IsCompatibleObject
 	|
 	|-List<CRedge>.IsCompatibleObject
 	|-List<ProjectileWeaponMod.Modifier>.IsCompatibleObject
@@ -61333,7 +61238,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.System.Collections.IList.get_Item
 	|-List<InventoryRecipe>.System.Collections.IList.get_Item
 	|-List<SynchronizedClock.TimedEvent>.System.Collections.IList.get_Item
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.get_Item
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.get_Item
 	|-List<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.get_Item
 	|
@@ -61384,7 +61288,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.get_Item
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.get_Item
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.get_Item
 	|-List<Demos.DemoInfo>.System.Collections.IList.get_Item
 	|-List<Output.Entry>.System.Collections.IList.get_Item
 	|-List<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.get_Item
@@ -61402,9 +61305,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.get_Item
 	|-List<InventoryItem>.System.Collections.IList.get_Item
 	|
-	|-List<Admin.PlayerInfo>.System.Collections.IList.get_Item
-	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.get_Item
-	|
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.get_Item
 	|-List<Admin.ServerUGCInfo>.System.Collections.IList.get_Item
 	|-List<CapsuleParams>.System.Collections.IList.get_Item
 	|-List<SkeletonDefinition.Bone>.System.Collections.IList.get_Item
@@ -61414,6 +61315,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.System.Collections.IList.get_Item
 	|-List<TreeInstance>.System.Collections.IList.get_Item
 	|-List<ViewModelDrawEvent>.System.Collections.IList.get_Item
+	|
+	|-List<Admin.PlayerInfo>.System.Collections.IList.get_Item
+	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.get_Item
 	|
 	|-List<CRedge>.System.Collections.IList.get_Item
 	|-List<ProjectileWeaponMod.Modifier>.System.Collections.IList.get_Item
@@ -61524,7 +61428,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.set_Item
 	|
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.set_Item
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.set_Item
 	|
 	|-List<Cassette.LoadRequest>.System.Collections.IList.set_Item
 	|
@@ -61754,8 +61658,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<object, object>>.System.Collections.IList.set_Item
 	|
 	|-List<KeyValuePair<object, float>>.System.Collections.IList.set_Item
-	|
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.set_Item
 	|
 	|-List<KeyValuePair<uint, object>>.System.Collections.IList.set_Item
 	|
@@ -62061,8 +61963,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ArcadeGame.arcadeEnt>.Add
 	|-List<ArcadeMachine.ScoreEntry>.Add
 	|-List<BaseVehicle.MountPoint>.Add
-	|-List<CardTable.CardPlayer>.Add
-	|-List<CardTable.WinnerBreakdown.Winner>.Add
+	|-List<CardGame.BlackjackCardPlayer>.Add
+	|-List<CardGame.CardPlayer>.Add
+	|-List<CardGame.RoundResults.Result>.Add
 	|-List<ClientReady.ClientInfo>.Add
 	|-List<DemoShot>.Add
 	|-List<EggHunt.EggHunter>.Add
@@ -62298,6 +62201,8 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<AIState>.Add
 	|-List<Chat.ChatChannel>.Add
+	|-List<BlackjackController.BlackjackInputOption>.Add
+	|-List<TexasHoldEmController.PokerInputOption>.Add
 	|-List<ItemSlot>.Add
 	|-List<int>.Add
 	|-List<Int32Enum>.Add
@@ -62337,6 +62242,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<object, object>>.Add
 	|-List<KeyValuePair<object, float>>.Add
 	|-List<KeyValuePair<Light, float>>.Add
+	|-List<KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>>.Add
 	|-List<ValueTuple<object, object>>.Add
 	|-List<ValueTuple<string, AssetBundleRequest>>.Add
 	|-List<ValueTuple<string, Object>>.Add
@@ -62347,12 +62253,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.Add
 	|
-	|-List<CardTableUI.KeycodeWithAction>.Add
-	|-List<ItemSkinDirectory.Skin>.Add
-	|-List<KeyframeView.UIKeyframeValue>.Add
-	|-List<MidiConvar.KnobBinding>.Add
-	|-List<MidiConvar.NoteBinding>.Add
-	|-List<Option>.Add
+	|-List<CardGameUI.KeycodeWithAction>.Add
+	|-List<CapsuleParams>.Add
+	|-List<SteamNewsSource.Story>.Add
+	|-List<ViewModelDrawEvent>.Add
 	|
 	|-List<Cassette.LoadRequest>.Add
 	|-List<Admin.ServerConvarInfo>.Add
@@ -62361,8 +62265,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MapView.SleepingBagCluster>.Add
 	|-List<TimelineEvent>.Add
 	|-List<InventoryRecipe>.Add
-	|-List<KeyValuePair<object, Color>>.Add
-	|-List<KeyValuePair<Renderer, Color>>.Add
 	|-List<UnitySynchronizationContext.WorkRequest>.Add
 	|
 	|-List<Admin.PlayerInfo>.Add
@@ -62438,10 +62340,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MeshRendererLookup.LookupEntry>.Add
 	|-List<Achievement>.Add
 	|
-	|-List<CapsuleParams>.Add
-	|-List<SteamNewsSource.Story>.Add
-	|-List<ViewModelDrawEvent>.Add
-	|
 	|-List<BoneData>.Add
 	|
 	|-List<SkeletonDefinition.Bone>.Add
@@ -62465,6 +62363,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.Add
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Add
+	|
+	|-List<ItemSkinDirectory.Skin>.Add
+	|-List<KeyframeView.UIKeyframeValue>.Add
+	|-List<MidiConvar.KnobBinding>.Add
+	|-List<MidiConvar.NoteBinding>.Add
+	|-List<Option>.Add
 	|
 	|-List<LocalClock.TimedEvent>.Add
 	|-List<SynchronizedClock.TimedEvent>.Add
@@ -62544,7 +62448,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Add
 	|
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Add
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.Add
 	|
 	|-List<Cassette.LoadRequest>.System.Collections.IList.Add
 	|
@@ -62775,8 +62679,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<KeyValuePair<object, float>>.System.Collections.IList.Add
 	|
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.Add
-	|
 	|-List<KeyValuePair<uint, object>>.System.Collections.IList.Add
 	|
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Add
@@ -62886,7 +62788,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.AddRange
 	|-List<BaseEntity.PendingFileRequest>.AddRange
 	|-List<BasePathNode>.AddRange
-	|-List<CardTableUI.KeycodeWithAction>.AddRange
+	|-List<CardGameUI.KeycodeWithAction>.AddRange
 	|-List<Cassette.LoadRequest>.AddRange
 	|-List<Admin.PlayerInfo>.AddRange
 	|-List<Admin.ServerConvarInfo>.AddRange
@@ -63019,7 +62921,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.AddRange
 	|-List<KeyValuePair<object, object>>.AddRange
 	|-List<KeyValuePair<object, float>>.AddRange
-	|-List<KeyValuePair<object, Color>>.AddRange
 	|-List<KeyValuePair<uint, object>>.AddRange
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.AddRange
 	|-List<DateTime>.AddRange
@@ -63096,7 +62997,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.AsReadOnly
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.AsReadOnly
 	|-List<BaseEntity.PendingFileRequest>.AsReadOnly
-	|-List<CardTableUI.KeycodeWithAction>.AsReadOnly
+	|-List<CardGameUI.KeycodeWithAction>.AsReadOnly
 	|-List<Cassette.LoadRequest>.AsReadOnly
 	|-List<Admin.PlayerInfo>.AsReadOnly
 	|-List<Admin.ServerConvarInfo>.AsReadOnly
@@ -63210,7 +63111,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.AsReadOnly
 	|-List<KeyValuePair<object, object>>.AsReadOnly
 	|-List<KeyValuePair<object, float>>.AsReadOnly
-	|-List<KeyValuePair<object, Color>>.AsReadOnly
 	|-List<KeyValuePair<uint, object>>.AsReadOnly
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.AsReadOnly
 	|-List<DateTime>.AsReadOnly
@@ -63283,7 +63183,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BaseNpc>.Clear
 	|-List<BasePathNode>.Clear
 	|-List<BlueprintButton>.Clear
-	|-List<CardTableUI.KeycodeWithAction>.Clear
+	|-List<CardGameUI.KeycodeWithAction>.Clear
 	|-List<Cassette.LoadRequest>.Clear
 	|-List<ComponentInfo>.Clear
 	|-List<Admin.PlayerInfo>.Clear
@@ -63431,7 +63331,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ProceduralObject>.Clear
 	|-List<Projectile>.Clear
 	|-List<ProjectileWeaponMod.Modifier>.Clear
-	|-List<CardTable.WinnerBreakdown.Winner>.Clear
+	|-List<CardGame.RoundResults.Result>.Clear
 	|-List<DemoShotFloatKeyframe>.Clear
 	|-List<DemoShotParentKeyframe>.Clear
 	|-List<DemoShotQuaternionKeyframe>.Clear
@@ -63504,11 +63404,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Clear
 	|-List<KeyValuePair<object, object>>.Clear
 	|-List<KeyValuePair<object, float>>.Clear
-	|-List<KeyValuePair<object, Color>>.Clear
 	|-List<KeyValuePair<uint, object>>.Clear
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Clear
 	|-List<KeyValuePair<Light, float>>.Clear
-	|-List<KeyValuePair<Renderer, Color>>.Clear
+	|-List<KeyValuePair<Renderer, LightGroupAtTime.EmissiveCols[]>>.Clear
 	|-List<List<int>>.Clear
 	|-List<List<Color>>.Clear
 	|-List<List<Vector2>>.Clear
@@ -63591,6 +63490,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Dropdown.OptionData>.Clear
 	|-List<Graphic>.Clear
 	|-List<ICanvasElement>.Clear
+	|-List<Image>.Clear
 	|-List<RectMask2D>.Clear
 	|-List<StencilMaterial.MatEntry>.Clear
 	|-List<UICharInfo>.Clear
@@ -63639,7 +63539,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.Contains
 	|-List<InventoryRecipe>.Contains
 	|-List<SynchronizedClock.TimedEvent>.Contains
-	|-List<KeyValuePair<object, Color>>.Contains
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Contains
 	|-List<UnitySynchronizationContext.WorkRequest>.Contains
 	|
@@ -63749,7 +63648,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.Contains
 	|
 	|-List<BaseEntity.PendingFileRequest>.Contains
-	|-List<CardTableUI.KeycodeWithAction>.Contains
 	|-List<Demos.DemoInfo>.Contains
 	|-List<Output.Entry>.Contains
 	|-List<IconSkinPicker.SkinButtonSetup>.Contains
@@ -63767,9 +63665,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.Contains
 	|-List<InventoryItem>.Contains
 	|
-	|-List<Admin.PlayerInfo>.Contains
-	|-List<PlaceMonuments.SpawnInfo>.Contains
-	|
+	|-List<CardGameUI.KeycodeWithAction>.Contains
 	|-List<Admin.ServerUGCInfo>.Contains
 	|-List<CapsuleParams>.Contains
 	|-List<SkeletonDefinition.Bone>.Contains
@@ -63779,6 +63675,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.Contains
 	|-List<TreeInstance>.Contains
 	|-List<ViewModelDrawEvent>.Contains
+	|
+	|-List<Admin.PlayerInfo>.Contains
+	|-List<PlaceMonuments.SpawnInfo>.Contains
 	|
 	|-List<CRedge>.Contains
 	|-List<ProjectileWeaponMod.Modifier>.Contains
@@ -63830,6 +63729,11 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BoneData>.Contains
 	|
+	|-List<BlackjackController.BlackjackInputOption>.Contains
+	|-List<int>.Contains
+	|-List<Int32Enum>.Contains
+	|-List<uint>.Contains
+	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Contains
 	|
 	|-List<SevenBitNumber>.Contains
@@ -63857,10 +63761,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ushort>.Contains
 	|
 	|-List<double>.Contains
-	|
-	|-List<int>.Contains
-	|-List<Int32Enum>.Contains
-	|-List<uint>.Contains
 	|
 	|-List<long>.Contains
 	|-List<ulong>.Contains
@@ -63903,7 +63803,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.System.Collections.IList.Contains
 	|-List<InventoryRecipe>.System.Collections.IList.Contains
 	|-List<SynchronizedClock.TimedEvent>.System.Collections.IList.Contains
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.Contains
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Contains
 	|-List<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.Contains
 	|
@@ -63954,7 +63853,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.Contains
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Contains
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Contains
 	|-List<Demos.DemoInfo>.System.Collections.IList.Contains
 	|-List<Output.Entry>.System.Collections.IList.Contains
 	|-List<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.Contains
@@ -63972,9 +63870,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.Contains
 	|-List<InventoryItem>.System.Collections.IList.Contains
 	|
-	|-List<Admin.PlayerInfo>.System.Collections.IList.Contains
-	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.Contains
-	|
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.Contains
 	|-List<Admin.ServerUGCInfo>.System.Collections.IList.Contains
 	|-List<CapsuleParams>.System.Collections.IList.Contains
 	|-List<SkeletonDefinition.Bone>.System.Collections.IList.Contains
@@ -63984,6 +63880,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.System.Collections.IList.Contains
 	|-List<TreeInstance>.System.Collections.IList.Contains
 	|-List<ViewModelDrawEvent>.System.Collections.IList.Contains
+	|
+	|-List<Admin.PlayerInfo>.System.Collections.IList.Contains
+	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.Contains
 	|
 	|-List<CRedge>.System.Collections.IList.Contains
 	|-List<ProjectileWeaponMod.Modifier>.System.Collections.IList.Contains
@@ -64091,7 +63990,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.CopyTo
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
 	|-List<BaseEntity.PendingFileRequest>.CopyTo
-	|-List<CardTableUI.KeycodeWithAction>.CopyTo
+	|-List<CardGameUI.KeycodeWithAction>.CopyTo
 	|-List<Cassette.LoadRequest>.CopyTo
 	|-List<Admin.PlayerInfo>.CopyTo
 	|-List<Admin.ServerConvarInfo>.CopyTo
@@ -64205,7 +64104,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.CopyTo
 	|-List<KeyValuePair<object, object>>.CopyTo
 	|-List<KeyValuePair<object, float>>.CopyTo
-	|-List<KeyValuePair<object, Color>>.CopyTo
 	|-List<KeyValuePair<uint, object>>.CopyTo
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.CopyTo
 	|-List<DataRow>.CopyTo
@@ -64273,7 +64171,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.ICollection.CopyTo
 	|
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.ICollection.CopyTo
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.ICollection.CopyTo
 	|
 	|-List<Cassette.LoadRequest>.System.Collections.ICollection.CopyTo
 	|
@@ -64504,8 +64402,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<KeyValuePair<object, float>>.System.Collections.ICollection.CopyTo
 	|
-	|-List<KeyValuePair<object, Color>>.System.Collections.ICollection.CopyTo
-	|
 	|-List<KeyValuePair<uint, object>>.System.Collections.ICollection.CopyTo
 	|
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.ICollection.CopyTo
@@ -64612,7 +64508,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.CopyTo
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
 	|-List<BaseEntity.PendingFileRequest>.CopyTo
-	|-List<CardTableUI.KeycodeWithAction>.CopyTo
+	|-List<CardGameUI.KeycodeWithAction>.CopyTo
 	|-List<Cassette.LoadRequest>.CopyTo
 	|-List<Admin.PlayerInfo>.CopyTo
 	|-List<Admin.ServerConvarInfo>.CopyTo
@@ -64726,7 +64622,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.CopyTo
 	|-List<KeyValuePair<object, object>>.CopyTo
 	|-List<KeyValuePair<object, float>>.CopyTo
-	|-List<KeyValuePair<object, Color>>.CopyTo
 	|-List<KeyValuePair<uint, object>>.CopyTo
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.CopyTo
 	|-List<DateTime>.CopyTo
@@ -64787,7 +64682,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.CopyTo
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.CopyTo
 	|-List<BaseEntity.PendingFileRequest>.CopyTo
-	|-List<CardTableUI.KeycodeWithAction>.CopyTo
+	|-List<CardGameUI.KeycodeWithAction>.CopyTo
 	|-List<Cassette.LoadRequest>.CopyTo
 	|-List<Admin.PlayerInfo>.CopyTo
 	|-List<Admin.ServerConvarInfo>.CopyTo
@@ -64906,7 +64801,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.CopyTo
 	|-List<KeyValuePair<object, object>>.CopyTo
 	|-List<KeyValuePair<object, float>>.CopyTo
-	|-List<KeyValuePair<object, Color>>.CopyTo
 	|-List<KeyValuePair<uint, object>>.CopyTo
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.CopyTo
 	|-List<DateTime>.CopyTo
@@ -64967,7 +64861,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.EnsureCapacity
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.EnsureCapacity
 	|-List<BaseEntity.PendingFileRequest>.EnsureCapacity
-	|-List<CardTableUI.KeycodeWithAction>.EnsureCapacity
+	|-List<CardGameUI.KeycodeWithAction>.EnsureCapacity
 	|-List<Cassette.LoadRequest>.EnsureCapacity
 	|-List<Admin.PlayerInfo>.EnsureCapacity
 	|-List<Admin.ServerConvarInfo>.EnsureCapacity
@@ -65081,7 +64975,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.EnsureCapacity
 	|-List<KeyValuePair<object, object>>.EnsureCapacity
 	|-List<KeyValuePair<object, float>>.EnsureCapacity
-	|-List<KeyValuePair<object, Color>>.EnsureCapacity
 	|-List<KeyValuePair<uint, object>>.EnsureCapacity
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.EnsureCapacity
 	|-List<DateTime>.EnsureCapacity
@@ -65141,7 +65034,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Exists
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Exists
 	|-List<BaseEntity.PendingFileRequest>.Exists
-	|-List<CardTableUI.KeycodeWithAction>.Exists
+	|-List<CardGameUI.KeycodeWithAction>.Exists
 	|-List<Cassette.LoadRequest>.Exists
 	|-List<Admin.PlayerInfo>.Exists
 	|-List<Admin.ServerConvarInfo>.Exists
@@ -65257,7 +65150,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Exists
 	|-List<KeyValuePair<object, object>>.Exists
 	|-List<KeyValuePair<object, float>>.Exists
-	|-List<KeyValuePair<object, Color>>.Exists
 	|-List<KeyValuePair<uint, object>>.Exists
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Exists
 	|-List<DateTime>.Exists
@@ -65364,7 +65256,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.Find
 	|-List<InventoryRecipe>.Find
 	|-List<SynchronizedClock.TimedEvent>.Find
-	|-List<KeyValuePair<object, Color>>.Find
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Find
 	|-List<UnitySynchronizationContext.WorkRequest>.Find
 	|
@@ -65415,7 +65306,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.Find
 	|
 	|-List<BaseEntity.PendingFileRequest>.Find
-	|-List<CardTableUI.KeycodeWithAction>.Find
 	|-List<Demos.DemoInfo>.Find
 	|-List<Output.Entry>.Find
 	|-List<IconSkinPicker.SkinButtonSetup>.Find
@@ -65433,9 +65323,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.Find
 	|-List<InventoryItem>.Find
 	|
-	|-List<Admin.PlayerInfo>.Find
-	|-List<PlaceMonuments.SpawnInfo>.Find
-	|
+	|-List<CardGameUI.KeycodeWithAction>.Find
 	|-List<Admin.ServerUGCInfo>.Find
 	|-List<CapsuleParams>.Find
 	|-List<SkeletonDefinition.Bone>.Find
@@ -65445,6 +65333,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.Find
 	|-List<TreeInstance>.Find
 	|-List<ViewModelDrawEvent>.Find
+	|
+	|-List<Admin.PlayerInfo>.Find
+	|-List<PlaceMonuments.SpawnInfo>.Find
 	|
 	|-List<CRedge>.Find
 	|-List<ProjectileWeaponMod.Modifier>.Find
@@ -65568,7 +65459,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.FindAll
 	|-List<InventoryRecipe>.FindAll
 	|-List<SynchronizedClock.TimedEvent>.FindAll
-	|-List<KeyValuePair<object, Color>>.FindAll
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.FindAll
 	|-List<UnitySynchronizationContext.WorkRequest>.FindAll
 	|
@@ -65619,7 +65509,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.FindAll
 	|
 	|-List<BaseEntity.PendingFileRequest>.FindAll
-	|-List<CardTableUI.KeycodeWithAction>.FindAll
 	|-List<Demos.DemoInfo>.FindAll
 	|-List<Output.Entry>.FindAll
 	|-List<IconSkinPicker.SkinButtonSetup>.FindAll
@@ -65637,9 +65526,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.FindAll
 	|-List<InventoryItem>.FindAll
 	|
-	|-List<Admin.PlayerInfo>.FindAll
-	|-List<PlaceMonuments.SpawnInfo>.FindAll
-	|
+	|-List<CardGameUI.KeycodeWithAction>.FindAll
 	|-List<Admin.ServerUGCInfo>.FindAll
 	|-List<CapsuleParams>.FindAll
 	|-List<SkeletonDefinition.Bone>.FindAll
@@ -65649,6 +65536,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.FindAll
 	|-List<TreeInstance>.FindAll
 	|-List<ViewModelDrawEvent>.FindAll
+	|
+	|-List<Admin.PlayerInfo>.FindAll
+	|-List<PlaceMonuments.SpawnInfo>.FindAll
 	|
 	|-List<CRedge>.FindAll
 	|-List<ProjectileWeaponMod.Modifier>.FindAll
@@ -65736,7 +65626,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.FindIndex
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.FindIndex
 	|-List<BaseEntity.PendingFileRequest>.FindIndex
-	|-List<CardTableUI.KeycodeWithAction>.FindIndex
+	|-List<CardGameUI.KeycodeWithAction>.FindIndex
 	|-List<Cassette.LoadRequest>.FindIndex
 	|-List<Admin.PlayerInfo>.FindIndex
 	|-List<Admin.ServerConvarInfo>.FindIndex
@@ -65851,7 +65741,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.FindIndex
 	|-List<KeyValuePair<object, object>>.FindIndex
 	|-List<KeyValuePair<object, float>>.FindIndex
-	|-List<KeyValuePair<object, Color>>.FindIndex
 	|-List<KeyValuePair<uint, object>>.FindIndex
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.FindIndex
 	|-List<DateTime>.FindIndex
@@ -65930,7 +65819,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.FindIndex
 	|-List<InventoryRecipe>.FindIndex
 	|-List<SynchronizedClock.TimedEvent>.FindIndex
-	|-List<KeyValuePair<object, Color>>.FindIndex
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.FindIndex
 	|-List<UnitySynchronizationContext.WorkRequest>.FindIndex
 	|
@@ -65981,7 +65869,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.FindIndex
 	|
 	|-List<BaseEntity.PendingFileRequest>.FindIndex
-	|-List<CardTableUI.KeycodeWithAction>.FindIndex
 	|-List<Demos.DemoInfo>.FindIndex
 	|-List<Output.Entry>.FindIndex
 	|-List<IconSkinPicker.SkinButtonSetup>.FindIndex
@@ -65999,9 +65886,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.FindIndex
 	|-List<InventoryItem>.FindIndex
 	|
-	|-List<Admin.PlayerInfo>.FindIndex
-	|-List<PlaceMonuments.SpawnInfo>.FindIndex
-	|
+	|-List<CardGameUI.KeycodeWithAction>.FindIndex
 	|-List<Admin.ServerUGCInfo>.FindIndex
 	|-List<CapsuleParams>.FindIndex
 	|-List<SkeletonDefinition.Bone>.FindIndex
@@ -66011,6 +65896,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.FindIndex
 	|-List<TreeInstance>.FindIndex
 	|-List<ViewModelDrawEvent>.FindIndex
+	|
+	|-List<Admin.PlayerInfo>.FindIndex
+	|-List<PlaceMonuments.SpawnInfo>.FindIndex
 	|
 	|-List<CRedge>.FindIndex
 	|-List<ProjectileWeaponMod.Modifier>.FindIndex
@@ -66173,6 +66061,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<tPoint>.GetEnumerator
 	|-List<BurstCloth.Chain>.GetEnumerator
 	|-List<BurstCloth>.GetEnumerator
+	|-List<PlayingCard>.GetEnumerator
 	|-List<FlexElement>.GetEnumerator
 	|-List<IFlexNode>.GetEnumerator
 	|-List<Input.Button>.GetEnumerator
@@ -66257,7 +66146,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AIEventData>.GetEnumerator
 	|-List<AIStateContainer>.GetEnumerator
 	|-List<ArcadeGame.arcadeEnt>.GetEnumerator
-	|-List<CardTable.WinnerBreakdown.Winner>.GetEnumerator
+	|-List<CardGame.RoundResults.Result>.GetEnumerator
 	|-List<DemoShot>.GetEnumerator
 	|-List<DemoShotFloatKeyframe>.GetEnumerator
 	|-List<EggHunt.EggHunter>.GetEnumerator
@@ -66376,6 +66265,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Texture>.GetEnumerator
 	|-List<TrailRenderer>.GetEnumerator
 	|-List<Transform>.GetEnumerator
+	|-List<Image>.GetEnumerator
 	|-List<MaskableGraphic>.GetEnumerator
 	|-List<EventCallbackFunctorBase>.GetEnumerator
 	|-List<IEventDispatchingStrategy>.GetEnumerator
@@ -66423,7 +66313,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WeakReference<EtwSession>>.GetEnumerator
 	|
 	|-List<AIState>.GetEnumerator
-	|-List<ItemSlot>.GetEnumerator
 	|-List<uint>.GetEnumerator
 	|-List<KeyCode>.GetEnumerator
 	|-List<InventoryDefId>.GetEnumerator
@@ -66453,29 +66342,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.GetEnumerator
 	|-List<InventoryRecipe>.GetEnumerator
 	|-List<SynchronizedClock.TimedEvent>.GetEnumerator
-	|-List<KeyValuePair<object, Color>>.GetEnumerator
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.GetEnumerator
 	|-List<UnitySynchronizationContext.WorkRequest>.GetEnumerator
 	|
-	|-List<CardTableUI.KeycodeWithAction>.GetEnumerator
-	|-List<IconSkinPicker.SkinButtonSetup>.GetEnumerator
-	|-List<InvokeAction>.GetEnumerator
-	|-List<KeyframeView.UIKeyframeValue>.GetEnumerator
-	|-List<MidiConvar.KnobBinding>.GetEnumerator
-	|-List<MidiConvar.NoteBinding>.GetEnumerator
-	|-List<TransformSnapshot>.GetEnumerator
-	|-List<SkinnedMultiMesh.Part>.GetEnumerator
-	|-List<BaseEntity.PendingFileRequest>.GetEnumerator
-	|-List<Demos.DemoInfo>.GetEnumerator
-	|-List<Output.Entry>.GetEnumerator
-	|-List<ItemSkinDirectory.Skin>.GetEnumerator
-	|-List<WaypointSet.Waypoint>.GetEnumerator
-	|-List<Option>.GetEnumerator
-	|-List<SubmarineSonar.SonarBlip>.GetEnumerator
-	|-List<SpawnIndividual>.GetEnumerator
-	|-List<SpecialPurposeCamera.RenderEntry>.GetEnumerator
-	|-List<InventoryItem>.GetEnumerator
-	|
+	|-List<CardGameUI.KeycodeWithAction>.GetEnumerator
 	|-List<Admin.ServerUGCInfo>.GetEnumerator
 	|-List<CapsuleParams>.GetEnumerator
 	|-List<ViewModelDrawEvent>.GetEnumerator
@@ -66542,6 +66412,24 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Option>.GetEnumerator
 	|-List<ERMeshCombineUtility.MeshInstance>.GetEnumerator
 	|-List<RenderInfo.RendererInstance>.GetEnumerator
+	|
+	|-List<IconSkinPicker.SkinButtonSetup>.GetEnumerator
+	|-List<InvokeAction>.GetEnumerator
+	|-List<KeyframeView.UIKeyframeValue>.GetEnumerator
+	|-List<MidiConvar.KnobBinding>.GetEnumerator
+	|-List<MidiConvar.NoteBinding>.GetEnumerator
+	|-List<TransformSnapshot>.GetEnumerator
+	|-List<SkinnedMultiMesh.Part>.GetEnumerator
+	|-List<BaseEntity.PendingFileRequest>.GetEnumerator
+	|-List<Demos.DemoInfo>.GetEnumerator
+	|-List<Output.Entry>.GetEnumerator
+	|-List<ItemSkinDirectory.Skin>.GetEnumerator
+	|-List<WaypointSet.Waypoint>.GetEnumerator
+	|-List<Option>.GetEnumerator
+	|-List<SubmarineSonar.SonarBlip>.GetEnumerator
+	|-List<SpawnIndividual>.GetEnumerator
+	|-List<SpecialPurposeCamera.RenderEntry>.GetEnumerator
+	|-List<InventoryItem>.GetEnumerator
 	|
 	|-List<PetCommandList.PetCommandDesc>.GetEnumerator
 	|-List<PlaceMonumentsOffshore.SpawnInfo>.GetEnumerator
@@ -66627,7 +66515,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<InventoryRecipe>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<SynchronizedClock.TimedEvent>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|-List<KeyValuePair<object, Color>>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<UnitySynchronizationContext.WorkRequest>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
@@ -66678,7 +66565,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Demos.DemoInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Output.Entry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<IconSkinPicker.SkinButtonSetup>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -66696,9 +66582,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<InventoryItem>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
-	|-List<Admin.PlayerInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|-List<PlaceMonuments.SpawnInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<Admin.ServerUGCInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<CapsuleParams>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<SkeletonDefinition.Bone>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -66708,6 +66592,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<TreeInstance>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<ViewModelDrawEvent>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|
+	|-List<Admin.PlayerInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-List<PlaceMonuments.SpawnInfo>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-List<CRedge>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-List<ProjectileWeaponMod.Modifier>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -66828,7 +66715,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.System.Collections.IEnumerable.GetEnumerator
 	|-List<InventoryRecipe>.System.Collections.IEnumerable.GetEnumerator
 	|-List<SynchronizedClock.TimedEvent>.System.Collections.IEnumerable.GetEnumerator
-	|-List<KeyValuePair<object, Color>>.System.Collections.IEnumerable.GetEnumerator
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IEnumerable.GetEnumerator
 	|-List<UnitySynchronizationContext.WorkRequest>.System.Collections.IEnumerable.GetEnumerator
 	|
@@ -66879,7 +66765,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IEnumerable.GetEnumerator
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Demos.DemoInfo>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Output.Entry>.System.Collections.IEnumerable.GetEnumerator
 	|-List<IconSkinPicker.SkinButtonSetup>.System.Collections.IEnumerable.GetEnumerator
@@ -66897,9 +66782,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.System.Collections.IEnumerable.GetEnumerator
 	|-List<InventoryItem>.System.Collections.IEnumerable.GetEnumerator
 	|
-	|-List<Admin.PlayerInfo>.System.Collections.IEnumerable.GetEnumerator
-	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerable.GetEnumerator
-	|
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IEnumerable.GetEnumerator
 	|-List<Admin.ServerUGCInfo>.System.Collections.IEnumerable.GetEnumerator
 	|-List<CapsuleParams>.System.Collections.IEnumerable.GetEnumerator
 	|-List<SkeletonDefinition.Bone>.System.Collections.IEnumerable.GetEnumerator
@@ -66909,6 +66792,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.System.Collections.IEnumerable.GetEnumerator
 	|-List<TreeInstance>.System.Collections.IEnumerable.GetEnumerator
 	|-List<ViewModelDrawEvent>.System.Collections.IEnumerable.GetEnumerator
+	|
+	|-List<Admin.PlayerInfo>.System.Collections.IEnumerable.GetEnumerator
+	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-List<CRedge>.System.Collections.IEnumerable.GetEnumerator
 	|-List<ProjectileWeaponMod.Modifier>.System.Collections.IEnumerable.GetEnumerator
@@ -67029,7 +66915,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.IndexOf
 	|-List<InventoryRecipe>.IndexOf
 	|-List<SynchronizedClock.TimedEvent>.IndexOf
-	|-List<KeyValuePair<object, Color>>.IndexOf
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.IndexOf
 	|-List<UnitySynchronizationContext.WorkRequest>.IndexOf
 	|
@@ -67080,7 +66965,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.IndexOf
 	|
 	|-List<BaseEntity.PendingFileRequest>.IndexOf
-	|-List<CardTableUI.KeycodeWithAction>.IndexOf
 	|-List<Demos.DemoInfo>.IndexOf
 	|-List<Output.Entry>.IndexOf
 	|-List<IconSkinPicker.SkinButtonSetup>.IndexOf
@@ -67098,9 +66982,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.IndexOf
 	|-List<InventoryItem>.IndexOf
 	|
-	|-List<Admin.PlayerInfo>.IndexOf
-	|-List<PlaceMonuments.SpawnInfo>.IndexOf
-	|
+	|-List<CardGameUI.KeycodeWithAction>.IndexOf
 	|-List<Admin.ServerUGCInfo>.IndexOf
 	|-List<CapsuleParams>.IndexOf
 	|-List<SkeletonDefinition.Bone>.IndexOf
@@ -67110,6 +66992,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.IndexOf
 	|-List<TreeInstance>.IndexOf
 	|-List<ViewModelDrawEvent>.IndexOf
+	|
+	|-List<Admin.PlayerInfo>.IndexOf
+	|-List<PlaceMonuments.SpawnInfo>.IndexOf
 	|
 	|-List<Chat.ChatChannel>.IndexOf
 	|-List<ERCell>.IndexOf
@@ -67234,7 +67119,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.System.Collections.IList.IndexOf
 	|-List<InventoryRecipe>.System.Collections.IList.IndexOf
 	|-List<SynchronizedClock.TimedEvent>.System.Collections.IList.IndexOf
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.IndexOf
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.IndexOf
 	|-List<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.IndexOf
 	|
@@ -67285,7 +67169,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.IndexOf
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.IndexOf
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.IndexOf
 	|-List<Demos.DemoInfo>.System.Collections.IList.IndexOf
 	|-List<Output.Entry>.System.Collections.IList.IndexOf
 	|-List<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.IndexOf
@@ -67303,9 +67186,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.IndexOf
 	|-List<InventoryItem>.System.Collections.IList.IndexOf
 	|
-	|-List<Admin.PlayerInfo>.System.Collections.IList.IndexOf
-	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.IndexOf
-	|
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.IndexOf
 	|-List<Admin.ServerUGCInfo>.System.Collections.IList.IndexOf
 	|-List<CapsuleParams>.System.Collections.IList.IndexOf
 	|-List<SkeletonDefinition.Bone>.System.Collections.IList.IndexOf
@@ -67315,6 +67196,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.System.Collections.IList.IndexOf
 	|-List<TreeInstance>.System.Collections.IList.IndexOf
 	|-List<ViewModelDrawEvent>.System.Collections.IList.IndexOf
+	|
+	|-List<Admin.PlayerInfo>.System.Collections.IList.IndexOf
+	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.IndexOf
 	|
 	|-List<CRedge>.System.Collections.IList.IndexOf
 	|-List<ProjectileWeaponMod.Modifier>.System.Collections.IList.IndexOf
@@ -67467,12 +67351,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<string>.Insert
 	|-List<EventSystem>.Insert
 	|
-	|-List<CardTableUI.KeycodeWithAction>.Insert
-	|-List<ItemSkinDirectory.Skin>.Insert
-	|-List<KeyframeView.UIKeyframeValue>.Insert
-	|-List<MidiConvar.KnobBinding>.Insert
-	|-List<MidiConvar.NoteBinding>.Insert
-	|-List<Option>.Insert
+	|-List<CardGameUI.KeycodeWithAction>.Insert
+	|-List<CapsuleParams>.Insert
+	|-List<SteamNewsSource.Story>.Insert
+	|-List<ViewModelDrawEvent>.Insert
 	|
 	|-List<Cassette.LoadRequest>.Insert
 	|-List<Admin.ServerConvarInfo>.Insert
@@ -67481,7 +67363,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MapView.SleepingBagCluster>.Insert
 	|-List<TimelineEvent>.Insert
 	|-List<InventoryRecipe>.Insert
-	|-List<KeyValuePair<object, Color>>.Insert
 	|-List<UnitySynchronizationContext.WorkRequest>.Insert
 	|
 	|-List<Admin.PlayerInfo>.Insert
@@ -67557,10 +67438,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MeshRendererLookup.LookupEntry>.Insert
 	|-List<Achievement>.Insert
 	|
-	|-List<CapsuleParams>.Insert
-	|-List<SteamNewsSource.Story>.Insert
-	|-List<ViewModelDrawEvent>.Insert
-	|
 	|-List<BoneData>.Insert
 	|
 	|-List<SkeletonDefinition.Bone>.Insert
@@ -67582,6 +67459,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.Insert
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.Insert
+	|
+	|-List<ItemSkinDirectory.Skin>.Insert
+	|-List<KeyframeView.UIKeyframeValue>.Insert
+	|-List<MidiConvar.KnobBinding>.Insert
+	|-List<MidiConvar.NoteBinding>.Insert
+	|-List<Option>.Insert
 	|
 	|-List<LocalClock.TimedEvent>.Insert
 	|-List<SynchronizedClock.TimedEvent>.Insert
@@ -67665,7 +67548,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Insert
 	|
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Insert
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.Insert
 	|
 	|-List<Cassette.LoadRequest>.System.Collections.IList.Insert
 	|
@@ -67896,8 +67779,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<KeyValuePair<object, float>>.System.Collections.IList.Insert
 	|
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.Insert
-	|
 	|-List<KeyValuePair<uint, object>>.System.Collections.IList.Insert
 	|
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Insert
@@ -68008,7 +67889,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.InsertRange
 	|
-	|-List<CardTableUI.KeycodeWithAction>.InsertRange
+	|-List<CardGameUI.KeycodeWithAction>.InsertRange
 	|
 	|-List<Cassette.LoadRequest>.InsertRange
 	|
@@ -68241,8 +68122,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<KeyValuePair<object, float>>.InsertRange
 	|
-	|-List<KeyValuePair<object, Color>>.InsertRange
-	|
 	|-List<KeyValuePair<uint, object>>.InsertRange
 	|
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.InsertRange
@@ -68366,7 +68245,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.Remove
 	|-List<InventoryRecipe>.Remove
 	|-List<SynchronizedClock.TimedEvent>.Remove
-	|-List<KeyValuePair<object, Color>>.Remove
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Remove
 	|-List<UnitySynchronizationContext.WorkRequest>.Remove
 	|
@@ -68521,7 +68399,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.Remove
 	|
 	|-List<BaseEntity.PendingFileRequest>.Remove
-	|-List<CardTableUI.KeycodeWithAction>.Remove
 	|-List<Demos.DemoInfo>.Remove
 	|-List<Output.Entry>.Remove
 	|-List<IconSkinPicker.SkinButtonSetup>.Remove
@@ -68539,9 +68416,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.Remove
 	|-List<InventoryItem>.Remove
 	|
-	|-List<Admin.PlayerInfo>.Remove
-	|-List<PlaceMonuments.SpawnInfo>.Remove
-	|
+	|-List<CardGameUI.KeycodeWithAction>.Remove
 	|-List<Admin.ServerUGCInfo>.Remove
 	|-List<CapsuleParams>.Remove
 	|-List<SkeletonDefinition.Bone>.Remove
@@ -68551,6 +68426,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.Remove
 	|-List<TreeInstance>.Remove
 	|-List<ViewModelDrawEvent>.Remove
+	|
+	|-List<Admin.PlayerInfo>.Remove
+	|-List<PlaceMonuments.SpawnInfo>.Remove
 	|
 	|-List<CRedge>.Remove
 	|-List<ProjectileWeaponMod.Modifier>.Remove
@@ -68639,7 +68517,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<InventoryRecipe.Ingredient>.System.Collections.IList.Remove
 	|-List<InventoryRecipe>.System.Collections.IList.Remove
 	|-List<SynchronizedClock.TimedEvent>.System.Collections.IList.Remove
-	|-List<KeyValuePair<object, Color>>.System.Collections.IList.Remove
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.System.Collections.IList.Remove
 	|-List<UnitySynchronizationContext.WorkRequest>.System.Collections.IList.Remove
 	|
@@ -68690,7 +68567,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<WorldSplineData.LUTEntry.LUTPoint>.System.Collections.IList.Remove
 	|
 	|-List<BaseEntity.PendingFileRequest>.System.Collections.IList.Remove
-	|-List<CardTableUI.KeycodeWithAction>.System.Collections.IList.Remove
 	|-List<Demos.DemoInfo>.System.Collections.IList.Remove
 	|-List<Output.Entry>.System.Collections.IList.Remove
 	|-List<IconSkinPicker.SkinButtonSetup>.System.Collections.IList.Remove
@@ -68708,9 +68584,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<SpecialPurposeCamera.RenderEntry>.System.Collections.IList.Remove
 	|-List<InventoryItem>.System.Collections.IList.Remove
 	|
-	|-List<Admin.PlayerInfo>.System.Collections.IList.Remove
-	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.Remove
-	|
+	|-List<CardGameUI.KeycodeWithAction>.System.Collections.IList.Remove
 	|-List<Admin.ServerUGCInfo>.System.Collections.IList.Remove
 	|-List<CapsuleParams>.System.Collections.IList.Remove
 	|-List<SkeletonDefinition.Bone>.System.Collections.IList.Remove
@@ -68720,6 +68594,9 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<RenderTargetIdentifier>.System.Collections.IList.Remove
 	|-List<TreeInstance>.System.Collections.IList.Remove
 	|-List<ViewModelDrawEvent>.System.Collections.IList.Remove
+	|
+	|-List<Admin.PlayerInfo>.System.Collections.IList.Remove
+	|-List<PlaceMonuments.SpawnInfo>.System.Collections.IList.Remove
 	|
 	|-List<CRedge>.System.Collections.IList.Remove
 	|-List<ProjectileWeaponMod.Modifier>.System.Collections.IList.Remove
@@ -68882,12 +68759,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<Shader>.RemoveAll
 	|-List<ViewShake.ShakeParameters>.RemoveAll
 	|
-	|-List<CardTableUI.KeycodeWithAction>.RemoveAll
-	|-List<ItemSkinDirectory.Skin>.RemoveAll
-	|-List<KeyframeView.UIKeyframeValue>.RemoveAll
-	|-List<MidiConvar.KnobBinding>.RemoveAll
-	|-List<MidiConvar.NoteBinding>.RemoveAll
-	|-List<Option>.RemoveAll
+	|-List<CardGameUI.KeycodeWithAction>.RemoveAll
+	|-List<CapsuleParams>.RemoveAll
+	|-List<SteamNewsSource.Story>.RemoveAll
+	|-List<ViewModelDrawEvent>.RemoveAll
 	|
 	|-List<Cassette.LoadRequest>.RemoveAll
 	|-List<Admin.ServerConvarInfo>.RemoveAll
@@ -68896,7 +68771,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MapView.SleepingBagCluster>.RemoveAll
 	|-List<TimelineEvent>.RemoveAll
 	|-List<InventoryRecipe>.RemoveAll
-	|-List<KeyValuePair<object, Color>>.RemoveAll
 	|-List<UnitySynchronizationContext.WorkRequest>.RemoveAll
 	|
 	|-List<Admin.PlayerInfo>.RemoveAll
@@ -68972,10 +68846,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MeshRendererLookup.LookupEntry>.RemoveAll
 	|-List<Achievement>.RemoveAll
 	|
-	|-List<CapsuleParams>.RemoveAll
-	|-List<SteamNewsSource.Story>.RemoveAll
-	|-List<ViewModelDrawEvent>.RemoveAll
-	|
 	|-List<BoneData>.RemoveAll
 	|
 	|-List<SkeletonDefinition.Bone>.RemoveAll
@@ -68997,6 +68867,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.RemoveAll
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.RemoveAll
+	|
+	|-List<ItemSkinDirectory.Skin>.RemoveAll
+	|-List<KeyframeView.UIKeyframeValue>.RemoveAll
+	|-List<MidiConvar.KnobBinding>.RemoveAll
+	|-List<MidiConvar.NoteBinding>.RemoveAll
+	|-List<Option>.RemoveAll
 	|
 	|-List<LocalClock.TimedEvent>.RemoveAll
 	|-List<SynchronizedClock.TimedEvent>.RemoveAll
@@ -69110,12 +68986,10 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|
 	|-List<BaseEntity.PendingFileRequest>.RemoveAt
 	|
-	|-List<CardTableUI.KeycodeWithAction>.RemoveAt
-	|-List<ItemSkinDirectory.Skin>.RemoveAt
-	|-List<KeyframeView.UIKeyframeValue>.RemoveAt
-	|-List<MidiConvar.KnobBinding>.RemoveAt
-	|-List<MidiConvar.NoteBinding>.RemoveAt
-	|-List<Option>.RemoveAt
+	|-List<CardGameUI.KeycodeWithAction>.RemoveAt
+	|-List<CapsuleParams>.RemoveAt
+	|-List<SteamNewsSource.Story>.RemoveAt
+	|-List<ViewModelDrawEvent>.RemoveAt
 	|
 	|-List<Cassette.LoadRequest>.RemoveAt
 	|-List<Admin.ServerConvarInfo>.RemoveAt
@@ -69124,7 +68998,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<MapView.SleepingBagCluster>.RemoveAt
 	|-List<TimelineEvent>.RemoveAt
 	|-List<InventoryRecipe>.RemoveAt
-	|-List<KeyValuePair<object, Color>>.RemoveAt
 	|-List<UnitySynchronizationContext.WorkRequest>.RemoveAt
 	|
 	|-List<Admin.PlayerInfo>.RemoveAt
@@ -69254,10 +69127,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<ModIdentifierInternal>.RemoveAt
 	|-List<Gibbable.OverrideMesh>.RemoveAt
 	|
-	|-List<CapsuleParams>.RemoveAt
-	|-List<SteamNewsSource.Story>.RemoveAt
-	|-List<ViewModelDrawEvent>.RemoveAt
-	|
 	|-List<BoneData>.RemoveAt
 	|
 	|-List<SkeletonDefinition.Bone>.RemoveAt
@@ -69278,6 +69147,12 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<BeforeRenderHelper.OrderBlock>.RemoveAt
 	|
 	|-List<FoliageGridMeshData.FoliageVertex>.RemoveAt
+	|
+	|-List<ItemSkinDirectory.Skin>.RemoveAt
+	|-List<KeyframeView.UIKeyframeValue>.RemoveAt
+	|-List<MidiConvar.KnobBinding>.RemoveAt
+	|-List<MidiConvar.NoteBinding>.RemoveAt
+	|-List<Option>.RemoveAt
 	|
 	|-List<LocalClock.TimedEvent>.RemoveAt
 	|-List<SynchronizedClock.TimedEvent>.RemoveAt
@@ -69350,7 +69225,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.RemoveRange
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.RemoveRange
 	|-List<BaseEntity.PendingFileRequest>.RemoveRange
-	|-List<CardTableUI.KeycodeWithAction>.RemoveRange
+	|-List<CardGameUI.KeycodeWithAction>.RemoveRange
 	|-List<Cassette.LoadRequest>.RemoveRange
 	|-List<Admin.PlayerInfo>.RemoveRange
 	|-List<Admin.ServerConvarInfo>.RemoveRange
@@ -69466,7 +69341,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.RemoveRange
 	|-List<KeyValuePair<object, object>>.RemoveRange
 	|-List<KeyValuePair<object, float>>.RemoveRange
-	|-List<KeyValuePair<object, Color>>.RemoveRange
 	|-List<KeyValuePair<uint, object>>.RemoveRange
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.RemoveRange
 	|-List<DateTime>.RemoveRange
@@ -69531,7 +69405,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Reverse
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Reverse
 	|-List<BaseEntity.PendingFileRequest>.Reverse
-	|-List<CardTableUI.KeycodeWithAction>.Reverse
+	|-List<CardGameUI.KeycodeWithAction>.Reverse
 	|-List<Cassette.LoadRequest>.Reverse
 	|-List<Admin.PlayerInfo>.Reverse
 	|-List<Admin.ServerConvarInfo>.Reverse
@@ -69647,7 +69521,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Reverse
 	|-List<KeyValuePair<object, object>>.Reverse
 	|-List<KeyValuePair<object, float>>.Reverse
-	|-List<KeyValuePair<object, Color>>.Reverse
 	|-List<KeyValuePair<uint, object>>.Reverse
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Reverse
 	|-List<DateTime>.Reverse
@@ -69711,7 +69584,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Reverse
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Reverse
 	|-List<BaseEntity.PendingFileRequest>.Reverse
-	|-List<CardTableUI.KeycodeWithAction>.Reverse
+	|-List<CardGameUI.KeycodeWithAction>.Reverse
 	|-List<Cassette.LoadRequest>.Reverse
 	|-List<Admin.PlayerInfo>.Reverse
 	|-List<Admin.ServerConvarInfo>.Reverse
@@ -69825,7 +69698,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Reverse
 	|-List<KeyValuePair<object, object>>.Reverse
 	|-List<KeyValuePair<object, float>>.Reverse
-	|-List<KeyValuePair<object, Color>>.Reverse
 	|-List<KeyValuePair<uint, object>>.Reverse
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Reverse
 	|-List<DateTime>.Reverse
@@ -69886,7 +69758,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
 	|-List<BaseEntity.PendingFileRequest>.Sort
-	|-List<CardTableUI.KeycodeWithAction>.Sort
+	|-List<CardGameUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
 	|-List<Admin.ServerConvarInfo>.Sort
@@ -70000,7 +69872,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Sort
 	|-List<KeyValuePair<object, object>>.Sort
 	|-List<KeyValuePair<object, float>>.Sort
-	|-List<KeyValuePair<object, Color>>.Sort
 	|-List<KeyValuePair<uint, object>>.Sort
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Sort
 	|-List<DateTime>.Sort
@@ -70061,7 +69932,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
 	|-List<BaseEntity.PendingFileRequest>.Sort
-	|-List<CardTableUI.KeycodeWithAction>.Sort
+	|-List<CardGameUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
 	|-List<Admin.ServerConvarInfo>.Sort
@@ -70178,7 +70049,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Sort
 	|-List<KeyValuePair<object, object>>.Sort
 	|-List<KeyValuePair<object, float>>.Sort
-	|-List<KeyValuePair<object, Color>>.Sort
 	|-List<KeyValuePair<uint, object>>.Sort
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Sort
 	|-List<DateTime>.Sort
@@ -70239,7 +70109,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
 	|-List<BaseEntity.PendingFileRequest>.Sort
-	|-List<CardTableUI.KeycodeWithAction>.Sort
+	|-List<CardGameUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
 	|-List<Admin.ServerConvarInfo>.Sort
@@ -70353,7 +70223,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Sort
 	|-List<KeyValuePair<object, object>>.Sort
 	|-List<KeyValuePair<object, float>>.Sort
-	|-List<KeyValuePair<object, Color>>.Sort
 	|-List<KeyValuePair<uint, object>>.Sort
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Sort
 	|-List<DateTime>.Sort
@@ -70414,7 +70283,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.Sort
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.Sort
 	|-List<BaseEntity.PendingFileRequest>.Sort
-	|-List<CardTableUI.KeycodeWithAction>.Sort
+	|-List<CardGameUI.KeycodeWithAction>.Sort
 	|-List<Cassette.LoadRequest>.Sort
 	|-List<Admin.PlayerInfo>.Sort
 	|-List<Admin.ServerConvarInfo>.Sort
@@ -70535,7 +70404,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.Sort
 	|-List<KeyValuePair<object, object>>.Sort
 	|-List<KeyValuePair<object, float>>.Sort
-	|-List<KeyValuePair<object, Color>>.Sort
 	|-List<KeyValuePair<uint, object>>.Sort
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.Sort
 	|-List<DateTime>.Sort
@@ -70644,7 +70512,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.ToArray
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.ToArray
 	|-List<BaseEntity.PendingFileRequest>.ToArray
-	|-List<CardTableUI.KeycodeWithAction>.ToArray
+	|-List<CardGameUI.KeycodeWithAction>.ToArray
 	|-List<Cassette.LoadRequest>.ToArray
 	|-List<Admin.PlayerInfo>.ToArray
 	|-List<Admin.ServerConvarInfo>.ToArray
@@ -70753,7 +70621,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.ToArray
 	|-List<KeyValuePair<object, object>>.ToArray
 	|-List<KeyValuePair<object, float>>.ToArray
-	|-List<KeyValuePair<object, Color>>.ToArray
 	|-List<KeyValuePair<uint, object>>.ToArray
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.ToArray
 	|-List<DateTime>.ToArray
@@ -70812,7 +70679,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>.TrimExcess
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>.TrimExcess
 	|-List<BaseEntity.PendingFileRequest>.TrimExcess
-	|-List<CardTableUI.KeycodeWithAction>.TrimExcess
+	|-List<CardGameUI.KeycodeWithAction>.TrimExcess
 	|-List<Cassette.LoadRequest>.TrimExcess
 	|-List<Admin.PlayerInfo>.TrimExcess
 	|-List<Admin.ServerConvarInfo>.TrimExcess
@@ -70926,7 +70793,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>.TrimExcess
 	|-List<KeyValuePair<object, object>>.TrimExcess
 	|-List<KeyValuePair<object, float>>.TrimExcess
-	|-List<KeyValuePair<object, Color>>.TrimExcess
 	|-List<KeyValuePair<uint, object>>.TrimExcess
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>.TrimExcess
 	|-List<DateTime>.TrimExcess
@@ -70987,7 +70853,7 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<AlignedLineDrawer.LinePoint>..cctor
 	|-List<AtmosphereVolumeRenderer.CurrentVolumeEntry>..cctor
 	|-List<BaseEntity.PendingFileRequest>..cctor
-	|-List<CardTableUI.KeycodeWithAction>..cctor
+	|-List<CardGameUI.KeycodeWithAction>..cctor
 	|-List<Cassette.LoadRequest>..cctor
 	|-List<Admin.PlayerInfo>..cctor
 	|-List<Admin.ServerConvarInfo>..cctor
@@ -71101,7 +70967,6 @@ public class List<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IL
 	|-List<KeyValuePair<Int32Enum, object>>..cctor
 	|-List<KeyValuePair<object, object>>..cctor
 	|-List<KeyValuePair<object, float>>..cctor
-	|-List<KeyValuePair<object, Color>>..cctor
 	|-List<KeyValuePair<uint, object>>..cctor
 	|-List<KeyValuePair<ulong, Dispatch.ResultCallback>>..cctor
 	|-List<DateTime>..cctor
@@ -72525,16 +72390,16 @@ private sealed class SortedDictionary.KeyCollection.<>c__DisplayClass5_0<TKey, T
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass5_0<long, object>..ctor
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass5_0<object, object>..ctor
+	|-SortedDictionary.KeyCollection.<>c
+	|-SortedDictionary.KeyCollection.<>c
 	*/
 
-	internal bool <CopyTo>b__0(SortedSet.Node<KeyValuePair<TKey, TValue>> node) { }
+	internal bool <CopyTo>
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass5_0<long, object>.<CopyTo>b__0
+	|-SortedDictionary.KeyCollection.<>c
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass5_0<object, object>.<CopyTo>b__0
+	|-SortedDictionary.KeyCollection.<>c
 	*/
 
 }
@@ -72547,8 +72412,8 @@ private sealed class SortedDictionary.KeyCollection.<>c__DisplayClass6_0<TKey, T
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass6_0<long, object>..ctor
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass6_0<object, object>..ctor
+	|-SortedDictionary.KeyCollection.<>c
+	|-SortedDictionary.KeyCollection.<>c
 	*/
 
 }
@@ -72556,22 +72421,22 @@ private sealed class SortedDictionary.KeyCollection.<>c__DisplayClass6_0<TKey, T
 private sealed class SortedDictionary.KeyCollection.<>c__DisplayClass6_1<TKey, TValue> // TypeDefIndex: 3127
 {
 	public object[] objects; 
-	public SortedDictionary.KeyCollection.<>c__DisplayClass6_0<TKey, TValue> CS$<>8__locals1; 
+	public SortedDictionary.KeyCollection.<>c
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass6_1<long, object>..ctor
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass6_1<object, object>..ctor
+	|-SortedDictionary.KeyCollection.<>c
+	|-SortedDictionary.KeyCollection.<>c
 	*/
 
-	internal bool <System.Collections.ICollection.CopyTo>b__0(SortedSet.Node<KeyValuePair<TKey, TValue>> node) { }
+	internal bool <System.Collections.ICollection.CopyTo>
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass6_1<long, object>.<System.Collections.ICollection.CopyTo>b__0
+	|-SortedDictionary.KeyCollection.<>c
 	|
-	|-SortedDictionary.KeyCollection.<>c__DisplayClass6_1<object, object>.<System.Collections.ICollection.CopyTo>b__0
+	|-SortedDictionary.KeyCollection.<>c
 	*/
 
 }
@@ -72742,15 +72607,15 @@ private sealed class SortedDictionary.ValueCollection.<>c__DisplayClass5_0<TKey,
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass5_0<long, object>..ctor
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass5_0<object, object>..ctor
+	|-SortedDictionary.ValueCollection.<>c
+	|-SortedDictionary.ValueCollection.<>c
 	*/
 
-	internal bool <CopyTo>b__0(SortedSet.Node<KeyValuePair<TKey, TValue>> node) { }
+	internal bool <CopyTo>
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass5_0<long, object>.<CopyTo>b__0
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass5_0<object, object>.<CopyTo>b__0
+	|-SortedDictionary.ValueCollection.<>c
+	|-SortedDictionary.ValueCollection.<>c
 	*/
 
 }
@@ -72763,8 +72628,8 @@ private sealed class SortedDictionary.ValueCollection.<>c__DisplayClass6_0<TKey,
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass6_0<long, object>..ctor
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass6_0<object, object>..ctor
+	|-SortedDictionary.ValueCollection.<>c
+	|-SortedDictionary.ValueCollection.<>c
 	*/
 
 }
@@ -72772,21 +72637,21 @@ private sealed class SortedDictionary.ValueCollection.<>c__DisplayClass6_0<TKey,
 private sealed class SortedDictionary.ValueCollection.<>c__DisplayClass6_1<TKey, TValue> // TypeDefIndex: 3132
 {
 	public object[] objects; 
-	public SortedDictionary.ValueCollection.<>c__DisplayClass6_0<TKey, TValue> CS$<>8__locals1; 
+	public SortedDictionary.ValueCollection.<>c
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass6_1<long, object>..ctor
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass6_1<object, object>..ctor
+	|-SortedDictionary.ValueCollection.<>c
+	|-SortedDictionary.ValueCollection.<>c
 	*/
 
-	internal bool <System.Collections.ICollection.CopyTo>b__0(SortedSet.Node<KeyValuePair<TKey, TValue>> node) { }
+	internal bool <System.Collections.ICollection.CopyTo>
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass6_1<long, object>.<System.Collections.ICollection.CopyTo>b__0
-	|-SortedDictionary.ValueCollection.<>c__DisplayClass6_1<object, object>.<System.Collections.ICollection.CopyTo>b__0
+	|-SortedDictionary.ValueCollection.<>c
+	|-SortedDictionary.ValueCollection.<>c
 	*/
 
 }
@@ -72821,15 +72686,15 @@ private sealed class SortedDictionary.<>c__DisplayClass34_0<TKey, TValue> // Typ
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.<>c__DisplayClass34_0<long, object>..ctor
-	|-SortedDictionary.<>c__DisplayClass34_0<object, object>..ctor
+	|-SortedDictionary.<>c
+	|-SortedDictionary.<>c
 	*/
 
-	internal bool <ContainsValue>b__0(SortedSet.Node<KeyValuePair<TKey, TValue>> node) { }
+	internal bool <ContainsValue>
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.<>c__DisplayClass34_0<long, object>.<ContainsValue>b__0
-	|-SortedDictionary.<>c__DisplayClass34_0<object, object>.<ContainsValue>b__0
+	|-SortedDictionary.<>c
+	|-SortedDictionary.<>c
 	*/
 
 }
@@ -72837,21 +72702,21 @@ private sealed class SortedDictionary.<>c__DisplayClass34_0<TKey, TValue> // Typ
 private sealed class SortedDictionary.<>c__DisplayClass34_1<TKey, TValue> // TypeDefIndex: 3135
 {
 	public EqualityComparer<TValue> valueComparer; 
-	public SortedDictionary.<>c__DisplayClass34_0<TKey, TValue> CS$<>8__locals1; 
+	public SortedDictionary.<>c
 
 
 	public void .ctor() { }
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.<>c__DisplayClass34_1<long, object>..ctor
-	|-SortedDictionary.<>c__DisplayClass34_1<object, object>..ctor
+	|-SortedDictionary.<>c
+	|-SortedDictionary.<>c
 	*/
 
-	internal bool <ContainsValue>b__1(SortedSet.Node<KeyValuePair<TKey, TValue>> node) { }
+	internal bool <ContainsValue>
 	/* GenericInstMethod :
 	|
-	|-SortedDictionary.<>c__DisplayClass34_1<long, object>.<ContainsValue>b__1
-	|-SortedDictionary.<>c__DisplayClass34_1<object, object>.<ContainsValue>b__1
+	|-SortedDictionary.<>c
+	|-SortedDictionary.<>c
 	*/
 
 }
@@ -73720,14 +73585,13 @@ public class Stack<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Stack<KeyValuePair<int, int>>.GetEnumerator
 	|-Stack<IntPtr>.GetEnumerator
 	|-Stack<object>.GetEnumerator
+	|-Stack<Vector2>.GetEnumerator
 	|
 	|-Stack<SequenceNode.SequenceConstructPosContext>.GetEnumerator
 	|
 	|-Stack<Matrix4x4>.GetEnumerator
 	|
 	|-Stack<EventDispatcher.DispatchContext>.GetEnumerator
-	|
-	|-Stack<Vector2>.GetEnumerator
 	*/
 
 	private IEnumerator<T> System.Collections.Generic.IEnumerable<T>.GetEnumerator() { }
@@ -73736,14 +73600,13 @@ public class Stack<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Stack<KeyValuePair<int, int>>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Stack<IntPtr>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-Stack<object>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+	|-Stack<Vector2>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-Stack<SequenceNode.SequenceConstructPosContext>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-Stack<Matrix4x4>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|
 	|-Stack<EventDispatcher.DispatchContext>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
-	|-Stack<Vector2>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	*/
 
 	private IEnumerator System.Collections.IEnumerable.GetEnumerator() { }
@@ -73752,14 +73615,13 @@ public class Stack<T> : IEnumerable<T>, IEnumerable, ICollection, IReadOnlyColle
 	|-Stack<KeyValuePair<int, int>>.System.Collections.IEnumerable.GetEnumerator
 	|-Stack<IntPtr>.System.Collections.IEnumerable.GetEnumerator
 	|-Stack<object>.System.Collections.IEnumerable.GetEnumerator
+	|-Stack<Vector2>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-Stack<SequenceNode.SequenceConstructPosContext>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-Stack<Matrix4x4>.System.Collections.IEnumerable.GetEnumerator
 	|
 	|-Stack<EventDispatcher.DispatchContext>.System.Collections.IEnumerable.GetEnumerator
-	|
-	|-Stack<Vector2>.System.Collections.IEnumerable.GetEnumerator
 	*/
 
 	public T Peek() { }
@@ -74964,7 +74826,6 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<float3>.GetEnumerator
 	|-NativeArray<half2>.GetEnumerator
 	|-NativeArray<Color32>.GetEnumerator
-	|
 	|-NativeArray<LightDataGI>.GetEnumerator
 	|-NativeArray<Plane>.GetEnumerator
 	|-NativeArray<RaycastCommand>.GetEnumerator
@@ -74988,7 +74849,6 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<float3>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<half2>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<Color32>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
-	|
 	|-NativeArray<LightDataGI>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<Plane>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
 	|-NativeArray<RaycastCommand>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
@@ -75012,7 +74872,6 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 	|-NativeArray<float3>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<half2>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<Color32>.System.Collections.IEnumerable.GetEnumerator
-	|
 	|-NativeArray<LightDataGI>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<Plane>.System.Collections.IEnumerable.GetEnumerator
 	|-NativeArray<RaycastCommand>.System.Collections.IEnumerable.GetEnumerator
@@ -75161,17 +75020,17 @@ public struct NativeArray<T> : IDisposable, IEnumerable<T>, IEnumerable, IEquata
 
 }
 
-internal struct CastHelper<T> // TypeDefIndex: 3508
+internal struct CastHelper<T> // TypeDefIndex: 3509
 {
 	public T t; 
 	public IntPtr onePointerFurtherThanT; 
 
 }
 
-internal class InvokableCall<T1, T2> : BaseInvokableCall // TypeDefIndex: 3632
+internal class InvokableCall<T1, T2> : BaseInvokableCall // TypeDefIndex: 3633
 {
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private UnityAction<T1, T2> Delegate; 
 
 
@@ -75214,7 +75073,7 @@ internal class InvokableCall<T1, T2> : BaseInvokableCall // TypeDefIndex: 3632
 
 }
 
-internal class InvokableCall<T1, T2, T3> : BaseInvokableCall // TypeDefIndex: 3633
+internal class InvokableCall<T1, T2, T3> : BaseInvokableCall // TypeDefIndex: 3634
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -75254,10 +75113,10 @@ internal class InvokableCall<T1, T2, T3> : BaseInvokableCall // TypeDefIndex: 36
 
 }
 
-internal class InvokableCall<T1, T2, T3, T4> : BaseInvokableCall // TypeDefIndex: 3634
+internal class InvokableCall<T1, T2, T3, T4> : BaseInvokableCall // TypeDefIndex: 3635
 {
-	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
+	[CompilerGeneratedAttribute] 
 	private UnityAction<T1, T2, T3, T4> Delegate; 
 
 
@@ -75281,7 +75140,7 @@ internal class InvokableCall<T1, T2, T3, T4> : BaseInvokableCall // TypeDefIndex
 
 }
 
-internal class CachedInvokableCall<T> : InvokableCall<T> // TypeDefIndex: 3635
+internal class CachedInvokableCall<T> : InvokableCall<T> // TypeDefIndex: 3636
 {
 	private readonly T m_Arg1; 
 
@@ -75325,7 +75184,90 @@ internal class CachedInvokableCall<T> : InvokableCall<T> // TypeDefIndex: 3635
 
 }
 
-internal struct ParticleSystemJobStruct<T> // TypeDefIndex: 4558
+public struct ScriptPlayable<T> : IEquatable<ScriptPlayable<T>> // TypeDefIndex: 3877
+{
+	private PlayableHandle m_Handle; 
+	private static readonly ScriptPlayable<T> m_NullPlayable; 
+
+
+	public static ScriptPlayable<T> Create(PlayableGraph graph, T template, int inputCount = 0) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<TimelineConvarPlayable>.Create
+	|-ScriptPlayable<object>.Create
+	*/
+
+	private static PlayableHandle CreateHandle(PlayableGraph graph, T template, int inputCount) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.CreateHandle
+	*/
+
+	private static object CreateScriptInstance() { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.CreateScriptInstance
+	*/
+
+	private static object CloneScriptInstance(IPlayableBehaviour source) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.CloneScriptInstance
+	*/
+
+	private static object CloneScriptInstanceFromEngineObject(Object source) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.CloneScriptInstanceFromEngineObject
+	*/
+
+	private static object CloneScriptInstanceFromIClonable(ICloneable source) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.CloneScriptInstanceFromIClonable
+	*/
+
+	internal void .ctor(PlayableHandle handle) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>..ctor
+	*/
+
+	public PlayableHandle GetHandle() { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.GetHandle
+	*/
+
+	public T GetBehaviour() { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<TimelineConvarPlayable>.GetBehaviour
+	|-ScriptPlayable<object>.GetBehaviour
+	*/
+
+	public static Playable op_Implicit(ScriptPlayable<T> playable) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.op_Implicit
+	|-ScriptPlayable<TimelineConvarPlayable>.op_Implicit
+	*/
+
+	public bool Equals(ScriptPlayable<T> other) { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>.Equals
+	*/
+
+	private static void .cctor() { }
+	/* GenericInstMethod :
+	|
+	|-ScriptPlayable<object>..cctor
+	*/
+
+}
+
+internal struct ParticleSystemJobStruct<T> // TypeDefIndex: 4560
 {
 	public static IntPtr jobReflectionData; 
 
@@ -75344,7 +75286,7 @@ internal struct ParticleSystemJobStruct<T> // TypeDefIndex: 4558
 
 }
 
-internal class ObjectPool<T> // TypeDefIndex: 4598
+internal class ObjectPool<T> // TypeDefIndex: 4600
 {
 	private readonly Stack<T> m_Stack; 
 	private int m_MaxSize; 
@@ -75399,7 +75341,7 @@ internal class ObjectPool<T> // TypeDefIndex: 4598
 
 }
 
-public abstract class PointerCaptureEventBase<T> : EventBase<T> // TypeDefIndex: 4624
+public abstract class PointerCaptureEventBase<T> : EventBase<T> // TypeDefIndex: 4626
 {
 	[CompilerGeneratedAttribute] 
 	[DebuggerBrowsableAttribute] 
@@ -75460,7 +75402,7 @@ public abstract class PointerCaptureEventBase<T> : EventBase<T> // TypeDefIndex:
 
 }
 
-public abstract class MouseCaptureEventBase<T> : PointerCaptureEventBase<T> // TypeDefIndex: 4627
+public abstract class MouseCaptureEventBase<T> : PointerCaptureEventBase<T> // TypeDefIndex: 4629
 {
 
 	protected override void Init() { }
@@ -75481,7 +75423,7 @@ public abstract class MouseCaptureEventBase<T> : PointerCaptureEventBase<T> // T
 
 }
 
-public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent // TypeDefIndex: 4632
+public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent // TypeDefIndex: 4634
 {
 
 public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent
@@ -75528,7 +75470,7 @@ public abstract class CommandEventBase<T> : EventBase<T>, ICommandEvent
 
 }
 
-public abstract class DragAndDropEventBase<T> : MouseEventBase<T> // TypeDefIndex: 4636
+public abstract class DragAndDropEventBase<T> : MouseEventBase<T> // TypeDefIndex: 4638
 {
 
 	protected void .ctor() { }
@@ -75544,7 +75486,7 @@ public abstract class DragAndDropEventBase<T> : MouseEventBase<T> // TypeDefInde
 
 }
 
-public abstract class EventBase<T> : EventBase // TypeDefIndex: 4646
+public abstract class EventBase<T> : EventBase // TypeDefIndex: 4648
 {
 	private static readonly long s_TypeId; 
 	private static readonly ObjectPool<T> s_Pool; 
@@ -75745,7 +75687,7 @@ public abstract class EventBase<T> : EventBase // TypeDefIndex: 4646
 
 }
 
-public abstract class FocusEventBase<T> : EventBase<T> // TypeDefIndex: 4654
+public abstract class FocusEventBase<T> : EventBase<T> // TypeDefIndex: 4656
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -75841,7 +75783,7 @@ public abstract class FocusEventBase<T> : EventBase<T> // TypeDefIndex: 4654
 
 }
 
-public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent // TypeDefIndex: 4665
+public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent // TypeDefIndex: 4667
 {
 
 public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent
@@ -75920,7 +75862,7 @@ public abstract class KeyboardEventBase<T> : EventBase<T>, IKeyboardEvent
 
 }
 
-public abstract class MouseEventBase<T> : EventBase<T>, IMouseEvent, IMouseEventInternal // TypeDefIndex: 4673
+public abstract class MouseEventBase<T> : EventBase<T>, IMouseEvent, IMouseEventInternal // TypeDefIndex: 4675
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -76463,7 +76405,7 @@ public abstract class MouseEventBase<T> : EventBase<T>, IMouseEvent, IMouseEvent
 
 }
 
-public abstract class PointerEventBase<T> : EventBase<T>, IPointerEvent, IPointerEventInternal // TypeDefIndex: 4694
+public abstract class PointerEventBase<T> : EventBase<T>, IPointerEvent, IPointerEventInternal // TypeDefIndex: 4696
 {
 	[DebuggerBrowsableAttribute] 
 	[CompilerGeneratedAttribute] 
@@ -77126,7 +77068,7 @@ public abstract class PointerEventBase<T> : EventBase<T>, IPointerEvent, IPointe
 
 }
 
-public struct StyleEnum<T> : IStyleValue<T>, IEquatable<StyleEnum<T>> // TypeDefIndex: 4714
+public struct StyleEnum<T> : IStyleValue<T>, IEquatable<StyleEnum<T>> // TypeDefIndex: 4716
 {
 	private StyleKeyword m_Keyword; 
 	private T m_Value; 
@@ -77196,7 +77138,7 @@ public struct StyleEnum<T> : IStyleValue<T>, IEquatable<StyleEnum<T>> // TypeDef
 
 }
 
-public class BufferList<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4797
+public class BufferList<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4799
 {
 	private int count; 
 	private T[] buffer; 
@@ -77584,7 +77526,7 @@ public class BufferList<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4797
 
 }
 
-public class Deque<T> // TypeDefIndex: 4799
+public class Deque<T> // TypeDefIndex: 4801
 {
 	private T[] buffer; 
 	private int offset; 
@@ -77738,7 +77680,7 @@ public class Deque<T> // TypeDefIndex: 4799
 
 }
 
-public class ImmutableStack<T> : IImmutableStack<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 4801
+public class ImmutableStack<T> : IImmutableStack<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 4803
 {
 	[CompilerGeneratedAttribute] 
 	private static readonly IImmutableStack<T> <Empty>k__BackingField; 
@@ -77810,7 +77752,7 @@ public class ImmutableStack<T> : IImmutableStack<T>, IEnumerable<T>, IEnumerable
 
 }
 
-public struct IntrusiveLinkedList<T> // TypeDefIndex: 4805
+public struct IntrusiveLinkedList<T> // TypeDefIndex: 4807
 {
 	private T head; 
 
@@ -77837,7 +77779,7 @@ public struct IntrusiveLinkedList<T> // TypeDefIndex: 4805
 
 }
 
-public struct IntrusiveMinHeap<T> // TypeDefIndex: 4807
+public struct IntrusiveMinHeap<T> // TypeDefIndex: 4809
 {
 	private T head; 
 
@@ -77867,7 +77809,7 @@ public struct IntrusiveMinHeap<T> // TypeDefIndex: 4807
 
 }
 
-public class ListDictionary<TKey, TVal> : IEnumerable<KeyValuePair<TKey, TVal>>, IEnumerable // TypeDefIndex: 4809
+public class ListDictionary<TKey, TVal> : IEnumerable<KeyValuePair<TKey, TVal>>, IEnumerable // TypeDefIndex: 4811
 {
 	private Dictionary<TKey, int> key2idx; 
 	private Dictionary<int, TKey> idx2key; 
@@ -78234,7 +78176,7 @@ public class ListDictionary<TKey, TVal> : IEnumerable<KeyValuePair<TKey, TVal>>,
 
 }
 
-private sealed class ListDictionary.<GetEnumerator>d__24<TKey, TVal> : IEnumerator<KeyValuePair<TKey, TVal>>, IEnumerator, IDisposable // TypeDefIndex: 4810
+private sealed class ListDictionary.<GetEnumerator>d__24<TKey, TVal> : IEnumerator<KeyValuePair<TKey, TVal>>, IEnumerator, IDisposable // TypeDefIndex: 4812
 {
 	private int <>1__state; 
 	private KeyValuePair<TKey, TVal> <>2__current; 
@@ -78344,7 +78286,7 @@ private sealed class ListDictionary.<GetEnumerator>d__24<TKey, TVal> : IEnumerat
 
 }
 
-public class ListHashSet<T> : IEnumerable<T>, IEnumerable, IList<T>, ICollection<T> // TypeDefIndex: 4811
+public class ListHashSet<T> : IEnumerable<T>, IEnumerable, IList<T>, ICollection<T> // TypeDefIndex: 4813
 {
 	private Dictionary<T, int> val2idx; 
 	private Dictionary<int, T> idx2val; 
@@ -78619,6 +78561,7 @@ public class ListHashSet<T> : IEnumerable<T>, IEnumerable, IList<T>, ICollection
 	|-ListHashSet<object>.get_Count
 	|-ListHashSet<TreeLOD>.get_Count
 	|-ListHashSet<UIBackgroundBlur>.get_Count
+	|-ListHashSet<UIChat>.get_Count
 	|-ListHashSet<UIDialog>.get_Count
 	|-ListHashSet<UpdateBehaviour>.get_Count
 	|-ListHashSet<ViewModelDrawEvent>.get_Count
@@ -78706,7 +78649,7 @@ public class ListHashSet<T> : IEnumerable<T>, IEnumerable, IList<T>, ICollection
 
 }
 
-public class MruDictionary<Key, Value> : IEnumerable<KeyValuePair<Key, Value>>, IEnumerable // TypeDefIndex: 4815
+public class MruDictionary<Key, Value> : IEnumerable<KeyValuePair<Key, Value>>, IEnumerable // TypeDefIndex: 4817
 {
 	private int capacity; 
 	private Queue<LinkedListNode<KeyValuePair<Key, Value>>> recycled; 
@@ -78807,7 +78750,7 @@ public class MruDictionary<Key, Value> : IEnumerable<KeyValuePair<Key, Value>>, 
 
 }
 
-public class Grid<T> // TypeDefIndex: 4833
+public class Grid<T> // TypeDefIndex: 4835
 {
 	[CompilerGeneratedAttribute] 
 	private int <CellCount>k__BackingField; 
@@ -78904,7 +78847,7 @@ public class Grid<T> // TypeDefIndex: 4833
 
 }
 
-public class CircularBuffer<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4835
+public class CircularBuffer<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 4837
 {
 	private readonly T[] _buffer; 
 	private int _start; 
@@ -79071,13 +79014,13 @@ public class CircularBuffer<T> : IEnumerable<T>, IEnumerable // TypeDefIndex: 48
 
 }
 
-internal static class Pool<T> // TypeDefIndex: 4843
+internal static class Pool<T> // TypeDefIndex: 4845
 {
 	public static Pool.PoolCollection<T> Collection; 
 
 }
 
-public static class DictionaryExtensions // TypeDefIndex: 4846
+public static class DictionaryExtensions // TypeDefIndex: 4848
 {
 
 	[ExtensionAttribute] 
@@ -79104,7 +79047,7 @@ public static class DictionaryExtensions // TypeDefIndex: 4846
 
 }
 
-internal static class ListPool<T> // TypeDefIndex: 5024
+internal static class ListPool<T> // TypeDefIndex: 5026
 {
 	private static readonly ObjectPool<List<T>> s_ListPool; 
 
@@ -79167,7 +79110,7 @@ internal static class ListPool<T> // TypeDefIndex: 5024
 
 }
 
-internal class ObjectPool<T> // TypeDefIndex: 5025
+internal class ObjectPool<T> // TypeDefIndex: 5027
 {
 	private readonly Stack<T> m_Stack; 
 	private readonly UnityAction<T> m_ActionOnGet; 
@@ -79232,7 +79175,7 @@ internal class ObjectPool<T> // TypeDefIndex: 5025
 
 }
 
-internal class IndexedSet<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5041
+internal class IndexedSet<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5043
 {
 	private readonly List<T> m_List; 
 	private Dictionary<T, int> m_Dictionary; 
@@ -79371,7 +79314,7 @@ internal class IndexedSet<T> : IList<T>, ICollection<T>, IEnumerable<T>, IEnumer
 
 }
 
-internal class TweenRunner<T> // TypeDefIndex: 5048
+internal class TweenRunner<T> // TypeDefIndex: 5050
 {
 	protected MonoBehaviour m_CoroutineContainer; 
 	protected IEnumerator m_Tween; 
@@ -79417,7 +79360,7 @@ internal class TweenRunner<T> // TypeDefIndex: 5048
 
 }
 
-internal struct CallResult<T> : INotifyCompletion // TypeDefIndex: 5105
+internal struct CallResult<T> : INotifyCompletion // TypeDefIndex: 5107
 {
 	private SteamAPICall_t call; 
 	private ISteamUtils utils; 
@@ -79506,14 +79449,14 @@ internal struct CallResult<T> : INotifyCompletion // TypeDefIndex: 5105
 
 }
 
-internal struct MatchMakingKeyValuePair // TypeDefIndex: 5509
+internal struct MatchMakingKeyValuePair // TypeDefIndex: 5511
 {
 	internal string Key; 
 	internal string Value; 
 
 }
 
-public abstract class InvokeHandlerBase<T> : SingletonComponent<T> // TypeDefIndex: 5569
+public abstract class InvokeHandlerBase<T> : SingletonComponent<T> // TypeDefIndex: 5571
 {
 	public static bool performanceTracking; 
 	public static float maxTickTimeWarning; 
@@ -79603,7 +79546,7 @@ public abstract class InvokeHandlerBase<T> : SingletonComponent<T> // TypeDefInd
 
 }
 
-public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 5595
+public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 5597
 {
 	public static ListHashSet<T> InstanceList; 
 
@@ -79690,7 +79633,7 @@ public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 5595
 
 }
 
-public class PriorityListComponent<T> : ListComponent<T> // TypeDefIndex: 5597
+public class PriorityListComponent<T> : ListComponent<T> // TypeDefIndex: 5599
 {
 	public static T Instance { get; }
 
@@ -79712,7 +79655,7 @@ public class PriorityListComponent<T> : ListComponent<T> // TypeDefIndex: 5597
 
 }
 
-public abstract class SingletonComponent<T> : SingletonComponent // TypeDefIndex: 5598
+public abstract class SingletonComponent<T> : SingletonComponent // TypeDefIndex: 5600
 {
 	public static T Instance; 
 
@@ -80057,7 +80000,7 @@ public abstract class SingletonComponent<T> : SingletonComponent // TypeDefIndex
 
 }
 
-internal sealed class ElementTryParser<T> : MulticastDelegate // TypeDefIndex: 5766
+internal sealed class ElementTryParser<T> : MulticastDelegate // TypeDefIndex: 5768
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -80098,7 +80041,7 @@ internal sealed class ElementTryParser<T> : MulticastDelegate // TypeDefIndex: 5
 
 }
 
-internal sealed class TryParseDelegate<T> : MulticastDelegate // TypeDefIndex: 5772
+internal sealed class TryParseDelegate<T> : MulticastDelegate // TypeDefIndex: 5774
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -80159,7 +80102,7 @@ internal sealed class TryParseDelegate<T> : MulticastDelegate // TypeDefIndex: 5
 
 }
 
-internal sealed class TryParseListDelegate<T> : MulticastDelegate // TypeDefIndex: 5773
+internal sealed class TryParseListDelegate<T> : MulticastDelegate // TypeDefIndex: 5775
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -80201,7 +80144,7 @@ internal sealed class TryParseListDelegate<T> : MulticastDelegate // TypeDefInde
 
 }
 
-public sealed class HttpHeaderValueCollection<T> : ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5779
+public sealed class HttpHeaderValueCollection<T> : ICollection<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 5781
 {
 	private readonly List<T> list; 
 	private readonly HttpHeaders headers; 
@@ -80307,14 +80250,14 @@ public sealed class HttpHeaderValueCollection<T> : ICollection<T>, IEnumerable<T
 
 }
 
-public sealed class JsonDictionaryAttribute : JsonContainerAttribute // TypeDefIndex: 5878
+public sealed class JsonDictionaryAttribute : JsonContainerAttribute // TypeDefIndex: 5880
 {
 
 	public void .ctor() { }
 
 }
 
-internal class ThreadSafeStore<TKey, TValue> // TypeDefIndex: 5943
+internal class ThreadSafeStore<TKey, TValue> // TypeDefIndex: 5945
 {
 	private readonly object _lock; 
 	private Dictionary<TKey, TValue> _store; 
@@ -80366,7 +80309,7 @@ internal class ThreadSafeStore<TKey, TValue> // TypeDefIndex: 5943
 
 }
 
-internal class BidirectionalDictionary<TFirst, TSecond> // TypeDefIndex: 5944
+internal class BidirectionalDictionary<TFirst, TSecond> // TypeDefIndex: 5946
 {
 	private readonly IDictionary<TFirst, TSecond> _firstToSecond; 
 	private readonly IDictionary<TSecond, TFirst> _secondToFirst; 
@@ -80420,7 +80363,7 @@ internal class BidirectionalDictionary<TFirst, TSecond> // TypeDefIndex: 5944
 
 }
 
-internal class CollectionWrapper<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IWrappedCollection, IList, ICollection // TypeDefIndex: 5953
+internal class CollectionWrapper<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IWrappedCollection, IList, ICollection // TypeDefIndex: 5955
 {
 	private readonly IList _list; 
 	private readonly ICollection<T> _genericCollection; 
@@ -80586,7 +80529,7 @@ internal class CollectionWrapper<T> : ICollection<T>, IEnumerable<T>, IEnumerabl
 
 }
 
-internal class DictionaryWrapper<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IWrappedDictionary, IDictionary, ICollection // TypeDefIndex: 5956
+internal class DictionaryWrapper<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IWrappedDictionary, IDictionary, ICollection // TypeDefIndex: 5958
 {
 	private readonly IDictionary _dictionary; 
 	private readonly IDictionary<TKey, TValue> _genericDictionary; 
@@ -80786,7 +80729,7 @@ internal class DictionaryWrapper<TKey, TValue> : IDictionary<TKey, TValue>, ICol
 
 }
 
-private struct DictionaryWrapper.DictionaryEnumerator<TKey, TValue, TEnumeratorKey, TEnumeratorValue> : IDictionaryEnumerator, IEnumerator // TypeDefIndex: 5957
+private struct DictionaryWrapper.DictionaryEnumerator<TKey, TValue, TEnumeratorKey, TEnumeratorValue> : IDictionaryEnumerator, IEnumerator // TypeDefIndex: 5959
 {
 	private readonly IEnumerator<KeyValuePair<TEnumeratorKey, TEnumeratorValue>> _e; 
 
@@ -80840,7 +80783,7 @@ private struct DictionaryWrapper.DictionaryEnumerator<TKey, TValue, TEnumeratorK
 
 }
 
-private sealed class DictionaryWrapper.<>c<TKey, TValue> // TypeDefIndex: 5958
+private sealed class DictionaryWrapper.<>c<TKey, TValue> // TypeDefIndex: 5960
 {
 	public static readonly DictionaryWrapper.<>c<TKey, TValue> <>9; 
 	public static Func<DictionaryEntry, KeyValuePair<TKey, TValue>> <>9__25_0; 
@@ -80858,15 +80801,15 @@ private sealed class DictionaryWrapper.<>c<TKey, TValue> // TypeDefIndex: 5958
 	|-DictionaryWrapper.<>c<object, object>..ctor
 	*/
 
-	internal KeyValuePair<TKey, TValue> <GetEnumerator>b__25_0(DictionaryEntry de) { }
+	internal KeyValuePair<TKey, TValue> <GetEnumerator>
 	/* GenericInstMethod :
 	|
-	|-DictionaryWrapper.<>c<object, object>.<GetEnumerator>b__25_0
+	|-DictionaryWrapper.<>c<object, object>.<GetEnumerator>
 	*/
 
 }
 
-internal sealed class Creator<T> : MulticastDelegate // TypeDefIndex: 5968
+internal sealed class Creator<T> : MulticastDelegate // TypeDefIndex: 5970
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -80895,7 +80838,7 @@ internal sealed class Creator<T> : MulticastDelegate // TypeDefIndex: 5968
 
 }
 
-public class JsonISerializableContract : JsonContainerContract // TypeDefIndex: 5988
+public class JsonISerializableContract : JsonContainerContract // TypeDefIndex: 5990
 {
 	[CompilerGeneratedAttribute] 
 	private ObjectConstructor<object> <ISerializableCreator>k__BackingField; 
@@ -80913,7 +80856,7 @@ public class JsonISerializableContract : JsonContainerContract // TypeDefIndex: 
 
 }
 
-public class JsonDictionaryContract : JsonContainerContract // TypeDefIndex: 6019
+public class JsonDictionaryContract : JsonContainerContract // TypeDefIndex: 6021
 {
 	[CompilerGeneratedAttribute] 
 	private Func<string, string> <DictionaryKeyResolver>k__BackingField; 
@@ -80998,7 +80941,7 @@ public class JsonDictionaryContract : JsonContainerContract // TypeDefIndex: 601
 
 }
 
-internal static class CachedAttributeGetter<T> // TypeDefIndex: 6037
+internal static class CachedAttributeGetter<T> // TypeDefIndex: 6039
 {
 	private static readonly ThreadSafeStore<object, T> TypeAttributeCache; 
 
@@ -81019,7 +80962,7 @@ internal static class CachedAttributeGetter<T> // TypeDefIndex: 6037
 
 }
 
-public sealed class ObjectConstructor<T> : MulticastDelegate // TypeDefIndex: 6040
+public sealed class ObjectConstructor<T> : MulticastDelegate // TypeDefIndex: 6042
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -81048,7 +80991,7 @@ public sealed class ObjectConstructor<T> : MulticastDelegate // TypeDefIndex: 60
 
 }
 
-public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 6064
+public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable // TypeDefIndex: 6066
 {
 
 [PreserveAttribute] 
@@ -81104,7 +81047,7 @@ public struct JEnumerable<T> : IJEnumerable<T>, IEnumerable<T>, IEnumerable
 
 }
 
-public abstract class CustomCreationConverter<T> : JsonConverter // TypeDefIndex: 6105
+public abstract class CustomCreationConverter<T> : JsonConverter // TypeDefIndex: 6107
 {
 	public override bool CanWrite { get; }
 
@@ -81147,7 +81090,7 @@ public abstract class CustomCreationConverter<T> : JsonConverter // TypeDefIndex
 
 }
 
-public class KeyValuePairConverter : JsonConverter // TypeDefIndex: 6108
+public class KeyValuePairConverter : JsonConverter // TypeDefIndex: 6110
 {
 	private static readonly ThreadSafeStore<Type, ReflectionObject> ReflectionObjectPerType; 
 
@@ -81166,7 +81109,7 @@ public class KeyValuePairConverter : JsonConverter // TypeDefIndex: 6108
 
 }
 
-public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 6224
+public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 6226
 {
 	private static ListHashSet<T> instanceList; 
 
@@ -81205,7 +81148,7 @@ public abstract class ListComponent<T> : ListComponent // TypeDefIndex: 6224
 
 }
 
-public class Result<T> // TypeDefIndex: 6265
+public class Result<T> // TypeDefIndex: 6267
 {
 	public bool Running; 
 	public bool Success; 
@@ -81220,7 +81163,7 @@ public class Result<T> // TypeDefIndex: 6265
 
 }
 
-internal sealed class DefaultArrayPool<T> : ArrayPool<T> // TypeDefIndex: 6275
+internal sealed class DefaultArrayPool<T> : ArrayPool<T> // TypeDefIndex: 6277
 {
 	private static T[] s_emptyArray; 
 	private readonly DefaultArrayPool.Bucket<T>[] _buckets; 
@@ -81268,7 +81211,7 @@ internal sealed class DefaultArrayPool<T> : ArrayPool<T> // TypeDefIndex: 6275
 
 }
 
-public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
+public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6575
 {
 	protected Queue<T> queue; 
 	protected HashSet<T> containerTest; 
@@ -81287,6 +81230,7 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 	public int get_queueLength() { }
 	/* GenericInstMethod :
 	|
+	|-ObjectWorkQueue<LODComponent>.get_queueLength
 	|-ObjectWorkQueue<object>.get_queueLength
 	*/
 
@@ -81297,12 +81241,14 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 	|-ObjectWorkQueue<BuildingBlock>..ctor
 	|-ObjectWorkQueue<EnvironmentFish>..ctor
 	|-ObjectWorkQueue<ESPPlayerInfo>..ctor
+	|-ObjectWorkQueue<LODComponent>..ctor
 	|-ObjectWorkQueue<object>..ctor
 	*/
 
 	public void Clear() { }
 	/* GenericInstMethod :
 	|
+	|-ObjectWorkQueue<LODComponent>.Clear
 	|-ObjectWorkQueue<object>.Clear
 	*/
 
@@ -81313,6 +81259,7 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 	|-ObjectWorkQueue<BuildingBlock>.RunQueue
 	|-ObjectWorkQueue<EnvironmentFish>.RunQueue
 	|-ObjectWorkQueue<ESPPlayerInfo>.RunQueue
+	|-ObjectWorkQueue<LODComponent>.RunQueue
 	|-ObjectWorkQueue<object>.RunQueue
 	*/
 
@@ -81323,6 +81270,13 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 	|-ObjectWorkQueue<EnvironmentFish>.Add
 	|-ObjectWorkQueue<ESPPlayerInfo>.Add
 	|-ObjectWorkQueue<object>.Add
+	*/
+
+	public void AddNoContainsCheck(T entity) { }
+	/* GenericInstMethod :
+	|
+	|-ObjectWorkQueue<LODComponent>.AddNoContainsCheck
+	|-ObjectWorkQueue<object>.AddNoContainsCheck
 	*/
 
 	public bool Contains(T entity) { }
@@ -81338,6 +81292,7 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 	|-ObjectWorkQueue<BuildingBlock>.SortQueue
 	|-ObjectWorkQueue<EnvironmentFish>.SortQueue
 	|-ObjectWorkQueue<ESPPlayerInfo>.SortQueue
+	|-ObjectWorkQueue<LODComponent>.SortQueue
 	|-ObjectWorkQueue<object>.SortQueue
 	*/
 
@@ -81345,6 +81300,7 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 	/* GenericInstMethod :
 	|
 	|-ObjectWorkQueue<AlignedLineDrawer>.ShouldAdd
+	|-ObjectWorkQueue<LODComponent>.ShouldAdd
 	|-ObjectWorkQueue<object>.ShouldAdd
 	*/
 
@@ -81362,7 +81318,7 @@ public abstract class ObjectWorkQueue<T> // TypeDefIndex: 6571
 
 }
 
-public abstract class PersistentObjectWorkQueue<T> // TypeDefIndex: 6572
+public abstract class PersistentObjectWorkQueue<T> // TypeDefIndex: 6576
 {
 	protected List<T> workList; 
 	public string listName; 
@@ -81451,7 +81407,7 @@ public abstract class PersistentObjectWorkQueue<T> // TypeDefIndex: 6572
 
 }
 
-public class WorldSpaceGrid<T> // TypeDefIndex: 6573
+public class WorldSpaceGrid<T> // TypeDefIndex: 6577
 {
 	public T[] Cells; 
 	public float CellSize; 
@@ -81585,7 +81541,7 @@ public class WorldSpaceGrid<T> // TypeDefIndex: 6573
 
 }
 
-public class ObjectPool<T> // TypeDefIndex: 6606
+public class ObjectPool<T> // TypeDefIndex: 6610
 {
 	public List<T> list; 
 
@@ -81610,7 +81566,7 @@ public class ObjectPool<T> // TypeDefIndex: 6606
 
 }
 
-public class GameObjectPool<T> : ObjectPool<T> // TypeDefIndex: 6607
+public class GameObjectPool<T> : ObjectPool<T> // TypeDefIndex: 6611
 {
 	private GameObject poolRoot; 
 
@@ -81641,7 +81597,7 @@ public class GameObjectPool<T> : ObjectPool<T> // TypeDefIndex: 6607
 
 }
 
-internal class TweenRunner<T> // TypeDefIndex: 6691
+internal class TweenRunner<T> // TypeDefIndex: 6695
 {
 	protected MonoBehaviour m_CoroutineContainer; 
 	protected IEnumerator m_Tween; 
@@ -81660,7 +81616,7 @@ internal class TweenRunner<T> // TypeDefIndex: 6691
 
 }
 
-public class TimeAverageValueLookup<T> // TypeDefIndex: 6860
+public class TimeAverageValueLookup<T> // TypeDefIndex: 6864
 {
 	public Dictionary<T, TimeAverageValue> dict; 
 
@@ -81697,13 +81653,13 @@ public class TimeAverageValueLookup<T> // TypeDefIndex: 6860
 
 }
 
-internal sealed class Pinnable<T> // TypeDefIndex: 6903
+internal sealed class Pinnable<T> // TypeDefIndex: 6907
 {
 	public T Data; 
 
 }
 
-internal sealed class CircularBuffer<T> // TypeDefIndex: 7628
+internal sealed class CircularBuffer<T> // TypeDefIndex: 7634
 {
 	private readonly int _capacity; 
 	private readonly T[] _buffer; 
@@ -81787,7 +81743,7 @@ internal sealed class CircularBuffer<T> // TypeDefIndex: 7628
 
 }
 
-internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7637
+internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7643
 {
 
 	public void .ctor(object object, IntPtr method) { }
@@ -81822,7 +81778,7 @@ internal sealed class Parsing<T> : MulticastDelegate // TypeDefIndex: 7637
 
 }
 
-internal struct GameEvent<T> // TypeDefIndex: 7713
+internal struct GameEvent<T> // TypeDefIndex: 7719
 {
 	[CompilerGeneratedAttribute] 
 	private string <GameId>k__BackingField; 
@@ -81898,7 +81854,7 @@ internal struct GameEvent<T> // TypeDefIndex: 7713
 
 }
 
-public class BoneDictionary // TypeDefIndex: 10840
+public class BoneDictionary // TypeDefIndex: 10851
 {
 	public Transform transform; 
 	public Transform[] transforms; 
@@ -81926,7 +81882,7 @@ public class BoneDictionary // TypeDefIndex: 10840
 
 }
 
-public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10867
+public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10878
 {
 	public T component; 
 
@@ -81947,7 +81903,7 @@ public abstract class ComponentInfo<T> : ComponentInfo // TypeDefIndex: 10867
 
 }
 
-public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 10947
+public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 10959
 {
 	[SerializeField] 
 	private AmplifyOcclusionEffect ssao; 
@@ -82273,7 +82229,7 @@ public abstract class RustCamera<T> : SingletonComponent<T> // TypeDefIndex: 109
 
 }
 
-public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11285
+public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11299
 {
 	protected T owner; 
 	public MetabolismAttribute calories; 
@@ -82317,7 +82273,7 @@ public abstract class BaseMetabolism<T> : EntityComponent<T> // TypeDefIndex: 11
 
 }
 
-public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 11342
+public abstract class BaseModifiers<T> : EntityComponent<T> // TypeDefIndex: 11356
 {
 
 public abstract class BaseModifiers<T> : EntityComponent<T>
@@ -82440,7 +82396,7 @@ public abstract class BaseModifiers<T> : EntityComponent<T>
 
 }
 
-public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11692
+public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11710
 {
 	public T Component; 
 
@@ -82459,7 +82415,7 @@ public class Prefab<T> : Prefab, IComparable<Prefab<T>> // TypeDefIndex: 11692
 
 }
 
-public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12141
+public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12161
 {
 	internal T[] src; 
 	internal T[] dst; 
@@ -82545,7 +82501,7 @@ public abstract class TerrainMap<T> : TerrainMap // TypeDefIndex: 12141
 
 }
 
-public static class RecipeDictionary // TypeDefIndex: 12484
+public static class RecipeDictionary // TypeDefIndex: 12504
 {
 	private static Dictionary<uint, Dictionary<int, List<Recipe>>> recipeListsDict; 
 
@@ -82562,7 +82518,7 @@ public static class RecipeDictionary // TypeDefIndex: 12484
 
 }
 
-public struct CachedTransform<T> // TypeDefIndex: 13049
+public struct CachedTransform<T> // TypeDefIndex: 13077
 {
 	public T component; 
 	public Vector3 position; 
@@ -82645,101 +82601,7 @@ public struct CachedTransform<T> // TypeDefIndex: 13049
 
 }
 
-public class NativeList<T> : Pool.IPooled // TypeDefIndex: 13143
-{
-	private NativeArray<T> _array; 
-	private int _length; 
-
-	public NativeArray<T> Array { get; }
-	public int Count { get; }
-	public T Item { get; set; }
-
-
-	public NativeArray<T> get_Array() { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.get_Array
-	|-NativeList<Vector4>.get_Array
-	*/
-
-	public int get_Count() { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.get_Count
-	|-NativeList<Vector4>.get_Count
-	*/
-
-	public T get_Item(int index) { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.get_Item
-	|
-	|-NativeList<Vector4>.get_Item
-	*/
-
-	public void set_Item(int index, T value) { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.set_Item
-	|
-	|-NativeList<Vector4>.set_Item
-	*/
-
-	public void Add(T item) { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.Add
-	|
-	|-NativeList<Vector4>.Add
-	*/
-
-	public void Clear() { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.Clear
-	|
-	|-NativeList<Vector4>.Clear
-	*/
-
-	public void Resize(int count) { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.Resize
-	|-NativeList<Vector4>.Resize
-	*/
-
-	public void EnsureCapacity(int requiredCapacity) { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.EnsureCapacity
-	|
-	|-NativeList<Vector4>.EnsureCapacity
-	*/
-
-	public void EnterPool() { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.EnterPool
-	|-NativeList<Vector4>.EnterPool
-	*/
-
-	public void LeavePool() { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>.LeavePool
-	|-NativeList<Vector4>.LeavePool
-	*/
-
-	public void .ctor() { }
-	/* GenericInstMethod :
-	|
-	|-NativeList<uint>..ctor
-	|-NativeList<Vector4>..ctor
-	*/
-
-}
-
-public class PooledList<T> // TypeDefIndex: 13149
+public class PooledList<T> // TypeDefIndex: 13187
 {
 	public List<T> data; 
 
@@ -82788,7 +82650,7 @@ public class PooledList<T> // TypeDefIndex: 13149
 
 }
 
-public class SimpleList<T> // TypeDefIndex: 13152
+public class SimpleList<T> // TypeDefIndex: 13190
 {
 	private const int defaultCapacity = 16;
 	private static readonly T[] emptyArray; 
@@ -82941,7 +82803,7 @@ public class SimpleList<T> // TypeDefIndex: 13152
 
 }
 
-public class TimeCachedValue<T> // TypeDefIndex: 13157
+public class TimeCachedValue<T> // TypeDefIndex: 13195
 {
 	public float refreshCooldown; 
 	public float refreshRandomRange; 
@@ -82972,7 +82834,7 @@ public class TimeCachedValue<T> // TypeDefIndex: 13157
 
 }
 
-public class ResourceRef<T> // TypeDefIndex: 13182
+public class ResourceRef<T> // TypeDefIndex: 13220
 {
 	public string guid; 
 	private T _cachedObject; 
@@ -83024,7 +82886,7 @@ public class ResourceRef<T> // TypeDefIndex: 13182
 
 }
 
-public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13575
+public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13613
 {
 	public T value; 
 
@@ -83291,7 +83153,101 @@ public class ParameterOverride<T> : ParameterOverride // TypeDefIndex: 13575
 
 }
 
-public class GenericLerp<T> : IDisposable // TypeDefIndex: 13870
+public class FPNativeList<T> : Pool.IPooled // TypeDefIndex: 13793
+{
+	private NativeArray<T> _array; 
+	private int _length; 
+
+	public NativeArray<T> Array { get; }
+	public int Count { get; }
+	public T Item { get; set; }
+
+
+	public NativeArray<T> get_Array() { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.get_Array
+	|-FPNativeList<Vector4>.get_Array
+	*/
+
+	public int get_Count() { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.get_Count
+	|-FPNativeList<Vector4>.get_Count
+	*/
+
+	public T get_Item(int index) { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.get_Item
+	|
+	|-FPNativeList<Vector4>.get_Item
+	*/
+
+	public void set_Item(int index, T value) { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.set_Item
+	|
+	|-FPNativeList<Vector4>.set_Item
+	*/
+
+	public void Add(T item) { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.Add
+	|
+	|-FPNativeList<Vector4>.Add
+	*/
+
+	public void Clear() { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.Clear
+	|
+	|-FPNativeList<Vector4>.Clear
+	*/
+
+	public void Resize(int count) { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.Resize
+	|-FPNativeList<Vector4>.Resize
+	*/
+
+	public void EnsureCapacity(int requiredCapacity) { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.EnsureCapacity
+	|
+	|-FPNativeList<Vector4>.EnsureCapacity
+	*/
+
+	public void EnterPool() { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.EnterPool
+	|-FPNativeList<Vector4>.EnterPool
+	*/
+
+	public void LeavePool() { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>.LeavePool
+	|-FPNativeList<Vector4>.LeavePool
+	*/
+
+	public void .ctor() { }
+	/* GenericInstMethod :
+	|
+	|-FPNativeList<uint>..ctor
+	|-FPNativeList<Vector4>..ctor
+	*/
+
+}
+
+public class GenericLerp<T> : IDisposable // TypeDefIndex: 13918
 {
 	private Interpolator<T> interpolator; 
 	private IGenericLerpTarget<T> target; 
@@ -83414,7 +83370,7 @@ public class GenericLerp<T> : IDisposable // TypeDefIndex: 13870
 
 }
 
-public class Interpolator<T> // TypeDefIndex: 13872
+public class Interpolator<T> // TypeDefIndex: 13920
 {
 	public List<T> list; 
 	public T last; 

@@ -1,4 +1,4 @@
-public struct ColorBlock : IEquatable<ColorBlock> // TypeDefIndex: 4915
+public struct ColorBlock : IEquatable<ColorBlock> // TypeDefIndex: 4917
 {
 	[FormerlySerializedAsAttribute] 
 	[SerializeField] 

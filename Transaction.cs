@@ -1,4 +1,4 @@
-public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3986
+public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3988
 {
 	[ThreadStaticAttribute] 
 	private static Transaction ambient; 
@@ -72,7 +72,7 @@ public class Transaction : IDisposable, ISerializable // TypeDefIndex: 3986
 
 }
 
-public sealed class Transaction : Handle // TypeDefIndex: 9505
+public sealed class Transaction : Handle // TypeDefIndex: 9514
 {
 	public const int TransactionCopyentitlementbyindexApiLatest = 1;
 	public const int TransactionGetentitlementscountApiLatest = 1;

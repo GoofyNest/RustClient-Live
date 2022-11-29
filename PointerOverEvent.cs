@@ -1,4 +1,4 @@
-public sealed class PointerOverEvent : PointerEventBase<PointerOverEvent> // TypeDefIndex: 4701
+public sealed class PointerOverEvent : PointerEventBase<PointerOverEvent> // TypeDefIndex: 4703
 {
 
 	public void .ctor() { }

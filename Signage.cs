@@ -1,4 +1,4 @@
-public class Signage : IOEntity, ILOD, ISignage, IUGCBrowserEntity // TypeDefIndex: 10152
+public class Signage : IOEntity, ILOD, ISignage, IUGCBrowserEntity // TypeDefIndex: 10163
 {
 	private Option __menuOption_Menu_ChangeText; 
 	private Option __menuOption_Menu_LockSign; 
@@ -116,7 +116,7 @@ public class Signage : IOEntity, ILOD, ISignage, IUGCBrowserEntity // TypeDefInd
 	private static void .cctor() { }
 
 	[CompilerGeneratedAttribute] 
-	private void <Menu_ChangeText>b__21_0(int i, Texture2D x) { }
+	private void <Menu_ChangeText>
 
 }
 

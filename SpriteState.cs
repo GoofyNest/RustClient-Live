@@ -1,4 +1,4 @@
-public struct SpriteState : IEquatable<SpriteState> // TypeDefIndex: 5015
+public struct SpriteState : IEquatable<SpriteState> // TypeDefIndex: 5017
 {
 	[SerializeField] 
 	private Sprite m_HighlightedSprite; 

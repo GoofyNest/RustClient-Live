@@ -1,4 +1,4 @@
-public abstract class FacepunchBehaviour : MonoBehaviour // TypeDefIndex: 5568
+public abstract class FacepunchBehaviour : MonoBehaviour // TypeDefIndex: 5570
 {
 
 internal class <Module>

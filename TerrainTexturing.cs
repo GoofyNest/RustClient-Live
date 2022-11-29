@@ -1,4 +1,4 @@
-public class TerrainTexturing : TerrainExtension // TypeDefIndex: 12162
+public class TerrainTexturing : TerrainExtension // TypeDefIndex: 12182
 {
 	private const int MaxBasePyramidSize = 4096;
 	private TextureCacheState pyramidCacheState; 
@@ -181,7 +181,7 @@ public class TerrainTexturing : TerrainExtension // TypeDefIndex: 12162
 
 }
 
-private enum TerrainTexturing.LayerPropID // TypeDefIndex: 12163
+private enum TerrainTexturing.LayerPropID // TypeDefIndex: 12183
 {
 	public int value__; 
 	public const TerrainTexturing.LayerPropID UVMIX = 0;
@@ -204,7 +204,7 @@ private enum TerrainTexturing.LayerPropID // TypeDefIndex: 12163
 
 }
 
-private sealed class TerrainTexturing.<>c__DisplayClass27_0 // TypeDefIndex: 12164
+private sealed class TerrainTexturing.<>c__DisplayClass27_0 // TypeDefIndex: 12184
 {
 	public int block; 
 	public int dstsize; 
@@ -220,28 +220,28 @@ private sealed class TerrainTexturing.<>c__DisplayClass27_0 // TypeDefIndex: 121
 
 }
 
-private sealed class TerrainTexturing.<>c__DisplayClass27_1 // TypeDefIndex: 12165
+private sealed class TerrainTexturing.<>c__DisplayClass27_1 // TypeDefIndex: 12185
 {
 	public Color32[] heightColors; 
-	public TerrainTexturing.<>c__DisplayClass27_0 CS$<>8__locals1; 
+	public TerrainTexturing.<>c
 
 
 	public void .ctor() { }
 
-	internal void <CacheCoarseHeightSlopeTexture>b__0(int dz) { }
+	internal void <CacheCoarseHeightSlopeTexture>
 
 }
 
-private sealed class TerrainTexturing.<>c__DisplayClass27_2 // TypeDefIndex: 12166
+private sealed class TerrainTexturing.<>c__DisplayClass27_2 // TypeDefIndex: 12186
 {
 	public short[] heights; 
 	public int heightres; 
-	public TerrainTexturing.<>c__DisplayClass27_0 CS$<>8__locals2; 
+	public TerrainTexturing.<>c
 
 
 	public void .ctor() { }
 
-	internal void <CacheCoarseHeightSlopeTexture>b__1(int dz) { }
+	internal void <CacheCoarseHeightSlopeTexture>
 
 }
 

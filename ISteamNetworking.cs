@@ -1,4 +1,4 @@
-internal class ISteamNetworking : SteamInterface // TypeDefIndex: 5126
+internal class ISteamNetworking : SteamInterface // TypeDefIndex: 5128
 {
 
 	internal void .ctor(bool IsGameServer) { }

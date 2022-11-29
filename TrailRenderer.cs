@@ -1,4 +1,4 @@
-public sealed class TrailRenderer : Renderer // TypeDefIndex: 3400
+public sealed class TrailRenderer : Renderer // TypeDefIndex: 3401
 {
 	public float time { get; set; }
 	public float startWidth { get; set; }

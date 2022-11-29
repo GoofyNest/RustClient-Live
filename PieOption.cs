@@ -1,4 +1,4 @@
-public class PieOption : MonoBehaviour // TypeDefIndex: 12950
+public class PieOption : MonoBehaviour // TypeDefIndex: 12978
 {
 	public PieShape background; 
 	public Image imageIcon; 

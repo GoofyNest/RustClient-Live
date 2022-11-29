@@ -1,4 +1,4 @@
-public class RustLayout : UIBehaviour, ILayoutGroup, ILayoutController, IAutoLayout // TypeDefIndex: 7059
+public class RustLayout : UIBehaviour, ILayoutGroup, ILayoutController, IAutoLayout // TypeDefIndex: 7063
 {
 	public RustLayout.LayoutMode Mode; 
 	public bool ReverseOrder; 
@@ -46,7 +46,7 @@ public class RustLayout : UIBehaviour, ILayoutGroup, ILayoutController, IAutoLay
 
 }
 
-public enum RustLayout.LayoutMode // TypeDefIndex: 7060
+public enum RustLayout.LayoutMode // TypeDefIndex: 7064
 {
 	public int value__; 
 	public const RustLayout.LayoutMode Top = 0;

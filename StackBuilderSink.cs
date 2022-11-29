@@ -15,7 +15,7 @@ internal class StackBuilderSink : IMessageSink // TypeDefIndex: 1262
 	private void CheckParameters(IMessage msg) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <AsyncProcessMessage>b__4_0(object data) { }
+	private void <AsyncProcessMessage>
 
 }
 

@@ -1,4 +1,4 @@
-public struct SessionModificationAddAttributeOptions // TypeDefIndex: 8558
+public struct SessionModificationAddAttributeOptions // TypeDefIndex: 8567
 {
 	[CompilerGeneratedAttribute] 
 	private Nullable<AttributeData> <SessionAttribute>k__BackingField; 

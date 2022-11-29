@@ -91,7 +91,7 @@ public class ServicePoint // TypeDefIndex: 3018
 	internal bool CallEndPointDelegate(Socket sock, IPEndPoint remote) { }
 
 	[CompilerGeneratedAttribute] 
-	private void <GetConnectionGroup>b__66_0(object s, EventArgs e) { }
+	private void <GetConnectionGroup>
 
 }
 
